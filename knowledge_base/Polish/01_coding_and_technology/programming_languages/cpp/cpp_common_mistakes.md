@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — Typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i anty-wzorce w C++. Każdy wpis pokazuje nieprawidłowe podejście, wyjaśnia przyczynę niepowodzenia i podaje prawidłowe rozwiązanie. Nowoczesny C++ (C++ 11/14/17/20) zapewnia narzędzia pozwalające uniknąć większości klasycznych pułapek.
 ---

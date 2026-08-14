@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Technologia klimatyczna i zielone innowacje
 Technologia klimatyczna obejmuje narzędzia, systemy i innowacje zaprojektowane w celu ograniczenia emisji gazów cieplarnianych, przystosowania się do zmian klimatycznych i przejścia gospodarki światowej na zrównoważone podstawy. Jest to prawdopodobnie najważniejsza dziedzina technologii XXI wieku — różnica między możliwym do opanowania ociepleniem o 1,5°C a katastrofalnym wzrostem o ponad 3°C zależy w dużej mierze od tego, jak szybko można wdrożyć te technologie na dużą skalę. Wyzwanie ma charakter nie tylko naukowy, ale także gospodarczy, polityczny i społeczny.
 ---

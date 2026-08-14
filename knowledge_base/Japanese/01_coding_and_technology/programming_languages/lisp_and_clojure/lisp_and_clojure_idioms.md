@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp と Clojure — 慣用的なパターンとベスト プラクティス
 このガイドでは、Lisp と Clojure の慣用的なパターンについて説明します。
 ---

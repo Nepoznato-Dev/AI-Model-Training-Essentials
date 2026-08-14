@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # สนิม — ข้อผิดพลาดทั่วไปและการต่อต้านรูปแบบ
 เอกสารนี้รวบรวมข้อผิดพลาด กับดัก และรูปแบบการต่อต้านที่พบบ่อยที่สุดใน Rust แต่ละรายการจะแสดงแนวทางที่ไม่ถูกต้อง อธิบายว่าทำไมจึงล้มเหลว และให้แนวทางแก้ไขที่ถูกต้อง คอมไพเลอร์ของ Rust พบข้อผิดพลาดมากมาย แต่การทำความเข้าใจรูปแบบเหล่านี้จะช่วยเร่งการเรียนรู้ของคุณ
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python — Mga Karaniwang Pagkakamali at Anti-Pattern
 Kino-catalog ng dokumentong ito ang mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa Python. Ang bawat entry ay nagpapakita ng maling diskarte, nagpapaliwanag kung bakit ito nabigo, at nagbibigay ng tamang solusyon. Ang pag-unawa sa mga pitfalls na ito ay makakatulong sa iyong magsulat ng mas matatag, Pythonic code.
 ---

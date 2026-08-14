@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Estatística e Probabilidade
 Probabilidade e estatística são os fundamentos matemáticos da ciência de dados, aprendizado de máquina e pesquisa científica. A probabilidade informa a probabilidade dos eventos; as estatísticas mostram como tirar conclusões dos dados. Juntos, eles transformam a incerteza em conhecimento quantificável e gerenciável.
 ---

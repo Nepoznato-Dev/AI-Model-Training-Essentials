@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای Perl (5.38+) ارائه می دهد. این مرجع اصلی پرل را با تمرکز بر الگوهای نحوی جامع، عبارات منظم، مراجع و قدرت پردازش متن پرل تکمیل می کند.
 ---

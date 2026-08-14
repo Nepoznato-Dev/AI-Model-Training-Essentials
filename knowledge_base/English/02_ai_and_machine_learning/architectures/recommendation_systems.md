@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Recommendation Systems
 
 Recommendation systems predict what a user will want to see, buy, or interact with next. They power the content feeds on social media, product suggestions on e-commerce sites, movie picks on streaming platforms, and search results. Despite being invisible to most users, they are among the most commercially impactful AI systems in the world — Netflix estimates its recommendation engine saves over $1 billion per year by reducing subscriber churn.

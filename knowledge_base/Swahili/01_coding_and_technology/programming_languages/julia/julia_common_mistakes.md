@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia - Makosa ya Kawaida & Miundo ya Kupinga
 Hati hii inaorodhesha makosa ya kawaida, mitego, na mifumo ya kupingana katika Julia na masahihisho.
 ---

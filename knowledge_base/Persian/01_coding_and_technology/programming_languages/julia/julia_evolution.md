@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جولیا - تاریخچه نسخه و تکامل
 ## جدول زمانی
 | نسخه | سال | تم کلید |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Federated Learning at Privacy
 Ang federated learning ay isang diskarte para sa pagsasanay ng mga modelo ng machine learning sa maraming device o organisasyon nang hindi ibinabahagi ang raw data. Sa halip na magpadala ng data sa isang central server, ang bawat device ay nagsasanay ng isang lokal na modelo at nagbabahagi lamang ng mga update ng modelo (gradients o weights). Pinagsasama-sama ng gitnang server ang mga update na ito upang makagawa ng isang pandaigdigang modelo. Dinisenyo ito ng Google para sa pagsasanay ng mga modelo ng wika ng keyboard sa mga Android phone — at mula noon ito ay naging isang pangunahing pamamaraan para sa pagpapanatili ng privacy ng AI.
 ---

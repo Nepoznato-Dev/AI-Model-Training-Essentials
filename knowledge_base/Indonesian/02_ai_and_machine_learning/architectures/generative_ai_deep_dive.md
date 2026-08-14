@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Penyelaman Mendalam AI Generatif
 AI Generatif mengacu pada model yang membuat konten baru — gambar, teks, audio, video, kode — bukan hanya mengklasifikasikan atau memprediksi data yang ada. Meskipun model bahasa berukuran besar mendapatkan perhatian paling besar, lanskap AI generatif jauh lebih luas. File ini mencakup arsitektur, teknik, dan trade-off di balik sistem generatif modern, mulai dari model difusi hingga autoencoder variasional hingga model aliran.
 ---

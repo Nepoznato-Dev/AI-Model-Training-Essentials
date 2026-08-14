@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جولیا - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، بسته‌ها و زیرساخت‌های ضروری در اکوسیستم جولیا را پوشش می‌دهد.
 ---

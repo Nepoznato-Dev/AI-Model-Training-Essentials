@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Paggamit ng Tool
 ## Git — Kontrol sa Bersyon
 Ang Git ay isang distributed version control system. Ang bawat developer ay may buong kopya ng kasaysayan ng repositoryo sa kanilang lokal na makina.

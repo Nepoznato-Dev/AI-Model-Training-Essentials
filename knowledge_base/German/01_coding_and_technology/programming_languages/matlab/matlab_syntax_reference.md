@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für MATLAB (R2024+). Es ergänzt die Hauptreferenz von MATLAB, indem es sich auf umfassende Syntaxmuster, Matrixoperationen, Plots und Redewendungen für wissenschaftliches Rechnen konzentriert.
 ---

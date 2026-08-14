@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Planejamento de cenário
 ## Visão geral
 Ninguém pode prever o futuro – mas você pode se preparar para vários futuros plausíveis. O planeamento de cenários, nascido nos grupos de reflexão da Guerra Fria e aperfeiçoado pela Shell durante as crises petrolíferas da década de 1970, é uma forma de pensar sistematicamente sobre a incerteza. Em vez de apostar em uma previsão, você constrói histórias coerentes sobre como as coisas podem acontecer e, em seguida, testa suas decisões em relação a todas elas. Veja como funciona a metodologia, juntamente com cenários em domínios-chave.

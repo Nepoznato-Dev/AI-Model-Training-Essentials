@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # প্রম্পট ইঞ্জিনিয়ারিং
 প্রম্পট ইঞ্জিনিয়ারিং হল একটি ভাষা মডেল থেকে সম্ভাব্য সর্বোত্তম আউটপুট পাওয়ার জন্য ইনপুট প্রম্পট ডিজাইন, পরিমার্জন এবং অপ্টিমাইজ করার অনুশীলন। এটি একটি শিল্প এবং একটি বিজ্ঞান উভয়ই, এবং এটি ফাইন-টিউনিং ছাড়াই এলএলএম আচরণ নিয়ন্ত্রণ করার প্রাথমিক ইন্টারফেস।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku omówiono podstawowe narzędzia, struktury i infrastrukturę w ekosystemie Dart.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — Mga Karaniwang Pagkakamali at Anti-Pattern
 Kino-catalog ng dokumentong ito ang mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa Dart na may mga pagwawasto.
 ---

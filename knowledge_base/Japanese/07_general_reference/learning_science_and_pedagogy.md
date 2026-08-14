@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 学習科学と教育学
 学習科学は、心理学、神経科学、教育、認知科学に基づいて、人がどのように学習するのかを学際的に研究するものです。教育学は教育の実践と方法論です。これらは共に、教育コンテンツを教えたり、訓練したり、メンターしたり、教育コンテンツをデザインしたりするすべての人に関連する質問、つまり、人々が効果的に学習するのに役立つ方法は何ですか? に対処します。非効率な一般的な勉強法にはどのようなものがありますか?最適な保持と伝達のためには、指導をどのように構成する必要がありますか?
 ---

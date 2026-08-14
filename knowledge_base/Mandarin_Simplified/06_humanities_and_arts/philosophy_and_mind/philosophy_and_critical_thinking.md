@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 哲学和批判性思维
 哲学是对有关知识、现实和存在的基本问题的系统研究。它提供了一个框架来评估什么算作知识、什么值得做，以及如何区分合理的论点和薄弱的论点。批判性思维是该框架的实际应用：分析主张、识别有缺陷的推理以及做出更明智决策的技能。该文件涵盖了主要想法、评估它们的工具以及影响每个人的认知偏见。
 ---

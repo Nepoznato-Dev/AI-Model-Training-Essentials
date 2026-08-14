@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 云架构
 云计算从根本上改变了组织构建、部署和扩展软件的方式。您无需购买和维护物理服务器，而是可以按需配置计算资源，按使用量付费，并在几分钟内进行全球扩展。该文件涵盖了您需要了解的核心概念、架构模式、服务和最佳实践。
 ---

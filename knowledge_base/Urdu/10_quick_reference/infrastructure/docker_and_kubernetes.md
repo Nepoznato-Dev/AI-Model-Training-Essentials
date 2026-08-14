@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ڈوکر اور کبرنیٹس چیٹ شیٹ
 ڈوکر کے ساتھ ایپلی کیشنز کو کنٹینر کرنے اور کوبرنیٹس کے ساتھ آرکیسٹریٹنگ کے لیے ایک عملی حوالہ۔ کمانڈ لائن کے ساتھ بنیادی واقفیت فرض کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # برو - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Go ارائه می دهد. این مرجع اصلی Go را با تمرکز بر الگوهای نحوی جامع، جداول اپراتورها و مکانیک داخلی گوروتین ها، کانال ها و رابط ها تکمیل می کند.
 ---

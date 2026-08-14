@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dasar-dasar Visi Komputer
 Visi komputer memberi mesin kemampuan untuk menafsirkan dan memahami informasi visual dari dunia — gambar, video, dan data 3D. Ini mendukung segalanya mulai dari pengenalan wajah di ponsel Anda hingga mobil tanpa pengemudi, analisis citra medis, dan kontrol kualitas industri. File ini mencakup konsep inti, arsitektur, dan teknik.
 ---

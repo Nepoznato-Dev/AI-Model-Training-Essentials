@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Seguridad y alineación de la IA
 La seguridad de la IA es el estudio de cómo construir sistemas de IA que hagan lo que realmente queremos que hagan y no hagan cosas que no queremos, incluso si no se descartaran explícitamente. La alineación es el desafío específico de hacer que los objetivos y comportamientos de los sistemas de IA coincidan con las intenciones humanas. A medida que los sistemas de IA se vuelven más capaces, estas preguntas pasan de curiosidades académicas a requisitos prácticos de ingeniería.
 ---

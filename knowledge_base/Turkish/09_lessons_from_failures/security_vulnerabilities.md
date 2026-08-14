@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Güvenlik Açıkları
 Bu belge, enjeksiyon saldırıları, güvenli olmayan kod uygulamaları ve güvenlik hataları dahil olmak üzere yazılım geliştirmedeki yaygın güvenlik açıklarını birleştirir.
 ---

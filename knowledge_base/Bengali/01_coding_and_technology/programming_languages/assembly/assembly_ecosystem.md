@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # সমাবেশ — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি অ্যাসেম্বলি ইকোসিস্টেমের প্রয়োজনীয় টুলস, অ্যাসেম্বলার এবং অবকাঠামো কভার করে।
 ---

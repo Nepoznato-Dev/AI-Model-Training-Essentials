@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i anty-wzorce w Fortranie wraz z poprawkami.
 ---

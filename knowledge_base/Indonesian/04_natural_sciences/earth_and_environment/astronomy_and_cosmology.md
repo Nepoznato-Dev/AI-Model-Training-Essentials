@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Astronomi dan Kosmologi
 Astronomi adalah ilmu yang mempelajari benda-benda langit — bintang, planet, galaksi, dan segala sesuatu di luar atmosfer bumi. Kosmologi adalah studi tentang alam semesta secara keseluruhan: asal usulnya, strukturnya, evolusinya, dan nasib akhirnya. Bersama-sama, mereka menjawab beberapa pertanyaan paling mendasar yang pernah ditanyakan manusia: Bagaimana asal usul alam semesta? Seberapa besarnya? Apakah kita sendirian? Apa yang akan terjadi pada akhirnya?
 ---

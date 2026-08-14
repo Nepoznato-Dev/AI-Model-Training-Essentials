@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C#"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #C#
 C# (inayotamkwa "C-mkali") ni lugha ya kisasa, inayolenga kitu, na aina-salama ya programu iliyotengenezwa na Microsoft chini ya uongozi wa Anders Hejlsberg na iliyotolewa kwa mara ya kwanza mwaka wa 2002. Inaendeshwa kwenye jukwaa la .NET na iliundwa kuchanganya nguvu ya C++ na tija ya Visual Basic. Leo, C# ni lugha yenye matumizi mengi, ya jukwaa tofauti inayotumika kwa programu za wavuti (ASP.NET), programu ya kompyuta ya mezani (Windows), ukuzaji wa mchezo (Umoja), programu za rununu (MAUI), huduma za wingu (Azure), na zaidi.
 C# imechukua kwa kasi mawazo bora kutoka kwa lugha zingine - LINQ, usawazishaji/ngoja, rekodi, kulinganisha muundo - kuifanya kuwa mojawapo ya lugha zenye vipengele vingi na zinazofaa wasanidi programu zinazopatikana.

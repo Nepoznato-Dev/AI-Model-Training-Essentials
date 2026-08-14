@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای OCaml (4.x/5.x) ارائه می‌کند. این مرجع اصلی OCaml را با تمرکز بر الگوهای نحوی جامع، انواع داده های جبری، تطبیق الگو، ماژول ها و اصطلاحات برنامه نویسی کاربردی تکمیل می کند.
 ---

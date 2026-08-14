@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genética e Genômica
 A genética é o estudo da hereditariedade – como as características são transmitidas dos pais aos filhos através do DNA. A genômica é o estudo de genomas inteiros: todos os genes, as regiões não codificantes, como eles interagem e como variam entre indivíduos e populações. A transição da genética para a genómica foi impulsionada pela tecnologia de sequenciação – passámos do estudo de um gene de cada vez para a leitura de genomas inteiros em horas, gerando dados que estão a transformar a medicina, a agricultura, a ciência forense e a nossa compreensão da evolução.
 ---

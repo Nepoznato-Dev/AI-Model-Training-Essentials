@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # كيمياء
 إذا كانت الفيزياء هي قواعد اللعبة، فإن الكيمياء هي ما يحدث عندما تتفاعل القطع. تدرس الكيمياء كيفية ارتباط الذرات وتفككها وإعادة ترتيبها، أي كيف تتصرف جميع المواد. إنه يسد الفجوة بين الفيزياء الأساسية وتعقيد علم الأحياء والجيولوجيا والهندسة.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nauka o środowisku i zrównoważony rozwój
 Nauki o środowisku stosują metody fizyki, chemii, biologii, geologii i ekonomii do pytania: „Co dzieje się z naszą planetą i co można z tym zrobić?” Jest to dziedzina interdyscyplinarna – będąca konwergencją wielu dyscyplin – co przyczynia się zarówno do jej głębi analitycznej, jak i znaczenia politycznego.
 Podstawowe napięcie w naukach o środowisku jest następujące: cywilizacja ludzka zależy od wydobywania zasobów ze środowiska, ale wydobywanie tych zasobów zmienia środowisko w sposób, który może osłabić systemy, od których jesteśmy zależni. Zrozumienie, że pętla sprzężenia zwrotnego to w skrócie cała dziedzina.

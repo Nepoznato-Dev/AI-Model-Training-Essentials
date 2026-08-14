@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pamamaraan ng Pananaliksik
 Ang pamamaraan ng pananaliksik ay ang sistematikong diskarte sa pagsisiyasat ng mga tanong, pagsubok ng mga hypotheses, at pagbuo ng maaasahang kaalaman. Nagsasagawa ka man ng mga siyentipikong eksperimento, mga survey sa agham panlipunan, pagsusuri sa negosyo, o pananaliksik sa akademiko, tinutukoy ng pamamaraang pipiliin mo kung kapani-paniwala, maaaring kopyahin, at kapaki-pakinabang ang iyong mga natuklasan. Ang isang mahusay na idinisenyong pag-aaral ay gumagawa ng mga mapagkakatiwalaang resulta; ang isang hindi maganda ang disenyo ay gumagawa ng ingay - o mas masahol pa, may kumpiyansa na mga maling sagot.
 ---

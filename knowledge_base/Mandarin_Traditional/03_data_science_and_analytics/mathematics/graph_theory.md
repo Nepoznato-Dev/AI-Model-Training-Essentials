@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 圖論
 **圖**是由透過邊（連結）連接的頂點（節點）組成的數學結構。圖模型關係：社交網路、路線圖、神經網路、依賴關係、溝通管道。圖論——對這些結構的研究——提供了電腦科學、運籌學和資料科學的核心演算法和定理。
 ---

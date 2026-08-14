@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Taswira ya data
 Chati iliyoundwa vizuri inaweza kufichua ruwaza ambazo majedwali ya nambari huficha. Mtu aliyeundwa vibaya anaweza kupotosha, kuchanganya, au kuchoka. Taswira ya data ni ufundi wa kubadilisha data kuwa hadithi za taswira zinazotoa maamuzi. Faili hii inashughulikia uteuzi wa chati, kanuni za muundo, makosa ya kawaida, na zana zinazowezesha yote.
 ---

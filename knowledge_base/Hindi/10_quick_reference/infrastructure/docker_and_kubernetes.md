@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # डॉकर और कुबेरनेट्स चीट शीट
 डॉकर के साथ अनुप्रयोगों को कंटेनरीकृत करने और कुबेरनेट्स के साथ उन्हें व्यवस्थित करने के लिए एक व्यावहारिक संदर्भ। कमांड लाइन के साथ बुनियादी परिचितता मानता है।
 ---

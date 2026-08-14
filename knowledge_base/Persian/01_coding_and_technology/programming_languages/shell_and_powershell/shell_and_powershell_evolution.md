@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell - تاریخچه نسخه و تکامل
 ## جدول زمانی یونیکس شل
 | نسخه | سال | تم کلید |

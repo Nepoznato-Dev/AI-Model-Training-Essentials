@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Các nguyên tắc cơ bản về an ninh mạng
 Bảo mật là một nguyên tắc phải được tích hợp vào mọi lớp của hệ thống ngay từ đầu, thay vì bổ sung thêm sau đó. Cho dù xây dựng một ứng dụng web, quản lý cơ sở hạ tầng hay vận chuyển API, việc hiểu được bối cảnh mối đe dọa và các nguyên tắc cơ bản về phòng thủ là điều cần thiết.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lugha na Kiingereza
 Kuna takriban lugha 7,000 zinazozungumzwa ulimwenguni leo. Kiingereza ndicho kinachozungumzwa zaidi kama lugha ya pili na hutumika kama chaguomsingi kwa biashara ya kimataifa, sayansi, usafiri wa anga na intaneti. Iwe kuandika hati za msimbo, kusoma karatasi za utafiti, au kuwasiliana kuvuka mipaka, amri thabiti ya Kiingereza - sarufi, msamiati, na balagha - ni mojawapo ya ujuzi wa vitendo zaidi mtu anaweza kukuza.
 Faili hii inashughulikia mambo muhimu: sarufi, alama za uakifishaji, mitego ya kawaida, mbinu ya kuandika, na mawasiliano ya wazi.

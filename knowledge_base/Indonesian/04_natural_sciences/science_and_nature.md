@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sains dan Alam
 Sains adalah cara kita mengetahui apa yang sebenarnya dilakukan alam semesta — bukan apa yang kita asumsikan, bukan apa yang dikatakan teks-teks kuno, tapi apa yang diungkapkan oleh pengamatan dan eksperimen yang cermat. Metode ilmiah pada prinsipnya sederhana: amati sesuatu, buat hipotesis, uji, dan revisi pemahaman berdasarkan hasil. Apa yang membuat ilmu pengetahuan ampuh adalah bahwa ilmu pengetahuan dapat mengoreksi diri sendiri. Setiap klaim bersifat sementara – hanya diterima sampai ada bukti yang lebih baik.
 File ini mencakup cabang utama ilmu pengetahuan alam: fisika, kimia, biologi, serta ilmu bumi dan luar angkasa. Anggap saja sebagai peta dunia fisik.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 펄
 Perl은 실용적인 텍스트 처리 도구로 1987년 Larry Wall에 의해 만들어졌습니다. 이는 초기 웹 개발(CGI 스크립트), 시스템 관리, 생물정보학 및 네트워크 프로그래밍의 중추가 되었습니다. Perl의 철학은 "TMTOWTDI(There's More Than One Way To Do It)"입니다. 이 언어는 모든 문제에 대해 다양한 접근 방식을 제공하여 균일성보다 표현성을 선호합니다.
 현대 프로그래밍에 대한 Perl의 영향은 엄청나지만 종종 눈에 띄지 않습니다. Perl의 패턴 일치에 영향을 받은 정규 표현식은 이제 Python, JavaScript, Java 및 대부분의 기타 언어에서 표준이 되었습니다. CPAN(Comprehensive Perl Archive Network)은 최초의 소프트웨어 패키지 저장소 중 하나였으며 Python의 PyPI 및 Node의 npm과 같은 이후 시스템에 영감을 주었습니다.

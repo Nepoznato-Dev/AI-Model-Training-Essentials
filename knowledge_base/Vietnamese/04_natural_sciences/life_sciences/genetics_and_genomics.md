@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Di truyền học và bộ gen
 Di truyền học là nghiên cứu về tính di truyền - cách các đặc điểm được truyền từ cha mẹ sang con cái thông qua DNA. Genomics là nghiên cứu về toàn bộ bộ gen: tất cả các gen, các vùng không mã hóa, cách chúng tương tác và cách chúng khác nhau giữa các cá thể và quần thể. Quá trình chuyển đổi từ di truyền sang gen được thúc đẩy bởi công nghệ giải trình tự - chúng tôi đã đi từ nghiên cứu từng gen một đến đọc toàn bộ bộ gen trong vài giờ, tạo ra dữ liệu giúp biến đổi y học, nông nghiệp, pháp y và hiểu biết của chúng ta về quá trình tiến hóa.
 ---

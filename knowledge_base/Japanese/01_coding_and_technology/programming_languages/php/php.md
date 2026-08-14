@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #PHP
 PHP (ハイパーテキスト プリプロセッサ) は、1994 年に Rasmus Lerdorf によって作成され、1995 年に初めてリリースされたサーバーサイド スクリプト言語です。元々は動的な Web ページを生成するために設計された PHP は、フル機能の汎用言語に進化しました。これは、WordPress、Facebook (当初)、Wikipedia、Slack、その他何百万ものサイトを含む、既知のサーバーサイド言語を使用するすべての Web サイトの約 75% で動作します。
 最新の PHP (8.x) は、2000 年代初頭の PHP とは大きく異なる言語です。型付きプロパティ、一致式、列挙型、ファイバー、読み取り専用クラス、および堅牢な型システムが追加されました。開発者の間での評判 (一貫性のなさで批判されることがよくあります) にもかかわらず、PHP は実用的で、広く導入されており、改良され続けています。

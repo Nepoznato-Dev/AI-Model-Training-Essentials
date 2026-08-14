@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Medizin und Gesundheitswesen
 Medizin ist die Wissenschaft und Praxis der Diagnose, Behandlung und Vorbeugung von Krankheiten. Es ist eines der ältesten menschlichen Unterfangen – der hippokratische Eid geht auf das antike Griechenland zurück – und eines der sich am schnellsten verändernden. Allein im letzten Jahrhundert haben wir den Schritt vom Verzicht auf Antibiotika hin zu Gentherapien geschafft, die die DNA eines Patienten umschreiben können.
 In dieser Datei geht es darum, wie die Medizin funktioniert: die wichtigsten Fachgebiete, wie Krankheiten diagnostiziert und behandelt werden, wie Gesundheitssysteme organisiert sind und welche ethischen Fragen sich stellen, wenn es um Menschenleben geht.

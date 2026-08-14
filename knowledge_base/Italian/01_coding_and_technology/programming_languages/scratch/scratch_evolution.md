@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch: cronologia ed evoluzione delle versioni
 ## Cronologia
 | Versione | Anno | Tema chiave |

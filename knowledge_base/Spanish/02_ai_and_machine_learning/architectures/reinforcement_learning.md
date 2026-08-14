@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Aprendizaje por refuerzo
 El aprendizaje por refuerzo (RL) es la forma en que las máquinas aprenden a tomar secuencias de decisiones mediante prueba y error. A diferencia del aprendizaje supervisado, donde se proporciona la respuesta correcta para cada ejemplo, RL le da al agente solo una señal de recompensa, y el agente debe descubrir qué acciones conducen a los mejores resultados con el tiempo. Es el enfoque detrás de AlphaGo, el control robótico, la IA para juegos y, fundamentalmente, RLHF, la técnica utilizada para alinear grandes modelos de lenguaje modernos con las preferencias humanas.
 ---

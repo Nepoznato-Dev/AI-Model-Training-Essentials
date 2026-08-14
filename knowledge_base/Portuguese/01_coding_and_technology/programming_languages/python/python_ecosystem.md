@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — Guia de ecossistema e ferramentas
 Este guia cobre as ferramentas, estruturas e infraestrutura essenciais do ecossistema Python.
 ---

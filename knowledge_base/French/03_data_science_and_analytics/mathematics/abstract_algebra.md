@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Algèbre abstraite
 L'algèbre abstraite étudie les structures algébriques – des ensembles équipés d'opérations qui suivent des règles spécifiques. Au lieu de travailler avec des nombres, l’algèbre abstraite fonctionne avec tous les objets qui satisfont aux axiomes. Cette généralité est puissante : un théorème prouvé pour les « groupes » s’applique simultanément aux entiers, aux symétries, aux matrices, aux permutations et aux états quantiques. L'algèbre abstraite sous-tend la cryptographie, les codes correcteurs d'erreurs, l'informatique quantique et l'analyse de symétrie utilisée dans toute la physique.
 ---

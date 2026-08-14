@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Finance and Investing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فنانس اور سرمایہ کاری
 ## ذاتی مالیاتی بنیادی باتیں
 ### مالیاتی منصوبہ بندی کی بنیادی باتیں

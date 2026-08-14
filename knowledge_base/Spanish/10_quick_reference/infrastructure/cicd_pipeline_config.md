@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Configuración de canalización CI/CD
 Los canales de integración continua (CI) e implementación continua (CD) automatizan el proceso de creación, prueba e implementación de software. Esta referencia cubre los patrones de configuración para las plataformas CI/CD más populares: GitHub Actions, GitLab CI y principios generales de diseño de canalizaciones.
 ---

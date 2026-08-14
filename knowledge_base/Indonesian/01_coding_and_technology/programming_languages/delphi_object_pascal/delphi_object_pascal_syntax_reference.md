@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Objek Pascal — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Delphi/Object Pascal. Ini melengkapi referensi utama Delphi dengan berfokus pada pola sintaksis yang lengkap, fitur OOP, generik, catatan, dan idiom bahasa.
 ---

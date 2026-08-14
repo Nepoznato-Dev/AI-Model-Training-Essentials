@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # असेंबली भाषा - सिंटेक्स संदर्भ
 यह दस्तावेज़ x86-64 असेंबली (NASM सिंटैक्स) के लिए एक व्यापक, संरचित सिंटैक्स संदर्भ प्रदान करता है। यह संपूर्ण निर्देश श्रेणियों, एड्रेसिंग मोड, स्टैक फ्रेम कन्वेंशन और सिस्टम प्रोग्रामिंग पैटर्न पर ध्यान केंद्रित करके मुख्य असेंबली संदर्भ को पूरक करता है।
 ---

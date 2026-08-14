@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # علم البيانات والتحليلات
 علم البيانات هو مجال تحويل البيانات الأولية إلى رؤية قابلة للتنفيذ. فهو يقع عند تقاطع الإحصاء وعلوم الكمبيوتر والخبرة في المجال - وقد أصبح ضروريًا في كل قطاع من القطاع المالي إلى الرعاية الصحية. يستعرض هذا الملف المفاهيم والأدوات وسير العمل الأساسية التي يجب أن يعرفها كل ممارس.
 ---

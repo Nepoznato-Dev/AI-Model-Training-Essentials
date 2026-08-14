@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — Mga Idiomatic Pattern at Pinakamahuhusay na Kasanayan
 Sinasaklaw ng gabay na ito ang mga idiomatic pattern at pinakamahuhusay na kagawian para sa pagsulat ng malinis, modernong PHP (8.3+) na code.
 ---

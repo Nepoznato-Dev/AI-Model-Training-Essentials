@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # کراس لینگویج کمپاریزن — ایرر ہینڈلنگ
 ## ماڈلز کا جائزہ لینے میں خرابی
 | ماڈل | زبانیں | میکانزم |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir - Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para Erlang y Elixir. Complementa la referencia principal centrándose en la coincidencia de patrones, la gestión de procesos, los comportamientos de OTP y los patrones de sistemas tolerantes a fallos.
 ---

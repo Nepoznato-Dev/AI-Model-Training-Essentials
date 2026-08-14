@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell y PowerShell
 Las secuencias de comandos de Shell se refieren a la escritura de secuencias de comandos para intérpretes de línea de comandos. Los dos shells más importantes son **Bash** (Bourne Again Shell), el predeterminado en Linux y macOS, y **PowerShell**, el moderno lenguaje de scripting y shell multiplataforma de Microsoft. Los scripts de Shell automatizan las tareas de administración del sistema, crean canalizaciones, procesamiento de archivos y flujos de trabajo de implementación.
 Todo desarrollador, ingeniero de DevOps y administrador de sistemas necesita habilidades de scripting de shell. Ya sea que esté implementando un servidor web, procesando archivos de registro, configurando canales de CI/CD o automatizando copias de seguridad, los scripts de shell son la herramienta para el trabajo.

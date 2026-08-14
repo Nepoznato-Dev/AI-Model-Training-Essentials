@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # रूबी - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका रूबी पारिस्थितिकी तंत्र में आवश्यक उपकरण, ढांचे और बुनियादी ढांचे को शामिल करती है।
 ---

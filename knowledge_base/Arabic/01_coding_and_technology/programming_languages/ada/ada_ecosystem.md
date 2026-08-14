@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 #Ada — دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والمكتبات والبنية التحتية الأساسية في نظام Ada البيئي.
 ---

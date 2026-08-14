@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تقييم التعلم الآلي وسير العمل
 دليل عملي لدورة حياة التعلم الآلي - بدءًا من تأطير المشكلة وحتى مراقبة الإنتاج - مع التركيز على المقاييس والتحقق من الصحة وتصحيح الأخطاء.
 ---

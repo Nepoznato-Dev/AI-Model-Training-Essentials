@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yaliyopangwa ya sintaksia ya PHP (8.x). Inakamilisha rejeleo kuu la PHP kwa kuzingatia mifumo kamili ya sintaksia, vipengele vya kisasa vya PHP, upangaji unaolenga kitu, na nahau za vitendo.
 ---

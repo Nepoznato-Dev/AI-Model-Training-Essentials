@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Java. Ini melengkapi referensi utama Java dengan berfokus pada pola sintaksis yang lengkap, tabel operator, dan mekanisme internal JVM, OOP, dan konkurensi.
 ---

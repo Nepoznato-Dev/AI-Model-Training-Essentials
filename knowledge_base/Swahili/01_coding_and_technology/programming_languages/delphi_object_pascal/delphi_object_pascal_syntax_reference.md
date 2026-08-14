@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Kitu Pascal - Rejea ya Sintaksia
 Hati hii inatoa rejeleo la kina, lenye muundo wa sintaksia ya Delphi/Object Pascal. Inakamilisha marejeleo kuu ya Delphi kwa kuangazia mifumo kamili ya sintaksia, vipengele vya OOP, jenari, rekodi na nahau za lugha.
 ---

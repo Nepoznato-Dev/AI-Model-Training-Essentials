@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ BEAM VM پر Erlang اور Elixir کے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

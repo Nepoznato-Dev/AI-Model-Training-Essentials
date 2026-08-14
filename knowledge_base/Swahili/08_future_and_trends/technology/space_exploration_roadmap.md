@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ramani ya Uchunguzi wa Nafasi
 ## Muhtasari
 Tunaishi katika enzi mpya ya dhahabu ya uchunguzi wa anga. Mpango wa NASA wa Artemis unawarudisha wanadamu kwenye Mwezi. SpaceX inaunda roketi inayoweza kutumika tena kikamilifu iliyoundwa kwa ajili ya Mihiri. China ina mipango yake kabambe ya mwezi na Martian. Na kundi la nyota linalokua la makampuni ya kibinafsi linafungua nafasi kwa biashara - kutoka kwa mtandao wa satelaiti hadi utalii wa anga. Hii hapa ramani ya barabara, kutoka Mwezi hadi Mirihi na kwingineko.

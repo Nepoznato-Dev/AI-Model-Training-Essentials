@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia
 Ang Julia ay isang high-level, high-performance na programming language na idinisenyo para sa teknikal at siyentipikong computing. Unang inilabas noong 2012 (1.0 noong 2018), nilikha si Julia para lutasin ang "problema sa dalawang wika" — kung saan prototype ng mga siyentipiko sa Python/R ngunit muling sumulat sa C/C++/Fortran para sa performance ng produksyon. Nilalayon ni Julia na maging kasingdali ng Python ngunit kasing bilis ng C.
 Gumagamit si Julia ng just-in-time (JIT) compilation sa pamamagitan ng LLVM para makamit ang near-C na performance habang pinapanatili ang isang interactive, dynamic na pakiramdam. Mayroon itong first-class na suporta para sa parallel computing, distributed processing, at isang sopistikadong uri ng system na may maraming dispatch.

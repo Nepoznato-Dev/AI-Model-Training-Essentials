@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Inferenza causale
 L'inferenza causale è la scienza che determina se una cosa effettivamente ne causa un'altra, non solo se sono correlate. La correlazione ti dice che due variabili si muovono insieme. La causalità ti dice che cambiando uno cambierà anche l’altro. Questa distinzione conta enormemente in medicina (funziona questo farmaco?), politica (questo intervento riduce la povertà?), affari (questa campagna pubblicitaria aumenta le vendite?) e scienza (questo meccanismo spiega il fenomeno?).
 ---

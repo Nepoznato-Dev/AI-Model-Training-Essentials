@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optimasi
 Optimasi adalah ilmu matematika untuk menemukan solusi terbaik dari serangkaian solusi yang layak. Pertanyaannya: dengan adanya fungsi dan batasan, masukan apa yang meminimalkan (atau memaksimalkan) keluaran? Pengoptimalan adalah mesin pembelajaran mesin — melatih model berarti meminimalkan fungsi kerugian. Ini muncul dalam riset operasi, ekonomi, desain teknik, dan hampir semua bidang kuantitatif.
 ---

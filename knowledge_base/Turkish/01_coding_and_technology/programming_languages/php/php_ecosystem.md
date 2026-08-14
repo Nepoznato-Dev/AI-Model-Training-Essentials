@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz PHP ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

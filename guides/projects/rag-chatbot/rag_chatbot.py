@@ -80,8 +80,13 @@ def split_documents(documents):
     return chunks
 
 # Step 5: Create Embeddings and Vector Store
-def create_vector_store(chunks):
-    """Convert text chunks to vectors and store them."""
+def create_vector_store(chunks, fresh=False):
+    """Convert text chunks to vectors and store them.
+    
+    Args:
+        chunks: List of document chunks to embed.
+        fresh: If True, delete any existing vector database first.
+    """
     print("🔄 Creating embeddings (this may take a minute)...")
     
     # Load embedding model
@@ -90,18 +95,27 @@ def create_vector_store(chunks):
         model_kwargs={'device': device},
     )
     
-    # Create vector database
-    # Clean up any existing database to avoid duplicate entries on re-run
-    import shutil
-    if os.path.exists('./chroma_db'):
-        shutil.rmtree('./chroma_db')
+    # Optionally clean up any existing database
+    if fresh:
+        import shutil
+        if os.path.exists('./chroma_db'):
+            shutil.rmtree('./chroma_db')
+            print("  Deleted existing vector database (--fresh).")
     
-    vectorstore = Chroma.from_documents(
-        documents=chunks,
-        embedding=embeddings,
-        persist_directory='./chroma_db'  # Save to disk
-    )
-    vectorstore.persist()
+    # Open existing database or create a new one
+    if not fresh and os.path.exists('./chroma_db'):
+        print("  Reusing existing vector database. Pass --fresh to rebuild.")
+        vectorstore = Chroma(
+            persist_directory='./chroma_db',
+            embedding_function=embeddings,
+        )
+    else:
+        vectorstore = Chroma.from_documents(
+            documents=chunks,
+            embedding=embeddings,
+            persist_directory='./chroma_db'
+        )
+        vectorstore.persist()
     
     print("✓ Vector store created!")
     return vectorstore
@@ -189,13 +203,16 @@ def chat(qa_chain):
 # Main Function
 def main():
     """Run the complete RAG pipeline."""
+    import sys
+    fresh = '--fresh' in sys.argv
+    
     try:
         # Load and process documents
         documents = load_documents()
         chunks = split_documents(documents)
         
         # Create vector store
-        vectorstore = create_vector_store(chunks)
+        vectorstore = create_vector_store(chunks, fresh=fresh)
         
         # Load language model
         llm = load_llm()

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran
 Fortran (Formül Çevirisi), hala yaygın olarak kullanılan en eski üst düzey programlama dilidir ve ilk olarak 1957'de IBM tarafından bilimsel ve mühendislik hesaplamaları için geliştirilmiştir. Yaşına rağmen modern Fortran (Fortran 2008/2018/2023), sayısal hava tahmini, hesaplamalı akışkanlar dinamiği, fizik simülasyonları, finansal modelleme ve yüksek performanslı bilgi işlem (HPC) alanlarında yaygın olarak kullanılan yetenekli, yüksek performanslı bir dildir. Dünyanın en hızlı süper bilgisayarlarının çoğu Fortran kodunu çalıştırıyor.
 Dil, ilk günlerinden bu yana önemli ölçüde gelişti. Modern Fortran'ın modülleri, türetilmiş türleri, genel prosedürleri, ortak dizileri (paralel programlama) ve C ile birlikte çalışabilirliği vardır. Performansın çok önemli olduğu birçok bilimsel bilgi işlem uygulamasının tercih ettiği dil olmaya devam etmektedir.

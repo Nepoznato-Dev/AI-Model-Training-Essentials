@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL Quick Reference Guide"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL 快速參考指南
 資料庫操作的基本 SQL 命令。
 ---

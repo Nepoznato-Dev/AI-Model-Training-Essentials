@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 研究方法論
 研究方法是調查問題、檢驗假設和產生可靠知識的系統方法。無論您是在進行科學實驗、社會科學調查、商業分析還是學術研究，您選擇的方法都決定了您的發現是否可信、可重複和有用。精心設計的研究會產生值得信賴的結果；設計不良的答案會產生噪音，或者更糟的是，會產生自信的錯誤答案。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 신호 처리
 신호 처리는 신호(시간, 공간 또는 주파수에 따라 변하는 물리적 양의 표현)를 분석, 수정 및 합성하는 과학입니다. 오디오, 이미지, 비디오, 센서 데이터, 뇌파, 주가 등 모두 신호입니다. 신호 처리의 수학적 도구(푸리에 변환, 필터, 샘플링 이론)는 기계 학습, 통신, 의료 영상 및 데이터를 사용하는 거의 모든 분야의 기초입니다.
 ---

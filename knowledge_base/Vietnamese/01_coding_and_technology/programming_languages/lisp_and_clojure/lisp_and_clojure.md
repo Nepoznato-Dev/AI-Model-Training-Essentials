@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure
 Lisp là ngôn ngữ lập trình cấp cao lâu đời thứ hai vẫn còn được sử dụng (sau Fortran), do John McCarthy tạo ra vào năm 1958. Nó đi tiên phong trong nhiều khái niệm hiện được coi là đương nhiên: thu thập rác, đệ quy, cấu trúc dữ liệu cây, gõ động và ý tưởng về các chương trình dưới dạng dữ liệu (tính đồng nhất). Tính năng đặc biệt của Lisp là cú pháp của nó — mã được viết dưới dạng dấu ngoặc đơn lồng nhau (biểu thức S), giúp ngôn ngữ có thể phân tích cú pháp một cách dễ dàng và cho phép lập trình siêu dữ liệu mạnh mẽ thông qua **macro**.
 Clojure là một phương ngữ Lisp hiện đại được Rich Hickey thiết kế vào năm 2007. Nó chạy trên JVM (cũng là ClojureScript cho JavaScript), bao gồm lập trình chức năng, tính bất biến và tính đồng thời, đồng thời cung cấp khả năng tương tác Java liền mạch. Clojure được sử dụng trong phát triển web, xử lý dữ liệu và hệ thống tài chính.

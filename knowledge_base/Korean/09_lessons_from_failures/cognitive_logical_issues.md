@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 인지적 편견과 논리적 오류
 이 문서는 인간의 의사 결정과 AI 시스템 출력 모두에 영향을 미치는 인지 편향, 논리적 오류 및 추론 오류를 통합합니다.
 ---

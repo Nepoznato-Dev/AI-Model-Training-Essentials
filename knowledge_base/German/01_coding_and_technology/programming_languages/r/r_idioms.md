@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R – Idiomatische Muster und Best Practices
 Dieser Leitfaden behandelt idiomatische Muster und Best Practices zum Schreiben von sauberem, idiomatischem R-Code.
 ---

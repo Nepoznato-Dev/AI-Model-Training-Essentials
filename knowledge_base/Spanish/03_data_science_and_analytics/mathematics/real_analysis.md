@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Análisis real
 El análisis real es la base rigurosa del cálculo. Mientras que la introducción al cálculo le enseña cómo calcular derivadas e integrales, el análisis real pregunta *por qué* estas técnicas funcionan y cuándo fallan. Proporciona las definiciones precisas de límites, continuidad, convergencia e integración que sustentan la teoría de la probabilidad, el análisis funcional, la optimización y las garantías teóricas detrás de los algoritmos de aprendizaje automático.
 ---

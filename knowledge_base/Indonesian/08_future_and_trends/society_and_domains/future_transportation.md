@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Transportasi Masa Depan
 ## Ringkasan
 Bepergian dari A ke B akan terlihat sangat berbeda. Mobil self-driving sudah ada di jalan umum. Pesawat listrik sedang menyelesaikan uji penerbangan. Konsep Hyperloop menjanjikan perjalanan berkecepatan kereta api dalam tabung vakum. Dan taksi terbang - yang dulunya merupakan film kartun - sedang memasuki sertifikasi. Inilah keadaan teknologi yang mengubah cara kita bergerak.

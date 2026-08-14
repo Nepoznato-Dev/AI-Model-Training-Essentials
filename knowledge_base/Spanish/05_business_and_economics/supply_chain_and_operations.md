@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gestión de operaciones y cadena de suministro
 La gestión de la cadena de suministro es la coordinación de todas las actividades involucradas en el abastecimiento, la adquisición, la conversión y la logística, desde las materias primas hasta el producto terminado en manos del cliente. La gestión de operaciones es el funcionamiento diario de los sistemas de producción. Juntos, determinan si una empresa puede entregar el producto correcto, en el momento correcto, al costo correcto y con la calidad adecuada. La pandemia, la escasez de chips y los bloqueos de canales han demostrado cuán frágiles y globalmente interconectadas son las cadenas de suministro.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # एपीआई डिजाइन और वास्तुकला
 एक एपीआई (एप्लिकेशन प्रोग्रामिंग इंटरफ़ेस) वह तरीका है जिससे सॉफ्टवेयर घटक एक दूसरे से बात करते हैं। एक अच्छी तरह से डिज़ाइन की गई एपीआई सहज, सुसंगत है और इसके साथ काम करना आनंददायक है। खराब तरीके से डिज़ाइन किया गया भ्रम, बग और निराशा का कारण बनता है। यह फ़ाइल एपीआई बनाने के सिद्धांतों, पैटर्न और प्रथाओं को शामिल करती है जिन्हें डेवलपर्स वास्तव में उपयोग करना चाहते हैं।
 ---

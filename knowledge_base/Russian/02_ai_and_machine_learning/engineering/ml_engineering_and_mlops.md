@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML Engineering и MLOps
 Построить модель машинного обучения — это только полдела. Ввод в эксплуатацию, поддержание надежной работы, отслеживание отклонения и итерации — вот где на помощь приходят машинное обучение и MLOps. Этот файл охватывает полный жизненный цикл от эксперимента до производственной системы.
 ---

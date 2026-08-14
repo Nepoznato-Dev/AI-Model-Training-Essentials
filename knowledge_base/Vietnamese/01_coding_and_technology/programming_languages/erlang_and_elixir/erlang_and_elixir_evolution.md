@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — Lịch sử phiên bản & Tiến hóa
 ## Dòng thời gian Erlang
 | Phiên bản | Năm | Chủ đề chính |

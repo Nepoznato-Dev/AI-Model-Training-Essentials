@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Ekosistem ve Takımlama Kılavuzu
 Bu kılavuz Lua ekosistemindeki temel araçları, kitaplıkları ve altyapıyı kapsar.
 ---

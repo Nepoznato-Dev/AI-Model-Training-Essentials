@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # アセンブリ — チートシート
 ## レジスタ (x86-64)
 ```nasm

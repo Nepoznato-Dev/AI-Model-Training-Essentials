@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ความรู้ทั่วไป
 ไฟล์นี้เป็นการรวบรวมข้อเท็จจริงและแนวความคิดที่เกิดขึ้นเป็นประจำในการสนทนา ข่าวสาร การศึกษา และชีวิตประจำวัน คิดว่ามันเป็นความรู้พื้นฐาน — สิ่งที่ช่วยให้คุณเข้าใจสิ่งที่คุณกำลังอ่าน ได้ยิน หรือประสบอยู่
 ---

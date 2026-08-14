@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran – Häufige Fehler und Anti-Patterns
 Dieses Dokument katalogisiert die häufigsten Fehler, Fallen und Anti-Patterns in Fortran mit Korrekturen.
 ---

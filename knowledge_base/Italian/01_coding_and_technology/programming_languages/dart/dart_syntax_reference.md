@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart: riferimento alla sintassi
 Questo documento fornisce un riferimento completo e strutturato alla sintassi per Dart (3.x). Completa il riferimento principale di Dart concentrandosi su modelli di sintassi esaustivi, sicurezza nulla, programmazione asincrona e modelli di progettazione orientati a Flutter.
 ---

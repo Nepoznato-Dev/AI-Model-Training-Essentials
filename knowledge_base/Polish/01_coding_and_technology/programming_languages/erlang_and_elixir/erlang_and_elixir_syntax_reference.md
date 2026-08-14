@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni języków Erlang i Elixir. Uzupełnia główne odniesienie, koncentrując się na dopasowywaniu wzorców, zarządzaniu procesami, zachowaniach OTP i wzorcach systemów odpornych na błędy.
 ---

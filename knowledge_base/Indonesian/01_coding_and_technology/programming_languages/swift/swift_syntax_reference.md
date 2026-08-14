@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Swift (5.9+). Ini melengkapi referensi utama Swift dengan berfokus pada pola sintaksis yang lengkap, opsional, pemrograman berorientasi protokol, dan konkurensi modern.
 ---

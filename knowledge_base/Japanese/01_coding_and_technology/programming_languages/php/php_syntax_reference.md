@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — 構文リファレンス
 このドキュメントは、PHP (8.x) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、最新の PHP 機能、オブジェクト指向プログラミング、実用的なイディオムに焦点を当て、主要な PHP リファレンスを補完します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Database Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 資料庫系統
 ## 資料庫基礎知識
 ### 什麼是資料庫？

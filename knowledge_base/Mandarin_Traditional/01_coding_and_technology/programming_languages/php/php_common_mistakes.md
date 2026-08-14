@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — 常見錯誤與反模式
 本文檔列出了 PHP 中最常見的錯誤、陷阱和反模式，並進行了修正。
 ---

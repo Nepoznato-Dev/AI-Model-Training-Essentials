@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # शैल और पावरशेल - मुहावरेदार पैटर्न और सर्वोत्तम अभ्यास
 यह मार्गदर्शिका Bash/Zsh और PowerShell स्क्रिप्टिंग के लिए मुहावरेदार पैटर्न को कवर करती है।
 ---

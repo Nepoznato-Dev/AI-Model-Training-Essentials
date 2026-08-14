@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gestione della catena di fornitura e delle operazioni
 La gestione della catena di fornitura è il coordinamento di tutte le attività coinvolte nell'approvvigionamento, nell'approvvigionamento, nella conversione e nella logistica, dalle materie prime al prodotto finito nelle mani del cliente. La gestione delle operazioni è la gestione quotidiana dei sistemi di produzione. Insieme, determinano se un'azienda può fornire il prodotto giusto, al momento giusto, al costo giusto, con la giusta qualità. La pandemia, la carenza di chip e i blocchi dei canali hanno dimostrato quanto siano fragili e interconnesse le catene di approvvigionamento a livello globale.
 ---

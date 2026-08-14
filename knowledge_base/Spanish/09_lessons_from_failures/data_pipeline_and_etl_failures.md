@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fallos de canalización de datos y ETL
 Los canales de datos son la tubería de las organizaciones modernas: mueven datos desde los sistemas de origen a través de transformaciones a las bases de datos, almacenes y lagos donde se utilizan para análisis, aprendizaje automático y toma de decisiones. Cuando trabajan, nadie se da cuenta. Cuando fallan, las decisiones se toman sobre datos obsoletos, los modelos se entrenan con basura, los informes muestran números imposibles y la confianza en toda la plataforma de datos se erosiona. Las fallas en la canalización de datos se encuentran entre las fallas más comunes y costosas en las organizaciones tecnológicas.
 ---

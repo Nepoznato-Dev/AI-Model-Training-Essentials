@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Neurosciences
 Les neurosciences étudient le système nerveux : le cerveau, la moelle épinière et tous les nerfs qui les relient au corps. Il s’étend sur plusieurs niveaux : des molécules et des gènes aux neurones et synapses individuels, en passant par les circuits et les régions du cerveau, jusqu’au comportement, à la cognition et à la conscience. Le cerveau est la structure la plus complexe de l’univers connu, contenant environ 86 milliards de neurones reliés par des milliards de synapses, et comprendre son fonctionnement constitue l’un des grands défis de la science.
 ---

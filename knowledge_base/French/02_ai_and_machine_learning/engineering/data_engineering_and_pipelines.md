@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingénierie des données et pipelines
 L'ingénierie des données est la discipline qui consiste à créer des systèmes qui déplacent, transforment et stockent des données à grande échelle. Sans pipelines de données fiables, les modèles d'apprentissage automatique ne peuvent pas être formés, les tableaux de bord affichent des chiffres obsolètes et les décisions commerciales sont basées sur des conjectures. Ce fichier couvre l'architecture, les outils et les pratiques permettant de créer une infrastructure de données qui fonctionne.
 ---

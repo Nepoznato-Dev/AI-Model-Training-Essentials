@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی Lisp و Clojure را پوشش می دهد.
 ---

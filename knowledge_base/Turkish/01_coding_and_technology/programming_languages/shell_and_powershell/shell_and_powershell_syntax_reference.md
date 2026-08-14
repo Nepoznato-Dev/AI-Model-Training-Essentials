@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell ve PowerShell — Sözdizimi Referansı
 Bu belge, Bash ve PowerShell için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Her iki kabuk için kapsamlı komut dosyası oluşturma modellerine, işlem hatlarına, süreç yönetimine ve otomasyon deyimlerine odaklanarak ana Shell referansını tamamlar.
 ---

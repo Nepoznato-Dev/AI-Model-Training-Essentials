@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # オペレーションズリサーチ
 オペレーションズ リサーチ (OR) は、意思決定に数学的手法を適用することです。第二次世界大戦中に軍事物流のために誕生し、現在ではサプライチェーンの最適化、航空会社のスケジュール設定、配送車両のルート設定、在庫管理、あらゆる業界にわたるリソースの割り当てを行っています。 OR は、制約の下で最善の意思決定を行うための数学的ツールキットを提供します。
 ---

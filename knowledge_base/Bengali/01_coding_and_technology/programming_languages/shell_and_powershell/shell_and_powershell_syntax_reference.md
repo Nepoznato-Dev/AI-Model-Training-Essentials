@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # শেল এবং পাওয়ারশেল — সিনট্যাক্স রেফারেন্স
 এই নথিটি Bash এবং PowerShell-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি উভয় শেলের জন্য সম্পূর্ণ স্ক্রিপ্টিং প্যাটার্ন, পাইপলাইন, প্রক্রিয়া পরিচালনা এবং অটোমেশন ইডিয়মগুলিতে ফোকাস করে প্রধান শেল রেফারেন্সের পরিপূরক।
 ---

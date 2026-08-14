@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Межъязыковое сравнение — типы и структуры данных
 ## Примитивные типы
 | Тип | Питон | JavaScript | Ржавчина | Перейти | Ява | С | С++ | С# |

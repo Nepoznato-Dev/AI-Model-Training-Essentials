@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ความล้มเหลวในการค้นหา RAG และเวกเตอร์
 เอกสารนี้รวบรวมความล้มเหลวทั่วไปในระบบการดึงข้อมูล-Augmented Generation (RAG) การใช้งานแบบฝัง และการใช้งานการค้นหาเวกเตอร์
 ---

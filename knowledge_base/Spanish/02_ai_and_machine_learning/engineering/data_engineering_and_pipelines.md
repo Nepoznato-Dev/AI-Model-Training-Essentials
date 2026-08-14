@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingeniería de datos y oleoductos
 La ingeniería de datos es la disciplina de construir sistemas que mueven, transforman y almacenan datos a escala. Sin canales de datos confiables, los modelos de aprendizaje automático no se pueden entrenar, los paneles muestran números obsoletos y las decisiones comerciales se basan en conjeturas. Este archivo cubre la arquitectura, las herramientas y las prácticas para construir una infraestructura de datos que funcione.
 ---

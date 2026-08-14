@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku opisano podstawowe narzędzia, rozszerzenia i zasoby ekosystemu Scratch.
 ---

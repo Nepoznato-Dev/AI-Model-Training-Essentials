@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini와 로컬 AI 모델 환경
 Microsoft의 Phi-3-mini 모델(디자인 철학, 아키텍처 선택, 성능 특성)에 대한 분석과 그 성공이 효과적이고 효율적인 AI 시스템 구축에 관해 우리에게 가르쳐준 내용입니다.
 ---

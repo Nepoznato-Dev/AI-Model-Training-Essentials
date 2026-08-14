@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # डेल्फ़ी / ऑब्जेक्ट पास्कल - सामान्य गलतियाँ और विरोधी पैटर्न
 यह दस्तावेज़ सुधार के साथ डेल्फ़ी/ऑब्जेक्ट पास्कल में सबसे आम गलतियों, जाल और विरोधी पैटर्न को सूचीबद्ध करता है।
 ---

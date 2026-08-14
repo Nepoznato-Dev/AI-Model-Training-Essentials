@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #संख्या सिद्धांत
 संख्या सिद्धांत पूर्णांकों - पूर्ण संख्याओं और उनके गुणों का अध्ययन है। गॉस ने इसे "गणित की रानी" कहा। सबसे सरल वस्तुओं (1, 2, 3, ...) का अध्ययन करने के बावजूद, संख्या सिद्धांत पूरे गणित में कुछ सबसे गहरी और कठिन समस्याएं पैदा करता है। आज, यह आधुनिक क्रिप्टोग्राफी, हैशिंग एल्गोरिदम, त्रुटि-सुधार कोड और यादृच्छिक संख्या पीढ़ी को रेखांकित करता है।
 ---

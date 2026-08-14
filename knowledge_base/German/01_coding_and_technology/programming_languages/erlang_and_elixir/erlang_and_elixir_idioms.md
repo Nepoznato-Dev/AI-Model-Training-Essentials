@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir – Idiomatische Muster und Best Practices
 Dieser Leitfaden behandelt idiomatische Muster für Erlang und Elixir auf der BEAM VM.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linggwistika at Agham ng Wika
 Ang linggwistika ay ang siyentipikong pag-aaral ng wika — ang istraktura, kahulugan, paggamit, pagkuha, at ebolusyon nito. Ang wika ay isang pagtukoy sa katangian ng komunikasyon ng tao: ito ay walang katapusan na produktibo (ang mga nagsasalita ay maaaring lumikha at umunawa ng mga pangungusap na hindi pa nila nakatagpo noon), ito ay naililipat sa kultura (ito ay natutunan sa halip na puro likas), at ito ay patuloy na nagbabago. Ang pag-unawa sa kung paano gumagana ang wika ay may kaugnayan sa sinumang bumubuo ng mga teknolohiya ng wika, pagtuturo, pagsasalin, o pagsisikap na makipag-usap nang mas epektibo.
 ---

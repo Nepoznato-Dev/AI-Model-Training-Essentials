@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Podstawy cyberbezpieczeństwa
 Bezpieczeństwo to dziedzina, którą należy zintegrować z każdą warstwą systemu od samego początku, a nie dodawać ją po namyśle. Niezależnie od tego, czy tworzysz aplikację internetową, zarządzasz infrastrukturą, czy udostępniasz interfejs API, zrozumienie krajobrazu zagrożeń i podstaw obrony jest niezbędne.
 ---

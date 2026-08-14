@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rubin
 Ruby ist eine dynamische, interpretierte, objektorientierte Programmiersprache, die von Yukihiro „Matz“ Matsumoto entwickelt und erstmals 1995 in Japan veröffentlicht wurde. Ruby wurde mit dem Fokus auf die Zufriedenheit von Programmierern entwickelt – seine Syntax ist elegant und natürlich und liest sich fast wie Englisch. Alles in Ruby ist ein Objekt, einschließlich primitiver Typen wie Ganzzahlen und Boolesche Werte. Ruby ist vor allem für das Ruby on Rails-Webframework bekannt, das die Webentwicklung revolutionierte, indem es Konventionen gegenüber Konfiguration und Rapid Prototyping populär machte.
 Über Rails hinaus wird Ruby für Skripterstellung, Automatisierung, DevOps-Tools (Chef, Puppet) und als Allzwecksprache verwendet. Seine ausdrucksstarke Syntax und leistungsstarke Metaprogrammierungsfunktionen machen das Schreiben zum Vergnügen.

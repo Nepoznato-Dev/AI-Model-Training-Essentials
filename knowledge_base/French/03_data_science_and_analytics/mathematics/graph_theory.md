@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Théorie des graphes
 Un **graphe** est une structure mathématique constituée de sommets (nœuds) reliés par des arêtes (liens). Les graphiques modélisent les relations : réseaux sociaux, feuilles de route, réseaux de neurones, dépendances, canaux de communication. La théorie des graphes – l'étude de ces structures – fournit des algorithmes et des théorèmes qui sont au cœur de l'informatique, de la recherche opérationnelle et de la science des données.
 ---

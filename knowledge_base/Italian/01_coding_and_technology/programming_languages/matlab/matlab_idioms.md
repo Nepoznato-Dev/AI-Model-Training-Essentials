@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB: modelli idiomatici e migliori pratiche
 Questa guida illustra i modelli idiomatici e le migliori pratiche per scrivere codice MATLAB pulito e idiomatico.
 ---

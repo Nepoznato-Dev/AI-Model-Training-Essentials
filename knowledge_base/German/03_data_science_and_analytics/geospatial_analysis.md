@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geodatenanalyse
 Bei der Geodatenanalyse werden Daten untersucht, die eine geografische Komponente haben – Koordinaten, Adressen, Grenzen oder andere Daten, die mit einem Standort auf der Erde verknüpft sind. Es beantwortet Fragen wie „Wo sind unsere Kunden?“, „Was ist die optimale Route?“ und „Wie verändert sich die Landnutzung im Laufe der Zeit?“. Jeder Datensatz hat eine räumliche Dimension, und wenn man diese versteht, erhält man Einblicke, die der reinen statistischen Analyse entgehen.
 ---

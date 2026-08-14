@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Kitu Pascal - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio
 | Toleo | Mwaka | Mandhari Muhimu |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #未来のヘルスケア
 ＃＃ 概要
 医学は、症状が現れてから治療するという事後対応モデルから、予測的で個別化された、ますます予防的なモデルに移行しつつあります。ゲノミクスは、30 億ドルのプロジェクトから 1,000 ドル未満の日常テストにまで成長しました。 AI は、医師よりも早くスキャンで病気を発見できるようになりました。そして、再生医療は SF を臨床試験に変えています。個別化医療、長寿研究、再生医療という 3 つの最大のフロンティアで何が起こっているかをご紹介します。

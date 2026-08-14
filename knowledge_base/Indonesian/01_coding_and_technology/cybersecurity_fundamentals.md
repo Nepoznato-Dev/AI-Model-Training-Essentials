@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dasar-Dasar Keamanan Siber
 Keamanan adalah suatu disiplin ilmu yang harus diintegrasikan ke dalam setiap lapisan sistem sejak awal, bukan ditambahkan setelahnya. Baik membangun aplikasi web, mengelola infrastruktur, atau mengirimkan API, memahami lanskap ancaman dan dasar-dasar pertahanan sangatlah penting.
 ---

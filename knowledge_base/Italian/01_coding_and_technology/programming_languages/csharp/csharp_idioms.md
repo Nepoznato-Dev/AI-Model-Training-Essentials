@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C#: modelli idiomatici e migliori pratiche
 Questa guida illustra i modelli idiomatici e le procedure consigliate per scrivere codice C# (12+) pulito e moderno.
 ---

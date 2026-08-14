@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Projektowanie i architektura API
 API (interfejs programowania aplikacji) to sposób, w jaki komponenty oprogramowania komunikują się ze sobą. Dobrze zaprojektowane API jest intuicyjne, spójne, a praca z nim to przyjemność. Źle zaprojektowany powoduje zamieszanie, błędy i frustrację. Ten plik opisuje zasady, wzorce i praktyki tworzenia interfejsów API, z których programiści faktycznie chcą korzystać.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Diller Arası Karşılaştırma — Veri Türleri ve Yapıları
 ## İlkel Türler
 | Tür | Python | JavaScript | Pas | Git | Java | C | C++ | C# |

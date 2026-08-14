@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 소프트웨어 아키텍처 패턴
 아키텍처는 시스템이 구성되는 방식, 즉 구성 요소가 무엇인지, 통신 방식, 책임이 어디에 있는지에 대한 일련의 구조적 결정입니다. 좋은 아키텍처는 시스템을 쉽게 이해하고, 수정하고, 확장할 수 있게 해줍니다. 나쁜 아키텍처는 모든 변화를 어렵게 만듭니다. 이 파일은 주요 패턴, 각각의 사용 시기 및 관련된 장단점을 다룹니다.
 ---

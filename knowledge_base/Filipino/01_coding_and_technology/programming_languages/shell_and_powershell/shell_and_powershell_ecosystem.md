@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell at PowerShell — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang tool, frameworks, at imprastraktura para sa shell scripting (Bash/Zsh) at PowerShell.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Apprentissage fédéré et confidentialité
 L'apprentissage fédéré est une technique permettant de former des modèles d'apprentissage automatique sur plusieurs appareils ou organisations sans partager les données brutes. Au lieu d'envoyer des données à un serveur central, chaque appareil entraîne un modèle local et partage uniquement les mises à jour du modèle (dégradés ou poids). Le serveur central regroupe ces mises à jour pour produire un modèle global. Il a été conçu par Google pour entraîner des modèles de langage de clavier sur les téléphones Android – et est depuis devenu une technique clé pour l’IA préservant la confidentialité.
 ---

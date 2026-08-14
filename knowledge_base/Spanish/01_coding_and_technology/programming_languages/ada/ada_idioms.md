@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos para escribir código Ada limpio y seguro.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで慣用的な MATLAB コードを作成するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

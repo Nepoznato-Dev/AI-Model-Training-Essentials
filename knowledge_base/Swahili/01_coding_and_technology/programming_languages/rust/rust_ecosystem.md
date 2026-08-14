@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kutu - Mfumo wa ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, mifumo, na miundombinu katika mfumo ikolojia wa Rust.
 ---

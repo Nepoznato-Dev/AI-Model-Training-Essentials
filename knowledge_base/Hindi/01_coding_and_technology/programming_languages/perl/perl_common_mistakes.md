@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # पर्ल - सामान्य गलतियाँ और विरोधी पैटर्न
 यह दस्तावेज़ पर्ल में सुधार के साथ सबसे आम गलतियों, जाल और विरोधी पैटर्न को सूचीबद्ध करता है।
 ---

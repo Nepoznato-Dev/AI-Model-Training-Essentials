@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #艾达
 Ada 是一种静态类型、编译型编程语言，专为安全关键型和高完整性系统而设计。 Ada 最初是在 20 世纪 80 年代根据与美国国防部（以 Ada Lovelace 的名字命名，被认为是第一位计算机程序员）签订的合同开发的，强调可靠性、可维护性和正确性。它的目的是用一种明确的语言取代当时国防部使用的数百种编程语言。
 Ada 用于航空（电传飞行系统）、太空（ESA 和 NASA）、国防（导弹制导、雷达）、铁路运输和医疗设备 - 任何软件故障可能导致生命损失的地方。

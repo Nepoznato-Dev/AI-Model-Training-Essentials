@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yapay Zeka ve Yüksek Lisans Başarısızlıkları
 Bu belge, yapay zeka ve Büyük Dil Modeli sistemlerindeki halüsinasyonlar, yanlış bilgilendirme, akıl yürütme hataları ve istemle ilgili sorunlar dahil olmak üzere yaygın hata modlarını birleştirir.
 ---

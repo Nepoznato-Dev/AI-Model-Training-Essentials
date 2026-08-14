@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — よくある間違いとアンチパターン
 このドキュメントには、Haskell で最も一般的な間違い、罠、アンチパターンが修正付きでカタログ化されています。
 ---

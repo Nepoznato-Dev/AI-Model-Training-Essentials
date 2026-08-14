@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকা লিস্প এবং ক্লোজার ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, কাঠামো এবং অবকাঠামো কভার করে।
 ---

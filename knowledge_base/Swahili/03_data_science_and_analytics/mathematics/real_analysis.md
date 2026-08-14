@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uchambuzi Halisi
 Uchambuzi wa kweli ndio msingi thabiti wa calculus. Ingawa hesabu ya utangulizi hukufundisha jinsi ya kukokotoa viini na viambatanisho, uchanganuzi halisi unauliza *kwa nini* mbinu hizi hufanya kazi - na wakati zinashindwa. Inatoa ufafanuzi sahihi wa vikomo, mwendelezo, muunganisho na muunganisho unaozingatia nadharia ya uwezekano, uchanganuzi wa utendaji kazi, uboreshaji na uhakikisho wa kinadharia nyuma ya algoriti za kujifunza kwa mashine.
 ---

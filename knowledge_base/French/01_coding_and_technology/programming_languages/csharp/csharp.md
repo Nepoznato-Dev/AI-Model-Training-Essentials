@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C#"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C#
 C# (prononcé « C-sharp ») est un langage de programmation moderne, orienté objet et de type sécurisé, développé par Microsoft sous la direction d'Anders Hejlsberg et publié pour la première fois en 2002. Il fonctionne sur la plate-forme .NET et a été conçu pour combiner la puissance du C++ avec la productivité de Visual Basic. Aujourd'hui, C# est un langage multiplateforme polyvalent utilisé pour les applications Web (ASP.NET), les logiciels de bureau (Windows), le développement de jeux (Unity), les applications mobiles (MAUI), les services cloud (Azure) et bien plus encore.
 C# a progressivement absorbé les meilleures idées d'autres langages (LINQ, async/wait, records, pattern matching), ce qui en fait l'un des langages les plus riches en fonctionnalités et les plus conviviaux pour les développeurs.

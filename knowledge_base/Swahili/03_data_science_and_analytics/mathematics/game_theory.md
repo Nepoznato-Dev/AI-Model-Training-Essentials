@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nadharia ya Mchezo
 Nadharia ya mchezo ni hisabati ya mwingiliano wa kimkakati - hali ambapo matokeo yako hayategemei tu chaguo lako mwenyewe, lakini na chaguo za wengine. Kuanzia vita vya bei kati ya makampuni hadi mbio za silaha za nyuklia, kutoka kwa minada ya mtandaoni hadi baiolojia ya mabadiliko, nadharia ya mchezo hutoa zana za kuchanganua migogoro na ushirikiano. Imekuwa muhimu zaidi kwa ujifunzaji wa mashine kupitia ujifunzaji wa uimarishaji wa mawakala wengi, mitandao generative adversarial (GANs), na muundo wa mitambo ya mifumo ya mtandaoni.
 ---

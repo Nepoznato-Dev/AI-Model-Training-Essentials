@@ -1,16 +1,21 @@
 """
 Script to:
 1. Replace author/contributor names with 'Nepoznato-Dev' in YAML frontmatter
-2. Wrap the entire YAML frontmatter block in HTML comments so it's hidden in plain Markdown
+2. Keep the YAML frontmatter block as active (uncommented) frontmatter
+
+Usage:
+    python comment_metadata.py           # Process files with active frontmatter
+    python comment_metadata.py --migrate # One-time: unwrap HTML-commented frontmatter
 """
 
 import os
 import re
+import sys
 
 KB_ROOT = os.path.join(os.path.dirname(__file__), "..", "knowledge_base")
 
 def process_file(filepath):
-    """Process a single markdown file."""
+    """Process a single markdown file with active YAML frontmatter."""
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -38,11 +43,8 @@ def process_file(filepath):
         'author: "Nepoznato-Dev"'
     )
 
-    # Wrap frontmatter in HTML comments
-    # Remove the --- delimiters and wrap content
-    # Original: ---\n...content...\n---
-    # Result:   <!-- \n---\n...content...\n---\n -->
-    new_frontmatter = "<!--\n" + frontmatter + "\n-->"
+    # Keep frontmatter as active YAML (no HTML-comment wrapping)
+    new_frontmatter = frontmatter
 
     # Ensure there's a newline between the comment close and the rest
     if rest and not rest.startswith("\n"):
@@ -56,7 +58,55 @@ def process_file(filepath):
     return True
 
 
+def migrate_file(filepath):
+    """Unwrap HTML-commented frontmatter in a single markdown file.
+
+    Converts:
+        <!--
+        ---
+        title: ...
+        ---
+        -->
+    To:
+        ---
+        title: ...
+        ---
+    """
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Only process files that start with the HTML comment wrapper
+    if not content.startswith("<!--\n---"):
+        return False
+
+    # Find the closing -->
+    close_idx = content.find("-->")
+    if close_idx == -1:
+        return False
+
+    # Extract the YAML frontmatter (strip <!--\n prefix and \n--> suffix)
+    frontmatter = content[4:close_idx].strip("\n")
+    rest = content[close_idx + 3:]
+
+    # Basic YAML validation: must contain at least one key: value pair
+    if ":" not in frontmatter:
+        return False
+
+    # Ensure clean separation between frontmatter and body
+    if rest and not rest.startswith("\n"):
+        rest = "\n" + rest
+
+    new_content = frontmatter + rest
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
+    return True
+
+
 def main():
+    migrate = "--migrate" in sys.argv
+
     processed = 0
     skipped = 0
     errors = []
@@ -67,7 +117,10 @@ def main():
                 continue
             filepath = os.path.join(root, fname)
             try:
-                result = process_file(filepath)
+                if migrate:
+                    result = migrate_file(filepath)
+                else:
+                    result = process_file(filepath)
                 if result:
                     processed += 1
                 else:
@@ -75,7 +128,8 @@ def main():
             except Exception as e:
                 errors.append((filepath, str(e)))
 
-    print(f"Processed: {processed}")
+    mode = "Migrated" if migrate else "Processed"
+    print(f"{mode}: {processed}")
     print(f"Skipped (no frontmatter): {skipped}")
     if errors:
         print(f"Errors ({len(errors)}):")

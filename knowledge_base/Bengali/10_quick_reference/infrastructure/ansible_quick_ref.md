@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # উত্তরযোগ্য এবং কনফিগারেশন ব্যবস্থাপনা
 Ansible হল একটি এজেন্টহীন কনফিগারেশন ম্যানেজমেন্ট এবং অটোমেশন টুল। এটি সার্ভারের সাথে সংযোগ করতে এবং YAML প্লেবুকগুলিতে সংজ্ঞায়িত কাজগুলি সম্পাদন করতে SSH (বা উইন্ডোজের জন্য WinRM) ব্যবহার করে। প্রতিটি মেশিনে এজেন্ট ইনস্টল করা প্রয়োজন এমন সরঞ্জামগুলির বিপরীতে, Ansible হল পুশ-ভিত্তিক — আপনি একটি নিয়ন্ত্রণ নোড থেকে কমান্ড চালান। এটি সার্ভার প্রভিশনিং, অ্যাপ্লিকেশন স্থাপন, কনফিগারেশন ম্যানেজমেন্ট এবং অ্যাড-হক টাস্ক এক্সিকিউশনের জন্য ব্যবহৃত হয়।
 ---

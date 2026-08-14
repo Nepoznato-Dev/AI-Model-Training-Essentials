@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — 生態系與工具指南
 本指南涵蓋了 Kotlin 生態系統中的基本工具、架構和基礎設施。
 ---

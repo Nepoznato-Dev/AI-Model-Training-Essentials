@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible and Configuration Management
 
 Ansible is an agentless configuration management and automation tool. It uses SSH (or WinRM for Windows) to connect to servers and execute tasks defined in YAML playbooks. Unlike tools that require agents installed on every machine, Ansible is push-based — you run commands from a control node. It's used for server provisioning, application deployment, configuration management, and ad-hoc task execution.

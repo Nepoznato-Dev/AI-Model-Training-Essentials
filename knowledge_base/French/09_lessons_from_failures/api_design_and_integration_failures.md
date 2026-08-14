@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Échecs de conception et d'intégration d'API
 Les API (Application Programming Interfaces) constituent le tissu conjonctif des logiciels modernes : elles permettent aux services de communiquer, aux tiers de s'intégrer et aux équipes de travailler de manière indépendante. Lorsque la conception d’une API échoue, les conséquences se répercutent sur tous les systèmes qui en dépendent : intégrations interrompues, vulnérabilités de sécurité, frustration des développeurs et réécritures coûteuses. Les échecs d'intégration, lorsque les systèmes ne peuvent pas communiquer de manière fiable, sont parmi les sources les plus courantes d'incidents de production.
 ---

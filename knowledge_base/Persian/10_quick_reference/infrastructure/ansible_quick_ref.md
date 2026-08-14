@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible و مدیریت پیکربندی
 Ansible یک ابزار مدیریت پیکربندی و اتوماسیون بدون عامل است. از SSH (یا WinRM برای ویندوز) برای اتصال به سرورها و اجرای وظایف تعریف شده در کتابهای پخش YAML استفاده می کند. برخلاف ابزارهایی که نیاز به عوامل نصب شده روی هر ماشینی دارند، Ansible مبتنی بر فشار است - شما دستورات را از یک گره کنترل اجرا می کنید. این برای تامین سرور، استقرار برنامه، مدیریت پیکربندی، و اجرای تکالیف ad-hoc استفاده می شود.
 ---

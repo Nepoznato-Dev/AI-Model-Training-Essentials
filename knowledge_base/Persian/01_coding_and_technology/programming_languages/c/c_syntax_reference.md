@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ج - مرجع نحو
 این سند یک مرجع نحوی ساختاریافته و جامع برای C (C11/C17 با یادداشت‌های C23) ارائه می‌کند. این مرجع اصلی C را با تمرکز بر الگوهای نحوی جامع، جداول عملگر، مکانیک اشاره گر و مدیریت حافظه تکمیل می کند.
 ---

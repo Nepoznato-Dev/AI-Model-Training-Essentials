@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog - คู่มือระบบนิเวศและเครื่องมือ
 คู่มือนี้ครอบคลุมถึงเครื่องมือที่จำเป็น การใช้งาน และโครงสร้างพื้นฐานในระบบนิเวศของ Prolog
 ---

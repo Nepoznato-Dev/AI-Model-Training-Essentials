@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Luật và hệ thống pháp luật
 Luật pháp là tập hợp các quy tắc mà một xã hội đồng ý thực thi thông qua các thể chế của mình. Nó không giống như đạo đức - bạn có thể làm điều gì đó hợp pháp nhưng trái đạo đức và điều gì đó bất hợp pháp nhưng lại hợp lý về mặt đạo đức. Luật tồn tại để cung cấp khả năng dự đoán: để thiết lập những gì được phép, những gì bị cấm và điều gì sẽ xảy ra khi các quy tắc bị vi phạm. Không có nó, tranh chấp sẽ được giải quyết bằng quyền lực. Với nó, tranh chấp được giải quyết theo quy trình.
 Tệp này bao gồm các hệ thống pháp luật chính, các nhánh luật chính và các khái niệm hình thành cách thức hoạt động của các hệ thống pháp luật trong thực tế.

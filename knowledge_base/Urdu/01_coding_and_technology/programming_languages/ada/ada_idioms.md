@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ صاف، محفوظ ایڈا کوڈ لکھنے کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

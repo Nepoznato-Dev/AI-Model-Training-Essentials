@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamentaux de la vision par ordinateur
 La vision par ordinateur donne aux machines la capacité d’interpréter et de comprendre les informations visuelles du monde : images, vidéos et données 3D. Il gère tout, de la reconnaissance faciale sur votre téléphone aux voitures autonomes, en passant par l'analyse d'images médicales et le contrôle qualité industriel. Ce fichier couvre les concepts, architectures et techniques de base.
 ---

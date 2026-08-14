@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R
 R, istatistiksel hesaplama ve veri analizi için özel olarak tasarlanmış bir programlama dili ve ortamıdır. 1993 yılında Auckland Üniversitesi'nden Ross Ihaka ve Robert Gentleman tarafından oluşturulan (dolayısıyla "R"), S dilinin önemli uzantılara sahip bir uygulamasıdır. R açık kaynaktır ve R Çekirdek Ekibi tarafından korunur. Akademi, sağlık, finans ve hükümet alanlarındaki istatistikçiler, veri analistleri ve araştırmacılar için standart bir araçtır.
 R, veri işleme, istatistiksel modelleme, görselleştirme ve raporlama konularında uzmandır. Paket ekosistemi (CRAN), şimdiye kadar tasarlanmış hemen hemen her istatistiksel yöntemi kapsayan 20.000'den fazla pakete sahiptir.

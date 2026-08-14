@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # मशीन लर्निंग मूल्यांकन और वर्कफ़्लो
 एमएल जीवनचक्र के लिए एक व्यावहारिक मार्गदर्शिका - समस्या निर्धारण से लेकर उत्पादन निगरानी तक - मेट्रिक्स, सत्यापन और डिबगिंग पर ध्यान देने के साथ।
 ---

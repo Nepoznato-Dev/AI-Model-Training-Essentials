@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kinabukasan ng Trabaho
 ## Pangkalahatang-ideya
 Ang paraan ng paggawa namin ay nagbabago nang mas mabilis kaysa sa anumang punto mula noong Industrial Revolution. Mula sa bihirang perk, naging default sa magdamag ang malayuang trabaho. Lumilipat ang AI mula sa pagiging bago tungo sa collaborator. Binabago ng ekonomiya ng gig kung ano ang ibig sabihin ng "trabaho". At hindi dumarating ang automation para sa lahat ng trabaho — ngunit darating ito para sa maraming gawain sa karamihan ng mga trabaho. Narito ang isang pagtingin sa mga puwersa na muling hinuhubog ang lugar ng trabaho at kung ano ang susunod.

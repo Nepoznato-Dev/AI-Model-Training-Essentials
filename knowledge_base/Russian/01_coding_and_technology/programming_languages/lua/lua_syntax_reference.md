@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — Справочник по синтаксису
 Этот документ предоставляет исчерпывающий структурированный справочник по синтаксису Lua (5.4). Он дополняет основной справочник по Lua, уделяя особое внимание исчерпывающим синтаксическим шаблонам, таблицам и метатаблицам, сопрограммам и уникальной философии дизайна Lua.
 ---

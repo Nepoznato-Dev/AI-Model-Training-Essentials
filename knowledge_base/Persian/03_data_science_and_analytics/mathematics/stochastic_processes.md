@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فرآیندهای تصادفی
 **فرآیند تصادفی** مجموعه ای از متغیرهای تصادفی است که بر اساس زمان (یا مکان) نمایه می شوند. در حالی که نظریه احتمال رویدادهای تصادفی فردی را مطالعه می کند، فرآیندهای تصادفی چگونگی تکامل تصادفی را در طول زمان مطالعه می کنند. آنها قیمت سهام، طول صف، گسترش بیماری، تولید زبان و پویایی آموزش مدل های یادگیری ماشین را مدل می کنند.
 ---

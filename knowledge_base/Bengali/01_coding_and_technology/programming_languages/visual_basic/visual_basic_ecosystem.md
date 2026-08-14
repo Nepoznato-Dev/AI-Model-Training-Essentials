@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ভিজ্যুয়াল বেসিক — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকা ভিজ্যুয়াল বেসিক (.NET) ইকোসিস্টেমের প্রয়োজনীয় টুলস, ফ্রেমওয়ার্ক এবং অবকাঠামো কভার করে।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # پرل - نحو کا حوالہ
 یہ دستاویز پرل (5.38+) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، ریگولر ایکسپریشنز، حوالہ جات، اور پرل کی ٹیکسٹ پروسیسنگ پاور پر توجہ مرکوز کرکے مرکزی پرل ریفرنس کی تکمیل کرتا ہے۔
 ---

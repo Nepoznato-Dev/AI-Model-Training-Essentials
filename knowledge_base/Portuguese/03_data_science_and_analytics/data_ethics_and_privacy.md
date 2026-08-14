@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ética e privacidade de dados
 A ética dos dados é o estudo de como a coleta, análise e implantação de dados afetam os direitos, a autonomia e o bem-estar das pessoas. Privacidade é a preocupação específica sobre quem controla as informações pessoais e como elas são compartilhadas. Estes tópicos passaram de debates académicos para notícias de primeira página – aplicação do GDPR, violações de dados que afectam milhares de milhões de utilizadores e crescente consciência pública de que as práticas de dados das empresas tecnológicas têm consequências reais para a democracia, a igualdade e a liberdade individual.
 ---

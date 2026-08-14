@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Đánh giá và quy trình làm việc của Machine Learning
 Hướng dẫn thực tế về vòng đời ML — từ việc định khung vấn đề đến giám sát sản xuất — tập trung vào số liệu, xác thực và gỡ lỗi.
 ---

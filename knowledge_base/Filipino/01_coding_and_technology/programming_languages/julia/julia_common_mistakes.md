@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — Mga Karaniwang Pagkakamali at Anti-Pattern
 Kino-catalog ng dokumentong ito ang mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa Julia na may mga pagwawasto.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matemática Discreta
 A matemática discreta é o estudo de estruturas matemáticas que são fundamentalmente contáveis ​​ou separadas – em oposição à matemática contínua (cálculo, análise real), que lida com quantidades suaves e ininterruptas. A matemática discreta sustenta a ciência da computação, a criptografia, o design de algoritmos e as estruturas de dados. Se a matemática contínua descreve o mundo físico, a matemática discreta descreve o mundo computacional.
 ---

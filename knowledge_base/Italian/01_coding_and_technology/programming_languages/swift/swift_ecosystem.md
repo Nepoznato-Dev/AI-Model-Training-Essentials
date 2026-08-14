@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Swift: guida all'ecosistema e agli strumenti
 Questa guida copre gli strumenti, i framework e le infrastrutture essenziali nell'ecosistema Swift.
 ---

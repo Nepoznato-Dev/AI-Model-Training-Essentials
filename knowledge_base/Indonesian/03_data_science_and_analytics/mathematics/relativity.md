@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Relativitas
 Teori relativitas Einstein merevolusi pemahaman kita tentang ruang, waktu, dan gravitasi. **Relativitas khusus** (1905) menunjukkan bahwa ruang dan waktu tidak terpisah tetapi terjalin menjadi satu kesatuan yang disebut ruangwaktu, dan kecepatan cahaya adalah sama untuk semua pengamat. **Relativitas umum** (1915) menata ulang gravitasi bukan sebagai gaya, melainkan sebagai kelengkungan ruangwaktu yang disebabkan oleh massa dan energi. Teori-teori ini mendasari navigasi GPS, akselerator partikel, dan pemahaman kita tentang lubang hitam dan evolusi alam semesta.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 에이다
 Ada는 안전이 중요하고 무결성이 높은 시스템을 위해 설계된 정적으로 유형이 지정되고 컴파일된 프로그래밍 언어입니다. 원래 1980년대 미국 국방부(최초의 컴퓨터 프로그래머로 간주되는 Ada Lovelace의 이름을 따서 명명)와 계약을 통해 개발된 Ada는 신뢰성, 유지 관리 가능성 및 정확성을 강조합니다. 이는 당시 DoD에서 사용하던 수백 개의 프로그래밍 언어를 잘 지정된 단일 언어로 대체하도록 설계되었습니다.
 Ada는 항공(플라이 바이 와이어 시스템), 우주(ESA 및 NASA), 국방(미사일 유도, 레이더), 철도 운송, 의료 기기 등 소프트웨어 오류로 인해 생명이 희생될 수 있는 모든 곳에서 사용됩니다.

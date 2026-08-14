@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP Fundamentals
 
 Natural Language Processing (NLP) is the field of teaching machines to understand, generate, and work with human language. It powers search engines, chatbots, translation systems, sentiment analysis, and the large language models (LLMs) that have transformed AI since 2020. This file covers the evolution from classical techniques to modern Transformer-based architectures.

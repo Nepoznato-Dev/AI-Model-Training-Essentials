@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 스위프트
 Swift는 Apple(Chris Lattner 주도)에서 개발하고 2014년에 처음 출시된 현대적이고 컴파일된 프로그래밍 언어입니다. Swift는 Apple 플랫폼 개발(iOS, macOS, watchOS, tvOS, VisionOS)의 기본 언어로 Objective-C를 대체하도록 설계되었습니다. Swift는 컴파일된 언어의 성능과 스크립팅 언어의 표현력을 결합하고 특히 null 값, 메모리 관리 및 유형 오류와 관련된 안전성을 강조합니다.
 Apple 플랫폼 외에도 Swift는 서버측 개발(Vapor, Hummingbird), 크로스 플랫폼 애플리케이션, 심지어 기계 학습(Apple의 Create ML)에도 점점 더 많이 사용되고 있습니다. Swift on Server 및 크로스 플랫폼 지원이 도입되면서 Swift는 단순한 "Apple 언어" 그 이상으로 변모하고 있습니다.

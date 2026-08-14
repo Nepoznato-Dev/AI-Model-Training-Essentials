@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assembly — 慣用模式與最佳實踐
 本指南涵蓋了編寫乾淨、可維護的彙編程式碼的慣用模式（x86/x64 重點使用 NASM 語法）。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fizyka
 Fizyka zadaje najbardziej fundamentalne pytanie w nauce: jak zachowuje się materia i energia? Wszystko inne – chemia, biologia, inżynieria – opiera się na odpowiedziach. Fizyka rozciąga się od skali subatomowej (mechanika kwantowa) po skalę kosmiczną (ogólna teoria względności), a jej zasady leżą u podstaw wszystkich innych nauk przyrodniczych.
 ---

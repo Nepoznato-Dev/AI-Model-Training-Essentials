@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # واژه نامه فناوری
 یک واژه نامه مرجع که مدل های هوش مصنوعی، سخت افزار، معیارها و مفاهیم اصلی را پوشش می دهد.
 در چشم انداز هوش مصنوعی و محاسبات مدرن.

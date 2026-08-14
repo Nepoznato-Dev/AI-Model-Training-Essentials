@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java - รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนและแนวปฏิบัติที่ดีที่สุดในการเขียนโค้ด Java (17+) ที่ทันสมัยและสะอาดตา
 ---

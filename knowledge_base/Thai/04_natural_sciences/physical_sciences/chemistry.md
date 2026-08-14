@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # เคมี
 หากฟิสิกส์เป็นกฎของเกม เคมีคือสิ่งที่เกิดขึ้นเมื่อชิ้นส่วนมีปฏิสัมพันธ์กัน เคมีศึกษาว่าอะตอมพันธะ แตกตัว และจัดเรียงใหม่ได้อย่างไร กล่าวคือ วัสดุทั้งหมดมีพฤติกรรมอย่างไร เป็นสะพานเชื่อมช่องว่างระหว่างฟิสิกส์พื้นฐานกับความซับซ้อนของชีววิทยา ธรณีวิทยา และวิศวกรรมศาสตร์
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 食品、農業和營養
 糧食是人類最基本的需求，農業是文明的基礎。從狩獵和採集到農業的轉變——大約一萬年前的新石器革命——使人類能夠建造城市、發展文字並創造我們所謂的「文明」的一切。如今，農業僱用了全球約 27% 的勞動力，每天生產約 10 兆卡路里。然而，仍有約 8 億人挨餓，超過 20 億人超重或肥胖。問題不在於生產，而在於分配、取得和選擇。
 ---

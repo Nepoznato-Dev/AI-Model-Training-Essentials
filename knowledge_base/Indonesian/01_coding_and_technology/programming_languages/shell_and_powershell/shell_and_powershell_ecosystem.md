@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, kerangka kerja, dan infrastruktur penting untuk skrip shell (Bash/Zsh) dan PowerShell.
 ---

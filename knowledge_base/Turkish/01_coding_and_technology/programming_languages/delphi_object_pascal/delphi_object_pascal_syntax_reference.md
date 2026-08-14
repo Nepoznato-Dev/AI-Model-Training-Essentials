@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Object Pascal — Sözdizimi Referansı
 Bu belge Delphi/Object Pascal için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, OOP özelliklerine, jeneriklere, kayıtlara ve dil deyimlerine odaklanarak ana Delphi referansını tamamlar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Music Theory at Acoustics
 Ang teorya ng musika ay ang pag-aaral kung paano gumagana ang musika — ang mga pattern, istruktura, at prinsipyo na gumagawa ng ilang kumbinasyon ng mga tunog na kasiya-siya o makabuluhan at ang iba ay hindi pagkakatugma o magulo. Ang acoustics ay ang pisika ng tunog — kung paano naglalakbay ang mga panginginig ng boses sa hangin, kung paano ginagawa at nakikita ang mga ito. Sama-sama, ipinapaliwanag nila kung bakit parang masaya ang isang C major chord, kung bakit nalulungkot ang isang minor key, kung paano idinisenyo ang mga concert hall, at kung bakit pinalamig ka ng paborito mong kanta.
 ---

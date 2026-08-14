@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Từ điển tiếng Anh — Định nghĩa từ thông dụng
 Danh sách tham khảo các từ tiếng Anh được sử dụng thường xuyên và ý nghĩa của chúng,
 bao gồm từ vựng hàng ngày, thuật ngữ học thuật và những từ thường gặp

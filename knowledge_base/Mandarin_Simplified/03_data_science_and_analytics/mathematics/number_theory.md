@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 数论
 数论是对整数——整数及其性质的研究。高斯称其为“数学女王”。尽管数论研究的是最简单的对象（1、2、3……），但它却产生了所有数学中一些最深刻、最困难的问题。如今，它成为现代密码学、哈希算法、纠错码和随机数生成的基础。
 ---

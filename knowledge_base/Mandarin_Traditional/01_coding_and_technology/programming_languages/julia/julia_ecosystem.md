@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — 生態系與工具指南
 本指南涵蓋了 Julia 生態系統中的基本工具、軟體包和基礎設施。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 安全漏洞
 本文檔整合了軟體開發中常見的安全漏洞，包括注入攻擊、不安全程式碼實務和安全性錯誤。
 ---

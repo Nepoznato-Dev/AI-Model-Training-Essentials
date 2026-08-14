@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # هندسة الذكاء الاصطناعي المحلية
 دليل عملي لتشغيل نماذج اللغات الكبيرة بالكامل على الجهاز - اعتبارات الأجهزة، ومحركات الاستدلال، وتحسين الذاكرة، وتصميم النظام لنشر الحافة.
 ---

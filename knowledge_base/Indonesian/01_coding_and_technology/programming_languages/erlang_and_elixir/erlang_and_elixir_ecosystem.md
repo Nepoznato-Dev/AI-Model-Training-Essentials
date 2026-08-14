@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, kerangka kerja, dan infrastruktur penting dalam ekosistem Erlang dan Elixir, serta berbagi BEAM VM dan OTP.
 ---

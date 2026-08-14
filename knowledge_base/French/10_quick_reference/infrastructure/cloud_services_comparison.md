@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Comparaison des services cloud
 Une comparaison côte à côte des trois principaux fournisseurs de cloud (AWS, Azure et Google Cloud) en matière de calcul, de stockage, de bases de données, d'IA/ML, de mise en réseau, de surveillance et d'infrastructure en tant que code. Utile pour les architectes qui décident quelle plate-forme utiliser ou pour mapper les services d'un cloud à un autre.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্ন
 এই নথিটি C++-এ সবচেয়ে সাধারণ ভুল, ফাঁদ এবং অ্যান্টি-প্যাটার্নের ক্যাটালগ করে। প্রতিটি এন্ট্রি ভুল পদ্ধতি দেখায়, ব্যাখ্যা করে কেন এটি ব্যর্থ হয় এবং সঠিক সমাধান প্রদান করে। আধুনিক C++ (C++ 11/14/17/20) বেশিরভাগ ক্লাসিক সমস্যা এড়াতে সরঞ্জাম সরবরাহ করে।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI の安全性と調整
 AI の安全性とは、私たちが実際にやってほしいことを実行し、たとえ明示的に除外されていなくても、望まないことは行わない AI システムを構築する方法の研究です。調整は、AI システムの目標と動作を人間の意図と一致させるという具体的な課題です。 AI システムの機能が向上するにつれて、これらの質問は学術的な好奇心から実用的なエンジニアリング要件に移ります。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 正規表現のチートシート
 正規表現 (regex) は、テキストを照合するためのパターンです。これらは、検索と置換、入力検証、ログ解析、データ抽出など、あらゆる場所で使用されます。これは教科書ではなく実用的な参考書です。
 ---

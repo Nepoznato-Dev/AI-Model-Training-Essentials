@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Object Pascal
 
 Delphi is an object-oriented programming language based on Pascal, originally developed by Borland (later Embarcadero, now Idera). First released in 1995 as "Delphi 1", it was designed for rapid application development (RAD) of Windows desktop applications. The language is formally known as Object Pascal, and the Delphi IDE provides a visual form designer, integrated database tools, and a powerful compiler.

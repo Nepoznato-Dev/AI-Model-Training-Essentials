@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and System Administration"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps 및 시스템 관리
 서버 관리, 운영 자동화, 안정적인 인프라 유지에 대한 실용적인 가이드입니다.
 ---

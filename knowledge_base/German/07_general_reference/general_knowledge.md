@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Allgemeinwissen
 Diese Datei ist eine Sammlung von Fakten und Konzepten, die regelmäßig in Gesprächen, Nachrichten, Bildung und im täglichen Leben auftauchen. Betrachten Sie es als Hintergrundwissen – etwas, das Ihnen hilft zu verstehen, was Sie lesen, hören oder erleben.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #هندسة سريعة
 الهندسة السريعة هي ممارسة تصميم وتحسين وتحسين موجهات الإدخال للحصول على أفضل مخرجات ممكنة من نموذج اللغة. إنه فن وعلم في نفس الوقت، وهو الواجهة الأساسية للتحكم في سلوك LLM دون ضبط دقيق.
 ---

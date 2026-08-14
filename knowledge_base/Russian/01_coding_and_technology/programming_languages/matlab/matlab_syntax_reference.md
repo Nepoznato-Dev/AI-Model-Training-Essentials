@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB — Справочник по синтаксису
 Этот документ предоставляет полный структурированный справочник по синтаксису MATLAB (R2024+). Он дополняет основной справочник по MATLAB, уделяя особое внимание исчерпывающим синтаксическим шаблонам, матричным операциям, построению графиков и идиомам научных вычислений.
 ---

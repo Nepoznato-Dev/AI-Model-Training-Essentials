@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Swift - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio
 | Toleo | Mwaka | Mandhari Muhimu |

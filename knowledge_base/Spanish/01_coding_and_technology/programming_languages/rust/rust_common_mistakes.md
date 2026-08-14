@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en Rust. Cada entrada muestra el enfoque incorrecto, explica por qué falla y proporciona la solución correcta. El compilador de Rust detecta muchos errores, pero comprender estos patrones acelerará su curva de aprendizaje.
 ---

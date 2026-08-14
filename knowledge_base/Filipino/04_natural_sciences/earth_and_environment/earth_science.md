@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Earth Science
 Pinag-aaralan ng agham sa daigdig ang planetang ating tinitirhan — ang istraktura, mga proseso, kasaysayan, at mga sistema nito na ginagawang matitirahan. Ito ay sumasaklaw sa geology (ang solid Earth), oceanography (ang mga karagatan), meteorology (ang atmospera at panahon), at climatology (pangmatagalang pattern ng klima). Ang pinag-iisa ang mga patlang na ito ay ang pag-unawa na ang Earth ay isang dinamikong sistema: ang loob nito ay patuloy na gumagalaw, ang ibabaw nito ay muling hinuhubog, at ang kapaligiran at karagatan nito ay nakikipag-ugnayan sa mga kumplikadong paraan.
 ---

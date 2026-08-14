@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 人口結構變化
 ＃＃ 概述
 人口結構就是命運——或者至少他們與它有著強烈的押韻。世界人口正在迅速老化，以新的模式遷移，以前所未有的速度聚集到城市，並按照世代劃分，影響從投票行為到消費習慣的一切。這些轉變將持續數十年，但其影響已經顯而易見。以下是四大趨勢及其意義。

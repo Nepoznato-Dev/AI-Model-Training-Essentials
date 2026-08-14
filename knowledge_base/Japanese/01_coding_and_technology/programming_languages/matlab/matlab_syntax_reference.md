@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB — 構文リファレンス
 このドキュメントは、MATLAB (R2024+) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、行列演算、プロット、科学技術計算のイディオムに焦点を当て、主要な MATLAB リファレンスを補完します。
 ---

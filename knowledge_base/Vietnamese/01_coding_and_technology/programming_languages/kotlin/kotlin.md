@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin
 Kotlin là ngôn ngữ lập trình được biên dịch, gõ tĩnh do JetBrains phát triển và phát hành lần đầu tiên vào năm 2011 (1.0 vào năm 2016). Nó chạy trên Máy ảo Java (JVM) và hoàn toàn có thể tương tác với Java — nghĩa là bạn có thể sử dụng bất kỳ thư viện Java nào từ Kotlin và gọi mã Kotlin từ Java mà không cần bất kỳ trình bao bọc nào. Vào năm 2017, Google đã công bố Kotlin là ngôn ngữ ưa thích để phát triển Android và kể từ đó nó đã trở thành ngôn ngữ Android thống trị.
 Kotlin được thiết kế để khắc phục các điểm yếu của Java: chi tiết, ngoại lệ con trỏ null và thiếu các tính năng hiện đại. Kết quả là một ngôn ngữ có cảm giác giống như Java được hiện đại hóa — ngắn gọn, an toàn và biểu cảm — trong khi vẫn duy trì khả năng tương thích hoàn toàn với hệ sinh thái Java khổng lồ.

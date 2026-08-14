@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R - คู่มือระบบนิเวศและเครื่องมือ
 คู่มือนี้ครอบคลุมถึงเครื่องมือ แพ็คเกจ และโครงสร้างพื้นฐานที่จำเป็นในระบบนิเวศ R
 ---

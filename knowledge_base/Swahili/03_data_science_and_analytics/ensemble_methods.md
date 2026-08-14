@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mbinu za Kukusanya
 Mbinu za kuunganisha huchanganya miundo mingi ya kujifunza kwa mashine ili kutoa utabiri bora zaidi kuliko muundo wowote unaweza kufikia pekee. Intuition ni moja kwa moja: ikiwa una mifano kadhaa ambayo kila moja ni sahihi lakini hufanya makosa tofauti, kuchanganya utabiri wao kutaghairi makosa ya mtu binafsi na kutoa matokeo yenye nguvu zaidi. Ensembles ziko nyuma ya suluhu nyingi za ushindani za kujifunza kwa mashine na husalia kuwa baadhi ya mbinu zinazotegemeka katika mifumo ya uzalishaji.
 ---

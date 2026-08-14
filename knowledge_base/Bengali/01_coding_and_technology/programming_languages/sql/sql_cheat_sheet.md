@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # এসকিউএল - চিট শীট
 ## বেসিক নির্বাচন করুন
 ```sql

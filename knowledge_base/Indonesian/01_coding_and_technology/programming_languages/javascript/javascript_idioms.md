@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik dan praktik terbaik untuk menulis kode JavaScript (ES2024+) yang bersih dan modern.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # نظریه اعداد
 نظریه اعداد مطالعه اعداد صحیح - اعداد کامل و خواص آنها است. گاوس آن را "ملکه ریاضیات" نامید. با وجود مطالعه ساده ترین اشیاء (1، 2، 3، ...)، نظریه اعداد برخی از عمیق ترین و سخت ترین مسائل را در تمام ریاضیات ایجاد می کند. امروزه، زیربنای رمزنگاری مدرن، الگوریتم های هش، کدهای تصحیح خطا و تولید اعداد تصادفی است.
 ---

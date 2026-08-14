@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — ข้อผิดพลาดทั่วไปและการต่อต้านรูปแบบ
 เอกสารนี้รวบรวมข้อผิดพลาด กับดัก และรูปแบบการต่อต้านใน PHP ที่พบบ่อยที่สุดพร้อมการแก้ไข
 ---

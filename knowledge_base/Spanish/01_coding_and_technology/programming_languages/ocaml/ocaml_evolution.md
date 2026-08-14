@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml: Historial de versiones y evolución
 ## Línea de tiempo
 | Versión | Año | Tema clave |

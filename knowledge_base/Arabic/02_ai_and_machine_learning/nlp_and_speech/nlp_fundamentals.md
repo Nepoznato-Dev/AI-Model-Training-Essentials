@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #أساسيات البرمجة اللغوية العصبية
 معالجة اللغات الطبيعية (NLP) هي مجال تعليم الآلات لفهم اللغة البشرية وتوليدها والعمل معها. إنه يشغل محركات البحث وروبوتات الدردشة وأنظمة الترجمة وتحليل المشاعر ونماذج اللغات الكبيرة (LLMs) التي حولت الذكاء الاصطناعي منذ عام 2020. يغطي هذا الملف التطور من التقنيات الكلاسيكية إلى البنى الحديثة القائمة على المحولات.
 ---

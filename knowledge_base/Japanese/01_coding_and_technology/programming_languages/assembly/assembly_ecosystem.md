@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # アセンブリ — エコシステムとツールのガイド
 このガイドでは、アセンブリ エコシステムの重要なツール、アセンブラ、インフラストラクチャについて説明します。
 ---

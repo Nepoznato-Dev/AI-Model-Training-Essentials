@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang 和 Elixir — 语法参考
 本文档为 Erlang 和 Elixir 提供了全面、结构化的语法参考。它通过关注模式匹配、流程管理、OTP 行为和容错系统模式来补充主要参考。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Batayan sa Pagsulat at Komunikasyon
 Ang pagsulat at komunikasyon ay ang mga kasanayan sa epektibong paghahatid ng mga ideya — sa pamamagitan man ng mga email, ulat, dokumentasyon, presentasyon, o pag-uusap. Karamihan sa gawaing kaalaman ay pangunahing gawaing pangkomunikasyon: kailangang ipaliwanag ng mga propesyonal ang kanilang pag-iisip, hikayatin ang iba, idokumento ang mga desisyon, magsulat ng mga detalye, ipakita ang mga natuklasan, at makipagtulungan sa mga koponan. Ang agwat sa pagitan ng kung ano ang ibig sabihin at kung ano ang naiintindihan ay kung saan nagmumula ang karamihan sa mga problema, at ang mas mahusay na komunikasyon ay nagpapaliit sa puwang na iyon.
 ---

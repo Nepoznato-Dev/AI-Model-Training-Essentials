@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uhandisi wa Data na Mabomba
 Uhandisi wa data ni taaluma ya kujenga mifumo inayosonga, kubadilisha na kuhifadhi data kwa kiwango. Bila mabomba ya data ya kuaminika, miundo ya kujifunza kwa mashine haiwezi kufunzwa, dashibodi zinaonyesha nambari za zamani, na maamuzi ya biashara yanatokana na kubahatisha. Faili hii inashughulikia usanifu, zana, na mbinu za kujenga miundombinu ya data inayofanya kazi.
 ---

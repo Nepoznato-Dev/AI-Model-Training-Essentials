@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جاوا اسکریپت - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای جاوا اسکریپت ارائه می دهد. این مرجع اصلی جاوا اسکریپت را با تمرکز بر الگوهای نحوی جامع، جداول عملگر و مکانیک داخلی تکمیل می کند.
 ---

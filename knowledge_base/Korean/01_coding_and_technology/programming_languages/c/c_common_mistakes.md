@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — 일반적인 실수 및 안티 패턴
 이 문서는 C에서 가장 흔히 발생하는 실수, 함정 및 안티 패턴을 나열합니다. 각 항목은 잘못된 접근 방식을 보여주고 실패 이유를 설명하며 올바른 솔루션을 제공합니다. C는 완전한 제어권을 제공합니다. 이는 메모리 안전, 경계 확인 및 정의되지 않은 동작에 대한 모든 책임을 의미합니다.
 ---

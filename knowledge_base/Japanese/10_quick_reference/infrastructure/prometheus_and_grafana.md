@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #プロメテウスとグラファナ
 Prometheus は、信頼性と拡張性を考慮して設計されたオープンソースの監視および警告ツールキットです。 Grafana は、時系列データを視覚化するための主要なオープンソース プラットフォームです。これらは一緒になって、最新のインフラストラクチャとアプリケーション用の最も一般的な監視スタックを形成します。 Prometheus はメトリクスを収集して保存します。 Grafana はそれらをダッシュ​​ボードに表示します。
 ---

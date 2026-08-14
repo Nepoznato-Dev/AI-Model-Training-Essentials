@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ensemble-Methoden
 Ensemble-Methoden kombinieren mehrere Modelle des maschinellen Lernens, um bessere Vorhersagen zu erzielen, als jedes einzelne Modell allein erreichen könnte. Die Intuition ist einfach: Wenn Sie über mehrere Modelle verfügen, die jeweils einigermaßen genau sind, aber unterschiedliche Fehler machen, werden durch die Kombination ihrer Vorhersagen einzelne Fehler ausgeglichen und ein belastbareres Ergebnis erzielt. Ensembles stehen hinter den meisten wettbewerbsfähigen Lösungen für maschinelles Lernen und gehören nach wie vor zu den zuverlässigsten Techniken in Produktionssystemen.
 ---

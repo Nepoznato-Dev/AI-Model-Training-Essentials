@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนสำหรับการเขียนโค้ด OCaml ที่สะอาดตา
 ---

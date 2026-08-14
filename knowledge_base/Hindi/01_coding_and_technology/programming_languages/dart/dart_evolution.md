@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # डार्ट - संस्करण इतिहास और विकास
 ## समयरेखा
 | संस्करण | वर्ष | मुख्य विषय |

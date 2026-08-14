@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — Những sai lầm thường gặp và những khuôn mẫu phản cảm
 Tài liệu này liệt kê các lỗi, cạm bẫy và mô hình phản đối phổ biến nhất ở Julia kèm theo các chỉnh sửa.
 ---

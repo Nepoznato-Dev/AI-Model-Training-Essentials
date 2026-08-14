@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic - แผ่นโกง
 ## พื้นฐาน
 ```vb

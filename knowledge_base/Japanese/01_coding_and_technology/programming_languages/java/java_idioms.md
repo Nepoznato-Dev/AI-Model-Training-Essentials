@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで最新の Java (17 以降) コードを作成するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

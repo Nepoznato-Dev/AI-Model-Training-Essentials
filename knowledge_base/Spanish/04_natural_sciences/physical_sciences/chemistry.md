@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Química
 Si la física son las reglas del juego, la química es lo que sucede cuando las piezas interactúan. La química estudia cómo los átomos se unen, se separan y se reordenan, es decir, cómo se comportan todos los materiales. Cierra la brecha entre la física fundamental y la complejidad de la biología, la geología y la ingeniería.
 ---

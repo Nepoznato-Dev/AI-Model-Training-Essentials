@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # برگه تقلب اسکریپت Bash و Shell
 یک مرجع عملی برای نوشتن اسکریپت های پوسته در Bash - پوسته پیش فرض در اکثر سیستم های لینوکس و macOS. سینتکس، الگوهای رایج، پردازش متن و تک خط های مفید را پوشش می دهد.
 ---

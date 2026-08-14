@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # セキュリティの脆弱性
 このドキュメントには、インジェクション攻撃、安全でないコードの実践、セキュリティ上の間違いなど、ソフトウェア開発における一般的なセキュリティ脆弱性がまとめられています。
 ---

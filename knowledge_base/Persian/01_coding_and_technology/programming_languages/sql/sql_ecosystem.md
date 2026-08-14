@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - راهنمای اکوسیستم و ابزار
 این راهنما پایگاه های داده، ابزارها و زیرساخت های ضروری در اکوسیستم SQL را پوشش می دهد.
 ---

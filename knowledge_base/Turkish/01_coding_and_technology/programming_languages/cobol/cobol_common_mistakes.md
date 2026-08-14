@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge, COBOL'deki en yaygın hataları, tuzakları ve anti-kalıpları düzeltmelerle birlikte kataloglamaktadır.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python Syntax Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #पायथन सिंटैक्स चीट शीट
 पायथन 3.x सिंटैक्स और सामान्य पैटर्न के लिए त्वरित संदर्भ।
 ---

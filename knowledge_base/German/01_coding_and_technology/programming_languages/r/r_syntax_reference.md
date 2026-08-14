@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für R (4.x). Es ergänzt die Haupt-R-Referenz, indem es sich auf umfassende Syntaxmuster, das Tidyverse-Ökosystem, Datenmanipulation, statistische Modellierung und Visualisierung konzentriert.
 ---

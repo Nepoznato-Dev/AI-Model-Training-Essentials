@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku omówiono idiomatyczne wzorce pisania czystego kodu Visual Basic (.NET).
 ---

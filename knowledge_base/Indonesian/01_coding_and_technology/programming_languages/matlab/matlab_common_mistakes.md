@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Kesalahan Umum & Anti-Pola
 Dokumen ini mengkatalogkan kesalahan, jebakan, dan anti-pola paling umum di MATLAB beserta koreksinya.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rekayasa Data dan Saluran Pipa
 Rekayasa data adalah disiplin membangun sistem yang memindahkan, mengubah, dan menyimpan data dalam skala besar. Tanpa saluran data yang andal, model pembelajaran mesin tidak dapat dilatih, dasbor menunjukkan angka-angka yang sudah ketinggalan zaman, dan keputusan bisnis didasarkan pada dugaan. File ini mencakup arsitektur, alat, dan praktik untuk membangun infrastruktur data yang berfungsi.
 ---

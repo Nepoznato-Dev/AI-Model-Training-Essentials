@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uboreshaji wa Utendaji
 Uboreshaji wa utendakazi ni mazoea ya kufanya programu iwe haraka zaidi - kupunguza nyakati za majibu, kuongeza matokeo, kupunguza utumiaji wa kumbukumbu na kuondoa vikwazo. Ni mojawapo ya ujuzi wenye athari zaidi msanidi programu anaweza kuwa nao, kwa sababu programu polepole hupoteza watumiaji, hupoteza rasilimali, na hufadhaisha kila mtu. Lakini pia ni mojawapo ya makosa yanayofanywa mara nyingi, huku wasanidi programu wakiboresha mambo yasiyofaa kulingana na angavu badala ya ushahidi.
 ---

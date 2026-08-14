@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i anty-wzorce w Dart wraz z poprawkami.
 ---

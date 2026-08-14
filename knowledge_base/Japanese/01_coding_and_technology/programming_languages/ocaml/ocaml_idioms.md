@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで慣用的な OCaml コードを記述するための慣用的なパターンについて説明します。
 ---

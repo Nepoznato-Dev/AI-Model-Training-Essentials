@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — Riferimento alla sintassi
 Questo documento fornisce un riferimento completo e strutturato alla sintassi per Haskell (GHC 9.x). Completa il riferimento principale di Haskell concentrandosi su modelli di sintassi esaustivi, sistema di tipi, monadi, valutazione pigra e idiomi di programmazione funzionale.
 ---

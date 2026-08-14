@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz ve verimli SQL yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

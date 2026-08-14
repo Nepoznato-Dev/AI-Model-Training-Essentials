@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Uhusiano
 Nadharia za Einstein za uhusiano zilibadilisha uelewa wetu wa nafasi, wakati, na mvuto. **Uhusiano maalum** (1905) ulionyesha kuwa nafasi na wakati havitenganishwi bali vinafumwa katika kitambaa kimoja kiitwacho spacetime, na kwamba kasi ya mwanga ni sawa kwa waangalizi wote. **Uhusiano wa jumla** (1915) uliwazia upya mvuto si kama nguvu bali kama mpindano wa muda wa anga unaosababishwa na wingi na nishati. Nadharia hizi ni msingi wa urambazaji wa GPS, viongeza kasi vya chembe, na uelewa wetu wa mashimo meusi na mageuzi ya ulimwengu.
 ---

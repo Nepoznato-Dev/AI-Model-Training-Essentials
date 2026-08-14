@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rdza — Przewodnik po ekosystemie i narzędziach
 Ten przewodnik opisuje podstawowe narzędzia, frameworki i infrastrukturę w ekosystemie Rust.
 ---

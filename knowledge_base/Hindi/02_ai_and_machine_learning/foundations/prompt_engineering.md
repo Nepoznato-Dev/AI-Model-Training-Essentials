@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # शीघ्र इंजीनियरिंग
 प्रॉम्प्ट इंजीनियरिंग एक भाषा मॉडल से सर्वोत्तम संभव आउटपुट प्राप्त करने के लिए इनपुट संकेतों को डिजाइन करने, परिष्कृत करने और अनुकूलित करने का अभ्यास है। यह एक कला और विज्ञान दोनों है, और यह बिना किसी सुधार के एलएलएम व्यवहार को नियंत्रित करने के लिए प्राथमिक इंटरफ़ेस है।
 ---

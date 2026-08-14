@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — Lịch sử và sự phát triển của phiên bản
 ## Dòng thời gian
 | Phiên bản | Ngày phát hành | Chủ đề chính |

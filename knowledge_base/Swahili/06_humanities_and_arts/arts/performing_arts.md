@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Sanaa za Maonyesho
 Sanaa za uigizaji - ukumbi wa michezo, filamu, dansi na uigizaji wa muziki - ndipo sanaa hukutana na uwepo hai wa hadhira. Tofauti na mchoro ukutani au kitabu kwenye rafu, utendakazi hujitokeza kwa wakati halisi, na kutengeneza uzoefu wa pamoja kati ya msanii na mtazamaji ambao umekuwa kitovu cha utamaduni wa binadamu kwa maelfu ya miaka.
 ---

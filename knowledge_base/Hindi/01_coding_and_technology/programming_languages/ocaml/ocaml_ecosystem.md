@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका OCaml पारिस्थितिकी तंत्र में आवश्यक उपकरण, ढांचे और बुनियादी ढांचे को शामिल करती है।
 ---

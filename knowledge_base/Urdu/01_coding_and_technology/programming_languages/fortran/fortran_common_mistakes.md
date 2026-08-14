@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # فورٹران - عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز فورٹران میں سب سے عام غلطیوں، ٹریپس، اور اینٹی پیٹرن کو تصحیح کے ساتھ کیٹلاگ کرتا ہے۔
 ---

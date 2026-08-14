@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal — 慣用模式與最佳實踐
 本指南涵蓋了編寫乾淨的 Delphi 和 Object Pascal 程式碼的慣用模式。
 ---

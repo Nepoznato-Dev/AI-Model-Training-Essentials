@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 統計與機率
 機率和統計學是數據科學、機器學習和科學研究的數學基礎。機率告訴你事件發生的可能性有多大；統計學告訴你如何從數據中得出結論。他們共同將不確定性轉化為可量化、可管理的知識。
 ---

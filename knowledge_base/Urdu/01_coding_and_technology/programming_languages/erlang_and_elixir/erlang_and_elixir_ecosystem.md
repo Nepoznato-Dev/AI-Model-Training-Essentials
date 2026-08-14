@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ BEAM VM اور OTP کا اشتراک کرتے ہوئے Erlang اور Elixir ایکو سسٹم میں ضروری ٹولز، فریم ورک، اور انفراسٹرکچر کا احاطہ کرتی ہے۔
 ---

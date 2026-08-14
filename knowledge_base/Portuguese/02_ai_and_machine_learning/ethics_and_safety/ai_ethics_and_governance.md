@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ética e governança de IA
 Os sistemas de IA não são neutros. Refletem os dados sobre os quais foram treinados, os valores dos seus criadores e os incentivos das organizações que os implantam. Ética consiste em perguntar não apenas "podemos construir isso?" mas "deveríamos?" A governação consiste na criação de estruturas — leis, normas, órgãos de supervisão — que garantam que a IA seja desenvolvida e utilizada de forma responsável. Este ficheiro abrange as principais dimensões éticas da IA ​​e os quadros de governação emergentes para as abordar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # हास्केल - सिंटैक्स संदर्भ
 यह दस्तावेज़ हास्केल (GHC 9.x) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, टाइप सिस्टम, मोनैड, आलसी मूल्यांकन और कार्यात्मक प्रोग्रामिंग मुहावरों पर ध्यान केंद्रित करके मुख्य हास्केल संदर्भ को पूरक करता है।
 ---

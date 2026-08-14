@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — 語法參考
 本文檔為 Rust 提供了全面、結構化的語法參考。它透過關注詳盡的語法模式、運算符表以及所有權系統、特徵和並發的內部機制來補充主要的 Rust 參考。
 ---

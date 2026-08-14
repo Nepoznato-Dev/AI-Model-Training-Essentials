@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سكراتش - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والإضافات والموارد الأساسية في نظام Scratch البيئي.
 ---

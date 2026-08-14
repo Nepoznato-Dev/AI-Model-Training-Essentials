@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure — 구문 참조
 이 문서는 Common Lisp 및 Clojure에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 S-표현식, 매크로, 영구 데이터 구조 및 함수형 프로그래밍 패턴에 중점을 두어 주요 Lisp/Clojure 참조를 보완합니다.
 ---

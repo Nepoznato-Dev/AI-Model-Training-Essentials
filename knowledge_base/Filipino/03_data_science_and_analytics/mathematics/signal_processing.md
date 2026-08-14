@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pagproseso ng Signal
 Ang pagpoproseso ng signal ay ang agham ng pagsusuri, pagbabago, at pag-synthesis ng mga signal — mga representasyon ng mga pisikal na dami na nag-iiba-iba sa paglipas ng panahon, espasyo, o dalas. Audio, mga larawan, video, data ng sensor, brain wave, mga presyo ng stock — lahat ay mga signal. Ang mga mathematical na tool ng pagpoproseso ng signal (Fourier transforms, filters, sampling theory) ay pundasyon sa machine learning, komunikasyon, medical imaging, at halos lahat ng field na gumagana sa data.
 ---

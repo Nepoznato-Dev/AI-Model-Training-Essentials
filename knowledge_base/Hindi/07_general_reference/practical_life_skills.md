@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # व्यावहारिक जीवन कौशल
 स्कूल आपको हिसाब-किताब तो सिखाता है, लेकिन शायद ही कभी आपको यह सिखाता है कि टैक्स कैसे भरना है, संतुलित भोजन कैसे पकाना है, या घर का रख-रखाव कैसे करना है। ये व्यावहारिक दक्षताएं हैं जो आपके दैनिक जीवन की गुणवत्ता को प्रभावित करती हैं - उस प्रकार का ज्ञान जो आपको आत्मनिर्भर और आर्थिक रूप से लचीला बनाता है। यह फ़ाइल आवश्यक चीज़ों के लिए एक सघन संदर्भ है।
 ---

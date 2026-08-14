@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genetika dan Genomik
 Genetika adalah studi tentang keturunan - bagaimana sifat-sifat diturunkan dari orang tua ke keturunannya melalui DNA. Genomik adalah studi tentang keseluruhan genom: semua gen, wilayah non-pengkode, cara interaksinya, dan variasinya antar individu dan populasi. Transisi dari genetika ke genomik didorong oleh teknologi pengurutan — kami beralih dari mempelajari satu gen pada satu waktu hingga membaca seluruh genom dalam hitungan jam, menghasilkan data yang mengubah bidang kedokteran, pertanian, forensik, dan pemahaman kita tentang evolusi.
 ---

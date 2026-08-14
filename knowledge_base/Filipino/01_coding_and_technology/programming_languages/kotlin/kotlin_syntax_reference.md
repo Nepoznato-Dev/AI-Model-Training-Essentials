@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa Kotlin (2.0+). Kinukumpleto nito ang pangunahing sanggunian ng Kotlin sa pamamagitan ng pagtutok sa mga kumpletong pattern ng syntax, null na kaligtasan, mga coroutine, at mga idyoma ng Kotlin.
 ---

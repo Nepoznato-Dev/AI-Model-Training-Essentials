@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # World Religions and Comparative Mythology
 
 World religions are the major systems of belief, practice, and community that have shaped human civilisation for thousands of years. Comparative mythology studies the stories different cultures tell about creation, heroes, gods, and the meaning of existence — and the striking patterns that recur across traditions separated by thousands of miles and millennia. Understanding both is essential for grasping why people believe what they believe, how cultures differ, and what unites the human experience.

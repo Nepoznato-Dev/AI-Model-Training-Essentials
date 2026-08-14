@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust — รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุดในการเขียนโค้ด Rust ที่สะอาดและปลอดภัย
 ---

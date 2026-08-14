@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # アクセシビリティと包括的なデザイン
 アクセシビリティ (a11y と略されることが多い) は、視覚障害、聴覚障害、運動障害、認知障害、神経障害のある人を含むすべての人がソフトウェアを使用できるようにする実践です。これは多くの法域で法的要件であり、標準的なエンジニアリング慣行です。アクセシブルなソフトウェアは、すべての人にとってより良いソフトウェアです。なぜなら、障害のあるユーザーをサポートする設計上の決定 (明確な構造、キーボード ナビゲーション、十分なコントラスト、読みやすいテキスト) によって、すべてのユーザーのエクスペリエンスが向上するからです。
 ---

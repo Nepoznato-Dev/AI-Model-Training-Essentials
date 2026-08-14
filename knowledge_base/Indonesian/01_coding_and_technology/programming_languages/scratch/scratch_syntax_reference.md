@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gores — Referensi Sintaks
 Dokumen ini menyediakan referensi sintaksis yang komprehensif dan terstruktur untuk Scratch 3.0. Ini melengkapi referensi Scratch utama dengan berfokus pada kategori blok yang lengkap, pola berbasis peristiwa, manajemen sprite, kloning, dan teknik pengkodean kreatif.
 ---

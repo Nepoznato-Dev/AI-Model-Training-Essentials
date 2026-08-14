@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prométhée et Grafana
 Prometheus est une boîte à outils open source de surveillance et d'alerte conçue pour la fiabilité et l'évolutivité. Grafana est la principale plateforme open source de visualisation de données de séries chronologiques. Ensemble, ils forment la pile de surveillance la plus populaire pour les infrastructures et applications modernes. Prometheus collecte et stocke des métriques ; Grafana les affiche dans des tableaux de bord.
 ---

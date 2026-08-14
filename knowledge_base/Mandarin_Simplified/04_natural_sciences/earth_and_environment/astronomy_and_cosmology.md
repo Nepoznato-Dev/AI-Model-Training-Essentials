@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 天文学和宇宙学
 天文学是对天体（恒星、行星、星系以及地球大气层以外的一切）的研究。宇宙学是对整个宇宙的研究：它的起源、结构、演化和最终命运。他们共同解决了人类曾经提出过的一些最基本的问题：宇宙是如何开始的？有多大？我们孤独吗？它最终会发生什么事情呢？
 ---

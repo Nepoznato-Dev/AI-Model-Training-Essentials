@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية وأفضل الممارسات لكتابة كود PHP (8.3+) النظيف والحديث.
 ---

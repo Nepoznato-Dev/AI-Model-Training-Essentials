@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Словарь английского языка — определения общих слов
 Справочный список часто используемых английских слов и их значений.
 охватывает повседневную лексику, академические термины и часто встречающиеся слова

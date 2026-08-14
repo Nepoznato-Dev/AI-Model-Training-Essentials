@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lý thuyết trò chơi và tư duy chiến lược
 Lý thuyết trò chơi là nghiên cứu toán học về các tương tác chiến lược - những tình huống mà kết quả của bạn không chỉ phụ thuộc vào những gì bạn làm mà còn phụ thuộc vào những gì người khác làm. Nó áp dụng ở mọi nơi: cạnh tranh kinh doanh, quan hệ quốc tế, đấu giá, đàm phán, sinh học tiến hóa và các quyết định hàng ngày như chọn tuyến đường khi tham gia giao thông. Cái nhìn sâu sắc cốt lõi là các tác nhân hợp lý trong các tình huống chiến lược không chỉ tối ưu hóa chiến lược của riêng họ - họ dự đoán những gì người khác sẽ làm và những người khác cũng đang làm như vậy.
 ---

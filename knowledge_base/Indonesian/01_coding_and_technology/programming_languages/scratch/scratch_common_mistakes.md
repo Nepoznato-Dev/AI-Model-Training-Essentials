@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Goresan — Kesalahan Umum & Anti-Pola
 Dokumen ini berisi katalog kesalahan dan jebakan paling umum di Scratch beserta koreksinya.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell i PowerShell — przewodnik po ekosystemie i narzędziach
 W tym przewodniku omówiono podstawowe narzędzia, struktury i infrastrukturę do skryptów powłoki (Bash/Zsh) i programu PowerShell.
 ---

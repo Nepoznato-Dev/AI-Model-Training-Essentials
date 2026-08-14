@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell ve PowerShell — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz, kabuk komut dosyası oluşturma (Bash/Zsh) ve PowerShell için temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

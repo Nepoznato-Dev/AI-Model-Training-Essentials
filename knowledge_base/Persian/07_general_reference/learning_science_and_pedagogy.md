@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # یادگیری علوم و آموزش
 یادگیری علم مطالعه بین رشته ای نحوه یادگیری افراد است - برگرفته از روانشناسی، علوم اعصاب، آموزش و علوم شناختی. پداگوژی عمل و روش تدریس است. آنها با هم به سوالات مربوط به هر کسی که آموزش می دهد، آموزش می دهد، مربی یا طراحی محتوای آموزشی می دهد: چه روش هایی به افراد کمک می کند تا به طور موثر یاد بگیرند؟ چه تکنیک های رایج مطالعه ناکارآمد هستند؟ آموزش چگونه باید برای حفظ و انتقال بهینه ساختار یابد؟
 ---

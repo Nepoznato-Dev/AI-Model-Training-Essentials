@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Çok modlu yapay zeka
 Çok modlu yapay zeka sistemleri, birden fazla veri türünden (metin, resim, ses, video ve daha fazlası) gelen bilgileri aynı anda işler ve birleştirir. Daha önceki yapay zeka sistemleri genellikle tek modlu (yalnızca metin, yalnızca görüntü) iken, en yetenekli modern sistemler çok modludur. GPT-4V, görselleri ve metni birlikte okur; Gemini metni, görüntüleri, sesi ve videoyu yerel olarak işler; ve Sora gibi sistemler, metin açıklamalarından video oluşturur. Bu dosya çok modlu yapay zekanın nasıl çalıştığını, arkasındaki mimarileri ve yöntemleri birleştirmenin neden bu kadar güçlü olduğunu kapsar.
 ---

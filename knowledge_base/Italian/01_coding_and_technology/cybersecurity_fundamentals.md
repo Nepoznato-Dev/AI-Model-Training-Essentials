@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamenti di sicurezza informatica
 La sicurezza è una disciplina che deve essere integrata in ogni livello di un sistema fin dall’inizio, piuttosto che aggiunta in un secondo momento. Che si tratti di creare un'applicazione Web, gestire l'infrastruttura o distribuire un'API, comprendere il panorama delle minacce e i fondamenti della difesa è essenziale.
 ---

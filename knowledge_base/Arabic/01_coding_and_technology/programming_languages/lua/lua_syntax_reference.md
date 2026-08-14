@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # لوا — مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لصيغة Lua (5.4). إنه يكمل مرجع Lua الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة والجداول والجداول الوصفية والكوروتينات وفلسفة التصميم الفريدة لـ Lua.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 食料、農業、栄養
 食糧は人間の最も基本的なニーズであり、農業は文明の基礎です。約1万年前の新石器革命による狩猟採集から農耕への移行により、人類は都市を建設し、文字を発展させ、その他「文明」と呼ばれるものすべてを創造することができた。現在、農業は世界の労働力の約 27% を雇用し、1 日あたり約 10 兆カロリーを生産しています。しかし、約8億​​人が依然として飢えに苦しんでおり、20億人以上が過体重または肥満です。問題は生産ではなく、配布、アクセス、選択肢です。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku omówiono idiomatyczne wzorce i najlepsze praktyki dotyczące pisania czystego kodu w języku Python.
 ---

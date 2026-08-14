@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Glossary ng Teknolohiya
 Isang reference na glossary na sumasaklaw sa mga modelo ng AI, hardware, benchmark, at pangunahing konsepto
 sa modernong AI at computing landscape.

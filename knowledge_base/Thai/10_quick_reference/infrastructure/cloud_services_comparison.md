@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # การเปรียบเทียบบริการคลาวด์
 การเปรียบเทียบแบบเคียงข้างกันของผู้ให้บริการคลาวด์หลักสามราย ได้แก่ AWS, Azure และ Google Cloud ในด้านการประมวลผล พื้นที่จัดเก็บ ฐานข้อมูล AI/ML ระบบเครือข่าย การตรวจสอบ และโครงสร้างพื้นฐานตามโค้ด มีประโยชน์สำหรับสถาปนิกในการตัดสินใจเลือกแพลตฟอร์มที่จะใช้ หรือจัดทำแผนที่บริการจากคลาวด์หนึ่งไปยังอีกคลาวด์หนึ่ง
 ---

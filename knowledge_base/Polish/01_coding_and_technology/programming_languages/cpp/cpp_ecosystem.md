@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C++ — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku omówiono podstawowe narzędzia, biblioteki i infrastrukturę w ekosystemie C++.
 ---

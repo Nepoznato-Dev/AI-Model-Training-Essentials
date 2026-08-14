@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell 和 PowerShell — 生态系统和工具指南
 本指南涵盖了 shell 脚本 (Bash/Zsh) 和 PowerShell 的基本工具、框架和基础设施。
 ---

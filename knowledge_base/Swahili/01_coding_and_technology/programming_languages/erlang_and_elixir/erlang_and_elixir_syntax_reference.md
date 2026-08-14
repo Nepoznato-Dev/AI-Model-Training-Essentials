@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia kwa Erlang na Elixir. Inakamilisha marejeleo makuu kwa kuzingatia ulinganifu wa muundo, usimamizi wa mchakato, mienendo ya OTP, na mifumo ya mfumo inayostahimili hitilafu.
 ---

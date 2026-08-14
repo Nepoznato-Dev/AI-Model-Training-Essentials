@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp и Clojure — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису Common Lisp и Clojure. Он дополняет основной справочник по Lisp/Clojure, уделяя особое внимание S-выражениям, макросам, постоянным структурам данных и шаблонам функционального программирования.
 ---

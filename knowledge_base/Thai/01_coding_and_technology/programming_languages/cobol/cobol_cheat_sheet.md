@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - แผ่นโกง
 ## โครงสร้างหลักสูตร
 ```cobol

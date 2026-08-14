@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — 常見錯誤與反模式
 本文檔列出了 Visual Basic (VB.NET) 中最常見的錯誤、陷阱和反模式及其修正。
 ---

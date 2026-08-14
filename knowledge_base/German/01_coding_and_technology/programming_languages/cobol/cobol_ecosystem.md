@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL – Ökosystem- und Tooling-Leitfaden
 Dieser Leitfaden behandelt die wesentlichen Tools, Compiler und Infrastruktur im COBOL-Ökosystem.
 ---

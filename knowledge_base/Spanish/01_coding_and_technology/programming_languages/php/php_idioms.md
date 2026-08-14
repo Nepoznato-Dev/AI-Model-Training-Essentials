@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos y mejores prácticas para escribir código PHP (8.3+) limpio y moderno.
 ---

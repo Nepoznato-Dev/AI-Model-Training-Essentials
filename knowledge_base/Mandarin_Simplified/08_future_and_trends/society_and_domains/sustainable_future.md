@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 可持续的未来
 ＃＃ 概述
 问题不再是“世界是否”需要向可持续经济转型，而是“多快”和“谁来领导”。可再生能源现在是大多数市场上最便宜的能源。循环经济原则正在从利基概念转向企业战略。城市正在重新思考从交通到废物处理的一切。净零排放竞赛正在重塑从能源到金融的各个行业。以下是可持续未来在四个关键维度上的样子。

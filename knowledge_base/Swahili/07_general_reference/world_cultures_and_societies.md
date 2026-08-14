@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tamaduni na Jamii za Ulimwengu
 Utamaduni ni mfumo wa jamii - imani, maadili, desturi, mienendo na vitu vya sanaa vinavyoshirikiwa na washiriki ili kukabiliana na ulimwengu wao na wao kwa wao. Kuelewa tofauti za kitamaduni sio juu ya kukariri mambo madogo; ni juu ya kutambua kwamba njia moja ya kuona ulimwengu ni kati ya maelfu, na kwamba mifumo mingine inashikamana ndani, yenye msingi wa kihistoria, na inafaa kueleweka kwa masharti yao wenyewe.
 ---

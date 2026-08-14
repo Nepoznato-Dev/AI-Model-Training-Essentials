@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — Yaygın Hatalar ve Karşıt Kalıplar
 Bu belge Julia'daki en yaygın hataları, tuzakları ve anti-kalıpları düzeltmelerle birlikte kataloglamaktadır.
 ---

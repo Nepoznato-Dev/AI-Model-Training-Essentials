@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Malzeme Bilimi
 Malzeme bilimi, bir malzemenin yapısının (atom, mikroskobik ve makroskobik ölçeklerde) özelliklerini nasıl belirlediğini ve istenen performansı elde etmek için bu yapıyı kontrol etmek için işleme yöntemlerinin nasıl kullanılabileceğini inceleyen çalışmadır. Şu tür soruların yanıtını veren alandır: Çelik neden güçlü ama ağırdır? Cam neden şeffaf ama kırılgandır? Daha hızlı şarj olan pilleri nasıl yapabiliriz? Mars koşullarında hangi malzemeler hayatta kalacak? Kullandığınız her teknoloji, malzemelerden yapılmıştır ve teknolojideki ilerlemeler neredeyse her zaman malzemelerde ilerlemeyi gerektirir.
 ---

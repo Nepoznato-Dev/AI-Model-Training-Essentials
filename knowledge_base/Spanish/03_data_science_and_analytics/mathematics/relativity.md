@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Relatividad
 Las teorías de la relatividad de Einstein revolucionaron nuestra comprensión del espacio, el tiempo y la gravedad. **La relatividad especial** (1905) demostró que el espacio y el tiempo no están separados sino entrelazados en un solo tejido llamado espaciotiempo, y que la velocidad de la luz es la misma para todos los observadores. **La relatividad general** (1915) reinventó la gravedad no como una fuerza sino como la curvatura del espacio-tiempo causada por la masa y la energía. Estas teorías sustentan la navegación GPS, los aceleradores de partículas y nuestra comprensión de los agujeros negros y la evolución del universo.
 ---

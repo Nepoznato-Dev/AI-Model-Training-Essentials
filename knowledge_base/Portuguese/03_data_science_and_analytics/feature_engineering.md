@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Engenharia de recursos
 A engenharia de recursos é o processo de transformar dados brutos em representações que tornam os modelos de aprendizado de máquina mais eficazes. Muitas vezes é descrito como a etapa mais importante no pipeline de ML – os recursos que você fornece a um modelo são mais importantes do que o algoritmo que você escolhe. Um modelo simples com recursos bem elaborados normalmente superará um modelo complexo com entradas brutas e não processadas. A arte reside em compreender o domínio e os dados suficientemente bem para criar sinais com os quais o modelo possa aprender.
 ---

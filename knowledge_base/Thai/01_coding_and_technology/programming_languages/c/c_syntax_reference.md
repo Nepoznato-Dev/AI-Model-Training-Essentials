@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ C (C11/C17 พร้อมหมายเหตุ C23) ช่วยเสริมการอ้างอิง C หลักโดยมุ่งเน้นไปที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน ตารางตัวดำเนินการ กลไกของตัวชี้ และการจัดการหน่วยความจำ
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usanidi wa Bomba la CI/CD
 Ujumuishaji Unaoendelea (CI) na Usambazaji Unaoendelea (CD) hurekebisha mchakato wa kujenga, kupima na kupeleka programu kiotomatiki. Rejeleo hili linajumuisha mifumo ya usanidi ya majukwaa maarufu zaidi ya CI/CD: Vitendo vya GitHub, GitLab CI, na kanuni za jumla za muundo wa bomba.
 ---

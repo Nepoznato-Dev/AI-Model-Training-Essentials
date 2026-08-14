@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua - مرجع نحو
 این سند یک مرجع نحوی ساختار یافته و جامع برای Lua (5.4) ارائه می کند. این مرجع اصلی Lua را با تمرکز بر الگوهای نحوی جامع، جداول و جدول‌های متا، کوروتین‌ها و فلسفه طراحی منحصربه‌فرد Lua تکمیل می‌کند.
 ---

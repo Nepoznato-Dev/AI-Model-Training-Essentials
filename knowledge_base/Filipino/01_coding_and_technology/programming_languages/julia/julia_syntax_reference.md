@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia — Syntax Reference
 Nagbibigay ang dokumentong ito ng komprehensibo, structured na syntax na sanggunian para kay Julia (1.x). Kinukumpleto nito ang pangunahing sanggunian ni Julia sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, maramihang dispatch, macros, metaprogramming, at scientific computing.
 ---

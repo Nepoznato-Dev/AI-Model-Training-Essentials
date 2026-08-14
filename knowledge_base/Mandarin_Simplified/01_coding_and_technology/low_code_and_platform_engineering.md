@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 低代码和平台工程
 低代码平台让人们可以用最少的手写代码构建应用程序——通常通过拖放界面、可视化工作流程和预构建的连接器。平台工程是构建内部开发人员平台 (IDP) 的学科，使产品团队可以轻松地自助服务基础设施、CI/CD 和操作工具。这两种趋势都是对同一问题的回应：软件需求与能够构建软件的开发人员的供应之间的差距。
 ---

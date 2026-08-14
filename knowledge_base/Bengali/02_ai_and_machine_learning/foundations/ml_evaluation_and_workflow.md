@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # মেশিন লার্নিং ইভালুয়েশন এবং ওয়ার্কফ্লো
 ML লাইফসাইকেলের একটি ব্যবহারিক গাইড — সমস্যা ফ্রেমিং থেকে প্রোডাকশন মনিটরিং পর্যন্ত — মেট্রিক্স, ভ্যালিডেশন এবং ডিবাগিংয়ের উপর ফোকাস সহ।
 ---

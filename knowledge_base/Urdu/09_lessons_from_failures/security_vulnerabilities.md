@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سیکیورٹی کے خطرات
 یہ دستاویز سافٹ ویئر ڈیولپمنٹ میں سیکیورٹی کے عمومی کمزوریوں کو مضبوط کرتی ہے، بشمول انجیکشن حملے، کوڈ کے غیر محفوظ طریقے، اور سیکیورٹی کی غلطیاں۔
 ---

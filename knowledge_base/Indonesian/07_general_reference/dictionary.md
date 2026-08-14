@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kamus Bahasa Inggris - Definisi Kata Umum
 Daftar referensi kata-kata bahasa Inggris yang sering digunakan dan artinya,
 mencakup kosakata sehari-hari, istilah akademis, dan kata-kata yang umum ditemui

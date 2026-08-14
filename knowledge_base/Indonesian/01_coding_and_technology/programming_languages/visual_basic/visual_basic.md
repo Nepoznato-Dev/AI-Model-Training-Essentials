@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Visual Basic
 Visual Basic (VB) adalah bahasa pemrograman yang dikembangkan oleh Microsoft. Ini telah berkembang melalui beberapa generasi: Visual Basic asli (1991), Visual Basic 6.0 (1998), VB.NET (2002, bagian dari .NET Framework), dan Visual Basic ..NET (saat ini, sekarang disebut "Visual Basic" sebagai bagian dari .NET). VB dirancang agar mudah didekati oleh pemula dan pengembangan aplikasi cepat (RAD), dengan fokus pada antarmuka pengguna grafis dan pemrograman berbasis peristiwa.
 Saat ini, VB.NET tetap menjadi bagian dari ekosistem .NET bersama dengan C#, meskipun Microsoft telah mengindikasikan bahwa C# adalah bahasa utama di masa depan. VB tetap banyak digunakan di lingkungan perusahaan, khususnya untuk aplikasi Windows lama, otomatisasi Office (VBA), dan alat bisnis internal.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 人工智慧安全與協調
 人工智慧安全是對如何建構人工智慧系統的研究，該系統能夠做我們真正希望它們做的事情，並且不做我們不想要的事情，即使這些事情沒有被明確排除。一致性是讓人工智慧系統的目標和行為符合人類意圖的具體挑戰。隨著人工智慧系統變得越來越強大，這些問題從學術好奇心轉向實際工程需求。
 ---

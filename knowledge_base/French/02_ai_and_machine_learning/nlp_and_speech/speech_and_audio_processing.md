@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Traitement de la parole et de l'audio
 Le traitement de la parole et de l'audio couvre les technologies qui permettent aux machines d'entendre, de comprendre, de générer et de manipuler le son. Cela comprend la reconnaissance vocale (transformation de mots prononcés en texte), la synthèse vocale (transformation de texte en mots prononcés), l'identification du locuteur, la génération de musique et la compréhension des sons environnementaux. Le domaine a été transformé par l’apprentissage en profondeur : les systèmes modernes se rapprochent d’une précision de niveau humain pour la reconnaissance vocale et produisent des voix synthétiques étrangement naturelles.
 ---

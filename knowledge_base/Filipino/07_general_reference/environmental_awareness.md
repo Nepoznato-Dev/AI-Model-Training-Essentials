@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kamalayan sa Kapaligiran
 Ang kapaligiran ay hindi isang hiwalay na bagay "nasa labas" — ito ang sistema na ginagawang posible ang lahat. Ang bawat paghinga mo, bawat baso ng tubig na iyong inumin, bawat pagkain na iyong kinakain ay nakasalalay sa komposisyon ng atmospera, mga siklo ng tubig, kalusugan ng lupa, at mga network ng pollinator. Ang pag-unawa sa kung paano gumagana ang mga system na ito — at kung paano sila nagbabago — ay hindi opsyonal para sa isang taong may kaalaman. Sinasaklaw ng file na ito ang mga pangunahing kaalaman ng environmental science, ang mga hamon na kinakaharap natin, at kung ano talaga ang ibig sabihin ng sustainability sa pagsasanay.
 ---

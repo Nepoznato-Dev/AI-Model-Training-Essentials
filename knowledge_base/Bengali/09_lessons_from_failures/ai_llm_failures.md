@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # এআই এবং এলএলএম ব্যর্থতা
 এই নথিটি AI এবং বড় ভাষা মডেল সিস্টেমে সাধারণ ব্যর্থতার মোডগুলিকে একীভূত করে, যার মধ্যে হ্যালুসিনেশন, ভুল তথ্য, যুক্তির ত্রুটি এবং প্রম্পট-সম্পর্কিত সমস্যা রয়েছে।
 ---

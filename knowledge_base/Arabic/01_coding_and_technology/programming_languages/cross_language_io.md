@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — I/O & File Operations"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # المقارنة بين اللغات — عمليات الإدخال/الإخراج والملفات
 ## إخراج وحدة التحكم
 | اللغة | طباعة إلى stdout |

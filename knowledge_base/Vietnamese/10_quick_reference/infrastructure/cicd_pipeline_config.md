@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cấu hình đường ống CI/CD
 Các quy trình Tích hợp liên tục (CI) và Triển khai liên tục (CD) tự động hóa quá trình xây dựng, thử nghiệm và triển khai phần mềm. Tài liệu tham khảo này bao gồm các mẫu cấu hình cho các nền tảng CI/CD phổ biến nhất: GitHub Actions, GitLab CI và các nguyên tắc thiết kế quy trình chung.
 ---

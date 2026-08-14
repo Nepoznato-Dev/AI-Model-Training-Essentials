@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Futuro del Trabajo
 ## Descripción general
 La forma en que trabajamos está cambiando más rápido que en cualquier otro momento desde la Revolución Industrial. El trabajo remoto pasó de ser un beneficio poco común a convertirse en algo predeterminado de la noche a la mañana. La IA está pasando de ser novedad a ser colaboradora. La economía colaborativa está remodelando lo que significa "empleo". Y la automatización no llegará a todos los trabajos, pero sí a muchas tareas en la mayoría de los empleos. He aquí un vistazo a las fuerzas que están remodelando el lugar de trabajo y lo que viene después.

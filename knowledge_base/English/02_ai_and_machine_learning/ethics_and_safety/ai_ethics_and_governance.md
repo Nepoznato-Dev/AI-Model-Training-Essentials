@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI Ethics and Governance
 
 AI systems are not neutral. They reflect the data they were trained on, the values of their creators, and the incentives of the organisations deploying them. Ethics is about asking not just "can we build this?" but "should we?" Governance is about creating the structures — laws, standards, oversight bodies — that ensure AI is developed and used responsibly. This file covers the key ethical dimensions of AI and the governance frameworks emerging to address them.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Statistical Testing and Experimentation
 
 Statistics is the grammar of science. It gives you the tools to distinguish real patterns from random noise, to measure whether a change actually improved things, and to make decisions under uncertainty. This file covers the core concepts of hypothesis testing, experimental design, and the common pitfalls that trip people up.

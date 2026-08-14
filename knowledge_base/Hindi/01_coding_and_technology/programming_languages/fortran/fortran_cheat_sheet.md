@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # फोरट्रान - चीट शीट
 ## मूल बातें
 ```fortran

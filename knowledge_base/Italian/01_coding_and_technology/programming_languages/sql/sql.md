@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #SQL
 SQL (Structured Query Language) è un linguaggio specifico del dominio progettato per la gestione e l'interrogazione dei dati nei database relazionali. Sviluppato per la prima volta da IBM negli anni '70 e standardizzato nel 1987, SQL rimane l'interfaccia principale tra le applicazioni e i relativi dati. Tutti i principali sistemi di gestione di database relazionali (RDBMS) – PostgreSQL, MySQL, SQL Server, Oracle, SQLite – utilizzano SQL come linguaggio di query.
 SQL non è un linguaggio di programmazione generico. Non scriveresti un'applicazione web in SQL. Ma se la tua applicazione archivia dati, e quasi tutte le applicazioni lo fanno, allora SQL è il linguaggio che utilizzi per recuperare, trasformare e gestire tali dati. È probabilmente l'abilità tecnica più universalmente utile dopo la programmazione generale.

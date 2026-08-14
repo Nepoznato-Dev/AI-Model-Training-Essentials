@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript - نحوی حوالہ
 یہ دستاویز TypeScript کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ ٹائپ سسٹم، جنرکس، یوٹیلیٹی ٹائپس، اور ایڈوانسڈ ٹائپ لیول پروگرامنگ پر فوکس کر کے TypeScript کے اہم حوالہ کو مکمل کرتا ہے۔
 ---

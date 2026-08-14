@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 寫作和溝通基礎知識
 寫作和溝通是有效傳達想法的技能——無論是透過電子郵件、報告、文件、簡報或對話。大多數知識工作從根本上來說都是溝通工作：專業人員需要解釋他們的想法、說服他人、記錄決策、編寫規格、展示發現以及跨團隊合作。意思和理解之間的差距是大多數問題的根源，而更好的溝通可以縮小這一差距。
 ---

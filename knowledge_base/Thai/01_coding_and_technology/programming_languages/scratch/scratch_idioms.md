@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนสำหรับการเขียนโปรเจ็กต์ Scratch ที่สะอาดตาและมีการจัดระเบียบอย่างดี
 ---

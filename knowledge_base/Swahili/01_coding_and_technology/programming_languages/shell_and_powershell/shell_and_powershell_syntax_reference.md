@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Bash na PowerShell. Inakamilisha marejeleo kuu ya Shell kwa kuangazia muundo kamili wa uandishi, bomba, usimamizi wa mchakato, na nahau za otomatiki kwa makombora yote mawili.
 ---

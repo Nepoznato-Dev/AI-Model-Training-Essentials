@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ٹیکنالوجی کی لغت
 AI ماڈلز، ہارڈویئر، بینچ مارکس، اور بنیادی تصورات کا احاطہ کرنے والی ایک حوالہ جاتی لغت
 جدید AI اور کمپیوٹنگ کے منظر نامے میں۔

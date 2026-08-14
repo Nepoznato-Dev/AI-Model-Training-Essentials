@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # بصری فنون
 بصری فن مواصلات کی انسانیت کی قدیم ترین شکل ہے — لاسکاکس کی غار کی پینٹنگز سے لے کر آج کی ڈیجیٹل تنصیبات تک۔ فن کی نقل و حرکت، ذرائع اور تخلیقی کاموں کو محفوظ رکھنے والے اداروں کو سمجھنا آپ کو اس بات کی گہری تعریف کرتا ہے کہ کس طرح معاشروں نے ہزاروں سالوں میں خوبصورتی، طاقت، روحانیت اور اختلاف رائے کا اظہار کیا ہے۔
 ---

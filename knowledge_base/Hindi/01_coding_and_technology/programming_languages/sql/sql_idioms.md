@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - मुहावरेदार पैटर्न और सर्वोत्तम प्रथाएँ
 यह मार्गदर्शिका स्वच्छ, कुशल एसक्यूएल लिखने के लिए मुहावरेदार पैटर्न और सर्वोत्तम प्रथाओं को शामिल करती है।
 ---

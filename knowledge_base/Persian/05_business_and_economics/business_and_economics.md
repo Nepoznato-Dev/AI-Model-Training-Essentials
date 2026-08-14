@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تجارت و اقتصاد
 هر سازمانی که محصول یا خدماتی را می فروشد یک تجارت است و هر جامعه ای که کالا تولید و توزیع می کند یک اقتصاد است. مفاهیم موجود در این فایل چه در حال اجرای یک عملیات آزاد، چه در شرکتی، چه تلاش برای درک اخبار، و یا اینکه بفهمید پول چگونه در جهان حرکت می کند، کاربرد دارد.
 ---

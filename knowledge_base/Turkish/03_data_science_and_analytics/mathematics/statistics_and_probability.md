@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # İstatistik ve Olasılık
 Olasılık ve istatistik, veri biliminin, makine öğreniminin ve bilimsel araştırmanın matematiksel temelleridir. Olasılık size olayların ne kadar muhtemel olduğunu söyler; istatistikler size verilerden nasıl sonuç çıkaracağınızı anlatır. Birlikte belirsizliği ölçülebilir, yönetilebilir bilgiye dönüştürürler.
 ---

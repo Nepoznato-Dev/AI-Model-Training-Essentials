@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تصميم واجهة برمجة التطبيقات والهندسة المعمارية
 API (واجهة برمجة التطبيقات) هي الطريقة التي تتواصل بها مكونات البرنامج مع بعضها البعض. تعتبر واجهة برمجة التطبيقات (API) المصممة جيدًا بديهية ومتسقة ويسعد العمل معها. التصميم السيئ يسبب الارتباك والأخطاء والإحباط. يغطي هذا الملف المبادئ والأنماط والممارسات الخاصة ببناء واجهات برمجة التطبيقات التي يرغب المطورون في استخدامها بالفعل.
 ---

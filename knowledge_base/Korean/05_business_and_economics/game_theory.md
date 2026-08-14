@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 게임이론과 전략적 사고
 게임 이론은 전략적 상호 작용, 즉 결과가 자신이 하는 일뿐만 아니라 다른 사람이 하는 일에 따라 달라지는 상황에 대한 수학적 연구입니다. 이는 비즈니스 경쟁, 국제 관계, 경매, 협상, 진화 생물학 및 교통 경로 선택과 같은 일상적인 결정 등 모든 곳에 적용됩니다. 핵심 통찰은 전략적 상황에서 합리적인 행위자가 자신의 전략을 최적화하는 데 그치지 않고 다른 사람이 무엇을 할지 예상하고 다른 사람도 똑같이 한다는 것입니다.
 ---

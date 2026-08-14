@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Sözdizimi Referansı
 Bu belge, C (C23 notlarıyla birlikte C11/C17) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, operatör tablolarına, işaretçi mekaniğine ve bellek yönetimine odaklanarak ana C referansını tamamlar.
 ---

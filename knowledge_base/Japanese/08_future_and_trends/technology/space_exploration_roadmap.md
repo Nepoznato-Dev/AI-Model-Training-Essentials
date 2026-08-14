@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 宇宙探査ロードマップ
 ＃＃ 概要
 私たちは宇宙探査の新たな黄金時代を生きています。 NASAのアルテミス計画は人類を月に帰還させようとしている。 SpaceX は、火星向けに設計された完全に再利用可能なロケットを構築しています。中国には独自の月と火星の野心的な計画がある。そして、衛星インターネットから宇宙旅行に至るまで、民間企業のグループが成長し、宇宙を商業に開放しつつあります。月から火星、そしてその先へのロードマップは次のとおりです。

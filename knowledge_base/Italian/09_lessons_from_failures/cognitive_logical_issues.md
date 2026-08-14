@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Distorsioni cognitive ed errori logici
 Questo documento consolida pregiudizi cognitivi, errori logici ed errori di ragionamento che influenzano sia il processo decisionale umano che i risultati del sistema di intelligenza artificiale.
 ---

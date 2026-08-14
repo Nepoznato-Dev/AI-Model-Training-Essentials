@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 组装 — 备忘单
 ## 寄存器 (x86-64)
 ```nasm

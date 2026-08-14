@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# - نحوی حوالہ
 یہ دستاویز جدید C# (C# 10/11/12 on .NET 7/8) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، LINQ، async/await، پیٹرن میچنگ، اور جدید خصوصیات پر توجہ مرکوز کرکے مرکزی C# حوالہ کی تکمیل کرتا ہے۔
 ---

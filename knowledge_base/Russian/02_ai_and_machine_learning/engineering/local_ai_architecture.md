@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Локальная архитектура искусственного интеллекта
 Практическое руководство по запуску больших языковых моделей полностью на устройстве: аспекты аппаратного обеспечения, механизмы вывода, оптимизация памяти и проектирование системы для периферийного развертывания.
 ---

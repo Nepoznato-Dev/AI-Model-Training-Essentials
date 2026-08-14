@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour SQL (ANSI SQL avec des notes sur les différences de dialecte PostgreSQL/MySQL/SQLite). Il complète la référence SQL principale en se concentrant sur les modèles de requête exhaustifs, les fonctions de fenêtre, les CTE et la conception de bases de données.
 ---

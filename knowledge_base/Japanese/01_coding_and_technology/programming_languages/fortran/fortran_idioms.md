@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで最新の Fortran (2018+) コードを作成するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

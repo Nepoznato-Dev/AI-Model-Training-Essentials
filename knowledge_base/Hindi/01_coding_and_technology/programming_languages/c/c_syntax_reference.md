@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # सी - सिंटैक्स संदर्भ
 यह दस्तावेज़ C (C23 नोट्स के साथ C11/C17) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, ऑपरेटर टेबल, पॉइंटर मैकेनिक्स और मेमोरी प्रबंधन पर ध्यान केंद्रित करके मुख्य सी संदर्भ को पूरक करता है।
 ---

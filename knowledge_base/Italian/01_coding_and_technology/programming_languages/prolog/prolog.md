@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prologo
 Prolog (Programming in Logic) è un linguaggio di programmazione logica creato nel 1972 da Alain Colmerauer e Philippe Roussel. A differenza di ogni altro linguaggio in questo elenco, Prolog non dice al computer *come* risolvere un problema: dichiari *cosa* è vero (fatti e regole) e il motore di inferenza di Prolog calcola la risposta attraverso la deduzione logica.
 Prolog è stato il linguaggio preferito per i sistemi esperti, l'elaborazione del linguaggio naturale e la ricerca sull'intelligenza artificiale negli anni '80. Ha alimentato il progetto giapponese del sistema informatico di quinta generazione ed è stato utilizzato in Watson di IBM per la comprensione del linguaggio naturale. Oggi Prolog viene utilizzato nella risoluzione di vincoli, nella pianificazione, nell'inferenza dei tipi, nel ragionamento legale e ovunque i problemi siano naturalmente espressi come relazioni logiche.

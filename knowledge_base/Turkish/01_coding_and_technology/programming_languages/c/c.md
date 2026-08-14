@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C
 C, Dennis Ritchie tarafından 1969 ile 1973 yılları arasında Bell Laboratuvarlarında oluşturulan genel amaçlı, prosedürel bir programlama dilidir. Unix işletim sistemini uygulamak için tasarlanmıştır ve 50 yıl sonra en yaygın kullanılan programlama dillerinden biri olmaya devam etmektedir. C, düşük seviyeli bellek erişimi, minimum standartta bir kitaplık ve makine talimatlarına temiz bir eşleme sağlar; bu da onu çoğu modern bilgi işlemin üzerine kurulduğu temel haline getirir.
 C, işletim sistemlerinin (Linux, Windows çekirdeği, macOS), gömülü sistemlerin, veritabanı motorlarının (SQLite, PostgreSQL), derleyicilerin (Python'un CPython'u, Ruby'nin MRI'sı) ve neredeyse tüm diğer programlama dillerinin çalışma zamanlarının arkasındaki dildir. C'yi anlamak, bilgisayarların gerçekte nasıl çalıştığını anlamaktır.

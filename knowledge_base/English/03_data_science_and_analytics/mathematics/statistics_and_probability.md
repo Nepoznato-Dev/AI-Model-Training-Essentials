@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Statistics and Probability
 
 Probability and statistics are the mathematical foundations of data science, machine learning, and scientific research. Probability tells you how likely events are; statistics tells you how to draw conclusions from data. Together, they turn uncertainty into quantifiable, manageable knowledge.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usimamizi unaowezekana na wa Usanidi
 Ansible ni usimamizi wa usanidi usio na wakala na zana ya kiotomatiki. Inatumia SSH (au WinRM kwa Windows) kuunganisha kwenye seva na kutekeleza majukumu yaliyofafanuliwa katika vitabu vya kucheza vya YAML. Tofauti na zana zinazohitaji mawakala kusakinishwa kwenye kila mashine, Ansible inategemea programu-tumizi - unaendesha amri kutoka kwa nodi ya udhibiti. Inatumika kwa utoaji wa seva, upelekaji wa programu, usimamizi wa usanidi, na utekelezaji wa kazi ya ad-hoc.
 ---

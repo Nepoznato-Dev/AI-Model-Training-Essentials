@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku omówiono podstawowe narzędzia, wdrożenia i infrastrukturę w ekosystemie Prolog.
 ---

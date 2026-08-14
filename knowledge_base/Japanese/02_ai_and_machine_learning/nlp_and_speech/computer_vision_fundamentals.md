@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # コンピュータービジョンの基礎
 コンピューター ビジョンにより、機械は画像、ビデオ、3D データなど、世界からの視覚情報を解釈して理解できるようになります。携帯電話の顔認識から自動運転車、医療画像分析、産業品質管理に至るまで、あらゆるものに電力を供給します。このファイルには、中心となる概念、アーキテクチャ、およびテクニックが含まれています。
 ---

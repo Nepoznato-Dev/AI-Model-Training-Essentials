@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Idioma e Inglês
 Existem cerca de 7.000 línguas faladas no mundo hoje. O inglês é a segunda língua mais falada e serve como padrão para negócios internacionais, ciência, aviação e internet. Seja escrevendo documentação de código, lendo artigos de pesquisa ou comunicando-se além-fronteiras, um domínio sólido de inglês – gramática, vocabulário e retórica – é uma das habilidades mais práticas que alguém pode desenvolver.
 Este arquivo cobre o essencial: gramática, pontuação, armadilhas comuns, técnica de escrita e comunicação clara.

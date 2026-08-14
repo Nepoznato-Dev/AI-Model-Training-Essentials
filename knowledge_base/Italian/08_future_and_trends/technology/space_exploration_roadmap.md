@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Roadmap per l'esplorazione spaziale
 ## Panoramica
 Stiamo vivendo una nuova era d'oro dell'esplorazione spaziale. Il programma Artemis della NASA sta riportando gli esseri umani sulla Luna. SpaceX sta costruendo un razzo completamente riutilizzabile progettato per Marte. La Cina ha i suoi ambiziosi piani lunari e marziani. E una costellazione crescente di aziende private sta aprendo lo spazio al commercio, dall’internet satellitare al turismo spaziale. Ecco la tabella di marcia, dalla Luna a Marte e oltre.

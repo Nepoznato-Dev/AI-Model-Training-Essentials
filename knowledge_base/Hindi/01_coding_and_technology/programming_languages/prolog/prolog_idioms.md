@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # प्रोलॉग - मुहावरेदार पैटर्न और सर्वोत्तम अभ्यास
 यह मार्गदर्शिका स्वच्छ, मुहावरेदार प्रोलॉग कोड लिखने के लिए मुहावरेदार पैटर्न को कवर करती है।
 ---

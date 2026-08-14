@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir – Leitfaden für Ökosysteme und Werkzeuge
 Dieser Leitfaden behandelt die wesentlichen Tools, Frameworks und Infrastruktur im Erlang- und Elixir-Ökosystem und teilt die BEAM-VM und das OTP.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R - مرجع نحو
 این سند یک مرجع نحو ساختار یافته و جامع برای R (4.x) ارائه می دهد. این مرجع اصلی R را با تمرکز بر الگوهای نحوی جامع، اکوسیستم منظم، دستکاری داده‌ها، مدل‌سازی آماری و تجسم تکمیل می‌کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kiến thức truyền thông và đánh giá thông tin
 Chúng ta đang sống trong một thế giới bão hòa thông tin. Mỗi ngày, một người bình thường tiếp xúc với hàng nghìn thông điệp truyền thông - tin tức, bài đăng trên mạng xã hội, quảng cáo, bài phát biểu chính trị, nội dung có ảnh hưởng, văn bản do AI tạo ra. Hầu hết đều ổn. Một số trong đó là sai lệch. Một lượng nhỏ là cố ý sai. Hiểu biết về truyền thông là kỹ năng điều hướng bối cảnh này - không phải bằng cách tin tưởng vào mọi thứ, không phải bằng cách không tin tưởng gì cả, mà bằng cách phát triển ý thức đã được điều chỉnh về điều gì đáng tin cậy và điều gì không.
 ---

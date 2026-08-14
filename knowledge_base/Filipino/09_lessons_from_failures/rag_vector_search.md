@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # RAG at Vector Search Failures
 Pinagsasama-sama ng dokumentong ito ang mga karaniwang pagkabigo sa mga system ng Retrieval-Augmented Generation (RAG), paggamit ng pag-embed, at mga pagpapatupad ng vector search.
 ---

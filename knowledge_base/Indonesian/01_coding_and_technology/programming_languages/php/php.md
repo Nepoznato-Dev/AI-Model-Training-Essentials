@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #PHP
 PHP (Hypertext Preprocessor) adalah bahasa skrip sisi server yang dibuat oleh Rasmus Lerdorf pada tahun 1994 dan pertama kali dirilis pada tahun 1995. Awalnya dirancang untuk menghasilkan halaman web dinamis, PHP telah berkembang menjadi bahasa tujuan umum berfitur lengkap. Ini mendukung sekitar 75% dari semua situs web dengan bahasa sisi server yang dikenal, termasuk WordPress, Facebook (awalnya), Wikipedia, Slack, dan jutaan situs lainnya.
 PHP modern (8.x) adalah bahasa yang sangat berbeda dari PHP awal tahun 2000-an. Sekarang ia memiliki properti yang diketik, ekspresi kecocokan, enum, serat, kelas hanya baca, dan sistem tipe yang kuat. Meskipun reputasinya di kalangan pengembang (sering dikritik karena inkonsistensi), PHP praktis, digunakan secara luas, dan terus mengalami peningkatan.

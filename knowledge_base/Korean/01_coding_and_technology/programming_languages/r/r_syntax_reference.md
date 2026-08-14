@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R — 구문 참조
 이 문서는 R(4.x)에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 구문 패턴, tidyverse 생태계, 데이터 조작, 통계 모델링 및 시각화에 중점을 두어 기본 R 참조를 보완합니다.
 ---

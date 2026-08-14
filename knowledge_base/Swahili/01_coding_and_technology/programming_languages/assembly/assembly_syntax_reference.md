@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lugha ya Kusanyiko - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yaliyopangwa ya sintaksia ya Mkutano wa x86-64 (syntax ya NASM). Inakamilisha marejeleo kuu ya Bunge kwa kuzingatia kategoria za maagizo kamili, njia za kushughulikia, kanuni za fremu za rafu, na mifumo ya upangaji wa mfumo.
 ---

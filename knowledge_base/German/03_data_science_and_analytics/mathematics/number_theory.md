@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zahlentheorie
 Die Zahlentheorie ist das Studium der ganzen Zahlen – ganze Zahlen und ihrer Eigenschaften. Gauß nannte es „die Königin der Mathematik“. Trotz der Untersuchung der einfachsten Objekte (1, 2, 3, ...) wirft die Zahlentheorie einige der tiefgreifendsten und schwierigsten Probleme der gesamten Mathematik auf. Heute ist es die Grundlage für moderne Kryptographie, Hashing-Algorithmen, Fehlerkorrekturcodes und die Generierung von Zufallszahlen.
 ---

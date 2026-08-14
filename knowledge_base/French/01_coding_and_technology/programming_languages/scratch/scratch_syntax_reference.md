@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Scratch 3.0. Il complète la référence principale de Scratch en se concentrant sur les catégories de blocs exhaustives, les modèles événementiels, la gestion des sprites, le clonage et les techniques de codage créatif.
 ---

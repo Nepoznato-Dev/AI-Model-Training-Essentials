@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingeniería ML y MLOps
 Construir un modelo de aprendizaje automático es sólo la mitad de la batalla. Ponerlo en producción, mantenerlo funcionando de manera confiable, monitorear la desviación e iterarlo: ahí es donde entran en juego la ingeniería de aprendizaje automático y MLOps. Este archivo cubre el ciclo de vida completo desde el experimento hasta el sistema de producción.
 ---

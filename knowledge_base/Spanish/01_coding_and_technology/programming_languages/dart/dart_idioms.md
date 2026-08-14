@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos y mejores prácticas para escribir código Dart limpio e idiomático.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تطوير الجوال
 تطوير الأجهزة المحمولة هو ممارسة إنشاء تطبيقات للهواتف الذكية والأجهزة اللوحية - بشكل أساسي لنظامي التشغيل iOS (Apple) وAndroid (Google). فهو يشمل كل شيء بدءًا من تصميم واجهة المستخدم للشاشات الصغيرة وحتى إدارة عمر البطارية والتعامل مع عدم استقرار الشبكة وتوزيع التطبيقات عبر المتاجر. لقد نضج هذا المجال بشكل كبير، حيث تتنافس الآن أطر العمل عبر الأنظمة الأساسية مع التطوير الأصلي لمعظم حالات الاستخدام.
 ---

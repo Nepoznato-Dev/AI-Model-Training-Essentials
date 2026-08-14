@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Méthodes d'ensemble
 Les méthodes d'ensemble combinent plusieurs modèles d'apprentissage automatique pour produire de meilleures prédictions que ce qu'un seul modèle pourrait réaliser seul. L’intuition est simple : si vous disposez de plusieurs modèles qui sont chacun assez précis mais commettent des erreurs différentes, la combinaison de leurs prédictions annulera les erreurs individuelles et produira un résultat plus robuste. Les ensembles sont à l'origine des solutions d'apprentissage automatique les plus compétitives et restent parmi les techniques les plus fiables dans les systèmes de production.
 ---

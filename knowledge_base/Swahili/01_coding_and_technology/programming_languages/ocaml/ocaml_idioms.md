@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo safi, wa nahau wa OCaml.
 ---

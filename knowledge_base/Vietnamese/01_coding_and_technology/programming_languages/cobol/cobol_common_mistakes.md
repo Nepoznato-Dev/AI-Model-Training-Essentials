@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Những lỗi thường gặp và các mẫu chống đối
 Tài liệu này liệt kê các lỗi, bẫy và phản mẫu phổ biến nhất trong COBOL kèm theo các bản sửa lỗi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ভিজ্যুয়াল বেসিক — সিনট্যাক্স রেফারেন্স
 এই নথিটি ভিজ্যুয়াল বেসিক (VB.NET) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, OOP বৈশিষ্ট্য, LINQ, async/await, এবং .NET ইন্টিগ্রেশন ইডিয়মগুলিতে ফোকাস করে মূল ভিজ্যুয়াল বেসিক রেফারেন্সের পরিপূরক।
 ---

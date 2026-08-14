@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kỹ thuật dữ liệu và đường ống
 Kỹ thuật dữ liệu là môn học xây dựng các hệ thống di chuyển, chuyển đổi và lưu trữ dữ liệu trên quy mô lớn. Nếu không có đường dẫn dữ liệu đáng tin cậy, các mô hình học máy không thể được đào tạo, bảng thông tin hiển thị các con số cũ và các quyết định kinh doanh đều dựa trên phỏng đoán. Tệp này bao gồm kiến ​​trúc, công cụ và thực tiễn để xây dựng cơ sở hạ tầng dữ liệu hoạt động.
 ---

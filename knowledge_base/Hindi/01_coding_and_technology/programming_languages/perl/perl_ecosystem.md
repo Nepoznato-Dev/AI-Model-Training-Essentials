@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # पर्ल - इकोसिस्टम और टूलींग गाइड
 यह मार्गदर्शिका पर्ल पारिस्थितिकी तंत्र में आवश्यक उपकरण, ढांचे और बुनियादी ढांचे को शामिल करती है।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 地理與地緣政治
 地理決定命運。几千年来，山脉、河流和自然资源的位置决定了贸易路线，引发了战争，并建立了文明。如今，地缘政治——地理、权力和政治的相互作用——对于理解国家行为方式仍然至关重要。
 ---

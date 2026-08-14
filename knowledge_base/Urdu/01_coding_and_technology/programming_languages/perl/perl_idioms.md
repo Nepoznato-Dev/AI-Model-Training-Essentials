@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # پرل — محاوراتی نمونے اور بہترین طرز عمل
 اس گائیڈ میں صاف، جدید پرل (5.38+) کوڈ لکھنے کے لیے محاوراتی نمونوں اور بہترین طریقوں کا احاطہ کیا گیا ہے۔
 ---

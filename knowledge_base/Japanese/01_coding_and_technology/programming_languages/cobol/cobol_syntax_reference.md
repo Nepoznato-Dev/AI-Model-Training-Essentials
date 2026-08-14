@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL — 構文リファレンス
 このドキュメントは、COBOL (2014+) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、データ記述、ファイル処理、ビジネス ロジックに焦点を当て、メインの COBOL リファレンスを補完します。
 ---

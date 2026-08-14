@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tương lai công việc
 ## Tổng quan
 Cách chúng ta làm việc đang thay đổi nhanh hơn bất kỳ thời điểm nào kể từ Cách mạng Công nghiệp. Công việc từ xa đã chuyển từ đặc quyền hiếm hoi sang tình trạng vỡ nợ chỉ sau một đêm. AI đang chuyển từ tính mới sang tính cộng tác. Nền kinh tế tạm thời đang định hình lại ý nghĩa của "việc làm". Và tự động hóa không đến với tất cả các công việc - nhưng nó sẽ đến với nhiều nhiệm vụ trong hầu hết các công việc. Dưới đây là cái nhìn về các lực lượng đang định hình lại nơi làm việc và điều gì sẽ xảy ra tiếp theo.

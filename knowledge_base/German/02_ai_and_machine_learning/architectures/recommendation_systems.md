@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Empfehlungssysteme
 Empfehlungssysteme sagen voraus, was ein Benutzer als nächstes sehen, kaufen oder womit interagieren möchte. Sie versorgen die Content-Feeds in sozialen Medien, Produktvorschläge auf E-Commerce-Websites, Filmauswahlen auf Streaming-Plattformen und Suchergebnisse. Obwohl sie für die meisten Benutzer unsichtbar sind, gehören sie zu den kommerziell einflussreichsten KI-Systemen der Welt – Netflix schätzt, dass seine Empfehlungsmaschine durch die Reduzierung der Abonnentenabwanderung über 1 Milliarde US-Dollar pro Jahr einspart.
 ---

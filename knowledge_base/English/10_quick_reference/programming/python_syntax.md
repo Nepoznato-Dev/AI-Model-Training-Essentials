@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python Syntax Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python Syntax Cheat Sheet
 
 Quick reference for Python 3.x syntax and common patterns.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Modern Fortran (2008/2018). Inakamilisha rejeleo kuu la Fortran kwa kuzingatia mifumo kamili ya sintaksia, utendakazi wa safu, moduli, OOP, na kompyuta yenye utendakazi wa hali ya juu.
 ---

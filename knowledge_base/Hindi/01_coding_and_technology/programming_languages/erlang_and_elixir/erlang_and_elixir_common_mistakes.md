@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # एरलांग और अमृत - सामान्य गलतियाँ और विरोधी पैटर्न
 यह दस्तावेज़ सुधार के साथ एरलांग और एलिक्सिर में सबसे आम गलतियों, जाल और विरोधी पैटर्न को सूचीबद्ध करता है।
 ---

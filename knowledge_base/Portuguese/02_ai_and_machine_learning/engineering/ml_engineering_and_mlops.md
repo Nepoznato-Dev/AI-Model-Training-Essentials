@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Engenharia de ML e MLOps
 Construir um modelo de aprendizado de máquina é apenas metade da batalha. Colocá-lo em produção, mantê-lo funcionando de maneira confiável, monitorar desvios e iterá-lo - é aí que entram a engenharia de ML e MLOps. Este arquivo cobre todo o ciclo de vida, do experimento ao sistema de produção.
 ---

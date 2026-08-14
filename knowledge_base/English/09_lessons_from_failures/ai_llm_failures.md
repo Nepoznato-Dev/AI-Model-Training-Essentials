@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI and LLM Failures
 
 This document consolidates common failure modes in AI and Large Language Model systems, including hallucinations, misinformation, reasoning errors, and prompt-related issues.

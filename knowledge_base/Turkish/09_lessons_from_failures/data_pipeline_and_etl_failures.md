@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Veri Hattı ve ETL Arızaları
 Veri hatları, modern kuruluşların tesisatıdır; verileri kaynak sistemlerden dönüşümler yoluyla veritabanlarına, depolara ve analiz, makine öğrenimi ve karar alma için kullanıldığı göllere taşırlar. Çalışırken kimse fark etmiyor. Başarısız olduklarında kararlar eski verilerle alınır, modeller çöplerle eğitilir, raporlar imkansız rakamları gösterir ve tüm veri platformuna olan güven erozyona uğrar. Veri hattı arızaları, teknoloji kuruluşlarındaki en yaygın ve en maliyetli arızalar arasındadır.
 ---

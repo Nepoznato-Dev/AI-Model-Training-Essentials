@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンな Visual Basic (.NET) コードを記述するための慣用的なパターンについて説明します。
 ---

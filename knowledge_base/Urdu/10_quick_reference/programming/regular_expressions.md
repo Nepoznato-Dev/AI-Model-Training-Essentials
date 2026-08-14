@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ریگولر ایکسپریشن چیٹ شیٹ
 ریگولر ایکسپریشنز (ریجیکس) متن کو ملانے کے پیٹرن ہیں۔ وہ ہر جگہ استعمال ہوتے ہیں — تلاش اور بدلنا، ان پٹ کی توثیق، لاگ پارس کرنا، ڈیٹا نکالنا، اور بہت کچھ۔ یہ ایک عملی حوالہ ہے، نصابی کتاب نہیں۔
 ---

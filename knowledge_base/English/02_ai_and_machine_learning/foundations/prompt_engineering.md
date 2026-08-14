@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prompt Engineering
 
 Prompt engineering is the practice of designing, refining, and optimising input prompts to get the best possible output from a language model. It is both an art and a science, and it is the primary interface for controlling LLM behaviour without fine-tuning.

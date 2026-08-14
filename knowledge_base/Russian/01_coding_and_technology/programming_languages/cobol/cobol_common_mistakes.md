@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — распространенные ошибки и антишаблоны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в COBOL с исправлениями.
 ---

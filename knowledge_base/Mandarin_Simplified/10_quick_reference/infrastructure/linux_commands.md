@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linux Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linux 命令快速参考
 用于系统导航和管理的基本 Linux/Unix 命令。
 ---

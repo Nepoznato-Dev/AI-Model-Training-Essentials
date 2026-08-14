@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML Engineering and MLOps
 
 Building a machine learning model is only half the battle. Getting it into production, keeping it running reliably, monitoring for drift, and iterating on it — that's where ML engineering and MLOps come in. This file covers the full lifecycle from experiment to production system.

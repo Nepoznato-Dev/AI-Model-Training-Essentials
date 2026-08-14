@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 外殼和 PowerShell
 Shell 腳本是指為命令列解釋器編寫腳本。兩個最重要的 shell 是 **Bash** (Bourne Again Shell)（Linux 和 macOS 上的預設）和 **PowerShell**（Microsoft 的現代跨平台 shell 和腳本語言）。 Shell 腳本可自動執行系統管理任務、建置管道、檔案處理和部署工作流程。
 每個開發人員、DevOps 工程師和系統管理員都需要 shell 腳本編寫技能。無論您是部署 Web 伺服器、處理日誌檔案、設定 CI/CD 管道或自動備份，shell 腳本編寫都是適合此工作的工具。

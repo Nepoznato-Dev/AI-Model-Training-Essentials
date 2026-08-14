@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ 划痕
 Scratch 是一种基于块的可视化编程语言，由麻省理工学院媒体实验室开发，于 2007 年首次发布。用户无需编写基于文本的代码，而是将彩色块组合在一起来创建程序。 Scratch 专为 8-16 岁的儿童设计（尽管所有年龄段的学习者都使用它），用于教授基本编程概念（循环、条件、变量、事件和函数），而不会出现语法错误。
 Scratch 是世界上使用最广泛的入门编程语言，拥有超过 1 亿注册用户，并提供 70 多种语言版本。它在网络浏览器中运行并且免费。

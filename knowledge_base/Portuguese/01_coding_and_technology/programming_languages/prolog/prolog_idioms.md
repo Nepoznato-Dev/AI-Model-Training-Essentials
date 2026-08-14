@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog – Padrões Idiomáticos e Melhores Práticas
 Este guia cobre padrões idiomáticos para escrever código Prolog limpo e idiomático.
 ---

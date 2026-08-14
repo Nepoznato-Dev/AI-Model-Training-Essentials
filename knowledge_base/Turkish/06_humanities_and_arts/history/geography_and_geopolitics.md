@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Coğrafya ve Jeopolitik
 Coğrafya kaderi şekillendirir. Dağların, nehirlerin ve doğal kaynakların konumu binlerce yıldır ticaret yollarını belirlemiş, savaşları ateşlemiş ve medeniyetler inşa etmiştir. Günümüzde jeopolitik (coğrafya, güç ve politikanın karşılıklı etkileşimi) ulusların neden bu şekilde davrandıklarını anlamak için hayati önem taşıyor.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang database, tool, at imprastraktura sa SQL ecosystem.
 ---

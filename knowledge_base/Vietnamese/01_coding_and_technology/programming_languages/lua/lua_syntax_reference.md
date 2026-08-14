@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho Lua (5.4). Nó bổ sung cho tham chiếu Lua chính bằng cách tập trung vào các mẫu cú pháp, bảng và siêu dữ liệu đầy đủ, coroutine cũng như triết lý thiết kế độc đáo của Lua.
 ---

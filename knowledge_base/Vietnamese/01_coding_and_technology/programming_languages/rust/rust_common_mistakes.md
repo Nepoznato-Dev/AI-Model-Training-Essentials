@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — Những lỗi thường gặp và các mẫu chống đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong Rust. Mỗi mục hiển thị cách tiếp cận không chính xác, giải thích lý do tại sao nó thất bại và cung cấp giải pháp chính xác. Trình biên dịch của Rust mắc nhiều lỗi, nhưng hiểu được những mẫu này sẽ đẩy nhanh quá trình học tập của bạn.
 ---

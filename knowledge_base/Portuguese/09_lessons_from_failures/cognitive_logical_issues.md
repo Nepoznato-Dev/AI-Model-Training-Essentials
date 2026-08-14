@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Vieses cognitivos e falácias lógicas
 Este documento consolida preconceitos cognitivos, falácias lógicas e erros de raciocínio que afetam tanto a tomada de decisões humanas quanto os resultados do sistema de IA.
 ---

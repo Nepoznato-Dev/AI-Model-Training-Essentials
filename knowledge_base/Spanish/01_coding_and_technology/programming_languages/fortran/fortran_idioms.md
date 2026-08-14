@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos y mejores prácticas para escribir código Fortran (2018+) limpio y moderno.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni Prologu. Uzupełnia główne odniesienia do Prologu, koncentrując się na wyczerpujących wzorcach składni, unifikacji, cofaniu się, DCG i idiomach programowania logicznego.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 多模态人工智能
 多模式人工智能系统同时处理和组合来自多种类型数据（文本、图像、音频、视频等）的信息。虽然早期的人工智能系统通常是单模态（仅文本、仅图像），但最强大的现代系统是多模态的。 GPT-4V同时读取图像和文本； Gemini 原生处理文本、图像、音频和视频；像 Sora 这样的系统可以根据文本描述生成视频。该文件介绍了多模式人工智能的工作原理、其背后的架构，以及为什么组合模式如此强大。
 ---

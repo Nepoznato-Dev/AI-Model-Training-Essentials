@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Thuốc tiên
 Erlang được Ericsson xây dựng vào năm 1986 để cấp nguồn cho các tổng đài điện thoại - điều này giải thích tại sao nó xử lý đồng thời, khả năng chịu lỗi và hệ thống phân tán tốt hơn hầu hết mọi thứ khác. Các quy trình Erlang rất nhẹ, biệt lập và chỉ giao tiếp thông qua việc truyền tin nhắn. Khi một quá trình gặp sự cố, người giám sát sẽ khởi động lại nó. Triết lý "để nó sụp đổ" này tạo ra các hệ thống có thể chạy trong nhiều năm mà không có thời gian ngừng hoạt động.
 Elixir là một ngôn ngữ hiện đại được Jose Valim xây dựng dựa trên Erlang's VM (BEAM) vào năm 2012. Nó giữ lại mọi thứ Erlang cung cấp — đồng thời, khả năng chịu lỗi, phân phối — nhưng bổ sung thêm cú pháp thân thiện, siêu lập trình và công cụ tuyệt vời (trình quản lý gói Mix, đăng ký gói Hex). Elixir được sử dụng rộng rãi cho các ứng dụng web (thông qua Phoenix framework), hệ thống thời gian thực và các thiết bị nhúng (thông qua Nerves).

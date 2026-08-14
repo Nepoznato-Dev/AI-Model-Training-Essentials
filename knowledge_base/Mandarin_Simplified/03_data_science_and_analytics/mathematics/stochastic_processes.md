@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 随机过程
 **随机过程**是按时间（或空间）索引的随机变量的集合。概率论研究单个随机事件，而随机过程研究随机性如何随时间演变。他们对股票价格、队列长度、疾病传播、语言生成以及机器学习模型的训练动态进行建模。
 ---

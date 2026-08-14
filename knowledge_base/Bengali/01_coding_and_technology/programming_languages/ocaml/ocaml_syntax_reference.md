@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — সিনট্যাক্স রেফারেন্স
 এই নথিটি OCaml (4.x/5.x) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, বীজগাণিতিক ডেটা টাইপ, প্যাটার্ন ম্যাচিং, মডিউল এবং কার্যকরী প্রোগ্রামিং ইডিয়মগুলিতে ফোকাস করে মূল OCaml রেফারেন্সের পরিপূরক।
 ---

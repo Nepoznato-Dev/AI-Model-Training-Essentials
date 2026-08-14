@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — 常见错误和反模式
 本文档列出了 Rust 中最常见的错误、陷阱和反模式。每个条目都会显示错误的方法，解释其失败的原因，并提供正确的解决方案。 Rust 的编译器会捕获许多错误，但理解这些模式将加快您的学习曲线。
 ---

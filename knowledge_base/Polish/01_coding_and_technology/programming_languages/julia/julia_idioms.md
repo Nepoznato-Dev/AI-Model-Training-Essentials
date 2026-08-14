@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku opisano idiomatyczne wzorce i najlepsze praktyki dotyczące pisania czystego, idiomatycznego kodu Julii.
 ---

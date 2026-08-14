@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R
 
 R is a programming language and environment designed specifically for statistical computing and data analysis. Created by Ross Ihaka and Robert Gentleman at the University of Auckland in 1993 (hence "R"), it is an implementation of the S language with significant extensions. R is open source and maintained by the R Core Team. It is the standard tool for statisticians, data analysts, and researchers in academia, healthcare, finance, and government.

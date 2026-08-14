@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Literatur
 Literatur ist die beständigste Aufzeichnung von Gedanken, Gefühlen und Erfahrungen der Menschheit. Von den mündlichen Epen antiker Zivilisationen bis hin zu den Romanen des digitalen Zeitalters von heute steht jedes Werk im Dialog mit dem, was vorher war. Wenn Sie literarische Genres, Strömungen und Techniken verstehen, erhalten Sie eine umfassendere Perspektive zum Lesen – und zum Verständnis der Kulturen, die diese Werke hervorgebracht haben.
 ---

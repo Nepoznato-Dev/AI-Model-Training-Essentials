@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho JavaScript. Nó bổ sung cho tham chiếu JavaScript chính bằng cách tập trung vào các mẫu cú pháp, bảng toán tử và cơ chế nội bộ đầy đủ.
 ---

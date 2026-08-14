@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku opisano idiomatyczne wzorce i najlepsze praktyki dotyczące pisania czystego, idiomatycznego kodu Haskell.
 ---

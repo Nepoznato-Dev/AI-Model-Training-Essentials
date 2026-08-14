@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 聯邦學習和隱私
 聯合學習是一種跨多個設備或組織訓練機器學習模型而無需共享原始資料的技術。每個設備不將資料發送到中央伺服器，而是訓練本地模型並僅共享模型更新（梯度或權重）。中央伺服器聚合這些更新以產生全域模型。它是由Google設計的，用於訓練 Android 手機上的鍵盤語言模型 - 此後它已成為保護隱私的人工智慧的關鍵技術。
 ---

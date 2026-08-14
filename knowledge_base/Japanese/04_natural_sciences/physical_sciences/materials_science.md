@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 材料科学
 材料科学は、材料の構造 (原子、微視的、巨視的スケール) がその特性をどのように決定するか、また、加工方法を使用してその構造を制御して望ましい性能を達成する方法を研究するものです。これは、「なぜ鋼は強いのに重いのか?」といった質問に答える分野です。ガラスはなぜ透明なのに脆いのでしょうか?より速く充電できるバッテリーを作るにはどうすればよいでしょうか?火星の環境に耐えられる物質は何でしょうか?あなたがこれまでに使ってきたテクノロジーはすべて材料から作られており、テクノロジーの進歩にはほとんどの場合材料の進歩が必要です。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Diller Arası Karşılaştırma — Hata İşleme
 ## Hata İşleme Modellerine Genel Bakış
 | Modeli | Diller | Mekanizma |

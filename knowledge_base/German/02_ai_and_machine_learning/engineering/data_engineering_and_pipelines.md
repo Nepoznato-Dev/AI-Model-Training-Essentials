@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Datentechnik und Pipelines
 Data Engineering ist die Disziplin des Aufbaus von Systemen, die Daten in großem Maßstab bewegen, transformieren und speichern. Ohne zuverlässige Datenpipelines können Modelle für maschinelles Lernen nicht trainiert werden, Dashboards zeigen veraltete Zahlen an und Geschäftsentscheidungen basieren auf Vermutungen. Diese Datei behandelt die Architektur, Tools und Praktiken zum Aufbau einer funktionierenden Dateninfrastruktur.
 ---

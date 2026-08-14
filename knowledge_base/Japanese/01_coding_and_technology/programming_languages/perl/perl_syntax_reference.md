@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — 構文リファレンス
 このドキュメントは、Perl (5.38 以降) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、正規表現、参照、および Perl のテキスト処理能力に焦点を当て、主要な Perl リファレンスを補完します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pas
 Rust, ilk olarak 2015 yılında piyasaya sürülen ve orijinal olarak Mozilla'da Graydon Hoare tarafından geliştirilen, statik olarak yazılan, derlenmiş bir programlama dilidir. Rust'ın belirleyici vaadi **çöp toplama olmadan bellek güvenliğidir**. Bunu, C veya C++ kadar hızlı kod üretirken tüm hata kategorilerini (boş işaretçi referansları, veri yarışları, arabellek taşmaları, serbest kullanım sonrası kullanım) ortadan kaldıran, derleme zamanında uygulanan bir dizi kural olan sahiplik sistemi aracılığıyla başarır.
 Rust, Stack Overflow Geliştirici Anketi'nde üst üste birkaç yıl boyunca "en sevilen" programlama dili seçildi. Sistem programlamada, WebAssembly'de, CLI araçlarında, bulut altyapısında ve güvenlik açısından kritik bağlamlarda C/C++'ın yerine giderek daha fazla kullanılmaktadır. Linux çekirdeği artık Rust kodunu kabul ediyor.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ محاوراتی نمونوں اور صاف ستھرے، محاوراتی MATLAB کوڈ لکھنے کے بہترین طریقوں کا احاطہ کرتا ہے۔
 ---

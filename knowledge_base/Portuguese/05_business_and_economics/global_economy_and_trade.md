@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Economia e Comércio Global
 A economia global é o maior e mais complexo sistema que os humanos já construíram. Em 2025, o PIB global ultrapassou os 110 biliões de dólares. Mais de 8 mil milhões de pessoas produzem, comercializam e consomem bens e serviços através das fronteiras todos os dias. Compreender como funciona este sistema – quem comercializa o quê, porque é que alguns países são ricos e outros pobres, como o dinheiro atravessa fronteiras e o que acontece quando o sistema quebra – é essencial para navegar no mundo moderno.
 ---

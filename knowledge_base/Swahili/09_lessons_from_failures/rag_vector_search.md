@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kushindwa kwa Utafutaji wa RAG na Vekta
 Hati hii inaunganisha makosa ya kawaida katika mifumo ya Urejeshaji-Uboreshaji wa Mifumo (RAG), matumizi ya upachikaji, na utekelezaji wa utafutaji wa vekta.
 ---

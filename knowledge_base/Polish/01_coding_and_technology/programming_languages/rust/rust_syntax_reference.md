@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — Informacje o składni
 Ten dokument zawiera obszerne, uporządkowane omówienie składni języka Rust. Uzupełnia główne odniesienia do Rusta, koncentrując się na wyczerpujących wzorcach składni, tabelach operatorów i wewnętrznej mechanice systemu własności, cechach i współbieżności.
 ---

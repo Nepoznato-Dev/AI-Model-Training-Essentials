@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku opisano idiomatyczne wzorce i najlepsze praktyki dotyczące pisania czystego, idiomatycznego kodu Lua.
 ---

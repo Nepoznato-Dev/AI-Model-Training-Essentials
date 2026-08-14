@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سکریچ - نحوی حوالہ
 یہ دستاویز سکریچ 3.0 کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل بلاک کیٹیگریز، ایونٹ سے چلنے والے پیٹرن، اسپرائٹ مینجمنٹ، کلوننگ، اور تخلیقی کوڈنگ تکنیکوں پر توجہ مرکوز کرکے مرکزی سکریچ ریفرنس کی تکمیل کرتا ہے۔
 ---

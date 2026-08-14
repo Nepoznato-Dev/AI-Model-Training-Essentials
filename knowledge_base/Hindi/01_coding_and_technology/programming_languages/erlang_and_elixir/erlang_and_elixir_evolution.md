@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # एरलांग और अमृत - संस्करण इतिहास और विकास
 ## एरलांग टाइमलाइन
 | संस्करण | वर्ष | मुख्य विषय |

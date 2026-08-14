@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 스크래치 — 관용적 패턴 및 모범 사례
 이 가이드는 깨끗하고 잘 구성된 스크래치 프로젝트를 작성하기 위한 관용적 패턴을 다룹니다.
 ---

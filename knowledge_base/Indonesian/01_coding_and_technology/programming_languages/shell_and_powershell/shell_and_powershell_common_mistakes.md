@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Kesalahan Umum & Anti-Pola
 Dokumen ini mengkatalogkan kesalahan, jebakan, dan anti-pola paling umum di Shell/Bash dan PowerShell beserta koreksinya.
 ---

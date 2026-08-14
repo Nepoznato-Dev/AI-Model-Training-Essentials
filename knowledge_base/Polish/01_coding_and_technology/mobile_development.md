@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rozwój mobilny
 Rozwój mobilny to praktyka tworzenia aplikacji na smartfony i tablety – przede wszystkim na iOS (Apple) i Android (Google). Obejmuje wszystko, od projektowania interfejsu użytkownika dla małych ekranów po zarządzanie czasem pracy baterii, obsługę niestabilności sieci i dystrybucję aplikacji w sklepach. Dziedzina ta znacznie się rozwinęła, a platformy wieloplatformowe konkurują obecnie z programowaniem natywnym w większości przypadków użycia.
 ---

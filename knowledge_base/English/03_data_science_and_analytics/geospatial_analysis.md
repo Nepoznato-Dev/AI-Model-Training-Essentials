@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geospatial Analysis
 
 Geospatial analysis is the process of examining data that has a geographic component — coordinates, addresses, boundaries, or any data tied to a location on Earth. It answers questions like "where are our customers?", "what's the optimal route?", and "how is land use changing over time?". Every dataset has a spatial dimension, and understanding it unlocks insights that pure statistical analysis misses.

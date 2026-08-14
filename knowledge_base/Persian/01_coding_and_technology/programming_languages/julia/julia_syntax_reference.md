@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جولیا - مرجع نحو
 این سند یک مرجع نحوی ساختار یافته و جامع برای جولیا (1.x) فراهم می‌کند. این مرجع اصلی جولیا را با تمرکز بر الگوهای نحوی جامع، ارسال چندگانه، ماکروها، فرابرنامه‌نویسی و محاسبات علمی تکمیل می‌کند.
 ---

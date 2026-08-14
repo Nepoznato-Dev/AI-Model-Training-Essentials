@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fléchette
 Dart est un langage de programmation optimisé pour le client développé par Google, lancé pour la première fois en 2013. Alors que Dart était initialement positionné comme un remplacement potentiel de JavaScript pour les navigateurs Web, il a trouvé son objectif principal en tant que langage derrière **Flutter** — la boîte à outils d'interface utilisateur multiplateforme de Google pour créer des applications mobiles, Web, de bureau et intégrées à partir d'une seule base de code.
 Dart combine les meilleures fonctionnalités des langages modernes : il est orienté objet, dispose d'une saisie facultative (sécurité nulle depuis Dart 3), prend en charge la programmation asynchrone avec`async`/`await`et se compile à la fois en code machine natif (pour mobile/ordinateur de bureau) et en JavaScript (pour le Web).

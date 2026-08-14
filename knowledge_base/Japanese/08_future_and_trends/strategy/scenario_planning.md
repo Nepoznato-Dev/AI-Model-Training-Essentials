@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # シナリオプランニング
 ＃＃ 概要
 未来を予測できる人は誰もいません。しかし、いくつかの可能性のある未来に備えることはできます。冷戦時代のシンクタンクで生まれ、1970年代の石油危機の間にシェルによって完成されたシナリオプランニングは、不確実性について体系的に考える方法です。 1 つの予測に賭けるのではなく、物事がどのように展開するかについて一貫したストーリーを構築し、それらすべてに対して自分の決定をストレステストします。ここでは、主要なドメインにわたるシナリオとともに、この方法論がどのように機能するかを説明します。

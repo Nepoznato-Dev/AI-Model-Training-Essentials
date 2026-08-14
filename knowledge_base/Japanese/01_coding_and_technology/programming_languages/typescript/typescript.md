@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript
 TypeScript は、Microsoft (Anders Hejlsberg 率いる) によって開発され、2012 年に初めてリリースされた JavaScript の静的に型付けされたスーパーセットです。TypeScript は、オプションの型アノテーション、インターフェイス、ジェネリックス、高度な型システム機能を JavaScript に追加し、JavaScript が実行される場所ならどこでも実行できるプレーンな JavaScript にコンパイルします。 TypeScript は別個の言語やランタイムではありません。それは型チェッカーを備えた JavaScript です。
 TypeScript は、大規模な JavaScript 開発の標準となっています。 React、Angular、VS Code、Deno、およびほとんどの主要なオープンソース JavaScript プロジェクトは TypeScript で書かれています。何らかの大きなサイズの新しい JavaScript プロジェクトを開始する場合は、TypeScript がデフォルトとして推奨されます。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで安全な Ada コードを記述するための慣用的なパターンについて説明します。
 ---

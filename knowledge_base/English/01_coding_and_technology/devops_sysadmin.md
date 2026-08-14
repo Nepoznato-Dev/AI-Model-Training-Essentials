@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and System Administration"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps and System Administration
 
 A practical guide to managing servers, automating operations, and maintaining reliable infrastructure.

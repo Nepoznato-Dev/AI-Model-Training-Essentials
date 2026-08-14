@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby: Historial de versiones y evolución
 ## Línea de tiempo
 | Versión | Año | Tema clave |

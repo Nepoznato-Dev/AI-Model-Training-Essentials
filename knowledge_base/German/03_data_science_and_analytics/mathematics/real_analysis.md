@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Echte Analyse
 Die reale Analyse ist die strenge Grundlage der Infinitesimalrechnung. Während Sie in der einführenden Analysis lernen, wie man Ableitungen und Integrale berechnet, stellt sich in der Realanalyse die Frage, *warum* diese Techniken funktionieren – und wann sie versagen. Es bietet die präzisen Definitionen von Grenzen, Kontinuität, Konvergenz und Integration, die der Wahrscheinlichkeitstheorie, Funktionsanalyse, Optimierung und den theoretischen Garantien hinter Algorithmen für maschinelles Lernen zugrunde liegen.
 ---

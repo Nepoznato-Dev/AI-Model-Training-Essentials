@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL: errori comuni e anti-modelli
 Questo documento cataloga gli errori, le trappole e gli anti-pattern più comuni in COBOL con le relative correzioni.
 ---

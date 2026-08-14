@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perawatan Kesehatan Masa Depan
 ## Ringkasan
 Pengobatan sedang beralih dari model reaktif – mengobati gejala setelah muncul – menjadi model yang bersifat prediktif, dipersonalisasi, dan semakin bersifat preventif. Genomics telah berkembang dari proyek senilai $3 miliar menjadi pengujian rutin di bawah $1.000. AI sedang belajar mengenali penyakit melalui pemindaian sebelum dokter dapat melakukannya. Dan pengobatan regeneratif mengubah fiksi ilmiah menjadi uji klinis. Inilah yang terjadi di tiga bidang terbesar: pengobatan yang dipersonalisasi, penelitian umur panjang, dan pengobatan regeneratif.

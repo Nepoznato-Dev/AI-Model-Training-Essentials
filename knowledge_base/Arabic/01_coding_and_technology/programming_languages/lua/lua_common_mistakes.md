@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # لوا — الأخطاء الشائعة والأنماط المضادة
 يقوم هذا المستند بفهرسة الأخطاء والفخاخ والأنماط المضادة الأكثر شيوعًا في Lua مع التصحيحات.
 ---

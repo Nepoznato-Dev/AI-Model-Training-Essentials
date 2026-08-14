@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bảng cheat biểu thức chính quy
 Biểu thức chính quy (regex) là các mẫu để khớp văn bản. Chúng được sử dụng ở mọi nơi — tìm kiếm và thay thế, xác thực đầu vào, phân tích cú pháp nhật ký, trích xuất dữ liệu, v.v. Đây là tài liệu tham khảo thực tế chứ không phải sách giáo khoa.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Haskell (GHC 9.x). Inakamilisha rejeleo kuu la Haskell kwa kuzingatia mifumo kamili ya sintaksia, mfumo wa aina, monadi, tathmini ya uvivu, na nahau za utendakazi za utayarishaji.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - คู่มือระบบนิเวศและเครื่องมือ
 คู่มือนี้ครอบคลุมถึงเครื่องมือ กล่องเครื่องมือ และโครงสร้างพื้นฐานที่จำเป็นในระบบนิเวศของ MATLAB
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جوليا - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لـ Julia (1.x). وهو يكمل مرجع جوليا الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، والإرسال المتعدد، ووحدات الماكرو، والبرمجة الوصفية، والحوسبة العلمية.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — 生態系與工具指南
 本指南涵蓋了 SQL 生態系統中的基本資料庫、工具和基礎架構。
 ---

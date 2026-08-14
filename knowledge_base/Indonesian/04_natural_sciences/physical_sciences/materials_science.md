@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Ilmu Material
 Ilmu material adalah studi tentang bagaimana struktur suatu material (pada skala atom, mikroskopis, dan makroskopis) menentukan sifat-sifatnya, dan bagaimana metode pemrosesan dapat digunakan untuk mengontrol struktur tersebut guna mencapai kinerja yang diinginkan. Bidang inilah yang menjawab pertanyaan seperti: mengapa baja kuat namun berat? Mengapa kaca transparan tetapi rapuh? Bagaimana kita bisa membuat baterai terisi lebih cepat? Bahan apa yang bisa bertahan dalam kondisi di Mars? Setiap teknologi yang pernah Anda gunakan terbuat dari material, dan kemajuan teknologi hampir selalu membutuhkan kemajuan material.
 ---

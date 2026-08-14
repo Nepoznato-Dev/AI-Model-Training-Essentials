@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # जंग - सिंटेक्स संदर्भ
 यह दस्तावेज़ रस्ट के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, ऑपरेटर टेबल और स्वामित्व प्रणाली के आंतरिक यांत्रिकी, लक्षण और समवर्तीता पर ध्यान केंद्रित करके मुख्य रस्ट संदर्भ को पूरक करता है।
 ---

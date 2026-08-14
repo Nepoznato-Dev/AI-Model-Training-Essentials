@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fundamentos de visión por computadora
 La visión por computadora brinda a las máquinas la capacidad de interpretar y comprender información visual del mundo: imágenes, videos y datos 3D. Impulsa todo, desde el reconocimiento facial en su teléfono hasta vehículos autónomos, análisis de imágenes médicas y control de calidad industrial. Este archivo cubre los conceptos, arquitecturas y técnicas principales.
 ---

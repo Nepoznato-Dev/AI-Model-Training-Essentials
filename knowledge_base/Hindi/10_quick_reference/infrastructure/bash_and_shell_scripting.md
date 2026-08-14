@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # बैश और शैल स्क्रिप्टिंग चीट शीट
 बैश में शेल स्क्रिप्ट लिखने के लिए एक व्यावहारिक संदर्भ - अधिकांश लिनक्स और मैकओएस सिस्टम पर डिफ़ॉल्ट शेल। इसमें सिंटैक्स, सामान्य पैटर्न, टेक्स्ट प्रोसेसिंग और उपयोगी वन-लाइनर्स शामिल हैं।
 ---

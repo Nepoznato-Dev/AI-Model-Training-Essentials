@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Upimaji wa Kitakwimu na Majaribio
 Takwimu ni sarufi ya sayansi. Inakupa zana za kutofautisha ruwaza halisi na kelele nasibu, kupima kama mabadiliko yaliboresha mambo, na kufanya maamuzi chini ya kutokuwa na uhakika. Faili hii inashughulikia dhana za msingi za majaribio ya dhahania, muundo wa majaribio, na mitego ya kawaida ambayo huwavuta watu.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL
 SQL(Structured Query Language)은 관계형 데이터베이스의 데이터를 관리하고 쿼리하기 위해 설계된 도메인별 언어입니다. 1970년대 IBM에서 처음 개발되어 1987년에 표준화된 SQL은 여전히 ​​애플리케이션과 해당 데이터 간의 기본 인터페이스로 남아 있습니다. PostgreSQL, MySQL, SQL Server, Oracle, SQLite 등 모든 주요 관계형 데이터베이스 관리 시스템(RDBMS)은 SQL을 쿼리 언어로 사용합니다.
 SQL은 범용 프로그래밍 언어가 아닙니다. SQL로 웹 애플리케이션을 작성하지 않을 것입니다. 그러나 애플리케이션이 데이터를 저장하고 거의 모든 애플리케이션이 데이터를 저장한다면 SQL은 해당 데이터를 검색, 변환 및 관리하는 데 사용하는 언어입니다. 이는 틀림없이 일반 프로그래밍 다음으로 가장 보편적으로 유용한 기술입니다.

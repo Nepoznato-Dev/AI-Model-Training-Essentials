@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ศิลปะการแสดง
 ศิลปะการแสดง เช่น การแสดงละคร ภาพยนตร์ การเต้นรำ และดนตรี เป็นที่ที่ศิลปะมาบรรจบกับการแสดงสดของผู้ชม การแสดงจะเผยออกมาแบบเรียลไทม์ ไม่เหมือนภาพวาดบนผนังหรือหนังสือบนชั้นวาง โดยสร้างประสบการณ์ร่วมกันระหว่างศิลปินและผู้ชมซึ่งเป็นศูนย์กลางของวัฒนธรรมมนุษย์มาเป็นเวลาหลายพันปี
 ---

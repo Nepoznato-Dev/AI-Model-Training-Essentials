@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Ecosystem & Tooling Guide
 
 This guide covers the essential databases, tools, and infrastructure in the SQL ecosystem.

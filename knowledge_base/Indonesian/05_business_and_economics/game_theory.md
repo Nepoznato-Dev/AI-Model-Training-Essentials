@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teori Permainan dan Pemikiran Strategis
 Teori permainan adalah studi matematis tentang interaksi strategis — situasi di mana hasil Anda tidak hanya bergantung pada apa yang Anda lakukan, namun juga pada apa yang dilakukan orang lain. Hal ini berlaku di mana saja: persaingan bisnis, hubungan internasional, lelang, negosiasi, biologi evolusi, dan keputusan sehari-hari seperti memilih rute melalui lalu lintas. Pemahaman intinya adalah bahwa para pelaku rasional dalam situasi strategis tidak hanya mengoptimalkan strategi mereka sendiri — mereka juga mengantisipasi apa yang akan dilakukan pihak lain, dan pihak lain juga melakukan hal yang sama.
 ---

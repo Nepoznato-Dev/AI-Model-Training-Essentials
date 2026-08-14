@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geistiges Eigentum und Innovation
 Geistiges Eigentum (IP) bezieht sich auf geistige Schöpfungen – Erfindungen, künstlerische Werke, Markennamen, Designs, Geschäftsgeheimnisse – die das Gesetz vor unbefugter Nutzung schützt. Innovation ist der Prozess, bei dem Ideen in Werte umgewandelt werden. Das Recht auf geistiges Eigentum dient dazu, zwei konkurrierende Interessen in Einklang zu bringen: die Belohnung von Urhebern (indem ihnen vorübergehende Monopole gewährt werden) und der Nutzen für die Gesellschaft (indem sichergestellt wird, dass Wissen irgendwann frei verfügbar wird). Das Verständnis von geistigem Eigentum ist für jeden, der Produkte entwickelt, Inhalte erstellt, ein Unternehmen führt oder in der Forschung arbeitet, von entscheidender Bedeutung.
 ---

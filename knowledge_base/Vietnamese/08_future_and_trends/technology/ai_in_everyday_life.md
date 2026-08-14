@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI trong cuộc sống hằng ngày
 Trí tuệ nhân tạo không còn là một khái niệm tương lai nữa - nó được đưa vào cuộc sống hàng ngày. Từ thời điểm bạn thức dậy và kiểm tra điện thoại của mình (thuật toán đề xuất quyết định những thông báo bạn nhìn thấy) cho đến thời điểm bạn chìm vào giấc ngủ (loa thông minh xử lý lệnh cuối cùng của bạn), hệ thống AI đang đưa ra quyết định thay mặt bạn, cho bạn và đôi khi là về bạn. Việc hiểu AI xuất hiện ở đâu, cách nó hoạt động ở mức cơ bản và ý nghĩa của nó không còn là điều bắt buộc nữa - đó là yêu cầu đối với những công dân có hiểu biết trong thế kỷ 21.
 ---

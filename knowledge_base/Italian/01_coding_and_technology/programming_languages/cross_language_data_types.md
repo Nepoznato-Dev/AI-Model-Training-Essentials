@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Confronto tra lingue: tipi e strutture di dati
 ## Tipi primitivi
 | Digitare | Pitone | JavaScript | Ruggine | Vai | Giava | C| C++ | C# |

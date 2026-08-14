@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml - اشتباهات رایج و ضد الگوها
 این سند رایج ترین اشتباهات، تله ها و ضد الگوها در OCaml را با اصلاحات فهرست می کند.
 ---

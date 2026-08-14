@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # برگه تقلب عبارات منظم
 عبارات منظم (regex) الگوهایی برای مطابقت متن هستند. آنها در همه جا استفاده می شوند - جستجو و جایگزینی، اعتبار سنجی ورودی، تجزیه گزارش، استخراج داده ها، و موارد دیگر. این یک مرجع عملی است نه یک کتاب درسی.
 ---

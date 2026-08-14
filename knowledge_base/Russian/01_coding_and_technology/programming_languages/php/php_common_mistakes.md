@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — распространенные ошибки и антишаблоны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны PHP с исправлениями.
 ---

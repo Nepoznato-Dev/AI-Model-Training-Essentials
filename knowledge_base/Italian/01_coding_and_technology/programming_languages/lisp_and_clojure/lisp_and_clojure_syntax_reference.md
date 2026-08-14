@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure — Riferimento alla sintassi
 Questo documento fornisce un riferimento sintattico completo e strutturato per Common Lisp e Clojure. Completa il riferimento principale Lisp/Clojure concentrandosi su espressioni S, macro, strutture dati persistenti e modelli di programmazione funzionale.
 ---

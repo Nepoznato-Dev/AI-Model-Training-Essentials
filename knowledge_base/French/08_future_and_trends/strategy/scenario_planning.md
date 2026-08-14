@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Planification de scénarios
 ## Aperçu
 Personne ne peut prédire l’avenir, mais vous pouvez vous préparer à plusieurs événements plausibles. La planification de scénarios, née dans les groupes de réflexion de la guerre froide et perfectionnée par Shell lors des crises pétrolières des années 1970, est une manière de penser systématiquement à l’incertitude. Au lieu de parier sur une seule prévision, vous construisez des histoires cohérentes sur la façon dont les choses pourraient se dérouler, puis vous testez vos décisions par rapport à toutes. Voici comment fonctionne la méthodologie, ainsi que des scénarios dans les domaines clés.

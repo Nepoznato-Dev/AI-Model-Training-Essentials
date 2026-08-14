@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch - Mfumo wa ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, viendelezi, na rasilimali katika mfumo ikolojia wa Scratch.
 ---

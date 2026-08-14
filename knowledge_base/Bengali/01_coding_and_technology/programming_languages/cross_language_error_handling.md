@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ক্রস-ভাষা তুলনা — ত্রুটি হ্যান্ডলিং
 ## মডেল ওভারভিউ পরিচালনার ত্রুটি
 | মডেল | ভাষা | মেকানিজম |

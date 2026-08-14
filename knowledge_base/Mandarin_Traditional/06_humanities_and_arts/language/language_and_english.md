@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 語言和英語
 當今世界大約有 7,000 種語言。英語是使用最廣泛的第二語言，是國際商業、科學、航空和互聯網的預設語言。無論是撰寫程式碼文件、閱讀研究論文或跨境交流，紮實的英語能力（文法、詞彙和修辭）都是人們可以培養的最實用的技能之一。
 該文件涵蓋了要點：文法、標點符號、常見陷阱、寫作技巧和清晰的溝通。

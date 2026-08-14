@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فلکیات اور کاسمولوجی
 فلکیات آسمانی اشیاء کا مطالعہ ہے - ستارے، سیارے، کہکشائیں، اور زمین کے ماحول سے باہر کی ہر چیز۔ کاسمولوجی مجموعی طور پر کائنات کا مطالعہ ہے: اس کی ابتدا، ساخت، ارتقاء، اور حتمی تقدیر۔ ایک ساتھ، وہ کچھ ایسے بنیادی سوالات کو حل کرتے ہیں جو انسانوں نے کبھی پوچھے ہیں: کائنات کیسے شروع ہوئی؟ یہ کتنا بڑا ہے؟ کیا ہم اکیلے ہیں؟ آخر اس کا کیا ہوگا؟
 ---

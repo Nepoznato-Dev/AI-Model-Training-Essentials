@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Swift — история версий и эволюция
 ## Временная шкала
 | Версия | Год | Ключевая тема |

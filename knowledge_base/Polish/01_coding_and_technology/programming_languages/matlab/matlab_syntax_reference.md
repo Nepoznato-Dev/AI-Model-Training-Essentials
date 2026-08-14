@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni MATLAB-a (R2024+). Uzupełnia główne odniesienia do MATLAB-a, koncentrując się na wyczerpujących wzorcach składni, operacjach na macierzach, kreśleniu i idiomach obliczeń naukowych.
 ---

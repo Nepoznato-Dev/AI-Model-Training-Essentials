@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang tool, extension, at mapagkukunan sa Scratch ecosystem.
 ---

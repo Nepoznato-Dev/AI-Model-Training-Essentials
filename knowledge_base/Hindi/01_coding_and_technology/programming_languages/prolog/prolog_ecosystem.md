@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # प्रोलॉग - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका प्रोलॉग पारिस्थितिकी तंत्र में आवश्यक उपकरण, कार्यान्वयन और बुनियादी ढांचे को शामिल करती है।
 ---

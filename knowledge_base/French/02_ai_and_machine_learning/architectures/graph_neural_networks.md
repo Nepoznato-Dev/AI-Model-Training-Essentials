@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Graphiquer les réseaux de neurones
 Les réseaux de neurones graphiques (GNN) sont des réseaux de neurones conçus pour fonctionner sur des données structurées en graphes – des réseaux de nœuds connectés par des bords. Alors que les réseaux de neurones traditionnels fonctionnent sur des grilles (images) ou des séquences (texte), les GNN gèrent des structures relationnelles arbitraires : réseaux sociaux, graphes moléculaires, graphes de connaissances, réseaux routiers, graphes de recommandations, etc. Ils sont devenus essentiels pour la découverte de médicaments, la détection des fraudes, les systèmes de recommandation et tout domaine où les relations entre entités sont importantes.
 ---

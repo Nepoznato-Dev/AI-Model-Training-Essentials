@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Matematika
 Matematika bukan hanya mata pelajaran yang dipelajari di sekolah — matematika mendasari hampir semua bidang teknis. Fisika menggunakannya untuk menggambarkan alam semesta. Ilmu komputer menggunakannya untuk merancang algoritma. Pembelajaran mesin menggunakannya untuk mengoptimalkan bobot. Keuangan menggunakannya untuk menilai risiko. Penguasaan setiap cabang tidak diperlukan, namun memahami lanskapnya — dan mengetahui di mana setiap cabang berlaku — membuat topik lain lebih mudah untuk dipahami.
 ---

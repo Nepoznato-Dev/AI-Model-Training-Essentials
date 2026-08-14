@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Bash และ PowerShell ช่วยเสริมการอ้างอิงเชลล์หลักโดยมุ่งเน้นไปที่รูปแบบสคริปต์ที่ละเอียดถี่ถ้วน ไปป์ไลน์ การจัดการกระบวนการ และสำนวนอัตโนมัติสำหรับเชลล์ทั้งสอง
 ---

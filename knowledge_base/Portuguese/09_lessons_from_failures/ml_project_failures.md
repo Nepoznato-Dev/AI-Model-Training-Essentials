@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Falhas em projetos de aprendizado de máquina
 Os projetos de aprendizado de máquina falham em um ritmo alarmante – estimativas da indústria sugerem que 60-85% dos projetos de ML nunca chegam à produção. As falhas geralmente não estão nos algoritmos; eles estão no processo, nos dados, nas expectativas e no contexto organizacional. Compreender por que os projetos de ML falham é essencial para qualquer pessoa que construa sistemas de ML, porque os modos de falha são previsíveis e em grande parte evitáveis.
 ---

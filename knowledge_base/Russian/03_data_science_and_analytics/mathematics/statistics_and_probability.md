@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Статистика и вероятность
 Вероятность и статистика — это математические основы науки о данных, машинного обучения и научных исследований. Вероятность говорит вам, насколько вероятны события; Статистика подскажет вам, как делать выводы на основе данных. Вместе они превращают неопределенность в измеримые и управляемые знания.
 ---

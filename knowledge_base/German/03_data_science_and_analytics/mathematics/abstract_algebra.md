@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Abstrakte Algebra
 Abstrakte Algebra untersucht algebraische Strukturen – Mengen, die mit Operationen ausgestattet sind, die bestimmten Regeln folgen. Anstatt mit Zahlen zu arbeiten, arbeitet die abstrakte Algebra mit allen Objekten, die die Axiome erfüllen. Diese Allgemeingültigkeit ist wirkungsvoll: Ein für „Gruppen“ bewiesener Satz gilt gleichzeitig für ganze Zahlen, Symmetrien, Matrizen, Permutationen und Quantenzustände. Die abstrakte Algebra liegt der Kryptographie, fehlerkorrigierenden Codes, Quantencomputern und der in der gesamten Physik verwendeten Symmetrieanalyse zugrunde.
 ---

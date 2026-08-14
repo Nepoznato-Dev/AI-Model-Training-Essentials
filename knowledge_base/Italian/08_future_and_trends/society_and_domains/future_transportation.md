@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Trasporti del futuro
 ## Panoramica
 Andare da A a B avrà un aspetto molto diverso. Le auto a guida autonoma circolano già sulle strade pubbliche. Gli aerei elettrici stanno completando i voli di prova. I concetti di Hyperloop promettono viaggi alla velocità del treno nei tubi a vuoto. E i taxi volanti – una volta roba da cartoni animati – stanno entrando nella certificazione. Ecco lo stato di avanzamento delle tecnologie che stanno rimodellando il modo in cui ci muoviamo.

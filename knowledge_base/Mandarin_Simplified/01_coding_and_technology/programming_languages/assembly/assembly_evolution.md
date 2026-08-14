@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 汇编语言 — 版本历史和演变
 ## 时间轴
 |时代|年份|关键主题 |

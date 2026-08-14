@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cách sử dụng công cụ
 ## Git — Kiểm soát phiên bản
 Git là một hệ thống kiểm soát phiên bản phân tán. Mọi nhà phát triển đều có bản sao đầy đủ lịch sử kho lưu trữ trên máy cục bộ của họ.

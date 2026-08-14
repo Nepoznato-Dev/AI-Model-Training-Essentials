@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # کلاؤڈ سروسز کا موازنہ
 کمپیوٹ، اسٹوریج، ڈیٹا بیس، AI/ML، نیٹ ورکنگ، مانیٹرنگ، اور انفراسٹرکچر کے بطور کوڈ میں تین بڑے کلاؤڈ فراہم کنندگان — AWS، Azure، اور Google Cloud — کا ایک دوسرے کے ساتھ موازنہ۔ یہ فیصلہ کرنے والے معماروں کے لیے مفید ہے کہ کون سا پلیٹ فارم استعمال کرنا ہے، یا ایک کلاؤڈ سے دوسرے میں خدمات کی نقشہ سازی کرنا ہے۔
 ---

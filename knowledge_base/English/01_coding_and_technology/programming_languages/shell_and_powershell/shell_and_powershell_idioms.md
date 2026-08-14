@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Idiomatic Patterns & Best Practices
 
 This guide covers idiomatic patterns for Bash/Zsh and PowerShell scripting.

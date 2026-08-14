@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جافا - الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية وأفضل الممارسات لكتابة كود Java (17+) النظيف والحديث.
 ---

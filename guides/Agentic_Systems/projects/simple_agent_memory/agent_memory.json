@@ -1,0 +1,17 @@
+{
+  "user_name": {
+    "fact": "Sarah",
+    "stored_at": "2026-08-14 13:21:35",
+    "access_count": 1
+  },
+  "favorite_color": {
+    "fact": "blue",
+    "stored_at": "2026-08-14 13:21:36",
+    "access_count": 0
+  },
+  "hobby": {
+    "fact": "playing guitar",
+    "stored_at": "2026-08-14 13:21:36",
+    "access_count": 0
+  }
+}

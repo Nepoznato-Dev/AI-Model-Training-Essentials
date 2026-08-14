@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای COBOL (2014+) ارائه می‌کند. این مرجع COBOL اصلی را با تمرکز بر الگوهای نحوی جامع، توضیحات داده ها، پردازش فایل و منطق تجاری تکمیل می کند.
 ---

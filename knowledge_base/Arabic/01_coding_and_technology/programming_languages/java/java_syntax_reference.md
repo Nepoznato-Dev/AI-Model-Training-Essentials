@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جافا - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا شاملاً ومنظمًا لصيغة Java. وهو يكمل مرجع Java الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة وجداول المشغلين والميكانيكا الداخلية لـ JVM وOOP والتزامن.
 ---

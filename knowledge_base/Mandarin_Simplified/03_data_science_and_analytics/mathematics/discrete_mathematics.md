@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 离散数学
 离散数学是对从根本上可数或分离的数学结构的研究，而不是连续数学（微积分、实分析），后者处理平滑、不间断的数量。离散数学是计算机科学、密码学、算法设计和数据结构的基础。如果连续数学描述了物理世界，那么离散数学则描述了计算世界。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — Ecosystem & Tooling Guide
 
 This guide covers the essential tools, frameworks, and infrastructure in the Visual Basic (.NET) ecosystem.

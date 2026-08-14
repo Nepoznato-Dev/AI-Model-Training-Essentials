@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — 慣用模式與最佳實踐
 本指南介紹了編寫乾淨的 Visual Basic (.NET) 程式碼的慣用模式。
 ---

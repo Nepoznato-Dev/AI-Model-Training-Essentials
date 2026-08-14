@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 无障碍和包容性设计
 可访问性（通常缩写为 a11y）是让软件可供所有人使用的实践，包括有视觉、听觉、运动、认知和神经障碍的人。这是许多司法管辖区的法律要求和标准工程实践。无障碍软件对每个人来说都是更好的软件，因为支持残疾用户的设计决策——清晰的结构、键盘导航、足够的对比度、可读的文本——改善了所有用户的体验。
 ---

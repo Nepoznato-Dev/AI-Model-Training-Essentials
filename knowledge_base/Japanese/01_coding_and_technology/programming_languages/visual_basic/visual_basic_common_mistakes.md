@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — よくある間違いとアンチパターン
 このドキュメントでは、Visual Basic (VB.NET) で最も一般的な間違い、罠、およびアンチパターンを修正とともにカタログ化します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # هاسکل
 Haskell یک زبان برنامه نویسی کاملا کاربردی، تایپ ایستا و با تنبلی ارزیابی شده است. هاسکل برای اولین بار در سال 1990 استاندارد شد (Haskell 90) و از طریق چندین نسخه اصلاح شد (Haskell 2010 استاندارد فعلی است)، Haskell به دلیل دقت ریاضی، سیستم تایپ قدرتمند (با کلاس‌های نوع، مونادها و انواع داده‌های جبری) و تاکید بر صحت از طریق انواع شناخته شده است.
 هاسکل یک زبان رایج نیست، اما تأثیر آن بسیار زیاد است. مفاهیمی مانند monads، ارزیابی تنبل و کلاس‌های نوع بر Rust، Swift، Kotlin، Scala و TypeScript تأثیر گذاشته‌اند. Haskell در امور مالی (Standard Chartered، Barclays)، کامپایلرها (GHC) و تأیید رسمی استفاده می شود.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik dan praktik terbaik untuk menulis kode TypeScript yang bersih dan aman untuk diketik.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart
 Dart ni lugha ya programu iliyoboreshwa na mteja iliyotengenezwa na Google, iliyotolewa kwa mara ya kwanza mwaka wa 2013. Ingawa Dart iliwekwa kama mbadala wa JavaScript kwa vivinjari vya wavuti, ilipata madhumuni yake ya msingi kama lugha iliyo nyuma ya **Flutter** - zana ya Google ya kuunda mifumo ya rununu, wavuti, kompyuta ya mezani na programu zilizopachikwa kutoka kwa msingi mmoja wa msimbo.
 Dart inachanganya vipengele bora zaidi vya lugha za kisasa: ina mwelekeo wa kitu, ina chaguo la kuchagua (usalama usio na sauti tangu Dart 3), inasaidia upangaji usio na usawa na`async`/`await`, na inajumuisha msimbo asili wa mashine (kwa simu/desktop) na JavaScript (ya wavuti).

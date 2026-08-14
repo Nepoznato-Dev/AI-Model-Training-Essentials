@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # एमएल इंजीनियरिंग और एमएलओपीएस
 मशीन लर्निंग मॉडल बनाना केवल आधी लड़ाई है। इसे उत्पादन में लाना, इसे विश्वसनीय रूप से चालू रखना, बहाव की निगरानी करना और इस पर पुनरावृत्ति करना - यही वह जगह है जहां एमएल इंजीनियरिंग और एमएलओपीएस आते हैं। यह फ़ाइल प्रयोग से उत्पादन प्रणाली तक पूरे जीवनचक्र को कवर करती है।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — エコシステムとツールのガイド
 このガイドでは、Go エコシステムの重要なツール、フレームワーク、インフラストラクチャについて説明します。
 ---

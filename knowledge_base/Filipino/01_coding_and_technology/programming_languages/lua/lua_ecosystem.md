@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang kasangkapan, aklatan, at imprastraktura sa ecosystem ng Lua.
 ---

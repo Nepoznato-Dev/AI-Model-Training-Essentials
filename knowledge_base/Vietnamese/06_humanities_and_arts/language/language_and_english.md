@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ngôn ngữ và tiếng Anh
 Có khoảng 7.000 ngôn ngữ được sử dụng trên thế giới ngày nay. Tiếng Anh được sử dụng rộng rãi nhất như ngôn ngữ thứ hai và đóng vai trò là ngôn ngữ mặc định trong kinh doanh quốc tế, khoa học, hàng không và internet. Cho dù viết tài liệu mã, đọc tài liệu nghiên cứu hay giao tiếp xuyên biên giới, khả năng sử dụng tiếng Anh vững chắc — ngữ pháp, từ vựng và hùng biện — là một trong những kỹ năng thực tế nhất mà một người có thể phát triển.
 Tệp này bao gồm các yếu tố cần thiết: ngữ pháp, dấu câu, những cạm bẫy phổ biến, kỹ thuật viết và giao tiếp rõ ràng.

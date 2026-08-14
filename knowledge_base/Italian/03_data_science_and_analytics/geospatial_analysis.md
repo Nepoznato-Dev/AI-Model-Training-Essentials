@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Analisi geospaziale
 L'analisi geospaziale è il processo di esame dei dati che hanno una componente geografica: coordinate, indirizzi, confini o qualsiasi dato legato a una posizione sulla Terra. Risponde a domande come "dove sono i nostri clienti?", "qual è il percorso ottimale?" e "come cambia l'uso del territorio nel tempo?". Ogni set di dati ha una dimensione spaziale e la sua comprensione fornisce informazioni che la pura analisi statistica non riesce a cogliere.
 ---

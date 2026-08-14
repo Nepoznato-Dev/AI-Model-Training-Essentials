@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps 和 CI/CD
 DevOps 是文化理念、实践和工具的结合，使团队能够更快、更可靠地交付软件。它打破了开发人员（想要发布更改）和运营人员（想要稳定性）之间的壁垒。 CI/CD（持续集成和持续交付）是使之成为可能的自动化支柱。
 ---

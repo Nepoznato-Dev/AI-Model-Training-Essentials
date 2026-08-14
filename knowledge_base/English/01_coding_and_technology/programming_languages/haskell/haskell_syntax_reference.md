@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for Haskell (GHC 9.x). It complements the main Haskell reference by focusing on exhaustive syntax patterns, the type system, monads, lazy evaluation, and functional programming idioms.

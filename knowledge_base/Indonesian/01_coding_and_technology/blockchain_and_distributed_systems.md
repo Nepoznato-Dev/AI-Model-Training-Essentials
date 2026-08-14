@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Blockchain dan Sistem Terdistribusi
 Blockchain adalah jenis sistem terdistribusi yang spesifik — buku besar yang terdesentralisasi dan hanya ditambahkan di mana catatan (blok) dihubungkan dengan hash kriptografi. Sistem terdistribusi adalah bidang yang lebih luas yang membuat banyak komputer bekerja sama menjadi satu. Kedua konsep tersebut penting untuk memahami infrastruktur modern, mulai dari mata uang kripto hingga database terdistribusi hingga algoritma konsensus yang mendukung layanan global.
 ---

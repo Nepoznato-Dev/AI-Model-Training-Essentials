@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linux Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 Mabilis na Sanggunian ang # Linux Commands
 Mahahalagang Linux/Unix command para sa system navigation at administration.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pemasaran dan Strategi Digital
 Pemasaran adalah cara bisnis menciptakan, mengkomunikasikan, dan memberikan nilai kepada pelanggan. Ini mencakup keseluruhan sistem dalam memahami kebutuhan pelanggan, memposisikan produk untuk memenuhi kebutuhan tersebut, dan membangun hubungan yang mengubah pembeli menjadi pendukung. Revolusi digital telah mengubah alat, saluran, dan kecepatan pemasaran, namun fundamentalnya tetap konsisten.
 ---

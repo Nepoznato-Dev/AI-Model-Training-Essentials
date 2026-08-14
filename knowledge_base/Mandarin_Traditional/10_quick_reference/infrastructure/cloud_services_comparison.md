@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 雲端服務比較
 將三大雲端供應商（AWS、Azure 和 Google Cloud）在運算、儲存、資料庫、AI/ML、網路、監控和基礎設施即程式碼方面進行並排比較。對於架構師決定使用哪個平台或將服務從一個雲端對應到另一個雲端很有用。
 ---

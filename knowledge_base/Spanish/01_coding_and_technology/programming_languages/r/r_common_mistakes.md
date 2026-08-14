@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en R con correcciones.
 ---

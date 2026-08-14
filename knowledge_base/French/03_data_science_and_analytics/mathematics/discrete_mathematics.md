@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mathématiques discrètes
 Les mathématiques discrètes sont l'étude de structures mathématiques qui sont fondamentalement dénombrables ou séparées, par opposition aux mathématiques continues (calcul, analyse réelle), qui traitent de quantités lisses et ininterrompues. Les mathématiques discrètes sous-tendent l’informatique, la cryptographie, la conception d’algorithmes et les structures de données. Si les mathématiques continues décrivent le monde physique, les mathématiques discrètes décrivent le monde informatique.
 ---

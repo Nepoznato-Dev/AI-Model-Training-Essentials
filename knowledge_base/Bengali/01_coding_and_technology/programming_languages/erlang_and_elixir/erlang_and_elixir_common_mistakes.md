@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্নস
 এই নথিটি সংশোধন সহ Erlang এবং Elixir-এর সবচেয়ে সাধারণ ভুল, ফাঁদ, এবং অ্যান্টি-প্যাটার্নগুলি ক্যাটালগ করে।
 ---

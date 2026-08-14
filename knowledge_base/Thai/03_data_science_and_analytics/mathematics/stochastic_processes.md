@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # กระบวนการสุ่ม
 **กระบวนการสุ่ม** คือชุดของตัวแปรสุ่มที่จัดทำดัชนีตามเวลา (หรือปริภูมิ) ในขณะที่ทฤษฎีความน่าจะเป็นจะศึกษาเหตุการณ์สุ่มแต่ละเหตุการณ์ กระบวนการสุ่มจะศึกษาว่าการสุ่มพัฒนาไปตามเวลาอย่างไร พวกเขาจำลองราคาหุ้น ความยาวคิว การแพร่กระจายของโรค การสร้างภาษา และไดนามิกการฝึกอบรมของโมเดลการเรียนรู้ของเครื่อง
 ---

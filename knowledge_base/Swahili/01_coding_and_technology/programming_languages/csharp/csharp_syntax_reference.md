@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yaliyopangwa ya sintaksia ya C# ya Kisasa (C# 10/11/12 kwenye .NET 7/8). Inakamilisha marejeleo kuu ya C# kwa kuangazia mifumo kamili ya sintaksia, LINQ, usawazishaji/ngoja, kulinganisha muundo na vipengele vya kisasa.
 ---

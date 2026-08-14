@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Bảng tính gian lận
 ## CHỌN Thông tin cơ bản
 ```sql

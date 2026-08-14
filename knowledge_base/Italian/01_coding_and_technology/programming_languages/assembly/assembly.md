@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linguaggio assembly
 Il linguaggio assembly è il linguaggio di programmazione leggibile dall'uomo di livello più basso. Fornisce una rappresentazione diretta delle istruzioni del codice macchina di un computer utilizzando codici mnemonici (come`MOV`,`ADD`,`JMP`) anziché binari grezzi. Ogni linguaggio assembly è specifico per una particolare architettura del processore (x86, ARM, MIPS, RISC-V): il codice scritto per un'architettura non verrà eseguito su un'altra.
 Il linguaggio assembly non viene utilizzato per creare applicazioni. Viene utilizzato quando è necessario il controllo assoluto sull'hardware: scrittura di kernel del sistema operativo, driver di dispositivo, bootloader, firmware incorporato, sezioni di codice critiche per le prestazioni, reverse engineering e comprensione di come i computer eseguono effettivamente le istruzioni.

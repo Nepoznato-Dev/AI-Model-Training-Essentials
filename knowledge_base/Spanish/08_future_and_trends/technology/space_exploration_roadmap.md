@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hoja de ruta de exploración espacial
 ## Descripción general
 Estamos viviendo una nueva era dorada de la exploración espacial. El programa Artemis de la NASA está devolviendo humanos a la Luna. SpaceX está construyendo un cohete totalmente reutilizable diseñado para Marte. China tiene sus propios y ambiciosos planes lunares y marcianos. Y una constelación cada vez mayor de empresas privadas está abriendo espacio al comercio, desde Internet satelital hasta el turismo espacial. Aquí está la hoja de ruta, desde la Luna hasta Marte y más allá.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # プロローグ — 構文リファレンス
 このドキュメントは、Prolog の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、統合、バックトラッキング、DCG、およびロジック プログラミングのイディオムに焦点を当て、メインの Prolog リファレンスを補完します。
 ---

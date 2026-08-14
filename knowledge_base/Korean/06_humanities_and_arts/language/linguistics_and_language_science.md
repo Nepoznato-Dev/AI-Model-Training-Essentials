@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 언어학과 언어과학
 언어학은 언어의 구조, 의미, 사용, 습득 및 진화에 대한 과학적 연구입니다. 언어는 인간 의사소통을 정의하는 특징입니다. 언어는 무한히 생산적이며(화자는 이전에 접한 적이 없는 문장을 만들고 이해할 수 있음), 문화적으로 전달되며(순전히 타고난 것이 아니라 학습됨) 지속적으로 진화합니다. 언어가 어떻게 작동하는지 이해하는 것은 언어 기술을 구축하고, 가르치고, 번역하고, 보다 효과적으로 의사소통하기 위해 노력하는 모든 사람과 관련이 있습니다.
 ---

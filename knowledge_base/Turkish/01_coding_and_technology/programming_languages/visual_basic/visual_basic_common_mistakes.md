@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge, Visual Basic'teki (VB.NET) en yaygın hataları, tuzakları ve anti-kalıpları düzeltmelerle birlikte kataloglamaktadır.
 ---

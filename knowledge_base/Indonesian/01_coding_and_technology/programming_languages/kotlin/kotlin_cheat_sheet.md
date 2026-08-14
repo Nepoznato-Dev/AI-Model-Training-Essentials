@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — Lembar Cheat
 ## Dasar-dasar
 ```kotlin

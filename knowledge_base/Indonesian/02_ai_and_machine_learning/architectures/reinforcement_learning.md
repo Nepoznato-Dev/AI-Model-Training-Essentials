@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pembelajaran Penguatan
 Pembelajaran penguatan (RL) adalah cara mesin belajar membuat serangkaian keputusan melalui coba-coba. Tidak seperti pembelajaran yang diawasi, di mana jawaban yang benar diberikan untuk setiap contoh, RL hanya memberikan sinyal hadiah kepada agen — dan agen harus mencari tahu tindakan mana yang memberikan hasil terbaik dari waktu ke waktu. Ini adalah pendekatan di balik AlphaGo, kontrol robot, AI permainan, dan — yang terpenting — RLHF, teknik yang digunakan untuk menyelaraskan model bahasa besar modern dengan preferensi manusia.
 ---

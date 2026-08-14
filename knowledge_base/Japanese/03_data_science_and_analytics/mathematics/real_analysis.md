@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 実際の分析
 実際の分析は微積分の厳密な基礎です。微積分の入門では微分と積分の計算方法を学びますが、実際の分析では、これらの手法が「なぜ」機能するのか、そしていつ失敗するのかが問われます。これは、確率理論、関数分析、最適化、および機械学習アルゴリズムの背後にある理論的保証を支える限界、連続性、収束、統合の正確な定義を提供します。
 ---

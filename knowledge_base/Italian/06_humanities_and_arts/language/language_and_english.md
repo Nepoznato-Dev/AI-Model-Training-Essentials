@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lingua e inglese
 Oggi nel mondo si parlano circa 7.000 lingue. L'inglese è la seconda lingua più parlata e funge da lingua predefinita per gli affari internazionali, la scienza, l'aviazione e Internet. Che si tratti di scrivere documentazione sul codice, leggere documenti di ricerca o comunicare oltre confine, una solida padronanza dell'inglese (grammatica, vocabolario e retorica) è una delle abilità più pratiche che si possano sviluppare.
 Questo file copre gli elementi essenziali: grammatica, punteggiatura, trappole comuni, tecnica di scrittura e comunicazione chiara.

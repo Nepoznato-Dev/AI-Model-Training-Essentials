@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Masa Depan Komputasi
 Masa depan komputasi sedang dibentuk oleh kekuatan yang menantang asumsi mendasar selama 60 tahun terakhir. Hukum Moore – pengamatan bahwa daya komputasi meningkat dua kali lipat setiap dua tahun – melambat. Arsitektur von Neumann — CPU dan memori yang terpisah — mengalami "dinding memori". Komputasi kuantum menjanjikan penyelesaian masalah yang tidak dapat diselesaikan oleh komputer klasik. Chip neuromorfik meniru arsitektur otak. Komputasi tepi memindahkan pemrosesan dari pusat data terpusat. Dan AI mengubah kegunaan komputer — dari alat yang menjalankan instruksi menjadi sistem yang belajar, menghasilkan, dan bernalar. Memahami perubahan ini penting bagi siapa pun yang membangun, membeli, atau mengandalkan teknologi.
 ---

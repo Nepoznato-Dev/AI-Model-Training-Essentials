@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog — Sözdizimi Referansı
 Bu belge Prolog için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, birleştirmeye, geri izlemeye, DCG'lere ve mantıksal programlama deyimlerine odaklanarak ana Prolog referansını tamamlar.
 ---

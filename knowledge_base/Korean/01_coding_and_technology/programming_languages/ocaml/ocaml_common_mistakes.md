@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — 일반적인 실수 및 안티 패턴
 이 문서에는 OCaml에서 가장 흔히 발생하는 실수, 함정, 안티 패턴을 수정 사항이 포함된 목록으로 정리되어 있습니다.
 ---

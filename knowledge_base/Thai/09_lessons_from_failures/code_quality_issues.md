@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ปัญหาคุณภาพของโค้ด
 เอกสารนี้รวบรวมปัญหาคุณภาพโค้ดทั่วไป รวมถึงชื่อตัวแปรที่ไม่ดี เอกสารประกอบที่ไม่ดี โค้ดสปาเก็ตตี้ การขึ้นต่อกันแบบวงกลม และปัญหาด้านการบำรุงรักษาอื่นๆ
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic: errori comuni e anti-pattern
 Questo documento cataloga gli errori, i trap e gli anti-pattern più comuni in Visual Basic (VB.NET) con le correzioni.
 ---

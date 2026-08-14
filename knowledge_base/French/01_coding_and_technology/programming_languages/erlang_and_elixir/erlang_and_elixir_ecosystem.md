@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — Guide de l'écosystème et des outils
 Ce guide couvre les outils, frameworks et infrastructures essentiels de l'écosystème Erlang et Elixir, partageant la VM BEAM et l'OTP.
 ---

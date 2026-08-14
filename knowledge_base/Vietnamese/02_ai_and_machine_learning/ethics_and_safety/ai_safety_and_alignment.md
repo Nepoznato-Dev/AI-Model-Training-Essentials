@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # An toàn và liên kết AI
 An toàn AI là nghiên cứu về cách xây dựng hệ thống AI thực hiện những gì chúng ta thực sự muốn chúng làm — và không làm những việc chúng ta không muốn, ngay cả khi những điều đó không bị loại trừ một cách rõ ràng. Sự liên kết là thách thức cụ thể trong việc làm cho các mục tiêu và hành vi của hệ thống AI phù hợp với ý định của con người. Khi các hệ thống AI trở nên có năng lực hơn, những câu hỏi này chuyển từ sự tò mò mang tính học thuật sang các yêu cầu kỹ thuật thực tế.
 ---

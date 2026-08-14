@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Docker- und Kubernetes-Spickzettel
 Eine praktische Referenz für die Containerisierung von Anwendungen mit Docker und deren Orchestrierung mit Kubernetes. Setzt grundlegende Kenntnisse der Befehlszeile voraus.
 ---

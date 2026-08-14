@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — Kesalahan Umum & Anti-Pola
 Dokumen ini berisi katalog kesalahan, jebakan, dan anti-pola paling umum di Perl beserta koreksinya.
 ---

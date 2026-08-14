@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi/Object Pascal — Руководство по экосистеме и инструментам
 В этом руководстве рассматриваются основные инструменты, платформы и инфраструктура экосистемы Delphi/Object Pascal.
 ---

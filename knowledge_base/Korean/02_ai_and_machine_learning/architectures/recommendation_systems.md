@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 추천 시스템
 추천 시스템은 사용자가 다음에 무엇을 보고, 구매하고, 상호 작용할지 예측합니다. 소셜 미디어의 콘텐츠 피드, 전자 상거래 사이트의 제품 제안, 스트리밍 플랫폼의 영화 추천 및 검색 결과를 강화합니다. 대부분의 사용자에게 보이지 않음에도 불구하고 이는 전 세계에서 상업적으로 가장 영향력 있는 AI 시스템 중 하나입니다. Netflix는 추천 엔진이 가입자 이탈을 줄여 연간 10억 달러 이상을 절약한다고 추정합니다.
 ---

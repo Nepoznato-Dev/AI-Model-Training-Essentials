@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript - مرجع نحو
 این سند یک مرجع ساختارمند و جامع برای TypeScript ارائه می دهد. این مرجع اصلی TypeScript را با تمرکز بر سیستم نوع، ژنریک، انواع ابزار و برنامه نویسی سطح نوع پیشرفته تکمیل می کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # रेगुलर एक्सप्रेशन चीट शीट
 रेगुलर एक्सप्रेशन (रेगेक्स) टेक्स्ट से मेल खाने के पैटर्न हैं। उनका उपयोग हर जगह किया जाता है - खोजें और बदलें, इनपुट सत्यापन, लॉग पार्सिंग, डेटा निष्कर्षण, और बहुत कुछ। यह एक व्यावहारिक संदर्भ है, कोई पाठ्यपुस्तक नहीं।
 ---

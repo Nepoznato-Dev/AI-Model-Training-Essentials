@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, deyimsel R kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

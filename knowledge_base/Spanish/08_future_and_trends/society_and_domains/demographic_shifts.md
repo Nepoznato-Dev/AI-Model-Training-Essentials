@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cambios demográficos
 ## Descripción general
 La demografía es el destino, o al menos rima fuertemente con él. La población mundial está envejeciendo rápidamente, migrando según nuevos patrones, agrupándose en ciudades a un ritmo sin precedentes y dividiéndose a lo largo de líneas generacionales que moldean todo, desde el comportamiento electoral hasta los hábitos de consumo. Estos cambios se producirán a lo largo de décadas, pero sus efectos ya son visibles. Aquí están las cuatro grandes tendencias y lo que significan.

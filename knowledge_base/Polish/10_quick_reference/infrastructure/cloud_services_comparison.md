@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Porównanie usług w chmurze
 Bezpośrednie porównanie trzech głównych dostawców usług w chmurze — AWS, Azure i Google Cloud — w zakresie obliczeń, pamięci masowej, baz danych, sztucznej inteligencji/ML, sieci, monitorowania i infrastruktury jako kodu. Przydatne dla architektów decydujących, której platformy użyć lub mapujących usługi z jednej chmury na drugą.
 ---

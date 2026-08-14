@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Informationstheorie
 Die 1948 von Claude Shannon begründete Informationstheorie quantifiziert Informationen selbst. Wie viel sagt Ihnen eine Nachricht? Wie stark können Sie Daten komprimieren? Wie schnell können Sie über einen verrauschten Kanal kommunizieren? Auf diese Fragen gibt es präzise mathematische Antworten. Über die Kommunikation hinaus ist die Informationstheorie zur Grundlage des maschinellen Lernens geworden – Kreuzentropie ist die Standardverlustfunktion für die Klassifizierung, KL-Divergenz misst die Verteilungsähnlichkeit und gegenseitige Informationen steuern die Merkmalsauswahl.
 ---

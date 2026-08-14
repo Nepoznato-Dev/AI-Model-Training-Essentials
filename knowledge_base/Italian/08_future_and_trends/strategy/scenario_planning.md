@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pianificazione degli scenari
 ## Panoramica
 Nessuno può prevedere il futuro, ma puoi prepararti per diversi scenari plausibili. La pianificazione degli scenari, nata nei think tank della Guerra Fredda e perfezionata dalla Shell durante le crisi petrolifere degli anni ’70, è un modo di pensare sistematicamente all’incertezza. Invece di scommettere su una previsione, costruisci storie coerenti su come potrebbero svolgersi le cose, quindi metti alla prova le tue decisioni confrontandole con tutte. Ecco come funziona la metodologia, insieme agli scenari nei settori chiave.

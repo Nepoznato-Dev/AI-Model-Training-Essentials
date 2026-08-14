@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geografi dan Geopolitik
 Geografi membentuk takdir. Letak gunung, sungai, dan sumber daya alam telah menentukan jalur perdagangan, memicu peperangan, dan membangun peradaban selama ribuan tahun. Saat ini, geopolitik – yang merupakan interaksi antara geografi, kekuasaan, dan politik – tetap penting untuk memahami mengapa suatu negara berperilaku seperti itu.
 ---

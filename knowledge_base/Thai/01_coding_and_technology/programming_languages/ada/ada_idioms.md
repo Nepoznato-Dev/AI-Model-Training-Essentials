@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนสำหรับการเขียนโค้ด Ada ที่สะอาดและปลอดภัย
 ---

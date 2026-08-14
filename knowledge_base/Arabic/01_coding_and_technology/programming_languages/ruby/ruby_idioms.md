@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # روبي - الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية وأفضل الممارسات لكتابة كود Rubyish النظيف.
 ---

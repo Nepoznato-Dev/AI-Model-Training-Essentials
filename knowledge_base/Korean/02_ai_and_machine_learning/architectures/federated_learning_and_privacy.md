@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 연합 학습 및 개인 정보 보호
 연합 학습은 원시 데이터를 공유하지 않고 여러 장치 또는 조직에서 기계 학습 모델을 훈련하는 기술입니다. 데이터를 중앙 서버로 보내는 대신 각 장치는 로컬 모델을 훈련하고 모델 업데이트(기울기 또는 가중치)만 공유합니다. 중앙 서버는 이러한 업데이트를 집계하여 글로벌 모델을 생성합니다. 이는 Android 휴대폰에서 키보드 언어 모델을 훈련하기 위해 Google에서 설계했으며 이후 개인 정보 보호 AI의 핵심 기술이 되었습니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Best Practices"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Thực tiễn tốt nhất về bảo mật
 Hướng dẫn thực tế để bảo mật ứng dụng, cơ sở hạ tầng và dữ liệu — từ quá trình phát triển đến sản xuất.
 ---

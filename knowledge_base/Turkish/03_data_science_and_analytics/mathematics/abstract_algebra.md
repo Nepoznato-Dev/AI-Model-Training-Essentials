@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Soyut Cebir
 Soyut cebir, cebirsel yapıları inceler; belirli kuralları takip eden işlemlerle donatılmış kümeler. Soyut cebir sayılarla çalışmak yerine aksiyomları karşılayan nesnelerle çalışır. Bu genellik güçlüdür: "Gruplar" için kanıtlanmış bir teorem tamsayılara, simetrilere, matrislere, permütasyonlara ve kuantum durumlarına aynı anda uygulanır. Soyut cebir, kriptografiyi, hata düzeltme kodlarını, kuantum hesaplamayı ve fizik genelinde kullanılan simetri analizini destekler.
 ---

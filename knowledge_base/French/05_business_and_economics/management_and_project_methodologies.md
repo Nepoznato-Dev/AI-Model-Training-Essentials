@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Méthodologies de gestion et de projet
 La gestion des personnes et des projets fait partie des responsabilités les plus exigeantes de toute organisation. Les compétences techniques permettent d'accéder au poste, mais la capacité de diriger des équipes, de prendre des décisions, de communiquer efficacement et d'obtenir des résultats détermine si les objectifs sont atteints. Ce fichier couvre les cadres, les méthodologies et les compétences pratiques que les gestionnaires et chefs de projet efficaces appliquent.
 ---

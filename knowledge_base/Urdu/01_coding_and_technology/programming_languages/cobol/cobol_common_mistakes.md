@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز COBOL میں سب سے عام غلطیوں، ٹریپس، اور اینٹی پیٹرن کو تصحیح کے ساتھ کیٹلاگ کرتا ہے۔
 ---

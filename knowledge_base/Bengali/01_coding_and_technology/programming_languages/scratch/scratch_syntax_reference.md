@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # স্ক্র্যাচ — সিনট্যাক্স রেফারেন্স
 এই নথিটি স্ক্র্যাচ 3.0-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ ব্লক বিভাগ, ইভেন্ট-চালিত নিদর্শন, স্প্রাইট ব্যবস্থাপনা, ক্লোনিং এবং সৃজনশীল কোডিং কৌশলগুলিতে ফোকাস করে মূল স্ক্র্যাচ রেফারেন্সের পরিপূরক।
 ---

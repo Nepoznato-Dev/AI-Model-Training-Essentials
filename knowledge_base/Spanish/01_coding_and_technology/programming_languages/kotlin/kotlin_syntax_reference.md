@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin — Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para Kotlin (2.0+). Complementa la referencia principal de Kotlin centrándose en patrones de sintaxis exhaustivos, seguridad nula, corrutinas y modismos de Kotlin.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Các mẫu thành ngữ & các phương pháp hay nhất
 Hướng dẫn này bao gồm các mẫu thành ngữ để viết các dự án Scratch được tổ chức tốt và rõ ràng.
 ---

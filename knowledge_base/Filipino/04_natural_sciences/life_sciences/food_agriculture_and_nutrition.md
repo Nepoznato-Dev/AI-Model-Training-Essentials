@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pagkain, Agrikultura, at Nutrisyon
 Ang pagkain ang pinakapangunahing pangangailangan ng tao, at ang agrikultura ang pundasyon ng sibilisasyon. Ang paglipat mula sa pangangaso at pagtitipon tungo sa pagsasaka — ang Rebolusyong Neolitiko, mga 10,000 taon na ang nakalilipas — ang nagbigay-daan sa mga tao na magtayo ng mga lungsod, bumuo ng pagsulat, at lumikha ng lahat ng tinatawag nating "sibilisasyon." Ngayon, ang agrikultura ay gumagamit ng humigit-kumulang 27% ng pandaigdigang manggagawa at gumagawa ng humigit-kumulang 10 trilyong calorie bawat araw. Ngunit humigit-kumulang 800 milyong tao ang nagugutom pa rin, habang mahigit 2 bilyon ang sobra sa timbang o napakataba. Ang problema ay hindi produksyon - ito ay pamamahagi, pag-access, at mga pagpipilian.
 ---

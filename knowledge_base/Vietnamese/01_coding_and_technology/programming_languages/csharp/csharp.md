@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C#"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C#
 C# (phát âm là "C-sharp") là ngôn ngữ lập trình hiện đại, hướng đối tượng, an toàn kiểu được phát triển bởi Microsoft dưới sự lãnh đạo của Anders Hejlsberg và phát hành lần đầu tiên vào năm 2002. Nó chạy trên nền tảng .NET và được thiết kế để kết hợp sức mạnh của C++ với năng suất của Visual Basic. Ngày nay, C# là ngôn ngữ đa nền tảng, linh hoạt được sử dụng cho các ứng dụng web (ASP.NET), phần mềm máy tính để bàn (Windows), phát triển trò chơi (Unity), ứng dụng di động (MAUI), dịch vụ đám mây (Azure), v.v.
 C# đã dần dần tiếp thu những ý tưởng hay nhất từ ​​các ngôn ngữ khác — LINQ, async/await, record, samplematch — khiến nó trở thành một trong những ngôn ngữ giàu tính năng và thân thiện với nhà phát triển nhất hiện có.

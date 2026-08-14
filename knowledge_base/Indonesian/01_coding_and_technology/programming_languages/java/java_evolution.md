@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java — Riwayat Versi & Evolusi
 ## Garis Waktu
 | Versi | Tanggal Rilis | Tema Utama |

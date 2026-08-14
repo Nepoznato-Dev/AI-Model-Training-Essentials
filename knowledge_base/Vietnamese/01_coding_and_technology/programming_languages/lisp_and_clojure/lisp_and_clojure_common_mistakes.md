@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure — Những lỗi thường gặp và lỗi mẫu
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong Lisp và Clojure cùng với các chỉnh sửa.
 ---

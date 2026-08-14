@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Các mẫu thành ngữ & các phương pháp hay nhất
 Hướng dẫn này bao gồm các mẫu thành ngữ để viết mã Ada an toàn và sạch sẽ.
 ---

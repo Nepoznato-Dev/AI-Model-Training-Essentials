@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, implementasi, dan infrastruktur penting dalam ekosistem Prolog.
 ---

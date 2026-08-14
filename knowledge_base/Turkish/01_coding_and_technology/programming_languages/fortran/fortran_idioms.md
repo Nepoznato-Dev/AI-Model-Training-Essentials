@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, modern Fortran (2018+) kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

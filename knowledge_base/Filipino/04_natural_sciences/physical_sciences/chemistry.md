@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Chemistry
 Kung physics ang mga panuntunan ng laro, chemistry ang mangyayari kapag nag-interact ang mga piraso. Pinag-aaralan ng kimika kung paano nagbubuklod, naghiwahiwalay, at muling nagsasaayos ang mga atomo — ibig sabihin, kung paano kumikilos ang lahat ng materyales. Tinutulay nito ang agwat sa pagitan ng pangunahing pisika at ang pagiging kumplikado ng biology, geology, at engineering.
 ---

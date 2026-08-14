@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 資料視覺化
 精心設計的圖表可以揭示數字表隱藏的模式。設計不良的產品可能會產生誤導、混亂或令人厭煩。數據視覺化是將數據轉化為為決策提供資訊的視覺故事的技術。該文件涵蓋圖表選擇、設計原則、常見錯誤以及使這一切成為可能的工具。
 ---

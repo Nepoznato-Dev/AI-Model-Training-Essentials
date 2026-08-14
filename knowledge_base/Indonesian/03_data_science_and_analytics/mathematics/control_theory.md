@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teori Kontrol
 Teori kontrol adalah ilmu matematika yang membuat sistem berperilaku sesuai keinginan Anda. Dari termostat hingga autopilot, dari lengan robot hingga reaktor kimia, sistem kendali merasakan, memutuskan, dan bertindak untuk mempertahankan perilaku yang diinginkan. Bidang ini menyediakan alat yang canggih untuk menganalisis stabilitas, kinerja, dan ketahanan — konsep yang telah bermigrasi ke pembelajaran penguatan, penyesuaian hyperparameter, dan sistem adaptif.
 ---

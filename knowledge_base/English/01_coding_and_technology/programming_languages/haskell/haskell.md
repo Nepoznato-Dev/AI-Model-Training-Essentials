@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell
 
 Haskell is a purely functional, statically typed, lazily evaluated programming language. First standardised in 1990 (Haskell 90) and refined through multiple versions (Haskell 2010 is the current standard), Haskell is known for its mathematical rigour, powerful type system (with type classes, monads, and algebraic data types), and emphasis on correctness through types.

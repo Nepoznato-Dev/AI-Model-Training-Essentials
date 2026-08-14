@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Karat — Kesalahan Umum & Anti-Pola
 Dokumen ini mengkatalogkan kesalahan, jebakan, dan anti-pola paling umum di Rust. Setiap entri menunjukkan pendekatan yang salah, menjelaskan mengapa gagal, dan memberikan solusi yang tepat. Kompiler Rust menemukan banyak kesalahan, tetapi memahami pola-pola ini akan mempercepat kurva pembelajaran Anda.
 ---

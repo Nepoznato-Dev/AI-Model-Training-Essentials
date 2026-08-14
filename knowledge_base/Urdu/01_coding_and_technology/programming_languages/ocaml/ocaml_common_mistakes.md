@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز OCaml میں سب سے عام غلطیوں، ٹریپس، اور اینٹی پیٹرن کو تصحیح کے ساتھ کیٹلاگ کرتا ہے۔
 ---

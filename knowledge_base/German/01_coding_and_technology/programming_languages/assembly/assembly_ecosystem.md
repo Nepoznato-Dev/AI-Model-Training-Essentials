@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Montage – Ökosystem- und Werkzeughandbuch
 Dieser Leitfaden behandelt die wesentlichen Tools, Assembler und Infrastruktur im Assembly-Ökosystem.
 ---

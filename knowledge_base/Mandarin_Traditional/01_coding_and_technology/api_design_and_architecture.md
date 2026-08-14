@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API 設計和架構
 API（應用程式介面）是軟體元件相互通訊的方式。設計良好的 API 直覺、一致且使用起來很愉快。設計不當會導致混亂、錯誤和挫折感。該文件涵蓋了建立開發人員實際想要使用的 API 的原則、模式和實踐。
 ---

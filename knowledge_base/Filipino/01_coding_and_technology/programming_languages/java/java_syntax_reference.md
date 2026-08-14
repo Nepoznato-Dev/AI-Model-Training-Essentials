@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured syntax na sanggunian para sa Java. Kinukumpleto nito ang pangunahing sanggunian ng Java sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, mga talahanayan ng operator, at panloob na mekanika ng JVM, OOP, at concurrency.
 ---

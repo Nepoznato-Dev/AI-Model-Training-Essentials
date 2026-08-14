@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — częste błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i anty-wzorce w OCaml wraz z poprawkami.
 ---

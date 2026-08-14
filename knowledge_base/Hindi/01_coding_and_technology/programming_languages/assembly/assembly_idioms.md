@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # असेंबली - मुहावरेदार पैटर्न और सर्वोत्तम प्रथाएँ
 यह मार्गदर्शिका स्वच्छ, रखरखाव योग्य असेंबली कोड (NASM सिंटैक्स के साथ x86/x64 फोकस) लिखने के लिए मुहावरेदार पैटर्न को कवर करती है।
 ---

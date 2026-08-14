@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bilgi İşlemin Geleceği
 Bilgi işlemin geleceği, son 60 yılın temel varsayımlarına meydan okuyan güçler tarafından şekilleniyor. Moore Yasası (bilgi işlem gücünün kabaca her iki yılda bir ikiye katlandığı gözlemi) yavaşlıyor. Von Neumann mimarisi (CPU ve belleğin ayrı olması) bir "bellek duvarına" çarpıyor. Kuantum hesaplama, klasik bilgisayarların çözemediği sorunları çözmeyi vaat ediyor. Nöromorfik çipler beynin mimarisini taklit ediyor. Edge bilişim, işlemeyi merkezi veri merkezlerinden uzaklaştırır. Yapay zeka, talimatları uygulayan araçlardan öğrenen, üreten ve akıl yürüten sistemlere kadar bilgisayarların ne işe yaradığını değiştiriyor. Bu değişimleri anlamak, teknoloji inşa eden, satın alan veya teknolojiye güvenen herkes için önemlidir.
 ---

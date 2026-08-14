@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic – Ökosystem- und Werkzeughandbuch
 Dieser Leitfaden behandelt die wesentlichen Tools, Frameworks und Infrastruktur im Visual Basic (.NET)-Ökosystem.
 ---

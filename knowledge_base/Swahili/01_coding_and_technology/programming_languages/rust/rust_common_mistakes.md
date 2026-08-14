@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kutu - Makosa ya Kawaida & Miundo ya Kupinga
 Hati hii inaorodhesha makosa ya kawaida, mitego, na mifumo ya kupinga kutu katika Rust. Kila ingizo linaonyesha njia isiyo sahihi, inaelezea kwa nini inashindwa, na hutoa suluhisho sahihi. Mkusanyaji wa Rust hupata makosa mengi, lakini kuelewa mifumo hii kutaharakisha mkondo wako wa kujifunza.
 ---

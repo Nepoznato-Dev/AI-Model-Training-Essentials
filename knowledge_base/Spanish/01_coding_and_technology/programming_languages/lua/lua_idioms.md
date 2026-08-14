@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos y mejores prácticas para escribir código Lua limpio e idiomático.
 ---

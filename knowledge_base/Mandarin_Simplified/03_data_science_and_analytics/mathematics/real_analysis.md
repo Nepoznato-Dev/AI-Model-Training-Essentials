@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #真实分析
 实分析是微积分的严格基础。虽然入门微积分教您如何计算导数和积分，但真正的分析会问“为什么”这些技术有效 - 以及它们何时失败。它提供了极限、连续性、收敛性和积分的精确定义，这些定义支撑着概率论、泛函分析、优化以及机器学习算法背后的理论保证。
 ---

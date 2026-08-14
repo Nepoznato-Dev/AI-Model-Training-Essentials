@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Thuật ngữ công nghệ
 Bảng thuật ngữ tham khảo bao gồm các mô hình AI, phần cứng, điểm chuẩn và khái niệm cốt lõi
 trong bối cảnh điện toán và AI hiện đại.

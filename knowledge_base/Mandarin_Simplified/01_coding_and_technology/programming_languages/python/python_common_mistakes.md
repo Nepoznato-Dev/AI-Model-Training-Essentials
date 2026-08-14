@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python — 常见错误和反模式
 本文档列出了 Python 中最常见的错误、陷阱和反模式。每个条目都会显示错误的方法，解释其失败的原因，并提供正确的解决方案。理解这些陷阱将帮助您编写更健壮的 Python 代码。
 ---

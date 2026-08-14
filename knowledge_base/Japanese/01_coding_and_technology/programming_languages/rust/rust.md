@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ さび
 Rust は、2015 年に初めてリリースされた静的型付けのコンパイルされたプログラミング言語で、元々は Mozilla の Graydon Hoare によって開発されました。 Rust の決定的な約束は、**ガベージ コレクションを使用しないメモリの安全性**です。これは所有権システムを通じて実現されます。これはコンパイル時に適用される一連のルールであり、C または C++ と同じくらい高速にコードを生成しながら、バグのカテゴリ全体 (null ポインターの逆参照、データ競合、バッファ オーバーフロー、解放後の使用) を排除します。
 Rust は、Stack Overflow Developer Survey で複数年連続で「最も愛されている」プログラミング言語に選ばれています。システム プログラミング、WebAssembly、CLI ツール、クラウド インフラストラクチャで、またセキュリティ クリティカルなコンテキストで C/C++ の代替として使用されることが増えています。 Linux カーネルは Rust コードを受け入れるようになりました。

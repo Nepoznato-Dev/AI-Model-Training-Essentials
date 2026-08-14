@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # メディアリテラシーと情報評価
 私たちは情報が飽和した世界に住んでいます。平均的な人は毎日、ニュース記事、ソーシャル メディアの投稿、広告、政治的演説、インフルエンサー コンテンツ、AI が生成したテキストなど、何千ものメディア メッセージにさらされています。ほとんどは大丈夫です。誤解を招く部分もあります。少額は意図的に虚偽です。メディア リテラシーは、すべてを信頼するのではなく、何も信頼しないのではなく、何が信頼でき、何が信頼できないのかについて調整された感覚を養うことによって、この状況を乗り切るスキルです。
 ---

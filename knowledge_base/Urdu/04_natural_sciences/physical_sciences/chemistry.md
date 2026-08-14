@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #کیمسٹری
 اگر فزکس کھیل کے اصول ہیں، تو کیمسٹری وہی ہوتی ہے جب ٹکڑے آپس میں ملتے ہیں۔ کیمسٹری اس بات کا مطالعہ کرتی ہے کہ ایٹم کیسے جوڑتے ہیں، الگ ہوتے ہیں، اور دوبارہ ترتیب دیتے ہیں - جس کا مطلب یہ ہے کہ تمام مواد کیسے برتاؤ کرتے ہیں۔ یہ بنیادی طبیعیات اور حیاتیات، ارضیات، اور انجینئرنگ کی پیچیدگی کے درمیان فرق کو ختم کرتا ہے۔
 ---

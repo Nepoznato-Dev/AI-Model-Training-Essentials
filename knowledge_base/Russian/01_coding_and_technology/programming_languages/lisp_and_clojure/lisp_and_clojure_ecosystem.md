@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp и Clojure — Руководство по экосистеме и инструментам
 В этом руководстве рассматриваются основные инструменты, платформы и инфраструктура экосистемы Lisp и Clojure.
 ---

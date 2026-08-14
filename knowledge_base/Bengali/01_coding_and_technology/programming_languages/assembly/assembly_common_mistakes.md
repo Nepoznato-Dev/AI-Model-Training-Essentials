@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # সমাবেশের ভাষা — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্ন
 এই নথিটি সংশোধন সহ x86-64 অ্যাসেম্বলিতে সবচেয়ে সাধারণ ভুল, ফাঁদ এবং অ্যান্টি-প্যাটার্ন ক্যাটালগ করে।
 ---

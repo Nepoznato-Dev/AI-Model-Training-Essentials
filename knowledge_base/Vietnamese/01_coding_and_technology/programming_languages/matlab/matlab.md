@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #MATLAB
 MATLAB (Phòng thí nghiệm ma trận) là ngôn ngữ và môi trường lập trình thông dịch cấp cao được thiết kế cho tính toán số, hoạt động ma trận và các ứng dụng khoa học/kỹ thuật. Được phát triển bởi MathWorks và phát hành lần đầu tiên vào năm 1984, MATLAB là công cụ tiêu chuẩn trong nhiều ngành kỹ thuật - kỹ thuật điện, hệ thống điều khiển, xử lý tín hiệu, xử lý hình ảnh và truyền thông.
 MATLAB kết hợp ngôn ngữ định hướng ma trận mạnh mẽ với các hộp công cụ mở rộng (gói bổ trợ) và môi trường mô phỏng trực quan Simulink. Nó được sử dụng rộng rãi trong học viện và công nghiệp để tạo mẫu các thuật toán trước khi triển khai chúng trong mã sản xuất.

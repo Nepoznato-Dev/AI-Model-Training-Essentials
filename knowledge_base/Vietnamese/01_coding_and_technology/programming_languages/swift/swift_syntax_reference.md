@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Swift (5.9+). Nó bổ sung cho tham chiếu Swift chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, các tùy chọn, lập trình hướng giao thức và tính tương tranh hiện đại.
 ---

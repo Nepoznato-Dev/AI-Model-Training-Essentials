@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Génétique et Génomique
 La génétique est l'étude de l'hérédité – comment les traits sont transmis des parents à la progéniture par l'ADN. La génomique est l'étude de génomes entiers : tous les gènes, les régions non codantes, la manière dont ils interagissent et varient selon les individus et les populations. La transition de la génétique à la génomique a été motivée par la technologie de séquençage : nous sommes passés de l’étude d’un gène à la fois à la lecture de génomes entiers en quelques heures, générant ainsi des données qui transforment la médecine, l’agriculture, la médecine légale et notre compréhension de l’évolution.
 ---

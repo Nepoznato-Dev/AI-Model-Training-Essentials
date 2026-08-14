@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Marketing at Digital Strategy
 Ang marketing ay kung paano lumilikha, nakikipag-usap, at naghahatid ng halaga ang mga negosyo sa mga customer. Sinasaklaw nito ang buong sistema ng pag-unawa sa mga pangangailangan ng customer, pagpoposisyon ng isang produkto upang matugunan ang mga pangangailangang iyon, at pagbuo ng mga relasyon na nagko-convert sa mga mamimili sa mga tagapagtaguyod. Binago ng digital revolution ang mga tool, channel, at bilis ng marketing, habang nananatiling pare-pareho ang mga batayan.
 ---

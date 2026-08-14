@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Low-Code- und Plattform-Engineering
 Mit Low-Code-Plattformen können Benutzer Anwendungen mit minimalem handgeschriebenem Code erstellen – typischerweise über Drag-and-Drop-Schnittstellen, visuelle Workflows und vorgefertigte Konnektoren. Plattform-Engineering ist die Disziplin des Aufbaus interner Entwicklerplattformen (IDPs), die es Produktteams leicht machen, Infrastruktur, CI/CD und Betriebstools selbst zu bedienen. Beide Trends sind Antworten auf dasselbe Problem: die Kluft zwischen der Nachfrage nach Software und dem Angebot an Entwicklern, die diese erstellen können.
 ---

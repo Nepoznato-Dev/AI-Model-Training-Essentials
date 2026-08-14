@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic — Referensi Sintaks
 Dokumen ini menyediakan referensi sintaksis yang komprehensif dan terstruktur untuk Visual Basic (VB.NET). Ini melengkapi referensi utama Visual Basic dengan berfokus pada pola sintaksis lengkap, fitur OOP, LINQ, async/await, dan idiom integrasi .NET.
 ---

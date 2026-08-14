@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — Guide de l'écosystème et des outils
 Ce guide couvre les outils, frameworks et infrastructures essentiels de l'écosystème Go.
 ---

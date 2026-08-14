@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini اور مقامی AI ماڈل لینڈ اسکیپ
 مائیکروسافٹ کے Phi-3-mini ماڈل کا تجزیہ — اس کا ڈیزائن فلسفہ، تعمیراتی انتخاب، اور کارکردگی کی خصوصیات — اور اس کی کامیابی ہمیں موثر، موثر AI سسٹمز بنانے کے بارے میں کیا سکھاتی ہے۔
 ---

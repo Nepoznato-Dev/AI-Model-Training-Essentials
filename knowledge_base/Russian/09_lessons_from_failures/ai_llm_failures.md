@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Неудачи AI и LLM
 В этом документе объединены распространенные режимы сбоев в системах искусственного интеллекта и больших языковых моделей, включая галлюцинации, дезинформацию, ошибки в рассуждениях и проблемы, связанные с подсказками.
 ---

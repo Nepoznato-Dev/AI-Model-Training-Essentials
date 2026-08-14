@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lokal na Arkitektura ng AI
 Isang praktikal na gabay sa pagpapatakbo ng malalaking modelo ng wika na ganap na nasa device — mga pagsasaalang-alang sa hardware, inference engine, pag-optimize ng memorya, at disenyo ng system para sa edge deployment.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # हास्केल - चीट शीट
 ## मूल बातें
 ```haskell

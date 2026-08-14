@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio
 | Toleo | Mwaka | Mandhari Muhimu |

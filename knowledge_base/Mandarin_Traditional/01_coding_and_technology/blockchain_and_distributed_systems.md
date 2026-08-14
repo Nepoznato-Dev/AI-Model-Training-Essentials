@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 區塊鏈與分散式系統
 區塊鏈是一種特定類型的分散式系統——一種分散的、僅附加的分類賬，其中記錄（區塊）透過加密雜湊連結。分散式系統是使多台電腦作為一台電腦協同工作的更廣泛的領域。這兩個概念對於理解現代基礎設施都很重要，從加密貨幣到分散式資料庫，再到為全球服務提供支援的共識演算法。
 ---

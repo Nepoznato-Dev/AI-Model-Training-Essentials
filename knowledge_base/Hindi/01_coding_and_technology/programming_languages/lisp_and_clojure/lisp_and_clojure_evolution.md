@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # लिस्प और क्लोजर - संस्करण इतिहास और विकास
 ## लिस्प टाइमलाइन
 | संस्करण | वर्ष | मुख्य विषय |

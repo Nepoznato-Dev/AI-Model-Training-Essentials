@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #C
 C 是一種通用的過程式設計語言，由丹尼斯·里奇 (Dennis Ritchie) 在 1969 年至 1973 年間在貝爾實驗室創建。它旨在實現 Unix 作業系統，並且在 50 多年後仍然是使用最廣泛的程式語言之一。 C 提供低階記憶體存取、最小標準庫以及到機器指令的清晰映射——使其成為建立大多數現代運算的基礎。
 C 是作業系統（Linux、Windows 核心、macOS）、嵌入式系統、資料庫引擎（SQLite、PostgreSQL）、編譯器（Python 的 CPython、Ruby 的 MRI）以及幾乎所有其他程式語言執行時期背後的語言。理解 C 就是理解计算机实际上是如何工作的。

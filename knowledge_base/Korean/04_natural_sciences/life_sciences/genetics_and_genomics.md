@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 유전학과 유전체학
 유전학은 유전, 즉 형질이 DNA를 통해 부모에게서 자손에게 어떻게 전달되는지에 대한 연구입니다. 유전체학은 전체 게놈, 즉 모든 유전자, 비암호화 영역, 이들이 상호 작용하는 방식, 개인과 집단에 따라 어떻게 다른지에 대한 연구입니다. 유전학에서 게놈학으로의 전환은 시퀀싱 기술에 의해 주도되었습니다. 우리는 한 번에 하나의 유전자를 연구하는 것에서 몇 시간 만에 전체 게놈을 읽는 것으로 발전하여 의학, 농업, 법의학 및 진화에 대한 이해를 변화시키는 데이터를 생성했습니다.
 ---

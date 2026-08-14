@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها را برای نوشتن کدهای تمیز و مدرن پرل (5.38+) پوشش می دهد.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # হাসকেল — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্নস
 এই নথিটি সংশোধন সহ Haskell-এ সবচেয়ে সাধারণ ভুল, ফাঁদ, এবং অ্যান্টি-প্যাটার্ন ক্যাটালগ করে।
 ---

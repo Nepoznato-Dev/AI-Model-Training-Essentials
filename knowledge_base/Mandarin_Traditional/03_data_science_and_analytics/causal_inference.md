@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 因果推理
 因果推理是一門確定一件事是否確實導致另一件事的科學，而不僅僅是它們是否相關。相關性告訴您兩個變數一起移動。因果關係告訴你，改變一個就會改變另一個。這種區別在醫學（這種藥物有效嗎？）、政策（這種幹預措施是否減少貧窮？）、商業（這種廣告活動是否增加銷售量？）和科學（這種機制是否解釋了這種現象？）非常重要。
 ---

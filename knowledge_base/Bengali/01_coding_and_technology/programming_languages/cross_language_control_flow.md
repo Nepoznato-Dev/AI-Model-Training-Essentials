@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Control Flow"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Cross-Language Comparison — কন্ট্রোল ফ্লো
 ## যদি/অন্যথা বিবৃতি
 ```python

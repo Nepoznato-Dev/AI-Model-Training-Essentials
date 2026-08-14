@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # रूबी - सिंटैक्स संदर्भ
 यह दस्तावेज़ रूबी (3.x) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, ब्लॉक और क्लोजर, मेटाप्रोग्रामिंग और रूबी मुहावरों पर ध्यान केंद्रित करके मुख्य रूबी संदर्भ को पूरक करता है।
 ---

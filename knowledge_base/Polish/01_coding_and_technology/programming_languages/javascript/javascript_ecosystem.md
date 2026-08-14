@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku omówiono podstawowe narzędzia, frameworki i infrastrukturę w ekosystemie JavaScript.
 ---

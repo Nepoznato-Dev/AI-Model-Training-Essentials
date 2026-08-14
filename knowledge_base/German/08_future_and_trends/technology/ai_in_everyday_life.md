@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # KI im Alltag
 Künstliche Intelligenz ist kein Zukunftskonzept mehr – sie ist fest im täglichen Leben verankert. Von dem Moment an, in dem Sie aufwachen und auf Ihr Telefon schauen (Empfehlungsalgorithmen entscheiden, welche Benachrichtigungen Sie sehen) bis zu dem Moment, in dem Sie einschlafen (Ihr intelligenter Lautsprecher verarbeitet Ihren letzten Befehl), treffen KI-Systeme Entscheidungen in Ihrem Namen, für Sie und manchmal auch über Sie. Zu verstehen, wo KI auftaucht, wie sie grundsätzlich funktioniert und welche Auswirkungen sie hat, ist nicht mehr optional – es ist eine Voraussetzung für eine informierte Staatsbürgerschaft im 21. Jahrhundert.
 ---

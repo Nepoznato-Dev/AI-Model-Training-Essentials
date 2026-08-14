@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, kerangka kerja, dan infrastruktur penting dalam ekosistem Ruby.
 ---

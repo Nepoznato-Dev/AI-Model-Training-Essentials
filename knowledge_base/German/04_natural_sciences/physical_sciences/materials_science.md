@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Materialwissenschaft
 In der Materialwissenschaft wird untersucht, wie die Struktur eines Materials (auf atomarer, mikroskopischer und makroskopischer Ebene) seine Eigenschaften bestimmt und wie Verarbeitungsmethoden verwendet werden können, um diese Struktur zu steuern, um die gewünschte Leistung zu erzielen. Es ist das Fachgebiet, das Fragen beantwortet wie: Warum ist Stahl stark, aber schwer? Warum ist Glas transparent, aber spröde? Wie können wir Batterien herstellen, die schneller aufladen? Welche Materialien überstehen die Bedingungen auf dem Mars? Jede Technologie, die Sie jemals verwendet haben, besteht aus Materialien, und Fortschritte in der Technologie erfordern fast immer Fortschritte in den Materialien.
 ---

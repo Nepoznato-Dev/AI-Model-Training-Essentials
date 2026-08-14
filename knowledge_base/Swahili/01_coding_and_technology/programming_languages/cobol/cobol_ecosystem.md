@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - Mfumo wa Ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, wakusanyaji, na miundombinu katika mfumo ikolojia wa COBOL.
 ---

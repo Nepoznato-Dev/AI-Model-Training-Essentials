@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI 和 LLM 失败
 本文档整合了人工智能和大语言模型系统中的常见故障模式，包括幻觉、错误信息、推理错误和提示相关问题。
 ---

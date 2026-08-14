@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — Odniesienie do składni
 Ten dokument zawiera obszerne, uporządkowane odniesienia do składni języka Scala (3.x z uwagami na temat różnic w wersji 2.x). Uzupełnia główne odniesienia do języka Scala, skupiając się na wyczerpujących wzorcach składni, systemie typów, konstrukcjach programowania funkcjonalnego i idiomach Scali.
 ---

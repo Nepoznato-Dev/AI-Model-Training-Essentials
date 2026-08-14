@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pas — Yaygın Hatalar ve Anti-Desenler
 Bu belge Rust'taki en yaygın hataları, tuzakları ve anti-kalıpları kataloglamaktadır. Her giriş yanlış yaklaşımı gösterir, neden başarısız olduğunu açıklar ve doğru çözümü sağlar. Rust'un derleyicisi birçok hata yakalar ancak bu kalıpları anlamak öğrenme sürecinizi hızlandıracaktır.
 ---

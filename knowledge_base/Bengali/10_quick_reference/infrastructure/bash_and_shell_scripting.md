@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ব্যাশ এবং শেল স্ক্রিপ্টিং চিট শীট
 Bash-এ শেল স্ক্রিপ্ট লেখার জন্য একটি ব্যবহারিক রেফারেন্স — বেশিরভাগ Linux এবং macOS সিস্টেমে ডিফল্ট শেল। সিনট্যাক্স, সাধারণ নিদর্শন, পাঠ্য প্রক্রিয়াকরণ এবং দরকারী ওয়ান-লাইনার কভার করে।
 ---

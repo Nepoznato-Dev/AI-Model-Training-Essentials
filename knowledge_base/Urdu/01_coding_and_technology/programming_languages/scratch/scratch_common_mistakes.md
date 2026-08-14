@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سکریچ - عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز سکریچ میں سب سے عام غلطیوں اور ٹریپس کو درست کرنے کے ساتھ کیٹلاگ کرتا ہے۔
 ---

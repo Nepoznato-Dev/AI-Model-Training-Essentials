@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 强化学习
 强化学习 (RL) 是机器学习通过反复试验做出一系列决策的方式。与为每个示例提供正确答案的监督学习不同，强化学习仅向代理提供奖励信号，并且代理必须随着时间的推移找出哪些操作会带来最佳结果。它是 AlphaGo、机器人控制、游戏人工智能以及最重要的 RLHF（用于将现代大型语言模型与人类偏好保持一致的技术）背后的方法。
 ---

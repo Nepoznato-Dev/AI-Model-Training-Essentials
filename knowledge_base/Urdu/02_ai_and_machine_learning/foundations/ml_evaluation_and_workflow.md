@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مشین لرننگ ایویلیوایشن اور ورک فلو
 ML لائف سائیکل کے لیے ایک عملی گائیڈ — مسئلے کی تشکیل سے لے کر پروڈکشن مانیٹرنگ تک — میٹرکس، توثیق، اور ڈیبگنگ پر توجہ کے ساتھ۔
 ---

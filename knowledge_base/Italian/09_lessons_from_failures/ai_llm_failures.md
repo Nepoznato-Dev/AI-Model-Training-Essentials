@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Errori AI e LLM
 Questo documento consolida le modalità di errore comuni nei sistemi di intelligenza artificiale e di modello linguistico di grandi dimensioni, comprese allucinazioni, disinformazione, errori di ragionamento e problemi relativi ai prompt.
 ---

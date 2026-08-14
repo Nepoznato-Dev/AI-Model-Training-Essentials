@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript - คู่มือระบบนิเวศและเครื่องมือ
 คู่มือนี้ครอบคลุมถึงเครื่องมือ เฟรมเวิร์ก และโครงสร้างพื้นฐานที่สำคัญในระบบนิเวศของ TypeScript TypeScript แบ่งปันระบบนิเวศส่วนใหญ่กับ JavaScript แต่มีเครื่องมือพิเศษของตัวเอง
 ---

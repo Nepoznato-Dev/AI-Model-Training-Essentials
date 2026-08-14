@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart — Sözdizimi Referansı
 Bu belge Dart (3.x) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, sıfır güvenliğine, eşzamansız programlamaya ve Flutter odaklı tasarım kalıplarına odaklanarak ana Dart referansını tamamlar.
 ---

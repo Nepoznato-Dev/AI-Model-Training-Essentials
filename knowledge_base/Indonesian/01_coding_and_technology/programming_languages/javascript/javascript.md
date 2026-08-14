@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #JavaScript
 JavaScript adalah bahasa pemrograman dinamis dan ditafsirkan yang dibuat oleh Brendan Eich hanya dalam 10 hari pada tahun 1995. Awalnya dirancang untuk menambah interaktivitas pada halaman web, JavaScript telah berkembang menjadi bahasa pemrograman yang paling banyak digunakan di dunia. JavaScript berjalan di setiap browser web, di server melalui Node.js, di aplikasi desktop (Electron), aplikasi seluler (React Native), dan bahkan sistem tertanam.
 Bahasa ini unik karena pada dasarnya merupakan satu-satunya pilihan untuk pengembangan web sisi klien — setiap browser mendukungnya secara asli. Monopoli ini, dikombinasikan dengan munculnya JavaScript full-stack (Node.js, Deno, Bun), menjadikannya sangat diperlukan.

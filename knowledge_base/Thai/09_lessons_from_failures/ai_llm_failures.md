@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI และ LLM ล้มเหลว
 เอกสารนี้รวมโหมดความล้มเหลวทั่วไปในระบบ AI และโมเดลภาษาขนาดใหญ่ ซึ่งรวมถึงภาพหลอน ข้อมูลที่ผิด ข้อผิดพลาดในการให้เหตุผล และปัญหาที่เกี่ยวข้องกับการแจ้งเตือน
 ---

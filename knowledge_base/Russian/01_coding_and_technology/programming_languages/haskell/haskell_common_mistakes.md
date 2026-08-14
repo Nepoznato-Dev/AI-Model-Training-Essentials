@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — распространенные ошибки и антишаблоны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в Haskell с исправлениями.
 ---

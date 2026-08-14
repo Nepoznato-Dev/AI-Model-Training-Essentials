@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible 및 구성 관리
 Ansible은 에이전트 없는 구성 관리 및 자동화 도구입니다. SSH(또는 Windows용 WinRM)를 사용하여 서버에 연결하고 YAML 플레이북에 정의된 작업을 실행합니다. 모든 머신에 에이전트를 설치해야 하는 도구와 달리 Ansible은 푸시 기반이므로 제어 노드에서 명령을 실행합니다. 서버 프로비저닝, 애플리케이션 배포, 구성 관리 및 임시 작업 실행에 사용됩니다.
 ---

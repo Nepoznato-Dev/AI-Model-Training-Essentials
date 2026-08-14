@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Межъязыковое сравнение — параллелизм и параллелизм
 ## Обзор моделей параллелизма
 | Язык | Модель | Ключевой механизм | Общая память? |

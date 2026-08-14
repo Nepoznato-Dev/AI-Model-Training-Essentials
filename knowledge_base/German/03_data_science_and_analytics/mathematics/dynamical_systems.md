@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dynamische Systeme
 Ein **dynamisches System** beschreibt, wie sich ein Zustand im Laufe der Zeit nach einer festen Regel entwickelt. Von Planetenumlaufbahnen bis zur Bevölkerungsdynamik, von Wettermustern bis zum Training neuronaler Netze – die Theorie dynamischer Systeme liefert die Sprache und die Werkzeuge, um zu verstehen, wie sich Dinge verändern. Diese Datei behandelt gewöhnliche Differentialgleichungen (ODEs), partielle Differentialgleichungen (PDEs), Stabilitätsanalyse, Chaos und Bifurkationen.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Blockchain e sistemas distribuídos
 Blockchain é um tipo específico de sistema distribuído – um livro-razão descentralizado e somente anexado, onde os registros (blocos) são vinculados por hashes criptográficos. Sistemas distribuídos são o campo mais amplo de fazer com que vários computadores trabalhem juntos como um só. Ambos os conceitos são importantes para a compreensão da infraestrutura moderna, desde criptomoedas até bancos de dados distribuídos e algoritmos de consenso que alimentam serviços globais.
 ---

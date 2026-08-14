@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp ve Clojure — Sözdizimi Referansı
 Bu belge Common Lisp ve Clojure için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. S ifadelerine, makrolara, kalıcı veri yapılarına ve işlevsel programlama modellerine odaklanarak ana Lisp/Clojure referansını tamamlar.
 ---

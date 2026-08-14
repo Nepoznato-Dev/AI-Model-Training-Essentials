@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingeniería rápida
 La ingeniería de indicaciones es la práctica de diseñar, refinar y optimizar las indicaciones de entrada para obtener el mejor resultado posible de un modelo de lenguaje. Es a la vez un arte y una ciencia, y es la interfaz principal para controlar el comportamiento del LLM sin realizar ajustes.
 ---

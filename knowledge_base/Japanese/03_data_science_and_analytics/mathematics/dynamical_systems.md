@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 動的システム
 **動的システム**は、固定ルールに従って状態が時間の経過とともにどのように進化するかを記述します。惑星の軌道から人口動態、気象パターンからニューラルネットワークの訓練に至るまで、力学システム理論は、物事がどのように変化するかを理解するための言語とツールを提供します。このファイルは、常微分方程式 (ODE)、偏微分方程式 (PDE)、安定性解析、カオス、分岐をカバーしています。
 ---

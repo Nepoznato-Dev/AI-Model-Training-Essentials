@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — Riwayat Versi & Evolusi
 ## Garis Waktu
 | Versi | Tahun | Tema Utama |

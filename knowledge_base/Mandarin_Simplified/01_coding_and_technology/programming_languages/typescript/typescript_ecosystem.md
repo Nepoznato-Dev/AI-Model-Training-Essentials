@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — 生态系统和工具指南
 本指南涵盖了 TypeScript 生态系统中的基本工具、框架和基础设施。 TypeScript 与 JavaScript 共享其大部分生态系统，但有自己的专用工具。
 ---

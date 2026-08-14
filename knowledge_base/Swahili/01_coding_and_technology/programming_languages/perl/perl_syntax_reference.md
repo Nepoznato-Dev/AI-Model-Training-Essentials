@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Perl (5.38+). Inakamilisha rejeleo kuu la Perl kwa kuangazia mifumo kamili ya sintaksia, misemo ya kawaida, marejeleo, na nguvu ya kuchakata maandishi ya Perl.
 ---

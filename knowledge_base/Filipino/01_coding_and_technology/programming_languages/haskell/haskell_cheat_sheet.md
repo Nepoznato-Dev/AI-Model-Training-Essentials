@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — Cheat Sheet
 ## Mga Pangunahing Kaalaman
 ```haskell

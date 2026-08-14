@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ارزیابی یادگیری ماشین و گردش کار
 یک راهنمای عملی برای چرخه حیات ML - از چارچوب بندی مشکل تا نظارت بر تولید - با تمرکز بر معیارها، اعتبارسنجی و اشکال زدایی.
 ---

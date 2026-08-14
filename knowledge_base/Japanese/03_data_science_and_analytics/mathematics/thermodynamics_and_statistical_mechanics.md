@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 熱力学と統計力学
 熱力学は、原子がどのようなものであるかを知ることなく、温度、圧力、エントロピーの観点からシステムの巨視的な挙動を記述します。統計力学は熱力学をボトムアップで説明します。統計力学は、膨大な数の粒子の微視的な挙動から巨視的な特性を導き出します。これらを組み合わせることで、情報理論、機械学習などに移行した概念であるエネルギー、エントロピー、平衡についての最も深い理解を提供します。
 ---

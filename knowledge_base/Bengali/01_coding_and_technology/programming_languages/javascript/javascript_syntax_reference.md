@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # জাভাস্ক্রিপ্ট — সিনট্যাক্স রেফারেন্স
 এই নথিটি জাভাস্ক্রিপ্টের জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, অপারেটর টেবিল এবং অভ্যন্তরীণ মেকানিক্সের উপর ফোকাস করে প্রধান জাভাস্ক্রিপ্ট রেফারেন্সের পরিপূরক।
 ---

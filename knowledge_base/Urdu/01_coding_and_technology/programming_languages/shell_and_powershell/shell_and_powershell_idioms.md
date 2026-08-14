@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # شیل اور پاور شیل — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ Bash/Zsh اور PowerShell اسکرپٹنگ کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Materials Science
 Ang agham ng mga materyales ay ang pag-aaral kung paano tinutukoy ng istruktura ng isang materyal (sa atomic, microscopic, at macroscopic scale) ang mga katangian nito, at kung paano magagamit ang mga pamamaraan sa pagpoproseso upang kontrolin ang istrukturang iyon upang makamit ang ninanais na pagganap. Ito ang larangan na sumasagot sa mga tanong tulad ng: bakit malakas ngunit mabigat ang bakal? Bakit ang salamin ay transparent ngunit malutong? Paano tayo makakagawa ng mga baterya na mas mabilis mag-charge? Anong mga materyales ang makakaligtas sa mga kondisyon sa Mars? Ang bawat piraso ng teknolohiya na iyong ginamit ay gawa sa mga materyales, at ang mga pag-unlad sa teknolohiya ay halos palaging nangangailangan ng mga pag-unlad sa mga materyales.
 ---

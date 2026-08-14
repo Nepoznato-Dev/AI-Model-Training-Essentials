@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ج - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، کتابخانه ها و زیرساخت های ضروری در اکوسیستم C را پوشش می دهد.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — Mga Idiomatic Pattern at Pinakamahuhusay na Kasanayan
 Sinasaklaw ng gabay na ito ang mga idiomatic pattern at pinakamahusay na kagawian para sa pagsusulat ng malinis, ligtas sa uri ng TypeScript code.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Hướng dẫn về hệ sinh thái và công cụ
 Hướng dẫn này bao gồm các công cụ, khung và cơ sở hạ tầng thiết yếu cho tập lệnh shell (Bash/Zsh) và PowerShell.
 ---

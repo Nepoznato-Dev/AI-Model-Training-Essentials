@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — Sürüm Geçmişi ve Gelişimi
 ## Zaman Çizelgesi
 | Sürüm | Çıkış Tarihi | Anahtar Tema |

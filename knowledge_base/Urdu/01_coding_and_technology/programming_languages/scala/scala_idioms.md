@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # اسکیلا - محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ صاف، فعال Scala 3 کوڈ لکھنے کے لیے محاوراتی نمونوں اور بہترین طریقوں کا احاطہ کرتا ہے۔
 ---

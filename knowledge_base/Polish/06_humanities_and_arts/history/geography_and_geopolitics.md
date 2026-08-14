@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geografia i geopolityka
 Geografia kształtuje przeznaczenie. Położenie gór, rzek i zasobów naturalnych determinowało szlaki handlowe, wywoływało wojny i budowało cywilizacje przez tysiąclecia. Dziś geopolityka – wzajemne oddziaływanie geografii, władzy i polityki – pozostaje niezbędna do zrozumienia, dlaczego narody zachowują się w ten sposób.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 媒介素養與資訊評估
 我們生活在一個資訊飽和的世界。每天，一般人都會接觸到數以千計的媒體訊息——新聞文章、社群媒體貼文、廣告、政治演講、影響者內容、人工智慧生成的文字。大部分都很好。其中一些是誤導性的。少量是故意造假的。媒體素養是駕馭這一局面的技能——不是相信一切，也不是什麼都不相信，而是培養一種對什麼是可靠的、什麼是不可靠的校準感。
 ---

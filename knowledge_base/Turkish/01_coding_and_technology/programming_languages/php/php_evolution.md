@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — Sürüm Geçmişi ve Gelişimi
 ## Zaman Çizelgesi
 | Sürüm | Yıl | Anahtar Tema |

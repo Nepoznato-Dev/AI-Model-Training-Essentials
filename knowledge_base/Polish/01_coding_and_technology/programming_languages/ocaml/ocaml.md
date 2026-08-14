@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #OCaml
 OCaml (Objective Caml) to funkcjonalny język programowania opracowany w INRIA we Francji, wydany po raz pierwszy w 1996 roku. Łączy w sobie wyrazistość programowania funkcjonalnego z praktycznymi funkcjami: potężnym systemem typów z wnioskowaniem o typie (Hindley-Milner), dopasowywaniem wzorców, algebraicznymi typami danych i opcjonalnym programowaniem obiektowym. OCaml kompiluje się do szybkiego kodu natywnego i obsługuje także kod bajtowy.
 Najbardziej znaną aplikacją OCaml w świecie rzeczywistym jest firma handlowa **Jane Street**, która używa OCaml w całej swojej infrastrukturze handlowej. Jest również używany w tworzeniu kompilatorów (kompilator Rusta został pierwotnie napisany w OCaml), weryfikacji formalnej, systemach finansowych i dowodzeniu twierdzeń.

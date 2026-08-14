@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prawo i systemy prawne
 Prawo to zbiór zasad, które społeczeństwo zgadza się egzekwować za pośrednictwem swoich instytucji. To nie to samo, co moralność – możesz zrobić coś legalnego, co jest niemoralne, i coś nielegalnego, co jest moralnie uzasadnione. Prawo istnieje po to, aby zapewniać przewidywalność: ustalać, co jest dozwolone, a co zabronione i co się stanie, gdy zasady zostaną złamane. Bez tego spory rozstrzyga się siłą. Dzięki niemu spory są rozstrzygane procesowo.
 Ten plik obejmuje główne systemy prawne, główne gałęzie prawa i koncepcje kształtujące sposób działania systemów prawnych w praktyce.

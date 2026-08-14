@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin - مرجع نحو
 این سند یک مرجع نحو ساختار یافته و جامع برای Kotlin (2.0+) ارائه می دهد. این مرجع اصلی کاتلین را با تمرکز بر الگوهای نحوی جامع، ایمنی پوچ، کوروتین ها و اصطلاحات کاتلین تکمیل می کند.
 ---

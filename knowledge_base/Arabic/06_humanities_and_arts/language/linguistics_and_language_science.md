@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # اللغويات وعلوم اللغة
 علم اللغة هو الدراسة العلمية للغة - بنيتها ومعناها واستخدامها واكتسابها وتطورها. اللغة هي سمة مميزة للتواصل البشري: فهي منتجة بلا حدود (يمكن للمتحدثين إنشاء وفهم جمل لم يواجهوها من قبل)، وهي تنتقل ثقافيا (وهي مكتسبة وليست فطرية بحتة)، وهي تتطور باستمرار. إن فهم كيفية عمل اللغة أمر مهم لأي شخص يقوم ببناء تقنيات اللغة أو التدريس أو الترجمة أو العمل على التواصل بشكل أكثر فعالية.
 ---

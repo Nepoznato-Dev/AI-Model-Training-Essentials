@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure — مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا لـ Common Lisp وClojure. وهو يكمل مرجع Lisp/Clojure الرئيسي من خلال التركيز على تعبيرات S ووحدات الماكرو وهياكل البيانات المستمرة وأنماط البرمجة الوظيفية.
 ---

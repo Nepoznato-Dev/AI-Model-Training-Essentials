@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ferrugem
 Rust é uma linguagem de programação compilada e digitada estaticamente, lançada pela primeira vez em 2015, desenvolvida originalmente por Graydon Hoare na Mozilla. A promessa definidora do Rust é **segurança da memória sem coleta de lixo**. Ele consegue isso por meio de seu sistema de propriedade - um conjunto de regras aplicadas em tempo de compilação que elimina categorias inteiras de bugs (desreferências de ponteiro nulo, corridas de dados, buffer overflows, uso após liberação) enquanto produz código tão rápido quanto C ou C++.
 Rust foi eleita a linguagem de programação “mais amada” na Stack Overflow Developer Survey por vários anos consecutivos. Ele é cada vez mais usado em programação de sistemas, WebAssembly, ferramentas CLI, infraestrutura em nuvem e como substituto de C/C++ em contextos críticos de segurança. O kernel Linux agora aceita código Rust.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C — Руководство по экосистеме и инструментам
 В этом руководстве рассматриваются основные инструменты, библиотеки и инфраструктура экосистемы C.
 ---

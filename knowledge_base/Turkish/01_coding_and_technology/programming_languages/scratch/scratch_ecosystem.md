@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz Scratch ekosistemindeki temel araçları, uzantıları ve kaynakları kapsar.
 ---

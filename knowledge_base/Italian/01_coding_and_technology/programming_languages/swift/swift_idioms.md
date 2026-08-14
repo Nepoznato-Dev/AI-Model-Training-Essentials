@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Swift: modelli idiomatici e migliori pratiche
 Questa guida illustra i modelli idiomatici e le migliori pratiche per scrivere codice Swift pulito.
 ---

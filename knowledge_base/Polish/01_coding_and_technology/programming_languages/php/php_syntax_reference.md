@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni języka PHP (8.x). Uzupełnia główne odniesienia do PHP, koncentrując się na wyczerpujących wzorcach składni, nowoczesnych funkcjach PHP, programowaniu obiektowym i praktycznych idiomach.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript — Sözdizimi Referansı
 Bu belge, JavaScript için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, operatör tablolarına ve dahili mekanizmalara odaklanarak ana JavaScript referansını tamamlar.
 ---

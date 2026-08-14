@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nguyên tắc cơ bản về sinh học
 Sinh học là khoa học của sự sống. Tất cả các sinh vật sống đều có chung một số đặc điểm nhất định: chúng được tạo thành từ các tế bào, chúng sử dụng năng lượng, chúng phát triển, chúng phản ứng với môi trường, chúng sinh sản và chúng tiến hóa. Sinh học trải dài từ bộ máy phân tử bên trong một tế bào đến sự tương tác của toàn bộ hệ sinh thái và nó là nền tảng của y học, nông nghiệp, công nghệ sinh học và bảo tồn.
 ---

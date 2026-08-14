@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Arts du spectacle
 Les arts du spectacle – théâtre, cinéma, danse et musique – sont le lieu où l’art rencontre la présence vivante d’un public. Contrairement à une peinture sur un mur ou à un livre sur une étagère, la performance se déroule en temps réel, créant une expérience partagée entre artiste et spectateur qui est au cœur de la culture humaine depuis des milliers d'années.
 ---

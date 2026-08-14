@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Astronomy at Cosmology
 Ang Astronomy ay ang pag-aaral ng mga celestial na bagay — mga bituin, planeta, kalawakan, at lahat ng bagay na lampas sa kapaligiran ng Earth. Ang kosmolohiya ay ang pag-aaral ng sansinukob sa kabuuan: ang pinagmulan, istraktura, ebolusyon, at huling kapalaran. Sama-sama, tinutugunan nila ang ilan sa mga pinakapangunahing tanong na itinanong ng mga tao: Paano nagsimula ang uniberso? Gaano ito kalaki? tayo lang ba? Ano ang mangyayari dito sa huli?
 ---

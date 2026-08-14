@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — 생태계 및 툴링 가이드
 이 가이드에서는 Fortran 생태계의 필수 도구, 라이브러리 및 인프라를 다룹니다.
 ---

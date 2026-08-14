@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ویژوال بیسیک - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای ویژوال بیسیک (VB.NET) ارائه می دهد. این مرجع اصلی ویژوال بیسیک را با تمرکز بر الگوهای نحوی جامع، ویژگی‌های OOP، LINQ، async/await و اصطلاحات یکپارچه‌سازی دات‌نت تکمیل می‌کند.
 ---

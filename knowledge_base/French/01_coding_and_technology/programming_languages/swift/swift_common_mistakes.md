@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift – Erreurs courantes et anti-modèles
 Ce document répertorie les erreurs, pièges et anti-modèles les plus courants dans Swift. Chaque entrée montre l'approche incorrecte, explique pourquoi elle échoue et fournit la solution correcte.
 ---

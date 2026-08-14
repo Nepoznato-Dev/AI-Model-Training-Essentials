@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису современного C# (C# 11.10.12 в .NET 7/8). Он дополняет основной справочник по C#, уделяя особое внимание исчерпывающим синтаксическим шаблонам, LINQ, async/await, сопоставлению с образцом и современным функциям.
 ---

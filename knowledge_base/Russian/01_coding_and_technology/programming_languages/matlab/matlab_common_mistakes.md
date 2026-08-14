@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Распространенные ошибки и антишаблоны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в MATLAB с исправлениями.
 ---

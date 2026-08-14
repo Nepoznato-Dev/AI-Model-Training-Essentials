@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างครอบคลุมสำหรับ Perl (5.38+) ช่วยเสริมการอ้างอิง Perl หลักโดยเน้นที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน นิพจน์ทั่วไป การอ้างอิง และพลังการประมวลผลข้อความของ Perl
 ---

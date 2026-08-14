@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visualisation des données
 Un graphique bien conçu peut révéler des modèles que cachent les tableaux de nombres. Un texte mal conçu peut induire en erreur, confondre ou ennuyer. La visualisation des données consiste à transformer les données en histoires visuelles qui éclairent les décisions. Ce fichier couvre la sélection des graphiques, les principes de conception, les erreurs courantes et les outils qui rendent tout cela possible.
 ---

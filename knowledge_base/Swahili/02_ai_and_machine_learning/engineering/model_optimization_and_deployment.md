@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uboreshaji wa Mfano na Usambazaji
 Kufunza muundo mkubwa wa AI ni mafanikio makubwa, lakini kuusambaza kwa ufanisi ndipo juhudi nyingi za uhandisi zinahitajika. Muundo unaochukua sekunde 10 kujibu au unaohitaji GPU nane za A100 hauwezi kutumika kwa programu nyingi za ulimwengu halisi. Uboreshaji wa miundo ni mchakato wa kufanya miundo kuwa ndogo, haraka, na ya gharama nafuu zaidi - huku ikidumisha ubora unaokubalika. Faili hii inashughulikia ukadiriaji, upogoaji, kunereka, na zana za vitendo za kupeleka miundo katika uzalishaji.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Séries Temporais e Previsão
 Os dados de série temporal são quaisquer dados coletados ao longo do tempo: preços de ações, leituras de temperatura, tráfego do site, números de vendas, monitores de frequência cardíaca, consumo de energia. Previsão significa prever valores futuros com base em padrões passados. É uma das aplicações mais valiosas em termos práticos da ciência de dados — e uma das mais difíceis, porque o futuro é genuinamente incerto e as séries temporais do mundo real estão cheias de ruído, sazonalidade e quebras estruturais.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Araştırma Metodolojisi
 Araştırma metodolojisi, soruları araştırmaya, hipotezleri test etmeye ve güvenilir bilgi üretmeye yönelik sistematik bir yaklaşımdır. İster bilimsel deneyler, ister sosyal bilim anketleri, iş analizi veya akademik araştırma yürütüyor olun, seçtiğiniz metodoloji bulgularınızın güvenilir, tekrarlanabilir ve kullanışlı olup olmadığını belirler. İyi tasarlanmış bir çalışma güvenilir sonuçlar üretir; kötü tasarlanmış bir şey gürültüye ya da daha kötüsü, kendinden emin yanlış yanıtlara neden olur.
 ---

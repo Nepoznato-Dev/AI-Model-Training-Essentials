@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — 構文リファレンス
 このドキュメントは、Java の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、演算子テーブル、JVM、OOP、同時実行性の内部機構に焦点を当て、メインの Java リファレンスを補完します。
 ---

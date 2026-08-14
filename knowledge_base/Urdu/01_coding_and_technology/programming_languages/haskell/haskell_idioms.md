@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ہاسکل - محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ محاوراتی نمونوں اور صاف ستھرے، محاوراتی ہاسکل کوڈ کو لکھنے کے بہترین طریقوں کا احاطہ کرتا ہے۔
 ---

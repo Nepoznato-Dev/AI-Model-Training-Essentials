@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI Safety and Alignment
 
 AI safety is the study of how to build AI systems that do what we actually want them to do — and don't do things we don't want, even if those weren't explicitly ruled out. Alignment is the specific challenge of making AI systems' goals and behaviours match human intentions. As AI systems become more capable, these questions shift from academic curiosities to practical engineering requirements.

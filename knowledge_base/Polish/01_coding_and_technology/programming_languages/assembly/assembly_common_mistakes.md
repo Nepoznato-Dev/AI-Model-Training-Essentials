@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Język asemblera — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i anty-wzorce w asemblerze x86-64 z poprawkami.
 ---

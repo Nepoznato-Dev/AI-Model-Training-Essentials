@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Game Theory at Strategic Thinking
 Ang teorya ng laro ay ang matematikal na pag-aaral ng mga madiskarteng pakikipag-ugnayan — mga sitwasyon kung saan ang iyong kinalabasan ay nakasalalay hindi lamang sa kung ano ang iyong ginagawa, ngunit sa kung ano ang ginagawa ng iba. Nalalapat ito sa lahat ng dako: kumpetisyon sa negosyo, relasyon sa internasyonal, mga auction, negosasyon, evolutionary biology, at pang-araw-araw na desisyon tulad ng pagpili ng ruta sa trapiko. Ang pangunahing insight ay ang mga makatwirang aktor sa mga madiskarteng sitwasyon ay hindi lamang nag-o-optimize ng kanilang sariling diskarte - inaasahan nila kung ano ang gagawin ng iba, at ang iba ay ginagawa ang parehong.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 기술 용어집
 AI 모델, 하드웨어, 벤치마크, 핵심 개념을 다루는 참조 용어집
 현대 AI 및 컴퓨팅 환경에서

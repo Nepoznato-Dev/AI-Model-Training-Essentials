@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 클라우드 서비스 비교
 컴퓨팅, 스토리지, 데이터베이스, AI/ML, 네트워킹, 모니터링, 코드형 인프라 등 세 가지 주요 클라우드 제공업체(AWS, Azure, Google Cloud)를 나란히 비교합니다. 사용할 플랫폼을 결정하거나 한 클라우드에서 다른 클라우드로 서비스를 매핑하는 설계자에게 유용합니다.
 ---

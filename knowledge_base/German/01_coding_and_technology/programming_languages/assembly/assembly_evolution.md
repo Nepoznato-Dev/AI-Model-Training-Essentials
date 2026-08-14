@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assemblersprache – Versionsgeschichte und Entwicklung
 ## Zeitleiste
 | Ära | Jahr | Schlüsselthema |

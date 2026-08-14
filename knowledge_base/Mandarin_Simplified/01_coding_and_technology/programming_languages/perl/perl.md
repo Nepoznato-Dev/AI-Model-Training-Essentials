@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 珀尔
 Perl 由 Larry Wall 于 1987 年创建，作为一种实用的文本处理工具。它成为早期 Web 开发（CGI 脚本）、系统管理、生物信息学和网络编程的支柱。 Perl 的哲学是“有不止一种方法可以做到这一点”（TMTOWTDI）——该语言为每个问题提供了多种方法，注重表现力而不是统一性。
 Perl 对现代编程的影响是巨大的，但往往是无形的：受 Perl 模式匹配影响的正则表达式现在已成为 Python、JavaScript、Java 和大多数其他语言的标准。 CPAN（综合 Perl 存档网络）是最早的软件包存储库之一，并启发了后来的系统，例如 Python 的 PyPI 和 Node 的 npm。

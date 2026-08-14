@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Apprendimento per rinforzo
 L'apprendimento per rinforzo (RL) è il modo in cui le macchine imparano a prendere sequenze di decisioni attraverso tentativi ed errori. A differenza dell’apprendimento supervisionato, in cui viene fornita la risposta corretta per ogni esempio, RL fornisce all’agente solo un segnale di ricompensa e l’agente deve capire quali azioni portano ai migliori risultati nel tempo. È l'approccio alla base di AlphaGo, del controllo robotico, dell'intelligenza artificiale di gioco e, in modo critico, dell'RLHF, la tecnica utilizzata per allineare i moderni modelli linguistici di grandi dimensioni con le preferenze umane.
 ---

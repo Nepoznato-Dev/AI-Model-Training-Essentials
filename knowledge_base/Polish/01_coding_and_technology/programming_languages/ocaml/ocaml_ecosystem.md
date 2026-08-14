@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku opisano podstawowe narzędzia, frameworki i infrastrukturę w ekosystemie OCaml.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python
 
 Python is a high-level, interpreted, general-purpose programming language created by Guido van Rossum and first released in 1991. It prioritises code readability through significant indentation and a clean syntax that reads close to plain English. Python is dynamically typed, garbage-collected, and supports multiple programming paradigms including procedural, object-oriented, and functional programming.

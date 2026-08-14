@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — エコシステムとツールのガイド
 このガイドでは、Python エコシステムの重要なツール、フレームワーク、インフラストラクチャについて説明します。
 ---

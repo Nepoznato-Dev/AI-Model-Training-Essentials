@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 网络安全基础知识
 安全性是一门学科，必须从一开始就集成到系统的每一层，而不是事后添加。无论是构建 Web 应用程序、管理基础设施还是发布 API，了解威胁形势和防御基础知识都是至关重要的。
 ---

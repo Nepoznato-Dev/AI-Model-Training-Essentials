@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # العمليات العشوائية
 **العملية العشوائية** هي مجموعة من المتغيرات العشوائية المفهرسة حسب الزمان (أو المكان). بينما تدرس نظرية الاحتمالات الأحداث العشوائية الفردية، تدرس العمليات العشوائية كيفية تطور العشوائية بمرور الوقت. إنهم يصممون أسعار الأسهم، وأطوال قوائم الانتظار، وانتشار الأمراض، وتوليد اللغة، وديناميكيات التدريب لنماذج التعلم الآلي.
 ---

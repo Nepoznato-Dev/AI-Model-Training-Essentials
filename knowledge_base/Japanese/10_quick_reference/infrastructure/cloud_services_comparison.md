@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # クラウドサービスの比較
 3 つの主要なクラウド プロバイダー (AWS、Azure、Google Cloud) を、コンピューティング、ストレージ、データベース、AI/ML、ネットワーキング、モニタリング、コードとしてのインフラストラクチャの面で並べて比較します。アーキテクトがどのプラットフォームを使用するかを決定する場合、またはあるクラウドから別のクラウドにサービスをマッピングする場合に役立ちます。
 ---

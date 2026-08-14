@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nadharia ya Grafu
 **grafu** ni muundo wa hisabati unaojumuisha vipeo (nodi) zilizounganishwa na kingo (viungo). Mahusiano ya kielelezo cha grafu: mitandao ya kijamii, ramani za barabara, mitandao ya neva, tegemezi, njia za mawasiliano. Nadharia ya grafu - utafiti wa miundo hii - hutoa algoriti na nadharia ambazo ni muhimu kwa sayansi ya kompyuta, utafiti wa uendeshaji na sayansi ya data.
 ---

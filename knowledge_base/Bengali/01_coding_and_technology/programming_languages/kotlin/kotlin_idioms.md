@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # কোটলিন — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অনুশীলন
 এই নির্দেশিকাটি পরিচ্ছন্ন, ইডিওম্যাটিক কোটলিন কোড লেখার জন্য বাগধারার নিদর্শন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

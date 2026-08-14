@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mecânica Quântica
 A mecânica quântica é a teoria da física nas menores escalas – átomos, elétrons, fótons e as partículas fundamentais da natureza. Substitui o mundo determinístico da mecânica clássica por probabilidades, superposições e emaranhados. Apesar de sua natureza contra-intuitiva, a mecânica quântica é a teoria testada com mais precisão em toda a ciência. Hoje, seus princípios estão se tornando diretamente relevantes para a computação por meio de computadores quânticos, que prometem resolver determinados problemas de forma exponencialmente mais rápida do que as máquinas clássicas.
 ---

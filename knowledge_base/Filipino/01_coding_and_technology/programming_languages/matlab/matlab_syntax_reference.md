@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng isang komprehensibo, structured syntax reference para sa MATLAB (R2024+). Kinukumpleto nito ang pangunahing sanggunian ng MATLAB sa pamamagitan ng pagtutuon sa mga kumpletong pattern ng syntax, mga operasyon ng matrix, pag-plot, at mga pang-agham na idyoma sa computing.
 ---

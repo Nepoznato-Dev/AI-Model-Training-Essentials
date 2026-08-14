@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Literasi Media dan Evaluasi Informasi
 Kita hidup di dunia yang jenuh dengan informasi. Setiap hari, rata-rata orang dihadapkan pada ribuan pesan media — artikel berita, postingan media sosial, iklan, pidato politik, konten influencer, teks yang dihasilkan AI. Sebagian besar baik-baik saja. Beberapa di antaranya menyesatkan. Sejumlah kecil sengaja dibuat palsu. Literasi media adalah keterampilan menavigasi lanskap ini – bukan dengan memercayai segalanya, bukan dengan tidak memercayai apa pun, namun dengan mengembangkan pemahaman yang terkalibrasi mengenai apa yang dapat diandalkan dan apa yang tidak.
 ---

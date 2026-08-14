@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Süratli
 Swift, Apple (Chris Lattner liderliğinde) tarafından geliştirilen ve ilk olarak 2014'te piyasaya sürülen modern, derlenmiş bir programlama dilidir. Apple platformu geliştirme (iOS, macOS, watchOS, tvOS, VisionOS) için birincil dil olarak Objective-C'nin yerini almak üzere tasarlanmıştır. Swift, derlenmiş dillerin performansını betik dillerinin ifade gücüyle birleştirir ve özellikle boş değerler, bellek yönetimi ve tür hataları konusunda güvenliği vurgular.
 Apple platformlarının ötesinde Swift, sunucu tarafı geliştirme (Vapor, Hummingbird), platformlar arası uygulamalar ve hatta makine öğrenimi (Apple'ın Create ML'si) için giderek daha fazla kullanılıyor. Swift'in Sunucuda kullanıma sunulması ve platformlar arası desteğiyle Swift, bir "Apple dili" olmaktan çok daha fazlası haline geliyor.

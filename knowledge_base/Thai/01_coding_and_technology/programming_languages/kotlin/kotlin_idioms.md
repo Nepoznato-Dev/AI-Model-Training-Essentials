@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนและแนวปฏิบัติที่ดีที่สุดในการเขียนโค้ด Kotlin ที่มีสำนวนที่ชัดเจน
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Diseño y arquitectura de API
 Una API (interfaz de programación de aplicaciones) es la forma en que los componentes de software se comunican entre sí. Una API bien diseñada es intuitiva, consistente y es un placer trabajar con ella. Uno mal diseñado provoca confusión, errores y frustración. Este archivo cubre los principios, patrones y prácticas para crear API que los desarrolladores realmente desean utilizar.
 ---

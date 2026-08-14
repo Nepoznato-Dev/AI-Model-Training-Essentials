@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جاوا اسکریپت - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، چارچوب‌ها و زیرساخت‌های ضروری در اکوسیستم جاوا اسکریپت را پوشش می‌دهد.
 ---

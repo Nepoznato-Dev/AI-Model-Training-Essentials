@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها برای نوشتن کد TypeScript تمیز و ایمن را پوشش می دهد.
 ---

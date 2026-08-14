@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุดในการเขียนโค้ด PHP (8.3+) ที่ทันสมัยและสะอาดตา
 ---

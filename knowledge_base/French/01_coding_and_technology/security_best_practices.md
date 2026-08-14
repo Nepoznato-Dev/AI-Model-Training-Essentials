@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Best Practices"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Meilleures pratiques de sécurité
 Un guide pratique pour sécuriser les applications, l'infrastructure et les données, du développement à la production.
 ---

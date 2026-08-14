@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ویژوال بیسیک - اشتباهات رایج و ضد الگوها
 این سند رایج ترین اشتباهات، تله ها و ضد الگوها در ویژوال بیسیک (VB.NET) را با اصلاحات فهرست می کند.
 ---

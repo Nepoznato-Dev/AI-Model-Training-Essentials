@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جوابدہ اور کنفیگریشن مینجمنٹ
 جوابدہ ایک ایجنٹ لیس کنفیگریشن مینجمنٹ اور آٹومیشن ٹول ہے۔ یہ سرورز سے منسلک ہونے اور YAML پلے بکس میں بیان کردہ کاموں کو انجام دینے کے لیے SSH (یا WinRM for Windows) کا استعمال کرتا ہے۔ ان ٹولز کے برعکس جن کے لیے ہر مشین پر ایجنٹوں کو انسٹال کرنے کی ضرورت ہوتی ہے، Ansible پش بیسڈ ہے — آپ کنٹرول نوڈ سے کمانڈ چلاتے ہیں۔ یہ سرور کی فراہمی، ایپلیکیشن کی تعیناتی، کنفیگریشن مینجمنٹ، اور ایڈہاک ٹاسک ایگزیکیوشن کے لیے استعمال ہوتا ہے۔
 ---

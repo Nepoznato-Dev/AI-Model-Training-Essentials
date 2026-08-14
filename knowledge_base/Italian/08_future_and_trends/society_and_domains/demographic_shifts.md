@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cambiamenti demografici
 ## Panoramica
 La demografia è il destino – o almeno fa fortemente rima con esso. La popolazione mondiale sta invecchiando rapidamente, migrando secondo nuovi modelli, raggruppandosi in città a ritmi senza precedenti e dividendosi lungo linee generazionali che modellano tutto, dal comportamento elettorale alle abitudini di consumo. Questi cambiamenti si svilupperanno nel corso di decenni, ma i loro effetti sono già visibili. Ecco le quattro grandi tendenze e cosa significano.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 新興テクノロジー
 ＃＃ 概要
 特定のテクノロジーは、既存の機能を段階的に改善するのではなく、まったく新しいカテゴリの機能を作成します。量子コンピューティングは、古典的なマシンでは数千年かかるであろう問題を解決することを目的としています。核融合エネルギーは、実質的に無限のクリーンパワーの可能性を提供します。ブレイン コンピューター インターフェイスは心と機械の橋渡しをします。合成生物学は生物学的コードの書き換えを可能にします。次のセクションでは、これらの各フロンティアが現在どこにあるのか、また現在のトレンドが示す方向性について説明します。

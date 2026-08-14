@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust — 惯用模式和最佳实践
 本指南涵盖了编写干净、安全的 Rust 代码的惯用模式和最佳实践。
 ---

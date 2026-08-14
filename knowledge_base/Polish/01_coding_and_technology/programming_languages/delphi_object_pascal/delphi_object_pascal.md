@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi/Object Pascal
 Delphi to obiektowy język programowania oparty na Pascalu, pierwotnie opracowany przez firmę Borland (później Embarcadero, obecnie Idera). Wydany po raz pierwszy w 1995 roku jako „Delphi 1”, został zaprojektowany do szybkiego tworzenia aplikacji (RAD) dla aplikacji komputerowych Windows. Język ten jest formalnie znany jako Object Pascal, a środowisko Delphi IDE zapewnia wizualnego projektanta formularzy, zintegrowane narzędzia baz danych i potężny kompilator.
 Delphi było jednym z najpopularniejszych narzędzi programistycznych dla systemu Windows pod koniec lat 90. i na początku XXI wieku. Chociaż jego popularność znacznie spadła, utrzymuje dedykowaną bazę użytkowników, szczególnie w przypadku aplikacji komputerowych dla przedsiębiorstw, interfejsów baz danych i konserwacji starszych systemów. Modern Delphi (11/12) obsługuje programowanie międzyplatformowe dla systemów Windows, macOS, iOS i Android za pośrednictwem platformy FireMonkey (FMX).

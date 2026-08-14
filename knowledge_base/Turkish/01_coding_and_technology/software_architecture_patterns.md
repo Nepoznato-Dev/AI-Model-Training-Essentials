@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yazılım Mimarisi Kalıpları
 Mimarlık, bir sistemin nasıl organize edildiğine, hangi bileşenlere sahip olduğuna, bunların nasıl iletişim kurduğuna ve sorumlulukların nerede olduğuna ilişkin yapısal kararlar dizisidir. İyi mimari, sistemin anlaşılmasını, değiştirilmesini ve ölçeklendirilmesini kolaylaştırır. Kötü mimari her değişikliği bir mücadeleye dönüştürür. Bu dosya ana kalıpları, her birinin ne zaman kullanılacağını ve ilgili ödünleşimleri kapsar.
 ---

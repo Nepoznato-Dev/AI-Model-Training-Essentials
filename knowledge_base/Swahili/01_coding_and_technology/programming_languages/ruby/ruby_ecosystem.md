@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby - Mfumo wa Ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, mifumo, na miundombinu katika mfumo ikolojia wa Ruby.
 ---

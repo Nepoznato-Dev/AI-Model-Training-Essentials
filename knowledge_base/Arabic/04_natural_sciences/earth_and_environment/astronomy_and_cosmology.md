@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # علم الفلك وعلم الكونيات
 علم الفلك هو دراسة الأجرام السماوية – النجوم، والكواكب، والمجرات، وكل شيء خارج الغلاف الجوي للأرض. علم الكونيات هو دراسة الكون ككل: أصله، وبنيته، وتطوره، ومصيره النهائي. ويتناولون معًا بعض الأسئلة الأساسية التي طرحها البشر على الإطلاق: كيف بدأ الكون؟ كم هو كبير؟ هل نحن وحدنا؟ ماذا سيحدث له في النهاية؟
 ---

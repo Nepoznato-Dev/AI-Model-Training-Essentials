@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nguyên tắc cơ bản về thị giác máy tính
 Thị giác máy tính mang lại cho máy móc khả năng diễn giải và hiểu thông tin hình ảnh từ thế giới - hình ảnh, video và dữ liệu 3D. Nó hỗ trợ mọi thứ, từ nhận dạng khuôn mặt trên điện thoại đến ô tô tự lái, phân tích hình ảnh y tế và kiểm soát chất lượng công nghiệp. Tệp này bao gồm các khái niệm, kiến ​​trúc và kỹ thuật cốt lõi.
 ---

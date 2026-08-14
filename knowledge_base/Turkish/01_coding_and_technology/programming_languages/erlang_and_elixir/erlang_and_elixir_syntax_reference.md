@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang ve İksir — Sözdizimi Referansı
 Bu belge Erlang ve Elixir için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Model eşleştirme, süreç yönetimi, OTP davranışları ve hataya dayanıklı sistem modellerine odaklanarak ana referansı tamamlar.
 ---

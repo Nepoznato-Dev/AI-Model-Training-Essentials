@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell 和 PowerShell — 慣用模式和最佳實踐
 本指南涵蓋了 Bash/Zsh 和 PowerShell 腳本編寫的慣用模式。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp i Clojure — odwołanie do składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni Common Lisp i Clojure. Uzupełnia główne odniesienia do Lisp/Clojure, koncentrując się na wyrażeniach S, makrach, trwałych strukturach danych i wzorcach programowania funkcjonalnego.
 ---

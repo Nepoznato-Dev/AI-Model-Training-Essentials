@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # พื้นฐานชีววิทยา
 ชีววิทยาเป็นศาสตร์แห่งชีวิต สิ่งมีชีวิตทุกชนิดมีคุณสมบัติบางอย่างร่วมกัน ได้แก่ พวกมันสร้างจากเซลล์ ใช้พลังงาน เติบโต ตอบสนองต่อสภาพแวดล้อม สืบพันธุ์ และพัฒนา ชีววิทยาครอบคลุมตั้งแต่กลไกระดับโมเลกุลภายในเซลล์เดียวไปจนถึงปฏิสัมพันธ์ของระบบนิเวศทั้งหมด และเป็นรากฐานของการแพทย์ เกษตรกรรม เทคโนโลยีชีวภาพ และการอนุรักษ์
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — Cheat Sheet
 ## Mga Pangunahing Kaalaman
 ```kotlin

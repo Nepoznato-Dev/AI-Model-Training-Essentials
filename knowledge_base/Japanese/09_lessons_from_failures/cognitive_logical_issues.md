@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 認知バイアスと論理的誤り
 この文書には、人間の意思決定と AI システムの出力の両方に影響を与える認知バイアス、論理的誤り、推論エラーがまとめられています。
 ---

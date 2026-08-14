@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch — Sözdizimi Referansı
 Bu belge Scratch 3.0 için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı blok kategorilerine, olaya dayalı kalıplara, hareketli grafik yönetimine, klonlamaya ve yaratıcı kodlama tekniklerine odaklanarak ana Scratch referansını tamamlar.
 ---

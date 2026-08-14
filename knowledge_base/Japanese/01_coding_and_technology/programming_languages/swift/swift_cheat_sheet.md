@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Swift — チートシート
 ## 基本
 ```swift

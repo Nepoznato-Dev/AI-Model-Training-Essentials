@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python — Referência de sintaxe
 Este documento fornece uma referência de sintaxe estruturada e abrangente para Python. Ele complementa a referência principal do Python, concentrando-se em padrões de sintaxe exaustivos, tabelas de operadores e mecânica interna.
 ---

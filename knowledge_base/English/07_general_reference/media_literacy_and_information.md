@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Media Literacy and Information Evaluation
 
 We live in an information-saturated world. Every day, the average person is exposed to thousands of media messages — news articles, social media posts, advertisements, political speeches, influencer content, AI-generated text. Most of it is fine. Some of it is misleading. A small amount is deliberately false. Media literacy is the skill of navigating this landscape — not by trusting everything, not by trusting nothing, but by developing a calibrated sense of what is reliable and what is not.

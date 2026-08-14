@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه‌ها برای نوشتن کد Lua تمیز و اصطلاحی را پوشش می‌دهد.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ツールの使用法
 ## Git — バージョン管理
 Git は分散バージョン管理システムです。すべての開発者は、ローカル マシン上にリポジトリ履歴の完全なコピーを持っています。

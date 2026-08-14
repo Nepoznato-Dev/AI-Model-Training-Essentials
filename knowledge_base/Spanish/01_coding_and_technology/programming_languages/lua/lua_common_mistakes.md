@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en Lua con correcciones.
 ---

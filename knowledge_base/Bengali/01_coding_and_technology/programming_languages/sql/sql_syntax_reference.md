@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL - সিনট্যাক্স রেফারেন্স
 এই নথিটি SQL (PostgreSQL/MySQL/SQLite উপভাষা পার্থক্যের নোট সহ ANSI SQL) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ ক্যোয়ারী প্যাটার্ন, উইন্ডো ফাংশন, CTE, এবং ডাটাবেস ডিজাইনের উপর ফোকাস করে মূল এসকিউএল রেফারেন্সের পরিপূরক।
 ---

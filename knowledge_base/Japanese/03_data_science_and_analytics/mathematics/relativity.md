@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 相対性理論
 アインシュタインの相対性理論は、空間、時間、重力についての私たちの理解に革命をもたらしました。 **特殊相対性理論** (1905 年) は、空間と時間が分離しているのではなく、時空と呼ばれる単一の織物に織り込まれていること、および光の速度がすべての観測者にとって同じであることを示しました。 **一般相対性理論** (1915 年) は、重力を力としてではなく、質量とエネルギーによって引き起こされる時空の湾曲として再考しました。これらの理論は、GPS ナビゲーション、粒子加速器、ブラック ホールと宇宙の進化についての理解を支えています。
 ---

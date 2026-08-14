@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rekayasa Cepat
 Rekayasa cepat adalah praktik merancang, menyempurnakan, dan mengoptimalkan masukan masukan untuk mendapatkan keluaran terbaik dari model bahasa. Ini adalah seni dan sains, dan merupakan antarmuka utama untuk mengendalikan perilaku LLM tanpa penyesuaian.
 ---

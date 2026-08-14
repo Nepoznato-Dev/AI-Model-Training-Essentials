@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تايب سكريبت
 TypeScript عبارة عن مجموعة شاملة من JavaScript مكتوبة بشكل ثابت تم تطويرها بواسطة Microsoft (بقيادة Anders Hejlsberg) وتم إصدارها لأول مرة في عام 2012. وهي تضيف تعليقات توضيحية اختيارية للنوع، وواجهات، وأدوية عامة، وميزات نظام الكتابة المتقدمة إلى JavaScript - ثم يتم تجميعها إلى JavaScript عادي يتم تشغيله في أي مكان يتم تشغيل JavaScript فيه. TypeScript ليست لغة منفصلة أو وقت تشغيل منفصل؛ إنها JavaScript مع مدقق النوع.
 أصبح TypeScript هو المعيار لتطوير JavaScript على نطاق واسع. تتم كتابة React وAngular وVS Code وDeno ومعظم مشاريع JavaScript مفتوحة المصدر باستخدام TypeScript. إذا كنت تبدأ مشروع JavaScript جديدًا بأي حجم كبير، فإن TypeScript هو الخيار الافتراضي الموصى به.

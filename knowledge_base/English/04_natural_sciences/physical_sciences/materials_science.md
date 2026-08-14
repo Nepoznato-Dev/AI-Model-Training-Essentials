@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Materials Science
 
 Materials science is the study of how the structure of a material (at atomic, microscopic, and macroscopic scales) determines its properties, and how processing methods can be used to control that structure to achieve desired performance. It's the field that answers questions like: why is steel strong but heavy? Why is glass transparent but brittle? How can we make batteries that charge faster? What materials will survive the conditions on Mars? Every piece of technology you've ever used is made of materials, and advances in technology almost always require advances in materials.

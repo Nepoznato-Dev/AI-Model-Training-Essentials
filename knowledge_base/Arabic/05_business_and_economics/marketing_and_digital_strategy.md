@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # التسويق والاستراتيجية الرقمية
 التسويق هو الطريقة التي تقوم بها الشركات بإنشاء القيمة وتواصلها وتقديمها للعملاء. وهو يشمل النظام الكامل لفهم احتياجات العملاء، وتحديد موضع المنتج لتلبية تلك الاحتياجات، وبناء العلاقات التي تحول المشترين إلى دعاة. لقد أحدثت الثورة الرقمية تحولاً في أدوات التسويق وقنواته وسرعته، في حين ظلت الأساسيات ثابتة.
 ---

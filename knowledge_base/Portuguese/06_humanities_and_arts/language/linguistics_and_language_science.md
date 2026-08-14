@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lingüística e Ciência da Linguagem
 Lingüística é o estudo científico da linguagem – sua estrutura, significado, uso, aquisição e evolução. A linguagem é uma característica definidora da comunicação humana: é infinitamente produtiva (os falantes podem criar e compreender frases que nunca encontraram antes), é transmitida culturalmente (é aprendida e não puramente inata) e está em constante evolução. Compreender como a linguagem funciona é relevante para qualquer pessoa que desenvolva tecnologias linguísticas, ensine, traduza ou trabalhe para se comunicar de forma mais eficaz.
 ---

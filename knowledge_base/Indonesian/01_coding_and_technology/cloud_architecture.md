@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Arsitektur Awan
 Komputasi awan telah mengubah secara mendasar cara organisasi membangun, menerapkan, dan menskalakan perangkat lunak. Daripada membeli dan memelihara server fisik, Anda dapat menyediakan sumber daya komputasi sesuai permintaan, membayar sesuai penggunaan, dan melakukan penskalaan secara global dalam hitungan menit. File ini mencakup konsep inti, pola arsitektur, layanan, dan praktik terbaik yang perlu Anda ketahui.
 ---

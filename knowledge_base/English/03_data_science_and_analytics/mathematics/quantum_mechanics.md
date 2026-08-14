@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Quantum Mechanics
 
 Quantum mechanics is the theory of physics at the smallest scales — atoms, electrons, photons, and the fundamental particles of nature. It replaces the deterministic world of classical mechanics with probabilities, superpositions, and entanglement. Despite its counterintuitive nature, quantum mechanics is the most precisely tested theory in all of science. Today, its principles are becoming directly relevant to computing through quantum computers, which promise to solve certain problems exponentially faster than classical machines.

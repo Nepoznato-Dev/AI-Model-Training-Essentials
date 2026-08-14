@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #คอตลิน
 Kotlin เป็นภาษาโปรแกรมคอมไพล์ที่พิมพ์คงที่ซึ่งพัฒนาโดย JetBrains และเปิดตัวครั้งแรกในปี 2554 (1.0 ในปี 2559) มันทำงานบน Java Virtual Machine (JVM) และสามารถทำงานร่วมกับ Java ได้อย่างสมบูรณ์ ซึ่งหมายความว่าคุณสามารถใช้ไลบรารี Java ใดก็ได้จาก Kotlin และเรียกใช้โค้ด Kotlin จาก Java โดยไม่ต้องใช้ wrappers ในปี 2560 Google ได้ประกาศให้ Kotlin เป็นภาษาที่ต้องการสำหรับการพัฒนา Android และตั้งแต่นั้นมาก็กลายเป็นภาษา Android ที่โดดเด่น
 Kotlin ได้รับการออกแบบมาเพื่อแก้ไขปัญหาของ Java: การใช้คำฟุ่มเฟือย ข้อยกเว้นของพอยน์เตอร์ null และฟีเจอร์สมัยใหม่ที่ขาดหายไป ผลลัพธ์ที่ได้คือภาษาที่ให้ความรู้สึกเหมือนเป็น Java ที่ทันสมัย ​​— กระชับ ปลอดภัย และแสดงออก — ในขณะที่ยังคงความเข้ากันได้อย่างสมบูรณ์กับระบบนิเวศ Java ขนาดใหญ่

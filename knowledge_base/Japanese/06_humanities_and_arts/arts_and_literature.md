@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 芸術と文学
 本、絵画、音楽、映画など、人間の創造的な表現は、文明の最も永続的な記録の 1 つです。主要なジャンル、動き、人物像を理解することで、私たちが今日住んでいる世界の背景がわかります。すべての小説、すべての交響曲、すべての映画は、以前のものと対話しています。
 ---

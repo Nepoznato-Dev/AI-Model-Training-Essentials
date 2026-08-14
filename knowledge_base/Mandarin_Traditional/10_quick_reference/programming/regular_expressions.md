@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 正規表示式備忘單
 正規表示式 (regex) 是符合文字的模式。它們無所不在——搜尋和替換、輸入驗證、日誌解析、資料提取等等。這是一本實用參考書，不是教科書。
 ---

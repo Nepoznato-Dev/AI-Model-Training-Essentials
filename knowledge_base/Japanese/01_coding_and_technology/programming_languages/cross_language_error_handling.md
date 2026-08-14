@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 言語間の比較 — エラー処理
 ## エラー処理モデルの概要
 |モデル |言語 |メカニズム |

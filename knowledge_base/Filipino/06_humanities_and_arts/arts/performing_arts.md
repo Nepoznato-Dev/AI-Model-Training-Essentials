@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sining sa Pagtatanghal
 Ang gumaganap na sining — teatro, pelikula, sayaw, at pagtatanghal ng musika — ay kung saan natutugunan ng sining ang buhay na presensya ng isang madla. Hindi tulad ng isang pagpipinta sa dingding o isang libro sa isang istante, ang pagtatanghal ay nagbubukas sa real time, na lumilikha ng magkabahaging karanasan sa pagitan ng artist at manonood na naging sentro ng kultura ng tao sa loob ng libu-libong taon.
 ---

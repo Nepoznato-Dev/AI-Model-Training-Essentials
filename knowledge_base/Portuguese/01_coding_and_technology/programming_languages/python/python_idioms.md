@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python – Padrões Idiomáticos e Melhores Práticas
 Este guia cobre padrões idiomáticos e práticas recomendadas para escrever código Python limpo.
 ---

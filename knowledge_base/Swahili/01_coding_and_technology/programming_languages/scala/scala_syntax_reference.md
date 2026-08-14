@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yaliyopangwa ya sintaksia ya Scala (3.x yenye madokezo kuhusu tofauti za 2.x). Inakamilisha marejeleo kuu ya Scala kwa kuzingatia mifumo kamili ya sintaksia, mfumo wa aina, miundo tendaji ya programu, na nahau za Scala.
 ---

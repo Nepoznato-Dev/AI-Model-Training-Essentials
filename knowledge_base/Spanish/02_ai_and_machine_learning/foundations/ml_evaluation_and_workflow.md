@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Evaluación y flujo de trabajo del aprendizaje automático
 Una guía práctica para el ciclo de vida del aprendizaje automático, desde la formulación de problemas hasta el monitoreo de la producción, con un enfoque en métricas, validación y depuración.
 ---

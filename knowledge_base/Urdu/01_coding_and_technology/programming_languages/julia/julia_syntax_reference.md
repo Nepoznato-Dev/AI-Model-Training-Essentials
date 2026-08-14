@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جولیا — نحوی حوالہ
 یہ دستاویز جولیا (1.x) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، متعدد ڈسپیچ، میکروز، میٹاپروگرامنگ، اور سائنسی کمپیوٹنگ پر توجہ مرکوز کرکے مرکزی جولیا حوالہ کی تکمیل کرتا ہے۔
 ---

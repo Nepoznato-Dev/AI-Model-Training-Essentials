@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, modern JavaScript (ES2024+) kodu yazmaya yönelik deyimsel kalıpları ve en iyi uygulamaları kapsar.
 ---

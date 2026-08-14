@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 神経科学
 神経科学は、脳、脊髄、およびそれらを身体に接続するすべての神経などの神経系の研究です。それは、分子や遺伝子から、個々のニューロンやシナプス、回路や脳領域、行動、認知、意識に至るまで、複数のレベルに及びます。脳は既知の宇宙で最も複雑な構造であり、数兆のシナプスで接続された約 860 億個のニューロンを含み、その仕組みを理解することは科学の大きな課題の 1 つです。
 ---

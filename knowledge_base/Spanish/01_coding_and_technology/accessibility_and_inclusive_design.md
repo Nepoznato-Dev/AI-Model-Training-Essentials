@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Accesibilidad y Diseño Inclusivo
 La accesibilidad (a menudo abreviada como a11y) es la práctica de hacer que el software sea utilizable por todos, incluidas las personas con discapacidades visuales, auditivas, motoras, cognitivas y neurológicas. Es un requisito legal en muchas jurisdicciones y una práctica de ingeniería estándar. El software accesible es mejor software para todos, porque las decisiones de diseño que apoyan a los usuarios discapacitados (estructura clara, navegación por teclado, contraste suficiente, texto legible) mejoran la experiencia para todos los usuarios.
 ---

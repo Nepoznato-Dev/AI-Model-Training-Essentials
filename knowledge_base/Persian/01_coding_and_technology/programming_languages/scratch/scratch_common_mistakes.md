@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # خراش - اشتباهات رایج و ضد الگوها
 این سند رایج ترین اشتباهات و تله های موجود در Scratch را با اصلاحات فهرست می کند.
 ---

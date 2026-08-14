@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bảng cheat Docker và Kubernetes
 Tài liệu tham khảo thực tế về việc chứa các ứng dụng bằng Docker và sắp xếp chúng với Kubernetes. Giả sử sự quen thuộc cơ bản với dòng lệnh.
 ---

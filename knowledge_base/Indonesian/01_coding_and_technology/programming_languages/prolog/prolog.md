@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #prolog
 Prolog (Pemrograman dalam Logika) adalah bahasa pemrograman logika yang dibuat pada tahun 1972 oleh Alain Colmerauer dan Philippe Roussel. Tidak seperti bahasa lain dalam daftar ini, Prolog tidak memberi tahu komputer *bagaimana* memecahkan suatu masalah — Anda menyatakan *apa* yang benar (fakta dan aturan), dan mesin inferensi Prolog mencari jawabannya melalui deduksi logis.
 Prolog adalah bahasa pilihan untuk sistem pakar, pemrosesan bahasa alami, dan penelitian AI pada tahun 1980an. Ini mendukung proyek Sistem Komputer Generasi Kelima Jepang dan digunakan di Watson IBM untuk pemahaman bahasa alami. Saat ini, Prolog digunakan dalam penyelesaian kendala, penjadwalan, inferensi tipe, penalaran hukum, dan masalah apa pun yang secara alami dinyatakan sebagai hubungan logis.

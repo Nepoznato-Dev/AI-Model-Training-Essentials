@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kognitive Vorurteile und logische Irrtümer
 Dieses Dokument konsolidiert kognitive Vorurteile, logische Irrtümer und Denkfehler, die sich sowohl auf die menschliche Entscheidungsfindung als auch auf die Ergebnisse von KI-Systemen auswirken.
 ---

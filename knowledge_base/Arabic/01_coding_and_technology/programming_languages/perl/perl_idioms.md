@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # بيرل - الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية وأفضل الممارسات لكتابة كود Perl (5.38+) النظيف والحديث.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Spieltheorie und strategisches Denken
 Die Spieltheorie ist die mathematische Untersuchung strategischer Interaktionen – Situationen, in denen Ihr Ergebnis nicht nur davon abhängt, was Sie tun, sondern auch davon, was andere tun. Es gilt überall: geschäftlicher Wettbewerb, internationale Beziehungen, Auktionen, Verhandlungen, Evolutionsbiologie und alltägliche Entscheidungen wie die Wahl einer Route durch den Verkehr. Die Kernerkenntnis ist, dass rationale Akteure in strategischen Situationen nicht nur ihre eigene Strategie optimieren – sie antizipieren, was andere tun werden, und andere tun dasselbe.
 ---

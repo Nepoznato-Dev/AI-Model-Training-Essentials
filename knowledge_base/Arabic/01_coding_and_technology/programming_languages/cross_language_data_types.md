@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # المقارنة بين اللغات – أنواع البيانات وبنيتها
 ## الأنواع البدائية
 | اكتب | بايثون | جافا سكريبت | الصدأ | اذهب | جافا | ج | سي++ | ج # |

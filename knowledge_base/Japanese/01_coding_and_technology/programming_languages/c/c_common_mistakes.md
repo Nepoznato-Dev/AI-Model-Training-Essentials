@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — よくある間違いとアンチパターン
 このドキュメントでは、C における最も一般的な間違い、罠、およびアンチパターンをカタログ化しています。各エントリは、間違ったアプローチを示し、失敗する理由を説明し、正しい解決策を提供します。 C では完全な制御が可能です。これは、メモリの安全性、境界チェック、未定義の動作に対する全責任を意味します。
 ---

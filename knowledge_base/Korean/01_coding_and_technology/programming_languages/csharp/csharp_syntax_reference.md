@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — 구문 참조
 이 문서는 최신 C#(.NET 7/8의 C# 10/11/12)에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 구문 패턴, LINQ, 비동기/대기, 패턴 일치 및 최신 기능에 중점을 두어 기본 C# 참조를 보완합니다.
 ---

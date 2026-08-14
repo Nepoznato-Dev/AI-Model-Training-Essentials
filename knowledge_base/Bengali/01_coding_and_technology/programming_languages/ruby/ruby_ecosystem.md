@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # রুবি — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি রুবি ইকোসিস্টেমের প্রয়োজনীয় টুল, ফ্রেমওয়ার্ক এবং অবকাঠামো কভার করে।
 ---

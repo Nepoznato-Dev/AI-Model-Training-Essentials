@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Neuroscience
 Ang neuroscience ay ang pag-aaral ng nervous system — ang utak, spinal cord, at lahat ng nerves na nag-uugnay sa kanila sa katawan. Ito ay sumasaklaw sa maraming antas: mula sa mga molekula at gene, sa mga indibidwal na neuron at synapses, sa mga circuit at rehiyon ng utak, sa pag-uugali, katalusan, at kamalayan. Ang utak ay ang pinaka-kumplikadong istraktura sa kilalang uniberso, na naglalaman ng humigit-kumulang 86 bilyong neuron na konektado ng trilyong synapses, at ang pag-unawa kung paano ito gumagana ay isa sa mga malalaking hamon ng agham.
 ---

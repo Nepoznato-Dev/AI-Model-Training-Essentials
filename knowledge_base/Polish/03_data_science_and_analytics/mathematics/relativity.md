@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Względność
 Teorie względności Einsteina zrewolucjonizowały nasze rozumienie przestrzeni, czasu i grawitacji. **Szczególna teoria względności** (1905) wykazała, że ​​przestrzeń i czas nie są oddzielone, lecz splecione w jedną tkaninę zwaną czasoprzestrzenią oraz że prędkość światła jest taka sama dla wszystkich obserwatorów. **Ogólna teoria względności** (1915) na nowo przedstawiła grawitację nie jako siłę, ale jako zakrzywienie czasoprzestrzeni spowodowane masą i energią. Teorie te stanowią podstawę nawigacji GPS, akceleratorów cząstek oraz naszego zrozumienia czarnych dziur i ewolucji Wszechświata.
 ---

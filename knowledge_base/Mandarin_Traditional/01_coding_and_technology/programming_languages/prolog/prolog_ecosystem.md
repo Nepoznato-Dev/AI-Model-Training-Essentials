@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — 生態系與工具指南
 本指南涵蓋了 Prolog 生態系統中的基本工具、實作和基礎設施。
 ---

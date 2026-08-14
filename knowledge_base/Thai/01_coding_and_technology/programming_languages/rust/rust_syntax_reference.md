@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Rust มันเสริมการอ้างอิง Rust หลักโดยมุ่งเน้นไปที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน ตารางตัวดำเนินการ และกลไกภายในของระบบความเป็นเจ้าของ ลักษณะ และการทำงานพร้อมกัน
 ---

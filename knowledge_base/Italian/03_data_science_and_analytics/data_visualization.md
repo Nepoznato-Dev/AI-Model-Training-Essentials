@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visualizzazione dei dati
 Un grafico ben progettato può rivelare schemi nascosti dalle tabelle numeriche. Uno progettato male può fuorviare, confondere o annoiare. La visualizzazione dei dati è l'arte di trasformare i dati in storie visive che informano le decisioni. Questo file copre la selezione del grafico, i principi di progettazione, gli errori comuni e gli strumenti che rendono tutto ciò possibile.
 ---

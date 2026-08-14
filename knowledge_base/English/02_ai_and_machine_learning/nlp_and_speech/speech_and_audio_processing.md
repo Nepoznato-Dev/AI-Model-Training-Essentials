@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Speech and Audio Processing
 
 Speech and audio processing covers the technologies that let machines hear, understand, generate, and manipulate sound. This includes speech recognition (turning spoken words into text), speech synthesis (turning text into spoken words), speaker identification, music generation, and environmental sound understanding. The field has been transformed by deep learning — modern systems approach human-level accuracy for speech recognition and produce eerily natural synthetic voices.

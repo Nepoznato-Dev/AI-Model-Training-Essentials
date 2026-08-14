@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scienza dei dati e analisi
 La scienza dei dati è la disciplina che trasforma i dati grezzi in informazioni fruibili. Si trova all’intersezione tra statistica, informatica e competenze di settore ed è diventato essenziale in ogni settore, dalla finanza alla sanità. Questo file illustra i concetti fondamentali, gli strumenti e i flussi di lavoro che ogni professionista dovrebbe conoscere.
 ---

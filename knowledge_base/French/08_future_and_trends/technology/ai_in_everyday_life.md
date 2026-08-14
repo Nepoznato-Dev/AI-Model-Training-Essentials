@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # L'IA dans la vie de tous les jours
 L'intelligence artificielle n'est plus un concept futuriste : elle est ancrée dans la vie quotidienne. Depuis le moment où vous vous réveillez et vérifiez votre téléphone (les algorithmes de recommandation décident quelles notifications vous voyez) jusqu'au moment où vous vous endormez (votre haut-parleur intelligent traite votre dernière commande), les systèmes d'IA prennent des décisions en votre nom, pour vous et parfois à votre sujet. Comprendre où l'IA apparaît, comment elle fonctionne à un niveau élémentaire et quelles sont ses implications n'est plus une option : c'est une condition nécessaire pour une citoyenneté éclairée au 21e siècle.
 ---

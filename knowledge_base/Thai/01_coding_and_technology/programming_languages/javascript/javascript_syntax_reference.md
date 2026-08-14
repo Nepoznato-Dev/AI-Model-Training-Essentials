@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ JavaScript ช่วยเสริมการอ้างอิง JavaScript หลักโดยเน้นไปที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน ตารางตัวดำเนินการ และกลไกภายใน
 ---

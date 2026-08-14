@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sayansi ya Nyenzo
 Sayansi ya nyenzo ni uchunguzi wa jinsi muundo wa nyenzo (kwenye mizani ya atomiki, hadubini, na makroskopu) huamua sifa zake, na jinsi mbinu za usindikaji zinaweza kutumika kudhibiti muundo huo kufikia utendakazi unaohitajika. Ni uwanja unaojibu maswali kama: kwa nini chuma ni kali lakini nzito? Kwa nini kioo ni uwazi lakini brittle? Je, tunawezaje kutengeneza betri zinazochaji haraka? Ni nyenzo gani zitaishi katika hali ya Mars? Kila teknolojia ambayo umewahi kutumia imetengenezwa kwa nyenzo, na maendeleo ya teknolojia karibu kila wakati yanahitaji maendeleo katika nyenzo.
 ---

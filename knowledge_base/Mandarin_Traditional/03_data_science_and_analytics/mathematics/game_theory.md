@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 博弈論
 博弈論是策略互動的數學——在這種情況下，你的結果不僅取決於你自己的選擇，還取決於他人的選擇。從公司之間的價格戰到核武軍備競賽，從線上拍賣到演化生物學，博弈論提供了分析衝突與合作的工具。透過多智能體強化學習、生成對抗網路（GAN）和線上平台的機制設計，它與機器學習的相關性越來越高。
 ---

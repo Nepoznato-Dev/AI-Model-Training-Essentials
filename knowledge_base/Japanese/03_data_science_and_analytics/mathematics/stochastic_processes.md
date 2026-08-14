@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 確率過程
 **確率過程** は、時間 (または空間) によってインデックス付けされた確率変数のコレクションです。確率論は個々のランダムな出来事を研究するのに対し、確率過程はランダム性が時間の経過とともにどのように進化するかを研究します。これらは、株価、行列の長さ、病気の蔓延、言語生成、機械学習モデルのトレーニングダイナミクスをモデル化します。
 ---

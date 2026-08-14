@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Künstliche Intelligenz
 Künstliche Intelligenz ist der Versuch, Maschinen zu bauen, die Dinge tun können, die Intelligenz erfordern würden, wenn ein Mensch sie tun würde: Gesichter erkennen, Sprache verstehen, Entscheidungen treffen, Texte schreiben, Spiele spielen, Autos fahren, Krankheiten diagnostizieren. Das Gebiet ist so alt wie die Informatik selbst – Alan Turing fragte: „Können Maschinen denken?“ im Jahr 1950 – aber die jüngste Explosion der Fähigkeiten (2020er Jahre) hat KI zu einer der wichtigsten und umstrittensten Technologien in der Geschichte der Menschheit gemacht.
 ---

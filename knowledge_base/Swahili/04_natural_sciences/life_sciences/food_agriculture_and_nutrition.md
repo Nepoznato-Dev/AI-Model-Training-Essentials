@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Chakula, Kilimo, na Lishe
 Chakula ndio hitaji la msingi zaidi la mwanadamu, na kilimo ndio msingi wa ustaarabu. Mabadiliko kutoka kwa uwindaji na kukusanya hadi kilimo - Mapinduzi ya Neolithic, yapata miaka 10,000 iliyopita - ndiyo iliyoruhusu wanadamu kujenga miji, kuendeleza kuandika, na kuunda kila kitu kingine tunachokiita "ustaarabu." Leo, kilimo kinaajiri takriban 27% ya wafanyikazi wa kimataifa na hutoa takriban kalori trilioni 10 kwa siku. Bado takriban watu milioni 800 bado wana njaa, wakati zaidi ya bilioni 2 ni wazito au feta. Shida sio uzalishaji - ni usambazaji, ufikiaji na chaguzi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # टाइपस्क्रिप्ट - सिंटैक्स संदर्भ
 यह दस्तावेज़ टाइपस्क्रिप्ट के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह टाइप सिस्टम, जेनेरिक, उपयोगिता प्रकार और उन्नत टाइप-स्तरीय प्रोग्रामिंग पर ध्यान केंद्रित करके मुख्य टाइपस्क्रिप्ट संदर्भ को पूरक करता है।
 ---

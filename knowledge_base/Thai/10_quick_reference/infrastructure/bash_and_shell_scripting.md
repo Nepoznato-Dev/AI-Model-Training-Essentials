@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # แผ่นโกงการเขียนสคริปต์ Bash และ Shell
 ข้อมูลอ้างอิงที่เป็นประโยชน์สำหรับการเขียนเชลล์สคริปต์ใน Bash — เชลล์เริ่มต้นบนระบบ Linux และ macOS ส่วนใหญ่ ครอบคลุมไวยากรณ์ รูปแบบทั่วไป การประมวลผลข้อความ และบรรทัดเดียวที่มีประโยชน์
 ---

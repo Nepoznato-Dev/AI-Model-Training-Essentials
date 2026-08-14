@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 移动开发
 移动开发是为智能手机和平板电脑构建应用程序的实践——主要针对 iOS (Apple) 和 Android (Google)。它涵盖了从小屏幕的 UI 设计到管理电池寿命、处理网络不稳定以及通过商店分发应用程序的一切。该领域已经显着成熟，跨平台框架现在在大多数用例中与本机开发竞争。
 ---

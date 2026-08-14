@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 델파이/오브젝트 파스칼 — 일반적인 실수 및 안티 패턴
 이 문서는 델파이/오브젝트 파스칼의 가장 일반적인 실수, 함정, 안티패턴을 수정하여 목록화합니다.
 ---

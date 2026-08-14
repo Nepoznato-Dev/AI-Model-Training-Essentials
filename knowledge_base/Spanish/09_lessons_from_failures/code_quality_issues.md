@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Problemas de calidad del código
 Este documento consolida problemas comunes de calidad del código, incluidos nombres de variables incorrectos, documentación deficiente, código espagueti, dependencias circulares y otros problemas de mantenimiento.
 ---

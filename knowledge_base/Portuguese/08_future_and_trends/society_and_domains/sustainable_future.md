@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Futuro Sustentável
 ## Visão geral
 A questão já não é *se* o mundo precisa de fazer a transição para uma economia sustentável, mas sim *com que rapidez* e *quem lidera*. A energia renovável é agora a fonte de energia mais barata na maioria dos mercados. Os princípios da economia circular estão a passar de um conceito de nicho para uma estratégia empresarial. As cidades estão a repensar tudo, desde o transporte até aos resíduos. E a corrida para a neutralidade carbónica está a remodelar as indústrias, desde a energia até às finanças. Veja como será o futuro sustentável em quatro dimensões principais.

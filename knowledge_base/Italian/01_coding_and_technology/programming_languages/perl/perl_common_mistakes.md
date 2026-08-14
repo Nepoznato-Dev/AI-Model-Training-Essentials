@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl: errori comuni e anti-pattern
 Questo documento cataloga gli errori, le trappole e gli anti-pattern più comuni in Perl con le relative correzioni.
 ---

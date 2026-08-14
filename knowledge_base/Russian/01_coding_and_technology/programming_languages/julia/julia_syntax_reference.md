@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Джулия — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису Julia (1.x). Он дополняет основной справочник по Джулии, уделяя особое внимание исчерпывающим синтаксическим шаблонам, множественной диспетчеризации, макросам, метапрограммированию и научным вычислениям.
 ---

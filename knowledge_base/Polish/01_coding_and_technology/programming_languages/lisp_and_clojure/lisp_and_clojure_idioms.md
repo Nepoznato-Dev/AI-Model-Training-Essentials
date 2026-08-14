@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp i Clojure — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku omówiono wzorce idiomatyczne dla Lisp i Clojure.
 ---

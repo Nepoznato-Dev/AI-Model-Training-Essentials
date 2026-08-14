@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Przyszłość informatyki
 Przyszłość informatyki kształtują siły, które podważają podstawowe założenia ostatnich 60 lat. Prawo Moore’a – obserwacja, że ​​moc obliczeniowa podwaja się mniej więcej co dwa lata – zwalnia. Architektura von Neumanna — oddzielny procesor i pamięć — uderza w „ścianę pamięci”. Obliczenia kwantowe obiecują rozwiązać problemy, których nie potrafią klasyczne komputery. Chipy neuromorficzne naśladują architekturę mózgu. Przetwarzanie brzegowe przenosi przetwarzanie ze scentralizowanych centrów danych. Sztuczna inteligencja zmienia przeznaczenie komputerów — od narzędzi wykonujących instrukcje po systemy uczące się, generujące i rozumujące. Zrozumienie tych zmian ma znaczenie dla każdego, kto buduje, kupuje lub polega na technologii.
 ---

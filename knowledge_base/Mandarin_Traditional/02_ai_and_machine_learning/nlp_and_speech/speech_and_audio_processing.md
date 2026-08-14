@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 語音和音訊處理
 語音和音訊處理涵蓋了讓機器聽到、理解、產生和操縱聲音的技術。這包括語音辨識（將口語單字轉換為文字）、語音合成（將文字轉換為口語單字）、說話者辨識、音樂生成和環境聲音理解。深度學習已經改變了這個領域——現代系統的語音辨識精度達到了人類水平，並產生出奇自然的合成聲音。
 ---

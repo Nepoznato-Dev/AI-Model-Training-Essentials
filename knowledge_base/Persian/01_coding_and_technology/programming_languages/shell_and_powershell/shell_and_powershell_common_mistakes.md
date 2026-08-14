@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell - اشتباهات رایج و ضد الگوها
 این سند رایج ترین اشتباهات، تله ها و ضد الگوها در Shell/Bash و PowerShell را با اصلاحات فهرست می کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Futuros Geoestratégicos
 ## Visão geral
 A era pós-Guerra Fria de domínio americano está a dar lugar a algo mais confuso: um mundo multipolar onde o poder é difuso, a competição está a intensificar-se em termos de tecnologia e recursos, e desafios como as alterações climáticas e as pandemias não respeitam fronteiras. A ordem internacional baseada em regras construída depois de 1945 está a ser testada em todas as direções. Aqui está o que está mudando, quem está subindo e onde estão os pontos de atrito.

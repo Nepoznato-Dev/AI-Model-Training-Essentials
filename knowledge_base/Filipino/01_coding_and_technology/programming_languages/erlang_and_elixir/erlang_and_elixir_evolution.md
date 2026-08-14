@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang at Elixir — Kasaysayan ng Bersyon at Ebolusyon
 ## Erlang Timeline
 | Bersyon | Taon | Pangunahing Tema |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Environmental Science and Sustainability
 
 Environmental science applies the methods of physics, chemistry, biology, geology, and economics to the question: "What is happening to our planet, and what can be done about it?" It is an interdisciplinary field — a convergence of multiple disciplines — which contributes to both its analytical depth and its policy relevance.

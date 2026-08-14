@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - Makosa ya Kawaida & Miundo ya Kupambana
 Hati hii inaorodhesha makosa ya kawaida, mitego, na mifumo ya kupingana katika COBOL na masahihisho.
 ---

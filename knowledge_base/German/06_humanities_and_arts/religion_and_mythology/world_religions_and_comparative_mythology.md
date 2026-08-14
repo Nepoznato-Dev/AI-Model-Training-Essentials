@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Weltreligionen und vergleichende Mythologie
 Weltreligionen sind die wichtigsten Glaubens-, Praxis- und Gemeinschaftssysteme, die die menschliche Zivilisation über Jahrtausende hinweg geprägt haben. Die vergleichende Mythologie untersucht die Geschichten, die verschiedene Kulturen über die Schöpfung, Helden, Götter und den Sinn der Existenz erzählen – und die auffälligen Muster, die sich in Traditionen wiederholen, die Tausende von Meilen und Jahrtausende voneinander entfernt sind. Beides zu verstehen ist wichtig, um zu verstehen, warum Menschen glauben, was sie glauben, wie sich Kulturen unterscheiden und was die menschliche Erfahrung verbindet.
 ---

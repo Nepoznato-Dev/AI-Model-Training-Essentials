@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 數據工程和管道
 資料工程是建構大規模移動、轉換和儲存資料的系統的學科。如果沒有可靠的資料管道，機器學習模型就無法訓練，儀表板顯示過時的數字，業務決策也基於猜測。該文件涵蓋了建構有效的資料基礎設施的架構、工具和實踐。
 ---

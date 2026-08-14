@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI multimoda
 Sistem AI multimodal memproses dan menggabungkan informasi dari berbagai jenis data — teks, gambar, audio, video, dan lainnya — secara bersamaan. Meskipun sistem AI sebelumnya biasanya menggunakan modalitas tunggal (hanya teks, hanya gambar), sistem modern yang paling mampu adalah multimodal. GPT-4V membaca gambar dan teks secara bersamaan; Gemini memproses teks, gambar, audio, dan video secara asli; dan sistem seperti Sora menghasilkan video dari deskripsi teks. File ini membahas cara kerja AI multimodal, arsitektur di baliknya, dan mengapa menggabungkan modalitas sangat bermanfaat.
 ---

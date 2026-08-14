@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 논리와 비판적 사고
 논리는 타당한 추론, 즉 건전한 주장을 구성하고 결함이 있는 주장을 식별하는 방법에 대한 연구입니다. 비판적 사고는 가정에 의문을 제기하고 증거를 평가하며 신중하게 추론하는 훈련된 습관입니다. 이러한 기술은 수학과 컴퓨터 과학뿐만 아니라 일상적인 의사 결정, 과학 연구 및 정보가 풍부한 세상을 탐색하는 데 필수적입니다.
 ---

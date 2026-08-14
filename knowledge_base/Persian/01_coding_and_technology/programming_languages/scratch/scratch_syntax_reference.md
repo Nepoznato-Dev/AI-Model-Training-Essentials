@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Scratch 3.0 ارائه می دهد. این مرجع اصلی Scratch را با تمرکز بر دسته بندی های کامل بلوک، الگوهای رویداد محور، مدیریت sprite، شبیه سازی، و تکنیک های کدگذاری خلاقانه تکمیل می کند.
 ---

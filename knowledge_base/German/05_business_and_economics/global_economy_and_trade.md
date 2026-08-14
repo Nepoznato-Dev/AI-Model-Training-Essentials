@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Globale Wirtschaft und Handel
 Die Weltwirtschaft ist das größte und komplexeste System, das die Menschheit je aufgebaut hat. Im Jahr 2025 überstieg das globale BIP 110 Billionen US-Dollar. Über 8 Milliarden Menschen produzieren, handeln und konsumieren täglich Waren und Dienstleistungen über Grenzen hinweg. Um sich in der modernen Welt zurechtzufinden, ist es wichtig zu verstehen, wie dieses System funktioniert – wer womit handelt, warum manche Länder reich und andere arm sind, wie Geld über Grenzen hinweg fließt und was passiert, wenn das System zusammenbricht.
 ---

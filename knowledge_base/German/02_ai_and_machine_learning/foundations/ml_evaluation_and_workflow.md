@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bewertung und Workflow des maschinellen Lernens
 Ein praktischer Leitfaden zum ML-Lebenszyklus – von der Problemstellung bis zur Produktionsüberwachung – mit Schwerpunkt auf Metriken, Validierung und Debugging.
 ---

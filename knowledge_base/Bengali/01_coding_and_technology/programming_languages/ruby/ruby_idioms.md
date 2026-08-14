@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # রুবি — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অভ্যাস
 এই নির্দেশিকাটি পরিচ্ছন্ন, রুবিশ কোড লেখার জন্য বাহাদুরী নিদর্শন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

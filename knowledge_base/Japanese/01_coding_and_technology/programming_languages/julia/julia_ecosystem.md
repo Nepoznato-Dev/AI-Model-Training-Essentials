@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — エコシステムとツールのガイド
 このガイドでは、Julia エコシステムの重要なツール、パッケージ、インフラストラクチャについて説明します。
 ---

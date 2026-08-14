@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin – Versionsgeschichte und Entwicklung
 ## Zeitleiste
 | Version | Jahr | Schlüsselthema |

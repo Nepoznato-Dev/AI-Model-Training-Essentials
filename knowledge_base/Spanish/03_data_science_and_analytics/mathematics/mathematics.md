@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matemáticas
 Las matemáticas no son sólo una materia que se estudia en la escuela: sustentan casi todos los campos técnicos. La física lo utiliza para describir el universo. La informática lo utiliza para diseñar algoritmos. El aprendizaje automático lo utiliza para optimizar los pesos. Las finanzas lo utilizan para valorar el riesgo. No es necesario dominar cada rama, pero comprender el panorama (y saber dónde se aplica cada rama) hace que otros temas sean más fáciles de comprender.
 ---

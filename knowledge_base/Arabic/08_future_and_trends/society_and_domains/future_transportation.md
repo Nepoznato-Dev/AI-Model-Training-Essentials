@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #مواصلات المستقبل
 ## ملخص
 الانتقال من النقطة أ إلى النقطة ب على وشك أن يبدو مختلفًا تمامًا. السيارات ذاتية القيادة موجودة بالفعل على الطرق العامة. الطائرات الكهربائية تكمل الرحلات التجريبية. تعد مفاهيم Hyperloop بالسفر بسرعة القطار في الأنابيب المفرغة. وسيارات الأجرة الطائرة - التي كانت ذات يوم مادة للرسوم المتحركة - تدخل مرحلة الاعتماد. إليكم حالة اللعب عبر التقنيات التي تعيد تشكيل كيفية تحركنا.

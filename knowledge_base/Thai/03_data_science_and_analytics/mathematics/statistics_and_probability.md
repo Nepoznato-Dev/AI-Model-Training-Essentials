@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # สถิติและความน่าจะเป็น
 ความน่าจะเป็นและสถิติเป็นรากฐานทางคณิตศาสตร์ของวิทยาศาสตร์ข้อมูล การเรียนรู้ของเครื่อง และการวิจัยทางวิทยาศาสตร์ ความน่าจะเป็นจะบอกคุณว่าเหตุการณ์ต่างๆ มีแนวโน้มเป็นอย่างไร สถิติจะบอกวิธีการสรุปผลจากข้อมูล พวกเขาร่วมกันเปลี่ยนความไม่แน่นอนให้เป็นความรู้เชิงปริมาณและจัดการได้
 ---

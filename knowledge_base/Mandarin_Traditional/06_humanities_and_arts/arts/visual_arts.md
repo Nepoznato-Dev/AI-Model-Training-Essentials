@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #視覺藝術
 視覺藝術是人類最古老的溝通形式——從拉斯科的洞穴壁畫到今天的數位裝置。了解藝術運動、媒介和保存創意作品的機構，可以讓您更深入地了解社會數千年來如何表達美、力量、靈性和異議。
 ---

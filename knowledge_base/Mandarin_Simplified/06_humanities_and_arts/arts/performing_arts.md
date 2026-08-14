@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 表演艺术
 表演艺术——戏剧、电影、舞蹈和音乐表演——是艺术与观众现场互动的地方。与墙上的画或书架上的书不同，表演是实时展开的，在艺术家和观众之间创造了一种共享体验，这在数千年来一直是人类文化的核心。
 ---

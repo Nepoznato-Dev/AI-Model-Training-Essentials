@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho Common Lisp và Clojure. Nó bổ sung cho tham chiếu Lisp/Clojure chính bằng cách tập trung vào biểu thức S, macro, cấu trúc dữ liệu liên tục và các mẫu lập trình chức năng.
 ---

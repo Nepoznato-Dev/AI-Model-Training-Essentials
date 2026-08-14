@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk MATLAB (R2024+). Ini melengkapi referensi utama MATLAB dengan berfokus pada pola sintaksis yang lengkap, operasi matriks, plotting, dan idiom komputasi ilmiah.
 ---

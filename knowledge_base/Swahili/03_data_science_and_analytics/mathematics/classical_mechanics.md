@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mitambo ya Kawaida
 Mitambo ya classical inaelezea mwendo wa vitu chini ya ushawishi wa nguvu. Kutoka kwa tufaha zinazoanguka hadi sayari zinazozunguka, kutoka kwa nyuzi zinazotetemeka hadi chembe zinazogongana, kanuni zake zinatawala ulimwengu wa macroscopic. Zaidi ya matumizi yake ya kimwili, mechanics ya classical ilizaa calculus ya tofauti, jiometri symplectic, na mfumo wa Hamiltonian ambao unasisitiza mechanics ya quantum na uboreshaji wa kisasa.
 ---

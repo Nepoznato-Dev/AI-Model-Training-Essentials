@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Media Literacy at Information Evaluation
 Nabubuhay tayo sa mundong puno ng impormasyon. Araw-araw, ang karaniwang tao ay nalantad sa libu-libong mga mensahe sa media — mga artikulo ng balita, mga post sa social media, mga advertisement, mga talumpati sa pulitika, nilalaman ng influencer, tekstong binuo ng AI. Karamihan sa mga ito ay maayos. Ang ilan sa mga ito ay nakaliligaw. Ang isang maliit na halaga ay sadyang hindi totoo. Ang media literacy ay ang kasanayan sa pag-navigate sa landscape na ito — hindi sa pamamagitan ng pagtitiwala sa lahat, hindi sa pagtitiwala sa wala, ngunit sa pagbuo ng isang naka-calibrate na kahulugan kung ano ang maaasahan at kung ano ang hindi.
 ---

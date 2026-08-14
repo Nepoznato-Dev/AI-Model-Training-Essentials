@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python Syntax Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python 構文のチートシート
 Python 3.x の構文と一般的なパターンのクイック リファレンス。
 ---

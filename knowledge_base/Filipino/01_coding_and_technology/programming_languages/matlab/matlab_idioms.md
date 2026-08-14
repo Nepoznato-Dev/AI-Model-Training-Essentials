@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Mga Idiomatic Pattern at Pinakamahuhusay na Kasanayan
 Sinasaklaw ng gabay na ito ang mga idiomatic pattern at pinakamahuhusay na kagawian para sa pagsusulat ng malinis, idiomatic na MATLAB code.
 ---

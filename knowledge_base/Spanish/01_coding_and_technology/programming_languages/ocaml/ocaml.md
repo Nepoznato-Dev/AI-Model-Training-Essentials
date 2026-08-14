@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml
 OCaml (Objective Caml) es un lenguaje de programación funcional desarrollado en INRIA en Francia, lanzado por primera vez en 1996. Combina la expresividad de la programación funcional con características prácticas: un potente sistema de tipos con inferencia de tipos (Hindley-Milner), coincidencia de patrones, tipos de datos algebraicos y programación orientada a objetos opcional. OCaml compila en código nativo rápido y también admite código de bytes.
 La aplicación del mundo real más famosa de OCaml es la empresa comercial **Jane Street**, que utiliza OCaml para toda su infraestructura comercial. También se utiliza en el desarrollo de compiladores (el compilador Rust se escribió originalmente en OCaml), verificación formal, sistemas financieros y demostración de teoremas.

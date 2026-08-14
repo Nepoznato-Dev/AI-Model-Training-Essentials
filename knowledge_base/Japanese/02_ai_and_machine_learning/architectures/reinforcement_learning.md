@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 強化学習
 強化学習 (RL) は、機械が試行錯誤によって一連の意思決定を学習する方法です。すべての例に対して正しい答えが提供される教師あり学習とは異なり、RL ではエージェントに報酬シグナルのみが与えられます。エージェントは、時間の経過とともにどのアクションが最良の結果につながるかを理解する必要があります。これは、AlphaGo、ロボット制御、ゲームプレイ AI、そして重要なことに、現代の大規模な言語モデルを人間の好みに合わせるために使用される技術である RLHF の背後にあるアプローチです。
 ---

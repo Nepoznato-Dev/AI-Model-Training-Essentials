@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Falhas de IA e LLM
 Este documento consolida modos de falha comuns em sistemas de IA e modelos de linguagem grande, incluindo alucinações, desinformação, erros de raciocínio e problemas relacionados a prompts.
 ---

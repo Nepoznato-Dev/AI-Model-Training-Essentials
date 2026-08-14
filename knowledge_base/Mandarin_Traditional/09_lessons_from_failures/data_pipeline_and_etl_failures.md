@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 資料管道和 ETL 失敗
 資料管道是現代組織的管道——它們透過轉換將資料從來源系統轉移到資料庫、倉庫和湖泊中，用於分析、機器學習和決策。當他們工作時，沒有人注意到。當它們失敗時，決策會基於陳舊的數據，模型會基於垃圾進行訓練，報告會顯示不可能的數字，並且對整個數據平台的信任也會受到削弱。資料管道故障是技術組織中最常見、成本最高的故障之一。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teknolojia ya Hali ya Hewa na Ubunifu wa Kijani
 Teknolojia ya hali ya hewa inajumuisha zana, mifumo, na ubunifu iliyoundwa ili kupunguza uzalishaji wa gesi chafu, kukabiliana na mabadiliko ya hali ya hewa, na kubadilisha uchumi wa kimataifa kwa msingi endelevu. Bila shaka ndicho kikoa muhimu zaidi cha teknolojia katika karne ya 21 - tofauti kati ya 1.5°C ya ongezeko la joto inayoweza kudhibitiwa na janga la 3°C+ inategemea sana jinsi teknolojia hizi zinavyoweza kutumwa kwa kiwango kikubwa. Changamoto si tu ya kisayansi bali kiuchumi, kisiasa, na kijamii.
 ---

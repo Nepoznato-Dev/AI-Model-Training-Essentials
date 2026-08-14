@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Wirtschaftswissenschaften
 Jede Organisation, die ein Produkt oder eine Dienstleistung verkauft, ist ein Unternehmen, und jede Gesellschaft, die Waren produziert und vertreibt, ist eine Volkswirtschaft. Die Konzepte in dieser Datei gelten unabhängig davon, ob Sie ein freiberufliches Unternehmen leiten, in einem Unternehmen arbeiten, versuchen, die Nachrichten zu verstehen oder einfach nur herauszufinden, wie sich Geld in der Welt bewegt.
 ---

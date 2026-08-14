@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны и лучшие практики написания чистого современного кода на Perl (5.38+).
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kerentanan Keamanan
 Dokumen ini mengkonsolidasikan kerentanan keamanan umum dalam pengembangan perangkat lunak, termasuk serangan injeksi, praktik kode yang tidak aman, dan kesalahan keamanan.
 ---

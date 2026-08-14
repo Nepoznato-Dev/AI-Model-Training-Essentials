@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript – Padrões idiomáticos e práticas recomendadas
 Este guia cobre padrões idiomáticos e práticas recomendadas para escrever código TypeScript limpo e seguro.
 ---

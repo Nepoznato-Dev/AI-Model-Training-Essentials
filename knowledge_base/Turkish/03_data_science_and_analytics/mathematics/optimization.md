@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optimizasyon
 Optimizasyon, bir dizi uygulanabilir çözüm arasından en iyi çözümü bulmanın matematiğidir. Şunu sorar: Bir fonksiyon ve kısıtlamalar verildiğinde, hangi girdi çıktıyı en aza indirir (veya en üst düzeye çıkarır)? Optimizasyon, makine öğreniminin motorudur; bir modelin eğitilmesi, kayıp fonksiyonunun en aza indirilmesi anlamına gelir. Yöneylem araştırmasında, ekonomide, mühendislik tasarımında ve hemen hemen her niceliksel alanda karşımıza çıkar.
 ---

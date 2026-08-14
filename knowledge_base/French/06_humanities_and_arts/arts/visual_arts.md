@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Arts visuels
 L'art visuel est la forme de communication la plus ancienne de l'humanité — depuis les peintures rupestres de Lascaux jusqu'aux installations numériques d'aujourd'hui. Comprendre les mouvements artistiques, les médiums et les institutions qui préservent les œuvres créatives vous permet de mieux apprécier la manière dont les sociétés ont exprimé la beauté, le pouvoir, la spiritualité et la dissidence au fil des millénaires.
 ---

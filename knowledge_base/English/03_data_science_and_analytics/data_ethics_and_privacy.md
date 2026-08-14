@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Ethics and Privacy
 
 Data ethics is the study of how data collection, analysis, and deployment affect people's rights, autonomy, and wellbeing. Privacy is the specific concern about who controls personal information and how it's shared. These topics have moved from academic debates to front-page news — GDPR enforcement, data breaches affecting billions of users, and growing public awareness that the data practices of tech companies have real consequences for democracy, equality, and individual freedom.

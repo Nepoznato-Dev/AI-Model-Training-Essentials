@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nauka o materiałach
 Nauka o materiałach to nauka o tym, jak struktura materiału (w skali atomowej, mikroskopowej i makroskopowej) determinuje jego właściwości oraz w jaki sposób można zastosować metody przetwarzania, aby kontrolować tę strukturę w celu osiągnięcia pożądanej wydajności. Jest to dziedzina, która odpowiada na pytania takie jak: dlaczego stal jest mocna, ale ciężka? Dlaczego szkło jest przezroczyste, ale kruche? Jak możemy sprawić, by baterie ładowały się szybciej? Jakie materiały przetrwają warunki panujące na Marsie? Każda technologia, z której kiedykolwiek korzystałeś, jest wykonana z materiałów, a postęp technologiczny prawie zawsze wymaga postępu w materiałach.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 음악이론과 음향학
 음악 이론은 음악이 어떻게 작동하는지, 즉 일부 소리의 조합을 즐겁게 하거나 의미 있게 만들고 다른 소리를 조화롭지 않게 하거나 혼란스럽게 만드는 패턴, 구조 및 원리에 대한 연구입니다. 음향학은 소리의 물리학입니다. 진동이 공기를 통해 이동하는 방식, 진동이 생성되고 인식되는 방식입니다. C메이저 코드가 왜 기분 좋게 들리는지, 단조가 왜 슬프게 들리는지, 콘서트홀이 어떻게 디자인되었는지, 좋아하는 노래가 왜 오싹해지는지 설명합니다.
 ---

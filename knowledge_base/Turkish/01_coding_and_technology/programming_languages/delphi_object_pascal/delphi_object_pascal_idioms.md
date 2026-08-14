@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz Delphi ve Object Pascal kodu yazmaya yönelik deyimsel kalıpları kapsar.
 ---

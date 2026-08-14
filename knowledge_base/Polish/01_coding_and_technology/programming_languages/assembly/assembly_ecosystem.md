@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Montaż — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku opisano podstawowe narzędzia, asemblery i infrastrukturę w ekosystemie Assembly.
 ---

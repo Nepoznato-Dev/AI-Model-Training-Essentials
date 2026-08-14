@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 英语词典 — 常用词定义
 常用英语单词及其含义的参考列表，
 涵盖日常词汇、学术术语、常见词汇

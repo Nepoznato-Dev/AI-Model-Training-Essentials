@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sistemas Embarcados e IoT
 Os sistemas embarcados são computadores escondidos dentro de outros dispositivos – a unidade de controle do motor do seu carro, o controlador da sua máquina de lavar, o microcontrolador em um termostato inteligente. Ao contrário dos computadores de uso geral, eles são projetados para tarefas específicas, muitas vezes com restrições rígidas de energia, memória e velocidade de processamento. A Internet das Coisas (IoT) amplia sistemas embarcados conectando-os a redes, permitindo monitoramento, controle e coleta de dados remotos. Juntos, eles representam bilhões de dispositivos computacionais que interagem com o mundo físico.
 ---

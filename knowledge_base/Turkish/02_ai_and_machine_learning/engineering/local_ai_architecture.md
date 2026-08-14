@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yerel Yapay Zeka Mimarisi
 Büyük dil modellerini tamamen cihaz üzerinde çalıştırmaya yönelik pratik bir kılavuz - donanım hususları, çıkarım motorları, bellek optimizasyonu ve uç dağıtım için sistem tasarımı.
 ---

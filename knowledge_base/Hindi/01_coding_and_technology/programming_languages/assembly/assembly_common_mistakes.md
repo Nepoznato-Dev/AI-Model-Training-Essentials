@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # असेंबली भाषा - सामान्य गलतियाँ और विरोधी पैटर्न
 यह दस्तावेज़ सुधार के साथ x86-64 असेंबली में सबसे आम गलतियों, जाल और विरोधी पैटर्न को सूचीबद्ध करता है।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang kasangkapan, aklatan, at imprastraktura sa Ada ecosystem.
 ---

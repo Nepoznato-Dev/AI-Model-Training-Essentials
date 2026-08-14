@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Multimodal AI
 Pinoproseso at pinagsasama-sama ng mga multimodal AI system ang impormasyon mula sa maraming uri ng data — teksto, mga larawan, audio, video, at higit pa — nang sabay-sabay. Habang ang mga naunang AI system ay karaniwang single-modality (text-only, image-only), ang pinaka-may kakayahang modernong system ay multimodal. Binabasa ng GPT-4V ang mga larawan at teksto nang magkasama; Pinoproseso ng Gemini ang text, mga larawan, audio, at video nang native; at ang mga system tulad ng Sora ay bumubuo ng video mula sa mga paglalarawan ng teksto. Sinasaklaw ng file na ito kung paano gumagana ang multimodal AI, ang mga arkitektura sa likod nito, at kung bakit napakalakas ng pagsasama-sama ng mga modalidad.
 ---

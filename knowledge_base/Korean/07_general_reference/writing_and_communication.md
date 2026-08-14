@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 글쓰기와 의사소통의 기초
 글쓰기와 의사소통은 이메일, 보고서, 문서, 프레젠테이션, 대화 등을 통해 아이디어를 효과적으로 전달하는 기술입니다. 대부분의 지식 작업은 근본적으로 의사소통 작업입니다. 전문가는 자신의 생각을 설명하고, 다른 사람을 설득하고, 결정을 문서화하고, 사양을 작성하고, 결과를 제시하고, 팀 간에 협업해야 합니다. 대부분의 문제는 의도된 것과 이해된 것 사이의 격차에서 발생하며, 더 나은 의사소통은 그 격차를 줄여줍니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - اشتباهات رایج و ضد الگوها
 این سند رایج ترین اشتباهات، تله ها و ضد الگوها در SQL را با اصلاحات فهرست می کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Glossario tecnologico
 Un glossario di riferimento che copre modelli di intelligenza artificiale, hardware, benchmark e concetti fondamentali
 nel moderno panorama dell’intelligenza artificiale e dell’informatica.

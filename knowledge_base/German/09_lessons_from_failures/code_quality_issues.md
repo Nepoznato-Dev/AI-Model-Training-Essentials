@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Probleme mit der Codequalität
 Dieses Dokument konsolidiert häufige Probleme mit der Codequalität, darunter fehlerhafte Variablennamen, schlechte Dokumentation, Spaghetti-Code, zirkuläre Abhängigkeiten und andere Probleme bei der Wartbarkeit.
 ---

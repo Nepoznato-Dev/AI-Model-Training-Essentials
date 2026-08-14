@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL - সিনট্যাক্স রেফারেন্স
 এই নথিটি COBOL (2014+) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, ডেটা বর্ণনা, ফাইল প্রসেসিং এবং ব্যবসায়িক যুক্তিতে ফোকাস করে প্রধান COBOL রেফারেন্সের পরিপূরক।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Classical Mechanics
 
 Classical mechanics describes the motion of objects under the influence of forces. From falling apples to orbiting planets, from vibrating strings to colliding particles, its principles govern the macroscopic world. Beyond its physical applications, classical mechanics gave birth to the calculus of variations, symplectic geometry, and the Hamiltonian framework that underpins quantum mechanics and modern optimization.

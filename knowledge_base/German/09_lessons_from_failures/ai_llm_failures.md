@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # KI- und LLM-Fehler
 Dieses Dokument konsolidiert häufige Fehlermodi in KI- und Large Language Model-Systemen, einschließlich Halluzinationen, Fehlinformationen, Argumentationsfehlern und Probleme im Zusammenhang mit Eingabeaufforderungen.
 ---

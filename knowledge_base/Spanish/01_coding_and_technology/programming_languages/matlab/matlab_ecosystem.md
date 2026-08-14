@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB: Guía de ecosistemas y herramientas
 Esta guía cubre las herramientas, cajas de herramientas e infraestructura esenciales en el ecosistema MATLAB.
 ---

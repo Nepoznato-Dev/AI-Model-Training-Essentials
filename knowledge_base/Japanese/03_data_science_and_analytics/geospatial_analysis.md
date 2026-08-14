@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 地理空間分析
 地理空間分析は、地理的要素 (座標、住所、境界、または地球上の場所に関連付けられたあらゆるデータ) を含むデータを検査するプロセスです。 「顧客はどこにいますか?」、「最適なルートは何ですか?」、「土地利用は時間の経過とともにどのように変化していますか?」などの質問に答えます。すべてのデータセットには空間次元があり、それを理解することで、純粋な統計分析では見逃している洞察が得られます。
 ---

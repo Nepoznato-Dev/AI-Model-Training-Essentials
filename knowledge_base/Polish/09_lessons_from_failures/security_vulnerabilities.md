@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Luki w zabezpieczeniach
 W tym dokumencie przedstawiono typowe luki w zabezpieczeniach występujące podczas tworzenia oprogramowania, w tym ataki polegające na wstrzykiwaniu oprogramowania, praktyki związane z niebezpiecznym kodem i błędy bezpieczeństwa.
 ---

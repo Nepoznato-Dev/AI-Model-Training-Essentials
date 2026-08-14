@@ -78,7 +78,6 @@ python main.py
 | `main.py` | Main script with heavily commented code (~250 lines) |
 | `requirements.txt` | Python dependencies |
 | `README.md` | This documentation file |
-| `cnn_basics.ipynb` | Jupyter notebook version (optional) |
 
 ## Code Walkthrough
 

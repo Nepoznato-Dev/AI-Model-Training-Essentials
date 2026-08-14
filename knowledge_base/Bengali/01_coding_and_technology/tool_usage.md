@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # টুল ব্যবহার
 ## গিট — সংস্করণ নিয়ন্ত্রণ
 গিট একটি বিতরণকৃত সংস্করণ নিয়ন্ত্রণ ব্যবস্থা। প্রতিটি ডেভেলপার তাদের স্থানীয় মেশিনে সংগ্রহস্থল ইতিহাসের একটি সম্পূর্ণ অনুলিপি আছে.

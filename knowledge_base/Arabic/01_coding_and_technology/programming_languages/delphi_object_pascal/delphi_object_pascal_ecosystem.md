@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # دلفي / أوبجيكت باسكال – دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والأطر والبنية التحتية الأساسية في النظام البيئي Delphi/Object Pascal.
 ---

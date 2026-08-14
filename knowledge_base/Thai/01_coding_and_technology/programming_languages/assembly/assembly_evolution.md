@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ภาษาแอสเซมบลี - ประวัติเวอร์ชันและวิวัฒนาการ
 ## ไทม์ไลน์
 | ยุค | ปี | ธีมหลัก |

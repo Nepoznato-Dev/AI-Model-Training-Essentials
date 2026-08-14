@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada — Riferimento alla sintassi
 Questo documento fornisce un riferimento sintattico completo e strutturato per Ada (2012/2022). Completa il riferimento principale di Ada concentrandosi su modelli di sintassi esaustivi, task, oggetti protetti, generici e programmazione critica per la sicurezza.
 ---

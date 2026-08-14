@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Msimbo wa chini na Uhandisi wa Jukwaa
 Majukwaa ya misimbo ya chini huwaruhusu watu kuunda programu kwa kutumia msimbo mdogo ulioandikwa kwa mkono - kwa kawaida kupitia violesura vya kuburuta na kudondosha, utiririshaji wa kazi unaoonekana, na viunganishi vilivyoundwa awali. Uhandisi wa jukwaa ni taaluma ya kujenga mifumo ya wasanidi wa ndani (IDPs) ambayo hurahisisha timu za bidhaa kujihudumia kwa miundombinu, CI/CD na zana za uendeshaji. Mitindo yote miwili ni majibu kwa tatizo sawa: pengo kati ya mahitaji ya programu na usambazaji wa watengenezaji ambao wanaweza kuijenga.
 ---

@@ -22,17 +22,15 @@ This project builds a simple question-answering system that:
 
 1. Go to [colab.research.google.com](https://colab.research.google.com)
 2. Click **File → Upload notebook**
-3. Upload `rag_simple.ipynb` (or copy code from `main.py`)
+3. Create a new notebook and copy the code from `main.py` into cells
 4. Click **Runtime → Change runtime type → GPU** (optional but faster)
 5. Press **Play** button at the start of each cell
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/projects/rag_simple/rag_simple.ipynb)
 
 ### Option 2: Run Locally
 
 ```bash
 # Clone the repository
-cd projects/rag_simple
+cd guides/projects/rag_simple
 
 # Create virtual environment
 python -m venv venv
@@ -50,10 +48,9 @@ python main.py
 ## 📁 Project Structure
 
 ```
-projects/rag_simple/
+guides/projects/rag_simple/
 ├── README.md           # This file
 ├── main.py             # Complete RAG implementation (~150 lines)
-├── rag_simple.ipynb    # Jupyter notebook version
 └── requirements.txt    # Python dependencies
 ```
 
@@ -210,7 +207,7 @@ Answer: Neural networks are inspired by the human brain.
 
 After completing this project:
 
-1. **Read the guide**: See [../../guides/RAG/README.md](../../guides/RAG/README.md)
+1. **Read the guide**: See [../../RAG/README.md](../../RAG/README.md)
 2. **Try the advanced version**: Build a RAG system with a vector database
 3. **Experiment**: Add more documents, try different models
 4. **Share**: Show your project to others or deploy it online
@@ -219,7 +216,7 @@ After completing this project:
 
 ## 📚 Resources
 
-- [RAG Fundamentals Guide](../../guides/RAG/CHAPTER_1_fundamentals.md)
+- [RAG Fundamentals Guide](../../RAG/chapter_1_fundamentals.md)
 - [Sentence Transformers Documentation](https://www.sbert.net/)
 - [Hugging Face Transformers](https://huggingface.co/docs/transformers)
 - [Common Errors](../../errors/README.md)

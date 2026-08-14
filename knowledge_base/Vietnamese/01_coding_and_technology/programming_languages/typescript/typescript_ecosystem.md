@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript - Hướng dẫn về hệ sinh thái và công cụ
 Hướng dẫn này bao gồm các công cụ, khung và cơ sở hạ tầng thiết yếu trong hệ sinh thái TypeScript. TypeScript chia sẻ phần lớn hệ sinh thái của nó với JavaScript nhưng có các công cụ chuyên dụng riêng.
 ---

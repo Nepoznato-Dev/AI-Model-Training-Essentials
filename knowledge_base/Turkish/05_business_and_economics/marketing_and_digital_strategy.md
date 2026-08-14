@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pazarlama ve Dijital Strateji
 Pazarlama, işletmelerin müşterilere değer yaratma, iletişim kurma ve sunma şeklidir. Müşteri ihtiyaçlarını anlama, ürünü bu ihtiyaçları karşılayacak şekilde konumlandırma ve alıcıları savunucuya dönüştüren ilişkiler kurma sisteminin tamamını kapsar. Dijital devrim, pazarlamanın araçlarını, kanallarını ve hızını değiştirirken temeller tutarlı kalıyor.
 ---

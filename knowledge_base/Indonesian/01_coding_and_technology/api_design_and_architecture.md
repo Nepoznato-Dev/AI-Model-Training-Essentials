@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Desain dan Arsitektur API
 API (Application Programming Interface) adalah bagaimana komponen perangkat lunak berkomunikasi satu sama lain. API yang dirancang dengan baik bersifat intuitif, konsisten, dan menyenangkan untuk digunakan. Desain yang buruk menyebabkan kebingungan, bug, dan frustrasi. File ini mencakup prinsip, pola, dan praktik pembuatan API yang sebenarnya ingin digunakan oleh pengembang.
 ---

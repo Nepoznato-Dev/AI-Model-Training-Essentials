@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Vai: riferimento alla sintassi
 Questo documento fornisce un riferimento completo e strutturato alla sintassi per Go. Completa il riferimento Go principale concentrandosi su modelli di sintassi esaustivi, tabelle degli operatori e meccanismi interni di goroutine, canali e interfacce.
 ---

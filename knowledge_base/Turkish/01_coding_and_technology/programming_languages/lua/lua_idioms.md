@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, deyimsel Lua kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

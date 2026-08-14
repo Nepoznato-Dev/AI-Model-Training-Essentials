@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি BEAM VM এবং OTP ভাগ করে, Erlang এবং Elixir ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, ফ্রেমওয়ার্ক এবং অবকাঠামো কভার করে।
 ---

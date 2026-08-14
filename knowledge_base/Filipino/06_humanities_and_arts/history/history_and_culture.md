@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kasaysayan at Kultura
 Ang kasaysayan ay ang kuwento ng kung ano ang nagawa ng mga tao — ang mga tagumpay, sakuna, imbensyon, at ideya na humubog sa mundong ginagalawan natin ngayon. Ito ay hindi lamang isang listahan ng mga petsa at pangalan. Ang pag-unawa sa kasaysayan ay nakakatulong sa iyo na maunawaan kung bakit naroroon ang mga hangganan, kung bakit nagsasalita ang mga tao ng mga wikang kanilang sinasalita, kung bakit mayaman ang ilang bansa habang ang iba naman ay hindi, at kung bakit nagpapatuloy pa rin ang mga salungatan na tila sinaunang panahon.
 Sinasaklaw ng file na ito ang mga pangunahing panahon at tema sa kasaysayan ng mundo, mula sa mga unang sibilisasyon hanggang sa kasalukuyan.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kamusi ya Teknolojia
 Faharasa ya marejeleo inayofunika miundo ya AI, maunzi, vigezo, na dhana za msingi
 katika AI ya kisasa na mazingira ya kompyuta.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uboreshaji
 Uboreshaji ni hisabati ya kupata suluhisho bora kutoka kwa seti ya masuluhisho yanayowezekana. Inauliza: ikipewa kazi na vizuizi, ni pembejeo gani hupunguza (au kuongeza) pato? Uboreshaji ni injini ya kujifunza kwa mashine - kufunza modeli kunamaanisha kupunguza utendaji wa upotezaji. Inaonekana katika utafiti wa uendeshaji, uchumi, muundo wa uhandisi, na karibu kila nyanja ya kiasi.
 ---

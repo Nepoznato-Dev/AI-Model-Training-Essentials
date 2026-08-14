@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mathématiques
 Les mathématiques ne sont pas seulement une matière étudiée à l’école : elles sous-tendent presque tous les domaines techniques. La physique l'utilise pour décrire l'univers. L'informatique l'utilise pour concevoir des algorithmes. L'apprentissage automatique l'utilise pour optimiser les poids. La finance l’utilise pour évaluer le risque. La maîtrise de chaque branche n’est pas nécessaire, mais comprendre le paysage – et savoir où chaque branche s’applique – facilite la compréhension d’autres sujets.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Kotlin
 Kotlin, JetBrains tarafından geliştirilen ve ilk olarak 2011'de piyasaya sürülen (2016'da 1.0) statik olarak yazılmış, derlenmiş bir programlama dilidir. Java Sanal Makinesi (JVM) üzerinde çalışır ve Java ile tamamen birlikte çalışabilir; bu, Kotlin'deki herhangi bir Java kitaplığını kullanabileceğiniz ve herhangi bir sarmalayıcı olmadan Java'dan Kotlin kodunu çağırabileceğiniz anlamına gelir. Google, 2017 yılında Kotlin'i Android geliştirme için tercih edilen dil olarak duyurdu ve o zamandan beri baskın Android dili haline geldi.
 Kotlin, Java'nın sorunlu noktalarını düzeltmek için tasarlandı: ayrıntı, boş işaretçi istisnaları ve eksik modern özellikler. Sonuç, devasa Java ekosistemiyle tam uyumluluğu korurken, modernleştirilmiş bir Java hissi veren (özlü, güvenli ve etkileyici) bir dildir.

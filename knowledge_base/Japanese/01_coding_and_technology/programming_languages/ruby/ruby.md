@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ルビー
 Ruby は、動的インタプリタ型オブジェクト指向プログラミング言語で、まつもとゆきひろ "Matz" によって作成され、1995 年に日本で初めてリリースされました。 Ruby はプログラマーの幸福を重視して設計されています。その構文はエレガントで自然で、ほとんど英語のように読めます。 Ruby では、整数やブール値などのプリミティブ型も含めて、すべてがオブジェクトです。 Ruby は、Ruby on Rails Web フレームワークで最もよく知られています。このフレームワークは、構成よりも慣例とラピッド プロトタイピングを普及させることで Web 開発に革命をもたらしました。
 Rails 以外にも、Ruby はスクリプト作成、自動化、DevOps ツール (Chef、Puppet)、および汎用言語として使用されます。表現力豊かな構文と強力なメタプログラミング機能により、書くのが楽しくなります。

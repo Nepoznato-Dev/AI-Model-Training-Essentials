@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — Mga Karaniwang Pagkakamali at Anti-Pattern
 Ang dokumentong ito ay nag-catalog ng mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa TypeScript. Ang bawat entry ay nagpapakita ng maling diskarte, nagpapaliwanag kung bakit ito nabigo, at nagbibigay ng tamang solusyon.
 ---

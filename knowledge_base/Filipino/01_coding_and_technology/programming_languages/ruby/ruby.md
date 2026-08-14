@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Ruby
 Ang Ruby ay isang dynamic, interpreted, object-oriented programming language na nilikha ni Yukihiro "Matz" Matsumoto at unang inilabas noong 1995 sa Japan. Dinisenyo si Ruby na may pagtuon sa kaligayahan ng programmer — elegante at natural ang syntax nito, halos parang Ingles ang pagbabasa. Ang lahat sa Ruby ay isang bagay, kabilang ang mga primitive na uri tulad ng mga integer at boolean. Kilala si Ruby para sa Ruby on Rails web framework, na nagpabago ng web development sa pamamagitan ng pagpapasikat ng convention sa configuration at mabilis na prototyping.
 Higit pa sa Rails, ginagamit si Ruby para sa scripting, automation, DevOps tooling (Chef, Puppet), at bilang isang pangkalahatang layunin na wika. Ang nagpapahayag na syntax nito at malakas na mga kakayahan sa metaprogramming ay nagpapasaya sa pagsulat.

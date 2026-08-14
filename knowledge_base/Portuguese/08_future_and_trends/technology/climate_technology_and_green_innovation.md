@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tecnologia Climática e Inovação Verde
 A tecnologia climática abrange as ferramentas, sistemas e inovações concebidas para reduzir as emissões de gases com efeito de estufa, adaptar-se às alterações climáticas e fazer a transição da economia global para uma base sustentável. É sem dúvida o domínio tecnológico mais importante do século XXI – a diferença entre um aquecimento controlável de 1,5°C e um catastrófico +3°C depende em grande parte da rapidez com que estas tecnologias podem ser implementadas em grande escala. O desafio não é apenas científico, mas também económico, político e social.
 ---

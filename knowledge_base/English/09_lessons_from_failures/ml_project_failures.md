@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Machine Learning Project Failures
 
 Machine learning projects fail at an alarming rate — industry estimates suggest 60-85% of ML projects never reach production. The failures aren't usually in the algorithms; they're in the process, the data, the expectations, and the organisational context. Understanding why ML projects fail is essential for anyone building ML systems, because the failure modes are predictable and largely avoidable.

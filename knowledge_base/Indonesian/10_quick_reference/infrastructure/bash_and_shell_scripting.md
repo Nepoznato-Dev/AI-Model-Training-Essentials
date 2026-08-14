@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lembar Curang Skrip Bash dan Shell
 Referensi praktis untuk menulis skrip shell di Bash — shell default di sebagian besar sistem Linux dan macOS. Meliputi sintaksis, pola umum, pemrosesan teks, dan satu kalimat yang berguna.
 ---

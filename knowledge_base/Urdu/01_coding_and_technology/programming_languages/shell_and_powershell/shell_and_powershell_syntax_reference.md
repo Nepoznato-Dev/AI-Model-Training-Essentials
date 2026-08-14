@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # شیل اور پاور شیل - نحوی حوالہ
 یہ دستاویز Bash اور PowerShell کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ دونوں شیلوں کے لیے مکمل اسکرپٹنگ پیٹرن، پائپ لائنز، پروسیس مینجمنٹ، اور آٹومیشن محاوروں پر توجہ مرکوز کرکے مرکزی شیل حوالہ کی تکمیل کرتا ہے۔
 ---

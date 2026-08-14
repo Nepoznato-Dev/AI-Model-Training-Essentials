@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Roadmap zur Weltraumforschung
 ## Übersicht
 Wir erleben ein neues goldenes Zeitalter der Weltraumforschung. Das Artemis-Programm der NASA bringt Menschen zum Mond zurück. SpaceX baut eine vollständig wiederverwendbare Rakete für den Mars. China hat seine eigenen ehrgeizigen Mond- und Marspläne. Und eine wachsende Konstellation privater Unternehmen öffnet den Weltraum für den Handel – vom Satelliteninternet bis zum Weltraumtourismus. Hier ist die Roadmap, vom Mond zum Mars und darüber hinaus.

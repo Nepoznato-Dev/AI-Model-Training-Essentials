@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンでタイプセーフな TypeScript コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

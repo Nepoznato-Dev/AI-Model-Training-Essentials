@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia — Sözdizimi Referansı
 Bu belge Julia (1.x) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, çoklu gönderime, makrolara, metaprogramlamaya ve bilimsel hesaplamaya odaklanarak ana Julia referansını tamamlar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kegagalan Desain dan Integrasi API
 API (Antarmuka Pemrograman Aplikasi) adalah jaringan penghubung perangkat lunak modern — API memungkinkan layanan berkomunikasi, memungkinkan pihak ketiga berintegrasi, dan memungkinkan tim bekerja secara mandiri. Ketika desain API berjalan salah, konsekuensinya akan dirasakan oleh setiap sistem yang bergantung padanya: integrasi yang rusak, kerentanan keamanan, frustrasi pengembang, dan penulisan ulang yang mahal. Kegagalan integrasi — ketika sistem tidak dapat berkomunikasi dengan andal — merupakan salah satu sumber insiden produksi yang paling umum.
 ---

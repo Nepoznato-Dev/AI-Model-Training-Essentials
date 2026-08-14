@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ج - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والمكتبات والبنية التحتية الأساسية في النظام البيئي C.
 ---

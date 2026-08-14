@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Disenyo at Kultura ng Organisasyon
 Ang disenyong pang-organisasyon ay ang sadyang pagsasaayos ng istruktura, proseso, tungkulin, at mga karapatan sa pagpapasya upang mabisang maisakatuparan ang diskarte. Ang kultura ay ang ibinahaging pagpapahalaga, paniniwala, kaugalian, at pag-uugali na humuhubog sa kung paano aktwal na nagtutulungan ang mga tao. Ang istruktura ay nagbibigay ng balangkas; humuhubog sa pag-uugali ng kultura. Ang isang istraktura ay maaaring muling idisenyo sa papel, ngunit kung ang kultura ay hindi sumusuporta sa pagbabago, ang pagpapatupad ay mabibigo. Katulad nito, ang isang malakas na kultura na ipinares sa isang hindi epektibong istraktura ay unti-unting magpapapahina sa pagganap ng organisasyon. Ang mga pinakaepektibong organisasyon ay tumutugon sa pareho — at kinikilala na sila ay malalim na magkakaugnay.
 ---

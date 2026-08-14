@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Muundo wa Shirika na Utamaduni
 Muundo wa shirika ni mpangilio wa makusudi wa muundo, michakato, majukumu, na haki za maamuzi ili kutekeleza mkakati kwa ufanisi. Utamaduni ni maadili ya pamoja, imani, kanuni na tabia zinazounda jinsi watu wanavyofanya kazi pamoja. Muundo hutoa mfumo; utamaduni hutengeneza tabia. Muundo unaweza kufanywa upya kwenye karatasi, lakini ikiwa utamaduni hauungi mkono mabadiliko, utekelezaji utashindwa. Vile vile, utamaduni dhabiti uliounganishwa na muundo usiofaa utadhoofisha utendaji wa shirika hatua kwa hatua. Mashirika yenye ufanisi zaidi hushughulikia yote mawili - na kutambua kwamba yana uhusiano wa ndani.
 ---

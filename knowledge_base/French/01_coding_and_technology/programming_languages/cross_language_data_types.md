@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Comparaison multilingue — Types et structures de données
 ## Types primitifs
 | Tapez | Python | JavaScript | Rouille | Aller | Java | C | C++ | C# |

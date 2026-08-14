@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R — 语法参考
 本文档提供了 R (4.x) 的全面、结构化语法参考。它通过关注详尽的语法模式、tidyverse 生态系统、数据操作、统计建模和可视化来补充主要的 R 参考。
 ---

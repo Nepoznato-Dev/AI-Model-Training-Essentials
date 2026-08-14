@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yönetim ve Proje Metodolojileri
 İnsanları ve projeleri yönetmek, herhangi bir kuruluştaki en zorlu sorumluluklar arasındadır. Teknik beceriler giriş sağlar ancak ekiplere liderlik etme, karar verme, etkili iletişim kurma ve sonuçları sunma yeteneği hedeflere ulaşılıp ulaşılamayacağını belirler. Bu dosya, etkili yöneticilerin ve proje liderlerinin uyguladığı çerçeveleri, metodolojileri ve pratik becerileri kapsar.
 ---

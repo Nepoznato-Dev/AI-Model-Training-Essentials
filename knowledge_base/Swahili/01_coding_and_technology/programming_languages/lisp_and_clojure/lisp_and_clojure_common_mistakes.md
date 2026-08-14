@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure - Makosa ya Kawaida & Miundo ya Kupinga
 Hati hii inaorodhesha makosa ya kawaida, mitego, na vielelezo vya kupinga katika Lisp na Clojure pamoja na masahihisho.
 ---

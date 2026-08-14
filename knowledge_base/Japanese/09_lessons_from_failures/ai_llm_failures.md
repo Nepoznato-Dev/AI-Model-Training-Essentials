@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI と LLM の失敗
 このドキュメントでは、幻覚、誤った情報、推論エラー、プロンプト関連の問題など、AI および大規模言語モデル システムにおける一般的な障害モードをまとめています。
 ---

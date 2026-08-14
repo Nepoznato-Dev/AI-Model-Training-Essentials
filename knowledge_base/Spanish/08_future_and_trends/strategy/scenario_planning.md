@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Planificación de escenarios
 ## Descripción general
 Nadie puede predecir el futuro, pero puedes prepararte para varios posibles. La planificación de escenarios, nacida en los think tanks de la Guerra Fría y perfeccionada por Shell durante las crisis petroleras de los años 1970, es una forma de pensar sistemáticamente sobre la incertidumbre. En lugar de apostar por un pronóstico, construye historias coherentes sobre cómo podrían desarrollarse las cosas y luego prueba sus decisiones comparándolas con todas ellas. Así es como funciona la metodología, junto con escenarios en dominios clave.

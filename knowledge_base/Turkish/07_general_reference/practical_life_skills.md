@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pratik Yaşam Becerileri
 Okul size matematik öğretir ancak nadiren vergi beyanında bulunmayı, dengeli bir yemek pişirmeyi veya bir evin bakımını yapmayı öğretir. Bunlar günlük yaşam kalitenizi etkileyen pratik yeterliliklerdir; sizi kendi kendine yeterli ve mali açıdan dayanıklı kılan türden bilgilerdir. Bu dosya esaslar için yoğun bir referanstır.
 ---

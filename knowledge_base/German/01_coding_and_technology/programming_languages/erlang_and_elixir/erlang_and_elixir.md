@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixier
 Erlang wurde 1986 von Ericsson für die Stromversorgung von Telefonschaltern entwickelt – was erklärt, warum es Parallelität, Fehlertoleranz und verteilte Systeme besser beherrscht als fast alles andere. Erlang-Prozesse sind leichtgewichtig, isoliert und kommunizieren nur über die Weitergabe von Nachrichten. Wenn ein Prozess abstürzt, wird er von einem Supervisor neu gestartet. Diese „Lass es abstürzen“-Philosophie führt zu Systemen, die jahrelang ohne Ausfallzeiten laufen.
 Elixir ist eine moderne Sprache, die 2012 von Jose Valim auf Erlangs VM (BEAM) aufgebaut wurde. Sie behält alles bei, was Erlang bietet – Parallelität, Fehlertoleranz, Verteilung –, fügt aber eine benutzerfreundliche Syntax, Metaprogrammierung und hervorragende Tools (Mix-Paketmanager, Hex-Paketregistrierung) hinzu. Elixir wird häufig für Webanwendungen (über das Phoenix-Framework), Echtzeitsysteme und eingebettete Geräte (über Nerves) verwendet.

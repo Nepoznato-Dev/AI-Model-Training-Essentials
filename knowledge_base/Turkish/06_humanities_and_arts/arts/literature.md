@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Edebiyat
 Edebiyat insanlığın en kalıcı düşünce, duygu ve deneyim kaydıdır. Kadim uygarlıkların sözlü destanlarından günümüzün dijital çağ romanlarına kadar her eser, kendinden öncekilerle diyalog halindedir. Edebi türleri, akımları ve teknikleri anlamak, okuma ve bu eserleri üreten kültürleri anlama konusunda size daha zengin bir bakış açısı kazandırır.
 ---

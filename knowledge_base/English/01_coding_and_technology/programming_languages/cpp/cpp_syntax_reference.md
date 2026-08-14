@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for Modern C++ (C++17/20/23). It complements the main C++ reference by focusing on exhaustive syntax patterns, operator tables, template mechanics, and modern features.

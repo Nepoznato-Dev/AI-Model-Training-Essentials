@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R — Sözdizimi Referansı
 Bu belge R (4.x) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, düzenli ekosisteme, veri manipülasyonuna, istatistiksel modellemeye ve görselleştirmeye odaklanarak ana R referansını tamamlar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 雲端架構
 雲端運算從根本上改變了組織建置、部署和擴展軟體的方式。您無需購買和維護實體伺服器，而是可以按需配置運算資源，按使用量付費，並在幾分鐘內進行全球擴展。該文件涵蓋了您需要了解的核心概念、架構模式、服務和最佳實踐。
 ---

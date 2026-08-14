@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript – Versionsverlauf und Entwicklung
 ## Zeitleiste
 | Version | Erscheinungsdatum | Schlüsselthema |

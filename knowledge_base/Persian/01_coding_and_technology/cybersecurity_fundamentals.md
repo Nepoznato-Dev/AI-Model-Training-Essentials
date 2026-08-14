@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مبانی امنیت سایبری
 امنیت رشته‌ای است که باید از ابتدا در هر لایه‌ای از یک سیستم ادغام شود، نه اینکه به عنوان یک فکر بعدی اضافه شود. چه ساختن یک برنامه وب، مدیریت زیرساخت، یا ارسال یک API، درک چشم انداز تهدید و اصول اساسی دفاع ضروری است.
 ---

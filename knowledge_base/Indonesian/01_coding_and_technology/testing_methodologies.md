@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metodologi Pengujian
 Pengujian adalah cara Anda mendapatkan keyakinan bahwa kode Anda berfungsi — dan yang lebih penting, bahwa perubahan pada kode tersebut tidak merusak apa yang sudah berfungsi. Pengujian yang baik mendeteksi bug sebelum pengguna melakukannya, mendokumentasikan perilaku yang diharapkan, dan memungkinkan pemfaktoran ulang tanpa rasa takut. File ini mencakup spektrum penuh strategi pengujian, mulai dari pengujian unit hingga pengujian menyeluruh, dan prinsip-prinsip yang membuat pengujian menjadi efektif.
 ---

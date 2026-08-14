@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++
 C++ は、Bjarne Stroustrup によって作成された汎用のコンパイル済みプログラミング言語で、1985 年に初めてリリースされました。C++ は、オブジェクト指向機能、ジェネリックス、および最新バージョン (C++11 以降) では、ラムダ、スマート ポインター、標準テンプレート ライブラリ (STL) などの高レベルの抽象化によって C を拡張します。 C++ は、「ゼロオーバーヘッド抽象化」の原則に従います。つまり、使用しない機能に対して料金を支払うべきではありません。
 C++ は、高いパフォーマンスと表現力の両方が必要な場合に最適な言語です。ゲーム エンジン (Unreal Engine)、ブラウザ (Chrome、Firefox)、データベース (MongoDB)、オペレーティング システム (Windows および macOS の一部)、金融取引システム、およびリアルタイム シミュレーションを強化します。

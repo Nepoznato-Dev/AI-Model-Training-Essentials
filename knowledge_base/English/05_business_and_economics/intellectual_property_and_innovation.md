@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Intellectual Property and Innovation
 
 Intellectual property (IP) refers to creations of the mind — inventions, artistic works, brand names, designs, trade secrets — that the law protects from unauthorised use. Innovation is the process of turning ideas into value. IP law exists to balance two competing interests: rewarding creators (by giving them temporary monopolies) and benefiting society (by ensuring knowledge eventually becomes freely available). Understanding IP is essential for anyone building products, creating content, running a business, or working in research.

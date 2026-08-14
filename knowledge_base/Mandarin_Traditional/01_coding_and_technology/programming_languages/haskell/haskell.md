@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 哈斯克爾
 Haskell 是一種純函數式、靜態型別、延遲計算的程式語言。 Haskell 於 1990 年首次標準化（Haskell 90），並透過多個版本進行完善（Haskell 2010 是當前標準），Haskell 以其嚴謹性、強大的類型系統（具有類型類、單子和代數資料類型）以及對類型正確性的強調而聞名。
 Haskell 不是主流語言，但其影響力卻是巨大的。諸如 monad、惰性求值和類型類之類的概念影響了 Rust、Swift、Kotlin、Scala 和 TypeScript。 Haskell 用於金融（渣打銀行、巴克萊銀行）、編譯器（GHC）和形式驗證。

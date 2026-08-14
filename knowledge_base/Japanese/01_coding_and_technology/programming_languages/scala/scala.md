@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #スカラ
 Scala (スケーラブル言語) は、オブジェクト指向と関数型プログラミングのパラダイムを組み合わせた、静的に型指定され、コンパイルされたプログラミング言語です。 Martin Odersky によって作成され、2004 年に最初にリリースされた Scala は、JVM (JavaScript および Scala Native 用の Scala.js も) 上で実行されます。これは、Java の完全な相互運用性を維持しながら、Java の冗長性に対処するように設計されました。
 Scala は、Apache Spark (ビッグ データ処理フレームワーク) の背後にある言語であり、データ エンジニアリング、分散システム、バックエンド サービスで広く使用されています。 Twitter (現在は X)、LinkedIn、Netflix、The Guardian などの企業が Scala を使用しています。

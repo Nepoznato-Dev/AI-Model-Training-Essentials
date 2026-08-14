@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # anak panah
 Dart adalah bahasa pemrograman yang dioptimalkan untuk klien yang dikembangkan oleh Google, pertama kali dirilis pada tahun 2013. Meskipun Dart awalnya diposisikan sebagai pengganti JavaScript untuk browser web, Dart menemukan tujuan utamanya sebagai bahasa di balik **Flutter** — perangkat UI lintas platform Google untuk membangun aplikasi seluler, web, desktop, dan tersemat dari satu basis kode.
 Dart menggabungkan fitur terbaik dari bahasa modern: berorientasi objek, memiliki pengetikan opsional (keamanan nol sejak Dart 3), mendukung pemrograman asinkron dengan`async`/`await`, dan mengkompilasi ke kode mesin asli (untuk seluler/desktop) dan JavaScript (untuk web).

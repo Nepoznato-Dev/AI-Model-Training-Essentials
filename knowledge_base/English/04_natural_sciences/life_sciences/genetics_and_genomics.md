@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genetics and Genomics
 
 Genetics is the study of heredity — how traits are passed from parents to offspring through DNA. Genomics is the study of entire genomes: all the genes, the non-coding regions, how they interact, and how they vary across individuals and populations. The transition from genetics to genomics was driven by sequencing technology — we went from studying one gene at a time to reading entire genomes in hours, generating data that is transforming medicine, agriculture, forensics, and our understanding of evolution.

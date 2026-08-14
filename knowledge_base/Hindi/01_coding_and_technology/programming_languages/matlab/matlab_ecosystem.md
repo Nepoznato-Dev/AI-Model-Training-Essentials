@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका MATLAB पारिस्थितिकी तंत्र में आवश्यक उपकरण, टूलबॉक्स और बुनियादी ढांचे को शामिल करती है।
 ---

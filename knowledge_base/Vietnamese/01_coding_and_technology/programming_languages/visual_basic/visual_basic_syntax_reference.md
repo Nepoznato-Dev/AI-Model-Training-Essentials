@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho Visual Basic (VB.NET). Nó bổ sung cho tham chiếu Visual Basic chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, các tính năng OOP, LINQ, async/await và các thành ngữ tích hợp .NET.
 ---

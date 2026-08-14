@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 遗传学和基因组学
 遗传学是一门研究遗传的学科，即性状如何通过 DNA 从父母传给后代。基因组学是对整个基因组的研究：所有基因、非编码区域、它们如何相互作用以及它们如何在个体和人群中变化。从遗传学到基因组学的转变是由测序技术推动的——我们从一次研究一个基因发展到在数小时内读取整个基因组，生成的数据正在改变医学、农业、法医学以及我们对进化的理解。
 ---

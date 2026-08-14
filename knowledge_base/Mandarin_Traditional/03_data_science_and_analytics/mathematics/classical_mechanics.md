@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 經典力學
 經典力學描述了物體在力的影響下的運動。從下落的蘋果到繞著軌道運行的行星，從振動的弦到碰撞的粒子，它的原理支配著宏觀世界。除了物理應用之外，經典力學還催生了變分法、辛幾何以及支撐量子力學和現代最佳化的哈密頓框架。
 ---

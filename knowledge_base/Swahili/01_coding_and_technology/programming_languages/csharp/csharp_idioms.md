@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C# - Miundo ya nahau na Mbinu Bora
 Mwongozo huu unashughulikia mifumo ya nahau na mbinu bora za kuandika msimbo safi, wa kisasa wa C# (12+).
 ---

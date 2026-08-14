@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — Erros comuns e antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns em C++. Cada entrada mostra a abordagem incorreta, explica por que ela falha e fornece a solução correta. O C++ moderno (C++ 11/14/17/20) fornece ferramentas para evitar a maioria das armadilhas clássicas.
 ---

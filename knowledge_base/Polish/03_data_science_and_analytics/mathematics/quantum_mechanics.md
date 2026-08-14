@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mechanika kwantowa
 Mechanika kwantowa to teoria fizyki w najmniejszych skalach — atomów, elektronów, fotonów i podstawowych cząstek natury. Zastępuje deterministyczny świat mechaniki klasycznej prawdopodobieństwami, superpozycjami i splątaniem. Pomimo swojej sprzecznej z intuicją natury, mechanika kwantowa jest najdokładniej przetestowaną teorią w całej nauce. Obecnie jego zasady mają bezpośrednie zastosowanie w obliczeniach realizowanych za pomocą komputerów kwantowych, które obiecują rozwiązywać pewne problemy wykładniczo szybciej niż klasyczne maszyny.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ - Makosa ya Kawaida & Miundo ya Kupinga
 Hati hii inaorodhesha makosa ya kawaida, mitego, na mifumo ya kupingana katika C++. Kila ingizo linaonyesha njia isiyo sahihi, inaelezea kwa nini inashindwa, na hutoa suluhisho sahihi. C++ ya kisasa (C++11/14/17/20) hutoa zana ili kuepuka mitego mingi ya kawaida.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Сравнение облачных сервисов
 Параллельное сравнение трех основных поставщиков облачных услуг — AWS, Azure и Google Cloud — по вычислительным ресурсам, хранилищам, базам данных, искусственному интеллекту и машинному обучению, сетям, мониторингу и инфраструктуре как код. Полезно для архитекторов, решающих, какую платформу использовать, или переноса сервисов из одного облака в другое.
 ---

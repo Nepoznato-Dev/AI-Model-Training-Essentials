@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ R ماحولیاتی نظام میں ضروری ٹولز، پیکجز اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

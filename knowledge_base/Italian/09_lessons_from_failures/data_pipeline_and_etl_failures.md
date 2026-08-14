@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Errori nella pipeline di dati e nell'ETL
 Le pipeline di dati sono l'impianto idraulico delle organizzazioni moderne: spostano i dati dai sistemi di origine attraverso trasformazioni nei database, nei magazzini e nei laghi dove vengono utilizzati per l'analisi, l'apprendimento automatico e il processo decisionale. Quando funzionano, nessuno se ne accorge. Quando falliscono, le decisioni vengono prese su dati obsoleti, i modelli si addestrano sulla spazzatura, i report mostrano numeri impossibili e la fiducia nell’intera piattaforma dati si indebolisce. I guasti alle pipeline di dati sono tra i guasti più comuni e più costosi nelle organizzazioni tecnologiche.
 ---

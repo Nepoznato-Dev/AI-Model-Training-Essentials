@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Filsafat dan Berpikir Kritis
 Filsafat adalah studi sistematis tentang pertanyaan mendasar tentang pengetahuan, realitas, dan keberadaan. Hal ini memberikan kerangka kerja untuk mengevaluasi apa yang dianggap sebagai pengetahuan, apa yang layak dilakukan, dan bagaimana membedakan argumen yang masuk akal dari argumen yang lemah. Berpikir kritis adalah penerapan praktis dari kerangka ini: keterampilan menganalisis klaim, mengidentifikasi alasan yang salah, dan membuat keputusan yang lebih tepat. File ini mencakup ide-ide utama, alat untuk mengevaluasinya, dan bias kognitif yang mempengaruhi setiap orang.
 ---

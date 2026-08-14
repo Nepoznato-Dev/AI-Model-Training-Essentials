@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - इकोसिस्टम और टूलींग गाइड
 यह मार्गदर्शिका SQL पारिस्थितिकी तंत्र में आवश्यक डेटाबेस, उपकरण और बुनियादी ढांचे को शामिल करती है।
 ---

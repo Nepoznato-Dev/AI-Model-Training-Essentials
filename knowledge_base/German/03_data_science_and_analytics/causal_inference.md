@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kausalschluss
 Kausalschluss ist die Wissenschaft, die bestimmt, ob eine Sache tatsächlich eine andere verursacht – und nicht nur, ob sie miteinander korrelieren. Die Korrelation sagt Ihnen, dass sich zwei Variablen gemeinsam bewegen. Die Kausalität sagt Ihnen, dass eine Veränderung des einen auch das andere verändert. Diese Unterscheidung ist in der Medizin (funktioniert dieses Medikament?), in der Politik (reduziert diese Intervention die Armut?), in der Wirtschaft (steigert diese Werbekampagne den Umsatz?) und in der Wissenschaft (erklärt dieser Mechanismus das Phänomen?) von enormer Bedeutung.
 ---

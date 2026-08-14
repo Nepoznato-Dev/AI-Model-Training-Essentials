@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # قضايا موثوقية النظام
 يقوم هذا المستند بدمج مشكلات الموثوقية بما في ذلك تسرب الذاكرة وظروف السباق وأخطاء البرمجة المتزامنة وفشل تصميم النظام.
 ---

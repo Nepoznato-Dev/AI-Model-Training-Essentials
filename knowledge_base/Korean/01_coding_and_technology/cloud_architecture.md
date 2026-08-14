@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 클라우드 아키텍처
 클라우드 컴퓨팅은 조직이 소프트웨어를 구축, 배포 및 확장하는 방식을 근본적으로 변화시켰습니다. 물리적 서버를 구입하고 유지 관리하는 대신 필요에 따라 컴퓨팅 리소스를 프로비저닝하고, 사용한 만큼만 비용을 지불하고, 몇 분 만에 전 세계적으로 확장할 수 있습니다. 이 파일은 알아야 할 핵심 개념, 아키텍처 패턴, 서비스 및 모범 사례를 다룹니다.
 ---

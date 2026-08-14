@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ 人工知能
 人工知能とは、人間が行う場合に知能が必要となるようなことを実行できる機械を構築する試みです。顔の認識、音声の理解、意思決定、テキストの書き込み、ゲームのプレイ、車の運転、病気の診断などです。この分野はコンピューティングそのものと同じくらい古いものです。アラン・チューリングは「機械は考えることができるのか?」と問いかけていました。しかし、最近（2020 年代）の能力の爆発的な進歩により、AI は人類の歴史の中で最も重要かつ争点となっているテクノロジーの 1 つになりました。
 ---

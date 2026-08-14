@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # जूलिया - सिंटेक्स संदर्भ
 यह दस्तावेज़ जूलिया (1.x) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, मल्टीपल डिस्पैच, मैक्रोज़, मेटाप्रोग्रामिंग और वैज्ञानिक कंप्यूटिंग पर ध्यान केंद्रित करके मुख्य जूलिया संदर्भ को पूरक करता है।
 ---

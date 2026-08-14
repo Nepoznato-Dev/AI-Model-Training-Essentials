@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # دارت - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها برای نوشتن کد دارت تمیز و اصطلاحی را پوشش می دهد.
 ---

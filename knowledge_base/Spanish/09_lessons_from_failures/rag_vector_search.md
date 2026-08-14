@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fallos de búsqueda de RAG y vectores
 Este documento consolida fallas comunes en los sistemas de recuperación-generación aumentada (RAG), el uso de incorporación y las implementaciones de búsqueda de vectores.
 ---

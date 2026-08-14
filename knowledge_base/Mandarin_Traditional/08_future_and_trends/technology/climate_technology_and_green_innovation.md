@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 氣候科技與綠色創新
 氣候技術包括旨在減少溫室氣體排放、適應氣候變遷以及使全球經濟轉向永續發展的工具、系統和創新。這可以說是 21 世紀最重要的技術領域——可控的 1.5°C 升溫與災難性的 3°C+ 之間的差異在很大程度上取決於這些技術大規模部署的速度。挑戰不僅是科學方面的，而且是經濟、政治和社會方面的。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Bagay na Pascal
 Ang Delphi ay isang object-oriented programming language batay sa Pascal, na orihinal na binuo ni Borland (mamaya Embarcadero, ngayon ay Idera). Unang inilabas noong 1995 bilang "Delphi 1", ito ay idinisenyo para sa mabilis na pag-unlad ng aplikasyon (RAD) ng mga Windows desktop application. Ang wika ay pormal na kilala bilang Object Pascal, at ang Delphi IDE ay nagbibigay ng isang visual form na taga-disenyo, pinagsamang mga tool sa database, at isang malakas na compiler.
 Ang Delphi ay isa sa mga pinakasikat na tool sa pagbuo ng Windows noong huling bahagi ng 1990s at unang bahagi ng 2000s. Bagama't ang katanyagan nito ay bumagsak nang malaki, nagpapanatili ito ng nakalaang user base, partikular sa mga enterprise desktop application, database front-end, at legacy system maintenance. Sinusuportahan ng Modern Delphi (11/12) ang cross-platform development para sa Windows, macOS, iOS, at Android sa pamamagitan ng FireMonkey (FMX) framework.

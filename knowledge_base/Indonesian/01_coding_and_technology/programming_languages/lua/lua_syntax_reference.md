@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Lua (5.4). Ini melengkapi referensi utama Lua dengan berfokus pada pola sintaksis yang lengkap, tabel dan metatabel, coroutine, dan filosofi desain unik Lua.
 ---

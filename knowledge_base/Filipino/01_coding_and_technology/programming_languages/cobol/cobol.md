@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL
 Ang COBOL (Common Business-Oriented Language) ay isa sa mga pinakalumang programming language na ginagamit pa, na unang binuo noong 1959. Idinisenyo ito para sa pagproseso ng data ng negosyo — mga financial system, payroll, banking, insurance, at mga aplikasyon ng gobyerno. Ang tulad-Ingles na syntax ng COBOL ay nilayon upang mabasa ng mga tagapamahala ng negosyo, hindi lamang ng mga programmer.
 Sa kabila ng edad nito, pinoproseso ng COBOL ang tinatayang 30% ng lahat ng transaksyon sa negosyo sa buong mundo. Ang mga pangunahing bangko, ahensya ng gobyerno (kabilang ang US Social Security Administration), at mga kompanya ng seguro ay umaasa pa rin sa COBOL mainframe system. Ang Y2K bug scare noong 1999 ay nagdala ng COBOL sa kamalayan ng publiko, at ang wika ay patuloy na nagpapatakbo ng kritikal na imprastraktura sa buong mundo.

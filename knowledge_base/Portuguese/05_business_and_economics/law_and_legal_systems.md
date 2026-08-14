@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Direito e Sistemas Jurídicos
 A lei é o conjunto de regras que uma sociedade concorda em aplicar por meio de suas instituições. Não é o mesmo que moralidade – você pode fazer algo legal que é imoral e algo ilegal que é moralmente justificado. A lei existe para proporcionar previsibilidade: para estabelecer o que é permitido, o que é proibido e o que acontece quando as regras são quebradas. Sem ele, as disputas são resolvidas pelo poder. Com ele, as disputas são resolvidas por processo.
 Este arquivo abrange os principais sistemas jurídicos, os principais ramos do direito e os conceitos que moldam o funcionamento dos sistemas jurídicos na prática.

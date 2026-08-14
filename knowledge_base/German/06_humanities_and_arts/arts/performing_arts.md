@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Darstellende Künste
 In den darstellenden Künsten – Theater, Film, Tanz und Musikdarbietung – trifft Kunst auf die lebendige Präsenz eines Publikums. Anders als ein Gemälde an der Wand oder ein Buch auf einem Regal entfaltet sich die Performance in Echtzeit und schafft ein gemeinsames Erlebnis zwischen Künstler und Zuschauer, das seit Tausenden von Jahren für die menschliche Kultur von zentraler Bedeutung ist.
 ---

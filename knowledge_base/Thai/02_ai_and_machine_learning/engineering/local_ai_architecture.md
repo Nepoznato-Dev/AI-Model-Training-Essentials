@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # สถาปัตยกรรม AI ท้องถิ่น
 คู่มือที่เป็นประโยชน์ในการใช้งานโมเดลภาษาขนาดใหญ่บนอุปกรณ์ทั้งหมด - ข้อควรพิจารณาด้านฮาร์ดแวร์ กลไกการอนุมาน การเพิ่มประสิทธิภาพหน่วยความจำ และการออกแบบระบบสำหรับการใช้งาน Edge
 ---

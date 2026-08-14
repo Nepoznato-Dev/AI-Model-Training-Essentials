@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # شیل اور پاور شیل - ایکو سسٹم اور ٹولنگ گائیڈ
 اس گائیڈ میں شیل اسکرپٹنگ (Bash/Zsh) اور PowerShell کے لیے ضروری ٹولز، فریم ورک، اور انفراسٹرکچر کا احاطہ کیا گیا ہے۔
 ---

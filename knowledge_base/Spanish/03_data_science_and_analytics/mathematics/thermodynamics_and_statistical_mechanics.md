@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Termodinámica y Mecánica Estadística
 La termodinámica describe el comportamiento macroscópico de los sistemas en términos de temperatura, presión y entropía, sin saber cómo son los átomos. La mecánica estadística explica la termodinámica de abajo hacia arriba: deriva propiedades macroscópicas del comportamiento microscópico de un gran número de partículas. Juntos, proporcionan la comprensión más profunda de la energía, la entropía y el equilibrio, conceptos que han migrado a la teoría de la información, el aprendizaje automático y más allá.
 ---

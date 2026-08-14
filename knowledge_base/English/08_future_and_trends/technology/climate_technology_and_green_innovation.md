@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Climate Technology and Green Innovation
 
 Climate technology encompasses the tools, systems, and innovations designed to reduce greenhouse gas emissions, adapt to climate change, and transition the global economy to a sustainable footing. It's arguably the most important technology domain of the 21st century — the difference between a manageable 1.5°C of warming and a catastrophic 3°C+ depends largely on how quickly these technologies can be deployed at scale. The challenge is not just scientific but economic, political, and social.

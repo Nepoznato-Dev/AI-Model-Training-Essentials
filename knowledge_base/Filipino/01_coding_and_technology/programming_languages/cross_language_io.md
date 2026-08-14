@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — I/O & File Operations"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Cross-Language Comparison — I/O at File Operations
 ## Output ng Console
 | Wika | I-print sa stdout |

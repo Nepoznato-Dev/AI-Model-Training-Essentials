@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Xử lý tín hiệu
 Xử lý tín hiệu là khoa học phân tích, sửa đổi và tổng hợp tín hiệu - biểu diễn các đại lượng vật lý thay đổi theo thời gian, không gian hoặc tần số. Âm thanh, hình ảnh, video, dữ liệu cảm biến, sóng não, giá cổ phiếu - tất cả đều là tín hiệu. Các công cụ toán học xử lý tín hiệu (biến đổi Fourier, bộ lọc, lý thuyết lấy mẫu) là nền tảng cho học máy, truyền thông, hình ảnh y tế và hầu như mọi lĩnh vực hoạt động với dữ liệu.
 ---

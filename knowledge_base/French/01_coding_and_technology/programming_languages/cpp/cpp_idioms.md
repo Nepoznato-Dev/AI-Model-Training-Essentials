@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C++ — Modèles idiomatiques et meilleures pratiques
 Ce guide couvre les modèles idiomatiques et les meilleures pratiques pour écrire du code C++ (20/23) propre et moderne.
 ---

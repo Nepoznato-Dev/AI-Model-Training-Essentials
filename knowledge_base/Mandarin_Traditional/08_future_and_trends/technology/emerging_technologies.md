@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 新興技術
 ＃＃ 概述
 某些技術創造了全新的能力類別，而不是逐步改進現有的能力。量子運算旨在解決傳統機器需要數千年才能解決的問題。聚變能源提供了幾乎無限的清潔能源的可能性。腦機介面架起了思考和機器的橋樑。合成生物學能夠重寫生物密碼。以下各節描述了這些前沿領域目前所處的位置以及當前的趨勢顯示其未來的發展方向。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #استخدام الأداة
 ## Git — التحكم في الإصدار
 Git هو نظام للتحكم في الإصدار الموزع. يمتلك كل مطور نسخة كاملة من سجل المستودع على أجهزته المحلية.

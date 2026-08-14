@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 教育轉型
 ＃＃ 概述
 傳統的教育模式——在教室裡待十二年，也許上大學，然後工作——正在崩潰。人工智慧導師現在可以大規模提供個人化指導。技術變革的步伐意味著終身學習不再是可選的。雇主越來越關心你能“做什麼”，而不僅僅是你擁有什麼證書。以下是教育的重新構想。

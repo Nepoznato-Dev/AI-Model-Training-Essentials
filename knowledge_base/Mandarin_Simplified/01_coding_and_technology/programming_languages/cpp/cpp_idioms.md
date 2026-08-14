@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C++ — 惯用模式和最佳实践
 本指南涵盖了编写简洁、现代 C++ (20/23) 代码的惯用模式和最佳实践。
 ---

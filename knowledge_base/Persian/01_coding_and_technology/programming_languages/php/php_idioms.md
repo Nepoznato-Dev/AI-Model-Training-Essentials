@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها را برای نوشتن کدهای PHP تمیز و مدرن (8.3+) پوشش می دهد.
 ---

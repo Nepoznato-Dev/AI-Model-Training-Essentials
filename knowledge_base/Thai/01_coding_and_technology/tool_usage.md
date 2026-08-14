@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # การใช้เครื่องมือ
 ## Git - การควบคุมเวอร์ชัน
 Git คือระบบควบคุมเวอร์ชันแบบกระจาย นักพัฒนาทุกคนมีสำเนาประวัติพื้นที่เก็บข้อมูลฉบับเต็มบนเครื่องภายในของตน

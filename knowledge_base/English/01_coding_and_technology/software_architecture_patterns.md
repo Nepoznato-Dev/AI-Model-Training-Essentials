@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Software Architecture Patterns
 
 Architecture is the set of structural decisions about how a system is organised — what components it has, how they communicate, and where responsibilities lie. Good architecture makes a system easy to understand, modify, and scale. Bad architecture makes every change a struggle. This file covers the major patterns, when to use each, and the trade-offs involved.

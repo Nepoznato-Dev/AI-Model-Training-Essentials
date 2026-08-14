@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # فورتران — تاريخ الإصدار وتطوره
 ## الجدول الزمني
 | النسخة | سنة | الموضوع الرئيسي |

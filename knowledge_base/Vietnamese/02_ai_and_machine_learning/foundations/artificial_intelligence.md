@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #trí tuệ nhân tạo
 Trí tuệ nhân tạo là nỗ lực chế tạo những cỗ máy có thể làm những việc đòi hỏi trí thông minh nếu con người làm: nhận diện khuôn mặt, hiểu lời nói, đưa ra quyết định, viết văn bản, chơi trò chơi, lái ô tô, chẩn đoán bệnh. Lĩnh vực này cũng lâu đời như chính máy tính vậy - Alan Turing đã hỏi "Máy móc có thể suy nghĩ được không?" vào năm 1950 - nhưng sự bùng nổ về năng lực gần đây (những năm 2020) đã khiến AI trở thành một trong những công nghệ quan trọng và gây tranh cãi nhất trong lịch sử loài người.
 ---

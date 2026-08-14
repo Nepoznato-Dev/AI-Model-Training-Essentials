@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # طراحی و معماری API
 API (Application Programming Interface) نحوه صحبت اجزای نرم افزار با یکدیگر است. یک API خوب طراحی شده بصری، سازگار و لذت بخش است. طراحی ضعیف باعث سردرگمی، اشکالات و ناامیدی می شود. این فایل اصول، الگوها و شیوه‌های ساخت APIهایی را که توسعه‌دهندگان واقعاً می‌خواهند استفاده کنند، پوشش می‌دهد.
 ---

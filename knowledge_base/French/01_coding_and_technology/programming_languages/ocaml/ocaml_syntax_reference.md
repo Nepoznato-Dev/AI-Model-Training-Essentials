@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour OCaml (4.x/5.x). Il complète la référence principale d'OCaml en se concentrant sur les modèles de syntaxe exhaustifs, les types de données algébriques, la correspondance de modèles, les modules et les idiomes de programmation fonctionnelle.
 ---

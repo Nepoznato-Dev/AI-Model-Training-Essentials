@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 測試方法
 測試是您如何獲得程式碼工作的信心——更重要的是，對程式碼的更改不會破壞已經工作的內容。良好的測試可以在使用者之前發現錯誤，記錄預期行為，並實現無畏的重構。該文件涵蓋了從單元測試到端到端測試的全部測試策略，以及使測試有效的原則。
 ---

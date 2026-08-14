@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R — Odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni języka R (4.x). Uzupełnia główne odniesienia do języka R, koncentrując się na wyczerpujących wzorcach składni, ekosystemie tidyverse, manipulacji danymi, modelowaniu statystycznym i wizualizacji.
 ---

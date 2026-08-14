@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — przewodnik po ekosystemie i narzędziach
 W tym przewodniku omówiono podstawowe narzędzia, struktury i infrastrukturę w ekosystemie Kotlin.
 ---

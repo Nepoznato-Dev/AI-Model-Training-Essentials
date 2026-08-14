@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Systemy dynamiczne
 **System dynamiczny** opisuje ewolucję stanu w czasie zgodnie z ustaloną regułą. Od orbit planet po dynamikę populacji, od wzorców pogodowych po szkolenie sieci neuronowych – teoria systemów dynamicznych dostarcza języka i narzędzi pozwalających zrozumieć, jak wszystko się zmienia. Ten plik obejmuje równania różniczkowe zwyczajne (ODE), równania różniczkowe cząstkowe (PDE), analizę stabilności, chaos i bifurkacje.
 ---

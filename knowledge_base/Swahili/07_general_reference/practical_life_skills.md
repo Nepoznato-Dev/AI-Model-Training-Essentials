@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ustadi wa Maisha kwa vitendo
 Shule hukufundisha kuhesabu lakini mara chache hukufundisha jinsi ya kutoza kodi, kupika chakula kilichosawazishwa, au kutunza nyumba. Hizi ndizo ujuzi wa vitendo unaoathiri ubora wa maisha yako ya kila siku - aina ya maarifa ambayo hukufanya ujitegemee na kustahimili kifedha. Faili hii ni marejeleo mnene kwa mambo muhimu.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Philosophy and Critical Thinking
 
 Philosophy is the systematic study of fundamental questions about knowledge, reality, and existence. It provides the framework for evaluating what counts as knowledge, what is worth doing, and how to distinguish well-reasoned arguments from weak ones. Critical thinking is the practical application of this framework: the skill of analysing claims, identifying flawed reasoning, and making better-informed decisions. This file covers the major ideas, the tools for evaluating them, and the cognitive biases that affect everyone.

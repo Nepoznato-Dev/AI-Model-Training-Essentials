@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Конфигурация конвейера CI/CD
 Конвейеры непрерывной интеграции (CI) и непрерывного развертывания (CD) автоматизируют процесс создания, тестирования и развертывания программного обеспечения. В этом справочнике рассматриваются шаблоны конфигурации для наиболее популярных платформ CI/CD: GitHub Actions, GitLab CI и общие принципы проектирования конвейеров.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Git Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 Mabilis na Sanggunian ang # Git Commands
 Mahahalagang utos ng Git para sa kontrol ng bersyon.
 ---

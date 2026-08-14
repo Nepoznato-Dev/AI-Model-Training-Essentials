@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Özellik Mühendisliği
 Özellik mühendisliği, ham verileri makine öğrenimi modellerini daha etkili hale getiren temsillere dönüştürme sürecidir. Genellikle makine öğrenimi hattındaki en önemli adım olarak tanımlanır; bir modele verdiğiniz özellikler, seçtiğiniz algoritmadan daha önemlidir. İyi hazırlanmış özelliklere sahip basit bir model genellikle ham, işlenmemiş girdilere sahip karmaşık bir modelden daha iyi performans gösterecektir. Sanat, hem alanı hem de verileri, modelin öğrenebileceği sinyalleri yaratacak kadar iyi anlamakta yatmaktadır.
 ---

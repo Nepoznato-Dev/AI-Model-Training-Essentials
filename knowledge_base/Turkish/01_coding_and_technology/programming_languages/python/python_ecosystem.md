@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz Python ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

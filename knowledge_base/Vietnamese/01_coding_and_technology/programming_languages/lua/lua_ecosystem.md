@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Hướng dẫn về hệ sinh thái và công cụ
 Hướng dẫn này bao gồm các công cụ, thư viện và cơ sở hạ tầng thiết yếu trong hệ sinh thái Lua.
 ---

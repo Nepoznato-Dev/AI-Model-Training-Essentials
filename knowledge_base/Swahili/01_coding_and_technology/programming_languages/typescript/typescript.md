@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript
 TypeScript ni seti kuu ya JavaScript iliyochapwa kwa takwimu iliyotengenezwa na Microsoft (inayoongozwa na Anders Hejlsberg) na ilitolewa kwa mara ya kwanza mwaka wa 2012. Inaongeza maelezo ya hiari ya aina, violesura, jenereta na vipengele vya mfumo wa aina ya juu kwenye JavaScript - kisha inajumlisha hadi JavaScript wazi inayofanya kazi popote JavaScript. TypeScript si lugha tofauti au wakati wa utekelezaji; ni JavaScript iliyo na kikagua aina.
 TypeScript imekuwa kiwango cha ukuzaji wa JavaScript kwa kiwango kikubwa. React, Angular, VS Code, Deno, na miradi mingi mikuu ya programu huria ya JavaScript imeandikwa katika TypeScript. Ikiwa unaanza mradi mpya wa JavaScript wa ukubwa wowote muhimu, TypeScript ndiyo chaguomsingi inayopendekezwa.

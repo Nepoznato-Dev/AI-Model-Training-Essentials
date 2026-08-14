@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #R
 R ni lugha ya programu na mazingira iliyoundwa mahsusi kwa ajili ya kompyuta ya takwimu na uchambuzi wa data. Iliundwa na Ross Ihaka na Robert Gentleman katika Chuo Kikuu cha Auckland mnamo 1993 (kwa hivyo "R"), ni utekelezaji wa lugha ya S yenye viendelezi muhimu. R ni chanzo wazi na hudumishwa na Timu ya R Core. Ni zana ya kawaida ya wanatakwimu, wachambuzi wa data na watafiti katika taaluma, huduma za afya, fedha na serikali.
 R hufaulu katika upotoshaji wa data, muundo wa takwimu, taswira, na kuripoti. Mfumo wake wa ikolojia wa kifurushi (CRAN) una zaidi ya vifurushi 20,000 vinavyofunika karibu kila mbinu ya takwimu iliyowahi kubuniwa.

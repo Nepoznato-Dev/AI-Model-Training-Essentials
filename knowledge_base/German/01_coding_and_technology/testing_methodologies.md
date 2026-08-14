@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Testmethoden
 Durch das Testen gewinnen Sie die Gewissheit, dass Ihr Code funktioniert – und, was noch wichtiger ist, dass Änderungen daran nicht das zerstören, was bereits funktioniert. Gute Tests erkennen Fehler, bevor es Benutzer tun, dokumentieren das erwartete Verhalten und ermöglichen ein angstfreies Refactoring. Diese Datei deckt das gesamte Spektrum an Teststrategien ab, von Unit-Tests bis hin zu End-to-End-Tests, und die Prinzipien, die Tests effektiv machen.
 ---

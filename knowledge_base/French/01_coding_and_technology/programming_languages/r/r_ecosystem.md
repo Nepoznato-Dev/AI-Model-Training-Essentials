@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Guide de l'écosystème et des outils
 Ce guide couvre les outils, packages et infrastructures essentiels de l'écosystème R.
 ---

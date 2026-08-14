@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — よくある間違いとアンチパターン
 このドキュメントでは、Ada で最も一般的な間違い、罠、アンチパターンを修正とともにカタログ化します。
 ---

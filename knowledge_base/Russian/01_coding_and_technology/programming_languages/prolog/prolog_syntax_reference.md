@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Пролог — Справочник по синтаксису
 Этот документ предоставляет исчерпывающий структурированный справочник по синтаксису Пролога. Он дополняет основной справочник по Прологу, уделяя особое внимание исчерпывающим синтаксическим шаблонам, унификации, возврату, DCG и идиомам логического программирования.
 ---

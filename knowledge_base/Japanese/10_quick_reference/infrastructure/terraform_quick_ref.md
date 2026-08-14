@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform とコードとしてのインフラストラクチャ
 Terraform は、最も広く使用されている Infrastructure as Code (IaC) ツールです。これを使用すると、バージョン管理、レビュー、テスト、自動化が可能な宣言型構成ファイルでクラウド インフラストラクチャ (サーバー、データベース、ネットワーク、権限) を定義できます。クラウド コンソールをクリックする代わりに、インフラストラクチャの望ましい状態を記述するコードを記述すると、Terraform がどのような変更を加えるべきかを判断します。
 ---

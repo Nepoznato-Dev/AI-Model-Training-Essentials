@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Culturas y sociedades del mundo
 La cultura es el marco de una sociedad: las creencias, valores, costumbres, comportamientos y artefactos compartidos que los miembros utilizan para afrontar su mundo y entre sí. Comprender la diversidad cultural no se trata de memorizar trivialidades; se trata de reconocer que hay una forma de ver el mundo entre miles y que otros sistemas son internamente coherentes, históricamente fundamentados y dignos de ser comprendidos en sus propios términos.
 ---

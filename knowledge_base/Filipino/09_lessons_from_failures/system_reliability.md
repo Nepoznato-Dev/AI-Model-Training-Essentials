@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Isyu sa Pagiging Maaasahan ng System
 Pinagsasama-sama ng dokumentong ito ang mga isyu sa pagiging maaasahan kabilang ang mga pagtagas ng memorya, kundisyon ng lahi, kasabay na mga error sa programming, at mga pagkabigo sa disenyo ng system.
 ---

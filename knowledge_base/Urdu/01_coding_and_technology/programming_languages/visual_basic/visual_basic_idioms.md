@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # بصری بنیادی — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ کلین ویژول بیسک (.NET) کوڈ لکھنے کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

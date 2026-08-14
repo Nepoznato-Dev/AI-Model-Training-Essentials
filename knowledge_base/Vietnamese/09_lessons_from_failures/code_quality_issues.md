@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Vấn đề về chất lượng mã
 Tài liệu này tổng hợp các vấn đề về chất lượng mã phổ biến bao gồm tên biến không hợp lệ, tài liệu kém, mã spaghetti, phụ thuộc vòng tròn và các vấn đề về khả năng bảo trì khác.
 ---

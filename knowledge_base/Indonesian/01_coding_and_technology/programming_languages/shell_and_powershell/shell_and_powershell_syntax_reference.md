@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Bash dan PowerShell. Ini melengkapi referensi utama Shell dengan berfokus pada pola skrip yang lengkap, saluran pipa, manajemen proses, dan idiom otomatisasi untuk kedua shell.
 ---

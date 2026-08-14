@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والأطر والبنية التحتية الأساسية في النظام البيئي Erlang وElixir، ويشارك BEAM VM وOTP.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Прометей и Графана
 Prometheus — это набор инструментов для мониторинга и оповещения с открытым исходным кодом, разработанный для обеспечения надежности и масштабируемости. Grafana — ведущая платформа с открытым исходным кодом для визуализации данных временных рядов. Вместе они образуют самый популярный стек мониторинга для современной инфраструктуры и приложений. Prometheus собирает и хранит метрики; Grafana отображает их на информационных панелях.
 ---

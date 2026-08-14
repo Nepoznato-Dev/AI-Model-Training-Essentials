@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، چارچوب‌ها و زیرساخت‌های ضروری در اکوسیستم پرل را پوشش می‌دهد.
 ---

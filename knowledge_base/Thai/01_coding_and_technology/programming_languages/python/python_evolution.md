@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — ประวัติเวอร์ชันและวิวัฒนาการ
 ## ไทม์ไลน์
 | เวอร์ชั่น | วันที่วางจำหน่าย | ธีมหลัก |

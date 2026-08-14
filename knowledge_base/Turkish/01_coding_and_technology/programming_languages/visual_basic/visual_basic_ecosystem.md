@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz, Visual Basic (.NET) ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

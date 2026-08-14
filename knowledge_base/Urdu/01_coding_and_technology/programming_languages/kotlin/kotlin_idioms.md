@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # کوٹلن — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ محاوراتی نمونوں اور صاف ستھرے، محاوراتی کوٹلن کوڈ لکھنے کے بہترین طریقوں کا احاطہ کرتا ہے۔
 ---

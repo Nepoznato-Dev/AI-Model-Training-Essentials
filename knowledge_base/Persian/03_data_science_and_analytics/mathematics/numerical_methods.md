@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # روشهای عددی
 روش های عددی پلی بین تئوری ریاضی و محاسبات عملی هستند. در حالی که ریاضیات محض ثابت می کند که راه حل ها وجود دارند، روش های عددی در واقع پاسخ های تقریبی را با دقت محدود محاسبه می کنند. هر مدل یادگیری ماشین، شبیه‌سازی فیزیک و خط لوله تجزیه و تحلیل داده‌ها در نهایت بر محاسبات عددی متکی است. درک این روش ها - دقت، ثبات و محدودیت های آنها - برای ساختن نرم افزار قابل اعتماد ضروری است.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Przyszła opieka zdrowotna
 ## Przegląd
 Medycyna odchodzi od modelu reaktywnego – leczenia objawów po ich pojawieniu się – na model przewidujący, spersonalizowany i coraz bardziej zapobiegawczy. Genomika zmieniła się z projektu o wartości 3 miliardów dolarów w rutynowy test o wartości poniżej 1000 dolarów. Sztuczna inteligencja uczy się wykrywać choroby na skanach, zanim zrobią to lekarze. A medycyna regeneracyjna zamienia science fiction w badania kliniczne. Oto, co dzieje się w trzech największych obszarach: medycyny spersonalizowanej, badań nad długowiecznością i medycyny regeneracyjnej.

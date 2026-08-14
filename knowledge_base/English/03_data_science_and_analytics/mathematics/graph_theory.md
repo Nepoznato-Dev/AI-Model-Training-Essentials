@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Graph Theory
 
 A **graph** is a mathematical structure consisting of vertices (nodes) connected by edges (links). Graphs model relationships: social networks, road maps, neural networks, dependencies, communication channels. Graph theory — the study of these structures — provides algorithms and theorems that are central to computer science, operations research, and data science.

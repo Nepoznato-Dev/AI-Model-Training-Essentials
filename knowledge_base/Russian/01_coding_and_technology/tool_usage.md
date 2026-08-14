@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Использование инструмента
 ## Git — контроль версий
 Git — это распределенная система контроля версий. Каждый разработчик имеет полную копию истории репозитория на своем локальном компьютере.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — 版本歷史與演變
 ## 時間軸
 |版本 |發佈日期 |關鍵主題 |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 人口结构变化
 ＃＃ 概述
 人口结构就是命运——或者至少他们与它有着强烈的押韵。世界人口正在迅速老龄化，以新的模式迁移，以前所未有的速度聚集到城市，并按照代际划分，影响着从投票行为到消费习惯的一切。这些转变将持续数十年，但其影响已经显而易见。以下是四大趋势及其含义。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Économie mondiale et commerce
 L’économie mondiale est le système le plus vaste et le plus complexe que l’humanité ait jamais construit. En 2025, le PIB mondial dépassait les 110 000 milliards de dollars. Plus de 8 milliards de personnes produisent, échangent et consomment chaque jour des biens et des services au-delà des frontières. Comprendre comment fonctionne ce système – qui échange quoi, pourquoi certains pays sont riches et d’autres pauvres, comment l’argent traverse les frontières et ce qui se passe lorsque le système tombe en panne – est essentiel pour naviguer dans le monde moderne.
 ---

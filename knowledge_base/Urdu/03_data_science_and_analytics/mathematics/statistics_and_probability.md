@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # شماریات اور امکان
 امکان اور اعدادوشمار ڈیٹا سائنس، مشین لرننگ اور سائنسی تحقیق کی ریاضیاتی بنیادیں ہیں۔ امکان آپ کو بتاتا ہے کہ واقعات کے کتنے امکانات ہیں۔ اعداد و شمار آپ کو بتاتے ہیں کہ ڈیٹا سے نتیجہ کیسے نکالا جائے۔ ایک ساتھ مل کر، وہ غیر یقینی کو قابل مقدار، قابل انتظام علم میں بدل دیتے ہیں۔
 ---

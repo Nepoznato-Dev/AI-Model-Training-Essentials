@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز تصحیح کے ساتھ R میں سب سے عام غلطیوں، ٹریپس، اور مخالف پیٹرن کی فہرست بناتی ہے۔
 ---

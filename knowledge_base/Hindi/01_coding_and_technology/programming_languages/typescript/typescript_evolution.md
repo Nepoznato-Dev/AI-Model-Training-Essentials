@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # टाइपस्क्रिप्ट - संस्करण इतिहास और विकास
 ## समयरेखा
 | संस्करण | रिलीज की तारीख | मुख्य विषय |

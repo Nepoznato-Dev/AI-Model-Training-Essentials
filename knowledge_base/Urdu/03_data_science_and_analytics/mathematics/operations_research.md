@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # آپریشنز ریسرچ
 آپریشنز ریسرچ (OR) فیصلہ سازی میں ریاضیاتی طریقوں کا اطلاق ہے۔ ملٹری لاجسٹکس کے لیے جنگ عظیم دوم کے دوران پیدا ہوا، اب یہ سپلائی چین کو بہتر بناتا ہے، ایئر لائنز کا شیڈول کرتا ہے، راستوں کی ترسیل کے بیڑے، انوینٹری کا انتظام کرتا ہے، اور ہر صنعت میں وسائل مختص کرتا ہے۔ یا رکاوٹوں کے تحت بہترین ممکنہ فیصلے کرنے کے لیے ریاضیاتی ٹول کٹ فراہم کرتا ہے۔
 ---

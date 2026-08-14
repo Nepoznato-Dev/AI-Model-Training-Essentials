@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — 备忘单
 ## 基本类型
 ```typescript

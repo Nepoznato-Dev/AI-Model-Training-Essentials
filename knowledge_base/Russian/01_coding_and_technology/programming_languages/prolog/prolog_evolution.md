@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Пролог — история версий и эволюция
 ## Временная шкала
 | Версия | Год | Ключевая тема |

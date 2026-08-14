@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lenguaje ensamblador: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en el ensamblaje x86-64 con correcciones.
 ---

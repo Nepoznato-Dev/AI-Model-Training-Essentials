@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで最新の PHP (8.3 以降) コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

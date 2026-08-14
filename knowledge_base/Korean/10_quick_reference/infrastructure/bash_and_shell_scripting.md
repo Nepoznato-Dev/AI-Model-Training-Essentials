@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash 및 쉘 스크립팅 치트 시트
 대부분의 Linux 및 macOS 시스템의 기본 셸인 Bash에서 셸 스크립트를 작성하기 위한 실용적인 참조입니다. 구문, 일반적인 패턴, 텍스트 처리 및 유용한 한 줄짜리 내용을 다룹니다.
 ---

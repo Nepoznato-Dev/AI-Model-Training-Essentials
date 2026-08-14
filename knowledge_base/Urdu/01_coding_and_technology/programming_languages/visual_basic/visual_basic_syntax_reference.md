@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # بصری بنیادی — نحوی حوالہ
 یہ دستاویز Visual Basic (VB.NET) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، OOP خصوصیات، LINQ، async/await، اور .NET انضمام کے محاوروں پر توجہ مرکوز کرکے مرکزی بصری بنیادی حوالہ کی تکمیل کرتا ہے۔
 ---

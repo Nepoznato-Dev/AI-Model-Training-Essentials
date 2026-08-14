@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran — Sözdizimi Referansı
 Bu belge Modern Fortran (2008/2018) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, dizi işlemlerine, modüllere, OOP'ye ve yüksek performanslı bilgi işleme odaklanarak ana Fortran referansını tamamlar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Modèles idiomatiques et meilleures pratiques
 Ce guide couvre des modèles idiomatiques pour écrire des projets Scratch propres et bien organisés.
 ---

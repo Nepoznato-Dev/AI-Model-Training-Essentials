@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R - 일반적인 실수 및 안티 패턴
 이 문서는 수정 사항을 포함하여 R에서 가장 일반적인 실수, 트랩 및 안티 패턴을 나열합니다.
 ---

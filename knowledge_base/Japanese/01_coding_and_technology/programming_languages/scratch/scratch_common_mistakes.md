@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # スクラッチ — よくある間違いとアンチパターン
 このドキュメントでは、Scratch で最もよくある間違いと罠を修正とともにカタログ化します。
 ---

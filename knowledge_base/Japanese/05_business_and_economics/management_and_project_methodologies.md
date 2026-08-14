@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 管理とプロジェクトの方法論
 人材とプロジェクトの管理は、あらゆる組織の中で最も要求の厳しい責任の 1 つです。技術的なスキルがあれば入門できますが、チームを率い、意思決定をし、効果的にコミュニケーションをとり、結果をもたらす能力が目標を達成できるかどうかを左右します。このファイルには、有能なマネージャーやプロジェクト リーダーが適用するフレームワーク、方法論、実践的なスキルが含まれています。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uhandisi wa haraka
 Uhandisi wa haraka ni mazoezi ya kubuni, kuboresha, na kuboresha vidokezo vya ingizo ili kupata matokeo bora zaidi kutoka kwa muundo wa lugha. Ni sanaa na sayansi, na ni kiolesura cha msingi cha kudhibiti tabia ya LLM bila kusawazisha.
 ---

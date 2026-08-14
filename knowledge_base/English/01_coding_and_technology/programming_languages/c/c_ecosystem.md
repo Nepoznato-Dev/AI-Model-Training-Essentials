@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C — Ecosystem & Tooling Guide
 
 This guide covers the essential tools, libraries, and infrastructure in the C ecosystem.

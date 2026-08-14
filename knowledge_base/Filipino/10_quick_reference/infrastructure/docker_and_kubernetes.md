@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Docker at Kubernetes Cheat Sheet
 Isang praktikal na sanggunian para sa paglalagay ng container ng mga application sa Docker at pag-orkestra sa mga ito gamit ang Kubernetes. Ipinapalagay ang pangunahing pamilyar sa command line.
 ---

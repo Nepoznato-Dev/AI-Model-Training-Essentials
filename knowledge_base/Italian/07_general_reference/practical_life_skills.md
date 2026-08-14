@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Abilità pratiche di vita
 La scuola ti insegna i calcoli ma raramente ti insegna come presentare le tasse, cucinare un pasto equilibrato o mantenere una casa. Queste sono le competenze pratiche che influenzano la qualità della tua vita quotidiana: il tipo di conoscenza che ti rende autosufficiente e finanziariamente resiliente. Questo file è un denso riferimento per l'essenziale.
 ---

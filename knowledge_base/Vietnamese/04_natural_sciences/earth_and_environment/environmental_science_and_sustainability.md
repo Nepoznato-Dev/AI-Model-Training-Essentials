@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Khoa học Môi trường và Tính bền vững
 Khoa học môi trường áp dụng các phương pháp vật lý, hóa học, sinh học, địa chất và kinh tế cho câu hỏi: "Điều gì đang xảy ra với hành tinh của chúng ta và chúng ta có thể làm gì với nó?" Đây là một lĩnh vực liên ngành - sự hội tụ của nhiều ngành - góp phần tạo nên chiều sâu phân tích cũng như mức độ phù hợp về chính sách của nó.
 Điểm căng thẳng cốt lõi trong khoa học môi trường là: nền văn minh nhân loại phụ thuộc vào việc khai thác tài nguyên từ môi trường, nhưng việc khai thác những tài nguyên đó sẽ làm thay đổi môi trường theo những cách có thể làm suy yếu các hệ thống mà chúng ta phụ thuộc vào. Hiểu một cách ngắn gọn rằng vòng phản hồi là toàn bộ lĩnh vực.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nowe technologie
 ## Przegląd
 Niektóre technologie tworzą zupełnie nowe kategorie możliwości, zamiast stopniowo ulepszać istniejące. Obliczenia kwantowe mają na celu rozwiązywanie problemów, które klasycznym maszynom zajmowałyby tysiące lat. Energia termojądrowa oferuje możliwość praktycznie nieograniczonej czystej energii. Interfejsy mózg-komputer łączą umysł i maszynę. Biologia syntetyczna umożliwia przepisanie kodu biologicznego. W poniższych sekcjach opisano, gdzie obecnie znajduje się każda z tych granic i dokąd wskazują obecne trendy.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usimamizi wa Ugavi na Uendeshaji
 Usimamizi wa mnyororo wa ugavi ni uratibu wa shughuli zote zinazohusika katika kutafuta, ununuzi, ubadilishaji, na vifaa - kutoka kwa malighafi hadi bidhaa iliyokamilishwa mikononi mwa mteja. Usimamizi wa uendeshaji ni uendeshaji wa kila siku wa mifumo ya uzalishaji. Kwa pamoja, wao huamua ikiwa kampuni inaweza kutoa bidhaa inayofaa, kwa wakati unaofaa, kwa gharama ifaayo, na ubora ufaao. Janga, uhaba wa chip, na kuziba kwa mifereji imeonyesha jinsi minyororo ya usambazaji iliyounganishwa ulimwenguni ilivyo dhaifu.
 ---

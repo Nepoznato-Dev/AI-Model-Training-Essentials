@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # RAG اور ویکٹر تلاش کی ناکامیاں
 یہ دستاویز Retrieval-Augmented Generation (RAG) سسٹمز، ایمبیڈنگ استعمال، اور ویکٹر کی تلاش کے نفاذ میں عام ناکامیوں کو یکجا کرتی ہے۔
 ---

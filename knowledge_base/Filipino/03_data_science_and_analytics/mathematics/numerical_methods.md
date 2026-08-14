@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Numerical na Paraan
 Ang mga numerical na pamamaraan ay ang tulay sa pagitan ng matematikal na teorya at praktikal na pagtutuos. Habang ang dalisay na matematika ay nagpapatunay na may mga solusyon, ang mga numerical na pamamaraan ay aktwal na kumukwenta ng tinatayang mga sagot sa may hangganang katumpakan. Bawat machine learning model, physics simulation, at data analysis pipeline sa huli ay umaasa sa numerical computation. Ang pag-unawa sa mga pamamaraang ito — ang kanilang katumpakan, katatagan, at mga limitasyon — ay mahalaga para sa pagbuo ng maaasahang software.
 ---

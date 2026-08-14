@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart
 
 Dart is a client-optimised programming language developed by Google, first released in 2013. While Dart was initially positioned as a potential JavaScript replacement for web browsers, it found its primary purpose as the language behind **Flutter** — Google's cross-platform UI toolkit for building mobile, web, desktop, and embedded applications from a single codebase.

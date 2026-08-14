@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Msingi wa Kuonekana - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia ruwaza za nahau za kuandika msimbo safi wa Visual Basic (.NET).
 ---

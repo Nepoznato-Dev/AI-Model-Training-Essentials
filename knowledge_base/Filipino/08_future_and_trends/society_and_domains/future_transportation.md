@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Transportasyon sa Hinaharap
 ## Pangkalahatang-ideya
 Magiging ibang-iba ang hitsura ng pagkuha mula A hanggang B. Ang mga self-driving na sasakyan ay nasa mga pampublikong kalsada na. Kinukumpleto ng electric aircraft ang mga test flight. Ang mga konsepto ng Hyperloop ay nangangako ng mabilis na paglalakbay sa mga vacuum tube. At ang mga lumilipad na taxi - kapag ang mga bagay ng mga cartoons - ay pumapasok sa sertipikasyon. Narito ang estado ng laro sa mga teknolohiyang muling hinuhubog kung paano tayo gumagalaw.

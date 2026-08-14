@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # স্ক্র্যাচ — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্ন
 এই নথিটি সংশোধন সহ স্ক্র্যাচ-এ সবচেয়ে সাধারণ ভুল এবং ফাঁদগুলি ক্যাটালগ করে৷
 ---

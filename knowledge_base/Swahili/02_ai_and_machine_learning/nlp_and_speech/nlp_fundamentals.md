@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Misingi ya NLP
 Usindikaji wa Lugha Asilia (NLP) ni uwanja wa mashine za kufundishia ili kuelewa, kuzalisha, na kufanya kazi na lugha ya binadamu. Huwezesha injini za utafutaji, chatbots, mifumo ya tafsiri, uchanganuzi wa hisia, na miundo mikubwa ya lugha (LLMs) ambayo imebadilisha AI tangu 2020. Faili hii inashughulikia mageuzi kutoka kwa mbinu za kitamaduni hadi usanifu wa kisasa unaotegemea Transfoma.
 ---

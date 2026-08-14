@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 의학 및 헬스케어
 의학은 질병을 진단, 치료, 예방하는 과학이자 실천입니다. 이는 고대 그리스로 거슬러 올라가는 히포크라테스 선서와 같은 인류의 가장 오래된 노력 중 하나이며, 가장 빠르게 변화하는 것 중 하나입니다. 지난 세기에만 우리는 항생제를 사용하지 않고 환자의 DNA를 다시 쓸 수 있는 유전자 치료법을 개발하게 되었습니다.
 이 파일은 의학의 작동 방식, 즉 주요 전문 분야, 질병 진단 및 치료 방법, 의료 시스템 구성 방법, 인간 생명이 위태로울 때 발생하는 윤리적 질문을 다루고 있습니다.

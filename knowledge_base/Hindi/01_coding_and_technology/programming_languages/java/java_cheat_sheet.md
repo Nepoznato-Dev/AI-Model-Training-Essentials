@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # जावा - चीट शीट
 ## मूल बातें
 ```java

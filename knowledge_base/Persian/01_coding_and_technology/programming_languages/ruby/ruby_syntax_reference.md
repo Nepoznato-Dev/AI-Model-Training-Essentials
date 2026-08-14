@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # روبی - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Ruby (3.x) ارائه می دهد. با تمرکز بر الگوهای نحوی جامع، بلوک‌ها و بسته‌ها، فرابرنامه‌نویسی و اصطلاحات روبی، مرجع اصلی روبی را تکمیل می‌کند.
 ---

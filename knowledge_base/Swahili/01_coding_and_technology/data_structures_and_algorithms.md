@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Miundo ya Data na Algorithms
 Miundo ya data ni njia tunazopanga data katika kumbukumbu ili utendakazi juu yake ziwe na ufanisi. Algorithms ni taratibu za hatua kwa hatua za kutatua shida. Kwa pamoja, zinaunda msingi wa sayansi ya kompyuta - kila programu ambayo umewahi kutumia inategemea. Kuchagua muundo sahihi wa data kunaweza kugeuza programu polepole kuwa ya haraka, na kujua kanuni sahihi kunaweza kugeuza tatizo lisilotatulika kuwa dogo.
 ---

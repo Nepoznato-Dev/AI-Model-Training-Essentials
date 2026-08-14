@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — Sözdizimi Referansı
 Bu belge TypeScript için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Tip sistemine, jeneriklere, yardımcı program tiplerine ve gelişmiş tip düzeyinde programlamaya odaklanarak ana TypeScript referansını tamamlar.
 ---

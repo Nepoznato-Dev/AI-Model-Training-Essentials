@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ダーツ
 Dart は、Google によって開発され、2013 年に初めてリリースされた、クライアントに最適化されたプログラミング言語です。Dart は当初、Web ブラウザの JavaScript の代替候補として位置付けられていましたが、その主な目的は、単一のコードベースからモバイル、Web、デスクトップ、および組み込みアプリケーションを構築するための Google のクロスプラットフォーム UI ツールキットである **Flutter** の背後にある言語であることがわかりました。
 Dart は現代言語の最高の機能を組み合わせています。オブジェクト指向であり、オプションの型付け (Dart 3 以降ではサウンド null 安全性) があり、`async`/`await`による非同期プログラミングをサポートし、ネイティブ マシン コード (モバイル/デスクトップ用) と JavaScript (Web 用) の両方にコンパイルされます。

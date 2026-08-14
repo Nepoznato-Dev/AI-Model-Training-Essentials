@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — よくある間違いとアンチパターン
 このドキュメントでは、Scala で最も一般的な間違い、罠、およびアンチパターンを修正とともにカタログ化します。
 ---

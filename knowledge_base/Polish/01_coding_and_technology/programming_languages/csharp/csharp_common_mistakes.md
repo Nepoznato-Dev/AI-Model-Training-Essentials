@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — typowe błędy i anty-wzorce
 W tym dokumencie katalogowano najczęstsze błędy, pułapki i antywzorce w języku C#. Każdy wpis pokazuje nieprawidłowe podejście, wyjaśnia przyczynę niepowodzenia i podaje prawidłowe rozwiązanie.
 ---

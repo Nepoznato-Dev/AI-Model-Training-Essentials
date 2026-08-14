@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lugha ya Mkutano - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio
 | Enzi | Mwaka | Mandhari Muhimu |

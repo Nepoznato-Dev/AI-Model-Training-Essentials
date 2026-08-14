@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kimya
 Eğer fizik oyunun kurallarıysa, kimya da parçalar etkileşime girdiğinde meydana gelen şeydir. Kimya, atomların nasıl bağlandığını, parçalandığını ve yeniden düzenlendiğini, yani tüm malzemelerin nasıl davrandığını inceler. Temel fizik ile biyoloji, jeoloji ve mühendisliğin karmaşıklığı arasındaki boşluğu doldurur.
 ---

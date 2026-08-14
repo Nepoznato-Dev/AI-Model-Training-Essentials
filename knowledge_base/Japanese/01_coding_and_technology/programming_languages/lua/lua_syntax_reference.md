@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — 構文リファレンス
 このドキュメントは、Lua (5.4) の包括的で構造化された構文リファレンスを提供します。これは、網羅的な構文パターン、テーブルとメタテーブル、コルーチン、および Lua の独自の設計哲学に焦点を当て、メインの Lua リファレンスを補完します。
 ---

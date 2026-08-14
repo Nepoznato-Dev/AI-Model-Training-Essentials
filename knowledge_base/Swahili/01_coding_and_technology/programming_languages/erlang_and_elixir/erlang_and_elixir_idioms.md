@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir - Miundo ya nahau na Mbinu Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya Erlang na Elixir kwenye BEAM VM.
 ---

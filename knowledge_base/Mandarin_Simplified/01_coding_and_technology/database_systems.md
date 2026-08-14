@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Database Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 数据库系统
 ## 数据库基础知识
 ### 什么是数据库？

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP মৌলিক
 ন্যাচারাল ল্যাঙ্গুয়েজ প্রসেসিং (এনএলপি) হল মানুষের ভাষা বোঝার, তৈরি করা এবং কাজ করার জন্য মেশিনের শিক্ষাদানের ক্ষেত্র। এটি সার্চ ইঞ্জিন, চ্যাটবট, ট্রান্সলেশন সিস্টেম, সেন্টিমেন্ট অ্যানালাইসিস এবং 2020 সাল থেকে AI-কে রূপান্তরিত করা বৃহৎ ভাষার মডেল (LLMs) কে ক্ষমতা দেয়। এই ফাইলটি ক্লাসিক্যাল কৌশল থেকে আধুনিক ট্রান্সফরমার-ভিত্তিক আর্কিটেকচারে বিবর্তনকে কভার করে।
 ---

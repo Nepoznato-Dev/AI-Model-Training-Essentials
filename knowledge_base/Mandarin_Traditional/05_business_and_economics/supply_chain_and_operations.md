@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 供應鏈和營運管理
 供應鏈管理是對涉及尋源、採購、轉換和物流的所有活動的協調——從原材料到客戶手中的成品。營運管理是生產系統的日常運作。它們共同決定了公司是否能夠在正確的時間、以正確的成本、以正確的品質交付正確的產品。疫情、晶片短缺和運河堵塞表明，全球供應鏈是多麼脆弱且相互關聯。
 ---

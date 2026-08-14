@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Elektromagnetyzm
 Elektromagnetyzm to nauka o polach elektrycznych i magnetycznych oraz ich interakcjach. Ujednolicony przez Maxwella w latach sześćdziesiątych XIX wieku elektromagnetyzm wyjaśnia światło, elektryczność, magnetyzm, fale radiowe i strukturę atomów. Była to pierwsza fundamentalna siła w pełni poznana matematycznie, a jej równania zainspirowały Einsteina do szczególnej teorii względności i współczesnej teorii pola.
 ---

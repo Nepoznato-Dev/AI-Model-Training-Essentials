@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Logika dan Berpikir Kritis
 Logika adalah studi tentang penalaran yang valid — bagaimana membangun argumen yang masuk akal dan mengidentifikasi argumen yang cacat. Berpikir kritis adalah kebiasaan disiplin mempertanyakan asumsi, mengevaluasi bukti, dan berpikir secara hati-hati. Keterampilan ini penting tidak hanya dalam matematika dan ilmu komputer, tetapi juga dalam pengambilan keputusan sehari-hari, penelitian ilmiah, dan menavigasi dunia yang kaya informasi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Khoa học dữ liệu và phân tích
 Khoa học dữ liệu là môn học biến dữ liệu thô thành thông tin chi tiết có thể hành động được. Nó nằm ở giao điểm của thống kê, khoa học máy tính và kiến ​​thức chuyên môn về lĩnh vực — và nó đã trở nên thiết yếu trong mọi lĩnh vực từ tài chính đến chăm sóc sức khỏe. Tệp này trình bày các khái niệm, công cụ và quy trình công việc cốt lõi mà mọi người hành nghề nên biết.
 ---

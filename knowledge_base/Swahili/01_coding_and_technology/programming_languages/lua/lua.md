@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Lua
 Lua ni lugha nyepesi, inayoweza kupachikwa iliyoundwa kwa kupanua programu. Lugha ya Lua iliundwa mwaka wa 1993 katika Chuo Kikuu cha Kipapa cha Kikatoliki cha Rio de Janeiro nchini Brazili. Alama yake ndogo (mkalimani ni ~120KB) na unyenyekevu huifanya chaguo-msingi kwa uandishi wa ukuzaji wa mchezo, mifumo iliyopachikwa na usanidi.
 Lua inajulikana zaidi kama lugha ya uandishi nyuma ya Roblox (jukwaa la michezo la kubahatisha lenye watumiaji 200M+ kila mwezi), nyongeza za World of Warcraft, na injini nyingi za mchezo (Love2D, Defold, Corona SDK). Inatumika pia katika Nginx (OpenResty), Redis, na Wireshark.

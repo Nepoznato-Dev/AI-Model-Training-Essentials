@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # کلاسیکی میکانکس
 کلاسیکی میکانکس قوتوں کے زیر اثر اشیاء کی حرکت کو بیان کرتی ہے۔ سیب کے گرنے سے لے کر گردش کرنے والے سیاروں تک، ہلنے والی تاروں سے لے کر ٹکرانے والے ذرات تک، اس کے اصول میکروسکوپک دنیا پر حکومت کرتے ہیں۔ اس کے طبعی استعمال سے ہٹ کر، کلاسیکی میکانکس نے تغیرات، سمپلیکٹک جیومیٹری، اور ہیملٹونین فریم ورک کے حساب کتاب کو جنم دیا جو کوانٹم میکانکس اور جدید اصلاح کو اہمیت دیتا ہے۔
 ---

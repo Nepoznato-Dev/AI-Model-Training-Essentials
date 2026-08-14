@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Umweltbewusstsein
 Die Umwelt ist kein separates Ding „da draußen“ – sie ist das System, das alles andere möglich macht. Jeder Atemzug, jedes Glas Wasser, das Sie trinken, jede Mahlzeit, die Sie zu sich nehmen, hängt von der Zusammensetzung der Atmosphäre, den Wasserkreisläufen, der Bodengesundheit und den Bestäubernetzwerken ab. Für eine informierte Person ist es nicht optional, zu verstehen, wie diese Systeme funktionieren – und wie sie sich verändern. Diese Datei behandelt die Grundlagen der Umweltwissenschaften, die Herausforderungen, denen wir gegenüberstehen, und was Nachhaltigkeit in der Praxis tatsächlich bedeutet.
 ---

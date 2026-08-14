@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 知识产权与创新
 知识产权 (IP) 是指受法律保护免遭未经授权使用的智力创造——发明、艺术作品、品牌名称、设计、商业秘密。创新是将想法转化为价值的过程。知识产权法的存在是为了平衡两种相互竞争的利益：奖励创造者（通过给予他们暂时的垄断权）和造福社会（通过确保知识最终免费获得）。了解知识产权对于任何构建产品、创建内容、经营业务或从事研究工作的人都至关重要。
 ---

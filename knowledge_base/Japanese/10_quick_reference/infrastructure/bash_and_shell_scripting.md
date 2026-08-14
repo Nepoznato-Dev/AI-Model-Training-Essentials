@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash およびシェル スクリプトのチートシート
 ほとんどの Linux および macOS システムのデフォルト シェルである Bash でシェル スクリプトを作成するための実践的なリファレンス。構文、一般的なパターン、テキスト処理、便利なワンライナーについて説明します。
 ---

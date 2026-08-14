@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Performans Optimizasyonu
 Performans optimizasyonu, yazılımı daha hızlı hale getirme uygulamasıdır; tepki sürelerini kısaltır, verimi artırır, bellek kullanımını azaltır ve darboğazları ortadan kaldırır. Bu, bir geliştiricinin sahip olabileceği en etkili becerilerden biridir çünkü yavaş yazılım kullanıcıları kaybeder, kaynakları israf eder ve herkesi hayal kırıklığına uğratır. Ama aynı zamanda geliştiricilerin yanlış şeyleri kanıt yerine sezgilere dayanarak optimize etmesiyle en sık yapılan yanlışlardan biri.
 ---

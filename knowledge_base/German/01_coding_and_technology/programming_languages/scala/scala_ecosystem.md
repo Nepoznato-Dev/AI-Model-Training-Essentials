@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala – Ökosystem- und Tooling-Leitfaden
 Dieser Leitfaden behandelt die wesentlichen Tools, Frameworks und Infrastruktur im Scala-Ökosystem.
 ---

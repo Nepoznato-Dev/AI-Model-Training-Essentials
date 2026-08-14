@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya TypeScript. Inakamilisha rejeleo kuu la TypeScript kwa kuzingatia mfumo wa aina, jenetiki, aina za matumizi, na upangaji wa kiwango cha juu cha aina.
 ---

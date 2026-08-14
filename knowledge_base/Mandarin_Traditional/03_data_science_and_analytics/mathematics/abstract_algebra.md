@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 抽象代數
 抽象代數研究代數結構－具有遵循特定規則的運算的集合。抽象代數不是處理數字，而是處理任何滿足公理的物件。這種普遍性是強大的：為「群」證明的定理同時適用於整數、對稱性、矩陣、排列和量子態。抽象代數是密碼學、糾錯碼、量子計算和整個物理學中使用的對稱分析的基礎。
 ---

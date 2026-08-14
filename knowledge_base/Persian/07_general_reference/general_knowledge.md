@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #دانش عمومی
 این فایل مجموعه ای از حقایق و مفاهیمی است که به طور مرتب در گفتگو، اخبار، آموزش و زندگی روزمره مطرح می شود. آن را به عنوان دانش پس زمینه در نظر بگیرید - چیزی که به شما کمک می کند آنچه را می خوانید، می شنوید یا تجربه می کنید درک کنید.
 ---

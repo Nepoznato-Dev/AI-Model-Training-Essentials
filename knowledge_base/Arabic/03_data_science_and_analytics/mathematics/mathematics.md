@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الرياضيات
 الرياضيات ليست مجرد مادة تتم دراستها في المدرسة، بل إنها تدعم كل المجالات التقنية تقريبًا. تستخدمه الفيزياء لوصف الكون. يستخدمه علوم الكمبيوتر لتصميم الخوارزميات. يستخدمه التعلم الآلي لتحسين الأوزان. يستخدمه التمويل لتسعير المخاطر. ليس من الضروري إتقان كل فرع، ولكن فهم المشهد العام - ومعرفة مكان تطبيق كل فرع - يجعل فهم المواضيع الأخرى أسهل.
 ---

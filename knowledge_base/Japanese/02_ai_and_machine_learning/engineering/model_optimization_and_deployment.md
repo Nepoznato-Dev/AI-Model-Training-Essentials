@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # モデルの最適化と展開
 大規模な AI モデルをトレーニングすることは重要な成果ですが、エンジニアリングの労力のほとんどが必要となるのは、それを効率的にデプロイすることです。応答に 10 秒かかるモデル、または 8 つの A100 GPU を必要とするモデルは、ほとんどの実世界のアプリケーションでは実用的ではありません。モデルの最適化は、許容可能な品質を維持しながら、モデルをより小さく、より速く、よりコスト効率よくするプロセスです。このファイルには、量子化、枝刈り、蒸留、およびモデルを運用環境にデプロイするための実用的なツールが含まれています。
 ---

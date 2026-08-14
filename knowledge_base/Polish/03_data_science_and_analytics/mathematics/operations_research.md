@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Badania operacyjne
 Badania operacyjne (OR) to zastosowanie metod matematycznych w procesie decyzyjnym. Urodzony podczas II wojny światowej dla logistyki wojskowej, obecnie optymalizuje łańcuchy dostaw, planuje linie lotnicze, wyznacza trasy flot dostawczych, zarządza zapasami i alokuje zasoby w każdej branży. OR zapewnia matematyczny zestaw narzędzi umożliwiający podejmowanie najlepszych możliwych decyzji w ramach ograniczeń.
 ---

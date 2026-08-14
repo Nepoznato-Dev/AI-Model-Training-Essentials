@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku opisano wzorce idiomatyczne i najlepsze praktyki dotyczące pisania czystego, nowoczesnego kodu w języku Perl (5.38+).
 ---

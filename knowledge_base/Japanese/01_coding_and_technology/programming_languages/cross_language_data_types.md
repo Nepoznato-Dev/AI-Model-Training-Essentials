@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 言語間の比較 — データ型と構造
 ## プリミティブ型
 |タイプ |パイソン | JavaScript |さび |行く |ジャワ | C | C++ | C# |

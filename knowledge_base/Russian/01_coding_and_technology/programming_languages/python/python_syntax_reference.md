@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python — Справочник по синтаксису
 Этот документ предоставляет исчерпывающий структурированный справочник по синтаксису Python. Он дополняет основной справочник по Python, уделяя особое внимание исчерпывающим синтаксическим шаблонам, таблицам операторов и внутренней механике.
 ---

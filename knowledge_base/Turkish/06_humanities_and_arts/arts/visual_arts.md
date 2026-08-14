@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Görsel Sanatlar
 Görsel sanat, Lascaux'nun mağara resimlerinden günümüzün dijital enstalasyonlarına kadar insanlığın en eski iletişim biçimidir. Sanat hareketlerini, ortamları ve yaratıcı çalışmaları koruyan kurumları anlamak, toplumların binlerce yıl boyunca güzelliği, gücü, maneviyatı ve muhalefeti nasıl ifade ettiğine dair size daha derin bir takdir kazandırır.
 ---

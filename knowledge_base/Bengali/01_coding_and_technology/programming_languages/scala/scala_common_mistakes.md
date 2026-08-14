@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # স্কালা — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্ন
 এই নথিটি সংশোধন সহ স্কালাতে সবচেয়ে সাধারণ ভুল, ফাঁদ এবং অ্যান্টি-প্যাটার্নগুলি ক্যাটালগ করে।
 ---

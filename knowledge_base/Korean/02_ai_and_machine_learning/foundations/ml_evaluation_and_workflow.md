@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 머신러닝 평가 및 워크플로
 문제 프레이밍부터 프로덕션 모니터링까지, 측정항목, 검증, 디버깅에 초점을 맞춘 ML 수명주기에 대한 실용적인 가이드입니다.
 ---

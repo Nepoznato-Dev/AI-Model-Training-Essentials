@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ہاسکل - نحوی حوالہ
 یہ دستاویز ہاسکل (GHC 9.x) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، قسم کے نظام، مونڈس، سست تشخیص، اور فعال پروگرامنگ محاوروں پر توجہ مرکوز کرکے مرکزی ہاسکل حوالہ کی تکمیل کرتا ہے۔
 ---

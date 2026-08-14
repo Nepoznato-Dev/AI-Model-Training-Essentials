@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sciences de la Terre
 Les sciences de la Terre étudient la planète sur laquelle nous vivons : sa structure, ses processus, son histoire et les systèmes qui la rendent habitable. Il couvre la géologie (la Terre solide), l'océanographie (les océans), la météorologie (l'atmosphère et le temps) et la climatologie (les modèles climatiques à long terme). Ce qui unifie ces domaines est la compréhension que la Terre est un système dynamique : son intérieur est en mouvement constant, sa surface est remodelée et son atmosphère et ses océans interagissent de manière complexe.
 ---

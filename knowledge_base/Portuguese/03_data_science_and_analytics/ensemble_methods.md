@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Métodos de conjunto
 Os métodos de conjunto combinam vários modelos de aprendizado de máquina para produzir melhores previsões do que qualquer modelo único poderia alcançar sozinho. A intuição é direta: se você tiver vários modelos que são um tanto precisos, mas cometem erros diferentes, a combinação de suas previsões cancelará erros individuais e produzirá um resultado mais robusto. Os conjuntos estão por trás das soluções de aprendizado de máquina mais competitivas e continuam sendo algumas das técnicas mais confiáveis ​​em sistemas de produção.
 ---

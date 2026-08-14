@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Organizasyonel Tasarım ve Kültür
 Organizasyonel tasarım, stratejiyi etkili bir şekilde yürütmek için yapının, süreçlerin, rollerin ve karar haklarının kasıtlı olarak düzenlenmesidir. Kültür, insanların gerçekte birlikte çalışmalarını şekillendiren paylaşılan değerler, inançlar, normlar ve davranışlardır. Yapı çerçeveyi sağlar; Kültür davranışı şekillendirir. Bir yapı kağıt üzerinde yeniden tasarlanabilir ancak kültür değişimi desteklemiyorsa uygulama başarısız olur. Benzer şekilde, etkisiz bir yapıyla birleşen güçlü bir kültür, kurumsal performansı giderek zayıflatacaktır. En etkili kuruluşlar her ikisini de ele alır ve bunların birbiriyle derinden bağlantılı olduğunu kabul eder.
 ---

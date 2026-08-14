@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic
 Visual Basic (VB) ni lugha ya programu iliyotengenezwa na Microsoft. Imebadilika kupitia vizazi kadhaa: Visual Basic asili (1991), Visual Basic 6.0 (1998), VB.NET (2002, sehemu ya .NET Framework), na Visual Basic ..NET (ya sasa, ambayo sasa inaitwa "Visual Basic" kama sehemu ya .NET). VB iliundwa ili iweze kufikiwa kwa wanaoanza na ukuzaji wa programu kwa haraka (RAD), kwa kulenga miingiliano ya picha ya mtumiaji na programu inayoendeshwa na hafla.
 Leo, VB.NET inaendelea kama sehemu ya mfumo ikolojia wa .NET pamoja na C#, ingawa Microsoft imebainisha kuwa C# ndiyo lugha ya msingi kwenda mbele. VB inasalia kutumika sana katika mazingira ya biashara, haswa kwa utumizi wa urithi wa Windows, otomatiki ya Ofisi (VBA), na zana za biashara za ndani.

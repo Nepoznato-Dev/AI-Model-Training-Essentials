@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # پرومیتھیس اور گرافانا
 Prometheus ایک اوپن سورس مانیٹرنگ اور الرٹنگ ٹول کٹ ہے جو قابل اعتماد اور اسکیل ایبلٹی کے لیے ڈیزائن کی گئی ہے۔ گرافانا ٹائم سیریز کے ڈیٹا کو دیکھنے کے لیے ایک سرکردہ اوپن سورس پلیٹ فارم ہے۔ یہ مل کر جدید انفراسٹرکچر اور ایپلی کیشنز کے لیے سب سے زیادہ مقبول مانیٹرنگ اسٹیک بناتے ہیں۔ Prometheus میٹرکس جمع اور ذخیرہ کرتا ہے؛ گرافانا انہیں ڈیش بورڈز میں دکھاتا ہے۔
 ---

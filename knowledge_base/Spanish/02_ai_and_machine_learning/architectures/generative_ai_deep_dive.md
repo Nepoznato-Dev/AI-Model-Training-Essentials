@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Análisis profundo de la IA generativa
 La IA generativa se refiere a modelos que crean contenido nuevo (imágenes, texto, audio, video, código) en lugar de simplemente clasificar o predecir datos existentes. Si bien los grandes modelos de lenguaje reciben la mayor parte de la atención, el panorama de la IA generativa es mucho más amplio. Este archivo cubre las arquitecturas, técnicas y compensaciones detrás de los sistemas generativos modernos, desde modelos de difusión hasta codificadores automáticos variacionales y modelos de flujo.
 ---

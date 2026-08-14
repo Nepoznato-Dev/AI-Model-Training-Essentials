@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — 構文リファレンス
 このドキュメントは、Modern C++ (C++17/20/23) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、演算子テーブル、テンプレートの仕組み、最新の機能に焦点を当て、メインの C++ リファレンスを補完します。
 ---

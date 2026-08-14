@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Elektromagnetisme
 Elektromagnetisme adalah studi tentang medan listrik dan magnet serta interaksinya. Disatukan oleh Maxwell pada tahun 1860-an, elektromagnetisme menjelaskan cahaya, listrik, magnet, gelombang radio, dan struktur atom. Ini adalah gaya fundamental pertama yang dipahami sepenuhnya secara matematis, dan persamaannya mengilhami relativitas khusus dan teori medan modern Einstein.
 ---

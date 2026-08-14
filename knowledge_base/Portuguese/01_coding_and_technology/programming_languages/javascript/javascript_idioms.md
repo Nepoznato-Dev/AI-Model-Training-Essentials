@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript – Padrões Idiomáticos e Melhores Práticas
 Este guia aborda padrões idiomáticos e práticas recomendadas para escrever código JavaScript (ES2024+) limpo e moderno.
 ---

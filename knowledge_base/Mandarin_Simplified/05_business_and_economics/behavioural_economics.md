@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 行为经济学和决策科学
 行为经济学研究人们实际上如何做出决策，而不是理性主体如何做出决策。传统经济学假设人是理性的、自利的、善于处理信息的。卡尼曼、特沃斯基、泰勒和其他人数十年的研究表明，这种说法非常不准确。人们使用思维捷径，受到不相关背景的影响，过度重视最近的信息，并犯下系统性的可预测的错误。了解这些模式对于设计更好的产品、政策、组织和个人决策至关重要。
 ---

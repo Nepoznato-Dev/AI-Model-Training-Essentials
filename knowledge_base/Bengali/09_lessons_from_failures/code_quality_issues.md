@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # কোড মানের সমস্যা
 এই নথিটি খারাপ পরিবর্তনশীল নাম, দুর্বল ডকুমেন্টেশন, স্প্যাগেটি কোড, সার্কুলার নির্ভরতা এবং অন্যান্য রক্ষণাবেক্ষণযোগ্যতা সমস্যা সহ সাধারণ কোড মানের সমস্যাগুলিকে একত্রিত করে।
 ---

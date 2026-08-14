@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 2026 e eventos futuros
 2026 é um ano para onde convergem muitos planos de longo prazo. É o 250º aniversário da Declaração de Independência dos EUA, um ponto de verificação intermédio para os Objectivos de Desenvolvimento Sustentável da ONU (2020-2030) e um ano marcante para roteiros corporativos em IA, exploração espacial, veículos eléctricos e energias renováveis. Quer as previsões específicas se concretizem ou não, as tendências que moldam 2026 dão uma imagem útil do rumo que as coisas estão a tomar.
 ---

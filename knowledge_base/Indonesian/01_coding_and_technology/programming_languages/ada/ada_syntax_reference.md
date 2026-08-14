@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Ada (2012/2022). Ini melengkapi referensi utama Ada dengan berfokus pada pola sintaksis yang lengkap, penugasan, objek yang dilindungi, generik, dan pemrograman yang kritis terhadap keselamatan.
 ---

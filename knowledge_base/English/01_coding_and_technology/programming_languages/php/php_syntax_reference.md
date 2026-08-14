@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for PHP (8.x). It complements the main PHP reference by focusing on exhaustive syntax patterns, modern PHP features, object-oriented programming, and practical idioms.

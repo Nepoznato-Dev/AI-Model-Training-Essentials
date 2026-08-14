@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Game Theory
 
 Game theory is the mathematics of strategic interaction — situations where your outcome depends not just on your own choices, but on the choices of others. From pricing wars between companies to nuclear arms races, from online auctions to evolutionary biology, game theory provides the tools for analysing conflict and cooperation. It has become increasingly relevant to machine learning through multi-agent reinforcement learning, generative adversarial networks (GANs), and mechanism design for online platforms.

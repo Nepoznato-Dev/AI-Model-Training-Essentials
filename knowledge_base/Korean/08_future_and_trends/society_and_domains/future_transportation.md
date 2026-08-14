@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 미래교통
 ## 개요
 A에서 B로 이동하는 것은 매우 다르게 보일 것입니다. 자율주행차는 이미 공공도로를 달리고 있다. 전기 항공기가 시험 비행을 완료하고 있습니다. 하이퍼루프 개념은 진공관에서 열차 속도 여행을 약속합니다. 그리고 한때 만화에 등장했던 하늘을 나는 택시도 인증을 받고 있습니다. 우리가 움직이는 방식을 재편하는 기술 전반의 활동 상태는 다음과 같습니다.

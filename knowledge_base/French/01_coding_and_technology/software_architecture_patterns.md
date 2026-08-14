@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Modèles d'architecture logicielle
 L'architecture est l'ensemble des décisions structurelles concernant la manière dont un système est organisé : quels sont ses composants, comment ils communiquent et où se situent les responsabilités. Une bonne architecture rend un système facile à comprendre, à modifier et à faire évoluer. Une mauvaise architecture fait de chaque changement un combat. Ce fichier couvre les principaux modèles, quand les utiliser et les compromis impliqués.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir
 Erlang iliundwa na Ericsson mnamo 1986 ili kuwasha swichi za simu - ambayo inaelezea kwa nini inashughulikia upatanifu, uvumilivu wa hitilafu, na mifumo iliyosambazwa bora kuliko karibu kitu kingine chochote. Michakato ya Erlang ni nyepesi, imetengwa, na huwasiliana tu kwa kupitisha ujumbe. Mchakato unapoacha kufanya kazi, msimamizi anauanzisha upya. Falsafa hii ya "iache ivunjike" hutoa mifumo inayoendesha kwa miaka mingi bila wakati wa kupumzika.
 Elixir ni lugha ya kisasa iliyojengwa juu ya VM ya Erlang (BEAM) na Jose Valim mwaka wa 2012. Huweka kila kitu ambacho Erlang hutoa - concurrency, uvumilivu wa makosa, usambazaji - lakini inaongeza syntax rafiki, metaprogramming, na zana bora (Changanya kidhibiti kifurushi, sajili ya kifurushi cha Hex). Elixir hutumiwa sana kwa programu za wavuti (kupitia mfumo wa Phoenix), mifumo ya wakati halisi, na vifaa vilivyopachikwa (kupitia Neva).

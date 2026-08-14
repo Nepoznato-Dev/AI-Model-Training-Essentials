@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ OCaml (4.x/5.x) ช่วยเสริมการอ้างอิง OCaml หลักโดยมุ่งเน้นไปที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน ประเภทข้อมูลพีชคณิต การจับคู่รูปแบบ โมดูล และสำนวนการเขียนโปรแกรมเชิงฟังก์ชัน
 ---

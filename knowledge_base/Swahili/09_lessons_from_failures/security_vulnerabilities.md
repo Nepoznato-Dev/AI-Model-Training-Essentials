@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Athari za Usalama
 Hati hii inaunganisha udhaifu wa kawaida wa kiusalama katika uundaji wa programu, ikiwa ni pamoja na mashambulizi ya sindano, mbinu zisizo salama za kanuni na makosa ya usalama.
 ---

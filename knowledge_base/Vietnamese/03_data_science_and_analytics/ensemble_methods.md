@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phương pháp tập hợp
 Các phương pháp tập hợp kết hợp nhiều mô hình học máy để tạo ra dự đoán tốt hơn bất kỳ mô hình đơn lẻ nào có thể đạt được nếu sử dụng riêng lẻ. Trực giác rất đơn giản: nếu bạn có một số mô hình, mỗi mô hình đều có phần chính xác nhưng lại mắc các lỗi khác nhau, thì việc kết hợp các dự đoán của chúng sẽ loại bỏ các lỗi riêng lẻ và tạo ra kết quả chắc chắn hơn. Ensembles đứng đằng sau hầu hết các giải pháp học máy cạnh tranh và vẫn là một trong những kỹ thuật đáng tin cậy nhất trong hệ thống sản xuất.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin
 
 Kotlin is a statically typed, compiled programming language developed by JetBrains and first released in 2011 (1.0 in 2016). It runs on the Java Virtual Machine (JVM) and is fully interoperable with Java — meaning you can use any Java library from Kotlin and call Kotlin code from Java without any wrappers. In 2017, Google announced Kotlin as the preferred language for Android development, and it has since become the dominant Android language.

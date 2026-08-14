@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Grundlagen der Cybersicherheit
 Sicherheit ist eine Disziplin, die von Anfang an in jede Schicht eines Systems integriert werden muss und nicht erst nachträglich hinzugefügt werden darf. Ganz gleich, ob Sie eine Webanwendung erstellen, die Infrastruktur verwalten oder eine API bereitstellen: Das Verständnis der Bedrohungslandschaft und der Grundlagen der Verteidigung ist von entscheidender Bedeutung.
 ---

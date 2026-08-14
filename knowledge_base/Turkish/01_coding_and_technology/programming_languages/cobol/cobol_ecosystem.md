@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Ekosistem ve Takımlama Kılavuzu
 Bu kılavuz COBOL ekosistemindeki temel araçları, derleyicileri ve altyapıyı kapsar.
 ---

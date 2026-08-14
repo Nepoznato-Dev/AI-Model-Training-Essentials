@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Maagap na Engineering
 Ang mabilis na engineering ay ang pagsasanay ng pagdidisenyo, pagpino, at pag-optimize ng mga input prompt upang makuha ang pinakamahusay na posibleng output mula sa isang modelo ng wika. Ito ay parehong sining at agham, at ito ang pangunahing interface para sa pagkontrol sa gawi ng LLM nang walang fine-tuning.
 ---

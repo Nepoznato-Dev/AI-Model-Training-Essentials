@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # সাধারণ জ্ঞান
 এই ফাইলটি তথ্য এবং ধারণার একটি সংগ্রহ যা কথোপকথন, সংবাদ, শিক্ষা এবং দৈনন্দিন জীবনে নিয়মিত আসে। এটিকে ব্যাকগ্রাউন্ড নলেজ হিসাবে ভাবুন - আপনি যা পড়ছেন, শুনছেন বা অনুভব করছেন তা বুঝতে সাহায্য করে এমন একটি জিনিস।
 ---

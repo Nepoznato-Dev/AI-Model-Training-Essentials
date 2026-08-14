@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ایرلنگ اور ایلیکسیر - ورژن کی تاریخ اور ارتقاء
 ## ایرلنگ ٹائم لائن
 | ورژن | سال | کلیدی تھیم |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sprache und Englisch
 Heutzutage werden auf der Welt etwa 7.000 Sprachen gesprochen. Englisch ist die am häufigsten gesprochene Zweitsprache und dient als Standardsprache in der internationalen Wirtschaft, in der Wissenschaft, in der Luftfahrt und im Internet. Ganz gleich, ob Sie Code-Dokumentation schreiben, Forschungsarbeiten lesen oder über Grenzen hinweg kommunizieren: Solide Englischkenntnisse – Grammatik, Wortschatz und Rhetorik – gehören zu den praktischsten Fähigkeiten, die man entwickeln kann.
 Diese Datei behandelt das Wesentliche: Grammatik, Zeichensetzung, häufige Fallstricke, Schreibtechnik und klare Kommunikation.

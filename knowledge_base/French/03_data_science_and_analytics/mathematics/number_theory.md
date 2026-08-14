@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Théorie des nombres
 La théorie des nombres est l'étude des nombres entiers, c'est-à-dire des nombres entiers et de leurs propriétés. Gauss l'appelait « la reine des mathématiques ». Même si elle étudie les objets les plus simples (1, 2, 3, ...), la théorie des nombres produit certains des problèmes les plus profonds et les plus difficiles de toutes les mathématiques. Aujourd’hui, il sous-tend la cryptographie moderne, les algorithmes de hachage, les codes correcteurs d’erreurs et la génération de nombres aléatoires.
 ---

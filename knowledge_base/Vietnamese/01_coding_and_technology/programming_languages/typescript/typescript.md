@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript
 TypeScript là một siêu tập hợp JavaScript được gõ tĩnh do Microsoft (do Anders Hejlsberg đứng đầu) phát triển và phát hành lần đầu tiên vào năm 2012. Nó bổ sung các chú thích loại tùy chọn, giao diện, khái quát và các tính năng hệ thống loại nâng cao vào JavaScript — sau đó biên dịch thành JavaScript đơn giản chạy ở mọi nơi JavaScript chạy. TypeScript không phải là ngôn ngữ hoặc thời gian chạy riêng biệt; đó là JavaScript với trình kiểm tra loại.
 TypeScript đã trở thành tiêu chuẩn để phát triển JavaScript quy mô lớn. React, Angular, VS Code, Deno và hầu hết các dự án JavaScript nguồn mở lớn đều được viết bằng TypeScript. Nếu bạn đang bắt đầu một dự án JavaScript mới có kích thước đáng kể, thì TypeScript là mặc định được đề xuất.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جولیا — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ جولیا ماحولیاتی نظام میں ضروری ٹولز، پیکجز اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

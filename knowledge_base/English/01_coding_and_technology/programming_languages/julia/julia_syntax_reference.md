@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for Julia (1.x). It complements the main Julia reference by focusing on exhaustive syntax patterns, multiple dispatch, macros, metaprogramming, and scientific computing.

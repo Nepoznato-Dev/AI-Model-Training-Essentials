@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # RAG এবং ভেক্টর অনুসন্ধান ব্যর্থতা
 এই নথিটি পুনরুদ্ধার-অগমেন্টেড জেনারেশন (RAG) সিস্টেম, এম্বেডিং ব্যবহার এবং ভেক্টর অনুসন্ধান বাস্তবায়নে সাধারণ ব্যর্থতাগুলিকে একত্রিত করে।
 ---

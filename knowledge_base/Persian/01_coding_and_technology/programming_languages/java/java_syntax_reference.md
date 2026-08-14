@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جاوا - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای جاوا ارائه می دهد. این مرجع اصلی جاوا را با تمرکز بر الگوهای نحو جامع، جداول عملگر و مکانیک داخلی JVM، OOP و همزمانی تکمیل می کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Glosario de tecnología
 Un glosario de referencia que cubre modelos de IA, hardware, puntos de referencia y conceptos básicos.
 en el panorama moderno de la IA y la informática.

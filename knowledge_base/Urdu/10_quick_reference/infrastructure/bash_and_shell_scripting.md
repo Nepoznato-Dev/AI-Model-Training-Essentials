@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # باش اور شیل اسکرپٹنگ چیٹ شیٹ
 باش میں شیل اسکرپٹ لکھنے کے لیے ایک عملی حوالہ — زیادہ تر لینکس اور میک او ایس سسٹمز پر ڈیفالٹ شیل۔ نحو، عام پیٹرن، ٹیکسٹ پروسیسنگ، اور مفید ون لائنرز کا احاطہ کرتا ہے۔
 ---

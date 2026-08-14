@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa Perl (5.38+). Kinukumpleto nito ang pangunahing sanggunian ng Perl sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, mga regular na expression, mga sanggunian, at kapangyarihan sa pagproseso ng teksto ng Perl.
 ---

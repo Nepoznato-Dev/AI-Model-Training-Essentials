@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phương pháp kiểm tra
 Kiểm thử là cách bạn có được sự tự tin rằng mã của mình hoạt động — và quan trọng hơn, những thay đổi đó không phá vỡ những gì đã hoạt động. Thử nghiệm tốt sẽ phát hiện lỗi trước khi người dùng thực hiện, ghi lại hành vi dự kiến ​​và cho phép tái cấu trúc một cách dễ dàng. Tệp này bao gồm đầy đủ các chiến lược kiểm thử, từ kiểm thử đơn vị đến kiểm thử toàn diện và các nguyên tắc giúp kiểm thử hiệu quả.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # कोटलिन - सिंटैक्स संदर्भ
 यह दस्तावेज़ कोटलिन (2.0+) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, अशक्त सुरक्षा, कॉरआउटिन और कोटलिन मुहावरों पर ध्यान केंद्रित करके मुख्य कोटलिन संदर्भ को पूरक करता है।
 ---

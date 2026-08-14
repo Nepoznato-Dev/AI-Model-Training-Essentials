@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pola Arsitektur Perangkat Lunak
 Arsitektur adalah serangkaian keputusan struktural tentang bagaimana suatu sistem diorganisasikan — komponen apa yang dimilikinya, bagaimana mereka berkomunikasi, dan di mana letak tanggung jawabnya. Arsitektur yang baik membuat sistem mudah dipahami, dimodifikasi, dan diskalakan. Arsitektur yang buruk membuat setiap perubahan menjadi sebuah perjuangan. File ini mencakup pola-pola utama, kapan menggunakan masing-masing pola, dan trade-off yang terlibat.
 ---

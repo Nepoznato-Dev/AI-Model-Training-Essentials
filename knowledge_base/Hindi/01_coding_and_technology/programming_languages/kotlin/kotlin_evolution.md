@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # कोटलिन - संस्करण इतिहास और विकास
 ## समयरेखा
 | संस्करण | वर्ष | मुख्य विषय |

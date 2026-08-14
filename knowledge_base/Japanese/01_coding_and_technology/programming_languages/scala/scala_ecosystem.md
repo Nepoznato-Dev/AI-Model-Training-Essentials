@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — エコシステムとツールのガイド
 このガイドでは、Scala エコシステムの重要なツール、フレームワーク、インフラストラクチャについて説明します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart — 語法參考
 本文檔為 Dart (3.x) 提供了全面、結構化的語法參考。它透過關注詳盡的語法模式、空安全、非同步程式設計和麵向 Flutter 的設計模式來補充主要的 Dart 參考。
 ---

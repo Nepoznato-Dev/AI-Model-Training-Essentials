@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها برای نوشتن کدهای متلب تمیز و اصطلاحی را پوشش می دهد.
 ---

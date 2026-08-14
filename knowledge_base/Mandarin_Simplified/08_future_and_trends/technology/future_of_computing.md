@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 计算的未来
 挑战过去 60 年基本假设的力量正在塑造计算的未来。摩尔定律——计算能力大约每两年翻一番——正在放缓。冯·诺依曼架构——独立的 CPU 和内存——正在撞上“内存墙”。量子计算有望解决经典计算机无法解决的问题。神经形态芯片模仿大脑的结构。边缘计算使处理远离集中式数据中心。人工智能正在改变计算机的用途——从执行指令的工具到学习、生成和推理的系统。了解这些转变对于任何构建、购买或依赖技术的人都很重要。
 ---

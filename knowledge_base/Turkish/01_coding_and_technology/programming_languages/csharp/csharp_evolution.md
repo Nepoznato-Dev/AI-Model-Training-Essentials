@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C# — Sürüm Geçmişi ve Gelişimi
 ## Zaman Çizelgesi
 | Sürüm | Yıl | .NET | Anahtar Tema |

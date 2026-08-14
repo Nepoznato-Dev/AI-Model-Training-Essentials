@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Rust. Il complète la référence principale de Rust en se concentrant sur des modèles de syntaxe exhaustifs, des tables d'opérateurs et des mécanismes internes du système de propriété, des traits et de la concurrence.
 ---

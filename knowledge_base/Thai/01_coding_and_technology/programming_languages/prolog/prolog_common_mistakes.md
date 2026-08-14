@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # คำนำ - ข้อผิดพลาดทั่วไปและการต่อต้านรูปแบบ
 เอกสารนี้รวบรวมข้อผิดพลาด กับดัก และรูปแบบการต่อต้านที่พบบ่อยที่สุดใน Prolog พร้อมการแก้ไข
 ---

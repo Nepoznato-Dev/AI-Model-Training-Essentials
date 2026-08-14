@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sztuki wizualne
 Sztuka wizualna to najstarsza forma komunikacji ludzkości — od malowideł jaskiniowych w Lascaux po współczesne instalacje cyfrowe. Zrozumienie ruchów artystycznych, mediów i instytucji chroniących dzieła twórcze pozwala głębiej docenić sposób, w jaki społeczeństwa wyrażały piękno, siłę, duchowość i sprzeciw na przestrzeni tysiącleci.
 ---

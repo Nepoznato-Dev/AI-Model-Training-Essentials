@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Strutture dati e algoritmi
 Le strutture dati sono il modo in cui organizziamo i dati in memoria in modo che le operazioni su di essi siano efficienti. Gli algoritmi sono le procedure passo passo per la risoluzione dei problemi. Insieme, costituiscono le fondamenta dell'informatica: ogni programma che tu abbia mai utilizzato si basa su di loro. Scegliere la giusta struttura dati può trasformare un programma incredibilmente lento in uno veloce, e conoscere l’algoritmo giusto può trasformare un problema irrisolvibile in un problema banale.
 ---

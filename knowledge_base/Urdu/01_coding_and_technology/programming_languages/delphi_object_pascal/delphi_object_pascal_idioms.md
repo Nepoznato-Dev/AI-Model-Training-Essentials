@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ڈیلفی / آبجیکٹ پاسکل — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ کلین ڈیلفی اور آبجیکٹ پاسکل کوڈ لکھنے کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

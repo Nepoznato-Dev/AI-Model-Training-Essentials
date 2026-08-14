@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # المهارات الحياتية العملية
 تعلمك المدرسة حساب التفاضل والتكامل ولكنها نادراً ما تعلمك كيفية تقديم الضرائب، أو طهي وجبة متوازنة، أو الحفاظ على المنزل. هذه هي الكفاءات العملية التي تؤثر على نوعية حياتك اليومية - نوع المعرفة الذي يجعلك مكتفيًا ذاتيًا ومرنًا ماليًا. هذا الملف هو مرجع كثيف للأساسيات.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 식품, 농업 및 영양
 식량은 인간이 필요로 하는 가장 기본적인 것이며 농업은 문명의 기초이다. 수렵에서 농업으로의 전환, 즉 약 10,000년 전의 신석기 혁명을 통해 인간은 도시를 건설하고 문자를 개발하며 우리가 '문명'이라고 부르는 모든 것을 창조할 수 있었습니다. 오늘날 농업은 전 세계 인력의 약 27%를 고용하고 있으며 하루에 약 10조 칼로리를 생산합니다. 그러나 약 8억 명의 사람들이 여전히 굶주리고 있으며, 20억 명 이상이 과체중이거나 비만입니다. 문제는 생산이 아니라 배포, 접근, 선택입니다.
 ---

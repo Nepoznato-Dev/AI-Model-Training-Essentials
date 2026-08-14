@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria da Informação
 A teoria da informação, fundada por Claude Shannon em 1948, quantifica a própria informação. Quanto uma mensagem lhe diz? Quanto você pode compactar dados? Quão rápido você consegue se comunicar em um canal barulhento? Essas perguntas têm respostas matemáticas precisas. Além da comunicação, a teoria da informação tornou-se fundamental para o aprendizado de máquina – a entropia cruzada é a função de perda padrão para classificação, a divergência KL mede a similaridade de distribuição e a informação mútua impulsiona a seleção de recursos.
 ---

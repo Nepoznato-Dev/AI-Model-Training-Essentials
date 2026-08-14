@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # พื้นฐานความปลอดภัยทางไซเบอร์
 การรักษาความปลอดภัยเป็นวินัยที่ต้องบูรณาการเข้ากับทุกชั้นของระบบตั้งแต่เริ่มแรก แทนที่จะเพิ่มไว้ในภายหลัง ไม่ว่าการสร้างเว็บแอปพลิเคชัน การจัดการโครงสร้างพื้นฐาน หรือการจัดส่ง API การทำความเข้าใจภูมิทัศน์ภัยคุกคามและพื้นฐานของการป้องกันเป็นสิ่งสำคัญ
 ---

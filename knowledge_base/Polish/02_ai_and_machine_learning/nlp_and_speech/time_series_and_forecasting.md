@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Szeregi czasowe i prognozowanie
 Dane szeregów czasowych to wszelkie dane gromadzone w czasie: ceny akcji, odczyty temperatury, ruch na stronie internetowej, dane dotyczące sprzedaży, monitory tętna, zużycie energii. Prognozowanie oznacza przewidywanie przyszłych wartości w oparciu o wzorce z przeszłości. Jest to jedno z najcenniejszych zastosowań analityki danych w praktyce i jedno z najtrudniejszych, ponieważ przyszłość jest naprawdę niepewna, a szeregi czasowe w świecie rzeczywistym są pełne szumów, sezonowości i pęknięć strukturalnych.
 ---

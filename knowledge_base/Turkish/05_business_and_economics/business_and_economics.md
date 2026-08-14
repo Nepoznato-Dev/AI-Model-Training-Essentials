@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # İşletme ve Ekonomi
 Bir ürün veya hizmet satan her kuruluş bir işletmedir ve mal üreten ve dağıtan her toplum bir ekonomidir. Bu dosyadaki kavramlar, ister serbest bir operasyon yürütüyor olun, ister bir şirkette çalışıyor olun, ister haberleri anlamaya çalışıyor olun, ya da sadece paranın dünyada nasıl hareket ettiğini anlamaya çalışıyor olun, geçerlidir.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mabadiliko ya Elimu
 ## Muhtasari
 Mfano wa jadi wa elimu - kukaa darasani kwa miaka kumi na miwili, labda kwenda chuo kikuu, kisha ufanye kazi - unavunjika. Wakufunzi wa AI sasa wanaweza kutoa maagizo ya kibinafsi kwa kiwango. Kasi ya mabadiliko ya kiteknolojia inamaanisha kujifunza kwa maisha yote si hiari tena. Na waajiri wanazidi kujali kuhusu kile unachoweza *kufanya*, sio tu sifa ulizo nazo. Hivi ndivyo elimu inavyofikiriwa upya.

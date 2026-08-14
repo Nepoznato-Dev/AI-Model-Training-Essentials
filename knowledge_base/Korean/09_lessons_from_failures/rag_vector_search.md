@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # RAG 및 벡터 검색 실패
 이 문서는 RAG(Retrieval-Augmented Generation) 시스템, 임베딩 사용 및 벡터 검색 구현의 일반적인 오류를 통합합니다.
 ---

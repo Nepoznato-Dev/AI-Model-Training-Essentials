@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Pipeline and ETL Failures
 
 Data pipelines are the plumbing of modern organisations — they move data from source systems through transformations into the databases, warehouses, and lakes where it's used for analytics, machine learning, and decision-making. When they work, nobody notices. When they fail, decisions are made on stale data, models train on garbage, reports show impossible numbers, and trust in the entire data platform erodes. Data pipeline failures are among the most common and most costly failures in technology organisations.

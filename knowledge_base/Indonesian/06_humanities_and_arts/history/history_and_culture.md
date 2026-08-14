@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sejarah dan Budaya
 Sejarah adalah kisah tentang apa yang telah dilakukan manusia — keberhasilan, bencana, penemuan, dan gagasan yang membentuk dunia yang kita tinggali saat ini. Ini bukan hanya daftar tanggal dan nama. Memahami sejarah membantu Anda memahami mengapa perbatasan negara ada, mengapa orang-orang berbicara dalam bahasa yang mereka gunakan, mengapa beberapa negara kaya sementara negara-negara lain tidak, dan mengapa konflik-konflik yang tampak kuno masih terus berkobar.
 File ini mencakup periode dan tema utama dalam sejarah dunia, dari peradaban pertama hingga saat ini.

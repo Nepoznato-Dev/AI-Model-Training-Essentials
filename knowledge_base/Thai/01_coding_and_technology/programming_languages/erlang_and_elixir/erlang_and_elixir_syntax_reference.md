@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Erlang และ Elixir ช่วยเสริมการอ้างอิงหลักโดยมุ่งเน้นไปที่การจับคู่รูปแบบ การจัดการกระบวนการ พฤติกรรม OTP และรูปแบบระบบที่ทนทานต่อข้อผิดพลาด
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bezpieczeństwo i dostosowanie AI
 Bezpieczeństwo sztucznej inteligencji to nauka o tym, jak budować systemy sztucznej inteligencji, które robią to, czego faktycznie od nich oczekujemy, a nie robią rzeczy, których nie chcemy, nawet jeśli nie zostały one wyraźnie wykluczone. Dostosowanie to szczególne wyzwanie polegające na dostosowaniu celów i zachowań systemów AI do ludzkich intencji. W miarę jak systemy sztucznej inteligencji stają się coraz bardziej wydajne, pytania te zmieniają się z ciekawostek akademickich na praktyczne wymagania inżynieryjne.
 ---

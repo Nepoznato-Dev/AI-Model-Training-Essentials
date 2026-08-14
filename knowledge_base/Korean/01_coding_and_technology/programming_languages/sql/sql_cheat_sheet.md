@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — 치트 시트
 ## 선택 기본 사항
 ```sql

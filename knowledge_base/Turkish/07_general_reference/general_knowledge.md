@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genel Bilgi
 Bu dosya, konuşmalarda, haberlerde, eğitimde ve günlük yaşamda düzenli olarak ortaya çıkan gerçeklerin ve kavramların bir koleksiyonudur. Bunu arka plan bilgisi olarak düşünün; okuduğunuzu, duyduğunuzu veya deneyimlediğiniz şeyi anlamanıza yardımcı olacak türden bir şey.
 ---

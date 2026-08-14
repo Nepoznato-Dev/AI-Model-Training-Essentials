@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # การกำหนดค่าไปป์ไลน์ CI/CD
 ไปป์ไลน์การบูรณาการอย่างต่อเนื่อง (CI) และการปรับใช้อย่างต่อเนื่อง (CD) ทำให้กระบวนการสร้าง การทดสอบ และการใช้งานซอฟต์แวร์เป็นแบบอัตโนมัติ ข้อมูลอ้างอิงนี้ครอบคลุมรูปแบบการกำหนดค่าสำหรับแพลตฟอร์ม CI/CD ที่ได้รับความนิยมสูงสุด: GitHub Actions, GitLab CI และหลักการออกแบบไปป์ไลน์ทั่วไป
 ---

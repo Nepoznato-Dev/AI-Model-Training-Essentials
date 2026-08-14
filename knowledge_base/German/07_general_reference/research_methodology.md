@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Forschungsmethodik
 Forschungsmethodik ist der systematische Ansatz zur Untersuchung von Fragen, zum Testen von Hypothesen und zur Generierung verlässlichen Wissens. Ob Sie wissenschaftliche Experimente, sozialwissenschaftliche Umfragen, Unternehmensanalysen oder akademische Forschung durchführen: Die von Ihnen gewählte Methodik bestimmt, ob Ihre Ergebnisse glaubwürdig, reproduzierbar und nützlich sind. Eine gut konzipierte Studie liefert vertrauenswürdige Ergebnisse; Eine schlecht gestaltete Antwort erzeugt Lärm – oder schlimmer noch, selbstbewusste falsche Antworten.
 ---

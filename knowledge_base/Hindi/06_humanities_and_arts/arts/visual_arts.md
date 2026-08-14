@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # दृश्य कला
 दृश्य कला मानवता के संचार का सबसे पुराना रूप है - लास्कॉक्स की गुफा चित्रों से लेकर आज के डिजिटल इंस्टॉलेशन तक। कला आंदोलनों, माध्यमों और रचनात्मक कार्यों को संरक्षित करने वाली संस्थाओं को समझने से आपको इस बात की गहरी सराहना मिलती है कि कैसे समाज ने सदियों से सुंदरता, शक्ति, आध्यात्मिकता और असहमति व्यक्त की है।
 ---

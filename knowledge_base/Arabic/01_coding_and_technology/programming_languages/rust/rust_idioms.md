@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # الصدأ - الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية وأفضل الممارسات لكتابة كود Rust النظيف والآمن.
 ---

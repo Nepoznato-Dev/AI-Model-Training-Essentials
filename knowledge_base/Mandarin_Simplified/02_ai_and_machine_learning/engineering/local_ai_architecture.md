@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 本地AI架构
 完全在设备上运行大型语言模型的实用指南 - 硬件注意事项、推理引擎、内存优化和边缘部署的系统设计。
 ---

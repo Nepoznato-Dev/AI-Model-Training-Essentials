@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Git Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # গিট কমান্ড দ্রুত রেফারেন্স
 সংস্করণ নিয়ন্ত্রণের জন্য প্রয়োজনীয় গিট কমান্ড।
 ---

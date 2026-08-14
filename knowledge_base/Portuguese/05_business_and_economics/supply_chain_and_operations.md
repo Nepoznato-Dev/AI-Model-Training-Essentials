@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cadeia de suprimentos e gerenciamento de operações
 O gerenciamento da cadeia de suprimentos é a coordenação de todas as atividades envolvidas no fornecimento, aquisição, conversão e logística – desde as matérias-primas até o produto acabado nas mãos do cliente. O gerenciamento de operações é o funcionamento diário dos sistemas de produção. Juntos, eles determinam se uma empresa pode entregar o produto certo, no momento certo, com o custo certo e com a qualidade certa. A pandemia, a escassez de chips e os bloqueios de canais mostraram quão frágeis e globalmente interligadas são as cadeias de abastecimento.
 ---

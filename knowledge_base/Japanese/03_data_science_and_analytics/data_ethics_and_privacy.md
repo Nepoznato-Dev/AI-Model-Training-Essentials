@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # データ倫理とプライバシー
 データ倫理は、データの収集、分析、展開が人々の権利、自律性、幸福にどのような影響を与えるかを研究するものです。プライバシーは、個人情報を誰が管理し、どのように共有するかに関する特別な懸念事項です。これらのトピックは、学術的な議論から一面ニュースへと移りました。GDPR の施行、数十億のユーザーに影響を与えるデータ侵害、テクノロジー企業のデータ慣行が民主主義、平等、個人の自由に真の影響を与えるという一般の認識の高まりです。
 ---

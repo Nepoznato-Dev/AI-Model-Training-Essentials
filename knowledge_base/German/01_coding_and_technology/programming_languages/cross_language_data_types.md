@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Sprachübergreifender Vergleich – Datentypen und -strukturen
 ## Primitive Typen
 | Geben Sie | ein Python | JavaScript | Rost | Geh | Java | C | C++ | C# |

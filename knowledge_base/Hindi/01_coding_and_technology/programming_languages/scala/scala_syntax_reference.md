@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # स्काला - सिंटैक्स संदर्भ
 यह दस्तावेज़ स्काला के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है (2.x अंतर पर नोट्स के साथ 3.x)। यह संपूर्ण सिंटैक्स पैटर्न, प्रकार प्रणाली, कार्यात्मक प्रोग्रामिंग संरचनाओं और स्काला मुहावरों पर ध्यान केंद्रित करके मुख्य स्काला संदर्भ को पूरक करता है।
 ---

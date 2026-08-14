@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 模型优化和部署
 训练大型人工智能模型是一项重大成就，但有效部署它是需要大部分工程工作的地方。对于大多数实际应用程序来说，需要 10 秒响应或需要 8 个 A100 GPU 的模型是不切实际的。模型优化是使模型更小、更快、更具成本效益的过程，同时保持可接受的质量。该文件涵盖了量化、修剪、蒸馏以及在生产中部署模型的实用工具。
 ---

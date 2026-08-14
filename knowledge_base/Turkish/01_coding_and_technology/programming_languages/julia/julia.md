@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Julia
 Julia, teknik ve bilimsel hesaplama için tasarlanmış üst düzey, yüksek performanslı bir programlama dilidir. İlk olarak 2012'de piyasaya sürülen (2018'de 1.0) Julia, bilim adamlarının Python/R'de prototip yapıp üretim performansı için C/C++/Fortran'da yeniden yazdığı "iki dil sorununu" çözmek için yaratıldı. Julia, Python kadar kolay ama C kadar hızlı olmayı hedefliyor.
 Julia, etkileşimli, dinamik bir hissi korurken C'ye yakın performans elde etmek için LLVM aracılığıyla tam zamanında (JIT) derlemeyi kullanıyor. Paralel hesaplama, dağıtılmış işleme ve çoklu gönderime sahip karmaşık tipte bir sistem için birinci sınıf desteğe sahiptir.

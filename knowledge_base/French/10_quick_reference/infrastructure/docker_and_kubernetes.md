@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Aide-mémoire Docker et Kubernetes
 Une référence pratique pour conteneuriser des applications avec Docker et les orchestrer avec Kubernetes. Suppose une connaissance de base de la ligne de commande.
 ---

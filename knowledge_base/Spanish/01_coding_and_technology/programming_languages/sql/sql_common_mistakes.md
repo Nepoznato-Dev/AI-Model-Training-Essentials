@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en SQL con correcciones.
 ---

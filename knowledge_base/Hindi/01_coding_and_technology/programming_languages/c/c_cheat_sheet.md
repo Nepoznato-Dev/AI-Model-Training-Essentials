@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # सी - चीट शीट
 ## मूल बातें
 ```c

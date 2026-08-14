@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 자바스크립트
 JavaScript는 Brendan Eich가 1995년 단 10일 만에 만든 동적 해석 프로그래밍 언어입니다. 원래 웹 페이지에 상호 작용 기능을 추가하도록 설계되었으나 세계에서 가장 널리 사용되는 프로그래밍 언어로 성장했습니다. JavaScript는 모든 웹 브라우저, Node.js를 통한 서버, 데스크톱 앱(Electron), 모바일 앱(React Native) 및 임베디드 시스템에서 실행됩니다.
 이 언어는 본질적으로 클라이언트 측 웹 개발을 위한 유일한 옵션이라는 점에서 독특합니다. 모든 브라우저는 기본적으로 이를 지원합니다. 풀스택 JavaScript(Node.js, Deno, Bun)의 등장과 결합된 이러한 독점은 이를 필수불가결하게 만듭니다.

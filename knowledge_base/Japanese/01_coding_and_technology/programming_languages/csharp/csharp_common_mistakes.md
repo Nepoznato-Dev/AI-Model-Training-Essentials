@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — よくある間違いとアンチパターン
 このドキュメントでは、C# で最も一般的な間違い、罠、およびアンチパターンをカタログ化します。各エントリは、間違ったアプローチを示し、それが失敗する理由を説明し、正しい解決策を提供します。
 ---

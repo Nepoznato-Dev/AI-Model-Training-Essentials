@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Hướng dẫn về hệ sinh thái và công cụ
 Hướng dẫn này bao gồm các công cụ, gói và cơ sở hạ tầng thiết yếu trong hệ sinh thái R.
 ---

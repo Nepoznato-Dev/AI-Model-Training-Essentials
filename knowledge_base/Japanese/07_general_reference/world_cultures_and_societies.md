@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 世界の文化と社会
 文化は社会の枠組みであり、メンバーが自分たちの世界やお互いに対処するために使用する共有の信念、価値観、習慣、行動、および工芸品です。文化的多様性を理解することは、トリビアを暗記することではありません。それは、世界の見方は数千あるうちの一つであり、他のシステムは内部的に一貫性があり、歴史に基づいており、独自の観点から理解する価値があることを認識することです。
 ---

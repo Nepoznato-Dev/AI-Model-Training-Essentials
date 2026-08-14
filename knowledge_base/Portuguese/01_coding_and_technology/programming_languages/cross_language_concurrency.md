@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Comparação entre idiomas - simultaneidade e paralelismo
 ## Visão geral dos modelos de simultaneidade
 | Idioma | Modelo | Mecanismo Chave | Memória compartilhada? |

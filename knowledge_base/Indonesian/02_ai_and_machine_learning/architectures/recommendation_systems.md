@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sistem Rekomendasi
 Sistem rekomendasi memprediksi apa yang selanjutnya ingin dilihat, dibeli, atau berinteraksi oleh pengguna. Mereka mendukung umpan konten di media sosial, saran produk di situs e-niaga, pilihan film di platform streaming, dan hasil pencarian. Meskipun tidak terlihat oleh sebagian besar pengguna, sistem ini merupakan salah satu sistem AI yang paling berdampak secara komersial di dunia — Netflix memperkirakan mesin rekomendasinya menghemat lebih dari $1 miliar per tahun dengan mengurangi churn pelanggan.
 ---

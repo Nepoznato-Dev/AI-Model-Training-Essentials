@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 言語学と言語科学
 言語学は、言語、つまりその構造、意味、使用、獲得、進化についての科学的研究です。言語は人間のコミュニケーションの特徴です。言語は無限に生産的であり (話者はこれまでに見たことのない文章を作成して理解することができます)、文化的に伝達され (純粋に生得的ではなく学習されます)、継続的に進化しています。言語がどのように機能するかを理解することは、言語テクノロジーを構築したり、教育したり、翻訳したり、より効果的にコミュニケーションをとることに取り組んだりするすべての人にとって重要です。
 ---

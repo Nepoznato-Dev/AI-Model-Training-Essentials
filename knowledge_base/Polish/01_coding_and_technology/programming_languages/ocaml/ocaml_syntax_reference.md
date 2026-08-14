@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni OCaml (4.x/5.x). Uzupełnia główne odniesienia do OCaml, koncentrując się na wyczerpujących wzorcach składni, algebraicznych typach danych, dopasowywaniu wzorców, modułach i idiomach programowania funkcjonalnego.
 ---

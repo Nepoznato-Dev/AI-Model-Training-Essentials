@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metodología de la investigación
 La metodología de la investigación es el enfoque sistemático para investigar preguntas, probar hipótesis y generar conocimiento confiable. Ya sea que esté realizando experimentos científicos, encuestas de ciencias sociales, análisis comerciales o investigaciones académicas, la metodología que elija determina si sus hallazgos son creíbles, reproducibles y útiles. Un estudio bien diseñado produce resultados confiables; uno mal diseñado produce ruido o, peor aún, respuestas equivocadas y seguras.
 ---

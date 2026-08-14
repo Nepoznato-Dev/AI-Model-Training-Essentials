@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — Mga Karaniwang Pagkakamali at Anti-Pattern
 Kino-catalog ng dokumentong ito ang mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa OCaml na may mga pagwawasto.
 ---

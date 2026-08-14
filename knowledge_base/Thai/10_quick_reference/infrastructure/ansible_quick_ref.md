@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible และการจัดการการกำหนดค่า
 Ansible คือเครื่องมือการจัดการการกำหนดค่าและการทำงานอัตโนมัติแบบไม่ใช้เอเจนต์ ใช้ SSH (หรือ WinRM สำหรับ Windows) เพื่อเชื่อมต่อกับเซิร์ฟเวอร์และดำเนินงานที่กำหนดไว้ใน Playbooks ของ YAML ไม่เหมือนกับเครื่องมือที่ต้องติดตั้งเอเจนต์บนทุกเครื่อง Ansible เป็นแบบพุช — คุณรันคำสั่งจากโหนดควบคุม ใช้สำหรับการจัดเตรียมเซิร์ฟเวอร์ การปรับใช้แอปพลิเคชัน การจัดการการกำหนดค่า และการดำเนินงานเฉพาะกิจ
 ---

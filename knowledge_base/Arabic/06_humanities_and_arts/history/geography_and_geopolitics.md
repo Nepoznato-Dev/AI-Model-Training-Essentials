@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الجغرافيا والجغرافيا السياسية
 الجغرافيا تشكل القدر لقد ساهم موقع الجبال والأنهار والموارد الطبيعية في تحديد طرق التجارة، وإشعال الحروب، وبناء الحضارات لآلاف السنين. واليوم، تظل الجغرافيا السياسية ــ التفاعل بين الجغرافيا والقوة والسياسة ــ تشكل ضرورة أساسية لفهم الأسباب التي تجعل الدول تتصرف على هذا النحو.
 ---

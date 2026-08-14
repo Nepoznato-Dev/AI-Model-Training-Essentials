@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Hướng dẫn về hệ sinh thái và công cụ
 Hướng dẫn này bao gồm các cơ sở dữ liệu, công cụ và cơ sở hạ tầng thiết yếu trong hệ sinh thái SQL.
 ---

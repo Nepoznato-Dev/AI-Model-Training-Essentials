@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, deyimsel Haskell kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

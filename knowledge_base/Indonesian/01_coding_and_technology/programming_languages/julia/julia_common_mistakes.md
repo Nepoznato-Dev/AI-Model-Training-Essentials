@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — Kesalahan Umum & Anti-Pola
 Dokumen ini berisi katalog kesalahan, jebakan, dan anti-pola paling umum di Julia beserta koreksinya.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia
 Julia là ngôn ngữ lập trình cấp cao, hiệu suất cao được thiết kế cho tính toán khoa học và kỹ thuật. Được phát hành lần đầu tiên vào năm 2012 (1.0 vào năm 2018), Julia được tạo ra để giải quyết "vấn đề hai ngôn ngữ" — nơi các nhà khoa học tạo nguyên mẫu bằng Python/R nhưng viết lại bằng C/C++/Fortran để đạt được hiệu suất sản xuất. Julia đặt mục tiêu dễ dàng như Python nhưng nhanh như C.
 Julia sử dụng tính năng biên dịch đúng lúc (JIT) thông qua LLVM để đạt được hiệu suất gần C trong khi vẫn duy trì cảm giác tương tác, năng động. Nó có sự hỗ trợ hạng nhất cho tính toán song song, xử lý phân tán và một hệ thống loại phức tạp với nhiều công văn.

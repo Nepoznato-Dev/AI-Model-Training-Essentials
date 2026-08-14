@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سويفت - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والأطر والبنية التحتية الأساسية في نظام Swift البيئي.
 ---

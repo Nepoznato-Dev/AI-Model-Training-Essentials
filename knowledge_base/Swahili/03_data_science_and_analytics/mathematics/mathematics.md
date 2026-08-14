@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hisabati
 Hisabati si somo linalosomwa shuleni pekee - inasimamia karibu kila nyanja ya kiufundi. Fizikia huitumia kuelezea ulimwengu. Sayansi ya kompyuta huitumia kuunda algoriti. Kujifunza kwa mashine huitumia kuongeza uzani. Fedha huitumia kuhatarisha bei. Umahiri wa kila tawi si lazima, lakini kuelewa mazingira - na kujua ambapo kila tawi linatumika - hufanya mada zingine kueleweka kwa urahisi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #بروميثيوس وجرافانا
 Prometheus عبارة عن مجموعة أدوات مراقبة وتنبيه مفتوحة المصدر مصممة لتحقيق الموثوقية وقابلية التوسع. Grafana هي المنصة الرائدة مفتوحة المصدر لتصور بيانات السلاسل الزمنية. وتشكل معًا مجموعة المراقبة الأكثر شيوعًا للبنية التحتية والتطبيقات الحديثة. يقوم بروميثيوس بجمع وتخزين المقاييس؛ يعرضها Grafana في لوحات المعلومات.
 ---

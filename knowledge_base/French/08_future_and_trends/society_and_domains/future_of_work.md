@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Avenir du travail
 ## Aperçu
 Notre façon de travailler évolue plus rapidement que jamais depuis la révolution industrielle. Le travail à distance est passé d’un avantage rare à un défaut du jour au lendemain. L’IA passe du statut de nouveauté à celui de collaborateur. L’économie des petits boulots est en train de remodeler ce que signifie même le terme « emploi ». Et l’automatisation ne concerne pas tous les emplois, mais elle concerne de nombreuses tâches au sein de la plupart des emplois. Voici un aperçu des forces qui remodèlent le lieu de travail et de ce qui va suivre.

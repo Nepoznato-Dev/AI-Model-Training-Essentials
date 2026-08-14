@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — Riferimento alla sintassi
 Questo documento fornisce un riferimento completo e strutturato alla sintassi per Rust. Completa il riferimento principale a Rust concentrandosi su modelli di sintassi esaustivi, tabelle degli operatori e meccanismi interni del sistema di proprietà, tratti e concorrenza.
 ---

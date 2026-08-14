@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — 語法參考
 本文檔提供了 PHP (8.x) 的全面、結構化語法參考。它透過專注於詳盡的語法模式、現代 PHP 功能、物件導向程式設計和實用習慣用法來補充主要的 PHP 參考。
 ---

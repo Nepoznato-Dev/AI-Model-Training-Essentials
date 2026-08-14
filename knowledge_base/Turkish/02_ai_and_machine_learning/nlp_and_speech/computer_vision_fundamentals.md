@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bilgisayarlı Görmenin Temelleri
 Bilgisayarlı görme, makinelere dünyadaki görsel bilgileri (görüntüler, videolar ve 3 boyutlu veriler) yorumlama ve anlama yeteneği verir. Telefonunuzdaki yüz tanımadan sürücüsüz arabalara, tıbbi görüntü analizine ve endüstriyel kalite kontrolüne kadar her şeye güç sağlar. Bu dosya temel kavramları, mimarileri ve teknikleri kapsar.
 ---

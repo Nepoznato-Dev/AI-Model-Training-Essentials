@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für Visual Basic (VB.NET). Es ergänzt die Hauptreferenz zu Visual Basic, indem es sich auf umfassende Syntaxmuster, OOP-Funktionen, LINQ, Async/Await und .NET-Integrationsidiome konzentriert.
 ---

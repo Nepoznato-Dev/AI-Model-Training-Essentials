@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R
 R è un linguaggio e un ambiente di programmazione progettati specificamente per il calcolo statistico e l'analisi dei dati. Creato da Ross Ihaka e Robert Gentleman all'Università di Auckland nel 1993 (da qui "R"), è un'implementazione del linguaggio S con estensioni significative. R è open source e gestito dal R Core Team. È lo strumento standard per statistici, analisti di dati e ricercatori nel mondo accademico, sanitario, finanziario e governativo.
 R eccelle nella manipolazione dei dati, nella modellazione statistica, nella visualizzazione e nel reporting. Il suo ecosistema di pacchetti (CRAN) comprende oltre 20.000 pacchetti che coprono praticamente ogni metodo statistico mai ideato.

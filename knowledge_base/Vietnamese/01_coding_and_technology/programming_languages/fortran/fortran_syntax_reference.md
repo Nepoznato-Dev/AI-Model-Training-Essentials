@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Modern Fortran (2008/2018). Nó bổ sung cho tham chiếu Fortran chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, hoạt động mảng, mô-đun, OOP và điện toán hiệu năng cao.
 ---

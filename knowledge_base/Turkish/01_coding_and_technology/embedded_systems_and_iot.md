@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gömülü Sistemler ve IoT
 Gömülü sistemler, arabanızın motor kontrol ünitesi, çamaşır makinenizin kontrolörü, akıllı termostattaki mikrokontrolör gibi diğer cihazların içine gizlenmiş bilgisayarlardır. Genel amaçlı bilgisayarların aksine, genellikle güç, bellek ve işlem hızı konusunda sıkı kısıtlamalarla belirli görevler için tasarlanmıştır. Nesnelerin İnterneti (IoT), gömülü sistemleri ağlara bağlayarak, uzaktan izleme, kontrol ve veri toplama olanağı sağlayarak genişletir. Birlikte, fiziksel dünyayla etkileşime giren milyarlarca bilgi işlem cihazını temsil ediyorlar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — よくある間違いとアンチパターン
 この文書には、Fortran で最も一般的な間違い、罠、およびアンチパターンが修正付きでカタログ化されています。
 ---

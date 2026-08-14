@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # کمپیوٹر وژن کے بنیادی اصول
 کمپیوٹر ویژن مشینوں کو دنیا سے بصری معلومات کی تشریح اور سمجھنے کی صلاحیت فراہم کرتا ہے - تصاویر، ویڈیو، اور 3D ڈیٹا۔ یہ آپ کے فون پر چہرے کی شناخت سے لے کر خود چلانے والی کاروں، طبی تصویر کے تجزیہ اور صنعتی کوالٹی کنٹرول تک ہر چیز کو طاقت دیتا ہے۔ یہ فائل بنیادی تصورات، فن تعمیرات اور تکنیکوں کا احاطہ کرتی ہے۔
 ---

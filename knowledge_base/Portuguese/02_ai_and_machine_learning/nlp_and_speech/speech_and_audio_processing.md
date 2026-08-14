@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Processamento de fala e áudio
 O processamento de fala e áudio abrange as tecnologias que permitem às máquinas ouvir, compreender, gerar e manipular o som. Isso inclui reconhecimento de fala (transformar palavras faladas em texto), síntese de fala (transformar texto em palavras faladas), identificação de locutor, geração de música e compreensão de som ambiental. O campo foi transformado pela aprendizagem profunda – os sistemas modernos aproximam-se da precisão do nível humano para o reconhecimento de voz e produzem vozes sintéticas assustadoramente naturais.
 ---

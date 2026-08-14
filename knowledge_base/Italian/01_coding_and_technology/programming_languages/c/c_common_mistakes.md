@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C – Errori comuni e anti-modelli
 Questo documento cataloga gli errori, le trappole e gli anti-pattern più comuni in C. Ogni voce mostra l'approccio errato, spiega perché fallisce e fornisce la soluzione corretta. C ti dà il pieno controllo, il che significa piena responsabilità per la sicurezza della memoria, il controllo dei limiti e il comportamento indefinito.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — Odniesienie do składni
 Ten dokument zawiera obszerne, uporządkowane omówienie składni Lua (5.4). Uzupełnia główne odniesienia do Lua, skupiając się na wyczerpujących wzorcach składni, tabelach i metatabelach, współprogramach oraz unikalnej filozofii projektowania Lua.
 ---

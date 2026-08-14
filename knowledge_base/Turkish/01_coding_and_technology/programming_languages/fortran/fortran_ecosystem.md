@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — Ekosistem ve Takımlama Kılavuzu
 Bu kılavuz Fortran ekosistemindeki temel araçları, kitaplıkları ve altyapıyı kapsar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi tiêu
 Dart là ngôn ngữ lập trình được tối ưu hóa cho khách hàng do Google phát triển, phát hành lần đầu tiên vào năm 2013. Mặc dù ban đầu Dart được định vị là ngôn ngữ thay thế JavaScript tiềm năng cho trình duyệt web, nhưng nó nhận thấy mục đích chính là ngôn ngữ đằng sau **Flutter** — bộ công cụ giao diện người dùng đa nền tảng của Google để xây dựng các ứng dụng di động, web, máy tính để bàn và nhúng từ một cơ sở mã duy nhất.
 Dart kết hợp các tính năng tốt nhất của các ngôn ngữ hiện đại: hướng đối tượng, có kiểu gõ tùy chọn (không có âm thanh an toàn kể từ Dart 3), hỗ trợ lập trình không đồng bộ với`async`/`await`và biên dịch thành cả mã máy gốc (dành cho thiết bị di động/máy tính để bàn) và JavaScript (dành cho web).

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سی شارپ - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها برای نوشتن کدهای C# (12+) تمیز و مدرن را پوشش می دهد.
 ---

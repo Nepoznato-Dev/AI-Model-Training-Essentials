@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Erreurs courantes et anti-modèles
 Ce document répertorie les erreurs, pièges et anti-modèles les plus courants dans MATLAB avec des corrections.
 ---

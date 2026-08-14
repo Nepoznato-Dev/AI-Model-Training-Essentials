@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 光学和波
 波无处不在：声音、光、水、无线电信号、量子概率振幅、股市波动以及神经网络激活的振动。光学——对光的研究——是最发达的波动科学，其数学工具（傅里叶分析、干涉、衍射）适用于每一种波动现象。了解波对于信号处理、图像分析、通信和所有现代技术的物理层至关重要。
 ---

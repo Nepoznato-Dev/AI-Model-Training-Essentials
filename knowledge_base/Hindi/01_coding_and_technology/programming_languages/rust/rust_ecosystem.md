@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # जंग - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह गाइड रस्ट पारिस्थितिकी तंत्र में आवश्यक उपकरण, ढांचे और बुनियादी ढांचे को शामिल करता है।
 ---

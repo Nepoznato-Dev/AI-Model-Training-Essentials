@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فشل بحث RAG وVector
 تعمل هذه الوثيقة على دمج حالات الفشل الشائعة في أنظمة إنشاء الاسترجاع المعزز (RAG)، واستخدام التضمين، وتطبيقات بحث المتجهات.
 ---

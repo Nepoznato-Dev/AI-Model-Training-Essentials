@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — エコシステムとツールのガイド
 このガイドでは、SQL エコシステムの重要なデータベース、ツール、インフラストラクチャについて説明します。
 ---

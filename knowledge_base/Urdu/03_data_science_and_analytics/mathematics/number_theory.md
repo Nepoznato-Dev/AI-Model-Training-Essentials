@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #نمبر تھیوری
 نمبر تھیوری انٹیجرز - پورے اعداد اور ان کی خصوصیات کا مطالعہ ہے۔ گاس نے اسے "ریاضی کی ملکہ" کہا۔ سادہ ترین اشیاء (1، 2، 3، ...) کا مطالعہ کرنے کے باوجود، نمبر تھیوری تمام ریاضی میں کچھ گہرے اور مشکل ترین مسائل پیدا کرتی ہے۔ آج، یہ جدید کرپٹوگرافی، ہیشنگ الگورتھم، غلطی کو درست کرنے والے کوڈز، اور بے ترتیب تعداد کی تخلیق کو زیر کرتا ہے۔
 ---

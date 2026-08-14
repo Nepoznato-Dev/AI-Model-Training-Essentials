@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kabuk ve PowerShell
 Kabuk komut dosyası oluşturma, komut satırı yorumlayıcıları için komut dosyaları yazmayı ifade eder. En önemli iki kabuk, Linux ve macOS'ta varsayılan olan **Bash** (Bourne Again Shell) ve Microsoft'un modern platformlar arası kabuğu ve komut dosyası dili olan **PowerShell**'dir. Kabuk komut dosyaları, sistem yönetimi görevlerini, işlem hatlarını oluşturmayı, dosya işlemeyi ve dağıtım iş akışlarını otomatikleştirir.
 Her geliştiricinin, DevOps mühendisinin ve sistem yöneticisinin kabuk komut dosyası oluşturma becerilerine ihtiyacı vardır. İster bir web sunucusu dağıtıyor, ister günlük dosyalarını işliyor, ister CI/CD işlem hatlarını kuruyor, ister yedeklemeleri otomatikleştiriyor olun, kabuk komut dosyası oluşturma bu iş için gereken araçtır.

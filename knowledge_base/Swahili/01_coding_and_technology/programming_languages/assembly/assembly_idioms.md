@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kusanyiko — Miundo ya nahau na Mbinu Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo safi wa Kusanyiko unaoweza kudumishwa (lengo la x86/x64 kwa sintaksia ya NASM).
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mifumo ya Mapendekezo
 Mifumo ya mapendekezo hutabiri kile ambacho mtumiaji atataka kuona, kununua au kuingiliana nacho. Wanawezesha milisho ya maudhui kwenye mitandao ya kijamii, mapendekezo ya bidhaa kwenye tovuti za biashara ya mtandaoni, chaguo za filamu kwenye majukwaa ya utiririshaji, na matokeo ya utafutaji. Licha ya kutoonekana kwa watumiaji wengi, ni miongoni mwa mifumo ya AI yenye athari kubwa kibiashara duniani - Netflix inakadiria injini yake ya mapendekezo huokoa zaidi ya dola bilioni 1 kwa mwaka kwa kupunguza mvutano wa watumiaji.
 ---

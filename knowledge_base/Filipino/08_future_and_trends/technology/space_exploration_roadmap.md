@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Roadmap ng Space Exploration
 ## Pangkalahatang-ideya
 Nabubuhay tayo sa isang bagong ginintuang panahon ng paggalugad sa kalawakan. Ang programang Artemis ng NASA ay nagbabalik ng mga tao sa Buwan. Gumagawa ang SpaceX ng isang ganap na magagamit muli na rocket na idinisenyo para sa Mars. Ang China ay may sariling ambisyosong lunar at Martian na mga plano. At isang lumalagong konstelasyon ng mga pribadong kumpanya ang nagbubukas ng espasyo sa komersyo — mula sa satellite internet hanggang sa turismo sa kalawakan. Narito ang roadmap, mula sa Buwan hanggang Mars at higit pa.

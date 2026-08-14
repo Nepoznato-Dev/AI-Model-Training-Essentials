@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Misingi ya Mitandao
 Marejeleo ya vitendo kwa wasanidi programu na sysadmins - dhana za msingi, itifaki, amri na utatuzi wa matatizo.
 ---

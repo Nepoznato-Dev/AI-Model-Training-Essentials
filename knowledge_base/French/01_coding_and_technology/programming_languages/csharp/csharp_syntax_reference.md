@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Modern C# (C# 10/11/12 sur .NET 7/8). Il complète la référence principale C# en se concentrant sur les modèles de syntaxe exhaustifs, LINQ, async/await, la correspondance de modèles et les fonctionnalités modernes.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها برای نوشتن کدهای تمیز و مدرن فرترن (2018+) را پوشش می دهد.
 ---

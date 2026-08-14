@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — Sözdizimi Referansı
 Bu belge, Scala için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar (2.x farklılıklarına ilişkin notlarla birlikte 3.x). Kapsamlı sözdizimi kalıplarına, tür sistemine, işlevsel programlama yapılarına ve Scala deyimlerine odaklanarak ana Scala referansını tamamlar.
 ---

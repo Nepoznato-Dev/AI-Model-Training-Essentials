@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, deyimsel kalıpları ve temiz, deyimsel Kotlin kodu yazmaya yönelik en iyi uygulamaları kapsar.
 ---

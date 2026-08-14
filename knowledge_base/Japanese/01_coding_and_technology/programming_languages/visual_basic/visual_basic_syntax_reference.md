@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic — 構文リファレンス
 このドキュメントは、Visual Basic (VB.NET) の包括的で構造化された構文リファレンスを提供します。これは、網羅的な構文パターン、OOP 機能、LINQ、async/await、および .NET 統合イディオムに焦点を当て、メインの Visual Basic リファレンスを補完します。
 ---

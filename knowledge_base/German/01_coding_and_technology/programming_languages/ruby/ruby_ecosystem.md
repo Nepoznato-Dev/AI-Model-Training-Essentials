@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby – Ökosystem- und Tooling-Leitfaden
 Dieser Leitfaden behandelt die wesentlichen Tools, Frameworks und Infrastruktur im Ruby-Ökosystem.
 ---

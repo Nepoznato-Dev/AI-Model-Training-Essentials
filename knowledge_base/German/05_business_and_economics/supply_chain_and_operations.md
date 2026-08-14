@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lieferketten- und Betriebsmanagement
 Unter Supply Chain Management versteht man die Koordination aller Aktivitäten im Bereich Beschaffung, Beschaffung, Verarbeitung und Logistik – vom Rohstoff bis zum fertigen Produkt in den Händen des Kunden. Unter Betriebsmanagement versteht man den täglichen Betrieb von Produktionssystemen. Zusammen bestimmen sie, ob ein Unternehmen das richtige Produkt zur richtigen Zeit, zu den richtigen Kosten und in der richtigen Qualität liefern kann. Die Pandemie, Chipknappheit und Kanalverstopfungen haben gezeigt, wie fragil und global vernetzt Lieferketten sind.
 ---

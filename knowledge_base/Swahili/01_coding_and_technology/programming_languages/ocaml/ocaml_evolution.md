@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml - Historia ya Toleo & Mageuzi
 ## Rekodi ya matukio
 | Toleo | Mwaka | Mandhari Muhimu |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Erlang và Elixir. Nó bổ sung cho tài liệu tham khảo chính bằng cách tập trung vào khớp mẫu, quản lý quy trình, hành vi OTP và các mẫu hệ thống có khả năng chịu lỗi.
 ---

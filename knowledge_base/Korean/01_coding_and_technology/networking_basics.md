@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 네트워킹 기초
 개발자와 시스템 관리자를 위한 실용적인 참고 자료 - 핵심 개념, 프로토콜, 명령 및 문제 해결.
 ---

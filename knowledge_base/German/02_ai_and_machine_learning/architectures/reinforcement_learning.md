@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Verstärkungslernen
 Beim Reinforcement Learning (RL) lernen Maschinen durch Versuch und Irrtum, Entscheidungssequenzen zu treffen. Im Gegensatz zum überwachten Lernen, bei dem für jedes Beispiel die richtige Antwort bereitgestellt wird, gibt RL einem Agenten lediglich ein Belohnungssignal – und der Agent muss herausfinden, welche Aktionen im Laufe der Zeit zu den besten Ergebnissen führen. Es ist der Ansatz hinter AlphaGo, der Robotersteuerung, der Spiel-KI und – ganz entscheidend – RLHF, der Technik, die verwendet wird, um moderne große Sprachmodelle mit menschlichen Vorlieben in Einklang zu bringen.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Praktyczne umiejętności życiowe
 Szkoła uczy rachunku różniczkowego, ale rzadko uczy, jak płacić podatki, gotować zbilansowany posiłek lub prowadzić dom. Są to kompetencje praktyczne, które wpływają na jakość Twojego codziennego życia – rodzaj wiedzy, która czyni Cię samowystarczalnym i odpornym finansowo. Ten plik jest gęstym odniesieniem do najważniejszych rzeczy.
 ---

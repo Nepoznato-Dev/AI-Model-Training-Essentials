@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Avenir durable
 ## Aperçu
 La question n’est plus *si* le monde doit passer à une économie durable, mais *à quelle vitesse* et *qui mène*. L’énergie renouvelable est désormais la source d’énergie la moins chère sur la plupart des marchés. Les principes de l’économie circulaire passent du concept de niche à la stratégie d’entreprise. Les villes repensent tout, du transport aux déchets. Et la course vers le zéro net remodèle les secteurs de l’énergie à la finance. Voici à quoi ressemble un avenir durable dans quatre dimensions clés.

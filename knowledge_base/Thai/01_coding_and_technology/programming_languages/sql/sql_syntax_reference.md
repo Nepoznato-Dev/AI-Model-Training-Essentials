@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ SQL (ANSI SQL พร้อมหมายเหตุเกี่ยวกับความแตกต่างของภาษาถิ่นของ PostgreSQL/MySQL/SQLite) ช่วยเสริมการอ้างอิง SQL หลักโดยมุ่งเน้นไปที่รูปแบบการสืบค้นที่ละเอียดถี่ถ้วน ฟังก์ชันหน้าต่าง CTE และการออกแบบฐานข้อมูล
 ---

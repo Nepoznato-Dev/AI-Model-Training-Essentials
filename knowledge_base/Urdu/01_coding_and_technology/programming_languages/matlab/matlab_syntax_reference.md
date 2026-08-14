@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB - نحوی حوالہ
 یہ دستاویز MATLAB (R2024+) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، میٹرکس آپریشنز، پلاٹنگ، اور سائنسی کمپیوٹنگ محاوروں پر توجہ مرکوز کرکے مرکزی MATLAB حوالہ کی تکمیل کرتا ہے۔
 ---

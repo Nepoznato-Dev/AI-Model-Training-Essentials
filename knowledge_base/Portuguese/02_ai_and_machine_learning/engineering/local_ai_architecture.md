@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Arquitetura local de IA
 Um guia prático para executar grandes modelos de linguagem inteiramente no dispositivo — considerações de hardware, mecanismos de inferência, otimização de memória e design de sistema para implantação na borda.
 ---

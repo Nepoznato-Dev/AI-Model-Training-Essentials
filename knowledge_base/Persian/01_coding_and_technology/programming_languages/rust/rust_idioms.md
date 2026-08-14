@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # زنگ - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی و بهترین شیوه ها برای نوشتن کد Rust تمیز و ایمن را پوشش می دهد.
 ---

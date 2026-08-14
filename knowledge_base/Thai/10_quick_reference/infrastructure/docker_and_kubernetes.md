@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # เอกสารโกง Docker และ Kubernetes
 ข้อมูลอ้างอิงที่เป็นประโยชน์สำหรับการจัดแอปพลิเคชันคอนเทนเนอร์ด้วย Docker และการเรียบเรียงแอปพลิเคชันด้วย Kubernetes ถือว่ามีความคุ้นเคยพื้นฐานกับบรรทัดคำสั่ง
 ---

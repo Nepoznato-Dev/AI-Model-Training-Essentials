@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml - सिंटैक्स संदर्भ
 यह दस्तावेज़ OCaml (4.x/5.x) के लिए एक व्यापक, संरचित सिंटैक्स संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, बीजगणितीय डेटा प्रकार, पैटर्न मिलान, मॉड्यूल और कार्यात्मक प्रोग्रामिंग मुहावरों पर ध्यान केंद्रित करके मुख्य OCaml संदर्भ को पूरक करता है।
 ---

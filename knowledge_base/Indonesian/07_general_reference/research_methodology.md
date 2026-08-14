@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metodologi Penelitian
 Metodologi penelitian adalah pendekatan sistematis untuk menyelidiki pertanyaan, menguji hipotesis, dan menghasilkan pengetahuan yang dapat diandalkan. Baik Anda melakukan eksperimen ilmiah, survei ilmu sosial, analisis bisnis, atau penelitian akademis, metodologi yang Anda pilih menentukan apakah temuan Anda kredibel, dapat direproduksi, dan berguna. Penelitian yang dirancang dengan baik akan menghasilkan hasil yang dapat dipercaya; yang dirancang dengan buruk menghasilkan kebisingan — atau lebih buruk lagi, jawaban yang salah dan meyakinkan.
 ---

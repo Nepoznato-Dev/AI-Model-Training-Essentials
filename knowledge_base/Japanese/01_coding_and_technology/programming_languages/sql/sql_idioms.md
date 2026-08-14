@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで効率的な SQL を作成するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

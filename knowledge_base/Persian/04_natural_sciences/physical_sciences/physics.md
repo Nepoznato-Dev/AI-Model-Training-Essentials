@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #فیزیک
 فیزیک اساسی ترین سوال در علم را مطرح می کند: ماده و انرژی چگونه رفتار می کنند؟ هر چیز دیگری - شیمی، زیست شناسی، مهندسی - بر اساس پاسخ ها است. فیزیک از مقیاس زیراتمی (مکانیک کوانتومی) تا مقیاس کیهانی (نسبیت عام) را در بر می گیرد، و اصول آن پایه همه علوم طبیعی دیگر است.
 ---

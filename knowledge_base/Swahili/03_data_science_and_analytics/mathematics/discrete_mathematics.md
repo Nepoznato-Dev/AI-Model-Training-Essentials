@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hisabati Mbalimbali
 Hisabati mahususi ni utafiti wa miundo ya hisabati ambayo kimsingi inaweza kuhesabika au kutenganishwa - kinyume na hesabu endelevu (calculus, uchanganuzi halisi), ambayo inahusika na idadi laini, isiyovunjika. Hisabati mahususi hutegemeza sayansi ya kompyuta, kriptografia, muundo wa algoriti, na miundo ya data. Ikiwa hesabu inayoendelea inaelezea ulimwengu halisi, hesabu ya kipekee inaelezea ulimwengu wa hesabu.
 ---

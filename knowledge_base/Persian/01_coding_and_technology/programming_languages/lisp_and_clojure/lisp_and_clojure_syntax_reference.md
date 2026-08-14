@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Common Lisp و Clojure ارائه می دهد. این مرجع اصلی Lisp/Clojure را با تمرکز بر عبارات S، ماکروها، ساختارهای داده پایدار و الگوهای برنامه‌نویسی کاربردی تکمیل می‌کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جغرافیا و ژئوپلیتیک
 جغرافیا سرنوشت را رقم می زند. موقعیت کوه ها، رودخانه ها و منابع طبیعی مسیرهای تجاری را تعیین کرده، جرقه جنگ ها و تمدن ها را برای هزاران سال ایجاد کرده است. امروزه، ژئوپلیتیک - تأثیر متقابل جغرافیا، قدرت و سیاست - برای درک اینکه چرا کشورها به شیوه‌ای که انجام می‌دهند، ضروری است.
 ---

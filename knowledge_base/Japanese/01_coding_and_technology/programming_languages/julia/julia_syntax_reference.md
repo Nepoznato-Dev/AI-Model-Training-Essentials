@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia — 構文リファレンス
 このドキュメントは、Julia (1.x) の包括的で構造化された構文リファレンスを提供します。これは、網羅的な構文パターン、複数のディスパッチ、マクロ、メタプログラミング、科学的コンピューティングに焦点を当て、メインの Julia リファレンスを補完します。
 ---

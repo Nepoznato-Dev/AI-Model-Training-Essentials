@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Foglio informativo di Bash e Shell Scripting
 Un riferimento pratico per scrivere script di shell in Bash, la shell predefinita sulla maggior parte dei sistemi Linux e macOS. Copre la sintassi, i modelli comuni, l'elaborazione del testo e le battute utili.
 ---

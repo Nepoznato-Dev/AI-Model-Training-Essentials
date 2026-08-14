@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — 版本历史和演变
 ## 时间轴
 |版本 |年份|关键主题 |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps এবং CI/CD
 DevOps হল সাংস্কৃতিক দর্শন, অনুশীলন এবং সরঞ্জামগুলির সমন্বয় যা দলগুলিকে দ্রুত এবং আরও নির্ভরযোগ্যভাবে সফ্টওয়্যার সরবরাহ করতে সক্ষম করে। এটি ডেভেলপারদের (যারা পরিবর্তন করতে চায়) এবং অপারেশন (যারা স্থিতিশীলতা চায়) এর মধ্যে দেয়াল ভেঙে দেয়। CI/CD — ক্রমাগত ইন্টিগ্রেশন এবং ক্রমাগত ডেলিভারি — হল অটোমেশন ব্যাকবোন যা এটিকে সম্ভব করে তোলে।
 ---

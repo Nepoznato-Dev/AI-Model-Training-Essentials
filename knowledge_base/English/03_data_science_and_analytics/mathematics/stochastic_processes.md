@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Stochastic Processes
 
 A **stochastic process** is a collection of random variables indexed by time (or space). While probability theory studies individual random events, stochastic processes study how randomness evolves over time. They model stock prices, queue lengths, disease spread, language generation, and the training dynamics of machine learning models.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # พื้นฐานระบบเครือข่าย
 ข้อมูลอ้างอิงที่เป็นประโยชน์สำหรับนักพัฒนาและผู้ดูแลระบบ — แนวคิดหลัก โปรโตคอล คำสั่ง และการแก้ไขปัญหา
 ---

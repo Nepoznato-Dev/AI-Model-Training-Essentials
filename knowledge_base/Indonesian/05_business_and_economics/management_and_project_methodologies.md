@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Manajemen dan Metodologi Proyek
 Mengelola orang dan proyek adalah salah satu tanggung jawab yang paling menuntut di organisasi mana pun. Keterampilan teknis memberikan jalan masuk, namun kemampuan untuk memimpin tim, membuat keputusan, berkomunikasi secara efektif, dan memberikan hasil menentukan apakah tujuan tercapai. File ini mencakup kerangka kerja, metodologi, dan keterampilan praktis yang diterapkan oleh manajer dan pemimpin proyek yang efektif.
 ---

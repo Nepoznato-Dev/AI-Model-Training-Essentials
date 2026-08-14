@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cognitive Biases and Logical Fallacies
 
 This document consolidates cognitive biases, logical fallacies, and reasoning errors that affect both human decision-making and AI system outputs.

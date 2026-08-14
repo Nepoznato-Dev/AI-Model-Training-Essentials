@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Control Flow"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # کراس لینگویج کا موازنہ — کنٹرول فلو
 ## اگر/دوسرے بیانات
 ```python

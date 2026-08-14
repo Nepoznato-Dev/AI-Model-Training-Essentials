@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go — odwołanie do składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni języka Go. Uzupełnia główne odniesienia do Go, koncentrując się na wyczerpujących wzorcach składni, tabelach operatorów i wewnętrznej mechanice goroutines, kanałów i interfejsów.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — 生态系统和工具指南
 本指南涵盖了 Haskell 生态系统中的基本工具、框架和基础设施。
 ---

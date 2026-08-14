@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # خارطة طريق لاستكشاف الفضاء
 ## ملخص
 نحن نعيش في عصر ذهبي جديد لاستكشاف الفضاء. يعيد برنامج أرتميس التابع لناسا البشر إلى القمر. تقوم SpaceX ببناء صاروخ قابل لإعادة الاستخدام بالكامل مصمم للمريخ. لدى الصين خططها القمرية والمريخية الطموحة. وهناك كوكبة متنامية من الشركات الخاصة تفتح المجال أمام التجارة - من الإنترنت عبر الأقمار الصناعية إلى السياحة الفضائية. ها هي خريطة الطريق، من القمر إلى المريخ وما بعده.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell - แผ่นโกง
 ## พื้นฐาน
 ```haskell

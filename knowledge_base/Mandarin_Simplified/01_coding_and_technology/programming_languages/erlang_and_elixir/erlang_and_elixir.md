@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang 和 Elixir
 Erlang 由爱立信于 1986 年构建，用于为电话交换机提供支持——这解释了为什么它比其他任何东西都能更好地处理并发、容错和分布式系统。 Erlang 进程是轻量级的、隔离的，并且仅通过消息传递进行通信。当进程崩溃时，主管会重新启动它。这种“让它崩溃”的理念使系统能够运行多年而不会停机。
 Elixir 是由 Jose Valim 于 2012 年在 Erlang 的 VM (BEAM) 之上构建的一种现代语言。它保留了 Erlang 提供的所有功能——并发性、容错性、分布性——但添加了友好的语法、元编程和优秀的工具（Mix 包管理器、Hex 包注册表）。 Elixir 广泛用于 Web 应用程序（通过 Phoenix 框架）、实时系统和嵌入式设备（通过 Nerves）。

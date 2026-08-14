@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — historia wersji i ewolucja
 ## Oś czasu
 | Wersja | Rok | Kluczowy motyw |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Użycie narzędzia
 ## Git — Kontrola wersji
 Git to rozproszony system kontroli wersji. Każdy programista ma pełną kopię historii repozytorium na swoim komputerze lokalnym.

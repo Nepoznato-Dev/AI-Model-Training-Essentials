@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mustakabali Endelevu
 ## Muhtasari
 Swali sio *kama* ulimwengu unahitaji mpito kuelekea uchumi endelevu, bali ni *kasi gani* na *nani anaongoza*. Nishati mbadala sasa ndiyo chanzo cha bei nafuu zaidi cha nishati katika masoko mengi. Kanuni za uchumi wa mduara zinasonga kutoka kwa dhana ya niche hadi mkakati wa shirika. Miji inafikiria upya kila kitu kutoka kwa usafirishaji hadi upotevu. Na kinyang'anyiro cha kufikia sifuri ni kuunda upya viwanda kutoka nishati hadi fedha. Hivi ndivyo mustakabali endelevu unavyoonekana katika vipengele vinne muhimu.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga System ng Rekomendasyon
 Ang mga system ng rekomendasyon ay hinuhulaan kung ano ang gusto ng isang user na makita, bilhin, o makipag-ugnayan sa susunod. Pinapagana nila ang mga feed ng nilalaman sa social media, mga mungkahi ng produkto sa mga site ng e-commerce, mga pagpili ng pelikula sa mga streaming platform, at mga resulta ng paghahanap. Sa kabila ng pagiging invisible ng karamihan sa mga user, kabilang sila sa mga pinaka-komersyal na epekto ng AI system sa mundo — tinatantya ng Netflix na ang engine ng rekomendasyon nito ay nakakatipid ng higit sa $1 bilyon bawat taon sa pamamagitan ng pagbabawas ng subscriber churn.
 ---

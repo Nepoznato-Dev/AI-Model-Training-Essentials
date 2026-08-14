@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — Referência de sintaxe
 Este documento fornece uma referência de sintaxe estruturada e abrangente para C++ moderno (C++ 17/20/23). Ele complementa a referência principal do C++, concentrando-se em padrões de sintaxe exaustivos, tabelas de operadores, mecânica de modelos e recursos modernos.
 ---

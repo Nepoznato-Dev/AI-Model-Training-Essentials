@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dilbilim ve Dil Bilimi
 Dilbilim, dilin yapısı, anlamı, kullanımı, edinimi ve evrimi üzerine bilimsel bir çalışmadır. Dil, insan iletişiminin tanımlayıcı bir özelliğidir: Sonsuz derecede üretkendir (konuşmacılar daha önce hiç karşılaşmadıkları cümleleri oluşturabilir ve anlayabilir), kültürel olarak aktarılır (tamamen doğuştan olmaktan ziyade öğrenilir) ve sürekli olarak gelişmektedir. Dilin nasıl çalıştığını anlamak, dil teknolojileri geliştiren, öğreten, çeviri yapan veya daha etkili iletişim kurmaya çalışan herkes için geçerlidir.
 ---

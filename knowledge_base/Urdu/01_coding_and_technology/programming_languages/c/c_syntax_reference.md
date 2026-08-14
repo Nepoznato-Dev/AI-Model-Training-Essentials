@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C - نحوی حوالہ
 یہ دستاویز C (C23 نوٹ کے ساتھ C11/C17) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتا ہے۔ یہ مکمل نحوی نمونوں، آپریٹر ٹیبلز، پوائنٹر میکینکس، اور میموری مینجمنٹ پر توجہ مرکوز کرکے مرکزی C حوالہ کی تکمیل کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 实用生活技能
 学校教你微积分，但很少教你如何报税、烹饪均衡的膳食或维持家庭。这些是影响您日常生活质量的实用能力——这些知识可以让您自给自足并具有经济弹性。该文件是要点的详细参考。
 ---

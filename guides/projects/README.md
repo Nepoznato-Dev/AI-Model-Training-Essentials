@@ -32,9 +32,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/neural_network_basics/neural_network_basics.ipynb)
-
-*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
+**Run on Colab:** Create a new notebook at [colab.research.google.com](https://colab.research.google.com) and copy the code from `main.py`.
 
 ---
 
@@ -59,9 +57,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/rag_simple/rag_simple.ipynb)
-
-*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
+**Run on Colab:** Create a new notebook at [colab.research.google.com](https://colab.research.google.com) and copy the code from `main.py`.
 
 ---
 
@@ -86,9 +82,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/transformers_intro/transformers_intro.ipynb)
-
-*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
+**Run on Colab:** Create a new notebook at [colab.research.google.com](https://colab.research.google.com) and copy the code from `main.py`.
 
 ---
 
@@ -113,9 +107,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/cnn_basics/cnn_basics.ipynb)
-
-*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
+**Run on Colab:** Create a new notebook at [colab.research.google.com](https://colab.research.google.com) and copy the code from `main.py`.
 
 ---
 
@@ -141,9 +133,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/text_generation/text_generation.ipynb)
-
-*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
+**Run on Colab:** Create a new notebook at [colab.research.google.com](https://colab.research.google.com) and copy the code from `main.py`.
 
 ---
 
@@ -169,9 +159,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/transfer_learning/transfer_learning.ipynb)
-
-*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
+**Run on Colab:** Create a new notebook at [colab.research.google.com](https://colab.research.google.com) and copy the code from `main.py`.
 
 ---
 
@@ -261,7 +249,7 @@ python rag_chatbot.py
 ### Option 1: Google Colab (Recommended)
 
 1. Create a free account at [colab.research.google.com](https://colab.research.google.com)
-2. Upload the `.ipynb` file from any project (or create a new notebook and copy the code from `main.py`)
+2. Create a new notebook and copy the code from any project's `main.py` into cells
 3. Click **Runtime → Change runtime type**
 4. Select **GPU** (optional but faster)
 5. Run cells one by one

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Finance and Investing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # वित्त और निवेश
 ## व्यक्तिगत वित्त बुनियादी बातें
 ### वित्तीय योजना की मूल बातें

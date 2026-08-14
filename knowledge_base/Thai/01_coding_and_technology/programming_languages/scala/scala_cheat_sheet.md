@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # สกาล่า - แผ่นโกง
 ## พื้นฐาน
 ```scala

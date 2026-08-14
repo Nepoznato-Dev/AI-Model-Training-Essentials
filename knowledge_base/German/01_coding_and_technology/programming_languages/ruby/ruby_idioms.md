@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby – Idiomatische Muster und Best Practices
 Dieser Leitfaden behandelt idiomatische Muster und Best Practices zum Schreiben von sauberem Ruby-Code.
 ---

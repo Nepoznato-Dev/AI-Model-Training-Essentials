@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Aide-mémoire sur les expressions régulières
 Les expressions régulières (regex) sont des modèles permettant de faire correspondre du texte. Ils sont utilisés partout : recherche et remplacement, validation des entrées, analyse des journaux, extraction de données, etc. Ceci est une référence pratique, pas un manuel.
 ---

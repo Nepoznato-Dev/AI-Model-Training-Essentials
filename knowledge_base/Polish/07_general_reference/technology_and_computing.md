@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Technologia i informatyka
 Komputery są wszędzie — w telefonie, samochodzie, lodówce, urządzeniach medycznych i infrastrukturze, na której opiera się współczesne społeczeństwo. Nie musisz być programistą, aby czerpać korzyści ze zrozumienia, jak to wszystko działa. W tym pliku omówiono podstawy: czym jest komputer, jak działa Internet, jak zbudowane jest oprogramowanie i koncepcje kształtujące cyfrowy świat.
 > **Chcesz zejść głębiej?** Ten plik zawiera ogólny przegląd. Aby uzyskać szczegółowe omówienie dowolnego tematu, zobacz dedykowane pliki w[`01_coding_and_technology/`](../01_coding_and_technology/)— w tym [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)i.

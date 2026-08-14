@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini とローカル AI モデルの状況
 Microsoft の Phi-3-mini モデル (その設計哲学、アーキテクチャの選択、パフォーマンス特性) の分析と、その成功が効果的かつ効率的な AI システムの構築について教えてくれる内容です。
 ---

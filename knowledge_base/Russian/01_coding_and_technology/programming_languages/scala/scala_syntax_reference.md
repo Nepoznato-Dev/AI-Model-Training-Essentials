@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису Scala (3.x с примечаниями о различиях 2.x). Он дополняет основной справочник Scala, уделяя особое внимание исчерпывающим синтаксическим шаблонам, системе типов, конструкциям функционального программирования и идиомам Scala.
 ---

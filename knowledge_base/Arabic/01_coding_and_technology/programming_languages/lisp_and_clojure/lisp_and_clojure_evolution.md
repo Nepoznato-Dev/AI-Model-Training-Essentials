@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure — تاريخ الإصدار وتطوره
 ## الجدول الزمني ليسب
 | النسخة | سنة | الموضوع الرئيسي |

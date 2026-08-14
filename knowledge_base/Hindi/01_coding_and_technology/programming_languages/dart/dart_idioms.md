@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # डार्ट - मुहावरेदार पैटर्न और सर्वोत्तम अभ्यास
 यह मार्गदर्शिका स्वच्छ, मुहावरेदार डार्ट कोड लिखने के लिए मुहावरेदार पैटर्न और सर्वोत्तम प्रथाओं को शामिल करती है।
 ---

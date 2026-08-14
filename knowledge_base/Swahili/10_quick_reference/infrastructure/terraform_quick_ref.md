@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform na Miundombinu kama Kanuni
 Terraform ndio zana inayotumika sana ya Miundombinu kama Msimbo (IaC) - hukuruhusu kufafanua miundombinu ya wingu (seva, hifadhidata, mitandao, ruhusa) katika faili za usanidi zinazotangaza ambazo zinaweza kubadilishwa, kukaguliwa, kujaribiwa na kuendeshwa kiotomatiki. Badala ya kubofya kiweko cha wingu, unaandika msimbo unaoelezea hali unayotaka ya miundombinu yako, na Terraform inabainisha mabadiliko ya kufanya.
 ---

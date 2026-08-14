@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فورٹران - نحوی حوالہ
 یہ دستاویز ماڈرن فورٹران (2008/2018) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، صف کے آپریشنز، ماڈیولز، او او پی، اور اعلیٰ کارکردگی والے کمپیوٹنگ پر توجہ مرکوز کرکے مرکزی فورٹران حوالہ کی تکمیل کرتا ہے۔
 ---

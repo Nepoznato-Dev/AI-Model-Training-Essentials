@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik untuk menulis kode Visual Basic (.NET) yang bersih.
 ---

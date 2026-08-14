@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lỗi tìm kiếm RAG và Vector
 Tài liệu này tổng hợp các lỗi thường gặp trong các hệ thống Thế hệ tăng cường truy xuất (RAG), cách sử dụng tính năng nhúng và triển khai tìm kiếm vectơ.
 ---

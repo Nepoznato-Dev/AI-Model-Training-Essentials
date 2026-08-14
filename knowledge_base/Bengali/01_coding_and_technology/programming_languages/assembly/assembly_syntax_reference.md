@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # সমাবেশের ভাষা — সিনট্যাক্স রেফারেন্স
 এই নথিটি x86-64 অ্যাসেম্বলি (NASM সিনট্যাক্স) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ নির্দেশের বিভাগ, অ্যাড্রেসিং মোড, স্ট্যাক ফ্রেম কনভেনশন এবং সিস্টেম প্রোগ্রামিং প্যাটার্নগুলিতে ফোকাস করে মূল সমাবেশের রেফারেন্সের পরিপূরক।
 ---

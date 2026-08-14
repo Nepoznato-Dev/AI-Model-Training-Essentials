@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Blockchain at Ibinahagi na Sistema
 Ang Blockchain ay isang partikular na uri ng distributed system — isang desentralisado, append-only ledger kung saan ang mga talaan (mga bloke) ay iniuugnay ng mga cryptographic na hash. Ang mga distributed system ay ang mas malawak na larangan ng paggawa ng maramihang mga computer na gumagana nang magkasama bilang isa. Ang parehong mga konsepto ay mahalaga para sa pag-unawa sa modernong imprastraktura, mula sa cryptocurrency hanggang sa mga distributed database hanggang sa mga consensus algorithm na nagpapagana ng mga pandaigdigang serbisyo.
 ---

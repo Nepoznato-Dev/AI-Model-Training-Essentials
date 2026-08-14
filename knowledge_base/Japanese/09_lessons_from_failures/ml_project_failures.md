@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 機械学習プロジェクトの失敗
 機械学習プロジェクトは高い割合で失敗します。業界の推定では、ML プロジェクトの 60 〜 85% が本番環境に到達しないことが示唆されています。通常、失敗はアルゴリズムにあるわけではありません。失敗はプロセス、データ、期待、組織のコンテキストの中にあります。失敗モードは予測可能であり、ほとんどの場合回避可能であるため、ML プロジェクトが失敗する理由を理解することは、ML システムを構築するすべての人にとって不可欠です。
 ---

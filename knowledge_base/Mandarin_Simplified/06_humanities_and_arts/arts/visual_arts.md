@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #视觉艺术
 视觉艺术是人类最古老的交流形式——从拉斯科的洞穴壁画到今天的数字装置。了解艺术运动、媒介和保存创意作品的机构，可以让您更深入地了解社会数千年来如何表达美、力量、灵性和异议。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada
 Ang Ada ay isang statically typed, compiled programming language na idinisenyo para sa mga sistemang kritikal sa kaligtasan at mataas ang integridad. Orihinal na binuo noong 1980s sa ilalim ng kontrata sa U.S. Department of Defense (pinangalanan kay Ada Lovelace, itinuturing na unang computer programmer), binibigyang-diin ni Ada ang pagiging maaasahan, pagpapanatili, at kawastuhan. Ito ay idinisenyo upang palitan ang daan-daang mga programming language na ginamit ng DoD ng isang solong, mahusay na tinukoy na wika.
 Ginagamit ang Ada sa aviation (fly-by-wire system), space (ESA at NASA), defense (missile guidance, radar), rail transport, at mga medikal na device — kahit saan kung saan maaaring magdulot ng mga buhay ang pagkabigo ng software.

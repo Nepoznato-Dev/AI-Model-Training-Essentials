@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # دارت - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، چارچوب‌ها و زیرساخت‌های ضروری در اکوسیستم دارت را پوشش می‌دهد.
 ---

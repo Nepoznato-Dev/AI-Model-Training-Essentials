@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Powłoka i PowerShell
 Skrypty powłoki odnoszą się do pisania skryptów dla interpreterów wiersza poleceń. Dwie najważniejsze powłoki to **Bash** (Bourne Again Shell) — domyślna w systemach Linux i macOS — oraz **PowerShell** — nowoczesna wieloplatformowa powłoka i język skryptowy firmy Microsoft. Skrypty powłoki automatyzują zadania administracyjne systemu, tworzą potoki, przetwarzają pliki i przepływy pracy związane z wdrażaniem.
 Każdy programista, inżynier DevOps i administrator systemu potrzebuje umiejętności pisania skryptów powłoki. Niezależnie od tego, czy wdrażasz serwer WWW, przetwarzasz pliki dziennika, konfigurujesz potoki CI/CD, czy automatyzujesz kopie zapasowe, skrypty powłoki są narzędziem do tego zadania.

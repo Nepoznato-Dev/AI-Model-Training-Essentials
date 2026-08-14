@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Ruby (3.x). Ini melengkapi referensi utama Ruby dengan berfokus pada pola sintaksis yang lengkap, blok dan penutupan, metaprogramming, dan idiom Ruby.
 ---

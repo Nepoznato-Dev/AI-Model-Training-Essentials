@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - عام غلطیاں اور مخالف پیٹرن
 یہ دستاویز MATLAB میں سب سے عام غلطیوں، ٹریپس، اور اینٹی پیٹرن کو تصحیح کے ساتھ کیٹلاگ کرتا ہے۔
 ---

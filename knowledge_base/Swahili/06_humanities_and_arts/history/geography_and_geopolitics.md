@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Jiografia na Jiografia
 Jiografia inaunda hatima. Mahali palipo na milima, mito, na maliasili kumeamua njia za biashara, kuzusha vita, na kujenga ustaarabu kwa milenia. Leo, siasa za jiografia - mwingiliano wa jiografia, mamlaka na siasa - bado ni muhimu kwa kuelewa ni kwa nini mataifa yanatenda jinsi yanavyofanya.
 ---

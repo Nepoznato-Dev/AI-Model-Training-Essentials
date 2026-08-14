@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — 語法參考
 本文檔提供了全面、結構化的 C 語法參考（C11/C17 和 C23 註釋）。它透過關注詳盡的語法模式、運算符表、指標機制和記憶體管理來補充主要的 C 參考。
 ---

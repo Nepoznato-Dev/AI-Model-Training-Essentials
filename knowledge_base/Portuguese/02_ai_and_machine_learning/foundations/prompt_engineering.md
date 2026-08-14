@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Engenharia imediata
 A engenharia de prompts é a prática de projetar, refinar e otimizar prompts de entrada para obter o melhor resultado possível de um modelo de linguagem. É uma arte e uma ciência e é a interface principal para controlar o comportamento do LLM sem ajustes finos.
 ---

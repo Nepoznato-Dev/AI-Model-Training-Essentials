@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI 안전 및 정렬
 AI 안전은 우리가 실제로 원하는 작업을 수행하고 명시적으로 배제되지 않은 경우에도 우리가 원하지 않는 작업을 수행하지 않는 AI 시스템을 구축하는 방법에 대한 연구입니다. 정렬은 AI 시스템의 목표와 행동을 인간의 의도와 일치시키는 구체적인 과제입니다. AI 시스템의 성능이 향상됨에 따라 이러한 질문은 학문적 호기심에서 실제 엔지니어링 요구 사항으로 전환됩니다.
 ---

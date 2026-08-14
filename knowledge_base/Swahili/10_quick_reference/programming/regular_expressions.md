@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Maneno ya Kawaida Karatasi ya Kudanganya
 Semi za kawaida (regex) ni muundo wa maandishi yanayolingana. Zinatumika kila mahali - tafuta na ubadilishe, uthibitishaji wa ingizo, uchanganuzi wa kumbukumbu, uchimbaji wa data, na zaidi. Hii ni kumbukumbu ya vitendo, sio kitabu cha kiada.
 ---

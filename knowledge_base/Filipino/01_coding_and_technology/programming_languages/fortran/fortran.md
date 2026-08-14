@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran
 Ang Fortran (Formula Translation) ay ang pinakalumang high-level na programming language na malawakang ginagamit pa rin, na unang binuo ng IBM noong 1957 para sa scientific at engineering computation. Sa kabila ng edad nito, ang modernong Fortran (Fortran 2008/2018/2023) ay isang may kakayahang, mataas na pagganap na wika na malawakang ginagamit sa numerical weather prediction, computational fluid dynamics, physics simulation, financial modelling, at high-performance computing (HPC). Marami sa pinakamabilis na supercomputer sa mundo ang nagpapatakbo ng Fortran code.
 Ang wika ay nagbago nang malaki mula sa mga unang araw nito. Ang modernong Fortran ay may mga module, derived na uri, generic na pamamaraan, coarrays (parallel programming), at interoperability sa C. Ito ay nananatiling piniling wika para sa maraming siyentipikong computing application kung saan ang pagganap ay pinakamahalaga.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — Ekosistem ve Takım Kılavuzu
 Bu kılavuz Haskell ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

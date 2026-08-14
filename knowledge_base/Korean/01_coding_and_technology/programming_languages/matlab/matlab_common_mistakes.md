@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — 일반적인 실수 및 안티 패턴
 이 문서에는 수정 사항이 포함된 MATLAB의 가장 일반적인 실수, 함정 및 안티패턴이 나열되어 있습니다.
 ---

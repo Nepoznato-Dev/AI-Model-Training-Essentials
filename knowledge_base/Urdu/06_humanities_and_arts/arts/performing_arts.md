@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # پرفارمنگ آرٹس
 پرفارمنگ آرٹس — تھیٹر، فلم، رقص، اور موسیقی کی کارکردگی — وہ ہیں جہاں آرٹ سامعین کی زندہ موجودگی کو پورا کرتا ہے۔ دیوار پر پینٹنگ یا شیلف پر کتاب کے برعکس، کارکردگی حقیقی وقت میں سامنے آتی ہے، جس سے فنکار اور تماشائی کے درمیان ایک مشترکہ تجربہ پیدا ہوتا ہے جو ہزاروں سالوں سے انسانی ثقافت میں مرکزی حیثیت رکھتا ہے۔
 ---

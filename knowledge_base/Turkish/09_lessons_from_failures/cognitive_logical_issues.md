@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bilişsel Önyargılar ve Mantıksal Yanılgılar
 Bu belge, hem insanın karar verme sürecini hem de yapay zeka sistem çıktılarını etkileyen bilişsel önyargıları, mantıksal yanılgıları ve akıl yürütme hatalarını bir araya getiriyor.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP'nin Temelleri
 Doğal Dil İşleme (NLP), makinelere insan dilini anlamayı, üretmeyi ve onunla çalışmayı öğretme alanıdır. Arama motorlarına, sohbet robotlarına, çeviri sistemlerine, duyarlılık analizine ve 2020'den bu yana yapay zekayı dönüştüren büyük dil modellerine (LLM'ler) güç sağlar. Bu dosya, klasik tekniklerden modern Transformer tabanlı mimarilere kadar olan evrimi kapsar.
 ---

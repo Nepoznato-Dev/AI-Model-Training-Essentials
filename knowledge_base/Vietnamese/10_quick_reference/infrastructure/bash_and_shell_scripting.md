@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bảng ghi chú về Bash và Shell Scripting
 Một tài liệu tham khảo thực tế để viết các tập lệnh shell trong Bash — shell mặc định trên hầu hết các hệ thống Linux và macOS. Bao gồm cú pháp, các mẫu phổ biến, xử lý văn bản và các dòng hữu ích.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hợp ngữ
 Hợp ngữ là ngôn ngữ lập trình cấp thấp nhất mà con người có thể đọc được. Nó cung cấp sự trình bày trực tiếp các hướng dẫn mã máy của máy tính bằng cách sử dụng các mã ghi nhớ (như`MOV`,`ADD`,`JMP`) thay vì nhị phân thô. Mỗi ngôn ngữ hợp ngữ dành riêng cho một kiến ​​trúc bộ xử lý cụ thể (x86, ARM, MIPS, RISC-V) — mã được viết cho một kiến ​​trúc sẽ không chạy trên kiến ​​trúc khác.
 Ngôn ngữ hội không được sử dụng để xây dựng ứng dụng. Nó được sử dụng khi bạn cần kiểm soát tuyệt đối phần cứng: viết nhân hệ điều hành, trình điều khiển thiết bị, bộ tải khởi động, chương trình cơ sở nhúng, các đoạn mã quan trọng về hiệu năng, kỹ thuật đảo ngược và hiểu cách máy tính thực sự thực hiện các hướng dẫn.

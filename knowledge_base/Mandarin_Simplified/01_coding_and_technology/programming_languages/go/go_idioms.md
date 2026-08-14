@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — 惯用模式和最佳实践
 本指南涵盖了编写干净、惯用的 Go 代码的惯用模式和最佳实践。
 ---

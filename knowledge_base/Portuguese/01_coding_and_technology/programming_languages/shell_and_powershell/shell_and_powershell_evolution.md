@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell e PowerShell – Histórico de versões e evolução
 ## Linha do tempo do shell Unix
 | Versão | Ano | Tema principal |

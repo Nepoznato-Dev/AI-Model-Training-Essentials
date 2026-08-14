@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ایرلنگ اور ایلیکسیر - دھوکہ دہی کی شیٹ
 ## ایلیکسیر کی بنیادی باتیں
 ```elixir

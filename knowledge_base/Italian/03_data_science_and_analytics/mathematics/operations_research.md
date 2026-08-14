@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ricerca operativa
 La ricerca operativa (OR) è l'applicazione di metodi matematici al processo decisionale. Nato durante la seconda guerra mondiale per la logistica militare, ora ottimizza le catene di approvvigionamento, pianifica le compagnie aeree, instrada le flotte di consegna, gestisce gli inventari e alloca le risorse in ogni settore. OR fornisce gli strumenti matematici per prendere le migliori decisioni possibili in presenza di vincoli.
 ---

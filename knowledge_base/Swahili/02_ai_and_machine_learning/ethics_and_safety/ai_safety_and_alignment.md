@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usalama wa AI na Upatanishi
 Usalama wa AI ni utafiti wa jinsi ya kuunda mifumo ya AI ambayo hufanya kile tunachotaka ifanye - na kutofanya mambo ambayo hatutaki, hata kama haya hayakukataliwa wazi. Upatanishi ni changamoto mahususi ya kufanya malengo na tabia za mifumo ya AI zilingane na nia ya mwanadamu. Mifumo ya AI inavyokuwa na uwezo zaidi, maswali haya hubadilika kutoka kwa udadisi wa kitaaluma hadi mahitaji ya uhandisi wa vitendo.
 ---

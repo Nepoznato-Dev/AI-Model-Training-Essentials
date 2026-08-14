@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Mga Karaniwang Pagkakamali at Anti-Pattern
 Kino-catalog ng dokumentong ito ang mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa C. Ang bawat entry ay nagpapakita ng maling diskarte, ipinapaliwanag kung bakit ito nabigo, at nagbibigay ng tamang solusyon. Binibigyan ka ng C ng ganap na kontrol — na nangangahulugan ng buong responsibilidad para sa kaligtasan ng memorya, pagsuri sa mga hangganan, at hindi natukoy na pag-uugali.
 ---

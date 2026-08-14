@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform 和基础设施即代码
 Terraform 是使用最广泛的基础设施即代码 (IaC) 工具 - 它允许您在声明性配置文件中定义云基础设施（服务器、数据库、网络、权限），这些文件可以进行版本控制、审查、测试和自动化。您无需单击云控制台，而是编写描述基础设施所需状态的代码，然后 Terraform 确定要进行哪些更改。
 ---

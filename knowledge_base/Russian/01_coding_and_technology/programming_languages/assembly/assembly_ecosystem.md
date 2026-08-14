@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Сборка — Руководство по экосистеме и инструментам
 В этом руководстве рассматриваются основные инструменты, ассемблеры и инфраструктура экосистемы Ассамблеи.
 ---

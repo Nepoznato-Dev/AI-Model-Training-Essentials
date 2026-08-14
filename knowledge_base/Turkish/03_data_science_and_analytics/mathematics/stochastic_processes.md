@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Stokastik Süreçler
 **Stokastik süreç** zamana (veya uzaya) göre indekslenen rastgele değişkenlerin bir koleksiyonudur. Olasılık teorisi bireysel rastgele olayları incelerken, stokastik süreçler rastgeleliğin zaman içinde nasıl geliştiğini inceler. Hisse senedi fiyatlarını, kuyruk uzunluklarını, hastalıkların yayılmasını, dil oluşumunu ve makine öğrenimi modellerinin eğitim dinamiklerini modellerler.
 ---

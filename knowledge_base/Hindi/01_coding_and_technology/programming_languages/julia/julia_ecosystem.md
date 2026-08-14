@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # जूलिया - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका जूलिया पारिस्थितिकी तंत्र में आवश्यक उपकरण, पैकेज और बुनियादी ढांचे को शामिल करती है।
 ---

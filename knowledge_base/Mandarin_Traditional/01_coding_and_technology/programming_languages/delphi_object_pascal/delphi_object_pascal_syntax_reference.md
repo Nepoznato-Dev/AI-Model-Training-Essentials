@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Object Pascal — 語法參考
 本文檔為 Delphi/Object Pascal 提供了全面的、結構化的語法參考。它透過關注詳盡的語法模式、OOP 功能、泛型、記錄和語言習語來補充主要的 Delphi 參考資料。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Mwepesi - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia mifumo ya nahau na mbinu bora za kuandika msimbo safi, Mwepesi.
 ---

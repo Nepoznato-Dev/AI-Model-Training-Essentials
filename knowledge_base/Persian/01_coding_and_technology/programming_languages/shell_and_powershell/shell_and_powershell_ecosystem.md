@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، چارچوب‌ها و زیرساخت‌های ضروری برای برنامه‌نویسی پوسته (Bash/Zsh) و PowerShell را پوشش می‌دهد.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # اسکیلا - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ Scala ایکو سسٹم میں ضروری ٹولز، فریم ورک، اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

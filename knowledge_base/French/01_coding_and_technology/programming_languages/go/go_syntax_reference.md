@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Go. Il complète la référence principale de Go en se concentrant sur des modèles de syntaxe exhaustifs, des tables d'opérateurs et des mécanismes internes des goroutines, des canaux et des interfaces.
 ---

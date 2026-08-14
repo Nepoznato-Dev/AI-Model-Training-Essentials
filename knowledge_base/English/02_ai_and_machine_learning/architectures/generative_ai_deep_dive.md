@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Generative AI Deep Dive
 
 Generative AI refers to models that create new content — images, text, audio, video, code — rather than just classifying or predicting existing data. While large language models get most of the attention, the generative AI landscape is far broader. This file covers the architectures, techniques, and trade-offs behind modern generative systems, from diffusion models to variational autoencoders to flow models.

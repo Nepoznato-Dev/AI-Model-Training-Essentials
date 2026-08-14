@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — 惯用模式和最佳实践
 本指南涵盖了编写干净、类型安全的 TypeScript 代码的惯用模式和最佳实践。
 ---

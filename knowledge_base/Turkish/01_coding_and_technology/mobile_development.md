@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mobil Geliştirme
 Mobil geliştirme, akıllı telefonlar ve tabletler için, özellikle de iOS (Apple) ve Android (Google) için uygulamalar oluşturma uygulamasıdır. Küçük ekranlar için kullanıcı arayüzü tasarımından pil ömrünün yönetilmesine, ağ istikrarsızlığının yönetilmesine ve uygulamaların mağazalar aracılığıyla dağıtılmasına kadar her şeyi kapsar. Platformlar arası çerçevelerin artık çoğu kullanım durumunda yerel geliştirmeyle rekabet etmesiyle bu alan önemli ölçüde olgunlaştı.
 ---

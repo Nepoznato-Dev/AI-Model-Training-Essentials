@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Iść
 Go (często nazywany „Golang” od oryginalnej nazwy domeny) to skompilowany język programowania ze statycznym typem, zaprojektowany w Google przez Roberta Griesemera, Roba Pike'a i Kena Thompsona. Został wydany po raz pierwszy w 2012 roku z wyraźnym celem bycia lepszym językiem do programowania systemowego - takim, który łączy wydajność C z produktywnością dynamicznych języków, takich jak Python. Go jest znane ze swojej prostoty, szybkiej kompilacji, wbudowanej współbieżności (goroutines i kanały) oraz doskonałego narzędzia.
 Go obsługuje większość ekosystemu infrastruktury chmury: Docker, Kubernetes, Terraform, Prometheus itp. oraz serwer HTTP standardowej biblioteki Go są napisane w Go. Stał się domyślnym językiem programowania natywnego w chmurze, mikrousług i narzędzi CLI.

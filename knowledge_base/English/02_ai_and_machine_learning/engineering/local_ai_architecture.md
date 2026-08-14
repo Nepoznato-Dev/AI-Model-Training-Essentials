@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Local AI Architecture
 
 A practical guide to running large language models entirely on-device — hardware considerations, inference engines, memory optimisation, and system design for edge deployment.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Graphische neuronale Netze
 Graph Neural Networks (GNNs) sind neuronale Netzwerke, die für den Betrieb mit graphstrukturierten Daten konzipiert sind – Netzwerke aus Knoten, die durch Kanten verbunden sind. Während herkömmliche neuronale Netze mit Gittern (Bildern) oder Sequenzen (Texten) arbeiten, verarbeiten GNNs beliebige relationale Strukturen: soziale Netzwerke, molekulare Graphen, Wissensgraphen, Straßennetze, Empfehlungsgraphen und mehr. Sie sind für die Arzneimittelforschung, die Betrugserkennung, Empfehlungssysteme und alle Bereiche, in denen Beziehungen zwischen Unternehmen von Bedeutung sind, unverzichtbar geworden.
 ---

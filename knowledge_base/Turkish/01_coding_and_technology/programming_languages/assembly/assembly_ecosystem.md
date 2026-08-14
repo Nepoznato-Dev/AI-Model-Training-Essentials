@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Montaj — Ekosistem ve Takımlama Kılavuzu
 Bu kılavuz, Assembly ekosistemindeki temel araçları, derleyicileri ve altyapıyı kapsar.
 ---

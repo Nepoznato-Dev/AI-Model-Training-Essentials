@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 셸 및 PowerShell — 관용적 패턴 및 모범 사례
 이 가이드에서는 Bash/Zsh 및 PowerShell 스크립팅에 대한 관용적 패턴을 다룹니다.
 ---

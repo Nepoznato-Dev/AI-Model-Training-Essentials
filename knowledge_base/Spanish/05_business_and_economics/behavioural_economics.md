@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Economía del comportamiento y ciencia de la decisión
 La economía del comportamiento estudia cómo las personas realmente toman decisiones, no cómo las tomarían los agentes racionales. La economía tradicional supone que las personas son racionales, egoístas y buenas procesando información. Décadas de investigación realizadas por Kahneman, Tversky, Thaler y otros han demostrado que esto es tremendamente inexacto. Las personas utilizan atajos mentales, se dejan influenciar por un contexto irrelevante, sobrevaloran la información reciente y cometen errores sistemáticamente predecibles. Comprender estos patrones es esencial para diseñar mejores productos, políticas, organizaciones y decisiones personales.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Astronomia na Cosmology
 Unajimu ni utafiti wa vitu vya angani - nyota, sayari, galaksi na kila kitu zaidi ya angahewa ya Dunia. Kosmolojia ni somo la ulimwengu kwa ujumla: asili yake, muundo, mageuzi, na hatima ya mwisho. Wakiwa pamoja, wanashughulikia baadhi ya maswali ya msingi ambayo wanadamu wamewahi kuuliza: Ulimwengu ulianza jinsi gani? Je, ni kubwa kiasi gani? Je, tuko peke yetu? Nini kitatokea kwake mwishoni?
 ---

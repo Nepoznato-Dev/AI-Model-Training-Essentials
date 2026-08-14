@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash ve Shell Komut Dosyası Yazma Hile Sayfası
 Çoğu Linux ve macOS sisteminde varsayılan kabuk olan Bash'te kabuk komut dosyaları yazmaya yönelik pratik bir referans. Söz dizimini, ortak kalıpları, metin işlemeyi ve kullanışlı tek satırlık satırları kapsar.
 ---

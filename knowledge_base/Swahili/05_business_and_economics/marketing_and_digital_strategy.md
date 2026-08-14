@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mkakati wa Uuzaji na Dijiti
 Uuzaji ni jinsi biashara huunda, kuwasiliana, na kutoa thamani kwa wateja. Inajumuisha mfumo mzima wa kuelewa mahitaji ya wateja, kuweka bidhaa ili kukidhi mahitaji hayo, na kujenga uhusiano ambao hubadilisha wanunuzi kuwa watetezi. Mapinduzi ya kidijitali yamebadilisha zana, njia, na kasi ya uuzaji, huku mambo ya msingi yakibaki thabiti.
 ---

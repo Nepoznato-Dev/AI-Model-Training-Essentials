@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Syntax Reference
 Nagbibigay ang dokumentong ito ng komprehensibo, structured na syntax na reference para kay Ruby (3.x). Kinukumpleto nito ang pangunahing sanggunian ng Ruby sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, mga bloke at pagsasara, metaprogramming, at mga idyoma ng Ruby.
 ---

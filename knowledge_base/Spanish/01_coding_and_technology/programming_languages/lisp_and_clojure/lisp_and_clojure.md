@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ceceo y clojure
 Lisp es el segundo lenguaje de programación de alto nivel más antiguo todavía en uso (después de Fortran), creado por John McCarthy en 1958. Fue pionero en muchos conceptos que ahora se dan por sentado: recolección de basura, recursividad, estructuras de datos en árbol, tipificación dinámica y la idea de programas como datos (homoiconicidad). La característica distintiva de Lisp es su sintaxis: el código se escribe como paréntesis anidados (expresiones S), lo que hace que el lenguaje sea trivialmente analizable y permite una potente metaprogramación a través de **macros**.
 Clojure es un dialecto Lisp moderno diseñado por Rich Hickey en 2007. Se ejecuta en JVM (también ClojureScript para JavaScript), abarca programación funcional, inmutabilidad y concurrencia, y proporciona interoperabilidad perfecta de Java. Clojure se utiliza en desarrollo web, procesamiento de datos y sistemas financieros.

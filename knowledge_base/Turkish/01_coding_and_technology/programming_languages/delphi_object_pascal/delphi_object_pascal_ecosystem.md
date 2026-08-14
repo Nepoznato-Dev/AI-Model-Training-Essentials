@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz Delphi/Object Pascal ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

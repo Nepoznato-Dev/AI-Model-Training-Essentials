@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — 구문 참조
 이 문서는 Scala(2.x 차이점에 대한 참고 사항이 포함된 3.x)에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 구문 패턴, 유형 시스템, 기능적 프로그래밍 구성 및 Scala 관용구에 중점을 두어 기본 Scala 참조를 보완합니다.
 ---

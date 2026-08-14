@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell
 Uandishi wa Shell unarejelea kuandika hati kwa wakalimani wa mstari wa amri. Magamba mawili muhimu zaidi ni **Bash** (Bourne Again Shell) — chaguomsingi kwenye Linux na macOS — na **PowerShell** — shell ya kisasa ya jukwaa la Microsoft na lugha ya uandishi. Hati za Shell hubadilisha kazi za usimamizi wa mfumo kiotomatiki, kuunda bomba, kuchakata faili, na mtiririko wa kazi wa kupeleka.
 Kila msanidi programu, mhandisi wa DevOps, na msimamizi wa mfumo anahitaji ujuzi wa uandishi wa shell. Iwe unatumia seva ya wavuti, kuchakata faili za kumbukumbu, kusanidi mabomba ya CI/CD, au kuhifadhi nakala kiotomatiki, uandishi wa shell ndio zana ya kazi hiyo.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Modèles idiomatiques et meilleures pratiques
 Ce guide couvre les modèles idiomatiques permettant d'écrire du code COBOL propre et moderne.
 ---

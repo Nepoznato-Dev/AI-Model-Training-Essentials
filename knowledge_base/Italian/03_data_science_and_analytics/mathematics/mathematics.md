@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matematica
 La matematica non è solo una materia studiata a scuola, ma è alla base di quasi tutti i campi tecnici. La fisica lo usa per descrivere l'universo. L'informatica lo usa per progettare algoritmi. L’apprendimento automatico lo utilizza per ottimizzare i pesi. La finanza lo usa per valutare il rischio. La padronanza di ogni ramo non è necessaria, ma comprendere il panorama – e sapere dove si applica ogni ramo – rende più facile comprendere altri argomenti.
 ---

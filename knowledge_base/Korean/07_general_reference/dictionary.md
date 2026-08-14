@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 영어 사전 — ​​일반적인 단어 정의
 자주 사용되는 영어 단어와 그 의미에 대한 참고 목록,
 일상용어, 학술용어, 흔히 접하는 단어를 다룹니다.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Văn hóa và xã hội thế giới
 Văn hóa là khuôn khổ của một xã hội - những niềm tin, giá trị, phong tục, hành vi và đồ tạo tác được chia sẻ mà các thành viên sử dụng để đối phó với thế giới của họ và với nhau. Hiểu biết về sự đa dạng văn hóa không phải là ghi nhớ những điều tầm thường; đó là việc thừa nhận rằng một cách nhìn thế giới nằm trong số hàng ngàn cách nhìn và các hệ thống khác đều mạch lạc nội bộ, có cơ sở lịch sử và đáng được hiểu theo cách riêng của chúng.
 ---

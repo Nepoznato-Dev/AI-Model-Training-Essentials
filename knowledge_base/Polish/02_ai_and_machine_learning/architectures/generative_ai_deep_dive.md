@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Głębokie nurkowanie generatywnej AI
 Generatywna sztuczna inteligencja odnosi się do modeli, które tworzą nową treść – obrazy, tekst, dźwięk, wideo, kod – zamiast po prostu klasyfikować lub przewidywać istniejące dane. Podczas gdy większość uwagi poświęca się dużym modelom językowym, krajobraz generatywnej sztucznej inteligencji jest znacznie szerszy. Ten plik opisuje architektury, techniki i kompromisy stojące za nowoczesnymi systemami generatywnymi, od modeli dyfuzyjnych, przez wariacyjne autoenkodery, po modele przepływu.
 ---

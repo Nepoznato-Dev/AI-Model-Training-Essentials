@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i antywzorce w SQL wraz z poprawkami.
 ---

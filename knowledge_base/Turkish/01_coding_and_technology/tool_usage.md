@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Araç Kullanımı
 ## Git — Sürüm Kontrolü
 Git dağıtılmış bir sürüm kontrol sistemidir. Her geliştiricinin yerel makinesinde depo geçmişinin tam bir kopyası vardır.

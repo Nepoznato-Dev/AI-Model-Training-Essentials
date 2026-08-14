@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — 구문 참조
 이 문서는 PHP(8.x)에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 철저한 구문 패턴, 최신 PHP 기능, 객체 지향 프로그래밍 및 실용적인 관용구에 중점을 두어 기본 PHP 참조를 보완합니다.
 ---

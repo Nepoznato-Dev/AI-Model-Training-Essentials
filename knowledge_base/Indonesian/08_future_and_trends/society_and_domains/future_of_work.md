@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Masa Depan Pekerjaan
 ## Ringkasan
 Cara kita bekerja berubah lebih cepat dibandingkan periode mana pun sejak Revolusi Industri. Pekerjaan jarak jauh berubah dari keuntungan yang langka menjadi default dalam semalam. AI beralih dari hal baru ke kolaborator. Gig economy sedang mengubah arti “pekerjaan”. Dan otomatisasi tidak hadir untuk semua pekerjaan — tetapi otomatisasi hadir untuk banyak tugas di sebagian besar pekerjaan. Berikut ini adalah kekuatan yang membentuk kembali tempat kerja dan apa yang akan terjadi selanjutnya.

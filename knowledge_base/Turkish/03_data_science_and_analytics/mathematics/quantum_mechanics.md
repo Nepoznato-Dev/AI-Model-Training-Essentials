@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kuantum Mekaniği
 Kuantum mekaniği, atomlar, elektronlar, fotonlar ve doğanın temel parçacıkları gibi en küçük ölçeklerdeki fiziğin teorisidir. Klasik mekaniğin deterministik dünyasının yerine olasılıkları, süperpozisyonları ve dolaşıklığı koyuyor. Mantık dışı doğasına rağmen kuantum mekaniği bilimin tamamında en kesin şekilde test edilmiş teoridir. Günümüzde ilkeleri, belirli sorunları klasik makinelerden katlanarak daha hızlı çözmeyi vaat eden kuantum bilgisayarlar aracılığıyla bilgi işlemle doğrudan ilgili hale geliyor.
 ---

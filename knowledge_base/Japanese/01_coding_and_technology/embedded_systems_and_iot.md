@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 組み込みシステムとIoT
 組み込みシステムは、車のエンジン コントロール ユニット、洗濯機のコントローラー、スマート サーモスタットのマイクロコントローラーなど、他のデバイスの中に隠されたコンピューターです。汎用コンピュータとは異なり、特定のタスク向けに設計されており、多くの場合、電力、メモリ、処理速度に厳しい制限があります。モノのインターネット (IoT) は、組み込みシステムをネットワークに接続することで拡張し、リモート監視、制御、データ収集を可能にします。これらは合わせて、物理世界と対話する数十億のコンピューティング デバイスを表します。
 ---

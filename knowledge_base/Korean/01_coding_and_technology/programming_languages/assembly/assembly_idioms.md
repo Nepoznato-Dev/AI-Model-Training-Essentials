@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 어셈블리 — 관용적 패턴 및 모범 사례
 이 가이드에서는 깔끔하고 유지 관리 가능한 어셈블리 코드(NASM 구문을 사용하는 x86/x64 초점)를 작성하기 위한 관용적 패턴을 다룹니다.
 ---

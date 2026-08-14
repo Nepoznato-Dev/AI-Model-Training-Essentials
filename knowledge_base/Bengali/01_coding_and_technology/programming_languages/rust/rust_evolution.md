@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # মরিচা — সংস্করণ ইতিহাস এবং বিবর্তন
 ## টাইমলাইন
 | সংস্করণ | মুক্তির তারিখ | মূল থিম |

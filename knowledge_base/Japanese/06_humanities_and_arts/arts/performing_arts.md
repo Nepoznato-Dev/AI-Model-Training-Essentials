@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 舞台芸術
 演劇、映画、ダンス、音楽パフォーマンスなどの舞台芸術は、芸術が観客の生きた存在と出会う場所です。壁に描かれた絵や棚に置かれた本とは異なり、パフォーマンスはリアルタイムで展開され、アーティストと観客の間に共有の経験を生み出します。これは、何千年にもわたって人類文化の中心となってきました。
 ---

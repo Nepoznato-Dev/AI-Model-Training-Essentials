@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # アセンブリ言語
 アセンブリ言語は、人間が読める最低レベルのプログラミング言語です。これは、生のバイナリの代わりにニーモニック コード (`MOV`、`ADD`、`JMP`など) を使用して、コンピューターのマシン コード命令を直接表現します。各アセンブリ言語は特定のプロセッサ アーキテクチャ (x86、ARM、MIPS、RISC-V) に固有であり、あるアーキテクチャ用に書かれたコードは別のアーキテクチャでは実行できません。
 アセンブリ言語はアプリケーションの構築には使用されません。これは、オペレーティング システムのカーネル、デバイス ドライバー、ブートローダー、組み込みファームウェア、パフォーマンスが重要なコード セクションの作成、リバース エンジニアリング、コンピューターが実際に命令を実行する方法を理解するなど、ハードウェアを完全に制御する必要がある場合に使用されます。

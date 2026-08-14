@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Model Optimizasyonu ve Dağıtımı
 Büyük bir yapay zeka modelini eğitmek önemli bir başarıdır, ancak onu verimli bir şekilde dağıtmak, mühendislik çabalarının çoğunun gerekli olduğu yerdir. Yanıt vermesi 10 saniye süren veya sekiz A100 GPU gerektiren bir model, çoğu gerçek dünya uygulaması için pratik değildir. Model optimizasyonu, kabul edilebilir kaliteyi korurken modelleri daha küçük, daha hızlı ve daha uygun maliyetli hale getirme sürecidir. Bu dosya niceleme, budama, damıtma ve modellerin üretimde dağıtımına yönelik pratik araçları kapsar.
 ---

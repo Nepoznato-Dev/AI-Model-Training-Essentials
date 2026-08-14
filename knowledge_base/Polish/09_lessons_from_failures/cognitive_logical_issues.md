@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Błędy poznawcze i błędy logiczne
 Dokument ten konsoliduje błędy poznawcze, błędy logiczne i błędy w rozumowaniu, które wpływają zarówno na proces podejmowania decyzji przez człowieka, jak i na wyniki systemów sztucznej inteligencji.
 ---

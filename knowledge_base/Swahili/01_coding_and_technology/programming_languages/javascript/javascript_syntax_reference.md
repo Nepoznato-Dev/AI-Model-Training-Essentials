@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya JavaScript. Inakamilisha rejeleo kuu la JavaScript kwa kuzingatia mifumo kamili ya sintaksia, majedwali ya waendeshaji na ufundi wa ndani.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optyka i fale
 Fale są wszędzie: dźwięk, światło, woda, sygnały radiowe, amplitudy prawdopodobieństwa kwantowego, wahania na giełdzie i wibracje aktywacji sieci neuronowych. Optyka – nauka o świetle – jest najlepiej rozwiniętą nauką o falach, a jej narzędzia matematyczne (analiza Fouriera, interferencja, dyfrakcja) mają zastosowanie do każdego zjawiska falowego. Zrozumienie fal jest niezbędne do przetwarzania sygnałów, analizy obrazu, komunikacji i warstwy fizycznej całej nowoczesnej technologii.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, perpustakaan, dan infrastruktur penting dalam ekosistem Ada.
 ---

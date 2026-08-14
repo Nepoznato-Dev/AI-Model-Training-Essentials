@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamenti di visione artificiale
 La visione artificiale offre alle macchine la capacità di interpretare e comprendere le informazioni visive provenienti dal mondo: immagini, video e dati 3D. È alla base di tutto, dal riconoscimento facciale sul telefono alle auto a guida autonoma, all'analisi delle immagini mediche e al controllo di qualità industriale. Questo file copre i concetti principali, le architetture e le tecniche.
 ---

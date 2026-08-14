@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Physics
 Ang pisika ay nagtatanong ng pinakapangunahing tanong sa agham: paano kumikilos ang bagay at enerhiya? Lahat ng iba pa - kimika, biology, engineering - ay bumubuo sa mga sagot. Ang physics ay mula sa subatomic scale (quantum mechanics) hanggang sa cosmic scale (general relativity), at ang mga prinsipyo nito ay sumasailalim sa lahat ng iba pang natural na agham.
 ---

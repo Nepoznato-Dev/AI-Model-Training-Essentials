@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 루비
 Ruby는 Yukihiro "Matz" Matsumoto가 개발하고 1995년 일본에서 처음 출시된 동적 해석형 객체 지향 프로그래밍 언어입니다. Ruby는 프로그래머의 행복에 초점을 맞춰 설계되었습니다. Ruby의 구문은 우아하고 자연스러우며 읽기가 거의 영어와 같습니다. 정수 및 부울과 같은 기본 유형을 포함하여 Ruby의 모든 것은 객체입니다. Ruby는 구성에 대한 관례와 신속한 프로토타이핑을 대중화하여 웹 개발에 혁명을 일으킨 Ruby on Rails 웹 프레임워크로 가장 잘 알려져 있습니다.
 Beyond Rails에서 Ruby는 스크립팅, 자동화, DevOps 도구(Chef, Puppet) 및 범용 언어로 사용됩니다. 표현력이 풍부한 구문과 강력한 메타프로그래밍 기능 덕분에 글쓰기가 즐겁습니다.

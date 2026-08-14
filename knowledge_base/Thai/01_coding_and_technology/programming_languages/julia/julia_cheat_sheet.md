@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia - แผ่นโกง
 ## พื้นฐาน
 ```julia

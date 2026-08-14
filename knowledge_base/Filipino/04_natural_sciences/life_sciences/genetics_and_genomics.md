@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genetics at Genomics
 Ang genetika ay ang pag-aaral ng pagmamana — kung paano naipapasa ang mga katangian mula sa mga magulang patungo sa mga supling sa pamamagitan ng DNA. Ang genomics ay ang pag-aaral ng buong genome: lahat ng gene, ang mga non-coding na rehiyon, kung paano sila nakikipag-ugnayan, at kung paano sila nag-iiba-iba sa mga indibidwal at populasyon. Ang paglipat mula sa genetics patungo sa genomics ay hinimok ng sequencing technology — nagpunta kami mula sa pag-aaral ng isang gene sa isang pagkakataon sa pagbabasa ng buong genome sa mga oras, pagbuo ng data na nagbabago ng medisina, agrikultura, forensics, at ang aming pag-unawa sa ebolusyon.
 ---

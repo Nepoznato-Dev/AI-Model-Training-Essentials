@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge Lua'daki en yaygın hataları, tuzakları ve anti-kalıpları düzeltmelerle birlikte kataloglamaktadır.
 ---

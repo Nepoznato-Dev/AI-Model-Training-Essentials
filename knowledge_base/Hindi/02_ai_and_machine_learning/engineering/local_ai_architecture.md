@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # स्थानीय एआई आर्किटेक्चर
 बड़े भाषा मॉडल को पूरी तरह से डिवाइस पर चलाने के लिए एक व्यावहारिक मार्गदर्शिका - हार्डवेयर विचार, अनुमान इंजन, मेमोरी ऑप्टिमाइज़ेशन और एज परिनियोजन के लिए सिस्टम डिज़ाइन।
 ---

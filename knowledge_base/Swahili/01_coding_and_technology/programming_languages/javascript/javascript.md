@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Javascript
 JavaScript ni lugha ya programu inayobadilika, iliyotafsiriwa iliyoundwa na Brendan Eich katika muda wa siku 10 tu mwaka wa 1995. Hapo awali iliundwa ili kuongeza mwingiliano kwenye kurasa za wavuti, imekua na kuwa lugha ya programu inayotumiwa zaidi ulimwenguni. JavaScript hutumika katika kila kivinjari, kwenye seva kupitia Node.js, katika programu za kompyuta za mezani (Elektroni), programu za simu (React Native), na hata mifumo iliyopachikwa.
 Lugha ni ya kipekee kwa kuwa kimsingi ndiyo chaguo pekee kwa ukuzaji wa wavuti wa upande wa mteja - kila kivinjari kinaitumia asili. Ukiritimba huu, pamoja na kuongezeka kwa JavaScript yenye rundo kamili (Node.js, Deno, Bun), huifanya iwe ya lazima.

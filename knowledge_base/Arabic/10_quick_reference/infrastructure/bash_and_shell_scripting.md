@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ورقة الغش في البرمجة النصية لـ Bash and Shell
 مرجع عملي لكتابة نصوص shell في Bash — الصدفة الافتراضية في معظم أنظمة Linux وmacOS. يغطي بناء الجملة والأنماط الشائعة ومعالجة النصوص والسطور المفيدة.
 ---

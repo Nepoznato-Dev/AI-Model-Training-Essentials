@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps dan CI/CD
 DevOps adalah kombinasi filosofi budaya, praktik, dan alat yang memungkinkan tim menghadirkan perangkat lunak dengan lebih cepat dan andal. Ini meruntuhkan tembok antara pengembang (yang ingin melakukan perubahan) dan operasi (yang menginginkan stabilitas). CI/CD — Integrasi Berkelanjutan dan Pengiriman Berkelanjutan — adalah tulang punggung otomatisasi yang memungkinkan hal ini.
 ---

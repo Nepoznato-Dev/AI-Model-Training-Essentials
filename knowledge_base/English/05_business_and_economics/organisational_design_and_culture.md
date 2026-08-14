@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Organisational Design and Culture
 
 Organisational design is the deliberate arrangement of structure, processes, roles, and decision rights to execute strategy effectively. Culture is the shared values, beliefs, norms, and behaviours that shape how people actually work together. Structure provides the framework; culture shapes behaviour. A structure can be redesigned on paper, but if the culture does not support the change, implementation will fail. Similarly, a strong culture paired with an ineffective structure will gradually undermine organisational performance. The most effective organisations address both — and recognise that they are deeply interconnected.

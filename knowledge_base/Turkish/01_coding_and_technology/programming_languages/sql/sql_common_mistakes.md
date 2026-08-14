@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge, SQL'deki en yaygın hataları, tuzakları ve anti-kalıpları düzeltmelerle birlikte kataloglamaktadır.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell und PowerShell
 Unter Shell-Scripting versteht man das Schreiben von Skripten für Befehlszeileninterpreter. Die beiden wichtigsten Shells sind **Bash** (Bourne Again Shell) – die Standardversion unter Linux und macOS – und **PowerShell** – die moderne plattformübergreifende Shell und Skriptsprache von Microsoft. Shell-Skripte automatisieren Systemverwaltungsaufgaben, Build-Pipelines, Dateiverarbeitung und Bereitstellungsworkflows.
 Jeder Entwickler, DevOps-Ingenieur und Systemadministrator benötigt Shell-Scripting-Kenntnisse. Ganz gleich, ob Sie einen Webserver bereitstellen, Protokolldateien verarbeiten, CI/CD-Pipelines einrichten oder Backups automatisieren, Shell-Scripting ist das richtige Werkzeug für diese Aufgabe.

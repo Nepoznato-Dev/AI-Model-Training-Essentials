@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Khoa học vật liệu
 Khoa học vật liệu là nghiên cứu về cách cấu trúc của vật liệu (ở quy mô nguyên tử, vi mô và vĩ mô) xác định các tính chất của nó và cách sử dụng các phương pháp xử lý để kiểm soát cấu trúc đó nhằm đạt được hiệu suất mong muốn. Đó là lĩnh vực giải đáp những câu hỏi như: tại sao thép cứng mà lại nặng? Tại sao thủy tinh trong suốt nhưng dễ vỡ? Làm thế nào chúng ta có thể làm cho pin sạc nhanh hơn? Những vật liệu nào sẽ tồn tại trong điều kiện trên sao Hỏa? Mọi thiết bị công nghệ bạn từng sử dụng đều được làm từ vật liệu và những tiến bộ về công nghệ hầu như luôn đòi hỏi những tiến bộ về vật liệu.
 ---

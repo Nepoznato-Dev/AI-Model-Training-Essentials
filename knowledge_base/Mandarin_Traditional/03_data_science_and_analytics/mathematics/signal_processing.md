@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 訊號處理
 訊號處理是分析、修改和合成訊號的科學——訊號隨時間、空間或頻率變化的物理量的表示。音訊、影像、視訊、感測器數據、腦電波、股票價格——所有這些都是訊號。訊號處理的數學工具（傅立葉變換、濾波器、取樣理論）是機器學習、通訊、醫學成像以及幾乎所有與資料相關的領域的基礎。
 ---

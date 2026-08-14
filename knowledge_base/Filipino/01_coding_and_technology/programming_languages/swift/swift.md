@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # matulin
 Ang Swift ay isang moderno, pinagsama-samang programming language na binuo ng Apple (pinamumunuan ni Chris Lattner) at unang inilabas noong 2014. Idinisenyo ito upang palitan ang Objective-C bilang pangunahing wika para sa pagbuo ng platform ng Apple (iOS, macOS, watchOS, tvOS, visionOS). Pinagsasama ng Swift ang pagganap ng mga pinagsama-samang wika sa pagpapahayag ng mga wika ng script, at binibigyang-diin nito ang kaligtasan -- partikular na sa paligid ng mga null value, pamamahala ng memorya, at mga error sa uri.
 Higit pa sa mga platform ng Apple, ang Swift ay lalong ginagamit para sa server-side development (Vapor, Hummingbird), mga cross-platform na application, at kahit machine learning (Apple's Create ML). Sa pagpapakilala ng Swift sa Server at suporta sa cross-platform, ang Swift ay nagiging higit pa sa isang "wika ng Apple."

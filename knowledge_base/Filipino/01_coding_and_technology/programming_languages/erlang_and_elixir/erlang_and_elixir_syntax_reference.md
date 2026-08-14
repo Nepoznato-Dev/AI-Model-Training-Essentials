@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang at Elixir — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa Erlang at Elixir. Kinukumpleto nito ang pangunahing sanggunian sa pamamagitan ng pagtuon sa pagtutugma ng pattern, pamamahala ng proseso, pag-uugali ng OTP, at mga pattern ng system na hindi mapagparaya sa fault.
 ---

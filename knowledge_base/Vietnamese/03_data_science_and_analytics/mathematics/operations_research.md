@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nghiên cứu hoạt động
 Nghiên cứu hoạt động (OR) là việc áp dụng các phương pháp toán học vào việc ra quyết định. Ra đời trong Thế chiến thứ hai dành cho lĩnh vực hậu cần quân sự, giờ đây nó tối ưu hóa chuỗi cung ứng, lên lịch cho các hãng hàng không, định tuyến đội tàu giao hàng, quản lý hàng tồn kho và phân bổ nguồn lực cho mọi ngành. HOẶC cung cấp bộ công cụ toán học để đưa ra quyết định tốt nhất có thể trong điều kiện ràng buộc.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Biznes i ekonomia
 Każda organizacja sprzedająca produkt lub usługę to biznes, a każde społeczeństwo, które produkuje i dystrybuuje towary, to gospodarka. Pojęcia zawarte w tym pliku mają zastosowanie niezależnie od tego, czy prowadzisz niezależną działalność, pracujesz w korporacji, próbujesz zrozumieć wiadomości, czy po prostu zastanawiasz się, w jaki sposób pieniądze przepływają przez świat.
 ---

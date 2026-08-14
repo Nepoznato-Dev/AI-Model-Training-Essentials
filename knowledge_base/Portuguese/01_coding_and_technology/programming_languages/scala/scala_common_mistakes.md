@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — Erros Comuns e Antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns no Scala com correções.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kushindwa kwa Mradi wa Kujifunza kwa Mashine
 Miradi ya kujifunza mashine haifaulu kwa kasi ya kutisha - makadirio ya tasnia yanapendekeza 60-85% ya miradi ya ML isifikie uzalishaji kamwe. Kushindwa kwa kawaida sio katika algoriti; ziko katika mchakato, data, matarajio, na muktadha wa shirika. Kuelewa kwa nini miradi ya ML inashindwa ni muhimu kwa mtu yeyote anayeunda mifumo ya ML, kwa sababu njia za kutofaulu zinaweza kutabirika na zinaweza kuepukika.
 ---

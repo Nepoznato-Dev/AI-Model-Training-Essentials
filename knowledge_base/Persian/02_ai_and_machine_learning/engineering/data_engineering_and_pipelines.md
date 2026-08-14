@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مهندسی داده و خطوط لوله
 مهندسی داده رشته ساختن سیستم هایی است که داده ها را در مقیاس جابجا، تبدیل و ذخیره می کند. بدون خطوط انتقال داده های قابل اعتماد، مدل های یادگیری ماشین را نمی توان آموزش داد، داشبوردها اعداد قدیمی را نشان می دهند و تصمیمات تجاری بر اساس حدس و گمان است. این فایل معماری، ابزارها و شیوه‌های ساخت زیرساخت داده را پوشش می‌دهد که کار می‌کند.
 ---

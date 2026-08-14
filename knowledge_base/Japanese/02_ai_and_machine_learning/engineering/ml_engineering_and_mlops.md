@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML エンジニアリングと MLOps
 機械学習モデルの構築は、まだ戦いの半分に過ぎません。実稼働環境への導入、確実な実行の維持、ドリフトの監視、反復処理 - ここで ML エンジニアリングと MLOps が登場します。このファイルは、実験から実稼働システムまでのライフサイクル全体をカバーします。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Diller Arası Karşılaştırma - Eşzamanlılık ve Paralellik
 ## Eşzamanlılık Modellerine Genel Bakış
 | Dil | Modeli | Anahtar Mekanizması | Paylaşılan Bellek? |

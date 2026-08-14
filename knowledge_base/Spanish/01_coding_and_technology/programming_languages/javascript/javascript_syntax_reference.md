@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript: referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para JavaScript. Complementa la referencia principal de JavaScript centrándose en patrones de sintaxis exhaustivos, tablas de operadores y mecánicas internas.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Affaires et économie
 Toute organisation qui vend un produit ou un service est une entreprise, et toute société qui produit et distribue des biens est une économie. Les concepts de ce fichier s'appliquent que vous dirigiez une entreprise indépendante, que vous travailliez dans une entreprise, que vous essayiez de comprendre l'actualité ou que vous cherchiez simplement à comprendre comment l'argent circule dans le monde.
 ---

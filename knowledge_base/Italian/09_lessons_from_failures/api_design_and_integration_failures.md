@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Errori di progettazione e integrazione dell'API
 Le API (Application Programming Interfaces) sono il tessuto connettivo del software moderno: consentono ai servizi di comunicare, consentono a terze parti di integrarsi e consentono ai team di lavorare in modo indipendente. Quando la progettazione dell'API va male, le conseguenze si propagano a tutti i sistemi che ne dipendono: integrazioni interrotte, vulnerabilità della sicurezza, frustrazione degli sviluppatori e costose riscritture. Gli errori di integrazione, ovvero i sistemi che non riescono a comunicare in modo affidabile, sono tra le fonti più comuni di incidenti di produzione.
 ---

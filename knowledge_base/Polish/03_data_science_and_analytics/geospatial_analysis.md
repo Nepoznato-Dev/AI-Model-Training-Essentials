@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Analiza geoprzestrzenna
 Analiza geoprzestrzenna to proces badania danych zawierających element geograficzny — współrzędne, adresy, granice lub dowolne dane powiązane z lokalizacją na Ziemi. Odpowiada na pytania takie jak „gdzie są nasi klienci?”, „jaka jest optymalna trasa?” i „jak zmienia się użytkowanie gruntów w czasie?”. Każdy zbiór danych ma wymiar przestrzenny, a jego zrozumienie pozwala uzyskać wiedzę, której brakuje czystej analizie statystycznej.
 ---

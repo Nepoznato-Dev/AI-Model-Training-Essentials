@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linguagem Assembly
 A linguagem assembly é a linguagem de programação legível por humanos de nível mais baixo. Ele fornece uma representação direta das instruções de código de máquina de um computador usando códigos mnemônicos (como`MOV`,`ADD`,`JMP`) em vez de binário bruto. Cada linguagem assembly é específica para uma arquitetura de processador específica (x86, ARM, MIPS, RISC-V) — o código escrito para uma arquitetura não será executado em outra.
 A linguagem assembly não é usada para construir aplicativos. Ele é usado quando você precisa de controle absoluto sobre o hardware: escrever kernels de sistema operacional, drivers de dispositivos, bootloaders, firmware incorporado, seções de código de desempenho crítico, engenharia reversa e entender como os computadores realmente executam instruções.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # معماری هوش مصنوعی محلی
 راهنمای عملی برای اجرای مدل‌های زبان بزرگ کاملاً روی دستگاه - ملاحظات سخت‌افزاری، موتورهای استنتاج، بهینه‌سازی حافظه و طراحی سیستم برای استقرار لبه.
 ---

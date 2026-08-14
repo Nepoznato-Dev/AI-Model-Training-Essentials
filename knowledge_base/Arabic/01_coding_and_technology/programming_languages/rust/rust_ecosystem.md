@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # الصدأ - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والأطر والبنية التحتية الأساسية في نظام Rust البيئي.
 ---

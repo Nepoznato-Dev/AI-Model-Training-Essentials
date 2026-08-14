@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz temiz, deyimsel OCaml kodu yazmaya yönelik deyimsel kalıpları kapsar.
 ---

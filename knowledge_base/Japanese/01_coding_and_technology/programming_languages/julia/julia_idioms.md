@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — 慣用的なパターンとベストプラクティス
 このガイドでは、慣用的なパターンと、クリーンで慣用的な Julia コードを記述するためのベスト プラクティスについて説明します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات الأساسية وصناديق الأدوات والبنية التحتية في نظام MATLAB البيئي.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matematica Discreta
 La matematica discreta è lo studio delle strutture matematiche che sono fondamentalmente numerabili o separate, in contrapposizione alla matematica continua (calcolo, analisi reale), che si occupa di quantità uniformi e ininterrotte. La matematica discreta è alla base dell’informatica, della crittografia, della progettazione di algoritmi e delle strutture dei dati. Se la matematica continua descrive il mondo fisico, la matematica discreta descrive il mondo computazionale.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL Quick Reference Guide"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mwongozo wa Marejeleo wa Haraka wa SQL
 Amri muhimu za SQL kwa shughuli za hifadhidata.
 ---

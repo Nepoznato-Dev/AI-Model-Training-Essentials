@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Ruby (3.x). Il complète la référence principale de Ruby en se concentrant sur les modèles de syntaxe exhaustifs, les blocs et fermetures, la métaprogrammation et les idiomes Ruby.
 ---

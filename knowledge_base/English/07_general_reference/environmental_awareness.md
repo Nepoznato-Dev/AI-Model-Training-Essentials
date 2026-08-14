@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Environmental Awareness
 
 The environment is not a separate thing "out there" — it is the system that makes everything else possible. Every breath you take, every glass of water you drink, every meal you eat depends on atmospheric composition, water cycles, soil health, and pollinator networks. Understanding how these systems work — and how they are changing — is not optional for an informed person. This file covers the fundamentals of environmental science, the challenges we face, and what sustainability actually means in practice.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — 일반적인 실수 및 안티 패턴
 이 문서에는 Visual Basic(VB.NET)의 가장 일반적인 실수, 함정 및 안티 패턴에 대한 수정 사항이 정리되어 있습니다.
 ---

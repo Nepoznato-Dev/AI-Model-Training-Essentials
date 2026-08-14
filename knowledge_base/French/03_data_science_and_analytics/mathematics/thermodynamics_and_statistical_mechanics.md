@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Thermodynamique et mécanique statistique
 La thermodynamique décrit le comportement macroscopique des systèmes en termes de température, de pression et d'entropie, sans savoir à quoi ressemblent les atomes. La mécanique statistique explique la thermodynamique de bas en haut : elle dérive les propriétés macroscopiques du comportement microscopique d'un grand nombre de particules. Ensemble, ils fournissent la compréhension la plus approfondie de l’énergie, de l’entropie et de l’équilibre – des concepts qui ont migré vers la théorie de l’information, l’apprentissage automatique et au-delà.
 ---

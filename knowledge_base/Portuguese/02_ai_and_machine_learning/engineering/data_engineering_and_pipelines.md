@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Engenharia de dados e pipelines
 A engenharia de dados é a disciplina de construção de sistemas que movem, transformam e armazenam dados em escala. Sem pipelines de dados confiáveis, os modelos de aprendizado de máquina não podem ser treinados, os painéis mostram números obsoletos e as decisões de negócios são baseadas em suposições. Este arquivo cobre a arquitetura, as ferramentas e as práticas para construir uma infraestrutura de dados que funcione.
 ---

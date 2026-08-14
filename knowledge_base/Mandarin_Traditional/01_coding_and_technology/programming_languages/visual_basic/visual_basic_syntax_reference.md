@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic — 語法參考
 本文檔提供了 Visual Basic (VB.NET) 的全面、結構化語法參考。它透過關注詳盡的語法模式、OOP 功能、LINQ、async/await 和 .NET 整合習慣用法來補充主要的 Visual Basic 參考。
 ---

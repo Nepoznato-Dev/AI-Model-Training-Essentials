@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Assembly Language — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa x86-64 Assembly (NASM syntax). Kinukumpleto nito ang pangunahing sanggunian ng Assembly sa pamamagitan ng pagtutuon sa mga kumpletong kategorya ng pagtuturo, mga mode ng pagtugon, mga convention ng stack frame, at mga pattern ng programming ng system.
 ---

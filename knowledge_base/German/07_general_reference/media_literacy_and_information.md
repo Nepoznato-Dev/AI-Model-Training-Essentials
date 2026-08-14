@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Medienkompetenz und Informationsbewertung
 Wir leben in einer informationsgesättigten Welt. Jeden Tag ist der durchschnittliche Mensch Tausenden von Mediennachrichten ausgesetzt – Nachrichtenartikeln, Social-Media-Beiträgen, Werbung, politischen Reden, Influencer-Inhalten und KI-generierten Texten. Das meiste davon ist in Ordnung. Manches davon ist irreführend. Eine kleine Menge ist absichtlich falsch. Medienkompetenz ist die Fähigkeit, sich in dieser Landschaft zurechtzufinden – nicht indem man allem vertraut, nicht indem man nichts vertraut, sondern indem man ein kalibriertes Gespür dafür entwickelt, was zuverlässig ist und was nicht.
 ---

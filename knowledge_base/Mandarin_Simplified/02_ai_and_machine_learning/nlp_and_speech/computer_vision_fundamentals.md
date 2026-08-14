@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 计算机视觉基础知识
 计算机视觉使机器能够解释和理解来自世界的视觉信息——图像、视频和 3D 数据。它为从手机上的人脸识别到自动驾驶汽车、医学图像分析和工业质量控制的一切提供支持。该文件涵盖了核心概念、架构和技术。
 ---

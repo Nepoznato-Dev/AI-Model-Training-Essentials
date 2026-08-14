@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 研究方法论
 研究方法是调查问题、检验假设和生成可靠知识的系统方法。无论您是在进行科学实验、社会科学调查、商业分析还是学术研究，您选择的方法都决定了您的发现是否可信、可重复和有用。精心设计的研究会产生值得信赖的结果；设计不佳的答案会产生噪音，或者更糟糕的是，会产生自信的错误答案。
 ---

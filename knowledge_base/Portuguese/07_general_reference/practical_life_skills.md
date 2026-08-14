@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Habilidades práticas para a vida
 A escola ensina cálculo, mas raramente ensina como declarar impostos, preparar uma refeição balanceada ou manter a casa. Estas são as competências práticas que afetam a sua qualidade de vida diária – o tipo de conhecimento que o torna autossuficiente e financeiramente resiliente. Este arquivo é uma referência densa para o essencial.
 ---

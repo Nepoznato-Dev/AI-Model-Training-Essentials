@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell at PowerShell
 Ang Shell scripting ay tumutukoy sa pagsulat ng mga script para sa mga command-line interpreter. Ang dalawang pinakamahalagang shell ay **Bash** (Bourne Again Shell) — ang default sa Linux at macOS — at **PowerShell** — ang modernong cross-platform shell at scripting language ng Microsoft. Ang mga script ng Shell ay nag-o-automate ng mga gawain sa pangangasiwa ng system, bumuo ng mga pipeline, pagpoproseso ng file, at mga daloy ng trabaho sa pag-deploy.
 Ang bawat developer, DevOps engineer, at system administrator ay nangangailangan ng mga kasanayan sa shell scripting. Nagde-deploy ka man ng web server, nagpoproseso ng mga log file, nagse-set up ng mga pipeline ng CI/CD, o nag-automate ng mga backup, ang shell scripting ang tool para sa trabaho.

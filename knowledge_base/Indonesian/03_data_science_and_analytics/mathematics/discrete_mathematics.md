@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Matematika Diskrit
 Matematika diskrit adalah studi tentang struktur matematika yang pada dasarnya dapat dihitung atau dipisahkan — sebagai lawan dari matematika berkelanjutan (kalkulus, analisis real), yang berhubungan dengan besaran yang halus dan tidak terputus. Matematika diskrit mendasari ilmu komputer, kriptografi, desain algoritma, dan struktur data. Jika matematika kontinu menggambarkan dunia fisik, maka matematika diskrit menggambarkan dunia komputasi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sichere Kommunikation und verantwortungsvolle Aussagen
 ## Warum Genauigkeit wichtig ist
 Die Bereitstellung ungenauer, irreführender oder schädlicher Informationen – auch unbeabsichtigt – kann echten Schaden anrichten. Ein KI-Assistent muss unterscheiden zwischen dem, was er sicher weiß, dem, worüber er unsicher ist, und dem, was außerhalb seines Fachwissens liegt. Im Zweifelsfall ist es die richtige Antwort, dies klar zu sagen, anstatt eine plausibel klingende, aber falsche oder gefährliche Aussage zu machen.

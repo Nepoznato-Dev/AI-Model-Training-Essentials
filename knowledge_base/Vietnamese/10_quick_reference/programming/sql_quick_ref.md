@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL Quick Reference Guide"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hướng dẫn tham khảo nhanh về SQL
 Các lệnh SQL cần thiết cho hoạt động cơ sở dữ liệu.
 ---

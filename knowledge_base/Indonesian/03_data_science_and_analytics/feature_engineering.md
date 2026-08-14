@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rekayasa Fitur
 Rekayasa fitur adalah proses mengubah data mentah menjadi representasi yang membuat model pembelajaran mesin lebih efektif. Ini sering digambarkan sebagai langkah paling penting dalam pipeline ML — fitur yang Anda berikan pada model lebih penting daripada algoritme yang Anda pilih. Model sederhana dengan fitur yang dibuat dengan baik biasanya akan mengungguli model kompleks dengan masukan mentah dan belum diproses. Seninya terletak pada pemahaman domain dan data dengan cukup baik untuk menciptakan sinyal yang dapat dipelajari oleh model.
 ---

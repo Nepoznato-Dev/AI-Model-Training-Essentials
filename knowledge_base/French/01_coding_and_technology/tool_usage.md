@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Utilisation de l'outil
 ## Git — Contrôle de version
 Git est un système de contrôle de version distribué. Chaque développeur dispose d'une copie complète de l'historique du référentiel sur sa machine locale.

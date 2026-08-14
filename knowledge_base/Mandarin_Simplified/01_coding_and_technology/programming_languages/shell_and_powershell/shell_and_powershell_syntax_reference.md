@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell 和 PowerShell — 语法参考
 本文档提供了 Bash 和 PowerShell 的全面、结构化语法参考。它通过专注于两个 shell 的详尽脚本模式、管道、流程管理和自动化惯用语来补充主要 Shell 参考。
 ---

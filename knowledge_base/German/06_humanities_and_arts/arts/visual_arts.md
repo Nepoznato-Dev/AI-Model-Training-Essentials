@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bildende Kunst
 Bildende Kunst ist die älteste Kommunikationsform der Menschheit – von den Höhlenmalereien von Lascaux bis zu den digitalen Installationen von heute. Wenn Sie Kunstbewegungen, Medien und die Institutionen, die kreative Werke bewahren, verstehen, erhalten Sie ein tieferes Verständnis dafür, wie Gesellschaften über Jahrtausende hinweg Schönheit, Macht, Spiritualität und Widerspruch zum Ausdruck gebracht haben.
 ---

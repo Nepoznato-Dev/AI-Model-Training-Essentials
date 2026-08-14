@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # بصری بنیادی — عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز تصحیح کے ساتھ Visual Basic (VB.NET) میں سب سے عام غلطیوں، ٹریپس، اور اینٹی پیٹرن کی فہرست بناتی ہے۔
 ---

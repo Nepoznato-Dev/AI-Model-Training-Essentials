@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua
 Ang Lua ay isang magaan, na-embed na scripting language na idinisenyo para sa pagpapalawak ng mga application. Nilikha noong 1993 sa Pontifical Catholic University of Rio de Janeiro sa Brazil, ang Lua ay isa sa pinakamabilis na magagamit na mga scripting language. Ang maliit na bakas ng paa nito (ang interpreter ay ~120KB) at pagiging simple ay ginagawa itong mapagpipilian para sa scripting ng pagbuo ng laro, mga naka-embed na system, at configuration.
 Ang Lua ay mas kilala bilang scripting language sa likod ng Roblox (ang gaming platform na may 200M+ buwanang user), World of Warcraft addons, at maraming game engine (Love2D, Defold, Corona SDK). Ginagamit din ito sa Nginx (OpenResty), Redis, at Wireshark.

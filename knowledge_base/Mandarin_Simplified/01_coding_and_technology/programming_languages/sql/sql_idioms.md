@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — 惯用模式和最佳实践
 本指南涵盖了编写干净、高效 SQL 的惯用模式和最佳实践。
 ---

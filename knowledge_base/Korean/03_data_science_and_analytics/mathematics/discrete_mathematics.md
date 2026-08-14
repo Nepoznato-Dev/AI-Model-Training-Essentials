@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 이산수학
 이산 수학은 매끄럽고 깨지지 않는 수량을 다루는 연속 수학(미적분학, 실제 분석)과 달리 근본적으로 셀 수 있거나 분리된 수학적 구조에 대한 연구입니다. 이산 수학은 컴퓨터 과학, 암호화, 알고리즘 설계 및 데이터 구조를 뒷받침합니다. 연속 수학이 물리적 세계를 설명한다면 이산 수학은 계산 세계를 설명합니다.
 ---

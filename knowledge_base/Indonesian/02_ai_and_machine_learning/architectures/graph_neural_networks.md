@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Grafik Jaringan Syaraf Tiruan
 Graph Neural Networks (GNNs) adalah jaringan neural yang dirancang untuk beroperasi pada data terstruktur grafik — jaringan node yang dihubungkan oleh edge. Sementara jaringan saraf tradisional bekerja pada grid (gambar) atau urutan (teks), GNN menangani struktur relasional yang sewenang-wenang: jaringan sosial, grafik molekuler, grafik pengetahuan, jaringan jalan, grafik rekomendasi, dan banyak lagi. Mereka menjadi penting untuk penemuan obat, deteksi penipuan, sistem rekomendasi, dan domain apa pun yang mengutamakan hubungan antar entitas.
 ---

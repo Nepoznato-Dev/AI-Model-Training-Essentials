@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで慣用的な Lua コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

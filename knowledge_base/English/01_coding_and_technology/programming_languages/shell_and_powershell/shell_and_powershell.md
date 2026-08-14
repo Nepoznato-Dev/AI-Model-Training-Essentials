@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell
 
 Shell scripting refers to writing scripts for command-line interpreters. The two most important shells are **Bash** (Bourne Again Shell) — the default on Linux and macOS — and **PowerShell** — Microsoft's modern cross-platform shell and scripting language. Shell scripts automate system administration tasks, build pipelines, file processing, and deployment workflows.

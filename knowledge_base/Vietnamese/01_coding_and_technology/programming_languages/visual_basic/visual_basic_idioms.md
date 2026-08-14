@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — Các mẫu thành ngữ & các phương pháp hay nhất
 Hướng dẫn này bao gồm các mẫu thành ngữ để viết mã Visual Basic (.NET) rõ ràng.
 ---

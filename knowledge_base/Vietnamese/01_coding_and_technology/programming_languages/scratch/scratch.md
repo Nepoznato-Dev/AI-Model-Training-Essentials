@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cào
 Scratch là ngôn ngữ lập trình dựa trên khối, trực quan được phát triển bởi MIT Media Lab và phát hành lần đầu tiên vào năm 2007. Thay vì viết mã dựa trên văn bản, người dùng ghép các khối màu lại với nhau để tạo chương trình. Scratch được thiết kế dành riêng cho trẻ em từ 8-16 tuổi (mặc dù người học ở mọi lứa tuổi đều sử dụng nó) để dạy các khái niệm lập trình cơ bản — vòng lặp, điều kiện, biến, sự kiện và hàm — mà không gặp phải lỗi cú pháp.
 Scratch là ngôn ngữ lập trình cơ bản được sử dụng rộng rãi nhất trên thế giới, với hơn 100 triệu người dùng đã đăng ký và có sẵn hơn 70 ngôn ngữ. Nó chạy trong trình duyệt web và miễn phí.

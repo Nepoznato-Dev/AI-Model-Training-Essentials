@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Isimu na Sayansi ya Lugha
 Isimu ni uchunguzi wa kisayansi wa lugha - muundo wake, maana, matumizi, upatikanaji, na mageuzi. Lugha ni kipengele bainifu cha mawasiliano ya binadamu: huwa na tija kubwa (wazungumzaji wanaweza kuunda na kuelewa sentensi ambazo hawajawahi kukutana nazo hapo awali), hupitishwa kitamaduni (hufunzwa badala ya kuzaliwa tu), na inaendelea kubadilika. Kuelewa jinsi lugha inavyofanya kazi ni muhimu kwa mtu yeyote anayeunda teknolojia ya lugha, kufundisha, kutafsiri au kufanya kazi ili kuwasiliana kwa ufanisi zaidi.
 ---

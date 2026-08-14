@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # زنگ - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Rust ارائه می دهد. این مرجع اصلی Rust را با تمرکز بر الگوهای نحو جامع، جداول عملگر، و مکانیک داخلی سیستم مالکیت، ویژگی‌ها و همزمانی تکمیل می‌کند.
 ---

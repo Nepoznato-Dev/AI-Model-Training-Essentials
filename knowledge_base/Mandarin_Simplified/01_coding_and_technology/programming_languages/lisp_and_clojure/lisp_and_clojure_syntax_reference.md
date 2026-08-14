@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp 和 Clojure — 语法参考
 本文档为 Common Lisp 和 Clojure 提供了全面、结构化的语法参考。它通过关注 S 表达式、宏、持久数据结构和函数式编程模式来补充主要的 Lisp/Clojure 参考。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa TypeScript. Kinukumpleto nito ang pangunahing sanggunian ng TypeScript sa pamamagitan ng pagtutuon sa uri ng system, generics, mga uri ng utility, at advanced na type-level na programming.
 ---

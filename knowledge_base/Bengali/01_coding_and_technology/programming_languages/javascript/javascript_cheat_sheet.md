@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # জাভাস্ক্রিপ্ট — চিট শীট
 ## মৌলিক
 ```javascript

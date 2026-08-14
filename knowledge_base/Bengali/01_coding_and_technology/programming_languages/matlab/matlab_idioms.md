@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ম্যাটল্যাব — ইডিওম্যাটিক প্যাটার্নস এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি পরিচ্ছন্ন, ইডিওম্যাটিক MATLAB কোড লেখার জন্য বাহাদুরি প্যাটার্ন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

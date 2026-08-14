@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Chemie
 Wenn die Physik die Spielregeln ist, dann ist die Chemie das, was passiert, wenn die Teile interagieren. Die Chemie untersucht, wie sich Atome verbinden, auseinanderbrechen und neu anordnen – also wie sich alle Materialien verhalten. Es schließt die Lücke zwischen der Grundlagenphysik und der Komplexität von Biologie, Geologie und Ingenieurwesen.
 ---

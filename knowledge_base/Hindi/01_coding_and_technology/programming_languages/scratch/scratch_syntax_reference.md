@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # स्क्रैच - सिंटैक्स संदर्भ
 यह दस्तावेज़ स्क्रैच 3.0 के लिए एक व्यापक, संरचित सिंटैक्स संदर्भ प्रदान करता है। यह संपूर्ण ब्लॉक श्रेणियों, इवेंट-संचालित पैटर्न, स्प्राइट प्रबंधन, क्लोनिंग और रचनात्मक कोडिंग तकनीकों पर ध्यान केंद्रित करके मुख्य स्क्रैच संदर्भ को पूरक करता है।
 ---

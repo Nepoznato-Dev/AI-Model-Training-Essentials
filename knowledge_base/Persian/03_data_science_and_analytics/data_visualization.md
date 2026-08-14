@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تجسم داده ها
 یک نمودار خوب طراحی شده می تواند الگوهایی را که جداول اعداد پنهان می کنند را نشان دهد. یک طراحی ضعیف می تواند گمراه کند، گیج کند یا خسته کند. تجسم داده ها هنر تبدیل داده ها به داستان های بصری است که تصمیمات را تعیین می کند. این فایل شامل انتخاب نمودار، اصول طراحی، اشتباهات رایج و ابزارهایی است که همه آن را ممکن می سازد.
 ---

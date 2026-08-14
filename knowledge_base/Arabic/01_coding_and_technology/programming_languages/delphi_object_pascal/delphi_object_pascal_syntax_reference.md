@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # دلفي / كائن باسكال — مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا لـ Delphi/Object Pascal. وهو يكمل مرجع دلفي الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، وميزات OOP، والأسماء العامة، والسجلات، والتعابير اللغوية.
 ---

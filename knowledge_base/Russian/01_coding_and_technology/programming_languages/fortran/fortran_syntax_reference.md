@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Фортран — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису современного Фортрана (2008/2018). Он дополняет основной справочник по Фортрану, уделяя особое внимание исчерпывающим синтаксическим шаблонам, операциям с массивами, модулям, ООП и высокопроизводительным вычислениям.
 ---

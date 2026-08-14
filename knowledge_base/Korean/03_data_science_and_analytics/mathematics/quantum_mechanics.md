@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 양자역학
 양자 역학은 원자, 전자, 광자 및 자연의 기본 입자와 같은 가장 작은 규모의 물리학 이론입니다. 이는 고전역학의 결정론적 세계를 확률, 중첩, 얽힘으로 대체합니다. 반직관적인 성격에도 불구하고 양자역학은 모든 과학 분야에서 가장 정확하게 검증된 이론입니다. 오늘날 그 원리는 양자 컴퓨터를 통한 컴퓨팅과 직접적인 관련이 있으며, 이는 기존 기계보다 기하급수적으로 빠르게 특정 문제를 해결할 것을 약속합니다.
 ---

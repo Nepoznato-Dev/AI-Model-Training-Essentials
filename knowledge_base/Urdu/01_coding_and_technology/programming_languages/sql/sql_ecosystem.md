@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ SQL ایکو سسٹم میں ضروری ڈیٹا بیس، ٹولز اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

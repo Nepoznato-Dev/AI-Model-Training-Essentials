@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linguistica e scienze del linguaggio
 La linguistica è lo studio scientifico del linguaggio: la sua struttura, significato, uso, acquisizione ed evoluzione. Il linguaggio è una caratteristica distintiva della comunicazione umana: è infinitamente produttivo (chi parla può creare e comprendere frasi che non hanno mai incontrato prima), è trasmesso culturalmente (viene appreso piuttosto che puramente innato) ed è in continua evoluzione. Comprendere come funziona la lingua è importante per chiunque crei tecnologie linguistiche, insegni, traduca o lavori per comunicare in modo più efficace.
 ---

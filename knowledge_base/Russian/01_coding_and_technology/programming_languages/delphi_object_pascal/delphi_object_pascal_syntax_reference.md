@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi/Object Pascal — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису Delphi/Object Pascal. Он дополняет основной справочник по Delphi, уделяя особое внимание исчерпывающим синтаксическим шаблонам, функциям ООП, дженерикам, записям и языковым идиомам.
 ---

@@ -2,7 +2,7 @@ import re
 import urllib.parse
 from pathlib import Path
 
-root = Path(r"c:\Users\PC\Downloads\AI-Model-Training-Essentials-main")
+root = Path(__file__).resolve().parent.parent
 link_re = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 # Inline code spans are literal code, never links — strip before scanning so
 # snippets like `[](int x){...}` or regex examples aren't misreported.

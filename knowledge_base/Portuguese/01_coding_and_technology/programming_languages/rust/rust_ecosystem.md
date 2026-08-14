@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust – Ecossistema e Guia de Ferramentas
 Este guia cobre as ferramentas, estruturas e infraestrutura essenciais do ecossistema Rust.
 ---

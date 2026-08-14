@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optymalizacja
 Optymalizacja to matematyka polegająca na znalezieniu najlepszego rozwiązania ze zbioru możliwych rozwiązań. Pyta: biorąc pod uwagę funkcję i ograniczenia, jakie dane wejściowe minimalizują (lub maksymalizują) wynik? Optymalizacja jest motorem uczenia maszynowego — uczenie modelu oznacza minimalizację funkcji straty. Pojawia się w badaniach operacyjnych, ekonomii, projektowaniu inżynierskim i praktycznie w każdej dziedzinie ilościowej.
 ---

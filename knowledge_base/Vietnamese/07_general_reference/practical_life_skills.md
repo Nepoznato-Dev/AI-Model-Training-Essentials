@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Kỹ năng sống thực tiễn
 Trường học dạy bạn tính toán nhưng hiếm khi dạy bạn cách nộp thuế, nấu một bữa ăn cân bằng hoặc duy trì nhà cửa. Đây là những năng lực thực tế ảnh hưởng đến chất lượng cuộc sống hàng ngày của bạn - loại kiến ​​thức giúp bạn tự lập và kiên cường về mặt tài chính. Tập tin này là một tài liệu tham khảo dày đặc cho những điều cần thiết.
 ---

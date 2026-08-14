@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog — 语法参考
 本文档为 Prolog 提供了全面、结构化的语法参考。它通过关注详尽的语法模式、统一、回溯、DCG 和逻辑编程惯用法来补充主要的 Prolog 参考。
 ---

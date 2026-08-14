@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prometheus at Grafana
 Ang Prometheus ay isang open-source monitoring at alerting toolkit na idinisenyo para sa pagiging maaasahan at scalability. Ang Grafana ay ang nangungunang open-source na platform para sa pag-visualize ng data ng time-series. Magkasama, bumubuo sila ng pinakasikat na monitoring stack para sa modernong imprastraktura at mga application. Kinokolekta at iniimbak ng Prometheus ang mga sukatan; Ipinapakita ng Grafana ang mga ito sa mga dashboard.
 ---

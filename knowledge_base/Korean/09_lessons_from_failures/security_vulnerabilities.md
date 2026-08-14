@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 보안 취약점
 이 문서에는 주입 공격, 안전하지 않은 코드 관행, 보안 실수 등 소프트웨어 개발 시 일반적인 보안 취약점이 통합되어 있습니다.
 ---

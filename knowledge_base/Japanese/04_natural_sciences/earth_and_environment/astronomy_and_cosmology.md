@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 天文学と宇宙論
 天文学は、星、惑星、銀河、そして地球の大気圏外のすべてのものなどの天体に関する研究です。宇宙論は、宇宙全体、つまりその起源、構造、進化、そして最終的な運命についての研究です。これらは共に、人類がこれまでに抱いてきた最も基本的な質問のいくつかに対処します。宇宙はどのように始まったのでしょうか?どれくらいの大きさですか?私たちは一人ですか？結局それはどうなるのでしょうか？
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi/Object Pascal — идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны для написания чистого кода Delphi и Object Pascal.
 ---

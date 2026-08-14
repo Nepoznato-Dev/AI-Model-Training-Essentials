@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — Sözdizimi Referansı
 Bu belge Haskell (GHC 9.x) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, tür sistemine, monadlara, tembel değerlendirmeye ve işlevsel programlama deyimlerine odaklanarak ana Haskell referansını tamamlar.
 ---

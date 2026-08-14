@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa Swift (5.9+). Kinukumpleto nito ang pangunahing sanggunian ng Swift sa pamamagitan ng pagtutok sa mga kumpletong pattern ng syntax, mga opsyonal, programming na nakatuon sa protocol, at modernong concurrency.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # بايثون — تاريخ الإصدار وتطوره
 ## الجدول الزمني
 | النسخة | تاريخ الإصدار | الموضوع الرئيسي |

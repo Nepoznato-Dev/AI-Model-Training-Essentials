@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ada
 Ada es un lenguaje de programación compilado y tipado estáticamente diseñado para sistemas críticos para la seguridad y de alta integridad. Desarrollado originalmente en la década de 1980 bajo contrato con el Departamento de Defensa de EE. UU. (llamado así en honor a Ada Lovelace, considerada la primera programadora de computadoras), Ada enfatiza la confiabilidad, la mantenibilidad y la corrección. Fue diseñado para reemplazar los cientos de lenguajes de programación utilizados por el Departamento de Defensa con un lenguaje único y bien especificado.
 Ada se utiliza en aviación (sistemas de vuelo por cable), espacio (ESA y NASA), defensa (guía de misiles, radar), transporte ferroviario y dispositivos médicos, en cualquier lugar donde una falla del software pueda costar vidas.

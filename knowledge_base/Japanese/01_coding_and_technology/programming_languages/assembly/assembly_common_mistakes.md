@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # アセンブリ言語 — よくある間違いとアンチパターン
 このドキュメントでは、x86-64 アセンブリにおける最も一般的な間違い、罠、およびアンチパターンを修正とともにカタログ化します。
 ---

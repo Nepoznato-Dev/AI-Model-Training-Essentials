@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zmiany demograficzne
 ## Przegląd
 Demografia jest przeznaczeniem — a przynajmniej mocno się z nim rymuje. Ludność świata szybko się starzeje, migruje według nowych wzorców, gromadzi się w miastach w niespotykanym dotąd tempie i dzieli się według linii pokoleniowych, które kształtują wszystko, od zachowań wyborczych po nawyki konsumentów. Zmiany te będą trwały przez dziesięciolecia, ale ich skutki są już widoczne. Oto cztery główne trendy i ich znaczenie.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Wizualizacja danych
 Dobrze zaprojektowany wykres może ujawnić wzorce, które ukrywają tabele liczbowe. Źle zaprojektowany może wprowadzić w błąd, zmylić lub znudzić. Wizualizacja danych to sztuka przekształcania danych w wizualne historie, które wpływają na decyzje. W tym pliku omówiono wybór wykresów, zasady projektowania, typowe błędy i narzędzia, które to wszystko umożliwiają.
 ---

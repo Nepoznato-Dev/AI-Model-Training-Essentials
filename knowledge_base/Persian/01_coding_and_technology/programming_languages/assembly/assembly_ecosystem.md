@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # مونتاژ - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، اسمبلرها و زیرساخت های ضروری در اکوسیستم اسمبلی را پوشش می دهد.
 ---

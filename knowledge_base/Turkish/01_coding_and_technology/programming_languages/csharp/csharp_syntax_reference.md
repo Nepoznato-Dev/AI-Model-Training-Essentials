@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — Sözdizimi Referansı
 Bu belge, Modern C# (.NET 7/8'de C# 10/11/12) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, LINQ'ya, eşzamansız/beklemede, kalıp eşleştirmeye ve modern özelliklere odaklanarak ana C# referansını tamamlar.
 ---

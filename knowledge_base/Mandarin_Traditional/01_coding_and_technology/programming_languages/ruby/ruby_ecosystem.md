@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby — 生態系與工具指南
 本指南涵蓋了 Ruby 生態系統中的基本工具、框架和基礎設施。
 ---

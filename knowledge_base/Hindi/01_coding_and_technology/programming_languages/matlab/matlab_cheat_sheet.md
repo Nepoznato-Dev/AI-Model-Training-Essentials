@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - चीट शीट
 ## मूल बातें
 ```matlab

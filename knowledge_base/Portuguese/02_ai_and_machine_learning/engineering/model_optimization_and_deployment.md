@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Otimização e implantação de modelo
 Treinar um grande modelo de IA é uma conquista significativa, mas implantá-lo com eficiência é onde a maior parte do esforço de engenharia é necessária. Um modelo que leva 10 segundos para responder ou requer oito GPUs A100 é impraticável para a maioria das aplicações do mundo real. A otimização de modelos é o processo de tornar modelos menores, mais rápidos e mais econômicos, mantendo ao mesmo tempo uma qualidade aceitável. Este arquivo cobre quantização, poda, destilação e as ferramentas práticas para implantação de modelos em produção.
 ---

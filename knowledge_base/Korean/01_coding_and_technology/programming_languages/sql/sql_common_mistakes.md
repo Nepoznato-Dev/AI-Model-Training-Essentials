@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — 일반적인 실수 및 안티 패턴
 이 문서에는 수정 사항을 포함하여 SQL에서 가장 일반적인 실수, 트랩 및 안티 패턴이 나열되어 있습니다.
 ---

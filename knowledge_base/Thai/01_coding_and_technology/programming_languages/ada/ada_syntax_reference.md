@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada - การอ้างอิงไวยากรณ์
 เอกสารนี้มีการอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Ada (2012/2022) ช่วยเสริมการอ้างอิง Ada หลักโดยมุ่งเน้นไปที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน การมอบหมายงาน อ็อบเจ็กต์ที่ได้รับการป้องกัน ข้อมูลทั่วไป และการเขียนโปรแกรมที่มีความสำคัญต่อความปลอดภัย
 ---

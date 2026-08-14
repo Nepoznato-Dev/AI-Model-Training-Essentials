@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp ve Clojure — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge, Lisp ve Clojure'daki en yaygın hataları, tuzakları ve anti-örüntüleri düzeltmelerle birlikte kataloglamaktadır.
 ---

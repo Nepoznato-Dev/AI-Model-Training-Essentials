@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Docker と Kubernetes のチートシート
 Docker を使用してアプリケーションをコンテナ化し、Kubernetes を使用してアプリケーションをオーケストレーションするための実践的なリファレンス。コマンド ラインの基本的な知識があることを前提としています。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, perpustakaan, dan infrastruktur penting dalam ekosistem Fortran.
 ---

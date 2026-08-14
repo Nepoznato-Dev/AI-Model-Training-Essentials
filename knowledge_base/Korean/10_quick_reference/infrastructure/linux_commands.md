@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linux Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linux 명령 빠른 참조
 시스템 탐색 및 관리를 위한 필수 Linux/Unix 명령입니다.
 ---

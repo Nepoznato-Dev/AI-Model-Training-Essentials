@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # اسپیس ایکسپلوریشن روڈ میپ
 ## جائزہ
 ہم خلائی تحقیق کے ایک نئے سنہری دور سے گزر رہے ہیں۔ ناسا کا آرٹیمس پروگرام انسانوں کو چاند پر واپس بھیج رہا ہے۔ SpaceX مریخ کے لیے ڈیزائن کیا گیا مکمل طور پر دوبارہ قابل استعمال راکٹ بنا رہا ہے۔ چین کے اپنے قمری اور مریخ کے اپنے مہتواکانکشی منصوبے ہیں۔ اور پرائیویٹ کمپنیوں کا بڑھتا ہوا برج کامرس کے لیے جگہ کھول رہا ہے - سیٹلائٹ انٹرنیٹ سے لے کر خلائی سیاحت تک۔ یہ ہے روڈ میپ، چاند سے مریخ تک اور اس سے آگے۔

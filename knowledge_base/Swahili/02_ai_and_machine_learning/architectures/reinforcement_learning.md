@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kuimarisha Mafunzo
 Kujifunza kwa kuimarisha (RL) ni jinsi mashine hujifunza kufanya mfuatano wa maamuzi kwa majaribio na makosa. Tofauti na mafunzo yanayosimamiwa, ambapo jibu sahihi hutolewa kwa kila mfano, RL humpa wakala ishara ya zawadi pekee - na wakala lazima atambue ni hatua gani zitakazoleta matokeo bora zaidi kwa wakati. Ni mbinu nyuma ya AlphaGo, udhibiti wa roboti, AI ya kucheza mchezo, na - kwa umakinifu - RLHF, mbinu inayotumiwa kuoanisha miundo ya kisasa ya lugha kubwa na mapendeleo ya wanadamu.
 ---

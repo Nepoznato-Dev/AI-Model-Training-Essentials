@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoryang Graph
 Ang **graph** ay isang mathematical structure na binubuo ng mga vertices (node) na konektado ng mga gilid (links). Mga relasyon sa modelo ng mga graph: mga social network, mga mapa ng kalsada, mga neural network, mga dependency, mga channel ng komunikasyon. Graph theory — ang pag-aaral ng mga istrukturang ito — ay nagbibigay ng mga algorithm at theorems na sentro ng computer science, operations research, at data science.
 ---

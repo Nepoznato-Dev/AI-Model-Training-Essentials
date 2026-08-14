@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript - Mfumo wa ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, mifumo, na miundombinu katika mfumo ikolojia wa TypeScript. TypeScript inashiriki sehemu kubwa ya mfumo wake wa ikolojia na JavaScript lakini ina zana zake maalum.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Relativité
 Les théories de la relativité d'Einstein ont révolutionné notre compréhension de l'espace, du temps et de la gravité. La **Relativité restreinte** (1905) a montré que l'espace et le temps ne sont pas séparés mais tissés en un seul tissu appelé espace-temps, et que la vitesse de la lumière est la même pour tous les observateurs. La **Relativité générale** (1915) a réinventé la gravité non pas comme une force mais comme la courbure de l'espace-temps causée par la masse et l'énergie. Ces théories sous-tendent la navigation GPS, les accélérateurs de particules et notre compréhension des trous noirs et de l'évolution de l'univers.
 ---

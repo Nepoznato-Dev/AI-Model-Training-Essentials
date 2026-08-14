@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # การเปรียบเทียบข้ามภาษา - เห็นพ้องต้องกันและความเท่าเทียม
 ## ภาพรวมโมเดลการทำงานพร้อมกัน
 | ภาษา | รุ่น | กลไกสำคัญ | หน่วยความจำที่ใช้ร่วมกัน? |

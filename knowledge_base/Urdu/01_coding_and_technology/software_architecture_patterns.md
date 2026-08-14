@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سافٹ ویئر آرکیٹیکچر پیٹرن
 فن تعمیر اس بارے میں ساختی فیصلوں کا مجموعہ ہے کہ ایک نظام کو کس طرح منظم کیا جاتا ہے — اس کے کون سے اجزاء ہیں، وہ کیسے بات چیت کرتے ہیں، اور ذمہ داریاں کہاں ہوتی ہیں۔ اچھا فن تعمیر نظام کو سمجھنے، ترمیم کرنے اور پیمانے پر آسان بناتا ہے۔ خراب فن تعمیر ہر تبدیلی کو ایک جدوجہد بنا دیتا ہے۔ اس فائل میں بڑے نمونوں کا احاطہ کیا گیا ہے، ہر ایک کو کب استعمال کرنا ہے، اور اس میں شامل تجارتی معاملات۔
 ---

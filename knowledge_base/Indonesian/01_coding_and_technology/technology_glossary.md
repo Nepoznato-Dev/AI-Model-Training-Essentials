@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Glosarium Teknologi
 Glosarium referensi yang mencakup model AI, perangkat keras, tolok ukur, dan konsep inti
 dalam lanskap AI dan komputasi modern.

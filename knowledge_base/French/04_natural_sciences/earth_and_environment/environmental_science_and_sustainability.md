@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sciences de l'environnement et durabilité
 Les sciences de l'environnement appliquent les méthodes de la physique, de la chimie, de la biologie, de la géologie et de l'économie à la question : « Qu'arrive-t-il à notre planète et que peut-on y faire ? Il s’agit d’un domaine interdisciplinaire – une convergence de multiples disciplines – qui contribue à la fois à sa profondeur analytique et à sa pertinence politique.
 La tension fondamentale dans les sciences de l’environnement est la suivante : la civilisation humaine dépend de l’extraction de ressources de l’environnement, mais l’extraction de ces ressources modifie l’environnement d’une manière qui peut mettre à mal les systèmes dont nous dépendons. Comprendre cette boucle de rétroaction représente en un mot tout le domaine.

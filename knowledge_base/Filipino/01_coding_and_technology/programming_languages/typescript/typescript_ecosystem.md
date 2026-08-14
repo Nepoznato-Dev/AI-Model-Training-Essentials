@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang tool, framework, at imprastraktura sa TypeScript ecosystem. Ibinabahagi ng TypeScript ang karamihan sa ecosystem nito sa JavaScript ngunit may sarili nitong mga espesyal na tool.
 ---

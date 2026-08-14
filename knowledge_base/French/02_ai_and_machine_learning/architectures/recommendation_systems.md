@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Systèmes de recommandation
 Les systèmes de recommandation prédisent ce qu’un utilisateur voudra voir, acheter ou avec lequel interagir ensuite. Ils alimentent les flux de contenu sur les réseaux sociaux, les suggestions de produits sur les sites de commerce électronique, les sélections de films sur les plateformes de streaming et les résultats de recherche. Bien qu'ils soient invisibles pour la plupart des utilisateurs, ils comptent parmi les systèmes d'IA les plus impactants commercialement au monde : Netflix estime que son moteur de recommandation permet d'économiser plus d'un milliard de dollars par an en réduisant le taux de désabonnement des abonnés.
 ---

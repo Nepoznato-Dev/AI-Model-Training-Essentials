@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جوليا – الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية وأفضل الممارسات لكتابة كود جوليا الاصطلاحي النظيف.
 ---

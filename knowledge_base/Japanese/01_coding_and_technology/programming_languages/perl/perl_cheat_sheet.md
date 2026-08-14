@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — チートシート
 ## 基本
 ```perl

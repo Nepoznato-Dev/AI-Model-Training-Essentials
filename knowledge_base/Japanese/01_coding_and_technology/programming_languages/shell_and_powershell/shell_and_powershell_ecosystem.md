@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell と PowerShell — エコシステムとツールのガイド
 このガイドでは、シェル スクリプト (Bash/Zsh) と PowerShell に必要なツール、フレームワーク、インフラストラクチャについて説明します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usindikaji wa Hotuba na Sauti
 Uchakataji wa matamshi na sauti hujumuisha teknolojia zinazoruhusu mashine kusikia, kuelewa, kuzalisha na kudhibiti sauti. Hii ni pamoja na utambuzi wa usemi (kugeuza maneno yanayozungumzwa kuwa maandishi), usanisi wa usemi (kugeuza maandishi kuwa maneno ya kusemwa), kitambulisho cha mzungumzaji, kuunda muziki, na uelewa wa sauti wa mazingira. Uga umebadilishwa na kujifunza kwa kina - mifumo ya kisasa inakaribia usahihi wa kiwango cha binadamu kwa utambuzi wa usemi na kutoa sauti za asili za kutisha.
 ---

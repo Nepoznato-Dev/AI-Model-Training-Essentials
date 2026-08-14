@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # क्रॉस-लैंग्वेज तुलना - डेटा प्रकार और संरचनाएं
 ## आदिम प्रकार
 | प्रकार | पायथन | जावास्क्रिप्ट | जंग | जाओ | जावा | सी | सी++ | सी# |

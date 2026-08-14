@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go — Справочник по синтаксису
 Этот документ предоставляет исчерпывающий структурированный справочник по синтаксису Go. Он дополняет основной справочник Go, уделяя особое внимание исчерпывающим синтаксическим шаблонам, таблицам операторов и внутренней механике горутин, каналов и интерфейсов.
 ---

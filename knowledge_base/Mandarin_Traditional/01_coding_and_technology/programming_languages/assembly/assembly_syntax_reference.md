@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 組合語言 — 文法參考
 本文檔為 x86-64 彙編（NASM 語法）提供全面、結構化的語法參考。它透過關注詳盡的指令類別、尋址模式、堆疊幀約定和系統編程模式來補充主要的彙編參考。
 ---

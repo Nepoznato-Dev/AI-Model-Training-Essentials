@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی برای نوشتن کدهای پاک و ایمن Ada را پوشش می دهد.
 ---

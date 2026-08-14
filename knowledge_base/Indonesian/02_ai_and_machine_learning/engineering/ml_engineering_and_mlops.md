@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rekayasa ML dan MLOps
 Membangun model pembelajaran mesin hanyalah setengah dari perjuangan. Memasukkannya ke dalam produksi, menjaganya tetap berjalan dengan andal, memantau penyimpangan, dan mengulanginya — di situlah rekayasa ML dan MLOps berperan. File ini mencakup seluruh siklus hidup mulai dari eksperimen hingga sistem produksi.
 ---

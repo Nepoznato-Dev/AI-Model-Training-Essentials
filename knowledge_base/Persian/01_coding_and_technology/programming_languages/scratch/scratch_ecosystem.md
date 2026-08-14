@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، برنامه‌های افزودنی و منابع ضروری در اکوسیستم Scratch را پوشش می‌دهد.
 ---

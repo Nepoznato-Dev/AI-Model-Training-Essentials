@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # İşin Geleceği
 ## Genel Bakış
 Çalışma şeklimiz Sanayi Devrimi'nden bu yana hiç olmadığı kadar hızlı değişiyor. Uzaktan çalışma, nadir bir ayrıcalıktan bir gecede varsayılana dönüştü. Yapay zeka yenilikten işbirlikçiliğe doğru ilerliyor. Esnek ekonomi, "istihdamın" ne anlama geldiğini bile yeniden şekillendiriyor. Otomasyon her iş için gelmiyor ancak çoğu işteki birçok görev için geliyor. İşte işyerini yeniden şekillendiren güçlere ve bundan sonra ne olacağına bir bakış.

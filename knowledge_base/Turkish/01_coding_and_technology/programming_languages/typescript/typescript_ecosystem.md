@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz TypeScript ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar. TypeScript, ekosisteminin çoğunu JavaScript ile paylaşır ancak kendi özel araçlarına sahiptir.
 ---

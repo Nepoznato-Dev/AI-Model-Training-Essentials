@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mathematik und Logik
 Mathematik ist nicht nur ein Schulfach — sie bildet die Grundlage nahezu jedes technischen Bereichs. Die Physik nutzt sie, um das Universum zu beschreiben. Die Informatik nutzt sie, um Algorithmen zu entwerfen. Maschinelles Lernen nutzt sie, um Gewichte zu optimieren. Die Finanzwelt nutzt sie, um Risiken einzupreisen. Es ist nicht erforderlich, jeden Zweig zu beherrschen, aber das Verständnis der Gesamtlandschaft — und zu wissen, wo jeder Zweig relevant ist — erleichtert das Verständnis anderer Themen.
 ---

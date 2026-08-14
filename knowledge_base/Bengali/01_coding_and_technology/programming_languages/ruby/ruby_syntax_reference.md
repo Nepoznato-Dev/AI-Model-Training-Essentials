@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # রুবি — সিনট্যাক্স রেফারেন্স
 এই নথিটি রুবি (3.x) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, ব্লক এবং ক্লোজার, মেটাপ্রোগ্রামিং এবং রুবি ইডিয়মগুলিতে ফোকাস করে মূল রুবি রেফারেন্সের পরিপূরক।
 ---

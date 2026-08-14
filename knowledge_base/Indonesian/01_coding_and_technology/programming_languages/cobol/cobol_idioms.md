@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik untuk menulis kode COBOL yang bersih dan modern.
 ---

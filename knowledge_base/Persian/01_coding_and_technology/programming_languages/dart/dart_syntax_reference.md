@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Dart (3.x) ارائه می دهد. این مرجع اصلی دارت را با تمرکز بر الگوهای نحوی جامع، ایمنی پوچ، برنامه‌نویسی همگام، و الگوهای طراحی فلوتر-گرا تکمیل می‌کند.
 ---

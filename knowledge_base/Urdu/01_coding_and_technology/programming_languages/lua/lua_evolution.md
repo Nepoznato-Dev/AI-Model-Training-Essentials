@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # لوا - ورژن کی تاریخ اور ارتقاء
 ## ٹائم لائن
 | ورژن | سال | کلیدی تھیم |

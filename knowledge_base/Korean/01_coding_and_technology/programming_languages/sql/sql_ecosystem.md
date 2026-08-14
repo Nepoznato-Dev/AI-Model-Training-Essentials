@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — 생태계 및 도구 가이드
 이 가이드에서는 SQL 생태계의 필수 데이터베이스, 도구 및 인프라를 다룹니다.
 ---

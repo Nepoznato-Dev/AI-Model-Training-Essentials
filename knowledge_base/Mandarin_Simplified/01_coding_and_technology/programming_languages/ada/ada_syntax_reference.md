@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada — 语法参考
 本文档为 Ada (2012/2022) 提供全面、结构化的语法参考。它通过关注详尽的语法模式、任务、受保护对象、泛型和安全关键编程来补充主要的 Ada 参考。
 ---

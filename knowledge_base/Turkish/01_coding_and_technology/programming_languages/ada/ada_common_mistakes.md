@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge Ada'daki en yaygın hataları, tuzakları ve anti-kalıpları düzeltmelerle birlikte kataloglamaktadır.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Religie świata i mitologia porównawcza
 Religie świata to główne systemy wierzeń, praktyk i społeczności, które od tysięcy lat kształtują cywilizację ludzką. Mitologia porównawcza bada historie opowiadane przez różne kultury na temat stworzenia, bohaterów, bogów i sensu istnienia – a także uderzające wzorce, które powtarzają się w tradycjach oddzielonych tysiącami mil i tysiącleciami. Zrozumienie obu jest niezbędne do zrozumienia, dlaczego ludzie wierzą w to, w co wierzą, czym różnią się kultury i co łączy ludzkie doświadczenia.
 ---

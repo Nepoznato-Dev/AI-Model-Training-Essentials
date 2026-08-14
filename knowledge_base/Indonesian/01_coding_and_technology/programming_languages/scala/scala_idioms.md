@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik dan praktik terbaik untuk menulis kode Scala 3 yang bersih dan fungsional.
 ---

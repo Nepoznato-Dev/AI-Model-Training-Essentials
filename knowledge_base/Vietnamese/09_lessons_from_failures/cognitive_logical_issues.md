@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Những thành kiến ​​về nhận thức và những sai lầm logic
 Tài liệu này tổng hợp những thành kiến ​​về nhận thức, những sai lầm logic và những lỗi lý luận ảnh hưởng đến cả việc ra quyết định của con người và kết quả đầu ra của hệ thống AI.
 ---

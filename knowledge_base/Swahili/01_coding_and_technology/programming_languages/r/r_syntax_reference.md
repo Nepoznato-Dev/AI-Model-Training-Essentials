@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya R (4.x). Inakamilisha rejeleo kuu la R kwa kuangazia mifumo kamili ya sintaksia, mfumo safi wa mazingira, upotoshaji wa data, uundaji wa takwimu na taswira.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mantiki na Fikra Muhimu
 Mantiki ni utafiti wa hoja halali - jinsi ya kujenga hoja zenye mashiko na kutambua zenye kasoro. Kufikiri muhimu ni tabia ya nidhamu ya kuhoji mawazo, kutathmini ushahidi, na kufikiri kwa makini. Ujuzi huu ni muhimu sio tu katika hisabati na sayansi ya kompyuta, lakini katika kufanya maamuzi ya kila siku, utafiti wa kisayansi, na kuzunguka ulimwengu wenye habari nyingi.
 ---

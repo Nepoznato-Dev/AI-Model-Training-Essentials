@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript
 JavaScript 是一种动态的解释性编程语言，由 Brendan Eich 在 1995 年仅用 10 天就创建了。它最初旨在为网页添加交互性，现已发展成为世界上使用最广泛的编程语言。 JavaScript 在每个 Web 浏览器中运行，通过 Node.js 在服务器上运行，在桌面应用程序 (Electron)、移动应用程序 (React Native) 甚至嵌入式系统中运行。
 该语言的独特之处在于它本质上是客户端 Web 开发的唯一选择——每个浏览器都原生支持它。这种垄断，再加上全栈 JavaScript（Node.js、Deno、Bun）的兴起，使其变得不可或缺。

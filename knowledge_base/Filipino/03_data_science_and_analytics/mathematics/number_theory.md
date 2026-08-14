@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teorya ng Numero
 Ang teorya ng numero ay ang pag-aaral ng mga integer — mga buong numero at ang kanilang mga katangian. Tinawag ito ni Gauss na "reyna ng matematika." Sa kabila ng pag-aaral ng mga pinakasimpleng bagay (1, 2, 3, ...), ang teorya ng numero ay gumagawa ng ilan sa pinakamalalim at pinakamahirap na problema sa lahat ng matematika. Sa ngayon, pinagbabatayan nito ang modernong cryptography, hashing algorithm, error-correcting codes, at random number generation.
 ---

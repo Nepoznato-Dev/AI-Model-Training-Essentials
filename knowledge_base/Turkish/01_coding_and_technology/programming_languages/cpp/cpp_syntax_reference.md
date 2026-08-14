@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — Sözdizimi Referansı
 Bu belge, Modern C++ (C++17/20/23) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, operatör tablolarına, şablon mekaniğine ve modern özelliklere odaklanarak ana C++ referansını tamamlar.
 ---

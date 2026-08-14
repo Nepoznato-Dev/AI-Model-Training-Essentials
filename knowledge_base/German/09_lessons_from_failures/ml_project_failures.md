@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fehler bei maschinellen Lernprojekten
 Projekte zum maschinellen Lernen scheitern mit alarmierender Häufigkeit – Branchenschätzungen gehen davon aus, dass 60–85 % der ML-Projekte nie in Produktion gehen. Die Fehler liegen normalerweise nicht in den Algorithmen; Sie sind im Prozess, den Daten, den Erwartungen und dem organisatorischen Kontext. Für jeden, der ML-Systeme entwickelt, ist es wichtig zu verstehen, warum ML-Projekte scheitern, da die Fehlerarten vorhersehbar und weitgehend vermeidbar sind.
 ---

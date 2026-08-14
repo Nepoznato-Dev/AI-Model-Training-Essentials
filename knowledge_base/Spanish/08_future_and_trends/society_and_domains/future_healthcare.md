@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Atención médica del futuro
 ## Descripción general
 La medicina está pasando de un modelo reactivo (tratar los síntomas después de que aparecen) a uno que es predictivo, personalizado y cada vez más preventivo. La genómica ha pasado de ser un proyecto de 3.000 millones de dólares a una prueba de rutina de menos de 1.000 dólares. La IA está aprendiendo a detectar enfermedades en los escáneres antes que los médicos. Y la medicina regenerativa está convirtiendo la ciencia ficción en ensayos clínicos. Esto es lo que está sucediendo en las tres fronteras más importantes: medicina personalizada, investigación sobre longevidad y medicina regenerativa.

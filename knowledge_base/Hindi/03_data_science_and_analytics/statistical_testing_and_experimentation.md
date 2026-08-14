@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #सांख्यिकीय परीक्षण और प्रयोग
 सांख्यिकी विज्ञान का व्याकरण है। यह आपको यादृच्छिक शोर से वास्तविक पैटर्न को अलग करने, यह मापने के लिए कि क्या बदलाव से वास्तव में चीजों में सुधार हुआ है, और अनिश्चितता के तहत निर्णय लेने के लिए उपकरण देता है। यह फ़ाइल परिकल्पना परीक्षण, प्रयोगात्मक डिज़ाइन की मूल अवधारणाओं और लोगों को परेशान करने वाली सामान्य कमियों को कवर करती है।
 ---

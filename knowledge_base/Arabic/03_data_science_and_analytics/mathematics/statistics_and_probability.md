@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الإحصائيات والاحتمالات
 الاحتمالات والإحصائيات هي الأسس الرياضية لعلم البيانات والتعلم الآلي والبحث العلمي. يخبرك الاحتمال بمدى احتمالية حدوث الأحداث؛ تخبرك الإحصائيات بكيفية استخلاص النتائج من البيانات. ويعملون معًا على تحويل عدم اليقين إلى معرفة قابلة للقياس ويمكن التحكم فيها.
 ---

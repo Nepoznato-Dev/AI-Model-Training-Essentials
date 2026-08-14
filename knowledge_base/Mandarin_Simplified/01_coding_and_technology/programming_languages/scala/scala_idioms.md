@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — 惯用模式和最佳实践
 本指南涵盖了编写简洁、实用的 Scala 3 代码的惯用模式和最佳实践。
 ---

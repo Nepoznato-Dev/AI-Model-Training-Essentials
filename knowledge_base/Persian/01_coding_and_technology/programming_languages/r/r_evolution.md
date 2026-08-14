@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R - تاریخچه نسخه و تکامل
 ## جدول زمانی
 | نسخه | سال | تم کلید |

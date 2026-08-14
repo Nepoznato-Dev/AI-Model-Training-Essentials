@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tathmini ya Kujifunza kwa Mashine na mtiririko wa kazi
 Mwongozo wa vitendo kwa mzunguko wa maisha wa ML - kutoka kwa kuunda shida hadi ufuatiliaji wa uzalishaji - kwa kuzingatia vipimo, uthibitishaji na utatuzi.
 ---

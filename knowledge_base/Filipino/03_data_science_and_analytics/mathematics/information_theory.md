@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teorya ng Impormasyon
 Ang teorya ng impormasyon, na itinatag ni Claude Shannon noong 1948, ay binibilang ang impormasyon mismo. Magkano ang sinasabi sa iyo ng isang mensahe? Magkano ang maaari mong i-compress ng data? Gaano ka kabilis makipag-usap sa isang maingay na channel? Ang mga tanong na ito ay may tumpak na mga sagot sa matematika. Higit pa sa komunikasyon, ang teorya ng impormasyon ay naging pundasyon sa pag-aaral ng makina — ang cross-entropy ay ang default na pagkawala ng function para sa pag-uuri, ang KL divergence ay sumusukat sa pagkakatulad ng pamamahagi, at ang mutual na impormasyon ay nagtutulak sa pagpili ng tampok.
 ---

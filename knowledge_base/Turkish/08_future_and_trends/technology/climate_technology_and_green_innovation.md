@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # İklim Teknolojisi ve Yeşil İnovasyon
 İklim teknolojisi, sera gazı emisyonlarını azaltmak, iklim değişikliğine uyum sağlamak ve küresel ekonomiyi sürdürülebilir bir temele oturtmak için tasarlanmış araçları, sistemleri ve yenilikleri kapsar. Bu muhtemelen 21. yüzyılın en önemli teknoloji alanıdır; yönetilebilir 1,5°C'lik ısınma ile yıkıcı 3°C+ arasındaki fark, büyük ölçüde bu teknolojilerin uygun ölçekte ne kadar hızlı uygulanabileceğine bağlıdır. Sorun sadece bilimsel değil aynı zamanda ekonomik, politik ve sosyaldir.
 ---

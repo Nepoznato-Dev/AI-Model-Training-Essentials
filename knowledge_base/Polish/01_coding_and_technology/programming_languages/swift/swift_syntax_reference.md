@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — odwołanie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni języka Swift (5.9+). Uzupełnia główne odniesienia do języka Swift, koncentrując się na wyczerpujących wzorcach składni, opcjach, programowaniu zorientowanym na protokół i nowoczesnej współbieżności.
 ---

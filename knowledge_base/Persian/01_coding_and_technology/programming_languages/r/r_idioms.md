@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی و بهترین روش‌ها برای نوشتن کد R تمیز و اصطلاحی را پوشش می‌دهد.
 ---

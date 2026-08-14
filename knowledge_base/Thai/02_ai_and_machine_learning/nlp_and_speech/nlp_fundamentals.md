@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ความรู้พื้นฐาน NLP
 การประมวลผลภาษาธรรมชาติ (NLP) เป็นสาขาหนึ่งของเครื่องจักรการสอนเพื่อทำความเข้าใจ สร้างสรรค์ และทำงานกับภาษามนุษย์ โดยขับเคลื่อนเครื่องมือค้นหา แชทบอท ระบบการแปล การวิเคราะห์ความรู้สึก และโมเดลภาษาขนาดใหญ่ (LLM) ที่เปลี่ยนแปลง AI มาตั้งแต่ปี 2020 ไฟล์นี้ครอบคลุมวิวัฒนาการจากเทคนิคคลาสสิกไปจนถึงสถาปัตยกรรมที่ใช้ Transformer สมัยใหม่
 ---

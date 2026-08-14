@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # レコメンデーションシステム
 レコメンデーション システムは、ユーザーが次に見たいもの、購入したいもの、または操作したいものを予測します。これらは、ソーシャル メディア上のコンテンツ フィード、電子商取引サイト上の製品提案、ストリーミング プラットフォーム上の映画の選択、および検索結果を強化します。ほとんどのユーザーには見えないにもかかわらず、これらは世界で最も商業的に影響力のある AI システムの 1 つです。Netflix は、そのレコメンデーション エンジンが加入者の解約を減らし、年間 10 億ドル以上を節約すると推定しています。
 ---

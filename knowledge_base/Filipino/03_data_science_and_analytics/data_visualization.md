@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Visualization
 Ang isang mahusay na disenyo na tsart ay maaaring magbunyag ng mga pattern na itinatago ng mga talahanayan ng mga numero. Ang isang hindi maganda ang disenyo ay maaaring iligaw, lituhin, o mainip. Ang data visualization ay ang craft ng paggawa ng data sa mga visual na kwento na nagbibigay-alam sa mga desisyon. Sinasaklaw ng file na ito ang pagpili ng tsart, mga prinsipyo ng disenyo, karaniwang pagkakamali, at ang mga tool na ginagawang posible ang lahat ng ito.
 ---

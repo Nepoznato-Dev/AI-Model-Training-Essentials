@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Apprentissage par renforcement
 L'apprentissage par renforcement (RL) est la manière dont les machines apprennent à prendre des séquences de décisions par essais et erreurs. Contrairement à l’apprentissage supervisé, où la bonne réponse est fournie pour chaque exemple, RL ne donne à un agent qu’un signal de récompense – et l’agent doit déterminer quelles actions conduisent aux meilleurs résultats au fil du temps. C'est l'approche derrière AlphaGo, le contrôle robotique, l'IA de jeu et, surtout, RLHF, la technique utilisée pour aligner les grands modèles de langage modernes sur les préférences humaines.
 ---

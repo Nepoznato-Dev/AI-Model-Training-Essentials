@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C# – Ökosystem- und Tooling-Leitfaden
 Dieser Leitfaden behandelt die wesentlichen Tools, Frameworks und Infrastruktur im C#/.NET-Ökosystem.
 ---

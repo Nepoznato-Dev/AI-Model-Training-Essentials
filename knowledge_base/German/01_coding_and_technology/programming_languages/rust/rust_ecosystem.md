@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust – Leitfaden für Ökosysteme und Werkzeuge
 Dieser Leitfaden behandelt die wesentlichen Tools, Frameworks und Infrastruktur im Rust-Ökosystem.
 ---

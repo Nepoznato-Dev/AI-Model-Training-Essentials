@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran
 Fortran (Tafsiri ya Mfumo) ndiyo lugha ya zamani zaidi ya kiwango cha juu ya upangaji ambayo bado inatumika sana, iliyoanzishwa kwa mara ya kwanza na IBM mnamo 1957 kwa ukokotoaji wa kisayansi na uhandisi. Licha ya umri wake, Fortran ya kisasa (Fortran 2008/2018/2023) ni lugha yenye uwezo na utendakazi wa hali ya juu inayotumiwa sana katika utabiri wa hali ya hewa wa nambari, mienendo ya maji ya komputa, uigaji wa fizikia, uundaji wa miundo ya kifedha, na utendakazi wa hali ya juu wa kompyuta (HPC). Kompyuta nyingi zenye kasi zaidi ulimwenguni huendesha msimbo wa Fortran.
 Lugha imebadilika sana tangu siku zake za mwanzo. Fortran ya kisasa ina moduli, aina zinazotokana, taratibu za jumla, coarrays (programu sambamba), na ushirikiano na C. Inabakia kuwa lugha ya chaguo kwa programu nyingi za kisayansi za kompyuta ambapo utendaji ni muhimu.

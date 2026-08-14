@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — Version History & Evolution
 
 ## Timeline

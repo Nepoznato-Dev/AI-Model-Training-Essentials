@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Przetwarzanie mowy i dźwięku
 Przetwarzanie mowy i dźwięku obejmuje technologie, które pozwalają maszynom słyszeć, rozumieć, generować i manipulować dźwiękiem. Obejmuje to rozpoznawanie mowy (przekształcanie wypowiadanych słów w tekst), syntezę mowy (przekształcanie tekstu w wypowiadane słowa), identyfikację mówiącego, generowanie muzyki i rozumienie dźwięków otoczenia. Dziedzina ta uległa przemianie dzięki głębokiemu uczeniu się — nowoczesne systemy zbliżają się do dokładności rozpoznawania mowy na poziomie człowieka i wytwarzają niesamowicie naturalne, syntetyczne głosy.
 ---

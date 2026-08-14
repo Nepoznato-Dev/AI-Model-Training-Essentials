@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Các mẫu thành ngữ & các phương pháp hay nhất
 Hướng dẫn này bao gồm các mẫu thành ngữ cho tập lệnh Bash/Zsh và PowerShell.
 ---

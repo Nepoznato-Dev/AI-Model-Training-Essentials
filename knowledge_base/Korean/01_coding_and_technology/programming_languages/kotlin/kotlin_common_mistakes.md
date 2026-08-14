@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin — 일반적인 실수 및 안티 패턴
 이 문서에는 Kotlin에서 가장 흔히 발생하는 실수, 함정, 안티패턴이 나열되어 있습니다. 각 항목은 잘못된 접근 방식을 보여주고, 실패 이유를 설명하며, 올바른 솔루션을 제공합니다.
 ---

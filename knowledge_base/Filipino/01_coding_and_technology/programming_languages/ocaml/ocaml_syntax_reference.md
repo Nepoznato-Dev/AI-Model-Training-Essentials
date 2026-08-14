@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa OCaml (4.x/5.x). Kinukumpleto nito ang pangunahing sanggunian ng OCaml sa pamamagitan ng pagtutuon sa mga kumpletong pattern ng syntax, mga uri ng data ng algebraic, pagtutugma ng pattern, mga module, at mga functional programming idiom.
 ---

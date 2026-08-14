@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Patrones de arquitectura de software
 La arquitectura es el conjunto de decisiones estructurales sobre cómo se organiza un sistema: qué componentes tiene, cómo se comunican y dónde recaen las responsabilidades. Una buena arquitectura hace que un sistema sea fácil de entender, modificar y escalar. La mala arquitectura hace que cada cambio sea una lucha. Este archivo cubre los patrones principales, cuándo usar cada uno y las compensaciones involucradas.
 ---

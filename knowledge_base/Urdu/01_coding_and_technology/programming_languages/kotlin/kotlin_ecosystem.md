@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # کوٹلن — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ کوٹلن ایکو سسٹم میں ضروری ٹولز، فریم ورک، اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

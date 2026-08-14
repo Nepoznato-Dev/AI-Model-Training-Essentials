@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Szenarioplanung
 ## Übersicht
 Niemand kann die Zukunft vorhersagen – aber Sie können sich auf mehrere plausible Zukunftsaussichten vorbereiten. Die Szenarioplanung, die in Denkfabriken des Kalten Krieges entstand und von Shell während der Ölkrisen der 1970er Jahre perfektioniert wurde, ist eine Methode, systematisch über Unsicherheit nachzudenken. Anstatt auf eine Prognose zu setzen, erstellen Sie zusammenhängende Geschichten darüber, wie sich die Dinge entwickeln könnten, und testen Ihre Entscheidungen dann anhand aller Prognosen. Hier erfahren Sie, wie die Methodik funktioniert, zusammen mit Szenarien in Schlüsseldomänen.

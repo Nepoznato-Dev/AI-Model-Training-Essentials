@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript — الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية وأفضل الممارسات لكتابة كود JavaScript (ES2024+) النظيف والحديث.
 ---

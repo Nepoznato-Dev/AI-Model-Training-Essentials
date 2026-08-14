@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, modern PHP (8.3+) kodu yazmaya yönelik deyimsel kalıpları ve en iyi uygulamaları kapsar.
 ---

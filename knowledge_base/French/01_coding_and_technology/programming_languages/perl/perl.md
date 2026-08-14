@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Perl
 Perl a été créé par Larry Wall en 1987 comme outil pratique de traitement de texte. Il est devenu l'épine dorsale des premiers développements Web (scripts CGI), de l'administration système, de la bioinformatique et de la programmation réseau. La philosophie de Perl est « Il y a plus d'une façon de le faire » (TMTOWTDI) : le langage vous propose plusieurs approches pour chaque problème, privilégiant l'expressivité plutôt que l'uniformité.
 L'influence de Perl sur la programmation moderne est énorme mais souvent invisible : les expressions régulières, influencées par la correspondance de modèles de Perl, sont désormais standard dans Python, JavaScript, Java et la plupart des autres langages. Le CPAN (Comprehensive Perl Archive Network) a été l'un des premiers référentiels de progiciels et a inspiré des systèmes ultérieurs tels que PyPI de Python et npm de Node.

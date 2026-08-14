@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python Syntax Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # পাইথন সিনট্যাক্স চিট শীট
 Python 3.x সিনট্যাক্স এবং সাধারণ নিদর্শনগুলির জন্য দ্রুত রেফারেন্স।
 ---

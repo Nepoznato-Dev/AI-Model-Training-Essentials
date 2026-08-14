@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — 语法参考
 本文档提供了现代 C++ (C++17/20/23) 的全面、结构化语法参考。它通过关注详尽的语法模式、运算符表、模板机制和现代功能来补充主要的 C++ 参考。
 ---

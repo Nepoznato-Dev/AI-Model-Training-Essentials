@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio
 | Toleo | Mwaka | Mandhari Muhimu |

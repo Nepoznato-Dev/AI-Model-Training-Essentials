@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Arquitetura em nuvem
 A computação em nuvem mudou fundamentalmente a forma como as organizações criam, implantam e dimensionam software. Em vez de comprar e manter servidores físicos, você pode provisionar recursos de computação sob demanda, pagar pelo que usa e dimensionar globalmente em minutos. Este arquivo cobre os principais conceitos, padrões de arquitetura, serviços e práticas recomendadas que você precisa conhecer.
 ---

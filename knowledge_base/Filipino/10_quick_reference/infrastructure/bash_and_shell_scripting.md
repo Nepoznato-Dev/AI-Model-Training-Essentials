@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash at Shell Scripting Cheat Sheet
 Isang praktikal na sanggunian para sa pagsusulat ng mga script ng shell sa Bash — ang default na shell sa karamihan ng mga Linux at macOS system. Sinasaklaw ang syntax, karaniwang mga pattern, pagpoproseso ng text, at mga kapaki-pakinabang na one-liner.
 ---

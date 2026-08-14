@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি COBOL ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, কম্পাইলার এবং অবকাঠামো কভার করে।
 ---

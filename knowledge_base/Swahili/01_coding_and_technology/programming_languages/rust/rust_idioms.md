@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kutu — Miundo ya nahau na Mazoea Bora
 Mwongozo huu unashughulikia mifumo ya nahau na mbinu bora za kuandika msimbo safi na salama wa Kutu.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 수학
 수학은 학교에서 공부하는 과목일 뿐만 아니라 거의 모든 기술 분야를 뒷받침합니다. 물리학에서는 우주를 설명하기 위해 이를 사용합니다. 컴퓨터 과학에서는 이를 사용하여 알고리즘을 설계합니다. 기계 학습에서는 이를 사용하여 가중치를 최적화합니다. 재무부는 이를 위험 가격 결정에 사용합니다. 모든 분야를 숙달할 필요는 없지만, 환경을 이해하고 각 분야가 어디에 적용되는지 알면 다른 주제를 더 쉽게 파악할 수 있습니다.
 ---

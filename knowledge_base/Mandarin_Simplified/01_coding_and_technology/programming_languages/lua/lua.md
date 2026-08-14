@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 卢阿
 Lua 是一种轻量级、可嵌入的脚本语言，专为扩展应用程序而设计。 Lua 于 1993 年在巴西里约热内卢天主教大学创建，是最快的脚本语言之一。它占用空间小（解释器约为 120KB）且简单，使其成为游戏开发脚本、嵌入式系统和配置的首选。
 Lua 最为人所知的是 Roblox（每月拥有超过 2 亿用户的游戏平台）、魔兽世界插件和众多游戏引擎（Love2D、Defold、Corona SDK）背后的脚本语言。它还用于 Nginx (OpenResty)、Redis 和 Wireshark。

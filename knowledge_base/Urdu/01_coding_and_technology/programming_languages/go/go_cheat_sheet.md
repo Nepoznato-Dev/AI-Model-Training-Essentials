@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جاؤ - دھوکہ دہی کی شیٹ
 ## بنیادی باتیں
 ```go

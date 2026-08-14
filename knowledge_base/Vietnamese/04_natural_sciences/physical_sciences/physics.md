@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Vật lý
 Vật lý đặt ra câu hỏi cơ bản nhất trong khoa học: vật chất và năng lượng hoạt động như thế nào? Mọi thứ khác - hóa học, sinh học, kỹ thuật - đều dựa trên câu trả lời. Vật lý trải dài từ quy mô hạ nguyên tử (cơ học lượng tử) đến quy mô vũ trụ (thuyết tương đối rộng) và các nguyên tắc của nó làm nền tảng cho tất cả các ngành khoa học tự nhiên khác.
 ---

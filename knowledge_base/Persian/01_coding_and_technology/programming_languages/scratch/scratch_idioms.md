@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی برای نوشتن پروژه‌های Scratch تمیز و سازمان‌یافته را پوشش می‌دهد.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # روبی - نحوی حوالہ
 یہ دستاویز روبی (3.x) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، بلاکس اور بندشوں، میٹاپروگرامنگ، اور روبی کے محاوروں پر توجہ مرکوز کرکے مرکزی روبی حوالہ کی تکمیل کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho TypeScript. Nó bổ sung cho tham chiếu TypeScript chính bằng cách tập trung vào hệ thống kiểu, khái quát, kiểu tiện ích và lập trình cấp độ nâng cao.
 ---

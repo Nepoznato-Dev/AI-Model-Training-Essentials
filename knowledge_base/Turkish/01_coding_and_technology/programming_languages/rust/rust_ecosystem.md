@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust — Ekosistem ve Takım İşleme Kılavuzu
 Bu kılavuz Rust ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

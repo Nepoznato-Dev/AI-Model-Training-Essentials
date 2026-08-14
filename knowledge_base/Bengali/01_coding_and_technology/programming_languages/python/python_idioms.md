@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # পাইথন — ইডিওম্যাটিক প্যাটার্ন এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি পরিচ্ছন্ন, পাইথনিক কোড লেখার জন্য বাহাদুরী নিদর্শন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

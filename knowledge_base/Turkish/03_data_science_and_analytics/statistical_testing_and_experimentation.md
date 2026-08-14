@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # İstatistiksel Test ve Deney
 İstatistik bilimin grameridir. Gerçek kalıpları rastgele gürültüden ayırt etmek, bir değişikliğin gerçekten işleri iyileştirip iyileştirmediğini ölçmek ve belirsizlik altında kararlar almak için size araçlar sağlar. Bu dosya hipotez testi, deneysel tasarım ve insanları tuzağa düşüren yaygın tuzaklara ilişkin temel kavramları kapsar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Vai: foglio informativo
 ## Nozioni di base
 ```go

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # সাইবার সিকিউরিটি ফান্ডামেন্টাল
 নিরাপত্তা হল এমন একটি শৃঙ্খলা যা শুরু থেকেই একটি সিস্টেমের প্রতিটি স্তরে একত্রিত করা উচিত, একটি চিন্তাভাবনা হিসাবে যোগ করার পরিবর্তে। একটি ওয়েব অ্যাপ্লিকেশন তৈরি করা, পরিকাঠামো পরিচালনা করা, বা একটি API শিপিং করা হোক না কেন, হুমকির ল্যান্ডস্কেপ এবং প্রতিরক্ষার মৌলিক বিষয়গুলি বোঝা অপরিহার্য।
 ---

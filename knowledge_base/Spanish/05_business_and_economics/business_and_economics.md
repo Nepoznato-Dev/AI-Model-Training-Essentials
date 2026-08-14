@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Negocios y Economía
 Toda organización que vende un producto o servicio es un negocio, y toda sociedad que produce y distribuye bienes es una economía. Los conceptos de este archivo se aplican ya sea que usted esté dirigiendo una operación independiente, trabajando en una corporación, tratando de entender las noticias o simplemente descubriendo cómo se mueve el dinero en el mundo.
 ---

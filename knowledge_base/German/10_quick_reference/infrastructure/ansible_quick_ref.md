@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible und Konfigurationsmanagement
 Ansible ist ein agentenloses Konfigurationsmanagement- und Automatisierungstool. Es verwendet SSH (oder WinRM für Windows), um eine Verbindung zu Servern herzustellen und in YAML-Playbooks definierte Aufgaben auszuführen. Im Gegensatz zu Tools, die die Installation von Agenten auf jedem Computer erfordern, ist Ansible Push-basiert – Sie führen Befehle von einem Kontrollknoten aus aus. Es wird für die Serverbereitstellung, Anwendungsbereitstellung, Konfigurationsverwaltung und Ad-hoc-Aufgabenausführung verwendet.
 ---

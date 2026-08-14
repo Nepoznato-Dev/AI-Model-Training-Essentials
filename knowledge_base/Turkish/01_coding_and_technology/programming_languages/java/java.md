@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Java
 Java, Sun Microsystems'den James Gosling tarafından oluşturulan ve 1995 yılında piyasaya sürülen, statik olarak yazılan, nesne yönelimli bir programlama dilidir. Tasarım felsefesi - "bir kez yaz, her yerde çalıştır" (WORA) - derlenmiş Java kodunun JVM uygulamasına sahip herhangi bir platformda çalışmasına izin veren Java Sanal Makinesi (JVM) aracılığıyla gerçekleştirilir. Java tarihte en yaygın kullanılan programlama dillerinden biridir ve kurumsal arka uçları, Android uygulamalarını, büyük veri sistemlerini ve finansal hizmetleri destekler.
 Yaklaşık 30 yaşında olmasına rağmen Java gelişmeye devam ediyor. Modern Java (sürüm 17+) kayıtları, mühürlü sınıfları, kalıp eşleştirmeyi, sanal iş parçacıklarını ve daha yeni dillerle rekabet eden büyüyen bir ekosistemi içerir.

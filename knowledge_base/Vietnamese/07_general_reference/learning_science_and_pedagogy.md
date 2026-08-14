@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Học Khoa học và Sư phạm
 Khoa học học tập là nghiên cứu liên ngành về cách mọi người học - rút ra từ tâm lý học, khoa học thần kinh, giáo dục và khoa học nhận thức. Sư phạm là thực tiễn và phương pháp giảng dạy. Họ cùng nhau giải quyết các câu hỏi liên quan đến bất kỳ ai giảng dạy, đào tạo, cố vấn hoặc thiết kế nội dung giáo dục: Phương pháp nào giúp mọi người học tập hiệu quả? Những kỹ thuật nghiên cứu phổ biến nào là không hiệu quả? Hướng dẫn nên được cấu trúc như thế nào để ghi nhớ và chuyển giao tối ưu?
 ---

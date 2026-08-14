@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uchambuzi wa Geospatial
 Uchanganuzi wa kijiografia ni mchakato wa kukagua data ambayo ina sehemu ya kijiografia - kuratibu, anwani, mipaka, au data yoyote inayohusiana na eneo duniani. Inajibu maswali kama vile "wateja wetu wako wapi?", "njia bora ni ipi?", na "ni jinsi gani matumizi ya ardhi yanabadilika kulingana na wakati?". Kila mkusanyiko wa data una mwelekeo wa anga, na kuuelewa hufungua maarifa ambayo uchambuzi kamili wa takwimu hukosa.
 ---

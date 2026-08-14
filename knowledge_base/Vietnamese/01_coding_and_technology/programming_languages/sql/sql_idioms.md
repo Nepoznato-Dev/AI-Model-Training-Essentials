@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Các mẫu thành ngữ & các phương pháp hay nhất
 Hướng dẫn này bao gồm các mẫu thành ngữ và các phương pháp hay nhất để viết SQL rõ ràng, hiệu quả.
 ---

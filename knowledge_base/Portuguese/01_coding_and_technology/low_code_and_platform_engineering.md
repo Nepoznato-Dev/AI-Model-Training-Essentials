@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Low-Code e Engenharia de Plataforma
 As plataformas de baixo código permitem que as pessoas criem aplicativos com o mínimo de código escrito à mão — normalmente por meio de interfaces de arrastar e soltar, fluxos de trabalho visuais e conectores pré-construídos. A engenharia de plataforma é a disciplina de construção de plataformas internas de desenvolvedores (IDPs) que facilitam para as equipes de produto o autoatendimento de infraestrutura, CI/CD e ferramentas operacionais. Ambas as tendências são respostas ao mesmo problema: a lacuna entre a procura de software e a oferta de programadores que o possam construir.
 ---

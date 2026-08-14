@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Technologie und Informatik
 Computer sind überall – in Ihrem Telefon, Ihrem Auto, Ihrem Kühlschrank, Ihren medizinischen Geräten und der Infrastruktur, die die moderne Gesellschaft betreibt. Sie müssen kein Programmierer sein, um zu verstehen, wie alles funktioniert. In dieser Datei werden die Grundlagen behandelt: Was ein Computer ist, wie das Internet funktioniert, wie Software erstellt wird und welche Konzepte die digitale Welt prägen.
 > **Möchten Sie tiefer gehen?** Diese Datei bietet einen umfassenden Überblick. Eine detaillierte Abdeckung aller Themen finden Sie in den entsprechenden Dateien in[`01_coding_and_technology/`](../01_coding_and_technology/)– einschließlich [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)und.

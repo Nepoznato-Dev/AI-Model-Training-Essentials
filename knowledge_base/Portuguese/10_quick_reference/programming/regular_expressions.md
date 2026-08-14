@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Folha de referências de expressões regulares
 Expressões regulares (regex) são padrões para correspondência de texto. Eles são usados ​​em qualquer lugar: pesquisa e substituição, validação de entrada, análise de log, extração de dados e muito mais. Esta é uma referência prática, não um livro didático.
 ---

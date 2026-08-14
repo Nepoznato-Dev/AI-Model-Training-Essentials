@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog - Rejeleo la Sintaksia
 Hati hii inatoa rejeleo la kina, lenye muundo wa sintaksia kwa Prolog. Inakamilisha rejeleo kuu la Prolog kwa kuangazia mifumo kamili ya sintaksia, kuunganisha, kurudi nyuma, DCG na nahau za kupanga programu.
 ---

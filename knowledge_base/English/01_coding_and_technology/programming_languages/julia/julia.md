@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia
 
 Julia is a high-level, high-performance programming language designed for technical and scientific computing. First released in 2012 (1.0 in 2018), Julia was created to solve the "two-language problem" — where scientists prototype in Python/R but rewrite in C/C++/Fortran for production performance. Julia aims to be as easy as Python but as fast as C.

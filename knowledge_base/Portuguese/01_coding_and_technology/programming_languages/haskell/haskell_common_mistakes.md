@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — Erros comuns e antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns em Haskell com correções.
 ---

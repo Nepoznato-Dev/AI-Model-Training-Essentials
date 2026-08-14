@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C
 C là ngôn ngữ lập trình thủ tục, có mục đích chung được tạo bởi Dennis Ritchie tại Bell Labs từ năm 1969 đến năm 1973. Nó được thiết kế để triển khai hệ điều hành Unix và nó vẫn là một trong những ngôn ngữ lập trình được sử dụng rộng rãi nhất trong hơn 50 năm sau. C cung cấp khả năng truy cập bộ nhớ cấp thấp, một thư viện tiêu chuẩn tối thiểu và ánh xạ rõ ràng tới các lệnh máy -- khiến nó trở thành nền tảng cho hầu hết các máy tính hiện đại được xây dựng.
 C là ngôn ngữ đằng sau các hệ điều hành (Linux, nhân Windows, macOS), hệ thống nhúng, công cụ cơ sở dữ liệu (SQLite, PostgreSQL), trình biên dịch (CPython của Python, MRI của Ruby) và hầu như mọi thời gian chạy ngôn ngữ lập trình khác. Hiểu C là hiểu cách máy tính thực sự hoạt động.

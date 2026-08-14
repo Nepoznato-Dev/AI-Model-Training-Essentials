@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gerçek Analiz
 Gerçek analiz, hesabın sağlam temelidir. Giriş seviyesi matematik size türevleri ve integralleri nasıl hesaplayacağınızı öğretirken, gerçek analiz bu tekniklerin *neden* işe yaradığını ve ne zaman başarısız olduklarını sorar. Olasılık teorisini, fonksiyonel analizi, optimizasyonu ve makine öğrenimi algoritmalarının arkasındaki teorik garantileri destekleyen limitlerin, sürekliliğin, yakınsamanın ve entegrasyonun kesin tanımlarını sağlar.
 ---

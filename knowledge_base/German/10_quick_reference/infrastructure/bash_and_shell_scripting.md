@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash- und Shell-Scripting-Spickzettel
 Eine praktische Referenz zum Schreiben von Shell-Skripten in Bash – der Standard-Shell auf den meisten Linux- und macOS-Systemen. Behandelt Syntax, gängige Muster, Textverarbeitung und nützliche Einzeiler.
 ---

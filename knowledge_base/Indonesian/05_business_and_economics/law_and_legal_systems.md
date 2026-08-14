@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hukum dan Sistem Hukum
 Hukum adalah seperangkat aturan yang disetujui oleh suatu masyarakat untuk ditegakkan melalui lembaga-lembaganya. Hal ini tidak sama dengan moralitas - Anda dapat melakukan sesuatu yang legal namun tidak bermoral, dan sesuatu yang ilegal yang dapat dibenarkan secara moral. Hukum ada untuk memberikan prediktabilitas: untuk menetapkan apa yang diperbolehkan, apa yang dilarang, dan apa yang terjadi jika peraturan dilanggar. Tanpanya, perselisihan diselesaikan dengan kekuasaan. Dengan itu, perselisihan diselesaikan melalui proses.
 File ini mencakup sistem hukum utama, cabang utama hukum, dan konsep yang membentuk cara kerja sistem hukum dalam praktiknya.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini ve Yerel Yapay Zeka Modeli Ortamı
 Microsoft'un Phi-3-mini modelinin (tasarım felsefesi, mimari seçimleri ve performans özellikleri) analizi ve başarısının bize etkili, verimli yapay zeka sistemleri oluşturma konusunda neler öğrettiği.
 ---

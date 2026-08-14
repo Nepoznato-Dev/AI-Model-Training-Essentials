@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API ডিজাইন এবং আর্কিটেকচার
 একটি API (অ্যাপ্লিকেশন প্রোগ্রামিং ইন্টারফেস) হল সফ্টওয়্যার উপাদানগুলি কীভাবে একে অপরের সাথে কথা বলে। একটি ভাল-পরিকল্পিত API স্বজ্ঞাত, সামঞ্জস্যপূর্ণ, এবং এর সাথে কাজ করা আনন্দদায়ক। একটি খারাপভাবে ডিজাইন করা বিভ্রান্তি, বাগ এবং হতাশার কারণ। এই ফাইলটি API তৈরির নীতি, নিদর্শন এবং অনুশীলনগুলিকে কভার করে যা বিকাশকারীরা আসলে ব্যবহার করতে চায়৷
 ---

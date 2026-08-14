@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الصدأ - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا لـ Rust. وهو يكمل مرجع Rust الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة وجداول المشغلين والآليات الداخلية لنظام الملكية والسمات والتزامن.
 ---

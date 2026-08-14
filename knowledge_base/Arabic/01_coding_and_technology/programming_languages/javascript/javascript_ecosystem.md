@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جافا سكريبت - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والأطر والبنية الأساسية الأساسية في نظام JavaScript البيئي.
 ---

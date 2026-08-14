@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fizik
 Fizik, bilimdeki en temel soruyu sorar: Madde ve enerji nasıl davranır? Geriye kalan her şey - kimya, biyoloji, mühendislik - yanıtlar üzerine kuruludur. Fizik, atom altı ölçekten (kuantum mekaniği) kozmik ölçeğe (genel görelilik) kadar uzanır ve ilkeleri diğer tüm doğa bilimlerinin temelini oluşturur.
 ---

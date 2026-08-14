@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell и PowerShell — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису Bash и PowerShell. Он дополняет основной справочник по Shell, уделяя особое внимание исчерпывающим шаблонам сценариев, конвейерам, управлению процессами и идиомам автоматизации для обеих оболочек.
 ---

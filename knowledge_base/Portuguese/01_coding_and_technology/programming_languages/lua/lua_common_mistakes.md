@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Erros Comuns e Antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns em Lua com correções.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 持続可能な未来
 ＃＃ 概要
 問題はもはや、世界が持続可能な経済に移行する必要があるかどうか*ではなく、*どれだけ早く*、そして*誰が主導するか*です。再生可能エネルギーは現在、ほとんどの市場で最も安価な電源です。循環経済の原則は、ニッチな概念から企業戦略へと移行しつつあります。都市は輸送から廃棄物に至るまであらゆるものを再考しています。そして、ネットゼロへの競争により、エネルギーから金融に至るまで業界が再構築されています。 4 つの主要な側面における持続可能な未来がどのようなものかを次に示します。

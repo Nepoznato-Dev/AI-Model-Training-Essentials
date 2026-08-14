@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Хаскелл
 Haskell — чисто функциональный, статически типизированный, лениво вычисляемый язык программирования. Впервые стандартизированный в 1990 году (Haskell 90) и усовершенствованный в нескольких версиях (нынешним стандартом является Haskell 2010), Haskell известен своей математической строгостью, мощной системой типов (с классами типов, монадами и алгебраическими типами данных) и упором на корректность с помощью типов.
 Haskell не является основным языком, но его влияние огромно. Такие концепции, как монады, ленивые вычисления и классы типов, повлияли на Rust, Swift, Kotlin, Scala и TypeScript. Haskell используется в финансах (Standard Chartered, Barclays), компиляторах (GHC) и формальной верификации.

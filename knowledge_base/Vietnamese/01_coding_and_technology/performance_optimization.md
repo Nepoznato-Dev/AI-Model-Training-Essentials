@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Tối ưu hóa hiệu suất
 Tối ưu hóa hiệu suất là phương pháp làm cho phần mềm nhanh hơn — giảm thời gian phản hồi, tăng thông lượng, giảm mức sử dụng bộ nhớ và loại bỏ tắc nghẽn. Đó là một trong những kỹ năng có tác động mạnh nhất mà nhà phát triển có thể có, vì phần mềm chậm sẽ mất người dùng, lãng phí tài nguyên và khiến mọi người thất vọng. Nhưng đó cũng là một trong những lỗi thường được thực hiện sai nhất, khi các nhà phát triển tối ưu hóa những điều sai trái dựa trên trực giác hơn là bằng chứng.
 ---

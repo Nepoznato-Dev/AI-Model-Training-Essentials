@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl: modelli idiomatici e migliori pratiche
 Questa guida copre i modelli idiomatici e le migliori pratiche per scrivere codice Perl (5.38+) pulito e moderno.
 ---

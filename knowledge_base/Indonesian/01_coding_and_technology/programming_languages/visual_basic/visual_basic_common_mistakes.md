@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — Kesalahan Umum & Anti-Pola
 Dokumen ini berisi katalog kesalahan, jebakan, dan anti-pola yang paling umum dalam Visual Basic (VB.NET) beserta koreksinya.
 ---

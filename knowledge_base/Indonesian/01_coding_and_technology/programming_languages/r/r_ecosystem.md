@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, paket, dan infrastruktur penting dalam ekosistem R.
 ---

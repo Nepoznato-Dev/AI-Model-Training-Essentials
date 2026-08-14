@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Business and Economics
 
 Every organization that sells a product or service is a business, and every society that produces and distributes goods is an economy. The concepts in this file apply whether you are running a freelance operation, working at a corporation, trying to understand the news, or just figuring out how money moves through the world.

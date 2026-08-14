@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جولیا — محاوراتی نمونے اور بہترین طرز عمل
 اس گائیڈ میں محاوراتی نمونوں اور صاف ستھرے، محاوراتی جولیا کوڈ لکھنے کے بہترین طریقوں کا احاطہ کیا گیا ہے۔
 ---

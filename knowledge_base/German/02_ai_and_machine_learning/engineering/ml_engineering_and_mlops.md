@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML Engineering und MLOps
 Der Aufbau eines Modells für maschinelles Lernen ist nur die halbe Miete. Es in die Produktion bringen, dafür sorgen, dass es zuverlässig läuft, Abweichungen überwachen und darauf iterieren – hier kommen ML-Engineering und MLOps ins Spiel. Diese Datei deckt den gesamten Lebenszyklus vom Experiment bis zum Produktionssystem ab.
 ---

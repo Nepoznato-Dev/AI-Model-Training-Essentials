@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik dan praktik terbaik untuk menulis kode Haskell yang bersih dan idiomatis.
 ---

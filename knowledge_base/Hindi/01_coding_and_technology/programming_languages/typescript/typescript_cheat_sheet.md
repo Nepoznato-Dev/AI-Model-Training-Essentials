@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # टाइपस्क्रिप्ट - चीट शीट
 ## मूल प्रकार
 ```typescript

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # টাইপস্ক্রিপ্ট — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অনুশীলন
 এই নির্দেশিকাটি পরিচ্ছন্ন, টাইপ-নিরাপদ টাইপস্ক্রিপ্ট কোড লেখার জন্য বাহাদুরিমূলক নিদর্শন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

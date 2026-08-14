@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust – Histórico de versões e evolução
 ## Linha do tempo
 | Versão | Data de lançamento | Tema principal |

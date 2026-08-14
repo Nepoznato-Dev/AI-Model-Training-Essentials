@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Arsitektur AI Lokal
 Panduan praktis untuk menjalankan model bahasa besar sepenuhnya pada perangkat — pertimbangan perangkat keras, mesin inferensi, optimalisasi memori, dan desain sistem untuk penerapan edge.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Çevre Bilinci
 Çevre "dışarıda" ayrı bir şey değildir; diğer her şeyi mümkün kılan sistemdir. Aldığınız her nefes, içtiğiniz her bardak su, yediğiniz her yemek atmosferik bileşime, su döngülerine, toprağın sağlığına ve polen taşıyıcı ağlara bağlıdır. Bu sistemlerin nasıl çalıştığını ve nasıl değiştiğini anlamak, bilgili bir kişi için isteğe bağlı değildir. Bu dosya çevre biliminin temellerini, karşılaştığımız zorlukları ve sürdürülebilirliğin pratikte gerçekte ne anlama geldiğini kapsamaktadır.
 ---

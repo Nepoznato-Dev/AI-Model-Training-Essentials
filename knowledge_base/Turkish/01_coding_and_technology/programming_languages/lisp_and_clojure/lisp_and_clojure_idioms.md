@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp ve Clojure — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz Lisp ve Clojure için deyimsel kalıpları kapsar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Test statistici e sperimentazione
 La statistica è la grammatica della scienza. Fornisce gli strumenti per distinguere modelli reali dal rumore casuale, per misurare se un cambiamento ha effettivamente migliorato le cose e per prendere decisioni in condizioni di incertezza. Questo file copre i concetti fondamentali della verifica delle ipotesi, della progettazione sperimentale e delle insidie ​​​​comuni che inciampano le persone.
 ---

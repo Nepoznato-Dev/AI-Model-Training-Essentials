@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir — 구문 참조
 이 문서는 Erlang과 Elixir에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 패턴 일치, 프로세스 관리, OTP 동작 및 내결함성 시스템 패턴에 중점을 두어 기본 참조를 보완합니다.
 ---

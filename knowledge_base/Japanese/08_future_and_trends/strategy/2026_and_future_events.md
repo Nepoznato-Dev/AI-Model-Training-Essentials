@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #2026年と今後の出来事
 2026 年は多くの長期計画が集まる年です。今年は米国独立宣言から250周年であり、国連の持続可能な開発目標（2020～2030年）の中間チェックポイントであり、AI、宇宙探査、電気自動車、再生可能エネルギーにおける企業のロードマップにとって節目の年でもある。特定の予測が的中するかどうかに関係なく、2026 年を形成するトレンドは、物事がどこに向かっているのかを示す有用なイメージを与えてくれます。
 ---

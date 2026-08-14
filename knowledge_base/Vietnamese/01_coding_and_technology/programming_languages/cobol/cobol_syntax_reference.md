@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL — Tham chiếu cú ​​pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho COBOL (2014+). Nó bổ sung cho tham chiếu COBOL chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, mô tả dữ liệu, xử lý tệp và logic nghiệp vụ.
 ---

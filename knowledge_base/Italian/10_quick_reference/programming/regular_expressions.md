@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Foglio informativo sulle espressioni regolari
 Le espressioni regolari (regex) sono modelli per la corrispondenza del testo. Sono utilizzati ovunque: ricerca e sostituzione, convalida dell'input, analisi dei log, estrazione dei dati e altro ancora. Questo è un riferimento pratico, non un libro di testo.
 ---

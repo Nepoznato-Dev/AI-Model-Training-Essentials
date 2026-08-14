@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usanifu wa Wingu
 Kompyuta ya wingu imebadilisha kimsingi jinsi mashirika yanavyounda, kupeleka, na kuongeza programu. Badala ya kununua na kudumisha seva halisi, unaweza kutoa rasilimali za kompyuta unapohitaji, kulipia unachotumia, na kuongeza kimataifa kwa dakika. Faili hii inashughulikia dhana za msingi, mifumo ya usanifu, huduma, na mbinu bora unazohitaji kujua.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Supply Chain and Operations Management
 
 Supply chain management is the coordination of all activities involved in sourcing, procurement, conversion, and logistics — from raw materials to the finished product in the customer's hands. Operations management is the day-to-day running of production systems. Together, they determine whether a company can deliver the right product, at the right time, at the right cost, with the right quality. The pandemic, chip shortages, and canal blockages have shown just how fragile and globally interconnected supply chains are.

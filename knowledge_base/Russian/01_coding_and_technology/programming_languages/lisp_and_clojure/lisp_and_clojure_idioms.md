@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp и Clojure — идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны для Lisp и Clojure.
 ---

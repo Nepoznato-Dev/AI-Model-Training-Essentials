@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps และ CI/CD
 DevOps คือการผสมผสานระหว่างปรัชญาวัฒนธรรม แนวปฏิบัติ และเครื่องมือที่ช่วยให้ทีมส่งมอบซอฟต์แวร์ได้รวดเร็วและเชื่อถือได้มากขึ้น มันทลายกำแพงระหว่างนักพัฒนา (ที่ต้องการจัดส่งการเปลี่ยนแปลง) และฝ่ายปฏิบัติการ (ที่ต้องการความมั่นคง) CI/CD — การบูรณาการอย่างต่อเนื่องและการส่งมอบอย่างต่อเนื่อง — คือแกนหลักอัตโนมัติที่ทำให้เป็นไปได้
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Comparación entre idiomas: tipos de datos y estructuras
 ## Tipos primitivos
 | Tipo | Pitón | JavaScript | Óxido | Ir | Java | C | C++ | C# |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kedokteran dan Kesehatan
 Kedokteran adalah ilmu dan praktik mendiagnosis, mengobati, dan mencegah penyakit. Ini adalah salah satu upaya tertua manusia – Sumpah Hipokrates sudah ada sejak zaman Yunani kuno – dan salah satu yang paling cepat berubah. Pada abad terakhir saja, kita beralih dari tidak adanya antibiotik menjadi terapi gen yang dapat menulis ulang DNA pasien.
 File ini mencakup cara kerja pengobatan: spesialisasi utama, cara penyakit didiagnosis dan diobati, cara sistem layanan kesehatan diatur, dan pertanyaan etika yang muncul ketika nyawa manusia dipertaruhkan.

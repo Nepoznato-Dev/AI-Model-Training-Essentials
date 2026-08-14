@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Logik und kritisches Denken
 Unter Logik versteht man das Studium stichhaltiger Argumente – wie man stichhaltige Argumente konstruiert und fehlerhafte Argumente erkennt. Kritisches Denken ist die disziplinierte Angewohnheit, Annahmen zu hinterfragen, Beweise zu bewerten und sorgfältig zu argumentieren. Diese Fähigkeiten sind nicht nur in Mathematik und Informatik von entscheidender Bedeutung, sondern auch bei der alltäglichen Entscheidungsfindung, der wissenschaftlichen Forschung und der Navigation in einer Welt voller Informationen.
 ---

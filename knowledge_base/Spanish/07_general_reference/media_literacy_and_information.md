@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Alfabetización mediática y evaluación de la información
 Vivimos en un mundo saturado de información. Todos los días, la persona promedio está expuesta a miles de mensajes de los medios: artículos de noticias, publicaciones en redes sociales, anuncios, discursos políticos, contenido de personas influyentes, texto generado por IA. La mayor parte está bien. Algo de esto es engañoso. Una pequeña cantidad es deliberadamente falsa. La alfabetización mediática es la habilidad de navegar este panorama, no confiando en todo, no confiando en nada, sino desarrollando un sentido calibrado de lo que es confiable y lo que no.
 ---

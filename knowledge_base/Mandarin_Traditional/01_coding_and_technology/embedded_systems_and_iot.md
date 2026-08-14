@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 嵌入式系統與物聯網
 嵌入式系統是隱藏在其他設備中的電腦——汽車的引擎控制單元、洗衣機的控制器、智慧恆溫器中的微控制器。與通用電腦不同，它們是為特定任務而設計的，通常對功耗、記憶體和處理速度有嚴格的限制。物聯網 (IoT) 透過將嵌入式系統連接到網路來擴展嵌入式系統，從而實現遠端監控、控制和資料收集。它們共同代表了與物理世界互動的數十億運算設備。
 ---

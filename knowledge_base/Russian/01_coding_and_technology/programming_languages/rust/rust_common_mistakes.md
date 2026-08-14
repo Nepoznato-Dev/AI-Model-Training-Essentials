@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — распространенные ошибки и антипаттерны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в Rust. Каждая запись показывает неправильный подход, объясняет, почему он не работает, и предлагает правильное решение. Компилятор Rust обнаруживает множество ошибок, но понимание этих закономерностей ускорит ваше обучение.
 ---

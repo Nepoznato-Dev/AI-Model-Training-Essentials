@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 델파이/오브젝트 파스칼 — 버전 기록 및 진화
 ## 타임라인
 | 버전 | 연도 | 주요 테마 |

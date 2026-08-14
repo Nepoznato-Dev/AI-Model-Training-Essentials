@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Climate Technology at Green Innovation
 Sinasaklaw ng teknolohiya ng klima ang mga tool, system, at inobasyon na idinisenyo upang bawasan ang mga greenhouse gas emissions, iangkop sa pagbabago ng klima, at i-transition ang pandaigdigang ekonomiya sa isang sustainable footing. Masasabing ito ang pinakamahalagang domain ng teknolohiya sa ika-21 siglo — ang pagkakaiba sa pagitan ng napapamahalaang 1.5°C ng pag-init at isang sakuna na 3°C+ ay higit na nakadepende sa kung gaano kabilis mai-deploy ang mga teknolohiyang ito sa laki. Ang hamon ay hindi lamang siyentipiko kundi pang-ekonomiya, pampulitika, at panlipunan.
 ---

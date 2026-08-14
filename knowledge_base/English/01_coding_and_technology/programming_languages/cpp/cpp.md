@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++
 
 C++ is a general-purpose, compiled programming language created by Bjarne Stroustrup, first released in 1985. It extends C with object-oriented features, generics, and -- in modern versions (C++11 and later) -- high-level abstractions like lambdas, smart pointers, and the Standard Template Library (STL). C++ follows the "zero-overhead abstraction" principle: you should not pay for features you do not use.

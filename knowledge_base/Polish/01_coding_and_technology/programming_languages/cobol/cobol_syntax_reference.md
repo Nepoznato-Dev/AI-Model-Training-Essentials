@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL — Odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni języka COBOL (2014+). Uzupełnia główne odniesienia do języka COBOL, koncentrując się na wyczerpujących wzorcach składni, opisach danych, przetwarzaniu plików i logice biznesowej.
 ---

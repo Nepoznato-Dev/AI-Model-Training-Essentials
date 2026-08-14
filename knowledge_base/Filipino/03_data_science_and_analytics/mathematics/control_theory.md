@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teorya ng Kontrol
 Ang teorya ng kontrol ay ang matematika ng paggawa ng mga system na kumilos sa paraang gusto mo sa kanila. Mula sa mga thermostat hanggang sa mga autopilot, mula sa mga robotic arm hanggang sa mga kemikal na reactor, ang mga control system ay nakadarama, nagpapasya, at kumikilos upang mapanatili ang nais na pag-uugali. Nagbibigay ang field ng mahigpit na tool para sa pagsusuri ng stability, performance, at robustness — mga konsepto na lumipat sa reinforcement learning, hyperparameter tuning, at adaptive system.
 ---

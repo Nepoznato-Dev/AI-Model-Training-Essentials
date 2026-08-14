@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # कंप्यूटर विजन फंडामेंटल
 कंप्यूटर विज़न मशीनों को दुनिया से दृश्य जानकारी - चित्र, वीडियो और 3डी डेटा की व्याख्या और समझने की क्षमता देता है। यह आपके फ़ोन पर चेहरे की पहचान से लेकर स्व-चालित कारों, चिकित्सा छवि विश्लेषण और औद्योगिक गुणवत्ता नियंत्रण तक सब कुछ प्रदान करता है। यह फ़ाइल मुख्य अवधारणाओं, आर्किटेक्चर और तकनीकों को कवर करती है।
 ---

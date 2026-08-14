@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Julia
 Julia to język programowania wysokiego poziomu i wydajności, przeznaczony do obliczeń technicznych i naukowych. Wydana po raz pierwszy w 2012 r. (1.0 w 2018 r.) aplikacja Julia została stworzona, aby rozwiązać „problem dwóch języków” — polegający na tym, że naukowcy tworzą prototypy w języku Python/R, ale przepisują je w C/C++/Fortran w celu zapewnienia wydajności produkcyjnej. Julia chce być tak łatwa jak Python, ale tak szybka jak C.
 Julia korzysta z kompilacji just-in-time (JIT) za pośrednictwem LLVM, aby osiągnąć wydajność bliską C, zachowując jednocześnie interaktywny, dynamiczny charakter. Posiada pierwszorzędną obsługę obliczeń równoległych, przetwarzania rozproszonego i wyrafinowany system typów z wielokrotnym wysyłaniem.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB
 MATLAB (Matrix Laboratuvarı), sayısal hesaplama, matris işlemleri ve mühendislik/bilimsel uygulamalar için tasarlanmış üst düzey, yorumlanmış bir programlama dili ve ortamıdır. MathWorks tarafından geliştirilen ve ilk olarak 1984 yılında piyasaya sürülen MATLAB, birçok mühendislik disiplininde (elektrik mühendisliği, kontrol sistemleri, sinyal işleme, görüntü işleme ve iletişim) standart araçtır.
 MATLAB, güçlü bir matris odaklı dili kapsamlı araç kutuları (eklenti paketleri) ve Simulink görsel simülasyon ortamıyla birleştirir. Akademik çevrelerde ve endüstride algoritmaların üretim koduna uygulanmadan önce prototiplenmesi için yaygın olarak kullanılmaktadır.

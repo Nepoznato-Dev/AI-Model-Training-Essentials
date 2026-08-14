@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # فيجوال بيسك — تاريخ الإصدارات وتطورها
 ## الجدول الزمني
 | النسخة | سنة | الموضوع الرئيسي |

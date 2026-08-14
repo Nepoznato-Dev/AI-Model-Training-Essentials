@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الطرق العددية
 الطرق العددية هي الجسر بين النظرية الرياضية والحساب العملي. في حين أن الرياضيات البحتة تثبت وجود الحلول، فإن الطرق العددية تحسب في الواقع الإجابات التقريبية بدقة متناهية. يعتمد كل نموذج للتعلم الآلي، ومحاكاة الفيزياء، وخط أنابيب تحليل البيانات في النهاية على الحساب الرقمي. إن فهم هذه الأساليب - دقتها واستقرارها وحدودها - أمر ضروري لبناء برامج موثوقة.
 ---

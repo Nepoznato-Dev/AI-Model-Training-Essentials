@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bulut Hizmetleri Karşılaştırması
 Üç büyük bulut sağlayıcısının (AWS, Azure ve Google Cloud) bilgi işlem, depolama, veritabanları, AI/ML, ağ iletişimi, izleme ve kod olarak altyapı genelinde yan yana karşılaştırması. Hangi platformun kullanılacağına karar veren veya hizmetleri bir buluttan diğerine eşleyen mimarlar için kullanışlıdır.
 ---

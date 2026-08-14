@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optimasi dan Penerapan Model
 Melatih model AI berukuran besar merupakan pencapaian yang signifikan, namun menerapkannya secara efisien adalah hal yang memerlukan sebagian besar upaya rekayasa. Model yang membutuhkan waktu 10 detik untuk merespons atau memerlukan delapan GPU A100 tidak praktis untuk sebagian besar aplikasi dunia nyata. Pengoptimalan model adalah proses menjadikan model lebih kecil, lebih cepat, dan lebih hemat biaya — dengan tetap mempertahankan kualitas yang dapat diterima. File ini mencakup kuantisasi, pemangkasan, distilasi, dan alat praktis untuk menerapkan model dalam produksi.
 ---

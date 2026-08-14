@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB
 MATLAB (Matrix Laboratory) to interpretowany język programowania wysokiego poziomu i środowisko przeznaczone do obliczeń numerycznych, operacji na macierzach i zastosowań inżynieryjnych/naukowych. Opracowany przez MathWorks i wydany po raz pierwszy w 1984 roku, MATLAB jest standardowym narzędziem w wielu dziedzinach inżynierii — elektrotechnice, systemach sterowania, przetwarzaniu sygnałów, przetwarzaniu obrazu i komunikacji.
 MATLAB łączy w sobie potężny język zorientowany na macierz z rozbudowanymi zestawami narzędzi (pakietami dodatków) i środowiskiem symulacji wizualnej Simulink. Jest szeroko stosowany w środowisku akademickim i przemysłowym do prototypowania algorytmów przed wdrożeniem ich w kodzie produkcyjnym.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metodologías de prueba
 Las pruebas son la forma de ganar confianza en que su código funciona y, lo que es más importante, en que los cambios no rompan lo que ya funciona. Las buenas pruebas detectan errores antes que los usuarios, documentan el comportamiento esperado y permiten una refactorización valiente. Este archivo cubre el espectro completo de estrategias de prueba, desde pruebas unitarias hasta pruebas de un extremo a otro, y los principios que hacen que las pruebas sean efectivas.
 ---

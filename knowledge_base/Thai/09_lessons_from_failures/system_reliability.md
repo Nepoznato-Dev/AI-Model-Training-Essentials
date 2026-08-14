@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ปัญหาความน่าเชื่อถือของระบบ
 เอกสารนี้รวบรวมปัญหาด้านความน่าเชื่อถือ รวมถึงหน่วยความจำรั่ว สภาพการแข่งขัน ข้อผิดพลาดในการเขียนโปรแกรมที่เกิดขึ้นพร้อมกัน และความล้มเหลวในการออกแบบระบบ
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # فيجوال بيسك — الأخطاء الشائعة والأنماط المضادة
 يقوم هذا المستند بفهرسة الأخطاء والتراكيب والأنماط المضادة الأكثر شيوعًا في Visual Basic (VB.NET) مع التصحيحات.
 ---

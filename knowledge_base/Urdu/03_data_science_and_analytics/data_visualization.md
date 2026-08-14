@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ڈیٹا ویژولائزیشن
 ایک اچھی طرح سے ڈیزائن کردہ چارٹ ایسے نمونوں کو ظاہر کر سکتا ہے جو اعداد کی میزیں چھپتے ہیں۔ ایک ناقص ڈیزائن والا گمراہ، الجھن، یا بور کر سکتا ہے۔ ڈیٹا ویژولائزیشن ڈیٹا کو بصری کہانیوں میں تبدیل کرنے کا ہنر ہے جو فیصلوں سے آگاہ کرتی ہے۔ اس فائل میں چارٹ کے انتخاب، ڈیزائن کے اصول، عام غلطیاں، اور ان ٹولز کا احاطہ کیا گیا ہے جو یہ سب ممکن بناتے ہیں۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Perl
 Perl diciptakan oleh Larry Wall pada tahun 1987 sebagai alat pengolah teks praktis. Ini menjadi tulang punggung pengembangan web awal (skrip CGI), administrasi sistem, bioinformatika, dan pemrograman jaringan. Filosofi Perl adalah "Ada Lebih dari Satu Cara Untuk Melakukannya" (TMTOWTDI) — bahasa ini memberi Anda berbagai pendekatan untuk setiap masalah, mengutamakan ekspresi daripada keseragaman.
 Pengaruh Perl pada pemrograman modern sangat besar namun seringkali tidak terlihat: ekspresi reguler, yang dipengaruhi oleh pencocokan pola Perl, kini menjadi standar dalam Python, JavaScript, Java, dan sebagian besar bahasa lainnya. CPAN (Comprehensive Perl Archive Network) adalah salah satu repositori paket perangkat lunak pertama dan menginspirasi sistem selanjutnya seperti PyPI Python dan npm Node.

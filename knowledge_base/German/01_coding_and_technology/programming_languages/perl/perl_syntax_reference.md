@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für Perl (5.38+). Es ergänzt die Hauptreferenz zu Perl, indem es sich auf umfassende Syntaxmuster, reguläre Ausdrücke, Referenzen und die Textverarbeitungsleistung von Perl konzentriert.
 ---

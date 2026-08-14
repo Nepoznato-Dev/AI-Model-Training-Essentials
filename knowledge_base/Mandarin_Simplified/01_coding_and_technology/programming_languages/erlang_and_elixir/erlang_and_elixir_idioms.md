@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang 和 Elixir — 惯用模式和最佳实践
 本指南涵盖了 BEAM VM 上 Erlang 和 Elixir 的惯用模式。
 ---

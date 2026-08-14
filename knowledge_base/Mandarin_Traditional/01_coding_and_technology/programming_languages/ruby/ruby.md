@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 紅寶石
 Ruby 是一種動態、解釋性、物件導向的程式語言，由 Yukihiro "Matz" Matsumoto 創建，並於 1995 年在日本首次發布。 Ruby 的設計重點是程式設計師的幸福——它的語法優雅而自然，讀起來幾乎像英語一樣。 Ruby 中的一切都是對象，包括整數和布林值等基本類型。 Ruby 因 Ruby on Rails Web 框架而聞名，透過普及約定優於配置和快速原型設計，徹底改變了 Web 開發。
 除了 Rails 之外，Ruby 還用於腳本編寫、自動化、DevOps 工具（Chef、Puppet）以及作為通用語言。其富有表現力的語法和強大的元編程功能使其成為一種編寫的樂趣。

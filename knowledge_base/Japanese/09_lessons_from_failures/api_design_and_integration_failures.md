@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API 設計と統合の失敗
 API (アプリケーション プログラミング インターフェイス) は現代のソフトウェアの結合組織であり、サービスの通信、サードパーティの統合、チームの独立した作業を可能にします。 API 設計に問題があると、統合の失敗、セキュリティの脆弱性、開発者の不満、コストのかかる書き換えなど、その影響がそれに依存するすべてのシステムに波及します。システムが確実に通信できない統合障害は、運用インシデントの最も一般的な原因の 1 つです。
 ---

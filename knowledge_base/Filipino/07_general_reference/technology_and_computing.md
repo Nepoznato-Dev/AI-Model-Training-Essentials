@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teknolohiya at Computing
 Ang pag-compute ay nasa lahat ng dako — sa iyong telepono, sa iyong sasakyan, sa iyong refrigerator, sa iyong mga medikal na device, at sa imprastraktura na nagpapatakbo ng modernong lipunan. Hindi mo kailangang maging isang programmer upang makinabang mula sa pag-unawa kung paano gumagana ang lahat. Sinasaklaw ng file na ito ang mga pangunahing kaalaman: kung ano ang isang computer, kung paano gumagana ang internet, kung paano binuo ang software, at ang mga konsepto na humuhubog sa digital na mundo.
 > **Gustong lumalim pa?** Ang file na ito ay isang malawak na pangkalahatang-ideya. Para sa detalyadong saklaw ng anumang paksa, tingnan ang mga nakalaang file sa[`01_coding_and_technology/`](../01_coding_and_technology/)— kabilang ang[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), at.

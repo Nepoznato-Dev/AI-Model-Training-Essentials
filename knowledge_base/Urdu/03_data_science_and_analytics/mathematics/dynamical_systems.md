@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # متحرک نظام
 ایک **متحرک نظام** بیان کرتا ہے کہ ایک ریاست ایک مقررہ اصول کے مطابق وقت کے ساتھ کیسے تیار ہوتی ہے۔ سیاروں کے مدار سے لے کر آبادی کی حرکیات تک، موسم کے نمونوں سے لے کر نیورل نیٹ ورکس کی تربیت تک، متحرک نظام کا نظریہ یہ سمجھنے کے لیے زبان اور اوزار فراہم کرتا ہے کہ چیزیں کیسے بدلتی ہیں۔ یہ فائل عام تفریق مساوات (ODEs)، جزوی تفریق مساوات (PDEs)، استحکام تجزیہ، افراتفری، اور تقسیم کا احاطہ کرتی ہے۔
 ---

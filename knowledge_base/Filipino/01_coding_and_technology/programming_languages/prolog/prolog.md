@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog
 Ang Prolog (Programming in Logic) ay isang logic programming language na nilikha noong 1972 nina Alain Colmerauer at Philippe Roussel. Hindi tulad ng lahat ng iba pang wika sa listahang ito, hindi sinasabi ng Prolog sa computer *kung paano* lulutasin ang isang problema — idineklara mo *ano* ang totoo (mga katotohanan at panuntunan), at ang inference engine ng Prolog ay nagtatatag ng sagot sa pamamagitan ng lohikal na pagbabawas.
 Ang Prolog ay ang piniling wika para sa mga expert system, natural na pagpoproseso ng wika, at pananaliksik sa AI noong 1980s. Pinalakas nito ang proyekto ng Fifth Generation Computer System ng Japan at ginamit sa Watson ng IBM para sa natural na pag-unawa sa wika. Ngayon, ang Prolog ay ginagamit sa paglutas ng hadlang, pag-iskedyul, uri ng hinuha, legal na pangangatwiran, at kahit saan ang mga problema ay natural na ipinahayag bilang mga lohikal na relasyon.

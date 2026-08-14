@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Przyszłość geostrategiczna
 ## Przegląd
 Era amerykańskiej dominacji po zakończeniu zimnej wojny ustępuje miejsca czemuś bardziej chaotycznemu: wielobiegunowy świat, w którym władza jest rozproszona, nasila się konkurencja o technologię i zasoby, a wyzwania takie jak zmiany klimatyczne i pandemie nie respektują granic. Zbudowany po 1945 r. oparty na zasadach ład międzynarodowy jest poddawany próbie ze wszystkich stron. Oto, co się zmienia, kto rośnie i gdzie znajdują się punkty tarcia.

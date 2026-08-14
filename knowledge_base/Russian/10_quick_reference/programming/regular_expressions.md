@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Шпаргалка по регулярным выражениям
 Регулярные выражения (regex) — это шаблоны для сопоставления текста. Они используются повсюду — поиск и замена, проверка ввода, анализ журналов, извлечение данных и многое другое. Это практический справочник, а не учебник.
 ---

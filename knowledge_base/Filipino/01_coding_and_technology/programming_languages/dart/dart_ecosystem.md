@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang tool, framework, at imprastraktura sa Dart ecosystem.
 ---

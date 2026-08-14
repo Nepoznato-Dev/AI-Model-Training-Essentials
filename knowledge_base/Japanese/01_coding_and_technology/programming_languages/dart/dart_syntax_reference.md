@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart — 構文リファレンス
 このドキュメントは、Dart (3.x) の包括的で構造化された構文リファレンスを提供します。これは、網羅的な構文パターン、null 安全性、非同期プログラミング、Flutter 指向の設計パターンに焦点を当てることで、メインの Dart リファレンスを補完します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genetik und Genomik
 Genetik ist das Studium der Vererbung – wie Merkmale durch die DNA von den Eltern an die Nachkommen weitergegeben werden. Genomik ist die Untersuchung des gesamten Genoms: aller Gene, der nichtkodierenden Regionen, wie sie interagieren und wie sie sich zwischen Individuen und Populationen unterscheiden. Der Übergang von der Genetik zur Genomik wurde durch die Sequenzierungstechnologie vorangetrieben – wir gingen von der Untersuchung eines Gens nach dem anderen zum Lesen ganzer Genome in Stunden über und generierten Daten, die Medizin, Landwirtschaft, Forensik und unser Verständnis der Evolution verändern.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sztuka i literatura
 Ludzka ekspresja twórcza – czy to w książkach, obrazach, muzyce czy filmie – jest jednym z najtrwalszych zapisów cywilizacji. Zrozumienie głównych gatunków, ruchów i postaci daje kontekst światu, w którym żyjemy dzisiaj. Każda powieść, każda symfonia, każdy film jest rozmową z tym, co było wcześniej.
 ---

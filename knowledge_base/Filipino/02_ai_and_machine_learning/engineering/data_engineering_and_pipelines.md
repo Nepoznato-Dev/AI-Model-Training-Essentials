@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Engineering at Pipelines
 Ang data engineering ay ang disiplina sa pagbuo ng mga system na gumagalaw, nagbabago, at nag-iimbak ng data sa sukat. Kung walang maaasahang pipeline ng data, hindi masasanay ang mga modelo ng machine learning, nagpapakita ang mga dashboard ng mga stale na numero, at ang mga desisyon sa negosyo ay batay sa hula. Sinasaklaw ng file na ito ang arkitektura, mga tool, at mga kasanayan para sa pagbuo ng imprastraktura ng data na gumagana.
 ---

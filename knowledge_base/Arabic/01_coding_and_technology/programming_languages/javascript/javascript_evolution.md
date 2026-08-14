@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جافا سكريبت — تاريخ الإصدار وتطوره
 ## الجدول الزمني
 | النسخة | سنة | الموضوع الرئيسي |

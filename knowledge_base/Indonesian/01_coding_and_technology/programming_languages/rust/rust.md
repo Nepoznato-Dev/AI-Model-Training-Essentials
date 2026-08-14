@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #karat
 Rust adalah bahasa pemrograman yang dikompilasi dan diketik secara statis yang pertama kali dirilis pada tahun 2015, awalnya dikembangkan oleh Graydon Hoare di Mozilla. Janji utama Rust adalah **keamanan memori tanpa pengumpulan sampah**. Ia mencapai hal ini melalui sistem kepemilikannya — seperangkat aturan yang diberlakukan pada waktu kompilasi yang menghilangkan seluruh kategori bug (dereferensi penunjuk nol, data race, buffer overflows, use-after-free) sambil memproduksi kode secepat C atau C++.
 Rust telah terpilih sebagai bahasa pemrograman "paling disukai" dalam Survei Pengembang Stack Overflow selama beberapa tahun berturut-turut. Ini semakin banyak digunakan dalam pemrograman sistem, WebAssembly, alat CLI, infrastruktur cloud, dan sebagai pengganti C/C++ dalam konteks kritis keamanan. Kernel Linux sekarang menerima kode Rust.

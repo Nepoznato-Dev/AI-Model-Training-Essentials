@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ صاف، جدید COBOL کوڈ لکھنے کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

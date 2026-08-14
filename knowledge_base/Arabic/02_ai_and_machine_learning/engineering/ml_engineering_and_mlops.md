@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # هندسة ML وMLOps
 إن بناء نموذج للتعلم الآلي هو نصف المعركة فقط. إدخاله في الإنتاج، والحفاظ على تشغيله بشكل موثوق، ومراقبة الانجراف، والتكرار عليه - وهنا يأتي دور هندسة ML وMLOps. يغطي هذا الملف دورة الحياة الكاملة من التجربة إلى نظام الإنتاج.
 ---

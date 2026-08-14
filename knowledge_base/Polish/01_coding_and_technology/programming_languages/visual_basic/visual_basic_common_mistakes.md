@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i antywzorce w Visual Basic (VB.NET) wraz z poprawkami.
 ---

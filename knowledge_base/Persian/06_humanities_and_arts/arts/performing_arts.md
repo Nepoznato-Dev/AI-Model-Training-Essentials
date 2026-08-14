@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # هنرهای نمایشی
 هنرهای نمایشی - تئاتر، فیلم، رقص و اجرای موسیقی - جایی است که هنر با حضور زنده مخاطبان روبرو می شود. برخلاف نقاشی روی دیوار یا کتاب روی قفسه، اجرا در زمان واقعی آشکار می‌شود و تجربه‌ای مشترک بین هنرمند و تماشاگر ایجاد می‌کند که برای هزاران سال مرکز فرهنگ بشری بوده است.
 ---

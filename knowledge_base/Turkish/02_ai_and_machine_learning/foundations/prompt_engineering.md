@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hızlı Mühendislik
 İstem mühendisliği, bir dil modelinden mümkün olan en iyi çıktıyı elde etmek için girdi istemlerini tasarlama, iyileştirme ve optimize etme uygulamasıdır. Hem sanat hem de bilimdir ve LLM davranışını ince ayar yapmadan kontrol etmek için birincil arayüzdür.
 ---

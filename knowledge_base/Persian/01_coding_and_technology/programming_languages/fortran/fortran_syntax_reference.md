@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran - مرجع نحو
 این سند یک مرجع نحوی جامع و ساختار یافته برای Modern Fortran (2008/2018) ارائه می دهد. این مرجع اصلی Fortran را با تمرکز بر الگوهای نحوی جامع، عملیات آرایه، ماژول‌ها، OOP و محاسبات با کارایی بالا تکمیل می‌کند.
 ---

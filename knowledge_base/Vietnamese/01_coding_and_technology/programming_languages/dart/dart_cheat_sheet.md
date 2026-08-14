@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Phi tiêu — Bảng cheat
 ## Cơ bản
 ```dart

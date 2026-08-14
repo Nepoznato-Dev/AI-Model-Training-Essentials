@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 机器学习项目失败
 机器学习项目的失败率惊人——行业估计表明 60-85% 的机器学习项目从未投入生产。失败通常不在于算法；而在于算法。它们位于流程、数据、期望和组织环境中。了解机器学习项目失败的原因对于任何构建机器学习系统的人来说都是至关重要的，因为失败模式是可以预测的并且在很大程度上是可以避免的。
 ---

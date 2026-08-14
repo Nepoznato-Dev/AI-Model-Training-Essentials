@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مقامی AI فن تعمیر
 بڑے لینگویج ماڈلز کو مکمل طور پر ڈیوائس پر چلانے کے لیے ایک عملی گائیڈ — ہارڈ ویئر کے تحفظات، انفرنس انجن، میموری کی اصلاح، اور کنارے کی تعیناتی کے لیے سسٹم ڈیزائن۔
 ---

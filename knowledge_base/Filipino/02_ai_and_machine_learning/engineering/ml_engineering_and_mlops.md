@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML Engineering at MLOps
 Ang pagbuo ng isang machine learning model ay kalahati lamang ng labanan. Pagpasok nito sa produksyon, pagpapanatiling mapagkakatiwalaan, pagsubaybay para sa drift, at pag-ulit dito — kung saan pumapasok ang ML engineering at MLOps. Sinasaklaw ng file na ito ang buong lifecycle mula sa eksperimento hanggang sa production system.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Literature
 
 Literature is humanity's most enduring record of thought, emotion, and experience. From the oral epics of ancient civilizations to the digital-age novels of today, every work is in conversation with what came before. Understanding literary genres, movements, and techniques gives you a richer lens for reading — and for understanding the cultures that produced these works.

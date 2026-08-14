@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Métodos numéricos
 Los métodos numéricos son el puente entre la teoría matemática y la computación práctica. Si bien las matemáticas puras demuestran que existen soluciones, los métodos numéricos en realidad calculan respuestas aproximadas con precisión finita. Cada modelo de aprendizaje automático, simulación física y proceso de análisis de datos se basa en última instancia en la computación numérica. Comprender estos métodos (su precisión, estabilidad y limitaciones) es esencial para crear software confiable.
 ---

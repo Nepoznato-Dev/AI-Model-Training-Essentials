@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سی شارپ - تاریخچه نسخه و تکامل
 ## جدول زمانی
 | نسخه | سال | دات نت | تم کلید |

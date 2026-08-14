@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Discrete Mathematics
 Ang discrete mathematics ay ang pag-aaral ng mathematical structures na sa panimula ay mabibilang o pinaghihiwalay — kumpara sa tuloy-tuloy na matematika (calculus, real analysis), na tumatalakay sa makinis, walang patid na dami. Ang discrete math ay sumasailalim sa computer science, cryptography, disenyo ng algorithm, at mga istruktura ng data. Kung ang tuluy-tuloy na matematika ay naglalarawan sa pisikal na mundo, ang discrete math ay naglalarawan sa computational na mundo.
 ---

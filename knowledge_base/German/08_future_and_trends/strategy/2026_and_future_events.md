@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 2026 und zukünftige Ereignisse
 2026 ist ein Jahr, in dem viele langfristige Pläne zusammenlaufen. Es ist der 250. Jahrestag der Unabhängigkeitserklärung der USA, ein zentraler Kontrollpunkt für die UN-Ziele für nachhaltige Entwicklung (2020–2030) und ein Meilensteinjahr für Unternehmenspläne in den Bereichen KI, Weltraumforschung, Elektrofahrzeuge und erneuerbare Energien. Unabhängig davon, ob bestimmte Vorhersagen zutreffen oder nicht, geben die Trends, die das Jahr 2026 prägen, ein nützliches Bild davon, wohin sich die Dinge entwickeln.
 ---

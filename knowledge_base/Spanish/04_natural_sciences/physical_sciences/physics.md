@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Física
 La física plantea la pregunta más fundamental de la ciencia: ¿cómo se comportan la materia y la energía? Todo lo demás (química, biología, ingeniería) se basa en las respuestas. La física abarca desde la escala subatómica (mecánica cuántica) hasta la escala cósmica (relatividad general), y sus principios sustentan todas las demás ciencias naturales.
 ---

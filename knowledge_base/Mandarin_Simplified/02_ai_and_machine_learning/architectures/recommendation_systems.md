@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 推荐系统
 推荐系统预测用户接下来想要看到、购买或交互的内容。它们为社交媒体上的内容提要、电子商务网站上的产品建议、流媒体平台上的电影精选以及搜索结果提供支持。尽管大多数用户看不见，但它们是世界上最具商业影响力的人工智能系统之一——Netflix 估计，其推荐引擎通过减少用户流失，每年节省超过 10 亿美元。
 ---

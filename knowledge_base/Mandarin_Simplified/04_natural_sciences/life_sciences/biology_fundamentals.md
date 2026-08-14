@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 生物学基础知识
 生物学是生命的科学。所有生物都有某些共同特征：它们由细胞组成，它们使用能量，它们生长，它们对环境做出反应，它们繁殖，它们进化。生物学涵盖从单个细胞内的分子机械到整个生态系统的相互作用，它是医学、农业、生物技术和保护的基础。
 ---

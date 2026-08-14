@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # اسمبلی کی زبان — عام غلطیاں اور مخالف پیٹرن
 یہ دستاویز تصحیح کے ساتھ x86-64 اسمبلی میں سب سے عام غلطیوں، ٹریپس، اور اینٹی پیٹرن کی فہرست بناتی ہے۔
 ---

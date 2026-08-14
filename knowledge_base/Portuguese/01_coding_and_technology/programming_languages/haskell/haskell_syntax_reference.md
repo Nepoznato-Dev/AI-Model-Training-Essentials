@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — Referência de sintaxe
 Este documento fornece uma referência de sintaxe estruturada e abrangente para Haskell (GHC 9.x). Ele complementa a referência principal de Haskell, concentrando-se em padrões de sintaxe exaustivos, sistema de tipos, mônadas, avaliação preguiçosa e idiomas de programação funcional.
 ---

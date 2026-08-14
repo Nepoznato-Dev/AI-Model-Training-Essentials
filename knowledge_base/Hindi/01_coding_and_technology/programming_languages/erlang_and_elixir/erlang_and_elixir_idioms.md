@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # एरलांग और अमृत - मुहावरेदार पैटर्न और सर्वोत्तम अभ्यास
 यह मार्गदर्शिका BEAM VM पर एर्लांग और एलिक्सिर के लिए मुहावरेदार पैटर्न को कवर करती है।
 ---

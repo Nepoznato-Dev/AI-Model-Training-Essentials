@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مجرد ریاضی
 مجرد ریاضی ریاضی کے ڈھانچے کا مطالعہ ہے جو بنیادی طور پر قابل شمار یا الگ ہوتے ہیں - مسلسل ریاضی (کیلکولس، حقیقی تجزیہ) کے برخلاف، جو ہموار، غیر منقطع مقداروں سے متعلق ہے۔ مجرد ریاضی کمپیوٹر سائنس، خفیہ نگاری، الگورتھم ڈیزائن، اور ڈیٹا ڈھانچے کو زیر کرتا ہے۔ اگر مسلسل ریاضی طبعی دنیا کو بیان کرتا ہے تو مجرد ریاضی کمپیوٹیشنل دنیا کو بیان کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # التجميع - الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية لكتابة كود التجميع النظيف والقابل للصيانة (تركيز x86/x64 مع بناء جملة NASM).
 ---

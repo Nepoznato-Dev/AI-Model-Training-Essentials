@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java: historial de versiones y evolución
 ## Línea de tiempo
 | Versión | Fecha de lanzamiento | Tema clave |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Chimie
 Si la physique est la règle du jeu, la chimie est ce qui se produit lorsque les pièces interagissent. La chimie étudie la façon dont les atomes se lient, se séparent et se réorganisent, c'est-à-dire comment se comportent tous les matériaux. Il comble le fossé entre la physique fondamentale et la complexité de la biologie, de la géologie et de l’ingénierie.
 ---

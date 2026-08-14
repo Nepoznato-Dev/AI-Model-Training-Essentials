@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Traitement du signal
 Le traitement du signal est la science de l'analyse, de la modification et de la synthèse de signaux, c'est-à-dire des représentations de grandeurs physiques variant dans le temps, l'espace ou la fréquence. L'audio, les images, la vidéo, les données des capteurs, les ondes cérébrales, les cours boursiers sont tous des signaux. Les outils mathématiques de traitement du signal (transformées de Fourier, filtres, théorie de l'échantillonnage) sont fondamentaux pour l'apprentissage automatique, les communications, l'imagerie médicale et pratiquement tous les domaines travaillant avec des données.
 ---

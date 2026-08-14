@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir - مرجع نحو
 این سند یک مرجع نحوی جامع و ساختار یافته برای Erlang و Elixir ارائه می دهد. این مرجع اصلی را با تمرکز بر تطبیق الگو، مدیریت فرآیند، رفتارهای OTP و الگوهای سیستم مقاوم به خطا تکمیل می کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで慣用的な Go コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

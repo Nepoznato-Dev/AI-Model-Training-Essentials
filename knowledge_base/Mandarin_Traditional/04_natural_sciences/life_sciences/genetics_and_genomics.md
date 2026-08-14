@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 遺傳學和基因組學
 遺傳學是一門研究遺傳的學科，即性狀如何透過 DNA 從父母傳給後代。基因組學是對整個基因組的研究：所有基因、非編碼區域、它們如何相互作用以及它們如何在個體和人群中變化。從遺傳學到基因組學的轉變是由定序技術推動的——我們從一次研究一個基因發展到在數小時內讀取整個基因組，產生的數據正在改變醫學、農業、法醫學以及我們對演化的理解。
 ---

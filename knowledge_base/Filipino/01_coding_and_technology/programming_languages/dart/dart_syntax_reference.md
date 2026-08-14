@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa Dart (3.x). Kinukumpleto nito ang pangunahing sanggunian ng Dart sa pamamagitan ng pagtutuon sa mga kumpletong pattern ng syntax, null na kaligtasan, async programming, at mga pattern ng disenyo na nakatuon sa Flutter.
 ---

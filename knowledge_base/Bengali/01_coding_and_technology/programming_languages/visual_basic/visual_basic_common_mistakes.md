@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ভিজ্যুয়াল বেসিক — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্নস
 এই নথিটি সংশোধন সহ ভিজুয়াল বেসিক (VB.NET) এর সবচেয়ে সাধারণ ভুল, ফাঁদ এবং অ্যান্টি-প্যাটার্নগুলি ক্যাটালগ করে।
 ---

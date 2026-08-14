@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #جافا سكريبت
 JavaScript هي لغة برمجة ديناميكية ومفسرة أنشأها Brendan Eich في 10 أيام فقط في عام 1995. وقد تم تصميمها في الأصل لإضافة التفاعل إلى صفحات الويب، وقد تطورت لتصبح لغة البرمجة الأكثر استخدامًا في العالم. يتم تشغيل JavaScript في كل متصفح ويب، وعلى الخوادم عبر Node.js، وفي تطبيقات سطح المكتب (Electron)، وتطبيقات الهاتف المحمول (React Native)، وحتى الأنظمة المدمجة.
 تعتبر اللغة فريدة من نوعها من حيث أنها الخيار الوحيد لتطوير الويب من جانب العميل - حيث يدعمها كل متصفح محليًا. هذا الاحتكار، جنبًا إلى جنب مع ظهور JavaScript الكامل (Node.js، وDeno، وBun)، يجعله أمرًا لا غنى عنه.

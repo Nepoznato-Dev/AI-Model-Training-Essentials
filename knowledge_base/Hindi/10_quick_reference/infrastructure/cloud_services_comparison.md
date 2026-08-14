@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # क्लाउड सेवाओं की तुलना
 कंप्यूट, स्टोरेज, डेटाबेस, एआई/एमएल, नेटवर्किंग, मॉनिटरिंग और इंफ्रास्ट्रक्चर-ए-कोड में तीन प्रमुख क्लाउड प्रदाताओं - एडब्ल्यूएस, एज़्योर और गूगल क्लाउड - की एक साथ-साथ तुलना। आर्किटेक्ट्स के लिए यह तय करने के लिए उपयोगी है कि किस प्लेटफ़ॉर्म का उपयोग करना है, या एक क्लाउड से दूसरे क्लाउड पर सेवाओं की मैपिंग करना है।
 ---

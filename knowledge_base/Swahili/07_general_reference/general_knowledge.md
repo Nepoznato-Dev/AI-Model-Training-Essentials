@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Maarifa ya Jumla
 Faili hii ni mkusanyiko wa ukweli na dhana zinazojitokeza mara kwa mara katika mazungumzo, habari, elimu na maisha ya kila siku. Ifikirie kama maarifa ya usuli - aina ya kitu kinachokusaidia kuelewa unachosoma, kusikia au kushuhudia.
 ---

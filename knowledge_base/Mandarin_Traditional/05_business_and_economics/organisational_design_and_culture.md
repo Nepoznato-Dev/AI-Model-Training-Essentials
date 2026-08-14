@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 組織設計與文化
 組織設計是為了有效執行策略而對結構、流程、角色和決策權進行的有意安排。文化是塑造人們實際合作方式的共同價值、信念、規範和行為。結構提供架構；文化塑造行為。可以在紙上重新設計結構，但如果文化不支持變革，實施就會失敗。同樣，強大的文化與無效的結構結合也會逐漸損害組織績效。最有效的組織會同時解決這兩個問題，並認識到它們之間是緊密相連的。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Mkwaruzo - Makosa ya Kawaida & Miundo ya Kupinga
 Hati hii inaorodhesha makosa na mitego ya kawaida katika Mwanzo na masahihisho.
 ---

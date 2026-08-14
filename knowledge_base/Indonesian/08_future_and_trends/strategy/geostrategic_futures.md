@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Masa Depan Geostrategis
 ## Ringkasan
 Era dominasi Amerika pasca-Perang Dingin memberi jalan pada sesuatu yang lebih berantakan: dunia multipolar di mana kekuasaan tersebar, persaingan semakin ketat dalam hal teknologi dan sumber daya, dan tantangan seperti perubahan iklim dan pandemi tidak mengenal batas negara. Tatanan internasional berbasis aturan yang dibangun setelah tahun 1945 sedang diuji dari segala arah. Inilah yang mengalami pergeseran, siapa yang naik, dan di mana titik gesekannya.

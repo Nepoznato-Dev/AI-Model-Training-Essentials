@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript
 
 TypeScript is a statically typed superset of JavaScript developed by Microsoft (led by Anders Hejlsberg) and first released in 2012. It adds optional type annotations, interfaces, generics, and advanced type-system features to JavaScript — then compiles down to plain JavaScript that runs anywhere JavaScript runs. TypeScript is not a separate language or runtime; it is JavaScript with a type checker.

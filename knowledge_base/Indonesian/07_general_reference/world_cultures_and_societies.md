@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Budaya dan Masyarakat Dunia
 Budaya adalah kerangka suatu masyarakat — kepercayaan, nilai, adat istiadat, perilaku, dan artefak bersama yang digunakan para anggotanya untuk menghadapi dunia mereka dan satu sama lain. Memahami keragaman budaya bukan berarti menghafalkan hal-hal sepele; ini adalah tentang mengakui bahwa ada satu cara dalam memandang dunia, dan bahwa sistem-sistem lain koheren secara internal, berlandaskan sejarah, dan layak untuk dipahami berdasarkan pengertiannya masing-masing.
 ---

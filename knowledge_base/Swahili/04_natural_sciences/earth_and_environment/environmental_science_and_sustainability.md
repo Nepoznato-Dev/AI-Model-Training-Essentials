@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sayansi ya Mazingira na Uendelevu
 Sayansi ya mazingira hutumia mbinu za fizikia, kemia, biolojia, jiolojia, na uchumi kwa swali: "Ni nini kinatokea kwa sayari yetu, na nini kinaweza kufanywa kuhusu hilo?" Ni nyanja ya taaluma mbalimbali - muunganiko wa taaluma nyingi - ambayo huchangia kwa kina chake cha uchanganuzi na umuhimu wake wa sera.
 Mvutano wa kimsingi katika sayansi ya mazingira ni huu: ustaarabu wa binadamu unategemea kuchimba rasilimali kutoka kwa mazingira, lakini kuchimba rasilimali hizo hubadilisha mazingira kwa njia ambazo zinaweza kudhoofisha mifumo tunayoitegemea. Kuelewa kwamba kitanzi cha maoni ni sehemu nzima kwa ufupi.

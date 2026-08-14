@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # اسمبلی کی زبان - نحوی حوالہ
 یہ دستاویز x86-64 اسمبلی (NASM نحو) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل ہدایات کے زمروں، ایڈریسنگ موڈز، اسٹیک فریم کنونشنز، اور سسٹم پروگرامنگ پیٹرن پر توجہ مرکوز کرکے مرکزی اسمبلی ریفرنس کی تکمیل کرتا ہے۔
 ---

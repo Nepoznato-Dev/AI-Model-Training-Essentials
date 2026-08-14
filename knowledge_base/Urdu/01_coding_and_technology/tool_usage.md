@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # آلے کا استعمال
 ## گٹ - ورژن کنٹرول
 گٹ ایک تقسیم شدہ ورژن کنٹرول سسٹم ہے۔ ہر ڈویلپر کے پاس اپنی مقامی مشین پر مخزن کی تاریخ کی مکمل کاپی ہوتی ہے۔

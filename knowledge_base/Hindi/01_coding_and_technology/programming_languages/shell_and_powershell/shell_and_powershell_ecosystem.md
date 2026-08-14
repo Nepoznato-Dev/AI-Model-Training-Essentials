@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # शेल और पावरशेल - इकोसिस्टम और टूलींग गाइड
 यह मार्गदर्शिका शेल स्क्रिप्टिंग (बैश/ज़ेडएसएच) और पावरशेल के लिए आवश्यक टूल, फ्रेमवर्क और बुनियादी ढांचे को कवर करती है।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # روش های مدیریت و پروژه
 مدیریت افراد و پروژه ها از جمله مسئولیت های مهم در هر سازمانی است. مهارت های فنی ورود را فراهم می کند، اما توانایی رهبری تیم ها، تصمیم گیری، برقراری ارتباط موثر و ارائه نتایج تعیین می کند که آیا اهداف به دست می آیند یا خیر. این فایل چارچوب ها، متدولوژی ها و مهارت های عملی را پوشش می دهد که مدیران موثر و رهبران پروژه از آنها استفاده می کنند.
 ---

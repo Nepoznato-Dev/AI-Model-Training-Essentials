@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #NLP cơ bản
 Xử lý ngôn ngữ tự nhiên (NLP) là lĩnh vực dạy máy hiểu, tạo và làm việc với ngôn ngữ của con người. Nó hỗ trợ các công cụ tìm kiếm, chatbot, hệ thống dịch thuật, phân tích cảm xúc và các mô hình ngôn ngữ lớn (LLM) đã biến đổi AI kể từ năm 2020. Tệp này đề cập đến quá trình phát triển từ các kỹ thuật cổ điển sang kiến ​​trúc dựa trên Transformer hiện đại.
 ---

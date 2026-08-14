@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Numerical Methods
 
 Numerical methods are the bridge between mathematical theory and practical computation. While pure mathematics proves that solutions exist, numerical methods actually compute approximate answers to finite precision. Every machine learning model, physics simulation, and data analysis pipeline ultimately relies on numerical computation. Understanding these methods — their accuracy, stability, and limitations — is essential for building reliable software.

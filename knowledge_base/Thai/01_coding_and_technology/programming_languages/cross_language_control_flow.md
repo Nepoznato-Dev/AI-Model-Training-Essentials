@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Control Flow"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # การเปรียบเทียบข้ามภาษา - โฟลว์การควบคุม
 ## คำสั่ง If/Else
 ```python

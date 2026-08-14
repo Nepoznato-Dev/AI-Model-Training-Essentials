@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — 치트 시트
 ## 기본
 ```lua

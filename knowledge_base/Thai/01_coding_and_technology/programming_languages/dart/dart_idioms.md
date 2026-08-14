@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนและแนวปฏิบัติที่ดีที่สุดในการเขียนโค้ด Dart ที่มีสำนวนสะอาดตา
 ---

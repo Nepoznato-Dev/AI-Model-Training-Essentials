@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Chemistry
 
 If physics is the rules of the game, chemistry is what happens when the pieces interact. Chemistry studies how atoms bond, break apart, and rearrange — which is to say, how all materials behave. It bridges the gap between fundamental physics and the complexity of biology, geology, and engineering.

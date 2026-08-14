@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML ইঞ্জিনিয়ারিং এবং MLOps
 একটি মেশিন লার্নিং মডেল তৈরি করা মাত্র অর্ধেক যুদ্ধ। এটিকে উৎপাদনে নিয়ে আসা, এটিকে নির্ভরযোগ্যভাবে চলমান রাখা, ড্রিফটের জন্য পর্যবেক্ষণ করা এবং এটির উপর পুনরাবৃত্তি করা — এখানেই ML ইঞ্জিনিয়ারিং এবং MLOps আসে৷ এই ফাইলটি পরীক্ষা থেকে উৎপাদন ব্যবস্থা পর্যন্ত সম্পূর্ণ জীবনচক্রকে কভার করে৷
 ---

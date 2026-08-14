@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 지리공간 분석
 지리공간 분석은 지리적 구성 요소(좌표, 주소, 경계 또는 지구상의 위치와 연결된 모든 데이터)가 있는 데이터를 조사하는 프로세스입니다. "고객은 어디에 있습니까?", "최적의 경로는 무엇입니까?", "시간이 지남에 따라 토지 이용이 어떻게 변화합니까?"와 같은 질문에 답합니다. 모든 데이터 세트에는 공간 차원이 있으며 이를 이해하면 순수 통계 분석이 놓치는 통찰력을 얻을 수 있습니다.
 ---

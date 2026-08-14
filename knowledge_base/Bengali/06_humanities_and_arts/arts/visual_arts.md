@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ভিজ্যুয়াল আর্টস
 ভিজ্যুয়াল আর্ট হল মানুষের যোগাযোগের প্রাচীনতম মাধ্যম — Lascaux-এর গুহাচিত্র থেকে শুরু করে আজকের ডিজিটাল স্থাপনা পর্যন্ত। শিল্প আন্দোলন, মাধ্যম এবং সৃজনশীল কাজগুলি সংরক্ষণ করে এমন প্রতিষ্ঠানগুলি বোঝা আপনাকে সমাজগুলি কীভাবে সহস্রাব্দ জুড়ে সৌন্দর্য, শক্তি, আধ্যাত্মিকতা এবং ভিন্নমত প্রকাশ করেছে তার জন্য গভীর উপলব্ধি দেয়।
 ---

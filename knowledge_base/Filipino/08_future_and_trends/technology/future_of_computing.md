@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ang Kinabukasan ng Pag-compute
 Ang kinabukasan ng pag-compute ay hinuhubog ng mga puwersang humahamon sa mga pangunahing pagpapalagay sa nakalipas na 60 taon. Ang Batas ni Moore — ang obserbasyon na ang kapangyarihan ng pag-compute ay dumoble halos bawat dalawang taon — ay bumabagal. Ang arkitektura ng von Neumann — hiwalay na CPU at memorya — ay tumatama sa isang "memory wall." Nangangako ang quantum computing na lutasin ang mga problemang hindi kayang lutasin ng mga klasikal na computer. Ang mga neuromorphic chip ay ginagaya ang arkitektura ng utak. Inililipat ng Edge computing ang pagpoproseso mula sa mga sentralisadong data center. At binabago ng AI kung para saan ang mga computer — mula sa mga tool na nagsasagawa ng mga tagubilin hanggang sa mga system na natututo, bumubuo, at nangangatuwiran. Ang pag-unawa sa mga pagbabagong ito ay mahalaga para sa sinumang nagtatayo, bumibili, o umaasa sa teknolohiya.
 ---

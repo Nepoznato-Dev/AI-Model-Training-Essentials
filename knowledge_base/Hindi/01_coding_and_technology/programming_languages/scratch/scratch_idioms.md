@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # स्क्रैच - मुहावरेदार पैटर्न और सर्वोत्तम अभ्यास
 यह मार्गदर्शिका स्वच्छ, सुव्यवस्थित स्क्रैच परियोजनाओं को लिखने के लिए मुहावरेदार पैटर्न को कवर करती है।
 ---

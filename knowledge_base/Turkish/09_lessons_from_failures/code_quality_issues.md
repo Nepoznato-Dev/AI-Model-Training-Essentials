@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kod Kalitesi Sorunları
 Bu belge, hatalı değişken adları, zayıf belgeler, spagetti kodu, döngüsel bağımlılıklar ve diğer bakım sorunları dahil olmak üzere yaygın kod kalitesi sorunlarını birleştirir.
 ---

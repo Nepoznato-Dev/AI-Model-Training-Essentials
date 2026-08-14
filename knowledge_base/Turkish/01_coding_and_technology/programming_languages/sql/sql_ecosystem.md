@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz, SQL ekosistemindeki temel veritabanlarını, araçları ve altyapıyı kapsar.
 ---

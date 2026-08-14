@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — الأنماط الاصطلاحية وأفضل الممارسات
 يغطي هذا الدليل الأنماط الاصطلاحية لكتابة كود COBOL النظيف والحديث.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lý Thuyết Số
 Lý thuyết số là nghiên cứu về số nguyên - số nguyên và tính chất của chúng. Gauss gọi nó là “nữ hoàng toán học”. Mặc dù nghiên cứu những đối tượng đơn giản nhất (1, 2, 3, ...), lý thuyết số vẫn tạo ra một số vấn đề sâu sắc nhất và khó nhất trong toán học. Ngày nay, nó là nền tảng của mật mã hiện đại, thuật toán băm, mã sửa lỗi và tạo số ngẫu nhiên.
 ---

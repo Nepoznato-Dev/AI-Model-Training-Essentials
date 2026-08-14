@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — 構文リファレンス
 このドキュメントは、Ruby (3.x) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、ブロックとクロージャー、メタプログラミング、Ruby のイディオムに焦点を当て、メインの Ruby リファレンスを補完します。
 ---

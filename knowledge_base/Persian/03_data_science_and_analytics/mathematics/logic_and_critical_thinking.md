@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # منطق و تفکر انتقادی
 منطق مطالعه استدلال معتبر است - چگونگی ساخت استدلال های صحیح و شناسایی موارد ناقص. تفکر انتقادی عادت منظم زیر سوال بردن مفروضات، ارزیابی شواهد و استدلال دقیق است. این مهارت‌ها نه تنها در ریاضیات و علوم کامپیوتر، بلکه در تصمیم‌گیری‌های روزمره، تحقیقات علمی و پیمایش در دنیایی سرشار از اطلاعات ضروری هستند.
 ---

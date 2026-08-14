@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису SQL (ANSI SQL с примечаниями о различиях диалектов PostgreSQL/MySQL/SQLite). Он дополняет основной справочник по SQL, уделяя особое внимание исчерпывающим шаблонам запросов, оконным функциям, CTE и проектированию базы данных.
 ---

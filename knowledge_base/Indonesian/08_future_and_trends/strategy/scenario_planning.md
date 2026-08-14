@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perencanaan Skenario
 ## Ringkasan
 Tidak ada yang bisa memprediksi masa depan — tapi Anda bisa bersiap menghadapi beberapa kemungkinan yang masuk akal. Perencanaan skenario, yang lahir dari lembaga pemikir Perang Dingin dan disempurnakan oleh Shell selama krisis minyak tahun 1970-an, merupakan cara berpikir sistematis tentang ketidakpastian. Alih-alih bertaruh pada satu ramalan, Anda membangun cerita yang koheren tentang bagaimana segala sesuatunya mungkin terjadi, lalu menguji keputusan Anda terhadap semuanya. Berikut cara kerja metodologi, beserta skenario di seluruh domain utama.

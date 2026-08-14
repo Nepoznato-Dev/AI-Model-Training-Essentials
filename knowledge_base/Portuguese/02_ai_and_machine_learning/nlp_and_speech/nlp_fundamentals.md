@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fundamentos da PNL
 Processamento de Linguagem Natural (PNL) é o campo que ensina máquinas a compreender, gerar e trabalhar com a linguagem humana. Ele alimenta mecanismos de pesquisa, chatbots, sistemas de tradução, análise de sentimento e grandes modelos de linguagem (LLMs) que transformaram a IA desde 2020. Este arquivo cobre a evolução das técnicas clássicas às modernas arquiteturas baseadas em Transformer.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # فورتران - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والمكتبات والبنية التحتية الأساسية في نظام فورتران البيئي.
 ---

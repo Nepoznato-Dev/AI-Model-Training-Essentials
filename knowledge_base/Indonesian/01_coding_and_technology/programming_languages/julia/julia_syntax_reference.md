@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Julia (1.x). Ini melengkapi referensi utama Julia dengan berfokus pada pola sintaksis yang lengkap, banyak pengiriman, makro, metaprogramming, dan komputasi ilmiah.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Demografische Veränderungen
 ## Übersicht
 Demografische Entwicklungen sind Schicksal – oder sie passen zumindest stark dazu. Die Weltbevölkerung altert rapide, migriert in neuen Mustern, siedelt sich mit beispielloser Geschwindigkeit in Städten an und spaltet sich entlang von Generationengrenzen, die alles vom Wahlverhalten bis zu den Verbrauchergewohnheiten prägen. Diese Veränderungen werden sich über Jahrzehnte hinziehen, doch ihre Auswirkungen sind bereits sichtbar. Hier sind die vier großen Trends und was sie bedeuten.

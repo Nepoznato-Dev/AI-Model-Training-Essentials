@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — Erreurs courantes et anti-modèles
 Ce document répertorie les erreurs, pièges et anti-modèles les plus courants en C++. Chaque entrée montre l'approche incorrecte, explique pourquoi elle échoue et fournit la solution correcte. Le C++ moderne (C++11/14/17/20) fournit des outils pour éviter la plupart des pièges classiques.
 ---

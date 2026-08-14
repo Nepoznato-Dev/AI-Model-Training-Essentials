@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Arts
 
 Visual art is humanity's oldest form of communication — from the cave paintings of Lascaux to the digital installations of today. Understanding art movements, mediums, and the institutions that preserve creative works gives you a deeper appreciation for how societies have expressed beauty, power, spirituality, and dissent across millennia.

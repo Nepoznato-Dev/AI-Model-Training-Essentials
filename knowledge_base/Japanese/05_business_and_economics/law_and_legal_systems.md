@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 法律と法制度
 法律は、社会がその制度を通じて強制することに同意した一連の規則です。それは道徳とは同じではありません。非道徳的であることを合法にすることも、道徳的に正当化される違法なことを行うこともできます。法律は予測可能性を提供するために存在し、何が許可され、何が禁止され、ルールが破られた場合に何が起こるかを確立します。それがなければ、紛争は権力によって解決されます。これにより、紛争はプロセスによって解決されます。
 このファイルは、主要な法制度、法の主な分野、法制度が実際にどのように機能するかを形作る概念をカバーしています。

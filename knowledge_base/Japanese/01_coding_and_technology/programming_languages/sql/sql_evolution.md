@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — バージョン履歴と進化
 ## タイムライン
 |バージョン |年 |主要テーマ |

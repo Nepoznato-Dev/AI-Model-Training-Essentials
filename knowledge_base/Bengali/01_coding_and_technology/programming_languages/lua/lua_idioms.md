@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # লুয়া — ইডিওম্যাটিক প্যাটার্ন এবং সর্বোত্তম অভ্যাস
 এই নির্দেশিকাটি পরিচ্ছন্ন, ইডিওম্যাটিক লুয়া কোড লেখার জন্য বাহাদুরি প্যাটার্ন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

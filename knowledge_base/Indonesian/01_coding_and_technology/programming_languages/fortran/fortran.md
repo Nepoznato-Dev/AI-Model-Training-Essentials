@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #fortran
 Fortran (Terjemahan Formula) adalah bahasa pemrograman tingkat tinggi tertua yang masih digunakan secara luas, pertama kali dikembangkan oleh IBM pada tahun 1957 untuk komputasi ilmiah dan teknik. Meskipun usianya sudah tua, Fortran modern (Fortran 2008/2018/2023) adalah bahasa yang mampu dan berkinerja tinggi yang digunakan secara luas dalam prediksi cuaca numerik, dinamika fluida komputasi, simulasi fisika, pemodelan keuangan, dan komputasi kinerja tinggi (HPC). Banyak superkomputer tercepat di dunia menjalankan kode Fortran.
 Bahasa ini telah berkembang secara signifikan sejak awal kemunculannya. Fortran modern memiliki modul, tipe turunan, prosedur generik, coarrays (pemrograman paralel), dan interoperabilitas dengan C. Bahasa ini tetap menjadi bahasa pilihan untuk banyak aplikasi komputasi ilmiah yang mengutamakan kinerja.

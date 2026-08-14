@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en C++. Cada entrada muestra el enfoque incorrecto, explica por qué falla y proporciona la solución correcta. El C++ moderno (C++14/11/17/20) proporciona herramientas para evitar la mayoría de los errores clásicos.
 ---

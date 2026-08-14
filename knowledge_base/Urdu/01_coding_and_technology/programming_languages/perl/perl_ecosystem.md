@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # پرل - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ پرل ماحولیاتی نظام میں ضروری ٹولز، فریم ورک اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

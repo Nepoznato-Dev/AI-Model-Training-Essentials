@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Prolog. Nó bổ sung cho tham chiếu Prolog chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, thống nhất, quay lui, DCG và các thành ngữ lập trình logic.
 ---

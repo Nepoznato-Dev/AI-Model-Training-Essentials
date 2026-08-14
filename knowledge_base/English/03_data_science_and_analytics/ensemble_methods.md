@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ensemble Methods
 
 Ensemble methods combine multiple machine learning models to produce better predictions than any single model could achieve alone. The intuition is straightforward: if you have several models that are each somewhat accurate but make different errors, combining their predictions will cancel out individual mistakes and produce a more robust result. Ensembles are behind most competitive machine learning solutions and remain some of the most reliable techniques in production systems.

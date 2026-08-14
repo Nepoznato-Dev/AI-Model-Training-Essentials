@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamenti della PNL
 L'elaborazione del linguaggio naturale (NLP) è il campo in cui si insegna alle macchine a comprendere, generare e lavorare con il linguaggio umano. Alimenta motori di ricerca, chatbot, sistemi di traduzione, analisi del sentiment e i modelli linguistici di grandi dimensioni (LLM) che hanno trasformato l'intelligenza artificiale dal 2020. Questo file copre l'evoluzione dalle tecniche classiche alle moderne architetture basate su Transformer.
 ---

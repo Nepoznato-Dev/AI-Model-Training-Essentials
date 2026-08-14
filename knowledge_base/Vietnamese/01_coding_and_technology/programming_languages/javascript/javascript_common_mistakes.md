@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript — Các lỗi thường gặp và các mẫu phản kháng
 Tài liệu này liệt kê các lỗi, bẫy và mẫu chống phổ biến nhất trong JavaScript. Mỗi mục hiển thị cách tiếp cận không chính xác, giải thích lý do tại sao nó thất bại và cung cấp giải pháp chính xác.
 ---

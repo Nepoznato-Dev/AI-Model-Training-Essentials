@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL
 
 COBOL (Common Business-Oriented Language) is one of the oldest programming languages still in use, first developed in 1959. It was designed for business data processing — financial systems, payroll, banking, insurance, and government applications. COBOL's English-like syntax was intended to be readable by business managers, not just programmers.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usanifu wa AI wa Mitaa
 Mwongozo wa vitendo wa kuendesha miundo mikubwa ya lugha kwenye kifaa - mazingatio ya maunzi, injini za makisio, uboreshaji wa kumbukumbu, na muundo wa mfumo kwa ajili ya matumizi makali.
 ---

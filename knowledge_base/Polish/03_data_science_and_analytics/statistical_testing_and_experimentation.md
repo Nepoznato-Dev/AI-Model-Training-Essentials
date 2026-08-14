@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Testy statystyczne i eksperymenty
 Statystyka jest gramatyką nauki. Daje narzędzia umożliwiające odróżnienie rzeczywistych wzorców od przypadkowego szumu, zmierzenie, czy zmiana rzeczywiście poprawiła sytuację i podejmowanie decyzji w warunkach niepewności. W tym pliku omówiono podstawowe pojęcia związane z testowaniem hipotez, projektowaniem eksperymentów i typowymi pułapkami, w jakie wpadają ludzie.
 ---

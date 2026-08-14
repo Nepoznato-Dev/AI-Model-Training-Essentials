@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # শেল এবং পাওয়ারশেল — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকা শেল স্ক্রিপ্টিং (Bash/Zsh) এবং PowerShell-এর জন্য প্রয়োজনীয় টুল, ফ্রেমওয়ার্ক এবং অবকাঠামো কভার করে।
 ---

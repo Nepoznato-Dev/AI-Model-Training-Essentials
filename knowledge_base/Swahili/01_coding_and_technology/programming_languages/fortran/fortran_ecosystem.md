@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran - Mfumo wa ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, maktaba, na miundombinu katika mfumo ikolojia wa Fortran.
 ---

@@ -346,8 +346,10 @@ class SimpleAgent:
         user_lower = user_input.lower()
         
         if action == "remember":
-            # Parse: "remember topic | fact"
-            content = user_input.split("remember", 1)[1].strip().lstrip(":").strip()
+            # Parse: "remember topic | fact" — detect case-insensitively,
+            # but slice from original input to preserve user's casing.
+            idx = user_lower.find("remember")
+            content = user_input[idx + len("remember"):].strip().lstrip(":").strip()
             if "|" in content:
                 topic, fact = content.split("|", 1)
                 self.long_term.store(topic.strip(), fact.strip())
@@ -358,9 +360,12 @@ class SimpleAgent:
                 return f"Got it! I'll remember: '{content}'"
         
         elif action == "recall":
-            query = user_input.replace("recall", "").replace(":", "").strip()
             if "what do you know about" in user_lower:
-                query = user_lower.replace("what do you know about", "").strip().rstrip("?")
+                idx = user_lower.find("what do you know about")
+                query = user_input[idx + len("what do you know about"):].strip().rstrip("?")
+            else:
+                idx = user_lower.find("recall")
+                query = user_input[idx + len("recall"):].replace(":", "").strip()
             results = self.long_term.search(query)
             if results:
                 facts = "; ".join([f"{t}: {f}" for t, f in results])
@@ -368,7 +373,8 @@ class SimpleAgent:
             return f"I don't have any memories about '{query}'."
         
         elif action == "forget":
-            topic = user_input.split("forget", 1)[1].strip().lstrip(":").strip()
+            idx = user_lower.find("forget")
+            topic = user_input[idx + len("forget"):].strip().lstrip(":").strip()
             self.long_term.forget(topic)
             return f"I've forgotten about '{topic}'."
         
@@ -441,7 +447,8 @@ class SimpleAgent:
             return f"Yes, I remember! Your name is {stored_name}."
         
         if "my name is" in user_lower:
-            name = user_input.split("my name is", 1)[1].strip().rstrip(".")
+            idx = user_lower.find("my name is")
+            name = user_input[idx + len("my name is"):].strip().rstrip(".")
             self.long_term.store("user_name", name)
             return f"Nice to meet you, {name}! I'll remember your name."
         

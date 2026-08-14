@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 斯威夫特
 Swift 是一种现代编译型编程语言，由 Apple（由 Chris Lattner 领导）开发，于 2014 年首次发布。它旨在取代 Objective-C，成为 Apple 平台开发（iOS、macOS、watchOS、tvOS、visionOS）的主要语言。 Swift 将编译语言的性能与脚本语言的表达能力结合在一起，并且强调安全性——特别是在空值、内存管理和类型错误方面。
 除了 Apple 平台之外，Swift 越来越多地用于服务器端开发（Vapor、Hummingbird）、跨平台应用程序，甚至机器学习（Apple 的 Create ML）。随着 Swift on Server 和跨平台支持的推出，Swift 不再只是一种“Apple 语言”。

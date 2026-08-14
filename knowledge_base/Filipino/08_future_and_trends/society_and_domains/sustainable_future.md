@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sustainable Future
 ## Pangkalahatang-ideya
 Ang tanong ay hindi na *kung* kailangan ng mundo na lumipat sa isang napapanatiling ekonomiya, ngunit *gaano kabilis* at *sino ang namumuno*. Ang nababagong enerhiya na ngayon ang pinakamurang pinagmumulan ng kuryente sa karamihan ng mga pamilihan. Ang mga prinsipyo ng pabilog na ekonomiya ay lumilipat mula sa konsepto ng angkop na lugar patungo sa diskarte ng kumpanya. Ang mga lungsod ay muling iniisip ang lahat mula sa transportasyon hanggang sa basura. At ang karera sa net zero ay muling hinuhubog ang mga industriya mula sa enerhiya patungo sa pananalapi. Narito kung ano ang hitsura ng napapanatiling hinaharap sa apat na pangunahing dimensyon.

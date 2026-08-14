@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optik und Wellen
 Wellen sind überall: Schall, Licht, Wasser, Funksignale, Quantenwahrscheinlichkeitsamplituden, Börsenschwankungen und die Vibrationen neuronaler Netzwerkaktivierungen. Die Optik – das Studium des Lichts – ist die am weitesten entwickelte Wellenwissenschaft und ihre mathematischen Werkzeuge (Fourier-Analyse, Interferenz, Beugung) gelten für jedes Wellenphänomen. Das Verständnis von Wellen ist für die Signalverarbeitung, Bildanalyse, Kommunikation und die physikalische Ebene aller modernen Technologien von entscheidender Bedeutung.
 ---

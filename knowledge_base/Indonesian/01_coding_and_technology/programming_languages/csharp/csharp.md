@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C#"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C#
 C# (diucapkan "C-sharp") adalah bahasa pemrograman modern, berorientasi objek, dan aman untuk tipe yang dikembangkan oleh Microsoft di bawah kepemimpinan Anders Hejlsberg dan pertama kali dirilis pada tahun 2002. C# berjalan pada platform .NET dan dirancang untuk menggabungkan kekuatan C++ dengan produktivitas Visual Basic. Saat ini, C# adalah bahasa lintas platform serbaguna yang digunakan untuk aplikasi web (ASP.NET), perangkat lunak desktop (Windows), pengembangan game (Unity), aplikasi seluler (MAUI), layanan cloud (Azure), dan banyak lagi.
 C# terus menyerap ide-ide terbaik dari bahasa lain — LINQ, async/await, record, pencocokan pola — menjadikannya salah satu bahasa paling kaya fitur dan ramah pengembang yang tersedia.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teste estatístico e experimentação
 A estatística é a gramática da ciência. Fornece as ferramentas para distinguir padrões reais de ruídos aleatórios, para medir se uma mudança realmente melhorou as coisas e para tomar decisões sob incerteza. Este arquivo cobre os conceitos básicos de teste de hipóteses, projeto experimental e as armadilhas comuns que enganam as pessoas.
 ---

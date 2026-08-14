@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # زنگ زدگی - اشتباهات رایج و ضد الگوها
 این سند رایج ترین اشتباهات، تله ها و ضد الگوها را در Rust فهرست می کند. هر ورودی رویکرد نادرست را نشان می دهد، توضیح می دهد که چرا شکست می خورد، و راه حل صحیح را ارائه می دهد. کامپایلر Rust خطاهای زیادی پیدا می کند، اما درک این الگوها منحنی یادگیری شما را تسریع می کند.
 ---

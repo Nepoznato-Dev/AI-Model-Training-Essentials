@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teknoloji ve Bilgisayar
 Bilgisayar her yerde; telefonunuzda, arabanızda, buzdolabınızda, tıbbi cihazlarınızda ve modern toplumu yöneten altyapıda. Her şeyin nasıl çalıştığını anlamaktan yararlanmak için programcı olmanıza gerek yok. Bu dosya temel bilgileri kapsar: bilgisayar nedir, internet nasıl çalışır, yazılım nasıl oluşturulur ve dijital dünyayı şekillendiren kavramlar.
 > **Daha derine inmek mi istiyorsunuz?** Bu dosya geniş bir genel bakıştır. Herhangi bir konunun ayrıntılı kapsamı için, [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)vedahil olmak üzere [`01_coding_and_technology/`](../01_coding_and_technology/)'deki özel dosyalara bakın.

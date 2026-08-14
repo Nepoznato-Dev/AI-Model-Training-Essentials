@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cấu trúc dữ liệu và thuật toán
 Cấu trúc dữ liệu là cách chúng ta tổ chức dữ liệu trong bộ nhớ để các thao tác trên nó có hiệu quả. Thuật toán là quy trình từng bước để giải quyết vấn đề. Cùng nhau, chúng tạo thành nền tảng của khoa học máy tính — mọi chương trình bạn từng sử dụng đều dựa vào chúng. Việc chọn cấu trúc dữ liệu phù hợp có thể biến một chương trình cực kỳ chậm thành một chương trình nhanh và việc biết thuật toán phù hợp có thể biến một vấn đề nan giải thành một vấn đề tầm thường.
 ---

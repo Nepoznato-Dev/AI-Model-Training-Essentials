@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini na Mazingira ya Mfano wa AI ya Ndani
 Uchambuzi wa muundo wa Microsoft wa Phi-3-mini - falsafa yake ya muundo, chaguo za usanifu, na sifa za utendakazi - na mafanikio yake yanatufundisha nini kuhusu kujenga mifumo bora na bora ya AI.
 ---

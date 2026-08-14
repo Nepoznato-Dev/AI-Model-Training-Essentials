@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで機能的な Scala 3 コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

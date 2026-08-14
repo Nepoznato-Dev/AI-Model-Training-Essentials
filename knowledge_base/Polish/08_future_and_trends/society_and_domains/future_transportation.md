@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Transport przyszłości
 ## Przegląd
 Dotarcie z punktu A do punktu B będzie wyglądać zupełnie inaczej. Samochody autonomiczne poruszają się już po drogach publicznych. Samoloty elektryczne kończą loty testowe. Koncepcje Hyperloop obiecują podróżowanie z prędkością pociągu w lampach próżniowych. A latające taksówki – niegdyś kreskówki – przechodzą proces certyfikacji. Oto stan rozwoju technologii zmieniających sposób, w jaki się poruszamy.

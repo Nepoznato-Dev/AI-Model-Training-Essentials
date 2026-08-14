@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matematyka dyskretna
 Matematyka dyskretna to badanie struktur matematycznych, które są zasadniczo policzalne lub oddzielone — w przeciwieństwie do matematyki ciągłej (rachunek różniczkowy, analiza rzeczywista), która zajmuje się gładkimi, nieprzerwanymi wielkościami. Matematyka dyskretna stanowi podstawę informatyki, kryptografii, projektowania algorytmów i struktur danych. Jeśli matematyka ciągła opisuje świat fizyczny, matematyka dyskretna opisuje świat obliczeniowy.
 ---

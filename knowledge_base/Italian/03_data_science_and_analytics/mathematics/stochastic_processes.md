@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Processi stocastici
 Un **processo stocastico** è una raccolta di variabili casuali indicizzate dal tempo (o dallo spazio). Mentre la teoria della probabilità studia i singoli eventi casuali, i processi stocastici studiano come la casualità si evolve nel tempo. Modellano i prezzi delle azioni, la lunghezza delle code, la diffusione delle malattie, la generazione del linguaggio e le dinamiche di formazione dei modelli di apprendimento automatico.
 ---

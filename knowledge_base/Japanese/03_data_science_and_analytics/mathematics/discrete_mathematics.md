@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 離散数学
 離散数学は、滑らかで切れ目のない量を扱う連続数学 (微積分、実解析) とは対照的に、基本的に可算または分離された数学的構造の研究です。離散数学は、コンピューター サイエンス、暗号化、アルゴリズム設計、およびデータ構造を支えます。連続数学が物理世界を記述する場合、離散数学は計算世界を記述します。
 ---

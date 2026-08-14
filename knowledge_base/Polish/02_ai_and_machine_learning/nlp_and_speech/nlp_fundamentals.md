@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Podstawy NLP
 Przetwarzanie języka naturalnego (NLP) to dziedzina uczenia maszyn rozumienia, generowania i pracy z ludzkim językiem. Obsługuje wyszukiwarki, chatboty, systemy tłumaczeniowe, analizę nastrojów i duże modele językowe (LLM), które zmieniły sztuczną inteligencję od 2020 r. Ten plik opisuje ewolucję od technik klasycznych do nowoczesnych architektur opartych na transformatorach.
 ---

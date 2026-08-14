@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Thay đổi nhân khẩu học
 ## Tổng quan
 Nhân khẩu học là số phận - hoặc ít nhất là chúng có vần điệu mạnh mẽ với nó. Dân số thế giới đang già đi nhanh chóng, di cư theo những mô hình mới, tập trung vào các thành phố với tốc độ chưa từng có và phân chia theo các dòng thế hệ định hình mọi thứ, từ hành vi bầu cử đến thói quen tiêu dùng. Những thay đổi này sẽ diễn ra trong nhiều thập kỷ nhưng tác động của chúng đã rõ ràng. Dưới đây là bốn xu hướng lớn và ý nghĩa của chúng.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 그래프 이론
 **그래프**는 모서리(링크)로 연결된 정점(노드)으로 구성된 수학적 구조입니다. 그래프 모델 관계: 소셜 네트워크, 로드맵, 신경 네트워크, 종속성, 통신 채널. 그래프 이론(이러한 구조에 대한 연구)은 컴퓨터 과학, 운영 연구 및 데이터 과학의 핵심인 알고리즘과 정리를 제공합니다.
 ---

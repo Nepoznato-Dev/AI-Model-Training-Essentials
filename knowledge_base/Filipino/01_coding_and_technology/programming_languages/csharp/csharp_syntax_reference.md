@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax reference para sa Modern C# (C# 10/11/12 sa .NET 7/8). Kinukumpleto nito ang pangunahing sanggunian ng C# sa pamamagitan ng pagtutok sa mga kumpletong pattern ng syntax, LINQ, async/wait, pagtutugma ng pattern, at mga modernong tampok.
 ---

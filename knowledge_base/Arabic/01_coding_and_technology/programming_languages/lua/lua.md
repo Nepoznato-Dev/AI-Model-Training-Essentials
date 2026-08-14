@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # لوا
 Lua هي لغة برمجة نصية خفيفة الوزن وقابلة للتضمين مصممة لتوسيع التطبيقات. تم إنشاء لغة Lua عام 1993 في الجامعة البابوية الكاثوليكية في ريو دي جانيرو بالبرازيل، وهي إحدى أسرع لغات البرمجة النصية المتاحة. حجمه الصغير (المترجم هو 120 كيلو بايت تقريبًا) وبساطته تجعله الخيار الأمثل للبرمجة النصية لتطوير الألعاب والأنظمة المدمجة والتكوين.
 تشتهر Lua بأنها لغة البرمجة النصية وراء Roblox (منصة الألعاب التي تضم أكثر من 200 مليون مستخدم شهريًا)، وإضافات World of Warcraft، والعديد من محركات الألعاب (Love2D، وDefold، وCorona SDK). كما يتم استخدامه في Nginx (OpenResty)، وRedis، وWireshark.

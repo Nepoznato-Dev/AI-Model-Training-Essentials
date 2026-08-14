@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Psikoloji ve İnsan Davranışı
 Psikoloji, insanların nasıl ve neden böyle düşündüklerini, hissettiklerini ve davrandıklarını inceleyen bilimdir. Bu zihin okumak değildir ve sağduyu değildir; ancak bazen sağduyunun önerdiğini doğrular, bazen de onunla tamamen çelişir. Psikoloji diğer tüm bilimlerle aynı bilimsel yöntemi kullanır: gözlemleyin, hipotez kurun, test edin, gözden geçirin. Onu zorlu kılan şey, konusunun (insan zihninin) bildiğimiz en karmaşık nesne olmasıdır.
 Bu dosya psikolojinin ana alanlarını kapsar: nasıl düşünürüz, nasıl gelişiriz, başkalarından nasıl etkileniriz, ne yanlış gider ve bu konuda neler yapılabilir.

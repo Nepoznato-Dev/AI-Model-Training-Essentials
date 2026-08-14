@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — 语法参考
 本文档为 Lua (5.4) 提供了全面、结构化的语法参考。它通过关注详尽的语法模式、表和元表、协程以及 Lua 独特的设计理念来补充主要的 Lua 参考资料。
 ---

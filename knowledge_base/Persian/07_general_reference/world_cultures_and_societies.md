@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فرهنگ ها و جوامع جهانی
 فرهنگ چارچوب یک جامعه است - باورها، ارزش ها، آداب و رسوم، رفتارها و مصنوعات مشترکی که اعضا برای کنار آمدن با دنیای خود و با یکدیگر استفاده می کنند. درک تنوع فرهنگی به خاطر به خاطر سپردن چیزهای بی اهمیت نیست. این در مورد شناخت این است که یک راه برای دیدن جهان بین هزاران راه است، و سیستم های دیگر از نظر درونی منسجم، از نظر تاریخی پایه گذاری شده اند و ارزش درک را بر اساس شرایط خود دارند.
 ---

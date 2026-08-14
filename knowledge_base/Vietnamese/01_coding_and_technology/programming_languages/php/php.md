@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #PHP
 PHP (Bộ tiền xử lý siêu văn bản) là ngôn ngữ kịch bản phía máy chủ được Rasmus Lerdorf tạo ra vào năm 1994 và phát hành lần đầu tiên vào năm 1995. Ban đầu được thiết kế để tạo các trang web động, PHP đã phát triển thành một ngôn ngữ có mục đích chung đầy đủ tính năng. Nó hỗ trợ khoảng 75% tất cả các trang web có ngôn ngữ phía máy chủ đã biết, bao gồm WordPress, Facebook (ban đầu), Wikipedia, Slack và hàng triệu trang web khác.
 PHP hiện đại (8.x) là một ngôn ngữ rất khác so với PHP đầu những năm 2000. Hiện tại nó có các thuộc tính được gõ, biểu thức khớp, enum, sợi, lớp chỉ đọc và một hệ thống kiểu mạnh mẽ. Bất chấp danh tiếng của nó trong giới phát triển (thường bị chỉ trích vì thiếu nhất quán), PHP vẫn thực tế, được triển khai rộng rãi và tiếp tục cải tiến.

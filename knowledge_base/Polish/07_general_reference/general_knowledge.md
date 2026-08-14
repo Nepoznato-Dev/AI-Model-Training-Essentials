@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Wiedza ogólna
 Ten plik to zbiór faktów i koncepcji, które regularnie pojawiają się w rozmowach, wiadomościach, edukacji i życiu codziennym. Pomyśl o tym jak o wiedzy podstawowej — o czymś, co pomaga ci zrozumieć to, co czytasz, słyszysz lub czego doświadczasz.
 ---

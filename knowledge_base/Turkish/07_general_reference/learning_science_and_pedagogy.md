@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bilim ve Pedagoji Öğrenmek
 Bilim öğrenmek, insanların nasıl öğrendiklerini inceleyen disiplinler arası bir çalışmadır; psikolojiden, sinir biliminden, eğitimden ve bilişsel bilimden yararlanır. Pedagoji, öğretimin uygulaması ve metodolojisidir. Birlikte, eğitim içeriği öğreten, eğiten, mentorluk yapan veya tasarlayan herkesle ilgili soruları ele alıyorlar: Hangi yöntemler insanların etkili bir şekilde öğrenmesine yardımcı olur? Hangi yaygın çalışma teknikleri verimsizdir? Optimum akılda tutma ve aktarma için öğretim nasıl yapılandırılmalıdır?
 ---

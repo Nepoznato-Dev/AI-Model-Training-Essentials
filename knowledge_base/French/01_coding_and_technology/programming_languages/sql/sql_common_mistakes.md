@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL – Erreurs courantes et anti-modèles
 Ce document répertorie les erreurs, pièges et anti-modèles les plus courants dans SQL avec des corrections.
 ---

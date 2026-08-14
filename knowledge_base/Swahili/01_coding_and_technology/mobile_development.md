@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Maendeleo ya Simu
 Ukuzaji wa rununu ni mazoezi ya kuunda programu za simu mahiri na kompyuta kibao - haswa kwa iOS (Apple) na Android (Google). Inajumuisha kila kitu kutoka kwa muundo wa UI kwa skrini ndogo hadi kudhibiti maisha ya betri, kushughulikia uthabiti wa mtandao na kusambaza programu kupitia duka. Uga umekomaa kwa kiasi kikubwa, na mifumo ya majukwaa mtambuka sasa inashindana na ukuzaji asilia kwa hali nyingi za utumiaji.
 ---

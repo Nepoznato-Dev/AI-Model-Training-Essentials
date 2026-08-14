@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — częste błędy i anty-wzorce
 Dokument ten kataloguje najczęstsze błędy, pułapki i anty-wzorce w Prologu wraz z poprawkami.
 ---

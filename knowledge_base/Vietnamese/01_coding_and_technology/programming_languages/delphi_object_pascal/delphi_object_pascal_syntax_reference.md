@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Object Pascal — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho Delphi/Object Pascal. Nó bổ sung cho tài liệu tham khảo Delphi chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, các tính năng OOP, khái quát, bản ghi và thành ngữ ngôn ngữ.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pagproseso ng Pagsasalita at Audio
 Sinasaklaw ng pagpoproseso ng pagsasalita at audio ang mga teknolohiyang nagbibigay-daan sa mga makina na marinig, maunawaan, bumuo, at magmanipula ng tunog. Kabilang dito ang speech recognition (paggagawa ng mga sinasalitang salita sa teksto), speech synthesis (pagpalit ng teksto sa pasalitang salita), pagkakakilanlan ng tagapagsalita, pagbuo ng musika, at pag-unawa sa tunog sa kapaligiran. Ang larangan ay binago sa pamamagitan ng malalim na pag-aaral — ang mga modernong sistema ay lumalapit sa katumpakan sa antas ng tao para sa pagkilala sa pagsasalita at gumawa ng mga nakakatakot na natural na sintetikong boses.
 ---

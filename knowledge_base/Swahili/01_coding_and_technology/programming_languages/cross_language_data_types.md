@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ulinganisho wa Lugha Mtambuka — Aina na Miundo ya Data
 ## Aina za Zamani
 | Andika | Chatu | JavaScript | Kutu | Nenda | Java | C | C++ | C# |

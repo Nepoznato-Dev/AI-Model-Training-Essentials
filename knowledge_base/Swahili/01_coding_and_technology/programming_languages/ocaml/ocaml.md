@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #OCaml
 OCaml (Objective Caml) ni lugha ya utendakazi ya programu iliyotengenezwa INRIA nchini Ufaransa, iliyotolewa kwa mara ya kwanza mwaka wa 1996. Inachanganya udhihirisho wa upangaji wa utendaji kazi na vipengele vya vitendo: mfumo wa aina wenye nguvu wenye maelekezo ya aina (Hindley-Milner), kulinganisha muundo, aina za data za aljebra, na upangaji wa hiari wa kitu. OCaml inakusanya msimbo asilia haraka na pia inasaidia bytecode.
 Programu maarufu ya ulimwengu halisi ya OCaml ni kampuni ya biashara ya **Jane Street**, ambayo hutumia OCaml kwa miundombinu yake yote ya biashara. Inatumika pia katika ukuzaji wa mkusanyaji (mkusanyaji wa Rust awali iliandikwa katika OCaml), uthibitishaji rasmi, mifumo ya kifedha, na uthibitisho wa nadharia.

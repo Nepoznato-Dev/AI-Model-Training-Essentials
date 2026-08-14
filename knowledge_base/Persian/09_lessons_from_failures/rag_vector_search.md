@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # شکست RAG و Vector Search
 این سند خرابی‌های رایج در سیستم‌های Retrieval-Augmented Generation (RAG)، استفاده از جاسازی و پیاده‌سازی‌های جستجوی برداری را ادغام می‌کند.
 ---

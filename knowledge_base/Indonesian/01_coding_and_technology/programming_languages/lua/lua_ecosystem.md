@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat, perpustakaan, dan infrastruktur penting dalam ekosistem Lua.
 ---

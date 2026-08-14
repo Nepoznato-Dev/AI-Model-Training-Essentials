@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 博弈论
 博弈论是战略互动的数学——在这种情况下，你的结果不仅取决于你自己的选择，还取决于他人的选择。从公司之间的价格战到核军备竞赛，从在线拍卖到进化生物学，博弈论提供了分析冲突与合作的工具。通过多智能体强化学习、生成对抗网络（GAN）和在线平台的机制设计，它与机器学习的相关性越来越高。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #أساسيات الأمن السيبراني
 الأمن هو نظام يجب دمجه في كل طبقة من طبقات النظام منذ البداية، بدلاً من إضافته كفكرة لاحقة. سواء كنت تقوم ببناء تطبيق ويب، أو إدارة البنية التحتية، أو شحن واجهة برمجة التطبيقات (API)، فإن فهم مشهد التهديد وأساسيات الدفاع أمر ضروري.
 ---

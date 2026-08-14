@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pagbabagong Edukasyon
 ## Pangkalahatang-ideya
 Ang tradisyunal na modelo ng edukasyon - umupo sa isang silid-aralan sa loob ng labindalawang taon, maaaring pumunta sa unibersidad, pagkatapos ay magtrabaho - ay nasisira. Ang mga AI tutor ay maaari na ngayong magbigay ng personalized na pagtuturo sa laki. Ang bilis ng pagbabago sa teknolohiya ay nangangahulugan na ang panghabambuhay na pag-aaral ay hindi na opsyonal. At ang mga employer ay lalong nagmamalasakit sa kung ano ang maaari mong *gawin*, hindi lamang kung ano ang mga kredensyal na hawak mo. Narito kung paano muling naiisip ang edukasyon.

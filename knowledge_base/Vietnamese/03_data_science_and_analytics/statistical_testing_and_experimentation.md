@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kiểm tra và thử nghiệm thống kê
 Thống kê là ngữ pháp của khoa học. Nó cung cấp cho bạn các công cụ để phân biệt các mẫu thực với nhiễu ngẫu nhiên, để đo lường xem một thay đổi có thực sự cải thiện mọi thứ hay không và đưa ra quyết định trong điều kiện không chắc chắn. Tệp này bao gồm các khái niệm cốt lõi về kiểm tra giả thuyết, thiết kế thử nghiệm và những cạm bẫy phổ biến khiến mọi người vấp ngã.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Graph Neural Networks
 
 Graph Neural Networks (GNNs) are neural networks designed to operate on graph-structured data — networks of nodes connected by edges. While traditional neural networks work on grids (images) or sequences (text), GNNs handle arbitrary relational structures: social networks, molecular graphs, knowledge graphs, road networks, recommendation graphs, and more. They've become essential for drug discovery, fraud detection, recommendation systems, and any domain where relationships between entities matter.

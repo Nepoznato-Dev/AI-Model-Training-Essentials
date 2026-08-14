@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bulut Mimarisi
 Bulut bilişim, kuruluşların yazılım oluşturma, dağıtma ve ölçeklendirme biçimini temelden değiştirdi. Fiziksel sunucular satın almak ve bakımını yapmak yerine, talep üzerine bilgi işlem kaynaklarını tedarik edebilir, kullandığınız kadar ödeyebilir ve dakikalar içinde küresel olarak ölçeklendirebilirsiniz. Bu dosya, bilmeniz gereken temel kavramları, mimari kalıpları, hizmetleri ve en iyi uygulamaları kapsar.
 ---

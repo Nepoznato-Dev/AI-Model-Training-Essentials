@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI katika Maisha ya Kila Siku
 Akili Bandia si dhana ya wakati ujao tena - imejikita katika maisha ya kila siku. Kuanzia unapoamka na kuangalia simu yako (algorithms za mapendekezo huamua arifa zipi unazoona) hadi unapolala (spika yako mahiri huchakata amri yako ya mwisho), mifumo ya AI inafanya maamuzi kwa niaba yako, kwa ajili yako, na wakati mwingine kukuhusu. Kuelewa wapi AI inaonekana, jinsi inavyofanya kazi katika kiwango cha msingi, na madhara yake si hiari tena - ni hitaji la uraia ulioarifiwa katika karne ya 21.
 ---

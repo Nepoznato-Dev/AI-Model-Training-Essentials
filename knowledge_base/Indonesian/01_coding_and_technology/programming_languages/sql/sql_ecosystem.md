@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Panduan Ekosistem & Peralatan
 Panduan ini mencakup database, alat, dan infrastruktur penting dalam ekosistem SQL.
 ---

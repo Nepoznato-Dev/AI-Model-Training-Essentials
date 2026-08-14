@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، کتابخانه‌ها و زیرساخت‌های ضروری در اکوسیستم Lua را پوشش می‌دهد.
 ---

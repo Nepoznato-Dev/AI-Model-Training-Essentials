@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya uandishi wa Bash/Zsh na PowerShell.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Performance Optimisation
 
 Performance optimisation is the practice of making software faster — reducing response times, increasing throughput, lowering memory usage, and eliminating bottlenecks. It's one of the most impactful skills a developer can have, because slow software loses users, wastes resources, and frustrates everyone. But it's also one of the most commonly done wrong, with developers optimising the wrong things based on intuition rather than evidence.

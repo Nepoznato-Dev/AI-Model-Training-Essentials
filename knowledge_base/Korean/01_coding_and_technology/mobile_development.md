@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 모바일 개발
 모바일 개발은 주로 iOS(Apple) 및 Android(Google)용 스마트폰 및 태블릿용 애플리케이션을 구축하는 관행입니다. 작은 화면을 위한 UI 디자인부터 배터리 수명 관리, 네트워크 불안정 처리, 스토어를 통한 앱 배포까지 모든 것을 포괄합니다. 이 분야는 이제 대부분의 사용 사례에서 기본 개발과 경쟁하는 크로스 플랫폼 프레임워크로 인해 상당히 성숙해졌습니다.
 ---

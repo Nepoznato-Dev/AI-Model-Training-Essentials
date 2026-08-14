@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java — 생태계 및 도구 가이드
 이 가이드에서는 Java 생태계의 필수 도구, 프레임워크 및 인프라를 다룹니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Misingi ya Usalama Mtandaoni
 Usalama ni taaluma ambayo lazima iunganishwe katika kila safu ya mfumo tangu mwanzo, badala ya kuongezwa kama mawazo ya baadaye. Iwe ni kujenga programu ya wavuti, kudhibiti miundombinu, au kusafirisha API, kuelewa mazingira ya tishio na misingi ya ulinzi ni muhimu.
 ---

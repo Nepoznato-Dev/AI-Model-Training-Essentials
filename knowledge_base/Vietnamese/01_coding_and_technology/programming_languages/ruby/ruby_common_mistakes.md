@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Những lỗi thường gặp và các mẫu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong Ruby. Mỗi mục hiển thị cách tiếp cận không chính xác, giải thích lý do tại sao nó thất bại và cung cấp giải pháp chính xác.
 ---

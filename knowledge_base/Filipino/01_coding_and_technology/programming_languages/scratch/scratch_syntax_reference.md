@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa Scratch 3.0. Kinukumpleto nito ang pangunahing sanggunian ng Scratch sa pamamagitan ng pagtuon sa mga kumpletong kategorya ng block, mga pattern na hinimok ng kaganapan, pamamahala ng sprite, pag-clone, at mga diskarte sa creative coding.
 ---

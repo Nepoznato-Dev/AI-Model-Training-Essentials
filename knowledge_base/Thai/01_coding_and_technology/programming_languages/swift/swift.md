@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #สวิฟท์
 Swift เป็นภาษาโปรแกรมคอมไพล์สมัยใหม่ที่พัฒนาโดย Apple (นำโดย Chris Lattner) และเปิดตัวครั้งแรกในปี 2014 ได้รับการออกแบบมาเพื่อแทนที่ Objective-C ในฐานะภาษาหลักสำหรับการพัฒนาแพลตฟอร์ม Apple (iOS, macOS, watchOS, tvOS, VisionOS) Swift ผสมผสานประสิทธิภาพของภาษาที่คอมไพล์เข้ากับความหมายของภาษาสคริปต์ และเน้นเรื่องความปลอดภัย โดยเฉพาะเกี่ยวกับค่า Null การจัดการหน่วยความจำ และข้อผิดพลาดด้านประเภท
 นอกเหนือจากแพลตฟอร์มของ Apple แล้ว Swift ยังถูกใช้มากขึ้นเพื่อการพัฒนาฝั่งเซิร์ฟเวอร์ (Vapor, Hummingbird), แอปพลิเคชันข้ามแพลตฟอร์ม และแม้แต่การเรียนรู้ของเครื่อง (Create ML ของ Apple) ด้วยการเปิดตัว Swift บนเซิร์ฟเวอร์และการรองรับข้ามแพลตฟอร์ม Swift จึงเป็นมากกว่า "ภาษาของ Apple"

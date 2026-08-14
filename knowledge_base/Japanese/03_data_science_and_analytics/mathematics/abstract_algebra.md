@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 抽象代数
 抽象代数では、代数構造、つまり特定の規則に従う演算を備えた集合を研究します。抽象代数は数値を扱う代わりに、公理を満たすあらゆるオブジェクトを扱います。この一般性は強力です。「群」について証明された定理は、整数、対称性、行列、順列、および量子状態に同時に適用されます。抽象代数は、暗号学、誤り訂正符号、量子コンピューティング、物理学全般で使用される対称性解析を支えています。
 ---

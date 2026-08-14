@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Giao thông tương lai
 ## Tổng quan
 Đi từ A đến B trông rất khác. Xe tự lái đã có mặt trên đường công cộng. Máy bay điện đang hoàn thành chuyến bay thử nghiệm. Khái niệm Hyperloop hứa hẹn khả năng di chuyển với tốc độ nhanh như tàu hỏa trong ống chân không. Và taxi bay - từng là nội dung của phim hoạt hình - đang được chứng nhận. Đây là trạng thái hoạt động của các công nghệ đang định hình lại cách chúng ta di chuyển.

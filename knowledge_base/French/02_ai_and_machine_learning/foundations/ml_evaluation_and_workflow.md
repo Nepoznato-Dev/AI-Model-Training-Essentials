@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Évaluation et flux de travail de l'apprentissage automatique
 Un guide pratique sur le cycle de vie du ML — de la définition des problèmes à la surveillance de la production — en mettant l'accent sur les métriques, la validation et le débogage.
 ---

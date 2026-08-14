@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 일상생활 속의 AI
 인공 지능은 더 이상 미래 지향적인 개념이 아니라 일상 생활에 내장되어 있습니다. 당신이 일어나서 휴대전화를 확인하는 순간(추천 알고리즘이 당신에게 표시되는 알림을 결정함)부터 잠에 드는 순간(스마트 스피커가 마지막 명령을 처리함)까지, AI 시스템은 당신을 대신해, 때로는 당신에 대해 결정을 내립니다. AI가 나타나는 위치, 기본 수준에서 AI가 어떻게 작동하는지, 그 의미가 무엇인지 이해하는 것은 더 이상 선택 사항이 아닙니다. 이는 21세기 정보에 입각한 시민의 요구 사항입니다.
 ---

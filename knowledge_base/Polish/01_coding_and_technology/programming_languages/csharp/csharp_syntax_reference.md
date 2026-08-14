@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — Odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni nowoczesnego języka C# (C# 10/11/12 na platformie .NET 7/8). Uzupełnia główne odniesienia do języka C#, koncentrując się na wyczerpujących wzorcach składni, LINQ, async/await, dopasowywaniu wzorców i nowoczesnych funkcjach.
 ---

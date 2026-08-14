@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 세계종교와 비교신화
 세계 종교는 수천 년 동안 인류 문명을 형성해 온 주요 신앙, 실천, 공동체 체계입니다. 비교 신화는 다양한 문화가 창조, 영웅, 신, 존재의 의미에 관해 이야기하는 이야기와 수천 마일, 수천 년에 걸쳐 분리된 전통 전반에 걸쳐 반복되는 놀라운 패턴을 연구합니다. 사람들이 믿는 것을 믿는 이유, 문화가 어떻게 다른지, 인간 경험을 통합하는 것이 무엇인지 이해하려면 두 가지를 모두 이해하는 것이 필수적입니다.
 ---

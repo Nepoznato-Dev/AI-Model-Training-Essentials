@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Sztuczna inteligencja
 Sztuczna inteligencja to próba zbudowania maszyn, które mogą robić rzeczy, które wymagałyby inteligencji, gdyby zrobił to człowiek: rozpoznawać twarze, rozumieć mowę, podejmować decyzje, pisać teksty, grać w gry, prowadzić samochody, diagnozować choroby. Dziedzina ta jest tak stara jak sama informatyka — Alan Turing pytał: „Czy maszyny potrafią myśleć?” w 1950 r., ale niedawny eksplozja możliwości (lata 20. XXI w.) uczyniła sztuczną inteligencję jedną z najważniejszych i najbardziej kwestionowanych technologii w historii ludzkości.
 ---

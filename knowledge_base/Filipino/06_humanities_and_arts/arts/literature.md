@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Panitikan
 Ang panitikan ay ang pinakamatagal na talaan ng pag-iisip, damdamin, at karanasan ng sangkatauhan. Mula sa mga oral na epiko ng mga sinaunang sibilisasyon hanggang sa mga digital-age na nobela sa ngayon, ang bawat akda ay nakikipag-usap sa kung ano ang nauna. Ang pag-unawa sa mga pampanitikang genre, galaw, at diskarte ay nagbibigay sa iyo ng mas mahusay na lente para sa pagbabasa — at para sa pag-unawa sa mga kulturang gumawa ng mga gawang ito.
 ---

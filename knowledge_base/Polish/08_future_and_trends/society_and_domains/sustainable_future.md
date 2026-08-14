@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zrównoważona przyszłość
 ## Przegląd
 Pytaniem nie jest już, *czy* świat musi przejść na zrównoważoną gospodarkę, ale *jak szybko* i *kto przewodzi*. Energia odnawialna jest obecnie najtańszym źródłem energii na większości rynków. Zasady gospodarki o obiegu zamkniętym odchodzą od koncepcji niszowej do strategii korporacyjnej. Miasta na nowo zastanawiają się nad wszystkim, od transportu po odpady. Wyścig do zera netto zmienia branżę z energetyki na finanse. Oto jak wygląda zrównoważona przyszłość w czterech kluczowych wymiarach.

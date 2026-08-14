@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — 생태계 및 툴링 가이드
 이 가이드에서는 COBOL 생태계의 필수 도구, 컴파일러 및 인프라를 다룹니다.
 ---

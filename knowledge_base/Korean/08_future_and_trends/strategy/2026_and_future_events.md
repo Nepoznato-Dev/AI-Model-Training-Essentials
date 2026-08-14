@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 2026 및 향후 이벤트
 2026년은 많은 장기계획이 수렴되는 해이다. 올해는 미국 독립선언 250주년이자 UN 지속가능발전목표(2020~2030)의 중간 지점이자 AI, 우주 탐사, 전기 자동차, 재생 에너지 분야 기업 로드맵의 이정표가 되는 해입니다. 구체적인 예측이 나오든 안 나오든 2026년을 형성하는 추세는 상황이 어디로 향하고 있는지에 대한 유용한 그림을 제공합니다.
 ---

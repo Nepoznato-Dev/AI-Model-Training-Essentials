@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 科特林
 Kotlin 是一种静态类型、编译型编程语言，由 JetBrains 开发，于 2011 年首次发布（2016 年发布 1.0）。它在 Java 虚拟机 (JVM) 上运行，并且与 Java 完全可互操作——这意味着您可以使用 Kotlin 中的任何 Java 库，并从 Java 调用 Kotlin 代码，而无需任何包装器。 2017 年，Google 宣布 Kotlin 成为 Android 开发的首选语言，从此成为 Android 的主导语言。
 Kotlin 旨在解决 Java 的痛点：冗长、空指针异常和缺少现代功能。结果是一种感觉像现代化 Java 的语言——简洁、安全且富有表现力——同时保持与庞大的 Java 生态系统的完全兼容性。

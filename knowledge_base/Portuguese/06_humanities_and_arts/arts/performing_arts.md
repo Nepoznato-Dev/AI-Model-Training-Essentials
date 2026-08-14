@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Artes Cênicas
 As artes cênicas – teatro, cinema, dança e performance musical – são onde a arte encontra a presença viva de um público. Ao contrário de uma pintura numa parede ou de um livro numa estante, a performance desenrola-se em tempo real, criando uma experiência partilhada entre artista e espectador que tem sido central para a cultura humana há milhares de anos.
 ---

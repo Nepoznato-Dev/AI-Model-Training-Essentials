@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pengujian Statistik dan Eksperimen
 Statistika adalah tata bahasa ilmu pengetahuan. Ini memberi Anda alat untuk membedakan pola nyata dari gangguan acak, untuk mengukur apakah suatu perubahan benar-benar memperbaiki keadaan, dan untuk membuat keputusan dalam kondisi ketidakpastian. File ini mencakup konsep inti pengujian hipotesis, desain eksperimental, dan kendala umum yang membuat orang tersandung.
 ---

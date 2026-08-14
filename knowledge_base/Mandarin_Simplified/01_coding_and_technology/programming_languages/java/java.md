@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java
 Java 是一种静态类型、面向对象的编程语言，由 Sun Microsystems 的 James Gosling 创建并于 1995 年发布。其设计理念“一次编写，随处运行”(WORA) 是通过 Java 虚拟机 (JVM) 实现的，它允许编译后的 Java 代码在任何具有 JVM 实现的平台上运行。 Java 是历史上使用最广泛的编程语言之一，为企业后端、Android 应用、大数据系统和金融服务提供支持。
 尽管 Java 已有近 30 年的历史，但它仍在不断发展。现代 Java（版本 17+）包括记录、密封类、模式匹配、虚拟线程以及与更新语言竞争的不断发展的生态系统。

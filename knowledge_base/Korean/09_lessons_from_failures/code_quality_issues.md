@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 코드 품질 문제
 이 문서는 잘못된 변수 이름, 잘못된 문서화, 스파게티 코드, 순환 종속성 및 기타 유지 관리 문제를 포함한 일반적인 코드 품질 문제를 통합합니다.
 ---

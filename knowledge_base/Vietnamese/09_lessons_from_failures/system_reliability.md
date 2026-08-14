@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Vấn đề về độ tin cậy của hệ thống
 Tài liệu này tổng hợp các vấn đề về độ tin cậy bao gồm rò rỉ bộ nhớ, tình trạng tương tranh, lỗi lập trình đồng thời và lỗi thiết kế hệ thống.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Montagem — Padrões Idiomáticos e Melhores Práticas
 Este guia aborda padrões idiomáticos para escrever código Assembly limpo e de fácil manutenção (foco x86/x64 com sintaxe NASM).
 ---

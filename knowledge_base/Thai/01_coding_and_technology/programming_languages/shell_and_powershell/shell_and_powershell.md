@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #เชลล์และพาวเวอร์เชลล์
 การเขียนสคริปต์เชลล์หมายถึงการเขียนสคริปต์สำหรับล่ามบรรทัดคำสั่ง เชลล์ที่สำคัญที่สุดสองเชลล์คือ **Bash** (Bourne Again Shell) — ค่าเริ่มต้นบน Linux และ macOS — และ **PowerShell** — เชลล์ข้ามแพลตฟอร์มที่ทันสมัยและภาษาสคริปต์ของ Microsoft เชลล์สคริปต์ทำให้งานการดูแลระบบเป็นไปโดยอัตโนมัติ สร้างไปป์ไลน์ การประมวลผลไฟล์ และเวิร์กโฟลว์การปรับใช้
 นักพัฒนา วิศวกร DevOps และผู้ดูแลระบบทุกคนจำเป็นต้องมีทักษะการเขียนสคริปต์เชลล์ ไม่ว่าคุณจะปรับใช้เว็บเซิร์ฟเวอร์ ประมวลผลไฟล์บันทึก การตั้งค่าไปป์ไลน์ CI/CD หรือสำรองข้อมูลอัตโนมัติ Shell Scripting คือเครื่องมือสำหรับงานนี้

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fallos en proyectos de aprendizaje automático
 Los proyectos de aprendizaje automático fracasan a un ritmo alarmante: las estimaciones de la industria sugieren que entre el 60% y el 85% de los proyectos de aprendizaje automático nunca llegan a producción. Los fallos no suelen estar en los algoritmos; están en el proceso, los datos, las expectativas y el contexto organizacional. Comprender por qué fallan los proyectos de ML es esencial para cualquiera que construya sistemas de ML, porque los modos de falla son predecibles y en gran medida evitables.
 ---

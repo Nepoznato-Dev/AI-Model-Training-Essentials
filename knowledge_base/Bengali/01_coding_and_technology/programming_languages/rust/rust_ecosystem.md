@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # মরিচা — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি জং বাস্তুতন্ত্রের প্রয়োজনীয় সরঞ্জাম, কাঠামো এবং অবকাঠামো কভার করে।
 ---

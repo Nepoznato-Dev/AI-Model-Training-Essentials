@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — 構文リファレンス
 このドキュメントは、Scala (2.x の相違点を含む 3.x) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、型システム、関数型プログラミングの構成要素、および Scala のイディオムに焦点を当て、メインの Scala リファレンスを補完します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gösteri Sanatları
 Gösteri sanatları (tiyatro, film, dans ve müzik performansı) sanatın izleyicinin canlı varlığıyla buluştuğu yerdir. Duvardaki bir tablonun veya raftaki bir kitabın aksine, performans gerçek zamanlı olarak ortaya çıkıyor ve sanatçı ile izleyici arasında binlerce yıldır insan kültürünün merkezinde yer alan ortak bir deneyim yaratıyor.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 数学
 数学は学校で学ぶだけの科目ではなく、ほぼすべての技術分野の基礎となっています。物理学では宇宙を説明するためにそれを使用します。コンピューターサイエンスではアルゴリズムの設計にそれを使用します。機械学習はこれを使用して重みを最適化します。金融はリスクの価格設定にそれを使用します。すべての分野を習得する必要はありませんが、状況を理解し、各分野がどこに当てはまるかを知ることで、他のトピックを理解しやすくなります。
 ---

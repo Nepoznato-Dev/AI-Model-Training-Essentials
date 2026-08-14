@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Miliki na Ubunifu
 Haki Miliki (IP) inarejelea ubunifu wa akili - uvumbuzi, kazi za kisanii, majina ya biashara, miundo, siri za biashara - ambazo sheria inalinda dhidi ya matumizi yasiyoidhinishwa. Ubunifu ni mchakato wa kubadilisha mawazo kuwa thamani. Sheria ya IP ipo ili kusawazisha maslahi mawili yanayoshindana: wabunifu wanaotuza (kwa kuwapa ukiritimba wa muda) na kunufaisha jamii (kwa kuhakikisha kwamba maarifa hatimaye yanapatikana bila malipo). Kuelewa IP ni muhimu kwa mtu yeyote anayeunda bidhaa, kuunda maudhui, kuendesha biashara, au kufanya kazi katika utafiti.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript - รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุดในการเขียนโค้ด JavaScript (ES2024+) ที่สะอาดตาและทันสมัย
 ---

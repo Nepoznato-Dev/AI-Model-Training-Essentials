@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Inferensi Kausal
 Inferensi kausal adalah ilmu yang menentukan apakah suatu hal benar-benar menyebabkan hal lain — bukan hanya apakah hal-hal tersebut berkorelasi. Korelasi memberitahu Anda bahwa dua variabel bergerak bersama. Sebab-akibat memberitahu Anda bahwa mengubah yang satu akan mengubah yang lain. Perbedaan ini sangat penting dalam bidang kedokteran (apakah obat ini manjur?), kebijakan (apakah intervensi ini mengurangi kemiskinan?), dunia usaha (apakah kampanye iklan ini meningkatkan penjualan?), dan ilmu pengetahuan (apakah mekanisme ini menjelaskan fenomena tersebut?).
 ---

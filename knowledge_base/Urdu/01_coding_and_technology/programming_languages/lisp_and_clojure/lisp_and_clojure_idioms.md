@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ Lisp اور Clojure کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

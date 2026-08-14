@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # التحيزات المعرفية والمغالطات المنطقية
 تعمل هذه الوثيقة على دمج التحيزات المعرفية والمغالطات المنطقية والأخطاء المنطقية التي تؤثر على عملية صنع القرار البشري ومخرجات نظام الذكاء الاصطناعي.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - دليل النظام البيئي والأدوات
 يغطي هذا الدليل قواعد البيانات والأدوات والبنية التحتية الأساسية في نظام SQL البيئي.
 ---

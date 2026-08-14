@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Kitu Pascal - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo safi wa Delphi na Object Pascal.
 ---

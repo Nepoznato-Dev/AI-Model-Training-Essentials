@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Visual Basic (VB.NET). Inakamilisha marejeleo makuu ya Visual Basic kwa kuzingatia ruwaza kamili za sintaksia, vipengele vya OOP, LINQ, async/ait, na nahau za kuunganisha .NET.
 ---

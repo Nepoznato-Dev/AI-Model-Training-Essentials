@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript
 JavaScript é uma linguagem de programação dinâmica e interpretada criada por Brendan Eich em apenas 10 dias em 1995. Originalmente projetada para adicionar interatividade às páginas da web, tornou-se a linguagem de programação mais utilizada no mundo. O JavaScript é executado em todos os navegadores da web, em servidores via Node.js, em aplicativos de desktop (Electron), aplicativos móveis (React Native) e até mesmo em sistemas embarcados.
 A linguagem é única porque é essencialmente a única opção para desenvolvimento web do lado do cliente – cada navegador oferece suporte nativo. Este monopólio, combinado com o surgimento do JavaScript full-stack (Node.js, Deno, Bun), torna-o indispensável.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Podstawy biologii
 Biologia jest nauką o życiu. Wszystkie żywe istoty mają pewne wspólne cechy: są zbudowane z komórek, zużywają energię, rosną, reagują na otoczenie, rozmnażają się i ewoluują. Biologia rozciąga się od maszynerii molekularnej wewnątrz pojedynczej komórki po interakcje całych ekosystemów i stanowi podstawę medycyny, rolnictwa, biotechnologii i ochrony przyrody.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ صاف، موثر SQL لکھنے کے لیے محاوراتی نمونوں اور بہترین طریقوں کا احاطہ کرتا ہے۔
 ---

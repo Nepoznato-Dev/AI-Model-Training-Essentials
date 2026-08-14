@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Datenpipeline- und ETL-Fehler
 Datenpipelines sind das Herzstück moderner Organisationen – sie übertragen Daten aus Quellsystemen durch Transformationen in die Datenbanken, Warehouses und Lakes, wo sie für Analysen, maschinelles Lernen und Entscheidungsfindung verwendet werden. Wenn sie arbeiten, merkt es niemand. Wenn sie scheitern, werden Entscheidungen auf der Grundlage veralteter Daten getroffen, Modelle werden auf Müll trainiert, Berichte zeigen unmögliche Zahlen und das Vertrauen in die gesamte Datenplattform schwindet. Ausfälle der Datenpipeline gehören zu den häufigsten und kostspieligsten Ausfällen in Technologieunternehmen.
 ---

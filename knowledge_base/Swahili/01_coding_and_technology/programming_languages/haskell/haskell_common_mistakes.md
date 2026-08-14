@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell - Makosa ya Kawaida & Miundo ya Kupambana
 Hati hii inaorodhesha makosa ya kawaida, mitego, na mifumo ya kupingana katika Haskell na masahihisho.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — Lembar Cheat
 ## Tipe Dasar
 ```typescript

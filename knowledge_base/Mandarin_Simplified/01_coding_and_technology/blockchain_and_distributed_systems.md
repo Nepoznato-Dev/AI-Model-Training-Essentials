@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 区块链和分布式系统
 区块链是一种特定类型的分布式系统——一种分散的、仅附加的分类账，其中记录（块）通过加密哈希链接。分布式系统是使多台计算机作为一台计算机协同工作的更广泛的领域。这两个概念对于理解现代基础设施都很重要，从加密货币到分布式数据库，再到为全球服务提供支持的共识算法。
 ---

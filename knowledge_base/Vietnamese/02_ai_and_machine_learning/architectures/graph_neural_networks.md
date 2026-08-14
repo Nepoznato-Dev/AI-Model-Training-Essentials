@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mạng lưới thần kinh đồ thị
 Mạng thần kinh đồ thị (GNN) là mạng thần kinh được thiết kế để hoạt động trên dữ liệu có cấu trúc đồ thị - mạng gồm các nút được kết nối bởi các cạnh. Trong khi mạng thần kinh truyền thống hoạt động trên lưới (hình ảnh) hoặc chuỗi (văn bản), GNN xử lý các cấu trúc quan hệ tùy ý: mạng xã hội, biểu đồ phân tử, biểu đồ tri thức, mạng đường bộ, biểu đồ đề xuất, v.v. Chúng đã trở nên cần thiết cho việc khám phá ma túy, phát hiện gian lận, hệ thống khuyến nghị và bất kỳ lĩnh vực nào mà mối quan hệ giữa các thực thể là quan trọng.
 ---

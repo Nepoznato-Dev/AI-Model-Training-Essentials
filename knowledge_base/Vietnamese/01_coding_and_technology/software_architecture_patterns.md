@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Các mẫu kiến ​​trúc phần mềm
 Kiến trúc là tập hợp các quyết định mang tính cấu trúc về cách tổ chức một hệ thống - nó có những thành phần nào, chúng giao tiếp như thế nào và trách nhiệm nằm ở đâu. Kiến trúc tốt làm cho hệ thống dễ hiểu, dễ sửa đổi và có thể mở rộng quy mô. Kiến trúc tồi khiến mọi thay đổi trở thành một cuộc đấu tranh. Tệp này bao gồm các mẫu chính, thời điểm sử dụng từng mẫu và những cân nhắc liên quan.
 ---

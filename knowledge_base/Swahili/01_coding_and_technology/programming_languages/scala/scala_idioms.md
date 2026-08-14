@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia mifumo ya nahau na mbinu bora za kuandika msimbo safi wa Scala 3.
 ---

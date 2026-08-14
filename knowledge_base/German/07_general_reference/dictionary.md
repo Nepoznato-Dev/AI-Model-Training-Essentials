@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Englisches Wörterbuch – Allgemeine Wortdefinitionen
 Eine Referenzliste häufig verwendeter englischer Wörter und ihrer Bedeutung,
 Es deckt alltägliches Vokabular, akademische Begriffe und häufig vorkommende Wörter ab

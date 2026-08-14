@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL Quick Reference Guide"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL 빠른 참조 가이드
 데이터베이스 작업을 위한 필수 SQL 명령입니다.
 ---

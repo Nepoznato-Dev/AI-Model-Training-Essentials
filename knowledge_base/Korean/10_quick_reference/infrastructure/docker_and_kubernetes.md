@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Docker 및 Kubernetes 치트 시트
 Docker를 사용하여 애플리케이션을 컨테이너화하고 Kubernetes를 사용하여 조정하는 데 대한 실제 참조입니다. 명령줄에 대한 기본적인 지식이 있다고 가정합니다.
 ---

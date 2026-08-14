@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مهندسی ML و MLOps
 ساخت یک مدل یادگیری ماشین تنها نیمی از نبرد است. وارد کردن آن به تولید، اجرای مطمئن آن، نظارت بر دریفت، و تکرار بر روی آن - اینجاست که مهندسی ML و MLO ها وارد می شوند. این فایل تمام چرخه حیات از آزمایش تا سیستم تولید را پوشش می دهد.
 ---

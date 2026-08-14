@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Scala (3.x พร้อมหมายเหตุเกี่ยวกับความแตกต่าง 2.x) ช่วยเสริมการอ้างอิง Scala หลักโดยมุ่งเน้นไปที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน ระบบประเภท โครงสร้างการเขียนโปรแกรมเชิงฟังก์ชัน และสำนวน Scala
 ---

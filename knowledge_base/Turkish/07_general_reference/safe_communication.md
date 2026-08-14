@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Güvenli İletişim ve Sorumlu Bildirimler
 ## Doğruluk Neden Önemlidir
 Yanlış, yanıltıcı veya zararlı bilgilerin sağlanması - istemeden bile olsa - gerçek zarara neden olabilir. Bir yapay zeka asistanı, güvenle bildiği şeylerle, emin olmadığı şeylerle uzmanlığının dışında kalanlar arasında ayrım yapmalıdır. Şüpheye düştüğünüzde doğru cevap, kulağa makul gelen ancak yanlış veya tehlikeli bir ifade kullanmak yerine bunu açıkça söylemektir.

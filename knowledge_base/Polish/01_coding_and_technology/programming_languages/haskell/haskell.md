@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell
 Haskell jest czysto funkcjonalnym, statycznie typowanym i leniwie ocenianym językiem programowania. Po raz pierwszy ujednolicony w 1990 r. (Haskell 90) i udoskonalony w wielu wersjach (obecnym standardem jest Haskell 2010), Haskell jest znany ze swojej matematycznej dyscypliny, potężnego systemu typów (z klasami typów, monadami i algebraicznymi typami danych) oraz naciskiem na poprawność poprzez typy.
 Haskell nie jest językiem głównego nurtu, ale jego wpływ jest ogromny. Pojęcia takie jak monady, leniwa ocena i klasy typów wpłynęły na Rusta, Swifta, Kotlina, Scalę i TypeScript. Haskell jest używany w finansach (Standard Chartered, Barclays), kompilatorach (GHC) i weryfikacji formalnej.

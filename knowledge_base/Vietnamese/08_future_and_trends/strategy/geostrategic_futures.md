@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tương lai địa chiến lược
 ## Tổng quan
 Kỷ nguyên thống trị của Mỹ thời hậu Chiến tranh Lạnh đang nhường chỗ cho một thứ gì đó hỗn loạn hơn: một thế giới đa cực nơi quyền lực bị phân tán, cạnh tranh ngày càng gay gắt về công nghệ và tài nguyên, đồng thời những thách thức như biến đổi khí hậu và đại dịch không phân biệt biên giới. Trật tự quốc tế dựa trên luật lệ được xây dựng sau năm 1945 đang bị thử thách từ mọi hướng. Đây là những gì đang thay đổi, ai đang nổi lên và những điểm xung đột ở đâu.

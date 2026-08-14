@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مهارت های زندگی عملی
 مدرسه به شما حساب دیفرانسیل و انتگرال می آموزد، اما به ندرت به شما یاد می دهد که چگونه مالیات را ثبت کنید، یک وعده غذایی متعادل بپزید، یا خانه خود را حفظ کنید. اینها شایستگی‌های عملی هستند که بر کیفیت زندگی روزمره شما تأثیر می‌گذارند - نوع دانشی که شما را به خودکفایی و انعطاف‌پذیری مالی تبدیل می‌کند. این فایل یک مرجع متراکم برای موارد ضروری است.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk C (C11/C17 dengan catatan C23). Ini melengkapi referensi C utama dengan berfokus pada pola sintaksis yang lengkap, tabel operator, mekanisme penunjuk, dan manajemen memori.
 ---

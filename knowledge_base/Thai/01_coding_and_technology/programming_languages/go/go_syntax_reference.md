@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้ข้อมูลอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Go มันเสริมการอ้างอิง Go หลักโดยมุ่งเน้นไปที่รูปแบบไวยากรณ์ที่ละเอียดถี่ถ้วน ตารางตัวดำเนินการ และกลไกภายในของกอร์รูทีน ช่องสัญญาณ และอินเทอร์เฟซ
 ---

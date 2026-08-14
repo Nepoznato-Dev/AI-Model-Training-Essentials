@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Géographie et géopolitique
 La géographie façonne le destin. L’emplacement des montagnes, des rivières et des ressources naturelles a déterminé les routes commerciales, déclenché des guerres et bâti des civilisations pendant des millénaires. Aujourd’hui, la géopolitique – l’interaction de la géographie, du pouvoir et de la politique – reste essentielle pour comprendre pourquoi les nations se comportent comme elles le font.
 ---

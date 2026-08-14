@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Üretken Yapay Zeka Derin İncelemesi
 Üretken yapay zeka, yalnızca mevcut verileri sınıflandırmak veya tahmin etmek yerine, görseller, metin, ses, video, kod gibi yeni içerikler oluşturan modelleri ifade eder. Büyük dil modelleri en çok ilgiyi çekse de üretken yapay zekanın kapsamı çok daha geniştir. Bu dosya, difüzyon modellerinden varyasyonel otomatik kodlayıcılara ve akış modellerine kadar modern üretken sistemlerin ardındaki mimarileri, teknikleri ve değiş tokuşları kapsar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa Ada (2012/2022). Kinukumpleto nito ang pangunahing sanggunian ng Ada sa pamamagitan ng pagtutok sa mga kumpletong pattern ng syntax, tasking, mga protektadong bagay, generic, at programming na kritikal sa kaligtasan.
 ---

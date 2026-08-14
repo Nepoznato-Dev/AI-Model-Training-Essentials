@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nadharia ya Habari
 Nadharia ya habari, iliyoanzishwa na Claude Shannon mnamo 1948, inahesabu habari yenyewe. Je, ujumbe unakuambia kiasi gani? Je, unaweza kubana data kiasi gani? Je, unaweza kuwasiliana kwa kasi gani kwenye kituo chenye kelele? Maswali haya yana majibu sahihi ya hisabati. Zaidi ya mawasiliano, nadharia ya habari imekuwa msingi wa ujifunzaji wa mashine - njia-tofauti ni chaguo-msingi la upotezaji wa uainishaji, vipimo vya mseto wa KL ulinganifu wa usambazaji, na uteuzi wa vipengele vya viendeshi vya habari.
 ---

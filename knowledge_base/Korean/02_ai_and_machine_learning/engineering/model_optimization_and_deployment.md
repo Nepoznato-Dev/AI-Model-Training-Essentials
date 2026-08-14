@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 모델 최적화 및 배포
 대규모 AI 모델을 교육하는 것은 중요한 성과이지만 이를 효율적으로 배포하는 데에는 대부분의 엔지니어링 노력이 필요합니다. 응답하는 데 10초가 걸리거나 8개의 A100 GPU가 필요한 모델은 대부분의 실제 애플리케이션에 비실용적입니다. 모델 최적화는 허용 가능한 품질을 유지하면서 모델을 더 작고, 빠르고, 비용 효율적으로 만드는 프로세스입니다. 이 파일은 양자화, 가지치기, 증류 및 프로덕션에 모델을 배포하기 위한 실용적인 도구를 다룹니다.
 ---

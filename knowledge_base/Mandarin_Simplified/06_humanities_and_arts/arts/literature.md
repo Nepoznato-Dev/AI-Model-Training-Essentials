@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ 文学
 文学是人类思想、情感和经验最持久的记录。从古代文明的口述史诗到当今的数字时代小说，每部作品都与之前的事物进行对话。了解文学流派、运动和技巧可以让你有更丰富的阅读视角，并了解产生这些作品的文化。
 ---

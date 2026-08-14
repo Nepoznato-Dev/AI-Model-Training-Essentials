@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Quản lý chuỗi cung ứng và vận hành
 Quản lý chuỗi cung ứng là sự phối hợp của tất cả các hoạt động liên quan đến tìm nguồn cung ứng, mua sắm, chuyển đổi và hậu cần - từ nguyên liệu thô đến thành phẩm trong tay khách hàng. Quản lý vận hành là hoạt động hàng ngày của các hệ thống sản xuất. Cùng nhau, họ xác định liệu một công ty có thể cung cấp đúng sản phẩm, vào đúng thời điểm, với chi phí phù hợp và chất lượng phù hợp hay không. Đại dịch, tình trạng thiếu chip và tắc nghẽn kênh đã cho thấy chuỗi cung ứng được kết nối toàn cầu và mong manh như thế nào.
 ---

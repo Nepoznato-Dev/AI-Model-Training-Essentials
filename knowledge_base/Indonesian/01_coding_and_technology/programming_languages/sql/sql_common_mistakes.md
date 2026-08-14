@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Kesalahan Umum & Anti-Pola
 Dokumen ini mengkatalogkan kesalahan, jebakan, dan anti-pola paling umum dalam SQL dengan koreksinya.
 ---

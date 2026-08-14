@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pruebas estadísticas y experimentación
 La estadística es la gramática de la ciencia. Le brinda las herramientas para distinguir patrones reales del ruido aleatorio, medir si un cambio realmente mejoró las cosas y tomar decisiones en condiciones de incertidumbre. Este archivo cubre los conceptos centrales de la prueba de hipótesis, el diseño experimental y los errores comunes que hacen tropezar a las personas.
 ---

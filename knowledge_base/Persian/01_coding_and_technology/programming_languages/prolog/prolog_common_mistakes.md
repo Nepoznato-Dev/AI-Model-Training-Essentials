@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog - اشتباهات رایج و ضد الگوها
 این سند رایج ترین اشتباهات، تله ها و ضد الگوها را در Prolog با اصلاحات فهرست می کند.
 ---

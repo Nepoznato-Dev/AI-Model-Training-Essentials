@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Trasformazione dell'istruzione
 ## Panoramica
 Il modello tradizionale di istruzione – stare in classe per dodici anni, magari andare all’università, poi lavorare – sta crollando. I tutor di intelligenza artificiale possono ora fornire istruzioni personalizzate su larga scala. Il ritmo del cambiamento tecnologico fa sì che l’apprendimento permanente non sia più un optional. E i datori di lavoro si preoccupano sempre più di ciò che puoi *fare*, non solo delle credenziali che possiedi. Ecco come viene reinventata l'istruzione.

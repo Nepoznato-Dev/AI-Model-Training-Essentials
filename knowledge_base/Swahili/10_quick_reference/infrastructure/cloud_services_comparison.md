@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ulinganisho wa Huduma za Wingu
 Ulinganisho wa kando wa watoa huduma wakuu watatu wa wingu - AWS, Azure, na Google Cloud - kwenye kompyuta, hifadhi, hifadhidata, AI/ML, mitandao, ufuatiliaji, na miundombinu-kama-misimbo. Inafaa kwa wasanifu kuamua ni jukwaa gani la kutumia, au huduma za uchoraji ramani kutoka kwa wingu moja hadi nyingine.
 ---

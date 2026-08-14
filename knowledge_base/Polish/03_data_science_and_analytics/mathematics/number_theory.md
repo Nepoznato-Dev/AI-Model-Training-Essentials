@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria liczb
 Teoria liczb zajmuje się badaniem liczb całkowitych — liczb całkowitych i ich właściwości. Gauss nazwał ją „królową matematyki”. Pomimo badania najprostszych obiektów (1, 2, 3, ...) teoria liczb stwarza jedne z najgłębszych i najtrudniejszych problemów w całej matematyce. Dziś stanowi podstawę współczesnej kryptografii, algorytmów mieszania, kodów korygujących błędy i generowania liczb losowych.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria informacji
 Teoria informacji, założona przez Claude’a Shannona w 1948 roku, kwantyfikuje samą informację. Ile mówi Ci wiadomość? Jak bardzo możesz kompresować dane? Jak szybko możesz komunikować się za pomocą hałaśliwego kanału? Na te pytania znajdują się dokładne, matematyczne odpowiedzi. Poza komunikacją, teoria informacji stała się podstawą uczenia maszynowego — entropia krzyżowa jest domyślną funkcją straty w klasyfikacji, rozbieżność KL mierzy podobieństwo rozkładu, a wzajemne informacje napędzają wybór funkcji.
 ---

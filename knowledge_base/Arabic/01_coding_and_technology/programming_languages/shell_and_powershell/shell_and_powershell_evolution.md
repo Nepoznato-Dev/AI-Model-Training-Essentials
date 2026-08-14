@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell وPowerShell — تاريخ الإصدار وتطوره
 ## الجدول الزمني ليونكس شل
 | النسخة | سنة | الموضوع الرئيسي |

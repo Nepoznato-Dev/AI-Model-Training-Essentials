@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada — Sözdizimi Referansı
 Bu belge Ada (2012/2022) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, görevlendirmeye, korunan nesnelere, jeneriklere ve güvenlik açısından kritik programlamaya odaklanarak ana Ada referansını tamamlar.
 ---

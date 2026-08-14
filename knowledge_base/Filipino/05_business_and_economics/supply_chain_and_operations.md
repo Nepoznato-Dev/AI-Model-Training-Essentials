@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Supply Chain at Pamamahala ng Operasyon
 Ang pamamahala ng supply chain ay ang koordinasyon ng lahat ng aktibidad na kasangkot sa sourcing, procurement, conversion, at logistics — mula sa mga hilaw na materyales hanggang sa natapos na produkto sa mga kamay ng customer. Ang pamamahala ng operasyon ay ang pang-araw-araw na pagpapatakbo ng mga sistema ng produksyon. Sama-sama, tinutukoy nila kung ang isang kumpanya ay maaaring maghatid ng tamang produkto, sa tamang oras, sa tamang halaga, na may tamang kalidad. Ang pandemya, mga kakulangan sa chip, at mga pagbara ng kanal ay nagpakita kung gaano karupok at pandaigdigang magkakaugnay na mga supply chain.
 ---

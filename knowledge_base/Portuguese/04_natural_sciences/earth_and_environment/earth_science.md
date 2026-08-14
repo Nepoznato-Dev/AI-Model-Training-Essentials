@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ciências da Terra
 As ciências da terra estudam o planeta em que vivemos – a sua estrutura, processos, história e os sistemas que o tornam habitável. Abrange geologia (a Terra sólida), oceanografia (os oceanos), meteorologia (a atmosfera e o clima) e climatologia (padrões climáticos de longo prazo). O que unifica estes campos é a compreensão de que a Terra é um sistema dinâmico: o seu interior está em constante movimento, a sua superfície está a ser remodelada e a sua atmosfera e oceanos interagem de formas complexas.
 ---

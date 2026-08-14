@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamentaux de la biologie
 La biologie est la science de la vie. Tous les êtres vivants partagent certaines caractéristiques : ils sont constitués de cellules, ils consomment de l’énergie, ils grandissent, ils réagissent à leur environnement, ils se reproduisent et évoluent. La biologie s'étend de la machinerie moléculaire à l'intérieur d'une seule cellule aux interactions d'écosystèmes entiers, et constitue le fondement de la médecine, de l'agriculture, de la biotechnologie et de la conservation.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 最佳化
 最佳化是從一組可行解決方案中找到最佳解決方案的數學。它問：給定一個函數和約束，什麼輸入可以最小化（或最大化）輸出？最佳化是機器學習的引擎－訓練模型意味著最小化損失函數。它出現在運籌學、經濟學、工程設計以及幾乎所有定量領域。
 ---

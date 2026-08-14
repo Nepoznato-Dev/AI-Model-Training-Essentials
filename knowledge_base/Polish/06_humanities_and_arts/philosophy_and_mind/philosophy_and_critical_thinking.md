@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Filozofia i krytyczne myślenie
 Filozofia to systematyczne badanie podstawowych pytań dotyczących wiedzy, rzeczywistości i istnienia. Zapewnia ramy oceny, co liczy się jako wiedza, co warto robić i jak odróżnić dobrze uzasadnione argumenty od słabych. Krytyczne myślenie to praktyczne zastosowanie tych ram: umiejętność analizowania twierdzeń, identyfikowania błędnych rozumowań i podejmowania bardziej świadomych decyzji. W tym pliku opisano główne idee, narzędzia do ich oceny oraz błędy poznawcze, które wpływają na wszystkich.
 ---

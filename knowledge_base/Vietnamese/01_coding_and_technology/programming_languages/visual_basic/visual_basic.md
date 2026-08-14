@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Trực quan cơ bản
 Visual Basic (VB) là ngôn ngữ lập trình được phát triển bởi Microsoft. Nó đã phát triển qua nhiều thế hệ: Visual Basic ban đầu (1991), Visual Basic 6.0 (1998), VB.NET (2002, một phần của .NET Framework) và Visual Basic ..NET (hiện tại, bây giờ được gọi đơn giản là "Visual Basic" như một phần của .NET). VB được thiết kế để phù hợp với người mới bắt đầu và phát triển ứng dụng nhanh (RAD), tập trung vào giao diện đồ họa người dùng và lập trình theo sự kiện.
 Ngày nay, VB.NET tiếp tục là một phần của hệ sinh thái .NET cùng với C#, mặc dù Microsoft đã chỉ ra rằng C# sẽ là ngôn ngữ chính trong tương lai. VB vẫn được sử dụng rộng rãi trong môi trường doanh nghiệp, đặc biệt đối với các ứng dụng Windows cũ, tự động hóa Office (VBA) và các công cụ kinh doanh nội bộ.

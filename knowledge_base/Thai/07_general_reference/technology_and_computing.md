@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # เทคโนโลยีและคอมพิวเตอร์
 คอมพิวเตอร์มีอยู่ทุกที่ ในโทรศัพท์ ในรถยนต์ ตู้เย็น อุปกรณ์ทางการแพทย์ และโครงสร้างพื้นฐานที่ขับเคลื่อนสังคมยุคใหม่ คุณไม่จำเป็นต้องเป็นโปรแกรมเมอร์เพื่อที่จะได้ประโยชน์จากการทำความเข้าใจวิธีการทำงานทั้งหมด ไฟล์นี้ครอบคลุมเนื้อหาพื้นฐาน: คอมพิวเตอร์คืออะไร อินเทอร์เน็ตทำงานอย่างไร ซอฟต์แวร์ถูกสร้างขึ้นอย่างไร และแนวคิดที่หล่อหลอมโลกดิจิทัล
 > **ต้องการเจาะลึกกว่านี้ไหม** ไฟล์นี้เป็นภาพรวมแบบกว้างๆ หากต้องการครอบคลุมหัวข้อโดยละเอียด โปรดดูไฟล์เฉพาะใน[`01_coding_and_technology/`](../01_coding_and_technology/)— รวมถึง[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)และ

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mustakabali wa Kijiografia
 ## Muhtasari
 Enzi ya baada ya Vita Baridi ya utawala wa Marekani inasababisha kitu kibaya zaidi: ulimwengu wa nchi nyingi ambapo nguvu imeenea, ushindani unaongezeka juu ya teknolojia na rasilimali, na changamoto kama mabadiliko ya hali ya hewa na milipuko haziheshimu mipaka. Agizo la kimataifa la msingi wa sheria lililojengwa baada ya 1945 linajaribiwa kutoka kila upande. Hapa kuna nini kinachobadilika, ni nani anayeinuka, na mahali ambapo misuguano iko.

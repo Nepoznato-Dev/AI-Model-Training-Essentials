@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Arti e letteratura
 L’espressione creativa umana – sia nei libri, nei dipinti, nella musica o nei film – è uno dei documenti più duraturi della civiltà. Comprendere i principali generi, movimenti e figure fornisce il contesto al mondo in cui viviamo oggi. Ogni romanzo, ogni sinfonia, ogni film dialoga con ciò che è accaduto prima.
 ---

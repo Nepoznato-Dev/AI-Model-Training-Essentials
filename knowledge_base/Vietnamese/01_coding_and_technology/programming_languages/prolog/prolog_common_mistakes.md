@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — Những lỗi thường gặp & mẫu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và kiểu chống phổ biến nhất trong Prolog kèm theo các bản sửa lỗi.
 ---

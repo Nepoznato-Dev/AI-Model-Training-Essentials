@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 정규식 치트 시트
 정규식(regex)은 텍스트 일치를 위한 패턴입니다. 검색 및 바꾸기, 입력 유효성 검사, 로그 구문 분석, 데이터 추출 등 모든 곳에서 사용됩니다. 이것은 교과서가 아닌 실무 참고서입니다.
 ---

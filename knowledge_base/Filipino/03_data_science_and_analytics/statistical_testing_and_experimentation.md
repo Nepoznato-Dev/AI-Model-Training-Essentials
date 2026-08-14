@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Statistical Testing at Experimentation
 Ang mga istatistika ay ang gramatika ng agham. Nagbibigay ito sa iyo ng mga tool upang makilala ang mga tunay na pattern mula sa random na ingay, upang masukat kung ang isang pagbabago ay talagang nagpabuti ng mga bagay, at upang gumawa ng mga desisyon sa ilalim ng kawalan ng katiyakan. Sinasaklaw ng file na ito ang mga pangunahing konsepto ng pagsubok sa hypothesis, pang-eksperimentong disenyo, at ang mga karaniwang pitfalls na nagtutulak sa mga tao.
 ---

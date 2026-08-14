@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible और कॉन्फ़िगरेशन प्रबंधन
 Ansible एक एजेंट रहित कॉन्फ़िगरेशन प्रबंधन और स्वचालन उपकरण है। यह सर्वर से कनेक्ट करने और YAML प्लेबुक में परिभाषित कार्यों को निष्पादित करने के लिए SSH (या Windows के लिए WinRM) का उपयोग करता है। उन उपकरणों के विपरीत, जिनके लिए प्रत्येक मशीन पर एजेंट स्थापित करने की आवश्यकता होती है, Ansible पुश-आधारित है - आप एक नियंत्रण नोड से कमांड चलाते हैं। इसका उपयोग सर्वर प्रोविजनिंग, एप्लिकेशन परिनियोजन, कॉन्फ़िगरेशन प्रबंधन और तदर्थ कार्य निष्पादन के लिए किया जाता है।
 ---

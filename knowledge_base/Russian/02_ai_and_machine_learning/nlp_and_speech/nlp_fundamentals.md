@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Основы НЛП
 Обработка естественного языка (НЛП) — это область обучения машин понимать, генерировать и работать с человеческим языком. Он поддерживает поисковые системы, чат-боты, системы перевода, анализ настроений и большие языковые модели (LLM), которые преобразовали ИИ с 2020 года. Этот файл описывает эволюцию от классических методов к современным архитектурам на основе Transformer.
 ---

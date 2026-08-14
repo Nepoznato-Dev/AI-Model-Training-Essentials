@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Język asemblera — odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni zestawu x86-64 (składnia NASM). Uzupełnia główne odniesienia do Asemblera, koncentrując się na wyczerpujących kategoriach instrukcji, trybach adresowania, konwencjach ramek stosu i wzorcach programowania systemu.
 ---

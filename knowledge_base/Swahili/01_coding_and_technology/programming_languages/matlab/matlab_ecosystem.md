@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - Mfumo wa Ikolojia na Mwongozo wa Vifaa
 Mwongozo huu unashughulikia zana muhimu, visanduku vya zana, na miundombinu katika mfumo ikolojia wa MATLAB.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog
 
 Prolog (Programming in Logic) is a logic programming language created in 1972 by Alain Colmerauer and Philippe Roussel. Unlike every other language on this list, Prolog does not tell the computer *how* to solve a problem — you declare *what* is true (facts and rules), and Prolog's inference engine figures out the answer through logical deduction.

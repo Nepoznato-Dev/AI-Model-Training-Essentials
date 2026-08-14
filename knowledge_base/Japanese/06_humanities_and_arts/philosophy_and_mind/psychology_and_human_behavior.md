@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 心理学と人間の行動
 心理学は、人々がどのように、そしてなぜそのように考え、感じ、行動するのかについての科学です。それは心を読むものではなく、常識でもありません。ただし、常識が示唆していることを裏付ける場合もあれば、完全に矛盾する場合もあります。心理学では、観察、仮説、テスト、修正という他の科学と同じ科学的手法が使用されます。この作品を困難にしているのは、その主題である人間の心というものが、私たちが知っている中で最も複雑な対象であるということです。
 このファイルは、私たちがどのように考えるか、どのように成長するか、他者からどのように影響を受けるか、何がうまくいかないのか、そしてそれに対して何ができるのかなど、心理学の主要な領域をカバーしています。

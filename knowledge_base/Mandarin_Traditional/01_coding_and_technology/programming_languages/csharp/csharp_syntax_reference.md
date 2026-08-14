@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — 語法參考
 本文檔為現代 C#（.NET 7/8 上的 C# 10/11/12）提供全面、結構化的語法參考。它透過關注詳盡的語法模式、LINQ、非同步/等待、模式匹配和現代功能來補充主要的 C# 參考。
 ---

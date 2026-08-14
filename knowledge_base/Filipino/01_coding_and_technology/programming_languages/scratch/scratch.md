@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # scratch
 Ang Scratch ay isang visual, block-based na programming language na binuo ng MIT Media Lab at unang inilabas noong 2007. Sa halip na magsulat ng text-based na code, ang mga user ay magkakabit ng mga color block upang lumikha ng mga programa. Ang Scratch ay partikular na idinisenyo para sa mga batang edad 8-16 (bagaman ginagamit ito ng mga nag-aaral sa lahat ng edad) upang magturo ng mga pangunahing konsepto ng programming — mga loop, conditional, variable, kaganapan, at function — nang walang hadlang ng mga error sa syntax.
 Ang Scratch ay ang pinakamalawak na ginagamit na panimulang programming language sa mundo, na may mahigit 100 milyong rehistradong user at availability sa 70+ na wika. Gumagana ito sa isang web browser at libre.

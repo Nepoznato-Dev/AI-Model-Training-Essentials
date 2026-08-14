@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Sanaa za Visual
 Sanaa inayoonekana ndiyo njia kongwe zaidi ya mawasiliano ya wanadamu - kutoka kwa michoro ya pango la Lascaux hadi usakinishaji dijitali wa leo. Kuelewa vuguvugu za sanaa, wawasiliani na taasisi zinazohifadhi kazi za ubunifu hukupa shukrani ya kina kwa jinsi jamii zimeonyesha uzuri, nguvu, hali ya kiroho na upinzani kwa milenia nzima.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису PHP (8.x). Он дополняет основной справочник по PHP, уделяя особое внимание исчерпывающим синтаксическим шаблонам, современным функциям PHP, объектно-ориентированному программированию и практическим идиомам.
 ---

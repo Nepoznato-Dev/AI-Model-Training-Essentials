@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ада — Справочник по синтаксису
 Этот документ представляет собой полный структурированный справочник по синтаксису Ada (2012/2022). Он дополняет основной справочник по Ada, уделяя особое внимание исчерпывающим синтаксическим шаблонам, задачам, защищенным объектам, универсальным шаблонам и критичному для безопасности программированию.
 ---

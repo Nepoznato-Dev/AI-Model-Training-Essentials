@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nauka o danych i analityka
 Nauka o danych to dyscyplina polegająca na przekształcaniu surowych danych w przydatne informacje. Znajduje się na skrzyżowaniu statystyki, informatyki i wiedzy dziedzinowej – i stało się niezbędne w każdym sektorze, od finansów po opiekę zdrowotną. W tym pliku omówiono podstawowe koncepcje, narzędzia i przepływy pracy, które powinien znać każdy specjalista.
 ---

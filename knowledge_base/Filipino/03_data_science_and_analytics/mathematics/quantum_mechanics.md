@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Quantum Mechanics
 Ang quantum mechanics ay ang teorya ng physics sa pinakamaliit na sukat - mga atom, electron, photon, at ang mga pangunahing particle ng kalikasan. Pinapalitan nito ang deterministikong mundo ng klasikal na mekanika ng mga probabilities, superpositions, at entanglement. Sa kabila ng pagiging counterintuitive nito, ang quantum mechanics ay ang pinakatumpak na nasubok na teorya sa lahat ng agham. Ngayon, ang mga prinsipyo nito ay nagiging direktang nauugnay sa pag-compute sa pamamagitan ng mga quantum computer, na nangangako na malutas ang ilang mga problema nang mas mabilis kaysa sa mga klasikal na makina.
 ---

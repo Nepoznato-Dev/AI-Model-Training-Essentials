@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #艾達
 Ada 是一種靜態類型、編譯型程式語言，專為安全關鍵型和高完整性系統而設計。 Ada 最初是在 20 世紀 80 年代根據與美國國防部（以 Ada Lovelace 的名字命名，被認為是第一位電腦程式設計師）簽訂的合約開發的，強調可靠性、可維護性和正確性。它的目的是用一種明確的語言取代當時國防部使用的數百種程式語言。
 Ada 用於航空（電傳飛行系統）、太空（ESA 和 NASA）、國防（飛彈導引、雷達）、鐵路運輸和醫療設備 - 任何軟體故障可能導致生命損失的地方。

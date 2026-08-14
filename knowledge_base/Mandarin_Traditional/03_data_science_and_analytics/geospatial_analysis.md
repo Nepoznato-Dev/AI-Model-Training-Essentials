@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 地理空間分析
 地理空間分析是檢查具有地理成分（座標、地址、邊界或與地球上某個位置相關的任何資料）的資料的過程。它回答了諸如「我們的客戶在哪裡？」、「最佳路線是什麼？」以及「土地利用如何隨時間變化？」等問題。每個資料集都有一個空間維度，理解它可以解鎖純統計分析所錯過的見解。
 ---

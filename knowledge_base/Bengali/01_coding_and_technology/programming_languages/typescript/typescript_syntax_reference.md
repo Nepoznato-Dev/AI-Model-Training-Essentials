@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # টাইপস্ক্রিপ্ট — সিনট্যাক্স রেফারেন্স
 এই নথিটি TypeScript-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি টাইপ সিস্টেম, জেনেরিক, ইউটিলিটি প্রকার এবং উন্নত টাইপ-লেভেল প্রোগ্রামিং-এর উপর ফোকাস করে প্রধান টাইপস্ক্রিপ্ট রেফারেন্সের পরিপূরক।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pengembangan Seluler
 Pengembangan seluler adalah praktik membangun aplikasi untuk ponsel cerdas dan tablet — terutama untuk iOS (Apple) dan Android (Google). Ini mencakup segalanya mulai dari desain UI untuk layar kecil hingga mengelola masa pakai baterai, menangani ketidakstabilan jaringan, dan mendistribusikan aplikasi melalui toko. Bidang ini telah berkembang secara signifikan, dengan kerangka kerja lintas platform kini bersaing dengan pengembangan asli untuk sebagian besar kasus penggunaan.
 ---

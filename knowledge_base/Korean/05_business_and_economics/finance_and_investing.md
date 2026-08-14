@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Finance and Investing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 금융과 투자
 ## 개인 금융 기초
 ### 재무 계획 기초

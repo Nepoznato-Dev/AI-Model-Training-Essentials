@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rangkaian Waktu dan Peramalan
 Data deret waktu adalah data apa pun yang dikumpulkan dari waktu ke waktu: harga saham, pembacaan suhu, lalu lintas situs web, angka penjualan, monitor detak jantung, konsumsi energi. Peramalan berarti memprediksi nilai masa depan berdasarkan pola masa lalu. Ini adalah salah satu penerapan ilmu data yang paling berharga secara praktis — dan salah satu yang tersulit, karena masa depan benar-benar tidak pasti dan rangkaian waktu di dunia nyata penuh dengan kebisingan, perubahan musim, dan perubahan struktural.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Lua
 Lua é uma linguagem de script leve e incorporável, projetada para estender aplicativos. Criada em 1993 na Pontifícia Universidade Católica do Rio de Janeiro, no Brasil, Lua é uma das linguagens de script mais rápidas disponíveis. Seu tamanho reduzido (o intérprete tem aproximadamente 120 KB) e sua simplicidade o tornam a escolha certa para scripts de desenvolvimento de jogos, sistemas embarcados e configuração.
 Lua é mais conhecida como a linguagem de script por trás do Roblox (a plataforma de jogos com mais de 200 milhões de usuários mensais), complementos do World of Warcraft e vários mecanismos de jogo (Love2D, Defold, Corona SDK). Também é usado em Nginx (OpenResty), Redis e Wireshark.

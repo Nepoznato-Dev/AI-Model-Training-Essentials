@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # RAG およびベクター検索の失敗
 この文書には、検索拡張生成 (RAG) システム、埋め込みの使用、およびベクトル検索の実装における一般的な障害がまとめられています。
 ---

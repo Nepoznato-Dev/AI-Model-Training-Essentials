@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Goresan — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik untuk menulis proyek Scratch yang bersih dan terorganisir dengan baik.
 ---

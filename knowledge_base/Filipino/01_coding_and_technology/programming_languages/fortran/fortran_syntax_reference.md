@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran — Syntax Reference
 Nagbibigay ang dokumentong ito ng komprehensibo, structured na syntax na sanggunian para sa Modern Fortran (2008/2018). Kinukumpleto nito ang pangunahing sanggunian ng Fortran sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, mga operasyon ng array, mga module, OOP, at high-performance computing.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metody zespołowe
 Metody zespołowe łączą wiele modeli uczenia maszynowego w celu uzyskania lepszych przewidywań niż jakikolwiek pojedynczy model byłby w stanie osiągnąć samodzielnie. Intuicja jest prosta: jeśli masz kilka modeli, z których każdy jest w miarę dokładny, ale popełnia różne błędy, połączenie ich przewidywań wyeliminuje poszczególne błędy i da bardziej wiarygodny wynik. Zespoły stoją za najbardziej konkurencyjnymi rozwiązaniami uczenia maszynowego i pozostają jednymi z najbardziej niezawodnych technik w systemach produkcyjnych.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pentas seni
 Seni pertunjukan — pertunjukan teater, film, tari, dan musik — adalah tempat seni bertemu dengan kehadiran penonton secara hidup. Berbeda dengan lukisan di dinding atau buku di rak, pertunjukan berlangsung secara real time, menciptakan pengalaman bersama antara seniman dan penonton yang telah menjadi pusat kebudayaan manusia selama ribuan tahun.
 ---

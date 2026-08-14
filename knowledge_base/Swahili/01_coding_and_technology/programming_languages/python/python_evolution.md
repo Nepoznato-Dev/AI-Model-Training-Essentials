@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio
 | Toleo | Tarehe ya Kutolewa | Mandhari Muhimu |

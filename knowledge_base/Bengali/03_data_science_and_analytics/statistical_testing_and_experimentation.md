@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # পরিসংখ্যানগত পরীক্ষা এবং পরীক্ষা
 পরিসংখ্যান হল বিজ্ঞানের ব্যাকরণ। এটি আপনাকে এলোমেলো শব্দ থেকে বাস্তব নিদর্শনগুলিকে আলাদা করার সরঞ্জাম দেয়, একটি পরিবর্তন আসলে জিনিসগুলিকে উন্নত করেছে কিনা তা পরিমাপ করতে এবং অনিশ্চয়তার মধ্যে সিদ্ধান্ত নেওয়ার জন্য। এই ফাইলটি হাইপোথিসিস পরীক্ষার মূল ধারণা, পরীক্ষামূলক নকশা এবং সাধারণ সমস্যাগুলিকে কভার করে যা লোকেদের নিয়ে যায়।
 ---

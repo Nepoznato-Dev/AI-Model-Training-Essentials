@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prawdziwa analiza
 Prawdziwa analiza jest rygorystyczną podstawą rachunku różniczkowego. Podczas gdy rachunek wprowadzający uczy, jak obliczać pochodne i całki, prawdziwa analiza pyta, *dlaczego* te techniki działają i kiedy zawodzą. Zapewnia precyzyjne definicje granic, ciągłości, zbieżności i integracji, które stanowią podstawę teorii prawdopodobieństwa, analizy funkcjonalnej, optymalizacji i teoretycznych gwarancji algorytmów uczenia maszynowego.
 ---

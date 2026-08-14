@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geography and Geopolitics
 
 Geography shapes destiny. The location of mountains, rivers, and natural resources has determined trade routes, sparked wars, and built civilisations for millennia. Today, geopolitics — the interplay of geography, power, and politics — remains essential for understanding why nations behave the way they do.

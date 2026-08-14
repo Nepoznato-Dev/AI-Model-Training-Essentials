@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ビジネスと経済
 製品やサービスを販売するすべての組織はビジネスであり、商品を生産および流通させるすべての社会は経済です。このファイルの概念は、フリーランスで事業を運営している場合でも、企業で働いている場合でも、ニュースを理解しようとしている場合でも、単にお金が世界でどのように動いているかを理解しようとしている場合でも当てはまります。
 ---

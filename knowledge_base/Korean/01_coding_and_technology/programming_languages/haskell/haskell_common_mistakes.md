@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — 일반적인 실수와 안티 패턴
 이 문서는 Haskell에서 가장 흔히 발생하는 실수, 함정, 안티 패턴을 수정하여 목록화합니다.
 ---

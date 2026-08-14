@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Aide-mémoire pour les scripts Bash et Shell
 Une référence pratique pour écrire des scripts shell dans Bash – le shell par défaut sur la plupart des systèmes Linux et macOS. Couvre la syntaxe, les modèles courants, le traitement de texte et les one-liners utiles.
 ---

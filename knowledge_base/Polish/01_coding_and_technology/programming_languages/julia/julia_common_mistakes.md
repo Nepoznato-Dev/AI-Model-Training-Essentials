@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — częste błędy i anty-wzorce
 Dokument ten kataloguje najczęstsze błędy, pułapki i anty-wzorce w Julii wraz z poprawkami.
 ---

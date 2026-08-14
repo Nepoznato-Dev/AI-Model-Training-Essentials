@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optimierung
 Optimierung ist die Mathematik, aus einer Menge möglicher Lösungen die beste Lösung zu finden. Es wird gefragt: Welche Eingabe minimiert (oder maximiert) bei gegebener Funktion und Einschränkungen die Ausgabe? Optimierung ist der Motor des maschinellen Lernens – das Trainieren eines Modells bedeutet die Minimierung einer Verlustfunktion. Es kommt in den Bereichen Operations Research, Wirtschaftswissenschaften, Ingenieurdesign und praktisch jedem quantitativen Bereich vor.
 ---

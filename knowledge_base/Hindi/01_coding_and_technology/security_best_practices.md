@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Best Practices"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # सुरक्षा सर्वोत्तम प्रथाएँ
 विकास से उत्पादन तक - अनुप्रयोगों, बुनियादी ढांचे और डेटा को सुरक्षित करने के लिए एक व्यावहारिक मार्गदर्शिका।
 ---

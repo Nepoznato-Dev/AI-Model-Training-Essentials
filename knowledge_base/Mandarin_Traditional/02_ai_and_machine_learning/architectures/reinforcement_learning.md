@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 強化學習
 強化學習 (RL) 是機器學習透過反覆試驗做出一系列決策的方式。與為每個範例提供正確答案的監督學習不同，強化學習僅向代理提供獎勵訊號，且代理人必須隨著時間的推移找出哪些操作會帶來最佳結果。它是 AlphaGo、機器人控制、遊戲人工智慧以及最重要的 RLHF（用於將現代大型語言模型與人類偏好保持一致的技術）背後的方法。
 ---

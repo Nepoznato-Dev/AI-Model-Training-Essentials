@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 통계와 확률
 확률과 통계는 데이터 과학, 기계 학습, 과학 연구의 수학적 기초입니다. 확률은 사건이 일어날 가능성을 알려줍니다. 통계는 데이터로부터 결론을 도출하는 방법을 알려줍니다. 이들은 함께 불확실성을 정량화 가능하고 관리 가능한 지식으로 전환합니다.
 ---

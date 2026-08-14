@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Scratch 3.0 มันเสริมการอ้างอิง Scratch หลักโดยมุ่งเน้นไปที่หมวดหมู่บล็อกที่ละเอียดถี่ถ้วน รูปแบบที่ขับเคลื่อนด้วยเหตุการณ์ การจัดการสไปรท์ การโคลนนิ่ง และเทคนิคการเขียนโค้ดเชิงสร้างสรรค์
 ---

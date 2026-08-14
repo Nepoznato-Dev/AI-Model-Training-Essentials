@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure — সিনট্যাক্স রেফারেন্স
 এই নথিটি কমন লিস্প এবং ক্লোজারের জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স সরবরাহ করে। এটি এস-এক্সপ্রেশন, ম্যাক্রো, স্থায়ী ডেটা স্ট্রাকচার এবং কার্যকরী প্রোগ্রামিং প্যাটার্নগুলিতে ফোকাস করে প্রধান লিস্প/ক্লোজার রেফারেন্সের পরিপূরক।
 ---

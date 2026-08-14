@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD পাইপলাইন কনফিগারেশন
 কন্টিনিউয়াস ইন্টিগ্রেশন (সিআই) এবং কন্টিনিউয়াস ডিপ্লয়মেন্ট (সিডি) পাইপলাইনগুলি সফ্টওয়্যার তৈরি, পরীক্ষা এবং স্থাপনের প্রক্রিয়াটিকে স্বয়ংক্রিয় করে। এই রেফারেন্সটি সর্বাধিক জনপ্রিয় CI/CD প্ল্যাটফর্মগুলির কনফিগারেশন প্যাটার্নগুলিকে কভার করে: GitHub অ্যাকশন, GitLab CI, এবং সাধারণ পাইপলাইন ডিজাইনের নীতিগুলি৷
 ---

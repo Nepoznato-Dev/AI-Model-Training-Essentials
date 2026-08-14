@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Wykres sieci neuronowych
 Grafowe sieci neuronowe (GNN) to sieci neuronowe zaprojektowane do działania na danych o strukturze grafowej — sieciach węzłów połączonych krawędziami. Podczas gdy tradycyjne sieci neuronowe działają na siatkach (obrazach) lub sekwencjach (tekst), sieci GNN obsługują dowolne struktury relacyjne: sieci społecznościowe, wykresy molekularne, wykresy wiedzy, sieci drogowe, wykresy rekomendacji i inne. Stały się niezbędne w odkrywaniu leków, wykrywaniu oszustw, systemach rekomendacji i w każdej dziedzinie, w której liczą się relacje między podmiotami.
 ---

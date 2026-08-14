@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 러스트
 Rust는 원래 Mozilla의 Graydon Hoare가 개발한, 2015년에 처음 출시된 정적으로 유형이 지정되고 컴파일된 프로그래밍 언어입니다. Rust의 정의적인 약속은 **가비지 수집 없는 메모리 안전**입니다. 이는 C 또는 C++만큼 빠른 코드를 생성하면서 전체 버그 범주(널 포인터 역참조, 데이터 경합, 버퍼 오버플로, 사용 후 사용)를 제거하는 컴파일 타임에 적용되는 일련의 규칙인 소유권 시스템을 통해 이를 달성합니다.
 Rust는 Stack Overflow 개발자 설문조사에서 수년 연속으로 "가장 사랑받는" 프로그래밍 언어로 선정되었습니다. 시스템 프로그래밍, WebAssembly, CLI 도구, 클라우드 인프라 및 보안이 중요한 상황에서 C/C++를 대체하는 용도로 점점 더 많이 사용되고 있습니다. Linux 커널은 이제 Rust 코드를 허용합니다.

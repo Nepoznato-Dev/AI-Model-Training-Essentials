@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ব্যবহারিক জীবনের দক্ষতা
 স্কুল আপনাকে ক্যালকুলাস শেখায় কিন্তু খুব কমই শেখায় যে কীভাবে ট্যাক্স ফাইল করতে হয়, একটি সুষম খাবার রান্না করতে হয় বা একটি বাড়ি বজায় রাখতে হয়। এইগুলি হল ব্যবহারিক দক্ষতা যা আপনার দৈনন্দিন জীবনের মানকে প্রভাবিত করে — এমন জ্ঞান যা আপনাকে স্বয়ংসম্পূর্ণ এবং আর্থিকভাবে স্থিতিস্থাপক করে তোলে। এই ফাইল অপরিহার্য জন্য একটি ঘন রেফারেন্স.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンな Python コードを作成するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

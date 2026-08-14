@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 日常生活における AI
 人工知能はもはや未来的な概念ではなく、日常生活に組み込まれています。あなたが朝起きてスマートフォンをチェックした瞬間（どのような通知が表示されるかは推奨アルゴリズムによって決定されます）から眠りにつく瞬間（スマート スピーカーが最後のコマンドを処理します）まで、AI システムはあなたに代わって、あなたのために、そして時にはあなたについて意思決定を行っています。 AI がどこに登場するか、AI が基本レベルでどのように機能するか、そしてその影響が何であるかを理解することは、もはやオプションではなく、21 世紀における情報に基づく市民権の要件です。
 ---

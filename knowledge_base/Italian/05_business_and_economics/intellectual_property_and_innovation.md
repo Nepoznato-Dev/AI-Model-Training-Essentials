@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Proprietà intellettuale e innovazione
 La proprietà intellettuale (PI) si riferisce alle creazioni della mente (invenzioni, opere artistiche, marchi, design, segreti commerciali) che la legge protegge dall'uso non autorizzato. L’innovazione è il processo di trasformazione delle idee in valore. La legge sulla proprietà intellettuale esiste per bilanciare due interessi concorrenti: premiare i creatori (dando loro monopoli temporanei) e avvantaggiare la società (garantendo che la conoscenza alla fine diventi liberamente disponibile). Comprendere la proprietà intellettuale è essenziale per chiunque crei prodotti, crei contenuti, gestisca un'impresa o lavori nella ricerca.
 ---

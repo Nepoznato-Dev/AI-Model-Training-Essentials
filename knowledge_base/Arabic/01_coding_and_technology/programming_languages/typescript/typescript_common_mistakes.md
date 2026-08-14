@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript - الأخطاء الشائعة والأنماط المضادة
 يقوم هذا المستند بفهرسة الأخطاء والفخاخ والأنماط المضادة الأكثر شيوعًا في TypeScript. يُظهر كل إدخال النهج غير الصحيح، ويشرح سبب فشله، ويقدم الحل الصحيح.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # أساسيات رؤية الكمبيوتر
 تمنح رؤية الكمبيوتر الآلات القدرة على تفسير وفهم المعلومات المرئية من العالم - الصور والفيديو والبيانات ثلاثية الأبعاد. إنه يشغل كل شيء بدءًا من التعرف على الوجه على هاتفك وحتى السيارات ذاتية القيادة وتحليل الصور الطبية ومراقبة الجودة الصناعية. يغطي هذا الملف المفاهيم الأساسية والهندسة المعمارية والتقنيات.
 ---

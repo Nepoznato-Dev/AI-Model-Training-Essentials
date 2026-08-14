@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سكراتش - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لصيغة Scratch 3.0. وهو يكمل مرجع Scratch الرئيسي من خلال التركيز على فئات الكتل الشاملة، والأنماط المستندة إلى الأحداث، وإدارة الكائنات، والاستنساخ، وتقنيات الترميز الإبداعي.
 ---

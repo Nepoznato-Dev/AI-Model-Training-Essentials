@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Statistik und Wahrscheinlichkeit
 Wahrscheinlichkeit und Statistik sind die mathematischen Grundlagen der Datenwissenschaft, des maschinellen Lernens und der wissenschaftlichen Forschung. Die Wahrscheinlichkeit sagt Ihnen, wie wahrscheinlich Ereignisse sind. Statistiken zeigen Ihnen, wie Sie aus Daten Schlussfolgerungen ziehen können. Zusammen verwandeln sie Unsicherheit in quantifizierbares, beherrschbares Wissen.
 ---

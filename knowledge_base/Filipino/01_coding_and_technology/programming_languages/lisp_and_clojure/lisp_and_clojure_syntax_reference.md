@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp at Clojure — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa Common Lisp at Clojure. Kinukumpleto nito ang pangunahing sanggunian ng Lisp/Clojure sa pamamagitan ng pagtutok sa mga S-expression, macro, persistent data structures, at functional programming patterns.
 ---

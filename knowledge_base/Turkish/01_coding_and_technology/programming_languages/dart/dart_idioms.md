@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, deyimsel kalıpları ve temiz, deyimsel Dart kodu yazmaya yönelik en iyi uygulamaları kapsar.
 ---

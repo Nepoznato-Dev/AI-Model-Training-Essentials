@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz Go ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

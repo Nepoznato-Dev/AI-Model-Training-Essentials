@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Kotlin (2.0+). Ini melengkapi referensi utama Kotlin dengan berfokus pada pola sintaksis yang lengkap, keamanan null, coroutine, dan idiom Kotlin.
 ---

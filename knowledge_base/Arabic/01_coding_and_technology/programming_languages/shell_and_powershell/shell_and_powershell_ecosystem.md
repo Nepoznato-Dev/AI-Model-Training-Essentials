@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell وPowerShell — دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والأطر والبنية الأساسية الأساسية للبرمجة النصية لـ Shell (Bash/Zsh) وPowerShell.
 ---

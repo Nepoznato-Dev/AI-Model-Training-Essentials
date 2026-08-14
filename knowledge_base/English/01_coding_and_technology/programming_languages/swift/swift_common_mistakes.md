@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — Common Mistakes & Anti-Patterns
 
 This document catalogs the most common mistakes, traps, and anti-patterns in Swift. Each entry shows the incorrect approach, explains why it fails, and provides the correct solution.

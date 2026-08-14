@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho MATLAB (R2024+). Nó bổ sung cho tài liệu tham khảo MATLAB chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, các phép toán ma trận, vẽ đồ thị và các thành ngữ tính toán khoa học.
 ---

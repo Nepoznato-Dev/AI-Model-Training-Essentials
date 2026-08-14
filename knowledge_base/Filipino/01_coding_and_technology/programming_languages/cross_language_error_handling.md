@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Cross-Language Comparison — Paghawak ng Error
 ## Pangkalahatang-ideya ng Error sa Paghawak ng Mga Modelo
 | Modelo | Mga Wika | Mekanismo |

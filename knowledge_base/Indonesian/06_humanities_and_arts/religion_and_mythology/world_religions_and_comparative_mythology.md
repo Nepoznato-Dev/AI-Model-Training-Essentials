@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Agama Dunia dan Mitologi Perbandingan
 Agama-agama dunia adalah sistem kepercayaan, praktik, dan komunitas utama yang telah membentuk peradaban manusia selama ribuan tahun. Mitologi komparatif mempelajari kisah-kisah yang diceritakan oleh berbagai budaya tentang penciptaan, pahlawan, dewa, dan makna keberadaan — serta pola-pola mencolok yang berulang dalam tradisi-tradisi yang terpisah ribuan mil dan ribuan tahun. Memahami keduanya sangat penting untuk memahami mengapa orang memercayai apa yang mereka yakini, bagaimana budaya berbeda, dan apa yang menyatukan pengalaman manusia.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tecnologie climatiche e innovazione verde
 La tecnologia climatica comprende gli strumenti, i sistemi e le innovazioni progettati per ridurre le emissioni di gas serra, adattarsi ai cambiamenti climatici e portare l’economia globale su una base sostenibile. Si tratta senza dubbio dell’ambito tecnologico più importante del 21° secolo: la differenza tra un riscaldamento gestibile di 1,5°C e un catastrofico +3°C dipende in gran parte dalla rapidità con cui queste tecnologie possono essere implementate su larga scala. La sfida non è solo scientifica ma economica, politica e sociale.
 ---

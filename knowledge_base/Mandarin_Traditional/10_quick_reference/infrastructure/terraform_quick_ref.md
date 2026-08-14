@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform 和基礎架構即程式碼
 Terraform 是使用最廣泛的基礎設施即程式碼 (IaC) 工具 - 它允許您在聲明性設定檔中定義雲端基礎架構（伺服器、資料庫、網路、權限），這些檔案可以進行版本控制、審查、測試和自動化。您无需单击云控制台，而是编写描述基础设施所需状态的代码，然后 Terraform 确定要进行哪些更改。
 ---

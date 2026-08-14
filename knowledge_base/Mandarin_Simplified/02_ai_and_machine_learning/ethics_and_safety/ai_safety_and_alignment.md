@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 人工智能安全与协调
 人工智能安全是对如何构建人工智能系统的研究，该系统能够做我们真正希望它们做的事情，并且不做我们不想要的事情，即使这些事情没有被明确排除。一致性是让人工智能系统的目标和行为符合人类意图的具体挑战。随着人工智能系统变得越来越强大，这些问题从学术好奇心转向实际工程需求。
 ---

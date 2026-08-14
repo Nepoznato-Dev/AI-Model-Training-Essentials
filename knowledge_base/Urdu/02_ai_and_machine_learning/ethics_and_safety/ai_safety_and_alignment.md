@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI سیفٹی اور صف بندی
 AI سیفٹی اس بات کا مطالعہ ہے کہ AI سسٹمز کو کیسے بنایا جائے جو وہ کرتے ہیں جو ہم ان سے کرنا چاہتے ہیں - اور وہ کام نہ کریں جو ہم نہیں چاہتے، چاہے ان کو واضح طور پر مسترد نہ کیا گیا ہو۔ صف بندی AI سسٹمز کے اہداف اور طرز عمل کو انسانی ارادوں کے مطابق بنانے کا ایک مخصوص چیلنج ہے۔ جیسے جیسے AI سسٹمز زیادہ قابل ہو جاتے ہیں، یہ سوالات علمی تجسس سے عملی انجینئرنگ کی ضروریات کی طرف منتقل ہو جاتے ہیں۔
 ---

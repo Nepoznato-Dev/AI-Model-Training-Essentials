@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Logic and Critical Thinking
 
 Logic is the study of valid reasoning — how to construct sound arguments and identify flawed ones. Critical thinking is the disciplined habit of questioning assumptions, evaluating evidence, and reasoning carefully. These skills are essential not just in mathematics and computer science, but in everyday decision-making, scientific research, and navigating an information-rich world.

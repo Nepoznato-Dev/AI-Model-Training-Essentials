@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — Idiomatic Patterns & Best Practices
 
 This guide covers idiomatic patterns and best practices for writing clean, idiomatic Kotlin code.

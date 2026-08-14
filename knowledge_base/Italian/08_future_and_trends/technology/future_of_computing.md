@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Il futuro dell'informatica
 Il futuro dell’informatica è modellato da forze che mettono in discussione i presupposti fondamentali degli ultimi 60 anni. La legge di Moore – l’osservazione secondo cui la potenza di calcolo raddoppia all’incirca ogni due anni – sta rallentando. L'architettura von Neumann – CPU e memoria separate – sta colpendo un "muro di memoria". L’informatica quantistica promette di risolvere problemi che i computer classici non possono risolvere. I chip neuromorfi imitano l'architettura del cervello. L’edge computing allontana l’elaborazione dai data center centralizzati. E l’intelligenza artificiale sta cambiando la funzione dei computer: da strumenti che eseguono istruzioni a sistemi che apprendono, generano e ragionano. Comprendere questi cambiamenti è importante per chiunque costruisca, acquisti o faccia affidamento sulla tecnologia.
 ---

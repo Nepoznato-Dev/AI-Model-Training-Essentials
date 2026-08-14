@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ilmu Lingkungan dan Keberlanjutan
 Ilmu lingkungan menerapkan metode fisika, kimia, biologi, geologi, dan ekonomi untuk pertanyaan: "Apa yang terjadi pada planet kita, dan apa yang dapat dilakukan untuk mengatasinya?" Ini adalah bidang interdisipliner – sebuah konvergensi berbagai disiplin ilmu – yang berkontribusi terhadap kedalaman analitis dan relevansi kebijakannya.
 Ketegangan inti dalam ilmu lingkungan adalah: peradaban manusia bergantung pada pengambilan sumber daya dari lingkungan, namun pengambilan sumber daya tersebut akan mengubah lingkungan sehingga dapat merusak sistem tempat kita bergantung. Memahami bahwa putaran umpan balik adalah keseluruhan bidang secara singkat.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #الثقافات والمجتمعات العالمية
 الثقافة هي إطار المجتمع - المعتقدات والقيم والعادات والسلوكيات والمصنوعات المشتركة التي يستخدمها الأعضاء للتعامل مع عالمهم ومع بعضهم البعض. إن فهم التنوع الثقافي لا يعني حفظ الأمور التافهة؛ بل يتعلق الأمر بإدراك أن إحدى الطرق لرؤية العالم هي من بين آلاف الطرق، وأن الأنظمة الأخرى متماسكة داخليا، ولها أسس تاريخية، وتستحق الفهم بشروطها الخاصة.
 ---

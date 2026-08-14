@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — エコシステムとツールのガイド
 このガイドでは、Prolog エコシステムにおける重要なツール、実装、インフラストラクチャについて説明します。
 ---

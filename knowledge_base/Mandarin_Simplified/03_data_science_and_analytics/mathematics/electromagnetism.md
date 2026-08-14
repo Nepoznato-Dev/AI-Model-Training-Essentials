@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 电磁学
 电磁学是研究电场和磁场及其相互作用的学科。电磁学于 1860 年代由麦克斯韦统一，解释了光、电、磁、无线电波和原子结构。它是第一个在数学上被完全理解的基本力，它的方程启发了爱因斯坦的狭义相对论和现代场论。
 ---

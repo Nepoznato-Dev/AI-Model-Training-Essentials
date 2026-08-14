@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで安全な C コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

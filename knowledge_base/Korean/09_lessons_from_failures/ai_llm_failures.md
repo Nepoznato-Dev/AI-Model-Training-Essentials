@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI 및 LLM 실패
 이 문서는 환각, 잘못된 정보, 추론 오류 및 프롬프트 관련 문제를 포함하여 AI 및 대규모 언어 모델 시스템의 일반적인 실패 모드를 통합합니다.
 ---

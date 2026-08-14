@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoría de números
 La teoría de números es el estudio de los números enteros: números enteros y sus propiedades. Gauss la llamó "la reina de las matemáticas". A pesar de estudiar los objetos más simples (1, 2, 3,...), la teoría de números produce algunos de los problemas más profundos y difíciles de todas las matemáticas. Hoy en día, sustenta la criptografía moderna, los algoritmos hash, los códigos de corrección de errores y la generación de números aleatorios.
 ---

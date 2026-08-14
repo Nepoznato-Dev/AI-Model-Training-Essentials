@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # پیکربندی خط لوله CI/CD
 خطوط لوله یکپارچه سازی مداوم (CI) و استقرار مستمر (CD) فرآیند ساخت، آزمایش و استقرار نرم افزار را خودکار می کنند. این مرجع الگوهای پیکربندی محبوب‌ترین پلتفرم‌های CI/CD را پوشش می‌دهد: GitHub Actions، GitLab CI، و اصول کلی طراحی خط لوله.
 ---

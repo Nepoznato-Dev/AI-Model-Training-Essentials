@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL
 SQL (Structured Query Language) ist eine domänenspezifische Sprache zur Verwaltung und Abfrage von Daten in relationalen Datenbanken. SQL wurde erstmals in den 1970er Jahren bei IBM entwickelt und 1987 standardisiert und ist nach wie vor die primäre Schnittstelle zwischen Anwendungen und ihren Daten. Jedes große relationale Datenbankmanagementsystem (RDBMS) – PostgreSQL, MySQL, SQL Server, Oracle, SQLite – verwendet SQL als Abfragesprache.
 SQL ist keine Allzweck-Programmiersprache. Sie würden keine Webanwendung in SQL schreiben. Wenn Ihre Anwendung jedoch Daten speichert – und das tun fast alle Anwendungen –, dann ist SQL die Sprache, die Sie zum Abrufen, Transformieren und Verwalten dieser Daten verwenden. Nach der allgemeinen Programmierung handelt es sich wohl um die allgemein nützlichste technische Fähigkeit.

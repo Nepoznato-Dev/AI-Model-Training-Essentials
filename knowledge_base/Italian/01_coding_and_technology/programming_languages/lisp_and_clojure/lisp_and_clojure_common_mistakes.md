@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure: errori comuni e anti-pattern
 Questo documento cataloga gli errori, le trappole e gli anti-pattern più comuni in Lisp e Clojure con le correzioni.
 ---

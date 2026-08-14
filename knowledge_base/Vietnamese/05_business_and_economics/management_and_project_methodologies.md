@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phương pháp quản lý và dự án
 Quản lý con người và dự án là một trong những trách nhiệm đòi hỏi khắt khe nhất trong bất kỳ tổ chức nào. Kỹ năng kỹ thuật cung cấp cơ hội đầu vào, nhưng khả năng lãnh đạo nhóm, đưa ra quyết định, giao tiếp hiệu quả và đưa ra kết quả sẽ quyết định liệu mục tiêu có đạt được hay không. Tệp này bao gồm các khuôn khổ, phương pháp và kỹ năng thực tế mà các nhà quản lý và lãnh đạo dự án hiệu quả áp dụng.
 ---

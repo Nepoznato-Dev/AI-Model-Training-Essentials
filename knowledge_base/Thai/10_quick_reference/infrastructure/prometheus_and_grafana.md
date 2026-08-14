@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #โพรมีธีอุสและกราฟาน่า
 Prometheus เป็นชุดเครื่องมือตรวจสอบและแจ้งเตือนแบบโอเพ่นซอร์สที่ออกแบบมาเพื่อความน่าเชื่อถือและความสามารถในการปรับขนาด Grafana เป็นแพลตฟอร์มโอเพ่นซอร์สชั้นนำสำหรับการแสดงภาพข้อมูลอนุกรมเวลา เมื่อรวมกันแล้วจะก่อให้เกิดสแต็กการตรวจสอบที่ได้รับความนิยมสูงสุดสำหรับโครงสร้างพื้นฐานและแอปพลิเคชันสมัยใหม่ Prometheus รวบรวมและจัดเก็บหน่วยวัด Grafana แสดงในแดชบอร์ด
 ---

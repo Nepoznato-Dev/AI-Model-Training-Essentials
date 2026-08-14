@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # सी - सामान्य गलतियाँ और विरोधी पैटर्न
 यह दस्तावेज़ सी में सबसे आम गलतियों, जाल और विरोधी पैटर्न को सूचीबद्ध करता है। प्रत्येक प्रविष्टि गलत दृष्टिकोण दिखाती है, बताती है कि यह विफल क्यों होता है, और सही समाधान प्रदान करता है। सी आपको पूर्ण नियंत्रण देता है - जिसका अर्थ है स्मृति सुरक्षा, सीमा जाँच और अपरिभाषित व्यवहार के लिए पूर्ण जिम्मेदारी।
 ---

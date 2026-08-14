@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tarih ve Kültür
 Tarih, insanların yaptıklarının, bugün yaşadığımız dünyayı şekillendiren başarıların, felaketlerin, icatların ve fikirlerin hikayesidir. Bu sadece tarih ve isimlerden oluşan bir liste değil. Tarihi anlamak, sınırların neden orada olduğunu, insanların neden konuştukları dilleri konuştuğunu, neden bazı ülkelerin zengin olup bazılarının olmadığını ve eski gibi görünen çatışmaların neden hâlâ devam ettiğini anlamanıza yardımcı olur.
 Bu dosya, ilk uygarlıklardan günümüze kadar dünya tarihinin önemli dönemlerini ve temalarını kapsamaktadır.

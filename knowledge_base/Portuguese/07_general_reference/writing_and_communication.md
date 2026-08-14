@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fundamentos de redação e comunicação
 Escrita e comunicação são habilidades para transmitir ideias de forma eficaz – seja por meio de e-mails, relatórios, documentação, apresentações ou conversas. A maior parte do trabalho de conhecimento é fundamentalmente trabalho de comunicação: os profissionais precisam explicar o seu pensamento, persuadir os outros, documentar decisões, escrever especificações, apresentar descobertas e colaborar entre equipes. A lacuna entre o que se entende e o que é compreendido é onde se origina a maioria dos problemas, e uma melhor comunicação reduz essa lacuna.
 ---

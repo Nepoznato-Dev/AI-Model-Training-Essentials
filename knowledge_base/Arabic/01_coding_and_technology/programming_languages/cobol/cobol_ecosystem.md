@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # كوبول - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات الأساسية والمجمعات والبنية التحتية في نظام COBOL البيئي.
 ---

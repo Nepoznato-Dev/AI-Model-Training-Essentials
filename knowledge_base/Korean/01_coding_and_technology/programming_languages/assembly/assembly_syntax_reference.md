@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 어셈블리 언어 - 구문 참조
 이 문서는 x86-64 Assembly(NASM 구문)에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 명령 범주, 주소 지정 모드, 스택 프레임 규칙 및 시스템 프로그래밍 패턴에 중점을 두어 기본 어셈블리 참조를 보완합니다.
 ---

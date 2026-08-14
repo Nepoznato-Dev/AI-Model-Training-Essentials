@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linux Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Referência rápida de comandos do Linux
 Comandos Linux/Unix essenciais para navegação e administração do sistema.
 ---

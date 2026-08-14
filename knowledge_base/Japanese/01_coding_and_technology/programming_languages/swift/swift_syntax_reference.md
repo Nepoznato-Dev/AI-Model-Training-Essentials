@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — 構文リファレンス
 このドキュメントは、Swift (5.9 以降) の包括的で構造化された構文リファレンスを提供します。これは、徹底的な構文パターン、オプション、プロトコル指向プログラミング、最新の同時実行性に焦点を当て、メインの Swift リファレンスを補完します。
 ---

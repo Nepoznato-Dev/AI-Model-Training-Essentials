@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Computer Vision Fundamentals
 
 Computer vision gives machines the ability to interpret and understand visual information from the world — images, video, and 3D data. It powers everything from face recognition on your phone to self-driving cars, medical image analysis, and industrial quality control. This file covers the core concepts, architectures, and techniques.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — 일반적인 실수 및 안티 패턴
 이 문서에는 COBOL에서 수정 사항이 포함된 가장 일반적인 실수, 트랩 및 안티 패턴이 나열되어 있습니다.
 ---

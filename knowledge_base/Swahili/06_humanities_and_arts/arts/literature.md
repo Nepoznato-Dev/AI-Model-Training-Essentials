@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Fasihi
 Fasihi ndiyo rekodi ya kudumu zaidi ya mawazo, hisia, na uzoefu wa binadamu. Kuanzia masimulizi simulizi ya ustaarabu wa kale hadi riwaya za zama za dijitali za leo, kila kazi inazungumza na yale yaliyotangulia. Kuelewa aina za fasihi, mienendo na mbinu hukupa lenzi tajiri zaidi ya kusoma - na kuelewa tamaduni zilizozalisha kazi hizi.
 ---

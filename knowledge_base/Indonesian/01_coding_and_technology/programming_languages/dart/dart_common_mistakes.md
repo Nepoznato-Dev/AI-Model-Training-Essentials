@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — Kesalahan Umum & Anti-Pola
 Dokumen ini berisi katalog kesalahan, jebakan, dan anti-pola paling umum di Dart beserta koreksinya.
 ---

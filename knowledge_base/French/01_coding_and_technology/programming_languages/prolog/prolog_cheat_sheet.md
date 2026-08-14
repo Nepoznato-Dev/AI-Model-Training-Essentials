@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — Aide-mémoire
 ## Bases
 ```prolog

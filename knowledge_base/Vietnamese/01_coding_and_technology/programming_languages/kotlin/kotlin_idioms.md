@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — Các mẫu thành ngữ và các phương pháp hay nhất
 Hướng dẫn này trình bày các mẫu thành ngữ và các phương pháp hay nhất để viết mã Kotlin rõ ràng, thuần túy.
 ---

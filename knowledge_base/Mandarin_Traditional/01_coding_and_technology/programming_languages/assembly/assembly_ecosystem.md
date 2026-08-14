@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assembly — 生態系統和工具指南
 本指南涵蓋了 Assembly 生態系統中的基本工具、彙編器和基礎設施。
 ---

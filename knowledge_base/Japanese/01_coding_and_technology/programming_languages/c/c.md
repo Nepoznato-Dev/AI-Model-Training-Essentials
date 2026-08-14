@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #C
 C は、1969 年から 1973 年にかけてベル研究所のデニス・リッチーによって作成された汎用の手続き型プログラミング言語です。C は Unix オペレーティング システムを実装するために設計され、50 年以上経った現在でも最も広く使用されているプログラミング言語の 1 つです。 C は、低レベルのメモリ アクセス、最小限の標準ライブラリ、機械語命令への明確なマッピングを提供し、最新のコンピューティングを構築する基盤となっています。
 C は、オペレーティング システム (Linux、Windows カーネル、macOS)、組み込みシステム、データベース エンジン (SQLite、PostgreSQL)、コンパイラー (Python の CPython、Ruby の MRI)、およびその他のほぼすべてのプログラミング言語ランタイムの背後にある言語です。 C を理解するということは、コンピュータが実際にどのように動作するかを理解することです。

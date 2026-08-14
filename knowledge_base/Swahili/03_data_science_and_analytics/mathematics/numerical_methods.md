@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mbinu za Nambari
 Njia za nambari ni daraja kati ya nadharia ya hisabati na hesabu ya vitendo. Wakati hisabati safi inathibitisha kuwa suluhu zipo, njia za nambari hukusanya majibu takriban kwa usahihi kamili. Kila modeli ya kujifunza kwa mashine, uigaji wa fizikia, na bomba la uchanganuzi wa data hatimaye hutegemea ukokotoaji wa nambari. Kuelewa njia hizi - usahihi, uthabiti, na mapungufu - ni muhimu kwa kuunda programu inayotegemewa.
 ---

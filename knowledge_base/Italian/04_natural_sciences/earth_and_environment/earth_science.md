@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scienze della Terra
 Le scienze della Terra studiano il pianeta su cui viviamo: la sua struttura, i processi, la storia e i sistemi che lo rendono abitabile. Comprende la geologia (la Terra solida), l'oceanografia (gli oceani), la meteorologia (l'atmosfera e il tempo) e la climatologia (modelli climatici a lungo termine). Ciò che unisce questi campi è la comprensione che la Terra è un sistema dinamico: il suo interno è in costante movimento, la sua superficie viene rimodellata e la sua atmosfera e gli oceani interagiscono in modi complessi.
 ---

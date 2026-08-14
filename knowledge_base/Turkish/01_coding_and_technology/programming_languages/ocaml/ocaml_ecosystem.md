@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz OCaml ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

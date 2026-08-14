@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 도구 사용법
 ## Git — 버전 관리
 Git은 분산 버전 관리 시스템입니다. 모든 개발자는 자신의 로컬 컴퓨터에 저장소 기록의 전체 복사본을 가지고 있습니다.

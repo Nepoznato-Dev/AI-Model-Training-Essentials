@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 論理と批判的思考
 論理学は、正当な推論、つまり健全な議論を構築し、欠陥のある議論を特定する方法の研究です。クリティカルシンキングとは、仮定に疑問を持ち、証拠を評価し、慎重に推論する規律ある習慣です。これらのスキルは、数学やコンピューター サイエンスだけでなく、日常の意思決定、科学研究、情報が豊富な世界をナビゲートする際にも不可欠です。
 ---

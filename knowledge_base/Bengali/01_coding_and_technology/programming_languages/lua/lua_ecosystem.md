@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # লুয়া — ইকোসিস্টেম এবং টুলিং গাইড
 এই গাইডটি লুয়া ইকোসিস্টেমের প্রয়োজনীয় টুলস, লাইব্রেরি এবং অবকাঠামো কভার করে।
 ---

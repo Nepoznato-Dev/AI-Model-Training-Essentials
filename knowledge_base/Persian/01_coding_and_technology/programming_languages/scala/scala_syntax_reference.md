@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala - مرجع نحو
 این سند یک مرجع نحوی جامع و ساختار یافته برای Scala (3.x با یادداشت‌هایی در مورد تفاوت‌های 2.x) ارائه می‌کند. این مرجع اصلی Scala را با تمرکز بر الگوهای نحوی جامع، سیستم نوع، ساختارهای برنامه‌نویسی کاربردی و اصطلاحات Scala تکمیل می‌کند.
 ---

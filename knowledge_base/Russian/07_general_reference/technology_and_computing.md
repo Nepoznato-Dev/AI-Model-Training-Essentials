@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Технологии и вычисления
 Компьютеры повсюду — в вашем телефоне, автомобиле, холодильнике, медицинских устройствах и инфраструктуре, которая управляет современным обществом. Вам не нужно быть программистом, чтобы понять, как все это работает. В этом файле рассматриваются основы: что такое компьютер, как работает Интернет, как создается программное обеспечение, а также концепции, формирующие цифровой мир.
 > **Хотите углубиться?** Этот файл представляет собой общий обзор. Подробное освещение любой темы см. в специальных файлах [`01_coding_and_technology/`](../01_coding_and_technology/), включая [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)и.

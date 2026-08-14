@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 場景規劃
 ＃＃ 概述
 沒有人能預測未來——但你可以為幾個可能的未來做好準備。情境規劃誕生於冷戰時期的智庫，並在 20 世紀 70 年代石油危機期間由殼牌公司完善，是一種系統性思考不確定性的方法。您不必押注於一種預測，而是建立有關事情可能如何發展的連貫故事，然後根據所有這些預測對您的決策進行壓力測試。以下是該方法的工作原理以及跨關鍵領域的場景。

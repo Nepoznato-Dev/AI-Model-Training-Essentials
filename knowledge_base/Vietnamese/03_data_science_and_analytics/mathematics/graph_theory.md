@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lý thuyết đồ thị
 **đồ thị** là một cấu trúc toán học bao gồm các đỉnh (nút) được kết nối bởi các cạnh (liên kết). Các mối quan hệ mô hình đồ thị: mạng xã hội, bản đồ đường đi, mạng lưới thần kinh, sự phụ thuộc, kênh truyền thông. Lý thuyết đồ thị - nghiên cứu về các cấu trúc này - cung cấp các thuật toán và định lý trọng tâm của khoa học máy tính, nghiên cứu hoạt động và khoa học dữ liệu.
 ---

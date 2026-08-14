@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ 优化
 优化是从一组可行解决方案中找到最佳解决方案的数学。它问：给定一个函数和约束，什么输入可以最小化（或最大化）输出？优化是机器学习的引擎——训练模型意味着最小化损失函数。它出现在运筹学、经济学、工程设计以及几乎所有定量领域。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini و چشم انداز مدل هوش مصنوعی محلی
 تجزیه و تحلیل مدل Phi-3-mini مایکروسافت - فلسفه طراحی، انتخاب های معماری و ویژگی های عملکرد آن - و آنچه موفقیت آن در مورد ساختن سیستم های هوش مصنوعی موثر و کارآمد به ما می آموزد.
 ---

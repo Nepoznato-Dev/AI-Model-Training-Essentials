@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # পার্ল — সিনট্যাক্স রেফারেন্স
 এই নথিটি পার্লের (5.38+) জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, রেগুলার এক্সপ্রেশন, রেফারেন্স এবং পার্লের টেক্সট প্রসেসিং ক্ষমতার উপর ফোকাস করে প্রধান পার্ল রেফারেন্সের পরিপূরক।
 ---

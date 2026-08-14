@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Commercio ed Economia
 Ogni organizzazione che vende un prodotto o un servizio è un’impresa, e ogni società che produce e distribuisce beni è un’economia. I concetti contenuti in questo file si applicano sia che tu stia gestendo un'attività freelance, lavorando in un'azienda, cercando di comprendere le notizie o semplicemente di capire come il denaro si muove nel mondo.
 ---

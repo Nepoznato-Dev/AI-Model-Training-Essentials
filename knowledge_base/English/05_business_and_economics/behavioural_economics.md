@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Behavioural Economics and Decision Science
 
 Behavioural economics studies how people actually make decisions — not how rational agents would make them. Traditional economics assumes people are rational, self-interested, and good at processing information. Decades of research by Kahneman, Tversky, Thaler, and others have shown this is wildly inaccurate. People use mental shortcuts, are influenced by irrelevant context, overweight recent information, and make systematically predictable errors. Understanding these patterns is essential for designing better products, policies, organisations, and personal decisions.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL - مرجع نحو
 این سند یک مرجع نحوی ساختاریافته و جامع برای SQL (ANSI SQL با یادداشت‌هایی درباره تفاوت‌های گویش PostgreSQL/MySQL/SQLite) ارائه می‌کند. این مرجع اصلی SQL را با تمرکز بر الگوهای جستجوی جامع، توابع پنجره، CTEها و طراحی پایگاه داده تکمیل می کند.
 ---

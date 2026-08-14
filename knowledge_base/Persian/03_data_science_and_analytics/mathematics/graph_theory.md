@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # نظریه گراف
 **گراف** یک ساختار ریاضی متشکل از رئوس (گره ها) است که توسط یال ها (پیوندها) به هم متصل شده اند. روابط مدل نمودارها: شبکه های اجتماعی، نقشه راه، شبکه های عصبی، وابستگی ها، کانال های ارتباطی. تئوری گراف - مطالعه این ساختارها - الگوریتم‌ها و قضایایی را ارائه می‌دهد که در علوم کامپیوتر، تحقیقات عملیات و علم داده‌ها نقش محوری دارند.
 ---

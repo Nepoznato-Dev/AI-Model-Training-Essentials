@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mfululizo wa Wakati na Utabiri
 Data ya mfululizo wa saa ni data yoyote inayokusanywa kwa wakati: bei za hisa, usomaji wa halijoto, trafiki ya tovuti, takwimu za mauzo, vichunguzi vya mapigo ya moyo, matumizi ya nishati. Utabiri unamaanisha kutabiri thamani za siku zijazo kulingana na mifumo ya zamani. Ni mojawapo ya matumizi muhimu sana ya sayansi ya data - na mojawapo ya magumu zaidi, kwa sababu siku zijazo hazina uhakika na mfululizo wa wakati wa ulimwengu halisi umejaa kelele, msimu na mapumziko ya muundo.
 ---

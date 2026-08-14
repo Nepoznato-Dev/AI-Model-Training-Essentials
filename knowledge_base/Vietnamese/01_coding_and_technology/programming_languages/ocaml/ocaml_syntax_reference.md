@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho OCaml (4.x/5.x). Nó bổ sung cho tham chiếu OCaml chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, các kiểu dữ liệu đại số, khớp mẫu, mô-đun và các thành ngữ lập trình chức năng.
 ---

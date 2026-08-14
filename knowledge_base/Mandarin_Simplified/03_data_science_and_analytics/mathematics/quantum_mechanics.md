@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 量子力学
 量子力学是最小尺度的物理理论——原子、电子、光子和自然界的基本粒子。它用概率、叠加和纠缠取代了经典力学的确定性世界。尽管量子力学具有违反直觉的性质，但它是所有科学中经过最精确检验的理论。如今，它的原理正与量子计算机的计算直接相关，量子计算机有望比传统计算机以指数速度更快地解决某些问题。
 ---

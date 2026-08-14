@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lenguaje ensamblador: referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para el ensamblado x86-64 (sintaxis NASM). Complementa la referencia principal de Ensamblaje centrándose en categorías de instrucción exhaustivas, modos de direccionamiento, convenciones de marco de pila y patrones de programación de sistemas.
 ---

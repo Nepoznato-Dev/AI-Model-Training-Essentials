@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # إدارة Ansible والتكوين
 Ansible هي أداة لإدارة التكوين والأتمتة بدون وكيل. ويستخدم SSH (أو WinRM لنظام التشغيل Windows) للاتصال بالخوادم وتنفيذ المهام المحددة في كتب تشغيل YAML. على عكس الأدوات التي تتطلب تثبيت الوكلاء على كل جهاز، يعتمد Ansible على الدفع - حيث تقوم بتشغيل الأوامر من عقدة التحكم. يتم استخدامه لتوفير الخادم ونشر التطبيقات وإدارة التكوين وتنفيذ المهام المخصصة.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Processus stochastiques
 Un **processus stochastique** est une collection de variables aléatoires indexées par le temps (ou l'espace). Alors que la théorie des probabilités étudie des événements aléatoires individuels, les processus stochastiques étudient la manière dont le caractère aléatoire évolue au fil du temps. Ils modélisent les cours des actions, les longueurs d’attente, la propagation des maladies, la génération de langage et la dynamique de formation des modèles d’apprentissage automatique.
 ---

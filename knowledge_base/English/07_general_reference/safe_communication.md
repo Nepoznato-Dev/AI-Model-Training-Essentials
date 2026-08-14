@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Safe Communication and Responsible Statements
 
 ## Why Accuracy Matters

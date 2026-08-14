@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Padrões de arquitetura de software
 Arquitetura é o conjunto de decisões estruturais sobre como um sistema é organizado – quais componentes ele possui, como eles se comunicam e onde estão as responsabilidades. Uma boa arquitetura torna um sistema fácil de entender, modificar e dimensionar. A arquitetura ruim torna cada mudança uma luta. Este arquivo cobre os principais padrões, quando usar cada um e as compensações envolvidas.
 ---

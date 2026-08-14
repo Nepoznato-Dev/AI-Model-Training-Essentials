@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Comparação entre idiomas – Tratamento de erros
 ## Visão geral dos modelos de tratamento de erros
 | Modelo | Idiomas | Mecanismo |

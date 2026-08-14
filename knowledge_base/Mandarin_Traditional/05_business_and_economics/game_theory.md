@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 博弈論與策略思維
 博弈論是對策略互動的數學研究——在這種情況下，你的結果不僅取決於你做什麼，還取決於別人做什麼。它適用於任何地方：商業競爭、國際關係、拍賣、談判、進化生物學以及選擇交通路線等日常決策。核心見解是，策略情境中的理性行為者不僅優化自己的策略──他們預測其他人會做什麼，而其他人也在做同樣的事情。
 ---

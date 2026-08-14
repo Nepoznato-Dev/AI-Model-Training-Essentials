@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # এরলাং এবং ইলিক্সির — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অনুশীলন
 এই নির্দেশিকাটি BEAM VM-এ Erlang এবং Elixir-এর জন্য বাহাদুরিমূলক নিদর্শন কভার করে।
 ---

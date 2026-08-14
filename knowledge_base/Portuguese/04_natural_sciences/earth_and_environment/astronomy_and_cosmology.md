@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Astronomia e Cosmologia
 Astronomia é o estudo dos objetos celestes – estrelas, planetas, galáxias e tudo além da atmosfera da Terra. Cosmologia é o estudo do universo como um todo: sua origem, estrutura, evolução e destino final. Juntos, eles abordam algumas das questões mais fundamentais que os humanos já fizeram: Como o universo começou? Quão grande é isso? Estamos sozinhos? O que acontecerá com isso no final?
 ---

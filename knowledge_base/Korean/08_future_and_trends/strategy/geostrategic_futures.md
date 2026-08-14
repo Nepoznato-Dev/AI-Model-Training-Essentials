@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 지정학적 미래
 ## 개요
 냉전 이후 미국이 지배하던 시대는 더 복잡한 상황으로 바뀌고 있습니다. 권력이 분산되고, 기술과 자원에 대한 경쟁이 심화되고, 기후 변화와 전염병과 같은 문제가 국경을 존중하지 않는 다극 세계입니다. 1945년 이후 구축된 규칙 기반 국제 질서는 모든 방향에서 시험을 받고 있습니다. 무엇이 변화하고 있는지, 누가 상승하고 있는지, 마찰 지점이 어디인지는 다음과 같습니다.

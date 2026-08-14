@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni języka Ruby (3.x). Uzupełnia główne odniesienia do Ruby, skupiając się na wyczerpujących wzorcach składni, blokach i domknięciach, metaprogramowaniu i idiomach Ruby.
 ---

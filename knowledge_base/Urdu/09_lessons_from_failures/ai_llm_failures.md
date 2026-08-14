@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI اور LLM میں ناکامیاں
 یہ دستاویز AI اور Large Language Model سسٹمز میں عام ناکامی کے طریقوں کو یکجا کرتی ہے، بشمول فریب، غلط معلومات، استدلال کی غلطیاں، اور فوری متعلقہ مسائل۔
 ---

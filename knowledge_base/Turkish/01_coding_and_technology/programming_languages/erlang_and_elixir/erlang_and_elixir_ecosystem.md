@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang ve İksir — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz, BEAM VM ve OTP'yi paylaşan Erlang ve Elixir ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

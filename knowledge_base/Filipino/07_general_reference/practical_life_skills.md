@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Praktikal na Kasanayan sa Buhay
 Tinuturuan ka ng paaralan ng calculus ngunit bihirang turuan ka kung paano maghain ng buwis, magluto ng balanseng pagkain, o magpanatili ng tahanan. Ito ang mga praktikal na kakayahan na nakakaapekto sa iyong pang-araw-araw na kalidad ng buhay — ang uri ng kaalaman na ginagawa kang sapat sa sarili at nababanat sa pananalapi. Ang file na ito ay isang siksik na sanggunian para sa mga mahahalaga.
 ---

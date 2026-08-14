@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Artipisyal na Katalinuhan
 Ang artificial intelligence ay ang pagtatangka na bumuo ng mga makina na maaaring gumawa ng mga bagay na mangangailangan ng katalinuhan kung ang isang tao ay gumawa ng mga ito: makilala ang mga mukha, maunawaan ang pananalita, gumawa ng mga desisyon, magsulat ng teksto, maglaro, magmaneho ng mga kotse, mag-diagnose ng mga sakit. Ang field ay kasingtanda ng pag-compute mismo — nagtatanong si Alan Turing ng "Maaari bang mag-isip ang mga makina?" noong 1950 — ngunit ang kamakailang pagsabog sa kakayahan (2020s) ay ginawa ang AI na isa sa pinakamahalaga at pinagtatalunang teknolohiya sa kasaysayan ng tao.
 ---

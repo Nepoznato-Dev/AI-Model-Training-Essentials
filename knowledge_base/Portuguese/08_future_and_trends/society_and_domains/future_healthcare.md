@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Saúde do futuro
 ## Visão geral
 A medicina está mudando de um modelo reativo – tratar os sintomas depois que eles aparecem – para um modelo preditivo, personalizado e cada vez mais preventivo. A genômica passou de um projeto de US$ 3 bilhões para um teste de rotina inferior a US$ 1.000. A IA está aprendendo a detectar doenças em exames antes que os médicos o façam. E a medicina regenerativa está a transformar a ficção científica em ensaios clínicos. Aqui está o que está acontecendo nas três maiores fronteiras: medicina personalizada, pesquisa sobre longevidade e medicina regenerativa.

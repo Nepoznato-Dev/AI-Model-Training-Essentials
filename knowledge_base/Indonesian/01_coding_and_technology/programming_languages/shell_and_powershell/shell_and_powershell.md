@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell
 Skrip shell mengacu pada penulisan skrip untuk penerjemah baris perintah. Dua shell yang paling penting adalah **Bash** (Bourne Again Shell) — default di Linux dan macOS — dan **PowerShell** — shell lintas platform dan bahasa skrip modern Microsoft. Skrip Shell mengotomatiskan tugas administrasi sistem, membangun saluran pipa, pemrosesan file, dan alur kerja penerapan.
 Setiap pengembang, insinyur DevOps, dan administrator sistem memerlukan keterampilan skrip shell. Baik Anda menerapkan server web, memproses file log, menyiapkan pipeline CI/CD, atau mengotomatiskan pencadangan, skrip shell adalah alat untuk pekerjaan tersebut.

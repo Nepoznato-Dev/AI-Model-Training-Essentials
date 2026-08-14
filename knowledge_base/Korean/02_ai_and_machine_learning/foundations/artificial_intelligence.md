@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 인공지능
 인공지능은 얼굴 인식, 음성 이해, 결정 내리기, 문자 쓰기, 게임하기, 자동차 운전하기, 질병 진단하기 등 인간이 할 경우 지능이 필요한 작업을 수행할 수 있는 기계를 구축하려는 시도입니다. 이 분야는 컴퓨팅 자체만큼 오래되었습니다. Alan Turing은 "기계가 생각할 수 있습니까?"라고 물었습니다. 그러나 최근(2020년대) 역량이 폭발적으로 증가하면서 AI는 인류 역사상 가장 중요하고 경쟁이 치열한 기술 중 하나가 되었습니다.
 ---

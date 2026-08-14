@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 數學
 數學不僅是學校學習的一門學科，它幾乎是每個技術領域的基礎。物理學用它來描述宇宙。計算機科學用它來設計演算法。機器學習用它來優化權重。金融用它來定價風險。掌握每個分支並不是必要的，但了解情況——並知道每個分支的應用場景——可以讓其他主題更容易掌握。
 ---

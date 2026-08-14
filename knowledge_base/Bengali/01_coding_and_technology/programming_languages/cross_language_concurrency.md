@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ক্রস-ল্যাঙ্গুয়েজ তুলনা — কনকারেন্সি এবং প্যারালেলিজম
 ## কনকারেন্সি মডেল ওভারভিউ
 | ভাষা | মডেল | কী মেকানিজম | ভাগ করা মেমরি? |

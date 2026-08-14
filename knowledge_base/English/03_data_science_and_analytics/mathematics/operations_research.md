@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Operations Research
 
 Operations research (OR) is the application of mathematical methods to decision-making. Born during World War II for military logistics, it now optimises supply chains, schedules airlines, routes delivery fleets, manages inventories, and allocates resources across every industry. OR provides the mathematical toolkit for making the best possible decisions under constraints.

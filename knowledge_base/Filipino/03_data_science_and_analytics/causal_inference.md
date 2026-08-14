@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sanhi ng Hinuha
 Ang causal inference ay ang agham ng pagtukoy kung ang isang bagay ay talagang nagdudulot ng isa pa — hindi lang kung may kaugnayan ang mga ito. Sinasabi sa iyo ng ugnayan na ang dalawang variable ay gumagalaw nang magkasama. Sinasabi sa iyo ng sanhi na ang pagbabago ng isa ay magbabago sa isa pa. Napakahalaga ng pagkakaibang ito sa medisina (gumagana ba ang gamot na ito?), patakaran (nababawasan ba ng interbensyong ito ang kahirapan?), negosyo (nagdaragdag ba ang mga benta ng ad campaign na ito?), at agham (ipinapaliwanag ba ng mekanismong ito ang phenomenon?).
 ---

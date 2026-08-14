@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi/Object Pascal — Erros comuns e antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns no Delphi/Object Pascal com correções.
 ---

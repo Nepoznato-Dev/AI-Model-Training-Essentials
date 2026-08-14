@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #สกาล่า
 Scala (Scalable Language) เป็นภาษาการเขียนโปรแกรมแบบคอมไพล์ที่พิมพ์คงที่ ซึ่งรวมกระบวนทัศน์การเขียนโปรแกรมเชิงวัตถุและเชิงฟังก์ชันเข้าด้วยกัน Scala สร้างโดย Martin Odersky และเปิดตัวครั้งแรกในปี 2004 ทำงานบน JVM (เช่น Scala.js สำหรับ JavaScript และ Scala Native) ได้รับการออกแบบมาเพื่อจัดการกับคำฟุ่มเฟือยของ Java ในขณะที่ยังคงความสามารถในการทำงานร่วมกันของ Java ได้อย่างสมบูรณ์
 Scala เป็นภาษาเบื้องหลัง Apache Spark (เฟรมเวิร์กการประมวลผลข้อมูลขนาดใหญ่) และมีการใช้อย่างแพร่หลายในด้านวิศวกรรมข้อมูล ระบบแบบกระจาย และบริการแบ็กเอนด์ บริษัทต่างๆ เช่น Twitter (ปัจจุบันคือ X), LinkedIn, Netflix และ The Guardian ใช้ Scala

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran
 Fortran（公式翻译）是仍在广泛使用的最古老的高级编程语言，最初由 IBM 于 1957 年开发，用于科学和工程计算。尽管历史悠久，现代 Fortran (Fortran 2008/2018/2023) 仍然是一种功能强大的高性能语言，广泛用于数值天气预报、计算流体动力学、物理模拟、金融建模和高性能计算 (HPC)。世界上许多最快的超级计算机都运行 Fortran 代码。
 该语言与早期相比已经发生了显着的发展。现代 Fortran 具有模块、派生类型、泛型过程、coarray（并行编程）以及与 C 的互操作性。它仍然是许多性能至关重要的科学计算应用程序的首选语言。

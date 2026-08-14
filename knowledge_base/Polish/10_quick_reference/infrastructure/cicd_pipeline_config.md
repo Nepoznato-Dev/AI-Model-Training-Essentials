@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Konfiguracja potoku CI/CD
 Potoki ciągłej integracji (CI) i ciągłego wdrażania (CD) automatyzują proces tworzenia, testowania i wdrażania oprogramowania. W tym dokumencie omówiono wzorce konfiguracji dla najpopularniejszych platform CI/CD: GitHub Actions, GitLab CI i ogólne zasady projektowania potoków.
 ---

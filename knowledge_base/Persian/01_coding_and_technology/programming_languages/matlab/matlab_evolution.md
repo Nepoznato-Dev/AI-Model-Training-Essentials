@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - تاریخچه نسخه و تکامل
 ## جدول زمانی
 | نسخه | سال | تم کلید |

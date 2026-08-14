@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 地理と地政学
 地理は運命を形作ります。 The location of mountains, rivers, and natural resources has determined trade routes, sparked wars, and built civilisations for millennia.今日でも、地理、権力、政治の相互作用である地政学は、国家がなぜそのように行動するのかを理解するために不可欠な要素であり続けています。
 ---

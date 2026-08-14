@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift - Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para Swift (5.9+). Complementa la referencia principal de Swift centrándose en patrones de sintaxis exhaustivos, opciones, programación orientada a protocolos y concurrencia moderna.
 ---

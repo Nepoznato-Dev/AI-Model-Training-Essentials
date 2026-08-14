@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Reinforcement Learning
 
 Reinforcement learning (RL) is how machines learn to make sequences of decisions by trial and error. Unlike supervised learning, where the correct answer is provided for every example, RL gives an agent only a reward signal — and the agent must figure out which actions lead to the best outcomes over time. It's the approach behind AlphaGo, robotic control, game-playing AI, and — critically — RLHF, the technique used to align modern large language models with human preferences.

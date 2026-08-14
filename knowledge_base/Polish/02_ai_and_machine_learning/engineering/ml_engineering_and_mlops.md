@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Inżynieria ML i MLOps
 Zbudowanie modelu uczenia maszynowego to tylko połowa sukcesu. Wprowadzanie go do środowiska produkcyjnego, utrzymywanie jego niezawodnego działania, monitorowanie dryfów i wykonywanie iteracji — tu z pomocą przychodzi inżynieria ML i MLOps. Ten plik obejmuje pełny cykl życia, od eksperymentu do systemu produkcyjnego.
 ---

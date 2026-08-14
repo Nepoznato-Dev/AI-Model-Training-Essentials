@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Logique et pensée critique
 La logique est l’étude du raisonnement valable – comment construire des arguments solides et identifier ceux qui sont erronés. La pensée critique est l’habitude disciplinée de remettre en question les hypothèses, d’évaluer les preuves et de raisonner soigneusement. Ces compétences sont essentielles non seulement en mathématiques et en informatique, mais aussi pour la prise de décision quotidienne, la recherche scientifique et la navigation dans un monde riche en informations.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Masuala ya Kuegemea Mfumo
 Hati hii inaunganisha masuala ya kutegemewa ikiwa ni pamoja na uvujaji wa kumbukumbu, hali ya mbio, hitilafu za programu zinazofanana na kushindwa kwa muundo wa mfumo.
 ---

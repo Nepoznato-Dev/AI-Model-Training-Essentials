@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — Các lỗi thường gặp và các mẫu phản kháng
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong PHP kèm theo các bản sửa lỗi.
 ---

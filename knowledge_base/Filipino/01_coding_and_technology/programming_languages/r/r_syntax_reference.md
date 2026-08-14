@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R — Syntax Reference
 Nagbibigay ang dokumentong ito ng komprehensibo, structured na syntax na reference para sa R ​​(4.x). Kinukumpleto nito ang pangunahing sanggunian ng R sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, ang tidyverse ecosystem, pagmamanipula ng data, pagmomodelo ng istatistika, at visualization.
 ---

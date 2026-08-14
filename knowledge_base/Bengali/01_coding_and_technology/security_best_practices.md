@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Best Practices"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # নিরাপত্তার সর্বোত্তম অভ্যাস
 অ্যাপ্লিকেশন, অবকাঠামো এবং ডেটা সুরক্ষিত করার জন্য একটি ব্যবহারিক নির্দেশিকা — উন্নয়ন থেকে উৎপাদন পর্যন্ত।
 ---

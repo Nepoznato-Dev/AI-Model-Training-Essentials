@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gıda, Tarım ve Beslenme
 Gıda insanın en temel ihtiyacıdır ve tarım medeniyetin temelidir. Avcılık ve toplayıcılıktan çiftçiliğe geçiş (yaklaşık 10.000 yıl önceki Neolitik Devrim), insanların şehirler kurmasına, yazıyı geliştirmesine ve "uygarlık" dediğimiz diğer her şeyi yaratmasına olanak sağladı. Bugün tarım, küresel işgücünün yaklaşık %27'sini istihdam ediyor ve günde yaklaşık 10 trilyon kalori üretiyor. Ancak yaklaşık 800 milyon insan hâlâ aç, 2 milyardan fazlası ise aşırı kilolu veya obez. Sorun üretim değil; dağıtım, erişim ve seçimlerdir.
 ---

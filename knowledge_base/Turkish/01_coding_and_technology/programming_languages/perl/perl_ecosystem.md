@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz Perl ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

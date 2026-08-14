@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 迅速なエンジニアリング
 プロンプト エンジニアリングは、言語モデルから可能な限り最高の出力を得るために、入力プロンプトを設計、改良、最適化する実践です。これは芸術であり科学でもあり、微調整せずに LLM の動作を制御するための主要なインターフェイスです。
 ---

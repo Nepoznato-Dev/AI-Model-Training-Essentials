@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir - نحوی حوالہ
 یہ دستاویز ایرلنگ اور ایلیکسیر کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ پیٹرن کی مماثلت، عمل کے انتظام، OTP رویے، اور غلطی کو برداشت کرنے والے نظام کے نمونوں پر توجہ مرکوز کرکے مرکزی حوالہ کی تکمیل کرتا ہے۔
 ---

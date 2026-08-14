@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Misingi ya Maono ya Kompyuta
 Maono ya kompyuta huipa mashine uwezo wa kufasiri na kuelewa taarifa zinazoonekana kutoka ulimwenguni - picha, video na data ya 3D. Huwezesha kila kitu kuanzia utambuzi wa uso kwenye simu yako hadi magari yanayojiendesha, uchanganuzi wa picha za matibabu na udhibiti wa ubora wa viwanda. Faili hii inashughulikia dhana za msingi, usanifu, na mbinu.
 ---

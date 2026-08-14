@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD Pipeline Configuration
 Kino-automate ng mga pipeline ng Continuous Integration (CI) at Continuous Deployment (CD) ang proseso ng pagbuo, pagsubok, at pag-deploy ng software. Sinasaklaw ng reference na ito ang mga pattern ng configuration para sa pinakasikat na CI/CD platform: GitHub Actions, GitLab CI, at pangkalahatang mga prinsipyo ng disenyo ng pipeline.
 ---

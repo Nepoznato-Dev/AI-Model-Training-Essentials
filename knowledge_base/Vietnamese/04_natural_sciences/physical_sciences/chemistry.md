@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hoá học
 Nếu vật lý là quy luật của trò chơi thì hóa học là điều xảy ra khi các mảnh tương tác với nhau. Hóa học nghiên cứu cách các nguyên tử liên kết, tách rời và sắp xếp lại - nghĩa là cách thức hoạt động của tất cả các vật liệu. Nó thu hẹp khoảng cách giữa vật lý cơ bản và sự phức tạp của sinh học, địa chất và kỹ thuật.
 ---

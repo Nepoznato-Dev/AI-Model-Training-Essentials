@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik untuk menulis kode Ada yang bersih dan aman.
 ---

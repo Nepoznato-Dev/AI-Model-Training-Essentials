@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Toán học
 Toán học không chỉ là môn học ở trường mà nó còn là nền tảng của hầu hết mọi lĩnh vực kỹ thuật. Vật lý sử dụng nó để mô tả vũ trụ. Khoa học máy tính sử dụng nó để thiết kế các thuật toán. Học máy sử dụng nó để tối ưu hóa trọng lượng. Tài chính sử dụng nó để gây rủi ro về giá. Việc nắm vững mọi nhánh là không cần thiết, nhưng việc hiểu rõ bối cảnh - và biết từng nhánh áp dụng ở đâu - sẽ giúp bạn dễ dàng nắm bắt các chủ đề khác hơn.
 ---

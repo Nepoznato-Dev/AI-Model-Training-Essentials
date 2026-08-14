@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ডার্ট — সিনট্যাক্স রেফারেন্স
 এই নথিটি Dart (3.x) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, নাল সেফটি, অ্যাসিঙ্ক প্রোগ্রামিং এবং ফ্লাটার-ওরিয়েন্টেড ডিজাইন প্যাটার্নগুলিতে ফোকাস করে প্রধান ডার্ট রেফারেন্সের পরিপূরক।
 ---

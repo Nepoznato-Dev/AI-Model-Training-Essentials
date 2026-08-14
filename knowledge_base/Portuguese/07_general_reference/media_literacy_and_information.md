@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Alfabetização midiática e avaliação da informação
 Vivemos em um mundo saturado de informações. Todos os dias, uma pessoa comum é exposta a milhares de mensagens de mídia – artigos de notícias, postagens em mídias sociais, anúncios, discursos políticos, conteúdo de influenciadores, texto gerado por IA. A maior parte está bem. Algumas delas são enganosas. Uma pequena quantidade é deliberadamente falsa. A literacia mediática é a capacidade de navegar neste panorama – não confiando em tudo, não confiando em nada, mas desenvolvendo um sentido calibrado do que é fiável e do que não é.
 ---

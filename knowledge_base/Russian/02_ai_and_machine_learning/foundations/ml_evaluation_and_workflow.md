@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Оценка машинного обучения и рабочий процесс
 Практическое руководство по жизненному циклу машинного обучения — от постановки проблемы до мониторинга производства — с упором на метрики, проверку и отладку.
 ---

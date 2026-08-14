@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria muzyki i akustyka
 Teoria muzyki to nauka o działaniu muzyki — wzorcach, strukturach i zasadach, które sprawiają, że niektóre kombinacje dźwięków są przyjemne i znaczące, a inne niezgodne lub chaotyczne. Akustyka to fizyka dźwięku — sposób, w jaki wibracje rozchodzą się w powietrzu, jak są wytwarzane i postrzegane. Razem wyjaśniają, dlaczego akord C-dur brzmi radośnie, dlaczego tonacja molowa jest smutna, jak projektuje się sale koncertowe i dlaczego ulubiona piosenka wywołuje dreszcze.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Phi tiêu — Những lỗi thường gặp và kiểu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình phản đối phổ biến nhất trong Dart cùng với các bản sửa lỗi.
 ---

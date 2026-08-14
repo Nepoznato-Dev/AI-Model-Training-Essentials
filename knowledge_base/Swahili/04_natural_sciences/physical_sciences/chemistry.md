@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Kemia
 Ikiwa fizikia ni sheria za mchezo, kemia ni kile kinachotokea wakati vipande vinapoingiliana. Kemia huchunguza jinsi atomi zinavyoungana, kugawanyika, na kupanga upya - ambayo ni kusema, jinsi nyenzo zote zinavyofanya kazi. Inaweka pengo kati ya fizikia ya kimsingi na ugumu wa biolojia, jiolojia, na uhandisi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی برای نوشتن کد OCaml تمیز و اصطلاحی را پوشش می دهد.
 ---

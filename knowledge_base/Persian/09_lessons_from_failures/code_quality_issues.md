@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مشکلات کیفیت کد
 این سند مشکلات رایج کیفیت کد از جمله نام‌های بد متغیرها، اسناد ضعیف، کد اسپاگتی، وابستگی‌های دایره‌ای و سایر مسائل مربوط به قابلیت نگهداری را ادغام می‌کند.
 ---

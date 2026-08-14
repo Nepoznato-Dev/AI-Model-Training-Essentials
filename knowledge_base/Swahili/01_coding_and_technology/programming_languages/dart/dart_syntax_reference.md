@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Dart (3.x). Inakamilisha rejeleo kuu la Dart kwa kuzingatia mifumo kamili ya sintaksia, usalama tupu, upangaji wa programu zisizolingana na muundo wa muundo unaolenga Flutter.
 ---

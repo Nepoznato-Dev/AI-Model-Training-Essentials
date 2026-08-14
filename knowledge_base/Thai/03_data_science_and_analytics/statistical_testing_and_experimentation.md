@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # การทดสอบและการทดลองทางสถิติ
 สถิติคือไวยากรณ์ของวิทยาศาสตร์ โดยจะให้เครื่องมือแก่คุณในการแยกแยะรูปแบบที่แท้จริงจากสัญญาณรบกวนแบบสุ่ม เพื่อวัดว่าการเปลี่ยนแปลงช่วยปรับปรุงสิ่งต่างๆ จริงหรือไม่ และเพื่อการตัดสินใจภายใต้ความไม่แน่นอน ไฟล์นี้ครอบคลุมแนวคิดหลักของการทดสอบสมมติฐาน การออกแบบการทดลอง และข้อผิดพลาดทั่วไปที่ทำให้ผู้คนสับสน
 ---

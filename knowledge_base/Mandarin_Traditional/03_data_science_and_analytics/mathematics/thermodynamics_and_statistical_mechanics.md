@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 熱力學與統計力學
 熱力學用溫度、壓力和熵來描述系統的巨觀行為－－而不知道原子是什麼樣子。統計力學自下而上地解釋熱力學：它從大量粒子的微觀行為中得出宏觀特性。它們共同提供了對能量、熵和平衡的最深入的理解——這些概念已經遷移到資訊理論、機器學習等領域。
 ---

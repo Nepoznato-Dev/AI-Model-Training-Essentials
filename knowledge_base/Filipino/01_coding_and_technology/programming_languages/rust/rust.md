@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # kalawang
 Ang Rust ay isang statically typed, compiled programming language na unang inilabas noong 2015, na orihinal na binuo ni Graydon Hoare sa Mozilla. Ang tiyak na pangako ni Rust ay **kaligtasan sa memorya nang walang koleksyon ng basura**. Nakakamit ito sa pamamagitan ng sistema ng pagmamay-ari nito — isang hanay ng mga panuntunang ipinapatupad sa oras ng pag-compile na nag-aalis ng mga buong kategorya ng mga bug (null pointer dereference, data race, buffer overflow, use-after-free) habang gumagawa ng code na kasing bilis ng C o C++.
 Ang Rust ay binoto bilang "pinakamahal" na programming language sa Stack Overflow Developer Survey sa loob ng maraming magkakasunod na taon. Ito ay lalong ginagamit sa mga system programming, WebAssembly, CLI tool, cloud infrastructure, at bilang kapalit ng C/C++ sa mga kontekstong kritikal sa seguridad. Ang Linux kernel ay tumatanggap na ngayon ng Rust code.

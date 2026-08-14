@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Makine Öğrenimi Değerlendirmesi ve İş Akışı
 Ölçümler, doğrulama ve hata ayıklamaya odaklanan, sorun çerçevelemeden üretim izlemeye kadar makine öğrenimi yaşam döngüsüne yönelik pratik bir kılavuz.
 ---

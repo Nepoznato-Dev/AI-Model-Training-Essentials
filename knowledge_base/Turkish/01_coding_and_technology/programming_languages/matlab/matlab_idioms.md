@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, deyimsel MATLAB kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

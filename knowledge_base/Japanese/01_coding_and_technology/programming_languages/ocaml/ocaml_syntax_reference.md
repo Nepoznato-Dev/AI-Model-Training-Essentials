@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — 構文リファレンス
 このドキュメントは、OCaml (4.x/5.x) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、代数データ型、パターン マッチング、モジュール、関数型プログラミングのイディオムに焦点を当て、メインの OCaml リファレンスを補完します。
 ---

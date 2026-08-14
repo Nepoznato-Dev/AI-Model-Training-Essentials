@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — 構文リファレンス
 このドキュメントは、Haskell (GHC 9.x) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、型システム、モナド、遅延評価、関数型プログラミングのイディオムに焦点を当て、主要な Haskell リファレンスを補完します。
 ---

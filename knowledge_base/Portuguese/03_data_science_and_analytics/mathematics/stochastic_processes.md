@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Processos Estocásticos
 Um **processo estocástico** é uma coleção de variáveis ​​aleatórias indexadas por tempo (ou espaço). Enquanto a teoria da probabilidade estuda eventos aleatórios individuais, os processos estocásticos estudam como a aleatoriedade evolui ao longo do tempo. Eles modelam preços de ações, comprimento de filas, propagação de doenças, geração de linguagem e dinâmica de treinamento de modelos de aprendizado de máquina.
 ---

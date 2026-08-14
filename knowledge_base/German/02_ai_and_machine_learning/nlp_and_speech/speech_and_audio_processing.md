@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sprach- und Audioverarbeitung
 Sprach- und Audioverarbeitung umfasst die Technologien, die es Maschinen ermöglichen, Geräusche zu hören, zu verstehen, zu erzeugen und zu manipulieren. Dazu gehören Spracherkennung (Umwandlung gesprochener Wörter in Text), Sprachsynthese (Umwandlung von Text in gesprochene Wörter), Sprecheridentifikation, Musikerzeugung und Verständnis von Umgebungsgeräuschen. Das Gebiet hat sich durch Deep Learning verändert – moderne Systeme nähern sich der Genauigkeit der Spracherkennung auf menschlichem Niveau und erzeugen unheimlich natürliche synthetische Stimmen.
 ---

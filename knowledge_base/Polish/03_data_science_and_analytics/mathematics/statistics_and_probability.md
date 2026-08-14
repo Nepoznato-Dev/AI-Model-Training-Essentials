@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Statystyka i prawdopodobieństwo
 Prawdopodobieństwo i statystyka to matematyczne podstawy analityki danych, uczenia maszynowego i badań naukowych. Prawdopodobieństwo mówi Ci, jak prawdopodobne są zdarzenia; statystyki mówią, jak wyciągać wnioski z danych. Razem zamieniają niepewność w wymierną wiedzę, którą można zarządzać.
 ---

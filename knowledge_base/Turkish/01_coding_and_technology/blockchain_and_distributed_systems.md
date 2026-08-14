@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Blockchain ve Dağıtık Sistemler
 Blockchain, kayıtların (blokların) kriptografik hash'lerle bağlandığı, merkezi olmayan, yalnızca eklenen bir defter olan özel bir dağıtılmış sistem türüdür. Dağıtılmış sistemler, birden fazla bilgisayarın tek bir bilgisayar gibi birlikte çalışmasını sağlayan daha geniş bir alandır. Her iki kavram da, kripto para biriminden dağıtılmış veritabanlarına ve küresel hizmetleri destekleyen fikir birliği algoritmalarına kadar modern altyapıyı anlamak için önemlidir.
 ---

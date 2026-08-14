@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # জাভা - সিনট্যাক্স রেফারেন্স
 এই নথিটি জাভার জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, অপারেটর টেবিল, এবং JVM, OOP, এবং কনকারেন্সির অভ্যন্তরীণ মেকানিক্সের উপর ফোকাস করে মূল জাভা রেফারেন্সের পরিপূরক।
 ---

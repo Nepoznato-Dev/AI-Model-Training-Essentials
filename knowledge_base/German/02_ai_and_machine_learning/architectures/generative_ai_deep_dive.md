@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Generative KI Deep Dive
 Generative KI bezieht sich auf Modelle, die neue Inhalte – Bilder, Text, Audio, Video, Code – erstellen, anstatt nur vorhandene Daten zu klassifizieren oder vorherzusagen. Während große Sprachmodelle die meiste Aufmerksamkeit erhalten, ist die generative KI-Landschaft weitaus umfassender. Diese Datei behandelt die Architekturen, Techniken und Kompromisse hinter modernen generativen Systemen, von Diffusionsmodellen über Variations-Autoencoder bis hin zu Flussmodellen.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 예술과 문학
 책, 그림, 음악, 영화 등 인간의 창의적 표현은 가장 오래 지속되는 문명의 기록 중 하나입니다. 주요 장르, 운동, 인물을 이해하면 오늘날 우리가 살고 있는 세계에 대한 맥락을 알 수 있습니다. 모든 소설, 모든 교향곡, 모든 영화는 이전의 내용과 대화를 나누고 있습니다.
 ---

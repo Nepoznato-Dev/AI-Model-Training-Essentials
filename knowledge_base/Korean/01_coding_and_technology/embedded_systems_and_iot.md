@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 임베디드 시스템과 IoT
 임베디드 시스템은 자동차의 엔진 제어 장치, 세탁기 컨트롤러, 스마트 온도 조절 장치의 마이크로컨트롤러 등 다른 장치 내부에 숨겨진 컴퓨터입니다. 범용 컴퓨터와 달리 특정 작업을 위해 설계되었으며 전력, 메모리 및 처리 속도에 대한 엄격한 제약이 있는 경우가 많습니다. 사물 인터넷(IoT)은 임베디드 시스템을 네트워크에 연결하여 원격 모니터링, 제어 및 데이터 수집을 가능하게 함으로써 임베디드 시스템을 확장합니다. 이들은 함께 물리적 세계와 상호 작용하는 수십억 개의 컴퓨팅 장치를 나타냅니다.
 ---

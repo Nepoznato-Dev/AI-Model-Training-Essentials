@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java — Руководство по экосистеме и инструментам
 В этом руководстве рассматриваются основные инструменты, платформы и инфраструктура экосистемы Java.
 ---

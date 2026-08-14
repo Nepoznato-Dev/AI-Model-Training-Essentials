@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usafiri wa Baadaye
 ## Muhtasari
 Kupata kutoka A hadi B kunakaribia kuonekana tofauti sana. Magari yanayojiendesha tayari yako kwenye barabara za umma. Ndege za umeme zinakamilisha safari za majaribio. Dhana za hyperloop huahidi usafiri wa kasi ya treni katika mirija ya utupu. Na teksi za kuruka - mara tu vitu vya katuni - zinaingia kwenye uthibitisho. Hii ndio hali ya uchezaji katika teknolojia zinazounda upya jinsi tunavyosonga.

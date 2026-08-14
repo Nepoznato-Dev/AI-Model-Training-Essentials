@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i antywzorce w C. Każdy wpis pokazuje nieprawidłowe podejście, wyjaśnia, dlaczego się nie udaje i podaje prawidłowe rozwiązanie. C zapewnia pełną kontrolę — co oznacza pełną odpowiedzialność za bezpieczeństwo pamięci, sprawdzanie granic i niezdefiniowane zachowanie.
 ---

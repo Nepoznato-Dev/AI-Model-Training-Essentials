@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Perl (5.38+). Ini melengkapi referensi utama Perl dengan berfokus pada pola sintaksis yang lengkap, ekspresi reguler, referensi, dan kekuatan pemrosesan teks Perl.
 ---

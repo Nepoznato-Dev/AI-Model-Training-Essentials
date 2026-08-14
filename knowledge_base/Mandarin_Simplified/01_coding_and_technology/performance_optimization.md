@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 性能优化
 性能优化是使软件更快的实践——减少响应时间、提高吞吐量、降低内存使用量并消除瓶颈。这是开发人员可以拥有的最有影响力的技能之一，因为缓慢的软件会失去用户，浪费资源，并使每个人都感到沮丧。但这也是最常见的错误之一，开发人员根据直觉而不是证据来优化错误的事情。
 ---

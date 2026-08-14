@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingénierie Low-Code et Plateforme
 Les plates-formes low-code permettent aux utilisateurs de créer des applications avec un minimum de code écrit à la main, généralement via des interfaces glisser-déposer, des flux de travail visuels et des connecteurs prédéfinis. L'ingénierie de plate-forme est la discipline consistant à créer des plates-formes de développement internes (IDP) qui permettent aux équipes produit de mettre facilement en place une infrastructure, un CI/CD et des outils opérationnels en libre-service. Les deux tendances sont des réponses au même problème : l’écart entre la demande de logiciels et l’offre de développeurs capables de les créer.
 ---

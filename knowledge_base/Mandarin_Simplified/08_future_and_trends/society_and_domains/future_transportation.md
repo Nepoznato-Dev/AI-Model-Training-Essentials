@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 未来交通
 ＃＃ 概述
 从 A 地到 B 地的交通将会变得非常不同。自动驾驶汽车已经在公共道路上行驶。电动飞机正在完成试飞。超级高铁概念承诺在真空管中以火车速度行驶。飞行出租车——曾经的卡通人物——正在进入认证阶段。以下是重塑我们出行方式的技术的发展现状。

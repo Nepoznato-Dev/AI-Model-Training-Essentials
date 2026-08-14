@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # پرولوگ - نحوی حوالہ
 یہ دستاویز Prolog کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، یونیفیکیشن، بیک ٹریکنگ، DCGs، اور منطقی پروگرامنگ محاوروں پر توجہ مرکوز کر کے مرکزی پرولوگ حوالہ کی تکمیل کرتا ہے۔
 ---

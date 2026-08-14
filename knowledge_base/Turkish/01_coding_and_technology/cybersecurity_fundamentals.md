@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Siber Güvenliğin Temelleri
 Güvenlik, sonradan akla gelen bir düşünce olarak değil, sistemin her katmanına en başından itibaren entegre edilmesi gereken bir disiplindir. Bir web uygulaması oluşturmak, altyapıyı yönetmek veya bir API göndermek olsun, tehdit ortamını ve savunmanın temellerini anlamak çok önemlidir.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — Lịch sử và sự phát triển của phiên bản
 ## Dòng thời gian
 | Phiên bản | Năm | Chủ đề chính |

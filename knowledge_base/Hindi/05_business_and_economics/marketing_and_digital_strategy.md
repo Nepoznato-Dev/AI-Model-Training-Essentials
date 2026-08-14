@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # मार्केटिंग और डिजिटल रणनीति
 मार्केटिंग वह तरीका है जिससे व्यवसाय ग्राहकों को मूल्य बनाते हैं, संवाद करते हैं और वितरित करते हैं। इसमें ग्राहकों की जरूरतों को समझने, उन जरूरतों को पूरा करने के लिए उत्पाद की स्थिति बनाने और ऐसे रिश्ते बनाने की पूरी प्रणाली शामिल है जो खरीदारों को वकील में बदल देती है। डिजिटल क्रांति ने मार्केटिंग के टूल, चैनल और गति को बदल दिया है, जबकि बुनियादी बातें सुसंगत बनी हुई हैं।
 ---

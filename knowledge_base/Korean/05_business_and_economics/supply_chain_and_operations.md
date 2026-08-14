@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 공급망 및 운영 관리
 공급망 관리는 원자재부터 고객의 손에 있는 완제품에 이르기까지 소싱, 조달, 전환 및 물류와 관련된 모든 활동을 조정하는 것입니다. 운영 관리는 생산 시스템을 매일 실행하는 것입니다. 그들은 함께 회사가 적절한 제품을 적절한 시기, 적절한 비용, 적절한 품질로 제공할 수 있는지 여부를 결정합니다. 전염병, 칩 부족, 운하 막힘은 공급망이 얼마나 취약하고 전 세계적으로 상호 연결된지를 보여주었습니다.
 ---

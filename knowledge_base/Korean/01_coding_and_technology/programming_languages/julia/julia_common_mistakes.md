@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — 일반적인 실수 및 안티 패턴
 이 문서는 Julia의 가장 일반적인 실수, 함정 및 안티 패턴을 수정하여 목록화합니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik untuk menulis kode Delphi dan Object Pascal yang bersih.
 ---

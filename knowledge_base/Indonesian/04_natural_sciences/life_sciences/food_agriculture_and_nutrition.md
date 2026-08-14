@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pangan, Pertanian, dan Gizi
 Pangan adalah kebutuhan paling mendasar manusia, dan pertanian adalah fondasi peradaban. Peralihan dari berburu dan meramu ke bertani – Revolusi Neolitikum, sekitar 10.000 tahun yang lalu – memungkinkan manusia membangun kota, mengembangkan tulisan, dan menciptakan segala sesuatu yang kita sebut “peradaban”. Saat ini, pertanian mempekerjakan sekitar 27% tenaga kerja global dan menghasilkan sekitar 10 triliun kalori per hari. Namun sekitar 800 juta orang masih mengalami kelaparan, sementara lebih dari 2 miliar orang mengalami kelebihan berat badan atau obesitas. Masalahnya bukan pada produksi, tapi pada distribusi, akses, dan pilihan.
 ---

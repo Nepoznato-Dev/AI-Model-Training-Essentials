@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 연구 방법론
 연구 방법론은 질문을 조사하고, 가설을 테스트하고, 신뢰할 수 있는 지식을 생성하기 위한 체계적인 접근 방식입니다. 과학 실험, 사회 과학 설문조사, 비즈니스 분석, 학술 연구 등 무엇을 수행하든 선택한 방법론에 따라 결과가 신뢰할 수 있고 재현 가능하며 유용한지 여부가 결정됩니다. 잘 설계된 연구는 신뢰할 수 있는 결과를 낳습니다. 제대로 설계되지 않은 디자인은 소음을 발생시키거나 더 나쁜 경우 자신감 넘치는 오답을 생성합니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Futuro del lavoro
 ## Panoramica
 Il modo in cui lavoriamo sta cambiando più velocemente che in qualsiasi momento successivo alla Rivoluzione Industriale. Il lavoro a distanza è passato da un vantaggio raro a un default da un giorno all’altro. L’intelligenza artificiale si sta trasformando da novità a collaborativa. La gig economy sta rimodellando il significato stesso di “occupazione”. E l’automazione non arriverà per tutti i lavori, ma per molte attività all’interno della maggior parte dei lavori. Ecco uno sguardo alle forze che stanno rimodellando il posto di lavoro e cosa verrà dopo.

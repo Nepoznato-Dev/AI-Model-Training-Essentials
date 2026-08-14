@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — 構文リファレンス
 このドキュメントは、TypeScript の包括的で構造化された構文リファレンスを提供します。型システム、ジェネリックス、ユーティリティ型、および高度な型レベル プログラミングに焦点を当てることで、メインの TypeScript リファレンスを補完します。
 ---

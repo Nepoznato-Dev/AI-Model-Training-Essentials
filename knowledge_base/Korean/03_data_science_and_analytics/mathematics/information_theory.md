@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 정보이론
 1948년 클로드 섀넌(Claude Shannon)이 창시한 정보 이론은 정보 자체를 수량화합니다. 메시지는 얼마나 많은 것을 말해주는가? 데이터를 얼마나 압축할 수 있나요? 시끄러운 채널을 통해 얼마나 빨리 통신할 수 있습니까? 이러한 질문에는 정확한 수학적 답이 있습니다. 통신 외에도 정보 이론은 기계 학습의 기초가 되었습니다. 교차 엔트로피는 분류를 위한 기본 손실 함수이고, KL 발산은 분포 유사성을 측정하며, 상호 정보는 기능 선택을 유도합니다.
 ---

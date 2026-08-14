@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Redes Neurais de Gráfico
 Redes Neurais de Grafos (GNNs) são redes neurais projetadas para operar em dados estruturados em grafos - redes de nós conectados por arestas. Enquanto as redes neurais tradicionais funcionam em grades (imagens) ou sequências (texto), as GNNs lidam com estruturas relacionais arbitrárias: redes sociais, gráficos moleculares, gráficos de conhecimento, redes rodoviárias, gráficos de recomendação e muito mais. Eles se tornaram essenciais para descoberta de medicamentos, detecção de fraudes, sistemas de recomendação e qualquer domínio onde o relacionamento entre entidades seja importante.
 ---

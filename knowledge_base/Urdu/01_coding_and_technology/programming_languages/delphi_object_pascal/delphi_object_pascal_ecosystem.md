@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ڈیلفی / آبجیکٹ پاسکل - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ ڈیلفی / آبجیکٹ پاسکل ایکو سسٹم میں ضروری ٹولز، فریم ورک اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

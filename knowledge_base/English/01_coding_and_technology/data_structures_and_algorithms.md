@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Structures and Algorithms
 
 Data structures are the ways we organise data in memory so that operations on it are efficient. Algorithms are the step-by-step procedures for solving problems. Together, they form the foundation of computer science — every program you've ever used relies on them. Choosing the right data structure can turn an impossibly slow program into a fast one, and knowing the right algorithm can turn an unsolvable problem into a trivial one.

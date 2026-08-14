@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, deyimsel Go kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

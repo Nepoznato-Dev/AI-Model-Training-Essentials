@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # مقایسه بین زبانی - همزمانی و موازی
 ## بررسی اجمالی مدل های همزمان
 | زبان | مدل | مکانیسم کلیدی | حافظه مشترک؟ |

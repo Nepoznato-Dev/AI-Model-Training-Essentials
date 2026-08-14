@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API ڈیزائن اور فن تعمیر
 ایک API (ایپلیکیشن پروگرامنگ انٹرفیس) یہ ہے کہ کس طرح سافٹ ویئر کے اجزاء ایک دوسرے سے بات کرتے ہیں۔ ایک اچھی طرح سے ڈیزائن کیا گیا API بدیہی، مستقل، اور اس کے ساتھ کام کرنے میں خوشی ہے۔ ایک ناقص ڈیزائن کنفیوژن، کیڑے اور مایوسی کا سبب بنتا ہے۔ یہ فائل APIs بنانے کے اصولوں، نمونوں اور طریقوں کا احاطہ کرتی ہے جنہیں ڈویلپر درحقیقت استعمال کرنا چاہتے ہیں۔
 ---

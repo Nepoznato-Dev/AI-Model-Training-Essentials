@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Analisi reale
 L’analisi reale è il fondamento rigoroso del calcolo infinitesimale. Mentre il calcolo introduttivo ti insegna come calcolare derivate e integrali, l'analisi reale chiede *perché* queste tecniche funzionano e quando falliscono. Fornisce le definizioni precise di limiti, continuità, convergenza e integrazione che sono alla base della teoria della probabilità, dell'analisi funzionale, dell'ottimizzazione e delle garanzie teoriche dietro gli algoritmi di apprendimento automatico.
 ---

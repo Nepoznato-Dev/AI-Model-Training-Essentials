@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #COBOL
 COBOL (Common Business-Oriented Language) to jeden z najstarszych wciąż używanych języków programowania, opracowany po raz pierwszy w 1959 roku. Został zaprojektowany do przetwarzania danych biznesowych — systemów finansowych, płacowych, bankowych, ubezpieczeniowych i aplikacji rządowych. Składnia języka COBOL przypominająca angielską miała być czytelna dla menedżerów biznesowych, a nie tylko programistów.
 Pomimo swojego wieku COBOL przetwarza szacunkowo 30% wszystkich transakcji biznesowych na całym świecie. Największe banki, agencje rządowe (w tym amerykańska administracja zabezpieczenia społecznego) i firmy ubezpieczeniowe w dalszym ciągu polegają na systemach mainframe COBOL. Strach przed błędami Y2K w 1999 r. przywrócił język COBOL do świadomości społecznej, a język ten w dalszym ciągu obsługuje infrastrukturę krytyczną na całym świecie.

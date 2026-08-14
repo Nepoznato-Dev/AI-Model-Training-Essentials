@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP - Makosa ya Kawaida & Miundo ya Kupambana
 Hati hii inaorodhesha makosa ya kawaida, mitego, na mifumo ya kupingana katika PHP na masahihisho.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Psychology and Human Behavior
 
 Psychology is the science of how and why people think, feel, and act the way they do. It is not mind-reading, and it is not common sense — though it sometimes confirms what common sense suggests and sometimes contradicts it entirely. Psychology uses the same scientific method as every other science: observe, hypothesize, test, revise. What makes it challenging is that its subject — the human mind — is the most complex object we know of.

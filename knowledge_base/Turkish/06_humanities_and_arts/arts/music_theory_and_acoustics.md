@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Müzik Teorisi ve Akustik
 Müzik teorisi müziğin nasıl çalıştığının incelenmesidir; bazı ses kombinasyonlarını hoş veya anlamlı, diğerlerini ise uyumsuz veya kaotik hale getiren kalıplar, yapılar ve ilkeler. Akustik, sesin fiziğidir; titreşimlerin havada nasıl ilerlediği, nasıl üretildiği ve algılandığıdır. Birlikte, Do majör akorunun neden kulağa mutlu geldiğini, minör tonun neden hüzünlü geldiğini, konser salonlarının nasıl tasarlandığını ve en sevdiğiniz şarkının neden sizi ürperttiğini açıklıyorlar.
 ---

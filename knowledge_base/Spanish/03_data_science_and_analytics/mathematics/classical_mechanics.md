@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mecánica clásica
 La mecánica clásica describe el movimiento de objetos bajo la influencia de fuerzas. Desde manzanas que caen hasta planetas en órbita, desde cuerdas vibrantes hasta partículas en colisión, sus principios gobiernan el mundo macroscópico. Más allá de sus aplicaciones físicas, la mecánica clásica dio origen al cálculo de variaciones, la geometría simpléctica y el marco hamiltoniano que sustenta la mecánica cuántica y la optimización moderna.
 ---

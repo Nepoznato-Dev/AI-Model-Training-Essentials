@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genetyka i genomika
 Genetyka to nauka o dziedziczności – o tym, jak cechy przekazywane są z rodziców na potomstwo poprzez DNA. Genomika to badanie całych genomów: wszystkich genów, regionów niekodujących, ich interakcji oraz różnic między jednostkami i populacjami. Przejście od genetyki do genomiki było napędzane technologią sekwencjonowania — przeszliśmy od badania jednego genu na raz do odczytywania całych genomów w ciągu kilku godzin, generując dane, które zmieniają medycynę, rolnictwo, kryminalistykę i nasze rozumienie ewolucji.
 ---

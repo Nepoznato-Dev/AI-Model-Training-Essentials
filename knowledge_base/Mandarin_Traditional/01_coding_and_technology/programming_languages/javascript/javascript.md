@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript
 JavaScript 是一種動態的解釋性程式語言，由 Brendan Eich 在 1995 年僅用 10 天就創建了。它最初旨在為網頁添加互動性，現已發展成為世界上使用最廣泛的程式語言。 JavaScript 在每個 Web 瀏覽器中運行，透過 Node.js 在伺服器上運行，在桌面應用程式 (Electron)、行動應用程式 (React Native) 甚至嵌入式系統中運行。
 語言的獨特之處在於它本質上是客戶端 Web 開發的唯一選擇——每個瀏覽器都原生支援它。這種壟斷，再加上全端 JavaScript（Node.js、Deno、Bun）的興起，使其變得不可或缺。

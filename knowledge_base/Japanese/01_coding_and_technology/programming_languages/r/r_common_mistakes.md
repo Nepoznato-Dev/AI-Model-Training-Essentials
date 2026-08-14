@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — よくある間違いとアンチパターン
 このドキュメントでは、R で最も一般的な間違い、罠、およびアンチパターンを修正とともにカタログ化します。
 ---

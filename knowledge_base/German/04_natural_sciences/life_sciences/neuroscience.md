@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Neurowissenschaften
 Die Neurowissenschaften beschäftigen sich mit dem Nervensystem – dem Gehirn, dem Rückenmark und allen Nerven, die diese mit dem Körper verbinden. Es erstreckt sich über mehrere Ebenen: von Molekülen und Genen über einzelne Neuronen und Synapsen, Schaltkreise und Gehirnregionen bis hin zu Verhalten, Kognition und Bewusstsein. Das Gehirn ist die komplexeste Struktur im bekannten Universum und enthält etwa 86 Milliarden Neuronen, die durch Billionen von Synapsen verbunden sind, und zu verstehen, wie es funktioniert, ist eine der großen Herausforderungen der Wissenschaft.
 ---

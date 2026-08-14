@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Sayansi ya Ardhi
 Sayansi ya Dunia inachunguza sayari tunayoishi - muundo wake, michakato, historia, na mifumo inayoifanya iweze kuishi. Inahusu jiolojia (Dunia imara), oceanography (bahari), hali ya hewa (anga na hali ya hewa), na climatology (mifumo ya hali ya hewa ya muda mrefu). Kinachounganisha nyanja hizi ni kuelewa kwamba Dunia ni mfumo unaobadilika: mambo yake ya ndani yanasonga kila wakati, uso wake unarekebishwa, na angahewa yake na bahari huingiliana kwa njia ngumu.
 ---

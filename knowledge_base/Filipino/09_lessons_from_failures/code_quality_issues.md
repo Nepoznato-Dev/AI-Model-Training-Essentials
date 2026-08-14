@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Isyu sa Kalidad ng Code
 Pinagsasama-sama ng dokumentong ito ang mga karaniwang problema sa kalidad ng code kabilang ang mga hindi magandang variable na pangalan, hindi magandang dokumentasyon, spaghetti code, circular dependencies, at iba pang isyu sa maintainability.
 ---

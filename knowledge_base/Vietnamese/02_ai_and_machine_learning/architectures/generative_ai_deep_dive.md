@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nghiên cứu chuyên sâu về AI sáng tạo
 AI sáng tạo đề cập đến các mô hình tạo ra nội dung mới - hình ảnh, văn bản, âm thanh, video, mã - thay vì chỉ phân loại hoặc dự đoán dữ liệu hiện có. Trong khi các mô hình ngôn ngữ lớn nhận được phần lớn sự chú ý, thì bối cảnh AI tổng quát lại rộng hơn nhiều. Tệp này bao gồm các kiến ​​trúc, kỹ thuật và sự cân bằng đằng sau các hệ thống tạo sinh hiện đại, từ mô hình khuếch tán đến bộ mã hóa biến thiên đến mô hình dòng chảy.
 ---

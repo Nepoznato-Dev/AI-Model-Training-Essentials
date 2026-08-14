@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Masalah Keandalan Sistem
 Dokumen ini menggabungkan masalah keandalan termasuk kebocoran memori, kondisi balapan, kesalahan pemrograman bersamaan, dan kegagalan desain sistem.
 ---

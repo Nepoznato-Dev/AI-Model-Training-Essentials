@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Kultura at Lipunan sa Mundo
 Ang kultura ay ang balangkas ng isang lipunan — ang mga ibinahaging paniniwala, pagpapahalaga, kaugalian, pag-uugali, at artifact na ginagamit ng mga miyembro upang makayanan ang kanilang mundo at sa isa't isa. Ang pag-unawa sa pagkakaiba-iba ng kultura ay hindi tungkol sa pagsasaulo ng trivia; ito ay tungkol sa pagkilala na ang isang paraan ng pagtingin sa mundo ay kabilang sa libu-libo, at ang iba pang mga sistema ay panloob na magkakaugnay, batay sa kasaysayan, at nagkakahalaga ng pag-unawa sa kanilang sariling mga termino.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ 去
 Go（通常以其原始域名命名为“Golang”）是一种静态类型、编译型编程语言，由 Google 的 Robert Griesemer、Rob Pike 和 Ken Thompson 设计。它于 2012 年首次发布，其明确目标是成为一种更好的系统编程语言——一种将 C 的性能与 Python 等动态语言的生产力结合起来的语言。 Go 以其简单、快速编译、内置并发（goroutines 和通道）和优秀的工具而闻名。
 Go 为大部分云基础设施生态系统提供支持：Docker、Kubernetes、Terraform、Prometheus、etcd 以及 Go 标准库的 HTTP 服务器都是用 Go 编写的。它已成为云原生开发、微服务和 CLI 工具的默认语言。

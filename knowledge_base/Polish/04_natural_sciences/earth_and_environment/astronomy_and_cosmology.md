@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Astronomia i kosmologia
 Astronomia zajmuje się badaniem obiektów niebieskich – gwiazd, planet, galaktyk i wszystkiego, co znajduje się poza ziemską atmosferą. Kosmologia to nauka o wszechświecie jako całości: jego pochodzeniu, strukturze, ewolucji i ostatecznym losie. Razem odpowiadają na niektóre z najbardziej fundamentalnych pytań, jakie kiedykolwiek zadawali sobie ludzie: Jak powstał wszechświat? Jak duży jest? Czy jesteśmy sami? Co się z nim ostatecznie stanie?
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # التكنولوجيا والحوسبة
 الحوسبة موجودة في كل مكان — في هاتفك، وسيارتك، وثلاجتك، وأجهزتك الطبية، والبنية التحتية التي تدير المجتمع الحديث. لا تحتاج إلى أن تكون مبرمجًا لتستفيد من فهم كيفية عمل كل شيء. يغطي هذا الملف الأساسيات: ما هو الكمبيوتر، وكيف يعمل الإنترنت، وكيف يتم إنشاء البرامج، والمفاهيم التي تشكل العالم الرقمي.
 > **هل تريد التعمق أكثر؟** هذا الملف عبارة عن نظرة عامة شاملة. للحصول على تغطية تفصيلية لأي موضوع، راجع الملفات المخصصة في[`01_coding_and_technology/`](../01_coding_and_technology/)- بما في ذلكو[database systems](../01_coding_and_technology/database_systems.md)و[cloud architecture](../01_coding_and_technology/cloud_architecture.md)و[networking](../01_coding_and_technology/networking_basics.md)و.

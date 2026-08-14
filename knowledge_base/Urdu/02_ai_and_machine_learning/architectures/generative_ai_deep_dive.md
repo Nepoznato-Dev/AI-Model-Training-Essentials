@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جنریٹو اے آئی ڈیپ ڈائیو
 جنریٹو AI سے مراد ایسے ماڈلز ہیں جو نئے مواد تخلیق کرتے ہیں — تصاویر، متن، آڈیو، ویڈیو، کوڈ — صرف موجودہ ڈیٹا کی درجہ بندی یا پیشین گوئی کرنے کے بجائے۔ اگرچہ بڑے زبان کے ماڈل زیادہ تر توجہ حاصل کرتے ہیں، تخلیقی AI لینڈ سکیپ بہت وسیع ہے۔ اس فائل میں جدید جنریٹو سسٹمز کے پیچھے آرکیٹیکچرز، تکنیکوں اور ٹریڈ آف کا احاطہ کیا گیا ہے۔
 ---

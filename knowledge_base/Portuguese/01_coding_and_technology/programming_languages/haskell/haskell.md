@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell
 Haskell é uma linguagem de programação puramente funcional, de tipo estaticamente e avaliada preguiçosamente. Padronizado pela primeira vez em 1990 (Haskell 90) e refinado por meio de múltiplas versões (Haskell 2010 é o padrão atual), Haskell é conhecido por seu rigor matemático, sistema de tipos poderoso (com classes de tipos, mônadas e tipos de dados algébricos) e ênfase na correção por meio de tipos.
 Haskell não é uma linguagem convencional, mas sua influência é enorme. Conceitos como mônadas, avaliação preguiçosa e classes de tipo influenciaram Rust, Swift, Kotlin, Scala e TypeScript. Haskell é usado em finanças (Standard Chartered, Barclays), compiladores (GHC) e verificação formal.

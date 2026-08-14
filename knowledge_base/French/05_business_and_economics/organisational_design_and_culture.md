@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Conception organisationnelle et culture
 La conception organisationnelle est l’agencement délibéré de la structure, des processus, des rôles et des droits de décision pour exécuter efficacement la stratégie. La culture regroupe les valeurs, croyances, normes et comportements partagés qui façonnent la manière dont les gens travaillent réellement ensemble. La structure fournit le cadre ; la culture façonne le comportement. Une structure peut être repensée sur papier, mais si la culture ne soutient pas le changement, la mise en œuvre échouera. De même, une culture forte associée à une structure inefficace sapera progressivement la performance organisationnelle. Les organisations les plus efficaces abordent les deux et reconnaissent qu’elles sont profondément interconnectées.
 ---

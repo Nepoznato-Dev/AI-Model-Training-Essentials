@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Miundo ya nahau na Mbinu Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo safi na salama wa Ada.
 ---

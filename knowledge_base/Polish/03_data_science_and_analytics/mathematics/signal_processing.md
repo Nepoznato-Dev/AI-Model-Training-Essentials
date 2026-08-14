@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Przetwarzanie sygnału
 Przetwarzanie sygnałów to nauka zajmująca się analizowaniem, modyfikowaniem i syntezą sygnałów — reprezentacji wielkości fizycznych zmieniających się w czasie, przestrzeni lub częstotliwości. Dźwięk, obrazy, wideo, dane z czujników, fale mózgowe, ceny akcji – wszystko to są sygnały. Matematyczne narzędzia przetwarzania sygnałów (transformaty Fouriera, filtry, teoria próbkowania) są podstawą uczenia maszynowego, komunikacji, obrazowania medycznego i praktycznie każdej dziedziny zajmującej się danymi.
 ---

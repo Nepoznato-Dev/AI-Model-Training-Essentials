@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz Lisp ve Clojure ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

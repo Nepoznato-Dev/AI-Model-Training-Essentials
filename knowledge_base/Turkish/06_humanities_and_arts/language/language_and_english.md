@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dil ve İngilizce
 Bugün dünyada yaklaşık 7.000 dil konuşulmaktadır. İngilizce, ikinci dil olarak en yaygın konuşulan dildir ve uluslararası ticaret, bilim, havacılık ve internet için varsayılan dil olarak hizmet vermektedir. İster kod dokümantasyonu yazmak, ister araştırma makaleleri okumak veya sınırlar ötesinde iletişim kurmak olsun, İngilizceye (gramer, kelime bilgisi ve retorik) sağlam bir hakimiyet, kişinin geliştirebileceği en pratik becerilerden biridir.
 Bu dosya temel konuları kapsar: dil bilgisi, noktalama işaretleri, sık karşılaşılan tuzaklar, yazma tekniği ve açık iletişim.

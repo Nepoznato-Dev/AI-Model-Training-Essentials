@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # पर्ल - चीट शीट
 ## मूल बातें
 ```perl

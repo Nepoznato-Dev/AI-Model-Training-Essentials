@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Джулия — Руководство по экосистеме и инструментам
 В этом руководстве рассматриваются основные инструменты, пакеты и инфраструктура экосистемы Julia.
 ---

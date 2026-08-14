@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rdza — idiomatyczne wzorce i najlepsze praktyki
 W tym przewodniku opisano idiomatyczne wzorce i najlepsze praktyki pisania czystego i bezpiecznego kodu Rust.
 ---

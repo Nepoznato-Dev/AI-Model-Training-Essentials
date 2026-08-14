@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Menggores
 Scratch adalah bahasa pemrograman visual berbasis blok yang dikembangkan oleh MIT Media Lab dan pertama kali dirilis pada tahun 2007. Alih-alih menulis kode berbasis teks, pengguna menyatukan blok berwarna untuk membuat program. Scratch dirancang khusus untuk anak-anak usia 8-16 tahun (meskipun pelajar dari segala usia menggunakannya) untuk mengajarkan konsep dasar pemrograman — loop, kondisional, variabel, peristiwa, dan fungsi — tanpa hambatan kesalahan sintaksis.
 Scratch adalah bahasa pemrograman pengantar yang paling banyak digunakan di dunia, dengan lebih dari 100 juta pengguna terdaftar dan tersedia dalam 70+ bahasa. Ini berjalan di browser web dan gratis.

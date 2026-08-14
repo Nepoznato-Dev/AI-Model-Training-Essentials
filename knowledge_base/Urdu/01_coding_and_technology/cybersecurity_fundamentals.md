@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سائبر سیکیورٹی کے بنیادی اصول
 سیکورٹی ایک ایسا نظم و ضبط ہے جسے شروع سے ہی سسٹم کی ہر پرت میں ضم کیا جانا چاہیے، بجائے اس کے کہ بعد میں سوچا جائے۔ چاہے ویب ایپلیکیشن بنانا ہو، انفراسٹرکچر کا انتظام کرنا ہو، یا API بھیجنا ہو، خطرے کے منظر نامے اور دفاع کے بنیادی اصولوں کو سمجھنا ضروری ہے۔
 ---

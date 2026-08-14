@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Recherche Opérationnelle
 La recherche opérationnelle (RO) est l'application de méthodes mathématiques à la prise de décision. Né pendant la Seconde Guerre mondiale pour la logistique militaire, il optimise désormais les chaînes d'approvisionnement, planifie les compagnies aériennes, achemine les flottes de livraison, gère les stocks et alloue les ressources dans tous les secteurs. OR fournit la boîte à outils mathématiques pour prendre les meilleures décisions possibles sous contraintes.
 ---

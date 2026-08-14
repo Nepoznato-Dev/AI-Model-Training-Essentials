@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI w życiu codziennym
 Sztuczna inteligencja nie jest już koncepcją futurystyczną – jest osadzona w życiu codziennym. Od chwili, gdy się obudzisz i sprawdzisz telefon (algorytmy rekomendacji decydują, jakie powiadomienia zobaczysz) do momentu zaśnięcia (Twój inteligentny głośnik przetwarza Twoje ostatnie polecenie), systemy AI podejmują decyzje w Twoim imieniu, dla Ciebie, a czasem i o Tobie. Zrozumienie, gdzie pojawia się sztuczna inteligencja, jak działa na podstawowym poziomie i jakie są jej konsekwencje, nie jest już opcjonalne – jest wymogiem świadomego obywatelstwa XXI wieku.
 ---

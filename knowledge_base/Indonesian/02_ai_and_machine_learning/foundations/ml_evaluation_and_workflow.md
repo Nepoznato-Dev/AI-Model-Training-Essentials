@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Evaluasi Pembelajaran Mesin dan Alur Kerja
 Panduan praktis untuk siklus hidup ML — mulai dari penyusunan masalah hingga pemantauan produksi — dengan fokus pada metrik, validasi, dan proses debug.
 ---

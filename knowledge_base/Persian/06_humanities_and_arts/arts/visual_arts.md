@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # هنرهای تجسمی
 هنر تجسمی قدیمی‌ترین شکل ارتباط بشریت است - از نقاشی‌های غار لاسکو گرفته تا تاسیسات دیجیتال امروزی. درک جنبش‌های هنری، رسانه‌ها و مؤسساتی که آثار خلاقانه را حفظ می‌کنند، به شما درک عمیق‌تری از نحوه بیان زیبایی، قدرت، معنویت و مخالفت در جوامع در طول هزاره‌ها می‌دهد.
 ---

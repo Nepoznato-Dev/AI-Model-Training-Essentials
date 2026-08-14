@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ম্যাটল্যাব - সিনট্যাক্স রেফারেন্স
 এই নথিটি MATLAB (R2024+) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, ম্যাট্রিক্স অপারেশন, প্লটিং, এবং বৈজ্ঞানিক কম্পিউটিং ইডিয়মগুলিতে ফোকাস করে মূল ম্যাটল্যাব রেফারেন্সের পরিপূরক।
 ---

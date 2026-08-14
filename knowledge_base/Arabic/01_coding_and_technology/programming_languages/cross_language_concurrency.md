@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # المقارنة بين اللغات - التزامن والتوازي
 ## نظرة عامة على نماذج التزامن
 | اللغة | نموذج | الآلية الرئيسية | الذاكرة المشتركة؟ |

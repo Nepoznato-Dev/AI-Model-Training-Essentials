@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # هندسة البيانات وخطوط الأنابيب
 هندسة البيانات هي مجال بناء الأنظمة التي تنقل البيانات وتحولها وتخزنها على نطاق واسع. بدون خطوط بيانات موثوقة، لا يمكن تدريب نماذج التعلم الآلي، وتعرض لوحات المعلومات أرقامًا قديمة، وتعتمد قرارات العمل على التخمين. يغطي هذا الملف البنية والأدوات والممارسات اللازمة لإنشاء بنية أساسية فعالة للبيانات.
 ---

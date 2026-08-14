@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 快速工程
 提示工程是設計、完善和最佳化輸入提示以從語言模型獲得最佳輸出的實踐。它既是一門藝術，也是一門科學，並且是無需微調即可控制 LLM 行為的主要介面。
 ---

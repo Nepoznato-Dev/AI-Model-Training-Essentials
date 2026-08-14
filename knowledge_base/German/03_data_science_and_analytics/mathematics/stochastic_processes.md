@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Stochastische Prozesse
 Ein **stochastischer Prozess** ist eine Sammlung zeitlich (oder räumlich) indizierter Zufallsvariablen. Während die Wahrscheinlichkeitstheorie einzelne Zufallsereignisse untersucht, untersuchen stochastische Prozesse, wie sich Zufälligkeit im Laufe der Zeit entwickelt. Sie modellieren Aktienkurse, Warteschlangenlängen, Krankheitsausbreitung, Sprachgenerierung und die Trainingsdynamik von Modellen für maschinelles Lernen.
 ---

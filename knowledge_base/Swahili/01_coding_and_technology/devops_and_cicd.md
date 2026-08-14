@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps na CI/CD
 DevOps ni mchanganyiko wa falsafa ya kitamaduni, mazoea na zana ambazo huwezesha timu kutoa programu kwa haraka na kwa uhakika zaidi. Inavunja ukuta kati ya watengenezaji (wanaotaka kusafirisha mabadiliko) na shughuli (wanaotaka utulivu). CI/CD - Ujumuishaji Unaoendelea na Uwasilishaji Unaoendelea - ndio uti wa mgongo wa kiotomatiki ambao hufanya iwezekanavyo.
 ---

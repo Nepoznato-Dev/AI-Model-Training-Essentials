@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # जंग - चीट शीट
 ## मूल बातें
 ```rust

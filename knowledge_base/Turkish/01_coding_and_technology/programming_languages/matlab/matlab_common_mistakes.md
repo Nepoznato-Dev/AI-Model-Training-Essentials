@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge, MATLAB'daki en yaygın hataları, tuzakları ve anti-örüntüleri düzeltmelerle birlikte kataloglamaktadır.
 ---

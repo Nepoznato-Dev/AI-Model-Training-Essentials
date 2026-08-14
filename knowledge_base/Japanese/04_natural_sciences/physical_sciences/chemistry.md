@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ 化学
 物理学がゲームのルールだとすれば、化学はピースが相互作用するときに起こることです。化学は、原子がどのように結合し、分解し、再配置するか、つまりすべての物質がどのように動作するかを研究します。これは、基礎物理学と生物学、地質学、工学の複雑さとの間のギャップを橋渡しします。
 ---

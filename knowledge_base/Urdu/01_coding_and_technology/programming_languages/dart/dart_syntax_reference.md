@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ڈارٹ - نحوی حوالہ
 یہ دستاویز Dart (3.x) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، null سیفٹی، async پروگرامنگ، اور Flutter پر مبنی ڈیزائن کے نمونوں پر توجہ مرکوز کر کے مرکزی ڈارٹ حوالہ کی تکمیل کرتا ہے۔
 ---

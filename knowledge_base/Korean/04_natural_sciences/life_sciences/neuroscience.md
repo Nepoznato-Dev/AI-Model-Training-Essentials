@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 신경과학
 신경과학은 신경계, 즉 뇌, 척수 및 이를 신체에 연결하는 모든 신경에 대한 연구입니다. 이는 분자와 유전자, 개별 뉴런과 시냅스, 회로와 뇌 영역, 행동, 인지, 의식에 이르기까지 다양한 수준에 걸쳐 있습니다. 뇌는 알려진 우주에서 가장 복잡한 구조로, 수조 개의 시냅스로 연결된 대략 860억 개의 뉴런을 포함하고 있으며, 그것이 어떻게 작동하는지 이해하는 것은 과학의 가장 큰 과제 중 하나입니다.
 ---

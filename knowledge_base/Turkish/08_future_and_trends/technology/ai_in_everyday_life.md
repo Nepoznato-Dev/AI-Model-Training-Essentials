@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Günlük Yaşamda Yapay Zeka
 Yapay zeka artık fütüristik bir kavram değil; günlük yaşamın içine yerleşmiş durumda. Uyanıp telefonunuzu kontrol ettiğiniz andan (öneri algoritmaları hangi bildirimleri göreceğinize karar verir) uykuya daldığınız ana kadar (akıllı hoparlörünüz son komutunuzu işler), yapay zeka sistemleri sizin adınıza, sizin adınıza, bazen de sizin hakkınızda kararlar alıyor. Yapay zekanın nerede ortaya çıktığını, temel düzeyde nasıl çalıştığını ve sonuçlarının ne olduğunu anlamak artık isteğe bağlı değil; 21. yüzyılda bilinçli vatandaşlık için bir gereklilik.
 ---

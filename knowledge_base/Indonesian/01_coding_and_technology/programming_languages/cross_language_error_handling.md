@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perbandingan Lintas Bahasa — Penanganan Kesalahan
 ## Ikhtisar Model Penanganan Kesalahan
 | Model | Bahasa | Mekanisme |

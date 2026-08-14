@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # সি — সিনট্যাক্স রেফারেন্স
 এই নথিটি C (C23 নোট সহ C11/C17) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স সরবরাহ করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, অপারেটর টেবিল, পয়েন্টার মেকানিক্স এবং মেমরি ম্যানেজমেন্টের উপর ফোকাস করে প্রধান সি রেফারেন্সের পরিপূরক।
 ---

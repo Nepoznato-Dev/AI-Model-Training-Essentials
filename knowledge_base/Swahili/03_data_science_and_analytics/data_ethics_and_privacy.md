@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Maadili ya Data na Faragha
 Maadili ya data ni utafiti wa jinsi ukusanyaji, uchanganuzi na usambazaji wa data unavyoathiri haki, uhuru na ustawi wa watu. Faragha ni suala mahususi kuhusu ni nani anayedhibiti maelezo ya kibinafsi na jinsi yanavyoshirikiwa. Mada hizi zimehama kutoka mijadala ya kitaaluma hadi habari za ukurasa wa mbele - Utekelezaji wa GDPR, ukiukaji wa data unaoathiri mabilioni ya watumiaji, na kuongezeka kwa ufahamu wa umma kuwa mazoea ya data ya makampuni ya teknolojia yana matokeo halisi kwa demokrasia, usawa na uhuru wa mtu binafsi.
 ---

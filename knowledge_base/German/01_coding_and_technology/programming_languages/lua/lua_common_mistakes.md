@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua – Häufige Fehler und Anti-Patterns
 Dieses Dokument katalogisiert die häufigsten Fehler, Fallstricke und Anti-Patterns in Lua mit Korrekturen.
 ---

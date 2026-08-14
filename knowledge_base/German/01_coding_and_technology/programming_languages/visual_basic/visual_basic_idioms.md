@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic – Idiomatische Muster und Best Practices
 In diesem Handbuch werden idiomatische Muster zum Schreiben von sauberem Visual Basic-Code (.NET) behandelt.
 ---

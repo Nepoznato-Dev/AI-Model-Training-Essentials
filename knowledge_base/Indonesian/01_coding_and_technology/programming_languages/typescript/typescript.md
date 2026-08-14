@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Naskah Ketik
 TypeScript adalah superset JavaScript yang diketik secara statis yang dikembangkan oleh Microsoft (dipimpin oleh Anders Hejlsberg) dan pertama kali dirilis pada tahun 2012. TypeScript menambahkan anotasi tipe opsional, antarmuka, generik, dan fitur sistem tipe lanjutan ke JavaScript — lalu dikompilasi menjadi JavaScript biasa yang berjalan di mana pun JavaScript dijalankan. TypeScript bukanlah bahasa atau runtime yang terpisah; itu adalah JavaScript dengan pemeriksa tipe.
 TypeScript telah menjadi standar untuk pengembangan JavaScript skala besar. React, Angular, VS Code, Deno, dan sebagian besar proyek JavaScript sumber terbuka utama ditulis dalam TypeScript. Jika Anda memulai proyek JavaScript baru dengan ukuran signifikan apa pun, TypeScript adalah default yang disarankan.

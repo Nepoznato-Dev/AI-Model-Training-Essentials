@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Git Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Git 명령 빠른 참조
 버전 제어를 위한 필수 Git 명령입니다.
 ---

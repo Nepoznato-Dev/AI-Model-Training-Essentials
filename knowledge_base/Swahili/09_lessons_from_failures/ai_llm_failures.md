@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI na LLM Kushindwa
 Hati hii inaunganisha hali za kawaida za kutofaulu katika mifumo ya AI na Muundo wa Lugha Kubwa, ikijumuisha maono, habari potofu, hitilafu za kufikiri na masuala yanayohusiana na papo hapo.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Biashara na Uchumi
 Kila shirika linalouza bidhaa au huduma ni biashara, na kila jamii inayozalisha na kusambaza bidhaa ni uchumi. Dhana katika faili hii zinatumika kama unaendesha shughuli za kujitegemea, unafanya kazi katika shirika, unajaribu kuelewa habari, au unatafuta tu jinsi pesa zinavyosonga ulimwenguni.
 ---

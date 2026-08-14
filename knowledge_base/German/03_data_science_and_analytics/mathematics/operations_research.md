@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Operationsforschung
 Unter Operations Research (OR) versteht man die Anwendung mathematischer Methoden zur Entscheidungsfindung. Das im Zweiten Weltkrieg für die Militärlogistik gegründete Unternehmen optimiert heute Lieferketten, plant Fluggesellschaften, leitet Lieferflotten, verwaltet Bestände und verteilt Ressourcen in allen Branchen. OR bietet das mathematische Werkzeug, um unter Randbedingungen die bestmöglichen Entscheidungen zu treffen.
 ---

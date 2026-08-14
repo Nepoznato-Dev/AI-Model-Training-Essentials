@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # อภิธานศัพท์เทคโนโลยี
 อภิธานศัพท์อ้างอิงที่ครอบคลุมโมเดล AI ฮาร์ดแวร์ การวัดประสิทธิภาพ และแนวคิดหลัก
 ในแวดวง AI และการประมวลผลสมัยใหม่

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Code Quality Issues
 
 This document consolidates common code quality problems including bad variable names, poor documentation, spaghetti code, circular dependencies, and other maintainability issues.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 斯卡拉
 Scala（可扩展语言）是一种静态类型、编译型编程语言，结合了面向对象和函数式编程范例。 Scala 由 Martin Odersky 创建并于 2004 年首次发布，它在 JVM 上运行（也称为 JavaScript 和 Scala Native 的 Scala.js）。它旨在解决 Java 的冗长问题，同时保持完整的 Java 互操作性。
 Scala 是 Apache Spark（大数据处理框架）背后的语言，广泛应用于数据工程、分布式系统和后端服务。 Twitter（现在的 X）、LinkedIn、Netflix 和卫报等公司都使用 Scala。

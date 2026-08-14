@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Assemblersprache – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für x86-64 Assembly (NASM-Syntax). Es ergänzt die Hauptreferenz zur Assembly, indem es sich auf umfassende Befehlskategorien, Adressierungsmodi, Stack-Frame-Konventionen und Systemprogrammiermuster konzentriert.
 ---

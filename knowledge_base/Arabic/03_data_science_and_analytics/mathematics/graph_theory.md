@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # نظرية الرسم البياني
 **الرسم البياني** عبارة عن بنية رياضية تتكون من رؤوس (عقد) متصلة بحواف (روابط). العلاقات النموذجية للرسوم البيانية: الشبكات الاجتماعية، خرائط الطريق، الشبكات العصبية، التبعيات، قنوات الاتصال. توفر نظرية الرسم البياني – دراسة هذه الهياكل – الخوارزميات والنظريات التي تعتبر أساسية لعلوم الكمبيوتر، وأبحاث العمليات، وعلوم البيانات.
 ---

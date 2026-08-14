@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Futuri geostrategici
 ## Panoramica
 L’era del dominio americano post-Guerra Fredda sta cedendo il passo a qualcosa di più confuso: un mondo multipolare in cui il potere è diffuso, la concorrenza si sta intensificando su tecnologia e risorse e sfide come il cambiamento climatico e le pandemie non rispettano i confini. L’ordine internazionale basato su regole costruito dopo il 1945 viene messo alla prova da ogni direzione. Ecco cosa sta cambiando, chi sta emergendo e dove sono i punti di attrito.

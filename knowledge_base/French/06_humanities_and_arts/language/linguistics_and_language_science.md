@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linguistique et sciences du langage
 La linguistique est l'étude scientifique du langage : sa structure, sa signification, son utilisation, son acquisition et son évolution. Le langage est une caractéristique déterminante de la communication humaine : il est infiniment productif (les locuteurs peuvent créer et comprendre des phrases qu’ils n’ont jamais rencontrées auparavant), il est transmis culturellement (il est appris plutôt que purement inné) et il évolue continuellement. Comprendre le fonctionnement d'une langue est pertinent pour quiconque développe des technologies linguistiques, enseigne, traduit ou travaille à communiquer plus efficacement.
 ---

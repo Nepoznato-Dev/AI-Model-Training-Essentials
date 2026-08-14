@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 统计与概率
 概率和统计学是数据科学、机器学习和科学研究的数学基础。概率告诉你事件发生的可能性有多大；统计学告诉你如何从数据中得出结论。他们共同将不确定性转化为可量化、可管理的知识。
 ---

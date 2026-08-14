@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Intelligence artificielle
 L'intelligence artificielle est la tentative de construire des machines capables de faire des choses qui nécessiteraient de l'intelligence si un humain les faisait : reconnaître des visages, comprendre la parole, prendre des décisions, écrire des textes, jouer à des jeux, conduire des voitures, diagnostiquer des maladies. Ce domaine est aussi vieux que l'informatique elle-même. Alan Turing se demandait : « Les machines peuvent-elles penser ? » en 1950 – mais la récente explosion des capacités (années 2020) a fait de l’IA l’une des technologies les plus importantes et les plus contestées de l’histoire de l’humanité.
 ---

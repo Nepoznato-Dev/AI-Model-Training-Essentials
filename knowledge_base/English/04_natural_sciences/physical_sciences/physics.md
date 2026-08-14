@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Physics
 
 Physics asks the most fundamental question in science: how does matter and energy behave? Everything else — chemistry, biology, engineering — builds on the answers. Physics ranges from the subatomic scale (quantum mechanics) to the cosmic scale (general relativity), and its principles underpin all other natural sciences.

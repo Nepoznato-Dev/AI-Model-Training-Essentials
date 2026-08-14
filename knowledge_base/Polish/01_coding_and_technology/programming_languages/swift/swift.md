@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Szybki
 Swift to nowoczesny, skompilowany język programowania opracowany przez firmę Apple (pod przewodnictwem Chrisa Lattnera) i wydany po raz pierwszy w 2014 roku. Został zaprojektowany w celu zastąpienia Objective-C jako podstawowego języka do tworzenia platform Apple (iOS, macOS, watchOS, tvOS, VisionOS). Swift łączy wydajność języków skompilowanych z ekspresją języków skryptowych i kładzie nacisk na bezpieczeństwo - szczególnie w przypadku wartości null, zarządzania pamięcią i błędów typów.
 Poza platformami Apple, Swift jest coraz częściej używany do programowania po stronie serwera (Vapor, Hummingbird), aplikacji międzyplatformowych, a nawet uczenia maszynowego (Create ML firmy Apple). Wraz z wprowadzeniem Swift na serwerze i obsługą wielu platform, Swift staje się czymś więcej niż tylko „językiem Apple”.

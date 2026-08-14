@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 材料科学
 材料科学是研究材料的结构（原子、微观和宏观尺度）如何决定其特性，以及如何使用加工方法来控制该结构以实现所需性能的学科。这个领域回答了这样的问题：为什么钢很坚固但很重？玻璃为什么透明但易碎？我们怎样才能让电池充电更快？什么材料能够在火星上的条件下生存？您使用过的每一项技术都是由材料制成的，技术的进步几乎总是需要材料的进步。
 ---

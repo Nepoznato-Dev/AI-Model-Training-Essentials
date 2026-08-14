@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Lua (5.4). Il complète la référence principale de Lua en se concentrant sur les modèles de syntaxe exhaustifs, les tables et métatables, les coroutines et la philosophie de conception unique de Lua.
 ---

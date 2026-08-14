@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mitandao ya Neural ya Grafu
 Graph Neural Networks (GNNs) ni mitandao ya neural iliyoundwa kufanya kazi kwenye data iliyo na muundo wa grafu - mitandao ya nodi zilizounganishwa kwa kingo. Ingawa mitandao ya kitamaduni ya neva hufanya kazi kwenye gridi (picha) au mfuatano (maandishi), GNN hushughulikia miundo ya uhusiano kiholela: mitandao ya kijamii, grafu za molekuli, grafu za maarifa, mitandao ya barabara, grafu za mapendekezo, na zaidi. Zimekuwa muhimu kwa ugunduzi wa dawa za kulevya, utambuzi wa ulaghai, mifumo ya mapendekezo na kikoa chochote ambapo uhusiano kati ya huluki ni muhimu.
 ---

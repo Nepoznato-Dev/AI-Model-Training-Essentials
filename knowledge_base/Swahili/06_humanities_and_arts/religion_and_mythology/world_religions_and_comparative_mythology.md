@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dini za Ulimwengu na Hadithi za Kulinganisha
 Dini za ulimwengu ndizo mifumo kuu ya imani, utendaji, na jamii ambayo imeunda ustaarabu wa mwanadamu kwa maelfu ya miaka. Hadithi linganishi huchunguza hadithi ambazo tamaduni mbalimbali husimulia kuhusu uumbaji, mashujaa, miungu, na maana ya kuwepo - na mifumo ya kuvutia inayojirudia katika mila zilizotenganishwa kwa maelfu ya maili na milenia. Kuelewa yote mawili ni muhimu ili kufahamu kwa nini watu wanaamini kile wanachoamini, jinsi tamaduni zinavyotofautiana, na ni nini kinachounganisha uzoefu wa mwanadamu.
 ---

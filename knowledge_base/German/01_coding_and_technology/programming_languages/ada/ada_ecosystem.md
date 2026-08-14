@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada – Leitfaden für Ökosysteme und Werkzeuge
 Dieser Leitfaden behandelt die wesentlichen Tools, Bibliotheken und Infrastruktur im Ada-Ökosystem.
 ---

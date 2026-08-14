@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Niepowodzenie projektów uczenia maszynowego
 Projekty uczenia maszynowego kończą się niepowodzeniem w zastraszającym tempie — szacunki branżowe sugerują, że 60–85% projektów uczenia maszynowego nigdy nie trafia do produkcji. Błędy zwykle nie wynikają z algorytmów; są w procesie, danych, oczekiwaniach i kontekście organizacyjnym. Zrozumienie, dlaczego projekty ML kończą się niepowodzeniem, jest niezbędne dla każdego, kto buduje systemy ML, ponieważ tryby awarii są przewidywalne i w dużej mierze możliwe do uniknięcia.
 ---

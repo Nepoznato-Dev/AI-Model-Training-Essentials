@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Уязвимости безопасности
 В этом документе собраны общие уязвимости безопасности при разработке программного обеспечения, включая атаки путем внедрения, небезопасные методы написания кода и ошибки безопасности.
 ---

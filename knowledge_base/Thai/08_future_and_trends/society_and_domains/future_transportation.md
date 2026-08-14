@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #การขนส่งแห่งอนาคต
 ## ภาพรวม
 การเดินทางจาก A ไป B กำลังจะดูแตกต่างออกไปมาก รถยนต์ที่ขับเคลื่อนด้วยตนเองมีอยู่แล้วบนถนนสาธารณะ เครื่องบินไฟฟ้ากำลังเสร็จสิ้นการบินทดสอบ แนวคิดของ Hyperloop รับประกันการเดินทางด้วยความเร็วของรถไฟในหลอดสุญญากาศ และแท็กซี่บินได้ ซึ่งครั้งหนึ่งเคยเป็นการ์ตูน กำลังเข้าสู่การรับรอง นี่คือสถานะของเทคโนโลยีที่ปรับเปลี่ยนวิธีการเคลื่อนไหวของเรา

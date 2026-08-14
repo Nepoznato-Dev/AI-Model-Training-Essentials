@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kinh doanh và Kinh tế
 Mọi tổ chức bán sản phẩm hoặc dịch vụ đều là một doanh nghiệp và mọi xã hội sản xuất và phân phối hàng hóa đều là một nền kinh tế. Các khái niệm trong tệp này áp dụng cho dù bạn đang điều hành một hoạt động tự do, làm việc tại một công ty, đang cố gắng tìm hiểu tin tức hay chỉ đang tìm hiểu xem tiền di chuyển khắp thế giới như thế nào.
 ---

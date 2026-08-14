@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ক্লাউড পরিষেবার তুলনা
 কম্পিউট, স্টোরেজ, ডাটাবেস, এআই/এমএল, নেটওয়ার্কিং, মনিটরিং এবং অবকাঠামো-কোড-এ তিনটি প্রধান ক্লাউড প্রদানকারী — AWS, Azure, এবং Google ক্লাউড —-এর পাশাপাশি একটি তুলনা। কোন প্ল্যাটফর্ম ব্যবহার করবেন বা এক ক্লাউড থেকে অন্য ক্লাউডে ম্যাপিং পরিষেবাগুলি নির্ধারণ করতে স্থপতিদের জন্য দরকারী৷
 ---

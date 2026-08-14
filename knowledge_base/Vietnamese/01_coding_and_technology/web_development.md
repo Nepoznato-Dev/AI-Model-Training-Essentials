@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Web Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Phát triển trang web
 ## Phát triển giao diện người dùng
 ### Công nghệ cốt lõi

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript
 JavaScript ist eine dynamische, interpretierte Programmiersprache, die 1995 von Brendan Eich in nur 10 Tagen entwickelt wurde. Ursprünglich entwickelt, um Webseiten Interaktivität zu verleihen, hat sie sich zur weltweit am häufigsten verwendeten Programmiersprache entwickelt. JavaScript läuft in jedem Webbrowser, auf Servern über Node.js, in Desktop-Apps (Electron), mobilen Apps (React Native) und sogar eingebetteten Systemen.
 Die Sprache ist insofern einzigartig, als sie im Wesentlichen die einzige Option für die clientseitige Webentwicklung ist – jeder Browser unterstützt sie nativ. Dieses Monopol, kombiniert mit dem Aufstieg von Full-Stack-JavaScript (Node.js, Deno, Bun), macht es unverzichtbar.

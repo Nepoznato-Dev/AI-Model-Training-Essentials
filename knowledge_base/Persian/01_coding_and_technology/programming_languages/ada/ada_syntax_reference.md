@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای Ada (2012/2022) ارائه می دهد. این مرجع اصلی Ada را با تمرکز بر الگوهای نحوی جامع، وظایف، اشیاء محافظت شده، ژنریک ها و برنامه نویسی حیاتی ایمنی تکمیل می کند.
 ---

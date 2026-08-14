@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Miundo ya nahau na Mazoea Bora
 Mwongozo huu unashughulikia mifumo ya nahau na mbinu bora za kuandika msimbo safi, wa nahau wa MATLAB.
 ---

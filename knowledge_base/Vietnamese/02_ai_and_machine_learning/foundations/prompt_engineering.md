@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kỹ thuật nhanh chóng
 Kỹ thuật nhắc nhở là thực hành thiết kế, tinh chỉnh và tối ưu hóa các lời nhắc đầu vào để có được kết quả đầu ra tốt nhất có thể từ mô hình ngôn ngữ. Nó vừa là nghệ thuật vừa là khoa học, đồng thời là giao diện chính để kiểm soát hành vi LLM mà không cần tinh chỉnh.
 ---

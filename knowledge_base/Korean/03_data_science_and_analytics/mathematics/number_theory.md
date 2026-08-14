@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 정수론
 정수론은 정수(정수와 그 속성)에 대한 연구입니다. 가우스는 이를 '수학의 여왕'이라고 불렀습니다. 가장 단순한 대상(1, 2, 3, ...)을 연구함에도 불구하고 정수론은 모든 수학에서 가장 깊고 어려운 문제를 낳습니다. 오늘날 이는 최신 암호화, 해싱 알고리즘, 오류 수정 코드 및 난수 생성을 뒷받침합니다.
 ---

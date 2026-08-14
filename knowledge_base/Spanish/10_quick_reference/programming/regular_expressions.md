@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hoja de trucos de expresiones regulares
 Las expresiones regulares (regex) son patrones para hacer coincidir texto. Se utilizan en todas partes: búsqueda y reemplazo, validación de entradas, análisis de registros, extracción de datos y más. Esta es una referencia práctica, no un libro de texto.
 ---

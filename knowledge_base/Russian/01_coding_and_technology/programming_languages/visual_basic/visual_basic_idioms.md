@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны для написания чистого кода Visual Basic (.NET).
 ---

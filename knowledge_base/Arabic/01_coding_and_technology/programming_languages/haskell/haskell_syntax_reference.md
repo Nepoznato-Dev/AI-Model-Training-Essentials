@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # هاسكل — مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا لـ Haskell (GHC 9.x). وهو يكمل مرجع هاسكل الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، ونظام الكتابة، والأحادية، والتقييم البطيء، ومصطلحات البرمجة الوظيفية.
 ---

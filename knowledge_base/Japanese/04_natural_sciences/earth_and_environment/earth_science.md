@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 地球科学
 地球科学は、私たちが住む惑星、つまりその構造、プロセス、歴史、そしてそれを居住可能にするシステムを研究します。これは、地質学 (固体の地球)、海洋学 (海洋)、気象学 (大気と天気)、および気候学 (長期的な気候パターン) に及びます。これらの分野を統合するのは、地球が動的なシステムであるという理解です。地球の内部は常に動き、表面は再形成され、大気と海洋は複雑な方法で相互作用します。
 ---

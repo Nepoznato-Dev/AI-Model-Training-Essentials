@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pagpaplano ng Scenario
 ## Pangkalahatang-ideya
 Walang sinuman ang maaaring mahulaan ang hinaharap — ngunit maaari kang maghanda para sa ilang mga kapani-paniwala. Ang pagpaplano ng senaryo, na isinilang sa mga think tank ng Cold War at ginawang perpekto ng Shell noong mga krisis ng langis noong 1970s, ay isang paraan ng sistematikong pag-iisip tungkol sa kawalan ng katiyakan. Sa halip na tumaya sa isang hula, bumuo ka ng magkakaugnay na mga kuwento tungkol sa kung paano maaaring mangyari ang mga bagay, pagkatapos ay i-stress-test ang iyong mga desisyon laban sa lahat ng ito. Narito kung paano gumagana ang pamamaraan, kasama ang mga senaryo sa mga pangunahing domain.

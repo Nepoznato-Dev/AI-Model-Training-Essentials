@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 스크래치 — 생태계 및 툴링 가이드
 이 가이드는 스크래치 생태계의 필수 도구, 확장 기능 및 리소스를 다룹니다.
 ---

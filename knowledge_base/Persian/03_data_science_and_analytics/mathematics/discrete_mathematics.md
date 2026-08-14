@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ریاضیات گسسته
 ریاضیات گسسته مطالعه ساختارهای ریاضی است که اساساً قابل شمارش یا جدا هستند - برخلاف ریاضیات پیوسته (حساب حساب، تجزیه و تحلیل واقعی) که با کمیت های صاف و ناگسستنی سروکار دارد. ریاضیات گسسته زیربنای علوم کامپیوتر، رمزنگاری، طراحی الگوریتم و ساختارهای داده است. اگر ریاضیات پیوسته دنیای فیزیکی را توصیف می کند، ریاضیات گسسته دنیای محاسباتی را توصیف می کند.
 ---

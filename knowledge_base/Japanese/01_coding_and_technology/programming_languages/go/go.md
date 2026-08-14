@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 ＃ 行く
 Go (元のドメイン名にちなんで「Golang」と呼ばれることが多い) は、Robert Griesemer、Rob Pike、Ken Thompson によって Google で設計された、静的に型指定され、コンパイルされたプログラミング言語です。この言語は、C のパフォーマンスと Python などの動的言語の生産性を組み合わせた、システム プログラミングにより優れた言語になるという明確な目標を掲げて 2012 年に初めてリリースされました。 Go は、そのシンプルさ、高速なコンパイル、組み込みの同時実行性 (ゴルーチンとチャネル)、および優れたツールで知られています。
 Go はクラウド インフラストラクチャ エコシステムの多くを支えています。Docker、Kubernetes、Terraform、Prometheus など、および Go 標準ライブラリの HTTP サーバーはすべて Go で書かれています。これは、クラウドネイティブ開発、マイクロサービス、および CLI ツールのデフォルト言語となっています。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku opisano wzorce idiomatyczne dla Erlanga i Elixiru na maszynie wirtualnej BEAM.
 ---

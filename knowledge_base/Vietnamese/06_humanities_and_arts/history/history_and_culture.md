@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lịch sử và Văn hóa
 Lịch sử là câu chuyện về những gì con người đã làm - những thành công, thảm họa, phát minh và ý tưởng đã định hình nên thế giới chúng ta đang sống ngày nay. Nó không chỉ là một danh sách ngày tháng và tên. Hiểu lịch sử giúp bạn hiểu tại sao lại có biên giới, tại sao mọi người nói ngôn ngữ họ nói, tại sao một số quốc gia giàu có trong khi những quốc gia khác thì không, và tại sao những xung đột tưởng như cổ xưa vẫn đang bùng cháy.
 Tập tin này bao gồm các giai đoạn và chủ đề chính trong lịch sử thế giới, từ những nền văn minh đầu tiên cho đến ngày nay.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Datenwissenschaft und Analytik
 Data Science ist die Disziplin, Rohdaten in umsetzbare Erkenntnisse umzuwandeln. Es befindet sich an der Schnittstelle von Statistik, Informatik und Fachwissen – und ist in allen Sektoren, vom Finanzwesen bis zum Gesundheitswesen, unverzichtbar geworden. In dieser Datei werden die wichtigsten Konzepte, Tools und Arbeitsabläufe erläutert, die jeder Praktiker kennen sollte.
 ---

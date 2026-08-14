@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Manajemen Kemungkinan dan Konfigurasi
 Ansible adalah alat otomatisasi dan manajemen konfigurasi tanpa agen. Ia menggunakan SSH (atau WinRM untuk Windows) untuk terhubung ke server dan menjalankan tugas yang ditentukan dalam buku pedoman YAML. Tidak seperti alat yang memerlukan agen diinstal pada setiap mesin, Ansible berbasis push — Anda menjalankan perintah dari node kontrol. Ini digunakan untuk penyediaan server, penerapan aplikasi, manajemen konfigurasi, dan eksekusi tugas ad-hoc.
 ---

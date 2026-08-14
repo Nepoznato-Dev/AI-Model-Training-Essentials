@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk PHP (8.x). Ini melengkapi referensi utama PHP dengan berfokus pada pola sintaksis yang lengkap, fitur PHP modern, pemrograman berorientasi objek, dan idiom praktis.
 ---

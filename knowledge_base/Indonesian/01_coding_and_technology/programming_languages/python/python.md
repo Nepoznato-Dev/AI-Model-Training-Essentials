@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Python
 Python adalah bahasa pemrograman tujuan umum tingkat tinggi, ditafsirkan, dibuat oleh Guido van Rossum dan pertama kali dirilis pada tahun 1991. Python memprioritaskan keterbacaan kode melalui lekukan yang signifikan dan sintaksis bersih yang mirip dengan bahasa Inggris biasa. Python diketik secara dinamis, pengumpulan sampah, dan mendukung berbagai paradigma pemrograman termasuk pemrograman prosedural, berorientasi objek, dan fungsional.
 Saat ini, Python adalah bahasa dominan dalam AI/ML, ilmu data, komputasi ilmiah, dan otomatisasi — namun tetap menjadi salah satu bahasa terbaik untuk pemula. Identitas ganda tersebut (cukup sederhana untuk skrip pertama, cukup kuat untuk melatih model bahasa besar) itulah yang membedakannya.

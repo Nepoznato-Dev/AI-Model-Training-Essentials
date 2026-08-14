@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API 設計和整合失敗
 API（應用程式介面）是現代軟體的結締組織－它們讓服務進行通信，讓第三方集成，讓團隊獨立工作。當 API 設計出錯時，後果會波及到依賴它的每個系統：整合中斷、安全漏洞、開發人員沮喪以及代價高昂的重寫。整合故障（系統無法可靠地通訊）是生產事件最常見的來源之一。
 ---

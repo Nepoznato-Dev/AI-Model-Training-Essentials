@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # So sánh đa ngôn ngữ - Kiểu dữ liệu & cấu trúc
 ## Các kiểu nguyên thủy
 | Loại | Python | JavaScript | rỉ sét | Đi | Java | C | C++ | C# |

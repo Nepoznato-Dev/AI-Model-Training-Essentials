@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Görelilik
 Einstein'ın görelilik teorileri uzay, zaman ve yerçekimi anlayışımızda devrim yarattı. **Özel görelilik** (1905), uzay ve zamanın ayrı olmadığını, uzay-zaman adı verilen tek bir doku halinde örülmüş olduğunu ve ışık hızının tüm gözlemciler için aynı olduğunu gösterdi. **Genel görelilik** (1915), yerçekimini bir kuvvet olarak değil, kütle ve enerjinin neden olduğu uzay-zamanın eğriliği olarak yeniden tasavvur etti. Bu teoriler GPS navigasyonunu, parçacık hızlandırıcılarını ve kara delikler ile evrenin evrimi hakkındaki anlayışımızı desteklemektedir.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uhandisi wa Kipengele
 Uhandisi wa vipengele ni mchakato wa kubadilisha data ghafi kuwa uwasilishaji unaofanya miundo ya kujifunza kwa mashine kuwa bora zaidi. Mara nyingi hufafanuliwa kama hatua muhimu zaidi katika bomba la ML - vipengele unavyotoa mfano ni muhimu zaidi kuliko algoriti unayochagua. Muundo rahisi ulio na vipengele vilivyoundwa vyema kwa kawaida utashinda kielelezo changamano na pembejeo mbichi, ambazo hazijachakatwa. Sanaa iko katika kuelewa kikoa na data vizuri vya kutosha kuunda ishara ambazo mtindo unaweza kujifunza kutoka.
 ---

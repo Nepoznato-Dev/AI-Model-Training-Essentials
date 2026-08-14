@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 生成 AI の詳細
 生成 AI とは、既存のデータを単に分類または予測するのではなく、新しいコンテンツ (画像、テキスト、オーディオ、ビデオ、コード) を作成するモデルを指します。大規模な言語モデルが最も注目を集めていますが、生成 AI の状況ははるかに広範囲に及びます。このファイルは、拡散モデルから変分オートエンコーダ、フロー モデルに至るまで、最新の生成システムの背後にあるアーキテクチャ、技術、トレードオフをカバーしています。
 ---

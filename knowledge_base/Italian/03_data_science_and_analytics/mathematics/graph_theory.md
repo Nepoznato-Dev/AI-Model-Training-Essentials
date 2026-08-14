@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria dei grafi
 Un **grafo** è una struttura matematica costituita da vertici (nodi) collegati da bordi (collegamenti). Relazioni del modello grafico: reti sociali, mappe stradali, reti neurali, dipendenze, canali di comunicazione. La teoria dei grafi, ovvero lo studio di queste strutture, fornisce algoritmi e teoremi fondamentali per l’informatica, la ricerca operativa e la scienza dei dati.
 ---

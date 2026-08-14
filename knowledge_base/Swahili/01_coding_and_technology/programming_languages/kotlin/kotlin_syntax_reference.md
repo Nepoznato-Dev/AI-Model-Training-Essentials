@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin - Rejea ya Sintaksia
 Hati hii inatoa rejeleo la kina, lenye muundo wa sintaksia kwa Kotlin (2.0+). Inakamilisha marejeleo kuu ya Kotlin kwa kuzingatia mifumo kamili ya sintaksia, usalama tupu, kanuni na nahau za Kotlin.
 ---

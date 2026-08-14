@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # KI-Sicherheit und Ausrichtung
 Bei der KI-Sicherheit geht es darum, wie man KI-Systeme baut, die das tun, was wir eigentlich wollen – und keine Dinge tun, die wir nicht wollen, auch wenn diese nicht ausdrücklich ausgeschlossen wurden. Die Ausrichtung ist die besondere Herausforderung, die Ziele und Verhaltensweisen von KI-Systemen an die menschlichen Absichten anzupassen. Je leistungsfähiger KI-Systeme werden, desto mehr verlagern sich diese Fragen von akademischen Kuriositäten hin zu praktischen technischen Anforderungen.
 ---

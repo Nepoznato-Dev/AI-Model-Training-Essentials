@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lembar Cheat Ekspresi Reguler
 Ekspresi reguler (regex) adalah pola untuk mencocokkan teks. Mereka digunakan di mana saja — cari dan ganti, validasi input, penguraian log, ekstraksi data, dan banyak lagi. Ini adalah referensi praktis, bukan buku teks.
 ---

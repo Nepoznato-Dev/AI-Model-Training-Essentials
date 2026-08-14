@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، چارچوب‌ها و زیرساخت‌های ضروری در اکوسیستم TypeScript را پوشش می‌دهد. TypeScript بیشتر اکوسیستم خود را با جاوا اسکریپت به اشتراک می گذارد اما ابزارهای تخصصی خود را دارد.
 ---

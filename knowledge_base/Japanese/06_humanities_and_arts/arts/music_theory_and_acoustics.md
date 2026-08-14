@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 音楽理論と音響学
 音楽理論は、音楽がどのように機能するか、つまりある音の組み合わせを心地よく、意味のあるものにし、その他の音を不調和または混沌にするパターン、構造、原理を研究するものです。音響学は音の物理学、つまり振動が空気中をどのように伝わるか、振動がどのように生成され知覚されるかということです。ハ長調のコードがなぜ幸せに聞こえるのか、短調がなぜ悲しく聞こえるのか、コンサート ホールがどのように設計されているのか、そしてなぜお気に入りの曲がゾクゾクするのかを一緒に説明します。
 ---

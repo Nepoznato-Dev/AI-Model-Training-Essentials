@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mbinu za Usimamizi na Mradi
 Kusimamia watu na miradi ni miongoni mwa majukumu yanayodai sana katika shirika lolote. Ujuzi wa kiufundi hutoa kuingia, lakini uwezo wa kuongoza timu, kufanya maamuzi, kuwasiliana kwa ufanisi, na kutoa matokeo huamua kama malengo yamefikiwa. Faili hii inashughulikia mifumo, mbinu, na ujuzi wa vitendo ambao wasimamizi bora na viongozi wa mradi hutumika.
 ---

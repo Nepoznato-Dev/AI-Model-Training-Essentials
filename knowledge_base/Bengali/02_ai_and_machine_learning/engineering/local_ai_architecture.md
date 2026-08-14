@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # স্থানীয় এআই আর্কিটেকচার
 বৃহৎ ভাষার মডেলগুলি সম্পূর্ণরূপে অন-ডিভাইস চালানোর জন্য একটি ব্যবহারিক নির্দেশিকা — হার্ডওয়্যার বিবেচনা, অনুমান ইঞ্জিন, মেমরি অপ্টিমাইজেশন, এবং প্রান্ত স্থাপনের জন্য সিস্টেম ডিজাইন।
 ---

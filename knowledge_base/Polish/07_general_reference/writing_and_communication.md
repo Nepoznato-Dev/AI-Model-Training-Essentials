@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Podstawy pisania i komunikacji
 Pisanie i komunikacja to umiejętności skutecznego przekazywania pomysłów — czy to za pośrednictwem e-maili, raportów, dokumentacji, prezentacji czy rozmów. Większość pracy opartej na wiedzy to zasadniczo praca komunikacyjna: profesjonaliści muszą wyjaśniać swój sposób myślenia, przekonywać innych, dokumentować decyzje, pisać specyfikacje, prezentować ustalenia i współpracować między zespołami. Rozbieżność pomiędzy tym, co mamy na myśli, a tym, co jest rozumiane, jest źródłem większości problemów, a lepsza komunikacja zmniejsza tę różnicę.
 ---

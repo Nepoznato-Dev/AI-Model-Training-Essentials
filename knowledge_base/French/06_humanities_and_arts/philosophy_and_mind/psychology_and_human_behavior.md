@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Psychologie et comportement humain
 La psychologie est la science qui étudie comment et pourquoi les gens pensent, ressentent et agissent comme ils le font. Il ne s’agit pas d’une lecture dans les pensées, ni du bon sens – même si cela confirme parfois ce que suggère le sens commun et parfois le contredit entièrement. La psychologie utilise la même méthode scientifique que toutes les autres sciences : observer, émettre des hypothèses, tester, réviser. Ce qui rend cette démarche difficile, c’est que son sujet – l’esprit humain – est l’objet le plus complexe que nous connaissions.
 Ce dossier couvre les grands domaines de la psychologie : comment nous pensons, comment nous évoluons, comment nous sommes influencés par les autres, ce qui ne va pas et que peut-on faire pour y remédier.

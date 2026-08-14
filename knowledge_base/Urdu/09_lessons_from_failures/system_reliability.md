@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سسٹم کی وشوسنییتا کے مسائل
 یہ دستاویز قابل اعتماد مسائل کو یکجا کرتی ہے جس میں میموری لیک، ریس کے حالات، ہم آہنگی پروگرامنگ کی غلطیاں، اور سسٹم ڈیزائن کی ناکامیاں شامل ہیں۔
 ---

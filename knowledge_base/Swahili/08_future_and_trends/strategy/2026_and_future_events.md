@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 2026 na Matukio ya Baadaye
 2026 ni mwaka ambapo mipango mingi ya muda mrefu hukutana. Ni kumbukumbu ya miaka 250 ya Azimio la Uhuru la Marekani, kituo cha ukaguzi cha Malengo ya Maendeleo Endelevu ya Umoja wa Mataifa (2020-2030), na mwaka muhimu kwa ramani za kampuni katika AI, uchunguzi wa anga, magari ya umeme, na nishati mbadala. Iwapo ubashiri mahususi utatekelezwa au la, mitindo ya 2026 inatoa picha muhimu ya mambo yanaelekea wapi.
 ---

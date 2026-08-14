@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Vai: cronologia ed evoluzione delle versioni
 ## Cronologia
 | Versione | Data di rilascio | Tema chiave |

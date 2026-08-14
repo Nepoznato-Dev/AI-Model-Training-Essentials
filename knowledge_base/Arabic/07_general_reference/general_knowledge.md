@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # المعرفة العامة
 هذا الملف عبارة عن مجموعة من الحقائق والمفاهيم التي تظهر بانتظام في المحادثات والأخبار والتعليم والحياة اليومية. فكر في الأمر على أنه معرفة خلفية - نوع الشيء الذي يساعدك على فهم ما تقرأه، أو تسمعه، أو تختبره.
 ---

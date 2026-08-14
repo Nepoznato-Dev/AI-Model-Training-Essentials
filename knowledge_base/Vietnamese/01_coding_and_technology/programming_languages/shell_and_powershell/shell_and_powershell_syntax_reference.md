@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Bash và PowerShell. Nó bổ sung cho tham chiếu Shell chính bằng cách tập trung vào các mẫu kịch bản, quy trình, quản lý quy trình và thành ngữ tự động hóa đầy đủ cho cả hai shell.
 ---

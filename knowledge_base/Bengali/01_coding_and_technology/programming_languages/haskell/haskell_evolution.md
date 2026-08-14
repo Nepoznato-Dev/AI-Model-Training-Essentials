@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # হাসকেল — সংস্করণ ইতিহাস এবং বিবর্তন
 ## টাইমলাইন
 | সংস্করণ | বছর | মূল থিম |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — 常見錯誤與反模式
 本文檔列出了 Scala 中最常見的錯誤、陷阱和反模式，並進行了修正。
 ---

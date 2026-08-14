@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی برای نوشتن کد COBOL تمیز و مدرن را پوشش می دهد.
 ---

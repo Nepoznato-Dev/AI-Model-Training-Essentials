@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada
 
 Ada is a statically typed, compiled programming language designed for safety-critical and high-integrity systems. Originally developed in the 1980s under contract with the U.S. Department of Defense (named after Ada Lovelace, considered the first computer programmer), Ada emphasises reliability, maintainability, and correctness. It was designed to replace the hundreds of programming languages then used by the DoD with a single, well-specified language.

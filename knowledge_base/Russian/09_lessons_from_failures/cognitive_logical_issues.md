@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Когнитивные искажения и логические заблуждения
 В этом документе объединены когнитивные предубеждения, логические заблуждения и ошибки рассуждения, которые влияют как на принятие решений человеком, так и на результаты системы ИИ.
 ---

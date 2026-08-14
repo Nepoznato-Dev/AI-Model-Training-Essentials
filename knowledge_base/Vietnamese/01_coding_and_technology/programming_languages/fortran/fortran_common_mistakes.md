@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — Những lỗi thường gặp và những kiểu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong Fortran kèm theo các bản sửa lỗi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell - مرجع نحو
 این سند یک مرجع نحو ساختار یافته و جامع برای Haskell (GHC 9.x) ارائه می دهد. با تمرکز بر الگوهای نحو جامع، سیستم نوع، مونادها، ارزیابی تنبل، و اصطلاحات برنامه‌نویسی کاربردی، مرجع اصلی Haskell را تکمیل می‌کند.
 ---

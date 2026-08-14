@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL: Guida all'ecosistema e agli strumenti
 Questa guida copre gli strumenti, i compilatori e l'infrastruttura essenziali nell'ecosistema COBOL.
 ---

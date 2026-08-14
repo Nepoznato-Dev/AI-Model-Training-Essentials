@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform และโครงสร้างพื้นฐานเป็นโค้ด
 Terraform เป็นเครื่องมือ Infrastructure as Code (IaC) ที่ใช้กันอย่างแพร่หลาย โดยช่วยให้คุณกำหนดโครงสร้างพื้นฐานคลาวด์ (เซิร์ฟเวอร์ ฐานข้อมูล เครือข่าย การอนุญาต) ในไฟล์การกำหนดค่าที่เปิดเผยซึ่งสามารถกำหนดเวอร์ชัน ตรวจสอบ ทดสอบ และทำงานอัตโนมัติได้ แทนที่จะคลิกผ่านคอนโซลคลาวด์ คุณจะเขียนโค้ดที่อธิบายสถานะโครงสร้างพื้นฐานที่คุณต้องการ จากนั้น Terraform จะคำนวณว่าจะต้องเปลี่ยนแปลงอะไรบ้าง
 ---

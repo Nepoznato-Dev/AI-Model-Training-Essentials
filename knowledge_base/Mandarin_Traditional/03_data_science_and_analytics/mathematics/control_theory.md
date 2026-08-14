@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 控制理論
 控制理論是使系統按照您希望的方式運作的數學。從恆溫器到自動駕駛儀，從機械手臂到化學反應器，控制系統感知、決定並採取行動以維持所需的行為。該領域提供了用於分析穩定性、性能和穩健性的嚴格工具，這些概念已遷移到強化學習、超參數調整和自適應系統中。
 ---

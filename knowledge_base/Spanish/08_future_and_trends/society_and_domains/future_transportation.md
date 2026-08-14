@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Transporte futuro
 ## Descripción general
 Llegar de A a B está a punto de ser muy diferente. Los coches autónomos ya circulan por la vía pública. Los aviones eléctricos están completando vuelos de prueba. Los conceptos de Hyperloop prometen viajes a la velocidad de un tren en tubos de vacío. Y los taxis voladores, que alguna vez fueron material de dibujos animados, están obteniendo la certificación. Aquí está la situación de las tecnologías que están cambiando la forma en que nos movemos.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optymalizacja i wdrażanie modelu
 Wyszkolenie dużego modelu sztucznej inteligencji jest znaczącym osiągnięciem, ale jego efektywne wdrożenie wymaga najwięcej wysiłku inżynieryjnego. Model, który potrzebuje 10 sekund na reakcję lub wymaga ośmiu procesorów graficznych A100, jest niepraktyczny w większości rzeczywistych zastosowań. Optymalizacja modeli to proces zmniejszania, przyspieszania i opłacalności modeli przy jednoczesnym zachowaniu akceptowalnej jakości. Ten plik obejmuje kwantyzację, przycinanie, destylację i praktyczne narzędzia do wdrażania modeli w środowisku produkcyjnym.
 ---

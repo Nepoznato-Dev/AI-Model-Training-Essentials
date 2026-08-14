@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geleceğin Sağlık Hizmetleri
 ## Genel Bakış
 Tıp reaktif bir modelden (semptomları ortaya çıktıktan sonra tedavi etme) öngörücü, kişiselleştirilmiş ve giderek daha önleyici bir modele doğru kayıyor. Genomik, 3 milyar dolarlık bir projeden 1.000 doların altındaki rutin testlere dönüştü. Yapay zeka, taramalardaki hastalıkları doktorlardan önce tespit etmeyi öğreniyor. Ve rejeneratif tıp, bilim kurguyu klinik deneylere dönüştürüyor. İşte en büyük üç sınırda neler oluyor: kişiselleştirilmiş tıp, uzun ömürlülük araştırmaları ve rejeneratif tıp.

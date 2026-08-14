@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geografia e Geopolítica
 A geografia molda o destino. A localização de montanhas, rios e recursos naturais determinou rotas comerciais, desencadeou guerras e construiu civilizações durante milénios. Hoje, a geopolítica — a interação entre geografia, poder e política — continua a ser essencial para compreender por que razão as nações se comportam daquela forma.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Die Zukunft des Computings
 Die Zukunft der Informatik wird von Kräften geprägt, die die Grundannahmen der letzten 60 Jahre in Frage stellen. Das Mooresche Gesetz – die Beobachtung, dass sich die Rechenleistung etwa alle zwei Jahre verdoppelt – verlangsamt sich. Die von Neumann-Architektur – getrennte CPU und Speicher – stößt an eine „Speichermauer“. Quantencomputing verspricht, Probleme zu lösen, die klassische Computer nicht lösen können. Neuromorphe Chips ahmen die Architektur des Gehirns nach. Edge Computing verlagert die Verarbeitung weg von zentralisierten Rechenzentren. Und KI verändert den Zweck von Computern – von Werkzeugen, die Anweisungen ausführen, bis hin zu Systemen, die lernen, generieren und schlussfolgern. Für jeden, der Technologie baut, kauft oder sich auf sie verlässt, ist es wichtig, diese Veränderungen zu verstehen.
 ---

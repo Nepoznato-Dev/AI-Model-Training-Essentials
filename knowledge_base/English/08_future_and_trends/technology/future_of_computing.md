@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # The Future of Computing
 
 The future of computing is being shaped by forces that challenge the fundamental assumptions of the past 60 years. Moore's Law — the observation that computing power doubles roughly every two years — is slowing. The von Neumann architecture — separate CPU and memory — is hitting a "memory wall." Quantum computing promises to solve problems classical computers cannot. Neuromorphic chips mimic the brain's architecture. Edge computing moves processing away from centralised data centres. And AI is changing what computers are for — from tools that execute instructions to systems that learn, generate, and reason. Understanding these shifts matters for anyone building, buying, or relying on technology.

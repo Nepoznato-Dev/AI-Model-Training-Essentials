@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Psikologi dan Perilaku Manusia
 Psikologi adalah ilmu tentang bagaimana dan mengapa orang berpikir, merasakan, dan bertindak seperti yang mereka lakukan. Ini bukan membaca pikiran, dan tidak masuk akal - meskipun kadang-kadang menegaskan apa yang disarankan oleh akal sehat dan kadang-kadang bertentangan sepenuhnya. Psikologi menggunakan metode ilmiah yang sama seperti ilmu lainnya: mengamati, membuat hipotesis, menguji, merevisi. Yang membuatnya menantang adalah subjeknya – pikiran manusia – adalah objek paling kompleks yang kita ketahui.
 File ini mencakup bidang-bidang utama psikologi: cara kita berpikir, cara kita berkembang, cara kita dipengaruhi oleh orang lain, apa yang salah, dan apa yang bisa dilakukan untuk mengatasinya.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Docker na Kubernetes Karatasi ya Kudanganya
 Rejeleo la vitendo la kuweka programu na Docker na kuzipanga kwa Kubernetes. Inachukua ujuzi wa kimsingi na mstari wa amri.
 ---

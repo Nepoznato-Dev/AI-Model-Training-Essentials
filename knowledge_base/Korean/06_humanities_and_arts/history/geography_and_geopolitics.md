@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 지리학과 지정학
 지리가 운명을 결정합니다. 산, 강, 천연자원의 위치는 수천 년 동안 무역로를 결정하고 전쟁을 촉발하며 문명을 건설해 왔습니다. 오늘날 지정학(지리, 권력, 정치의 상호 작용)은 국가가 왜 그렇게 행동하는지 이해하는 데 여전히 필수적입니다.
 ---

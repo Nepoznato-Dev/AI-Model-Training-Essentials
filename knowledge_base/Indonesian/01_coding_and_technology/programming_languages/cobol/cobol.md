@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #COBOL
 COBOL (Common Business-Oriented Language) adalah salah satu bahasa pemrograman tertua yang masih digunakan, pertama kali dikembangkan pada tahun 1959. COBOL dirancang untuk pemrosesan data bisnis — sistem keuangan, penggajian, perbankan, asuransi, dan aplikasi pemerintah. Sintaks COBOL yang mirip bahasa Inggris dimaksudkan agar dapat dibaca oleh manajer bisnis, bukan hanya pemrogram.
 Meskipun usianya sudah tua, COBOL memproses sekitar 30% dari seluruh transaksi bisnis secara global. Bank-bank besar, lembaga pemerintah (termasuk Administrasi Jaminan Sosial AS), dan perusahaan asuransi masih mengandalkan sistem mainframe COBOL. Ketakutan akan bug Y2K pada tahun 1999 membawa COBOL kembali ke kesadaran publik, dan bahasa tersebut terus menjalankan infrastruktur penting di seluruh dunia.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Etika Data dan Privasi
 Etika data adalah studi tentang bagaimana pengumpulan, analisis, dan penyebaran data memengaruhi hak, otonomi, dan kesejahteraan masyarakat. Privasi adalah perhatian khusus mengenai siapa yang mengontrol informasi pribadi dan bagaimana informasi tersebut dibagikan. Topik-topik ini telah beralih dari perdebatan akademis ke berita halaman depan — penegakan GDPR, pelanggaran data yang berdampak pada miliaran pengguna, dan meningkatnya kesadaran masyarakat bahwa praktik data perusahaan teknologi mempunyai konsekuensi nyata terhadap demokrasi, kesetaraan, dan kebebasan individu.
 ---

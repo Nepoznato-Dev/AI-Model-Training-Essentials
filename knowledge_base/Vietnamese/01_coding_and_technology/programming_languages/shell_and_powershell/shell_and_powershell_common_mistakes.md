@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Các lỗi thường gặp & Mẫu chống đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong Shell/Bash và PowerShell kèm theo các bản sửa lỗi.
 ---

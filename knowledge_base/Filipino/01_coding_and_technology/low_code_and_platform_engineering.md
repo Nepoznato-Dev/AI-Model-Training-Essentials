@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Low-Code at Platform Engineering
 Hinahayaan ng mga low-code platform ang mga tao na bumuo ng mga application na may kaunting hand-written code — karaniwang sa pamamagitan ng drag-and-drop interface, visual workflow, at pre-built connector. Ang platform engineering ay ang disiplina ng pagbuo ng mga internal developer platform (IDP) na nagpapadali para sa mga team ng produkto na maglingkod sa sarili nilang imprastraktura, CI/CD, at operational tooling. Ang parehong mga uso ay mga tugon sa parehong problema: ang agwat sa pagitan ng demand para sa software at ang supply ng mga developer na maaaring bumuo nito.
 ---

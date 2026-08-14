@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، چارچوب‌ها و زیرساخت‌های ضروری در اکوسیستم کاتلین را پوشش می‌دهد.
 ---

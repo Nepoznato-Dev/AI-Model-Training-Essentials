@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # زبان اسمبلی - مرجع نحو
 این سند یک مرجع دستوری ساختار یافته و جامع برای اسمبلی x86-64 (Syntax NASM) ارائه می دهد. با تمرکز بر دسته‌های دستورالعمل جامع، حالت‌های آدرس‌دهی، قراردادهای قاب پشته‌ای و الگوهای برنامه‌نویسی سیستم، مرجع اصلی اسمبلی را تکمیل می‌کند.
 ---

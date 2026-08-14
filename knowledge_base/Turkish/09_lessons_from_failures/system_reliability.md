@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sistem Güvenilirliği Sorunları
 Bu belge, bellek sızıntıları, yarış koşulları, eşzamanlı programlama hataları ve sistem tasarımı hataları dahil olmak üzere güvenilirlik sorunlarını birleştirir.
 ---

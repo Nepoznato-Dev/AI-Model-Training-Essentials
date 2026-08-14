@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ทักษะชีวิตเชิงปฏิบัติ
 โรงเรียนสอนแคลคูลัสให้คุณแต่ไม่ค่อยสอนวิธียื่นภาษี ปรุงอาหารให้สมดุล หรือดูแลรักษาบ้าน สิ่งเหล่านี้คือความสามารถเชิงปฏิบัติที่ส่งผลต่อคุณภาพชีวิตในแต่ละวันของคุณ ซึ่งเป็นความรู้ที่ทำให้คุณพึ่งตนเองได้และมีความยืดหยุ่นทางการเงิน ไฟล์นี้เป็นข้อมูลอ้างอิงที่หนาแน่นสำหรับข้อมูลสำคัญต่างๆ
 ---

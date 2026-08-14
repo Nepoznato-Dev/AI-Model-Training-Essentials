@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure — 관용적 패턴 및 모범 사례
 이 가이드에서는 Lisp 및 Clojure의 관용적 패턴을 다룹니다.
 ---

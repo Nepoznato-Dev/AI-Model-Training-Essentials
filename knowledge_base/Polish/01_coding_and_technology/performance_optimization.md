@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optymalizacja wydajności
 Optymalizacja wydajności to praktyka polegająca na przyspieszaniu oprogramowania — skracaniu czasu reakcji, zwiększaniu przepustowości, zmniejszaniu zużycia pamięci i eliminowaniu wąskich gardeł. Jest to jedna z najbardziej wpływowych umiejętności, jakie może posiadać programista, ponieważ wolne oprogramowanie powoduje utratę użytkowników, marnowanie zasobów i frustrację wszystkich. Ale jest to również jeden z najczęściej popełnianych błędów, ponieważ programiści optymalizują niewłaściwe rzeczy w oparciu o intuicję, a nie dowody.
 ---

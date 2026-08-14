@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — ข้อผิดพลาดทั่วไปและการต่อต้านรูปแบบ
 เอกสารนี้รวบรวมข้อผิดพลาด กับดัก และรูปแบบการต่อต้านที่พบบ่อยที่สุดใน Ruby แต่ละรายการจะแสดงแนวทางที่ไม่ถูกต้อง อธิบายว่าทำไมจึงล้มเหลว และให้แนวทางแก้ไขที่ถูกต้อง
 ---

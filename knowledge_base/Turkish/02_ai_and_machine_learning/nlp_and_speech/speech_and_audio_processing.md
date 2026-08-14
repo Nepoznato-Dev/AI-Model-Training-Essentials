@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Konuşma ve Ses İşleme
 Konuşma ve ses işleme, makinelerin sesi duymasını, anlamasını, üretmesini ve değiştirmesini sağlayan teknolojileri kapsar. Bu, konuşma tanımayı (konuşulan kelimeleri metne dönüştürme), konuşma sentezini (metni konuşulan kelimelere dönüştürme), konuşmacıyı tanımlamayı, müzik üretmeyi ve çevresel ses anlayışını içerir. Alan, derin öğrenmeyle dönüşüme uğradı; modern sistemler, konuşma tanıma için insan düzeyindeki doğruluğa yaklaşıyor ve ürkütücü derecede doğal sentetik sesler üretiyor.
 ---

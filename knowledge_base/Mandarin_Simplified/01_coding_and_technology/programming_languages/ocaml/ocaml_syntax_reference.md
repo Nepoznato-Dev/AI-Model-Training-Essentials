@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — 语法参考
 本文档为 OCaml (4.x/5.x) 提供全面、结构化的语法参考。它通过关注详尽的语法模式、代数数据类型、模式匹配、模块和函数式编程习惯来补充主要的 OCaml 参考。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl: riferimento alla sintassi
 Questo documento fornisce un riferimento completo e strutturato alla sintassi per Perl (5.38+). Completa il riferimento principale di Perl concentrandosi su modelli di sintassi esaustivi, espressioni regolari, riferimenti e potenza di elaborazione del testo di Perl.
 ---

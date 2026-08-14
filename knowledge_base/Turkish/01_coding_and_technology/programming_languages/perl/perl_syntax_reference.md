@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — Sözdizimi Referansı
 Bu belge Perl (5.38+) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, düzenli ifadelere, referanslara ve Perl'ün metin işleme gücüne odaklanarak ana Perl referansını tamamlar.
 ---

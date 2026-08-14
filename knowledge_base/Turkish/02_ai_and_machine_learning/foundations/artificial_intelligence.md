@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yapay Zeka
 Yapay zeka, bir insanın yapması durumunda zeka gerektirecek şeyleri yapabilen makineler üretme girişimidir: yüzleri tanımak, konuşmayı anlamak, karar vermek, metin yazmak, oyun oynamak, araba kullanmak, hastalıkları teşhis etmek. Bu alan hesaplamanın kendisi kadar eskidir - Alan Turing "Makineler düşünebilir mi?" diye soruyordu. 1950'de - ancak yeteneklerdeki son patlama (2020'ler), yapay zekayı insanlık tarihindeki en önemli ve tartışmalı teknolojilerden biri haline getirdi.
 ---

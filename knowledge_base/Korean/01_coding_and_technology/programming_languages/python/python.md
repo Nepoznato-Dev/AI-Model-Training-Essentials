@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 파이썬
 Python은 Guido van Rossum이 만들고 1991년에 처음 출시된 고급 해석형 범용 프로그래밍 언어입니다. Python은 상당한 들여쓰기와 일반 영어에 가까운 깔끔한 구문을 통해 코드 가독성을 우선시합니다. Python은 동적으로 유형이 지정되고 가비지 수집되며 절차적 프로그래밍, 객체 지향 프로그래밍, 함수형 프로그래밍을 포함한 여러 프로그래밍 패러다임을 지원합니다.
 오늘날 Python은 AI/ML, 데이터 과학, 과학 컴퓨팅 및 자동화 분야에서 지배적인 언어이면서 동시에 초보자에게도 최고의 언어 중 하나입니다. 이러한 이중 정체성(첫 번째 스크립트를 만들기에는 충분히 단순하고 대규모 언어 모델을 훈련할 만큼 강력함)이 이를 차별화하는 요소입니다.

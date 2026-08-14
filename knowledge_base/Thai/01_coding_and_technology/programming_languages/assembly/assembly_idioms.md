@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # การประกอบ - รูปแบบสำนวนและแนวทางปฏิบัติที่ดีที่สุด
 คู่มือนี้ครอบคลุมถึงรูปแบบสำนวนสำหรับการเขียนโค้ดแอสเซมบลีที่สะอาดและบำรุงรักษาได้ (โฟกัส x86/x64 พร้อมไวยากรณ์ NASM)
 ---

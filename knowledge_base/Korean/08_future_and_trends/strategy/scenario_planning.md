@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 시나리오 기획
 ## 개요
 누구도 미래를 예측할 수 없습니다. 하지만 몇 가지 그럴듯한 미래에 대비할 수는 있습니다. 냉전 시대의 싱크탱크에서 태어나 1970년대 석유 위기 동안 Shell이 ​​완성한 시나리오 계획은 불확실성에 대해 체계적으로 사고하는 방법입니다. 하나의 예측에 베팅하는 대신 상황이 어떻게 전개될지에 대한 일관된 스토리를 구축한 다음 모든 스토리에 대해 결정을 스트레스 테스트합니다. 주요 도메인에 대한 시나리오와 함께 방법론이 작동하는 방식은 다음과 같습니다.

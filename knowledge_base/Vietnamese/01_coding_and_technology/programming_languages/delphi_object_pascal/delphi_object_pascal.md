@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi/Đối tượng Pascal
 Delphi là ngôn ngữ lập trình hướng đối tượng dựa trên Pascal, ban đầu được phát triển bởi Borland (sau này là Embarcadero, nay là Idera). Được phát hành lần đầu tiên vào năm 1995 với tên gọi "Delphi 1", nó được thiết kế để phát triển ứng dụng nhanh chóng (RAD) cho các ứng dụng máy tính để bàn Windows. Ngôn ngữ này có tên chính thức là Object Pascal và Delphi IDE cung cấp trình thiết kế biểu mẫu trực quan, các công cụ cơ sở dữ liệu tích hợp và trình biên dịch mạnh mẽ.
 Delphi là một trong những công cụ phát triển Windows phổ biến nhất vào cuối những năm 1990 và đầu những năm 2000. Mặc dù mức độ phổ biến của nó đã giảm đáng kể nhưng nó vẫn duy trì cơ sở người dùng chuyên dụng, đặc biệt là trong các ứng dụng máy tính để bàn dành cho doanh nghiệp, giao diện người dùng cơ sở dữ liệu và bảo trì hệ thống cũ. Modern Delphi (12/11) hỗ trợ phát triển đa nền tảng cho Windows, macOS, iOS và Android thông qua khung FireMonkey (FMX).

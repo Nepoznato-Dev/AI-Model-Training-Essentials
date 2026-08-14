@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Finance and Investing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tài chính và Đầu tư
 ## Nguyên tắc cơ bản về tài chính cá nhân
 ### Khái niệm cơ bản về lập kế hoạch tài chính

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cloud Architecture
 
 Cloud computing has fundamentally changed how organisations build, deploy, and scale software. Instead of buying and maintaining physical servers, you can provision computing resources on demand, pay for what you use, and scale globally in minutes. This file covers the core concepts, architecture patterns, services, and best practices you need to know.

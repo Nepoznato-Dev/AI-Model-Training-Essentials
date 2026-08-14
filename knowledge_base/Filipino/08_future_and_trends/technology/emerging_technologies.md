@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Umuusbong na Teknolohiya
 ## Pangkalahatang-ideya
 Ang ilang partikular na teknolohiya ay lumilikha ng ganap na bagong mga kategorya ng kakayahan sa halip na unti-unting pagpapabuti ng mga umiiral na. Ang Quantum computing ay naglalayong lutasin ang mga problema na aabutin ng mga klasikal na makina ng millennia. Ang fusion energy ay nag-aalok ng posibilidad ng halos walang limitasyong malinis na kapangyarihan. Ang mga interface ng utak-computer ay nagtulay sa isip at makina. Binibigyang-daan ng synthetic biology ang muling pagsulat ng biological code. Ang mga sumusunod na seksyon ay naglalarawan kung saan nakatayo ang bawat isa sa mga hangganang ito ngayon at kung saan ang kasalukuyang mga uso ay nagpapahiwatig na ito ay patungo.

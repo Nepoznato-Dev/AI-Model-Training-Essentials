@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #एआई और एलएलएम विफलताएं
 यह दस्तावेज़ एआई और बड़े भाषा मॉडल सिस्टम में सामान्य विफलता मोड को समेकित करता है, जिसमें मतिभ्रम, गलत सूचना, तर्क त्रुटियां और शीघ्र-संबंधित मुद्दे शामिल हैं।
 ---

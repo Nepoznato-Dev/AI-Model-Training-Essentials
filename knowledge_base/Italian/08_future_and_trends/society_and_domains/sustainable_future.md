@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Futuro sostenibile
 ## Panoramica
 La domanda non è più *se* il mondo ha bisogno di passare a un’economia sostenibile, ma *quanto velocemente* e *chi guida*. L’energia rinnovabile è oggi la fonte di energia più economica nella maggior parte dei mercati. I principi dell’economia circolare si stanno spostando da un concetto di nicchia a una strategia aziendale. Le città stanno ripensando tutto, dai trasporti ai rifiuti. E la corsa verso lo zero netto sta rimodellando i settori, dall’energia alla finanza. Ecco come si presenta il futuro sostenibile attraverso quattro dimensioni chiave.

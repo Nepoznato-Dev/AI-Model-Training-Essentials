@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису TypeScript. Он дополняет основной справочник по TypeScript, уделяя особое внимание системе типов, универсальным шаблонам, служебным типам и расширенному программированию на уровне типов.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Generative AI Deep Dive
 Tumutukoy ang Generative AI sa mga modelong gumagawa ng bagong content — mga larawan, text, audio, video, code — sa halip na pag-uuri o hulaan lang ang umiiral na data. Habang ang malalaking modelo ng wika ay nakakakuha ng karamihan ng atensyon, ang generative AI landscape ay mas malawak. Sinasaklaw ng file na ito ang mga arkitektura, diskarte, at trade-off sa likod ng mga modernong generative system, mula sa mga modelo ng pagsasabog hanggang sa variational na autoencoders hanggang sa mga flow model.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Konfigurasi Saluran CI/CD
 Pipeline Continuous Integration (CI) dan Continuous Deployment (CD) mengotomatiskan proses pembuatan, pengujian, dan penerapan perangkat lunak. Referensi ini mencakup pola konfigurasi untuk platform CI/CD paling populer: GitHub Actions, GitLab CI, dan prinsip desain pipeline umum.
 ---

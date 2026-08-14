@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # सुरक्षा कमजोरियाँ
 यह दस्तावेज़ सॉफ्टवेयर विकास में सामान्य सुरक्षा कमजोरियों को समेकित करता है, जिसमें इंजेक्शन हमले, असुरक्षित कोड प्रथाएं और सुरक्षा गलतियाँ शामिल हैं।
 ---

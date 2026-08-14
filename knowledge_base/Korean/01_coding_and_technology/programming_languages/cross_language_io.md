@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — I/O & File Operations"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 언어 간 비교 - I/O 및 파일 작업
 ## 콘솔 출력
 | 언어 | 표준 출력으로 인쇄 |

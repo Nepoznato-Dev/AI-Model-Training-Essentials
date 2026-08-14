@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ローコードおよびプラットフォーム エンジニアリング
 ローコード プラットフォームを使用すると、通常はドラッグ アンド ドロップ インターフェイス、ビジュアル ワークフロー、事前構築されたコネクタを通じて、最小限の手書きコードでアプリケーションを構築できます。プラットフォーム エンジニアリングは、製品チームがインフラストラクチャ、CI/CD、および運用ツールを簡単にセルフサービスできるようにする内部開発者プラットフォーム (IDP) を構築する分野です。どちらの傾向も、ソフトウェアの需要とそれを構築できる開発者の供給との間のギャップという同じ問題への対応です。
 ---

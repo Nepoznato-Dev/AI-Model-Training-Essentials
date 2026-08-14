@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # প্রোলগ — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি প্রোলগ ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, বাস্তবায়ন এবং অবকাঠামো কভার করে।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # স্ক্যালা — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অনুশীলন
 এই নির্দেশিকাটি পরিষ্কার, কার্যকরী স্কালা 3 কোড লেখার জন্য বাহাদুরিমূলক নিদর্শন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

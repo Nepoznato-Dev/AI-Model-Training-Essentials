@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #C++ — الأخطاء الشائعة والأنماط المضادة
 يقوم هذا المستند بفهرسة الأخطاء والفخاخ والأنماط المضادة الأكثر شيوعًا في لغة C++. يُظهر كل إدخال النهج غير الصحيح، ويشرح سبب فشله، ويقدم الحل الصحيح. توفر لغة C++ الحديثة (C++11/14/17/20) أدوات لتجنب معظم المخاطر الكلاسيكية.
 ---

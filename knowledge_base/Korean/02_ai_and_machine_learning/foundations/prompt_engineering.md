@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 프롬프트엔지니어링
 프롬프트 엔지니어링은 언어 모델에서 가능한 최상의 출력을 얻기 위해 입력 프롬프트를 설계, 개선 및 최적화하는 방법입니다. 이는 예술이자 과학이며, 미세 조정 없이 LLM 동작을 제어하기 위한 기본 인터페이스입니다.
 ---

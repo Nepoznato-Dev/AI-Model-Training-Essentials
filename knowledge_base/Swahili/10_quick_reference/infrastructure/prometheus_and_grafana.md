@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prometheus na Grafana
 Prometheus ni zana huria ya ufuatiliaji na arifa iliyoundwa kwa ajili ya kutegemewa na kubadilika. Grafana ndio jukwaa linaloongoza la chanzo-wazi la kuibua data ya mfululizo wa saa. Kwa pamoja, huunda safu maarufu ya ufuatiliaji kwa miundombinu ya kisasa na programu. Prometheus hukusanya na kuhifadhi metrics; Grafana anazionyesha kwenye dashibodi.
 ---

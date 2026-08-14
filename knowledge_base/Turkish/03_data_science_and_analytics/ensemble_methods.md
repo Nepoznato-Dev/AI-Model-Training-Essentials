@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Topluluk Yöntemleri
 Topluluk yöntemleri, tek bir modelin tek başına başarabileceğinden daha iyi tahminler üretmek için birden fazla makine öğrenimi modelini birleştirir. Sezgi basittir: Her biri bir dereceye kadar doğru olan ancak farklı hatalar yapan birkaç modeliniz varsa, bunların tahminlerini birleştirmek bireysel hataları iptal edecek ve daha sağlam bir sonuç üretecektir. Topluluklar, çoğu rekabetçi makine öğrenimi çözümünün arkasında yer alır ve üretim sistemlerindeki en güvenilir tekniklerden bazıları olmaya devam etmektedir.
 ---

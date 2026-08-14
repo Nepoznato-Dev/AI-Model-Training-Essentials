@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الفيزياء
 تطرح الفيزياء السؤال الأكثر أهمية في العلم: كيف تتصرف المادة والطاقة؟ كل شيء آخر - الكيمياء والأحياء والهندسة - يعتمد على الإجابات. تتراوح الفيزياء من المقياس دون الذري (ميكانيكا الكم) إلى المقياس الكوني (النسبية العامة)، ومبادئها تدعم جميع العلوم الطبيعية الأخرى.
 ---

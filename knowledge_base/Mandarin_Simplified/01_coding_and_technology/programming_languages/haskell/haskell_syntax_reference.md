@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — 语法参考
 本文档为 Haskell (GHC 9.x) 提供了全面、结构化的语法参考。它通过关注详尽的语法模式、类型系统、单子、惰性求值和函数式编程习惯来补充主要的 Haskell 参考。
 ---

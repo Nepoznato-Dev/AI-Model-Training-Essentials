@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # پرولوگ - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ پرولوگ ایکو سسٹم میں ضروری ٹولز، نفاذ، اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

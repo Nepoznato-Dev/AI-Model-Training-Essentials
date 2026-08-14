@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # テクノロジーとコンピューティング
 携帯電話、車、冷蔵庫、医療機器、現代社会を運営するインフラストラクチャなど、コンピューティングはあらゆる場所に存在します。プログラマーでなくても、すべての仕組みを理解することができます。このファイルには、コンピューターとは何か、インターネットがどのように機能するか、ソフトウェアがどのように構築されるか、デジタル世界を形作る概念などの基本事項が含まれています。
 > **さらに詳しく知りたいですか?** このファイルには大まかな概要が記載されています。トピックの詳細については、[`01_coding_and_technology/`](../01_coding_and_technology/)の専用ファイル (、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)、およびを含む) を参照してください。

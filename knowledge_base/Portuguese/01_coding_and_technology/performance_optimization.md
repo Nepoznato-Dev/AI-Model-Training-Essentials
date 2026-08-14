@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Otimização de desempenho
 A otimização de desempenho é a prática de tornar o software mais rápido — reduzindo os tempos de resposta, aumentando o rendimento, diminuindo o uso de memória e eliminando gargalos. É uma das habilidades mais impactantes que um desenvolvedor pode ter, porque software lento perde usuários, desperdiça recursos e frustra a todos. Mas também é um dos erros mais comuns, com os desenvolvedores otimizando as coisas erradas com base na intuição e não em evidências.
 ---

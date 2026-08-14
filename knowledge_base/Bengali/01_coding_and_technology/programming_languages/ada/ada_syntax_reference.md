@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # অ্যাডা - সিনট্যাক্স রেফারেন্স
 এই নথিটি Ada (2012/2022) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, টাস্কিং, সুরক্ষিত বস্তু, জেনেরিক, এবং নিরাপত্তা-সমালোচনামূলক প্রোগ্রামিং এর উপর ফোকাস করে প্রধান অ্যাডা রেফারেন্সের পরিপূরক।
 ---

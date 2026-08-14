@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جغرافیہ اور جغرافیائی سیاست
 جغرافیہ تقدیر کی تشکیل کرتا ہے۔ پہاڑوں، دریاؤں اور قدرتی وسائل کے محل وقوع نے تجارتی راستوں کا تعین کیا ہے، جنگوں کو جنم دیا ہے، اور صدیوں تک تہذیبوں کی تعمیر کی ہے۔ آج، جغرافیائی سیاست - جغرافیہ، طاقت اور سیاست کا باہمی تعامل - یہ سمجھنے کے لیے ضروری ہے کہ قومیں اپنے طرز عمل کا برتاؤ کیوں کرتی ہیں۔
 ---

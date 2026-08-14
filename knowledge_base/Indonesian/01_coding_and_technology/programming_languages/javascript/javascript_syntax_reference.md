@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis terstruktur dan komprehensif untuk JavaScript. Ini melengkapi referensi JavaScript utama dengan berfokus pada pola sintaksis yang lengkap, tabel operator, dan mekanisme internal.
 ---

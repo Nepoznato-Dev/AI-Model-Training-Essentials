@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 実践的なライフスキル
 学校では微積分は教えますが、税金の申告方法、バランスの取れた食事の作り方、家の維持方法などはほとんど教えてくれません。これらは、日々の生活の質に影響を与える実践的な能力であり、あなたを自給自足し、経済的に立ち直る力を与える種類の知識です。このファイルには、要点がぎっしり詰まったリファレンスが含まれています。
 ---

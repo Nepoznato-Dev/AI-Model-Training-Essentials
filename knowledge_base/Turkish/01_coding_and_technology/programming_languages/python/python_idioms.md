@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, Pythonic kod yazmaya yönelik deyimsel kalıpları ve en iyi uygulamaları kapsar.
 ---

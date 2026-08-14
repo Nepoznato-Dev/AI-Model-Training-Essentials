@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform at Infrastructure bilang Code
 Ang Terraform ay ang pinakalawak na ginagamit na tool na Infrastructure bilang Code (IaC) — hinahayaan ka nitong tukuyin ang cloud infrastructure (mga server, database, network, pahintulot) sa mga declarative configuration file na maaaring ma-bersyon, suriin, masuri, at awtomatiko. Sa halip na mag-click sa cloud console, magsusulat ka ng code na naglalarawan sa gustong estado ng iyong imprastraktura, at tinutukoy ng Terraform kung ano ang mga pagbabagong gagawin.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matumizi ya zana
 ## Git - Udhibiti wa Toleo
 Git ni mfumo wa kudhibiti toleo uliosambazwa. Kila msanidi ana nakala kamili ya historia ya hazina kwenye mashine yao ya karibu.

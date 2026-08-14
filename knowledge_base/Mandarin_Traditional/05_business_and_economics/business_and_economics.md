@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 商業和經濟
 每個銷售產品或服務的組織都是一個企業，每個生產和分配商品的社會都是一個經濟體。無論您是在經營自由工作、在公司工作、試圖了解新聞，還是只是弄清楚金錢如何在世界上流動，本文件中的概念都適用。
 ---

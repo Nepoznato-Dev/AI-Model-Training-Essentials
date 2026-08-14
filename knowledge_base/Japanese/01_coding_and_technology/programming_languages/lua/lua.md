@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ルア
 Lua は、アプリケーションを拡張するために設計された軽量の埋め込み可能なスクリプト言語です。 Lua は、ブラジルのリオデジャネイロ教皇庁カトリック大学で 1993 年に作成された、最も高速なスクリプト言語の 1 つです。フットプリントが小さく (インタプリタは約 120 KB)、シンプルであるため、ゲーム開発スクリプト、組み込みシステム、構成に最適です。
 Lua は、Roblox (月間ユーザー数 2 億人以上のゲーム プラットフォーム)、World of Warcraft アドオン、および多数のゲーム エンジン (Love2D、Defold、Corona SDK) の背後にあるスクリプト言語として最もよく知られています。 Nginx (OpenResty)、Redis、Wireshark でも使用されます。

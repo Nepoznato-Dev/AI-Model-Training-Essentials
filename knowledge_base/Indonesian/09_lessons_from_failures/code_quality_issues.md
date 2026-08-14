@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Masalah Kualitas Kode
 Dokumen ini menggabungkan masalah kualitas kode yang umum termasuk nama variabel yang buruk, dokumentasi yang buruk, kode spaghetti, ketergantungan melingkar, dan masalah pemeliharaan lainnya.
 ---

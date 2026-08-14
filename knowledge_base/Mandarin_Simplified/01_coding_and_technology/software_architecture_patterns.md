@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 软件架构模式
 架构是关于系统如何组织的一组结构决策——它有哪些组件、它们如何通信以及职责所在。良好的架构使系统易于理解、修改和扩展。糟糕的架构会让每一次改变都变得困难。该文件涵盖了主要模式、何时使用每种模式以及所涉及的权衡。
 ---

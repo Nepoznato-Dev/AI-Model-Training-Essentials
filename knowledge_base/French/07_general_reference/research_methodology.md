@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Méthodologie de recherche
 La méthodologie de recherche est l’approche systématique visant à étudier des questions, à tester des hypothèses et à générer des connaissances fiables. Que vous meniez des expériences scientifiques, des enquêtes en sciences sociales, des analyses commerciales ou des recherches universitaires, la méthodologie que vous choisissez détermine si vos résultats sont crédibles, reproductibles et utiles. Une étude bien conçue produit des résultats fiables ; un système mal conçu produit du bruit – ou pire, de fausses réponses confiantes.
 ---

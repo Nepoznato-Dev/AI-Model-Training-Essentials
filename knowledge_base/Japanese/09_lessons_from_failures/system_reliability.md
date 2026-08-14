@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # システムの信頼性の問題
 この文書には、メモリ リーク、競合状態、同時プログラミング エラー、システム設計の失敗などの信頼性の問題がまとめられています。
 ---

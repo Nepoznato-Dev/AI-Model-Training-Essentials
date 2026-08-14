@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linux Commands Quick Reference"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # লিনাক্স কমান্ড দ্রুত রেফারেন্স
 সিস্টেম নেভিগেশন এবং প্রশাসনের জন্য অপরিহার্য লিনাক্স/ইউনিক্স কমান্ড।
 ---

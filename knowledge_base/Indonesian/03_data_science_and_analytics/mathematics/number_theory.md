@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teori Angka
 Teori bilangan adalah studi tentang bilangan bulat — bilangan bulat dan sifat-sifatnya. Gauss menyebutnya "ratu matematika". Meskipun mempelajari objek paling sederhana (1, 2, 3, ...), teori bilangan menghasilkan beberapa masalah terdalam dan tersulit dalam seluruh matematika. Saat ini, ini mendasari kriptografi modern, algoritma hashing, kode koreksi kesalahan, dan pembuatan angka acak.
 ---

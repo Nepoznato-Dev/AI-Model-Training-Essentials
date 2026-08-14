@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Maadili ya AI na Utawala
 Mifumo ya AI sio upande wowote. Huakisi data waliyofunzwa, maadili ya waundaji wao, na motisha za mashirika yanayozitumia. Maadili ni kuhusu kuuliza sio tu "tunaweza kujenga hii?" lakini "tunapaswa?" Utawala unahusu kuunda miundo - sheria, viwango, mashirika ya uangalizi - ambayo yanahakikisha AI inatengenezwa na kutumika kwa uwajibikaji. Faili hii inashughulikia vipimo muhimu vya maadili vya AI na mifumo ya utawala inayojitokeza ili kuzishughulikia.
 ---

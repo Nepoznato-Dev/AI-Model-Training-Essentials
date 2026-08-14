@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für Prolog. Es ergänzt die Hauptreferenz von Prolog, indem es sich auf ausführliche Syntaxmuster, Vereinheitlichung, Backtracking, DCGs und logische Programmiersprachen konzentriert.
 ---

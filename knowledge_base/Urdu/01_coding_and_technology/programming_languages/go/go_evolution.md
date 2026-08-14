@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جاؤ - ورژن کی تاریخ اور ارتقاء
 ## ٹائم لائن
 | ورژن | ریلیز کی تاریخ | کلیدی تھیم |

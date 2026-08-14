@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Các lỗi thường gặp & Mẫu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và mẫu chống phổ biến nhất trong SQL kèm theo các bản sửa lỗi.
 ---

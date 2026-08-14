@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # استفاده از ابزار
 ## Git - کنترل نسخه
 Git یک سیستم کنترل نسخه توزیع شده است. هر توسعه دهنده یک نسخه کامل از تاریخچه مخزن را در ماشین محلی خود دارد.

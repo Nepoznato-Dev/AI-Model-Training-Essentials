@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Erros Comuns e Antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns em Ruby. Cada entrada mostra a abordagem incorreta, explica por que ela falha e fornece a solução correta.
 ---

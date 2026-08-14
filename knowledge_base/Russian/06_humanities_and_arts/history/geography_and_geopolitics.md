@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # География и геополитика
 География формирует судьбу. Расположение гор, рек и природных ресурсов определяло торговые пути, вызывало войны и создавало цивилизации на протяжении тысячелетий. Сегодня геополитика – взаимодействие географии, власти и политики – остается важной для понимания того, почему страны ведут себя именно так.
 ---

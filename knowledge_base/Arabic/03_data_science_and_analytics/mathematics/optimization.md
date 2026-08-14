@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تحسين
 التحسين هو رياضيات إيجاد أفضل حل من مجموعة من الحلول الممكنة. فهو يسأل: بالنظر إلى الوظيفة والقيود، ما المدخلات التي تقلل (أو تزيد) المخرجات؟ التحسين هو محرك التعلم الآلي - تدريب النموذج يعني تقليل وظيفة الخسارة. ويظهر في بحوث العمليات، والاقتصاد، والتصميم الهندسي، وفي كل المجالات الكمية تقريبًا.
 ---

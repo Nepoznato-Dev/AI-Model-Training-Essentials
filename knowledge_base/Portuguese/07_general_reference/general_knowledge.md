@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Conhecimento Geral
 Este arquivo é uma coleção de fatos e conceitos que surgem regularmente em conversas, notícias, educação e vida diária. Pense nisso como um conhecimento prévio – o tipo de coisa que ajuda você a entender o que está lendo, ouvindo ou vivenciando.
 ---

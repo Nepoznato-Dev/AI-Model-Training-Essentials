@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 델파이/오브젝트 파스칼 — 구문 참조
 이 문서는 Delphi/Object Pascal에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 구문 패턴, OOP 기능, 제네릭, 레코드 및 언어 관용구에 중점을 두어 주요 Delphi 참조를 보완합니다.
 ---

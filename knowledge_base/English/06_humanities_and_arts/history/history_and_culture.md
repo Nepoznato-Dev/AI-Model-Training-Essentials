@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # History and Culture
 
 History is the story of what humans have done — the successes, catastrophes, inventions, and ideas that shaped the world we live in today. It is not just a list of dates and names. Understanding history helps you understand why borders are where they are, why people speak the languages they speak, why some countries are wealthy while others are not, and why conflicts that seem ancient are still burning.

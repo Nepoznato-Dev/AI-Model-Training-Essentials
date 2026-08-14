@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Algebra abstrakcyjna
 Algebra abstrakcyjna bada struktury algebraiczne — zbiory wyposażone w operacje podlegające określonym regułom. Zamiast pracować z liczbami, algebra abstrakcyjna działa z dowolnymi obiektami spełniającymi aksjomaty. Ta ogólność jest potężna: twierdzenie udowodnione dla „grup” ma zastosowanie jednocześnie do liczb całkowitych, symetrii, macierzy, permutacji i stanów kwantowych. Algebra abstrakcyjna stanowi podstawę kryptografii, kodów korygujących błędy, obliczeń kwantowych i analizy symetrii stosowanej w całej fizyce.
 ---

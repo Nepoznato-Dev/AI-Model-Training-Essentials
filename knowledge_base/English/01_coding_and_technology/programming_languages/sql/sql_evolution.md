@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — Version History & Evolution
 
 ## Timeline

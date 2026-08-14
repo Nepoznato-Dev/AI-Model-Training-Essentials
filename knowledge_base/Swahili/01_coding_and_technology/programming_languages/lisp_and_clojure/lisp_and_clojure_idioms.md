@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp & Clojure — Miundo ya nahau na Mazoea Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya Lisp na Clojure.
 ---

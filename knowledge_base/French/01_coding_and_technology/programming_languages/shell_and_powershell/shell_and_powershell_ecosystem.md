@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Guide de l'écosystème et des outils
 Ce guide couvre les outils, frameworks et infrastructures essentiels pour les scripts shell (Bash/Zsh) et PowerShell.
 ---

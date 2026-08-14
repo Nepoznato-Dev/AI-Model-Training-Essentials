@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz Ruby kod yazmaya yönelik deyimsel kalıpları ve en iyi uygulamaları kapsar.
 ---

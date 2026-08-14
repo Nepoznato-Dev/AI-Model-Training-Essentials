@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Akili Bandia
 Akili ya Bandia ni jaribio la kuunda mashine zinazoweza kufanya mambo ambayo yangehitaji akili ikiwa mwanadamu angeyafanya: kutambua nyuso, kuelewa usemi, kufanya maamuzi, kuandika maandishi, kucheza michezo, kuendesha magari, kutambua magonjwa. Sehemu ni ya zamani kama kompyuta yenyewe - Alan Turing alikuwa akiuliza "Je, mashine zinaweza kufikiria?" mnamo 1950 - lakini mlipuko wa hivi karibuni wa uwezo (miaka ya 2020) umefanya AI kuwa moja ya teknolojia muhimu na iliyoshindaniwa katika historia ya mwanadamu.
 ---

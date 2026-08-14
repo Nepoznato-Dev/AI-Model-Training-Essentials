@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure - نحوی حوالہ
 یہ دستاویز Common Lisp اور Clojure کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ ایس ایکسپریشنز، میکروز، مستقل ڈیٹا ڈھانچے، اور فنکشنل پروگرامنگ پیٹرن پر توجہ مرکوز کرکے مرکزی Lisp/Clojure حوالہ کی تکمیل کرتا ہے۔
 ---

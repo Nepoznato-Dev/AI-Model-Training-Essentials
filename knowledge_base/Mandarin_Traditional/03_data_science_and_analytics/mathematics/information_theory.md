@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 資訊理論
 資訊理論由克勞德·香農 (Claude Shannon) 於 1948 年創立，對資訊本身進行量化。一則訊息能告訴你多少訊息？您可以將資料壓縮到什麼程度？在吵雜的頻道上您的通訊速度有多快？這些問題都有精確的數學答案。除了通訊之外，資訊理論已成為機器學習的基礎——交叉熵是分類的預設損失函數，KL 散度衡量分佈相似性，互資訊驅動特徵選擇。
 ---

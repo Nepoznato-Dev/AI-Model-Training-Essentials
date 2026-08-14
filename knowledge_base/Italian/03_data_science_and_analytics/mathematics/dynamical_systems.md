@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sistemi Dinamici
 Un **sistema dinamico** descrive come uno stato si evolve nel tempo secondo una regola fissa. Dalle orbite planetarie alle dinamiche delle popolazioni, dai modelli meteorologici all’addestramento delle reti neurali, la teoria dei sistemi dinamici fornisce il linguaggio e gli strumenti per comprendere come cambiano le cose. Questo file tratta le equazioni differenziali ordinarie (ODE), le equazioni differenziali parziali (PDE), l'analisi di stabilità, il caos e le biforcazioni.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Systemy rekomendacji
 Systemy rekomendacji przewidują, co użytkownik będzie chciał w następnej kolejności zobaczyć, kupić lub z czym wejść w interakcję. Zasilają kanały treści w mediach społecznościowych, sugestie produktów w witrynach e-commerce, wybór filmów na platformach streamingowych i wyniki wyszukiwania. Mimo że są niewidoczne dla większości użytkowników, należą do systemów sztucznej inteligencji o największym wpływie komercyjnym na świecie — Netflix szacuje, że jego silnik rekomendacji pozwala zaoszczędzić ponad 1 miliard dolarów rocznie, zmniejszając odpływ abonentów.
 ---

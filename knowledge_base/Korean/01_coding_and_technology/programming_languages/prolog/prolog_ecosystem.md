@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 프롤로그 — 생태계 및 툴링 가이드
 이 가이드는 Prolog 생태계의 필수 도구, 구현 및 인프라를 다룹니다.
 ---

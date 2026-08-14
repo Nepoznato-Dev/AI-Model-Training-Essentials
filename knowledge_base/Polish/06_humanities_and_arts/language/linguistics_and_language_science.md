@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lingwistyka i nauka o języku
 Lingwistyka to naukowe badanie języka – jego struktury, znaczenia, użycia, nabywania i ewolucji. Język jest cechą definiującą komunikację międzyludzką: jest nieskończenie produktywny (osoby mówiące mogą tworzyć i rozumieć zdania, z którymi nigdy wcześniej się nie spotkały), jest przekazywany kulturowo (jest wyuczony, a nie czysto wrodzony) i stale ewoluuje. Zrozumienie, jak działa język, jest istotne dla każdego, kto tworzy technologie językowe, uczy, tłumaczy lub pracuje nad skuteczniejszą komunikacją.
 ---

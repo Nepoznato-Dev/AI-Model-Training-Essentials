@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # হাসকেল — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অনুশীলন
 এই নির্দেশিকাটি পরিচ্ছন্ন, ইডিওম্যাটিক হাসকেল কোড লেখার জন্য ইডিওম্যাটিক প্যাটার্ন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java
 Ang Java ay isang statically typed, object-oriented programming language na nilikha ni James Gosling sa Sun Microsystems at inilabas noong 1995. Ang pilosopiya ng disenyo nito — "write once, run anywhere" (WORA) — ay nakakamit sa pamamagitan ng Java Virtual Machine (JVM), na nagbibigay-daan sa pinagsama-samang Java code na tumakbo sa anumang platform na may pagpapatupad ng JVM. Ang Java ay isa sa pinakamalawak na ginagamit na mga programming language sa kasaysayan, pinapagana ang mga backend ng enterprise, Android app, malaking data system, at mga serbisyong pinansyal.
 Sa kabila ng halos 30 taong gulang, ang Java ay patuloy na nagbabago. Kasama sa modernong Java (mga bersyon 17+) ang mga talaan, mga selyadong klase, pagtutugma ng pattern, mga virtual na thread, at isang lumalagong ecosystem na nakikipagkumpitensya sa mga mas bagong wika.

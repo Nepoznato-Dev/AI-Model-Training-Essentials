@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Musiktheorie und Akustik
 Musiktheorie ist die Untersuchung der Funktionsweise von Musik – der Muster, Strukturen und Prinzipien, die einige Klangkombinationen angenehm oder bedeutungsvoll und andere unharmonisch oder chaotisch machen. Akustik ist die Physik des Schalls – wie sich Schwingungen durch die Luft ausbreiten, wie sie erzeugt und wahrgenommen werden. Zusammen erklären sie, warum ein C-Dur-Akkord fröhlich klingt, warum eine Moll-Tonart traurig wirkt, wie Konzertsäle gestaltet sind und warum Ihr Lieblingslied Ihnen Gänsehaut bereitet.
 ---

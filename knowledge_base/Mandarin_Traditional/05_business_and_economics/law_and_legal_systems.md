@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 法律與法律體系
 法律是社會同意透過其機構執行的一套規則。它與道德不同——你可以做一些合法但不道德的事情，也可以做一些非法但道德上合理的事情。法律的存在是為了提供可預測性：規定什麼是允許的，什麼是禁止的，以及違反規則時會發生什麼。沒有它，爭端就靠權力來解決。有了它，爭議就可以透過程序解決。
 本文件涵蓋了主要法律體系、主要法律分支以及影響法律體系在實踐中如何運作的概念。

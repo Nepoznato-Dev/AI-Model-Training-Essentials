@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Сборка — идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны для написания чистого, удобного в сопровождении ассемблерного кода (фокус x86/x64 с синтаксисом NASM).
 ---

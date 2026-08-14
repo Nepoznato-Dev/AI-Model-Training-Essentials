@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 역사와 문화
 역사는 인간이 행한 일, 즉 오늘날 우리가 살고 있는 세상을 형성한 성공, 재앙, 발명, 아이디어에 대한 이야기입니다. 그것은 단지 날짜와 이름의 목록이 아닙니다. 역사를 이해하면 국경이 왜 존재하는지, 왜 사람들이 자신이 사용하는 언어를 사용하는지, 왜 일부 국가는 부유한 반면 다른 국가는 그렇지 않은지, 오래전처럼 보이는 갈등이 여전히 타오르고 있는 이유를 이해하는 데 도움이 됩니다.
 이 파일은 최초의 문명부터 현재까지 세계사의 주요 기간과 주제를 다루고 있습니다.

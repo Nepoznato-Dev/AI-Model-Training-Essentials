@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mabadiliko ya idadi ya watu
 ## Muhtasari
 Demografia ni hatima - au angalau zina wimbo nayo kwa nguvu. Idadi ya watu duniani inazeeka haraka, inahamia katika mifumo mipya, inakusanyika katika miji kwa viwango ambavyo havijawahi kushuhudiwa, na kugawanyika kwa misingi ya vizazi vinavyounda kila kitu kutoka kwa tabia ya kupiga kura hadi tabia ya watumiaji. Mabadiliko haya yatafanyika kwa miongo kadhaa, lakini athari zake tayari zinaonekana. Hapa kuna mienendo minne mikubwa na inamaanisha nini.

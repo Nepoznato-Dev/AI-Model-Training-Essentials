@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yapay Zeka Güvenliği ve Hizalama
 Yapay zeka güvenliği, gerçekte yapmalarını istediğimiz şeyi yapan ve açıkça göz ardı edilmese bile istemediğimiz şeyleri yapmayan yapay zeka sistemlerinin nasıl oluşturulacağı üzerine yapılan çalışmadır. Hizalama, yapay zeka sistemlerinin hedef ve davranışlarının insan niyetleriyle eşleşmesini sağlamanın özel zorluğudur. Yapay zeka sistemleri daha yetenekli hale geldikçe bu sorular akademik meraklardan pratik mühendislik gereksinimlerine doğru kayıyor.
 ---

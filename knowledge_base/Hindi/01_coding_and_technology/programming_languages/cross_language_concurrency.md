@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # क्रॉस-लैंग्वेज तुलना - समवर्ती और समानांतरवाद
 ## समवर्ती मॉडल अवलोकन
 | भाषा | मॉडल | मुख्य तंत्र | शारेड मेमोरी? |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — Tham chiếu cú ​​pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho Perl (5.38+). Nó bổ sung cho tham chiếu Perl chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, biểu thức chính quy, tham chiếu và khả năng xử lý văn bản của Perl.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Mga Karaniwang Pagkakamali at Anti-Pattern
 Ang dokumentong ito ay katalogo ng mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa Lua na may mga pagwawasto.
 ---

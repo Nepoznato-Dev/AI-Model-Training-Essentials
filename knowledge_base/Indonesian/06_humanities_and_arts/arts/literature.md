@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Sastra
 Sastra adalah catatan pemikiran, emosi, dan pengalaman umat manusia yang paling abadi. Dari epos lisan peradaban kuno hingga novel era digital saat ini, setiap karya berbincang dengan apa yang terjadi sebelumnya. Memahami genre, gerakan, dan teknik sastra memberi Anda sudut pandang yang lebih kaya dalam membaca — dan untuk memahami budaya yang menghasilkan karya-karya ini.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir — Справочник по синтаксису
 Этот документ предоставляет исчерпывающий структурированный справочник по синтаксису Erlang и Elixir. Он дополняет основной справочник, уделяя особое внимание сопоставлению шаблонов, управлению процессами, поведению OTP и шаблонам отказоустойчивой системы.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Álgebra abstracta
 El álgebra abstracta estudia estructuras algebraicas: conjuntos equipados con operaciones que siguen reglas específicas. En lugar de trabajar con números, el álgebra abstracta trabaja con cualquier objeto que satisfaga los axiomas. Esta generalidad es poderosa: un teorema demostrado para "grupos" se aplica simultáneamente a números enteros, simetrías, matrices, permutaciones y estados cuánticos. El álgebra abstracta sustenta la criptografía, los códigos de corrección de errores, la computación cuántica y el análisis de simetría utilizado en toda la física.
 ---

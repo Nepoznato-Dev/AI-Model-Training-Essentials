@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Etica e privacy dei dati
 L’etica dei dati è lo studio di come la raccolta, l’analisi e la distribuzione dei dati influiscono sui diritti, sull’autonomia e sul benessere delle persone. La privacy è la preoccupazione specifica su chi controlla le informazioni personali e su come vengono condivise. Questi argomenti sono passati dai dibattiti accademici alle notizie in prima pagina: l’applicazione del GDPR, le violazioni dei dati che colpiscono miliardi di utenti e la crescente consapevolezza pubblica che le pratiche relative ai dati delle aziende tecnologiche hanno conseguenze reali per la democrazia, l’uguaglianza e la libertà individuale.
 ---

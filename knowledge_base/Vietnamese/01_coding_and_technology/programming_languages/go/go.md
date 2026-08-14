@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Đi
 Go (thường được gọi là "Golang" theo tên miền ban đầu của nó) là ngôn ngữ lập trình được biên dịch, gõ tĩnh được thiết kế tại Google bởi Robert Griesemer, Rob Pike và Ken Thompson. Nó được phát hành lần đầu tiên vào năm 2012 với mục tiêu rõ ràng là trở thành ngôn ngữ tốt hơn cho lập trình hệ thống - một ngôn ngữ kết hợp hiệu suất của C với năng suất của các ngôn ngữ động như Python. Go được biết đến nhờ tính đơn giản, biên dịch nhanh, tích hợp đồng thời (goroutine và kênh) và công cụ tuyệt vời.
 Go hỗ trợ phần lớn hệ sinh thái cơ sở hạ tầng đám mây: Docker, Kubernetes, Terraform, Prometheus, etcd và máy chủ HTTP của thư viện chuẩn Go đều được viết bằng Go. Nó đã trở thành ngôn ngữ mặc định cho các công cụ phát triển trên nền tảng đám mây, dịch vụ vi mô và CLI.

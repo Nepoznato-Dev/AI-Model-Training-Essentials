@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # المقارنة بين اللغات — معالجة الأخطاء
 ## نظرة عامة على نماذج معالجة الأخطاء
 | نموذج | اللغات | آلية |

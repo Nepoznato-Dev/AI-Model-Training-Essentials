@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Apprentissage des sciences et de la pédagogie
 La science de l’apprentissage est l’étude interdisciplinaire de la façon dont les gens apprennent – ​​en s’appuyant sur la psychologie, les neurosciences, l’éducation et les sciences cognitives. La pédagogie est la pratique et la méthodologie de l'enseignement. Ensemble, ils répondent à des questions pertinentes pour quiconque enseigne, forme, encadre ou conçoit du contenu éducatif : quelles méthodes aident les gens à apprendre efficacement ? Quelles techniques d’étude courantes sont inefficaces ? Comment l’enseignement doit-il être structuré pour une rétention et un transfert optimaux ?
 ---

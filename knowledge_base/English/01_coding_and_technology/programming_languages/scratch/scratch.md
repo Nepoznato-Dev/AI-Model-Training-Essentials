@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch
 
 Scratch is a visual, block-based programming language developed by the MIT Media Lab and first released in 2007. Instead of writing text-based code, users snap together coloured blocks to create programs. Scratch is designed specifically for children ages 8-16 (though learners of all ages use it) to teach fundamental programming concepts — loops, conditionals, variables, events, and functions — without the barrier of syntax errors.

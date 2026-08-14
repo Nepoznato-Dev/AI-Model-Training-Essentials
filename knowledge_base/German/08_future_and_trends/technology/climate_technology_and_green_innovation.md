@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Klimatechnologie und grüne Innovation
 Klimatechnologie umfasst Werkzeuge, Systeme und Innovationen, die darauf abzielen, Treibhausgasemissionen zu reduzieren, sich an den Klimawandel anzupassen und die Weltwirtschaft auf eine nachhaltige Grundlage zu stellen. Es handelt sich wohl um den wichtigsten Technologiebereich des 21. Jahrhunderts – der Unterschied zwischen einer beherrschbaren Erwärmung um 1,5 °C und einer katastrophalen Erwärmung um 3 °C+ hängt weitgehend davon ab, wie schnell diese Technologien in großem Maßstab eingesetzt werden können. Die Herausforderung ist nicht nur wissenschaftlicher, sondern auch wirtschaftlicher, politischer und sozialer Natur.
 ---

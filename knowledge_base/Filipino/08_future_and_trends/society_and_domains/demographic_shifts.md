@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Pagbabago ng Demograpiko
 ## Pangkalahatang-ideya
 Ang mga demograpiko ay tadhana — o hindi bababa sa malakas silang tumutugon dito. Ang populasyon ng mundo ay mabilis na tumatanda, lumilipat sa mga bagong pattern, kumpol-kumpol sa mga lungsod sa hindi pa naganap na mga rate, at naghahati-hati sa mga henerasyong linya na humuhubog sa lahat mula sa pag-uugali sa pagboto hanggang sa mga gawi ng mamimili. Ang mga pagbabagong ito ay gaganap sa loob ng mga dekada, ngunit ang mga epekto nito ay nakikita na. Narito ang apat na malalaking uso at kung ano ang ibig sabihin ng mga ito.

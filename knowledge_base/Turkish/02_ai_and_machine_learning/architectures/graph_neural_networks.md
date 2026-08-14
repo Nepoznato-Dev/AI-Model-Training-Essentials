@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sinir Ağlarının Grafikleri
 Grafik Sinir Ağları (GNN'ler), grafik yapılı veriler (kenarlarla birbirine bağlanan düğüm ağları) üzerinde çalışmak üzere tasarlanmış sinir ağlarıdır. Geleneksel sinir ağları ızgaralar (görüntüler) veya diziler (metin) üzerinde çalışırken, GNN'ler keyfi ilişkisel yapıları yönetir: sosyal ağlar, moleküler grafikler, bilgi grafikleri, yol ağları, öneri grafikleri ve daha fazlası. İlaç keşfi, sahtekarlık tespiti, öneri sistemleri ve kuruluşlar arasındaki ilişkilerin önemli olduğu herhangi bir alan için vazgeçilmez hale geldiler.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Własność intelektualna i innowacje
 Własność intelektualna (IP) odnosi się do wytworów umysłu — wynalazków, dzieł artystycznych, marek, projektów, tajemnic handlowych — które prawo chroni przed nieuprawnionym użyciem. Innowacja to proces przekształcania pomysłów w wartość. Prawo własności intelektualnej ma na celu zrównoważenie dwóch sprzecznych interesów: nagradzania twórców (poprzez nadanie im tymczasowych monopoli) i przynoszenia korzyści społeczeństwu (poprzez zapewnienie ostatecznego bezpłatnego dostępu do wiedzy). Zrozumienie własności intelektualnej jest niezbędne dla każdego, kto tworzy produkty, tworzy treści, prowadzi firmę lub pracuje w badaniach.
 ---

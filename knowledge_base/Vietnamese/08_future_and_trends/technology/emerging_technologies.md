@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Công nghệ mới nổi
 ## Tổng quan
 Một số công nghệ nhất định tạo ra các loại khả năng hoàn toàn mới thay vì cải thiện từng bước những khả năng hiện có. Điện toán lượng tử nhằm mục đích giải quyết các vấn đề mà máy móc cổ điển có thể phải mất hàng thiên niên kỷ. Năng lượng nhiệt hạch mang lại khả năng tạo ra năng lượng sạch gần như vô hạn. Giao diện não-máy tính là cầu nối giữa trí óc và máy móc. Sinh học tổng hợp cho phép viết lại mã sinh học. Các phần sau đây mô tả vị trí của mỗi ranh giới này ngày nay và xu hướng hiện tại cho thấy nó đang hướng tới đâu.

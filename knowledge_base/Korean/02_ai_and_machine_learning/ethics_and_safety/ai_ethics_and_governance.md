@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI 윤리와 거버넌스
 AI 시스템은 중립적이지 않습니다. 여기에는 교육을 받은 데이터, 작성자의 가치, 이를 배포하는 조직의 인센티브가 반영됩니다. 윤리는 단순히 "우리가 이걸 만들 수 있을까?"를 묻는 것이 아닙니다. 하지만 "그럴까요?" 거버넌스는 AI가 책임감 있게 개발되고 사용되도록 보장하는 구조(법률, 표준, 감독 기관)를 만드는 것입니다. 이 파일은 AI의 주요 윤리적 측면과 이를 해결하기 위해 등장하는 거버넌스 프레임워크를 다루고 있습니다.
 ---

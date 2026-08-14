@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Vulnerabilidades de seguridad
 Este documento consolida las vulnerabilidades de seguridad comunes en el desarrollo de software, incluidos ataques de inyección, prácticas de código inseguro y errores de seguridad.
 ---

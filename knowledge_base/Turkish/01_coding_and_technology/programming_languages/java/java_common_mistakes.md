@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge Java'daki en yaygın hataları, tuzakları ve anti-kalıpları kataloglamaktadır. Her giriş yanlış yaklaşımı gösterir, neden başarısız olduğunu açıklar ve doğru çözümü sağlar.
 ---

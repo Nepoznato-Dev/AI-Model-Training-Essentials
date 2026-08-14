@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سکریچ — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ سکریچ ایکو سسٹم میں ضروری ٹولز، ایکسٹینشنز اور وسائل کا احاطہ کرتا ہے۔
 ---

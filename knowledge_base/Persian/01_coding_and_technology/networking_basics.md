@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مبانی شبکه
 یک مرجع عملی برای توسعه دهندگان و sysadmin ها - مفاهیم اصلی، پروتکل ها، دستورات و عیب یابی.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C++ — 生態系與工具指南
 本指南涵蓋了 C++ 生態系統中的基本工具、函式庫和基礎設施。
 ---

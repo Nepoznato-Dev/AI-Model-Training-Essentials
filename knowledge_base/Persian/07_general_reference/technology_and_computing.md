@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فناوری و محاسبات
 محاسبات در همه جا وجود دارد - در تلفن، ماشین، یخچال، دستگاه های پزشکی و زیرساختی که جامعه مدرن را اداره می کند. نیازی نیست که برنامه نویس باشید تا از درک نحوه کارکرد آن بهره مند شوید. این فایل اصول اساسی را پوشش می دهد: رایانه چیست، اینترنت چگونه کار می کند، نرم افزار چگونه ساخته می شود، و مفاهیمی که دنیای دیجیتال را شکل می دهد.
 > **می خواهید عمیق تر بروید؟** این فایل یک نمای کلی است. برای پوشش دقیق هر موضوعی، به فایل‌های اختصاصی در[`01_coding_and_technology/`](../01_coding_and_technology/)- از جمله ، [database systems](../01_coding_and_technology/database_systems.md)، [cloud architecture](../01_coding_and_technology/cloud_architecture.md)، [networking](../01_coding_and_technology/networking_basics.md)، ومراجعه کنید.

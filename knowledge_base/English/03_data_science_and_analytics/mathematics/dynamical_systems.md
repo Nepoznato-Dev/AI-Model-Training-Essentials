@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dynamical Systems
 
 A **dynamical system** describes how a state evolves over time according to a fixed rule. From planetary orbits to population dynamics, from weather patterns to training neural networks, dynamical systems theory provides the language and tools for understanding how things change. This file covers ordinary differential equations (ODEs), partial differential equations (PDEs), stability analysis, chaos, and bifurcations.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Jawa
 Java adalah bahasa pemrograman berorientasi objek yang diketik secara statis yang dibuat oleh James Gosling di Sun Microsystems dan dirilis pada tahun 1995. Filosofi desainnya — "tulis sekali, jalankan di mana saja" (WORA) — dicapai melalui Java Virtual Machine (JVM), yang memungkinkan kode Java yang dikompilasi untuk dijalankan pada platform apa pun yang memiliki implementasi JVM. Java adalah salah satu bahasa pemrograman yang paling banyak digunakan dalam sejarah, mendukung backend perusahaan, aplikasi Android, sistem data besar, dan layanan keuangan.
 Meski usianya hampir 30 tahun, Pulau Jawa terus berkembang. Java modern (versi 17+) mencakup catatan, kelas tersegel, pencocokan pola, rangkaian virtual, dan ekosistem berkembang yang bersaing dengan bahasa-bahasa baru.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Upendeleo wa Kitambuzi na Uongo wa Kimantiki
 Hati hii inaunganisha upendeleo wa utambuzi, makosa ya kimantiki, na hitilafu za kufikiri zinazoathiri ufanyaji maamuzi wa binadamu na matokeo ya mfumo wa AI.
 ---

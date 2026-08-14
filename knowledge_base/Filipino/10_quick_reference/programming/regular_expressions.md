@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Regular Expressions Cheat Sheet
 Ang mga regular na expression (regex) ay mga pattern para sa pagtutugma ng teksto. Ginagamit ang mga ito kahit saan — maghanap at palitan, pagpapatunay ng input, pag-parse ng log, pagkuha ng data, at higit pa. Ito ay isang praktikal na sanggunian, hindi isang aklat-aralin.
 ---

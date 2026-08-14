@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prólogo — Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para Prolog. Complementa la referencia principal de Prolog centrándose en patrones de sintaxis exhaustivos, unificación, retroceso, DCG y modismos de programación lógica.
 ---

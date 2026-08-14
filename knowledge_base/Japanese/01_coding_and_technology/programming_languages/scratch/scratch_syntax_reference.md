@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch — 構文リファレンス
 このドキュメントは、Scratch 3.0 の包括的で構造化された構文リファレンスを提供します。網羅的なブロック カテゴリ、イベント駆動パターン、スプライト管理、クローン作成、および創造的なコーディング技術に焦点を当て、メインの Scratch リファレンスを補完します。
 ---

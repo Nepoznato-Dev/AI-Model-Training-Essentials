@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — Những lỗi thường gặp và các mẫu chống đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong OCaml cùng với các bản sửa lỗi.
 ---

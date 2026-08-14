@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go — Sözdizimi Referansı
 Bu belge Go için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi modellerine, operatör tablolarına ve goroutinlerin, kanalların ve arayüzlerin dahili mekaniğine odaklanarak ana Go referansını tamamlar.
 ---

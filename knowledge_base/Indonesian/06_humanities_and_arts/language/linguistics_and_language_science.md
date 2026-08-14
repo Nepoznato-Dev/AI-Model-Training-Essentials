@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linguistik dan Ilmu Bahasa
 Linguistik adalah studi ilmiah tentang bahasa — struktur, makna, penggunaan, perolehan, dan evolusinya. Bahasa adalah ciri khas komunikasi manusia: bahasa sangat produktif (penutur dapat membuat dan memahami kalimat yang belum pernah mereka temui sebelumnya), bahasa diwariskan secara budaya (dipelajari, bukan bawaan lahir), dan terus berkembang. Memahami cara kerja bahasa relevan bagi siapa pun yang membangun teknologi bahasa, mengajar, menerjemahkan, atau berupaya berkomunikasi dengan lebih efektif.
 ---

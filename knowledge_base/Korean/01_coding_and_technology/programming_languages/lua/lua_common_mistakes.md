@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — 일반적인 실수 및 안티 패턴
 이 문서는 Lua에서 가장 흔히 발생하는 실수, 함정, 안티패턴을 수정 사항과 함께 나열합니다.
 ---

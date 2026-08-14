@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ottimizzazione e distribuzione del modello
 L’addestramento di un modello di intelligenza artificiale di grandi dimensioni è un risultato significativo, ma la sua implementazione efficiente è l’ambito in cui è richiesta la maggior parte dello sforzo ingegneristico. Un modello che impiega 10 secondi per rispondere o richiede otto GPU A100 non è pratico per la maggior parte delle applicazioni del mondo reale. L'ottimizzazione del modello è il processo che consente di realizzare modelli più piccoli, più rapidi e più convenienti, pur mantenendo una qualità accettabile. Questo file copre la quantizzazione, l'eliminazione, la distillazione e gli strumenti pratici per l'implementazione dei modelli nella produzione.
 ---

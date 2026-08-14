@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kod Olarak Terraform ve Altyapı
 Terraform, en yaygın kullanılan Kod Olarak Altyapı (IaC) aracıdır; sürümlendirilebilen, incelenebilen, test edilebilen ve otomatikleştirilebilen bildirime dayalı yapılandırma dosyalarında bulut altyapısını (sunucular, veritabanları, ağlar, izinler) tanımlamanıza olanak tanır. Bir bulut konsoluna tıklamak yerine, altyapınızın istenen durumunu açıklayan kodu yazarsınız ve Terraform hangi değişikliklerin yapılması gerektiğini belirler.
 ---

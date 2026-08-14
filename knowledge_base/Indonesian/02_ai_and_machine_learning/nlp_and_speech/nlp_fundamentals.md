@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dasar-Dasar NLP
 Natural Language Processing (NLP) adalah bidang mesin pengajaran untuk memahami, menghasilkan, dan bekerja dengan bahasa manusia. Ini mendukung mesin pencari, chatbot, sistem terjemahan, analisis sentimen, dan model bahasa besar (LLM) yang telah mengubah AI sejak tahun 2020. File ini mencakup evolusi dari teknik klasik ke arsitektur modern berbasis Transformer.
 ---

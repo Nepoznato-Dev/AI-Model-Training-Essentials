@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Veri Etiği ve Gizlilik
 Veri etiği, veri toplama, analiz ve dağıtımının insanların haklarını, özerkliğini ve refahını nasıl etkilediğinin incelenmesidir. Gizlilik, kişisel bilgileri kimin kontrol ettiği ve nasıl paylaşıldığıyla ilgili özel bir konudur. Bu konular akademik tartışmalardan ön sayfa haberlerine taşındı: GDPR'nin uygulanması, milyarlarca kullanıcıyı etkileyen veri ihlalleri ve teknoloji şirketlerinin veri uygulamalarının demokrasi, eşitlik ve bireysel özgürlük açısından gerçek sonuçlar doğurduğuna dair artan kamuoyu farkındalığı.
 ---

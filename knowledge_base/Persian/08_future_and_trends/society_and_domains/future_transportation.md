@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # حمل و نقل آینده
 ## بررسی اجمالی
 رسیدن از A به B بسیار متفاوت به نظر می رسد. خودروهای خودران در حال حاضر در جاده های عمومی هستند. هواپیماهای برقی در حال تکمیل پروازهای آزمایشی هستند. مفاهیم Hyperloop وعده سفر با سرعت قطار در لوله های خلاء را می دهد. و تاکسی های پرنده - که زمانی کارتون ها بود - در حال ورود به گواهینامه هستند. در اینجا وضعیت بازی در سراسر فن آوری است که نحوه حرکت ما را تغییر می دهد.

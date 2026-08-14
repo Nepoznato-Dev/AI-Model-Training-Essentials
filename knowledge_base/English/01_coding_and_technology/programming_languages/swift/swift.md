@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift
 
 Swift is a modern, compiled programming language developed by Apple (led by Chris Lattner) and first released in 2014. It was designed to replace Objective-C as the primary language for Apple platform development (iOS, macOS, watchOS, tvOS, visionOS). Swift combines the performance of compiled languages with the expressiveness of scripting languages, and it emphasises safety -- particularly around null values, memory management, and type errors.

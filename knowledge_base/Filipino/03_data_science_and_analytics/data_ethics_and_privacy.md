@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Etika at Privacy ng Data
 Ang data ethics ay ang pag-aaral kung paano nakakaapekto ang pangongolekta, pagsusuri, at deployment ng data sa mga karapatan, awtonomiya, at kapakanan ng mga tao. Ang privacy ay ang partikular na alalahanin tungkol sa kung sino ang kumokontrol sa personal na impormasyon at kung paano ito ibinabahagi. Ang mga paksang ito ay lumipat mula sa mga akademikong debate patungo sa mga balita sa harap ng pahina — pagpapatupad ng GDPR, mga paglabag sa data na nakakaapekto sa bilyun-bilyong user, at lumalagong kamalayan ng publiko na ang mga gawi sa data ng mga tech na kumpanya ay may tunay na kahihinatnan para sa demokrasya, pagkakapantay-pantay, at kalayaan ng indibidwal.
 ---

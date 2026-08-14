@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perbandingan Lintas Bahasa — Konkurensi & Paralelisme
 ## Ikhtisar Model Konkurensi
 | Bahasa | Model | Mekanisme Kunci | Memori Bersama? |

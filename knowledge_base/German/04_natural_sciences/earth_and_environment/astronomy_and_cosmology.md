@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Astronomie und Kosmologie
 Astronomie ist das Studium von Himmelsobjekten – Sternen, Planeten, Galaxien und allem, was sich außerhalb der Erdatmosphäre befindet. Kosmologie ist das Studium des Universums als Ganzes: seines Ursprungs, seiner Struktur, seiner Entwicklung und seines endgültigen Schicksals. Gemeinsam gehen sie auf einige der grundlegendsten Fragen ein, die sich die Menschheit jemals gestellt hat: Wie begann das Universum? Wie groß ist es? Sind wir allein? Was wird am Ende damit passieren?
 ---

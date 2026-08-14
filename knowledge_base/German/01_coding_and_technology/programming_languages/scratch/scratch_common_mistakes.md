@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch – Häufige Fehler und Anti-Patterns
 Dieses Dokument listet die häufigsten Fehler und Fallstricke in Scratch mit Korrekturen auf.
 ---

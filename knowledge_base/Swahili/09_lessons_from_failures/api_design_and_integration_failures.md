@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ubunifu wa API na Kushindwa kwa Ujumuishaji
 API (Violesura vya Kuandaa Programu) ni viunganishi vya programu ya kisasa - huruhusu huduma kuwasiliana, kuruhusu wahusika wengine kuunganishwa, na kuruhusu timu kufanya kazi kwa kujitegemea. Muundo wa API unapoenda vibaya, matokeo hujitokeza katika kila mfumo unaoutegemea: miunganisho iliyovunjika, udhaifu wa kiusalama, kufadhaika kwa wasanidi programu na kuandika upya kwa gharama kubwa. Kushindwa kwa ujumuishaji - ambapo mifumo haiwezi kuwasiliana kwa kutegemewa - ni kati ya vyanzo vya kawaida vya matukio ya uzalishaji.
 ---

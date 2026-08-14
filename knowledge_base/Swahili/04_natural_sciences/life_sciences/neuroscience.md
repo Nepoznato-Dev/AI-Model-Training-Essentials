@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Neuroscience
 Neuroscience ni utafiti wa mfumo wa neva - ubongo, uti wa mgongo, na mishipa yote inayowaunganisha na mwili. Inachukua viwango vingi: kutoka kwa molekuli na jeni, hadi neuroni na sinepsi za mtu binafsi, hadi saketi na maeneo ya ubongo, hadi tabia, utambuzi, na fahamu. Ubongo ndio muundo changamano zaidi katika ulimwengu unaojulikana, unao na takribani niuroni bilioni 86 zilizounganishwa na matrilioni ya sinepsi, na kuelewa jinsi inavyofanya kazi ni mojawapo ya changamoto kubwa za sayansi.
 ---

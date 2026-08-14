@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Confronto tra lingue diverse: gestione degli errori
 ## Panoramica dei modelli di gestione degli errori
 | Modello | Lingue | Meccanismo |

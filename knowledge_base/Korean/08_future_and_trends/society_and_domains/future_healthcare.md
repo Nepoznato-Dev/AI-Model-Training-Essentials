@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 미래헬스케어
 ## 개요
 의학은 증상이 나타난 후 치료하는 반응형 모델에서 예측적이고 개인화되며 점점 더 예방적인 모델로 전환하고 있습니다. Genomics는 30억 달러 규모의 프로젝트에서 1,000달러 미만의 일상적인 테스트로 발전했습니다. AI는 의사보다 먼저 스캔을 통해 질병을 발견하는 방법을 학습하고 있습니다. 그리고 재생 의학은 공상 과학 소설을 임상 시험으로 바꾸고 있습니다. 맞춤 의학, 장수 연구, 재생 의학이라는 세 가지 가장 큰 영역에서 무슨 일이 일어나고 있는지 살펴보겠습니다.

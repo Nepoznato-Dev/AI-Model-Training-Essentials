@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 科学と自然
 科学とは、宇宙が実際に何をしているのかを私たちが解明する方法です。宇宙が何をしていると私たちが想定しているのか、古代の文献に書かれていることではなく、注意深い観察と実験によって明らかにされるものです。科学的手法は原理的にはシンプルです。何かを観察し、仮説を立て、テストし、結果に基づいて理解を修正します。科学が強力であるのは、それが自己修正できることです。すべての主張は暫定的なものであり、より良い証拠が見つかるまでのみ受け入れられます。
 このファイルは、物理学、化学、生物学、地球科学、宇宙科学といった自然科学の主要分野をカバーしています。それを物理世界の地図として考えてください。

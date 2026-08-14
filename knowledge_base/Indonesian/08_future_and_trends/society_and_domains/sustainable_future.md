@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Masa Depan Berkelanjutan
 ## Ringkasan
 Pertanyaannya bukan lagi *apakah* dunia perlu melakukan transisi menuju perekonomian berkelanjutan, namun *seberapa cepat* dan *siapa yang memimpin*. Energi terbarukan kini menjadi sumber listrik termurah di sebagian besar pasar. Prinsip-prinsip ekonomi sirkular berpindah dari konsep niche ke strategi perusahaan. Kota-kota memikirkan kembali segalanya mulai dari transportasi hingga sampah. Dan persaingan menuju net zero sedang mengubah industri energi hingga keuangan. Inilah gambaran masa depan berkelanjutan dalam empat dimensi utama.

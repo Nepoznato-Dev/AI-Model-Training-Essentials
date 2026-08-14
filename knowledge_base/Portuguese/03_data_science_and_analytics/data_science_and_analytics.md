@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ciência de Dados e Análise
 A ciência de dados é a disciplina que transforma dados brutos em insights acionáveis. Situa-se na intersecção entre estatísticas, ciência da computação e conhecimentos especializados – e tornou-se essencial em todos os setores, desde finanças até cuidados de saúde. Este arquivo apresenta os principais conceitos, ferramentas e fluxos de trabalho que todo profissional deve conhecer.
 ---

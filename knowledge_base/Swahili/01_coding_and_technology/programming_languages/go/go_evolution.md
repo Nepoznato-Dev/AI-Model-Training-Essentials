@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Nenda - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio
 | Toleo | Tarehe ya Kutolewa | Mandhari Muhimu |

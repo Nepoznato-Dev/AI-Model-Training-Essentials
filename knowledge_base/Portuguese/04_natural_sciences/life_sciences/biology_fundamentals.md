@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fundamentos de Biologia
 Biologia é a ciência da vida. Todos os seres vivos partilham certas características: são feitos de células, utilizam energia, crescem, respondem ao ambiente, reproduzem-se e evoluem. A biologia abrange desde a maquinaria molecular dentro de uma única célula até as interações de ecossistemas inteiros e é a base da medicina, da agricultura, da biotecnologia e da conservação.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran
 
 Fortran (Formula Translation) is the oldest high-level programming language still in widespread use, first developed by IBM in 1957 for scientific and engineering computation. Despite its age, modern Fortran (Fortran 2008/2018/2023) is a capable, high-performance language used extensively in numerical weather prediction, computational fluid dynamics, physics simulations, financial modelling, and high-performance computing (HPC). Many of the world's fastest supercomputers run Fortran code.

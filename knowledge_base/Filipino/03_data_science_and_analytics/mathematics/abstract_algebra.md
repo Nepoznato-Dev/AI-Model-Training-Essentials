@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Abstract na Algebra
 Pinag-aaralan ng abstract algebra ang mga istrukturang algebraic — mga set na nilagyan ng mga operasyong sumusunod sa mga partikular na panuntunan. Sa halip na magtrabaho sa mga numero, gumagana ang abstract algebra sa anumang mga bagay na nakakatugon sa mga axiom. Ang pangkalahatan na ito ay makapangyarihan: ang isang theorem na pinatunayan para sa "mga pangkat" ay nalalapat sa mga integer, symmetries, matrice, permutations, at quantum states nang sabay-sabay. Ang abstract algebra ay sumasailalim sa cryptography, error-correcting codes, quantum computing, at ang symmetry analysis na ginagamit sa buong physics.
 ---

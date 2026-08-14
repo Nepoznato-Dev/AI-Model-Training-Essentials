@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی برای برنامه نویسی Bash/Zsh و PowerShell را پوشش می دهد.
 ---

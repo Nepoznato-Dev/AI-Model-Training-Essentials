@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # زبان اسمبلی - تاریخچه نسخه و تکامل
 ## جدول زمانی
 | دوران | سال | تم کلید |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 프롤로그 — 구문 참조
 이 문서는 Prolog에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 구문 패턴, 통합, 역추적, DCG 및 논리 프로그래밍 관용구에 중점을 두어 기본 Prolog 참조를 보완합니다.
 ---

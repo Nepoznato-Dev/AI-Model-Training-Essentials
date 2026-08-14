@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سی شارپ - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای سی شارپ مدرن ارائه می‌کند (C# 10/11/12 در NET 7/8). این مرجع اصلی C# را با تمرکز بر الگوهای نحوی جامع، LINQ، async/wait، تطبیق الگو، و ویژگی‌های مدرن تکمیل می‌کند.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Usindikaji wa Mawimbi
 Uchakataji wa mawimbi ni sayansi ya kuchanganua, kurekebisha, na kuunganisha mawimbi - uwakilishi wa kiasi halisi kinachotofautiana kulingana na wakati, nafasi au marudio. Sauti, picha, video, data ya vitambuzi, mawimbi ya ubongo, bei za hisa - zote ni mawimbi. Zana za hisabati za usindikaji wa mawimbi (Nne za kubadilisha, vichungi, nadharia ya sampuli) ni za msingi katika kujifunza kwa mashine, mawasiliano, picha za kimatibabu, na karibu kila nyanja inayofanya kazi na data.
 ---

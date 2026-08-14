@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 관리 및 프로젝트 방법론
 사람과 프로젝트를 관리하는 것은 모든 조직에서 가장 까다로운 책임 중 하나입니다. 기술적인 능력은 진입을 제공하지만 팀을 이끌고, 결정을 내리고, 효과적으로 의사소통하고, 결과를 전달하는 능력은 목표 달성 여부를 결정합니다. 이 파일은 효과적인 관리자와 프로젝트 리더가 적용하는 프레임워크, 방법론 및 실무 기술을 다룹니다.
 ---

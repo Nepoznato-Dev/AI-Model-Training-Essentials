@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # জুলিয়া — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকা জুলিয়া ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, প্যাকেজ এবং অবকাঠামো কভার করে।
 ---

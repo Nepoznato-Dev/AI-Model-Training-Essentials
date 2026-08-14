@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz, R ekosistemindeki temel araçları, paketleri ve altyapıyı kapsar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # آدا - اشتباهات رایج و ضد الگوها
 این سند متداول ترین اشتباهات، تله ها و ضد الگوها در آدا را با اصلاحات فهرست می کند.
 ---

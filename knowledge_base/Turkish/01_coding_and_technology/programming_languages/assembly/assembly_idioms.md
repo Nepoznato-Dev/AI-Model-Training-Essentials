@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Montaj — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, bakımı kolay Montaj kodu yazmaya yönelik deyimsel kalıpları kapsar (NASM sözdizimi ile x86/x64 odağı).
 ---

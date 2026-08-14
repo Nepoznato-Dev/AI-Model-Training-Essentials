@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linguistik und Sprachwissenschaft
 Linguistik ist die wissenschaftliche Untersuchung der Sprache – ihrer Struktur, Bedeutung, Verwendung, Erwerb und Entwicklung. Sprache ist ein bestimmendes Merkmal der menschlichen Kommunikation: Sie ist unendlich produktiv (Sprecher können Sätze bilden und verstehen, denen sie noch nie zuvor begegnet sind), sie wird kulturell weitergegeben (sie wird erlernt und ist nicht rein angeboren) und sie entwickelt sich ständig weiter. Zu verstehen, wie Sprache funktioniert, ist für jeden wichtig, der Sprachtechnologien entwickelt, unterrichtet, übersetzt oder daran arbeitet, effektiver zu kommunizieren.
 ---

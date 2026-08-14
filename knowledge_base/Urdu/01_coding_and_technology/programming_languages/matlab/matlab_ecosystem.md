@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ MATLAB ایکو سسٹم میں ضروری ٹولز، ٹول باکسز اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Распространенные ошибки и антипаттерны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в R с исправлениями.
 ---

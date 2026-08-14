@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مقایسه خدمات ابری
 مقایسه کنار هم از سه ارائه‌دهنده اصلی ابر - AWS، Azure و Google Cloud - در محاسبات، ذخیره‌سازی، پایگاه‌های داده، AI/ML، شبکه، نظارت و زیرساخت به عنوان کد. برای معمارانی مفید است که تصمیم می گیرند از کدام پلتفرم استفاده کنند، یا خدمات نقشه برداری از یک ابر به ابر دیگر.
 ---

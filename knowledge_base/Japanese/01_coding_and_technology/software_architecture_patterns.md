@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ソフトウェア アーキテクチャ パターン
 アーキテクチャとは、システムがどのように構成されているか、つまりどのコンポーネントがあり、それらがどのように通信し、責任がどこにあるのかについての一連の構造的な決定です。優れたアーキテクチャにより、システムの理解、変更、拡張が容易になります。アーキテクチャが悪いと、あらゆる変更が困難になります。このファイルでは、主要なパターン、それぞれをいつ使用するか、およびそれに伴うトレードオフについて説明します。
 ---

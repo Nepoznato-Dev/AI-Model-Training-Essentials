@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Music Theory and Acoustics
 
 Music theory is the study of how music works — the patterns, structures, and principles that make some combinations of sounds pleasing or meaningful and others discordant or chaotic. Acoustics is the physics of sound — how vibrations travel through air, how they're produced and perceived. Together, they explain why a C major chord sounds happy, why a minor key feels sad, how concert halls are designed, and why your favourite song gives you chills.

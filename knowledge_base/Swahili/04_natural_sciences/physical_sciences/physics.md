@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Fizikia
 Fizikia inauliza swali la msingi zaidi katika sayansi: maada na nishati hufanyaje? Kila kitu kingine - kemia, biolojia, uhandisi - hujengwa juu ya majibu. Fizikia ni kati ya mizani ya subabatomic (quantum mechanics) hadi kipimo cha cosmic (uhusiano wa jumla), na kanuni zake ndizo msingi wa sayansi zingine zote asilia.
 ---

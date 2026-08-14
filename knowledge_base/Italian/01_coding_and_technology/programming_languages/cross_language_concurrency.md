@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Confronto tra linguaggi: concorrenza e parallelismo
 ## Panoramica dei modelli di concorrenza
 | Lingua | Modello | Meccanismo chiave | Memoria condivisa? |

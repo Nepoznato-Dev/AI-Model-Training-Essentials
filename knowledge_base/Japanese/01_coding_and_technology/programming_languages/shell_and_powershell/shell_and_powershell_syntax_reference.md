@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # シェルと PowerShell — 構文リファレンス
 このドキュメントでは、Bash と PowerShell の包括的で構造化された構文リファレンスを提供します。両方のシェルの包括的なスクリプト パターン、パイプライン、プロセス管理、自動化イディオムに焦点を当て、メインのシェル リファレンスを補完します。
 ---

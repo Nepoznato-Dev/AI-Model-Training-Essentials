@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Sözdizimi Referansı
 Bu belge Ruby (3.x) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, bloklara ve kapanışlara, metaprogramlamaya ve Ruby deyimlerine odaklanarak ana Ruby referansını tamamlar.
 ---

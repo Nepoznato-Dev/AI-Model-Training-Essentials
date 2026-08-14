@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Aprendizagem Federada e Privacidade
 O aprendizado federado é uma técnica para treinar modelos de aprendizado de máquina em vários dispositivos ou organizações sem compartilhar os dados brutos. Em vez de enviar dados para um servidor central, cada dispositivo treina um modelo local e compartilha apenas as atualizações do modelo (gradientes ou pesos). O servidor central agrega essas atualizações para produzir um modelo global. Ele foi projetado pelo Google para treinar modelos de linguagem de teclado em telefones Android – e desde então se tornou uma técnica chave para IA que preserva a privacidade.
 ---

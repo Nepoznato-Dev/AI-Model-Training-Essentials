@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Engineering and Pipelines
 
 Data engineering is the discipline of building the systems that move, transform, and store data at scale. Without reliable data pipelines, machine learning models can't be trained, dashboards show stale numbers, and business decisions are based on guesswork. This file covers the architecture, tools, and practices for building data infrastructure that works.

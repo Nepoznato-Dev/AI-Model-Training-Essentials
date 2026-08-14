@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Thống kê và xác suất
 Xác suất và thống kê là nền tảng toán học của khoa học dữ liệu, học máy và nghiên cứu khoa học. Xác suất cho bạn biết các sự kiện có thể xảy ra như thế nào; số liệu thống kê cho bạn biết cách rút ra kết luận từ dữ liệu. Cùng nhau, họ biến sự không chắc chắn thành kiến ​​thức có thể định lượng và quản lý được.
 ---

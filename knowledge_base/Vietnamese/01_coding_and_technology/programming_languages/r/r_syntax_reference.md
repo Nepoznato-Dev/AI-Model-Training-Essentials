@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R — Tham chiếu cú ​​pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho R (4.x). Nó bổ sung cho tham chiếu R chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, hệ sinh thái gọn gàng, thao tác dữ liệu, mô hình thống kê và trực quan hóa.
 ---

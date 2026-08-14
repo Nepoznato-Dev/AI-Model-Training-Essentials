@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 程式碼品質問題
 本文檔整合了常見的程式碼品質問題，包括錯誤的變數名稱、糟糕的文件、義大利麵條式程式碼、循環依賴和其他可維護性問題。
 ---

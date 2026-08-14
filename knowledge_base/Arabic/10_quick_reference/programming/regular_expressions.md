@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ورقة الغش في التعبيرات العادية
 التعبيرات العادية (regex) هي أنماط لمطابقة النص. يتم استخدامها في كل مكان — البحث والاستبدال، والتحقق من صحة الإدخال، وتحليل السجل، واستخراج البيانات، والمزيد. وهذا مرجع عملي، وليس كتابا مدرسيا.
 ---

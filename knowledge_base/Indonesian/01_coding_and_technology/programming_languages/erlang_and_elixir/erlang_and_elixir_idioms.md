@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik untuk Erlang dan Elixir di BEAM VM.
 ---

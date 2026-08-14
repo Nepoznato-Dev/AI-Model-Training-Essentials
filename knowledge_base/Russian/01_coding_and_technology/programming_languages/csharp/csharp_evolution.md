@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C# — История версий и эволюция
 ## Временная шкала
 | Версия | Год | .NET | Ключевая тема |

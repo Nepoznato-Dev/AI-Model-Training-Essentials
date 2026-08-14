@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # برو - تاریخچه نسخه و تکامل
 ## جدول زمانی
 | نسخه | تاریخ انتشار | تم کلید |

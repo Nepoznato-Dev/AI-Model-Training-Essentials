@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Памятка по написанию сценариев Bash и Shell
 Практическое руководство по написанию сценариев оболочки в Bash — оболочке по умолчанию в большинстве систем Linux и macOS. Охватывает синтаксис, общие шаблоны, обработку текста и полезные однострочники.
 ---

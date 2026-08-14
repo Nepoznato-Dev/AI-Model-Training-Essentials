@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ COBOL ایکو سسٹم میں ضروری ٹولز، کمپائلرز اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

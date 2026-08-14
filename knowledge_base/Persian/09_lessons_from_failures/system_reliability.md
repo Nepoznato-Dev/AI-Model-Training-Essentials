@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مسائل مربوط به قابلیت اطمینان سیستم
 این سند مسائل مربوط به قابلیت اطمینان از جمله نشت حافظه، شرایط مسابقه، خطاهای برنامه‌نویسی همزمان و خرابی‌های طراحی سیستم را ادغام می‌کند.
 ---

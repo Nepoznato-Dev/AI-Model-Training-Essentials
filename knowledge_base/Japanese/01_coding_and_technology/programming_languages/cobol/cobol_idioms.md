@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで最新の COBOL コードを記述するための慣用的なパターンについて説明します。
 ---

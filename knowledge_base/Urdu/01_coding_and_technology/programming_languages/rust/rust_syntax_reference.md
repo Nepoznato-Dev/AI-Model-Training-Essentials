@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # زنگ - نحو حوالہ
 یہ دستاویز Rust کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، آپریٹر ٹیبلز، اور ملکیتی نظام کے اندرونی میکانکس، خصائص، اور ہم آہنگی پر توجہ مرکوز کرتے ہوئے بنیادی زنگ کے حوالے کی تکمیل کرتا ہے۔
 ---

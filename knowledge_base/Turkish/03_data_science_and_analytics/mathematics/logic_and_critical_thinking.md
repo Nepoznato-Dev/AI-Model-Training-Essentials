@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mantık ve Eleştirel Düşünme
 Mantık, geçerli akıl yürütmenin incelenmesidir; sağlam argümanların nasıl oluşturulacağı ve hatalı olanların nasıl belirleneceği. Eleştirel düşünme, varsayımları sorgulama, kanıtları değerlendirme ve dikkatli bir şekilde akıl yürütme gibi disiplinli bir alışkanlıktır. Bu beceriler yalnızca matematik ve bilgisayar bilimlerinde değil, aynı zamanda günlük karar vermede, bilimsel araştırmada ve bilgi açısından zengin bir dünyada gezinmede de gereklidir.
 ---

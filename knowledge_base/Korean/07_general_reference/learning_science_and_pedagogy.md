@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 과학과 교육학을 배우다
 학습과학은 사람들이 어떻게 학습하는지에 대한 학제간 연구로, 심리학, 신경과학, 교육, 인지과학을 활용합니다. 교육학은 교육의 실천이자 방법론입니다. 그들은 함께 교육 콘텐츠를 가르치고, 훈련하고, 멘토하고, 디자인하는 모든 사람과 관련된 질문을 다룹니다. 어떤 방법이 사람들이 효과적으로 학습하는 데 도움이 됩니까? 어떤 일반적인 학습 기법이 비효율적인가요? 최적의 유지 및 전달을 위해 교육은 어떻게 구성되어야 합니까?
 ---

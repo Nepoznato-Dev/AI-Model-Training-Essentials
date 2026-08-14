@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # সংখ্যা তত্ত্ব
 সংখ্যা তত্ত্ব হল পূর্ণসংখ্যার অধ্যয়ন — পূর্ণ সংখ্যা এবং তাদের বৈশিষ্ট্য। গাউস একে "গণিতের রানী" বলে অভিহিত করেছেন। সহজতম বস্তুগুলি (1, 2, 3, ...) অধ্যয়ন করা সত্ত্বেও, সংখ্যা তত্ত্ব সমস্ত গণিতের কিছু গভীর এবং কঠিনতম সমস্যা তৈরি করে। আজ, এটি আধুনিক ক্রিপ্টোগ্রাফি, হ্যাশিং অ্যালগরিদম, ত্রুটি-সংশোধনকারী কোড, এবং র্যান্ডম সংখ্যা তৈরি করে।
 ---

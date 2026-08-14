@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 資料結構與演算法
 資料結構是我們在記憶體中組織資料的方式，以便對其進行高效的操作。算法是解決問題的逐步過程。它們共同構成了電腦科學的基礎——您使用過的每個程式都依賴它們。選擇正確的資料結構可以將一個極其緩慢的程序變成一個快速的程序，而了解正確的演算法可以將一個無法解決的問題變成一個微不足道的問題。
 ---

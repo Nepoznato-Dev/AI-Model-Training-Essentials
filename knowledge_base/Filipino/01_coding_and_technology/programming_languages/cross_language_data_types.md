@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Cross-Language Comparison — Mga Uri at Structure ng Data
 ## Mga Primitive na Uri
 | Uri | Python | JavaScript | kalawang | Pumunta | Java | C | C++ | C# |

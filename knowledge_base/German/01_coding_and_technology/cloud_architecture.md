@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cloud-Architektur
 Cloud Computing hat die Art und Weise, wie Unternehmen Software erstellen, bereitstellen und skalieren, grundlegend verändert. Anstatt physische Server zu kaufen und zu warten, können Sie Rechenressourcen nach Bedarf bereitstellen, für die Nutzung bezahlen und innerhalb von Minuten global skalieren. Diese Datei deckt die Kernkonzepte, Architekturmuster, Dienste und Best Practices ab, die Sie kennen müssen.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lộ trình khám phá không gian
 ## Tổng quan
 Chúng ta đang sống qua một thời kỳ hoàng kim mới của việc khám phá không gian. Chương trình Artemis của NASA đang đưa con người trở lại Mặt trăng. SpaceX đang chế tạo một tên lửa có thể tái sử dụng hoàn toàn được thiết kế cho sao Hỏa. Trung Quốc có kế hoạch về mặt trăng và sao Hỏa đầy tham vọng của riêng mình. Và ngày càng có nhiều công ty tư nhân mở ra không gian cho thương mại - từ internet vệ tinh đến du lịch vũ trụ. Đây là lộ trình, từ Mặt trăng đến Sao Hỏa và xa hơn nữa.

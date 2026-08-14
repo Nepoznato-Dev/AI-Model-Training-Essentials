@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go — よくある間違いとアンチパターン
 このドキュメントには、Go で最もよくある間違い、罠、アンチパターンがカタログ化されています。各エントリは、間違ったアプローチを示し、それが失敗する理由を説明し、正しい解決策を提供します。
 ---

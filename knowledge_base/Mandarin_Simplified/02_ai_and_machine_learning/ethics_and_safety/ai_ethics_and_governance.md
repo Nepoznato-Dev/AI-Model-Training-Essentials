@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 人工智能道德与治理
 人工智能系统不是中立的。它们反映了接受训练的数据、创建者的价值观以及部署它们的组织的激励措施。道德不仅仅是问“我们能建造这个吗？”但“我们应该吗？”治理就是建立法律、标准、监督机构等结构，以确保人工智能的开发和使用是负责任的。该文件涵盖了人工智能的关键道德维度以及为解决这些问题而出现的治理框架。
 ---

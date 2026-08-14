@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API の設計とアーキテクチャ
 API (アプリケーション プログラミング インターフェイス) は、ソフトウェア コンポーネントが相互に通信する方法です。適切に設計された API は直感的で一貫性があり、楽しく作業できます。設計が不十分だと、混乱、バグ、フラストレーションが発生します。このファイルでは、開発者が実際に使用したい API を構築するための原則、パターン、実践方法について説明します。
 ---

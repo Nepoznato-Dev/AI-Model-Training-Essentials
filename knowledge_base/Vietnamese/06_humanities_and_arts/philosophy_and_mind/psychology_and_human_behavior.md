@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tâm lý và hành vi con người
 Tâm lý học là khoa học về cách thức và lý do con người suy nghĩ, cảm nhận và hành động theo cách họ làm. Nó không phải là khả năng đọc suy nghĩ và cũng không phải là lẽ thường - mặc dù đôi khi nó xác nhận những gì mà lẽ thường gợi ý và đôi khi hoàn toàn trái ngược với nó. Tâm lý học sử dụng phương pháp khoa học giống như mọi ngành khoa học khác: quan sát, đưa ra giả thuyết, kiểm tra, sửa đổi. Điều khiến nó trở nên thách thức là chủ đề của nó - tâm trí con người - là đối tượng phức tạp nhất mà chúng ta biết đến.
 Hồ sơ này bao gồm các lĩnh vực chính của tâm lý học: cách chúng ta suy nghĩ, cách chúng ta phát triển, cách chúng ta bị ảnh hưởng bởi người khác, điều gì đã xảy ra và những gì có thể làm được.

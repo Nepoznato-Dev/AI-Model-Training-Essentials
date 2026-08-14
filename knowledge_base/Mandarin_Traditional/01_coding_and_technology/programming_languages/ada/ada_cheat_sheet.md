@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — 備忘單
 ## 基礎知識
 ```ada

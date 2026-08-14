@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mekanika Klasik
 Mekanika klasik menggambarkan gerak benda di bawah pengaruh gaya. Dari apel yang jatuh hingga planet yang mengorbit, dari string yang bergetar hingga partikel yang bertabrakan, prinsip-prinsipnya mengatur dunia makroskopis. Di luar penerapan fisiknya, mekanika klasik melahirkan kalkulus variasi, geometri simplektis, dan kerangka Hamilton yang mendasari mekanika kuantum dan optimasi modern.
 ---

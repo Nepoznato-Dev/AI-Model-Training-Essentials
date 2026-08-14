@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL — Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para COBOL (2014+). Complementa la referencia principal de COBOL al centrarse en patrones de sintaxis exhaustivos, descripciones de datos, procesamiento de archivos y lógica empresarial.
 ---

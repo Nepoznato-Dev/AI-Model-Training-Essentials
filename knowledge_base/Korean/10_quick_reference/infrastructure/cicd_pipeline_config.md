@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD 파이프라인 구성
 CI(지속적 통합) 및 CD(지속적 배포) 파이프라인은 소프트웨어 구축, 테스트 및 배포 프로세스를 자동화합니다. 이 참조 자료에서는 가장 널리 사용되는 CI/CD 플랫폼인 GitHub Actions, GitLab CI 및 일반 파이프라인 설계 원칙에 대한 구성 패턴을 다룹니다.
 ---

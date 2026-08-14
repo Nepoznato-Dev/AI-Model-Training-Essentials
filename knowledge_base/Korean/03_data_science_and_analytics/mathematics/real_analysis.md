@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 실제 분석
 실제 분석은 미적분학의 엄격한 기초입니다. 기초 미적분학에서는 도함수와 적분을 계산하는 방법을 가르쳐 주지만 실제 분석에서는 이러한 기법이 *왜* 작동하는지, 그리고 언제 실패하는지 묻습니다. 확률 이론, 기능 분석, 최적화 및 기계 학습 알고리즘의 이론적 보장을 뒷받침하는 한계, 연속성, 수렴 및 통합에 대한 정확한 정의를 제공합니다.
 ---

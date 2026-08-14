@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prometheus và Grafana
 Prometheus là bộ công cụ cảnh báo và giám sát nguồn mở được thiết kế để đảm bảo độ tin cậy và khả năng mở rộng. Grafana là nền tảng nguồn mở hàng đầu để trực quan hóa dữ liệu chuỗi thời gian. Cùng nhau, chúng tạo thành hệ thống giám sát phổ biến nhất cho các ứng dụng và cơ sở hạ tầng hiện đại. Prometheus thu thập và lưu trữ số liệu; Grafana hiển thị chúng trong bảng thông tin.
 ---

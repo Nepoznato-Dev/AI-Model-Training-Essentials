@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingénierie rapide
 L'ingénierie des invites consiste à concevoir, affiner et optimiser les invites de saisie pour obtenir le meilleur résultat possible à partir d'un modèle de langage. C'est à la fois un art et une science, et c'est la principale interface pour contrôler le comportement du LLM sans réglage fin.
 ---

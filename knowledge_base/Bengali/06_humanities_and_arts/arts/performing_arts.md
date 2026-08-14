@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # পারফর্মিং আর্টস
 পারফরমিং আর্টস — থিয়েটার, ফিল্ম, নৃত্য এবং সঙ্গীত পারফরম্যান্স — যেখানে শিল্প দর্শকদের জীবন্ত উপস্থিতি পূরণ করে। দেয়ালে আঁকা ছবি বা শেল্ফে একটি বইয়ের বিপরীতে, পারফরম্যান্স রিয়েল টাইমে উদ্ভাসিত হয়, শিল্পী এবং দর্শকের মধ্যে একটি ভাগ করা অভিজ্ঞতা তৈরি করে যা হাজার হাজার বছর ধরে মানব সংস্কৃতির কেন্দ্রবিন্দু।
 ---

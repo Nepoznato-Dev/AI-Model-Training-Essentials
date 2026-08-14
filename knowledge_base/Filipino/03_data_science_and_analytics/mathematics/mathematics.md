@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matematika
 Ang matematika ay hindi lamang isang asignaturang pinag-aaralan sa paaralan — pinapatibay nito ang halos lahat ng larangang teknikal. Ginagamit ito ng pisika upang ilarawan ang uniberso. Ginagamit ito ng computer science upang magdisenyo ng mga algorithm. Ginagamit ito ng machine learning para i-optimize ang mga timbang. Ginagamit ito ng pananalapi sa panganib sa presyo. Hindi kailangan ang mastery ng bawat branch, ngunit ang pag-unawa sa landscape — at pag-alam kung saan nalalapat ang bawat branch — ay ginagawang mas madaling maunawaan ang iba pang mga paksa.
 ---

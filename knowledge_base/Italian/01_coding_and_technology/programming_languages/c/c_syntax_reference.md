@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Riferimento alla sintassi
 Questo documento fornisce un riferimento sintattico completo e strutturato per C (C11/C17 con note C23). Completa il riferimento principale del C concentrandosi su modelli di sintassi esaustivi, tabelle degli operatori, meccanica dei puntatori e gestione della memoria.
 ---

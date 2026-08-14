@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go
 Ang Go (kadalasang tinatawag na "Golang" pagkatapos ng orihinal nitong domain name) ay isang statically typed, compiled programming language na dinisenyo sa Google nina Robert Griesemer, Rob Pike, at Ken Thompson. Una itong inilabas noong 2012 na may tahasang layunin na maging isang mas mahusay na wika para sa mga system programming -- isa na pinagsasama ang pagganap ng C sa pagiging produktibo ng mga dynamic na wika tulad ng Python. Kilala ang Go sa pagiging simple nito, mabilis na compilation, built-in na concurrency (goroutine at channel), at mahusay na tooling.
 Pinapalakas ng Go ang karamihan sa ecosystem ng imprastraktura ng ulap: Ang Docker, Kubernetes, Terraform, Prometheus, etcd, at ang HTTP server ng Go standard library ay nakasulat lahat sa Go. Ito ay naging default na wika para sa cloud-native development, microservices, at CLI tool.

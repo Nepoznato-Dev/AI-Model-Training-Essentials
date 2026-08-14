@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Low-Code and Platform Engineering
 
 Low-code platforms let people build applications with minimal hand-written code — typically through drag-and-drop interfaces, visual workflows, and pre-built connectors. Platform engineering is the discipline of building internal developer platforms (IDPs) that make it easy for product teams to self-serve infrastructure, CI/CD, and operational tooling. Both trends are responses to the same problem: the gap between the demand for software and the supply of developers who can build it.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria kontroli
 Teoria sterowania to matematyka polegająca na sprawianiu, że systemy zachowują się tak, jak tego chcemy. Od termostatów po autopiloty, od ramion robotów po reaktory chemiczne – systemy sterowania wykrywają, decydują i działają, aby utrzymać pożądane zachowanie. Dziedzina ta zapewnia rygorystyczne narzędzia do analizy stabilności, wydajności i solidności — koncepcji, które przeniosły się do uczenia się przez wzmacnianie, dostrajania hiperparametrów i systemów adaptacyjnych.
 ---

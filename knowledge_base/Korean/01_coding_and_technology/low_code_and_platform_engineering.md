@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 로우코드 및 플랫폼 엔지니어링
 로우 코드 플랫폼을 사용하면 사람들은 일반적으로 드래그 앤 드롭 인터페이스, 시각적 워크플로 및 사전 구축된 커넥터를 통해 최소한의 손으로 작성한 코드로 애플리케이션을 구축할 수 있습니다. 플랫폼 엔지니어링은 제품 팀이 인프라, CI/CD 및 운영 도구를 쉽게 셀프 서비스할 수 있도록 하는 내부 개발자 플랫폼(IDP)을 구축하는 분야입니다. 두 추세 모두 동일한 문제, 즉 소프트웨어에 대한 수요와 이를 구축할 수 있는 개발자 공급 간의 격차에 대한 대응입니다.
 ---

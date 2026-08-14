@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # اصلاح
 اصلاح ایک قابل عمل حل کے سیٹ سے بہترین حل تلاش کرنے کی ریاضی ہے۔ یہ پوچھتا ہے: ایک فنکشن اور رکاوٹوں کو دیکھتے ہوئے، کون سا ان پٹ آؤٹ پٹ کو کم کرتا ہے (یا زیادہ سے زیادہ)؟ آپٹیمائزیشن مشین لرننگ کا انجن ہے — ایک ماڈل کو تربیت دینے کا مطلب ہے نقصان کو کم سے کم کرنا۔ یہ آپریشن ریسرچ، اکنامکس، انجینئرنگ ڈیزائن، اور عملی طور پر ہر مقداری فیلڈ میں ظاہر ہوتا ہے۔
 ---

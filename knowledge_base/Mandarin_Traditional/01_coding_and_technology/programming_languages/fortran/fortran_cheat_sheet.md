@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — 備忘錄
 ## 基礎知識
 ```fortran

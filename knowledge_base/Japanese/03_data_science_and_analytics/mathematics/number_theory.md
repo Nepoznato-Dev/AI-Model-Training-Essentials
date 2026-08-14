@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 整数論
 数論は、整数、つまり整数とその性質の研究です。ガウスはそれを「数学の女王」と呼びました。最も単純なオブジェクト (1、2、3、...) を研究しているにもかかわらず、数論は数学全体の中で最も深くて難しい問題のいくつかを生み出します。現在では、最新の暗号化、ハッシュ アルゴリズム、エラー訂正コード、乱数生成を支えています。
 ---

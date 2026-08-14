@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Mustakabali wa Kazi
 ## Muhtasari
 Njia tunayofanya kazi inabadilika haraka kuliko wakati wowote tangu Mapinduzi ya Viwanda. Kazi ya mbali ilitoka kwa manufaa adimu hadi chaguomsingi mara moja. AI inahama kutoka kwa mambo mapya hadi kwa mshirika. Uchumi wa gig unabadilisha maana ya "ajira" hata. Na otomatiki haiji kwa kazi zote - lakini inakuja kwa kazi nyingi ndani ya kazi nyingi. Hapa kuna mwonekano wa nguvu zinazounda upya mahali pa kazi na kile kinachofuata.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ম্যাটল্যাব - ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি MATLAB ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, টুলবক্স এবং অবকাঠামো কভার করে।
 ---

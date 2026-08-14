@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible и управление конфигурациями
 Ansible — это безагентный инструмент управления и автоматизации конфигурации. Он использует SSH (или WinRM для Windows) для подключения к серверам и выполнения задач, определенных в сборниках сценариев YAML. В отличие от инструментов, требующих установки агентов на каждом компьютере, Ansible основан на принудительной отправке — вы запускаете команды с узла управления. Он используется для подготовки серверов, развертывания приложений, управления конфигурацией и выполнения специальных задач.
 ---

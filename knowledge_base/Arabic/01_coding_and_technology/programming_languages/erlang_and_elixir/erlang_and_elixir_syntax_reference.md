@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir — مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا لـ Erlang وElixir. وهو يكمل المرجع الرئيسي من خلال التركيز على مطابقة الأنماط، وإدارة العمليات، وسلوكيات OTP، وأنماط النظام المتسامحة مع الأخطاء.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 正则表达式备忘单
 正则表达式 (regex) 是匹配文本的模式。它们无处不在——搜索和替换、输入验证、日志解析、数据提取等等。这是一本实用参考书，不是教科书。
 ---

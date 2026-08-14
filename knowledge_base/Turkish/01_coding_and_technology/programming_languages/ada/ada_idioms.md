@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz temiz, güvenli Ada kodu yazmaya yönelik deyimsel kalıpları kapsar.
 ---

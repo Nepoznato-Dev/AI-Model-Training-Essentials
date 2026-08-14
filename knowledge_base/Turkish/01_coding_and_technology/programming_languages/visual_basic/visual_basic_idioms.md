@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz Visual Basic (.NET) kodu yazmaya yönelik deyimsel kalıpları kapsar.
 ---

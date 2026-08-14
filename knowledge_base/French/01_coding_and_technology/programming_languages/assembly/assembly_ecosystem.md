@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assemblage — Guide de l'écosystème et des outils
 Ce guide couvre les outils, assembleurs et infrastructures essentiels de l'écosystème Assembly.
 ---

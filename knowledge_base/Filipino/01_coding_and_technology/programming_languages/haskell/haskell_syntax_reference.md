@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured syntax reference para sa Haskell (GHC 9.x). Kinukumpleto nito ang pangunahing sanggunian ng Haskell sa pamamagitan ng pagtutuon sa mga kumpletong pattern ng syntax, ang uri ng sistema, monad, tamad na pagsusuri, at functional na mga idyoma ng programming.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ir — Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para Go. Complementa la referencia principal de Go al centrarse en patrones de sintaxis exhaustivos, tablas de operadores y mecánicas internas de rutinas, canales e interfaces.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Địa lý và Địa chính trị
 Địa lý quyết định vận mệnh. Vị trí của núi, sông và tài nguyên thiên nhiên đã quyết định các tuyến đường thương mại, gây ra chiến tranh và xây dựng nền văn minh trong nhiều thiên niên kỷ. Ngày nay, địa chính trị - sự tương tác giữa địa lý, quyền lực và chính trị - vẫn cần thiết để hiểu lý do tại sao các quốc gia hành xử theo cách họ làm.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML انجینئرنگ اور MLOps
 مشین لرننگ ماڈل بنانا صرف آدھی جنگ ہے۔ اسے پروڈکشن میں لانا، اسے قابل اعتماد طریقے سے چلاتے رہنا، ڈرفٹ کی نگرانی کرنا، اور اس پر اعادہ کرنا — یہی وہ جگہ ہے جہاں ML انجینئرنگ اور MLOps آتے ہیں۔ یہ فائل تجربے سے پروڈکشن سسٹم تک مکمل لائف سائیکل کا احاطہ کرتی ہے۔
 ---

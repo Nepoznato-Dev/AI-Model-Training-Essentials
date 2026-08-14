@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Aprendendo Ciências e Pedagogia
 Aprender ciências é o estudo interdisciplinar de como as pessoas aprendem – com base na psicologia, neurociência, educação e ciências cognitivas. Pedagogia é a prática e metodologia de ensino. Juntos, eles abordam questões relevantes para qualquer pessoa que ensina, treina, orienta ou cria conteúdo educacional: Que métodos ajudam as pessoas a aprender de forma eficaz? Quais técnicas de estudo comuns são ineficientes? Como a instrução deve ser estruturada para uma retenção e transferência ideais?
 ---

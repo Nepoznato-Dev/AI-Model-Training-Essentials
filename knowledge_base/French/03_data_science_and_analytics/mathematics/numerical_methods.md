@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Méthodes numériques
 Les méthodes numériques constituent le pont entre la théorie mathématique et le calcul pratique. Alors que les mathématiques pures prouvent que des solutions existent, les méthodes numériques calculent en réalité des réponses approximatives avec une précision finie. Chaque modèle d'apprentissage automatique, simulation physique et pipeline d'analyse de données repose en fin de compte sur le calcul numérique. Comprendre ces méthodes (leur précision, leur stabilité et leurs limites) est essentiel pour créer des logiciels fiables.
 ---

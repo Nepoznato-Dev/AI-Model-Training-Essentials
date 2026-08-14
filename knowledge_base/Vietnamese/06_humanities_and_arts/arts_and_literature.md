@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Văn học nghệ thuật
 Sự thể hiện sáng tạo của con người - dù trong sách, tranh, nhạc hay phim - là một trong những thành tựu lâu dài nhất của nền văn minh. Việc hiểu các thể loại, phong trào và nhân vật chính sẽ mang lại bối cảnh cho thế giới chúng ta đang sống ngày nay. Mọi cuốn tiểu thuyết, mọi bản giao hưởng, mọi bộ phim đều đối thoại với những gì có trước đó.
 ---

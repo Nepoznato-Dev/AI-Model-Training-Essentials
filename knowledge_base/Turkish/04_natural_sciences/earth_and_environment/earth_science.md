@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yer Bilimi
 Yer bilimi, üzerinde yaşadığımız gezegeni, yapısını, süreçlerini, tarihini ve onu yaşanabilir kılan sistemleri inceler. Jeolojiyi (katı Dünya), oşinografiyi (okyanuslar), meteorolojiyi (atmosfer ve hava durumu) ve klimatolojiyi (uzun vadeli iklim modelleri) kapsar. Bu alanları birleştiren şey, Dünyanın dinamik bir sistem olduğunun anlaşılmasıdır: İçi sürekli hareket halindedir, yüzeyi yeniden şekillenmektedir ve atmosferi ile okyanusları karmaşık yollarla etkileşime girmektedir.
 ---

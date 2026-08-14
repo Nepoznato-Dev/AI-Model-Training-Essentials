@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # การเปรียบเทียบข้ามภาษา - ประเภทข้อมูลและโครงสร้าง
 ## ประเภทดั้งเดิม
 | พิมพ์ | หลาม | จาวาสคริปต์ | สนิม | ไป | ชวา | ซี | ซี++ | ซี# |

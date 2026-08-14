@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für Erlang und Elixir. Es ergänzt die Hauptreferenz, indem es sich auf Mustervergleich, Prozessmanagement, OTP-Verhalten und fehlertolerante Systemmuster konzentriert.
 ---

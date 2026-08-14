@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, deyimsel kalıpları ve temiz, deyimsel Julia kodu yazmaya yönelik en iyi uygulamaları kapsar.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Delphi / Object Pascal — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Delphi/Object Pascal. Il complète la référence principale Delphi en se concentrant sur des modèles de syntaxe exhaustifs, des fonctionnalités de POO, des génériques, des enregistrements et des idiomes de langage.
 ---

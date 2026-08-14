@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Quantenmechanik
 Quantenmechanik ist die Theorie der Physik auf den kleinsten Skalen – Atome, Elektronen, Photonen und die Grundteilchen der Natur. Es ersetzt die deterministische Welt der klassischen Mechanik durch Wahrscheinlichkeiten, Überlagerungen und Verschränkung. Trotz ihres kontraintuitiven Charakters ist die Quantenmechanik die am genauesten geprüfte Theorie in der gesamten Wissenschaft. Heutzutage werden seine Prinzipien durch Quantencomputer, die versprechen, bestimmte Probleme exponentiell schneller zu lösen als klassische Maschinen, direkt für die Datenverarbeitung relevant.
 ---

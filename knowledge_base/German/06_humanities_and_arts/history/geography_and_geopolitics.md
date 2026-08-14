@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geographie und Geopolitik
 Die Geographie prägt das Schicksal. Die Lage von Bergen, Flüssen und natürlichen Ressourcen hat über Jahrtausende hinweg Handelsrouten bestimmt, Kriege entfacht und Zivilisationen aufgebaut. Geopolitik – das Zusammenspiel von Geographie, Macht und Politik – ist auch heute noch von entscheidender Bedeutung für das Verständnis, warum sich Nationen so verhalten, wie sie es tun.
 ---

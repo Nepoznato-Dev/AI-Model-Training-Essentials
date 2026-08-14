@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Chemia
 Jeśli fizyka jest regułą gry, chemia jest tym, co dzieje się, gdy elementy wchodzą w interakcję. Chemia bada, w jaki sposób atomy łączą się, rozdzielają i przestawiają, co oznacza, jak zachowują się wszystkie materiały. Wypełnia lukę między podstawową fizyką a złożonością biologii, geologii i inżynierii.
 ---

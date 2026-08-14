@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ビジュアルアーツ
 ビジュアル アートは、ラスコーの洞窟壁画から今日のデジタル インスタレーションに至るまで、人類最古のコミュニケーション形式です。芸術運動、媒体、創造的な作品を保存する機関を理解すると、何千年にもわたって社会が美、力、精神性、反対意見をどのように表現してきたかについて、より深く理解できるようになります。
 ---

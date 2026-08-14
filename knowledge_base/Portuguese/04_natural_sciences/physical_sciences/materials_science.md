@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ciência dos Materiais
 A ciência dos materiais é o estudo de como a estrutura de um material (em escalas atômica, microscópica e macroscópica) determina suas propriedades e como os métodos de processamento podem ser usados ​​para controlar essa estrutura para alcançar o desempenho desejado. É a área que responde a perguntas como: por que o aço é forte, mas pesado? Por que o vidro é transparente, mas quebradiço? Como podemos fabricar baterias que carreguem mais rápido? Que materiais sobreviverão às condições de Marte? Cada peça de tecnologia que você já usou é feita de materiais, e os avanços na tecnologia quase sempre exigem avanços nos materiais.
 ---

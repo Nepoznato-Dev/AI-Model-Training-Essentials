@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp at Clojure — Kasaysayan ng Bersyon at Ebolusyon
 ## Lisp Timeline
 | Bersyon | Taon | Pangunahing Tema |

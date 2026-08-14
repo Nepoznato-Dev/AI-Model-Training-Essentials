@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Paghahambing ng Mga Serbisyo sa Cloud
 Isang magkatabing paghahambing ng tatlong pangunahing tagapagbigay ng cloud — AWS, Azure, at Google Cloud — sa kabuuan ng compute, storage, database, AI/ML, networking, monitoring, at infrastructure-as-code. Kapaki-pakinabang para sa mga arkitekto na nagpapasya kung aling platform ang gagamitin, o mga serbisyo sa pagmamapa mula sa isang ulap patungo sa isa pa.
 ---

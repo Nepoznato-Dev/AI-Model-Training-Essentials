@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dinamik Sistemler
 **Dinamik sistem**, bir durumun sabit bir kurala göre zaman içinde nasıl geliştiğini açıklar. Gezegensel yörüngelerden nüfus dinamiklerine, hava koşullarından eğitim sinir ağlarına kadar dinamik sistem teorisi, olayların nasıl değiştiğini anlamak için gerekli dili ve araçları sağlar. Bu dosya sıradan diferansiyel denklemleri (ODE'ler), kısmi diferansiyel denklemleri (PDE'ler), kararlılık analizini, kaosu ve çatallanmaları kapsar.
 ---

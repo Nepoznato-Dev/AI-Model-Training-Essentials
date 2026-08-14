@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visualização de dados
 Um gráfico bem desenhado pode revelar padrões que as tabelas de números escondem. Um projeto mal projetado pode enganar, confundir ou entediar. A visualização de dados é a arte de transformar dados em histórias visuais que informam decisões. Este arquivo cobre a seleção de gráficos, princípios de design, erros comuns e as ferramentas que tornam tudo isso possível.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Porównanie międzyjęzykowe — współbieżność i równoległość
 ## Przegląd modeli współbieżności
 | Język | Modelka | Kluczowy mechanizm | Wspólna pamięć? |

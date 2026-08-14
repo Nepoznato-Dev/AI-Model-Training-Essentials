@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — 语法参考
 本文档提供了 Ruby (3.x) 的全面、结构化语法参考。它通过关注详尽的语法模式、块和闭包、元编程和 Ruby 习惯用法来补充主要的 Ruby 参考。
 ---

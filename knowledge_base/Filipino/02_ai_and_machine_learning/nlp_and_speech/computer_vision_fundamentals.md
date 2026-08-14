@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Computer Vision Fundamentals
 Binibigyan ng computer vision ang mga makina ng kakayahang magbigay-kahulugan at maunawaan ang visual na impormasyon mula sa mundo — mga larawan, video, at 3D na data. Pinapatakbo nito ang lahat mula sa pagkilala sa mukha sa iyong telepono hanggang sa mga self-driving na kotse, pagsusuri ng medikal na larawan, at pang-industriyang kontrol sa kalidad. Sinasaklaw ng file na ito ang mga pangunahing konsepto, arkitektura, at diskarte.
 ---

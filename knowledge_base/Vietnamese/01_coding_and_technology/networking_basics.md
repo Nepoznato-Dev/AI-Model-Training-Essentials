@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kiến thức cơ bản về mạng
 Tài liệu tham khảo thực tế dành cho nhà phát triển và quản trị viên hệ thống — các khái niệm cốt lõi, giao thức, lệnh và cách khắc phục sự cố.
 ---

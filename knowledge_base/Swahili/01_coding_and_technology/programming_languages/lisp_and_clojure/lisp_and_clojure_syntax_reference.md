@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Common Lisp na Clojure. Inakamilisha marejeleo makuu ya Lisp/Clojure kwa kulenga misemo ya S, makros, miundo ya data inayoendelea, na mifumo ya utendakazi ya utayarishaji.
 ---

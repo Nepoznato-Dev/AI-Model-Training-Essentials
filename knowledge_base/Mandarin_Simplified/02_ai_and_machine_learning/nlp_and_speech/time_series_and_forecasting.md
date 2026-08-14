@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 时间序列和预测
 时间序列数据是随时间推移收集的任何数据：股票价格、温度读数、网站流量、销售数据、心率监测器、能源消耗。预测是指根据过去的模式预测未来的价值。它是数据科学最有实际价值的应用之一，也是最困难的应用之一，因为未来确实是不确定的，而现实世界的时间序列充满了噪音、季节性和结构性中断。
 ---

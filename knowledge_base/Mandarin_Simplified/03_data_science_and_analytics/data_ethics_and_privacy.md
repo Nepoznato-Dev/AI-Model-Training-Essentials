@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 数据伦理和隐私
 数据伦理是对数据收集、分析和部署如何影响人们的权利、自主权和福祉的研究。隐私是对谁控制个人信息以及如何共享个人信息的具体关注。这些话题已经从学术辩论变成了头版新闻——GDPR 的执行、影响数十亿用户的数据泄露，以及公众越来越意识到科技公司的数据实践对民主、平等和个人自由产生真正的影响。
 ---

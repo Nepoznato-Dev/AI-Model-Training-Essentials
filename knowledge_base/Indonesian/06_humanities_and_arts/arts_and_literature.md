@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Seni dan Sastra
 Ekspresi kreatif manusia – baik dalam buku, lukisan, musik, atau film – adalah salah satu catatan peradaban yang paling abadi. Memahami genre, gerakan, dan tokoh utama memberikan konteks pada dunia yang kita tinggali saat ini. Setiap novel, setiap simfoni, setiap film berbincang dengan apa yang terjadi sebelumnya.
 ---

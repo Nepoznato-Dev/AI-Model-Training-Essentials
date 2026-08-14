@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C++ — সংস্করণ ইতিহাস ও বিবর্তন
 ## টাইমলাইন
 | সংস্করণ | বছর | মূল থিম |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Letteratura
 La letteratura è la documentazione più duratura del pensiero, delle emozioni e dell’esperienza dell’umanità. Dalle epopee orali delle antiche civiltà ai romanzi dell'era digitale di oggi, ogni opera dialoga con ciò che l'ha preceduta. Comprendere i generi, i movimenti e le tecniche letterarie ti offre una lente più ricca per la lettura e per comprendere le culture che hanno prodotto queste opere.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Thực phẩm, Nông nghiệp và Dinh dưỡng
 Thực phẩm là nhu cầu cơ bản nhất của con người và nông nghiệp là nền tảng của nền văn minh. Sự chuyển đổi từ săn bắn và hái lượm sang trồng trọt - Cách mạng Đồ đá mới, khoảng 10.000 năm trước - là điều cho phép con người xây dựng thành phố, phát triển chữ viết và tạo ra mọi thứ khác mà chúng ta gọi là "nền văn minh". Ngày nay, nông nghiệp sử dụng khoảng 27% lực lượng lao động toàn cầu và tạo ra khoảng 10 nghìn tỷ calo mỗi ngày. Tuy nhiên, khoảng 800 triệu người vẫn đói, trong khi hơn 2 tỷ người thừa cân hoặc béo phì. Vấn đề không phải là sản xuất mà là phân phối, tiếp cận và lựa chọn.
 ---

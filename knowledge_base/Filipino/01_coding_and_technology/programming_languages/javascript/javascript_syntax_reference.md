@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa JavaScript. Kinukumpleto nito ang pangunahing sanggunian ng JavaScript sa pamamagitan ng pagtutok sa mga kumpletong pattern ng syntax, mga talahanayan ng operator, at panloob na mekanika.
 ---

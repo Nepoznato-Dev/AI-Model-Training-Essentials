@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — エコシステムとツールのガイド
 このガイドでは、Perl エコシステムの重要なツール、フレームワーク、インフラストラクチャについて説明します。
 ---

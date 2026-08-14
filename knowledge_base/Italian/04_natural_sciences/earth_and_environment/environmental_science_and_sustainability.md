@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scienze ambientali e sostenibilità
 La scienza ambientale applica i metodi della fisica, della chimica, della biologia, della geologia e dell'economia alla domanda: "Cosa sta succedendo al nostro pianeta e cosa si può fare al riguardo?" È un campo interdisciplinare – una convergenza di molteplici discipline – che contribuisce sia alla sua profondità analitica che alla sua rilevanza politica.
 La tensione fondamentale nella scienza ambientale è questa: la civiltà umana dipende dall’estrazione di risorse dall’ambiente, ma l’estrazione di tali risorse cambia l’ambiente in modi che possono minare i sistemi da cui dipendiamo. Comprendere quel ciclo di feedback è l'intero campo in poche parole.

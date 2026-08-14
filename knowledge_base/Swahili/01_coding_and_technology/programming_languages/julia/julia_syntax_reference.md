@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Julia (1.x). Inakamilisha rejeleo kuu la Julia kwa kuzingatia mifumo kamili ya sintaksia, utumaji nyingi, macros, upangaji metaprogramu, na kompyuta ya kisayansi.
 ---

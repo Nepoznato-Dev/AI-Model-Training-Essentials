@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — I/O & File Operations"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # کراس لینگویج کا موازنہ — I/O اور فائل آپریشنز
 ## کنسول آؤٹ پٹ
 | زبان | stdout پر پرنٹ کریں |

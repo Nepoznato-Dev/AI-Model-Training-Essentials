@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ensamblaje: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos para escribir código ensamblador limpio y fácil de mantener (enfoque x86/x64 con sintaxis NASM).
 ---

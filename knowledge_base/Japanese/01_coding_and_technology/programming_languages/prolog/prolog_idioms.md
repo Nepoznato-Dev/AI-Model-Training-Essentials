@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで慣用的な Prolog コードを記述するための慣用的なパターンについて説明します。
 ---

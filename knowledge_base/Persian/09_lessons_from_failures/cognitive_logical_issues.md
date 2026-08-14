@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سوگیری های شناختی و مغالطه های منطقی
 این سند سوگیری‌های شناختی، مغالطه‌های منطقی و خطاهای استدلالی را که هم بر تصمیم‌گیری انسانی و هم بر خروجی‌های سیستم هوش مصنوعی تأثیر می‌گذارند، ادغام می‌کند.
 ---

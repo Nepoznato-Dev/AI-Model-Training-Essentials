@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang 和 Elixir — 生態系統和工具指南
 本指南涵蓋了 Erlang 和 Elixir 生態系統中的基本工具、框架和基礎設施，共享 BEAM VM 和 OTP。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 경영과 경제
 제품이나 서비스를 판매하는 모든 조직은 기업이고, 제품을 생산하고 유통하는 모든 사회는 경제입니다. 이 파일의 개념은 프리랜서 작업을 하거나, 기업에서 일하거나, 뉴스를 이해하려고 하거나, 돈이 세상에서 어떻게 움직이는지 파악하려는 경우에 적용됩니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell 和 PowerShell — 常见错误和反模式
 本文档列出了 Shell/Bash 和 PowerShell 中最常见的错误、陷阱和反模式，并进行了更正。
 ---

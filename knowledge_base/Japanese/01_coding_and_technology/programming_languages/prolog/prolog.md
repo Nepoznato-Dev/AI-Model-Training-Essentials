@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #プロローグ
 Prolog (Programming in Logic) は、1972 年に Alain Colmerauer と Philippe Roussel によって作成された論理プログラミング言語です。このリストにある他の言語とは異なり、Prolog はコンピューターに問題を「どのように」解決するかを指示しません。ユーザーは「何が*」 (事実と規則) を宣言すると、Prolog の推論エンジンが論理的演繹を通じて答えを導き出します。
 Prolog は、1980 年代のエキスパート システム、自然言語処理、AI 研究に選ばれた言語でした。これは日本の第 5 世代コンピュータ システム プロジェクトを推進し、自然言語理解のために IBM の Watson で使用されました。現在、Prolog は制約解決、スケジューリング、型推論、法的推論など、問題が論理関係として自然に表現されるあらゆる場所で使用されています。

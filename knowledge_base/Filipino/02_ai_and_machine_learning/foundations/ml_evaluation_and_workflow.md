@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Machine Learning Evaluation at Workflow
 Isang praktikal na gabay sa lifecycle ng ML — mula sa pag-frame ng problema hanggang sa pagsubaybay sa produksyon — na may pagtuon sa mga sukatan, pagpapatunay, at pag-debug.
 ---

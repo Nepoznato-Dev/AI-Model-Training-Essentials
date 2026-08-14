@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geografia e geopolitica
 La geografia modella il destino. La posizione delle montagne, dei fiumi e delle risorse naturali ha determinato le rotte commerciali, scatenato guerre e costruito civiltà per millenni. Oggi, la geopolitica – l’interazione tra geografia, potere e politica – rimane essenziale per comprendere perché le nazioni si comportano in un certo modo.
 ---

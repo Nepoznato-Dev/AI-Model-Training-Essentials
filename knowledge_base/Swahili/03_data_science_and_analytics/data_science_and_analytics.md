@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sayansi ya Takwimu na Uchanganuzi
 Sayansi ya data ni taaluma ya kubadilisha data mbichi kuwa maarifa yanayotekelezeka. Inakaa katika makutano ya takwimu, sayansi ya kompyuta, na utaalam wa kikoa - na imekuwa muhimu katika kila sekta kutoka kwa fedha hadi huduma ya afya. Faili hii hupitia dhana za msingi, zana, na mtiririko wa kazi ambao kila mtaalamu anapaswa kujua.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ada
 Ada, güvenlik açısından kritik ve yüksek bütünlüğe sahip sistemler için tasarlanmış, statik olarak yazılmış, derlenmiş bir programlama dilidir. İlk olarak 1980'lerde ABD Savunma Bakanlığı (adını ilk bilgisayar programcısı olarak kabul edilen Ada Lovelace'den almıştır) ile sözleşme kapsamında geliştirilen Ada, güvenilirliği, sürdürülebilirliği ve doğruluğu vurgular. O zamanlar Savunma Bakanlığı tarafından kullanılan yüzlerce programlama dilini iyi tanımlanmış tek bir dille değiştirmek üzere tasarlandı.
 Ada, havacılıkta (kablolu uçuş sistemleri), uzayda (ESA ve NASA), savunmada (füze rehberliği, radar), demiryolu taşımacılığında ve tıbbi cihazlarda - yazılım arızasının hayatlara mal olabileceği her yerde kullanılır.

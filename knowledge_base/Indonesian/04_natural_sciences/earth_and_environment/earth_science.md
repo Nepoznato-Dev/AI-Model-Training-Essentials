@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Ilmu Bumi
 Ilmu kebumian mempelajari planet tempat kita tinggal – struktur, proses, sejarah, dan sistem yang menjadikannya layak huni. Ini mencakup geologi (bumi padat), oseanografi (lautan), meteorologi (atmosfer dan cuaca), dan klimatologi (pola iklim jangka panjang). Yang menyatukan bidang-bidang ini adalah pemahaman bahwa Bumi adalah sistem yang dinamis: bagian dalamnya terus bergerak, permukaannya dibentuk ulang, dan atmosfer serta lautan berinteraksi dengan cara yang kompleks.
 ---

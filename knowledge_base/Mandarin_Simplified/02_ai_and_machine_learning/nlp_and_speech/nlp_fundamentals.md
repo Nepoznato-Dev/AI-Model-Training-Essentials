@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP 基础知识
 自然语言处理 (NLP) 是教导机器理解、生成和使用人类语言的领域。它为搜索引擎、聊天机器人、翻译系统、情感分析和大型语言模型 (LLM) 提供支持，这些模型自 2020 年以来已经改变了人工智能。该文件涵盖了从经典技术到基于 Transformer 的现代架构的演变。
 ---

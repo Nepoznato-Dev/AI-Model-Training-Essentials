@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ج - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا للغة C (C11/C17 مع ملاحظات C23). وهو يكمل المرجع الرئيسي للغة C من خلال التركيز على أنماط بناء الجملة الشاملة وجداول المشغلين وميكانيكا المؤشر وإدارة الذاكرة.
 ---

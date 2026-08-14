@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD Pipeline Configuration
 
 Continuous Integration (CI) and Continuous Deployment (CD) pipelines automate the process of building, testing, and deploying software. This reference covers the configuration patterns for the most popular CI/CD platforms: GitHub Actions, GitLab CI, and general pipeline design principles.

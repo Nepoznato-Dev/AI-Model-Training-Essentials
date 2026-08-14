@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # এসকিউএল — ইডিওম্যাটিক প্যাটার্নস এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি পরিষ্কার, দক্ষ SQL লেখার জন্য বাহাদুরি প্যাটার্ন এবং সর্বোত্তম অনুশীলনগুলিকে কভার করে।
 ---

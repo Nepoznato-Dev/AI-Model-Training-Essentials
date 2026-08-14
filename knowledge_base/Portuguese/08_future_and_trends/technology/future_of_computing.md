@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # O futuro da computação
 O futuro da computação está a ser moldado por forças que desafiam os pressupostos fundamentais dos últimos 60 anos. A Lei de Moore – a observação de que o poder da computação duplica aproximadamente a cada dois anos – está a abrandar. A arquitetura von Neumann – CPU e memória separadas – está atingindo uma “parede de memória”. A computação quântica promete resolver problemas que os computadores clássicos não conseguem. Chips neuromórficos imitam a arquitetura do cérebro. A edge computing afasta o processamento dos data centers centralizados. E a IA está mudando a finalidade dos computadores – desde ferramentas que executam instruções até sistemas que aprendem, geram e raciocinam. Compreender essas mudanças é importante para qualquer pessoa que construa, compre ou dependa de tecnologia.
 ---

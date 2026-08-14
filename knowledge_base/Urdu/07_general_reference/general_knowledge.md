@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #جنرل نالج
 یہ فائل حقائق اور تصورات کا مجموعہ ہے جو بات چیت، خبروں، تعلیم اور روزمرہ کی زندگی میں باقاعدگی سے سامنے آتے ہیں۔ اسے پس منظر کے علم کے طور پر سوچیں - اس قسم کی چیز جو آپ کو یہ سمجھنے میں مدد کرتی ہے کہ آپ کیا پڑھ رہے ہیں، سن رہے ہیں یا تجربہ کر رہے ہیں۔
 ---

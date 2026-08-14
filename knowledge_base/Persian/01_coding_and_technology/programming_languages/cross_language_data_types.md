@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # مقایسه بین زبانی - انواع داده ها و ساختارها
 ## انواع اولیه
 | نوع | پایتون | جاوا اسکریپت | زنگ زدگی | برو | جاوا | ج | C++ | سی شارپ |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i antywzorce w Perlu wraz z poprawkami.
 ---

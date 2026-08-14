@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Feature-Engineering
 Unter Feature Engineering versteht man den Prozess der Umwandlung von Rohdaten in Darstellungen, die Modelle für maschinelles Lernen effektiver machen. Es wird oft als der wichtigste Schritt in der ML-Pipeline beschrieben – die Funktionen, die Sie einem Modell geben, sind wichtiger als der von Ihnen gewählte Algorithmus. Ein einfaches Modell mit gut ausgearbeiteten Funktionen übertrifft in der Regel ein komplexes Modell mit rohen, unverarbeiteten Eingaben. Die Kunst besteht darin, sowohl die Domäne als auch die Daten gut genug zu verstehen, um Signale zu erzeugen, aus denen das Modell lernen kann.
 ---

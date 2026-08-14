@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lógica e Pensamento Crítico
 Lógica é o estudo do raciocínio válido – como construir argumentos sólidos e identificar argumentos falhos. O pensamento crítico é o hábito disciplinado de questionar suposições, avaliar evidências e raciocinar cuidadosamente. Essas habilidades são essenciais não apenas em matemática e ciências da computação, mas também na tomada de decisões cotidianas, na pesquisa científica e na navegação em um mundo rico em informações.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — Idiomatic Patterns & Best Practices
 
 This guide covers idiomatic patterns and best practices for writing clean, functional Scala 3 code.

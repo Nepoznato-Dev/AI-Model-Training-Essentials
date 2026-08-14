@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — Справочник по синтаксису
 Этот документ представляет собой полный структурированный справочник по синтаксису Perl (5.38+). Он дополняет основной справочник Perl, уделяя особое внимание исчерпывающим синтаксическим шаблонам, регулярным выражениям, ссылкам и возможностям Perl по обработке текста.
 ---

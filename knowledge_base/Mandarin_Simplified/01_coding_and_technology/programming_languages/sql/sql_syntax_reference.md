@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL — 语法参考
 本文档提供了全面、结构化的 SQL 语法参考（ANSI SQL 以及有关 PostgreSQL/MySQL/SQLite 方言差异的注释）。它通过关注详尽的查询模式、窗口函数、CTE 和数据库设计来补充主要的 SQL 参考。
 ---

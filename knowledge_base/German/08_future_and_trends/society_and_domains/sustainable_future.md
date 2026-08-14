@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nachhaltige Zukunft
 ## Übersicht
 Die Frage ist nicht mehr, ob die Welt zu einer nachhaltigen Wirtschaft übergehen muss, sondern wie schnell und wer die Führung übernimmt. Erneuerbare Energien sind mittlerweile in den meisten Märkten die günstigste Energiequelle. Die Prinzipien der Kreislaufwirtschaft wandeln sich vom Nischenkonzept zur Unternehmensstrategie. Städte überdenken alles, vom Transport bis zur Abfallwirtschaft. Und der Wettlauf um Netto-Null verändert Branchen von der Energiebranche bis zur Finanzbranche. So sieht die nachhaltige Zukunft in vier Schlüsseldimensionen aus.

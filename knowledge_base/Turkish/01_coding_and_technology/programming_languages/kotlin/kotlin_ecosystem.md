@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Kotlin — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz Kotlin ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

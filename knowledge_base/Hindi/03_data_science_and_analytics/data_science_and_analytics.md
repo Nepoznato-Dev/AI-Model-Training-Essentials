@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # डेटा साइंस और एनालिटिक्स
 डेटा विज्ञान कच्चे डेटा को कार्रवाई योग्य अंतर्दृष्टि में बदलने का अनुशासन है। यह सांख्यिकी, कंप्यूटर विज्ञान और डोमेन विशेषज्ञता के चौराहे पर बैठता है - और यह वित्त से लेकर स्वास्थ्य सेवा तक हर क्षेत्र में आवश्यक हो गया है। यह फ़ाइल उन मूल अवधारणाओं, उपकरणों और वर्कफ़्लो से गुजरती है जिन्हें प्रत्येक व्यवसायी को जानना चाहिए।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang y Elixir: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en Erlang y Elixir con correcciones.
 ---

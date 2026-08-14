@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису R (4.x). Он дополняет основной справочник по R, уделяя особое внимание исчерпывающим синтаксическим шаблонам, экосистеме tidyverse, манипулированию данными, статистическому моделированию и визуализации.
 ---

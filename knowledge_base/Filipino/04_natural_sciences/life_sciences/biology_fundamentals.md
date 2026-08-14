@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Pangunahing Kaalaman sa Biology
 Ang biology ay ang agham ng buhay. Ang lahat ng nabubuhay na bagay ay may ilang mga katangian: sila ay gawa sa mga selula, gumagamit sila ng enerhiya, sila ay lumalaki, sila ay tumutugon sa kanilang kapaligiran, sila ay nagpaparami, at sila ay nagbabago. Ang biology ay sumasaklaw mula sa molecular machinery sa loob ng isang cell hanggang sa mga interaksyon ng buong ecosystem, at ito ang pundasyon ng medisina, agrikultura, biotechnology, at konserbasyon.
 ---

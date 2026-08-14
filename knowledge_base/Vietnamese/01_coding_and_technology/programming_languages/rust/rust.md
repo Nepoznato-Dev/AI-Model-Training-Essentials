@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # rỉ sét
 Rust là ngôn ngữ lập trình được biên dịch, gõ tĩnh được phát hành lần đầu tiên vào năm 2015, được phát triển ban đầu bởi Graydon Hoare tại Mozilla. Lời hứa xác định của Rust là **an toàn bộ nhớ mà không cần thu gom rác**. Nó đạt được điều này thông qua hệ thống sở hữu của mình - một bộ quy tắc được thi hành tại thời điểm biên dịch giúp loại bỏ toàn bộ danh mục lỗi (tham chiếu con trỏ null, chạy đua dữ liệu, tràn bộ đệm, sử dụng sau khi miễn phí) trong khi tạo mã nhanh như C hoặc C++.
 Rust đã được bình chọn là ngôn ngữ lập trình "được yêu thích nhất" trong Khảo sát nhà phát triển Stack Overflow trong nhiều năm liên tiếp. Nó ngày càng được sử dụng nhiều trong lập trình hệ thống, WebAssugging, công cụ CLI, cơ sở hạ tầng đám mây và thay thế cho C/C++ trong các bối cảnh quan trọng về bảo mật. Nhân Linux hiện chấp nhận mã Rust.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang ed Elixir: errori comuni e anti-schemi
 Questo documento cataloga gli errori, le trappole e gli anti-modelli più comuni in Erlang ed Elixir con le relative correzioni.
 ---

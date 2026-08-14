@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 食品、农业和营养
 粮食是人类最基本的需求，农业是文明的基础。从狩猎和采集到农业的转变——大约一万年前的新石器革命——使人类能够建造城市、发展文字并创造我们所谓的“文明”的一切。如今，农业雇用了全球约 27% 的劳动力，每天生产约 10 万亿卡路里。然而，仍有约 8 亿人挨饿，超过 20 亿人超重或肥胖。问题不在于生产，而在于分配、获取和选择。
 ---

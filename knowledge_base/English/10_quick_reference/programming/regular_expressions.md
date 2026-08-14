@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Regular Expressions Cheat Sheet
 
 Regular expressions (regex) are patterns for matching text. They're used everywhere — search and replace, input validation, log parsing, data extraction, and more. This is a practical reference, not a textbook.

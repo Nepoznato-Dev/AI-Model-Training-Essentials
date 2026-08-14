@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Genetica e genomica
 La genetica è lo studio dell’ereditarietà: il modo in cui i tratti vengono trasmessi dai genitori alla prole attraverso il DNA. La genomica è lo studio di interi genomi: tutti i geni, le regioni non codificanti, come interagiscono e come variano tra individui e popolazioni. La transizione dalla genetica alla genomica è stata guidata dalla tecnologia di sequenziamento: siamo passati dallo studio di un gene alla volta alla lettura di interi genomi in poche ore, generando dati che stanno trasformando la medicina, l’agricoltura, la medicina legale e la nostra comprensione dell’evoluzione.
 ---

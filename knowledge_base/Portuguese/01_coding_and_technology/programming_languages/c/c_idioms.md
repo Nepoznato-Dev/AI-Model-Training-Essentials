@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C – Padrões Idiomáticos e Melhores Práticas
 Este guia aborda padrões idiomáticos e práticas recomendadas para escrever código C limpo e seguro.
 ---

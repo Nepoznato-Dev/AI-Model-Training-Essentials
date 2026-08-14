@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Disenyo at Arkitektura ng API
 Ang isang API (Application Programming Interface) ay kung paano nakikipag-usap ang mga bahagi ng software sa isa't isa. Ang isang mahusay na dinisenyo na API ay madaling maunawaan, pare-pareho, at kasiyahang magtrabaho kasama. Ang isang hindi maganda ang disenyo ay nagdudulot ng pagkalito, mga bug, at pagkabigo. Sinasaklaw ng file na ito ang mga prinsipyo, pattern, at kasanayan para sa pagbuo ng mga API na talagang gustong gamitin ng mga developer.
 ---

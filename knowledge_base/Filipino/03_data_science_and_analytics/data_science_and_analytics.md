@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Science at Analytics
 Ang agham ng data ay ang disiplina ng paggawa ng hilaw na data sa naaaksyong pananaw. Nakalagay ito sa intersection ng statistics, computer science, at domain expertise — at naging mahalaga ito sa bawat sektor mula sa pananalapi hanggang sa pangangalagang pangkalusugan. Ang file na ito ay nagtuturo sa mga pangunahing konsepto, tool, at daloy ng trabaho na dapat malaman ng bawat practitioner.
 ---

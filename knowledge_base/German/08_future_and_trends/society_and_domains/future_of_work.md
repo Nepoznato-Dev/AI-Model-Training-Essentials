@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zukunft der Arbeit
 ## Übersicht
 Die Art und Weise, wie wir arbeiten, verändert sich schneller als je zuvor seit der industriellen Revolution. Remote-Arbeit hat sich über Nacht von einem seltenen Vorteil zum Standard entwickelt. KI entwickelt sich von der Neuheit zum Kollaborateur. Die Gig Economy verändert, was „Beschäftigung“ überhaupt bedeutet. Und die Automatisierung kommt nicht für alle Jobs – aber für viele Aufgaben in den meisten Jobs. Hier ist ein Blick auf die Kräfte, die den Arbeitsplatz umgestalten, und was als nächstes kommt.

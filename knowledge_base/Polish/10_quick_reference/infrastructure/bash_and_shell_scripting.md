@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ściągawka dotycząca skryptów Bash i Shell
 Praktyczny podręcznik dotyczący pisania skryptów powłoki w języku Bash — domyślnej powłoce w większości systemów Linux i macOS. Obejmuje składnię, typowe wzorce, przetwarzanie tekstu i przydatne jednoliniowe.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #พร้อมวิศวะ
 วิศวกรรมพร้อมท์คือแนวทางปฏิบัติในการออกแบบ ปรับแต่ง และเพิ่มประสิทธิภาพพรอมต์อินพุตเพื่อให้ได้ผลลัพธ์ที่ดีที่สุดเท่าที่จะเป็นไปได้จากโมเดลภาษา เป็นทั้งศิลปะและวิทยาศาสตร์ และเป็นอินเทอร์เฟซหลักสำหรับการควบคุมพฤติกรรม LLM โดยไม่ต้องปรับแต่งอย่างละเอียด
 ---

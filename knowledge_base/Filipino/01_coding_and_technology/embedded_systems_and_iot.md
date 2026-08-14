@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Naka-embed na System at IoT
 Ang mga naka-embed na system ay mga computer na nakatago sa loob ng iba pang mga device — ang engine control unit ng iyong sasakyan, ang controller ng iyong washing machine, ang microcontroller sa isang smart thermostat. Hindi tulad ng mga computer na may pangkalahatang layunin, idinisenyo ang mga ito para sa mga partikular na gawain, kadalasang may mahigpit na limitasyon sa kapangyarihan, memorya, at bilis ng pagproseso. Pinapalawak ng Internet of Things (IoT) ang mga naka-embed na system sa pamamagitan ng pagkonekta sa mga ito sa mga network, na nagpapagana ng malayuang pagsubaybay, kontrol, at pagkolekta ng data. Magkasama, kinakatawan nila ang bilyun-bilyong mga computing device na nakikipag-ugnayan sa pisikal na mundo.
 ---

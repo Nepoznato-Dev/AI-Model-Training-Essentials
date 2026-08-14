@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cybersecurity Fundamentals
 
 Security is a discipline that must be integrated into every layer of a system from the outset, rather than added as an afterthought. Whether building a web application, managing infrastructure, or shipping an API, understanding the threat landscape and the fundamentals of defence is essential.

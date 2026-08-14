@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Research Methodology
 
 Research methodology is the systematic approach to investigating questions, testing hypotheses, and generating reliable knowledge. Whether you're conducting scientific experiments, social science surveys, business analysis, or academic research, the methodology you choose determines whether your findings are credible, reproducible, and useful. A well-designed study produces trustworthy results; a poorly designed one produces noise — or worse, confident wrong answers.

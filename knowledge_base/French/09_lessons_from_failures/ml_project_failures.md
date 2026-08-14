@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Échecs de projets d'apprentissage automatique
 Les projets d'apprentissage automatique échouent à un rythme alarmant : les estimations de l'industrie suggèrent que 60 à 85 % des projets de ML n'atteignent jamais la production. Les échecs ne viennent généralement pas des algorithmes ; ils résident dans le processus, les données, les attentes et le contexte organisationnel. Comprendre pourquoi les projets ML échouent est essentiel pour quiconque crée des systèmes ML, car les modes de défaillance sont prévisibles et largement évitables.
 ---

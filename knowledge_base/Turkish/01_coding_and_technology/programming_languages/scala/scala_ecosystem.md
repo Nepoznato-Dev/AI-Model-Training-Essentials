@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz Scala ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

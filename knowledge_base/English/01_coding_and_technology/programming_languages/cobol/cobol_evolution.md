@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Version History & Evolution
 
 ## Timeline

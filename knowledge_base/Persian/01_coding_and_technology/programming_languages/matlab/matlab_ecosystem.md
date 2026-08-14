@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، جعبه ابزارها و زیرساخت های ضروری در اکوسیستم MATLAB را پوشش می دهد.
 ---

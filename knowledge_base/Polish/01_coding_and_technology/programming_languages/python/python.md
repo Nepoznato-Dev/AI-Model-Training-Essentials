@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Pyton
 Python to interpretowany język programowania wysokiego poziomu ogólnego przeznaczenia stworzony przez Guido van Rossuma i wydany po raz pierwszy w 1991 roku. Priorytetem jest dla niego czytelność kodu dzięki znacznym wcięciom i przejrzystej składni, która przypomina zwykły angielski. Python jest dynamicznie wpisywany, zbiera śmieci i obsługuje wiele paradygmatów programowania, w tym programowanie proceduralne, obiektowe i funkcjonalne.
 Obecnie Python jest językiem dominującym w sztucznej inteligencji/ML, nauce danych, obliczeniach naukowych i automatyce, pozostając jednocześnie jednym z najlepszych języków dla początkujących. Ta podwójna tożsamość (wystarczająco prosta dla pierwszego skryptu, wystarczająco potężna, aby trenować duże modele językowe) jest tym, co ją wyróżnia.

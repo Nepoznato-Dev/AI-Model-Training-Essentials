@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cloud Services Comparison
 
 A side-by-side comparison of the three major cloud providers — AWS, Azure, and Google Cloud — across compute, storage, databases, AI/ML, networking, monitoring, and infrastructure-as-code. Useful for architects deciding which platform to use, or mapping services from one cloud to another.

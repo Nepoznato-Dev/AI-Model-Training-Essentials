@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matematik
 Matematik yalnızca okulda çalışılan bir ders değildir; neredeyse her teknik alanın temelini oluşturur. Fizik bunu evreni tanımlamak için kullanır. Bilgisayar bilimi bunu algoritma tasarlamak için kullanır. Makine öğrenimi bunu ağırlıkları optimize etmek için kullanır. Finans bunu fiyat riskine karşı kullanıyor. Her dalda ustalık gerekli değildir, ancak ortamı anlamak ve her dalın nerede geçerli olduğunu bilmek diğer konuların anlaşılmasını kolaylaştırır.
 ---

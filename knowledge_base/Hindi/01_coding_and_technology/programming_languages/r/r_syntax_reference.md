@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # आर - सिंटैक्स संदर्भ
 यह दस्तावेज़ R (4.x) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, सुव्यवस्थित पारिस्थितिकी तंत्र, डेटा हेरफेर, सांख्यिकीय मॉडलिंग और विज़ुअलाइज़ेशन पर ध्यान केंद्रित करके मुख्य आर संदर्भ को पूरक करता है।
 ---

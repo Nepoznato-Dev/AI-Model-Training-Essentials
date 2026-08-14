@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی Erlang و Elixir را در BEAM VM پوشش می دهد.
 ---

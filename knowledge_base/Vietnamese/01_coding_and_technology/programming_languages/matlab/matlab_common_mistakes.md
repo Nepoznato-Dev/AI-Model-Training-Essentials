@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # MATLAB — Những lỗi thường gặp và các mẫu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và phản mẫu phổ biến nhất trong MATLAB kèm theo các chỉnh sửa.
 ---

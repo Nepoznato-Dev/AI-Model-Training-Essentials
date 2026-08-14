@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису Scratch 3.0. Он дополняет основной справочник по Scratch, уделяя особое внимание исчерпывающим категориям блоков, шаблонам, управляемым событиями, управлению спрайтами, клонированию и творческим методам кодирования.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Economia Comportamental e Ciência da Decisão
 A economia comportamental estuda como as pessoas realmente tomam decisões – e não como os agentes racionais as tomariam. A economia tradicional pressupõe que as pessoas são racionais, interessadas em si mesmas e boas no processamento de informações. Décadas de pesquisas de Kahneman, Tversky, Thaler e outros mostraram que isso é extremamente impreciso. As pessoas usam atalhos mentais, são influenciadas por contextos irrelevantes, sobrecarregam informações recentes e cometem erros sistematicamente previsíveis. Compreender esses padrões é essencial para projetar melhores produtos, políticas, organizações e decisões pessoais.
 ---

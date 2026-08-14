@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — 일반적인 실수와 안티 패턴
 이 문서는 Rust에서 가장 흔히 발생하는 실수, 함정, 안티패턴을 나열합니다. 각 항목은 잘못된 접근 방식을 보여주고, 실패 이유를 설명하며, 올바른 솔루션을 제공합니다. Rust의 컴파일러는 많은 오류를 포착하지만 이러한 패턴을 이해하면 학습 곡선이 가속화됩니다.
 ---

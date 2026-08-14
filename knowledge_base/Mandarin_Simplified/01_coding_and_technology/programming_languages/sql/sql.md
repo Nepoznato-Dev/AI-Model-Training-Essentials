@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL
 SQL（结构化查询语言）是一种特定于领域的语言，旨在管理和查询关系数据库中的数据。 SQL 最初由 IBM 于 20 世纪 70 年代开发，并于 1987 年标准化，至今仍然是应用程序与其数据之间的主要接口。每个主要的关系数据库管理系统 (RDBMS) — PostgreSQL、MySQL、SQL Server、Oracle、SQLite — 都使用 SQL 作为其查询语言。
 SQL 不是通用编程语言。您不会用 SQL 编写 Web 应用程序。但是，如果您的应用程序存储数据（几乎所有应用程序都这样做），那么 SQL 就是您用来检索、转换和管理该数据的语言。它可以说是继通用编程之后最普遍有用的技术技能。

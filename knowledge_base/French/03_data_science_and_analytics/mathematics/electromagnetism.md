@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Électromagnétisme
 L'électromagnétisme est l'étude des champs électriques et magnétiques et de leurs interactions. Unifié par Maxwell dans les années 1860, l'électromagnétisme explique la lumière, l'électricité, le magnétisme, les ondes radio et la structure des atomes. Ce fut la première force fondamentale à être entièrement comprise mathématiquement, et ses équations ont inspiré la relativité restreinte d'Einstein et la théorie moderne des champs.
 ---

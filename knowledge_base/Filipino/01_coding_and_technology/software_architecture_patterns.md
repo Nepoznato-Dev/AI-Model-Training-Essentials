@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Pattern ng Arkitektura ng Software
 Ang arkitektura ay ang hanay ng mga istrukturang desisyon tungkol sa kung paano inorganisa ang isang sistema — anong mga bahagi mayroon ito, kung paano sila nakikipag-usap, at kung saan ang mga responsibilidad. Ang magandang arkitektura ay ginagawang madaling maunawaan, baguhin, at sukatin ang isang sistema. Ang masamang arkitektura ay nagpapahirap sa bawat pagbabago. Sinasaklaw ng file na ito ang mga pangunahing pattern, kung kailan gagamitin ang bawat isa, at ang mga trade-off na kasangkot.
 ---

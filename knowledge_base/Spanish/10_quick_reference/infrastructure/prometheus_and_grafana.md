@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prometeo y Grafana
 Prometheus es un conjunto de herramientas de monitoreo y alertas de código abierto diseñado para brindar confiabilidad y escalabilidad. Grafana es la plataforma líder de código abierto para visualizar datos de series temporales. Juntos, forman la pila de monitoreo más popular para infraestructuras y aplicaciones modernas. Prometheus recopila y almacena métricas; Grafana los muestra en paneles.
 ---

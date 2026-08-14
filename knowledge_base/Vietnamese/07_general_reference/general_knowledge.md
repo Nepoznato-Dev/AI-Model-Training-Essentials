@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Kiến thức tổng hợp
 Tệp này là tập hợp các sự kiện và khái niệm thường xuyên xuất hiện trong cuộc trò chuyện, tin tức, giáo dục và cuộc sống hàng ngày. Hãy coi nó như kiến ​​thức nền tảng - thứ giúp bạn hiểu những gì bạn đang đọc, nghe hoặc trải nghiệm.
 ---

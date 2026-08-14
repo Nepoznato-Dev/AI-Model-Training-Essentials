@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, modern COBOL kodu yazmaya yönelik deyimsel kalıpları kapsar.
 ---

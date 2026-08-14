@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # জুলিয়া — সিনট্যাক্স রেফারেন্স
 এই নথিটি জুলিয়া (1.x) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, মাল্টিপল ডিসপ্যাচ, ম্যাক্রো, মেটাপ্রোগ্রামিং এবং বৈজ্ঞানিক কম্পিউটিং-এ ফোকাস করে মূল জুলিয়া রেফারেন্সের পরিপূরক।
 ---

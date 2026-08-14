@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni Julii (1.x). Uzupełnia główne odniesienia do Julii, skupiając się na wyczerpujących wzorcach składni, wielokrotnym wysyłaniu, makrach, metaprogramowaniu i obliczeniach naukowych.
 ---

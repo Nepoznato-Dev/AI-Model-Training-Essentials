@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الأعمال والاقتصاد
 كل منظمة تبيع منتجًا أو خدمة هي شركة، وكل مجتمع ينتج ويوزع السلع هو اقتصاد. تنطبق المفاهيم الواردة في هذا الملف سواء كنت تدير عملية مستقلة، أو تعمل في شركة، أو تحاول فهم الأخبار، أو تكتشف فقط كيفية تحرك الأموال عبر العالم.
 ---

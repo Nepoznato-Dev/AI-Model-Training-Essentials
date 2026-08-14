@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جاوا - نحوی حوالہ
 یہ دستاویز جاوا کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ جامع نحوی نمونوں، آپریٹر ٹیبلز، اور JVM، OOP، اور ہم آہنگی کے اندرونی میکانکس پر توجہ مرکوز کرکے مرکزی جاوا حوالہ کی تکمیل کرتا ہے۔
 ---

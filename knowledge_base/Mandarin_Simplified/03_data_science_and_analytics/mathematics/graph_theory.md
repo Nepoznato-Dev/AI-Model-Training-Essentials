@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 图论
 **图**是由通过边（链接）连接的顶点（节点）组成的数学结构。图模型关系：社交网络、路线图、神经网络、依赖关系、沟通渠道。图论——对这些结构的研究——提供了计算机科学、运筹学和数据科学的核心算法和定理。
 ---

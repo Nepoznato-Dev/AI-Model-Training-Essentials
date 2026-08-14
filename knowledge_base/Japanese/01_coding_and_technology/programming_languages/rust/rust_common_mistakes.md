@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — よくある間違いとアンチパターン
 このドキュメントでは、Rust で最も一般的な間違い、罠、アンチパターンをカタログ化します。各エントリは、間違ったアプローチを示し、それが失敗する理由を説明し、正しい解決策を提供します。 Rust のコンパイラは多くのエラーを検出しますが、これらのパターンを理解することで学習曲線が加速されます。
 ---

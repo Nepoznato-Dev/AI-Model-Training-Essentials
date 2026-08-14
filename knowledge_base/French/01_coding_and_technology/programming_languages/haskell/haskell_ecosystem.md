@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — Guide de l'écosystème et des outils
 Ce guide couvre les outils, cadres et infrastructures essentiels de l'écosystème Haskell.
 ---

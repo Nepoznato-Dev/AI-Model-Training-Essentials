@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java
 Java ist eine statisch typisierte, objektorientierte Programmiersprache, die von James Gosling bei Sun Microsystems entwickelt und 1995 veröffentlicht wurde. Ihre Designphilosophie – „Einmal schreiben, überall ausführen“ (WORA) – wird durch die Java Virtual Machine (JVM) erreicht, die es ermöglicht, kompilierten Java-Code auf jeder Plattform auszuführen, die über eine JVM-Implementierung verfügt. Java ist eine der am weitesten verbreiteten Programmiersprachen der Geschichte und unterstützt Unternehmens-Backends, Android-Apps, Big-Data-Systeme und Finanzdienstleistungen.
 Obwohl Java fast 30 Jahre alt ist, entwickelt es sich weiter. Modernes Java (Versionen 17+) umfasst Datensätze, versiegelte Klassen, Mustervergleich, virtuelle Threads und ein wachsendes Ökosystem, das mit neueren Sprachen konkurriert.

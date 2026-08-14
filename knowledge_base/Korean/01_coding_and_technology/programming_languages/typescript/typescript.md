@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 타입스크립트
 TypeScript는 Microsoft(Anders Hejlsberg 주도)에서 개발하고 2012년에 처음 출시된 정적으로 유형이 지정된 JavaScript의 상위 집합입니다. JavaScript에 선택적 유형 주석, 인터페이스, 제네릭 및 고급 유형 시스템 기능을 추가한 다음 JavaScript가 실행되는 모든 곳에서 실행되는 일반 JavaScript로 컴파일됩니다. TypeScript는 별도의 언어나 런타임이 아닙니다. 유형 검사기가 있는 JavaScript입니다.
 TypeScript는 대규모 JavaScript 개발의 표준이 되었습니다. React, Angular, VS Code, Deno 및 대부분의 주요 오픈 소스 JavaScript 프로젝트는 TypeScript로 작성되었습니다. 상당한 크기의 새 JavaScript 프로젝트를 시작하는 경우 TypeScript가 권장되는 기본값입니다.

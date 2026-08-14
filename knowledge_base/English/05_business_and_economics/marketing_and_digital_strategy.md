@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Marketing and Digital Strategy
 
 Marketing is how businesses create, communicate, and deliver value to customers. It encompasses the entire system of understanding customer needs, positioning a product to meet those needs, and building relationships that convert buyers into advocates. The digital revolution has transformed the tools, channels, and speed of marketing, while the fundamentals remain consistent.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Performing Arts
 
 The performing arts — theater, film, dance, and music performance — are where art meets the living presence of an audience. Unlike a painting on a wall or a book on a shelf, performance unfolds in real time, creating a shared experience between artist and spectator that has been central to human culture for thousands of years.

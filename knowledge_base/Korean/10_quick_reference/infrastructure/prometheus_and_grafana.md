@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 프로메테우스와 그라파나
 Prometheus는 안정성과 확장성을 위해 설계된 오픈 소스 모니터링 및 경고 도구 키트입니다. Grafana는 시계열 데이터 시각화를 위한 최고의 오픈 소스 플랫폼입니다. 이 두 가지가 함께 현대 인프라 및 애플리케이션을 위한 가장 널리 사용되는 모니터링 스택을 형성합니다. Prometheus는 측정항목을 수집하고 저장합니다. Grafana는 이를 대시보드에 표시합니다.
 ---

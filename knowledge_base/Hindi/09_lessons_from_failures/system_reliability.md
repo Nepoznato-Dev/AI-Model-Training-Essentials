@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # सिस्टम विश्वसनीयता मुद्दे
 यह दस्तावेज़ मेमोरी लीक, दौड़ की स्थिति, समवर्ती प्रोग्रामिंग त्रुटियों और सिस्टम डिज़ाइन विफलताओं सहित विश्वसनीयता के मुद्दों को समेकित करता है।
 ---

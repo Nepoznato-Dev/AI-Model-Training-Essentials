@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # لوا - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والمكتبات والبنية التحتية الأساسية في نظام Lua البيئي.
 ---

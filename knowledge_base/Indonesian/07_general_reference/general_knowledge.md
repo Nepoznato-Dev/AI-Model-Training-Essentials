@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pengetahuan Umum
 File ini merupakan kumpulan fakta dan konsep yang sering muncul dalam percakapan, berita, pendidikan, dan kehidupan sehari-hari. Anggap saja sebagai latar belakang pengetahuan — sesuatu yang membantu Anda memahami apa yang Anda baca, dengar, atau alami.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका COBOL पारिस्थितिकी तंत्र में आवश्यक उपकरण, कंपाइलर और बुनियादी ढांचे को शामिल करती है।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Practical Life Skills
 
 School teaches you calculus but rarely teaches you how to file taxes, cook a balanced meal, or maintain a home. These are the practical competencies that affect your daily quality of life — the kind of knowledge that makes you self-sufficient and financially resilient. This file is a dense reference for the essentials.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour TypeScript. Il complète la référence principale de TypeScript en se concentrant sur le système de types, les génériques, les types utilitaires et la programmation avancée au niveau des types.
 ---

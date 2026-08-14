@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # بايثون - ورقة الغش
 ## الأساسيات
 ```python

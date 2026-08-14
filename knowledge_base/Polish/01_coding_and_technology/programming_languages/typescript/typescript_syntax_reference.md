@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — odniesienie do składni
 Ten dokument zawiera obszerne, uporządkowane informacje o składni języka TypeScript. Uzupełnia główne odniesienia do TypeScriptu, koncentrując się na systemie typów, rodzajach ogólnych, typach narzędzi i zaawansowanym programowaniu na poziomie typów.
 ---

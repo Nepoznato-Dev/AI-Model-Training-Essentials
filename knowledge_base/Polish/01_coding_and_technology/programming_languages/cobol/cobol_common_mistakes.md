@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i antywzorce w języku COBOL wraz z poprawkami.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog - Miundo ya Idiomatic & Mazoea Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo wa Prologi safi, wa nahau.
 ---

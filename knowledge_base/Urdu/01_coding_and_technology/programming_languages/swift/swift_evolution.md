@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سوئفٹ - ورژن کی تاریخ اور ارتقاء
 ## ٹائم لائن
 | ورژن | سال | کلیدی تھیم |

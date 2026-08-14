@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 데이터 파이프라인 및 ETL 오류
 데이터 파이프라인은 현대 조직의 배관입니다. 데이터 파이프라인은 변환을 통해 원본 시스템의 데이터를 분석, 기계 학습 및 의사 결정에 사용되는 데이터베이스, 웨어하우스 및 레이크로 이동합니다. 그들이 일할 때는 아무도 눈치 채지 못합니다. 실패하면 오래된 데이터에 대한 결정이 내려지고, 모델은 쓰레기에 대해 훈련되고, 보고서에는 불가능한 숫자가 표시되며, 전체 데이터 플랫폼에 대한 신뢰가 약화됩니다. 데이터 파이프라인 오류는 기술 조직에서 가장 흔하고 비용이 많이 드는 오류 중 하나입니다.
 ---

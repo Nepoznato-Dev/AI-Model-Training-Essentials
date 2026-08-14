@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingegneria delle funzionalità
 L'ingegneria delle funzionalità è il processo di trasformazione dei dati grezzi in rappresentazioni che rendono i modelli di machine learning più efficaci. Viene spesso descritto come il passaggio più importante nella pipeline ML: le funzionalità fornite a un modello contano più dell'algoritmo scelto. Un modello semplice con funzionalità ben realizzate in genere avrà prestazioni migliori di un modello complesso con input grezzi e non elaborati. L’arte sta nel comprendere sia il dominio che i dati abbastanza bene da creare segnali da cui il modello può imparare.
 ---

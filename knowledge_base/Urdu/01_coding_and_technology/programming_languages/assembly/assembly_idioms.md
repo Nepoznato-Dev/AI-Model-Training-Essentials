@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # اسمبلی - محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ صاف، برقرار رکھنے کے قابل اسمبلی کوڈ (NASM نحو کے ساتھ x86/x64 فوکس) لکھنے کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en Dart con correcciones.
 ---

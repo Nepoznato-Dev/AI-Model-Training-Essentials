@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Law and Legal Systems
 
 Law is the set of rules that a society agrees to enforce through its institutions. It is not the same as morality — you can do something legal that is immoral, and something illegal that is morally justified. Law exists to provide predictability: to establish what is allowed, what is forbidden, and what happens when the rules are broken. Without it, disputes are settled by power. With it, disputes are settled by process.

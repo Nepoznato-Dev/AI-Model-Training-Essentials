@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Graffio
 Scratch è un linguaggio di programmazione visivo basato su blocchi sviluppato dal MIT Media Lab e rilasciato per la prima volta nel 2007. Invece di scrivere codice basato su testo, gli utenti uniscono blocchi colorati per creare programmi. Scratch è progettato specificamente per i bambini dagli 8 ai 16 anni (anche se gli studenti di tutte le età lo utilizzano) per insegnare i concetti fondamentali della programmazione (loop, condizionali, variabili, eventi e funzioni) senza la barriera degli errori di sintassi.
 Scratch è il linguaggio di programmazione introduttivo più utilizzato al mondo, con oltre 100 milioni di utenti registrati e disponibilità in oltre 70 lingue. Funziona in un browser web ed è gratuito.

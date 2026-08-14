@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust — Kasaysayan ng Bersyon at Ebolusyon
 ## Timeline
 | Bersyon | Petsa ng Paglabas | Pangunahing Tema |

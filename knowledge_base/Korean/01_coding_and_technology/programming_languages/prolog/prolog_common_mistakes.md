@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 프롤로그 — 일반적인 실수 및 안티 패턴
 이 문서에는 Prolog의 가장 일반적인 실수, 함정 및 방지 패턴이 수정되어 목록화되어 있습니다.
 ---

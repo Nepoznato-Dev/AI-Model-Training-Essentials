@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Problemi di affidabilità del sistema
 Questo documento consolida i problemi di affidabilità tra cui perdite di memoria, condizioni di competizione, errori di programmazione simultanea ed errori di progettazione del sistema.
 ---

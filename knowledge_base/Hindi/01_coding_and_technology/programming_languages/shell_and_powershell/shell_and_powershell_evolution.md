@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # शैल और पावरशेल - संस्करण इतिहास और विकास
 ## यूनिक्स शैल टाइमलाइन
 | संस्करण | वर्ष | मुख्य विषय |

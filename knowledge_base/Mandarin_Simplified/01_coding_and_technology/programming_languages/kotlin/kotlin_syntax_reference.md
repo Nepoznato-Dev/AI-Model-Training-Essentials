@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin — 语法参考
 本文档提供了 Kotlin (2.0+) 的全面、结构化语法参考。它通过关注详尽的语法模式、空安全、协程和 Kotlin 习惯用法来补充主要的 Kotlin 参考。
 ---

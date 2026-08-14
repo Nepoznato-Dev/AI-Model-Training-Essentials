@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, modern Java (17+) kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

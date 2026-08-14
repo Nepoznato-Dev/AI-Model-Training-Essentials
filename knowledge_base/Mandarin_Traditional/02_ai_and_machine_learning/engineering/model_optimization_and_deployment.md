@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 模型最佳化和部署
 訓練大型人工智慧模型是一項重大成就，但有效部署它是需要大部分工程工作的地方。對於大多數實際應用程式來說，需要 10 秒響應或需要 8 個 A100 GPU 的模型是不切實際的。模型最佳化是使模型更小、更快、更具成本效益的過程，同時保持可接受的品質。該文件涵蓋了量化、修剪、蒸餾以及在生產中部署模型的實用工具。
 ---

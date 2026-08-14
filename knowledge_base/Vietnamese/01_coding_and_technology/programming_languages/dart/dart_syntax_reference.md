@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi tiêu — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho Dart (3.x). Nó bổ sung cho tham chiếu Dart chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, an toàn null, lập trình không đồng bộ và các mẫu thiết kế hướng Flutter.
 ---

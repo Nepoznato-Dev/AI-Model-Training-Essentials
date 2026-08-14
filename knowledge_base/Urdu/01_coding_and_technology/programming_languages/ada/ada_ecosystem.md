@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ اڈا ماحولیاتی نظام میں ضروری ٹولز، لائبریریوں اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

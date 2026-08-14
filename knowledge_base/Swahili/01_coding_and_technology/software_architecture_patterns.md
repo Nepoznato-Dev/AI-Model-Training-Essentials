@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Miundo ya Usanifu wa Programu
 Usanifu ni seti ya maamuzi ya kimuundo kuhusu jinsi mfumo unavyopangwa - ni vipengele gani, jinsi wanavyowasiliana, na wapi majukumu yanalala. Usanifu mzuri hufanya mfumo iwe rahisi kuelewa, kurekebisha, na kiwango. Usanifu mbaya hufanya kila mabadiliko kuwa mapambano. Faili hii inashughulikia mifumo kuu, wakati wa kutumia kila moja, na ubadilishanaji wa biashara unaohusika.
 ---

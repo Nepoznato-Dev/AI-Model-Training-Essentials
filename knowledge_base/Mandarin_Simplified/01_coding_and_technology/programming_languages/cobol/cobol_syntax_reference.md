@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL — 语法参考
 本文档提供了 COBOL (2014+) 的全面、结构化语法参考。它通过关注详尽的语法模式、数据描述、文件处理和业务逻辑来补充主要的 COBOL 参考。
 ---

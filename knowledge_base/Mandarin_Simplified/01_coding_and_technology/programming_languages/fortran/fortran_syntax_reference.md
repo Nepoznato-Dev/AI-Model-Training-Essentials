@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran — 语法参考
 本文档提供了 Modern Fortran (2008/2018) 的全面、结构化语法参考。它通过关注详尽的语法模式、数组操作、模块、OOP 和高性能计算来补充主要的 Fortran 参考。
 ---

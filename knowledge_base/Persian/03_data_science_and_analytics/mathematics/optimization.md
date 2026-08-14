@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # بهینه سازی
 بهینه سازی ریاضیات یافتن بهترین راه حل از مجموعه ای از راه حل های امکان پذیر است. می پرسد: با توجه به یک تابع و محدودیت ها، چه ورودی خروجی را به حداقل می رساند (یا حداکثر می کند)؟ بهینه سازی موتور یادگیری ماشینی است – آموزش یک مدل به معنای به حداقل رساندن یک تابع ضرر است. این در تحقیقات عملیات، اقتصاد، طراحی مهندسی و تقریباً در هر زمینه کمی ظاهر می شود.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Veri Mühendisliği ve Boru Hatları
 Veri mühendisliği, verileri uygun ölçekte taşıyan, dönüştüren ve depolayan sistemleri oluşturma disiplinidir. Güvenilir veri hatları olmadan makine öğrenimi modelleri eğitilemez, gösterge tabloları eski rakamları gösterir ve iş kararları tahminlere dayalıdır. Bu dosya, çalışan veri altyapısı oluşturmaya yönelik mimariyi, araçları ve uygulamaları kapsar.
 ---

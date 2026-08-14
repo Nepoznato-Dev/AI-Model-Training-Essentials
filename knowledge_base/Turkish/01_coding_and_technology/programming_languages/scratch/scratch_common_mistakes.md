@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Yaygın Hatalar ve Anti-Desenler
 Bu belge Scratch'teki en yaygın hataları ve tuzakları düzeltmelerle birlikte kataloglamaktadır.
 ---

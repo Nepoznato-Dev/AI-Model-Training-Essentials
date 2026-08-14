@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for Dart (3.x). It complements the main Dart reference by focusing on exhaustive syntax patterns, null safety, async programming, and Flutter-oriented design patterns.

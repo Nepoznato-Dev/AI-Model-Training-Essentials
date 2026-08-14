@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Etika dan Tata Kelola AI
 Sistem AI tidak netral. Mereka mencerminkan data yang menjadi dasar pelatihan mereka, nilai-nilai penciptanya, dan insentif dari organisasi yang menerapkannya. Etika bukan sekedar menanyakan "dapatkah kita membangun ini?" tapi "haruskah kita melakukannya?" Tata kelola adalah tentang menciptakan struktur – undang-undang, standar, badan pengawas – yang memastikan AI dikembangkan dan digunakan secara bertanggung jawab. File ini mencakup dimensi etika utama AI dan kerangka tata kelola yang muncul untuk mengatasinya.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Proses Stokastik
 **Proses stokastik** adalah kumpulan variabel acak yang diindeks berdasarkan waktu (atau ruang). Jika teori probabilitas mempelajari peristiwa acak individual, proses stokastik mempelajari bagaimana keacakan berkembang seiring berjalannya waktu. Mereka memodelkan harga saham, panjang antrian, penyebaran penyakit, generasi bahasa, dan dinamika pelatihan model pembelajaran mesin.
 ---

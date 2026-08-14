@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dünya Dinleri ve Karşılaştırmalı Mitoloji
 Dünya dinleri binlerce yıldır insan uygarlığını şekillendiren temel inanç, uygulama ve topluluk sistemleridir. Karşılaştırmalı mitoloji, farklı kültürlerin yaratılış, kahramanlar, tanrılar ve varoluşun anlamı hakkında anlattığı hikayeleri ve binlerce kilometre ve binlerce yıl boyunca birbirinden ayrılan gelenekler arasında yinelenen çarpıcı kalıpları inceler. Her ikisini de anlamak, insanların neden inandıkları şeye inandıklarını, kültürlerin nasıl farklılaştığını ve insan deneyimini neyin birleştirdiğini anlamak için gereklidir.
 ---

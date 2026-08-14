@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 성능 최적화
 성능 최적화는 응답 시간을 줄이고, 처리량을 늘리고, 메모리 사용량을 낮추고, 병목 현상을 제거하여 소프트웨어를 더 빠르게 만드는 방법입니다. 느린 소프트웨어는 사용자를 잃고 리소스를 낭비하며 모든 사람을 좌절시키기 때문에 이는 개발자가 가질 수 있는 가장 영향력 있는 기술 중 하나입니다. 그러나 이는 개발자가 증거가 아닌 직관을 기반으로 잘못된 것을 최적화하는 가장 흔히 저지르는 잘못 중 하나이기도 합니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで最新の Perl (5.38 以降) コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

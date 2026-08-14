@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Szybka inżynieria
 Szybka inżynieria to praktyka projektowania, udoskonalania i optymalizowania podpowiedzi wejściowych w celu uzyskania najlepszego możliwego wyniku z modelu językowego. Jest to zarówno sztuka, jak i nauka oraz podstawowy interfejs umożliwiający kontrolowanie zachowań LLM bez dostrajania.
 ---

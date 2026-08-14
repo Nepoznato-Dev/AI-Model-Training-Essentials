@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog - Mfumo wa Mazingira na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, utekelezaji, na miundombinu katika mfumo ikolojia wa Prolog.
 ---

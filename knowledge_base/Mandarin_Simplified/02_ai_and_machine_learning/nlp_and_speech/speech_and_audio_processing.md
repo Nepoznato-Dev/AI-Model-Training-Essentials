@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 语音和音频处理
 语音和音频处理涵盖了让机器听到、理解、生成和操纵声音的技术。这包括语音识别（将口语单词转换为文本）、语音合成（将文本转换为口语单词）、说话人识别、音乐生成和环境声音理解。深度学习已经改变了这个领域——现代系统的语音识别精度达到了人类水平，并产生出奇自然的合成声音。
 ---

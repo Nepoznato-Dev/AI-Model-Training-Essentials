@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Dynamical na Sistema
 Inilalarawan ng **dynamical system** kung paano umuunlad ang isang estado sa paglipas ng panahon ayon sa isang nakapirming panuntunan. Mula sa mga planetary orbit hanggang sa dynamics ng populasyon, mula sa mga pattern ng panahon hanggang sa pagsasanay sa mga neural network, ang teorya ng dynamical system ay nagbibigay ng wika at mga tool para sa pag-unawa kung paano nagbabago ang mga bagay. Sinasaklaw ng file na ito ang mga ordinaryong differential equation (ODEs), partial differential equation (PDEs), stability analysis, kaguluhan, at bifurcations.
 ---

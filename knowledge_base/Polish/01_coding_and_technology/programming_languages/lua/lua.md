@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Lua
 Lua to lekki, osadzany język skryptowy przeznaczony do rozszerzania aplikacji. Utworzony w 1993 roku na Papieskim Uniwersytecie Katolickim w Rio de Janeiro w Brazylii, Lua jest jednym z najszybszych dostępnych języków skryptowych. Jego niewielkie rozmiary (interpreter ma ~120 KB) i prostota sprawiają, że jest to doskonały wybór do tworzenia skryptów gier, systemów wbudowanych i konfiguracji.
 Lua jest najbardziej znana jako język skryptowy Robloxa (platformy gier z ponad 200 milionami użytkowników miesięcznie), dodatków do World of Warcraft i licznych silników gier (Love2D, Defold, Corona SDK). Jest również używany w Nginx (OpenResty), Redis i Wireshark.

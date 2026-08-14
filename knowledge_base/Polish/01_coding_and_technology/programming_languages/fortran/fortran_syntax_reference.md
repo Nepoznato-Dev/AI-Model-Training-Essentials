@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran — Odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni Modern Fortran (2008/2018). Uzupełnia główne odniesienia do języka Fortran, koncentrując się na wyczerpujących wzorcach składni, operacjach tablicowych, modułach, OOP i obliczeniach o wysokiej wydajności.
 ---

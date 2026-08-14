@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 網路安全基礎知識
 安全性是一門學科，必須從一開始就整合到系統的每一層，而不是事後添加。無論是建立 Web 應用程式、管理基礎架構或發布 API，了解威脅情勢和防禦基礎知識都是至關重要的。
 ---

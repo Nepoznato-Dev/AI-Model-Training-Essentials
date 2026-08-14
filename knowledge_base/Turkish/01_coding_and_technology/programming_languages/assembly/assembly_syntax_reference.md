@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Assembly Dili — Sözdizimi Referansı
 Bu belge, x86-64 Derlemesi (NASM sözdizimi) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı talimat kategorilerine, adresleme modlarına, yığın çerçevesi kurallarına ve sistem programlama modellerine odaklanarak ana Montaj referansını tamamlar.
 ---

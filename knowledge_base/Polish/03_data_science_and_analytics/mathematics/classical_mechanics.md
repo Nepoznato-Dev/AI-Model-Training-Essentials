@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mechanika klasyczna
 Mechanika klasyczna opisuje ruch obiektów pod wpływem sił. Od spadających jabłek po orbitujące planety, od wibrujących strun po zderzające się cząstki – jego zasady rządzą makroskopowym światem. Oprócz zastosowań fizycznych mechanika klasyczna dała początek rachunku wariacyjnego, geometrii symplektycznej i modelu Hamiltona, który leży u podstaw mechaniki kwantowej i współczesnej optymalizacji.
 ---

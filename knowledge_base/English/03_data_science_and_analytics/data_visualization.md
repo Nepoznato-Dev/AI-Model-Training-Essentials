@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Visualization
 
 A well-designed chart can reveal patterns that tables of numbers hide. A poorly designed one can mislead, confuse, or bore. Data visualization is the craft of turning data into visual stories that inform decisions. This file covers chart selection, design principles, common mistakes, and the tools that make it all possible.

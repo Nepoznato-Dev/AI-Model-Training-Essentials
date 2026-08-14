@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # शैल और पावरशेल - सिंटैक्स संदर्भ
 यह दस्तावेज़ बैश और पॉवरशेल के लिए एक व्यापक, संरचित सिंटैक्स संदर्भ प्रदान करता है। यह दोनों शेल के लिए संपूर्ण स्क्रिप्टिंग पैटर्न, पाइपलाइन, प्रक्रिया प्रबंधन और स्वचालन मुहावरों पर ध्यान केंद्रित करके मुख्य शेल संदर्भ को पूरक करता है।
 ---

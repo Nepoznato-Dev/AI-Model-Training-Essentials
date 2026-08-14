@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 认知偏差和逻辑谬误
 该文件整合了影响人类决策和人工智能系统输出的认知偏差、逻辑谬误和推理错误。
 ---

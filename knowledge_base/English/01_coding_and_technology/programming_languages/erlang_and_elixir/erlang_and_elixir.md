@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir
 
 Erlang was built by Ericsson in 1986 to power telephone switches — which explains why it handles concurrency, fault tolerance, and distributed systems better than almost anything else. Erlang processes are lightweight, isolated, and communicate only through message passing. When a process crashes, a supervisor restarts it. This "let it crash" philosophy produces systems that run for years without downtime.

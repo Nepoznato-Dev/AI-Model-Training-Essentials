@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Haskell — Histórico de versões e evolução
 ## Linha do tempo
 | Versão | Ano | Tema principal |

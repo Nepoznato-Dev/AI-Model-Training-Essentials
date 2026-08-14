@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Grundlagen der Computer Vision
 Computer Vision gibt Maschinen die Fähigkeit, visuelle Informationen aus der Welt – Bilder, Videos und 3D-Daten – zu interpretieren und zu verstehen. Es ermöglicht alles von der Gesichtserkennung auf Ihrem Telefon bis hin zu selbstfahrenden Autos, medizinischer Bildanalyse und industrieller Qualitätskontrolle. Diese Datei behandelt die Kernkonzepte, Architekturen und Techniken.
 ---

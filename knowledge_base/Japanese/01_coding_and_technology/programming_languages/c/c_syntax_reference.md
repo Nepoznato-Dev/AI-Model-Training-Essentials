@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — 構文リファレンス
 このドキュメントは、C の包括的で構造化された構文リファレンスを提供します (C11/C17 と C23 ノート)。網羅的な構文パターン、演算子テーブル、ポインターの仕組み、メモリ管理に焦点を当て、メインの C リファレンスを補完します。
 ---

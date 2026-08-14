@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فشل الذكاء الاصطناعي وماجستير القانون
 تعمل هذه الوثيقة على دمج أوضاع الفشل الشائعة في أنظمة الذكاء الاصطناعي ونماذج اللغات الكبيرة، بما في ذلك الهلوسة والمعلومات الخاطئة وأخطاء الاستدلال والمشكلات المتعلقة بالموجهات.
 ---

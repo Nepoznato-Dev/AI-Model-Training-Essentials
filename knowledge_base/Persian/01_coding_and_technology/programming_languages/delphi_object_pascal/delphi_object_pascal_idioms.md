@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی را برای نوشتن کد دلفی تمیز و آبجکت پاسکال پوشش می دهد.
 ---

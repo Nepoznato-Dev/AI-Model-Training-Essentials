@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rekayasa Kode Rendah dan Platform
 Platform berkode rendah memungkinkan orang membangun aplikasi dengan kode tulisan tangan minimal — biasanya melalui antarmuka drag-and-drop, alur kerja visual, dan konektor yang sudah dibuat sebelumnya. Rekayasa platform adalah disiplin dalam membangun platform pengembang internal (IDP) yang memudahkan tim produk untuk melayani infrastruktur, CI/CD, dan peralatan operasional secara mandiri. Kedua tren tersebut merupakan respons terhadap masalah yang sama: kesenjangan antara permintaan akan perangkat lunak dan pasokan pengembang yang dapat membangunnya.
 ---

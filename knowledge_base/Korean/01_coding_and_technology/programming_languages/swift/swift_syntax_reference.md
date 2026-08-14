@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — 구문 참조
 이 문서는 Swift(5.9+)에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 구문 패턴, 옵션, 프로토콜 지향 프로그래밍 및 최신 동시성에 중점을 두어 기본 Swift 참조를 보완합니다.
 ---

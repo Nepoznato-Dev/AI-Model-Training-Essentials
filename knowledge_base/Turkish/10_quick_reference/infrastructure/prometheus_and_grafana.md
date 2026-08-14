@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prometheus ve Grafana
 Prometheus, güvenilirlik ve ölçeklenebilirlik için tasarlanmış açık kaynaklı bir izleme ve uyarı araç setidir. Grafana, zaman serisi verilerini görselleştirmek için önde gelen açık kaynaklı platformdur. Birlikte modern altyapı ve uygulamalar için en popüler izleme yığınını oluştururlar. Prometheus metrikleri toplar ve saklar; Grafana bunları kontrol panellerinde görüntüler.
 ---

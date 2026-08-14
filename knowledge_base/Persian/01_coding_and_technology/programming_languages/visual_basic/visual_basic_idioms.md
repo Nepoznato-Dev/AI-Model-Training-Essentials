@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ویژوال بیسیک - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی برای نوشتن کدهای ویژوال بیسیک (.NET) تمیز را پوشش می دهد.
 ---

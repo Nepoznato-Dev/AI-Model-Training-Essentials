@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Porównanie międzyjęzykowe — typy i struktury danych
 ## Typy pierwotne
 | Wpisz | Pythona | JavaScript | Rdza | Idź | Jawa | C | C++ | C# |

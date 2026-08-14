@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript — 生態系統與工具指南
 本指南涵蓋了 JavaScript 生態系統中的基本工具、架構和基礎架構。
 ---

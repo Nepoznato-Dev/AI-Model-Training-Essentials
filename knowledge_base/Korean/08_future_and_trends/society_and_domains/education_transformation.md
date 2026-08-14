@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 교육 혁신
 ## 개요
 12년 동안 교실에 앉아 대학에 진학한 후 일을 하는 전통적인 교육 모델이 무너지고 있습니다. 이제 AI 교사는 대규모로 개인화된 교육을 제공할 수 있습니다. 기술 변화의 속도는 평생 학습이 더 이상 선택 사항이 아니라는 것을 의미합니다. 그리고 고용주는 귀하가 보유한 자격증뿐만 아니라 귀하가 *할 수 있는* 일에 점점 더 관심을 기울이고 있습니다. 교육이 어떻게 재구상되고 있는지 살펴보겠습니다.

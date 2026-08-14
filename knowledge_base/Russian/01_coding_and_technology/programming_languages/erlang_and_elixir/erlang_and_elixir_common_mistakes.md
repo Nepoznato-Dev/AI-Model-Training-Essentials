@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Эрланг и Эликсир — распространенные ошибки и антипаттерны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в Erlang и Elixir с исправлениями.
 ---

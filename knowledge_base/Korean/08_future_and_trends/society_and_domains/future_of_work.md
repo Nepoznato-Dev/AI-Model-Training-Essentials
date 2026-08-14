@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 일의 미래
 ## 개요
 우리가 일하는 방식은 산업 혁명 이후 그 어느 시점보다 빠르게 변화하고 있습니다. 원격 근무는 드문 특권에서 하룻밤 사이에 기본으로 전환되었습니다. AI는 새로운 것에서 협력자로 옮겨가고 있습니다. 공연 경제는 "고용"의 의미조차 바꾸고 있습니다. 그리고 자동화가 모든 직업에 적용되는 것은 아니지만 대부분의 직업 내 많은 작업에 자동화가 적용되고 있습니다. 직장을 재편하는 힘과 앞으로 일어날 일을 살펴보겠습니다.

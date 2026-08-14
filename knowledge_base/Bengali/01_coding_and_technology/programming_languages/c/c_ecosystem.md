@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # সি — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকা সি ইকোসিস্টেমের প্রয়োজনীয় টুলস, লাইব্রেরি এবং অবকাঠামো কভার করে।
 ---

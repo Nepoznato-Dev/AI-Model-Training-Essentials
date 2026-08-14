@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #コトリン
 Kotlin は、JetBrains によって開発され、2011 年に最初にリリースされた、静的に型指定され、コンパイルされたプログラミング言語です (2016 年には 1.0)。これは Java 仮想マシン (JVM) 上で実行され、Java と完全に相互運用可能です。つまり、Kotlin から任意の Java ライブラリを使用し、ラッパーなしで Java から Kotlin コードを呼び出すことができます。 2017 年、Google は Android 開発に推奨される言語として Kotlin を発表し、それ以来 Android 言語として主流になっています。
 Kotlin は、冗長性、null ポインター例外、欠落している最新機能など、Java の問題点を修正するように設計されました。その結果、大規模な Java エコシステムとの完全な互換性を維持しながら、簡潔、安全、表現力豊かな、現代化された Java のような言語が実現しました。

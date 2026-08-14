@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos para Erlang y Elixir en BEAM VM.
 ---

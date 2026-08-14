@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 醫藥與保健
 醫學是診斷、治療和預防疾病的科學和實踐。這是人類最古老的事業之一——希波克拉底誓言可以追溯到古希臘——也是變化最快的事業之一。光是上個世紀，我們就從沒有抗生素發展到擁有可以重寫患者 DNA 的基因療法。
 該文件涵蓋了醫學的運作方式：主要專業、疾病如何診斷和治療、醫療保健系統如何組織，以及當人類生命受到威脅時出現的道德問題。

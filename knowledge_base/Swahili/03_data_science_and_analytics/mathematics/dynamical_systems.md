@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mifumo Inayobadilika
 **mfumo unaobadilika** unaeleza jinsi hali inavyobadilika baada ya muda kulingana na kanuni maalum. Kutoka kwa mizunguko ya sayari hadi mienendo ya idadi ya watu, kutoka kwa mifumo ya hali ya hewa hadi mafunzo ya mitandao ya neva, nadharia ya mifumo inayobadilika hutoa lugha na zana za kuelewa jinsi mambo yanavyobadilika. Faili hii inashughulikia milinganyo ya kawaida ya utofautishaji (ODE), milinganyo ya sehemu tofauti (PDE), uchanganuzi wa uthabiti, machafuko na migawanyiko miwili.
 ---

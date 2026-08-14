@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ভবিষ্যৎ পরিবহন
 ## ওভারভিউ
 A থেকে B তে পাওয়া খুব আলাদা দেখতে হবে। স্ব-চালিত গাড়ি ইতিমধ্যেই পাবলিক রাস্তায়। বৈদ্যুতিক বিমান পরীক্ষামূলক ফ্লাইট সম্পন্ন করছে। হাইপারলুপ ধারণা ভ্যাকুয়াম টিউবে ট্রেন-গতির ভ্রমণের প্রতিশ্রুতি দেয়। এবং উড়ন্ত ট্যাক্সি - একবার কার্টুনের জিনিস - শংসাপত্রে প্রবেশ করছে। আমরা কীভাবে চলছি তা পুনর্নির্মাণকারী প্রযুক্তি জুড়ে খেলার অবস্থা এখানে।

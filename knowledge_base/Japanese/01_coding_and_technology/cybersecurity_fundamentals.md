@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # サイバーセキュリティの基礎
 セキュリティは、後付けで追加するのではなく、最初からシステムのすべての層に統合する必要がある規律です。 Web アプリケーションの構築、インフラストラクチャの管理、API の配布のいずれにおいても、脅威の状況と防御の基本を理解することが不可欠です。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ngôn ngữ học và Khoa học ngôn ngữ
 Ngôn ngữ học là nghiên cứu khoa học về ngôn ngữ - cấu trúc, ý nghĩa, cách sử dụng, tiếp thu và tiến hóa của nó. Ngôn ngữ là một đặc điểm nổi bật trong giao tiếp của con người: nó có tính năng suất vô hạn (người nói có thể tạo và hiểu những câu mà họ chưa từng gặp trước đây), nó được truyền tải về mặt văn hóa (nó được học chứ không phải thuần túy bẩm sinh) và nó liên tục phát triển. Hiểu cách hoạt động của ngôn ngữ có liên quan đến bất kỳ ai xây dựng công nghệ ngôn ngữ, giảng dạy, dịch thuật hoặc làm việc để giao tiếp hiệu quả hơn.
 ---

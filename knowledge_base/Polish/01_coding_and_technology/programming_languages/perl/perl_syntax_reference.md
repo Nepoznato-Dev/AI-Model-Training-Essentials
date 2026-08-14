@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni języka Perl (5.38+). Uzupełnia główne odniesienia do Perla, koncentrując się na wyczerpujących wzorcach składni, wyrażeniach regularnych, odniesieniach i mocy przetwarzania tekstu w Perlu.
 ---

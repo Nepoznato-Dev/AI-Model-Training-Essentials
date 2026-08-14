@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Địa hình và cơ sở hạ tầng dưới dạng mã
 Terraform là công cụ Cơ sở hạ tầng dưới dạng Mã (IaC) được sử dụng rộng rãi nhất — nó cho phép bạn xác định cơ sở hạ tầng đám mây (máy chủ, cơ sở dữ liệu, mạng, quyền) trong các tệp cấu hình khai báo có thể được phiên bản, xem xét, kiểm tra và tự động hóa. Thay vì nhấp qua bảng điều khiển đám mây, bạn viết mã mô tả trạng thái mong muốn của cơ sở hạ tầng và Terraform tìm ra những thay đổi cần thực hiện.
 ---

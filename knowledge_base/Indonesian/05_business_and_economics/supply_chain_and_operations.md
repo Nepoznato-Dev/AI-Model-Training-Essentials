@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rantai Pasokan dan Manajemen Operasi
 Manajemen rantai pasokan adalah koordinasi seluruh aktivitas yang terlibat dalam pengadaan, pengadaan, konversi, dan logistik — mulai dari bahan mentah hingga produk jadi di tangan pelanggan. Manajemen operasi adalah jalannya sistem produksi sehari-hari. Bersama-sama, mereka menentukan apakah suatu perusahaan dapat menghasilkan produk yang tepat, pada waktu yang tepat, dengan biaya yang tepat, dan dengan kualitas yang tepat. Pandemi, kekurangan chip, dan penyumbatan saluran telah menunjukkan betapa rapuhnya dan saling terhubungnya rantai pasokan secara global.
 ---

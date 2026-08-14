@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # اذهب - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لصيغة Go. إنه يكمل مرجع Go الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، وجداول المشغلين، والآليات الداخلية لـ goroutines، والقنوات، والواجهات.
 ---

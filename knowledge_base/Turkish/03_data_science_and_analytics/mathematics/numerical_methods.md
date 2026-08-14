@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sayısal Yöntemler
 Sayısal yöntemler matematiksel teori ile pratik hesaplama arasındaki köprüdür. Saf matematik çözümlerin var olduğunu kanıtlarken, sayısal yöntemler aslında yaklaşık yanıtları sonlu hassasiyetle hesaplar. Her makine öğrenimi modeli, fizik simülasyonu ve veri analizi hattı sonuçta sayısal hesaplamaya dayanır. Bu yöntemleri (doğruluklarını, kararlılıklarını ve sınırlamalarını) anlamak, güvenilir yazılım oluşturmak için çok önemlidir.
 ---

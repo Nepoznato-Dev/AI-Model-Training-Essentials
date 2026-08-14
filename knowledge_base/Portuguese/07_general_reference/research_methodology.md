@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metodologia de Pesquisa
 Metodologia de pesquisa é a abordagem sistemática para investigar questões, testar hipóteses e gerar conhecimento confiável. Esteja você conduzindo experimentos científicos, pesquisas de ciências sociais, análises de negócios ou pesquisas acadêmicas, a metodologia escolhida determinará se suas descobertas são confiáveis, reprodutíveis e úteis. Um estudo bem elaborado produz resultados confiáveis; um mal projetado produz ruído – ou pior, respostas erradas e confiantes.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Consciência Ambiental
 O meio ambiente não é uma coisa separada “lá fora” – é o sistema que torna tudo o mais possível. Cada respiração que você respira, cada copo de água que você bebe, cada refeição que você faz depende da composição atmosférica, dos ciclos da água, da saúde do solo e das redes de polinizadores. Compreender como estes sistemas funcionam — e como estão a mudar — não é opcional para uma pessoa informada. Este arquivo cobre os fundamentos da ciência ambiental, os desafios que enfrentamos e o que sustentabilidade realmente significa na prática.
 ---

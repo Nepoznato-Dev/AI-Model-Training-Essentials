@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell と PowerShell — 慣用的なパターンとベスト プラクティス
 このガイドでは、Bash/Zsh および PowerShell スクリプトの慣用的なパターンについて説明します。
 ---

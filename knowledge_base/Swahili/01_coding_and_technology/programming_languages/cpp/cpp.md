@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #C++
 C++ ni lugha ya kusudi la jumla, iliyokusanywa ya programu iliyoundwa na Bjarne Stroustrup, iliyotolewa kwa mara ya kwanza mwaka wa 1985. Inapanua C kwa vipengele vinavyolenga kitu, jeneriki, na -- katika matoleo ya kisasa (C++11 na matoleo mapya zaidi) -- vifupisho vya kiwango cha juu kama vile lambdas, viashiria mahiri na Maktaba ya Kiolezo cha STL (STL). C++ inafuata kanuni ya "kuondoa sifuri": hupaswi kulipia vipengele usivyotumia.
 C++ ni lugha ya chaguo unapohitaji utendakazi wa hali ya juu na nguvu ya kujieleza. Inawezesha injini za mchezo (Injini isiyo ya kweli), vivinjari (Chrome, Firefox), hifadhidata (MongoDB), mifumo ya uendeshaji (sehemu za Windows na macOS), mifumo ya biashara ya kifedha, na maiga ya wakati halisi.

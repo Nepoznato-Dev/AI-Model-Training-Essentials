@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 줄리아
 Julia는 기술 및 과학 컴퓨팅을 위해 설계된 고급 고성능 프로그래밍 언어입니다. 2012년(2018년 1.0)에 처음 출시된 Julia는 과학자들이 Python/R로 프로토타입을 제작했지만 생산 성능을 위해 C/C++/Fortran으로 다시 작성하는 "2개 언어 문제"를 해결하기 위해 만들어졌습니다. Julia는 Python만큼 쉽지만 C만큼 빠른 것을 목표로 합니다.
 Julia는 LLVM을 통한 JIT(Just-In-Time) 컴파일을 사용하여 대화형의 동적 느낌을 유지하면서 C에 가까운 성능을 달성합니다. 병렬 컴퓨팅, 분산 처리 및 다중 디스패치를 ​​갖춘 정교한 유형 시스템을 최고 수준으로 지원합니다.

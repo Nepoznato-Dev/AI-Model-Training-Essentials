@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ngôn ngữ hội - Lịch sử phiên bản & sự phát triển
 ## Dòng thời gian
 | Thời đại | Năm | Chủ đề chính |

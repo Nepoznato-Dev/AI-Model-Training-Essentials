@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 2026 dan Acara Mendatang
 Tahun 2026 adalah tahun di mana banyak rencana jangka panjang bertemu. Ini adalah peringatan 250 tahun Deklarasi Kemerdekaan AS, titik tengah Tujuan Pembangunan Berkelanjutan PBB (2020-2030), dan tahun tonggak sejarah bagi peta jalan perusahaan di bidang AI, eksplorasi ruang angkasa, kendaraan listrik, dan energi terbarukan. Terlepas dari apakah prediksi tertentu berjalan dengan baik atau tidak, tren yang terbentuk pada tahun 2026 memberikan gambaran yang berguna tentang arah perkembangannya.
 ---

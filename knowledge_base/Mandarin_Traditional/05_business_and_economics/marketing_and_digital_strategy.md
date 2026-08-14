@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 行銷和數位策略
 行銷是企業為客戶創造、溝通和交付價值的方式。它涵蓋了了解客戶需求、定位產品以滿足這些需求以及建立將買家轉變為擁護者的關係的整個系統。數位革命改變了行銷工具、管道和速度，但基本原理保持不變。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ubunifu wa API na Usanifu
 API (Kiolesura cha Kuandaa Programu) ni jinsi vipengele vya programu vinavyozungumza. API iliyoundwa vizuri ni angavu, thabiti, na inafurahisha kufanya kazi nayo. Iliyoundwa vibaya husababisha kuchanganyikiwa, hitilafu, na kufadhaika. Faili hii inashughulikia kanuni, ruwaza, na mbinu za kuunda API ambazo wasanidi wanataka kutumia.
 ---

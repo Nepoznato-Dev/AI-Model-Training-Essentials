@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Artificial Intelligence
 
 Artificial intelligence is the attempt to build machines that can do things that would require intelligence if a human did them: recognize faces, understand speech, make decisions, write text, play games, drive cars, diagnose diseases. The field is as old as computing itself — Alan Turing was asking "Can machines think?" in 1950 — but the recent explosion in capability (2020s) has made AI one of the most important and contested technologies in human history.

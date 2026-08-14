@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 工作的未來
 ＃＃ 概述
 我們工作方式的變化速度比工業革命以來的任何時候都快。遠距工作一夜之間從罕見的福利變成了預設。人工智能正在从新颖性转向协作性。零工经济正在重塑“就业”的含义。自動化並不適用於所有工作，但它適用於大多數工作中的許多任務。以下是重塑工作場所的力量以及接下來會發生的事情。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # التجميع - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات الأساسية والمجمعات والبنية التحتية في النظام البيئي للتجميع.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kinh tế và Thương mại toàn cầu
 Nền kinh tế toàn cầu là hệ thống lớn nhất và phức tạp nhất mà con người từng xây dựng. Năm 2025, GDP toàn cầu vượt quá 110 nghìn tỷ USD. Hơn 8 tỷ người sản xuất, buôn bán và tiêu dùng hàng hóa và dịch vụ xuyên biên giới mỗi ngày. Hiểu cách thức hoạt động của hệ thống này - ai giao dịch cái gì, tại sao một số quốc gia giàu và những quốc gia khác nghèo, cách tiền di chuyển qua biên giới và điều gì xảy ra khi hệ thống bị hỏng - là điều cần thiết để định hướng thế giới hiện đại.
 ---

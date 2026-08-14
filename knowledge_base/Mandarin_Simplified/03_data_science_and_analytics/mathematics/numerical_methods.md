@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 数值方法
 数值方法是数学理论和实际计算之间的桥梁。虽然纯数学证明了解的存在，但数值方法实际上计算的是有限精度的近似答案。每个机器学习模型、物理模拟和数据分析管道最终都依赖于数值计算。了解这些方法——它们的准确性、稳定性和局限性——对于构建可靠的软件至关重要。
 ---

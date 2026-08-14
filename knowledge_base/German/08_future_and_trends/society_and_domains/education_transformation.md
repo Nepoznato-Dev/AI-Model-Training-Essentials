@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bildungstransformation
 ## Übersicht
 Das traditionelle Bildungsmodell – zwölf Jahre lang in einem Klassenzimmer sitzen, vielleicht zur Universität gehen und dann arbeiten – bricht zusammen. KI-Tutoren können jetzt personalisierten Unterricht in großem Maßstab anbieten. Das Tempo des technologischen Wandels bedeutet, dass lebenslanges Lernen keine Option mehr ist. Und Arbeitgeber legen zunehmend Wert darauf, was Sie tun können, und nicht nur auf Ihre Qualifikationen. So wird Bildung neu gedacht.

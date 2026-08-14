@@ -28,12 +28,10 @@ This chatbot:
 
 ### Option A: Google Colab (Recommended for Beginners)
 
-1. Click this badge to open in Colab:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/rag-chatbot/rag_chatbot.ipynb)
-
-2. Run all cells (Runtime → Run all)
-3. Start chatting!
+1. Create a new notebook at [colab.research.google.com](https://colab.research.google.com)
+2. Copy the code from `rag_chatbot.py` into cells
+3. Run all cells (Runtime → Run all)
+4. Start chatting!
 
 ### Option B: Jupyter Notebook (Interactive Learning)
 
@@ -44,11 +42,9 @@ cd guides/projects/rag-chatbot
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Launch notebook
-jupyter notebook rag_chatbot.ipynb
+# 3. Launch Jupyter and create a new notebook, or copy code from rag_chatbot.py
+jupyter notebook
 ```
-
-Then follow the interactive tutorial with quizzes!
 
 ### Option C: Local Setup (Python Script)
 
@@ -72,7 +68,6 @@ guides/projects/rag-chatbot/
 ├── README.md              # This file
 ├── requirements.txt       # Dependencies
 ├── rag_chatbot.py         # Complete code (standalone)
-├── rag_chatbot.ipynb      # Jupyter notebook version
 └── sample_docs/           # Example documents
     └── sample.txt
 ```
@@ -482,7 +477,7 @@ By completing this project, you now understand:
 
 **Congratulations! You've built your first AI chatbot!** 🎉
 
-[Report Issue](https://github.com/YOUR_USERNAME/AI-Model-Training-Essentials/issues) | 
+[Report Issue](https://github.com/Nepoznato-Dev/AI-Model-Training-Essentials/issues) | 
 [View Full RAG Guide](../../RAG/) | 
 [Back to Projects](../)
 

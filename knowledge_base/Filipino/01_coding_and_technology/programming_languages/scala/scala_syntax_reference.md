@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa Scala (3.x na may mga tala sa 2.x na pagkakaiba). Kinukumpleto nito ang pangunahing sanggunian ng Scala sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, ang uri ng system, mga functional programming construct, at mga idyoma ng Scala.
 ---

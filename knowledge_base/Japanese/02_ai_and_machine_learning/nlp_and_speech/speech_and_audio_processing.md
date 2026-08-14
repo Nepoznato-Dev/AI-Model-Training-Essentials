@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 音声と音声の処理
 音声とオーディオの処理には、機械が音を聞き、理解し、生成し、操作できるようにするテクノロジーが含まれます。これには、音声認識 (話し言葉をテキストに変換)、音声合成 (テキストを話し言葉に変換)、話者識別、音楽生成、および環境音の理解が含まれます。この分野はディープラーニングによって変革されました。最新のシステムは音声認識の精度が人間レベルに近づき、不気味なほど自然な合成音声を生成します。
 ---

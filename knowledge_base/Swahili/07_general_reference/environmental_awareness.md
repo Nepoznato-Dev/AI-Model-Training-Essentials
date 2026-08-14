@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uelewa wa Mazingira
 Mazingira sio kitu tofauti "huko nje" - ni mfumo ambao hufanya kila kitu kingine kiwezekane. Kila pumzi unayovuta, kila glasi ya maji unayokunywa, kila mlo unaokula hutegemea muundo wa angahewa, mizunguko ya maji, afya ya udongo na mitandao ya kuchavusha. Kuelewa jinsi mifumo hii inavyofanya kazi - na jinsi inavyobadilika - sio hiari kwa mtu aliye na ujuzi. Faili hii inashughulikia misingi ya sayansi ya mazingira, changamoto tunazokabiliana nazo, na maana ya uendelevu katika utendaji.
 ---

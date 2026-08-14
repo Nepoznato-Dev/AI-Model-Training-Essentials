@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Database Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Systèmes de bases de données
 ## Fondamentaux de la base de données
 ### Qu'est-ce qu'une base de données ?

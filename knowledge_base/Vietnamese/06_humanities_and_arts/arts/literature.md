@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Văn học
 Văn học là kỷ lục lâu dài nhất của nhân loại về suy nghĩ, cảm xúc và kinh nghiệm. Từ sử thi truyền miệng của các nền văn minh cổ đại cho đến tiểu thuyết thời đại kỹ thuật số ngày nay, mọi tác phẩm đều đối thoại với những gì có trước đó. Hiểu các thể loại, chuyển động và kỹ thuật văn học mang lại cho bạn một lăng kính phong phú hơn để đọc - và để hiểu các nền văn hóa đã tạo ra những tác phẩm này.
 ---

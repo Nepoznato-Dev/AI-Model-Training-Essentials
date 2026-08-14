@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # JavaScript – Erros comuns e antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns em JavaScript. Cada entrada mostra a abordagem incorreta, explica por que ela falha e fornece a solução correta.
 ---

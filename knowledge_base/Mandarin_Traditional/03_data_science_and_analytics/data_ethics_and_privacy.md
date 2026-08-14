@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 資料倫理與隱私
 資料倫理是對資料收集、分析和部署如何影響人們的權利、自主權和福祉的研究。隱私是對誰控制個人資訊以及如何分享個人資訊的具體關注。這些主題已經從學術辯論變成了頭版新聞——GDPR 的執行、影響數十億用戶的資料洩露，以及公眾越來越意識到科技公司的資料實踐對民主、平等和個人自由產生真正的影響。
 ---

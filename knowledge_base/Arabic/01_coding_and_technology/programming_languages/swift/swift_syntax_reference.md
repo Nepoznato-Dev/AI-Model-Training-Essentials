@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سويفت - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا شاملاً ومنظمًا لصيغة Swift (5.9+). وهو يكمل مرجع Swift الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة والاختيارات والبرمجة الموجهة نحو البروتوكول والتزامن الحديث.
 ---

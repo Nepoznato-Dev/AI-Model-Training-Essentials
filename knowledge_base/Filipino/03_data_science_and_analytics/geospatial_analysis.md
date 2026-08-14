@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geospatial na Pagsusuri
 Ang geospatial analysis ay ang proseso ng pagsusuri sa data na may bahaging heograpiko — mga coordinate, address, hangganan, o anumang data na nakatali sa isang lokasyon sa Earth. Sinasagot nito ang mga tanong tulad ng "nasaan ang aming mga customer?", "ano ang pinakamainam na ruta?", at "paano nagbabago ang paggamit ng lupa sa paglipas ng panahon?". Ang bawat dataset ay may spatial na dimensyon, at ang pag-unawa dito ay nagbubukas ng mga insight na napapalampas ng purong istatistikal na pagsusuri.
 ---

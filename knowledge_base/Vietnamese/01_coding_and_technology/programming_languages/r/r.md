@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R
 R là ngôn ngữ lập trình và môi trường được thiết kế dành riêng cho tính toán thống kê và phân tích dữ liệu. Được tạo bởi Ross Ihaka và Robert Gentleman tại Đại học Auckland vào năm 1993 (do đó là "R"), đây là một triển khai của ngôn ngữ S với những phần mở rộng đáng kể. R là nguồn mở và được duy trì bởi Nhóm R Core. Đây là công cụ tiêu chuẩn dành cho các nhà thống kê, nhà phân tích dữ liệu và nhà nghiên cứu trong giới học thuật, y tế, tài chính và chính phủ.
 R vượt trội trong thao tác dữ liệu, mô hình thống kê, trực quan hóa và báo cáo. Hệ sinh thái gói (CRAN) của nó có hơn 20.000 gói bao gồm hầu hết mọi phương pháp thống kê từng được nghĩ ra.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — Yaygın Hatalar ve Anti-Kalıplar
 Bu belge Perl'deki en yaygın hataları, tuzakları ve anti-örüntüleri düzeltmelerle birlikte kataloglamaktadır.
 ---

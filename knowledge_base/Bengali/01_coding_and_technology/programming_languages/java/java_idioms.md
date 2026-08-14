@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # জাভা — ইডিওম্যাটিক প্যাটার্নস এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি পরিচ্ছন্ন, আধুনিক জাভা (17+) কোড লেখার জন্য ইডিওম্যাটিক প্যাটার্ন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

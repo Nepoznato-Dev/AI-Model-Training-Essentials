@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lỗi AI và LLM
 Tài liệu này tổng hợp các dạng lỗi thường gặp trong hệ thống AI và Mô hình ngôn ngữ lớn, bao gồm ảo giác, thông tin sai lệch, lỗi lý luận và các vấn đề liên quan đến lời nhắc.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Statistica e probabilità
 Probabilità e statistica sono le basi matematiche della scienza dei dati, dell'apprendimento automatico e della ricerca scientifica. La probabilità ti dice quanto sono probabili gli eventi; le statistiche ti dicono come trarre conclusioni dai dati. Insieme, trasformano l’incertezza in conoscenza quantificabile e gestibile.
 ---

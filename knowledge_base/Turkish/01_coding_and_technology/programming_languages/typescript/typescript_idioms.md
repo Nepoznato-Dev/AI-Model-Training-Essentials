@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, tür açısından güvenli TypeScript kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

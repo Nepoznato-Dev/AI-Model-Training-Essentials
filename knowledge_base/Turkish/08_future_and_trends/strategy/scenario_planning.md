@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Senaryo Planlama
 ## Genel Bakış
 Hiç kimse geleceği tahmin edemez; ancak birkaç makul geleceğe hazırlanabilirsiniz. Soğuk Savaş düşünce kuruluşlarında doğan ve 1970'lerdeki petrol krizleri sırasında Shell tarafından mükemmelleştirilen senaryo planlaması, belirsizlik hakkında sistematik olarak düşünmenin bir yoludur. Tek bir tahmin üzerine bahse girmek yerine, işlerin nasıl gelişebileceğine dair tutarlı hikayeler oluşturursunuz, ardından kararlarınızı hepsine karşı stres testine tabi tutarsınız. Temel alanlardaki senaryolarla birlikte metodolojinin nasıl çalıştığını burada bulabilirsiniz.

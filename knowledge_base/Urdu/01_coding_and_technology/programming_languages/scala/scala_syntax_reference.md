@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # اسکیلا - نحوی حوالہ
 یہ دستاویز Scala کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتا ہے (3.x 2.x فرق پر نوٹ کے ساتھ)۔ یہ مکمل نحوی نمونوں، ٹائپ سسٹم، فنکشنل پروگرامنگ کنسٹرکٹس، اور اسکالا محاوروں پر توجہ مرکوز کرکے مرکزی اسکالا حوالہ کی تکمیل کرتا ہے۔
 ---

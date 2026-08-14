@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンでよく整理された Scratch プロジェクトを作成するための慣用的なパターンについて説明します。
 ---

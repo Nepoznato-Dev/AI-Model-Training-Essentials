@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bias Kognitif dan Kekeliruan Logis
 Dokumen ini menggabungkan bias kognitif, kesalahan logika, dan kesalahan penalaran yang memengaruhi pengambilan keputusan manusia dan keluaran sistem AI.
 ---

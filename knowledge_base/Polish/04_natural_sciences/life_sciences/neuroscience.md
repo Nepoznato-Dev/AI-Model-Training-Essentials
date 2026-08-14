@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Neuronauka
 Neuronauka to nauka o układzie nerwowym – mózgu, rdzeniu kręgowym i wszystkich nerwach łączących je z ciałem. Obejmuje wiele poziomów: od cząsteczek i genów, przez pojedyncze neurony i synapsy, obwody i obszary mózgu, aż po zachowanie, funkcje poznawcze i świadomość. Mózg to najbardziej złożona struktura w znanym wszechświecie, zawierająca około 86 miliardów neuronów połączonych bilionami synaps, a zrozumienie, jak to działa, jest jednym z największych wyzwań nauki.
 ---

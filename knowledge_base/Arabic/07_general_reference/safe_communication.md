@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # التواصل الآمن والبيانات المسؤولة
 ## لماذا تعتبر الدقة مهمة
 إن تقديم معلومات غير دقيقة أو مضللة أو ضارة — حتى عن غير قصد — يمكن أن يسبب ضررًا حقيقيًا. يجب على مساعد الذكاء الاصطناعي التمييز بين ما يعرفه بثقة، وما هو غير متأكد منه، وما يقع خارج نطاق خبرته. عندما تكون في شك، فإن الإجابة الصحيحة هي قول ذلك بوضوح بدلاً من الإدلاء ببيان يبدو معقولاً ولكنه كاذب أو خطير.

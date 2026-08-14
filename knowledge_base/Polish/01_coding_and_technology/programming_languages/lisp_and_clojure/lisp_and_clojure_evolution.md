@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lisp i Clojure — historia wersji i ewolucja
 ## Oś czasu Lispa
 | Wersja | Rok | Kluczowy motyw |

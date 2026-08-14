@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سوئیفت - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای Swift (5.9+) ارائه می دهد. این مرجع اصلی سوئیفت را با تمرکز بر الگوهای نحوی جامع، اختیاری، برنامه نویسی پروتکل محور و همزمانی مدرن تکمیل می کند.
 ---

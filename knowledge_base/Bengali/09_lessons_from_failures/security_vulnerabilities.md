@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # নিরাপত্তা দুর্বলতা
 এই দস্তাবেজটি সফ্টওয়্যার বিকাশে সাধারণ নিরাপত্তা দুর্বলতাগুলিকে একীভূত করে, যার মধ্যে ইনজেকশন আক্রমণ, অনিরাপদ কোড অনুশীলন এবং নিরাপত্তা ভুল রয়েছে৷
 ---

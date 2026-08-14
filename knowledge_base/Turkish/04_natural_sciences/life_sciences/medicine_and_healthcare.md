@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tıp ve Sağlık
 Tıp, hastalıkları teşhis etme, tedavi etme ve önleme bilimi ve uygulamasıdır. Bu, insanoğlunun en eski uğraşlarından biridir (Hipokrat Yemini'nin tarihi antik Yunan'a kadar uzanır) ve en hızlı değişenlerden biridir. Yalnızca geçen yüzyılda, antibiyotik kullanmamaktan, hastanın DNA'sını yeniden yazabilen gen terapilerine geçtik.
 Bu dosya tıbbın nasıl çalıştığını kapsar: başlıca uzmanlık alanları, hastalıkların nasıl teşhis ve tedavi edildiği, sağlık sistemlerinin nasıl organize edildiği ve insan hayatı tehlikede olduğunda ortaya çıkan etik sorular.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Những lỗi thường gặp và những mẫu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình phản đối phổ biến nhất trong Ada kèm theo các chỉnh sửa.
 ---

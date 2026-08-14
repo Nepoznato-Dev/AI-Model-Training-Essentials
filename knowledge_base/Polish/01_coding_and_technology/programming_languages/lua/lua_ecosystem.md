@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Przewodnik po ekosystemie i narzędziach
 W tym przewodniku opisano podstawowe narzędzia, biblioteki i infrastrukturę w ekosystemie Lua.
 ---

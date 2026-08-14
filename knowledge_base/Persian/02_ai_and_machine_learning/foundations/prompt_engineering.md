@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مهندسی سریع
 مهندسی سریع تمرین طراحی، پالایش و بهینه سازی اعلان های ورودی برای به دست آوردن بهترین خروجی ممکن از یک مدل زبان است. این هم یک هنر و هم علم است و رابط اصلی برای کنترل رفتار LLM بدون تنظیم دقیق است.
 ---

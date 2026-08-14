@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 사이버보안 기초
 보안은 나중에 추가하는 것이 아니라 처음부터 시스템의 모든 계층에 통합되어야 하는 원칙입니다. 웹 애플리케이션 구축, 인프라 관리, API 제공 등 위협 환경과 방어의 기본 사항을 이해하는 것이 필수적입니다.
 ---

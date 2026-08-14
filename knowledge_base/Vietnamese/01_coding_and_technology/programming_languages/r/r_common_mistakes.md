@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Những lỗi thường gặp và các mẫu chống đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình phản đối phổ biến nhất trong R kèm theo các bản sửa lỗi.
 ---

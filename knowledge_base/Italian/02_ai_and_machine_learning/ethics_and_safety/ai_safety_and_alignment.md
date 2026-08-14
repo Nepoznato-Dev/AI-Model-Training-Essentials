@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sicurezza e allineamento dell'IA
 La sicurezza dell’intelligenza artificiale è lo studio su come costruire sistemi di intelligenza artificiale che facciano ciò che effettivamente vogliamo che facciano e non facciano cose che non vogliamo, anche se non fossero esplicitamente escluse. L’allineamento è la sfida specifica di far sì che gli obiettivi e i comportamenti dei sistemi di intelligenza artificiale corrispondano alle intenzioni umane. Man mano che i sistemi di intelligenza artificiale diventano più capaci, queste domande si spostano dalle curiosità accademiche ai requisiti pratici di ingegneria.
 ---

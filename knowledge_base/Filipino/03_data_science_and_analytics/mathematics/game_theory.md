@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teorya ng Laro
 Ang teorya ng laro ay ang matematika ng estratehikong pakikipag-ugnayan — mga sitwasyon kung saan ang iyong kinalabasan ay nakasalalay hindi lamang sa iyong sariling mga pagpipilian, ngunit sa mga pagpipilian ng iba. Mula sa mga digmaan sa pagpepresyo sa pagitan ng mga kumpanya hanggang sa karera ng armas nukleyar, mula sa mga online na auction hanggang sa evolutionary biology, ang teorya ng laro ay nagbibigay ng mga tool para sa pagsusuri ng salungatan at pakikipagtulungan. Lalo itong naging nauugnay sa machine learning sa pamamagitan ng multi-agent reinforcement learning, generative adversarial network (GAN), at disenyo ng mekanismo para sa mga online na platform.
 ---

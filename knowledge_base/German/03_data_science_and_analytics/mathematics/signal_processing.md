@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Signalverarbeitung
 Signalverarbeitung ist die Wissenschaft der Analyse, Modifizierung und Synthese von Signalen – Darstellungen physikalischer Größen, die sich über Zeit, Raum oder Frequenz ändern. Audio, Bilder, Video, Sensordaten, Gehirnwellen, Aktienkurse – alles sind Signale. Die mathematischen Werkzeuge der Signalverarbeitung (Fourier-Transformationen, Filter, Abtasttheorie) sind grundlegend für maschinelles Lernen, Kommunikation, medizinische Bildgebung und praktisch jeden Bereich, der mit Daten arbeitet.
 ---

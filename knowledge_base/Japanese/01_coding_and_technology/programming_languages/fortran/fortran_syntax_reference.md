@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran — 構文リファレンス
 このドキュメントは、Modern Fortran (2008/2018) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、配列操作、モジュール、OOP、およびハイパフォーマンス コンピューティングに焦点を当て、主要な Fortran リファレンスを補完します。
 ---

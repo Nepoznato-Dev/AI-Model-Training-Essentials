@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Modelloptimierung und -bereitstellung
 Das Trainieren eines großen KI-Modells ist eine bedeutende Leistung, aber der Großteil des technischen Aufwands entfällt auf die effiziente Bereitstellung. Ein Modell, das 10 Sekunden zum Reagieren benötigt oder acht A100-GPUs erfordert, ist für die meisten praktischen Anwendungen unpraktisch. Modelloptimierung ist der Prozess, Modelle kleiner, schneller und kostengünstiger zu machen – bei akzeptabler Qualität. Diese Datei behandelt Quantisierung, Beschneidung, Destillation und die praktischen Werkzeuge für den Einsatz von Modellen in der Produktion.
 ---

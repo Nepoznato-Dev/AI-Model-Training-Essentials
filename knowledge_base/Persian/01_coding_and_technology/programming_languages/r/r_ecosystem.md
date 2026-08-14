@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، بسته‌ها و زیرساخت‌های ضروری در اکوسیستم R را پوشش می‌دهد.
 ---

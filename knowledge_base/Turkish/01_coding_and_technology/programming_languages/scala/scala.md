@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala
 Scala (Ölçeklenebilir Dil), nesne yönelimli ve işlevsel programlama paradigmalarını birleştiren statik olarak yazılmış, derlenmiş bir programlama dilidir. Martin Odersky tarafından oluşturulan ve ilk olarak 2004'te piyasaya sürülen Scala, JVM (aynı zamanda JavaScript ve Scala Native için Scala.js) üzerinde çalışır. Tam Java birlikte çalışabilirliğini korurken Java'nın ayrıntılarını gidermek için tasarlanmıştır.
 Scala, Apache Spark'ın (büyük veri işleme çerçevesi) arkasındaki dildir ve veri mühendisliğinde, dağıtılmış sistemlerde ve arka uç hizmetlerinde yaygın olarak kullanılır. Twitter (şimdi X), LinkedIn, Netflix ve The Guardian gibi şirketler Scala'yı kullanıyor.

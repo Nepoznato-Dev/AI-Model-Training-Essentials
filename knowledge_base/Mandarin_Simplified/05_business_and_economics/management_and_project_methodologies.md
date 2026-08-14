@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 管理和项目方法
 管理人员和项目是任何组织中最艰巨的职责之一。技术技能提供了入口，但领导团队、决策、有效沟通和交付结果的能力决定了目标是否实现。该文件涵盖了高效的管理者和项目领导者应用的框架、方法和实践技能。
 ---

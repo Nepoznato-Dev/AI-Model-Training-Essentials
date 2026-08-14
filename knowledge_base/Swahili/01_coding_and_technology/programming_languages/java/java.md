@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Java
 Java ni lugha ya programu iliyochapwa, inayoelekezwa kwa kitu iliyoundwa na James Gosling katika Sun Microsystems na iliyotolewa mwaka wa 1995. Falsafa yake ya usanifu - "andika mara moja, endesha popote" (WORA) - hupatikana kupitia Java Virtual Machine (JVM), ambayo inaruhusu msimbo wa Java uliokusanywa kuendeshwa kwenye jukwaa lolote ambalo lina utekelezaji wa JVM. Java ni mojawapo ya lugha za programu zinazotumiwa sana katika historia, inawezesha usaidizi wa nyuma wa biashara, programu za Android, mifumo mikubwa ya data na huduma za kifedha.
 Licha ya kuwa na karibu miaka 30, Java inaendelea kubadilika. Java ya kisasa (matoleo ya 17+) inajumuisha rekodi, madarasa yaliyofungwa, kulinganisha muundo, nyuzi pepe na mfumo ikolojia unaokua unaoshindana na lugha mpya zaidi.

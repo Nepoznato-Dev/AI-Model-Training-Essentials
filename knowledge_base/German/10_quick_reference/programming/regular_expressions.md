@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Spickzettel für reguläre Ausdrücke
 Reguläre Ausdrücke (Regex) sind Muster zum Abgleichen von Text. Sie werden überall eingesetzt – beim Suchen und Ersetzen, bei der Eingabevalidierung, beim Parsen von Protokollen, bei der Datenextraktion und mehr. Dies ist eine praktische Referenz, kein Lehrbuch.
 ---

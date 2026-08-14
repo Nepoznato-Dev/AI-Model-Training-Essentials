@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Software-Architekturmuster
 Architektur ist eine Reihe struktureller Entscheidungen darüber, wie ein System organisiert ist – welche Komponenten es hat, wie sie kommunizieren und wo die Verantwortlichkeiten liegen. Eine gute Architektur macht ein System leicht zu verstehen, zu modifizieren und zu skalieren. Schlechte Architektur macht jede Veränderung zu einem Kampf. In dieser Datei werden die wichtigsten Muster, deren Verwendung und die damit verbundenen Kompromisse behandelt.
 ---

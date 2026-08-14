@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — 慣用模式與最佳實踐
 本指南涵蓋了編寫乾淨、現代的 Fortran (2018+) 程式碼的慣用模式和最佳實踐。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for Java. It complements the main Java reference by focusing on exhaustive syntax patterns, operator tables, and internal mechanics of the JVM, OOP, and concurrency.

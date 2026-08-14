@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Ada (2012/2022). Inakamilisha marejeleo kuu ya Ada kwa kuzingatia mifumo kamili ya sintaksia, kuweka kazi, vitu vilivyolindwa, jenetiki, na upangaji wa programu muhimu kwa usalama.
 ---

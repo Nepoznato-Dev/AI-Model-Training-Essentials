@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 量子力学
 量子力学は、原子、電子、光子、自然界の基本粒子といった最小スケールの物理学の理論です。これは、古典力学の決定論的な世界を確率、重ね合わせ、もつれに置き換えます。直観に反する性質にもかかわらず、量子力学は科学全体の中で最も正確にテストされた理論です。今日、その原理は量子コンピューターを介したコンピューティングに直接関連しており、古典的なマシンよりも指数関数的に速く特定の問題を解決できることが期待されています。
 ---

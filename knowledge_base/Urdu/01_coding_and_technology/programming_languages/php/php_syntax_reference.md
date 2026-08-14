@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # پی ایچ پی - نحو کا حوالہ
 یہ دستاویز PHP (8.x) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، جدید پی ایچ پی کی خصوصیات، آبجیکٹ پر مبنی پروگرامنگ، اور عملی محاورات پر توجہ مرکوز کرکے پی ایچ پی کے مرکزی حوالہ کی تکمیل کرتا ہے۔
 ---

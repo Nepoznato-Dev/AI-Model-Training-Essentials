@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису OCaml (4.x/5.x). Он дополняет основной справочник OCaml, уделяя особое внимание исчерпывающим синтаксическим шаблонам, алгебраическим типам данных, сопоставлению шаблонов, модулям и идиомам функционального программирования.
 ---

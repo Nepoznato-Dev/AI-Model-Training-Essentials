@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni języka Java. Uzupełnia główne odniesienia do języka Java, koncentrując się na wyczerpujących wzorcach składni, tabelach operatorów i wewnętrznej mechanice JVM, OOP i współbieżności.
 ---

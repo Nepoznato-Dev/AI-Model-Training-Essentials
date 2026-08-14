@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ciência Ambiental e Sustentabilidade
 A ciência ambiental aplica os métodos da física, da química, da biologia, da geologia e da economia à questão: "O que está a acontecer ao nosso planeta e o que pode ser feito a respeito?" É um campo interdisciplinar — uma convergência de múltiplas disciplinas — que contribui tanto para a sua profundidade analítica como para a sua relevância política.
 A tensão central na ciência ambiental é esta: a civilização humana depende da extracção de recursos do ambiente, mas a extracção desses recursos altera o ambiente de formas que podem minar os sistemas dos quais dependemos. Compreender esse ciclo de feedback é o campo inteiro em poucas palavras.

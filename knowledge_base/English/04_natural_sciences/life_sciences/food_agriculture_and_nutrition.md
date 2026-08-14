@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Food, Agriculture, and Nutrition
 
 Food is the most basic human need, and agriculture is the foundation of civilization. The shift from hunting and gathering to farming — the Neolithic Revolution, about 10,000 years ago — is what allowed humans to build cities, develop writing, and create everything else we call "civilization." Today, agriculture employs about 27% of the global workforce and produces roughly 10 trillion calories per day. Yet about 800 million people still go hungry, while over 2 billion are overweight or obese. The problem is not production — it is distribution, access, and choices.

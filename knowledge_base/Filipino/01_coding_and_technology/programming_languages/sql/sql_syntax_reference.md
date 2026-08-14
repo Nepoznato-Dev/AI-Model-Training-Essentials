@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa SQL (ANSI SQL na may mga tala sa PostgreSQL/MySQL/SQLite na mga pagkakaiba sa dialect). Kinukumpleto nito ang pangunahing sanggunian ng SQL sa pamamagitan ng pagtuon sa mga kumpletong pattern ng query, mga function ng window, CTE, at disenyo ng database.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perl — 語法參考
 本文檔提供了 Perl (5.38+) 的全面、結構化語法參考。它透過關注詳盡的語法模式、正規表示式、引用和 Perl 的文本處理能力來補充主要的 Perl 參考資料。
 ---

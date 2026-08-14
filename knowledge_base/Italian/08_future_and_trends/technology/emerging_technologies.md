@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tecnologie emergenti
 ## Panoramica
 Alcune tecnologie creano categorie di capacità completamente nuove invece di migliorare progressivamente quelle esistenti. L’informatica quantistica mira a risolvere problemi che richiederebbero millenni alle macchine classiche. L’energia da fusione offre la possibilità di energia pulita praticamente illimitata. Le interfacce cervello-computer collegano mente e macchina. La biologia sintetica consente la riscrittura del codice biologico. Le sezioni seguenti descrivono dove si trova oggi ciascuna di queste frontiere e dove le tendenze attuali indicano che si sta dirigendo.

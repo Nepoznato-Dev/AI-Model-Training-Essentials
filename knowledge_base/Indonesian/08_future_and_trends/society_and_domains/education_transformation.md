@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Transformasi Pendidikan
 ## Ringkasan
 Model pendidikan tradisional – duduk di ruang kelas selama dua belas tahun, mungkin kuliah, lalu bekerja – mulai runtuh. Tutor AI kini dapat memberikan pengajaran yang dipersonalisasi dalam skala besar. Laju perubahan teknologi berarti pembelajaran seumur hidup bukan lagi sebuah pilihan. Dan pemberi kerja semakin peduli dengan apa yang dapat Anda *lakukan*, bukan hanya kredensial yang Anda miliki. Beginilah cara pendidikan ditata ulang.

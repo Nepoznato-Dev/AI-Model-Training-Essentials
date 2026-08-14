@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — 관용적 패턴 및 모범 사례
 이 가이드에서는 깨끗하고 안전한 Ada 코드를 작성하기 위한 관용적 패턴을 다룹니다.
 ---

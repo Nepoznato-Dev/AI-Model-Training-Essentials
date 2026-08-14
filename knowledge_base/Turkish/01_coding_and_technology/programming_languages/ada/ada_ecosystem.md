@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz Ada ekosistemindeki temel araçları, kütüphaneleri ve altyapıyı kapsar.
 ---

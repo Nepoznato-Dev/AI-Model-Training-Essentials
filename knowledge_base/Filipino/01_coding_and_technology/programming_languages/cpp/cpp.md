@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++
 Ang C++ ay isang general-purpose, compiled programming language na nilikha ni Bjarne Stroustrup, na unang inilabas noong 1985. Pinapalawak nito ang C na may mga object-oriented na feature, generics, at -- sa mga modernong bersyon (C++11 at mas bago) -- high-level abstraction tulad ng lambdas, smart pointer, at Standard Template Library (STL). Ang C++ ay sumusunod sa prinsipyong "zero-overhead abstraction": hindi ka dapat magbayad para sa mga feature na hindi mo ginagamit.
 Ang C++ ay ang wikang pipiliin kapag kailangan mo ng parehong mataas na pagganap at nagpapahayag na kapangyarihan. Pinapagana nito ang mga game engine (Unreal Engine), mga browser (Chrome, Firefox), mga database (MongoDB), mga operating system (mga bahagi ng Windows at macOS), mga financial trading system, at mga real-time na simulation.

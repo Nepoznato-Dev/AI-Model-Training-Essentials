@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # بايثون - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لبنية لغة بايثون. إنه يكمل مرجع Python الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة وجداول التشغيل والميكانيكا الداخلية.
 ---

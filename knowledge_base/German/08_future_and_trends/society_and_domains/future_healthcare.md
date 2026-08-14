@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zukünftige Gesundheitsversorgung
 ## Übersicht
 Die Medizin verlagert sich von einem reaktiven Modell – die Behandlung von Symptomen nach ihrem Auftreten – zu einem Modell, das vorausschauend, personalisiert und zunehmend präventiv ist. Genomics hat sich von einem 3-Milliarden-Dollar-Projekt zu einem Routinetest entwickelt, der weniger als 1.000 Dollar kostet. KI lernt, Krankheiten in Scans zu erkennen, bevor Ärzte es können. Und die regenerative Medizin verwandelt Science-Fiction in klinische Studien. Hier erfahren Sie, was an den drei größten Grenzen passiert: personalisierte Medizin, Langlebigkeitsforschung und regenerative Medizin.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Problemy z niezawodnością systemu
 W tym dokumencie podsumowano problemy związane z niezawodnością, w tym wycieki pamięci, warunki wyścigowe, błędy programowania współbieżnego i awarie projektu systemu.
 ---

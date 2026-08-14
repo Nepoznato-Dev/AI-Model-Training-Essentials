@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Veri Görselleştirme
 İyi tasarlanmış bir grafik, sayı tablolarının gizlediği kalıpları ortaya çıkarabilir. Kötü tasarlanmış bir şey yanıltıcı olabilir, kafa karıştırabilir veya sıkıcı olabilir. Veri görselleştirme, verileri kararlara bilgi veren görsel hikayelere dönüştürme sanatıdır. Bu dosya grafik seçimini, tasarım ilkelerini, yaygın hataları ve bunları mümkün kılan araçları kapsar.
 ---

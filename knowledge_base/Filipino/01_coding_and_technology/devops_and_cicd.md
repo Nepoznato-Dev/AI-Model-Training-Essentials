@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps at CI/CD
 Ang DevOps ay ang kumbinasyon ng kultural na pilosopiya, kasanayan, at tool na nagbibigay-daan sa mga team na makapaghatid ng software nang mas mabilis at mas maaasahan. Sinisira nito ang pader sa pagitan ng mga developer (na gustong magpadala ng mga pagbabago) at mga operasyon (na gustong magkaroon ng katatagan). CI/CD — Continuous Integration at Continuous Delivery — ay ang automation backbone na ginagawang posible.
 ---

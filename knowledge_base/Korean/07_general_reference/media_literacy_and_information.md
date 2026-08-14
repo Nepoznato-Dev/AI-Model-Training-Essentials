@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 미디어 리터러시 및 정보 평가
 우리는 정보가 포화된 세상에 살고 있습니다. 매일 평균적인 사람은 뉴스 기사, 소셜 미디어 게시물, 광고, 정치 연설, 영향력 있는 콘텐츠, AI 생성 텍스트 등 수천 개의 미디어 메시지에 노출됩니다. 대부분은 괜찮습니다. 그 중 일부는 오해의 소지가 있습니다. 소량은 의도적으로 거짓입니다. 미디어 리터러시는 이 환경을 탐색하는 기술입니다. 모든 것을 신뢰하거나 아무것도 신뢰하지 않고 무엇이 신뢰할 수 있고 무엇이 아닌지에 대한 보정된 감각을 개발함으로써 가능합니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مشكلات جودة الكود
 يقوم هذا المستند بدمج مشاكل جودة التعليمات البرمجية الشائعة بما في ذلك أسماء المتغيرات السيئة، والوثائق الرديئة، والتعليمات البرمجية السباغيتي، والتبعيات الدائرية، ومشكلات الصيانة الأخرى.
 ---

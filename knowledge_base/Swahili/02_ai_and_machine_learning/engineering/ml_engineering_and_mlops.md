@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uhandisi wa ML na MLOps
 Kuunda modeli ya kujifunza mashine ni nusu tu ya vita. Kuiingiza katika toleo la umma, kuifanya ifanye kazi kwa uhakika, ufuatiliaji wa kuteleza, na kuirudia - hapo ndipo uhandisi wa ML na MLOps huingia. Faili hii inashughulikia mzunguko kamili wa maisha kutoka kwa majaribio hadi mfumo wa uzalishaji.
 ---

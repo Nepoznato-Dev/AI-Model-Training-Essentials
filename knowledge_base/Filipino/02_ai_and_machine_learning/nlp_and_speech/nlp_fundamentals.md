@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP Fundamentals
 Ang Natural Language Processing (NLP) ay ang larangan ng pagtuturo ng mga makina upang maunawaan, makabuo, at magtrabaho sa wika ng tao. Pinapagana nito ang mga search engine, chatbots, translation system, sentiment analysis, at ang malalaking language models (LLMs) na nagpabago sa AI mula noong 2020. Sinasaklaw ng file na ito ang ebolusyon mula sa mga klasikal na diskarte hanggang sa modernong Transformer-based na mga arkitektura.
 ---

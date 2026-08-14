@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Проблемы с надежностью системы
 В этом документе объединены проблемы надежности, включая утечки памяти, состояния гонки, ошибки параллельного программирования и ошибки проектирования системы.
 ---

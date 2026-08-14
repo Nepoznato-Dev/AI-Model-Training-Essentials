@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Medicine and Healthcare
 
 Medicine is the science and practice of diagnosing, treating, and preventing disease. It is one of the oldest human endeavors — the Hippocratic Oath dates back to ancient Greece — and one of the most rapidly changing. In the last century alone, we went from having no antibiotics to having gene therapies that can rewrite a patient's DNA.

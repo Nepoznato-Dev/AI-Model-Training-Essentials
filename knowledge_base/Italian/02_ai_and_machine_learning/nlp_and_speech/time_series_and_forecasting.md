@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Serie temporali e previsioni
 I dati delle serie temporali sono tutti i dati raccolti nel tempo: prezzi delle azioni, letture della temperatura, traffico del sito web, dati sulle vendite, cardiofrequenzimetri, consumo energetico. Fare previsione significa prevedere valori futuri sulla base di modelli passati. È una delle applicazioni più preziose dal punto di vista pratico della scienza dei dati e una delle più difficili, perché il futuro è veramente incerto e le serie temporali del mondo reale sono piene di rumore, stagionalità e interruzioni strutturali.
 ---

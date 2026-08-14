@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pananaliksik sa Operasyon
 Ang operations research (OR) ay ang aplikasyon ng mga pamamaraang matematikal sa paggawa ng desisyon. Ipinanganak noong Ikalawang Digmaang Pandaigdig para sa logistik ng militar, ino-optimize nito ngayon ang mga supply chain, nag-iskedyul ng mga airline, nagruruta ng mga fleet ng paghahatid, namamahala ng mga imbentaryo, at naglalaan ng mga mapagkukunan sa bawat industriya. Ang O ay nagbibigay ng mathematical toolkit para sa paggawa ng pinakamahusay na posibleng mga desisyon sa ilalim ng mga hadlang.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Algebra astratta
 L'algebra astratta studia le strutture algebriche: insiemi dotati di operazioni che seguono regole specifiche. Invece di lavorare con i numeri, l'algebra astratta funziona con qualsiasi oggetto che soddisfi gli assiomi. Questa generalità è potente: un teorema dimostrato per i "gruppi" si applica simultaneamente a interi, simmetrie, matrici, permutazioni e stati quantistici. L’algebra astratta è alla base della crittografia, dei codici di correzione degli errori, dell’informatica quantistica e dell’analisi della simmetria utilizzata in tutta la fisica.
 ---

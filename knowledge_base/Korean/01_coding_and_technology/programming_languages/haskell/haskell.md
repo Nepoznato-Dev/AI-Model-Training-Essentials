@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 하스켈
 Haskell은 순전히 기능적이며 정적으로 유형이 지정되고 느리게 평가되는 프로그래밍 언어입니다. 1990년에 처음 표준화(Haskell 90)되고 여러 버전(현재 표준은 Haskell 2010)을 통해 개선된 Haskell은 수학적 엄격함, 강력한 유형 시스템(유형 클래스, 모나드 및 대수 데이터 유형 포함), 유형을 통한 정확성 강조로 유명합니다.
 하스켈은 주류 언어는 아니지만 그 영향력은 엄청납니다. 모나드, 지연 평가, 유형 클래스와 같은 개념은 Rust, Swift, Kotlin, Scala 및 TypeScript에 영향을 미쳤습니다. Haskell은 금융(Standard Chartered, Barclays), 컴파일러(GHC) 및 공식 검증에 사용됩니다.

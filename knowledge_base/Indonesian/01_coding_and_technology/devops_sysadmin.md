@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and System Administration"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps dan Administrasi Sistem
 Panduan praktis untuk mengelola server, mengotomatiskan operasi, dan memelihara infrastruktur yang andal.
 ---

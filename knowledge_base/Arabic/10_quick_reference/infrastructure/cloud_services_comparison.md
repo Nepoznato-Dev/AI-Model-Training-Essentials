@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مقارنة الخدمات السحابية
 مقارنة جنبًا إلى جنب بين موفري الخدمات السحابية الثلاثة الرئيسيين - AWS وAzure وGoogle Cloud - عبر الحوسبة والتخزين وقواعد البيانات والذكاء الاصطناعي/تعلم الآلة والشبكات والمراقبة والبنية التحتية كرمز. مفيد للمهندسين المعماريين الذين يقررون النظام الأساسي الذي يجب استخدامه، أو تعيين الخدمات من سحابة إلى أخرى.
 ---

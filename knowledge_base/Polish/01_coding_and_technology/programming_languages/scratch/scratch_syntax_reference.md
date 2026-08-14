@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch — Odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni Scratch 3.0. Uzupełnia główne odniesienia do Scratcha, koncentrując się na wyczerpujących kategoriach bloków, wzorcach sterowanych zdarzeniami, zarządzaniu duszkami, klonowaniu i technikach kreatywnego kodowania.
 ---

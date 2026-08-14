@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua
 Lua, uygulamaları genişletmek için tasarlanmış hafif, yerleştirilebilir bir kodlama dilidir. 1993 yılında Brezilya'daki Rio de Janeiro Papalık Katolik Üniversitesi'nde oluşturulan Lua, mevcut en hızlı kodlama dillerinden biridir. Küçük kaplama alanı (yorumlayıcı ~120 KB'dir) ve basitliği, onu oyun geliştirme komut dosyası oluşturma, gömülü sistemler ve yapılandırma için ilk tercih haline getirir.
 Lua, Roblox'un (aylık 200 milyondan fazla kullanıcıya sahip oyun platformu), World of Warcraft eklentilerinin ve çok sayıda oyun motorunun (Love2D, Defold, Corona SDK) arkasındaki kodlama dili olarak bilinir. Ayrıca Nginx (OpenResty), Redis ve Wireshark'ta da kullanılır.

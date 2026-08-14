@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rdza — typowe błędy i anty-wzorce
 Dokument ten kataloguje najczęstsze błędy, pułapki i antywzorce w Rust. Każdy wpis pokazuje nieprawidłowe podejście, wyjaśnia przyczynę niepowodzenia i podaje prawidłowe rozwiązanie. Kompilator Rusta wychwytuje wiele błędów, ale zrozumienie tych wzorców przyspieszy proces uczenia się.
 ---

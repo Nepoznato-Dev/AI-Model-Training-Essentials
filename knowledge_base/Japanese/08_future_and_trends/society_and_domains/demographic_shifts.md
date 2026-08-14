@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 人口動態の変化
 ＃＃ 概要
 人口動態は運命である、あるいは少なくともそれに強く韻を踏んでいる。世界の人口は急速に高齢化しており、新たなパターンで移住し、前例のない速度で都市に集中し、投票行動から消費習慣に至るまであらゆるものを形成する世代間の分裂が進んでいます。これらの変化は数十年にわたって展開されますが、その影響はすでに目に見えています。ここでは 4 つの大きなトレンドとその意味を紹介します。

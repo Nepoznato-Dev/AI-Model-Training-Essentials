@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # فورٹران - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ فورٹران ماحولیاتی نظام میں ضروری ٹولز، لائبریریوں اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

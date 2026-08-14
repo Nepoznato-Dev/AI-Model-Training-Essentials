@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Numerische Methoden
 Numerische Methoden sind die Brücke zwischen mathematischer Theorie und praktischer Berechnung. Während die reine Mathematik beweist, dass es Lösungen gibt, berechnen numerische Methoden tatsächlich Näherungslösungen mit endlicher Genauigkeit. Jedes maschinelle Lernmodell, jede physikalische Simulation und jede Datenanalyse-Pipeline basiert letztendlich auf numerischen Berechnungen. Das Verständnis dieser Methoden – ihrer Genauigkeit, Stabilität und Einschränkungen – ist für die Entwicklung zuverlässiger Software von entscheidender Bedeutung.
 ---

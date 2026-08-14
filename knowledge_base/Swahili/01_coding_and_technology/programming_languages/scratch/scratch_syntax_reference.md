@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mkwaruzo - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Scratch 3.0. Inakamilisha rejeleo kuu la Mwanzo kwa kuzingatia kategoria kamili za kuzuia, mifumo inayoendeshwa na hafla, usimamizi wa sprite, uundaji wa cloning, na mbinu bunifu za usimbaji.
 ---

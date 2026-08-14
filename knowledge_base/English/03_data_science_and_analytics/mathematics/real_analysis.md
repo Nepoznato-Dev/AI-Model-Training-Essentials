@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Real Analysis
 
 Real analysis is the rigorous foundation of calculus. While introductory calculus teaches you how to compute derivatives and integrals, real analysis asks *why* these techniques work — and when they fail. It provides the precise definitions of limits, continuity, convergence, and integration that underpin probability theory, functional analysis, optimization, and the theoretical guarantees behind machine learning algorithms.

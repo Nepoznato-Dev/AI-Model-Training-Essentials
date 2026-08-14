@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform et infrastructure en tant que code
 Terraform est l'outil Infrastructure as Code (IaC) le plus largement utilisé : il vous permet de définir l'infrastructure cloud (serveurs, bases de données, réseaux, autorisations) dans des fichiers de configuration déclaratifs qui peuvent être versionnés, révisés, testés et automatisés. Au lieu de cliquer sur une console cloud, vous écrivez du code qui décrit l'état souhaité de votre infrastructure, et Terraform détermine les modifications à apporter.
 ---

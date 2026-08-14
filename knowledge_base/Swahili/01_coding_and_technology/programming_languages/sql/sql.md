@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #SQL
 SQL (Lugha ya Maswali Iliyoundwa) ni lugha mahususi ya kikoa iliyoundwa kwa ajili ya kudhibiti na kuuliza data katika hifadhidata za uhusiano. Iliyoundwa kwa mara ya kwanza katika IBM katika miaka ya 1970 na kusawazishwa mnamo 1987, SQL inabaki kuwa kiolesura cha msingi kati ya programu na data zao. Kila Mfumo mkuu wa Usimamizi wa Hifadhidata ya Uhusiano (RDBMS) - PostgreSQL, MySQL, Seva ya SQL, Oracle, SQLite - hutumia SQL kama lugha yake ya kuuliza.
 SQL sio lugha ya programu ya kusudi la jumla. Hungeandika programu ya wavuti katika SQL. Lakini ikiwa programu yako itahifadhi data - na karibu programu zote hufanya hivyo - basi SQL ndiyo lugha unayotumia kupata, kubadilisha, na kudhibiti data hiyo. Bila shaka ni ujuzi wa kiufundi muhimu zaidi ulimwenguni baada ya upangaji programu wa jumla.

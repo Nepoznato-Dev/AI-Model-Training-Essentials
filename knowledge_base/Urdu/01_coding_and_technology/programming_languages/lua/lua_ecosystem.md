@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ Lua ماحولیاتی نظام میں ضروری آلات، لائبریریوں اور بنیادی ڈھانچے کا احاطہ کرتا ہے۔
 ---

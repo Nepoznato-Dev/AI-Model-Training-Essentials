@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Perbandingan Layanan Cloud
 Perbandingan berdampingan dari tiga penyedia cloud utama — AWS, Azure, dan Google Cloud — dalam bidang komputasi, penyimpanan, database, AI/ML, jaringan, pemantauan, dan infrastruktur sebagai kode. Berguna bagi arsitek yang memutuskan platform mana yang akan digunakan, atau memetakan layanan dari satu cloud ke cloud lainnya.
 ---

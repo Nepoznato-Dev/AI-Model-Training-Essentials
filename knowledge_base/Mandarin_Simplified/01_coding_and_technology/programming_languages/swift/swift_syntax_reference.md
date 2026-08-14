@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Swift — 语法参考
 本文档为 Swift (5.9+) 提供全面、结构化的语法参考。它通过关注详尽的语法模式、选项、面向协议的编程和现代并发性来补充主要的 Swift 参考。
 ---

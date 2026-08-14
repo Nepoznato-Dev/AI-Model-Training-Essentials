@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 統計測試和實驗
 統計學是科學的語法。它為您提供了區分真實模式和隨機雜訊的工具，衡量變更是否真正改善了情況，並在不確定的情況下做出決策。該文件涵蓋了假設檢定、實驗設計的核心概念，以及令人困惑的常見陷阱。
 ---

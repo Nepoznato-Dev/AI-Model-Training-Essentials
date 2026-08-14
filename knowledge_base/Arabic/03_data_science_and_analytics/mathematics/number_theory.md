@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # نظرية الأعداد
 نظرية الأعداد هي دراسة الأعداد الصحيحة – الأعداد الصحيحة وخصائصها. أطلق عليها غاوس اسم "ملكة الرياضيات". على الرغم من دراسة أبسط الأشياء (1، 2، 3، ...)، فإن نظرية الأعداد تنتج بعضًا من أعمق وأصعب المشكلات في كل الرياضيات. وهي تدعم اليوم التشفير الحديث وخوارزميات التجزئة ورموز تصحيح الأخطاء وتوليد الأرقام العشوائية.
 ---

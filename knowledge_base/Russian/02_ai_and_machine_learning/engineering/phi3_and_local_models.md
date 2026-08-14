@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini и ландшафт локальной модели искусственного интеллекта
 Анализ модели Microsoft Phi-3-mini — ее философии дизайна, выбора архитектуры и характеристик производительности — и того, чему ее успех учит нас в создании эффективных и действенных систем искусственного интеллекта.
 ---

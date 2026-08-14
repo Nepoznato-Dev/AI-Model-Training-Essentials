@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تحقیق در عملیات
 تحقیق در عملیات (OR) کاربرد روش های ریاضی برای تصمیم گیری است. این شرکت که در طول جنگ جهانی دوم برای لجستیک نظامی متولد شد، اکنون زنجیره‌های تامین را بهینه می‌کند، خطوط هوایی را برنامه‌ریزی می‌کند، ناوگان تحویل را مسیریابی می‌کند، موجودی‌ها را مدیریت می‌کند و منابع را در هر صنعت تخصیص می‌دهد. OR جعبه ابزار ریاضی را برای گرفتن بهترین تصمیمات ممکن تحت محدودیت ها فراهم می کند.
 ---

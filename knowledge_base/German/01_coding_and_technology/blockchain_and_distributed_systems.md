@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Blockchain und verteilte Systeme
 Blockchain ist eine spezielle Art von verteiltem System – ein dezentrales, nur anhängbares Hauptbuch, in dem Datensätze (Blöcke) durch kryptografische Hashes verknüpft sind. Verteilte Systeme sind das umfassendere Feld, bei dem mehrere Computer als ein einziger zusammenarbeiten. Beide Konzepte sind wichtig für das Verständnis moderner Infrastrukturen, von Kryptowährungen über verteilte Datenbanken bis hin zu Konsensalgorithmen, die globale Dienste unterstützen.
 ---

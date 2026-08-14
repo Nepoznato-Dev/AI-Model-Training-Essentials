@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mitambo ya Quantum
 Mechanics ya quantum ni nadharia ya fizikia katika mizani ndogo zaidi - atomi, elektroni, fotoni, na chembe za kimsingi za asili. Inachukua nafasi ya ulimwengu wa kuamua wa mechanics ya zamani na uwezekano, nafasi kuu, na msongamano. Licha ya asili yake ya kupingana, mechanics ya quantum ndiyo nadharia iliyojaribiwa kwa usahihi zaidi katika sayansi yote. Leo, kanuni zake zinafaa moja kwa moja kwa kompyuta kupitia kompyuta za quantum, ambazo zinaahidi kutatua matatizo fulani kwa kasi zaidi kuliko mashine za classical.
 ---

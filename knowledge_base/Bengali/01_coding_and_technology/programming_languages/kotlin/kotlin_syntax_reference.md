@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # কোটলিন — সিনট্যাক্স রেফারেন্স
 এই নথিটি কোটলিন (2.0+) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, নাল সেফটি, কোরোটিন এবং কোটলিন ইডিয়মগুলিতে ফোকাস করে মূল কোটলিন রেফারেন্সের পরিপূরক।
 ---

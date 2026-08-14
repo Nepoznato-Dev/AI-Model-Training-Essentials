@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Оперативное проектирование
 Оперативное проектирование — это практика проектирования, уточнения и оптимизации подсказок ввода для получения наилучшего результата от языковой модели. Это одновременно искусство и наука, и это основной интерфейс для управления поведением LLM без тонкой настройки.
 ---

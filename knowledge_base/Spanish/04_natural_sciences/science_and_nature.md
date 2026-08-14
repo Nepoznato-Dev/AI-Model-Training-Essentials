@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadatos
 título: "Ciencia y Naturaleza"
@@ -35,8 +34,6 @@ contribución:
   how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
   review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
 ---
-
--->
 # Ciencia y Naturaleza
 La ciencia es la forma en que averiguamos qué está haciendo realmente el universo; no lo que suponemos que está haciendo, no lo que los textos antiguos dicen que hace, sino lo que revelan la observación y la experimentación cuidadosas. El método científico es simple en principio: observa algo, formula una hipótesis, pruébala y revisa tu comprensión en función de los resultados. Lo que hace que la ciencia sea poderosa es que se autocorrige. Cada afirmación es provisional: se acepta sólo hasta que aparezcan mejores pruebas.
 Este archivo cubre las principales ramas de las ciencias naturales: física, química, biología y ciencias de la Tierra y el espacio. Piense en ello como un mapa del mundo físico.

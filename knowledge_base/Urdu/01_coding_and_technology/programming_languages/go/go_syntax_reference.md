@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # جاؤ - نحوی حوالہ
 یہ دستاویز Go کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، آپریٹر ٹیبلز، اور گوروٹینز، چینلز، اور انٹرفیسز کے اندرونی میکانکس پر توجہ مرکوز کر کے مرکزی گو ریفرنس کی تکمیل کرتا ہے۔
 ---

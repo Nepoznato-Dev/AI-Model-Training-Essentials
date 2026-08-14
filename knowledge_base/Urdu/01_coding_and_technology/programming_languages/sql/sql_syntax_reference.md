@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL - نحوی حوالہ
 یہ دستاویز SQL (ANSI SQL PostgreSQL/MySQL/SQLite بولی کے فرق پر نوٹس کے ساتھ) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل استفسار کے نمونوں، ونڈو فنکشنز، CTEs، اور ڈیٹا بیس کے ڈیزائن پر توجہ مرکوز کرکے مرکزی SQL حوالہ کی تکمیل کرتا ہے۔
 ---

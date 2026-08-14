@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Heograpiya at Geopolitics
 Ang heograpiya ay humuhubog sa tadhana. Ang lokasyon ng mga bundok, ilog, at likas na yaman ay nagtatakda ng mga ruta ng kalakalan, nagpasiklab ng mga digmaan, at nagtayo ng mga sibilisasyon sa loob ng millennia. Sa ngayon, ang geopolitics - ang interplay ng heograpiya, kapangyarihan, at pulitika - ay nananatiling mahalaga para maunawaan kung bakit ang mga bansa ay kumikilos sa paraang ginagawa nila.
 ---

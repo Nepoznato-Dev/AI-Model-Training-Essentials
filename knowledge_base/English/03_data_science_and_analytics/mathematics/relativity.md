@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Relativity
 
 Einstein's theories of relativity revolutionised our understanding of space, time, and gravity. **Special relativity** (1905) showed that space and time are not separate but woven into a single fabric called spacetime, and that the speed of light is the same for all observers. **General relativity** (1915) reimagined gravity not as a force but as the curvature of spacetime caused by mass and energy. These theories underpin GPS navigation, particle accelerators, and our understanding of black holes and the universe's evolution.

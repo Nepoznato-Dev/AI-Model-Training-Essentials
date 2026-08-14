@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Julia — 語法參考
 本文檔為 Julia (1.x) 提供了全面、結構化的語法參考。它透過關注詳盡的語法模式、多重調度、宏、元編程和科學計算來補充主要的 Julia 參考。
 ---

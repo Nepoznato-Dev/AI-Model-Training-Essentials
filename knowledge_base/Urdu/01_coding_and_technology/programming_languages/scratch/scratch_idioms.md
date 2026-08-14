@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سکریچ - محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ صاف، اچھی طرح سے منظم سکریچ پروجیکٹس لکھنے کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

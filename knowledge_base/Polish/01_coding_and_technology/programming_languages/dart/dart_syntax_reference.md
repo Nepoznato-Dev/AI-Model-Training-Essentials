@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni Darta (3.x). Uzupełnia główne odniesienia do Darta, koncentrując się na wyczerpujących wzorcach składni, bezpieczeństwie zerowym, programowaniu asynchronicznym i wzorcach projektowych zorientowanych na Flutter.
 ---

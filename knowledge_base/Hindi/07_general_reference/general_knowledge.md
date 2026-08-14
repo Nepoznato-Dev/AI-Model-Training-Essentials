@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # सामान्य ज्ञान
 यह फ़ाइल उन तथ्यों और अवधारणाओं का संग्रह है जो बातचीत, समाचार, शिक्षा और दैनिक जीवन में नियमित रूप से सामने आते हैं। इसे पृष्ठभूमि ज्ञान के रूप में सोचें - ऐसी चीज़ जो आपको यह समझने में मदद करती है कि आप क्या पढ़ रहे हैं, सुन रहे हैं या अनुभव कर रहे हैं।
 ---

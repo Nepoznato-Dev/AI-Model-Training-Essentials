@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby — エコシステムとツールのガイド
 このガイドでは、Ruby エコシステムの重要なツール、フレームワーク、インフラストラクチャについて説明します。
 ---

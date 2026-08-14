@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 飞镖
 Dart 是 Google 开发的客户端优化编程语言，于 2013 年首次发布。虽然 Dart 最初被定位为 Web 浏览器的潜在 JavaScript 替代品，但它发现其主要目的是作为 **Flutter** 背后的语言 - Google 的跨平台 UI 工具包，用于从单个代码库构建移动、Web、桌面和嵌入式应用程序。
 Dart 结合了现代语言的最佳功能：它是面向对象的，具有可选类型（自 Dart 3 以来健全的 null 安全性），支持使用`async`/`await`进行异步编程，并编译为本机机器代码（用于移动/桌面）和 JavaScript（用于 Web）。

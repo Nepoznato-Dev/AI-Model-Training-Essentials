@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Finance and Investing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 金融と投資
 ## 個人金融の基礎
 ### 財務計画の基本

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны для написания чистого и безопасного кода Ada.
 ---

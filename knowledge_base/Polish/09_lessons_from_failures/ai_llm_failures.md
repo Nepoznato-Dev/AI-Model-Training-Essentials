@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Awarie AI i LLM
 W tym dokumencie skonsolidowano typowe tryby awarii w systemach AI i modelach wielkojęzykowych, w tym halucynacje, dezinformację, błędy w rozumowaniu i problemy związane z podpowiedziami.
 ---

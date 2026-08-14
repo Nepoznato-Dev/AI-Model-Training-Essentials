@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # テスト方法
 テストは、コードが機能すること、そしてさらに重要なことに、コードを変更してもすでに機能しているものが壊れていないことを確信する方法です。優れたテストは、ユーザーが行う前にバグを発見し、予想される動作を文書化して、大胆なリファクタリングを可能にします。このファイルは、単体テストからエンドツーエンドのテストまで、あらゆるテスト戦略と、テストを効果的にするための原則をカバーしています。
 ---

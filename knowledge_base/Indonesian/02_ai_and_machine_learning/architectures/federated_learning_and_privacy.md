@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pembelajaran Federasi dan Privasi
 Pembelajaran gabungan adalah teknik untuk melatih model pembelajaran mesin di beberapa perangkat atau organisasi tanpa berbagi data mentah. Daripada mengirim data ke server pusat, setiap perangkat melatih model lokal dan hanya membagikan pembaruan model (gradien atau bobot). Server pusat mengumpulkan pembaruan ini untuk menghasilkan model global. Ini dirancang oleh Google untuk melatih model bahasa keyboard di ponsel Android — dan sejak itu menjadi teknik utama untuk AI yang menjaga privasi.
 ---

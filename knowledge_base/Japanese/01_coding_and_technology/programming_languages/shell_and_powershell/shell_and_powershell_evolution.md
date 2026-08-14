@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell と PowerShell — バージョン履歴と進化
 ## Unix シェルのタイムライン
 |バージョン |年 |主要テーマ |

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Demografik Değişimler
 ## Genel Bakış
 Demografi kaderdir - ya da en azından onunla güçlü bir şekilde kafiyelidir. Dünya nüfusu hızla yaşlanıyor, yeni kalıplarla göç ediyor, benzeri görülmemiş oranlarda şehirlerde kümeleniyor ve oy verme davranışından tüketici alışkanlıklarına kadar her şeyi şekillendiren nesiller boyunca bölünüyor. Bu değişimler onlarca yıl sürecek, ancak etkileri şimdiden görülüyor. İşte dört büyük trend ve bunların ne anlama geldiği.

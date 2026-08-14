@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Takviyeli Öğrenme
 Takviyeli öğrenme (RL), makinelerin deneme yanılma yoluyla bir dizi karar almayı öğrenmesidir. Her örnek için doğru cevabın sağlandığı denetimli öğrenmenin aksine, RL aracıya yalnızca bir ödül sinyali verir ve aracının zaman içinde hangi eylemlerin en iyi sonuçlara yol açtığını bulması gerekir. AlphaGo'nun, robotik kontrolün, oyun oynayan yapay zekanın ve modern büyük dil modellerini insan tercihleriyle uyumlu hale getirmek için kullanılan teknik olan RLHF'nin arkasındaki yaklaşım budur.
 ---

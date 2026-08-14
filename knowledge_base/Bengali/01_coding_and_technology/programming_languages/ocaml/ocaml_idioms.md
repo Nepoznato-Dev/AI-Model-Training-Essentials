@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — ইডিওম্যাটিক প্যাটার্নস এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি পরিষ্কার, বাহাদুরী OCaml কোড লেখার জন্য বাগধারার প্যাটার্নগুলিকে কভার করে।
 ---

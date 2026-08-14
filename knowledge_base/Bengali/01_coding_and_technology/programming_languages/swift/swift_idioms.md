@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # সুইফ্ট — ইডিওম্যাটিক প্যাটার্নস এবং সর্বোত্তম অনুশীলন
 এই গাইডটি পরিষ্কার, সুইফ্ট কোড লেখার জন্য বাহাদুরি প্যাটার্ন এবং সর্বোত্তম অনুশীলনগুলি কভার করে।
 ---

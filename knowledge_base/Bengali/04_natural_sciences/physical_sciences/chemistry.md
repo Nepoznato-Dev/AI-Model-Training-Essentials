@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # রসায়ন
 যদি পদার্থবিদ্যা খেলার নিয়ম হয়, রসায়ন হল যখন টুকরোগুলি ইন্টারঅ্যাক্ট করে তখন যা ঘটে। রসায়ন অধ্যয়ন করে যে কীভাবে পরমাণুগুলি বন্ধন, বিচ্ছিন্ন এবং পুনর্বিন্যাস করে — যার অর্থ হল, সমস্ত পদার্থ কীভাবে আচরণ করে। এটি মৌলিক পদার্থবিদ্যা এবং জীববিদ্যা, ভূতত্ত্ব এবং প্রকৌশলের জটিলতার মধ্যে ব্যবধান দূর করে।
 ---

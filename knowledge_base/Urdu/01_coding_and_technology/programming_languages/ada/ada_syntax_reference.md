@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada - نحوی حوالہ
 یہ دستاویز Ada (2012/2022) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، ٹاسکنگ، محفوظ اشیاء، جنرکس، اور حفاظتی اہم پروگرامنگ پر توجہ مرکوز کرکے مرکزی Ada حوالہ کی تکمیل کرتا ہے۔
 ---

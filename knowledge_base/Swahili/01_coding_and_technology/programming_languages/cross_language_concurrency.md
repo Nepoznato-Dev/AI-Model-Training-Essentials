@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ulinganisho wa Lugha Mtambuka - Upatanishi na Usambamba
 ## Muhtasari wa Miundo ya Sarafu
 | Lugha | Mfano | Utaratibu Muhimu | Kumbukumbu iliyoshirikiwa? |

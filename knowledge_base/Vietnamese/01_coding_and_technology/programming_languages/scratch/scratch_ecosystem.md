@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Hướng dẫn về hệ sinh thái và công cụ
 Hướng dẫn này bao gồm các công cụ, tiện ích mở rộng và tài nguyên thiết yếu trong hệ sinh thái Scratch.
 ---

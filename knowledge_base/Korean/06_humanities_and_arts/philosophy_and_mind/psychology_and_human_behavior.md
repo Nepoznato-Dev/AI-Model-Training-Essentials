@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 심리학과 인간 행동
 심리학은 사람들이 어떻게 생각하고, 느끼고, 행동하는지에 대한 과학입니다. 그것은 독심도 아니고 상식도 아닙니다. 비록 상식이 제안하는 것을 때로는 확인하기도 하고 완전히 모순되기도 하지만 말입니다. 심리학은 다른 모든 과학과 마찬가지로 관찰, 가설, 테스트, 수정 등 동일한 과학적 방법을 사용합니다. 이를 어렵게 만드는 것은 그 주제인 인간의 마음이 우리가 아는 가장 복잡한 대상이라는 것입니다.
 이 파일은 심리학의 주요 영역, 즉 우리가 생각하는 방식, 발전하는 방식, 다른 사람의 영향을 받는 방식, 잘못된 점, 이에 대해 취할 수 있는 조치를 다룹니다.

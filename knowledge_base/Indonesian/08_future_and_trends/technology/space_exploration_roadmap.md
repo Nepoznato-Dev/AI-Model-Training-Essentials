@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Peta Jalan Eksplorasi Luar Angkasa
 ## Ringkasan
 Kita sedang menjalani zaman keemasan baru dalam eksplorasi ruang angkasa. Program Artemis NASA mengembalikan manusia ke Bulan. SpaceX sedang membangun roket yang sepenuhnya dapat digunakan kembali yang dirancang untuk Mars. Tiongkok memiliki rencana ambisiusnya sendiri untuk mencapai bulan dan Mars. Dan semakin banyak perusahaan swasta yang membuka ruang bagi perdagangan – mulai dari internet satelit hingga wisata luar angkasa. Berikut peta jalannya, dari Bulan ke Mars dan seterusnya.

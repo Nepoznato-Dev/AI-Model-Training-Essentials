@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンな Delphi コードと Object Pascal コードを記述するための慣用的なパターンについて説明します。
 ---

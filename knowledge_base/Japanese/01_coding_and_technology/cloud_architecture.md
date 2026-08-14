@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # クラウドアーキテクチャ
 クラウド コンピューティングは、組織がソフトウェアを構築、展開、拡張する方法を根本的に変えました。物理サーバーを購入して維持する代わりに、オンデマンドでコンピューティング リソースをプロビジョニングし、使用した分だけ支払い、数分でグローバルに拡張できます。このファイルには、知っておくべき中心的な概念、アーキテクチャ パターン、サービス、ベスト プラクティスが含まれています。
 ---

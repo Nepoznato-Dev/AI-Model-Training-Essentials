@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ব্যবসা এবং অর্থনীতি
 প্রতিটি সংস্থা যা একটি পণ্য বা পরিষেবা বিক্রি করে একটি ব্যবসা, এবং প্রতিটি সমাজ যা পণ্য উত্পাদন এবং বিতরণ করে একটি অর্থনীতি। আপনি একটি ফ্রিল্যান্স অপারেশন চালাচ্ছেন, একটি কর্পোরেশনে কাজ করছেন, খবর বোঝার চেষ্টা করছেন, বা সারা বিশ্বে অর্থ কীভাবে চলে তা খুঁজে বের করছেন কিনা এই ফাইলের ধারণাগুলি প্রযোজ্য।
 ---

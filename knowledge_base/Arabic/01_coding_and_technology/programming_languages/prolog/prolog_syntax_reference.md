@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لصيغة Prolog. وهو يكمل مرجع Prolog الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، والتوحيد، والتتبع الخلفي، ومجموعات DCG، ومصطلحات البرمجة المنطقية.
 ---

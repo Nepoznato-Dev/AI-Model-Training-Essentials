@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # データの視覚化
 適切に設計されたグラフは、数字の表では隠れているパターンを明らかにすることができます。デザインが不十分だと、誤解を招いたり、混乱させたり、退屈させたりする可能性があります。データビジュアライゼーションは、データを意思決定を伝える視覚的なストーリーに変える技術です。このファイルには、チャートの選択、設計原則、よくある間違い、およびそれをすべて可能にするツールが含まれています。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visualisasi Data
 Bagan yang dirancang dengan baik dapat mengungkapkan pola yang disembunyikan oleh tabel angka. Desain yang buruk dapat menyesatkan, membingungkan, atau membosankan. Visualisasi data adalah keahlian mengubah data menjadi cerita visual yang menginformasikan keputusan. File ini mencakup pemilihan bagan, prinsip desain, kesalahan umum, dan alat yang memungkinkan semuanya terjadi.
 ---

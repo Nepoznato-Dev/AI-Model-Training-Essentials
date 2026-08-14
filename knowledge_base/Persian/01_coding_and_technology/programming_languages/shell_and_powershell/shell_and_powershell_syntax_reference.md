@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell & PowerShell - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Bash و PowerShell ارائه می دهد. این مرجع اصلی شل را با تمرکز بر الگوهای اسکریپت نویسی جامع، خطوط لوله، مدیریت فرآیند و اصطلاحات اتوماسیون برای هر دو پوسته تکمیل می کند.
 ---

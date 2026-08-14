@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Histoire et culture
 L’histoire est l’histoire de ce que les humains ont fait : les succès, les catastrophes, les inventions et les idées qui ont façonné le monde dans lequel nous vivons aujourd’hui. Ce n'est pas seulement une liste de dates et de noms. Comprendre l’histoire vous aide à comprendre pourquoi les frontières sont là où elles se trouvent, pourquoi les gens parlent les langues qu’ils parlent, pourquoi certains pays sont riches alors que d’autres ne le sont pas, et pourquoi des conflits qui semblent anciens brûlent encore.
 Ce dossier couvre les grandes périodes et thèmes de l'histoire du monde, des premières civilisations à nos jours.

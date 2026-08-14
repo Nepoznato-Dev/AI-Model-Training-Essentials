@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go — Syntax Reference
 Nagbibigay ang dokumentong ito ng komprehensibo, structured na syntax na reference para sa Go. Kinukumpleto nito ang pangunahing sanggunian ng Go sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, mga talahanayan ng operator, at panloob na mekanika ng mga goroutine, channel, at interface.
 ---

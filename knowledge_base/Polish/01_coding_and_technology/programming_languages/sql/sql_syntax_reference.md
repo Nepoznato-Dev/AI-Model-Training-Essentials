@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL — Odniesienie do składni
 Ten dokument zawiera obszerne, uporządkowane omówienie składni języka SQL (ANSI SQL z uwagami na temat różnic w dialektach PostgreSQL/MySQL/SQLite). Uzupełnia główne odniesienia do języka SQL, koncentrując się na wyczerpujących wzorcach zapytań, funkcjach okien, współczynnikach CTE i projektowaniu baz danych.
 ---

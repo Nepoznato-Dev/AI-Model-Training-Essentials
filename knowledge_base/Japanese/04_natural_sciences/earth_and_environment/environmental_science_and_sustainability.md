@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 環境科学と持続可能性
 環境科学は、物理学、化学、生物学、地質学、経済学の手法を「私たちの地球に何が起こっているのか、そしてそれに対して何ができるのか?」という問いに適用します。これは学際的な分野、つまり複数の専門分野が集まったものであり、分析の深さと政策の関連性の両方に貢献しています。
 環境科学の中核となる緊張はこれです。人類の文明は環境から資源を抽出することに依存していますが、それらの資源を抽出すると、私たちが依存しているシステムを弱体化させる可能性のある方法で環境が変化します。一言で言えば、フィードバック ループがフィールド全体であることを理解します。

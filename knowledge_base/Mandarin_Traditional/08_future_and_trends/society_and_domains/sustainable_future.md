@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 永續的未來
 ＃＃ 概述
 問題不再是「世界是否」需要向永續經濟轉型，而是「多快」和「誰來領導」。再生能源現在是大多數市場上最便宜的能源。循環經濟原則正從利基概念轉向企業策略。城市正在重新思考從交通到廢物處理的一切。淨零排放競賽正在重塑從能源到金融的各個產業。以下是可持續未來在四個關鍵維度上的樣子。

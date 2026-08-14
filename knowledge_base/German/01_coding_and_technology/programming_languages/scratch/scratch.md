@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kratzen
 Scratch ist eine visuelle, blockbasierte Programmiersprache, die vom MIT Media Lab entwickelt und erstmals 2007 veröffentlicht wurde. Anstatt textbasierten Code zu schreiben, fügen Benutzer farbige Blöcke zusammen, um Programme zu erstellen. Scratch wurde speziell für Kinder im Alter von 8 bis 16 Jahren entwickelt (obwohl es von Lernenden jeden Alters verwendet wird), um grundlegende Programmierkonzepte – Schleifen, Bedingungen, Variablen, Ereignisse und Funktionen – ohne die Hürde von Syntaxfehlern zu vermitteln.
 Scratch ist mit über 100 Millionen registrierten Benutzern und einer Verfügbarkeit in über 70 Sprachen die am weitesten verbreitete Einführungsprogrammiersprache der Welt. Es läuft in einem Webbrowser und ist kostenlos.

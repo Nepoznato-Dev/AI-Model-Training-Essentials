@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Fortran — Mga Karaniwang Pagkakamali at Anti-Pattern
 Ang dokumentong ito ay katalogo ng mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa Fortran na may mga pagwawasto.
 ---

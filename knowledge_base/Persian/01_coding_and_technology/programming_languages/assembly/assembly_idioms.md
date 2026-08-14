@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # مجمع - الگوهای اصطلاحی و بهترین شیوه ها
 این راهنما الگوهای اصطلاحی برای نوشتن کد اسمبلی تمیز و قابل نگهداری (فوکوس x86/x64 با نحو NASM) را پوشش می‌دهد.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI at LLM Failures
 Pinagsasama-sama ng dokumentong ito ang mga karaniwang failure mode sa AI at Large Language Model system, kabilang ang mga guni-guni, maling impormasyon, mga error sa pangangatwiran, at mga isyung nauugnay kaagad.
 ---

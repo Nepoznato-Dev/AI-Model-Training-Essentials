@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang ve İksir — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, BEAM VM'deki Erlang ve Elixir için deyimsel kalıpları kapsar.
 ---

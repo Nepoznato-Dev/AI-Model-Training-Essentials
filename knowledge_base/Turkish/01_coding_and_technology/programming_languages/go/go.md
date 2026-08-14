@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gitmek
 Go (orijinal alan adından dolayı genellikle "Golang" olarak anılır), Google'da Robert Griesemer, Rob Pike ve Ken Thompson tarafından tasarlanan statik olarak yazılmış, derlenmiş bir programlama dilidir. İlk olarak 2012 yılında sistem programlama için daha iyi bir dil olma hedefiyle piyasaya sürüldü; C'nin performansını Python gibi dinamik dillerin üretkenliğiyle birleştiren bir dil. Go, basitliği, hızlı derlemesi, yerleşik eşzamanlılığı (goroutinler ve kanallar) ve mükemmel araçlarıyla tanınır.
 Go, bulut altyapısı ekosisteminin büyük bir kısmına güç verir: Docker, Kubernetes, Terraform, Prometheus, vb. ve Go standart kitaplığının HTTP sunucusunun tümü Go'da yazılmıştır. Bulutta yerel geliştirme, mikro hizmetler ve CLI araçları için varsayılan dil haline geldi.

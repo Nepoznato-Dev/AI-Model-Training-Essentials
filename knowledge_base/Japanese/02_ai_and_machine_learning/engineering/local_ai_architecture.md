@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ローカル AI アーキテクチャ
 大規模な言語モデルを完全にデバイス上で実行するための実践的なガイド。ハードウェアの考慮事項、推論エンジン、メモリの最適化、エッジ展開のためのシステム設計について説明します。
 ---

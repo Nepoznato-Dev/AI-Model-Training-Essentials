@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны для написания чистого идиоматического кода OCaml.
 ---

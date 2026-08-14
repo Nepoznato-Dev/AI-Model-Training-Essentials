@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metody numeryczne
 Metody numeryczne stanowią pomost pomiędzy teorią matematyczną a obliczeniami praktycznymi. Chociaż czysta matematyka dowodzi, że istnieją rozwiązania, metody numeryczne w rzeczywistości obliczają przybliżone odpowiedzi ze skończoną precyzją. Każdy model uczenia maszynowego, symulacja fizyki i potok analizy danych ostatecznie opiera się na obliczeniach numerycznych. Zrozumienie tych metod — ich dokładności, stabilności i ograniczeń — jest niezbędne do tworzenia niezawodnego oprogramowania.
 ---

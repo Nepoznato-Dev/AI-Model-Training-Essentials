@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic – Padrões Idiomáticos e Melhores Práticas
 Este guia aborda padrões idiomáticos para escrever código Visual Basic (.NET) limpo.
 ---

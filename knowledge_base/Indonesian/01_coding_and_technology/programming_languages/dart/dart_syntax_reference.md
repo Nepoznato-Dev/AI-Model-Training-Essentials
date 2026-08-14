@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dart — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Dart (3.x). Ini melengkapi referensi Dart utama dengan berfokus pada pola sintaksis yang lengkap, keamanan nol, pemrograman asinkron, dan pola desain berorientasi Flutter.
 ---

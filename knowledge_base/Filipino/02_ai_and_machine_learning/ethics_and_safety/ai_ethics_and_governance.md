@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI Etika at Pamamahala
 Ang mga AI system ay hindi neutral. Sinasalamin nila ang data kung saan sila sinanay, ang mga halaga ng kanilang mga tagalikha, at ang mga insentibo ng mga organisasyong nagde-deploy sa kanila. Ang etika ay tungkol sa pagtatanong hindi lang "magagawa ba natin ito?" ngunit "dapat ba?" Ang pamamahala ay tungkol sa paglikha ng mga istruktura — mga batas, pamantayan, mga katawan ng pangangasiwa — na tumitiyak na ang AI ay binuo at ginagamit nang responsable. Sinasaklaw ng file na ito ang mga pangunahing etikal na dimensyon ng AI at ang mga balangkas ng pamamahala na lumalabas upang tugunan ang mga ito.
 ---

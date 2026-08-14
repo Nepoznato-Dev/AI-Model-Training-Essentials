@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nenda - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yaliyopangwa ya kisintaksia ya Go. Inakamilisha marejeleo kuu ya Go kwa kuangazia mifumo kamili ya sintaksia, majedwali ya waendeshaji, na ufundi wa ndani wa goroutines, idhaa na violesura.
 ---

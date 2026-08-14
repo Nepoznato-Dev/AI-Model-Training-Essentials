@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bisnis dan Ekonomi
 Setiap organisasi yang menjual produk atau jasa adalah bisnis, dan setiap masyarakat yang memproduksi dan mendistribusikan barang adalah perekonomian. Konsep dalam file ini berlaku baik Anda menjalankan operasi lepas, bekerja di perusahaan, mencoba memahami berita, atau sekadar mencari tahu bagaimana uang bergerak di seluruh dunia.
 ---

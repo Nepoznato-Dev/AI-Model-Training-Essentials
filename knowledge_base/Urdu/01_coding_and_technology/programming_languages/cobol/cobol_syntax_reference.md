@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL - نحوی حوالہ
 یہ دستاویز COBOL (2014+) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، ڈیٹا کی تفصیل، فائل پروسیسنگ، اور کاروباری منطق پر توجہ مرکوز کرکے مرکزی COBOL حوالہ کی تکمیل کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada — 構文リファレンス
 このドキュメントは、Ada (2012/2022) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、タスク、保護されたオブジェクト、ジェネリックス、および安全性が重要なプログラミングに焦点を当て、メインの Ada リファレンスを補完します。
 ---

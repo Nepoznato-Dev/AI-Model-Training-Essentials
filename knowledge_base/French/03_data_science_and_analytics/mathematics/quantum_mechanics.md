@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mécanique quantique
 La mécanique quantique est la théorie de la physique aux plus petites échelles : les atomes, les électrons, les photons et les particules fondamentales de la nature. Il remplace le monde déterministe de la mécanique classique par les probabilités, les superpositions et l'intrication. Malgré sa nature contre-intuitive, la mécanique quantique est la théorie la plus précisément testée de toutes les sciences. Aujourd’hui, ses principes deviennent directement pertinents pour l’informatique grâce aux ordinateurs quantiques, qui promettent de résoudre certains problèmes de manière exponentielle plus rapidement que les machines classiques.
 ---

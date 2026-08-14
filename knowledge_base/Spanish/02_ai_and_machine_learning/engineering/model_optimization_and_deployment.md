@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optimización e implementación del modelo
 Entrenar un modelo de IA de gran tamaño es un logro significativo, pero implementarlo de manera eficiente es donde se requiere la mayor parte del esfuerzo de ingeniería. Un modelo que tarda 10 segundos en responder o requiere ocho GPU A100 no es práctico para la mayoría de las aplicaciones del mundo real. La optimización de modelos es el proceso de hacer modelos más pequeños, más rápidos y más rentables, manteniendo al mismo tiempo una calidad aceptable. Este archivo cubre la cuantificación, la poda, la destilación y las herramientas prácticas para implementar modelos en producción.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD İşlem Hattı Yapılandırması
 Sürekli Entegrasyon (CI) ve Sürekli Dağıtım (CD) işlem hatları, yazılım oluşturma, test etme ve dağıtma sürecini otomatikleştirir. Bu referans, en popüler CI/CD platformlarına yönelik yapılandırma modellerini kapsar: GitHub Eylemleri, GitLab CI ve genel işlem hattı tasarım ilkeleri.
 ---

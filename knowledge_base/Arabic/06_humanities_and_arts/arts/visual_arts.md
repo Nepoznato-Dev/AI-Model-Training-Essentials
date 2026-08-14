@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الفنون البصرية
 يعد الفن البصري أقدم أشكال التواصل التي عرفتها البشرية - بدءًا من لوحات كهف لاسكو وحتى التركيبات الرقمية الموجودة اليوم. إن فهم الحركات الفنية والوسائط والمؤسسات التي تحافظ على الأعمال الإبداعية يمنحك تقديرًا أعمق لكيفية تعبير المجتمعات عن الجمال والقوة والروحانية والمعارضة عبر آلاف السنين.
 ---

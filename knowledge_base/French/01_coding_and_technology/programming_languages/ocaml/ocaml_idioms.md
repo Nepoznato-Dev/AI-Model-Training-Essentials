@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — Modèles idiomatiques et meilleures pratiques
 Ce guide couvre les modèles idiomatiques pour écrire du code OCaml propre et idiomatique.
 ---

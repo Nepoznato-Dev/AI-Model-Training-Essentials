@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL — Sözdizimi Referansı
 Bu belge, SQL için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar (PostgreSQL/MySQL/SQLite lehçesi farklılıklarına ilişkin notlarla birlikte ANSI SQL). Kapsamlı sorgu modellerine, pencere işlevlerine, CTE'lere ve veritabanı tasarımına odaklanarak ana SQL referansını tamamlar.
 ---

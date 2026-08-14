@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Paraan ng Pagsubok
 Ang pagsubok ay kung paano ka magkakaroon ng kumpiyansa na gumagana ang iyong code — at higit sa lahat, ang mga pagbabago dito ay hindi masisira kung ano ang gumagana na. Ang mahusay na pagsubok ay nakakakuha ng mga bug bago gawin ng mga gumagamit, mga dokumento na inaasahang pag-uugali, at nagbibigay-daan sa walang takot na refactoring. Sinasaklaw ng file na ito ang buong spectrum ng mga diskarte sa pagsubok, mula sa mga unit test hanggang sa end-to-end na mga pagsubok, at ang mga prinsipyong ginagawang epektibo ang pagsubok.
 ---

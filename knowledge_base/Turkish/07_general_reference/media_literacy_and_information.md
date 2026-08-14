@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Medya Okuryazarlığı ve Bilgi Değerlendirmesi
 Bilgiye doymuş bir dünyada yaşıyoruz. Ortalama bir kişi her gün binlerce medya mesajına maruz kalıyor: haber makaleleri, sosyal medya gönderileri, reklamlar, siyasi konuşmalar, etkileyici içerikler, yapay zeka tarafından oluşturulan metinler. Çoğu iyi. Bir kısmı yanıltıcıdır. Küçük bir miktar kasıtlı olarak yanlıştır. Medya okuryazarlığı bu ortamda yön bulma becerisidir; her şeye güvenerek, hiçbir şeye güvenmeyerek değil, neyin güvenilir olup olmadığına dair kalibre edilmiş bir anlayış geliştirerek.
 ---

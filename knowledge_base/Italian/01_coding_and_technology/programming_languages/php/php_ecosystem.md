@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP: guida all'ecosistema e agli strumenti
 Questa guida copre gli strumenti, i framework e l'infrastruttura essenziali nell'ecosistema PHP.
 ---

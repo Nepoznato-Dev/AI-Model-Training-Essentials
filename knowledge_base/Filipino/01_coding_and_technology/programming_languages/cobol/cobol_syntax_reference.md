@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL — Syntax Reference
 Nagbibigay ang dokumentong ito ng komprehensibo, structured na syntax na reference para sa COBOL (2014+). Kinukumpleto nito ang pangunahing sanggunian ng COBOL sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, paglalarawan ng data, pagproseso ng file, at lohika ng negosyo.
 ---

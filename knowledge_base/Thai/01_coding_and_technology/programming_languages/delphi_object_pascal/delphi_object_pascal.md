@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # เดลฟี / วัตถุปาสคาล
 Delphi เป็นภาษาโปรแกรมเชิงวัตถุซึ่งมีพื้นฐานมาจาก Pascal ซึ่งเดิมพัฒนาโดย Borland (ต่อมาคือ Embarcadero ปัจจุบันคือ Idera) เปิดตัวครั้งแรกในปี 1995 ในชื่อ "Delphi 1" ได้รับการออกแบบมาเพื่อการพัฒนาแอปพลิเคชันอย่างรวดเร็ว (RAD) ของแอปพลิเคชันเดสก์ท็อป Windows ภาษานี้มีชื่ออย่างเป็นทางการว่า Object Pascal และ Delphi IDE มอบเครื่องมือออกแบบรูปแบบภาพ เครื่องมือฐานข้อมูลแบบรวม และคอมไพเลอร์ที่ทรงพลัง
 Delphi เป็นหนึ่งในเครื่องมือพัฒนา Windows ที่ได้รับความนิยมมากที่สุดในช่วงปลายทศวรรษ 1990 และต้นปี 2000 แม้ว่าความนิยมจะลดลงอย่างมาก แต่ก็สามารถรักษาฐานผู้ใช้ไว้โดยเฉพาะในแอปพลิเคชันเดสก์ท็อประดับองค์กร ส่วนหน้าของฐานข้อมูล และการบำรุงรักษาระบบเดิม Modern Delphi (11/12) รองรับการพัฒนาข้ามแพลตฟอร์มสำหรับ Windows, macOS, iOS และ Android ผ่านเฟรมเวิร์ก FireMonkey (FMX)

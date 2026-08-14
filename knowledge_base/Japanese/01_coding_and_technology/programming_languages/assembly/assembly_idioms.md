@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # アセンブリ — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンで保守可能なアセンブリ コード (NASM 構文を使用した x86/x64 に焦点を当てたもの) を記述するための慣用的なパターンについて説明します。
 ---

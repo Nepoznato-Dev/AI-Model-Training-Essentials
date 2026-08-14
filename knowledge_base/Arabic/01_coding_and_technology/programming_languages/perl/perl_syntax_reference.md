@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # بيرل - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا لـ Perl (5.38+). وهو يكمل مرجع Perl الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، والتعبيرات العادية، والمراجع، وقدرة معالجة النص في Perl.
 ---

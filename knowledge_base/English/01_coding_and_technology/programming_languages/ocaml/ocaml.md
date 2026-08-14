@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml
 
 OCaml (Objective Caml) is a functional programming language developed at INRIA in France, first released in 1996. It combines the expressiveness of functional programming with practical features: a powerful type system with type inference (Hindley-Milner), pattern matching, algebraic data types, and optional object-oriented programming. OCaml compiles to fast native code and also supports bytecode.

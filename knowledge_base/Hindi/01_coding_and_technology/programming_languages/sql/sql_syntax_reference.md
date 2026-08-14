@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # एसक्यूएल - सिंटैक्स संदर्भ
 यह दस्तावेज़ SQL के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है (PostgreSQL/MySQL/SQLite बोली अंतर पर नोट्स के साथ ANSI SQL)। यह संपूर्ण क्वेरी पैटर्न, विंडो फ़ंक्शंस, CTE और डेटाबेस डिज़ाइन पर ध्यान केंद्रित करके मुख्य SQL संदर्भ को पूरक करता है।
 ---

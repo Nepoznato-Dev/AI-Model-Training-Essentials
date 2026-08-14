@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Montagem - Ecossistema e Guia de Ferramentas
 Este guia cobre as ferramentas, montadores e infraestrutura essenciais no ecossistema Assembly.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # World Religions at Comparative Mythology
 Ang mga relihiyon sa daigdig ay ang mga pangunahing sistema ng paniniwala, kasanayan, at pamayanan na humubog sa sibilisasyon ng tao sa loob ng libu-libong taon. Pinag-aaralan ng comparative mythology ang mga kwento ng iba't ibang kultura tungkol sa paglikha, mga bayani, mga diyos, at ang kahulugan ng pag-iral — at ang mga kapansin-pansing pattern na umuulit sa mga tradisyong pinaghihiwalay ng libu-libong milya at millennia. Ang pag-unawa sa pareho ay mahalaga para maunawaan kung bakit pinaniniwalaan ng mga tao ang kanilang pinaniniwalaan, kung paano naiiba ang mga kultura, at kung ano ang pinag-iisa ang karanasan ng tao.
 ---

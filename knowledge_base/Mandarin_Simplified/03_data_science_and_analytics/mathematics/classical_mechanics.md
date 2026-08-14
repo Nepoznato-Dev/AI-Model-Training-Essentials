@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 经典力学
 经典力学描述了物体在力的影响下的运动。从下落的苹果到绕轨道运行的行星，从振动的弦到碰撞的粒子，它的原理支配着宏观世界。除了物理应用之外，经典力学还催生了变分法、辛几何以及支撑量子力学和现代优化的哈密顿框架。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Quang học và Sóng
 Sóng có ở khắp mọi nơi: âm thanh, ánh sáng, nước, tín hiệu vô tuyến, biên độ xác suất lượng tử, biến động của thị trường chứng khoán và sự rung động khi kích hoạt mạng lưới thần kinh. Quang học - nghiên cứu về ánh sáng - là ngành khoa học sóng phát triển nhất và các công cụ toán học của nó (phân tích Fourier, giao thoa, nhiễu xạ) áp dụng cho mọi hiện tượng sóng. Hiểu biết về sóng là điều cần thiết để xử lý tín hiệu, phân tích hình ảnh, truyền thông và lớp vật lý của mọi công nghệ hiện đại.
 ---

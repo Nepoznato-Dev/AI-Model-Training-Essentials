@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - Mfumo wa Ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia hifadhidata muhimu, zana, na miundombinu katika mfumo ikolojia wa SQL.
 ---

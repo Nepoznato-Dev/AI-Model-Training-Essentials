@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای C++ مدرن (C++17/20/23) ارائه می‌کند. این مرجع اصلی C++ را با تمرکز بر الگوهای نحوی جامع، جداول اپراتورها، مکانیک قالب و ویژگی‌های مدرن تکمیل می‌کند.
 ---

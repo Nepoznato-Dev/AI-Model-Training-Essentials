@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تكوين خط أنابيب CI/CD
 تعمل مسارات التكامل المستمر (CI) والنشر المستمر (CD) على أتمتة عملية إنشاء البرامج واختبارها ونشرها. يغطي هذا المرجع أنماط التكوين لمنصات CI/CD الأكثر شيوعًا: GitHub Actions وGitLab CI ومبادئ تصميم خطوط الأنابيب العامة.
 ---

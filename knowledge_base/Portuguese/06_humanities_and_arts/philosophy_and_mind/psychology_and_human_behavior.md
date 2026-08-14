@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Psicologia e Comportamento Humano
 A psicologia é a ciência de como e por que as pessoas pensam, sentem e agem da maneira que agem. Não é leitura de mentes e não é bom senso – embora às vezes confirme o que o bom senso sugere e às vezes o contradiga inteiramente. A psicologia usa o mesmo método científico que qualquer outra ciência: observar, formular hipóteses, testar, revisar. O que o torna desafiador é que o seu tema – a mente humana – é o objeto mais complexo que conhecemos.
 Este arquivo cobre as principais áreas da psicologia: como pensamos, como nos desenvolvemos, como somos influenciados pelos outros, o que dá errado e o que pode ser feito a respeito.

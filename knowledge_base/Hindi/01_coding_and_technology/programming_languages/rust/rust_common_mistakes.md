@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # जंग - सामान्य गलतियाँ और विरोधी पैटर्न
 यह दस्तावेज़ रस्ट में सबसे आम गलतियों, जाल और विरोधी पैटर्न को सूचीबद्ध करता है। प्रत्येक प्रविष्टि गलत दृष्टिकोण दिखाती है, बताती है कि यह विफल क्यों होता है, और सही समाधान प्रदान करती है। रस्ट का कंपाइलर कई त्रुटियां पकड़ता है, लेकिन इन पैटर्न को समझने से आपके सीखने की गति तेज हो जाएगी।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ভিজ্যুয়াল বেসিক — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অনুশীলন
 এই নির্দেশিকাটি ক্লিন ভিজ্যুয়াল বেসিক (.NET) কোড লেখার জন্য ইডিওম্যাটিক প্যাটার্ন কভার করে।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # الأدب
 الأدب هو سجل الإنسانية الأكثر ديمومة للفكر والعاطفة والخبرة. من الملاحم الشفهية للحضارات القديمة إلى روايات العصر الرقمي اليوم، كل عمل هو في حوار مع ما جاء من قبل. إن فهم الأنواع والحركات والتقنيات الأدبية يمنحك عدسة أكثر ثراءً للقراءة - ولفهم الثقافات التي أنتجت هذه الأعمال.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uchumi wa Tabia na Sayansi ya Maamuzi
 Uchumi wa tabia husoma jinsi watu hufanya maamuzi - sio jinsi mawakala wa busara wangeyafanya. Uchumi wa kimapokeo huchukulia kuwa watu wana akili timamu, wana maslahi binafsi, na wazuri katika kuchakata taarifa. Miongo kadhaa ya utafiti wa Kahneman, Tversky, Thaler, na wengine umeonyesha hii si sahihi kabisa. Watu hutumia njia za mkato za kiakili, huathiriwa na muktadha usiofaa, taarifa za hivi majuzi zilizo na uzito kupita kiasi, na kufanya makosa yanayoweza kutabirika kwa utaratibu. Kuelewa mifumo hii ni muhimu kwa kubuni bidhaa bora, sera, mashirika na maamuzi ya kibinafsi.
 ---

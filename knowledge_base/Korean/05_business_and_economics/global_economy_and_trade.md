@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 글로벌 경제와 무역
 세계 경제는 인간이 구축한 시스템 중 가장 크고 복잡한 시스템입니다. 2025년에 전 세계 GDP는 110조 달러를 초과했습니다. 80억 명이 넘는 사람들이 매일 국경을 넘어 상품과 서비스를 생산, 거래, 소비합니다. 누가 무엇을 거래하는지, 왜 어떤 나라는 부유하고 다른 나라는 가난한지, 돈이 국경을 넘어 어떻게 이동하는지, 시스템이 무너지면 어떤 일이 일어나는지 등 이 시스템이 어떻게 작동하는지 이해하는 것은 현대 세계를 탐색하는 데 필수적입니다.
 ---

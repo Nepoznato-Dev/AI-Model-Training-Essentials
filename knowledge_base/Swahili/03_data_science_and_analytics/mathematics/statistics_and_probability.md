@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Takwimu na Uwezekano
 Uwezekano na takwimu ni misingi ya hisabati ya sayansi ya data, kujifunza kwa mashine na utafiti wa kisayansi. Uwezekano hukuambia jinsi uwezekano wa matukio; takwimu inakuambia jinsi ya kupata hitimisho kutoka kwa data. Kwa pamoja, wanageuza kutokuwa na uhakika kuwa maarifa yanayoweza kupimika, yanayoweza kudhibitiwa.
 ---

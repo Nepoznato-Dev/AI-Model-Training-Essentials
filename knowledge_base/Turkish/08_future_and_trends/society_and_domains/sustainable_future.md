@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sürdürülebilir Gelecek
 ## Genel Bakış
 Sorun artık dünyanın sürdürülebilir bir ekonomiye geçişe *ihtiyaç duyup duymadığı* değil, *ne kadar hızlı* ve *kimin öncülük ettiği*. Yenilenebilir enerji artık çoğu pazarda en ucuz güç kaynağıdır. Döngüsel ekonomi ilkeleri niş konseptten kurumsal stratejiye doğru ilerliyor. Şehirler ulaşımdan atıklara kadar her şeyi yeniden düşünüyor. Net sıfıra ulaşma yarışı enerjiden finansa kadar endüstrileri yeniden şekillendiriyor. Sürdürülebilir geleceğin dört temel boyutta nasıl göründüğünü burada bulabilirsiniz.

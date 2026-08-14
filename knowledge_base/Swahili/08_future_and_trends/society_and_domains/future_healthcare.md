@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Huduma ya Afya ya Baadaye
 ## Muhtasari
 Dawa inahama kutoka kwa modeli tendaji - tibu dalili baada ya kuonekana - hadi ile ya kubashiri, inayobinafsishwa, na inayozidi kuzuia. Genomics imetoka kwa mradi wa $3 bilioni hadi jaribio la kawaida la $ 1,000. AI inajifunza kugundua magonjwa katika vipimo kabla ya madaktari wanaweza. Na dawa ya kuzaliwa upya inageuza hadithi za kisayansi kuwa majaribio ya kliniki. Haya ndiyo yanayoendelea katika mipaka mitatu mikubwa: dawa inayobinafsishwa, utafiti wa maisha marefu, na tiba ya kurejesha uundaji upya.

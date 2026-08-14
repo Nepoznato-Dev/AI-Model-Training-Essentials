@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # So sánh đa ngôn ngữ - Đồng thời & Song song
 ## Tổng quan về mô hình đồng thời
 | Ngôn ngữ | Người mẫu | Cơ chế chính | Bộ nhớ chia sẻ? |

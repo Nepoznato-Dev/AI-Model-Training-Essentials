@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI Safety at Alignment
 Ang kaligtasan ng AI ay ang pag-aaral kung paano bumuo ng mga AI system na ginagawa kung ano talaga ang gusto nating gawin nila — at hindi gumagawa ng mga bagay na hindi natin gusto, kahit na ang mga iyon ay hindi tahasang ibinukod. Ang pag-align ay ang partikular na hamon sa paggawa ng mga layunin at gawi ng AI system na tumutugma sa mga intensyon ng tao. Habang nagiging mas may kakayahan ang mga AI system, ang mga tanong na ito ay lumilipat mula sa mga pang-akademikong curiosity patungo sa mga praktikal na kinakailangan sa engineering.
 ---

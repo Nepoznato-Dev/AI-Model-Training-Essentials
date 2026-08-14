@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # مبانی بینایی کامپیوتر
 بینایی کامپیوتری به ماشین ها توانایی تفسیر و درک اطلاعات بصری از جهان - تصاویر، ویدئو و داده های سه بعدی را می دهد. همه چیز از تشخیص چهره در تلفن شما گرفته تا ماشین های خودران، تجزیه و تحلیل تصاویر پزشکی و کنترل کیفیت صنعتی را در اختیار شما قرار می دهد. این فایل مفاهیم اصلی، معماری ها و تکنیک ها را پوشش می دهد.
 ---

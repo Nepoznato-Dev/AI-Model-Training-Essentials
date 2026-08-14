@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang と Elixir — 構文リファレンス
 このドキュメントは、Erlang と Elixir の包括的で構造化された構文リファレンスを提供します。パターン マッチング、プロセス管理、OTP の動作、およびフォールト トレラント システム パターンに焦点を当て、主要なリファレンスを補完します。
 ---

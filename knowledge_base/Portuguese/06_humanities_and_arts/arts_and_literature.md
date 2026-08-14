@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Artes e Literatura
 A expressão criativa humana — seja em livros, pinturas, música ou filmes — é um dos registos mais duradouros da civilização. Compreender os principais gêneros, movimentos e figuras contextualiza o mundo em que vivemos hoje. Cada romance, cada sinfonia, cada filme dialoga com o que veio antes.
 ---

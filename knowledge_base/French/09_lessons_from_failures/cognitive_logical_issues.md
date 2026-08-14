@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Biais cognitifs et erreurs logiques
 Ce document consolide les biais cognitifs, les erreurs logiques et les erreurs de raisonnement qui affectent à la fois la prise de décision humaine et les résultats du système d'IA.
 ---

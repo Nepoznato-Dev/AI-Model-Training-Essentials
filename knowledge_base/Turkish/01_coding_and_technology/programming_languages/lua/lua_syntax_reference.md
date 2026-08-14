@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — Sözdizimi Referansı
 Bu belge Lua (5.4) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, tablolara ve metatablolara, eşyordamlara ve Lua'nın benzersiz tasarım felsefesine odaklanarak ana Lua referansını tamamlar.
 ---

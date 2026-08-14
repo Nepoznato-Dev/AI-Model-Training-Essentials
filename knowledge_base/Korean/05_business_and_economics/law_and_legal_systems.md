@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 법률 및 법률 시스템
 법은 사회가 기관을 통해 시행하기로 합의한 일련의 규칙입니다. 그것은 도덕성과는 다릅니다. 합법적인 일을 부도덕하게 할 수도 있고, 불법적인 일을 도덕적으로 정당화할 수도 있습니다. 법은 예측 가능성을 제공하기 위해 존재합니다. 허용되는 것과 금지되는 것이 무엇인지, 규칙을 위반할 경우 어떤 일이 발생하는지 확인하기 위해 존재합니다. 그것이 없으면 분쟁은 권력에 의해 해결됩니다. 이를 통해 분쟁은 절차에 따라 해결됩니다.
 이 파일은 주요 법률 시스템, 법률의 주요 분야 및 법률 시스템이 실제로 작동하는 방식을 형성하는 개념을 다루고 있습니다.

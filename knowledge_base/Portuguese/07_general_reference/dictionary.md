@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Dicionário de Inglês – Definições de Palavras Comuns
 Uma lista de referência de palavras em inglês usadas com frequência e seus significados,
 cobrindo vocabulário cotidiano, termos acadêmicos e palavras comumente encontradas

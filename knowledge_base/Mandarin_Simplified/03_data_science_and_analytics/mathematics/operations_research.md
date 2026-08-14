@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #运筹学
 运筹学（OR）是数学方法在决策中的应用。它诞生于二战期间的军事物流领域，现在优化供应链、安排航空公司、安排运输车队路线、管理库存以及在各个行业分配资源。 OR 提供了数学工具包，可以在约束条件下做出最佳决策。
 ---

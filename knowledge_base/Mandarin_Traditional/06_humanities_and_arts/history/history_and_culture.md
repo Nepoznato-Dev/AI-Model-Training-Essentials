@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 歷史與文化
 歷史是人類所做的事情的故事——成功、災難、發明和塑造了我們今天所處的世界的思想。它不僅僅是日期和姓名的列表。了解歷史可以幫助您理解為什麼邊界就在那裡，為什麼人們說他們所說的語言，為什麼有些國家富裕而另一些國家不富裕，以及為什麼看似古老的衝突仍在燃燒。
 該文件涵蓋了世界歷史上的主要時期和主題，從最初的文明到現在。

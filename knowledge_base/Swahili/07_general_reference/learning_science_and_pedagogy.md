@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kujifunza Sayansi na Ualimu
 Kujifunza sayansi ni utafiti wa fani mbalimbali wa jinsi watu wanavyojifunza - kutoka kwa saikolojia, sayansi ya neva, elimu na sayansi ya utambuzi. Ualimu ni mazoezi na mbinu ya ufundishaji. Kwa pamoja, wanashughulikia maswali yanayohusiana na mtu yeyote anayefundisha, kutoa mafunzo, washauri, au kubuni maudhui ya elimu: Ni njia gani zinazowasaidia watu kujifunza kwa njia ifaayo? Je! ni mbinu gani za kawaida za kusoma ambazo hazina ufanisi? Je, maagizo yanapaswa kupangwa vipi kwa uhifadhi na uhamishaji bora?
 ---

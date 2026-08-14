@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zarządzanie łańcuchem dostaw i operacjami
 Zarządzanie łańcuchem dostaw to koordynacja wszystkich działań związanych z zaopatrzeniem, zaopatrzeniem, konwersją i logistyką – od surowców po gotowy produkt w rękach klienta. Zarządzanie operacyjne to codzienna obsługa systemów produkcyjnych. Wspólnie decydują o tym, czy firma jest w stanie dostarczyć właściwy produkt we właściwym czasie, po właściwych kosztach i o odpowiedniej jakości. Pandemia, niedobory chipów i blokady kanałów pokazały, jak kruche i globalnie połączone są łańcuchy dostaw.
 ---

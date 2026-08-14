@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Основы кибербезопасности
 Безопасность — это дисциплина, которая должна быть интегрирована в каждый уровень системы с самого начала, а не добавляться в последнюю очередь. Независимо от того, создаете ли вы веб-приложение, управляете инфраструктурой или предоставляете API, понимание ландшафта угроз и основ защиты имеет важное значение.
 ---

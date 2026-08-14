@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — Referência de Sintaxe
 Este documento fornece uma referência de sintaxe estruturada e abrangente para Scala (3.x com notas sobre as diferenças do 2.x). Ele complementa a referência principal do Scala, concentrando-se em padrões de sintaxe exaustivos, no sistema de tipos, nas construções de programação funcional e nas expressões idiomáticas do Scala.
 ---

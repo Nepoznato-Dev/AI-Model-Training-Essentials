@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Normal İfadeler Hile Sayfası
 Normal ifadeler (regex), metni eşleştirmeye yönelik kalıplardır. Her yerde kullanılırlar: arama ve değiştirme, giriş doğrulama, günlük ayrıştırma, veri çıkarma ve daha fazlası. Bu bir ders kitabı değil, pratik bir referanstır.
 ---

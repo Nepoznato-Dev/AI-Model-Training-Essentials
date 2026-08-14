@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP 기초
 자연어 처리(NLP)는 인간의 언어를 이해하고, 생성하고, 사용하도록 기계를 가르치는 분야입니다. 이는 2020년 이후 AI를 변화시킨 검색 엔진, 챗봇, 번역 시스템, 감정 분석 및 대규모 언어 모델(LLM)을 지원합니다. 이 파일은 고전 기술에서 현대 Transformer 기반 아키텍처로의 진화를 다룹니다.
 ---

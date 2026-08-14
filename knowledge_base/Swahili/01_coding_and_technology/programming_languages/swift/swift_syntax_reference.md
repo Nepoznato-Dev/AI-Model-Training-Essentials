@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mwepesi - Rejeleo la Sintaksia
 Hati hii inatoa rejeleo la kina, lenye muundo wa sintaksia kwa Swift (5.9+). Inakamilisha marejeleo makuu ya Swift kwa kuzingatia mifumo kamili ya sintaksia, chaguo, upangaji unaozingatia itifaki, na upatanishi wa kisasa.
 ---

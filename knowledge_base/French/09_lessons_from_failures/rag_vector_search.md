@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Échecs de recherche RAG et Vector
 Ce document consolide les échecs courants dans les systèmes de génération augmentée de récupération (RAG), l'utilisation de l'intégration et les implémentations de recherche vectorielle.
 ---

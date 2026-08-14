@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku omówiono wzorce idiomatyczne i najlepsze praktyki dotyczące pisania czystego i wydajnego kodu SQL.
 ---

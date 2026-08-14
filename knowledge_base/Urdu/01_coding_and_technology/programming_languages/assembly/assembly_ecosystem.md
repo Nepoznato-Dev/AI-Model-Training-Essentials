@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # اسمبلی - ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ اسمبلی ماحولیاتی نظام میں ضروری ٹولز، اسمبلرز اور انفراسٹرکچر کا احاطہ کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Classical Mechanics
 Ang klasikal na mekanika ay naglalarawan ng paggalaw ng mga bagay sa ilalim ng impluwensya ng mga puwersa. Mula sa mga bumabagsak na mansanas hanggang sa nag-oorbit na mga planeta, mula sa nanginginig na mga string hanggang sa nagbabanggaan na mga particle, ang mga prinsipyo nito ay namamahala sa macroscopic na mundo. Higit pa sa mga pisikal na aplikasyon nito, ang mga klasikal na mekanika ay nagsilang ng calculus ng mga variation, symplectic geometry, at ang Hamiltonian framework na sumasailalim sa quantum mechanics at modernong optimization.
 ---

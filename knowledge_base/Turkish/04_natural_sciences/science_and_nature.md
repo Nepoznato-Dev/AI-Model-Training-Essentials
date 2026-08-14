@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bilim ve Doğa
 Bilim, evrenin gerçekte ne yaptığını nasıl anladığımızdır; onun yaptığını varsaydığımız şey değil, eski metinlerin söylediği şey değil, dikkatli gözlem ve deneylerin ortaya çıkardığı şey. Bilimsel yöntem prensipte basittir: Bir şeyi gözlemleyin, bir hipotez oluşturun, test edin ve sonuçlara göre anlayışınızı gözden geçirin. Bilimi güçlü kılan şey, kendi kendini düzeltebilmesidir. Her iddia geçicidir; yalnızca daha iyi kanıtlar bulunana kadar kabul edilir.
 Bu dosya doğa bilimlerinin ana dallarını kapsar: fizik, kimya, biyoloji, Dünya ve uzay bilimleri. Bunu fiziksel dünyanın bir haritası olarak düşünün.

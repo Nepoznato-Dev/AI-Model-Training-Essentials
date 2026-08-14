@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Relativity"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Relativität
 Einsteins Relativitätstheorien revolutionierten unser Verständnis von Raum, Zeit und Schwerkraft. Die **Spezielle Relativitätstheorie** (1905) zeigte, dass Raum und Zeit nicht getrennt, sondern in einem einzigen Gewebe namens Raumzeit verwoben sind und dass die Lichtgeschwindigkeit für alle Beobachter gleich ist. **Allgemeine Relativitätstheorie** (1915) stellte sich die Schwerkraft nicht als Kraft vor, sondern als die durch Masse und Energie verursachte Krümmung der Raumzeit. Diese Theorien liegen der GPS-Navigation, Teilchenbeschleunigern und unserem Verständnis von Schwarzen Löchern und der Entwicklung des Universums zugrunde.
 ---

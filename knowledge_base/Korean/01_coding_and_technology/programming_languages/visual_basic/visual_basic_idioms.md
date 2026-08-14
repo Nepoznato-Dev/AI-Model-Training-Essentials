@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic — 관용적 패턴 및 모범 사례
 이 가이드에서는 깔끔한 Visual Basic(.NET) 코드를 작성하기 위한 관용적 패턴을 다룹니다.
 ---

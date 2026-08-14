@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 생성 AI 심층 분석
 제너레이티브 AI는 기존 데이터를 단순히 분류하거나 예측하는 것이 아니라 이미지, 텍스트, 오디오, 비디오, 코드 등 새로운 콘텐츠를 생성하는 모델을 말합니다. 대규모 언어 모델이 가장 많은 관심을 받는 반면 생성 AI 환경은 훨씬 더 광범위합니다. 이 파일은 확산 모델부터 변형 자동 인코더, 흐름 모델까지 현대 생성 시스템의 아키텍처, 기술 및 장단점을 다룹니다.
 ---

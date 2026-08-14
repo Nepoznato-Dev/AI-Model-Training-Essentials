@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hệ thống nhúng và IoT
 Hệ thống nhúng là các máy tính ẩn bên trong các thiết bị khác - bộ điều khiển động cơ ô tô, bộ điều khiển máy giặt, bộ vi điều khiển trong bộ điều chỉnh nhiệt thông minh. Không giống như các máy tính đa năng, chúng được thiết kế cho các tác vụ cụ thể, thường có những hạn chế chặt chẽ về nguồn điện, bộ nhớ và tốc độ xử lý. Internet of Things (IoT) mở rộng các hệ thống nhúng bằng cách kết nối chúng với mạng, cho phép giám sát, điều khiển và thu thập dữ liệu từ xa. Cùng nhau, chúng đại diện cho hàng tỷ thiết bị điện toán tương tác với thế giới vật chất.
 ---

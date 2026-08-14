@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ช่องโหว่ด้านความปลอดภัย
 เอกสารนี้รวบรวมช่องโหว่ด้านความปลอดภัยทั่วไปในการพัฒนาซอฟต์แวร์ รวมถึงการโจมตีแบบฉีด แนวทางปฏิบัติด้านโค้ดที่ไม่ปลอดภัย และข้อผิดพลาดด้านความปลอดภัย
 ---

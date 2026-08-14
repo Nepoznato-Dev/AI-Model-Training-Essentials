@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, işlevsel Scala 3 kodu yazmaya yönelik deyimsel kalıpları ve en iyi uygulamaları kapsar.
 ---

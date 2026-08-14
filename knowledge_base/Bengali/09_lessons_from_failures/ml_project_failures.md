@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # মেশিন লার্নিং প্রকল্পের ব্যর্থতা
 মেশিন লার্নিং প্রকল্পগুলি উদ্বেগজনক হারে ব্যর্থ হয় — শিল্পের অনুমান অনুসারে 60-85% এমএল প্রকল্পগুলি কখনই উত্পাদনে পৌঁছায় না। ব্যর্থতা সাধারণত অ্যালগরিদম হয় না; তারা প্রক্রিয়া, তথ্য, প্রত্যাশা, এবং সাংগঠনিক প্রেক্ষাপটে আছেন। ML প্রকল্পগুলি কেন ব্যর্থ হয় তা বোঝা যে কেউ ML সিস্টেম তৈরির জন্য অপরিহার্য, কারণ ব্যর্থতার মোডগুলি পূর্বাভাসযোগ্য এবং মূলত এড়ানো যায়।
 ---

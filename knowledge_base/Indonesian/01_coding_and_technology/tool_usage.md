@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Penggunaan Alat
 ## Git — Kontrol Versi
 Git adalah sistem kontrol versi terdistribusi. Setiap pengembang memiliki salinan lengkap riwayat repositori di mesin lokal mereka.

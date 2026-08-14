@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ada — Odniesienie do składni
 This document provides a comprehensive, structured syntax reference for Ada (2012/2022). Uzupełnia główne odniesienia do Ady, koncentrując się na wyczerpujących wzorcach składni, zadaniach, chronionych obiektach, rodzajach i programowaniu krytycznym dla bezpieczeństwa.
 ---

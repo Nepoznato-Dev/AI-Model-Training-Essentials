@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kỹ thuật ML và MLOps
 Xây dựng mô hình học máy mới chỉ là một nửa trận chiến. Đưa nó vào sản xuất, giữ cho nó chạy ổn định, theo dõi độ lệch và lặp lại nó - đó là lúc kỹ thuật ML và MLOps xuất hiện. Tệp này bao gồm toàn bộ vòng đời từ hệ thống thử nghiệm đến hệ thống sản xuất.
 ---

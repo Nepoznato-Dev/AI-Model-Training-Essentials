@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 인과 추론
 인과 추론은 단순히 상관관계가 있는지 여부가 아니라 실제로 다른 원인이 발생하는지 여부를 판단하는 과학입니다. 상관관계는 두 변수가 함께 움직인다는 것을 나타냅니다. 인과관계는 하나를 바꾸면 다른 하나도 바뀔 것이라고 말한다. 이러한 구별은 의학(이 약이 효과가 있는가?), 정책(이 개입이 빈곤을 감소시키는가?), 비즈니스(이 광고 캠페인이 매출을 증가시키는가?) 및 과학(이 메커니즘이 현상을 설명하는가?)에서 엄청나게 중요합니다.
 ---

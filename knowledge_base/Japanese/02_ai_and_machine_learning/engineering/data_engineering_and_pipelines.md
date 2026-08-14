@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # データエンジニアリングとパイプライン
 データ エンジニアリングは、データを大規模に移動、変換、保存するシステムを構築する学問です。信頼できるデータ パイプラインがなければ、機械学習モデルはトレーニングできず、ダッシュボードには古い数値が表示され、ビジネス上の意思決定は推測に基づいて行われます。このファイルでは、機能するデータ インフラストラクチャを構築するためのアーキテクチャ、ツール、実践方法について説明します。
 ---

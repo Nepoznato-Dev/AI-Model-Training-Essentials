@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL
 
 SQL (Structured Query Language) is a domain-specific language designed for managing and querying data in relational databases. First developed at IBM in the 1970s and standardised in 1987, SQL remains the primary interface between applications and their data. Every major Relational Database Management System (RDBMS) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — uses SQL as its query language.

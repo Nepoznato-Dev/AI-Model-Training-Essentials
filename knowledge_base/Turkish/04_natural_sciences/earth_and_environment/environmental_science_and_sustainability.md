@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Çevre Bilimi ve Sürdürülebilirlik
 Çevre bilimi fizik, kimya, biyoloji, jeoloji ve ekonomi yöntemlerini şu soruya uygular: "Gezegenimize neler oluyor ve bu konuda ne yapılabilir?" Hem analitik derinliğine hem de politika uygunluğuna katkıda bulunan disiplinlerarası bir alandır (birden fazla disiplinin birleşimi).
 Çevre bilimindeki temel gerilim şudur: İnsan uygarlığı çevreden kaynak çıkarmaya dayanır, ancak bu kaynakların çıkarılması çevreyi, bağımlı olduğumuz sistemleri baltalayabilecek şekilde değiştirir. Geri bildirim döngüsünü anlamak özetle alanın tamamıdır.

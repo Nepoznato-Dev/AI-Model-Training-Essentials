@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Eğitim Dönüşümü
 ## Genel Bakış
 Geleneksel eğitim modeli - on iki yıl boyunca sınıfta oturun, belki üniversiteye gidin, sonra çalışın - çöküyor. Yapay zeka eğitmenleri artık geniş ölçekte kişiselleştirilmiş eğitim sunabiliyor. Teknolojik değişimin hızı, yaşam boyu öğrenmenin artık isteğe bağlı olmadığı anlamına geliyor. Ve işverenler yalnızca sahip olduğunuz kimlik bilgilerine değil, ne *yapabileceğinize* giderek daha fazla önem veriyor. İşte eğitim nasıl yeniden tasarlanıyor?

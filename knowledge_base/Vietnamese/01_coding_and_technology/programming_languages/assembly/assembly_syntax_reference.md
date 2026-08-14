@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Hợp ngữ — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho x86-64 Assembly (cú pháp NASM). Nó bổ sung cho tham chiếu Assembly chính bằng cách tập trung vào các danh mục lệnh đầy đủ, các chế độ đánh địa chỉ, quy ước khung ngăn xếp và các mẫu lập trình hệ thống.
 ---

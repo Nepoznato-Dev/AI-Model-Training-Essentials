@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Ruby
 Ruby ni lugha ya programu inayobadilika, iliyotafsiriwa, yenye mwelekeo wa kitu iliyoundwa na Yukihiro "Matz" Matsumoto na ilitolewa kwa mara ya kwanza mnamo 1995 nchini Japani. Ruby iliundwa kwa kuzingatia furaha ya mpanga programu - sintaksia yake ni maridadi na ya asili, inasoma karibu kama Kiingereza. Kila kitu katika Ruby ni kitu, ikijumuisha aina za awali kama vile nambari kamili na booleans. Ruby anajulikana zaidi kwa mfumo wa wavuti wa Ruby on Rails, ambao ulifanya mageuzi ya ukuzaji wa wavuti kwa kueneza mkusanyiko juu ya usanidi na uchapaji wa haraka.
 Zaidi ya Reli, Ruby inatumika kwa uandishi, uwekaji otomatiki, zana za DevOps (Chef, Puppet), na kama lugha ya kusudi la jumla. Sintaksia yake ya kueleza na uwezo wake wa kupanga metaprogramu hufanya iwe furaha kuandika.

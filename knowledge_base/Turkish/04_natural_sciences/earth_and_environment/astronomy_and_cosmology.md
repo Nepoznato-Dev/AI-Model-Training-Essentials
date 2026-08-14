@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Astronomi ve Kozmoloji
 Astronomi, yıldızlar, gezegenler, galaksiler ve Dünya atmosferinin ötesindeki her şey gibi gök cisimlerinin incelenmesidir. Kozmoloji evrenin bir bütün olarak incelenmesidir: onun kökeni, yapısı, evrimi ve nihai kaderi. Birlikte, insanların şimdiye kadar sorduğu en temel sorulardan bazılarını ele alıyorlar: Evren nasıl başladı? Ne kadar büyük? Yalnız mıyız? Sonunda ona ne olacak?
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # क्रॉस-लैंग्वेज तुलना - त्रुटि प्रबंधन
 ## त्रुटि प्रबंधन मॉडल अवलोकन
 | मॉडल | भाषाएँ | तंत्र |

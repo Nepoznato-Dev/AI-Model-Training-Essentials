@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # کراس لینگویج کا موازنہ — ڈیٹا کی اقسام اور ڈھانچے
 ## قدیم اقسام
 | قسم | ازگر | جاوا اسکرپٹ | مورچا | جاؤ | جاوا | سی | C++ | C# |

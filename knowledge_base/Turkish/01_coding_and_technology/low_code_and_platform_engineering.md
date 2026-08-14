@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Düşük Kod ve Platform Mühendisliği
 Düşük kodlu platformlar, insanların minimum düzeyde elle yazılmış kodla (genellikle sürükle ve bırak arayüzleri, görsel iş akışları ve önceden oluşturulmuş bağlayıcılar aracılığıyla) uygulamalar oluşturmasına olanak tanır. Platform mühendisliği, ürün ekiplerinin altyapıyı, CI/CD'yi ve operasyonel araçları kendi kendine hizmet etmesini kolaylaştıran dahili geliştirici platformları (IDP'ler) oluşturma disiplinidir. Her iki eğilim de aynı soruna yanıt veriyor: yazılıma olan talep ile onu geliştirebilecek geliştiricilerin arzı arasındaki uçurum.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java — Ekosistem ve Araç Kullanma Kılavuzu
 Bu kılavuz, Java ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

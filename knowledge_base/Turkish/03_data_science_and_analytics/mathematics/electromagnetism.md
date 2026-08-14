@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Elektromanyetizma
 Elektromanyetizma, elektrik ve manyetik alanların ve bunların etkileşimlerinin incelenmesidir. 1860'larda Maxwell tarafından birleştirilen elektromanyetizma, ışığı, elektriği, manyetizmayı, radyo dalgalarını ve atomların yapısını açıklar. Matematiksel olarak tam olarak anlaşılan ilk temel kuvvetti ve denklemleri Einstein'ın özel görelilik ve modern alan teorisine ilham kaynağı oldu.
 ---

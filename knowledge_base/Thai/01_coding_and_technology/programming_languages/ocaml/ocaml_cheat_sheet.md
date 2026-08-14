@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml - แผ่นโกง
 ## พื้นฐาน
 ```ocaml

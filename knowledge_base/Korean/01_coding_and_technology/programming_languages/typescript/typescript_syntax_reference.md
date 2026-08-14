@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — 구문 참조
 이 문서는 TypeScript에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 유형 시스템, 제네릭, 유틸리티 유형 및 고급 유형 수준 프로그래밍에 중점을 두어 기본 TypeScript 참조를 보완합니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni Haskella (GHC 9.x). Uzupełnia główne odniesienia do Haskella, skupiając się na wyczerpujących wzorcach składni, systemie typów, monadach, leniwej ocenie i idiomach programowania funkcjonalnego.
 ---

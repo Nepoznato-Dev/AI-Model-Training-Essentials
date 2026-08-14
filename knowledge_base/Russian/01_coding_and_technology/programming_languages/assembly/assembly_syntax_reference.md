@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Язык ассемблера — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису сборки x86-64 (синтаксис NASM). Он дополняет основной справочник по ассемблеру, уделяя особое внимание исчерпывающим категориям инструкций, режимам адресации, соглашениям о кадрах стека и шаблонам системного программирования.
 ---

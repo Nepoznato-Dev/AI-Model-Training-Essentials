@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Negosyo at Economics
 Ang bawat organisasyon na nagbebenta ng isang produkto o serbisyo ay isang negosyo, at bawat lipunan na gumagawa at namamahagi ng mga kalakal ay isang ekonomiya. Nalalapat ang mga konsepto sa file na ito kung nagpapatakbo ka ng isang freelance na operasyon, nagtatrabaho sa isang korporasyon, sinusubukang unawain ang balita, o iniisip lang kung paano gumagalaw ang pera sa buong mundo.
 ---

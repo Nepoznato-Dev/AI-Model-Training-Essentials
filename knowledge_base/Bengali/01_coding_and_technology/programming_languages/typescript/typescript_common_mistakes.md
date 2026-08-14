@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # টাইপস্ক্রিপ্ট — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্ন
 এই নথিটি TypeScript-এ সবচেয়ে সাধারণ ভুল, ফাঁদ এবং অ্যান্টি-প্যাটার্ন ক্যাটালগ করে। প্রতিটি এন্ট্রি ভুল পদ্ধতি দেখায়, ব্যাখ্যা করে কেন এটি ব্যর্থ হয় এবং সঠিক সমাধান প্রদান করে।
 ---

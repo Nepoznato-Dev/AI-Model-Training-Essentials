@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # कला प्रदर्शन
 प्रदर्शन कलाएँ - थिएटर, फिल्म, नृत्य और संगीत प्रदर्शन - वह जगह हैं जहाँ कला दर्शकों की जीवंत उपस्थिति से मिलती है। दीवार पर पेंटिंग या शेल्फ पर रखी किताब के विपरीत, प्रदर्शन वास्तविक समय में सामने आता है, जिससे कलाकार और दर्शक के बीच एक साझा अनुभव बनता है जो हजारों वर्षों से मानव संस्कृति का केंद्र रहा है।
 ---

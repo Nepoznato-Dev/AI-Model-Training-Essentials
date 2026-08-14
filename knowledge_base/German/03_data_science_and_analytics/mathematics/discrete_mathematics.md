@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Diskrete Mathematik
 Diskrete Mathematik ist das Studium mathematischer Strukturen, die grundsätzlich abzählbar oder getrennt sind – im Gegensatz zur kontinuierlichen Mathematik (Infinitesimalrechnung, reelle Analysis), die sich mit glatten, ungebrochenen Größen befasst. Diskrete Mathematik bildet die Grundlage für Informatik, Kryptographie, Algorithmendesign und Datenstrukturen. Während die kontinuierliche Mathematik die physikalische Welt beschreibt, beschreibt die diskrete Mathematik die rechnerische Welt.
 ---

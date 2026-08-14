@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 工具使用
 ## Git — 版本控制
 Git 是一个分布式版本控制系统。每个开发人员在其本地计算机上都有存储库历史记录的完整副本。

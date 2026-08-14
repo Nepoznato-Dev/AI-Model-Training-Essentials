@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # گراف تھیوری
 A **گراف** ایک ریاضیاتی ڈھانچہ ہے جو کناروں (لنک) سے جڑے ہوئے عمودی (نوڈس) پر مشتمل ہے۔ گراف ماڈل تعلقات: سوشل نیٹ ورکس، روڈ میپس، نیورل نیٹ ورکس، انحصار، کمیونیکیشن چینلز۔ گراف تھیوری — ان ڈھانچے کا مطالعہ — الگورتھم اور تھیورمز فراہم کرتا ہے جو کمپیوٹر سائنس، آپریشنز ریسرچ، اور ڈیٹا سائنس میں مرکزی حیثیت رکھتے ہیں۔
 ---

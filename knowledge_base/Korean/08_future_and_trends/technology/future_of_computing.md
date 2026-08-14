@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 컴퓨팅의 미래
 컴퓨팅의 미래는 지난 60년 동안의 기본 가정에 도전하는 힘에 의해 형성되고 있습니다. 컴퓨팅 성능이 약 2년마다 두 배로 증가한다는 무어의 법칙이 둔화되고 있습니다. CPU와 메모리가 분리된 폰 노이만 아키텍처가 '메모리 벽'에 부딪히고 있습니다. 양자 컴퓨팅은 기존 컴퓨터가 해결할 수 없는 문제를 해결할 것을 약속합니다. 뉴로모픽 칩은 뇌의 구조를 모방합니다. 엣지 컴퓨팅은 처리를 중앙 집중식 데이터 센터에서 멀리 이동시킵니다. 그리고 AI는 명령을 실행하는 도구에서 학습하고 생성하고 추론하는 시스템으로 컴퓨터의 용도를 변화시키고 있습니다. 이러한 변화를 이해하는 것은 기술을 구축, 구매 또는 의존하는 모든 사람에게 중요합니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # কম্পিউটার ভিশন ফান্ডামেন্টাল
 কম্পিউটার ভিশন মেশিনগুলিকে বিশ্বের ভিজ্যুয়াল তথ্য - ছবি, ভিডিও এবং 3D ডেটা ব্যাখ্যা করার এবং বোঝার ক্ষমতা দেয়। এটি আপনার ফোনে মুখ শনাক্তকরণ থেকে শুরু করে স্ব-ড্রাইভিং গাড়ি, মেডিকেল ইমেজ বিশ্লেষণ এবং শিল্পের গুণমান নিয়ন্ত্রণ সবকিছুকে ক্ষমতা দেয়। এই ফাইলটি মূল ধারণা, আর্কিটেকচার এবং কৌশলগুলিকে কভার করে।
 ---

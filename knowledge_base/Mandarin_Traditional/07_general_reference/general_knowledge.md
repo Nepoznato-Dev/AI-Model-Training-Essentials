@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 一般知識
 該文件是對話、新聞、教育和日常生活中經常出現的事實和概念的集合。將其視為背景知識—幫助您理解您正在閱讀、聽到或經歷的內容。
 ---

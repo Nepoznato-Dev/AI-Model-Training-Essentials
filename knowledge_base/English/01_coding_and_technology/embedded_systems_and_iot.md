@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Embedded Systems and IoT
 
 Embedded systems are computers hidden inside other devices — your car's engine control unit, your washing machine's controller, the microcontroller in a smart thermostat. Unlike general-purpose computers, they're designed for specific tasks, often with tight constraints on power, memory, and processing speed. The Internet of Things (IoT) extends embedded systems by connecting them to networks, enabling remote monitoring, control, and data collection. Together, they represent billions of computing devices that interact with the physical world.

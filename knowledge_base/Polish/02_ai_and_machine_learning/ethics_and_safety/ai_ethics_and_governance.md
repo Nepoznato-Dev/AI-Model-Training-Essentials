@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Etyka i zarządzanie AI
 Systemy AI nie są neutralne. Odzwierciedlają dane, na podstawie których zostali przeszkoleni, wartości ich twórców i motywacje organizacji, które je wdrażają. Etyka polega na pytaniu, a nie tylko „czy możemy to zbudować?” ale „powinniśmy?” Zarządzanie polega na tworzeniu struktur – przepisów, standardów, organów nadzoru – które zapewniają odpowiedzialne rozwijanie i wykorzystywanie sztucznej inteligencji. W tym dokumencie omówiono kluczowe wymiary etyczne sztucznej inteligencji oraz ramy zarządzania wyłaniające się w celu ich rozwiązania.
 ---

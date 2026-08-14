@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane odniesienia do składni języka C (C11/C17 z uwagami C23). Uzupełnia główne odniesienia do języka C, koncentrując się na wyczerpujących wzorcach składni, tablicach operatorów, mechanice wskaźników i zarządzaniu pamięcią.
 ---

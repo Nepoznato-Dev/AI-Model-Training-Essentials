@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # PHP — 慣用模式與最佳實踐
 本指南涵蓋了編寫乾淨、現代的 PHP (8.3+) 程式碼的慣用模式和最佳實踐。
 ---

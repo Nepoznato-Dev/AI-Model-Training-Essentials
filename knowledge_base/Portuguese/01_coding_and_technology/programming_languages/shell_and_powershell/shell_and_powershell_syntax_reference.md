@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell e PowerShell — Referência de sintaxe
 Este documento fornece uma referência de sintaxe estruturada e abrangente para Bash e PowerShell. Ele complementa a referência principal do Shell, concentrando-se em padrões de script exaustivos, pipelines, gerenciamento de processos e idiomas de automação para ambos os shells.
 ---

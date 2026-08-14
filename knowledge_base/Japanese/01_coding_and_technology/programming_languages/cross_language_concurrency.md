@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 言語間の比較 — 同時実行性と並列性
 ## 同時実行モデルの概要
 |言語 |モデル |キーの仕組み |共有メモリ? |

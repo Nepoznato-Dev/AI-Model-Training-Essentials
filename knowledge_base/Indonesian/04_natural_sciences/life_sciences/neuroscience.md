@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Saraf
 Ilmu saraf adalah studi tentang sistem saraf — otak, sumsum tulang belakang, dan semua saraf yang menghubungkannya dengan tubuh. Hal ini mencakup berbagai tingkatan: dari molekul dan gen, hingga neuron dan sinapsis individu, hingga sirkuit dan wilayah otak, hingga perilaku, kognisi, dan kesadaran. Otak adalah struktur paling kompleks di alam semesta, berisi sekitar 86 miliar neuron yang terhubung melalui triliunan sinapsis, dan memahami cara kerjanya merupakan salah satu tantangan besar sains.
 ---

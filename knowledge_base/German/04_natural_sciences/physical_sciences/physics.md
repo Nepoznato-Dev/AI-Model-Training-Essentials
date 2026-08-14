@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Physik
 Die Physik stellt die grundlegendste Frage der Wissenschaft: Wie verhalten sich Materie und Energie? Alles andere – Chemie, Biologie, Ingenieurwesen – baut auf den Antworten auf. Die Physik reicht von der subatomaren Skala (Quantenmechanik) bis zur kosmischen Skala (allgemeine Relativitätstheorie) und ihre Prinzipien liegen allen anderen Naturwissenschaften zugrunde.
 ---

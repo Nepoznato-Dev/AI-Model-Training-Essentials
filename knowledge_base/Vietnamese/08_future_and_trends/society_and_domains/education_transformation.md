@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Chuyển đổi giáo dục
 ## Tổng quan
 Mô hình giáo dục truyền thống – ngồi trong lớp 12 năm, có thể vào đại học, rồi đi làm – đang bị phá vỡ. Gia sư AI hiện có thể cung cấp hướng dẫn cá nhân hóa trên quy mô lớn. Tốc độ thay đổi công nghệ có nghĩa là việc học tập suốt đời không còn là điều bắt buộc nữa. Và nhà tuyển dụng ngày càng quan tâm đến những gì bạn có thể *làm*, chứ không chỉ những bằng cấp bạn có. Đây là cách giáo dục đang được hình dung lại.

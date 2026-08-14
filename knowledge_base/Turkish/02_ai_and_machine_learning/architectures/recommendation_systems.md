@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Öneri Sistemleri
 Öneri sistemleri, bir kullanıcının bundan sonra ne görmek, satın almak veya etkileşimde bulunmak isteyeceğini tahmin eder. Sosyal medyadaki içerik akışlarını, e-ticaret sitelerindeki ürün önerilerini, yayın platformlarındaki film seçimlerini ve arama sonuçlarını desteklerler. Çoğu kullanıcı için görünmez olmalarına rağmen ticari açıdan dünyadaki en etkili yapay zeka sistemleri arasında yer alıyorlar. Netflix, öneri motorunun abone kaybını azaltarak yılda 1 milyar dolardan fazla tasarruf sağladığını tahmin ediyor.
 ---

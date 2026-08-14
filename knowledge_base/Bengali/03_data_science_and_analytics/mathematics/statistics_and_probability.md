@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # পরিসংখ্যান এবং সম্ভাব্যতা
 সম্ভাব্যতা এবং পরিসংখ্যান হল ডেটা সায়েন্স, মেশিন লার্নিং এবং বৈজ্ঞানিক গবেষণার গাণিতিক ভিত্তি। সম্ভাব্যতা আপনাকে বলে যে ঘটনাগুলি কতটা সম্ভাবনাময়; পরিসংখ্যান আপনাকে বলে যে কীভাবে ডেটা থেকে উপসংহার আঁকতে হয়। একসাথে, তারা অনিশ্চয়তাকে পরিমাপযোগ্য, পরিচালনাযোগ্য জ্ঞানে পরিণত করে।
 ---

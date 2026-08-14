@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # منطق اور تنقیدی سوچ
 منطق درست استدلال کا مطالعہ ہے — صحیح دلائل کیسے بنائے جائیں اور خامیوں کی نشاندہی کریں۔ تنقیدی سوچ مفروضوں پر سوال کرنے، شواہد کا جائزہ لینے اور احتیاط سے استدلال کرنے کی نظم و ضبط کی عادت ہے۔ یہ مہارتیں نہ صرف ریاضی اور کمپیوٹر سائنس میں ضروری ہیں، بلکہ روزمرہ کے فیصلہ سازی، سائنسی تحقیق، اور معلومات سے بھرپور دنیا میں تشریف لے جانے میں بھی ضروری ہیں۔
 ---

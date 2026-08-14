@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # جوليا - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والحزم والبنية التحتية الأساسية في نظام جوليا البيئي.
 ---

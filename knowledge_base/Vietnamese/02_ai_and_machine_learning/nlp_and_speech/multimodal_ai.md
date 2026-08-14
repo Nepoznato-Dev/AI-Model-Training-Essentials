@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI đa phương thức
 Hệ thống AI đa phương thức xử lý và kết hợp thông tin từ nhiều loại dữ liệu — văn bản, hình ảnh, âm thanh, video, v.v. — cùng một lúc. Trong khi các hệ thống AI trước đây thường chỉ có một phương thức (chỉ văn bản, chỉ hình ảnh), thì các hệ thống hiện đại có khả năng nhất là đa phương thức. GPT-4V đọc hình ảnh và văn bản cùng nhau; Gemini xử lý văn bản, hình ảnh, âm thanh và video một cách nguyên bản; và các hệ thống như Sora tạo video từ mô tả văn bản. Tệp này đề cập đến cách hoạt động của AI đa phương thức, các kiến ​​trúc đằng sau nó và lý do tại sao việc kết hợp các phương thức lại có tác dụng mạnh mẽ đến vậy.
 ---

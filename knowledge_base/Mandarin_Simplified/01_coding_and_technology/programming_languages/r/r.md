@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #R
 R是专门为统计计算和数据分析而设计的编程语言和环境。它由奥克兰大学的 Ross Ihaka 和 Robert Gentleman 于 1993 年创建（因此称为“R”），是具有重大扩展的 S 语言的实现。 R 是开源的，由 R 核心团队维护。它是学术界、医疗保健、金融和政府领域的统计学家、数据分析师和研究人员的标准工具。
 R 擅长数据操作、统计建模、可视化和报告。其软件包生态系统 (CRAN) 拥有超过 20,000 个软件包，几乎涵盖了有史以来设计的所有统计方法。

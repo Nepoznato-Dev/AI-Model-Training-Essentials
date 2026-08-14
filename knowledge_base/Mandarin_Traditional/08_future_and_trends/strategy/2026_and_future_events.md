@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 2026 年及未來事件
 2026年是许多长期计划交汇的一年。今年是美國《獨立宣言》發表 250 週年，是聯合國永續發展目標（2020-2030）的中點，也是人工智慧、太空探索、電動車和再生能源領域企業路線圖的里程碑。无论具体的预测是否成功，塑造 2026 年的趋势都为事情的发展方向提供了有用的图景。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #साइबर सुरक्षा बुनियादी बातें
 सुरक्षा एक ऐसा अनुशासन है जिसे शुरुआत से ही सिस्टम की हर परत में एकीकृत किया जाना चाहिए, न कि बाद में विचार के रूप में जोड़ा जाना चाहिए। चाहे वेब एप्लिकेशन बनाना हो, बुनियादी ढांचे का प्रबंधन करना हो या एपीआई भेजना हो, खतरे के परिदृश्य और रक्षा के बुनियादी सिद्धांतों को समझना आवश्यक है।
 ---

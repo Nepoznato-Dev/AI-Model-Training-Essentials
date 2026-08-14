@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 기후기술과 녹색혁신
 기후 기술은 온실가스 배출을 줄이고, 기후 변화에 적응하며, 세계 경제를 지속 가능한 기반으로 전환하기 위해 고안된 도구, 시스템 및 혁신을 포괄합니다. 이는 틀림없이 21세기의 가장 중요한 기술 영역입니다. 관리 가능한 1.5°C 온난화와 재앙적인 3°C+ 사이의 차이는 주로 이러한 기술을 대규모로 얼마나 빨리 배포할 수 있는지에 달려 있습니다. 문제는 과학적일 뿐만 아니라 경제적, 정치적, 사회적 문제입니다.
 ---

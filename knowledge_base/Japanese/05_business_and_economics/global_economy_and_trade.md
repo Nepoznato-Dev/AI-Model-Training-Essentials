@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 世界経済と貿易
 世界経済は、人類がこれまで構築した中で最大かつ最も複雑なシステムです。 2025 年、世界の GDP は 110 兆ドルを超えました。毎日 80 億人以上の人々が国境を越えて商品やサービスを生産、取引、消費しています。このシステムがどのように機能するか、誰が何を取引するのか、なぜ一部の国が裕福で他の国は貧しいのか、お金がどのように国境を越えて移動するのか、システムが壊れたときに何が起こるのかを理解することは、現代世界を生きていく上で不可欠です。
 ---

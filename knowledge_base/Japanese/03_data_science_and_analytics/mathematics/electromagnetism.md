@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 電磁気学
 電磁気学は、電場と磁場、およびそれらの相互作用の研究です。 1860 年代にマクスウェルによって統一された電磁気学は、光、電気、磁気、電波、原子の構造を説明します。これは数学的に完全に理解された最初の基本的な力であり、その方程式はアインシュタインの特殊相対性理論と現代の場の理論に影響を与えました。
 ---

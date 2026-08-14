@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zaman Serisi ve Tahmin
 Zaman serisi verileri, zaman içinde toplanan herhangi bir veridir: hisse senedi fiyatları, sıcaklık okumaları, web sitesi trafiği, satış rakamları, kalp atış hızı monitörleri, enerji tüketimi. Tahmin, geçmiş kalıplara dayanarak gelecekteki değerleri tahmin etmek anlamına gelir. Bu, veri biliminin pratik olarak en değerli uygulamalarından biridir ve en zorlarından biridir çünkü gelecek gerçekten belirsizdir ve gerçek dünyadaki zaman serileri gürültü, mevsimsellik ve yapısal kırılmalarla doludur.
 ---

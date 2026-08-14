@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ซี++
 C++ เป็นภาษาโปรแกรมคอมไพล์สำหรับวัตถุประสงค์ทั่วไป สร้างขึ้นโดย Bjarne Stroustrup ซึ่งเปิดตัวครั้งแรกในปี 1985 โดยขยายภาษา C ด้วยฟีเจอร์เชิงวัตถุ ภาษาทั่วไป และ -- ในเวอร์ชันสมัยใหม่ (C++ 11 และใหม่กว่า) -- นามธรรมระดับสูง เช่น lambdas, ตัวชี้อัจฉริยะ และ Standard Template Library (STL) C++ เป็นไปตามหลักการ "Zero-Overhead Abstraction": คุณไม่ควรจ่ายเงินสำหรับฟีเจอร์ที่คุณไม่ได้ใช้
 C++ คือภาษาที่คุณเลือกเมื่อคุณต้องการทั้งประสิทธิภาพสูงและพลังในการแสดงออก มันขับเคลื่อนกลไกเกม (Unreal Engine), เบราว์เซอร์ (Chrome, Firefox), ฐานข้อมูล (MongoDB), ระบบปฏิบัติการ (ส่วนหนึ่งของ Windows และ macOS), ระบบการซื้อขายทางการเงิน และการจำลองแบบเรียลไทม์

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL - Miundo ya nahau na Mbinu Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo safi, wa kisasa wa COBOL.
 ---

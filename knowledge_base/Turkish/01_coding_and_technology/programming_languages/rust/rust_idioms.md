@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, güvenli Rust kodu yazmaya yönelik deyimsel kalıpları ve en iyi uygulamaları kapsar.
 ---

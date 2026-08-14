@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 哲學與批判性思維
 哲學是對知識、現實和存在的基本問題的系統性研究。它提供了一個框架來評估什麼算是知識、什麼值得做，以及如何區分合理的論點和薄弱的論點。批判性思考是該框架的實際應用：分析主張、識別有缺陷的推理以及做出更明智決策的技能。該文件涵蓋了主要想法、評估它們的工具以及影響每個人的認知偏見。
 ---

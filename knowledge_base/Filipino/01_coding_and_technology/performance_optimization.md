@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pag-optimize ng Pagganap
 Ang pag-optimize ng pagganap ay ang kasanayan sa paggawa ng software nang mas mabilis — pagbabawas ng mga oras ng pagtugon, pagtaas ng throughput, pagpapababa ng paggamit ng memorya, at pag-aalis ng mga bottleneck. Ito ay isa sa mga pinaka-maimpluwensyang kasanayan na maaaring taglayin ng isang developer, dahil ang mabagal na software ay nawawalan ng mga user, nag-aaksaya ng mga mapagkukunan, at nakakadismaya sa lahat. Ngunit isa rin ito sa pinakakaraniwang ginagawang mali, kung saan ang mga developer ay nag-optimize ng mga maling bagay batay sa intuwisyon sa halip na ebidensya.
 ---

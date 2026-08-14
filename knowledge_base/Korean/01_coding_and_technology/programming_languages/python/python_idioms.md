@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Python — 관용적 패턴 및 모범 사례
 이 가이드에서는 깔끔한 Python 코드를 작성하기 위한 관용적 패턴과 모범 사례를 다룹니다.
 ---

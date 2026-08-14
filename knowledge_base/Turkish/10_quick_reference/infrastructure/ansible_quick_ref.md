@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible ve Konfigürasyon Yönetimi
 Ansible, aracısız bir konfigürasyon yönetimi ve otomasyon aracıdır. Sunuculara bağlanmak ve YAML oyun kitaplarında tanımlanan görevleri yürütmek için SSH'yi (veya Windows için WinRM) kullanır. Her makineye aracıların yüklenmesini gerektiren araçların aksine, Ansible push tabanlıdır; komutları bir kontrol düğümünden çalıştırırsınız. Sunucu provizyonu, uygulama dağıtımı, konfigürasyon yönetimi ve anlık görev yürütme için kullanılır.
 ---

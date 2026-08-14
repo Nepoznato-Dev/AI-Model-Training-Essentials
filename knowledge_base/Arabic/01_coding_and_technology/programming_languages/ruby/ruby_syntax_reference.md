@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # روبي - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا تركيبيًا شاملاً ومنظمًا لـ Ruby (3.x). وهو يكمل مرجع روبي الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، والكتل والإغلاقات، والبرمجة الوصفية، ومصطلحات روبي.
 ---

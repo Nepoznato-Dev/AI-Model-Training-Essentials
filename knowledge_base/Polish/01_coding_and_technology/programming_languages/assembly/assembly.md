@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Język asemblera
 Język asemblera jest językiem programowania najniższego poziomu zrozumiałym dla człowieka. Zapewnia bezpośrednią reprezentację instrukcji kodu maszynowego komputera przy użyciu kodów mnemonicznych (takich jak `MOV`, `ADD`, `JMP`) zamiast surowego kodu binarnego. Każdy język asemblera jest specyficzny dla konkretnej architektury procesora (x86, ARM, MIPS, RISC-V) — kod napisany dla jednej architektury nie będzie działał na innej.
 Język asemblera nie jest używany do tworzenia aplikacji. Używa się go, gdy potrzebna jest absolutna kontrola nad sprzętem: pisanie jądra systemu operacyjnego, sterowników urządzeń, programów ładujących, wbudowanego oprogramowania sprzętowego, sekcji kodu krytycznych dla wydajności, inżynierii wstecznej i zrozumienia, w jaki sposób komputery faktycznie wykonują instrukcje.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal: modelli idiomatici e migliori pratiche
 Questa guida copre i modelli idiomatici per scrivere codice Delphi e Object Pascal pulito.
 ---

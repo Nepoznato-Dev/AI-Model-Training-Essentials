@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # زنگ - عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز زنگ میں سب سے عام غلطیوں، ٹریپس اور اینٹی پیٹرن کی فہرست بناتی ہے۔ ہر اندراج غلط نقطہ نظر کو ظاہر کرتا ہے، یہ بتاتا ہے کہ یہ کیوں ناکام ہوتا ہے، اور صحیح حل فراہم کرتا ہے۔ رسٹ کا کمپائلر بہت سی غلطیاں پکڑتا ہے، لیکن ان نمونوں کو سمجھنا آپ کے سیکھنے کے منحنی خطوط کو تیز کرے گا۔
 ---

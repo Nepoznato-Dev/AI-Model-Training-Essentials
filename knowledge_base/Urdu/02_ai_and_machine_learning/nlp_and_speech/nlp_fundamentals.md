@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP بنیادی باتیں
 نیچرل لینگویج پروسیسنگ (NLP) انسانی زبان کو سمجھنے، تخلیق کرنے اور اس کے ساتھ کام کرنے کے لیے مشینوں کی تدریس کا شعبہ ہے۔ یہ سرچ انجنز، چیٹ بوٹس، ترجمے کے نظام، جذبات کے تجزیے، اور بڑے لینگویج ماڈلز (LLMs) کو طاقت دیتا ہے جنہوں نے 2020 سے AI کو تبدیل کر دیا ہے۔ یہ فائل کلاسیکی تکنیک سے جدید ٹرانسفارمر پر مبنی آرکیٹیکچرز تک کے ارتقا کا احاطہ کرتی ہے۔
 ---

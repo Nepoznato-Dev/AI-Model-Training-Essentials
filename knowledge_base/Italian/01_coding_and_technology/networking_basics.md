@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nozioni di base sulla rete
 Un riferimento pratico per sviluppatori e amministratori di sistema: concetti fondamentali, protocolli, comandi e risoluzione dei problemi.
 ---

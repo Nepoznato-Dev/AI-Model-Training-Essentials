@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl: guía de ecosistemas y herramientas
 Esta guía cubre las herramientas, marcos e infraestructura esenciales en el ecosistema Perl.
 ---

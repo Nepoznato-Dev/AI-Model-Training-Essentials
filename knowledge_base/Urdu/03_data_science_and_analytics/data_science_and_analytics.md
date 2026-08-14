@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ڈیٹا سائنس اور تجزیات
 ڈیٹا سائنس خام ڈیٹا کو قابل عمل بصیرت میں تبدیل کرنے کا نظم ہے۔ یہ شماریات، کمپیوٹر سائنس، اور ڈومین کی مہارت کے سنگم پر بیٹھا ہے - اور یہ فنانس سے لے کر صحت کی دیکھ بھال تک ہر شعبے میں ضروری ہو گیا ہے۔ یہ فائل بنیادی تصورات، ٹولز، اور ورک فلو کے ذریعے چلتی ہے جو ہر پریکٹیشنر کو معلوم ہونا چاہیے۔
 ---

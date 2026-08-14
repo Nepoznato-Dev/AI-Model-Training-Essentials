@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #หลัว
 Lua เป็นภาษาสคริปต์แบบฝังน้ำหนักเบาที่ออกแบบมาเพื่อการขยายแอปพลิเคชัน Lua สร้างขึ้นในปี 1993 ที่ Pontifical Catholic University of Rio de Janeiro ในบราซิล เป็นหนึ่งในภาษาสคริปต์ที่เร็วที่สุดที่มีอยู่ ด้วยขนาดที่เล็ก (ตัวแปล ~ 120KB) และความเรียบง่ายทำให้เป็นตัวเลือกที่เหมาะสมสำหรับการเขียนสคริปต์การพัฒนาเกม ระบบฝังตัว และการกำหนดค่า
 Lua เป็นที่รู้จักเป็นอย่างดีในฐานะภาษาสคริปต์ที่อยู่เบื้องหลัง Roblox (แพลตฟอร์มเกมที่มีผู้ใช้มากกว่า 200 ล้านคนต่อเดือน), ส่วนเสริมของ World of Warcraft และเอ็นจิ้นเกมมากมาย (Love2D, Defold, Corona SDK) นอกจากนี้ยังใช้ใน Nginx (OpenResty), Redis และ Wireshark

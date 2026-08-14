@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sfederowane uczenie się i prywatność
 Uczenie federacyjne to technika uczenia modeli uczenia maszynowego na wielu urządzeniach lub w wielu organizacjach bez udostępniania surowych danych. Zamiast wysyłać dane do centralnego serwera, każde urządzenie trenuje model lokalny i udostępnia jedynie aktualizacje modelu (gradienty lub wagi). Serwer centralny agreguje te aktualizacje w celu utworzenia modelu globalnego. Został zaprojektowany przez Google do uczenia modeli języków klawiatury na telefonach z Androidem i od tego czasu stał się kluczową techniką sztucznej inteligencji chroniącej prywatność.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sztuki sceniczne
 Sztuki performatywne — teatr, film, taniec i występy muzyczne — to miejsca, w których sztuka spotyka się z żywą obecnością publiczności. W przeciwieństwie do obrazu na ścianie czy książki na półce, performans rozgrywa się w czasie rzeczywistym, tworząc wspólne doświadczenie między artystą i widzem, które od tysięcy lat jest kluczowe dla ludzkiej kultury.
 ---

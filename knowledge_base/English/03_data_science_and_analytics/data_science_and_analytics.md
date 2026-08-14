@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Data Science and Analytics
 
 Data science is the discipline of turning raw data into actionable insight. It sits at the intersection of statistics, computer science, and domain expertise — and it has become essential in every sector from finance to healthcare. This file walks through the core concepts, tools, and workflows that every practitioner should know.

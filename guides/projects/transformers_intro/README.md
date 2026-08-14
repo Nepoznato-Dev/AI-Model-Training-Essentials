@@ -74,7 +74,6 @@ python main.py
 | `main.py` | Main script with heavily commented code (~180 lines) |
 | `requirements.txt` | Python dependencies |
 | `README.md` | This documentation file |
-| `transformers_intro.ipynb` | Jupyter notebook version (optional) |
 
 ## Code Walkthrough
 

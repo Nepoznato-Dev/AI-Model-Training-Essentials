@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API 설계 및 통합 실패
 API(애플리케이션 프로그래밍 인터페이스)는 현대 소프트웨어의 연결 조직입니다. 이를 통해 서비스가 통신하고, 제3자가 통합하고, 팀이 독립적으로 작업할 수 있습니다. API 설계가 잘못되면 이에 의존하는 모든 시스템에 결과가 파급됩니다. 즉, 통합 중단, 보안 취약성, 개발자 불만, 비용이 많이 드는 재작성 등이 있습니다. 시스템이 안정적으로 통신할 수 없는 통합 실패는 생산 사고의 가장 일반적인 원인 중 하나입니다.
 ---

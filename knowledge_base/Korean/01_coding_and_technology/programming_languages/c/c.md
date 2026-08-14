@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #C
 C는 1969년부터 1973년까지 Bell Labs의 Dennis Ritchie가 만든 범용, 절차적 프로그래밍 언어입니다. C는 Unix 운영 체제를 구현하도록 설계되었으며 50년이 지난 후에도 가장 널리 사용되는 프로그래밍 언어 중 하나로 남아 있습니다. C는 낮은 수준의 메모리 액세스, 최소한의 표준 라이브러리 및 기계 명령어에 대한 깔끔한 매핑을 제공하여 대부분의 최신 컴퓨팅이 구축되는 기반이 됩니다.
 C는 운영 체제(Linux, Windows 커널, macOS), 임베디드 시스템, 데이터베이스 엔진(SQLite, PostgreSQL), 컴파일러(Python의 CPython, Ruby의 MRI) 및 기타 거의 모든 프로그래밍 언어 런타임의 기반이 되는 언어입니다. C를 이해하는 것은 컴퓨터가 실제로 어떻게 작동하는지 이해하는 것입니다.

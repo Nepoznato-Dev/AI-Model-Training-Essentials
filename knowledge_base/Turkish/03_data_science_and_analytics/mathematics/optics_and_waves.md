@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optik ve Dalgalar
 Dalgalar her yerdedir: ses, ışık, su, radyo sinyalleri, kuantum olasılık genlikleri, borsa dalgalanmaları ve sinir ağı aktivasyonlarının titreşimleri. Optik - ışığın incelenmesi - en gelişmiş dalga bilimidir ve matematiksel araçları (Fourier analizi, girişim, kırınım) her dalga olgusuna uygulanır. Dalgaları anlamak, sinyal işleme, görüntü analizi, iletişim ve tüm modern teknolojinin fiziksel katmanı için gereklidir.
 ---

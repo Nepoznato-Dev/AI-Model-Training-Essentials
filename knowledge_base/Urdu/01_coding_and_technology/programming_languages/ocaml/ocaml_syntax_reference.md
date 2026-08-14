@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml - نحوی حوالہ
 یہ دستاویز OCaml (4.x/5.x) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، الجبری ڈیٹا کی اقسام، پیٹرن میچنگ، ماڈیولز، اور فنکشنل پروگرامنگ محاوروں پر توجہ مرکوز کرکے مرکزی OCaml حوالہ کی تکمیل کرتا ہے۔
 ---

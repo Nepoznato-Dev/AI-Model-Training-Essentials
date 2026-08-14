@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Échecs de l'IA et du LLM
 Ce document consolide les modes de défaillance courants dans les systèmes d’IA et de Large Language Model, notamment les hallucinations, la désinformation, les erreurs de raisonnement et les problèmes liés aux invites.
 ---

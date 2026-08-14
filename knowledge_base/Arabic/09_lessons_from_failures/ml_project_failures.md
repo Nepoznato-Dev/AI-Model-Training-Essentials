@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فشل مشروع التعلم الآلي
 تفشل مشاريع التعلم الآلي بمعدل ينذر بالخطر - تشير تقديرات الصناعة إلى أن 60-85% من مشاريع تعلم الآلة لا تصل إلى مرحلة الإنتاج أبدًا. لا تكون حالات الفشل عادة في الخوارزميات؛ إنهم في هذه العملية، والبيانات، والتوقعات، والسياق التنظيمي. يعد فهم سبب فشل مشاريع تعلم الآلة أمرًا ضروريًا لأي شخص يقوم ببناء أنظمة تعلم الآلة، لأن أوضاع الفشل يمكن التنبؤ بها ويمكن تجنبها إلى حد كبير.
 ---

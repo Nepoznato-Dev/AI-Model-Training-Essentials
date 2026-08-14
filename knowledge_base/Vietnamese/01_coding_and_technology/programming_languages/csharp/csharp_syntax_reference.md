@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — Tham chiếu cú ​​pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho C# hiện đại (C# 10/11/12 trên .NET 7/8). Nó bổ sung cho tham chiếu C# chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, LINQ, async/await, khớp mẫu và các tính năng hiện đại.
 ---

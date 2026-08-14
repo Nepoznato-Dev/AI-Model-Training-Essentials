@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geleceğin Ulaşımı
 ## Genel Bakış
 A noktasından B noktasına gitmek çok farklı görünmek üzere. Sürücüsüz arabalar zaten kamuya açık yollarda. Elektrikli uçaklar test uçuşlarını tamamlıyor. Hyperloop konseptleri vakum tüplerinde tren hızında yolculuk vaat ediyor. Ve bir zamanlar çizgi filmlerde görülen uçan taksiler de sertifikasyona giriyor. İşte hareket etme şeklimizi yeniden şekillendiren teknolojilerdeki oyunun durumu.

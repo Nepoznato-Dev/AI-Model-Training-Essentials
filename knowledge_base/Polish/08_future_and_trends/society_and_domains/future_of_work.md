@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Przyszłość pracy
 ## Przegląd
 Sposób, w jaki pracujemy, zmienia się szybciej niż kiedykolwiek od czasu rewolucji przemysłowej. Praca zdalna z dnia na dzień przestała być zaletą rzadką i stała się domyślną. Sztuczna inteligencja przechodzi od nowości do współpracy. Gospodarka gig zmienia w ogóle znaczenie słowa „zatrudnienie”. Automatyzacja nie nadąża za wszystkimi stanowiskami pracy, ale dotyczy wielu zadań w większości zawodów. Oto spojrzenie na siły zmieniające miejsce pracy i na to, co będzie dalej.

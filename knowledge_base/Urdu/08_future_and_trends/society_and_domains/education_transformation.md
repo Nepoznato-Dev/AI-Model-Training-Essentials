@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #تعلیمی تبدیلی
 ## جائزہ
 تعلیم کا روایتی ماڈل - بارہ سال کلاس روم میں بیٹھنا، شاید یونیورسٹی جانا، پھر کام کرنا - ٹوٹ رہا ہے۔ اے آئی ٹیوٹرز اب پیمانے پر ذاتی نوعیت کی ہدایات فراہم کر سکتے ہیں۔ تکنیکی تبدیلی کی رفتار کا مطلب ہے کہ زندگی بھر سیکھنا اب اختیاری نہیں ہے۔ اور آجر تیزی سے اس بات کی پرواہ کرتے ہیں کہ آپ کیا کر سکتے ہیں*، نہ کہ صرف آپ کے پاس کیا اسناد ہیں۔ یہاں یہ ہے کہ تعلیم کا دوبارہ تصور کیسے کیا جا رہا ہے۔

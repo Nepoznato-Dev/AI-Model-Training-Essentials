@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # دلفی / پاسکال شی - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای دلفی/ابجکت پاسکال ارائه می دهد. این مرجع اصلی دلفی را با تمرکز بر الگوهای نحوی جامع، ویژگی‌های OOP، ژنریک، رکوردها و اصطلاحات زبان تکمیل می‌کند.
 ---

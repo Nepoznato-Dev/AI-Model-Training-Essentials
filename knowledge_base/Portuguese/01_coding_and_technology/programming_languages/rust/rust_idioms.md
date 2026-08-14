@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Rust — Padrões idiomáticos e práticas recomendadas
 Este guia cobre padrões idiomáticos e práticas recomendadas para escrever código Rust limpo e seguro.
 ---

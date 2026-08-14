@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell и PowerShell — идиоматические шаблоны и лучшие практики
 В этом руководстве рассматриваются идиоматические шаблоны для сценариев Bash/Zsh и PowerShell.
 ---

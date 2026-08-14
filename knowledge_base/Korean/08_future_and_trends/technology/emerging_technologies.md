@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 신흥 기술
 ## 개요
 특정 기술은 기존 기능을 점진적으로 개선하기보다는 완전히 새로운 기능 범주를 생성합니다. 양자 컴퓨팅은 고전 기계가 수천 년이 걸리는 문제를 해결하는 것을 목표로 합니다. 핵융합에너지는 사실상 무한한 청정에너지의 가능성을 제공합니다. 뇌-컴퓨터 인터페이스는 정신과 기계를 연결합니다. 합성생물학은 생물학적 코드의 재작성을 가능하게 합니다. 다음 섹션에서는 이러한 각 개척지가 현재 어디에 있는지, 그리고 현재 추세가 어디로 향하고 있는지 설명합니다.

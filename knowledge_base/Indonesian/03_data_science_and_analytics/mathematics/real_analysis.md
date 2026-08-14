@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Analisis Nyata
 Analisis nyata adalah dasar kalkulus yang kuat. Meskipun kalkulus pengantar mengajarkan Anda cara menghitung turunan dan integral, analisis sebenarnya menanyakan *mengapa* teknik ini berhasil — dan kapan gagal. Ini memberikan definisi yang tepat tentang batasan, kontinuitas, konvergensi, dan integrasi yang mendukung teori probabilitas, analisis fungsional, pengoptimalan, dan jaminan teoretis di balik algoritme pembelajaran mesin.
 ---

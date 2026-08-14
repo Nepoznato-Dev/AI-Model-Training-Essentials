@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kỹ thuật tính năng
 Kỹ thuật tính năng là quá trình chuyển đổi dữ liệu thô thành các biểu diễn giúp mô hình học máy hiệu quả hơn. Đây thường được mô tả là bước quan trọng nhất trong quy trình ML — các tính năng bạn cung cấp cho mô hình quan trọng hơn thuật toán bạn chọn. Một mô hình đơn giản với các tính năng được thiết kế tốt thường sẽ hoạt động tốt hơn một mô hình phức tạp có đầu vào thô, chưa được xử lý. Nghệ thuật nằm ở việc hiểu rõ cả miền và dữ liệu để tạo ra các tín hiệu mà mô hình có thể học hỏi.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada — Common Mistakes & Anti-Patterns
 
 This document catalogs the most common mistakes, traps, and anti-patterns in Ada with corrections.

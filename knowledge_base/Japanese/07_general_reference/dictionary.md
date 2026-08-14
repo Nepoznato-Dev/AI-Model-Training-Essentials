@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 英語辞書 — 一般的な単語の定義
 よく使われる英単語とその意味の参考リスト。
 日常用語、学術用語、よく使われる単語を網羅

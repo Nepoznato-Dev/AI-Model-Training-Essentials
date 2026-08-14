@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell と PowerShell — よくある間違いとアンチパターン
 このドキュメントでは、Shell/Bash および PowerShell で最も一般的な間違い、罠、およびアンチパターンを修正とともにカタログ化します。
 ---

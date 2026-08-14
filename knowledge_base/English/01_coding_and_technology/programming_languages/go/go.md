@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Go
 
 Go (often called "Golang" after its original domain name) is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It was first released in 2012 with the explicit goal of being a better language for systems programming -- one that combines the performance of C with the productivity of dynamic languages like Python. Go is known for its simplicity, fast compilation, built-in concurrency (goroutines and channels), and excellent tooling.

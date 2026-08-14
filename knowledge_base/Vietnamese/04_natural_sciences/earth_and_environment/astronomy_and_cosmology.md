@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Thiên văn học và vũ trụ học
 Thiên văn học là nghiên cứu về các thiên thể - các ngôi sao, hành tinh, thiên hà và mọi thứ ngoài bầu khí quyển Trái đất. Vũ trụ học là nghiên cứu về toàn bộ vũ trụ: nguồn gốc, cấu trúc, sự tiến hóa và số phận cuối cùng của nó. Cùng nhau, họ giải quyết một số câu hỏi cơ bản nhất mà con người từng hỏi: Vũ trụ bắt đầu như thế nào? Nó lớn đến mức nào? Chúng ta có đơn độc không? Điều gì sẽ xảy ra với nó cuối cùng?
 ---

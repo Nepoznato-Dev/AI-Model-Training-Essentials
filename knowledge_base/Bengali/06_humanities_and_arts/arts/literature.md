@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #সাহিত্য
 সাহিত্য মানবতার চিন্তা, আবেগ এবং অভিজ্ঞতার সবচেয়ে স্থায়ী রেকর্ড। প্রাচীন সভ্যতার মৌখিক মহাকাব্য থেকে শুরু করে আজকের ডিজিটাল যুগের উপন্যাস পর্যন্ত, প্রতিটি কাজই আগে যা এসেছে তার সাথে কথোপকথন করে। সাহিত্যের ধরণ, গতিবিধি এবং কৌশলগুলি বোঝা আপনাকে পড়ার জন্য একটি সমৃদ্ধ লেন্স দেয় — এবং এই কাজগুলি তৈরি করে এমন সংস্কৃতি বোঝার জন্য।
 ---

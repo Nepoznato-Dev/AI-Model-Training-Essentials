@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # एरलांग और अमृत - सिंटेक्स संदर्भ
 यह दस्तावेज़ एर्लांग और एलिक्सिर के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह पैटर्न मिलान, प्रक्रिया प्रबंधन, ओटीपी व्यवहार और दोष-सहिष्णु सिस्टम पैटर्न पर ध्यान केंद्रित करके मुख्य संदर्भ को पूरक करता है।
 ---

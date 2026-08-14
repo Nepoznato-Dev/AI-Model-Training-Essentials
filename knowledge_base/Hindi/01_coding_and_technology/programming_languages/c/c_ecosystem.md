@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # सी - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका सी पारिस्थितिकी तंत्र में आवश्यक उपकरण, पुस्तकालय और बुनियादी ढांचे को शामिल करती है।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Swift — 慣用的なパターンとベスト プラクティス
 このガイドでは、クリーンな Swift コードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

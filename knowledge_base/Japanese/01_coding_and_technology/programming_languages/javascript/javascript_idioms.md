@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # JavaScript — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンで最新の JavaScript (ES2024+) コードを作成するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

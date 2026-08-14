@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell i PowerShell — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni Bash i PowerShell. Uzupełnia główne odniesienia do powłoki, koncentrując się na wyczerpujących wzorcach skryptów, potokach, zarządzaniu procesami i idiomach automatyzacji dla obu powłok.
 ---

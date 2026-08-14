@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Java. Il complète la référence Java principale en se concentrant sur des modèles de syntaxe exhaustifs, des tables d'opérateurs et des mécanismes internes de la JVM, de la POO et de la concurrence.
 ---

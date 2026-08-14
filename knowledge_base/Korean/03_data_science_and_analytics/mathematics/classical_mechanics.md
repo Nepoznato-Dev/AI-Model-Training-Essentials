@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 고전역학
 고전 역학은 힘의 영향을 받는 물체의 운동을 설명합니다. 떨어지는 사과부터 궤도를 도는 행성까지, 진동하는 끈부터 충돌하는 입자까지, 그 원리는 거시적 세계를 지배합니다. 물리적 응용 외에도 고전 역학은 변분학, 대칭 기하학, 양자 역학과 현대 최적화를 뒷받침하는 해밀턴 프레임워크를 탄생시켰습니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Electromagnetism
 
 Electromagnetism is the study of electric and magnetic fields and their interactions. Unified by Maxwell in the 1860s, electromagnetism explains light, electricity, magnetism, radio waves, and the structure of atoms. It was the first fundamental force to be fully understood mathematically, and its equations inspired Einstein's special relativity and modern field theory.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tathmini ya Usomaji wa Vyombo vya Habari na Taarifa
 Tunaishi katika ulimwengu uliojaa habari. Kila siku, mtu wa kawaida huonyeshwa maelfu ya ujumbe wa media - makala ya habari, machapisho ya mitandao ya kijamii, matangazo, hotuba za kisiasa, maudhui ya vishawishi, maandishi yanayotokana na AI. Wengi wao ni sawa. Baadhi yake ni kupotosha. Kiasi kidogo ni cha uwongo kwa makusudi. Ujuzi wa vyombo vya habari ni ustadi wa kuvinjari mandhari hii - sio kwa kuamini kila kitu, sio kwa kuamini chochote, lakini kwa kukuza hisia iliyosawazishwa ya kile kinachotegemewa na kisichoaminika.
 ---

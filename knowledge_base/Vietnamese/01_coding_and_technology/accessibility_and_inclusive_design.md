@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Khả năng tiếp cận và thiết kế toàn diện
 Khả năng truy cập (thường được viết tắt là a11y) là phương pháp làm cho phần mềm có thể sử dụng được cho mọi người - bao gồm cả những người bị khuyết tật về thị giác, thính giác, vận động, nhận thức và thần kinh. Đó là một yêu cầu pháp lý ở nhiều khu vực pháp lý và là một thông lệ kỹ thuật tiêu chuẩn. Phần mềm có thể truy cập là phần mềm tốt hơn cho mọi người vì các quyết định thiết kế hỗ trợ người dùng khuyết tật — cấu trúc rõ ràng, điều hướng bàn phím, độ tương phản vừa đủ, văn bản dễ đọc — cải thiện trải nghiệm cho tất cả người dùng.
 ---

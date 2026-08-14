@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nadharia ya Nambari
 Nadharia ya nambari ni utafiti wa nambari kamili - nambari nzima na mali zao. Gauss aliiita "malkia wa hisabati." Licha ya kusoma vitu rahisi zaidi (1, 2, 3, ...), nadharia ya nambari hutoa shida kubwa na ngumu zaidi katika hisabati yote. Leo, inasisitiza usimbaji fiche wa kisasa, algoriti za hashing, misimbo ya kusahihisha makosa, na uundaji wa nambari bila mpangilio.
 ---

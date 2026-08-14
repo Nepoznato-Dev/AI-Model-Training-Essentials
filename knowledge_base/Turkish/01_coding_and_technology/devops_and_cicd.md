@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps ve CI/CD
 DevOps, ekiplerin yazılımı daha hızlı ve daha güvenilir bir şekilde sunmasını sağlayan kültürel felsefe, uygulamalar ve araçların birleşimidir. Geliştiriciler (değişiklikleri göndermek isteyen) ve operasyonlar (istikrar isteyen) arasındaki duvarı yıkar. CI/CD — Sürekli Entegrasyon ve Sürekli Teslimat — bunu mümkün kılan otomasyon omurgasıdır.
 ---

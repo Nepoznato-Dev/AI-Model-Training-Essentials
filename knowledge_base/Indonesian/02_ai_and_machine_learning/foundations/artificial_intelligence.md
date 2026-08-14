@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kecerdasan Buatan
 Kecerdasan buatan adalah upaya untuk membuat mesin yang dapat melakukan hal-hal yang memerlukan kecerdasan jika manusia melakukannya: mengenali wajah, memahami ucapan, membuat keputusan, menulis teks, bermain game, mengendarai mobil, mendiagnosis penyakit. Bidang ini sama tuanya dengan komputasi itu sendiri — Alan Turing bertanya, "Dapatkah mesin berpikir?" pada tahun 1950 — namun ledakan kemampuan yang terjadi baru-baru ini (tahun 2020-an) telah menjadikan AI sebagai salah satu teknologi yang paling penting dan diperebutkan dalam sejarah manusia.
 ---

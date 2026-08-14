@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Keamanan dan Keselarasan AI
 Keamanan AI adalah studi tentang bagaimana membangun sistem AI yang dapat melakukan apa yang sebenarnya kita inginkan — dan tidak melakukan hal-hal yang tidak kita inginkan, meskipun hal tersebut tidak dikesampingkan secara eksplisit. Penyelarasan adalah tantangan spesifik dalam membuat tujuan dan perilaku sistem AI sesuai dengan niat manusia. Ketika sistem AI menjadi lebih mampu, pertanyaan-pertanyaan ini beralih dari keingintahuan akademis ke persyaratan teknik praktis.
 ---

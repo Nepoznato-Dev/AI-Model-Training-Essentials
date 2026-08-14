@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Những lỗi thường gặp & những mẫu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong C. Mỗi mục nhập hiển thị cách tiếp cận không chính xác, giải thích lý do tại sao nó thất bại và cung cấp giải pháp chính xác. C cung cấp cho bạn toàn quyền kiểm soát - nghĩa là chịu trách nhiệm hoàn toàn về an toàn bộ nhớ, kiểm tra giới hạn và hành vi không xác định.
 ---

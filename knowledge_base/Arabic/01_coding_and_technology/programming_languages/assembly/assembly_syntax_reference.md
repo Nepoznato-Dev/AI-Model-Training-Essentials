@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # لغة التجميع - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لبناء الجملة لتجميع x86-64 (بناء جملة NASM). وهو يكمل مرجع التجميع الرئيسي من خلال التركيز على فئات التعليمات الشاملة، وأنماط العنونة، واتفاقيات إطار المكدس، وأنماط برمجة النظام.
 ---

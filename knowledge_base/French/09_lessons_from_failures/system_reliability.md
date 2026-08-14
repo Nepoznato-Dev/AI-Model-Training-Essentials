@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Problèmes de fiabilité du système
 Ce document consolide les problèmes de fiabilité, notamment les fuites de mémoire, les conditions de concurrence critique, les erreurs de programmation simultanées et les échecs de conception du système.
 ---

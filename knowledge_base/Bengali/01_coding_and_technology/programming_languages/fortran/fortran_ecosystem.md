@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ফোর্টরান — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি ফরট্রান ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, লাইব্রেরি এবং অবকাঠামো কভার করে।
 ---

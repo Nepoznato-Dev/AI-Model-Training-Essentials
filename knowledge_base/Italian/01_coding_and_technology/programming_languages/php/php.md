@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #PHP
 PHP (Hypertext Preprocessor) è un linguaggio di scripting lato server creato da Rasmus Lerdorf nel 1994 e rilasciato per la prima volta nel 1995. Originariamente progettato per generare pagine Web dinamiche, PHP si è evoluto in un linguaggio di uso generale completo di funzionalità. Alimenta circa il 75% di tutti i siti Web con un linguaggio lato server noto, inclusi WordPress, Facebook (originariamente), Wikipedia, Slack e milioni di altri siti.
 Il PHP moderno (8.x) è un linguaggio molto diverso dal PHP dei primi anni 2000. Ora dispone di proprietà tipizzate, espressioni di corrispondenza, enumerazioni, fibre, classi di sola lettura e un robusto sistema di tipi. Nonostante la sua reputazione tra gli sviluppatori (spesso criticata per le sue incoerenze), PHP è pratico, ampiamente utilizzato e continua a migliorare.

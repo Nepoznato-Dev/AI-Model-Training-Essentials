@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir - Historia ya Toleo na Mageuzi
 ## Rekodi ya matukio ya Erlang
 | Toleo | Mwaka | Mandhari Muhimu |

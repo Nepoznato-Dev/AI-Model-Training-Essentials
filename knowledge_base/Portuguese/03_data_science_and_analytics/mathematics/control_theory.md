@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria de Controle
 A teoria do controle é a matemática de fazer os sistemas se comportarem da maneira que você deseja. De termostatos a pilotos automáticos, de braços robóticos a reatores químicos, os sistemas de controle detectam, decidem e agem para manter o comportamento desejado. O campo fornece ferramentas rigorosas para analisar estabilidade, desempenho e robustez – conceitos que migraram para aprendizagem por reforço, ajuste de hiperparâmetros e sistemas adaptativos.
 ---

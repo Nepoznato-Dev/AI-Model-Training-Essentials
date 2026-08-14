@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assembly – Idiomatische Muster und Best Practices
 Dieser Leitfaden behandelt idiomatische Muster zum Schreiben von sauberem, wartbarem Assembly-Code (x86/x64-Fokus mit NASM-Syntax).
 ---

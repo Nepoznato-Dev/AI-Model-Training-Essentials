@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ডেলফি / অবজেক্ট প্যাসকেল — সিনট্যাক্স রেফারেন্স
 এই নথিটি ডেলফি/অবজেক্ট প্যাসকেলের জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, OOP বৈশিষ্ট্য, জেনেরিক, রেকর্ড এবং ভাষা বাগধারার উপর ফোকাস করে প্রধান ডেলফি রেফারেন্সের পরিপূরক।
 ---

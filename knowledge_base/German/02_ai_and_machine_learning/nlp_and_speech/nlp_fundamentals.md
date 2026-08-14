@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP-Grundlagen
 Natural Language Processing (NLP) ist der Bereich, in dem Maschinen beigebracht werden, menschliche Sprache zu verstehen, zu erzeugen und mit ihr zu arbeiten. Es unterstützt Suchmaschinen, Chatbots, Übersetzungssysteme, Stimmungsanalysen und die großen Sprachmodelle (LLMs), die die KI seit 2020 verändert haben. Diese Datei deckt die Entwicklung von klassischen Techniken zu modernen Transformer-basierten Architekturen ab.
 ---

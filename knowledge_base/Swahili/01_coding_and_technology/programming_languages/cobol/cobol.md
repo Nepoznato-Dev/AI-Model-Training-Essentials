@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL
 COBOL (Lugha ya Kawaida inayolenga Biashara) ni mojawapo ya lugha kongwe zaidi za upangaji ambazo bado inatumika, iliyotengenezwa kwa mara ya kwanza mnamo 1959. Iliundwa kwa ajili ya usindikaji wa data ya biashara - mifumo ya kifedha, malipo, benki, bima, na maombi ya serikali. Sintaksia inayofanana na Kiingereza ya COBOL ilikusudiwa kusomeka na wasimamizi wa biashara, si watayarishaji programu pekee.
 Licha ya umri wake, COBOL huchakata takriban 30% ya miamala yote ya biashara ulimwenguni. Benki kuu, mashirika ya serikali (ikiwa ni pamoja na Utawala wa Usalama wa Jamii wa Marekani), na makampuni ya bima bado yanategemea mifumo ya mfumo mkuu wa COBOL. Hofu ya mdudu wa Y2K mnamo 1999 ilileta COBOL katika ufahamu wa umma, na lugha inaendelea kutekeleza miundombinu muhimu ulimwenguni kote.

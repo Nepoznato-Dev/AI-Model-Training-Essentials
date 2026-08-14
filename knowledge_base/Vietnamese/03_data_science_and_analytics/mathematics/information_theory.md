@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lý thuyết thông tin
 Lý thuyết thông tin, do Claude Shannon sáng lập năm 1948, tự lượng hóa thông tin. Một tin nhắn cho bạn biết bao nhiêu? Bạn có thể nén dữ liệu đến mức nào? Bạn có thể giao tiếp nhanh đến mức nào trên một kênh ồn ào? Những câu hỏi này có câu trả lời toán học chính xác. Ngoài giao tiếp, lý thuyết thông tin đã trở thành nền tảng cho học máy - entropy chéo là hàm mất mát mặc định để phân loại, phân kỳ KL đo lường mức độ tương tự về phân phối và lựa chọn tính năng thúc đẩy thông tin lẫn nhau.
 ---

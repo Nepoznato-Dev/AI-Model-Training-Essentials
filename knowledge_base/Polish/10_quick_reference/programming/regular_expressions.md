@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ściągawka dotycząca wyrażeń regularnych
 Wyrażenia regularne (regex) to wzorce dopasowywania tekstu. Są używane wszędzie — wyszukiwanie i zamiana, sprawdzanie poprawności danych wejściowych, analizowanie dzienników, ekstrakcja danych i nie tylko. Jest to podręcznik praktyczny, a nie podręcznik.
 ---

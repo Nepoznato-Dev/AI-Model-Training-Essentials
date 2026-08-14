@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 자바
 Java는 Sun Microsystems의 James Gosling이 만들어 1995년에 출시한 정적으로 유형이 지정된 객체 지향 프로그래밍 언어입니다. "한 번 작성하면 어디서나 실행"(WORA)이라는 설계 철학은 JVM(Java Virtual Machine)이 구현된 모든 플랫폼에서 컴파일된 Java 코드를 실행할 수 있도록 하는 JVM(Java Virtual Machine)을 통해 구현됩니다. Java는 역사상 가장 널리 사용되는 프로그래밍 언어 중 하나로 엔터프라이즈 백엔드, Android 앱, 빅 데이터 시스템 및 금융 서비스를 지원합니다.
 거의 30년이 지났음에도 불구하고 Java는 계속 발전하고 있습니다. 최신 Java(버전 17+)에는 레코드, 밀봉 클래스, 패턴 일치, 가상 스레드 및 최신 언어와 경쟁하는 성장하는 생태계가 포함되어 있습니다.

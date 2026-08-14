@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Religioni del mondo e mitologia comparata
 Le religioni del mondo sono i principali sistemi di credenze, pratiche e comunità che hanno plasmato la civiltà umana per migliaia di anni. La mitologia comparata studia le storie che le diverse culture raccontano sulla creazione, sugli eroi, sugli dei e sul significato dell’esistenza – e gli schemi sorprendenti che ricorrono attraverso tradizioni separate da migliaia di miglia e millenni. Comprenderli entrambi è essenziale per comprendere perché le persone credono in ciò in cui credono, in che modo le culture differiscono e cosa unisce l'esperienza umana.
 ---

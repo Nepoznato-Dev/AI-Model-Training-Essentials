@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # So sánh dịch vụ đám mây
 Bảng so sánh song song của ba nhà cung cấp đám mây lớn — AWS, Azure và Google Cloud — trên các lĩnh vực điện toán, lưu trữ, cơ sở dữ liệu, AI/ML, kết nối mạng, giám sát và cơ sở hạ tầng dưới dạng mã. Hữu ích cho các kiến ​​trúc sư quyết định nên sử dụng nền tảng nào hoặc ánh xạ các dịch vụ từ đám mây này sang đám mây khác.
 ---

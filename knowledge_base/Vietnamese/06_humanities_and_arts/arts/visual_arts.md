@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Nghệ thuật thị giác
 Nghệ thuật thị giác là hình thức giao tiếp lâu đời nhất của nhân loại - từ những bức tranh hang động ở Lascaux cho đến những tác phẩm sắp đặt kỹ thuật số ngày nay. Hiểu biết về các phong trào nghệ thuật, phương tiện và thể chế bảo tồn các tác phẩm sáng tạo giúp bạn đánh giá sâu sắc hơn về cách xã hội thể hiện vẻ đẹp, quyền lực, tâm linh và sự bất đồng quan điểm qua nhiều thiên niên kỷ.
 ---

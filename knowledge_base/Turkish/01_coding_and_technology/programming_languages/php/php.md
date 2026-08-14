@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP
 PHP (Hypertext Preprocessor), 1994 yılında Rasmus Lerdorf tarafından oluşturulan ve ilk olarak 1995'te piyasaya sürülen, sunucu taraflı bir kodlama dilidir. Başlangıçta dinamik web sayfaları oluşturmak için tasarlanan PHP, tam özellikli genel amaçlı bir dile dönüştü. WordPress, Facebook (orijinal olarak), Wikipedia, Slack ve diğer milyonlarca site dahil olmak üzere bilinen bir sunucu tarafı dili kullanan tüm web sitelerinin yaklaşık %75'ine güç sağlar.
 Modern PHP (8.x), 2000'li yılların başındaki PHP'den çok farklı bir dildir. Artık yazılan özelliklere, eşleşme ifadelerine, numaralandırmalara, liflere, salt okunur sınıflara ve sağlam bir tür sistemine sahiptir. Geliştiriciler arasındaki itibarına rağmen (genellikle tutarsızlıklar nedeniyle eleştirilir), PHP pratiktir, yaygın olarak kullanılmaktadır ve gelişmeye devam etmektedir.

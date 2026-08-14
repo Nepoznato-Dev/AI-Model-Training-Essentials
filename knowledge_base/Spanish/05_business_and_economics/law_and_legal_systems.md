@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Derecho y sistemas jurídicos
 El derecho es el conjunto de normas que una sociedad se compromete a hacer cumplir a través de sus instituciones. No es lo mismo que la moralidad: puedes hacer algo legal que sea inmoral y algo ilegal que esté moralmente justificado. El derecho existe para proporcionar previsibilidad: para establecer qué está permitido, qué está prohibido y qué sucede cuando se infringen las reglas. Sin él, las disputas se resuelven mediante el poder. Con él, las disputas se resuelven mediante proceso.
 Este archivo cubre los principales sistemas jurídicos, las principales ramas del derecho y los conceptos que dan forma al funcionamiento de los sistemas jurídicos en la práctica.

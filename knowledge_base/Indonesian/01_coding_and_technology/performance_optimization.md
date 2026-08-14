@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optimasi Kinerja
 Pengoptimalan kinerja adalah praktik membuat perangkat lunak lebih cepat — mengurangi waktu respons, meningkatkan throughput, menurunkan penggunaan memori, dan menghilangkan kemacetan. Ini adalah salah satu keterampilan paling berdampak yang dapat dimiliki seorang pengembang, karena perangkat lunak yang lambat akan kehilangan pengguna, membuang-buang sumber daya, dan membuat frustrasi semua orang. Tapi ini juga salah satu kesalahan yang paling sering dilakukan, karena pengembang mengoptimalkan hal yang salah berdasarkan intuisi dan bukan bukti.
 ---

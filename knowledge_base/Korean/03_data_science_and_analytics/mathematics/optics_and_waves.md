@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 광학과 파동
 파도는 소리, 빛, 물, 무선 신호, 양자 확률 진폭, 주식 시장 변동, 신경망 활성화의 진동 등 어디에나 있습니다. 빛을 연구하는 광학은 가장 잘 발달된 파동 과학이며, 그 수학적 도구(푸리에 분석, 간섭, 회절)는 모든 파동 현상에 적용됩니다. 파동을 이해하는 것은 신호 처리, 이미지 분석, 통신 및 모든 현대 기술의 물리적 계층에 필수적입니다.
 ---

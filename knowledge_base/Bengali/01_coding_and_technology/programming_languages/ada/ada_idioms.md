@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # অ্যাডা — ইডিওম্যাটিক প্যাটার্ন এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি পরিষ্কার, নিরাপদ অ্যাডা কোড লেখার জন্য বাহাদুরিমূলক নিদর্শন কভার করে।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 代码质量问题
 本文档整合了常见的代码质量问题，包括错误的变量名称、糟糕的文档、意大利面条式代码、循环依赖和其他可维护性问题。
 ---

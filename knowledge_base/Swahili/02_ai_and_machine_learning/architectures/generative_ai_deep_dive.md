@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kuzaa AI Deep Dive
 Kuzalisha AI inarejelea miundo inayounda maudhui mapya - picha, maandishi, sauti, video, msimbo - badala ya kuainisha au kutabiri data iliyopo. Ingawa miundo mikubwa ya lugha inaangaliwa zaidi, mandhari ya AI ya uzalishaji ni pana zaidi. Faili hii inashughulikia usanifu, mbinu, na ubadilishanaji nyuma ya mifumo ya kisasa ya uzalishaji, kutoka kwa miundo ya uenezi hadi visimbaji otomatiki tofauti hadi miundo ya mtiririko.
 ---

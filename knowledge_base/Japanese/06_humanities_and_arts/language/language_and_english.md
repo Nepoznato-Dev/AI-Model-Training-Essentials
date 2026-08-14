@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 言語と英語
 現在、世界では約 7,000 の言語が話されています。英語は第二言語として最も広く話されており、国際的なビジネス、科学、航空、インターネットのデフォルトとして機能します。コードのドキュメントを書く場合でも、研究論文を読む場合でも、国境を越えてコミュニケーションを取る場合でも、文法、語彙、修辞といった確かな英語力は、身につけることができる最も実践的なスキルの 1 つです。
 このファイルには、文法、句読点、よくある落とし穴、ライティング テクニック、明確なコミュニケーションなどの基本事項が含まれています。

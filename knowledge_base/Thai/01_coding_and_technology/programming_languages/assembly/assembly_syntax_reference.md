@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ภาษาแอสเซมบลี - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างครอบคลุมสำหรับแอสเซมบลี x86-64 (ไวยากรณ์ NASM) ช่วยเสริมการอ้างอิงแอสเซมบลีหลักโดยมุ่งเน้นไปที่หมวดหมู่คำสั่งที่ละเอียดถี่ถ้วน โหมดการกำหนดแอดเดรส รูปแบบสแต็กเฟรม และรูปแบบการเขียนโปรแกรมระบบ
 ---

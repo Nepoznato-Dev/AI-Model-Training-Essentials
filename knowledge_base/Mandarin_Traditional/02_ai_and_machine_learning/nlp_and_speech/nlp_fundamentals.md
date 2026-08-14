@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # NLP 基礎知識
 自然語言處理 (NLP) 是教導機器理解、產生和使用人類語言的領域。它為搜尋引擎、聊天機器人、翻譯系統、情感分析和大型語言模型 (LLM) 提供支持，這些模型自 2020 年以來已經改變了人工智慧。該文件涵蓋了從經典技術到基於 Transformer 的現代架構的演進。
 ---

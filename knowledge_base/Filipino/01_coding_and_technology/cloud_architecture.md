@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Cloud Architecture
 Ang cloud computing ay pangunahing nagbago kung paano bumuo, mag-deploy, at mag-scale ng software ang mga organisasyon. Sa halip na bumili at magpanatili ng mga pisikal na server, maaari kang magbigay ng mga mapagkukunan ng computing kapag hinihiling, magbayad para sa iyong ginagamit, at mag-scale sa buong mundo sa ilang minuto. Sinasaklaw ng file na ito ang mga pangunahing konsepto, pattern ng arkitektura, serbisyo, at pinakamahuhusay na kagawian na kailangan mong malaman.
 ---

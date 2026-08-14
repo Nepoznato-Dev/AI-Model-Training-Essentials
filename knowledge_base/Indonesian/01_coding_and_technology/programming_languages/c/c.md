@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C
 C adalah bahasa pemrograman prosedural untuk tujuan umum yang dibuat oleh Dennis Ritchie di Bell Labs antara tahun 1969 dan 1973. C dirancang untuk mengimplementasikan sistem operasi Unix, dan tetap menjadi salah satu bahasa pemrograman yang paling banyak digunakan selama 50 tahun kemudian. C menyediakan akses memori tingkat rendah, perpustakaan standar minimal, dan pemetaan yang bersih terhadap instruksi mesin -- menjadikannya fondasi di mana sebagian besar komputasi modern dibangun.
 C adalah bahasa di balik sistem operasi (Linux, kernel Windows, macOS), sistem tertanam, mesin basis data (SQLite, PostgreSQL), kompiler (CPython Python, MRI Ruby), dan hampir semua runtime bahasa pemrograman lainnya. Memahami C adalah memahami cara kerja komputer sebenarnya.

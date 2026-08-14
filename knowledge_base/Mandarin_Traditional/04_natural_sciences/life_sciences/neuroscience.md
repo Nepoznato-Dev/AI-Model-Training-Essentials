@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 神經科學
 神經科學是對神經系統（大腦、脊髓以及將它們連接到身體的所有神經）的研究。它跨越多個層面：從分子和基因，到單一神經元和突觸，到電路和大腦區域，到行為、認知和意識。大腦是已知宇宙中最複雜的結構，包含約 860 億個神經元，透過數萬億個突觸連接，了解大腦的工作原理是科學面臨的巨大挑戰之一。
 ---

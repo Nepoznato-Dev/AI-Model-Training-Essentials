@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and System Administration"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps और सिस्टम प्रशासन
 सर्वरों को प्रबंधित करने, संचालन को स्वचालित करने और विश्वसनीय बुनियादी ढांचे को बनाए रखने के लिए एक व्यावहारिक मार्गदर्शिका।
 ---

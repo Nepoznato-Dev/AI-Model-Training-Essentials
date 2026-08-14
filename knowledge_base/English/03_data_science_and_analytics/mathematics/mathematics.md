@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mathematics
 
 Mathematics is not only a subject studied in school — it underpins nearly every technical field. Physics uses it to describe the universe. Computer science uses it to design algorithms. Machine learning uses it to optimise weights. Finance uses it to price risk. Mastery of every branch is not necessary, but understanding the landscape — and knowing where each branch applies — makes other topics easier to grasp.

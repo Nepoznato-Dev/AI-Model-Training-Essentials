@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 語言學與語言科學
 語言學是對語言的科學研究──語言的結構、意義、使用、習得和演變。語言是人類溝通的決定性特徵：它具有無限的生產力（說話者可以創造和理解他們以前從未遇到過的句子），它是透過文化傳播的（它是後天習得的而不是純粹與生俱來的），並且它在不斷發展。了解語言的工作原理與任何建構語言技術、教學、翻譯或致力於更有效溝通的人都息息相關。
 ---

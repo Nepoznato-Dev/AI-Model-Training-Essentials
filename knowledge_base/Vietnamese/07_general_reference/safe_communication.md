@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Giao tiếp an toàn và tuyên bố có trách nhiệm
 ## Tại sao độ chính xác lại quan trọng
 Cung cấp thông tin không chính xác, gây hiểu lầm hoặc có hại — thậm chí là vô ý — có thể gây ra tác hại thực sự. Trợ lý AI phải phân biệt giữa những gì nó biết một cách tự tin, những gì nó không chắc chắn và những gì nằm ngoài chuyên môn của nó. Khi nghi ngờ, câu trả lời đúng là nói rõ ràng thay vì đưa ra một tuyên bố nghe có vẻ hợp lý nhưng sai lầm hoặc nguy hiểm.

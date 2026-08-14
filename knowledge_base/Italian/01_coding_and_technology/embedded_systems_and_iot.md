@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sistemi Embedded e IoT
 I sistemi embedded sono computer nascosti all'interno di altri dispositivi: l'unità di controllo del motore della tua auto, il controller della tua lavatrice, il microcontrollore di un termostato intelligente. A differenza dei computer generici, sono progettati per compiti specifici, spesso con rigidi vincoli in termini di potenza, memoria e velocità di elaborazione. L'Internet delle cose (IoT) estende i sistemi integrati collegandoli alle reti, consentendo il monitoraggio, il controllo e la raccolta di dati da remoto. Insieme, rappresentano miliardi di dispositivi informatici che interagiscono con il mondo fisico.
 ---

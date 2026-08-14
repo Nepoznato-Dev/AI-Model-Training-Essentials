@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 研究方法
 研究方法論は、疑問を調査し、仮説を検証し、信頼できる知識を生成するための体系的なアプローチです。科学実験、社会科学調査、ビジネス分析、学術研究のいずれを実施する場合でも、選択した方法論によって、結果が信頼でき、再現可能で、有用であるかどうかが決まります。適切に設計された研究は信頼できる結果をもたらします。設計が不十分だとノイズが発生したり、さらに悪いことに自信を持って間違った答えが生じたりします。
 ---

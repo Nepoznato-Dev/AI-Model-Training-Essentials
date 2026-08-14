@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala
 Scala (Ngôn ngữ có thể mở rộng) là ngôn ngữ lập trình được biên dịch, gõ tĩnh, kết hợp các mô hình lập trình hướng đối tượng và chức năng. Được tạo bởi Martin Odersky và phát hành lần đầu tiên vào năm 2004, Scala chạy trên JVM (cũng là Scala.js cho JavaScript và Scala Native). Nó được thiết kế để giải quyết tính dài dòng của Java trong khi vẫn duy trì khả năng tương tác Java đầy đủ.
 Scala là ngôn ngữ đằng sau Apache Spark (khung xử lý dữ liệu lớn) và nó được sử dụng rộng rãi trong kỹ thuật dữ liệu, hệ thống phân tán và dịch vụ phụ trợ. Các công ty như Twitter (nay là X), LinkedIn, Netflix và The Guardian đều sử dụng Scala.

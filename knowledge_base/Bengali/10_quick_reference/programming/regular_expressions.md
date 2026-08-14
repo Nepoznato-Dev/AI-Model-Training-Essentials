@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # রেগুলার এক্সপ্রেশন চিট শীট
 রেগুলার এক্সপ্রেশন (regex) হল টেক্সট মেলানোর জন্য প্যাটার্ন। এগুলি সর্বত্র ব্যবহৃত হয় — অনুসন্ধান এবং প্রতিস্থাপন, ইনপুট বৈধতা, লগ পার্সিং, ডেটা নিষ্কাশন এবং আরও অনেক কিছু৷ এটি একটি ব্যবহারিক রেফারেন্স, পাঠ্যপুস্তক নয়।
 ---

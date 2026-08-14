@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سوئفٹ - نحوی حوالہ
 یہ دستاویز Swift (5.9+) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، اختیاری، پروٹوکول پر مبنی پروگرامنگ، اور جدید ہم آہنگی پر توجہ مرکوز کرکے مرکزی سوئفٹ حوالہ کی تکمیل کرتا ہے۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni Kotlina (2.0+). Uzupełnia główne odniesienia do Kotlina, koncentrując się na wyczerpujących wzorcach składni, bezpieczeństwie zerowym, współprogramach i idiomach Kotlina.
 ---

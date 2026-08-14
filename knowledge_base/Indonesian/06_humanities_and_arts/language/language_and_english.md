@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bahasa dan Inggris
 Ada sekitar 7.000 bahasa yang digunakan di dunia saat ini. Bahasa Inggris adalah bahasa yang paling banyak digunakan sebagai bahasa kedua dan digunakan sebagai bahasa default untuk bisnis internasional, sains, penerbangan, dan internet. Baik menulis dokumentasi kode, membaca makalah penelitian, atau berkomunikasi lintas negara, penguasaan bahasa Inggris yang baik — tata bahasa, kosa kata, dan retorika — adalah salah satu keterampilan paling praktis yang dapat dikembangkan.
 File ini mencakup hal-hal penting: tata bahasa, tanda baca, kesalahan umum, teknik penulisan, dan komunikasi yang jelas.

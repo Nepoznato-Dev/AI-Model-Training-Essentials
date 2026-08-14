@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang kasangkapan, pakete, at imprastraktura sa Julia ecosystem.
 ---

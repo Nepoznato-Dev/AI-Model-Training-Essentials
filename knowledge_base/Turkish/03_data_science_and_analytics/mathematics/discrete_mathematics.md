@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ayrık Matematik
 Ayrık matematik, pürüzsüz, kesintisiz niceliklerle ilgilenen sürekli matematiğin (matematik, gerçek analiz) aksine, temelde sayılabilir veya ayrılmış matematiksel yapıların incelenmesidir. Ayrık matematik, bilgisayar bilimi, kriptografi, algoritma tasarımı ve veri yapılarının temelini oluşturur. Sürekli matematik fiziksel dünyayı tanımlıyorsa, ayrık matematik hesaplamalı dünyayı tanımlar.
 ---

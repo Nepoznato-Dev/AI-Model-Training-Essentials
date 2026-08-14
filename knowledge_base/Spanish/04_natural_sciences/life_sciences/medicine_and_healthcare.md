@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Medicina y atención sanitaria
 La medicina es la ciencia y la práctica de diagnosticar, tratar y prevenir enfermedades. Es uno de los esfuerzos humanos más antiguos (el juramento hipocrático se remonta a la antigua Grecia) y uno de los que cambia más rápidamente. Sólo en el último siglo, pasamos de no tener antibióticos a tener terapias genéticas que pueden reescribir el ADN de un paciente.
 Este archivo cubre cómo funciona la medicina: las principales especialidades, cómo se diagnostican y tratan las enfermedades, cómo se organizan los sistemas de salud y las cuestiones éticas que surgen cuando están en juego vidas humanas.

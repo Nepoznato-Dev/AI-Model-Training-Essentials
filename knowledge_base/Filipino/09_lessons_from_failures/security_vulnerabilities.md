@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mga Kahinaan sa Seguridad
 Pinagsasama-sama ng dokumentong ito ang mga karaniwang kahinaan sa seguridad sa pagbuo ng software, kabilang ang mga pag-atake sa pag-iniksyon, hindi ligtas na mga kasanayan sa code, at mga pagkakamali sa seguridad.
 ---

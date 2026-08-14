@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Java — wzorce idiomatyczne i najlepsze praktyki
 W tym przewodniku opisano wzorce idiomatyczne i najlepsze praktyki dotyczące pisania czystego, nowoczesnego kodu w języku Java (17+).
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Scala (3.x dengan catatan tentang perbedaan 2.x). Ini melengkapi referensi utama Scala dengan berfokus pada pola sintaksis yang lengkap, sistem tipe, konstruksi pemrograman fungsional, dan idiom Scala.
 ---

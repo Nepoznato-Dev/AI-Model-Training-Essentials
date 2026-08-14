@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # হাসকেল - সিনট্যাক্স রেফারেন্স
 এই নথিটি Haskell (GHC 9.x) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, টাইপ সিস্টেম, মোনাড, অলস মূল্যায়ন, এবং কার্যকরী প্রোগ্রামিং ইডিয়মগুলির উপর ফোকাস করে প্রধান হাসকেল রেফারেন্সের পরিপূরক।
 ---

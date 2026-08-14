@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #C++
 C++ è un linguaggio di programmazione compilato di uso generale creato da Bjarne Stroustrup, rilasciato per la prima volta nel 1985. Estende il C con funzionalità orientate agli oggetti, generici e, nelle versioni moderne (C++11 e successive), astrazioni di alto livello come lambda, puntatori intelligenti e Standard Template Library (STL). Il C++ segue il principio dell'"astrazione zero-overhead": non dovresti pagare per le funzionalità che non usi.
 C++ è il linguaggio da scegliere quando sono necessarie prestazioni elevate e potenza espressiva. Alimenta motori di gioco (Unreal Engine), browser (Chrome, Firefox), database (MongoDB), sistemi operativi (parti di Windows e macOS), sistemi di trading finanziario e simulazioni in tempo reale.

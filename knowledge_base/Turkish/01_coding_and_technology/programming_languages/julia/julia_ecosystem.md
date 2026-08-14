@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz, Julia ekosistemindeki temel araçları, paketleri ve altyapıyı kapsar.
 ---

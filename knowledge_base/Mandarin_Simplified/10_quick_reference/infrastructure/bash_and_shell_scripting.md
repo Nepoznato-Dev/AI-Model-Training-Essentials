@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash 和 Shell 脚本备忘单
 在 Bash（大多数 Linux 和 macOS 系统上的默认 shell）中编写 shell 脚本的实用参考。涵盖语法、常见模式、文本处理和有用的单行话。
 ---

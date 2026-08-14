@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Klasik Mekanik
 Klasik mekanik, kuvvetlerin etkisi altındaki nesnelerin hareketini açıklar. Düşen elmalardan yörüngede dönen gezegenlere, titreşen sicimlerden çarpışan parçacıklara kadar ilkeleri makroskobik dünyayı yönetir. Klasik mekanik, fiziksel uygulamalarının ötesinde, varyasyonlar hesabını, simplektik geometriyi ve kuantum mekaniği ile modern optimizasyonun temelini oluşturan Hamilton çerçevesini doğurdu.
 ---

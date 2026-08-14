@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB — 语法参考
 本文档提供了 MATLAB (R2024+) 的全面、结构化语法参考。它通过关注详尽的语法模式、矩阵运算、绘图和科学计算惯用语来补充主要的 MATLAB 参考。
 ---

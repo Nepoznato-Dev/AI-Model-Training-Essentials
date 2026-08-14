@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scala — Những lỗi thường gặp và các mẫu phản kháng
 Tài liệu này liệt kê các lỗi, bẫy và mô hình phản đối phổ biến nhất trong Scala kèm theo các bản sửa lỗi.
 ---

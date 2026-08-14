@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Datenvisualisierung
 Ein gut gestaltetes Diagramm kann Muster aufdecken, die in Zahlentabellen verborgen sind. Ein schlecht gestaltetes Dokument kann irreführen, verwirren oder langweilen. Bei der Datenvisualisierung handelt es sich um die Kunst, Daten in visuelle Geschichten umzuwandeln, die als Grundlage für Entscheidungen dienen. Diese Datei behandelt die Diagrammauswahl, Designprinzipien, häufige Fehler und die Tools, die all dies ermöglichen.
 ---

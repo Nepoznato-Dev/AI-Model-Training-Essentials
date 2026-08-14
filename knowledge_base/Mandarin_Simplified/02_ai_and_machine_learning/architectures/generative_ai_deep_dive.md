@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 生成式人工智能深入研究
 生成式人工智能是指创建新内容（图像、文本、音频、视频、代码）的模型，而不仅仅是对现有数据进行分类或预测。虽然大型语言模型受到了大部分关注，但生成式人工智能的前景要广阔得多。该文件涵盖了现代生成系统背后的架构、技术和权衡，从扩散模型到变分自动编码器再到流模型。
 ---

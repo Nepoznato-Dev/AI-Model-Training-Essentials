@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pergeseran Demografis
 ## Ringkasan
 Demografi adalah takdir – atau setidaknya demografi sangat sejalan dengannya. Populasi dunia menua dengan cepat, bermigrasi dengan pola-pola baru, berkumpul di kota-kota dengan tingkat yang belum pernah terjadi sebelumnya, dan terbagi berdasarkan generasi yang membentuk segalanya mulai dari perilaku memilih hingga kebiasaan konsumen. Pergeseran ini akan berlangsung selama beberapa dekade, namun dampaknya sudah terlihat. Berikut empat tren besar dan artinya.

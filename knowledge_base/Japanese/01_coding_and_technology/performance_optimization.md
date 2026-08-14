@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # パフォーマンスの最適化
 パフォーマンスの最適化とは、応答時間の短縮、スループットの向上、メモリ使用量の削減、ボトルネックの排除などにより、ソフトウェアを高速化する実践です。これは、開発者が持つことができる最も影響力のあるスキルの 1 つです。なぜなら、ソフトウェアが遅いとユーザーを失い、リソースが無駄になり、全員がイライラするからです。しかし、これは最もよく行われる間違いの 1 つでもあり、開発者は証拠ではなく直感に基づいて間違ったことを最適化します。
 ---

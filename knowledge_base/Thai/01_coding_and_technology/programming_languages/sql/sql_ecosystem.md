@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # SQL - คู่มือระบบนิเวศและเครื่องมือ
 คู่มือนี้ครอบคลุมถึงฐานข้อมูล เครื่องมือ และโครงสร้างพื้นฐานที่สำคัญในระบบนิเวศของ SQL
 ---

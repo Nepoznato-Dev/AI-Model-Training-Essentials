@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz Prolog ekosistemindeki temel araçları, uygulamaları ve altyapıyı kapsar.
 ---

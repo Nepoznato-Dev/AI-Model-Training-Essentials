@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Visual Basic
 Visual Basic (VB), Microsoft tarafından geliştirilen bir programlama dilidir. Birkaç nesil boyunca gelişmiştir: orijinal Visual Basic (1991), Visual Basic 6.0 (1998), VB.NET (2002, .NET Framework'ün bir parçası) ve Visual Basic ..NET (şu anda .NET'in bir parçası olarak basitçe "Visual Basic" olarak adlandırılmaktadır). VB, grafik kullanıcı arayüzleri ve olay odaklı programlamaya odaklanarak yeni başlayanlar ve hızlı uygulama geliştirme (RAD) için ulaşılabilir olacak şekilde tasarlandı.
 Bugün VB.NET, C#'ın yanı sıra .NET ekosisteminin bir parçası olarak devam ediyor, ancak Microsoft, C#'ın ileriye yönelik birincil dil olduğunu belirtti. VB, kurumsal ortamlarda, özellikle eski Windows uygulamaları, Office otomasyonu (VBA) ve dahili iş araçları için yaygın olarak kullanılmaya devam ediyor.

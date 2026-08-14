@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml — エコシステムとツールのガイド
 このガイドでは、OCaml エコシステムの重要なツール、フレームワーク、インフラストラクチャについて説明します。
 ---

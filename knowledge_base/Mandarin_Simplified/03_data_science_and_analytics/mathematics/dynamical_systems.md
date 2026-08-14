@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 动力系统
 **动态系统**描述了状态如何根据固定规则随时间演变。从行星轨道到人口动态，从天气模式到训练神经网络，动力系统理论提供了理解事物如何变化的语言和工具。该文件涵盖常微分方程 (ODE)、偏微分方程 (PDE)、稳定性分析、混沌和分岔。
 ---

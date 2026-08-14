@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teori Grafik
 **Grafik** adalah struktur matematika yang terdiri dari simpul (node) yang dihubungkan oleh sisi (link). Hubungan model grafik: jaringan sosial, peta jalan, jaringan saraf, ketergantungan, saluran komunikasi. Teori grafik — studi tentang struktur ini — menyediakan algoritme dan teorema yang penting bagi ilmu komputer, riset operasi, dan ilmu data.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Типскрипт
 TypeScript — это статически типизированный расширенный набор JavaScript, разработанный Microsoft (под руководством Андерса Хейлсберга) и впервые выпущенный в 2012 году. Он добавляет в JavaScript необязательные аннотации типов, интерфейсы, дженерики и расширенные функции системы типов, а затем компилируется в простой JavaScript, который запускается везде, где работает JavaScript. TypeScript не является отдельным языком или средой выполнения; это JavaScript с проверкой типов.
 TypeScript стал стандартом для крупномасштабной разработки JavaScript. React, Angular, VS Code, Deno и большинство крупных проектов JavaScript с открытым исходным кодом написаны на TypeScript. Если вы начинаете новый проект JavaScript значительного размера, TypeScript рекомендуется использовать по умолчанию.

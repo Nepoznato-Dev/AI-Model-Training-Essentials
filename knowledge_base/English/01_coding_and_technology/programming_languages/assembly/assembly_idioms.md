@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assembly — Idiomatic Patterns & Best Practices
 
 This guide covers idiomatic patterns for writing clean, maintainable Assembly code (x86/x64 focus with NASM syntax).

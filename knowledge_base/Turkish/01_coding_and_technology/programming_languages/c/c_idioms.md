@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, güvenli C kodu yazmaya yönelik deyimsel kalıpları ve en iyi uygulamaları kapsar.
 ---

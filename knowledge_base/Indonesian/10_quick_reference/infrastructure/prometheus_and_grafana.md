@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Prometheus dan Grafana
 Prometheus adalah perangkat pemantauan dan peringatan sumber terbuka yang dirancang untuk keandalan dan skalabilitas. Grafana adalah platform sumber terbuka terkemuka untuk memvisualisasikan data deret waktu. Bersama-sama, mereka membentuk tumpukan pemantauan paling populer untuk infrastruktur dan aplikasi modern. Prometheus mengumpulkan dan menyimpan metrik; Grafana menampilkannya di dashboard.
 ---

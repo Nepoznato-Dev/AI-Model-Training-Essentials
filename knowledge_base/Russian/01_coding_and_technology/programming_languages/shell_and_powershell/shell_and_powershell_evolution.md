@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell и PowerShell — история версий и эволюция
 ## Временная шкала оболочки Unix
 | Версия | Год | Ключевая тема |

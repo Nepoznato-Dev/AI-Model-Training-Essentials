@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-মিনি এবং স্থানীয় এআই মডেল ল্যান্ডস্কেপ
 মাইক্রোসফ্টের ফি-3-মিনি মডেলের বিশ্লেষণ — এর নকশা দর্শন, স্থাপত্য পছন্দ এবং কর্মক্ষমতা বৈশিষ্ট্য — এবং এর সাফল্য আমাদের কার্যকর, দক্ষ এআই সিস্টেম তৈরির বিষয়ে কী শেখায়।
 ---

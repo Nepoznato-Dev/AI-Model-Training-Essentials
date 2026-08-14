@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #प्रौद्योगिकी शब्दावली
 एआई मॉडल, हार्डवेयर, बेंचमार्क और मुख्य अवधारणाओं को कवर करने वाली एक संदर्भ शब्दावली
 आधुनिक एआई और कंप्यूटिंग परिदृश्य में।

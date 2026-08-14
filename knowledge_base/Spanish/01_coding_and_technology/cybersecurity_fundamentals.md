@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fundamentos de ciberseguridad
 La seguridad es una disciplina que debe integrarse en cada capa de un sistema desde el principio, en lugar de agregarse como una ocurrencia tardía. Ya sea creando una aplicación web, administrando infraestructura o enviando una API, es esencial comprender el panorama de amenazas y los fundamentos de la defensa.
 ---

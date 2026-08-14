@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Elaborazione vocale e audio
 L'elaborazione vocale e audio copre le tecnologie che consentono alle macchine di ascoltare, comprendere, generare e manipolare il suono. Ciò include il riconoscimento vocale (trasformare le parole pronunciate in testo), la sintesi vocale (trasformare il testo in parole pronunciate), l'identificazione del parlante, la generazione di musica e la comprensione del suono ambientale. Il campo è stato trasformato dal deep learning: i sistemi moderni si avvicinano alla precisione del livello umano per il riconoscimento vocale e producono voci sintetiche stranamente naturali.
 ---

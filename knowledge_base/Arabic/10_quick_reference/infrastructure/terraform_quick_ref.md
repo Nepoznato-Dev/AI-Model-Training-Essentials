@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Terraform والبنية التحتية كرمز
 Terraform هي أداة البنية الأساسية كرمز (IaC) الأكثر استخدامًا - فهي تتيح لك تحديد البنية التحتية السحابية (الخوادم وقواعد البيانات والشبكات والأذونات) في ملفات التكوين التعريفية التي يمكن إصدارها ومراجعتها واختبارها وأتمتتها. بدلاً من النقر فوق وحدة التحكم السحابية، يمكنك كتابة تعليمات برمجية تصف الحالة المطلوبة للبنية الأساسية لديك، وتكتشف Terraform التغييرات التي يجب إجراؤها.
 ---

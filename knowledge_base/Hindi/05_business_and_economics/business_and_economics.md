@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # व्यापार और अर्थशास्त्र
 प्रत्येक संगठन जो उत्पाद या सेवा बेचता है वह एक व्यवसाय है, और प्रत्येक समाज जो वस्तुओं का उत्पादन और वितरण करता है वह एक अर्थव्यवस्था है। इस फ़ाइल की अवधारणाएँ लागू होती हैं चाहे आप एक फ्रीलांस ऑपरेशन चला रहे हों, किसी निगम में काम कर रहे हों, समाचार समझने की कोशिश कर रहे हों, या सिर्फ यह पता लगा रहे हों कि दुनिया में पैसा कैसे चलता है।
 ---

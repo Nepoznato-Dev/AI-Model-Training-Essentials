@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — よくある間違いとアンチパターン
 このドキュメントでは、Dart で最も一般的な間違い、罠、アンチパターンを修正とともにカタログ化します。
 ---

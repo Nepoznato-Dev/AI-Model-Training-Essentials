@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Organisationsdesign und Kultur
 Organisationsdesign ist die bewusste Anordnung von Strukturen, Prozessen, Rollen und Entscheidungsrechten zur effektiven Umsetzung einer Strategie. Kultur sind die gemeinsamen Werte, Überzeugungen, Normen und Verhaltensweisen, die die tatsächliche Zusammenarbeit von Menschen prägen. Die Struktur gibt den Rahmen vor; Kultur prägt Verhalten. Eine Struktur kann auf dem Papier neu gestaltet werden, aber wenn die Kultur die Änderung nicht unterstützt, wird die Umsetzung scheitern. Ebenso wird eine starke Kultur gepaart mit einer ineffektiven Struktur die Leistung der Organisation nach und nach untergraben. Die effektivsten Organisationen befassen sich mit beiden – und erkennen, dass sie eng miteinander verbunden sind.
 ---

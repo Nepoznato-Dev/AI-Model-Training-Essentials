@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 全球经济与贸易
 全球经济是人类迄今为止建立的最大、最复杂的系统。 2025年，全球GDP将超过110万亿美元。每天有超过 80 亿人跨境生产、贸易和消费商品和服务。了解这个系统是如何运作的——谁在交易什么，为什么有些国家富裕而另一些国家贫穷，资金如何跨境流动，以及当系统崩溃时会发生什么——对于驾驭现代世界至关重要。
 ---

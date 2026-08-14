@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD 管道配置
 持续集成 (CI) 和持续部署 (CD) 管道可自动化构建、测试和部署软件的过程。本参考涵盖了最流行的 CI/CD 平台的配置模式：GitHub Actions、GitLab CI 和一般管道设计原则。
 ---

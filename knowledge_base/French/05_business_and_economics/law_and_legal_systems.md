@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Droit et systèmes juridiques
 Le droit est l'ensemble des règles qu'une société s'engage à faire respecter à travers ses institutions. Ce n’est pas la même chose que la moralité : vous pouvez faire quelque chose de légal qui est immoral et quelque chose d’illégal qui est moralement justifié. La loi existe pour assurer la prévisibilité : pour établir ce qui est autorisé, ce qui est interdit et ce qui se passe lorsque les règles ne sont pas respectées. Sans cela, les conflits sont réglés par le pouvoir. Grâce à lui, les litiges sont réglés par voie de procédure.
 Ce dossier couvre les principaux systèmes juridiques, les principales branches du droit et les concepts qui façonnent le fonctionnement pratique des systèmes juridiques.

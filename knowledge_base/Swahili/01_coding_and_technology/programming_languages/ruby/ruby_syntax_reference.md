@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya Ruby (3.x). Inakamilisha rejeleo kuu la Ruby kwa kuzingatia mifumo kamili ya sintaksia, vizuizi na kufungwa, upangaji metaprogramu, na nahau za Ruby.
 ---

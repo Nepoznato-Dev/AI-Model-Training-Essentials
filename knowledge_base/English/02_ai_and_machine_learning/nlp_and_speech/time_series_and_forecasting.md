@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Time Series and Forecasting
 
 Time series data is any data collected over time: stock prices, temperature readings, website traffic, sales figures, heart rate monitors, energy consumption. Forecasting means predicting future values based on past patterns. It's one of the most practically valuable applications of data science — and one of the hardest, because the future is genuinely uncertain and real-world time series are full of noise, seasonality, and structural breaks.

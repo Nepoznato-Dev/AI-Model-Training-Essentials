@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teknologi Baru
 ## Ringkasan
 Teknologi tertentu menciptakan kategori kemampuan yang benar-benar baru dibandingkan secara bertahap meningkatkan kemampuan yang sudah ada. Komputasi kuantum bertujuan untuk memecahkan masalah yang membutuhkan waktu ribuan tahun bagi mesin klasik. Energi fusi menawarkan kemungkinan energi bersih yang hampir tak terbatas. Antarmuka otak-komputer menjembatani pikiran dan mesin. Biologi sintetik memungkinkan penulisan ulang kode biologis. Bagian berikut menjelaskan posisi masing-masing batasan tersebut saat ini dan arah tren yang ada saat ini.

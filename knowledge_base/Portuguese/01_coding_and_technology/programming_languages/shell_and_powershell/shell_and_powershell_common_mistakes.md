@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell e PowerShell – erros comuns e antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns no Shell/Bash e no PowerShell com correções.
 ---

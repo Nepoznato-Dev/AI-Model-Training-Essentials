@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Compétences pratiques de la vie
 L'école vous apprend le calcul mais vous apprend rarement comment déclarer ses impôts, préparer un repas équilibré ou entretenir une maison. Ce sont les compétences pratiques qui affectent votre qualité de vie quotidienne – le genre de connaissances qui vous rendent autonome et résilient financièrement. Ce fichier est une référence dense pour l’essentiel.
 ---

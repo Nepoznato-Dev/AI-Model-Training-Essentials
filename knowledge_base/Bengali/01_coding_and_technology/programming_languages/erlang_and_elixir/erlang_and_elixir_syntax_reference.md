@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang & Elixir — সিনট্যাক্স রেফারেন্স
 এই নথিটি Erlang এবং Elixir-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি প্যাটার্ন ম্যাচিং, প্রসেস ম্যানেজমেন্ট, ওটিপি আচরণ এবং ত্রুটি-সহনশীল সিস্টেম প্যাটার্নগুলিতে ফোকাস করে মূল রেফারেন্সের পরিপূরক।
 ---

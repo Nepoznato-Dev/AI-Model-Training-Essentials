@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C
 
 C is a general-purpose, procedural programming language created by Dennis Ritchie at Bell Labs between 1969 and 1973. It was designed to implement the Unix operating system, and it remains one of the most widely-used programming languages over 50 years later. C provides low-level memory access, a minimal standard library, and a clean mapping to machine instructions -- making it the foundation on which most modern computing is built.

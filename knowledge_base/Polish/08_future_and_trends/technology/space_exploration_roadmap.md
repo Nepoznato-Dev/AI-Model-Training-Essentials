@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mapa drogowa eksploracji kosmosu
 ## Przegląd
 Żyjemy w nowym złotym wieku eksploracji kosmosu. Program NASA Artemis przywraca ludzi na Księżyc. SpaceX buduje rakietę w pełni wielokrotnego użytku przeznaczoną na Marsa. Chiny mają własne ambitne plany księżycowe i marsjańskie. Rosnąca konstelacja prywatnych firm otwiera przestrzeń dla handlu – od Internetu satelitarnego po turystykę kosmiczną. Oto plan działania, od Księżyca po Marsa i dalej.

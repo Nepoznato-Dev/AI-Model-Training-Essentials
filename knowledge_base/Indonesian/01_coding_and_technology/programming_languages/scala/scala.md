@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #skala
 Scala (Scalable Language) adalah bahasa pemrograman terkompilasi yang diketik secara statis yang menggabungkan paradigma pemrograman berorientasi objek dan fungsional. Dibuat oleh Martin Odersky dan pertama kali dirilis pada tahun 2004, Scala berjalan di JVM (juga Scala.js untuk JavaScript dan Scala Native). Ini dirancang untuk mengatasi verbositas Java sambil mempertahankan interoperabilitas Java secara penuh.
 Scala adalah bahasa di balik Apache Spark (kerangka kerja pemrosesan data besar), dan digunakan secara luas dalam rekayasa data, sistem terdistribusi, dan layanan backend. Perusahaan seperti Twitter (sekarang X), LinkedIn, Netflix, dan The Guardian menggunakan Scala.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Upangaji wa Mazingira
 ## Muhtasari
 Hakuna mtu anayeweza kutabiri siku zijazo - lakini unaweza kujiandaa kwa kadhaa zinazokubalika. Upangaji wa mazingira, uliozaliwa katika tanki za fikra za Vita Baridi na kukamilishwa na Shell wakati wa migogoro ya mafuta ya miaka ya 1970, ni njia ya kufikiria kwa utaratibu kuhusu kutokuwa na uhakika. Badala ya kuweka kamari kwenye utabiri mmoja, unaunda hadithi dhabiti kuhusu jinsi mambo yanavyoweza kutokea, kisha jaribu maamuzi yako dhidi ya yote. Hivi ndivyo mbinu inavyofanya kazi, pamoja na hali katika vikoa muhimu.

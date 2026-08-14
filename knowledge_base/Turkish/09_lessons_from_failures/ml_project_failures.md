@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Makine Öğrenimi Projesi Başarısızlıkları
 Makine öğrenimi projeleri endişe verici bir oranda başarısız oluyor; sektör tahminleri makine öğrenimi projelerinin %60-85'inin hiçbir zaman üretime ulaşmadığını gösteriyor. Başarısızlıklar genellikle algoritmalarda değildir; sürecin, verilerin, beklentilerin ve organizasyonel bağlamın içindedirler. ML projelerinin neden başarısız olduğunu anlamak, ML sistemleri oluşturan herkes için çok önemlidir çünkü başarısızlık modları öngörülebilir ve büyük ölçüde önlenebilir.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — 構文リファレンス
 このドキュメントは、Rust の包括的で構造化された構文リファレンスを提供します。これは、網羅的な構文パターン、演算子テーブル、所有権システム、特性、同時実行性の内部機構に焦点を当て、主要な Rust リファレンスを補完します。
 ---

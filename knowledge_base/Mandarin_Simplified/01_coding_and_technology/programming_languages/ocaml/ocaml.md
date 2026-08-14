@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml
 OCaml（Objective Caml）是法国 INRIA 开发的函数式编程语言，于 1996 年首次发布。它结合了函数式编程的表现力和实用功能：具有类型推断（Hindley-Milner）、模式匹配、代数数据类型和可选的面向对象编程的强大类型系统。 OCaml 编译为快速本机代码，并且还支持字节码。
 OCaml 最著名的现实应用程序是 **Jane Street** 贸易公司，该公司的整个交易基础设施都使用 OCaml。它还用于编译器开发（Rust 编译器最初是用 OCaml 编写的）、形式验证、金融系统和定理证明。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # एरलांग और एलिक्सिर - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह मार्गदर्शिका BEAM VM और OTP को साझा करते हुए एर्लांग और एलिक्सिर पारिस्थितिकी तंत्र में आवश्यक उपकरण, ढांचे और बुनियादी ढांचे को कवर करती है।
 ---

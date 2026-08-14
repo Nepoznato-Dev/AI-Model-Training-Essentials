@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 未来の交通
 ＃＃ 概要
 A から B に移動することは、まったく違ったものになるでしょう。自動運転車はすでに公道を走っています。電動航空機は試験飛行を完了しつつある。ハイパーループのコンセプトは、真空管での列車並みの速度での移動を約束します。そして、かつては漫画の世界だった空飛ぶタクシーが認証を取得しつつあります。私たちの移動方法を再構築するテクノロジー全体の現状をご紹介します。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optics na Mawimbi
 Mawimbi yapo kila mahali: sauti, mwanga, maji, mawimbi ya redio, ukubwa wa uwezekano wa quantum, mabadiliko ya soko la hisa, na mitetemo ya uanzishaji wa mtandao wa neva. Optics - utafiti wa mwanga - ni sayansi ya mawimbi iliyoendelezwa vizuri zaidi, na zana zake za hisabati (Uchambuzi wa nne, kuingiliwa, diffraction) hutumika kwa kila jambo la wimbi. Kuelewa mawimbi ni muhimu kwa usindikaji wa ishara, uchambuzi wa picha, mawasiliano, na safu ya kimwili ya teknolojia zote za kisasa.
 ---

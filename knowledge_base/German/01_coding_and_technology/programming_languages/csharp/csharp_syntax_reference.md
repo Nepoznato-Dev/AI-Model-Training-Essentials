@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für modernes C# (C# 10/11/12 auf .NET 7/8). Es ergänzt die Hauptreferenz zu C#, indem es sich auf umfassende Syntaxmuster, LINQ, Async/Await, Mustervergleich und moderne Funktionen konzentriert.
 ---

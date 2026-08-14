@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Những lỗi thường gặp và các mẫu chống đối
 Tài liệu này liệt kê các lỗi và bẫy phổ biến nhất trong Scratch có sửa chữa.
 ---

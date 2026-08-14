@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 语言学和语言科学
 语言学是对语言的科学研究——语言的结构、意义、使用、习得和演变。语言是人类交流的一个决定性特征：它具有无限的生产力（说话者可以创造和理解他们以前从未遇到过的句子），它是通过文化传播的（它是后天习得的而不是纯粹与生俱来的），并且它在不断发展。了解语言的工作原理与任何构建语言技术、教学、翻译或致力于更有效沟通的人都息息相关。
 ---

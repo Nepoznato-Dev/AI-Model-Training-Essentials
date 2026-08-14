@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # تصور البيانات
 يمكن للمخطط المصمم جيدًا أن يكشف عن الأنماط التي تخفيها جداول الأرقام. يمكن للمرء المصمم بشكل سيء أن يضلل أو يربك أو يتحمل. تصور البيانات هو حرفة تحويل البيانات إلى قصص مرئية تساعد في اتخاذ القرارات. يغطي هذا الملف اختيار المخطط ومبادئ التصميم والأخطاء الشائعة والأدوات التي تجعل كل ذلك ممكنًا.
 ---

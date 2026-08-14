@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ TypeScript ایکو سسٹم میں ضروری ٹولز، فریم ورک اور انفراسٹرکچر کا احاطہ کرتا ہے۔ TypeScript اپنے ایکو سسٹم کا زیادہ تر حصہ JavaScript کے ساتھ شیئر کرتا ہے لیکن اس کے اپنے مخصوص ٹولز ہیں۔
 ---

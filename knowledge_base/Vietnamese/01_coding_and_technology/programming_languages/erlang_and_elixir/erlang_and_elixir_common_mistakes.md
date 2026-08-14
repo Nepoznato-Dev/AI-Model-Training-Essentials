@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Erlang & Elixir — Những lỗi thường gặp và phản mẫu
 Tài liệu này liệt kê các lỗi, bẫy và mô hình chống phổ biến nhất trong Erlang và Elixir kèm theo các chỉnh sửa.
 ---

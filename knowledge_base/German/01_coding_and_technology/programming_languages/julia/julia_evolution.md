@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia – Versionsgeschichte und Entwicklung
 ## Zeitleiste
 | Version | Jahr | Schlüsselthema |

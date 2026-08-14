@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #فنون مسرحية
 الفنون المسرحية - المسرح والسينما والرقص والأداء الموسيقي - هي المكان الذي يلتقي فيه الفن بالحضور الحي للجمهور. وخلافًا للرسم على الحائط أو الكتاب على الرف، فإن الأداء يتكشف في الوقت الفعلي، مما يخلق تجربة مشتركة بين الفنان والمتفرج والتي كانت مركزية في الثقافة الإنسانية لآلاف السنين.
 ---

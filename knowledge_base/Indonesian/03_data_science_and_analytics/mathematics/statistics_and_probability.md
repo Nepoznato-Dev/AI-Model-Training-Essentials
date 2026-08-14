@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Statistik dan Probabilitas
 Probabilitas dan statistik adalah dasar matematika dari ilmu data, pembelajaran mesin, dan penelitian ilmiah. Probabilitas memberi tahu Anda seberapa besar kemungkinan suatu peristiwa terjadi; statistik memberi tahu Anda cara menarik kesimpulan dari data. Bersama-sama, mereka mengubah ketidakpastian menjadi pengetahuan yang dapat diukur dan dikelola.
 ---

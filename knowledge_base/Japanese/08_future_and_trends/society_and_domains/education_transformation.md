@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 教育の変革
 ＃＃ 概要
 12年間教室に座って、おそらく大学に行ってから働くという伝統的な教育モデルは崩壊しつつある。 AI 家庭教師は、個人に合わせた指導を大規模に提供できるようになりました。テクノロジーの変化のスピードにより、生涯学習はもはやオプションではなくなりました。そして雇用主は、あなたがどのような資格を持っているかだけでなく、あなたが「何ができる」かをますます重視しています。ここでは、教育がどのように見直されているかをご紹介します。

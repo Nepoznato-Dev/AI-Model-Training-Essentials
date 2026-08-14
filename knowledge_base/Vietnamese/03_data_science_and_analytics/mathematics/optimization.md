@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tối ưu hóa
 Tối ưu hóa là toán học tìm ra giải pháp tốt nhất từ ​​một tập hợp các giải pháp khả thi. Nó hỏi: với một hàm và các ràng buộc, đầu vào nào sẽ giảm thiểu (hoặc tối đa hóa) đầu ra? Tối ưu hóa là động cơ của máy học - đào tạo một mô hình có nghĩa là giảm thiểu hàm mất mát. Nó xuất hiện trong nghiên cứu hoạt động, kinh tế, thiết kế kỹ thuật và hầu như mọi lĩnh vực định lượng.
 ---

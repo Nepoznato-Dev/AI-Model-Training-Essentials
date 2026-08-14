@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, temiz, modern Perl (5.38+) kodu yazmaya yönelik deyim kalıplarını ve en iyi uygulamaları kapsar.
 ---

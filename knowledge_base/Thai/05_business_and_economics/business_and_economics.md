@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ธุรกิจและเศรษฐศาสตร์
 ทุกองค์กรที่ขายสินค้าหรือบริการคือธุรกิจ และทุกสังคมที่ผลิตและจัดจำหน่ายสินค้าก็คือเศรษฐกิจ แนวคิดในไฟล์นี้นำไปใช้ไม่ว่าคุณจะดำเนินธุรกิจอิสระ ทำงานที่บริษัท พยายามทำความเข้าใจข่าว หรือเพียงค้นหาว่าเงินหมุนเวียนไปทั่วโลกอย่างไร
 ---

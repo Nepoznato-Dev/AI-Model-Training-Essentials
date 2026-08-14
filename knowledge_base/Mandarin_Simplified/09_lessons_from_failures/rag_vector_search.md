@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # RAG 和矢量搜索失败
 本文档整合了检索增强生成 (RAG) 系统、嵌入使用和矢量搜索实现中的常见故障。
 ---

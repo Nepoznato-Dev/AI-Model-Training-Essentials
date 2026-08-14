@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Misingi ya Biolojia
 Biolojia ni sayansi ya maisha. Viumbe vyote vilivyo hai vinashiriki vipengele fulani: vinatengenezwa na seli, vinatumia nishati, vinakua, vinaitikia mazingira yao, vinazalisha, na vinabadilika. Biolojia huanzia kwa mashine za molekuli ndani ya seli moja hadi mwingiliano wa mfumo mzima wa ikolojia, na ndio msingi wa dawa, kilimo, teknolojia ya kibayoteknolojia, na uhifadhi.
 ---

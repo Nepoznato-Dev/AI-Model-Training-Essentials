@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yaliyopangwa ya kisintaksia ya SQL (ANSI SQL yenye madokezo kuhusu tofauti za lahaja za PostgreSQL/MySQL/SQLite). Inakamilisha rejeleo kuu la SQL kwa kuzingatia muundo kamili wa hoja, utendakazi wa dirisha, CTE, na muundo wa hifadhidata.
 ---

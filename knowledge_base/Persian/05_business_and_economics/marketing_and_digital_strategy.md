@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # بازاریابی و استراتژی دیجیتال
 بازاریابی نحوه ایجاد، برقراری ارتباط و ارائه ارزش به مشتریان است. این شامل کل سیستم درک نیازهای مشتری، قرار دادن یک محصول برای رفع آن نیازها و ایجاد روابطی است که خریداران را به طرفداران تبدیل می کند. انقلاب دیجیتال ابزارها، کانال‌ها و سرعت بازاریابی را متحول کرده است، در حالی که اصول اولیه ثابت هستند.
 ---

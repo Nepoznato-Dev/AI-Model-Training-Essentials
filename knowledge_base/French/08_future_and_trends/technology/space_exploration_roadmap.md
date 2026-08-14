@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Feuille de route de l'exploration spatiale
 ## Aperçu
 Nous vivons un nouvel âge d’or de l’exploration spatiale. Le programme Artemis de la NASA ramène des humains sur la Lune. SpaceX construit une fusée entièrement réutilisable conçue pour Mars. La Chine a ses propres projets lunaires et martiens ambitieux. Et un nombre croissant d’entreprises privées ouvrent l’espace au commerce – de l’Internet par satellite au tourisme spatial. Voici la feuille de route, de la Lune à Mars et au-delà.

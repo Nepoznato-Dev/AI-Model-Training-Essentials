@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fortran - Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para Modern Fortran (2008/2018). Complementa la referencia principal de Fortran al centrarse en patrones de sintaxis exhaustivos, operaciones de matriz, módulos, programación orientada a objetos e informática de alto rendimiento.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Test Metodolojileri
 Test etmek, kodunuzun çalıştığına ve daha da önemlisi, kodda yapılan değişikliklerin zaten işe yarayanları bozmadığına dair güveni nasıl kazanacağınızdır. İyi testler, hataları kullanıcılardan önce yakalar, beklenen davranışı belgelendirir ve korkusuzca yeniden düzenlemeye olanak tanır. Bu dosya, birim testlerden uçtan uca testlere kadar tüm test stratejileri yelpazesini ve testi etkili kılan ilkeleri kapsar.
 ---

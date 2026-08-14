@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 科博尔
 COBOL（通用面向业务的语言）是仍在使用的最古老的编程语言之一，首次开发于 1959 年。它专为业务数据处理而设计，包括金融系统、薪资、银行、保险和政府应用程序。 COBOL 类似英语的语法旨在供业务经理阅读，而不仅仅是程序员。
 尽管历史悠久，COBOL 仍处理全球约 30% 的业务交易。主要银行、政府机构（包括美国社会保障管理局）和保险公司仍然依赖 COBOL 大型机系统。 1999 年的 Y2K bug 恐慌使 COBOL 重新进入公众视野，并且该语言继续在全球范围内运行关键基础设施。

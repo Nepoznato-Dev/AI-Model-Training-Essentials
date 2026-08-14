@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Julia - Mfumo wa Ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, vifurushi, na miundombinu katika mfumo ikolojia wa Julia.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp & Clojure - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Common Lisp และ Clojure ช่วยเสริมการอ้างอิง Lisp/Clojure หลักโดยมุ่งเน้นไปที่ S-expressions, มาโคร, โครงสร้างข้อมูลถาวร และรูปแบบการเขียนโปรแกรมเชิงฟังก์ชัน
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # แผ่นโกงนิพจน์ทั่วไป
 นิพจน์ทั่วไป (regex) คือรูปแบบสำหรับการจับคู่ข้อความ มีการใช้ทุกที่ ไม่ว่าจะเป็นการค้นหาและแทนที่ การตรวจสอบอินพุต การแยกวิเคราะห์บันทึก การแยกข้อมูล และอื่นๆ นี่เป็นข้อมูลอ้างอิงเชิงปฏิบัติ ไม่ใช่ตำราเรียน
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phân tích thực tế
 Phân tích thực tế là nền tảng chặt chẽ của phép tính. Trong khi phép tính cơ bản dạy bạn cách tính đạo hàm và tích phân, thì phép phân tích thực tế sẽ hỏi *tại sao* những kỹ thuật này hoạt động — và khi nào chúng thất bại. Nó cung cấp các định nghĩa chính xác về giới hạn, tính liên tục, sự hội tụ và tích hợp làm nền tảng cho lý thuyết xác suất, phân tích chức năng, tối ưu hóa và đảm bảo lý thuyết đằng sau các thuật toán học máy.
 ---

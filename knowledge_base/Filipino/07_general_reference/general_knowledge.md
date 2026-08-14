@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pangkalahatang Kaalaman
 Ang file na ito ay isang koleksyon ng mga katotohanan at konsepto na regular na lumalabas sa pag-uusap, balita, edukasyon, at pang-araw-araw na buhay. Isipin ito bilang background na kaalaman — ang uri ng bagay na tumutulong sa iyong maunawaan kung ano ang iyong binabasa, naririnig, o nararanasan.
 ---

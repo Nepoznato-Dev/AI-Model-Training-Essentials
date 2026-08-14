@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C
 C ist eine universelle, prozedurale Programmiersprache, die zwischen 1969 und 1973 von Dennis Ritchie in den Bell Labs entwickelt wurde. Sie wurde zur Implementierung des Unix-Betriebssystems entwickelt und ist auch über 50 Jahre später eine der am weitesten verbreiteten Programmiersprachen. C bietet Low-Level-Speicherzugriff, eine minimale Standardbibliothek und eine saubere Zuordnung zu Maschinenanweisungen – und ist damit die Grundlage, auf der die meisten modernen Computer basieren.
 C ist die Sprache hinter Betriebssystemen (Linux, Windows-Kernel, macOS), eingebetteten Systemen, Datenbank-Engines (SQLite, PostgreSQL), Compilern (CPython von Python, MRI von Ruby) und praktisch jeder anderen Laufzeitprogrammiersprache. Um C zu verstehen, muss man verstehen, wie Computer tatsächlich funktionieren.

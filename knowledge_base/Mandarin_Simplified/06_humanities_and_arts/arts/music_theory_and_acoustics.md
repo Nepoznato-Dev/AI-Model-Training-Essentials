@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 音乐理论和声学
 音乐理论是对音乐如何运作的研究——使某些声音组合令人愉悦或有意义，而另一些组合则不和谐或混乱的模式、结构和原则。声学是声音的物理学——振动如何在空气中传播，如何产生和感知。他们一起解释了为什么 C 大调和弦听起来很快乐，为什么小调听起来很悲伤，音乐厅是如何设计的，以及为什么你最喜欢的歌曲会让你感到寒意。
 ---

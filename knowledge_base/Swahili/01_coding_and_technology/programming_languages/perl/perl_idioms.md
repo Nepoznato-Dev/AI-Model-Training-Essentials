@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perl - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia ruwaza za nahau na mbinu bora za kuandika msimbo safi, wa kisasa wa Perl (5.38+).
 ---

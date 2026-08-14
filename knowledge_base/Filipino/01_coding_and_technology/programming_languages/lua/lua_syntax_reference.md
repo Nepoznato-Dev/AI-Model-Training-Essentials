@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na sanggunian para sa Lua (5.4). Kinukumpleto nito ang pangunahing sanggunian ng Lua sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, mga talahanayan at metatable, coroutine, at natatanging pilosopiya ng disenyo ni Lua.
 ---

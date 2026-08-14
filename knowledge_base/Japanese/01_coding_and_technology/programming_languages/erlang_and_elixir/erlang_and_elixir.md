@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Erlang と Elixir
 Erlang は、電話交換機に電力を供給するために 1986 年にエリクソンによって構築されました。これが、Erlang が他のほとんどの製品よりも並行性、フォールト トレランス、分散システムをうまく処理できる理由を説明しています。 Erlang プロセスは軽量で独立しており、メッセージ パッシングを通じてのみ通信します。プロセスがクラッシュすると、スーパーバイザがプロセスを再起動します。この「クラッシュさせる」という哲学により、ダウンタイムなしで何年も稼働するシステムが生み出されます。
 Elixir は、2012 年に Jose Valim によって Erlang の VM (BEAM) 上に構築された最新言語です。Erlang が提供するすべてのもの (同時実行性、フォールト トレランス、分散) はそのままに、使いやすい構文、メタプログラミング、優れたツール (Mix パッケージ マネージャー、Hex パッケージ レジストリ) が追加されています。 Elixir は、Web アプリケーション (Phoenix フレームワーク経由)、リアルタイム システム、組み込みデバイス (Nerves 経由) に広く使用されています。

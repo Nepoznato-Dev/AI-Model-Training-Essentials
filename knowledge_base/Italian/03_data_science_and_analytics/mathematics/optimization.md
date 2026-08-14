@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ottimizzazione
 L'ottimizzazione è la matematica con cui si trova la soluzione migliore da un insieme di soluzioni fattibili. Si chiede: data una funzione e dei vincoli, quale input minimizza (o massimizza) l'output? L'ottimizzazione è il motore dell'apprendimento automatico: addestrare un modello significa ridurre al minimo una funzione di perdita. Appare nella ricerca operativa, nell'economia, nella progettazione ingegneristica e praticamente in ogni campo quantitativo.
 ---

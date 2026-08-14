@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingénierie des fonctionnalités
 L'ingénierie des fonctionnalités est le processus de transformation des données brutes en représentations qui rendent les modèles d'apprentissage automatique plus efficaces. Elle est souvent décrite comme l'étape la plus importante du pipeline ML : les fonctionnalités que vous donnez à un modèle comptent plus que l'algorithme que vous choisissez. Un modèle simple doté de fonctionnalités bien conçues surpassera généralement un modèle complexe comportant des entrées brutes et non traitées. L’art consiste à comprendre suffisamment bien le domaine et les données pour créer des signaux dont le modèle peut tirer des leçons.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #شیمی
 اگر فیزیک قواعد بازی است، شیمی چیزی است که هنگام تعامل مهره ها اتفاق می افتد. شیمی چگونگی پیوند اتم‌ها، شکستن و تنظیم مجدد اتم‌ها را مطالعه می‌کند - یعنی اینکه همه مواد چگونه رفتار می‌کنند. این شکاف بین فیزیک بنیادی و پیچیدگی زیست شناسی، زمین شناسی و مهندسی را پر می کند.
 ---

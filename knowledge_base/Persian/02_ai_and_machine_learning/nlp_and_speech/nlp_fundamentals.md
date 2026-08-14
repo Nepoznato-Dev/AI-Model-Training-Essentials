@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # اصول NLP
 پردازش زبان طبیعی (NLP) حوزه آموزش ماشین‌ها برای درک، تولید و کار با زبان انسان است. موتورهای جستجو، ربات‌های گفتگو، سیستم‌های ترجمه، تحلیل احساسات و مدل‌های زبان بزرگ (LLM) را که از سال 2020 هوش مصنوعی را متحول کرده‌اند، نیرو می‌دهد. این فایل تکامل از تکنیک‌های کلاسیک به معماری‌های مبتنی بر ترانسفورماتور مدرن را پوشش می‌دهد.
 ---

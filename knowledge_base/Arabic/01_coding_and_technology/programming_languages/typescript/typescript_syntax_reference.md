@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا تركيبيًا شاملاً ومنظمًا لـ TypeScript. وهو يكمل مرجع TypeScript الرئيسي من خلال التركيز على نظام الكتابة والأدوية العامة وأنواع الأدوات المساعدة والبرمجة المتقدمة على مستوى النوع.
 ---

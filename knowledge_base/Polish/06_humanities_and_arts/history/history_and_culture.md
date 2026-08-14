@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Historia i kultura
 Historia to historia tego, czego dokonał człowiek – sukcesów, katastrof, wynalazków i idei, które ukształtowały świat, w którym dzisiaj żyjemy. To nie tylko lista dat i nazwisk. Zrozumienie historii pomaga zrozumieć, dlaczego granice są tam, gdzie są, dlaczego ludzie posługują się językami, którymi mówią, dlaczego niektóre kraje są bogate, a inne nie, i dlaczego konflikty, które wydają się stare, wciąż płoną.
 Ten plik obejmuje główne okresy i tematy w historii świata, od pierwszych cywilizacji po dzień dzisiejszy.

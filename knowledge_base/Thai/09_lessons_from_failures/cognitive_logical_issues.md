@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # อคติทางปัญญาและการเข้าใจผิดเชิงตรรกะ
 เอกสารนี้รวบรวมอคติด้านความรู้ความเข้าใจ การเข้าใจผิดเชิงตรรกะ และข้อผิดพลาดในการให้เหตุผลซึ่งส่งผลต่อทั้งการตัดสินใจของมนุษย์และผลลัพธ์ของระบบ AI
 ---

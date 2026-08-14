@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini 和本地 AI 模型景觀
 對 Microsoft Phi-3-mini 模型的分析——其設計理念、架構選擇和性能特徵——以及它的成功教會我們如何建立有效、高效的人工智慧系統。
 ---

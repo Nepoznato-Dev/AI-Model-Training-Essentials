@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Đạo đức dữ liệu và quyền riêng tư
 Đạo đức dữ liệu là nghiên cứu về cách thu thập, phân tích và triển khai dữ liệu ảnh hưởng đến quyền, quyền tự chủ và phúc lợi của mọi người. Quyền riêng tư là mối quan tâm cụ thể về người kiểm soát thông tin cá nhân và cách thông tin đó được chia sẻ. Các chủ đề này đã chuyển từ các cuộc tranh luận học thuật sang tin tức trên trang nhất - thực thi GDPR, vi phạm dữ liệu ảnh hưởng đến hàng tỷ người dùng và ngày càng nâng cao nhận thức của công chúng rằng hoạt động sử dụng dữ liệu của các công ty công nghệ có hậu quả thực sự đối với dân chủ, bình đẳng và tự do cá nhân.
 ---

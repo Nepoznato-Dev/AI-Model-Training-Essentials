@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scratch — 語法參考
 本文檔為 Scratch 3.0 提供全面、結構化的語法參考。它透過專注於詳盡的區塊類別、事件驅動模式、精靈管理、複製和創意編碼技術來補充主要的 Scratch 參考。
 ---

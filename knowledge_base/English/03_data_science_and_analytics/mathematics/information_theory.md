@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Information Theory
 
 Information theory, founded by Claude Shannon in 1948, quantifies information itself. How much does a message tell you? How much can you compress data? How fast can you communicate over a noisy channel? These questions have precise mathematical answers. Beyond communication, information theory has become foundational to machine learning — cross-entropy is the default loss function for classification, KL divergence measures distribution similarity, and mutual information drives feature selection.

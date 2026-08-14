@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Gelişen Teknolojiler
 ## Genel Bakış
 Bazı teknolojiler, mevcut olanları aşamalı olarak geliştirmek yerine tamamen yeni yetenek kategorileri yaratır. Kuantum hesaplama, klasik makinelerin bin yıllarını alacak sorunları çözmeyi amaçlıyor. Füzyon enerjisi neredeyse sınırsız temiz güç olanağı sunuyor. Beyin-bilgisayar arayüzleri zihin ve makine arasında köprü kurar. Sentetik biyoloji, biyolojik kodun yeniden yazılmasını sağlar. Aşağıdaki bölümlerde bu sınırların her birinin bugün nerede durduğu ve mevcut eğilimlerin nereye doğru ilerlediğini gösterdiği açıklanmaktadır.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 数据工程和管道
 数据工程是构建大规模移动、转换和存储数据的系统的学科。如果没有可靠的数据管道，机器学习模型就无法训练，仪表板显示过时的数字，业务决策也基于猜测。该文件涵盖了构建有效的数据基础设施的架构、工具和实践。
 ---

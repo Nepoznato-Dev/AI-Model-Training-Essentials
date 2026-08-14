@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 時間序列與預測
 時間序列資料是隨時間推移收集的任何資料：股票價格、溫度讀數、網站流量、銷售資料、心率監測器、能源消耗。預測是指根據過去的模式預測未來的價值。它是資料科學最有實際價值的應用之一，也是最困難的應用之一，因為未來確實是不確定的，而現實世界的時間序列充滿了雜訊、季節性和結構性中斷。
 ---

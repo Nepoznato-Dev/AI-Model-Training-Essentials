@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Inżynieria danych i rurociągi
 Inżynieria danych to dyscyplina polegająca na budowaniu systemów, które przenoszą, przekształcają i przechowują dane na dużą skalę. Bez niezawodnych potoków danych nie można trenować modeli uczenia maszynowego, na pulpitach nawigacyjnych wyświetlane są nieaktualne liczby, a decyzje biznesowe opierają się na domysłach. Ten plik opisuje architekturę, narzędzia i praktyki tworzenia działającej infrastruktury danych.
 ---

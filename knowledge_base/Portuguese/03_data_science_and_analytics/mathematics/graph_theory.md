@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria dos Grafos
 Um **gráfico** é uma estrutura matemática que consiste em vértices (nós) conectados por arestas (links). Relacionamentos de modelos de gráficos: redes sociais, roteiros, redes neurais, dependências, canais de comunicação. A teoria dos grafos – o estudo dessas estruturas – fornece algoritmos e teoremas que são centrais para a ciência da computação, pesquisa operacional e ciência de dados.
 ---

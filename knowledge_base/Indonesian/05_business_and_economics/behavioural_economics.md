@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ekonomi Perilaku dan Ilmu Keputusan
 Ilmu ekonomi perilaku mempelajari bagaimana orang sebenarnya mengambil keputusan, bukan bagaimana pelaku rasional mengambil keputusan. Ilmu ekonomi tradisional berasumsi bahwa manusia adalah orang yang rasional, mementingkan diri sendiri, dan pandai memproses informasi. Penelitian selama puluhan tahun oleh Kahneman, Tversky, Thaler, dan lainnya menunjukkan bahwa hal ini sangat tidak akurat. Orang-orang menggunakan jalan pintas mental, dipengaruhi oleh konteks yang tidak relevan, terlalu mementingkan informasi terkini, dan membuat kesalahan yang dapat diprediksi secara sistematis. Memahami pola-pola ini penting untuk merancang produk, kebijakan, organisasi, dan keputusan pribadi yang lebih baik.
 ---

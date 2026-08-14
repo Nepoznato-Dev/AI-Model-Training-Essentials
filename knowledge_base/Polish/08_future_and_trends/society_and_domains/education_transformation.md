@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Transformacja edukacji
 ## Przegląd
 Tradycyjny model edukacji – siedzieć w klasie przez dwanaście lat, może pójść na uniwersytet, a potem pracować – załamuje się. Nauczyciele AI mogą teraz zapewniać spersonalizowane instrukcje na dużą skalę. Tempo zmian technologicznych oznacza, że ​​uczenie się przez całe życie nie jest już opcjonalne. A pracodawców coraz bardziej interesuje to, co potrafisz *zrobić*, a nie tylko to, jakie posiadasz kwalifikacje. Oto jak na nowo postrzega się edukację.

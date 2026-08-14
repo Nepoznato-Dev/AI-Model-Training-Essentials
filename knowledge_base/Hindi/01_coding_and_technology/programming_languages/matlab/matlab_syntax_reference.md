@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # MATLAB - सिंटैक्स संदर्भ
 यह दस्तावेज़ MATLAB (R2024+) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, मैट्रिक्स संचालन, प्लॉटिंग और वैज्ञानिक कंप्यूटिंग मुहावरों पर ध्यान केंद्रित करके मुख्य MATLAB संदर्भ को पूरक करता है।
 ---

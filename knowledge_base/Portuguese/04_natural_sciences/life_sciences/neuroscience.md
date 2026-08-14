@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Neurociência
 A neurociência é o estudo do sistema nervoso – o cérebro, a medula espinhal e todos os nervos que os conectam ao corpo. Abrange vários níveis: desde moléculas e genes, até neurônios e sinapses individuais, até circuitos e regiões cerebrais, até comportamento, cognição e consciência. O cérebro é a estrutura mais complexa do universo conhecido, contendo cerca de 86 mil milhões de neurónios ligados por biliões de sinapses, e compreender como funciona é um dos grandes desafios da ciência.
 ---

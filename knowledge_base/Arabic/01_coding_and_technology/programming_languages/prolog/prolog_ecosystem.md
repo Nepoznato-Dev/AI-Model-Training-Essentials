@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog - دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والتطبيقات والبنية التحتية الأساسية في نظام Prolog البيئي.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog - الگوهای اصطلاحی و بهترین روش ها
 این راهنما الگوهای اصطلاحی برای نوشتن کدهای Prolog تمیز و اصطلاحی را پوشش می دهد.
 ---

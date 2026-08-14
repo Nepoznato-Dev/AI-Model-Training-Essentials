@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Veri Bilimi ve Analitik
 Veri bilimi, ham verileri eyleme dönüştürülebilir içgörülere dönüştürme disiplinidir. İstatistik, bilgisayar bilimi ve alan uzmanlığının kesişim noktasında yer alır ve finanstan sağlık hizmetlerine kadar her sektörde vazgeçilmez hale gelmiştir. Bu dosyada her uygulayıcının bilmesi gereken temel kavramlar, araçlar ve iş akışları anlatılmaktadır.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C# — Gabay sa Ecosystem at Tooling
 Sinasaklaw ng gabay na ito ang mahahalagang tool, framework, at imprastraktura sa C# / .NET ecosystem.
 ---

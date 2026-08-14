@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 环境科学与可持续发展
 环境科学应用物理、化学、生物学、地质学和经济学的方法来解决这个问题：“我们的星球正在发生什么，我们可以采取什么措施？”这是一个跨学科领域——多个学科的融合——这有助于提高其分析深度和政策相关性。
 环境科学的核心张力是：人类文明依赖于从环境中提取资源，但提取这些资源会改变环境，从而破坏我们所依赖的系统。简而言之，反馈循环就是整个领域。

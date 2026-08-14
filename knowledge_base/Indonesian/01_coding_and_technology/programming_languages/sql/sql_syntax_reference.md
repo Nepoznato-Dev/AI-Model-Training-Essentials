@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis terstruktur dan komprehensif untuk SQL (ANSI SQL dengan catatan tentang perbedaan dialek PostgreSQL/MySQL/SQLite). Ini melengkapi referensi SQL utama dengan berfokus pada pola kueri lengkap, fungsi jendela, CTE, dan desain database.
 ---

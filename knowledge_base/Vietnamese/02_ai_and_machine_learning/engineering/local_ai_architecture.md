@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kiến trúc AI cục bộ
 Hướng dẫn thực tế để chạy hoàn toàn các mô hình ngôn ngữ lớn trên thiết bị — cân nhắc về phần cứng, công cụ suy luận, tối ưu hóa bộ nhớ và thiết kế hệ thống để triển khai ở biên.
 ---

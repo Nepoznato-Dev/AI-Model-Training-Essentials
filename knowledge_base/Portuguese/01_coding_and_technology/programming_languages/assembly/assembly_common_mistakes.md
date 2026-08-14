@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Linguagem Assembly – Erros Comuns e Antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns no Assembly x86-64 com correções.
 ---

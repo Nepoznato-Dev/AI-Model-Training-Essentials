@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ネットワークの基本
 開発者とシステム管理者のための実用的なリファレンス - 中心的な概念、プロトコル、コマンド、トラブルシューティング。
 ---

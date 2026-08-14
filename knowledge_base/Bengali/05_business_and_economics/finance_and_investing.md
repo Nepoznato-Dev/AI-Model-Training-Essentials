@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Finance and Investing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # অর্থ ও বিনিয়োগ
 ## পার্সোনাল ফাইন্যান্স ফান্ডামেন্টাল
 ### আর্থিক পরিকল্পনার মূল বিষয়গুলি

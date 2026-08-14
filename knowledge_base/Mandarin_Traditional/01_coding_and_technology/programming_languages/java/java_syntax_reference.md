@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — 語法參考
 本文檔提供了全面、結構化的 Java 語法參考。它透過關注詳盡的語法模式、運算符表以及 JVM、OOP 和並發性的內部機制來補充主要的 Java 參考。
 ---

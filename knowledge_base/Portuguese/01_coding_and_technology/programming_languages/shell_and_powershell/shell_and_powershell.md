@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Shell e PowerShell
 Shell scripting refere-se à escrita de scripts para interpretadores de linha de comando. Os dois shells mais importantes são **Bash** (Bourne Again Shell) — o padrão no Linux e macOS — e **PowerShell** — o moderno shell multiplataforma e linguagem de script da Microsoft. Os scripts de shell automatizam tarefas de administração do sistema, criam pipelines, processamento de arquivos e fluxos de trabalho de implantação.
 Todo desenvolvedor, engenheiro de DevOps e administrador de sistema precisa de habilidades de script de shell. Esteja você implantando um servidor web, processando arquivos de log, configurando pipelines de CI/CD ou automatizando backups, o shell script é a ferramenta certa para o trabalho.

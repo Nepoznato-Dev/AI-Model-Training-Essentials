@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash na Shell Scripting Cheat Laha
 Rejeleo la vitendo la kuandika hati za ganda katika Bash - ganda chaguo-msingi kwenye mifumo mingi ya Linux na macOS. Inashughulikia sintaksia, mifumo ya kawaida, uchakataji wa maandishi, na mjengo mmoja muhimu.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "JavaScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # जावास्क्रिप्ट - सिंटैक्स संदर्भ
 यह दस्तावेज़ जावास्क्रिप्ट के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, ऑपरेटर टेबल और आंतरिक यांत्रिकी पर ध्यान केंद्रित करके मुख्य जावास्क्रिप्ट संदर्भ को पूरक करता है।
 ---

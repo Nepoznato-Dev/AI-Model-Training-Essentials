@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — Panduan Ekosistem & Peralatan
 Panduan ini mencakup alat-alat penting, kompiler, dan infrastruktur dalam ekosistem COBOL.
 ---

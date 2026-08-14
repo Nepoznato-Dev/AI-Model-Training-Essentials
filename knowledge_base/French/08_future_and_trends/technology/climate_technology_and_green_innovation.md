@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Technologie climatique et innovation verte
 La technologie climatique englobe les outils, systèmes et innovations conçus pour réduire les émissions de gaz à effet de serre, s'adapter au changement climatique et assurer la transition de l'économie mondiale vers une base durable. Il s’agit sans doute du domaine technologique le plus important du 21e siècle : la différence entre un réchauffement gérable de 1,5°C et un réchauffement catastrophique de 3°C+ dépend en grande partie de la rapidité avec laquelle ces technologies peuvent être déployées à grande échelle. Le défi n’est pas seulement scientifique mais aussi économique, politique et social.
 ---

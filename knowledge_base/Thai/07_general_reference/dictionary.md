@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # พจนานุกรมภาษาอังกฤษ - คำจำกัดความทั่วไปของคำ
 รายการอ้างอิงคำศัพท์ภาษาอังกฤษที่ใช้บ่อยและความหมาย
 ครอบคลุมคำศัพท์ในชีวิตประจำวัน ศัพท์วิชาการ และคำที่พบบ่อย

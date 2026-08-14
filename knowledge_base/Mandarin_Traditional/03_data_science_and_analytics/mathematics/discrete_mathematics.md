@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 離散數學
 離散數學是對從根本上可數或分離的數學結構的研究，而不是連續數學（微積分、實分析），後者處理平滑、不間斷的數量。離散數學是電腦科學、密碼學、演算法設計和資料結構的基礎。如果連續數學描述了物理世界，那麼離散數學則描述了計算世界。
 ---

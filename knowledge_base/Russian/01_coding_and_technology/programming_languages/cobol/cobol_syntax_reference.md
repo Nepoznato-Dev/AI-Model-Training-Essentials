@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL — Справочник по синтаксису
 В этом документе представлен полный структурированный справочник по синтаксису COBOL (2014+). Он дополняет основной справочник по COBOL, уделяя особое внимание исчерпывающим синтаксическим шаблонам, описаниям данных, обработке файлов и бизнес-логике.
 ---

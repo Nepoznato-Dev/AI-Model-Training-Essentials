@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 어셈블리 언어 - 일반적인 실수 및 안티 패턴
 이 문서에는 수정 사항이 포함된 x86-64 어셈블리의 가장 일반적인 실수, 트랩 및 안티 패턴이 나열되어 있습니다.
 ---

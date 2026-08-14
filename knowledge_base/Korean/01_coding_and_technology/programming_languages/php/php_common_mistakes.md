@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # PHP — 일반적인 실수 및 안티 패턴
 이 문서에는 PHP에서 가장 흔히 발생하는 실수, 함정, 안티 패턴에 대한 수정 사항이 정리되어 있습니다.
 ---

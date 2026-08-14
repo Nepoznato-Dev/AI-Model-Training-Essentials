@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Mkutano - Mfumo wa Ikolojia na Mwongozo wa zana
 Mwongozo huu unashughulikia zana muhimu, viunganishi, na miundombinu katika mfumo ikolojia wa Bunge.
 ---

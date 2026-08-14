@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Literatura
 Literatura jest najtrwalszym zapisem myśli, emocji i doświadczeń ludzkości. Od ustnych eposów starożytnych cywilizacji po współczesne powieści epoki cyfrowej – każde dzieło nawiązuje do tego, co było wcześniej. Zrozumienie gatunków, ruchów i technik literackich daje bogatszą perspektywę czytania i zrozumienia kultur, które stworzyły te dzieła.
 ---

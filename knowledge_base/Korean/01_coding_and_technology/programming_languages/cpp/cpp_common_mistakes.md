@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — 일반적인 실수 및 안티 패턴
 이 문서에는 C++에서 가장 일반적인 실수, 트랩 및 안티패턴이 나열되어 있습니다. 각 항목은 잘못된 접근 방식을 보여주고, 실패 이유를 설명하며, 올바른 솔루션을 제공합니다. 최신 C++(C++11/14/17/20)은 대부분의 고전적인 함정을 피할 수 있는 도구를 제공합니다.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml - Rejea ya Sintaksia
 Hati hii inatoa marejeleo ya kina, yenye muundo wa sintaksia ya OCaml (4.x/5.x). Inakamilisha marejeleo kuu ya OCaml kwa kuangazia mifumo kamili ya sintaksia, aina za data za aljebra, kulinganisha muundo, moduli, na nahau za utendakazi za utayarishaji.
 ---

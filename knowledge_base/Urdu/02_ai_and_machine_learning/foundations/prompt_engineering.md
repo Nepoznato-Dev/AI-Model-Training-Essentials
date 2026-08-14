@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فوری انجینئرنگ
 پرامپٹ انجینئرنگ ایک لینگویج ماڈل سے بہترین ممکنہ آؤٹ پٹ حاصل کرنے کے لیے ان پٹ پرامپٹس کو ڈیزائن، ریفائننگ اور بہتر بنانے کا عمل ہے۔ یہ ایک فن اور سائنس دونوں ہے، اور یہ ایل ایل ایم رویے کو ٹھیک ٹیوننگ کے بغیر کنٹرول کرنے کا بنیادی انٹرفیس ہے۔
 ---

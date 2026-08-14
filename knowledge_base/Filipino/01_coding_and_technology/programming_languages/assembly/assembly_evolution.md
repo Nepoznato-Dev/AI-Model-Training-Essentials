@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assembly Language — Kasaysayan ng Bersyon at Ebolusyon
 ## Timeline
 | Era | Taon | Pangunahing Tema |

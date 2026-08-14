@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #SQL
 SQL (Yapısal Sorgulama Dili), ilişkisel veritabanlarındaki verileri yönetmek ve sorgulamak için tasarlanmış, alana özgü bir dildir. İlk olarak 1970'lerde IBM'de geliştirilen ve 1987'de standartlaştırılan SQL, uygulamalar ve veriler arasındaki birincil arayüz olmaya devam ediyor. Her büyük İlişkisel Veritabanı Yönetim Sistemi (RDBMS) (PostgreSQL, MySQL, SQL Server, Oracle, SQLite) sorgulama dili olarak SQL'i kullanır.
 SQL genel amaçlı bir programlama dili değildir. SQL'de bir web uygulaması yazmazsınız. Ancak uygulamanız verileri depoluyorsa (ve neredeyse tüm uygulamalarda depolanır), o zaman SQL, bu verileri almak, dönüştürmek ve yönetmek için kullandığınız dildir. Genel programlamadan sonra tartışmasız evrensel olarak en yararlı teknik beceridir.

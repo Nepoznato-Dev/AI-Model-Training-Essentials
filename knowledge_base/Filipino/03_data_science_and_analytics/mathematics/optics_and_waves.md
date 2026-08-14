@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optics at Waves
 Ang mga alon ay nasa lahat ng dako: tunog, ilaw, tubig, mga signal ng radyo, mga amplitude ng posibilidad ng dami, pagbabagu-bago ng stock market, at mga vibrations ng mga pag-activate ng neural network. Ang mga optika — ang pag-aaral ng liwanag — ay ang pinaka mahusay na binuo na agham ng alon, at ang mga kasangkapang pangmatematika nito (Fourier analysis, interference, diffraction) ay nalalapat sa bawat wave phenomenon. Ang pag-unawa sa mga alon ay mahalaga para sa pagpoproseso ng signal, pagsusuri ng imahe, komunikasyon, at pisikal na layer ng lahat ng modernong teknolohiya.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C#"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ج#
 C# (تُنطق "C-sharp") هي لغة برمجة حديثة موجهة للكائنات وآمنة للنوع، طورتها شركة Microsoft تحت قيادة Anders Hejlsberg وتم إصدارها لأول مرة في عام 2002. وهي تعمل على النظام الأساسي .NET وقد تم تصميمها للجمع بين قوة C++ وإنتاجية Visual Basic. اليوم، تعد لغة C# لغة متعددة المنصات تستخدم لتطبيقات الويب (ASP.NET)، وبرامج سطح المكتب (Windows)، وتطوير الألعاب (Unity)، وتطبيقات الهاتف المحمول (MAUI)، والخدمات السحابية (Azure)، والمزيد.
 لقد استوعبت لغة C# بشكل ثابت أفضل الأفكار من اللغات الأخرى - LINQ، والمزامنة/الانتظار، والسجلات، ومطابقة الأنماط - مما يجعلها واحدة من أكثر اللغات المتوفرة ثراءً بالميزات وأكثرها ملاءمةً للمطورين.

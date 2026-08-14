@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Graph Mga Neural Network
 Ang Graph Neural Networks (GNNs) ay mga neural network na idinisenyo upang gumana sa graph-structured data — mga network ng mga node na konektado sa pamamagitan ng mga gilid. Habang gumagana ang mga tradisyunal na neural network sa mga grid (mga larawan) o mga pagkakasunud-sunod (teksto), pinangangasiwaan ng mga GNN ang mga arbitraryong istruktura ng relasyon: mga social network, mga molecular graph, mga graph ng kaalaman, mga network ng kalsada, mga graph ng rekomendasyon, at higit pa. Naging mahalaga ang mga ito para sa pagtuklas ng droga, pagtuklas ng panloloko, mga sistema ng rekomendasyon, at anumang domain kung saan mahalaga ang mga ugnayan sa pagitan ng mga entity.
 ---

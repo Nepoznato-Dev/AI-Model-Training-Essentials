@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 환경과학과 지속가능성
 환경 과학은 "우리 지구에 무슨 일이 일어나고 있으며, 이에 대해 무엇을 할 수 있는가?"라는 질문에 물리학, 화학, 생물학, 지질학, 경제학의 방법을 적용합니다. 이는 분석 깊이와 정책 타당성에 기여하는 학제 간 분야, 즉 여러 학문 분야의 융합입니다.
 환경 과학의 핵심 긴장은 다음과 같습니다. 인류 문명은 환경에서 자원을 추출하는 데 의존하지만 이러한 자원을 추출하면 우리가 의존하는 시스템을 약화시킬 수 있는 방식으로 환경이 변화됩니다. 피드백 루프를 이해하는 것은 간단히 말해서 전체 분야입니다.

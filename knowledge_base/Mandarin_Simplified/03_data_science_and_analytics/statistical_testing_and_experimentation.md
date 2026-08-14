@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 统计测试和实验
 统计学是科学的语法。它为您提供了区分真实模式和随机噪声的工具，衡量更改是否真正改善了情况，并在不确定的情况下做出决策。该文件涵盖了假设检验、实验设计的核心概念，以及令人困惑的常见陷阱。
 ---

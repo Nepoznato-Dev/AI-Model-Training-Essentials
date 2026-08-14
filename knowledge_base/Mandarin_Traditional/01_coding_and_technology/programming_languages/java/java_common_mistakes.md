@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Java — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Java — 常見錯誤與反模式
 本文檔列出了 Java 中最常見的錯誤、陷阱和反模式。每個條目都會顯示錯誤的方法，解釋其失敗的原因，並提供正確的解決方案。
 ---

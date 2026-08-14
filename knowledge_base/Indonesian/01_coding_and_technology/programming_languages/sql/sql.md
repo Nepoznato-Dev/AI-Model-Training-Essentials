@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #SQL
 SQL (Bahasa Kueri Terstruktur) adalah bahasa khusus domain yang dirancang untuk mengelola dan menanyakan data dalam database relasional. Pertama kali dikembangkan di IBM pada tahun 1970an dan distandarisasi pada tahun 1987, SQL tetap menjadi antarmuka utama antara aplikasi dan datanya. Setiap Sistem Manajemen Basis Data Relasional (RDBMS) utama — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — menggunakan SQL sebagai bahasa kuerinya.
 SQL bukanlah bahasa pemrograman tujuan umum. Anda tidak akan menulis aplikasi web dalam SQL. Namun jika aplikasi Anda menyimpan data — dan hampir semua aplikasi menyimpan data — maka SQL adalah bahasa yang Anda gunakan untuk mengambil, mengubah, dan mengelola data tersebut. Ini bisa dibilang merupakan keterampilan teknis yang paling berguna secara universal setelah pemrograman umum.

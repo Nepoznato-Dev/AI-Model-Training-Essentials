@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ڈیٹا انجینئرنگ اور پائپ لائنز
 ڈیٹا انجینئرنگ ایسے نظاموں کی تعمیر کا نظم و ضبط ہے جو ڈیٹا کو منتقل، تبدیل اور پیمانے پر ذخیرہ کرتا ہے۔ قابل اعتماد ڈیٹا پائپ لائنز کے بغیر، مشین لرننگ ماڈلز کو تربیت نہیں دی جا سکتی، ڈیش بورڈز پرانے نمبر دکھائے جاتے ہیں، اور کاروباری فیصلے اندازے پر مبنی ہوتے ہیں۔ یہ فائل کام کرنے والے ڈیٹا انفراسٹرکچر کی تعمیر کے لیے فن تعمیر، ٹولز اور طریقوں کا احاطہ کرتی ہے۔
 ---

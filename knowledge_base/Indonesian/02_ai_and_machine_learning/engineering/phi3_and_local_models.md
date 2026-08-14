@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Phi-3-mini dan Lanskap Model AI Lokal
 Analisis model Phi-3-mini Microsoft — filosofi desain, pilihan arsitektur, dan karakteristik kinerjanya — dan apa yang diajarkan keberhasilannya kepada kita dalam membangun sistem AI yang efektif dan efisien.
 ---

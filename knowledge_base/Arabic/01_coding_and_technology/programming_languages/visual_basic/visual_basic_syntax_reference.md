@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # فيجوال بيسك - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا شاملاً ومنظمًا لصيغة Visual Basic (VB.NET). وهو يكمل مرجع Visual Basic الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، وميزات OOP، وLINQ، وasync/await، ومصطلحات التكامل .NET.
 ---

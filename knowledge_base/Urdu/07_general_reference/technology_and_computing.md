@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ٹیکنالوجی اور کمپیوٹنگ
 کمپیوٹنگ ہر جگہ ہے — آپ کے فون، آپ کی کار، آپ کے ریفریجریٹر، آپ کے طبی آلات، اور جدید معاشرے کو چلانے والے انفراسٹرکچر میں۔ یہ سمجھنے سے فائدہ اٹھانے کے لیے آپ کو پروگرامر بننے کی ضرورت نہیں ہے کہ یہ سب کیسے کام کرتا ہے۔ یہ فائل بنیادی باتوں کا احاطہ کرتی ہے: کمپیوٹر کیا ہے، انٹرنیٹ کیسے کام کرتا ہے، سافٹ ویئر کیسے بنایا جاتا ہے، اور وہ تصورات جو ڈیجیٹل دنیا کو تشکیل دیتے ہیں۔
 > **گہرائی میں جانا چاہتے ہیں؟** یہ فائل ایک وسیع جائزہ ہے۔ کسی بھی موضوع کی تفصیلی کوریج کے لیے،[`01_coding_and_technology/`](../01_coding_and_technology/)میں مختص فائلیں دیکھیں — بشمول [database systems](../01_coding_and_technology/database_systems.md)، [cloud architecture](../01_coding_and_technology/cloud_architecture.md)، [networking](../01_coding_and_technology/networking_basics.md)، اور۔

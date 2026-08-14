@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Saikolojia na Tabia za Kibinadamu
 Saikolojia ni sayansi ya jinsi na kwa nini watu hufikiri, kuhisi, na kutenda jinsi wanavyofanya. Sio usomaji wa akili, na sio akili ya kawaida - ingawa wakati mwingine inathibitisha kile ambacho akili ya kawaida inapendekeza na wakati mwingine inapingana nayo kabisa. Saikolojia hutumia njia sawa ya kisayansi kama kila sayansi nyingine: tazama, dhahania, jaribu, rekebisha. Kinachofanya iwe changamoto ni kwamba somo lake - akili ya mwanadamu - ndio kitu ngumu zaidi tunachojua.
 Faili hii inashughulikia maeneo makuu ya saikolojia: jinsi tunavyofikiri, jinsi tunavyokua, jinsi tunavyoathiriwa na wengine, ni nini kibaya, na nini kinaweza kufanywa kuhusu hilo.

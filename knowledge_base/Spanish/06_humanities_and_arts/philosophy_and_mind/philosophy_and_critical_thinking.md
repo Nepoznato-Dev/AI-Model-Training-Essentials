@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Filosofía y Pensamiento Crítico
 La filosofía es el estudio sistemático de cuestiones fundamentales sobre el conocimiento, la realidad y la existencia. Proporciona el marco para evaluar qué se considera conocimiento, qué vale la pena hacer y cómo distinguir los argumentos bien razonados de los débiles. El pensamiento crítico es la aplicación práctica de este marco: la habilidad de analizar afirmaciones, identificar razonamientos erróneos y tomar decisiones mejor informadas. Este archivo cubre las ideas principales, las herramientas para evaluarlas y los sesgos cognitivos que afectan a todos.
 ---

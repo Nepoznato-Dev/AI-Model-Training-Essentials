@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 商业和经济
 每个销售产品或服务的组织都是一个企业，每个生产和分配商品的社会都是一个经济体。无论您是在经营自由职业、在公司工作、试图了解新闻，还是只是弄清楚金钱如何在世界上流动，本文件中的概念都适用。
 ---

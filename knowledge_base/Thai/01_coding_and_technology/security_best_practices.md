@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Best Practices"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # แนวทางปฏิบัติที่ดีที่สุดด้านความปลอดภัย
 คู่มือที่เป็นประโยชน์สำหรับการรักษาความปลอดภัยแอปพลิเคชัน โครงสร้างพื้นฐาน และข้อมูล ตั้งแต่การพัฒนาไปจนถึงการใช้งานจริง
 ---

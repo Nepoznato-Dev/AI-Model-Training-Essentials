@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ডকার এবং কুবারনেটস চিট শীট
 ডকারের সাথে অ্যাপ্লিকেশানগুলিকে ধারণ করার জন্য একটি ব্যবহারিক রেফারেন্স এবং কুবারনেটসের সাথে সেগুলিকে সাজানোর জন্য। কমান্ড লাইনের সাথে প্রাথমিক পরিচিতি অনুমান করে।
 ---

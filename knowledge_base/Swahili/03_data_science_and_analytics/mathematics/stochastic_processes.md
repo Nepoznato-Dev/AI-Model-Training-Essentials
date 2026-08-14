@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Michakato ya Stochastic
 **mchakato wa kistokasi** ni mkusanyiko wa vigeu vya nasibu vilivyoorodheshwa kulingana na wakati (au nafasi). Ingawa nadharia ya uwezekano inachunguza matukio ya nasibu ya mtu binafsi, michakato ya kistochastiki huchunguza jinsi unasihi unavyobadilika kwa wakati. Wanatoa mfano wa bei za hisa, urefu wa foleni, kuenea kwa magonjwa, uzalishaji wa lugha na mienendo ya mafunzo ya miundo ya kujifunza kwa mashine.
 ---

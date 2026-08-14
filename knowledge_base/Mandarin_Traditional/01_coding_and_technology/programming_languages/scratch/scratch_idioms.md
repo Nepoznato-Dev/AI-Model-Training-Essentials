@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — 慣用模式與最佳實踐
 本指南涵蓋了編寫乾淨、組織良好的 Scratch 專案的慣用模式。
 ---

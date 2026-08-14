@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # শেল এবং পাওয়ারশেল — ইডিওম্যাটিক প্যাটার্নস এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি Bash/Zsh এবং PowerShell স্ক্রিপ্টিংয়ের জন্য বাহাদুরি প্যাটার্ন কভার করে।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamentaux de la PNL
 Le traitement du langage naturel (NLP) est le domaine de l'enseignement aux machines pour comprendre, générer et travailler avec le langage humain. Il alimente les moteurs de recherche, les chatbots, les systèmes de traduction, l'analyse des sentiments et les grands modèles linguistiques (LLM) qui ont transformé l'IA depuis 2020. Ce fichier couvre l'évolution des techniques classiques vers les architectures modernes basées sur Transformer.
 ---

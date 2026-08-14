@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # শেল এবং পাওয়ারশেল — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্ন
 এই ডকুমেন্টটি শেল/ব্যাশ এবং পাওয়ারশেলের সবচেয়ে সাধারণ ভুল, ফাঁদ এবং অ্যান্টি-প্যাটার্ন সংশোধন সহ ক্যাটালগ করে।
 ---

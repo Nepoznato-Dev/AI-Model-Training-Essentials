@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart — Ekosistem ve Takım Kılavuzu
 Bu kılavuz Dart ekosistemindeki temel araçları, çerçeveleri ve altyapıyı kapsar.
 ---

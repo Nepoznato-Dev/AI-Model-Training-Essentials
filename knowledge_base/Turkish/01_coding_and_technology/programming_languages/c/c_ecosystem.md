@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # C — Ekosistem ve Araç İşleme Kılavuzu
 Bu kılavuz, C ekosistemindeki temel araçları, kitaplıkları ve altyapıyı kapsar.
 ---

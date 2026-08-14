@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 우주탐사 로드맵
 ## 개요
 우리는 우주 탐험의 새로운 황금시대를 살고 있습니다. NASA의 아르테미스 프로그램은 인간을 달로 돌려보내고 있습니다. SpaceX는 화성을 위해 설계된 완전히 재사용 가능한 로켓을 제작하고 있습니다. 중국은 야심 찬 달과 화성 계획을 가지고 있습니다. 그리고 점점 더 많은 민간 기업이 위성 인터넷에서 우주 관광에 이르기까지 우주를 상업에 개방하고 있습니다. 달에서 화성 그리고 그 너머까지의 로드맵은 다음과 같습니다.

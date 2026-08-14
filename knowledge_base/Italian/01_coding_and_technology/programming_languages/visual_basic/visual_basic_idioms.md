@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Visual Basic: modelli idiomatici e best practice
 Questa guida illustra i modelli idiomatici per scrivere codice Visual Basic (.NET) pulito.
 ---

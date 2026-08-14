@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # असेंबली - इकोसिस्टम और टूलींग गाइड
 यह मार्गदर्शिका असेंबली पारिस्थितिकी तंत्र में आवश्यक उपकरण, असेंबलर और बुनियादी ढांचे को कवर करती है।
 ---

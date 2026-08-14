@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Yapay Zeka Etiği ve Yönetişim
 Yapay zeka sistemleri tarafsız değildir. Üzerinde eğitim aldıkları verileri, yaratıcılarının değerlerini ve bunları uygulayan kuruluşların teşviklerini yansıtırlar. Etik sadece "bunu yapabilir miyiz?" sorusunu sormakla ilgilidir. ama "yapmalı mıyız?" Yönetişim, yapay zekanın sorumlu bir şekilde geliştirilmesini ve kullanılmasını sağlayan yapıları (yasalar, standartlar, gözetim organları) oluşturmakla ilgilidir. Bu dosya, yapay zekanın temel etik boyutlarını ve bunları ele almak için ortaya çıkan yönetişim çerçevelerini kapsamaktadır.
 ---

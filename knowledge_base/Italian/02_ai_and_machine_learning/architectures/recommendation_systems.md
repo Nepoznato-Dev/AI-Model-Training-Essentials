@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sistemi di raccomandazione
 I sistemi di raccomandazione prevedono ciò che un utente vorrà vedere, acquistare o interagire in seguito. Alimentano i feed di contenuti sui social media, i suggerimenti di prodotti sui siti di e-commerce, le scelte di film sulle piattaforme di streaming e i risultati di ricerca. Nonostante siano invisibili alla maggior parte degli utenti, sono tra i sistemi di intelligenza artificiale di maggior impatto commerciale al mondo: Netflix stima che il suo motore di raccomandazione faccia risparmiare oltre 1 miliardo di dollari all’anno riducendo il tasso di abbandono degli abbonati.
 ---

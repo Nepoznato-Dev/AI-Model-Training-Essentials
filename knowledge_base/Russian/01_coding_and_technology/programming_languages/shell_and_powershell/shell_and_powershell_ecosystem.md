@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell и PowerShell — Руководство по экосистеме и инструментам
 В этом руководстве описаны основные инструменты, платформы и инфраструктура для сценариев оболочки (Bash/Zsh) и PowerShell.
 ---

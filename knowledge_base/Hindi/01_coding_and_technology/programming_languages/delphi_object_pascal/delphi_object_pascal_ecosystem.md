@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # डेल्फ़ी / ऑब्जेक्ट पास्कल - पारिस्थितिकी तंत्र और टूलींग गाइड
 यह गाइड डेल्फ़ी/ऑब्जेक्ट पास्कल पारिस्थितिकी तंत्र में आवश्यक उपकरण, ढांचे और बुनियादी ढांचे को शामिल करता है।
 ---

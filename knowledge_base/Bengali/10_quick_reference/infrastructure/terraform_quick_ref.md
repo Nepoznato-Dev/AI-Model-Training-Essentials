@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # কোড হিসাবে টেরাফর্ম এবং অবকাঠামো
 Terraform হল কোড (IaC) টুল হিসাবে সর্বাধিক ব্যবহৃত পরিকাঠামো — এটি আপনাকে ঘোষণামূলক কনফিগারেশন ফাইলগুলিতে ক্লাউড অবকাঠামো (সার্ভার, ডাটাবেস, নেটওয়ার্ক, অনুমতি) সংজ্ঞায়িত করতে দেয় যা সংস্করণ, পর্যালোচনা, পরীক্ষিত এবং স্বয়ংক্রিয় হতে পারে। একটি ক্লাউড কনসোলের মাধ্যমে ক্লিক করার পরিবর্তে, আপনি কোড লিখুন যা আপনার অবকাঠামোর পছন্দসই অবস্থা বর্ণনা করে এবং Terraform কী পরিবর্তন করতে হবে তা নির্ধারণ করে।
 ---

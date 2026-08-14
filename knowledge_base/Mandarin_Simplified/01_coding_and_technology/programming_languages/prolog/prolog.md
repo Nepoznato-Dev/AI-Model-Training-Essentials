@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 序言
 Prolog（逻辑编程）是一种逻辑编程语言，由 Alain Colmerauer 和 Philippe Roussel 于 1972 年创建。与此列表中的所有其他语言不同，Prolog 不会告诉计算机“如何”解决问题 - 您声明“什么”是真实的（事实和规则），Prolog 的推理引擎通过逻辑演绎找出答案。
 Prolog 是 20 世纪 80 年代专家系统、自然语言处理和人工智能研究的首选语言。它为日本第五代计算机系统项目提供了动力，并在 IBM 的 Watson 中用于自然语言理解。如今，Prolog 被用于约束求解、调度、类型推断、法律推理以及任何自然地表达为逻辑关系的问题。

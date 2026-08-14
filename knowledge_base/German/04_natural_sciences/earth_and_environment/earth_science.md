@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Geowissenschaften
 Die Geowissenschaften erforschen den Planeten, auf dem wir leben – seine Struktur, Prozesse, Geschichte und die Systeme, die ihn bewohnbar machen. Es umfasst Geologie (die feste Erde), Ozeanographie (die Ozeane), Meteorologie (Atmosphäre und Wetter) und Klimatologie (langfristige Klimamuster). Was diese Bereiche eint, ist das Verständnis, dass die Erde ein dynamisches System ist: Ihr Inneres ist ständig in Bewegung, ihre Oberfläche verändert sich und ihre Atmosphäre und Ozeane interagieren auf komplexe Weise.
 ---

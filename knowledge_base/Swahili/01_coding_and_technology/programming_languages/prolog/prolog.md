@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Prolog
 Prolog (Programing in Logic) ni lugha ya programu ya kimantiki iliyoundwa mnamo 1972 na Alain Colmerauer na Philippe Roussel. Tofauti na lugha nyingine zote kwenye orodha hii, Prolog haiambii kompyuta *jinsi* ya kutatua tatizo — unatangaza *kile* ni kweli (ukweli na sheria), na injini ya uelekezaji ya Prolog hutafuta jibu kupitia makato ya kimantiki.
 Prolog ilikuwa lugha ya chaguo kwa mifumo ya wataalamu, usindikaji wa lugha asilia, na utafiti wa AI katika miaka ya 1980. Iliendesha mradi wa Mfumo wa Kompyuta wa Kizazi cha Tano wa Japani na ilitumiwa katika Watson ya IBM kwa uelewa wa lugha asilia. Leo, Prolog inatumika katika kutatua vizuizi, kuratibu, aina ya makisio, hoja za kisheria, na mahali popote matatizo yanaonyeshwa kama mahusiano ya kimantiki.

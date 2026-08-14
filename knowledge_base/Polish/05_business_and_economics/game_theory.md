@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teoria gier i myślenie strategiczne
 Teoria gier to matematyczne badanie interakcji strategicznych — sytuacji, w których wynik zależy nie tylko od tego, co robisz, ale od tego, co robią inni. Ma to zastosowanie wszędzie: konkurencja biznesowa, stosunki międzynarodowe, aukcje, negocjacje, biologia ewolucyjna i codzienne decyzje, takie jak wybór trasy w ruchu ulicznym. Podstawowy wniosek jest taki, że racjonalni aktorzy w sytuacjach strategicznych nie tylko optymalizują swoją własną strategię — oni przewidują, co zrobią inni, a inni robią to samo.
 ---

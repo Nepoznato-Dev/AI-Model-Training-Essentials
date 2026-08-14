@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zukünftiger Transport
 ## Übersicht
 Von A nach B zu kommen, wird bald ganz anders aussehen. Selbstfahrende Autos sind bereits auf öffentlichen Straßen unterwegs. Elektroflugzeuge absolvieren Testflüge. Hyperloop-Konzepte versprechen Reisen mit Zuggeschwindigkeit in Vakuumröhren. Und fliegende Taxis – einstmals Stoff für Zeichentrickfilme – stehen kurz vor der Zertifizierung. Hier ist der Stand der Technik, die unsere Fortbewegungsweise verändert.

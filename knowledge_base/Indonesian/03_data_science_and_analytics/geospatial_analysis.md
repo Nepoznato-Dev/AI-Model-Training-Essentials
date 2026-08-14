@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Analisis Geospasial
 Analisis geospasial adalah proses pemeriksaan data yang memiliki komponen geografis — koordinat, alamat, batas, atau data apa pun yang terkait dengan suatu lokasi di Bumi. Ini menjawab pertanyaan seperti “di mana pelanggan kami?”, “apa rute optimal?”, dan “bagaimana perubahan penggunaan lahan dari waktu ke waktu?”. Setiap kumpulan data memiliki dimensi spasial, dan memahaminya akan membuka wawasan yang terlewatkan oleh analisis statistik murni.
 ---

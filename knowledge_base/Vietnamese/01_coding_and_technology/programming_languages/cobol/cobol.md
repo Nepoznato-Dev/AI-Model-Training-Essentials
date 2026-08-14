@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # COBOL
 COBOL (Ngôn ngữ định hướng kinh doanh chung) là một trong những ngôn ngữ lập trình lâu đời nhất vẫn được sử dụng, được phát triển lần đầu tiên vào năm 1959. Nó được thiết kế để xử lý dữ liệu kinh doanh - hệ thống tài chính, bảng lương, ngân hàng, bảo hiểm và các ứng dụng chính phủ. Cú pháp giống tiếng Anh của COBOL nhằm mục đích giúp các nhà quản lý doanh nghiệp có thể đọc được chứ không chỉ các lập trình viên.
 Bất chấp tuổi đời của nó, COBOL xử lý khoảng 30% tổng số giao dịch kinh doanh trên toàn cầu. Các ngân hàng lớn, cơ quan chính phủ (bao gồm cả Cơ quan An sinh Xã hội Hoa Kỳ) và các công ty bảo hiểm vẫn dựa vào hệ thống máy tính lớn COBOL. Lỗi Y2K năm 1999 đã đưa COBOL trở lại với nhận thức của công chúng và ngôn ngữ này tiếp tục vận hành cơ sở hạ tầng quan trọng trên toàn thế giới.

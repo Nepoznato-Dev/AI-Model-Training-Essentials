@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Hợp ngữ — Những lỗi thường gặp và phản mẫu
 Tài liệu này liệt kê các lỗi, bẫy và mẫu chống phổ biến nhất trong Hội x86-64 với các bản sửa lỗi.
 ---

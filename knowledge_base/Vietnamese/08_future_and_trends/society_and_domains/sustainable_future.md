@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Tương lai bền vững
 ## Tổng quan
 Câu hỏi không còn là *liệu* thế giới có cần chuyển đổi sang nền kinh tế bền vững hay không mà là *nhanh như thế nào* và *ai dẫn đầu*. Năng lượng tái tạo hiện là nguồn năng lượng rẻ nhất ở hầu hết các thị trường. Các nguyên tắc kinh tế tuần hoàn đang chuyển từ khái niệm thích hợp sang chiến lược doanh nghiệp. Các thành phố đang xem xét lại mọi thứ từ giao thông đến rác thải. Và cuộc đua đạt tới số 0 ròng đang định hình lại các ngành công nghiệp từ năng lượng đến tài chính. Đây là hình ảnh của tương lai bền vững qua bốn khía cạnh chính.

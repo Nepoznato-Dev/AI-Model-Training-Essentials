@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # OCaml: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos para escribir código OCaml limpio e idiomático.
 ---

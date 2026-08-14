@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metodologie zarządzania i projektów
 Zarządzanie ludźmi i projektami należy do najbardziej wymagających obowiązków w każdej organizacji. Umiejętności techniczne umożliwiają wejście, ale zdolność kierowania zespołami, podejmowania decyzji, skutecznej komunikacji i dostarczania wyników decyduje o osiągnięciu celów. Ten plik obejmuje ramy, metodologie i praktyczne umiejętności stosowane przez skutecznych menedżerów i liderów projektów.
 ---

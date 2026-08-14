@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript — 생태계 및 도구 가이드
 이 가이드에서는 TypeScript 생태계의 필수 도구, 프레임워크 및 인프라를 다룹니다. TypeScript는 JavaScript와 생태계의 대부분을 공유하지만 자체적으로 특화된 도구를 가지고 있습니다.
 ---

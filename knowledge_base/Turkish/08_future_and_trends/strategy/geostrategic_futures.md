@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Jeostratejik Vadeli İşlemler
 ## Genel Bakış
 Soğuk Savaş sonrası Amerikan egemenliği dönemi yerini daha karmaşık bir şeye bırakıyor: Gücün yaygın olduğu, teknoloji ve kaynaklar üzerindeki rekabetin yoğunlaştığı ve iklim değişikliği ve salgın hastalıklar gibi zorlukların sınırlara saygı göstermediği çok kutuplu bir dünya. 1945'ten sonra inşa edilen kurallara dayalı uluslararası düzen her yönden sınanıyor. İşte neyin değiştiği, kimin yükseldiği ve sürtüşme noktalarının nerede olduğu.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Folha de dicas de script Bash e Shell
 Uma referência prática para escrever scripts shell em Bash — o shell padrão na maioria dos sistemas Linux e macOS. Abrange sintaxe, padrões comuns, processamento de texto e linhas úteis.
 ---

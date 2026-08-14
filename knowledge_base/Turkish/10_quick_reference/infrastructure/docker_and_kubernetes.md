@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Docker ve Kubernetes Hile Sayfası
 Uygulamaları Docker ile kapsayıcı hale getirmek ve bunları Kubernetes ile düzenlemek için pratik bir referans. Komut satırına temel aşinalığı varsayar.
 ---

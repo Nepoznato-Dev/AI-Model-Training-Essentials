@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Error Handling"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # So sánh đa ngôn ngữ - Xử lý lỗi
 ## Tổng quan về mô hình xử lý lỗi
 | Người mẫu | Ngôn ngữ | Cơ chế |

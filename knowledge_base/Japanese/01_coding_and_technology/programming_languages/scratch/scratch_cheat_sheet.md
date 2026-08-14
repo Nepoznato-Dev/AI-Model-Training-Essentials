@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # スクラッチ — チートシート
 ## イベント
 ```

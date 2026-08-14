@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for Ruby (3.x). It complements the main Ruby reference by focusing on exhaustive syntax patterns, blocks and closures, metaprogramming, and Ruby idioms.

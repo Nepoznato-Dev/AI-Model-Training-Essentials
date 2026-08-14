@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prolog — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Prolog — よくある間違いとアンチパターン
 このドキュメントは、Prolog で最も一般的な間違い、罠、およびアンチパターンを修正とともにカタログ化します。
 ---

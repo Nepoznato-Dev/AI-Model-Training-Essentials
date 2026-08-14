@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # सी# - संस्करण इतिहास और विकास
 ## समयरेखा
 | संस्करण | वर्ष | .नेट | मुख्य विषय |

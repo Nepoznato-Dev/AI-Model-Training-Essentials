@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Processamento de sinal
 O processamento de sinais é a ciência de analisar, modificar e sintetizar sinais – representações de quantidades físicas que variam ao longo do tempo, espaço ou frequência. Áudio, imagens, vídeo, dados de sensores, ondas cerebrais, preços de ações – todos são sinais. As ferramentas matemáticas de processamento de sinais (transformadas de Fourier, filtros, teoria de amostragem) são fundamentais para aprendizado de máquina, comunicações, imagens médicas e praticamente todos os campos que trabalham com dados.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML Engineering และ MLOps
 การสร้างโมเดลแมชชีนเลิร์นนิงมีชัยไปกว่าครึ่งเท่านั้น การนำมันเข้าสู่การผลิต ทำให้มันทำงานได้อย่างน่าเชื่อถือ การตรวจสอบการดริฟท์ และวนซ้ำ - นั่นคือที่มาของวิศวกรรม ML และ MLOps ไฟล์นี้ครอบคลุมวงจรการใช้งานทั้งหมดตั้งแต่การทดลองไปจนถึงระบบที่ใช้งานจริง
 ---

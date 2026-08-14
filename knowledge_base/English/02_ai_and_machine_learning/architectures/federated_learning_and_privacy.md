@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Federated Learning and Privacy
 
 Federated learning is a technique for training machine learning models across multiple devices or organisations without sharing the raw data. Instead of sending data to a central server, each device trains a local model and only shares the model updates (gradients or weights). The central server aggregates these updates to produce a global model. It was designed by Google for training keyboard language models on Android phones — and it has since become a key technique for privacy-preserving AI.

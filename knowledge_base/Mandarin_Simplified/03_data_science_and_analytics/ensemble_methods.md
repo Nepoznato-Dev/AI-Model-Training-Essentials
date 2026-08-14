@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 集成方法
 集成方法结合了多个机器学习模型，可以产生比任何单个模型单独实现的更好的预测。直觉很简单：如果您有多个模型，每个模型都有些准确，但会产生不同的错误，那么将它们的预测结合起来将消除单个错误并产生更稳健的结果。集成是最具竞争力的机器学习解决方案的背后，并且仍然是生产系统中最可靠的技术之一。
 ---

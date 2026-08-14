@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Uczenie się przez wzmacnianie
 Uczenie się przez wzmacnianie (RL) to sposób, w jaki maszyny uczą się podejmować sekwencje decyzji metodą prób i błędów. W przeciwieństwie do uczenia się nadzorowanego, gdzie dla każdego przykładu jest podana poprawna odpowiedź, RL daje agentowi jedynie sygnał nagrody, a agent musi dowiedzieć się, które działania prowadzą z biegiem czasu do najlepszych wyników. Jest to podejście leżące u podstaw AlphaGo, sterowania robotycznego, sztucznej inteligencji w grach i – co najważniejsze – RLHF, techniki stosowanej do dostosowywania nowoczesnych modeli wielkojęzykowych do ludzkich preferencji.
 ---

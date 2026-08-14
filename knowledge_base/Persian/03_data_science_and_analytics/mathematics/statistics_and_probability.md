@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -41,8 +40,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # آمار و احتمال
 احتمال و آمار پایه های ریاضی علم داده، یادگیری ماشین و تحقیقات علمی هستند. احتمال به شما می گوید که رویدادها چقدر محتمل هستند. آمار به شما می گوید که چگونه از داده ها نتیجه گیری کنید. آنها با هم، عدم قطعیت را به دانش کمی و قابل مدیریت تبدیل می کنند.
 ---

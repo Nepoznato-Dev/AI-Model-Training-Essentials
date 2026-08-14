@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — Распространенные ошибки и антипаттерны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в C. Каждая запись показывает неправильный подход, объясняет, почему он не работает, и предлагает правильное решение. C дает вам полный контроль, что означает полную ответственность за безопасность памяти, проверку границ и неопределенное поведение.
 ---

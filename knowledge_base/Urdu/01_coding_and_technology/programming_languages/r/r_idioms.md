@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ محاوراتی نمونوں اور صاف، محاوراتی R کوڈ لکھنے کے بہترین طریقوں کا احاطہ کرتا ہے۔
 ---

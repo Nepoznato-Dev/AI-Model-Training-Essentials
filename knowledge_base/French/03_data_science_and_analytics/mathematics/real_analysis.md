@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Analyse réelle
 La véritable analyse est le fondement rigoureux du calcul. Alors que le calcul d'introduction vous apprend à calculer des dérivées et des intégrales, l'analyse réelle demande *pourquoi* ces techniques fonctionnent - et quand elles échouent. Il fournit les définitions précises des limites, de la continuité, de la convergence et de l'intégration qui sous-tendent la théorie des probabilités, l'analyse fonctionnelle, l'optimisation et les garanties théoriques derrière les algorithmes d'apprentissage automatique.
 ---

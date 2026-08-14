@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kegagalan Proyek Pembelajaran Mesin
 Proyek pembelajaran mesin mengalami kegagalan pada tingkat yang mengkhawatirkan — perkiraan industri menunjukkan 60-85% proyek ML tidak pernah mencapai produksi. Kegagalan biasanya tidak terjadi pada algoritme; mereka sedang dalam proses, data, harapan, dan konteks organisasi. Memahami mengapa proyek ML gagal sangat penting bagi siapa pun yang membangun sistem ML, karena mode kegagalan dapat diprediksi dan sebagian besar dapat dihindari.
 ---

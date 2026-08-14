@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell — Справочник по синтаксису
 Этот документ предоставляет исчерпывающий структурированный справочник по синтаксису Haskell (GHC 9.x). Он дополняет основной справочник по Haskell, уделяя особое внимание исчерпывающим синтаксическим шаблонам, системе типов, монадам, отложенным вычислениям и идиомам функционального программирования.
 ---

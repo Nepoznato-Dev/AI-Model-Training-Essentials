@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pilosopiya at Kritikal na Pag-iisip
 Ang pilosopiya ay ang sistematikong pag-aaral ng mga pangunahing katanungan tungkol sa kaalaman, katotohanan, at pag-iral. Nagbibigay ito ng balangkas para sa pagsusuri kung ano ang itinuturing na kaalaman, kung ano ang nararapat na gawin, at kung paano makilala ang mga argumento na may mahusay na katwiran mula sa mga mahina. Ang kritikal na pag-iisip ay ang praktikal na aplikasyon ng balangkas na ito: ang kasanayan sa pagsusuri ng mga pag-aangkin, pagtukoy ng maling pangangatwiran, at paggawa ng mga desisyon na may mas mahusay na kaalaman. Sinasaklaw ng file na ito ang mga pangunahing ideya, ang mga tool para sa pagsusuri ng mga ito, at ang mga cognitive bias na nakakaapekto sa lahat.
 ---

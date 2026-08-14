@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # R — Cheat Sheet
 ## Mga Pangunahing Kaalaman
 ```r

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا شاملاً ومنظمًا لصيغة Modern C# (C# 10/11/12 على .NET 7/8). وهو يكمل مرجع C# الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، وLINQ، والمزامنة/الانتظار، ومطابقة الأنماط، والميزات الحديثة.
 ---

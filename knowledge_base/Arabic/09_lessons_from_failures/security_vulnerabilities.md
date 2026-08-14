@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #الثغرات الأمنية
 تعمل هذه الوثيقة على دمج الثغرات الأمنية الشائعة في تطوير البرمجيات، بما في ذلك هجمات الحقن وممارسات التعليمات البرمجية غير الآمنة والأخطاء الأمنية.
 ---

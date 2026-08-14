@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 医药与保健
 医学是诊断、治疗和预防疾病的科学和实践。这是人类最古老的事业之一——希波克拉底誓言可以追溯到古希腊——也是变化最快的事业之一。仅在上个世纪，我们就从没有抗生素发展到拥有可以重写患者 DNA 的基因疗法。
 该文件涵盖了医学的运作方式：主要专业、疾病如何诊断和治疗、医疗保健系统如何组织，以及当人类生命受到威胁时出现的道德问题。

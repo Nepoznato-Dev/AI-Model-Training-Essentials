@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kotlin – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für Kotlin (2.0+). Es ergänzt die Hauptreferenz zu Kotlin, indem es sich auf umfassende Syntaxmuster, Nullsicherheit, Coroutinen und Kotlin-Redewendungen konzentriert.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi / Object Pascal – Idiomatische Muster und Best Practices
 Dieser Leitfaden behandelt idiomatische Muster zum Schreiben von sauberem Delphi- und Object Pascal-Code.
 ---

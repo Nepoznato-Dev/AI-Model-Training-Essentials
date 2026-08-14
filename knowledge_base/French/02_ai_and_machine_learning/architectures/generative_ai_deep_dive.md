@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Analyse approfondie de l'IA générative
 L'IA générative fait référence à des modèles qui créent du nouveau contenu (images, texte, audio, vidéo, code) plutôt que de simplement classer ou prédire les données existantes. Alors que les grands modèles de langage retiennent l’essentiel de l’attention, le paysage de l’IA générative est bien plus vaste. Ce fichier couvre les architectures, les techniques et les compromis derrière les systèmes génératifs modernes, des modèles de diffusion aux auto-encodeurs variationnels en passant par les modèles de flux.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell & PowerShell — Pola Idiomatik & Praktik Terbaik
 Panduan ini mencakup pola idiomatik untuk skrip Bash/Zsh dan PowerShell.
 ---

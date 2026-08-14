@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Blockchain i systemy rozproszone
 Blockchain to specyficzny rodzaj systemu rozproszonego — zdecentralizowana księga przeznaczona tylko do dodawania, w której rekordy (bloki) są połączone za pomocą skrótów kryptograficznych. Systemy rozproszone to szersza dziedzina umożliwiająca współpracę wielu komputerów w jeden. Obie koncepcje są ważne dla zrozumienia nowoczesnej infrastruktury, od kryptowaluty, przez rozproszone bazy danych, po algorytmy konsensusu, które napędzają usługi globalne.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Biểu diễn nghệ thuật
 Nghệ thuật biểu diễn - sân khấu, điện ảnh, khiêu vũ và biểu diễn âm nhạc - là nơi nghệ thuật gặp gỡ sự hiện diện sống động của khán giả. Không giống như một bức tranh trên tường hay một cuốn sách trên kệ, buổi biểu diễn diễn ra theo thời gian thực, tạo ra trải nghiệm chung giữa nghệ sĩ và khán giả, vốn là trung tâm của văn hóa nhân loại trong hàng nghìn năm.
 ---

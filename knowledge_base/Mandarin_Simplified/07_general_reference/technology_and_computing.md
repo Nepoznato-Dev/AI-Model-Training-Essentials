@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 技术与计算
 计算无处不在——在你的手机、你的汽车、你的冰箱、你的医疗设备以及运行现代社会的基础设施中。您无需成为一名程序员即可从了解其工作原理中受益。该文件涵盖了基础知识：什么是计算机、互联网如何工作、软件如何构建以及塑造数字世界的概念。
 > **想要深入了解吗？** 该文件是一个广泛的概述。有关任何主题的详细介绍，请参阅[`01_coding_and_technology/`](../01_coding_and_technology/)中的专用文件 — 包括、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)和。

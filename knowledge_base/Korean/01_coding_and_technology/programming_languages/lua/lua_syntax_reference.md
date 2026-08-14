@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua — 구문 참조
 이 문서는 Lua(5.4)에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 구문 패턴, 테이블 및 메타테이블, 코루틴, Lua의 독특한 디자인 철학에 초점을 맞춰 주요 Lua 참조를 보완합니다.
 ---

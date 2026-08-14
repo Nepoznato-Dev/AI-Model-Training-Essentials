@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mobile Entwicklung
 Unter mobiler Entwicklung versteht man die Entwicklung von Anwendungen für Smartphones und Tablets – hauptsächlich für iOS (Apple) und Android (Google). Es umfasst alles vom UI-Design für kleine Bildschirme bis hin zur Verwaltung der Akkulaufzeit, dem Umgang mit Netzwerkinstabilität und der Verteilung von Apps über Stores. Der Bereich ist deutlich ausgereifter geworden, und plattformübergreifende Frameworks konkurrieren mittlerweile in den meisten Anwendungsfällen mit der nativen Entwicklung.
 ---

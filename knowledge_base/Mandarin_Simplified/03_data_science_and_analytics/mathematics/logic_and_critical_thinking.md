@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 逻辑和批判性思维
 逻辑是对有效推理的研究——如何构建合理的论证并识别有缺陷的论证。批判性思维是质疑假设、评估证据和仔细推理的纪律习惯。这些技能不仅在数学和计算机科学中至关重要，而且在日常决策、科学研究和驾驭信息丰富的世界中也至关重要。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tests statistiques et expérimentation
 Les statistiques sont la grammaire de la science. Il vous donne les outils nécessaires pour distinguer les modèles réels du bruit aléatoire, pour mesurer si un changement a réellement amélioré les choses et pour prendre des décisions dans l'incertitude. Ce fichier couvre les concepts fondamentaux du test d'hypothèses, de la conception expérimentale et des pièges courants qui font trébucher les gens.
 ---

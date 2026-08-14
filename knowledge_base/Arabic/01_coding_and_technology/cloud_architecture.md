@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #العمارة السحابية
 لقد غيرت الحوسبة السحابية بشكل أساسي كيفية إنشاء المؤسسات للبرامج ونشرها وتوسيع نطاقها. بدلاً من شراء وصيانة الخوادم الفعلية، يمكنك توفير موارد الحوسبة عند الطلب، والدفع مقابل ما تستخدمه، والتوسع عالميًا في دقائق. يغطي هذا الملف المفاهيم الأساسية وأنماط الهندسة المعمارية والخدمات وأفضل الممارسات التي تحتاج إلى معرفتها.
 ---

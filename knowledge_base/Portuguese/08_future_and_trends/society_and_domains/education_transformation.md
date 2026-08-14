@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Transformação da Educação
 ## Visão geral
 O modelo tradicional de educação – ficar numa sala de aula durante doze anos, talvez ir para a universidade e depois trabalhar – está a desmoronar-se. Os tutores de IA agora podem fornecer instruções personalizadas em grande escala. O ritmo da mudança tecnológica significa que a aprendizagem ao longo da vida já não é opcional. E os empregadores se preocupam cada vez mais com o que você pode *fazer*, e não apenas com as credenciais que possui. Veja como a educação está sendo reinventada.

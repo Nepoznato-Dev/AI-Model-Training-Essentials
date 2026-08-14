@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 時系列と予測
 時系列データとは、株価、気温測定値、Web サイトのトラフィック、売上高、心拍数モニター、エネルギー消費など、時間の経過とともに収集されるあらゆるデータです。予測とは、過去のパターンに基づいて将来の値を予測することを意味します。これは、データ サイエンスの実用的に最も価値のあるアプリケーションの 1 つであり、また最も困難なものの 1 つです。なぜなら、将来はまったく不確実であり、現実世界の時系列にはノイズ、季節性、構造上の欠陥がたくさんあるからです。
 ---

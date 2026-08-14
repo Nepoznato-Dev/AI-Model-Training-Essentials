@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Assembly Language — Common Mistakes & Anti-Patterns
 
 This document catalogs the most common mistakes, traps, and anti-patterns in x86-64 Assembly with corrections.

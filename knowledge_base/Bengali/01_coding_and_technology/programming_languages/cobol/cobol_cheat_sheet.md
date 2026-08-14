@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "COBOL — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # COBOL — চিট শীট
 ## প্রোগ্রামের কাঠামো
 ```cobol

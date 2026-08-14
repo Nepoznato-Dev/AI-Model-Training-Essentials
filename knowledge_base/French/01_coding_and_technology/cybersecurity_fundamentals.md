@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamentaux de la cybersécurité
 La sécurité est une discipline qui doit être intégrée dès le départ à chaque couche d’un système, plutôt que d’être ajoutée après coup. Qu'il s'agisse de créer une application Web, de gérer une infrastructure ou de commercialiser une API, il est essentiel de comprendre le paysage des menaces et les principes fondamentaux de la défense.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # প্রযুক্তি শব্দকোষ
 এআই মডেল, হার্ডওয়্যার, বেঞ্চমার্ক এবং মূল ধারণাগুলিকে কভার করে একটি রেফারেন্স শব্দকোষ৷
 আধুনিক এআই এবং কম্পিউটিং ল্যান্ডস্কেপে।

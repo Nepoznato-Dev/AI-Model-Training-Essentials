@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # سكالا - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لبناء الجملة لـ Scala (3.x مع ملاحظات حول اختلافات 2.x). وهو يكمل مرجع Scala الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة ونظام الكتابة وبنيات البرمجة الوظيفية ومصطلحات Scala.
 ---

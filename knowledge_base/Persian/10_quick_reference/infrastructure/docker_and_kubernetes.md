@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # برگه تقلب Docker و Kubernetes
 یک مرجع کاربردی برای کانتینری کردن برنامه ها با Docker و هماهنگ کردن آنها با Kubernetes. آشنایی اولیه با خط فرمان را فرض می کند.
 ---

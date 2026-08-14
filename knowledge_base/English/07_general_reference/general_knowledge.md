@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # General Knowledge
 
 This file is a collection of facts and concepts that come up regularly in conversation, news, education, and daily life. Think of it as background knowledge — the kind of thing that helps you understand what you are reading, hearing, or experiencing.

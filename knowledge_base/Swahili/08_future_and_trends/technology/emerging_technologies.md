@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Teknolojia Zinazochipukia
 ## Muhtasari
 Teknolojia fulani huunda aina mpya kabisa za uwezo badala ya kuboresha zilizopo. Kompyuta ya Quantum inalenga kutatua matatizo ambayo yangechukua mashine za classical milenia. Nishati ya Fusion inatoa uwezekano wa nguvu safi isiyo na kikomo. Miingiliano ya kompyuta ya ubongo huunganisha akili na mashine. Biolojia ya usanifu huwezesha kuandikwa upya kwa msimbo wa kibayolojia. Sehemu zifuatazo zinaelezea ambapo kila moja ya mipaka hii inasimama leo na ambapo mitindo ya sasa inaonyesha inaelekea.

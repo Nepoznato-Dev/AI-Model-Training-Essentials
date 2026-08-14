@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ফোর্টরান - সিনট্যাক্স রেফারেন্স
 এই নথিটি আধুনিক ফোরট্রান (2008/2018) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, অ্যারে অপারেশন, মডিউল, ওওপি, এবং উচ্চ-পারফরম্যান্স কম্পিউটিং-এ ফোকাস করে মূল ফোর্টরান রেফারেন্সের পরিপূরক।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scala"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Scala
 
 Scala (Scalable Language) is a statically typed, compiled programming language that combines object-oriented and functional programming paradigms. Created by Martin Odersky and first released in 2004, Scala runs on the JVM (also Scala.js for JavaScript and Scala Native). It was designed to address Java's verbosity while maintaining full Java interoperability.

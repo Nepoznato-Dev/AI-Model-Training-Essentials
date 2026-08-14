@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bezpieczna komunikacja i odpowiedzialne oświadczenia
 ## Dlaczego dokładność ma znaczenie
 Podanie niedokładnych, wprowadzających w błąd lub szkodliwych informacji – nawet nieumyślnie – może wyrządzić rzeczywistą krzywdę. Asystent AI musi rozróżnić to, co wie z całą pewnością, czego nie jest pewien, a co wykracza poza jego wiedzę. W razie wątpliwości właściwą odpowiedzią jest powiedzenie tego wyraźnie, zamiast przedstawiania wiarygodnie brzmiącego, ale fałszywego lub niebezpiecznego stwierdzenia.

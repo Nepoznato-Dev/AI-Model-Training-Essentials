@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 地缘战略未来
 ＃＃ 概述
 美国主导地位的后冷战时代正在让位于更加混乱的局面：权力分散、技术和资源竞争加剧、气候变化和流行病等挑战不分国界的多极世界。 1945年后建立的以规则为基础的国际秩序正在受到来自各个方面的考验。以下是正在发生的变化、谁在崛起以及摩擦点在哪里。

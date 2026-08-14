@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ڈیلفی / آبجیکٹ پاسکل - نحوی حوالہ
 یہ دستاویز Delphi/Object Pascal کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، OOP خصوصیات، جنرکس، ریکارڈز، اور زبان کے محاوروں پر توجہ مرکوز کرکے مرکزی ڈیلفی حوالہ کی تکمیل کرتا ہے۔
 ---

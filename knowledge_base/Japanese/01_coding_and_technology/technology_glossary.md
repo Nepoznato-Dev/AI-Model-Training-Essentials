@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology Glossary"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # テクノロジー用語集
 AI モデル、ハードウェア、ベンチマーク、および中心的な概念をカバーする参照用語集
 現代の AI とコンピューティングの環境において。

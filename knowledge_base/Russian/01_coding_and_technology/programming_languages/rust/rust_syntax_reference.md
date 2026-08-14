@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Rust — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Rust — Справочник по синтаксису
 Этот документ представляет собой всеобъемлющий структурированный справочник по синтаксису Rust. Он дополняет основной справочник по Rust, уделяя особое внимание исчерпывающим синтаксическим шаблонам, таблицам операторов и внутренней механике системы владения, особенностям и параллелизму.
 ---

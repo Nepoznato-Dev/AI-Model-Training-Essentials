@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Littérature
 La littérature est le témoignage le plus durable de la pensée, de l’émotion et de l’expérience de l’humanité. Des épopées orales des civilisations anciennes aux romans de l’ère numérique d’aujourd’hui, chaque œuvre est en conversation avec ce qui l’a précédé. Comprendre les genres, les mouvements et les techniques littéraires vous offre une perspective plus riche pour la lecture et pour comprendre les cultures qui ont produit ces œuvres.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bash and Shell Scripting Cheat Sheet
 
 A practical reference for writing shell scripts in Bash — the default shell on most Linux and macOS systems. Covers syntax, common patterns, text processing, and useful one-liners.

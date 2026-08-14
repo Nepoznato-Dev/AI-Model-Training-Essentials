@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Химия
 Если физика — это правила игры, то химия — это то, что происходит при взаимодействии частей. Химия изучает, как атомы связываются, распадаются и перестраиваются, то есть как ведут себя все материалы. Он устраняет разрыв между фундаментальной физикой и сложностью биологии, геологии и техники.
 ---

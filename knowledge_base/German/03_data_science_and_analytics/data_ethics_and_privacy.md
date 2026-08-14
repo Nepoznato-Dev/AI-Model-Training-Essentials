@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Datenethik und Datenschutz
 Unter Datenethik versteht man die Untersuchung, wie sich die Erhebung, Analyse und Bereitstellung von Daten auf die Rechte, die Autonomie und das Wohlbefinden von Menschen auswirkt. Beim Datenschutz geht es insbesondere darum, wer die Kontrolle über personenbezogene Daten hat und wie diese weitergegeben werden. Diese Themen haben sich von akademischen Debatten zu Schlagzeilen verlagert – die Durchsetzung der DSGVO, Datenschutzverletzungen, die Milliarden von Nutzern betreffen, und das wachsende öffentliche Bewusstsein dafür, dass die Datenpraktiken von Technologieunternehmen echte Konsequenzen für Demokratie, Gleichheit und individuelle Freiheit haben.
 ---

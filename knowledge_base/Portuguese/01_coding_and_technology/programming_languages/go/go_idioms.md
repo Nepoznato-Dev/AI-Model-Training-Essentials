@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Go — Padrões idiomáticos e práticas recomendadas
 Este guia aborda padrões idiomáticos e práticas recomendadas para escrever código Go limpo e idiomático.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Falsafa na Fikra Muhimu
 Falsafa ni uchunguzi wa kimfumo wa maswali ya kimsingi juu ya maarifa, ukweli, na uwepo. Inatoa mfumo wa kutathmini kile ambacho ni muhimu kama ujuzi, kile kinachofaa kufanya, na jinsi ya kutofautisha mabishano yenye sababu nzuri na dhaifu. Fikra muhimu ni matumizi ya kiutendaji ya mfumo huu: ustadi wa kuchanganua madai, kubainisha mawazo yenye kasoro, na kufanya maamuzi yenye ufahamu bora. Faili hii inashughulikia mawazo makuu, zana za kuyatathmini, na upendeleo wa utambuzi unaoathiri kila mtu.
 ---

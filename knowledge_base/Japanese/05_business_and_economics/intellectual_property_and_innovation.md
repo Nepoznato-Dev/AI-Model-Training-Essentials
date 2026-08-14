@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 知的財産とイノベーション
 知的財産 (IP) とは、法律によって不正使用から保護されている、発明、芸術作品、ブランド名、デザイン、企業秘密などの創作物を指します。イノベーションとは、アイデアを価値に変えるプロセスです。知的財産法は、クリエイターに報酬を与える（一時的な独占を与えることで）と社会に利益をもたらす（知識が最終的に自由に利用できるようにすることで）という 2 つの相反する利益のバランスを取るために存在します。 IP を理解することは、製品を構築したり、コンテンツを作成したり、ビジネスを運営したり、研究に携わったりする人にとって不可欠です。
 ---

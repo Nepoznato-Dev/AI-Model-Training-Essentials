@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 太空探索路線圖
 ＃＃ 概述
 我們正在經歷太空探索的新黃金時代。美國太空總署的阿爾忒彌斯計畫正在將人類送回月球。 SpaceX 正在建造一款專為火星設計的完全可重複使用的火箭。中國有自己雄心勃勃的月球和火星計畫。越來越多的私人公司正在向商業開放太空——從衛星網路到太空旅遊。這是從月球到火星及更遠地區的路線圖。

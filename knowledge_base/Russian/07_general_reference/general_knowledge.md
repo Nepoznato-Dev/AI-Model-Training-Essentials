@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Общие знания
 Этот файл представляет собой коллекцию фактов и концепций, которые регулярно возникают в разговорах, новостях, образовании и повседневной жизни. Думайте об этом как о базовых знаниях — о том, что помогает вам понять, что вы читаете, слышите или испытываете.
 ---

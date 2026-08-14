@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Bahasa Majelis — Referensi Sintaks
 Dokumen ini memberikan referensi sintaksis yang komprehensif dan terstruktur untuk Majelis x86-64 (sintaks NASM). Ini melengkapi referensi Majelis utama dengan berfokus pada kategori instruksi lengkap, mode pengalamatan, konvensi bingkai tumpukan, dan pola pemrograman sistem.
 ---

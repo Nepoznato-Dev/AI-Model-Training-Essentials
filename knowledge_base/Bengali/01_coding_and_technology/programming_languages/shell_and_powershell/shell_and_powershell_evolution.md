@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # শেল এবং পাওয়ারশেল — সংস্করণ ইতিহাস এবং বিবর্তন
 ## ইউনিক্স শেল টাইমলাইন
 | সংস্করণ | বছর | মূল থিম |

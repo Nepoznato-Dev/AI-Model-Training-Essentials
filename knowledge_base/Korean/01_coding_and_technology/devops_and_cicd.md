@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # DevOps 및 CI/CD
 DevOps는 팀이 소프트웨어를 더 빠르고 안정적으로 제공할 수 있도록 지원하는 문화 철학, 관행 및 도구의 조합입니다. 이는 개발자(변경 사항을 제공하려는)와 운영(안정성을 원하는) 사이의 벽을 허무는 것입니다. CI/CD(지속적 통합 및 지속적 전달)는 이를 가능하게 하는 자동화 백본입니다.
 ---

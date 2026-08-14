@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Technology and Computing
 
 Computing is everywhere — in your phone, your car, your refrigerator, your medical devices, and the infrastructure that runs modern society. You do not need to be a programmer to benefit from understanding how it all works. This file covers the fundamentals: what a computer is, how the internet works, how software is built, and the concepts that shape the digital world.

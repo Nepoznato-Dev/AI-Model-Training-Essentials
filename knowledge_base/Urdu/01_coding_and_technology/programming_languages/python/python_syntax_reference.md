@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ازگر - نحوی حوالہ
 یہ دستاویز Python کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، آپریٹر ٹیبلز، اور اندرونی میکانکس پر توجہ مرکوز کرکے Python کے مرکزی حوالہ کی تکمیل کرتا ہے۔
 ---

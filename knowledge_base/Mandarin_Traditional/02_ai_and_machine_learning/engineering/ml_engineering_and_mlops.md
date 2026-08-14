@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML 工程和 MLOps
 建構機器學習模型只是成功的一半。將其投入生產、保持其可靠運作、監控漂移並對其進行迭代——這就是 ML 工程和 MLOps 的用武之地。該文件涵蓋了從實驗到生產系統的整個生命週期。
 ---

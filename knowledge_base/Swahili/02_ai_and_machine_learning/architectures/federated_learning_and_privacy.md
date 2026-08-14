@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kujifunza kwa Shirikisho na Faragha
 Kujifunza kwa shirikisho ni mbinu ya kufunza miundo ya mashine ya kujifunza kwenye vifaa au mashirika mengi bila kushiriki data ghafi. Badala ya kutuma data kwa seva kuu, kila kifaa hufunza muundo wa ndani na hushiriki tu masasisho ya modeli (gradient au uzito). Seva kuu hujumlisha masasisho haya ili kutoa muundo wa kimataifa. Iliundwa na Google kwa ajili ya kufunza miundo ya lugha ya kibodi kwenye simu za Android - na tangu wakati huo imekuwa mbinu kuu ya AI ya kuhifadhi faragha.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Y học và chăm sóc sức khỏe
 Y học là khoa học và thực hành chẩn đoán, điều trị và ngăn ngừa bệnh tật. Đó là một trong những nỗ lực lâu đời nhất của con người - Lời thề Hippocrates có từ thời Hy Lạp cổ đại - và là một trong những nỗ lực thay đổi nhanh chóng nhất. Chỉ trong thế kỷ trước, chúng ta đã đi từ chỗ không có thuốc kháng sinh đến việc có liệu pháp gen có thể viết lại DNA của bệnh nhân.
 Tệp này bao gồm cách thức hoạt động của y học: các chuyên khoa chính, cách chẩn đoán và điều trị bệnh, cách tổ chức hệ thống chăm sóc sức khỏe và các câu hỏi đạo đức nảy sinh khi mạng sống con người bị đe dọa.

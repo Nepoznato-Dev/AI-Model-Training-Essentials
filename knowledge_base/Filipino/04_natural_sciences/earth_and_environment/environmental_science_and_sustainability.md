@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Environmental Science at Sustainability
 Inilalapat ng agham pangkalikasan ang mga pamamaraan ng pisika, kimika, biyolohiya, geolohiya, at ekonomiya sa tanong na: "Ano ang nangyayari sa ating planeta, at ano ang maaaring gawin tungkol dito?" Ito ay isang interdisciplinary field — isang convergence ng maraming disiplina — na nag-aambag sa parehong analytical depth nito at sa kaugnayan nito sa patakaran.
 Ang pangunahing tensyon sa agham sa kapaligiran ay ito: ang sibilisasyon ng tao ay nakasalalay sa pagkuha ng mga mapagkukunan mula sa kapaligiran, ngunit ang pagkuha ng mga mapagkukunang iyon ay nagbabago sa kapaligiran sa mga paraan na maaaring makasira sa mga sistemang ating pinagkakatiwalaan. Ang pag-unawa na ang feedback loop ay ang buong field sa maikling salita.

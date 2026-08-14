@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # AI dalam Kehidupan Sehari-hari
 Kecerdasan buatan bukan lagi sebuah konsep futuristik – melainkan sudah tertanam dalam kehidupan sehari-hari. Dari saat Anda bangun dan memeriksa ponsel Anda (algoritme rekomendasi menentukan notifikasi apa yang Anda lihat) hingga saat Anda tertidur (speaker pintar memproses perintah terakhir Anda), sistem AI mengambil keputusan atas nama Anda, untuk Anda, dan terkadang tentang Anda. Memahami di mana AI muncul, cara kerjanya pada tingkat dasar, dan apa implikasinya bukan lagi sebuah pilihan – hal ini merupakan persyaratan untuk mendapatkan kewarganegaraan yang terinformasi di abad ke-21.
 ---

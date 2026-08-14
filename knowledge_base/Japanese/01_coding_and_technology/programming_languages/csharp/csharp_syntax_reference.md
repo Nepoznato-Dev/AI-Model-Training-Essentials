@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C# — 構文リファレンス
 このドキュメントは、最新の C# (.NET 7/8 上の C# 10/11/12) の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、LINQ、async/await、パターン マッチング、最新の機能に焦点を当て、メインの C# リファレンスを補完します。
 ---

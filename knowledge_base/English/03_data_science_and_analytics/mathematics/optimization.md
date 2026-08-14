@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optimization"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Optimization
 
 Optimization is the mathematics of finding the best solution from a set of feasible solutions. It asks: given a function and constraints, what input minimises (or maximises) the output? Optimization is the engine of machine learning — training a model means minimising a loss function. It appears in operations research, economics, engineering design, and virtually every quantitative field.

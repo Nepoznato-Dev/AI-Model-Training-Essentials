@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # منهجيات الإدارة والمشاريع
 تعد إدارة الأفراد والمشاريع من بين المسؤوليات الأكثر تطلبًا في أي منظمة. توفر المهارات التقنية الدخول، ولكن القدرة على قيادة الفرق واتخاذ القرارات والتواصل بشكل فعال وتحقيق النتائج تحدد ما إذا كانت الأهداف قد تحققت أم لا. يغطي هذا الملف الأطر والمنهجيات والمهارات العملية التي يطبقها المديرون الفعالون وقادة المشاريع.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # OCaml — Sözdizimi Referansı
 Bu belge OCaml (4.x/5.x) için kapsamlı, yapılandırılmış bir sözdizimi referansı sağlar. Kapsamlı sözdizimi kalıplarına, cebirsel veri türlerine, kalıp eşleştirmeye, modüllere ve işlevsel programlama deyimlerine odaklanarak ana OCaml referansını tamamlar.
 ---

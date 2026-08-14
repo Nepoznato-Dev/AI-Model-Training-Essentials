@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ekonomia behawioralna i nauka podejmowania decyzji
 Ekonomia behawioralna bada, w jaki sposób ludzie faktycznie podejmują decyzje, a nie w jaki sposób podejmowaliby je racjonalni agenci. Tradycyjna ekonomia zakłada, że ​​ludzie są racjonalni, kierują się własnym interesem i dobrze przetwarzają informacje. Dziesięciolecia badań Kahnemana, Tversky'ego, Thalera i innych wykazały, że jest to całkowicie niedokładne. Ludzie korzystają ze skrótów myślowych, kierują się nieistotnym kontekstem, przeceniają najnowsze informacje i popełniają systematycznie przewidywalne błędy. Zrozumienie tych wzorców jest niezbędne do projektowania lepszych produktów, polityk, organizacji i osobistych decyzji.
 ---

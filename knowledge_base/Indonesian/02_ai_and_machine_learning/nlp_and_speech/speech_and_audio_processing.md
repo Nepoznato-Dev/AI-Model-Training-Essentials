@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Pemrosesan Pidato dan Audio
 Pemrosesan ucapan dan audio mencakup teknologi yang memungkinkan mesin mendengar, memahami, menghasilkan, dan memanipulasi suara. Hal ini mencakup pengenalan ucapan (mengubah kata-kata yang diucapkan menjadi teks), sintesis ucapan (mengubah teks menjadi kata-kata yang diucapkan), identifikasi pembicara, pembuatan musik, dan pemahaman suara lingkungan. Bidang ini telah diubah melalui pembelajaran mendalam — sistem modern mendekati akurasi tingkat manusia untuk pengenalan ucapan dan menghasilkan suara sintetis yang sangat alami.
 ---

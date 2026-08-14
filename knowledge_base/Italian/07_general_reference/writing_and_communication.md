@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Fondamenti di scrittura e comunicazione
 La scrittura e la comunicazione sono le capacità di trasmettere idee in modo efficace, tramite e-mail, rapporti, documentazione, presentazioni o conversazioni. La maggior parte del lavoro di conoscenza è fondamentalmente lavoro di comunicazione: i professionisti devono spiegare il proprio pensiero, persuadere gli altri, documentare le decisioni, scrivere specifiche, presentare risultati e collaborare tra i team. Il divario tra ciò che si intende e ciò che si comprende è l’origine della maggior parte dei problemi e una migliore comunicazione riduce tale divario.
 ---

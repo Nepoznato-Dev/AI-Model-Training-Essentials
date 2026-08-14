@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sining Biswal
 Ang visual art ay ang pinakalumang paraan ng komunikasyon ng sangkatauhan — mula sa mga kweba na painting ng Lascaux hanggang sa mga digital installation sa ngayon. Ang pag-unawa sa mga paggalaw ng sining, medium, at mga institusyong nagpapanatili ng mga malikhaing gawa ay nagbibigay sa iyo ng mas malalim na pagpapahalaga sa kung paano nagpahayag ang mga lipunan ng kagandahan, kapangyarihan, espirituwalidad, at hindi pagsang-ayon sa buong milenyo.
 ---

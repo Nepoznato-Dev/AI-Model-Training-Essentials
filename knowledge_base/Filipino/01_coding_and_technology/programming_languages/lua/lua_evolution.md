@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Version History & Evolution"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Lua — Kasaysayan ng Bersyon at Ebolusyon
 ## Timeline
 | Bersyon | Taon | Pangunahing Tema |

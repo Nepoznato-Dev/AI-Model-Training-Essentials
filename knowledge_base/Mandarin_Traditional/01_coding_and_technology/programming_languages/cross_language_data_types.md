@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # 跨語言比較—資料類型與結構
 ## 原始型別
 |類型 |蟒蛇 | JavaScript |鐵鏽|去 |爪哇 | C | C++ | C# |

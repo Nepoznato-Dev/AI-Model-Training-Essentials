@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Haskell
 Haskell là một ngôn ngữ lập trình thuần túy về chức năng, được gõ tĩnh, được đánh giá một cách lười biếng. Được chuẩn hóa lần đầu tiên vào năm 1990 (Haskell 90) và được cải tiến qua nhiều phiên bản (Haskell 2010 là tiêu chuẩn hiện tại), Haskell được biết đến với tính chính xác về mặt toán học, hệ thống kiểu mạnh mẽ (với các lớp kiểu, đơn nguyên và kiểu dữ liệu đại số) và nhấn mạnh vào tính chính xác thông qua các kiểu.
 Haskell không phải là ngôn ngữ chính thống nhưng sức ảnh hưởng của nó rất lớn. Các khái niệm như đơn nguyên, đánh giá lười biếng và các lớp loại đã ảnh hưởng đến Rust, Swift, Kotlin, Scala và TypeScript. Haskell được sử dụng trong tài chính (Standard Chartered, Barclays), biên dịch (GHC) và xác minh chính thức.

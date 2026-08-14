@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Medycyna i opieka zdrowotna
 Medycyna to nauka i praktyka diagnozowania, leczenia i zapobiegania chorobom. Jest to jedno z najstarszych przedsięwzięć człowieka — przysięga Hipokratesa sięga starożytnej Grecji — i jedno z najszybciej zmieniających się. Tylko w zeszłym stuleciu przeszliśmy od braku antybiotyków do stosowania terapii genowych, które mogą przepisać DNA pacjenta.
 Ten plik opisuje, jak działa medycyna: główne specjalizacje, sposób diagnozowania i leczenia chorób, organizacja systemów opieki zdrowotnej oraz kwestie etyczne pojawiające się, gdy w grę wchodzi życie ludzkie.

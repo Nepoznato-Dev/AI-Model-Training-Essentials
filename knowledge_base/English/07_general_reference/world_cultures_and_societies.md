@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # World Cultures and Societies
 
 Culture is the framework of a society — the shared beliefs, values, customs, behaviours, and artefacts that members use to cope with their world and with each other. Understanding cultural diversity is not about memorising trivia; it is about recognising that one way of seeing the world is among thousands, and that other systems are internally coherent, historically grounded, and worth understanding on their own terms.

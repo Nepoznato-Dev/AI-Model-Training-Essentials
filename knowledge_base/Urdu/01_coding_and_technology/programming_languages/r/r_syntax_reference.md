@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # R - نحوی حوالہ
 یہ دستاویز R (4.x) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، صاف ستھرا ماحولیاتی نظام، اعداد و شمار میں ہیرا پھیری، شماریاتی ماڈلنگ، اور ویژولائزیشن پر توجہ مرکوز کرکے مرکزی R حوالہ کی تکمیل کرتا ہے۔
 ---

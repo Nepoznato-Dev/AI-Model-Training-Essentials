@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingegneria ML e MLOps
 Costruire un modello di machine learning è solo metà dell’opera. Metterlo in produzione, mantenerlo in esecuzione in modo affidabile, monitorarne la deriva ed eseguirne l'iterazione: è qui che entrano in gioco l'ingegneria ML e MLOps. Questo file copre l'intero ciclo di vita dall'esperimento al sistema di produzione.
 ---

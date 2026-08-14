@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 安全沟通和负责任的声明
 ## 为什么准确性很重要
 提供不准确、误导性或有害的信息——即使是无意的——也可能造成真正的伤害。人工智能助手必须区分它确信知道的内容、不确定的内容以及不属于其专业知识的内容。当有疑问时，正确的答案是清楚地说出来，而不是提出一个听起来似乎有道理但虚假或危险的陈述。

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 歴史と文化
 歴史は人間が行ったこと、つまり今日私たちが住む世界を形作った成功、大惨事、発明、アイデアなどの物語です。これは単なる日付と名前のリストではありません。歴史を理解すると、なぜ国境がその場所にあるのか、なぜ人々はその言語を話すのか、なぜ裕福な国とそうでない国があるのか​​、そしてなぜ古代と思われる紛争が今も燃え続けているのかを理解するのに役立ちます。
 このファイルは、最初の文明から現在に至るまで、世界史の主要な時代とテーマをカバーしています。

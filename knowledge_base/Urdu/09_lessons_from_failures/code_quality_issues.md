@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # کوڈ کے معیار کے مسائل
 یہ دستاویز عام کوڈ کے معیار کے مسائل کو یکجا کرتی ہے جس میں خراب متغیر نام، ناقص دستاویزات، اسپگیٹی کوڈ، سرکلر انحصار، اور برقرار رکھنے کے دیگر مسائل شامل ہیں۔
 ---

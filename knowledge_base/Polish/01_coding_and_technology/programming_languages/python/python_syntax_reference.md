@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Python — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Python — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane omówienie składni języka Python. Uzupełnia główne odniesienia do języka Python, koncentrując się na wyczerpujących wzorcach składni, tabelach operatorów i mechanice wewnętrznej.
 ---

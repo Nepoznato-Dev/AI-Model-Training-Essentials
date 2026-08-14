@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Zeitreihen und Prognosen
 Unter Zeitreihendaten versteht man alle im Laufe der Zeit erfassten Daten: Aktienkurse, Temperaturwerte, Website-Verkehr, Verkaufszahlen, Herzfrequenzmesser, Energieverbrauch. Forecasting means predicting future values based on past patterns. Es ist eine der praktisch wertvollsten Anwendungen der Datenwissenschaft – und eine der schwierigsten, weil die Zukunft wirklich ungewiss ist und reale Zeitreihen voller Rauschen, Saisonalität und Strukturbrüche sind.
 ---

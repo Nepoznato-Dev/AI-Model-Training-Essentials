@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ruby — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Ruby (3.x). Nó bổ sung cho tài liệu tham khảo chính của Ruby bằng cách tập trung vào các mẫu cú pháp, khối và phần đóng, siêu lập trình và thành ngữ Ruby đầy đủ.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 世界文化和社会
 文化是社会的框架——成员用来应对世界和彼此之间的共同信仰、价值观、习俗、行为和人工制品。理解文化多样性并不是死记硬背，而是要理解文化多样性。它是关于认识到看待世界的方式有数以千计，而其他系统是内部连贯的、有历史依据的，并且值得根据自己的方式来理解。
 ---

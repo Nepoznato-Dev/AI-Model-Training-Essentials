@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL
 SQL（結構化查詢語言）是一種特定於領域的語言，旨在管理和查詢關係資料庫中的資料。 SQL 最初由 IBM 於 20 世紀 70 年代開發，並於 1987 年標準化，至今仍然是應用程式與其資料之間的主要介面。每個主要的關聯式資料庫管理系統 (RDBMS) — PostgreSQL、MySQL、SQL Server、Oracle、SQLite — 都使用 SQL 作為其查詢語言。
 SQL 不是通用程式語言。您不會用 SQL 編寫 Web 應用程式。但是，如果您的應用程式儲存資料（幾乎所有應用程式都這樣做），那麼 SQL 就是您用來檢索、轉換和管理該資料的語言。它可以說是繼通用程式設計之後最普遍有用的技術技能。

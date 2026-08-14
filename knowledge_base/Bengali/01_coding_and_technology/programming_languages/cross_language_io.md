@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — I/O & File Operations"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Cross-Language Comparison — I/O এবং ফাইল অপারেশন
 ## কনসোল আউটপুট
 | ভাষা | stdout এ প্রিন্ট করুন |

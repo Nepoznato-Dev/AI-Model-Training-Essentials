@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Visual Basic — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # فيجوال بيسك – دليل النظام البيئي والأدوات
 يغطي هذا الدليل الأدوات والأطر والبنية الأساسية الأساسية في النظام البيئي Visual Basic (.NET).
 ---

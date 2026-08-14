@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ansible と構成管理
 Ansible は、エージェントレスの構成管理および自動化ツールです。 SSH (または Windows の場合は WinRM) を使用してサーバーに接続し、YAML Playbook で定義されたタスクを実行します。すべてのマシンにエージェントをインストールする必要があるツールとは異なり、Ansible はプッシュベースであり、制御ノードからコマンドを実行します。これは、サーバーのプロビジョニング、アプリケーションの展開、構成管理、およびアドホック タスクの実行に使用されます。
 ---

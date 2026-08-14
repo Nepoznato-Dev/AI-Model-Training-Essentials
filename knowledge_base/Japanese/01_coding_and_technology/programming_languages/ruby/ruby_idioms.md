@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ruby — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ruby — 慣用的なパターンとベストプラクティス
 このガイドでは、クリーンな Ruby 風のコードを記述するための慣用的なパターンとベスト プラクティスについて説明します。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Alimentación, agricultura y nutrición
 La alimentación es la necesidad humana más básica y la agricultura es la base de la civilización. El paso de la caza y la recolección a la agricultura (la Revolución Neolítica, hace unos 10.000 años) es lo que permitió a los humanos construir ciudades, desarrollar la escritura y crear todo lo que llamamos "civilización". Hoy en día, la agricultura emplea alrededor del 27% de la fuerza laboral mundial y produce aproximadamente 10 billones de calorías por día. Sin embargo, alrededor de 800 millones de personas todavía pasan hambre, mientras que más de 2 mil millones tienen sobrepeso o son obesos. El problema no es la producción, sino la distribución, el acceso y las opciones.
 ---

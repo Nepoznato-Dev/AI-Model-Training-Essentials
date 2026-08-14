@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # জ্ঞানীয় পক্ষপাত এবং যৌক্তিক ভুল
 এই নথিটি জ্ঞানীয় পক্ষপাতিত্ব, যৌক্তিক ভুল এবং যুক্তির ত্রুটিগুলিকে একীভূত করে যা মানুষের সিদ্ধান্ত গ্রহণ এবং এআই সিস্টেম আউটপুট উভয়কেই প্রভাবিত করে।
 ---

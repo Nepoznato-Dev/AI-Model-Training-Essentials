@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Metodologie testowania
 Testowanie pozwala zyskać pewność, że Twój kod działa — a co ważniejsze, że zmiany w nim nie psują tego, co już działa. Dobre testowanie wychwytuje błędy, zanim zrobią to użytkownicy, dokumentuje oczekiwane zachowanie i umożliwia nieustraszoną refaktoryzację. Ten plik obejmuje pełne spektrum strategii testowania, od testów jednostkowych po testy typu end-to-end, a także zasady, które sprawiają, że testowanie jest skuteczne.
 ---

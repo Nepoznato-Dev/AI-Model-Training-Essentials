@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — распространенные ошибки и антишаблоны
 В этом документе перечислены наиболее распространенные ошибки, ловушки и антишаблоны в TypeScript. Каждая запись показывает неправильный подход, объясняет, почему он не работает, и предлагает правильное решение.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Go"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # يذهب
 Go (غالبًا ما تسمى "Golang" بعد اسم المجال الأصلي الخاص بها) هي لغة برمجة مجمعة ومكتوبة بشكل ثابت تم تصميمها في Google بواسطة Robert Griesemer وRob Pike وKen Thompson. تم إصدارها لأول مرة في عام 2012 بهدف واضح وهو أن تكون لغة أفضل لبرمجة الأنظمة - لغة تجمع بين أداء لغة C وإنتاجية اللغات الديناميكية مثل Python. تشتهر Go ببساطتها وتجميعها السريع والتزامن المدمج (goroutines والقنوات) والأدوات الممتازة.
 تعمل Go على تشغيل جزء كبير من النظام البيئي للبنية التحتية السحابية: Docker، وKubernetes، وTerraform، وPrometheus، وما إلى ذلك، وخادم HTTP الخاص بمكتبة Go القياسية كلها مكتوبة بلغة Go. لقد أصبحت اللغة الافتراضية للتطوير السحابي الأصلي والخدمات الصغيرة وأدوات CLI.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 系统可靠性问题
 本文档整合了可靠性问题，包括内存泄漏、竞争条件、并发编程错误和系统设计故障。
 ---

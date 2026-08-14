@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C — 常見錯誤與反模式
 本文檔列出了 C 語言中最常見的錯誤、陷阱和反模式。每個條目都顯示了不正確的方法，解釋了失敗的原因，並提供了正確的解決方案。 C 給你完全的控制權——這意味著對記憶體安全、邊界檢查和未定義的行為負全部責任。
 ---

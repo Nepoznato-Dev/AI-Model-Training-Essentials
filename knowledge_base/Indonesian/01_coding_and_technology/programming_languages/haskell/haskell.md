@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Haskell"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #haskell
 Haskell adalah bahasa pemrograman yang murni fungsional, diketik secara statis, dan dievaluasi dengan malas. Pertama kali distandarisasi pada tahun 1990 (Haskell 90) dan disempurnakan melalui beberapa versi (Haskell 2010 adalah standar saat ini), Haskell dikenal dengan ketelitian matematisnya, sistem tipe yang kuat (dengan kelas tipe, monad, dan tipe data aljabar), dan penekanan pada kebenaran melalui tipe.
 Haskell bukanlah bahasa umum, namun pengaruhnya sangat besar. Konsep seperti monad, evaluasi malas, dan kelas tipe telah memengaruhi Rust, Swift, Kotlin, Scala, dan TypeScript. Haskell digunakan di bidang keuangan (Standard Chartered, Barclays), kompiler (GHC), dan verifikasi formal.

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mobile Development
 Ang mobile development ay ang kasanayan ng pagbuo ng mga application para sa mga smartphone at tablet — pangunahin para sa iOS (Apple) at Android (Google). Sinasaklaw nito ang lahat mula sa disenyo ng UI para sa maliliit na screen hanggang sa pamamahala ng buhay ng baterya, paghawak sa kawalang-tatag ng network, at pamamahagi ng mga app sa pamamagitan ng mga tindahan. Ang field ay tumaas nang husto, na may mga cross-platform na framework na nakikipagkumpitensya na ngayon sa native development para sa karamihan ng mga kaso ng paggamit.
 ---

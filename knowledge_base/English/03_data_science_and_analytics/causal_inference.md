@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Causal Inference
 
 Causal inference is the science of determining whether one thing actually causes another — not just whether they're correlated. Correlation tells you that two variables move together. Causation tells you that changing one will change the other. This distinction matters enormously in medicine (does this drug work?), policy (does this intervention reduce poverty?), business (does this ad campaign increase sales?), and science (does this mechanism explain the phenomenon?).

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Estructuras de datos y algoritmos
 Las estructuras de datos son las formas en que organizamos los datos en la memoria para que las operaciones sobre ellos sean eficientes. Los algoritmos son procedimientos paso a paso para resolver problemas. Juntos, forman la base de la informática: todos los programas que haya utilizado se basan en ellos. Elegir la estructura de datos correcta puede convertir un programa increíblemente lento en uno rápido, y conocer el algoritmo correcto puede convertir un problema sin solución en uno trivial.
 ---

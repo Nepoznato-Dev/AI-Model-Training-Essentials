@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Théorie des jeux
 La théorie des jeux est la mathématique de l’interaction stratégique – des situations dans lesquelles votre résultat dépend non seulement de vos propres choix, mais aussi de ceux des autres. Des guerres de prix entre entreprises aux courses aux armements nucléaires, des enchères en ligne à la biologie évolutionniste, la théorie des jeux fournit les outils nécessaires à l’analyse des conflits et de la coopération. Il est devenu de plus en plus pertinent pour l'apprentissage automatique grâce à l'apprentissage par renforcement multi-agents, aux réseaux contradictoires génératifs (GAN) et à la conception de mécanismes pour les plateformes en ligne.
 ---

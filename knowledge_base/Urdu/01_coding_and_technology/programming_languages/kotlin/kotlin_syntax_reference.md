@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # کوٹلن - نحوی حوالہ
 یہ دستاویز کوٹلن (2.0+) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، null سیفٹی، کوروٹینز، اور کوٹلن محاوروں پر توجہ مرکوز کرکے مرکزی کوٹلن حوالہ کی تکمیل کرتا ہے۔
 ---

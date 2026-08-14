@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Planowanie scenariuszy
 ## Przegląd
 Nikt nie jest w stanie przewidzieć przyszłości, ale możesz przygotować się na kilka prawdopodobnych. Planowanie scenariuszy, zrodzone w ośrodkach doradczych zimnej wojny i udoskonalone przez firmę Shell podczas kryzysów naftowych w latach 70. XX wieku, to sposób systematycznego myślenia o niepewności. Zamiast obstawiać jedną prognozę, tworzysz spójne historie o możliwym rozwoju sytuacji, a następnie poddajesz swoje decyzje testowi warunków skrajnych pod kątem ich wszystkich. Oto jak działa ta metodologia wraz ze scenariuszami w kluczowych domenach.

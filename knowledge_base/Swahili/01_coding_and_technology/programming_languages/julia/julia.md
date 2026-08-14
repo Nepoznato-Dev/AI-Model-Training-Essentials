@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Julia"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Julia
 Julia ni lugha ya kiwango cha juu, ya utendaji wa juu ya programu iliyoundwa kwa ajili ya kompyuta ya kiufundi na kisayansi. Iliyotolewa kwa mara ya kwanza mnamo 2012 (1.0 mnamo 2018), Julia iliundwa ili kutatua "tatizo la lugha mbili" - ambapo wanasayansi mfano wa Python/R lakini waliandika upya katika C/C++/Fortran kwa utendaji wa uzalishaji. Julia analenga kuwa rahisi kama Python lakini haraka kama C.
 Julia hutumia mkusanyiko wa wakati tu (JIT) kupitia LLVM ili kufikia utendakazi wa karibu-C huku akidumisha hisia wasilianifu, inayobadilika. Ina usaidizi wa daraja la kwanza kwa kompyuta sambamba, usindikaji uliosambazwa, na mfumo wa aina ya kisasa na utumaji nyingi.

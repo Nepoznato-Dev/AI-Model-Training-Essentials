@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ศิลปะและวรรณกรรม
 การแสดงออกอย่างสร้างสรรค์ของมนุษย์ ไม่ว่าจะในหนังสือ ภาพวาด ดนตรี หรือภาพยนตร์ เป็นหนึ่งในบันทึกอารยธรรมที่ยั่งยืนที่สุดชิ้นหนึ่ง การทำความเข้าใจประเภท การเคลื่อนไหว และตัวเลขหลักๆ จะให้บริบทแก่โลกที่เราอาศัยอยู่ในปัจจุบัน นิยายทุกเรื่อง ทุกซิมโฟนี หนังทุกเรื่องอยู่ในบทสนทนากับสิ่งที่เกิดขึ้นก่อนหน้านี้
 ---

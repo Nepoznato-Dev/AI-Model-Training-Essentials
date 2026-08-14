@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Neue Technologien
 ## Übersicht
 Bestimmte Technologien schaffen völlig neue Leistungskategorien, anstatt bestehende schrittweise zu verbessern. Quantencomputing zielt darauf ab, Probleme zu lösen, für die klassische Maschinen Jahrtausende brauchen würden. Fusionsenergie bietet die Möglichkeit praktisch unbegrenzter sauberer Energie. Gehirn-Computer-Schnittstellen verbinden Geist und Maschine. Die synthetische Biologie ermöglicht das Umschreiben biologischen Codes. In den folgenden Abschnitten wird beschrieben, wo jede dieser Grenzen heute steht und wohin sie sich aufgrund aktueller Trends entwickeln wird.

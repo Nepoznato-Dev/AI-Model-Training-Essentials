@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 컴퓨터 비전 기초
 컴퓨터 비전은 기계에게 이미지, 비디오, 3D 데이터 등 세상의 시각적 정보를 해석하고 이해할 수 있는 능력을 제공합니다. 휴대폰의 얼굴 인식부터 자율주행차, 의료 영상 분석, 산업 품질 관리에 이르기까지 모든 기능을 지원합니다. 이 파일은 핵심 개념, 아키텍처 및 기술을 다루고 있습니다.
 ---

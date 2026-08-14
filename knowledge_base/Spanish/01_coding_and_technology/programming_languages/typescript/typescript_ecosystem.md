@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # TypeScript: guía de ecosistemas y herramientas
 Esta guía cubre las herramientas, los marcos y la infraestructura esenciales en el ecosistema TypeScript. TypeScript comparte gran parte de su ecosistema con JavaScript pero tiene sus propias herramientas especializadas.
 ---

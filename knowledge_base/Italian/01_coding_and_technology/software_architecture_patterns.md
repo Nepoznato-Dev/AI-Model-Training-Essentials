@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Modelli di architettura software
 L’architettura è l’insieme delle decisioni strutturali su come è organizzato un sistema: quali componenti ha, come comunicano e dove si trovano le responsabilità. Una buona architettura rende un sistema facile da comprendere, modificare e scalare. La cattiva architettura rende ogni cambiamento una lotta. Questo file copre i modelli principali, quando utilizzarli e i compromessi coinvolti.
 ---

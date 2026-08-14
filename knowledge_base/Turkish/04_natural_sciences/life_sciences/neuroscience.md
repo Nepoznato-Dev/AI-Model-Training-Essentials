@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Sinirbilim
 Sinirbilim, sinir sisteminin (beyin, omurilik ve onları vücuda bağlayan tüm sinirlerin) incelenmesidir. Moleküller ve genlerden bireysel nöronlara ve sinapslara, devrelere ve beyin bölgelerine, davranışa, bilişe ve bilince kadar birçok düzeyi kapsar. Beyin, trilyonlarca sinapsla birbirine bağlanan yaklaşık 86 milyar nöron içeren, bilinen evrendeki en karmaşık yapıdır ve nasıl çalıştığını anlamak, bilimin en büyük zorluklarından biridir.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ilmu Data dan Analisis
 Ilmu data adalah disiplin mengubah data mentah menjadi wawasan yang dapat ditindaklanjuti. Hal ini merupakan titik temu antara statistik, ilmu komputer, dan keahlian domain — dan hal ini menjadi hal yang penting di setiap sektor, mulai dari keuangan hingga layanan kesehatan. File ini menjelaskan konsep inti, alat, dan alur kerja yang harus diketahui oleh setiap praktisi.
 ---

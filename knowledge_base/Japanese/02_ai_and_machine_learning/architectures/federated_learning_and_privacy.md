@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # フェデレーテッド ラーニングとプライバシー
 フェデレーテッド ラーニングは、生データを共有せずに、複数のデバイスまたは組織間で機械学習モデルをトレーニングするための手法です。データを中央サーバーに送信する代わりに、各デバイスはローカル モデルをトレーニングし、モデルの更新 (勾配または重み) のみを共有します。中央サーバーはこれらの更新を集約して、グローバル モデルを生成します。これは、Android スマートフォンでキーボード言語モデルをトレーニングするために Google によって設計されたものであり、それ以来、プライバシーを保護する AI の重要な技術となっています。
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا شاملاً ومنظمًا لصيغة Modern C++ (C++17/20/23). وهو يكمل المرجع الرئيسي لـ C++ من خلال التركيز على أنماط بناء الجملة الشاملة، وجداول التشغيل، وميكانيكا القوالب، والميزات الحديثة.
 ---

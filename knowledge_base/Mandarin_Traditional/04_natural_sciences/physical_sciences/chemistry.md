@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 化學
 如果物理是遊戲規則，那麼化學就是各個部分相互作用時發生的事情。化學研究原子如何結合、分裂和重新排列——也就是說，所有材料的行為。它彌合了基礎物理學與複雜的生物學、地質學和工程學之間的差距。
 ---

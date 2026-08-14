@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Ingegneria rapida
 Il prompt engineering è la pratica di progettare, perfezionare e ottimizzare i prompt di input per ottenere il miglior output possibile da un modello linguistico. È sia un'arte che una scienza ed è l'interfaccia principale per controllare il comportamento LLM senza messa a punto.
 ---

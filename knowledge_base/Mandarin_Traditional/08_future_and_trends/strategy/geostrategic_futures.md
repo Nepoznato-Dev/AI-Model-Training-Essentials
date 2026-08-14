@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 地緣戰略未來
 ＃＃ 概述
 美國主導地位的後冷戰時代正在讓位給更加混亂的局面：權力分散、技術和資源競爭加劇、氣候變遷和流行病等挑戰不分國界的多極世界。 1945年後建立的以規則為基礎的國際秩序正受到來自各方面的考驗。以下是正在發生的變化、誰在崛起、以及摩擦點在哪裡。

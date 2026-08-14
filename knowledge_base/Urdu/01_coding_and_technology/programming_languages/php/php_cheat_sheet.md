@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "PHP — Cheat Sheet"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # پی ایچ پی - چیٹ شیٹ
 ## بنیادی باتیں
 ```php

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Mobile Development
 
 Mobile development is the practice of building applications for smartphones and tablets — primarily for iOS (Apple) and Android (Google). It encompasses everything from UI design for small screens to managing battery life, handling network instability, and distributing apps through stores. The field has matured significantly, with cross-platform frameworks now competing with native development for most use cases.

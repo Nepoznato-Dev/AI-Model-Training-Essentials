@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Teknologi dan Komputasi
 Komputasi ada dimana-mana — di ponsel Anda, mobil Anda, lemari es Anda, perangkat medis Anda, dan infrastruktur yang menjalankan masyarakat modern. Anda tidak perlu menjadi seorang programmer untuk mendapatkan manfaat dari memahami cara kerjanya. File ini mencakup dasar-dasar: apa itu komputer, cara kerja internet, cara perangkat lunak dibuat, dan konsep yang membentuk dunia digital.
 > **Ingin mempelajari lebih dalam?** File ini adalah ikhtisar yang luas. Untuk liputan mendetail tentang topik apa pun, lihat file khusus di[`01_coding_and_technology/`](../01_coding_and_technology/)— termasuk[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), dan.

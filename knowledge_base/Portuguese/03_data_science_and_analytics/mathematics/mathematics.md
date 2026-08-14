@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Matemática
 A matemática não é apenas uma disciplina estudada na escola – ela está subjacente a quase todas as áreas técnicas. A física o usa para descrever o universo. A ciência da computação o utiliza para projetar algoritmos. O aprendizado de máquina o utiliza para otimizar pesos. As finanças usam isso para precificar o risco. Não é necessário dominar cada ramo, mas compreender o panorama — e saber onde cada ramo se aplica — facilita a compreensão de outros tópicos.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Praktische Lebenskompetenzen
 In der Schule lernt man Rechnen, aber selten lernt man, wie man Steuern einreicht, eine ausgewogene Mahlzeit kocht oder den Haushalt führt. Dies sind die praktischen Kompetenzen, die Ihre tägliche Lebensqualität beeinflussen – die Art von Wissen, die Sie autark und finanziell belastbar macht. Diese Datei ist eine dichte Referenz für das Wesentliche.
 ---

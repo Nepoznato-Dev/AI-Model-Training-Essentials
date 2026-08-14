@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Linguagem Assembly - Referência de Sintaxe
 Este documento fornece uma referência de sintaxe estruturada e abrangente para Assembly x86-64 (sintaxe NASM). Ele complementa a referência principal do Assembly, concentrando-se em categorias de instruções exaustivas, modos de endereçamento, convenções de estrutura de pilha e padrões de programação de sistema.
 ---

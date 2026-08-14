@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Biology Fundamentals
 
 Biology is the science of life. All living things share certain features: they are made of cells, they use energy, they grow, they respond to their environment, they reproduce, and they evolve. Biology spans from the molecular machinery inside a single cell to the interactions of entire ecosystems, and it is the foundation of medicine, agriculture, biotechnology, and conservation.

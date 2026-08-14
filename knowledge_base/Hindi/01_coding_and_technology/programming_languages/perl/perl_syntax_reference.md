@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # पर्ल - सिंटैक्स संदर्भ
 यह दस्तावेज़ पर्ल (5.38+) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, नियमित अभिव्यक्ति, संदर्भ और पर्ल की टेक्स्ट प्रोसेसिंग शक्ति पर ध्यान केंद्रित करके मुख्य पर्ल संदर्भ को पूरक करता है।
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lua - نحوی حوالہ
 یہ دستاویز Lua (5.4) کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل نحوی نمونوں، جدولوں اور میٹا ٹیبلز، کوروٹائنز، اور Lua کے منفرد ڈیزائن فلسفے پر توجہ مرکوز کرکے Lua کے مرکزی حوالہ کی تکمیل کرتا ہے۔
 ---

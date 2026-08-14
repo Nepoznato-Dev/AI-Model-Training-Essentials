@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Docker 和 Kubernetes 備忘單
 使用 Docker 容器化應用程式並使用 Kubernetes 編排它們的實用參考。假設對命令列有基本的熟悉。
 ---

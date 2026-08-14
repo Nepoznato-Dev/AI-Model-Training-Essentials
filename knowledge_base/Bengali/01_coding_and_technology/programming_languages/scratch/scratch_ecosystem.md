@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # স্ক্র্যাচ — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি স্ক্র্যাচ ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, এক্সটেনশন এবং সংস্থানগুলিকে কভার করে৷
 ---

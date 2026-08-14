@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD پائپ لائن کنفیگریشن
 مسلسل انٹیگریشن (CI) اور مسلسل تعیناتی (CD) پائپ لائنیں سافٹ ویئر کی تعمیر، جانچ اور تعیناتی کے عمل کو خودکار کرتی ہیں۔ یہ حوالہ مقبول ترین CI/CD پلیٹ فارمز کے کنفیگریشن پیٹرن کا احاطہ کرتا ہے: GitHub ایکشنز، GitLab CI، اور پائپ لائن ڈیزائن کے عمومی اصول۔
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Tecnologias emergentes
 ## Visão geral
 Certas tecnologias criam categorias inteiramente novas de capacidade, em vez de melhorar gradativamente as existentes. A computação quântica visa resolver problemas que levariam milênios para as máquinas clássicas. A energia de fusão oferece a possibilidade de energia limpa virtualmente ilimitada. As interfaces cérebro-computador unem mente e máquina. A biologia sintética permite a reescrita do código biológico. As secções seguintes descrevem a situação atual de cada uma destas fronteiras e para onde as tendências atuais indicam que está a caminhar.

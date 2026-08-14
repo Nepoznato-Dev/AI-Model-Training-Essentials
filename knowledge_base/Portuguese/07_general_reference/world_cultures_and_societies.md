@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Culturas e Sociedades Mundiais
 A cultura é a estrutura de uma sociedade – as crenças, valores, costumes, comportamentos e artefactos partilhados que os membros utilizam para lidar com o seu mundo e uns com os outros. Compreender a diversidade cultural não consiste em memorizar trivialidades; trata-se de reconhecer que há milhares de formas de ver o mundo e que outros sistemas são internamente coerentes, historicamente fundamentados e merecem ser compreendidos nos seus próprios termos.
 ---

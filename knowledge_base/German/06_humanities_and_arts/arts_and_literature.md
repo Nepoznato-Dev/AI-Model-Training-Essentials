@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kunst und Literatur
 Der kreative Ausdruck des Menschen – ob in Büchern, Gemälden, Musik oder Filmen – ist eines der beständigsten Zeugnisse der Zivilisation. Das Verständnis der wichtigsten Genres, Bewegungen und Figuren vermittelt einen Kontext für die Welt, in der wir heute leben. Jeder Roman, jede Symphonie, jeder Film steht im Dialog mit dem, was vorher war.
 ---

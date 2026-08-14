@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell ve PowerShell — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz, Bash/Zsh ve PowerShell komut dosyası oluşturmaya yönelik deyimsel kalıpları kapsar.
 ---

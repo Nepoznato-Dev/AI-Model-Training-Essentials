@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # C++ — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax reference para sa Modern C++ (C++17/20/23). Kinukumpleto nito ang pangunahing sanggunian ng C++ sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, mga talahanayan ng operator, mekanika ng template, at mga modernong tampok.
 ---

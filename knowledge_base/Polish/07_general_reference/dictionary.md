@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Słownik języka angielskiego — popularne definicje słów
 Lista referencyjna często używanych angielskich słów i ich znaczeń,
 obejmujący słownictwo potoczne, terminy akademickie i słowa powszechnie spotykane

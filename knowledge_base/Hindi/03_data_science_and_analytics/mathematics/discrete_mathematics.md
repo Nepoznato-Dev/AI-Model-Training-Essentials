@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # गणित पृथक करें
 असतत गणित गणितीय संरचनाओं का अध्ययन है जो मौलिक रूप से गणनीय या अलग हैं - निरंतर गणित (कैलकुलस, वास्तविक विश्लेषण) के विपरीत, जो चिकनी, अखंड मात्राओं से संबंधित है। असतत गणित कंप्यूटर विज्ञान, क्रिप्टोग्राफी, एल्गोरिदम डिजाइन और डेटा संरचनाओं को रेखांकित करता है। यदि सतत गणित भौतिक दुनिया का वर्णन करता है, तो असतत गणित कम्प्यूटेशनल दुनिया का वर्णन करता है।
 ---

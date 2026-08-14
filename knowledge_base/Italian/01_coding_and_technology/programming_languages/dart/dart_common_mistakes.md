@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dart — Common Mistakes & Anti-Patterns"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Dart: errori comuni e anti-schemi
 Questo documento cataloga gli errori, le trappole e gli anti-pattern più comuni in Dart con le relative correzioni.
 ---

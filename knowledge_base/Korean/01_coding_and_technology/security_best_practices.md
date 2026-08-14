@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Security Best Practices"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 보안 모범 사례
 개발부터 생산까지 애플리케이션, 인프라, 데이터 보안에 대한 실무 가이드입니다.
 ---

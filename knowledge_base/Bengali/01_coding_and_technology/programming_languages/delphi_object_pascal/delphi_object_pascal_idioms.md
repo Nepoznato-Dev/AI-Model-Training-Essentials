@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # ডেলফি / অবজেক্ট প্যাসকেল — ইডিওম্যাটিক প্যাটার্নস এবং সেরা অনুশীলন
 এই নির্দেশিকাটি পরিষ্কার ডেলফি এবং অবজেক্ট প্যাসকেল কোড লেখার জন্য বাহাদুরী নিদর্শনগুলি কভার করে৷
 ---

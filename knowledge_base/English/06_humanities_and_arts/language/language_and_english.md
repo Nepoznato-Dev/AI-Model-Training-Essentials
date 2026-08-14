@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Language and English"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Language and English
 
 There are roughly 7,000 languages spoken in the world today. English is the most widely spoken as a second language and serves as the default for international business, science, aviation, and the internet. Whether writing code documentation, reading research papers, or communicating across borders, a solid command of English — grammar, vocabulary, and rhetoric — is one of the most practical skills one can develop.

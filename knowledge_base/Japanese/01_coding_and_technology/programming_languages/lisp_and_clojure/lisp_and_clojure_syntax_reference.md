@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Lisp と Clojure — 構文リファレンス
 このドキュメントは、Common Lisp と Clojure の包括的で構造化された構文リファレンスを提供します。 S 式、マクロ、永続的なデータ構造、関数型プログラミング パターンに焦点を当てることで、主要な Lisp/Clojure リファレンスを補完します。
 ---

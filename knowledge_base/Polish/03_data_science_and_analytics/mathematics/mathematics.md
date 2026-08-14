@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Matematyka
 Matematyka to nie tylko przedmiot, którego uczy się w szkole — stanowi podstawę niemal każdej dziedziny techniki. Fizyka używa go do opisu wszechświata. Informatyka wykorzystuje go do projektowania algorytmów. Uczenie maszynowe wykorzystuje je do optymalizacji wag. Finanse wykorzystują to do wyceny ryzyka. Opanowanie każdej gałęzi nie jest konieczne, ale zrozumienie krajobrazu – i wiedza, gdzie każda gałąź ma zastosowanie – ułatwia zrozumienie innych tematów.
 ---

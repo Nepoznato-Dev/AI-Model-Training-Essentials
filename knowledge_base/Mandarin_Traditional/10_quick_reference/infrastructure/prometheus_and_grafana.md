@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 普羅米修斯與格拉法納
 Prometheus 是一個開源監控和警報工具包，旨在提高可靠性和可擴展性。 Grafana 是領先的可視化時間序列資料的開源平台。它們共同構成了現代基礎設施和應用程式最受歡迎的監控堆疊。 Prometheus 收集並儲存指標； Grafana 在儀表板中顯示它們。
 ---

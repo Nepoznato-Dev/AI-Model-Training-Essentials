@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 仕事の未来
 ＃＃ 概要
 私たちの働き方は、産業革命以降のどの時点よりも急速に変化しています。リモートワークは稀な特典から一夜にしてデフォルトになりました。 AI は新しいものから協力者へと移行しています。ギグエコノミーは「雇用」の意味すら変えつつあります。また、自動化はすべての仕事に導入されるわけではありませんが、ほとんどの仕事の多くのタスクに導入されます。ここでは、職場を再構築する力と次に何が起こるかを見てみましょう。

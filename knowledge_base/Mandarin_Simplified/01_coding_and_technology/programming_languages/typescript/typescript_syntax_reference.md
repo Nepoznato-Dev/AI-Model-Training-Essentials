@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — 语法参考
 本文档为 TypeScript 提供了全面、结构化的语法参考。它通过关注类型系统、泛型、实用程序类型和高级类型级编程来补充主要的 TypeScript 参考。
 ---

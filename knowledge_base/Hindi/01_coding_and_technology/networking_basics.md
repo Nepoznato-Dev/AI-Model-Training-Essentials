@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Networking Basics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # नेटवर्किंग मूल बातें
 डेवलपर्स और सिस्टम एडमिन के लिए एक व्यावहारिक संदर्भ - मुख्य अवधारणाएं, प्रोटोकॉल, कमांड और समस्या निवारण।
 ---

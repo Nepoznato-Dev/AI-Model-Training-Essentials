@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # علم داده و تجزیه و تحلیل
 علم داده رشته تبدیل داده های خام به بینش عملی است. این در تقاطع آمار، علوم کامپیوتر و تخصص حوزه قرار دارد - و در هر بخش از مالی تا مراقبت های بهداشتی ضروری شده است. این فایل در میان مفاهیم اصلی، ابزارها و گردش کار که هر پزشک باید بداند، می پردازد.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Kimia
 Jika fisika adalah aturan mainnya, kimia adalah apa yang terjadi ketika potongan-potongan tersebut berinteraksi. Kimia mempelajari bagaimana atom-atom berikatan, terpecah, dan tersusun ulang — artinya, bagaimana semua bahan berperilaku. Ini menjembatani kesenjangan antara fisika dasar dan kompleksitas biologi, geologi, dan teknik.
 ---

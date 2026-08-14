@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Toán rời rạc
 Toán học rời rạc là nghiên cứu về các cấu trúc toán học về cơ bản có thể đếm được hoặc tách rời - trái ngược với toán học liên tục (phép tính, giải tích thực), liên quan đến các đại lượng trơn tru, không bị gián đoạn. Toán rời rạc làm nền tảng cho khoa học máy tính, mật mã, thiết kế thuật toán và cấu trúc dữ liệu. Nếu toán liên tục mô tả thế giới vật chất thì toán rời rạc mô tả thế giới tính toán.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 一般知識
 このファイルは、会話、ニュース、教育、日常生活で定期的に登場する事実と概念を集めたものです。それは背景知識、つまり、読んだり、聞いたり、経験していることを理解するのに役立つ種類の知識であると考えてください。
 ---

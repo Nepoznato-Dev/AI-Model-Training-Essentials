@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "TypeScript — Common Mistakes & Anti-Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # TypeScript — typowe błędy i anty-wzorce
 Ten dokument kataloguje najczęstsze błędy, pułapki i anty-wzorce w TypeScript. Każdy wpis pokazuje nieprawidłowe podejście, wyjaśnia przyczynę niepowodzenia i podaje prawidłowe rozwiązanie.
 ---

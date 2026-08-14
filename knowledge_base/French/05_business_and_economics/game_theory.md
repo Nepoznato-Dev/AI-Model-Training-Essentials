@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Théorie des jeux et réflexion stratégique
 La théorie des jeux est l'étude mathématique des interactions stratégiques, c'est-à-dire des situations dans lesquelles votre résultat dépend non seulement de ce que vous faites, mais aussi de ce que font les autres. Cela s’applique partout : concurrence commerciale, relations internationales, enchères, négociations, biologie évolutive et décisions quotidiennes comme le choix d’un itinéraire dans la circulation. L'idée centrale est que les acteurs rationnels dans des situations stratégiques ne se contentent pas d'optimiser leur propre stratégie : ils anticipent ce que les autres feront, et d'autres font de même.
 ---

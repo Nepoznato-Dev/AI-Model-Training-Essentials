@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Ada — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Ada - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، کتابخانه ها و زیرساخت های ضروری در اکوسیستم آدا را پوشش می دهد.
 ---

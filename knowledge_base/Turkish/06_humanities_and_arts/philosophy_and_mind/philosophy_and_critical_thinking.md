@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Felsefe ve Eleştirel Düşünme
 Felsefe bilgi, gerçeklik ve varoluş hakkındaki temel soruların sistematik olarak incelenmesidir. Neyin bilgi olarak kabul edildiğini, neyin yapılmaya değer olduğunu ve iyi gerekçelendirilmiş argümanların zayıf olanlardan nasıl ayırt edileceğini değerlendirmek için bir çerçeve sağlar. Eleştirel düşünme bu çerçevenin pratik uygulamasıdır: İddiaları analiz etme, hatalı akıl yürütmeyi belirleme ve daha bilinçli kararlar verme becerisi. Bu dosya ana fikirleri, bunları değerlendirme araçlarını ve herkesi etkileyen bilişsel önyargıları kapsar.
 ---

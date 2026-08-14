@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # SQL - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا شاملاً ومنظمًا لصيغة SQL (ANSI SQL مع ملاحظات حول اختلافات لهجة PostgreSQL/MySQL/SQLite). وهو يكمل مرجع SQL الرئيسي من خلال التركيز على أنماط الاستعلام الشاملة، ووظائف النوافذ، وCTEs، وتصميم قاعدة البيانات.
 ---

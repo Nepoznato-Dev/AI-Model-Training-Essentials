@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "C# — Ecosystem & Tooling Guide"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # سی شارپ - راهنمای اکوسیستم و ابزار
 این راهنما ابزارها، چارچوب‌ها و زیرساخت‌های ضروری در اکوسیستم C#/.NET را پوشش می‌دهد.
 ---

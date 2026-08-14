@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # پرومتئوس و گرافانا
 Prometheus یک جعبه ابزار نظارت و هشدار منبع باز است که برای قابلیت اطمینان و مقیاس پذیری طراحی شده است. Grafana پلت فرم منبع باز پیشرو برای تجسم داده های سری زمانی است. آنها با هم، محبوب ترین پشته نظارت را برای زیرساخت ها و برنامه های کاربردی مدرن تشکیل می دهند. پرومتئوس معیارها را جمع آوری و ذخیره می کند. Grafana آنها را در داشبورد نمایش می دهد.
 ---

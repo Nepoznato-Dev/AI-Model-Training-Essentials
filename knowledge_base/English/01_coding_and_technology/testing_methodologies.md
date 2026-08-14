@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Testing Methodologies
 
 Testing is how you gain confidence that your code works — and more importantly, that changes to it don't break what already works. Good testing catches bugs before users do, documents expected behaviour, and enables fearless refactoring. This file covers the full spectrum of testing strategies, from unit tests to end-to-end tests, and the principles that make testing effective.

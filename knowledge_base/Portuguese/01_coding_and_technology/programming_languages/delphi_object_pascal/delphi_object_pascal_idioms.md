@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Delphi/Object Pascal — Padrões Idiomáticos e Melhores Práticas
 Este guia cobre padrões idiomáticos para escrever código limpo em Delphi e Object Pascal.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # 写作和沟通基础知识
 写作和沟通是有效传达想法的技能——无论是通过电子邮件、报告、文档、演示还是对话。大多数知识工作从根本上来说都是沟通工作：专业人员需要解释他们的想法、说服他人、记录决策、编写规范、展示发现以及跨团队协作。意思和理解之间的差距是大多数问题的根源，而更好的沟通可以缩小这一差距。
 ---

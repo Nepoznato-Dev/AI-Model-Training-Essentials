@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Wzorce architektury oprogramowania
 Architektura to zbiór decyzji strukturalnych dotyczących organizacji systemu — jakie ma komponenty, w jaki sposób się komunikują i kto ponosi odpowiedzialność. Dobra architektura sprawia, że ​​system jest łatwy do zrozumienia, modyfikowania i skalowania. Zła architektura sprawia, że ​​każda zmiana jest walką. W tym pliku omówiono główne wzorce, kiedy należy ich używać i związane z nimi kompromisy.
 ---

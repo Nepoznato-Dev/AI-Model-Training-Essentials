@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # API Tasarımı ve Mimarisi
 API (Uygulama Programlama Arayüzü), yazılım bileşenlerinin birbirleriyle nasıl konuştuğudur. İyi tasarlanmış bir API sezgiseldir, tutarlıdır ve birlikte çalışması keyiflidir. Kötü tasarlanmış bir model kafa karışıklığına, hatalara ve hayal kırıklığına neden olur. Bu dosya, geliştiricilerin gerçekten kullanmak istediği API'leri oluşturmaya yönelik ilkeleri, kalıpları ve uygulamaları kapsar.
 ---

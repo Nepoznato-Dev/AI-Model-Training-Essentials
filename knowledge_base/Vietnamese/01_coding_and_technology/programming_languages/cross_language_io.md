@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — I/O & File Operations"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # So sánh đa ngôn ngữ - Hoạt động I/O & Tệp
 ## Đầu ra bảng điều khiển
 | Ngôn ngữ | In ra thiết bị xuất chuẩn |

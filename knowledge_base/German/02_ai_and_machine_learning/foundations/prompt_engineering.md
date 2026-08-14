@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Schnelles Engineering
 Unter Prompt Engineering versteht man die Praxis des Entwerfens, Verfeinerns und Optimierens von Eingabeaufforderungen, um die bestmögliche Ausgabe eines Sprachmodells zu erzielen. Es ist sowohl eine Kunst als auch eine Wissenschaft und die primäre Schnittstelle zur Steuerung des LLM-Verhaltens ohne Feinabstimmung.
 ---

@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Roteiro de Exploração Espacial
 ## Visão geral
 Estamos vivendo uma nova era de ouro da exploração espacial. O programa Artemis da NASA está devolvendo humanos à Lua. A SpaceX está construindo um foguete totalmente reutilizável projetado para Marte. A China tem os seus próprios ambiciosos planos lunares e marcianos. E uma constelação crescente de empresas privadas está a abrir espaço ao comércio – desde a Internet por satélite ao turismo espacial. Aqui está o roteiro, da Lua a Marte e além.

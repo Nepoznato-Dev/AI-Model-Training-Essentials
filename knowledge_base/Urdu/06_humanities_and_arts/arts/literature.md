@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Literature"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #ادب
 ادب انسانی سوچ، جذبات اور تجربے کا سب سے زیادہ پائیدار ریکارڈ ہے۔ قدیم تہذیبوں کی زبانی مہاکاویوں سے لے کر آج کے ڈیجیٹل دور کے ناولوں تک، ہر کام اس سے بات چیت میں ہے جو پہلے آیا تھا۔ ادبی انواع، حرکات اور تکنیکوں کو سمجھنا آپ کو پڑھنے کے لیے اور ان ثقافتوں کو سمجھنے کے لیے ایک بھرپور لینس فراہم کرتا ہے جنہوں نے یہ کام تخلیق کیے ہیں۔
 ---

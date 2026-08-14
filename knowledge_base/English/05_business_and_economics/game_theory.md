@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Game Theory and Strategic Thinking
 
 Game theory is the mathematical study of strategic interactions — situations where your outcome depends not just on what you do, but on what others do. It applies everywhere: business competition, international relations, auctions, negotiations, evolutionary biology, and everyday decisions like choosing a route through traffic. The core insight is that rational actors in strategic situations don't just optimise their own strategy — they anticipate what others will do, and others are doing the same.

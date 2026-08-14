@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -43,8 +42,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Systèmes dynamiques
 Un **système dynamique** décrit comment un état évolue dans le temps selon une règle fixe. Des orbites planétaires à la dynamique des populations, des conditions météorologiques à la formation des réseaux neuronaux, la théorie des systèmes dynamiques fournit le langage et les outils nécessaires pour comprendre comment les choses changent. Ce fichier couvre les équations différentielles ordinaires (ODE), les équations aux dérivées partielles (PDE), l'analyse de stabilité, le chaos et les bifurcations.
 ---

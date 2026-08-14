@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Scratch — Deyimsel Kalıplar ve En İyi Uygulamalar
 Bu kılavuz temiz, iyi organize edilmiş Scratch projeleri yazmaya yönelik deyimsel kalıpları kapsar.
 ---

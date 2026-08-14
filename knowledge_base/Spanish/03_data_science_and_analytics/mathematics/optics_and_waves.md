@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Óptica y Ondas
 Las ondas están en todas partes: sonido, luz, agua, señales de radio, amplitudes de probabilidad cuántica, fluctuaciones del mercado de valores y vibraciones de activaciones de redes neuronales. La óptica (el estudio de la luz) es la ciencia ondulatoria mejor desarrollada y sus herramientas matemáticas (análisis de Fourier, interferencia, difracción) se aplican a todos los fenómenos ondulatorios. Comprender las ondas es esencial para el procesamiento de señales, el análisis de imágenes, las comunicaciones y la capa física de toda la tecnología moderna.
 ---

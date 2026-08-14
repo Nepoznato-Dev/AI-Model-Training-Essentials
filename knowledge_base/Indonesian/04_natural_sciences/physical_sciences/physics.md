@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Physics"
@@ -40,8 +39,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 #Fisika
 Fisika menanyakan pertanyaan paling mendasar dalam sains: bagaimana perilaku materi dan energi? Segala sesuatu yang lain – kimia, biologi, teknik – dibangun berdasarkan jawabannya. Fisika berkisar dari skala subatom (mekanika kuantum) hingga skala kosmik (relativitas umum), dan prinsip-prinsipnya mendasari semua ilmu alam lainnya.
 ---

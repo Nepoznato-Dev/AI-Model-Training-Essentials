@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Leistungsoptimierung
 Bei der Leistungsoptimierung geht es darum, Software schneller zu machen – Reaktionszeiten zu verkürzen, den Durchsatz zu erhöhen, die Speichernutzung zu senken und Engpässe zu beseitigen. Es ist eine der wirkungsvollsten Fähigkeiten, die ein Entwickler haben kann, denn langsame Software verliert Benutzer, verschwendet Ressourcen und frustriert alle. Aber es ist auch einer der häufigsten Fehler, wenn Entwickler die falschen Dinge auf der Grundlage ihrer Intuition und nicht auf der Grundlage von Beweisen optimieren.
 ---

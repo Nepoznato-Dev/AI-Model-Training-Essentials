@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # CI/CD パイプライン構成
 継続的インテグレーション (CI) および継続的デプロイメント (CD) パイプラインは、ソフトウェアの構築、テスト、デプロイのプロセスを自動化します。このリファレンスでは、最も一般的な CI/CD プラットフォーム (GitHub Actions、GitLab CI、および一般的なパイプライン設計原則) の構成パターンについて説明します。
 ---

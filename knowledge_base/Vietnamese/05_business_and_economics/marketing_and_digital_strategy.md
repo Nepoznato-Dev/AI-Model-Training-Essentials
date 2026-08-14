@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -39,8 +38,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Chiến lược tiếp thị và kỹ thuật số
 Tiếp thị là cách doanh nghiệp tạo ra, giao tiếp và cung cấp giá trị cho khách hàng. Nó bao gồm toàn bộ hệ thống tìm hiểu nhu cầu của khách hàng, định vị sản phẩm để đáp ứng những nhu cầu đó và xây dựng các mối quan hệ biến người mua thành người ủng hộ. Cuộc cách mạng kỹ thuật số đã thay đổi các công cụ, kênh và tốc độ tiếp thị trong khi các nguyên tắc cơ bản vẫn nhất quán.
 ---

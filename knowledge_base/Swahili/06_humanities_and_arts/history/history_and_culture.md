@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Historia na Utamaduni
 Historia ni hadithi ya kile ambacho wanadamu wamefanya - mafanikio, majanga, uvumbuzi na mawazo ambayo yalitengeneza ulimwengu tunaoishi leo. Sio orodha tu ya tarehe na majina. Kuelewa historia hukusaidia kuelewa kwa nini mipaka iko mahali ilipo, kwa nini watu wanazungumza lugha wanazozungumza, kwa nini baadhi ya nchi ni tajiri huku nyingine hazina, na kwa nini migogoro inayoonekana kuwa ya kale bado inapamba moto.
 Faili hii inashughulikia vipindi na mada kuu katika historia ya ulimwengu, kutoka kwa ustaarabu wa kwanza hadi leo.

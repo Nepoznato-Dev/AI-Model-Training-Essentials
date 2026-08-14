@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -44,8 +43,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # ML Mühendisliği ve MLOps
 Bir makine öğrenimi modeli oluşturmak savaşın yalnızca yarısıdır. Üretime almak, güvenilir bir şekilde çalışmasını sağlamak, sapmaları izlemek ve yinelemek; makine öğrenimi mühendisliği ve MLOps'un devreye girdiği yer burasıdır. Bu dosya, denemeden üretim sistemine kadar tüm yaşam döngüsünü kapsar.
 ---

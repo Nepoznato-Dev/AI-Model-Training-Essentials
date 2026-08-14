@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Idiomatic Patterns & Best Practices"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Shell y PowerShell: patrones idiomáticos y mejores prácticas
 Esta guía cubre patrones idiomáticos para secuencias de comandos Bash/Zsh y PowerShell.
 ---

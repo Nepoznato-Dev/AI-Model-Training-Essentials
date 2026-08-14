@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -19,8 +18,6 @@ contribution:
   license: "MIT"
   feedback_channel: "GitHub Issues"
 ---
-
--->
 # Perbandingan Lintas Bahasa — Tipe & Struktur Data
 ## Tipe Primitif
 | Ketik | ular piton | JavaScript | Karat | Pergi | Jawa | C | C++ | C#|

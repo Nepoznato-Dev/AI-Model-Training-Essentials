@@ -1,4 +1,3 @@
-<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -42,8 +41,6 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-
--->
 # Quá trình ngẫu nhiên
 **Quá trình ngẫu nhiên** là tập hợp các biến ngẫu nhiên được lập chỉ mục theo thời gian (hoặc không gian). Trong khi lý thuyết xác suất nghiên cứu các sự kiện ngẫu nhiên riêng lẻ thì các quá trình ngẫu nhiên nghiên cứu tính ngẫu nhiên phát triển như thế nào theo thời gian. Họ lập mô hình giá cổ phiếu, độ dài hàng đợi, sự lây lan của bệnh tật, tạo ra ngôn ngữ và động lực đào tạo của các mô hình học máy.
 ---
