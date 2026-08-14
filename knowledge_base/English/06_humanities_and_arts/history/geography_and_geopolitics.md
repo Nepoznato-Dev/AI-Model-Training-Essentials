@@ -5,7 +5,7 @@ title: "Geography and Geopolitics"
 description: "Physical/human geography, political systems"
 category: "Humanities and Arts"
 subcategory: "History"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

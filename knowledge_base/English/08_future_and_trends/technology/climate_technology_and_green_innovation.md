@@ -5,7 +5,7 @@ title: "Climate Technology and Green Innovation"
 description: "Renewable energy, EVs, carbon capture, green hydrogen, sustainable tech"
 category: "Future and Trends"
 subcategory: "Technology"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

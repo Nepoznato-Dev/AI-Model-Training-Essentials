@@ -79,6 +79,8 @@ Infrastructure, deployment, monitoring, and operational excellence.
 - [Container Orchestration](./devops-skills/container_orchestration.md)
 - [MLOps](./devops-skills/mlops.md)
 
+[**Browse Category →**](./devops-skills/README.md)
+
 ### 🔒 Security Skills (`security-skills/`)
 Application security and secure coding practices.
 

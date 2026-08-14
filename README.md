@@ -3,9 +3,9 @@
 > 🌍 **A multilingual knowledge base and AI teaching repository for small local models.**
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Languages](https://img.shields.io/badge/languages-20-multicolor)](knowledge_base/)
-[![Knowledge Files](https://img.shields.io/badge/knowledge_files-103+-green)](knowledge_base/English/)
-[![Skills](https://img.shields.io/badge/skills-45+-orange)](skills/)
+[![Languages](https://img.shields.io/badge/languages-23-multicolor)](knowledge_base/)
+[![Knowledge Files](https://img.shields.io/badge/knowledge_files-390+-green)](knowledge_base/English/)
+[![Skills](https://img.shields.io/badge/skills-46+-orange)](skills/)
 [![Wiki](https://img.shields.io/badge/wiki-documentation-purple)](wiki/)
 [![Projects](https://img.shields.io/badge/projects-runnable-lightgrey)](guides/projects/)
 

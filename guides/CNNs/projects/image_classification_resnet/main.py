@@ -266,10 +266,11 @@ criterion = nn.CrossEntropyLoss()
 # Weight decay helps prevent overfitting
 optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-4)
 
-# Learning rate scheduler: reduces LR when training plateaus
+# Learning rate scheduler: reduces LR when validation loss plateaus
 # This helps the model fine-tune weights in later epochs
+# Note: verbose=True was removed (deprecated in PyTorch 2.0+); we log LR changes manually
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-    optimizer, mode='min', factor=0.5, patience=3, verbose=True
+    optimizer, mode='min', factor=0.5, patience=3
 )
 
 print("Training components initialized:")
@@ -284,6 +285,8 @@ print()
 
 num_epochs = 20
 best_acc = 0.0
+best_val_loss = float('inf')
+prev_lr = optimizer.param_groups[0]['lr']
 print(f"Starting training for {num_epochs} epochs...")
 print("-" * 70)
 
@@ -315,18 +318,40 @@ for epoch in range(num_epochs):
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
     
-    # Epoch statistics
+    # Epoch training statistics
     epoch_loss = running_loss / len(trainloader)
     epoch_acc = 100 * correct / total
-    epoch_time = time.time() - epoch_start
     
-    # Update learning rate scheduler
-    scheduler.step(epoch_loss)
+    # --- Validation pass on test set (used for scheduler stepping) ---
+    model.eval()
+    val_loss = 0.0
+    with torch.no_grad():
+        for images, labels in testloader:
+            images, labels = images.to(device), labels.to(device)
+            outputs = model(images)
+            loss = criterion(outputs, labels)
+            val_loss += loss.item()
+    val_loss /= len(testloader)
+    model.train()  # switch back to training mode
+    
+    # Step scheduler on VALIDATION loss (standard practice to avoid overfitting)
+    scheduler.step(val_loss)
+    
+    # Log learning rate changes (replaces deprecated verbose=True)
+    current_lr = optimizer.param_groups[0]['lr']
+    lr_note = ""
+    if current_lr != prev_lr:
+        lr_note = f" | LR reduced: {prev_lr:.6f} -> {current_lr:.6f}"
+        prev_lr = current_lr
+    
+    epoch_time = time.time() - epoch_start
     
     print(f"Epoch [{epoch+1:2d}/{num_epochs}] | "
           f"Loss: {epoch_loss:.4f} | "
+          f"Val Loss: {val_loss:.4f} | "
           f"Train Acc: {epoch_acc:.2f}% | "
-          f"Time: {epoch_time:.1f}s")
+          f"Time: {epoch_time:.1f}s"
+          f"{lr_note}")
 
 total_training_time = time.time() - start_time
 print("-" * 70)

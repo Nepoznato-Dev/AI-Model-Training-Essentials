@@ -5,7 +5,7 @@ title: "Emerging Technologies"
 description: "Quantum computing, biotech, nanotechnology"
 category: "Future and Trends"
 subcategory: "Technology"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

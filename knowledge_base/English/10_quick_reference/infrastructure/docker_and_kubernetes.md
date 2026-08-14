@@ -5,7 +5,7 @@ title: "Docker and Kubernetes Cheat Sheet"
 description: "Docker, Docker Compose, Kubernetes, Helm cheat sheet"
 category: "Quick Reference"
 subcategory: "Infrastructure"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -5,7 +5,7 @@ title: "NLP Fundamentals"
 description: "Text processing, embeddings, Transformers, BERT, GPT"
 category: "AI and Machine Learning"
 subcategory: "NLP and Speech"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -5,7 +5,7 @@ title: "Recommendation Systems"
 description: "Collaborative filtering, content-based, hybrid, matrix factorisation"
 category: "AI and Machine Learning"
 subcategory: "Model Architectures"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

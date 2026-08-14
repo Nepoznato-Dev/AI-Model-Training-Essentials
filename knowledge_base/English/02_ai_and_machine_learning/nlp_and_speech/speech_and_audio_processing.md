@@ -5,7 +5,7 @@ title: "Speech and Audio Processing"
 description: "ASR, TTS, audio features, Whisper, speech pipelines"
 category: "AI and Machine Learning"
 subcategory: "NLP and Speech"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

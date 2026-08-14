@@ -5,7 +5,7 @@ title: "AI Safety and Alignment"
 description: "Alignment problem, RLHF, interpretability, AI safety research"
 category: "AI and Machine Learning"
 subcategory: "Ethics and Safety"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -204,7 +204,7 @@ test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
 # Loss and optimizer
 criterion = nn.BCEWithLogitsLoss()  # Binary cross-entropy for multi-label
 optimizer = Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
-scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10)
+scheduler = ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=10)  # max: AUC is higher-is-better
 
 
 def train_epoch():
@@ -259,7 +259,7 @@ for epoch in range(num_epochs):
     train_loss = train_epoch()
     val_auc = evaluate(val_loader)
     
-    scheduler.step(train_loss)
+    scheduler.step(val_auc)  # step on validation metric, not training loss
     
     if (epoch + 1) % 10 == 0:
         print(f"Epoch {epoch+1}/{num_epochs}")
@@ -1238,7 +1238,7 @@ for epoch in range(num_epochs):
     train_loss = train_epoch()
     val_metrics = evaluate(val_loader)
     
-    scheduler.step(train_loss)
+    scheduler.step(val_metrics['mae'])  # step on validation metric, not training loss
     
     if (epoch + 1) % 10 == 0:
         print(f"Epoch {epoch+1}/{num_epochs}")

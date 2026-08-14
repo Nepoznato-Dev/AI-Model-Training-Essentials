@@ -5,7 +5,7 @@ title: "Cloud Services Comparison"
 description: "AWS vs Azure vs GCP side-by-side comparison"
 category: "Quick Reference"
 subcategory: "Infrastructure"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -50,7 +50,7 @@ knowledge_base/
 ├── Filipino/
 ├── French/
 ├── German/
-├── ... (24 languages total)
+├── ... (23 languages total)
 └── Vietnamese/
 ```
 
@@ -119,7 +119,7 @@ Beyond the language-specific knowledge base, the repository also contains:
 | Resource | Location | Description |
 |----------|----------|-------------|
 | **Guides** | [`/guides`](../guides/) | In-depth chapter-based guides on CNNs, Transformers, RAG, GANs, GNNs, Agentic Systems, MoE, and more |
-| **Skills** | [`/skills`](../skills/) | 50+ skill modules for AI agents — behaviour, collaboration, design, DevOps, security, testing |
+| **Skills** | [`/skills`](../skills/) | 46 skill modules for AI agents — AI engineering, behaviour, collaboration, design, DevOps, security, testing |
 | **Agent Modes** | [`/agent_modes`](../agent_modes/) | 16 pre-configured agent modes across four categories: Core Workflow (Agent, Plan, Explore, Ask, Chat), Quality & Reliability (Debug, Test, Review, Lint, Performance), Security & Operations (Secure, DevOps, Database), and Specialized (Documentation, Migration, Orchestrator) |
 | **Wiki** | [`/wiki`](../wiki/) | Architecture patterns, deployment, monitoring, security, learning paths |
 | **Projects** | [`/guides/projects`](../guides/projects/) | Runnable code examples (RAG chatbot, CNN basics, Transformers intro) |

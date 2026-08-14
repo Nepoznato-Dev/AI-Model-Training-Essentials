@@ -5,7 +5,7 @@ title: "Artificial Intelligence"
 description: "AI overview, ML, deep learning, LLMs, ethics"
 category: "AI and Machine Learning"
 subcategory: "Foundations"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

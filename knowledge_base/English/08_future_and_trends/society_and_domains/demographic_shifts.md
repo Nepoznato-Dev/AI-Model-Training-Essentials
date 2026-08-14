@@ -5,7 +5,7 @@ title: "Demographic Shifts"
 description: "Population trends, migration, urbanization"
 category: "Future and Trends"
 subcategory: "Society and Domains"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -5,7 +5,7 @@ title: "Multimodal AI"
 description: "Vision-language models, CLIP, DALL-E, cross-modal learning"
 category: "AI and Machine Learning"
 subcategory: "NLP and Speech"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

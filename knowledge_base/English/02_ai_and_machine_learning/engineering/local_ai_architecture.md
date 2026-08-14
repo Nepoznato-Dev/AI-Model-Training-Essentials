@@ -5,7 +5,7 @@ title: "Local AI Architecture"
 description: "Local AI deployment architectures"
 category: "AI and Machine Learning"
 subcategory: "ML Engineering"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -5,7 +5,7 @@ title: "AI Ethics and Governance"
 description: "AI bias, fairness, accountability, regulation, governance frameworks"
 category: "AI and Machine Learning"
 subcategory: "Ethics and Safety"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

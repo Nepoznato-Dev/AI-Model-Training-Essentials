@@ -5,7 +5,7 @@ title: "Prompt Engineering"
 description: "Prompt techniques and strategies"
 category: "AI and Machine Learning"
 subcategory: "Foundations"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

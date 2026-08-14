@@ -5,7 +5,7 @@ title: "History and Culture"
 description: "World history from ancient civilizations to the Information Age"
 category: "Humanities and Arts"
 subcategory: "History"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

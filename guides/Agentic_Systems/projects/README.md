@@ -11,7 +11,7 @@ A basic agent implementation with short-term and long-term memory, tools (calcul
 **Files:**
 - `simple_agent_memory/` - Agent with memory capabilities
   - `main.py` - Full agent with ShortTermMemory, LongTermMemory, tools, and interactive mode
-  - `requirements.txt` - Dependencies (openai, langchain)
+  - `requirements.txt` - No external dependencies (stdlib only)
 
 ### 2. Multi-Agent Collaboration
 

@@ -5,7 +5,7 @@ title: "Linux Commands Quick Reference"
 description: "Linux command line reference"
 category: "Quick Reference"
 subcategory: "Infrastructure"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -205,9 +205,10 @@ class AgentTools:
                     ast.Add: lambda a, b: a + b,
                     ast.Sub: lambda a, b: a - b,
                     ast.Mult: lambda a, b: a * b,
-                    ast.Div: lambda a, b: a / b if b != 0 else float('inf'),
+                    ast.Div: lambda a, b: a / b if b != 0 else (_ for _ in ()).throw(ZeroDivisionError("Division by zero")),
                     ast.Pow: lambda a, b: a ** b,
-                    ast.Mod: lambda a, b: a % b,
+                    ast.Mod: lambda a, b: a % b if b != 0 else (_ for _ in ()).throw(ZeroDivisionError("Modulo by zero")),
+                    ast.FloorDiv: lambda a, b: a // b if b != 0 else (_ for _ in ()).throw(ZeroDivisionError("Division by zero")),
                 }
                 op_type = type(node.op)
                 if op_type in ops:
@@ -271,6 +272,10 @@ class AgentTools:
 class SimpleAgent:
     """
     A simple rule-based agent with memory and tools.
+    
+    TODO: Consider renaming to RuleBasedAgent or PatternMatchingAgent
+    to more clearly convey the reasoning approach, especially if an
+    LLM-backed agent class is added later.
     
     The agent follows a perceive -> think -> act -> observe loop:
     
@@ -571,4 +576,4 @@ if __name__ == "__main__":
     else:
         run_demo()
         print()
-        print("To chat interactively, run: python simple_agent.py --interactive")
+        print("To chat interactively, run: python main.py --interactive")

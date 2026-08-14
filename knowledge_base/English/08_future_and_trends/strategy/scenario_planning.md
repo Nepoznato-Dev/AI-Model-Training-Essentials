@@ -5,7 +5,7 @@ title: "Scenario Planning"
 description: "Future scenarios and frameworks"
 category: "Future and Trends"
 subcategory: "Strategy"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

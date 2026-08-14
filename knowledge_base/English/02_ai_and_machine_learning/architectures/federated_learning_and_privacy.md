@@ -5,7 +5,7 @@ title: "Federated Learning and Privacy"
 description: "Decentralised training, differential privacy, secure aggregation"
 category: "AI and Machine Learning"
 subcategory: "Model Architectures"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

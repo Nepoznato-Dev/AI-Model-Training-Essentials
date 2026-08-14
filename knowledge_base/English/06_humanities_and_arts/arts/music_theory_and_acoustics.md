@@ -5,7 +5,7 @@ title: "Music Theory and Acoustics"
 description: "Scales, chords, harmony, rhythm, room acoustics, instrument physics"
 category: "Humanities and Arts"
 subcategory: "Arts"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

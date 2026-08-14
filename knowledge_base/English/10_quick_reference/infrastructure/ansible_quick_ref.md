@@ -5,7 +5,7 @@ title: "Ansible and Configuration Management"
 description: "Ansible playbooks, modules, roles, inventory, automation cheat sheet"
 category: "Quick Reference"
 subcategory: "Infrastructure"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

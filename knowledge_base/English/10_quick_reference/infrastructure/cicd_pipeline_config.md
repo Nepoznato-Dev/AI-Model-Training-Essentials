@@ -5,7 +5,7 @@ title: "CI/CD Pipeline Configuration"
 description: "GitHub Actions, GitLab CI, Jenkins, pipeline YAML patterns"
 category: "Quick Reference"
 subcategory: "Infrastructure"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

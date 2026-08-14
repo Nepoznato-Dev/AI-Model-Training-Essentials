@@ -5,7 +5,7 @@ title: "Materials Science"
 description: "Crystal structures, polymers, alloys, semiconductors, nanomaterials"
 category: "Natural Sciences"
 subcategory: "Physical Sciences"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -5,7 +5,7 @@ title: "Reinforcement Learning"
 description: "MDPs, Q-learning, policy gradients, RLHF, multi-agent systems"
 category: "AI and Machine Learning"
 subcategory: "Model Architectures"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

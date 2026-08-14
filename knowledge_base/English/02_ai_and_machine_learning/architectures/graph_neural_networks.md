@@ -5,7 +5,7 @@ title: "Graph Neural Networks"
 description: "GCNs, GATs, message passing, knowledge graphs, graph tasks"
 category: "AI and Machine Learning"
 subcategory: "Model Architectures"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

@@ -5,7 +5,7 @@ title: "Bash and Shell Scripting Cheat Sheet"
 description: "Bash scripting, text processing, useful one-liners"
 category: "Quick Reference"
 subcategory: "Infrastructure"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

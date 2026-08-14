@@ -5,7 +5,7 @@ title: "Phi-3-mini and the Local AI Model Landscape"
 description: "Running models locally"
 category: "AI and Machine Learning"
 subcategory: "ML Engineering"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution
@@ -109,11 +109,11 @@ Standard multi-head attention (MHA) has one key-value (KV) head per attention he
 - Activation function: SiLU (Sigmoid Linear Unit)
 
 ### SFT and RLHF Alignment
-Like all deployed chat models, Phi-3-mini goes through:
+Like all deployed chat models, Phi-3-mini goes through a standard alignment pipeline:
 1. **Supervised Fine-Tuning (SFT)** on instruction-following examples
-2. **Proximal Policy Optimisation (PPO)** against a reward model trained on human preference data
+2. **Reinforcement Learning from Human Feedback (RLHF)** — the chat model is aligned against a reward model trained on human preference data, typically using Proximal Policy Optimisation (PPO)
 
-This turns the base next-token predictor into a helpful, instruction-following assistant.
+This turns the base next-token predictor into a helpful, instruction-following assistant. Note that this is the standard LLM alignment process shared by models like Llama 2/3 and Mistral, not a Phi-3-specific technique.
 
 ---
 
@@ -179,7 +179,7 @@ The Phi-3 design philosophy aligns closely with Potato.ai's KB-centric approach:
 - 8B and 70B variants (with 400B+ coming)
 - Best-in-class open-weight models at each size
 - 8,192 token context window (extendable)
-- Apache 2.0 licence for commercial use
+- Llama 3 Community License for commercial use (open-weight, not Apache 2.0)
 
 ### Mistral / Mixtral
 - **Mistral 7B**: punches above its weight, sliding-window attention

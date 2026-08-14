@@ -5,7 +5,7 @@ title: "Computer Vision Fundamentals"
 description: "CNNs, object detection, segmentation, transfer learning"
 category: "AI and Machine Learning"
 subcategory: "NLP and Speech"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

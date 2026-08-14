@@ -5,7 +5,7 @@ title: "World Religions and Comparative Mythology"
 description: "Major world religions, comparative mythology, belief systems"
 category: "Humanities and Arts"
 subcategory: "Religion and Mythology"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

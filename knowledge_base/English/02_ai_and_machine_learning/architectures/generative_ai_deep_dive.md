@@ -5,7 +5,7 @@ title: "Generative AI Deep Dive"
 description: "GANs, VAEs, diffusion models, LLMs, generative AI applications"
 category: "AI and Machine Learning"
 subcategory: "Model Architectures"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

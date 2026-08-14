@@ -5,7 +5,7 @@ title: "Future of Work"
 description: "Automation, remote work, reskilling"
 category: "Future and Trends"
 subcategory: "Society and Domains"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

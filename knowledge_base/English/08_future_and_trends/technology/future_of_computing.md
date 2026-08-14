@@ -5,7 +5,7 @@ title: "The Future of Computing"
 description: "Moore's Law, quantum computing, neuromorphic chips, edge computing"
 category: "Future and Trends"
 subcategory: "Technology"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

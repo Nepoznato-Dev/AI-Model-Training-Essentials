@@ -5,7 +5,7 @@ title: "Model Optimisation and Deployment"
 description: "Quantisation, pruning, distillation, ONNX, serving infrastructure"
 category: "AI and Machine Learning"
 subcategory: "ML Engineering"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

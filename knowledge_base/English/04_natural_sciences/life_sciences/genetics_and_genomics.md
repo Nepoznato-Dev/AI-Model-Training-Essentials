@@ -5,7 +5,7 @@ title: "Genetics and Genomics"
 description: "DNA, gene expression, CRISPR, GWAS, sequencing technologies"
 category: "Natural Sciences"
 subcategory: "Life Sciences"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

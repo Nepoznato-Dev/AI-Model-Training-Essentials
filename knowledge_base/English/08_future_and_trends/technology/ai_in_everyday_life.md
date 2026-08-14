@@ -5,7 +5,7 @@ title: "AI in Everyday Life"
 description: "Recommendation systems, smart assistants, privacy, attention economy"
 category: "Future and Trends"
 subcategory: "Technology"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

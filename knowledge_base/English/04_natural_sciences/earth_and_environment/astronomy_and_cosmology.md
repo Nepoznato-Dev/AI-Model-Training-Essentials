@@ -5,7 +5,7 @@ title: "Astronomy and Cosmology"
 description: "Stars, galaxies, Big Bang, dark matter, exoplanets, cosmology"
 category: "Natural Sciences"
 subcategory: "Earth and Environment"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

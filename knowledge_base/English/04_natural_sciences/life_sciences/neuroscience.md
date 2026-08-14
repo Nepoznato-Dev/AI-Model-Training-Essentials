@@ -5,7 +5,7 @@ title: "Neuroscience"
 description: "Neurons, brain structure, neurotransmitters, plasticity, brain imaging"
 category: "Natural Sciences"
 subcategory: "Life Sciences"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

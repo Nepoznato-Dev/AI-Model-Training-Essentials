@@ -5,7 +5,7 @@ title: "Environmental Science and Sustainability"
 description: "Ecosystems, climate, energy, policy"
 category: "Natural Sciences"
 subcategory: "Earth and Environment"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

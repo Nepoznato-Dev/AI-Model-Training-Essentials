@@ -5,7 +5,7 @@ title: "Time Series and Forecasting"
 description: "ARIMA, Prophet, LSTMs, seasonality, anomaly detection"
 category: "AI and Machine Learning"
 subcategory: "NLP and Speech"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution

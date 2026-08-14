@@ -5,7 +5,7 @@ title: "Prometheus and Grafana"
 description: "PromQL, exporters, dashboards, alerting, monitoring stack"
 category: "Quick Reference"
 subcategory: "Infrastructure"
-version: "1.0.0"
+version: "1.0.1"
 status: "active"
 
 # Contribution
