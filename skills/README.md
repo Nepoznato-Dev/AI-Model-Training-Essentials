@@ -17,98 +17,107 @@ This repository contains structured skill documentation organized by category. E
 
 ## Categories
 
-### 🎯 Focused Skills Library (`focused-skills/`)
-**NEW!** 10 well-developed ML/AI skills with practice projects and deliberately broken code to debug.
+### 🤖 AI Engineering Skills (`ai-engineering-skills/`)
+**NEW!** Practical skills for building, fine-tuning, and deploying AI/ML systems.
 
-Each skill includes:
-- Clear learning objectives tied to specific guides
-- Hands-on practice exercises
-- Broken code to fix (learn by debugging!)
-- Real-world applications
-- Mastery checklists
+- [Model Fine-Tuning](./ai-engineering-skills/model_fine_tuning.md) — Adapt pre-trained models with LoRA, QLoRA, and full fine-tuning
+- [Experiment Design](./ai-engineering-skills/experiment_design.md) — Structure reproducible ML experiments with statistical rigor
+- [Data Pipeline Design](./ai-engineering-skills/data_pipeline_design.md) — Build robust, scalable data pipelines for training and inference
 
-[**Start Here →**](./focused-skills/README.md)
+[**Browse Category →**](./ai-engineering-skills/README.md)
 
----
+### 🤖 Automation Skills (`automation-skills/`)
+**NEW!** Skills for automating repetitive workflows and building reliable scripts.
+
+- [Workflow Automation](./automation-skills/workflow_automation.md) — Design automated workflows with scheduling, retries, and monitoring
+- [Scripting for Engineers](./automation-skills/scripting_for_engineers.md) — Write robust automation scripts with proper error handling and logging
+
+[**Browse Category →**](./automation-skills/README.md)
 
 ### 🧠 Behavior Skills (`behavior-skills/`)
 Cognitive and personal effectiveness skills for individual contributors.
 
-- Brainstorming
-- Debugging
-- Explanation
-- Learning
-- Planning
-- Style Adaptation
-- Summarization
-- Teaching
-- Writing
+- [Brainstorming](./behavior-skills/brainstorming.md)
+- [Debugging](./behavior-skills/debugging.md)
+- [Explanation](./behavior-skills/explanation.md)
+- [Learning](./behavior-skills/learning.md)
+- [Planning](./behavior-skills/planning.md)
+- [Prompt Engineering](./behavior-skills/prompt_engineering.md)
+- [Style Adaptation](./behavior-skills/style_adaptation.md)
+- [Summarization](./behavior-skills/summarization.md)
+- [Teaching](./behavior-skills/teaching.md)
+- [Writing](./behavior-skills/writing.md)
 
 ### 🤝 Collaboration Skills (`collaboration-skills/`)
 Skills for working effectively with others.
 
-- Code Review
-- Pair Programming
-- Team Collaboration
+- [Code Review](./collaboration-skills/code_review.md)
+- [Pair Programming](./collaboration-skills/pair_programming.md)
+- [Team Collaboration](./collaboration-skills/team_collaboration.md)
 
 ### 🎨 Designing Skills (`designing-skills/`)
 Design-related competencies for building better products.
 
-- API Design
-- GUI Design
-- System Architecture
-- UI/UX Design
-- Visual Design
-
-### 📊 Research Skills (`research-skills/`)
-Information gathering and analysis capabilities.
-
-- Critical Thinking
-- Information Retrieval
-
-### 🗣️ Speaking Skills (`speaking-skills/`)
-Communication and presentation abilities.
-
-- One-on-One Communication
-- Public Speaking
-- Technical Presentation
-
-### 🔧 Technical Skills (`technical-skills/`)
-Core technical competencies for software development.
-
-- Programming Fundamentals
-- Algorithm Design
-
-### ✅ Testing Skills (`testing-skills/`)
-Quality assurance and testing methodologies.
-
-- Test Automation
-- Unit Testing
-
-### ⚙️ DevOps Skills (`devops-skills/`)
-Infrastructure, deployment, monitoring, and operational excellence.
-
-- CI/CD
-- Infrastructure as Code
-- Container Orchestration
-
-### 🔒 Security Skills (`security-skills/`)
-Application security and secure coding practices.
-
-- Authentication & Authorization
-- Secure Coding
-- Threat Modeling
-
-### 👔 Management Skills (`management-skills/`)
-Leadership and people management capabilities.
-
-- Project Management
+- [API Design](./designing-skills/api_design.md)
+- [GUI Design](./designing-skills/gui_design.md)
+- [System Architecture](./designing-skills/system_architecture.md)
+- [UI/UX Design](./designing-skills/ui_ux_design.md)
+- [Visual Design](./designing-skills/visual_design.md)
 
 ### 📈 Data Skills (`data-skills/`)
 Data engineering, analysis, and database design.
 
-- Data Analysis
-- Database Design
+- [Data Analysis](./data-skills/data_analysis.md)
+- [Database Design](./data-skills/database_design.md)
+- [Experiment Tracking](./data-skills/experiment_tracking.md)
+
+### ⚙️ DevOps Skills (`devops-skills/`)
+Infrastructure, deployment, monitoring, and operational excellence.
+
+- [CI/CD](./devops-skills/ci_cd.md)
+- [Infrastructure as Code](./devops-skills/infrastructure_as_code.md)
+- [Container Orchestration](./devops-skills/container_orchestration.md)
+- [MLOps](./devops-skills/mlops.md)
+
+### 🔒 Security Skills (`security-skills/`)
+Application security and secure coding practices.
+
+- [Authentication & Authorization](./security-skills/authentication_authorization.md)
+- [Secure Coding](./security-skills/secure_coding.md)
+- [Threat Modeling](./security-skills/threat_modeling.md)
+
+### 🔧 Technical Skills (`technical-skills/`)
+Core technical competencies for software development.
+
+- [Programming Fundamentals](./technical-skills/programming_fundamentals.md)
+- [Algorithm Design](./technical-skills/algorithm_design.md)
+- [Model Evaluation](./technical-skills/model_evaluation.md)
+- [Git Workflows](./technical-skills/git_workflows.md)
+
+### ✅ Testing Skills (`testing-skills/`)
+Quality assurance and testing methodologies.
+
+- [Test Automation](./testing-skills/test_automation.md)
+- [Unit Testing](./testing-skills/unit_testing.md)
+
+### 📊 Research Skills (`research-skills/`)
+Information gathering and analysis capabilities.
+
+- [Critical Thinking](./research-skills/critical_thinking.md)
+- [Information Retrieval](./research-skills/information_retrieval.md)
+
+### 🗣️ Speaking Skills (`speaking-skills/`)
+Communication and presentation abilities.
+
+- [One-on-One Communication](./speaking-skills/one_on_one_communication.md)
+- [Public Speaking](./speaking-skills/public_speaking.md)
+- [Technical Presentation](./speaking-skills/technical_presentation.md)
+- [Technical Writing](./speaking-skills/technical_writing.md)
+
+### 👔 Management Skills (`management-skills/`)
+Leadership and people management capabilities.
+
+- [Project Management](./management-skills/project_management.md)
 
 ## Skill Template
 
@@ -244,4 +253,61 @@ When making changes to a skill file, **always update the frontmatter**:
 
 ## Learning Paths
 
-Learning paths mapping skills to roles and experience levels are coming soon.
+Structured skill sequences for common roles and goals:
+
+### New Software Engineer
+```
+Learning → Debugging → Writing → Planning → Git Workflows → Code Review
+```
+Build the foundation: learn fast, solve problems systematically, communicate clearly.
+
+### AI/ML Engineer
+```
+Experiment Design → Model Fine-Tuning → Data Pipeline Design → Prompt Engineering
+→ Testing ML Systems → MLOps
+```
+Master the full ML lifecycle from experiment to production.
+
+### Tech Lead / Senior Engineer
+```
+System Architecture → Explanation → Teaching → Project Management
+→ Code Review → Team Collaboration
+```
+Multiply your impact through architecture decisions and team development.
+
+### Full-Stack Developer
+```
+Programming Fundamentals → API Design → UI/UX Design → CI/CD
+→ Secure Coding → Test Automation
+```
+Cover the complete stack from frontend to deployment with security and quality.
+
+## Skill Count
+
+| Category | Skills |
+|----------|--------|
+| AI Engineering | 3 |
+| Automation | 2 |
+| Behavior | 10 |
+| Collaboration | 3 |
+| Data | 3 |
+| Designing | 5 |
+| DevOps | 4 |
+| Management | 1 |
+| Research | 2 |
+| Security | 3 |
+| Speaking | 4 |
+| Technical | 4 |
+| Testing | 2 |
+| **Total** | **46** |
+
+## Inspiration & Acknowledgments
+
+Our skill design methodology draws inspiration from leading open-source skill frameworks:
+- [Anthropic Skills](https://github.com/anthropics/skills) — Progressive disclosure and decision-tree patterns
+- [OpenAI Skills](https://github.com/openai/skills) — Curated skill collections
+- [Google Skills](https://github.com/google/skills) — Domain-specific expertise
+- [NVIDIA Skills](https://github.com/NVIDIA/skills) — GPU-optimized workflows
+- [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) — 5,300+ community skills for reference
+
+See [`skill-creator.md`](skill-creator.md) for the full guide on creating new skills, including modern design patterns.

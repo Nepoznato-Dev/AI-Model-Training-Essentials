@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "البلوكشين والأنظمة الموزعة"
-الوصف: "الإجماع، العقود الذكية، DeFi، التسامح مع الخطأ البيزنطي"
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Blockchain and Distributed Systems"
+description: "Consensus, smart contracts, DeFi, Byzantine fault tolerance"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [سلسلة الكتل، الموزعة، الأنظمة، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "7 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [blockchain, distributed, systems, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Blockchain والأنظمة الموزعة
 Blockchain هو نوع محدد من الأنظمة الموزعة - وهو دفتر أستاذ لا مركزي وملحق فقط حيث يتم ربط السجلات (الكتل) عن طريق تجزئات التشفير. الأنظمة الموزعة هي المجال الأوسع لجعل أجهزة الكمبيوتر المتعددة تعمل معًا كجهاز واحد. كلا المفهومين مهمان لفهم البنية التحتية الحديثة، من العملات المشفرة إلى قواعد البيانات الموزعة إلى خوارزميات الإجماع التي تدعم الخدمات العالمية.
 ---
@@ -84,9 +89,9 @@ Blockchain هو نوع محدد من الأنظمة الموزعة - وهو دف
 5. عند تأكيد الأغلبية، يلتزم بالدخول
 ---
 
-##البلوكشين
+## البلوكشين
 ### كيف تعمل تقنية البلوكشين
-| مكون | الوصف |
+| المكون | الوصف |
 |-----------|------------|
 | **بلوك** | مجموعة من المعاملات + البيانات الوصفية + تجزئة الكتلة السابقة |
 | ** التجزئة ** | بصمة مشفرة لمحتويات الكتلة |

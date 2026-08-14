@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps e CI/CD
 DevOps è la combinazione di filosofia culturale, pratiche e strumenti che consente ai team di fornire software in modo più rapido e affidabile. Abbatte il muro tra gli sviluppatori (che vogliono apportare modifiche) e le operazioni (che vogliono stabilità). CI/CD (Continuous Integration e Continuous Delivery) è la struttura portante dell'automazione che lo rende possibile.
 ---
@@ -105,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-Pratiche chiave: utilizzare immagini di base slim/alpine, eseguire come non root, sfruttare la memorizzazione nella cache dei livelli, utilizzare`.dockerignore`, scansionare le immagini per individuare eventuali vulnerabilità (`trivy`,`docker scan`) e impostare limiti di risorse.
+Pratiche chiave: utilizzare immagini di base slim/alpine, eseguire come non root, sfruttare la memorizzazione nella cache dei livelli, utilizzare `.dockerignore`, scansionare le immagini per individuare eventuali vulnerabilità (`trivy`, `docker scan`) e impostare limiti di risorse.
 ### Docker Componi
 Per eseguire più contenitori insieme (app + database + cache):
 ```yaml
@@ -168,7 +169,7 @@ IaC tratta la configurazione dell'infrastruttura nello stesso modo in cui tratti
 | Strumento | Digitare | Avvicinamento | Ideale per |
 |------|------|----------|----------|
 | **Terraforma** | Approvvigionamento | Dichiarativo (HCL); su base statale | Creazione di risorse cloud (VPC, VM, database) |
-| **Ansible** | Configurazione | Dichiarativo (YAML); senza agente | Configurazione server, installazione software |
+| **Ansible** | Configurazione | Dichiarativo (YAML); senza agenti | Configurazione server, installazione software |
 | **Pulumi** | Approvvigionamento | Imperativo (Python, Go, TS) | Team che preferiscono linguaggi di programmazione reali |
 | **CloudFormation** | Approvvigionamento | Dichiarativo (YAML/JSON); Nativo AWS | Infrastruttura solo AWS |
 ### Esempio di terraformazione
@@ -244,4 +245,4 @@ Quando qualcosa si rompe alle 3 del mattino:
 5. **Correzione**: rollback o avanzamento patch.
 6. **Comunicare**: aggiornare le parti interessate e gli utenti (pagina di stato).
 7. **Post mortem**: entro 24-48 ore, documentare la causa principale e le azioni da intraprendere.
-L'obiettivo non è solo risolvere l'incidente, ma garantire che lo stesso incidente non possa ripetersi.
+L’obiettivo non è solo risolvere l’incidente ma garantire che lo stesso incidente non possa ripetersi.

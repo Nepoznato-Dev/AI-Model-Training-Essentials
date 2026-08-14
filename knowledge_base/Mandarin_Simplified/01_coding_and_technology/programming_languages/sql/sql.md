@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
-SQL（结构化查询语言）是一种特定于领域的语言，旨在管理和查询关系数据库中的数据。 SQL 最初于 20 世纪 70 年代由 IBM 开发，并于 1987 年标准化，至今仍然是应用程序与其数据之间的主要接口。每个主要的关系数据库管理系统 (RDBMS) — PostgreSQL、MySQL、SQL Server、Oracle、SQLite — 都使用 SQL 作为其查询语言。
+SQL（结构化查询语言）是一种特定于领域的语言，旨在管理和查询关系数据库中的数据。 SQL 最初由 IBM 于 20 世纪 70 年代开发，并于 1987 年标准化，至今仍然是应用程序与其数据之间的主要接口。每个主要的关系数据库管理系统 (RDBMS) — PostgreSQL、MySQL、SQL Server、Oracle、SQLite — 都使用 SQL 作为其查询语言。
 SQL 不是通用编程语言。您不会用 SQL 编写 Web 应用程序。但是，如果您的应用程序存储数据（几乎所有应用程序都这样做），那么 SQL 就是您用来检索、转换和管理该数据的语言。它可以说是继通用编程之后最普遍有用的技术技能。
 ---
 
@@ -52,7 +53,7 @@ SQL 不是通用编程语言。您不会用 SQL 编写 Web 应用程序。但是
 ## 权衡
 |限制|详情 |典型解决方法|
 |------------|---------|--------------------|
-| **不是通用语言** |无法在 SQL 中构建应用程序、API 或算法 |与Python、Java、JavaScript等结合|
+| **不是通用语言** |无法在 SQL 中构建应用程序、API 或算法 |与Python、Java、JavaScript等结合 |
 | **方言差异** |每个 RDBMS 都有自己的 SQL 风格，且扩展不兼容 |尽可能坚持使用 ANSI SQL；应用程序中的抽象方言差异|
 | **模式刚性** |更改大型表上的表结构可能会很慢且具有破坏性 |使用迁移工具；预先仔细设计架构|
 | **N+1查询问题** | ORM 生成的查询效率极低 |为复杂查询编写自定义 SQL；使用 EXPLAIN ANALYZE | 进行配置文件
@@ -313,7 +314,7 @@ ORDER BY order_count DESC;
 ```
 
 **优化清单：**
-|问题 |症状|修复 |
+|问题 |症状|修复|
 |--------|---------|-----|
 |大表顺序扫描 |  解释 | `Seq Scan`添加适当的索引 |
 | WHERE 列上缺少索引 |全表扫描 |在过滤列上创建索引 |
@@ -359,10 +360,10 @@ COMMIT;
 ```
 
 ### 标准化
-|范式 |规则|违规示例 |
+|范式|规则|违规示例 |
 |------------|------|--------------------|
 | **1NF** |原子值，无重复基团 |将多个电话存储在一列中，如“123,456” |
-| **2NF** | 1NF + 无部分依赖 |订单详细信息取决于 order_id 而不是 Product_id |
+| **2NF** | 1NF + 无部分依赖性 |订单详细信息取决于 order_id 而不是 Product_id |
 | **3NF** | 2NF + 无传递依赖 |员工部门名称取决于 dept_id，而不是员工 |
 ---
 
@@ -457,7 +458,7 @@ END $$;
 
 ## 互操作性
 ### 语言绑定
-|接口 |语言 |描述 |
+|接口|语言 |描述 |
 |------------|----------|-------------|
 | **JDBC** |爪哇 |标准数据库API |
 | **ODBC** |多个|通用数据库API |
@@ -558,7 +559,7 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 ---
 
 ## SQL 方言
-|特色 | PostgreSQL | MySQL | SQL Server | SQLite |
+|特色| PostgreSQL | MySQL | SQL Server | SQLite |
 |--------|---------|--------|------------|--------|
 |自动递增 | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`| `IDENTITY`| `INTEGER PRIMARY KEY AUTOINCREMENT`|
 |字符串连接 | `\|\|`| `CONCAT()`| `+`或`CONCAT()`| `\|\|`|
@@ -570,7 +571,7 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 
 ## 部署
 ### 数据库部署策略
-|战略|描述 |风险等级|
+|策略|描述 |风险等级|
 |----------|-------------|------------|
 | **迁移文件** |按顺序应用版本化 SQL 脚本 |低|
 | **蓝绿部署** |两个相同的数据库；切换流量 |低|
@@ -592,15 +593,158 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 ---
 
 ## 何时使用 SQL
-|场景 |为什么使用 SQL |另类|
+|场景|为什么使用 SQL |另类|
 |----------|---------|-------------|
 |具有复杂查询的关系数据 |这就是 SQL 的设计目的 | --- |
 |事务完整性（ACID）| SQL数据库保证一致性| --- |
 |报告和分析 |聚合、窗口函数、CTE | Python（Pandas）用于非常复杂的分析 |
-|数据完整性约束|外键、CHECK、UNIQUE、NOT NULL |应用程序级验证（较弱） |
+|数据完整性约束|外键、CHECK、UNIQUE、NOT NULL |应用程序级验证（较弱）|
 |简单的键值存储 |对于这个用例来说太过分了| Redis、DynamoDB |
 |高度非结构化数据 |模式刚性是一个问题| MongoDB，文档数据库 |
 |大规模水平扩展 | SQL数据库难以分片|卡桑德拉、DynamoDB、CockroachDB |
+---
+
+## 综合问答
+### Q1：`WHERE` 和`HAVING`有什么区别？
+**A:**`WHERE`在分组之前过滤行； `HAVING`聚合后过滤组：
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2：窗口函数与 GROUP BY 有何不同？
+**A:** 窗口函数跨行计算而不折叠它们：
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3：如何优化慢查询？
+**答：** 关键策略：
+- 在`WHERE`、`JOIN`和`ORDER BY`中使用的列上添加索引 
+- 避免`SELECT *`— 仅选择需要的列
+- 使用`EXPLAIN`/`EXPLAIN ANALYZE`读取查询计划
+- 尽可能用 JOIN 替换子查询
+- 使用 CTE 提高可读性（通常不会造成性能损失）
+- 避免在 WHERE 中的索引列上使用函数：使用`WHERE date >= '2024-01-01'`而不是 `WHERE YEAR(date) = 2024`
+### Q4：什么是 CTE？何时应该使用它们？
+**A:** 公用表表达式创建命名临时结果集：
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5：如何正确处理NULL值？
+**A:** NULL 代表未知——它不等于任何东西，包括它自己：
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：查找每组前 N 个
+**第 1 步：了解问题**
+找出每个部门中薪酬最高的 3 名员工。
+**第 2 步：确定方法**
+使用按部门分区的`ROW_NUMBER()`窗口函数。
+**步骤 3：实施**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**第 4 步：验证**
+检查每个部门最多有 3 行。如果需要，请使用`DENSE_RANK()`处理关系。
+### 问题 2：构建同比增长报告
+**第 1 步：了解问题**
+计算每月收入和同比增长百分比。
+**第 2 步：确定方法**
+使用`DATE_TRUNC`进行分组，使用`LAG()`窗口函数进行上一年比较。
+**步骤 3：实施**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**第 4 步：验证**
+检查上一年的前 12 个月是否为 NULL。根据已知数据验证增长百分比。
+### 问题 3：将行旋转到列
+**第 1 步：了解问题**
+将状态计数从行转换为列。
+**第 2 步：确定方法**
+使用条件聚合（`SUM`内的`CASE`）。
+**步骤 3：实施**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**第 4 步：扩展**
+添加百分比列和运行总计。
 ---
 
 ＃＃ 概括

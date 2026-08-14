@@ -1032,6 +1032,318 @@ wasm-pack build --target web
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the ownership system, and why does Rust have it?
+**A:** Every value in Rust has exactly one owner. When the owner goes out of scope, the value is dropped (memory freed). This eliminates the need for a garbage collector while guaranteeing memory safety. Assignment, function parameters, and return values all transfer ownership ("move"). To share without transferring, use references (`&T` for borrowing, `&mut T` for mutable borrowing). The compiler enforces: you cannot have a mutable reference and an immutable reference to the same value simultaneously.
+
+```rust
+let s1 = String::from("hello");
+let s2 = s1;           // s1 is MOVED to s2 — s1 is no longer valid
+// println!("{}", s1); // Error: value borrowed after move
+
+let s3 = String::from("world");
+let len = calculate_length(&s3);  // Borrow — s3 stays valid
+fn calculate_length(s: &String) -> usize { s.len() }
+```
+
+### Q2: When should I use `String` vs `&str`?
+**A:** `String` is an owned, heap-allocated, growable UTF-8 string. `&str` is a borrowed reference to a UTF-8 string slice (can point to a `String`, a string literal, or part of either). Use `String` when you need to own, modify, or build a string. Use `&str` for function parameters (more flexible — accepts both), read-only views, and string literals. Accept `&str` in function signatures; return `String` when the caller needs ownership.
+
+```rust
+// Accept &str — works with both String and &str
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)  // Returns owned String
+}
+
+let owned = String::from("Alice");
+greet(&owned);         // &String coerces to &str
+greet("Bob");          // &str literal works directly
+```
+
+### Q3: How does Rust handle errors without exceptions?
+**A:** Rust uses the `Result<T, E>` enum for recoverable errors and `panic!` for unrecoverable ones. Functions that can fail return `Result`. The `?` operator propagates errors concisely. This approach makes error handling explicit — you cannot accidentally ignore an error. Use `anyhow` for application error handling (convenient context) and `thiserror` for library error types (derive macros).
+
+```rust
+use std::fs;
+use std::num;
+
+fn read_and_parse(path: &str) -> Result<i64, Box<dyn std::error::Error>> {
+    let content = fs::read_to_string(path)?;   // Propagates io::Error
+    let number: i64 = content.trim().parse()?;  // Propagates ParseIntError
+    Ok(number)
+}
+
+// With context (anyhow crate)
+fn load_config() -> anyhow::Result<Config> {
+    let content = fs::read_to_string("config.toml")
+        .context("Failed to read config file")?;
+    let config: Config = toml::from_str(&content)
+        .context("Failed to parse config TOML")?;
+    Ok(config)
+}
+```
+
+### Q4: What are lifetimes, and when do I need to annotate them?
+**A:** Lifetimes track how long references are valid. The compiler infers them in most cases via "lifetime elision rules." You need explicit annotations when the compiler cannot determine the relationship between input and output lifetimes — typically when a function takes multiple references and returns one. Lifetimes prevent dangling references at compile time with zero runtime cost.
+
+```rust
+// The compiler needs to know: does the return value borrow from x or y?
+// Explicit lifetime 'a says: both inputs and output share the same lifetime
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
+
+// Struct holding a reference — must declare lifetime
+struct ConfigRef<'a> {
+    name: &'a str,
+    value: &'a str,
+}
+
+// 'static — lives for the entire program duration (string literals)
+let s: &'static str = "I live forever";
+```
+
+### Q5: What is the difference between `Vec<T>`, arrays, and slices?
+**A:** Arrays `[T; N]` are fixed-size, stack-allocated, and their length is part of the type. `Vec<T>` is a growable, heap-allocated collection. Slices `&[T]` are fat pointers (pointer + length) that borrow a contiguous portion of an array or Vec. Use arrays for small, fixed-size data. Use Vec for dynamic collections. Accept `&[T]` in function parameters for maximum flexibility.
+
+```rust
+let arr = [1, 2, 3, 4, 5];            // [i32; 5] — fixed size, on stack
+let mut vec = vec![10, 20, 30];        // Vec<i32> — growable, on heap
+vec.push(40);
+
+// Slice — borrow of a contiguous sequence
+let slice: &[i32] = &vec[1..3];        // [20, 30]
+let full: &[i32] = &vec;               // Entire vec as slice
+
+// Functions should accept slices for flexibility
+fn sum(numbers: &[i32]) -> i32 {
+    numbers.iter().sum()
+}
+
+sum(&arr);       // Works — array coerces to slice
+sum(&vec);       // Works — Vec coerces to slice
+sum(&vec[1..3]); // Works — already a slice
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Build a Thread-Safe Key-Value Store
+
+**Problem Statement:** Implement a concurrent key-value store in Rust that supports `get`, `set`, and `delete` operations from multiple threads without data races. Use interior mutability and ensure the implementation is idiomatic Rust.
+
+**Step 1 — Understand the Problem:**
+Multiple threads need to read and write to a shared HashMap. Rust's ownership system prevents data races at compile time, but we need interior mutability (`RwLock` or `Mutex`) wrapped in `Arc` for shared ownership. `RwLock` allows multiple concurrent readers OR one exclusive writer — better for read-heavy workloads.
+
+**Step 2 — Identify the Approach:**
+- Use `Arc<RwLock<HashMap<K, V>>>` for shared, thread-safe access.
+- `RwLock::read()` for `get` (multiple readers allowed).
+- `RwLock::write()` for `set` and `delete` (exclusive access).
+- Wrap in a struct with a clean API.
+- Clone the `Arc` for each thread.
+
+**Step 3 — Implement the Solution:**
+
+```rust
+use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
+use std::hash::Hash;
+
+struct KeyValueStore<K, V> {
+    data: Arc<RwLock<HashMap<K, V>>>,
+}
+
+impl<K: Hash + Eq + Send + Sync, V: Clone + Send + Sync> KeyValueStore<K, V> {
+    fn new() -> Self {
+        Self {
+            data: Arc::new(RwLock::new(HashMap::new())),
+        }
+    }
+
+    fn get(&self, key: &K) -> Option<V> {
+        let data = self.data.read().unwrap();
+        data.get(key).cloned()
+    }
+
+    fn set(&self, key: K, value: V) {
+        let mut data = self.data.write().unwrap();
+        data.insert(key, value);
+    }
+
+    fn delete(&self, key: &K) -> bool {
+        let mut data = self.data.write().unwrap();
+        data.remove(key).is_some()
+    }
+
+    fn clone_handle(&self) -> Self {
+        Self {
+            data: Arc::clone(&self.data),
+        }
+    }
+}
+
+// Usage — concurrent access from multiple threads
+use std::thread;
+
+fn main() {
+    let store = KeyValueStore::new();
+
+    let handles: Vec<_> = (0..4).map(|i| {
+        let s = store.clone_handle();
+        thread::spawn(move || {
+            for j in 0..100 {
+                s.set(format!("key-{}-{}", i, j), i * 100 + j);
+            }
+        })
+    }).collect();
+
+    for h in handles { h.join().unwrap(); }
+
+    println!("Total entries: {}", store.data.read().unwrap().len());  // 400
+}
+```
+
+**Step 4 — Verify and Optimize:**
+- Thread safety: the Rust compiler guarantees no data races — `RwLock` enforces mutual exclusion, and `Arc` provides safe shared ownership. If this compiles, it is correct.
+- Performance: `RwLock` is better than `Mutex` for read-heavy workloads. For write-heavy workloads, use `Mutex` (simpler, no reader-writer overhead).
+- Production upgrade: use `parking_lot::RwLock` (faster, no poisoning, smaller memory footprint) or `dashmap::DashMap` (lock-free concurrent HashMap).
+
+### Problem 2: Implement a Zero-Copy Parser
+
+**Problem Statement:** Write a parser that extracts key-value pairs from a configuration string like `"name=Alice;age=30;role=admin"` without allocating new Strings — using only string slices that borrow from the input.
+
+**Step 1 — Understand the Problem:**
+We need to parse `key=value` pairs separated by `;`. The key constraint is "zero-copy" — the returned data must borrow from the input `&str`, not allocate new `String`s. This means returning `Vec<(&str, &str)>` with lifetimes tied to the input.
+
+**Step 2 — Identify the Approach:**
+- Use `&str` methods (`split`, `find`, slicing) — all return `&str` slices borrowing from the input.
+- Avoid `.to_string()` or `String::from()` anywhere.
+- Lifetime annotation: output borrows from input — `fn parse<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>`.
+
+**Step 3 — Implement the Solution:**
+
+```rust
+fn parse_config(input: &str) -> Vec<(&str, &str)> {
+    input
+        .split(';')
+        .filter_map(|pair| {
+            let pair = pair.trim();
+            if pair.is_empty() { return None; }
+            pair.split_once('=')
+                .map(|(k, v)| (k.trim(), v.trim()))
+        })
+        .collect()
+}
+
+// The compiler infers: fn parse_config<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>
+
+fn main() {
+    let config = "name = Alice; age = 30; role = admin";
+    let pairs = parse_config(config);
+
+    for (key, value) in &pairs {
+        println!("{} = {}", key, value);
+    }
+
+    // Zero allocations — all slices point into 'config'
+    assert_eq!(pairs[0], ("name", "Alice"));
+    assert_eq!(pairs[1], ("age", "30"));
+    assert_eq!(pairs[2], ("role", "admin"));
+}
+```
+
+**Step 4 — Verify and Optimize:**
+- Zero-copy: `split`, `split_once`, and `trim` all return `&str` slices — no heap allocations.
+- The lifetime elision rules correctly tie the output lifetimes to the input.
+- Edge cases: empty input returns `[]`; missing `=` skips the pair (via `filter_map`); whitespace around `=` is handled by `trim`.
+- For more complex parsing, use the `nom` crate (combinator-based, also zero-copy).
+
+### Problem 3: Implement the Observer Pattern with Channels
+
+**Problem Statement:** Build a publish-subscribe system where multiple subscribers receive messages from a publisher. Use Rust channels and ensure the system handles slow subscribers without blocking the publisher.
+
+**Step 1 — Understand the Problem:**
+We need one publisher sending messages to multiple subscribers. Rust's `mpsc` channel is multi-producer single-consumer — we need the reverse (single-producer multi-consumer). We can use `broadcast` channels (from `tokio`) or implement fan-out using multiple `mpsc` senders.
+
+**Step 2 — Identify the Approach:**
+- Use `std::sync::mpsc` for standard channels.
+- For fan-out: maintain a `Vec<Sender<T>>` and clone messages to each.
+- For slow subscribers: use `try_send` (non-blocking) or bounded channels with backpressure.
+- Wrap in a `Bus` struct for clean API.
+
+**Step 3 — Implement the Solution:**
+
+```rust
+use std::sync::mpsc::{self, Sender, Receiver};
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+struct Bus<T: Clone + Send + 'static> {
+    subscribers: Arc<Mutex<Vec<Sender<T>>>>,
+}
+
+impl<T: Clone + Send + 'static> Bus<T> {
+    fn new() -> Self {
+        Self {
+            subscribers: Arc::new(Mutex::new(Vec::new())),
+        }
+    }
+
+    fn subscribe(&self) -> Receiver<T> {
+        let (tx, rx) = mpsc::channel();
+        self.subscribers.lock().unwrap().push(tx);
+        rx
+    }
+
+    fn publish(&self, message: T) {
+        let mut subs = self.subscribers.lock().unwrap();
+        // Remove disconnected subscribers (their receiver was dropped)
+        subs.retain(|tx| !tx.is_disconnected());
+        for tx in subs.iter() {
+            let _ = tx.send(message.clone());  // Ignore send errors
+        }
+    }
+
+    fn subscriber_count(&self) -> usize {
+        let subs = self.subscribers.lock().unwrap();
+        subs.iter().filter(|tx| !tx.is_disconnected()).count()
+    }
+}
+
+fn main() {
+    let bus = Bus::new();
+
+    // Subscribe from multiple threads
+    let handles: Vec<_> = (0..3).map(|id| {
+        let rx = bus.subscribe();
+        thread::spawn(move || {
+            for msg in rx {
+                println!("Subscriber {} received: {}", id, msg);
+            }
+        })
+    }).collect();
+
+    // Publish messages
+    for i in 0..5 {
+        bus.publish(format!("Event #{}", i));
+    }
+
+    // Drop the bus — subscribers' channels close, loops end
+    drop(bus);
+    for h in handles { h.join().unwrap(); }
+}
+```
+
+**Step 4 — Verify and Optimize:**
+- `retain` cleans up dead subscribers automatically — no memory leaks from disconnected threads.
+- `message.clone()` is necessary because each subscriber needs its own copy. For expensive-to-clone types, wrap in `Arc<T>`.
+- Bounded channels: replace `mpsc::channel()` with `mpsc::sync_channel(N)` for backpressure — `publish` blocks if a subscriber's buffer is full.
+- Production: use `tokio::sync::broadcast` for async pub/sub, or `flume` for a faster mpsc with bounded/unbounded options.
+
+---
+
 ## Summary
 
 Rust is a language that forces you to think about memory, ownership, and concurrency -- and rewards you with code that is correct by construction. The learning curve is real, but the payoff is significant: programs that are as fast as C but free from null pointer bugs, data races, and memory leaks. Rust is not a general-purpose productivity language -- it is a systems language for when correctness and performance both matter. Its growing adoption in industry (including the Linux kernel and Android) suggests it will be increasingly important.

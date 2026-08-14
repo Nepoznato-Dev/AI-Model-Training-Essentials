@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # PHP
 PHP(Hypertext Preprocessor)는 Rasmus Lerdorf가 1994년에 개발하여 1995년에 처음 출시된 서버측 스크립팅 언어입니다. 원래 동적 웹 페이지 생성용으로 설계된 PHP는 모든 기능을 갖춘 범용 언어로 발전했습니다. WordPress, Facebook(원래), Wikipedia, Slack 및 기타 수백만 사이트를 포함하여 알려진 서버측 언어를 사용하는 모든 웹사이트의 약 75%를 지원합니다.
 최신 PHP(8.x)는 2000년대 초반의 PHP와는 매우 다른 언어입니다. 이제 유형이 지정된 속성, 일치 표현식, 열거형, 파이버, 읽기 전용 클래스 및 강력한 유형 시스템이 있습니다. 개발자들 사이에서 명성이 높음에도 불구하고(종종 불일치로 인해 비판을 받음) PHP는 실용적이고 널리 배포되며 지속적으로 개선되고 있습니다.
@@ -53,7 +54,7 @@ PHP(Hypertext Preprocessor)는 Rasmus Lerdorf가 1994년에 개발하여 1995년
 ## 절충안
 | 제한사항 | 세부정보 | 일반적인 해결 방법 |
 |------------|---------|------|
-| **일관되지 않은 명명** | `strpos`대`str_replace`,`array_key_exists`대`in_array`— 일관된 규칙 없음 | 불일치를 배우십시오. IDE 자동 완성 사용 |
+| **일관되지 않은 명명** | `strpos`vs`str_replace`,`array_key_exists`vs`in_array`— 일관된 규칙 없음 | 불일치를 배우십시오. IDE 자동 완성 사용 |
 | **역사적 수하물** | PHP 5 및 이전 버전의 레거시 기능 및 패턴 | 최신 PHP(8.2+)를 사용하세요. PSR 표준을 따르세요 |
 | **성능** | 웹이 아닌 작업의 경우 Go, Rust 또는 Java보다 느림 | OPcache를 사용하세요. 비동기를 위해 Swoole을 고려하십시오. PHP-FPM 사용 |
 | **웹이 아닌 경우에는 적합하지 않음** | CLI, 데스크탑, 모바일, 데이터 과학 - PHP의 강점은 아님 | 웹 작업이 아닌 작업에 Python, Go 또는 기타 언어 사용 |
@@ -301,7 +302,7 @@ $names = array_map(fn($u) => $u["name"], $users);
 $adults = array_filter($users, fn($u) => $u["age"] >= 30);
 ```
 
-### Fibers(PHP 8.1+) — 협력적 멀티태스킹
+### Fibers(PHP 8.1+) — 협력적인 멀티태스킹
 ```php
 // Fibers — low-level cooperative concurrency
 $fiber = new Fiber(function (): void {
@@ -819,7 +820,7 @@ CMD ["php-fpm"]
 |----------|---------|------|
 | 워드프레스 개발 | PHP가 유일한 옵션입니다 | — |
 | 프리랜서 웹 개발 | 거대한 시장; 배포가 용이함 | — |
-| 전자상거래(WooCommerce, Magento) | PHP 플랫폼 구축 | — |
+| 전자상거래(WooCommerce, Magento) | PHP 플랫폼 확립 | — |
 | 신속한 웹 프로토타이핑 | 낮은 설정, 빠른 배포 | Node.js, 파이썬 |
 | 콘텐츠가 많은 웹사이트 | CMS 생태계가 성숙해졌습니다 | — |
 | API 및 마이크로서비스 | Laravel/Slim에서 가능 | Go, Node.js, Python |
@@ -827,6 +828,332 @@ CMD ["php-fpm"]
 | 실시간 애플리케이션 | PHP의 강점이 아니다 | Node.js, 이동 |
 | 데이터 과학 / ML | 생태계가 아니다 | 파이썬, R |
 | 데스크탑/모바일 앱 | 적합하지 않음 | 모국어 사용 |
+---
+
+## 종합 Q&A
+### Q1: PHP에서 `==`와 `===`의 차이점은 무엇인가요?
+**A:** `==`는 느슨한 비교입니다. 비교하기 전에 유형 강제 변환을 수행합니다(`"0" == false`는`true`입니다).  `===`는 엄격한 비교입니다. 즉, 값과 유형을 모두 확인합니다(`"0" === false`는`false`입니다). 특별히 유형 강제 변환이 필요한 경우가 아니면 항상 `===`를 사용하십시오. 이는 PHP의 가장 일반적인 버그 소스 중 하나입니다.
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### Q2: PHP 네임스페이스와 자동 로딩은 어떻게 작동하나요?
+**답:** 네임스페이스는 클래스 이름 충돌을 방지합니다. PSR-4 자동 로딩은 네임스페이스 구조를 디렉토리 구조에 매핑합니다. `App\Controllers\UserController`는 `src/Controllers/UserController.php`에 매핑됩니다. Composer는`composer.json`를 통해 자동 로딩을 처리합니다. 최신 PHP에서는 항상 네임스페이스와 PSR-4를 사용하세요.
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### Q3: PHP 8 속성은 무엇이며 프레임워크와 어떤 관련이 있습니까?
+**답:** 속성(PHP 8)은 클래스, 메소드, 속성 및 매개변수에 대한 구조화된 메타데이터 주석입니다. 이는 Java 주석 또는 C# 속성과 동등한 PHP입니다. Laravel 및 Symfony와 같은 프레임워크는 라우팅, 검증 및 종속성 주입을 위해 이를 광범위하게 사용합니다.
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### Q4: 최신 PHP에서 오류를 올바르게 처리하려면 어떻게 해야 합니까?
+**A:** PHP에는 오류(E_WARNING, E_NOTICE)와 예외가 모두 있습니다. 최신 PHP는 예외를 독점적으로 사용합니다. 예상되는 실패에는 try/catch를 사용하고, 도메인 오류에는 사용자 정의 예외 클래스를 사용하고, 오류를 예외로 변환하려면 `set_error_handler`를 사용하세요. PHP 7+ `Throwable`는 오류와 예외 모두에 대한 기본 인터페이스입니다.
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### Q5: PHP 파이버란 무엇이며 비동기와 어떤 관련이 있나요?
+**답:** 파이버(PHP 8.1)는 경량 협력 스레드이므로 실행을 일시 중지하고 재개할 수 있습니다. 이는 비동기 PHP의 기초이지만 낮은 수준입니다. Amp 및 ReactPHP와 같은 프레임워크는 내부적으로 파이버를 사용합니다. 대부분의 애플리케이션에서는 원시 파이버 대신 비동기 프레임워크를 사용합니다.
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 미들웨어 파이프라인 구축
+**문제 설명:** 각 미들웨어가 체인의 다음 미들웨어 전후에 요청을 처리할 수 있는 PHP 웹 프레임워크용 미들웨어 파이프라인을 구현합니다.
+**1단계 - 문제 이해:**
+(1)`Middleware`인터페이스, (2) 미들웨어를 연결하는 파이프라인, (3) 각 미들웨어가 요청과`$next`콜백을 수신하고, (4) 미들웨어가 요청(이전)과 응답(이후)을 모두 수정할 수 있습니다. 이는 Laravel, PSR-15 및 유사한 프레임워크에서 사용되는 양파 모델입니다.
+**2단계 - 접근 방식 파악:**
+- `process(Request, RequestHandler): Response`로 `MiddlewareInterface`를 정의합니다.
+- 배열 축소를 사용하여 미들웨어를 단일 핸들러로 구성합니다.
+- 각 미들웨어는 다음 미들웨어를 래핑하여 중첩된 함수 호출을 생성합니다.
+**3단계 - 솔루션 구현:**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+**4단계 - 확인 및 최적화:**
+- 순서 문제: 첫 번째 파이프 = 가장 바깥쪽(요청 시 먼저 실행되고 응답 시 마지막으로 실행됨)
+- 각 미들웨어는 `$next`를 호출하지 않고 응답을 반환하여 단락될 수 있습니다.
+- 프로덕션: 모든 PSR-15 프레임워크와의 상호 운용성을 위해 PSR-15 `MiddlewareInterface`를 사용합니다.
+### 문제 2: 쿼리 빌더를 사용하여 저장소 구현
+**문제 설명:** 매개변수화된 쿼리를 사용하여 안전하게 SQL을 생성하고, 연결을 지원하고, 저장소 패턴과 통합하는 유연한 쿼리 빌더를 구축하세요.
+**1단계 - 문제 이해:**
+(1) 연결 가능한 메서드가 있는`QueryBuilder`클래스(`select`,`where`,`orderBy`,`limit`), (2) SQL 삽입을 방지하기 위한 매개변수화된 쿼리, (3) 데이터 액세스를 위해 쿼리 빌더를 사용하는 `Repository`가 필요합니다.
+**2단계 - 접근 방식 파악:**
+- 빌더는 SQL 조각과 매개변수를 축적합니다.
+- `toSql()`는 자리 표시자를 사용하여 최종 쿼리를 생성합니다.
+- `getParameters()`는 경계 값을 반환합니다.
+- 리포지토리는 도메인별 메서드로 빌더를 래핑합니다.
+**3단계 - 솔루션 구현:**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+**4단계 - 확인 및 최적화:**
+- SQL 주입 방지: 모든 값은 매개변수화된 쿼리(`?` 자리 표시자)를 통과합니다.
+- 체인 가능 API: 각 메소드는 유창한 구성을 위해 `$this`를 반환합니다.
+- 프로덕션: 포괄적이고 테스트된 솔루션을 위해 `illuminate/database`(Laravel의 쿼리 빌더) 또는 `doctrine/dbal`를 사용합니다.
 ---
 
 ## 요약

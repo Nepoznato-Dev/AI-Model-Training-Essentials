@@ -978,6 +978,131 @@ CMD ["bin/my_app", "start"]
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How does Erlang's "let it crash" philosophy work?
+
+**A:** Instead of defensive programming, Erlang lets processes crash and restarts them via supervisors:
+
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2: How do Elixir pipelines work?
+
+**A:** The `|>` operator passes the result of one function as the first argument to the next:
+
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3: What is the difference between Erlang and Elixir?
+
+**A:** Elixir runs on the Erlang VM (BEAM) with modern syntax:
+- Elixir: pipe operator, macros, protocols, string interpolation
+- Erlang: simpler syntax, OTP built-in, more battle-tested
+- Both share the same concurrency model, VM, and ecosystem
+
+### Q4: How do GenServers work in Elixir?
+
+**A:** GenServer is the standard abstraction for stateful processes:
+
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5: How do I handle errors in Elixir?
+
+**A:** Use `try/rescue` for exceptions, `{:ok, result} | {:error, reason}` for expected failures:
+
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Building a Fault-Tolerant Key-Value Store
+
+**Step 1: Understand the Problem**
+Create a key-value store that survives process crashes.
+
+**Step 2: Identify the Approach**
+Use a GenServer with a supervisor.
+
+**Step 3: Implement**
+```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**Step 4: Verify**
+Kill the process and verify it restarts with fresh state.
+
+### Problem 2: Concurrent Web Scraper
+
+**Step 1: Understand the Problem**
+Fetch multiple URLs concurrently and collect results.
+
+**Step 2: Identify the Approach**
+Use Elixir Tasks for concurrent execution.
+
+**Step 3: Implement**
+```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**Step 4: Optimize**
+Add rate limiting, retries, and streaming for large URL lists.
+
+---
+
 ## Summary
 
 Erlang solved a problem most languages still struggle with: building systems that never go down. Its concurrency model — lightweight processes, message passing, "let it crash" supervision — is decades ahead of what mainstream languages are only now discovering. Elixir takes Erlang's superpowers and wraps them in modern syntax with excellent developer experience. If you are building real-time, distributed, or fault-tolerant systems, Erlang/Elixir is worth the investment. The learning curve is real (functional programming, pattern matching, process thinking), but the payoff is software that stays up and scales predictably.

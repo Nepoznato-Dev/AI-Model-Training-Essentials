@@ -453,7 +453,7 @@ my-ocaml-project/
  (preprocess (pps ppx_let)))
 ```
 
-### Kluczowe polecenia budowania
+### Kluczowe polecenia tworzenia
 | Polecenie | Opis |
 |--------|------------|
 | `dune init project my_app`| Utwórz nowy projekt |
@@ -713,6 +713,122 @@ ENTRYPOINT ["./app"]
 | Nauka o danych / ML | Nie ekosystem | Python, R |
 | Aplikacje mobilne | Nie nadaje się | Swift, Kotlin, Dart |
 | Zastosowania ogólnego przeznaczenia | Możliwe, ale niszowe | Idź, Python, Rust |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jak działa wnioskowanie o typie OCaml?
+**A:** System typów Hindley-Milner OCaml wnioskuje typy bez adnotacji:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### P2: Co to są algebraiczne typy danych i dlaczego mają ogromne możliwości?
+**A:** ADT łączą typy produktów (rekordy) i typy sum (warianty):
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### P3: Jak działają moduły i funktory?
+**O:** Moduły organizują kod; funktory to funkcje przechodzące z modułów do modułów:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### P4: Co sprawia, że ​​OCaml jest szybki?
+**A:** OCaml kompiluje się do wydajnego kodu natywnego:
+- Kasowanie typu — brak sprawdzania typu w czasie wykonywania
+- Nieopakowane liczby zmiennoprzecinkowe i całkowite
+- Dopasowywanie wzorców kompiluje się w celu przeskakiwania tabel
+- Optymalizacja połączeń końcowych
+- Brak wstrzymań modułu zbierającego elementy bezużyteczne (przyrostowe GC)
+### P5: Jak OCaml wypada w porównaniu z innymi językami z rodziny ML?
+**A:** OCaml równoważy praktyczność i czystość:
+- vs Haskell: OCaml ma funkcje nadrzędne, zmienny stan i szybszą kompilację
+- w porównaniu z F#: OCaml ma bardziej dojrzały system modułów i lepszą obsługę wielu platform
+- vs Rust: OCaml ma GC (bez własności), ale Rust ma lepszą FFI i ekosystem
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Implementacja interpretera bezpiecznego typu
+**Krok 1: Zrozum problem**
+Zbuduj interpreter prostego języka wyrażeń.
+**Krok 2: Zidentyfikuj podejście**
+Używaj algebraicznych typów danych do wyrażeń i dopasowywania wzorców do oceny.
+**Krok 3: Wdróż**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**Krok 4: Przedłuż**
+Dodaj`Let`,`If`,`Lambda`, aby uzyskać pełniejszy język.
+### Problem 2: Budowa prostego parsera z kombinatorami
+**Krok 1: Zrozum problem**
+Analizuj wyrażenia arytmetyczne za pomocą kombinatorów parsera.
+**Krok 2: Zidentyfikuj podejście**
+Twórz małe parsery i komponuj je.
+**Krok 3: Wdróż**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**Krok 4: Skomponuj**
+Połącz parsery z`map`,`seq`,`alt`i`many`, aby przeanalizować pełne wyrażenia.
 ---
 
 ## Streszczenie

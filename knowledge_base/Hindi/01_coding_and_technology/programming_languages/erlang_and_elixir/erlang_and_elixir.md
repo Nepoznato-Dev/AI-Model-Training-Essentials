@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "एरलांग और अमृत"
-विवरण: "एरलांग और एलिक्सिर प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है, शामिल है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [एरलैंग-एंड-एलिक्सिर, प्रोग्रामिंग-भाषा, सिंटैक्स, इकोसिस्टम, कोडिंग-एंड-टेक्नोलॉजी]
-कठिनाई_स्तर: "उन्नत"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "38 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Erlang & Elixir"
+description: "Comprehensive reference for the Erlang and Elixir programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [erlang-and-elixir, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "38 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # एरलांग और अमृत
 एर्लैंग को 1986 में एरिक्सन द्वारा टेलीफोन स्विच को पावर देने के लिए बनाया गया था - जो बताता है कि यह समवर्ती, दोष सहिष्णुता और वितरित सिस्टम को लगभग किसी भी चीज़ से बेहतर क्यों संभालता है। एर्लैंग प्रक्रियाएं हल्की, अलग-थलग हैं और केवल संदेश भेजने के माध्यम से संचार करती हैं। जब कोई प्रक्रिया क्रैश हो जाती है, तो पर्यवेक्षक उसे पुनः आरंभ करता है। यह "इसे क्रैश होने दो" दर्शन ऐसे सिस्टम तैयार करता है जो बिना डाउनटाइम के वर्षों तक चलते हैं।
 एलिक्सिर एक आधुनिक भाषा है जो 2012 में जोस वालिम द्वारा एर्लैंग के वीएम (बीईएएम) के शीर्ष पर बनाई गई है। यह एरलांग द्वारा प्रदान की जाने वाली हर चीज को बरकरार रखता है - समवर्तीता, गलती सहनशीलता, वितरण - लेकिन एक अनुकूल वाक्यविन्यास, मेटाप्रोग्रामिंग और उत्कृष्ट टूलींग (मिक्स पैकेज मैनेजर, हेक्स पैकेज रजिस्ट्री) जोड़ता है। एलिक्सिर का व्यापक रूप से वेब अनुप्रयोगों (फीनिक्स फ्रेमवर्क के माध्यम से), रीयल-टाइम सिस्टम और एम्बेडेड डिवाइस (नर्व्स के माध्यम से) के लिए उपयोग किया जाता है।
@@ -347,7 +352,7 @@ stream = Stream.resource(
 
 ## समवर्ती एवं समांतरता
 ### बीम वीएम प्रक्रियाएं
-BEAM VM (एरलैंग की वर्चुअल मशीन) लाखों हल्की प्रक्रियाएं चलाती है, प्रत्येक का अपना ढेर होता है।
+BEAM VM (एरलांग की वर्चुअल मशीन) लाखों हल्की प्रक्रियाएं चलाती है, प्रत्येक का अपना ढेर होता है।
 ```elixir
 # Spawning processes
 pid = spawn(fn ->
@@ -590,18 +595,18 @@ end
 ### कुंजी मिश्रण आदेश
 | आदेश | विवरण |
 |---------|-----------------|
-|  __संरक्षित_0__ | नया अमृत प्रोजेक्ट बनाएं |
-|  __संरक्षित_1__ | नया फीनिक्स वेब ऐप बनाएं |
-|  __संरक्षित_2__ | निर्भरताएँ प्राप्त करें |
-|  __संरक्षित_3__ | प्रोजेक्ट संकलित करें |
-|  __संरक्षित_4__ | परीक्षण चलाएँ |
-|  __संरक्षित_5__ | वर्बोज़ आउटपुट के साथ परीक्षण चलाएँ |
-|  __संरक्षित_6__ | स्थैतिक विश्लेषण चलाएँ |
-|  __संरक्षित_7__ | टाइप चेकिंग चलाएँ |
-|  __संरक्षित_8__ | प्रारूप कोड |
-|  __संरक्षित_9__ | दस्तावेज़ तैयार करें |
-|  __संरक्षित_10__ | एक रिलीज बनाएं |
-|  __संरक्षित_11__ | लोड किए गए प्रोजेक्ट के साथ आरईपीएल प्रारंभ करें |
+| `mix new my_app`| नया अमृत प्रोजेक्ट बनाएं |
+| `mix phx.new my_app`| नया फीनिक्स वेब ऐप बनाएं |
+| `mix deps.get`| निर्भरताएँ प्राप्त करें |
+| `mix compile`| प्रोजेक्ट संकलित करें |
+| `mix test`| परीक्षण चलाएँ |
+| `mix test --trace`| वर्बोज़ आउटपुट के साथ परीक्षण चलाएँ |
+| `mix credo`| स्थैतिक विश्लेषण चलाएँ |
+| `mix dialyzer`| टाइप चेकिंग चलाएँ |
+| `mix format`| प्रारूप कोड |
+| `mix docs`| दस्तावेज़ तैयार करें |
+| `mix release`| एक रिलीज बनाएं |
+| `iex -S mix`| लोड किए गए प्रोजेक्ट के साथ आरईपीएल प्रारंभ करें |
 ### कोड फ़ॉर्मेटर (.formatter.exs)
 ```elixir
 # .formatter.exs
@@ -843,7 +848,7 @@ end
 | उपकरण | उद्देश्य | उपयोग |
 |------|------|-------|
 | **:एप्रोफ़** | फ़ंक्शन-स्तरीय प्रोफ़ाइलिंग | `:eprof.start()`फिर प्रोफ़ाइल |
-| **:fprof** | विस्तृत कॉल ग्राफ़ प्रोफ़ाइलिंग |  __संरक्षित_1__ |
+| **:fprof** | विस्तृत कॉल ग्राफ़ प्रोफ़ाइलिंग | `:fprof.profile(fn -> ... end)`|
 | **:पर्यवेक्षक** | विजुअल सिस्टम मॉनिटर |  IEx में`:observer.start()`|
 | **बेंची** | बेंचमार्किंग लाइब्रेरी | डिप्स में जोड़ें |
 ### बेंची के साथ बेंचमार्किंग
@@ -921,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | डेटा साइंस/एमएल | पारिस्थितिकी तंत्र नहीं | पायथन, आर |
 | मोबाइल ऐप्स | अनुकूल नहीं | स्विफ्ट, कोटलिन, डार्ट |
 | सरल REST API | संभव लेकिन छोटी सेवाओं के लिए जरूरत से ज्यादा | जाओ, नोड.जेएस, पायथन |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: एरलांग का "इसे क्रैश होने दो" दर्शन कैसे काम करता है?
+**ए:** रक्षात्मक प्रोग्रामिंग के बजाय, एरलांग प्रक्रियाओं को क्रैश होने देता है और पर्यवेक्षकों के माध्यम से उन्हें पुनरारंभ करता है:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2: एलिक्सिर पाइपलाइन कैसे काम करती हैं?
+**ए:**`|>`ऑपरेटर एक फ़ंक्शन के परिणाम को पहले तर्क के रूप में अगले तर्क के रूप में पास करता है:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3: एर्लांग और एलिक्सिर के बीच क्या अंतर है?
+**ए:** एलिक्सिर आधुनिक सिंटैक्स के साथ एरलांग वीएम (बीईएएम) पर चलता है:
+- अमृत: पाइप ऑपरेटर, मैक्रोज़, प्रोटोकॉल, स्ट्रिंग इंटरपोलेशन
+- एर्लैंग: सरल सिंटैक्स, ओटीपी बिल्ट-इन, अधिक युद्ध-परीक्षण
+- दोनों समान समवर्ती मॉडल, वीएम और पारिस्थितिकी तंत्र साझा करते हैं
+### Q4: जेनसर्वर एलिक्सिर में कैसे काम करते हैं?
+**ए:** जेनसर्वर स्टेटफुल प्रक्रियाओं के लिए मानक अमूर्त है:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### प्रश्न5: मैं एलिक्सिर में त्रुटियों से कैसे निपट सकता हूँ?
+**ए:** अपवादों के लिए`try/rescue`का उपयोग करें, अपेक्षित विफलताओं के लिए`{:ok, result} | {:error, reason}`का उपयोग करें:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: दोष-सहिष्णु कुंजी-मूल्य स्टोर का निर्माण
+**चरण 1: समस्या को समझें**
+एक कुंजी-मूल्य स्टोर बनाएं जो प्रक्रिया क्रैश से बच जाए।
+**चरण 2: दृष्टिकोण को पहचानें**
+किसी पर्यवेक्षक के साथ जेनसर्वर का उपयोग करें।
+**चरण 3: कार्यान्वयन**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**चरण 4: सत्यापित करें**
+प्रक्रिया को समाप्त करें और सत्यापित करें कि यह ताज़ा स्थिति के साथ पुनः आरंभ होती है।
+### समस्या 2: समवर्ती वेब स्क्रैपर
+**चरण 1: समस्या को समझें**
+एक साथ अनेक URL प्राप्त करें और परिणाम एकत्र करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+समवर्ती निष्पादन के लिए अमृत कार्यों का उपयोग करें।
+**चरण 3: कार्यान्वयन**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**चरण 4: अनुकूलन करें**
+बड़ी URL सूचियों के लिए दर सीमित करना, पुनः प्रयास करना और स्ट्रीमिंग जोड़ना।
 ---
 
 ## सारांश

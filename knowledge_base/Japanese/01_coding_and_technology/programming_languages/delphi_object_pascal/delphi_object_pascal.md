@@ -573,7 +573,7 @@ delphi-project/
 | `{$R *.dfm}`|フォームリソースを含める | `{$R *.dfm}`|
 | `{$WARNINGS OFF}`|警告を抑制する | `{$WARNINGS OFF}`|
 | `{$HINTS OFF}`|ヒントを抑制 | `{$HINTS OFF}`|
-| `{$OPTIMIZATION ON}`|オプティマイザーを有効にする | `{$OPTIMIZATION ON}`|
+| `{$OPTIMIZATION ON}`|オプティマイザを有効にする | `{$OPTIMIZATION ON}`|
 | `{$STRINGCHECKS ON}`|文字列範囲チェックを有効にする | `{$STRINGCHECKS ON}`|
 ### コマンドラインからのビルド
 ```batch
@@ -1072,7 +1072,7 @@ Delphi Deployment Targets:
 | **ヘルスケア** |医用画像処理、患者管理 | VCL コンポーネント、ネイティブ パフォーマンス |
 | **製造** | SCADA システム、産業用制御 |ハードウェアへの直接アクセス、リアルタイム応答 |
 | **政府** |内部管理ツール |レガシー システムの継続性 |
-| **電気通信** |ネットワーク監視ダッシュボード |高速データ視覚化 |
+| **テレコム** |ネットワーク監視ダッシュボード |高速データ視覚化 |
 | **教育** |教育用ソフトウェア、eラーニングツール |迅速な開発、マルチメディアのサポート |
 ---
 
@@ -1086,6 +1086,84 @@ Delphi Deployment Targets:
 |新しい Windows GUI の開発 |可能だがコミュニティは縮小している | C# (WPF/WinUI 3) |
 |ウェブ開発 |適さない | JavaScript、Python、C# |
 |モバイルアプリ | FMX 経由で可能ですが制限があります | Swift、Kotlin、Flutter |
+---
+
+## 総合的な Q&A
+### Q1: Delphi の VCL フレームワークはどのように機能しますか?
+**A:** VCL は、Windows API コントロールをオブジェクト指向の階層でラップします。フォーム、ボタン、グリッドはすべてクラスです。
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: Delphi でコンポーネントを作成するにはどうすればよいですか?
+**A:** TComponent または TControl から継承:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3: Delphi と Free Pascal の違いは何ですか?
+**A:** Delphi は、Embarcadero による商用 IDE/コンパイラです。 Free Pascal はオープンソースのコンパイラで、Lazarus は無料の IDE です。どちらも Object Pascal 構文を使用します。
+### Q4: Delphi でデータベースを操作するにはどうすればよいですか?
+**A:** FireDAC または dbExpress コンポーネントを使用します。
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5: Delphi は現在でも関連性がありますか?
+**A:** レガシー Windows アプリケーションの保守については、はい。新しいプロジェクトの場合、ほとんどの開発者は C# または Web テクノロジーを好みます。 Free Pascal/Lazarus は、無料のクロスプラットフォームの代替手段を提供します。
+---
+
+## 思考連鎖による問題解決
+### 問題 1: データ対応フォームの構築
+**ステップ 1: 問題を理解する**
+データベース レコードを表示および編集するフォームを作成します。
+**ステップ 2: アプローチを特定する**
+データセットにバインドされたデータ対応コンポーネントを使用します。
+**ステップ 3: 実装**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**ステップ 4: 延長**
+検証、エラー処理、検索/フィルター機能を追加します。
 ---
 
 ＃＃ まとめ

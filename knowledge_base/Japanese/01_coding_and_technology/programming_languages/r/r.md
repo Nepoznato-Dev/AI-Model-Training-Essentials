@@ -58,7 +58,7 @@ R は、データ操作、統計モデリング、視覚化、レポート作成
 | **メモリ使用量** |データセット全体を RAM にロードします |`data.table::fread`、コア外処理用の arrow パッケージを使用する |
 | **汎用言語ではありません** | Web 開発、システム プログラミング、またはアプリにはぎこちない |非統計タスクには Python、Go、または JavaScript を使用する |
 | **一貫性のない構文** | Base R には癖があります。異なるパッケージでは異なる規則が使用されます。一貫性を保つために Tidyverse を使用する |
-| **雇用市場** |主に学術/研究の役割 |データ サイエンスの役割では Python が好まれることが増えています |
+| **雇用市場** |主に学術/研究職 |データ サイエンスの役割では Python が好まれることが増えています |
 ---
 
 ## 構文の基礎
@@ -604,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 |プロダクション ML システム |導入用に設計されていません | Python、Java |
 |ウェブ開発 |適さない | JavaScript、Python |
 |大規模データ処理 |メモリバウンド | Python (PySpark)、SQL |
+---
+
+## 総合的な Q&A
+### Q1: 割り当ての`<-`と`=`の違いは何ですか?
+**A:** どちらも値を割り当てますが、`<-` は慣用的な R 代入演算子です。これは、関数呼び出し内を含むすべてのコンテキストで機能します。
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: R で欠落したデータはどのように処理すればよいですか?
+**A:** R は欠損値に`NA`を使用します。ほとんどの関数には`na.rm`パラメータがあります。
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3: `lapply`、`sapply`、`vapply` をどのような場合に使用する必要がありますか?
+**A:** すべてリスト/ベクトルに関数を適用しますが、出力が異なります。
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: ggplot2 を使用して効果的なビジュアライゼーションを作成するにはどうすればよいですか?
+**A:** グラフィックスの文法に従い、データの美しさを視覚的なプロパティにマッピングします。
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5: 大規模なデータセットに対して効率的な R コードを作成するにはどうすればよいですか?
+**A:** 主な実践方法:
+- ベクトルの事前割り当て:`c()`で拡張する代わりに`x <- numeric(n)`
+- 大規模なデータセットには`data.table`を使用します (data.frame より 100 倍高速)
+- 操作をベクトル化 — 可能な限りループを回避します
+- タイプ セーフティのために`sapply`ではなく`vapply`を使用します
+-`Rprof()`または`profvis`を使用したプロファイル 
+- コア外のデータには`arrow`パッケージを検討してください
+---
+
+## 思考連鎖による問題解決
+### 問題 1: 乱雑なデータセットのクリーニングと分析
+**ステップ 1: 問題を理解する**
+欠損値、一貫性のない型、および外れ値を含むデータ フレームがあります。これをクリーンアップして、要約統計を計算する必要があります。
+**ステップ 2: アプローチを特定する**
+tinyverse 動詞を使用します:`filter`、`mutate`、`summarize`、および`group_by`。
+**ステップ 3: 実装**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**ステップ 4: 確認**
+前後の行数を確認し、範囲を検証し、合計をソース データと照合します。
+### 問題 2: 線形回帰モデルの構築
+**ステップ 1: 問題を理解する**
+複数の予測子から連続結果変数を予測します。
+**ステップ 2: アプローチを特定する**
+線形回帰には`lm()`を使用し、仮定を確認し、モデルの適合性を評価します。
+**ステップ 3: 実装**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**ステップ 4: 評価**
+R 二乗、パターンの残差プロット、モデル比較の AIC を確認します。
+### 問題 3: 再現可能なレポートの作成
+**ステップ 1: 問題を理解する**
+分析、視覚化、説明テキストを再現可能な形式で組み合わせたレポートを作成します。
+**ステップ 2: アプローチを特定する**
+R Markdown (または Quarto) を使用して、コード チャンクとテキストをインターリーブします。
+**ステップ 3: 実装**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+Knitr::opts_chunk$set(エコー = FALSE、警告 = FALSE)
+ライブラリ(整頓)
+データ <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**ステップ 4: レンダリング**
+`rmarkdown::render("report.Rmd")`は、自己完結型の HTML ドキュメントを生成します。
 ---
 
 ＃＃ まとめ

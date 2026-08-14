@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "अदा"
-विवरण: "एडीए प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [एडीए, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "उन्नत"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "35 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Ada"
+description: "Comprehensive reference for the Ada programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ada, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #अदा
 Ada एक सांख्यिकीय रूप से टाइप की गई, संकलित प्रोग्रामिंग भाषा है जिसे सुरक्षा-महत्वपूर्ण और उच्च-अखंडता प्रणालियों के लिए डिज़ाइन किया गया है। मूल रूप से 1980 के दशक में अमेरिकी रक्षा विभाग (एडीए लवलेस के नाम पर, जिसे पहला कंप्यूटर प्रोग्रामर माना जाता है) के साथ अनुबंध के तहत विकसित किया गया, एडा विश्वसनीयता, रखरखाव और शुद्धता पर जोर देता है। इसे DoD द्वारा उपयोग की जाने वाली सैकड़ों प्रोग्रामिंग भाषाओं को एक एकल, अच्छी तरह से निर्दिष्ट भाषा से बदलने के लिए डिज़ाइन किया गया था।
 एडीए का उपयोग विमानन (फ्लाई-बाय-वायर सिस्टम), अंतरिक्ष (ईएसए और नासा), रक्षा (मिसाइल मार्गदर्शन, रडार), रेल परिवहन और चिकित्सा उपकरणों में किया जाता है - जहां भी सॉफ्टवेयर विफलता से लोगों की जान जा सकती है।
@@ -41,7 +46,7 @@ Ada एक सांख्यिकीय रूप से टाइप की �
 
 ## एडा क्यों मायने रखती है
 - **सुरक्षा-महत्वपूर्ण सिस्टम**: उन सिस्टमों के लिए शुरू से ही डिज़ाइन किया गया है जहां विफलता कोई विकल्प नहीं है।
-- **मजबूत टाइपिंग**: किसी भी मुख्यधारा की भाषा की सबसे सख्त प्रकार की प्रणाली - संकलन के समय उन त्रुटियों को पकड़ती है जो अन्य भाषाएँ चूक जाती हैं।
+- **मजबूत टाइपिंग**: किसी भी मुख्यधारा की भाषा की सबसे सख्त प्रकार की प्रणाली - संकलन के समय त्रुटियों को पकड़ती है जो अन्य भाषाएँ चूक जाती हैं।
 - **अंतर्निहित समवर्ती**: टास्किंग (समवर्ती प्रोग्रामिंग) भाषा का हिस्सा है, लाइब्रेरी का नहीं।
 - **औपचारिक सत्यापन**: कार्यक्रम की शुद्धता साबित करने के लिए औपचारिक तरीकों का समर्थन करता है।
 - **विश्वसनीयता विशेषताएं**: अंतर्निहित अपवाद, अनुबंध (पूर्व/बाद की शर्तें), और रनटाइम जांच।
@@ -857,6 +862,147 @@ end Main;
 | सामान्य अनुप्रयोग विकास | गैर-महत्वपूर्ण प्रणालियों के लिए ओवरकिल | पायथन, जावा, गो |
 | वेब विकास | अनुकूल नहीं | जावास्क्रिप्ट, पायथन |
 | डेटा साइंस/एमएल | पारिस्थितिकी तंत्र नहीं | पायथन, आर |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: एडा का प्रकार सिस्टम संकलन समय पर बग को कैसे रोकता है?
+**ए:** एडा की टाइप प्रणाली किसी भी भाषा की तुलना में सबसे सख्त है। यह उन त्रुटियों को पकड़ता है जो अन्य भाषाएँ चूक जाती हैं:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2: एडा का टास्किंग मॉडल क्या है और इसकी तुलना अन्य समवर्ती मॉडल से कैसे की जाती है?
+**ए:** एडा में संरक्षित वस्तुओं और कार्यों के साथ अंतर्निहित समवर्तीता है:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: मैं Ada में जेनरिक का उपयोग कैसे करूँ?
+**ए:** एडा जेनेरिक स्पष्ट और प्रकार-सुरक्षित हैं:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: क्या बात Ada को सुरक्षा-महत्वपूर्ण प्रणालियों के लिए उपयुक्त बनाती है?
+**ए:** एडा प्रदान करता है:
+- औपचारिक सत्यापन के लिए स्पार्क उपसमुच्चय (शुद्धता का गणितीय प्रमाण)
+- अनुबंध-आधारित प्रोग्रामिंग (पूर्व/उत्तर शर्ते, प्रकार अपरिवर्तनीय)
+- स्पार्क में कोई अंतर्निहित मेमोरी आवंटन नहीं
+- नियतात्मक कार्य और शेड्यूलिंग
+- उच्च-अखंडता वास्तविक समय प्रणालियों के लिए रेवेन्सकर प्रोफ़ाइल
+- टूलचेन योग्यता (एवियोनिक्स के लिए DO-178C)
+### Q5: मैं Ada प्रोजेक्ट कैसे बनाऊं?
+**ए:** जीपीआर प्रोजेक्ट फ़ाइलों के साथ जीपीआरबिल्ड का उपयोग करें:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक प्रकार-सुरक्षित कतार लागू करना
+**चरण 1: समस्या को समझें**
+संकलन-समय आकार जांच के साथ एक सीमित, थ्रेड-सुरक्षित कतार बनाएं।
+**चरण 2: दृष्टिकोण को पहचानें**
+बाउंड बफ़र के साथ संरक्षित ऑब्जेक्ट का उपयोग करें।
+**चरण 3: कार्यान्वयन**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**चरण 4: सत्यापित करें**
+संरक्षित वस्तु पारस्परिक बहिष्कार की गारंटी देती है। प्रवेश बाधाएं अतिप्रवाह/अंडरफ्लो को रोकती हैं।
+### समस्या 2: अनुबंध-आधारित सत्यापन
+**चरण 1: समस्या को समझें**
+औपचारिक अनुबंधों के साथ वर्गमूल फ़ंक्शन लागू करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+Ada 2012 अनुबंधों (पूर्व/बाद की शर्तों) का उपयोग करें।
+**चरण 3: कार्यान्वयन**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**चरण 4: सत्यापित करें**
+रनटाइम जांच (दावा) उल्लंघन पकड़ती है। स्पार्क में, ये प्रमाण दायित्व बन जाते हैं।
 ---
 
 ## सारांश

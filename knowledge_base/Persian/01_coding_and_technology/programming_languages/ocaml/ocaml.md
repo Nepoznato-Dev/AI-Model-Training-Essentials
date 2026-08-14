@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "OCaml"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Ocaml که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [ocaml، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "29 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "OCaml"
+description: "Comprehensive reference for the OCaml programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ocaml, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # OCaml
 OCaml (Objective Caml) یک زبان برنامه نویسی تابعی است که در INRIA در فرانسه توسعه یافته و اولین بار در سال 1996 منتشر شد. این زبان بیانی بودن برنامه نویسی تابعی را با ویژگی های عملی ترکیب می کند: یک سیستم نوع قدرتمند با استنتاج نوع (Hindley-Milner)، تطبیق الگو، انواع داده های جبری، و برنامه نویسی شی گرا اختیاری. OCaml به کد بومی سریع کامپایل می شود و همچنین از بایت کد پشتیبانی می کند.
 معروف ترین برنامه واقعی OCaml شرکت تجاری **Jane Street** است که از OCaml برای کل زیرساخت تجاری خود استفاده می کند. همچنین در توسعه کامپایلر (کامپایلر Rust در اصل در OCaml نوشته شده بود)، تأیید رسمی، سیستم های مالی و اثبات قضیه استفاده می شود.
@@ -452,12 +457,12 @@ my-ocaml-project/
 | فرمان | توضیحات |
 |---------|-------------|
 | `dune init project my_app`| ایجاد پروژه جدید |
-|  __محافظت شده_1__ | ساخت پروژه |
+| `dune build`| ساخت پروژه |
 | `dune exec ./bin/main.exe`| اجرای |
-|  __محافظت شده_3__ | اجرای تست ها |
+| `dune test`| اجرای تست ها |
 | `dune clean`| مصنوعات ساخت تمیز |
 | `dune utop`| شروع REPL با پروژه بارگذاری شده |
-|  __محافظت شده_6__ | نصب وابستگی ها |
+| `opam install . --deps-only`| نصب وابستگی ها |
 | `dune build @fmt`| کد قالب |
 | `opam switch create 5.1`| ایجاد سوئیچ OCaml 5.1 |
 ---
@@ -632,7 +637,7 @@ let process_user id =
 |------|---------|-------|
 | **ocamlprof** | پروفایل تعداد اعدام | `ocamlc -p`سپس`ocamlprof`|
 | **پرف** | پروفایلر سیستم لینوکس | `perf record ./program`|
-| **فضا-زمان** | پروفایل حافظه (4.x) |  __محافظت شده_3__ |
+| **فضا-زمان** | پروفایل حافظه (4.x) | `OCAML_SPACETIME_INTERVAL=1000 ./program`|
 | **معیار** | میکرو بنچمارک |  بسته`ocaml-benchmark`|
 ### تکنیک های بهینه سازی
 ```ocaml
@@ -710,5 +715,121 @@ ENTRYPOINT ["./app"]
 | برنامه های کاربردی همه منظوره | ممکن است اما طاقچه | برو، پایتون، زنگ |
 ---
 
+## پرسش و پاسخ مصنوعی
+### Q1: استنتاج نوع OCaml چگونه کار می کند؟
+**A:** سیستم نوع Hindley-Milner OCaml انواع را بدون حاشیه نویسی استنباط می کند:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2: انواع داده های جبری چیست و چرا قدرتمند هستند؟
+**A:** ADT ها انواع محصول (سوابق) و انواع مجموع (انواع) را ترکیب می کنند:
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3: ماژول ها و تابع ها چگونه کار می کنند؟
+**A:** ماژول ها کد را سازماندهی می کنند. تابع ها توابعی از ماژول ها به ماژول ها هستند:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4: چه چیزی OCaml را سریع می کند؟
+**A:** OCaml به کد بومی کارآمد کامپایل می‌شود:
+- پاک کردن نوع - بدون بررسی نوع زمان اجرا
+- شناورها و اعداد صحیح جعبه نشده
+- تطبیق الگو برای پرش جداول کامپایل می شود
+- بهینه سازی دم تماس
+- بدون مکث زباله جمع کن (GC افزایشی)
+### Q5: OCaml چگونه با سایر زبان های خانواده ML مقایسه می شود؟
+**A:** OCaml عملی و خلوص را متعادل می کند:
+- در مقابل Haskell: OCaml دارای ویژگی های ضروری، حالت تغییرپذیر و کامپایل سریعتر است.
+- در مقابل F#: OCaml دارای یک سیستم ماژول بالغ تر و پشتیبانی از پلتفرم های مختلف است
+- در مقابل Rust: OCaml دارای GC (بدون مالکیت)، اما Rust دارای FFI و اکوسیستم بهتری است
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: پیاده سازی یک مترجم تایپ ایمن
+**مرحله 1: مشکل را درک کنید**
+یک مترجم برای یک زبان بیان ساده بسازید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از انواع داده های جبری برای عبارات و تطبیق الگو برای ارزیابی استفاده کنید.
+**مرحله 3: پیاده سازی **```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**مرحله 4: تمدید**
+برای یک زبان کامل تر، `Let`، `If`،`Lambda`را اضافه کنید.
+### مسئله 2: ساختن یک تجزیه کننده ساده با ترکیب کننده ها
+**مرحله 1: مشکل را درک کنید**
+عبارات حسابی را با استفاده از ترکیب کننده های تجزیه کننده تجزیه کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+تجزیه کننده های کوچک بسازید و آنها را بنویسید.
+**مرحله 3: پیاده سازی **```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**مرحله 4: نوشتن**
+تجزیه کننده ها را با `map`، `seq`، `alt`، و`many`ترکیب کنید تا عبارات کامل را تجزیه کنید.
+---
+
 ## خلاصه
-OCaml زبانی است که به شما برای تفکر دقیق در مورد داده های خود پاداش می دهد. انواع داده‌های جبری و تطبیق الگوی جامع آن، شما را مجبور می‌کند تا هر موردی را در نظر بگیرید - کامپایلر به یک شریک طراحی تبدیل می‌شود که اشتباهات را قبل از وقوع آنها تشخیص می‌دهد. استنتاج نوع به این معنی است که شما بدون نوشتن یادداشت‌های نوع در همه جا، از این مزایای ایمنی برخوردار می‌شوید. نفوذ OCaml در Rust، F#، TypeScript و Swift قابل مشاهده است – که همگی ایده‌هایی را از سیستم نوع OCaml به عاریت گرفته‌اند. در حالی که بازار کار OCaml کوچک است، یادگیری آن مهارت های برنامه نویسی شما را به روش هایی که به هر زبانی منتقل می شود، تقویت می کند.
+OCaml زبانی است که به شما برای تفکر دقیق در مورد داده های خود پاداش می دهد. انواع داده‌های جبری و تطبیق الگوی جامع آن، شما را مجبور می‌کند تا هر موردی را در نظر بگیرید - کامپایلر به یک شریک طراحی تبدیل می‌شود که اشتباهات را قبل از وقوع آنها تشخیص می‌دهد. استنتاج نوع به این معنی است که شما بدون نوشتن یادداشت‌های نوع در همه جا، از این مزایای ایمنی برخوردار می‌شوید. تأثیر OCaml در Rust، F#، TypeScript و Swift قابل مشاهده است – که همگی ایده‌هایی را از سیستم نوع OCaml به عاریت گرفته‌اند. در حالی که بازار کار OCaml کوچک است، یادگیری آن مهارت های برنامه نویسی شما را به روش هایی که به هر زبانی منتقل می شود، تقویت می کند.

@@ -28,7 +28,7 @@ Before running this project, you should be comfortable with:
 - Basic neural network concepts (optional but helpful)
 
 If you're new to these concepts, check out:
-- [Python Basics](../User%20Questions/prerequisites/python_basics.md)
+- [Python Basics](../../User%20Questions/prerequisites/python_basics.md)
 - [CNNs Guide](../../CNNs/)
 
 ## Quick Start
@@ -181,7 +181,7 @@ total = 0
 with torch.no_grad():
     for images, labels in testloader:
         outputs = model(images)
-        _, predicted = torch.max(outputs.data, 1)
+        _, predicted = torch.max(outputs, 1)
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 

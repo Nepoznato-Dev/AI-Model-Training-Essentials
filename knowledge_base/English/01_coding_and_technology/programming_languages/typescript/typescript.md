@@ -862,6 +862,423 @@ CMD ["node", "dist/index.js"]
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between `type` and `interface`, and when should I use each?
+**A:** Both define object shapes, but they have different capabilities. `interface` supports declaration merging (multiple declarations with the same name merge), `extends` for inheritance, and is the idiomatic choice for public APIs. `type` supports union types, intersection types, mapped types, conditional types, and template literal types — anything advanced. Best practice: use `interface` for object shapes and public APIs; use `type` for unions, utilities, and complex type operations.
+
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Q2: How do generics work, and why are they important?
+**A:** Generics let you write functions, classes, and types that work with any type while maintaining type safety. Instead of `any` (which loses type information), generics preserve the relationship between input and output types. They are the foundation of reusable, type-safe code.
+
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3: What are utility types, and which ones should I know?
+**A:** TypeScript provides built-in utility types that transform existing types. The most important: `Partial<T>` (all optional), `Required<T>` (all required), `Pick<T, K>` (select keys), `Omit<T, K>` (exclude keys), `Record<K, V>` (key-value map), `Exclude<T, U>` (remove from union), `ReturnType<T>` (extract function return type), `Awaited<T>` (unwrap Promise). Learn these — they eliminate most need for custom type operations.
+
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4: How do I type async code and handle errors in a type-safe way?
+**A:** Async functions automatically return `Promise<T>` where T is the return type. Use `await` to unwrap the Promise. For error handling, TypeScript does not have typed exceptions, but you can create type guards and result types. The "Result pattern" (inspired by Rust) provides compile-time error handling.
+
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5: What are declaration files (.d.ts) and how do I use third-party types?
+**A:** Declaration files describe the types of JavaScript libraries that don't have built-in TypeScript types. They contain only type information (no runtime code). Install community-maintained types from DefinitelyTyped: `npm install --save-dev @types/lodash`. For your own libraries, add a `types` field in `package.json` or include `.d.ts` files alongside your source. Use `declare module` for ambient declarations.
+
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Build a Type-Safe Event Emitter
+
+**Problem Statement:** Create a generic, type-safe event emitter in TypeScript where each event name maps to a specific payload type. The compiler should catch incorrect event names and payload types at compile time.
+
+**Step 1 — Understand the Problem:**
+We need an event system where: (1) events are defined with their payload types, (2) `emit` only accepts valid event names with correct payloads, (3) `on` only accepts valid event names with correctly typed handlers. This requires mapped types and generics over an event map interface.
+
+**Step 2 — Identify the Approach:**
+- Define an `EventMap` type: `{ [eventName: string]: payloadType }`.
+- Use `keyof EventMap` to constrain event names.
+- Use `EventMap[K]` to get the payload type for a specific event.
+- Store listeners in a `Map<string, Function[]>`.
+
+**Step 3 — Implement the Solution:**
+
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**Step 4 — Verify and Optimize:**
+- Type safety: the compiler catches wrong event names and wrong payload shapes at compile time.
+- `on` returns an unsubscribe function for convenient cleanup.
+- `once` wraps the listener to auto-unsubscribe after first invocation.
+- For production: add `listenerCount`, `removeAllListeners`, and consider using `AbortSignal` for cancellation.
+
+### Problem 2: Implement a Type-Safe SQL Query Builder
+
+**Problem Statement:** Build a SQL query builder where the column names and types are derived from a TypeScript interface. The builder should prevent invalid column names and type mismatches at compile time.
+
+**Step 1 — Understand the Problem:**
+We need: (1) column names constrained to `keyof T`, (2) WHERE clause values typed according to the column, (3) chainable API for building queries. This requires generics constrained by `Record<string, unknown>`.
+
+**Step 2 — Identify the Approach:**
+- Use `keyof T` for column name constraints.
+- Use `T[K]` for value type constraints.
+- Build SQL string with parameterized queries (prevent SQL injection).
+- Chainable methods return `this`.
+
+**Step 3 — Implement the Solution:**
+
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**Step 4 — Verify and Optimize:**
+- SQL injection prevention: all values go through parameterized queries (`$1`, `$2`), never interpolated.
+- Type safety: column names and value types are checked at compile time.
+- Extensibility: add `join`, `groupBy`, `having`, `insert`, `update` methods following the same pattern.
+- Production: use `kysely` or `drizzle-orm` — they provide this type safety with full SQL coverage.
+
+### Problem 3: Implement a Finite State Machine with Type Safety
+
+**Problem Statement:** Create a type-safe finite state machine where valid transitions are enforced at compile time. Each state can have entry/exit actions, and the machine should track the current state.
+
+**Step 1 — Understand the Problem:**
+We need: (1) states and events defined as types, (2) valid transitions mapped at the type level, (3) the compiler prevents invalid transitions, (4) runtime state tracking with callbacks. This requires mapped types and conditional types.
+
+**Step 2 — Identify the Approach:**
+- Define a `TransitionMap`: `{ [State]: { [Event]: NextState } }`.
+- Use generics to constrain `send(event)` based on the current state.
+- Track state at runtime with a variable.
+- Support entry/exit callbacks per state.
+
+**Step 3 — Implement the Solution:**
+
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**Step 4 — Verify and Optimize:**
+- Runtime safety: `send` throws on invalid transitions.
+- Type safety: the `EventsFor` type extracts valid events per state at compile time.
+- Entry/exit callbacks fire automatically on transitions.
+- For production: use `xstate` — it provides a full state machine library with visual debugging, hierarchical states, guards, and actions.
+
+---
+
 ## Summary
 
 TypeScript is JavaScript done right for anything beyond trivial scripts. It adds a powerful type system that catches bugs early, improves tooling, and documents code -- all while compiling to standard JavaScript that runs anywhere. The learning curve is gentle (you can start with minimal types) but the depth is vast (the type system is Turing-complete). For modern JavaScript development, TypeScript has become the industry standard.

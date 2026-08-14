@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Nauka nauki i pedagogiki
-Nauki o uczeniu się to interdyscyplinarne badanie sposobu uczenia się ludzi, czerpiące z psychologii, neuronauki, edukacji i kognitywistyki. Pedagogika to sztuka i nauka nauczania. Razem odpowiadają na pytania istotne dla każdego, kto uczy, szkoli, mentoruje lub projektuje treści edukacyjne: Co tak naprawdę pomaga ludziom się uczyć? Jakie popularne techniki uczenia się są nieskuteczne? Jak powinna być zorganizowana instrukcja, aby maksymalnie ją przechowywać i przekazywać?
+Nauki o uczeniu się to interdyscyplinarne badanie sposobu uczenia się ludzi, czerpiące z psychologii, neuronauki, edukacji i kognitywistyki. Pedagogika to praktyka i metodologia nauczania. Razem odpowiadają na pytania istotne dla każdego, kto uczy, szkoli, mentoruje lub projektuje treści edukacyjne: Jakie metody pomagają ludziom efektywnie się uczyć? Jakie powszechne techniki uczenia się są nieskuteczne? Jak powinna być zorganizowana instrukcja, aby zapewnić optymalne przechowywanie i przekazywanie?
 ---
 
 ## Jak działa nauka
@@ -82,7 +82,7 @@ Nauki o uczeniu się to interdyscyplinarne badanie sposobu uczenia się ludzi, c
 | **Style uczenia się** (wizualny/słuchowy/kinestetyczny) | Intuicyjnie atrakcyjne | Brak dowodów na to, że dopasowanie instrukcji do preferowanego stylu poprawia naukę |
 ---
 
-## Krzywa zapominania i powtarzanie w odstępach
+## Krzywa zapominania i powtarzanie w odstępach czasu
 ### Krzywa zapominania Ebbinghausa
 | Czas po nauce | Utrzymanie (bez przeglądu) |
 |----------------------------------|----------------------|
@@ -126,7 +126,7 @@ Każda recenzja przesuwa krzywą zapominania dalej. Optymalny odstęp zwiększa 
 ### Projekt wsteczny (zrozumienie od projektu)
 | Krok | Opis |
 |------|------------|
-| **1. Identyfikacja pożądanych rezultatów** | Co uczniowie powinni wiedzieć, rozumieć i umieć zrobić? |
+| **1. Identyfikacja pożądanych rezultatów** | Co uczniowie powinni wiedzieć, rozumieć i umieć? |
 | **2. Określ akceptowalny dowód** | Skąd będziesz wiedzieć, że osiągnęli rezultaty? (Najpierw ocena) |
 | **3. Zaplanuj doświadczenia edukacyjne** | Jakie działania, instrukcje i praktyka pozwolą uczniom odnieść sukces? |
 ### Rusztowanie

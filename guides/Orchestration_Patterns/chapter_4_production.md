@@ -528,13 +528,14 @@ network_configuration:
 ### Input Validation
 
 ```python
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, field_validator
 
 class WorkflowInput(BaseModel):
     customer_id: str
     email: str
     
-    @validator('customer_id')
+    @field_validator('customer_id')
+    @classmethod
     def validate_customer_id(cls, v):
         if not v.startswith('CUST_'):
             raise ValueError('Invalid customer ID format')
@@ -542,7 +543,8 @@ class WorkflowInput(BaseModel):
             raise ValueError('Customer ID too long')
         return v
     
-    @validator('email')
+    @field_validator('email')
+    @classmethod
     def validate_email(cls, v):
         if '@' not in v:
             raise ValueError('Invalid email')

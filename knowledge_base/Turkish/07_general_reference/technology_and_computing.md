@@ -41,7 +41,7 @@ contribution:
 
 # Teknoloji ve Bilgisayar
 Bilgisayar her yerde; telefonunuzda, arabanızda, buzdolabınızda, tıbbi cihazlarınızda ve modern toplumu yöneten altyapıda. Her şeyin nasıl çalıştığını anlamaktan yararlanmak için programcı olmanıza gerek yok. Bu dosya temel bilgileri kapsar: bilgisayar nedir, internet nasıl çalışır, yazılım nasıl oluşturulur ve dijital dünyayı şekillendiren kavramlar.
-> **Daha derine inmek mi istiyorsunuz?** Bu dosya geniş bir genel bakıştır. Herhangi bir konunun ayrıntılı kapsamı için, [web development](../01_coding_and_technology/web_development.md), [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)ve[security](../01_coding_and_technology/security_best_practices.md)dahil olmak üzere [`01_coding_and_technology/`](../01_coding_and_technology/)'deki özel dosyalara bakın.
+> **Daha derine inmek mi istiyorsunuz?** Bu dosya geniş bir genel bakıştır. Herhangi bir konunun ayrıntılı kapsamı için, [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)vedahil olmak üzere [`01_coding_and_technology/`](../01_coding_and_technology/)'deki özel dosyalara bakın.
 ---
 
 ## Bilgisayar Nedir?
@@ -151,7 +151,7 @@ Bulut bilişim, kendi donanımınızı satın almak ve bakımını yapmak yerine
 ---
 
 ## Siber Güvenlik — Dijital Sistemleri Korumak
-Siber güvenlik, bilgisayarları, ağları ve verileri saldırılara karşı koruma uygulamasıdır. Bu önemlidir çünkü her şey birbiriyle bağlantılıdır ve ihlallerin maliyeti çok büyüktür. OWASP Top 10, güvenli geliştirme yaşam döngüsü ve gizli dizi yönetimini kapsayan tam bir kılavuz için bkz. [security best practices](../01_coding_and_technology/security_best_practices.md).
+Siber güvenlik, bilgisayarları, ağları ve verileri saldırılara karşı koruma uygulamasıdır. Bu önemlidir çünkü her şey birbiriyle bağlantılıdır ve ihlallerin maliyeti çok büyüktür. OWASP Top 10, güvenli geliştirme yaşam döngüsü ve gizli dizi yönetimini kapsayan tam bir kılavuz için bkz..
 ### Yaygın Tehditler
 | Tehdit | Nedir | Önleme |
 |----------|---------------|-----------|

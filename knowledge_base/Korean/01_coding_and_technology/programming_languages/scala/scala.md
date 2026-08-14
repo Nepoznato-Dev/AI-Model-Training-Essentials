@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 스칼라
 Scala(Scalable Language)는 객체 지향 프로그래밍 패러다임과 함수형 프로그래밍 패러다임을 결합한 정적으로 유형이 지정되고 컴파일된 프로그래밍 언어입니다. Martin Odersky가 만들고 2004년에 처음 출시된 Scala는 JVM(JavaScript 및 Scala Native의 경우 Scala.js라고도 함)에서 실행됩니다. 이는 완전한 Java 상호 운용성을 유지하면서 Java의 장황함을 해결하도록 설계되었습니다.
 Scala는 Apache Spark(빅 데이터 처리 프레임워크)의 언어이며 데이터 엔지니어링, 분산 시스템 및 백엔드 서비스에서 광범위하게 사용됩니다. Twitter(현재 X), LinkedIn, Netflix, The Guardian과 같은 회사에서는 Scala를 사용합니다.
@@ -408,17 +409,17 @@ lazy val root = project
 ### 주요 빌드 명령
 | 명령 | 설명 |
 |---------|-------------|
-|  __보호됨_0__ | 템플릿에서 새 Scala 3 프로젝트 만들기 |
-|  __보호됨_1__ | 주요 소스 컴파일 |
-|  __보호됨_2__ | 모든 테스트 실행 |
-|  __보호됨_3__ | 메인 클래스 실행 |
-|  __보호됨_4__ | 특정 기본 클래스 실행 |
-|  __보호됨_5__ | 클래스 경로의 프로젝트로 REPL 시작 |
-|  __보호_6__ | 컴파일된 출력 정리 |
-|  __보호_7__ | Fat JAR 빌드(sbt-assemblies 플러그인 사용) |
-|  __보호됨_8__ | Scalafmt로 코드 형식 지정 |
-|  __보호_9__ | 코드 형식 확인 |
-|  __보호됨_10__ | 연속 컴파일(변경 시 재컴파일) |
+| `sbt new scala/scala3.g8`| 템플릿에서 새 Scala 3 프로젝트 만들기 |
+| `sbt compile`| 주요 소스 컴파일 |
+| `sbt test`| 모든 테스트 실행 |
+| `sbt run`| 메인 클래스 실행 |
+| `sbt runMain com.example.App`| 특정 기본 클래스 실행 |
+| `sbt console`| 클래스 경로의 프로젝트로 REPL 시작 |
+| `sbt clean`| 컴파일된 출력 정리 |
+| `sbt assembly`| Fat JAR 빌드(sbt-assemblies 플러그인 사용) |
+| `sbt scalafmt`| Scalafmt로 코드 형식 지정 |
+| `sbt scalafmtCheck`| 코드 형식 확인 |
+| `sbt ~compile`| 연속 컴파일(변경 시 재컴파일) |
 ### 코드 형식 지정(.scalafmt.conf)
 ```
 # .scalafmt.conf
@@ -745,7 +746,7 @@ class OrderService(repo: OrderRepository[IO]) {
 | **VisualVM** | JVM 프로파일링 및 모니터링 | `jvisualvm`명령 |
 | **비동기 프로파일러** | 낮은 오버헤드 CPU/메모리 프로파일링 | 실행 중인 JVM에 연결 |
 | **YourKit** | 상업용 프로파일러 | IDE 통합 |
-| **sbt-범위** | 코드 적용 범위 |  __보호됨_2__ |
+| **sbt-범위** | 코드 적용 범위 | `sbt coverage test coverageReport`|
 ### JMH 벤치마킹
 ```scala
 // Add to plugins.sbt: addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.4.6")
@@ -854,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | JVM의 함수형 프로그래밍 | 최고의 FP + JVM 조합 | 클로저 |
 | 일반 애플리케이션 개발 | 가능하지만 복잡함 | 파이썬, 바둑, 자바 |
 | 데이터 과학 | 가능하지만 생태계는 아님 | 파이썬, R |
+---
+
+## 종합 Q&A
+### Q1: Scala의 유형 추론은 Java에 비해 상용구를 어떻게 줄입니까?
+**A:** Scala의 컴파일러는`val`/`var`선언, 메서드 반환 유형 및 익명 함수에 대한 유형을 추론합니다. 이렇게 하면 대부분의 경우 명시적인 유형 주석이 필요하지 않습니다.
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+또한 컴파일러는 형식 매개 변수, 단일 식 메서드의 반환 형식 및 패턴 일치 형식을 추론합니다. 이는 안전을 희생하지 않고도 코드를 간결하게 만듭니다.
+### Q2: `case class`와 일반 `class`를 언제 사용해야 합니까?
+**A:** 불변 데이터 매체에는 `case class`를 사용하세요.`equals`,`hashCode`,`toString`,`copy`및 패턴 일치 지원을 자동으로 제공합니다.
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+경험 법칙: 클래스가 주로 데이터인 경우`case class`를 사용하세요. 변경 가능한 상태나 복잡한 동작이 있는 경우 일반`class`를 사용하세요.
+### Q3: Scala에서 오류를 관용적으로 처리하려면 어떻게 해야 하나요?
+**A:** Scala는 예외를 발생시키는 것보다`Option`,`Either`및`Try`와 같은 유형 반환을 선호합니다.
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4: `trait`와 `abstract class`의 차이점은 무엇인가요?
+**답:** 특성은 다중 상속을 지원하며 유형 매개변수와 구체적인 메소드를 가질 수 있습니다. 추상 클래스는 생성자 매개변수를 가질 수 있지만 단일 상속만 지원합니다.
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5: JVM에서 고성능 Scala 코드를 어떻게 작성합니까?
+**답:** 주요 사례:
+- 동기화를 피하기 위해`case class`및 불변 데이터를 사용하십시오.
+- 구조적 공유를 위해`Vector`,`Map`(불변)를 선호합니다.
+-`@tailrec`주석을 사용하여 테일콜 최적화 보장
+- 과도한 박싱을 피하세요.`Int`,`Double`기본 요소를 사용하세요.
+- 비용이 많이 드는 계산에는 `lazy val`를 사용하세요.
+- 대규모 시퀀스에는`Stream`/ `LazyList`를 선호합니다.
+- JMH를 사용한 프로필 — Scala의 추상화는 효율적인 바이트코드로 컴파일되어야 합니다.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 형식이 안전한 표현식 평가기 구현
+**1단계: 문제 이해**
+덧셈, 곱셈, 변수 조회를 지원하는 변수를 사용하여 수학적 표현식을 평가해야 합니다.
+**2단계: 접근 방식 파악**
+대수적 데이터 유형(봉인된 특성 + 케이스 클래스)을 사용하여 표현식 트리를 모델링한 다음 패턴 일치를 사용하여 평가합니다.
+**3단계: 구현**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**4단계: 확인 및 확장**
+`Div` ,`Pow`,`Neg`케이스를 추가합니다. 봉인 특성은 컴파일러가 비완전한 일치에 대해 경고하도록 보장합니다.
+### 문제 2: HTML 생성을 위한 간단한 DSL 구축
+**1단계: 문제 이해**
+Scala의 구문을 사용하여 HTML 문자열을 생성하는 유형이 안전한 DSL을 만듭니다.
+**2단계: 접근 방식 파악**
+HTML 요소에 대한 사례 클래스와 자연 구문에 대한 암시적 변환을 사용합니다.
+**3단계: 구현**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**4단계: 확인**
+DSL은 유형이 안전하므로 실수로 HTML이 아닌 콘텐츠를 전달할 수 없습니다. `HtmlNode`의 패턴 일치는 철저한 렌더링을 보장합니다.
+### 문제 3: Akka Streams의 동시 단어 수
+**1단계: 문제 이해**
+여러 대용량 파일의 단어 빈도를 동시에 계산합니다.
+**2단계: 접근 방식 파악**
+동시 처리를 위해 Scala의 병렬 컬렉션 또는 Akka Streams를 사용한 다음 결과를 병합합니다.
+**3단계: 구현**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**4단계: 최적화**
+매우 큰 데이터 세트의 경우 배압과 함께 Akka Streams를 사용하십시오.```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## 요약

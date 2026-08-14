@@ -41,12 +41,12 @@ contribution:
 
 #haskell
 Haskell adalah bahasa pemrograman yang murni fungsional, diketik secara statis, dan dievaluasi dengan malas. Pertama kali distandarisasi pada tahun 1990 (Haskell 90) dan disempurnakan melalui beberapa versi (Haskell 2010 adalah standar saat ini), Haskell dikenal dengan ketelitian matematisnya, sistem tipe yang kuat (dengan kelas tipe, monad, dan tipe data aljabar), dan penekanan pada kebenaran melalui tipe.
-Haskell bukanlah bahasa mainstream, namun pengaruhnya sangat besar. Konsep seperti monad, evaluasi malas, dan kelas tipe telah memengaruhi Rust, Swift, Kotlin, Scala, dan TypeScript. Haskell digunakan di bidang keuangan (Standard Chartered, Barclays), kompiler (GHC), dan verifikasi formal.
+Haskell bukanlah bahasa umum, namun pengaruhnya sangat besar. Konsep seperti monad, evaluasi malas, dan kelas tipe telah memengaruhi Rust, Swift, Kotlin, Scala, dan TypeScript. Haskell digunakan di bidang keuangan (Standard Chartered, Barclays), kompiler (GHC), dan verifikasi formal.
 ---
 
 ## Mengapa Haskell Penting
 - **Fungsi murni**: Tidak ada efek samping secara default — fungsi selalu mengembalikan keluaran yang sama untuk masukan yang sama.
-- **Sistem tipe**: Salah satu bahasa yang paling ekspresif — menangkap bug pada waktu kompilasi yang tidak bisa dilakukan bahasa lain.
+- **Sistem tipe**: Salah satu bahasa yang paling ekspresif — menangkap bug pada waktu kompilasi yang tidak dapat dilakukan bahasa lain.
 - **Evaluasi lambat**: Komputasi ditunda hingga diperlukan — memungkinkan struktur data tak terbatas dan komposisi efisien.
 - **Landasan matematika**: Berdasarkan kalkulus lambda dan teori kategori — program lebih mendekati pembuktian matematika.
 - **Pengaruh**: Ide Haskell telah membentuk sebagian besar bahasa modern.
@@ -940,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | Pengembangan aplikasi umum | Mungkin tapi khusus | Python, Buka, Java |
 | Pengembangan web | Yesod/Hamba ada tapi terbatas | JavaScript/Skrip Ketik |
 | Ilmu data | Bukan ekosistem | Piton, R |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Bagaimana evaluasi malas Haskell mempengaruhi kinerja?
+**A:** Evaluasi yang lambat berarti ekspresi dihitung hanya bila diperlukan, sehingga memungkinkan struktur data tak terbatas dan pipeline yang dapat disusun. Namun, hal ini dapat menyebabkan kebocoran ruang jika sampah menumpuk:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Gunakan`foldl'`(dari`Data.List`) alih-alih`foldl`untuk lipatan numerik. Gunakan pola bang`!`atau`seq`untuk memaksa evaluasi bila diperlukan.
+### Q2: Apa perbedaan praktis antara`Functor`,`Applicative`, dan`Monad`?
+**A:** Setiap kelas tipe menambahkan kemampuan:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** memetakan fungsi murni dalam konteks. **Aplikatif** menerapkan fungsi-fungsi itu sendiri dalam suatu konteks. **Monad** memungkinkan setiap langkah bergantung pada hasil langkah sebelumnya. Dalam praktiknya: gunakan`fmap`/`<$>`untuk transformasi sederhana,`<*>`untuk menggabungkan efek, dan`>>=`/`do`untuk perhitungan bergantung berurutan.
+### Q3: Bagaimana cara menangani efek samping dalam kode Haskell murni?
+**A:** Gunakan sistem tipe untuk memisahkan kode murni dan efektif:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Jaga logika inti tetap murni dan dorong efek ke tepinya. Gunakan`ReaderT`untuk konfigurasi,`ExceptT`untuk kesalahan, dan`StateT`untuk keadaan bisa berubah.
+### Q4: Apa itu kelas tipe dan apa bedanya dengan antarmuka OOP?
+**A:** Kelas tipe menentukan perilaku yang dapat diimplementasikan oleh tipe. Tidak seperti antarmuka OOP, antarmuka ini terbuka (tipe apa pun dapat menjadi instance) dan mendukung polimorfisme ad-hoc:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5: Bagaimana cara menyusun proyek Haskell untuk penggunaan di dunia nyata?
+**A:** Gunakan Cabal atau Stack dengan tata letak standar:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Praktik utama: pertahankan IO di`Main.hs`atau modul`IO`khusus, jadikan logika inti murni dan dapat diuji, gunakan pembungkus`newtype`untuk jenis domain.
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menerapkan Fungsi Divisi Aman dengan Pelaporan Kesalahan
+**Langkah 1: Pahami Masalahnya**
+Kita memerlukan divisi yang menangani pembagian dengan nol dan melaporkan kesalahan yang berarti, bukan hanya kerusakan.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`Either`untuk mengembalikan pesan kesalahan atau hasilnya. Hal ini membuat kemungkinan kegagalan terlihat jelas pada tipenya.
+**Langkah 3: Terapkan**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Langkah 4: Verifikasi**
+Sistem tipe menjamin penelepon harus menangani kasus kesalahan. Pencocokan pola atau`either`memaksa penanganan eksplisit.
+### Masalah 2: Mengurai Bahasa Konfigurasi Sederhana
+**Langkah 1: Pahami Masalahnya**
+Parsing pasangan nilai kunci dari string seperti`name=Alice\nage=30`.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`Text.Parsec`atau rekursi manual. Untuk mempermudah, gunakan`break`dan`span`.
+**Langkah 3: Terapkan**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan penanganan komentar (`#`), header bagian (`[section]`), dan ketik paksaan menggunakan ADT `Value`.
+### Masalah 3: Membangun Fibonacci Memo dengan Kemalasan
+**Langkah 1: Pahami Masalahnya**
+Hitung angka Fibonacci secara efisien. Rekursi naif bersifat eksponensial.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan evaluasi malas Haskell untuk membuat daftar tak terbatas di mana setiap elemen dihitung satu kali dan di-cache.
+**Langkah 3: Terapkan**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Langkah 4: Optimalkan**
+Untuk akses acak, gunakan`Data.Array`dengan konstruksi malas. Untuk indeks yang sangat besar, gunakan eksponensial matriks dalam O(log n).
+### Masalah 4: Menerapkan Mesin Status Sederhana
+**Langkah 1: Pahami Masalahnya**
+Modelkan lampu lalu lintas yang berputar Merah -> Hijau -> Kuning -> Merah.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan tipe data aljabar untuk status dan fungsi transisi murni.
+**Langkah 3: Terapkan**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Langkah 4: Verifikasi**
+Fungsi murni dapat diuji dengan mudah:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Ringkasan

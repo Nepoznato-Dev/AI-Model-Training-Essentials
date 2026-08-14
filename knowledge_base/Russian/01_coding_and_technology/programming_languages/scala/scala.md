@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Скала
 Scala (масштабируемый язык) — это статически типизированный компилируемый язык программирования, сочетающий в себе парадигмы объектно-ориентированного и функционального программирования. Созданный Мартином Одерски и впервые выпущенный в 2004 году, Scala работает на JVM (также Scala.js для JavaScript и Scala Native). Он был разработан для решения проблемы многословия Java, сохраняя при этом полную совместимость Java.
-Scala — это язык, лежащий в основе Apache Spark (инфраструктура обработки больших данных), и он широко используется в области обработки данных, распределенных системах и серверных службах. Такие компании, как Twitter (теперь X), LinkedIn, Netflix и The Guardian, используют Scala.
+Scala — это язык, лежащий в основе Apache Spark (инфраструктура обработки больших данных), и он широко используется в инженерии данных, распределенных системах и серверных службах. Такие компании, как Twitter (теперь X), LinkedIn, Netflix и The Guardian, используют Scala.
 ---
 
 ## Почему Scala важна
@@ -411,7 +412,7 @@ lazy val root = project
 | `sbt new scala/scala3.g8`| Создать новый проект Scala 3 из шаблона |
 | `sbt compile`| Собрать основные источники |
 | `sbt test`| Запустить все тесты |
-|  __ЗАЩИЩЕНО_3__ | Запустить основной класс |
+| `sbt run`| Запустить основной класс |
 | `sbt runMain com.example.App`| Запуск определенного основного класса |
 | `sbt console`| Запустите REPL с проектом в пути к классам |
 | `sbt clean`| Очистить скомпилированный вывод |
@@ -742,7 +743,7 @@ class OrderService(repo: OrderRepository[IO]) {
 | Инструмент | Цель | Использование |
 |------|---------|-------|
 | **ДжМХ** | Микро-бенчмаркинг |  Плагин`sbt-jmh`|
-| **VisualVM** | Профилирование и мониторинг JVM | `jvisualvm`команда |
+| **VisualVM** | Профилирование и мониторинг JVM |  Команда`jvisualvm`|
 | **Асинхронный профилировщик** | Профилирование процессора/памяти с низкими издержками | Подключитесь к работающей JVM |
 | **ВашКит** | Коммерческий профайлер | Интеграция IDE |
 | **охват sbt** | Покрытие кода | `sbt coverage test coverageReport`|
@@ -854,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Функциональное программирование на JVM | Лучшая комбинация FP + JVM | Кложур |
 | Общая разработка приложений | Возможно, но сложно | Питон, Го, Java |
 | Наука о данных | Возможно, но не экосистема | Питон, Р |
+---
+
+## Синтетические вопросы и ответы
+### Вопрос 1: Как вывод типов в Scala позволяет сократить количество шаблонов по сравнению с Java?
+**A:** Компилятор Scala определяет типы для объявлений `val`/`var`, типы возвращаемых значений метода и анонимные функции. Это устраняет необходимость в явных аннотациях типов в большинстве случаев:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+Компилятор также выводит параметры типа, возвращаемые типы методов с одним выражением и типы соответствия шаблону. Это делает код кратким без ущерба для безопасности.
+### Вопрос 2: Когда следует использовать`case class`вместо обычного `class`?
+**A:** Используйте`case class`для неизменяемых носителей данных — они обеспечивают`equals`,`hashCode`,`toString`,`copy`и поддержку сопоставления с образцом автоматически:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Эмпирическое правило: если ваш класс в основном представляет собой данные, используйте `case class`. Если у него изменяемое состояние или сложное поведение, используйте обычный `class`.
+### Вопрос 3: Как идиоматически обрабатывать ошибки в Scala?
+**A:** Scala предпочитает возвращать такие типы, как`Option`,`Either`и `Try`, а не выдавать исключения:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4: В чем разница между`trait`и `abstract class`?
+**A:** Трейты поддерживают множественное наследование и могут иметь параметры типа и конкретные методы. Абстрактные классы могут иметь параметры конструктора, но поддерживают только одиночное наследование:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Вопрос 5: Как написать высокопроизводительный код Scala на JVM?
+**О:** Ключевые практики:
+- Используйте`case class`и неизменяемые данные, чтобы избежать синхронизации.
+- Предпочитайте`Vector`,`Map`(неизменяемый) для структурного совместного использования.
+- Используйте аннотацию `@tailrec`, чтобы обеспечить оптимизацию хвостового вызова.
+— Избегайте чрезмерной упаковки — используйте примитивы `Int`, `Double`.
+- Используйте`lazy val`для дорогостоящих вычислений.
+- Предпочитайте`Stream`/`LazyList`для больших последовательностей.
+- Профиль с JMH — абстракции Scala должны компилироваться в эффективный байт-код.
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Реализация типобезопасного вычислителя выражений
+**Шаг 1. Поймите проблему**
+Нам нужно оценивать математические выражения с переменными, поддерживая сложение, умножение и поиск переменных.
+**Шаг 2. Определите подход**
+Используйте алгебраические типы данных (запечатанные признаки + классы вариантов) для моделирования дерева выражений, а затем сопоставление с образцом для оценки.
+**Шаг 3. Реализация**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**Шаг 4. Проверка и продление**
+Добавьте случаи `Div`, `Pow`, `Neg`. Запечатанный признак гарантирует, что компилятор предупреждает о неполных совпадениях.
+### Проблема 2: создание простого DSL для генерации HTML
+**Шаг 1. Поймите проблему**
+Создайте типобезопасный DSL, который генерирует строки HTML, используя синтаксис Scala.
+**Шаг 2. Определите подход**
+Используйте классы вариантов для элементов HTML и неявные преобразования для естественного синтаксиса.
+**Шаг 3. Реализация**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**Шаг 4. Проверка**
+DSL является типобезопасным — вы не можете случайно передать контент, отличный от HTML. Сопоставление шаблонов`HtmlNode`обеспечивает исчерпывающий рендеринг.
+### Проблема 3: одновременный подсчет слов с помощью потоков Akka
+**Шаг 1. Поймите проблему**
+Подсчитайте частоты слов одновременно в нескольких больших файлах.
+**Шаг 2. Определите подход**
+Используйте параллельные коллекции Scala или Akka Streams для параллельной обработки, а затем объединяйте результаты.
+**Шаг 3. Реализация**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**Шаг 4. Оптимизация**
+Для очень больших наборов данных используйте Akka Streams с противодавлением:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## Краткое содержание

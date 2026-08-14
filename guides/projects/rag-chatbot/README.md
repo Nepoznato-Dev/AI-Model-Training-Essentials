@@ -483,7 +483,7 @@ By completing this project, you now understand:
 **Congratulations! You've built your first AI chatbot!** 🎉
 
 [Report Issue](https://github.com/YOUR_USERNAME/AI-Model-Training-Essentials/issues) | 
-[View Full RAG Guide](../RAG/) | 
+[View Full RAG Guide](../../RAG/) | 
 [Back to Projects](../)
 
 </div>

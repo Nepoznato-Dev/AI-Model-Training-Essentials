@@ -1,1 +1,0 @@
-A collection of YAML-frontmattered Markdown prompts that define specialized AI agent modes (Agent, Plan, Debug, Test, etc.) for guiding multi-agent development workflows.

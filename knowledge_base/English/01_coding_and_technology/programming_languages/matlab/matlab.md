@@ -696,6 +696,226 @@ ENTRYPOINT ["/app/run_app.sh"]
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How do I vectorize operations instead of using loops?
+
+**A:** MATLAB is optimized for matrix operations. Replace loops with vectorized code:
+
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### Q2: What is the difference between matrices and arrays?
+
+**A:** In MATLAB, everything is an array. Matrices are 2D arrays:
+
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### Q3: How do I create effective plots in MATLAB?
+
+**A:** Use the plotting functions with proper labeling:
+
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4: How do I debug MATLAB code effectively?
+
+**A:** Use the built-in debugger and diagnostic tools:
+
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### Q5: How do I read and write data files?
+
+**A:** MATLAB supports many file formats:
+
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Solving a System of Linear Equations
+
+**Step 1: Understand the Problem**
+Solve Ax = b where A is a matrix and b is a vector.
+
+**Step 2: Identify the Approach**
+Use MATLAB's backslash operator `\` which automatically selects the best algorithm.
+
+**Step 3: Implement**
+```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**Step 4: Extend**
+For overdetermined systems, `\` gives least-squares solution. For sparse systems, use `sparse` matrices.
+
+### Problem 2: Signal Processing — FFT Analysis
+
+**Step 1: Understand the Problem**
+Analyze the frequency content of a noisy signal.
+
+**Step 2: Identify the Approach**
+Generate a test signal, apply FFT, and plot the frequency spectrum.
+
+**Step 3: Implement**
+```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**Step 4: Verify**
+Peaks should appear at 50 Hz and 120 Hz. Noise floor should be low.
+
+### Problem 3: Curve Fitting with Custom Models
+
+**Step 1: Understand the Problem**
+Fit experimental data to a custom nonlinear model.
+
+**Step 2: Identify the Approach**
+Use `fit` with a custom `fittype` or `lsqcurvefit`.
+
+**Step 3: Implement**
+```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**Step 4: Validate**
+Check residuals for patterns, verify R², and test with different starting points.
+
+---
+
 ## Summary
 
 MATLAB is the standard tool for engineering computation and scientific prototyping. Its matrix-oriented language, extensive toolboxes, and Simulink environment make it indispensable in many engineering disciplines. While Python has encroached on some of MATLAB's territory (especially in data science), MATLAB remains the preferred tool for control systems, signal processing, and engineering education. For production deployment, code is typically translated from MATLAB to C/C++ or Python.

@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "टाइपस्क्रिप्ट"
-विवरण: "टाइपस्क्रिप्ट प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [टाइपस्क्रिप्ट, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "34 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "TypeScript"
+description: "Comprehensive reference for the TypeScript programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [typescript, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # टाइपस्क्रिप्ट
 टाइपस्क्रिप्ट जावास्क्रिप्ट का एक स्थिर रूप से टाइप किया गया सुपरसेट है जिसे माइक्रोसॉफ्ट (एंडर्स हेजल्सबर्ग के नेतृत्व में) द्वारा विकसित किया गया है और पहली बार 2012 में जारी किया गया है। यह जावास्क्रिप्ट में वैकल्पिक प्रकार के एनोटेशन, इंटरफेस, जेनरिक और उन्नत टाइप-सिस्टम सुविधाओं को जोड़ता है - फिर सादे जावास्क्रिप्ट में संकलित होता है जो जावास्क्रिप्ट चलाने पर कहीं भी चलता है। टाइपस्क्रिप्ट कोई अलग भाषा या रनटाइम नहीं है; यह एक टाइप चेकर वाला जावास्क्रिप्ट है।
 टाइपस्क्रिप्ट बड़े पैमाने पर जावास्क्रिप्ट विकास के लिए मानक बन गया है। रिएक्ट, एंगुलर, वीएस कोड, डेनो और अधिकांश प्रमुख ओपन-सोर्स जावास्क्रिप्ट प्रोजेक्ट टाइपस्क्रिप्ट में लिखे गए हैं। यदि आप किसी भी महत्वपूर्ण आकार का एक नया जावास्क्रिप्ट प्रोजेक्ट शुरू कर रहे हैं, तो टाइपस्क्रिप्ट अनुशंसित डिफ़ॉल्ट है।
@@ -49,10 +54,10 @@
 ## समझौता
 | सीमा | विवरण | विशिष्ट समाधान |
 |----|---|-----|
-| **संकलन चरण** | चलाने से पहले`.ts`→`.js`अवश्य संकलित करें | विकास के लिए`ts-node`/`tsx`का उपयोग करें;  उत्पादन के लिए __संरक्षित_4__ |
+| **संकलन चरण** | चलने से पहले`.ts`→`.js`अवश्य संकलित करें | विकास के लिए`ts-node`/`tsx`का उपयोग करें;  उत्पादन के लिए`tsc`|
 | **सीखने की अवस्था** | प्रकार प्रणाली जटिल हो सकती है (जेनेरिक, सशर्त प्रकार) | बुनियादी प्रकारों से प्रारंभ करें; उन्नत सुविधाओं को धीरे-धीरे अपनाएं |
 | **प्रकार परिभाषा फ़ाइलें** | सभी एनपीएम पैकेज प्रकारों के साथ नहीं भेजे जाते | DefinitelyTyped | से`@types/package-name`इंस्टॉल करें
-| **संकलन समय** | बड़े प्रोजेक्ट टाइप-चेक करने में धीमे हो सकते हैं | प्रोजेक्ट संदर्भ, `isolatedModules`, या`swc`| का उपयोग करें
+| **संकलन समय** | बड़े प्रोजेक्ट टाइप-चेक करने में धीमे हो सकते हैं | प्रोजेक्ट संदर्भ, `isolatedModules`, या`swc`का उपयोग करें |
 | **सुरक्षा की झूठी भावना** | प्रकार रनटाइम शुद्धता की गारंटी नहीं देते | रनटाइम सत्यापन (ज़ोड, आईओ-टीएस) के साथ संयोजित करें |
 ---
 
@@ -806,6 +811,398 @@ CMD ["node", "dist/index.js"]
 | कोई भी नया जावास्क्रिप्ट प्रोजेक्ट | बाद में टाइपस्क्रिप्ट जोड़ने की लागत अधिक है | केवल छोटी स्क्रिप्ट के लिए सादा जेएस |
 | पुस्तकालय / एनपीएम पैकेज | उपभोक्ताओं को स्वत: पूर्ण और टाइप चेकिंग मिलती है | -- |
 **सामान्य नियम**: यदि आपके जावास्क्रिप्ट प्रोजेक्ट में कुछ सौ से अधिक पंक्तियाँ हैं, तो टाइपस्क्रिप्ट का उपयोग करें।
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1:`type`और`interface`के बीच क्या अंतर है, और मुझे प्रत्येक का उपयोग कब करना चाहिए?
+**ए:** दोनों वस्तु आकार को परिभाषित करते हैं, लेकिन उनकी क्षमताएं अलग-अलग होती हैं। `interface`डिक्लेरेशन मर्जिंग (एक ही नाम मर्ज के साथ कई घोषणाएं), इनहेरिटेंस के लिए`extends`का समर्थन करता है, और सार्वजनिक एपीआई के लिए मुहावरेदार विकल्प है। `type`यूनियन प्रकार, प्रतिच्छेदन प्रकार, मैप किए गए प्रकार, सशर्त प्रकार और टेम्पलेट शाब्दिक प्रकार - कुछ भी उन्नत का समर्थन करता है। सर्वोत्तम अभ्यास: ऑब्जेक्ट आकृतियों और सार्वजनिक एपीआई के लिए`interface`का उपयोग करें; यूनियनों, उपयोगिताओं और जटिल प्रकार के संचालन के लिए`type`का उपयोग करें।
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### प्रश्न2: जेनेरिक कैसे काम करते हैं, और वे महत्वपूर्ण क्यों हैं?
+**ए:** जेनरिक आपको फ़ंक्शन, कक्षाएं और प्रकार लिखने देता है जो प्रकार की सुरक्षा बनाए रखते हुए किसी भी प्रकार के साथ काम करते हैं।`any`(जो प्रकार की जानकारी खो देता है) के बजाय, जेनरिक इनपुट और आउटपुट प्रकारों के बीच संबंध को संरक्षित करते हैं। वे पुन: प्रयोज्य, प्रकार-सुरक्षित कोड की नींव हैं।
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3: उपयोगिता प्रकार क्या हैं, और मुझे किनके बारे में जानना चाहिए?
+**ए:** टाइपस्क्रिप्ट अंतर्निहित उपयोगिता प्रकार प्रदान करता है जो मौजूदा प्रकारों को बदल देता है। सबसे महत्वपूर्ण:`Partial<T>`(सभी वैकल्पिक),`Required<T>`(सभी आवश्यक),`Pick<T, K>`(कुंजियाँ चुनें),`Awaited<T>`(वादा खोलो)। इन्हें सीखें - वे कस्टम प्रकार के संचालन की अधिकांश आवश्यकता को समाप्त कर देते हैं।
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4: मैं एसिंक कोड कैसे टाइप करूं और टाइप-सुरक्षित तरीके से त्रुटियों को कैसे संभालूं?
+**ए:** Async फ़ंक्शन स्वचालित रूप से`Promise<T>`लौटाते हैं जहां T रिटर्न प्रकार है। वादे को पूरा करने के लिए`await`का उपयोग करें। त्रुटि प्रबंधन के लिए, टाइपस्क्रिप्ट में टाइप किए गए अपवाद नहीं हैं, लेकिन आप टाइप गार्ड और परिणाम प्रकार बना सकते हैं। "परिणाम पैटर्न" (रस्ट से प्रेरित) संकलन-समय त्रुटि प्रबंधन प्रदान करता है।
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5: घोषणा फ़ाइलें (.d.ts) क्या हैं और मैं तृतीय-पक्ष प्रकारों का उपयोग कैसे करूँ?
+**ए:** घोषणा फ़ाइलें उन जावास्क्रिप्ट पुस्तकालयों के प्रकारों का वर्णन करती हैं जिनमें अंतर्निहित टाइपस्क्रिप्ट प्रकार नहीं होते हैं। उनमें केवल प्रकार की जानकारी होती है (कोई रनटाइम कोड नहीं)। DefinitelyTyped:`npm install --save-dev @types/lodash`से समुदाय-रखरखाव प्रकार स्थापित करें। अपने स्वयं के पुस्तकालयों के लिए,`package.json`में एक`types`फ़ील्ड जोड़ें या अपने स्रोत के साथ`.d.ts`फ़ाइलें शामिल करें। व्यापक घोषणाओं के लिए`declare module`का उपयोग करें।
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक प्रकार-सुरक्षित इवेंट एमिटर बनाएं
+**समस्या कथन:** टाइपस्क्रिप्ट में एक सामान्य, टाइप-सुरक्षित इवेंट एमिटर बनाएं जहां प्रत्येक इवेंट का नाम एक विशिष्ट पेलोड प्रकार पर मैप होता है। कंपाइलर को कंपाइल समय पर गलत इवेंट नाम और पेलोड प्रकार को पकड़ना चाहिए।
+**चरण 1 - समस्या को समझें:**
+हमें एक इवेंट सिस्टम की आवश्यकता है जहां: (1) इवेंट को उनके पेलोड प्रकारों के साथ परिभाषित किया जाता है, (2)`emit`केवल सही पेलोड के साथ वैध इवेंट नाम स्वीकार करता है, (3)`on`केवल सही टाइप किए गए हैंडलर के साथ वैध इवेंट नाम स्वीकार करता है। इसके लिए इवेंट मैप इंटरफ़ेस पर मैप किए गए प्रकारों और जेनेरिक की आवश्यकता होती है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- एक`EventMap`प्रकार परिभाषित करें: `{ [eventName: string]: payloadType }`।
+- इवेंट के नाम सीमित करने के लिए`keyof EventMap`का उपयोग करें।
+- किसी विशिष्ट घटना के लिए पेलोड प्रकार प्राप्त करने के लिए`EventMap[K]`का उपयोग करें।
+- श्रोताओं को`Map<string, Function[]>`में संग्रहित करें।
+**चरण 3 - समाधान लागू करें:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- प्रकार की सुरक्षा: कंपाइलर कंपाइल समय पर गलत ईवेंट नाम और गलत पेलोड आकार पकड़ता है।
+-`on`सुविधाजनक सफ़ाई के लिए एक अनसब्सक्राइब फ़ंक्शन लौटाता है।
+-`once`पहले आह्वान के बाद श्रोता को स्वतः-सदस्यता समाप्त करने के लिए बाध्य करता है।
+- उत्पादन के लिए:`listenerCount`,`removeAllListeners`जोड़ें, और रद्दीकरण के लिए`AbortSignal`का उपयोग करने पर विचार करें।
+### समस्या 2: एक प्रकार-सुरक्षित SQL क्वेरी बिल्डर लागू करें
+**समस्या कथन:** एक SQL क्वेरी बिल्डर बनाएं जहां कॉलम नाम और प्रकार टाइपस्क्रिप्ट इंटरफ़ेस से प्राप्त होते हैं। बिल्डर को संकलन समय पर अमान्य कॉलम नामों और प्रकार के बेमेल को रोकना चाहिए।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) कॉलम नाम`keyof T`तक सीमित, (2) जहां क्लॉज मान कॉलम के अनुसार टाइप किए गए, (3) बिल्डिंग क्वेरी के लिए चेनेबल एपीआई। इसके लिए`Record<string, unknown>`द्वारा प्रतिबंधित जेनेरिक की आवश्यकता होती है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- कॉलम नाम की बाधाओं के लिए`keyof T`का उपयोग करें।
+- मूल्य प्रकार की बाधाओं के लिए`T[K]`का उपयोग करें।
+- पैरामीटरयुक्त प्रश्नों के साथ SQL स्ट्रिंग बनाएं (SQL इंजेक्शन को रोकें)।
+- चेनेबल विधियाँ`this`लौटाती हैं।
+**चरण 3 - समाधान लागू करें:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- एसक्यूएल इंजेक्शन रोकथाम: सभी मान पैरामीटरयुक्त प्रश्नों (`$1`, `$2`) से गुजरते हैं, कभी भी प्रक्षेपित नहीं होते।
+- प्रकार सुरक्षा: संकलन समय पर कॉलम नाम और मान प्रकार की जाँच की जाती है।
+- विस्तारशीलता: समान पैटर्न का अनुसरण करते हुए`join`,`groupBy`,`having`,`insert`,`update`विधियां जोड़ें।
+- उत्पादन:`kysely`या`drizzle-orm`का उपयोग करें - वे पूर्ण SQL कवरेज के साथ इस प्रकार की सुरक्षा प्रदान करते हैं।
+### समस्या 3: प्रकार की सुरक्षा के साथ एक परिमित राज्य मशीन लागू करें
+**समस्या कथन:** एक प्रकार-सुरक्षित परिमित राज्य मशीन बनाएं जहां संकलन समय पर वैध बदलाव लागू किए जाते हैं। प्रत्येक राज्य में प्रवेश/निकास क्रियाएं हो सकती हैं, और मशीन को वर्तमान स्थिति को ट्रैक करना चाहिए।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) राज्यों और घटनाओं को प्रकारों के रूप में परिभाषित किया गया है, (2) प्रकार के स्तर पर वैध बदलावों को मैप किया गया है, (3) कंपाइलर अमान्य बदलावों को रोकता है, (4) कॉलबैक के साथ रनटाइम स्थिति ट्रैकिंग। इसके लिए मैप किए गए प्रकार और सशर्त प्रकार की आवश्यकता होती है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- एक`TransitionMap`:`{ [State]: { [Event]: NextState } }`को परिभाषित करें।
+- वर्तमान स्थिति के आधार पर`send(event)`को बाधित करने के लिए जेनेरिक का उपयोग करें।
+- एक वेरिएबल के साथ रनटाइम पर स्थिति को ट्रैक करें।
+- प्रति राज्य समर्थन प्रवेश/निकास कॉलबैक।
+**चरण 3 - समाधान लागू करें:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- रनटाइम सुरक्षा:`send`अमान्य ट्रांज़िशन पर फेंकता है।
+- प्रकार सुरक्षा:`EventsFor`प्रकार संकलन समय पर प्रति राज्य वैध घटनाओं को निकालता है।
+- प्रवेश/निकास कॉलबैक संक्रमण पर स्वचालित रूप से सक्रिय हो जाते हैं।
+- उत्पादन के लिए:`xstate`का उपयोग करें - यह विज़ुअल डिबगिंग, पदानुक्रमित स्थिति, गार्ड और क्रियाओं के साथ एक पूर्ण राज्य मशीन लाइब्रेरी प्रदान करता है।
 ---
 
 ## सारांश

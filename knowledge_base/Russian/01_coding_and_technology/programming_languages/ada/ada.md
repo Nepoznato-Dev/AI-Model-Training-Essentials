@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Ада
-Ada — это статически типизированный компилируемый язык программирования, разработанный для систем с высоким уровнем безопасности и высокой целостности. Первоначально разработанная в 1980-х годах по контракту с Министерством обороны США (названная в честь Ады Лавлейс, считающейся первым программистом), Ada подчеркивает надежность, ремонтопригодность и корректность. Он был разработан для замены сотен языков программирования, используемых тогда Министерством обороны, одним, четко определенным языком.
+Ada — это статически типизированный компилируемый язык программирования, предназначенный для систем, критически важных для безопасности и высокой целостности. Первоначально разработанная в 1980-х годах по контракту с Министерством обороны США (названная в честь Ады Лавлейс, считающейся первым программистом), Ada подчеркивает надежность, ремонтопригодность и корректность. Он был разработан для замены сотен языков программирования, которые тогда использовались Министерством обороны, одним, четко определенным языком.
 Ada используется в авиации (системы дистанционного управления), космосе (ЕКА и НАСА), обороне (наведение ракет, радар), железнодорожном транспорте и медицинских устройствах — везде, где сбой программного обеспечения может стоить жизни.
 ---
 
@@ -861,6 +862,147 @@ end Main;
 | Общая разработка приложений | Overkill для некритичных систем | Питон, Java, Го |
 | Веб-разработка | Не подходит | JavaScript, Питон |
 | Наука о данных / ML | Не экосистема | Питон, Р |
+---
+
+## Синтетические вопросы и ответы
+### Вопрос 1: Как система типов Ады предотвращает ошибки во время компиляции?
+**О:** Система типов Ады — одна из самых строгих среди всех языков. Он улавливает ошибки, которые пропускают другие языки:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Вопрос 2: Какова модель задач Ada и чем она отличается от других моделей параллелизма?
+**О:** В Ada имеется встроенный механизм параллельного выполнения защищенных объектов и задач:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Вопрос 3. Как использовать дженерики в Ada?
+**A:** Обобщенные шаблоны Ada являются явными и типобезопасными:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Вопрос 4: Что делает Ada подходящей для систем, критически важных для безопасности?
+**О:** Ада предоставляет:
+- Подмножество SPARK для формальной проверки (математическое доказательство правильности)
+- Программирование на основе контрактов (предварительные/постусловия, инварианты типов)
+- Нет неявного выделения памяти в SPARK.
+- Детерминированное планирование и постановка задач.
+- Профиль Ravenscar для систем реального времени с высокой степенью интеграции.
+- Квалификация инструментальной цепочки (DO-178C для авионики)
+### Вопрос 5: Как создавать проекты Ada?
+**О:** Используйте GPRBuild с файлами проекта GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Реализация типобезопасной очереди
+**Шаг 1. Поймите проблему**
+Создайте ограниченную потокобезопасную очередь с проверкой размера во время компиляции.
+**Шаг 2. Определите подход**
+Используйте защищенный объект с ограниченным буфером.
+**Шаг 3. Реализация**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Шаг 4. Проверка**
+Защищенный объект гарантирует взаимное исключение. Входные барьеры предотвращают переполнение/недополнение.
+### Проблема 2: проверка на основе контракта
+**Шаг 1. Поймите проблему**
+Реализуйте функцию извлечения квадратного корня с формальными контрактами.
+**Шаг 2. Определите подход**
+Используйте контракты Ada 2012 (предварительные/постусловия).
+**Шаг 3. Реализация**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Шаг 4. Проверка**
+Проверки (утверждения) во время выполнения выявляют нарушения. В СПАРК это становится обязательством доказательства.
 ---
 
 ## Краткое содержание

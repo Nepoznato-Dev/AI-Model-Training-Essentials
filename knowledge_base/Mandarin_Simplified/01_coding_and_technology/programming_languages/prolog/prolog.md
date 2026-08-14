@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 序言
 Prolog（逻辑编程）是一种逻辑编程语言，由 Alain Colmerauer 和 Philippe Roussel 于 1972 年创建。与此列表中的所有其他语言不同，Prolog 不会告诉计算机“如何”解决问题 - 您声明“什么”是真实的（事实和规则），Prolog 的推理引擎通过逻辑演绎找出答案。
-Prolog 是 20 世纪 80 年代专家系统、自然语言处理和人工智能研究的首选语言。它为日本的第五代计算机系统项目提供了动力，并在 IBM 的 Watson 中用于自然语言理解。如今，Prolog 被用于约束求解、调度、类型推断、法律推理以及任何自然地表达为逻辑关系的问题。
+Prolog 是 20 世纪 80 年代专家系统、自然语言处理和人工智能研究的首选语言。它为日本第五代计算机系统项目提供了动力，并在 IBM 的 Watson 中用于自然语言理解。如今，Prolog 被用于约束求解、调度、类型推断、法律推理以及任何自然地表达为逻辑关系的问题。
 **约束逻辑编程 (CLP)** 使用约束求解器扩展了 Prolog，用于调度、路由和资源分配 — 这些问题在命令式语言中极其困难。
 ---
 
@@ -164,7 +165,7 @@ classify(X, negative) :- X < 0, !.
 classify(0, zero).
 ```
 
-### 定句语法 (DCG)
+### 定从句语法 (DCG)
 ```prolog
 % Simple sentence parser
 sentence --> noun_phrase, verb_phrase.
@@ -401,7 +402,7 @@ test(list_length) :-
 |没有解决方案 |查询返回 false |检查变量实例化顺序 |
 |解决方案太多 |意外重复 |添加剪切 (!) 或使用`setof`|
 |错误的统一|变量绑定不正确 |使用`=`进行测试；检查函子数量 |
-|性能问题|执行缓慢 |添加削减；使用`table`；检查选择点|
+|性能问题|执行缓慢|添加削减；使用`table`；检查选择点|
 ---
 
 ## 互操作性
@@ -517,14 +518,14 @@ swipl -g main -o myapp.sav -c main.pl
 | **类型推断** | Hindley-Milner 类型检查 | Haskell/ML 原型 |
 | **日程安排** |员工排班、时间表|航空公司机组人员调度|
 | **法律推理** |基于规则的法律分析|合规检查|
-| **数据库查询** |用于数据分析的Datalog |舒芙蕾引擎 |
+| **数据库查询** |用于数据分析的Datalog |舒芙蕾引擎|
 | **验证** |模型检验 |硬件验证|
 | **IBM 沃森** |自然语言理解 |危险！系统|
 | **爱立信** |电信管理|网络配置验证 |
 ---
 
 ## 何时使用 Prolog
-|场景 |为什么选择 Prolog |更好的选择|
+|场景|为什么选择 Prolog |更好的选择|
 |----------|----------|--------------------|
 |基于规则的推理 | Prolog 就是为此而构建的 | Python/Java 中的自定义规则引擎 |
 |约束满足| CLP(FD)优雅高效 | SAT 求解器，适用于大型实例的 OR 工具 |
@@ -535,13 +536,136 @@ swipl -g main -o myapp.sav -c main.pl
 |网络应用程序|不适合| Python、Node.js、Go |
 |数据科学/机器学习 |不是生态系统| Python、R |
 |性能关键代码 | Prolog 的计算速度很慢 | C、C++、Rust |
-|通用编程|可能但尴尬| Python、Go、Java |
+|通用编程 |可能但尴尬| Python、Go、Java |
+---
+
+## 综合问答
+### Q1：Prolog 的统一与其他语言的赋值有何不同？
+**A:** 统一是双向模式匹配，而不是赋值：
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2：Prolog 中的回溯是如何工作的？
+**A:** 当目标失败时，Prolog 回溯到上一个选择点并尝试下一个替代点：
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3：如何在 Prolog 中使用列表？
+**A:** 列表使用头/尾模式匹配：
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4：什么时候应该使用Prolog而不是其他语言？
+**答：** Prolog 擅长：
+- 约束满足（调度、谜题）
+- 基于规则的系统（专家系统、验证）
+- 图/树遍历
+- 自然语言处理
+- 符号计算
+- 任何可以表达为逻辑关系的问题
+### Q5：Prolog 中常见的陷阱有哪些？
+**答：** 关键问题：
+- 无限递归——始终将基本情况放在第一位
+- 意外回溯 — 使用剪切`!`或`once/1`
+- 发生检查 — 默认情况下`X = f(X)`循环（使用`unify_with_occurs_check`）
+- 绿色剪切（优化）与红色剪切（改变含义）——更喜欢绿色
+---
+
+## 解决问题的思路
+### 问题 1：解决 N 皇后难题
+**第 1 步：了解问题**
+将 N 个皇后放在 NxN 棋盘上，这样两个皇后就不会互相攻击。
+**第 2 步：确定方法**
+使用基于约束的生成：逐列放置皇后，检查安全性。
+**步骤 3：实施**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**第 4 步：验证**
+`?- n_queens(8, Qs).`应该找到 92 个解决方案。
+### 问题 2：构建一个简单的专家系统
+**第 1 步：了解问题**
+根据症状诊断汽车问题。
+**第 2 步：确定方法**
+使用 Prolog 规则对诊断知识进行编码。
+**步骤 3：实施**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**第 4 步：扩展**
+添加置信度分数，以交互方式询问用户症状，并进行连锁诊断。
 ---
 
 ＃＃ 概括
 Prolog 不同于任何其他编程语言。您无需编写分步说明，而是描述关系和约束，并且引擎通过逻辑推理搜索解决方案。这使得 Prolog 成为解决命令式语言中棘手或冗长问题的理想选择：专家系统、调度、语法分析、约束满足以及任何涉及逻辑规则的问题。大多数程序员永远不会在生产中使用 Prolog，但是学习它可以扩展您对编程的思考。统一、回溯和声明性问题规范是影响语言设计、人工智能研究甚至数据库查询优化的概念。
 ### Prolog 引擎比较
-|特色 | SWI-Prolog | GNU 序言 | Tau 序言 |
+|特色| SWI-Prolog | GNU 序言 | Tau 序言 |
 |--------|---------|------------|------------|
 | **许可证** | BSD（开源）| GPL（开源）| BSD（开源）|
 | **平台** | Windows、Linux、macOS | Windows、Linux、macOS | JavaScript（浏览器）|
@@ -552,7 +676,7 @@ Prolog 不同于任何其他编程语言。您无需编写分步说明，而是�
 | **网络** | HTTP、TCP、TLS | TCP |通过 JavaScript |
 | **多线程** |是的 |没有 |没有 |
 | **包管理器** | `pack_install/1`|无 | npm |
-| **最适合** |生产、研究|约束求解 |网络应用程序、教育 |
+| **最适合** |生产、研究|约束求解|网络应用程序、教育 |
 ### 使用 Pengines 的 Web 应用程序
 ```prolog
 % SWI-Prolog Pengines — server-side Prolog accessible from web

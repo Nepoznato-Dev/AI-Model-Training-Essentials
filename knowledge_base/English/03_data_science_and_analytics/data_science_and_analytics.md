@@ -58,7 +58,7 @@ Most projects follow some variation of **CRISP-DM**, the industry-standard lifec
 | **Evaluation** | Assess performance against business goals | 5–10% |
 | **Deployment** | Ship the model to production | 5–10% |
 
-The old joke is that 80% of data science is cleaning data. It's not far from the truth.
+Data preparation, particularly data cleaning, is widely estimated to consume around 80% of a data scientist's time.
 
 ---
 
@@ -284,7 +284,7 @@ When datasets exceed what a single machine can handle, distributed computing ent
 
 ### Dashboard Design Principles
 
-Good dashboards follow a few rules: know your audience, choose the right visualisation for each metric, use colour strategically (not decoratively), maintain consistent scales, and enable interactivity (filters, drill-downs). Performance matters too — nobody waits for a slow dashboard.
+Effective dashboards follow established principles: identify the audience, choose the appropriate visualisation for each metric, use colour strategically (not decoratively), maintain consistent scales, and enable interactivity (filters, drill-downs). Performance is also important — dashboards with slow load times reduce user adoption.
 
 ### Common KPI Categories
 

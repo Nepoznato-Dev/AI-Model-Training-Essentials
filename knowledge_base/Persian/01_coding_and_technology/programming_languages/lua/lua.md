@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "لوا"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Lua که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [lua، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "26 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Lua"
+description: "Comprehensive reference for the Lua programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [lua, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #لوا
 Lua یک زبان برنامه نویسی سبک و قابل جاسازی است که برای توسعه برنامه ها طراحی شده است. Lua که در سال 1993 در دانشگاه کاتولیک پاپی ریودوژانیرو در برزیل ایجاد شد، یکی از سریع ترین زبان های برنامه نویسی موجود است. ردپای کوچک آن (مفسر ~ 120 کیلوبایت است) و سادگی آن را به گزینه ای برای برنامه نویسی توسعه بازی، سیستم های تعبیه شده و پیکربندی تبدیل کرده است.
 Lua بیشتر به عنوان زبان برنامه نویسی پشت Roblox (پلتفرم بازی با بیش از 200 میلیون کاربر ماهانه)، افزونه های World of Warcraft و موتورهای بازی متعدد (Love2D، Defold، Corona SDK) شناخته می شود. همچنین در Nginx (OpenResty)، Redis و Wireshark استفاده می شود.
@@ -618,6 +623,254 @@ CMD lua5.4 src/main.lua
 | توسعه وب | OpenResty وجود دارد اما جایگاه | جاوا اسکریپت، پایتون، برو |
 | توسعه برنامه عمومی | برای برنامه های مستقل طراحی نشده است | پایتون، برو، جاوا |
 | علم داده | نه اکوسیستم | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: چرا Lua از نمایه سازی مبتنی بر 1 به جای 0 مبتنی بر استفاده می کند؟
+**A:** Lua برای کاربران غیر برنامه نویس طراحی شده است و از قراردادهای شمارش طبیعی پیروی می کند. عملگر `#`،`ipairs`و توابع رشته ای همگی از نمایه سازی مبتنی بر 1 استفاده می کنند:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+این در سراسر کتابخانه استاندارد سازگار است. هنگام ارتباط با C (بر اساس 0)، مراقب افست باشید.
+### Q2: چگونه الگوهای شی گرا را در Lua پیاده سازی کنم؟
+**A:** Lua از جداول و متاتبل برای OOP استفاده می کند. متاموتد`__index`جستجوی روش را در نمونه های اولیه فعال می کند:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### Q3: کوروتین ها چگونه کار می کنند و چه زمانی باید از آنها استفاده کنم؟
+**A:** Coroutineها رشته های همکاری هستند که می توانند اجرا را به حالت تعلیق درآورند و از سر بگیرند. آنها برای تکرار کننده ها، الگوهای غیر همگام و منطق بازی ایده آل هستند:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### Q4: بهترین راه برای رسیدگی به خطاها در Lua چیست؟
+**A:** از`pcall`/`xpcall`برای تشخیص خطاها استفاده کنید و چندین مقدار را برای الگوهای موفقیت/شکست برگردانید:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### Q5: چگونه می توانم عملکرد Lua را برای بازی ها و سیستم های تعبیه شده بهینه کنم؟
+**A:** شیوه های کلیدی:
+- از`local`برای همه متغیرها استفاده کنید - دسترسی جهانی به طور قابل توجهی کندتر است
+- فیلدهای جدولی که اغلب در افراد محلی به آن ها دسترسی پیدا می کند، کش
+- زمانی که اندازه مشخص است جداول را از قبل تخصیص دهید:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- از ایجاد جداول موقت در هات لوپ خودداری کنید
+- از`table.concat`به جای`..`برای اتصال بسیاری از رشته ها استفاده کنید
+- نمایه با قلاب های`os.clock()`یا اشکال زدایی
+- در LuaJIT از FFI برای C interop به جای C API استفاده کنید
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: ساختن یک تجزیه کننده پیکربندی
+**مرحله 1: مشکل را درک کنید**
+یک فایل پیکربندی کلید-مقدار ساده را که در آن هر خط`key = value`است، تجزیه کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+خطوط را بخوانید، روی`=`تقسیم کنید، فضای خالی را کوتاه کنید و در جدول ذخیره کنید.
+**مرحله 3: پیاده سازی **```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**مرحله 4: تمدید**
+پشتیبانی بخش (`[section]`)، نوع اجبار (اعداد، بولیان)، و جداول تودرتو را اضافه کنید.
+### مسئله 2: پیاده سازی یک سیستم رویداد ساده
+**مرحله 1: مشکل را درک کنید**
+ارسال کننده رویدادی ایجاد کنید که از اشتراک و انتشار رویدادهای نامگذاری شده پشتیبانی کند.
+**مرحله 2: رویکرد را شناسایی کنید**
+از نام رویدادهای نگاشت جدول برای لیست توابع کنترل کننده استفاده کنید.
+**مرحله 3: پیاده سازی **```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**مرحله 4: تایید **
+تست با چندین رویداد، حذف و مدیریت خطا در کنترلرها.
+### مسئله 3: ایجاد یک خط لوله مبتنی بر کوروتین
+**مرحله 1: مشکل را درک کنید**
+یک خط لوله پردازش داده بسازید که در آن هر مرحله داده ها را فیلتر یا تبدیل می کند و از طریق کوروتین ها به هم متصل می شوند.
+**مرحله 2: رویکرد را شناسایی کنید**
+از کوروتین ها به عنوان مراحل خط لوله استفاده کنید - هر مرحله از مرحله قبلی کشیده می شود و به مرحله بعدی می رود.
+**مرحله 3: پیاده سازی **```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**مرحله 4: بهینه سازی**
+این خط لوله مبتنی بر کشش یک عنصر را در یک زمان با حداقل سربار حافظه پردازش می کند - ایده آل برای جریان های بزرگ یا بی نهایت.
 ---
 
 ## خلاصه

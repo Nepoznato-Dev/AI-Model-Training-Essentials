@@ -6,6 +6,8 @@ Core technical competencies for software development and engineering.
 
 - **Programming Fundamentals** - Core programming concepts and patterns
 - **Algorithm Design** - Efficient algorithm implementation
+- **Model Evaluation** - Systematic assessment of ML model performance using appropriate metrics and validation strategies
+- **Git Workflows** - Effective version control practices, branching strategies, and collaboration patterns
 
 ## Why Technical Skills Matter
 

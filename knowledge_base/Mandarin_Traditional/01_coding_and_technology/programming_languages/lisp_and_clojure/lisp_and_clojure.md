@@ -57,7 +57,7 @@ Clojure 是 Rich Hickey 於 2007 年設計的現代 Lisp 方言。它運行在 J
 | **括號** |大量使用`()`最初可能難以閱讀 |使用IDE支援；學會觀察結構|
 | **利基社群** |與主流語言相比，就業市場較小活躍且熱情的社群 |
 | **Clojure 啟動時間** |基於 JVM； CLI 啟動緩慢 |使用 GraalVM 原生鏡像 |
-| **Lisp 方言** |許多不相容的 Lisp（Common Lisp、Scheme、Emacs Lisp） |選擇 Clojure 進行現代工作 |
+| **Lisp 方言** |許多不相容的 Lisp（Common Lisp、Scheme、Emacs Lisp）|選擇 Clojure 進行現代工作 |
 | **非主流** |更少的函式庫、框架和教學 |利用 Java 生態系統 (Clojure) |
 ---
 
@@ -572,9 +572,9 @@ jobs:
 |工具|目的|用途 |
 |------|---------|--------|
 | **標準** |統計標竿|`(bench (expr))`|
-| **VisualVM** | JVM 分析 | `jvisualvm`命令 |
-| **clj-async-profile** |低开销 CPU 分析 | `start`/`stop`/`serve`|
-| **塔夫特** |运行时分析 | `(p :tag (expr))`|
+| **VisualVM** | JVM 分析 |`jvisualvm`命令 |
+| **clj-async-profile** |低開銷 CPU 分析 |`start`/`stop`/`serve`|
+| **塔夫特** |運行時分析 |`(p :tag (expr))`|
 ### 使用 Criterium 進行基準測試
 ```clojure
 (require '[criterium.core :as crit])
@@ -686,16 +686,151 @@ native-image --no-fallback \
 ---
 
 ## 何時使用 Lisp/Clojure
-|場景 |為什麼選擇 Clojure |更好的選擇|
+|場景|為什麼選擇 Clojure |更好的選擇|
 |----------|------------|--------------------|
 |網路後端 | Ring/Compojure 有成效 | Go、Node.js 提供更簡單的 API |
 |資料處理|優秀序列庫 | Python (Pandas)、Scala (Spark) |
 |並發系統|不可變資料+STM |去吧，Erlang/Elixir |
 | DSL / 語言擴充 |巨集是無與倫比的 | — |
 | REPL 驅動的開發 |一流的互動式工作流程 | — |
-|通用應用開發|可能但利基| Python、Java、Go |
-|行動應用程式 |網路應用程式的 ClojureScript；不是本地人 |斯威夫特、科特林 |
+|通用應用開發 |可能但利基| Python、Java、Go |
+|行動應用程式 |用於網頁應用程式的 ClojureScript；不是本地人|斯威夫特、科特林 |
 |資料科學|不是生態系| Python、R |
+---
+
+## 綜合問答
+### Q1：為什麼 Lisp/Clojure 程式有這麼多括號？
+**A:** 括號代表 S 表達式 - 一種統一語法，其中程式碼和資料具有相同的結構（同像性）：
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2：Clojure 如何以不同的方式處理狀態和可變性？
+**A:** Clojure 預設為不可變資料。對於受控狀態更改，它提供了引用類型：
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3：Clojure 的持久資料結構是什麼？
+**A:** 所有 Clojure 集合都是持久的（不可變的、結構共享的）：
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4：Clojure 巨集如何運作？
+**A:** 巨集接收未計算的程式碼（作為資料），對其進行轉換，然後傳回新程式碼：
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5：如何在 Clojure 中處理並發？
+**答：** Clojure 提供了多種並發原語：
+-`atom`— 獨立、同步更改
+-`ref`+`dosync`— 協調的事務性變更
+-`agent`— 非同步、獨立的更改
+-`core.async`通道 — CSP 式並發
+---
+
+## 解決問題的思路
+### 問題 1：處理資料管道
+**第 1 步：了解問題**
+透過管道讀取資料、過濾、轉換和聚合。
+**第 2 步：確定方法**
+使用 Clojure 的線程巨集 (`->>`) 和轉換器。
+**步驟 3：實施**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**第 4 步：優化**
+轉換器避免創建中間序列——它們將轉換組合成一次傳遞。
+### 問題 2：建立簡單的 Web 伺服器
+**第 1 步：了解問題**
+使用 Ring/Compojure 建立基本的 HTTP 伺服器。
+**第 2 步：確定方法**
+使用環適配器和 Compojure 路由。
+**步驟 3：實施**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**第 4 步：擴充**
+新增用於日誌記錄、JSON 解析、身份驗證和錯誤處理的中間件。
 ---
 
 ＃＃ 概括

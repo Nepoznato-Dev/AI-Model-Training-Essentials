@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Organizasyonel Tasarım ve Kültür
-Organizasyonel tasarım, stratejiyi etkili bir şekilde yürütmek için yapının, süreçlerin, rollerin ve karar haklarının kasıtlı olarak düzenlenmesidir. Kültür, insanların gerçekte birlikte çalışmalarını şekillendiren paylaşılan değerler, inançlar, normlar ve davranışlardır. Yapı iskelettir; kültür kişiliktir. Yapıyı kağıt üzerinde yeniden tasarlayabilirsiniz ancak kültür değişimi desteklemiyorsa işe yaramaz. Ve berbat bir yapıya sahip güçlü bir kültür, yavaş yavaş boğulacaktır. En iyi kuruluşlar her ikisini de doğru şekilde yapar ve bunların birbiriyle derinden bağlantılı olduğunu anlar.
+Organizasyonel tasarım, stratejiyi etkili bir şekilde yürütmek için yapının, süreçlerin, rollerin ve karar haklarının kasıtlı olarak düzenlenmesidir. Kültür, insanların gerçekte birlikte çalışmalarını şekillendiren paylaşılan değerler, inançlar, normlar ve davranışlardır. Yapı çerçeveyi sağlar; Kültür davranışı şekillendirir. Bir yapı kağıt üzerinde yeniden tasarlanabilir ancak kültür değişimi desteklemiyorsa uygulama başarısız olur. Benzer şekilde, etkisiz bir yapıyla birleşen güçlü bir kültür, kurumsal performansı giderek zayıflatacaktır. En etkili kuruluşlar her ikisini de ele alır ve bunların birbiriyle derinden bağlantılı olduğunu kabul eder.
 ---
 
 ## Organizasyon Yapıları
@@ -59,7 +59,7 @@ Organizasyonel tasarım, stratejiyi etkili bir şekilde yürütmek için yapın�
 |----------|-----------|---------------------|
 | **Yönetim katmanları** | Birçok | Az |
 | **Denetim** | Kapalı; uygulamalı | Yetkilendirilmiş; müdahalesiz |
-| **Şunlar için en iyisi** | Karmaşık görevler; deneyimsiz ekipler | Rutin görevler; deneyimli, otonom ekipler |
+| **En iyisi** | Karmaşık görevler; deneyimsiz ekipler | Rutin görevler; deneyimli, otonom ekipler |
 | **Risk** | Mikro yönetim; yavaş kararlar | Destek eksikliği; koordinasyon boşlukları |
 ### Merkezileşme ve Merkezi Olmayanlaşma
 | Boyut | Merkezi | Merkezi Olmayan |
@@ -68,7 +68,7 @@ Organizasyonel tasarım, stratejiyi etkili bir şekilde yürütmek için yapın�
 | **Hız** | Yavaş (üstte darboğaz) | Hızlı (kararlar yerel olarak alınır) |
 | **Tutarlılık** | Yüksek | Değişken |
 | **İnovasyon** | Üst bant genişliğiyle sınırlıdır | Birden fazla kaynaktan ortaya çıkıyor |
-| **Şunlar için en iyisi** | Kriz; erken aşama; uyumluluk ağırlıklı endüstriler | Bilgi çalışması; hızlı hareket eden pazarlar; ölçek büyütmeler |
+| **En iyisi** | Kriz; erken aşama; uyumluluk ağırlıklı endüstriler | Bilgi işi; hızlı hareket eden pazarlar; ölçek büyütmeler |
 ---
 
 ## Tasarım İlkeleri
@@ -113,7 +113,7 @@ Temel içgörü: strateji yapıyı yönlendirir. Diğer tüm elemanların hizala
 | **Şeffaflık** | Bilgi açıkça paylaşılıyor mu yoksa güç olarak istifleniyor mu? |
 | **İnovasyon toleransı** | Başarısızlık cezalandırılıyor mu yoksa öğrenme olarak mı görülüyor? |
 | **Müşteri odaklılık** | Kararlar müşteri ihtiyaçlarından mı yoksa şirket içi kolaylıklardan mı başlıyor? |
-| **Hız ve kalite** | Önyargı hızlı tekrarlamaya mı yoksa dikkatli düşünmeye mi yönelik? |
+| **Hız ve kalite karşılaştırması** | Önyargı hızlı tekrarlamaya mı yoksa dikkatli düşünmeye mi yönelik? |
 | **Hiyerarşiye saygı** | Kıdemsiz insanlar kıdemli insanların fikirlerine meydan okuyabilir mi? |
 ---
 

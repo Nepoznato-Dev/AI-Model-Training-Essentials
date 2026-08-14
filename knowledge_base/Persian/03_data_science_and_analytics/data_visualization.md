@@ -1,38 +1,42 @@
 ---
-# فراداده
-عنوان: "تجسم داده ها"
-توضیحات: "انتخاب نمودار، اصول طراحی، داستان سرایی، ابزار"
-دسته بندی: "علم داده و تجزیه و تحلیل"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش علم داده و تجزیه و تحلیل"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [داده، تجسم، علم داده و تحلیل]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "7 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Data Visualization"
+description: "Chart selection, design principles, storytelling, tools"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [data, visualization, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # تجسم داده ها
 یک نمودار خوب طراحی شده می تواند الگوهایی را که جداول اعداد پنهان می کنند را نشان دهد. یک طراحی ضعیف می تواند گمراه کند، گیج کند یا خسته کند. تجسم داده ها هنر تبدیل داده ها به داستان های بصری است که تصمیمات را تعیین می کند. این فایل شامل انتخاب نمودار، اصول طراحی، اشتباهات رایج و ابزارهایی است که همه آن را ممکن می سازد.

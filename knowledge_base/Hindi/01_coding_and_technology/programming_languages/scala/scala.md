@@ -1,46 +1,51 @@
 ---
-# मेटाडेटा
-शीर्षक: "स्कैला"
-विवरण: "स्कैला प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [स्कैला, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "उन्नत"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "35 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Scala"
+description: "Comprehensive reference for the Scala programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [scala, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # स्काला
 स्काला (स्केलेबल लैंग्वेज) एक सांख्यिकीय रूप से टाइप की गई, संकलित प्रोग्रामिंग भाषा है जो ऑब्जेक्ट-ओरिएंटेड और कार्यात्मक प्रोग्रामिंग प्रतिमानों को जोड़ती है। मार्टिन ओडरस्की द्वारा निर्मित और पहली बार 2004 में रिलीज़ किया गया, स्काला JVM (जावास्क्रिप्ट और स्काला नेटिव के लिए Scala.js भी) पर चलता है। इसे पूर्ण जावा इंटरऑपरेबिलिटी को बनाए रखते हुए जावा की वर्बोसिटी को संबोधित करने के लिए डिज़ाइन किया गया था।
 स्काला अपाचे स्पार्क (बड़ा डेटा प्रोसेसिंग ढांचा) के पीछे की भाषा है, और इसका उपयोग डेटा इंजीनियरिंग, वितरित सिस्टम और बैकएंड सेवाओं में बड़े पैमाने पर किया जाता है। ट्विटर (अब एक्स), लिंक्डइन, नेटफ्लिक्स और द गार्जियन जैसी कंपनियां स्काला का उपयोग करती हैं।
 ---
 
 ## स्काला क्यों मायने रखता है
-- **कार्यात्मक + ओओपी हाइब्रिड**: एक ही भाषा में दोनों प्रतिमानों के सर्वोत्तम को संयोजित करता है।
+- **कार्यात्मक + ओओपी हाइब्रिड**: एक ही भाषा में दोनों प्रतिमानों के सर्वश्रेष्ठ को संयोजित करता है।
 - **संक्षिप्त**: जावा की तुलना में काफी कम क्रियात्मकता - पैटर्न मिलान, केस क्लास, प्रकार अनुमान।
 - **अपाचे स्पार्क**: स्पार्क-आधारित बड़े डेटा प्रोसेसिंग के लिए प्राथमिक भाषा।
 - **प्रकार प्रणाली**: अंतर्निहित, प्रकार वर्ग और बीजगणितीय डेटा प्रकार जैसी उन्नत सुविधाएँ।
@@ -404,17 +409,17 @@ lazy val root = project
 ### कुंजी निर्माण आदेश
 | आदेश | विवरण |
 |---------|-----------------|
-|  __संरक्षित_0__ | टेम्पलेट से नया स्काला 3 प्रोजेक्ट बनाएं |
-|  __संरक्षित_1__ | मुख्य स्त्रोत संकलित करें |
-|  __संरक्षित_2__ | सभी परीक्षण चलाएँ |
-|  __संरक्षित_3__ | मुख्य कक्षा चलाएं |
-|  __संरक्षित_4__ | एक विशिष्ट मुख्य वर्ग चलाएँ |
-|  __संरक्षित_5__ | क्लासपाथ | पर प्रोजेक्ट के साथ आरईपीएल प्रारंभ करें
-|  __संरक्षित_6__ | स्वच्छ संकलित आउटपुट |
-|  __संरक्षित_7__ | फैट जार बनाएं (एसबीटी-असेंबली प्लगइन के साथ) |
-|  __संरक्षित_8__ | Scalafmt | के साथ कोड प्रारूपित करें
-|  __संरक्षित_9__ | कोड फ़ॉर्मेटिंग की जाँच करें |
-|  __संरक्षित_10__ | सतत संकलन (परिवर्तन पर पुनः संकलन) |
+| `sbt new scala/scala3.g8`| टेम्पलेट से नया स्काला 3 प्रोजेक्ट बनाएं |
+| `sbt compile`| मुख्य स्त्रोत संकलित करें |
+| `sbt test`| सभी परीक्षण चलाएँ |
+| `sbt run`| मुख्य कक्षा चलाएं |
+| `sbt runMain com.example.App`| एक विशिष्ट मुख्य वर्ग चलाएँ |
+| `sbt console`| क्लासपाथ | पर प्रोजेक्ट के साथ आरईपीएल प्रारंभ करें
+| `sbt clean`| स्वच्छ संकलित आउटपुट |
+| `sbt assembly`| फैट जार बनाएं (एसबीटी-असेंबली प्लगइन के साथ) |
+| `sbt scalafmt`| Scalafmt | के साथ कोड प्रारूपित करें
+| `sbt scalafmtCheck`| कोड फ़ॉर्मेटिंग की जाँच करें |
+| `sbt ~compile`| सतत संकलन (परिवर्तन पर पुनः संकलन) |
 ### कोड फ़ॉर्मेटिंग (.scaleafmt.conf)
 ```
 # .scalafmt.conf
@@ -738,10 +743,10 @@ class OrderService(repo: OrderRepository[IO]) {
 | उपकरण | उद्देश्य | उपयोग |
 |------|------|-------|
 | **जेएमएच** | माइक्रो-बेंचमार्किंग | `sbt-jmh`प्लगइन |
-| **विजुअलवीएम** | जेवीएम प्रोफाइलिंग और निगरानी |  __प्रोटेक्टेड_1__ कमांड |
+| **विजुअलवीएम** | जेवीएम प्रोफाइलिंग और निगरानी | `jvisualvm`कमांड |
 | **एसिंक प्रोफाइलर** | लो-ओवरहेड सीपीयू/मेमोरी प्रोफाइलिंग | चल रहे JVM से संलग्न करें |
 | **आपकी किट** | वाणिज्यिक प्रोफाइलर | आईडीई एकीकरण |
-| **एसबीटी-कवरेज** | कोड कवरेज |  __संरक्षित_2__ |
+| **एसबीटी-कवरेज** | कोड कवरेज | `sbt coverage test coverageReport`|
 ### जेएमएच के साथ बेंचमार्किंग
 ```scala
 // Add to plugins.sbt: addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.4.6")
@@ -850,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | जेवीएम पर कार्यात्मक प्रोग्रामिंग | सर्वोत्तम एफपी + जेवीएम संयोजन | क्लोजर |
 | सामान्य अनुप्रयोग विकास | संभव लेकिन जटिल | पायथन, गो, जावा |
 | डेटा विज्ञान | संभव है लेकिन पारिस्थितिकी तंत्र नहीं | पायथन, आर |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: स्काला का प्रकार अनुमान जावा की तुलना में बॉयलरप्लेट को कैसे कम करता है?
+**ए:** स्काला का कंपाइलर`val`/`var`घोषणाओं, विधि रिटर्न प्रकारों और अनाम कार्यों के प्रकारों का अनुमान लगाता है। यह अधिकांश मामलों में स्पष्ट प्रकार के एनोटेशन की आवश्यकता को समाप्त कर देता है:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+कंपाइलर प्रकार के पैरामीटर, एकल-अभिव्यक्ति विधियों के रिटर्न प्रकार और पैटर्न मिलान प्रकारों का भी अनुमान लगाता है। यह सुरक्षा से समझौता किए बिना कोड को संक्षिप्त बनाता है।
+### Q2: मुझे`case class`बनाम नियमित`class`का उपयोग कब करना चाहिए?
+**ए:** अपरिवर्तनीय डेटा वाहक के लिए`case class`का उपयोग करें - वे `equals`, `hashCode`, `toString`, `copy`, और पैटर्न मिलान समर्थन स्वचालित रूप से प्रदान करते हैं:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+सामान्य नियम: यदि आपकी कक्षा मुख्य रूप से डेटा है, तो`case class`का उपयोग करें। यदि इसकी परिवर्तनशील स्थिति या जटिल व्यवहार है, तो नियमित`class`का उपयोग करें।
+### Q3: मैं स्काला में त्रुटियों को मुहावरेदार तरीके से कैसे संभालूं?
+**ए:** स्काला अपवादों को छोड़कर`Option`,`Either`, और`Try`जैसे प्रकारों को वापस करने का पक्षधर है:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4:`trait`और`abstract class`के बीच क्या अंतर है?
+**ए:** लक्षण एकाधिक वंशानुक्रम का समर्थन करते हैं और इसमें प्रकार के पैरामीटर और ठोस तरीके हो सकते हैं। सार वर्गों में कंस्ट्रक्टर पैरामीटर हो सकते हैं लेकिन केवल एकल वंशानुक्रम का समर्थन करते हैं:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5: मैं जेवीएम पर परफॉर्मेंट स्काला कोड कैसे लिखूं?
+**ए:** मुख्य अभ्यास:
+- सिंक्रनाइज़ेशन से बचने के लिए`case class`और अपरिवर्तनीय डेटा का उपयोग करें
+- संरचनात्मक साझाकरण के लिए `Vector`,`Map`(अपरिवर्तनीय) को प्राथमिकता दें
+- टेल-कॉल ऑप्टिमाइज़ेशन सुनिश्चित करने के लिए`@tailrec`एनोटेशन का उपयोग करें
+- अत्यधिक मुक्केबाजी से बचें -`Int`,`Double`आदिम का उपयोग करें
+- महंगी गणनाओं के लिए`lazy val`का उपयोग करें
+- बड़े अनुक्रमों के लिए`Stream`/`LazyList`को प्राथमिकता दें
+- जेएमएच के साथ प्रोफाइल - स्काला के सार को कुशल बाइटकोड में संकलित किया जाना चाहिए
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक प्रकार-सुरक्षित अभिव्यक्ति मूल्यांकनकर्ता को लागू करना
+**चरण 1: समस्या को समझें**
+हमें जोड़, गुणा और चर लुकअप का समर्थन करते हुए चर के साथ गणितीय अभिव्यक्तियों का मूल्यांकन करने की आवश्यकता है।
+**चरण 2: दृष्टिकोण को पहचानें**
+अभिव्यक्ति वृक्ष को मॉडल करने के लिए बीजगणितीय डेटा प्रकारों (सीलबंद विशेषता + केस वर्ग) का उपयोग करें, फिर मूल्यांकन करने के लिए पैटर्न मिलान करें।
+**चरण 3: कार्यान्वयन**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**चरण 4: सत्यापित करें और विस्तार करें**
+`Div` ,`Pow`,`Neg`मामले जोड़ें। सीलबंद विशेषता यह सुनिश्चित करती है कि संकलक गैर-विस्तृत मिलानों के बारे में चेतावनी दे।
+### समस्या 2: HTML जेनरेशन के लिए एक सरल डीएसएल बनाना
+**चरण 1: समस्या को समझें**
+एक प्रकार-सुरक्षित डीएसएल बनाएं जो स्काला के सिंटैक्स का उपयोग करके HTML स्ट्रिंग उत्पन्न करता है।
+**चरण 2: दृष्टिकोण को पहचानें**
+HTML तत्वों के लिए केस क्लास और प्राकृतिक सिंटैक्स के लिए अंतर्निहित रूपांतरण का उपयोग करें।
+**चरण 3: कार्यान्वयन**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**चरण 4: सत्यापित करें**
+डीएसएल टाइप-सुरक्षित है - आप गलती से गैर-एचटीएमएल सामग्री पास नहीं कर सकते।`HtmlNode`पर पैटर्न मिलान संपूर्ण रेंडरिंग सुनिश्चित करता है।
+### समस्या 3: अक्का स्ट्रीम के साथ समवर्ती शब्द गणना
+**चरण 1: समस्या को समझें**
+एक साथ कई बड़ी फ़ाइलों में शब्द आवृत्तियों की गणना करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+समवर्ती प्रसंस्करण के लिए स्काला के समानांतर संग्रह या अक्का स्ट्रीम का उपयोग करें, फिर परिणामों को मर्ज करें।
+**चरण 3: कार्यान्वयन**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**चरण 4: अनुकूलन करें**
+बहुत बड़े डेटासेट के लिए, बैकप्रेशर के साथ अक्का स्ट्रीम का उपयोग करें:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## सारांश

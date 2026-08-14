@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "جاوا اسکریپت"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی جاوا اسکریپت شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [جاوا اسکریپت، زبان برنامه نویسی، نحو، اکوسیستم، کدنویسی و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "44 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "JavaScript"
+description: "Comprehensive reference for the JavaScript programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [javascript, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # جاوا اسکریپت
 جاوا اسکریپت یک زبان برنامه نویسی پویا و تفسیر شده است که توسط Brendan Eich تنها در 10 روز در سال 1995 ایجاد شد. این زبان که در اصل برای افزودن تعامل به صفحات وب طراحی شده بود، به پرکاربردترین زبان برنامه نویسی در جهان تبدیل شده است. جاوا اسکریپت در هر مرورگر وب، روی سرورها از طریق Node.js، در برنامه های دسکتاپ (الکترون)، برنامه های موبایل (React Native) و حتی سیستم های جاسازی شده اجرا می شود.
 این زبان از این نظر منحصر به فرد است که اساساً تنها گزینه برای توسعه وب سمت مشتری است - هر مرورگر به طور بومی از آن پشتیبانی می کند. این انحصار، همراه با ظهور جاوا اسکریپت تمام پشته (Node.js، Deno، Bun)، آن را ضروری می کند.
@@ -51,7 +56,7 @@ next_review: "05-08-2027"
 |-----------|---------|-------------------|
 | **مشکلات تایپ پویا** | بدون بررسی نوع زمان کامپایل. سطح اشکالات در زمان اجرا | از TypeScript (یک ابر مجموعه تایپ شده جاوا اسکریپت) |
 | **پیچیدگی پاسخ به تماس** | تماس‌های تودرتو می‌توانند ناخوانا شوند ("جهنم پاسخ به تماس") | از Promises و async/wait | استفاده کنید
-| **معناشناسی عجیب و غریب** | `==`در مقابل `===`،`this`اتصال، بالا بردن، نوع اجبار | چیزهای عجیب و غریب را بیاموزید؛ از ESLint استفاده کنید. ترجیح دادن`const`/`let`به`var`|
+| **معناشناسی عجیب و غریب** | `==`vs`===`,`this`اتصال، بالا بردن، نوع اجبار | چیزهای عجیب و غریب را بیاموزید؛ از ESLint استفاده کنید. ترجیح دادن`const`/`let`بر`var`|
 | **تک نخ** | وظایف محدود به CPU حلقه رویداد | از Web Workers، worker thread ها یا بارگذاری به ماژول های بومی استفاده کنید |
 | **کیفیت بسته** | باز بودن npm به معنای ناسازگاری کیفیت و خطرات امنیتی است | وابستگی حسابرسی؛ استفاده از فایل های قفل؛ ترجیح می دهند بسته های به خوبی نگهداری شده |
 ---
@@ -1032,7 +1037,7 @@ pm2 startup
 | ابزار | هدف |
 |------|---------|
 | **npm / نخ / pnpm ** | مدیران بسته |
-| **TypeScript** | ابر مجموعه جاوا اسکریپت تایپ شده |
+| **TypeScript** | ابرمجموعه تایپ شده جاوا اسکریپت |
 | **ESLint** | کد لینتینگ |
 | **زیباتر** | قالب بندی کد |
 | **Vite** | ابزار ساخت سریع و سرور توسعه دهنده |
@@ -1051,6 +1056,419 @@ pm2 startup
 | برنامه های دسکتاپ (الکترون) | کراس پلتفرم با فناوری وب | C# (WPF)، Tauri (Rust) |
 | محاسبات فشرده CPU | محدودیت تک رشته ای | پایتون (NumPy)، C++، Rust، WebAssembly |
 | برنامه نویسی سیستم ها | سطح انتزاع اشتباه | C، C++، Rust، Go |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین`var`،`let`و`const`چیست و چه زمانی باید از هر کدام استفاده کنم؟
+**A:**`var`دارای محدوده عملکردی و بلند شده است - در کدهای مدرن از آن اجتناب کنید. `let`دارای محدوده بلوک است و امکان تخصیص مجدد را می دهد. `const`دارای محدوده بلوکی است و از تخصیص مجدد جلوگیری می کند (اما اشیا/آرایه هایی که به آن ارجاع می دهد هنوز قابل تغییر هستند). بهترین روش: به طور پیش فرض روی `const`، از`let`فقط زمانی که نیاز به تخصیص مجدد دارید استفاده کنید، هرگز از`var`استفاده نکنید.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Q2:`this`چگونه در جاوا اسکریپت کار می کند و چرا اینقدر گیج کننده است؟
+**A:**`this`با **نحوه فراخوانی یک تابع** تعیین می شود، نه جایی که تعریف شده است. در فراخوانی متد،`this`شی است. در یک تماس مستقل،`undefined`(حالت دقیق) یا`global`(غیر دقیق) است. توابع پیکان`this`را از محدوده محصور خود به ارث می برند - به همین دلیل است که آنها برای تماس های برگشتی ترجیح داده می شوند. برای تنظیم صریح`this`از`.bind()`استفاده کنید.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Q3: حلقه رویداد چیست و در واقع async/wait چگونه کار می‌کند؟
+**A:** جاوا اسکریپت تک رشته ای با یک حلقه رویداد است که یک صف را پردازش می کند. پشته تماس کدهای همزمان را اجرا می کند. وقتی خالی است، حلقه رویداد وظیفه بعدی را از صف میکرووظیفه (Promises) یا صف macrotask (setTimeout، I/O) انتخاب می کند. `async/await`قند نحوی بر روی Promises است -`await`عملکرد async را متوقف می کند و هنگامی که Promise حل شد، بدون مسدود کردن رشته، از سر می گیرد.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4: چگونه باید خطاها را در جاوا اسکریپت مدرن مدیریت کنم؟
+**A:** از`try/catch`برای کد همزمان و`.catch()`یا`try/catch`با`async/await`برای کد ناهمزمان استفاده کنید. همیشه ردهای Promise را مدیریت کنید - ردهای کنترل نشده Node.js را خراب می کنند. کلاس های خطای سفارشی برای خطاهای دامنه خاص ایجاد کنید. از یک کنترل کننده خطای جهانی به عنوان یک شبکه ایمنی استفاده کنید.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Q5: چه زمانی باید به جای اشیاء/آرایه های ساده از`Map`/`Set`استفاده کنم؟
+**A:** از`Map`زمانی که کلیدها رشته ای نیستند، زمانی که به تکرار مرتبه درج نیاز دارید، زمانی که به`.size`نیاز دارید، یا زمانی که مدخل ها را اضافه/حذف می کنید (عملکرد بهتر از اشیا) از`Map`استفاده کنید. از`Set`برای مجموعه‌های منحصربه‌فرد با جستجوی O(1) استفاده کنید — بسیار سریع‌تر از`array.includes()`برای مجموعه‌های داده بزرگ. از اشیاء ساده برای داده‌های قابل سریال‌سازی با JSON و نقشه‌های کوچک کلید-مقدار با کلیدهای رشته‌ای استفاده کنید.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک تابع Debounce را اجرا کنید
+**بیانیه مشکل:** یک ابزار`debounce`را اجرا کنید که فراخوانی یک تابع را تا زمانی که یک دوره انتظار مشخص از آخرین باری که فراخوانی شده است سپری شود به تاخیر می اندازد. از فراخوانی لبه های پیشرو و انتهایی پشتیبانی کنید.
+** مرحله 1 - مشکل را درک کنید:**
+یک تابع بازگردانده شده تماس‌های متوالی سریع را نادیده می‌گیرد و تنها پس از توقف تماس‌ها برای مدت زمان انتظار فعال می‌شود. "لبه پیشرو" به معنای آتش زدن بلافاصله در اولین تماس است. "لبه دنباله" یعنی آتش پس از مدت انتظار. ما باید هر دو حالت را مدیریت کنیم و از لغو نیز پشتیبانی کنیم.
+** مرحله 2 - شناسایی رویکرد: **
+- شناسه تایمر را در یک بسته ذخیره کنید.
+- در هر تماس: تایمر موجود را پاک کنید، سپس یک`setTimeout`جدید تنظیم کنید.
+- برای لبه اصلی: اگر تایمر فعال نیست، فوراً تماس بگیرید.
+- یک تابع بازگردانده شده را با روش`.cancel()`برگردانید.
+- با استفاده از توابع پیکان یا`.apply()`زمینه و آرگومان های`this`را حفظ کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- بسته شدن وضعیت را در سراسر تماس ها بدون ایجاد آلودگی جهانی حفظ می کند.
+-`clearTimeout`قبل از`setTimeout`تضمین می کند که فقط آخرین تماس باعث اجرا می شود.
+-`.cancel()`برای پاکسازی مهم است (به عنوان مثال، جدا کردن مؤلفه در React).
+- Edge case: اگر`wait`0 باشد، تابع در تیک حلقه رویداد بعدی فعال می شود - برای به روز رسانی دسته ای DOM مفید است.
+### مشکل 2: یک محدود کننده نرخ مبتنی بر وعده بسازید
+**بیانیه مشکل:** یک محدود کننده نرخ ایجاد کنید که حداکثر N درخواست را در هر پنجره زمانی ایجاد کنید. باید وعده‌هایی را برگرداند که زمانی که تماس‌گیرنده مجاز به ادامه است، حل می‌شود و درخواست‌های اضافی را در صف قرار می‌دهد.
+** مرحله 1 - مشکل را درک کنید:**
+ما به یک پنجره کشویی یا ثابت نیاز داریم که تعداد تماس های برقرار شده را ردیابی کند. وقتی به حد مجاز رسید، تماس‌های جدید باید در صف قرار گیرند و وقتی شکافی باز می‌شود، حل شود. این الگوی "سطل نشانه" است.
+** مرحله 2 - شناسایی رویکرد: **
+- مُهر زمانی تماس‌های اخیر را در یک آرایه پیگیری کنید.
+- در هر تماس: مُهرهای زمانی قدیمی‌تر از پنجره را حذف کنید، بررسی کنید که آیا تعداد < محدود است.
+- اگر تحت محدودیت: فورا حل کنید.
+- اگر در حد مجاز است: محاسبه کنید چه زمانی قدیمی‌ترین مُهر زمانی منقضی می‌شود، یک`setTimeout`تنظیم کنید، سپس حل کنید.
+- از یک صف (آرایه ای از توابع حل) برای تماس گیرندگان در انتظار استفاده کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- رویکرد پنجره کشویی منصفانه تر از پنجره های ثابت است (بدون ترکیدگی در مرزهای پنجره).
+- پردازش صف FIFO است - تماس گیرندگان به ترتیب ارائه می شوند.
+- برای تولید: پشتیبانی`AbortController`را اضافه کنید تا تماس گیرندگان بتوانند انتظار را لغو کنند.
+- عملکرد:`_cleanOldTimestamps`O(n) در هر تماس است اما n توسط`maxCalls`محدود می شود.
+### مشکل 3: یک تابع کلون عمیق را اجرا کنید
+**بیانیه مشکل:** تابعی بنویسید که هر مقدار جاوا اسکریپت، مدیریت اشیا، آرایه ها، تاریخ ها، RegExps، نقشه ها، مجموعه ها، ارجاعات دایره ای و آرایه های تایپ شده را عمیقاً شبیه سازی کند.
+** مرحله 1 - مشکل را درک کنید:**
+`JSON.parse(JSON.stringify(obj))`در: `undefined`، توابع، نمادها، تاریخ ها (رشته تبدیل می شوند)، RegExps (تبدیل به اشیاء خالی)، نقشه ها، مجموعه ها، ارجاعات دایره ای (پرتاب ها)، و آرایه های تایپ شده با شکست مواجه می شود. ما به یک راه حل بازگشتی نیاز داریم که اشیاء بازدید شده را ردیابی کند.
+** مرحله 2 - شناسایی رویکرد: **
+- از`Map`برای ردیابی اشیاء شبیه سازی شده استفاده کنید (مرجع دایره ای را کنترل می کند).
+- هر نوع را به طور خاص مدیریت کنید: تاریخ → تاریخ جدید، RegExp → RegExp جدید، نقشه → نقشه جدید با ورودی های کلون شده، تنظیم → مجموعه جدید با مقادیر کلون شده.
+- از`structuredClone()`به عنوان جایگزین داخلی مدرن (موجود در مرورگرها و Node.js 17+) استفاده کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- مراجع دایره ای: نقشه`seen`به جای تکرار بی نهایت، کلون از قبل ایجاد شده را برمی گرداند.
+- توصیف کننده های ویژگی:`Reflect.ownKeys`+`getOwnPropertyDescriptor`گیرنده ها، تنظیم کننده ها و ویژگی های غیرقابل شمارش را حفظ می کند.
+- جایگزین مدرن:`structuredClone(value)`اکثر این موارد را به صورت بومی (به جز توابع و گره های DOM) مدیریت می کند. در صورت موجود بودن آن را ترجیح دهید.
+- عملکرد: برای اشیاء ساده،`JSON.parse(JSON.stringify(obj))`هنوز سریع‌ترین است. از کلون عمیق فقط زمانی استفاده کنید که واقعاً به آن نیاز دارید.
+### مسئله 4: یک امیتر رویداد ساده بسازید
+**بیانیه مشکل:** یک کلاس Emitter رویداد را پیاده سازی کنید که از روش های `on`، `off`، `emit`، و`once`پشتیبانی می کند. شنوندگان باید به ترتیب ثبت نام فراخوانی شوند. `emit`باید آرگومان ها را به همه شنوندگان ارسال کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما به یک سیستم میخانه/فرعی نیاز داریم: شنوندگان را برای رویدادهای نام‌گذاری شده ثبت کنید، شنوندگان خاص را حذف کنید، رویدادها را با آرگومان‌ها آغاز کنید و از شنوندگان یک‌باره پشتیبانی کنید. این الگوی Observer است که به طور گسترده در Node.js استفاده می شود.
+** مرحله 2 - شناسایی رویکرد: **
+- شنوندگان را در`Map<string, Array<Function>>`ذخیره کنید.
+- `on`: شنونده را به آرایه فشار دهید.
+- `off`: شنونده خاص را از آرایه فیلتر کنید.
+- `emit`: آرایه را تکرار کنید و هر شنونده را با آرگومان های گسترده فراخوانی کنید.
+- `once`: شنونده را در تابعی بپیچید که پس از اولین تماس خود را حذف می کند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- کپی`[...listeners]`در`emit`هنگامی که شنونده`off`را در حین تکرار فرا می خواند، از بروز مشکلات جلوگیری می کند.
+-`once``_original` را ذخیره می کند تا تماس گیرندگان بتوانند از طریق`off(event, originalFn)`لفاف را جدا کنند.
+- زمینه های خصوصی (`#listeners`) از جهش خارجی حالت داخلی جلوگیری می کند.
+- برای تولید: هشدار`maxListeners`(مانند Node.js)، مدیریت خطا به ازای هر شنونده و`prependListener`را برای اولویت اضافه کنید.
 ---
 
 ## خلاصه

@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "सी++"
-विवरण: "C++ प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [सीपीपी, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "31 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "C++"
+description: "Comprehensive reference for the C++ programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [cpp, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # सी++
 C++ एक सामान्य-उद्देश्यीय, संकलित प्रोग्रामिंग भाषा है, जो बर्जने स्ट्रॉस्ट्रुप द्वारा बनाई गई है, जिसे पहली बार 1985 में जारी किया गया था। यह C को ऑब्जेक्ट-ओरिएंटेड फीचर्स, जेनरिक और - आधुनिक संस्करणों (C++11 और बाद में) में - लैम्ब्डा, स्मार्ट पॉइंटर्स और स्टैंडर्ड टेम्पलेट लाइब्रेरी (STL) जैसे उच्च-स्तरीय अमूर्तता के साथ विस्तारित करता है। C++ "शून्य-ओवरहेड एब्स्ट्रैक्शन" सिद्धांत का पालन करता है: आपको उन सुविधाओं के लिए भुगतान नहीं करना चाहिए जिनका आप उपयोग नहीं करते हैं।
 जब आपको उच्च प्रदर्शन और अभिव्यंजक शक्ति दोनों की आवश्यकता होती है तो C++ पसंदीदा भाषा है। यह गेम इंजन (अवास्तविक इंजन), ब्राउज़र (क्रोम, फ़ायरफ़ॉक्स), डेटाबेस (MongoDB), ऑपरेटिंग सिस्टम (विंडोज़ और macOS के हिस्से), वित्तीय ट्रेडिंग सिस्टम और वास्तविक समय सिमुलेशन को शक्ति प्रदान करता है।
@@ -48,7 +53,7 @@ C++ एक सामान्य-उद्देश्यीय, संकलि
 ## समझौता
 | सीमा | विवरण | विशिष्ट समाधान |
 |----|---|-----|
-| **जटिलता** | भाषा बहुत बड़ी है - यहाँ तक कि विशेषज्ञ भी यह सब नहीं जानते हैं | आधुनिक C++ (C++17/20) पर टिके रहें; विरासत पैटर्न से बचें |
+| **जटिलता** | भाषा बहुत बड़ी है - यहां तक ​​कि विशेषज्ञ भी यह सब नहीं जानते हैं | आधुनिक C++ (C++17/20) पर टिके रहें; विरासत पैटर्न से बचें |
 | **स्मृति सुरक्षा** | मैनुअल मेमोरी प्रबंधन; लटकते सूचक, लीक, यूबी | स्मार्ट पॉइंटर्स, RAII और std:: वैकल्पिक | का उपयोग करें
 | **संकलन समय** | बड़ी परियोजनाओं को संकलित करने में कुछ मिनट लग सकते हैं | पूर्व संकलित हेडर, मॉड्यूल (सी++20), वृद्धिशील बिल्ड |
 | **त्रुटि संदेश** | टेम्प्लेट त्रुटियाँ सैकड़ों पंक्तियाँ लंबी हो सकती हैं | static_assert, अवधारणाओं (C++20), बेहतर कंपाइलर्स का उपयोग करें |
@@ -732,6 +737,380 @@ cmake --build build
 | सी++20 | 2020 | **प्रमुख रिलीज**: अवधारणाएं, श्रेणियां, कोरआउटाइन, मॉड्यूल |
 | सी++23 | 2023 | std::अपेक्षित, std::प्रिंट, यह निष्कर्ष निकालना |
 नई परियोजनाओं के लिए, न्यूनतम C++20 लक्ष्य रखें।
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1:`std::unique_ptr`,`std::shared_ptr`और`std::weak_ptr`के बीच क्या अंतर है?
+**ए:**`unique_ptr`विशेष स्वामित्व का प्रतिनिधित्व करता है - केवल एक सूचक ही संसाधन का स्वामी हो सकता है। इसमें शून्य ओवरहेड है (कच्चे पॉइंटर के समान) और इसे कॉपी नहीं किया जा सकता, केवल स्थानांतरित किया जा सकता है। `shared_ptr`साझा स्वामित्व का प्रतिनिधित्व करता है - एकाधिक पॉइंटर्स संदर्भ गणना के साथ संसाधन साझा करते हैं। जब अंतिम`shared_ptr`नष्ट हो जाता है, तो संसाधन मुक्त हो जाता है। `weak_ptr`एक`shared_ptr`का एक गैर-स्वामित्व वाला पर्यवेक्षक है - यह संदर्भ संख्या में वृद्धि नहीं करता है और इसका उपयोग परिपत्र संदर्भों को तोड़ने के लिए किया जाता है।
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### प्रश्न2: चाल शब्दार्थ क्या हैं, और वे क्यों मायने रखते हैं?
+**ए:** मूव सिमेंटिक्स (सी++11) संसाधनों (हीप मेमोरी, फ़ाइल हैंडल इत्यादि) को कॉपी करने के बजाय एक अस्थायी ऑब्जेक्ट से स्थानांतरित करने की अनुमति देता है। एक मूव कंस्ट्रक्टर/असाइनमेंट एक प्रतिद्वंद्विता संदर्भ (`T&&`) लेता है और स्रोत के संसाधनों को "चुरा लेता है", इसे वैध लेकिन अनिर्दिष्ट स्थिति में छोड़ देता है। यह अनावश्यक प्रतियों को समाप्त कर देता है और यही कारण है कि`std::vector`पुनर्आवंटन कुशल है।
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### Q3: मुझे`auto`का उपयोग कब करना चाहिए, और कब मुझे स्पष्ट रूप से प्रकार निर्दिष्ट करना चाहिए?
+**ए:** जब संदर्भ से प्रकार स्पष्ट हो तो`auto`का उपयोग करें (इटरेटर लूप,`make_unique`/`make_shared`कॉल, लैम्ब्डा प्रकार, जटिल टेम्पलेट प्रकार)। जब प्रकार स्पष्ट न हो, जब आपको अंतर्निहित रूपांतरणों की आवश्यकता हो, या सार्वजनिक एपीआई हस्ताक्षरों में स्पष्ट रूप से प्रकार निर्दिष्ट करें। "लगभग हमेशा ऑटो" (एएए) शैली स्थानीय चर के लिए`auto`का पक्ष लेती है; "ऑटो जहां सहायक" शैली अधिक रूढ़िवादी है।
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### Q4: अवधारणाएँ (C++20) टेम्पलेट कोड को कैसे बेहतर बनाती हैं?
+**ए:** अवधारणाएँ नामित आवश्यकताओं के साथ टेम्प्लेट मापदंडों को बाधित करती हैं, स्पष्ट त्रुटि संदेश उत्पन्न करती हैं और टेम्प्लेट बाधाओं पर फ़ंक्शन ओवरलोडिंग को सक्षम करती हैं। अवधारणाओं से पहले, SFINAE और`static_assert`का उपयोग किया गया था - दोनों गुप्त त्रुटियाँ उत्पन्न करते हैं। अवधारणाएँ टेम्प्लेट कोड को पढ़ने योग्य और लिखने योग्य बनाती हैं।
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### प्रश्न5: पांच का नियम क्या है, और यह शून्य के नियम से कैसे संबंधित है?
+**ए:** पांच का नियम: यदि आप डिस्ट्रक्टर, कॉपी कंस्ट्रक्टर, कॉपी असाइनमेंट, मूव कंस्ट्रक्टर, या मूव असाइनमेंट में से किसी एक को परिभाषित करते हैं, तो आपको सभी पांचों को परिभाषित करना चाहिए। शून्य का नियम (पसंदीदा): डिज़ाइन कक्षाएं ताकि उन्हें इनमें से किसी की भी आवश्यकता न हो - सदस्यों के रूप में RAII प्रकार (`std::string`, `std::vector`, `std::unique_ptr`) का उपयोग करें, और कंपाइलर-जनरेटेड स्पेशल स्वचालित रूप से सही काम करेंगे।
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: रेंज के साथ थ्रेड-सुरक्षित निर्माता-उपभोक्ता कतार लागू करें
+**समस्या कथन:** उपभोक्ता पक्ष के लिए C++20 श्रेणियों का उपयोग करके एक सीमित, थ्रेड-सुरक्षित निर्माता-उपभोक्ता कतार बनाएं। कतार को पूर्ण होने पर उत्पादकों को और खाली होने पर उपभोक्ताओं को ब्लॉक करना चाहिए और ग्रेसफुल शटडाउन का समर्थन करना चाहिए।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) ब्लॉकिंग पुश/पॉप के साथ एक सीमित कतार, (2) म्यूटेक्स और कंडीशन वेरिएबल्स के माध्यम से थ्रेड सुरक्षा, (3) सिग्नल शटडाउन का एक तरीका, (4) सी++20 रेंज एकीकरण ताकि उपभोक्ता लूप के लिए रेंज-आधारित का उपयोग कर सकें।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- ब्लॉक करने के लिए`std::mutex`+`std::condition_variable`का उपयोग करें।
+- अंतर्निहित कंटेनर के रूप में`std::queue<T>`का उपयोग करें।
+- रिटर्न प्रकार के रूप में`std::optional<T>`का उपयोग करें -`std::nullopt`सिग्नल बंद हो जाता है।
+- श्रेणियों के समर्थन के लिए एक प्रहरी-आधारित पुनरावर्तक लागू करें।
+**चरण 3 - समाधान लागू करें:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- थ्रेड सुरक्षा:`std::mutex`सभी कतार स्थिति की सुरक्षा करता है; स्थिति चर अवरोधन को संभालते हैं।
+- शानदार शटडाउन:`shutdown()`ने सभी वेटरों को जगाया;  खाली और बंद होने पर`pop()``nullopt` लौटाता है।
+- रेंज समर्थन: इटरेटर का प्रहरी (डिफ़ॉल्ट-निर्मित) किसी भी समाप्त इटरेटर के बराबर तुलना करता है।
+- उत्पादन: लॉक-मुक्त एकल-निर्माता एकल-उपभोक्ता के लिए `boost::lockfree::spsc_queue`, या उच्च-थ्रूपुट परिदृश्यों के लिए`folly::ProducerConsumerQueue`का उपयोग करें।
+### समस्या 2: किसी भी प्रकार का मिटाया गया प्रकार लागू करें
+**समस्या कथन:**`std::any`(C++17) का एक सरलीकृत संस्करण स्क्रैच से लागू करें - किसी भी प्रकार के एकल मानों के लिए एक प्रकार-सुरक्षित कंटेनर,`any_cast`के माध्यम से कॉपी, मूव और टाइप-सुरक्षित पुनर्प्राप्ति का समर्थन करता है।
+**चरण 1 - समस्या को समझें:**
+`std::any`किसी भी प्रतिलिपि योग्य प्रकार का मान संग्रहीत करता है और प्रकार की जाँच के साथ इसे पुनर्प्राप्त करता है। आंतरिक रूप से, यह टाइप इरेज़र का उपयोग करता है: एक व्युत्पन्न टेम्पलेट के साथ एक बेस क्लास इंटरफ़ेस जो वास्तविक मान रखता है। `any_cast`रनटाइम पर संग्रहीत प्रकार की जांच करता है और बेमेल होने पर`bad_any_cast`फेंकता है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- वर्चुअल`clone()`और`type()`के साथ बेस क्लास`HolderBase`का उपयोग करें।
+- एक व्युत्पन्न टेम्पलेट`Holder<T>`का उपयोग करें जो वास्तविक मूल्य संग्रहीत करता है।
+-`std::unique_ptr<HolderBase>`को`Any`क्लास में स्टोर करें।
+-`any_cast<T>``typeid` की जांच करता है और एक`static_cast`निष्पादित करता है।
+**चरण 3 - समाधान लागू करें:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- प्रकार की सुरक्षा:`any_cast`रनटाइम पर`typeid`की जांच करता है - गलत प्रकार`BadAnyCast`फेंकता है।
+- कॉपी सिमेंटिक्स: वर्चुअल`clone()`धारित मान की एक गहरी प्रतिलिपि बनाता है।
+- मूव सिमेंटिक्स: डिफॉल्ट मूव कंस्ट्रक्टर/असाइनमेंट`unique_ptr`को कुशलतापूर्वक ट्रांसफर करता है।
+- छोटे बफर अनुकूलन (वास्तविक`std::any`की तरह): ढेर आवंटन के बिना छोटे प्रकार के इनलाइन को स्टोर करें। इसके लिए बाइट बफर के साथ`union`की आवश्यकता होती है - जो काफी अधिक जटिल है।
+- उत्पादन:`std::any`(C++17) का उपयोग करें - यह मानक है, अच्छी तरह से परीक्षण किया गया है, और इसमें एसबीओ शामिल हो सकता है।
 ---
 
 ## सारांश

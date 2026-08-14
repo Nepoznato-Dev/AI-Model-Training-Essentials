@@ -1,38 +1,42 @@
 ---
-# मेटाडेटा
-शीर्षक: "डेटा नैतिकता और गोपनीयता"
-विवरण: "जीडीपीआर, डेटा सहमति, एल्गोरिथम पूर्वाग्रह, डार्क पैटर्न, गुमनामीकरण"
-श्रेणी: "डेटा विज्ञान और विश्लेषण"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "डेटा साइंस और एनालिटिक्स नॉलेज बेस टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [डेटा, नैतिकता, गोपनीयता, डेटा-विज्ञान-और-विश्लेषण]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "6 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Data Ethics and Privacy"
+description: "GDPR, data consent, algorithmic bias, dark patterns, anonymisation"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [data, ethics, privacy, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # डेटा नैतिकता और गोपनीयता
 डेटा नैतिकता इस बात का अध्ययन है कि डेटा संग्रह, विश्लेषण और तैनाती लोगों के अधिकारों, स्वायत्तता और भलाई को कैसे प्रभावित करती है। गोपनीयता इस बात की विशिष्ट चिंता है कि व्यक्तिगत जानकारी को कौन नियंत्रित करता है और इसे कैसे साझा किया जाता है। ये विषय अकादमिक बहसों से हटकर फ्रंट-पेज समाचारों तक पहुंच गए हैं - जीडीपीआर प्रवर्तन, अरबों उपयोगकर्ताओं को प्रभावित करने वाले डेटा उल्लंघन, और बढ़ती सार्वजनिक जागरूकता कि तकनीकी कंपनियों की डेटा प्रथाओं का लोकतंत्र, समानता और व्यक्तिगत स्वतंत्रता के लिए वास्तविक परिणाम हैं।

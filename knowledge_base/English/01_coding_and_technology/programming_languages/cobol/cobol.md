@@ -886,6 +886,153 @@ scp bin/payroll server:/opt/cobol/bin/
 
 ---
 
+## Synthetic Q&A
+
+### Q1: Why is COBOL still used in banking after 60+ years?
+
+**A:** COBOL processes an estimated 70-80% of banking transactions. The reasons:
+- Massive codebases (millions of lines) that work correctly
+- Extreme reliability — these systems have been tested in production for decades
+- The cost and risk of migration outweighs maintenance costs
+- COBOL's verbose, English-like syntax is self-documenting
+- Decimal arithmetic built into the language (no floating-point rounding errors)
+
+### Q2: How does COBOL handle decimal arithmetic without floating-point errors?
+
+**A:** COBOL has native decimal types with fixed precision:
+
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+The `V` is an implied decimal point. COBOL never uses binary floating-point for money.
+
+### Q3: What is the structure of a COBOL program?
+
+**A:** Every COBOL program has four divisions:
+
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4: How do I read and process sequential files in COBOL?
+
+**A:** COBOL excels at file processing:
+
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Q5: What tools are available for modern COBOL development?
+
+**A:** GnuCOBOL (open source), IBM Enterprise COBOL, Micro Focus, and VS Code extensions provide modern development environments. Build with `cobc -x program.cob`.
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Generating a Customer Report
+
+**Step 1: Understand the Problem**
+Read customer records, compute totals, and generate a formatted report.
+
+**Step 2: Identify the Approach**
+Use COBOL's file handling and report writing capabilities.
+
+**Step 3: Implement**
+```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**Step 4: Verify**
+Cross-check totals against source data. Test with edge cases (empty file, zero balances).
+
+### Problem 2: Batch Processing with Control Breaks
+
+**Step 1: Understand the Problem**
+Process transactions grouped by department, printing subtotals.
+
+**Step 2: Identify the Approach**
+Use control break logic — detect when the group key changes.
+
+**Step 3: Implement**
+```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**Step 4: Verify**
+Check that the last group's total is printed. Verify grand total equals sum of department totals.
+
+---
+
 ## Summary
 
-COBOL is a relic of computing's early days that refuses to die — because it cannot afford to. The world's banking and government systems depend on COBOL programs that have run reliably for decades. While no one would choose COBOL for a new project today, the language remains critically important for maintaining the infrastructure that underpins global finance. The shortage of COBOL developers makes it a surprisingly lucrative niche.
+COBOL is a legacy of computing's early decades that remains in active use because replacement is not feasible at scale. The world's banking and government systems depend on COBOL programs that have run reliably for decades. While COBOL would not typically be selected for a new project today, the language remains important for maintaining the infrastructure that supports global finance. The shortage of COBOL developers makes it a lucrative niche.

@@ -1,1 +1,0 @@
-Plain Markdown files with YAML frontmatter; no programming language or build tooling is involved.

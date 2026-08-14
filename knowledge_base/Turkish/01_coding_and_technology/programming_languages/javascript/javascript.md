@@ -38,12 +38,13 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #JavaScript
 JavaScript, Brendan Eich tarafından 1995 yılında yalnızca 10 günde oluşturulan dinamik, yorumlanan bir programlama dilidir. Başlangıçta web sayfalarına etkileşim eklemek için tasarlanan bu dil, bugün dünyada en yaygın kullanılan programlama dili haline geldi. JavaScript her web tarayıcısında, Node.js aracılığıyla sunucularda, masaüstü uygulamalarında (Electron), mobil uygulamalarda (React Native) ve hatta gömülü sistemlerde çalışır.
 Dil, istemci tarafı web geliştirme için esasen tek seçenek olması açısından benzersizdir; her tarayıcı onu yerel olarak destekler. Bu tekel, tam yığın JavaScript'in (Node.js, Deno, Bun) yükselişiyle birleştiğinde onu vazgeçilmez kılıyor.
 ---
 
-## JavaScript Neden Önemlidir?
+## JavaScript Neden Önemlidir
 - **Web'in dili**: Tarayıcılarda yerel olarak çalışan tek dil. Ön uç için alternatif yok.
 - **Tam yığın yeteneği**: Ön uçta (React, Vue, Svelte) ve arka uçta (Node.js, Express, Fastify) aynı dil.
 - **Devasa ekosistem**: npm'nin 2 milyondan fazla paketi vardır; bu, dünyadaki en büyük yazılım kaydıdır.
@@ -55,7 +56,7 @@ Dil, istemci tarafı web geliştirme için esasen tek seçenek olması açısın
 |-----------|------------|-----------|
 | **Dinamik yazmanın zorlukları** | Derleme zamanı tür denetimi yok; çalışma zamanında hatalar ortaya çıkıyor | TypeScript (JavaScript'in yazılı bir üst kümesi) kullanın |
 | **Geri arama karmaşıklığı** | İç içe geçmiş geri aramalar okunamaz hale gelebilir ("geri arama cehennemi") | Promises ve async/await kullanın |
-| **İlginç anlambilim** | `==`vs`===`,`this`bağlama, kaldırma, türde zorlama | Tuhaflıkları öğrenin; ESLint'i kullanın;`const`/`let`yerine`var`tercih edin |
+| **İlginç anlambilim** | `==`vs`===`,`this`bağlama, kaldırma, tip zorlama | Tuhaflıkları öğrenin; ESLint'i kullanın;`var`yerine`const`/ `let`'yi tercih edin |
 | **Tek iş parçacıklı** | CPU'ya bağlı görevler olay döngüsünü engeller | Web Çalışanlarını, çalışan iş parçacıklarını kullanın veya yerel modüllere yükleme yapın |
 | **Paket kalitesi** | npm'nin açıklığı tutarsız kalite ve güvenlik riskleri anlamına gelir | Denetim bağımlılıkları; kilit dosyalarını kullanın; bakımlı paketleri tercih edin |
 ---
@@ -1055,6 +1056,419 @@ pm2 startup
 | Masaüstü uygulamaları (Electron) | Web teknolojisiyle çapraz platform | C# (WPF), Tauri (Pas) |
 | CPU yoğun hesaplama | Tek iş parçacıklı sınırlama | Python (NumPy), C++, Rust, WebAssembly |
 | Sistem programlama | Yanlış soyutlama düzeyi | C, C++, Pas, Git |
+---
+
+## Sentetik Soru-Cevap
+### S1: `var`,`let`ve`const`arasındaki fark nedir ve her birini ne zaman kullanmalıyım?
+**C:**`var`işlev kapsamlıdır ve kaldırılmıştır; modern kodlarda bundan kaçının. `let`blok kapsamlıdır ve yeniden atamaya izin verir. `const`blok kapsamlıdır ve yeniden atamayı önler (ancak başvurduğu nesneler/diziler hala değiştirilebilir). En iyi uygulama: varsayılan olarak`const`kullanın, `let`'yi yalnızca yeniden atamaya ihtiyacınız olduğunda kullanın, asla`var`kullanmayın.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### S2: `this`, JavaScript'te nasıl çalışır ve neden bu kadar kafa karıştırıcıdır?
+**C:** `this`, tanımlandığı yere değil, **bir fonksiyonun nasıl çağrıldığına** göre belirlenir. Bir yöntem çağrısında`this`nesnedir. Bağımsız bir çağrıda bu,`undefined`(katı mod) veya `global`'dir (katı olmayan). Ok işlevleri, `this`'yi kendi kapsamlarından devralır; bu nedenle geri aramalar için tercih edilirler.`this`öğesini açıkça ayarlamak için`.bind()`öğesini kullanın.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### S3: Olay döngüsü nedir ve eşzamansız/beklemede gerçekte nasıl çalışır?
+**C:** JavaScript, bir kuyruğu işleyen bir olay döngüsüne sahip tek iş parçacıklı bir yapıya sahiptir. Çağrı yığını senkronize kodu yürütür. Boş olduğunda, olay döngüsü bir sonraki görevi mikro görev kuyruğundan (Vaatler) veya makro görev kuyruğundan (setTimeout, I/O) seçer.  `async/await`, Promises üzerindeki sözdizimsel şekerdir — `await`, zaman uyumsuz işlevi duraklatır ve Promise çözümlendiğinde iş parçacığını engellemeden devam eder.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### S4: Modern JavaScript'teki hataları nasıl ele almalıyım?
+**C:** Eşzamanlı kod için `try/catch`'yi ve eşzamansız kod için`.catch()`veya`async/await`ile `try/catch`'yi kullanın. Promise retlerini her zaman ele alın; işlenmeyen retler Node.js'yi çökertir. Etki alanına özgü hatalar için özel hata sınıfları oluşturun. Güvenlik ağı olarak genel bir hata işleyicisi kullanın.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### S5: Düz nesneler/diziler yerine ne zaman`Map`/`Set`kullanmalıyım?
+**C:** Anahtarlar dize olmadığında, kampanya siparişi yinelemeye ihtiyaç duyduğunuzda, `.size`'ye ihtiyaç duyduğunuzda veya girişleri sık sık eklediğinizde/kaldırdığınızda (nesnelerden daha iyi performans)`Map`kullanın. O(1) aramalı benzersiz koleksiyonlar için `Set`'yi kullanın; büyük veri kümeleri için `array.includes()`'den çok daha hızlıdır. JSON ile serileştirilebilir basit veriler ve dize anahtarlarıyla küçük anahtar/değer eşlemeleri için düz nesneler kullanın.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Geri Dönme İşlevini Uygulama
+**Sorun Açıklaması:** Bir işlevin çağrılmasını, son çağrılmasından bu yana belirli bir bekleme süresi geçene kadar erteleyen bir`debounce`yardımcı programı uygulayın. Hem ön hem de arka kenar çağrısını destekleyin.
+**1. Adım — Sorunu Anlayın:**
+Geri dönen bir işlev, birbirini izleyen hızlı çağrıları yok sayar ve yalnızca çağrıların bekleme süresi boyunca durmasının ardından etkinleşir. "Ön kenar", ilk çağrıda hemen ateş etmek anlamına gelir. "Arka kenar", bekleme süresinden sonra yangın anlamına gelir. Her iki modu da ele almamız ve iptali de desteklememiz gerekiyor.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Bir zamanlayıcı kimliğini bir kapakta saklayın.
+- Her aramada: mevcut zamanlayıcıyı silin, ardından yeni bir`setTimeout`ayarlayın.
+- Ön uç için: herhangi bir zamanlayıcı etkin değilse hemen arayın.
+-`.cancel()`yöntemiyle geri dönen bir işlevi döndürün.
+- Ok işlevlerini veya`.apply()`kullanarak`this`bağlamını ve bağımsız değişkenlerini koruyun.
+**3. Adım — Çözümü Uygulayın:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Kapatma, küresel kapsamı kirletmeden çağrılar genelinde durumu korur.
+- `setTimeout`'den önceki `clearTimeout`, yalnızca son çağrının yürütülmesini tetiklediğini garanti eder.
+-`.cancel()`temizleme için önemlidir (örneğin, React'te bileşenin çıkarılması).
+- Edge durumu:`wait`0 ise, işlev bir sonraki olay döngüsü işaretinde etkinleşir; DOM güncellemelerini toplu olarak işlemek için kullanışlıdır.
+### Sorun 2: Söze Dayalı Bir Oran Sınırlayıcı Oluşturun
+**Sorun Açıklaması:** Zaman aralığı başına en fazla N isteğe izin veren bir hız sınırlayıcı oluşturun. Arayanın devam etmesine izin verildiğinde çözülen Promise'ları döndürmeli ve fazla istekleri sıraya koymalıdır.
+**1. Adım — Sorunu Anlayın:**
+Kaç aramanın yapıldığını takip eden kayan veya sabit bir pencereye ihtiyacımız var. Limite ulaşıldığında, yeni aramalar sıraya alınmalı ve bir slot açıldığında çözümlenmelidir. Bu "jeton kovası" modelidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Bir dizideki son aramaların zaman damgalarını izleyin.
+- Her aramada: pencereden daha eski zaman damgalarını kaldırın, sayım < limit olup olmadığını kontrol edin.
+- Limitin altındaysa: derhal çözümleyin.
+- Sınırdaysa: en eski zaman damgasının süresinin ne zaman dolacağını hesaplayın, bir`setTimeout`ayarlayın ve ardından çözümleyin.
+- Bekleyen arayanlar için bir sıra (çözümleme işlevleri dizisi) kullanın.
+**3. Adım — Çözümü Uygulayın:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Kayan pencere yaklaşımı sabit pencerelerden daha adildir (pencere sınırlarında patlama olmaz).
+- Kuyruk işleme FIFO'dur; arayanlara sırayla hizmet verilir.
+- Üretim için: arayanların beklemeyi iptal edebilmesi için`AbortController`desteğini ekleyin.
+- Performans:`_cleanOldTimestamps`çağrı başına O(n)'dir ancak n,`maxCalls`tarafından sınırlanmıştır.
+### Sorun 3: Derin Klonlama İşlevinin Uygulanması
+**Sorun Açıklaması:** Herhangi bir JavaScript değerini derinlemesine kopyalayan, nesneleri, dizileri, Tarihleri, RegExps'i, Haritaları, Kümeleri, döngüsel başvuruları ve yazılan dizileri işleyen bir işlev yazın.
+**1. Adım — Sorunu Anlayın:**
+`JSON.parse(JSON.stringify(obj))`şu durumlarda başarısız olur:`undefined`, işlevler, Semboller, Tarihler (dize haline gelir), RegExps (boş nesneler haline gelir), Haritalar, Kümeler, dairesel referanslar (atarlar) ve yazılan diziler. Ziyaret edilen nesneleri izleyen özyinelemeli bir çözüme ihtiyacımız var.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Zaten klonlanmış nesneleri izlemek için bir`Map`kullanın (dairesel referansları yönetir).
+- Her türü özel olarak ele alın: Tarih → yeni Tarih, RegExp → yeni RegExp, Harita → klonlanmış girişlerle yeni Harita, Ayarla → klonlanmış değerlerle yeni Ayarla.
+- Modern yerleşik alternatif olarak `structuredClone()`'yi kullanın (tarayıcılarda ve Node.js 17+ sürümlerinde mevcuttur).
+**3. Adım — Çözümü Uygulayın:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Döngüsel referanslar:`seen`Haritası, sonsuz şekilde yinelenmek yerine önceden oluşturulmuş klonu döndürür.
+- Özellik tanımlayıcıları:`Reflect.ownKeys`+`getOwnPropertyDescriptor`alıcıları, ayarlayıcıları ve numaralandırılamayan özellikleri korur.
+- Modern alternatif:`structuredClone(value)`bu durumların çoğunu yerel olarak ele alır (işlevler ve DOM düğümleri hariç). Mümkün olduğunda tercih edin.
+- Performans: Basit nesneler için`JSON.parse(JSON.stringify(obj))`hâlâ en hızlıdır. Deep clone'u yalnızca gerçekten ihtiyacınız olduğunda kullanın.
+### Sorun 4: Basit Bir Olay Yayıcı Oluşturun
+**Sorun Açıklaması:** `on`, `off`,`emit`ve`once`yöntemlerini destekleyen bir olay yayıcı sınıfı uygulayın. Dinleyiciler kayıt sırasına göre çağrılmalıdır. `emit`argümanları tüm dinleyicilere iletmelidir.
+**1. Adım — Sorunu Anlayın:**
+Bir pub/sub sistemine ihtiyacımız var: adlandırılmış olaylar için dinleyicileri kaydedin, belirli dinleyicileri kaldırın, olayları argümanlarla tetikleyin ve tek seferlik dinleyicileri destekleyin. Bu, Node.js'de yaygın olarak kullanılan Observer modelidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Dinleyicileri bir `Map<string, Array<Function>>`'de saklayın.
+-`on`: dinleyiciyi diziye aktarır.
+-`off`: diziden belirli dinleyiciyi filtreler.
+-`emit`: diziyi yineleyin ve her dinleyiciyi yayılmış argümanlarla çağırın.
+-`once`: dinleyiciyi ilk çağrıdan sonra kendisini kaldıran bir işleve sarın.
+**3. Adım — Çözümü Uygulayın:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- `emit`'deki`[...listeners]`kopyası, yineleme sırasında bir dinleyicinin `off`'yi çağırması durumunda sorunları önler.
+- `once`, `_original`'yi saklar, böylece arayanlar ambalajı`off(event, originalFn)`aracılığıyla kaldırabilir.
+- Özel alanlar (`#listeners`) dahili durumun harici değişimini önler.
+- Üretim için:`maxListeners`uyarısını (Node.js gibi), dinleyici başına hata işlemeyi ve öncelik için `prependListener`'yi ekleyin.
 ---
 
 ## Özet

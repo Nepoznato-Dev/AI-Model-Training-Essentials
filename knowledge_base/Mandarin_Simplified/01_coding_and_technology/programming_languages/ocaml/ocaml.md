@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # OCaml
 OCaml（Objective Caml）是法国 INRIA 开发的函数式编程语言，于 1996 年首次发布。它结合了函数式编程的表现力和实用功能：具有类型推断（Hindley-Milner）、模式匹配、代数数据类型和可选的面向对象编程的强大类型系统。 OCaml 编译为快速本机代码，并且还支持字节码。
 OCaml 最著名的现实应用程序是 **Jane Street** 贸易公司，该公司的整个交易基础设施都使用 OCaml。它还用于编译器开发（Rust 编译器最初是用 OCaml 编写的）、形式验证、金融系统和定理证明。
@@ -55,7 +56,7 @@ OCaml 的新兄弟 **Reason**（由 Facebook/Meta 开发）和 **ReScript**（�
 ## 权衡
 |限制|详情 |典型解决方法|
 |------------|---------|--------------------|
-| **陡峭的学习曲线** |函数式编程、类型系统、语法不熟悉|从模式匹配和 ADT 开始；逐步建立|
+| **陡峭的学习曲线** |函数式编程、类型系统、语法不熟悉 |从模式匹配和 ADT 开始；逐步建立|
 | **就业市场小** |利基市场——主要是金融（简街）和研究|对类型安全系统的兴趣日益浓厚
 | **有限的网络生态系统** |不是主流网络语言 |使用 ReScript (OCaml-to-JS) 进行 Web 开发 |
 | **错误消息** |类型错误可能很神秘，尤其是复杂类型 |使用Merlin IDE插件；学习阅读类型签名 |
@@ -456,7 +457,7 @@ my-ocaml-project/
 |命令 |描述 |
 |---------|-------------|
 | `dune init project my_app`|创建新项目 |
-| `dune build`|构建项目 |
+| `dune build`|构建项目|
 | `dune exec ./bin/main.exe`|运行可执行文件 |
 | `dune test`|运行测试 |
 | `dune clean`|清理构建工件 |
@@ -701,7 +702,7 @@ ENTRYPOINT ["./app"]
 ---
 
 ## 何时使用 OCaml
-|场景 |为什么选择 OCaml |更好的选择|
+|场景|为什么选择 OCaml |更好的选择|
 |----------|----------|--------------------|
 |编译器/语言工具|非常适合 AST、类型检查、代码生成 | Rust 用于性能关键型工具 |
 |金融系统| Jane Street 大规模证明了这一点 | C++、Java、Python |
@@ -712,6 +713,122 @@ ENTRYPOINT ["./app"]
 |数据科学/机器学习 |不是生态系统| Python、R |
 |移动应用程序 |不适合|斯威夫特、科特林、达特 |
 |通用应用程序 |可能但利基| Go、Python、Rust |
+---
+
+## 综合问答
+### Q1：OCaml 的类型推断是如何工作的？
+**A:** OCaml 的 Hindley-Milner 类型系统推断没有注释的类型：
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2：什么是代数数据类型以及它们为何强大？
+**A:** ADT 结合了产品类型（记录）和总和类型（变体）：
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3：模块和函子如何工作？
+**A:** 模块组织代码；函子是从模块到模块的函数：
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4：是什么让 OCaml 快速？
+**A:** OCaml 编译为高效的本机代码：
+- 类型擦除——没有运行时类型检查
+- 未装箱的浮点数和整数
+- 模式匹配编译为跳转表
+- 尾调用优化
+- 没有垃圾收集器暂停（增量GC）
+### Q5：OCaml 与其他 ML 系列语言相比如何？
+**A:** OCaml 平衡了实用性和纯粹性：
+- 与 Haskell 相比：OCaml 具有命令式功能、可变状态和更快的编译
+- 对比 F#：OCaml 拥有更成熟的模块体系和更好的跨平台支持
+- 与 Rust：OCaml 有 GC（无所有权），但 Rust 具有更好的 FFI 和生态系统
+---
+
+## 解决问题的思路
+### 问题 1：实现类型安全解释器
+**第 1 步：了解问题**
+为简单的表达语言构建一个解释器。
+**第 2 步：确定方法**
+使用代数数据类型进行表达式和模式匹配进行评估。
+**步骤 3：实施**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**第 4 步：扩展**
+添加`Let`、`If`、`Lambda`以获得更完整的语言。
+### 问题 2：使用组合器构建简单的解析器
+**第 1 步：了解问题**
+使用解析器组合器解析算术表达式。
+**第 2 步：确定方法**
+构建小型解析器并组合它们。
+**步骤 3：实施**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**第 4 步：撰写**
+将解析器与`map`、`seq`、`alt`和`many`结合使用以解析完整表达式。
 ---
 
 ＃＃ 概括

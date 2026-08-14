@@ -13,109 +13,47 @@ Quick solutions to the most common errors you'll encounter when learning AI deve
 
 ## 📦 Installation Errors
 
-### [CUDA_Out_Of_Memory.md](errors/CUDA_OOM.md)
+### [CUDA_OOM.md](CUDA_OOM.md)
 **Error:** `torch.cuda.OutOfMemoryError: CUDA out of memory`  
 **When:** Training models or running inference on GPU
 
-### [ImportError_Transformers.md](errors/ImportError_Transformers.md)
+### [ImportError_Transformers.md](ImportError_Transformers.md)
 **Error:** `ImportError: cannot import name 'transformers'`  
 **When:** Trying to import Hugging Face transformers
 
-### [Torch_Not_Installed.md](errors/Torch_Not_Installed.md)
+### [Torch_Not_Installed.md](Torch_Not_Installed.md)
 **Error:** `ModuleNotFoundError: No module named 'torch'`  
 **When:** Running any PyTorch code
-
-### [PIP_Install_Fails.md](errors/PIP_Install_Fails.md)
-**Error:** `ERROR: Could not find a version that satisfies the requirement`  
-**When:** Installing packages with pip
-
-### [Python_Version_Mismatch.md](errors/Python_Version_Mismatch.md)
-**Error:** `This version of X requires Python Y.Z or greater`  
-**When:** Installing or running Python packages
 
 ---
 
 ## 🏗️ Runtime Errors
 
-### [Shape_Mismatch_Error.md](errors/Shape_Mismatch_Error.md)
-**Error:** `RuntimeError: size mismatch` or `ValueError: shapes not aligned`  
-**When:** Matrix operations, model forward pass
-
-### [Device_Cuda_Not_Available.md](errors/Device_Cuda_Not_Available.md)
-**Error:** `Torch not compiled with CUDA enabled` or `Found no NVIDIA driver`  
-**When:** Trying to use GPU acceleration
-
-### [DataLoader_Worker_Error.md](errors/DataLoader_Worker_Error.md)
-**Error:** `RuntimeError: DataLoader worker (pid(s) XXXXX) exited unexpectedly`  
-**When:** Loading data during training
-
-### [Gradient_Explosion.md](errors/Gradient_Explosion.md)
-**Error:** `RuntimeError: NaN detected in loss` or gradients become `inf`  
-**When:** Training deep neural networks
+*Additional runtime error guides are available in the [main errors directory](../../errors/README.md).*
 
 ---
 
 ## 📁 File & Data Errors
 
-### [File_Not_Found_Error.md](errors/File_Not_Found_Error.md)
-**Error:** `FileNotFoundError: [Errno 2] No such file or directory`  
-**When:** Loading datasets, models, or configuration files
-
-### [JSON_Decode_Error.md](errors/JSON_Decode_Error.md)
-**Error:** `json.decoder.JSONDecodeError: Expecting value`  
-**When:** Loading JSON configuration or data files
-
-### [Encoding_Error.md](errors/Encoding_Error.md)
-**Error:** `UnicodeDecodeError: 'utf-8' codec can't decode byte`  
-**When:** Reading text files or datasets
+*File and data error guides are available in the [main errors directory](../../errors/README.md).*
 
 ---
 
 ## 🤗 Hugging Face Specific
 
-### [HF_Connection_Error.md](errors/HF_Connection_Error.md)
-**Error:** `ConnectionError: Couldn't reach hub.huggingface.co`  
-**When:** Downloading models from Hugging Face Hub
-
-### [HF_Cache_Corrupted.md](errors/HF_Cache_Corrupted.md)
-**Error:** `OSError: Unable to load weights from pytorch checkpoint`  
-**When:** Loading cached Hugging Face models
-
-### [Tokenizer_Error.md](errors/Tokenizer_Error.md)
-**Error:** `TypeError: Argument 'input_ids' has incorrect type`  
-**When:** Tokenizing text for transformers
+*Hugging Face-specific error guides are available in the [main errors directory](../../errors/README.md).*
 
 ---
 
 ## 💻 System & Environment
 
-### [Virtual_Environment_Not_Active.md](errors/Virtual_Environment_Not_Active.md)
-**Error:** Packages installed but still getting `ModuleNotFoundError`  
-**When:** Running Python scripts
-
-### [Path_Too_Long_Windows.md](errors/Path_Too_Long_Windows.md)
-**Error:** `OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect`  
-**When:** Working with deeply nested directories on Windows
-
-### [Permission_Denied.md](errors/Permission_Denied.md)
-**Error:** `PermissionError: [Errno 13] Permission denied`  
-**When:** Writing files or installing packages
+*System and environment error guides are available in the [main errors directory](../../errors/README.md).*
 
 ---
 
 ## 🧠 Model Training Errors
 
-### [Loss_Is_NaN.md](errors/Loss_Is_NaN.md)
-**Error:** Loss becomes `nan` during training  
-**When:** Training neural networks
-
-### [Overfitting_Early.md](errors/Overfitting_Early.md)
-**Error:** Training accuracy high, validation accuracy low  
-**When:** Model memorizes training data
-
-### [Slow_Training.md](errors/Slow_Training.md)
-**Error:** Training is taking hours/days instead of minutes  
-**When:** Model training performance
+*Model training error guides are available in the [main errors directory](../../errors/README.md).*
 
 ---
 
@@ -147,7 +85,7 @@ Before diving deep, try these universal fixes:
 - [ ] **Verify disk space:** `df -h` (Linux/Mac) or check Drive properties (Windows)
 - [ ] **Try CPU instead of GPU** (add `.to('cpu')` to tensors)
 - [ ] **Reduce batch size** (halve it and try again)
-- [ ] **Reinstall problematic package:** `pip uninstall pkg && pip install pkg`
+- [ ] **Reinstall problematic package:** `pip uninstall pkg; pip install pkg`
 
 ---
 

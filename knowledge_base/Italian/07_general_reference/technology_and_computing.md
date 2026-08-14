@@ -40,7 +40,7 @@ contribution:
 ---
 # Tecnologia e informatica
 L'informatica è ovunque: nel telefono, nell'auto, nel frigorifero, nei dispositivi medici e nell'infrastruttura che gestisce la società moderna. Non è necessario essere un programmatore per trarre vantaggio dalla comprensione di come funziona il tutto. Questo file copre gli aspetti fondamentali: cos'è un computer, come funziona Internet, come viene creato il software e i concetti che modellano il mondo digitale.
-> **Vuoi approfondire?** Questo file offre un'ampia panoramica. Per una trattazione dettagliata di qualsiasi argomento, consulta i file dedicati in[`01_coding_and_technology/`](../01_coding_and_technology/)— inclusi[web development](../01_coding_and_technology/web_development.md),[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)e[security](../01_coding_and_technology/security_best_practices.md).
+> **Vuoi approfondire?** Questo file offre un'ampia panoramica. Per una trattazione dettagliata di qualsiasi argomento, consulta i file dedicati in[`01_coding_and_technology/`](../01_coding_and_technology/)— inclusi[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)e.
 ---
 
 ## Cos'è un computer?
@@ -150,7 +150,7 @@ I tre principali fornitori di servizi cloud sono **AWS** (Amazon, quota di merca
 ---
 
 ## Sicurezza informatica: protezione dei sistemi digitali
-La sicurezza informatica è la pratica di difendere computer, reti e dati dagli attacchi. È importante perché tutto è connesso e il costo delle violazioni è enorme. Per una guida completa che copre OWASP Top 10, ciclo di vita di sviluppo sicuro e gestione dei segreti, vedere[security best practices](../01_coding_and_technology/security_best_practices.md).
+La sicurezza informatica è la pratica di difendere computer, reti e dati dagli attacchi. È importante perché tutto è connesso e il costo delle violazioni è enorme. Per una guida completa che copre OWASP Top 10, ciclo di vita di sviluppo sicuro e gestione dei segreti, vedere.
 ### Minacce comuni
 | Minaccia | Cos'è | Prevenzione |
 |--------|-----------|----|

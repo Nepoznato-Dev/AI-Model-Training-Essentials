@@ -1,41 +1,46 @@
 ---
-# Metadatos
-título: "Diseño y Cultura Organizacional"
-descripción: "Estructuras organizativas, tipos de cultura, gestión del cambio, dinámica de equipo"
-categoría: "Empresas y Economía"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Organisational Design and Culture"
+description: "Org structures, culture types, change management, team dynamics"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de economía y negocios"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [organizacional, diseño, cultura, negocios y economía]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "6 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [organisational, design, culture, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Diseño y cultura organizacional
-El diseño organizacional es la disposición deliberada de estructura, procesos, roles y derechos de decisión para ejecutar la estrategia de manera efectiva. La cultura son los valores, creencias, normas y comportamientos compartidos que dan forma a la forma en que las personas realmente trabajan juntas. La estructura es el esqueleto; La cultura es la personalidad. Puedes rediseñar la estructura en papel, pero si la cultura no apoya el cambio, no funcionará. Y una cultura fuerte con una estructura terrible se asfixiará lentamente. Las mejores organizaciones aciertan en ambas cosas y comprenden que están profundamente interconectadas.
+El diseño organizacional es la disposición deliberada de estructura, procesos, roles y derechos de decisión para ejecutar la estrategia de manera efectiva. La cultura son los valores, creencias, normas y comportamientos compartidos que dan forma a la forma en que las personas realmente trabajan juntas. La estructura proporciona el marco; La cultura moldea el comportamiento. Una estructura puede rediseñarse sobre el papel, pero si la cultura no respalda el cambio, la implementación fracasará. De manera similar, una cultura fuerte combinada con una estructura ineficaz socavará gradualmente el desempeño organizacional. Las organizaciones más eficaces abordan ambas cosas y reconocen que están profundamente interconectadas.
 ---
 
 ## Estructuras organizativas
@@ -108,7 +113,7 @@ La idea clave: la estrategia impulsa la estructura. Todos los demás elementos d
 | **Transparencia** | ¿La información se comparte abiertamente o se atesora como poder? |
 | **Tolerancia a la innovación** | ¿Se castiga el fracaso o se trata como aprendizaje? |
 | **Orientación al cliente** | ¿Las decisiones parten de las necesidades del cliente o de la conveniencia interna? |
-| **Velocidad versus calidad** | ¿El sesgo es hacia la iteración rápida o hacia la deliberación cuidadosa? |
+| **Velocidad versus calidad** | ¿El sesgo es hacia una iteración rápida o hacia una deliberación cuidadosa? |
 | **Respeto a la jerarquía** | ¿Pueden los jóvenes desafiar las ideas de los mayores? |
 ---
 

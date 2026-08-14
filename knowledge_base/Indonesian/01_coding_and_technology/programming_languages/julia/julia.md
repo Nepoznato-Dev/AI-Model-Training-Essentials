@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Julia
 Julia adalah bahasa pemrograman tingkat tinggi dan berkinerja tinggi yang dirancang untuk komputasi teknis dan ilmiah. Pertama kali dirilis pada tahun 2012 (1.0 pada tahun 2018), Julia diciptakan untuk memecahkan "masalah dua bahasa" — di mana para ilmuwan membuat prototipe dengan Python/R tetapi menulis ulang dalam C/C++/Fortran untuk kinerja produksi. Julia bertujuan untuk menjadi semudah Python tetapi secepat C.
 Julia menggunakan kompilasi just-in-time (JIT) melalui LLVM untuk mencapai kinerja mendekati C sambil mempertahankan nuansa interaktif dan dinamis. Ini memiliki dukungan kelas satu untuk komputasi paralel, pemrosesan terdistribusi, dan sistem tipe canggih dengan banyak pengiriman.
@@ -57,7 +58,7 @@ Julia menggunakan kompilasi just-in-time (JIT) melalui LLVM untuk mencapai kiner
 | **Latensi kompilasi** | Panggilan pertama ke suatu fungsi bisa lambat (pemanasan JIT) | Gunakan PackageCompiler untuk aplikasi yang telah dikompilasi |
 | **Komunitas yang lebih kecil** | Jauh lebih kecil dari Python atau R | Komunitas yang aktif dan ramah |
 | **Penggunaan memori** | Lebih tinggi dari C/Fortran untuk beberapa beban kerja | Dapat diterima untuk sebagian besar karya ilmiah |
-| **Pasar kerja** | Berkembang — sebagian besar penelitian dan keuangan kuantitatif | Berkembang dalam ilmu data dan HPC |
+| **Pasar kerja** | Muncul — sebagian besar penelitian dan keuangan kuantitatif | Berkembang dalam ilmu data dan HPC |
 ---
 
 ## Dasar Sintaks
@@ -875,6 +876,191 @@ julia --project=. -e '
 | Analisis data | Mungkin; DataFrames.jl bagus | Python (Panda), R |
 | Pengembangan web | Tidak cocok | JavaScript, Python |
 | Pengembangan aplikasi umum | Bukan kasus penggunaan utama | Python, Buka, Java |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan pengiriman ganda dengan pengiriman tunggal dalam bahasa OOP?
+**A:** Dalam pengiriman tunggal (Java, Python), metode dipilih berdasarkan tipe argumen pertama (objek). Di Julia, metode ini dipilih berdasarkan tipe SEMUA argumen:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+Hal ini memungkinkan operasi simetris dan menghilangkan pola boilerplate.
+### Q2: Bagaimana cara mencapai kinerja seperti C di Julia?
+**J:** Praktik utama:
+- Gunakan fungsi tipe-stabil (mengembalikan tipe yang konsisten)
+- Gunakan tipe konkrit dalam struct, bukan tipe abstrak
+- Hindari variabel global (atau jadikan`const`)
+- Gunakan`@inbounds`untuk melewati pemeriksaan batas (jika aman)
+- Alokasikan array terlebih dahulu alih-alih mengembangkannya
+- Gunakan`@simd`untuk loop yang dapat divektorisasi
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3: Apa perbedaan antara`Array`,`Tuple`, dan`NamedTuple`?
+**A:** Masing-masing memiliki tujuan berbeda:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4: Bagaimana cara menangani kesalahan dan pengecualian di Julia?
+**A:** Gunakan`try/catch`dan jenis pengecualian khusus:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5: Bagaimana cara menggunakan ekosistem paket Julia secara efektif?
+**A:** Gunakan manajer paket (Pkg) dan lingkungan bawaan:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menerapkan Fungsi Integrasi Numerik
+**Langkah 1: Pahami Masalahnya**
+Hitung integral tertentu suatu fungsi menggunakan aturan Simpson.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan beberapa pengiriman Julia dan fungsi tingkat tinggi. Terima fungsi apa pun yang dapat dipanggil.
+**Langkah 3: Terapkan**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**Langkah 4: Optimalkan**
+Tambahkan`@inbounds`dan ketik anotasi untuk kinerja. Tolok ukur dengan`@btime`.
+### Masalah 2: Membangun Simulasi Monte Carlo Paralel
+**Langkah 1: Pahami Masalahnya**
+Perkirakan pi menggunakan pengambilan sampel Monte Carlo, yang diparalelkan di seluruh inti CPU.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`Threads.@threads`untuk paralelisme memori bersama.
+**Langkah 3: Terapkan**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**Langkah 4: Verifikasi**
+Bandingkan dengan`Float64(\pi)`. Tingkatkan jumlah sampel untuk akurasi yang lebih baik.
+### Masalah 3: Membuat Tipe Array Khusus dengan Penyiaran
+**Langkah 1: Pahami Masalahnya**
+Buat tipe`DiagonalMatrix`yang hanya menyimpan elemen diagonal tetapi mendukung operasi array standar.
+**Langkah 2: Identifikasi Pendekatannya**
+Subtipe`AbstractMatrix`dan terapkan metode yang diperlukan.
+**Langkah 3: Terapkan**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan`setindex!`, optimasi perkalian matriks, dan metode `show`.
 ---
 
 ## Ringkasan

@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C++
-C++, Bjarne Stroustrup tarafından oluşturulan ve ilk olarak 1985'te piyasaya sürülen genel amaçlı, derlenmiş bir programlama dilidir. C'yi nesne yönelimli özellikler, jenerikler ve modern sürümlerde (C++ 11 ve sonrası) lambdalar, akıllı işaretçiler ve Standart Şablon Kitaplığı (STL) gibi yüksek düzey soyutlamalarla genişletir. C++ "sıfır genel gider soyutlaması" ilkesini izler: kullanmadığınız özellikler için ödeme yapmamalısınız.
-Hem yüksek performansa hem de ifade gücüne ihtiyaç duyduğunuzda C++ tercih edilen dildir. Oyun motorlarına (Unreal Engine), tarayıcılara (Chrome, Firefox), veritabanlarına (MongoDB), işletim sistemlerine (Windows ve macOS'un parçaları), finansal ticaret sistemlerine ve gerçek zamanlı simülasyonlara güç sağlar.
+C++, Bjarne Stroustrup tarafından oluşturulan ve ilk kez 1985'te piyasaya sürülen genel amaçlı, derlenmiş bir programlama dilidir. C'yi nesne yönelimli özellikler, jenerikler ve modern sürümlerde (C++ 11 ve sonrası) lambdalar, akıllı işaretçiler ve Standart Şablon Kitaplığı (STL) gibi yüksek düzeyli soyutlamalarla genişletir. C++ "sıfır genel gider soyutlaması" ilkesini izler: kullanmadığınız özellikler için ödeme yapmamalısınız.
+Hem yüksek performansa hem de ifade gücüne ihtiyaç duyduğunuzda C++ tercih ettiğiniz dildir. Oyun motorlarına (Unreal Engine), tarayıcılara (Chrome, Firefox), veritabanlarına (MongoDB), işletim sistemlerine (Windows ve macOS'un parçaları), finansal ticaret sistemlerine ve gerçek zamanlı simülasyonlara güç sağlar.
 ---
 
 ## C++ Neden Önemlidir
@@ -48,7 +49,7 @@ Hem yüksek performansa hem de ifade gücüne ihtiyaç duyduğunuzda C++ tercih 
 - **Sıfır genel gider ilkesi**: Soyutlamalar, C'de elle yazacağınız kodun aynısına göre derlenir.
 - **Devasa kod tabanı**: Onlarca yıllık kritik altyapı (oyunlar, tarayıcılar, veritabanları, yerleşik sistemler).
 - **Çoklu paradigma**: Prosedürel, nesne yönelimli, genel ve işlevsel programlama stillerini destekler.
-- **Deterministik imha**: RAII, kaynakların tahmin edilebilir şekilde temizlenmesini sağlar; çöp toplayıcı duraklaması olmaz.
+- **Deterministik yıkım**: RAII, kaynakların tahmin edilebilir şekilde temizlenmesini sağlar; çöp toplayıcı duraklaması olmaz.
 ## Takaslar
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
@@ -736,6 +737,380 @@ cmake --build build
 | C++20 | 2020 | **Büyük sürüm**: kavramlar, aralıklar, eşyordamlar, modüller |
 | C++23 | 2023 | std::expected, std::print, bunu çıkarıyoruz |
 Yeni projeler için minimum olarak C++20'yi hedefleyin.
+---
+
+## Sentetik Soru-Cevap
+### S1: `std::unique_ptr`,`std::shared_ptr`ve`std::weak_ptr`arasındaki fark nedir?
+**C:**`unique_ptr`özel sahipliği temsil eder; yalnızca bir işaretçi kaynağa sahip olabilir. Sıfır yükü vardır (ham işaretçiyle aynı) ve kopyalanamaz, yalnızca taşınır.  `shared_ptr`, paylaşılan sahipliği temsil eder; birden fazla işaretçi, referans sayımıyla kaynağı paylaşır. Son`shared_ptr`yok edildiğinde kaynak serbest bırakılır.  `weak_ptr`, `shared_ptr`'nin sahibi olmayan bir gözlemcisidir; referans sayısını artırmaz ve döngüsel referansları kırmak için kullanılır.
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### S2: Hareket anlambilimi nedir ve neden önemlidir?
+**C:** Taşıma anlambilimi (C++11), kaynakları (yığın belleği, dosya tanıtıcıları vb.) kopyalamak yerine geçici bir nesneden aktarmaya olanak tanır. Bir taşıma oluşturucusu/atama, bir değer referansı (`T&&`) alır ve kaynağın kaynaklarını "çalarak" onu geçerli ancak belirtilmemiş bir durumda bırakır. Bu, gereksiz kopyaları ortadan kaldırır ve`std::vector`yeniden tahsisinin verimli olmasının nedeni budur.
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### S3: Ne zaman`auto`kullanmalıyım ve türleri ne zaman açıkça belirtmeliyim?
+**C:** Tür bağlamdan açıkça belli olduğunda`auto`kullanın (yineleyici döngüler,`make_unique`/`make_shared`çağrıları, lambda türleri, karmaşık şablon türleri). Tür açık olmadığında, örtülü dönüşümlere ihtiyaç duyduğunuzda veya genel API imzalarında türleri açıkça belirtin. "Neredeyse Her Zaman Otomatik" (AAA) stili, yerel değişkenler için `auto`'yi tercih eder; "yardımcı olduğu yerde otomatik" tarzı daha muhafazakardır.
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### S4: Kavramlar (C++20) şablon kodunu nasıl geliştirir?
+**C:** Kavramlar, şablon parametrelerini adlandırılmış gereksinimlerle sınırlandırır, net hata mesajları üretir ve şablon kısıtlamalarında işlevin aşırı yüklenmesini sağlar. Konseptlerden önce SFINAE ve`static_assert`kullanılıyordu; her ikisi de şifreli hatalar üretiyordu. Kavramlar şablon kodunu okunabilir ve oluşturulabilir hale getirir.
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### S5: Beş Kuralı nedir ve Sıfır Kuralı ile ilişkisi nedir?
+**C:** Beş Kuralı: Yıkıcı, kopya oluşturucu, kopya atama, taşıma oluşturucu veya taşıma atamasından herhangi birini tanımlarsanız, beşini de tanımlamanız gerekir. Sıfır Kuralı (tercih edilir): sınıfları bunlardan hiçbirine ihtiyaç duymayacak şekilde tasarlayın - üye olarak RAII türlerini (`std::string`,`std::vector`,`std::unique_ptr`) kullanın; derleyici tarafından oluşturulan özel öğeler otomatik olarak doğru olanı yapacaktır.
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Aralıklarla İş Parçacığı Güvenli Üretici-Tüketici Kuyruğu Uygulama
+**Sorun Açıklaması:** Tüketici tarafı için C++20 aralıklarını kullanarak sınırlı, iş parçacığı açısından güvenli bir üretici-tüketici kuyruğu oluşturun. Kuyruk, dolduğunda üreticileri, boş olduğunda ise tüketicileri engellemeli ve otomatik kapanmayı desteklemelidir.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) push/pop'u engelleyen sınırlı bir kuyruk, (2) mutex ve durum değişkenleri aracılığıyla iş parçacığı güvenliği, (3) kapatma sinyali vermenin bir yolu, (4) tüketicilerin aralık tabanlı for döngülerini kullanabilmesi için C++20 aralık entegrasyonu.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Engelleme için`std::mutex`+`std::condition_variable`kullanın.
+- Temel kapsayıcı olarak`std::queue<T>`kullanın.
+- Dönüş türü olarak `std::optional<T>`'yi kullanın —`std::nullopt`kapanma sinyali verir.
+- Aralık desteği için nöbetçi tabanlı bir yineleyici uygulayın.
+**3. Adım — Çözümü Uygulayın:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- İş parçacığı güvenliği:`std::mutex`tüm kuyruk durumlarını korur; durum değişkenleri engellemeyi yönetir.
+- Zarif kapatma:`shutdown()`tüm garsonları uyandırır; `pop()`boş olduğunda ve kapatıldığında`nullopt`değerini döndürür.
+- Aralık desteği: yineleyicinin nöbetçisi (varsayılan olarak oluşturulmuş), tükenmiş herhangi bir yineleyiciyle eşit olarak karşılaştırılır.
+- Üretim: Kilitsiz tek üretici tek tüketici için `boost::lockfree::spsc_queue`'yi veya yüksek verimli senaryolar için `folly::ProducerConsumerQueue`'yi kullanın.
+### Sorun 2: Tür-Silinmiş Herhangi Bir Türü Uygulama
+**Sorun Açıklaması:** `std::any`'nin (C++17) basitleştirilmiş bir sürümünü sıfırdan uygulayın;`any_cast`aracılığıyla kopyalamayı, taşımayı ve tür açısından güvenli almayı destekleyen, her türdeki tek değerler için tür açısından güvenli bir kapsayıcı.
+**1. Adım — Sorunu Anlayın:**
+ `std::any`, kopyalanabilir herhangi bir türün değerini saklar ve bunu tür denetimiyle alır. Dahili olarak, tür silmeyi kullanır: gerçek değeri tutan türetilmiş bir şablona sahip bir temel sınıf arayüzü.  `any_cast`, çalışma zamanında depolanan türü kontrol eder ve uyumsuzluk durumunda `bad_any_cast`'yi atar.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Sanal`clone()`ve`type()`ile bir temel sınıf`HolderBase`kullanın.
+- Gerçek değeri saklayan türetilmiş bir`Holder<T>`şablonu kullanın.
+- Bir `std::unique_ptr<HolderBase>`'yi`Any`sınıfında saklayın.
+- `any_cast<T>`, `typeid`'yi kontrol eder ve bir`static_cast`gerçekleştirir.
+**3. Adım — Çözümü Uygulayın:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Tür güvenliği:`any_cast`çalışma zamanında `typeid`'yi kontrol eder — yanlış tür `BadAnyCast`'yi atar.
+- Kopyalama semantiği: sanal `clone()`, tutulan değerin derin bir kopyasını oluşturur.
+- Anlambilimi taşı: varsayılan olarak yapıcıyı/atamayı taşı, `unique_ptr`'yi verimli bir şekilde aktar.
+- Küçük arabellek optimizasyonu (gerçek`std::any`gibi): küçük türleri yığın tahsisi olmadan satır içi olarak depolayın. Bunun için bayt tamponlu bir`union`gerekir; bu çok daha karmaşıktır.
+- Üretim:`std::any`(C++17) kullanın — standarttır, iyi test edilmiştir ve SBO içerebilir.
 ---
 
 ## Özet

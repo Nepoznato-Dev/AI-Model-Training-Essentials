@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Dasar-dasar Penulisan dan Komunikasi
-Menulis dan komunikasi adalah keterampilan menyampaikan ide dengan jelas dan efektif — baik melalui email, laporan, dokumentasi, presentasi, atau percakapan. Sebagian besar pekerjaan pengetahuan pada dasarnya adalah pekerjaan komunikasi: Anda perlu menjelaskan pemikiran Anda, membujuk orang lain, mendokumentasikan keputusan, menulis spesifikasi, menyajikan temuan, dan berkolaborasi antar tim. Kesenjangan antara apa yang Anda maksud dan apa yang dipahami seseorang adalah asal muasal sebagian besar masalah, dan komunikasi yang lebih baik akan mempersempit kesenjangan tersebut.
+Menulis dan komunikasi adalah keterampilan menyampaikan ide secara efektif — baik melalui email, laporan, dokumentasi, presentasi, atau percakapan. Sebagian besar pekerjaan pengetahuan pada dasarnya adalah pekerjaan komunikasi: para profesional perlu menjelaskan pemikiran mereka, membujuk orang lain, mendokumentasikan keputusan, menulis spesifikasi, menyajikan temuan, dan berkolaborasi antar tim. Kesenjangan antara apa yang dimaksudkan dan apa yang dipahami adalah asal muasal sebagian besar masalah, dan komunikasi yang lebih baik akan mempersempit kesenjangan tersebut.
 ---
 
 ## Prinsip Penulisan yang Jelas
@@ -91,7 +92,7 @@ Menulis dan komunikasi adalah keterampilan menyampaikan ide dengan jelas dan efe
 | **Kesimpulan/rekomendasi** | Mulailah dengan jawabannya |
 | **Argumen utama** | 3-4 alasan yang mendukung kesimpulan |
 | **Bukti pendukung** | Data, contoh, analisis untuk setiap argumen |
-**Mengapa berhasil**: pembaca yang sibuk menginginkan jawabannya terlebih dahulu, baru alasannya. Jika mereka hanya membaca paragraf pertama saja, mereka sudah mengerti maksud utamanya.
+**Mengapa berhasil**: pembaca yang sibuk menginginkan jawabannya terlebih dahulu, baru alasannya. Jika mereka hanya membaca paragraf pertama, mereka mengerti maksud utamanya.
 ### Piramida Terbalik (Jurnalisme)
 | Tingkat | Deskripsi |
 |-------|-------------|
@@ -104,7 +105,7 @@ Menulis dan komunikasi adalah keterampilan menyampaikan ide dengan jelas dan efe
 | **Situasi** | Keadaan saat ini | "Aplikasi kami melayani 10.000 permintaan per detik" |
 | **Komplikasi** | Masalah atau perubahan | "Lalu lintas tumbuh 30% per bulan" |
 | **Pertanyaan** | Apa yang harus kita lakukan? | "Bagaimana kita menangani lalu lintas 10x?" |
-| **Jawaban** | Rekomendasi | "Bermigrasi ke arsitektur layanan mikro dengan penskalaan otomatis" |
+| **Jawab** | Rekomendasi | "Bermigrasi ke arsitektur layanan mikro dengan penskalaan otomatis" |
 ---
 
 ## Presentasi
@@ -164,4 +165,4 @@ Menulis dan komunikasi adalah keterampilan menyampaikan ide dengan jelas dan efe
 ---
 
 ## Ringkasan
-Penulisan dan komunikasi yang jelas bukanlah tentang menjadi pintar, melainkan tentang dipahami. Mulailah dengan poin utama (prinsip piramida). Gunakan kalimat aktif, bahasa konkrit, dan kalimat pendek. Susun informasi sehingga pembaca dapat menemukan apa yang mereka butuhkan. Dokumentasi teknis harus dapat dipindai dan diberi contoh. Penulisan bisnis harus diawali dengan rekomendasi. Presentasi harus menceritakan sebuah cerita dengan satu ide per slide. Persuasi memadukan logika (logos), emosi (pathos), dan kredibilitas (ethos). Kesadaran lintas budaya mencegah kesalahpahaman dalam tim global. Keterampilan mendasarnya adalah kesadaran audiens: mengetahui untuk siapa Anda menulis, apa yang perlu mereka ketahui, dan format apa yang akan membantu mereka memahaminya. Setiap menit yang Anda investasikan dalam komunikasi yang lebih jelas menghemat waktu berkali-kali lipat dalam mengurangi kebingungan, mengurangi kesalahpahaman, dan pengambilan keputusan lebih cepat.
+Tulisan dan komunikasi yang jelas adalah tentang pemahaman. Mulailah dengan poin utama (prinsip piramida). Gunakan kalimat aktif, bahasa konkrit, dan kalimat pendek. Susun informasi sehingga pembaca dapat menemukan apa yang dibutuhkan. Dokumentasi teknis harus dapat dipindai dan diberi contoh. Penulisan bisnis harus diawali dengan rekomendasi. Presentasi harus menyajikan satu ide per slide. Persuasi memadukan logika (logos), bukti (pathos), dan kredibilitas (ethos). Kesadaran lintas budaya mencegah kesalahpahaman dalam tim global. Keterampilan mendasarnya adalah kesadaran audiens: mengetahui siapa pembacanya, apa yang perlu mereka ketahui, dan format apa yang akan mendukung pemahaman mereka. Investasi pada komunikasi yang lebih jelas akan menghasilkan berkurangnya kebingungan, berkurangnya kesalahpahaman, dan pengambilan keputusan yang lebih cepat.

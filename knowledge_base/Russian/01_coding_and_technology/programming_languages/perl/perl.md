@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Перл
 Perl был создан Ларри Уоллом в 1987 году как практичный инструмент для обработки текста. Он стал основой ранней веб-разработки (CGI-скрипты), системного администрирования, биоинформатики и сетевого программирования. Философия Perl — «Есть больше, чем один способ сделать это» (TMTOWTDI) — язык предлагает множество подходов к каждой проблеме, отдавая предпочтение выразительности единообразию.
 Влияние Perl на современное программирование огромно, но зачастую незаметно: регулярные выражения, созданные под влиянием сопоставления шаблонов Perl, теперь являются стандартными в Python, JavaScript, Java и большинстве других языков. CPAN (Comprehensive Perl Archive Network) был одним из первых репозиториев пакетов программного обеспечения и вдохновил более поздние системы, такие как PyPI Python и npm Node.
@@ -58,7 +59,7 @@ Perl был создан Ларри Уоллом в 1987 году как пра�
 | **Угасание сообщества** | Меньше новых проектов, выбирающих Perl | Большая существующая кодовая база требует обслуживания; активное сообщество |
 | **Две основные версии** | Perl 5 и Raku (Perl 6) — разные языки | Используйте Perl 5 для существующей работы; Раку для новых проектов |
 | **Не модно** | Редко преподают в учебных лагерях или университетах | Обширная документация и модули CPAN |
-| **Переменные символы** |  Префиксы`$`,`@`,`%`могут сбить с толку новичков | Изучите шаблон: `$scalar`, `@array`,`%hash`|
+| **Переменные символы** |  Префиксы `$`, `@`,`%`могут сбить с толку новичков | Изучите шаблон: `$scalar`, `@array`,`%hash`|
 | **Производительность** | Медленнее, чем компилируемые языки, для задач, требующих больших вычислительных ресурсов | Используйте расширения C; не лучший инструмент для высокопроизводительных вычислений |
 ---
 
@@ -583,6 +584,165 @@ CMD ["perl", "bin/myapp.pl"]
 | Веб-разработка | Эпоха компьютерной графики закончилась | Python, Node.js, Go, PHP |
 | Новые масштабные проекты | Сообщество продвинулось | Вперёд, Rust, Python |
 | Наука о данных / ML | Не экосистема | Питон, Р |
+---
+
+## Синтетические вопросы и ответы
+### Q1: В чем разница между`my`,`our`и`local`?
+**A:** Эти ключевые слова управляют областью действия переменных:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Вопрос 2: Как эффективно обрабатывать текстовые файлы в Perl?
+**О:** Perl превосходно справляется с обработкой текста. Используйте оператор алмаза и регулярное выражение:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Вопрос 3. Как использовать ссылки и сложные структуры данных?
+**A:** Ссылки — это способ Perl создавать вложенные структуры:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Вопрос 4: Какие специальные переменные Perl мне следует знать?
+**О:** В Perl имеется множество специальных переменных. Самое важное:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Вопрос 5: Как мне написать современный, удобный в сопровождении Perl?
+**О:** Лучшие практики для современного Perl:
+- Всегда используйте`strict`и `warnings`. 
+- Используйте`my`для всех переменных.
+- Используйте лексические дескрипторы файлов: `open my $fh, '<', $file`. 
+- Используйте модули из CPAN (Moo/Moose для ООП, Try::Tiny для ошибок)
+- Используйте`say`вместо`print`(с`feature 'say'`)
+- Форматирование с помощью `perltidy`.
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Анализ файла журнала
+**Шаг 1. Поймите проблему**
+Анализируйте журнал доступа Apache и подсчитывайте запросы по IP-адресу.
+**Шаг 2. Определите подход**
+Используйте регулярное выражение для извлечения IP-адресов и хэш для подсчета вхождений.
+**Шаг 3. Реализация**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Шаг 4. Продлить**
+Добавьте фильтрацию дат, анализ кода состояния и вывод в формате CSV.
+### Проблема 2. Пакетное переименование файлов с помощью регулярных выражений
+**Шаг 1. Поймите проблему**
+Переименуйте файлы, соответствующие шаблону, преобразуя имена файлов с помощью регулярных выражений.
+**Шаг 2. Определите подход**
+Используйте`glob`или`opendir`для поиска файлов и регулярное выражение для преобразования имен.
+**Шаг 3. Реализация**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Шаг 4. Проверка**
+Сначала запустите флаг`--dry-run`(просто распечатайте, не перемещайте).
+### Проблема 3: создание простого веб-скребка
+**Шаг 1. Поймите проблему**
+Получите веб-страницу и извлеките все ссылки.
+**Шаг 2. Определите подход**
+Используйте`LWP::Simple`для выборки и регулярного выражения или`HTML::LinkExtor`для анализа.
+**Шаг 3. Реализация**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Шаг 4. Продлить**
+Обрабатывайте относительные URL-адреса, фильтруйте по домену и следите за нумерацией страниц.
 ---
 
 ## Краткое содержание

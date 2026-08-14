@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "بايثون"
-الوصف: "مرجع شامل للغة برمجة بايثون يغطي نظرة عامة، والمقايضات، وأساسيات بناء الجملة، والنظام البيئي، ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Python"
+description: "Comprehensive reference for the Python programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [بايثون، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "58 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [python, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "58 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #بايثون
 Python هي لغة برمجة عالية المستوى ومفسرة للأغراض العامة أنشأها جويدو فان روسوم وتم إصدارها لأول مرة في عام 1991. وهي تعطي الأولوية لقراءة التعليمات البرمجية من خلال مسافة بادئة كبيرة وبناء جملة واضح يُقرأ بالقرب من اللغة الإنجليزية البسيطة. تتم كتابة لغة بايثون ديناميكيًا، ويتم تجميع البيانات المهملة فيها، وتدعم نماذج برمجة متعددة بما في ذلك البرمجة الإجرائية والموجهة للكائنات والبرمجة الوظيفية.
 اليوم، بايثون هي اللغة المهيمنة في الذكاء الاصطناعي/التعلم الآلي، وعلوم البيانات، والحوسبة العلمية، والأتمتة - في حين تظل واحدة من أفضل اللغات للمبتدئين. هذه الهوية المزدوجة (بسيطة بما يكفي للنص الأول، وقوية بما يكفي لتدريب نماذج لغوية كبيرة) هي ما يميزها.
@@ -176,8 +181,8 @@ class InsufficientFundsError(Exception):
 ---
 
 ## بناء الجملة والأنماط المتقدمة
-### الأدوية العامة مع الوحدة النمطية `typing`
-توفر وحدة`typing`الخاصة بـ Python دعمًا عامًا للكتابة لإنشاء مكونات قابلة لإعادة الاستخدام وآمنة للكتابة. تتيح لك الأدوية العامة كتابة وظائف وفئات تعمل مع أي نوع مع الحفاظ على معلومات النوع للتحليل الثابت.
+### الأدوية العامة مع وحدة `typing`
+توفر وحدة`typing`الخاصة بـ Python دعمًا عامًا للنوع لإنشاء مكونات قابلة لإعادة الاستخدام وآمنة للنوع. تتيح لك الأدوية العامة كتابة وظائف وفئات تعمل مع أي نوع مع الحفاظ على معلومات النوع للتحليل الثابت.
 ```python
 from typing import TypeVar, Generic, Protocol, runtime_checkable
 
@@ -290,7 +295,7 @@ print(db1 is db2)  # True — same instance
 ```
 
 ### مطابقة الأنماط الهيكلية (Python 3.10+)
-توفر عبارة`match/case`الخاصة ببايثون مطابقة قوية للأنماط مع أنماط التدمير والحراس والأنماط المتداخلة.
+يوفر بيان`match/case`الخاص بـ Python مطابقة أنماط قوية مع أنماط التدمير والحراس والأنماط المتداخلة.
 ```python
 from dataclasses import dataclass
 
@@ -503,18 +508,18 @@ except AppError as e:
 تأتي بايثون مع مكتبة قياسية واسعة النطاق. بعض الوحدات الأكثر استخدامًا:
 | الوحدة | الغرض | استخدم المثال |
 |--------|---------|-------------|
-|  __محمي_0__ / __محمي_1__ | عمليات نظام الملفات |  __محمي_2__ |
-|  __محمي_3__ | ترميز/فك تشفير JSON |  __محمي_4__ |
-|  __محمي_5__ | التعامل مع التاريخ والوقت |  __محمي_6__ |
-|  __محمي_7__ | حاويات متخصصة |  __محمي_8__، __محمي_9__ |
-|  __محمي_10__ | كتل بناء التكرار |  __محمي_11__ |
-|  __محمي_12__ | الأدوات الوظيفية |  __محمي_13__ , __محمي_14__ , __محمي_15__ |
-|  __محمي_16__ | التعابير العادية |  __محمي_17__ |
-|  __محمي_18__ | تشغيل الأوامر الخارجية |  __محمي_19__ |
-|  __محمي_20__ | تسجيل التطبيق |  __محمي_21__ |
-|  __محمي_22__ | دعم تلميح النوع |  __محمي_23__ , __محمي_24__ |
-|  __محمي_25__ | خادم HTTP بسيط |  __محمي_26__ |
-|  __محمي_27__ / __محمي_28__ | التزامن | الإدخال/الإخراج غير المتزامن لكاشطات الويب |
+| `os`/`pathlib`| عمليات نظام الملفات | `Path("data/output.csv").exists()`|
+| `json`| ترميز/فك تشفير JSON | `json.loads(response_text)`|
+| `datetime`| التعامل مع التاريخ والوقت | `datetime.now(timezone.utc)`|
+| `collections`| حاويات متخصصة | `Counter(words)`,`defaultdict(list)`|
+| `itertools`| كتل بناء التكرار | `combinations(items, 2)`|
+| `functools`| الأدوات الوظيفية | `lru_cache`,`partial`,`reduce`|
+| `re`| التعابير العادية | `re.findall(r"\d+", text)`|
+| `subprocess`| تشغيل الأوامر الخارجية | `subprocess.run(["ls", "-la"])`|
+| `logging`| تسجيل التطبيق | `logging.basicConfig(level=logging.INFO)`|
+| `typing`| دعم تلميح النوع | `Optional[str]`,`Union[int, float]`|
+| `http.server`| خادم HTTP بسيط | `python -m http.server 8000`|
+| `threading`/`asyncio`| التزامن | الإدخال/الإخراج غير المتزامن لكاشطات الويب |
 ### البيئات الافتراضية وإدارة الحزم
 يجب أن يستخدم كل مشروع بايثون بيئة افتراضية لعزل التبعيات:
 ```bash
@@ -537,9 +542,9 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
-تستخدم مشاريع Python الحديثة بشكل متزايد`pyproject.toml`مع أدوات مثل`uv`أو`poetry`أو`hatch`لإدارة التبعية، لتحل محل النهج الأقدم`setup.py`/ `requirements.txt`.
+تستخدم مشاريع Python الحديثة`pyproject.toml`بشكل متزايد مع أدوات مثل`uv`أو`poetry`أو`hatch`لإدارة التبعية، لتحل محل نهج`setup.py`/`requirements.txt`الأقدم.
 ### البرمجة غير المتزامنة
-يتيح`asyncio`الخاص بـ Python عمليات الإدخال/الإخراج المتزامنة بدون سلاسل رسائل - وهي ضرورية لبرامج استخراج الويب وخوادم الدردشة وعملاء واجهة برمجة التطبيقات:
+يتيح`asyncio`الخاص بـ Python الإدخال/الإخراج المتزامن بدون سلاسل رسائل - وهو ضروري لبرامج استخراج الويب وخوادم الدردشة وعملاء واجهة برمجة التطبيقات:
 ```python
 import asyncio
 import aiohttp
@@ -683,7 +688,7 @@ my-python-project/
 └── .gitignore
 ```
 
-### تكوين التكوين — __محمي_0__
+### تكوين التكوين — `pyproject.toml`
 ```toml
 [project]
 name = "my-package"
@@ -1289,12 +1294,12 @@ fly deploy
 ### الأتمتة والبرمجة
 | مكتبة | الغرض |
 |---------|--------|
-|  __محمي_0__ / __محمي_1__ | إدارة النظام |
-|  __محمي_2__ / __محمي_3__ | عملاء HTTP |
-|  __محمي_4__ / __محمي_5__ | تجريف الويب |
-|  __محمي_6__ / __محمي_7__ | أتمتة المتصفح |
-|  __محمي_8__ | قوائم انتظار المهام الموزعة |
-|  __محمي_9__ | تنسيق سير العمل |
+| `subprocess`/`os`| إدارة النظام |
+| `requests`/`httpx`| عملاء HTTP |
+| `BeautifulSoup`/`Scrapy`| تجريف الويب |
+| `Selenium`/`Playwright`| أتمتة المتصفح |
+| `Celery`| قوائم انتظار المهام الموزعة |
+| `Airflow`| تنسيق سير العمل |
 ### الحوسبة العلمية
 | مكتبة | الغرض |
 |---------|--------|
@@ -1373,6 +1378,289 @@ def slow_function():
     import time; time.sleep(1)
 ```
 
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين القوائم والصفوف، ومتى يجب أن أستخدم كل منهما؟
+**أ:** القوائم قابلة للتغيير (`[]`)، والصفوف غير قابلة للتغيير (`()`). استخدم القوائم عندما تحتاج إلى إضافة عناصر أو إزالتها أو تغييرها. استخدم الصفوف للمجموعات الثابتة من البيانات غير المتجانسة، أو مفاتيح القاموس، أو قيم إرجاع الوظائف، أو عندما تريد الإشارة إلى "هذا لا ينبغي أن يتغير". تعد Tuples أكثر كفاءة في الذاكرة قليلاً ويمكن استخدامها كمفاتيح ضبط/إملاء؛ لا يمكن للقوائم.
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### السؤال الثاني: كيف يؤثر قفل المترجم العالمي (GIL) على الكود الخاص بي، وماذا يجب أن أفعل حيال ذلك؟
+**أ:** يمنع GIL سلاسل رسائل متعددة من تنفيذ كود Python الثانوي في وقت واحد، مما يجعل الترابط غير فعال للعمل المرتبط بوحدة المعالجة المركزية. بالنسبة للمهام المرتبطة بالإدخال/الإخراج (طلبات الشبكة، إدخال/إخراج الملفات)، تعمل`threading`أو`asyncio`بشكل جيد لأنه يتم تحرير GIL أثناء الإدخال/الإخراج. بالنسبة للمهام المرتبطة بوحدة المعالجة المركزية، استخدم`multiprocessing`(عمليات منفصلة، ​​كل منها لها GIL الخاص بها)، أو قم بإلغاء التحميل إلى امتدادات C (NumPy، Cython، Numba) التي تحرر GIL داخليًا.
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### س3: هل يجب أن أستخدم تلميحات الكتابة في كل مكان؟ ما هي المقايضات العملية؟
+**أ:** تعتبر تلميحات الكتابة (`def greet(name: str) -> str:`) اختيارية ولا يتم فرضها في وقت التشغيل. تعمل على تحسين الإكمال التلقائي لـ IDE، واكتشاف الأخطاء عبر أدوات التحليل الثابت (mypy)، ونية المستند. المقايضة هي الإسهاب الإضافي ومنحنى التعلم للأنواع المتقدمة (`Union`,`Generic`,`Protocol`). توصية: استخدم تلميحات الكتابة لتوقيعات الوظائف في أي مشروع يزيد عن 500 سطر تقريبًا؛ استخدمها باعتدال في النصوص القصيرة. تمكين mypy في CI للتنفيذ التدريجي.
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### السؤال الرابع: ما هي أفضل الممارسات للتعامل مع الاستثناءات في بايثون؟
+**أ:** احصل على استثناءات محددة بدلاً من`except:`العارية (التي تلتقط`SystemExit`و`KeyboardInterrupt` أيضًا). استخدم`try/except/else/finally`لفصل منطق المسار السعيد عن معالجة الأخطاء. تحديد التسلسلات الهرمية للاستثناءات المخصصة للمكتبات. لا تستخدم أبدًا استثناءات للتحكم في التدفق في التعليمات البرمجية الحساسة للأداء - فهي بطيئة. قم بتسجيل الاستثناء باستخدام`logging.exception()`لالتقاط التتبع الكامل.
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### س5: كيف تقوم المولدات بحفظ الذاكرة، ومتى يجب استخدامها في القوائم؟
+**ج:** تنتج المولدات القيم بتكاسل — واحدة تلو الأخرى، حسب الطلب — بدلاً من إنشاء قائمة كاملة في الذاكرة. بالنسبة لمجموعات البيانات الكبيرة (ملايين الصفوف، والتسلسلات اللانهائية، والبيانات المتدفقة)، تستخدم المولدات ذاكرة ثابتة بغض النظر عن الحجم. استخدم المولدات عندما تتكرر مرة واحدة ولا تحتاج إلى فهرسة أو`len()`. استخدم القوائم عندما تحتاج إلى وصول عشوائي، أو تكرارات متعددة، أو عندما تكون المجموعة صغيرة.
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: إنشاء عداد تكرار الكلمات مع التصنيف
+**بيان المشكلة:** في حالة وجود ملف نصي كبير، قم بحساب تكرار كل كلمة، ثم قم بترتيبها حسب التكرار (تنازلي)، وقم بإرجاع أعلى النتائج N. تعامل مع عدم حساسية حالة الأحرف وعلامات الترقيم ومعالجة الملفات الكبيرة جدًا بحيث لا يمكن احتواؤها في الذاكرة بكفاءة.
+**الخطوة الأولى — فهم المشكلة:**
+نحن بحاجة إلى: (1) قراءة النص، (2) تقسيمه إلى كلمات، (3) تطبيع حالة الأحرف، (4) علامات الترقيم، (5) عد التكرارات، (6) الفرز حسب العدد تنازليًا، (7) العودة إلى أعلى N. القيد "كبير جدًا بحيث لا يتناسب مع الذاكرة" يعني أنه يجب علينا معالجة سطرًا تلو الآخر باستخدام المولدات.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم`re.finditer`لاستخراج الكلمات بكفاءة دون إنشاء قوائم وسيطة.
+- استخدم`collections.Counter`لزيادة O(1) لكل كلمة.
+- استخدم`Counter.most_common(n)`الذي يستخدم الكومة داخليًا - O(k log n) بدلاً من O(n log n) للفرز الكامل.
+- معالجة سطرًا تلو الآخر عبر المولد للحفاظ على ثبات الذاكرة.
+**الخطوة 3 — تنفيذ الحل:**
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- الذاكرة: يوجد فقط إملاء العداد في الذاكرة (إدخال واحد لكل كلمة فريدة)، وليس محتوى الملف. بالنسبة للنص الإنجليزي، ~100 ألف كلمة فريدة ≈ بضع ميغابايت.
+- الوقت: O(W) لمسح جميع الكلمات + O(U log N) لاستخراج أعلى N، حيث W = إجمالي الكلمات، U = كلمات فريدة.
+- حالات الحافة: يتم الحفاظ على الفواصل العليا في الاختصارات ("لا تفعل") بواسطة التعبير العادي. سيحتاج نص Unicode إلى علامة`re.UNICODE`أو نمط مختلف.
+### المشكلة الثانية: تنفيذ ذاكرة تخزين مؤقت LRU آمنة لمؤشر الترابط
+**بيان المشكلة:** قم بإنشاء ذاكرة تخزين مؤقت أقل استخدامًا (LRU) من البداية تكون آمنة لمؤشر الترابط، وتدعم عمليات الحصول على O(1) ووضعها، وتقوم تلقائيًا بطرد العنصر الأقل استخدامًا مؤخرًا عند تجاوز السعة.
+**الخطوة الأولى — فهم المشكلة:**
+تحتاج ذاكرة التخزين المؤقت LRU إلى: (1) بحث سريع عن طريق المفتاح ← خريطة التجزئة، (2) ترتيب سريع حسب الحداثة ← قائمة مرتبطة بشكل مزدوج، (3) أمان الخيط ← القفل. على `get(key)`: انقل العنصر إلى الأمام. في `put(key, val)`: أدخل في المقدمة؛ إذا كان أكثر من السعة، قم بإزالته من الخلف.
+**الخطوة الثانية — تحديد النهج:**
+- يحتفظ`dict`في Python بترتيب الإدراج (3.7+)، لذلك يمكننا استخدام أسلوب الإملاء المرتب: الحذف وإعادة الإدراج للانتقال إلى النهاية.
+- لسلامة الخيط، استخدم`threading.Lock`للاستبعاد المتبادل.
+- البديل: استخدم`collections.OrderedDict`الذي يحتوي على`move_to_end()`.
+**الخطوة 3 — تنفيذ الحل:**
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- التعقيد الزمني: O(1) لكل من`get`و`put` -`OrderedDict.move_to_end()`و`popitem()` هما O(1).
+- سلامة الخيط: يضمن`Lock`الذرية. للحصول على إنتاجية أعلى، فكر في`threading.RLock`أو نمط قفل القراءة والكتابة، ولكن بالنسبة لمعظم حالات الاستخدام، يكفي القفل البسيط.
+- ملاحظة الإنتاج: بالنسبة للكود المفرد، يكون`functools.lru_cache`أبسط ويتم تنفيذه في لغة C للحصول على أداء أفضل.
+### المشكلة الثالثة: تحليل وتقييم التعبير الرياضي
+**بيان المشكلة:** اكتب محللًا يأخذ سلسلة مثل`"3 + 4 * 2 / (1 - 5)"`ويقوم بتقييمها بشكل صحيح مع مراعاة أسبقية عامل التشغيل والأقواس.
+**الخطوة الأولى — فهم المشكلة:**
+يتطلب ذلك: (1) ترميز سلسلة الإدخال إلى أرقام وعوامل تشغيل وأقواس، (2) التحليل بالأسبقية الصحيحة (`*`و`/` قبل`+`و`-`)، (3) التعامل مع الأقواس المتداخلة. إن التقييم الساذج من اليسار إلى اليمين من شأنه أن يعطي نتائج خاطئة.
+**الخطوة الثانية — تحديد النهج:**
+الحل الكلاسيكي هو **خوارزمية التحويلة** (Dijkstra) التي تحول infix إلى postfix (Reverse Polish Notation)، ثم تقوم بتقييم postfix. بدلا من ذلك، استخدم محلل النسب العودي. بالنسبة لـ Python على وجه التحديد، يمكننا أيضًا استخدام`ast.literal_eval`للتقييم الآمن - ولكن دعونا ننفذه بشكل صحيح.
+**الخطوة 3 — تنفيذ الحل:**
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- الصحة:`3 + 4 * 2 / (1 - 5)`→`3 + 8 / (-4)`→`3 + (-2)`→`1.0`. صحيح.
+- الوقت: O(N) للترميز، O(N) لساحة النقل، O(N) للتقييم - O(N) الإجمالي.
+- حالات الحافة التي يجب التعامل معها: الأرقام السالبة (إلحاق`0`قبل`-`الأحادي)، القسمة على صفر (إضافة معالجة الأخطاء)، الإدخال غير الصالح (التحقق من صحة الرموز).
+- البديل البايثوني:`ast.parse(expr, mode='eval')`مع زائر عقدة مخصص للتقييم الآمن بدون `eval()`.
+### المشكلة الرابعة: إنشاء لوحة تحكم واجهة سطر الأوامر (CLI) مع تحديثات البيانات في الوقت الفعلي
+**بيان المشكلة:** قم بإنشاء لوحة معلومات قائمة على المحطة الطرفية تعرض تحديث مقاييس النظام (وحدة المعالجة المركزية والذاكرة والقرص) في الوقت الفعلي، مع حدود مرمزة بالألوان وتخطيط سريع الاستجابة.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) جمع قياسات النظام بشكل دوري، (2) العرض الطرفي مع التحكم في المؤشر، (3) إخراج الألوان استنادًا إلى الحدود، (4) إدخال لوحة المفاتيح غير المحظور لإنهاء العمل. هذا هو نمط المنتج والمستهلك مع حلقة العرض.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم`psutil`لمقاييس النظام عبر الأنظمة الأساسية.
+- استخدم أكواد الهروب ANSI لتحديد موضع المؤشر وألوانه (أو مكتبة`rich`لواجهة برمجة التطبيقات ذات المستوى الأعلى).
+- استخدم`time.sleep`للفاصل الزمني للتحديث.
+- الهيكل على النحو التالي: جمع البيانات ← التنسيق ← تقديم خط الأنابيب.
+**الخطوة 3 — تنفيذ الحل:**
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- كتل`cpu_percent(interval=0.5)`لمدة 0.5 ثانية للقياس - وهذا هو النهج الصحيح (يعطي الوضع غير المحظور 0% عند الاتصال الأول).
+- تعمل رموز ANSI على Windows Terminal الحديث وجميع محطات Unix. بالنسبة إلى Windows cmd القديم، أضف`os.system('color')`أو استخدم`colorama`.
+- ترقية الإنتاج: استخدم مكتبة`rich`(`rich.live`) للعرض الخالي من الوميض والتخطيط التلقائي والتوافق عبر الأنظمة الأساسية.
+- القابلية للتوسعة: كل مقياس عبارة عن وظيفة مستقلة، مما يجعل من السهل إضافة درجة حرارة وحدة معالجة الرسومات، أو عدد العمليات، أو اتصالات الشبكة.
 ---
 
 ## ملخص

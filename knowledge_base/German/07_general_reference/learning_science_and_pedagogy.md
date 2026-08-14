@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Wissenschaft und Pädagogik lernen
-Lernwissenschaft ist die interdisziplinäre Untersuchung der Art und Weise, wie Menschen lernen – basierend auf Psychologie, Neurowissenschaften, Pädagogik und Kognitionswissenschaft. Pädagogik ist die Kunst und Wissenschaft des Unterrichtens. Gemeinsam beantworten sie Fragen, die für jeden wichtig sind, der unterrichtet, ausbildet, betreut oder Bildungsinhalte gestaltet: Was hilft Menschen tatsächlich beim Lernen? Welche gängigen Lerntechniken sind unwirksam? Wie sollte der Unterricht strukturiert sein, um eine maximale Bindung und Übertragung zu gewährleisten?
+Lernwissenschaft ist die interdisziplinäre Untersuchung der Art und Weise, wie Menschen lernen – basierend auf Psychologie, Neurowissenschaften, Pädagogik und Kognitionswissenschaft. Pädagogik ist die Praxis und Methodik des Unterrichtens. Gemeinsam befassen sie sich mit Fragen, die für jeden relevant sind, der unterrichtet, ausbildet, betreut oder Bildungsinhalte gestaltet: Welche Methoden helfen Menschen, effektiv zu lernen? Welche gängigen Lerntechniken sind ineffizient? Wie sollte der Unterricht für optimale Behaltensleistung und Transfer strukturiert werden?
 ---
 
 ## Wie Lernen funktioniert

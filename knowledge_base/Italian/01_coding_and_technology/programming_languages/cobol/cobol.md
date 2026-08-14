@@ -830,4 +830,4 @@ scp bin/payroll server:/opt/cobol/bin/
 ---
 
 ## Riepilogo
-COBOL è una reliquia degli albori dell'informatica che rifiuta di morire, perché non può permetterselo. I sistemi bancari e governativi mondiali dipendono dai programmi COBOL che funzionano in modo affidabile da decenni. Anche se oggi nessuno sceglierebbe COBOL per un nuovo progetto, il linguaggio rimane di fondamentale importanza per il mantenimento dell’infrastruttura che è alla base della finanza globale. La carenza di sviluppatori COBOL lo rende una nicchia sorprendentemente redditizia.
+COBOL è un'eredità dei primi decenni dell'informatica che rimane in uso attivo perché la sostituzione non è fattibile su larga scala. I sistemi bancari e governativi mondiali dipendono dai programmi COBOL che funzionano in modo affidabile da decenni. Anche se oggi non si sceglierebbe tipicamente COBOL per un nuovo progetto, il linguaggio rimane importante per il mantenimento dell'infrastruttura che supporta la finanza globale. La carenza di sviluppatori COBOL lo rende una nicchia redditizia.

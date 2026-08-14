@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fortran
 Fortran (Formula Translation) ist die älteste noch weit verbreitete Programmiersprache auf hohem Niveau und wurde erstmals 1957 von IBM für wissenschaftliche und technische Berechnungen entwickelt. Trotz seines Alters ist das moderne Fortran (Fortran 2008/2018/2023) eine leistungsfähige Hochleistungssprache, die häufig in der numerischen Wettervorhersage, numerischen Strömungsmechanik, physikalischen Simulationen, Finanzmodellierung und Hochleistungsrechnen (HPC) eingesetzt wird. Viele der schnellsten Supercomputer der Welt laufen mit Fortran-Code.
-Die Sprache hat sich seit ihren Anfängen erheblich weiterentwickelt. Modernes Fortran verfügt über Module, abgeleitete Typen, generische Prozeduren, Coarrays (parallele Programmierung) und Interoperabilität mit C. Es bleibt die Sprache der Wahl für viele wissenschaftliche Computeranwendungen, bei denen die Leistung im Vordergrund steht.
+Die Sprache hat sich seit ihren Anfängen erheblich weiterentwickelt. Modernes Fortran verfügt über Module, abgeleitete Typen, generische Prozeduren, Coarrays (parallele Programmierung) und Interoperabilität mit C. Es bleibt die Sprache der Wahl für viele wissenschaftliche Computeranwendungen, bei denen die Leistung von größter Bedeutung ist.
 ---
 
 ## Warum Fortran wichtig ist
@@ -60,7 +61,7 @@ Die Sprache hat sich seit ihren Anfängen erheblich weiterentwickelt. Modernes F
 | **Einstellung** | Nur wenige Fortran-Entwickler betreten den Markt | Bestehende Experten in der Wissenschaft und in nationalen Labors |
 ---
 
-## Syntaxgrundlagen (modernes Fortran)
+## Syntax-Grundlagen (modernes Fortran)
 ```fortran
 program hello
     implicit none
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Allgemeine Anwendungsentwicklung | Nicht geeignet | Python, Java, Go |
 | Webentwicklung | Nicht geeignet | JavaScript, Python |
 | Datenwissenschaft (interaktiv) | Nicht der Workflow | Python, R |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen Fortran 90 und dem modernen Fortran (2008+)?
+**A:** Modern Fortran hat viele Funktionen hinzugefügt, die es ausdrucksvoller machen:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### F2: Wie unterscheiden sich Fortran-Arrays von C-Arrays?
+**A:** Fortran-Arrays sind erstklassige Objekte mit integrierten Operationen:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### F3: Wie erreiche ich maximale Leistung in Fortran?
+**A:** Schlüsselpraktiken:
+– Verwenden Sie explizites`intent`für alle Dummy-Argumente
+- Verwenden Sie`implicit none`überall
+- Bevorzugen Sie Array-Operationen gegenüber Schleifen
+- Verwenden Sie zusammenhängende Speicherzugriffsmuster
+– Verwenden Sie Compiler-Optimierungsflags:`-O3 -march=native -ffast-math`
+- Profil mit`gprof`oder Compiler-spezifischen Tools
+- Verwenden Sie`pure`und`elemental`für Funktionen, die der Compiler optimieren kann
+### F4: Wie verbinde ich Fortran mit C?
+**A:** Verwenden Sie das `iso_c_binding`-Modul:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### F5: Welches Build-System sollte ich für Fortran-Projekte verwenden?
+**A:** CMake bietet hervorragende Fortran-Unterstützung. FPM (Fortran Package Manager) ist die moderne native Option:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Lösen einer PDE mit endlichen Differenzen
+**Schritt 1: Verstehen Sie das Problem**
+Lösen Sie die 1D-Wärmegleichung: du/dt = alpha * d²u/dx²
+**Schritt 2: Identifizieren Sie den Ansatz**
+Diskretisieren Sie Raum und Zeit mithilfe endlicher Differenzen. Verwenden Sie ein explizites Schema.
+**Schritt 3: Implementieren**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Schritt 4: Überprüfen**
+Überprüfen Sie die Erhaltung und Konvergenz mit der Gitterverfeinerung und vergleichen Sie sie mit der analytischen Lösung.
+### Problem 2: Matrixdiagonalisierung
+**Schritt 1: Verstehen Sie das Problem**
+Finden Sie Eigenwerte und Eigenvektoren einer symmetrischen Matrix.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie die `dsyev`-Routine von LAPACK über die Fortran-Schnittstelle.
+**Schritt 3: Implementieren**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Schritt 4: Überprüfen**
+Überprüfen Sie, dass A*v = lambda*v für jedes Eigenpaar ist.
 ---
 
 ## Zusammenfassung

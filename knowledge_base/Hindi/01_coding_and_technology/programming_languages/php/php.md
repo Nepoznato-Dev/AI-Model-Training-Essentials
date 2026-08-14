@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "PHP"
-विवरण: "PHP प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [php, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "34 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "PHP"
+description: "Comprehensive reference for the PHP programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [php, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #पीएचपी
 PHP (हाइपरटेक्स्ट प्रीप्रोसेसर) एक सर्वर-साइड स्क्रिप्टिंग भाषा है जो 1994 में रासमस लेरडॉर्फ द्वारा बनाई गई थी और पहली बार 1995 में जारी की गई थी। मूल रूप से गतिशील वेब पेज बनाने के लिए डिज़ाइन किया गया, PHP एक पूर्ण-विशेषताओं वाली सामान्य प्रयोजन भाषा में विकसित हुई है। यह वर्डप्रेस, फेसबुक (मूल रूप से), विकिपीडिया, स्लैक और लाखों अन्य साइटों सहित ज्ञात सर्वर-साइड भाषा वाली सभी वेबसाइटों में से लगभग 75% को संचालित करता है।
 आधुनिक PHP (8.x) 2000 के दशक की शुरुआत की PHP से बहुत अलग भाषा है। इसमें अब टाइप किए गए गुण, मिलान अभिव्यक्ति, एनम, फाइबर, केवल पढ़ने योग्य कक्षाएं और एक मजबूत प्रकार की प्रणाली है। डेवलपर्स के बीच इसकी प्रतिष्ठा (अक्सर विसंगतियों के लिए आलोचना) के बावजूद, PHP व्यावहारिक है, व्यापक रूप से तैनात है, और इसमें सुधार जारी है।
@@ -49,7 +54,7 @@ PHP (हाइपरटेक्स्ट प्रीप्रोसेसर) 
 ## समझौता
 | सीमा | विवरण | विशिष्ट समाधान |
 |----|---|-----|
-| **असंगत नामकरण** | `strpos`बनाम`str_replace`,`array_key_exists`बनाम`in_array`— कोई सुसंगत परंपरा नहीं | विसंगतियों को जानें; आईडीई स्वत: पूर्ण का उपयोग करें |
+| **असंगत नामकरण** | `strpos`बनाम `str_replace`,`array_key_exists`बनाम`in_array`- कोई सुसंगत परंपरा नहीं | विसंगतियों को जानें; आईडीई स्वत: पूर्ण का उपयोग करें |
 | **ऐतिहासिक सामान** | PHP 5 और उससे पहले की विरासत सुविधाएँ और पैटर्न | आधुनिक PHP (8.2+) का उपयोग करें; पीएसआर मानकों का पालन करें |
 | **प्रदर्शन** | गैर-वेब कार्यों के लिए गो, रस्ट या जावा से धीमा | ओपीकैश का प्रयोग करें; एसिंक्स के लिए स्वूले पर विचार करें; PHP-FPM का उपयोग करें |
 | **गैर-वेब के लिए आदर्श नहीं** | सीएलआई, डेस्कटॉप, मोबाइल, डेटा विज्ञान - PHP की ताकत नहीं | गैर-वेब कार्य के लिए पायथन, गो या अन्य भाषाओं का उपयोग करें |
@@ -823,6 +828,332 @@ CMD ["php-fpm"]
 | वास्तविक समय अनुप्रयोग | PHP की ताकत नहीं | नोड.जेएस, जाओ |
 | डेटा साइंस/एमएल | पारिस्थितिकी तंत्र नहीं | पायथन, आर |
 | डेस्कटॉप/मोबाइल ऐप्स | अनुकूल नहीं | देशी भाषाओं का प्रयोग करें |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: PHP में`==`और`===`के बीच क्या अंतर है?
+**ए:**`==`ढीली तुलना है - यह तुलना करने से पहले प्रकार का ज़बरदस्ती करता है (`"0" == false``true`है)। `===`सख्त तुलना है - यह मूल्य और प्रकार दोनों की जांच करता है (`"0" === false``false`है)। हमेशा`===`का उपयोग करें जब तक कि आपको विशेष रूप से किसी प्रकार की जबरदस्ती की आवश्यकता न हो। यह PHP में बग के सबसे आम स्रोतों में से एक है।
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### Q2: PHP नेमस्पेस और ऑटोलोडिंग कैसे काम करते हैं?
+**ए:** नेमस्पेस वर्ग नाम टकराव को रोकते हैं। PSR-4 ऑटोलोडिंग नेमस्पेस संरचना को निर्देशिका संरचना में मैप करता है -`App\Controllers\UserController`मैप`src/Controllers/UserController.php`पर। संगीतकार`composer.json`के माध्यम से ऑटोलोडिंग को संभालता है। आधुनिक PHP में हमेशा नेमस्पेस और PSR-4 का उपयोग करें।
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### Q3: PHP 8 विशेषताएँ क्या हैं, और वे फ़्रेमवर्क से कैसे संबंधित हैं?
+**ए:** विशेषताएँ (PHP 8) कक्षाओं, विधियों, गुणों और मापदंडों के लिए संरचित मेटाडेटा एनोटेशन हैं। वे जावा एनोटेशन या C# विशेषताओं के PHP समकक्ष हैं। लारवेल और सिम्फनी जैसे फ्रेमवर्क रूटिंग, सत्यापन और निर्भरता इंजेक्शन के लिए बड़े पैमाने पर उनका उपयोग करते हैं।
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### Q4: मैं आधुनिक PHP में त्रुटियों को ठीक से कैसे संभालूं?
+**ए:** PHP में त्रुटियाँ (E_WARNING, E_NOTICE) और अपवाद दोनों हैं। आधुनिक PHP विशेष रूप से अपवादों का उपयोग करता है। अपेक्षित विफलताओं के लिए प्रयास/पकड़, डोमेन त्रुटियों के लिए कस्टम अपवाद वर्ग और त्रुटियों को अपवादों में बदलने के लिए`set_error_handler`का उपयोग करें। PHP 7+`Throwable`त्रुटियों और अपवादों दोनों के लिए आधार इंटरफ़ेस है।
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### Q5: PHP फाइबर क्या हैं, और वे async से कैसे संबंधित हैं?
+**ए:** फाइबर (पीएचपी 8.1) हल्के सहकारी धागे हैं - वे निष्पादन को निलंबित और फिर से शुरू कर सकते हैं। वे एसिंक PHP की नींव हैं लेकिन निम्न स्तर के हैं। Amp और ReactPHP जैसे फ्रेमवर्क आंतरिक रूप से फाइबर का उपयोग करते हैं। अधिकांश अनुप्रयोगों के लिए, कच्चे फाइबर के बजाय एसिंक फ्रेमवर्क का उपयोग करें।
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक मिडलवेयर पाइपलाइन बनाएँ
+**समस्या कथन:** एक PHP वेब फ्रेमवर्क के लिए एक मिडलवेयर पाइपलाइन लागू करें जहां प्रत्येक मिडलवेयर श्रृंखला में अगले मिडलवेयर से पहले और बाद में अनुरोध को संसाधित कर सकता है।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) एक`Middleware`इंटरफ़ेस, (2) एक पाइपलाइन जो मिडलवेयर को चेन करती है, (3) प्रत्येक मिडलवेयर को एक अनुरोध और एक`$next`कॉलबैक प्राप्त होता है, (4) मिडलवेयर अनुरोध (पहले) और प्रतिक्रिया (बाद) दोनों को संशोधित कर सकता है। यह लारवेल, पीएसआर-15 और इसी तरह के ढांचे द्वारा उपयोग किया जाने वाला प्याज मॉडल है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+-`process(Request, RequestHandler): Response`के साथ`MiddlewareInterface`को परिभाषित करें।
+- मिडलवेयर को एकल हैंडलर में संकलित करने के लिए ऐरे रिडक्शन का उपयोग करें।
+- प्रत्येक मिडलवेयर अगले को लपेटता है, नेस्टेड फ़ंक्शन कॉल बनाता है।
+**चरण 3 - समाधान लागू करें:**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- आदेश मायने रखता है: पहला पाइप = सबसे बाहरी (अनुरोध पर पहले निष्पादित, प्रतिक्रिया पर अंतिम)।
+- प्रत्येक मिडलवेयर`$next`को कॉल किए बिना प्रतिक्रिया लौटाकर शॉर्ट-सर्किट कर सकता है।
+- उत्पादन: किसी भी PSR-15 ढांचे के साथ अंतरसंचालनीयता के लिए PSR-15`MiddlewareInterface`का उपयोग करें।
+### समस्या 2: क्वेरी बिल्डर के साथ एक रिपोजिटरी लागू करें
+**समस्या कथन:** एक धाराप्रवाह क्वेरी बिल्डर बनाएं जो पैरामीटरयुक्त प्रश्नों के साथ सुरक्षित रूप से एसक्यूएल उत्पन्न करता है, चेनिंग का समर्थन करता है, और रिपॉजिटरी पैटर्न के साथ एकीकृत होता है।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) श्रृंखलाबद्ध तरीकों के साथ एक`QueryBuilder`वर्ग (
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- बिल्डर SQL टुकड़े और पैरामीटर जमा करता है।
+-`toSql()`प्लेसहोल्डर्स के साथ अंतिम क्वेरी उत्पन्न करता है।
+-`getParameters()`बाउंड मान लौटाता है।
+- रिपोजिटरी बिल्डर को डोमेन-विशिष्ट तरीकों से लपेटता है।
+**चरण 3 - समाधान लागू करें:**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- एसक्यूएल इंजेक्शन रोकथाम: सभी मान पैरामीटरयुक्त प्रश्नों (`?` प्लेसहोल्डर्स) से गुजरते हैं।
+- चेनएबल एपीआई: प्रत्येक विधि धाराप्रवाह रचना के लिए`$this`लौटाती है।
+- उत्पादन: व्यापक, परीक्षणित समाधान के लिए`illuminate/database`(लारवेल का क्वेरी बिल्डर) या`doctrine/dbal`का उपयोग करें।
 ---
 
 ## सारांश

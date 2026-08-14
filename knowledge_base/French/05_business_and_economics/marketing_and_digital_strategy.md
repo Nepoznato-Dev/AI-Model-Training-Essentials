@@ -1,41 +1,46 @@
 ---
-# Métadonnées
+# Metadata
 title: "Marketing and Digital Strategy"
-description : "4P, canaux numériques, SEO/SEM, analytique, stratégie de marque"
-catégorie : "Commerce et économie"
-version : "1.0.0"
-statut : "actif"
+description: "4Ps, digital channels, SEO/SEM, analytics, brand strategy"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances commerciales et économiques"
-next_review : "2027-08-05"
-#Classement
-tags : [marketing, numérique, stratégie, business et économie]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "9 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [marketing, digital, strategy, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Stratégie Marketing et Digitale
-Le marketing est la manière dont les entreprises créent, communiquent et offrent de la valeur aux clients. Il ne s'agit pas seulement de publicité : il s'agit de l'ensemble du système permettant de comprendre ce dont les gens ont besoin, de positionner un produit pour répondre à ce besoin et d'établir une relation qui transforme les acheteurs en défenseurs. La révolution numérique n’a pas changé les fondamentaux, mais elle a transformé les outils, les canaux et la vitesse à laquelle tout se passe.
+Le marketing est la manière dont les entreprises créent, communiquent et offrent de la valeur aux clients. Il englobe l'ensemble du système de compréhension des besoins des clients, de positionnement d'un produit pour répondre à ces besoins et d'établissement de relations qui convertissent les acheteurs en défenseurs. La révolution numérique a transformé les outils, les canaux et la rapidité du marketing, tandis que les fondamentaux restent cohérents.
 ---
 
 ## Fondamentaux du marketing
@@ -84,7 +89,7 @@ Le parcours d’étranger à client fidèle :
 | Concepts | Descriptif |
 |---------|-------------|
 | **PPC (Paiement par clic)** | Vous payez chaque fois que quelqu'un clique sur votre annonce |
-| **Niveau de qualité** | L'évaluation de Google concernant la pertinence de l'annonce, la page de destination et le CTR attendu — affecte le coût et la position |
+| **Niveau de qualité** | L'évaluation par Google de la pertinence de l'annonce, de la page de destination et du CTR attendu — affecte le coût et la position |
 | **Mots-clés à longue traîne** | Phrases plus longues et plus spécifiques avec moins de concurrence et une intention plus élevée |
 | **Mots clés à exclure** | Mots qui empêchent la diffusion de votre annonce (réduit les dépenses inutiles) |
 **Plateformes clés** : Google Ads, Microsoft Advertising (Bing).
@@ -155,7 +160,7 @@ Une marque n'est pas un logo. Une marque est la somme de toutes les interactions
 | **Objectif de la marque** | Pourquoi existez-vous au-delà de gagner de l’argent | Patagonie : « Nous sommes en affaires pour sauver la planète » |
 | **Valeurs de la marque** | Principes qui guident le comportement | Transparence, durabilité, innovation |
 | **Positionnement de la marque** | En quoi vous êtes différent et meilleur dans votre catégorie | "Le plus rapide", "le plus simple", "le plus fiable" |
-| **Voix de la marque** | Comment vous communiquez (ton, style, vocabulaire) | Nike : source d'inspiration ; Wendy's : pleine d'esprit et provocante |
+| **Voix de la marque** | Comment vous communiquez (ton, style, vocabulaire) | Nike : source d'inspiration ; Wendy's : pleine d'esprit et provocatrice |
 | **Identité visuelle** | Logo, couleurs, typographie, style d'imagerie | Coca-Cola rouge; Minimalisme Apple |
 ### Cadre d'analyse concurrentielle
 | Étape | Actions |
@@ -203,4 +208,4 @@ Le Growth Hacking est l'intersection du marketing, des produits et des données,
 ---
 
 ## Résumé
-Le marketing consiste essentiellement à comprendre les gens : ce dont ils ont besoin, ce qu’ils craignent, ce qui les motive à agir. La boîte à outils numérique a radicalement changé, mais les principes fondamentaux n'ont pas changé : connaître votre client, offrir une valeur réelle, communiquer clairement, tout mesurer et itérer. Le meilleur marketing ne ressemble pas à du marketing, mais plutôt à de l'aide.
+Le marketing consiste fondamentalement à comprendre les gens : leurs besoins, leurs préoccupations et leurs motivations. La boîte à outils numérique a considérablement évolué, mais les fondamentaux restent : comprendre le client, apporter de la valeur, communiquer efficacement, mesurer les résultats et itérer. Un marketing efficace s’aligne si étroitement sur les besoins des clients qu’il est vécu comme une aide plutôt que comme une promotion.

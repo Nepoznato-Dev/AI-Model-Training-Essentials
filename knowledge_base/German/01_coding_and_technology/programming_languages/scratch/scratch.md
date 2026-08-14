@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Kratzen
 Scratch ist eine visuelle, blockbasierte Programmiersprache, die vom MIT Media Lab entwickelt und erstmals 2007 veröffentlicht wurde. Anstatt textbasierten Code zu schreiben, fügen Benutzer farbige Blöcke zusammen, um Programme zu erstellen. Scratch wurde speziell für Kinder im Alter von 8 bis 16 Jahren entwickelt (obwohl es von Lernenden jeden Alters verwendet wird), um grundlegende Programmierkonzepte – Schleifen, Bedingungen, Variablen, Ereignisse und Funktionen – ohne die Hürde von Syntaxfehlern zu vermitteln.
 Scratch ist mit über 100 Millionen registrierten Benutzern und einer Verfügbarkeit in über 70 Sprachen die am weitesten verbreitete Einführungsprogrammiersprache der Welt. Es läuft in einem Webbrowser und ist kostenlos.
@@ -290,7 +291,7 @@ Scratch unterstützt offizielle und Community-Erweiterungen, die zusätzliche Fu
 | Erweiterung | Zweck |
 |-----------|---------|
 | **Stift** | Zeichnen Sie Linien und Formen auf der Bühne |
-| **Videoerkennung** | Webcam zur Bewegungserkennung nutzen |
+| **Videoerkennung** | Webcam zur Bewegungserkennung verwenden |
 | **Text-to-Speech** | Text in gesprochenes Audio umwandeln |
 | **Übersetzen** | Text zwischen Sprachen übersetzen |
 | **Makey Makey** | Physische Objekte als Eingabe verbinden |
@@ -675,6 +676,120 @@ Zu den typischen nächsten Schritten nach dem Erlernen von Scratch gehören:
 | Spielideen visuell prototypisieren | Schnelle Iteration | — |
 | Berufliche Entwicklung | Nicht dafür ausgelegt | Python, JavaScript, jede Textsprache |
 | CS-Ausbildung auf Universitätsniveau | Zu einfach | Python, Java, C |
+---
+
+## Synthetische Fragen und Antworten
+**F1: Ist Scratch wirklich eine Programmiersprache?**
+A1: Ja, Scratch ist eine echte Programmiersprache, aber sie ist eher visuell als textbasiert. Es unterstützt alle grundlegenden Programmierkonzepte: Variablen, Schleifen, Bedingungen, Funktionen (benutzerdefinierte Blöcke), Listen und ereignisgesteuerte Programmierung. Der Unterschied besteht darin, dass Sie Blöcke per Drag-and-Drop verschieben, anstatt Code einzugeben. Dies eliminiert Syntaxfehler und macht das Programmieren für junge Lernende zugänglich.
+**F2: Wie erstelle ich benutzerdefinierte Funktionen (benutzerdefinierte Blöcke) in Scratch?**
+A2: Gehen Sie zur Kategorie „Meine Blöcke“ und klicken Sie auf „Block erstellen“. Geben Sie ihm einen Namen, fügen Sie bei Bedarf Parameter hinzu und definieren Sie dann sein Verhalten, indem Sie darunter Blöcke hinzufügen. Benutzerdefinierte Blöcke können Eingaben (Zahlen, Zeichenfolgen, boolesche Werte) annehmen und andere benutzerdefinierte Blöcke aufrufen. Dies ermöglicht eine modulare Programmierung und Wiederverwendung von Code.
+**F3: Wie geht man in Scratch am besten mit komplexer Spiellogik um?**
+A3: Verwenden Sie benutzerdefinierte Blöcke, um die Logik zu organisieren, Nachrichten zur Ereigniskoordination zwischen Sprites zu senden und Listen zum Speichern des Spielstatus (Ergebnisse, Level, Inventar) zu verwenden. Für komplexe KI verwenden Sie Finite-State-Maschinen mit Variablen, die den aktuellen Zustand verfolgen. Klonen Sie Sprites für mehrere Feinde und verwenden Sie „Wenn ich als Klon anfange“, um jedem ein unabhängiges Verhalten zu verleihen.
+**F4: Wie kann ich Daten zwischen Sprites in Scratch teilen?**
+A4: Verwenden Sie globale Variablen (erstellt ohne „nur für dieses Sprite“) für gemeinsame Daten wie Punktestand oder Spielstatus. Verwenden Sie Broadcast-Nachrichten, um Sprite-übergreifende Ereignisse auszulösen. Für eine komplexere Kommunikation verwenden Sie Listen als gemeinsame Datenstrukturen. Jedes Sprite kann globale Variablen und Listen lesen und ändern und so die Koordination ermöglichen.
+**F5: Welche fortgeschrittenen Techniken gibt es in Scratch?**
+A5: Verwenden Sie Stiftblöcke zum Zeichnen und Erstellen visueller Effekte. Implementieren Sie Raycasting für 3D-ähnliche Grafiken. Verwenden Sie Cloud-Variablen für Multiplayer-Spiele (erfordert Scratcher-Status). Erstellen Sie eine prozedurale Generierung mit Zufallszahlen und Listen. Verwenden Sie benutzerdefinierte Blöcke mit Parametern für wiederverwendbare Algorithmen. Experimentieren Sie mit Videoerkennung und Tonmanipulation für interaktive Projekte.
+---
+
+## Gedankenkette
+### Problem 1: Erstellen eines Plattformspiels
+**Schritt 1: Verstehen Sie das Problem**
+Wir müssen einen Plattformer erstellen, in dem sich ein Charakter nach links/rechts bewegen, springen, Hindernissen ausweichen und Gegenstände sammeln kann.
+**Schritt 2: Identifizieren Sie den Ansatz**
+- Verwenden Sie die Schwerkraftsimulation mit einer „fallenden“ Variablen
+- Erkennen Sie Boden/Kollision mithilfe von Farb- oder Sprite-Berührungen
+- Ebenendaten in Listen speichern
+- Verwenden Sie benutzerdefinierte Blöcke für Sprung- und Bewegungslogik
+**Schritt 3: Implementieren Sie die Lösung**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**Schritt 4: Überprüfen und optimieren**
+Testspringen auf verschiedenen Plattformen. Passen Sie die Schwerkraft und die Sprunghöhe an, um ein gutes Spielgefühl zu erzielen. Fügen Sie Animationen zum Laufen und Springen hinzu. Implementieren Sie Prüfpunkte mithilfe von Broadcast-Nachrichten.
+---
+
+### Problem 2: Erstellen eines Quizspiels mit Punkteverfolgung
+**Schritt 1: Verstehen Sie das Problem**
+Erstellen Sie ein Quizspiel, das Fragen stellt, Antworten überprüft und die Punktzahl des Spielers verfolgt.
+**Schritt 2: Identifizieren Sie den Ansatz**
+- Speichern Sie Fragen und Antworten in parallelen Listen
+- Verwenden Sie einen Fragenzähler, um den Fortschritt zu verfolgen
+- Verwenden Sie „Ask and Wait“-Blöcke für die Eingabe
+- Vergleichen Sie die Antworten und aktualisieren Sie die Punktzahl
+**Schritt 3: Implementieren Sie die Lösung**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**Schritt 4: Überprüfen und optimieren**
+Testen Sie mit verschiedenen Antworten, einschließlich Randfällen. Fügen Sie Feedback für falsche Antworten hinzu. Implementieren Sie eine Wiederholungsoption. Fügen Sie Soundeffekte und visuelles Feedback für richtige/falsche Antworten hinzu.
+---
+
+### Aufgabe 3: Fraktale Bäume mit dem Stift zeichnen
+**Schritt 1: Verstehen Sie das Problem**
+Erstellen Sie mit der Stifterweiterung einen rekursiven Fraktalbaum.
+**Schritt 2: Identifizieren Sie den Ansatz**
+- Verwenden Sie Rekursion, um Zweige zu zeichnen
+- Jeder Zweig teilt sich in zwei kleinere Zweige
+- Verwenden Sie zufällige Winkel für natürliche Variationen
+- Verfolgen Sie die Verzweigungslänge und verringern Sie sie mit jeder Rekursionsebene
+**Schritt 3: Implementieren Sie die Lösung**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**Schritt 4: Überprüfen und optimieren**
+Passen Sie die Astlängenschwellenwerte und Winkelbereiche an, um ästhetische Bäume zu erhalten. Fügen Sie durch Farbwechsel Blätter an den Zweigspitzen hinzu. Implementieren Sie verschiedene Baumstile. Speichern Sie Zeichnungen als Bilder.
 ---
 
 ## Zusammenfassung

@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Ética y privacidad de los datos"
-descripción: "GDPR, consentimiento de datos, sesgo algorítmico, patrones oscuros, anonimización"
-categoría: "Ciencia y análisis de datos"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Data Ethics and Privacy"
+description: "GDPR, data consent, algorithmic bias, dark patterns, anonymisation"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de análisis y ciencia de datos"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [datos, ética, privacidad, ciencia-y-análisis-de-datos]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "6 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [data, ethics, privacy, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Ética y privacidad de los datos
 La ética de los datos es el estudio de cómo la recopilación, el análisis y la implementación de datos afectan los derechos, la autonomía y el bienestar de las personas. La privacidad es la preocupación específica sobre quién controla la información personal y cómo se comparte. Estos temas han pasado de los debates académicos a las noticias de primera plana: la aplicación del RGPD, las violaciones de datos que afectan a miles de millones de usuarios y la creciente conciencia pública de que las prácticas de datos de las empresas de tecnología tienen consecuencias reales para la democracia, la igualdad y la libertad individual.

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # С#
 C# (произносится как «C-sharp») — это современный объектно-ориентированный типобезопасный язык программирования, разработанный Microsoft под руководством Андерса Хейлсберга и впервые выпущенный в 2002 году. Он работает на платформе .NET и был разработан для объединения возможностей C++ с производительностью Visual Basic. Сегодня C# — это универсальный кроссплатформенный язык, используемый для веб-приложений (ASP.NET), настольного программного обеспечения (Windows), разработки игр (Unity), мобильных приложений (MAUI), облачных сервисов (Azure) и многого другого.
 C# постепенно вобрал в себя лучшие идеи других языков — LINQ, async/await, записей, сопоставления с образцом — что сделало его одним из наиболее многофункциональных и удобных для разработчиков языков.
@@ -56,7 +57,7 @@ C# постепенно вобрал в себя лучшие идеи друг�
 | **Ассоциация Windows** | Исторически привязан к Windows; восприятие отстает от реальности | .NET 6+ полностью кроссплатформен |
 | **Экосистема меньше, чем у Java** | Меньше сторонних библиотек, чем в Maven/PyPI | NuGet растет; многие библиотеки Java имеют эквиваленты на C# |
 | **Реже встречается в стартапах** | Более популярен среди предприятий, чем в Кремниевой долине | Go, Rust, Node.js для облачных микросервисов |
-| **Мобильный (MAUI)** | Xamarin/MAUI менее зрелый, чем нативный или Flutter | Используйте собственный Swift/Kotlin или Flutter для сложных мобильных приложений |
+| **Мобильный (MAUI)** | Xamarin/MAUI менее зрелый, чем нативный или Flutter | Используйте родной Swift/Kotlin или Flutter для сложных мобильных приложений |
 | **Графический интерфейс Linux** | Ограниченные возможности встроенного графического интерфейса в Linux | Используйте веб-интерфейсы (Blazor) или Avalonia |
 ---
 
@@ -686,10 +687,10 @@ dotnet publish -c Release -r linux-x64
 | С#7 | 2017 | Сопоставление с образцом, кортежи, переменные `out`, локальные функции |
 | С# 8 | 2019 | Ссылочные типы, допускающие значение NULL, выражения `switch`, асинхронные потоки |
 | С#9 | 2020 | **Записи**, операторы верхнего уровня, свойства`init`|
-| С# 10 | 2021 | Структуры записей, глобальные`using`, пространства имен файлов |
-| С# 11 | 2022 | Необработанные строковые литералы, шаблоны списков, члены `required`, общие математические операции |
+| С# 10 | 2021 | Структуры записи, глобальные `using`, пространства имен в области файлов |
+| С# 11 | 2022 | Необработанные строковые литералы, шаблоны списков, члены `required`, общие математические вычисления |
 | С# 12 | 2023 | Первичные конструкторы, выражения коллекций, встроенные массивы |
-| С# 13 | 2024 | `params`коллекции, новые типы замков, первоклассные пролеты |
+| С# 13 | 2024 |  Коллекции `params`, новые типы замков, первоклассные пролеты |
 ---
 
 ## Когда использовать C#
@@ -704,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | Мобильные приложения (MAUI) | Кроссплатформенность с C# | Flutter, React Native или нативный Swift/Kotlin |
 | ИИ/МО | Возможно с ML.NET | Python (в подавляющем большинстве предпочтительнее) |
 | Инструменты/скрипты CLI | Возможно, но многословно | Вперёд, Rust, Python |
+---
+
+## Синтетические вопросы и ответы
+### Вопрос 1. В чем разница между`class`и`record`в C#?
+**A:**`class`— это ссылочный тип с изменяемыми свойствами по умолчанию — две переменные могут ссылаться на один и тот же объект.`record`(C# 9+) — это ссылочный тип с равенством на основе значений — две записи с одинаковыми данными считаются равными. Записи имеют свойства только для инициализации, встроенный`ToString`и поддерживают выражения`with`для неразрушающей мутации. Использовать записи для носителей данных (DTO, объекты-значения); используйте классы для сущностей с богатым поведением и индивидуальностью.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Вопрос 2: Как работают async/await и `Task`?
+**A:**`async/await`— это синтаксический сахар над конечным автоматом, созданным компилятором. Когда вы`await`a`Task`, метод разделяется в точке ожидания: все, что было раньше, выполняется синхронно, затем остаток регистрируется как продолжение. Поток освобождается для выполнения другой работы. `Task<T>`представляет собой будущую стоимость. `ValueTask<T>`— это альтернатива структуры для горячих путей, которая позволяет избежать выделения кучи, когда результат уже доступен.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### В3: Что такое методы расширения и когда их следует использовать?
+**О:** Методы расширения добавляют методы к существующим типам, не изменяя их. Это статические методы статического класса с ключевым словом`this`в первом параметре. Они обеспечивают плавный, цепной API. Используйте их для добавления служебных методов к типам, которыми вы не владеете (например,`string`или `IEnumerable<T>`). Не злоупотребляйте ими — они могут затруднить обнаружение кода.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Вопрос 4. Как сопоставление с образцом работает в современном C#?
+**A:** В C# постепенно стали добавляться более мощные возможности сопоставления с образцом. Выражения переключения (C# 8), шаблоны типов, шаблоны свойств, реляционные шаблоны и шаблоны списков (C# 11) обеспечивают краткую и выразительную условную логику. Сопоставление с образцом заменяет длинные цепочки if/else и полностью проверяется компилятором.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### Вопрос 5. Что такое внедрение зависимостей в .NET и как его использовать?
+**A:** .NET имеет встроенную поддержку DI через `Microsoft.Extensions.DependencyInjection`. Вы регистрируете сервисы с указанием их времени жизни (Singleton, Scoped, Transient), а контейнер внедряет их через параметры конструктора. Синглтон: один экземпляр для приложения. Область действия: один на каждый HTTP-запрос. Переходный: каждый раз новый экземпляр.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Создайте универсальный репозиторий с кэшированием
+**Постановка задачи.** Реализуйте общий шаблон репозитория с помощью декоратора, добавляющего кеширование. Репозиторий должен поддерживать операции CRUD, а декоратор кэширования должен кэшировать операции чтения и делать недействительными операции записи.
+**Шаг 1. Поймите проблему:**
+Нам нужны: (1) общий интерфейс `IRepository<T>`, (2) конкретная реализация (например, в памяти), (3) декоратор кэширования, который обертывает любой репозиторий, (4) аннулирование кэша при операциях записи. Шаблон декоратора сохраняет кэширование ортогональным логике доступа к данным.
+**Шаг 2. Определите подход:**
+- Определите`IRepository<T>`с помощью `Get`, `GetAll`, `Add`, `Update`, `Delete`.
+— Создайте `CachingRepository<T>`, который обертывает`IRepository<T>`и использует `IMemoryCache`.
+- Ключ кэша: `typeof(T).Name:{id}`.
+- При операциях записи сделать недействительной запись в кэше.
+**Шаг 3. Реализация решения:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**Шаг 4. Проверка и оптимизация:**
+— Разделение задач: кеширование — это декоратор, не подмешанный к репозиторию.
+- Регистрация DI:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(с помощью Scrutor).
+- Производство: используйте`IDistributedCache`(Redis) для сценариев с несколькими серверами и добавляйте шаблоны кэширования с защитой `CacheStampede`.
+### Проблема 2: реализация конвейера промежуточного программного обеспечения
+**Постановка задачи.** Создайте конвейер промежуточного программного обеспечения, аналогичный конвейеру запросов ASP.NET Core. Каждое промежуточное программное обеспечение может обрабатывать запрос, вызывать следующее промежуточное программное обеспечение и обрабатывать ответ.
+**Шаг 1. Поймите проблему:**
+Нам нужны: (1) тип `RequestDelegate`, представляющий конвейер, (2) промежуточное программное обеспечение, которое обертывает следующего делегата, (3) API-интерфейс компоновщика для создания промежуточного программного обеспечения. Это шаблон цепочки ответственности, реализованный с помощью делегатов.
+**Шаг 2. Определите подход:**
+-`RequestDelegate`— это `Func<Context, RequestDelegate, Task>`.
+- Каждое промежуточное программное обеспечение получает контекст и функцию `next`.
+-`Use`добавляет промежуточное программное обеспечение; `Build`объединяет их в один делегат.
+**Шаг 3. Реализация решения:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Порядок промежуточного программного обеспечения имеет значение: первое добавленное = самое внешнее (выполняется первым по запросу, последним по ответу).
+- Промежуточное ПО терминала (без вызова `next`) закорачивает конвейер.
+- Производство: конвейер ASP.NET Core представляет собой именно этот шаблон, оптимизированный с помощью скомпилированных деревьев выражений для нулевого распределения.
 ---
 
 ## Краткое содержание

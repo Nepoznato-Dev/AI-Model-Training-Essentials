@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
 SQL(Structured Query Language)은 관계형 데이터베이스의 데이터를 관리하고 쿼리하기 위해 설계된 도메인별 언어입니다. 1970년대 IBM에서 처음 개발되어 1987년에 표준화된 SQL은 여전히 ​​애플리케이션과 해당 데이터 간의 기본 인터페이스로 남아 있습니다. PostgreSQL, MySQL, SQL Server, Oracle, SQLite 등 모든 주요 관계형 데이터베이스 관리 시스템(RDBMS)은 SQL을 쿼리 언어로 사용합니다.
-SQL은 범용 프로그래밍 언어가 아닙니다. SQL로 웹 애플리케이션을 작성하지 않을 것입니다. 그러나 애플리케이션이 데이터를 저장하고 거의 모든 애플리케이션이 데이터를 저장하는 경우 SQL은 해당 데이터를 검색, 변환 및 관리하는 데 사용하는 언어입니다. 이는 틀림없이 일반 프로그래밍 다음으로 가장 보편적으로 유용한 기술입니다.
+SQL은 범용 프로그래밍 언어가 아닙니다. SQL로 웹 애플리케이션을 작성하지 않을 것입니다. 그러나 애플리케이션이 데이터를 저장하고 거의 모든 애플리케이션이 데이터를 저장한다면 SQL은 해당 데이터를 검색, 변환 및 관리하는 데 사용하는 언어입니다. 이는 틀림없이 일반 프로그래밍 다음으로 가장 보편적으로 유용한 기술입니다.
 ---
 
 ## SQL이 중요한 이유
@@ -539,10 +540,10 @@ CREATE INDEX idx_users_email ON users(email);
 
 | 지수 유형 | 최고의 대상 | 예 |
 |------------|----------|---------|
-| **B-트리**(기본값) | 같음 및 범위 쿼리 |  __보호됨_0__ |
-| **해시** | 정확한 평등만 |  __보호됨_1__ |
-| **진** | 전체 텍스트 검색, 배열, JSON |  __보호됨_2__ |
-| **지스트** | 기하학적/공간 데이터 |  __보호됨_3__ |
+| **B-트리**(기본값) | 같음 및 범위 쿼리 | `WHERE age > 25 AND age < 35`|
+| **해시** | 정확한 평등만 | `WHERE email = 'x@y.com'`|
+| **진** | 전체 텍스트 검색, 배열, JSON | `WHERE description @@ 'search term'`|
+| **지스트** | 기하학적/공간 데이터 | `WHERE location <-> point(x,y) < 1000`|
 ### 쿼리 계획 읽기
 ```sql
 -- PostgreSQL: see how the database plans to execute your query
@@ -560,11 +561,11 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 ## SQL 방언
 | 기능 | 포스트그레SQL | MySQL | SQL 서버 | SQLite |
 |---------|------------|-------|------------|-------|
-| 자동 증가 |  __보호_0__ / __보호_1__ |  __보호됨_2__ |  __보호됨_3__ |  __보호됨_4__ |
-| 문자열 연결 |  __보호됨_5__ |  __보호_6__ | `+`또는`CONCAT()`|  __보호_9__ |
-| 날짜 기능 |  __보호_10__ , __보호_11__ |  __보호_12__ , __보호_13__ |  __보호_14__ , __보호_15__ |  __보호됨_16__ |
-| JSON 지원 | 훌륭함(`jsonb`) | 양호(`JSON`) | 양호(`JSON`) | 기본(`JSON1`) |
-| 전체 텍스트 검색 | 내장(`tsvector`) | 내장 | 내장 | 한정 |
+| 자동 증가 | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`| `IDENTITY`| `INTEGER PRIMARY KEY AUTOINCREMENT`|
+| 문자열 연결 | `\|\|`| `CONCAT()`| `+`또는`CONCAT()`| `\|\|`|
+| 날짜 기능 | `NOW()`,`AGE()`| `NOW()`,`DATEDIFF()`| `GETDATE()`,`DATEDIFF()`| `DATE('now')`|
+| JSON 지원 | 우수 (`jsonb`) | 양호 (`JSON`) | 양호 (`JSON`) | 기본(`JSON1`) |
+| 전체 텍스트 검색 | 내장 (`tsvector`) | 내장 | 내장 | 한정 |
 | 창 기능 | 예 | 예(8.0+) | 예 | 예 |
 ---
 
@@ -601,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | 간단한 키-값 저장 | 이 사용 사례에 대한 과잉 | Redis, DynamoDB |
 | 고도로 구조화되지 않은 데이터 | 스키마 강성이 문제입니다 | MongoDB, 문서 데이터베이스 |
 | 대규모 수평 확장 | SQL 데이터베이스를 샤딩하기 어려움 | 카산드라, DynamoDB, CockroachDB |
+---
+
+## 종합 Q&A
+### Q1: `WHERE`와 `HAVING`의 차이점은 무엇인가요?
+**A:** `WHERE`는 그룹화하기 전에 행을 필터링합니다.  `HAVING`는 집계 후 그룹을 필터링합니다.
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: 창 기능은 GROUP BY와 어떻게 다릅니까?
+**A:** 창 함수는 행을 축소하지 않고 행 전체를 계산합니다.
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3: 느린 쿼리를 어떻게 최적화합니까?
+**답:** 주요 전략:
+-`WHERE`,`JOIN`및`ORDER BY`에서 사용되는 열에 인덱스를 추가합니다. 
+-`SELECT *`피하기 — 필요한 열만 선택
+-`EXPLAIN`/ `EXPLAIN ANALYZE`를 사용하여 쿼리 계획 읽기
+- 가능한 경우 하위 쿼리를 JOIN으로 대체합니다.
+- 가독성을 위해 CTE를 사용합니다(일반적으로 성능 저하 없음).
+- WHERE의 인덱스 열에 대한 함수 방지: `WHERE YEAR(date) = 2024`가 아닌 `WHERE date >= '2024-01-01'`를 사용하세요.
+### Q4: CTE란 무엇이며 언제 사용해야 합니까?
+**A:** 공통 테이블 표현식은 명명된 임시 결과 세트를 생성합니다.
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5: NULL 값을 올바르게 처리하려면 어떻게 해야 합니까?
+**A:** NULL은 알 수 없음을 나타냅니다. 자신을 포함하여 어떤 것과도 동일하지 않습니다.
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 그룹당 상위 N개 찾기
+**1단계: 문제 이해**
+각 부서에서 가장 높은 급여를 받는 직원 3명을 찾아보세요.
+**2단계: 접근 방식 파악**
+부서별로 분할된 `ROW_NUMBER()`를 사용하여 윈도우 기능을 사용합니다.
+**3단계: 구현**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**4단계: 확인**
+각 부서에 최대 3개의 행이 있는지 확인하세요. 필요한 경우 `DENSE_RANK()`를 사용하여 연결을 처리합니다.
+### 문제 2: 전년 대비 성장 보고서 작성
+**1단계: 문제 이해**
+월별 수익과 전년 대비 성장률을 계산합니다.
+**2단계: 접근 방식 파악**
+그룹화에는 `DATE_TRUNC`를 사용하고 전년도 비교에는`LAG()`창 기능을 사용합니다.
+**3단계: 구현**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**4단계: 확인**
+처음 12개월에 이전 연도에 대한 NULL이 있는지 확인하세요. 알려진 수치와 비교하여 성장률을 검증합니다.
+### 문제 3: 행을 열로 피벗
+**1단계: 문제 이해**
+변환 상태는 행에서 열로 계산됩니다.
+**2단계: 접근 방식 파악**
+조건부 집계(`SUM`내부`CASE`)를 사용합니다.
+**3단계: 구현**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**4단계: 확장**
+백분율 열과 누계를 추가합니다.
 ---
 
 ## 요약

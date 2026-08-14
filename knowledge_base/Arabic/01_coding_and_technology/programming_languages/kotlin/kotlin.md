@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "كوتلين"
-الوصف: "مرجع شامل للغة برمجة Kotlin يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Kotlin"
+description: "Comprehensive reference for the Kotlin programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [kotlin، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "48 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [kotlin, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "48 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #كوتلين
 Kotlin هي لغة برمجة مجمعة ومكتوبة بشكل ثابت تم تطويرها بواسطة JetBrains وتم إصدارها لأول مرة في عام 2011 (1.0 في عام 2016). إنه يعمل على Java Virtual Machine (JVM) وهو قابل للتشغيل بشكل كامل مع Java - مما يعني أنه يمكنك استخدام أي مكتبة Java من Kotlin واستدعاء كود Kotlin من Java دون أي أغلفة. في عام 2017، أعلنت جوجل أن Kotlin هي اللغة المفضلة لتطوير Android، ومنذ ذلك الحين أصبحت لغة Android المهيمنة.
 تم تصميم Kotlin لإصلاح نقاط الضعف في Java: الإسهاب، واستثناءات المؤشر الفارغ، والميزات الحديثة المفقودة. والنتيجة هي لغة تبدو وكأنها لغة Java حديثة - مختصرة وآمنة ومعبرة - مع الحفاظ على التوافق الكامل مع نظام Java البيئي الضخم.
@@ -46,7 +51,7 @@ Kotlin هي لغة برمجة مجمعة ومكتوبة بشكل ثابت تم �
 - **موجز**: نموذج أقل بكثير من Java — فئات البيانات، ووظائف الامتداد، والقوالب الذكية.
 - **Coroutines**: سلاسل رسائل خفيفة الوزن للبرمجة غير المتزامنة - أبسط من CompletableFuture أو عمليات الاسترجاعات في Java.
 - **متعدد المنصات**: يتيح لك Kotlin Multiplatform مشاركة التعليمات البرمجية بين Android وiOS والويب والواجهة الخلفية.
-- **جانب الخادم**: Ktor، وSpring Boot (دعم Kotlin الكامل)، وExposed يجعل Kotlin قابلاً للاستخدام في الواجهات الخلفية.
+- **جانب الخادم**: Ktor، وSpring Boot (دعم كامل لـ Kotlin)، وExposed يجعل Kotlin قابلاً للاستخدام في الواجهات الخلفية.
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|
@@ -1154,7 +1159,7 @@ kotlin {
 ### أدوات البناء
 | أداة | الغرض |
 |------|---------|
-| ** جرادل (Kotlin DSL) ** | نظام البناء — Kotlin هي لغة البناء النصية المفضلة |
+| ** جرادل (Kotlin DSL) ** | نظام البناء - Kotlin هي لغة البناء النصية المفضلة |
 | ** فكرة IntelliJ ** | IDE من JetBrains — أفضل دعم لـ Kotlin |
 ---
 
@@ -1169,6 +1174,409 @@ kotlin {
 | برمجة أنظمة غير JVM | ليس الهدف الأساسي | الصدأ، اذهب، C |
 | الواجهة الأمامية للويب | Kotlin/JS موجود ولكنه محدود | تايب سكريبت، جافا سكريبت |
 | علم البيانات / تعلم الآلة | ليس النظام البيئي | بايثون، ر |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: كيف تعمل ميزات الأمان الفارغة في Kotlin فعليًا؟
+**أ:** يميز Kotlin بين الأنواع الخالية (`String?`) والأنواع غير القابلة للإلغاء (`String`) في وقت الترجمة. يمنعك المترجم من استدعاء الأساليب على الأنواع الخالية بدون عمليات التحقق من القيمة الفارغة. توفر المكالمات الآمنة (`?.`) وعامل Elvis (`?:`) والتأكيد غير الصفري (`!!`) استراتيجيات مختلفة. تعمل عمليات الإرسال الذكية على تضييق الأنواع تلقائيًا بعد عمليات التحقق من القيمة الفارغة.
+```kotlin
+var name: String? = null
+
+// Safe call — returns null if name is null
+val length: Int? = name?.length
+
+// Elvis operator — provide default
+val display: String = name ?: "Anonymous"
+
+// Smart cast — compiler narrows type after check
+fun process(user: String?) {
+    if (user != null) {
+        println(user.length)  // Smart cast to String (non-null)
+    }
+}
+
+// let with safe call
+name?.let {
+    println("Name is $it")  // Only runs if name is not null
+}
+
+// Non-null assertion — crashes if null (avoid in production)
+val forced: String = name!!  // Throws NullPointerException if null
+```
+
+### س2: ما هي الكوروتينات وبماذا تختلف عن الخيوط؟
+**أ:** Coroutines عبارة عن مهام تعاونية خفيفة الوزن تعمل على سلاسل الرسائل. يمكنهم تعليق التنفيذ (دون حظر الخيط) واستئنافه لاحقًا. يمكن تشغيل الملايين من coroutines على عدد قليل من المواضيع.  لا يمكن استدعاء وظائف`suspend`إلا من coroutines أو وظائف الإيقاف المرحلي الأخرى. تتحكم نطاقات Coroutine في دورة الحياة - عندما يتم إلغاء نطاق ما، يتم إلغاء جميع نطاقات Coroutine الخاصة به.
+```kotlin
+import kotlinx.coroutines.*
+
+// Basic coroutine
+CoroutineScope(Dispatchers.Main).launch {
+    val user = withContext(Dispatchers.IO) {
+        fetchUserFromNetwork()  // Suspends, doesn't block
+    }
+    textView.text = user.name   // Back on Main thread
+}
+
+// Concurrent execution
+suspend fun loadDashboard(): Dashboard {
+    coroutineScope {
+        val userDeferred = async { fetchUser() }
+        val postsDeferred = async { fetchPosts() }
+        val user = userDeferred.await()
+        val posts = postsDeferred.await()
+        Dashboard(user, posts)
+    }
+}
+
+// Flow — cold async stream
+fun observePrices(): Flow<Double> = flow {
+    while (true) {
+        emit(fetchCurrentPrice())
+        delay(1000)
+    }
+}
+
+// Collect flow
+lifecycleScope.launch {
+    observePrices()
+        .filter { it > 100.0 }
+        .collect { price -> updateUI(price) }
+}
+```
+
+### س3: ما هي فئات البيانات، والفئات المختومة، وفئات القيمة؟
+**أ:** تقوم فئات البيانات بإنشاء وظائف`equals`و`hashCode`و`toString`و`copy`و`componentN`تلقائيًا - وهي مثالية لحاملي البيانات. تقيد الفئات المختومة الوراثة - يجب أن تكون جميع الفئات الفرعية في نفس الملف - مما يتيح تعبيرات`when`الشاملة. تقوم فئات القيمة بتغليف قيمة واحدة مع صفر حمل في وقت التشغيل (فئة مضمنة).
+```kotlin
+// Data class — auto-generates equals/hashCode/toString/copy
+data class User(val name: String, val email: String, val age: Int)
+
+val alice = User("Alice", "alice@example.com", 30)
+val bob = alice.copy(name = "Bob")
+val (name, email, age) = alice  // Destructuring
+
+// Sealed class — exhaustive when
+sealed class Result<out T> {
+    data class Success<T>(val data: T) : Result<T>()
+    data class Error(val exception: Throwable) : Result<Nothing>()
+    data object Loading : Result<Nothing>()
+}
+
+fun handle(result: Result<User>) = when (result) {
+    is Result.Success -> showUser(result.data)
+    is Result.Error -> showError(result.exception)
+    is Result.Loading -> showSpinner()
+    // No 'else' needed — compiler knows all cases are covered
+}
+
+// Value class — zero-overhead wrapper
+@JvmInline
+value class UserId(val value: String)
+fun getUser(id: UserId) { /* ... */ }
+// At runtime, UserId is just a String — no object allocation
+```
+
+### س4: كيف تعمل الوظائف الملحقة وما هي حدودها؟
+**أ:** تضيف وظائف الامتداد طرقًا إلى الأنواع الموجودة دون وراثة أو تعديل. ويتم حلها بشكل ثابت (استنادًا إلى النوع المعلن، وليس نوع وقت التشغيل). لا يمكنهم الوصول إلى الأعضاء الخاصين. تعمل خصائص الامتداد بالمثل. يتم استخدامها على نطاق واسع في مكتبة Kotlin القياسية وفي تطوير Android.
+```kotlin
+// Extension function
+fun String.isEmail(): Boolean = contains("@") && contains(".")
+fun Int.toOrdinal(): String = "${this}${when (this % 10) {
+    1 -> "st"; 2 -> "nd"; 3 -> "rd"; else -> "th"
+}}"
+
+// Extension with receiver
+fun <T> List<T>.secondOrNull(): T? = if (size >= 2) this[1] else null
+
+// Extension property
+val String.wordCount: Int get() = split("\\s+".toRegex()).size
+
+// Scoped extensions
+class Database {
+    fun query(sql: String): List<Row> = TODO()
+}
+
+fun Database.users() = query("SELECT * FROM users")
+
+// Usage
+"test@example.com".isEmail()  // true
+42.toOrdinal()                // "42nd"
+"hello world foo".wordCount   // 3
+```
+
+### س5: ما هو نظام Kotlin المتعدد ومتى يجب استخدامه؟
+**ج:** يتيح لك Kotlin Multiplatform (KMP) مشاركة التعليمات البرمجية بين الأنظمة الأساسية (Android وiOS والويب وسطح المكتب والخادم) مع الحفاظ على واجهة المستخدم الخاصة بالنظام الأساسي. يمكن مشاركة منطق الأعمال والشبكات وطبقات البيانات؛ تظل واجهة المستخدم أصلية. استخدمه عندما يكون لديك فريق يعرف لغة Kotlin ويريد زيادة مشاركة التعليمات البرمجية إلى الحد الأقصى دون الانتقال إلى نظام أساسي كامل (مثل Flutter).
+```kotlin
+// commonMain — shared code
+expect class Platform() {
+    val name: String
+}
+
+// androidMain
+actual class Platform {
+    actual val name = "Android ${Build.VERSION.SDK_INT}"
+}
+
+// iosMain
+actual class Platform {
+    actual val name = UIDevice.currentDevice.systemName()
+}
+
+// Shared networking
+interface ApiClient {
+    suspend fun getUsers(): List<User>
+}
+
+class ApiClientImpl(private val httpClient: HttpClient) : ApiClient {
+    override suspend fun getUsers(): List<User> {
+        return httpClient.get("/api/users").body()
+    }
+}
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: إنشاء خط DSL آمن للنوع
+**بيان المشكلة:** قم بإنشاء Kotlin DSL لإنشاء مستندات HTML مع أمان وقت الترجمة. يجب أن يفرض DSL بنية HTML صالحة (على سبيل المثال،`<head>`فقط داخل`<html>`أو`<li>`فقط داخل`<ul>`أو `<ol>`).
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) وظائف الإنشاء باستخدام`@DslMarker`لمنع تسرب النطاق، (2) بناء جملة DSL المستند إلى جهاز الاستقبال، (3) فرض وقت الترجمة للتداخل الصالح. تم تصميم منشئي Kotlin الآمنين والتعليق التوضيحي`@DslMarker`لهذا الغرض.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم`@DslMarker`لإنشاء تعليق توضيحي للتحكم في النطاق.
+- كل عنصر HTML عبارة عن فئة تحتوي على أساليب إنشاء لعناصرها الصالحة.
+- يمنع`@HtmlTagMarker`الوصول إلى أساليب النطاق الأصلي داخل النطاق الفرعي.
+- استخدم عامل التشغيل`invoke`لبناء الجملة النظيف.
+**الخطوة 3 — تنفيذ الحل:**
+```kotlin
+@DslMarker
+annotation class HtmlTagMarker
+
+@HtmlTagMarker
+class HTML {
+    private val children = mutableListOf<String>()
+
+    fun head(init: HEAD.() -> Unit) {
+        val head = HEAD().apply(init)
+        children.add(head.render())
+    }
+
+    fun body(init: BODY.() -> Unit) {
+        val body = BODY().apply(init)
+        children.add(body.render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<html>")
+        children.forEach { appendLine("  $it") }
+        appendLine("</html>")
+    }
+}
+
+@HtmlTagMarker
+class HEAD {
+    private val children = mutableListOf<String>()
+
+    fun title(text: String) { children.add("<title>$text</title>") }
+    fun meta(name: String, content: String) {
+        children.add("<meta name=\"$name\" content=\"$content\">")
+    }
+
+    fun render(): String = buildString {
+        appendLine("<head>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</head>")
+    }
+}
+
+@HtmlTagMarker
+class BODY {
+    private val children = mutableListOf<String>()
+
+    fun h1(text: String) { children.add("<h1>$text</h1>") }
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun div(init: DIV.() -> Unit) {
+        children.add(DIV().apply(init).render())
+    }
+    fun ul(init: UL.() -> Unit) {
+        children.add(UL().apply(init).render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<body>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</body>")
+    }
+}
+
+@HtmlTagMarker
+class DIV {
+    private val children = mutableListOf<String>()
+    var cssClass: String = ""
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun render(): String {
+        val cls = if (cssClass.isNotEmpty()) " class=\"$cssClass\"" else ""
+        return "<div$cls>${children.joinToString("")}</div>"
+    }
+}
+
+@HtmlTagMarker
+class UL {
+    private val items = mutableListOf<String>()
+    fun li(text: String) { items.add("<li>$text</li>") }
+    fun render(): String = "<ul>${items.joinToString("")}</ul>"
+}
+
+fun html(init: HTML.() -> Unit): String = HTML().apply(init).render()
+
+// Usage — compile-time safe
+val page = html {
+    head {
+        title("My Page")
+        meta("viewport", "width=device-width")
+    }
+    body {
+        h1("Welcome")
+        p("This is a type-safe HTML builder.")
+        div {
+            cssClass = "container"
+            p("Inside a div")
+        }
+        ul {
+            li("Item 1")
+            li("Item 2")
+            li("Item 3")
+        }
+    }
+}
+// title() is NOT accessible inside body {} — prevented by @DslMarker
+// li() is NOT accessible inside body {} — only inside ul {}
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- أمان النوع: يمنع`@DslMarker`تسرب النطاق — لا يمكن الوصول إلى`title()`داخل`body {}`.
+- يفرض المترجم تداخلًا صالحًا في وقت الترجمة - ولا يلزم إجراء فحوصات وقت التشغيل.
+- القابلية للتوسعة: إضافة عناصر جديدة عن طريق إنشاء فئات باستخدام الأساليب الفرعية المناسبة.
+- الإنتاج: استخدم`kotlinx.html`للحصول على HTML DSL شامل ومختبر جيدًا.
+### المشكلة الثانية: تنفيذ آلة الحالة باستخدام Coroutines
+**بيان المشكلة:** قم ببناء آلة حالة قائمة على coroutine لشخصية اللعبة التي تعالج أحداث الإدخال، والانتقالات بين الحالات، وتدعم عمليات الاسترجاعات المتحركة.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) حالات تحتوي على إجراءات دخول/خروج، (2) انتقالات تعتمد على الأحداث، (3) حلقة معالجة قائمة على coroutine، (4) عمليات رد اتصال للرسوم المتحركة على انتقالات الحالة. تعمل آلة الحالة كأحداث مستهلكة طويلة الأمد من القناة.
+**الخطوة الثانية — تحديد النهج:**
+- استخدام فئة مختومة للدول والأحداث.
+- استخدم`Channel`لتمرير الحدث.
+- تستهلك حلقة آلة الحالة الأحداث باستخدام`for (event in channel)`.
+- تؤدي التحولات إلى عمليات الاسترجاعات للخروج/الدخول.
+**الخطوة 3 — تنفيذ الحل:**
+```kotlin
+sealed class GameState {
+    data object Idle : GameState()
+    data object Walking : GameState()
+    data object Running : GameState()
+    data object Attacking : GameState()
+    data class Dead(val cause: String) : GameState()
+}
+
+sealed class GameEvent {
+    data object Move : GameEvent()
+    data object Run : GameEvent()
+    data object Attack : GameEvent()
+    data object Stop : GameEvent()
+    data class TakeDamage(val amount: Int) : GameEvent()
+}
+
+class CharacterStateMachine(
+    private val scope: CoroutineScope,
+    private val onStateChange: suspend (GameState) -> Unit
+) {
+    private var currentState: GameState = GameState.Idle
+    private val eventChannel = Channel<GameEvent>(Channel.UNLIMITED)
+    var health: Int = 100; private set
+
+    init {
+        scope.launch {
+            onStateChange(currentState)
+            for (event in eventChannel) {
+                processEvent(event)
+            }
+        }
+    }
+
+    suspend fun send(event: GameEvent) {
+        eventChannel.send(event)
+    }
+
+    private suspend fun processEvent(event: GameEvent) {
+        val newState = when (currentState) {
+            is GameState.Dead -> return  // No transitions from dead
+
+            GameState.Idle -> when (event) {
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Walking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Running -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Attacking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+        }
+
+        if (newState != currentState) {
+            currentState = newState
+            onStateChange(newState)
+        }
+    }
+
+    private suspend fun handleDamage(event: GameEvent.TakeDamage): GameState {
+        health -= event.amount
+        return if (health <= 0) GameState.Dead("Defeated") else currentState
+    }
+}
+
+// Usage
+val machine = CharacterStateMachine(
+    scope = CoroutineScope(Dispatchers.Default)
+) { state ->
+    println("State changed to: $state")
+    when (state) {
+        GameState.Idle -> playAnimation("idle")
+        GameState.Walking -> playAnimation("walk")
+        GameState.Running -> playAnimation("run")
+        GameState.Attacking -> playAnimation("attack")
+        is GameState.Dead -> playAnimation("death")
+    }
+}
+
+machine.send(GameEvent.Move)      // Walking
+machine.send(GameEvent.Run)       // Running
+machine.send(GameEvent.Attack)    // Attacking
+machine.send(GameEvent.TakeDamage(120))  // Dead
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- أمان النوع: تضمن الفئات المختومة التعامل مع جميع الحالات والأحداث. يلتقط المترجم التحولات المفقودة.
+- يعتمد على Coroutine: تتم معالجة الأحداث بشكل تسلسلي دون حظر. توفر القناة الضغط الخلفي.
+- دورة الحياة: يؤدي إلغاء النطاق إلى إيقاف جهاز الحالة بشكل نظيف.
+- الإنتاج: بالنسبة لأجهزة الحالة المعقدة، استخدم`tinder-statemachine`أو قم بنمذجة الحالات باستخدام مكتبة أجهزة الحالة الرسمية.
 ---
 
 ## ملخص

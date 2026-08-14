@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Arquitectura de la nube"
-descripción: "Proveedores de nube, patrones de arquitectura, seguridad"
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Cloud Architecture"
+description: "Cloud providers, architecture patterns, security"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [nube, arquitectura, codificación y tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "11 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [cloud, architecture, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "11 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Arquitectura de la nube
 La computación en la nube ha cambiado fundamentalmente la forma en que las organizaciones crean, implementan y escalan software. En lugar de comprar y mantener servidores físicos, puede aprovisionar recursos informáticos según demanda, pagar por lo que utiliza y escalar globalmente en minutos. Este archivo cubre los conceptos básicos, patrones de arquitectura, servicios y mejores prácticas que necesita conocer.

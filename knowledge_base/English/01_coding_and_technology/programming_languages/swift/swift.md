@@ -672,6 +672,382 @@ For production, deploy the compiled binary to a Linux server running Ubuntu. Use
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What are optionals, and why does Swift force me to unwrap them?
+**A:** An optional (`Type?`) represents a value that might be absent — it is either `.some(value)` or `.none` (nil). Swift forces explicit unwrapping to prevent null pointer crashes at runtime. You can unwrap with `if let`, `guard let`, force unwrap (`!`), optional chaining (`?.`), or nil coalescing (`??`). The compiler ensures you handle the nil case — this eliminates an entire class of bugs.
+
+```swift
+// Optional declaration
+var name: String? = nil
+name = "Alice"
+
+// Safe unwrapping with if let
+if let unwrapped = name {
+    print("Name: \(unwrapped)")
+} else {
+    print("Name is nil")
+}
+
+// Guard let — early exit
+func greet(user: String?) {
+    guard let name = user else {
+        print("No user provided")
+        return
+    }
+    print("Hello, \(name)!")
+}
+
+// Nil coalescing
+let displayName = name ?? "Anonymous"
+
+// Optional chaining
+class Address { var city: String? }
+class User { var address: Address? }
+let user = User()
+let city = user.address?.city  // String? — nil at any point
+let cityOrUnknown = user.address?.city ?? "Unknown"
+```
+
+### Q2: What is the difference between structs and classes in Swift?
+**A:** Structs are value types (copied on assignment), classes are reference types (shared). Structs get a free memberwise initializer, and they support all features of classes except inheritance, deinitializers, and reference counting. Swift's standard library types (`String`, `Array`, `Dictionary`) are all structs. Prefer structs by default; use classes when you need shared mutable state or inheritance.
+
+```swift
+// Struct — value type, copied on assignment
+struct Point {
+    var x: Double
+    var y: Double
+
+    mutating func move(by dx: Double, _ dy: Double) {
+        x += dx
+        y += dy
+    }
+}
+
+var p1 = Point(x: 1, y: 2)
+var p2 = p1          // Copy
+p2.x = 10
+print(p1.x)          // 1 — unchanged
+
+// Class — reference type, shared
+class ViewController {
+    var title: String = ""
+}
+let vc1 = ViewController()
+let vc2 = vc1        // Same reference
+vc2.title = "Home"
+print(vc1.title)     // "Home" — same object
+```
+
+### Q3: How do protocols and protocol-oriented programming work?
+**A:** Protocols define a blueprint of methods, properties, and requirements. Any type can conform to a protocol by implementing its requirements. Protocol extensions provide default implementations. Generics constrained by protocols give you polymorphism without the overhead of class inheritance — this is "protocol-oriented programming."
+
+```swift
+// Protocol definition
+protocol Drawable {
+    func draw(on context: GraphicsContext)
+    var bounds: CGRect { get }
+}
+
+// Default implementation via extension
+extension Drawable {
+    func describe() -> String {
+        return "Drawable at \(bounds)"
+    }
+}
+
+// Conforming types
+struct Circle: Drawable {
+    let center: CGPoint
+    let radius: CGFloat
+
+    func draw(on context: GraphicsContext) { /* ... */ }
+    var bounds: CGRect { /* computed from center + radius */ CGRect() }
+}
+
+// Protocol as generic constraint
+func renderAll<T: Drawable>(_ items: [T], on context: GraphicsContext) {
+    for item in items {
+        item.draw(on: context)
+    }
+}
+
+// Protocol composition
+func process(_ item: Drawable & Codable & Sendable) { /* ... */ }
+```
+
+### Q4: What is `async/await` in Swift, and how does it relate to actors?
+**A:** Swift's concurrency model (5.5+) uses `async/await` for asynchronous code and `actors` for safe shared mutable state. `async` functions can be suspended and resumed. `await` marks suspension points. Actors prevent data races by serializing access to their mutable state — the compiler enforces this at compile time.
+
+```swift
+// Async function
+func fetchUser(id: String) async throws -> User {
+    let (data, _) = try await URLSession.shared.data(
+        from: URL(string: "https://api.example.com/users/\(id)")!
+    )
+    return try JSONDecoder().decode(User.self, from: data)
+}
+
+// Actor — safe shared mutable state
+actor BankAccount {
+    private var balance: Double = 0
+
+    func deposit(_ amount: Double) {
+        balance += amount  // Only accessible within actor
+    }
+
+    func getBalance() -> Double { balance }
+}
+
+// Usage
+let account = BankAccount()
+await account.deposit(100)
+let balance = await account.getBalance()
+
+// Concurrent execution with async let
+async let user = fetchUser(id: "1")
+async let posts = fetchPosts(userId: "1")
+let dashboard = try await Dashboard(user: user, posts: posts)
+```
+
+### Q5: How do property wrappers and result builders work?
+**A:** Property wrappers (`@propertyWrapper`) add logic to property storage (like `@State` in SwiftUI). Result builders (`@resultBuilder`) let you build data structures using natural syntax (like SwiftUI's view hierarchy). Both are forms of metaprogramming that reduce boilerplate.
+
+```swift
+// Property wrapper
+@propertyWrapper
+struct Clamped<T: Comparable> {
+    var wrappedValue: T {
+        didSet { wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound) }
+    }
+    let range: ClosedRange<T>
+
+    init(wrappedValue: T, _ range: ClosedRange<T>) {
+        self.range = range
+        self.wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound)
+    }
+}
+
+struct Player {
+    @Clamped(0...100) var health: Int = 100
+    @Clamped(0...999) var score: Int = 0
+}
+
+var player = Player()
+player.health = 150  // Clamped to 100
+player.health = -10  // Clamped to 0
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Build a Type-Safe Router
+
+**Problem Statement:** Create a type-safe URL router for an iOS app where each route has associated parameters, and the compiler prevents accessing parameters that don't exist for a given route.
+
+**Step 1 — Understand the Problem:**
+We need: (1) route definitions with typed parameters, (2) URL parsing to extract route + parameters, (3) type-safe parameter access — the compiler ensures you only read parameters that exist for each route. This requires enums with associated values.
+
+**Step 2 — Identify the Approach:**
+- Use an enum with associated values to define routes.
+- Each case carries its specific parameters as typed values.
+- A parser converts URL strings to route enum cases.
+- Pattern matching extracts parameters with compile-time safety.
+
+**Step 3 — Implement the Solution:**
+
+```swift
+enum Route: Equatable {
+    case home
+    case userProfile(id: String)
+    case productDetail(id: String, variant: String?)
+    case search(query: String, page: Int)
+    case settings(section: SettingsSection)
+
+    enum SettingsSection: String {
+        case general, notifications, privacy, about
+    }
+
+    // Parse URL to route
+    static func from(url: URL) -> Route? {
+        let path = url.pathComponents.dropFirst()  // Remove leading /
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            .queryItems ?? []
+
+        switch path {
+        case []:
+            return .home
+        case ["users", let id]:
+            return .userProfile(id: id)
+        case ["products", let id]:
+            let variant = query.first(where: { $0.name == "variant" })?.value
+            return .productDetail(id: id, variant: variant)
+        case ["search"]:
+            guard let q = query.first(where: { $0.name == "q" })?.value else { return nil }
+            let page = query.first(where: { $0.name == "page" })
+                .flatMap { Int($0.value ?? "1") } ?? 1
+            return .search(query: q, page: page)
+        case ["settings", let section]:
+            guard let s = SettingsSection(rawValue: section) else { return nil }
+            return .settings(section: s)
+        default:
+            return nil
+        }
+    }
+}
+
+// Usage — type-safe parameter extraction
+func handle(route: Route) {
+    switch route {
+    case .home:
+        showHomeScreen()
+    case .userProfile(let id):
+        showProfile(userId: id)  // id is guaranteed String
+    case .productDetail(let id, let variant):
+        showProduct(id: id, variant: variant)  // variant is String?
+    case .search(let query, let page):
+        performSearch(query: query, page: page)  // page is guaranteed Int
+    case .settings(let section):
+        showSettings(section: section)  // section is SettingsSection enum
+    }
+}
+
+// Handle deep link
+if let url = URL(string: "myapp://products/abc123?variant=blue"),
+   let route = Route.from(url: url) {
+    handle(route: route)
+}
+```
+
+**Step 4 — Verify and Optimize:**
+- Type safety: each route case carries exactly the parameters it needs. The compiler prevents accessing `variant` on `.userProfile`.
+- Exhaustiveness: the `switch` must handle all cases — adding a new route forces updating all handlers.
+- Extensibility: add new routes by adding enum cases; the compiler tells you everywhere that needs updating.
+- Production: consider `swift-url-routing` or `TCA`'s routing for larger apps.
+
+### Problem 2: Implement a Reactive State Container
+
+**Problem Statement:** Build a simple reactive state container (similar to Redux/Vuex) in Swift where state changes are observable, and subscribers are notified of specific state changes.
+
+**Step 1 — Understand the Problem:**
+We need: (1) a state container that holds application state, (2) actions that describe state changes, (3) a reducer that produces new state from current state + action, (4) subscribers that observe state changes. This is the unidirectional data flow pattern.
+
+**Step 2 — Identify the Approach:**
+- Use a generic `Store<State>` class with `@Published`-like behavior.
+- Define actions as an enum.
+- Use a reducer function `(State, Action) -> State`.
+- Subscribers receive the new state via closures.
+
+**Step 3 — Implement the Solution:**
+
+```swift
+// Action protocol
+protocol Action {}
+
+// Store — holds state and dispatches actions
+class Store<State> {
+    private(set) var state: State
+    private let reducer: (State, Action) -> State
+    private var subscribers: [(State) -> Void] = []
+    private let queue = DispatchQueue(label: "store.queue")
+
+    init(initialState: State, reducer: @escaping (State, Action) -> State) {
+        self.state = initialState
+        self.reducer = reducer
+    }
+
+    func dispatch(_ action: Action) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            let newState = self.reducer(self.state, action)
+            self.state = newState
+            self.notifySubscribers(newState)
+        }
+    }
+
+    func subscribe(_ callback: @escaping (State) -> Void) -> () -> Void {
+        subscribers.append(callback)
+        callback(state)  // Emit current state immediately
+
+        // Return unsubscribe function
+        let index = subscribers.count - 1
+        return { [weak self] in
+            self?.subscribers.remove(at: index)
+        }
+    }
+
+    private func notifySubscribers(_ state: State) {
+        for subscriber in subscribers {
+            subscriber(state)
+        }
+    }
+}
+
+// Example usage
+struct AppState {
+    var todos: [Todo] = []
+    var filter: TodoFilter = .all
+    var isLoading: Bool = false
+}
+
+enum TodoAction: Action {
+    case addTodo(String)
+    case toggleTodo(Int)
+    case setFilter(TodoFilter)
+    case setLoading(Bool)
+}
+
+enum TodoFilter { case all, active, completed }
+
+struct Todo: Equatable {
+    let id: Int
+    let title: String
+    var isDone: Bool = false
+}
+
+// Reducer
+func todoReducer(state: AppState, action: Action) -> AppState {
+    var newState = state
+    guard let action = action as? TodoAction else { return state }
+
+    switch action {
+    case .addTodo(let title):
+        let id = (state.todos.map(\.id).max() ?? 0) + 1
+        newState.todos.append(Todo(id: id, title: title))
+    case .toggleTodo(let id):
+        if let idx = newState.todos.firstIndex(where: { $0.id == id }) {
+            newState.todos[idx].isDone.toggle()
+        }
+    case .setFilter(let filter):
+        newState.filter = filter
+    case .setLoading(let loading):
+        newState.isLoading = loading
+    }
+    return newState
+}
+
+// Wire it up
+let store = Store(initialState: AppState(), reducer: todoReducer)
+
+let unsubscribe = store.subscribe { state in
+    print("Todos: \(state.todos.count), Filter: \(state.filter)")
+}
+
+store.dispatch(TodoAction.addTodo("Learn Swift"))
+store.dispatch(TodoAction.addTodo("Build an app"))
+store.dispatch(TodoAction.toggleTodo(1))
+store.dispatch(TodoAction.setFilter(.active))
+```
+
+**Step 4 — Verify and Optimize:**
+- Unidirectional flow: actions → reducer → new state → subscribers. Easy to reason about and test.
+- Thread safety: dispatch queue serializes state mutations.
+- Subscribers get the full state — use selectors or `Equatable` checks to avoid unnecessary re-renders.
+- Production: use `The Composable Architecture` (TCA) by Point-Free for a production-grade implementation with effects, testing, and SwiftUI integration.
+
+---
+
 ## Summary
 
 Swift is a modern, safe, and expressive language that is essential for Apple platform development. Its emphasis on safety (optionals, value types, pattern matching) prevents entire categories of bugs. Beyond Apple platforms, Swift is growing in server-side development and cross-platform applications. For iOS/macOS development, Swift is the clear choice. For other domains, it is a capable language with a smaller but growing ecosystem.

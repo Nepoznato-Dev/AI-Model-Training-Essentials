@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Shell et PowerShell"
-description : "Référence complète sur le langage de programmation Shell et PowerShell couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Shell & PowerShell"
+description: "Comprehensive reference for the Shell and PowerShell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [shell-and-powershell, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "35 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [shell-and-powershell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Shell et PowerShell
 Les scripts Shell font référence à l'écriture de scripts pour les interpréteurs de ligne de commande. Les deux shells les plus importants sont **Bash** (Bourne Again Shell) — la valeur par défaut sur Linux et macOS — et **PowerShell** — le shell multiplateforme moderne et le langage de script de Microsoft. Les scripts Shell automatisent les tâches d'administration système, créent des pipelines, le traitement des fichiers et les workflows de déploiement.
 Chaque développeur, ingénieur DevOps et administrateur système a besoin de compétences en script shell. Que vous déployiez un serveur Web, traitiez des fichiers journaux, configuriez des pipelines CI/CD ou automatisiez des sauvegardes, les scripts shell sont l'outil qu'il vous faut.
@@ -329,7 +334,7 @@ $text.Split(',')
 ```
 ---
 
-## Plongez en profondeur dans les fonctionnalités de base
+## Plongée en profondeur dans les fonctionnalités de base
 ### Modèles de pipelines
 ```bash
 # Bash: log analysis pipeline
@@ -853,6 +858,152 @@ Publish-Module @publishParams
 | Analyse des journaux | One-liners grep/awk rapides | Python, SQL pour l'analyse complexe |
 | Applications complexes | Ne convient pas | Python, Go, Java |
 | Scripts multiplateformes | PowerShell 7+ fonctionne partout | Python pour des scripts véritablement portables |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Quelle est la différence entre les guillemets simples et doubles dans Bash ?
+**A :** Les guillemets doubles permettent une expansion variable ; Les guillemets simples sont littéraux :
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2 : Comment gérer les erreurs dans les scripts shell ?
+**R :** Utilisez`set -e`pour quitter en cas d'erreur et intercepter pour le nettoyage :
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3 : Comment traiter correctement les arguments de ligne de commande ?
+**R :** Utilisez`getopts`pour les indicateurs et les paramètres de position :
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4 : Qu'est-ce que le pipeline PowerShell et en quoi diffère-t-il de Bash ?
+**R :** PowerShell redirige les objets, pas le texte. Chaque objet conserve ses propriétés :
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5 : Comment puis-je écrire des scripts multiplateformes ?
+**A :** Pour Bash : utilisez`#!/usr/bin/env bash`, évitez les indicateurs spécifiques à GNU. Pour PowerShell : utilisez`pwsh`(PowerShell Core) qui fonctionne sous Linux/macOS/Windows.
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Script de traitement d'image par lots (Bash)
+**Étape 1 : Comprendre le problème**
+Redimensionnez toutes les images PNG d'un répertoire jusqu'à une largeur maximale de 800 px.
+**Étape 2 : Identifiez l'approche**
+Utilisez`find`pour localiser les fichiers et`convert`(ImageMagick) pour redimensionner.
+**Étape 3 : Mettre en œuvre**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Étape 4 : Prolonger**
+Ajoutez une barre de progression, une gestion des erreurs pour les images corrompues et un traitement parallèle avec`xargs -P`.
+### Problème 2 : Rotation automatisée des journaux (Bash)
+**Étape 1 : Comprendre le problème**
+Faites pivoter les fichiers journaux quotidiennement, compressez les anciens journaux et supprimez les journaux datant de plus de 30 jours.
+**Étape 2 : Identifiez l'approche**
+Utilisez`find`avec des filtres temporels et`gzip`pour la compression.
+**Étape 3 : Mettre en œuvre**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Étape 4 : Planifier**
+Ajouter à la crontab : `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Problème 3 : vérification de l'état du service Windows (PowerShell)
+**Étape 1 : Comprendre le problème**
+Vérifiez si les services critiques sont en cours d'exécution et envoyez une alerte si certains sont arrêtés.
+**Étape 2 : Identifiez l'approche**
+Utilisez`Get-Service`et filtrez les services arrêtés.
+**Étape 3 : Mettre en œuvre**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Étape 4 : Automatiser**
+Planifiez en tant que travail du Planificateur de tâches Windows exécuté toutes les 5 minutes.
 ---
 
 ## Résumé

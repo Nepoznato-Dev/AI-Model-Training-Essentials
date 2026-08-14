@@ -1,4 +1,4 @@
-# 한국어 지식 베이스
+# 지식 베이스
 
 코딩, 기술, AI, 과학, 비즈니스, 인문학 등을 아우르는 종합 참고 문서 모음입니다 — AI 학습과 사람의 학습 모두를 위해 설계된 자연스럽고 대화체적인 스타일로 작성되었습니다. 영어 지식 베이스의 한국어 전체 번역본입니다.
 
@@ -12,22 +12,22 @@
 
 ```
 knowledge_base/Korean/
-├── 01_코딩_및_기술/                     # 프로그래밍, 웹, 데이터베이스, 클라우드, 네트워크, DevOps, 보안
+├── 01_coding_and_technology/                     # 프로그래밍, 웹, 데이터베이스, 클라우드, 네트워크, DevOps, 보안
 │   └── programming_languages/         # 34개 개별 언어 참고 자료
 │       ├── python/python.md
 │       ├── javascript/javascript.md
 │       ├── rust/rust.md
 │       ├── go/go.md
 │       └── ... (총 34개 언어)
-├── 02_인공지능_및_머신러닝/            # AI, ML, LLM, 프롬프트 엔지니어링, CV, NLP, MLOps
-├── 03_데이터_과학_및_분석/             # 분석, 통계, 수학, 시각화, 실험
-├── 04_자연과학/                        # 물리, 화학, 생물, 의학, 환경
-├── 05_비즈니스_및_경제/                # 경제, 금융, 법률, 마케팅, 경영
-├── 06_인문학_및_예술/                  # 역사, 지리, 예술, 심리, 언어, 철학
-├── 07_일반_참조/                       # 사전, 일반 상식, 커뮤니케이션
-├── 08_미래_및_트렌드/                  # 미래 전망, 신기술, 시나리오 계획
-├── 09_실패에서_배우는_교훈/            # AI 실패, 보안 문제, 시스템 신뢰성
-└── 10_빠른_참조/                       # Python, Git, SQL, Linux, Docker, 정규식, Bash, 클라우드 치트시트
+├── 02_ai_and_machine_learning/            # AI, ML, LLM, 프롬프트 엔지니어링, CV, NLP, MLOps
+├── 03_data_science_and_analytics/             # 분석, 통계, 수학, 시각화, 실험
+├── 04_natural_sciences/                        # 물리, 화학, 생물, 의학, 환경
+├── 05_business_and_economics/                # 경제, 금융, 법률, 마케팅, 경영
+├── 06_humanities_and_arts/                  # 역사, 지리, 예술, 심리, 언어, 철학
+├── 07_general_reference/                       # 사전, 일반 상식, 커뮤니케이션
+├── 08_future_and_trends/                  # 미래 전망, 신기술, 시나리오 계획
+├── 09_lessons_from_failures/            # AI 실패, 보안 문제, 시스템 신뢰성
+└── 10_quick_reference/                       # Python, Git, SQL, Linux, Docker, 정규식, Bash, 클라우드 치트시트
 ```
 
 ---
@@ -40,26 +40,20 @@ knowledge_base/Korean/
 
 | 파일 | 설명 |
 |------|-------------|
-| [web_development.md](01_코딩_및_기술/web_development.md) | 프론트엔드, 백엔드, DevOps, 보안 |
-| [database_systems.md](01_코딩_및_기술/database_systems.md) | SQL, NoSQL, 설계 패턴, 최적화 |
-| [cloud_architecture.md](01_코딩_및_기술/cloud_architecture.md) | 클라우드 제공업체, 아키텍처 패턴, 보안 |
-| [networking_basics.md](01_코딩_및_기술/networking_basics.md) | OSI 모델, TCP/IP, 프로토콜, 보안 |
-| [devops_sysadmin.md](01_코딩_및_기술/devops_sysadmin.md) | SSH, systemd, 로깅, 모니터링, 백업, Docker, CI/CD |
-| [security_best_practices.md](01_코딩_및_기술/security_best_practices.md) | OWASP Top 10, 입력 검증, 인증, 시크릿 관리 |
-| [devops_and_cicd.md](01_코딩_및_기술/devops_and_cicd.md) | CI/CD 파이프라인, Docker, Kubernetes, Terraform, GitOps |
-| [cybersecurity_fundamentals.md](01_코딩_및_기술/cybersecurity_fundamentals.md) | 암호화, TLS, OWASP, 보안 코딩, SDL |
-| [api_design_and_architecture.md](01_코딩_및_기술/api_design_and_architecture.md) | REST, GraphQL, gRPC, 버전 관리, 인증, API 게이트웨이 |
-| [software_architecture_patterns.md](01_코딩_및_기술/software_architecture_patterns.md) | 모놀리스, 마이크로서비스, 이벤트 기반, DDD, 캐싱, SOLID |
-| [technology_glossary.md](01_코딩_및_기술/technology_glossary.md) | 기술 용어 (AI 모델, 하드웨어, 벤치마크) |
-| [tool_usage.md](01_코딩_및_기술/tool_usage.md) | 개발 도구 및 유틸리티 |
-| [accessibility_and_inclusive_design.md](01_코딩_및_기술/accessibility_and_inclusive_design.md) | WCAG, 포용적 UX, 보조 기술, 접근성 코딩 |
-| [blockchain_and_distributed_systems.md](01_코딩_및_기술/blockchain_and_distributed_systems.md) | 합의, 스마트 컨트랙트, DeFi, 비잔틴 장애 허용 |
-| [data_structures_and_algorithms.md](01_코딩_및_기술/data_structures_and_algorithms.md) | 배열, 트리, 그래프, 정렬, 검색, 복잡도 |
-| [embedded_systems_and_iot.md](01_코딩_및_기술/embedded_systems_and_iot.md) | 마이크로컨트롤러, 센서, RTOS, IoT 프로토콜, 엣지 컴퓨팅 |
-| [low_code_and_platform_engineering.md](01_코딩_및_기술/low_code_and_platform_engineering.md) | 로우코드 플랫폼, 내부 개발자 플랫폼, 골든 패스 |
-| [mobile_development.md](01_코딩_및_기술/mobile_development.md) | iOS, Android, React Native, Flutter, 모바일 아키텍처 |
-| [performance_optimization.md](01_코딩_및_기술/performance_optimization.md) | 프로파일링, 캐싱, CDN, 쿼리 최적화, 프론트엔드 성능 |
-| [testing_methodologies.md](01_코딩_및_기술/testing_methodologies.md) | 단위, 통합, E2E, TDD, BDD, 테스트 피라미드 |
+| [database_systems.md](01_coding_and_technology/database_systems.md) | SQL, NoSQL, 설계 패턴, 최적화 |
+| [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md) | 클라우드 제공업체, 아키텍처 패턴, 보안 |
+| [networking_basics.md](01_coding_and_technology/networking_basics.md) | OSI 모델, TCP/IP, 프로토콜, 보안 |
+| [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md) | SSH, systemd, 로깅, 모니터링, 백업, Docker, CI/CD |
+| [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md) | CI/CD 파이프라인, Docker, Kubernetes, Terraform, GitOps |
+| [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md) | 암호화, TLS, OWASP, 보안 코딩, SDL |
+| [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md) | REST, GraphQL, gRPC, 버전 관리, 인증, API 게이트웨이 |
+| [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md) | WCAG, 포용적 UX, 보조 기술, 접근성 코딩 |
+| [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md) | 합의, 스마트 컨트랙트, DeFi, 비잔틴 장애 허용 |
+| [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md) | 배열, 트리, 그래프, 정렬, 검색, 복잡도 |
+| [embedded_systems_and_iot.md](01_coding_and_technology/embedded_systems_and_iot.md) | 마이크로컨트롤러, 센서, RTOS, IoT 프로토콜, 엣지 컴퓨팅 |
+| [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md) | 로우코드 플랫폼, 내부 개발자 플랫폼, 골든 패스 |
+| [mobile_development.md](01_coding_and_technology/mobile_development.md) | iOS, Android, React Native, Flutter, 모바일 아키텍처 |
+| [performance_optimization.md](01_coding_and_technology/performance_optimization.md) | 프로파일링, 캐싱, CDN, 쿼리 최적화, 프론트엔드 성능 |
 
 **프로그래밍 언어 (34개 언어):**
 
@@ -89,185 +83,182 @@ knowledge_base/Korean/
 
 | 파일 | 설명 |
 |------|-------------|
-| [artificial_intelligence.md](02_인공지능_및_머신러닝/artificial_intelligence.md) | AI 개요, ML, 딥러닝, LLM, 윤리 |
-| [ml_evaluation_and_workflow.md](02_인공지능_및_머신러닝/ml_evaluation_and_workflow.md) | ML 파이프라인, 메트릭, 모범 사례 |
-| [phi3_and_local_models.md](02_인공지능_및_머신러닝/phi3_and_local_models.md) | 모델 로컬 실행 |
-| [local_ai_architecture.md](02_인공지능_및_머신러닝/local_ai_architecture.md) | 로컬 AI 배포 아키텍처 |
-| [prompt_engineering.md](02_인공지능_및_머신러닝/prompt_engineering.md) | 프롬프트 기법과 전략 |
-| [data_engineering_and_pipelines.md](02_인공지능_및_머신러닝/data_engineering_and_pipelines.md) | ETL/ELT, 데이터 레이크, 오케스트레이션, Kafka, 피처 스토어 |
-| [ml_engineering_and_mlops.md](02_인공지능_및_머신러닝/ml_engineering_and_mlops.md) | 모델 서빙, 레지스트리, 배포 전략, 드리프트 모니터링 |
-| [computer_vision_fundamentals.md](02_인공지능_및_머신러닝/computer_vision_fundamentals.md) | CNN, 객체 감지, 분할, 전이 학습 |
-| [nlp_fundamentals.md](02_인공지능_및_머신러닝/nlp_fundamentals.md) | 텍스트 처리, 임베딩, Transformer, BERT, GPT |
-| [ai_ethics_and_governance.md](02_인공지능_및_머신러닝/ai_ethics_and_governance.md) | AI 편향, 공정성, 책임성, 규제, 거버넌스 프레임워크 |
-| [ai_safety_and_alignment.md](02_인공지능_및_머신러닝/ai_safety_and_alignment.md) | 정렬 문제, RLHF, 해석 가능성, AI 안전 연구 |
-| [federated_learning_and_privacy.md](02_인공지능_및_머신러닝/federated_learning_and_privacy.md) | 분산 학습, 차등 프라이버시, 보안 집계 |
-| [generative_ai_deep_dive.md](02_인공지능_및_머신러닝/generative_ai_deep_dive.md) | GAN, VAE, 확산 모델, LLM, 생성형 AI 응용 |
-| [graph_neural_networks.md](02_인공지능_및_머신러닝/graph_neural_networks.md) | GCN, GAT, 메시지 전달, 지식 그래프, 그래프 작업 |
-| [model_optimization_and_deployment.md](02_인공지능_및_머신러닝/model_optimization_and_deployment.md) | 양자화, 가지치기, 증류, ONNX, 서빙 인프라 |
-| [multimodal_ai.md](02_인공지능_및_머신러닝/multimodal_ai.md) | 비전-언어 모델, CLIP, DALL-E, 크로스모달 학습 |
-| [recommendation_systems.md](02_인공지능_및_머신러닝/recommendation_systems.md) | 협업 필터링, 콘텐츠 기반, 하이브리드, 행렬 분해 |
-| [reinforcement_learning.md](02_인공지능_및_머신러닝/reinforcement_learning.md) | MDP, Q-learning, 정책 그래디언트, RLHF, 다중 에이전트 시스템 |
-| [speech_and_audio_processing.md](02_인공지능_및_머신러닝/speech_and_audio_processing.md) | ASR, TTS, 오디오 특징, Whisper, 음성 파이프라인 |
-| [time_series_and_forecasting.md](02_인공지능_및_머신러닝/time_series_and_forecasting.md) | ARIMA, Prophet, LSTM, 계절성, 이상 탐지 |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md) | AI 개요, ML, 딥러닝, LLM, 윤리 |
+| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md) | ML 파이프라인, 메트릭, 모범 사례 |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md) | 모델 로컬 실행 |
+| [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md) | 로컬 AI 배포 아키텍처 |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md) | 프롬프트 기법과 전략 |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md) | ETL/ELT, 데이터 레이크, 오케스트레이션, Kafka, 피처 스토어 |
+| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md) | 모델 서빙, 레지스트리, 배포 전략, 드리프트 모니터링 |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md) | CNN, 객체 감지, 분할, 전이 학습 |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md) | 텍스트 처리, 임베딩, Transformer, BERT, GPT |
+| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md) | AI 편향, 공정성, 책임성, 규제, 거버넌스 프레임워크 |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md) | 정렬 문제, RLHF, 해석 가능성, AI 안전 연구 |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md) | 분산 학습, 차등 프라이버시, 보안 집계 |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md) | GAN, VAE, 확산 모델, LLM, 생성형 AI 응용 |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md) | GCN, GAT, 메시지 전달, 지식 그래프, 그래프 작업 |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md) | 양자화, 가지치기, 증류, ONNX, 서빙 인프라 |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md) | 비전-언어 모델, CLIP, DALL-E, 크로스모달 학습 |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md) | 협업 필터링, 콘텐츠 기반, 하이브리드, 행렬 분해 |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md) | MDP, Q-learning, 정책 그래디언트, RLHF, 다중 에이전트 시스템 |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md) | ASR, TTS, 오디오 특징, Whisper, 음성 파이프라인 |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md) | ARIMA, Prophet, LSTM, 계절성, 이상 탐지 |
 
 ### 03 — 데이터 과학 & 분석
 
 | 파일 | 설명 |
 |------|-------------|
-| [data_science_and_analytics.md](03_데이터_과학_및_분석/data_science_and_analytics.md) | 데이터 처리, ML, 빅데이터, BI |
-| [math_and_logic.md](03_데이터_과학_및_분석/math_and_logic.md) | 수학, 논리, 증명 |
-| [data_visualization.md](03_데이터_과학_및_분석/data_visualization.md) | 차트 선택, 디자인 원칙, 스토리텔링, 도구 |
-| [statistical_testing_and_experimentation.md](03_데이터_과학_및_분석/statistical_testing_and_experimentation.md) | 가설 검정, A/B 테스트, 효과 크기, 인과 추론 |
-| [causal_inference.md](03_데이터_과학_및_분석/causal_inference.md) | DAG, 교란 변수, 이중 차분법, 도구 변수 |
-| [data_ethics_and_privacy.md](03_데이터_과학_및_분석/data_ethics_and_privacy.md) | GDPR, 데이터 동의, 알고리즘 편향, 다크 패턴, 비식별화 |
-| [ensemble_methods.md](03_데이터_과학_및_분석/ensemble_methods.md) | 배깅, 부스팅, 스태킹, 보팅, 랜덤 포레스트, XGBoost |
-| [feature_engineering.md](03_데이터_과학_및_분석/feature_engineering.md) | 변환, 인코딩, 특징 선택, 차원 축소 |
-| [geospatial_analysis.md](03_데이터_과학_및_분석/geospatial_analysis.md) | 좌표계, 공간 연산, GeoPandas, 래스터 분석 |
+| [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md) | 데이터 처리, ML, 빅데이터, BI |
+| [math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md) | 수학, 논리, 증명 |
+| [data_visualization.md](03_data_science_and_analytics/data_visualization.md) | 차트 선택, 디자인 원칙, 스토리텔링, 도구 |
+| [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md) | 가설 검정, A/B 테스트, 효과 크기, 인과 추론 |
+| [causal_inference.md](03_data_science_and_analytics/causal_inference.md) | DAG, 교란 변수, 이중 차분법, 도구 변수 |
+| [data_ethics_and_privacy.md](03_data_science_and_analytics/data_ethics_and_privacy.md) | GDPR, 데이터 동의, 알고리즘 편향, 다크 패턴, 비식별화 |
+| [ensemble_methods.md](03_data_science_and_analytics/ensemble_methods.md) | 배깅, 부스팅, 스태킹, 보팅, 랜덤 포레스트, XGBoost |
+| [feature_engineering.md](03_data_science_and_analytics/feature_engineering.md) | 변환, 인코딩, 특징 선택, 차원 축소 |
+| [geospatial_analysis.md](03_data_science_and_analytics/geospatial_analysis.md) | 좌표계, 공간 연산, GeoPandas, 래스터 분석 |
 
 ### 04 — 자연과학
 
 | 파일 | 설명 |
 |------|-------------|
-| [science_and_nature.md](04_자연과학/science_and_nature.md) | 물리, 화학, 생물, 지구 과학 |
-| [medicine_and_healthcare.md](04_자연과학/medicine_and_healthcare.md) | 의학 전문 분야, 진단, 치료, 윤리 |
-| [environmental_science_and_sustainability.md](04_자연과학/environmental_science_and_sustainability.md) | 생태계, 기후, 에너지, 정책 |
-| [food_agriculture_and_nutrition.md](04_자연과학/food_agriculture_and_nutrition.md) | 농업, 영양, 식품 시스템, 지속가능성 |
-| [astronomy_and_cosmology.md](04_자연과학/astronomy_and_cosmology.md) | 별, 은하, 빅뱅, 암흑 물질, 외계 행성, 우주론 |
-| [genetics_and_genomics.md](04_자연과학/genetics_and_genomics.md) | DNA, 유전자 발현, CRISPR, GWAS, 시퀀싱 기술 |
-| [materials_science.md](04_자연과학/materials_science.md) | 결정 구조, 고분자, 합금, 반도체, 나노 소재 |
-| [neuroscience.md](04_자연과학/neuroscience.md) | 뉴런, 뇌 구조, 신경전달물질, 가소성, 뇌 영상 |
+| [science_and_nature.md](04_natural_sciences/science_and_nature.md) | 물리, 화학, 생물, 지구 과학 |
+| [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md) | 의학 전문 분야, 진단, 치료, 윤리 |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md) | 생태계, 기후, 에너지, 정책 |
+| [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md) | 농업, 영양, 식품 시스템, 지속가능성 |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md) | 별, 은하, 빅뱅, 암흑 물질, 외계 행성, 우주론 |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md) | DNA, 유전자 발현, CRISPR, GWAS, 시퀀싱 기술 |
+| [materials_science.md](04_natural_sciences/physical_sciences/materials_science.md) | 결정 구조, 고분자, 합금, 반도체, 나노 소재 |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md) | 뉴런, 뇌 구조, 신경전달물질, 가소성, 뇌 영상 |
 
 ### 05 — 비즈니스 & 경제
 
 | 파일 | 설명 |
 |------|-------------|
-| [business_and_economics.md](05_비즈니스_및_경제/business_and_economics.md) | 기업 구조, 마케팅, 경제, 스타트업 |
-| [finance_and_investing.md](05_비즈니스_및_경제/finance_and_investing.md) | 개인 금융, 투자, 시장, 은퇴 |
-| [law_and_legal_systems.md](05_비즈니스_및_경제/law_and_legal_systems.md) | 법 체계, 계약, 불법 행위, 지식 재산, 고용 |
-| [marketing_and_digital_strategy.md](05_비즈니스_및_경제/marketing_and_digital_strategy.md) | 4P, 디지털 채널, SEO/SEM, 분석, 브랜드 전략 |
-| [management_and_project_methodologies.md](05_비즈니스_및_경제/management_and_project_methodologies.md) | 리더십, Agile/Scrum/Kanban, OKR, 리스크 관리 |
-| [behavioural_economics.md](05_비즈니스_및_경제/behavioural_economics.md) | 인지 편향, 전망 이론, 휴리스틱, 넛지, 선택 설계 |
-| [game_theory.md](05_비즈니스_및_경제/game_theory.md) | 내시 균형, 죄수의 딜레마, 메커니즘 디자인, 경매 |
-| [intellectual_property_and_innovation.md](05_비즈니스_및_경제/intellectual_property_and_innovation.md) | 특허, 저작권, 상표, 영업 비밀, 오픈 소스 라이선스 |
-| [organisational_design_and_culture.md](05_비즈니스_및_경제/organisational_design_and_culture.md) | 조직 구조, 문화 유형, 변화 관리, 팀 역학 |
-| [supply_chain_and_operations.md](05_비즈니스_및_경제/supply_chain_and_operations.md) | 재고 관리, 린 제조, 물류, 채찍 효과 |
+| [business_and_economics.md](05_business_and_economics/business_and_economics.md) | 기업 구조, 마케팅, 경제, 스타트업 |
+| [finance_and_investing.md](05_business_and_economics/finance_and_investing.md) | 개인 금융, 투자, 시장, 은퇴 |
+| [law_and_legal_systems.md](05_business_and_economics/law_and_legal_systems.md) | 법 체계, 계약, 불법 행위, 지식 재산, 고용 |
+| [marketing_and_digital_strategy.md](05_business_and_economics/marketing_and_digital_strategy.md) | 4P, 디지털 채널, SEO/SEM, 분석, 브랜드 전략 |
+| [management_and_project_methodologies.md](05_business_and_economics/management_and_project_methodologies.md) | 리더십, Agile/Scrum/Kanban, OKR, 리스크 관리 |
+| [behavioural_economics.md](05_business_and_economics/behavioural_economics.md) | 인지 편향, 전망 이론, 휴리스틱, 넛지, 선택 설계 |
+| [game_theory.md](05_business_and_economics/game_theory.md) | 내시 균형, 죄수의 딜레마, 메커니즘 디자인, 경매 |
+| [intellectual_property_and_innovation.md](05_business_and_economics/intellectual_property_and_innovation.md) | 특허, 저작권, 상표, 영업 비밀, 오픈 소스 라이선스 |
+| [organisational_design_and_culture.md](05_business_and_economics/organisational_design_and_culture.md) | 조직 구조, 문화 유형, 변화 관리, 팀 역학 |
+| [supply_chain_and_operations.md](05_business_and_economics/supply_chain_and_operations.md) | 재고 관리, 린 제조, 물류, 채찍 효과 |
 
 ### 06 — 인문학 & 예술
 
 | 파일 | 설명 |
 |------|-------------|
-| [history_and_culture.md](06_인문학_및_예술/history_and_culture.md) | 고대 문명부터 정보화 시대까지의 세계사 |
-| [geography_and_geopolitics.md](06_인문학_및_예술/geography_and_geopolitics.md) | 자연/인문 지리, 정치 체제 |
-| [arts_and_literature.md](06_인문학_및_예술/arts_and_literature.md) | 문학 장르, 시각 예술, 음악, 영화 |
-| [psychology_and_human_behavior.md](06_인문학_및_예술/psychology_and_human_behavior.md) | 인지, 사회, 발달 심리학 |
-| [language_and_english.md](06_인문학_및_예술/language_and_english.md) | 문법, 언어학, 글쓰기 |
-| [philosophy_and_critical_thinking.md](06_인문학_및_예술/philosophy_and_critical_thinking.md) | 사상 학파, 윤리, 논리, 인식론, 인지 편향 |
-| [linguistics_and_language_science.md](06_인문학_및_예술/linguistics_and_language_science.md) | 음성학, 구문론, 의미론, 화용론, 사회언어학 |
-| [music_theory_and_acoustics.md](06_인문학_및_예술/music_theory_and_acoustics.md) | 음계, 화음, 화성, 리듬, 실내 음향, 악기 물리학 |
-| [world_religions_and_comparative_mythology.md](06_인문학_및_예술/world_religions_and_comparative_mythology.md) | 세계 주요 종교, 비교 신화학, 신앙 체계 |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md) | 고대 문명부터 정보화 시대까지의 세계사 |
+| [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md) | 자연/인문 지리, 정치 체제 |
+| [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md) | 문학 장르, 시각 예술, 음악, 영화 |
+| [psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md) | 인지, 사회, 발달 심리학 |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md) | 문법, 언어학, 글쓰기 |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md) | 사상 학파, 윤리, 논리, 인식론, 인지 편향 |
+| [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md) | 음성학, 구문론, 의미론, 화용론, 사회언어학 |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md) | 음계, 화음, 화성, 리듬, 실내 음향, 악기 물리학 |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md) | 세계 주요 종교, 비교 신화학, 신앙 체계 |
 
 ### 07 — 일반 참조
 
 | 파일 | 설명 |
 |------|-------------|
-| [dictionary.md](07_일반_참조/dictionary.md) | 종합 단어 정의 (A-Z) |
-| [general_knowledge.md](07_일반_참조/general_knowledge.md) | 태양계, 인체, 지리, 에너지 |
-| [technology_and_computing.md](07_일반_참조/technology_and_computing.md) | 컴퓨팅 기초, 인터넷, 데이터베이스, 클라우드, 보안 |
-| [safe_communication.md](07_일반_참조/safe_communication.md) | 커뮤니케이션 지침과 모범 사례 |
-| [learning_science_and_pedagogy.md](07_일반_참조/learning_science_and_pedagogy.md) | 인출 연습, 분산 반복, 블룸의 분류학, 학습 설계 |
-| [research_methodology.md](07_일반_참조/research_methodology.md) | 과학적 방법, 표본 추출, 타당성, 실험 설계, 동료 검토 |
-| [writing_and_communication.md](07_일반_참조/writing_and_communication.md) | 피라미드 원칙, 프레젠테이션, 설득, 비즈니스 글쓰기 |
+| [dictionary.md](07_general_reference/dictionary.md) | 종합 단어 정의 (A-Z) |
+| [general_knowledge.md](07_general_reference/general_knowledge.md) | 태양계, 인체, 지리, 에너지 |
+| [technology_and_computing.md](07_general_reference/technology_and_computing.md) | 컴퓨팅 기초, 인터넷, 데이터베이스, 클라우드, 보안 |
+| [safe_communication.md](07_general_reference/safe_communication.md) | 커뮤니케이션 지침과 모범 사례 |
+| [learning_science_and_pedagogy.md](07_general_reference/learning_science_and_pedagogy.md) | 인출 연습, 분산 반복, 블룸의 분류학, 학습 설계 |
+| [research_methodology.md](07_general_reference/research_methodology.md) | 과학적 방법, 표본 추출, 타당성, 실험 설계, 동료 검토 |
+| [writing_and_communication.md](07_general_reference/writing_and_communication.md) | 피라미드 원칙, 프레젠테이션, 설득, 비즈니스 글쓰기 |
 
 ### 08 — 미래 & 트렌드
 
 | 파일 | 설명 |
 |------|-------------|
-| [2026_and_future_events.md](08_미래_및_트렌드/2026_and_future_events.md) | 다가오는 이벤트, 우주 임무, 기술 트렌드 |
-| [emerging_technologies.md](08_미래_및_트렌드/emerging_technologies.md) | 양자 컴퓨팅, 바이오 테크, 나노 기술 |
-| [future_of_work.md](08_미래_및_트렌드/future_of_work.md) | 자동화, 원격 근무, 재교육 |
-| [future_healthcare.md](08_미래_및_트렌드/future_healthcare.md) | 맞춤형 의료, AI 진단 |
-| [future_transportation.md](08_미래_및_트렌드/future_transportation.md) | 전기차, 자율주행차, 하이퍼루프 |
-| [demographic_shifts.md](08_미래_및_트렌드/demographic_shifts.md) | 인구 트렌드, 이주, 도시화 |
-| [education_transformation.md](08_미래_및_트렌드/education_transformation.md) | 온라인 학습, AI 튜터링 |
-| [geostrategic_futures.md](08_미래_및_트렌드/geostrategic_futures.md) | 지정학, 미-중 관계, 다극 세계 |
-| [scenario_planning.md](08_미래_및_트렌드/scenario_planning.md) | 미래 시나리오와 프레임워크 |
-| [space_exploration_roadmap.md](08_미래_및_트렌드/space_exploration_roadmap.md) | 우주 임무와 일정 |
-| [sustainable_future.md](08_미래_및_트렌드/sustainable_future.md) | 기후, 에너지 전환, 순환 경제 |
-| [ai_in_everyday_life.md](08_미래_및_트렌드/ai_in_everyday_life.md) | 추천 시스템, 스마트 어시스턴트, 프라이버시, 주의 경제 |
-| [climate_technology_and_green_innovation.md](08_미래_및_트렌드/climate_technology_and_green_innovation.md) | 재생 에너지, 전기차, 탄소 포집, 그린 수소, 지속 가능 기술 |
-| [future_of_computing.md](08_미래_및_트렌드/future_of_computing.md) | 무어의 법칙, 양자 컴퓨팅, 뉴로모픽 칩, 엣지 컴퓨팅 |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md) | 다가오는 이벤트, 우주 임무, 기술 트렌드 |
+| [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md) | 양자 컴퓨팅, 바이오 테크, 나노 기술 |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md) | 자동화, 원격 근무, 재교육 |
+| [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md) | 맞춤형 의료, AI 진단 |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md) | 전기차, 자율주행차, 하이퍼루프 |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md) | 인구 트렌드, 이주, 도시화 |
+| [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md) | 온라인 학습, AI 튜터링 |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md) | 지정학, 미-중 관계, 다극 세계 |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md) | 미래 시나리오와 프레임워크 |
+| [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md) | 우주 임무와 일정 |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md) | 기후, 에너지 전환, 순환 경제 |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md) | 추천 시스템, 스마트 어시스턴트, 프라이버시, 주의 경제 |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md) | 재생 에너지, 전기차, 탄소 포집, 그린 수소, 지속 가능 기술 |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md) | 무어의 법칙, 양자 컴퓨팅, 뉴로모픽 칩, 엣지 컴퓨팅 |
 
 ### 09 — 실패에서 배우는 교훈
 
 | 파일 | 설명 |
 |------|-------------|
-| [ai_llm_failures.md](09_실패에서_배우는_교훈/ai_llm_failures.md) | 환각, 편향, 정렬 실패 |
-| [code_quality_issues.md](09_실패에서_배우는_교훈/code_quality_issues.md) | 일반적인 코딩 실수와 안티 패턴 |
-| [cognitive_logical_issues.md](09_실패에서_배우는_교훈/cognitive_logical_issues.md) | 추론 오류와 인지 편향 |
-| [rag_vector_search.md](09_실패에서_배우는_교훈/rag_vector_search.md) | RAG와 벡터 검색의 함정 |
-| [security_vulnerabilities.md](09_실패에서_배우는_교훈/security_vulnerabilities.md) | 일반적인 보안 취약점 |
-| [system_reliability.md](09_실패에서_배우는_교훈/system_reliability.md) | 시스템 장애와 신뢰성 패턴 |
-| [api_design_and_integration_failures.md](09_실패에서_배우는_교훈/api_design_and_integration_failures.md) | API 안티 패턴, 호환성 깨짐, 버전 관리 실패, 연쇄 장애 |
-| [data_pipeline_and_etl_failures.md](09_실패에서_배우는_교훈/data_pipeline_and_etl_failures.md) | 스키마 드리프트, 데이터 중복, 검증 공백, 파이프라인 모니터링 |
-| [ml_project_failures.md](09_실패에서_배우는_교훈/ml_project_failures.md) | 데이터 누수, 기대 불일치, 배포 실패, 모델 노후화 |
+| [ai_llm_failures.md](09_lessons_from_failures/ai_llm_failures.md) | 환각, 편향, 정렬 실패 |
+| [code_quality_issues.md](09_lessons_from_failures/code_quality_issues.md) | 일반적인 코딩 실수와 안티 패턴 |
+| [cognitive_logical_issues.md](09_lessons_from_failures/cognitive_logical_issues.md) | 추론 오류와 인지 편향 |
+| [rag_vector_search.md](09_lessons_from_failures/rag_vector_search.md) | RAG와 벡터 검색의 함정 |
+| [security_vulnerabilities.md](09_lessons_from_failures/security_vulnerabilities.md) | 일반적인 보안 취약점 |
+| [system_reliability.md](09_lessons_from_failures/system_reliability.md) | 시스템 장애와 신뢰성 패턴 |
+| [api_design_and_integration_failures.md](09_lessons_from_failures/api_design_and_integration_failures.md) | API 안티 패턴, 호환성 깨짐, 버전 관리 실패, 연쇄 장애 |
+| [data_pipeline_and_etl_failures.md](09_lessons_from_failures/data_pipeline_and_etl_failures.md) | 스키마 드리프트, 데이터 중복, 검증 공백, 파이프라인 모니터링 |
+| [ml_project_failures.md](09_lessons_from_failures/ml_project_failures.md) | 데이터 누수, 기대 불일치, 배포 실패, 모델 노후화 |
 
 ### 10 — 빠른 참조
 
 | 파일 | 설명 |
 |------|-------------|
-| [python_syntax.md](10_빠른_참조/python_syntax.md) | Python 문법 치트시트 |
-| [git_commands.md](10_빠른_참조/git_commands.md) | Git 명령어와 워크플로 |
-| [sql_quick_ref.md](10_빠른_참조/sql_quick_ref.md) | SQL 쿼리 참고 자료 |
-| [linux_commands.md](10_빠른_참조/linux_commands.md) | Linux 명령줄 참고 자료 |
-| [docker_and_kubernetes.md](10_빠른_참조/docker_and_kubernetes.md) | Docker, Docker Compose, Kubernetes, Helm 치트시트 |
-| [regular_expressions.md](10_빠른_참조/regular_expressions.md) | 정규식 문법, 일반 패턴, 언어별 사용법 |
-| [cloud_services_comparison.md](10_빠른_참조/cloud_services_comparison.md) | AWS vs Azure vs GCP 나란히 비교 |
-| [bash_and_shell_scripting.md](10_빠른_참조/bash_and_shell_scripting.md) | Bash 스크립팅, 텍스트 처리, 유용한 원라이너 |
-| [ansible_quick_ref.md](10_빠른_참조/ansible_quick_ref.md) | Ansible 플레이북, 모듈, 역할, 인벤토리, 자동화 치트시트 |
-| [cicd_pipeline_config.md](10_빠른_참조/cicd_pipeline_config.md) | GitHub Actions, GitLab CI, Jenkins, 파이프라인 YAML 패턴 |
-| [prometheus_and_grafana.md](10_빠른_참조/prometheus_and_grafana.md) | PromQL, 익스포터, 대시보드, 알림, 모니터링 스택 |
-| [terraform_quick_ref.md](10_빠른_참조/terraform_quick_ref.md) | IaC 개념, Terraform 명령어, 상태 관리, 모듈 |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md) | Python 문법 치트시트 |
+| [git_commands.md](10_quick_reference/programming/git_commands.md) | Git 명령어와 워크플로 |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md) | SQL 쿼리 참고 자료 |
+| [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md) | Linux 명령줄 참고 자료 |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md) | Docker, Docker Compose, Kubernetes, Helm 치트시트 |
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md) | 정규식 문법, 일반 패턴, 언어별 사용법 |
+| [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md) | AWS vs Azure vs GCP 나란히 비교 |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) | Bash 스크립팅, 텍스트 처리, 유용한 원라이너 |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md) | Ansible 플레이북, 모듈, 역할, 인벤토리, 자동화 치트시트 |
+| [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md) | GitHub Actions, GitLab CI, Jenkins, 파이프라인 YAML 패턴 |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md) | PromQL, 익스포터, 대시보드, 알림, 모니터링 스택 |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md) | IaC 개념, Terraform 명령어, 상태 관리, 모듈 |
 
 ---
 
 ## 학습 경로
 
 ### 초보자를 위한 경로
-1. `07_일반_참조/general_knowledge.md`
-2. `07_일반_참조/technology_and_computing.md`
-3. `06_인문학_및_예술/language_and_english.md`
-4. `01_코딩_및_기술/programming_languages/python/`에서 언어 선택
+1. `07_general_reference/general_knowledge.md`
+2. `07_general_reference/technology_and_computing.md`
+3. `06_humanities_and_arts/language_and_english.md`
+4. `01_coding_and_technology/programming_languages/python/`에서 언어 선택
 
 ### 소프트웨어 개발자를 위한 경로
-1. `01_코딩_및_기술/programming_languages/python/` (또는 원하는 언어)
-2. `01_코딩_및_기술/data_structures_and_algorithms.md`
-3. `01_코딩_및_기술/web_development.md`
-4. `01_코딩_및_기술/database_systems.md`
-5. `01_코딩_및_기술/cloud_architecture.md`
-6. `01_코딩_및_기술/software_architecture_patterns.md`
-7. `01_코딩_및_기술/api_design_and_architecture.md`
-8. `01_코딩_및_기술/testing_methodologies.md`
-9. `02_인공지능_및_머신러닝/artificial_intelligence.md`
+1. `01_coding_and_technology/programming_languages/python/` (또는 원하는 언어)
+2. `01_coding_and_technology/data_structures_and_algorithms.md`
+4. `01_coding_and_technology/database_systems.md`
+5. `01_coding_and_technology/cloud_architecture.md`
+7. `01_coding_and_technology/api_design_and_architecture.md`
+9. `02_ai_and_machine_learning/artificial_intelligence.md`
 
 ### 데이터 과학자를 위한 경로
-1. `03_데이터_과학_및_분석/math_and_logic.md`
-2. `03_데이터_과학_및_분석/statistical_testing_and_experimentation.md`
-3. `03_데이터_과학_및_분석/feature_engineering.md`
-4. `03_데이터_과학_및_분석/ensemble_methods.md`
-5. `03_데이터_과학_및_분석/data_science_and_analytics.md`
-6. `03_데이터_과학_및_분석/data_visualization.md`
-7. `02_인공지능_및_머신러닝/ml_evaluation_and_workflow.md`
-8. `02_인공지능_및_머신러닝/data_engineering_and_pipelines.md`
-9. `01_코딩_및_기술/database_systems.md`
+1. `03_data_science_and_analytics/math_and_logic.md`
+2. `03_data_science_and_analytics/statistical_testing_and_experimentation.md`
+3. `03_data_science_and_analytics/feature_engineering.md`
+4. `03_data_science_and_analytics/ensemble_methods.md`
+5. `03_data_science_and_analytics/data_science_and_analytics.md`
+6. `03_data_science_and_analytics/data_visualization.md`
+7. `02_ai_and_machine_learning/ml_evaluation_and_workflow.md`
+8. `02_ai_and_machine_learning/data_engineering_and_pipelines.md`
+9. `01_coding_and_technology/database_systems.md`
 
 ### 비즈니스 전문가를 위한 경로
-1. `05_비즈니스_및_경제/business_and_economics.md`
-2. `05_비즈니스_및_경제/finance_and_investing.md`
-3. `05_비즈니스_및_경제/marketing_and_digital_strategy.md`
-4. `05_비즈니스_및_경제/management_and_project_methodologies.md`
-5. `05_비즈니스_및_경제/law_and_legal_systems.md`
-6. `05_비즈니스_및_경제/behavioural_economics.md`
-7. `06_인문학_및_예술/geography_and_geopolitics.md`
+1. `05_business_and_economics/business_and_economics.md`
+2. `05_business_and_economics/finance_and_investing.md`
+3. `05_business_and_economics/marketing_and_digital_strategy.md`
+4. `05_business_and_economics/management_and_project_methodologies.md`
+5. `05_business_and_economics/law_and_legal_systems.md`
+6. `05_business_and_economics/behavioural_economics.md`
+7. `06_humanities_and_arts/geography_and_geopolitics.md`
 
 ---
 
@@ -276,7 +267,7 @@ knowledge_base/Korean/
 - **의료 정보:** `medicine_and_healthcare.md`의 내용은 교육 목적이며 전문적인 의료 조언을 대체하지 않습니다.
 - **법률 정보:** `law_and_legal_systems.md`의 내용은 정보 제공 목적이며 법률 조언을 구성하지 않습니다.
 - **금융 정보:** `finance_and_investing.md`의 내용은 교육 목적이며 금융 조언으로 간주되어서는 안 됩니다.
-- **미래 전망:** `08_미래_및_트렌드/`의 내용은 변경될 수 있는 추측성 정보와 전망을 포함합니다.
+- **미래 전망:** `08_future_and_trends/`의 내용은 변경될 수 있는 추측성 정보와 전망을 포함합니다.
 
 ---
 

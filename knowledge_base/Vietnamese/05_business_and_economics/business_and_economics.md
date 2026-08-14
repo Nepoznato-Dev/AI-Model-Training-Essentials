@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Kinh doanh và Kinh tế
 Mọi tổ chức bán sản phẩm hoặc dịch vụ đều là một doanh nghiệp và mọi xã hội sản xuất và phân phối hàng hóa đều là một nền kinh tế. Các khái niệm trong tệp này áp dụng cho dù bạn đang điều hành một hoạt động tự do, làm việc tại một công ty, đang cố gắng tìm hiểu tin tức hay chỉ đang tìm hiểu xem tiền di chuyển khắp thế giới như thế nào.
 ---
@@ -45,7 +46,7 @@ Mọi tổ chức bán sản phẩm hoặc dịch vụ đều là một doanh ng
 ## Doanh nghiệp được cấu trúc như thế nào
 Cấu trúc pháp lý của một doanh nghiệp xác định cách thức nộp thuế, ai chịu trách nhiệm về các khoản nợ và cách đưa ra quyết định.
 | Cấu trúc | Chủ sở hữu | Trách nhiệm pháp lý | Xử lý thuế | Tốt nhất cho |
-|----------|--------|-------------|--------------|----------|
+|----------|--------|----------|--------------|----------|
 | **Sở hữu độc quyền** | 1 người | Trách nhiệm cá nhân vô hạn | Thu nhập được báo cáo trên tờ khai cá nhân | Người làm việc tự do, doanh nghiệp phụ |
 | **Hợp tác** | 2 người trở lên | Trách nhiệm cá nhân vô hạn (đối tác chung) | Chia thu nhập giữa các đối tác | Dịch vụ chuyên nghiệp (công ty luật, tư vấn) |
 | **LLC** | 1+ thành viên | Trách nhiệm hữu hạn (tài sản cá nhân được bảo vệ) | Linh hoạt - có thể bị đánh thuế dưới dạng công ty độc quyền, công ty hợp danh hoặc công ty | Hầu hết các doanh nghiệp vừa và nhỏ |
@@ -62,7 +63,7 @@ Hệ thống phân cấp này tồn tại ở hầu hết mọi tổ chức lớ
 ---
 
 ## Kinh tế - Cách xã hội phân bổ nguồn lực
-Kinh tế học nghiên cứu cách phân phối các nguồn lực khan hiếm cho những nhu cầu vô hạn. Nó được chia thành hai nhánh:
+Kinh tế học nghiên cứu cách các nguồn lực khan hiếm được phân bổ cho những nhu cầu vô hạn. Nó được chia thành hai nhánh:
 **Kinh tế vi mô** xem xét các quyết định cá nhân: Người tiêu dùng lựa chọn giữa các sản phẩm như thế nào? Một công ty định giá như thế nào? Điều gì xảy ra khi một đối thủ cạnh tranh mới gia nhập thị trường?
 **Kinh tế vĩ mô** nhìn vào bức tranh lớn: Tại sao một số quốc gia tăng trưởng trong khi những quốc gia khác lại trì trệ? Điều gì gây ra suy thoái? Lạm phát ảnh hưởng đến sức mua như thế nào?
 ### Cung và Cầu — Cơ chế cốt lõi
@@ -70,7 +71,7 @@ Hầu hết mọi thứ trong kinh tế đều bắt nguồn từ cung và cầu
 | Khái niệm | Điều gì xảy ra | Ví dụ trong thế giới thực |
 |----------|-------------|-------------------|
 | **Cầu tăng, cung không đổi** | Giá tăng | Nhà ở tại các thành phố nổi tiếng |
-| **Cung tăng, cầu không đổi** | Giá giảm | Điện tử khi công nghệ được cải thiện |
+| **Cung tăng, cầu không đổi** | Giá giảm | Điện tử khi công nghệ được cải tiến |
 | **Cả hai đều tăng như nhau** | Số lượng tăng, giá gần như ổn định | Hàng tiêu dùng theo thời gian |
 | **Cú sốc cung** | Giá tăng đột ngột | Khủng hoảng dầu mỏ, thiếu chip |
 | **Cú sốc về nhu cầu** | Giá sụp đổ đột ngột | Đại dịch du lịch sụp đổ |
@@ -123,7 +124,7 @@ Phương trình này luôn cân bằng. Tài sản là những gì doanh nghiệ
 | **Báo cáo thu nhập** (P&L) | Doanh thu, chi phí, lợi nhuận | Kỳ (quý, năm) | "Chúng ta đã kiếm được tiền à?" |
 | **Bảng cân đối kế toán** | Tài sản, nợ phải trả, vốn chủ sở hữu | Thời điểm | "Công ty có giá trị bao nhiêu?" |
 | **Báo cáo lưu chuyển tiền tệ** | Rút tiền, rút ​​tiền | Thời kỳ | "Chúng ta có đủ tiền mặt để hoạt động không?" |
-Một công ty có thể có lợi nhuận trên báo cáo kết quả hoạt động kinh doanh nhưng vẫn hết tiền (nếu khách hàng chưa thanh toán hoặc nếu công ty chi mạnh tay vào thiết bị). Đây là lý do tại sao báo cáo lưu chuyển tiền tệ lại quan trọng - tiền mặt là thứ luôn hoạt động.
+Một công ty có thể có lợi nhuận trên báo cáo kết quả hoạt động kinh doanh nhưng vẫn hết tiền (nếu khách hàng chưa thanh toán hoặc nếu công ty chi nhiều vào thiết bị). Đây là lý do tại sao báo cáo lưu chuyển tiền tệ lại quan trọng - tiền mặt là thứ luôn sáng sủa.
 ### Các tỷ số tài chính quan trọng
 | Tỷ lệ | Công thức | Nó nói gì với bạn |
 |-------|----------|-------------------|
@@ -155,7 +156,7 @@ Hầu hết các công ty khởi nghiệp đều thất bại. Các ước tính
 ---
 
 ## Chuỗi cung ứng và hoạt động
-Quản lý chuỗi cung ứng là nghệ thuật và khoa học để đưa đúng sản phẩm đến đúng nơi vào đúng thời điểm với mức giá hợp lý. Nghe có vẻ đơn giản. Nó cực kỳ khó khăn.
+Quản lý chuỗi cung ứng là quá trình phối hợp để cung cấp đúng sản phẩm đến đúng nơi, đúng thời điểm với đúng chi phí. Mục tiêu rất đơn giản; việc thực hiện rất phức tạp.
 ### Các khái niệm chính
 - **Just-in-time (JIT)**: Chỉ nhận nguyên liệu khi cần, giảm chi phí tồn kho. Toyota đã đi tiên phong trong việc này. Sự đánh đổi: Hệ thống JIT rất mong manh khi chuỗi cung ứng bị gián đoạn (như đã chứng minh tình trạng thiếu chip năm 2020-2022).
 - **Sản xuất tinh gọn**: Loại bỏ lãng phí — bất cứ điều gì không tăng thêm giá trị cho khách hàng. Xác định và loại bỏ “bảy lãng phí”: sản xuất thừa, chờ đợi, vận chuyển, xử lý quá mức, tồn kho, di chuyển và khiếm khuyết.
@@ -187,4 +188,4 @@ Cuộc tranh luận giữa quyền ưu tiên của cổ đông (Milton Friedman:
 ---
 
 ## Bản tóm tắt
-Kinh doanh và kinh tế không tách rời khỏi cuộc sống hàng ngày - chúng là cơ sở hạ tầng của nó. Hiểu được cung và cầu giúp bạn hiểu được giá cả. Hiểu biết về kế toán giúp bạn đánh giá liệu một doanh nghiệp có lành mạnh hay không. Hiểu rõ về tiếp thị giúp bạn biết lý do tại sao bạn mua những gì bạn mua. Hiểu cấu trúc công ty giúp bạn điều hướng các tổ chức. Và hiểu biết về kinh tế học giúp bạn hiểu được thế giới - tại sao một số quốc gia giàu và những quốc gia khác nghèo, tại sao suy thoái xảy ra và những chính sách nào có thể khắc phục chúng. Bạn không cần bằng MBA để hưởng lợi từ những khái niệm này. Bạn chỉ cần hiểu những điều cơ bản.
+Kinh doanh và kinh tế không tách rời khỏi cuộc sống hàng ngày - chúng là cơ sở hạ tầng của nó. Hiểu được cung và cầu giúp bạn hiểu được giá cả. Hiểu biết về kế toán giúp bạn đánh giá liệu một doanh nghiệp có lành mạnh hay không. Hiểu biết về tiếp thị giúp bạn biết lý do tại sao bạn mua những gì bạn mua. Hiểu cấu trúc công ty giúp bạn điều hướng các tổ chức. Và hiểu biết về kinh tế học giúp bạn hiểu được thế giới - tại sao một số quốc gia giàu và những quốc gia khác nghèo, tại sao suy thoái xảy ra và những chính sách nào có thể khắc phục chúng. Bạn không cần bằng MBA để hưởng lợi từ những khái niệm này. Bạn chỉ cần hiểu những điều cơ bản.

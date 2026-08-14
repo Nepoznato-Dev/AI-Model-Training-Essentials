@@ -45,7 +45,7 @@ Fortran（公式翻譯）是仍在廣泛使用的最古老的高級程式語言�
 ---
 
 ## 為什麼 Fortran 很重要
-- **HPC 效能**：Fortran 編譯器產生一些可用的最快的數字程式碼 — 對於陣列操作，通常會匹配或超過 C/C++。
+- **HPC 效能**：Fortran 編譯器產生一些可用的最快的數字程式碼 - 通常在數組操作方面匹配或超過 C/C++。
 - **遺留程式碼庫**：數十年的科學程式碼（氣候模型、物理模擬）都是用 Fortran 寫的。
 - **陣列運算**：原生多維數組支持，具有專為數學計算而設計的語法。
 - **數值穩定性**：語言和編譯器針對浮點計算進行了最佳化。
@@ -769,16 +769,172 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 ---
 
 ## 何時使用 Fortran
-|場景 |為什麼選擇 Fortran |更好的選擇|
+|場景|為什麼選擇 Fortran |更好的選擇|
 |----------|----------|--------------------|
 | HPC/超級計算|針對數值效能進行最佳化 | C++（小心），Julia |
-|科學模擬 |數十年經過驗證的程式碼 | Python（用於原型設計）、C++ |
+|科學模擬|數十年經過驗證的程式碼 | Python（用於原型設計）、C++ |
 |氣候/天氣模型 |遺留程式碼庫；效能 | — |
 |計算物理|原生數組操作 | Python (NumPy)、茱莉亞 |
 |財務建模 (HPC) |大規模計算的效能 | C++、Python |
-|通用應用開發|不適合| Python、Java、Go |
+|通用應用開發 |不適合| Python、Java、Go |
 |網頁開發|不適合| JavaScript、Python |
 |資料科學（互動式）|不是工作流程| Python、R |
+---
+
+## 綜合問答
+### Q1：Fortran 90 和現代 Fortran (2008+) 有什麼不同？
+**答：** 現代 Fortran 增加了許多功能，使其更具表現力：
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2：Fortran 陣列與 C 陣列有何不同？
+**A:** Fortran 陣列是具有內建操作的一流物件：
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3：如何在 Fortran 中達到最大效能？
+**答：** 關鍵做法：
+- 對所有虛擬參數使用明確 `intent`
+- 到處使用`implicit none`
+- 優先使用數組操作而不是循環
+- 使用連續的記憶體存取模式
+- 使用編譯器最佳化標誌：`-O3 -march=native -ffast-math`
+- 使用`gprof`或特定於編譯器的工具進行配置
+- 將`pure`和`elemental`用於編譯器可以最佳化的函數
+### Q4：如何將 Fortran 與 C 連接？
+**A:** 使用`iso_c_binding`模組：
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5：Fortran 專案應該使用什麼建置系統？
+**答：** CMake 具有出色的 Fortran 支援。 FPM（Fortran 套件管理器）是現代的本機選項：
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：求解有限差分偏微分方程
+**第 1 步：了解問題**
+求解一维热方程：du/dt = alpha * d²u/dx²
+**第 2 步：確定方法**
+使用有限差分離散空間和時間。使用明確的方案。
+**步驟 3：實施**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**第 4 步：驗證**
+透過網格細化檢查守恆性、收斂性，並與解析解進行比較。
+### 問題 2：矩陣對角化
+**第 1 步：了解問題**
+求對稱矩陣的特徵值和特徵向量。
+**第 2 步：確定方法**
+透過 Fortran 介面使用 LAPACK 的`dsyev`例程。
+**步驟 3：實施**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**第 4 步：驗證**
+檢查每個特徵對的 A*v = lambda*v。
 ---
 
 ＃＃ 概括

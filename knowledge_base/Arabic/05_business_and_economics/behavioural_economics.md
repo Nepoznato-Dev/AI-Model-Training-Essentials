@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "الاقتصاد السلوكي وعلم القرار"
-الوصف: "التحيزات المعرفية، نظرية الاحتمال، الاستدلال، الدفعات، هندسة الاختيار"
-الفئة: "ادارة واقتصاد"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة_بواسطة: "فريق قاعدة معارف الأعمال والاقتصاد"
+# Metadata
+title: "Behavioural Economics and Decision Science"
+description: "Cognitive biases, prospect theory, heuristics, nudges, choice architecture"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [السلوكية والاقتصاد والأعمال والاقتصاد]
-مستوى الصعوبة: "مبتدئ"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "6 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [behavioural, economics, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # الاقتصاد السلوكي وعلوم القرار
 يدرس الاقتصاد السلوكي كيف يتخذ الناس القرارات فعليا، وليس كيف يتخذها الوكلاء العقلانيون. يفترض الاقتصاد التقليدي أن الناس عقلانيون، وأنانيون، وجيدون في معالجة المعلومات. وقد أظهرت عقود من الأبحاث التي أجراها كانيمان، وتفرسكي، وثالر، وآخرون أن هذا غير دقيق إلى حد كبير. يستخدم الناس الاختصارات العقلية، ويتأثرون بسياق غير ذي صلة، ويثقلون المعلومات الحديثة، ويرتكبون أخطاء يمكن التنبؤ بها بشكل منهجي. يعد فهم هذه الأنماط أمرًا ضروريًا لتصميم منتجات وسياسات ومؤسسات وقرارات شخصية أفضل.
 ---
@@ -80,7 +85,7 @@ next_review: "2027-08-05"
 ---
 
 ## نظرية الاحتمال
-بديل كانيمان وتفيرسكي لنظرية المنفعة المتوقعة:
+بديل كانيمان وتفرسكي لنظرية المنفعة المتوقعة:
 | المبدأ | الوصف |
 |-----------|------------|
 | **الاعتماد على المرجع** | يقوم الأشخاص بتقييم النتائج بالنسبة إلى نقطة مرجعية (عادة الوضع الراهن)، وليس بالقيمة المطلقة

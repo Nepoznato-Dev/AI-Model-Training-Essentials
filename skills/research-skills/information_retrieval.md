@@ -3,7 +3,7 @@
 title: "Information Retrieval"
 description: "Efficiently find, evaluate, and synthesize information from various sources"
 category: "Research Skills"
-version: "1.0.0"
+version: "1.1.0"
 status: "active"
 
 # Contribution
@@ -13,6 +13,10 @@ authors:
     role: "original_author"
 contributors: []
 changelog:
+  - version: "1.1.0"
+    date: "2026-08-10"
+    author: "AI Model Training Team"
+    changes: "Added quick-start search strategy guide and source selection reference"
   - version: "1.0.0"
     date: "2026-01-15"
     author: "AI Model Training Team"
@@ -20,7 +24,7 @@ changelog:
 
 # Review
 created: "2026-01-15"
-last_modified: "2026-01-15"
+last_modified: "2026-08-10"
 review_date: "2026-07-15"
 reviewed_by: "Research Skills Team"
 next_review: "2027-01-15"
@@ -46,6 +50,42 @@ contribution:
 
 ## Overview
 The ability to efficiently find, evaluate, and synthesize information from various sources to answer questions, solve problems, and make informed decisions.
+
+## Quick-Start: Choosing Where to Search
+
+```
+Need to find information?
+│
+├─ Academic / scientific question?
+│   ├─ Peer-reviewed needed → Google Scholar → PubMed → IEEE Xplore
+│   └─ Latest research → arXiv → Semantic Scholar → conference proceedings
+│
+├─ Technical / programming question?
+│   ├─ How to implement something → Stack Overflow → GitHub → official docs
+│   └─ Architecture / best practices → Blog posts → conference talks → books
+│
+├─ Business / market question?
+│   ├─ Industry data → Statista → Gartner → IBISWorld
+│   └─ Company info → Crunchbase → SEC filings → annual reports
+│
+├─ Current events / real-time data?
+│   └─ News aggregators → official sources → fact-check with 2+ outlets
+│
+└─ Need a quick factual answer?
+    └─ Wikipedia (as starting point) → follow citations to primary sources
+```
+
+### Source Quality Quick Reference
+
+| Source Type | Credibility | Speed | Depth | When to Use |
+|------------|------------|-------|-------|-------------|
+| Peer-reviewed papers | High | Slow | Deep | Establishing facts, academic rigor |
+| Official documentation | High | Medium | Varies | Technical accuracy, current APIs |
+| Industry reports | Medium-High | Medium | Medium | Market context, trend analysis |
+| Expert blog posts | Medium | Fast | Medium | Practical insights, real-world experience |
+| Stack Overflow | Medium | Fast | Narrow | Specific technical solutions |
+| Wikipedia | Medium | Fast | Broad | Initial orientation, finding primary sources |
+| Social media / forums | Low-Medium | Fast | Shallow | Community sentiment, emerging trends |
 
 ## Core Competencies
 

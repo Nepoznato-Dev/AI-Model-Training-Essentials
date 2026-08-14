@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Java
 Java, Sun Microsystems'den James Gosling tarafından oluşturulan ve 1995 yılında piyasaya sürülen, statik olarak yazılan, nesne yönelimli bir programlama dilidir. Tasarım felsefesi - "bir kez yaz, her yerde çalıştır" (WORA) - derlenmiş Java kodunun JVM uygulamasına sahip herhangi bir platformda çalışmasına izin veren Java Sanal Makinesi (JVM) aracılığıyla gerçekleştirilir. Java tarihte en yaygın kullanılan programlama dillerinden biridir ve kurumsal arka uçları, Android uygulamalarını, büyük veri sistemlerini ve finansal hizmetleri destekler.
-Yaklaşık 30 yaşında olmasına rağmen Java gelişmeye devam ediyor. Modern Java (sürüm 17+), kayıtları, mühürlü sınıfları, kalıp eşleştirmeyi, sanal iş parçacıklarını ve daha yeni dillerle rekabet eden büyüyen bir ekosistemi içerir.
+Yaklaşık 30 yaşında olmasına rağmen Java gelişmeye devam ediyor. Modern Java (sürüm 17+) kayıtları, mühürlü sınıfları, kalıp eşleştirmeyi, sanal iş parçacıklarını ve daha yeni dillerle rekabet eden büyüyen bir ekosistemi içerir.
 ---
 
 ## Java Neden Önemlidir
@@ -56,7 +57,7 @@ Yaklaşık 30 yaşında olmasına rağmen Java gelişmeye devam ediyor. Modern J
 | **Ayrıntı düzeyi** | Python, Kotlin veya Go'dan daha fazla standart metin gerektirir | Lombok'u, kayıtları (Java 16+) ve modern IDE'leri kullanın |
 | **Bellek kullanımı** | JVM yükü, daha yüksek temel bellek anlamına gelir | JVM bayraklarını ayarlayın; küçük dağıtımlar için GraalVM yerel görüntülerini kullanın |
 | **Başlatma zamanı** | Kısa ömürlü işlemler için JVM'nin ısınması yavaş olabilir | GraalVM yerel görüntüsü veya CLI araçları için C/Go kullanın |
-| **İşaretli istisnalar** | Kurtarılamayacak özel durumların işlenmesini zorlar | Denetlenmeyen istisnaları veya`Optional`modelini kullanın |
+| **İşaretlenen istisnalar** | Kurtarılamayacak özel durumların işlenmesini zorlar | Denetlenmeyen özel durumları veya`Optional`modelini kullanın |
 | **Değer türü yok** | Her şey bir nesnedir (Valhalla projesine kadar) | İlkel özel koleksiyonları kullanın (Eclipse Koleksiyonları, Trove) |
 ---
 
@@ -691,9 +692,9 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 |---------------|----------|
 | **Kotlin** | Java'ya modern alternatif; Google'ın tercih ettiği Android dili; %100 Java uyumlu |
 | **Skala** | İşlevsel + OOP hibriti; Apache Spark'a güç veriyor |
-| **Kapanış** | JVM'deki Lisp lehçesi; işlevsel programlama |
+| **Kapanış** | JVM'de Lisp lehçesi; fonksiyonel programlama |
 | **Harika** | JVM için dinamik komut dosyası oluşturma; Gradle derleme dosyalarında kullanılır |
-Bunların hepsi Java kütüphanelerini kullanabilir ve Java da onların kütüphanelerini kullanabilir. JVM yalnızca Java değil, platformdur.
+Bunların hepsi Java kütüphanelerini kullanabilir ve Java da kütüphanelerini kullanabilir. JVM yalnızca Java değil, platformdur.
 ---
 
 ## Java Sürümleri
@@ -719,5 +720,376 @@ Bunların hepsi Java kütüphanelerini kullanabilir ve Java da onların kütüph
 | CLI araçları | Yavaş başlatma | Git, Pas |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Java'da`==`ile`.equals()`arasındaki fark nedir?
+**C:**`==`nesne referanslarını (kimlik) karşılaştırır — iki değişkenin bellekteki aynı nesneyi gösterip göstermediğini kontrol eder. `.equals()`nesne içeriğini karşılaştırır (değer eşitliği). İlkel değerler için (`int`,`double`),`==`değerleri doğrudan karşılaştırır. Nesneler için (`String` dahil), içeriği karşılaştırmak için her zaman `.equals()`'yi kullanın. Bunun tek istisnası, `==`'nin doğru olduğu`null`ile karşılaştırmadır.
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### S2: JVM çöp toplayıcı nasıl çalışır ve hangisini kullanmalıyım?
+**C:** GC, artık ulaşılamayan nesnelerden belleği otomatik olarak geri alır. Modern JVM'ler (21+) çeşitli toplayıcılar sunar: G1 (varsayılan, dengeli), ZGC (ultra düşük duraklama süreleri, <1 ms) ve Shenandoah (düşük duraklama, OpenJDK). Çoğu uygulama için varsayılan G1 uygundur. Gecikmeye duyarlı hizmetler için ZGC'yi (`-XX:+UseZGC`) kullanın. Üretim odaklı toplu işleme için Paralel GC'yi (`-XX:+UseParallelGC`) kullanın.
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### S3: `Stream API`'yi geleneksel döngülere karşı ne zaman kullanmalıyım?
+**C:** İşlem net bir işlem hattı olduğunda (filtreleme, eşleme, azaltma) Akışları kullanın; niyeti daha iyi ifade ederler ve`.parallelStream()`ile kolayca paralel hale gelirler. Harici durumu değiştirmeniz gerektiğinde, performans kritik olduğunda (akışlar ek yüke sahiptir) veya mantık karmaşık kontrol akışı içerdiğinde (kesme, devam etme, çoklu dönüşler) basit yinelemeler için geleneksel döngüleri kullanın. Basit`for-each`işlemleri için akışlardan kaçının.
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### S4: Modern Java'da kayıtlar, mühürlü sınıflar ve kalıp eşleştirme nedir?
+**C:** Kayıtlar (Java 16) değişmez veri taşıyıcılarıdır; yapıcıları, alıcıları,`equals`,`hashCode`ve `toString`'yi otomatik olarak oluştururlar. Kapalı sınıflar (Java 17), hangi sınıfların kendilerini genişletebileceğini kısıtlar; sonlu tür hiyerarşilerini modellemek için kullanışlıdır. Desen eşleştirme (Java 21),`switch`ifadelerinin türleri, kayıtları ve değerleri bozarak ayrıntılı`instanceof`zincirlerinin yerini almasına olanak tanır.
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### S5: İşaretli ve denetlenmeyen istisnaları doğru şekilde nasıl ele alabilirim?
+**C:** İşaretlenen istisnalar (`IOException`,`SQLException`) `throws`'de bildirilmeli veya yakalanmalıdır; bunlar arayanın bilmesi gereken kurtarılabilir koşulları temsil eder. Denetlenmeyen istisnalar (`NullPointerException`,`IllegalArgumentException`gibi`RuntimeException`alt sınıfları) programlama hatalarını temsil eder. En iyi uygulama: kontrol edilen istisnaları dikkatli kullanın (bağlantı oluştururlar), beklenen yokluk için `Optional`'yi tercih edin ve API sınırlarını geçerken kontrol edilen istisnaları kontrol edilmeyenlerin içine sarın.
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: İş parçacığı açısından güvenli bir Üretici-Tüketici Boru Hattı Oluşturun
+**Sorun Açıklaması:** Java'da birden fazla üreticinin iş öğeleri oluşturduğu, birden fazla tüketicinin bunları eşzamanlı olarak işlediği ve sistemin kalan öğelerin boşaltılmasıyla sorunsuz kapatmayı desteklediği bir üretici-tüketici hattı tasarlayın.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) iş öğelerini üreticiler ve tüketiciler arasında tamponlamak için sınırlı bir kuyruk, (2) öğeleri ekleyen birden fazla üretici iş parçacığı, (3) öğeleri işleyen birden fazla tüketici iş parçacığı, (4) kapatma sinyali verecek ve kalan öğeleri boşaltacak bir mekanizma. Java'nın `BlockingQueue`'si bunun için özel olarak tasarlanmıştır.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Sınırsız bellek büyümesini önlemek için`ArrayBlockingQueue`(sınırlı) kullanın.
+- Kapatma sinyali için zehirli hap modeli kullanın.
+- İş parçacığı havuzu yönetimi için`ExecutorService`kullanın.
+- Tüm tüketicilerin boşaltma işlemini bitirmesini beklemek için `CountDownLatch`'yi kullanın.
+**3. Adım — Çözümü Uygulayın:**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Sınırlı kuyruk OOM'u önler:`ArrayBlockingQueue(1000)`belleği sınırlar.
+- Zehirli hap modeli: Her tüketici hapını aldıktan sonra temiz bir şekilde çıkar.
+- Zaman aşımına sahip `poll(1, SECONDS)`, üreticilerin yavaş olması durumunda tüketicilerin sonsuza kadar bloke olmasını önler.
+- Üretim: Sınırsız için `LinkedBlockingQueue`'yi veya ultra düşük gecikme süreli işlem hatları için`Disruptor`(LMAX) kullanın.
+### Sorun 2: Özel Açıklama Tabanlı Doğrulayıcı Uygulama
+**Sorun Açıklaması:** Özel ek açıklamaları kullanarak bir doğrulama çerçevesi oluşturun. Kullanıcılar alanlara `@NotNull`, `@Min(0)`, `@Max(100)`,`@Size(min=1, max=50)`ile açıklama ekler ve ihlallerin listesini almak için `Validator.validate(obj)`'yi arar.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) parametreler içeren özel açıklamalara, (2) çalışma zamanında açıklamaları okuyan yansıma tabanlı bir doğrulayıcıya, (3) tüm doğrulama hatalarını içeren bir sonuç nesnesine. Bu, Java'nın açıklama işleme ve yansıtma yeteneklerini gösterir.
+**2. Adım — Yaklaşımı Belirleyin:**
+-`@Retention(RUNTIME)`ve`@Target(FIELD)`ile ek açıklamaları tanımlayın.
+- Alanları yinelemek için`Class.getDeclaredFields()`kullanın.
+- Ek açıklama değerlerini okumak için `Field.getAnnotation()`'yi kullanın.
+- Alan değerlerini açıklama kısıtlamalarıyla karşılaştırın.
+- İhlalleri bir listede toplayın.
+**3. Adım — Çözümü Uygulayın:**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Yansıma ek yükü: doğrulama için kabul edilebilir (istek başına bir kez çağrılır). Sıcak yollar için, alan aramalarını önbelleğe alın veya derleme zamanı açıklama işlemeyi kullanın (Hazırda Bekletme Doğrulayıcı gibi).
+- Genişletilebilirlik: `validate()`'de ek açıklama + bir işleyici bloğu oluşturarak yeni ek açıklamalar ekleyin.
+- Üretim:`jakarta.validation`(Bean Validation 3.0) kullanın — tüm bunları ve daha fazlasını, açıklama işlemcileri aracılığıyla derleme zamanı işlemeyle yapar.
+### Sorun 3: Yeniden Deneme ile Hız Sınırlı bir HTTP İstemcisi Oluşturun
+**Sorun Açıklaması:** Üstel geri çekilmeyle başarısız istekleri otomatik olarak yeniden deneyen, hız sınırlarına uyan ve devre kesmeyi destekleyen (başarısız bir hizmeti çağırmayı durduran) bir HTTP istemci sarmalayıcısı oluşturun.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) üstel geri çekilme ve titreşim ile yeniden deneme mantığı, (2) hedef hizmetin aşırı yüklenmesini önlemek için hız sınırlama, (3) devre kesici modeli — N ardışık arızadan sonra, bir bekleme süresi için hizmeti aramayı bırakın. Bunlar birleştirilebilir üç endişedir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Temel istemci olarak`java.net.http.HttpClient`(Java 11+) kullanın.
+- Geri alma için`Thread.sleep`ile sarmalayıcı olarak yeniden denemeyi uygulayın.
+- Hız sınırlaması için`Semaphore`kullanın (veya jeton kovası için `java.time`).
+- Devre kesiciyi durum makinesi olarak uygulayın: KAPALI → AÇIK → HALF_AÇIK.
+**3. Adım — Çözümü Uygulayın:**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Titreşimli üstel geri çekilme sürünün gürlemesini önler (tüm yeniden denemeler aynı anda vurur).
+- Devre kesici:`failureThreshold`ardışık arızalarından sonra devre`cooldownMs`için açılır — hiçbir istek gönderilmez ve arızalı hizmeti korur.
+- Hız sınırlayıcı: Periyodik ikmal kapasitesi ile `Semaphore`.
+- Üretim:`resilience4j`kullanın — üç modeli de (yeniden deneme, hız sınırlayıcı, devre kesici) uygun uygulamalar, ölçümler ve Spring Boot entegrasyonuyla sağlar.
+---
+
 ## Özet
-Java şimdiye kadar oluşturulmuş en önemli programlama dillerinden biridir. Dünyanın bankacılık sistemlerini, Android telefonlarını, büyük veri hatlarını ve kurumsal arka uçlarını çalıştırır. Modern Java (21+), Java 8'den çok farklı bir dildir; daha kısa ve özdür, daha anlamlıdır ve yeni dillerle giderek daha rekabetçi hale gelir. JVM ekosistemi (Kotlin, Scala, Clojure) erişimini daha da genişletiyor. Kurumsal gelişim için Java güvenli ve güçlü bir seçim olmaya devam ediyor.
+Java şimdiye kadar oluşturulmuş en önemli programlama dillerinden biridir. Dünyanın bankacılık sistemlerini, Android telefonlarını, büyük veri hatlarını ve kurumsal arka uçları çalıştırır. Modern Java (21+), Java 8'den çok farklı bir dildir; daha kısa ve özdür, daha anlamlıdır ve yeni dillerle giderek daha rekabetçi hale gelir. JVM ekosistemi (Kotlin, Scala, Clojure) erişimini daha da genişletiyor. Kurumsal gelişim için Java güvenli ve güçlü bir seçim olmaya devam ediyor.

@@ -30,7 +30,7 @@
 | **RTX 4090** (24GB) | ✅ Very fast | 30 sec | $1600 | ⭐⭐⭐ Overkill for learning |
 | **CPU only** | ⚠️ Slow but works | 30-60 min | $0 | ⭐⭐ Acceptable |
 
-**Example**: The [RAG Chatbot](../projects/rag-chatbot/) runs perfectly on Colab Free!
+**Example**: The [RAG Chatbot](../../projects/rag-chatbot/) runs perfectly on Colab Free!
 
 ---
 
@@ -396,7 +396,7 @@ Month 7+:   Cloud/RTX 4090 (as needed)
 
 - **[CUDA OOM Errors](../errors/CUDA_OOM.md)** - Fix memory issues
 - **[PyTorch Installation](../errors/Torch_Not_Installed.md)** - Setup guide
-- **[RAG Chatbot](../projects/rag-chatbot/)** - Test your setup
+- **[RAG Chatbot](../../projects/rag-chatbot/)** - Test your setup
 - **[Case Studies](../case_studies/)** - See what others built
 
 ---
@@ -405,6 +405,6 @@ Month 7+:   Cloud/RTX 4090 (as needed)
 
 **Remember**: The best hardware is the hardware you have **right now**. Start learning today! 🚀
 
-[Start with Colab](https://colab.research.google.com/) | [View Projects](../projects/) | [Troubleshoot Errors](../errors/)
+[Start with Colab](https://colab.research.google.com/) | [View Projects](../../projects/) | [Troubleshoot Errors](../errors/)
 
 </div>

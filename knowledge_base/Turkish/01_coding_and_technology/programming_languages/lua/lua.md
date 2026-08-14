@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lua
-Lua, uygulamaları genişletmek için tasarlanmış hafif, yerleştirilebilir bir kodlama dilidir. 1993 yılında Brezilya'daki Rio de Janeiro Papalık Katolik Üniversitesi'nde oluşturulan Lua, mevcut en hızlı kodlama dillerinden biridir. Küçük kaplama alanı (yorumlayıcı ~120 KB'tır) ve basitliği, onu oyun geliştirme komut dosyası oluşturma, gömülü sistemler ve yapılandırma için ilk tercih haline getirir.
-Lua, en çok Roblox'un (aylık 200 milyondan fazla kullanıcıya sahip oyun platformu), World of Warcraft eklentilerinin ve çok sayıda oyun motorunun (Love2D, Defold, Corona SDK) arkasındaki kodlama dili olarak bilinir. Ayrıca Nginx (OpenResty), Redis ve Wireshark'ta da kullanılır.
+Lua, uygulamaları genişletmek için tasarlanmış hafif, yerleştirilebilir bir kodlama dilidir. 1993 yılında Brezilya'daki Rio de Janeiro Papalık Katolik Üniversitesi'nde oluşturulan Lua, mevcut en hızlı kodlama dillerinden biridir. Küçük kaplama alanı (yorumlayıcı ~120 KB'dir) ve basitliği, onu oyun geliştirme komut dosyası oluşturma, gömülü sistemler ve yapılandırma için ilk tercih haline getirir.
+Lua, Roblox'un (aylık 200 milyondan fazla kullanıcıya sahip oyun platformu), World of Warcraft eklentilerinin ve çok sayıda oyun motorunun (Love2D, Defold, Corona SDK) arkasındaki kodlama dili olarak bilinir. Ayrıca Nginx (OpenResty), Redis ve Wireshark'ta da kullanılır.
 ---
 
 ## Lua Neden Önemlidir
@@ -624,5 +625,253 @@ CMD lua5.4 src/main.lua
 | Veri bilimi | Ekosistem değil | Python, R |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Lua neden 0 tabanlı indeksleme yerine 1 tabanlı indekslemeyi kullanıyor?
+**C:** Lua, programcı olmayan kullanıcılar için tasarlanmıştır ve doğal sayma kurallarına uyar.`#`operatörü,`ipairs`ve dize işlevlerinin tümü 1 tabanlı dizin oluşturmayı kullanır:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+Bu, standart kitaplığın tamamında tutarlıdır. C (0 tabanlı) ile arayüz oluştururken ofsete dikkat edin.
+### S2: Lua'da nesne yönelimli kalıpları nasıl uygularım?
+**C:** Lua, OOP için tabloları ve metatabloları kullanıyor.`__index`meta yöntemi, prototiplerde yöntem aramayı etkinleştirir:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### S3: Eşyordamlar nasıl çalışır ve bunları ne zaman kullanmalıyım?
+**C:** Eşyordamlar, yürütmeyi askıya alabilen ve devam ettirebilen ortak iş parçacıklarıdır. Yineleyiciler, eşzamansız kalıplar ve oyun mantığı için idealdirler:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### S4: Lua'daki hataları gidermenin en iyi yolu nedir?
+**C:** Hataları yakalamak ve başarı/başarısızlık modelleri için birden fazla değer döndürmek için`pcall`/`xpcall`kullanın:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### S5: Lua performansını oyunlar ve gömülü sistemler için nasıl optimize edebilirim?
+**C:** Temel uygulamalar:
+- Tüm değişkenler için`local`kullanın — küresel erişim önemli ölçüde daha yavaştır
+- Yerellerde sık erişilen tablo alanlarını önbelleğe alın
+- Boyutu bilindiğinde tabloları önceden tahsis edin:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- Sıcak döngülerde geçici tablolar oluşturmaktan kaçının
+- Birçok dizeyi birleştirmek için`..`yerine`table.concat`kullanın
+-`os.clock()`veya hata ayıklama kancalarına sahip profil
+- LuaJIT'te C API yerine C birlikte çalışma için FFI'yi kullanın
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Yapılandırma Ayrıştırıcı Oluşturma
+**1. Adım: Sorunu Anlayın**
+Her satırın`key = value`olduğu basit bir anahtar/değer yapılandırma dosyasını ayrıştırın.
+**2. Adım: Yaklaşımı Belirleyin**
+Satırları okuyun, `=`'ye bölün, boşlukları kırpın ve bir tabloda saklayın.
+**3. Adım: Uygulama**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**4. Adım: Genişletin**
+Bölüm desteği (`[section]`), zorlama türü (sayılar, boolean'lar) ve iç içe tablolar ekleyin.
+### Sorun 2: Basit Bir Olay Sisteminin Uygulanması
+**1. Adım: Sorunu Anlayın**
+Adlandırılmış etkinliklere abone olmayı ve bunları yayınlamayı destekleyen bir etkinlik yayıcı oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+İşleyici işlevleri listelerine olay adlarını eşleyen bir tablo kullanın.
+**3. Adım: Uygulama**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**4. Adım: Doğrulayın**
+İşleyicilerde birden fazla olay, kaldırma ve hata işleme ile test edin.
+### Sorun 3: Eşyordam Tabanlı Ardışık Düzen Oluşturma
+**1. Adım: Sorunu Anlayın**
+Her aşamanın verileri filtrelediği veya dönüştürdüğü, eşyordamlar yoluyla bağlanan bir veri işleme hattı oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Eşyordamları işlem hattı aşamaları olarak kullanın; her aşama bir öncekinden çeker ve bir sonrakine iter.
+**3. Adım: Uygulama**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**4. Adım: Optimize edin**
+Bu çekme tabanlı işlem hattı, minimum bellek yüküyle aynı anda bir öğeyi işler; büyük veya sonsuz akışlar için idealdir.
+---
+
 ## Özet
-Lua mükemmel bir yerleştirme dilidir. Küçük, hızlı ve basittir; diğer uygulamaların içinde yaşayacak ve onlara komut dosyası oluşturma yetenekleri sağlayacak şekilde tasarlanmıştır. Oyun geliştirme, Roblox ve gömülü sistemler için Lua mükemmel bir seçimdir. Genel amaçlı bir dil değildir, ancak kendine özgü alanı (komut dosyası oluşturma ve yerleştirme) açısından neredeyse eşsizdir.
+Lua mükemmel bir yerleştirme dilidir. Küçük, hızlı ve basittir; diğer uygulamaların içinde barındırılacak ve onlara komut dosyası oluşturma yetenekleri sağlayacak şekilde tasarlanmıştır. Oyun geliştirme, Roblox ve gömülü sistemler için Lua mükemmel bir seçimdir. Genel amaçlı bir dil değildir, ancak kendine özgü alanı (komut dosyası oluşturma ve yerleştirme) açısından neredeyse eşsizdir.

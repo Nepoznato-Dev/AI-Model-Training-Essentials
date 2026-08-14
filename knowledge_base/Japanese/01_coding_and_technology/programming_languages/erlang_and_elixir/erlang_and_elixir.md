@@ -928,5 +928,108 @@ CMD ["bin/my_app", "start"]
 |シンプルな REST API |可能ですが、小規模なサービスには過剰です | Go、Node.js、Python |
 ---
 
+## 総合的な Q&A
+### Q1: Erlang の「クラッシュさせる」哲学はどのように機能しますか?
+**A:** Erlang は防御的なプログラミングの代わりに、プロセスをクラッシュさせ、スーパーバイザ経由で再起動させます。
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2: Elixir パイプラインはどのように機能しますか?
+**A:**`|>`演算子は、ある関数の結果を最初の引数として次の関数に渡します。
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3: Erlang と Elixir の違いは何ですか?
+**A:** Elixir は、最新の構文を使用して Erlang VM (BEAM) 上で実行されます。
+- Elixir: パイプ演算子、マクロ、プロトコル、文字列補間
+- Erlang: よりシンプルな構文、OTP ビルトイン、より実戦テスト済み
+- どちらも同じ同時実行モデル、VM、エコシステムを共有します
+### Q4: GenServer は Elixir でどのように動作しますか?
+**A:** GenServer はステートフル プロセスの標準抽象化です。
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5: Elixir でのエラーはどのように処理すればよいですか?
+**A:** 例外には`try/rescue`を使用し、予想される失敗には`{:ok, result} | {:error, reason}`を使用します。
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## 思考連鎖による問題解決
+### 問題 1: フォールトトレラントなキー/値ストアの構築
+**ステップ 1: 問題を理解する**
+プロセスがクラッシュしても存続するキーと値のストアを作成します。
+**ステップ 2: アプローチを特定する**
+スーパーバイザとともに GenServer を使用します。
+**ステップ 3: 実装**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**ステップ 4: 確認**
+プロセスを強制終了し、新しい状態で再起動することを確認します。
+### 問題 2: 同時 Web スクレイパー
+**ステップ 1: 問題を理解する**
+複数の URL を同時にフェッチし、結果を収集します。
+**ステップ 2: アプローチを特定する**
+同時実行には Elixir タスクを使用します。
+**ステップ 3: 実装**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**ステップ 4: 最適化**
+大規模な URL リストに対してレート制限、再試行、ストリーミングを追加します。
+---
+
 ＃＃ まとめ
 Erlang は、ほとんどの言語が依然として抱えている、ダウンしないシステムの構築という問題を解決しました。その同時実行モデル (軽量プロセス、メッセージ パッシング、「クラッシュさせる」監視) は、主流の言語が現在発見し始めているものよりも数十年先を行っています。 Elixir は Erlang のスーパーパワーを利用し、優れた開発者エクスペリエンスを備えた最新の構文でラップします。リアルタイム システム、分散システム、またはフォールト トレラント システムを構築している場合、Erlang/Elixir は投資する価値があります。学習曲線は現実のもの (関数型プログラミング、パターン マッチング、プロセス思考) ですが、その見返りはソフトウェアが稼働し続け、予測どおりに拡張できることです。

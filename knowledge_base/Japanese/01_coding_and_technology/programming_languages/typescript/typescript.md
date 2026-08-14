@@ -40,16 +40,16 @@ contribution:
 ---
 
 # TypeScript
-TypeScript は、Microsoft (Anders Hejlsberg 率いる) によって開発され、2012 年に初めてリリースされた JavaScript の静的に型指定されたスーパーセットです。TypeScript は、オプションの型アノテーション、インターフェイス、ジェネリックス、高度な型システム機能を JavaScript に追加し、JavaScript が実行される場所ならどこでも実行できるプレーンな JavaScript にコンパイルします。 TypeScript は別個の言語やランタイムではありません。それは型チェッカーを備えた JavaScript です。
+TypeScript は、Microsoft (Anders Hejlsberg 率いる) によって開発され、2012 年に初めてリリースされた JavaScript の静的に型付けされたスーパーセットです。TypeScript は、オプションの型アノテーション、インターフェイス、ジェネリックス、高度な型システム機能を JavaScript に追加し、JavaScript が実行される場所ならどこでも実行できるプレーンな JavaScript にコンパイルします。 TypeScript は別個の言語やランタイムではありません。それは型チェッカーを備えた JavaScript です。
 TypeScript は、大規模な JavaScript 開発の標準となっています。 React、Angular、VS Code、Deno、およびほとんどの主要なオープンソース JavaScript プロジェクトは TypeScript で書かれています。何らかの大きなサイズの新しい JavaScript プロジェクトを開始する場合は、TypeScript がデフォルトとして推奨されます。
 ---
 
 ## TypeScript が重要な理由
-- **コンパイル時にバグをキャッチ**: 型エラーはコードが実行される前に検出されますが、本番環境では検出されません。
-- **IDE サポートの向上**: オートコンプリート、定義への移動、リファクタリング、インライン ドキュメントのすべてが大幅に改善されました。
+- **コンパイル時にバグを検出**: 型エラーはコードが実行される前に検出されます (運用環境では検出されません)。
+- **IDE サポートの向上**: オートコンプリート、定義への移動、リファクタリング、およびインライン ドキュメントのすべてが大幅に改善されました。
 - **自己文書化コード**: 型は最新の状態を保つドキュメントとして機能します。
 - **100% JavaScript 互換**: 有効な JavaScript はすべて有効な TypeScript です。徐々に取り入れていくことも可能です。
-- **高度な型システム**: 共用型、交差型、条件型、マップ型、テンプレート リテラル型 - 型システムは、複雑なドメイン ロジックをモデル化するのに十分な表現力を持っています。
+- **高度な型システム**: 共用型、交差型、条件付き型、マップされた型、テンプレート リテラル型 - 型システムは、複雑なドメイン ロジックをモデル化するのに十分な表現力を持っています。
 - **業界での採用**: Angular ではこれが必要です。 React エコシステムでは圧倒的にこれが使用されています。ほとんどの新しい npm パッケージには型定義が付属しています。
 ## トレードオフ
 |制限 |詳細 |一般的な回避策 |
@@ -461,7 +461,7 @@ my-ts-project/
 └── .github/workflows/ci.yml
 ```
 
-###`tsconfig.json`— TypeScript の設定
+###`tsconfig.json`— TypeScript の構成
 ```json
 {
   "compilerOptions": {
@@ -811,6 +811,398 @@ CMD ["node", "dist/index.js"]
 |新しい JavaScript プロジェクト | TypeScript を後から追加するとコストが高くなります。小さなスクリプトのみのプレーン JS |
 |ライブラリ / npm パッケージ |コンシューマーはオートコンプリートと型チェックを取得します。 -- |
 **経験則**: JavaScript プロジェクトに数百行を超える場合は、TypeScript を使用してください。
+---
+
+## 総合的な Q&A
+### Q1:`type`と`interface`の違いは何ですか?それぞれをいつ使用する必要がありますか?
+**A:** どちらもオブジェクトの形状を定義しますが、機能が異なります。 `interface`は宣言のマージ (同じ名前の複数の宣言のマージ)、`extends` の継承をサポートしており、パブリック API の慣用的な選択肢です。 `type`は、共用体タイプ、交差タイプ、マップされたタイプ、条件付きタイプ、およびテンプレート リテラル タイプなど、あらゆる高度なタイプをサポートします。ベスト プラクティス: オブジェクト シェイプとパブリック API には`interface`を使用します。共用体、ユーティリティ、複合型の演算には`type`を使用します。
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Q2: ジェネリック医薬品はどのように機能し、なぜ重要ですか?
+**A:** ジェネリックを使用すると、型の安全性を維持しながら、任意の型で動作する関数、クラス、および型を作成できます。`any`(型情報が失われます) の代わりに、ジェネリックは入力型と出力型の間の関係を保持します。これらは、再利用可能でタ​​イプセーフなコードの基礎です。
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3: ユーティリティ タイプとは何ですか?どれについて知っておくべきですか?
+**A:** TypeScript は、既存の型を変換する組み込みのユーティリティ型を提供します。最も重要なもの:`Partial<T>`(すべてオプション)、`Required<T>` (すべて必須)、`Pick<T, K>` (キーの選択)、`Omit<T, K>` (キーの除外)、`Record<K, V>` (キーと値のマップ)、`Exclude<T, U>` (共用体からの削除)、`ReturnType<T>` (関数の戻り値の抽出)タイプ)、`Awaited<T>` (Promise のラップ解除)。これらを学習すると、カスタム タイプの操作のほとんどが不要になります。
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4: 非同期コードを入力し、タイプセーフな方法でエラーを処理するにはどうすればよいですか?
+**A:** 非同期関数は自動的に`Promise<T>`を返します。T は戻り値の型です。`await`を使用して Promise をアンラップします。エラー処理については、TypeScript には型指定された例外がありませんが、タイプ ガードと結果の型を作成できます。 「結果パターン」(Rust からインスピレーションを得た) は、コンパイル時のエラー処理を提供します。
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5: 宣言ファイル (.d.ts) とは何ですか?また、サードパーティのタイプを使用するにはどうすればよいですか?
+**A:** 宣言ファイルには、TypeScript 型が組み込まれていない JavaScript ライブラリの種類が記述されています。これらには型情報のみが含まれます (ランタイム コードは含まれません)。 DefinitelyTyped:`npm install --save-dev @types/lodash`からコミュニティが管理するタイプをインストールします。独自のライブラリの場合は、`package.json` に`types`フィールドを追加するか、ソースと一緒に`.d.ts`ファイルを含めます。アンビエント宣言には`declare module`を使用します。
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## 思考連鎖による問題解決
+### 問題 1: タイプセーフなイベント エミッターを構築する
+**問題ステートメント:** TypeScript で、各イベント名が特定のペイロード タイプにマップされる汎用のタイプセーフ イベント エミッターを作成します。コンパイラは、コンパイル時に間違ったイベント名とペイロード タイプを検出する必要があります。
+**ステップ 1 — 問題を理解する:**
+イベント システムが必要です。(1) イベントはペイロード タイプで定義され、(2)`emit`は正しいペイロードを持つ有効なイベント名のみを受け入れます。(3)`on`は正しく型指定されたハンドラーを持つ有効なイベント名のみを受け入れます。これには、イベント マップ インターフェイスを介してマップされた型とジェネリックスが必要です。
+**ステップ 2 — アプローチを特定する:**
+-`EventMap`タイプを定義します:`{ [eventName: string]: payloadType }`。
+- イベント名を制約するには、`keyof EventMap` を使用します。
+-`EventMap[K]`を使用して、特定のイベントのペイロード タイプを取得します。
+- リスナーを`Map<string, Function[]>`に保存します。
+**ステップ 3 — ソリューションの実装:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**ステップ 4 — 検証と最適化:**
+- タイプ セーフティ: コンパイラは、コンパイル時に間違ったイベント名と間違ったペイロード形状を検出します。
+-`on`は、便利なクリーンアップのために購読解除関数を返します。
+-`once`は、最初の呼び出し後に自動サブスクライブ解除するようにリスナーをラップします。
+- 本番環境の場合:`listenerCount`、`removeAllListeners`を追加し、キャンセルには`AbortSignal`の使用を検討してください。
+### 問題 2: タイプセーフな SQL クエリ ビルダーを実装する
+**問題ステートメント:** 列名と型が TypeScript インターフェイスから派生する SQL クエリ ビルダーを構築します。ビルダーは、コンパイル時に無効な列名と型の不一致を防ぐ必要があります。
+**ステップ 1 — 問題を理解する:**
+(1)`keyof T`に制約された列名、(2) 列に従って型指定された WHERE 句の値、(3) クエリを構築するためのチェーン可能な API が必要です。これには、`Record<string, unknown>`によって制約されたジェネリックスが必要です。
+**ステップ 2 — アプローチを特定する:**
+- 列名の制約には`keyof T`を使用します。
+- 値型制約には`T[K]`を使用します。
+- パラメータ化されたクエリを使用して SQL 文字列を構築します (SQL インジェクションを防止します)。
+- チェーン可能なメソッドは`this`を返します。
+**ステップ 3 — ソリューションの実装:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**ステップ 4 — 検証と最適化:**
+- SQL インジェクション防止: すべての値はパラメータ化されたクエリ (`$1`、`$2`) を通過し、補間されることはありません。
+- 型安全性: 列名と値の型はコンパイル時にチェックされます。
+- 拡張性: 同じパターンに従って`join`、`groupBy`、`having`、`insert`、`update`メソッドを追加します。
+- 本番環境:`kysely`または`drizzle-orm`を使用します。これらは、完全な SQL カバレッジでこの型安全性を提供します。
+### 問題 3: タイプ セーフティを備えた有限ステート マシンを実装する
+**問題ステートメント:** コンパイル時に有効な遷移が強制される、タイプセーフな有限状態マシンを作成します。各状態には開始/終了アクションを持つことができ、マシンは現在の状態を追跡する必要があります。
+**ステップ 1 — 問題を理解する:**
+(1) 型として定義された状態とイベント、(2) 型レベルでマップされた有効な遷移、(3) コンパイラによる無効な遷移の防止、(4) コールバックによるランタイム状態の追跡が必要です。これには、マップされた型と条件付き型が必要です。
+**ステップ 2 — アプローチを特定する:**
+-`TransitionMap`:`{ [State]: { [Event]: NextState } }`を定義します。
+- ジェネリックスを使用して、現在の状態に基づいて`send(event)`を制約します。
+- 実行時に変数を使用して状態を追跡します。
+- 状態ごとの入口/出口コールバックをサポートします。
+**ステップ 3 — ソリューションの実装:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**ステップ 4 — 検証と最適化:**
+- ランタイムの安全性: 無効な遷移では`send`がスローされます。
+- タイプ セーフティ:`EventsFor`タイプは、コンパイル時に状態ごとに有効なイベントを抽出します。
+- 開始/終了コールバックは遷移時に自動的に起動されます。
+- 運用環境の場合:`xstate`を使用します。これは、視覚的なデバッグ、階層状態、ガード、およびアクションを備えた完全なステート マシン ライブラリを提供します。
 ---
 
 ＃＃ まとめ

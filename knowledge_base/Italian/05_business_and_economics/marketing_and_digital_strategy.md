@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Marketing e strategia digitale
-Il marketing è il modo in cui le aziende creano, comunicano e forniscono valore ai clienti. Non si tratta solo di pubblicità: è l'intero sistema per comprendere ciò di cui le persone hanno bisogno, posizionare un prodotto per soddisfare tale esigenza e costruire una relazione che trasforma gli acquirenti in sostenitori. La rivoluzione digitale non ha cambiato i fondamenti, ma ha trasformato gli strumenti, i canali e la velocità con cui tutto accade.
+Il marketing è il modo in cui le aziende creano, comunicano e forniscono valore ai clienti. Comprende l’intero sistema di comprensione delle esigenze dei clienti, posizionamento di un prodotto per soddisfare tali esigenze e costruzione di relazioni che convertono gli acquirenti in sostenitori. La rivoluzione digitale ha trasformato gli strumenti, i canali e la velocità del marketing, pur mantenendo i fondamentali invariati.
 ---
 
 ## Fondamenti di marketing
@@ -109,7 +109,7 @@ Il viaggio da sconosciuto a cliente fedele:
 | **Instagram** | 18–34; visivo | Foto, bobine, storie |
 | **TikTok** | Generazione Z; breve video | Contenuti autentici e di tendenza |
 | **LinkedIn** | Professionisti; B2B | Leadership di pensiero, notizie aziendali |
-| **X (Twitter)** | Notizie, tecnologia, politica | Coinvolgimento in tempo reale e in forma breve |
+| **X (Twitter)** | Notizie, tecnologia, politica | Coinvolgimento in forma breve e in tempo reale |
 | **YouTube** | Tutte le età; forma lunga | Tutorial, recensioni, intrattenimento |
 | **Facebook** | 25+; ampio | Gruppi, eventi, annunci mirati |
 | **Pinterest** | Scoperta visiva; fare la spesa | Fai da te, ricette, moda, casa |
@@ -129,7 +129,7 @@ Il viaggio da sconosciuto a cliente fedele:
 | Metrico | Formula | Cosa significa |
 |--------|---------|-------|
 | **CAC** (Costo di acquisizione del cliente) | Spesa totale di marketing ÷ nuovi clienti | Quanto costa acquisire un cliente |
-| **CLV** (valore della vita del cliente) | Entrate medie per cliente × margine lordo × durata media del cliente | Valore totale che un cliente genera nel tempo |
+| **CLV** (valore della vita del cliente) | Ricavo medio per cliente × margine lordo × durata media del cliente | Valore totale che un cliente genera nel tempo |
 | **ROAS** (ritorno sulla spesa pubblicitaria) | Entrate pubblicitarie ÷ spesa pubblicitaria | La pubblicità è redditizia? |
 | **Tasso di conversione** | Conversioni ÷ visitatori totali × 100 | Con quanta efficacia trasformi i visitatori in clienti |
 | **Tasso di abbandono** | Clienti persi ÷ clienti totali × 100 | Quanti clienti stai perdendo |
@@ -208,4 +208,4 @@ Il growth hacking è l'intersezione tra marketing, prodotto e dati, incentrato s
 ---
 
 ## Riepilogo
-Fondamentalmente il marketing riguarda la comprensione delle persone: di cosa hanno bisogno, cosa temono, cosa le motiva ad agire. Il toolkit digitale è cambiato radicalmente, ma gli aspetti fondamentali non sono cambiati: conosci il tuo cliente, offri valore reale, comunica chiaramente, misura tutto e ripeti. Il miglior marketing non sembra marketing: sembra aiuto.
+Il marketing consiste fondamentalmente nel comprendere le persone: i loro bisogni, preoccupazioni e motivazioni. Il kit di strumenti digitali si è evoluto notevolmente, ma i fondamenti rimangono: comprendere il cliente, offrire valore, comunicare in modo efficace, misurare i risultati e ripetere. Un marketing efficace si allinea così strettamente alle esigenze dei clienti che viene vissuto come assistenza piuttosto che come promozione.

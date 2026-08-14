@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Méthodes d'ensemble"
-description : "Bagging, boosting, stacking, vote, forêts aléatoires, XGBoost"
-catégorie : "Science des données et analyse"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Ensemble Methods"
+description: "Bagging, boosting, stacking, voting, random forests, XGBoost"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de la base de connaissances sur la science des données et l'analyse"
-next_review : "2027-08-05"
-#Classement
-tags : [ensemble, méthodes, data-science-and-analytics]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "7 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ensemble, methods, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Méthodes d'ensemble
 Les méthodes d'ensemble combinent plusieurs modèles d'apprentissage automatique pour produire de meilleures prédictions que ce qu'un seul modèle pourrait réaliser seul. L’intuition est simple : si vous disposez de plusieurs modèles qui sont chacun assez précis mais commettent des erreurs différentes, la combinaison de leurs prédictions annulera les erreurs individuelles et produira un résultat plus robuste. Les ensembles sont à l'origine des solutions d'apprentissage automatique les plus compétitives et restent parmi les techniques les plus fiables dans les systèmes de production.

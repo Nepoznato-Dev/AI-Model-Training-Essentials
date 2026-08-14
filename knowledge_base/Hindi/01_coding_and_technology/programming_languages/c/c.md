@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "सी"
-विवरण: "सी प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [सी, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "35 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "C"
+description: "Comprehensive reference for the C programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [c, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # सी
 सी एक सामान्य-प्रयोजन, प्रक्रियात्मक प्रोग्रामिंग भाषा है जिसे 1969 और 1973 के बीच बेल लैब्स में डेनिस रिची द्वारा बनाया गया था। इसे यूनिक्स ऑपरेटिंग सिस्टम को लागू करने के लिए डिज़ाइन किया गया था, और यह 50 वर्षों के बाद भी सबसे व्यापक रूप से उपयोग की जाने वाली प्रोग्रामिंग भाषाओं में से एक बनी हुई है। सी निम्न-स्तरीय मेमोरी एक्सेस, एक न्यूनतम मानक लाइब्रेरी और मशीन निर्देशों के लिए एक साफ मैपिंग प्रदान करता है - जिससे यह वह आधार बन जाता है जिस पर अधिकांश आधुनिक कंप्यूटिंग का निर्माण किया जाता है।
 C ऑपरेटिंग सिस्टम (लिनक्स, विंडोज कर्नेल, macOS), एम्बेडेड सिस्टम, डेटाबेस इंजन (SQLite, PostgreSQL), कंपाइलर (पायथन का CPython, रूबी का MRI), और वस्तुतः हर अन्य प्रोग्रामिंग भाषा रनटाइम के पीछे की भाषा है। सी को समझने का मतलब यह समझना है कि कंप्यूटर वास्तव में कैसे काम करते हैं।
@@ -210,14 +215,14 @@ double average(int count, ...) {
 ## मानक पुस्तकालय
 | हेडर | उद्देश्य | सामान्य कार्य |
 |--------|--------||
-|  __संरक्षित_0__ | इनपुट/आउटपुट | प्रिंटफ, स्कैनएफ, फॉपेन, एफगेट्स, एफप्रिंटफ |
-|  __संरक्षित_1__ | सामान्य उपयोगिताएँ | मॉलोक, फ्री, एग्जिट, एटोई, रैंड, क्यूसॉर्ट |
-|  __संरक्षित_2__ | स्ट्रिंग ऑपरेशन | स्ट्रलेन, स्ट्रैपी, स्ट्रंकपी, स्ट्रैम्प, मेम्सीपीई |
-|  __संरक्षित_3__ | गणित | पाप, क्योंकि, sqrt, पाउ, फैब्स, छत, फर्श |
-|  __संरक्षित_4__ | चरित्र वर्गीकरण | इसाल्फा, इसडिजिट, टॉपर, टोलोअर |
-|  __संरक्षित_5__ | दिनांक और समय | समय, घड़ी, अंतरसमय, स्ट्रफ़टाइम |
-|  __संरक्षित_6__ | डिबगिंग दावे | जोर (शर्त) |
-|  __संरक्षित_7__ | त्रुटि कोड | इरनो, पेररर, स्ट्रेरर |
+| `<stdio.h>`| इनपुट/आउटपुट | प्रिंटफ, स्कैनएफ, फॉपेन, एफगेट्स, एफप्रिंटफ |
+| `<stdlib.h>`| सामान्य उपयोगिताएँ | मॉलोक, फ्री, एग्जिट, एटोई, रैंड, क्यूसॉर्ट |
+| `<string.h>`| स्ट्रिंग ऑपरेशन | स्ट्रलेन, स्ट्रैपी, स्ट्रंकपी, स्ट्रैम्प, मेम्सीपीई |
+| `<math.h>`| गणित | पाप, क्योंकि, sqrt, पाउ, फैब्स, छत, फर्श |
+| `<ctype.h>`| चरित्र वर्गीकरण | इसाल्फा, इसडिजिट, टॉपर, टोलोअर |
+| `<time.h>`| दिनांक और समय | समय, घड़ी, अंतरसमय, स्ट्रफ़टाइम |
+| `<assert.h>`| डिबगिंग दावे | जोर (शर्त) |
+| `<errno.h>`| त्रुटि कोड | इरनो, पेररर, स्ट्रेरर |
 ---
 
 ## उन्नत सिंटैक्स और पैटर्न
@@ -628,11 +633,11 @@ print(lib.c_add(3, 5))  # 8
 ### अन्य भाषाओं से C को कॉल करना
 | भाषा | तंत्र | उदाहरण |
 |---|----|---|
-| पायथन | सीटाइप्स, सीएफएफआई |  __संरक्षित_0__ |
-| रूबी | बेला |  __संरक्षित_1__ |
-| जावा | जेएनआई |  __संरक्षित_2__ |
-| सी++ | बाहरी "सी" |  __संरक्षित_3__ |
-| जंग | बाहरी "सी" + एफएफआई |  __संरक्षित_4__ |
+| पायथन | सीटाइप्स, सीएफएफआई | `ctypes.CDLL("./lib.so")`|
+| रूबी | बेला | `Fiddle.dlopen("./lib.so")`|
+| जावा | जेएनआई | `System.loadLibrary("mylib")`|
+| सी++ | बाहरी "सी" | `extern "C" void my_func();`|
+| जंग | बाहरी "सी" + एफएफआई | `extern "C" { fn my_func(); }`|
 ---
 
 ## डिज़ाइन पैटर्न
@@ -848,6 +853,514 @@ make clean    # Removes build artifacts
 | सी17 | 2018 | बग समाधान और स्पष्टीकरण (कोई नई सुविधाएँ नहीं) |
 | सी23 | 2024 | nullptr, typeof, constexpr, बेहतर प्रीप्रोसेसर |
 अधिकांश उत्पादन कोड C11 या C17 को लक्षित करते हैं। C23 आधुनिक सुविधाएं लाता है लेकिन अपनाने में समय लगता है।
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: C में पॉइंटर्स और ऐरे के बीच क्या अंतर है?
+**ए:** ऐरे और पॉइंटर्स संबंधित हैं लेकिन अलग-अलग हैं। एक सारणी मेमोरी का एक सन्निहित ब्लॉक है जिसका एक निश्चित आकार संकलन समय पर ज्ञात होता है। पॉइंटर एक वेरिएबल है जो मेमोरी एड्रेस रखता है। फ़ंक्शंस में पास होने पर ऐरे पॉइंटर्स में बदल जाते हैं, लेकिन`sizeof(array)`कुल आकार देता है जबकि`sizeof(pointer)`केवल पॉइंटर आकार (4 या 8 बाइट्स) देता है। सरणी नाम परिवर्तनीय मान नहीं हैं - आप`arr++`नहीं कर सकते।
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Q2: मैं मेमोरी को ठीक से कैसे प्रबंधित करूं और लीक से कैसे बचूं?
+**ए:** प्रत्येक`malloc`/`calloc`में एक संगत`free`होना चाहिए। सामान्य गलतियाँ: फ्री करना भूल जाना (रिसाव), दो बार फ्री करना (अपरिभाषित व्यवहार), फ्री करने के बाद मेमोरी का उपयोग करना (उपयोग-बाद-फ्री), और`malloc`रिटर्न वैल्यू की जाँच न करना (विफलता पर शून्य)। सर्वोत्तम अभ्यास: एक ही मॉड्यूल में आवंटित और मुक्त करें, त्रुटि प्रबंधन के लिए "गोटो क्लीनअप" पैटर्न का उपयोग करें, और मुक्त पॉइंटर्स को हमेशा NULL पर सेट करें।
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Q3: C में त्रुटि प्रबंधन के लिए सर्वोत्तम अभ्यास क्या हैं?
+**ए:** सी में कोई अपवाद नहीं है। त्रुटि प्रबंधन रिटर्न मान (त्रुटि कोड, NULL पॉइंटर्स, नकारात्मक मान) का उपयोग करता है। मानक पैटर्न: फ़ंक्शंस विफलता पर एक स्थिति कोड या NULL लौटाते हैं, और सिस्टम कॉल के लिए`errno`सेट करते हैं। त्रुटियों पर संसाधन सफाई के लिए "गोटो क्लीनअप" पैटर्न का उपयोग करें। हमेशा`malloc`,`fopen`और अन्य फ़ंक्शंस के रिटर्न मानों की जांच करें जो विफल हो सकते हैं।
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Q4: मेमोरी लेआउट में स्ट्रक्चर, यूनियन और बिटफील्ड कैसे भिन्न होते हैं?
+**ए:** संरचनाएं संरेखण के लिए संभावित पैडिंग के साथ सदस्यों को क्रमिक रूप से प्रस्तुत करती हैं। यूनियन सभी सदस्यों को एक ही मेमोरी स्थान पर ओवरले करती है - आकार सबसे बड़े सदस्य के बराबर होता है। बिटफ़ील्ड एकाधिक मानों को एक पूर्णांक में पैक करते हैं। संरचनाएं विषम डेटा के लिए हैं, केवल एक फ़ील्ड सक्रिय होने पर टाइप-पनिंग या स्थान बचाने के लिए यूनियनें हैं, और कॉम्पैक्ट फ़्लैग स्टोरेज के लिए बिटफ़ील्ड हैं।
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Q5: फ़ंक्शन पॉइंटर्स क्या हैं, और मुझे उनका उपयोग कब करना चाहिए?
+**ए:** फ़ंक्शन पॉइंटर्स किसी फ़ंक्शन का पता संग्रहीत करते हैं और कॉलबैक, बहुरूपता और प्लगइन आर्किटेक्चर को सक्षम करते हैं। वे उच्च-क्रम के कार्यों (जैसे `qsort`, `bsearch`) के लिए C के दृष्टिकोण की नींव हैं। उन्हें सिंटैक्स के साथ घोषित करें: `return_type (*name)(parameter_types)`।
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक गतिशील सरणी (वेक्टर) लागू करें
+**समस्या कथन:** C में एक गतिशील सरणी लागू करें जो तत्वों को जोड़ने पर स्वचालित रूप से बढ़ती है, O(1) परिशोधित परिशिष्ट का समर्थन करती है, और उचित सफाई प्रदान करती है। यह C++`std::vector`का C समकक्ष है।
+**चरण 1 - समस्या को समझें:**
+एक गतिशील सरणी की आवश्यकता है: (1) एक ढेर-आवंटित बफर, (2) आकार (प्रयुक्त तत्व) और क्षमता (आवंटित स्लॉट) की ट्रैकिंग, (3) आकार क्षमता तक पहुंचने पर पुनः आवंटन, (4) उचित मेमोरी क्लीनअप। 2x का वृद्धि कारक O(1) परिशोधित परिशिष्ट देता है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- प्रारंभिक आवंटन के लिए `malloc`, वृद्धि के लिए`realloc`का उपयोग करें।
+- एक संरचना में डेटा पॉइंटर, आकार और क्षमता को स्टोर करें।
+-`size == capacity`होने पर क्षमता दोगुनी करके बढ़ें।
+-`push`,`pop`,`get`,`set`, और`free`संचालन प्रदान करें।
+**चरण 3 - समाधान लागू करें:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- परिशोधित O(1) पुश: दोहरीकरण का मतलब है कि प्रत्येक तत्व को कुल मिलाकर अधिकतम O(लॉग एन) बार कॉपी किया गया है।
+-`vec_get`और`vec_pop`में सीमा जांच त्रुटियों को जल्दी पकड़ लेती है - C में आवश्यक है जहां कोई रनटाइम सुरक्षा जाल नहीं है।
+- मेमोरी: क्षमता 4 से शुरू करके 100 पुश के बाद, क्षमता 128 (4→8→16→32→64→128) तक पहुंच जाती है।
+- उत्पादन: अप्रयुक्त मेमोरी को पुनः प्राप्त करने के लिए बढ़ते समय`shrink_to_fit`(सटीक आकार में रीलोक) का उपयोग करें।
+### समस्या 2: एक सरल हैश तालिका बनाएँ
+**समस्या कथन:** टकराव समाधान के लिए अलग चेनिंग का उपयोग करके स्ट्रिंग कुंजियों और पूर्णांक मानों के साथ एक हैश तालिका लागू करें। सम्मिलित करने, देखने और हटाने के कार्यों का समर्थन करें।
+**चरण 1 - समस्या को समझें:**
+एक हैश तालिका हैश फ़ंक्शन के माध्यम से सरणी सूचकांकों की कुंजियों को मैप करती है। टकराव (एक ही सूचकांक पर अलग-अलग कुंजी मैपिंग) को अलग-अलग चेनिंग के साथ हल किया जाता है: प्रत्येक बाल्टी प्रविष्टियों की एक लिंक की गई सूची है। हमें चाहिए: हैश फ़ंक्शन, इंसर्ट, लुकअप, डिलीट और क्लीनअप।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- स्ट्रिंग कुंजियों के अच्छे वितरण के लिए FNV-1a हैश का उपयोग करें।
+- बकेट पॉइंटर्स की सारणी (लिंक्ड सूची प्रमुख)।
+- लोड फैक्टर ट्रैकिंग; जब लोड फैक्टर सीमा से अधिक हो जाए तो आकार बदलें।
+- सभी ऑपरेशन O(1) औसत, O(n) सबसे खराब स्थिति में हैं।
+**चरण 3 - समाधान लागू करें:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- अच्छे हैश फ़ंक्शन और उचित लोड फैक्टर के साथ डालने/लुकअप/डिलीट के लिए औसत ओ(1)।
+- FNV-1a न्यूनतम गणना के साथ स्ट्रिंग कुंजियों के लिए उत्कृष्ट वितरण प्रदान करता है।
+-`hashmap_remove`में पॉइंटर-टू-पॉइंटर तकनीक (`Entry **pp`) विशेष मामलों के बिना हेड-ऑफ-लिस्ट और मिड-लिस्ट डिलीट दोनों को खूबसूरती से संभालती है।
+- उत्पादन: लोड फैक्टर सीमा से अधिक होने पर रीहैशिंग जोड़ें। बेहतर कैश प्रदर्शन के लिए ओपन एड्रेसिंग (रैखिक जांच) का उपयोग करें।
+### समस्या 3: निर्माता-उपभोक्ता के लिए रिंग बफ़र लागू करें
+**समस्या कथन:** ऑपरेशन के दौरान गतिशील आवंटन के बिना उच्च-प्रदर्शन अंतर-थ्रेड संचार के लिए सी में लॉक-मुक्त एकल-निर्माता एकल-उपभोक्ता रिंग बफर लागू करें।
+**चरण 1 - समस्या को समझें:**
+एक रिंग बफ़र (गोलाकार बफ़र) पढ़ने और लिखने वाले सूचकांकों के साथ एक निश्चित आकार के सरणी का उपयोग करता है। जब बफ़र भर जाता है, तो लेखक ब्लॉक या ओवरराइट कर देता है। एसपीएससी (एकल-निर्माता एकल-उपभोक्ता) के लिए, हम अधिकतम थ्रूपुट के लिए लॉक के बजाय परमाणु संचालन का उपयोग कर सकते हैं।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- प्रारंभ में एक बार निश्चित आकार की सरणी आवंटित की गई।
+- परमाणु सूचकांक के रूप में`head`(स्थिति पढ़ें) और`tail`(स्थिति लिखें)।
+- निर्माता`tail`को आगे बढ़ाता है; उपभोक्ता अग्रिम `head`।
+-`head == tail`होने पर बफर खाली होता है; पूर्ण जब`(tail + 1) % capacity == head`.
+- उचित मेमोरी ऑर्डरिंग के साथ C11 एटॉमिक्स का उपयोग करें।
+**चरण 3 - समाधान लागू करें:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- लॉक-मुक्त: केवल परमाणु संचालन - कोई म्यूटेक्स नहीं, कोई संदर्भ स्विच नहीं।
+- मेमोरी ऑर्डरिंग:`release`लिखने पर यह सुनिश्चित करता है कि डेटा इंडेक्स अपडेट से पहले दिखाई दे;  पढ़ने पर`acquire`यह सुनिश्चित करता है कि हम सूचकांक पढ़ने के बाद डेटा देखें।
+- पावर-ऑफ-2 क्षमता:`% capacity`के बजाय`& (capacity - 1)`को सक्षम बनाता है - काफी तेज।
+- थ्रूपुट: आधुनिक हार्डवेयर पर प्रति सेकंड अरबों ऑपरेशन।
+- उत्पादन: गलत साझाकरण को रोकने के लिए`head`और`tail`के बीच पैडिंग जोड़ें (प्रत्येक अपनी कैश लाइन पर)।
 ---
 
 ## सारांश

@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "C++"
-description: "مرجع شامل للغة برمجة C++ يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "C++"
+description: "Comprehensive reference for the C++ programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [CPP، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "31 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [cpp, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # سي ++
 C++ هي لغة برمجة مجمعة للأغراض العامة أنشأها Bjarne Stroustrup، وتم إصدارها لأول مرة في عام 1985. وهي توسع لغة C بميزات موجهة للكائنات، وأسماء عامة، و- في الإصدارات الحديثة (C++ 11 والإصدارات الأحدث) - تجريدات عالية المستوى مثل lambdas، والمؤشرات الذكية، ومكتبة النماذج القياسية (STL). تتبع لغة C++ مبدأ "صفر النفقات العامة": يجب ألا تدفع مقابل الميزات التي لا تستخدمها.
 C++ هي اللغة المفضلة عندما تحتاج إلى الأداء العالي والقوة التعبيرية. إنه يشغل محركات الألعاب (Unreal Engine)، والمتصفحات (Chrome، Firefox)، وقواعد البيانات (MongoDB)، وأنظمة التشغيل (أجزاء من Windows وmacOS)، وأنظمة التداول المالي، وعمليات المحاكاة في الوقت الفعلي.
@@ -41,7 +46,7 @@ C++ هي اللغة المفضلة عندما تحتاج إلى الأداء ا�
 
 ## لماذا تعتبر لغة C++ مهمة؟
 - **الأداء مع التعبير**: سرعة قريبة من C مع الفئات والقوالب والتجريدات الحديثة.
-- ** مبدأ الحمل الصفري **: يتم تجميع التجريدات إلى نفس الكود الذي ستكتبه يدويًا في لغة C.
+- ** مبدأ الحمل الصفري **: يتم تجميع التجريدات إلى نفس الكود الذي تكتبه يدويًا في لغة C.
 - **قاعدة تعليمات برمجية ضخمة**: عقود من البنية التحتية الحيوية - الألعاب والمتصفحات وقواعد البيانات والأنظمة المدمجة.
 - **النماذج المتعددة**: يدعم أنماط البرمجة الإجرائية والموجهة للكائنات والعامة والوظيفية.
 - **التدمير الحتمي**: يضمن RAII تنظيف الموارد بشكل متوقع - دون توقف أداة تجميع البيانات المهملة مؤقتًا.
@@ -734,5 +739,379 @@ cmake --build build
 بالنسبة للمشاريع الجديدة، استهدف C++20 كحد أدنى.
 ---
 
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين`std::unique_ptr`و`std::shared_ptr`و `std::weak_ptr`؟
+**أ:** يمثل`unique_ptr`الملكية الحصرية — يمكن لمؤشر واحد فقط امتلاك المورد. يحتوي على صفر حمل (مثل المؤشر الأولي) ولا يمكن نسخه، بل نقله فقط.  يمثل`shared_ptr`الملكية المشتركة — حيث تتشارك مؤشرات متعددة في المورد، مع حساب المراجع. عندما يتم تدمير`shared_ptr`الأخير، يتم تحرير المورد. `weak_ptr`هو مراقب غير مالك لـ`shared_ptr`- فهو لا يزيد من عدد المراجع ويستخدم لكسر المراجع الدائرية.
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### السؤال الثاني: ما هي دلالات الحركة، وما أهميتها؟
+**أ:** تسمح دلالات النقل (C++11) بنقل الموارد (ذاكرة الكومة، ومقابض الملفات، وما إلى ذلك) من كائن مؤقت بدلاً من نسخها. يأخذ مُنشئ/مهمة النقل مرجع قيمة (`T&&`) و"يسرق" موارد المصدر، ويتركه في حالة صالحة ولكن غير محددة. يؤدي هذا إلى التخلص من النسخ غير الضرورية وهذا هو السبب وراء كفاءة إعادة تخصيص `std::vector`.
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### س3: متى يجب أن أستخدم`auto`ومتى يجب أن أحدد الأنواع بشكل صريح؟
+**أ:** استخدم`auto`عندما يكون النوع واضحًا من السياق (حلقات التكرار، واستدعاءات`make_unique`/ `make_shared`، وأنواع lambda، وأنواع القوالب المعقدة). حدد الأنواع بشكل صريح عندما لا يكون النوع واضحًا، أو عندما تحتاج إلى تحويلات ضمنية، أو في توقيعات واجهة برمجة التطبيقات العامة. يفضل النمط "تلقائي دائمًا" (AAA)`auto`للمتغيرات المحلية؛ يعتبر أسلوب "التلقائي عندما يكون مفيدًا" أكثر تحفظًا.
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### Q4: كيف تعمل المفاهيم (C++20) على تحسين كود القالب؟
+**أ:** تقيد المفاهيم معلمات القالب بمتطلبات محددة، مما يؤدي إلى إنتاج رسائل خطأ واضحة وتمكين التحميل الزائد للوظيفة على قيود القالب. قبل المفاهيم، تم استخدام SFINAE و`static_assert`، وكلاهما ينتج أخطاء غامضة. تجعل المفاهيم رمز القالب قابلاً للقراءة والتركيب.
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### س5: ما هي قاعدة الخمسة، وما علاقتها بقاعدة الصفر؟
+**أ:** القاعدة الخمسة: إذا قمت بتعريف أي واحد من المدمر، أو منشئ النسخ، أو نسخة المهمة، أو منشئ النقل، أو مهمة النقل، فيجب عليك تحديد الخمسة جميعًا. قاعدة الصفر (المفضلة): فئات التصميم بحيث لا تحتاج إلى أي من هذه — استخدم أنواع RAII (`std::string`,`std::vector`,`std::unique_ptr`) كأعضاء، والعروض الخاصة التي ينشئها المترجم ستفعل الشيء الصحيح تلقائيًا.
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة 1: تنفيذ قائمة انتظار المنتج والمستهلك الآمن مع النطاقات
+**بيان المشكلة:** أنشئ قائمة انتظار محددة وآمنة للمنتج والمستهلك باستخدام نطاقات C++ 20 لجانب المستهلك. يجب أن تمنع قائمة الانتظار المنتجين عندما تكون ممتلئة والمستهلكين عندما تكون فارغة، وتدعم الإغلاق الرشيق.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) قائمة انتظار محدودة مع حظر الدفع/البوب، (2) أمان الخيط عبر كائن المزامنة (mutex) ومتغيرات الحالة، (3) طريقة للإشارة إلى إيقاف التشغيل، (4) تكامل نطاقات C++20 حتى يتمكن المستهلكون من استخدام حلقات for المستندة إلى النطاق.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم`std::mutex`+`std::condition_variable`للحظر.
+- استخدم`std::queue<T>`كحاوية أساسية.
+- استخدم`std::optional<T>`كنوع الإرجاع - إيقاف تشغيل إشارات `std::nullopt`.
+- تنفيذ مكرر قائم على الحارس لدعم النطاقات.
+**الخطوة 3 — تنفيذ الحل:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- سلامة الخيط:`std::mutex`يحمي جميع حالات قائمة الانتظار؛ متغيرات الحالة تتعامل مع الحظر.
+- إيقاف التشغيل بسلاسة: يقوم`shutdown()`بإيقاظ جميع النوادل؛  تقوم الدالة`pop()`بإرجاع`nullopt`عندما تكون فارغة ويتم إيقاف تشغيلها.
+- دعم النطاق: يقارن حارس المكرر (المنشأ افتراضيًا) بأي مكرر منهك.
+- الإنتاج: استخدم`boost::lockfree::spsc_queue`للمنتج الفردي والمستهلك الفردي الخالي من القفل، أو`folly::ProducerConsumerQueue`للسيناريوهات عالية الإنتاجية.
+### المشكلة الثانية: تنفيذ مسح النوع لأي نوع
+**بيان المشكلة:** تنفيذ إصدار مبسط من`std::any`(C++17) من البداية - حاوية آمنة للنوع للقيم الفردية من أي نوع، ودعم النسخ والنقل والاسترداد الآمن للنوع عبر `any_cast`.
+**الخطوة الأولى — فهم المشكلة:**
+ يقوم`std::any`بتخزين قيمة من أي نوع قابل للنسخ ويستردها من خلال التحقق من النوع. داخليًا، يستخدم مسح النوع: واجهة فئة أساسية مع قالب مشتق يحمل القيمة الفعلية.  يتحقق`any_cast`من النوع المخزن في وقت التشغيل ويطرح`bad_any_cast`في حالة عدم التطابق.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم فئة أساسية`HolderBase`مع`clone()`الظاهري و`type()`.
+- استخدم القالب المشتق`Holder<T>`الذي يخزن القيمة الفعلية.
+- قم بتخزين`std::unique_ptr<HolderBase>`في فئة `Any`.
+- يقوم`any_cast<T>`بفحص`typeid`وإجراء`static_cast`.
+**الخطوة 3 — تنفيذ الحل:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- أمان النوع: يتحقق`any_cast`من`typeid`في وقت التشغيل - يؤدي النوع الخاطئ إلى ظهور`BadAnyCast`.
+- دلالات النسخ: يقوم`clone()`الافتراضي بإنشاء نسخة عميقة من القيمة المحفوظة.
+- دلالات النقل: منشئ/مهمة النقل الافتراضية تنقل`unique_ptr`بكفاءة.
+- تحسين المخزن المؤقت الصغير (مثل`std::any`الحقيقي): تخزين الأنواع الصغيرة في السطر دون تخصيص الكومة. يتطلب هذا وجود`union`مزودًا بمخزن مؤقت للبايت - وهو أكثر تعقيدًا بشكل ملحوظ.
+- الإنتاج: استخدم`std::any`(C++17) - وهو قياسي ومختبر جيدًا وقد يتضمن SBO.
+---
+
 ## ملخص
-تحتل لغة C++ مكانة فريدة في البرمجة: فهي تمنحك الأداء الأولي للغة C مع القوة التعبيرية للتجريدات عالية المستوى. تعد لغة C++ الحديثة (C++20/23) لغة مختلفة تمامًا عن لغة C++ في التسعينيات - فهي أكثر أمانًا وتعبيرًا وإنتاجية. منحنى التعلم حاد، واللغة تكافئ الانضباط. بالنسبة للتطبيقات ذات الأداء الحرج حيث تحتاج إلى تحكم دقيق، تظل لغة C++ واحدة من أفضل الأدوات المتاحة.
+تحتل لغة C++ مكانة فريدة في البرمجة: فهي تمنحك الأداء الأولي للغة C مع القوة التعبيرية للتجريدات عالية المستوى. تعد لغة C++ الحديثة (C++20/23) لغة مختلفة تمامًا عن لغة C++ في التسعينيات - فهي أكثر أمانًا وتعبيرًا وإنتاجية. منحنى التعلم حاد، واللغة تكافئ الانضباط. بالنسبة للتطبيقات ذات الأداء الحيوي حيث تحتاج إلى تحكم دقيق، تظل لغة C++ واحدة من أفضل الأدوات المتاحة.

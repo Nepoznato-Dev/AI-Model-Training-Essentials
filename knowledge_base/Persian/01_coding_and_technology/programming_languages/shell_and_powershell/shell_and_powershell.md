@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "شل و پاورشل"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Shell و PowerShell که شامل مرور کلی، معاوضه ها، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [شل و پاورشل، زبان برنامه‌نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "35 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Shell & PowerShell"
+description: "Comprehensive reference for the Shell and PowerShell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [shell-and-powershell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # شل و پاورشل
 شل اسکریپت به نوشتن اسکریپت برای مفسرهای خط فرمان اشاره دارد. دو پوسته مهم عبارتند از **Bash** (Bourne Again Shell) - پیش‌فرض در لینوکس و macOS - و **PowerShell** - پوسته و زبان اسکریپت‌نویسی چند پلتفرمی مدرن مایکروسافت. اسکریپت‌های شل، وظایف مدیریت سیستم، ساخت خطوط لوله، پردازش فایل و گردش‌های کاری استقرار را خودکار می‌کنند.
 هر توسعه دهنده، مهندس DevOps و مدیر سیستم به مهارت های پوسته نویسی نیاز دارد. چه در حال استقرار یک وب سرور، پردازش فایل های گزارش، راه اندازی خطوط لوله CI/CD یا پشتیبان گیری خودکار باشید، اسکریپت پوسته ابزاری برای این کار است.
@@ -53,7 +58,7 @@ next_review: "05-08-2027"
 | **نه برای برنامه های پیچیده** | ساختار داده ضعیف، بدون OOP، آزمایش سخت | از Python، Go یا زبان های دیگر برای منطق پیچیده | استفاده کنید
 | ** رسیدگی به خطا** | مدیریت خطای Bash بدوی است | از`set -e`استفاده کنید. بررسی کدهای خروج؛ استفاده از PowerShell's try/catch |
 | **قابل حمل** | اسکریپت های Bash ممکن است در همه سیستم ها کار نکنند | از POSIX sh برای حداکثر قابلیت حمل استفاده کنید. PowerShell برای کراس پلتفرم |
-| **اشکال زدایی** | ابزارهای اشکال زدایی محدود | برای Bash از`set -x`استفاده کنید. PowerShell دارای یک دیباگر مناسب |
+| **اشکال زدایی** | ابزارهای اشکال زدایی محدود | از`set -x`برای Bash استفاده کنید. PowerShell دارای یک دیباگر مناسب |
 ---
 
 ## نحو Bash
@@ -850,9 +855,155 @@ Publish-Module @publishParams
 | خطوط لوله CI/CD | یونیورسال در DevOps | --- |
 | پردازش فایل | سریع برای کارهای ساده | پایتون برای تبدیل های پیچیده |
 | استقرار سرور | هر سرور دارای یک پوسته | Ansible/Terraform برای اینفرای پیچیده |
-| تجزیه و تحلیل گزارش | Quick grep/awk one-liners | پایتون، SQL برای تجزیه و تحلیل پیچیده |
+| تجزیه و تحلیل گزارش | سریع grep/awk تک لاینر | پایتون، SQL برای تجزیه و تحلیل پیچیده |
 | برنامه های پیچیده | مناسب نیست | پایتون، برو، جاوا |
 | اسکریپت های کراس پلت فرم | PowerShell 7+ همه جا کار می کند | پایتون برای اسکریپت های واقعا قابل حمل |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین نقل قول های تکی و دوگانه در Bash چیست؟
+**الف:** نقل قول های دوگانه امکان بسط متغیر را می دهد. نقل قول ها تحت اللفظی هستند:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: چگونه خطاهای موجود در اسکریپت های پوسته را مدیریت کنم؟
+**A:** از`set -e`برای خروج از خطاها استفاده کنید و برای پاکسازی به دام بیاندازید:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3: چگونه آرگومان های خط فرمان را به درستی پردازش کنم؟
+**A:** از`getopts`برای پرچم ها و پارامترهای موقعیتی استفاده کنید:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4: خط لوله PowerShell چیست و چه تفاوتی با Bash دارد؟
+**A:** PowerShell اشیاء را لوله می کند، نه متن. هر شیء خواص خود را حفظ می کند:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: چگونه می توانم اسکریپت های چند پلتفرمی بنویسم؟
+**A:** برای Bash: از`#!/usr/bin/env bash`استفاده کنید، از پرچم های خاص گنو اجتناب کنید. برای PowerShell: از`pwsh`(PowerShell Core) استفاده کنید که روی Linux/macOS/Windows اجرا می‌شود.
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: اسکریپت پردازش تصویر دسته ای (Bash)
+**مرحله 1: مشکل را درک کنید**
+اندازه تمام تصاویر PNG در یک فهرست را به حداکثر عرض 800 پیکسل تغییر دهید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`find`برای مکان یابی فایل ها و از`convert`(ImageMagick) برای تغییر اندازه استفاده کنید.
+**مرحله 3: پیاده سازی **```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**مرحله 4: تمدید**
+نوار پیشرفت، مدیریت خطا برای تصاویر خراب، و پردازش موازی را با`xargs -P`اضافه کنید.
+### مشکل 2: چرخش خودکار گزارش (Bash)
+**مرحله 1: مشکل را درک کنید**
+فایل‌های گزارش را روزانه بچرخانید، لاگ‌های قدیمی را فشرده کنید، و لاگ‌های قدیمی‌تر از 30 روز را حذف کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`find`با فیلترهای مبتنی بر زمان و`gzip`برای فشرده سازی استفاده کنید.
+**مرحله 3: پیاده سازی **```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**مرحله 4: برنامه ریزی**
+افزودن به crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### مشکل 3: بررسی سلامت سرویس ویندوز (PowerShell)
+**مرحله 1: مشکل را درک کنید**
+بررسی کنید که آیا سرویس‌های حیاتی در حال اجرا هستند و در صورت توقف، هشدار ارسال کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+برای سرویس های متوقف شده از`Get-Service`و فیلتر استفاده کنید.
+**مرحله 3: پیاده سازی **```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**مرحله 4: خودکارسازی**
+برنامه‌ریزی به‌عنوان یک کار زمان‌بندی وظایف ویندوز که هر ۵ دقیقه اجرا می‌شود.
 ---
 
 ## خلاصه

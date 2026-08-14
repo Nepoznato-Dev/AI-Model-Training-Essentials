@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Типскрипт
 TypeScript — это статически типизированный расширенный набор JavaScript, разработанный Microsoft (под руководством Андерса Хейлсберга) и впервые выпущенный в 2012 году. Он добавляет в JavaScript необязательные аннотации типов, интерфейсы, дженерики и расширенные функции системы типов, а затем компилируется в простой JavaScript, который запускается везде, где работает JavaScript. TypeScript не является отдельным языком или средой выполнения; это JavaScript с проверкой типов.
 TypeScript стал стандартом для крупномасштабной разработки JavaScript. React, Angular, VS Code, Deno и большинство крупных проектов JavaScript с открытым исходным кодом написаны на TypeScript. Если вы начинаете новый проект JavaScript значительного размера, TypeScript рекомендуется использовать по умолчанию.
@@ -45,10 +46,10 @@ TypeScript стал стандартом для крупномасштабной
 
 ## Почему TypeScript важен
 - **Отлавливает ошибки во время компиляции**: ошибки типов обнаруживаются до запуска кода, а не в рабочей среде.
-- **Улучшенная поддержка IDE**: автозаполнение, переход к определению, рефакторинг и встроенная документация значительно улучшились.
+- **Улучшенная поддержка IDE**: автозаполнение, переход к определению, рефакторинг и встроенная документация значительно улучшены.
 - **Самодокументируемый код**: типы служат в качестве документации, которая постоянно обновляется.
 - **100% совместимость с JavaScript**: любой допустимый JavaScript является допустимым TypeScript. Вы можете принять его постепенно.
-- **Расширенная система типов**: типы объединения, типы пересечений, условные типы, сопоставленные типы, типы литералов шаблона — система типов достаточно выразительна для моделирования сложной логики предметной области.
+- **Расширенная система типов**: типы объединения, типы пересечений, условные типы, сопоставленные типы, литеральные типы шаблонов — система типов достаточно выразительна для моделирования сложной логики предметной области.
 - **Промышленное внедрение**: этого требует Angular; Экосистема React в подавляющем большинстве использует его; большинство новых пакетов npm поставляются с определениями типов.
 ## Компромиссы
 | Ограничение | Подробности | Типичный обходной путь |
@@ -56,7 +57,7 @@ TypeScript стал стандартом для крупномасштабной
 | **Этап компиляции** | Перед запуском необходимо скомпилировать`.ts`→`.js`| Используйте `ts-node`/`tsx` для разработки; `tsc`для производства |
 | **Кривая обучения** | Система типов может быть сложной (обобщенные, условные типы) | Начните с базовых типов; постепенно внедрять расширенные функции |
 | **Файлы определения типа** | Не все пакеты npm поставляются с типами | Установите`@types/package-name`из DefinitelyTyped |
-| **Время компиляции** | Проверка типа больших проектов может быть медленной | Используйте ссылки на проекты,`isolatedModules`или`swc`|
+| **Время компиляции** | Проверка типа больших проектов может быть медленной | Используйте ссылки на проект`isolatedModules`или`swc`|
 | **Ложное чувство безопасности** | Типы не гарантируют корректность во время выполнения | В сочетании с проверкой времени выполнения (Zod, io-ts) |
 ---
 
@@ -460,7 +461,7 @@ my-ts-project/
 └── .github/workflows/ci.yml
 ```
 
-###`tsconfig.json`— Конфигурация TypeScript
+###`tsconfig.json`— конфигурация TypeScript
 ```json
 {
   "compilerOptions": {
@@ -810,6 +811,398 @@ CMD ["node", "dist/index.js"]
 | Любой новый проект JavaScript | Стоимость добавления TypeScript позже высока | Обычный JS только для крошечных скриптов |
 | Библиотеки/пакеты npm | Потребители получают автозаполнение и проверку типа | -- |
 **Правило**: если ваш проект JavaScript содержит более нескольких сотен строк, используйте TypeScript.
+---
+
+## Синтетические вопросы и ответы
+### Q1: В чем разница между`type`и`interface`и когда мне следует использовать каждый из них?
+**О:** Оба определяют формы объектов, но имеют разные возможности. `interface`поддерживает слияние объявлений (слияние нескольких объявлений с одинаковыми именами),`extends`для наследования и является идиоматическим выбором для общедоступных API. `type`поддерживает типы объединения, типы пересечений, отображаемые типы, условные типы и литеральные типы шаблонов — все, что является продвинутым. Рекомендации: используйте`interface`для фигур объектов и общедоступных API; используйте`type`для объединений, утилит и операций со сложными типами.
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Вопрос 2. Как работают дженерики и почему они важны?
+**О:** Обобщенные шаблоны позволяют писать функции, классы и типы, которые работают с любыми типами, сохраняя при этом безопасность типов. Вместо`any`(который теряет информацию о типе) дженерики сохраняют связь между входными и выходными типами. Они являются основой многоразового, типобезопасного кода.
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3: Что такое типы утилит и какие из них мне следует знать?
+**A:** TypeScript предоставляет встроенные служебные типы, преобразующие существующие типы. Наиболее важные:`Partial<T>`(все необязательные),`Required<T>`(все обязательные),`Pick<T, K>`(выбрать ключи),`Omit<T, K>`(исключить ключи),`Record<K, V>`(сопоставление ключ-значение),`Exclude<T, U>`(удалить из объединения),`ReturnType<T>`(извлечь тип возвращаемого значения функции),`Awaited<T>`(развернуть обещание). Изучите их — они устраняют большую часть необходимости в операциях с пользовательскими типами.
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Вопрос 4. Как вводить асинхронный код и обрабатывать ошибки типобезопасным способом?
+**A:** Асинхронные функции автоматически возвращают `Promise<T>`, где T — тип возвращаемого значения. Используйте `await`, чтобы развернуть обещание. Для обработки ошибок TypeScript не имеет типизированных исключений, но вы можете создавать средства защиты типов и типы результатов. «Шаблон результата» (вдохновленный Rust) обеспечивает обработку ошибок во время компиляции.
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Вопрос 5. Что такое файлы объявлений (.d.ts) и как использовать сторонние типы?
+**A:** Файлы объявлений описывают типы библиотек JavaScript, которые не имеют встроенных типов TypeScript. Они содержат только информацию о типе (без кода времени выполнения). Установите поддерживаемые сообществом типы из DefinitelyTyped: `npm install --save-dev @types/lodash`. Для ваших собственных библиотек добавьте поле`types`в`package.json`или включите файлы`.d.ts`вместе с исходным кодом. Используйте`declare module`для внешних объявлений.
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Создайте типобезопасный генератор событий
+**Постановка задачи.** Создайте универсальный типобезопасный источник событий в TypeScript, где каждое имя события сопоставляется с конкретным типом полезных данных. Компилятор должен обнаруживать неверные имена событий и типы полезных данных во время компиляции.
+**Шаг 1. Поймите проблему:**
+Нам нужна система событий, в которой: (1) события определяются с помощью их типов полезных данных, (2)`emit`принимает только действительные имена событий с правильными полезными данными, (3)`on`принимает только действительные имена событий с правильно типизированными обработчиками. Для этого требуются сопоставленные типы и дженерики через интерфейс карты событий.
+**Шаг 2. Определите подход:**
+- Определите тип `EventMap`:`{ [eventName: string]: payloadType }`.
+- Используйте `keyof EventMap`, чтобы ограничить имена событий.
+– Используйте `EventMap[K]`, чтобы получить тип полезной нагрузки для определенного события.
+— Сохраните прослушиватели в `Map<string, Function[]>`.
+**Шаг 3. Реализация решения:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Типовая безопасность: компилятор распознает неправильные имена событий и неправильные формы полезных данных во время компиляции.
+-`on`возвращает функцию отказа от подписки для удобной очистки.
+-`once`переносит прослушиватель на автоматическую отмену подписки после первого вызова.
+- Для производства: добавьте`listenerCount`,`removeAllListeners`и рассмотрите возможность использования`AbortSignal`для отмены.
+### Проблема 2. Реализация типобезопасного построителя SQL-запросов
+**Постановка задачи.** Создайте построитель SQL-запросов, в котором имена и типы столбцов будут получены из интерфейса TypeScript. Разработчик должен предотвратить недопустимые имена столбцов и несоответствия типов во время компиляции.
+**Шаг 1. Поймите проблему:**
+Нам нужны: (1) имена столбцов, ограниченные`keyof T`, (2) значения предложения WHERE, введенные в соответствии со столбцом, (3) API для построения цепочек для построения запросов. Для этого требуются дженерики, ограниченные`Record<string, unknown>`.
+**Шаг 2. Определите подход:**
+- Используйте`keyof T`для ограничений имени столбца.
+- Используйте`T[K]`для ограничений типа значения.
+- Создайте строку SQL с параметризованными запросами (предотвратите внедрение SQL).
+— Цепные методы возвращают `this`.
+**Шаг 3. Реализация решения:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**Шаг 4. Проверка и оптимизация:**
+— Предотвращение SQL-инъекций: все значения проходят через параметризованные запросы (`$1`,`$2`) и никогда не интерполируются.
+— Безопасность типов: имена столбцов и типы значений проверяются во время компиляции.
+- Расширяемость: добавьте методы `join`, `groupBy`, `having`, `insert`,`update`по тому же шаблону.
+- Производство: используйте`kysely`или`drizzle-orm`— они обеспечивают безопасность этого типа с полным покрытием SQL.
+### Проблема 3: реализация конечного автомата с типобезопасностью
+**Постановка задачи:** Создайте типобезопасный конечный автомат, в котором допустимые переходы реализуются во время компиляции. Каждое состояние может иметь действия входа/выхода, и машина должна отслеживать текущее состояние.
+**Шаг 1. Поймите проблему:**
+Нам нужны: (1) состояния и события, определенные как типы, (2) допустимые переходы, отображаемые на уровне типа, (3) компилятор предотвращает недопустимые переходы, (4) отслеживание состояний во время выполнения с помощью обратных вызовов. Для этого требуются отображаемые типы и условные типы.
+**Шаг 2. Определите подход:**
+- Определите `TransitionMap`: `{ [State]: { [Event]: NextState } }`.
+— Используйте дженерики для ограничения`send(event)`на основе текущего состояния.
+- Отслеживание состояния во время выполнения с помощью переменной.
+- Поддержка обратных вызовов входа/выхода для каждого состояния.
+**Шаг 3. Реализация решения:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**Шаг 4. Проверка и оптимизация:**
+— Безопасность во время выполнения:`send`выдает ошибку при недопустимых переходах.
+- Типовая безопасность: тип`EventsFor`извлекает допустимые события для каждого состояния во время компиляции.
+- Обратные вызовы входа/выхода срабатывают автоматически при переходах.
+- Для производства: используйте`xstate`— он предоставляет полную библиотеку конечных автоматов с визуальной отладкой, иерархическими состояниями, средствами защиты и действиями.
 ---
 
 ## Краткое содержание

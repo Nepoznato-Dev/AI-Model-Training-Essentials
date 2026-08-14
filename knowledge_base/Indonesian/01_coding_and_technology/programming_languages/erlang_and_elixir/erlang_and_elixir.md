@@ -928,5 +928,108 @@ CMD ["bin/my_app", "start"]
 | API REST Sederhana | Mungkin tapi berlebihan untuk layanan kecil | Buka, Node.js, Python |
 ---
 
+## Tanya Jawab Sintetis
+### Q1: Bagaimana cara kerja filosofi "biarkan crash" Erlang?
+**A:** Alih-alih pemrograman defensif, Erlang membiarkan proses terhenti dan memulai ulang melalui supervisor:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2: Bagaimana cara kerja saluran pipa Elixir?
+**A:** Operator`|>`meneruskan hasil dari satu fungsi sebagai argumen pertama ke fungsi berikutnya:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3: Apa perbedaan antara Erlang dan Elixir?
+**A:** Elixir berjalan pada Erlang VM (BEAM) dengan sintaksis modern:
+- Elixir: operator pipa, makro, protokol, interpolasi string
+- Erlang: sintaksis yang lebih sederhana, OTP bawaan, lebih teruji dalam pertempuran
+- Keduanya berbagi model konkurensi, VM, dan ekosistem yang sama
+### Q4: Bagaimana cara kerja GenServer di Elixir?
+**A:** GenServer adalah abstraksi standar untuk proses stateful:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5: Bagaimana cara menangani kesalahan pada Elixir?
+**A:** Gunakan`try/rescue`untuk pengecualian,`{:ok, result} | {:error, reason}`untuk kegagalan yang diperkirakan:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membangun Penyimpanan Nilai Kunci yang Toleran terhadap Kesalahan
+**Langkah 1: Pahami Masalahnya**
+Buat penyimpanan nilai kunci yang bertahan dari kegagalan proses.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan GenServer dengan supervisor.
+**Langkah 3: Terapkan**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**Langkah 4: Verifikasi**
+Hentikan prosesnya dan verifikasi bahwa prosesnya dimulai ulang dengan status baru.
+### Masalah 2: Scraper Web Secara Bersamaan
+**Langkah 1: Pahami Masalahnya**
+Ambil beberapa URL secara bersamaan dan kumpulkan hasilnya.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan Tugas Elixir untuk eksekusi bersamaan.
+**Langkah 3: Terapkan**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**Langkah 4: Optimalkan**
+Tambahkan pembatasan kecepatan, percobaan ulang, dan streaming untuk daftar URL yang besar.
+---
+
 ## Ringkasan
 Erlang memecahkan masalah yang masih dihadapi sebagian besar bahasa: membangun sistem yang tidak pernah mati. Model konkurensinya — proses yang ringan, penyampaian pesan, pengawasan "biarkan crash" — berpuluh-puluh tahun lebih maju dari apa yang baru ditemukan oleh bahasa-bahasa umum saat ini. Elixir mengambil kekuatan super Erlang dan membungkusnya dalam sintaksis modern dengan pengalaman pengembang yang luar biasa. Jika Anda membangun sistem real-time, terdistribusi, atau sistem yang toleran terhadap kesalahan, Erlang/Elixir layak untuk diinvestasikan. Kurva pembelajarannya nyata (pemrograman fungsional, pencocokan pola, proses berpikir), namun imbalannya adalah perangkat lunak yang tetap bertahan dan berkembang dengan skala yang dapat diprediksi.

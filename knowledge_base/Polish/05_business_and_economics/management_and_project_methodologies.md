@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Metodologie zarządzania i projektów
-Zarządzanie ludźmi i projektami to jedna z najtrudniejszych rzeczy w każdej organizacji. Umiejętności techniczne pozwalają ci wejść na salę, ale umiejętność kierowania zespołami, podejmowania decyzji, jasnej komunikacji i dostarczania wyników decyduje o tym, czy cokolwiek faktycznie zostanie zrobione. Ten plik obejmuje ramy, metodologie i umiejętności praktyczne, na których polegają skuteczni menedżerowie i liderzy projektów.
+Zarządzanie ludźmi i projektami należy do najbardziej wymagających obowiązków w każdej organizacji. Umiejętności techniczne umożliwiają wejście, ale zdolność kierowania zespołami, podejmowania decyzji, skutecznej komunikacji i dostarczania wyników decyduje o osiągnięciu celów. Ten plik obejmuje ramy, metodologie i praktyczne umiejętności stosowane przez skutecznych menedżerów i liderów projektów.
 ---
 
 ## Style przywództwa
@@ -108,10 +108,10 @@ Scrum jest najpowszechniej stosowanym frameworkiem Agile.
 | **Codzienny stand-up** | Synchronizacja 15-minutowa: co zrobiłem? Co zrobię? Jakieś blokery? |
 | **Przegląd Sprintu** | Demo działającego oprogramowania dla interesariuszy; zebrać opinie |
 | **Retrospektywa Sprintu** | Zespół zastanawia się, jak ulepszyć proces |
-###Kanan
+### Kanban
 Kanban to metoda oparta na przepływach, skupiająca się na wizualizacji pracy i ograniczaniu produkcji w toku.
 | Praktyka | Opis |
-|--------------|------------|
+|---------|------------|
 | **Wizualizacja przepływu pracy** | Tablica z kolumnami (Do zrobienia → W toku → Recenzja → Gotowe) |
 | **Ogranicz WIP** | Ustaw maksymalną liczbę elementów w każdej kolumnie |
 | **Zarządzaj przepływem** | Zmierz czas cyklu; identyfikować i usuwać wąskie gardła |
@@ -132,7 +132,7 @@ Kanban to metoda oparta na przepływach, skupiająca się na wizualizacji pracy 
 OKR to platforma wyznaczania celów używana przez Google, Intel, Spotify i wiele innych.
 | Składnik | Opis | Przykład |
 |---------------|------------|--------|
-| **Cel** | Jakościowe, ambitne, inspirujące | „Zostań popularną platformą do księgowości w małych firmach” |
+| **Cel** | Jakościowe, ambitne, inspirujące | „Zostań najpopularniejszą platformą do księgowości w małych firmach” |
 | **Kluczowy wynik 1** | Wymierny; udowadnia, że ​​cel został osiągnięty | Zwiększ miesięczną liczbę aktywnych użytkowników z 10 tys. do 50 tys. |
 | **Kluczowy wynik 2** | Mierzalne | Osiągnij wynik NPS powyżej 60 |
 | **Kluczowy wynik 3** | Mierzalne | Skróć czas wdrożenia z 30 minut do 5 minut |
@@ -144,7 +144,7 @@ OKR to platforma wyznaczania celów używana przez Google, Intel, Spotify i wiel
 - Przejrzystość: każdy może zobaczyć OKR innych osób
 ### KPI (kluczowe wskaźniki wydajności)
 | Kategoria | Przykładowe KPI |
-|--------------|------------|
+|---------|------------|
 | **Finansowe** | Przychody, marża brutto, zysk netto, EBITDA |
 | **Klient** | NPS, CSAT, współczynnik rezygnacji, CLV |
 | **Produkt** | DAU/MAU, przyjęcie funkcji, czas na osiągnięcie korzyści |
@@ -178,7 +178,7 @@ OKR to platforma wyznaczania celów używana przez Google, Intel, Spotify i wiel
 | **7 Cs** | Jasne, zwięzłe, konkretne, prawidłowe, spójne, kompletne, uprzejme | Ogólna komunikacja pisemna |
 ### Przekazywanie opinii
 | Podejście | Opis |
-|--------------|------------|
+|---------|------------|
 | **SBI** (Sytuacja-Zachowanie-Wpływ) | „Podczas wczorajszego spotkania (sytuacja) przerwałeś klientowi (zachowanie), co spowodowało, że się zamknął (wpływ)”. |
 | **Sprzedzenie** | Skoncentruj się na przyszłych zachowaniach, a nie na błędach z przeszłości. „Następnym razem spróbuj…” |
 | **Radykalna szczerość** (Kim Scott) | Opieka osobista + wyzwanie bezpośrednio. Nie za miły (niszczycielska empatia) i niezbyt surowy (okropna agresja). |
@@ -195,8 +195,8 @@ OKR to platforma wyznaczania celów używana przez Google, Intel, Spotify i wiel
 | **Sześć myślących kapeluszy** | Spójrz na decyzję z 6 perspektyw (fakty, emocje, ryzyko, korzyści, kreatywność, proces) | Decyzje grupowe; unikanie myślenia grupowego |
 ### Matryca Eisenhowera
 | | Pilne | Nie pilne |
-|---|------------|------------|
-| **Ważne** | **Zrób pierwszy** — kryzysy, terminy, krytyczne problemy | **Harmonogram** — planowanie strategiczne, budowanie relacji, nauka |
+|---|--------|------------|
+| **Ważne** | **Zrób najpierw** — kryzysy, terminy, krytyczne problemy | **Harmonogram** — planowanie strategiczne, budowanie relacji, nauka |
 | **Nieważne** | **Delegat** — niektóre e-maile, spotkania, przerwy | **Wyeliminuj** — osoby marnujące czas, zajęta praca, nadmierne przeglądanie |
 ---
 
@@ -249,7 +249,7 @@ OKR to platforma wyznaczania celów używana przez Google, Intel, Spotify i wiel
 ---
 
 ## Podstawy zarządzania produktem
-Zarządzanie produktem to dyscyplina polegająca na podejmowaniu decyzji, co zbudować, dla kogo i dlaczego – oraz zapewnianiu, że przyniesie to wartość.
+Zarządzanie produktem to dyscyplina polegająca na podejmowaniu decyzji, co zbudować, dla kogo i dlaczego oraz zapewnianiu, że przyniesie to wartość.
 | Odpowiedzialność | Opis |
 |--------------|------------|
 | **Odkrycie** | Badania użytkowników, analiza rynku, wywiad konkurencyjny |
@@ -268,4 +268,4 @@ Zarządzanie produktem to dyscyplina polegająca na podejmowaniu decyzji, co zbu
 ---
 
 ## Streszczenie
-W zarządzaniu nie chodzi o tytuły ani schematy organizacyjne — chodzi o to, aby robić właściwe rzeczy za pośrednictwem innych ludzi. Najlepsi menedżerowie łączą jasne myślenie (frameworki, metodologie, metryki) z inteligencją emocjonalną (słuchanie, empatia, zaufanie). Żadna metodologia nie zastąpi dobrego osądu, ale dobry osąd można ulepszyć dzięki dobrym ramom. Używajcie ich jako narzędzi, a nie religii.
+Zarządzanie to praktyka osiągania celów poprzez innych ludzi. Skuteczni menedżerowie łączą jasne myślenie (frameworki, metodologie, metryki) z umiejętnościami interpersonalnymi (słuchanie, empatia, zaufanie). Żadna metodologia nie zastąpi dobrego osądu, ale dobry osąd jest wzmocniony solidnymi ramami. Należy je stosować raczej jako praktyczne wskazówki niż sztywne doktryny.

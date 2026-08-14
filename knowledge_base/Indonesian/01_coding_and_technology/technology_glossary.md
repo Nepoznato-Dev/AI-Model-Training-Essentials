@@ -76,7 +76,7 @@ Gemini mendukung chatbot AI Google Bard (berganti nama menjadi Gemini) dan AI Go
 Ikhtisar.
 ### Phi-3-mini
 Phi-3-mini adalah model bahasa kecil (SLM) yang dikembangkan oleh Microsoft dengan 3.8B
-parameter. Dirilis pada April 2026. Tidak seperti kebanyakan model besar, Phi-3-mini
+parameter. Dirilis pada April 2024. Tidak seperti kebanyakan model besar, Phi-3-mini
 dilatih pada kumpulan data "kualitas buku teks" yang dikuratori dengan cermat — sebuah teknik
 dipelopori oleh Microsoft Research — yang memprioritaskan kualitas data dibandingkan volume mentah.
 Meskipun jauh lebih kecil dari GPT-4 atau Claude 3 Opus, Phi-3-mini cocok atau
@@ -87,7 +87,7 @@ atau bahkan di perangkat pada smartphone modern dengan RAM yang memadai.
 ### Lama (Meta AI)
 Llama (Large Language Model Meta AI) adalah rangkaian model bobot terbuka
 dirilis oleh Meta. Llama 2 (2023) dirilis untuk penelitian dan penggunaan komersial
-dengan ukuran mulai dari parameter 7B hingga 70B. Llama 3 (2026) ditingkatkan
+dengan ukuran mulai dari parameter 7B hingga 70B. Llama 3 (2024) ditingkatkan
 kinerja secara signifikan, dengan model mulai dari 8B hingga 70B (dan lebih baru 400B+).
 Karena bobotnya dapat diunduh secara publik, model Llama adalah fondasinya
 untuk ekosistem besar dengan varian yang disesuaikan (Mistral, Alpaca, Vicuna, dll.)
@@ -96,7 +96,7 @@ dan banyak digunakan untuk penerapan AI lokal/pribadi.
 Mistral AI adalah perusahaan AI Perancis yang mengembangkan LLM terbuka dan berpemilik.
 Mistral 7B (2023) menunjukkan bahwa model parameter 7B dapat menandingi
 kinerja model yang jauh lebih besar menggunakan teknik efisien seperti geser
-perhatian jendela dan perhatian kueri yang dikelompokkan. Mixtral 8x7B (2026) adalah campuran-
+perhatian jendela dan perhatian kueri yang dikelompokkan. Mixtral 8x7B (2023) adalah campuran-
 model pakar — merutekan setiap token ke subset dari 8 jaringan pakar,
 mencapai performa tingkat GPT-3,5 sekaligus lebih murah secara komputasi.
 Model Mistral sepenuhnya terbuka dan dapat dijalankan secara lokal.

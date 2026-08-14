@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Glossaire technologique"
-description : "Terminologie technique (modèles d'IA, matériel, benchmarks)"
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Technology Glossary"
+description: "Technical terminology (AI models, hardware, benchmarks)"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [technologie, glossaire, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "9 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [technology, glossary, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Glossaire technologique
 Un glossaire de référence couvrant les modèles d'IA, le matériel, les benchmarks et les concepts de base
@@ -72,7 +76,7 @@ Gemini alimente le chatbot IA Bard de Google (renommé Gemini) et Google Search 
 Aperçus.
 ### Phi-3-mini
 Phi-3-mini est un petit modèle de langage (SLM) développé par Microsoft avec 3,8 B
-paramètres. Il est sorti en avril 2026. Contrairement à la plupart des grands modèles, le Phi-3-mini
+paramètres. Il est sorti en avril 2024. Contrairement à la plupart des grands modèles, le Phi-3-mini
 a été formé sur un ensemble de données soigneusement organisé de « qualité manuelle » – une technique
 lancé par Microsoft Research – qui donne la priorité à la qualité des données plutôt qu’au volume brut.
 Bien qu'ils soient bien plus petits que GPT-4 ou Claude 3 Opus, les matchs Phi-3-mini ou
@@ -83,7 +87,7 @@ ou même sur l'appareil sur un smartphone moderne avec suffisamment de RAM.
 ### Lama (Méta AI)
 Llama (Large Language Model Meta AI) est une famille de modèles à pondération ouverte
 publié par Meta. Llama 2 (2023) a été publié à des fins de recherche et d'utilisation commerciale
-avec des tailles allant de 7B à 70B paramètres. Lama 3 (2026) amélioré
+avec des tailles allant de 7B à 70B paramètres. Lama 3 (2024) amélioré
 performances de manière significative, avec des modèles allant de 8B à 70B (et plus tard 400B+).
 Parce que les poids sont téléchargeables publiquement, les modèles Lama constituent la base
 pour un large écosystème de variantes raffinées (Mistral, Alpaca, Vicuna, etc.)
@@ -92,7 +96,7 @@ et sont largement utilisés pour les déploiements d’IA locaux/privés.
 Mistral AI est une société française d'IA qui développe des LLM ouverts et propriétaires.
 Mistral 7B (2023) a démontré qu'un modèle à paramètres 7B peut correspondre au
 performance de modèles beaucoup plus grands utilisant des techniques efficaces telles que le glissement
-attention de la fenêtre et attention des requêtes groupées. Mixtral 8x7B (2026) est un mélange-
+attention de la fenêtre et attention des requêtes groupées. Mixtral 8x7B (2023) est un mélange-
 modèle d'experts - il achemine chaque jeton vers un sous-ensemble de 8 réseaux experts,
 atteindre des performances de niveau GPT-3.5 tout en étant moins coûteux en termes de calcul.
 Les modèles de Mistral sont entièrement ouverts et peuvent être utilisés localement.

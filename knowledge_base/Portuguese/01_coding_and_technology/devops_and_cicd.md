@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps e CI/CD
 DevOps é a combinação de filosofia cultural, práticas e ferramentas que permite às equipes entregar software de forma mais rápida e confiável. Ele quebra a barreira entre os desenvolvedores (que desejam implementar mudanças) e as operações (que desejam estabilidade). CI/CD — Integração Contínua e Entrega Contínua — é a espinha dorsal da automação que torna isso possível.
 ---
@@ -57,7 +58,7 @@ DevOps é a combinação de filosofia cultural, práticas e ferramentas que perm
 | **Teste** | Executar verificações de unidade, integração e lint | Brincadeira, pytest, JUnit |
 | **Pacote** | Construir imagem ou artefato Docker | Docker, pacotes de construção |
 | **Implantar (preparação)** | Implantar no ambiente de teste | Kubernetes, ECS, VM |
-| **Teste (preparação)** | Testes de integração, testes de fumaça | Selênio, Carteiro |
+| **Teste (preparação)** | Testes de integração, testes de fumaça | Selênio, carteiro |
 | **Implantar (produção)** | Liberação para produção | Azul esverdeado, canário, rolante |
 | **Monitoramento** | Observe saúde, erros, desempenho | Prometeu, Grafana, Datadog |
 ### Ferramentas CI/CD comparadas
@@ -105,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-Práticas principais: usar imagens base slim/alpine, executar como não-root, aproveitar o cache da camada, usar`.dockerignore`, verificar imagens em busca de vulnerabilidades (`trivy`,`docker scan`) e definir limites de recursos.
+Práticas principais: usar imagens base slim/alpine, executar como não raiz, aproveitar o cache da camada, usar`.dockerignore`, verificar imagens em busca de vulnerabilidades (`trivy`,`docker scan`) e definir limites de recursos.
 ### Docker Compor
 Para executar vários contêineres juntos (aplicativo + banco de dados + cache):
 ```yaml
@@ -127,12 +128,12 @@ volumes:
 
 ---
 
-## Kubernetes (K8s)
+##Kubernetes (K8s)
 Kubernetes é o orquestrador de contêineres padrão do setor. Ele gerencia a implantação, o dimensionamento e a operação de aplicativos em contêineres.
 ### Arquitetura Central
 | Componente | Função |
 |-----------|------|
-| **Plano de controle** | Gerencia o cluster (servidor API, agendador, etcd, gerenciador de controlador) |
+| **Plano de Controle** | Gerencia o cluster (servidor API, agendador, etcd, gerenciador de controlador) |
 | **Nó** | Máquina trabalhadora (VM ou física) que executa contêineres |
 | **Vagem** | Menor unidade implantável; um ou mais contêineres que compartilham redes |
 | **Serviço** | Endpoint de rede estável que roteia o tráfego para pods |
@@ -187,7 +188,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-Melhores práticas: use módulos para reutilização, armazene o estado remotamente (S3 + DynamoDB para bloqueio), nunca codifique segredos e controle de versão tudo.
+Práticas recomendadas: use módulos para reutilização, armazene o estado remotamente (S3 + DynamoDB para bloqueio), nunca codifique segredos e controle de versão tudo.
 ---
 
 ## Monitoramento e Observabilidade
@@ -244,4 +245,4 @@ Quando algo quebra às 3 da manhã:
 5. **Correção** — reversão ou avanço de patch.
 6. **Comunicar** — atualizar as partes interessadas e os usuários (página de status).
 7. **Post-mortem** — dentro de 24 a 48 horas, documente a causa raiz e os itens de ação.
-O objetivo não é apenas consertar o incidente – é garantir que o mesmo incidente não aconteça novamente.
+O objetivo não é apenas resolver o incidente, mas garantir que o mesmo incidente não se repita.

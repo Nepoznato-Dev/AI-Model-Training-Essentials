@@ -1,38 +1,42 @@
 ---
-# فراداده
-عنوان: "اخلاق داده ها و حریم خصوصی"
-توضیحات: "GDPR، رضایت داده ها، سوگیری الگوریتمی، الگوهای تاریک، ناشناس سازی"
-دسته بندی: "علم داده و تجزیه و تحلیل"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش علم داده و تجزیه و تحلیل"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [داده، اخلاق، حریم خصوصی، علم داده و تجزیه و تحلیل]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "6 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Data Ethics and Privacy"
+description: "GDPR, data consent, algorithmic bias, dark patterns, anonymisation"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [data, ethics, privacy, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # اخلاق و حریم خصوصی داده ها
 اخلاق داده ها مطالعه چگونگی تأثیر جمع آوری، تجزیه و تحلیل و استقرار داده ها بر حقوق، استقلال و رفاه افراد است. حریم خصوصی نگرانی خاصی در مورد اینکه چه کسی اطلاعات شخصی را کنترل می کند و چگونه به اشتراک گذاشته می شود است. این موضوعات از بحث‌های دانشگاهی به اخبار صفحه اول منتقل شده‌اند - اجرای GDPR، نقض داده‌ها که میلیاردها کاربر را تحت تأثیر قرار می‌دهد، و افزایش آگاهی عمومی مبنی بر اینکه شیوه‌های داده‌ای شرکت‌های فناوری پیامدهای واقعی برای دموکراسی، برابری و آزادی فردی دارند.

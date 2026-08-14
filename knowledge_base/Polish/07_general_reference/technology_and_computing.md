@@ -41,7 +41,7 @@ contribution:
 
 # Technologia i informatyka
 Komputery są wszędzie — w telefonie, samochodzie, lodówce, urządzeniach medycznych i infrastrukturze, na której opiera się współczesne społeczeństwo. Nie musisz być programistą, aby czerpać korzyści ze zrozumienia, jak to wszystko działa. W tym pliku omówiono podstawy: czym jest komputer, jak działa Internet, jak zbudowane jest oprogramowanie i koncepcje kształtujące cyfrowy świat.
-> **Chcesz zejść głębiej?** Ten plik zawiera ogólny przegląd. Aby uzyskać szczegółowe omówienie dowolnego tematu, zobacz dedykowane pliki w[`01_coding_and_technology/`](../01_coding_and_technology/)— w tym [web development](../01_coding_and_technology/web_development.md), [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)i [security](../01_coding_and_technology/security_best_practices.md).
+> **Chcesz zejść głębiej?** Ten plik zawiera ogólny przegląd. Aby uzyskać szczegółowe omówienie dowolnego tematu, zobacz dedykowane pliki w[`01_coding_and_technology/`](../01_coding_and_technology/)— w tym [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)i.
 ---
 
 ## Co to jest komputer?
@@ -151,7 +151,7 @@ Trzej główni dostawcy usług w chmurze to **AWS** (Amazon, ~32% udziału w ryn
 ---
 
 ## Cyberbezpieczeństwo — ochrona systemów cyfrowych
-Cyberbezpieczeństwo to praktyka polegająca na ochronie komputerów, sieci i danych przed atakiem. Ma to znaczenie, ponieważ wszystko jest ze sobą połączone, a koszty naruszeń są ogromne. Aby zapoznać się z pełnym przewodnikiem dotyczącym 10 najlepszych rozwiązań OWASP, bezpiecznego cyklu życia oprogramowania i zarządzania wpisami tajnymi, zobacz[security best practices](../01_coding_and_technology/security_best_practices.md).
+Cyberbezpieczeństwo to praktyka polegająca na ochronie komputerów, sieci i danych przed atakiem. Ma to znaczenie, ponieważ wszystko jest ze sobą połączone, a koszty naruszeń są ogromne. Aby zapoznać się z pełnym przewodnikiem dotyczącym 10 najlepszych rozwiązań OWASP, bezpiecznego cyklu życia oprogramowania i zarządzania wpisami tajnymi, zobacz.
 ### Typowe zagrożenia
 | Zagrożenie | Co to jest | Zapobieganie |
 |------------|-----------|------------|

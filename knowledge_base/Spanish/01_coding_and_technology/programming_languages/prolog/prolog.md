@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Prólogo"
-descripción: "Referencia completa para el lenguaje de programación Prolog que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Prolog"
+description: "Comprehensive reference for the Prolog programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [prólogo, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "25 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [prolog, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "25 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Prólogo
 Prolog (Programación en Lógica) es un lenguaje de programación lógica creado en 1972 por Alain Colmerauer y Philippe Roussel. A diferencia de todos los demás idiomas de esta lista, Prolog no le dice a la computadora *cómo* resolver un problema: usted declara *qué* es verdadero (hechos y reglas) y el motor de inferencia de Prolog descubre la respuesta mediante deducción lógica.
 Prolog fue el lenguaje elegido para los sistemas expertos, el procesamiento del lenguaje natural y la investigación de IA en la década de 1980. Impulsó el proyecto de sistema informático de quinta generación de Japón y se utilizó en Watson de IBM para la comprensión del lenguaje natural. Hoy en día, Prolog se utiliza en la resolución de restricciones, programación, inferencia de tipos, razonamiento legal y en cualquier lugar donde los problemas se expresen naturalmente como relaciones lógicas.
@@ -43,7 +48,7 @@ Prolog fue el lenguaje elegido para los sistemas expertos, el procesamiento del 
 ## Por qué es importante el prólogo
 - **Programación declarativa**: describe qué es verdad, no cómo calcularlo. El motor hace el trabajo.
 - **Coincidencia y unificación de patrones**: el algoritmo de unificación de Prolog es más poderoso que la coincidencia de patrones en otros lenguajes.
-- **Búsqueda de retroceso**: explora automáticamente todas las soluciones posibles. No se necesitan algoritmos de búsqueda manual.
+- **Búsqueda de retroceso**: Explora automáticamente todas las soluciones posibles. No se necesitan algoritmos de búsqueda manual.
 - **Natural para problemas de lógica**: sistemas expertos, motores de reglas, correctores de tipos, analizadores gramaticales: se asignan directamente a Prolog.
 - **Resolución de restricciones**: CLP(FD) resuelve problemas de programación, asignación y combinatoria con elegancia.
 - **Pensamiento diferente**: Learning Prolog cambia la forma en que aborda la resolución de problemas: comienza a pensar en las relaciones y limitaciones.
@@ -532,6 +537,129 @@ swipl -g main -o myapp.sav -c main.pl
 | Ciencia de datos / ML | No el ecosistema | Pitón, R |
 | Código crítico para el rendimiento | Prolog es lento para el cálculo | C, C++, óxido |
 | Programación de propósito general | Posible pero incómodo | Python, Ir, Java |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿En qué se diferencia la unificación de Prolog de la asignación en otros idiomas?
+**R:** La unificación es una coincidencia de patrones bidireccional, no una asignación:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### P2: ¿Cómo funciona el retroceso en Prolog?
+**R:** Cuando un objetivo falla, Prolog retrocede hasta el último punto de elección e intenta la siguiente alternativa:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### P3: ¿Cómo trabajo con listas en Prolog?
+**R:** Las listas utilizan la coincidencia de patrones de cabeza/cola:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### P4: ¿Cuándo debo usar Prolog en lugar de otros idiomas?
+**R:** Prolog se destaca en:
+- Satisfacción de restricciones (programación, acertijos)
+- Sistemas basados en reglas (sistemas expertos, validación)
+- Recorrido de gráfico/árbol
+- Procesamiento del lenguaje natural
+- Cálculo simbólico
+- Cualquier problema expresable como relaciones lógicas.
+### P5: ¿Cuáles son los errores comunes en Prolog?
+**R:** Cuestiones clave:
+- Recursividad infinita: siempre ponga primero el caso base
+- Retroceso involuntario: use el corte`!`o`once/1`
+- Se produce una verificación: bucles`X = f(X)`de forma predeterminada (use `unify_with_occurs_check`)
+- Cortes verdes (optimización) frente a cortes rojos (cambiar significado): prefiera el verde
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Resolver el rompecabezas de N-Reinas
+**Paso 1: Comprenda el problema**
+Coloca N reinas en un tablero de ajedrez NxN para que no haya dos reinas que se ataquen entre sí.
+**Paso 2: Identificar el enfoque**
+Utilice generación basada en restricciones: coloque las reinas columna por columna, verificando la seguridad.
+**Paso 3: Implementar**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Paso 4: Verificar**
+`?- n_queens(8, Qs).`debería encontrar 92 soluciones.
+### Problema 2: creación de un sistema experto simple
+**Paso 1: Comprenda el problema**
+Diagnosticar problemas del automóvil según los síntomas.
+**Paso 2: Identificar el enfoque**
+Utilice reglas de Prolog para codificar el conocimiento de diagnóstico.
+**Paso 3: Implementar**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Paso 4: Extender**
+Agregue puntuaciones de confianza, solicite síntomas al usuario de forma interactiva y encadene diagnósticos.
 ---
 
 ## Resumen

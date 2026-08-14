@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 哈斯克尔
 Haskell 是一种纯函数式、静态类型、延迟计算的编程语言。 Haskell 于 1990 年首次标准化（Haskell 90），并通过多个版本进行完善（Haskell 2010 是当前标准），Haskell 以其数学严谨性、强大的类型系统（具有类型类、单子和代数数据类型）以及对类型正确性的强调而闻名。
 Haskell 不是主流语言，但其影响力却是巨大的。诸如 monad、惰性求值和类型类之类的概念影响了 Rust、Swift、Kotlin、Scala 和 TypeScript。 Haskell 用于金融（渣打银行、巴克莱银行）、编译器（GHC）和形式验证。
@@ -473,7 +474,7 @@ tests:
 |命令 |描述 |
 |---------|-------------|
 | `stack new my-project`|从模板创建新项目 |
-| `stack build`|构建项目 |
+| `stack build`|构建项目|
 | `stack ghci`|启动交互式 REPL 并加载项目 |
 | `stack test`|运行测试套件 |
 | `stack bench`|运行基准测试 |
@@ -521,7 +522,7 @@ jobs:
 
 ## 测试
 ### HSpec — 单元测试框架
-HSpec 是最流行的测试框架，其灵感来自 Ruby 的 RSpec。它提供了 BDD 风格的语法。
+HSpec 是最流行的测试框架，受到 Ruby 的 RSpec 的启发。它提供了 BDD 风格的语法。
 ```haskell
 -- test/Spec.hs
 import Test.Hspec
@@ -930,15 +931,219 @@ pkgs.haskellPackages.developPackage {
 ---
 
 ## 何时使用 Haskell
-|场景 |为什么选择 Haskell |更好的选择|
+|场景|为什么选择 Haskell |更好的选择|
 |----------|----------|--------------------|
 |形式验证|类型系统支持证明 |阿格达、科克 |
 |编译器开发|非常适合语言实现 | OCaml、Rust |
 |金融系统|类型的正确性 |斯卡拉、F# |
 |学习 FP 概念 |最纯粹的函数式语言 | Scala（更实用）、Elm |
-|通用应用开发|可能但利基| Python、Go、Java |
+|通用应用开发 |可能但利基| Python、Go、Java |
 |网页开发| Yesod/Servant 存在但有限 | JavaScript/TypeScript |
 |数据科学|不是生态系统| Python、R |
+---
+
+## 综合问答
+### Q1：Haskell 的惰性求值如何影响性能？
+**答：** 惰性求值意味着仅在需要时才计算表达式，从而实现无限数据结构和可组合管道。但是，如果 thunk 累积，可能会导致空间泄漏：
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+使用`foldl'`（来自`Data.List`）而不是`foldl`进行数字折叠。需要时使用`!`刘海图案或`seq`强制进行评估。
+### Q2：`Functor`、`Applicative`和`Monad`之间的实际区别是什么？
+**A:** 每个类型类都添加了功能：
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**函子** 在上下文上映射纯函数。 **适用性** 应用本身位于上下文中的函数。 **Monad** 让每一步都依赖于上一步的结果。实践中：使用`fmap`/`<$>`进行简单变换，使用`<*>`进行组合效果，使用`>>=`/`do`进行顺序相关计算。
+### Q3：如何处理纯 Haskell 代码中的副作用？
+**A:** 使用类型系统来分离纯粹且有效的代码：
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+保持核心逻辑纯粹，将效果推向边缘。使用`ReaderT`进行配置，使用`ExceptT`进行错误，使用`StateT`进行可变状态。
+### Q4：什么是类型类以及它们与 OOP 接口有何不同？
+**A:** 类型类定义类型可以实现的行为。与 OOP 接口不同，它们是开放的（任何类型都可以是实例）并支持临时多态性：
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5：如何构建一个供实际使用的 Haskell 项目？
+**A:** 使用 Cabal 或 Stack 并采用标准布局：
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+关键实践：将 IO 保留在`Main.hs`或专用的`IO`模块中，使核心逻辑纯净且可测试，对域类型使用`newtype`包装器。
+---
+
+## 解决问题的思路
+### 问题 1：实现带有错误报告的安全除法函数
+**第 1 步：了解问题**
+我们需要除法来处理除以零并报告有意义的错误，而不仅仅是崩溃。
+**第 2 步：确定方法**
+使用`Either`返回错误消息或结果。这使得类型中明确出现故障的可能性。
+**步骤 3：实施**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**第 4 步：验证**
+类型系统保证调用者必须处理错误情况。模式匹配或`either`强制显式处理。
+### 问题 2：解析简单的配置语言
+**第 1 步：了解问题**
+从`name=Alice\nage=30`等字符串中解析键值对。
+**第 2 步：确定方法**
+使用`Text.Parsec`或手动递归。为简单起见，请使用`break`和`span`。
+**步骤 3：实施**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**第 4 步：扩展**
+添加注释处理 (`#`)、节标题 (`[section]`)，并使用`Value`ADT 进行类型强制转换。
+### 问题 3：用惰性构建记忆斐波那契
+**第 1 步：了解问题**
+高效计算斐波那契数。朴素递归是指数级的。
+**第 2 步：确定方法**
+使用 Haskell 的惰性求值创建一个无限列表，其中每个元素都计算一次并缓存。
+**步骤 3：实施**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**第 4 步：优化**
+对于随机访问，请使用具有惰性构造的 `Data.Array`。对于非常大的索引，请使用 O(log n) 矩阵求幂。
+### 问题 4：实现简单的状态机
+**第 1 步：了解问题**
+模拟一个循环红 -> 绿 -> 黄 -> 红的交通灯。
+**第 2 步：确定方法**
+使用状态代数数据类型和纯转换函数。
+**步骤 3：实施**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**第 4 步：验证**
+纯函数是可以简单测试的：```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ＃＃ 概括

@@ -40,8 +40,8 @@ contribution:
 ---
 
 # 飛鏢
-Dart 是 Google 开发的客户端优化编程语言，于 2013 年首次发布。雖然 Dart 最初被定位為 Web 瀏覽器的潛在 JavaScript 替代品，但它發現其主要目的是作為 **Flutter** 背後的語言 - Google 的跨平台 UI 工具包，用於從單個程式碼庫建立行動、Web、桌面和嵌入式應用程式。
-Dart 結合了現代語言的最佳功能：它是物件導向的，具有可選類型（自 Dart 3 以來健全的 null 安全性），支援使用`async`/`await`進行非同步編程，並編譯為本機機器碼（適用於行動/桌面）和 JavaScript（適用於 Web）。
+Dart 是 Google 開發的用戶端優化程式語言，於 2013 年首次發布。雖然 Dart 最初被定位為 Web 瀏覽器的潛在 JavaScript 替代品，但它發現其主要目的是作為 **Flutter** 背後的語言 - Google 的跨平台 UI 工具包，用於從單個程式碼庫建立行動、Web、桌面和嵌入式應用程式。
+Dart 結合了現代語言的最佳功能：它是物件導向的，具有可選類型（自 Dart 3 以來健全的 null 安全性），支援使用`async`/`await`進行非同步編程，並編譯為本機機器碼（用於行動/桌面）和 JavaScript（用於 Web）。
 ---
 
 ## 為什麼 Dart 很重要
@@ -565,7 +565,7 @@ linter:
 ---
 
 ## 測試
-### 使用測試套件進行單元測試
+### 使用測試包進行單元測試
 ```dart
 // test/calculator_test.dart
 import 'package:test/test.dart';
@@ -891,9 +891,9 @@ class LoginBloc {
 
 ## 效能與最佳化
 ### AOT 與 JIT 編譯
-|模式|使用時 |啟動 |執行時期 |使用案例|
+|模式|使用時 |啟動|運行時|使用案例|
 |------|---------|---------|---------|----------|
-| **JIT**（準時制）|開發、調試模式 |快|稍微慢一點|開發期間熱重載 |
+| **JIT**（準時制）|開發、調試模式|快|稍微慢一點|開發期間熱重載 |
 | **AOT**（提前）|發布版本 |稍微慢一點|更快 |生產行動/桌面應用程式 |
 | **JS** |網路目標 |取決於 |變更 | Flutter Web 應用程式 |
 | **WASM** |網路（實驗性）|取決於 |快|未來網路目標|
@@ -976,16 +976,181 @@ flutter build apk --release --dart-define=ENV=staging
 ---
 
 ## 何時使用 Dart
-|場景 |為什麼使用 Dart（Flutter）|更好的選擇|
+|場景|為什麼使用 Dart（Flutter）|更好的選擇|
 |----------|--------------------|--------------------|
 |跨平台行動應用程式 |顫振很優秀 | React Native、原生 Swift/Kotlin |
-|跨平台桌面| Flutter 支援 |電子、C#、Avalonia |
+|跨平台桌面 | Flutter 支援 |電子、C#、Avalonia |
 |網頁應用程式| Flutter 網路存在 | React、Vue、Angular 打造更豐富的 Web 應用程式 |
 |嵌入式使用者介面 | Flutter 嵌入式 | C、LVGL |
-|後端開發 |不是主要用例 | Go、Node.js、Python |
+|後端開發|不是主要用例 | Go、Node.js、Python |
 |資料科學/機器學習 |不適合| Python、R |
 |系統程式設計|不適合| C、C++、Rust |
 ---
 
+## 綜合問答
+### Q1：Dart 的空安全是如何運作的？
+**答：** Dart 2.12+ 具有健全的 null 安全性。預設變數不可為空；使用`?`允許 null：
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2：`Future` 和`Stream`有什麼不同？
+**A:**`Future`表示單一非同步結果；`Stream`表示一系列非同步事件：
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3：如何管理 Flutter 應用程式中的狀態？
+**答：** 依複雜程度採用多種方法：
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4：擴充方法在 Dart 中如何運作？
+**A:** 擴充功能會為現有類型新增功能而無需繼承：
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5：如何寫出高效能的 Dart/Flutter 程式碼？
+**答：** 關鍵做法：
+- 盡可能使用`const`建構函數
+- 避免重建小部件 - 使用`const`、`final`和 `shouldRebuild`
+- 對於大型列表，使用`ListView.builder`而不是 `ListView`
+- 使用 Flutter DevTools 進行配置
+- 使用`compute()`在隔離執行緒上執行昂貴的操作
+- 最小化`setState`呼叫 - 具體說明需要重建的內容
+---
+
+## 解決問題的思路
+### 問題 1：建置類型安全的 API 用戶端
+**第 1 步：了解問題**
+建立一個 API 用戶端來取得資料並傳回類型正確的物件。
+**第 2 步：確定方法**
+將 Dart 類別與`fromJson`/`toJson`、 async/await 和密封類別一起使用以取得結果。
+**步驟 3：實施**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**第 4 步：驗證**
+使用模擬 HTTP 用戶端進行測試。驗證網路故障和不良回應的錯誤處理。
+### 問題 2：透過去抖動實現響應式搜尋
+**第 1 步：了解問題**
+建立一個查詢 API 的搜尋字段，但會對輸入進行反跳以避免過多的請求。
+**第 2 步：確定方法**
+將 Dart Streams 與`debounceTime`和`distinct`結合使用。
+**步驟 3：實施**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**第 4 步：測試**
+驗證快速輸入是否僅在去抖期後觸發一次 API 呼叫。
+---
+
 ＃＃ 概括
-Dart 的人生目標是 Flutter。作為一種獨立的語言，它是有能力的，但並不起眼。作為 Flutter 背後的引擎，它使開發人員能夠從單一程式碼庫為每個主要平台建立美觀、高效能的應用程式。如果您正在建立跨平台行動或桌面應用程序，Dart + Flutter 是最好的選擇之一。對於其他一切，其他語言更合適。
+Dart 的人生目標是 Flutter。作為一門獨立的語言，它是有能力的，但並不起眼。作為 Flutter 背後的引擎，它使開發人員能夠從單一程式碼庫為每個主要平台建立美觀、高效能的應用程式。如果您正在建立跨平台行動或桌面應用程序，Dart + Flutter 是最好的選擇之一。對於其他一切，其他語言更合適。

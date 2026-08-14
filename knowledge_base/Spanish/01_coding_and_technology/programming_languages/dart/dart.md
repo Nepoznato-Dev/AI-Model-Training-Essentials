@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Dardo"
-descripción: "Referencia completa para el lenguaje de programación Dart que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Dart"
+description: "Comprehensive reference for the Dart programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [dardo, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "40 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [dart, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "40 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # dardo
 Dart es un lenguaje de programación optimizado para el cliente desarrollado por Google, lanzado por primera vez en 2013. Si bien Dart se posicionó inicialmente como un posible reemplazo de JavaScript para los navegadores web, encontró su propósito principal como el lenguaje detrás de **Flutter**: el conjunto de herramientas de interfaz de usuario multiplataforma de Google para crear aplicaciones móviles, web, de escritorio e integradas a partir de una única base de código.
 Dart combina las mejores características de los lenguajes modernos: está orientado a objetos, tiene escritura opcional (seguridad nula desde Dart 3), admite programación asincrónica con`async`/`await`y compila tanto en código de máquina nativo (para dispositivos móviles/escritorio) como en JavaScript (para web).
@@ -980,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | Desarrollo back-end | No es el caso de uso principal | Ir, Node.js, Python |
 | Ciencia de datos / ML | No adecuado | Pitón, R |
 | Programación de sistemas | No adecuado | C, C++, óxido |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cómo funciona la seguridad nula de Dart?
+**R:** Dart 2.12+ tiene seguridad nula sólida. Las variables no admiten valores NULL de forma predeterminada; use`?`para permitir nulo:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### P2: ¿Cuál es la diferencia entre`Future`y `Stream`?
+**R:**`Future`representa un único resultado asíncrono; `Stream`representa una secuencia de eventos asíncronos:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### P3: ¿Cómo administro el estado en una aplicación Flutter?
+**R:** Múltiples enfoques dependiendo de la complejidad:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### P4: ¿Cómo funcionan los métodos de extensión en Dart?
+**R:** Las extensiones agregan funcionalidad a los tipos existentes sin herencia:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### P5: ¿Cómo escribo código Dart/Flutter de alto rendimiento?
+**R:** Prácticas clave:
+- Utilice constructores`const`siempre que sea posible
+- Evite reconstruir widgets: utilice `const`,`final`y `shouldRebuild`. 
+- Utilice`ListView.builder`en lugar de`ListView`para listas grandes
+- Perfil con Flutter DevTools
+- Utilice`compute()`para operaciones costosas en subprocesos aislados
+- Minimiza las llamadas `setState`: sé específico sobre lo que necesita reconstrucción
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: creación de un cliente API con seguridad de tipos
+**Paso 1: Comprenda el problema**
+Cree un cliente API que obtenga datos y devuelva objetos escritos correctamente.
+**Paso 2: Identificar el enfoque**
+Utilice clases de Dart con clases `fromJson`/`toJson`, async/await y selladas para obtener resultados.
+**Paso 3: Implementar**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Paso 4: Verificar**
+Pruebe con un cliente HTTP simulado. Verifique el manejo de errores para detectar fallas de red y malas respuestas.
+### Problema 2: Implementación de una búsqueda reactiva con antirrebote
+**Paso 1: Comprenda el problema**
+Cree un campo de búsqueda que consulte una API pero rebote la entrada para evitar solicitudes excesivas.
+**Paso 2: Identificar el enfoque**
+Utilice Dart Streams con`debounceTime`y `distinct`.
+**Paso 3: Implementar**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Paso 4: Prueba**
+Verifique que la escritura rápida solo active una llamada API después del período de rebote.
 ---
 
 ## Resumen

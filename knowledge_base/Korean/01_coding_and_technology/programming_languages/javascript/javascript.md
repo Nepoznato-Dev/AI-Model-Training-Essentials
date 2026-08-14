@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 자바스크립트
 JavaScript는 Brendan Eich가 1995년 단 10일 만에 만든 동적 해석 프로그래밍 언어입니다. 원래 웹 페이지에 상호 작용 기능을 추가하도록 설계되었으나 세계에서 가장 널리 사용되는 프로그래밍 언어로 성장했습니다. JavaScript는 모든 웹 브라우저, Node.js를 통한 서버, 데스크톱 앱(Electron), 모바일 앱(React Native) 및 임베디드 시스템에서 실행됩니다.
 이 언어는 본질적으로 클라이언트 측 웹 개발을 위한 유일한 옵션이라는 점에서 독특합니다. 모든 브라우저는 기본적으로 이를 지원합니다. 풀스택 JavaScript(Node.js, Deno, Bun)의 등장과 결합된 이러한 독점은 이를 필수불가결하게 만듭니다.
@@ -55,7 +56,7 @@ JavaScript는 Brendan Eich가 1995년 단 10일 만에 만든 동적 해석 프�
 |------------|---------|------|
 | **동적 타이핑의 함정** | 컴파일 타임 유형 검사가 없습니다. 런타임 시 버그 표면 | TypeScript 사용(JavaScript의 형식화된 상위 집합) |
 | **콜백 복잡성** | 중첩된 콜백을 읽을 수 없게 될 수 있음("콜백 지옥") | 약속 및 async/await 사용 |
-| **기발한 의미** | `==`대`===`,`this`바인딩, 호이스팅, 유형 강제 | 단점을 배우십시오. ESLint를 사용하십시오. `var`보다`const`/ `let`을 선호합니다 |
+| **기발한 의미** | `==`대`===`,`this`바인딩, 호이스팅, 유형 강제 | 단점을 배우십시오. ESLint를 사용하십시오. `var`보다`const`/ `let`를 선호합니다 |
 | **단일 스레드** | CPU 바인딩된 작업이 이벤트 루프를 차단합니다. | 웹 작업자, 작업자 스레드를 사용하거나 기본 모듈로 오프로드 |
 | **패키지 품질** | npm의 개방성은 일관되지 않은 품질 및 보안 위험을 의미합니다 | 종속성을 감사합니다. 잠금 파일을 사용하십시오. 잘 관리된 패키지를 선호함 |
 ---
@@ -1022,7 +1023,7 @@ pm2 startup
 | 프레임워크 | 목적 |
 |------------|---------|
 | **익스프레스** | 최소한의 유연한 웹 프레임워크(가장 인기 있음) |
-| **확인** | 고성능 웹 프레임워크 |
+| **고정** | 고성능 웹 프레임워크 |
 | **NestJS** | 엔터프라이즈급, Angular 기반 아키텍처 |
 | **코아** | 가볍고 현대적인 Express 대안 |
 | **호노** | 초고속 멀티 런타임(Node, Deno, Bun, edge) |
@@ -1055,6 +1056,419 @@ pm2 startup
 | 데스크탑 앱(Electron) | 웹 기술을 사용한 크로스 플랫폼 | C#(WPF), 타우리(Rust) |
 | CPU 집약적인 계산 | 단일 스레드 제한 | Python(NumPy), C++, Rust, WebAssembly |
 | 시스템 프로그래밍 | 잘못된 추상화 수준 | C, C++, 러스트, Go |
+---
+
+## 종합 Q&A
+### Q1:`var`,`let`,`const`의 차이점은 무엇이며 언제 사용해야 하나요?
+**A:** `var`는 함수 범위 및 호이스트이므로 최신 코드에서는 사용하지 마세요.  `let`는 블록 범위이며 재할당을 허용합니다.  `const`는 블록 범위이며 재할당을 방지합니다(그러나 참조하는 객체/배열은 여전히 ​​변경 가능합니다). 모범 사례: 기본값은`const`입니다. 재할당이 필요한 경우에만`let`를 사용하고`var`는 사용하지 마세요.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Q2: `this`는 JavaScript에서 어떻게 작동하며 왜 그렇게 혼란스럽습니까?
+**A:** `this`는 함수가 정의된 위치가 아니라 **함수가 호출되는 방식**에 따라 결정됩니다. 메서드 호출에서는 `this`가 개체입니다. 독립형 호출에서는 `undefined`(엄격 모드) 또는 `global`(비엄격)입니다. 화살표 함수는 바깥쪽 범위에서 `this`를 상속합니다. 이것이 콜백에 선호되는 이유입니다. `.bind()`를 사용하여 `this`를 명시적으로 설정합니다.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Q3: 이벤트 루프란 무엇이며, 비동기/대기는 실제로 어떻게 작동합니까?
+**답:** JavaScript는 대기열을 처리하는 이벤트 루프가 있는 단일 스레드입니다. 호출 스택은 동기 코드를 실행합니다. 비어 있으면 이벤트 루프는 마이크로태스크 대기열(Promises) 또는 매크로태스크 대기열(setTimeout, I/O)에서 다음 작업을 선택합니다.  `async/await`는 Promise에 대한 구문 설탕입니다. `await`는 비동기 기능을 일시 중지하고 Promise가 해결되면 스레드를 차단하지 않고 다시 시작합니다.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4: 최신 JavaScript의 오류를 어떻게 처리해야 합니까?
+**A:** 동기 코드에는 `try/catch`를 사용하고 비동기 코드에는`.catch()`또는 `try/catch`를 `async/await`와 함께 사용하세요. 항상 Promise 거부를 처리하십시오. 처리되지 않은 거부는 Node.js를 충돌시킵니다. 도메인별 오류에 대한 사용자 정의 오류 클래스를 만듭니다. 전역 오류 처리기를 안전망으로 사용하십시오.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Q5: 일반 개체/배열 대신`Map`/ `Set`를 사용해야 하는 경우는 언제인가요?
+**A:** 키가 문자열이 아닐 때, 삽입 순서 반복이 필요할 때,`.size`가 필요할 때 또는 항목을 자주 추가/제거할 때(객체보다 성능이 더 좋음) `Map`를 사용하세요. O(1) 조회가 포함된 고유 컬렉션의 경우 `Set`를 사용하세요. 대규모 데이터 세트의 경우 `array.includes()`보다 훨씬 빠릅니다. 간단한 JSON 직렬화 가능 데이터와 문자열 키가 있는 작은 키-값 맵에는 일반 객체를 사용하세요.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 디바운스 기능 구현
+**문제 설명:** 마지막 호출 이후 지정된 대기 기간이 경과할 때까지 함수 호출을 지연하는`debounce`유틸리티를 구현하십시오. 선행 및 후행 가장자리 호출을 모두 지원합니다.
+**1단계 - 문제 이해:**
+디바운스된 함수는 빠른 연속 호출을 무시하고 대기 시간 동안 호출이 중지된 후에만 실행됩니다. "리딩 에지(Leading edge)"는 첫 번째 호출 시 즉시 발사되는 것을 의미합니다. "트레일링 에지(Trailing Edge)"는 대기 기간 이후의 화재를 의미합니다. 두 가지 모드를 모두 처리하고 취소도 지원해야 합니다.
+**2단계 - 접근 방식 파악:**
+- 클로저에 타이머 ID를 저장합니다.
+- 각 호출 시: 기존 타이머를 지운 다음 새 `setTimeout`를 설정합니다.
+- 리딩 엣지의 경우: 활성화된 타이머가 없으면 즉시 호출합니다.
+-`.cancel()`메서드를 사용하여 디바운싱된 함수를 반환합니다.
+- 화살표 함수 또는 `.apply()`를 사용하여`this`컨텍스트 및 인수를 유지합니다.
+**3단계 - 솔루션 구현:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**4단계 - 확인 및 최적화:**
+- 클로저는 전역 범위를 오염시키지 않고 호출 전반에 걸쳐 상태를 유지합니다.
+-`setTimeout`이전의 `clearTimeout`는 마지막 호출만 실행을 트리거하도록 보장합니다.
+- `.cancel()`는 정리(예: React에서 구성 요소 마운트 해제)에 중요합니다.
+- 엣지 케이스: `wait`가 0이면 함수는 다음 이벤트 루프 틱에서 실행됩니다. DOM 업데이트를 일괄 처리하는 데 유용합니다.
+### 문제 2: 약속 기반 비율 제한기 구축
+**문제 설명:** 시간 창당 최대 N개의 요청을 허용하는 속도 제한기를 만듭니다. 호출자가 계속 진행할 수 있는 시기를 확인하고 초과 요청을 대기열에 추가하는 약속을 반환해야 합니다.
+**1단계 - 문제 이해:**
+호출 횟수를 추적하는 슬라이딩 또는 고정 창이 필요합니다. 한도에 도달하면 새 통화가 대기열에 추가되고 슬롯이 열리면 해결되어야 합니다. 이것이 "토큰 버킷" 패턴입니다.
+**2단계 - 접근 방식 파악:**
+- 최근 호출의 타임스탬프를 배열로 추적합니다.
+- 각 호출에서: 창보다 오래된 타임스탬프를 제거하고 개수 < 제한인지 확인합니다.
+- 한도 미만인 경우: 즉시 해결합니다.
+- 제한에 있는 경우: 가장 오래된 타임스탬프가 만료되는 시기를 계산하고`setTimeout`를 설정한 다음 해결합니다.
+- 대기 중인 호출자를 위해 대기열(해결 함수 배열)을 사용합니다.
+**3단계 - 솔루션 구현:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**4단계 - 확인 및 최적화:**
+- 슬라이딩 창 접근 방식은 고정 창보다 공정합니다(창 경계에서 버스트 없음).
+- 대기열 처리는 FIFO입니다. 발신자에게 순서대로 서비스가 제공됩니다.
+- 프로덕션의 경우: 발신자가 대기를 취소할 수 있도록`AbortController`지원을 추가합니다.
+- 성능: `_cleanOldTimestamps`는 호출당 O(n)이지만 n은 `maxCalls`로 제한됩니다.
+### 문제 3: 딥 클론 기능 구현
+**문제 설명:** 객체, 배열, 날짜, RegExps, 지도, 세트, ​​순환 참조 및 형식화된 배열을 처리하여 JavaScript 값을 심층적으로 복제하는 함수를 작성합니다.
+**1단계 - 문제 이해:**
+ `JSON.parse(JSON.stringify(obj))`는 다음에서 실패합니다.`undefined`, 함수, 기호, 날짜(문자열이 됨), RegExps(빈 객체가 됨), 맵, 세트, 순환 참조(던지기) 및 형식화된 배열. 방문한 객체를 추적하는 재귀적 솔루션이 필요합니다.
+**2단계 - 접근 방식 파악:**
+- `Map`를 사용하여 이미 복제된 개체를 추적합니다(순환 참조 처리).
+- 각 유형을 특별하게 처리합니다: 날짜 → 새 날짜, RegExp → 새 RegExp, 지도 → 복제된 항목이 있는 새 맵, 설정 → 복제된 값이 있는 새 세트.
+- `structuredClone()`를 최신 내장 대안으로 사용하세요(브라우저 및 Node.js 17+에서 사용 가능).
+**3단계 - 솔루션 구현:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**4단계 - 확인 및 최적화:**
+- 순환 참조:`seen`맵은 무한 반복 대신 이미 생성된 복제본을 반환합니다.
+- 속성 설명자:`Reflect.ownKeys`+ `getOwnPropertyDescriptor`는 getter, setter 및 열거할 수 없는 속성을 유지합니다.
+- 최신 대안: `structuredClone(value)`는 이러한 경우의 대부분을 기본적으로 처리합니다(함수 및 DOM 노드 제외). 가능하다면 선호하세요.
+- 성능: 간단한 개체의 경우 `JSON.parse(JSON.stringify(obj))`가 여전히 가장 빠릅니다. 실제로 필요할 때만 딥클론을 사용하세요.
+### 문제 4: 간단한 이벤트 이미터 구축
+**문제 설명:**`on`,`off`,`emit`및`once`메서드를 지원하는 이벤트 이미터 클래스를 구현합니다. 청취자는 등록 순서대로 호출되어야 합니다.  `emit`는 모든 리스너에게 인수를 전달해야 합니다.
+**1단계 - 문제 이해:**
+게시/구독 시스템이 필요합니다. 명명된 이벤트에 대한 리스너를 등록하고, 특정 리스너를 제거하고, 인수를 사용하여 이벤트를 트리거하고, 일회성 리스너를 지원합니다. 이는 Node.js에서 광범위하게 사용되는 Observer 패턴입니다.
+**2단계 - 접근 방식 파악:**
+-`Map<string, Array<Function>>`에 리스너를 저장합니다.
+-`on`: 리스너를 배열로 푸시합니다.
+-`off`: 배열에서 특정 리스너를 필터링합니다.
+-`emit`: 배열을 반복하고 스프레드 인수를 사용하여 각 리스너를 호출합니다.
+- `once`: 첫 번째 호출 후 자신을 제거하는 함수에 리스너를 래핑합니다.
+**3단계 - 솔루션 구현:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**4단계 - 확인 및 최적화:**
+- `emit`의`[...listeners]`복사본은 반복 중에 수신기가 `off`를 호출할 때 발생하는 문제를 방지합니다.
+- `once`는 `_original`를 저장하므로 호출자는 `off(event, originalFn)`를 통해 래퍼를 제거할 수 있습니다.
+- 비공개 필드(`#listeners`)는 내부 상태의 외부 변경을 방지합니다.
+- 프로덕션의 경우:`maxListeners`경고(예: Node.js), 리스너별 오류 처리 및 우선순위를 위한 `prependListener`를 추가합니다.
 ---
 
 ## 요약

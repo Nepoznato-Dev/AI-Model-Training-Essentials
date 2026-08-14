@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Ada
-Ada to skompilowany język programowania ze statycznym typem, przeznaczony dla systemów o krytycznym znaczeniu dla bezpieczeństwa i o wysokiej integralności. Pierwotnie opracowany w latach 80. XX wieku w ramach kontraktu z Departamentem Obrony Stanów Zjednoczonych (nazwany na cześć Ady Lovelace, uważanej za pierwszą programistkę komputerową), Ada kładzie nacisk na niezawodność, łatwość konserwacji i poprawność. Został zaprojektowany, aby zastąpić setki języków programowania używanych wówczas przez Departament Obrony jednym, dobrze określonym językiem.
+Ada to skompilowany język programowania o statycznym typie, przeznaczony dla systemów o krytycznym znaczeniu dla bezpieczeństwa i o wysokiej integralności. Pierwotnie opracowany w latach 80. XX wieku w ramach kontraktu z Departamentem Obrony Stanów Zjednoczonych (nazwany na cześć Ady Lovelace, uważanej za pierwszą programistkę komputerową), Ada kładzie nacisk na niezawodność, łatwość konserwacji i poprawność. Został zaprojektowany, aby zastąpić setki języków programowania używanych wówczas przez Departament Obrony jednym, dobrze określonym językiem.
 Ada jest wykorzystywana w lotnictwie (systemy fly-by-wire), przestrzeni kosmicznej (ESA i NASA), obronie (naprowadzanie rakiet, radar), transporcie kolejowym i urządzeniach medycznych – wszędzie tam, gdzie awaria oprogramowania może kosztować życie.
 ---
 
@@ -333,7 +334,7 @@ S.Request(5, Answer);  -- Answer = 25
 S.Stop;
 ```
 
-### Chronione obiekty (współdzielone dane bezpieczne dla wątków)
+### Obiekty chronione (współdzielone dane bezpieczne dla wątków)
 ```ada
 -- Protected object with internal mutual exclusion
 protected type Shared_Buffer is
@@ -861,6 +862,147 @@ end Main;
 | Ogólne tworzenie aplikacji | Przesada dla systemów niekrytycznych | Python, Java, Go |
 | Tworzenie stron internetowych | Nie nadaje się | JavaScript, Python |
 | Nauka o danych / ML | Nie ekosystem | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: W jaki sposób system typów Ady zapobiega błędom w czasie kompilacji?
+**O:** System typów Ady należy do najbardziej rygorystycznych ze wszystkich języków. Wyłapuje błędy, których brakuje innym językom:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### P2: Jaki jest model zadań Ady i jak wypada w porównaniu z innymi modelami współbieżności?
+**O:** Ada ma wbudowaną współbieżność z chronionymi obiektami i zadaniami:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### P3: Jak używać leków generycznych w Adzie?
+**O:** Generyki Ada są jawne i bezpieczne dla typu:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### P4: Co sprawia, że ​​Ada nadaje się do stosowania w systemach o krytycznym znaczeniu dla bezpieczeństwa?
+**O:** Ada zapewnia:
+- Podzbiór SPARK do weryfikacji formalnej (matematyczny dowód poprawności)
+- Programowanie w oparciu o kontrakty (warunki wstępne/końcowe, niezmienniki typu)
+- Brak ukrytej alokacji pamięci w SPARK
+- Deterministyczne przydzielanie zadań i planowanie
+- Profil Ravenscar dla systemów czasu rzeczywistego o wysokiej integralności
+- Kwalifikacja Toolchain (DO-178C dla awioniki)
+### P5: Jak tworzyć projekty Ada?
+**A:** Użyj GPRBuild z plikami projektu GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Implementacja kolejki bezpiecznej dla typu
+**Krok 1: Zrozum problem**
+Utwórz ograniczoną, bezpieczną dla wątków kolejkę ze sprawdzaniem rozmiaru w czasie kompilacji.
+**Krok 2: Zidentyfikuj podejście**
+Użyj chronionego obiektu z ograniczonym buforem.
+**Krok 3: Wdróż**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Krok 4: Zweryfikuj**
+Obiekt chroniony gwarantuje wzajemne wykluczenie. Bariery wejściowe zapobiegają przepełnieniu/niedomiarowi.
+### Problem 2: Walidacja na podstawie umowy
+**Krok 1: Zrozum problem**
+Zaimplementuj funkcję pierwiastka kwadratowego za pomocą formalnych kontraktów.
+**Krok 2: Zidentyfikuj podejście**
+Użyj kontraktów Ada 2012 (warunki wstępne/końcowe).
+**Krok 3: Wdróż**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Krok 4: Zweryfikuj**
+Środowisko wykonawcze sprawdza (twierdzenia) wyłapywanie naruszeń. W SPARK stają się one obowiązkami dowodowymi.
 ---
 
 ## Streszczenie

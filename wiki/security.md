@@ -75,12 +75,13 @@ import torch
 # Fast Gradient Sign Method (FGSM)
 def fgsm_attack(model, input_tensor, label, epsilon=0.01):
     """Generate adversarial example using FGSM"""
-    input_tensor.requires_grad = True
-    output = model(input_tensor)
+    # Clone to avoid modifying the original tensor
+    adv_input = input_tensor.clone().detach().requires_grad_(True)
+    output = model(adv_input)
     loss = torch.nn.functional.cross_entropy(output, label)
     
     loss.backward()
-    gradient = input_tensor.grad.detach()
+    gradient = adv_input.grad.detach()
     sign_gradient = torch.sign(gradient)
     
     adversarial_input = input_tensor + epsilon * sign_gradient
@@ -92,7 +93,7 @@ def pgd_attack(model, input_tensor, label, epsilon=0.01, steps=10, alpha=0.001):
     adv_input = input_tensor.clone().detach()
     
     for _ in range(steps):
-        adv_input.requires_grad = True
+        adv_input = adv_input.detach().requires_grad_(True)
         output = model(adv_input)
         loss = torch.nn.functional.cross_entropy(output, label)
         
@@ -100,7 +101,7 @@ def pgd_attack(model, input_tensor, label, epsilon=0.01, steps=10, alpha=0.001):
         gradient = adv_input.grad.detach()
         
         with torch.no_grad():
-            adv_input = adv_input + alpha * torch.sign(gradient)
+            adv_input = adv_input.detach() + alpha * torch.sign(gradient)
             # Project back to epsilon ball
             diff = adv_input - input_tensor
             diff = torch.clamp(diff, -epsilon, epsilon)
@@ -113,9 +114,10 @@ def pgd_attack(model, input_tensor, label, epsilon=0.01, steps=10, alpha=0.001):
 
 ```python
 # Adversarial Training
-def adversarial_training_step(model, inputs, labels, epsilon=0.01):
+def adversarial_training_step(model, optimizer, inputs, labels, epsilon=0.01):
     """Train with adversarial examples"""
     model.train()
+    optimizer.zero_grad()
     
     # Generate adversarial examples
     adv_inputs = fgsm_attack(model, inputs, labels, epsilon)
@@ -129,6 +131,7 @@ def adversarial_training_step(model, inputs, labels, epsilon=0.01):
     
     total_loss = 0.5 * clean_loss + 0.5 * adv_loss
     total_loss.backward()
+    optimizer.step()
     
     return total_loss.item()
 
@@ -154,6 +157,7 @@ class RandomizedSmoothing(torch.nn.Module):
 def jpeg_compression_defense(input_tensor, quality=75):
     """Apply JPEG compression as defense"""
     from PIL import Image
+    from torchvision import transforms
     import io
     
     # Convert tensor to PIL image
@@ -216,12 +220,13 @@ async def predict(payload: dict = Depends(verify_token)):
 ### Rate Limiting
 
 ```python
-from slowapi import SlowAPISlow, _rate_limit_exceeded_handler
+from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
+from fastapi import FastAPI, Request
 
 app = FastAPI()
-limiter = SlowAPISlow(key_func=get_remote_address)
+limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
@@ -234,13 +239,14 @@ async def predict(request: Request):
 ### Input Validation
 
 ```python
-from pydantic import BaseModel, validator, Field
+from pydantic import BaseModel, field_validator, Field
 import numpy as np
 
 class PredictionInput(BaseModel):
-    features: list[float] = Field(..., min_items=10, max_items=1000)
+    features: list[float] = Field(..., min_length=10, max_length=1000)
     
-    @validator('features')
+    @field_validator('features')
+    @classmethod
     def validate_features(cls, v):
         # Check for NaN values
         if any(np.isnan(x) for x in v):
@@ -256,13 +262,14 @@ class PredictionOutput(BaseModel):
     prediction: int
     confidence: float = Field(..., ge=0, le=1)
     
-    class Config:
-        schema_extra = {
+    model_config = {
+        "json_schema_extra": {
             "example": {
                 "prediction": 1,
                 "confidence": 0.95
             }
         }
+    }
 ```
 
 ---
@@ -273,9 +280,14 @@ class PredictionOutput(BaseModel):
 
 ```python
 from cryptography.fernet import Fernet
-import pickle
+import torch
+import io
 
 class EncryptedModelStorage:
+    """
+    Encrypted model storage using torch.save/load (safe serialization)
+    instead of pickle to avoid arbitrary code execution risks.
+    """
     def __init__(self, key: bytes = None):
         if key is None:
             key = Fernet.generate_key()
@@ -283,9 +295,11 @@ class EncryptedModelStorage:
         self.key = key  # Store securely!
     
     def save_model(self, model, path: str):
-        """Save encrypted model"""
-        # Serialize model
-        model_bytes = pickle.dumps(model)
+        """Save encrypted model using safe serialization"""
+        # Serialize with torch.save (uses zip format, safer than raw pickle)
+        buffer = io.BytesIO()
+        torch.save(model.state_dict(), buffer)  # save state_dict, not full model
+        model_bytes = buffer.getvalue()
         
         # Encrypt
         encrypted = self.cipher.encrypt(model_bytes)
@@ -294,7 +308,7 @@ class EncryptedModelStorage:
         with open(path, 'wb') as f:
             f.write(encrypted)
     
-    def load_model(self, path: str):
+    def load_model(self, model_class, path: str, **model_kwargs):
         """Load and decrypt model"""
         with open(path, 'rb') as f:
             encrypted = f.read()
@@ -302,8 +316,13 @@ class EncryptedModelStorage:
         # Decrypt
         decrypted = self.cipher.decrypt(encrypted)
         
-        # Deserialize
-        return pickle.loads(decrypted)
+        # Deserialize safely
+        buffer = io.BytesIO(decrypted)
+        state_dict = torch.load(buffer, map_location='cpu', weights_only=True)
+        
+        model = model_class(**model_kwargs)
+        model.load_state_dict(state_dict)
+        return model
 ```
 
 ### Secure Secrets Management
@@ -397,8 +416,8 @@ def log_model_access(user_id: str, model_id: str, action: str, details: dict):
         "model_id": model_id,
         "action": action,
         "details": details,
-        "ip_address": get_client_ip(),
-        "user_agent": get_user_agent()
+        "ip_address": "request.client.host",  # pass from request context
+        "user_agent": "request.headers.get('user-agent', '')"  # pass from request context
     }
     audit_logger.info(json.dumps(audit_entry))
 

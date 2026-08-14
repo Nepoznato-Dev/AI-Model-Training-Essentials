@@ -46,14 +46,14 @@ Nauka o danych to dyscyplina polegająca na przekształcaniu surowych danych w p
 ## Proces nauki o danych
 Większość projektów opiera się na pewnych odmianach **CRISP-DM**, standardowego cyklu życia:
 | Faza | Co się dzieje | Typowy czas |
-|-------|------------|------------|
+|-------|------------|-------------|
 | **Zrozumienie biznesowe** | Zdefiniuj cele, wskaźniki sukcesu i ograniczenia | 10–15% |
 | **Zrozumienie danych** | Zbieraj, eksploruj i profiluj dane | 10–15% |
 | **Przygotowanie danych** | Oczyść, przekształć, zaprojektuj funkcje | ~50–60% |
 | **Modelowanie** | Wybierz i trenuj modele | 10–15% |
-| **Ocena** | Oceń wydajność w stosunku do celów biznesowych | 5–10% |
+| **Ocena** | Oceń wydajność względem celów biznesowych | 5–10% |
 | **Wdrożenie** | Wyślij model do produkcji | 5–10% |
-Stary dowcip jest taki, że 80% analityki danych zajmuje się czyszczeniem danych. Nie jest to dalekie od prawdy.
+Powszechnie szacuje się, że przygotowywanie danych, a w szczególności ich czyszczenie, zajmuje około 80% czasu analityka danych.
 ---
 
 ## Typy danych w skrócie
@@ -74,7 +74,7 @@ Statystyki opisowe podsumowują to, co *masz*; statystyki wnioskowania pozwalaj�
 |--------|-----------|
 | **Tendencja centralna** | Średnia (wrażliwa na wartości odstające), mediana (silna), tryb (najczęściej) |
 | **Rozproszenie** | Rozstęp, wariancja, odchylenie standardowe, rozstęp międzykwartylowy |
-| **Kształt rozkładu** | Skośność (asymetria), kurtoza (ciężkość ogona) |
+| **Kształt rozkładu** | Skośność (asymetria), kurtoza (ciężar ogona) |
 | **Testowanie hipotez** | Hipoteza zerowa vs hipoteza alternatywna, wartości p, poziom istotności (α) |
 | **Przedziały ufności** | Zakres prawdopodobnie zawierający prawdziwy parametr populacji |
 | **Błędy typu I / typu II** | Fałszywie dodatnie (odrzucenie prawdziwej wartości null) / fałszywie ujemne (brak prawdziwego efektu) |
@@ -105,10 +105,10 @@ Dane rzeczywiste pochodzą z wielu źródeł: relacyjnych baz danych, interfejs�
 | Koncepcja | Opis |
 |--------|------------|
 | **ETL** | Wyodrębnij → Przekształć → Załaduj — tradycyjne podejście potokowe |
-| **ELT** | Wyodrębnij → Załaduj → Przekształć — nowoczesne podejście do chmury (załaduj surowe, przekształć w magazynie) |
+| **ELT** | Wyodrębnij → Załaduj → Przekształć — nowoczesne podejście do chmury (ładuj surowo, przekształć w magazynie) |
 | **Jezioro danych** | Surowe dane przechowywane w formacie natywnym (schemat podczas odczytu) |
 | **hurtownia danych** | Ustrukturyzowane, przetworzone dane zoptymalizowane do analizy (schemat-on-write) |
-| **Materiał danych** | Podzbiór magazynu, ograniczony do jednego działu lub domeny |
+| **Materiał danych** | Podzbiór magazynu ograniczony do jednego działu lub domeny |
 | **Schemat gwiazdy** | Centralna tabela faktów otoczona tabelami wymiarów |
 | **Schemat płatka śniegu** | Znormalizowane tabele wymiarów (mniejsza redundancja, więcej połączeń) |
 ### Typy baz danych
@@ -166,7 +166,7 @@ EDA to miejsce, w którym rozwijasz intuicję dotyczącą danych przed modelowan
 | Biblioteka | Rola |
 |--------|------|
 | **pandy** | Manipulacja i analiza danych |
-| **nudny** | Obliczenia numeryczne |
+| **nudne** | Obliczenia numeryczne |
 | **matplotlib** | Planowanie fundamentów |
 | **urodzony w morzu** | Wizualizacja statystyczna (zbudowana na matplotlib) |
 | **fabuła** | Interaktywne wizualizacje internetowe |
@@ -204,7 +204,7 @@ Kiedy zbiory danych przekraczają możliwości pojedynczej maszyny, na scenę wc
 | **Promień Apache** | Ujednolicony model wsadowy i strumieniowy |
 ### Platformy danych w chmurze
 | Dostawca | Kluczowe usługi |
-|--------------|------------|
+|---------|------------|
 | **AWS** | S3, EMR, przesunięcie ku czerwieni, SageMaker, klej |
 | **Chmura Google** | BigQuery, Dataproc, platforma AI, przechowywanie w chmurze |
 | **Lazur** | Synapse Analytics, kostki danych, uczenie maszynowe, jezioro danych |
@@ -228,7 +228,7 @@ Kiedy zbiory danych przekraczają możliwości pojedynczej maszyny, na scenę wc
 | **Metabaza** | Otwarte oprogramowanie | Łatwa konfiguracja, natywny język SQL |
 | **Nadzbiór** | Oprogramowanie typu open source (Apache) | Skalowalny, oparty na SQL |
 ### Zasady projektowania pulpitów nawigacyjnych
-Dobre dashboardy kierują się kilkoma zasadami: poznaj swoich odbiorców, wybierz odpowiednią wizualizację dla każdego wskaźnika, używaj kolorów strategicznie (a nie dekoracyjnie), utrzymuj spójne skale i umożliwiaj interaktywność (filtry, drążenie). Wydajność też ma znaczenie — nikt nie czeka na powolny pulpit nawigacyjny.
+Efektywne dashboardy opierają się na ustalonych zasadach: identyfikuj odbiorców, wybieraj odpowiednią wizualizację dla każdego wskaźnika, używaj kolorów strategicznie (a nie dekoracyjnie), utrzymuj spójne skale i umożliwiaj interaktywność (filtry, drążenie). Wydajność jest również ważna — pulpity nawigacyjne z długim czasem ładowania ograniczają adopcję użytkowników.
 ### Typowe kategorie KPI
 | Kategoria | Przykłady |
 |--------------|--------|

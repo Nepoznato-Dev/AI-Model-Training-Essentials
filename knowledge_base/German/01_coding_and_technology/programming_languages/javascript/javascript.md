@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # JavaScript
 JavaScript ist eine dynamische, interpretierte Programmiersprache, die 1995 von Brendan Eich in nur 10 Tagen entwickelt wurde. Ursprünglich entwickelt, um Webseiten Interaktivität zu verleihen, hat sie sich zur weltweit am häufigsten verwendeten Programmiersprache entwickelt. JavaScript läuft in jedem Webbrowser, auf Servern über Node.js, in Desktop-Apps (Electron), mobilen Apps (React Native) und sogar eingebetteten Systemen.
 Die Sprache ist insofern einzigartig, als sie im Wesentlichen die einzige Option für die clientseitige Webentwicklung ist – jeder Browser unterstützt sie nativ. Dieses Monopol, kombiniert mit dem Aufstieg von Full-Stack-JavaScript (Node.js, Deno, Bun), macht es unverzichtbar.
@@ -55,7 +56,7 @@ Die Sprache ist insofern einzigartig, als sie im Wesentlichen die einzige Option
 |-----------|---------|-----|
 | **Fallstricke beim dynamischen Tippen** | Keine Typprüfung zur Kompilierungszeit; Fehler tauchen zur Laufzeit auf | Verwenden Sie TypeScript (eine typisierte Obermenge von JavaScript) |
 | **Callback-Komplexität** | Verschachtelte Callbacks können unlesbar werden („Callback-Hölle“) | Verwenden Sie Promises und async/await |
-| **Skurrile Semantik** | `==`vs`===`,`this`Bindung, Heben, Typzwang | Lernen Sie die Macken; benutze ESLint; bevorzugen Sie`const`/`let`gegenüber`var`|
+| **Skurrile Semantik** | `==`vs.`===`,`this`Bindung, Heben, Typzwang | Lernen Sie die Macken; benutze ESLint; bevorzugen Sie`const`/`let`gegenüber`var`|
 | **Single-Threaded** | CPU-gebundene Aufgaben blockieren die Ereignisschleife | Verwenden Sie Web Worker, Worker-Threads oder verlagern Sie sie auf native Module |
 | **Verpackungsqualität** | Die Offenheit von npm bedeutet inkonsistente Qualitäts- und Sicherheitsrisiken | Audit-Abhängigkeiten; Sperrdateien verwenden; Bevorzugen Sie gepflegte Pakete |
 ---
@@ -1057,5 +1058,418 @@ pm2 startup
 | Systemprogrammierung | Falsche Abstraktionsebene | C, C++, Rust, Go |
 ---
 
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen`var`,`let`und`const`und wann sollte ich sie jeweils verwenden?
+**A:**`var`ist funktionsbezogen und hochgezogen – vermeiden Sie dies in modernem Code. `let`ist blockbezogen und ermöglicht eine Neuzuweisung. `const`ist blockbezogen und verhindert eine Neuzuweisung (Objekte/Arrays, auf die es verweist, sind jedoch weiterhin veränderbar). Best Practice: Standardmäßig`const`verwenden,`let`nur verwenden, wenn eine Neuzuweisung erforderlich ist, niemals`var`verwenden.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### F2: Wie funktioniert`this`in JavaScript und warum ist es so verwirrend?
+**A:**`this`wird davon bestimmt, **wie eine Funktion aufgerufen wird**, nicht davon, wo sie definiert ist. Bei einem Methodenaufruf ist`this`das Objekt. Bei einem eigenständigen Aufruf ist es`undefined`(strikter Modus) oder`global`(nicht strikt). Pfeilfunktionen erben`this`von ihrem umschließenden Bereich – deshalb werden sie für Rückrufe bevorzugt. Verwenden Sie `.bind()`, um`this`explizit festzulegen.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### F3: Was ist die Ereignisschleife und wie funktioniert Async/Await eigentlich?
+**A:** JavaScript ist Single-Threaded mit einer Ereignisschleife, die eine Warteschlange verarbeitet. Der Aufrufstapel führt synchronen Code aus. Wenn sie leer ist, wählt die Ereignisschleife die nächste Aufgabe aus der Mikrotask-Warteschlange (Promises) oder Makrotask-Warteschlange (setTimeout, I/O) aus. `async/await`ist syntaktischer Zucker über Versprechen –`await`pausiert die asynchrone Funktion und wird fortgesetzt, wenn das Versprechen aufgelöst wird, ohne den Thread zu blockieren.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### F4: Wie soll ich mit Fehlern in modernem JavaScript umgehen?
+**A:** Verwenden Sie`try/catch`für synchronen Code und`.catch()`oder`try/catch`mit`async/await`für asynchronen Code. Behandeln Sie Promise-Ablehnungen immer – nicht behandelte Ablehnungen bringen Node.js zum Absturz. Erstellen Sie benutzerdefinierte Fehlerklassen für domänenspezifische Fehler. Verwenden Sie einen globalen Fehlerbehandler als Sicherheitsnetz.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### F5: Wann sollte ich`Map`/`Set`anstelle einfacher Objekte/Arrays verwenden?
+**A:** Verwenden Sie `Map`, wenn Schlüssel keine Zeichenfolgen sind, wenn Sie eine Iteration in der Einfügereihenfolge benötigen, wenn Sie`.size`benötigen oder wenn Sie häufig Einträge hinzufügen/entfernen (bessere Leistung als Objekte). Verwenden Sie`Set`für einzigartige Sammlungen mit O(1)-Suche – viel schneller als`array.includes()`für große Datensätze. Verwenden Sie einfache Objekte für einfache JSON-serialisierbare Daten und kleine Schlüsselwertzuordnungen mit Zeichenfolgenschlüsseln.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Implementieren Sie eine Debounce-Funktion
+**Problemstellung:** Implementieren Sie ein `debounce`-Dienstprogramm, das den Aufruf einer Funktion verzögert, bis eine bestimmte Wartezeit seit dem letzten Aufruf verstrichen ist. Unterstützt sowohl den Vorder- als auch den Hinterkantenaufruf.
+**Schritt 1 – Das Problem verstehen:**
+Eine entprellte Funktion ignoriert schnell aufeinanderfolgende Aufrufe und wird erst ausgelöst, nachdem die Aufrufe für die Wartezeit gestoppt wurden. „Vorderkante“ bedeutet, dass sofort beim ersten Anruf abgefeuert wird. „Hinterkante“ bedeutet Feuer nach der Wartezeit. Wir müssen beide Modi beherrschen und auch die Stornierung unterstützen.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Bewahren Sie eine Timer-ID in einem Verschluss auf.
+- Bei jedem Anruf: Löschen Sie den vorhandenen Timer und stellen Sie dann einen neuen`setTimeout`ein.
+- Für Vorderkante: Sofort anrufen, wenn kein Timer aktiv ist.
+– Gibt eine entprellte Funktion mit einer `.cancel()`-Methode zurück.
+- Behalten Sie den `this`-Kontext und die Argumente mithilfe von Pfeilfunktionen oder`.apply()`bei.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+– Durch die Schließung bleibt der Status über alle Aufrufe hinweg erhalten, ohne den globalen Bereich zu beeinträchtigen.
+-`clearTimeout`vor`setTimeout`stellt sicher, dass nur der letzte Aufruf die Ausführung auslöst.
+-`.cancel()`ist wichtig für die Bereinigung (z. B. Aufheben der Bereitstellung einer Komponente in React).
+- Grenzfall: Wenn`wait`0 ist, wird die Funktion beim nächsten Ereignisschleifen-Tick ausgelöst – nützlich für die Stapelverarbeitung von DOM-Aktualisierungen.
+### Problem 2: Erstellen Sie einen auf Versprechen basierenden Ratenbegrenzer
+**Problemstellung:** Erstellen Sie einen Ratenbegrenzer, der höchstens N Anfragen pro Zeitfenster zulässt. Es sollte Versprechen zurückgeben, die auflösen, wann der Anrufer fortfahren darf, und überschüssige Anfragen in die Warteschlange stellen.
+**Schritt 1 – Das Problem verstehen:**
+Wir brauchen ein verschiebbares oder festes Fenster, das verfolgt, wie viele Anrufe getätigt wurden. Wenn das Limit erreicht ist, sollten neue Anrufe in die Warteschlange gestellt und gelöst werden, sobald ein Slot frei wird. Dies ist das „Token-Bucket“-Muster.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Verfolgen Sie Zeitstempel der letzten Anrufe in einem Array.
+- Bei jedem Aufruf: Zeitstempel entfernen, die älter als das Fenster sind, und prüfen, ob die Anzahl < Limit ist.
+- Bei Unterschreitung: Sofort beheben.
+- Wenn das Limit erreicht ist: Berechnen Sie, wann der älteste Zeitstempel abläuft, legen Sie einen`setTimeout`fest und lösen Sie ihn dann auf.
+- Verwenden Sie eine Warteschlange (Array von Auflösungsfunktionen) für wartende Anrufer.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Der Schiebefenster-Ansatz ist fairer als feste Fenster (kein Platzen an den Fenstergrenzen).
+- Die Warteschlangenverarbeitung erfolgt nach FIFO – Anrufer werden der Reihe nach bedient.
+– Für die Produktion: `AbortController`-Unterstützung hinzufügen, damit Anrufer das Warten abbrechen können.
+- Leistung:`_cleanOldTimestamps`ist O(n) pro Aufruf, aber n ist durch`maxCalls`begrenzt.
+### Problem 3: Implementieren Sie eine Deep Clone-Funktion
+**Problemstellung:** Schreiben Sie eine Funktion, die jeden JavaScript-Wert tief klont und dabei Objekte, Arrays, Datumsangaben, RegExps, Karten, Mengen, Zirkelverweise und typisierte Arrays verarbeitet.
+**Schritt 1 – Das Problem verstehen:**
+`JSON.parse(JSON.stringify(obj))`schlägt fehl bei: Wir brauchen eine rekursive Lösung, die besuchte Objekte verfolgt.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Verwenden Sie einen `Map`, um bereits geklonte Objekte zu verfolgen (verwaltet Zirkelverweise).
+- Behandeln Sie jeden Typ speziell: Datum → neues Datum, RegExp → neuer RegExp, Map → neue Map mit geklonten Einträgen, Set → neues Set mit geklonten Werten.
+- Verwenden Sie`structuredClone()`als moderne integrierte Alternative (verfügbar in Browsern und Node.js 17+).
+**Schritt 3 – Implementieren Sie die Lösung:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Zirkelverweise: Die `seen`-Map gibt den bereits erstellten Klon zurück, anstatt unendlich zu rekursieren.
+– Eigenschaftsdeskriptoren:`Reflect.ownKeys`+`getOwnPropertyDescriptor`behält Getter, Setter und nicht aufzählbare Eigenschaften bei.
+- Moderne Alternative:`structuredClone(value)`behandelt die meisten dieser Fälle nativ (außer Funktionen und DOM-Knoten). Bevorzugen Sie es, wenn verfügbar.
+- Leistung: Für einfache Objekte ist`JSON.parse(JSON.stringify(obj))`immer noch am schnellsten. Verwenden Sie Deep Clone nur, wenn Sie es tatsächlich benötigen.
+### Problem 4: Erstellen Sie einen einfachen Ereignisemitter
+**Problemstellung:** Implementieren Sie eine Ereignisemitterklasse, die die Methoden `on`, `off`,`emit`und`once`unterstützt. Die Zuhörer werden in der Anmeldereihenfolge aufgerufen. `emit`sollte Argumente an alle Listener übergeben.
+**Schritt 1 – Das Problem verstehen:**
+Wir brauchen ein Pub/Sub-System: Registrieren Sie Listener für benannte Ereignisse, entfernen Sie bestimmte Listener, lösen Sie Ereignisse mit Argumenten aus und unterstützen Sie einmalige Listener. Dies ist das Observer-Muster, das in Node.js häufig verwendet wird.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Speichern Sie Listener in einem`Map<string, Array<Function>>`.
+- `on`: Listener zum Array schieben.
+- `off`: Filtern Sie den spezifischen Listener aus dem Array heraus.
+- `emit`: Array iterieren und jeden Listener mit verteilten Argumenten aufrufen.
+- `once`: Listener in eine Funktion einschließen, die sich nach dem ersten Aufruf selbst entfernt.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+– Die `[...listeners]`-Kopie in`emit`verhindert Probleme, wenn ein Listener während der Iteration`off`aufruft.
+-`once`speichert `_original`, sodass Aufrufer den Wrapper über`off(event, originalFn)`entfernen können.
+– Private Felder (`#listeners`) verhindern eine externe Mutation des internen Status.
+– Für die Produktion: `maxListeners`-Warnung (wie Node.js), Fehlerbehandlung pro Listener und`prependListener`für Priorität hinzufügen.
+---
+
 ## Zusammenfassung
-JavaScript ist unausweichlich. Es ist die einzige Sprache, die in Webbrowsern läuft und daher für die Frontend-Entwicklung unerlässlich ist. Mit Node.js erstreckt es sich auf die Serverseite und mit Frameworks wie React Native und Electron erreicht es Mobilgeräte und Desktops. Das Ökosystem ist das größte in der Programmierung. Die Macken der Sprache sind bekannt und beherrschbar – und TypeScript geht auf die Tippprobleme ein. Für alles, was in einem Browser ausgeführt wird, ist JavaScript nicht nur die beste Wahl – es ist die einzige Wahl.
+JavaScript ist unausweichlich. Es ist die einzige Sprache, die in Webbrowsern läuft und daher für die Frontend-Entwicklung unerlässlich ist. Mit Node.js erstreckt es sich auf die Serverseite und mit Frameworks wie React Native und Electron erreicht es Mobilgeräte und Desktops. Das Ökosystem ist das größte in der Programmierung. Die Macken der Sprache sind bekannt und beherrschbar – und TypeScript geht auf die Tippprobleme ein. Für alles, was in einem Browser läuft, ist JavaScript nicht nur die beste Wahl – es ist die einzige Wahl.

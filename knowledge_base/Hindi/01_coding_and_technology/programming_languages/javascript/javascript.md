@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "जावास्क्रिप्ट"
-विवरण: "जावास्क्रिप्ट प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [जावास्क्रिप्ट, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "44 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "JavaScript"
+description: "Comprehensive reference for the JavaScript programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [javascript, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #जावास्क्रिप्ट
 जावास्क्रिप्ट एक गतिशील, व्याख्या की गई प्रोग्रामिंग भाषा है जिसे ब्रेंडन ईच ने 1995 में केवल 10 दिनों में बनाया था। मूल रूप से वेब पेजों में अन्तरक्रियाशीलता जोड़ने के लिए डिज़ाइन किया गया था, यह दुनिया में सबसे व्यापक रूप से उपयोग की जाने वाली प्रोग्रामिंग भाषा बन गई है। जावास्क्रिप्ट प्रत्येक वेब ब्राउज़र में, Node.js के माध्यम से सर्वर पर, डेस्कटॉप ऐप्स (इलेक्ट्रॉन), मोबाइल ऐप्स (रिएक्ट नेटिव) और यहां तक ​​कि एम्बेडेड सिस्टम में भी चलता है।
 यह भाषा इस मायने में अद्वितीय है कि यह अनिवार्य रूप से क्लाइंट-साइड वेब विकास के लिए एकमात्र विकल्प है - प्रत्येक ब्राउज़र मूल रूप से इसका समर्थन करता है। फुल-स्टैक जावास्क्रिप्ट (नोड.जेएस, डेनो, बन) के उदय के साथ मिलकर यह एकाधिकार इसे अपरिहार्य बनाता है।
@@ -51,7 +56,7 @@
 |----|---|-----|
 | **डायनेमिक टाइपिंग के नुकसान** | कोई संकलन-समय प्रकार की जाँच नहीं; रनटाइम पर बग सतह पर आते हैं | टाइपस्क्रिप्ट (जावास्क्रिप्ट का एक टाइप किया हुआ सुपरसेट) का उपयोग करें |
 | **कॉलबैक जटिलता** | नेस्टेड कॉलबैक अपठनीय हो सकते हैं ("कॉलबैक नरक") | वादों और async/प्रतीक्षा का उपयोग करें |
-| **विचित्र शब्दार्थ** | `==`बनाम`===`,`this`बाइंडिंग, उत्थापन, प्रकार की जबरदस्ती | विचित्रताएँ सीखें; ESLint का उपयोग करें;`var`की तुलना में`const`/`let`को प्राथमिकता दें |
+| **विचित्र शब्दार्थ** | `==`बनाम`===`,`this`बाइंडिंग, उत्थापन, प्रकार जबरदस्ती | विचित्रताएँ सीखें; ESLint का उपयोग करें;`var`की तुलना में`const`/`let`को प्राथमिकता दें |
 | **सिंगल-थ्रेडेड** | सीपीयू-बाउंड कार्य इवेंट लूप को ब्लॉक करते हैं | वेब वर्कर्स, वर्कर थ्रेड्स का उपयोग करें, या मूल मॉड्यूल पर ऑफलोड करें |
 | **पैकेज गुणवत्ता** | एनपीएम के खुलेपन का मतलब है असंगत गुणवत्ता और सुरक्षा जोखिम | लेखापरीक्षा निर्भरताएँ; लॉक फ़ाइलों का उपयोग करें; सुव्यवस्थित पैकेज को प्राथमिकता दें |
 ---
@@ -526,7 +531,7 @@ my-js-project/
 └── .gitignore
 ```
 
-### कॉन्फ़िगरेशन बनाएँ — `package.json`
+### कॉन्फ़िगरेशन बनाएँ - `package.json`
 ```json
 {
   "name": "my-js-project",
@@ -1051,6 +1056,419 @@ pm2 startup
 | डेस्कटॉप ऐप्स (इलेक्ट्रॉन) | वेब तकनीक के साथ क्रॉस-प्लेटफ़ॉर्म | सी# (डब्ल्यूपीएफ), तौरी (जंग) |
 | सीपीयू-गहन संगणना | सिंगल-थ्रेडेड सीमा | पायथन (NumPy), C++, रस्ट, WebAssembly |
 | सिस्टम प्रोग्रामिंग | गलत अमूर्तन स्तर | सी, सी++, रस्ट, गो |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1:`var`,`let`और`const`के बीच क्या अंतर है, और मुझे प्रत्येक का उपयोग कब करना चाहिए?
+**ए:**`var`फ़ंक्शन-स्कोप्ड और फहराया गया है - आधुनिक कोड में इससे बचें। `let`ब्लॉक-स्कोप्ड है और पुन:असाइनमेंट की अनुमति देता है। `const`ब्लॉक-स्कोप्ड है और पुन:असाइनमेंट को रोकता है (लेकिन इसके द्वारा संदर्भित ऑब्जेक्ट/सरणी अभी भी परिवर्तनशील हैं)। सर्वोत्तम अभ्यास:`const`के लिए डिफ़ॉल्ट,`let`का उपयोग केवल तभी करें जब आपको पुन: असाइनमेंट की आवश्यकता हो, कभी भी`var`का उपयोग न करें।
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Q2:`this`जावास्क्रिप्ट में कैसे काम करता है, और यह इतना भ्रमित करने वाला क्यों है?
+**ए:**`this`**किसी फ़ंक्शन को कैसे कॉल किया जाता है** से निर्धारित होता है, न कि इसे कहां परिभाषित किया गया है। एक विधि कॉल में,`this`ऑब्जेक्ट है। स्टैंडअलोन कॉल में, यह`undefined`(सख्त मोड) या`global`(गैर-सख्त) है। एरो फ़ंक्शंस को उनके संलग्न दायरे से`this`विरासत में मिलता है - यही कारण है कि उन्हें कॉलबैक के लिए प्राथमिकता दी जाती है।`this`को स्पष्ट रूप से सेट करने के लिए`.bind()`का उपयोग करें।
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Q3: इवेंट लूप क्या है, और async/await वास्तव में कैसे काम करता है?
+**ए:** जावास्क्रिप्ट एक इवेंट लूप के साथ एकल-थ्रेडेड है जो एक कतार को संसाधित करता है। कॉल स्टैक सिंक्रोनस कोड निष्पादित करता है। जब यह खाली होता है, तो इवेंट लूप माइक्रोटास्क कतार (वादे) या मैक्रोटास्क कतार (सेटटाइमआउट, I/O) से अगला कार्य चुनता है। `async/await`वादों पर वाक्यात्मक चीनी है -`await`async फ़ंक्शन को रोक देता है और जब वादा हल हो जाता है, तो थ्रेड को अवरुद्ध किए बिना फिर से शुरू करता है।
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### प्रश्न4: मुझे आधुनिक जावास्क्रिप्ट में त्रुटियों को कैसे संभालना चाहिए?
+**ए:** सिंक्रोनस कोड के लिए`try/catch`और एसिंक्रोनस कोड के लिए`async/await`के साथ`.catch()`या`try/catch`का उपयोग करें। हमेशा प्रॉमिस अस्वीकृतियों को संभालें - बिना संभाले अस्वीकृतियाँ Node.js को क्रैश कर देती हैं। डोमेन-विशिष्ट त्रुटियों के लिए कस्टम त्रुटि वर्ग बनाएं। सुरक्षा जाल के रूप में वैश्विक त्रुटि हैंडलर का उपयोग करें।
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Q5: मुझे सादे ऑब्जेक्ट/सरणी के बजाय`Map`/`Set`का उपयोग कब करना चाहिए?
+**ए:** जब कुंजियाँ स्ट्रिंग नहीं होती हैं, जब आपको सम्मिलन-क्रम पुनरावृत्ति की आवश्यकता होती है, जब आपको`.size`की आवश्यकता होती है, या जब आप अक्सर प्रविष्टियाँ जोड़ते/हटाते हैं (ऑब्जेक्ट्स की तुलना में बेहतर प्रदर्शन) तो`Map`का उपयोग करें। O(1) लुकअप के साथ अद्वितीय संग्रह के लिए`Set`का उपयोग करें - बड़े डेटासेट के लिए`array.includes()`की तुलना में बहुत तेज़। सरल JSON-क्रमबद्ध डेटा और स्ट्रिंग कुंजियों के साथ छोटे कुंजी-मूल्य मानचित्रों के लिए सादे ऑब्जेक्ट का उपयोग करें।
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: डिबाउंस फ़ंक्शन लागू करें
+**समस्या कथन:** एक`debounce`उपयोगिता लागू करें जो किसी फ़ंक्शन को लागू करने में तब तक देरी करती है जब तक कि पिछली बार कॉल किए जाने के बाद एक निर्दिष्ट प्रतीक्षा अवधि समाप्त न हो जाए। अग्रणी और अनुगामी दोनों प्रकार के आह्वान का समर्थन करें।
+**चरण 1 - समस्या को समझें:**
+एक डिबाउंस्ड फ़ंक्शन तेजी से आने वाली कॉलों को नजरअंदाज कर देता है और प्रतीक्षा अवधि के लिए कॉल रुकने के बाद ही सक्रिय होता है। "अग्रणी धार" का अर्थ है पहली कॉल पर तुरंत फायर करना। "ट्रेलिंग एज" का अर्थ है प्रतीक्षा अवधि के बाद आग। हमें दोनों मोड को संभालने की जरूरत है और कैंसिलेशन का भी समर्थन करना है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- एक क्लोजर में टाइमर आईडी स्टोर करें।
+- प्रत्येक कॉल पर: मौजूदा टाइमर साफ़ करें, फिर एक नया`setTimeout`सेट करें।
+- अग्रणी बढ़त के लिए: यदि कोई टाइमर सक्रिय नहीं है तो तुरंत कॉल करें।
+-`.cancel()`विधि के साथ एक डिबाउंस फ़ंक्शन लौटाएं।
+- एरो फ़ंक्शंस या`.apply()`का उपयोग करके`this`संदर्भ और तर्कों को संरक्षित करें।
+**चरण 3 - समाधान लागू करें:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- समापन वैश्विक दायरे को प्रदूषित किए बिना सभी कॉलों की स्थिति को सुरक्षित रखता है।
+-`setTimeout`से पहले`clearTimeout`केवल अंतिम कॉल ट्रिगर निष्पादन को सुनिश्चित करता है।
+-`.cancel()`सफाई के लिए महत्वपूर्ण है (उदाहरण के लिए, रिएक्ट में घटक अनमाउंट)।
+- एज केस: यदि`wait`0 है, तो फ़ंक्शन अगले इवेंट लूप टिक पर सक्रिय होता है - DOM अपडेट को बैचने के लिए उपयोगी।
+### समस्या 2: वादा-आधारित दर सीमक बनाएं
+**समस्या कथन:** एक दर अवरोधक बनाएं जो प्रति समय विंडो में अधिकतम एन अनुरोधों की अनुमति देता है। इसे ऐसे वादे लौटाने चाहिए जो कॉल करने वाले को आगे बढ़ने की अनुमति मिलने पर हल हो जाएं और अतिरिक्त अनुरोधों को कतारबद्ध कर दें।
+**चरण 1 - समस्या को समझें:**
+हमें एक स्लाइडिंग या फिक्स्ड विंडो की आवश्यकता है जो ट्रैक करे कि कितनी कॉल की गई हैं। जब सीमा पूरी हो जाती है, तो नई कॉलों को कतारबद्ध किया जाना चाहिए और एक स्लॉट खुलने पर हल किया जाना चाहिए। यह "टोकन बकेट" पैटर्न है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- किसी सरणी में हाल की कॉल के टाइमस्टैम्प को ट्रैक करें।
+- प्रत्येक कॉल पर: विंडो से पुराने टाइमस्टैम्प हटाएं, जांचें कि क्या गिनती <सीमा है।
+- यदि सीमा के अंतर्गत है: तुरंत समाधान करें।
+- यदि सीमा पर है: सबसे पुराना टाइमस्टैम्प समाप्त होने पर गणना करें,`setTimeout`सेट करें, फिर हल करें।
+- प्रतीक्षारत कॉल करने वालों के लिए एक कतार (समाधान कार्यों की श्रृंखला) का उपयोग करें।
+**चरण 3 - समाधान लागू करें:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- स्लाइडिंग विंडो का दृष्टिकोण निश्चित विंडो की तुलना में अधिक उचित है (खिड़की की सीमाओं पर कोई विस्फोट नहीं)।
+- कतार प्रसंस्करण फीफो है - कॉल करने वालों को क्रम में सेवा दी जाती है।
+- उत्पादन के लिए:`AbortController`समर्थन जोड़ें ताकि कॉल करने वाले प्रतीक्षा रद्द कर सकें।
+- प्रदर्शन:`_cleanOldTimestamps`प्रति कॉल O(n) है लेकिन n`maxCalls`से घिरा है।
+### समस्या 3: एक डीप क्लोन फ़ंक्शन लागू करें
+**समस्या कथन:** एक फ़ंक्शन लिखें जो किसी भी जावास्क्रिप्ट मान को गहराई से क्लोन करता है, वस्तुओं, सरणियों, तिथियों, रेगएक्सप्स, मानचित्रों, सेटों, परिपत्र संदर्भों और टाइप किए गए सरणियों को संभालता है।
+**चरण 1 - समस्या को समझें:**
+`JSON.parse(JSON.stringify(obj))`विफल रहता है: `undefined`, फ़ंक्शंस, प्रतीक, दिनांक (स्ट्रिंग्स बन जाते हैं), रेगएक्सप्स (खाली ऑब्जेक्ट बन जाते हैं), मैप्स, सेट, परिपत्र संदर्भ (थ्रो), और टाइप किए गए एरे। हमें एक पुनरावर्ती समाधान की आवश्यकता है जो विज़िट की गई वस्तुओं को ट्रैक करता है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- पहले से क्लोन की गई वस्तुओं को ट्रैक करने के लिए`Map`का उपयोग करें (गोलाकार संदर्भों को संभालता है)।
+- प्रत्येक प्रकार को विशेष रूप से संभालें: दिनांक → नई तिथि, रेगएक्सपी → नया रेगएक्सपी, मानचित्र → क्लोन प्रविष्टियों के साथ नया मानचित्र, सेट → क्लोन किए गए मानों के साथ नया सेट।
+- आधुनिक अंतर्निर्मित विकल्प के रूप में`structuredClone()`का उपयोग करें (ब्राउज़र और Node.js 17+ में उपलब्ध)।
+**चरण 3 - समाधान लागू करें:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- परिपत्र संदर्भ:`seen`मानचित्र अनंत बार पुनरावृत्ति करने के बजाय पहले से निर्मित क्लोन लौटाता है।
+- संपत्ति विवरणक:`Reflect.ownKeys`+`getOwnPropertyDescriptor`गेटर्स, सेटर्स और गैर-गणना योग्य गुणों को संरक्षित करता है।
+- आधुनिक विकल्प:`structuredClone(value)`इनमें से अधिकांश मामलों को मूल रूप से संभालता है (फ़ंक्शन और DOM नोड्स को छोड़कर)। उपलब्ध होने पर इसे प्राथमिकता दें।
+- प्रदर्शन: साधारण वस्तुओं के लिए,`JSON.parse(JSON.stringify(obj))`अभी भी सबसे तेज़ है। डीप क्लोन का उपयोग तभी करें जब आपको वास्तव में इसकी आवश्यकता हो।
+### समस्या 4: एक साधारण इवेंट एमिटर बनाएं
+**समस्या कथन:** एक इवेंट एमिटर क्लास लागू करें जो `on`, `off`, `emit`, और`once`विधियों का समर्थन करता है। श्रोताओं को पंजीकरण क्रम में बुलाया जाना चाहिए। `emit`को सभी श्रोताओं को तर्क देना चाहिए।
+**चरण 1 - समस्या को समझें:**
+हमें एक पब/उप प्रणाली की आवश्यकता है: नामित घटनाओं के लिए श्रोताओं को पंजीकृत करें, विशिष्ट श्रोताओं को हटाएं, तर्कों के साथ घटनाओं को ट्रिगर करें, और एक बार के श्रोताओं का समर्थन करें। यह ऑब्जर्वर पैटर्न है जिसका उपयोग Node.js में बड़े पैमाने पर किया जाता है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- श्रोताओं को`Map<string, Array<Function>>`में संग्रहित करें।
+-`on`: श्रोता को सरणी में धकेलें।
+-`off`: सरणी से विशिष्ट श्रोता को फ़िल्टर करें।
+- `emit`: सरणी को पुनरावृत्त करें और प्रत्येक श्रोता को स्प्रेड तर्कों के साथ कॉल करें।
+- `once`: श्रोता को एक फ़ंक्शन में लपेटें जो पहली कॉल के बाद खुद को हटा देता है।
+**चरण 3 - समाधान लागू करें:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+-`emit`में`[...listeners]`कॉपी उन समस्याओं को रोकती है जब कोई श्रोता पुनरावृत्ति के दौरान`off`को कॉल करता है।
+- `once`,`_original`को संग्रहीत करता है ताकि कॉल करने वाले`off(event, originalFn)`के माध्यम से रैपर को हटा सकें।
+- निजी फ़ील्ड (`#listeners`) आंतरिक स्थिति के बाहरी उत्परिवर्तन को रोकते हैं।
+- उत्पादन के लिए: प्राथमिकता के लिए`maxListeners`चेतावनी (जैसे Node.js), प्रति श्रोता त्रुटि प्रबंधन और`prependListener`जोड़ें।
 ---
 
 ## सारांश

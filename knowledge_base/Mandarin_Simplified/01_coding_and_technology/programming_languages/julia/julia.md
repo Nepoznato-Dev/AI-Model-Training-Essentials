@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 朱莉娅
 Julia 是一种高级、高性能编程语言，专为技术和科学计算而设计。 Julia 于 2012 年首次发布（2018 年 1.0 版），旨在解决“双语言问题”——科学家使用 Python/R 构建原型，但为了提高生产性能而使用 C/C++/Fortran 重写。 Julia 的目标是像 Python 一样简单，但像 C 一样快。
 Julia 通过 LLVM 使用即时 (JIT) 编译来实现接近 C 的性能，同时保持交互式、动态的感觉。它对并行计算、分布式处理以及具有多重调度的复杂类型系统具有一流的支持。
@@ -114,7 +115,7 @@ end
 ---
 
 ## 高级语法和模式
-### 多次调度深入探讨
+### 多次调度深入研究
 多重调度是 Julia 皇冠上的明珠。每个函数都是通用的——它根据**所有**参数的运行时类型选择一个方法，而不仅仅是第一个参数。
 ```julia
 # Define an abstract type hierarchy
@@ -866,15 +867,200 @@ julia --project=. -e '
 ---
 
 ## 何时使用 Julia
-|场景 |为什么选择朱莉娅？更好的选择|
+|场景|为什么选择朱莉娅？更好的选择|
 |----------|----------|--------------------|
 |科学计算|性能+易用性| Python (NumPy)、MATLAB、Fortran |
 |数值优化|优秀的优化包| C++、Fortran |
 |机器学习研究 |不断发展的生态系统 (Flux.jl) | Python（PyTorch、TensorFlow）|
 |并行计算|内置分布式支持| Python (Dask)、C++ (MPI) |
-|数据分析 |可能的; DataFrames.jl 很好 | Python（熊猫）、R |
+|数据分析|可能的; DataFrames.jl 很好 | Python（熊猫）、R |
 |网页开发|不适合| JavaScript、Python |
-|通用应用开发|不是主要用例 | Python、Go、Java |
+|通用应用开发 |不是主要用例 | Python、Go、Java |
+---
+
+## 综合问答
+### Q1：OOP 语言中的多重分派与单分派有何不同？
+**A:** 在单次调度（Java、Python）中，根据第一个参数（对象）的类型选择方法。在 Julia 中，该方法是根据所有参数的类型来选择的：
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+这可以实现对称操作并消除样板模式。
+### Q2：如何在 Julia 中实现类似 C 的性能？
+**答：** 关键做法：
+- 使用类型稳定的函数（返回一致的类型）
+- 在结构中使用具体类型，而不是抽象类型
+- 避免全局变量（或将它们设置为`const`）
+- 使用`@inbounds`跳过边界检查（安全时）
+- 预先分配数组而不是增长数组
+- 使用`@simd`进行可矢量化循环
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3：`Array`、`Tuple`和`NamedTuple`之间有什么区别？
+**答：** 每个都有不同的目的：
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4：如何处理 Julia 中的错误和异常？
+**A:** 使用`try/catch`和自定义异常类型：
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5：如何有效地使用 Julia 的包生态系统？
+**A:** 使用内置的包管理器 (Pkg) 和环境：
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：实现数值积分函数
+**第 1 步：了解问题**
+使用辛普森法则计算函数的定积分。
+**第 2 步：确定方法**
+使用 Julia 的多重调度和高阶函数。接受任何可调用函数。
+**步骤 3：实施**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**第 4 步：优化**
+添加`@inbounds`和类型注释以提高性能。使用`@btime`进行基准测试。
+### 问题 2：构建并行蒙特卡罗模拟
+**第 1 步：了解问题**
+使用蒙特卡罗采样估计 pi，在所有 CPU 内核上并行。
+**第 2 步：确定方法**
+使用`Threads.@threads`实现共享内存并行性。
+**步骤 3：实施**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**第 4 步：验证**
+与`Float64(\pi)`进行比较。增加样本数量以获得更高的准确性。
+### 问题 3：使用广播创建自定义数组类型
+**第 1 步：了解问题**
+创建仅存储对角线元素但支持标准数组操作的`DiagonalMatrix`类型。
+**第 2 步：确定方法**
+子类型`AbstractMatrix`并实现所需的方法。
+**步骤 3：实施**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**第 4 步：扩展**
+添加`setindex!`、矩阵乘法优化和`show`方法。
 ---
 
 ＃＃ 概括

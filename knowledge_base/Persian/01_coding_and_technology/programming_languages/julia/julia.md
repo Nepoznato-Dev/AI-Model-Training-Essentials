@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "جولیا"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی جولیا شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [جولیا، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "36 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Julia"
+description: "Comprehensive reference for the Julia programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [julia, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "36 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #جولیا
 جولیا یک زبان برنامه نویسی سطح بالا و با کارایی بالا است که برای محاسبات فنی و علمی طراحی شده است. جولیا برای اولین بار در سال 2012 منتشر شد (1.0 در سال 2018)، جولیا برای حل "مشکل دو زبانه" ایجاد شد - جایی که دانشمندان در Python/R نمونه اولیه را انجام می دهند اما برای عملکرد تولید در C/C++/Fortran بازنویسی می کنند. جولیا قصد دارد به آسانی پایتون اما به سرعت سی باشد.
 جولیا از تلفیقی به‌موقع (JIT) از طریق LLVM برای دستیابی به عملکرد نزدیک به C و در عین حال حفظ یک احساس تعاملی و پویا استفاده می‌کند. دارای پشتیبانی درجه یک برای محاسبات موازی، پردازش توزیع شده و یک سیستم نوع پیچیده با ارسال چندگانه است.
@@ -622,7 +627,7 @@ predictions = model.predict(np.array([[5], [6]]))
 ---
 
 ## الگوهای طراحی
-### الگوی 1: توابع با ثبات نوع
+### الگوی 1: توابع پایدار نوع
 ```julia
 # BAD — type unstable (return type depends on runtime value)
 function bad_abs(x)
@@ -871,6 +876,191 @@ julia --project=. -e '
 | تجزیه و تحلیل داده ها | ممکن است؛ DataFrames.jl خوب است | پایتون (پاندا)، R |
 | توسعه وب | مناسب نیست | جاوا اسکریپت، پایتون |
 | توسعه برنامه عمومی | مورد استفاده اولیه نیست | پایتون، برو، جاوا |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: ارسال چندگانه چه تفاوتی با ارسال تک در زبان‌های OOP دارد؟
+**A:** در تک ارسال (جاوا، پایتون)، روش بر اساس نوع آرگومان اول (شیء) انتخاب می شود. در جولیا، روش بر اساس انواع ALL آرگومان ها انتخاب می شود:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+این کار عملیات متقارن را ممکن می کند و الگوهای دیگ بخار را حذف می کند.
+### Q2: چگونه می توانم به عملکردی شبیه C در جولیا برسم؟
+**A:** شیوه های کلیدی:
+- استفاده از توابع با ثبات نوع (برگرداندن انواع سازگار)
+- از انواع بتنی در سازه ها استفاده کنید نه انتزاعی
+- از متغیرهای سراسری اجتناب کنید (یا آنها را`const`کنید)
+- از`@inbounds`برای رد شدن از بررسی مرزها (در صورت ایمن بودن) استفاده کنید
+- آرایه ها را به جای بزرگ کردن، از قبل اختصاص دهید
+- از`@simd`برای حلقه های قابل برداری استفاده کنید
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3: چه تفاوت هایی بین `Array`،`Tuple`و`NamedTuple`وجود دارد؟
+**A:** هر کدام هدف متفاوتی را دنبال می کند:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4: چگونه خطاها و استثناها را در جولیا مدیریت کنم؟
+**A:** از`try/catch`و انواع استثناهای سفارشی استفاده کنید:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5: چگونه از اکوسیستم بسته جولیا به طور موثر استفاده کنم؟
+**A:** از مدیر بسته داخلی (Pkg) و محیط ها استفاده کنید:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مسئله 1: اجرای یک تابع ادغام عددی
+**مرحله 1: مشکل را درک کنید**
+انتگرال معین یک تابع را با استفاده از قانون سیمپسون محاسبه کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از توابع ارسال چندگانه جولیا و توابع درجه بالاتر استفاده کنید. هر تابع قابل فراخوانی را بپذیرید.
+**مرحله 3: پیاده سازی **```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**مرحله 4: بهینه سازی**
+`@inbounds` را اضافه کنید و حاشیه نویسی را برای عملکرد تایپ کنید. معیار با `@btime`.
+### مسئله 2: ساختن یک شبیه سازی موازی مونت کارلو
+**مرحله 1: مشکل را درک کنید**
+عدد پی را با استفاده از نمونه برداری مونت کارلو، که در تمام هسته های CPU موازی شده است، تخمین بزنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`Threads.@threads`برای موازی سازی حافظه مشترک استفاده کنید.
+**مرحله 3: پیاده سازی **```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**مرحله 4: تایید **
+مقایسه با `Float64(\pi)`. برای دقت بهتر تعداد نمونه را افزایش دهید.
+### مشکل 3: ایجاد یک نوع آرایه سفارشی با Broadcasting
+**مرحله 1: مشکل را درک کنید**
+یک نوع`DiagonalMatrix`ایجاد کنید که فقط عناصر مورب را ذخیره می کند اما از عملیات آرایه استاندارد پشتیبانی می کند.
+**مرحله 2: رویکرد را شناسایی کنید**
+`AbstractMatrix` را زیر تایپ کنید و روش های مورد نیاز را پیاده سازی کنید.
+**مرحله 3: پیاده سازی **```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**مرحله 4: تمدید**
+`setindex!`، بهینه سازی های ضرب ماتریس و روش`show`را اضافه کنید.
 ---
 
 ## خلاصه

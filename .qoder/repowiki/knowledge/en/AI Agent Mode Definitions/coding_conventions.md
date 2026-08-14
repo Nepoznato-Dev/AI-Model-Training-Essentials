@@ -1,6 +1,0 @@
-- Every mode file begins with a YAML frontmatter block declaring `name`, `description`, `argument-hint`, `tools`, `agents`, and optionally `handoffs` before any prose.
-- The prompt body is structured into named sections enclosed by `<rules>`, `<workflow>`, `<capabilities>`, and `<handoffs>` XML-like tags to delimit behavioral blocks.
-- Handoffs are expressed as entries with `label`, `agent`, `prompt`, and `send: true` fields, enabling one-click transitions between modes.
-- Tool references use the `#tool:<tool-name>` syntax (e.g., `#tool:memory`, `#tool:ask_questions`, `#tool:execute/getTerminalOutput`) inside the prompt text.
-- Subordinate agents are declared via the `agents:` list in frontmatter (e.g., `['Explore']`, `[]`) rather than hard-coded in the prompt, keeping delegation declarative.
-- Modes categorize themselves into workflow roles (Core Workflow, Quality & Reliability, Security & Operations, Specialized) as reflected in the README's tables.

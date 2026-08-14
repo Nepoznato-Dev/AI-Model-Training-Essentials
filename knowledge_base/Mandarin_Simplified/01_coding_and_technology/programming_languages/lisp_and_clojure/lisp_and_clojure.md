@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lisp 和 Clojure
 Lisp 是仍在使用的第二古老的高级编程语言（仅次于 Fortran），由 John McCarthy 于 1958 年创建。它开创了许多现在被视为理所当然的概念：垃圾收集、递归、树数据结构、动态类型以及程序即数据的思想（同像性）。 Lisp 的显着特征是它的语法——代码被编写为嵌套括号（S 表达式），这使得该语言可以轻松解析，并通过**宏**实现强大的元编程。
 Clojure 是 Rich Hickey 于 2007 年设计的一种现代 Lisp 方言。它运行在 JVM（也称为 JavaScript 的 ClojureScript）上，支持函数式编程、不变性和并发性，并提供无缝的 Java 互操作性。 Clojure 用于 Web 开发、数据处理和金融系统。
@@ -56,7 +57,7 @@ Clojure 是 Rich Hickey 于 2007 年设计的一种现代 Lisp 方言。它运�
 | **括号** |大量使用`()`最初可能难以阅读 |使用IDE支持；学会观察结构|
 | **利基社区** |与主流语言相比，就业市场较小活跃而热情的社区 |
 | **Clojure 启动时间** |基于 JVM； CLI 启动缓慢 |使用 GraalVM 原生镜像 |
-| **Lisp 方言** |许多不兼容的 Lisp（Common Lisp、Scheme、Emacs Lisp） |选择 Clojure 进行现代工作 |
+| **Lisp 方言** |许多不兼容的 Lisp（Common Lisp、Scheme、Emacs Lisp）|选择 Clojure 进行现代工作 |
 | **非主流** |更少的库、框架和教程 |利用 Java 生态系统 (Clojure) |
 ---
 
@@ -685,16 +686,151 @@ native-image --no-fallback \
 ---
 
 ## 何时使用 Lisp/Clojure
-|场景 |为什么选择 Clojure |更好的选择|
+|场景|为什么选择 Clojure |更好的选择|
 |----------|------------|--------------------|
 |网络后端 | Ring/Compojure 富有成效 | Go、Node.js 提供更简单的 API |
 |数据处理|优秀序列库 | Python (Pandas)、Scala (Spark) |
 |并发系统|不可变数据+STM |去吧，Erlang/Elixir |
 | DSL / 语言扩展 |宏是无与伦比的 | — |
 | REPL 驱动的开发 |一流的交互式工作流程 | — |
-|通用应用开发|可能但利基| Python、Java、Go |
-|移动应用程序 |用于网络应用程序的 ClojureScript；不是本地人 |斯威夫特、科特林 |
+|通用应用开发 |可能但利基| Python、Java、Go |
+|移动应用程序 |用于网络应用程序的 ClojureScript；不是本地人|斯威夫特、科特林 |
 |数据科学|不是生态系统| Python、R |
+---
+
+## 综合问答
+### Q1：为什么 Lisp/Clojure 程序有这么多括号？
+**A:** 括号代表 S 表达式 - 一种统一语法，其中代码和数据具有相同的结构（同像性）：
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2：Clojure 如何以不同的方式处理状态和可变性？
+**A:** Clojure 默认为不可变数据。对于受控状态更改，它提供了引用类型：
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3：Clojure 的持久数据结构是什么？
+**A:** 所有 Clojure 集合都是持久的（不可变的、结构共享的）：
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4：Clojure 宏如何工作？
+**A:** 宏接收未计算的代码（作为数据），对其进行转换，然后返回新代码：
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5：如何在 Clojure 中处理并发？
+**答：** Clojure 提供了多种并发原语：
+-`atom`— 独立、同步更改
+-`ref`+`dosync`— 协调的事务性变更
+-`agent`— 异步、独立的更改
+-`core.async`通道 — CSP 式并发
+---
+
+## 解决问题的思路
+### 问题 1：处理数据管道
+**第 1 步：了解问题**
+通过管道读取数据、过滤、转换和聚合。
+**第 2 步：确定方法**
+使用 Clojure 的线程宏 (`->>`) 和转换器。
+**步骤 3：实施**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**第 4 步：优化**
+转换器避免创建中间序列——它们将转换组合成一次传递。
+### 问题 2：构建简单的 Web 服务器
+**第 1 步：了解问题**
+使用 Ring/Compojure 创建基本的 HTTP 服务器。
+**第 2 步：确定方法**
+使用环适配器和 Compojure 路由。
+**步骤 3：实施**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**第 4 步：扩展**
+添加用于日志记录、JSON 解析、身份验证和错误处理的中间件。
 ---
 
 ＃＃ 概括

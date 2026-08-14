@@ -41,7 +41,7 @@ contribution:
 
 #COBOL
 COBOL (Common Business-Oriented Language) adalah salah satu bahasa pemrograman tertua yang masih digunakan, pertama kali dikembangkan pada tahun 1959. COBOL dirancang untuk pemrosesan data bisnis — sistem keuangan, penggajian, perbankan, asuransi, dan aplikasi pemerintah. Sintaks COBOL yang mirip bahasa Inggris dimaksudkan agar dapat dibaca oleh manajer bisnis, bukan hanya pemrogram.
-Meskipun usianya sudah tua, COBOL memproses sekitar 30% dari seluruh transaksi bisnis secara global. Bank-bank besar, lembaga pemerintah (termasuk Administrasi Jaminan Sosial AS), dan perusahaan asuransi masih mengandalkan sistem mainframe COBOL. Ketakutan terhadap bug Y2K pada tahun 1999 membawa COBOL kembali ke kesadaran publik, dan bahasa tersebut terus menjalankan infrastruktur penting di seluruh dunia.
+Meskipun usianya sudah tua, COBOL memproses sekitar 30% dari seluruh transaksi bisnis secara global. Bank-bank besar, lembaga pemerintah (termasuk Administrasi Jaminan Sosial AS), dan perusahaan asuransi masih mengandalkan sistem mainframe COBOL. Ketakutan akan bug Y2K pada tahun 1999 membawa COBOL kembali ke kesadaran publik, dan bahasa tersebut terus menjalankan infrastruktur penting di seluruh dunia.
 ---
 
 ## Mengapa COBOL Penting
@@ -458,7 +458,7 @@ Pada mainframe IBM, program COBOL dikompilasi dan dieksekusi menggunakan JCL.
 | `-Wall`| Aktifkan semua peringatan | `cobc -Wall prog.cbl`|
 ---
 
-## Pengujian & Debug
+## Pengujian & Debugging
 ### Teknik Debugger COBOL
 ```cobol
        * Debugging with DISPLAY statements
@@ -829,5 +829,129 @@ scp bin/payroll server:/opt/cobol/bin/
 | Ilmu data / ML | Tidak cocok | Piton, R |
 ---
 
+## Tanya Jawab Sintetis
+### Q1: Mengapa COBOL masih digunakan di perbankan setelah 60+ tahun?
+**A:** COBOL memproses sekitar 70-80% transaksi perbankan. Alasannya:
+- Basis kode besar (jutaan baris) yang berfungsi dengan benar
+- Keandalan yang ekstrim — sistem ini telah diuji dalam produksi selama beberapa dekade
+- Biaya dan risiko migrasi melebihi biaya pemeliharaan
+- Sintaks COBOL yang bertele-tele dan mirip bahasa Inggris dapat didokumentasikan sendiri
+- Aritmatika desimal dibangun ke dalam bahasa (tidak ada kesalahan pembulatan floating-point)
+### Q2: Bagaimana COBOL menangani aritmatika desimal tanpa kesalahan floating-point?
+**A:** COBOL memiliki tipe desimal asli dengan presisi tetap:
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V` adalah titik desimal tersirat. COBOL tidak pernah menggunakan floating-point biner untuk uang.
+### Q3: Apa struktur program COBOL?
+**A:** Setiap program COBOL memiliki empat divisi:
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4: Bagaimana cara membaca dan memproses file berurutan di COBOL?
+**A:** COBOL unggul dalam pemrosesan file:
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Q5: Alat apa saja yang tersedia untuk pengembangan COBOL modern?
+**A:** GnuCOBOL (open source), IBM Enterprise COBOL, Micro Focus, dan ekstensi VS Code menyediakan lingkungan pengembangan modern. Bangun dengan`cobc -x program.cob`.
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membuat Laporan Pelanggan
+**Langkah 1: Pahami Masalahnya**
+Baca catatan pelanggan, hitung total, dan buat laporan berformat.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan kemampuan penanganan file dan penulisan laporan COBOL.
+**Langkah 3: Terapkan**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**Langkah 4: Verifikasi**
+Periksa ulang total terhadap data sumber. Uji dengan kasus tepi (file kosong, saldo nol).
+### Masalah 2: Pemrosesan Batch dengan Pemutusan Kontrol
+**Langkah 1: Pahami Masalahnya**
+Proses transaksi dikelompokkan berdasarkan departemen, mencetak subtotal.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan logika pemutusan kontrol — mendeteksi kapan kunci grup berubah.
+**Langkah 3: Terapkan**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**Langkah 4: Verifikasi**
+Periksa apakah total grup terakhir sudah tercetak. Verifikasikan total keseluruhan sama dengan jumlah total departemen.
+---
+
 ## Ringkasan
-COBOL adalah peninggalan masa-masa awal komputasi yang tidak mau mati — karena ia tidak mampu mati. Sistem perbankan dan pemerintahan dunia bergantung pada program COBOL yang telah berjalan dengan baik selama beberapa dekade. Meskipun saat ini tidak ada yang memilih COBOL untuk proyek baru, bahasa tersebut tetap sangat penting untuk menjaga infrastruktur yang menopang keuangan global. Kurangnya pengembang COBOL menjadikannya ceruk yang sangat menguntungkan.
+COBOL adalah warisan dekade awal komputasi yang masih digunakan secara aktif karena penggantian dalam skala besar tidak dapat dilakukan. Sistem perbankan dan pemerintahan dunia bergantung pada program COBOL yang telah berjalan dengan baik selama beberapa dekade. Meskipun COBOL biasanya tidak dipilih untuk proyek baru saat ini, bahasa tersebut tetap penting untuk menjaga infrastruktur yang mendukung keuangan global. Kurangnya pengembang COBOL menjadikannya ceruk yang menguntungkan.

@@ -40,13 +40,13 @@ contribution:
 ---
 
 #สนิม
-Rust เป็นภาษาโปรแกรมคอมไพล์แบบคงที่ซึ่งเปิดตัวครั้งแรกในปี 2558 พัฒนาโดย Graydon Hoare ที่ Mozilla คำมั่นสัญญาที่กำหนดของ Rust คือ **ความปลอดภัยของหน่วยความจำโดยไม่ต้องเก็บขยะ** บรรลุสิ่งนี้ได้ผ่านระบบความเป็นเจ้าของ — ชุดของกฎที่บังคับใช้ในเวลาคอมไพล์ที่กำจัดข้อบกพร่องทุกประเภท (การยกเลิกตัวชี้แบบ null การแข่งขันของข้อมูล บัฟเฟอร์ล้น ใช้งานหลังเลิกใช้งาน) ในขณะที่สร้างโค้ดให้เร็วเท่ากับ C หรือ C++
+Rust เป็นภาษาโปรแกรมคอมไพล์แบบคงที่ซึ่งเปิดตัวครั้งแรกในปี 2558 พัฒนาโดย Graydon Hoare ที่ Mozilla คำมั่นสัญญาที่กำหนดของ Rust คือ **ความปลอดภัยของหน่วยความจำโดยไม่ต้องเก็บขยะ** บรรลุสิ่งนี้ได้ผ่านระบบความเป็นเจ้าของ — ชุดของกฎที่บังคับใช้ ณ เวลาคอมไพล์ที่กำจัดข้อบกพร่องทุกประเภท (การยกเลิกตัวชี้แบบ null การแข่งขันของข้อมูล บัฟเฟอร์ล้น ใช้งานหลังเลิกใช้งาน) ในขณะที่สร้างโค้ดให้เร็วเท่ากับ C หรือ C++
 Rust ได้รับการโหวตให้เป็นภาษาโปรแกรมที่ "ชื่นชอบมากที่สุด" ในการสำรวจนักพัฒนา Stack Overflow เป็นเวลาหลายปีติดต่อกัน มีการใช้กันมากขึ้นในการเขียนโปรแกรมระบบ, WebAssembly, เครื่องมือ CLI, โครงสร้างพื้นฐานคลาวด์ และแทนที่ C/C++ ในบริบทที่มีความสำคัญต่อความปลอดภัย ตอนนี้เคอร์เนล Linux ยอมรับรหัสสนิมแล้ว
 ---
 
 ## ทำไมเรื่องสนิม
 - **ความปลอดภัยของหน่วยความจำโดยไม่มี GC**: ระบบความเป็นเจ้าของจะป้องกันพอยน์เตอร์ว่าง การแย่งของข้อมูล และพอยน์เตอร์ห้อย ณ เวลาคอมไพล์ โดยไม่มีค่าใช้จ่ายรันไทม์เป็นศูนย์
-- **ประสิทธิภาพ**: ตรงหรือเกินกว่า C/C++ สำหรับปริมาณงานส่วนใหญ่ ไม่มีตัวเก็บขยะหมายความว่าไม่มีการหยุดชั่วคราวที่คาดเดาไม่ได้
+- **ประสิทธิภาพ**: ตรงหรือเกินกว่า C/C++ สำหรับปริมาณงานส่วนใหญ่ ไม่มีตัวเก็บขยะหมายความว่าจะไม่มีการหยุดชั่วคราวที่คาดเดาไม่ได้
 - **การทำงานพร้อมกันอย่างไม่เกรงกลัว**: ระบบประเภทจะป้องกันการแข่งขันของข้อมูล ณ เวลารวบรวม ถ้ามันคอมไพล์ มันก็ปลอดภัยสำหรับเธรด
 - **เครื่องมือสมัยใหม่**:`cargo`(ระบบบิลด์ + ตัวจัดการแพ็คเกจ) เป็นหนึ่งในเครื่องมือที่ดีที่สุดในทุกภาษา `cargo build`,`cargo test`,`cargo doc`ทั้งหมดทำงานนอกกรอบ
 - **WebAssembly**: การสนับสนุนระดับเฟิร์สคลาสสำหรับการคอมไพล์ไปยัง WASM ช่วยให้สามารถใช้งานเบราว์เซอร์ได้อย่างมีประสิทธิภาพใกล้เคียงกัน
@@ -274,7 +274,7 @@ let doubled = vec_map!(numbers, |x| x * 2);
 // }
 ```
 
-### การจับคู่รูปแบบขั้นสูงและการทำลายโครงสร้าง
+### การจับคู่รูปแบบขั้นสูงและการทำลายล้าง
 ```rust
 struct Point { x: f64, y: f64 }
 
@@ -976,6 +976,293 @@ wasm-pack build --target web
 | แบ็กเอนด์ของเว็บ | เป็นไปได้แต่ระบบนิเวศยังอายุน้อยกว่า | ไป, Node.js, Python |
 | วิทยาศาสตร์ข้อมูล / ML | ไม่ใช่ระบบนิเวศสำหรับสิ่งนี้ | หลาม, อาร์ |
 | สคริปต์ด่วน / ต้นแบบ | ละเอียดเกินไปและเขียนช้าเกินไป | หลาม, จาวาสคริปต์ |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### Q1: ระบบความเป็นเจ้าของคืออะไร และทำไม Rust ถึงมีระบบนี้?
+**A:** ทุกค่าใน Rust มีเจ้าของเพียงคนเดียวเท่านั้น เมื่อเจ้าของอยู่นอกขอบเขต ค่าจะลดลง (หน่วยความจำว่าง) ซึ่งช่วยลดความจำเป็นในการเก็บขยะในขณะที่รับประกันความปลอดภัยของหน่วยความจำ การกำหนด พารามิเตอร์ฟังก์ชัน และค่าที่ส่งคืนทั้งหมดจะโอนความเป็นเจ้าของ ("ย้าย") หากต้องการแชร์โดยไม่โอน ให้ใช้ข้อมูลอ้างอิง (`&T`สำหรับการยืม`&mut T`สำหรับการยืมที่ไม่แน่นอน) คอมไพเลอร์บังคับใช้: คุณไม่สามารถมีการอ้างอิงที่ไม่แน่นอนและการอ้างอิงที่ไม่เปลี่ยนรูปเป็นค่าเดียวกันพร้อมกันได้
+```rust
+let s1 = String::from("hello");
+let s2 = s1;           // s1 is MOVED to s2 — s1 is no longer valid
+// println!("{}", s1); // Error: value borrowed after move
+
+let s3 = String::from("world");
+let len = calculate_length(&s3);  // Borrow — s3 stays valid
+fn calculate_length(s: &String) -> usize { s.len() }
+```
+
+### Q2: เมื่อใดที่ฉันควรใช้`String`กับ `&str`
+**A:**`String`เป็นสตริง UTF-8 ที่จัดสรรฮีปและมีเจ้าของเองและขยายได้ `&str`เป็นการยืมการอ้างอิงไปยังส่วนสตริง UTF-8 (สามารถชี้ไปที่`String`ซึ่งเป็นสตริงลิเทอรัล หรือส่วนหนึ่งของอย่างใดอย่างหนึ่ง) ใช้`String`เมื่อคุณต้องการเป็นเจ้าของ แก้ไข หรือสร้างสตริง ใช้`&str`สำหรับพารามิเตอร์ฟังก์ชัน (ยืดหยุ่นมากขึ้น - ยอมรับทั้งสองอย่าง) มุมมองแบบอ่านอย่างเดียว และค่าสตริง ยอมรับ`&str`ในลายเซ็นฟังก์ชัน ส่งคืน`String`เมื่อผู้โทรต้องการความเป็นเจ้าของ
+```rust
+// Accept &str — works with both String and &str
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)  // Returns owned String
+}
+
+let owned = String::from("Alice");
+greet(&owned);         // &String coerces to &str
+greet("Bob");          // &str literal works directly
+```
+
+### Q3: Rust จัดการกับข้อผิดพลาดโดยไม่มีข้อยกเว้นอย่างไร
+**A:** Rust ใช้`Result<T, E>`enum สำหรับข้อผิดพลาดที่กู้คืนได้ และ`panic!`สำหรับข้อผิดพลาดที่ไม่สามารถกู้คืนได้ ฟังก์ชันที่ไม่สามารถส่งคืน`Result`ได้ ตัวดำเนินการ`?`เผยแพร่ข้อผิดพลาดอย่างกระชับ แนวทางนี้ทำให้การจัดการข้อผิดพลาดมีความชัดเจน คุณไม่สามารถเพิกเฉยต่อข้อผิดพลาดโดยไม่ตั้งใจได้ ใช้`anyhow`สำหรับการจัดการข้อผิดพลาดของแอปพลิเคชัน (บริบทที่สะดวก) และ`thiserror`สำหรับประเภทข้อผิดพลาดของไลบรารี (มาโครที่รับมา)
+```rust
+use std::fs;
+use std::num;
+
+fn read_and_parse(path: &str) -> Result<i64, Box<dyn std::error::Error>> {
+    let content = fs::read_to_string(path)?;   // Propagates io::Error
+    let number: i64 = content.trim().parse()?;  // Propagates ParseIntError
+    Ok(number)
+}
+
+// With context (anyhow crate)
+fn load_config() -> anyhow::Result<Config> {
+    let content = fs::read_to_string("config.toml")
+        .context("Failed to read config file")?;
+    let config: Config = toml::from_str(&content)
+        .context("Failed to parse config TOML")?;
+    Ok(config)
+}
+```
+
+### คำถามที่ 4: อายุการใช้งานคืออะไร และฉันต้องใส่คำอธิบายประกอบเมื่อใด
+**ตอบ:** อายุการใช้งานจะติดตามว่าข้อมูลอ้างอิงมีอายุการใช้งานนานเท่าใด คอมไพลเลอร์อนุมานสิ่งเหล่านั้นในกรณีส่วนใหญ่ผ่าน "กฎการกำจัดตลอดชีวิต" คุณต้องมีคำอธิบายประกอบที่ชัดเจนเมื่อคอมไพลเลอร์ไม่สามารถระบุความสัมพันธ์ระหว่างอายุการใช้งานอินพุตและเอาท์พุตได้ โดยทั่วไปเมื่อฟังก์ชันใช้การอ้างอิงหลายครั้งและส่งกลับค่าเดียว อายุการใช้งานป้องกันการอ้างอิงห้อย ณ เวลาคอมไพล์โดยไม่มีค่าใช้จ่ายรันไทม์เป็นศูนย์
+```rust
+// The compiler needs to know: does the return value borrow from x or y?
+// Explicit lifetime 'a says: both inputs and output share the same lifetime
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
+
+// Struct holding a reference — must declare lifetime
+struct ConfigRef<'a> {
+    name: &'a str,
+    value: &'a str,
+}
+
+// 'static — lives for the entire program duration (string literals)
+let s: &'static str = "I live forever";
+```
+
+### Q5: อะไรคือความแตกต่างระหว่าง`Vec<T>`, อาร์เรย์ และสไลซ์?
+**A:** อาร์เรย์`[T; N]`มีขนาดคงที่ จัดสรรเป็นสแต็ก และมีความยาวเป็นส่วนหนึ่งของประเภท `Vec<T>`เป็นคอลเลกชันที่จัดสรรฮีปที่เติบโตได้ Slices`&[T]`เป็นตัวชี้ไขมัน (ตัวชี้ + ความยาว) ที่ยืมส่วนที่ต่อเนื่องกันของอาร์เรย์หรือ Vec ใช้อาร์เรย์สำหรับข้อมูลขนาดเล็กและขนาดคงที่ ใช้ Vec สำหรับคอลเลกชันแบบไดนามิก ยอมรับ`&[T]`ในพารามิเตอร์ฟังก์ชันเพื่อความยืดหยุ่นสูงสุด
+```rust
+let arr = [1, 2, 3, 4, 5];            // [i32; 5] — fixed size, on stack
+let mut vec = vec![10, 20, 30];        // Vec<i32> — growable, on heap
+vec.push(40);
+
+// Slice — borrow of a contiguous sequence
+let slice: &[i32] = &vec[1..3];        // [20, 30]
+let full: &[i32] = &vec;               // Entire vec as slice
+
+// Functions should accept slices for flexibility
+fn sum(numbers: &[i32]) -> i32 {
+    numbers.iter().sum()
+}
+
+sum(&arr);       // Works — array coerces to slice
+sum(&vec);       // Works — Vec coerces to slice
+sum(&vec[1..3]); // Works — already a slice
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: สร้างที่เก็บคีย์-ค่าที่ปลอดภัยสำหรับเธรด
+**คำชี้แจงปัญหา:** ใช้การจัดเก็บคีย์-ค่าพร้อมกันใน Rust ที่รองรับการดำเนินการ`get`,`set`และ`delete`จากหลายเธรดโดยไม่มีการแข่งขันข้อมูล ใช้ความไม่แน่นอนภายในและให้แน่ใจว่าการใช้งานนั้นเป็นสำนวน Rust
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+จำเป็นต้องอ่านและเขียนหลายเธรดไปยัง HashMap ที่แชร์ ระบบความเป็นเจ้าของของ Rust ป้องกันการแข่งขันของข้อมูลในเวลารวบรวม แต่เราต้องการความไม่แน่นอนภายใน (`RwLock`หรือ`Mutex`) ที่ห่อด้วย`Arc`สำหรับการเป็นเจ้าของร่วมกัน `RwLock`อนุญาตให้มีเครื่องอ่านหลายเครื่องพร้อมกันหรือเครื่องเขียนพิเศษเพียงเครื่องเดียว — ดีกว่าสำหรับปริมาณงานที่มีการอ่านจำนวนมาก
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้`Arc<RwLock<HashMap<K, V>>>`สำหรับการเข้าถึงแบบแชร์และปลอดภัยสำหรับเธรด
+-`RwLock::read()`สำหรับ`get`(อนุญาตให้มีผู้อ่านหลายคนได้)
+-`RwLock::write()`สำหรับ`set`และ`delete`(การเข้าถึงพิเศษ)
+- รวมโครงสร้างด้วย API ที่สะอาด
+- โคลน`Arc`สำหรับแต่ละเธรด
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```rust
+use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
+use std::hash::Hash;
+
+struct KeyValueStore<K, V> {
+    data: Arc<RwLock<HashMap<K, V>>>,
+}
+
+impl<K: Hash + Eq + Send + Sync, V: Clone + Send + Sync> KeyValueStore<K, V> {
+    fn new() -> Self {
+        Self {
+            data: Arc::new(RwLock::new(HashMap::new())),
+        }
+    }
+
+    fn get(&self, key: &K) -> Option<V> {
+        let data = self.data.read().unwrap();
+        data.get(key).cloned()
+    }
+
+    fn set(&self, key: K, value: V) {
+        let mut data = self.data.write().unwrap();
+        data.insert(key, value);
+    }
+
+    fn delete(&self, key: &K) -> bool {
+        let mut data = self.data.write().unwrap();
+        data.remove(key).is_some()
+    }
+
+    fn clone_handle(&self) -> Self {
+        Self {
+            data: Arc::clone(&self.data),
+        }
+    }
+}
+
+// Usage — concurrent access from multiple threads
+use std::thread;
+
+fn main() {
+    let store = KeyValueStore::new();
+
+    let handles: Vec<_> = (0..4).map(|i| {
+        let s = store.clone_handle();
+        thread::spawn(move || {
+            for j in 0..100 {
+                s.set(format!("key-{}-{}", i, j), i * 100 + j);
+            }
+        })
+    }).collect();
+
+    for h in handles { h.join().unwrap(); }
+
+    println!("Total entries: {}", store.data.read().unwrap().len());  // 400
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- ความปลอดภัยของเธรด: คอมไพเลอร์ Rust รับประกันว่าจะไม่มีการแย่งชิงข้อมูล -`RwLock`บังคับใช้การแยกออกร่วมกัน และ`Arc`ให้การเป็นเจ้าของร่วมกันอย่างปลอดภัย หากคอมไพล์สิ่งนี้ถูกต้อง
+- ประสิทธิภาพ:`RwLock`ดีกว่า`Mutex`สำหรับเวิร์กโหลดที่มีการอ่านจำนวนมาก สำหรับเวิร์กโหลดที่เขียนจำนวนมาก ให้ใช้`Mutex`(ง่ายกว่า ไม่มีค่าใช้จ่ายในการเขียนของผู้อ่านและผู้เขียน)
+- อัปเกรดการผลิต: ใช้`parking_lot::RwLock`(เร็วขึ้น ไม่มีพิษ ใช้หน่วยความจำน้อยลง) หรือ`dashmap::DashMap`(HashMap พร้อมกันที่ไม่มีการล็อค)
+### ปัญหาที่ 2: ใช้ Zero-Copy Parser
+**คำชี้แจงปัญหา:** เขียน parser ที่แยกคู่คีย์-ค่าออกจากสตริงการกำหนดค่า เช่น`"name=Alice;age=30;role=admin"`โดยไม่ต้องจัดสรรสตริงใหม่ โดยใช้เฉพาะส่วนของสตริงที่ยืมมาจากอินพุต
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราจำเป็นต้องแยกวิเคราะห์คู่`key=value`คั่นด้วย`;`ข้อจำกัดที่สำคัญคือ "zero-copy" — ข้อมูลที่ส่งคืนจะต้องยืมจากอินพุต`&str`ไม่ใช่จัดสรร`String`ใหม่ นี่หมายถึงการส่งคืน`Vec<(&str, &str)>`โดยมีอายุการใช้งานเชื่อมโยงกับอินพุต
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้วิธี`&str`(`split`,`find`, slicing) — ชิ้น`&str`ที่ส่งคืนทั้งหมดที่ยืมมาจากอินพุต
+- หลีกเลี่ยง`.to_string()`หรือ`String::from()`ทุกที่
+- คำอธิบายประกอบตลอดอายุการใช้งาน: เอาต์พุตยืมมาจากอินพุต — `fn parse<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>`
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```rust
+fn parse_config(input: &str) -> Vec<(&str, &str)> {
+    input
+        .split(';')
+        .filter_map(|pair| {
+            let pair = pair.trim();
+            if pair.is_empty() { return None; }
+            pair.split_once('=')
+                .map(|(k, v)| (k.trim(), v.trim()))
+        })
+        .collect()
+}
+
+// The compiler infers: fn parse_config<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>
+
+fn main() {
+    let config = "name = Alice; age = 30; role = admin";
+    let pairs = parse_config(config);
+
+    for (key, value) in &pairs {
+        println!("{} = {}", key, value);
+    }
+
+    // Zero allocations — all slices point into 'config'
+    assert_eq!(pairs[0], ("name", "Alice"));
+    assert_eq!(pairs[1], ("age", "30"));
+    assert_eq!(pairs[2], ("role", "admin"));
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- Zero-copy:`split`,`split_once`และ`trim`ส่งคืนชิ้นส่วน`&str`ทั้งหมด — ไม่มีการจัดสรรฮีป
+- กฎการตัดอายุการใช้งานจะเชื่อมโยงอายุการใช้งานเอาต์พุตกับอินพุตอย่างถูกต้อง
+- กรณี Edge: อินพุตว่างส่งคืน`[]`; ไม่มี`=`ข้ามคู่ (ผ่าน`filter_map`); ช่องว่างรอบ ๆ`=`ได้รับการจัดการโดย `trim`
+- สำหรับการแยกวิเคราะห์ที่ซับซ้อนมากขึ้น ให้ใช้ลัง`nom`(แบบใช้ตัวรวมและไม่มีการคัดลอกเช่นกัน)
+### ปัญหาที่ 3: ใช้รูปแบบผู้สังเกตการณ์กับช่องสัญญาณ
+**คำชี้แจงปัญหา:** สร้างระบบเผยแพร่และสมัครสมาชิกโดยที่สมาชิกหลายรายได้รับข้อความจากผู้จัดพิมพ์ ใช้ช่อง Rust และตรวจสอบให้แน่ใจว่าระบบจัดการกับสมาชิกที่ช้าโดยไม่ปิดกั้นผู้เผยแพร่
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการผู้เผยแพร่หนึ่งรายที่ส่งข้อความถึงสมาชิกหลายคน ช่องทาง`mpsc`ของ Rust เป็นผู้บริโภครายเดียวที่มีผู้ผลิตหลายราย - เราต้องการช่องทางย้อนกลับ (ผู้ผลิตรายเดียวที่มีผู้บริโภคหลายราย) เราสามารถใช้ช่อง`broadcast`(จาก`tokio`) หรือใช้การกระจายออกโดยใช้ผู้ส่ง`mpsc`หลายราย
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้`std::sync::mpsc`สำหรับช่องมาตรฐาน
+- สำหรับการกระจายออก: รักษา`Vec<Sender<T>>`และโคลนข้อความให้กับแต่ละข้อความ
+- สำหรับสมาชิกที่ช้า: ใช้`try_send`(ไม่บล็อก) หรือช่องที่มีขอบเขตพร้อม backpressure
+- รวมโครงสร้าง`Bus`เพื่อ Clean API
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```rust
+use std::sync::mpsc::{self, Sender, Receiver};
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+struct Bus<T: Clone + Send + 'static> {
+    subscribers: Arc<Mutex<Vec<Sender<T>>>>,
+}
+
+impl<T: Clone + Send + 'static> Bus<T> {
+    fn new() -> Self {
+        Self {
+            subscribers: Arc::new(Mutex::new(Vec::new())),
+        }
+    }
+
+    fn subscribe(&self) -> Receiver<T> {
+        let (tx, rx) = mpsc::channel();
+        self.subscribers.lock().unwrap().push(tx);
+        rx
+    }
+
+    fn publish(&self, message: T) {
+        let mut subs = self.subscribers.lock().unwrap();
+        // Remove disconnected subscribers (their receiver was dropped)
+        subs.retain(|tx| !tx.is_disconnected());
+        for tx in subs.iter() {
+            let _ = tx.send(message.clone());  // Ignore send errors
+        }
+    }
+
+    fn subscriber_count(&self) -> usize {
+        let subs = self.subscribers.lock().unwrap();
+        subs.iter().filter(|tx| !tx.is_disconnected()).count()
+    }
+}
+
+fn main() {
+    let bus = Bus::new();
+
+    // Subscribe from multiple threads
+    let handles: Vec<_> = (0..3).map(|id| {
+        let rx = bus.subscribe();
+        thread::spawn(move || {
+            for msg in rx {
+                println!("Subscriber {} received: {}", id, msg);
+            }
+        })
+    }).collect();
+
+    // Publish messages
+    for i in 0..5 {
+        bus.publish(format!("Event #{}", i));
+    }
+
+    // Drop the bus — subscribers' channels close, loops end
+    drop(bus);
+    for h in handles { h.join().unwrap(); }
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+-`retain`ทำความสะอาดสมาชิกที่ใช้งานไม่ได้โดยอัตโนมัติ — ไม่มีหน่วยความจำรั่วไหลจากเธรดที่ถูกตัดการเชื่อมต่อ
+-`message.clone()`เป็นสิ่งจำเป็นเนื่องจากสมาชิกแต่ละคนต้องการสำเนาของตัวเอง สำหรับประเภทการโคลนที่มีราคาแพง ให้ห่อด้วย `Arc<T>`
+- ช่องที่มีขอบเขต: แทนที่`mpsc::channel()`ด้วย`mpsc::sync_channel(N)`สำหรับแรงดันย้อนกลับ —`publish`จะบล็อกหากบัฟเฟอร์ของสมาชิกเต็ม
+- การผลิต: ใช้`tokio::sync::broadcast`สำหรับ async pub/sub หรือใช้`flume`เพื่อ mpsc ที่เร็วขึ้นพร้อมตัวเลือกที่มีขอบเขต/ไม่มีขอบเขต
 ---
 
 ## สรุป

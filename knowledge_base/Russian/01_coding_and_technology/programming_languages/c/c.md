@@ -38,14 +38,15 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # С
 C — процедурный язык программирования общего назначения, созданный Деннисом Ритчи в Bell Labs в период с 1969 по 1973 год. Он был разработан для реализации операционной системы Unix и остается одним из наиболее широко используемых языков программирования более 50 лет спустя. C обеспечивает низкоуровневый доступ к памяти, минимальную стандартную библиотеку и четкое отображение машинных инструкций, что делает его основой, на которой построено большинство современных вычислений.
-C — это язык операционных систем (Linux, ядро ​​Windows, macOS), встроенных систем, механизмов баз данных (SQLite, PostgreSQL), компиляторов (CPython Python, MRI Ruby) и практически всех других языков программирования. Понимание C означает понимание того, как на самом деле работают компьютеры.
+C — это язык, лежащий в основе операционных систем (Linux, ядро ​​Windows, macOS), встроенных систем, механизмов баз данных (SQLite, PostgreSQL), компиляторов (CPython Python, MRI Ruby) и практически всех других языков программирования. Понимание C означает понимание того, как на самом деле работают компьютеры.
 ---
 
 ## Почему C имеет значение
-- **Близость к аппаратному обеспечению**: язык C тесно связан с машинным кодом. Здесь нет ни сборщика мусора, ни накладных расходов во время выполнения, ни скрытых выделений.
-- **Вездесущность**: от микроконтроллеров до суперкомпьютеров язык C работает повсюду.
+- **Близость к оборудованию**: C тесно связан с машинным кодом. Нет ни сборщика мусора, ни накладных расходов во время выполнения, ни скрытых выделений.
+- **Вездесущность**: от микроконтроллеров до суперкомпьютеров язык C используется повсюду.
 - **Основы вычислений**: Linux, Windows, ядра macOS, интерпретатор Python, SQLite, Git — все написано на C.
 - **Производительность**: почти оптимальная скорость выполнения с полным контролем над распределением памяти.
 - **Влияние**: синтаксис и концепции C (указатели, массивы, структуры, функции) сформировали C++, Java, C#, JavaScript, Go, Rust и большинство последующих языков.
@@ -53,7 +54,7 @@ C — это язык операционных систем (Linux, ядро ​
 | Ограничение | Подробности | Типичный обходной путь |
 |-----------|---------|-------------------|
 | **Ручное управление памятью** | Никакого сборщика мусора — вы сами выделяете и освобождаете память | Осторожное использование malloc/free; Шаблоны RAII в C++ |
-| **Переполнение буфера** | Никакой проверки границ массивов – легко записывать за пределы буфера | Используйте strncpy вместо strcpy; включить предупреждения компилятора |
+| **Переполнение буфера** | Никакой проверки границ массивов: легко записывать за пределы буфера | Используйте strncpy вместо strcpy; включить предупреждения компилятора |
 | **Нет встроенного ООП** | Только процедурно – без классов, наследования и методов | Используйте структуры + указатели на функции; или переключиться на C++ |
 | **Ограниченная стандартная библиотека** | Минимальный встроенный функционал | Сторонние библиотеки или напишите свои |
 | **Неопределенное поведение** | Многие ошибки компилируются нормально, но непредсказуемо вылетают | Используйте дезинфицирующие средства, статические анализаторы |
@@ -103,7 +104,7 @@ p.y = 4.0f;
 ```
 
 ### Указатели
-Указатели — самая мощная и самая непонятая функция языка C. Указатель содержит адрес памяти.
+Указатели — самая мощная и наиболее непонятая функция языка C. Указатель содержит адрес памяти.
 ```c
 int value = 42;
 int *ptr = &value;     // ptr holds the address of value
@@ -217,7 +218,7 @@ double average(int count, ...) {
 | `<stdio.h>`| Ввод/вывод | printf, scanf, fopen, fgets, fprintf |
 | `<stdlib.h>`| Общие коммунальные услуги | malloc, бесплатно, выход, atoi, rand, qsort |
 | `<string.h>`| Строковые операции | стрлен, стркпи, стрнкпи, стркмп, мемкпи |
-|  __ЗАЩИЩЕНО_3__ | Математика | грех, потому что, sqrt, pow, fabs, потолок, пол |
+| `<math.h>`| Математика | грех, потому что, sqrt, pow, fabs, потолок, пол |
 | `<ctype.h>`| Классификация персонажей | isalpha, isdigit, toupper, tolower |
 | `<time.h>`| Дата и время | время, часы, разница, strftime |
 | `<assert.h>`| Отладка утверждений | утверждать(условие) |
@@ -635,7 +636,7 @@ print(lib.c_add(3, 5))  # 8
 | Питон | ctypes, cffi | `ctypes.CDLL("./lib.so")`|
 | Руби | Скрипка | `Fiddle.dlopen("./lib.so")`|
 | Ява | JNI | `System.loadLibrary("mylib")`|
-| С++ | внешний "С" |  __ЗАЩИЩЕНО_3__ |
+| С++ | внешний "С" | `extern "C" void my_func();`|
 | Ржавчина | внешний "С" + FFI | `extern "C" { fn my_func(); }`|
 ---
 
@@ -823,7 +824,7 @@ make clean    # Removes build artifacts
 | **GCC / Кланг** | Составители |
 | **Сделать/CMake** | Системы сборки |
 | **ГДБ** | Отладчик |
-| **Валгринд** | Детектор ошибок памяти (утечки, неверный доступ) |
+| **Вальгринд** | Детектор ошибок памяти (утечки, неверный доступ) |
 | **Адрессанитайзер** | Проверка памяти во время компиляции |
 | **cppcheck** | Статический анализ |
 | **формат clang** | Форматирование кода |
@@ -852,6 +853,514 @@ make clean    # Removes build artifacts
 | С17 | 2018 | Исправления ошибок и разъяснения (новых функций нет) |
 | С23 | 2024 | nullptr, typeof, constexpr, улучшенный препроцессор |
 Большинство производственного кода ориентированы на C11 или C17. C23 предлагает современные удобства, но внедрение требует времени.
+---
+
+## Синтетические вопросы и ответы
+### Вопрос 1: В чем разница между указателями и массивами в C?
+**О:** Массивы и указатели связаны, но различны. Массив — это непрерывный блок памяти фиксированного размера, известного во время компиляции. Указатель — это переменная, содержащая адрес памяти. Массивы распадаются на указатели при передаче функциям, но`sizeof(array)`дает общий размер, а`sizeof(pointer)`дает только размер указателя (4 или 8 байт). Имена массивов не являются изменяемыми lvalue — вы не можете использовать `arr++`.
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Вопрос 2. Как правильно управлять памятью и избегать утечек?
+**A:** Каждому `malloc`/`calloc` должен соответствовать соответствующий `free`. Распространенные ошибки: забывание освободить (утечка), двойное освобождение (неопределенное поведение), использование памяти после освобождения (использование после освобождения) и непроверка возвращаемого значения`malloc`(NULL в случае сбоя). Лучшая практика: выделяйте и освобождайте в одном модуле, используйте шаблон «перейти к очистке» для обработки ошибок и всегда устанавливайте для освобожденных указателей значение NULL.
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Вопрос 3. Каковы наилучшие методы обработки ошибок в C?
+**A:** C не имеет исключений. Обработка ошибок использует возвращаемые значения (коды ошибок, NULL-указатели, отрицательные значения). Стандартный шаблон: функции возвращают код состояния или NULL в случае сбоя и устанавливают`errno`для системных вызовов. Используйте шаблон «перейти к очистке» для очистки ресурсов при ошибках. Всегда проверяйте возвращаемые значения`malloc`,`fopen`и других функций, которые могут привести к сбою.
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Вопрос 4: Чем структуры, объединения и битовые поля отличаются по расположению памяти?
+**A:** В структурах члены располагаются последовательно с возможным дополнением для выравнивания. Объединения накладывают все элементы в одну и ту же ячейку памяти — размер равен самому большому члену. Битовые поля упаковывают несколько значений в одно целое число. Структуры предназначены для разнородных данных, объединения — для каламбура или экономии места, когда активно только одно поле, а битовые поля — для компактного хранения флагов.
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Вопрос 5: Что такое указатели на функции и когда их следует использовать?
+**A:** Указатели на функции хранят адрес функции и обеспечивают обратные вызовы, полиморфизм и архитектуру плагинов. Они являются основой подхода C к функциям высшего порядка (например, `qsort`, `bsearch`). Объявите их с помощью синтаксиса: `return_type (*name)(parameter_types)`.
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Реализация динамического массива (вектора)
+**Постановка задачи.** Реализуйте на языке C динамический массив, который автоматически увеличивается при добавлении элементов, поддерживает амортизированное добавление O(1) и обеспечивает правильную очистку. Это C-эквивалент C++ `std::vector`.
+**Шаг 1. Поймите проблему:**
+Динамическому массиву необходимы: (1) буфер, выделенный в куче, (2) отслеживание размера (используемые элементы) и емкости (выделенные слоты), (3) перераспределение, когда размер достигает емкости, (4) правильная очистка памяти. Коэффициент роста 2x дает амортизированное добавление O(1).
+**Шаг 2. Определите подход:**
+- Используйте`malloc`для первоначального распределения и`realloc`для роста.
+- Храните указатель данных, размер и емкость в структуре.
+- Увеличение за счет удвоения емкости при `size == capacity`.
+- Обеспечьте операции `push`, `pop`, `get`,`set`и `free`.
+**Шаг 3. Реализация решения:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Амортизированное нажатие O(1): удвоение означает, что каждый элемент копируется не более O(log n) раз.
+— Проверка границ в`vec_get`и`vec_pop`выявляет ошибки на ранней стадии — это важно в C, где нет системы безопасности во время выполнения.
+- Память: после 100 нажатий, начиная с емкости 4, емкость достигает 128 (4→8→16→32→64→128).
+- Производство: используйте`shrink_to_fit`(перераспределение до точного размера) после завершения роста, чтобы освободить неиспользуемую память.
+### Проблема 2. Создайте простую хэш-таблицу
+**Постановка задачи.** Реализуйте хеш-таблицу со строковыми ключами и целочисленными значениями, используя отдельную цепочку для разрешения коллизий. Поддержка операций вставки, поиска и удаления.
+**Шаг 1. Поймите проблему:**
+Хэш-таблица сопоставляет ключи с индексами массива с помощью хэш-функции. Коллизии (сопоставление разных ключей одному и тому же индексу) разрешаются с помощью отдельной цепочки: каждый сегмент представляет собой связанный список записей. Нам нужны: хэш-функция, вставка, поиск, удаление и очистка.
+**Шаг 2. Определите подход:**
+— Используйте хэш FNV-1a для хорошего распределения строковых ключей.
+- Массив указателей сегментов (заголовков связанного списка).
+- Отслеживание коэффициента загрузки; изменить размер, когда коэффициент загрузки превышает пороговое значение.
+- Все операции в среднем O(1), в худшем случае O(n).
+**Шаг 3. Реализация решения:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Среднее значение O(1) для вставки/поиска/удаления с хорошей хэш-функцией и разумным коэффициентом загрузки.
+- FNV-1a обеспечивает превосходное распределение строковых ключей с минимальными вычислениями.
+- Метод «указатель-указатель» (`Entry **pp`) в`hashmap_remove`элегантно обрабатывает удаление как заголовка, так и середины списка без особых случаев.
+- Производство: добавьте перефразирование, когда коэффициент загрузки превышает пороговое значение. Используйте открытую адресацию (линейное зондирование) для повышения производительности кэша.
+### Проблема 3: реализация кольцевого буфера для производителя-потребителя
+**Постановка задачи.** Реализуйте на C безблокировочный кольцевой буфер с одним производителем и одним потребителем для высокопроизводительной межпотоковой связи без динамического выделения во время работы.
+**Шаг 1. Поймите проблему:**
+Кольцевой буфер (циклический буфер) использует массив фиксированного размера с индексами чтения и записи. Когда буфер заполнен, средство записи блокирует или перезаписывает. Для SPSC (один производитель и один потребитель) мы можем использовать атомарные операции вместо блокировок для максимальной пропускной способности.
+**Шаг 2. Определите подход:**
+— Массив фиксированного размера, выделяемый один раз при инициализации.
+-`head`(позиция чтения) и`tail`(позиция записи) в качестве атомарных индексов.
+- Производитель продвигает`tail`; потребительские достижения`head`.
+- Буфер пуст, когда`head == tail`; полный, когда`(tail + 1) % capacity == head`.
+- Используйте атомарность C11 с соответствующим порядком памяти.
+**Шаг 3. Реализация решения:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**Шаг 4. Проверка и оптимизация:**
+— Без блокировок: только атомарные операции — без мьютексов и переключений контекста.
+- Упорядочение памяти:`release`при записи обеспечивает видимость данных до обновления индекса; `acquire`при чтении гарантирует, что мы увидим данные после чтения индекса.
+- Емкость степени двойки: включает`& (capacity - 1)`вместо`% capacity`— значительно быстрее.
+- Пропускная способность: миллиарды операций в секунду на современном оборудовании.
+- Производство: добавьте заполнение между`head`и `tail`, чтобы предотвратить ложное совместное использование (каждое в отдельной строке кэша).
 ---
 
 ## Краткое содержание

@@ -28,8 +28,8 @@ Before running this project, you should be comfortable with:
 - Running Python scripts from the command line
 
 If you're new to these concepts, check out:
-- [Python Basics](../User%20Questions/prerequisites/python_basics.md)
-- [Terminal Basics](../User%20Questions/prerequisites/terminal_basics.md)
+- [Python Basics](../../User%20Questions/prerequisites/python_basics.md)
+- [Terminal Basics](../../User%20Questions/prerequisites/terminal_basics.md)
 
 ## Quick Start
 

@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "هاسكل"
-الوصف: "مرجع شامل للغة برمجة هاسكل يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Haskell"
+description: "Comprehensive reference for the Haskell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [هاسكل، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "39 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [haskell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "39 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #هاسكل
 هاسكل هي لغة برمجة وظيفية بحتة، مكتوبة بشكل ثابت، ويتم تقييمها بتكاسل. تم توحيدها لأول مرة في عام 1990 (هاسكل 90) وتم تحسينها من خلال إصدارات متعددة (هاسكل 2010 هو المعيار الحالي)، وتشتهر هاسكل بدقتها الرياضية ونظام الكتابة القوي (مع فئات الكتابة والأحادية وأنواع البيانات الجبرية)، والتركيز على الصحة من خلال الأنواع.
 هاسكل ليست لغة سائدة، لكن تأثيرها هائل. لقد أثرت مفاهيم مثل المونادات والتقييم البطيء وفئات الكتابة على Rust وSwift وKotlin وScala وTypeScript. يتم استخدام هاسكل في التمويل (ستاندرد تشارترد، باركليز)، والمجمعين (GHC)، والتحقق الرسمي.
@@ -42,7 +47,7 @@ next_review: "2027-08-05"
 ## لماذا يهم هاسكل
 - **الوظائف النقية**: لا توجد آثار جانبية بشكل افتراضي — تُرجع الوظائف دائمًا نفس الإخراج لنفس الإدخال.
 - **نظام الكتابة**: من بين أكثر الأنظمة تعبيرًا في أي لغة — فهو يلتقط الأخطاء في وقت الترجمة وهو ما لا تستطيع اللغات الأخرى اكتشافه.
-- **التقييم البطيء**: يتم تأجيل العمليات الحسابية لحين الحاجة إليها — مما يتيح هياكل بيانات لا حصر لها وتركيبًا فعالاً.
+- **التقييم البطيء**: يتم تأجيل العمليات الحسابية لحين الحاجة إليها — مما يتيح هياكل بيانات لا حصر لها وتكوينًا فعالاً.
 - **الأساس الرياضي**: استنادًا إلى حساب التفاضل والتكامل لامدا ونظرية الفئة — تكون البرامج أقرب إلى البراهين الرياضية.
 - **التأثير**: شكلت أفكار هاسكل معظم اللغات الحديثة.
 - **التزامن**: توفر ذاكرة المعاملات البرمجية (STM) برمجة متزامنة أنيقة.
@@ -468,16 +473,16 @@ tests:
 ### أوامر بناء المفاتيح
 | الأمر | الوصف |
 |---------|------------|
-|  __محمي_0__ | أنشئ مشروعًا جديدًا من القالب |
-|  __محمي_1__ | بناء المشروع |
-|  __محمي_2__ | ابدأ REPL التفاعلي بالمشروع المحمل |
-|  __محمي_3__ | تشغيل مجموعة الاختبار |
-|  __محمي_4__ | تشغيل المعايير |
-|  __محمي_5__ | توليد الوثائق |
-|  __محمي_6__ | قم بتشغيل الملف القابل للتنفيذ |
-|  __محمي_7__ | التحف البناء النظيف |
-|  __محمي_8__ | تحديث فهرس الحزمة |
-|  __محمي_9__ | تثبيت إصدارات التبعية الدقيقة |
+| `stack new my-project`| أنشئ مشروعًا جديدًا من القالب |
+| `stack build`| بناء المشروع |
+| `stack ghci`| ابدأ REPL التفاعلي بالمشروع المحمل |
+| `stack test`| تشغيل مجموعة الاختبار |
+| `stack bench`| تشغيل المعايير |
+| `stack haddock`| توليد الوثائق |
+| `stack exec my-app`| قم بتشغيل الملف القابل للتنفيذ |
+| `stack clean`| التحف البناء النظيف |
+| `stack update`| تحديث فهرس الحزمة |
+| `stack freeze`| تثبيت إصدارات التبعية الدقيقة |
 ### خط أنابيب CI/CD (إجراءات GitHub)
 ```yaml
 # .github/workflows/haskell.yml
@@ -594,10 +599,10 @@ instance Arbitrary PositiveInt where
 ### أوامر الاختبار
 | الأمر | الوصف |
 |---------|------------|
-|  __محمي_0__ | تشغيل كافة مجموعات الاختبار |
-|  __محمي_1__ | تخطي التحسينات لإنشاءات اختبار أسرع |
-|  __محمي_2__ | قم بإجراء الاختبارات بمخرجات ملونة |
-|  __محمي_3__ | تحميل وحدات الاختبار في REPL |
+| `stack test`| تشغيل كافة مجموعات الاختبار |
+| `stack test --fast`| تخطي التحسينات لإنشاءات اختبار أسرع |
+| `stack build --test --test-arguments "--color"`| قم بإجراء الاختبارات بمخرجات ملونة |
+| `stack ghci --test`| تحميل وحدات الاختبار في REPL |
 
 ---
 
@@ -669,7 +674,7 @@ runPython code = do
 
 ## أنماط التصميم
 ### نهائي بدون علامات (DSL المضمنة)
-يقوم النمط النهائي بدون علامات بتشفير DSL باستخدام فئات الكتابة، مما يتيح تفسيرات متعددة.
+يقوم النمط النهائي بدون علامات بتشفير خطوط DSL باستخدام فئات الكتابة، مما يتيح تفسيرات متعددة.
 ```haskell
 {-# LANGUAGE FlexibleInstances #-}
 
@@ -802,11 +807,11 @@ main = do
 ### أدوات التنميط
 | أداة | الغرض | الأمر |
 |------|---------|---------|
-| **ملف تعريف GHC** | تحديد ملامح الوقت والتخصيص |  __محمي_0__ ثم __محمي_1__ |
-| ** نطاق الموضوع ** | تصور التنفيذ الموازي |  __محمي_2__ ثم افتح __محمي_3__ |
-| **أحداث ghc** | تحليل سجلات الأحداث |  __محمي_4__ |
-| **المعيار** | المقارنة الإحصائية | استخدم الحزمة`criterion`|
-| **hp2pretty** | تصور ملفات تعريف الكومة |  __محمي_6__ ثم __محمي_7__ |
+| **ملف تعريف GHC** | تحديد ملامح الوقت والتخصيص | `stack build --profile`ثم`./app +RTS -p`|
+| ** نطاق الموضوع ** | تصور التنفيذ الموازي | `./app +RTS -l`ثم افتح`app.eventlog`|
+| **أحداث ghc** | تحليل سجلات الأحداث | `ghc-events show app.eventlog`|
+| **المعيار** | المقارنة الإحصائية | استخدم حزمة`criterion`|
+| **hp2pretty** | تصور ملفات تعريف الكومة | `./app +RTS -h`ثم`hp2pretty app.hp`|
 ### المقارنة المعيارية
 ```haskell
 -- bench/Bench.hs
@@ -937,5 +942,209 @@ pkgs.haskellPackages.developPackage {
 | علم البيانات | ليس النظام البيئي | بايثون، ر |
 ---
 
+## أسئلة وأجوبة اصطناعية
+### س1: كيف يؤثر تقييم هاسكل المتكاسل على الأداء؟
+**ج:** التقييم البطيء يعني أن التعبيرات يتم حسابها فقط عند الحاجة إليها، مما يتيح هياكل بيانات لا حصر لها وخطوط أنابيب قابلة للتركيب. ومع ذلك، يمكن أن يسبب تسربًا للمساحة إذا تراكمت الأجزاء:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+استخدم`foldl'`(من`Data.List`) بدلاً من`foldl`للطيات الرقمية. استخدم أنماط الانفجارات`!`أو`seq`لفرض التقييم عند الحاجة.
+### السؤال الثاني: ما هو الفرق العملي بين`Functor`و`Applicative`و `Monad`؟
+**أ:** تضيف كل فئة كتابة القدرة:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+يقوم **Functor** بتعيين وظيفة خالصة عبر سياق ما. ** تطبيقي ** يطبق الوظائف الموجودة في السياق. **Monad** يتيح لكل خطوة أن تعتمد على نتيجة الخطوة السابقة. عمليًا: استخدم`fmap`/`<$>`للتحويلات البسيطة، و`<*>` للجمع بين التأثيرات، و`>>=` /`do`للحسابات التابعة المتسلسلة.
+### س3: كيف أتعامل مع الآثار الجانبية في كود هاسكل النقي؟
+**أ:** استخدم نظام الكتابة للفصل بين التعليمات البرمجية النقية والفعالة:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+حافظ على المنطق الأساسي نقيًا وادفع التأثيرات إلى الحواف. استخدم`ReaderT`للتكوين، و`ExceptT` للأخطاء، و`StateT` للحالة القابلة للتغيير.
+### س4: ما هي فئات الكتابة وكيف تختلف عن واجهات OOP؟
+**أ:** تحدد فئات الكتابة السلوك الذي يمكن للأنواع تنفيذه. على عكس واجهات OOP، فهي مفتوحة (أي نوع يمكن أن يكون مثيلًا) وتدعم تعدد الأشكال المخصص:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### س5: كيف أقوم ببناء مشروع هاسكل للاستخدام الفعلي؟
+**ج:** استخدم Cabal أو Stack بالتخطيط القياسي:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+الممارسات الأساسية: احتفظ بـ IO في`Main.hs`أو وحدة`IO`المخصصة، واجعل المنطق الأساسي نقيًا وقابلاً للاختبار، واستخدم أغلفة`newtype`لأنواع النطاقات.
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة 1: تنفيذ وظيفة القسمة الآمنة مع الإبلاغ عن الأخطاء
+**الخطوة الأولى: فهم المشكلة**
+نحن بحاجة إلى قسمة تتعامل مع القسمة على صفر وتُبلغ عن أخطاء ذات معنى، وليس مجرد أعطال.
+**الخطوة 2: تحديد النهج**
+استخدم`Either`لإرجاع رسالة خطأ أو النتيجة. وهذا يجعل احتمال الفشل واضحًا في النوع.
+**الخطوة 3: التنفيذ**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**الخطوة 4: التحقق**
+يضمن نظام الكتابة أن على المتصلين التعامل مع حالة الخطأ. مطابقة الأنماط أو`either`تفرض معالجة صريحة.
+### المشكلة الثانية: تحليل لغة التكوين البسيطة
+**الخطوة الأولى: فهم المشكلة**
+تحليل أزواج القيمة الرئيسية من سلسلة مثل`name=Alice\nage=30`.
+**الخطوة 2: تحديد النهج**
+استخدم`Text.Parsec`أو العودية اليدوية. للتبسيط، استخدم`break`و`span`.
+**الخطوة 3: التنفيذ**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**الخطوة 4: تمديد**
+أضف معالجة التعليقات (`#`) ورؤوس الأقسام (`[section]`) واكتب الإكراه باستخدام`Value`ADT.
+### المشكلة الثالثة: بناء نموذج فيبوناتشي محفوظ بالكسل
+**الخطوة الأولى: فهم المشكلة**
+حساب أرقام فيبوناتشي بكفاءة. العودية الساذجة هي الأسي.
+**الخطوة 2: تحديد النهج**
+استخدم تقييم Haskell البطيء لإنشاء قائمة لا نهائية حيث يتم حساب كل عنصر مرة واحدة وتخزينه مؤقتًا.
+**الخطوة 3: التنفيذ**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**الخطوة 4: التحسين**
+للوصول العشوائي، استخدم`Data.Array`مع البناء البطيء. بالنسبة للمؤشرات الكبيرة جدًا، استخدم الأس المصفوفة في O(log n).
+### المشكلة الرابعة: تنفيذ آلة الحالة البسيطة
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء نموذج لإشارة المرور التي تدور باللون الأحمر -> الأخضر -> الأصفر -> الأحمر.
+**الخطوة 2: تحديد النهج**
+استخدم نوع بيانات جبريًا للحالات ودالة انتقالية خالصة.
+**الخطوة 3: التنفيذ**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**الخطوة 4: التحقق**
+الوظائف النقية قابلة للاختبار بشكل تافه:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
+---
+
 ## ملخص
-هاسكل هي أنقى تعبير عن البرمجة الوظيفية في اللغة السائدة. يعد نظام الكتابة الخاص به من بين أقوى الأنظمة، كما أن تركيزه على الوظائف النقية ينتج عنه تعليمات برمجية يسهل التفكير فيها واختبارها. على الرغم من أن هاسكل لا تستخدم على نطاق واسع في الصناعة، إلا أن أفكارها أثرت بشكل عميق على البرمجة الحديثة. إن تعلم لغة هاسكل يغير طريقة تفكيرك في البرمجة، حتى لو لم تستخدمها بشكل احترافي أبدًا.
+هاسكل هي أنقى تعبير عن البرمجة الوظيفية في اللغة السائدة. يعد نظام الكتابة الخاص به من بين أقوى الأنظمة، كما أن تركيزه على الوظائف الخالصة ينتج عنه تعليمات برمجية يسهل التفكير فيها واختبارها. على الرغم من أن هاسكل لا يستخدم على نطاق واسع في الصناعة، إلا أن أفكاره أثرت بشكل عميق على البرمجة الحديثة. إن تعلم لغة هاسكل يغير طريقة تفكيرك في البرمجة، حتى لو لم تستخدمها بشكل احترافي أبدًا.

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Р
 R — это язык программирования и среда, разработанные специально для статистических вычислений и анализа данных. Созданный Россом Ихакой и Робертом Джентльманом в Оклендском университете в 1993 году (отсюда и «R»), он представляет собой реализацию языка S со значительными расширениями. R имеет открытый исходный код и поддерживается командой R Core. Это стандартный инструмент для статистиков, аналитиков данных и исследователей в академических кругах, здравоохранении, финансах и правительстве.
 R превосходно справляется с манипулированием данными, статистическим моделированием, визуализацией и составлением отчетов. Его экосистема пакетов (CRAN) насчитывает более 20 000 пакетов, охватывающих практически все когда-либо разработанные статистические методы.
@@ -54,7 +55,7 @@ R превосходно справляется с манипулировани�
 | Ограничение | Подробности | Типичный обходной путь |
 |-----------|---------|-------------------|
 | **Производительность** | Однопоточный по умолчанию; медленно для больших наборов данных | Используйте `data.table`, параллельные пакеты или Rcpp для интеграции с C++ |
-| **Использование памяти** | Загружает целые наборы данных в ОЗУ | Используйте`data.table::fread`, пакет стрелок для внешней обработки |
+| **Использование памяти** | Загружает целые наборы данных в ОЗУ | Используйте `data.table::fread`, пакет стрелок для внешней обработки |
 | **Не является языком общего назначения** | Неудобно для веб-разработки, системного программирования или приложений | Используйте Python, Go или JavaScript для нестатистических задач |
 | **Несогласованный синтаксис** | У базы R есть свои особенности; разные пакеты используют разные соглашения | Используйте tidyverse для обеспечения единообразия |
 | **Рынок труда** | В основном академические/исследовательские роли | Специалисты по обработке и анализу данных все чаще отдают предпочтение Python |
@@ -603,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Производственные системы машинного обучения | Не предназначен для развертывания | Питон, Ява |
 | Веб-разработка | Не подходит | JavaScript, Питон |
 | Масштабная обработка данных | С привязкой к памяти | Python (PySpark), SQL |
+---
+
+## Синтетические вопросы и ответы
+### Q1: В чем разница между`<-`и`=`при назначении?
+**A:** Оба присваивают значения, но`<-`— это идиоматический оператор присваивания R. Он работает во всех контекстах, включая внутренние вызовы функций:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Вопрос 2. Как мне обработать недостающие данные в R?
+**A:** R использует`NA`для отсутствующих значений. Большинство функций имеют параметр `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Вопрос 3: Когда следует использовать `lapply`,`sapply`и `vapply`?
+**A:** Все они применяют функцию к списку/вектору, но имеют разные выходные данные:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Вопрос 4: Как создать эффективные визуализации с помощью ggplot2?
+**О:** Следуйте грамматике графики — сопоставляйте эстетику данных с визуальными свойствами:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Вопрос 5. Как написать эффективный код R для больших наборов данных?
+**О:** Ключевые практики:
+- Предварительное выделение векторов:`x <- numeric(n)`вместо увеличения с помощью `c()`. 
+- Используйте`data.table`для больших наборов данных (в 100 раз быстрее, чем data.frame).
+- Операции векторизации — избегайте циклов, где это возможно.
+- Используйте`vapply`вместо`sapply`для обеспечения безопасности типов.
+- Профиль с`Rprof()`или`profvis`
+- Рассмотрите пакет`arrow`для внешних данных.
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Очистка и анализ беспорядочного набора данных
+**Шаг 1. Поймите проблему**
+У нас есть фрейм данных с пропущенными значениями, противоречивыми типами и выбросами. Нам нужно его очистить и вычислить сводную статистику.
+**Шаг 2. Определите подход**
+Используйте глаголы tidyverse:`filter`,`mutate`,`summarize`и`group_by`.
+**Шаг 3. Реализация**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Шаг 4. Проверка**
+Проверьте количество строк до и после, проверьте диапазоны и перекрестно сверьте итоги с исходными данными.
+### Проблема 2: построение модели линейной регрессии
+**Шаг 1. Поймите проблему**
+Прогнозируйте непрерывную переменную результата на основе нескольких предикторов.
+**Шаг 2. Определите подход**
+Используйте`lm()`для линейной регрессии, проверки предположений и оценки соответствия модели.
+**Шаг 3. Реализация**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Шаг 4. Оценка**
+Проверьте R-квадрат, остаточные графики на предмет закономерностей и AIC для сравнения моделей.
+### Проблема 3. Создание воспроизводимого отчета
+**Шаг 1. Поймите проблему**
+Создайте отчет, сочетающий в себе анализ, визуализацию и описательный текст в воспроизводимом формате.
+**Шаг 2. Определите подход**
+Используйте R Markdown (или Quarto), чтобы чередовать фрагменты кода с текстом.
+**Шаг 3. Реализация**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+Knitr::opts_chunk$set(echo = FALSE, предупреждение = FALSE)
+библиотека (tidyverse)
+данные <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**Шаг 4. Рендеринг**
+`rmarkdown::render("report.Rmd")`создает автономный HTML-документ.
 ---
 
 ## Краткое содержание

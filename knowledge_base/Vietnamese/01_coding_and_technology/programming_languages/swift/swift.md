@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Nhanh
 Swift là ngôn ngữ lập trình được biên dịch, hiện đại do Apple (do Chris Lattner dẫn đầu) phát triển và phát hành lần đầu tiên vào năm 2014. Nó được thiết kế để thay thế Objective-C làm ngôn ngữ chính để phát triển nền tảng Apple (iOS, macOS, watchOS, tvOS, VisionOS). Swift kết hợp hiệu suất của các ngôn ngữ được biên dịch với tính biểu cảm của các ngôn ngữ kịch bản và nó nhấn mạnh đến sự an toàn -- đặc biệt là về giá trị null, quản lý bộ nhớ và lỗi loại.
-Ngoài các nền tảng của Apple, Swift ngày càng được sử dụng nhiều để phát triển phía máy chủ (Vapor, Hummingbird), các ứng dụng đa nền tảng và thậm chí cả máy học (Creat ML của Apple). Với sự ra đời của Swift trên Máy chủ và hỗ trợ đa nền tảng, Swift không chỉ là một "ngôn ngữ của Apple".
+Ngoài các nền tảng của Apple, Swift ngày càng được sử dụng nhiều để phát triển phía máy chủ (Vapor, Hummingbird), các ứng dụng đa nền tảng và thậm chí cả máy học (Creat ML của Apple). Với việc giới thiệu Swift trên Máy chủ và hỗ trợ đa nền tảng, Swift không chỉ trở thành một "ngôn ngữ của Apple".
 ---
 
 ## Tại sao Swift lại quan trọng
@@ -629,6 +630,363 @@ swift build -c release
 | Di động đa nền tảng | Có thể nhưng không phải chính | Flutter, React Native |
 | Lập trình hệ thống | Có thể (Linux) | Rust, C, C++ |
 | Nhà phát triển ứng dụng chung (không phải của Apple) | Hệ sinh thái hạn chế | Python, Go, Java |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Tùy chọn là gì và tại sao Swift buộc tôi phải mở khóa chúng?
+**A:** Một tùy chọn (`Type?`) đại diện cho một giá trị có thể không có — đó là`.some(value)`hoặc`.none`(nil). Swift buộc phải hủy ghép nối rõ ràng để ngăn chặn sự cố con trỏ null khi chạy. Bạn có thể mở gói bằng`if let`,`guard let`, buộc mở gói (`!`), chuỗi tùy chọn (`?.`) hoặc kết hợp không (`??`). Trình biên dịch đảm bảo bạn xử lý được trường hợp không - điều này giúp loại bỏ toàn bộ lớp lỗi.
+```swift
+// Optional declaration
+var name: String? = nil
+name = "Alice"
+
+// Safe unwrapping with if let
+if let unwrapped = name {
+    print("Name: \(unwrapped)")
+} else {
+    print("Name is nil")
+}
+
+// Guard let — early exit
+func greet(user: String?) {
+    guard let name = user else {
+        print("No user provided")
+        return
+    }
+    print("Hello, \(name)!")
+}
+
+// Nil coalescing
+let displayName = name ?? "Anonymous"
+
+// Optional chaining
+class Address { var city: String? }
+class User { var address: Address? }
+let user = User()
+let city = user.address?.city  // String? — nil at any point
+let cityOrUnknown = user.address?.city ?? "Unknown"
+```
+
+### Câu 2: Sự khác biệt giữa struct và class trong Swift là gì?
+**A:** Cấu trúc là loại giá trị (được sao chép khi gán), lớp là loại tham chiếu (được chia sẻ). Các cấu trúc có được trình khởi tạo thành viên miễn phí và chúng hỗ trợ tất cả các tính năng của các lớp ngoại trừ tính kế thừa, bộ khử khởi tạo và tính tham chiếu. Các loại thư viện tiêu chuẩn của Swift (`String`,`Array`,`Dictionary`) đều là cấu trúc. Ưu tiên cấu trúc theo mặc định; sử dụng các lớp khi bạn cần chia sẻ trạng thái có thể thay đổi hoặc kế thừa.
+```swift
+// Struct — value type, copied on assignment
+struct Point {
+    var x: Double
+    var y: Double
+
+    mutating func move(by dx: Double, _ dy: Double) {
+        x += dx
+        y += dy
+    }
+}
+
+var p1 = Point(x: 1, y: 2)
+var p2 = p1          // Copy
+p2.x = 10
+print(p1.x)          // 1 — unchanged
+
+// Class — reference type, shared
+class ViewController {
+    var title: String = ""
+}
+let vc1 = ViewController()
+let vc2 = vc1        // Same reference
+vc2.title = "Home"
+print(vc1.title)     // "Home" — same object
+```
+
+### Câu 3: Các giao thức và lập trình hướng giao thức hoạt động như thế nào?
+**A:** Các giao thức xác định bản thiết kế chi tiết về các phương thức, thuộc tính và yêu cầu. Bất kỳ loại nào cũng có thể tuân theo một giao thức bằng cách thực hiện các yêu cầu của nó. Tiện ích mở rộng giao thức cung cấp các triển khai mặc định. Các gen chung bị ràng buộc bởi các giao thức mang lại cho bạn tính đa hình mà không cần phải thừa kế lớp - đây là "lập trình hướng giao thức".
+```swift
+// Protocol definition
+protocol Drawable {
+    func draw(on context: GraphicsContext)
+    var bounds: CGRect { get }
+}
+
+// Default implementation via extension
+extension Drawable {
+    func describe() -> String {
+        return "Drawable at \(bounds)"
+    }
+}
+
+// Conforming types
+struct Circle: Drawable {
+    let center: CGPoint
+    let radius: CGFloat
+
+    func draw(on context: GraphicsContext) { /* ... */ }
+    var bounds: CGRect { /* computed from center + radius */ CGRect() }
+}
+
+// Protocol as generic constraint
+func renderAll<T: Drawable>(_ items: [T], on context: GraphicsContext) {
+    for item in items {
+        item.draw(on: context)
+    }
+}
+
+// Protocol composition
+func process(_ item: Drawable & Codable & Sendable) { /* ... */ }
+```
+
+### Q4:`async/await`trong Swift là gì và nó liên quan thế nào đến diễn viên?
+**A:** Mô hình đồng thời của Swift (5.5+) sử dụng`async/await`cho mã không đồng bộ và`actors`cho trạng thái có thể thay đổi được chia sẻ an toàn.  Các chức năng`async`có thể bị tạm dừng và tiếp tục lại. `await`đánh dấu các điểm treo. Các tác nhân ngăn chặn việc chạy đua dữ liệu bằng cách tuần tự hóa quyền truy cập vào trạng thái có thể thay đổi của chúng — trình biên dịch thực thi điều này tại thời điểm biên dịch.
+```swift
+// Async function
+func fetchUser(id: String) async throws -> User {
+    let (data, _) = try await URLSession.shared.data(
+        from: URL(string: "https://api.example.com/users/\(id)")!
+    )
+    return try JSONDecoder().decode(User.self, from: data)
+}
+
+// Actor — safe shared mutable state
+actor BankAccount {
+    private var balance: Double = 0
+
+    func deposit(_ amount: Double) {
+        balance += amount  // Only accessible within actor
+    }
+
+    func getBalance() -> Double { balance }
+}
+
+// Usage
+let account = BankAccount()
+await account.deposit(100)
+let balance = await account.getBalance()
+
+// Concurrent execution with async let
+async let user = fetchUser(id: "1")
+async let posts = fetchPosts(userId: "1")
+let dashboard = try await Dashboard(user: user, posts: posts)
+```
+
+### Câu hỏi 5: Trình bao bọc thuộc tính và trình tạo kết quả hoạt động như thế nào?
+**A:** Trình bao bọc thuộc tính (`@propertyWrapper`) thêm logic vào bộ nhớ thuộc tính (như`@State`trong SwiftUI). Trình tạo kết quả (`@resultBuilder`) cho phép bạn xây dựng cấu trúc dữ liệu bằng cú pháp tự nhiên (như phân cấp chế độ xem của SwiftUI). Cả hai đều là hình thức lập trình siêu dữ liệu giúp giảm bớt bản soạn sẵn.
+```swift
+// Property wrapper
+@propertyWrapper
+struct Clamped<T: Comparable> {
+    var wrappedValue: T {
+        didSet { wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound) }
+    }
+    let range: ClosedRange<T>
+
+    init(wrappedValue: T, _ range: ClosedRange<T>) {
+        self.range = range
+        self.wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound)
+    }
+}
+
+struct Player {
+    @Clamped(0...100) var health: Int = 100
+    @Clamped(0...999) var score: Int = 0
+}
+
+var player = Player()
+player.health = 150  // Clamped to 100
+player.health = -10  // Clamped to 0
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng một Type-Safe Router
+**Báo cáo sự cố:** Tạo bộ định tuyến URL loại an toàn cho ứng dụng iOS trong đó mỗi tuyến có các tham số liên quan và trình biên dịch ngăn truy cập các tham số không tồn tại cho một tuyến nhất định.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) định nghĩa tuyến đường với các tham số đã nhập, (2) phân tích cú pháp URL để trích xuất tuyến + tham số, (3) truy cập tham số an toàn loại - trình biên dịch đảm bảo bạn chỉ đọc các tham số tồn tại cho mỗi tuyến. Điều này đòi hỏi enum với các giá trị liên quan.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng enum với các giá trị liên quan để xác định tuyến đường.
+- Mỗi trường hợp mang các tham số cụ thể của nó dưới dạng giá trị được gõ.
+- Trình phân tích cú pháp chuyển đổi chuỗi URL thành các trường hợp định tuyến enum.
+- Khớp mẫu trích xuất các tham số với sự an toàn trong thời gian biên dịch.
+**Bước 3 — Triển khai giải pháp:**
+```swift
+enum Route: Equatable {
+    case home
+    case userProfile(id: String)
+    case productDetail(id: String, variant: String?)
+    case search(query: String, page: Int)
+    case settings(section: SettingsSection)
+
+    enum SettingsSection: String {
+        case general, notifications, privacy, about
+    }
+
+    // Parse URL to route
+    static func from(url: URL) -> Route? {
+        let path = url.pathComponents.dropFirst()  // Remove leading /
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            .queryItems ?? []
+
+        switch path {
+        case []:
+            return .home
+        case ["users", let id]:
+            return .userProfile(id: id)
+        case ["products", let id]:
+            let variant = query.first(where: { $0.name == "variant" })?.value
+            return .productDetail(id: id, variant: variant)
+        case ["search"]:
+            guard let q = query.first(where: { $0.name == "q" })?.value else { return nil }
+            let page = query.first(where: { $0.name == "page" })
+                .flatMap { Int($0.value ?? "1") } ?? 1
+            return .search(query: q, page: page)
+        case ["settings", let section]:
+            guard let s = SettingsSection(rawValue: section) else { return nil }
+            return .settings(section: s)
+        default:
+            return nil
+        }
+    }
+}
+
+// Usage — type-safe parameter extraction
+func handle(route: Route) {
+    switch route {
+    case .home:
+        showHomeScreen()
+    case .userProfile(let id):
+        showProfile(userId: id)  // id is guaranteed String
+    case .productDetail(let id, let variant):
+        showProduct(id: id, variant: variant)  // variant is String?
+    case .search(let query, let page):
+        performSearch(query: query, page: page)  // page is guaranteed Int
+    case .settings(let section):
+        showSettings(section: section)  // section is SettingsSection enum
+    }
+}
+
+// Handle deep link
+if let url = URL(string: "myapp://products/abc123?variant=blue"),
+   let route = Route.from(url: url) {
+    handle(route: route)
+}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Loại an toàn: mỗi trường hợp tuyến đường mang chính xác các thông số cần thiết. Trình biên dịch ngăn truy cập`variant`trên`.userProfile`.
+- Tính đầy đủ:`switch`phải xử lý tất cả các trường hợp — việc thêm một tuyến đường mới buộc phải cập nhật tất cả các trình xử lý.
+- Khả năng mở rộng: thêm các tuyến đường mới bằng cách thêm các trường hợp enum; trình biên dịch sẽ cho bạn biết mọi nơi cần cập nhật.
+- Sản xuất: xem xét định tuyến của`swift-url-routing`hoặc`TCA`cho các ứng dụng lớn hơn.
+### Vấn đề 2: Triển khai Reactive State Container
+**Báo cáo vấn đề:** Xây dựng một vùng chứa trạng thái phản ứng đơn giản (tương tự như Redux/Vuex) trong Swift nơi có thể quan sát được các thay đổi trạng thái và người đăng ký được thông báo về các thay đổi trạng thái cụ thể.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng ta cần: (1) một thùng chứa trạng thái chứa trạng thái ứng dụng, (2) các hành động mô tả các thay đổi trạng thái, (3) một bộ giảm tốc tạo ra trạng thái mới từ trạng thái hiện tại + hành động, (4) người đăng ký quan sát các thay đổi trạng thái. Đây là mô hình luồng dữ liệu một chiều.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng lớp`Store<State>`chung có hành vi giống `@Published`.
+- Xác định hành động như một enum.
+- Sử dụng chức năng giảm tốc `(State, Action) -> State`.
+- Người đăng ký nhận được trạng thái mới thông qua việc đóng cửa.
+**Bước 3 — Triển khai giải pháp:**
+```swift
+// Action protocol
+protocol Action {}
+
+// Store — holds state and dispatches actions
+class Store<State> {
+    private(set) var state: State
+    private let reducer: (State, Action) -> State
+    private var subscribers: [(State) -> Void] = []
+    private let queue = DispatchQueue(label: "store.queue")
+
+    init(initialState: State, reducer: @escaping (State, Action) -> State) {
+        self.state = initialState
+        self.reducer = reducer
+    }
+
+    func dispatch(_ action: Action) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            let newState = self.reducer(self.state, action)
+            self.state = newState
+            self.notifySubscribers(newState)
+        }
+    }
+
+    func subscribe(_ callback: @escaping (State) -> Void) -> () -> Void {
+        subscribers.append(callback)
+        callback(state)  // Emit current state immediately
+
+        // Return unsubscribe function
+        let index = subscribers.count - 1
+        return { [weak self] in
+            self?.subscribers.remove(at: index)
+        }
+    }
+
+    private func notifySubscribers(_ state: State) {
+        for subscriber in subscribers {
+            subscriber(state)
+        }
+    }
+}
+
+// Example usage
+struct AppState {
+    var todos: [Todo] = []
+    var filter: TodoFilter = .all
+    var isLoading: Bool = false
+}
+
+enum TodoAction: Action {
+    case addTodo(String)
+    case toggleTodo(Int)
+    case setFilter(TodoFilter)
+    case setLoading(Bool)
+}
+
+enum TodoFilter { case all, active, completed }
+
+struct Todo: Equatable {
+    let id: Int
+    let title: String
+    var isDone: Bool = false
+}
+
+// Reducer
+func todoReducer(state: AppState, action: Action) -> AppState {
+    var newState = state
+    guard let action = action as? TodoAction else { return state }
+
+    switch action {
+    case .addTodo(let title):
+        let id = (state.todos.map(\.id).max() ?? 0) + 1
+        newState.todos.append(Todo(id: id, title: title))
+    case .toggleTodo(let id):
+        if let idx = newState.todos.firstIndex(where: { $0.id == id }) {
+            newState.todos[idx].isDone.toggle()
+        }
+    case .setFilter(let filter):
+        newState.filter = filter
+    case .setLoading(let loading):
+        newState.isLoading = loading
+    }
+    return newState
+}
+
+// Wire it up
+let store = Store(initialState: AppState(), reducer: todoReducer)
+
+let unsubscribe = store.subscribe { state in
+    print("Todos: \(state.todos.count), Filter: \(state.filter)")
+}
+
+store.dispatch(TodoAction.addTodo("Learn Swift"))
+store.dispatch(TodoAction.addTodo("Build an app"))
+store.dispatch(TodoAction.toggleTodo(1))
+store.dispatch(TodoAction.setFilter(.active))
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Luồng một chiều: hành động → bộ giảm tốc → trạng thái mới → người đăng ký. Dễ dàng lý luận và kiểm tra.
+- An toàn luồng: hàng đợi gửi tuần tự hóa các đột biến trạng thái.
+- Người đăng ký nhận được trạng thái đầy đủ — sử dụng bộ chọn hoặc kiểm tra`Equatable`để tránh hiển thị lại không cần thiết.
+- Sản xuất: sử dụng`The Composable Architecture`(TCA) của Point-Free để triển khai ở cấp độ sản xuất với các hiệu ứng, thử nghiệm và tích hợp SwiftUI.
 ---
 
 ## Bản tóm tắt

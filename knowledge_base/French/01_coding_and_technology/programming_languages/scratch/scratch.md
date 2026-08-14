@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Scratch"
-description : "Référence complète sur le langage de programmation Scratch couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Scratch"
+description: "Comprehensive reference for the Scratch programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [scratch, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "29 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [scratch, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Gratter
 Scratch est un langage de programmation visuel basé sur des blocs développé par le MIT Media Lab et lancé pour la première fois en 2007. Au lieu d'écrire du code textuel, les utilisateurs assemblent des blocs de couleur pour créer des programmes. Scratch est conçu spécifiquement pour les enfants âgés de 8 à 16 ans (bien que les apprenants de tous âges l'utilisent) pour enseigner les concepts fondamentaux de la programmation (boucles, conditions, variables, événements et fonctions) sans la barrière des erreurs de syntaxe.
 Scratch est le langage de programmation d'introduction le plus utilisé au monde, avec plus de 100 millions d'utilisateurs enregistrés et une disponibilité dans plus de 70 langues. Il fonctionne dans un navigateur Web et est gratuit.
@@ -48,7 +53,7 @@ Scratch est le langage de programmation d'introduction le plus utilisé au monde
 ## Les compromis
 | Limitation | Détails | Solution de contournement typique |
 |-----------|---------|-------------------|
-| **Pas un "vrai" langage de programmation** | Impossible de créer des logiciels, des API ou des systèmes de production | Transition vers Python, JavaScript ou des langages textuels |
+| **Pas un "vrai" langage de programmation** | Impossible de créer des logiciels, des API ou des systèmes de production | Transition vers Python, JavaScript ou les langages textuels |
 | **Capacités limitées** | Pas d'E/S de fichiers, de mise en réseau ou de structures de données avancées | Utilisation pour l'apprentissage ; passer aux langages de texte pour de vrais projets |
 | **Performances** | Interprété, lent pour les projets complexes | Non conçu pour les travaux critiques en termes de performances |
 | **Perception de l'âge** | Souvent considéré comme « réservé aux enfants » | Scratch est un outil d'apprentissage, pas un langage professionnel |
@@ -255,7 +260,7 @@ scratch-project/
 └── README.md
 ```
 
-### Système de clonage (création d'objet)
+### Système de clonage (création d'objets)
 ```
 // Creating clones (like creating object instances)
 When green flag clicked:
@@ -671,6 +676,120 @@ Après avoir appris Scratch, les prochaines étapes typiques incluent :
 | Prototypage visuel d'idées de jeux | Itération rapide | — |
 | Développement professionnel | Pas conçu pour ça | Python, JavaScript, n'importe quel langage de texte |
 | Formation CS de niveau universitaire | Trop simple | Python, Java, C |
+---
+
+## Questions et réponses synthétiques
+**Q1 : Scratch est-il vraiment un langage de programmation ?**
+R1 : Oui, Scratch est un véritable langage de programmation, mais il est visuel plutôt que textuel. Il prend en charge tous les concepts fondamentaux de programmation : variables, boucles, conditions, fonctions (blocs personnalisés), listes et programmation événementielle. La différence est que vous faites glisser et déposez des blocs au lieu de taper du code. Cela élimine les erreurs de syntaxe et rend la programmation accessible aux jeunes apprenants.
+**Q2 : Comment créer des fonctions personnalisées (blocs personnalisés) dans Scratch ?**
+A2 : Allez dans la catégorie « Mes blocs » et cliquez sur « Créer un bloc ». Donnez-lui un nom, ajoutez des paramètres si nécessaire, puis définissez son comportement en ajoutant des blocs en dessous. Les blocs personnalisés peuvent accepter des entrées (nombres, chaînes, booléens) et appeler d'autres blocs personnalisés. Cela permet une programmation modulaire et une réutilisation du code.
+**Q3 : Quelle est la meilleure façon de gérer une logique de jeu complexe dans Scratch ?**
+A3 : utilisez des blocs personnalisés pour organiser la logique, diffusez des messages pour la coordination des événements entre les sprites et utilisez des listes pour stocker l'état du jeu (scores, niveaux, inventaire). Pour l’IA complexe, utilisez des machines à états finis avec des variables suivant l’état actuel. Clonez des sprites pour plusieurs ennemis et utilisez "quand je démarre en tant que clone" pour donner à chaque comportement indépendant.
+**Q4 : Comment puis-je partager des données entre sprites dans Scratch ?**
+A4 : Utilisez des variables globales (créées sans "pour ce sprite uniquement") pour les données partagées comme le score ou l'état du jeu. Utilisez des messages diffusés pour déclencher des événements sur les sprites. Pour une communication plus complexe, utilisez des listes comme structures de données partagées. Chaque sprite peut lire et modifier des variables globales et des listes, permettant la coordination.
+**Q5 : Quelles sont les techniques avancées de Scratch ?**
+A5 : Utilisez des blocs de stylos pour dessiner et créer des effets visuels. Implémentez le raycasting pour les graphiques de type 3D. Utilisez des variables cloud pour les jeux multijoueurs (nécessite le statut Scratcher). Créez une génération procédurale avec des nombres et des listes aléatoires. Utilisez des blocs personnalisés avec des paramètres pour des algorithmes réutilisables. Expérimentez la détection vidéo et la manipulation du son pour des projets interactifs.
+---
+
+## Chaîne de pensée
+### Problème 1 : Créer un jeu de plateforme
+**Étape 1 : Comprendre le problème**
+Nous devons créer un jeu de plateforme dans lequel un personnage peut se déplacer de gauche à droite, sauter, éviter les obstacles et collecter des objets.
+**Étape 2 : Identifiez l'approche**
+- Utiliser la simulation gravitationnelle avec une variable "en baisse"
+- Détecter le sol/collision en utilisant la couleur ou le toucher des sprites
+- Stocker les données de niveau dans des listes
+- Utilisez des blocs personnalisés pour la logique de saut et de mouvement
+**Étape 3 : Mettre en œuvre la solution**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**Étape 4 : Vérifier et optimiser**
+Testez le saut sur différentes plateformes. Ajustez la gravité et la hauteur de saut pour une bonne sensation de jeu. Ajoutez des animations pour courir et sauter. Implémentez des points de contrôle à l’aide de messages diffusés.
+---
+
+### Problème 2 : Créer un jeu de quiz avec suivi des scores
+**Étape 1 : Comprendre le problème**
+Créez un jeu de quiz qui pose des questions, vérifie les réponses et suit le score du joueur.
+**Étape 2 : Identifiez l'approche**
+- Stocker les questions et réponses dans des listes parallèles
+- Utilisez un compteur de questions pour suivre les progrès
+- Utilisez des blocs "demander et attendre" pour la saisie
+- Comparez les réponses et mettez à jour le score
+**Étape 3 : Mettre en œuvre la solution**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**Étape 4 : Vérifier et optimiser**
+Testez avec diverses réponses, y compris des cas extrêmes. Ajoutez des commentaires pour les mauvaises réponses. Implémentez une option de nouvelle tentative. Ajoutez des effets sonores et un retour visuel pour les réponses correctes/mauvaises.
+---
+
+### Problème 3 : Dessiner des arbres fractaux avec le stylo
+**Étape 1 : Comprendre le problème**
+Créez un arbre fractal récursif à l'aide de l'extension du stylet.
+**Étape 2 : Identifiez l'approche**
+- Utiliser la récursivité pour dessiner des branches
+- Chaque branche se divise en deux branches plus petites
+- Utilisez des angles aléatoires pour une variation naturelle
+- Suivre la longueur des branches et diminuer à chaque niveau de récursion
+**Étape 3 : Mettre en œuvre la solution**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**Étape 4 : Vérifier et optimiser**
+Ajustez le seuil de longueur des branches et les plages d’angle pour les arbres esthétiques. Ajoutez des feuilles aux extrémités des branches en utilisant des changements de couleur. Implémentez différents styles d’arborescence. Enregistrez les dessins sous forme d'images.
 ---
 
 ## Résumé

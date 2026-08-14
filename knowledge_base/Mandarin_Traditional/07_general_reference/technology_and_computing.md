@@ -41,7 +41,7 @@ contribution:
 
 # 技術與計算
 計算無所不在——在你的手機、你的汽車、你的冰箱、你的醫療設備以及運行現代社會的基礎設施中。您無需成為程式設計師即可從了解其工作原理中受益。該文件涵蓋了基礎知識：什麼是電腦、互聯網如何運作、軟體如何建構以及塑造數位世界的概念。
-> **想要深入了解嗎？ ** 該文件是一個廣泛的概述。任何主題的詳細介紹，請參閱[`01_coding_and_technology/`](../01_coding_and_technology/)中的專用檔案 — 包括[web development](../01_coding_and_technology/web_development.md)、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)和[security](../01_coding_and_technology/security_best_practices.md)。
+> **想要深入了解嗎？ ** 該文件是一個廣泛的概述。任何主題的詳細介紹，請參閱[`01_coding_and_technology/`](../01_coding_and_technology/)中的專用檔案 — 包括、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)和。
 ---
 
 ## 什麼是計算機？
@@ -151,7 +151,7 @@ Linux 值得特別一提：它為大部分互聯網、每台 500 強超級電腦
 ---
 
 ## 網路安全－保護數位系統
-網路安全是保護電腦、網路和資料免受攻擊的實踐。這很重要，因為一切都是相互關聯的，而違規的成本是巨大的。涵蓋 OWASP Top 10、安全開發生命週期和機密管理的完整指南，請參閱[security best practices](../01_coding_and_technology/security_best_practices.md)。
+網路安全是保護電腦、網路和資料免受攻擊的實踐。這很重要，因為一切都是相互關聯的，而違規的成本是巨大的。涵蓋 OWASP Top 10、安全開發生命週期和機密管理的完整指南，請參閱。
 ### 常見威脅
 |威脅|它是什麼 |預防|
 |--------|------------|------------|

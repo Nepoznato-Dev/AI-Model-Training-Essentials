@@ -7,6 +7,7 @@ Communication and presentation abilities for technical professionals.
 - **One-on-One Communication** - Effective individual conversations
 - **Public Speaking** - Presenting to groups and audiences
 - **Technical Presentation** - Communicating technical topics clearly
+- **Technical Writing** - Communicating complex technical information through structured documentation
 
 ## Why Speaking Skills Matter
 

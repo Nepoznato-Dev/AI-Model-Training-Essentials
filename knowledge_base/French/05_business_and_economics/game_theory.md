@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Théorie des jeux et pensée stratégique"
-description : "Équilibre de Nash, dilemme du prisonnier, conception des mécanismes, enchères"
-catégorie : "Commerce et économie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Game Theory and Strategic Thinking"
+description: "Nash equilibrium, prisoner's dilemma, mechanism design, auctions"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances commerciales et économiques"
-next_review : "2027-08-05"
-#Classement
-tags : [jeu, théorie, commerce et économie]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "7 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [game, theory, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Théorie des jeux et réflexion stratégique
 La théorie des jeux est l'étude mathématique des interactions stratégiques, c'est-à-dire des situations dans lesquelles votre résultat dépend non seulement de ce que vous faites, mais aussi de ce que font les autres. Cela s’applique partout : concurrence commerciale, relations internationales, enchères, négociations, biologie évolutive et décisions quotidiennes comme le choix d’un itinéraire dans la circulation. L'idée centrale est que les acteurs rationnels dans des situations stratégiques ne se contentent pas d'optimiser leur propre stratégie : ils anticipent ce que les autres feront, et d'autres font de même.

@@ -505,7 +505,7 @@ Links to related wiki pages and external resources.
 
 ## 🌍 Translation Contributions
 
-We support 20 languages and welcome translations!
+We support 23 languages and welcome translations!
 
 ### How to Translate
 
@@ -533,7 +533,7 @@ knowledge_base/
 ├── Japanese/
 ├── Korean/
 ├── Mandarin_Simplified/
-├── ... (20 languages total)
+├── ... (23 languages total)
 └── Vietnamese/
 ```
 

@@ -1,38 +1,42 @@
 ---
-# मेटाडेटा
-शीर्षक: "एपीआई डिज़ाइन और एकीकरण विफलताएँ"
-विवरण: "एपीआई एंटी-पैटर्न, ब्रेकिंग परिवर्तन, वर्जनिंग विफलताएं, कैस्केडिंग विफलताएं"
-श्रेणी: "असफलताओं से सबक"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-review_by: "विफलताओं से सबक नॉलेज बेस टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [एपीआई, डिज़ाइन, एकीकरण, विफलताएं, विफलताओं से सबक]
-कठिनाई_स्तर: "उन्नत"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "6 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "API Design and Integration Failures"
+description: "API anti-patterns, breaking changes, versioning failures, cascading failures"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [api, design, integration, failures, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # एपीआई डिज़ाइन और एकीकरण विफलताएँ
 एपीआई (एप्लिकेशन प्रोग्रामिंग इंटरफेस) आधुनिक सॉफ्टवेयर के संयोजी ऊतक हैं - वे सेवाओं को संचार करने देते हैं, तीसरे पक्षों को एकीकृत करने देते हैं और टीमों को स्वतंत्र रूप से काम करने देते हैं। जब एपीआई डिज़ाइन गलत हो जाता है, तो परिणाम उस पर निर्भर हर सिस्टम पर असर डालते हैं: टूटी हुई एकीकरण, सुरक्षा कमजोरियां, डेवलपर निराशा, और महंगा पुनर्लेखन। एकीकरण विफलताएँ - जहाँ सिस्टम विश्वसनीय रूप से संचार नहीं कर सकते - उत्पादन घटनाओं के सबसे आम स्रोतों में से हैं।

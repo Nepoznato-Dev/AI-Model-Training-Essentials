@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "PHP"
-الوصف: "مرجع شامل للغة برمجة PHP يغطي نظرة عامة، والمقايضات، وأساسيات بناء الجملة، والنظام البيئي، ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "PHP"
+description: "Comprehensive reference for the PHP programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [php، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "34 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [php, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # PHP
 PHP (المعالج المسبق للنص التشعبي) هي لغة برمجة نصية من جانب الخادم أنشأها راسموس ليردورف في عام 1994 وتم إصدارها لأول مرة في عام 1995. تم تصميم PHP في الأصل لإنشاء صفحات ويب ديناميكية، وقد تطورت إلى لغة كاملة الميزات للأغراض العامة. إنه يشغل ما يقرب من 75% من جميع مواقع الويب ذات لغة الخادم المعروفة، بما في ذلك WordPress وFacebook (في الأصل) وWikipedia وSlack وملايين المواقع الأخرى.
 تعد PHP الحديثة (8.x) لغة مختلفة تمامًا عن PHP في أوائل العقد الأول من القرن الحادي والعشرين. أصبح لديه الآن خصائص مكتوبة، وتعبيرات مطابقة، وتعدادات، وألياف، وفئات للقراءة فقط، ونظام كتابة قوي. على الرغم من سمعتها بين المطورين (غالبًا ما يتم انتقادها بسبب التناقضات)، إلا أن لغة PHP عملية ومنتشرة على نطاق واسع وتستمر في التحسن.
@@ -44,15 +49,15 @@ PHP (المعالج المسبق للنص التشعبي) هي لغة برمجة
 - **عائق الدخول منخفض**: يتم النشر عن طريق تحميل الملفات إلى أي استضافة مشتركة. لا يوجد تجميع ولا خطوة بناء.
 - **النظام البيئي الناضج**: Composer (مدير الحزم)، Laravel، Symfony — أدوات ناضجة تم اختبارها في المعركة.
 - **عملي**: احصل على موقع ويب ديناميكي يعمل في دقائق مع الحد الأدنى من الإعداد.
-- **التحسين المستمر**: جلب PHP 8.x تحسينات كبيرة في جودة الحياة.
+- **التحسين المستمر**: جلب PHP 8.x تحسينات كبيرة في نوعية الحياة.
 - **سوق العمل الحر**: طلب كبير على مطوري WordPress وLaravel والتجارة الإلكترونية (WooCommerce وMagento).
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|
-| **تسمية غير متناسقة** | `strpos`مقابل `str_replace`،`array_key_exists`مقابل`in_array`- لا توجد اتفاقية متسقة | تعلم التناقضات. استخدام الإكمال التلقائي IDE |
+| **تسمية غير متناسقة** | `strpos`vs `str_replace`،`array_key_exists`vs`in_array`- لا توجد اتفاقية متسقة | تعلم التناقضات. استخدام الإكمال التلقائي IDE |
 | ** الأمتعة التاريخية ** | الميزات والأنماط القديمة من PHP 5 والإصدارات الأقدم | استخدم لغة PHP الحديثة (8.2+)؛ اتبع معايير PSR |
 | **الأداء** | أبطأ من Go أو Rust أو Java للمهام غير المتعلقة بالويب | استخدم OPcache؛ خذ بعين الاعتبار استخدام Swoole كخيار غير متزامن؛ استخدم PHP-FPM |
-| ** ليست مثالية لغير الويب ** | واجهة سطر الأوامر (CLI)، وسطح المكتب، والجوال، وعلوم البيانات - ليست نقاط قوة PHP | استخدم Python أو Go أو لغات أخرى للعمل خارج الويب |
+| ** ليست مثالية لغير الويب ** | واجهة سطر الأوامر (CLI) وسطح المكتب والجوال وعلوم البيانات - ليست نقاط قوة PHP | استخدم Python أو Go أو لغات أخرى للعمل خارج الويب |
 | **السمعة الأمنية** | يحتوي كود PHP القديم على العديد من المشكلات الأمنية | استخدام الأطر الحديثة؛ اتبع أفضل الممارسات الأمنية |
 ---
 
@@ -823,6 +828,332 @@ CMD ["php-fpm"]
 | تطبيقات في الوقت الحقيقي | ليست قوة PHP | Node.js، اذهب |
 | علم البيانات / تعلم الآلة | ليس النظام البيئي | بايثون، ر |
 | تطبيقات سطح المكتب/الجوال | غير مناسب | استخدم اللغات الأصلية |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين`==`و`===` في لغة PHP؟
+**A:**`==`عبارة عن مقارنة فضفاضة - فهي تنفذ نوع الإكراه قبل المقارنة (`"0" == false`هو`true`). `===`عبارة عن مقارنة صارمة — فهي تتحقق من القيمة والنوع (`"0" === false`هو`false`). استخدم دائمًا`===`إلا إذا كنت بحاجة إلى نوع الإكراه على وجه التحديد. يعد هذا أحد مصادر الأخطاء الأكثر شيوعًا في PHP.
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### السؤال الثاني: كيف تعمل مساحات أسماء PHP والتحميل التلقائي؟
+**أ:** تمنع مساحات الأسماء تضارب أسماء الفئات. يقوم التحميل التلقائي لـ PSR-4 بتعيين بنية مساحة الاسم إلى بنية الدليل - يقوم`App\Controllers\UserController`بتعيين`src/Controllers/UserController.php`. يتولى الملحن التحميل التلقائي عبر`composer.json`. استخدم دائمًا مساحات الأسماء وPSR-4 في لغة PHP الحديثة.
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### س3: ما هي سمات PHP 8، وكيف ترتبط بأطر العمل؟
+**أ:** السمات (PHP 8) عبارة عن تعليقات توضيحية لبيانات التعريف المنظمة للفئات والأساليب والخصائص والمعلمات. إنها المكافئ PHP لتعليقات Java التوضيحية أو سمات C#. تستخدمها أطر عمل مثل Laravel وSymfony على نطاق واسع للتوجيه والتحقق من الصحة وحقن التبعية.
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### السؤال الرابع: كيف أتعامل مع الأخطاء بشكل صحيح في لغة PHP الحديثة؟
+**أ:** PHP بها أخطاء (E_WARNING، E_NOTICE) واستثناءات. تستخدم لغة PHP الحديثة الاستثناءات حصريًا. استخدم محاولة/التقاط حالات الفشل المتوقعة، وفئات الاستثناءات المخصصة لأخطاء المجال، و`set_error_handler` لتحويل الأخطاء إلى استثناءات. PHP 7+`Throwable`هي الواجهة الأساسية لكل من الأخطاء والاستثناءات.
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### س5: ما هي ألياف PHP، وما علاقتها بالغير المتزامن؟
+**ج:** الألياف (PHP 8.1) عبارة عن خيوط تعاونية خفيفة الوزن — يمكنها تعليق التنفيذ واستئنافه. إنها الأساس لـ PHP غير المتزامن ولكنها ذات مستوى منخفض. تستخدم أطر العمل مثل Amp وReactPHP الألياف داخليًا. بالنسبة لمعظم التطبيقات، استخدم إطارًا غير متزامن بدلاً من الألياف الخام.
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة 1: بناء خط أنابيب للبرمجيات الوسيطة
+**بيان المشكلة:** تنفيذ مسار البرامج الوسيطة لإطار عمل ويب PHP حيث يمكن لكل برنامج وسيط معالجة الطلب قبل وبعد البرنامج الوسيط التالي في السلسلة.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) واجهة `Middleware`، (2) خط أنابيب يربط البرامج الوسيطة، (3) يتلقى كل برنامج وسيط طلبًا ورد اتصال `$next`، (4) يمكن للبرامج الوسيطة تعديل كل من الطلب (قبل) والاستجابة (بعد). هذا هو النموذج البصلي الذي تستخدمه Laravel وPSR-15 والأطر المشابهة.
+**الخطوة الثانية — تحديد النهج:**
+- حدد`MiddlewareInterface`باستخدام`process(Request, RequestHandler): Response`.
+- استخدم تقليل المصفوفة لتكوين البرامج الوسيطة في معالج واحد.
+- يقوم كل برنامج وسيط بتغليف البرنامج التالي، مما يؤدي إلى إنشاء استدعاءات دالة متداخلة.
+**الخطوة 3 — تنفيذ الحل:**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- مسائل الترتيب: أول الأنابيب = الأبعد (يتم تنفيذه أولاً عند الطلب، وآخر عند الاستجابة).
+- يمكن لكل برنامج وسيط أن يحدث ماس كهربائي عن طريق إرجاع استجابة دون استدعاء`$next`.
+- الإنتاج: استخدم PSR-15`MiddlewareInterface`لقابلية التشغيل التفاعلي مع أي إطار عمل PSR-15.
+### المشكلة 2: تنفيذ مستودع باستخدام Query Builder
+**بيان المشكلة:** قم بإنشاء منشئ استعلام سلس يقوم بإنشاء SQL بأمان باستخدام استعلامات ذات معلمات، ويدعم التسلسل، ويتكامل مع نمط المستودع.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) فئة`QueryBuilder`ذات أساليب قابلة للتسلسل (`select`,`where`,`orderBy`,`limit`)، (2) استعلامات ذات معلمات لمنع حقن SQL، (3)`Repository`يستخدم منشئ الاستعلام للوصول إلى البيانات.
+**الخطوة الثانية — تحديد النهج:**
+- يقوم المنشئ بتجميع أجزاء ومعلمات SQL.
+- يقوم`toSql()`بإنشاء الاستعلام النهائي باستخدام العناصر النائبة.
+- تقوم`getParameters()`بإرجاع القيم المرتبطة.
+- يقوم المستودع بتغليف المنشئ بطرق خاصة بالمجال.
+**الخطوة 3 — تنفيذ الحل:**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- منع حقن SQL: تمر جميع القيم عبر استعلامات ذات معلمات (العناصر النائبة `?`).
+- واجهة برمجة التطبيقات القابلة للتسلسل: تقوم كل طريقة بإرجاع`$this`للتكوين بطلاقة.
+- الإنتاج: استخدم`illuminate/database`(منشئ الاستعلامات Laravel) أو`doctrine/dbal`للحصول على حل شامل ومختبر.
 ---
 
 ## ملخص

@@ -53,9 +53,9 @@ graph TD
 
 | Step | Topic | Guide | Project | Time |
 |------|-------|-------|---------|------|
-| 1 | Python Basics | [Prerequisites](../prerequisites/) | Hello World | 1 week |
+| 1 | Python Basics | [Prerequisites](./prerequisites/) | Hello World | 1 week |
 | 2 | ML Fundamentals | [Infrastructure Layers](./Infrastructure_Layers/) | Simple Classifier | 2 weeks |
-| 3 | **RAG Systems** | [RAG Guide](./RAG/) | [RAG Project](../projects/rag_simple/) | 2 weeks |
+| 3 | **RAG Systems** | [RAG Guide](./RAG/) | [RAG Project](./projects/rag_simple/) | 2 weeks |
 | 4 | **Transformers** | [Transformers Guide](./Transformers/) | Text Classification | 3 weeks |
 | 5 | LLM Fine-tuning | [Transformers Guide](./Transformers/) Chapter 4 | Custom Chatbot | 3 weeks |
 | 6 | Production NLP | [Orchestration](./Orchestration_Patterns/) | Deployed API | 2 weeks |
@@ -76,11 +76,11 @@ graph TD
 
 | Step | Topic | Guide | Project | Time |
 |------|-------|-------|---------|------|
-| 1 | Python & NumPy | [Prerequisites](../prerequisites/) | Image Manipulation | 1 week |
+| 1 | Python & NumPy | [Prerequisites](./prerequisites/) | Image Manipulation | 1 week |
 | 2 | Deep Learning Basics | [Infrastructure Layers](./Infrastructure_Layers/) | Neural Network | 2 weeks |
-| 3 | **CNNs** | [CNNs Guide](./CNNs/) | [CNN Project](../projects/cnn_basics/) | 3 weeks |
+| 3 | **CNNs** | [CNNs Guide](./CNNs/) | [CNN Project](./projects/cnn_basics/) | 3 weeks |
 | 4 | **GANs** | [GANs Guide](./GANs/) | Image Generation | 3 weeks |
-| 5 | Object Detection | [Object Detection Guide](./Object_Detection/) | YOLO Implementation | 3 weeks |
+| 5 | Object Detection | [CNNs Guide](./CNNs/) Chapter 4 | YOLO Implementation | 3 weeks |
 | 6 | Vision Deployment | [Orchestration](./Orchestration_Patterns/) | Mobile Vision App | 2 weeks |
 
 **Total Time:** ~14 weeks (3.5 months)
@@ -99,7 +99,7 @@ graph TD
 
 | Step | Topic | Guide | Project | Time |
 |------|-------|-------|---------|------|
-| 1 | Python Programming | [Prerequisites](../prerequisites/) | Basic Scripts | 1 week |
+| 1 | Python Programming | [Prerequisites](./prerequisites/) | Basic Scripts | 1 week |
 | 2 | **RAG Systems** | [RAG Guide](./RAG/) | Knowledge Bot | 2 weeks |
 | 3 | **Agentic Systems** | [Agentic Systems Guide](./Agentic_Systems/) | Simple Agent | 3 weeks |
 | 4 | **Orchestration** | [Orchestration Guide](./Orchestration_Patterns/) | Multi-Agent System | 3 weeks |
@@ -122,11 +122,11 @@ graph TD
 
 | Step | Topic | Guide | Project | Time |
 |------|-------|-------|---------|------|
-| 1 | Statistics & Python | [Prerequisites](../prerequisites/) | Data Analysis | 2 weeks |
+| 1 | Statistics & Python | [Prerequisites](./prerequisites/) | Data Analysis | 2 weeks |
 | 2 | Classical ML | [Infrastructure Layers](./Infrastructure_Layers/) | Prediction Model | 3 weeks |
 | 3 | Deep Learning | [CNNs Guide](./CNNs/) | Image Classifier | 3 weeks |
 | 4 | **Transformers** | [Transformers Guide](./Transformers/) | Text Analysis | 3 weeks |
-| 5 | MLOps | [MLOps Guide](./MLOps/) | Model Pipeline | 3 weeks |
+| 5 | MLOps | [Infrastructure Layers](./Infrastructure_Layers/) | Model Pipeline | 3 weeks |
 | 6 | Advanced Topics | Choose specialization | Capstone Project | 4 weeks |
 
 **Total Time:** ~18 weeks (4.5 months)
@@ -235,7 +235,7 @@ graph LR
 
 ## 🚀 Getting Started
 
-1. **Assess your current level** using [Prerequisites Quiz](../prerequisites/)
+1. **Assess your current level** using [Prerequisites Quiz](./prerequisites/)
 2. **Choose your path** based on career goals
 3. **Set realistic timeline** (fast track vs self-paced)
 4. **Start with first module** and commit to consistency
@@ -245,7 +245,7 @@ graph LR
 
 ## 📞 Need Help?
 
-- Stuck on a concept? Check [Common Errors](../errors/)
+- Stuck on a concept? Check [Common Errors](./errors/)
 - Want to discuss career paths? Join our community
 - Need mentorship? Look for study groups
 

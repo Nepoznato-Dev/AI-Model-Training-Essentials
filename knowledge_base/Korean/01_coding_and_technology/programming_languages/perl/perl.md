@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 펄
 Perl은 실용적인 텍스트 처리 도구로 1987년 Larry Wall에 의해 만들어졌습니다. 이는 초기 웹 개발(CGI 스크립트), 시스템 관리, 생물정보학 및 네트워크 프로그래밍의 중추가 되었습니다. Perl의 철학은 "TMTOWTDI(There's More Than One Way To Do It)"입니다. 이 언어는 모든 문제에 대해 다양한 접근 방식을 제공하여 균일성보다 표현성을 선호합니다.
-현대 프로그래밍에 대한 Perl의 영향은 엄청나지만 종종 눈에 띄지 않습니다. Perl의 패턴 일치에 영향을 받은 정규식은 이제 Python, JavaScript, Java 및 대부분의 기타 언어에서 표준이 되었습니다. CPAN(Comprehensive Perl Archive Network)은 최초의 소프트웨어 패키지 저장소 중 하나였으며 Python의 PyPI 및 Node의 npm과 같은 이후 시스템에 영감을 주었습니다.
+현대 프로그래밍에 대한 Perl의 영향은 엄청나지만 종종 눈에 띄지 않습니다. Perl의 패턴 일치에 영향을 받은 정규 표현식은 이제 Python, JavaScript, Java 및 대부분의 기타 언어에서 표준이 되었습니다. CPAN(Comprehensive Perl Archive Network)은 최초의 소프트웨어 패키지 저장소 중 하나였으며 Python의 PyPI 및 Node의 npm과 같은 이후 시스템에 영감을 주었습니다.
 Perl의 인기는 2000년대 초반 정점에 도달한 이후 감소했지만 레거시 시스템, 텍스트 처리 파이프라인 및 시스템 관리에서는 여전히 널리 사용되고 있습니다. Perl 6(현재 **Raku**라고 함)은 Perl의 많은 개념을 재구성한 별도의 언어입니다.
 ---
 
@@ -182,9 +183,9 @@ if ($@) {
 | 정규식 | Python, JavaScript, Java, Ruby, C#, PHP |
 | 패키지 저장소(CPAN) | PyPI, npm, RubyGems, crates.io |
 | Heredocs | Python, Ruby, PHP, 쉘, JavaScript |
-| `$_`기본 변수 | Ruby의 `$_`, PowerShell의`$_`|
-|  __보호_3__ / __보호_4__ / __보호_5__ | 파이썬, 루비, 자바스크립트, 러스트 |
-| `use strict`/ 보푸라기 | TypeScript, Python의 유형 힌트 |
+| `$_`기본 변수 | Ruby의`$_`, PowerShell의`$_`|
+| `map`/`grep`/`reduce`| 파이썬, 루비, 자바스크립트, 러스트 |
+| `use strict`/린팅 | TypeScript, Python의 유형 힌트 |
 ---
 
 ## 고급 구문 및 패턴
@@ -575,15 +576,174 @@ CMD ["perl", "bin/myapp.pl"]
 | 시나리오 | 왜 펄인가 | 더 나은 대안 |
 |----------|---------|------|
 | 텍스트 처리/파싱 | 동급 최고의 정규식 엔진 | 구조화된 데이터를 위한 Python |
-| 로그 파일 분석 | 빠른 단일 라이너, 검증된 도구 |  간단한 경우에는`awk`/ `sed`, 복잡한 Python |
+| 로그 파일 분석 | 빠른 단일 라이너, 검증된 도구 |  간단한 경우에는`awk`/ `sed`; 복잡한 Python |
 | 시스템 관리 | 역사적으로 지배적 | 간단한 작업을 위한 Bash/PowerShell; 복잡한 Python |
 | 레거시 시스템 유지 관리 | 수백만 라인의 Perl이 생산 중 | — |
 | 생물정보학 | 강력한 역사적 존재감(BioPerl) | 파이썬(바이오파이썬), R |
-| 빠른 데이터 변환 | 원 라이너는 타의 추종을 불허합니다 |  구조화된 형식의 경우`jq`,`awk`|
+| 빠른 데이터 변환 | 원 라이너는 타의 추종을 불허합니다 |  구조화된 형식의 경우 `jq`,`awk`|
 | 웹 개발 | CGI 시대는 끝났다 | Python, Node.js, Go, PHP |
 | 새로운 대규모 프로젝트 | 커뮤니티가 발전했습니다 | 이동, 러스트, 파이썬 |
 | 데이터 과학 / ML | 생태계가 아니다 | 파이썬, R |
 ---
 
+## 종합 Q&A
+### Q1:`my`,`our`,`local`의 차이점은 무엇인가요?
+**답:** 이 키워드는 변수 범위 지정을 제어합니다.
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2: Perl에서 텍스트 파일을 효율적으로 처리하려면 어떻게 해야 합니까?
+**답:** Perl은 텍스트 처리에 탁월합니다. 다이아몬드 연산자와 정규식을 사용하세요.
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3: 참조 및 복잡한 데이터 구조를 어떻게 사용합니까?
+**답:** 참조는 중첩된 구조를 만드는 Perl의 방법입니다.
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4: 알아야 할 Perl의 특수 변수는 무엇입니까?
+**답:** Perl에는 많은 특수 변수가 있습니다. 가장 중요한 것:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5: 현대적이고 유지 관리가 가능한 Perl을 어떻게 작성합니까?
+**답:** 최신 Perl 모범 사례:
+- 항상`strict`및 `warnings`를 사용하세요. 
+- 모든 변수에 `my`를 사용하세요.
+- 어휘 파일 핸들 사용:`open my $fh, '<', $file`
+- CPAN의 모듈 사용(OOP의 경우 Moo/Moose, 오류의 경우 Try::Tiny)
+-`print`대신 `say`를 사용하세요(`feature 'say'` 사용).
+- `perltidy`로 포맷
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 로그 파일 분석
+**1단계: 문제 이해**
+Apache 액세스 로그를 구문 분석하고 IP 주소당 요청 수를 계산합니다.
+**2단계: 접근 방식 파악**
+정규식을 사용하여 IP 주소를 추출하고 해시를 사용하여 발생 횟수를 계산합니다.
+**3단계: 구현**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**4단계: 확장**
+날짜 필터링, 상태 코드 분석 및 CSV로 출력을 추가합니다.
+### 문제 2: Regex를 사용하여 배치 파일 이름 바꾸기
+**1단계: 문제 이해**
+패턴과 일치하는 파일 이름을 바꾸고 정규식으로 파일 이름을 변환합니다.
+**2단계: 접근 방식 파악**
+파일을 찾으려면`glob`또는 `opendir`를 사용하고, 이름을 변환하려면 정규식을 사용하세요.
+**3단계: 구현**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**4단계: 확인**
+먼저`--dry-run`플래그를 사용하여 실행합니다(인쇄만 하고 이동하지 마세요).
+### 문제 3: 간단한 웹 스크레이퍼 구축
+**1단계: 문제 이해**
+웹페이지를 가져오고 모든 링크를 추출합니다.
+**2단계: 접근 방식 파악**
+가져오기 및 정규식에는 `LWP::Simple`를 사용하고 구문 분석에는 `HTML::LinkExtor`를 사용하세요.
+**3단계: 구현**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**4단계: 확장**
+상대 URL을 처리하고, 도메인별로 필터링하고, 페이지 매김을 따릅니다.
+---
+
 ## 요약
-Perl의 황금 시대는 지나갔지만 그 영향력은 어디에나 있습니다. 정규식을 사용하는 모든 언어, CPAN을 모델로 한 모든 패키지 관리자,`map`/`grep`/ `reduce`를 사용하는 모든 시스템에는 Perl의 DNA가 포함되어 있습니다. 새로운 프로젝트의 경우 대부분의 개발자는 Python 또는 Go를 사용합니다. 그러나 Perl은 텍스트 처리, 빠른 자동화 및 전 세계적으로 중요한 인프라를 실행하는 방대한 양의 Perl 코드 유지 관리를 위한 강력한 도구로 남아 있습니다. Perl을 이해한다는 것은 현대 프로그래밍이 어디서 왔는지 이해하는 것을 의미합니다. 이는 오늘날 우리가 사용하는 도구와 패턴을 형성했습니다.
+Perl의 황금 시대는 지나갔지만 그 영향력은 어디에나 있습니다. 정규식을 사용하는 모든 언어, CPAN을 모델로 한 모든 패키지 관리자,`map`/`grep`/ `reduce`를 사용하는 모든 시스템에는 Perl의 DNA가 포함되어 있습니다. 새로운 프로젝트의 경우 대부분의 개발자는 Python 또는 Go를 사용합니다. 그러나 Perl은 텍스트 처리, 빠른 자동화 및 전 세계적으로 중요한 인프라를 실행하는 방대한 양의 Perl 코드 유지 관리를 위한 강력한 도구로 남아 있습니다. Perl을 이해한다는 것은 현대 프로그래밍이 어디서 왔는지 이해하는 것을 의미하기도 합니다. 이는 오늘날 우리가 사용하는 도구와 패턴을 형성했습니다.

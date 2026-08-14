@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Рубин
-Ruby — это динамический интерпретируемый объектно-ориентированный язык программирования, созданный Юкихиро «Мац» Мацумото и впервые выпущенный в 1995 году в Японии. Ruby был разработан с упором на счастье программистов — его синтаксис элегантен и естественен, он читается почти как английский. Все в Ruby является объектом, включая примитивные типы, такие как целые и логические значения. Ruby наиболее известен благодаря веб-фреймворку Ruby on Rails, который произвел революцию в веб-разработке, популяризировав соглашение по настройке и быстрому прототипированию.
+Ruby — это динамический интерпретируемый объектно-ориентированный язык программирования, созданный Юкихиро «Мац» Мацумото и впервые выпущенный в 1995 году в Японии. Ruby был разработан с упором на счастье программистов — его синтаксис элегантен и естественен, он читается почти как английский. Все в Ruby является объектом, включая примитивные типы, такие как целые и логические значения. Ruby наиболее известен благодаря веб-фреймворку Ruby on Rails, который произвел революцию в веб-разработке, популяризировав соглашения по настройке и быстрому прототипированию.
 Помимо Rails, Ruby используется для создания сценариев, автоматизации, инструментов DevOps (Chef, Puppet) и в качестве языка общего назначения. Его выразительный синтаксис и мощные возможности метапрограммирования делают его написание удовольствием.
 ---
 
@@ -56,8 +57,8 @@ Ruby — это динамический интерпретируемый объ
 | **Производительность** | Медленнее, чем компилируемые языки; МРТ имеет GIL | Используйте JRuby для параллелизма; выгрузить расширения C |
 | **Снижение популярности** | Меньше новых внедрений по сравнению с Python, Go, Rust | Все еще широко используется; силен в веб-стартапах и консалтинге |
 | **Ввод** | Динамическая типизация может привести к ошибкам во время выполнения | Используйте Sorbet или RBS для дополнительной статической типизации |
-| **Использование памяти** | Больший объем памяти, чем у Go или Rust | Приемлемо для большинства веб-приложений |
-| **Рынок труда** | Меньше новых вакансий, чем Python или JavaScript | Сильный в определенных нишах (магазины Rails, консалтинг) |
+| **Использование памяти** | Больше памяти, чем у Go или Rust | Приемлемо для большинства веб-приложений |
+| **Рынок труда** | Меньше новых вакансий, чем Python или JavaScript | Сильные позиции в конкретных нишах (магазины Rails, консалтинг) |
 ---
 
 ## Основы синтаксиса
@@ -822,5 +823,323 @@ fly deploy
 | Мобильные приложения | Не подходит | Свифт, Котлин, Флаттер |
 ---
 
+## Синтетические вопросы и ответы
+### Q1: В чем разница между`proc`,`lambda`и`block`в Ruby?
+**A:** Все три являются замыканиями, но они различаются по поведению.`block`— это анонимный фрагмент кода, передаваемый методу с помощью`do...end`или `{}`.`proc`— это блок, сохраненный как объект — он не проверяет количество аргументов, и`return`завершает включающий метод.`lambda`похож на процедуру, но проверяет количество аргументов, а`return`завершает только лямбду. Используйте блоки для одноразовых обратных вызовов, процедуры для многократно используемых фрагментов и лямбда-выражения, когда вам нужно поведение, подобное методу.
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### Q2: Как работают Ruby gems и Bundler?
+**О:** Gems — это система пакетов Ruby — библиотеки многократного использования, распространяемые через RubyGems.org.`Gemfile`объявляет зависимости; `bundle install`разрешает версии и создает`Gemfile.lock`для воспроизводимости. `bundle exec`запускает команды в контексте драгоценного камня. Используйте`gem 'name', '~> 2.0'`для ограничений совместимости версий. Всегда фиксируйте`Gemfile.lock`для приложений, но не для библиотек.
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### Вопрос 3: Каковы типы символов Ruby и почему они важны?
+**A:** Символы (`:name`) представляют собой неизменяемые встроенные строки — каждый уникальный символ существует в памяти только один раз. Они идеально подходят для хэш-ключей, имен методов и идентификаторов. В Ruby также есть объекты `Symbol`, широко используемые в метапрограммировании (`send`, `define_method`). Используйте символы для фиксированных идентификаторов; используйте строки, когда вам нужно манипулировать содержимым.
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### Вопрос 4: Как работает метапрограммирование Ruby и когда мне следует его использовать?
+**A:** Ruby позволяет коду определять код во время выполнения:`define_method`создает методы динамически,`method_missing`перехватывает вызовы неопределенных методов,`send`вызывает частные методы, а `class_eval`/`instance_eval` оценивают код в контексте класса/экземпляра. Метапрограммирование — это мощный инструмент, но он усложняет понимание кода — используйте его для DSL и магии фреймворка, а не для повседневной логики.
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### Вопрос 5: Как лучше всего обрабатывать ошибки в Ruby?
+**О:** Ruby использует исключения для обработки ошибок. Определите собственные классы исключений, наследуемые от`StandardError`(а не от`Exception`— он перехватывает ошибки системного уровня). Используйте`begin/rescue/else/ensure`для структурированной обработки. Вызовите конкретные исключения, а не общие`RuntimeError`. Используйте`rescue`в качестве модификатора для простых однострочных строк.
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Создайте DSL для файлов конфигурации
+**Постановка задачи.** Создайте Ruby DSL, который позволит определять конфигурации сервера в читаемом декларативном синтаксисе. DSL должен поддерживать вложенные блоки, проверку и сериализацию в JSON.
+**Шаг 1. Поймите проблему:**
+Нам нужны: (1) чистый синтаксис DSL с использованием блоков и вызовов методов, (2) сбор данных с помощью`instance_eval`или явных методов, (3) проверка обязательных полей, (4) сериализация JSON. Метапрограммирование Ruby делает DSL естественными.
+**Шаг 2. Определите подход:**
+- Используйте`instance_eval`с классом строителя для захвата вызовов DSL.
+- Сохранение конфигурации в переменных экземпляра.
+- Проверьте обязательные поля перед сериализацией.
+- Используйте`to_h`и`JSON.generate`для вывода.
+**Шаг 3. Реализация решения:**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- DSL удобочитаем и декларативен — его могут понять непрограммисты.
+- Проверка выявляет отсутствующие обязательные поля во время создания.
+-`instance_eval`обеспечивает чистый синтаксис блоков, но ограничивает`self`— для более сложных DSL используйте`BasicObject`в качестве суперкласса построителя.
+- Производство: рассмотрите драгоценные камни`dry-configurable`или`configurate`для конфигураций DSL производственного уровня.
+### Проблема 2: реализация библиотеки мемоизации
+**Постановка задачи:** Создайте модуль запоминания, который можно будет добавить в любой класс для кэширования результатов метода. Поддержка TTL (срока жизни), ограничений размера кэша и пользовательских ключей кэша.
+**Шаг 1. Поймите проблему:**
+Нам нужны: (1) модуль, который добавляет метод класса `memoize`, (2) метод обертывает целевые методы логикой кэширования, (3) поддержку истечения срока TTL, (4) вытеснение LRU при заполнении кэша.`Module#prepend`и`define_method`Ruby идеально подходят для этого.
+**Шаг 2. Определите подход:**
+- Используйте`Module.new`с`define_method`для создания оболочки.
+— Храните кеш в хеше с отметками времени для TTL.
+- Используйте `prepend`, чтобы вставить слой кэширования перед исходным методом.
+- Поддержка настраиваемых параметров: `ttl`, `max_size`, `key`.
+**Шаг 3. Реализация решения:**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Потокобезопасность:`Mutex`защищает чтение/запись кэша; вычисления происходят вне блокировки.
+- TTL: просроченные записи лениво очищаются при доступе.
+- Вытеснение LRU: когда кэш превышает `max_size`, самая старая запись (по метке времени) удаляется.
+- Пользовательские ключи: лямбда-выражение`key`обеспечивает детальный контроль над идентификацией кэша.
+- Производство: используйте гем`memoist`для простых случаев или мемоизацию с поддержкой Redis для распределенного кэширования.
+---
+
 ## Краткое содержание
-Ruby — это язык, в котором приоритет отдается удовлетворению и выразительности разработчиков. Его синтаксис является одним из самых читаемых среди всех языков, а Ruby on Rails остается одним из самых продуктивных веб-фреймворков, когда-либо созданных. Хотя популярность Ruby снизилась по сравнению с Python и JavaScript, он остается мощным и приятным языком для веб-разработки, написания сценариев и автоматизации. Если вы цените элегантный код и быструю разработку, Ruby стоит изучить.
+Ruby — это язык, в котором приоритет отдается удобству и выразительности разработчиков. Его синтаксис является одним из наиболее читаемых среди всех языков, а Ruby on Rails остается одним из самых продуктивных веб-фреймворков, когда-либо созданных. Хотя популярность Ruby снизилась по сравнению с Python и JavaScript, он остается мощным и приятным языком для веб-разработки, написания сценариев и автоматизации. Если вы цените элегантный код и быструю разработку, стоит изучить Ruby.

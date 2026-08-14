@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Julia
 Julia, teknik ve bilimsel hesaplama için tasarlanmış üst düzey, yüksek performanslı bir programlama dilidir. İlk olarak 2012'de piyasaya sürülen (2018'de 1.0) Julia, bilim adamlarının Python/R'de prototip yapıp üretim performansı için C/C++/Fortran'da yeniden yazdığı "iki dil sorununu" çözmek için yaratıldı. Julia, Python kadar kolay ama C kadar hızlı olmayı hedefliyor.
 Julia, etkileşimli, dinamik bir hissi korurken C'ye yakın performans elde etmek için LLVM aracılığıyla tam zamanında (JIT) derlemeyi kullanıyor. Paralel hesaplama, dağıtılmış işleme ve çoklu gönderime sahip karmaşık tipte bir sistem için birinci sınıf desteğe sahiptir.
@@ -877,5 +878,190 @@ julia --project=. -e '
 | Genel uygulama geliştirme | Birincil kullanım durumu değil | Python, Git, Java |
 ---
 
+## Sentetik Soru-Cevap
+### S1: OOP dillerinde çoklu gönderimin tekli gönderimden farkı nedir?
+**C:** Tek gönderimde (Java, Python), yöntem ilk argümanın (nesne) türüne göre seçilir. Julia'da yöntem TÜM argüman türlerine göre seçilir:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+Bu, simetrik operasyonlara olanak tanır ve standart kalıpları ortadan kaldırır.
+### S2: Julia'da C benzeri performansa nasıl ulaşabilirim?
+**C:** Temel uygulamalar:
+- Tip-kararlı işlevler kullanın (tutarlı tipler döndürün)
+- Yapılarda soyut olanları değil, somut türleri kullanın
+- Global değişkenlerden kaçının (veya onları`const`yapın)
+- Sınır kontrolünü atlamak için`@inbounds`kullanın (güvenli olduğunda)
+- Dizileri büyütmek yerine önceden tahsis edin
+- Vektörleştirilebilir döngüler için`@simd`kullanın
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### S3: `Array`,`Tuple`ve`NamedTuple`arasındaki farklar nelerdir?
+**C:** Her biri farklı bir amaca hizmet eder:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### S4: Julia'daki hataları ve istisnaları nasıl ele alacağım?
+**C:**`try/catch`ve özel istisna türlerini kullanın:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### S5: Julia'nın paket ekosistemini etkili bir şekilde nasıl kullanırım?
+**C:** Yerleşik paket yöneticisini (Pkg) ve ortamları kullanın:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Sayısal İntegral Fonksiyonunun Uygulanması
+**1. Adım: Sorunu Anlayın**
+Simpson kuralını kullanarak bir fonksiyonun belirli integralini hesaplayın.
+**2. Adım: Yaklaşımı Belirleyin**
+Julia'nın çoklu gönderim ve üst düzey işlevlerini kullanın. Çağrılabilir herhangi bir işlevi kabul edin.
+**3. Adım: Uygulama**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**4. Adım: Optimize edin**
+`@inbounds` ekleyin ve performans için ek açıklamalar yazın.`@btime`ile kıyaslama.
+### Problem 2: Paralel Monte Carlo Simülasyonu Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Tüm CPU çekirdeklerinde paralelleştirilmiş Monte Carlo örneklemesini kullanarak pi'yi tahmin edin.
+**2. Adım: Yaklaşımı Belirleyin**
+Paylaşılan bellek paralelliği için`Threads.@threads`kullanın.
+**3. Adım: Uygulama**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**4. Adım: Doğrulayın**
+`Float64(\pi)` ile karşılaştırın. Daha iyi doğruluk için örnek sayısını artırın.
+### Sorun 3: Yayınlamayla Özel Dizi Türü Oluşturma
+**1. Adım: Sorunu Anlayın**
+Yalnızca çapraz öğeleri depolayan ancak standart dizi işlemlerini destekleyen bir`DiagonalMatrix`türü oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+`AbstractMatrix` alt yazın ve gerekli yöntemleri uygulayın.
+**3. Adım: Uygulama**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**4. Adım: Genişletin**
+`setindex!`, matris çarpma optimizasyonlarını ve`show`yöntemini ekleyin.
+---
+
 ## Özet
-Julia, bilimsel ve sayısal hesaplama için en iyi araç olmayı amaçlayan modern bir dildir. Python benzeri kolaylık ve C benzeri performansın birleşimi ilgi çekicidir. Çoklu dağıtım, kodu hem etkileyici hem de verimli kılan güçlü bir paradigmadır. Ekosistem hâlâ büyümeye devam ederken Julia araştırma, niceliksel finans ve yüksek performanslı bilgi işlem alanlarında giderek daha fazla kullanılıyor. Python'un çok yavaş ve C++'ın çok hantal olduğu sayısal çalışmalar için Julia mükemmel bir seçimdir.
+Julia, bilimsel ve sayısal hesaplama için en iyi araç olmayı amaçlayan modern bir dildir. Python benzeri kolaylık ve C benzeri performansın birleşimi ilgi çekicidir. Çoklu dağıtım, kodu hem etkileyici hem de verimli kılan güçlü bir paradigmadır. Ekosistemi hâlâ büyürken Julia araştırma, niceliksel finans ve yüksek performanslı bilgi işlem alanlarında giderek daha fazla kullanılıyor. Python'un çok yavaş ve C++'ın çok hantal olduğu sayısal çalışmalar için Julia mükemmel bir seçimdir.

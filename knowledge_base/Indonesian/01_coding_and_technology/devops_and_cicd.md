@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps dan CI/CD
 DevOps adalah kombinasi filosofi budaya, praktik, dan alat yang memungkinkan tim menghadirkan perangkat lunak dengan lebih cepat dan andal. Ini meruntuhkan tembok antara pengembang (yang ingin melakukan perubahan) dan operasi (yang menginginkan stabilitas). CI/CD — Integrasi Berkelanjutan dan Pengiriman Berkelanjutan — adalah tulang punggung otomatisasi yang memungkinkan hal ini.
 ---
@@ -55,7 +56,7 @@ DevOps adalah kombinasi filosofi budaya, praktik, dan alat yang memungkinkan tim
 | **Sumber** | Pengembang memasukkan kode ke Git | GitHub, GitLab, Bitbucket |
 | **Bangun** | Kompilasi kode, instal dependensi | Maven, Gradle, npm, pip |
 | **Tes** | Jalankan unit, integrasi, pemeriksaan lint | Bercanda, pytest, JUnit |
-| **Paket** | Bangun gambar atau artefak Docker | Docker, Paket Bangun |
+| **Paket** | Bangun image atau artefak Docker | Docker, Paket Bangun |
 | **Menerapkan (pementasan)** | Terapkan ke lingkungan pementasan | Kubernetes, ECS, VM |
 | **Tes (pementasan)** | Tes integrasi, tes asap | Selenium, Tukang Pos |
 | **Penerapan (produksi)** | Rilis ke produksi | Biru-hijau, kenari, bergulir |
@@ -105,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-Praktik utama: gunakan gambar dasar slim/alpine, jalankan sebagai non-root, manfaatkan cache lapisan, gunakan`.dockerignore`, pindai gambar untuk mencari kerentanan (`trivy`,`docker scan`), dan tetapkan batas sumber daya.
+Praktik utama: menggunakan gambar dasar slim/alpine, dijalankan sebagai non-root, memanfaatkan cache lapisan, menggunakan`.dockerignore`, memindai gambar untuk mencari kerentanan (`trivy`,`docker scan`), dan menetapkan batas sumber daya.
 ### Penulisan Docker
 Untuk menjalankan beberapa container secara bersamaan (aplikasi + database + cache):
 ```yaml
@@ -192,7 +193,7 @@ Praktik terbaik: gunakan modul agar dapat digunakan kembali, simpan status dari 
 
 ## Pemantauan dan Observabilitas
 ### Tiga Pilar
-| Pilar | Apa yang Dikatakannya kepada Anda | Alat |
+| Pilar | Apa yang Diberitahukannya kepada Anda | Alat |
 |--------|------------------|-------|
 | **Metrik** | Pengukuran numerik dari waktu ke waktu (CPU, tingkat permintaan, tingkat kesalahan) | Prometheus, CloudWatch, Datadog |
 | **Log** | Peristiwa terpisah dengan konteks (kesalahan, permintaan, perubahan status) | ELK Stack, Loki, CloudWatch Logs |
@@ -244,4 +245,4 @@ Ketika ada sesuatu yang rusak pada jam 3 pagi:
 5. **Perbaikan** — memutar kembali atau menambal ke depan.
 6. **Berkomunikasi** — memperbarui pemangku kepentingan dan pengguna (halaman status).
 7. **Post-mortem** — dalam waktu 24–48 jam, dokumentasikan akar penyebab dan item tindakan.
-Tujuannya bukan hanya untuk memperbaiki kejadian tersebut — tetapi untuk memastikan kejadian yang sama tidak terulang kembali.
+Tujuannya bukan hanya untuk menyelesaikan insiden tersebut tetapi untuk memastikan kejadian yang sama tidak terulang kembali.

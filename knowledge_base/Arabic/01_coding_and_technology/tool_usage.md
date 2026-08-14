@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "استخدام الأداة"
-الوصف: "أدوات التطوير والمرافق"
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Tool Usage"
+description: "Development tools and utilities"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [الأداة والاستخدام والترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "13 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [tool, usage, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "13 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #استخدام الأداة
 ## Git — التحكم في الإصدار
 Git هو نظام للتحكم في الإصدار الموزع. يمتلك كل مطور نسخة كاملة من سجل المستودع على أجهزته المحلية.
@@ -83,7 +88,7 @@ git rebase main
 ### سير عمل طلب السحب (PR).
 1. قم بإنشاء فرع ميزة من`main`.
 2. قم بإجراء الالتزامات على فرع الميزة.
-3. ادفع الفرع: __محمي_1__ .
+3. ادفع الفرع:`git push origin feature/new-thing`.
 4. افتح طلب سحب على GitHub / GitLab.
 5. معالجة تعليقات مراجعة التعليمات البرمجية مع الالتزامات الإضافية.
 6. دمج العلاقات العامة بعد الموافقة عليها.
@@ -121,7 +126,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` يسجل الإصدارات الدقيقة؛ إلزامها بالتحكم في المصدر.
+يسجل`package-lock.json`الإصدارات الدقيقة؛ إلزامها بالتحكم في المصدر.
 ### البضائع (الصدأ)
 ```bash
 cargo new my_project            # new binary project
@@ -224,29 +229,29 @@ top / htop                      # interactive process monitor
 ## المحررين و IDEs
 ### كود VS
 VS Code هو محرر أكواد برمجية خفيف الوزن ومتعدد المنصات مع نظام بيئي غني بالامتدادات.
-- افتح المجلد:`File > Open Folder`أو`code .`في الوحدة الطرفية.
+- افتح المجلد:`File > Open Folder`أو`code .`في الجهاز.
 - لوحة الأوامر:`Ctrl+Shift+P`(نظام التشغيل MacOS: `Cmd+Shift+P`).
-- المحطة المتكاملة:`Ctrl+`` (backtick)` .
+- المحطة المتكاملة:`Ctrl+`` (backtick)`.
 - مؤشر متعدد:`Alt+Click`لوضع مؤشرات إضافية.
-- انتقل إلى التعريف: __محمي_7__ .
+- انتقل إلى التعريف:`F12`.
 - إعادة تسمية الرمز:`F2`.
 - تنسيق الوثيقة:`Shift+Alt+F`.
 - الإضافات: تثبيت دعم اللغة (Python، وRust، وGo، وما إلى ذلك)، والنترات، والمنسقات من لوحة الإضافات (`Ctrl+Shift+X`).
--`settings.json`(المستخدم أو مساحة العمل) يتحكم في سلوك المحرر.
--`launch.json`يقوم بتكوين مصحح الأخطاء.
+- يتحكم`settings.json`(المستخدم أو مساحة العمل) في سلوك المحرر.
+- يقوم`launch.json`بتكوين مصحح الأخطاء.
 ### بيئة تطوير متكاملة لـ JetBrains (IntelliJ IDEA وPyCharm وWebStorm وCLion وGoLand)
 - يعد إكمال التعليمات البرمجية الذكية وإعادة البناء من الميزات الأساسية.
-- تتيح لك تكوينات التشغيل/التصحيح إمكانية تشغيل البرامج وتصحيح أخطائها بنقرة واحدة.
+- تتيح لك تكوينات التشغيل/التصحيح تشغيل البرامج وتصحيح أخطائها بنقرة واحدة.
 - دعم Git مدمج في قائمة VCS.
--`Shift+Shift`يفتح مربع حوار البحث في كل مكان.
+- يفتح`Shift+Shift`مربع حوار البحث في كل مكان.
 -`Ctrl+Alt+L`(macOS: `Cmd+Option+L`) يعيد تنسيق الكود.
 - تعمل المكونات الإضافية على توسيع دعم اللغة وإضافة الأدوات.
 ### نصائح المحطة
 - استخدم إكمال علامة التبويب لإنهاء أسماء الملفات والأوامر بسرعة.
 - اضغط على`Ctrl+R`للبحث في سجل الأوامر بشكل تفاعلي.
--`alias ll='ls -la'`ينشئ اختصارًا — أضفه إلى`~/.bashrc`أو`~/.zshrc`.
-- استخدم`tmux`أو`screen`لإبقاء الجلسات نشطة عند قطع الاتصال بخادم بعيد.
--`man <command>`يعرض الصفحة اليدوية لأي أمر مضمن.
+- ينشئ`alias ll='ls -la'`اختصارًا — أضفه إلى`~/.bashrc`أو `~/.zshrc`.
+- استخدم`tmux`أو`screen`لإبقاء الجلسات حية عند قطع الاتصال بخادم بعيد.
+- يعرض`man <command>`الصفحة اليدوية لأي أمر مضمن.
 ---
 
 ## عامل الميناء

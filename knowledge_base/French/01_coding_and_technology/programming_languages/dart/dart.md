@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Fléchette"
-description : "Référence complète sur le langage de programmation Dart couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Dart"
+description: "Comprehensive reference for the Dart programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [dart, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "40 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [dart, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "40 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fléchette
 Dart est un langage de programmation optimisé pour le client développé par Google, lancé pour la première fois en 2013. Alors que Dart était initialement positionné comme un remplacement potentiel de JavaScript pour les navigateurs Web, il a trouvé son objectif principal en tant que langage derrière **Flutter** — la boîte à outils d'interface utilisateur multiplateforme de Google pour créer des applications mobiles, Web, de bureau et intégrées à partir d'une seule base de code.
 Dart combine les meilleures fonctionnalités des langages modernes : il est orienté objet, dispose d'une saisie facultative (sécurité nulle depuis Dart 3), prend en charge la programmation asynchrone avec`async`/`await`et se compile à la fois en code machine natif (pour mobile/ordinateur de bureau) et en JavaScript (pour le Web).
@@ -323,7 +328,7 @@ final copy = user.copyWith(isActive: true);
 
 ---
 
-## Plongez en profondeur dans les fonctionnalités de base
+## Plongée en profondeur dans les fonctionnalités de base
 ### Gestion des flux
 ```dart
 // Streams: sequences of asynchronous events
@@ -980,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | Développement back-end | Ce n'est pas le cas d'utilisation principal | Allez, Node.js, Python |
 | Science des données / ML | Ne convient pas | Python, R |
 | Programmation systèmes | Ne convient pas | C, C++, Rouille |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Comment fonctionne la sécurité nulle de Dart ?
+**R :** Dart 2.12+ a une sécurité nulle. Les variables ne peuvent pas être nullées par défaut ; utilisez`?`pour autoriser null :
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2 : Quelle est la différence entre`Future`et `Stream` ?
+**A :**`Future`représente un seul résultat asynchrone ; `Stream`représente une séquence d'événements asynchrones :
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3 : Comment gérer l'état dans une application Flutter ?
+**A :** Plusieurs approches en fonction de la complexité :
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4 : Comment fonctionnent les méthodes d'extension dans Dart ?
+**R :** Les extensions ajoutent des fonctionnalités aux types existants sans héritage :
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5 : Comment écrire du code Dart/Flutter performant ?
+**R :** Pratiques clés :
+- Utilisez les constructeurs`const`autant que possible
+- Évitez de reconstruire les widgets : utilisez`const`,`final`et`shouldRebuild`
+- Utilisez`ListView.builder`au lieu de`ListView`pour les grandes listes
+- Profil avec Flutter DevTools
+- Utilisez`compute()`pour les opérations coûteuses sur les threads isolés
+- Réduisez les appels`setState`- soyez précis sur ce qui doit être reconstruit
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Création d'un client API Type-Safe
+**Étape 1 : Comprendre le problème**
+Créez un client API qui récupère les données et renvoie les objets correctement saisis.
+**Étape 2 : Identifiez l'approche**
+Utilisez les classes Dart avec`fromJson`/`toJson`, async/await et les classes scellées pour les résultats.
+**Étape 3 : Mettre en œuvre**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Étape 4 : Vérifier**
+Testez avec un client HTTP fictif. Vérifiez la gestion des erreurs pour les pannes de réseau et les mauvaises réponses.
+### Problème 2 : Implémentation d'une recherche réactive avec Debounce
+**Étape 1 : Comprendre le problème**
+Créez un champ de recherche qui interroge une API mais rebondit sur les entrées pour éviter les requêtes excessives.
+**Étape 2 : Identifiez l'approche**
+Utilisez Dart Streams avec`debounceTime`et`distinct`.
+**Étape 3 : Mettre en œuvre**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Étape 4 : Tester**
+Vérifiez que la saisie rapide ne déclenche qu'un seul appel d'API après la période anti-rebond.
 ---
 
 ## Résumé

@@ -1,4 +1,4 @@
-# Basis Pengetahuan Bahasa Inggris
+# Basis Pengetahuan
 Kumpulan dokumen referensi komprehensif yang mencakup pengkodean, teknologi, AI, sains, bisnis, humaniora, dan banyak lagi — ditulis dengan gaya percakapan alami yang dirancang untuk pelatihan AI dan pembelajaran manusia.
 **Terakhir Diperbarui:** Agustus 2026  
 **Total File:** 138+ dokumen penurunan harga  
@@ -7,7 +7,7 @@ Kumpulan dokumen referensi komprehensif yang mencakup pengkodean, teknologi, AI,
 
 ## Struktur Direktori
 ```
-knowledge_base/English/
+knowledge_base/Indonesian/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,13 @@ knowledge_base/English/
 **Topik inti:**
 | Berkas | Deskripsi |
 |------|-------------|
-| [web_development.md](01_coding_and_technology/web_development.md)| Frontend, backend, DevOps, keamanan |
 | [database_systems.md](01_coding_and_technology/database_systems.md)| SQL, NoSQL, pola desain, optimasi |
 | [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)| Penyedia cloud, pola arsitektur, keamanan |
 | [networking_basics.md](01_coding_and_technology/networking_basics.md)| Model OSI, TCP/IP, protokol, keamanan |
 | [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH, systemd, logging, pemantauan, pencadangan, Docker, CI/CD |
-| [security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP Top 10, validasi input, autentikasi, manajemen rahasia |
 | [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md)| Saluran pipa CI/CD, Docker, Kubernetes, Terraform, GitOps |
 | [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)| Enkripsi, TLS, OWASP, pengkodean aman, SDL |
 | [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST, GraphQL, gRPC, pembuatan versi, autentikasi, gateway API |
-| [software_architecture_patterns.md](01_coding_and_technology/software_architecture_patterns.md)| Monolit, layanan mikro, berbasis peristiwa, DDD, caching, SOLID |
-| [technology_glossary.md](01_coding_and_technology/technology_glossary.md)| Terminologi teknis (model AI, perangkat keras, tolok ukur) |
-| [tool_usage.md](01_coding_and_technology/tool_usage.md)| Alat dan utilitas pengembangan |
 | [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG, UX inklusif, teknologi pendukung, pengkodean yang dapat diakses |
 | [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)| Konsensus, kontrak pintar, DeFi, toleransi kesalahan Bizantium |
 | [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)| Array, pohon, grafik, pengurutan, pencarian, kompleksitas |
@@ -52,7 +47,6 @@ knowledge_base/English/
 | [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)| Platform berkode rendah, platform pengembang internal, jalur emas |
 | [mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS, Android, React Native, Flutter, arsitektur seluler |
 | [performance_optimization.md](01_coding_and_technology/performance_optimization.md)| Pembuatan profil, caching, CDN, optimasi kueri, kinerja front-end |
-| [testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)| Unit, integrasi, E2E, TDD, BDD, piramida uji |
 **Bahasa Pemrograman (34 bahasa):**
 Setiap bahasa memiliki subdirektorinya sendiri dengan referensi komprehensif yang mencakup ikhtisar, trade-off, dasar-dasar sintaksis, ekosistem, dan kapan menggunakannya.
 | Bahasa | Jalur | | Bahasa | Jalur |
@@ -77,31 +71,31 @@ Setiap bahasa memiliki subdirektorinya sendiri dengan referensi komprehensif yan
 ### 02 — AI & Pembelajaran Mesin
 | Berkas | Deskripsi |
 |------|-------------|
-| [artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)| Ikhtisar AI, ML, pembelajaran mendalam, LLM, etika |
-| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/ml_evaluation_and_workflow.md)| Pipeline ML, metrik, praktik terbaik |
-| [phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)| Menjalankan model secara lokal |
-| [local_ai_architecture.md](02_ai_and_machine_learning/local_ai_architecture.md)| Arsitektur penerapan AI lokal |
-| [prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)| Teknik dan strategi yang cepat |
-| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT, data lake, orkestrasi, Kafka, penyimpanan fitur |
-| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/ml_engineering_and_mlops.md)| Penyajian model, registrasi, strategi penerapan, pemantauan penyimpangan |
-| [computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN, deteksi objek, segmentasi, pembelajaran transfer |
-| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)| Pemrosesan teks, penyematan, Transformers, BERT, GPT |
-| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ai_ethics_and_governance.md)| Bias AI, keadilan, akuntabilitas, regulasi, kerangka tata kelola |
-| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)| Masalah penyelarasan, RLHF, interpretabilitas, penelitian keamanan AI |
-| [federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)| Pelatihan terdesentralisasi, privasi diferensial, agregasi aman |
-| [generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GAN, VAE, model difusi, LLM, aplikasi AI generatif |
-| [graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN, GAT, penyampaian pesan, grafik pengetahuan, tugas grafik |
-| [model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)| Kuantisasi, pemangkasan, penyulingan, ONNX, infrastruktur pelayanan |
-| [multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)| Model bahasa visi, CLIP, DALL-E, pembelajaran lintas modal |
-| [recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)| Pemfilteran kolaboratif, berbasis konten, hibrid, faktorisasi matriks |
-| [reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP, Q-learning, gradien kebijakan, RLHF, sistem multi-agen |
-| [speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR, TTS, fitur audio, Bisikan, saluran ucapan |
-| [time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA, Nabi, LSTM, musiman, deteksi anomali |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)| Ikhtisar AI, ML, pembelajaran mendalam, LLM, etika |
+| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md)| Pipeline ML, metrik, praktik terbaik |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)| Menjalankan model secara lokal |
+| [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md)| Arsitektur penerapan AI lokal |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)| Teknik dan strategi yang cepat |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT, data lake, orkestrasi, Kafka, penyimpanan fitur |
+| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md)| Penyajian model, registrasi, strategi penerapan, pemantauan penyimpangan |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN, deteksi objek, segmentasi, pembelajaran transfer |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)| Pemrosesan teks, penyematan, Transformers, BERT, GPT |
+| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md)| Bias AI, keadilan, akuntabilitas, regulasi, kerangka tata kelola |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)| Masalah penyelarasan, RLHF, interpretabilitas, penelitian keamanan AI |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)| Pelatihan terdesentralisasi, privasi diferensial, agregasi aman |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GAN, VAE, model difusi, LLM, aplikasi AI generatif |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN, GAT, penyampaian pesan, grafik pengetahuan, tugas grafik |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)| Kuantisasi, pemangkasan, penyulingan, ONNX, infrastruktur pelayanan |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)| Model bahasa visi, CLIP, DALL-E, pembelajaran lintas modal |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)| Pemfilteran kolaboratif, berbasis konten, hibrid, faktorisasi matriks |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP, Q-learning, gradien kebijakan, RLHF, sistem multi-agen |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR, TTS, fitur audio, Bisikan, saluran ucapan |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA, Nabi, LSTM, musiman, deteksi anomali |
 ### 03 — Ilmu Data & Analisis
 | Berkas | Deskripsi |
 |------|-------------|
 | [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)| Pemrosesan data, ML, data besar, BI |
-| [math_and_logic.md](03_data_science_and_analytics/math_and_logic.md)| Matematika, logika, pembuktian |
+| [math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md)| Matematika, logika, pembuktian |
 | [data_visualization.md](03_data_science_and_analytics/data_visualization.md)| Pemilihan bagan, prinsip desain, penceritaan, alat |
 | [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md)| Pengujian hipotesis, pengujian A/B, ukuran efek, inferensi sebab akibat |
 | [causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAG, perancu, perbedaan dalam perbedaan, variabel instrumental |
@@ -113,13 +107,13 @@ Setiap bahasa memiliki subdirektorinya sendiri dengan referensi komprehensif yan
 | Berkas | Deskripsi |
 |------|-------------|
 | [science_and_nature.md](04_natural_sciences/science_and_nature.md)| Fisika, kimia, biologi, ilmu kebumian |
-| [medicine_and_healthcare.md](04_natural_sciences/medicine_and_healthcare.md)| Spesialisasi medis, diagnosis, pengobatan, etika |
-| [environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)| Ekosistem, iklim, energi, kebijakan |
-| [food_agriculture_and_nutrition.md](04_natural_sciences/food_agriculture_and_nutrition.md)| Pertanian, nutrisi, sistem pangan, keberlanjutan |
-| [astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)| Bintang, galaksi, Big Bang, materi gelap, planet ekstrasurya, kosmologi |
-| [genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| DNA, ekspresi gen, CRISPR, GWAS, teknologi pengurutan |
-| [materials_science.md](04_natural_sciences/materials_science.md)| Struktur kristal, polimer, paduan, semikonduktor, bahan nano |
-| [neuroscience.md](04_natural_sciences/neuroscience.md)| Neuron, struktur otak, neurotransmiter, plastisitas, pencitraan otak |
+| [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md)| Spesialisasi medis, diagnosis, pengobatan, etika |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)| Ekosistem, iklim, energi, kebijakan |
+| [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md)| Pertanian, nutrisi, sistem pangan, keberlanjutan |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)| Bintang, galaksi, Big Bang, materi gelap, planet ekstrasurya, kosmologi |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| DNA, ekspresi gen, CRISPR, GWAS, teknologi pengurutan |
+| [materials_science.md](04_natural_sciences/physical_sciences/materials_science.md)| Struktur kristal, polimer, paduan, semikonduktor, bahan nano |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)| Neuron, struktur otak, neurotransmiter, plastisitas, pencitraan otak |
 ### 05 — Bisnis & Ekonomi
 | Berkas | Deskripsi |
 |------|-------------|
@@ -136,15 +130,15 @@ Setiap bahasa memiliki subdirektorinya sendiri dengan referensi komprehensif yan
 ### 06 — Humaniora & Seni
 | Berkas | Deskripsi |
 |------|-------------|
-| [history_and_culture.md](06_humanities_and_arts/history_and_culture.md)| Sejarah dunia dari peradaban kuno hingga Era Informasi |
-| [geography_and_geopolitics.md](06_humanities_and_arts/geography_and_geopolitics.md)| Geografi fisik/manusia, sistem politik |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)| Sejarah dunia dari peradaban kuno hingga Era Informasi |
+| [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md)| Geografi fisik/manusia, sistem politik |
 | [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)| Genre sastra, seni visual, musik, film |
-| [psychology_and_human_behavior.md](06_humanities_and_arts/psychology_and_human_behavior.md)| Psikologi kognitif, sosial, perkembangan |
-| [language_and_english.md](06_humanities_and_arts/language_and_english.md)| Tata bahasa, linguistik, penulisan |
-| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)| Aliran pemikiran, etika, logika, epistemologi, bias kognitif |
-| [linguistics_and_language_science.md](06_humanities_and_arts/linguistics_and_language_science.md)| Fonetik, Sintaks, Semantik, Pragmatik, Sosiolinguistik |
-| [music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)| Tangga nada, akord, harmoni, ritme, akustik ruangan, fisika instrumen |
-| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)| Agama-agama besar dunia, mitologi komparatif, sistem kepercayaan |
+| [psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md)| Psikologi kognitif, sosial, perkembangan |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md)| Tata bahasa, linguistik, penulisan |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)| Aliran pemikiran, etika, logika, epistemologi, bias kognitif |
+| [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md)| Fonetik, Sintaks, Semantik, Pragmatik, Sosiolinguistik |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)| Tangga nada, akord, harmoni, ritme, akustik ruangan, fisika instrumen |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)| Agama-agama besar dunia, mitologi komparatif, sistem kepercayaan |
 ### 07 — Referensi Umum
 | Berkas | Deskripsi |
 |------|-------------|
@@ -158,20 +152,20 @@ Setiap bahasa memiliki subdirektorinya sendiri dengan referensi komprehensif yan
 ### 08 — Masa Depan & Tren
 | Berkas | Deskripsi |
 |------|-------------|
-| [2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)| Acara mendatang, misi luar angkasa, tren teknologi |
-| [emerging_technologies.md](08_future_and_trends/emerging_technologies.md)| Komputasi kuantum, bioteknologi, nanoteknologi |
-| [future_of_work.md](08_future_and_trends/future_of_work.md)| Otomatisasi, kerja jarak jauh, pelatihan ulang |
-| [future_healthcare.md](08_future_and_trends/future_healthcare.md)| Pengobatan yang dipersonalisasi, diagnostik AI |
-| [future_transportation.md](08_future_and_trends/future_transportation.md)| EV, kendaraan otonom, hyperloop |
-| [demographic_shifts.md](08_future_and_trends/demographic_shifts.md)| Tren populasi, migrasi, urbanisasi |
-| [education_transformation.md](08_future_and_trends/education_transformation.md)| Pembelajaran online, bimbingan AI |
-| [geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)| Geopolitik, AS-China, dunia multipolar |
-| [scenario_planning.md](08_future_and_trends/scenario_planning.md)| Skenario dan kerangka masa depan |
-| [space_exploration_roadmap.md](08_future_and_trends/space_exploration_roadmap.md)| Misi luar angkasa dan garis waktu |
-| [sustainable_future.md](08_future_and_trends/sustainable_future.md)| Iklim, transisi energi, ekonomi sirkular |
-| [ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)| Sistem rekomendasi, asisten cerdas, privasi, ekonomi perhatian |
-| [climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)| Energi terbarukan, kendaraan listrik, penangkapan karbon, hidrogen hijau, teknologi berkelanjutan |
-| [future_of_computing.md](08_future_and_trends/future_of_computing.md)| Hukum Moore, komputasi kuantum, chip neuromorfik, komputasi tepi |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)| Acara mendatang, misi luar angkasa, tren teknologi |
+| [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md)| Komputasi kuantum, bioteknologi, nanoteknologi |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)| Otomatisasi, kerja jarak jauh, pelatihan ulang |
+| [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md)| Pengobatan yang dipersonalisasi, diagnostik AI |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)| EV, kendaraan otonom, hyperloop |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)| Tren populasi, migrasi, urbanisasi |
+| [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md)| Pembelajaran online, bimbingan AI |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)| Geopolitik, AS-China, dunia multipolar |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)| Skenario dan kerangka masa depan |
+| [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md)| Misi luar angkasa dan garis waktu |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)| Iklim, transisi energi, ekonomi sirkular |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)| Sistem rekomendasi, asisten cerdas, privasi, ekonomi perhatian |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)| Energi terbarukan, kendaraan listrik, penangkapan karbon, hidrogen hijau, teknologi berkelanjutan |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)| Hukum Moore, komputasi kuantum, chip neuromorfik, komputasi tepi |
 ### 09 — Pelajaran dari Kegagalan
 | Berkas | Deskripsi |
 |------|-------------|
@@ -187,18 +181,18 @@ Setiap bahasa memiliki subdirektorinya sendiri dengan referensi komprehensif yan
 ### 10 — Referensi Cepat
 | Berkas | Deskripsi |
 |------|-------------|
-| [python_syntax.md](10_quick_reference/python_syntax.md)| Lembar contekan sintaksis Python |
-| [git_commands.md](10_quick_reference/git_commands.md)| Perintah Git dan alur kerja |
-| [sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| Referensi kueri SQL |
-| [linux_commands.md](10_quick_reference/linux_commands.md)| Referensi baris perintah Linux |
-| [docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, lembar contekan Helm |
-| [regular_expressions.md](10_quick_reference/regular_expressions.md)| Sintaks regex, pola umum, penggunaan khusus bahasa |
-| [cloud_services_comparison.md](10_quick_reference/cloud_services_comparison.md)| Perbandingan AWS vs Azure vs GCP |
-| [bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| Skrip Bash, pemrosesan teks, satu kalimat yang berguna |
-| [ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| Buku pedoman, modul, peran, inventaris, lembar contekan otomatisasi yang memungkinkan |
-| [cicd_pipeline_config.md](10_quick_reference/cicd_pipeline_config.md)| Tindakan GitHub, GitLab CI, Jenkins, pola YAML saluran |
-| [prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL, eksportir, dasbor, peringatan, tumpukan pemantauan |
-| [terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| Konsep IaC, perintah Terraform, manajemen status, modul |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md)| Lembar contekan sintaksis Python |
+| [git_commands.md](10_quick_reference/programming/git_commands.md)| Perintah Git dan alur kerja |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| Referensi kueri SQL |
+| [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)| Referensi baris perintah Linux |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, lembar contekan Helm |
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)| Sintaks regex, pola umum, penggunaan khusus bahasa |
+| [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)| Perbandingan AWS vs Azure vs GCP |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| Skrip Bash, pemrosesan teks, satu kalimat yang berguna |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| Buku pedoman, modul, peran, inventaris, lembar contekan otomatisasi yang memungkinkan |
+| [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md)| Tindakan GitHub, GitLab CI, Jenkins, pola YAML saluran |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL, eksportir, dasbor, peringatan, tumpukan pemantauan |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| Konsep IaC, perintah Terraform, manajemen status, modul |
 ---
 
 ## Jalur Pembelajaran
@@ -210,12 +204,9 @@ Setiap bahasa memiliki subdirektorinya sendiri dengan referensi komprehensif yan
 ### Untuk Pengembang Perangkat Lunak
 1.`01_coding_and_technology/programming_languages/python/`(atau bahasa pilihan Anda)
 2.`01_coding_and_technology/data_structures_and_algorithms.md` 
-3.`01_coding_and_technology/web_development.md` 
 4.`01_coding_and_technology/database_systems.md` 
 5.`01_coding_and_technology/cloud_architecture.md` 
-6.`01_coding_and_technology/software_architecture_patterns.md` 
 7.`01_coding_and_technology/api_design_and_architecture.md` 
-8.`01_coding_and_technology/testing_methodologies.md` 
 9.`02_ai_and_machine_learning/artificial_intelligence.md`
 ### Untuk Ilmuwan Data
 1.`03_data_science_and_analytics/math_and_logic.md` 

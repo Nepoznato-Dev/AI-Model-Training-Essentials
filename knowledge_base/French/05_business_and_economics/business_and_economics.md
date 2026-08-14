@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Commerce et économie"
-description : "Structures d'entreprise, marketing, économie, startups"
-catégorie : "Commerce et économie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Business and Economics"
+description: "Corporate structures, marketing, economics, startups"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances commerciales et économiques"
-next_review : "2027-08-05"
-#Classement
-Mots-clés : [affaires, économie, affaires et économie]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "9 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [business, economics, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Affaires et économie
 Toute organisation qui vend un produit ou un service est une entreprise, et toute société qui produit et distribue des biens est une économie. Les concepts de ce fichier s'appliquent que vous dirigiez une entreprise indépendante, que vous travailliez dans une entreprise, que vous essayiez de comprendre l'actualité ou que vous cherchiez simplement à comprendre comment l'argent circule dans le monde.
 ---
@@ -41,7 +46,7 @@ Toute organisation qui vend un produit ou un service est une entreprise, et tout
 ## Comment les entreprises sont structurées
 La structure juridique d’une entreprise détermine la manière dont elle paie ses impôts, qui est responsable des dettes et comment les décisions sont prises.
 | Structure | Propriétaires | Responsabilité | Traitement fiscal | Idéal pour |
-|-----------|--------|----------|---------------|--------------|
+|-----------|--------|----------|---------------|----------|
 | **Entreprise individuelle** | 1 personne | Responsabilité personnelle illimitée | Revenu déclaré dans la déclaration personnelle | Indépendants, entreprises annexes |
 | **Partenariat** | 2+ personnes | Responsabilité personnelle illimitée (associés commandités) | Répartition des revenus entre partenaires | Services professionnels (cabinets d'avocats, consultants) |
 | **SARL** | 1+ membres | Responsabilité limitée (biens personnels protégés) | Flexible — peut être imposé en tant qu'entreprise individuelle, société de personnes ou société | La plupart des petites et moyennes entreprises |
@@ -88,7 +93,7 @@ Les économies ne croissent pas en ligne droite. Ils passent par des phases :
 3. **Contraction (Récession)** : baisse de la production, hausse du chômage, baisse de la confiance
 4. **Creux** : Le fond ; la reprise commence à mesure que les prix s’ajustent et que la demande revient
 Les récessions sont généralement définies comme deux trimestres consécutifs de croissance négative du PIB. Elles sont provoquées par divers déclencheurs – crises financières, chocs pétroliers, perturbations liées à une pandémie, éclatement de bulles d’actifs – mais le schéma est toujours le même : chute de la confiance, baisse des dépenses, entreprises suppriment des emplois, ce qui réduit encore les dépenses.
-Les banques centrales (comme la Réserve fédérale américaine) tentent de lisser le cycle en ajustant les taux d’intérêt : des taux plus bas pendant les récessions pour encourager l’emprunt et la consommation, des taux plus élevés pendant les booms pour éviter la surchauffe.
+Les banques centrales (comme la Réserve fédérale américaine) tentent de lisser le cycle en ajustant les taux d’intérêt : des taux plus bas pendant les récessions pour encourager l’emprunt et la consommation, des taux plus élevés pendant les périodes d’expansion pour éviter la surchauffe.
 ---
 
 ## Marketing – Comment les entreprises atteignent leurs clients
@@ -102,9 +107,9 @@ Le marketing n'est pas seulement de la publicité. Il s'agit de l'ensemble du pr
 | **Promotion** | Comment le dire aux gens | Publicité, réseaux sociaux, relations publiques, marketing de contenu ? |
 ### Indicateurs marketing clés
 - **CAC (Customer Acquisition Cost)** : combien coûte l'acquisition d'un nouveau client. Si vous dépensez 10 000 $ en publicités et obtenez 100 clients, votre CAC est de 100 $.
-- **CLV (Customer Lifetime Value)** : combien de revenus un client génère sur l'ensemble de sa relation avec votre entreprise. Si le client moyen dépense 50 $/mois pendant 3 ans, CLV = 1 800 $.
+- **CLV (Customer Lifetime Value)** : combien de revenus un client génère sur l'ensemble de sa relation avec votre entreprise. Si le client moyen dépense 50 $/mois pendant 3 ans, CLV = 1 800 $.
 - **Le ratio CAC:CLV** doit être d'au moins 1:3 — il doit coûter au maximum un tiers de ce que le client vous paiera. Si le CAC dépasse la CLV, l'entreprise perd de l'argent sur chaque client.
-- **Taux de conversion** : quel pourcentage de personnes qui voient votre offre achètent réellement. Les taux de conversion typiques du commerce électronique sont de 1 à 3 %.
+- **Taux de conversion** : quel pourcentage de personnes qui voient votre offre achètent réellement. Les taux de conversion typiques du commerce électronique sont de 1 à 3 %.
 - **Taux de désabonnement** : quel pourcentage de clients quittent chaque période. Un taux de désabonnement mensuel de 5 % signifie que vous perdez la moitié de vos clients en 14 mois environ.
 ---
 
@@ -151,7 +156,7 @@ La plupart des startups échouent. Les estimations suggèrent que 90 % des start
 ---
 
 ## Chaîne d'approvisionnement et opérations
-La gestion de la chaîne d’approvisionnement est l’art et la science qui consiste à acheminer le bon produit au bon endroit, au bon moment et au bon prix. Cela semble simple. C'est extraordinairement difficile.
+La gestion de la chaîne d'approvisionnement est le processus coordonné permettant de livrer le bon produit au bon endroit, au bon moment et au bon coût. L’objectif est simple ; l'exécution est complexe.
 ### Concepts clés
 - **Juste à temps (JIT)** : recevez les matériaux uniquement en cas de besoin, réduisant ainsi les coûts d'inventaire. Toyota a été un pionnier dans ce domaine. Le compromis : les systèmes JIT sont fragiles lorsque les chaînes d’approvisionnement sont perturbées (comme l’a démontré la pénurie de puces de 2020 à 2022).
 - **Lean Manufacturing** : éliminez le gaspillage, c'est-à-dire tout ce qui n'ajoute pas de valeur au client. Identifiez et supprimez les « sept gaspillages » : surproduction, attente, transport, surtraitement, inventaire, mouvement et défauts.
@@ -178,7 +183,7 @@ Les entreprises existent au sein des sociétés et leurs décisions affectent le
 | **RSE (Responsabilité Sociale des Entreprises)** | Engagement volontaire envers des objectifs sociaux et environnementaux | l'activisme environnemental de la Patagonie ; Modèle TOMS "un pour un" |
 | **ESG (Environnemental, Social, Gouvernance)** | Critères mesurables pour évaluer le comportement de l'entreprise | Émissions de carbone, diversité des conseils d'administration, pratiques de travail |
 | **Certification B-Corp** | Obligation légale de prendre en compte les parties prenantes, et pas seulement les actionnaires | Ben & Jerry's, Danone |
-| **Capitalisme des parties prenantes** | Servir les clients, les employés, les communautés et les actionnaires | Contraste avec la « primauté des actionnaires » (les bénéfices avant tout) |
+| **Capitalisme des parties prenantes** | Servir les clients, les employés, les communautés et les actionnaires | Contraste avec la « primauté des actionnaires » (les profits avant tout) |
 Le débat entre primauté actionnariale (Milton Friedman : « la responsabilité sociale des entreprises est d’augmenter leurs profits ») et capitalisme des parties prenantes (les entreprises doivent servir toutes les parties prenantes) est loin d’être réglé. Les données suggèrent de plus en plus que les entreprises qui traitent bien leurs employés, opèrent de manière durable et maintiennent des normes éthiques ont tendance à obtenir de meilleurs résultats à long terme – mais les incitations à court terme poussent souvent dans l’autre sens.
 ---
 

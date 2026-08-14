@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Shell & PowerShell
-Tập lệnh Shell đề cập đến việc viết tập lệnh cho trình thông dịch dòng lệnh. Hai shell quan trọng nhất là **Bash** (Bourne Again Shell) — mặc định trên Linux và macOS — và **PowerShell** — shell và ngôn ngữ tập lệnh đa nền tảng hiện đại của Microsoft. Các tập lệnh Shell tự động hóa các tác vụ quản trị hệ thống, xây dựng quy trình, xử lý tệp và quy trình triển khai.
+Tập lệnh Shell đề cập đến việc viết tập lệnh cho trình thông dịch dòng lệnh. Hai shell quan trọng nhất là **Bash** (Bourne Again Shell) — mặc định trên Linux và macOS — và **PowerShell** — shell và ngôn ngữ kịch bản đa nền tảng hiện đại của Microsoft. Các tập lệnh Shell tự động hóa các tác vụ quản trị hệ thống, xây dựng quy trình, xử lý tệp và quy trình triển khai.
 Mọi nhà phát triển, kỹ sư DevOps và quản trị viên hệ thống đều cần có kỹ năng viết kịch bản shell. Cho dù bạn đang triển khai máy chủ web, xử lý tệp nhật ký, thiết lập đường dẫn CI/CD hay tự động sao lưu, tập lệnh shell là công cụ dành cho công việc đó.
 ---
 
@@ -53,9 +54,9 @@ Mọi nhà phát triển, kỹ sư DevOps và quản trị viên hệ thống đ
 ## Sự đánh đổi
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
-| **Những điều kỳ quặc về Bash** | Cú pháp không nhất quán, xử lý chuỗi dễ vỡ | Sử dụng`set -euo pipefail`; trích dẫn các biến; thích PowerShell hơn cho các tập lệnh phức tạp |
+| **Những điều kỳ quặc về Bash** | Cú pháp không nhất quán, xử lý chuỗi dễ vỡ | Sử dụng `set -euo pipefail`; trích dẫn các biến; thích PowerShell hơn cho các tập lệnh phức tạp |
 | **Không dành cho các chương trình phức tạp** | Cấu trúc dữ liệu kém, không có OOP, khó kiểm tra | Sử dụng Python, Go hoặc các ngôn ngữ khác để xử lý logic phức tạp |
-| **Xử lý lỗi** | Xử lý lỗi Bash còn nguyên thủy | Sử dụng`set -e`; kiểm tra mã thoát; sử dụng thử/bắt |
+| **Xử lý lỗi** | Xử lý lỗi Bash còn nguyên thủy | Sử dụng `set -e`; kiểm tra mã thoát; sử dụng thử/bắt |
 | **Tính di động** | Tập lệnh Bash có thể không hoạt động trên tất cả các hệ thống | Sử dụng POSIX sh để có tính di động tối đa; PowerShell cho đa nền tảng |
 | **Gỡ lỗi** | Công cụ gỡ lỗi hạn chế | Sử dụng`set -x`cho Bash; PowerShell có trình gỡ lỗi thích hợp |
 ---
@@ -556,7 +557,7 @@ teardown() {
 }
 ```
 
-### Kiểm thử PowerShell bằng Pester
+### Kiểm tra PowerShell bằng Pester
 ```powershell
 # tests/Deploy.Tests.ps1
 BeforeAll {
@@ -859,5 +860,151 @@ Publish-Module @publishParams
 | Tập lệnh đa nền tảng | PowerShell 7+ hoạt động ở mọi nơi | Python cho các tập lệnh thực sự di động |
 ---
 
+## Hỏi đáp tổng hợp
+### Q1: Sự khác biệt giữa dấu ngoặc đơn và dấu ngoặc kép trong Bash là gì?
+**A:** Dấu ngoặc kép cho phép mở rộng biến; dấu ngoặc đơn là theo nghĩa đen:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Câu 2: Làm cách nào để xử lý lỗi trong tập lệnh shell?
+**A:** Sử dụng`set -e`để thoát khỏi lỗi và bẫy để dọn dẹp:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Câu hỏi 3: Làm cách nào để xử lý các đối số dòng lệnh đúng cách?
+**A:** Sử dụng`getopts`cho cờ và tham số vị trí:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Câu hỏi 4: Đường dẫn PowerShell là gì và nó khác với Bash như thế nào?
+**A:** PowerShell dẫn đối tượng chứ không phải văn bản. Mỗi đối tượng giữ lại các thuộc tính của nó:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Câu 5: Làm cách nào để viết tập lệnh đa nền tảng?
+**A:** Đối với Bash: sử dụng`#!/usr/bin/env bash`, tránh các cờ dành riêng cho GNU. Đối với PowerShell: sử dụng`pwsh`(PowerShell Core) chạy trên Linux/macOS/Windows.
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Tập lệnh xử lý ảnh hàng loạt (Bash)
+**Bước 1: Tìm hiểu vấn đề**
+Thay đổi kích thước tất cả hình ảnh PNG trong một thư mục thành chiều rộng tối đa 800px.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`find`để định vị tệp và`convert`(ImageMagick) để thay đổi kích thước.
+**Bước 3: Thực hiện**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Bước 4: Gia hạn**
+Thêm thanh tiến trình, xử lý lỗi đối với hình ảnh bị hỏng và xử lý song song với `xargs -P`.
+### Vấn đề 2: Tự động xoay vòng nhật ký (Bash)
+**Bước 1: Tìm hiểu vấn đề**
+Xoay tệp nhật ký hàng ngày, nén nhật ký cũ và xóa nhật ký cũ hơn 30 ngày.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`find`với các bộ lọc dựa trên thời gian và`gzip`để nén.
+**Bước 3: Thực hiện**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Bước 4: Lên lịch**
+Thêm vào crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Vấn đề 3: Kiểm tra tình trạng dịch vụ Windows (PowerShell)
+**Bước 1: Tìm hiểu vấn đề**
+Kiểm tra xem các dịch vụ quan trọng có đang chạy hay không và gửi cảnh báo nếu có dịch vụ nào bị dừng.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`Get-Service`và lọc các dịch vụ đã dừng.
+**Bước 3: Thực hiện**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Bước 4: Tự động hóa**
+Lập lịch dưới dạng công việc Lập lịch tác vụ Windows chạy 5 phút một lần.
+---
+
 ## Bản tóm tắt
-Viết kịch bản Shell (Bash và PowerShell) là một kỹ năng cần thiết cho bất kỳ ai làm việc với máy tính. Bash thống trị môi trường Linux/macOS và DevOps. PowerShell cung cấp một cách tiếp cận hướng đối tượng, hiện đại hơn và rất cần thiết cho việc quản trị Windows. Cả hai đều cần thiết trong nền tảng công nghệ hiện đại. Tập lệnh Shell là chất keo kết nối các hệ thống, tự động hóa quy trình công việc và hoàn thành công việc một cách nhanh chóng.
+Viết kịch bản Shell (Bash và PowerShell) là một kỹ năng cần thiết cho bất kỳ ai làm việc với máy tính. Bash thống trị môi trường Linux/macOS và DevOps. PowerShell cung cấp một cách tiếp cận hướng đối tượng, hiện đại hơn và rất cần thiết cho việc quản trị Windows. Cả hai đều cần thiết trong nền tảng công nghệ hiện đại. Tập lệnh Shell là chất keo kết nối các hệ thống, tự động hóa quy trình làm việc và hoàn thành công việc một cách nhanh chóng.

@@ -39,8 +39,8 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
-# Dasar-dasar Keamanan Siber
-Keamanan bukanlah fitur yang Anda gunakan pada akhirnya — ini adalah disiplin yang perlu ditanamkan ke dalam setiap lapisan sistem sejak hari pertama. Baik Anda membangun aplikasi web, mengelola infrastruktur, atau mengirimkan API, memahami lanskap ancaman dan dasar-dasar pertahanan sangatlah penting.
+# Dasar-Dasar Keamanan Siber
+Keamanan adalah suatu disiplin ilmu yang harus diintegrasikan ke dalam setiap lapisan sistem sejak awal, bukan ditambahkan setelahnya. Baik membangun aplikasi web, mengelola infrastruktur, atau mengirimkan API, memahami lanskap ancaman dan dasar-dasar pertahanan sangatlah penting.
 ---
 
 ## Enkripsi dan Kriptografi
@@ -81,7 +81,7 @@ Gunakan TLS 1.2 atau 1.3. Nonaktifkan TLS 1.0 dan 1.1. Aktifkan HSTS (HTTP Stric
 | **RBAC** (Kontrol Akses Berbasis Peran) | Izin yang ditetapkan ke peran; pengguna mendapatkan peran | Admin, Editor, Penampil |
 | **ABAC** (Berbasis Atribut) | Aturan berdasarkan atribut pengguna, sumber daya, lingkungan | "Manajer dapat menyetujui permintaan timnya" |
 | **ACL** (Daftar Kontrol Akses) | Izin eksplisit per pengguna/sumber daya | Izin file (baca/tulis/eksekusi) |
-**Prinsip hak istimewa terkecil**: berikan setiap pengguna, layanan, dan proses hanya akses minimum yang mereka perlukan.
+**Prinsip hak istimewa terendah**: berikan setiap pengguna, layanan, dan proses hanya akses minimum yang mereka perlukan.
 ### JWT (Token Web JSON)
 | Aspek | Rekomendasi |
 |--------|---------------|

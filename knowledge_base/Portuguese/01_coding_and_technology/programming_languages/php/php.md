@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #PHP
 PHP (Hypertext Preprocessor) é uma linguagem de script do lado do servidor criada por Rasmus Lerdorf em 1994 e lançada pela primeira vez em 1995. Originalmente projetado para gerar páginas web dinâmicas, o PHP evoluiu para uma linguagem de uso geral com todos os recursos. Ele alimenta aproximadamente 75% de todos os sites com uma linguagem de servidor conhecida, incluindo WordPress, Facebook (originalmente), Wikipedia, Slack e milhões de outros sites.
 O PHP moderno (8.x) é uma linguagem muito diferente do PHP do início dos anos 2000. Agora ele possui propriedades digitadas, expressões de correspondência, enumerações, fibras, classes somente leitura e um sistema de tipos robusto. Apesar de sua reputação entre os desenvolvedores (muitas vezes criticado por inconsistências), o PHP é prático, amplamente implantado e continua a melhorar.
@@ -53,7 +54,7 @@ O PHP moderno (8.x) é uma linguagem muito diferente do PHP do início dos anos 
 ## As compensações
 | Limitação | Detalhes | Solução alternativa típica |
 |-------|---------|-------------------|
-| **Nomenclatura inconsistente** | `strpos`vs`str_replace`,`array_key_exists`vs`in_array`— nenhuma convenção consistente | Aprenda as inconsistências; usar o preenchimento automático do IDE |
+| **Nomenclatura inconsistente** | `strpos`vs `str_replace`,`array_key_exists`vs`in_array`— nenhuma convenção consistente | Aprenda as inconsistências; usar o preenchimento automático do IDE |
 | **Bagagem histórica** | Recursos e padrões legados do PHP 5 e anteriores | Use PHP moderno (8.2+); siga os padrões PSR |
 | **Desempenho** | Mais lento que Go, Rust ou Java para tarefas não relacionadas à web | Usar OPcache; considere Swoole para assíncrono; usar PHP-FPM |
 | **Não é ideal para ambientes não web** | CLI, desktop, dispositivos móveis, ciência de dados – não os pontos fortes do PHP | Use Python, Go ou outras linguagens para trabalhos fora da web |
@@ -827,6 +828,332 @@ CMD ["php-fpm"]
 | Aplicações em tempo real | Não é a força do PHP | Node.js, vá |
 | Ciência de dados / ML | Não o ecossistema | Pitão, R |
 | Aplicativos para desktop/móveis | Não adequado | Use idiomas nativos |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre`==`e`===`em PHP?
+**R:**`==`é uma comparação frouxa - ele executa coerção de tipo antes de comparar (`"0" == false`é`true`). `===`é uma comparação estrita - verifica o valor e o tipo (`"0" === false`é`false`). Sempre use `===`, a menos que você precise especificamente de coerção de tipo. Esta é uma das fontes mais comuns de bugs do PHP.
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### Q2: Como funcionam os namespaces e o carregamento automático do PHP?
+**R:** Namespaces evitam colisões de nomes de classes. O carregamento automático PSR-4 mapeia a estrutura do namespace para a estrutura do diretório -`App\Controllers\UserController`mapeia para`src/Controllers/UserController.php`. O Composer lida com o carregamento automático via`composer.json`. Sempre use namespaces e PSR-4 no PHP moderno.
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### Q3: O que são atributos do PHP 8 e como eles se relacionam com frameworks?
+**R:** Atributos (PHP 8) são anotações estruturadas de metadados para classes, métodos, propriedades e parâmetros. Eles são o equivalente em PHP de anotações Java ou atributos C#. Frameworks como Laravel e Symfony os utilizam extensivamente para roteamento, validação e injeção de dependência.
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### Q4: Como lidar com erros corretamente no PHP moderno?
+**R:** PHP tem erros (E_WARNING, E_NOTICE) e exceções. O PHP moderno usa exclusivamente exceções. Use try/catch para falhas esperadas, classes de exceção personalizadas para erros de domínio e`set_error_handler`para converter erros em exceções. PHP 7+`Throwable`é a interface base para erros e exceções.
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### Q5: O que são fibras PHP e como elas se relacionam com o assíncrono?
+**R:** Fibras (PHP 8.1) são threads cooperativos leves — elas podem suspender e retomar a execução. Eles são a base do PHP assíncrono, mas são de baixo nível. Frameworks como Amp e ReactPHP usam fibras internamente. Para a maioria dos aplicativos, use uma estrutura assíncrona em vez de fibras brutas.
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Construa um pipeline de middleware
+**Declaração do problema:** Implemente um pipeline de middleware para uma estrutura web PHP onde cada middleware possa processar a solicitação antes e depois do próximo middleware na cadeia.
+**Etapa 1 — Entenda o problema:**
+Precisamos de: (1) uma interface `Middleware`, (2) um pipeline que encadeie o middleware, (3) cada middleware recebe uma solicitação e um retorno de chamada `$next`, (4) o middleware pode modificar a solicitação (antes) e a resposta (depois). Este é o modelo cebola usado pelo Laravel, PSR-15 e estruturas semelhantes.
+**Etapa 2 — Identifique a abordagem:**
+- Defina`MiddlewareInterface`com`process(Request, RequestHandler): Response`.
+- Use a redução de array para compor o middleware em um único manipulador.
+- Cada middleware envolve o próximo, criando chamadas de função aninhadas.
+**Etapa 3 — Implementar a solução:**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+**Etapa 4 — Verificar e otimizar:**
+- Questões de ordem: primeiro canalizado = mais externo (executado primeiro na solicitação, último na resposta).
+- Cada middleware pode entrar em curto-circuito retornando uma Resposta sem chamar`$next`.
+- Produção: use PSR-15`MiddlewareInterface`para interoperabilidade com qualquer estrutura PSR-15.
+### Problema 2: Implementar um repositório com o Query Builder
+**Declaração do problema:** Crie um construtor de consultas fluente que gere SQL com segurança com consultas parametrizadas, suporte encadeamento e integre-se a um padrão de repositório.
+**Etapa 1 — Entenda o problema:**
+Precisamos de: (1) uma classe`QueryBuilder`com métodos encadeados (`select`,`where`,`orderBy`,`limit`), (2) consultas parametrizadas para evitar injeção de SQL, (3) um`Repository`que usa o construtor de consultas para acesso a dados.
+**Etapa 2 — Identifique a abordagem:**
+- O Builder acumula fragmentos e parâmetros SQL.
+-`toSql()`gera a consulta final com espaços reservados.
+-`getParameters()`retorna os valores vinculados.
+- O repositório envolve o construtor com métodos específicos do domínio.
+**Etapa 3 — Implementar a solução:**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+**Etapa 4 — Verificar e otimizar:**
+- Prevenção de injeção de SQL: todos os valores passam por consultas parametrizadas (placeholders `?`).
+- API encadeável: cada método retorna`$this`para composição fluente.
+- Produção: use`illuminate/database`(construtor de consultas do Laravel) ou`doctrine/dbal`para uma solução abrangente e testada.
 ---
 
 ## Resumo

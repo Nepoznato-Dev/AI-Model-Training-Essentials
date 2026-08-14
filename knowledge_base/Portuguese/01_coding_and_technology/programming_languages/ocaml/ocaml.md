@@ -468,7 +468,7 @@ my-ocaml-project/
 ---
 
 ## Teste
-### Alcotest — Teste Leve
+### Alcotest — Teste leve
 ```ocaml
 open Alcotest
 
@@ -713,6 +713,122 @@ ENTRYPOINT ["./app"]
 | Ciência de dados / ML | Não o ecossistema | Pitão, R |
 | Aplicativos móveis | Não adequado | Rápido, Kotlin, Dardo |
 | Aplicações de uso geral | Possível, mas nicho | Vá, Python, Ferrugem |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como funciona a inferência de tipo do OCaml?
+**R:** O sistema de tipos Hindley-Milner do OCaml infere tipos sem anotações:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2: O que são tipos de dados algébricos e por que eles são poderosos?
+**R:** ADTs combinam tipos de produtos (registros) e tipos de soma (variantes):
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3: Como funcionam os módulos e functores?
+**R:** Os módulos organizam o código; functores são funções de módulos para módulos:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4: O que torna o OCaml rápido?
+**R:** OCaml compila em código nativo eficiente:
+- Apagamento de tipo – sem verificações de tipo de tempo de execução
+- Números flutuantes e inteiros sem caixa
+- Compilações de correspondência de padrões para tabelas de salto
+- Otimização da chamada final
+- Sem pausas no coletor de lixo (GC incremental)
+### Q5: Como o OCaml se compara a outras linguagens da família ML?
+**R:** OCaml equilibra praticidade e pureza:
+- vs Haskell: OCaml possui recursos imperativos, estado mutável e compilação mais rápida
+- vs F#: OCaml tem um sistema de módulos mais maduro e melhor suporte multiplataforma
+- vs Rust: OCaml tem GC (sem propriedade), mas Rust tem melhor FFI e ecossistema
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Implementando um interpretador de tipo seguro
+**Etapa 1: Entenda o problema**
+Construa um intérprete para uma linguagem de expressão simples.
+**Etapa 2: Identifique a abordagem**
+Use tipos de dados algébricos para expressões e correspondência de padrões para avaliação.
+**Etapa 3: Implementar**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**Etapa 4: Estender**
+Adicione`Let`,`If`,`Lambda`para uma linguagem mais completa.
+### Problema 2: Construindo um Analisador Simples com Combinadores
+**Etapa 1: Entenda o problema**
+Analise expressões aritméticas usando combinadores de analisador.
+**Etapa 2: Identifique a abordagem**
+Construa pequenos analisadores e componha-os.
+**Etapa 3: Implementar**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**Etapa 4: redigir**
+Combine analisadores com`map`,`seq`,`alt`e`many`para analisar expressões completas.
 ---
 
 ## Resumo

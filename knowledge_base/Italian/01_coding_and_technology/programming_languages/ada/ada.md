@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Ada
 Ada è un linguaggio di programmazione compilato e tipizzato staticamente progettato per sistemi critici per la sicurezza e ad alta integrità. Sviluppato originariamente negli anni '80 sotto contratto con il Dipartimento della Difesa degli Stati Uniti (dal nome di Ada Lovelace, considerata la prima programmatrice di computer), Ada enfatizza l'affidabilità, la manutenibilità e la correttezza. È stato progettato per sostituire le centinaia di linguaggi di programmazione allora utilizzati dal Dipartimento della Difesa con un unico linguaggio ben specificato.
 Ada viene utilizzato nell'aviazione (sistemi fly-by-wire), nello spazio (ESA e NASA), nella difesa (guida missilistica, radar), nel trasporto ferroviario e nei dispositivi medici, ovunque in cui un guasto del software possa costare la vita.
@@ -863,5 +864,146 @@ end Main;
 | Scienza dei dati/ML | Non l'ecosistema | Pitone, R |
 ---
 
+## Domande e risposte sintetiche
+### Q1: In che modo il sistema di tipi di Ada previene i bug in fase di compilazione?
+**R:** Il sistema di tipi di Ada è tra i più severi di qualsiasi linguaggio. Rileva errori che altri linguaggi non rilevano:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### D2: Qual è il modello di task di Ada e come si confronta con altri modelli di concorrenza?
+**R:** Ada ha una concorrenza integrata con oggetti e attività protetti:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### D3: Come utilizzo i generici in Ada?
+**R:** I generici di Ada sono espliciti e indipendenti dai tipi:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### D4: Cosa rende Ada adatto a sistemi critici per la sicurezza?
+**R:** Ada fornisce:
+- Sottoinsieme SPARK per la verifica formale (prova matematica di correttezza)
+- Programmazione basata su contratti (pre/postcondizioni, invarianti di tipo)
+- Nessuna allocazione di memoria implicita in SPARK
+- Tasking e scheduling deterministici
+- Profilo Ravenscar per sistemi real-time ad alta integrità
+- Qualificazione della toolchain (DO-178C per l'avionica)
+### Q5: Come posso creare progetti Ada?
+**R:** Utilizza GPRBuild con file di progetto GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: implementazione di una coda indipendente dai tipi
+**Passaggio 1: comprendere il problema**
+Crea una coda limitata e thread-safe con controllo delle dimensioni in fase di compilazione.
+**Passaggio 2: identificare l'approccio**
+Utilizzare un oggetto protetto con un buffer limitato.
+**Passaggio 3: implementazione**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Passaggio 4: verifica**
+L'oggetto protetto garantisce la mutua esclusione. Le barriere all'ingresso impediscono il trabocco/sottopieno.
+### Problema 2: convalida basata su contratto
+**Passaggio 1: comprendere il problema**
+Implementare una funzione di radice quadrata con contratti formali.
+**Passaggio 2: identificare l'approccio**
+Utilizza contratti Ada 2012 (pre/postcondizioni).
+**Passaggio 3: implementazione**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Passaggio 4: verifica**
+I controlli di runtime (asserzioni) rilevano le violazioni. In SPARK, questi diventano obblighi di prova.
+---
+
 ## Riepilogo
-Ada è un linguaggio costruito per la correttezza. Il suo sistema di tipi rigoroso, la concorrenza integrata e il supporto della verifica formale lo rendono la scelta ideale per i sistemi in cui il fallimento non è accettabile. Sebbene la sua comunità sia piccola rispetto alle lingue tradizionali, Ada rimane essenziale nell’aviazione, nella difesa, nello spazio e in altri settori critici per la sicurezza. Per queste applicazioni, l'approccio rigoroso di Ada all'ingegneria del software non è un limite: è il punto.
+Ada è un linguaggio costruito per la correttezza. Il suo sistema di tipi rigoroso, la concorrenza integrata e il supporto per la verifica formale lo rendono la scelta ideale per i sistemi in cui il fallimento non è accettabile. Sebbene la sua comunità sia piccola rispetto alle lingue tradizionali, Ada rimane essenziale nell’aviazione, nella difesa, nello spazio e in altri settori critici per la sicurezza. Per queste applicazioni, l'approccio rigoroso di Ada all'ingegneria del software non è un limite: è il punto.

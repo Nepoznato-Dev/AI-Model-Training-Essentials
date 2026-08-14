@@ -1,41 +1,46 @@
 ---
-# فراداده
-عنوان: "زبان اسمبلی"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی اسمبلی شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [مونتاژ، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "31 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Assembly Language"
+description: "Comprehensive reference for the Assembly programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [assembly, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # زبان اسمبلی
-زبان اسمبلی پایین ترین زبان برنامه نویسی قابل خواندن توسط انسان است. این یک نمایش مستقیم از دستورالعمل‌های کد ماشین کامپیوتر را با استفاده از کدهای یادگاری (مانند `MOV`، `ADD`، `JMP`) به جای باینری خام ارائه می‌کند. هر زبان اسمبلی مختص معماری پردازنده خاصی است (x86، ARM، MIPS، RISC-V) – کد نوشته شده برای یک معماری روی معماری دیگر اجرا نمی شود.
+زبان اسمبلی پایین ترین زبان برنامه نویسی قابل خواندن توسط انسان است. این یک نمایش مستقیم از دستورالعمل‌های کد ماشین کامپیوتر با استفاده از کدهای یادگاری (مانند `MOV`، `ADD`، `JMP`) به جای باینری خام ارائه می‌کند. هر زبان اسمبلی مختص معماری پردازنده خاصی است (x86، ARM، MIPS، RISC-V) – کد نوشته شده برای یک معماری روی معماری دیگر اجرا نمی شود.
 زبان اسمبلی برای ساخت برنامه ها استفاده نمی شود. زمانی استفاده می‌شود که به کنترل مطلق بر روی سخت‌افزار نیاز دارید: نوشتن هسته‌های سیستم‌عامل، درایورهای دستگاه، بوت‌لودرها، سفت‌افزار تعبیه‌شده، بخش‌های کد حیاتی عملکرد، مهندسی معکوس، و درک اینکه چگونه رایانه‌ها در واقع دستورالعمل‌ها را اجرا می‌کنند.
 ---
 
@@ -109,12 +114,12 @@ _start:
 | حالت | نحو (NASM) | توضیحات |
 |------|---------------|-------------|
 | **فوری** | `mov eax, 42`| عملوند یک مقدار ثابت است |
-| **ثبت نام ** |  __محافظت شده_1__ | عملوند در یک رجیستر است |
+| **ثبت نام** | `mov eax, ebx`| عملوند در یک رجیستر است |
 | **مستقیم** | `mov eax, [0x4000]`| عملوند در یک آدرس حافظه ثابت است |
-| **ثبت نام غیر مستقیم** |  __محافظت شده_3__ | عملوند در آدرس موجود در یک ثبات |
+| **ثبت نام غیر مستقیم** | `mov eax, [rbx]`| عملوند در آدرس موجود در یک ثبات |
 | **پایه + جابجایی** | `mov eax, [rbx + 8]`| نشانی = ثبت + افست ثابت |
 | **شاخص مقیاس شده** | `mov eax, [rbx + rcx*4]`| آدرس = پایه + (شاخص × مقیاس) |
-| **SIB کامل** |  __محافظت شده_6__ | پایه + (شاخص × مقیاس) + جابجایی |
+| **SIB کامل** | `mov eax, [rbx + rcx*4 + 16]`| پایه + (شاخص × مقیاس) + جابجایی |
 ```nasm
 ; Demonstrating various addressing modes
 section .data
@@ -423,7 +428,7 @@ ld standalone.o -o standalone
 | مفهوم | توضیحات |
 |---------|-------------|
 | **ثبت نام** | حافظه داخلی CPU (EAX، EBX، ECX، EDX در x86؛ R0-R15 در ARM) |
-| ** آدرس دهی حافظه ** | دسترسی به RAM از طریق آدرس ها (`MOV EAX, [0x1000]`) |
+| ** آدرس دهی حافظه ** | دسترسی به رم از طریق آدرس ها (`MOV EAX, [0x1000]`) |
 | **پشته** | منطقه حافظه LIFO برای فراخوانی تابع و متغیرهای محلی (`PUSH`، `POP`) |
 | **دستورالعمل** | عملیات اساسی: حساب، منطق، حرکت داده، جریان کنترل |
 | **وقفه/سیستال** | درخواست خدمات از سیستم عامل |
@@ -479,7 +484,7 @@ gdb ./program
 | مشکل | علامت | تکنیک رفع اشکال |
 |---------|---------|-------------------|
 | Segfault | برنامه با SIGSEGV خراب می شود | بررسی مقادیر اشاره گر؛ بررسی تراز پشته |
-| حلقه بی نهایت | برنامه قطع می شود | تعیین نقطه شکست در حلقه. بررسی پرچم های شرایط |
+| حلقه بی نهایت | برنامه قطع می شود | تنظیم نقطه شکست در حلقه. بررسی پرچم های شرایط |
 | نتیجه اشتباه | محاسبه نادرست | قدم از طریق حساب؛ بعد از هر عملیات | مقادیر ثبت نام را بررسی کنید
 | پشته فساد | خرابی در RET | بررسی تعادل PUSH/POP. تراز RSP را بررسی کنید (باید 16 بایت تراز شود) |
 | Syscall اشتباه | رفتار غیرمنتظره هسته | بررسی شماره syscall در RAX. بررسی آرگومان های ثبت |
@@ -729,6 +734,85 @@ void process_data(void) {
 | سیستم عامل تعبیه شده (فلز لخت) | زبان سطح بالاتر موجود نیست | ج، زنگ |
 | آموزش و پرورش | آشنایی با معماری کامپیوتر | — |
 | توسعه برنامه عمومی | غیر عملی برای برنامه های پیچیده | هر زبان سطح بالاتر |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین مونتاژ RISC و CISC چیست؟
+**A:** CISC (x86) دارای دستورالعمل های پیچیده و با طول متغیر است. RISC (ARM) دارای دستورالعمل های ساده و با طول ثابت است:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2: پشته در مونتاژ چگونه کار می کند؟
+**A:** پشته به سمت پایین رشد می کند. `push`SP را کاهش می دهد و ذخیره می کند. `pop`بارها و SP را افزایش می دهد:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3: چگونه توابع را در اسمبلی فراخوانی کنم؟
+**A:** قرارداد تماس را دنبال کنید (System V AMD64 در لینوکس، Windows x64 در ویندوز):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: مهمترین دستورالعمل های مونتاژی که باید بدانید چیست؟
+**A:** عملیات حرکت داده، حساب، کنترل جریان و پشته هسته را تشکیل می دهند.
+### Q5: اسمبلی چگونه در تحقیقات امنیتی استفاده می شود؟
+**A:** مهندسی معکوس، توسعه اکسپلویت، تجزیه و تحلیل بدافزار، و درک خروجی کامپایلر همگی به سواد اسمبلی نیاز دارند.
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: پیاده سازی یک حلقه در اسمبلی
+**مرحله 1: مشکل را درک کنید**
+مجموع اعداد صحیح از 1 تا N.
+**مرحله 2: رویکرد را شناسایی کنید**
+از یک رجیستر شمارنده و انباشته کننده استفاده کنید.
+**مرحله 3: پیاده سازی **```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**مرحله 4: بهینه سازی**
+از فرمول N*(N+1)/2 برای O(1) به جای O(N) استفاده کنید.
 ---
 
 ## خلاصه

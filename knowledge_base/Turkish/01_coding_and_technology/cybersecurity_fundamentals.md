@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Siber Güvenliğin Temelleri
-Güvenlik, sonunda bağlanacağınız bir özellik değildir; ilk günden itibaren sistemin her katmanına dahil edilmesi gereken bir disiplindir. İster bir web uygulaması oluşturuyor olun, ister altyapıyı yönetiyor olun, ister bir API gönderiyor olun, tehdit ortamını ve savunmanın temellerini anlamak çok önemlidir.
+Güvenlik, sonradan akla gelen bir düşünce olarak değil, sistemin her katmanına en başından itibaren entegre edilmesi gereken bir disiplindir. Bir web uygulaması oluşturmak, altyapıyı yönetmek veya bir API göndermek olsun, tehdit ortamını ve savunmanın temellerini anlamak çok önemlidir.
 ---
 
 ## Şifreleme ve Kriptografi
@@ -62,7 +62,7 @@ HTTPS, TLS üzerinden HTTP'dir (Aktarım Katmanı Güvenliği). Şunları sağla
 - **Şifreleme**: Aktarılan veriler, dinleyiciler tarafından okunamaz.
 - **Kimlik Doğrulama**: Sunucu kimliğini bir sertifika aracılığıyla kanıtlar.
 - **Bütünlük**: Veriler aktarım sırasında tespit edilmeden değiştirilemez.
-TLS 1.2 veya 1.3'ü kullanın. TLS 1.0 ve 1.1'i devre dışı bırakın. Tarayıcıları her zaman HTTPS kullanmaya zorlamak için HSTS'yi (HTTP Katı Aktarım Güvenliği) etkinleştirin.
+TLS 1.2 veya 1.3'ü kullanın. TLS 1.0 ve 1.1'i devre dışı bırakın. Tarayıcıları her zaman HTTPS kullanmaya zorlamak için HSTS'yi (HTTP Sıkı Aktarım Güvenliği) etkinleştirin.
 ---
 
 ## Kimlik Doğrulama ve Yetkilendirme
@@ -74,7 +74,7 @@ TLS 1.2 veya 1.3'ü kullanın. TLS 1.0 ve 1.1'i devre dışı bırakın. Tarayı
 | **Donanım anahtarı (FIDO2/WebAuthn)** | Çok Yüksek | Yüksek güvenlikli hesaplar (YubiKey) |
 | **Biyometrik** | Orta–Yüksek | Cihazın kilidini açma (parmak izi, yüz) — tek faktör olarak pek iyi değil |
 | **OAuth2 / OIDC** | Yüksek | Üçüncü taraf girişi ("Google ile Oturum Açın") |
-**Şifre kuralları**: Minimum uzunluğu (12-16 karakter) zorunlu kılın, ihlal edilen şifre listelerini kontrol edin, kullanıcı başına tuzlarla karma işlemi yapmak için Argon2id veya bcrypt kullanın.
+**Şifre kuralları**: Minimum uzunluğu zorunlu kılın (12-16 karakter), ihlal edilen şifre listelerini kontrol edin, kullanıcı başına tuzlarla karma işlemi yapmak için Argon2id veya bcrypt kullanın.
 ### Yetkilendirme: Ne Yapabilirsiniz?
 | Modeli | Açıklama | Örnek |
 |----------|----------------|-----------|
@@ -190,10 +190,10 @@ Uygulamanız yalnızca en zayıf bağımlılığı kadar güvenlidir.
 ## Acil Durum Kontrol Listesi
 Bir ihlalden şüphelendiğinizde:
 1. **Panik yapmayın** — ancak hızlı hareket edin.
-2. Etkilenen sistemleri **izole edin** (gerekirse ağ bağlantısını kesin).
+2. **Etkilenen sistemleri izole edin** (gerekirse ağ bağlantısını kesin).
 3. **Kanıtları koruyun**: günlükleri, bellek dökümlerini, disk görüntülerini yakalayın.
 4. **Kapsamın belirlenmesi**: hangi sistemler, hangi veriler?
-5. Güvenliği ihlal edilen tüm kimlik bilgilerini ve sırları **döndürün**.
+5. Güvenliği ihlal edilmiş tüm kimlik bilgilerini ve sırları **döndürün**.
 6. Güvenlik açığını **yama** uygulayın.
 7. Gerekirse etkilenen kullanıcıları ve düzenleyicileri **bilgilendirin** (yasal süreler dahilinde).
 8. **Opsi sonrası**: Temel nedeni ve eylem öğelerini 24-48 saat içinde belgeleyin.

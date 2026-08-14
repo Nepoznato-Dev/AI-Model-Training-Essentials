@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #ruby
 Ruby adalah bahasa pemrograman dinamis, ditafsirkan, berorientasi objek yang dibuat oleh Yukihiro "Matz" Matsumoto dan pertama kali dirilis pada tahun 1995 di Jepang. Ruby dirancang dengan fokus pada kebahagiaan programmer — sintaksisnya elegan dan alami, bacaannya hampir seperti bahasa Inggris. Segala sesuatu di Ruby adalah sebuah objek, termasuk tipe primitif seperti integer dan boolean. Ruby terkenal dengan kerangka web Ruby on Rails, yang merevolusi pengembangan web dengan mempopulerkan konvensi atas konfigurasi dan pembuatan prototipe cepat.
 Selain Rails, Ruby digunakan untuk pembuatan skrip, otomatisasi, perkakas DevOps (Chef, Puppet), dan sebagai bahasa tujuan umum. Sintaksnya yang ekspresif dan kemampuan metaprogramming yang kuat membuatnya menyenangkan untuk menulis.
@@ -61,7 +62,7 @@ Selain Rails, Ruby digunakan untuk pembuatan skrip, otomatisasi, perkakas DevOps
 ---
 
 ## Dasar Sintaks
-### Variabel dan Jenis
+### Variabel dan Tipe
 ```ruby
 # Variables (no type declarations needed)
 name = "Alice"
@@ -820,6 +821,324 @@ fly deploy
 | Sistem yang kritis terhadap kinerja | Terlalu lambat | C, C++, Karat, Buka |
 | Ilmu data / ML | Bukan ekosistem | Piton, R |
 | Aplikasi seluler | Tidak cocok | Cepat, Kotlin, Berkibar |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`proc`,`lambda`, dan`block`di Ruby?
+**A:** Ketiganya merupakan penutupan, namun perilakunya berbeda.`block`adalah potongan kode anonim yang diteruskan ke metode dengan`do...end`atau`{}`.`proc`adalah blok yang disimpan sebagai objek — ia tidak memeriksa jumlah argumen dan`return`keluar dari metode penutup.`lambda`seperti proc tetapi memeriksa jumlah argumen dan`return`hanya keluar dari lambda. Gunakan blok untuk callback satu kali, procs untuk cuplikan yang dapat digunakan kembali, dan lambda saat Anda memerlukan perilaku seperti metode.
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### Q2: Bagaimana cara kerja permata Ruby dan Bundler?
+**A:** Permata adalah sistem paket Ruby — perpustakaan yang dapat digunakan kembali dan didistribusikan melalui RubyGems.org.`Gemfile`mendeklarasikan dependensi; `bundle install`menyelesaikan versi dan membuat`Gemfile.lock`agar dapat direproduksi. `bundle exec`menjalankan perintah dalam konteks permata. Gunakan`gem 'name', '~> 2.0'`untuk batasan versi yang kompatibel. Selalu komit`Gemfile.lock`untuk aplikasi, tetapi tidak untuk perpustakaan.
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### Q3: Apa saja tipe simbol Ruby, dan mengapa itu penting?
+**A:** Simbol (`:name`) adalah string yang tidak dapat diubah dan disimpan — setiap simbol unik hanya ada satu kali dalam memori. Mereka ideal untuk kunci hash, nama metode, dan pengidentifikasi. Ruby juga memiliki objek`Symbol`yang digunakan secara luas dalam metaprogramming (`send`,`define_method`). Gunakan simbol untuk pengidentifikasi tetap; gunakan string saat Anda perlu memanipulasi konten.
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### Q4: Bagaimana cara kerja metaprogramming Ruby, dan kapan saya harus menggunakannya?
+**A:** Ruby mengizinkan kode untuk mendefinisikan kode saat runtime:`define_method`membuat metode secara dinamis,`method_missing`mencegat pemanggilan metode yang tidak ditentukan,`send`memanggil metode privat, dan`class_eval`/`instance_eval`mengevaluasi kode dalam konteks kelas/instance. Pemrograman meta sangat ampuh namun membuat kode lebih sulit dipahami — gunakanlah untuk DSL dan keajaiban kerangka kerja, bukan untuk logika sehari-hari.
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### Q5: Apa cara terbaik untuk menangani kesalahan di Ruby?
+**A:** Ruby menggunakan pengecualian untuk penanganan kesalahan. Tentukan kelas pengecualian khusus yang diwarisi dari`StandardError`(bukan`Exception`— yang menangkap kesalahan tingkat sistem). Gunakan`begin/rescue/else/ensure`untuk penanganan terstruktur. Ajukan pengecualian khusus, bukan`RuntimeError`umum. Gunakan`rescue`sebagai pengubah untuk satu kalimat sederhana.
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membangun DSL untuk File Konfigurasi
+**Pernyataan Masalah:** Buat Ruby DSL yang memungkinkan penentuan konfigurasi server dalam sintaksis deklaratif yang mudah dibaca. DSL harus mendukung blok bersarang, validasi, dan serialisasi ke JSON.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) sintaks DSL yang bersih menggunakan blok dan pemanggilan metode, (2) pengumpulan data melalui`instance_eval`atau metode eksplisit, (3) validasi bidang yang diperlukan, (4) serialisasi JSON. Metaprogramming Ruby menjadikan DSL alami.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Gunakan`instance_eval`dengan kelas pembuat untuk menangkap panggilan DSL.
+- Simpan konfigurasi dalam variabel instan.
+- Validasi bidang yang diperlukan sebelum serialisasi.
+- Gunakan`to_h`dan`JSON.generate`untuk keluaran.
+**Langkah 3 — Terapkan Solusi:**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- DSL dapat dibaca dan bersifat deklaratif — non-programmer dapat memahaminya.
+- Validasi menangkap bidang wajib yang hilang pada waktu konstruksi.
+-`instance_eval`menyediakan sintaks blok yang bersih tetapi membatasi`self`— untuk DSL yang lebih kompleks, gunakan`BasicObject`sebagai superkelas pembuatnya.
+- Produksi: pertimbangkan permata`dry-configurable`atau`configurate`untuk DSL konfigurasi tingkat produksi.
+### Masalah 2: Menerapkan Perpustakaan Memoisasi
+**Pernyataan Masalah:** Buat modul memoisasi yang dapat digabungkan ke dalam kelas mana pun untuk menyimpan hasil metode dalam cache. Mendukung TTL (time-to-live), batas ukuran cache, dan kunci cache khusus.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) modul yang menambahkan metode kelas `memoize`, (2) metode yang membungkus metode target dengan logika caching, (3) dukungan untuk kedaluwarsa TTL, (4) penggusuran LRU ketika cache penuh.`Module#prepend`dan`define_method`Ruby ideal untuk ini.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Gunakan`Module.new`dengan`define_method`untuk membuat pembungkus.
+- Simpan cache dalam hash dengan stempel waktu untuk TTL.
+- Gunakan`prepend`untuk menyisipkan lapisan caching sebelum metode aslinya.
+- Mendukung opsi yang dapat dikonfigurasi: `ttl`, `max_size`, `key`.
+**Langkah 3 — Terapkan Solusi:**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Keamanan thread:`Mutex`melindungi pembacaan/penulisan cache; komputasi terjadi di luar kunci.
+- TTL: entri yang kedaluwarsa dibersihkan dengan malas saat diakses.
+- Penggusuran LRU: ketika cache melebihi`max_size`, entri terlama (berdasarkan stempel waktu) akan dihapus.
+- Kunci khusus: lambda`key`memungkinkan kontrol menyeluruh atas identitas cache.
+- Produksi: gunakan permata`memoist`untuk kasus sederhana, atau memoisasi yang didukung Redis untuk cache terdistribusi.
 ---
 
 ## Ringkasan

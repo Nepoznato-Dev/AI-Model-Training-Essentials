@@ -604,5 +604,148 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Penskalaan horizontal besar-besaran | Sulit untuk memecah database SQL | Cassandra, DynamoDB, CockroachDB |
 ---
 
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`WHERE`dan`HAVING`?
+**A:**`WHERE`memfilter baris sebelum dikelompokkan; `HAVING`memfilter grup setelah agregasi:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: Apa perbedaan fungsi jendela dengan GROUP BY?
+**A:** Fungsi jendela menghitung seluruh baris tanpa menciutkannya:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3: Bagaimana cara mengoptimalkan kueri yang lambat?
+**A:** Strategi utama:
+- Tambahkan indeks pada kolom yang digunakan di`WHERE`,`JOIN`, dan`ORDER BY`
+- Hindari`SELECT *`— pilih kolom yang diperlukan saja
+- Gunakan`EXPLAIN`/`EXPLAIN ANALYZE`untuk membaca rencana kueri
+- Ganti subkueri dengan GABUNG jika memungkinkan
+- Gunakan CTE agar mudah dibaca (biasanya tidak ada penalti kinerja)
+- Hindari fungsi pada kolom yang diindeks di WHERE: gunakan`WHERE date >= '2024-01-01'`bukan `WHERE YEAR(date) = 2024`
+### Q4: Apa itu CTE dan kapan saya harus menggunakannya?
+**A:** Ekspresi Tabel Umum membuat kumpulan hasil sementara bernama:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5: Bagaimana cara menangani nilai NULL dengan benar?
+**A:** NULL melambangkan hal yang tidak diketahui — tidak sama dengan apa pun, termasuk dirinya sendiri:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menemukan N Teratas per Grup
+**Langkah 1: Pahami Masalahnya**
+Temukan 3 karyawan dengan bayaran tertinggi di setiap departemen.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan fungsi jendela dengan`ROW_NUMBER()`yang dipartisi berdasarkan departemen.
+**Langkah 3: Terapkan**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Langkah 4: Verifikasi**
+Pastikan setiap departemen mempunyai paling banyak 3 baris. Tangani ikatan dengan`DENSE_RANK()`jika diperlukan.
+### Masalah 2: Membuat Laporan Pertumbuhan Tahun ke Tahun
+**Langkah 1: Pahami Masalahnya**
+Hitung pendapatan bulanan dan persentase pertumbuhan tahun ke tahun.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`DATE_TRUNC`untuk pengelompokan dan fungsi jendela`LAG()`untuk perbandingan tahun sebelumnya.
+**Langkah 3: Terapkan**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Langkah 4: Verifikasi**
+Periksa 12 bulan pertama memiliki NULL untuk tahun sebelumnya. Validasi persentase pertumbuhan terhadap angka yang diketahui.
+### Masalah 3: Memutar Baris ke Kolom
+**Langkah 1: Pahami Masalahnya**
+Ubah jumlah status dari baris ke kolom.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan agregasi bersyarat (`CASE`di dalam`SUM`).
+**Langkah 3: Terapkan**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan kolom persentase dan total berjalan.
+---
+
 ## Ringkasan
 SQL adalah bahasa berusia 50 tahun yang tetap penting. Setiap pengembang, ilmuwan data, dan analis perlu mengetahuinya. Bahasa inti distandarisasi dan portabel; perbedaan dialek dapat dikelola. SQL modern (dengan fungsi jendela, CTE, dan dukungan JSON) cukup ekspresif untuk sebagian besar tugas data. Keterampilan utamanya adalah: menulis kueri yang efisien, memahami indeks, membaca rencana kueri, dan merancang skema yang baik. Jika Anda bekerja dengan data, SQL tidak dapat dinegosiasikan.

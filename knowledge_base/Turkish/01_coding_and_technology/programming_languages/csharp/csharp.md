@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C#
 C# ("C-sharp" olarak telaffuz edilir), Anders Hejlsberg liderliğinde Microsoft tarafından geliştirilen ve ilk kez 2002'de piyasaya sürülen modern, nesne yönelimli, tür açısından güvenli bir programlama dilidir. .NET platformunda çalışır ve C++'ın gücünü Visual Basic'in üretkenliğiyle birleştirmek için tasarlanmıştır. Günümüzde C#, web uygulamaları (ASP.NET), masaüstü yazılımı (Windows), oyun geliştirme (Unity), mobil uygulamalar (MAUI), bulut hizmetleri (Azure) ve daha fazlası için kullanılan çok yönlü, platformlar arası bir dildir.
 C#, diğer dillerden (LINQ, eşzamansız/beklemede, kayıtlar, kalıp eşleştirme) en iyi fikirleri sürekli olarak benimsemiştir ve bu da onu mevcut en zengin özelliklere sahip ve geliştirici dostu dillerden biri haline getirmiştir.
@@ -658,7 +659,7 @@ dotnet lambda deploy-function my-function
 | Çerçeve | Etki Alanı | Açıklama |
 |-----------|-----------|------------|
 | **ASP.NET Çekirdeği** | Web | API'ler ve web uygulamaları için yüksek performanslı web çerçevesi |
-| **Blazor** | Web (ön uç) | JavaScript yerine C# ile etkileşimli web kullanıcı arayüzleri oluşturun |
+| **Blazor** | Web (ön uç) | JavaScript yerine C# kullanarak etkileşimli web kullanıcı arayüzleri oluşturun |
 | **Varlık Çerçevesi Çekirdeği** | ORM | LINQ ile veritabanı erişimi; kod öncelikli geçişler |
 | **Birlik** | Oyunlar | Dünyanın en popüler oyun motoru (C# komut dosyası oluşturma) |
 | **.NET MAUI** | Mobil/Masaüstü | iOS, Android, macOS, Windows için çapraz platform uygulamaları |
@@ -683,11 +684,11 @@ dotnet publish -c Release -r linux-x64
 ## C# Dil Sürümleri
 | Sürüm | Yıl | Temel Özellikler |
 |-----------|------|------------|
-| C# 7 | 2017 | Desen eşleştirme, tanımlama grupları,`out`değişkenler, yerel işlevler |
-| C# 8 | 2019 | Null yapılabilir referans türleri,`switch`ifadeleri, eşzamansız akışlar |
-| C# 9 | 2020 | **Kayıtlar**, üst düzey ifadeler,`init`özellikler |
-| C# 10 | 2021 | Kayıt yapıları, global `using`, dosya kapsamlı ad alanları |
-| C# 11 | 2022 | Ham dize değişmezleri, liste kalıpları,`required`üyeler, genel matematik |
+| C# 7 | 2017 | Desen eşleştirme, demetler,`out`değişkenleri, yerel işlevler |
+| C# 8 | 2019 | Null yapılabilir başvuru türleri,`switch`ifadeleri, eşzamansız akışlar |
+| C# 9 | 2020 | **Kayıtlar**, üst düzey ifadeler,`init`özellikleri |
+| C# 10 | 2021 | Kayıt yapıları, genel `using`, dosya kapsamlı ad alanları |
+| C# 11 | 2022 | Ham dize değişmezleri, liste kalıpları,`required`üyeleri, genel matematik |
 | C# 12 | 2023 | Birincil oluşturucular, koleksiyon ifadeleri, satır içi diziler |
 | C# 13 | 2024 | `params`koleksiyonları, yeni kilit türleri, birinci sınıf açıklıklar |
 ---
@@ -704,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | Mobil uygulamalar (MAUI) | C# ile platformlar arası | Flutter, React Native veya native Swift/Kotlin |
 | AI/ML | ML.NET ile mümkün | Python (ezici çoğunlukla tercih edilir) |
 | CLI araçları / komut dosyaları | Mümkün ama ayrıntılı | Git, Pas, Python |
+---
+
+## Sentetik Soru-Cevap
+### S1: C#'ta`class`ile`record`arasındaki fark nedir?
+**C:** `class`, varsayılan olarak değiştirilebilir özelliklere sahip bir referans türüdür; iki değişken aynı nesneye referans verebilir.`record`(C# 9+), değere dayalı eşitliğe sahip bir referans türüdür; aynı verilere sahip iki kayıt eşit kabul edilir. Kayıtlar yalnızca başlangıç ​​özelliklerine, yerleşik bir `ToString`'ye sahiptir ve tahribatsız mutasyon için`with`ifadelerini destekler. Veri taşıyıcıları (DTO'lar, değer nesneleri) için kayıtları kullanın; kimliği olan, davranış açısından zengin varlıklar için sınıfları kullanın.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### S2: Zaman uyumsuz/beklemede ve`Task`dahili olarak nasıl çalışır?
+**A:** `async/await`, derleyici tarafından oluşturulan bir durum makinesi üzerindeki sözdizimsel şekerdir.`await`ve`Task`yaptığınızda, yöntem bekleme noktasında bölünür: önceki her şey eşzamanlı olarak yürütülür, ardından geri kalan bir devam olarak kaydedilir. İplik başka işler yapmak üzere serbest bırakılır. `Task<T>`gelecekteki bir değeri temsil eder.  `ValueTask<T>`, sonuç zaten mevcut olduğunda yığın tahsisini önleyen sıcak yollar için bir yapı alternatifidir.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### S3: Uzantı yöntemleri nelerdir ve bunları ne zaman kullanmalıyım?
+**C:** Uzantı yöntemleri, mevcut türlere, onları değiştirmeden yöntemler ekler. Bunlar, ilk parametresinde`this`anahtar sözcüğü bulunan, statik bir sınıftaki statik yöntemlerdir. Akıcı, zincirlenebilir bir API sağlarlar. Sahip olmadığınız türlere (`string` veya`IEnumerable<T>`gibi) yardımcı yöntemler eklemek için bunları kullanın. Bunları aşırı kullanmaktan kaçının; kodun keşfedilmesini zorlaştırabilirler.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### S4: Desen eşleştirme modern C#'ta nasıl çalışır?
+**C:** C# giderek daha güçlü desen eşleştirmesi ekledi. Anahtar ifadeleri (C# 8), tür kalıpları, özellik kalıpları, ilişkisel kalıplar ve liste kalıpları (C# 11) kısa ve ifade edici koşullu mantığa izin verir. Desen eşleştirme, uzun if/else zincirlerinin yerini alır ve derleyici tarafından kapsamlı bir şekilde kontrol edilir.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### S5: .NET'te bağımlılık ekleme nedir ve bunu nasıl kullanırım?
+**C:** .NET,`Microsoft.Extensions.DependencyInjection`aracılığıyla yerleşik DI desteğine sahiptir. Hizmetleri yaşam süreleri (Singleton, Scoped, Transient) ile kaydedersiniz ve konteyner bunları yapıcı parametreleri aracılığıyla enjekte eder. Singleton: Uygulama için bir örnek. Kapsamlı: HTTP isteği başına bir tane. Geçici: her seferinde yeni örnek.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Önbelleğe Alma ile Genel Bir Depo Oluşturun
+**Sorun Açıklaması:** Önbelleğe alma ekleyen bir dekoratörle genel bir depo modeli uygulayın. Depo CRUD işlemlerini desteklemeli ve önbellek dekoratörü okumaları önbelleğe almalı ve yazma işlemlerini geçersiz kılmalıdır.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) genel bir`IRepository<T>`arayüzü, (2) somut bir uygulama (örneğin, bellek içi), (3) herhangi bir depoyu saran bir önbellek dekoratörü, (4) yazma işlemlerinde önbelleği geçersiz kılma. Dekoratör modeli, önbelleğe almayı veri erişim mantığına dik olarak tutar.
+**2. Adım — Yaklaşımı Belirleyin:**
+- `IRepository<T>`'yi`Get`,`GetAll`,`Add`,`Update`,`Delete`ile tanımlayın.
+- `IRepository<T>`'yi saran ve `IMemoryCache`'yi kullanan`CachingRepository<T>`oluşturun.
+- Önbellek anahtarı:`typeof(T).Name:{id}`.
+- Yazma işlemlerinde önbellek girişini geçersiz kılın.
+**3. Adım — Çözümü Uygulayın:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Endişelerin ayrılması: önbellekleme, depoya karıştırılmayan bir dekoratördür.
+- DI kaydı:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(Scrutor kullanılarak).
+- Üretim: Çoklu sunucu senaryoları için`IDistributedCache`(Redis) kullanın ve`CacheStampede`korumasıyla önbellek ayırma modelleri ekleyin.
+### Sorun 2: Bir Ara Yazılım Ardışık Düzeni Uygulama
+**Sorun Açıklaması:** ASP.NET Core'un istek işlem hattına benzer bir ara yazılım işlem hattı oluşturun. Her ara katman yazılımı isteği işleyebilir, bir sonraki ara yazılımı çağırabilir ve yanıtı işleyebilir.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) boru hattını temsil eden bir`RequestDelegate`türü, (2) bir sonraki temsilciyi saran ara katman yazılımı, (3) ara katman yazılımı oluşturmak için bir oluşturucu API'si. Bu, delegelerle uygulanan Sorumluluk Zinciri modelidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- `RequestDelegate`, `Func<Context, RequestDelegate, Task>`'dir.
+- Her ara katman yazılımı bağlamı ve bir`next`işlevini alır.
+-`Use`ara yazılım ekler; `Build`bunları tek bir delege halinde oluşturur.
+**3. Adım — Çözümü Uygulayın:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Ara katman yazılımı sırası önemlidir: ilk eklenen = en dıştaki (istek üzerine ilk olarak yürütülür, yanıt üzerine son olarak yürütülür).
+- Terminal ara yazılımı (`next` çağrısı yok) boru hattına kısa devre yapıyor.
+- Üretim: ASP.NET Core'un işlem hattı tam olarak bu modeldir ve sıfır tahsis için derlenmiş ifade ağaçlarıyla optimize edilmiştir.
 ---
 
 ## Özet

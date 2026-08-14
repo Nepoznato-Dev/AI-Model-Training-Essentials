@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Java
 Java 是一种静态类型、面向对象的编程语言，由 Sun Microsystems 的 James Gosling 创建并于 1995 年发布。其设计理念“一次编写，随处运行”(WORA) 是通过 Java 虚拟机 (JVM) 实现的，它允许编译后的 Java 代码在任何具有 JVM 实现的平台上运行。 Java 是历史上使用最广泛的编程语言之一，为企业后端、Android 应用、大数据系统和金融服务提供支持。
-尽管 Java 已有近 30 年的历史，但仍在不断发展。现代 Java（版本 17+）包括记录、密封类、模式匹配、虚拟线程以及与更新语言竞争的不断发展的生态系统。
+尽管 Java 已有近 30 年的历史，但它仍在不断发展。现代 Java（版本 17+）包括记录、密封类、模式匹配、虚拟线程以及与更新语言竞争的不断发展的生态系统。
 ---
 
 ## 为什么 Java 很重要
@@ -702,21 +703,392 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Java 8 | 2014年| **LTS** — Lambda、Stream API、可选、默认方法。至今仍被广泛使用。 |
 | Java 11 | 2018 | **LTS** — HTTP 客户端 API，用于局部变量的 `var`，单文件源启动器 |
 | Java 17 | 2021 | **LTS** — 密封类、`instanceof` 的模式匹配、记录、文本块 |
-| Java 21 | 2023 | **LTS** — **虚拟线程** (Project Loom)，`switch` 的模式匹配，记录模式 |
+| Java 21 | 2023 | **LTS** — **虚拟线程**（Project Loom），`switch` 的模式匹配，记录模式 |
 | Java 25 | 2025 | 2025 **LTS** — 字符串模板、进一步模式匹配、外部函数 API |
 **LTS**（长期支持）版本会持续多年更新。对于生产，请使用 Java 21 或更高版本。
 ---
 
 ## 何时使用 Java
-|场景 |为什么选择 Java |更好的选择|
+|场景|为什么选择 Java |更好的选择|
 |----------|---------|--------------------|
 |企业后台 |庞大的生态系统，Spring Boot，经过规模验证 | Kotlin（相同的 JVM，更简洁）|
-|安卓开发 |已建立的庞大代码库 | Kotlin（Google 的首选）|
+|安卓开发|已建立的庞大代码库 | Kotlin（Google 的首选）|
 |大数据（Hadoop、Spark、Kafka）|生态系统构建于Java/Scala |用于数据科学方面的 Python |
 |金融系统|性能+可靠性+成熟的工具| --|
 |微服务| Spring Boot + 云原生框架 |寻求更简单的服务 |
-|简单的脚本 |仪式太多| Python、Shell |
+|简单的脚本 |仪式太多 | Python、Shell |
 | CLI 工具 |启动慢|去吧，鲁斯特 |
+---
+
+## 综合问答
+### Q1：Java中`==`和`.equals()`有什么区别？
+**A:**`==`比较对象引用（标识） - 它检查两个变量是否指向内存中的同一对象。 `.equals()`比较对象内容（值相等）。对于基元（`int`、`double`），`==` 直接比较值。对于对象（包括`String`），请始终使用`.equals()`来比较内容。唯一的例外是与`null`进行比较，其中`==`是正确的。
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### Q2：JVM 垃圾收集器是如何工作的，我应该使用哪一个？
+**A:** GC 会自动从不再可达的对象中回收内存。现代 JVM (21+) 提供多种收集器：G1（默认、平衡）、ZGC（超低暂停时间，<1 毫秒）和 Shenandoah（低暂停时间，OpenJDK）。对于大多数应用程序，默认的 G1 就可以了。对于延迟敏感的服务，请使用 ZGC (`-XX:+UseZGC`)。对于面向吞吐量的批处理，请使用并行 GC (`-XX:+UseParallelGC`)。
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### Q3：与传统循环相比，我什么时候应该使用 `Stream API`？
+**答：** 当操作是清晰的管道（过滤器、映射、化简）时使用 Streams — 它们可以更好地表达意图，并且可以轻松地与`.parallelStream()`并行化。当您需要修改外部状态、当性能至关重要（流有开销）或当逻辑涉及复杂的控制流（中断、继续、多次返回）时，请使用传统循环进行简单迭代。避免使用流进行简单的`for-each`操作。
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### Q4：现代 Java 中的记录、密封类和模式匹配是什么？
+**答：** 记录 (Java 16) 是不可变的数据载体 - 它们自动生成构造函数、getter、`equals`、`hashCode`和`toString`。密封类 (Java 17) 限制哪些类可以扩展它们——对于建模有限类型层次结构很有用。模式匹配 (Java 21) 允许`switch`表达式解构类型、记录和值 — 替换冗长的`instanceof`链。
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### Q5：如何正确处理检查异常和非检查异常？
+**A:** 检查异常（`IOException`、`SQLException`）必须在`throws`中声明或捕获 - 它们代表调用者应该了解的可恢复条件。未经检查的异常（`RuntimeException`子类，如`NullPointerException`、`IllegalArgumentException`）代表编程错误。最佳实践：谨慎使用检查异常（它们会产生耦合），更喜欢使用`Optional`来避免预期的缺失，并在跨越 API 边界时将检查异常包装在未检查异常中。
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：构建线程安全的生产者-消费者管道
+**问题陈述：** 用 Ja​​va 设计一个生产者-消费者管道，其中多个生产者生成工作项，多个消费者同时处理它们，并且系统支持正常关闭并耗尽剩余项。
+**第 1 步 — 了解问题：**
+我们需要：（1）一个有界队列来缓冲生产者和消费者之间的工作项，（2）多个生产者线程添加项目，（3）多个消费者线程处理项目，（4）一种发出关闭信号并耗尽剩余项目的机制。 Java 的`BlockingQueue`就是专门为此构建的。
+**第 2 步 — 确定方法：**
+- 使用 `ArrayBlockingQueue`（有界）来防止无界内存增长。
+- 使用毒丸模式作为关闭信号。
+- 使用`ExecutorService`进行线程池管理。
+- 使用`CountDownLatch`等待所有消费者完成排空。
+**第 3 步 — 实施解决方案：**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**第 4 步 — 验证和优化：**
+- 有界队列防止 OOM：`ArrayBlockingQueue(1000)` 限制内存。
+- 毒丸模式：每个消费者收到药丸后干净利落地退出。
+-`poll(1, SECONDS)`具有超时功能，可防止生产者速度缓慢时消费者永远阻塞。
+- 生产：使用`LinkedBlockingQueue`实现无界，或使用`Disruptor`(LMAX) 实现超低延迟管道。
+### 问题 2：实现基于注释的自定义验证器
+**问题陈述：** 使用自定义注释创建验证框架。用户使用`@NotNull`、`@Min(0)`、`@Max(100)`、`@Size(min=1, max=50)`注释字段，并调用`Validator.validate(obj)`来获取违规列表。
+**第 1 步 — 了解问题：**
+我们需要：（1）带有参数的自定义注释，（2）一个在运行时读取注释的基于反射的验证器，（3）一个包含所有验证错误的结果对象。这展示了Java的注解处理和反射能力。
+**第 2 步 — 确定方法：**
+- 使用`@Retention(RUNTIME)`和`@Target(FIELD)`定义注释。
+- 使用`Class.getDeclaredFields()`迭代字段。
+- 使用`Field.getAnnotation()`读取注释值。
+- 将字段值与注释约束进行比较。
+- 将违规行为收集到列表中。
+**第 3 步 — 实施解决方案：**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**第 4 步 — 验证和优化：**
+- 反射开销：验证可接受（每个请求调用一次）。对于热路径，缓存字段查找或使用编译时注释处理（如 Hibernate Validator）。
+- 可扩展性：通过在`validate()`中创建注释 + 处理程序块来添加新注释。
+- 生产：使用 `jakarta.validation`（Bean Validation 3.0）——它可以完成所有这些工作，并通过注释处理器进行编译时处理。
+### 问题 3：使用重试构建速率受限的 HTTP 客户端
+**问题陈述：** 创建一个 HTTP 客户端包装器，以指数退避自动重试失败的请求，遵守速率限制，并支持熔断（停止调用失败的服务）。
+**第 1 步 — 了解问题：**
+我们需要：（1）具有指数退避和抖动的重试逻辑，（2）速率限制以避免压倒目标服务，（3）断路器模式 - 在连续 N 次失败后，停止调用服务一段冷却时间。这是三个可组合的关注点。
+**第 2 步 — 确定方法：**
+- 使用`java.net.http.HttpClient`(Java 11+) 作为基本客户端。
+- 使用`Thread.sleep`作为包装器实现重试以进行退避。
+- 使用`Semaphore`进行速率限制（或使用`java.time`进行令牌桶）。
+- 将断路器实现为状态机：CLOSED → OPEN → HALF_OPEN。
+**第 3 步 — 实施解决方案：**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**第 4 步 — 验证和优化：**
+- 带有抖动的指数退避可防止惊群（所有重试同时发生）。
+- 断路器：在`failureThreshold`连续失败后，`cooldownMs` 的电路打开 — 不发送任何请求，从而保护失败的服务。
+- 速率限制器：`Semaphore`，具有定期补货上限吞吐量。
+- 生产：使用`resilience4j`— 它提供所有三种模式（重试、速率限制器、断路器）以及正确的实现、指标和 Spring Boot 集成。
 ---
 
 ＃＃ 概括

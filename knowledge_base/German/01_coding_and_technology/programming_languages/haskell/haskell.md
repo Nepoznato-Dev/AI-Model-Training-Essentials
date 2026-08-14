@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Haskell
 Haskell ist eine rein funktionale, statisch typisierte und träge ausgewertete Programmiersprache. Haskell wurde 1990 erstmals standardisiert (Haskell 90) und durch mehrere Versionen verfeinert (Haskell 2010 ist der aktuelle Standard). Haskell ist bekannt für seine mathematische Genauigkeit, sein leistungsstarkes Typensystem (mit Typklassen, Monaden und algebraischen Datentypen) und die Betonung der Korrektheit durch Typen.
 Haskell ist keine Mainstream-Sprache, aber sein Einfluss ist enorm. Konzepte wie Monaden, Lazy Evaluation und Typklassen haben Rust, Swift, Kotlin, Scala und TypeScript beeinflusst. Haskell wird in den Bereichen Finanzen (Standard Chartered, Barclays), Compiler (GHC) und formale Verifizierung eingesetzt.
@@ -474,7 +475,7 @@ tests:
 |---------|-------------|
 | `stack new my-project`| Neues Projekt aus Vorlage erstellen |
 | `stack build`| Erstellen Sie das Projekt |
-| `stack ghci`| Starten Sie die interaktive REPL mit geladenem Projekt |
+| `stack ghci`| Starten Sie interaktives REPL mit geladenem Projekt |
 | `stack test`| Testsuite ausführen |
 | `stack bench`| Benchmarks durchführen |
 | `stack haddock`| Dokumentation erstellen |
@@ -673,7 +674,7 @@ runPython code = do
 
 ## Designmuster
 ### Tagless Final (eingebettete DSLs)
-Der taglose endgültige Stil codiert DSLs mithilfe von Typklassen und ermöglicht so mehrere Interpretationen.
+Der taglose endgültige Stil kodiert DSLs mithilfe von Typklassen und ermöglicht so mehrere Interpretationen.
 ```haskell
 {-# LANGUAGE FlexibleInstances #-}
 
@@ -807,9 +808,9 @@ main = do
 | Werkzeug | Zweck | Befehl |
 |------|---------|---------|
 | **GHC-Profiler** | Zeit- und Zuordnungsprofilierung | `stack build --profile`dann`./app +RTS -p`|
-| **ThreadScope** | Parallele Ausführung visualisieren | `./app +RTS -l`und dann`app.eventlog`| öffnen
+| **ThreadScope** | Parallele Ausführung visualisieren | `./app +RTS -l`öffnen Sie dann`app.eventlog`|
 | **ghc-events** | Ereignisprotokolle analysieren | `ghc-events show app.eventlog`|
-| **Kriterium** | Statistisches Benchmarking | Verwenden Sie das Paket`criterion`|
+| **Kriterium** | Statistisches Benchmarking | Verwenden Sie das `criterion`-Paket |
 | **hp2pretty** | Heap-Profile visualisieren | `./app +RTS -h`dann`hp2pretty app.hp`|
 ### Benchmarking mit Criterion
 ```haskell
@@ -933,12 +934,216 @@ pkgs.haskellPackages.developPackage {
 | Szenario | Warum Haskell | Bessere Alternative |
 |----------|-----------|-------------------|
 | Formale Verifizierung | Typsystem ermöglicht Beweise | Agda, Coq |
-| Compiler-Entwicklung | Hervorragend geeignet für die Sprachimplementierung | OCaml, Rust |
+| Compiler-Entwicklung | Hervorragend geeignet für die Sprachimplementierung | OCaml, Rost |
 | Finanzsysteme | Korrektheit durch Typen | Scala, F# |
 | FP-Konzepte lernen | Die reinste funktionale Sprache | Scala (praktischer), Ulme |
 | Allgemeine Anwendungsentwicklung | Möglich, aber Nische | Python, Go, Java |
 | Webentwicklung | Yesod/Diener existieren, aber begrenzt | JavaScript/TypeScript |
 | Datenwissenschaft | Nicht das Ökosystem | Python, R |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Wie wirkt sich Haskells verzögerte Bewertung auf die Leistung aus?
+**A:** Lazy Evaluation bedeutet, dass Ausdrücke nur bei Bedarf berechnet werden, was unendliche Datenstrukturen und zusammensetzbare Pipelines ermöglicht. Es kann jedoch zu Speicherplatzlecks kommen, wenn sich Thunks ansammeln:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Verwenden Sie`foldl'`(von `Data.List`) anstelle von`foldl`für numerische Faltungen. Verwenden Sie die Knallmuster`!`oder `seq`, um bei Bedarf eine Auswertung zu erzwingen.
+### F2: Was ist der praktische Unterschied zwischen`Functor`,`Applicative`und`Monad`?
+**A:** Jede Typklasse fügt Funktionen hinzu:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** ordnet eine reine Funktion einem Kontext zu. **Applicative** wendet Funktionen an, die selbst in einem Kontext stehen. **Monad** lässt jeden Schritt vom Ergebnis des vorherigen Schritts abhängen. In der Praxis: Verwenden Sie`fmap`/`<$>`für einfache Transformationen,`<*>`zum Kombinieren von Effekten und`>>=`/`do`für sequentielle abhängige Berechnungen.
+### F3: Wie gehe ich mit Nebenwirkungen in reinem Haskell-Code um?
+**A:** Verwenden Sie das Typsystem, um reinen und effektiven Code zu trennen:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Halten Sie die Kernlogik rein und drängen Sie die Effekte an die Grenzen. Verwenden Sie`ReaderT`für die Konfiguration,`ExceptT`für Fehler und`StateT`für den veränderlichen Status.
+### F4: Was sind Typklassen und wie unterscheiden sie sich von OOP-Schnittstellen?
+**A:** Typklassen definieren Verhalten, das Typen implementieren können. Im Gegensatz zu OOP-Schnittstellen sind sie offen (jeder Typ kann eine Instanz sein) und unterstützen Ad-hoc-Polymorphismus:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### F5: Wie strukturiere ich ein Haskell-Projekt für den realen Einsatz?
+**A:** Verwenden Sie Cabal oder Stack mit einem Standardlayout:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Wichtige Vorgehensweisen: E/A in`Main.hs`oder einem dedizierten `IO`-Modul belassen, Kernlogik rein und testbar machen, `newtype`-Wrapper für Domänentypen verwenden.
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Implementierung einer sicheren Divisionsfunktion mit Fehlerberichterstattung
+**Schritt 1: Verstehen Sie das Problem**
+Wir brauchen eine Division, die die Division durch Null handhabt und sinnvolle Fehler meldet, nicht nur Abstürze.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie `Either`, um entweder eine Fehlermeldung oder das Ergebnis zurückzugeben. Dies macht die Möglichkeit eines Fehlers im Typ explizit.
+**Schritt 3: Implementieren**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Schritt 4: Überprüfen**
+Das Typsystem garantiert, dass Aufrufer den Fehlerfall behandeln müssen. Mustervergleich oder`either`erzwingen eine explizite Behandlung.
+### Problem 2: Parsen einer einfachen Konfigurationssprache
+**Schritt 1: Verstehen Sie das Problem**
+Analysieren Sie Schlüssel-Wert-Paare aus einer Zeichenfolge wie`name=Alice\nage=30`.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie`Text.Parsec`oder manuelle Rekursion. Verwenden Sie der Einfachheit halber`break`und`span`.
+**Schritt 3: Implementieren**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Schritt 4: Erweitern**
+Fügen Sie Kommentarbehandlung (`#`), Abschnittsüberschriften (`[section]`) und Typerzwingung mithilfe eines`Value`ADT hinzu.
+### Problem 3: Mit Faulheit ein auswendig gelerntes Fibonacci aufbauen
+**Schritt 1: Verstehen Sie das Problem**
+Berechnen Sie Fibonacci-Zahlen effizient. Die naive Rekursion ist exponentiell.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie die verzögerte Auswertung von Haskell, um eine unendliche Liste zu erstellen, in der jedes Element einmal berechnet und zwischengespeichert wird.
+**Schritt 3: Implementieren**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Schritt 4: Optimieren**
+Für wahlfreien Zugriff verwenden Sie`Data.Array`mit Lazy-Konstruktion. Verwenden Sie für sehr große Indizes die Matrixpotenzierung in O(log n).
+### Problem 4: Implementierung einer einfachen Zustandsmaschine
+**Schritt 1: Verstehen Sie das Problem**
+Modellieren Sie eine Ampel, die rot -> grün -> gelb -> rot wechselt.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie einen algebraischen Datentyp für Zustände und eine reine Übergangsfunktion.
+**Schritt 3: Implementieren**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Schritt 4: Überprüfen**
+Reine Funktionen sind trivial testbar:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Zusammenfassung

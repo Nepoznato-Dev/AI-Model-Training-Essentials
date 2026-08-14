@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Naskah Ketik
 TypeScript adalah superset JavaScript yang diketik secara statis yang dikembangkan oleh Microsoft (dipimpin oleh Anders Hejlsberg) dan pertama kali dirilis pada tahun 2012. TypeScript menambahkan anotasi tipe opsional, antarmuka, generik, dan fitur sistem tipe lanjutan ke JavaScript — lalu dikompilasi menjadi JavaScript biasa yang berjalan di mana pun JavaScript dijalankan. TypeScript bukanlah bahasa atau runtime yang terpisah; itu adalah JavaScript dengan pemeriksa tipe.
 TypeScript telah menjadi standar untuk pengembangan JavaScript skala besar. React, Angular, VS Code, Deno, dan sebagian besar proyek JavaScript sumber terbuka utama ditulis dalam TypeScript. Jika Anda memulai proyek JavaScript baru dengan ukuran signifikan apa pun, TypeScript adalah default yang disarankan.
@@ -788,7 +789,7 @@ CMD ["node", "dist/index.js"]
 | **tsc** | Kompiler TypeScript (resmi) |
 | **simpul-ts / tsx** | Jalankan TypeScript secara langsung tanpa kompilasi terpisah |
 | **swc** | Kompiler TypeScript/JavaScript berbasis Rust yang sangat cepat |
-| **ESLint + skrip ketikan-eslint** | Linting dengan aturan sadar tipe |
+| **ESLint + TypeScript-eslint** | Linting dengan aturan sadar tipe |
 | **Zod** | Validasi tipe runtime dengan inferensi TypeScript |
 | **tsconfig.json** | File konfigurasi TypeScript |
 ### Kerangka Kerja (Semua TypeScript-Pertama)
@@ -810,6 +811,398 @@ CMD ["node", "dist/index.js"]
 | Setiap proyek JavaScript baru | Biaya penambahan TypeScript nanti tinggi | JS biasa hanya untuk skrip kecil |
 | Perpustakaan / paket npm | Konsumen mendapatkan pelengkapan otomatis dan pengecekan tipe | -- |
 **Aturan praktis**: Jika proyek JavaScript Anda memiliki lebih dari beberapa ratus baris, gunakan TypeScript.
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`type`dan`interface`, dan kapan saya harus menggunakannya?
+**A:** Keduanya mendefinisikan bentuk objek, namun memiliki kemampuan yang berbeda. `interface`mendukung penggabungan deklarasi (beberapa deklarasi dengan nama yang sama digabungkan),`extends`untuk pewarisan, dan merupakan pilihan idiomatis untuk API publik. `type`mendukung tipe gabungan, tipe persimpangan, tipe yang dipetakan, tipe kondisional, dan tipe literal templat — semuanya tingkat lanjut. Praktik terbaik: gunakan`interface`untuk bentuk objek dan API publik; gunakan`type`untuk serikat pekerja, utilitas, dan operasi tipe kompleks.
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Q2: Bagaimana cara kerja obat generik, dan mengapa obat generik itu penting?
+**A:** Generik memungkinkan Anda menulis fungsi, kelas, dan tipe yang berfungsi dengan tipe apa pun sambil menjaga keamanan tipe. Daripada`any`(yang kehilangan informasi tipe), obat generik mempertahankan hubungan antara tipe input dan output. Ini adalah dasar dari kode yang dapat digunakan kembali dan aman untuk diketik.
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3: Apa saja jenis utilitasnya, dan mana yang harus saya ketahui?
+**A:** TypeScript menyediakan tipe utilitas bawaan yang mengubah tipe yang sudah ada. Yang paling penting:`Partial<T>`(semua opsional),`Required<T>`(semua diperlukan),`Pick<T, K>`(pilih tombol),`Omit<T, K>`(tidak termasuk kunci),`Record<K, V>`(peta nilai kunci),`Exclude<T, U>`(hapus dari gabungan),`ReturnType<T>`(tipe pengembalian fungsi ekstrak),`Awaited<T>`(membuka bungkusnya Janji). Pelajari hal ini — hal ini menghilangkan sebagian besar kebutuhan akan operasi tipe kustom.
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4: Bagaimana cara mengetik kode asinkron dan menangani kesalahan dengan cara yang aman untuk mengetik?
+**A:** Fungsi async secara otomatis mengembalikan`Promise<T>`dengan T adalah tipe kembaliannya. Gunakan`await`untuk membuka Janji tersebut. Untuk penanganan kesalahan, TypeScript tidak memiliki pengecualian pengetikan, namun Anda dapat membuat pelindung tipe dan tipe hasil. "Pola hasil" (terinspirasi oleh Rust) menyediakan penanganan kesalahan pada waktu kompilasi.
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5: Apa itu file deklarasi (.d.ts) dan bagaimana cara menggunakan tipe pihak ketiga?
+**A:** File deklarasi menjelaskan tipe pustaka JavaScript yang tidak memiliki tipe TypeScript bawaan. Mereka hanya berisi informasi tipe (tidak ada kode runtime). Instal tipe yang dikelola komunitas dari PastiTyped:`npm install --save-dev @types/lodash`. Untuk perpustakaan Anda sendiri, tambahkan bidang`types`di`package.json`atau sertakan file`.d.ts`di samping sumber Anda. Gunakan`declare module`untuk deklarasi ambien.
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membangun Pemancar Peristiwa yang Aman untuk Tipe
+**Pernyataan Masalah:** Buat pemancar peristiwa generik yang aman untuk tipe di TypeScript tempat setiap nama peristiwa dipetakan ke jenis payload tertentu. Kompiler harus menangkap nama peristiwa dan jenis muatan yang salah pada waktu kompilasi.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan sistem kejadian di mana: (1) kejadian didefinisikan dengan jenis muatannya, (2)`emit`hanya menerima nama kejadian yang valid dengan muatan yang benar, (3)`on`hanya menerima nama kejadian yang valid dengan penangan yang diketik dengan benar. Ini memerlukan tipe dan generik yang dipetakan melalui antarmuka peta peristiwa.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Tentukan tipe `EventMap`:`{ [eventName: string]: payloadType }`.
+- Gunakan`keyof EventMap`untuk membatasi nama acara.
+- Gunakan`EventMap[K]`untuk mendapatkan jenis muatan untuk peristiwa tertentu.
+- Simpan pendengar di`Map<string, Function[]>`.
+**Langkah 3 — Terapkan Solusi:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Keamanan jenis: kompiler menangkap nama peristiwa yang salah dan bentuk muatan yang salah pada waktu kompilasi.
+-`on`mengembalikan fungsi berhenti berlangganan untuk pembersihan yang nyaman.
+-`once`membungkus pendengar untuk berhenti berlangganan otomatis setelah pemanggilan pertama.
+- Untuk produksi: tambahkan`listenerCount`,`removeAllListeners`, dan pertimbangkan untuk menggunakan`AbortSignal`untuk pembatalan.
+### Masalah 2: Menerapkan Pembuat Kueri SQL yang Aman untuk Tipe
+**Pernyataan Masalah:** Buat pembuat kueri SQL yang nama dan tipe kolomnya berasal dari antarmuka TypeScript. Pembuatnya harus mencegah nama kolom yang tidak valid dan ketidakcocokan tipe pada waktu kompilasi.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) nama kolom dibatasi hingga`keyof T`, (2) nilai klausa WHERE diketik sesuai kolom, (3) API yang dapat dirantai untuk membuat kueri. Ini memerlukan obat generik yang dibatasi oleh`Record<string, unknown>`.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Gunakan`keyof T`untuk batasan nama kolom.
+- Gunakan`T[K]`untuk batasan tipe nilai.
+- Bangun string SQL dengan kueri berparameter (mencegah injeksi SQL).
+- Metode yang dapat dirantai mengembalikan`this`.
+**Langkah 3 — Terapkan Solusi:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Pencegahan injeksi SQL: semua nilai melewati kueri berparameter (`$1`,`$2`), tidak pernah diinterpolasi.
+- Keamanan jenis: nama kolom dan tipe nilai diperiksa pada waktu kompilasi.
+- Ekstensibilitas: tambahkan metode`join`,`groupBy`,`having`,`insert`,`update`mengikuti pola yang sama.
+- Produksi: gunakan`kysely`atau`drizzle-orm`— keduanya memberikan keamanan jenis ini dengan cakupan SQL penuh.
+### Masalah 3: Menerapkan Mesin Keadaan Hingga dengan Keamanan Tipe
+**Pernyataan Masalah:** Membuat mesin status terbatas yang aman untuk tipe tempat transisi yang valid diterapkan pada waktu kompilasi. Setiap negara bagian dapat memiliki tindakan masuk/keluar, dan mesin harus melacak keadaan saat ini.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) status dan peristiwa yang didefinisikan sebagai tipe, (2) transisi valid yang dipetakan pada tingkat tipe, (3) kompiler mencegah transisi yang tidak valid, (4) pelacakan status runtime dengan callback. Ini memerlukan tipe yang dipetakan dan tipe bersyarat.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Tentukan`TransitionMap`:`{ [State]: { [Event]: NextState } }`.
+- Gunakan obat generik untuk membatasi`send(event)`berdasarkan kondisi saat ini.
+- Lacak status saat runtime dengan variabel.
+- Mendukung panggilan balik masuk/keluar per negara bagian.
+**Langkah 3 — Terapkan Solusi:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Keamanan runtime:`send`melakukan transisi yang tidak valid.
+- Keamanan tipe: tipe`EventsFor`mengekstrak kejadian valid per status pada waktu kompilasi.
+- Panggilan balik masuk/keluar diaktifkan secara otomatis pada transisi.
+- Untuk produksi: gunakan`xstate`— ini menyediakan perpustakaan mesin status lengkap dengan debugging visual, status hierarki, penjaga, dan tindakan.
 ---
 
 ## Ringkasan

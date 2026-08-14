@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Delphi / Objeto Pascal"
-descripción: "Referencia completa para el lenguaje de programación Delphi/Object Pascal que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Delphi / Object Pascal"
+description: "Comprehensive reference for the Delphi/Object Pascal programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [delphi-object-pascal, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "44 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [delphi-object-pascal, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Delphi / Objeto Pascal
 Delphi es un lenguaje de programación orientado a objetos basado en Pascal, desarrollado originalmente por Borland (más tarde Embarcadero, ahora Idera). Lanzado por primera vez en 1995 como "Delphi 1", fue diseñado para el desarrollo rápido de aplicaciones (RAD) de aplicaciones de escritorio de Windows. El lenguaje se conoce formalmente como Object Pascal y Delphi IDE proporciona un diseñador de formularios visual, herramientas de base de datos integradas y un potente compilador.
 Delphi fue una de las herramientas de desarrollo de Windows más populares a finales de los 90 y principios de los 2000. Si bien su popularidad ha disminuido significativamente, mantiene una base de usuarios dedicados, particularmente en aplicaciones de escritorio empresariales, interfaces de bases de datos y mantenimiento de sistemas heredados. Modern Delphi (11/12) admite el desarrollo multiplataforma para Windows, macOS, iOS y Android a través del marco FireMonkey (FMX).
@@ -1081,6 +1086,84 @@ Delphi Deployment Targets:
 | Desarrollo de nueva interfaz gráfica de usuario para Windows | Posible pero la comunidad se está reduciendo | C# (WPF/WinUI 3) |
 | Desarrollo web | No adecuado | JavaScript, Python, C# |
 | Aplicaciones móviles | Posible vía FMX pero limitado | Rápido, Kotlin, Flutter |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cómo funciona el marco VCL de Delphi?
+**R:** VCL envuelve los controles API de Windows en una jerarquía orientada a objetos. Los formularios, botones y cuadrículas son todas clases:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### P2: ¿Cómo creo componentes en Delphi?
+**A:** Heredar de TComponent o TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### P3: ¿Cuál es la diferencia entre Delphi y Free Pascal?
+**R:** Delphi es un IDE/compilador comercial de Embarcadero. Free Pascal es el compilador de código abierto y Lazarus es el IDE gratuito. Ambos utilizan la sintaxis de Object Pascal.
+### P4: ¿Cómo trabajo con bases de datos en Delphi?
+**R:** Utilice componentes FireDAC o dbExpress:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### P5: ¿Delphi sigue siendo relevante hoy en día?
+**R:** Para mantener aplicaciones heredadas de Windows, sí. Para proyectos nuevos, la mayoría de los desarrolladores prefieren C# o tecnologías web. Free Pascal/Lazarus ofrece una alternativa multiplataforma gratuita.
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: creación de un formulario basado en datos
+**Paso 1: Comprenda el problema**
+Cree un formulario que muestre y edite registros de bases de datos.
+**Paso 2: Identificar el enfoque**
+Utilice componentes con reconocimiento de datos vinculados a un conjunto de datos.
+**Paso 3: Implementar**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Paso 4: Extender**
+Agregue validación, manejo de errores y funcionalidad de búsqueda/filtro.
 ---
 
 ## Resumen

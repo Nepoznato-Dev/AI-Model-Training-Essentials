@@ -55,7 +55,7 @@ contribution:
 |制限 |詳細 |一般的な回避策 |
 |----------|-----------|--------|
 | **非常に低レベル** |すべての命令は 1 つのマシン操作にマップされます。重要な部分を除くすべてに高級言語を使用する |
-| **アーキテクチャ固有** | x86 コードは ARM では実行できません |移植可能なコードを C/C++ で記述します。必要な場合にのみアセンブリを使用する |
+| **アーキテクチャ固有** | x86 コードは ARM では実行できません。移植可能なコードを C/C++ で記述します。必要な場合にのみアセンブリを使用する |
 | **詳細** |単純なタスクには多くの指示が必要です。マクロを使用します。アセンブリセクションを最小限に抑える |
 | **移植性がない** |アセンブラごとに異なる構文 (NASM、GAS、MASM) |コンパイラ組み込みまたはインライン アセンブリを使用する |
 | **デバッグの難易度** |命令レベルでロジックをトレースするのは困難 |デバッガ (GDB) を使用します。自由にコメントを追加してください |
@@ -264,7 +264,7 @@ Address
 ```
 
 ### プログラム構造の規則
-よく組織されたアセンブリ プログラムでは、懸念事項が個別のセクションに分割されます。
+適切に組織化されたアセンブリ プログラムでは、懸念事項が個別のセクションに分割されます。
 ```nasm
 ; ============================================================
 ; Program: example.asm
@@ -710,7 +710,7 @@ file program
 | **暗号化** | AES-NI、SHA 命令の高速化 |ハードウェア アクセラレーションによる暗号化操作 |
 | **デバイス ドライバー** | GPU ドライバー、ネットワーク カード ファームウェア |レジスタレベルのハードウェアへの直接アクセス |
 ### レガシー システムの統合
-多くのレガシー システムには、C コードベース内に組み込まれたアセンブリ ルーチンが含まれています。これらは通常、パフォーマンスが重要な機能またはハードウェア固有のルーチンであり、数十年にわたって維持されています。
+多くのレガシー システムには、C コードベース内に埋め込まれたアセンブリ ルーチンが含まれています。これらは通常、パフォーマンスが重要な機能またはハードウェア固有のルーチンであり、数十年にわたって維持されています。
 ```c
 // Legacy pattern: C code calling an assembly-optimized function
 extern void fast_memcpy(void* dest, const void* src, size_t n);
@@ -734,6 +734,85 @@ void process_data(void) {
 |組み込みファームウェア (ベアメタル) |利用可能な高級言語はありません | C、錆 |
 |教育 |コンピュータ アーキテクチャを理解する | — |
 |一般的なアプリケーション開発 |複雑なプログラムには非現実的 |任意の高級言語 |
+---
+
+## 総合的な Q&A
+### Q1: RISC アセンブリと CISC アセンブリの違いは何ですか?
+**A:** CISC (x86) には複雑な可変長命令があります。 RISC (ARM) には単純な固定長命令があります。
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2: アセンブリではスタックはどのように機能しますか?
+**A:** スタックは下に向かって成長します。 `push`は SP をデクリメントして格納します。 `pop`は SP をロードしてインクリメントします。
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3: アセンブリで関数を呼び出すにはどうすればよいですか?
+**A:** 呼び出し規則に従ってください (Linux では System V AMD64、Windows では Windows x64)。
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: 知っておくべき最も重要な組み立て手順は何ですか?
+**A:** データの移動、演算、制御フロー、およびスタック操作が中核を形成します。
+### Q5: アセンブリはセキュリティ研究でどのように使用されますか?
+**A:** リバース エンジニアリング、エクスプロイト開発、マルウェア分析、コンパイラ出力の理解にはすべてアセンブリ リテラシーが必要です。
+---
+
+## 思考連鎖による問題解決
+### 問題 1: アセンブリでのループの実装
+**ステップ 1: 問題を理解する**
+1 から N までの整数を合計します。
+**ステップ 2: アプローチを特定する**
+カウンタレジスタとアキュムレータを使用します。
+**ステップ 3: 実装**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**ステップ 4: 最適化**
+O(N) の代わりに O(1) に式 N*(N+1)/2 を使用します。
 ---
 
 ＃＃ まとめ

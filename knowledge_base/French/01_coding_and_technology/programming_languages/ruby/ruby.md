@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Rubis"
-description : "Référence complète sur le langage de programmation Ruby couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Ruby"
+description: "Comprehensive reference for the Ruby programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [ruby, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "34 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ruby, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Rubis
 Ruby est un langage de programmation dynamique, interprété et orienté objet créé par Yukihiro "Matz" Matsumoto et lancé pour la première fois en 1995 au Japon. Ruby a été conçu en mettant l'accent sur le bonheur des programmeurs : sa syntaxe est élégante et naturelle, se lisant presque comme l'anglais. Tout dans Ruby est un objet, y compris les types primitifs comme les entiers et les booléens. Ruby est surtout connu pour le framework Web Ruby on Rails, qui a révolutionné le développement Web en vulgarisant les conventions de configuration et de prototypage rapide.
 Au-delà de Rails, Ruby est utilisé pour les scripts, l'automatisation, les outils DevOps (Chef, Puppet) et comme langage à usage général. Sa syntaxe expressive et ses puissantes capacités de métaprogrammation en font un plaisir à écrire.
@@ -816,6 +821,324 @@ fly deploy
 | Systèmes critiques en termes de performances | Trop lent | C, C++, Rust, Go |
 | Science des données / ML | Pas l'écosystème | Python, R |
 | Applications mobiles | Ne convient pas | Swift, Kotlin, Flutter |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Quelle est la différence entre`proc`,`lambda`et`block`dans Ruby ?
+**R :** Ces trois fermetures sont des fermetures, mais leur comportement diffère. Un`block`est un morceau de code anonyme transmis à une méthode avec`do...end`ou`{}`. Un`proc`est un bloc enregistré en tant qu'objet — il ne vérifie pas le nombre d'arguments et`return`quitte la méthode englobante. Un`lambda`est comme un proc mais vérifie le nombre d'arguments et`return`ne quitte que le lambda. Utilisez des blocs pour les rappels ponctuels, des procédures pour les extraits de code réutilisables et des lambdas lorsque vous avez besoin d'un comportement de type méthode.
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### Q2 : Comment fonctionnent les gemmes Ruby et Bundler ?
+**R :** Les gemmes sont le système de packages de Ruby : des bibliothèques réutilisables distribuées via RubyGems.org. Un`Gemfile`déclare les dépendances ; `bundle install`résout les versions et crée un`Gemfile.lock`pour la reproductibilité. `bundle exec`exécute des commandes dans le contexte gem. Utilisez`gem 'name', '~> 2.0'`pour les contraintes de version compatibles. Validez toujours`Gemfile.lock`pour les applications, mais pas pour les bibliothèques.
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### Q3 : Quels sont les types de symboles de Ruby et pourquoi sont-ils importants ?
+**A :** Les symboles (`:name`) sont des chaînes immuables et internes : chaque symbole unique n'existe qu'une seule fois en mémoire. Ils sont idéaux pour les clés de hachage, les noms de méthodes et les identifiants. Ruby possède également des objets`Symbol`largement utilisés en métaprogrammation (`send`,`define_method`). Utiliser des symboles pour les identifiants fixes ; utilisez des chaînes lorsque vous devez manipuler du contenu.
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### Q4 : Comment fonctionne la métaprogrammation de Ruby et quand dois-je l'utiliser ?
+**R :** Ruby permet au code de définir du code au moment de l'exécution :`define_method`crée des méthodes de manière dynamique,`method_missing`intercepte les appels de méthode non définis,`send`appelle des méthodes privées et`class_eval`/`instance_eval`évalue le code dans un contexte de classe/instance. La métaprogrammation est puissante mais rend le code plus difficile à comprendre : utilisez-la pour les DSL et la magie des frameworks, pas pour la logique quotidienne.
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### Q5 : Quelle est la meilleure façon de gérer les erreurs dans Ruby ?
+**R :** Ruby utilise des exceptions pour la gestion des erreurs. Définissez des classes d'exception personnalisées héritant de`StandardError`(et non de`Exception`- qui détecte les erreurs au niveau du système). Utilisez`begin/rescue/else/ensure`pour une manipulation structurée. Déclenchez des exceptions spécifiques, et non génériques`RuntimeError`. Utilisez`rescue`comme modificateur pour les simples one-liners.
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Créer un DSL pour les fichiers de configuration
+**Énoncé du problème :** Créez un Ruby DSL qui permet de définir les configurations de serveur dans une syntaxe déclarative lisible. Le DSL doit prendre en charge les blocs imbriqués, la validation et la sérialisation vers JSON.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) une syntaxe DSL propre utilisant des blocs et des appels de méthodes, (2) la collecte de données via`instance_eval`ou des méthodes explicites, (3) la validation des champs obligatoires, (4) la sérialisation JSON. La métaprogrammation de Ruby rend les DSL naturels.
+**Étape 2 — Identifiez l'approche :**
+- Utilisez`instance_eval`avec une classe de constructeur pour capturer les appels DSL.
+- Stocker la configuration dans des variables d'instance.
+- Validez les champs obligatoires avant la sérialisation.
+- Utilisez`to_h`et`JSON.generate`pour la sortie.
+**Étape 3 — Mettre en œuvre la solution :**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Le DSL est lisible et déclaratif — les non-programmeurs peuvent le comprendre.
+- La validation détecte les champs obligatoires manquants au moment de la construction.
+-`instance_eval`fournit la syntaxe de bloc propre mais limite`self`— pour les DSL plus complexes, utilisez`BasicObject`comme superclasse du constructeur.
+- Production : envisagez les gems`dry-configurable`ou`configurate`pour les DSL de configuration de niveau production.
+### Problème 2 : Implémenter une bibliothèque de mémorisation
+**Énoncé du problème :** Créez un module de mémorisation qui peut être mélangé à n'importe quelle classe pour mettre en cache les résultats des méthodes. Prise en charge du TTL (durée de vie), des limites de taille du cache et des clés de cache personnalisées.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) un module qui ajoute une méthode de classe `memoize`, (2) la méthode encapsule les méthodes cibles avec une logique de mise en cache, (3) la prise en charge de l'expiration TTL, (4) l'expulsion de LRU lorsque le cache est plein. Les`Module#prepend`et`define_method`de Ruby sont idéaux pour cela.
+**Étape 2 — Identifiez l'approche :**
+- Utilisez`Module.new`avec`define_method`pour créer un wrapper.
+- Stockez le cache dans un hachage avec des horodatages pour TTL.
+- Utilisez`prepend`pour insérer la couche de mise en cache avant la méthode d'origine.
+- Prise en charge des options configurables :`ttl`,`max_size`,`key`.
+**Étape 3 — Mettre en œuvre la solution :**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Sécurité des threads :`Mutex`protège les lectures/écritures du cache ; le calcul s'effectue en dehors du verrou.
+- TTL : les entrées expirées sont nettoyées paresseusement à l'accès.
+- Expulsion LRU : lorsque le cache dépasse`max_size`, l'entrée la plus ancienne (par horodatage) est supprimée.
+- Clés personnalisées : le lambda`key`permet un contrôle précis de l'identité du cache.
+- Production : utilisez la gem`memoist`pour les cas simples, ou la mémorisation basée sur Redis pour la mise en cache distribuée.
 ---
 
 ## Résumé

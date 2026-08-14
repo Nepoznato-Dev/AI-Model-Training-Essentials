@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Pembelajaran Sains dan Pedagogi
-Pembelajaran sains adalah studi interdisipliner tentang bagaimana orang belajar — diambil dari psikologi, ilmu saraf, pendidikan, dan ilmu kognitif. Pedagogi adalah seni dan ilmu mengajar. Bersama-sama, mereka menjawab pertanyaan-pertanyaan penting bagi siapa pun yang mengajar, melatih, membimbing, atau merancang konten pendidikan: Apa yang sebenarnya membantu orang belajar? Teknik belajar umum apa yang tidak efektif? Bagaimana seharusnya pengajaran disusun untuk retensi dan transfer maksimum?
+Pembelajaran sains adalah studi interdisipliner tentang bagaimana orang belajar — diambil dari psikologi, ilmu saraf, pendidikan, dan ilmu kognitif. Pedagogi adalah praktik dan metodologi pengajaran. Bersama-sama, mereka menjawab pertanyaan-pertanyaan yang relevan bagi siapa pun yang mengajar, melatih, membimbing, atau merancang konten pendidikan: Metode apa yang membantu orang belajar secara efektif? Teknik belajar umum apa yang tidak efisien? Bagaimana seharusnya pengajaran disusun untuk retensi dan transfer yang optimal?
 ---
 
 ## Cara Kerja Pembelajaran
@@ -110,7 +111,7 @@ Setiap tinjauan mendorong kurva lupa semakin jauh. Interval optimal meningkat se
 | **Terapkan** | Gunakan informasi dalam situasi baru | Menyelesaikan; menggunakan; mendemonstrasikan; menerapkan | "Prediksi apa yang terjadi jika mitosis terganggu" |
 | **Analisis** | Menarik hubungan antar ide | Membandingkan; kontras; mengkategorikan; memeriksa | "Bandingkan mitosis dan meiosis" |
 | **Evaluasi** | Membenarkan pendirian atau keputusan | Hakim; kritik; membela; berdebat | "Evaluasi akibat pembelahan sel yang tidak terkendali" |
-| **Buat** | Menghasilkan karya baru atau orisinal | Desain; membangun; mengembangkan; merumuskan | "Rancang percobaan untuk menguji pengaruh racun pada pembelahan sel" |
+| **Buat** | Menghasilkan karya baru atau asli | Desain; membangun; mengembangkan; merumuskan | "Rancang percobaan untuk menguji pengaruh racun pada pembelahan sel" |
 ---
 
 ## Model Desain Instruksional
@@ -127,7 +128,7 @@ Setiap tinjauan mendorong kurva lupa semakin jauh. Interval optimal meningkat se
 |------|-------------|
 | **1. Identifikasi hasil yang diinginkan** | Apa yang harus diketahui, dipahami, dan dapat dilakukan oleh pelajar? |
 | **2. Tentukan bukti yang dapat diterima** | Bagaimana Anda tahu bahwa mereka telah mencapai hasil? (Penilaian dulu) |
-| **3. Rencanakan pengalaman belajar** | Kegiatan, instruksi, dan praktik apa yang akan membekali pelajar untuk berhasil? |
+| **3. Rencanakan pengalaman belajar** | Kegiatan, instruksi, dan praktik apa yang akan membekali pelajar untuk sukses? |
 ### Perancah
 | Teknik | Deskripsi |
 |-----------|-------------|
@@ -172,4 +173,4 @@ Setiap tinjauan mendorong kurva lupa semakin jauh. Interval optimal meningkat se
 ---
 
 ## Ringkasan
-Pembelajaran sains menunjukkan bahwa strategi yang paling efektif sering kali berlawanan dengan intuisi. Latihan retrieval (menguji diri sendiri) jauh lebih efektif dibandingkan membaca ulang. Pengulangan dengan jarak tertentu mengalahkan menjejalkan. Menggabungkan berbagai jenis masalah akan meningkatkan diskriminasi dan transfer. Teori beban kognitif mengingatkan kita bahwa memori kerja terbatas - instruksi harus dirancang untuk meminimalkan beban asing. Taksonomi Bloom memberikan kerangka kerja untuk kemajuan dari penarikan kembali ke penciptaan. Model desain instruksional (ADDIE, desain mundur) menawarkan pendekatan terstruktur untuk mengembangkan pengalaman belajar yang efektif. Motivasi tergantung pada otonomi, kompetensi, dan keterhubungan. Penilaian harus selaras dengan tujuan pembelajaran dan mencakup umpan balik formatif, bukan hanya nilai sumatif. Mitos terbesar dalam pembelajaran adalah bahwa orang mempunyai “gaya belajar” yang tetap – bukti secara konsisten menunjukkan bahwa mencocokkan pengajaran dengan gaya yang disukai tidak meningkatkan hasil. Apa yang berhasil bagi semua orang adalah pengambilan kembali dengan susah payah, latihan dengan jarak tertentu, beragam contoh, dan umpan balik yang bermakna.
+Pembelajaran sains menunjukkan bahwa strategi yang paling efektif sering kali berlawanan dengan intuisi. Latihan retrieval (menguji diri sendiri) jauh lebih efektif dibandingkan membaca ulang. Pengulangan dengan jarak tertentu mengalahkan menjejalkan. Menggabungkan berbagai jenis masalah akan meningkatkan diskriminasi dan transfer. Teori beban kognitif mengingatkan kita bahwa memori kerja terbatas - instruksi harus dirancang untuk meminimalkan beban asing. Taksonomi Bloom memberikan kerangka kerja untuk kemajuan dari penarikan kembali ke penciptaan. Model desain instruksional (ADDIE, desain mundur) menawarkan pendekatan terstruktur untuk mengembangkan pengalaman belajar yang efektif. Motivasi tergantung pada otonomi, kompetensi, dan keterhubungan. Penilaian harus selaras dengan tujuan pembelajaran dan mencakup umpan balik formatif, bukan hanya nilai sumatif. Mitos terbesar dalam pembelajaran adalah bahwa orang mempunyai “gaya belajar” yang tetap – bukti secara konsisten menunjukkan bahwa mencocokkan pengajaran dengan gaya yang disukai tidak meningkatkan hasil. Apa yang berhasil bagi semua orang adalah pengambilan kembali dengan susah payah, latihan dengan jarak tertentu, contoh yang bervariasi, dan umpan balik yang bermakna.

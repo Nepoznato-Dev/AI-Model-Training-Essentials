@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Lúa"
-descripción: "Referencia completa para el lenguaje de programación Lua que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Lua"
+description: "Comprehensive reference for the Lua programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [lua, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "26 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [lua, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # lua
 Lua es un lenguaje de scripting ligero e integrable diseñado para ampliar aplicaciones. Creado en 1993 en la Pontificia Universidad Católica de Río de Janeiro en Brasil, Lua es uno de los lenguajes de programación más rápidos disponibles. Su pequeño tamaño (el intérprete pesa ~120 KB) y su simplicidad lo convierten en la opción ideal para el desarrollo de scripts, sistemas integrados y configuración de juegos.
 Lua es mejor conocido como el lenguaje de programación detrás de Roblox (la plataforma de juegos con más de 200 millones de usuarios mensuales), complementos de World of Warcraft y numerosos motores de juegos (Love2D, Defold, Corona SDK). También se utiliza en Nginx (OpenResty), Redis y Wireshark.
@@ -618,6 +623,254 @@ CMD lua5.4 src/main.lua
 | Desarrollo web | OpenResty existe pero es un nicho | JavaScript, Python, Ir |
 | Desarrollo de aplicaciones generales | No diseñado para aplicaciones independientes | Python, Ir, Java |
 | Ciencia de datos | No el ecosistema | Pitón, R |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Por qué Lua utiliza indexación basada en 1 en lugar de 0?
+**R:** Lua fue diseñado para usuarios que no son programadores y sigue convenciones de conteo naturales. El operador `#`,`ipairs`y las funciones de cadena utilizan indexación basada en 1:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+Esto es consistente en toda la biblioteca estándar. Al interactuar con C (basado en 0), tenga en cuenta el desplazamiento.
+### P2: ¿Cómo implemento patrones orientados a objetos en Lua?
+**R:** Lua usa tablas y metatablas para programación orientada a objetos. El metamétodo`__index`permite la búsqueda de métodos en prototipos:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### P3: ¿Cómo funcionan las corrutinas y cuándo debo usarlas?
+**R:** Las corrutinas son subprocesos cooperativos que pueden suspender y reanudar la ejecución. Son ideales para iteradores, patrones asíncronos y lógica de juegos:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### P4: ¿Cuál es la mejor manera de manejar errores en Lua?
+**R:** Utilice`pcall`/`xpcall`para detectar errores y devolver múltiples valores para patrones de éxito/fracaso:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### P5: ¿Cómo optimizo el rendimiento de Lua para juegos y sistemas integrados?
+**R:** Prácticas clave:
+- Utilice`local`para todas las variables: el acceso global es significativamente más lento
+- Caché de los campos de la tabla a los que se accede con frecuencia en locales
+- Preasignar tablas cuando se conoce el tamaño:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- Evite crear tablas temporales en bucles activos.
+- Utilice`table.concat`en lugar de`..`para unir muchas cadenas
+- Perfil con`os.clock()`o ganchos de depuración
+- En LuaJIT, utilice FFI para la interoperabilidad de C en lugar de la API de C
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: creación de un analizador de configuración
+**Paso 1: Comprenda el problema**
+Analice un archivo de configuración clave-valor simple donde cada línea es `key = value`.
+**Paso 2: Identificar el enfoque**
+Lea líneas, divídalas en `=`, recorte espacios en blanco y guárdelas en una tabla.
+**Paso 3: Implementar**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**Paso 4: Extender**
+Agregue compatibilidad con secciones (`[section]`), coerción de tipos (números, booleanos) y tablas anidadas.
+### Problema 2: Implementación de un sistema de eventos simple
+**Paso 1: Comprenda el problema**
+Cree un emisor de eventos que admita la suscripción y la emisión de eventos con nombre.
+**Paso 2: Identificar el enfoque**
+Utilice una tabla que asigne nombres de eventos a listas de funciones de controlador.
+**Paso 3: Implementar**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**Paso 4: Verificar**
+Prueba con múltiples eventos, eliminación y manejo de errores en controladores.
+### Problema 3: creación de una canalización basada en corrutinas
+**Paso 1: Comprenda el problema**
+Cree un canal de procesamiento de datos donde cada etapa filtre o transforme datos, conectados mediante corrutinas.
+**Paso 2: Identificar el enfoque**
+Utilice corrutinas como etapas del proceso: cada etapa se basa en la anterior y avanza hacia la siguiente.
+**Paso 3: Implementar**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**Paso 4: Optimizar**
+Esta canalización basada en extracción procesa un elemento a la vez con una sobrecarga de memoria mínima, ideal para flujos grandes o infinitos.
 ---
 
 ## Resumen

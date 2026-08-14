@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Lisp y Clojure"
-descripción: "Referencia completa para el lenguaje de programación Lisp y Clojure que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Lisp & Clojure"
+description: "Comprehensive reference for the Lisp and Clojure programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [lisp-and-clojure, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "29 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [lisp-and-clojure, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Ceceo y clojure
 Lisp es el segundo lenguaje de programación de alto nivel más antiguo todavía en uso (después de Fortran), creado por John McCarthy en 1958. Fue pionero en muchos conceptos que ahora se dan por sentado: recolección de basura, recursividad, estructuras de datos en árbol, tipificación dinámica y la idea de programas como datos (homoiconicidad). La característica distintiva de Lisp es su sintaxis: el código se escribe como paréntesis anidados (expresiones S), lo que hace que el lenguaje sea trivialmente analizable y permite una potente metaprogramación a través de **macros**.
 Clojure es un dialecto Lisp moderno diseñado por Rich Hickey en 2007. Se ejecuta en JVM (también ClojureScript para JavaScript), abarca programación funcional, inmutabilidad y concurrencia, y proporciona interoperabilidad perfecta de Java. Clojure se utiliza en desarrollo web, procesamiento de datos y sistemas financieros.
@@ -691,6 +696,141 @@ native-image --no-fallback \
 | Desarrollo de aplicaciones generales | Posible pero nicho | Python, Java, Ir |
 | Aplicaciones móviles | ClojureScript para aplicaciones web; no nativo | Rápido, Kotlin |
 | Ciencia de datos | No el ecosistema | Pitón, R |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Por qué los programas Lisp/Clojure tienen tantos paréntesis?
+**R:** Los paréntesis representan expresiones S: una sintaxis uniforme donde el código y los datos tienen la misma estructura (homoiconicidad):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### P2: ¿Cómo maneja Clojure el estado y la mutabilidad de manera diferente?
+**R:** Clojure utiliza de forma predeterminada datos inmutables. Para cambios de estado controlados, proporciona tipos de referencia:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### P3: ¿Cuáles son las estructuras de datos persistentes de Clojure?
+**R:** Todas las colecciones de Clojure son persistentes (inmutables, estructuralmente compartidas):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### P4: ¿Cómo funcionan las macros de Clojure?
+**R:** Las macros reciben código no evaluado (como datos), lo transforman y devuelven código nuevo:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### P5: ¿Cómo manejo la concurrencia en Clojure?
+**R:** Clojure proporciona múltiples primitivas de concurrencia:
+- `atom`: cambios independientes y sincrónicos
+-`ref`+ `dosync`: cambios transaccionales coordinados
+- `agent`: cambios asincrónicos e independientes
+- Canales `core.async`: simultaneidad estilo CSP
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Procesamiento de una canalización de datos
+**Paso 1: Comprenda el problema**
+Lea datos, filtre, transforme y agregue a través de una canalización.
+**Paso 2: Identificar el enfoque**
+Utilice las macros de subprocesos de Clojure (`->>`) y los transductores.
+**Paso 3: Implementar**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Paso 4: Optimizar**
+Los transductores evitan la creación de secuencias intermedias: componen transformaciones en una sola pasada.
+### Problema 2: creación de un servidor web sencillo
+**Paso 1: Comprenda el problema**
+Cree un servidor HTTP básico usando Ring/Compojure.
+**Paso 2: Identificar el enfoque**
+Utilice el adaptador de anillo y el enrutamiento Compojure.
+**Paso 3: Implementar**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Paso 4: Extender**
+Agregue middleware para registro, análisis JSON, autenticación y manejo de errores.
 ---
 
 ## Resumen

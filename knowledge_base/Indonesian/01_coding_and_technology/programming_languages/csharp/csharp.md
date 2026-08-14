@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C#
-C# (diucapkan "C-sharp") adalah bahasa pemrograman modern, berorientasi objek, dan aman untuk tipe yang dikembangkan oleh Microsoft di bawah kepemimpinan Anders Hejlsberg dan pertama kali dirilis pada tahun 2002. Bahasa ini berjalan pada platform .NET dan dirancang untuk menggabungkan kekuatan C++ dengan produktivitas Visual Basic. Saat ini, C# adalah bahasa lintas platform serbaguna yang digunakan untuk aplikasi web (ASP.NET), perangkat lunak desktop (Windows), pengembangan game (Unity), aplikasi seluler (MAUI), layanan cloud (Azure), dan banyak lagi.
+C# (diucapkan "C-sharp") adalah bahasa pemrograman modern, berorientasi objek, dan aman untuk tipe yang dikembangkan oleh Microsoft di bawah kepemimpinan Anders Hejlsberg dan pertama kali dirilis pada tahun 2002. C# berjalan pada platform .NET dan dirancang untuk menggabungkan kekuatan C++ dengan produktivitas Visual Basic. Saat ini, C# adalah bahasa lintas platform serbaguna yang digunakan untuk aplikasi web (ASP.NET), perangkat lunak desktop (Windows), pengembangan game (Unity), aplikasi seluler (MAUI), layanan cloud (Azure), dan banyak lagi.
 C# terus menyerap ide-ide terbaik dari bahasa lain — LINQ, async/await, record, pencocokan pola — menjadikannya salah satu bahasa paling kaya fitur dan ramah pengembang yang tersedia.
 ---
 
@@ -264,7 +265,7 @@ button.Clicked += (sender, args) => Console.WriteLine($"Clicked at {args.Timesta
 button.OnClick();
 ```
 
-### Hierarki Pengecualian Khusus
+### Hirarki Pengecualian Khusus
 ```csharp
 public class AppException : Exception
 {
@@ -469,7 +470,7 @@ public class UserServiceTests
 }
 ```
 
-### Saluran Pipa CI/CD
+### Saluran CI/CD
 ```yaml
 name: CI
 on:
@@ -684,10 +685,10 @@ dotnet publish -c Release -r linux-x64
 | Versi | Tahun | Fitur Utama |
 |---------|------|-------------|
 | C#7| 2017 | Pencocokan pola, tupel, variabel `out`, fungsi lokal |
-| C#8| 2019 | Jenis referensi yang tidak dapat dibatalkan, ekspresi `switch`, aliran asinkron |
+| C#8| 2019 | Tipe referensi nullable, ekspresi `switch`, aliran asinkron |
 | C#9| 2020 | **Catatan**, pernyataan tingkat atas, properti`init`|
 | C#10 | 2021 | Rekam struct,`using`global, ruang nama cakupan file |
-| C#11 | 2022 | Literal string mentah, pola daftar, anggota `required`, matematika umum |
+| C#11 | 2022 | Literal string mentah, pola daftar, anggota `required`, matematika generik |
 | C#12| 2023 | Konstruktor utama, ekspresi koleksi, array inline |
 | C#13| 2024 |  Koleksi `params`, tipe kunci baru, bentang kelas satu |
 ---
@@ -706,5 +707,297 @@ dotnet publish -c Release -r linux-x64
 | Alat/skrip CLI | Mungkin tapi bertele-tele | Ayo, Karat, Python |
 ---
 
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`class`dan`record`di C#?
+**A:**`class`adalah tipe referensi dengan properti yang dapat diubah secara default — dua variabel dapat mereferensikan objek yang sama.`record`(C# 9+) adalah tipe referensi dengan kesetaraan berbasis nilai — dua catatan dengan data yang sama dianggap sama. Catatan memiliki properti init-only,`ToString`bawaan, dan mendukung ekspresi`with`untuk mutasi non-destruktif. Gunakan catatan untuk pembawa data (DTO, objek nilai); gunakan kelas untuk entitas kaya perilaku dengan identitas.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Q2: Bagaimana cara kerja async/await dan`Task`secara internal?
+**A:**`async/await`adalah gula sintaksis pada mesin status yang dihasilkan oleh kompiler. Saat Anda`await`dan`Task`, metode ini dibagi pada titik menunggu: semuanya sebelumnya dieksekusi secara sinkron, lalu sisanya didaftarkan sebagai kelanjutan. Thread dibebaskan untuk melakukan pekerjaan lain. `Task<T>`mewakili nilai masa depan. `ValueTask<T>`adalah alternatif struct untuk hot path yang menghindari alokasi heap ketika hasilnya sudah tersedia.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### Q3: Apa itu metode ekstensi, dan kapan saya harus menggunakannya?
+**A:** Metode ekstensi menambahkan metode ke tipe yang sudah ada tanpa mengubahnya. Itu adalah metode statis di kelas statis, dengan kata kunci`this`pada parameter pertama. Mereka mengaktifkan API yang lancar dan dapat dirantai. Gunakan metode tersebut untuk menambahkan metode utilitas ke tipe yang tidak Anda miliki (seperti`string`atau`IEnumerable<T>`). Hindari menggunakannya secara berlebihan — karena dapat membuat kode sulit ditemukan.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Q4: Bagaimana cara kerja pencocokan pola di C# modern?
+**A:** C# secara bertahap menambahkan pencocokan pola yang lebih canggih. Beralih ekspresi (C# 8), pola tipe, pola properti, pola relasional, dan pola daftar (C# 11) memungkinkan logika kondisional yang ringkas dan ekspresif. Pencocokan pola menggantikan rantai if/else yang panjang dan diperiksa secara menyeluruh oleh kompiler.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### Q5: Apa itu injeksi ketergantungan di .NET, dan bagaimana cara menggunakannya?
+**A:** .NET memiliki dukungan DI bawaan melalui`Microsoft.Extensions.DependencyInjection`. Anda mendaftarkan layanan dengan masa pakainya (Singleton, Scoped, Transient), dan container memasukkannya melalui parameter konstruktor. Singleton: satu contoh untuk aplikasi. Cakupan: satu per permintaan HTTP. Sementara: instance baru setiap saat.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membangun Repositori Generik dengan Caching
+**Pernyataan Masalah:** Menerapkan pola repositori umum dengan dekorator yang menambahkan caching. Repositori harus mendukung operasi CRUD, dan dekorator caching harus melakukan cache pembacaan dan pembatalan penulisan.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) antarmuka`IRepository<T>`generik, (2) implementasi konkret (misalnya, dalam memori), (3) dekorator cache yang membungkus repositori apa pun, (4) pembatalan cache pada operasi penulisan. Pola dekorator menjaga cache tetap ortogonal dengan logika akses data.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Tentukan`IRepository<T>`dengan`Get`,`GetAll`,`Add`,`Update`,`Delete`.
+- Buat`CachingRepository<T>`yang membungkus`IRepository<T>`dan menggunakan`IMemoryCache`.
+- Kunci cache: `typeof(T).Name:{id}`.
+- Pada operasi tulis, batalkan entri cache.
+**Langkah 3 — Terapkan Solusi:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Pemisahan masalah: caching adalah dekorator, tidak dicampur ke dalam repositori.
+- Pendaftaran DI:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(menggunakan Scrutor).
+- Produksi: gunakan`IDistributedCache`(Redis) untuk skenario multi-server, dan tambahkan pola penyisihan cache dengan perlindungan `CacheStampede`.
+### Masalah 2: Menerapkan Pipeline Middleware
+**Pernyataan Masalah:** Membangun pipeline middleware yang serupa dengan pipeline permintaan ASP.NET Core. Setiap middleware dapat memproses permintaan, memanggil middleware berikutnya, dan memproses responsnya.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) tipe`RequestDelegate`yang mewakili pipeline, (2) middleware yang membungkus delegasi berikutnya, (3) API pembangun untuk membuat middleware. Ini adalah pola Rantai Tanggung Jawab yang diterapkan dengan delegasi.
+**Langkah 2 — Identifikasi Pendekatannya:**
+-`RequestDelegate`adalah`Func<Context, RequestDelegate, Task>`.
+- Setiap middleware menerima konteks dan fungsi `next`.
+-`Use`menambahkan middleware; `Build`menyusunnya menjadi satu delegasi.
+**Langkah 3 — Terapkan Solusi:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Urutan middleware penting: pertama ditambahkan = terluar (dieksekusi pertama berdasarkan permintaan, terakhir berdasarkan respons).
+- Terminal middleware (tidak ada panggilan `next`) menyebabkan hubungan arus pendek pada pipa.
+- Produksi: Saluran pipa ASP.NET Core memiliki pola yang persis seperti ini, dioptimalkan dengan pohon ekspresi yang dikompilasi untuk alokasi nol.
+---
+
 ## Ringkasan
-C# adalah bahasa yang canggih, modern, dan bertujuan umum dengan peralatan yang sangat baik dan ekosistem yang kuat. Ia unggul dalam pengembangan perusahaan, pengembangan game (Unity), dan aplikasi lintas platform. Bahasanya telah berkembang pesat — C# modern ringkas, ekspresif, dan aman untuk mengetik. Meskipun tidak memiliki ukuran ekosistem seperti Java atau Python, kualitas dan konsistensi .NET menjadikan C# bahasa yang produktif dan menyenangkan untuk berbagai aplikasi.
+C# adalah bahasa yang canggih, modern, dan bertujuan umum dengan peralatan yang sangat baik dan ekosistem yang kuat. Ia unggul dalam pengembangan perusahaan, pengembangan game (Unity), dan aplikasi lintas platform. Bahasanya telah berkembang pesat — C# modern ringkas, ekspresif, dan aman untuk diketik. Meskipun tidak memiliki ukuran ekosistem seperti Java atau Python, kualitas dan konsistensi .NET menjadikan C# bahasa yang produktif dan menyenangkan untuk berbagai aplikasi.

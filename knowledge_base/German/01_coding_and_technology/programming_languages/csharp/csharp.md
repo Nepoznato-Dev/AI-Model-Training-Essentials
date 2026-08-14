@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C#
 C# (ausgesprochen „C-sharp“) ist eine moderne, objektorientierte, typsichere Programmiersprache, die von Microsoft unter der Leitung von Anders Hejlsberg entwickelt und erstmals 2002 veröffentlicht wurde. Sie läuft auf der .NET-Plattform und wurde entwickelt, um die Leistungsfähigkeit von C++ mit der Produktivität von Visual Basic zu kombinieren. Heute ist C# eine vielseitige, plattformübergreifende Sprache, die für Webanwendungen (ASP.NET), Desktop-Software (Windows), Spieleentwicklung (Unity), mobile Apps (MAUI), Cloud-Dienste (Azure) und mehr verwendet wird.
 C# hat nach und nach die besten Ideen aus anderen Sprachen übernommen – LINQ, Async/Await, Datensätze, Mustervergleich – und ist damit eine der funktionsreichsten und entwicklerfreundlichsten verfügbaren Sprachen.
@@ -689,7 +690,7 @@ dotnet publish -c Release -r linux-x64
 | C# 10 | 2021 | Datensatzstrukturen, globale `using`, dateibezogene Namespaces |
 | C# 11 | 2022 | Rohe String-Literale, Listenmuster, `required`-Mitglieder, generische Mathematik |
 | C# 12 | 2023 | Primärkonstruktoren, Sammlungsausdrücke, Inline-Arrays |
-| C# 13 | 2024 | `params`Sammlungen, neue Sperrtypen, erstklassige Spans |
+| C# 13 | 2024 | `params`Sammlungen, neue Sperrtypen, erstklassige Spannen |
 ---
 
 ## Wann man C# verwenden sollte
@@ -704,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | Mobile Apps (MAUI) | Plattformübergreifend mit C# | Flutter, React Native oder natives Swift/Kotlin |
 | KI/ML | Möglich mit ML.NET | Python (überwiegend bevorzugt) |
 | CLI-Tools/Skripte | Möglich, aber ausführlich | Go, Rust, Python |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen`class`und`record`in C#?
+**A:** Ein`class`ist standardmäßig ein Referenztyp mit veränderlichen Eigenschaften – zwei Variablen können auf dasselbe Objekt verweisen. Ein`record`(C# 9+) ist ein Referenztyp mit wertbasierter Gleichheit – zwei Datensätze mit denselben Daten werden als gleich betrachtet. Datensätze verfügen über reine Init-Eigenschaften, ein integriertes`ToString`und unterstützen `with`-Ausdrücke für nicht-destruktive Mutation. Datensätze für Datenträger (DTOs, Wertobjekte) nutzen; Verwenden Sie Klassen für verhaltensreiche Entitäten mit Identität.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### F2: Wie funktionieren async/await und`Task`intern?
+**A:**`async/await`ist syntaktischer Zucker über eine vom Compiler generierte Zustandsmaschine. Wenn Sie`await`und`Task`verwenden, wird die Methode am Wartepunkt geteilt: Alles davor wird synchron ausgeführt, der Rest wird dann als Fortsetzung registriert. Der Thread ist für andere Aufgaben frei. `Task<T>`stellt einen zukünftigen Wert dar. `ValueTask<T>`ist eine Strukturalternative für Hot Paths, die die Heap-Zuweisung vermeidet, wenn das Ergebnis bereits verfügbar ist.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### F3: Was sind Erweiterungsmethoden und wann sollte ich sie verwenden?
+**A:** Erweiterungsmethoden fügen Methoden zu vorhandenen Typen hinzu, ohne sie zu ändern. Es handelt sich um statische Methoden in einer statischen Klasse mit dem Schlüsselwort`this`im ersten Parameter. Sie ermöglichen eine flüssige, verkettbare API. Verwenden Sie sie, um Dienstprogrammmethoden zu Typen hinzuzufügen, die Sie nicht besitzen (wie`string`oder`IEnumerable<T>`). Vermeiden Sie es, sie übermäßig zu verwenden – sie können dazu führen, dass Code schwer zu erkennen ist.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### F4: Wie funktioniert der Mustervergleich in modernem C#?
+**A:** C# hat nach und nach einen leistungsfähigeren Mustervergleich hinzugefügt. Schalterausdrücke (C# 8), Typmuster, Eigenschaftsmuster, relationale Muster und Listenmuster (C# 11) ermöglichen eine prägnante, ausdrucksstarke bedingte Logik. Der Mustervergleich ersetzt lange if/else-Ketten und wird vom Compiler umfassend überprüft.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### F5: Was ist Abhängigkeitsinjektion in .NET und wie verwende ich sie?
+**A:** .NET verfügt über integrierte DI-Unterstützung über`Microsoft.Extensions.DependencyInjection`. Sie registrieren Dienste mit ihrer Lebensdauer (Singleton, Scoped, Transient) und der Container fügt sie über Konstruktorparameter ein. Singleton: eine Instanz für die App. Geltungsbereich: einer pro HTTP-Anfrage. Vorübergehend: Jedes Mal eine neue Instanz.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Erstellen Sie ein generisches Repository mit Caching
+**Problemstellung:** Implementieren Sie ein generisches Repository-Muster mit einem Dekorator, der Caching hinzufügt. Das Repository sollte CRUD-Operationen unterstützen und der Caching-Dekorator sollte Lesevorgänge zwischenspeichern und bei Schreibvorgängen ungültig machen.
+**Schritt 1 – Das Problem verstehen:**
+Wir benötigen: (1) eine generische `IRepository<T>`-Schnittstelle, (2) eine konkrete Implementierung (z. B. im Speicher), (3) einen Caching-Dekorator, der jedes Repository umschließt, (4) Cache-Ungültigmachung bei Schreibvorgängen. Das Dekorationsmuster speichert weiterhin orthogonal zur Datenzugriffslogik.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Definieren Sie`IRepository<T>`mit `Get`, `GetAll`, `Add`, `Update`, `Delete`.
+– Erstellen Sie `CachingRepository<T>`, das`IRepository<T>`umschließt und`IMemoryCache`verwendet.
+- Cache-Schlüssel:`typeof(T).Name:{id}`.
+- Machen Sie bei Schreibvorgängen den Cache-Eintrag ungültig.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Trennung der Belange: Caching ist ein Dekorator und wird nicht in das Repository eingemischt.
+- DI-Registrierung:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(mit Scrutor).
+- Produktion: Verwenden Sie`IDistributedCache`(Redis) für Multi-Server-Szenarien und fügen Sie Cache-Aside-Muster mit `CacheStampede`-Schutz hinzu.
+### Problem 2: Implementieren Sie eine Middleware-Pipeline
+**Problemstellung:** Erstellen Sie eine Middleware-Pipeline ähnlich der Anforderungspipeline von ASP.NET Core. Jede Middleware kann die Anfrage verarbeiten, die nächste Middleware aufrufen und die Antwort verarbeiten.
+**Schritt 1 – Das Problem verstehen:**
+Wir benötigen: (1) einen `RequestDelegate`-Typ, der die Pipeline darstellt, (2) Middleware, die den nächsten Delegaten umschließt, (3) eine Builder-API zum Erstellen von Middleware. Dies ist das Chain-of-Responsibility-Muster, das mit Delegierten implementiert wird.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+-`RequestDelegate`ist`Func<Context, RequestDelegate, Task>`.
+- Jede Middleware erhält den Kontext und eine `next`-Funktion.
+-`Use`fügt Middleware hinzu; `Build`setzt sie zu einem einzigen Delegaten zusammen.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+– Die Reihenfolge der Middleware ist wichtig: zuerst hinzugefügt = äußerst (zuerst auf Anfrage ausgeführt, zuletzt auf Antwort).
+– Terminal-Middleware (kein `next`-Aufruf) schließt die Pipeline kurz.
+– Produktion: Die Pipeline von ASP.NET Core entspricht genau diesem Muster, optimiert mit kompilierten Ausdrucksbäumen für eine Nullzuordnung.
 ---
 
 ## Zusammenfassung

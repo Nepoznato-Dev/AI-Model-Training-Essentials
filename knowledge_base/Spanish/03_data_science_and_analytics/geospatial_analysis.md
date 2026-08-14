@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Análisis geoespacial"
-descripción: "Sistemas de coordenadas, operaciones espaciales, GeoPandas, análisis ráster"
-categoría: "Ciencia y análisis de datos"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Geospatial Analysis"
+description: "Coordinate systems, spatial operations, GeoPandas, raster analysis"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de análisis y ciencia de datos"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [geoespacial, análisis, ciencia-y-análisis-de-datos]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "6 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [geospatial, analysis, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Análisis geoespacial
 El análisis geoespacial es el proceso de examinar datos que tienen un componente geográfico: coordenadas, direcciones, límites o cualquier dato vinculado a una ubicación en la Tierra. Responde a preguntas como "¿dónde están nuestros clientes?", "¿cuál es la ruta óptima?" y "¿cómo está cambiando el uso del suelo con el tiempo?". Cada conjunto de datos tiene una dimensión espacial y comprenderlo permite obtener conocimientos que el análisis estadístico puro pasa por alto.

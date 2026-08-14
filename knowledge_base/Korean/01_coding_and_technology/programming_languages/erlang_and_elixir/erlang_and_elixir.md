@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 얼랭 & 엘릭서
-Erlang은 1986년 Ericsson이 전화 스위치에 전원을 공급하기 위해 개발했습니다. 이는 Erlang이 다른 어떤 것보다 동시성, 내결함성 및 분산 시스템을 더 잘 처리하는 이유를 설명합니다. Erlang 프로세스는 가볍고 격리되어 있으며 메시지 전달을 통해서만 통신합니다. 프로세스가 충돌하면 감독자가 프로세스를 다시 시작합니다. 이러한 "충돌하자"라는 철학은 다운타임 없이 수년 동안 실행되는 시스템을 생산합니다.
+Erlang은 1986년 Ericsson이 전화 스위치에 전원을 공급하기 위해 제작했습니다. 이는 Erlang이 다른 어떤 것보다 동시성, 내결함성 및 분산 시스템을 더 잘 처리하는 이유를 설명합니다. Erlang 프로세스는 가볍고 격리되어 있으며 메시지 전달을 통해서만 통신합니다. 프로세스가 충돌하면 감독자가 프로세스를 다시 시작합니다. 이러한 "충돌하자"라는 철학은 다운타임 없이 수년 동안 실행되는 시스템을 생산합니다.
 Elixir는 2012년 Jose Valim이 Erlang의 VM(BEAM)을 기반으로 구축한 최신 언어입니다. 동시성, 내결함성, 배포 등 Erlang이 제공하는 모든 기능을 유지하면서도 친숙한 구문, 메타프로그래밍 및 뛰어난 도구(혼합 패키지 관리자, Hex 패키지 레지스트리)를 추가합니다. Elixir는 웹 애플리케이션(Phoenix 프레임워크를 통해), 실시간 시스템 및 임베디드 장치(Nerves를 통해)에 널리 사용됩니다.
 ---
 
@@ -48,7 +49,7 @@ Elixir는 2012년 Jose Valim이 Erlang의 VM(BEAM)을 기반으로 구축한 최
 - **내결함성**: 감독자 트리가 충돌이 발생한 프로세스를 자동으로 다시 시작합니다. 시스템은 오류로부터 정상적으로 복구됩니다.
 - **설계에 따른 분산**: Erlang 노드는 시스템 간에 투명하게 통신합니다. 클러스터용으로 구축되었습니다.
 - **핫 코드 다시 로드**: 가동 중지 시간 없이 실행 중인 시스템을 업데이트합니다. 통신 및 실시간 앱에 중요합니다.
-- **9999999999% 가동 시간**: Erlang 시스템은 생산에서 99.9999999%의 신뢰성을 달성했습니다.
+- **9999999999%의 가동 시간**: Erlang 시스템은 생산에서 99.9999999%의 신뢰성을 달성했습니다.
 - **Phoenix 프레임워크(Elixir)**: 실시간 채널이 내장되어 있어 가장 생산적인 웹 프레임워크 중 하나입니다.
 - **LiveView(Elixir)**: JavaScript를 작성하지 않고도 WebSocket 연결을 통해 풍부한 실시간 웹 UI를 구축할 수 있습니다.
 ## 절충안
@@ -180,7 +181,7 @@ loop() ->
 ## 주요 생태계 구성 요소
 | 구성요소 | 설명 |
 |------------|-------------|
-| **OTP** | 개방형 통신 플랫폼 — 분산된 내결함성 시스템 구축을 위한 검증된 프레임워크 |
+| **OTP** | 개방형 통신 플랫폼 — 분산형 내결함성 시스템 구축을 위한 검증된 프레임워크 |
 | **피닉스** | 실시간 채널과 LiveView를 갖춘 생산적인 웹 프레임워크 |
 | **엑토** | 데이터베이스 라이브러리 및 쿼리 언어(예: ActiveRecord 또는 SQLAlchemy) |
 | **신경** | Elixir로 임베디드 IoT 시스템 구축 |
@@ -594,18 +595,18 @@ end
 ### 키 혼합 명령
 | 명령 | 설명 |
 |---------|-------------|
-|  __보호됨_0__ | 새로운 Elixir 프로젝트 생성 |
-|  __보호됨_1__ | 새로운 Phoenix 웹 앱 만들기 |
-|  __보호됨_2__ | 종속성 가져오기 |
-|  __보호됨_3__ | 프로젝트 컴파일 |
-|  __보호됨_4__ | 테스트 실행 |
-|  __보호됨_5__ | 자세한 출력으로 테스트 실행 |
-|  __보호_6__ | 정적 분석 실행 |
-|  __보호_7__ | 유형 검사 실행 |
-|  __보호됨_8__ | 형식 코드 |
-|  __보호_9__ | 문서 생성 |
-|  __보호됨_10__ | 릴리스 빌드 |
-|  __보호됨_11__ | 프로젝트가 로드된 상태에서 REPL 시작 |
+| `mix new my_app`| 새로운 Elixir 프로젝트 생성 |
+| `mix phx.new my_app`| 새로운 Phoenix 웹 앱 만들기 |
+| `mix deps.get`| 종속성 가져오기 |
+| `mix compile`| 프로젝트 컴파일 |
+| `mix test`| 테스트 실행 |
+| `mix test --trace`| 자세한 출력으로 테스트 실행 |
+| `mix credo`| 정적 분석 실행 |
+| `mix dialyzer`| 유형 검사 실행 |
+| `mix format`| 형식 코드 |
+| `mix docs`| 문서 생성 |
+| `mix release`| 릴리스 빌드 |
+| `iex -S mix`| 프로젝트가 로드된 상태에서 REPL 시작 |
 ### 코드 포맷터(.formatter.exs)
 ```elixir
 # .formatter.exs
@@ -846,8 +847,8 @@ end
 ### 프로파일링 도구
 | 도구 | 목적 | 사용법 |
 |------|---------|-------|
-| **:eprof** | 기능 수준 프로파일링 | `:eprof.start()`다음 프로필 |
-| **:fprof** | 상세한 호출 그래프 프로파일링 |  __보호됨_1__ |
+| **:eprof** | 기능 수준 프로파일링 | `:eprof.start()`후 프로필 |
+| **:fprof** | 상세한 호출 그래프 프로파일링 | `:fprof.profile(fn -> ... end)`|
 | **:관찰자** | 시각적 시스템 모니터 |  IEx의`:observer.start()`|
 | **벤치** | 벤치마킹 라이브러리 | 뎁스에 추가 |
 ### Benchee를 사용한 벤치마킹
@@ -925,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | 데이터 과학 / ML | 생태계가 아니다 | 파이썬, R |
 | 모바일 앱 | 적합하지 않음 | 스위프트, 코틀린, 다트 |
 | 간단한 REST API | 소규모 서비스에는 가능하지만 과잉 | Go, Node.js, Python |
+---
+
+## 종합 Q&A
+### Q1: Erlang의 "Let it crash" 철학은 어떻게 작동하나요?
+**답:** 방어적인 프로그래밍 대신 Erlang은 프로세스가 충돌하고 감독자를 통해 다시 시작되도록 합니다.
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2: Elixir 파이프라인은 어떻게 작동하나요?
+**A:**`|>`연산자는 한 함수의 결과를 다음 인수의 첫 번째 인수로 전달합니다.
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3: 얼랭과 엘릭서의 차이점은 무엇인가요?
+**답:** Elixir는 최신 구문을 사용하여 Erlang VM(BEAM)에서 실행됩니다.
+- Elixir: 파이프 연산자, 매크로, 프로토콜, 문자열 보간
+- Erlang: 더 간단한 구문, OTP 내장, 더 많은 전투 테스트를 거침
+- 둘 다 동일한 동시성 모델, VM 및 생태계를 공유합니다.
+### Q4: GenServer는 Elixir에서 어떻게 작동하나요?
+**답:** GenServer는 상태 저장 프로세스에 대한 표준 추상화입니다.
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5: Elixir에서 오류를 어떻게 처리하나요?
+**A:** 예외에는 `try/rescue`를 사용하고, 예상되는 오류에는 `{:ok, result} | {:error, reason}`를 사용하세요.
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 내결함성 키-값 저장소 구축
+**1단계: 문제 이해**
+프로세스 충돌에도 살아남는 키-값 저장소를 만듭니다.
+**2단계: 접근 방식 파악**
+감독자와 함께 GenServer를 사용하십시오.
+**3단계: 구현**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**4단계: 확인**
+프로세스를 종료하고 새로운 상태로 다시 시작되는지 확인합니다.
+### 문제 2: 동시 웹 스크레이퍼
+**1단계: 문제 이해**
+여러 URL을 동시에 가져오고 결과를 수집합니다.
+**2단계: 접근 방식 파악**
+동시 실행을 위해 Elixir Tasks를 사용하세요.
+**3단계: 구현**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**4단계: 최적화**
+대규모 URL 목록에 대한 속도 제한, 재시도 및 스트리밍을 추가합니다.
 ---
 
 ## 요약

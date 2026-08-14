@@ -678,5 +678,119 @@ Po nauczeniu się języka Scratch typowe kolejne kroki obejmują:
 | Edukacja CS na poziomie uniwersyteckim | Zbyt proste | Python, Java, C |
 ---
 
+## Syntetyczne pytania i odpowiedzi
+**P1: Czy Scratch jest naprawdę językiem programowania?**
+Odpowiedź 1: Tak, Scratch jest prawdziwym językiem programowania, ale jest wizualny, a nie tekstowy. Obsługuje wszystkie podstawowe koncepcje programowania: zmienne, pętle, warunki warunkowe, funkcje (bloki niestandardowe), listy i programowanie sterowane zdarzeniami. Różnica polega na tym, że zamiast wpisywać kod, przeciągasz i upuszczasz bloki. Eliminuje to błędy składniowe i sprawia, że ​​programowanie staje się dostępne dla młodych uczniów.
+**Pyt. 2: Jak utworzyć niestandardowe funkcje (niestandardowe bloki) w Scratchu?**
+A2: Przejdź do kategorii „Moje bloki” i kliknij „Utwórz blok”. Nadaj mu nazwę, w razie potrzeby dodaj parametry, a następnie zdefiniuj jego zachowanie, dodając pod nim bloki. Bloki niestandardowe mogą przyjmować dane wejściowe (liczby, ciągi znaków, wartości logiczne) i mogą wywoływać inne bloki niestandardowe. Umożliwia to programowanie modułowe i ponowne wykorzystanie kodu.
+**Pyt. 3: Jaki jest najlepszy sposób obsługi złożonej logiki gry w Scratchu?**
+A3: Używaj niestandardowych bloków do organizowania logiki, rozgłaszaj wiadomości do koordynacji wydarzeń między duszkami i używaj list do przechowywania stanu gry (wyniki, poziomy, ekwipunek). W przypadku złożonej sztucznej inteligencji używaj maszyn o skończonych stanach ze zmiennymi śledzącymi bieżący stan. Klonuj duszki dla wielu wrogów i użyj opcji „kiedy zaczynam jako klon”, aby zapewnić każdemu niezależne zachowanie.
+**Pytanie 4: Jak mogę udostępniać dane pomiędzy duszkami w Scratchu?**
+Odpowiedź 4: Używaj zmiennych globalnych (utworzonych bez opcji „tylko dla tego duszka”) do udostępnianych danych, takich jak wynik lub stan gry. Użyj komunikatów rozgłoszeniowych, aby wywołać zdarzenia na duszkach. W przypadku bardziej złożonej komunikacji używaj list jako współdzielonych struktur danych. Każdy duszek może czytać i modyfikować zmienne globalne i listy, umożliwiając koordynację.
+**P5: Jakie są zaawansowane techniki w Scratchu?**
+A5: Używaj bloków pisaków do rysowania i tworzenia efektów wizualnych. Zaimplementuj raycasting dla grafiki przypominającej 3D. Używaj zmiennych chmurowych w grach wieloosobowych (wymaga statusu Scratchera). Twórz generowanie proceduralne za pomocą losowych liczb i list. Używaj niestandardowych bloków z parametrami dla algorytmów wielokrotnego użytku. Eksperymentuj z wykrywaniem wideo i manipulacją dźwiękiem w projektach interaktywnych.
+---
+
+## Łańcuch myśli
+### Problem 1: Tworzenie gry platformowej
+**Krok 1: Zrozum problem**
+Musimy stworzyć platformówkę, w której postać będzie mogła poruszać się w lewo/prawo, skakać, omijać przeszkody i zbierać przedmioty.
+**Krok 2: Zidentyfikuj podejście**
+- Użyj symulacji grawitacji ze zmienną „spadającą”.
+- Wykryj ziemię/kolizję za pomocą dotknięcia koloru lub duszka
+- Przechowuj dane na poziomie list
+- Używaj niestandardowych bloków do logiki skoków i ruchu
+**Krok 3: Wdróż rozwiązanie**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**Krok 4: Weryfikacja i optymalizacja**
+Skoki testowe na różnych platformach. Dostosuj grawitację i wysokość skoku, aby uzyskać dobre wrażenia z gry. Dodaj animacje do biegania i skakania. Implementuj punkty kontrolne za pomocą komunikatów rozgłoszeniowych.
+---
+
+### Problem 2: Tworzenie quizu ze śledzeniem wyników
+**Krok 1: Zrozum problem**
+Stwórz grę typu quiz, która zadaje pytania, sprawdza odpowiedzi i śledzi wynik gracza.
+**Krok 2: Zidentyfikuj podejście**
+- Przechowuj pytania i odpowiedzi na listach równoległych
+- Użyj licznika pytań, aby śledzić postęp
+- Do wprowadzania danych używaj bloków „zapytaj i czekaj”.
+- Porównaj odpowiedzi i zaktualizuj wynik
+**Krok 3: Wdróż rozwiązanie**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**Krok 4: Weryfikacja i optymalizacja**
+Testuj z różnymi odpowiedziami, w tym z przypadkami Edge. Dodaj opinię o błędnych odpowiedziach. Zaimplementuj opcję ponownej próby. Dodaj efekty dźwiękowe i wizualne informacje zwrotne dotyczące poprawnych/złych odpowiedzi.
+---
+
+### Zadanie 3: Rysowanie drzew fraktalnych za pomocą pióra
+**Krok 1: Zrozum problem**
+Utwórz rekurencyjne drzewo fraktalne za pomocą rozszerzenia pióra.
+**Krok 2: Zidentyfikuj podejście**
+- Użyj rekurencji do rysowania gałęzi
+- Każda gałąź dzieli się na dwie mniejsze gałęzie
+- Użyj losowych kątów, aby uzyskać naturalną zmienność
+- Śledź długość gałęzi i zmniejszaj ją z każdym poziomem rekurencji
+**Krok 3: Wdróż rozwiązanie**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**Krok 4: Weryfikacja i optymalizacja**
+Dostosuj próg długości gałęzi i zakresy kątów dla drzew estetycznych. Dodaj liście na końcach gałęzi, zmieniając kolor. Implementuj różne style drzewa. Zapisz rysunki jako obrazy.
+---
+
 ## Streszczenie
 Scratch nie jest językiem programowania w tradycyjnym sensie – jest środowiskiem do nauki. Jego geniusz polega na usuwaniu wszelkich barier pomiędzy dzieckiem a radością tworzenia czegoś interaktywnego. Koncentrując się na koncepcjach, a nie na składni, Scratch uczy podstaw programowania, które można przenieść na dowolny język. Jeśli chodzi o wprowadzanie programowania dla młodych uczniów, Scratch jest złotym standardem.

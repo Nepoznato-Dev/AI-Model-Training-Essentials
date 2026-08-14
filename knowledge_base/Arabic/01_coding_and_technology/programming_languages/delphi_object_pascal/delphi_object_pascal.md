@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "دلفي/كائن باسكال"
-الوصف: "مرجع شامل للغة البرمجة Delphi/Object Pascal يغطي نظرة عامة، والمقايضات، وأساسيات بناء الجملة، والنظام البيئي، ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Delphi / Object Pascal"
+description: "Comprehensive reference for the Delphi/Object Pascal programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [كائن دلفي باسكال، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "44 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [delphi-object-pascal, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # دلفي / كائن باسكال
 دلفي هي لغة برمجة موجهة للكائنات تعتمد على لغة باسكال، وقد تم تطويرها في الأصل بواسطة بورلاند (لاحقًا إمباركاديرو، الآن إيديرا). تم إصداره لأول مرة في عام 1995 باسم "Delphi 1"، وقد تم تصميمه للتطوير السريع للتطبيقات (RAD) لتطبيقات سطح مكتب Windows. تُعرف اللغة رسميًا باسم Object Pascal، ويوفر Delphi IDE مصممًا للنماذج المرئية وأدوات قاعدة بيانات متكاملة ومترجمًا قويًا.
 كانت دلفي واحدة من أدوات تطوير Windows الأكثر شعبية في أواخر التسعينيات وأوائل العقد الأول من القرن الحادي والعشرين. على الرغم من انخفاض شعبيتها بشكل كبير، إلا أنها تحتفظ بقاعدة مستخدمين مخصصة، خاصة في تطبيقات سطح المكتب للمؤسسات، والواجهات الأمامية لقواعد البيانات، وصيانة الأنظمة القديمة. تدعم Modern Delphi (11/12) التطوير عبر الأنظمة الأساسية لأنظمة Windows وmacOS وiOS وAndroid من خلال إطار عمل FireMonkey (FMX).
@@ -478,7 +483,7 @@ end.
 
 ## الهندسة المعمارية وتصميم النظام
 ### بنية المكونات
-تم بناء VCL (مكتبة المكونات المرئية) من دلفي وFMX (FireMonkey) على التسلسل الهرمي للمكونات. يرث كل عنصر مرئي من`TComponent`.
+تم بناء VCL (مكتبة المكونات المرئية) من دلفي وFMX (FireMonkey) على التسلسل الهرمي للمكونات. كل عنصر مرئي يرث من`TComponent`.
 ```
 TObject
 └── TPersistent
@@ -561,15 +566,15 @@ delphi-project/
 ### مرجع توجيهات المترجم
 | توجيه | الغرض | مثال |
 |-----------|--------|---------|
-|  __محمي_0__ | تطبيق وحدة التحكم |  __محمي_1__ |
-|  __محمي_2__ | تطبيق واجهة المستخدم الرسومية (افتراضي) |  __محمي_3__ |
-|  __محمي_4__ | تعريف الرمز الشرطي |  __محمي_5__ |
-|  __محمي_6__ | التجميع الشرطي |  __محمي_7__ |
-|  __محمي_8__ | تضمين مورد النموذج |  __محمي_9__ |
-|  __محمي_10__ | قمع التحذيرات |  __محمي_11__ |
-|  __محمي_12__ | قمع التلميحات |  __محمي_13__ |
-|  __محمي_14__ | تمكين المحسن |  __محمي_15__ |
-|  __محمي_16__ | تمكين عمليات التحقق من نطاق السلسلة |  __محمي_17__ |
+| `{$APPTYPE CONSOLE}`| تطبيق وحدة التحكم | `{$APPTYPE CONSOLE}`|
+| `{$APPTYPE GUI}`| تطبيق واجهة المستخدم الرسومية (افتراضي) | `{$APPTYPE GUI}`|
+| `{$DEFINE DEBUG}`| تعريف الرمز الشرطي | `{$DEFINE DEBUG}`|
+| `{$IFDEF symbol}`| التجميع الشرطي | `{$IFDEF DEBUG}`|
+| `{$R *.dfm}`| تضمين مورد النموذج | `{$R *.dfm}`|
+| `{$WARNINGS OFF}`| قمع التحذيرات | `{$WARNINGS OFF}`|
+| `{$HINTS OFF}`| قمع التلميحات | `{$HINTS OFF}`|
+| `{$OPTIMIZATION ON}`| تمكين المحسن | `{$OPTIMIZATION ON}`|
+| `{$STRINGCHECKS ON}`| تمكين عمليات التحقق من نطاق السلسلة | `{$STRINGCHECKS ON}`|
 ### البناء من سطر الأوامر
 ```batch
 REM 32-bit Windows build (DCC32)
@@ -611,7 +616,7 @@ end.
 
 ## الاختبار والتصحيح
 ### ميزات مصحح أخطاء IDE
-يشتمل IDE الخاص بـ Delphi على مصحح أخطاء متكامل ومتكامل.
+يشتمل IDE الخاص بـ Delphi على مصحح أخطاء متكامل كامل المواصفات.
 | ميزة | الوصف |
 |---------|------------|
 | **نقاط التوقف** | تعيين على أي سطر قابل للتنفيذ؛ نقاط التوقف المشروطة مدعومة |
@@ -1039,7 +1044,7 @@ end;
 | ** التدريب على السلسلة ** | متوسطة | إعادة استخدام ثوابت السلسلة؛ تجنب التسلسل المتكرر |
 | **تجميع الكائنات** | متوسطة | إعادة استخدام الكائنات التي تم إنشاؤها/تدميرها بشكل متكرر |
 | **تحميل كسول** | عالية | تحميل البيانات/النماذج فقط عند الحاجة |
-| **تحسين المترجم** | متوسطة | قم بتمكين`{$O+}`لإصدارات الإصدار |
+| **تحسين المترجم** | متوسطة | تمكين`{$O+}`لبنيات الإصدار |
 ---
 
 ## النشر والاستخدام في العالم الحقيقي
@@ -1081,6 +1086,84 @@ Delphi Deployment Targets:
 | تطوير واجهة المستخدم الرسومية الجديدة لنظام التشغيل Windows | ممكن ولكن المجتمع يتقلص | C# (WPF/WinUI 3) |
 | تطوير الويب | غير مناسب | جافا سكريبت، بايثون، C# |
 | تطبيقات الجوال | ممكن عبر FMX ولكنه محدود | سويفت، كوتلين، رفرفة |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: كيف يعمل إطار عمل دلفي VCL؟
+**أ:** يقوم VCL بتغليف عناصر تحكم Windows API في تسلسل هرمي موجه للكائنات. النماذج والأزرار والشبكات كلها فئات:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### السؤال الثاني: كيف أقوم بإنشاء مكونات في دلفي؟
+**أ:** وراثة من TComponent أو TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### س3: ما الفرق بين دلفي وفري باسكال؟
+**أ:** دلفي عبارة عن IDE/مترجم تجاري بواسطة Embarcadero. Free Pascal هو المترجم مفتوح المصدر، وLazarus هو IDE المجاني. كلاهما يستخدم بناء جملة Object Pascal.
+### س4: كيف يمكنني العمل مع قواعد البيانات في دلفي؟
+**أ:** استخدم مكونات FireDAC أو dbExpress:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### س5: هل لا تزال دلفي ذات صلة اليوم؟
+**ج:** للحفاظ على تطبيقات Windows القديمة، نعم. بالنسبة للمشاريع الجديدة، يفضل معظم المطورين لغة C# أو تقنيات الويب. يوفر Free Pascal/Lazarus بديلاً مجانيًا عبر الأنظمة الأساسية.
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: إنشاء نموذج مدرك للبيانات
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء نموذج يعرض سجلات قاعدة البيانات ويحررها.
+**الخطوة 2: تحديد النهج**
+استخدم المكونات المدركة للبيانات المرتبطة بمجموعة بيانات.
+**الخطوة 3: التنفيذ**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**الخطوة 4: تمديد**
+أضف وظيفة التحقق من الصحة ومعالجة الأخطاء والبحث/التصفية.
 ---
 
 ## ملخص

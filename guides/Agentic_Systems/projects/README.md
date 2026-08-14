@@ -6,10 +6,12 @@ Runnable projects for Agentic AI Systems.
 
 ### 1. Simple Agent with Memory
 
-A basic agent implementation with short-term and long-term memory.
+A basic agent implementation with short-term and long-term memory, tools (calculator, time lookup), and a perceive-think-act-observe loop.
 
 **Files:**
 - `simple_agent_memory/` - Agent with memory capabilities
+  - `main.py` - Full agent with ShortTermMemory, LongTermMemory, tools, and interactive mode
+  - `requirements.txt` - Dependencies (openai, langchain)
 
 ### 2. Multi-Agent Collaboration
 

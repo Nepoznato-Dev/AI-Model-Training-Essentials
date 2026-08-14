@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Ada
 Ada é uma linguagem de programação compilada e digitada estaticamente, projetada para sistemas críticos de segurança e de alta integridade. Originalmente desenvolvido na década de 1980 sob contrato com o Departamento de Defesa dos EUA (em homenagem a Ada Lovelace, considerada a primeira programadora de computador), Ada enfatiza confiabilidade, facilidade de manutenção e correção. Ele foi projetado para substituir as centenas de linguagens de programação usadas pelo DoD por uma linguagem única e bem especificada.
 Ada é usada na aviação (sistemas fly-by-wire), espaço (ESA e NASA), defesa (orientação de mísseis, radar), transporte ferroviário e dispositivos médicos – em qualquer lugar onde falhas de software possam custar vidas.
@@ -861,6 +862,147 @@ end Main;
 | Desenvolvimento geral de aplicações | Exagero para sistemas não críticos | Python, Java, Go |
 | Desenvolvimento web | Não adequado | Javascript, Python |
 | Ciência de dados / ML | Não o ecossistema | Pitão, R |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como o sistema de tipos de Ada evita bugs em tempo de compilação?
+**R:** O sistema de tipos de Ada está entre os mais rígidos de qualquer linguagem. Ele detecta erros que outras linguagens não percebem:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2: Qual é o modelo de tarefas de Ada e como ele se compara a outros modelos de simultaneidade?
+**R:** Ada possui simultaneidade integrada com objetos e tarefas protegidos:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: Como uso genéricos no Ada?
+**R:** Os genéricos da Ada são explícitos e de tipo seguro:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: O que torna o Ada adequado para sistemas críticos de segurança?
+**R:** Ada fornece:
+- Subconjunto SPARK para verificação formal (prova matemática de correção)
+- Programação baseada em contrato (pré/pós-condições, invariantes de tipo)
+- Nenhuma alocação de memória implícita no SPARK
+- Tarefas e agendamento determinísticos
+- Perfil Ravenscar para sistemas em tempo real de alta integridade
+- Qualificação de conjunto de ferramentas (DO-178C para aviônicos)
+### Q5: Como faço para construir projetos Ada?
+**R:** Use GPRBuild com arquivos de projeto GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Implementando uma fila de tipo seguro
+**Etapa 1: Entenda o problema**
+Crie uma fila limitada e segura para threads com verificação de tamanho em tempo de compilação.
+**Etapa 2: Identifique a abordagem**
+Use um objeto protegido com um buffer limitado.
+**Etapa 3: Implementar**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Etapa 4: verificar**
+O objeto protegido garante exclusão mútua. Barreiras de entrada evitam transbordamento/transbordamento insuficiente.
+### Problema 2: Validação Baseada em Contrato
+**Etapa 1: Entenda o problema**
+Implemente uma função de raiz quadrada com contratos formais.
+**Etapa 2: Identifique a abordagem**
+Use contratos Ada 2012 (pré/pós-condições).
+**Etapa 3: Implementar**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Etapa 4: verificar**
+As verificações de tempo de execução (afirmações) detectam violações. No SPARK, estas tornam-se obrigações de prova.
 ---
 
 ## Resumo

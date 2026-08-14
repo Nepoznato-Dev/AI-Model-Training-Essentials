@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Aprendendo Ciências e Pedagogia
-Aprender ciências é o estudo interdisciplinar de como as pessoas aprendem – com base na psicologia, neurociência, educação e ciências cognitivas. A pedagogia é a arte e a ciência de ensinar. Juntos, eles respondem a perguntas importantes para qualquer pessoa que ensina, treina, orienta ou cria conteúdo educacional: O que realmente ajuda as pessoas a aprender? Quais técnicas de estudo comuns são ineficazes? Como a instrução deve ser estruturada para máxima retenção e transferência?
+Aprender ciências é o estudo interdisciplinar de como as pessoas aprendem – com base na psicologia, neurociência, educação e ciências cognitivas. Pedagogia é a prática e metodologia de ensino. Juntos, eles abordam questões relevantes para qualquer pessoa que ensina, treina, orienta ou cria conteúdo educacional: Que métodos ajudam as pessoas a aprender de forma eficaz? Quais técnicas de estudo comuns são ineficientes? Como a instrução deve ser estruturada para uma retenção e transferência ideais?
 ---
 
 ## Como funciona o aprendizado
@@ -58,13 +59,13 @@ Aprender ciências é o estudo interdisciplinar de como as pessoas aprendem – 
 | **Carga intrínseca** | Dificuldade inerente ao material | Gerenciar a complexidade; sequência do simples ao complexo |
 | **Carga externa** | Dificuldade causada por um design de instrução deficiente | Remova complexidade desnecessária; exemplos claros; boa formatação |
 | **Carga Alemã** | Esforço mental dedicado à aprendizagem real (construção de esquemas) | Incentivar a elaboração; autoexplicação; prática significativa |
-**Principal informação**: a memória de trabalho é limitada (aproximadamente 4±1 itens de uma vez). A instrução deve minimizar a carga externa para que os recursos cognitivos estejam disponíveis para a aprendizagem.
+**Informação importante**: a memória de trabalho é limitada (aproximadamente 4±1 itens de uma vez). A instrução deve minimizar a carga externa para que os recursos cognitivos estejam disponíveis para a aprendizagem.
 ---
 
 ## Estratégias de aprendizagem baseadas em evidências
 ### Estratégias Altamente Eficazes
 | Estratégia | Descrição | Por que funciona | Nível de evidência |
-|----------|-------------|-------------|----------------|
+|----------|------------|-------------|----------------|
 | **Prática de recuperação** | Recuperando ativamente informações da memória | Fortalece os traços de memória; identifica lacunas | Muito forte |
 | **Prática espaçada** | Distribuir sessões de estudo ao longo do tempo | Reconsolidação de forças; combate a curva do esquecimento | Muito forte |
 | **Intercalação** | Misturar diferentes tipos de problemas ou tópicos | Melhora a discriminação; melhor transferência | Forte |

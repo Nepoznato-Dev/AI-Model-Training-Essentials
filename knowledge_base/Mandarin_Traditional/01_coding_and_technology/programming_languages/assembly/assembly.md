@@ -46,7 +46,7 @@ contribution:
 
 ## 為什麼組裝很重要
 - **硬體理解**：準確了解CPU在指令層級正在做什麼的唯一方法。
-- **效能調整**：關鍵程式碼部分的最佳化可以超出編譯器產生的範圍。
+- **效能調整**：關鍵程式碼部分可以進行超出編譯器產生的最佳化。
 - **逆向工程**：惡意軟體分析、安全研究和了解專有軟體。
 - **嵌入式系統**：某些微控制器沒有高階語言支援。
 - **作業系統開發**：啟動程式碼、中斷處理程序和上下文切換需要彙編。
@@ -427,12 +427,12 @@ ld standalone.o -o standalone
 ## 關鍵概念
 |概念 |描述 |
 |---------|-------------|
-| **暫存器** | CPU 的內部儲存（x86 上的 EAX、EBX、ECX、EDX；ARM 上的 R0-R15）|
-| **記憶體定址** |透過位址存取 RAM (`MOV EAX, [0x1000]`) |
-| **堆疊** |用於函數呼叫和局部變數的 LIFO 記憶體區域（`PUSH`、`POP`） |
-| **說明** |基本運算：算術、邏輯、資料移動、控制流|
-| **中斷/系統呼叫** |向作業系統要求服務|
-| **呼叫約定** |函數如何接收參數和傳回值（因架構而異）|
+| **寄存器** | CPU 的内部存储（x86 上的 EAX、EBX、ECX、EDX；ARM 上的 R0-R15）|
+| **内存寻址** |通过地址访问 RAM (`MOV EAX, [0x1000]`) |
+| **堆栈** |用于函数调用和局部变量的 LIFO 内存区域（`PUSH`、`POP`） |
+| **说明** |基本运算：算术、逻辑、数据移动、控制流 |
+| **中断/系统调用** |向操作系统请求服务 |
+| **调用约定** |函数如何接收参数和返回值（因架构而异）|
 ---
 
 ## 測試和調試
@@ -486,7 +486,7 @@ gdb ./program
 |段錯誤 |程式因 SIGSEGV 崩潰 |檢查指標值；驗證堆疊對齊 |
 |無限循環|程式掛起 |在循環中設定斷點；檢查條件標誌|
 |錯誤結果 |計算錯誤 |逐步進行算術運算；每次操作後檢查暫存器值 |
-|堆疊損壞| RET 崩潰 |驗證PUSH/POP餘額；檢查 RSP 對齊（必須是 16 位元組對齊） |
+|堆疊損壞 | RET 崩潰 |驗證PUSH/POP餘額；檢查 RSP 對齊（必須是 16 位元組對齊） |
 |錯誤的系統呼叫 |意外的核心行為 |驗證 RAX 中的系統呼叫號碼；檢查參數暫存器|
 ---
 
@@ -518,13 +518,13 @@ main:
 ```
 
 ### 系統呼叫參考 (Linux x86-64)
-|系統呼叫|拉克斯 |精胺酸1 (RDI) | Arg2 (RSI) |精胺酸3 (RDX) | Arg4 (R10) |
+|系統呼叫|拉克斯|精胺酸1 (RDI) | Arg2 (RSI) |精胺酸3 (RDX) | Arg4 (R10) |
 |--------|-----|------------|------------|------------|------------|
 |閱讀 | 0 | FD |緩衝區|計數| — |
 |寫入 | 1 | FD |緩衝區|計數| — |
-|開啟| 2 |路徑名稱 |旗幟|模式| — |
+|開啟| 2 |路徑名稱 |旗幟|模式 | — |
 | 關閉 | 3 | FD | — | — | — |
-|映射| 9 |地址|長度|普特|旗幟|
+|映射 | 9 |地址|長度|普特|旗幟|
 |退出 | 60|狀態 | — | — | — |
 ### C 中的內聯彙編 (GCC)
 ```c
@@ -707,7 +707,7 @@ file program
 | **安全性** |漏洞利用開發、惡意軟體分析、逆向工程 |與已編譯的二進位檔案互動的唯一方法|
 | **遊戲引擎** | SIMD 最佳化數學（矩陣變換、物理）|每幀計算的最大吞吐量|
 | **編譯器** |程式碼產生後端（LLVM、GCC）|發出最佳化的機器碼 |
-| **密碼學** | AES-NI、SHA指令加速|硬體加速加密操作 |
+| **密碼學** | AES-NI、SHA指令加速 |硬體加速加密作業 |
 | **裝置驅動程式** | GPU驅動程式、網路卡韌體|直接暫存器級硬體存取|
 ### 遺留系統集成
 許多遺留系統包含嵌入 C 程式碼庫中的彙編例程。這些通常是性能關鍵函數或已維護數十年的特定於硬體的例程。
@@ -725,15 +725,94 @@ void process_data(void) {
 ---
 
 ## 何時使用彙編
-|場景 |為什麼要組裝|更好的選擇|
+|場景|為什麼要組裝|更好的選擇|
 |----------|-------------|--------------------|
 |作業系統核心開發|引導程式碼、中斷處理程序|用於大多數核心程式碼的 C |
 |設備驅動程式|直接硬體存取| C、鐵鏽|
 |逆向工程/安全|分析編譯的二進位檔案的唯一方法| — |
-|效能關鍵程式碼 |最大最佳化 |具有編譯器內在函數的 C/C++ |
+|效能關鍵程式碼 |最大最佳化|具有編譯器內在函數的 C/C++ |
 |嵌入式韌體（裸機）|沒有可用的高階語言 | C、鐵鏽|
 |教育 |了解電腦體系結構 | — |
-|通用應用程式開發|對於複雜的程式來說不切實際 |任何高階語言 |
+|通用應用程式開發 |對於複雜的程式來說不切實際 |任何高階語言 |
+---
+
+## 綜合問答
+### Q1：RISC 和 CISC 彙編有什麼不同？
+**答：** CISC (x86) 具有複雜的、可變長度的指令。 RISC (ARM) 有簡單、固定長度的指令：
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2：堆疊在彙編中如何運作？
+**A:** 堆疊向下增長。 `push`減少 SP 並儲存；`pop`載入並遞增 SP：
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3：如何在組譯中呼叫函數？
+**A:** 遵循呼叫約定（Linux 上為 System V AMD64，Windows 上為 Windows x64）：
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4：需要了解的最重要的組裝說明是什麼？
+**A:** 資料移動、算術、控制流和堆疊操作構成了核心。
+### Q5：彙編如何用於安全研究？
+**答：** 逆向工程、漏洞利用開發、惡意軟體分析和理解編譯器輸出都需要組合語言。
+---
+
+## 解決問題的思路
+### 問題 1：在組譯中實作循環
+**第 1 步：了解問題**
+對 1 到 N 之間的整數求和。
+**第 2 步：確定方法**
+使用计数器寄存器和累加器。
+**步驟 3：實施**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**第 4 步：優化**
+使用公式 N*(N+1)/2 表示 O(1)，而不是 O(N)。
 ---
 
 ＃＃ 概括

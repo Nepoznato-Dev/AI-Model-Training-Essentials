@@ -41,7 +41,7 @@ contribution:
 
 #Haskell
 Haskell tamamen işlevsel, statik olarak yazılan, tembelce değerlendirilen bir programlama dilidir. İlk olarak 1990'da standartlaştırılan (Haskell 90) ve birden fazla versiyonla (Haskell 2010 mevcut standarttır) iyileştirilen Haskell, matematiksel titizliği, güçlü tip sistemi (tip sınıfları, monadlar ve cebirsel veri türleriyle) ve türler aracılığıyla doğruluğa verdiği önemle tanınır.
-Haskell ana dillerden biri olmasa da etkisi çok büyüktür. Monadlar, tembel değerlendirme ve tip sınıfları gibi kavramlar Rust, Swift, Kotlin, Scala ve TypeScript'i etkilemiştir. Haskell finansta (Standard Chartered, Barclays), derleyicilerde (GHC) ve resmi doğrulamada kullanılır.
+Haskell yaygın bir dil olmasa da etkisi çok büyüktür. Monadlar, tembel değerlendirme ve tip sınıfları gibi kavramlar Rust, Swift, Kotlin, Scala ve TypeScript'i etkilemiştir. Haskell finansta (Standard Chartered, Barclays), derleyicilerde (GHC) ve resmi doğrulamada kullanılır.
 ---
 
 ## Haskell Neden Önemlidir
@@ -940,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | Genel uygulama geliştirme | Mümkün ama niş | Python, Git, Java |
 | Web geliştirme | Yesod/Hizmetçi var ama sınırlı | JavaScript/TypeScript |
 | Veri bilimi | Ekosistem değil | Python, R |
+---
+
+## Sentetik Soru-Cevap
+### S1: Haskell'in tembel değerlendirmesi performansı nasıl etkiler?
+**C:** Tembel değerlendirme, ifadelerin yalnızca ihtiyaç duyulduğunda hesaplanması anlamına gelir; bu da sonsuz veri yapılarına ve şekillendirilebilir işlem hatlarına olanak tanır. Ancak, eğer yığınlar birikirse alan sızıntılarına neden olabilir:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Sayısal katlamalar için`foldl`yerine`foldl'`(`Data.List`'den) kullanın. Gerektiğinde değerlendirmeyi zorlamak için`!`patlama desenlerini veya `seq`'yi kullanın.
+### S2: `Functor`,`Applicative`ve`Monad`arasındaki pratik fark nedir?
+**A:** Her tür sınıfı aşağıdaki yetenekleri ekler:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** saf bir işlevi bir bağlam üzerinde eşler. **Uygulayıcı** kendileri bir bağlamda olan işlevleri uygular. **Monad** her adımın bir önceki adımın sonucuna bağlı olmasını sağlar. Uygulamada: basit dönüşümler için`fmap`/ `<$>`, efektleri birleştirmek için`<*>`ve sıralı bağımlı hesaplamalar için`>>=`/`do`kullanın.
+### S3: Saf Haskell kodundaki yan etkileri nasıl ele alabilirim?
+**A:** Saf ve etkili kodu ayırmak için tür sistemini kullanın:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Temel mantığı saf tutun ve efektleri kenarlara doğru itin. Yapılandırma için `ReaderT`'yi, hatalar için `ExceptT`'yi ve değiştirilebilir durum için `StateT`'yi kullanın.
+### S4: Tür sınıfları nelerdir ve bunların OOP arayüzlerinden farkı nedir?
+**C:** Tür sınıfları, türlerin uygulayabileceği davranışı tanımlar. OOP arayüzlerinin aksine, açıktırlar (herhangi bir tür örnek olabilir) ve geçici polimorfizmi destekler:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### S5: Bir Haskell projesini gerçek dünyada kullanım için nasıl yapılandırabilirim?
+**C:** Cabal veya Stack'i standart bir düzende kullanın:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Temel uygulamalar: GÇ'yi `Main.hs`'de veya özel bir`IO`modülünde tutun, çekirdek mantığı saf ve test edilebilir hale getirin, etki alanı türleri için`newtype`sarmalayıcıları kullanın.
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Hata Raporlamayla Güvenli Bölme Fonksiyonunun Uygulanması
+**1. Adım: Sorunu Anlayın**
+Sıfıra bölme işlemini gerçekleştiren ve yalnızca çökmeleri değil, anlamlı hataları da bildiren bölmeye ihtiyacımız var.
+**2. Adım: Yaklaşımı Belirleyin**
+Bir hata mesajı veya sonuç döndürmek için `Either`'yi kullanın. Bu, başarısızlık olasılığını türde açıkça ortaya koyar.
+**3. Adım: Uygulama**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**4. Adım: Doğrulayın**
+Tip sistemi, arayanların hata durumunu ele alması gerektiğini garanti eder. Desen eşleştirme veya`either`açık işlemeyi zorlar.
+### Sorun 2: Basit Yapılandırma Dilini Ayrıştırma
+**1. Adım: Sorunu Anlayın**
+Anahtar/değer çiftlerini`name=Alice\nage=30`gibi bir dizeden ayrıştırın.
+**2. Adım: Yaklaşımı Belirleyin**
+`Text.Parsec` veya manuel yinelemeyi kullanın. Basit olması açısından`break`ve`span`kullanın.
+**3. Adım: Uygulama**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**4. Adım: Genişletin**
+Yorum işleme (`#`), bölüm başlıkları (`[section]`) ekleyin ve`Value`ADT kullanarak zorlama yazın.
+### Problem 3: Tembellikle Notlandırılmış Fibonacci Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Fibonacci sayılarını verimli bir şekilde hesaplayın. Saf özyineleme üsteldir.
+**2. Adım: Yaklaşımı Belirleyin**
+Her öğenin bir kez hesaplandığı ve önbelleğe alındığı sonsuz bir liste oluşturmak için Haskell'in tembel değerlendirmesini kullanın.
+**3. Adım: Uygulama**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**4. Adım: Optimize edin**
+Rastgele erişim için tembel yapıyla`Data.Array`kullanın. Çok büyük indeksler için O(log n) cinsinden matris üssünü kullanın.
+### Problem 4: Basit Durum Makinesinin Uygulanması
+**1. Adım: Sorunu Anlayın**
+Kırmızı -> Yeşil -> Sarı -> Kırmızı şeklinde dönen bir trafik ışığı modelleyin.
+**2. Adım: Yaklaşımı Belirleyin**
+Durumlar için cebirsel bir veri türü ve saf bir geçiş fonksiyonu kullanın.
+**3. Adım: Uygulama**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**4. Adım: Doğrulayın**
+Saf işlevler önemsiz bir şekilde test edilebilir:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Özet

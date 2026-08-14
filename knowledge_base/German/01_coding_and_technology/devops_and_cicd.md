@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps und CI/CD
 DevOps ist die Kombination aus kultureller Philosophie, Praktiken und Tools, die es Teams ermöglicht, Software schneller und zuverlässiger bereitzustellen. Es durchbricht die Mauer zwischen Entwicklern (die Änderungen liefern möchten) und Betrieben (die Stabilität wünschen). CI/CD – Continuous Integration und Continuous Delivery – ist das Automatisierungsrückgrat, das dies ermöglicht.
 ---
@@ -46,7 +47,7 @@ DevOps ist die Kombination aus kultureller Philosophie, Praktiken und Tools, die
 ### Was CI/CD eigentlich bedeutet
 | Begriff | Was es tut |
 |------|-------------|
-| **Kontinuierliche Integration (CI)** | Entwickler führen häufig Code zusammen; Jede Zusammenführung löst automatisierte Builds und Tests aus |
+| **Kontinuierliche Integration (CI)** | Entwickler führen häufig Code zusammen. Jede Zusammenführung löst automatisierte Builds und Tests aus |
 | **Kontinuierliche Lieferung (CD)** | Code befindet sich immer in einem bereitstellbaren Zustand; Die Freigabe für die Produktion ist eine manuelle Entscheidung |
 | **Kontinuierliche Bereitstellung** | Jede Änderung, die die Tests besteht, geht automatisch in die Produktion – kein manuelles Gate |
 ### Typische Pipeline-Stufen
@@ -78,7 +79,7 @@ Vor Containern war das klassische Problem: „Es funktioniert auf meinem Rechner
 |---------|-------------|
 | **Bild** | Schreibgeschützte Vorlage mit App + Abhängigkeiten |
 | **Container** | Laufende Instanz eines Bildes |
-| **Dockerfile** | Rezept zum Erstellen eines Images |
+| **Docker-Datei** | Rezept zum Erstellen eines Images |
 | **Registrierung** | Speicher für Bilder (Docker Hub, ECR, GCR) |
 | **Volumen** | Persistenter Speicher, der Container-Neustarts übersteht |
 | **Netzwerk** | Isolierte Netzwerkschicht für Container |
@@ -134,7 +135,7 @@ Kubernetes ist der branchenübliche Container-Orchestrator. Es verwaltet die Ber
 |-----------|------|
 | **Kontrollebene** | Verwaltet den Cluster (API-Server, Scheduler, etcd, Controller-Manager) |
 | **Knoten** | Arbeitsmaschine (VM oder physisch), die Container ausführt |
-| **Pod** | Kleinste einsetzbare Einheit; ein oder mehrere Container, die das Netzwerk gemeinsam nutzen |
+| **Pod** | Kleinste einsetzbare Einheit; ein oder mehrere Container, die das Netzwerk teilen |
 | **Service** | Stabiler Netzwerkendpunkt, der den Datenverkehr an Pods weiterleitet |
 | **Bereitstellung** | Deklarative Definition des gewünschten Pod-Status (Replikate, Bild usw.) |
 | **Eingang** | HTTP-Routing-Regeln für externen Datenverkehr |
@@ -243,5 +244,5 @@ Wenn um 3 Uhr morgens etwas kaputt geht:
 4. **Wenn möglich eindämmen** – Leistungsschalter, Feature-Flags, Verkehrsverlagerung.
 5. **Fix** – Rollback oder Patch-Forward.
 6. **Kommunizieren** – Stakeholder und Benutzer aktualisieren (Statusseite).
-7. **Post-Mortem** – innerhalb von 24–48 Stunden Grundursache und Maßnahmen dokumentieren.
-Das Ziel besteht nicht nur darin, den Vorfall zu beheben, sondern auch sicherzustellen, dass derselbe Vorfall nicht noch einmal passieren kann.
+7. **Post mortem** – innerhalb von 24–48 Stunden Grundursache und Maßnahmen dokumentieren.
+Das Ziel besteht nicht nur darin, den Vorfall zu beheben, sondern auch sicherzustellen, dass sich derselbe Vorfall nicht wiederholen kann.

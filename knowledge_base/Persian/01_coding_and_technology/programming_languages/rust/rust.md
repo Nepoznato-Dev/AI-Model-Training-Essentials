@@ -1,41 +1,46 @@
 ---
-# فراداده
-عنوان: "زنگ"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Rust شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [زنگ، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "40 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Rust"
+description: "Comprehensive reference for the Rust programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [rust, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "40 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # زنگ زدگی
-Rust یک زبان برنامه نویسی تایپ شده و کامپایل شده است که برای اولین بار در سال 2015 منتشر شد و در ابتدا توسط Graydon Hoare در موزیلا توسعه یافت. وعده تعیین کننده Rust **ایمنی حافظه بدون جمع آوری زباله** است. این سیستم از طریق سیستم مالکیت خود به این امر دست می یابد - مجموعه قوانینی که در زمان کامپایل اجرا می شوند که کل دسته باگ ها را حذف می کند (عدم ارجاع نشانگر تهی، مسابقه داده، سرریز بافر، استفاده پس از رایگان) در حالی که کد را با سرعت C یا C++ تولید می کند.
+Rust یک زبان برنامه نویسی تایپ شده و کامپایل شده است که برای اولین بار در سال 2015 منتشر شد و در ابتدا توسط Graydon Hoare در موزیلا توسعه یافت. وعده تعیین کننده Rust **ایمنی حافظه بدون جمع آوری زباله** است. این سیستم از طریق سیستم مالکیت خود به این امر دست می یابد - مجموعه قوانینی که در زمان کامپایل اجرا می شوند که کل دسته باگ ها را حذف می کند (اشکال اشاره گر تهی، مسابقه داده، سرریز بافر، استفاده پس از رایگان) در حالی که کد را با سرعت C یا C++ تولید می کند.
 Rust برای چندین سال متوالی به عنوان "دوست داشتنی ترین" زبان برنامه نویسی در نظرسنجی توسعه دهندگان Stack Overflow انتخاب شده است. این به طور فزاینده ای در برنامه نویسی سیستم ها، WebAssembly، ابزارهای CLI، زیرساخت های ابری و به عنوان جایگزینی برای C/C++ در زمینه های امنیتی حیاتی استفاده می شود. اکنون هسته لینوکس کد Rust را می پذیرد.
 ---
 
@@ -43,15 +48,15 @@ Rust برای چندین سال متوالی به عنوان "دوست داشت�
 - **ایمنی حافظه بدون GC**: سیستم مالکیت از نشانگرهای پوچ، مسابقه داده ها و نشانگرهای آویزان در زمان کامپایل جلوگیری می کند - با سربار زمان اجرا صفر.
 - **عملکرد**: برای اکثر بارهای کاری با C/C++ مطابقت دارد یا بیشتر از آن است. بدون زباله جمع کن به معنای عدم مکث غیرقابل پیش بینی است.
 - **همگامی بی باک**: سیستم نوع از مسابقه داده ها در زمان کامپایل جلوگیری می کند. اگر کامپایل شود، از نظر موضوع ایمن است.
-- **ابزار مدرن**:`cargo`(ساخت سیستم + مدیریت بسته) یکی از بهترین ها در هر زبانی است.  `cargo build`، `cargo test`،`cargo doc`همگی خارج از جعبه کار می کنند.
+- **ابزارسازی مدرن**:`cargo`(ساخت سیستم + مدیریت بسته) یکی از بهترین ها در هر زبانی است.  `cargo build`، `cargo test`،`cargo doc`همه خارج از جعبه کار می کنند.
 - **WebAssembly**: پشتیبانی درجه یک برای کامپایل در WASM، عملکرد تقریباً بومی را در مرورگرها فعال می کند.
 - ** پذیرش رو به رشد **: توسط AWS، Google (اندروید)، مایکروسافت (هسته ویندوز)، Cloudflare، Discord، Dropbox و Meta استفاده می شود.
 ## مبادلات
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
 | **منحنی یادگیری شیب دار** | مالکیت، وام گرفتن، طول عمر در زبان های دیگر شبیه هیچ چیز نیست | برای «کتاب زنگار» وقت بگذارید. مفاهیم با تمرین کلیک کنید |
-| **تدوین کند** | زمان کامپایل می تواند برای پروژه های بزرگ طولانی باشد | برای بررسی سریع نوع از`cargo check`استفاده کنید. کامپایل افزایشی کمک می کند |
-| ** رسیدگی به خطاهای پرمخاطب ** |  اپراتور`Result<T, E>`و`?`نیاز به رسیدگی صریح دارند | از`anyhow`برای برنامه ها،`thiserror`برای کتابخانه ها استفاده کنید |
+| **تدوین کند** | زمان کامپایل می تواند برای پروژه های بزرگ طولانی باشد | از`cargo check`برای بررسی سریع نوع استفاده کنید. کامپایل افزایشی کمک می کند |
+| ** رسیدگی به خطاهای پرمخاطب ** |  اپراتور`Result<T, E>`و`?`نیاز به رسیدگی صریح دارند | استفاده از`anyhow`برای برنامه های کاربردی،`thiserror`برای کتابخانه ها |
 | **بازار کار کوچکتر** | کارهای Rust کمتر از جاوا، پایتون یا جاوا اسکریپت (اما به سرعت در حال رشد هستند) | بیشتر نقش های Rust در برنامه نویسی سیستم، رمزنگاری یا زیرساخت |
 | **اکوسیستم نابالغ** | کتابخانه های کمتری نسبت به Python/Java/JS برای برخی دامنه ها | اکوسیستم به سرعت در حال رشد است. بسیاری از جعبه ها با کیفیت عالی هستند |
 ---
@@ -395,7 +400,7 @@ fn read_config(path: &str) -> Result<String, AppError> {
 
 ## همزمانی و موازی
 ### مدل موضوع و همگام سازی
-سیستم مالکیت Rust از مسابقه داده ها در زمان کامپایل جلوگیری می کند. ویژگی های`Send`و`Sync`ایمنی نخ را اعمال می کنند.
+سیستم مالکیت Rust از مسابقه داده ها در زمان کامپایل جلوگیری می کند. ویژگی‌های`Send`و`Sync`ایمنی نخ را تقویت می‌کنند.
 ```rust
 use std::thread;
 use std::sync::{Arc, Mutex, RwLock};
@@ -971,6 +976,293 @@ wasm-pack build --target web
 | پشتیبان های وب | ممکن است اما اکوسیستم جوان تر است | برو، Node.js، پایتون |
 | علم داده / ML | نه اکوسیستم برای این | پایتون، R |
 | اسکریپت های سریع / نمونه های اولیه | خیلی پرمخاطب و آهسته برای نوشتن | پایتون، جاوا اسکریپت |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: سیستم مالکیت چیست و چرا Rust آن را دارد؟
+**A:** هر مقدار در Rust دقیقاً یک مالک دارد. هنگامی که مالک از محدوده خارج می شود، مقدار حذف می شود (حافظه آزاد می شود). این کار نیاز به جمع کننده زباله را از بین می برد و در عین حال ایمنی حافظه را تضمین می کند. تخصیص، پارامترهای تابع، و مقادیر بازگشتی همه مالکیت را منتقل می کنند ("حرکت"). برای اشتراک‌گذاری بدون انتقال، از مراجع استفاده کنید (`&T` برای استقراض،`&mut T`برای استقراض قابل تغییر). کامپایلر اعمال می کند: شما نمی توانید یک مرجع قابل تغییر و یک مرجع تغییرناپذیر به یک مقدار را به طور همزمان داشته باشید.
+```rust
+let s1 = String::from("hello");
+let s2 = s1;           // s1 is MOVED to s2 — s1 is no longer valid
+// println!("{}", s1); // Error: value borrowed after move
+
+let s3 = String::from("world");
+let len = calculate_length(&s3);  // Borrow — s3 stays valid
+fn calculate_length(s: &String) -> usize { s.len() }
+```
+
+### Q2: چه زمانی باید از`String`در مقابل`&str`استفاده کنم؟
+**A:**`String`یک رشته UTF-8 قابل رشد است که دارای تخصیص پشته است. `&str`یک مرجع قرض گرفته شده به یک قطعه رشته UTF-8 است (می تواند به یک `String`، یک رشته تحت اللفظی یا بخشی از هر کدام اشاره کند). زمانی که نیاز به مالکیت، تغییر یا ساخت یک رشته دارید، از`String`استفاده کنید. از`&str`برای پارامترهای تابع (انعطاف پذیرتر - هر دو را می پذیرد)، نماهای فقط خواندنی و حرف های رشته ای استفاده کنید.`&str`را در امضاهای تابع بپذیرید. هنگامی که تماس گیرنده نیاز به مالکیت دارد،`String`را برگردانید.
+```rust
+// Accept &str — works with both String and &str
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)  // Returns owned String
+}
+
+let owned = String::from("Alice");
+greet(&owned);         // &String coerces to &str
+greet("Bob");          // &str literal works directly
+```
+
+### Q3: Rust چگونه خطاها را بدون استثنا کنترل می کند؟
+**A:** Rust از Enum`Result<T, E>`برای خطاهای قابل بازیابی و`panic!`برای خطاهای غیرقابل بازیابی استفاده می کند. توابعی که ممکن است خراب شوند،`Result`را برمی‌گردانند. عملگر`?`خطاها را به طور خلاصه منتشر می کند. این رویکرد مدیریت خطا را واضح می کند - شما نمی توانید تصادفاً یک خطا را نادیده بگیرید. از`anyhow`برای مدیریت خطای برنامه (زمینه مناسب) و`thiserror`برای انواع خطاهای کتابخانه (ماکروهای مشتق) استفاده کنید.
+```rust
+use std::fs;
+use std::num;
+
+fn read_and_parse(path: &str) -> Result<i64, Box<dyn std::error::Error>> {
+    let content = fs::read_to_string(path)?;   // Propagates io::Error
+    let number: i64 = content.trim().parse()?;  // Propagates ParseIntError
+    Ok(number)
+}
+
+// With context (anyhow crate)
+fn load_config() -> anyhow::Result<Config> {
+    let content = fs::read_to_string("config.toml")
+        .context("Failed to read config file")?;
+    let config: Config = toml::from_str(&content)
+        .context("Failed to parse config TOML")?;
+    Ok(config)
+}
+```
+
+### Q4: طول عمر چیست و چه زمانی باید آنها را حاشیه نویسی کنم؟
+**A:** طول عمر منابع معتبر را دنبال می کند. کامپایلر آنها را در اکثر موارد از طریق "قوانین حذف مادام العمر" استنباط می کند. هنگامی که کامپایلر نمی تواند رابطه بین طول عمر ورودی و خروجی را تعیین کند - معمولاً زمانی که یک تابع چندین مرجع می گیرد و یک مرجع را برمی گرداند، به یادداشت های صریح نیاز دارید. طول عمر از ارجاعات آویزان در زمان کامپایل با هزینه زمان اجرا صفر جلوگیری می کند.
+```rust
+// The compiler needs to know: does the return value borrow from x or y?
+// Explicit lifetime 'a says: both inputs and output share the same lifetime
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
+
+// Struct holding a reference — must declare lifetime
+struct ConfigRef<'a> {
+    name: &'a str,
+    value: &'a str,
+}
+
+// 'static — lives for the entire program duration (string literals)
+let s: &'static str = "I live forever";
+```
+
+### Q5: تفاوت بین `Vec<T>`، آرایه ها و برش ها چیست؟
+**A:** آرایه‌های`[T; N]`با اندازه ثابت، به‌صورت پشته‌ای تخصیص داده می‌شوند و طول آنها بخشی از نوع است. `Vec<T>`یک مجموعه قابل رشد و تخصیص پشته است. برش های`&[T]`نشانگرهای چربی (نشانگر + طول) هستند که بخش پیوسته ای از یک آرایه یا Vec را قرض می گیرند. از آرایه ها برای داده های کوچک و با اندازه ثابت استفاده کنید. از Vec برای مجموعه های پویا استفاده کنید.`&[T]`را در پارامترهای تابع برای حداکثر انعطاف پذیری بپذیرید.
+```rust
+let arr = [1, 2, 3, 4, 5];            // [i32; 5] — fixed size, on stack
+let mut vec = vec![10, 20, 30];        // Vec<i32> — growable, on heap
+vec.push(40);
+
+// Slice — borrow of a contiguous sequence
+let slice: &[i32] = &vec[1..3];        // [20, 30]
+let full: &[i32] = &vec;               // Entire vec as slice
+
+// Functions should accept slices for flexibility
+fn sum(numbers: &[i32]) -> i32 {
+    numbers.iter().sum()
+}
+
+sum(&arr);       // Works — array coerces to slice
+sum(&vec);       // Works — Vec coerces to slice
+sum(&vec[1..3]); // Works — already a slice
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک فروشگاه کلید-ارزش امن با موضوع بسازید
+**بیانیه مشکل:** یک ذخیره کلید-مقدار همزمان در Rust پیاده سازی کنید که از عملیات `get`، `set`، و`delete`از چندین رشته بدون مسابقه داده پشتیبانی می کند. از تغییرپذیری داخلی استفاده کنید و اطمینان حاصل کنید که پیاده سازی اصطلاحا Rust است.
+** مرحله 1 - مشکل را درک کنید:**
+چندین رشته باید در یک HashMap مشترک بخوانند و بنویسند. سیستم مالکیت Rust از مسابقه داده‌ها در زمان کامپایل جلوگیری می‌کند، اما برای مالکیت مشترک به تغییرپذیری داخلی (`RwLock` یا `Mutex`) در`Arc`نیاز داریم. `RwLock`به چندین خواننده همزمان یا یک نویسنده انحصاری اجازه می دهد - برای بارهای کاری سنگین بهتر است.
+** مرحله 2 - شناسایی رویکرد: **
+- از`Arc<RwLock<HashMap<K, V>>>`برای دسترسی به اشتراک گذاشته شده و ایمن استفاده کنید.
+-`RwLock::read()`برای`get`(خوانندگان متعدد مجاز است).
+-`RwLock::write()`برای`set`و`delete`(دسترسی انحصاری).
+- با یک API تمیز در یک ساختار بپیچید.
+-`Arc`را برای هر رشته کلون کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```rust
+use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
+use std::hash::Hash;
+
+struct KeyValueStore<K, V> {
+    data: Arc<RwLock<HashMap<K, V>>>,
+}
+
+impl<K: Hash + Eq + Send + Sync, V: Clone + Send + Sync> KeyValueStore<K, V> {
+    fn new() -> Self {
+        Self {
+            data: Arc::new(RwLock::new(HashMap::new())),
+        }
+    }
+
+    fn get(&self, key: &K) -> Option<V> {
+        let data = self.data.read().unwrap();
+        data.get(key).cloned()
+    }
+
+    fn set(&self, key: K, value: V) {
+        let mut data = self.data.write().unwrap();
+        data.insert(key, value);
+    }
+
+    fn delete(&self, key: &K) -> bool {
+        let mut data = self.data.write().unwrap();
+        data.remove(key).is_some()
+    }
+
+    fn clone_handle(&self) -> Self {
+        Self {
+            data: Arc::clone(&self.data),
+        }
+    }
+}
+
+// Usage — concurrent access from multiple threads
+use std::thread;
+
+fn main() {
+    let store = KeyValueStore::new();
+
+    let handles: Vec<_> = (0..4).map(|i| {
+        let s = store.clone_handle();
+        thread::spawn(move || {
+            for j in 0..100 {
+                s.set(format!("key-{}-{}", i, j), i * 100 + j);
+            }
+        })
+    }).collect();
+
+    for h in handles { h.join().unwrap(); }
+
+    println!("Total entries: {}", store.data.read().unwrap().len());  // 400
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی رشته: کامپایلر Rust هیچ مسابقه داده ای را تضمین نمی کند -`RwLock`حذف متقابل را اعمال می کند و`Arc`مالکیت مشترک ایمن را فراهم می کند. اگر این کامپایل شود درست است.
+- عملکرد:`RwLock`برای بارهای کاری سنگین از`Mutex`بهتر است. برای بارهای کاری سنگین، از`Mutex`(ساده تر، بدون سربار خواننده-نویسنده) استفاده کنید.
+- ارتقاء تولید: از`parking_lot::RwLock`(سریعتر، بدون مسمومیت، ردپای حافظه کوچکتر) یا`dashmap::DashMap`(هش مپ همزمان بدون قفل) استفاده کنید.
+### مسئله 2: یک تجزیه کننده صفر کپی پیاده سازی کنید
+**بیان مشکل:** تجزیه کننده ای بنویسید که جفت های کلید-مقدار را از یک رشته پیکربندی مانند`"name=Alice;age=30;role=admin"`بدون تخصیص رشته های جدید استخراج می کند - فقط با استفاده از برش های رشته ای که از ورودی قرض می گیرند.
+** مرحله 1 - مشکل را درک کنید:**
+ما باید جفت‌های`key=value`را که با`;`جدا شده‌اند، تجزیه کنیم. محدودیت کلیدی "صفر کپی" است - داده های برگشتی باید از ورودی`&str`قرض بگیرند، نه اینکه`String`های جدید را اختصاص دهند. این به معنای برگرداندن`Vec<(&str, &str)>`با طول عمر مرتبط با ورودی است.
+** مرحله 2 - شناسایی رویکرد: **
+- از روش‌های`&str`(`split`، `find`، برش) استفاده کنید - همه برش‌های`&str`وام گرفته شده از ورودی را برمی‌گردانند.
+- از`.to_string()`یا`String::from()`در هر جایی اجتناب کنید.
+- حاشیه نویسی مادام العمر: خروجی از ورودی قرض می گیرد — `fn parse<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>`.
+**مرحله 3 - راه حل را اجرا کنید:**
+```rust
+fn parse_config(input: &str) -> Vec<(&str, &str)> {
+    input
+        .split(';')
+        .filter_map(|pair| {
+            let pair = pair.trim();
+            if pair.is_empty() { return None; }
+            pair.split_once('=')
+                .map(|(k, v)| (k.trim(), v.trim()))
+        })
+        .collect()
+}
+
+// The compiler infers: fn parse_config<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>
+
+fn main() {
+    let config = "name = Alice; age = 30; role = admin";
+    let pairs = parse_config(config);
+
+    for (key, value) in &pairs {
+        println!("{} = {}", key, value);
+    }
+
+    // Zero allocations — all slices point into 'config'
+    assert_eq!(pairs[0], ("name", "Alice"));
+    assert_eq!(pairs[1], ("age", "30"));
+    assert_eq!(pairs[2], ("role", "admin"));
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- کپی صفر: `split`، `split_once`، و`trim`همگی برش‌های`&str`را برمی‌گردانند — بدون تخصیص پشته.
+- قوانین حذف طول عمر به درستی طول عمر خروجی را به ورودی گره می زند.
+- موارد لبه: ورودی خالی`[]`را برمی گرداند.`=`از دست رفته جفت را رد می کند (از طریق`filter_map`); فضای خالی اطراف`=`توسط`trim`مدیریت می شود.
+- برای تجزیه پیچیده تر، از جعبه`nom`(مبتنی بر ترکیب، همچنین کپی صفر) استفاده کنید.
+### مسئله 3: الگوی Observer را با کانال ها پیاده سازی کنید
+**بیانیه مشکل:** یک سیستم انتشار-اشتراک بسازید که در آن چندین مشترک از یک ناشر پیام دریافت می کنند. از کانال‌های Rust استفاده کنید و مطمئن شوید که سیستم بدون مسدود کردن ناشر، با مشترکین کند مدیریت می‌کند.
+** مرحله 1 - مشکل را درک کنید:**
+به یک ناشر برای ارسال پیام به چند مشترک نیاز داریم. کانال`mpsc`Rust یک تک مصرف کننده چند تولید کننده است - ما به عکس آن (تک تولید کننده چند مصرف کننده) نیاز داریم. می‌توانیم از کانال‌های`broadcast`(از `tokio`) استفاده کنیم یا با استفاده از چندین فرستنده `mpsc`، fan-out را پیاده‌سازی کنیم.
+** مرحله 2 - شناسایی رویکرد: **
+- از`std::sync::mpsc`برای کانال های استاندارد استفاده کنید.
+- برای طرفداران: یک`Vec<Sender<T>>`نگه دارید و پیام‌ها را برای هر کدام شبیه‌سازی کنید.
+- برای مشترکین کند: از کانال های`try_send`(غیر مسدود کننده) یا محدود با فشار برگشتی استفاده کنید.
+- برای API تمیز در یک ساختار`Bus`بپیچید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```rust
+use std::sync::mpsc::{self, Sender, Receiver};
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+struct Bus<T: Clone + Send + 'static> {
+    subscribers: Arc<Mutex<Vec<Sender<T>>>>,
+}
+
+impl<T: Clone + Send + 'static> Bus<T> {
+    fn new() -> Self {
+        Self {
+            subscribers: Arc::new(Mutex::new(Vec::new())),
+        }
+    }
+
+    fn subscribe(&self) -> Receiver<T> {
+        let (tx, rx) = mpsc::channel();
+        self.subscribers.lock().unwrap().push(tx);
+        rx
+    }
+
+    fn publish(&self, message: T) {
+        let mut subs = self.subscribers.lock().unwrap();
+        // Remove disconnected subscribers (their receiver was dropped)
+        subs.retain(|tx| !tx.is_disconnected());
+        for tx in subs.iter() {
+            let _ = tx.send(message.clone());  // Ignore send errors
+        }
+    }
+
+    fn subscriber_count(&self) -> usize {
+        let subs = self.subscribers.lock().unwrap();
+        subs.iter().filter(|tx| !tx.is_disconnected()).count()
+    }
+}
+
+fn main() {
+    let bus = Bus::new();
+
+    // Subscribe from multiple threads
+    let handles: Vec<_> = (0..3).map(|id| {
+        let rx = bus.subscribe();
+        thread::spawn(move || {
+            for msg in rx {
+                println!("Subscriber {} received: {}", id, msg);
+            }
+        })
+    }).collect();
+
+    // Publish messages
+    for i in 0..5 {
+        bus.publish(format!("Event #{}", i));
+    }
+
+    // Drop the bus — subscribers' channels close, loops end
+    drop(bus);
+    for h in handles { h.join().unwrap(); }
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+-`retain`مشترکین مرده را به طور خودکار پاک می کند - هیچ حافظه ای از رشته های قطع شده نشت نمی کند.
+-`message.clone()`ضروری است زیرا هر مشترک به نسخه خود نیاز دارد. برای انواع گران قیمت، در`Arc<T>`بپیچید.
+- کانال های محدود:`mpsc::channel()`را با`mpsc::sync_channel(N)`برای فشار برگشتی جایگزین کنید — اگر بافر مشترک پر باشد،`publish`مسدود می شود.
+- تولید: از`tokio::sync::broadcast`برای pub/sub async یا`flume`برای mpsc سریعتر با گزینه های محدود/نامحدود استفاده کنید.
 ---
 
 ## خلاصه

@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # JavaScript
 JavaScript — это динамический интерпретируемый язык программирования, созданный Бренданом Эйхом всего за 10 дней в 1995 году. Первоначально созданный для добавления интерактивности веб-страницам, он превратился в наиболее широко используемый язык программирования в мире. JavaScript работает в каждом веб-браузере, на серверах через Node.js, в настольных приложениях (Electron), мобильных приложениях (React Native) и даже во встроенных системах.
-Этот язык уникален тем, что, по сути, это единственный вариант веб-разработки на стороне клиента — каждый браузер поддерживает его изначально. Эта монополия в сочетании с развитием полнофункционального JavaScript (Node.js, Deno, Bun) делает его незаменимым.
+Этот язык уникален тем, что это, по сути, единственный вариант веб-разработки на стороне клиента — каждый браузер поддерживает его изначально. Эта монополия в сочетании с развитием полнофункционального JavaScript (Node.js, Deno, Bun) делает его незаменимым.
 ---
 
 ## Почему JavaScript важен
@@ -55,7 +56,7 @@ JavaScript — это динамический интерпретируемый 
 |-----------|---------|-------------------|
 | **Ошибки динамического набора** | Никакой проверки типов во время компиляции; обнаружение ошибок во время выполнения | Используйте TypeScript (типизированный расширенный набор JavaScript) |
 | **Сложность обратного вызова** | Вложенные обратные вызовы могут стать нечитаемыми («ад обратных вызовов») | Используйте обещания и async/await |
-| **Причудливая семантика** | `==`vs`===`,`this`привязка, подъем, приведение типов | Изучите причуды; используйте ESLint; предпочитаю`const`/`let`вместо`var`|
+| **Причудливая семантика** | `==`vs`===`,`this`привязка, подъем, приведение типов | Изучите причуды; используйте ESLint; предпочитаю `const`/`let` вместо`var`|
 | **Однопоточный** | Задачи, связанные с процессором, блокируют цикл событий | Используйте веб-воркеры, рабочие потоки или выгружайте их в собственные модули |
 | **Качество упаковки** | открытость npm означает нестабильное качество и риски безопасности | Аудит зависимостей; использовать файлы блокировки; предпочитают ухоженные упаковки |
 ---
@@ -1031,7 +1032,7 @@ pm2 startup
 |---------|-------------|
 | **Node.js** | Исходная среда выполнения серверного JavaScript (движок V8) |
 | **Дено** | Безопасно по умолчанию; встроенная поддержка TypeScript; создано оригинальным автором Node |
-| **Булочка** | Сверхбыстрая универсальная среда выполнения, сборщик пакетов и менеджер пакетов |
+| **Булочка** | Сверхбыстрая универсальная среда выполнения, сборщик и менеджер пакетов |
 ### Основные инструменты
 | Инструмент | Цель |
 |------|---------|
@@ -1057,5 +1058,418 @@ pm2 startup
 | Системное программирование | Неправильный уровень абстракции | C, C++, Rust, Go |
 ---
 
+## Синтетические вопросы и ответы
+### Вопрос 1: В чем разница между`var`,`let`и`const`и когда мне следует использовать каждый из них?
+**A:**`var`ограничен функцией и поднят — избегайте этого в современном коде. `let`имеет блочную область действия и допускает переназначение. `const`имеет блочную область действия и предотвращает переназначение (но объекты/массивы, на которые он ссылается, по-прежнему изменяемы). Рекомендация: по умолчанию используется `const`, используйте`let`только при необходимости переназначения, никогда не используйте `var`.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Вопрос 2: Как`this`работает в JavaScript и почему это так сбивает с толку?
+**A:**`this`определяется **как функция вызывается**, а не тем, где она определена. При вызове метода объектом является `this`. В автономном вызове это`undefined`(строгий режим) или`global`(нестрогий). Стрелочные функции наследуют`this`от своей области видимости — именно поэтому они предпочтительны для обратных вызовов. Используйте `.bind()`, чтобы явно установить `this`.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Вопрос 3. Что такое цикл событий и как на самом деле работают async/await?
+**О:** JavaScript является однопоточным с циклом событий, обрабатывающим очередь. Стек вызовов выполняет синхронный код. Когда он пуст, цикл событий выбирает следующую задачу из очереди микрозадач (обещания) или очереди макрозадач (setTimeout, I/O). `async/await`— это синтаксический сахар над промисами:`await`приостанавливает асинхронную функцию и возобновляет ее после разрешения промиса, не блокируя поток.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Вопрос 4: Как обрабатывать ошибки в современном JavaScript?
+**A:** Используйте`try/catch`для синхронного кода и`.catch()`или`try/catch`с`async/await`для асинхронного кода. Всегда обрабатывайте отклонения промисов — необработанные отклонения приводят к сбою Node.js. Создавайте собственные классы ошибок для ошибок, специфичных для предметной области. Используйте глобальный обработчик ошибок в качестве страховки.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### В5: Когда следует использовать `Map`/`Set` вместо простых объектов/массивов?
+**A:** Используйте `Map`, когда ключи не являются строками, когда вам нужна итерация порядка вставки, когда вам нужен`.size`или когда вы часто добавляете или удаляете записи (более высокая производительность, чем у объектов). Используйте`Set`для уникальных коллекций с поиском O(1) — гораздо быстрее, чем`array.includes()`для больших наборов данных. Используйте простые объекты для простых сериализуемых в формате JSON данных и небольших карт «ключ-значение» со строковыми ключами.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1: реализация функции устранения дребезга
+**Постановка проблемы:** Реализуйте утилиту `debounce`, которая откладывает вызов функции до тех пор, пока не истечет указанный период ожидания с момента последнего ее вызова. Поддержка как ведущего, так и заднего фронта вызова.
+**Шаг 1. Поймите проблему:**
+Функция с устранением дребезга игнорирует быстрые последовательные вызовы и срабатывает только после того, как вызовы прекращаются на время ожидания. «Передовой» означает огонь сразу по первому вызову. «Задний край» означает пожар после периода ожидания. Нам нужно обрабатывать оба режима, а также поддерживать отмену.
+**Шаг 2. Определите подход:**
+- Сохраните идентификатор таймера в замыкании.
+- При каждом вызове: очистите существующий таймер, затем установите новый `setTimeout`.
+- Для переднего фронта: немедленно позвоните, если таймер не активен.
+- Верните функцию с устранением дребезга с помощью метода `.cancel()`.
+— Сохраняйте контекст и аргументы`this`с помощью стрелочных функций или `.apply()`.
+**Шаг 3. Реализация решения:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**Шаг 4. Проверка и оптимизация:**
+— Замыкание сохраняет состояние между вызовами, не загрязняя глобальную область видимости.
+-`clearTimeout`перед`setTimeout`гарантирует, что только последний вызов запускает выполнение.
+—`.cancel()`важен для очистки (например, отмонтирования компонента в React).
+Крайний случай: если`wait`равен 0, функция срабатывает при следующем тике цикла событий — полезно для пакетной обработки обновлений DOM.
+### Проблема 2: Создайте ограничитель скорости на основе обещаний
+**Постановка задачи:** Создайте ограничитель скорости, который разрешает не более N запросов за временной интервал. Он должен возвращать обещания, которые разрешаются, когда вызывающему разрешено продолжить, и ставить в очередь лишние запросы.
+**Шаг 1. Поймите проблему:**
+Нам нужно скользящее или фиксированное окно, отслеживающее количество совершенных вызовов. При достижении лимита новые вызовы должны быть поставлены в очередь и разрешены при открытии слота. Это шаблон «ведро токенов».
+**Шаг 2. Определите подход:**
+- Отслеживание временных меток недавних звонков в массиве.
+- При каждом вызове: удалите временные метки старше окна, проверьте, <лимит ли количество.
+- Если лимит ниже: решите немедленно.
+- Если предел: вычислите, когда истечет срок действия самой старой временной метки, установите`setTimeout`, а затем разрешите.
+- Используйте очередь (массив функций разрешения) для ожидающих вызывающих абонентов.
+**Шаг 3. Реализация решения:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Подход со скользящим окном более справедлив, чем с фиксированными окнами (без разрывов на границах окна).
+- Обработка очереди осуществляется по принципу FIFO — звонящие обслуживаются по порядку.
+- Для производства: добавьте поддержку `AbortController`, чтобы вызывающие абоненты могли отменить ожидание.
+- Производительность:`_cleanOldTimestamps`равен O(n) на вызов, но n ограничено `maxCalls`.
+### Проблема 3: реализация функции глубокого клонирования
+**Постановка задачи:** Напишите функцию, которая глубоко клонирует любое значение JavaScript, обрабатывая объекты, массивы, даты, регулярные выражения, карты, наборы, циклические ссылки и типизированные массивы.
+**Шаг 1. Поймите проблему:**
+`JSON.parse(JSON.stringify(obj))`завершается с ошибкой:`undefined`, функции, символы, даты (становятся строками), регулярные выражения (становятся пустыми объектами), карты, наборы, циклические ссылки (выбрасывают) и типизированные массивы. Нам нужно рекурсивное решение, отслеживающее посещенные объекты.
+**Шаг 2. Определите подход:**
+— Используйте`Map`для отслеживания уже клонированных объектов (обрабатывает циклические ссылки).
+- Обрабатывайте каждый тип особым образом: Дата → новая дата, RegExp → новое RegExp, Карта → новая карта с клонированными записями, Set → новый набор с клонированными значениями.
+- Используйте`structuredClone()`в качестве современной встроенной альтернативы (доступно в браузерах и Node.js 17+).
+**Шаг 3. Реализация решения:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Циклические ссылки: карта`seen`возвращает уже созданный клон вместо бесконечной рекурсии.
+— Дескрипторы свойств:`Reflect.ownKeys`+`getOwnPropertyDescriptor`сохраняют методы получения, установки и неперечислимые свойства.
+— Современная альтернатива:`structuredClone(value)`изначально обрабатывает большинство этих случаев (кроме функций и узлов DOM). Предпочитаю его, когда он доступен.
+- Производительность: для простых объектов`JSON.parse(JSON.stringify(obj))`по-прежнему самый быстрый. Используйте глубокое клонирование только тогда, когда оно вам действительно нужно.
+### Проблема 4. Создайте простой генератор событий
+**Постановка проблемы:** Реализуйте класс отправителя событий, который поддерживает методы`on`,`off`,`emit`и `once`. Слушателей следует вызывать в порядке регистрации. `emit`должен передавать аргументы всем слушателям.
+**Шаг 1. Поймите проблему:**
+Нам нужна система публикации/подписки: регистрировать прослушиватели для именованных событий, удалять определенные прослушиватели, запускать события с аргументами и поддерживать одноразовые прослушиватели. Это шаблон Observer, широко используемый в Node.js.
+**Шаг 2. Определите подход:**
+— Сохраните прослушиватели в `Map<string, Array<Function>>`.
+- `on`: отправить прослушиватель в массив.
+- `off`: отфильтровать конкретного прослушивателя из массива.
+- `emit`: перебирать массив и вызывать каждого прослушивателя с расширенными аргументами.
+- `once`: обернуть прослушиватель в функцию, которая удаляется после первого вызова.
+**Шаг 3. Реализация решения:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**Шаг 4. Проверка и оптимизация:**
+— Копия`[...listeners]`в`emit`предотвращает проблемы, когда прослушиватель вызывает`off`во время итерации.
+-`once`сохраняет `_original`, поэтому вызывающие абоненты могут удалить оболочку через `off(event, originalFn)`.
+— Частные поля (`#listeners`) предотвращают внешнюю мутацию внутреннего состояния.
+- Для производства: добавьте предупреждение`maxListeners`(например, Node.js), обработку ошибок для каждого прослушивателя и`prependListener`для приоритета.
+---
+
 ## Краткое содержание
-JavaScript неизбежен. Это единственный язык, который работает в веб-браузерах, поэтому он необходим для разработки внешнего интерфейса. С Node.js он распространяется на серверную часть, а с такими платформами, как React Native и Electron, он распространяется на мобильные и настольные компьютеры. Экосистема является крупнейшей в программировании. Особенности языка хорошо известны и ими можно управлять, а TypeScript решает проблемы типизации. Для всего, что работает в браузере, JavaScript — не просто лучший выбор, это единственный выбор.
+JavaScript неизбежен. Это единственный язык, который работает в веб-браузерах, поэтому он необходим для разработки внешнего интерфейса. С помощью Node.js он распространяется на серверную часть, а с помощью таких фреймворков, как React Native и Electron, — на мобильные и настольные компьютеры. Экосистема является крупнейшей в программировании. Особенности языка хорошо известны и ими можно управлять, а TypeScript решает проблемы типизации. Для всего, что работает в браузере, JavaScript — не просто лучший выбор, это единственный выбор.

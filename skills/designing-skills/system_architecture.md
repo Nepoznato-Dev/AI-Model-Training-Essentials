@@ -3,7 +3,7 @@
 title: "System Architecture Design Skill"
 description: "Design scalable, maintainable, and robust software systems"
 category: "Designing Skills"
-version: "1.0.0"
+version: "1.1.0"
 status: "active"
 
 # Contribution
@@ -13,6 +13,10 @@ authors:
     role: "original_author"
 contributors: []
 changelog:
+  - version: "1.1.0"
+    date: "2026-08-10"
+    author: "AI Model Training Team"
+    changes: "Added quick-start decision tree and architecture comparison table"
   - version: "1.0.0"
     date: "2026-01-15"
     author: "AI Model Training Team"
@@ -20,7 +24,7 @@ changelog:
 
 # Review
 created: "2026-01-15"
-last_modified: "2026-01-15"
+last_modified: "2026-08-10"
 review_date: "2026-07-15"
 reviewed_by: "Designing Skills Team"
 next_review: "2027-01-15"
@@ -43,6 +47,41 @@ contribution:
 
 ## Overview
 The ability to design scalable, maintainable, and robust software systems that meet business requirements while considering technical constraints.
+
+## Quick-Start: Choosing an Architecture Pattern
+
+```
+Designing a new system?
+│
+├─ Small team, simple domain, predictable load?
+│   └─ Yes → Monolith (layered architecture) — start simple, split later
+│
+├─ Multiple teams owning different domains?
+│   └─ Yes → Microservices with bounded contexts
+│
+├─ High-throughput event processing (notifications, analytics)?
+│   └─ Yes → Event-driven architecture (message queue + consumers)
+│
+├─ Sporadic traffic, pay-per-use important?
+│   └─ Yes → Serverless (Lambda/Cloud Functions)
+│
+├─ Complex queries + frequent writes on same data?
+│   └─ Yes → CQRS (separate read and write models)
+│
+└─ Need to integrate with many external systems?
+    └─ Yes → Hexagonal / Ports & Adapters (isolate external dependencies)
+```
+
+### Architecture at a Glance
+
+| Pattern | Best For | Trade-off | Typical Scale |
+|---------|----------|-----------|---------------|
+| Layered Monolith | Small teams, simple domains | Can become a "big ball of mud" without discipline | < 10 services |
+| Microservices | Large teams, independent deployment | Operational complexity, distributed debugging | 10-100+ services |
+| Event-Driven | Async processing, audit trails | Eventual consistency, harder to trace flows | Any scale |
+| Serverless | Sporadic traffic, cost-sensitive | Cold starts, vendor lock-in | Pay-per-request |
+| CQRS | Read-heavy systems, complex queries | More code to maintain, sync between stores | Medium-large |
+| Hexagonal | Testability, multiple integrations | More abstractions, steeper learning curve | Any scale |
 
 ## Core Competencies
 

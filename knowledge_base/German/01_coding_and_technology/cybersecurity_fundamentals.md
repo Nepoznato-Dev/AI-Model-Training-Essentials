@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Grundlagen der Cybersicherheit
-Sicherheit ist keine Funktion, die man am Ende hinzufügt – es ist eine Disziplin, die vom ersten Tag an in jede Schicht eines Systems integriert werden muss. Unabhängig davon, ob Sie eine Webanwendung erstellen, die Infrastruktur verwalten oder eine API bereitstellen, ist es wichtig, die Bedrohungslandschaft und die Grundlagen der Verteidigung zu verstehen.
+Sicherheit ist eine Disziplin, die von Anfang an in jede Schicht eines Systems integriert werden muss und nicht erst nachträglich hinzugefügt werden darf. Ganz gleich, ob Sie eine Webanwendung erstellen, die Infrastruktur verwalten oder eine API bereitstellen: Das Verständnis der Bedrohungslandschaft und der Grundlagen der Verteidigung ist von entscheidender Bedeutung.
 ---
 
 ## Verschlüsselung und Kryptographie
@@ -80,7 +81,7 @@ Verwenden Sie TLS 1.2 oder 1.3. Deaktivieren Sie TLS 1.0 und 1.1. Aktivieren Sie
 | **RBAC** (Rollenbasierte Zugriffskontrolle) | Rollen zugewiesene Berechtigungen; Benutzer erhalten Rollen | Admin, Redakteur, Betrachter |
 | **ABAC** (attributbasiert) | Regeln basierend auf Benutzerattributen, Ressourcen, Umgebung | „Manager können die Anfragen ihres Teams genehmigen“ |
 | **ACL** (Zugriffskontrollliste) | Explizite Berechtigungen pro Benutzer/Ressource | Dateiberechtigungen (Lesen/Schreiben/Ausführen) |
-**Prinzip der geringsten Rechte**: Geben Sie jedem Benutzer, Dienst und Prozess nur den minimalen Zugriff, den er benötigt.
+**Prinzip der geringsten Rechte**: Gewähren Sie jedem Benutzer, Dienst und Prozess nur den minimalen Zugriff, den er benötigt.
 ### JWT (JSON-Web-Tokens)
 | Aspekt | Empfehlung |
 |--------|---------------|
@@ -164,9 +165,9 @@ Ihre Anwendung ist nur so sicher wie ihre schwächste Abhängigkeit.
 | **Node.js** | `npm audit`,`yarn audit`,`snyk`|
 | **Rost** | `cargo audit`|
 | **Los** | `govulncheck`|
-| **Allgemein** | `Dependabot`(GitHub),`Renovate`,`Trivy`|
+| **Allgemein** | `Dependabot`(GitHub), `Renovate`,`Trivy`|
 ### Integrität der Lieferkette
-– Verwenden Sie Sperrdateien (`package-lock.json`,`Cargo.lock`,`go.sum`) für reproduzierbare Builds.
+- Verwenden Sie Sperrdateien (`package-lock.json`, `Cargo.lock`, `go.sum`) für reproduzierbare Builds.
 - Überprüfen Sie die Prüfsummen der heruntergeladenen Abhängigkeiten.
 - Bevorzugen Sie offizielle Register und verifizierte Herausgeber.
 - Automatisieren Sie kleinere/Patch-Updates über Dependabot oder Renovate.

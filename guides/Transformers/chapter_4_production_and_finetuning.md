@@ -710,7 +710,7 @@ class SentimentHandler(BaseHandler):
     def initialize(self, context):
         self.model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
         self.tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
-        self.model.load_state_dict(torch.load("model.pth"))
+        self.model.load_state_dict(torch.load("model.pth", weights_only=True))
         self.model.eval()
     
     def preprocess(self, data):
@@ -779,7 +779,7 @@ from transformers import BertForSequenceClassification
 model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
 
 # Quantize to INT8
-quantized_model = torch.quantization.quantize_dynamic(
+quantized_model = torch.ao.quantization.quantize_dynamic(
     model,
     {torch.nn.Linear},  # Which layers to quantize
     dtype=torch.qint8
@@ -798,14 +798,14 @@ torch.save(quantized_model.state_dict(), "quantized_model.pth")
 
 ```python
 # Requires calibration with representative data
-model.qconfig = torch.quantization.get_default_qconfig('fbgemm')
-torch.quantization.prepare(model, inplace=True)
+model.qconfig = torch.ao.quantization.get_default_qconfig('fbgemm')
+torch.ao.quantization.prepare(model, inplace=True)
 
 # Calibrate with sample data
 for batch in calibration_dataloader:
     model(batch['input_ids'], batch['attention_mask'])
 
-torch.quantization.convert(model, inplace=True)
+torch.ao.quantization.convert(model, inplace=True)
 ```
 
 ### Optimization Technique 2: Model Distillation

@@ -162,7 +162,7 @@ ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, email = EXCLUDED.email;
 
 ## Sintaxe e padrões avançados
 ### Funções da janela — Aprofundamento
-As funções de janela executam cálculos em um conjunto de linhas relacionadas à linha atual — sem recolhê-las em uma única linha de saída, como faz GROUP BY.
+As funções de janela realizam cálculos em um conjunto de linhas relacionadas à linha atual — sem recolhê-las em uma única linha de saída, como faz GROUP BY.
 ```sql
 -- ROW_NUMBER: unique sequential number within a partition
 SELECT name, department, salary,
@@ -602,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Armazenamento simples de valores-chave | Exagero para este caso de uso | Redis, DynamoDB |
 | Dados altamente não estruturados | A rigidez do esquema é um problema | MongoDB, bancos de dados de documentos |
 | Escala horizontal massiva | Bancos de dados SQL difíceis de fragmentar | Cassandra, DynamoDB, BarataDB |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre`WHERE`e `HAVING`?
+**R:**`WHERE`filtra linhas antes de agrupar; `HAVING`filtra grupos após agregação:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: Como as funções da janela diferem do GROUP BY?
+**R:** As funções de janela calculam entre linhas sem recolhê-las:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3: Como otimizar consultas lentas?
+**R:** Principais estratégias:
+- Adicionar índices em colunas usadas em`WHERE`,`JOIN`e`ORDER BY`
+- Evite`SELECT *`— selecione apenas as colunas necessárias
+- Use `EXPLAIN`/`EXPLAIN ANALYZE` para ler planos de consulta
+- Substitua subconsultas por JOINs sempre que possível
+- Use CTEs para facilitar a leitura (geralmente sem penalidade de desempenho)
+- Evite funções em colunas indexadas em WHERE: use`WHERE date >= '2024-01-01'`e não `WHERE YEAR(date) = 2024`
+### Q4: O que são CTEs e quando devo usá-los?
+**R:** Expressões de tabela comuns criam conjuntos de resultados temporários nomeados:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5: Como lidar corretamente com valores NULL?
+**R:** NULL representa desconhecido — não é igual a nada, inclusive a si mesmo:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Encontrando os N principais por grupo
+**Etapa 1: Entenda o problema**
+Encontre os 3 funcionários mais bem pagos em cada departamento.
+**Etapa 2: Identifique a abordagem**
+Use uma função de janela com`ROW_NUMBER()`particionada por departamento.
+**Etapa 3: Implementar**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Etapa 4: verificar**
+Verifique se cada departamento possui no máximo 3 linhas. Lide com vínculos com `DENSE_RANK()`, se necessário.
+### Problema 2: Construindo um Relatório de Crescimento Ano após Ano
+**Etapa 1: Entenda o problema**
+Calcule a receita mensal e a porcentagem de crescimento ano a ano.
+**Etapa 2: Identifique a abordagem**
+Use`DATE_TRUNC`para agrupamento e função de janela`LAG()`para comparação do ano anterior.
+**Etapa 3: Implementar**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Etapa 4: verificar**
+Verifique se os primeiros 12 meses têm NULL para o ano anterior. Valide as porcentagens de crescimento em relação aos números conhecidos.
+### Problema 3: dinamizando linhas em colunas
+**Etapa 1: Entenda o problema**
+Transforme contagens de status de linhas em colunas.
+**Etapa 2: Identifique a abordagem**
+Use agregação condicional (`CASE`dentro de`SUM`).
+**Etapa 3: Implementar**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Etapa 4: Estender**
+Adicione colunas de porcentagem e totais acumulados.
 ---
 
 ## Resumo

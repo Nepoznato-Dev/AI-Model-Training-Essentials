@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lua
 Lua là một ngôn ngữ kịch bản nhẹ, có thể nhúng được thiết kế để mở rộng các ứng dụng. Được tạo ra vào năm 1993 tại Đại học Công giáo Giáo hoàng Rio de Janeiro ở Brazil, Lua là một trong những ngôn ngữ lập trình nhanh nhất hiện có. Dung lượng nhỏ của nó (trình thông dịch là ~ 120KB) và tính đơn giản khiến nó trở thành lựa chọn phù hợp cho việc viết kịch bản, hệ thống nhúng và cấu hình phát triển trò chơi.
 Lua được biết đến nhiều nhất là ngôn ngữ kịch bản đằng sau Roblox (nền tảng chơi game có hơn 200 triệu người dùng hàng tháng), tiện ích bổ sung World of Warcraft và nhiều công cụ trò chơi (Love2D, Defold, Corona SDK). Nó cũng được sử dụng trong Nginx (OpenResty), Redis và Wireshark.
@@ -46,7 +47,7 @@ Lua được biết đến nhiều nhất là ngôn ngữ kịch bản đằng s
 ## Tại sao Lua lại quan trọng
 - **Có thể nhúng**: Được thiết kế để nhúng vào các ứng dụng khác — máy chủ cung cấp chức năng.
 - **Dấu chân nhỏ**: Toàn bộ trình thông dịch có kích thước ~120KB. Lý tưởng cho các hệ thống nhúng.
-- **Nhanh**: Một trong những ngôn ngữ viết kịch bản được diễn giải nhanh nhất.
+- **Nhanh**: Một trong những ngôn ngữ viết kịch bản được giải thích nhanh nhất.
 - **Đơn giản**: Chỉ ~20 từ khóa. Dễ dàng học hỏi và hòa nhập.
 - **Phát triển trò chơi**: Ngôn ngữ kịch bản tiêu chuẩn cho nhiều công cụ và nền tảng trò chơi.
 - **Roblox**: Cung cấp năng lượng cho toàn bộ hệ sinh thái Roblox — hàng triệu trò chơi do người dùng tạo.
@@ -618,10 +619,258 @@ CMD lua5.4 src/main.lua
 | Phát triển Roblox | Lựa chọn duy nhất | — |
 | Hệ thống nhúng | Dấu chân nhỏ | C, MicroPython |
 | Gia hạn ứng dụng | Được thiết kế để nhúng | Python (lớn hơn), JavaScript (V8) |
-| Tệp cấu hình | Đơn giản và nhanh chóng | JSON, TOML, YAML |
+| Tập tin cấu hình | Đơn giản và nhanh chóng | JSON, TOML, YAML |
 | Phát triển web | OpenResty tồn tại nhưng thích hợp | JavaScript, Python, Đi |
 | Phát triển ứng dụng chung | Không được thiết kế cho các ứng dụng độc lập | Python, Go, Java |
 | Khoa học dữ liệu | Không phải hệ sinh thái | Python, R |
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Tại sao Lua sử dụng chỉ mục dựa trên 1 thay vì dựa trên 0?
+**Đ:** Lua được thiết kế cho người dùng không phải là lập trình viên và tuân theo các quy ước đếm tự nhiên. Toán tử `#`,`ipairs`và các hàm chuỗi đều sử dụng lập chỉ mục dựa trên 1:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+Điều này nhất quán trong toàn bộ thư viện tiêu chuẩn. Khi giao tiếp với C (dựa trên 0), hãy chú ý đến phần bù.
+### Câu 2: Làm cách nào để triển khai các mẫu hướng đối tượng trong Lua?
+**A:** Lua sử dụng bảng và siêu dữ liệu cho OOP. Siêu phương thức`__index`cho phép tra cứu phương thức trên các nguyên mẫu:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### Câu 3: Coroutine hoạt động như thế nào và khi nào tôi nên sử dụng chúng?
+**A:** Coroutine là các luồng hợp tác có thể tạm dừng và tiếp tục thực thi. Chúng lý tưởng cho các trình lặp, mẫu không đồng bộ và logic trò chơi:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### Q4: Cách tốt nhất để xử lý lỗi trong Lua là gì?
+**A:** Sử dụng`pcall`/`xpcall`để phát hiện lỗi và trả về nhiều giá trị cho các mẫu thành công/thất bại:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### Câu hỏi 5: Làm cách nào để tối ưu hóa hiệu suất Lua cho trò chơi và hệ thống nhúng?
+**Đ:** Các phương pháp chính:
+- Sử dụng`local`cho tất cả các biến — khả năng truy cập toàn cầu chậm hơn đáng kể
+- Lưu trữ các trường bảng được truy cập thường xuyên ở địa phương
+- Phân bổ trước các bảng khi biết kích thước:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- Tránh tạo bảng tạm thời trong vòng lặp nóng
+- Sử dụng`table.concat`thay vì`..`để nối nhiều chuỗi
+- Cấu hình với`os.clock()`hoặc móc gỡ lỗi
+- Trong LuaJIT, sử dụng FFI cho C interop thay vì C API
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng bộ phân tích cú pháp cấu hình
+**Bước 1: Tìm hiểu vấn đề**
+Phân tích tệp cấu hình khóa-giá trị đơn giản trong đó mỗi dòng là`key = value`.
+**Bước 2: Xác định phương pháp tiếp cận**
+Đọc các dòng, phân tách trên`=`, cắt khoảng trắng và lưu trữ trong bảng.
+**Bước 3: Thực hiện**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**Bước 4: Gia hạn**
+Thêm hỗ trợ phần (`[section]`), ép buộc kiểu (số, boolean) và các bảng lồng nhau.
+### Bài toán 2: Triển khai một hệ thống sự kiện đơn giản
+**Bước 1: Tìm hiểu vấn đề**
+Tạo trình phát sự kiện hỗ trợ đăng ký và phát ra các sự kiện được đặt tên.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng tên sự kiện ánh xạ bảng vào danh sách các hàm xử lý.
+**Bước 3: Thực hiện**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**Bước 4: Xác minh**
+Kiểm tra với nhiều sự kiện, loại bỏ và xử lý lỗi trong trình xử lý.
+### Vấn đề 3: Tạo một Pipeline dựa trên Coroutine
+**Bước 1: Tìm hiểu vấn đề**
+Xây dựng quy trình xử lý dữ liệu trong đó mỗi giai đoạn lọc hoặc chuyển đổi dữ liệu, được kết nối thông qua coroutine.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng coroutine làm giai đoạn quy trình — mỗi giai đoạn kéo từ giai đoạn trước và đẩy sang giai đoạn tiếp theo.
+**Bước 3: Thực hiện**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**Bước 4: Tối ưu hóa**
+Quy trình dựa trên kéo này xử lý từng phần tử một với chi phí bộ nhớ tối thiểu — lý tưởng cho các luồng lớn hoặc vô hạn.
 ---
 
 ## Bản tóm tắt

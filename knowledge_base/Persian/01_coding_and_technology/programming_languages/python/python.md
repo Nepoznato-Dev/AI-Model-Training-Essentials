@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "پایتون"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی پایتون شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [پایتون، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "58 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Python"
+description: "Comprehensive reference for the Python programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [python, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "58 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #پایتون
 پایتون یک زبان برنامه نویسی سطح بالا، تفسیر شده و همه منظوره است که توسط Guido van Rossum ایجاد شد و اولین بار در سال 1991 منتشر شد. این زبان خوانایی کد را از طریق تورفتگی قابل توجه و یک نحو تمیز که نزدیک به انگلیسی ساده می خواند، اولویت بندی می کند. پایتون به صورت پویا تایپ می شود، زباله جمع آوری می شود و از الگوهای برنامه نویسی متعدد از جمله برنامه نویسی رویه ای، شی گرا و تابعی پشتیبانی می کند.
 امروزه، پایتون زبان غالب در AI/ML، علم داده، محاسبات علمی و اتوماسیون است – در حالی که همچنان یکی از بهترین زبان ها برای مبتدیان است. این هویت دوگانه (به اندازه کافی ساده برای اولین اسکریپت، به اندازه کافی قدرتمند برای آموزش مدل های زبان بزرگ) چیزی است که آن را متمایز می کند.
@@ -51,7 +56,7 @@ next_review: "05-08-2027"
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
 | **سرعت اجرا** | 10-100 برابر کندتر از C برای کارهای محدود به CPU | از NumPy/PyTorch (C زیر کاپوت)، یا Cython/Numba برای حلقه های داغ استفاده کنید |
-| **GIL (قفل مترجم جهانی)** | از موازی سازی چند رشته ای واقعی برای کار با CPU جلوگیری می کند | از `multiprocessing`، `asyncio`، یا صف های وظیفه مانند Celery |
+| **GIL (قفل مترجم جهانی)** | از موازی سازی چند رشته ای واقعی برای کار با CPU جلوگیری می کند | از `multiprocessing`،`asyncio`یا صف های وظیفه مانند Celery |
 | **توسعه موبایل** | برای برنامه های iOS/Android مناسب نیست | از Swift/Kotlin برای بومی یا Flutter/React Native برای کراس پلتفرم |
 | **سیستم های تعبیه شده** | خیلی سنگین برای میکروکنترلرها | از MicroPython (یک نوع سبک وزن) استفاده کنید یا به C/Rust | بروید
 | **استفاده از حافظه** | ردپای حافظه بالاتر از زبان های کامپایل شده | قابل قبول برای اکثر برنامه ها؛ استفاده از ژنراتور برای داده های بزرگ |
@@ -59,7 +64,7 @@ next_review: "05-08-2027"
 
 ## اصول نحو
 ### متغیرها و انواع
-پایتون از تایپ پویا استفاده می کند - شما انواع متغیر را اعلام نمی کنید، اما می توانید نکات نوع را برای وضوح و پشتیبانی ابزار اضافه کنید.
+پایتون از تایپ پویا استفاده می‌کند – شما انواع متغیر را اعلام نمی‌کنید، اما می‌توانید نکات نوع را برای وضوح و پشتیبانی ابزار اضافه کنید.
 ```python
 # Basic types — inferred automatically
 name = "Alice"          # str
@@ -290,7 +295,7 @@ print(db1 is db2)  # True — same instance
 ```
 
 ### تطبیق الگوی ساختاری (Python 3.10+)
-عبارت`match/case`پایتون تطبیق الگوی قدرتمندی با ساختار، محافظ و الگوهای تودرتو ارائه می‌کند.
+دستور`match/case`پایتون تطبیق الگوی قدرتمندی با ساختار، محافظ و الگوهای تودرتو ارائه می‌کند.
 ```python
 from dataclasses import dataclass
 
@@ -504,15 +509,15 @@ except AppError as e:
 | ماژول | هدف | مثال استفاده |
 |--------|--------|-------------|
 | `os`/`pathlib`| عملیات سیستم فایل | `Path("data/output.csv").exists()`|
-|  __محافظت شده_3__ | رمزگذاری/رمزگشایی JSON | `json.loads(response_text)`|
-| `datetime`| رسیدگی به تاریخ و زمان |  __محافظت شده_6__ |
-| `collections`| ظروف تخصصی |  `Counter(words)`،`defaultdict(list)`|
+| `json`| رمزگذاری/رمزگشایی JSON | `json.loads(response_text)`|
+| `datetime`| رسیدگی به تاریخ و زمان | `datetime.now(timezone.utc)`|
+| `collections`| ظروف تخصصی | `Counter(words)`,`defaultdict(list)`|
 | `itertools`| بلوک های ساختمان Iterator | `combinations(items, 2)`|
-| `functools`| ابزار کارکرد |  `lru_cache`، `partial`،`reduce`|
+| `functools`| ابزار کارکرد | `lru_cache`,`partial`,`reduce`|
 | `re`| عبارات منظم | `re.findall(r"\d+", text)`|
 | `subprocess`| اجرای دستورات خارجی | `subprocess.run(["ls", "-la"])`|
 | `logging`| ثبت برنامه | `logging.basicConfig(level=logging.INFO)`|
-| `typing`| پشتیبانی راهنمایی را تایپ کنید |  `Optional[str]`،`Union[int, float]`|
+| `typing`| پشتیبانی راهنمایی را تایپ کنید | `Optional[str]`,`Union[int, float]`|
 | `http.server`| سرور HTTP ساده | `python -m http.server 8000`|
 | `threading`/`asyncio`| همزمانی | Async I/O برای وب اسکراپر |
 ### محیط های مجازی و مدیریت بسته
@@ -537,9 +542,9 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
-پروژه‌های پایتون مدرن به طور فزاینده‌ای از`pyproject.toml`با ابزارهایی مانند `uv`، `poetry`، یا`hatch`برای مدیریت وابستگی استفاده می‌کنند و جایگزین رویکرد قدیمی`setup.py`/ __PROTECTED_5 می‌شوند.
+پروژه های مدرن پایتون به طور فزاینده ای از`pyproject.toml`با ابزارهایی مانند `uv`، `poetry`، یا`hatch`برای مدیریت وابستگی استفاده می کنند و جایگزین رویکرد قدیمی`setup.py`/`requirements.txt`می شوند.
 ### برنامه نویسی همگام
-`asyncio` پایتون I/O همزمان را بدون رشته‌ها فعال می‌کند - برای اسکریپرهای وب، سرورهای چت و کلاینت‌های API ضروری است:
+`asyncio` پایتون ورودی/خروجی همزمان را بدون رشته‌ها فعال می‌کند - برای اسکراپرهای وب، سرورهای چت و کلاینت‌های API ضروری است:
 ```python
 import asyncio
 import aiohttp
@@ -813,7 +818,7 @@ jobs:
 
 ## تست
 ### تست چارچوب ها و راه اندازی
-اکوسیستم آزمایش پایتون حول `pytest`، که استاندارد واقعی برای آزمایش پایتون است، متمرکز است.
+اکوسیستم آزمایش پایتون حول محور `pytest`، استاندارد واقعی برای آزمایش پایتون است.
 ```bash
 # Install testing tools
 pip install pytest pytest-cov pytest-mock pytest-asyncio
@@ -1294,7 +1299,7 @@ fly deploy
 | `BeautifulSoup`/`Scrapy`| خراش دادن وب |
 | `Selenium`/`Playwright`| اتوماسیون مرورگر |
 | `Celery`| صف های وظیفه توزیع شده |
-|  __محافظت شده_9__ | ارکستراسیون گردش کار |
+| `Airflow`| ارکستراسیون گردش کار |
 ### محاسبات علمی
 | کتابخانه | هدف |
 |---------|---------|
@@ -1325,8 +1330,8 @@ fly deploy
 |---------|------|-----------------|
 | 3.10 | 2021 | تطبیق الگوی ساختاری (`match/case`)، پیام های خطای بهتر |
 | 3.11 | 2022 | اجرای 10 تا 60 درصد سریعتر، ردیابی بهبود یافته |
-| 3.12 | 2023 | رشته های f انعطاف پذیرتر، عبارت `type`، افزایش عملکرد |
-| 3.13 | 2024 | حالت آزاد تجربی (بدون GIL)، بهبود یافته REPL |
+| 3.12 | 2023 | رشته‌های f انعطاف‌پذیرتر، بیانیه `type`، افزایش عملکرد |
+| 3.13 | 2024 | حالت آزاد تجربی (بدون GIL)، بهبود REPL |
 | 3.14 | 2025 | بهبودهای بیشتر بدون GIL، بهبود سیستم نوع |
 پایتون 2 در 1 ژانویه 2020 به پایان عمر خود رسید. همه پروژه های جدید باید از Python 3.10 یا بالاتر استفاده کنند.
 ---
@@ -1373,6 +1378,289 @@ def slow_function():
     import time; time.sleep(1)
 ```
 
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین لیست ها و تاپل ها چیست و چه زمانی باید از هر کدام استفاده کنم؟
+**A:** لیست ها قابل تغییر هستند (`[]`)، تاپل ها تغییر ناپذیر هستند (`()`). هنگامی که نیاز به افزودن، حذف یا تغییر عناصر دارید از لیست ها استفاده کنید. از تاپل ها برای مجموعه های ثابت داده های ناهمگن، کلیدهای فرهنگ لغت، مقادیر برگردانده تابع یا زمانی که می خواهید علامت دهید "این نباید تغییر کند" استفاده کنید. تاپل ها کمی از نظر حافظه کارآمدتر هستند و می توانند به عنوان کلیدهای تنظیم/دیکت استفاده شوند. لیست ها نمی توانند
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### Q2: قفل مترجم جهانی (GIL) چگونه روی کد من تأثیر می‌گذارد، و در مورد آن چه باید بکنم؟
+**الف:** GIL از اجرای همزمان بایت کد پایتون توسط چندین رشته جلوگیری می کند و این موضوع باعث می شود تا threading برای کارهای محدود به CPU بی اثر شود. برای کارهای مرتبط با ورودی/خروجی (درخواست‌های شبکه، ورودی/خروجی فایل)،`threading`یا`asyncio`به خوبی کار می‌کنند، زیرا GIL در طول I/O آزاد می‌شود. برای کارهای محدود به CPU، از`multiprocessing`(فرآیندهای مجزا، هر کدام GIL خاص خود را دارند)، یا به پسوندهای C (NumPy، Cython، Numba) که GIL را به صورت داخلی آزاد می کنند، بارگذاری کنید.
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### Q3: آیا باید از نکات نوع در همه جا استفاده کنم؟ معاوضه های عملی چیست؟
+**A:** نکات نوع (`def greet(name: str) -> str:`) اختیاری هستند و در زمان اجرا اجرا نمی شوند. آنها تکمیل خودکار IDE را بهبود می بخشند، اشکالات را از طریق ابزارهای تجزیه و تحلیل استاتیک (mypy) و قصد سند پیدا می کنند. مبادله، پرحرفی بیشتر و یک منحنی یادگیری برای انواع پیشرفته است (`Union`، `Generic`، `Protocol`). توصیه: از نکات نوع برای امضای تابع در هر پروژه بیش از 500 خط استفاده کنید. از آنها در اسکریپت های کوتاه کم استفاده کنید. برای اجرای تدریجی mypy را در CI فعال کنید.
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### Q4: بهترین روش ها برای مدیریت استثناها در پایتون چیست؟
+**A:** استثناهای خاص را به جای`except:`خالی (که`SystemExit`و`KeyboardInterrupt`را نیز می گیرد) بگیرید. از`try/except/else/finally`برای جدا کردن منطق مسیر شاد از مدیریت خطا استفاده کنید. سلسله مراتب استثنایی سفارشی را برای کتابخانه ها تعریف کنید. هرگز از استثناها برای کنترل جریان در کدهای حساس به عملکرد استفاده نکنید - آنها کند هستند. برای ثبت ردیابی کامل، استثنا را با`logging.exception()`ثبت کنید.
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### Q5: چگونه ژنراتورها حافظه را ذخیره می کنند، و چه زمانی باید از آنها در لیست استفاده کنم؟
+**الف:** ژنراتورها به جای ساختن یک لیست کامل در حافظه، مقادیر را به تنبلی تولید می کنند - یک در یک زمان، بنا به تقاضا. برای مجموعه داده‌های بزرگ (میلیون‌ها ردیف، دنباله‌های بی‌نهایت، داده‌های جریانی)، مولدها بدون توجه به اندازه از حافظه ثابت استفاده می‌کنند. هنگامی که یک بار تکرار می کنید و نیازی به نمایه سازی یا`len()`ندارید از ژنراتورها استفاده کنید. زمانی که به دسترسی تصادفی، تکرارهای متعدد یا کوچک بودن مجموعه نیاز دارید، از لیست ها استفاده کنید.
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک شمارشگر فرکانس کلمه با رتبه بندی بسازید
+**بیان مشکل:** با توجه به یک فایل متنی بزرگ، تعداد دفعات هر کلمه را بشمارید، آنها را بر اساس فرکانس (نزولی) رتبه بندی کنید و N نتایج برتر را برگردانید. عدم حساسیت به حروف کوچک، علائم نگارشی و پردازش کارآمد فایل‌های بیش از حد بزرگ که در حافظه جای نمی‌گیرد.
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) متن را بخوانیم، (2) به کلمات تقسیم کنیم، (3) حروف کوچک را عادی کنیم، (4) علائم نگارشی نواری، (5) تعداد رخدادها، (6) مرتب سازی بر اساس تعداد نزولی، (7) بالای N را برگردانیم. محدودیت "بسیار بزرگ برای جا افتادن در حافظه" به این معنی است که باید خط به خط را با ژنراتورها پردازش کنیم.
+** مرحله 2 - شناسایی رویکرد: **
+- از`re.finditer`برای استخراج کارآمد کلمات بدون ایجاد لیست های میانی استفاده کنید.
+- از`collections.Counter`برای افزایش O(1) در هر کلمه استفاده کنید.
+- از`Counter.most_common(n)`استفاده کنید که از یک پشته در داخل استفاده می کند - O(k log n) به جای O(n log n) برای مرتب سازی کامل.
+- پردازش خط به خط از طریق ژنراتور برای ثابت نگه داشتن حافظه.
+**مرحله 3 - راه حل را اجرا کنید:**
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- Memory: فقط Counter dict در حافظه است (یک ورودی برای هر کلمه منحصر به فرد)، نه محتوای فایل. برای متن انگلیسی، ~ 100K کلمه منحصر به فرد ≈ چند مگابایت.
+- زمان: O(W) برای اسکن همه کلمات + O(U log N) برای استخراج top-N، که در آن W = کل کلمات، U = کلمات منحصر به فرد.
+- موارد لبه: آپوستروف در انقباضات ("نباید") توسط regex حفظ می شود. متن یونیکد به پرچم`re.UNICODE`یا الگوی دیگری نیاز دارد.
+### مشکل 2: یک Thread-Safe LRU Cache را پیاده سازی کنید
+**بیانیه مشکل:** یک حافظه نهان اخیراً استفاده شده (LRU) از ابتدا بسازید که از نظر نخ ایمن باشد، از عملیات get و put O(1) پشتیبانی کند، و به طور خودکار مواردی که اخیراً استفاده شده است را در صورت افزایش ظرفیت خارج می کند.
+** مرحله 1 - مشکل را درک کنید:**
+یک حافظه پنهان LRU به موارد زیر نیاز دارد: (1) جستجوی سریع توسط کلید → نقشه هش، (2) مرتب سازی سریع بر اساس تازگی → لیست پیوندی دوگانه، (3) ایمنی رشته → قفل کردن. در `get(key)`: مورد را به جلو منتقل کنید. در `put(key, val)`: درج در جلو. اگر ظرفیت بیش از حد است، از پشت خارج کنید.
+** مرحله 2 - شناسایی رویکرد: **
+-`dict`پایتون نظم درج (3.7+) را حفظ می‌کند، بنابراین می‌توانیم از یک رویکرد دستوری مرتب استفاده کنیم: حذف و دوباره درج برای حرکت به پایان.
+- برای ایمنی نخ، از`threading.Lock`برای حذف متقابل استفاده کنید.
+- جایگزین: از`collections.OrderedDict`که دارای`move_to_end()`است استفاده کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- پیچیدگی زمانی: O(1) برای`get`و`put`—`OrderedDict.move_to_end()`و`popitem()`O(1) هستند.
+- ایمنی رزوه:`Lock`اتمی بودن را تضمین می کند. برای توان عملیاتی بالاتر،`threading.RLock`یا الگوی قفل خواندن-نوشتن را در نظر بگیرید، اما برای بیشتر موارد استفاده، یک قفل ساده کافی است.
+- نکته تولید: برای کدهای تک رشته ای،`functools.lru_cache`ساده تر است و برای عملکرد بهتر در C پیاده سازی شده است.
+### مسئله 3: یک عبارت ریاضی را تجزیه و ارزیابی کنید
+**بیانیه مشکل:** تجزیه کننده ای بنویسید که رشته ای مانند`"3 + 4 * 2 / (1 - 5)"`را بگیرد و با رعایت اولویت عملگر و پرانتز آن را به درستی ارزیابی کند.
+** مرحله 1 - مشکل را درک کنید:**
+این امر مستلزم: (1) توکن کردن رشته ورودی به اعداد، عملگرها و پرانتزها، (2) تجزیه با اولویت صحیح (`*` و`/`قبل از`+`و `-`)، (3) مدیریت پرانتزهای تو در تو. یک ارزیابی ساده لوحانه از چپ به راست نتایج اشتباهی به همراه خواهد داشت.
+** مرحله 2 - شناسایی رویکرد: **
+راه حل کلاسیک **الگوریتم حیاط شنتینگ** (Dijkstra) است که infix را به postfix تبدیل می کند (Reverse Polish Notation)، سپس پسوند را ارزیابی می کند. روش دیگر، از یک تجزیه کننده نزولی بازگشتی استفاده کنید. به طور خاص برای پایتون، ما همچنین می توانیم از`ast.literal_eval`برای ارزیابی ایمن استفاده کنیم - اما بیایید آن را به درستی پیاده سازی کنیم.
+**مرحله 3 - راه حل را اجرا کنید:**
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- صحت:`3 + 4 * 2 / (1 - 5)`→`3 + 8 / (-4)`→`3 + (-2)`→`1.0`. درست است.
+- زمان: O(N) برای نشانه گذاری، O(N) برای شانتینگ یارد، O(N) برای ارزیابی - O(N) کلی.
+- موارد لبه برای رسیدگی: اعداد منفی (قبل از`0`قبل از`-`یکنواخت)، تقسیم بر صفر (اضافه کردن رسیدگی به خطا)، ورودی نامعتبر (توکن‌های اعتبارسنجی).
+- جایگزین پایتونیک:`ast.parse(expr, mode='eval')`با بازدیدکننده گره سفارشی برای ارزیابی ایمن بدون `eval()`.
+### مشکل 4: یک داشبورد CLI با به‌روزرسانی‌های بی‌درنگ داده بسازید
+**بیانیه مشکل:** داشبورد مبتنی بر ترمینال ایجاد کنید که معیارهای سیستم (CPU، حافظه، دیسک) را در زمان واقعی به‌روزرسانی می‌کند، با آستانه‌های رنگی و طرح‌بندی پاسخگو.
+** مرحله 1 - مشکل را درک کنید:**
+ما به موارد زیر نیاز داریم: (1) مجموعه متریک سیستم دوره ای، (2) رندر پایانه با کنترل مکان نما، (3) خروجی رنگ بر اساس آستانه، (4) ورودی صفحه کلید غیر مسدود کننده برای خروج. این یک الگوی تولیدکننده-مصرف کننده با یک حلقه رندر است.
+** مرحله 2 - شناسایی رویکرد: **
+- از`psutil`برای معیارهای سیستم متقابل پلتفرم استفاده کنید.
+- از کدهای فرار ANSI برای موقعیت یابی مکان نما و رنگ ها استفاده کنید (یا از کتابخانه`rich`برای یک API سطح بالاتر).
+- از`time.sleep`برای فاصله به روز رسانی استفاده کنید.
+- ساختار به عنوان: جمع آوری داده ها → قالب بندی → خط لوله رندر.
+**مرحله 3 - راه حل را اجرا کنید:**
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+-`cpu_percent(interval=0.5)`برای اندازه گیری 0.5 ثانیه بلوک می کند - این رویکرد صحیح است (حالت غیر مسدود کننده در اولین تماس 0٪ می دهد).
+- کدهای ANSI روی ترمینال مدرن ویندوز و تمام پایانه های یونیکس کار می کنند. برای cmd ویندوز قدیمی،`os.system('color')`را اضافه کنید یا از`colorama`استفاده کنید.
+- ارتقای تولید: از کتابخانه`rich`(`rich.live`) برای رندر بدون سوسو، چیدمان خودکار و سازگاری با پلتفرم استفاده کنید.
+- توسعه پذیری: هر متریک یک تابع مستقل است که اضافه کردن دمای GPU، تعداد فرآیند یا اتصالات شبکه را آسان می کند.
 ---
 
 ## خلاصه

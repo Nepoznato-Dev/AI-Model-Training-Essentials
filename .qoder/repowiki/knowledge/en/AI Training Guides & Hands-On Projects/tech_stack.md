@@ -1,1 +1,0 @@
-Documentation is authored in Markdown; runnable projects are Python scripts using PyTorch, scikit-learn, transformers, FAISS, LangChain, and HuggingFace datasets, each pinned via per-project `requirements.txt` and designed to run on Google Colab free tier.

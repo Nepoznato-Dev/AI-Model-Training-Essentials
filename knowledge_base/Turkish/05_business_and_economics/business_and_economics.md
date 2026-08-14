@@ -46,7 +46,7 @@ Bir ürün veya hizmet satan her kuruluş bir işletmedir ve mal üreten ve dağ
 ## İşletmeler Nasıl Yapılandırılır
 Bir işletmenin hukuki yapısı vergilerin nasıl ödeneceğini, borçlardan kimin sorumlu olacağını ve kararların nasıl alınacağını belirler.
 | Yapı | Sahipler | Sorumluluk | Vergi Uygulaması | En İyisi |
-|-----------|-----------|-----------|---------------|----------|
+|----------|-----------|-----------|---------------|----------|
 | **Şahıs mülkiyeti** | 1 kişi | Sınırsız kişisel sorumluluk | Kişisel getiride bildirilen gelir | Serbest çalışanlar, yan işler |
 | **Ortaklık** | 2+ kişi | Sınırsız kişisel sorumluluk (genel ortaklar) | Ortaklar arasında gelir paylaşımı | Profesyonel hizmetler (hukuk firmaları, danışmanlar) |
 | **LLC** | 1+ üye | Sınırlı sorumluluk (kişisel varlıklar korunur) | Esnek — tek kaynak, ortaklık veya şirket olarak vergilendirilebilir | Küçük ve orta ölçekli işletmelerin çoğu |
@@ -67,7 +67,7 @@ Bu hiyerarşi, unvanlar ve raporlama yapıları farklılık gösterse de hemen h
 **Mikroekonomi** bireysel kararlara bakar: Tüketici ürünler arasında nasıl seçim yapar? Bir şirket fiyatını nasıl belirler? Pazara yeni bir rakip girdiğinde ne olur?
 **Makroekonomi** büyük resme bakar: Neden bazı ülkeler büyürken diğerleri durgunlaşıyor? Durgunluklara ne sebep olur? Enflasyon satın alma gücünü nasıl etkiler?
 ### Arz ve Talep — Temel Mekanizma
-Ekonomide hemen hemen her şey arz ve talepten kaynaklanır. Bir şeye olan talep arttığında (daha fazla insan onu istiyorsa) fiyatlar yükselir. Arz arttığında (daha fazlası mevcutsa) fiyatlar düşer. Arzın talebi karşıladığı nokta **denge fiyatıdır**.
+Ekonomideki hemen hemen her şey arz ve talepten kaynaklanır. Bir şeye olan talep arttığında (daha fazla insan onu istediğinde) fiyatlar yükselir. Arz arttığında (daha fazlası mevcut) fiyatlar düşer. Arzın talebi karşıladığı nokta **denge fiyatıdır**.
 | Konsept | Ne Olur | Gerçek Dünya Örneği |
 |-----------|-------------|------------------|
 | **Talep artıyor, arz sabit** | Fiyatlar artıyor | Popüler şehirlerde konut |
@@ -124,7 +124,7 @@ Bu denklem her zaman dengededir. Varlıklar işletmenin sahip olduğu şeylerdir
 | **Gelir Tablosu** (K&Z) | Gelir, gider, kar | Dönem (çeyrek, yıl) | "Para kazandık mı?" |
 | **Bilanço** | Varlıklar, yükümlülükler, özsermaye | Zaman içinde bir nokta | "Şirketin değeri nedir?" |
 | **Nakit Akış Tablosu** | Nakit giriş, nakit çıkış | Dönem | "İşletmeye yetecek kadar paramız var mı?" |
-Bir şirket gelir tablosunda kârlı olabilir ancak yine de nakiti bitmiş olabilir (müşteriler henüz ödeme yapmamışsa veya ekipmana yoğun harcama yapmışsa). Nakit akış tablosunun önemli olmasının nedeni budur; ışıkları açık tutan şey nakittir.
+Bir şirket gelir tablosunda kârlı olabilir ancak yine de nakiti bitmiş olabilir (müşteriler henüz ödeme yapmamışsa veya ekipmana yoğun bir harcama yapmışsa). Nakit akış tablosunun önemli olmasının nedeni budur; ışıkları açık tutan şey nakittir.
 ### Temel Finansal Oranlar
 | Oran | Formül | Size Ne Anlatıyor |
 |----------|------------|-----------|
@@ -152,20 +152,20 @@ Startup, ölçeklenebilir bir iş modeli arayan geçici bir organizasyondur. Bu 
 | **A Serisi** | 5 Milyon Dolar - 20 Milyon Dolar | Risk sermayesi | Ürünü ölçeklendirme ve pazara sunma |
 | **Seri B+** | 20 milyon $+ | Risk sermayesi, büyüme sermayesi | Hızlı büyüme, yeni pazarlar |
 | **halka arz** | 100 milyon $+ | Halk pazarları | Erken yatırımcılar için genişleme, satın almalar ve likidite |
-Çoğu girişim başarısız olur. Tahminler, girişim destekli girişimlerin %90'ının ilk yatırımı geri getirmediğini gösteriyor. En yaygın nedenler: Piyasaya ihtiyaç olmaması (%42), nakit sıkıntısı (%29), yanlış ekip (%23) ve rakipsiz kalmak (%19).
+Çoğu girişim başarısız olur. Tahminler, girişim destekli girişimlerin %90'ının ilk yatırımı geri getirmediğini gösteriyor. En yaygın nedenler: Piyasaya ihtiyaç olmaması (%42), nakit sıkıntısı (%29), yanlış ekip (%23) ve rakipsiz olmak (%19).
 ---
 
 ## Tedarik Zinciri ve Operasyonlar
-Tedarik zinciri yönetimi, doğru ürünü, doğru zamanda, doğru maliyetle, doğru yere ulaştırma sanatı ve bilimidir. Kulağa basit geliyor. Olağanüstü zordur.
+Tedarik zinciri yönetimi, doğru ürünü, doğru zamanda, doğru maliyetle, doğru yere ulaştırmanın koordineli sürecidir. Amaç basittir; yürütme karmaşıktır.
 ### Temel Kavramlar
 - **Tam zamanında (JIT)**: Malzemeleri yalnızca ihtiyaç duyulduğunda alın ve envanter maliyetlerini azaltın. Toyota bunun öncülüğünü yaptı. Takas: Tam zamanında teslimat sistemleri, tedarik zincirleri bozulduğunda kırılgandır (2020-2022 çip kıtlığının gösterdiği gibi).
-- **Yalın üretim**: Müşteriye değer katmayan her şey olan israfı ortadan kaldırın. "Yedi israfı" tanımlayın ve ortadan kaldırın: aşırı üretim, bekleme, nakliye, aşırı işleme, envanter, hareket ve kusurlar.
+- **Yalın üretim**: Müşteriye değer katmayan her türlü israfı ortadan kaldırın. "Yedi israfı" tanımlayın ve ortadan kaldırın: aşırı üretim, bekleme, taşıma, aşırı işleme, envanter, hareket ve kusurlar.
 - **Altı Sigma**: Kusurları milyon fırsat başına 3,4'e düşürün. Değişkenlik kaynaklarını belirlemek ve ortadan kaldırmak için verileri ve istatistiksel yöntemleri kullanır.
 - **Kırbaç etkisi**: Tüketici talebindeki küçük değişiklikler, tedarik zincirinde giderek daha büyük dalgalanmalara neden olur. Perakende satışlardaki %5'lik bir artış, üretici siparişlerinde %40'lık bir artışa dönüşebilir.
 ---
 
 ## Uluslararası Ticaret
-Ülkeler farklı güçlere sahip oldukları için ticaret yaparlar. David Ricardo'nun **karşılaştırmalı avantaj** (1817) kavramı temel olmaya devam ediyor: A Ülkesi her şeyi üretmede B Ülkesinden daha iyi olsa bile, A'nın en verimli olduğu şeye, B'nin ise en az kötü olduğu şeye odaklanması her iki tarafın da yararınadır.
+Ülkeler farklı güçlere sahip oldukları için ticaret yaparlar. David Ricardo'nun **karşılaştırmalı avantaj** (1817) kavramı temel olmaya devam ediyor: A Ülkesi her şeyi üretmede B Ülkesinden daha iyi olsa bile, A'nın en verimli olduğu şeye, B'nin ise en az kötü olduğu şeye odaklanması her ikisinden de fayda sağlar.
 | Konsept | Ne Anlama Geliyor | Örnek |
 |-----------|---------------|-----------|
 | **Tarifeler** | İthal mallara uygulanan vergiler | ABD'nin Çin mallarına uyguladığı gümrük vergileri; yerli sanayiyi koruyor ama fiyatları artırıyor |
@@ -177,7 +177,7 @@ Küreselleşme yüz milyonlarca insanı (özellikle Çin ve Hindistan'da) yoksul
 ---
 
 ## İş Etiği ve Kurumsal Sorumluluk
-İşletmeler toplumların içinde var olur ve onların kararları, hissedarlarının ötesinde insanları da etkiler. Sorun, işletmelerin etik olup olmaması değil; kâr ile sorumluluğun nasıl dengeleneceğidir.
+İşletmeler toplumların içinde var olur ve onların kararları, hissedarlarının ötesinde insanları da etkiler. Sorun işletmelerin etik olup olmaması değil, kâr ile sorumluluğun nasıl dengeleneceğidir.
 | Çerçeve | Odaklanma | Örnek |
 |-----------|----------|-----------|
 | **KSS (Kurumsal Sosyal Sorumluluk)** | Sosyal ve çevresel hedeflere gönüllü bağlılık | Patagonya'nın çevre aktivizmi; TOMS "bire bir" modeli |

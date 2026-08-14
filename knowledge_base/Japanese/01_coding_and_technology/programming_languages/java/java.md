@@ -116,7 +116,7 @@ public class User implements Serializable, Comparable<User> {
 }
 ```
 
-### レコード (Java 16+) — 簡潔なデータ クラス
+### レコード (Java 16 以降) — 簡潔なデータ クラス
 ```java
 public record Point(double x, double y) {
     public Point {
@@ -333,7 +333,7 @@ Thread.startVirtualThread(() -> {
 });
 ```
 
-### 従来のスレッド処理と同期
+### 従来のスレッド化と同期
 ```java
 // Thread pool for CPU-bound tasks
 ExecutorService cpuPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
@@ -684,7 +684,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | **JUnit 5** |単体テストフレームワーク |
 | **モキト** |モックフレームワーク |
 | **アサートJ** |流暢な主張 |
-| **テストコンテナ** | Docker での実際のデータベースとの統合テスト |
+| **テストコンテナ** | Docker で実際のデータベースとの統合テスト |
 ---
 
 ## JVM エコシステム
@@ -700,7 +700,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ## Java バージョン
 |バージョン |年 |主な機能 |
 |----------|------|---------------|
-| Java 8 | 2014年 | **LTS** — ラムダ、ストリーム API、オプション、デフォルトのメソッド。今でも広く使われています。 |
+| Java 8 | 2014年 | **LTS** — Lambda、Stream API、オプション、デフォルトのメソッド。今でも広く使われています。 |
 | Java 11 | 2018年 | **LTS** — HTTP クライアント API、ローカル変数用の `var`、単一ファイル ソース ランチャー |
 | Java 17 | 2021年 | **LTS** — シールされたクラス、`instanceof`、レコード、テキスト ブロックのパターン マッチング |
 | Java 21 | 2023年 | **LTS** — **仮想スレッド** (Project Loom)、`switch`のパターン マッチング、レコード パターン |
@@ -718,6 +718,377 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 |マイクロサービス | Spring Boot + クラウドネイティブ フレームワーク |よりシンプルなサービスを目指しましょう |
 |単純なスクリプト |儀式が多すぎる | Python、シェル |
 | CLI ツール |起動が遅い |さあ、錆びよ |
+---
+
+## 総合的な Q&A
+### Q1: Java の`==`と`.equals()`の違いは何ですか?
+**A:**`==`はオブジェクト参照 (同一性) を比較します。2 つの変数がメモリ内の同じオブジェクトを指しているかどうかをチェックします。 `.equals()`は、オブジェクトの内容 (値の同一性) を比較します。プリミティブ (`int`、`double`) の場合、`==`は値を直接比較します。オブジェクト (`String`を含む) の場合は、常に`.equals()`を使用してコンテンツを比較します。唯一の例外は`null`との比較であり、`==`が正しいです。
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### Q2: JVM ガベージ コレクターはどのように機能しますか?どれを使用する必要がありますか?
+**A:** GC は、アクセスできなくなったオブジェクトからメモリを自動的に再利用します。最新の JVM (21 以降) は、G1 (デフォルト、バランス)、ZGC (超低停止時間、<1ms)、および Shenandoah (低停止、OpenJDK) などのいくつかのコレクターを提供します。ほとんどのアプリケーションでは、デフォルトの G1 で問題ありません。遅延の影響を受けやすいサービスの場合は、ZGC (`-XX:+UseZGC`) を使用します。スループット重視のバッチ処理の場合は、並列 GC (`-XX:+UseParallelGC`) を使用します。
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### Q3: 従来のループではなく、どのような場合に`Stream API`を使用する必要がありますか?
+**A:** 操作が明確なパイプライン (フィルター、マップ、リデュース) である場合は、ストリームを使用します。ストリームは意図をより適切に表現し、`.parallelStream()`と簡単に並列化します。従来のループは、外部状態を変更する必要がある場合、パフォーマンスが重要な場合 (ストリームにオーバーヘッドがある場合)、またはロジックに複雑な制御フロー (中断、続行、複数のリターン) が含まれる場合、単純な反復に使用します。単純な`for-each`操作のストリームは避けてください。
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### Q4: 最新の Java におけるレコード、シールされたクラス、パターン マッチングとは何ですか?
+**A:** レコード (Java 16) は不変のデータ キャリアであり、コンストラクター、ゲッター、`equals`、`hashCode`、および`toString`を自動生成します。 Sealed クラス (Java 17) は、それを拡張できるクラスを制限します。これは、有限型の階層をモデル化するのに役立ちます。パターン マッチング (Java 21) では、`switch` 式を使用して型、レコード、および値を構造化でき、冗長な`instanceof`チェーンを置き換えることができます。
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### Q5: チェックされた例外とチェックされていない例外を適切に処理するにはどうすればよいですか?
+**A:** チェック例外 (`IOException`、`SQLException`) は、`throws`で宣言するか、キャッチする必要があります。これらは、呼び出し元が知っておく必要がある回復可能な状態を表します。未チェック例外 (`NullPointerException`、`IllegalArgumentException`などの`RuntimeException`サブクラス) はプログラミングのバグを表します。ベスト プラクティス: チェック例外は控えめに使用し (結合が作成されます)、不在が予想される場合は`Optional`を優先し、API 境界を越える場合はチェック例外を非チェック例外でラップします。
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## 思考連鎖による問題解決
+### 問題 1: スレッドセーフなプロデューサー/コンシューマー パイプラインの構築
+**問題ステートメント:** Java でプロデューサー/コンシューマー パイプラインを設計します。このパイプラインでは、複数のプロデューサーが作業項目を生成し、複数のコンシューマーがそれらを同時に処理し、システムが残りのアイテムのドレインによる正常なシャットダウンをサポートします。
+**ステップ 1 — 問題を理解する:**
+(1) プロデューサーとコンシューマー間の作業アイテムをバッファリングするための境界付きキュー、(2) アイテムを追加する複数のプロデューサー スレッド、(3) アイテムを処理する複数のコンシューマー スレッド、(4) シャットダウンを通知し、残りのアイテムを排出するメカニズムが必要です。 Java の`BlockingQueue`は、この目的に特化して構築されています。
+**ステップ 2 — アプローチを特定する:**
+- 無制限のメモリ増加を防ぐには、`ArrayBlockingQueue` (制限付き) を使用します。
+- シャットダウン信号にポイズンピルパターンを使用します。
+- スレッドプール管理には`ExecutorService`を使用します。
+-`CountDownLatch`を使用して、すべてのコンシューマが排出を完了するまで待ちます。
+**ステップ 3 — ソリューションの実装:**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**ステップ 4 — 検証と最適化:**
+- 境界付きキューにより OOM を防止:`ArrayBlockingQueue(1000)`がメモリを制限します。
+- 毒薬のパターン: 各消費者は薬を受け取った後、きれいに退場します。
+- タイムアウト付きの`poll(1, SECONDS)`は、プロデューサーが遅い場合にコンシューマーが永久にブロックすることを防ぎます。
+- プロダクション: 無制限の場合は`LinkedBlockingQueue`を使用し、超低遅延パイプラインの場合は`Disruptor`(LMAX) を使用します。
+### 問題 2: カスタムのアノテーションベースのバリデーターを実装する
+**問題ステートメント:** カスタム アノテーションを使用して検証フレームワークを作成します。ユーザーはフィールドに`@NotNull`、`@Min(0)`、`@Max(100)`、`@Size(min=1, max=50)`の注釈を付け、`Validator.validate(obj)`を呼び出して違反のリストを取得します。
+**ステップ 1 — 問題を理解する:**
+(1) パラメータを備えたカスタム アノテーション、(2) 実行時にアノテーションを読み取るリフレクション ベースのバリデータ、(3) すべての検証エラーを含む結果オブジェクトが必要です。これは、Java のアノテーション処理およびリフレクション機能を示しています。
+**ステップ 2 — アプローチを特定する:**
+-`@Retention(RUNTIME)`および`@Target(FIELD)`を使用してアノテーションを定義します。
+-`Class.getDeclaredFields()`を使用してフィールドを反復します。
+- 注釈値を読み取るには、`Field.getAnnotation()` を使用します。
+- フィールド値を注釈制約と比較します。
+- 違反をリストに収集します。
+**ステップ 3 — ソリューションの実装:**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**ステップ 4 — 検証と最適化:**
+- リフレクション オーバーヘッド: 検証に許容されます (リクエストごとに 1 回呼び出されます)。ホット パスの場合、フィールド ルックアップをキャッシュするか、コンパイル時のアノテーション処理 (Hibernate Validator など) を使用します。
+- 拡張性:`validate()`に注釈とハンドラー ブロックを作成して、新しい注釈を追加します。
+- 実稼働:`jakarta.validation`(Bean Validation 3.0) を使用します。これは、アノテーション プロセッサを介したコンパイル時処理で、これらすべてを実行します。
+### 問題 3: 再試行を伴うレート制限された HTTP クライアントの構築
+**問題ステートメント:** 指数バックオフを使用して失敗したリクエストを自動的に再試行し、レート制限を尊重し、サーキット ブレーク (失敗したサービスの呼び出しを停止する) をサポートする HTTP クライアント ラッパーを作成します。
+**ステップ 1 — 問題を理解する:**
+必要なのは: (1) 指数バックオフとジッターを使用した再試行ロジック、(2) ターゲット サービスへの負荷を避けるためのレート制限、(3) サーキット ブレーカー パターン - N 回連続して失敗した後、クールダウン期間の間サービスの呼び出しを停止する。これらは 3 つの構成可能な懸念事項です。
+**ステップ 2 — アプローチを特定する:**
+-`java.net.http.HttpClient`(Java 11+) をベースクライアントとして使用します。
+- バックオフ用に`Thread.sleep`を使用してラッパーとしてリトライを実装します。
+- レート制限には`Semaphore`を使用します (トークン バケットには `java.time`)。
+- サーキット ブレーカーをステート マシンとして実装します: CLOSED → OPEN → HALF_OPEN。
+**ステップ 3 — ソリューションの実装:**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**ステップ 4 — 検証と最適化:**
+- ジッターを伴う指数関数的バックオフにより、雷を散らす群れ (すべての再試行が同時にヒットする) を防ぎます。
+- サーキット ブレーカー:`failureThreshold`が連続して失敗すると、`cooldownMs` に対して回線が開きます。リクエストは送信されず、失敗したサービスが保護されます。
+- レート リミッター:`Semaphore`(定期補充上限スループットあり)。
+- 運用:`resilience4j`を使用します。これは、適切な実装、メトリクス、Spring Boot 統合を備えた 3 つのパターン (再試行、レート リミッター、サーキット ブレーカー) をすべて提供します。
 ---
 
 ＃＃ まとめ

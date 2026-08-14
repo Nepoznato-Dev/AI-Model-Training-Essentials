@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Propiedad Intelectual e Innovación"
-descripción: "Patentes, derechos de autor, marcas comerciales, secretos comerciales, licencias de código abierto"
-categoría: "Empresas y Economía"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Intellectual Property and Innovation"
+description: "Patents, copyright, trademarks, trade secrets, open source licensing"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de economía y negocios"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [intelectual, propiedad, innovación, economía y negocios]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "7 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [intellectual, property, innovation, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Propiedad Intelectual e Innovación
 La propiedad intelectual (PI) se refiere a creaciones de la mente (invenciones, obras artísticas, marcas, diseños, secretos comerciales) que la ley protege del uso no autorizado. La innovación es el proceso de convertir ideas en valor. La legislación sobre propiedad intelectual existe para equilibrar dos intereses contrapuestos: recompensar a los creadores (otorgándoles monopolios temporales) y beneficiar a la sociedad (garantizando que el conocimiento eventualmente esté disponible gratuitamente). Comprender la propiedad intelectual es esencial para cualquiera que cree productos, cree contenidos, dirija una empresa o trabaje en investigación.

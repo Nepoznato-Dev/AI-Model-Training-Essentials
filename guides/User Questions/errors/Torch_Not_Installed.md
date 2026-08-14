@@ -349,9 +349,10 @@ pip uninstall pytorch -y
 ## 📚 Related Errors
 
 - [ImportError_Transformers.md](ImportError_Transformers.md) - Can't import transformers
-- [Device_Cuda_Not_Available.md](Device_Cuda_Not_Available.md) - GPU not detected
-- [PIP_Install_Fails.md](PIP_Install_Fails.md) - pip installation errors
-- [Virtual_Environment_Not_Active.md](Virtual_Environment_Not_Active.md) - Wrong Python environment
+- Device_Cuda_Not_Available - GPU not detected
+- PIP_Install_Fails - pip installation errors
+- Virtual_Environment_Not_Active - Wrong Python environment
+- See the [Common Errors index](README.md) for the full troubleshooting catalogue
 
 ---
 

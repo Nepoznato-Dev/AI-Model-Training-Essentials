@@ -130,7 +130,7 @@ end.
 
 ## Sintaks & Pola Tingkat Lanjut
 ### Generik dan Koleksi
-Delphi mendukung generik (sejak Delphi 2009), memungkinkan kelas kontainer yang aman untuk tipe.
+Delphi mendukung obat generik (sejak Delphi 2009), memungkinkan kelas kontainer yang aman untuk tipe.
 ```pascal
 unit GenericsDemo;
 
@@ -614,7 +614,7 @@ end.
 
 ---
 
-## Pengujian & Debug
+## Pengujian & Debugging
 ### Fitur Debugger IDE
 IDE Delphi menyertakan debugger terintegrasi berfitur lengkap.
 | Fitur | Deskripsi |
@@ -709,7 +709,7 @@ initialization
 end.
 ```
 
-### Alur Kerja Debugging
+### Alur Kerja Debug
 ```
 1. Set breakpoints at suspicious code locations
 2. Run the application (F9)
@@ -1088,5 +1088,83 @@ Delphi Deployment Targets:
 | Aplikasi seluler | Mungkin melalui FMX tetapi terbatas | Cepat, Kotlin, Berkibar |
 ---
 
+## Tanya Jawab Sintetis
+### Q1: Bagaimana cara kerja kerangka VCL Delphi?
+**A:** VCL menggabungkan kontrol Windows API dalam hierarki berorientasi objek. Formulir, tombol, dan kisi semuanya merupakan kelas:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: Bagaimana cara membuat komponen di Delphi?
+**A:** Mewarisi dari TComponent atau TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3: Apa perbedaan antara Delphi dan Free Pascal?
+**A:** Delphi adalah IDE/kompiler komersial oleh Embarcadero. Free Pascal adalah kompiler sumber terbuka, dan Lazarus adalah IDE gratis. Keduanya menggunakan sintaks Object Pascal.
+### Q4: Bagaimana cara bekerja dengan database di Delphi?
+**A:** Gunakan komponen FireDAC atau dbExpress:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5: Apakah Delphi masih relevan saat ini?
+**A:** Untuk memelihara aplikasi Windows lawas, ya. Untuk proyek baru, sebagian besar pengembang lebih memilih teknologi C# atau web. Pascal/Lazarus Gratis menyediakan alternatif lintas platform gratis.
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membuat Formulir Sadar Data
+**Langkah 1: Pahami Masalahnya**
+Buat formulir yang menampilkan dan mengedit catatan database.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan komponen yang peka terhadap data yang terikat pada kumpulan data.
+**Langkah 3: Terapkan**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan validasi, penanganan kesalahan, dan fungsi pencarian/filter.
+---
+
 ## Ringkasan
-Delphi adalah bahasa yang secara historis penting yang memelopori pengembangan aplikasi yang cepat untuk Windows. Delphi modern tetap mampu untuk aplikasi Windows asli dan front-end database, namun komunitas dan ekosistemnya telah menyusut secara signifikan. Untuk mempertahankan basis kode Delphi yang ada, hal ini tetap penting. Untuk proyek baru, sebagian besar pengembang telah bermigrasi ke C#, teknologi web, atau kerangka kerja lintas platform. Proyek Free Pascal/Lazarus sumber terbuka memberikan alternatif gratis bagi mereka yang tertarik dengan bahasa Object Pascal.
+Delphi adalah bahasa yang secara historis penting yang memelopori pengembangan aplikasi yang cepat untuk Windows. Delphi modern tetap mampu untuk aplikasi Windows asli dan front-end database, namun komunitas dan ekosistemnya telah menyusut secara signifikan. Untuk mempertahankan basis kode Delphi yang ada, hal ini tetap penting. Untuk proyek baru, sebagian besar pengembang telah bermigrasi ke C#, teknologi web, atau kerangka kerja lintas platform. Proyek Free Pascal / Lazarus sumber terbuka memberikan alternatif gratis bagi mereka yang tertarik dengan bahasa Object Pascal.

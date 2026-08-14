@@ -7,6 +7,7 @@ Infrastructure, deployment, monitoring, and operational excellence for modern so
 - **CI/CD** - Continuous Integration and Continuous Deployment pipelines
 - **Infrastructure as Code** - Managing infrastructure through version-controlled code
 - **Container Orchestration** - Deploying and managing containerized applications
+- **MLOps** - Deploying, monitoring, versioning, and maintaining ML models in production
 - **Monitoring & Observability** - Tracking system health and performance
 - **Cloud Infrastructure** - AWS, Azure, GCP best practices
 

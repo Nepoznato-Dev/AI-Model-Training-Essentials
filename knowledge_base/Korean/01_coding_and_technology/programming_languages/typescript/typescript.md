@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 타입스크립트
 TypeScript는 Microsoft(Anders Hejlsberg 주도)에서 개발하고 2012년에 처음 출시된 정적으로 유형이 지정된 JavaScript의 상위 집합입니다. JavaScript에 선택적 유형 주석, 인터페이스, 제네릭 및 고급 유형 시스템 기능을 추가한 다음 JavaScript가 실행되는 모든 곳에서 실행되는 일반 JavaScript로 컴파일됩니다. TypeScript는 별도의 언어나 런타임이 아닙니다. 유형 검사기가 있는 JavaScript입니다.
 TypeScript는 대규모 JavaScript 개발의 표준이 되었습니다. React, Angular, VS Code, Deno 및 대부분의 주요 오픈 소스 JavaScript 프로젝트는 TypeScript로 작성되었습니다. 상당한 크기의 새 JavaScript 프로젝트를 시작하는 경우 TypeScript가 권장되는 기본값입니다.
@@ -53,7 +54,7 @@ TypeScript는 대규모 JavaScript 개발의 표준이 되었습니다. React, A
 ## 절충안
 | 제한사항 | 세부정보 | 일반적인 해결 방법 |
 |------------|---------|------|
-| **컴파일 단계** | 실행하기 전에`.ts`→ `.js`을 컴파일해야 합니다. | 개발에는`ts-node`/ `tsx`을(를) 사용하세요.  프로덕션용`tsc`|
+| **컴파일 단계** | 실행하기 전에`.ts`→ `.js`를 컴파일해야 합니다. 개발에는`ts-node`/ `tsx`를 사용하세요.  생산용`tsc`|
 | **학습 곡선** | 유형 시스템은 복잡할 수 있습니다(제네릭, 조건부 유형) | 기본 유형부터 시작하세요. 고급 기능을 점진적으로 채택 |
 | **유형 정의 파일** | 모든 npm 패키지가 유형과 함께 제공되는 것은 아닙니다 | DefinedTyped에서`@types/package-name`설치 |
 | **컴파일 시간** | 대규모 프로젝트에서는 유형 확인이 느려질 수 있습니다 | 프로젝트 참조,`isolatedModules`또는`swc`사용 |
@@ -810,6 +811,398 @@ CMD ["node", "dist/index.js"]
 | 새로운 JavaScript 프로젝트 | 나중에 TypeScript를 추가하는 데 드는 비용이 높습니다 | 작은 스크립트 전용 일반 JS |
 | 라이브러리/npm 패키지 | 소비자는 자동 완성 및 유형 검사를 받습니다. | -- |
 **경험 법칙**: JavaScript 프로젝트에 수백 줄이 넘는 경우 TypeScript를 사용하세요.
+---
+
+## 종합 Q&A
+### Q1:`type`와`interface`의 차이점은 무엇이며 언제 사용해야 합니까?
+**답변:** 둘 다 객체 모양을 정의하지만 기능이 다릅니다.  `interface`는 선언 병합(동일한 이름 병합을 가진 여러 선언), 상속을 위한 `extends`를 지원하며 공용 API에 대한 관용적 선택입니다.  `type`는 통합 유형, 교차 유형, 매핑 유형, 조건 유형 및 템플릿 리터럴 유형 등 모든 고급 기능을 지원합니다. 모범 사례: 객체 모양 및 공용 API에는 `interface`를 사용합니다. 공용체, 유틸리티 및 복합 유형 작업에는 `type`를 사용하세요.
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Q2: 제네릭은 어떻게 작동하며 왜 중요한가요?
+**답:** 제네릭을 사용하면 유형 안전성을 유지하면서 모든 유형에서 작동하는 함수, 클래스 및 유형을 작성할 수 있습니다. `any`(유형 정보 손실) 대신 제네릭은 입력 유형과 출력 유형 간의 관계를 유지합니다. 이는 재사용 가능하고 유형이 안전한 코드의 기초입니다.
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3: 유틸리티 유형은 무엇이며, 어떤 유형을 알아야 합니까?
+**A:** TypeScript는 기존 유형을 변환하는 내장 유틸리티 유형을 제공합니다. 가장 중요한 것: `Partial<T>`(모두 선택 사항), `Required<T>`(모두 필수), `Pick<T, K>`(키 선택), `Omit<T, K>`(키 제외), `Record<K, V>`(키-값 맵), `Exclude<T, U>`(결합에서 제거), `ReturnType<T>`(함수 반환 유형 추출), `Awaited<T>`(프라미스 풀기). 이를 배우면 사용자 정의 유형 작업이 거의 필요하지 않습니다.
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4: 비동기 코드를 입력하고 유형이 안전한 방식으로 오류를 처리하려면 어떻게 해야 하나요?
+**A:** 비동기 함수는 자동으로 `Promise<T>`를 반환합니다. 여기서 T는 반환 유형입니다. Promise를 풀려면 `await`를 사용하세요. 오류 처리를 위해 TypeScript에는 유형화된 예외가 없지만 유형 가드 및 결과 유형을 만들 수 있습니다. "결과 패턴"(Rust에서 영감을 얻었음)은 컴파일 시간 오류 처리를 제공합니다.
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5: 선언 파일(.d.ts)이란 무엇이며 타사 유형을 어떻게 사용합니까?
+**A:** 선언 파일은 내장된 TypeScript 유형이 없는 JavaScript 라이브러리의 유형을 설명합니다. 여기에는 유형 정보만 포함됩니다(런타임 코드 없음). DefinedTyped:`npm install --save-dev @types/lodash`에서 커뮤니티가 관리하는 유형을 설치합니다. 자신의 라이브러리의 경우 `package.json`에`types`필드를 추가하거나 소스와 함께`.d.ts`파일을 포함하세요. 앰비언트 선언에는 `declare module`를 사용하세요.
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 유형이 안전한 이벤트 이미터 구축
+**문제 설명:** 각 이벤트 이름이 특정 페이로드 유형에 매핑되는 TypeScript에서 일반 유형 안전 이벤트 이미터를 만듭니다. 컴파일러는 컴파일 타임에 잘못된 이벤트 이름과 페이로드 유형을 포착해야 합니다.
+**1단계 - 문제 이해:**
+(1) 이벤트가 페이로드 유형으로 정의되고, (2) `emit`가 올바른 페이로드가 있는 유효한 이벤트 이름만 허용하고, (3) `on`가 올바른 유형의 핸들러가 있는 유효한 이벤트 이름만 허용하는 이벤트 시스템이 필요합니다. 이를 위해서는 이벤트 맵 인터페이스를 통한 매핑된 유형과 제네릭이 필요합니다.
+**2단계 - 접근 방식 파악:**
+-`EventMap`유형을 정의합니다:`{ [eventName: string]: payloadType }`.
+- 이벤트 이름을 제한하려면 `keyof EventMap`를 사용하세요.
+- `EventMap[K]`를 사용하여 특정 이벤트에 대한 페이로드 유형을 가져옵니다.
+- `Map<string, Function[]>`에 리스너를 저장합니다.
+**3단계 - 솔루션 구현:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**4단계 - 확인 및 최적화:**
+- 유형 안전성: 컴파일러는 컴파일 타임에 잘못된 이벤트 이름과 잘못된 페이로드 형태를 포착합니다.
+- `on`는 편리한 정리를 위해 구독 취소 기능을 반환합니다.
+- `once`는 첫 번째 호출 후 자동 구독 취소를 위해 리스너를 래핑합니다.
+- 프로덕션의 경우:`listenerCount`,`removeAllListeners`를 추가하고, 취소하려면`AbortSignal`사용을 고려하세요.
+### 문제 2: 유형이 안전한 SQL 쿼리 빌더 구현
+**문제 설명:** 열 이름과 유형이 TypeScript 인터페이스에서 파생되는 SQL 쿼리 빌더를 빌드합니다. 빌더는 컴파일 시 잘못된 열 이름과 유형 불일치를 방지해야 합니다.
+**1단계 - 문제 이해:**
+(1)`keyof T`로 제한된 열 이름, (2) 열에 따라 입력된 WHERE 절 값, (3) 쿼리 작성을 위한 연결 가능한 API가 필요합니다. 이를 위해서는`Record<string, unknown>`로 제한된 제네릭이 필요합니다.
+**2단계 - 접근 방식 파악:**
+- 열 이름 제약 조건에는 `keyof T`를 사용합니다.
+- 값 유형 제약 조건에는 `T[K]`를 사용합니다.
+- 매개변수화된 쿼리로 SQL 문자열을 작성합니다(SQL 주입 방지).
+- 연결 가능한 메서드는`this`를 반환합니다.
+**3단계 - 솔루션 구현:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**4단계 - 확인 및 최적화:**
+- SQL 주입 방지: 모든 값은 매개변수화된 쿼리(`$1`,`$2`)를 거치며 삽입되지 않습니다.
+- 유형 안전성: 열 이름과 값 유형은 컴파일 타임에 확인됩니다.
+- 확장성: 동일한 패턴에 따라`join`,`groupBy`,`having`,`insert`,`update`메서드를 추가합니다.
+- 프로덕션:`kysely`또는 `drizzle-orm`를 사용합니다. 이는 전체 SQL 적용 범위에서 이러한 유형의 안전성을 제공합니다.
+### 문제 3: 유형 안전성을 갖춘 유한 상태 머신 구현
+**문제 설명:** 컴파일 타임에 유효한 전환이 적용되는 유형이 안전한 유한 상태 머신을 만듭니다. 각 상태에는 시작/종료 작업이 있을 수 있으며 머신은 현재 상태를 추적해야 합니다.
+**1단계 - 문제 이해:**
+(1) 유형으로 정의된 상태 및 이벤트, (2) 유형 수준에서 매핑된 유효한 전환, (3) 컴파일러가 잘못된 전환을 방지하고, (4) 콜백을 통한 런타임 상태 추적이 필요합니다. 이를 위해서는 매핑된 유형과 조건부 유형이 필요합니다.
+**2단계 - 접근 방식 파악:**
+-`TransitionMap`: `{ [State]: { [Event]: NextState } }`를 정의합니다.
+- 제네릭을 사용하여 현재 상태를 기반으로 `send(event)`를 제한합니다.
+- 변수를 사용하여 런타임 시 상태를 추적합니다.
+- 상태별 진입/퇴장 콜백을 지원합니다.
+**3단계 - 솔루션 구현:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**4단계 - 확인 및 최적화:**
+- 런타임 안전: `send`는 유효하지 않은 전환을 발생시킵니다.
+- 유형 안전성:`EventsFor`유형은 컴파일 타임에 상태별로 유효한 이벤트를 추출합니다.
+- 전환 시 진입/종료 콜백이 자동으로 실행됩니다.
+- 프로덕션의 경우: `xstate`를 사용하세요. 시각적 디버깅, 계층적 상태, 가드 및 작업이 포함된 전체 상태 머신 라이브러리를 제공합니다.
 ---
 
 ## 요약

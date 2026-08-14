@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "اسکالا"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی اسکالا که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [اسکالا، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "35 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Scala"
+description: "Comprehensive reference for the Scala programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [scala, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # اسکالا
 اسکالا (زبان مقیاس پذیر) یک زبان برنامه نویسی تایپ شده و کامپایل شده است که پارادایم های برنامه نویسی شی گرا و تابعی را ترکیب می کند. Scala که توسط Martin Odersky ایجاد شد و اولین بار در سال 2004 منتشر شد، بر روی JVM اجرا می شود (همچنین Scala.js برای JavaScript و Scala Native). این برنامه برای پرداختن به پرحرفی جاوا و در عین حال حفظ قابلیت همکاری کامل جاوا طراحی شده است.
 اسکالا زبان پشت آپاچی اسپارک (چارچوب پردازش کلان داده) است و به طور گسترده در مهندسی داده، سیستم های توزیع شده و خدمات باطنی استفاده می شود. شرکت هایی مانند توییتر (اکنون X)، لینکدین، نتفلیکس و گاردین از اسکالا استفاده می کنند.
@@ -53,7 +58,7 @@ next_review: "05-08-2027"
 | **زمان کامپایل** | کندتر از جاوا، به خصوص با انواع پیچیده | استفاده از کامپایل افزایشی (Bloop، sbt) |
 | **منحنی یادگیری** | تندتر از جاوا یا پایتون | زمان سرمایه گذاری؛ بازده قابل توجه است |
 | **بازار کار کوچکتر** | نقش های کمتر از جاوا یا پایتون | قوی در مهندسی داده و نقش های پشتیبان |
-| **سبک ناهماهنگ** | تیم های مختلف Scala بسیار متفاوت می نویسند | راهنماهای سبک جامعه را دنبال کنید |
+| **سبک ناسازگار** | تیم های مختلف Scala بسیار متفاوت می نویسند | راهنماهای سبک جامعه را دنبال کنید |
 ---
 
 ## اصول نحو
@@ -114,7 +119,7 @@ implicit class StringOps(val s: String) extends AnyVal {
 
 ## نحو و الگوهای پیشرفته
 ### کلاس های نوع (از طریق Implicits)
-Scala 2 از پارامترهای ضمنی برای رمزگذاری کلاس های نوع استفاده می کند. اسکالا 3 نحو بومی`given`/`using`را معرفی می کند.
+Scala 2 از پارامترهای ضمنی برای رمزگذاری کلاس های نوع استفاده می کند. اسکالا 3 سینتکس بومی`given`/`using`را معرفی می کند.
 ```scala
 // Scala 2 style: implicit-based type classes
 trait Show[A] {
@@ -232,7 +237,7 @@ val userId = UserId(42L)  // Type-safe, no runtime overhead
 ---
 
 ## همزمانی و موازی
-### آینده و وعده ها
+### آینده ها و وعده ها
 ```scala
 import scala.concurrent.{Future, Promise}
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -405,15 +410,15 @@ lazy val root = project
 | فرمان | توضیحات |
 |---------|-------------|
 | `sbt new scala/scala3.g8`| ایجاد پروژه جدید Scala 3 از قالب |
-|  __محافظت شده_1__ | جمع آوری منابع اصلی |
+| `sbt compile`| جمع آوری منابع اصلی |
 | `sbt test`| اجرای تمام تست ها |
-|  __محافظت شده_3__ | کلاس اصلی را اجرا کنید |
+| `sbt run`| کلاس اصلی را اجرا کنید |
 | `sbt runMain com.example.App`| یک کلاس اصلی خاص را اجرا کنید |
 | `sbt console`| شروع REPL با پروژه در classpath |
-|  __محافظت شده_6__ | پاک کردن خروجی کامپایل شده |
+| `sbt clean`| پاک کردن خروجی کامپایل شده |
 | `sbt assembly`| ساخت چربی JAR (با افزونه sbt-assembly) |
 | `sbt scalafmt`| فرمت کد با Scalafmt |
-|  __محافظت شده_9__ | بررسی قالب بندی کد |
+| `sbt scalafmtCheck`| بررسی قالب بندی کد |
 | `sbt ~compile`| کامپایل مداوم (کامپایل مجدد در تغییر) |
 ### قالب‌بندی کد (scalafmt.conf.)
 ```
@@ -737,7 +742,7 @@ class OrderService(repo: OrderRepository[IO]) {
 ### ابزارهای پروفایل
 | ابزار | هدف | استفاده |
 |------|---------|-------|
-| **JMH** | میکرو بنچمارک |  پلاگین`sbt-jmh`|
+| **JMH** | میکرو بنچمارک |  افزونه`sbt-jmh`|
 | **VisualVM** | پروفایل JVM و نظارت |  دستور`jvisualvm`|
 | **نمایه ناهمگام** | پروفایل کم سربار CPU/حافظه | پیوست به در حال اجرا JVM |
 | **YourKit** | پروفایل بازرگانی | یکپارچه سازی IDE |
@@ -844,12 +849,194 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ## چه زمانی از Scala استفاده کنیم
 | سناریو | چرا اسکالا | جایگزین بهتر |
 |----------|---------|-------------------|
-| کلان داده (اسپارک) | زبان اصلی Spark | پایتون (PySpark) برای خطوط لوله ساده تر |
+| کلان داده (Spark) | زبان اصلی Spark | پایتون (PySpark) برای خطوط لوله ساده تر |
 | سیستم های توزیع شده (Akka) | چارچوب همزمانی بالغ | برو ارلنگ/اکسیر |
-| پشتیبان JVM | جایگزین جاوا مختصر | جاوا، کاتلین |
+| پشتیبان های JVM | جایگزین جاوا مختصر | جاوا، کاتلین |
 | برنامه نویسی کاربردی در JVM | بهترین ترکیب FP + JVM | کلوژور |
 | توسعه برنامه عمومی | ممکن اما پیچیده | پایتون، برو، جاوا |
 | علم داده | ممکن است اما نه اکوسیستم | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: استنتاج نوع اسکالا چگونه باعث کاهش دیگ بخار در مقایسه با جاوا می شود؟
+**A:** کامپایلر Scala انواعی را برای اعلان های`val`/ `var`، انواع بازگشت متد و توابع ناشناس استنباط می کند. این امر در بیشتر موارد نیاز به حاشیه نویسی نوع صریح را از بین می برد:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+کامپایلر همچنین پارامترهای نوع، انواع برگشتی روش‌های تک بیانی و انواع تطابق الگو را استنباط می‌کند. این باعث می‌شود کد بدون به خطر انداختن ایمنی، مختصر باشد.
+### Q2: چه زمانی باید از`case class`در مقابل`class`معمولی استفاده کنم؟
+**A:** از`case class`برای حامل های داده غیرقابل تغییر استفاده کنید - آنها `equals`، `hashCode`، `toString`،`copy`و پشتیبانی از تطبیق الگو را به صورت خودکار ارائه می کنند:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+قانون سرانگشتی: اگر کلاس شما در درجه اول داده است، از`case class`استفاده کنید. اگر حالت تغییرپذیر یا رفتار پیچیده دارد، از`class`معمولی استفاده کنید.
+### Q3: چگونه خطاها را به صورت اصطلاحی در Scala مدیریت کنم؟
+**A:** Scala برگرداندن انواع مانند `Option`، `Either`، و`Try`را به استثنای پرتابی ترجیح می دهد:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4: تفاوت بین`trait`و`abstract class`چیست؟
+**A:** صفات از وراثت چندگانه پشتیبانی می کنند و می توانند پارامترهای نوع و روش های مشخصی داشته باشند. کلاس های انتزاعی می توانند پارامترهای سازنده داشته باشند اما فقط از وراثت منفرد پشتیبانی می کنند:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5: چگونه می توانم کد Scala عملکردی را در JVM بنویسم؟
+**A:** شیوه های کلیدی:
+- از`case class`و داده های غیرقابل تغییر برای جلوگیری از همگام سازی استفاده کنید
+- `Vector`،`Map`(غیرقابل تغییر) را برای اشتراک ساختاری ترجیح دهید
+- از حاشیه نویسی`@tailrec`برای اطمینان از بهینه سازی tail-call استفاده کنید
+- از بوکس بیش از حد خودداری کنید - از `Int`،`Double`اولیه استفاده کنید
+- از`lazy val`برای محاسبات گران قیمت استفاده کنید
+-`Stream`/`LazyList`را برای دنباله های بزرگ ترجیح دهید
+- نمایه با JMH - انتزاعات اسکالا باید به بایت کد کارآمد کامپایل شوند
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: پیاده سازی یک ارزیاب بیان ایمن نوع
+**مرحله 1: مشکل را درک کنید**
+ما باید عبارات ریاضی را با متغیرها، پشتیبانی از جمع، ضرب و جستجوی متغیر ارزیابی کنیم.
+**مرحله 2: رویکرد را شناسایی کنید**
+از انواع داده‌های جبری (صفحه مهر و موم شده + کلاس‌های موردی) برای مدل‌سازی درخت بیان استفاده کنید، سپس از تطبیق الگو برای ارزیابی استفاده کنید.
+**مرحله 3: پیاده سازی **```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+** مرحله 4: تأیید و تمدید **
+موارد `Div`، `Pow`،`Neg`را اضافه کنید. ویژگی مهر و موم شده تضمین می کند که کامپایلر در مورد تطابقات غیر جامع هشدار می دهد.
+### مشکل 2: ساخت یک DSL ساده برای تولید HTML
+**مرحله 1: مشکل را درک کنید**
+یک DSL ایمن ایجاد کنید که رشته های HTML را با استفاده از نحو اسکالا تولید می کند.
+**مرحله 2: رویکرد را شناسایی کنید**
+از کلاس های case برای عناصر HTML و تبدیل های ضمنی برای یک نحو طبیعی استفاده کنید.
+**مرحله 3: پیاده سازی **```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**مرحله 4: تایید **
+DSL از نظر نوع ایمن است - شما نمی توانید به طور تصادفی محتوای غیر HTML را ارسال کنید. تطبیق الگو در`HtmlNode`رندر جامع را تضمین می کند.
+### مشکل 3: شمارش کلمات همزمان با Akka Streams
+**مرحله 1: مشکل را درک کنید**
+بسامدهای کلمه را در چندین فایل بزرگ به طور همزمان بشمارید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از مجموعه‌های موازی Scala یا Akka Streams برای پردازش همزمان استفاده کنید، سپس نتایج را ادغام کنید.
+**مرحله 3: پیاده سازی **```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**مرحله 4: بهینه سازی**
+برای مجموعه داده های بسیار بزرگ، از Akka Streams با فشار برگشتی استفاده کنید:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## خلاصه

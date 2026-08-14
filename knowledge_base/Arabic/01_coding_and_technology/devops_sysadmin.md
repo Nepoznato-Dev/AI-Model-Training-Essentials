@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "DevOps وإدارة النظام"
-الوصف: "SSH، systemd، التسجيل، المراقبة، النسخ الاحتياطية، Docker، CI/CD"
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "DevOps and System Administration"
+description: "SSH, systemd, logging, monitoring, backups, Docker, CI/CD"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [مطورو البرامج، مسؤول النظام، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "19 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [devops, sysadmin, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "19 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps وإدارة النظام
 دليل عملي لإدارة الخوادم، وأتمتة العمليات، والحفاظ على بنية تحتية موثوقة.
 ---
@@ -92,7 +97,7 @@ systemctl daemon-reload          # Reload unit files after editing
 ```
 
 ### إنشاء وحدة خدمة systemd
-إنشاء __محمي_0__ :
+إنشاء`/etc/systemd/system/myapp.service`:
 ```ini
 [Unit]
 Description=My Python App
@@ -144,7 +149,7 @@ logger.info("user_login", user_id=123, ip="192.168.1.1")
 |-------|---------|
 | **التصحيح** | معلومات تشخيصية مفصلة |
 | **معلومات** | الأحداث العامة (بدء، توقف، المعاملات العادية) |
-| **تحذير** | غير متوقع ولكنه ليس قاتلاً |
+| **تحذير** | غير متوقع ولكنه ليس قاتلا |
 | **خطأ** | خطأ يمنع عملية معينة |
 | **قاتل/حرج** | اغلاق النظام |
 ### تجميع السجل
@@ -152,7 +157,7 @@ logger.info("user_login", user_id=123, ip="192.168.1.1")
 - **Loki + Grafana** (بديل خفيف الوزن).
 - ** Datadog، Splunk، Sumo Logic ** (SaaS).
 ### سجل التدوير (`logrotate`)
-منع السجلات من ملء الأقراص. تكوين __محمي_0__ :
+منع السجلات من ملء الأقراص. تكوين`/etc/logrotate.d/myapp`:
 ```
 /var/log/myapp/*.log {
     daily
@@ -183,7 +188,7 @@ logger.info("user_login", user_id=123, ip="192.168.1.1")
 - **السحابة الأصلية**: AWS CloudWatch، وAzure Monitor، ومراقبة GCP.
 ### مراقبة وقت التشغيل
 - Pingdom، صفحة الحالة، وقت تشغيل أفضل، وقت التشغيل Kuma (مستضاف ذاتيًا).
-- فحوصات السلامة: اكشف عن نقطة نهاية`/health`التي تُرجع 200 إذا كانت الخدمة سليمة.
+- فحوصات الصحة: ​​كشف نقطة نهاية`/health`التي تُرجع 200 إذا كانت الخدمة سليمة.
 ---
 
 ## استراتيجيات النسخ الاحتياطي
@@ -298,14 +303,14 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 ## عامل ميناء في الإنتاج
 ### أفضل الممارسات
-- استخدم علامات صور محددة (`python:3.12-slim`) وليس`latest`.
+- استخدم علامات صور محددة (`python:3.12-slim`) وليس `latest`.
 - تشغيل الحاويات كمستخدم غير جذر.
-- مسح الصور بحثًا عن نقاط الضعف (`docker scan`,`trivy`).
+- مسح الصور بحثًا عن نقاط الضعف (`docker scan`، `trivy`).
 - تعيين حدود الموارد (`--memory`,`--cpus`).
 - استخدم الأسرار (عبر أسرار Docker أو البيئة بعناية).
 - إبقاء الصور صغيرة: بناءات متعددة المراحل، قاعدة جبال الألب.
 ### Docker Compose قيد الإنتاج
-تعيين حدود الموارد في`docker-compose.yml`:
+تعيين حدود الموارد في `docker-compose.yml`:
 ```yaml
 services:
   app:
@@ -417,7 +422,7 @@ resource "aws_instance" "web" {
 ### أفضل الممارسات
 - استخدام الوحدات والأدوار لإعادة الاستخدام.
 - تخزين الحالة عن بعد (S3، Terraform Cloud).
-- استخدم المتغيرات والأسرار (`AWS_SECRET_ACCESS_KEY`عبر البيئة، وليس ضمن التعليمات البرمجية).
+- استخدم المتغيرات والأسرار (`AWS_SECRET_ACCESS_KEY` عبر البيئة، وليس ضمن التعليمات البرمجية).
 - التحكم في الإصدار رمز IAC الخاص بك.
 ---
 

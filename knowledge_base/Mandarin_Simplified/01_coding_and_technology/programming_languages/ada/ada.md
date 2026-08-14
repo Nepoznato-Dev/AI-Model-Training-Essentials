@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #艾达
 Ada 是一种静态类型、编译型编程语言，专为安全关键型和高完整性系统而设计。 Ada 最初是在 20 世纪 80 年代根据与美国国防部（以 Ada Lovelace 的名字命名，被认为是第一位计算机程序员）签订的合同开发的，强调可靠性、可维护性和正确性。它的目的是用一种明确的语言取代当时国防部使用的数百种编程语言。
 Ada 用于航空（电传飞行系统）、太空（ESA 和 NASA）、国防（导弹制导、雷达）、铁路运输和医疗设备 - 任何软件故障可能导致生命损失的地方。
@@ -852,16 +853,157 @@ end Main;
 ---
 
 ## 何时使用 Ada
-|场景 |为什么选择艾达 |更好的选择|
+|场景|为什么选择艾达 |更好的选择|
 |----------|---------|--------------------|
 |安全关键系统 |为此而设计；形式验证支持| — |
 |航空/航天 |经过认证的编译器； DO-178C 合规性 | — |
 |防御系统|国防部遗产；安全功能| — |
 |铁路/医疗器械|高诚信要求| — |
-|通用应用开发|对非关键系统的杀伤力过大| Python、Java、Go |
+|通用应用开发 |对非关键系统的杀伤力过大| Python、Java、Go |
 |网页开发|不适合| JavaScript、Python |
 |数据科学/机器学习 |不是生态系统| Python、R |
 ---
 
+## 综合问答
+### Q1：Ada 的类型系统如何防止编译时出现错误？
+**答：** Ada 的类型系统是所有语言中最严格的类型系统之一。它捕获其他语言遗漏的错误：
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2：Ada 的任务模型是什么？它与其他并发模型相比如何？
+**A:** Ada 具有与受保护对象和任务的内置并发性：
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3：如何在 Ada 中使用泛型？
+**A:** Ada 泛型是显式且类型安全的：
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4：Ada 为何适合安全关键系统？
+**答：** Ada 提供：
+- 用于形式验证的 SPARK 子集（正确性的数学证明）
+- 基于契约的编程（前置/后置条件、类型不变量）
+- SPARK 中没有隐式内存分配
+- 确定性任务分配和调度
+- 用于高完整性实时系统的 Ravenscar 配置文件
+- 工具链资格（航空电子设备 DO-178C）
+### Q5：如何构建 Ada 项目？
+**A:** 将 GPRBuild 与 GPR 项目文件结合使用：
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：实现类型安全队列
+**第 1 步：了解问题**
+创建一个有界、线程安全的队列，并进行编译时大小检查。
+**第 2 步：确定方法**
+使用具有有限缓冲区的受保护对象。
+**步骤 3：实施**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**第 4 步：验证**
+受保护对象保证互斥。进入屏障可防止上溢/下溢。
+### 问题 2：基于合约的验证
+**第 1 步：了解问题**
+通过正式合同实现平方根函数。
+**第 2 步：确定方法**
+使用 Ada 2012 合约（前置/后置条件）。
+**步骤 3：实施**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**第 4 步：验证**
+运行时检查（断言）捕获违规行为。在 SPARK 中，这些成为证明义务。
+---
+
 ＃＃ 概括
-Ada 是一种为正确性而构建的语言。 Its strict type system, built-in concurrency, and formal verification support make it the choice for systems where failure is not acceptable.虽然与主流语言相比，Ada 的社区规模较小，但 Ada 在航空、国防、太空和其他安全关键领域仍然至关重要。 For these applications, Ada's rigorous approach to software engineering is not a limitation — it is the point.
+Ada 是一种为正确性而构建的语言。其严格的类型系统、内置并发性和形式验证支持使其成为不可接受故障的系统的选择。虽然与主流语言相比，Ada 的社区规模较小，但 Ada 在航空、国防、太空和其他安全关键领域仍然至关重要。对于这些应用程序，Ada 严格的软件工程方法不是限制，而是重点。

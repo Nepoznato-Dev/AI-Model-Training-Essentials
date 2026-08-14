@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Rubin
 Ruby ist eine dynamische, interpretierte, objektorientierte Programmiersprache, die von Yukihiro „Matz“ Matsumoto entwickelt und erstmals 1995 in Japan veröffentlicht wurde. Ruby wurde mit dem Fokus auf die Zufriedenheit von Programmierern entwickelt – seine Syntax ist elegant und natürlich und liest sich fast wie Englisch. Alles in Ruby ist ein Objekt, einschließlich primitiver Typen wie Ganzzahlen und Boolesche Werte. Ruby ist vor allem für das Ruby on Rails-Webframework bekannt, das die Webentwicklung revolutionierte, indem es Konventionen gegenüber Konfiguration und Rapid Prototyping populär machte.
 Über Rails hinaus wird Ruby für Skripterstellung, Automatisierung, DevOps-Tools (Chef, Puppet) und als Allzwecksprache verwendet. Seine ausdrucksstarke Syntax und leistungsstarke Metaprogrammierungsfunktionen machen das Schreiben zum Vergnügen.
@@ -822,5 +823,323 @@ fly deploy
 | Mobile Apps | Nicht geeignet | Swift, Kotlin, Flutter |
 ---
 
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen`proc`,`lambda`und`block`in Ruby?
+**A:** Alle drei sind Schließungen, unterscheiden sich jedoch im Verhalten. Ein`block`ist ein anonymer Codeblock, der mit`do...end`oder`{}`an eine Methode übergeben wird. Ein`proc`ist ein als Objekt gespeicherter Block – er überprüft nicht die Anzahl der Argumente und`return`verlässt die einschließende Methode. Ein`lambda`ist wie ein Prozess, überprüft aber die Anzahl der Argumente und`return`verlässt nur das Lambda. Verwenden Sie Blöcke für einmalige Rückrufe, Prozesse für wiederverwendbare Snippets und Lambdas, wenn Sie methodenähnliches Verhalten benötigen.
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### F2: Wie funktionieren Ruby Gems und Bundler?
+**A:** Gems sind Rubys Paketsystem – wiederverwendbare Bibliotheken, die über RubyGems.org vertrieben werden. Ein`Gemfile`deklariert Abhängigkeiten; `bundle install`löst Versionen auf und erstellt zur Reproduzierbarkeit einen `Gemfile.lock`. `bundle exec`führt Befehle im Gem-Kontext aus. Verwenden Sie`gem 'name', '~> 2.0'`für kompatible Versionseinschränkungen. Festschreiben Sie immer`Gemfile.lock`für Anwendungen, nicht jedoch für Bibliotheken.
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### F3: Welche Symboltypen gibt es in Ruby und warum sind sie wichtig?
+**A:** Symbole (`:name`) sind unveränderliche, interne Zeichenfolgen – jedes eindeutige Symbol existiert nur einmal im Speicher. Sie eignen sich ideal für Hash-Schlüssel, Methodennamen und Bezeichner. Ruby verfügt auch über `Symbol`-Objekte, die häufig in der Metaprogrammierung verwendet werden (`send`, `define_method`). Verwenden Sie Symbole für feste Bezeichner. Verwenden Sie Zeichenfolgen, wenn Sie Inhalte bearbeiten müssen.
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### F4: Wie funktioniert Rubys Metaprogrammierung und wann sollte ich sie verwenden?
+**A:** Ruby ermöglicht es Code, Code zur Laufzeit zu definieren:`define_method`erstellt Methoden dynamisch,`method_missing`fängt undefinierte Methodenaufrufe ab,`send`ruft private Methoden auf und`class_eval`/ Metaprogrammierung ist leistungsstark, macht den Code jedoch schwieriger zu verstehen – verwenden Sie sie für DSLs und Framework-Magie, nicht für alltägliche Logik.
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### F5: Wie geht man in Ruby am besten mit Fehlern um?
+**A:** Ruby verwendet Ausnahmen zur Fehlerbehandlung. Definieren Sie benutzerdefinierte Ausnahmeklassen, die von`StandardError`erben (nicht`Exception`– das fängt Fehler auf Systemebene ab). Verwenden Sie`begin/rescue/else/ensure`für eine strukturierte Handhabung. Lösen Sie spezifische Ausnahmen aus, nicht generische`RuntimeError`. Verwenden Sie`rescue`als Modifikator für einfache Einzeiler.
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Erstellen Sie eine DSL für Konfigurationsdateien
+**Problemstellung:** Erstellen Sie eine Ruby-DSL, die die Definition von Serverkonfigurationen in einer lesbaren, deklarativen Syntax ermöglicht. Der DSL sollte verschachtelte Blöcke, Validierung und Serialisierung in JSON unterstützen.
+**Schritt 1 – Das Problem verstehen:**
+Wir benötigen: (1) eine saubere DSL-Syntax mit Blöcken und Methodenaufrufen, (2) Datenerfassung über`instance_eval`oder explizite Methoden, (3) Validierung erforderlicher Felder, (4) JSON-Serialisierung. Rubys Metaprogrammierung macht DSLs natürlich.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+– Verwenden Sie`instance_eval`mit einer Builder-Klasse, um DSL-Anrufe zu erfassen.
+- Konfiguration in Instanzvariablen speichern.
+- Validieren Sie erforderliche Felder vor der Serialisierung.
+- Verwenden Sie`to_h`und`JSON.generate`für die Ausgabe.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Das DSL ist lesbar und deklarativ – auch Nicht-Programmierer können es verstehen.
+– Die Validierung erkennt fehlende erforderliche Felder zur Erstellungszeit.
+–`instance_eval`bietet die saubere Blocksyntax, beschränkt jedoch`self`– für komplexere DSLs verwenden Sie`BasicObject`als Superklasse des Builders.
+- Produktion: Erwägen Sie `dry-configurable`- oder `configurate`-Gems für produktionstaugliche Konfigurations-DSLs.
+### Problem 2: Implementieren Sie eine Memoization-Bibliothek
+**Problemstellung:** Erstellen Sie ein Memoisierungsmodul, das in jede Klasse eingefügt werden kann, um Methodenergebnisse zwischenzuspeichern. Unterstützt TTL (Time-to-Live), Cache-Größenbeschränkungen und benutzerdefinierte Cache-Schlüssel.
+**Schritt 1 – Das Problem verstehen:**
+Wir benötigen: (1) ein Modul, das eine `memoize`-Klassenmethode hinzufügt, (2) die Methode umschließt Zielmethoden mit Caching-Logik, (3) Unterstützung für TTL-Ablauf, (4) LRU-Räumung, wenn der Cache voll ist. Rubys`Module#prepend`und`define_method`sind hierfür ideal.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Verwenden Sie`Module.new`mit `define_method`, um einen Wrapper zu erstellen.
+- Speichern Sie den Cache in einem Hash mit Zeitstempeln für TTL.
+- Verwenden Sie `prepend`, um die Caching-Ebene vor der ursprünglichen Methode einzufügen.
+- Unterstützt konfigurierbare Optionen: `ttl`, `max_size`, `key`.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Thread-Sicherheit:`Mutex`schützt Cache-Lese-/Schreibvorgänge; Die Berechnung erfolgt außerhalb der Sperre.
+- TTL: Abgelaufene Einträge werden beim Zugriff langsam bereinigt.
+- LRU-Räumung: Wenn der Cache`max_size`überschreitet, wird der älteste Eintrag (nach Zeitstempel) entfernt.
+– Benutzerdefinierte Schlüssel: Das `key`-Lambda ermöglicht eine differenzierte Kontrolle der Cache-Identität.
+- Produktion: Verwenden Sie das Juwel`memoist`für einfache Fälle oder die Redis-gestützte Memoisierung für verteiltes Caching.
+---
+
 ## Zusammenfassung
-Ruby ist eine Sprache, die die Zufriedenheit und Ausdruckskraft der Entwickler in den Vordergrund stellt. Seine Syntax gehört zu den am besten lesbaren Sprachen aller Sprachen und Ruby on Rails bleibt eines der produktivsten Web-Frameworks, die jemals erstellt wurden. Obwohl die Beliebtheit von Ruby im Vergleich zu Python und JavaScript zurückgegangen ist, bleibt es eine leistungsstarke, unterhaltsame Sprache für Webentwicklung, Skripterstellung und Automatisierung. Wenn Sie Wert auf eleganten Code und eine schnelle Entwicklung legen, lohnt es sich, Ruby zu erlernen.
+Ruby ist eine Sprache, die die Zufriedenheit und Ausdruckskraft der Entwickler in den Vordergrund stellt. Seine Syntax gehört zu den am besten lesbaren aller Sprachen und Ruby on Rails bleibt eines der produktivsten Web-Frameworks, die jemals erstellt wurden. Obwohl die Beliebtheit von Ruby im Vergleich zu Python und JavaScript zurückgegangen ist, bleibt es eine leistungsstarke, unterhaltsame Sprache für Webentwicklung, Skripterstellung und Automatisierung. Wenn Sie Wert auf eleganten Code und eine schnelle Entwicklung legen, lohnt es sich, Ruby zu erlernen.

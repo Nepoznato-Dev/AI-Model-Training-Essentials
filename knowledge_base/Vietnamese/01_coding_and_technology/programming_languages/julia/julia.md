@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Julia
-Julia là ngôn ngữ lập trình cấp cao, hiệu suất cao được thiết kế cho tính toán khoa học và kỹ thuật. Được phát hành lần đầu tiên vào năm 2012 (1.0 vào năm 2018), Julia được tạo ra để giải quyết "vấn đề hai ngôn ngữ" — nơi các nhà khoa học tạo nguyên mẫu bằng Python/R nhưng viết lại bằng C/C++/Fortran để đạt hiệu suất sản xuất. Julia đặt mục tiêu dễ dàng như Python nhưng nhanh như C.
+Julia là ngôn ngữ lập trình cấp cao, hiệu suất cao được thiết kế cho tính toán khoa học và kỹ thuật. Được phát hành lần đầu tiên vào năm 2012 (1.0 vào năm 2018), Julia được tạo ra để giải quyết "vấn đề hai ngôn ngữ" — nơi các nhà khoa học tạo nguyên mẫu bằng Python/R nhưng viết lại bằng C/C++/Fortran để đạt được hiệu suất sản xuất. Julia đặt mục tiêu dễ dàng như Python nhưng nhanh như C.
 Julia sử dụng tính năng biên dịch đúng lúc (JIT) thông qua LLVM để đạt được hiệu suất gần C trong khi vẫn duy trì cảm giác tương tác, năng động. Nó có sự hỗ trợ hạng nhất cho tính toán song song, xử lý phân tán và một hệ thống loại phức tạp với nhiều công văn.
 ---
 
@@ -875,6 +876,191 @@ julia --project=. -e '
 | Phân tích dữ liệu | Khả thi; DataFrames.jl tốt | Python (Gấu trúc), R |
 | Phát triển web | Không phù hợp | JavaScript, Python |
 | Phát triển ứng dụng chung | Không phải trường hợp sử dụng chính | Python, Go, Java |
+---
+
+## Hỏi đáp tổng hợp
+### Câu hỏi 1: Gửi nhiều lần khác với gửi một lần trong ngôn ngữ OOP như thế nào?
+**A:** Trong công văn đơn (Java, Python), phương thức được chọn dựa trên loại đối số đầu tiên (đối tượng). Trong Julia, phương thức được chọn dựa trên các loại đối số TẤT CẢ:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+Điều này cho phép các hoạt động đối xứng và loại bỏ các mẫu soạn sẵn.
+### Câu 2: Làm cách nào để đạt được hiệu suất giống C trong Julia?
+**Đ:** Các phương pháp chính:
+- Sử dụng các hàm ổn định kiểu (trả về các kiểu nhất quán)
+- Sử dụng các kiểu cụ thể trong cấu trúc, không phải kiểu trừu tượng
+- Tránh các biến toàn cục (hoặc biến chúng thành`const`)
+- Sử dụng`@inbounds`để bỏ qua việc kiểm tra giới hạn (khi an toàn)
+- Phân bổ trước mảng thay vì phát triển chúng
+- Sử dụng`@simd`cho các vòng lặp có thể vector hóa
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Câu 3: Sự khác biệt giữa`Array`,`Tuple`và`NamedTuple`là gì?
+**A:** Mỗi loại phục vụ một mục đích khác nhau:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4: Làm cách nào để xử lý các lỗi và ngoại lệ trong Julia?
+**A:** Sử dụng`try/catch`và các loại ngoại lệ tùy chỉnh:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Câu 5: Làm cách nào để sử dụng hệ sinh thái gói của Julia một cách hiệu quả?
+**A:** Sử dụng trình quản lý gói (Pkg) và môi trường tích hợp sẵn:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Bài toán 1: Thực hiện hàm tích phân số
+**Bước 1: Tìm hiểu vấn đề**
+Tính tích phân xác định của hàm số bằng quy tắc Simpson.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng nhiều hàm điều phối và hàm bậc cao hơn của Julia. Chấp nhận bất kỳ chức năng có thể gọi được.
+**Bước 3: Thực hiện**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**Bước 4: Tối ưu hóa**
+Thêm`@inbounds`và nhập chú thích về hiệu suất. Điểm chuẩn với`@btime`.
+### Bài toán 2: Xây dựng mô phỏng Monte Carlo song song
+**Bước 1: Tìm hiểu vấn đề**
+Ước tính số pi bằng cách lấy mẫu Monte Carlo, song song trên tất cả các lõi CPU.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`Threads.@threads`để song song bộ nhớ dùng chung.
+**Bước 3: Thực hiện**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**Bước 4: Xác minh**
+So sánh với`Float64(\pi)`. Tăng số lượng mẫu để có độ chính xác cao hơn.
+### Vấn đề 3: Tạo một kiểu mảng tùy chỉnh với Broadcasting
+**Bước 1: Tìm hiểu vấn đề**
+Tạo loại`DiagonalMatrix`chỉ lưu trữ các phần tử đường chéo nhưng hỗ trợ các hoạt động mảng tiêu chuẩn.
+**Bước 2: Xác định phương pháp tiếp cận**
+Phân loại`AbstractMatrix`và triển khai các phương thức được yêu cầu.
+**Bước 3: Thực hiện**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**Bước 4: Gia hạn**
+Thêm`setindex!`, tối ưu hóa phép nhân ma trận và phương pháp `show`.
 ---
 
 ## Bản tóm tắt

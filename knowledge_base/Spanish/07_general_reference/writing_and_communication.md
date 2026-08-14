@@ -1,41 +1,46 @@
 ---
-# Metadatos
-título: "Fundamentos de escritura y comunicación"
-descripción: "Principio piramidal, presentaciones, persuasión, redacción comercial"
-categoría: "Referencia general"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Writing and Communication Fundamentals"
+description: "Pyramid principle, presentations, persuasion, business writing"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de referencia general"
+reviewed_by: "General Reference Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-etiquetas: [escritura, comunicación, referencia-general]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "7 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [writing, communication, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fundamentos de escritura y comunicación
-La escritura y la comunicación son las habilidades necesarias para transmitir ideas de forma clara y eficaz, ya sea a través de correos electrónicos, informes, documentación, presentaciones o conversaciones. La mayor parte del trabajo de conocimiento es fundamentalmente trabajo de comunicación: es necesario explicar su pensamiento, persuadir a otros, documentar decisiones, redactar especificaciones, presentar hallazgos y colaborar entre equipos. La brecha entre lo que usted quiere decir y lo que alguien entiende es donde se originan la mayoría de los problemas, y una mejor comunicación reduce esa brecha.
+La escritura y la comunicación son las habilidades necesarias para transmitir ideas de forma eficaz, ya sea a través de correos electrónicos, informes, documentación, presentaciones o conversaciones. La mayor parte del trabajo de conocimiento es fundamentalmente trabajo de comunicación: los profesionales necesitan explicar su pensamiento, persuadir a otros, documentar decisiones, redactar especificaciones, presentar hallazgos y colaborar entre equipos. La brecha entre lo que se quiere decir y lo que se entiende es donde se originan la mayoría de los problemas, y una mejor comunicación reduce esa brecha.
 ---
 
 ## Principios de una escritura clara
@@ -100,7 +105,7 @@ La escritura y la comunicación son las habilidades necesarias para transmitir i
 | **Situación** | El estado actual | "Nuestra aplicación atiende 10.000 solicitudes por segundo" |
 | **Complicación** | El problema o cambio | "El tráfico crece un 30% mensual" |
 | **Pregunta** | ¿Qué debemos hacer? | "¿Cómo manejamos el tráfico 10 veces mayor?" |
-| **Respuesta** | La recomendación | "Migrar a una arquitectura de microservicios con autoescalado" |
+| **Respuesta** | La recomendación | "Migrar a una arquitectura de microservicios con escalado automático" |
 ---
 
 ## Presentaciones
@@ -160,4 +165,4 @@ La escritura y la comunicación son las habilidades necesarias para transmitir i
 ---
 
 ## Resumen
-La escritura y la comunicación claras no se trata de ser inteligente, sino de ser comprendido. Comience con el punto principal (principio piramidal). Utilice voz activa, lenguaje concreto y oraciones cortas. Estructurar la información para que el lector pueda encontrar lo que necesita. La documentación técnica debe poder escanearse y basarse en ejemplos. La redacción comercial debe comenzar con la recomendación. Las presentaciones deben contar una historia con una idea por diapositiva. La persuasión combina lógica (logos), emoción (pathos) y credibilidad (ethos). La conciencia intercultural evita malentendidos en equipos globales. La habilidad fundamental es la conciencia de la audiencia: saber para quién estás escribiendo, qué necesitan saber y qué formato les ayudará a entenderlo. Cada minuto que invierte en una comunicación más clara ahorra múltiplos de ese tiempo en una menor confusión, menos malentendidos y una toma de decisiones más rápida.
+La escritura y la comunicación claras se tratan de ser comprendido. Comience con el punto principal (principio piramidal). Utilice voz activa, lenguaje concreto y oraciones cortas. Estructurar la información para que el lector pueda encontrar lo que necesita. La documentación técnica debe poder escanearse y basarse en ejemplos. La redacción comercial debe comenzar con la recomendación. Las presentaciones deben presentar una idea por diapositiva. La persuasión combina lógica (logos), evidencia (pathos) y credibilidad (ethos). La conciencia intercultural evita malentendidos en equipos globales. La habilidad fundamental es la conciencia de la audiencia: saber quién es el lector, qué necesita saber y qué formato respaldará su comprensión. La inversión en una comunicación más clara produce retornos en forma de menor confusión, menos malentendidos y una toma de decisiones más rápida.

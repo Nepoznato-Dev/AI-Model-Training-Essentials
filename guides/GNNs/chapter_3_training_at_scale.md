@@ -753,7 +753,7 @@ from model import ScalableGNN
 class GNNHandler(BaseHandler):
     def initialize(self, context):
         self.model = ScalableGNN(...)
-        self.model.load_state_dict(torch.load('model.pt'))
+        self.model.load_state_dict(torch.load('model.pt', weights_only=True))
         self.model.eval()
     
     def preprocess(self, data):
@@ -804,7 +804,7 @@ class OptimizedInference:
     def __init__(self, model_path):
         # Load model
         self.model = ScalableGNN(...)
-        self.model.load_state_dict(torch.load(model_path))
+        self.model.load_state_dict(torch.load(model_path, weights_only=True))
         self.model.eval()
         
         # Compile for faster inference (PyTorch 2.0+)

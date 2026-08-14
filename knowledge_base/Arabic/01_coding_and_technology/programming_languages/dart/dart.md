@@ -1,42 +1,47 @@
 ---
-# البيانات الوصفية
-العنوان: "دارت"
-الوصف: "مرجع شامل للغة برمجة Dart يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Dart"
+description: "Comprehensive reference for the Dart programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [السهم، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "40 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [dart, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "40 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # دارت
 Dart هي لغة برمجة مُحسّنة للعملاء تم تطويرها بواسطة Google، وتم إصدارها لأول مرة في عام 2013. بينما تم وضع Dart في البداية كبديل محتمل لجافا سكريبت لمتصفحات الويب، فقد وجدت غرضها الأساسي كلغة وراء **Flutter** - مجموعة أدوات واجهة المستخدم عبر الأنظمة الأساسية من Google لإنشاء تطبيقات الهاتف المحمول والويب وسطح المكتب والتطبيقات المدمجة من قاعدة تعليمات برمجية واحدة.
-تجمع Dart بين أفضل ميزات اللغات الحديثة: فهي موجهة للكائنات، ولديها كتابة اختيارية (سلامة خالية من الصوت منذ Dart 3)، وتدعم البرمجة غير المتزامنة مع`async`/ `await`، وتجميع كود الجهاز الأصلي (للجوال/سطح المكتب) وJavaScript (للويب).
+يجمع Dart بين أفضل ميزات اللغات الحديثة: فهو موجه للكائنات، ولديه كتابة اختيارية (سلامة خالية من الصوت منذ Dart 3)، ويدعم البرمجة غير المتزامنة مع`async`/ `await`، ويجمع إلى كل من كود الجهاز الأصلي (للجوال/سطح المكتب) وJavaScript (للويب).
 ---
 
 ## لماذا تعتبر دارت مهمة؟
@@ -44,7 +49,7 @@ Dart هي لغة برمجة مُحسّنة للعملاء تم تطويرها ب
 - **نظام أساسي مشترك**: قاعدة تعليمات برمجية واحدة لأنظمة iOS وAndroid والويب وWindows وmacOS وLinux والأجهزة المدمجة.
 - **إنتاجي**: التحديث السريع ومكتبة الأدوات الغنية والبنية التعبيرية تجعل تطوير واجهة المستخدم سريعًا.
 - **سلامة الصوت الفارغة**: تعمل السلامة الفارغة في وقت الترجمة على إزالة الأخطاء المرجعية الفارغة.
-- **الأداء**: يتم التجميع إلى رمز ARM الأصلي للجوال؛ لا حاجة للجسر.
+- **الأداء**: يتم التجميع إلى كود ARM الأصلي للجوال؛ لا حاجة للجسر.
 - **النظام البيئي المتنامي**: يتوسع النظام البيئي لحزمة Flutter بسرعة.
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
@@ -939,12 +944,12 @@ FutureBuilder<List<Item>>(
 ### أهداف نشر الرفرفة
 | منصة | أمر البناء | الإخراج |
 |----------|--------------|--------|
-| **أندرويد** |  __محمي_0__ / __محمي_1__ | APK / AAB لمتجر Play |
-| **iOS** |  __محمي_2__ | IPA لمتجر التطبيقات |
-| **الويب** |  __محمي_3__ | HTML/JS/CSS ثابت |
-| **ويندوز** |  __محمي_4__ | MSIX أو exe مستقل |
-| **ماك** |  __محمي_5__ | حزمة .app |
-| **لينكس** |  __محمي_6__ | ثنائي + الأصول |
+| **أندرويد** | `flutter build apk`/`flutter build appbundle`| APK / AAB لمتجر Play |
+| **iOS** | `flutter build ipa`| IPA لمتجر التطبيقات |
+| **الويب** | `flutter build web`| HTML/JS/CSS ثابت |
+| **ويندوز** | `flutter build windows`| MSIX أو exe مستقل |
+| **ماك** | `flutter build macos`| حزمة .app |
+| **لينكس** | `flutter build linux`| ثنائي + أصول |
 ```bash
 # Build commands
 flutter build apk --release                    # Android APK
@@ -974,12 +979,177 @@ flutter build apk --release --dart-define=ENV=staging
 | السيناريو | لماذا دارت (الرفرفة) | البديل الأفضل |
 |----------|-------------------|---|
 | تطبيقات الهاتف المحمول عبر الأنظمة الأساسية | الرفرفة ممتازة | React Native، Swift/Kotlin الأصلي |
-| سطح المكتب عبر الأنظمة الأساسية | الرفرفة تدعمه | الإلكترون، C#، أفالونيا |
+| سطح المكتب عبر منصة | الرفرفة تدعمه | الإلكترون، C#، أفالونيا |
 | تطبيقات الويب | شبكة الرفرفة موجودة | React وVue وAngular لتطبيقات الويب الأكثر ثراء |
 | واجهات المستخدم المضمنة | رفرفة للمضمنة | ج، LVGL |
 | تطوير الواجهة الخلفية | ليست حالة الاستخدام الأساسية | اذهب، Node.js، بايثون |
 | علم البيانات / تعلم الآلة | غير مناسب | بايثون، ر |
-| برمجة الأنظمة | غير مناسب | C، C++، الصدأ |
+| برمجة النظم | غير مناسب | C، C++، الصدأ |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: كيف يعمل نظام الأمان الفارغ في Dart؟
+**ج:** يتمتع Dart 2.12+ بسلامة الصوت. المتغيرات غير قابلة للإلغاء بشكل افتراضي؛ استخدم`?`للسماح بالقيمة الخالية:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### السؤال الثاني: ما الفرق بين`Future`و`Stream`؟
+**A:** يمثل`Future`نتيجة واحدة غير متزامنة؛  يمثل`Stream`سلسلة من الأحداث غير المتزامنة:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### س3: كيف يمكنني إدارة الحالة في تطبيق Flutter؟
+**أ:** طرق متعددة حسب التعقيد:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### س4: كيف تعمل طرق الامتداد في دارت؟
+**أ:** تضيف الإضافات وظائف إلى الأنواع الموجودة دون وراثة:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### س5: كيف أكتب كود Dart/Flutter الفاعل؟
+**أ:** الممارسات الأساسية:
+- استخدم منشئات`const`حيثما أمكن ذلك
+- تجنب إعادة بناء الأدوات — استخدم`const`و`final`و`shouldRebuild`
+- استخدم`ListView.builder`بدلاً من`ListView`للقوائم الكبيرة
+- ملف تعريف باستخدام Flutter DevTools
+- استخدم`compute()`للعمليات الباهظة الثمن على الخيوط المعزولة
+- قلل من مكالمات`setState`- كن محددًا بشأن ما يحتاج إلى إعادة البناء
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: إنشاء عميل API آمن النوع
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء عميل API الذي يقوم بجلب البيانات وإرجاع الكائنات المكتوبة بشكل صحيح.
+**الخطوة 2: تحديد النهج**
+استخدم فئات Dart مع`fromJson`/`toJson`والفئات غير المتزامنة/الانتظار والمختومة للحصول على النتائج.
+**الخطوة 3: التنفيذ**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**الخطوة 4: التحقق**
+اختبار مع عميل HTTP وهمية. التحقق من معالجة الأخطاء لفشل الشبكة والاستجابات السيئة.
+### المشكلة الثانية: تنفيذ بحث تفاعلي باستخدام Debounce
+**الخطوة الأولى: فهم المشكلة**
+أنشئ حقل بحث يستعلم عن واجهة برمجة التطبيقات ولكنه يرفض الإدخال لتجنب الطلبات المفرطة.
+**الخطوة 2: تحديد النهج**
+استخدم Dart Streams مع`debounceTime`و`distinct` .
+**الخطوة 3: التنفيذ**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**الخطوة 4: الاختبار**
+تأكد من أن الكتابة السريعة تؤدي فقط إلى استدعاء واجهة برمجة التطبيقات (API) مرة واحدة بعد فترة الارتداد.
 ---
 
 ## ملخص

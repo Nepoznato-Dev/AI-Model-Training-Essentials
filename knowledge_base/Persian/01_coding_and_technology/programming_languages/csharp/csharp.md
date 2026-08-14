@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "C#"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی C# که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن است."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [csharp، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "29 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "C#"
+description: "Comprehensive reference for the C# programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [csharp, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C#
 سی شارپ (با تلفظ C-sharp) یک زبان برنامه نویسی مدرن، شی گرا و ایمن است که توسط مایکروسافت تحت رهبری آندرس هیلسبرگ توسعه یافته و اولین بار در سال 2002 منتشر شد. این زبان بر روی پلت فرم دات نت اجرا می شود و برای ترکیب قدرت C++ با بهره وری ویژوال بیسیک طراحی شده است. امروزه سی شارپ یک زبان همه کاره و چند پلتفرمی است که برای برنامه های کاربردی وب (ASP.NET)، نرم افزار دسکتاپ (ویندوز)، توسعه بازی (Unity)، برنامه های موبایل (MAUI)، خدمات ابری (Azure) و غیره استفاده می شود.
 C# به طور پیوسته بهترین ایده‌ها را از زبان‌های دیگر جذب کرده است - LINQ، async/wait، رکوردها، تطبیق الگوها - آن را به یکی از غنی‌ترین و توسعه‌دهنده‌ترین زبان‌های موجود تبدیل کرده است.
@@ -680,7 +685,7 @@ dotnet publish -c Release -r linux-x64
 | نسخه | سال | ویژگی های کلیدی |
 |---------|------|-------------|
 | سی شارپ 7 | 2017 | تطبیق الگو، تاپل ها، متغیرهای `out`، توابع محلی |
-| سی شارپ 8 | 2019 | انواع مرجع قابل تهی، عبارات `switch`، جریان های ناهمگام |
+| سی شارپ 8 | 2019 | انواع مرجع قابل تهی، عبارات `switch`، جریان های غیر همگام |
 | سی شارپ 9 | 2020 | **سوابق**، بیانیه های سطح بالا، ویژگی های`init`|
 | سی شارپ 10 | 2021 | ساختارهای ضبط، جهانی `using`، فضاهای نام با دامنه فایل |
 | سی شارپ 11 | 2022 | حرفهای رشته خام، الگوهای فهرست، اعضای `required`، ریاضی عمومی |
@@ -700,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | برنامه های موبایل (MAUI) | کراس پلتفرم با سی شارپ | Flutter، React Native یا Swift/Kotlin بومی |
 | AI/ML | با ML.NET امکان پذیر است | پایتون (بیشتر ترجیح داده می شود) |
 | ابزار / اسکریپت های CLI | ممکن است اما پرمخاطب | برو، رست، پایتون |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت`class`و`record`در سی شارپ چیست؟
+**A:**`class`یک نوع مرجع با ویژگی های قابل تغییر به طور پیش فرض است - دو متغیر می توانند به یک شی ارجاع دهند.`record`(C# 9+) یک نوع مرجع با برابری مبتنی بر ارزش است - دو رکورد با داده های یکسان برابر در نظر گرفته می شوند. رکوردها دارای ویژگی‌های init-only، یک`ToString`داخلی هستند و از عبارات`with`برای جهش غیر مخرب پشتیبانی می‌کنند. استفاده از سوابق برای حامل های داده (DTO، اشیاء ارزش). از کلاس‌ها برای موجودیت‌های غنی از رفتار با هویت استفاده کنید.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Q2: async/wait و`Task`چگونه به صورت داخلی کار می کنند؟
+**A:**`async/await`قند نحوی روی یک ماشین حالت تولید شده توسط کامپایلر است. هنگامی که شما`await`a`Task`را انجام می دهید، روش در نقطه انتظار تقسیم می شود: همه چیز قبل به صورت همزمان اجرا می شود، سپس باقیمانده به عنوان ادامه ثبت می شود. نخ برای انجام کارهای دیگر آزاد می شود. `Task<T>`یک مقدار آتی را نشان می دهد. `ValueTask<T>`یک ساختار جایگزین برای مسیرهای داغ است که از تخصیص پشته در زمانی که نتیجه از قبل در دسترس است جلوگیری می کند.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### Q3: روش های افزونه چیست و چه زمانی باید از آنها استفاده کنم؟
+**الف:** روش های برنامه افزودنی روش ها را به انواع موجود بدون تغییر آنها اضافه می کنند. آنها متدهای ایستا در یک کلاس ثابت هستند که کلیدواژه`this`در پارامتر اول قرار دارد. آنها یک API روان و زنجیره ای را فعال می کنند. از آن‌ها برای افزودن روش‌های کاربردی به انواعی که متعلق به شما نیست (مانند`string`یا `IEnumerable<T>`) استفاده کنید. از استفاده بیش از حد از آنها خودداری کنید - آنها می توانند کشف کد را سخت کنند.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Q4: تطبیق الگو در سی شارپ مدرن چگونه کار می کند؟
+**A:** C# به تدریج تطبیق الگوی قدرتمندتری را اضافه کرده است. عبارات سوئیچ (C# 8)، الگوهای نوع، الگوهای ویژگی، الگوهای رابطه ای، و الگوهای فهرست (C# 11) به منطق شرطی مختصر و بیانی اجازه می دهند. تطبیق الگو جایگزین زنجیره های طولانی if/else می شود و توسط کامپایلر به طور کامل بررسی می شود.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### Q5: تزریق وابستگی در دات نت چیست و چگونه از آن استفاده کنم؟
+**A:** دات نت دارای پشتیبانی DI داخلی از طریق`Microsoft.Extensions.DependencyInjection`است. شما خدمات را با طول عمر آنها ثبت می کنید (Singleton، Scoped، Transient)، و کانتینر آنها را از طریق پارامترهای سازنده تزریق می کند. Singleton: یک نمونه برای برنامه. محدوده: یک در هر درخواست HTTP. گذرا: هر بار نمونه جدید.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک مخزن عمومی با ذخیره سازی بسازید
+**بیانیه مشکل:** یک الگوی مخزن عمومی را با دکوراتور اجرا کنید که ذخیره سازی را اضافه می کند. مخزن باید از عملیات CRUD پشتیبانی کند و دکوراتور کش باید خوانده ها را در حافظه پنهان نگه دارد و روی نوشته ها را باطل کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) یک رابط عمومی `IRepository<T>`، (2) یک پیاده سازی مشخص (به عنوان مثال، در حافظه)، (3) یک دکوراتور ذخیره سازی که هر مخزن را بپیچد، (4) باطل کردن حافظه پنهان در عملیات نوشتن. الگوی دکوراتور به طور متعامد با منطق دسترسی به داده ها ذخیره می شود.
+** مرحله 2 - شناسایی رویکرد: **
+-`IRepository<T>`را با `Get`، `GetAll`، `Add`، `Update`، `Delete`، تعریف کنید.
+-`CachingRepository<T>`را ایجاد کنید که`IRepository<T>`را بپیچد و از`IMemoryCache`استفاده کند.
+- کلید حافظه پنهان: `typeof(T).Name:{id}`.
+- در عملیات نوشتن، ورودی حافظه پنهان را باطل کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- تفکیک نگرانی ها: ذخیره سازی یک دکوراتور است، نه اینکه در مخزن مخلوط شود.
+- ثبت نام DI:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(با استفاده از Scrutor).
+- تولید: از`IDistributedCache`(Redis) برای سناریوهای چند سرور استفاده کنید، و الگوهای حافظه پنهان را با محافظت`CacheStampede`اضافه کنید.
+### مشکل 2: یک خط لوله میان افزار را پیاده سازی کنید
+**بیانیه مشکل:** یک خط لوله میان افزاری مشابه خط لوله درخواست ASP.NET Core بسازید. هر میان افزار می تواند درخواست را پردازش کند، میان افزار بعدی را فراخوانی کند و پاسخ را پردازش کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) یک نوع`RequestDelegate`که خط لوله را نشان می دهد، (2) میان افزاری که نماینده بعدی را می پوشاند، (3) یک API سازنده برای ساخت میان افزار. این الگوی زنجیره مسئولیت است که با نمایندگان اجرا شده است.
+** مرحله 2 - شناسایی رویکرد: **
+-`RequestDelegate``Func<Context, RequestDelegate, Task>` است.
+- هر میان افزار زمینه و یک تابع`next`را دریافت می کند.
+-`Use`میان افزار را اضافه می کند. `Build`آنها را در یک نماینده واحد ترکیب می کند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- سفارش میان افزار اهمیت دارد: اولین اضافه شده = بیرونی ترین (اول در صورت درخواست اجرا می شود، آخرین در پاسخ).
+- میان افزار ترمینال (بدون تماس `next`) خط لوله را اتصال کوتاه می کند.
+- تولید: خط لوله ASP.NET Core دقیقاً همین الگو است که با درختان بیان کامپایل شده برای تخصیص صفر بهینه شده است.
 ---
 
 ## خلاصه

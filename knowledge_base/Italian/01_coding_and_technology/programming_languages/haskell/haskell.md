@@ -41,7 +41,7 @@ contribution:
 
 #Haskell
 Haskell è un linguaggio di programmazione puramente funzionale, tipizzato staticamente e valutato pigramente. Standardizzato per la prima volta nel 1990 (Haskell 90) e perfezionato attraverso più versioni (Haskell 2010 è lo standard attuale), Haskell è noto per il suo rigore matematico, il potente sistema di tipi (con classi di tipi, monadi e tipi di dati algebrici) e l'enfasi sulla correttezza attraverso i tipi.
-L'Haskell non è un linguaggio tradizionale, ma la sua influenza è enorme. Concetti come monadi, valutazione pigra e classi di tipo hanno influenzato Rust, Swift, Kotlin, Scala e TypeScript. Haskell è utilizzato nella finanza (Standard Chartered, Barclays), nei compilatori (GHC) e nella verifica formale.
+L'Haskell non è un linguaggio tradizionale, ma la sua influenza è enorme. Concetti come monadi, valutazione pigra e classi di tipi hanno influenzato Rust, Swift, Kotlin, Scala e TypeScript. Haskell è utilizzato nella finanza (Standard Chartered, Barclays), nei compilatori (GHC) e nella verifica formale.
 ---
 
 ## Perché Haskell è importante
@@ -375,7 +375,7 @@ fib n = runEval $ do
 ---
 
 ## Configurazione del progetto e sistema di creazione
-### Struttura del progetto (stack/cabala)
+### Struttura del progetto (stack/cabal)
 ```
 my-haskell-project/
 ├── app/
@@ -809,9 +809,9 @@ main = do
 |------|---------|---------|
 | **Profilo GHC** | Profilazione temporale e allocativa | `stack build --profile`quindi`./app +RTS -p`|
 | **ThreadScope** | Visualizza l'esecuzione parallela | `./app +RTS -l`quindi aprire`app.eventlog`|
-| **ghc-eventi** | Analizzare i registri eventi | `ghc-events show app.eventlog`|
+| **eventi-ghc** | Analizzare i registri eventi | `ghc-events show app.eventlog`|
 | **Criterio** | Benchmarking statistico | Utilizza il pacchetto`criterion`|
-| **hp2pretty** | Visualizza i profili heap | `./app +RTS -h`poi`hp2pretty app.hp`|
+| **hp2pretty** | Visualizza i profili heap | `./app +RTS -h`quindi`hp2pretty app.hp`|
 ### Benchmarking con criterio
 ```haskell
 -- bench/Bench.hs
@@ -940,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | Sviluppo di applicazioni generali | Possibile ma di nicchia | Python, Go, Java |
 | Sviluppo web | Yesod/Servo esiste ma limitato | JavaScript/TypeScript |
 | Scienza dei dati | Non l'ecosistema | Pitone, R |
+---
+
+## Domande e risposte sintetiche
+### D1: In che modo la valutazione pigra di Haskell influisce sulle prestazioni?
+**R:** La valutazione pigra significa che le espressioni vengono calcolate solo quando necessario, consentendo infinite strutture di dati e pipeline componibili. Tuttavia, può causare perdite di spazio se si accumulano thunk:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Utilizza`foldl'`(da`Data.List`) invece di`foldl`per le pieghe numeriche. Utilizza i modelli bang`!`o`seq`per forzare la valutazione quando necessario.
+### D2: Qual è la differenza pratica tra`Functor`,`Applicative`e`Monad`?
+**R:** Ogni classe di tipo aggiunge funzionalità:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Funtore** mappa una funzione pura su un contesto. **Applicativo** applica funzioni che sono esse stesse in un contesto. **Monad** lascia che ogni passaggio dipenda dal risultato del passaggio precedente. In pratica: utilizzare`fmap`/`<$>`per trasformazioni semplici,`<*>`per combinare effetti e`>>=`/`do`per calcoli dipendenti sequenziali.
+### D3: Come gestisco gli effetti collaterali nel codice Haskell puro?
+**R:** Utilizza il sistema di tipi per separare il codice puro ed efficace:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Mantieni pura la logica di base e spingi gli effetti ai margini. Utilizzare`ReaderT`per la configurazione,`ExceptT`per gli errori e`StateT`per lo stato modificabile.
+### D4: Cosa sono le classi di tipo e in cosa differiscono dalle interfacce OOP?
+**R:** Le classi di tipo definiscono il comportamento che i tipi possono implementare. A differenza delle interfacce OOP, sono aperte (qualsiasi tipo può essere un'istanza) e supportano il polimorfismo ad hoc:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### D5: Come strutturare un progetto Haskell per l'uso nel mondo reale?
+**R:** Utilizza Cabal o Stack con un layout standard:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Pratiche chiave: mantenere l'IO in`Main.hs`o in un modulo`IO`dedicato, rendere la logica di base pura e testabile, utilizzare wrapper`newtype`per i tipi di dominio.
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: implementazione di una funzione di divisione sicura con segnalazione degli errori
+**Passaggio 1: comprendere il problema**
+Abbiamo bisogno di una divisione che gestisca la divisione per zero e segnali errori significativi, non solo arresti anomali.
+**Passaggio 2: identificare l'approccio**
+Utilizzare`Either`per restituire un messaggio di errore o il risultato. Ciò rende esplicita nel tipo la possibilità di fallimento.
+**Passaggio 3: implementazione**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Passaggio 4: verifica**
+Il sistema di tipi garantisce che i chiamanti debbano gestire il caso di errore. La corrispondenza dei modelli o`either`impone la gestione esplicita.
+### Problema 2: analisi di un linguaggio di configurazione semplice
+**Passaggio 1: comprendere il problema**
+Analizza le coppie chiave-valore da una stringa come`name=Alice\nage=30`.
+**Passaggio 2: identificare l'approccio**
+Utilizzare`Text.Parsec`o la ricorsione manuale. Per semplicità, utilizzare`break`e`span`.
+**Passaggio 3: implementazione**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Passaggio 4: Estendi**
+Aggiungi la gestione dei commenti (`#`), le intestazioni delle sezioni (`[section]`) e la coercizione del tipo utilizzando un ADT `Value`.
+### Problema 3: costruire un Fibonacci memorizzato con pigrizia
+**Passaggio 1: comprendere il problema**
+Calcola i numeri di Fibonacci in modo efficiente. La ricorsione ingenua è esponenziale.
+**Passaggio 2: identificare l'approccio**
+Utilizza la valutazione pigra di Haskell per creare un elenco infinito in cui ogni elemento viene calcolato una volta e memorizzato nella cache.
+**Passaggio 3: implementazione**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Passaggio 4: ottimizza**
+Per l'accesso casuale, utilizzare`Data.Array`con costruzione lazy. Per indici molto grandi, utilizzare l'esponenziazione della matrice in O(log n).
+### Problema 4: implementazione di una macchina a stati semplice
+**Passaggio 1: comprendere il problema**
+Modella un semaforo che scorre Rosso -> Verde -> Giallo -> Rosso.
+**Passaggio 2: identificare l'approccio**
+Utilizzare un tipo di dati algebrico per gli stati e una funzione di transizione pura.
+**Passaggio 3: implementazione**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Passaggio 4: verifica**
+Le funzioni pure sono banalmente testabili:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Riepilogo

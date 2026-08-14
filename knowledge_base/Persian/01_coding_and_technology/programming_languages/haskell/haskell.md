@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "Haskell"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Haskell شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [haskell، زبان برنامه‌نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "39 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Haskell"
+description: "Comprehensive reference for the Haskell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [haskell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "39 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # هاسکل
 Haskell یک زبان برنامه نویسی کاملا کاربردی، تایپ ایستا و با تنبلی ارزیابی شده است. هاسکل برای اولین بار در سال 1990 استاندارد شد (Haskell 90) و از طریق چندین نسخه اصلاح شد (Haskell 2010 استاندارد فعلی است)، Haskell به دلیل دقت ریاضی، سیستم تایپ قدرتمند (با کلاس‌های نوع، مونادها و انواع داده‌های جبری) و تاکید بر صحت از طریق انواع شناخته شده است.
 هاسکل یک زبان رایج نیست، اما تأثیر آن بسیار زیاد است. مفاهیمی مانند monads، ارزیابی تنبل و کلاس‌های نوع بر Rust، Swift، Kotlin، Scala و TypeScript تأثیر گذاشته‌اند. Haskell در امور مالی (Standard Chartered، Barclays)، کامپایلرها (GHC) و تأیید رسمی استفاده می شود.
@@ -469,15 +474,15 @@ tests:
 | فرمان | توضیحات |
 |---------|-------------|
 | `stack new my-project`| ایجاد پروژه جدید از قالب |
-|  __محافظت شده_1__ | ساخت پروژه |
+| `stack build`| ساخت پروژه |
 | `stack ghci`| شروع REPL تعاملی با پروژه بارگذاری شده |
-|  __محافظت شده_3__ | اجرای مجموعه تست |
+| `stack test`| اجرای مجموعه تست |
 | `stack bench`| اجرای معیارها |
 | `stack haddock`| ایجاد مستندات |
-|  __محافظت شده_6__ | اجرای |
+| `stack exec my-app`| اجرای |
 | `stack clean`| مصنوعات ساخت تمیز |
 | `stack update`| به روز رسانی فهرست بسته |
-|  __محافظت شده_9__ | پین کردن نسخه های وابستگی دقیق |
+| `stack freeze`| پین کردن نسخه های وابستگی دقیق |
 ### خط لوله CI/CD (اقدامات GitHub)
 ```yaml
 # .github/workflows/haskell.yml
@@ -594,10 +599,10 @@ instance Arbitrary PositiveInt where
 ### دستورات تست
 | فرمان | توضیحات |
 |---------|-------------|
-| `stack test`| اجرای تمام مجموعه های تست |
-|  __محافظت شده_1__ | رد شدن از بهینه سازی برای ساخت های آزمایشی سریعتر |
+| `stack test`| اجرای تمامی مجموعه های تست |
+| `stack test --fast`| رد شدن از بهینه سازی برای ساخت های آزمایشی سریعتر |
 | `stack build --test --test-arguments "--color"`| اجرای تست ها با خروجی رنگی |
-|  __محافظت شده_3__ | بارگذاری ماژول های تست در REPL |
+| `stack ghci --test`| بارگذاری ماژول های تست در REPL |
 
 ---
 
@@ -803,9 +808,9 @@ main = do
 | ابزار | هدف | فرمان |
 |------|---------|---------|
 | **پروفایلر GHC** | پروفایل زمان و تخصیص | `stack build --profile`سپس`./app +RTS -p`|
-| **ThreadScope** | تجسم اجرای موازی | `./app +RTS -l`سپس`app.eventlog`را باز کنید |
+| **ThreadScope** | تجسم اجرای موازی | `./app +RTS -l`سپس`app.eventlog`|
 | **ghc-events** | تجزیه و تحلیل گزارش رویداد | `ghc-events show app.eventlog`|
-| **معیار** | معیارهای آماری | از بسته`criterion`استفاده کنید |
+| **معیار** | معیارهای آماری | استفاده از بسته`criterion`|
 | **hp2pretty** | تجسم پروفایل های پشته | `./app +RTS -h`سپس`hp2pretty app.hp`|
 ### محک زدن با معیار
 ```haskell
@@ -935,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | توسعه برنامه عمومی | ممکن است اما طاقچه | پایتون، برو، جاوا |
 | توسعه وب | Yesod/Servant وجود دارد اما محدود | جاوا اسکریپت/تایپ اسکریپت |
 | علم داده | نه اکوسیستم | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: ارزیابی تنبل Haskell چگونه بر عملکرد تأثیر می گذارد؟
+**A:** ارزیابی تنبل به این معنی است که عبارات فقط در صورت نیاز محاسبه می شوند و ساختارهای داده بی نهایت و خطوط لوله قابل ترکیب را فعال می کنند. با این حال، در صورت انباشته شدن ضربات می تواند باعث نشت فضا شود:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+از`foldl'`(از`Data.List`) به جای`foldl`برای چین های عددی استفاده کنید. از الگوهای ضربه ای`!`یا`seq`برای ارزیابی در صورت نیاز استفاده کنید.
+### Q2: تفاوت عملی بین `Functor`،`Applicative`و`Monad`چیست؟
+**A:** هر کلاس تایپ قابلیتی را اضافه می کند:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** یک تابع خالص را روی یک زمینه ترسیم می کند. **کاربردی** توابعی را اعمال می کند که خودشان در یک زمینه هستند. **موناد** اجازه می دهد هر مرحله به نتیجه مرحله قبل بستگی داشته باشد. در عمل: از`fmap`/`<$>`برای تبدیل های ساده،`<*>`برای ترکیب افکت ها و`>>=`/`do`برای محاسبات وابسته متوالی استفاده کنید.
+### Q3: چگونه عوارض جانبی را در کد Haskell خالص کنترل کنم؟
+**A:** از سیستم نوع برای جداسازی کدهای خالص و موثر استفاده کنید:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+منطق اصلی را خالص نگه دارید و جلوه ها را به لبه ها فشار دهید. از`ReaderT`برای پیکربندی،`ExceptT`برای خطاها و`StateT`برای حالت تغییرپذیر استفاده کنید.
+### Q4: کلاس های نوع چیست و چه تفاوتی با رابط های OOP دارند؟
+**A:** کلاس های نوع رفتاری را تعریف می کنند که انواع می توانند پیاده سازی کنند. برخلاف رابط های OOP، آنها باز هستند (هر نوع می تواند یک نمونه باشد) و از چند شکلی ad-hoc پشتیبانی می کنند:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5: چگونه یک پروژه Haskell را برای استفاده در دنیای واقعی ساختار دهم؟
+**A:** از Cabal یا Stack با یک چیدمان استاندارد استفاده کنید:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+روش‌های کلیدی: IO را در`Main.hs`یا یک ماژول اختصاصی`IO`نگه دارید، منطق هسته را خالص و قابل آزمایش کنید، از پوشش‌های`newtype`برای انواع دامنه استفاده کنید.
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: اجرای یک تابع بخش ایمن با گزارش خطا
+**مرحله 1: مشکل را درک کنید**
+ما به تقسیمی نیاز داریم که تقسیم بر صفر را مدیریت کند و خطاهای معنی دار را گزارش کند، نه فقط خرابی ها.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`Either`برای بازگرداندن پیام خطا یا نتیجه استفاده کنید. این باعث می شود که احتمال شکست در نوع صریح باشد.
+**مرحله 3: پیاده سازی **```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**مرحله 4: تایید **
+سیستم نوع تضمین می‌کند که تماس‌گیرندگان باید مورد خطا را مدیریت کنند. تطبیق الگو یا`either`مدیریت صریح را مجبور می کند.
+### مشکل 2: تجزیه یک زبان پیکربندی ساده
+**مرحله 1: مشکل را درک کنید**
+جفت‌های کلید-مقدار را از رشته‌ای مانند`name=Alice\nage=30`تجزیه کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`Text.Parsec`یا بازگشت دستی استفاده کنید. برای سادگی، از`break`و`span`استفاده کنید.
+**مرحله 3: پیاده سازی **```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**مرحله 4: تمدید**
+مدیریت نظر (`#`)، سرصفحه‌های بخش (`[section]`) را اضافه کنید و با استفاده از`Value`ADT، اجبار را تایپ کنید.
+### مسئله 3: ساختن یک فیبوناچی یادداشت شده با تنبلی
+**مرحله 1: مشکل را درک کنید**
+اعداد فیبوناچی را به طور موثر محاسبه کنید. بازگشت ساده لوح نمایی است.
+**مرحله 2: رویکرد را شناسایی کنید**
+از ارزیابی تنبل Haskell برای ایجاد یک لیست بی نهایت استفاده کنید که در آن هر عنصر یک بار محاسبه شده و در حافظه پنهان ذخیره می شود.
+**مرحله 3: پیاده سازی **```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**مرحله 4: بهینه سازی**
+برای دسترسی تصادفی، از`Data.Array`با ساختار تنبل استفاده کنید. برای شاخص های بسیار بزرگ، از توان ماتریسی در O(log n) استفاده کنید.
+### مسئله 4: پیاده سازی یک ماشین حالت ساده
+**مرحله 1: مشکل را درک کنید**
+یک چراغ راهنمایی که چرخه های قرمز -> سبز -> زرد -> قرمز را در می آورد مدل کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از یک نوع داده جبری برای حالت ها و یک تابع انتقال خالص استفاده کنید.
+**مرحله 3: پیاده سازی **```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**مرحله 4: تایید **
+توابع خالص به طور ساده قابل آزمایش هستند:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## خلاصه

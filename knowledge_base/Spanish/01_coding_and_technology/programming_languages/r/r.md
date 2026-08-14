@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "R"
-descripción: "Referencia completa para el lenguaje de programación R que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "R"
+description: "Comprehensive reference for the R programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [r, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "31 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [r, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #R
 R es un lenguaje y entorno de programación diseñado específicamente para informática estadística y análisis de datos. Creado por Ross Ihaka y Robert Gentleman en la Universidad de Auckland en 1993 (de ahí "R"), es una implementación del lenguaje S con importantes extensiones. R es de código abierto y lo mantiene el R Core Team. Es la herramienta estándar para estadísticos, analistas de datos e investigadores del mundo académico, sanitario, financiero y gubernamental.
 R destaca en la manipulación de datos, el modelado estadístico, la visualización y la generación de informes. Su ecosistema de paquetes (CRAN) tiene más de 20.000 paquetes que cubren prácticamente todos los métodos estadísticos jamás ideados.
@@ -599,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Sistemas de ML de producción | No diseñado para implementación | Pitón, Java |
 | Desarrollo web | No adecuado | JavaScript, Pitón |
 | Procesamiento de datos a gran escala | Atado a la memoria | Python (PySpark), SQL |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre`<-`y`=`para la asignación?
+**R:** Ambos asignan valores, pero`<-`es el operador de asignación idiomático de R. Funciona en todos los contextos, incluidas las llamadas a funciones internas:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### P2: ¿Cómo manejo los datos faltantes en R?
+**R:** R usa`NA`para los valores faltantes. La mayoría de funciones tienen un parámetro `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### P3: ¿Cuándo debo utilizar`lapply`frente a`sapply`frente a `vapply`?
+**R:** Todos aplican una función sobre una lista/vector, pero difieren en el resultado:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### P4: ¿Cómo creo visualizaciones efectivas con ggplot2?
+**R:** Siga la gramática de los gráficos: asigne la estética de los datos a las propiedades visuales:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### P5: ¿Cómo escribo código R eficiente para grandes conjuntos de datos?
+**R:** Prácticas clave:
+- Preasignar vectores:`x <- numeric(n)`en lugar de crecer con`c()`
+- Utilice`data.table`para conjuntos de datos grandes (100 veces más rápido que data.frame)
+- Vectorizar operaciones: evitar bucles siempre que sea posible
+- Utilice`vapply`sobre`sapply`para seguridad de tipo
+- Perfil con`Rprof()`o`profvis`
+- Considere el paquete`arrow`para datos fuera del núcleo
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: limpieza y análisis de un conjunto de datos desordenado
+**Paso 1: Comprenda el problema**
+Tenemos un marco de datos con valores faltantes, tipos inconsistentes y valores atípicos. Necesitamos limpiarlo y calcular estadísticas resumidas.
+**Paso 2: Identificar el enfoque**
+Utilice verbos tidyverse:`filter`,`mutate`,`summarize`y`group_by`.
+**Paso 3: Implementar**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Paso 4: Verificar**
+Verifique el recuento de filas antes y después, valide rangos y coteje los totales con los datos de origen.
+### Problema 2: construir un modelo de regresión lineal
+**Paso 1: Comprenda el problema**
+Predecir una variable de resultado continua a partir de múltiples predictores.
+**Paso 2: Identificar el enfoque**
+Utilice`lm()`para regresión lineal, comprobar supuestos y evaluar el ajuste del modelo.
+**Paso 3: Implementar**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Paso 4: Evaluar**
+Verifique R cuadrado, gráficos residuales para patrones y AIC para comparar modelos.
+### Problema 3: Crear un informe reproducible
+**Paso 1: Comprenda el problema**
+Cree un informe que combine análisis, visualizaciones y texto narrativo en un formato reproducible.
+**Paso 2: Identificar el enfoque**
+Utilice R Markdown (o Quarto) para intercalar fragmentos de código con texto.
+**Paso 3: Implementar**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSO, advertencia = FALSO)
+biblioteca (tidyverse)
+datos <- read_csv("datos.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(datos, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**Paso 4: renderizar**
+`rmarkdown::render("report.Rmd")`produce un documento HTML autónomo.
 ---
 
 ## Resumen

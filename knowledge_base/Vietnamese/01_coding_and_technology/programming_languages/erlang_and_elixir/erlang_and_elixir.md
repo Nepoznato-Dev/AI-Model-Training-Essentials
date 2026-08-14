@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Erlang & Thuốc tiên
-Erlang được Ericsson xây dựng vào năm 1986 để cấp nguồn cho các tổng đài điện thoại - điều này giải thích tại sao nó xử lý đồng thời, khả năng chịu lỗi và hệ thống phân tán tốt hơn hầu hết mọi thứ khác. Các quy trình Erlang rất nhẹ, tách biệt và chỉ giao tiếp thông qua việc truyền tin nhắn. Khi một quá trình gặp sự cố, người giám sát sẽ khởi động lại nó. Triết lý "để nó sụp đổ" này tạo ra các hệ thống có thể chạy trong nhiều năm mà không có thời gian ngừng hoạt động.
-Elixir là một ngôn ngữ hiện đại được Jose Valim xây dựng dựa trên Erlang's VM (BEAM) vào năm 2012. Nó giữ lại mọi thứ Erlang cung cấp — đồng thời, khả năng chịu lỗi, phân phối — nhưng bổ sung thêm cú pháp thân thiện, siêu lập trình và công cụ tuyệt vời (trình quản lý gói Mix, đăng ký gói Hex). Elixir được sử dụng rộng rãi cho các ứng dụng web (thông qua Phoenix framework), hệ thống thời gian thực và thiết bị nhúng (thông qua Nerves).
+Erlang được Ericsson xây dựng vào năm 1986 để cấp nguồn cho các tổng đài điện thoại - điều này giải thích tại sao nó xử lý đồng thời, khả năng chịu lỗi và hệ thống phân tán tốt hơn hầu hết mọi thứ khác. Các quy trình Erlang rất nhẹ, biệt lập và chỉ giao tiếp thông qua việc truyền tin nhắn. Khi một quá trình gặp sự cố, người giám sát sẽ khởi động lại nó. Triết lý "để nó sụp đổ" này tạo ra các hệ thống có thể chạy trong nhiều năm mà không có thời gian ngừng hoạt động.
+Elixir là một ngôn ngữ hiện đại được Jose Valim xây dựng dựa trên Erlang's VM (BEAM) vào năm 2012. Nó giữ lại mọi thứ Erlang cung cấp — đồng thời, khả năng chịu lỗi, phân phối — nhưng bổ sung thêm cú pháp thân thiện, siêu lập trình và công cụ tuyệt vời (trình quản lý gói Mix, đăng ký gói Hex). Elixir được sử dụng rộng rãi cho các ứng dụng web (thông qua Phoenix framework), hệ thống thời gian thực và các thiết bị nhúng (thông qua Nerves).
 ---
 
 ## Tại sao Erlang/Elixir lại quan trọng
@@ -594,18 +595,18 @@ end
 ### Lệnh kết hợp phím
 | Lệnh | Mô tả |
 |----------|-------------|
-|  __BẢO VỆ_0__ | Tạo dự án Elixir mới |
-|  __BẢO VỆ_1__ | Tạo ứng dụng web Phoenix mới |
-|  __BẢO VỆ_2__ | Tìm nạp phụ thuộc |
-|  __BẢO VỆ_3__ | Biên soạn dự án |
-|  __BẢO VỆ_4__ | Chạy thử nghiệm |
-|  __BẢO VỆ_5__ | Chạy thử nghiệm với đầu ra dài dòng |
-|  __BẢO VỆ_6__ | Chạy phân tích tĩnh |
-|  __BẢO VỆ_7__ | Chạy kiểm tra kiểu |
-|  __BẢO VỆ_8__ | Mã định dạng |
-|  __BẢO VỆ_9__ | Tạo tài liệu |
-|  __BẢO VỆ_10__ | Xây dựng một bản phát hành |
-|  __BẢO VỆ_11__ | Bắt đầu REPL với dự án được tải |
+| `mix new my_app`| Tạo dự án Elixir mới |
+| `mix phx.new my_app`| Tạo ứng dụng web Phoenix mới |
+| `mix deps.get`| Tìm nạp phụ thuộc |
+| `mix compile`| Biên soạn dự án |
+| `mix test`| Chạy thử nghiệm |
+| `mix test --trace`| Chạy thử nghiệm với đầu ra dài dòng |
+| `mix credo`| Chạy phân tích tĩnh |
+| `mix dialyzer`| Chạy kiểm tra kiểu |
+| `mix format`| Mã định dạng |
+| `mix docs`| Tạo tài liệu |
+| `mix release`| Xây dựng một bản phát hành |
+| `iex -S mix`| Bắt đầu REPL với dự án được tải |
 ### Trình định dạng mã (.formatter.exs)
 ```elixir
 # .formatter.exs
@@ -846,8 +847,8 @@ end
 ### Công cụ lập hồ sơ
 | Công cụ | Mục đích | Cách sử dụng |
 |------|----------|-------|
-| **:eprof** | Hồ sơ cấp chức năng | `:eprof.start()`rồi lập hồ sơ |
-| **:fprof** | Hồ sơ biểu đồ cuộc gọi chi tiết |  __BẢO VỆ_1__ |
+| **:eprof** | Hồ sơ cấp chức năng | `:eprof.start()`rồi hồ sơ |
+| **:fprof** | Hồ sơ biểu đồ cuộc gọi chi tiết | `:fprof.profile(fn -> ... end)`|
 | **:người quan sát** | Màn hình hệ thống trực quan | `:observer.start()`trong IEx |
 | **Băng ghế** | Thư viện điểm chuẩn | Thêm vào deps |
 ### Đo điểm chuẩn với Benchee
@@ -925,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | Khoa học dữ liệu / ML | Không phải hệ sinh thái | Python, R |
 | Ứng dụng di động | Không phù hợp | Swift, Kotlin, Phi tiêu |
 | API REST đơn giản | Có thể nhưng quá mức cần thiết cho các dịch vụ nhỏ | Đi, Node.js, Python |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Triết lý "để nó sụp đổ" của Erlang hoạt động như thế nào?
+**A:** Thay vì lập trình phòng thủ, Erlang cho phép các quy trình gặp sự cố và khởi động lại chúng thông qua người giám sát:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Câu 2: Đường ống Elixir hoạt động như thế nào?
+**A:** Toán tử`|>`chuyển kết quả của một hàm làm đối số đầu tiên cho hàm tiếp theo:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Câu 3: Erlang và Elixir khác nhau thế nào?
+**A:** Elixir chạy trên máy ảo Erlang (BEAM) với cú pháp hiện đại:
+- Elixir: toán tử đường ống, macro, giao thức, nội suy chuỗi
+- Erlang: cú pháp đơn giản hơn, tích hợp OTP, được thử nghiệm nhiều hơn
+- Cả hai đều có chung mô hình đồng thời, VM và hệ sinh thái
+### Q4: GenServers hoạt động như thế nào trong Elixir?
+**A:** GenServer là bản tóm tắt tiêu chuẩn cho các quy trình có trạng thái:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5: Làm cách nào để xử lý lỗi trong Elixir?
+**A:** Sử dụng`try/rescue`cho các trường hợp ngoại lệ,`{:ok, result} | {:error, reason}`cho các lỗi dự kiến:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng kho lưu trữ khóa-giá trị có khả năng chịu lỗi
+**Bước 1: Tìm hiểu vấn đề**
+Tạo một kho lưu trữ khóa-giá trị tồn tại sau các sự cố trong quá trình.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng GenServer với người giám sát.
+**Bước 3: Thực hiện**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**Bước 4: Xác minh**
+Giết quá trình và xác minh nó khởi động lại với trạng thái mới.
+### Vấn đề 2: Trình quét web đồng thời
+**Bước 1: Tìm hiểu vấn đề**
+Tìm nạp nhiều URL đồng thời và thu thập kết quả.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng Nhiệm vụ Elixir để thực hiện đồng thời.
+**Bước 3: Thực hiện**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**Bước 4: Tối ưu hóa**
+Thêm giới hạn tốc độ, số lần thử và phát trực tuyến cho danh sách URL lớn.
 ---
 
 ## Bản tóm tắt

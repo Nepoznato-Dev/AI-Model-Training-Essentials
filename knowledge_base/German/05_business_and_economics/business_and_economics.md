@@ -156,7 +156,7 @@ Die meisten Startups scheitern. Schätzungen gehen davon aus, dass 90 % der durc
 ---
 
 ## Lieferkette und Betrieb
-Supply Chain Management ist die Kunst und Wissenschaft, das richtige Produkt zur richtigen Zeit und zu den richtigen Kosten an den richtigen Ort zu bringen. Es klingt einfach. Es ist außerordentlich schwierig.
+Supply Chain Management ist der koordinierte Prozess, das richtige Produkt zur richtigen Zeit und zu den richtigen Kosten an den richtigen Ort zu liefern. Das Ziel ist klar; die Ausführung ist komplex.
 ### Schlüsselkonzepte
 - **Just-in-Time (JIT)**: Erhalten Sie Materialien nur dann, wenn sie benötigt werden, wodurch die Lagerkosten gesenkt werden. Toyota war hier Vorreiter. Der Kompromiss: JIT-Systeme sind fragil, wenn die Lieferketten unterbrochen werden (wie der Chipmangel 2020–2022 gezeigt hat).
 - **Lean Manufacturing**: Eliminieren Sie Verschwendung – alles, was dem Kunden keinen Mehrwert bietet. Identifizieren und beseitigen Sie die „sieben Verschwendungen“: Überproduktion, Warten, Transport, Überverarbeitung, Lagerbestand, Bewegung und Mängel.

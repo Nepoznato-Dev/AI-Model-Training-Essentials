@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Pemasaran dan Strategi Digital
-Pemasaran adalah cara bisnis menciptakan, mengkomunikasikan, dan memberikan nilai kepada pelanggan. Ini bukan hanya periklanan — ini adalah keseluruhan sistem untuk memahami apa yang dibutuhkan masyarakat, memposisikan produk untuk memenuhi kebutuhan tersebut, dan membangun hubungan yang mengubah pembeli menjadi pendukung. Revolusi digital tidak mengubah hal mendasar, namun mengubah alat, saluran, dan kecepatan terjadinya segala sesuatu.
+Pemasaran adalah cara bisnis menciptakan, mengkomunikasikan, dan memberikan nilai kepada pelanggan. Ini mencakup keseluruhan sistem dalam memahami kebutuhan pelanggan, memposisikan produk untuk memenuhi kebutuhan tersebut, dan membangun hubungan yang mengubah pembeli menjadi pendukung. Revolusi digital telah mengubah alat, saluran, dan kecepatan pemasaran, namun fundamentalnya tetap konsisten.
 ---
 
 ## Dasar-Dasar Pemasaran
@@ -113,7 +114,7 @@ Perjalanan dari orang asing menjadi pelanggan setia:
 | **Facebook** | 25+; luas | Grup, acara, iklan bertarget |
 | **Pinterest** | Penemuan visual; belanja | DIY, resep, fashion, rumah |
 ### Pemasaran Email
-| Metrik | Tolok Ukur | Apa yang Dikatakannya kepada Anda |
+| Metrik | Tolok Ukur | Apa yang Diberitahukannya kepada Anda |
 |--------|-----------|-------------------|
 | **Tarif terbuka** | 15–25% | Efektivitas baris subjek |
 | **Rasio klik-tayang (RKT)** | 2–5% | Relevansi konten dan kekuatan CTA |
@@ -127,7 +128,7 @@ Perjalanan dari orang asing menjadi pelanggan setia:
 ### Metrik yang Penting
 | Metrik | Rumus | Apa Artinya |
 |--------|---------|---------------|
-| **CAC** (Biaya Akuisisi Pelanggan) | Total pembelanjaan pemasaran ÷ pelanggan baru | Berapa biaya untuk mendapatkan satu pelanggan |
+| **CAC** (Biaya Akuisisi Pelanggan) | Total pembelanjaan pemasaran ± pelanggan baru | Berapa biaya untuk mendapatkan satu pelanggan |
 | **CLV** (Nilai Seumur Hidup Pelanggan) | Pendapatan rata-rata per pelanggan × margin kotor × rata-rata umur pelanggan | Nilai total yang dihasilkan pelanggan dari waktu ke waktu |
 | **ROAS** (Laba atas Belanja Iklan) | Pendapatan dari iklan pembelanjaan iklan | Apakah periklanan menguntungkan? |
 | **Tingkat Konversi** | Konversi total pengunjung × 100 | Seberapa efektif Anda mengubah pengunjung menjadi pelanggan |
@@ -207,4 +208,4 @@ Peretasan pertumbuhan adalah titik temu antara pemasaran, produk, dan data — b
 ---
 
 ## Ringkasan
-Pemasaran pada intinya adalah tentang memahami orang – apa yang mereka butuhkan, apa yang mereka takuti, apa yang memotivasi mereka untuk bertindak. Perangkat digital telah berubah secara dramatis, namun fundamentalnya belum berubah: kenali pelanggan Anda, berikan nilai nyata, komunikasikan dengan jelas, ukur segalanya, dan lakukan iterasi. Pemasaran terbaik tidak terasa seperti pemasaran — melainkan seperti bantuan.
+Pemasaran pada dasarnya adalah tentang memahami orang – kebutuhan, kekhawatiran, dan motivasi mereka. Perangkat digital telah banyak berkembang, namun landasannya tetap sama: memahami pelanggan, memberikan nilai, berkomunikasi secara efektif, mengukur hasil, dan mengulanginya. Pemasaran yang efektif sangat selaras dengan kebutuhan pelanggan sehingga pemasaran dirasakan sebagai bantuan dan bukan promosi.

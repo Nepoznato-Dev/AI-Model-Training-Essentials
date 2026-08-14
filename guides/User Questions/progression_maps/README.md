@@ -71,11 +71,11 @@ journey
 |-------|-------|----------|------|---------|
 | 1 | Python Basics | [prerequisites/python_basics.md](../prerequisites/python_basics.md) | 2h | Hello World |
 | 2 | Terminal & Git | [prerequisites/](../prerequisites/) | 3h | Clone repo |
-| 3 | RAG Fundamentals | [guides/RAG/](../guides/RAG/) | 8h | [RAG Chatbot](../projects/rag-chatbot/) |
-| 4 | Transformers | [guides/Transformers/](../guides/Transformers/) | 12h | Sentiment Analyzer |
-| 5 | Advanced RAG | [guides/RAG/](../guides/RAG/) Ch 4-5 | 10h | Document Q&A System |
-| 6 | Agentic Systems | [guides/Agentic_Systems/](../guides/Agentic_Systems/) | 10h | Auto-research Agent |
-| 7 | Fine-tuning | [guides/Transformers/](../guides/Transformers/) | 15h | Custom Domain Model |
+| 3 | RAG Fundamentals | [RAG Guide](../../RAG/) | 8h | [RAG Chatbot](../../projects/rag-chatbot/) |
+| 4 | Transformers | [Transformers Guide](../../Transformers/) | 12h | Sentiment Analyzer |
+| 5 | Advanced RAG | [RAG Guide](../../RAG/) Ch 4-5 | 10h | Document Q&A System |
+| 6 | Agentic Systems | [Agentic Systems Guide](../../Agentic_Systems/) | 10h | Auto-research Agent |
+| 7 | Fine-tuning | [Transformers Guide](../../Transformers/) | 15h | Custom Domain Model |
 | 8 | Deployment | Infrastructure Guide | 8h | Deploy to Cloud |
 
 **Total Time**: ~68 hours (2-3 weeks full-time)
@@ -121,10 +121,10 @@ journey
 |-------|-------|----------|------|---------|
 | 1 | Python & Linear Algebra | [prerequisites/](../prerequisites/) | 5h | Matrix operations |
 | 2 | Neural Network Basics | Infrastructure Guide | 8h | Simple NN |
-| 3 | CNN Fundamentals | [guides/CNNs/](../guides/CNNs/) | 12h | Image Classifier |
-| 4 | Transfer Learning | [guides/CNNs/](../guides/CNNs/) | 8h | Custom Dataset |
-| 5 | Object Detection | [guides/CNNs/](../guides/CNNs/) | 10h | Object Detector |
-| 6 | GANs | [guides/GANs/](../guides/GANs/) | 15h | Image Generator |
+| 3 | CNN Fundamentals | [CNN Guide](../../CNNs/) | 12h | Image Classifier |
+| 4 | Transfer Learning | [CNN Guide](../../CNNs/) | 8h | Custom Dataset |
+| 5 | Object Detection | [CNN Guide](../../CNNs/) | 10h | Object Detector |
+| 6 | GANs | [GANs Guide](../../GANs/) | 15h | Image Generator |
 | 7 | Video Analysis | Advanced CV Guide | 12h | Action Recognition |
 | 8 | Deployment | Infrastructure Guide | 10h | Real-time Pipeline |
 
@@ -170,12 +170,12 @@ journey
 | Order | Topic | Resource | Time | Project |
 |-------|-------|----------|------|---------|
 | 1 | System Design Basics | Online resources | 10h | Design doc |
-| 2 | RAG Systems | [guides/RAG/](../guides/RAG/) | 10h | RAG Chatbot |
-| 3 | Transformers | [guides/Transformers/](../guides/Transformers/) | 12h | API Service |
-| 4 | Agentic Systems | [guides/Agentic_Systems/](../guides/Agentic_Systems/) | 12h | Multi-agent |
-| 5 | Orchestration | [guides/Orchestration_Patterns/](../guides/Orchestration_Patterns/) | 10h | Workflow Engine |
-| 6 | Infrastructure | [guides/Infrastructure_Layers/](../guides/Infrastructure_Layers/) | 15h | Deploy Cluster |
-| 7 | MoE Systems | [guides/MoE/](../guides/MoE/) | 12h | Scalable Model |
+| 2 | RAG Systems | [RAG Guide](../../RAG/) | 10h | RAG Chatbot |
+| 3 | Transformers | [Transformers Guide](../../Transformers/) | 12h | API Service |
+| 4 | Agentic Systems | [Agentic Systems Guide](../../Agentic_Systems/) | 12h | Multi-agent |
+| 5 | Orchestration | [Orchestration Patterns](../../Orchestration_Patterns/) | 10h | Workflow Engine |
+| 6 | Infrastructure | [Infrastructure Layers](../../Infrastructure_Layers/) | 15h | Deploy Cluster |
+| 7 | MoE Systems | [MoE Guide](../../MoE/) | 12h | Scalable Model |
 | 8 | Production Patterns | Case Studies | 10h | Full System |
 
 **Total Time**: ~91 hours (4-5 weeks full-time)
@@ -330,10 +330,10 @@ While this course doesn't issue certificates, you can validate your learning:
 ## 🔗 Related Resources
 
 - **[Prerequisites](../prerequisites/)** - Start here if you're new
-- **[Projects](../projects/)** - Hands-on learning
+- **[Projects](../../projects/)** - Hands-on learning
 - **[Case Studies](../case_studies/)** - Real-world examples
-- **[Skills Library](../skills/)** - Specific skill development
-- **[Guides](../guides/)** - Deep theoretical knowledge
+- **[Skills Library](../../skills/)** - Specific skill development
+- **[Guides](../../)** - Deep theoretical knowledge
 
 ---
 
@@ -343,6 +343,6 @@ While this course doesn't issue certificates, you can validate your learning:
 
 Start small, build consistently, and adjust as you learn.
 
-[Start Learning](../prerequisites/) | [View Projects](../projects/) | [Read Guides](../guides/)
+[Start Learning](../prerequisites/) | [View Projects](../../projects/) | [Read Guides](../../)
 
 </div>

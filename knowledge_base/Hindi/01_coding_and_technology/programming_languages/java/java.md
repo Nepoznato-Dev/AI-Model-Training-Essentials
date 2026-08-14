@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "जावा"
-विवरण: "जावा प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [जावा, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "30 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Java"
+description: "Comprehensive reference for the Java programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [java, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "30 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # जावा
 जावा एक सांख्यिकीय रूप से टाइप की गई, ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग भाषा है, जिसे सन माइक्रोसिस्टम्स में जेम्स गोस्लिंग द्वारा बनाया गया था और 1995 में जारी किया गया था। इसका डिज़ाइन दर्शन - "एक बार लिखें, कहीं भी चलाएं" (WORA) - जावा वर्चुअल मशीन (JVM) के माध्यम से प्राप्त किया जाता है, जो संकलित जावा कोड को JVM कार्यान्वयन वाले किसी भी प्लेटफ़ॉर्म पर चलाने की अनुमति देता है। जावा इतिहास में सबसे व्यापक रूप से उपयोग की जाने वाली प्रोग्रामिंग भाषाओं में से एक है, जो एंटरप्राइज़ बैकएंड, एंड्रॉइड ऐप्स, बड़े डेटा सिस्टम और वित्तीय सेवाओं को सशक्त बनाती है।
 लगभग 30 वर्ष पुराना होने के बावजूद, जावा का विकास जारी है। आधुनिक जावा (संस्करण 17+) में रिकॉर्ड, सीलबंद कक्षाएं, पैटर्न मिलान, आभासी धागे और एक बढ़ता हुआ पारिस्थितिकी तंत्र शामिल है जो नई भाषाओं के साथ प्रतिस्पर्धा करता है।
@@ -689,7 +694,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | **स्कैला** | कार्यात्मक + ओओपी हाइब्रिड; शक्तियां अपाचे स्पार्क |
 | **क्लोजर** | जेवीएम पर लिस्प बोली; कार्यात्मक प्रोग्रामिंग |
 | **ग्रूवी** | जेवीएम के लिए गतिशील स्क्रिप्टिंग; ग्रैडल बिल्ड फ़ाइलों में उपयोग किया जाता है |
-ये सभी जावा लाइब्रेरीज़ का उपयोग कर सकते हैं, और जावा अपनी लाइब्रेरीज़ का उपयोग कर सकता है। जेवीएम सिर्फ जावा ही नहीं, बल्कि एक प्लेटफॉर्म है।
+ये सभी जावा लाइब्रेरीज़ का उपयोग कर सकते हैं, और जावा उनकी लाइब्रेरीज़ का उपयोग कर सकता है। जेवीएम सिर्फ जावा ही नहीं, बल्कि एक प्लेटफॉर्म है।
 ---
 
 ## जावा संस्करण
@@ -713,6 +718,377 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | माइक्रोसर्विसेज | स्प्रिंग बूट + क्लाउड-नेटिव फ्रेमवर्क | सरल सेवाओं के लिए जाएं |
 | सरल स्क्रिप्ट | बहुत ज्यादा समारोह | अजगर, शैल |
 | सीएलआई उपकरण | धीमा स्टार्टअप | जाओ, जंग |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: जावा में`==`और`.equals()`के बीच क्या अंतर है?
+**ए:**`==`ऑब्जेक्ट संदर्भ (पहचान) की तुलना करता है - यह जांचता है कि क्या दो चर मेमोरी में एक ही ऑब्जेक्ट को इंगित करते हैं। `.equals()`वस्तु सामग्री (मूल्य समानता) की तुलना करता है। आदिमों के लिए (`int`,`double`),`==`सीधे मूल्यों की तुलना करता है। ऑब्जेक्ट के लिए (`String` सहित), सामग्री की तुलना करने के लिए हमेशा`.equals()`का उपयोग करें। एकमात्र अपवाद`null`से तुलना करना है, जहां`==`सही है।
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### Q2: JVM कचरा संग्राहक कैसे काम करता है, और मुझे किसका उपयोग करना चाहिए?
+**ए:** जीसी स्वचालित रूप से उन वस्तुओं से मेमोरी पुनः प्राप्त करता है जो अब पहुंच योग्य नहीं हैं। आधुनिक JVM (21+) कई संग्राहकों की पेशकश करते हैं: G1 (डिफ़ॉल्ट, संतुलित), ZGC (अल्ट्रा-लो पॉज़ टाइम, <1ms), और शेनान्डाह (लो पॉज़, OpenJDK)। अधिकांश अनुप्रयोगों के लिए, डिफ़ॉल्ट G1 ठीक है। विलंबता-संवेदनशील सेवाओं के लिए, ZGC (`-XX:+UseZGC`) का उपयोग करें। थ्रूपुट-उन्मुख बैच प्रोसेसिंग के लिए, समानांतर जीसी (`-XX:+UseParallelGC`) का उपयोग करें।
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### Q3: मुझे`Stream API`बनाम पारंपरिक लूप का उपयोग कब करना चाहिए?
+**ए:** जब ऑपरेशन एक स्पष्ट पाइपलाइन (फ़िल्टर, मैप, कम करें) हो तो स्ट्रीम का उपयोग करें - वे इरादे को बेहतर ढंग से व्यक्त करते हैं और`.parallelStream()`के साथ आसानी से समानांतर होते हैं। सरल पुनरावृत्तियों के लिए पारंपरिक लूप का उपयोग करें, जब आपको बाहरी स्थिति को संशोधित करने की आवश्यकता होती है, जब प्रदर्शन महत्वपूर्ण होता है (धाराओं में ओवरहेड होता है), या जब तर्क में जटिल नियंत्रण प्रवाह शामिल होता है (ब्रेक, जारी रखें, एकाधिक रिटर्न)। सरल`for-each`संचालन के लिए स्ट्रीम से बचें।
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### Q4: आधुनिक जावा में रिकॉर्ड, सीलबंद कक्षाएं और पैटर्न मिलान क्या हैं?
+**ए:** रिकॉर्ड्स (जावा 16) अपरिवर्तनीय डेटा वाहक हैं - वे कंस्ट्रक्टर, गेटर्स, `equals`, `hashCode`, और`toString`को स्वचालित रूप से उत्पन्न करते हैं। सीलबंद कक्षाएं (जावा 17) प्रतिबंधित करती हैं कि कौन सी कक्षाएं उनका विस्तार कर सकती हैं - परिमित प्रकार के पदानुक्रमों के मॉडलिंग के लिए उपयोगी। पैटर्न मिलान (जावा 21)`switch`अभिव्यक्तियों को प्रकार, रिकॉर्ड और मानों को नष्ट करने की अनुमति देता है - वर्बोज़`instanceof`श्रृंखलाओं को प्रतिस्थापित करता है।
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### Q5: मैं चेक किए गए बनाम अनचेक किए गए अपवादों को ठीक से कैसे प्रबंधित करूं?
+**ए:** चेक किए गए अपवाद (`IOException`, `SQLException`) को`throws`में घोषित किया जाना चाहिए या पकड़ा जाना चाहिए - वे पुनर्प्राप्त करने योग्य स्थितियों का प्रतिनिधित्व करते हैं जिनके बारे में कॉल करने वाले को पता होना चाहिए। अनियंत्रित अपवाद (`RuntimeException` उपवर्ग जैसे `NullPointerException`, `IllegalArgumentException`) प्रोग्रामिंग बग का प्रतिनिधित्व करते हैं। सर्वोत्तम अभ्यास: चेक किए गए अपवादों का संयम से उपयोग करें (वे युग्मन बनाते हैं), अपेक्षित अनुपस्थिति के लिए`Optional`को प्राथमिकता दें, और एपीआई सीमाओं को पार करते समय चेक किए गए अपवादों को अनियंत्रित अपवादों में लपेटें।
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक थ्रेड-सुरक्षित निर्माता-उपभोक्ता पाइपलाइन बनाएं
+**समस्या कथन:** जावा में एक निर्माता-उपभोक्ता पाइपलाइन डिज़ाइन करें जहां कई निर्माता कार्य आइटम उत्पन्न करते हैं, कई उपभोक्ता उन्हें समवर्ती रूप से संसाधित करते हैं, और सिस्टम शेष वस्तुओं की निकासी के साथ सुचारु शटडाउन का समर्थन करता है।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) उत्पादकों और उपभोक्ताओं के बीच काम की वस्तुओं को बफर करने के लिए एक सीमित कतार, (2) वस्तुओं को जोड़ने वाले कई निर्माता धागे, (3) वस्तुओं को संसाधित करने वाले कई उपभोक्ता धागे, (4) शटडाउन का संकेत देने और शेष वस्तुओं को निकालने के लिए एक तंत्र। जावा का`BlockingQueue`इसी उद्देश्य से बनाया गया है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- असीमित मेमोरी वृद्धि को रोकने के लिए`ArrayBlockingQueue`(बाउंडेड) का उपयोग करें।
+- शटडाउन सिग्नलिंग के लिए जहर की गोली पैटर्न का उपयोग करें।
+- थ्रेड पूल प्रबंधन के लिए`ExecutorService`का उपयोग करें।
+- सभी उपभोक्ताओं के जल निकासी समाप्त होने तक प्रतीक्षा करने के लिए`CountDownLatch`का उपयोग करें।
+**चरण 3 - समाधान लागू करें:**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- बंधी हुई कतार OOM को रोकती है:`ArrayBlockingQueue(1000)`मेमोरी को सीमित करती है।
+- ज़हर की गोली का पैटर्न: प्रत्येक उपभोक्ता अपनी गोली प्राप्त करने के बाद साफ़-साफ़ बाहर निकल जाता है।
+- टाइमआउट के साथ`poll(1, SECONDS)`उपभोक्ताओं को उत्पादकों के धीमे होने पर हमेशा के लिए ब्लॉक होने से रोकता है।
+- उत्पादन: अनबाउंडेड के लिए `LinkedBlockingQueue`, या अल्ट्रा-लो-विलंबता पाइपलाइनों के लिए`Disruptor`(LMAX) का उपयोग करें।
+### समस्या 2: एक कस्टम एनोटेशन-आधारित सत्यापनकर्ता लागू करें
+**समस्या कथन:** कस्टम एनोटेशन का उपयोग करके एक सत्यापन ढांचा बनाएं। उपयोगकर्ता`@NotNull`,`@Min(0)`,`@Max(100)`,`@Size(min=1, max=50)`के साथ फ़ील्ड को एनोटेट करते हैं और उल्लंघनों की सूची प्राप्त करने के लिए`Validator.validate(obj)`पर कॉल करते हैं।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) मापदंडों के साथ कस्टम एनोटेशन, (2) एक प्रतिबिंब-आधारित सत्यापनकर्ता जो रनटाइम पर एनोटेशन पढ़ता है, (3) एक परिणाम ऑब्जेक्ट जिसमें सभी सत्यापन त्रुटियां शामिल हैं। यह जावा की एनोटेशन प्रोसेसिंग और प्रतिबिंब क्षमताओं को प्रदर्शित करता है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+-`@Retention(RUNTIME)`और`@Target(FIELD)`के साथ एनोटेशन परिभाषित करें।
+- फ़ील्ड को पुनरावृत्त करने के लिए`Class.getDeclaredFields()`का उपयोग करें।
+- एनोटेशन मान पढ़ने के लिए`Field.getAnnotation()`का उपयोग करें।
+- एनोटेशन बाधाओं के विरुद्ध फ़ील्ड मानों की तुलना करें।
+- उल्लंघनों को एक सूची में एकत्रित करें।
+**चरण 3 - समाधान लागू करें:**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- प्रतिबिंब ओवरहेड: सत्यापन के लिए स्वीकार्य (प्रति अनुरोध एक बार बुलाया जाता है)। हॉट पाथ, कैश फ़ील्ड लुकअप के लिए या कंपाइल-टाइम एनोटेशन प्रोसेसिंग (जैसे हाइबरनेट वैलिडेटर) का उपयोग करें।
+- एक्स्टेंसिबिलिटी:`validate()`में एनोटेशन + एक हैंडलर ब्लॉक बनाकर नए एनोटेशन जोड़ें।
+- उत्पादन:`jakarta.validation`(बीन वैलिडेशन 3.0) का उपयोग करें - यह एनोटेशन प्रोसेसर के माध्यम से संकलन-समय प्रसंस्करण के साथ यह सब और बहुत कुछ करता है।
+### समस्या 3: पुनः प्रयास के साथ एक दर-सीमित HTTP क्लाइंट बनाएं
+**समस्या कथन:** एक HTTP क्लाइंट रैपर बनाएं जो स्वचालित रूप से घातीय बैकऑफ़ के साथ विफल अनुरोधों का पुन: प्रयास करता है, दर सीमा का सम्मान करता है, और सर्किट ब्रेकिंग का समर्थन करता है (किसी विफल सेवा को कॉल करना बंद करें)।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) घातीय बैकऑफ़ और घबराहट के साथ तर्क का पुन: प्रयास करें, (2) लक्ष्य सेवा पर दबाव डालने से बचने के लिए दर सीमित करें, (3) सर्किट ब्रेकर पैटर्न - एन लगातार विफलताओं के बाद, कूलडाउन अवधि के लिए सेवा को कॉल करना बंद करें। ये तीन रचनायोग्य चिंताएँ हैं।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- बेस क्लाइंट के रूप में`java.net.http.HttpClient`(जावा 11+) का उपयोग करें।
+- बैकऑफ़ के लिए`Thread.sleep`के साथ एक रैपर के रूप में पुनः प्रयास लागू करें।
+- दर सीमित करने के लिए`Semaphore`(या टोकन बकेट के लिए `java.time`) का उपयोग करें।
+- सर्किट ब्रेकर को एक स्टेट मशीन के रूप में लागू करें: बंद → खुला → आधा खुला।
+**चरण 3 - समाधान लागू करें:**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- घबराहट के साथ घातीय बैकऑफ गड़गड़ाहट वाले झुंड को रोकता है (सभी पुनः प्रयास एक ही समय में टकराते हैं)।
+- सर्किट ब्रेकर:`failureThreshold`की लगातार विफलताओं के बाद, सर्किट`cooldownMs`के लिए खुलता है - कोई अनुरोध नहीं भेजा जाता है, जिससे विफल सेवा की सुरक्षा होती है।
+- दर सीमक:`Semaphore`आवधिक पुनःपूर्ति कैप थ्रूपुट के साथ।
+- उत्पादन:`resilience4j`का उपयोग करें - यह उचित कार्यान्वयन, मेट्रिक्स और स्प्रिंग बूट एकीकरण के साथ सभी तीन पैटर्न (पुनः प्रयास, दर सीमक, सर्किट ब्रेकर) प्रदान करता है।
 ---
 
 ## सारांश

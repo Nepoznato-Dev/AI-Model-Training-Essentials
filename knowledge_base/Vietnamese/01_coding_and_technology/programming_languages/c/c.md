@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C
 C là ngôn ngữ lập trình thủ tục, có mục đích chung được tạo bởi Dennis Ritchie tại Bell Labs từ năm 1969 đến năm 1973. Nó được thiết kế để triển khai hệ điều hành Unix và nó vẫn là một trong những ngôn ngữ lập trình được sử dụng rộng rãi nhất trong hơn 50 năm sau. C cung cấp khả năng truy cập bộ nhớ cấp thấp, một thư viện tiêu chuẩn tối thiểu và ánh xạ rõ ràng tới các lệnh máy -- khiến nó trở thành nền tảng cho hầu hết các máy tính hiện đại được xây dựng.
 C là ngôn ngữ đằng sau các hệ điều hành (Linux, nhân Windows, macOS), hệ thống nhúng, công cụ cơ sở dữ liệu (SQLite, PostgreSQL), trình biên dịch (CPython của Python, MRI của Ruby) và hầu như mọi thời gian chạy ngôn ngữ lập trình khác. Hiểu C là hiểu cách máy tính thực sự hoạt động.
@@ -79,7 +80,7 @@ int main(void) {
 ```
 
 ### Biến và kiểu
-C được gõ tĩnh - mọi biến đều có kiểu cố định được biết tại thời điểm biên dịch.
+C được gõ tĩnh - mỗi biến có một kiểu cố định được biết đến tại thời điểm biên dịch.
 ```c
 int count = 42;              // 4 bytes (typically)
 float pi = 3.14159f;         // 4 bytes
@@ -214,14 +215,14 @@ double average(int count, ...) {
 ## Thư viện chuẩn
 | Tiêu đề | Mục đích | Chức năng chung |
 |--------|----------|--------|
-|  __BẢO VỆ_0__ | Đầu vào/đầu ra | printf, scanf, fopen, fgets, fprintf |
-|  __BẢO VỆ_1__ | Tiện ích chung | malloc, miễn phí, thoát, atoi, rand, qsort |
-|  __BẢO VỆ_2__ | Hoạt động chuỗi | strlen, strcpy, strncpy, strcmp, memcpy |
-|  __BẢO VỆ_3__ | Toán học | sin, cos, sqrt, pow, fabs, trần, sàn |
-|  __BẢO VỆ_4__ | Phân loại nhân vật | isalpha, isdigit, toupper, tower |
-|  __BẢO VỆ_5__ | Ngày giờ | thời gian, đồng hồ, chênh lệch thời gian, strftime |
-|  __BẢO VỆ_6__ | Xác nhận gỡ lỗi | khẳng định(điều kiện) |
-|  __BẢO VỆ_7__ | Mã lỗi | errno, perror, strerror |
+| `<stdio.h>`| Đầu vào/đầu ra | printf, scanf, fopen, fgets, fprintf |
+| `<stdlib.h>`| Tiện ích chung | malloc, miễn phí, thoát, atoi, rand, qsort |
+| `<string.h>`| Hoạt động chuỗi | strlen, strcpy, strncpy, strcmp, memcpy |
+| `<math.h>`| Toán học | sin, cos, sqrt, pow, fabs, trần, sàn |
+| `<ctype.h>`| Phân loại nhân vật | isalpha, isdigit, toupper, tower |
+| `<time.h>`| Ngày giờ | thời gian, đồng hồ, chênh lệch thời gian, strftime |
+| `<assert.h>`| Xác nhận gỡ lỗi | khẳng định(điều kiện) |
+| `<errno.h>`| Mã lỗi | errno, perror, strerror |
 ---
 
 ## Cú pháp & Mẫu nâng cao
@@ -632,11 +633,11 @@ print(lib.c_add(3, 5))  # 8
 ### Gọi C từ các ngôn ngữ khác
 | Ngôn ngữ | Cơ chế | Ví dụ |
 |----------|-------------|----------|
-| Python | ctypes, cffi |  __BẢO VỆ_0__ |
-| Ruby | Fiddle |  __BẢO VỆ_1__ |
-| Java | JNI |  __BẢO VỆ_2__ |
-| C++ | bên ngoài "C" |  __BẢO VỆ_3__ |
-| rỉ sét | bên ngoài "C" + FFI |  __BẢO VỆ_4__ |
+| Python | ctypes, cffi | `ctypes.CDLL("./lib.so")`|
+| Ruby | Fiddle | `Fiddle.dlopen("./lib.so")`|
+| Java | JNI | `System.loadLibrary("mylib")`|
+| C++ | bên ngoài "C" | `extern "C" void my_func();`|
+| rỉ sét | bên ngoài "C" + FFI | `extern "C" { fn my_func(); }`|
 ---
 
 ## Mẫu thiết kế
@@ -852,6 +853,514 @@ make clean    # Removes build artifacts
 | C17 | 2018 | Sửa lỗi và làm rõ (không có tính năng mới) |
 | C23 | 2024 | nullptr, typeof, constexpr, bộ tiền xử lý cải tiến |
 Hầu hết mã sản xuất đều nhắm đến C11 hoặc C17. C23 mang lại tiện ích hiện đại nhưng việc áp dụng cần có thời gian.
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Sự khác biệt giữa con trỏ và mảng trong C là gì?
+**A:** Mảng và con trỏ có liên quan nhưng khác nhau. Mảng là một khối bộ nhớ liền kề có kích thước cố định được xác định tại thời điểm biên dịch. Con trỏ là một biến chứa địa chỉ bộ nhớ. Mảng phân rã thành con trỏ khi được truyền cho các hàm, nhưng`sizeof(array)`cho biết tổng kích thước trong khi`sizeof(pointer)`chỉ cung cấp kích thước con trỏ (4 hoặc 8 byte). Tên mảng không phải là giá trị có thể sửa đổi - bạn không thể thực hiện`arr++`.
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Câu 2: Làm cách nào để quản lý bộ nhớ đúng cách và tránh rò rỉ?
+**A:** Mỗi`malloc`/`calloc`phải có`free`tương ứng. Các lỗi thường gặp: quên giải phóng (rò rỉ), giải phóng hai lần (hành vi không xác định), sử dụng bộ nhớ sau khi giải phóng (use-after-free) và không kiểm tra giá trị trả về`malloc`(NULL khi thất bại). Cách thực hành tốt nhất: phân bổ và giải phóng trong cùng một mô-đun, sử dụng mẫu "dọn dẹp goto" để xử lý lỗi và luôn đặt con trỏ giải phóng thành NULL.
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Câu 3: Cách tốt nhất để xử lý lỗi trong C là gì?
+**A:** C không có ngoại lệ. Xử lý lỗi sử dụng các giá trị trả về (mã lỗi, con trỏ NULL, giá trị âm). Mẫu chuẩn: các hàm trả về mã trạng thái hoặc NULL khi bị lỗi và đặt`errno`cho các lệnh gọi hệ thống. Sử dụng mẫu "goto cleanup" để dọn dẹp tài nguyên khi có lỗi. Luôn kiểm tra các giá trị trả về của`malloc`,`fopen`và các hàm khác có thể bị lỗi.
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Câu hỏi 4: Cấu trúc, liên kết và trường bit khác nhau như thế nào trong cách bố trí bộ nhớ?
+**A:** Cấu trúc sắp xếp các thành viên một cách tuần tự với phần đệm có thể có để căn chỉnh. Các liên minh xếp chồng tất cả các thành viên tại cùng một vị trí bộ nhớ - kích thước bằng thành viên lớn nhất. Bitfield gói nhiều giá trị vào một số nguyên duy nhất. Cấu trúc dành cho dữ liệu không đồng nhất, các kết hợp để sắp xếp kiểu hoặc tiết kiệm dung lượng khi chỉ có một trường hoạt động và các trường bit để lưu trữ cờ nhỏ gọn.
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Câu 5: Con trỏ hàm là gì và khi nào tôi nên sử dụng chúng?
+**A:** Con trỏ hàm lưu trữ địa chỉ của hàm và cho phép gọi lại, đa hình và kiến ​​trúc plugin. Chúng là nền tảng trong cách tiếp cận của C đối với các hàm bậc cao hơn (như`qsort`,`bsearch`). Khai báo chúng theo cú pháp: `return_type (*name)(parameter_types)`.
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Bài toán 1: Triển khai mảng động (Vector)
+**Báo cáo vấn đề:** Triển khai một mảng động trong C tự động phát triển khi các phần tử được thêm vào, hỗ trợ phần bổ sung khấu hao O(1) và cung cấp khả năng dọn dẹp thích hợp. Đây là C tương đương với C++`std::vector`.
+**Bước 1 — Tìm hiểu vấn đề:**
+Mảng động cần: (1) bộ đệm được phân bổ heap, (2) theo dõi kích thước (các phần tử đã sử dụng) và dung lượng (các vị trí được phân bổ), (3) phân bổ lại khi kích thước đạt đến dung lượng, (4) dọn dẹp bộ nhớ thích hợp. Hệ số tăng trưởng gấp 2 lần sẽ mang lại phần bổ sung khấu hao O(1).
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`malloc`để phân bổ ban đầu,`realloc`để tăng trưởng.
+- Lưu trữ con trỏ dữ liệu, kích thước và dung lượng trong struct.
+- Tăng trưởng gấp đôi công suất khi`size == capacity`.
+- Cung cấp các hoạt động`push`,`pop`,`get`,`set`và `free`.
+**Bước 3 — Triển khai giải pháp:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Phân bổ O(1) push: nhân đôi nghĩa là mỗi phần tử được sao chép tổng cộng tối đa O(log n) lần.
+- Việc kiểm tra giới hạn trong`vec_get`và`vec_pop`sẽ sớm phát hiện lỗi — cần thiết trong C nơi không có mạng an toàn khi chạy.
+- Bộ nhớ: sau 100 lần đẩy bắt đầu từ dung lượng 4, dung lượng đạt 128 (4→8→16→32→64→128).
+- Sản xuất: sử dụng`shrink_to_fit`(realloc theo kích thước chính xác) khi phát triển xong để lấy lại bộ nhớ chưa sử dụng.
+### Bài toán 2: Xây dựng bảng băm đơn giản
+**Báo cáo vấn đề:** Triển khai bảng băm với các khóa chuỗi và giá trị số nguyên bằng cách sử dụng chuỗi riêng biệt để giải quyết xung đột. Hỗ trợ các thao tác chèn, tra cứu và xóa.
+**Bước 1 — Tìm hiểu vấn đề:**
+Bảng băm ánh xạ các khóa tới các chỉ mục mảng thông qua hàm băm. Các va chạm (các khóa khác nhau ánh xạ tới cùng một chỉ mục) được giải quyết bằng chuỗi riêng biệt: mỗi nhóm là một danh sách các mục được liên kết. Chúng ta cần: hàm băm, chèn, tra cứu, xóa và dọn dẹp.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng hàm băm FNV-1a để phân phối khóa chuỗi tốt.
+- Mảng con trỏ xô (đầu danh sách liên kết).
+- Theo dõi hệ số tải; thay đổi kích thước khi hệ số tải vượt quá ngưỡng.
+- Tất cả các phép toán đều có giá trị trung bình là O(1), trường hợp xấu nhất là O(n).
+**Bước 3 — Triển khai giải pháp:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Trung bình O(1) cho thao tác chèn/tra cứu/xóa với hàm băm tốt và hệ số tải hợp lý.
+- FNV-1a cung cấp khả năng phân phối tuyệt vời cho các khóa chuỗi với khả năng tính toán tối thiểu.
+- Kỹ thuật con trỏ tới con trỏ (`Entry **pp`) trong`hashmap_remove`xử lý một cách tinh tế cả việc xóa đầu danh sách và giữa danh sách mà không gặp trường hợp đặc biệt nào.
+- Sản xuất: thêm tính năng thử lại khi hệ số tải vượt quá ngưỡng. Sử dụng địa chỉ mở (thăm dò tuyến tính) để có hiệu suất bộ đệm tốt hơn.
+### Vấn đề 3: Triển khai bộ đệm vòng cho nhà sản xuất-người tiêu dùng
+**Báo cáo vấn đề:** Triển khai bộ đệm vòng dành cho người tiêu dùng đơn lẻ dành cho một nhà sản xuất không khóa trong C để giao tiếp giữa các luồng hiệu suất cao mà không cần phân bổ động trong quá trình hoạt động.
+**Bước 1 — Tìm hiểu vấn đề:**
+Bộ đệm vòng (bộ đệm tròn) sử dụng mảng có kích thước cố định với các chỉ số đọc và ghi. Khi bộ đệm đầy, người ghi sẽ chặn hoặc ghi đè. Đối với SPSC (người tiêu dùng đơn một nhà sản xuất), chúng ta có thể sử dụng các thao tác nguyên tử thay vì khóa để có thông lượng tối đa.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Mảng có kích thước cố định được phân bổ một lần khi khởi tạo.
+-`head`(vị trí đọc) và`tail`(vị trí ghi) là chỉ số nguyên tử.
+- Tiến bộ của nhà sản xuất`tail`; tiến bộ của người tiêu dùng `head`.
+- Bộ đệm trống khi `head == tail`; đầy khi`(tail + 1) % capacity == head`.
+- Sử dụng nguyên tử C11 với thứ tự bộ nhớ phù hợp.
+**Bước 3 — Triển khai giải pháp:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Không khóa: chỉ hoạt động nguyên tử - không có mutex, không chuyển đổi ngữ cảnh.
+- Thứ tự bộ nhớ:`release`khi ghi đảm bảo dữ liệu được hiển thị trước khi cập nhật chỉ mục; `acquire`khi đọc đảm bảo chúng ta nhìn thấy dữ liệu sau khi đọc chỉ mục.
+- Công suất Power-of-2: bật`& (capacity - 1)`thay vì`% capacity`— nhanh hơn đáng kể.
+- Thông lượng: hàng tỷ thao tác mỗi giây trên phần cứng hiện đại.
+- Sản xuất: thêm phần đệm giữa`head`và`tail`để ngăn chặn việc chia sẻ sai (mỗi phần trên dòng bộ đệm riêng).
 ---
 
 ## Bản tóm tắt

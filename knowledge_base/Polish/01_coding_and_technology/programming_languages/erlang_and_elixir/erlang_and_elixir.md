@@ -46,7 +46,7 @@ Elixir to nowoczesny język zbudowany na bazie maszyny wirtualnej Erlang (BEAM) 
 
 ## Dlaczego Erlang/Elixir ma znaczenie
 - **Model współbieżności**: Lekkie procesy z przekazywaniem komunikatów — bez stanu współdzielonego, bez blokad i zakleszczeń.
-- **Tolerancja na błędy**: Drzewa nadzorców automatycznie restartują procesy, które uległy awarii. Systemy sprawnie odzyskują siły po błędach.
+- **Tolerancja błędów**: Drzewa nadzorców automatycznie restartują procesy, które uległy awarii. Systemy sprawnie odzyskują siły po błędach.
 - **Rozpowszechniane według projektu**: węzły Erlang komunikują się w sposób przejrzysty między maszynami. Zbudowany dla klastrów.
 - **Ponowne ładowanie gorącego kodu**: Aktualizuj działające systemy bez przestojów. Krytyczne dla aplikacji telekomunikacyjnych i działających w czasie rzeczywistym.
 - **Dziewięć dziewiątek czasu sprawności**: Systemy Erlang osiągnęły niezawodność produkcyjną na poziomie 99,9999999%.
@@ -438,7 +438,7 @@ defmodule AppSupervisor do
 end
 ```
 
-### Zadanie i asynchronizacja/oczekiwanie
+### Zadanie i Asynchronizacja/Oczekiwanie
 ```elixir
 # Fire-and-forget tasks
 Task.start(fn -> IO.puts("Running in background") end)
@@ -847,7 +847,7 @@ end
 ### Narzędzia do profilowania
 | Narzędzie | Cel | Użycie |
 |------|---------|-------|
-| **:eprof** | Profilowanie na poziomie funkcji |  `:eprof.start()`, a następnie profil |
+| **:eprof** | Profilowanie na poziomie funkcji | `:eprof.start()`następnie profil |
 | **:fprof** | Szczegółowe profilowanie wykresu połączeń | `:fprof.profile(fn -> ... end)`|
 | **:obserwator** | Monitor systemu wizualnego | `:observer.start()`w IEx |
 | **Ławka** | Biblioteka testów porównawczych | Dodaj do działu |
@@ -926,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | Nauka o danych / ML | Nie ekosystem | Python, R |
 | Aplikacje mobilne | Nie nadaje się | Swift, Kotlin, Dart |
 | Proste interfejsy API REST | Możliwe, ale przesadne w przypadku małych usług | Idź, Node.js, Python |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jak działa filozofia Erlanga „pozwól temu się zawiesić”?
+**O:** Zamiast programowania defensywnego, Erlang pozwala na awarię procesów i uruchamia je ponownie za pośrednictwem nadzorców:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Pytanie 2: Jak działają rurociągi Elixir?
+**A:** Operator`|>`przekazuje wynik jednej funkcji jako pierwszy argument do następnej:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### P3: Jaka jest różnica między Erlangiem a Elixirem?
+**A:** Elixir działa na maszynie Erlang VM (BEAM) z nowoczesną składnią:
+- Elixir: operator potoku, makra, protokoły, interpolacja ciągów
+- Erlang: prostsza składnia, wbudowane OTP, bardziej przetestowane w boju
+— Obydwa korzystają z tego samego modelu współbieżności, maszyny wirtualnej i ekosystemu
+### P4: Jak GenServery działają w Elixir?
+**A:** GenServer to standardowa abstrakcja procesów stanowych:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### P5: Jak radzić sobie z błędami w Elixirze?
+**A:** Użyj`try/rescue`dla wyjątków,`{:ok, result} | {:error, reason}`dla oczekiwanych błędów:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Tworzenie odpornego na błędy magazynu klucz-wartość
+**Krok 1: Zrozum problem**
+Utwórz magazyn klucz-wartość, który przetrwa awarie procesów.
+**Krok 2: Zidentyfikuj podejście**
+Użyj GenServer z przełożonym.
+**Krok 3: Wdróż**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**Krok 4: Zweryfikuj**
+Zabij proces i sprawdź, czy uruchamia się ponownie w świeżym stanie.
+### Problem 2: Współbieżny skrobak sieciowy
+**Krok 1: Zrozum problem**
+Pobieraj wiele adresów URL jednocześnie i zbieraj wyniki.
+**Krok 2: Zidentyfikuj podejście**
+Użyj zadań Elixir do jednoczesnego wykonywania.
+**Krok 3: Wdróż**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**Krok 4: Optymalizacja**
+Dodaj ograniczenie szybkości, ponowne próby i przesyłanie strumieniowe dla dużych list adresów URL.
 ---
 
 ## Streszczenie

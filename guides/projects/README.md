@@ -334,6 +334,21 @@ graph TD
 
 ---
 
+## 📁 Guide-Specific Projects
+
+Each guide directory also contains a `projects/` folder with advanced, topic-specific implementations:
+
+| Guide | Projects Folder | What's Inside |
+|-------|----------------|---------------|
+| **[CNNs](../CNNs/)** | [`CNNs/projects/`](../CNNs/projects/) | ResNet classification, YOLO detection, U-Net segmentation |
+| **[GANs](../GANs/)** | [`GANs/projects/`](../GANs/projects/) | DCGAN generation, CycleGAN style transfer, SRGAN super-resolution |
+| **[GNNs](../GNNs/)** | [`GNNs/projects/`](../GNNs/projects/) | GCN node classification, GraphSAGE link prediction, GAT graph classification |
+| **[Agentic Systems](../Agentic_Systems/)** | [`Agentic_Systems/projects/`](../Agentic_Systems/projects/) | Agent with memory, multi-agent collaboration, tool-using agent |
+
+These projects are more advanced than the starter projects above and are designed to be completed after reading the corresponding guide chapters.
+
+---
+
 ## 💡 Tips for Success
 
 1. **Don't skip the comments:** Every line is explained for a reason
@@ -392,6 +407,7 @@ See existing projects for templates!
 - [Prerequisites Tutorials](../prerequisites/README.md) - Learn mathematics and ML fundamentals
 - [Terminal, Python, Git Basics](../User%20Questions/prerequisites/README.md) - Essential tools
 - [Common Errors](../errors/README.md) - Debugging guide
+- [Extended Error Guides](../User%20Questions/errors/README.md) - Detailed troubleshooting with diagnostic scripts
 - [Guides](../README.md) - In-depth theory and concepts
 - [Skills Library](../../skills/README.md) - Practice specific skills
 

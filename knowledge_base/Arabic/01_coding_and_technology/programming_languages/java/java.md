@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "جافا"
-description: "مرجع شامل للغة برمجة Java يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Java"
+description: "Comprehensive reference for the Java programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [جافا، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "30 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [java, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "30 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #جافا
 Java هي لغة برمجة موجهة للكائنات مكتوبة بشكل ثابت أنشأها جيمس جوسلينج في Sun Microsystems وتم إصدارها في عام 1995. ويتم تحقيق فلسفة التصميم الخاصة بها - "الكتابة مرة واحدة، والتشغيل في أي مكان" (WORA) - من خلال Java Virtual Machine (JVM)، والتي تسمح بتشغيل تعليمات Java البرمجية المترجمة على أي نظام أساسي يحتوي على تطبيق JVM. تعد Java واحدة من لغات البرمجة الأكثر استخدامًا في التاريخ، حيث تعمل على تشغيل الواجهات الخلفية للمؤسسات وتطبيقات Android وأنظمة البيانات الضخمة والخدمات المالية.
 على الرغم من أن عمرها ما يقرب من 30 عامًا، إلا أن Java مستمرة في التطور. تشتمل Java الحديثة (الإصدارات 17+) على سجلات وفئات مختومة ومطابقة الأنماط وخيوط افتراضية ونظام بيئي متنامي يتنافس مع اللغات الأحدث.
@@ -52,7 +57,7 @@ Java هي لغة برمجة موجهة للكائنات مكتوبة بشكل ث
 | **الإسهاب** | يتطلب نموذجًا معياريًا أكثر من Python أو Kotlin أو Go | استخدم Lombok والسجلات (Java 16+) وIDEs الحديثة |
 | **استخدام الذاكرة** | الحمل الزائد لـ JVM يعني ذاكرة أساسية أعلى | ضبط أعلام JVM؛ استخدم صور GraalVM الأصلية لعمليات النشر الصغيرة |
 | **وقت بدء التشغيل** | يمكن أن يكون إحماء JVM بطيئًا للعمليات قصيرة العمر | صورة GraalVM الأصلية، أو استخدم C/Go لأدوات CLI |
-| **الاستثناءات المحددة** | يفرض معالجة الاستثناءات التي قد لا تكون قابلة للاسترداد | استخدم الاستثناءات غير المحددة أو النمط`Optional`|
+| **الاستثناءات المحددة** | يفرض معالجة الاستثناءات التي قد لا تكون قابلة للاسترداد | استخدم الاستثناءات غير المحددة أو نمط`Optional`|
 | **لا توجد أنواع قيمة** | كل شيء كائن (حتى مشروع فالهالا) | استخدم المجموعات البدائية المتخصصة (Eclipse Collections، Trove) |
 ---
 
@@ -664,7 +669,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ### أدوات البناء
 | أداة | الغرض | ملاحظات |
 |------|---------|------|
-| **مافن** | أتمتة البناء + إدارة التبعية | مستند إلى XML (`pom.xml`); معيار الصناعة للمؤسسات |
+| **مافن** | أتمتة البناء + إدارة التبعية | مستند إلى XML (`pom.xml`)؛ معيار الصناعة للمؤسسات |
 | ** جرادل ** | أتمتة البناء + إدارة التبعية | رائع/كوتلين DSL؛ أسرع للمشاريع الكبيرة. يستخدمه أندرويد |
 ### الأطر
 | الإطار | المجال | الوصف |
@@ -696,7 +701,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | النسخة | سنة | الميزات الرئيسية |
 |---------|------|-------------|
 | جافا 8 | 2014 | **LTS** — Lambdas، Stream API، اختياري، الطرق الافتراضية. لا تزال تستخدم على نطاق واسع. |
-| جافا 11 | 2018 | **LTS** — واجهة برمجة تطبيقات عميل HTTP،`var`للمتغيرات المحلية، مشغل مصدر ملف واحد |
+| جافا 11 | 2018 | **LTS** — واجهة برمجة تطبيقات عميل HTTP،`var`للمتغيرات المحلية، مشغل مصدر أحادي الملف |
 | جافا 17 | 2021 | **LTS** — فئات مختومة، مطابقة الأنماط لـ `instanceof`، والسجلات، وكتل النص |
 | جافا 21 | 2023 | **LTS** — **خيوط افتراضية** (Project Loom)، مطابقة الأنماط لـ `switch`، أنماط التسجيل |
 | جافا 25 | 2025 | **LTS** — قوالب السلسلة، مزيد من مطابقة الأنماط، واجهة برمجة التطبيقات للوظيفة الأجنبية |
@@ -713,6 +718,377 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | الخدمات المصغرة | Spring Boot + أطر العمل السحابية الأصلية | اذهب لخدمات أبسط |
 | مخطوطات بسيطة | حفل كثير جدًا | بايثون، شل |
 | أدوات سطر الأوامر | بدء تشغيل بطيء | اذهب يا صدأ |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين`==`و`.equals()` في Java؟
+**A:** يقارن`==`مراجع الكائنات (الهوية) - ويتحقق مما إذا كان هناك متغيران يشيران إلى نفس الكائن في الذاكرة.  يقارن`.equals()`محتوى الكائن (مساواة القيمة). بالنسبة للأوليات (`int`,`double`)، يقوم`==`بمقارنة القيم مباشرة. بالنسبة للكائنات (بما في ذلك`String`)، استخدم دائمًا`.equals()`لمقارنة المحتوى. الاستثناء الوحيد هو المقارنة مع `null`، حيث يكون`==`صحيحًا.
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### السؤال الثاني: كيف يعمل جامع البيانات المهملة JVM، وأي واحد يجب أن أستخدمه؟
+**أ:** يقوم GC تلقائيًا باستعادة الذاكرة من الكائنات التي لم يعد من الممكن الوصول إليها. تقدم JVMs الحديثة (21+) العديد من المجمعات: G1 (افتراضي، متوازن)، ZGC (أوقات توقف منخفضة للغاية، <1 مللي ثانية)، وShenandoah (توقف مؤقت منخفض، OpenJDK). بالنسبة لمعظم التطبيقات، يكون G1 الافتراضي مناسبًا. بالنسبة للخدمات الحساسة لزمن الوصول، استخدم ZGC (`-XX:+UseZGC`). لمعالجة الدفعات الموجهة نحو الإنتاجية، استخدم Parallel GC (`-XX:+UseParallelGC`).
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### Q3: متى يجب علي استخدام`Stream API`مقابل الحلقات التقليدية؟
+**أ:** استخدم التدفقات عندما تكون العملية عبارة عن خط أنابيب واضح (مرشح، خريطة، تقليل) - فهي تعبر عن النية بشكل أفضل وتتوازي بسهولة مع`.parallelStream()`. استخدم الحلقات التقليدية للتكرارات البسيطة، عندما تحتاج إلى تعديل الحالة الخارجية، عندما يكون الأداء حرجًا (التدفقات لها حمل زائد)، أو عندما يتضمن المنطق تدفق تحكم معقد (فاصل، متابعة، إرجاعات متعددة). تجنب التدفقات لعمليات`for-each`البسيطة.
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### س 4: ما هي السجلات والفئات المختومة ومطابقة الأنماط في Java الحديثة؟
+**أ:** السجلات (Java 16) عبارة عن ناقلات بيانات غير قابلة للتغيير - فهي تُنشئ تلقائيًا مُنشئات وحاصلات و`equals` و`hashCode` و`toString`. تقيد الفئات المختومة (Java 17) الفئات التي يمكنها توسيعها - وهي مفيدة لنمذجة التسلسلات الهرمية للأنواع المحدودة. تسمح مطابقة الأنماط (Java 21) لتعبيرات`switch`بتدمير الأنواع والسجلات والقيم - لتحل محل سلاسل`instanceof`المطولة.
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### س5: كيف يمكنني التعامل مع الاستثناءات المحددة مقابل الاستثناءات غير المحددة بشكل صحيح؟
+**أ:** الاستثناءات المحددة (`IOException`,`SQLException`) يجب الإعلان عنها في`throws`أو اكتشافها — فهي تمثل شروطًا قابلة للاسترداد يجب أن يعرفها المتصل. تمثل الاستثناءات غير المحددة (الفئات الفرعية`RuntimeException`مثل`NullPointerException`و `IllegalArgumentException`) أخطاء برمجية. أفضل الممارسات: استخدم الاستثناءات المحددة بشكل مقتصد (فهي تنشئ اقترانًا)، وفضل`Optional`للغياب المتوقع، وقم بتغليف الاستثناءات المحددة في الاستثناءات غير المحددة عند عبور حدود واجهة برمجة التطبيقات (API).
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: إنشاء خط أنابيب آمن بين المنتج والمستهلك
+**بيان المشكلة:** قم بتصميم خط أنابيب بين المنتج والمستهلك في Java حيث يقوم العديد من المنتجين بإنشاء عناصر عمل، ويقوم العديد من المستهلكين بمعالجتها بشكل متزامن، ويدعم النظام إيقاف التشغيل بسلاسة مع استنزاف العناصر المتبقية.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) قائمة انتظار محدودة لتخزين عناصر العمل مؤقتًا بين المنتجين والمستهلكين، (2) سلاسل إنتاج متعددة تضيف عناصر، (3) عناصر معالجة متعددة لخيوط المستهلك، (4) آلية للإشارة إلى إيقاف التشغيل واستنزاف العناصر المتبقية. تم تصميم`BlockingQueue`الخاص بـ Java لهذا الغرض.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم`ArrayBlockingQueue`(محدود) لمنع نمو الذاكرة غير المحدودة.
+- استخدم نمط الحبة السامة لإشارة إيقاف التشغيل.
+- استخدم`ExecutorService`لإدارة تجمع مؤشرات الترابط.
+- استخدم`CountDownLatch`للانتظار حتى ينتهي جميع المستهلكين من التصريف.
+**الخطوة 3 — تنفيذ الحل:**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- قائمة الانتظار المحدودة تمنع OOM:`ArrayBlockingQueue(1000)`يحد من الذاكرة.
+- نمط الحبة السامة: يخرج كل مستهلك بشكل نظيف بعد تلقي حبوبه.
+-`poll(1, SECONDS)`مع انتهاء المهلة يمنع المستهلكين من الحظر إلى الأبد إذا كان المنتجون بطيئين.
+- الإنتاج: استخدم`LinkedBlockingQueue`لخطوط الأنابيب غير المحدودة، أو`Disruptor`(LMAX) لخطوط الأنابيب ذات زمن الوصول المنخفض للغاية.
+### المشكلة الثانية: تنفيذ أداة التحقق المخصصة المستندة إلى التعليقات التوضيحية
+**بيان المشكلة:** قم بإنشاء إطار عمل للتحقق باستخدام التعليقات التوضيحية المخصصة. يقوم المستخدمون بتعليق الحقول باستخدام`@NotNull`و`@Min(0)`و`@Max(100)`و`@Size(min=1, max=50)`والاتصال بـ`Validator.validate(obj)`للحصول على قائمة بالانتهاكات.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) تعليقات توضيحية مخصصة مع معلمات، (2) مدقق قائم على الانعكاس يقرأ التعليقات التوضيحية في وقت التشغيل، (3) كائن نتيجة يحتوي على جميع أخطاء التحقق من الصحة. يوضح هذا إمكانات معالجة التعليقات التوضيحية والانعكاس في Java.
+**الخطوة الثانية — تحديد النهج:**
+- تحديد التعليقات التوضيحية باستخدام`@Retention(RUNTIME)`و`@Target(FIELD)` .
+- استخدم`Class.getDeclaredFields()`لتكرار الحقول.
+- استخدم`Field.getAnnotation()`لقراءة قيم التعليقات التوضيحية.
+- مقارنة قيم الحقول مع قيود الشرح.
+- جمع الانتهاكات في القائمة.
+**الخطوة 3 — تنفيذ الحل:**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- عبء الانعكاس: مقبول للتحقق من الصحة (يتم استدعاؤه مرة واحدة لكل طلب). بالنسبة للمسارات الساخنة، قم بعمليات البحث عن حقول ذاكرة التخزين المؤقت أو استخدم معالجة التعليقات التوضيحية في وقت الترجمة (مثل Hibernate Validator).
+- القابلية للتوسعة: أضف تعليقات توضيحية جديدة عن طريق إنشاء التعليق التوضيحي + كتلة معالج في`validate()`.
+- الإنتاج: استخدم`jakarta.validation`(Bean Validation 3.0) - وهو يفعل كل هذا وأكثر، مع معالجة وقت الترجمة عبر معالجات التعليقات التوضيحية.
+### المشكلة 3: إنشاء عميل HTTP محدود السعر مع إعادة المحاولة
+**بيان المشكلة:** قم بإنشاء برنامج تضمين عميل HTTP الذي يعيد محاولة الطلبات الفاشلة تلقائيًا مع التراجع الأسي، ويحترم حدود المعدل، ويدعم قطع الدائرة (توقف عن الاتصال بخدمة فاشلة).
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى: (1) إعادة المحاولة المنطقية مع التراجع الأسي والارتعاش، (2) تحديد المعدل لتجنب إرباك الخدمة المستهدفة، (3) نمط قاطع الدائرة - بعد N من حالات الفشل المتتالية، توقف عن الاتصال بالخدمة لفترة تهدئة. هذه ثلاثة اهتمامات قابلة للتركيب.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم`java.net.http.HttpClient`(Java 11+) كعميل أساسي.
+- تنفيذ إعادة المحاولة كمجمّع باستخدام`Thread.sleep`للتراجع.
+- استخدم`Semaphore`لتحديد المعدل (أو`java.time`لحاوية الرمز المميز).
+- تنفيذ قاطع الدائرة كجهاز حالة: مغلق → مفتوح → HALF_OPEN.
+**الخطوة 3 — تنفيذ الحل:**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- التراجع الأسي مع الارتعاش يمنع القطيع الرعد (كل محاولات الضرب في نفس الوقت).
+- قاطع الدائرة: بعد فشل`failureThreshold`المتتالي، تفتح الدائرة لـ`cooldownMs`- لا يتم إرسال أي طلبات، مما يحمي الخدمة الفاشلة.
+- محدد المعدل:`Semaphore`مع الحد الأقصى للإنتاجية الدورية.
+- الإنتاج: استخدم`resilience4j`- فهو يوفر جميع الأنماط الثلاثة (إعادة المحاولة، محدد المعدل، قاطع الدائرة) مع التطبيقات المناسبة والمقاييس وتكامل Spring Boot.
 ---
 
 ## ملخص

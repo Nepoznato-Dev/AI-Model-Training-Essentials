@@ -57,7 +57,7 @@ Haskell não é uma linguagem convencional, mas sua influência é enorme. Conce
 | **Curva de aprendizado acentuada** | Mônadas, functores, classes de tipo — muito diferentes de linguagens imperativas | Invista tempo; os conceitos são transferíveis |
 | **Surpresas preguiçosas na avaliação** | Pode causar uso inesperado de memória e problemas de desempenho | Use avaliação rigorosa (`!`) quando necessário |
 | **Ecossistema menor** | Menos bibliotecas que Python, Java ou JavaScript | O hackeamento está crescendo; muitos pacotes de qualidade |
-| **Mercado de trabalho** | Nicho – principalmente trabalho financeiro, de pesquisa e de compilador | Crescendo em comunidades de programação funcional |
+| **Mercado de trabalho** | Nicho – principalmente finanças, pesquisa e trabalho de compilador | Crescendo em comunidades de programação funcional |
 | **Velocidade de compilação** | GHC pode ser lento para grandes projetos | Use GHCi para desenvolvimento interativo |
 ---
 
@@ -934,12 +934,216 @@ pkgs.haskellPackages.developPackage {
 | Cenário | Por que Haskell | Melhor Alternativa |
 |----------|-----------|-------------------|
 | Verificação formal | Sistema de tipos permite provas | Agda, Coq |
-| Desenvolvimento de compiladores | Excelente para implementação de linguagem | OCaml, Ferrugem |
+| Desenvolvimento de compilador | Excelente para implementação de linguagem | OCaml, Ferrugem |
 | Sistemas financeiros | Correção através de tipos | Escala, Fá# |
 | Aprendendo conceitos de PF | A linguagem funcional mais pura | Scala (mais prático), Elm |
 | Desenvolvimento geral de aplicações | Possível, mas nicho | Python, Go, Java |
 | Desenvolvimento web | Yesod/Servo existe, mas é limitado | JavaScript/TypeScript |
 | Ciência de dados | Não o ecossistema | Pitão, R |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como a avaliação preguiçosa de Haskell afeta o desempenho?
+**R:** A avaliação lenta significa que as expressões são computadas apenas quando necessário, permitindo estruturas de dados infinitas e pipelines combináveis. No entanto, pode causar vazamentos de espaço se acumular thunks:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Use`foldl'`(de`Data.List`) em vez de`foldl`para dobras numéricas. Use padrões de bang`!`ou`seq`para forçar a avaliação quando necessário.
+### Q2: Qual é a diferença prática entre`Functor`,`Applicative`e`Monad`?
+**R:** Cada typeclass adiciona capacidade:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** mapeia uma função pura em um contexto. **Aplicativo** aplica funções que estão em um contexto. **Monad** permite que cada etapa dependa do resultado da etapa anterior. Na prática: use `fmap`/`<$>` para transformações simples,`<*>`para combinar efeitos e `>>=`/`do` para cálculos dependentes sequenciais.
+### Q3: Como lidar com efeitos colaterais em código Haskell puro?
+**R:** Use o sistema de tipos para separar o código puro do eficaz:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Mantenha a lógica central pura e leve os efeitos ao limite. Use`ReaderT`para configuração,`ExceptT`para erros e`StateT`para estado mutável.
+### Q4: O que são classes de tipo e como elas diferem das interfaces OOP?
+**R:** As classes de tipo definem o comportamento que os tipos podem implementar. Ao contrário das interfaces OOP, elas são abertas (qualquer tipo pode ser uma instância) e suportam polimorfismo ad-hoc:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5: Como estruturar um projeto Haskell para uso no mundo real?
+**R:** Use Cabal ou Stack com um layout padrão:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Práticas principais: mantenha IO em`Main.hs`ou em um módulo`IO`dedicado, torne a lógica central pura e testável, use wrappers`newtype`para tipos de domínio.
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Implementando uma Função de Divisão Segura com Relatório de Erros
+**Etapa 1: Entenda o problema**
+Precisamos de uma divisão que lide com a divisão por zero e relate erros significativos, não apenas falhas.
+**Etapa 2: Identifique a abordagem**
+Use`Either`para retornar uma mensagem de erro ou o resultado. Isso torna a possibilidade de falha explícita no tipo.
+**Etapa 3: Implementar**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Etapa 4: verificar**
+O sistema de tipos garante que os chamadores devem lidar com o caso de erro. A correspondência de padrões ou`either`força o tratamento explícito.
+### Problema 2: analisando uma linguagem de configuração simples
+**Etapa 1: Entenda o problema**
+Analise pares de valores-chave de uma string como`name=Alice\nage=30`.
+**Etapa 2: Identifique a abordagem**
+Use`Text.Parsec`ou recursão manual. Para simplificar, use`break`e`span`.
+**Etapa 3: Implementar**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Etapa 4: Estender**
+Adicione manipulação de comentários (`#`), cabeçalhos de seção (`[section]`) e digite coerção usando um ADT `Value`.
+### Problema 3: Construindo um Fibonacci Memorizado com Preguiça
+**Etapa 1: Entenda o problema**
+Calcule números de Fibonacci com eficiência. A recursão ingênua é exponencial.
+**Etapa 2: Identifique a abordagem**
+Use a avaliação lenta de Haskell para criar uma lista infinita onde cada elemento é computado uma vez e armazenado em cache.
+**Etapa 3: Implementar**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Etapa 4: otimizar**
+Para acesso aleatório, use`Data.Array`com construção lenta. Para índices muito grandes, use exponenciação de matriz em O(log n).
+### Problema 4: Implementando uma Máquina de Estado Simples
+**Etapa 1: Entenda o problema**
+Modele um semáforo que circula Vermelho -> Verde -> Amarelo -> Vermelho.
+**Etapa 2: Identifique a abordagem**
+Use um tipo de dados algébrico para estados e uma função de transição pura.
+**Etapa 3: Implementar**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Etapa 4: verificar**
+Funções puras são trivialmente testáveis:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Resumo

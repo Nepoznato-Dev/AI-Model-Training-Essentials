@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fortran
 Fortran (Dịch công thức) là ngôn ngữ lập trình cấp cao lâu đời nhất vẫn được sử dụng rộng rãi, được IBM phát triển lần đầu tiên vào năm 1957 để tính toán khoa học và kỹ thuật. Bất chấp tuổi đời của nó, Fortran hiện đại (Fortran 2008/2018/2023) là một ngôn ngữ hiệu suất cao, có khả năng được sử dụng rộng rãi trong dự đoán thời tiết bằng số, động lực học chất lỏng tính toán, mô phỏng vật lý, mô hình tài chính và điện toán hiệu năng cao (HPC). Nhiều siêu máy tính nhanh nhất thế giới chạy mã Fortran.
 Ngôn ngữ đã phát triển đáng kể từ những ngày đầu của nó. Fortran hiện đại có các mô-đun, loại dẫn xuất, quy trình chung, coarrays (lập trình song song) và khả năng tương tác với C. Nó vẫn là ngôn ngữ được lựa chọn cho nhiều ứng dụng điện toán khoa học trong đó hiệu suất là điều tối quan trọng.
@@ -46,10 +47,10 @@ Ngôn ngữ đã phát triển đáng kể từ những ngày đầu của nó. 
 ## Tại sao Fortran lại quan trọng
 - **Hiệu suất HPC**: Trình biên dịch Fortran tạo ra một số mã số nhanh nhất hiện có — thường khớp hoặc vượt quá C/C++ cho các phép toán mảng.
 - **Cơ sở mã kế thừa**: Mã khoa học hàng thập kỷ (mô hình khí hậu, mô phỏng vật lý) được viết bằng Fortran.
-- **Các phép toán mảng**: Hỗ trợ mảng đa chiều gốc với cú pháp được thiết kế để tính toán toán học.
+- **Các phép toán mảng**: Hỗ trợ mảng đa chiều nguyên gốc với cú pháp được thiết kế để tính toán toán học.
 - **Độ ổn định về mặt số**: Ngôn ngữ và trình biên dịch được tối ưu hóa cho tính toán dấu phẩy động.
 - **Coarrays**: Hỗ trợ lập trình song song tích hợp (Fortran 2008+).
-- **Vẫn đang phát triển**: Fortran 2023 bổ sung thêm các tính năng hiện đại đồng thời vẫn duy trì khả năng tương thích ngược.
+- **Vẫn đang phát triển**: Fortran 2023 bổ sung các tính năng hiện đại đồng thời duy trì khả năng tương thích ngược.
 ## Sự đánh đổi
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Phát triển ứng dụng chung | Không phù hợp | Python, Java, Đi |
 | Phát triển web | Không phù hợp | JavaScript, Python |
 | Khoa học dữ liệu (tương tác) | Không phải quy trình làm việc | Python, R |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Fortran 90 khác với Fortran hiện đại (2008+) như thế nào?
+**A:** Modern Fortran đã bổ sung nhiều tính năng khiến nó trở nên biểu cảm hơn:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Câu 2: Mảng Fortran khác mảng C như thế nào?
+**A:** Mảng Fortran là đối tượng hạng nhất có sẵn các hoạt động:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Câu 3: Làm cách nào để đạt được hiệu suất tối đa trong Fortran?
+**Đ:** Các phương pháp chính:
+- Sử dụng`intent`rõ ràng cho tất cả các đối số giả
+- Sử dụng`implicit none`ở mọi nơi
+- Thích hoạt động mảng hơn các vòng lặp
+- Sử dụng các mẫu truy cập bộ nhớ liền kề
+- Sử dụng cờ tối ưu hóa trình biên dịch:`-O3 -march=native -ffast-math`
+- Cấu hình với`gprof`hoặc các công cụ dành riêng cho trình biên dịch
+- Sử dụng`pure`và`elemental`cho các chức năng mà trình biên dịch có thể tối ưu hóa
+### Q4: Làm cách nào để kết nối Fortran với C?
+**Đ:** Sử dụng mô-đun `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Câu 5: Tôi nên sử dụng hệ thống xây dựng nào cho dự án Fortran?
+**Đ:** CMake có sự hỗ trợ tuyệt vời về Fortran. FPM (Trình quản lý gói Fortran) là tùy chọn gốc hiện đại:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Bài toán 1: Giải PDE có sai phân hữu hạn
+**Bước 1: Tìm hiểu vấn đề**
+Giải phương trình nhiệt 1D: du/dt = alpha * d²u/dx²
+**Bước 2: Xác định phương pháp tiếp cận**
+Rời rạc hóa không gian và thời gian bằng cách sử dụng sai phân hữu hạn. Sử dụng một sơ đồ rõ ràng.
+**Bước 3: Thực hiện**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Bước 4: Xác minh**
+Kiểm tra sự bảo toàn, hội tụ với sàng lọc lưới và so sánh với giải pháp phân tích.
+### Bài toán 2: Đường chéo ma trận
+**Bước 1: Tìm hiểu vấn đề**
+Tìm giá trị riêng và vectơ riêng của ma trận đối xứng.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng quy trình`dsyev`của LAPACK thông qua giao diện của Fortran.
+**Bước 3: Thực hiện**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Bước 4: Xác minh**
+Kiểm tra xem A*v = lambda*v cho mỗi cặp riêng.
 ---
 
 ## Bản tóm tắt

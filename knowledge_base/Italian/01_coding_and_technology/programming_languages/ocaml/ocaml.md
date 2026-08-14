@@ -464,7 +464,7 @@ my-ocaml-project/
 | `dune utop`| Avvia REPL con il progetto caricato |
 | `opam install . --deps-only`| Installa le dipendenze |
 | `dune build @fmt`| Codice formato |
-| `opam switch create 5.1`| Crea interruttore OCaml 5.1 |
+| `opam switch create 5.1`| Crea l'interruttore OCaml 5.1 |
 ---
 
 ## Test
@@ -713,6 +713,122 @@ ENTRYPOINT ["./app"]
 | Scienza dei dati/ML | Non l'ecosistema | Pitone, R |
 | App mobili | Non adatto | Swift, Kotlin, Dart |
 | Applicazioni generali | Possibile ma di nicchia | Vai, Python, Ruggine |
+---
+
+## Domande e risposte sintetiche
+### D1: Come funziona l'inferenza del tipo di OCaml?
+**R:** Il sistema di tipi Hindley-Milner di OCaml deduce i tipi senza annotazioni:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### D2: Cosa sono i tipi di dati algebrici e perché sono potenti?
+**R:** Gli ADT combinano tipi di prodotto (record) e tipi di somma (varianti):
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3: Come funzionano i moduli e i funtori?
+**R:** I moduli organizzano il codice; i funtori sono funzioni da modulo a modulo:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### D4: Cosa rende OCaml veloce?
+**R:** OCaml viene compilato in codice nativo efficiente:
+- Cancellazione del tipo: nessun controllo del tipo in fase di esecuzione
+- Numeri mobili e interi senza scatola
+- Compilazioni di pattern corrispondenti per saltare le tabelle
+- Ottimizzazione delle chiamate in coda
+- Nessuna pausa del Garbage Collector (GC incrementale)
+### D5: Come si confronta OCaml con gli altri linguaggi della famiglia ML?
+**R:** OCaml bilancia praticità e purezza:
+- vs Haskell: OCaml ha funzionalità imperative, stato modificabile e compilazione più rapida
+- vs F#: OCaml ha un sistema di moduli più maturo e un migliore supporto multipiattaforma
+- vs Rust: OCaml ha GC (nessuna proprietà), ma Rust ha un FFI e un ecosistema migliori
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: implementazione di un interprete type-safe
+**Passaggio 1: comprendere il problema**
+Costruisci un interprete per un linguaggio di espressione semplice.
+**Passaggio 2: identificare l'approccio**
+Utilizzare tipi di dati algebrici per le espressioni e la corrispondenza dei modelli per la valutazione.
+**Passaggio 3: implementazione**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**Passaggio 4: Estendi**
+Aggiungi`Let`,`If`,`Lambda`per un linguaggio più completo.
+### Problema 2: costruire un semplice parser con combinatori
+**Passaggio 1: comprendere il problema**
+Analizzare espressioni aritmetiche utilizzando combinatori parser.
+**Passaggio 2: identificare l'approccio**
+Costruisci piccoli parser e componili.
+**Passaggio 3: implementazione**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**Passaggio 4: componi**
+Combina i parser con`map`,`seq`,`alt`e`many`per analizzare le espressioni complete.
 ---
 
 ## Riepilogo

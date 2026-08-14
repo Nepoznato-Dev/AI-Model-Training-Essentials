@@ -698,5 +698,140 @@ native-image --no-fallback \
 |データサイエンス |エコシステムではありません |パイソン、R |
 ---
 
+## 総合的な Q&A
+### Q1: Lisp/Clojure プログラムにはなぜこれほど多くのかっこがあるのですか?
+**A:** 括弧は S 式を表します。コードとデータが同じ構造 (同形性) を持つ統一構文です。
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2: Clojure は状態と可変性をどのように異なる方法で処理しますか?
+**A:** Clojure はデフォルトで不変データを使用します。制御された状態変更については、参照タイプが提供されます。
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3: Clojure の永続データ構造は何ですか?
+**A:** すべての Clojure コレクションは永続的です (不変、構造的に共有されています)。
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4: Clojure マクロはどのように機能しますか?
+**A:** マクロは未評価のコードを (データとして) 受け取り、それを変換して、新しいコードを返します。
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5: Clojure で同時実行性を処理するにはどうすればよいですか?
+**A:** Clojure は複数の同時実行プリミティブを提供します。
+-`atom`— 独立した同期変更
+-`ref`+`dosync`— 調整されたトランザクションの変更
+-`agent`— 非同期で独立した変更
+-`core.async`チャネル — CSP スタイルの同時実行
+---
+
+## 思考連鎖による問題解決
+### 問題 1: データ パイプラインの処理
+**ステップ 1: 問題を理解する**
+パイプラインを通じてデータを読み取り、フィルターし、変換し、集計します。
+**ステップ 2: アプローチを特定する**
+Clojure のスレッド マクロ (`->>`) とトランスデューサーを使用します。
+**ステップ 3: 実装**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**ステップ 4: 最適化**
+トランスデューサは中間シーケンスの作成を回避し、変換を 1 つのパスにまとめます。
+### 問題 2: 単純な Web サーバーの構築
+**ステップ 1: 問題を理解する**
+Ring/Compojure を使用して基本的な HTTP サーバーを作成します。
+**ステップ 2: アプローチを特定する**
+リング アダプターと Compojure ルーティングを使用します。
+**ステップ 3: 実装**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**ステップ 4: 延長**
+ロギング、JSON 解析、認証、エラー処理のためのミドルウェアを追加します。
+---
+
 ＃＃ まとめ
 Lisp はプログラミング言語設計の祖先です。現代のほとんどの言語は、Lisp が数十年前に開拓したアイデアを借用しています。 Clojure は、不変性、同時実行サポート、シームレスな JVM 統合を備えた Lisp を現代にもたらします。 Lisp/Clojure は主流ではありませんが、Lisp/Clojure を学ぶことでプログラミングに対する考え方が根本的に変わります。マクロ システムだけでも投資する価値があります。他の言語では実現できない可能性が明らかになります。

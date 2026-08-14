@@ -1,1 +1,0 @@
-Pure Markdown content organized under YAML frontmatter metadata blocks (title, description, category, version, status, authors, changelog, review dates, tags, difficulty_level, estimated_reading_time, contribution guide) that enable contributor tracking and semantic indexing across the collection.

@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "متلب"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی MATLAB شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [matlab، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "31 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "MATLAB"
+description: "Comprehensive reference for the MATLAB programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [matlab, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #متلب
 متلب (آزمایشگاه ماتریس) یک زبان برنامه نویسی تفسیر شده سطح بالا و محیطی است که برای محاسبات عددی، عملیات ماتریس و کاربردهای مهندسی/علمی طراحی شده است. MATLAB که توسط MathWorks توسعه یافت و برای اولین بار در سال 1984 منتشر شد، ابزار استاندارد در بسیاری از رشته های مهندسی - مهندسی برق، سیستم های کنترل، پردازش سیگنال، پردازش تصویر و ارتباطات است.
 MATLAB یک زبان قدرتمند ماتریس گرا را با جعبه ابزارهای گسترده (بسته های الحاقی) و محیط شبیه سازی بصری Simulink ترکیب می کند. این به طور گسترده در دانشگاه و صنعت برای نمونه سازی الگوریتم ها قبل از پیاده سازی آنها در کد تولید استفاده می شود.
@@ -50,7 +55,7 @@ MATLAB یک زبان قدرتمند ماتریس گرا را با جعبه اب�
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
 | **پروانه تجاری** | گران قیمت (هزار دلار برای هر صندلی) | از GNU Octave (جایگزین رایگان سازگار با MATLAB) برای کارهای اساسی |
-| **زبان همه منظوره نیست** | ضعیف برای توسعه وب، برنامه نویسی سیستم، یا برنامه های کاربردی | از Python، Go یا زبان های دیگر برای کارهای غیر عددی استفاده کنید |
+| **زبان همه منظوره نیست** | ضعیف برای توسعه وب، برنامه نویسی سیستم، یا برنامه های کاربردی | استفاده از Python، Go یا زبان های دیگر برای کارهای غیر عددی |
 | **عملکرد** | تفسیر شد؛ کندتر از زبان های کامپایل شده برای حلقه ها | عملیات برداری؛ از MEX (پسوندهای C/Fortran) برای کد داغ |
 | **استقرار** | استقرار برنامه های MATLAB به زمان اجرا MATLAB نیاز دارد برای تولید از کامپایلر MATLAB یا بازنویسی در C/C++ استفاده کنید |
 | **کنترل نسخه** |  فایل های`.m`متنی هستند اما Simulink`.mdl`/`.slx`باینری هستند | استفاده از ابزارهای مقایسه داخلی متلب |
@@ -439,7 +444,7 @@ disp(results);
 ---
 
 ## قابلیت همکاری
-### ادغام C/C++ (MEX)
+### یکپارچه سازی C/C++ (MEX)
 ```matlab
 % MEX file: dot_product.c
 % Compile: mex dot_product.c
@@ -649,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 | سیستم های تولید | برای استقرار طراحی نشده است | C++، Python، Go |
 | توسعه وب | مناسب نیست | جاوا اسکریپت، پایتون |
 | علم داده (عمومی) | ممکن است اما پایتون همه کاره تر است | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: چگونه به جای استفاده از حلقه ها، عملیات را برداریم؟
+**A:** MATLAB برای عملیات ماتریسی بهینه شده است. حلقه ها را با کد بردار جایگزین کنید:
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### Q2: تفاوت بین ماتریس ها و آرایه ها چیست؟
+**A:** در متلب همه چیز یک آرایه است. ماتریس ها آرایه های دو بعدی هستند:
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### Q3: چگونه می توانم نمودارهای موثر در متلب ایجاد کنم؟
+**A:** از توابع رسم با برچسب گذاری مناسب استفاده کنید:
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4: چگونه کد MATLAB را به طور موثر اشکال زدایی کنم؟
+**A:** از دیباگر داخلی و ابزارهای تشخیصی استفاده کنید:
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### Q5: چگونه فایل های داده را بخوانم و بنویسم؟
+**A:** MATLAB از بسیاری از فرمت های فایل پشتیبانی می کند:
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مسئله 1: حل یک سیستم معادلات خطی
+**مرحله 1: مشکل را درک کنید**
+حل Ax = b که در آن A یک ماتریس و b یک بردار است.
+**مرحله 2: رویکرد را شناسایی کنید**
+از عملگر بک اسلش متلب`\`استفاده کنید که به طور خودکار بهترین الگوریتم را انتخاب می کند.
+**مرحله 3: پیاده سازی **```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**مرحله 4: تمدید**
+برای سیستم های بیش از حد تعیین شده،`\`راه حل حداقل مربعات را ارائه می دهد. برای سیستم های پراکنده، از ماتریس های`sparse`استفاده کنید.
+### مشکل 2: پردازش سیگنال - تجزیه و تحلیل FFT
+**مرحله 1: مشکل را درک کنید**
+محتوای فرکانس یک سیگنال نویز را تجزیه و تحلیل کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+یک سیگنال آزمایشی تولید کنید، FFT را اعمال کنید و طیف فرکانس را رسم کنید.
+**مرحله 3: پیاده سازی **```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**مرحله 4: تایید **
+پیک ها باید در فرکانس 50 هرتز و 120 هرتز ظاهر شوند. کف صدا باید کم باشد.
+### مشکل 3: برازش منحنی با مدل های سفارشی
+**مرحله 1: مشکل را درک کنید**
+داده های تجربی را به یک مدل غیرخطی سفارشی برازش دهید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`fit`با`fittype`یا`lsqcurvefit`سفارشی استفاده کنید.
+**مرحله 3: پیاده سازی **```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**مرحله 4: اعتبارسنجی**
+باقیمانده ها را برای الگوها بررسی کنید، R² را تأیید کنید و با نقاط شروع مختلف آزمایش کنید.
 ---
 
 ## خلاصه

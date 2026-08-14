@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Accessibilità e progettazione inclusiva
-L'accessibilità (spesso abbreviata in a11y) è la pratica di rendere il software utilizzabile da tutti, comprese le persone con disabilità visive, uditive, motorie, cognitive e neurologiche. Non è bello averlo; è un requisito legale in molte giurisdizioni, un obbligo morale e una buona ingegneria. Il software accessibile è un software migliore per tutti, perché le decisioni di progettazione che aiutano gli utenti disabili (struttura chiara, navigazione tramite tastiera, contrasto sufficiente, testo leggibile) migliorano l'esperienza per tutti gli utenti.
+L'accessibilità (spesso abbreviata in a11y) è la pratica di rendere il software utilizzabile da tutti, comprese le persone con disabilità visive, uditive, motorie, cognitive e neurologiche. Si tratta di un requisito legale in molte giurisdizioni e di una pratica ingegneristica standard. Il software accessibile è un software migliore per tutti, perché le decisioni di progettazione che supportano gli utenti disabili (struttura chiara, navigazione tramite tastiera, contrasto sufficiente, testo leggibile) migliorano l'esperienza per tutti gli utenti.
 ---
 
 ## Chi trae vantaggio dall'accessibilità?
@@ -177,4 +177,4 @@ ARIA aggiunge informazioni sull'accessibilità agli elementi HTML che non hanno 
 ---
 
 ## Riepilogo
-L'accessibilità non è una funzionalità che si aggiunge alla fine: è un principio di progettazione che dovrebbe informare ogni decisione fin dall'inizio. Utilizza HTML semantico. Assicurati che la navigazione tramite tastiera funzioni. Mantenere un contrasto cromatico sufficiente. Fornire alternative testuali per contenuti non testuali. Prova con lettori di schermo e utenti disabili reali. Il risultato è un software che funziona meglio per tutti, non solo per le persone con disabilità, ma anche per coloro che presentano menomazioni temporanee, limitazioni situazionali, dispositivi più vecchi, connessioni lente e i mille altri modi in cui l'utilizzo nel mondo reale differisce dall'ambiente idealizzato dello sviluppatore.
+L’accessibilità è un principio di progettazione che dovrebbe informare ogni decisione fin dall’inizio, non una funzionalità aggiunta alla fine. Utilizza HTML semantico. Assicurati che la navigazione tramite tastiera funzioni. Mantenere un contrasto cromatico sufficiente. Fornire alternative testuali per contenuti non testuali. Testare con lettori di schermo e utenti disabili. Il risultato è un software che funziona meglio per tutti, compresi quelli con disabilità temporanee, limitazioni situazionali, dispositivi più vecchi, connessioni lente e i molti modi in cui l'utilizzo nel mondo reale differisce da un ambiente di sviluppo controllato.

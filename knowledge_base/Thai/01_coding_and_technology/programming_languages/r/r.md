@@ -44,7 +44,7 @@ R คือภาษาการเขียนโปรแกรมและส
 R เชี่ยวชาญด้านการจัดการข้อมูล การสร้างแบบจำลองทางสถิติ การแสดงภาพ และการรายงาน ระบบนิเวศแพ็คเกจ (CRAN) มีแพ็คเกจมากกว่า 20,000 แพ็คเกจครอบคลุมวิธีการทางสถิติทุกรูปแบบเท่าที่เคยมีมา
 ---
 
-## ทำไม R ถึงมีความสำคัญ
+## ทำไม R ถึงสำคัญ
 - **การคำนวณทางสถิติ**: คอลเลกชันวิธีการทางสถิติที่ครอบคลุมมากที่สุดในทุกภาษา
 - **การแสดงข้อมูลเป็นภาพ**: ggplot2 สร้างกราฟิกคุณภาพสิ่งพิมพ์ ไวยากรณ์ของกระบวนทัศน์กราฟิกไม่มีที่เปรียบ
 - **การวิจัยที่ทำซ้ำได้**: R Markdown / Quarto ให้คุณรวมโค้ด ผลลัพธ์ และการเล่าเรื่องไว้ในเอกสารเดียว
@@ -604,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | ระบบการผลิต ML | ไม่ได้ออกแบบมาเพื่อการใช้งาน | หลาม, ชวา |
 | การพัฒนาเว็บ | ไม่เหมาะ | จาวาสคริปต์, หลาม |
 | การประมวลผลข้อมูลขนาดใหญ่ | หน่วยความจำที่ถูกผูกไว้ | หลาม (PySpark), SQL |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### Q1: อะไรคือความแตกต่างระหว่าง`<-`และ`=`สำหรับการมอบหมาย?
+**A:** ทั้งสองกำหนดค่า แต่`<-`เป็นตัวดำเนินการกำหนด R ตามสำนวน มันทำงานได้ในทุกบริบท รวมถึงการเรียกใช้ฟังก์ชันภายใน:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: ฉันจะจัดการกับข้อมูลที่ขาดหายไปใน R ได้อย่างไร
+**A:** R ใช้`NA`สำหรับค่าที่หายไป ฟังก์ชันส่วนใหญ่มีพารามิเตอร์ `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3: เมื่อใดที่ฉันควรใช้`lapply`กับ`sapply`กับ `vapply`
+**A:** ทั้งหมดใช้ฟังก์ชันกับรายการ/เวกเตอร์ แต่มีเอาต์พุตต่างกัน:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### คำถามที่ 4: ฉันจะสร้างการแสดงภาพข้อมูลที่มีประสิทธิภาพด้วย ggplot2 ได้อย่างไร
+**ตอบ:** ปฏิบัติตามไวยากรณ์ของกราฟิก — แมปความสวยงามของข้อมูลกับคุณสมบัติด้านภาพ:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### คำถามที่ 5: ฉันจะเขียนโค้ด R ที่มีประสิทธิภาพสำหรับชุดข้อมูลขนาดใหญ่ได้อย่างไร
+**ก:** แนวทางปฏิบัติหลัก:
+- เวกเตอร์จัดสรรล่วงหน้า:`x <- numeric(n)`แทนที่จะเติบโตด้วย`c()`
+- ใช้`data.table`สำหรับชุดข้อมูลขนาดใหญ่ (เร็วกว่า data.frame 100 เท่า)
+- การดำเนินการแบบเวกเตอร์ — หลีกเลี่ยงลูปหากเป็นไปได้
+- ใช้`vapply`บน`sapply`เพื่อความปลอดภัยประเภท
+- โปรไฟล์ด้วย`Rprof()`หรือ`profvis`
+- พิจารณาแพ็คเกจ`arrow`สำหรับข้อมูลนอกคอร์
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การทำความสะอาดและวิเคราะห์ชุดข้อมูลที่ยุ่งเหยิง
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+เรามีกรอบข้อมูลที่มีค่าขาดหายไป ประเภทที่ไม่สอดคล้องกัน และค่าผิดปกติ เราจำเป็นต้องทำความสะอาดและคำนวณสถิติสรุป
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้คำกริยาที่เป็นระเบียบ:`filter`,`mutate`,`summarize`และ `group_by`
+**ขั้นตอนที่ 3: นำไปใช้**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ตรวจสอบจำนวนแถวก่อน/หลัง ตรวจสอบช่วง และตรวจสอบผลรวมกับแหล่งข้อมูล
+### ปัญหาที่ 2: การสร้างแบบจำลองการถดถอยเชิงเส้น
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+ทำนายตัวแปรผลลัพธ์ต่อเนื่องจากตัวทำนายหลายตัว
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้`lm()`สำหรับการถดถอยเชิงเส้น ตรวจสอบสมมติฐาน และประเมินโมเดลที่พอดี
+**ขั้นตอนที่ 3: นำไปใช้**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**ขั้นตอนที่ 4: ประเมิน**
+ตรวจสอบ R-squared, แปลงส่วนที่เหลือเพื่อดูรูปแบบ และ AIC เพื่อเปรียบเทียบแบบจำลอง
+### ปัญหา 3: การสร้างรายงานที่ทำซ้ำได้
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+สร้างรายงานที่รวมการวิเคราะห์ การแสดงภาพ และข้อความบรรยายในรูปแบบที่ทำซ้ำได้
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้ R Markdown (หรือ Quarto) เพื่อแทรกชิ้นโค้ดด้วยข้อความ
+**ขั้นตอนที่ 3: นำไปใช้**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, คำเตือน = FALSE)
+ห้องสมุด(tidyverse)
+ข้อมูล <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(ข้อมูล, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**ขั้นตอนที่ 4: เรนเดอร์**
+`rmarkdown::render("report.Rmd")`สร้างเอกสาร HTML ที่มีอยู่ในตัวเอง
 ---
 
 ## สรุป

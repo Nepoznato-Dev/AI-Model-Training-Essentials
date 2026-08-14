@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : « Problèmes de qualité du code »
-description : « Erreurs de codage courantes et anti-modèles »
-catégorie : "Leçons des échecs"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Code Quality Issues"
+description: "Common coding mistakes and anti-patterns"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Leçons tirées des échecs de l'équipe de la base de connaissances"
-next_review : "2027-08-05"
-#Classement
-balises : [code, qualité, problèmes, leçons des échecs]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "18 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [code, quality, issues, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "18 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Problèmes de qualité du code
 Ce document consolide les problèmes courants de qualité du code, notamment les mauvais noms de variables, la mauvaise documentation, le code spaghetti, les dépendances circulaires et d'autres problèmes de maintenabilité.

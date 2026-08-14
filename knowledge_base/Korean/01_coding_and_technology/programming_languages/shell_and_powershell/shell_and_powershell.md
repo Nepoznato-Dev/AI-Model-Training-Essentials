@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 쉘 및 파워셸
 쉘 스크립팅은 명령줄 해석기용 스크립트 작성을 의미합니다. 가장 중요한 두 가지 셸은 Linux 및 macOS의 기본값인 **Bash**(Bourne Again Shell)와 Microsoft의 최신 크로스 플랫폼 셸 및 스크립팅 언어인 **PowerShell**입니다. 셸 스크립트는 시스템 관리 작업, 빌드 파이프라인, 파일 처리 및 배포 워크플로를 자동화합니다.
 모든 개발자, DevOps 엔지니어 및 시스템 관리자는 셸 스크립팅 기술이 필요합니다. 웹 서버 배포, 로그 파일 처리, CI/CD 파이프라인 설정, 백업 자동화 등 어떤 작업을 하든 셸 스크립팅은 작업을 위한 도구입니다.
@@ -53,9 +54,9 @@ contribution:
 ## 절충안
 | 제한사항 | 세부정보 | 일반적인 해결 방법 |
 |------------|---------|------|
-| **Bash의 단점** | 일관성 없는 구문, 깨지기 쉬운 문자열 처리 |`set -euo pipefail`사용; 인용 변수; 복잡한 스크립트에는 PowerShell을 선호합니다 |
+| **Bash의 단점** | 일관성 없는 구문, 깨지기 쉬운 문자열 처리 | `set -euo pipefail`를 사용하세요. 인용 변수; 복잡한 스크립트에는 PowerShell을 선호합니다 |
 | **복잡한 프로그램에는 적합하지 않음** | 열악한 데이터 구조, OOP 없음, 테스트하기 어려움 | 복잡한 논리에 Python, Go 또는 기타 언어 사용 |
-| **오류 처리** | Bash 오류 처리는 기본적입니다 |`set -e`사용; 종료 코드를 확인하세요. PowerShell의 try/catch 사용 |
+| **오류 처리** | Bash 오류 처리는 기본적입니다 | `set -e`를 사용하세요. 종료 코드를 확인하세요. PowerShell의 try/catch 사용 |
 | **이식성** | Bash 스크립트가 모든 시스템에서 작동하지 않을 수 있음 | 이식성을 극대화하려면 POSIX sh를 사용하십시오. 크로스 플랫폼용 PowerShell |
 | **디버깅** | 제한된 디버깅 도구 | Bash에는 `set -x`를 사용하세요. PowerShell에는 적절한 디버거가 있습니다 |
 ---
@@ -857,6 +858,152 @@ Publish-Module @publishParams
 | 로그 분석 | 빠른 grep/awk 한 줄짜리 | 복잡한 분석을 위한 Python, SQL |
 | 복잡한 애플리케이션 | 적합하지 않음 | 파이썬, 바둑, 자바 |
 | 크로스 플랫폼 스크립트 | PowerShell 7+는 어디에서나 작동합니다 | 진정한 이식성 스크립트를 위한 Python |
+---
+
+## 종합 Q&A
+### Q1: Bash에서 작은따옴표와 큰따옴표의 차이점은 무엇인가요?
+**A:** 큰따옴표는 변수 확장을 허용합니다. 작은따옴표는 리터럴입니다.
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: 쉘 스크립트의 오류를 어떻게 처리합니까?
+**A:** 오류 발생 시 종료하고 정리를 위해 트랩하려면 `set -e`를 사용하세요.
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### 질문3: 명령줄 인수를 올바르게 처리하려면 어떻게 해야 합니까?
+**A:** 플래그 및 위치 매개변수에는 `getopts`를 사용하세요.
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4: PowerShell 파이프라인은 무엇이며 Bash와 어떻게 다릅니까?
+**A:** PowerShell은 텍스트가 아닌 개체를 파이프합니다. 각 객체는 해당 속성을 유지합니다.
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: 크로스 플랫폼 스크립트는 어떻게 작성하나요?
+**A:** Bash의 경우:`#!/usr/bin/env bash`를 사용하고 GNU 관련 플래그를 피하세요. PowerShell의 경우: Linux/macOS/Windows에서 실행되는 `pwsh`(PowerShell Core)를 사용하세요.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 일괄 이미지 처리 스크립트(Bash)
+**1단계: 문제 이해**
+디렉터리의 모든 PNG 이미지 크기를 최대 너비 800px로 조정합니다.
+**2단계: 접근 방식 파악**
+파일을 찾으려면 `find`를 사용하고 크기를 조정하려면 `convert`(ImageMagick)를 사용하세요.
+**3단계: 구현**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**4단계: 확장**
+진행률 표시줄, 손상된 이미지에 대한 오류 처리 및 `xargs -P`를 사용한 병렬 처리를 추가합니다.
+### 문제 2: 자동 로그 회전(Bash)
+**1단계: 문제 이해**
+매일 로그 파일을 교체하고, 오래된 로그를 압축하고, 30일이 지난 로그를 삭제하세요.
+**2단계: 접근 방식 파악**
+시간 기반 필터에는 `find`를 사용하고 압축에는 `gzip`를 사용하세요.
+**3단계: 구현**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**4단계: 일정**
+크론탭에 추가: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### 문제 3: Windows 서비스 상태 점검(PowerShell)
+**1단계: 문제 이해**
+중요한 서비스가 실행 중인지 확인하고 중지된 경우 경고를 보냅니다.
+**2단계: 접근 방식 파악**
+`Get-Service`를 사용하고 중지된 서비스를 필터링합니다.
+**3단계: 구현**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**4단계: 자동화**
+5분마다 실행되는 Windows 작업 스케줄러 작업으로 예약합니다.
 ---
 
 ## 요약

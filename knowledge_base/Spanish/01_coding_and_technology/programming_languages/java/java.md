@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Java"
-descripción: "Referencia completa para el lenguaje de programación Java que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Java"
+description: "Comprehensive reference for the Java programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [java, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "30 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [java, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "30 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Java
 Java es un lenguaje de programación orientado a objetos de tipo estático creado por James Gosling en Sun Microsystems y lanzado en 1995. Su filosofía de diseño - "escribir una vez, ejecutar en cualquier lugar" (WORA) - se logra a través de la Máquina Virtual Java (JVM), que permite que el código Java compilado se ejecute en cualquier plataforma que tenga una implementación JVM. Java es uno de los lenguajes de programación más utilizados en la historia y potencia los backends empresariales, las aplicaciones de Android, los sistemas de big data y los servicios financieros.
 A pesar de tener casi 30 años, Java sigue evolucionando. Java moderno (versiones 17+) incluye registros, clases selladas, coincidencia de patrones, subprocesos virtuales y un ecosistema en crecimiento que compite con lenguajes más nuevos.
@@ -713,6 +718,377 @@ Las versiones **LTS** (soporte a largo plazo) reciben actualizaciones durante mu
 | Microservicios | Spring Boot + marcos nativos de la nube | Opte por servicios más simples |
 | Guiones simples | Demasiada ceremonia | Pitón, concha |
 | Herramientas CLI | Inicio lento | Vamos, óxido |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre`==`y`.equals()`en Java?
+**R:**`==`compara referencias de objetos (identidad): verifica si dos variables apuntan al mismo objeto en la memoria. `.equals()`compara el contenido del objeto (igualdad de valores). Para primitivas (`int`,`double`),`==`compara valores directamente. Para objetos (incluido `String`), utilice siempre`.equals()`para comparar contenido. La única excepción es la comparación con `null`, donde`==`es correcto.
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### P2: ¿Cómo funciona el recolector de basura JVM y cuál debo usar?
+**R:** El GC recupera automáticamente memoria de objetos a los que ya no se puede acceder. Las JVM modernas (21+) ofrecen varios recopiladores: G1 (predeterminado, equilibrado), ZGC (tiempos de pausa ultrabajos, <1 ms) y Shenandoah (pausa baja, OpenJDK). Para la mayoría de las aplicaciones, el G1 predeterminado está bien. Para servicios sensibles a la latencia, utilice ZGC (`-XX:+UseZGC`). Para el procesamiento por lotes orientado al rendimiento, utilice GC paralelo (`-XX:+UseParallelGC`).
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### P3: ¿Cuándo debo usar`Stream API`frente a los bucles tradicionales?
+**R:** Utilice Streams cuando la operación sea una canalización clara (filtrar, mapear, reducir): expresan mejor la intención y se paralelizan fácilmente con `.parallelStream()`. Utilice bucles tradicionales para iteraciones simples, cuando necesite modificar el estado externo, cuando el rendimiento sea crítico (las secuencias tienen sobrecarga) o cuando la lógica implica un flujo de control complejo (interrupción, continuación, retornos múltiples). Evite transmisiones para operaciones`for-each`simples.
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### P4: ¿Qué son registros, clases selladas y coincidencia de patrones en Java moderno?
+**R:** Los registros (Java 16) son soportes de datos inmutables: generan automáticamente constructores, captadores, `equals`,`hashCode`y `toString`. Las clases selladas (Java 17) restringen qué clases pueden ampliarlas, lo que resulta útil para modelar jerarquías de tipos finitos. La coincidencia de patrones (Java 21) permite que las expresiones`switch`desestructuran tipos, registros y valores, reemplazando cadenas detalladas `instanceof`.
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### P5: ¿Cómo manejo correctamente las excepciones marcadas y no marcadas?
+**R:** Las excepciones marcadas (`IOException`,`SQLException`) deben declararse en`throws`o detectarse; representan condiciones recuperables que la persona que llama debe conocer. Las excepciones no marcadas (subclases`RuntimeException`como `NullPointerException`, `IllegalArgumentException`) representan errores de programación. Mejores prácticas: use excepciones marcadas con moderación (crean acoplamiento), prefiera`Optional`para la ausencia esperada y envuelva las excepciones marcadas en excepciones no marcadas al cruzar los límites de la API.
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: construir una canalización de productores-consumidores segura para subprocesos
+**Declaración del problema:** Diseñe una canalización productor-consumidor en Java donde varios productores generen elementos de trabajo, varios consumidores los procesen simultáneamente y el sistema admita un apagado ordenado con drenaje de los elementos restantes.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) una cola limitada para almacenar elementos de trabajo entre productores y consumidores, (2) múltiples subprocesos de productor que agregan elementos, (3) múltiples subprocesos de consumidor que procesan elementos, (4) un mecanismo para señalar el cierre y drenar los elementos restantes.`BlockingQueue`de Java está diseñado específicamente para esto.
+**Paso 2: Identifique el enfoque:**
+- Utilice`ArrayBlockingQueue`(limitado) para evitar el crecimiento ilimitado de la memoria.
+- Utilice un patrón de píldora venenosa para señalar el cierre.
+- Utilice`ExecutorService`para la gestión del grupo de subprocesos.
+- Utilice`CountDownLatch`para esperar a que todos los consumidores terminen de drenar.
+**Paso 3: Implementar la solución:**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**Paso 4: Verificar y optimizar:**
+- La cola limitada impide OOM:`ArrayBlockingQueue(1000)`limita la memoria.
+- Patrón de pastilla venenosa: cada consumidor sale limpiamente después de recibir su pastilla.
+-`poll(1, SECONDS)`con tiempo de espera evita que los consumidores se bloqueen para siempre si los productores son lentos.
+- Producción: utilice`LinkedBlockingQueue`para canalizaciones ilimitadas o`Disruptor`(LMAX) para canalizaciones de latencia ultrabaja.
+### Problema 2: implementar un validador personalizado basado en anotaciones
+**Declaración del problema:** Cree un marco de validación utilizando anotaciones personalizadas. Los usuarios anotan campos con`@NotNull`,`@Min(0)`,`@Max(100)`,`@Size(min=1, max=50)`y llaman a`Validator.validate(obj)`para obtener una lista de infracciones.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) anotaciones personalizadas con parámetros, (2) un validador basado en reflexión que lea anotaciones en tiempo de ejecución, (3) un objeto de resultado que contenga todos los errores de validación. Esto demuestra las capacidades de reflexión y procesamiento de anotaciones de Java.
+**Paso 2: Identifique el enfoque:**
+- Definir anotaciones con`@Retention(RUNTIME)`y `@Target(FIELD)`.
+- Utilice`Class.getDeclaredFields()`para iterar campos.
+- Utilice`Field.getAnnotation()`para leer valores de anotación.
+- Comparar valores de campo con restricciones de anotación.
+- Recoger infracciones en una lista.
+**Paso 3: Implementar la solución:**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**Paso 4: Verificar y optimizar:**
+- Sobrecarga de reflexión: aceptable para validación (llamada una vez por solicitud). Para rutas activas, busque en caché las búsquedas de campos o utilice el procesamiento de anotaciones en tiempo de compilación (como Hibernate Validator).
+- Extensibilidad: agregue nuevas anotaciones creando la anotación + un bloque de controlador en `validate()`.
+- Producción: use`jakarta.validation`(Bean Validation 3.0): hace todo esto y más, con procesamiento en tiempo de compilación a través de procesadores de anotaciones.
+### Problema 3: crear un cliente HTTP de velocidad limitada con reintento
+**Declaración del problema:** Cree un contenedor de cliente HTTP que reintente automáticamente las solicitudes fallidas con un retroceso exponencial, respete los límites de velocidad y admita la interrupción del circuito (deje de llamar a un servicio fallido).
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) lógica de reintento con retroceso y fluctuación exponencial, (2) limitación de velocidad para evitar sobrecargar el servicio objetivo, (3) patrón de disyuntor: después de N fallas consecutivas, dejar de llamar al servicio durante un período de recuperación. Estas son tres preocupaciones componibles.
+**Paso 2: Identifique el enfoque:**
+- Utilice`java.net.http.HttpClient`(Java 11+) como cliente base.
+- Implementar el reintento como contenedor con`Thread.sleep`para retroceso.
+- Utilice`Semaphore`para limitar la tasa (o`java.time`para el depósito de tokens).
+- Implementar disyuntor como máquina de estados: CERRADO → ABIERTO → HALF_OPEN.
+**Paso 3: Implementar la solución:**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**Paso 4: Verificar y optimizar:**
+- El retroceso exponencial con jitter evita el rebaño atronador (todos los reintentos golpean al mismo tiempo).
+- Disyuntor: después de`failureThreshold`fallas consecutivas, el circuito se abre para `cooldownMs`; no se envían solicitudes, lo que protege el servicio que falla.
+- Limitador de velocidad:`Semaphore`con rendimiento de límites de reposición periódica.
+- Producción: use `resilience4j`: proporciona los tres patrones (reintento, limitador de velocidad, disyuntor) con implementaciones, métricas e integración Spring Boot adecuadas.
 ---
 
 ## Resumen

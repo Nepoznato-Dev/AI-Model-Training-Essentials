@@ -1,4 +1,4 @@
-# پایگاه دانش زبان انگلیسی
+# پایگاه دانش
 مجموعه‌ای جامع از اسناد مرجع که کدنویسی، فناوری، هوش مصنوعی، علم، تجارت، علوم انسانی و موارد دیگر را پوشش می‌دهد - به سبک طبیعی و محاوره‌ای که هم برای آموزش هوش مصنوعی و هم برای یادگیری انسان طراحی شده است.
 **آخرین به روز رسانی: ** اوت 2026  
 ** مجموع فایل ها: ** 138+ سند علامت گذاری  
@@ -7,7 +7,7 @@
 
 ## ساختار دایرکتوری
 ```
-knowledge_base/English/
+knowledge_base/Persian/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,14 @@ knowledge_base/English/
 **موضوعات اصلی:**
 | فایل | توضیحات |
 |------|-------------|
-| [web_development.md](01_coding_and_technology/web_development.md)| Frontend، Backend، DevOps، امنیت |
-|  __محافظت شده_1__ | SQL، NoSQL، الگوهای طراحی، بهینه سازی |
+|  [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md) | SQL، NoSQL، الگوهای طراحی، بهینه سازی |
 | [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)| ارائه دهندگان ابر، الگوهای معماری، امنیت |
-|  __محافظت شده_3__ | مدل OSI، TCP/IP، پروتکل ها، امنیت |
+|  [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md) | مدل OSI، TCP/IP، پروتکل ها، امنیت |
 | [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH، systemd، ورود به سیستم، نظارت، پشتیبان گیری، Docker، CI/CD |
-| [security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP Top 10، اعتبار سنجی ورودی، احراز هویت، مدیریت اسرار |
-|  __محافظت شده_6__ | خطوط لوله CI/CD، Docker، Kubernetes، Terraform، GitOps |
+|  [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md) | خطوط لوله CI/CD، Docker، Kubernetes، Terraform، GitOps |
 | [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)| رمزگذاری، TLS، OWASP، کدگذاری امن، SDL |
 | [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST، GraphQL، gRPC، نسخه‌سازی، auth، دروازه‌های API |
-|  __محافظت شده_9__ | یکپارچه، میکروسرویس، رویداد محور، DDD، حافظه پنهان، جامد |
-| [technology_glossary.md](01_coding_and_technology/technology_glossary.md)| اصطلاحات فنی (مدل های هوش مصنوعی، سخت افزار، معیارها) |
-| [tool_usage.md](01_coding_and_technology/tool_usage.md)| ابزارها و ابزارهای توسعه |
+|  [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md) | یکپارچه، میکروسرویس، رویداد محور، DDD، حافظه پنهان، جامد |
 | [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG، UX فراگیر، فناوری کمکی، کدگذاری در دسترس |
 | [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)| اجماع، قراردادهای هوشمند، DeFi، تحمل خطای بیزانس |
 | [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)| آرایه ها، درختان، نمودارها، مرتب سازی، جستجو، پیچیدگی |
@@ -52,16 +48,15 @@ knowledge_base/English/
 | [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)| پلتفرم های کم کد، پلتفرم های توسعه دهنده داخلی، مسیرهای طلایی |
 | [mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS، Android، React Native، Flutter، معماری موبایل |
 | [performance_optimization.md](01_coding_and_technology/performance_optimization.md)| نمایه سازی، ذخیره سازی، CDN، بهینه سازی پرس و جو، عملکرد جلویی |
-| [testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)| واحد، ادغام، E2E، TDD، BDD، اهرام آزمایشی |
 **زبان های برنامه نویسی (34 زبان):**
 هر زبان فهرست فرعی مخصوص به خود را با یک مرجع جامع شامل نمای کلی، مبادلات، اصول نحوی، اکوسیستم و زمان استفاده از آن دارد.
 | زبان | مسیر | | زبان | مسیر |
 |----------|------|-|----------|------|
-| پایتون | `programming_languages/python/`| | جاوا اسکریپت |  __محافظت شده_1__ |
-| ج | `programming_languages/c/`| | C++ |  __محافظت شده_3__ |
+| پایتون | `programming_languages/python/`| | جاوا اسکریپت |  [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md) |
+| ج | `programming_languages/c/`| | C++ |  [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md) |
 | جاوا | `programming_languages/java/`| | سی شارپ | `programming_languages/csharp/`|
-| برو |  __محافظت شده_6__ | | زنگ زدگی | `programming_languages/rust/`|
-| TypeScript | `programming_languages/typescript/`| | SQL |  __محافظت شده_9__ |
+| برو |  [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md) | | زنگ زدگی | `programming_languages/rust/`|
+| TypeScript | `programming_languages/typescript/`| | SQL |  [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md) |
 | یاقوت | `programming_languages/ruby/`| | پی اچ پی | `programming_languages/php/`|
 | سویفت | `programming_languages/swift/`| | کاتلین | `programming_languages/kotlin/`|
 | R | `programming_languages/r/`| | ویژوال بیسیک | `programming_languages/visual_basic/`|
@@ -77,128 +72,128 @@ knowledge_base/English/
 ### 02 - هوش مصنوعی و یادگیری ماشین
 | فایل | توضیحات |
 |------|-------------|
-| [artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)| مروری بر هوش مصنوعی، ML، یادگیری عمیق، LLM، اخلاق |
-|  __محافظت شده_1__ | خطوط لوله ML، معیارها، بهترین شیوه ها |
-| [phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)| مدل های در حال اجرا به صورت محلی |
-|  __محافظت شده_3__ | معماری های استقرار هوش مصنوعی محلی |
-| [prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)| تکنیک ها و استراتژی های سریع |
-| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT، دریاچه های داده، ارکستراسیون، کافکا، فروشگاه های ویژه |
-|  __محافظت شده_6__ | خدمات مدل، رجیستری، استراتژی های استقرار، نظارت دریفت |
-| [computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN ها، تشخیص اشیا، تقسیم بندی، یادگیری انتقال |
-| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)| پردازش متن، جاسازی، ترانسفورماتور، BERT، GPT |
-|  __محافظت شده_9__ | تعصب هوش مصنوعی، انصاف، پاسخگویی، مقررات، چارچوب های حاکمیتی |
-| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)| مشکل تراز، RLHF، تفسیرپذیری، تحقیقات ایمنی هوش مصنوعی |
-| [federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)| آموزش غیرمتمرکز، حریم خصوصی دیفرانسیل، تجمیع امن |
-| [generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GANs، VAEs، مدل‌های انتشار، LLMs، برنامه‌های کاربردی هوش مصنوعی مولد |
-| [graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN، GAT، ارسال پیام، نمودارهای دانش، وظایف نمودار |
-| [model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)| کمی سازی، هرس، تقطیر، ONNX، خدمات زیرساخت |
-| [multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)| مدل های زبان بینایی، CLIP، DALL-E، یادگیری متقابل |
-| [recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)| فیلتر مشارکتی، مبتنی بر محتوا، ترکیبی، فاکتورسازی ماتریسی |
-| [reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP ها، یادگیری Q، شیب سیاست، RLHF، سیستم های چند عاملی |
-| [speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR، TTS، ویژگی های صوتی، Whisper، خطوط لوله سخنرانی |
-| [time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA، پیامبر، LSTMs، فصلی، تشخیص ناهنجاری |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)| مروری بر هوش مصنوعی، ML، یادگیری عمیق، LLM، اخلاق |
+|  [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md) | خطوط لوله ML، معیارها، بهترین شیوه ها |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)| مدل های در حال اجرا به صورت محلی |
+|  [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md) | معماری های استقرار هوش مصنوعی محلی |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)| تکنیک ها و استراتژی های سریع |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT، دریاچه های داده، ارکستراسیون، کافکا، فروشگاه های ویژه |
+|  [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md) | خدمات مدل، رجیستری، استراتژی های استقرار، نظارت دریفت |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN ها، تشخیص اشیا، تقسیم بندی، یادگیری انتقال |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)| پردازش متن، جاسازی، ترانسفورماتور، BERT، GPT |
+|  [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md) | تعصب هوش مصنوعی، انصاف، پاسخگویی، مقررات، چارچوب های حاکمیتی |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)| مشکل تراز، RLHF، تفسیرپذیری، تحقیقات ایمنی هوش مصنوعی |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)| آموزش غیرمتمرکز، حریم خصوصی دیفرانسیل، تجمیع امن |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GANs، VAEs، مدل‌های انتشار، LLMs، برنامه‌های کاربردی هوش مصنوعی مولد |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN، GAT، ارسال پیام، نمودارهای دانش، وظایف نمودار |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)| کمی سازی، هرس، تقطیر، ONNX، خدمات زیرساخت |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)| مدل های زبان بینایی، CLIP، DALL-E، یادگیری متقابل |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)| فیلتر مشارکتی، مبتنی بر محتوا، ترکیبی، فاکتورسازی ماتریسی |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP ها، یادگیری Q، شیب سیاست، RLHF، سیستم های چند عاملی |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR، TTS، ویژگی های صوتی، Whisper، خطوط لوله سخنرانی |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA، پیامبر، LSTMs، فصلی، تشخیص ناهنجاری |
 ### 03 - علم داده و تجزیه و تحلیل
 | فایل | توضیحات |
 |------|-------------|
 | [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)| پردازش داده، ML، کلان داده، BI |
-|  __محافظت شده_1__ | ریاضیات، منطق، برهان |
+|  [mathematics.md](03_data_science_and_analytics/mathematics/mathematics.md) | ریاضیات، منطق، برهان |
 | [data_visualization.md](03_data_science_and_analytics/data_visualization.md)| انتخاب نمودار، اصول طراحی، داستان سرایی، ابزار |
-|  __محافظت شده_3__ | آزمون فرضیه، آزمون A/B، اندازه اثر، استنتاج علی |
+|  [logic_and_critical_thinking.md](03_data_science_and_analytics/mathematics/logic_and_critical_thinking.md) | آزمون فرضیه، آزمون A/B، اندازه اثر، استنتاج علی |
 | [causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAG ها، عوامل مخدوش کننده، تفاوت در تفاوت ها، متغیرهای ابزاری |
 | [data_ethics_and_privacy.md](03_data_science_and_analytics/data_ethics_and_privacy.md)| GDPR، رضایت داده، سوگیری الگوریتمی، الگوهای تاریک، ناشناس سازی |
-|  __محافظت شده_6__ | بسته بندی، تقویت، انباشته، رای گیری، جنگل های تصادفی، XGBoost |
+|  [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md) | بسته بندی، تقویت، انباشته، رای گیری، جنگل های تصادفی، XGBoost |
 | [feature_engineering.md](03_data_science_and_analytics/feature_engineering.md)| تبدیل، رمزگذاری، انتخاب ویژگی، کاهش ابعاد |
 | [geospatial_analysis.md](03_data_science_and_analytics/geospatial_analysis.md)| سیستم های مختصات، عملیات فضایی، GeoPandas، تجزیه و تحلیل شطرنجی |
 ### 04 - علوم طبیعی
 | فایل | توضیحات |
 |------|-------------|
 | [science_and_nature.md](04_natural_sciences/science_and_nature.md)| فیزیک، شیمی، زیست شناسی، علوم زمین |
-|  __محافظت شده_1__ | تخصص های پزشکی، تشخیص، درمان، اخلاق |
-| [environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)| اکوسیستم، آب و هوا، انرژی، سیاست |
-|  __محافظت شده_3__ | کشاورزی، تغذیه، سیستم های غذایی، پایداری |
-| [astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)| ستاره ها، کهکشان ها، انفجار بزرگ، ماده تاریک، سیارات فراخورشیدی، کیهان شناسی |
-| [genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| DNA، بیان ژن، CRISPR، GWAS، فناوری های توالی یابی |
-|  __محافظت شده_6__ | ساختارهای کریستالی، پلیمرها، آلیاژها، نیمه هادی ها، نانومواد |
-| [neuroscience.md](04_natural_sciences/neuroscience.md)| نورون ها، ساختار مغز، انتقال دهنده های عصبی، پلاستیسیته، تصویربرداری مغز |
+|  [biology_fundamentals.md](04_natural_sciences/life_sciences/biology_fundamentals.md) | تخصص های پزشکی، تشخیص، درمان، اخلاق |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)| اکوسیستم، آب و هوا، انرژی، سیاست |
+|  [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md) | کشاورزی، تغذیه، سیستم های غذایی، پایداری |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)| ستاره ها، کهکشان ها، انفجار بزرگ، ماده تاریک، سیارات فراخورشیدی، کیهان شناسی |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| DNA، بیان ژن، CRISPR، GWAS، فناوری های توالی یابی |
+|  [physics.md](04_natural_sciences/physical_sciences/physics.md) | ساختارهای کریستالی، پلیمرها، آلیاژها، نیمه هادی ها، نانومواد |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)| نورون ها، ساختار مغز، انتقال دهنده های عصبی، پلاستیسیته، تصویربرداری مغز |
 ### 05 - تجارت و اقتصاد
 | فایل | توضیحات |
 |------|-------------|
 | [business_and_economics.md](05_business_and_economics/business_and_economics.md)| ساختارهای شرکتی، بازاریابی، اقتصاد، استارتاپ ها |
-|  __محافظت شده_1__ | امور مالی شخصی، سرمایه گذاری، بازارها، بازنشستگی |
+|  [finance_and_investing.md](05_business_and_economics/finance_and_investing.md) | امور مالی شخصی، سرمایه گذاری، بازارها، بازنشستگی |
 | [law_and_legal_systems.md](05_business_and_economics/law_and_legal_systems.md)| سیستم های حقوقی، قراردادها، تخلفات، IP، استخدام |
-|  __محافظت شده_3__ | 4Ps، کانال های دیجیتال، SEO/SEM، تجزیه و تحلیل، استراتژی برند |
+|  [marketing_and_digital_strategy.md](05_business_and_economics/marketing_and_digital_strategy.md) | 4Ps، کانال های دیجیتال، SEO/SEM، تجزیه و تحلیل، استراتژی برند |
 | [management_and_project_methodologies.md](05_business_and_economics/management_and_project_methodologies.md)| رهبری، چابک/اسکرام/کانبان، OKRها، مدیریت ریسک |
 | [behavioural_economics.md](05_business_and_economics/behavioural_economics.md)| سوگیری های شناختی، نظریه چشم انداز، اکتشافات، تلنگرها، معماری انتخاب |
-|  __محافظت شده_6__ | تعادل نش، معضل زندانی، طراحی مکانیزم، حراجی |
+|  [game_theory.md](05_business_and_economics/game_theory.md) | تعادل نش، معضل زندانی، طراحی مکانیزم، حراجی |
 | [intellectual_property_and_innovation.md](05_business_and_economics/intellectual_property_and_innovation.md)| اختراعات، حق چاپ، علائم تجاری، اسرار تجاری، مجوز منبع باز |
 | [organisational_design_and_culture.md](05_business_and_economics/organisational_design_and_culture.md)| ساختارهای سازمانی، انواع فرهنگ، مدیریت تغییر، پویایی تیم |
-|  __محافظت شده_9__ | مدیریت موجودی، تولید ناب، تدارکات، اثر شلاق نر |
+|  [supply_chain_and_operations.md](05_business_and_economics/supply_chain_and_operations.md) | مدیریت موجودی، تولید ناب، تدارکات، اثر شلاق نر |
 ### 06 - علوم انسانی و هنر
 | فایل | توضیحات |
 |------|-------------|
-| [history_and_culture.md](06_humanities_and_arts/history_and_culture.md)| تاریخ جهان از تمدن های باستانی تا عصر اطلاعات |
-|  __محافظت شده_1__ | جغرافیای فیزیکی/انسانی، سیستم های سیاسی |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)| تاریخ جهان از تمدن های باستانی تا عصر اطلاعات |
+|  [literature.md](06_humanities_and_arts/arts/literature.md) | جغرافیای فیزیکی/انسانی، سیستم های سیاسی |
 | [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)| ژانرهای ادبی، هنرهای تجسمی، موسیقی، فیلم |
-|  __محافظت شده_3__ | روانشناسی شناختی، اجتماعی، رشد |
-| [language_and_english.md](06_humanities_and_arts/language_and_english.md)| گرامر، زبان شناسی، نگارش |
-| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)| مکاتب فکری، اخلاق، منطق، معرفت شناسی، سوگیری های شناختی |
-|  __محافظت شده_6__ | آواشناسی، نحو، معناشناسی، عمل شناسی، زبانشناسی اجتماعی |
-| [music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)| ترازو، آکورد، هارمونی، ریتم، آکوستیک اتاق، فیزیک ابزار |
-| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)| ادیان بزرگ جهان، اسطوره های تطبیقی، نظام های اعتقادی |
+|  [performing_arts.md](06_humanities_and_arts/arts/performing_arts.md) | روانشناسی شناختی، اجتماعی، رشد |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md)| گرامر، زبان شناسی، نگارش |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)| مکاتب فکری، اخلاق، منطق، معرفت شناسی، سوگیری های شناختی |
+|  [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md) | آواشناسی، نحو، معناشناسی، عمل شناسی، زبانشناسی اجتماعی |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)| ترازو، آکورد، هارمونی، ریتم، آکوستیک اتاق، فیزیک ابزار |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)| ادیان بزرگ جهان، اسطوره های تطبیقی، نظام های اعتقادی |
 ### 07 - مرجع عمومی
 | فایل | توضیحات |
 |------|-------------|
 | [dictionary.md](07_general_reference/dictionary.md)| تعاریف واژه های جامع (الف-ذ) |
-|  __محافظت شده_1__ | منظومه شمسی، بدن انسان، جغرافیا، انرژی |
+|  [technology_and_computing.md](07_general_reference/technology_and_computing.md) | منظومه شمسی، بدن انسان، جغرافیا، انرژی |
 | [technology_and_computing.md](07_general_reference/technology_and_computing.md)| مبانی محاسبات، اینترنت، پایگاه داده، ابر، امنیت |
-|  __محافظت شده_3__ | دستورالعمل ها و بهترین شیوه های ارتباطی |
+|  [learning_science_and_pedagogy.md](07_general_reference/learning_science_and_pedagogy.md) | دستورالعمل ها و بهترین شیوه های ارتباطی |
 | [learning_science_and_pedagogy.md](07_general_reference/learning_science_and_pedagogy.md)| تمرین بازیابی، تکرار فاصله دار، طبقه بندی بلوم، طراحی یادگیری |
 | [research_methodology.md](07_general_reference/research_methodology.md)| روش علمی، نمونه گیری، روایی، طرح آزمایشی، بررسی همتایان |
-|  __محافظت شده_6__ | اصل هرم، ارائه، متقاعدسازی، نوشتن تجاری |
+|  [world_cultures_and_societies.md](07_general_reference/world_cultures_and_societies.md) | اصل هرم، ارائه، متقاعدسازی، نوشتن تجاری |
 ### 08 - آینده و روندها
 | فایل | توضیحات |
 |------|-------------|
-| [2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)| رویدادهای آینده، ماموریت های فضایی، روندهای فناوری |
-|  __محافظت شده_1__ | محاسبات کوانتومی، بیوتکنولوژی، نانوفناوری |
-| [future_of_work.md](08_future_and_trends/future_of_work.md)| اتوماسیون، کار از راه دور، مهارت مجدد |
-|  __محافظت شده_3__ | پزشکی شخصی، تشخیص هوش مصنوعی |
-| [future_transportation.md](08_future_and_trends/future_transportation.md)| خودروهای الکتریکی، وسایل نقلیه خودران، هایپرلوپ |
-| [demographic_shifts.md](08_future_and_trends/demographic_shifts.md)| روند جمعیت، مهاجرت، شهرنشینی |
-|  __محافظت شده_6__ | آموزش آنلاین، تدریس خصوصی هوش مصنوعی |
-| [geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)| ژئوپلیتیک، آمریکا و چین، جهان چندقطبی |
-| [scenario_planning.md](08_future_and_trends/scenario_planning.md)| سناریوها و چارچوب های آینده |
-|  __محافظت شده_9__ | ماموریت های فضایی و جدول زمانی |
-| [sustainable_future.md](08_future_and_trends/sustainable_future.md)| آب و هوا، انتقال انرژی، اقتصاد دایره ای |
-| [ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)| سیستم های توصیه، دستیاران هوشمند، حریم خصوصی، اقتصاد توجه |
-| [climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)| انرژی های تجدیدپذیر، خودروهای الکتریکی، جذب کربن، هیدروژن سبز، فناوری پایدار |
-| [future_of_computing.md](08_future_and_trends/future_of_computing.md)| قانون مور، محاسبات کوانتومی، تراشه های نورومورفیک، محاسبات لبه |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)| رویدادهای آینده، ماموریت های فضایی، روندهای فناوری |
+|  [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md) | محاسبات کوانتومی، بیوتکنولوژی، نانوفناوری |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)| اتوماسیون، کار از راه دور، مهارت مجدد |
+|  [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md) | پزشکی شخصی، تشخیص هوش مصنوعی |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)| خودروهای الکتریکی، وسایل نقلیه خودران، هایپرلوپ |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)| روند جمعیت، مهاجرت، شهرنشینی |
+|  [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md) | آموزش آنلاین، تدریس خصوصی هوش مصنوعی |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)| ژئوپلیتیک، آمریکا و چین، جهان چندقطبی |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)| سناریوها و چارچوب های آینده |
+|  [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md) | ماموریت های فضایی و جدول زمانی |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)| آب و هوا، انتقال انرژی، اقتصاد دایره ای |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)| سیستم های توصیه، دستیاران هوشمند، حریم خصوصی، اقتصاد توجه |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)| انرژی های تجدیدپذیر، خودروهای الکتریکی، جذب کربن، هیدروژن سبز، فناوری پایدار |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)| قانون مور، محاسبات کوانتومی، تراشه های نورومورفیک، محاسبات لبه |
 ### 09 - درس هایی از شکست ها
 | فایل | توضیحات |
 |------|-------------|
 | [ai_llm_failures.md](09_lessons_from_failures/ai_llm_failures.md)| توهم، سوگیری، شکست در تراز |
-|  __محافظت شده_1__ | اشتباهات رایج کدنویسی و ضد الگوها |
+|  [code_quality_issues.md](09_lessons_from_failures/code_quality_issues.md) | اشتباهات رایج کدنویسی و ضد الگوها |
 | [cognitive_logical_issues.md](09_lessons_from_failures/cognitive_logical_issues.md)| خطاهای استدلالی و سوگیری های شناختی |
-|  __محافظت شده_3__ | مشکلات جستجوی RAG و برداری |
+|  [rag_vector_search.md](09_lessons_from_failures/rag_vector_search.md) | مشکلات جستجوی RAG و برداری |
 | [security_vulnerabilities.md](09_lessons_from_failures/security_vulnerabilities.md)| آسیب پذیری های امنیتی رایج |
 | [system_reliability.md](09_lessons_from_failures/system_reliability.md)| خرابی سیستم و الگوهای قابلیت اطمینان |
-|  __محافظت شده_6__ | ضد الگوهای API، شکستن تغییرات، خرابی های نسخه سازی، خرابی های آبشاری |
+|  [api_design_and_integration_failures.md](09_lessons_from_failures/api_design_and_integration_failures.md) | ضد الگوهای API، شکستن تغییرات، خرابی های نسخه سازی، خرابی های آبشاری |
 | [data_pipeline_and_etl_failures.md](09_lessons_from_failures/data_pipeline_and_etl_failures.md)| رانش طرحواره، داده های تکراری، شکاف های اعتبارسنجی، نظارت بر خط لوله |
 | [ml_project_failures.md](09_lessons_from_failures/ml_project_failures.md)| نشت داده ها، عدم تطابق انتظارات، شکست در استقرار، خرابی مدل |
 ### 10 - مرجع سریع
 | فایل | توضیحات |
 |------|-------------|
-| [python_syntax.md](10_quick_reference/python_syntax.md)| برگه تقلب دستور زبان پایتون |
-|  __محافظت شده_1__ | دستورات Git و گردش کار |
-| [sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| مرجع پرس و جوی SQL |
-|  __محافظت شده_3__ | مرجع خط فرمان لینوکس |
-| [docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, Helm Cheat Sheet |
-| [regular_expressions.md](10_quick_reference/regular_expressions.md)| نحو Regex، الگوهای رایج، استفاده خاص زبان |
-|  __محافظت شده_6__ | مقایسه کنار هم AWS در مقابل Azure و GCP |
-| [bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| برنامه نویسی Bash، پردازش متن، تک خط های مفید |
-| [ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| کتاب های بازی Ansible، ماژول ها، نقش ها، موجودی، برگه تقلب اتوماسیون |
-|  __محافظت شده_9__ | GitHub Actions، GitLab CI، Jenkins، خط لوله الگوهای YAML |
-| [prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL، صادرکنندگان، داشبورد، هشدار، پشته نظارت |
-| [terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| مفاهیم IaC، دستورات Terraform، مدیریت حالت، ماژول ها |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md)| برگه تقلب دستور زبان پایتون |
+|  [python_syntax.md](10_quick_reference/programming/python_syntax.md) | دستورات Git و گردش کار |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| مرجع پرس و جوی SQL |
+|  [regular_expressions.md](10_quick_reference/programming/regular_expressions.md) | مرجع خط فرمان لینوکس |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, Helm Cheat Sheet |
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)| نحو Regex، الگوهای رایج، استفاده خاص زبان |
+|  [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) | مقایسه کنار هم AWS در مقابل Azure و GCP |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| برنامه نویسی Bash، پردازش متن، تک خط های مفید |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| کتاب های بازی Ansible، ماژول ها، نقش ها، موجودی، برگه تقلب اتوماسیون |
+|  [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md) | GitHub Actions، GitLab CI، Jenkins، خط لوله الگوهای YAML |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL، صادرکنندگان، داشبورد، هشدار، پشته نظارت |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| مفاهیم IaC، دستورات Terraform، مدیریت حالت، ماژول ها |
 ---
 
 ## مسیرهای یادگیری
@@ -210,12 +205,9 @@ knowledge_base/English/
 ### برای توسعه دهندگان نرم افزار
 1.`01_coding_and_technology/programming_languages/python/`(یا زبان انتخابی شما)
 2.`01_coding_and_technology/data_structures_and_algorithms.md`
-3.`01_coding_and_technology/web_development.md`
 4.`01_coding_and_technology/database_systems.md`
 5.`01_coding_and_technology/cloud_architecture.md`
-6.`01_coding_and_technology/software_architecture_patterns.md`
 7.`01_coding_and_technology/api_design_and_architecture.md`
-8.`01_coding_and_technology/testing_methodologies.md`
 9. `02_ai_and_machine_learning/artificial_intelligence.md`
 ### برای دانشمندان داده
 1.`03_data_science_and_analytics/math_and_logic.md`
@@ -309,9 +301,9 @@ contribution:
 | `title`| برگرفته از اولین عنوان`#`فایل |
 | `description`| خلاصه یک خطی؛ فایل های موضوعی از ورودی این فهرست README مجددا استفاده می کنند، فایل های زبان برنامه نویسی از توضیحات تولید شده استفاده می کنند |
 | `category`/`reviewed_by`| برگرفته از دایرکتوری مادر (`01_coding_and_technology`→ "Coding and Technology" / "Coding & Technology Knowledge Team") |
-|  __محافظت شده_6__ | نسخه معنایی; ضربه زدن به هر ویرایش (به زیر مراجعه کنید) |
+|  [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) | نسخه معنایی; ضربه زدن به هر ویرایش (به زیر مراجعه کنید) |
 | `authors`/`contributors`| نویسنده اصلی به علاوه هر کسی که از آن زمان فایل را ویرایش کرده است |
-|  __محافظت شده_9__ | فهرست تغییرات فقط پیوست، اول جدیدترین |
+|  [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md) | فهرست تغییرات فقط پیوست، اول جدیدترین |
 | `review_date`/`next_review`| آهنگ ~6 ماهه و ~1 ساله، منعکس کننده برنامه مرور مهارت ها |
 | `tags`| نشانه‌های نام فایل به‌علاوه یک کلمه کلیدی دسته بندی تمیز (به عنوان مثال `coding-and-technology`) |
 | `difficulty_level`| تنظیم بر اساس دسته، با لغو هر زبان (به عنوان مثال Haskell/Assembly → `advanced`، Scratch → `beginner`) |

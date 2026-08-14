@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Manajemen dan Metodologi Proyek
-Mengelola orang dan proyek adalah salah satu hal tersulit dalam organisasi mana pun. Keterampilan teknis membawa Anda ke dalam ruangan, tetapi kemampuan untuk memimpin tim, membuat keputusan, berkomunikasi dengan jelas, dan memberikan hasil adalah hal yang menentukan apakah sesuatu benar-benar dapat dilakukan. File ini mencakup kerangka kerja, metodologi, dan keterampilan praktis yang diandalkan oleh manajer dan pemimpin proyek yang efektif.
+Mengelola orang dan proyek adalah salah satu tanggung jawab yang paling menuntut di organisasi mana pun. Keterampilan teknis memberikan jalan masuk, namun kemampuan untuk memimpin tim, membuat keputusan, berkomunikasi secara efektif, dan memberikan hasil menentukan apakah tujuan tercapai. File ini mencakup kerangka kerja, metodologi, dan keterampilan praktis yang diterapkan oleh manajer dan pemimpin proyek yang efektif.
 ---
 
 ## Gaya Kepemimpinan
@@ -57,9 +58,9 @@ Penelitian (terutama dari Project Oxygen Google) mengidentifikasi perilaku terba
 1. **Merupakan pelatih yang baik** — mengajukan pertanyaan, membantu orang berpikir, tidak hanya memberikan jawaban
 2. **Memberdayakan tim** — mendelegasikan secara bermakna; tidak mengelola mikro
 3. **Menciptakan lingkungan inklusif** — keamanan psikologis; semua orang bisa berkontribusi
-4. **Produktif dan berorientasi pada hasil** — menjaga tim tetap fokus pada hal yang penting
+4. **Produktif dan berorientasi pada hasil** — membuat tim tetap fokus pada hal yang penting
 5. **Merupakan komunikator yang baik** — mendengarkan, berbagi konteks, memberikan arahan yang jelas
-6. **Mendukung pengembangan karier** — berbicara tentang pertumbuhan, bukan hanya tugas
+6. **Mendukung pengembangan karir** — berbicara tentang pertumbuhan, bukan hanya tugas
 7. **Memiliki visi dan strategi yang jelas** — mengetahui tujuan tim dan alasannya
 8. **Memiliki keterampilan teknis utama** — dapat memberi saran dan memahami pekerjaan (meskipun tidak melakukannya)
 ---
@@ -174,7 +175,7 @@ OKR adalah kerangka penetapan tujuan yang digunakan oleh Google, Intel, Spotify,
 | **BINTANG** | Situasi → Tugas → Tindakan → Hasil | Wawancara; ulasan kinerja |
 | **BLUF** | Garis Bawah Di Depan | Email ke eksekutif; pembaruan status |
 | **SBAR** | Situasi → Latar Belakang → Penilaian → Rekomendasi | penyerahan; komunikasi insiden |
-| **7 C** | Jelas, Ringkas, Konkrit, Benar, Koheren, Lengkap, Santun | Komunikasi tertulis umum |
+| **7 C** | Jelas, Ringkas, Konkret, Benar, Koheren, Lengkap, Santun | Komunikasi tertulis umum |
 ### Memberikan Masukan
 | Pendekatan | Deskripsi |
 |----------|-------------|
@@ -267,4 +268,4 @@ Manajemen produk adalah disiplin dalam memutuskan apa yang akan dibuat, untuk si
 ---
 
 ## Ringkasan
-Manajemen bukanlah tentang jabatan atau bagan organisasi — ini tentang menyelesaikan hal yang benar melalui orang lain. Manajer terbaik menggabungkan pemikiran jernih (kerangka kerja, metodologi, metrik) dengan kecerdasan emosional (mendengarkan, empati, percaya). Tidak ada metodologi yang dapat menggantikan penilaian yang baik, namun penilaian yang baik akan ditingkatkan dengan kerangka kerja yang baik. Gunakan mereka sebagai alat, bukan sebagai agama.
+Manajemen adalah praktik mencapai tujuan melalui orang lain. Manajer yang efektif menggabungkan pemikiran jernih (kerangka kerja, metodologi, metrik) dengan keterampilan interpersonal (mendengarkan, empati, percaya). Tidak ada metodologi yang dapat menggantikan penilaian yang baik, namun penilaian yang baik akan diperkuat oleh kerangka kerja yang baik. Hal ini harus diterapkan sebagai panduan praktis dan bukan doktrin yang kaku.

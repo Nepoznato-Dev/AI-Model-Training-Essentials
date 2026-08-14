@@ -1,48 +1,53 @@
 ---
-# Métadonnées
-titre : "Accessibilité et conception inclusive"
-description : "WCAG, UX inclusif, technologie d'assistance, codage accessible"
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Accessibility and Inclusive Design"
+description: "WCAG, inclusive UX, assistive technology, accessible coding"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-tags : [accessibilité, inclusif, conception, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "8 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [accessibility, inclusive, design, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Accessibilité et conception inclusive
-L'accessibilité (souvent abrégé en a11y) est la pratique consistant à rendre un logiciel utilisable par tout le monde, y compris les personnes souffrant de handicaps visuels, auditifs, moteurs, cognitifs et neurologiques. Ce n'est pas agréable à avoir ; c'est une exigence légale dans de nombreuses juridictions, une obligation morale et une bonne ingénierie. Un logiciel accessible est un meilleur logiciel pour tout le monde, car les décisions de conception qui aident les utilisateurs handicapés (structure claire, navigation au clavier, contraste suffisant, texte lisible) améliorent l'expérience de tous les utilisateurs.
+L'accessibilité (souvent abrégé en a11y) est la pratique consistant à rendre un logiciel utilisable par tout le monde, y compris les personnes souffrant de handicaps visuels, auditifs, moteurs, cognitifs et neurologiques. Il s'agit d'une exigence légale dans de nombreuses juridictions et d'une pratique d'ingénierie standard. Un logiciel accessible est un meilleur logiciel pour tout le monde, car les décisions de conception qui prennent en charge les utilisateurs handicapés (structure claire, navigation au clavier, contraste suffisant, texte lisible) améliorent l'expérience de tous les utilisateurs.
 ---
 
 ## À qui profite l’accessibilité ?
 | Type de handicap | Exemples | Technologie d'assistance |
-|----------------|---------|--------------------------|
+|----------------|---------|-------------------------|
 | **Visuel** | Cécité, basse vision, daltonisme | Lecteurs d'écran (JAWS, NVDA, VoiceOver) ; loupes; modes à contraste élevé |
-| **Auditoire** | Surdité, malentendant | Légendes ; transcriptions; alertes visuelles |
+| **Auditif** | Surdité, malentendant | Légendes ; transcriptions; alertes visuelles |
 | **Moteur** | Dextérité limitée, paralysie, tremblements | Navigation au clavier uniquement ; commande vocale ; changer d'appareil ; suivi oculaire |
 | **Cognitif** | Dyslexie, TDAH, autisme, troubles de la mémoire | Langage clair ; navigation cohérente ; réduction des distractions |
 | **Temporaire** | Bras cassé, soleil éclatant, environnement bruyant | Mêmes aménagements que les invalidités permanentes |
@@ -164,7 +169,7 @@ ARIA ajoute des informations d'accessibilité aux éléments HTML qui n'ont pas 
 | **iOS** | Directives relatives à l'interface humaine Apple (section Accessibilité) | Voix off ; Type dynamique ; Contrôle des commutateurs |
 | **Android** | Directives d'accessibilité Android | Parler ; Accès au commutateur ; Sélectionner pour parler |
 | Préoccupation mobile | Solutions |
-|---------------|----------|
+|---------------|--------------|
 | **Cibles tactiles** | Minimum 44×44 points (iOS) / 48×48 dp (Android) |
 | **Prise en charge du lecteur d'écran** | Descriptions de contenu ; étiquettes d'accessibilité |
 | **Sensibilité au mouvement** | Respectez`prefers-reduced-motion`; éviter les animations à lecture automatique |
@@ -172,4 +177,4 @@ ARIA ajoute des informations d'accessibilité aux éléments HTML qui n'ont pas 
 ---
 
 ## Résumé
-L'accessibilité n'est pas une fonctionnalité que vous ajoutez à la fin : c'est un principe de conception qui doit éclairer chaque décision dès le départ. Utilisez du HTML sémantique. Assurez-vous que la navigation au clavier fonctionne. Maintenez un contraste de couleurs suffisant. Proposez des alternatives textuelles au contenu non textuel. Testez avec des lecteurs d’écran et de vrais utilisateurs handicapés. Le résultat est un logiciel qui fonctionne mieux pour tout le monde – pas seulement pour les personnes handicapées, mais aussi pour ceux qui souffrent de déficiences temporaires, de limitations situationnelles, d'appareils plus anciens, de connexions lentes et des mille autres façons dont l'utilisation réelle diffère de l'environnement idéalisé du développeur.
+L'accessibilité est un principe de conception qui doit éclairer chaque décision dès le début, et non une fonctionnalité ajoutée à la fin. Utilisez du HTML sémantique. Assurez-vous que la navigation au clavier fonctionne. Maintenez un contraste de couleurs suffisant. Proposez des alternatives textuelles au contenu non textuel. Testez avec des lecteurs d'écran et des utilisateurs handicapés. Le résultat est un logiciel qui fonctionne mieux pour tout le monde, y compris pour ceux qui souffrent de déficiences temporaires, de limitations situationnelles, d'appareils plus anciens, de connexions lentes et des nombreuses différences entre l'utilisation réelle et un environnement de développement contrôlé.

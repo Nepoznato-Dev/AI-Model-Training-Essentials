@@ -829,4 +829,4 @@ scp bin/payroll server:/opt/cobol/bin/
 ---
 
 ## Zusammenfassung
-COBOL ist ein Relikt aus den Anfängen des Computerwesens, das nicht sterben will – weil es sich das nicht leisten kann. Die Banken- und Regierungssysteme der Welt sind auf COBOL-Programme angewiesen, die seit Jahrzehnten zuverlässig laufen. Obwohl sich heute niemand mehr für COBOL für ein neues Projekt entscheiden würde, ist die Sprache nach wie vor von entscheidender Bedeutung für die Aufrechterhaltung der Infrastruktur, die der globalen Finanzwelt zugrunde liegt. Der Mangel an COBOL-Entwicklern macht es zu einer überraschend lukrativen Nische.
+COBOL ist ein Erbe der frühen Jahrzehnte des Computerwesens, das aktiv genutzt wird, weil ein Ersatz in großem Maßstab nicht machbar ist. Die Banken- und Regierungssysteme der Welt sind auf COBOL-Programme angewiesen, die seit Jahrzehnten zuverlässig laufen. Obwohl COBOL heute typischerweise nicht für ein neues Projekt gewählt würde, bleibt die Sprache wichtig für die Aufrechterhaltung der Infrastruktur, die die globalen Finanzen unterstützt. Der Mangel an COBOL-Entwicklern macht es zu einer lukrativen Nische.

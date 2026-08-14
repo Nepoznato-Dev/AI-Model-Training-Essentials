@@ -1,41 +1,46 @@
 ---
-# Metadatos
-título: "Fundamentos de ciberseguridad"
-descripción: "Cifrado, TLS, OWASP, codificación segura, SDL"
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Cybersecurity Fundamentals"
+description: "Encryption, TLS, OWASP, secure coding, SDL"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [ciberseguridad, codificación y tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "9 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [cybersecurity, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fundamentos de ciberseguridad
-La seguridad no es una característica que se incorpora al final; es una disciplina que debe integrarse en cada capa de un sistema desde el primer día. Ya sea que esté creando una aplicación web, administrando infraestructura o enviando una API, comprender el panorama de amenazas y los fundamentos de la defensa es esencial.
+La seguridad es una disciplina que debe integrarse en cada capa de un sistema desde el principio, en lugar de agregarse como una ocurrencia tardía. Ya sea creando una aplicación web, administrando infraestructura o enviando una API, es esencial comprender el panorama de amenazas y los fundamentos de la defensa.
 ---
 
 ## Cifrado y criptografía
@@ -67,7 +72,7 @@ Utilice TLS 1.2 o 1.3. Deshabilite TLS 1.0 y 1.1. Habilite HSTS (HTTP Strict Tra
 | **Contraseña** | Bajo-Medio | Cuentas básicas (aplicar más de 12 caracteres, verificar si hay infracciones) |
 | **AMF (TOTP)** | Alto | Estándar para cuentas confidenciales (Google Authenticator, Authy) |
 | **Clave de hardware (FIDO2/WebAuthn)** | Muy Alto | Cuentas de alta seguridad (YubiKey) |
-| **Biométrico** | Medio-alto | Desbloqueo del dispositivo (huella digital, rostro): no es excelente como único factor |
+| **Biométrico** | Medio-Alto | Desbloqueo del dispositivo (huella digital, rostro): no es excelente como único factor |
 | **OAuth2 / OIDC** | Alto | Inicio de sesión de terceros ("Iniciar sesión con Google") |
 **Reglas de contraseña**: aplique una longitud mínima (12 a 16 caracteres), verifique las listas de contraseñas violadas, use Argon2id o bcrypt para hash con sales por usuario.
 ### Autorización: ¿Qué puedes hacer?
@@ -111,7 +116,7 @@ OWASP Top 10 es el documento de concientización estándar para la seguridad de 
 | **Codificación HTML** | Codifique `<`, `>`, `&`, `"`,`'`para evitar XSS |
 | **Caparazón escapando** | Evite crear comandos de shell a partir de la entrada del usuario; utilizar`shlex.quote()`|
 | **Límites de longitud** | Aplicar longitudes máximas para evitar desbordamientos de búfer y DoS |
-| **Comprobación de tipos** | Asegúrese de que los números enteros sean números enteros y los booleanos sean booleanos |
+| **Comprobación de tipo** | Asegúrese de que los números enteros sean números enteros y los booleanos sean booleanos |
 ### Vulnerabilidades comunes
 | Vulnerabilidad | Ataque | Defensa |
 |--------------|--------|---------|

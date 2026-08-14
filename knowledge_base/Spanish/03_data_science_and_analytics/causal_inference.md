@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Inferencia causal"
-descripción: "DAG, factores de confusión, diferencias en diferencias, variables instrumentales"
-categoría: "Ciencia y análisis de datos"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Causal Inference"
+description: "DAGs, confounders, difference-in-differences, instrumental variables"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de análisis y ciencia de datos"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [causal, inferencia, ciencia-de-datos-y-análisis]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "5 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [causal, inference, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "5 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Inferencia causal
 La inferencia causal es la ciencia que determina si una cosa realmente causa otra, no sólo si están correlacionadas. La correlación te dice que dos variables se mueven juntas. La causalidad te dice que cambiar uno cambiará el otro. Esta distinción es de enorme importancia en medicina (¿este medicamento funciona?), políticas (¿esta intervención reduce la pobreza?), negocios (¿esta campaña publicitaria aumenta las ventas?) y ciencia (¿este mecanismo explica el fenómeno?).

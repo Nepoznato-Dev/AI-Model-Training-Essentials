@@ -924,6 +924,219 @@ julia --project=. -e '
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How does multiple dispatch differ from single dispatch in OOP languages?
+
+**A:** In single dispatch (Java, Python), the method is chosen based on the type of the first argument (the object). In Julia, the method is chosen based on the types of ALL arguments:
+
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+This enables symmetric operations and eliminates boilerplate patterns.
+
+### Q2: How do I achieve C-like performance in Julia?
+
+**A:** Key practices:
+- Use type-stable functions (return consistent types)
+- Use concrete types in structs, not abstract ones
+- Avoid global variables (or make them `const`)
+- Use `@inbounds` to skip bounds checking (when safe)
+- Pre-allocate arrays instead of growing them
+- Use `@simd` for vectorizable loops
+
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3: What are the differences between `Array`, `Tuple`, and `NamedTuple`?
+
+**A:** Each serves a different purpose:
+
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4: How do I handle errors and exceptions in Julia?
+
+**A:** Use `try/catch` and custom exception types:
+
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5: How do I use Julia's package ecosystem effectively?
+
+**A:** Use the built-in package manager (Pkg) and environments:
+
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Implementing a Numerical Integration Function
+
+**Step 1: Understand the Problem**
+Compute the definite integral of a function using Simpson's rule.
+
+**Step 2: Identify the Approach**
+Use Julia's multiple dispatch and higher-order functions. Accept any callable function.
+
+**Step 3: Implement**
+```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**Step 4: Optimize**
+Add `@inbounds` and type annotations for performance. Benchmark with `@btime`.
+
+### Problem 2: Building a Parallel Monte Carlo Simulation
+
+**Step 1: Understand the Problem**
+Estimate pi using Monte Carlo sampling, parallelized across all CPU cores.
+
+**Step 2: Identify the Approach**
+Use `Threads.@threads` for shared-memory parallelism.
+
+**Step 3: Implement**
+```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**Step 4: Verify**
+Compare against `Float64(\pi)`. Increase sample count for better accuracy.
+
+### Problem 3: Creating a Custom Array Type with Broadcasting
+
+**Step 1: Understand the Problem**
+Create a `DiagonalMatrix` type that stores only diagonal elements but supports standard array operations.
+
+**Step 2: Identify the Approach**
+Subtype `AbstractMatrix` and implement required methods.
+
+**Step 3: Implement**
+```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**Step 4: Extend**
+Add `setindex!`, matrix multiplication optimizations, and `show` method.
+
+---
+
 ## Summary
 
 Julia is a modern language that aims to be the best tool for scientific and numerical computing. Its combination of Python-like ease and C-like performance is compelling. Multiple dispatch is a powerful paradigm that makes code both expressive and efficient. While its ecosystem is still growing, Julia is increasingly used in research, quantitative finance, and high-performance computing. For numerical work where Python is too slow and C++ is too cumbersome, Julia is an excellent choice.

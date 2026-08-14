@@ -656,8 +656,201 @@ ENTRYPOINT ["/app/run_app.sh"]
 |データサイエンス（一般） |可能ですが、Python の方が多用途です。パイソン、R |
 ---
 
+## 総合的な Q&A
+### Q1: ループを使用する代わりに演算をベクトル化するにはどうすればよいですか?
+**A:** MATLAB は行列演算用に最適化されています。ループをベクトル化されたコードに置き換えます。
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### Q2: 行列と配列の違いは何ですか?
+**A:** MATLAB では、すべてが配列です。行列は 2D 配列です。
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### Q3: MATLAB で効果的なプロットを作成するにはどうすればよいですか?
+**A:** 適切なラベルを付けてプロット関数を使用してください。
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4: MATLAB コードを効果的にデバッグするにはどうすればよいですか?
+**A:** 組み込みのデバッガーと診断ツールを使用します。
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### Q5: データ ファイルを読み書きするにはどうすればよいですか?
+**A:** MATLAB は多くのファイル形式をサポートしています。
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## 思考連鎖による問題解決
+### 問題 1: 連立一次方程式を解く
+**ステップ 1: 問題を理解する**
+Ax = b を解きます。ここで、A は行列、b はベクトルです。
+**ステップ 2: アプローチを特定する**
+最適なアルゴリズムを自動的に選択する MATLAB のバックスラッシュ演算子`\`を使用します。
+**ステップ 3: 実装**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**ステップ 4: 延長**
+過剰決定システムの場合、`\` は最小二乗解を与えます。スパース システムの場合は、`sparse` 行列を使用します。
+### 問題 2: 信号処理 — FFT 解析
+**ステップ 1: 問題を理解する**
+ノイズを含む信号の周波数成分を分析します。
+**ステップ 2: アプローチを特定する**
+テスト信号を生成し、FFT を適用して、周波数スペクトルをプロットします。
+**ステップ 3: 実装**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**ステップ 4: 確認**
+ピークは 50 Hz と 120 Hz に現れるはずです。ノイズフロアは低くなければなりません。
+### 問題 3: カスタム モデルでの曲線フィッティング
+**ステップ 1: 問題を理解する**
+実験データをカスタム非線形モデルに適合させます。
+**ステップ 2: アプローチを特定する**
+`fit` をカスタム`fittype`または`lsqcurvefit`とともに使用します。
+**ステップ 3: 実装**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**ステップ 4: 検証**
+パターンの残差を確認し、R² を検証し、異なる開始点でテストします。
+---
+
 ＃＃ まとめ
-MATLAB は、工学計算と科学プロトタイピングのための標準ツールです。行列指向言語、広範なツールボックス、Simulink 環境により、多くのエンジニアリング分野で不可欠なものとなっています。 Python は MATLAB の領域 (特にデータ サイエンス) の一部に侵入していますが、MATLAB は依然として制御システム、信号処理、および工学教育において推奨されるツールです。運用環境での展開では、通常、コードは MATLAB から C/C++ または Python に変換されます。
+MATLAB は、工学計算と科学プロトタイピングのための標準ツールです。行列指向言語、豊富なツールボックス、Simulink 環境により、多くのエンジニアリング分野で不可欠なものとなっています。 Python は MATLAB の領域 (特にデータ サイエンス) の一部に侵入していますが、MATLAB は依然として制御システム、信号処理、および工学教育において推奨されるツールです。運用環境での展開では、コードは通常、MATLAB から C/C++ または Python に変換されます。
 ---
 
 ## 高度な行列と数値計算

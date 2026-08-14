@@ -1,42 +1,46 @@
 ---
-# فراداده
-عنوان: "فناوری و محاسبات"
-توضیحات: "مبانی محاسبات، اینترنت، پایگاه های داده، ابر، امنیت"
-دسته بندی: "مرجع عمومی"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش مرجع عمومی"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [تکنولوژی، محاسبات، مرجع عمومی]
-سطح سختی: "مبتدی"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "8 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Technology and Computing"
+description: "Computing basics, internet, databases, cloud, security"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [technology, computing, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # فناوری و محاسبات
 محاسبات در همه جا وجود دارد - در تلفن، ماشین، یخچال، دستگاه های پزشکی و زیرساختی که جامعه مدرن را اداره می کند. نیازی نیست که برنامه نویس باشید تا از درک نحوه کارکرد آن بهره مند شوید. این فایل اصول اساسی را پوشش می دهد: رایانه چیست، اینترنت چگونه کار می کند، نرم افزار چگونه ساخته می شود، و مفاهیمی که دنیای دیجیتال را شکل می دهد.
-> **می خواهید عمیق تر بروید؟** این فایل یک نمای کلی است. برای پوشش دقیق هر موضوعی، به فایل‌های اختصاصی در[`01_coding_and_technology/`](../01_coding_and_technology/)- از جمله [web development](../01_coding_and_technology/web_development.md)، [database systems](../01_coding_and_technology/database_systems.md)، [cloud architecture](../01_coding_and_technology/cloud_architecture.md)، [networking](../01_coding_and_technology/networking_basics.md)، و[security](../01_coding_and_technology/security_best_practices.md)مراجعه کنید.
+> **می خواهید عمیق تر بروید؟** این فایل یک نمای کلی است. برای پوشش دقیق هر موضوعی، به فایل‌های اختصاصی در[`01_coding_and_technology/`](../01_coding_and_technology/)- از جمله ، [database systems](../01_coding_and_technology/database_systems.md)، [cloud architecture](../01_coding_and_technology/cloud_architecture.md)، [networking](../01_coding_and_technology/networking_basics.md)، ومراجعه کنید.
 ---
 
 ## کامپیوتر چیست؟
@@ -146,7 +150,7 @@ next_review: "05-08-2027"
 ---
 
 ## امنیت سایبری - حفاظت از سیستم های دیجیتال
-امنیت سایبری عمل دفاع از رایانه ها، شبکه ها و داده ها در برابر حمله است. این مهم است زیرا همه چیز به هم متصل است و هزینه نقض بسیار زیاد است. برای یک راهنمای کامل در مورد 10 برتر OWASP، چرخه عمر توسعه امن و مدیریت اسرار، به[security best practices](../01_coding_and_technology/security_best_practices.md)مراجعه کنید.
+امنیت سایبری عمل دفاع از رایانه ها، شبکه ها و داده ها در برابر حمله است. این مهم است زیرا همه چیز به هم متصل است و هزینه نقض بسیار زیاد است. برای یک راهنمای کامل در مورد 10 برتر OWASP، چرخه عمر توسعه امن و مدیریت اسرار، بهمراجعه کنید.
 ### تهدیدهای رایج
 | تهدید | چیست | پیشگیری |
 |--------|----------|------------|

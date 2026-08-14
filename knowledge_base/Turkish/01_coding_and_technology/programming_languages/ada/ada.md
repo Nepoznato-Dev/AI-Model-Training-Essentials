@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #ada
-Ada, güvenlik açısından kritik ve yüksek bütünlüğe sahip sistemler için tasarlanmış, statik olarak yazılmış, derlenmiş bir programlama dilidir. İlk olarak 1980'lerde ABD Savunma Bakanlığı ile sözleşme kapsamında geliştirilen (adını ilk bilgisayar programcısı olarak kabul edilen Ada Lovelace'den alan) Ada, güvenilirliği, sürdürülebilirliği ve doğruluğu vurgular. O zamanlar Savunma Bakanlığı tarafından kullanılan yüzlerce programlama dilini iyi tanımlanmış tek bir dille değiştirmek üzere tasarlandı.
+Ada, güvenlik açısından kritik ve yüksek bütünlüğe sahip sistemler için tasarlanmış, statik olarak yazılmış, derlenmiş bir programlama dilidir. İlk olarak 1980'lerde ABD Savunma Bakanlığı (adını ilk bilgisayar programcısı olarak kabul edilen Ada Lovelace'den almıştır) ile sözleşme kapsamında geliştirilen Ada, güvenilirliği, sürdürülebilirliği ve doğruluğu vurgular. O zamanlar Savunma Bakanlığı tarafından kullanılan yüzlerce programlama dilini iyi tanımlanmış tek bir dille değiştirmek üzere tasarlandı.
 Ada, havacılıkta (kablolu uçuş sistemleri), uzayda (ESA ve NASA), savunmada (füze rehberliği, radar), demiryolu taşımacılığında ve tıbbi cihazlarda - yazılım arızasının hayatlara mal olabileceği her yerde kullanılır.
 ---
 
@@ -863,5 +864,146 @@ end Main;
 | Veri bilimi / ML | Ekosistem değil | Python, R |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Ada'nın yazım sistemi derleme zamanındaki hataları nasıl önlüyor?
+**C:** Ada'nın yazı sistemi diller arasında en katı olanlardan biridir. Diğer dillerin gözden kaçırdığı hataları yakalar:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### S2: Ada'nın görev modeli nedir ve diğer eşzamanlılık modelleriyle nasıl karşılaştırılır?
+**C:** Ada, korunan nesneler ve görevlerle yerleşik eşzamanlılığa sahiptir:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### S3: Ada'da jenerikleri nasıl kullanırım?
+**A:** Ada jenerikleri açık ve tür açısından güvenlidir:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### S4: Ada'yı güvenlik açısından kritik sistemler için uygun kılan nedir?
+**C:** Ada şunları sağlar:
+- Resmi doğrulama için SPARK alt kümesi (doğruluğun matematiksel kanıtı)
+- Sözleşmeye dayalı programlama (ön/son koşullar, tür değişmezleri)
+- SPARK'ta örtülü bellek tahsisi yok
+- Deterministik görevlendirme ve zamanlama
+- Yüksek bütünlüğe sahip gerçek zamanlı sistemler için Ravenscar profili
+- Takım zinciri yeterliliği (avionik için DO-178C)
+### S5: Ada projelerini nasıl oluştururum?
+**C:** GPRBuild'ı GPR proje dosyalarıyla kullanın:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Güvenli Tür Kuyruğu Uygulama
+**1. Adım: Sorunu Anlayın**
+Derleme zamanı boyut denetimiyle sınırlı, iş parçacığı açısından güvenli bir kuyruk oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Sınırlı arabelleğe sahip korumalı bir nesne kullanın.
+**3. Adım: Uygulama**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**4. Adım: Doğrulayın**
+Korunan nesne karşılıklı dışlanmayı garanti eder. Giriş bariyerleri taşmayı/alt akışı önler.
+### Sorun 2: Sözleşmeye Dayalı Doğrulama
+**1. Adım: Sorunu Anlayın**
+Resmi sözleşmelerle karekök fonksiyonunu uygulayın.
+**2. Adım: Yaklaşımı Belirleyin**
+Ada 2012 sözleşmelerini kullanın (ön/son koşullar).
+**3. Adım: Uygulama**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**4. Adım: Doğrulayın**
+Çalışma zamanı kontrolleri (iddialar) ihlalleri yakalar. SPARK'ta bunlar kanıt zorunluluğu haline gelir.
+---
+
 ## Özet
-Ada doğruluk için oluşturulmuş bir dildir. Kesin tip sistemi, yerleşik eşzamanlılığı ve resmi doğrulama desteği, onu arızanın kabul edilemeyeceği sistemler için tercih haline getiriyor. Topluluğu ana dillerle karşılaştırıldığında küçük olsa da Ada, havacılık, savunma, uzay ve güvenliğin kritik olduğu diğer alanlarda vazgeçilmez olmaya devam ediyor. Bu uygulamalar için Ada'nın yazılım mühendisliğine yönelik titiz yaklaşımı bir sınırlama değildir; asıl mesele budur.
+Ada doğruluk için oluşturulmuş bir dildir. Kesin tip sistemi, yerleşik eşzamanlılığı ve resmi doğrulama desteği, onu arızanın kabul edilemeyeceği sistemler için tercih haline getiriyor. Topluluğu ana dillerle karşılaştırıldığında küçük olsa da Ada, havacılık, savunma, uzay ve güvenliğin kritik olduğu diğer alanlarda önemini korumaya devam ediyor. Bu uygulamalar için Ada'nın yazılım mühendisliğine yönelik titiz yaklaşımı bir sınırlama değildir; asıl mesele budur.

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 斯卡拉
 Scala（可扩展语言）是一种静态类型、编译型编程语言，结合了面向对象和函数式编程范例。 Scala 由 Martin Odersky 创建并于 2004 年首次发布，它在 JVM 上运行（也称为 JavaScript 和 Scala Native 的 Scala.js）。它旨在解决 Java 的冗长问题，同时保持完整的 Java 互操作性。
 Scala 是 Apache Spark（大数据处理框架）背后的语言，广泛应用于数据工程、分布式系统和后端服务。 Twitter（现在的 X）、LinkedIn、Netflix 和卫报等公司都使用 Scala。
@@ -409,7 +410,7 @@ lazy val root = project
 |命令 |描述 |
 |---------|-------------|
 | `sbt new scala/scala3.g8`|从模板创建新的 Scala 3 项目 |
-| `sbt compile`|编译主要来源 |
+| `sbt compile`|编译主要来源|
 | `sbt test`|运行所有测试 |
 | `sbt run`|运行主类 |
 | `sbt runMain com.example.App`|运行特定的主类 |
@@ -846,14 +847,196 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ---
 
 ## 何时使用 Scala
-|场景 |为什么选择 Scala |更好的选择|
+|场景|为什么选择 Scala |更好的选择|
 |----------|----------|--------------------|
 |大数据（Spark）|主要 Spark 语言 |用于更简单管道的 Python (PySpark) |
 |分布式系统（Akka）|成熟的并发框架 |去吧，Erlang/Elixir |
 | JVM 后端 |简洁的 Java 替代方案 | Java、Kotlin |
 | JVM 上的函数式编程 |最佳 FP + JVM 组合 | Clojure |
-|通用应用开发|可能但复杂| Python、Go、Java |
+|通用应用开发 |可能但复杂| Python、Go、Java |
 |数据科学|有可能但生态系统不行| Python、R |
+---
+
+## 综合问答
+### Q1：与 Java 相比，Scala 的类型推断如何减少样板代码？
+**A:** Scala 的编译器推断`val`/`var`声明、方法返回类型和匿名函数的类型。在大多数情况下，这消除了对显式类型注释的需要：
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+编译器还推断类型参数、单表达式方法的返回类型和模式匹配类型。这使得代码简洁而不牺牲安全性。
+### Q2：我什么时候应该使用`case class`与常规`class`？
+**A:** 将`case class`用于不可变数据载体 - 它们自动提供`equals`、`hashCode`、`toString`、`copy`和模式匹配支持：
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+经验法则：如果您的类主要是数据，请使用`case class`。如果它具有可变状态或复杂行为，请使用常规`class`。
+### Q3：如何在 Scala 中惯用地处理错误？
+**A:** Scala 更倾向于返回`Option`、`Either`和`Try`等类型，而不是抛出异常：
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4：`trait` 和`abstract class`有什么区别？
+**A:** Traits 支持多重继承，可以有类型参数和具体方法。抽象类可以有构造函数参数，但只支持单继承：
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5：如何在 JVM 上编写高性能的 Scala 代码？
+**答：** 关键做法：
+- 使用`case class`和不可变数据来避免同步
+- 优先选择`Vector`、`Map`（不可变）进行结构共享
+- 使用`@tailrec`注释来确保尾部调用优化
+- 避免过度装箱 — 使用`Int`、`Double`原语
+- 使用`lazy val`进行昂贵的计算
+- 对于大型序列，首选`Stream`/ `LazyList`
+- 使用 JMH 进行分析 — Scala 的抽象应该编译为高效的字节码
+---
+
+## 解决问题的思路
+### 问题 1：实现类型安全的表达式计算器
+**第 1 步：了解问题**
+我们需要用变量来计算数学表达式，支持加法、乘法和变量查找。
+**第 2 步：确定方法**
+使用代数数据类型（密封特征+案例类）对表达式树进行建模，然后进行模式匹配来评估。
+**步骤 3：实施**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**第 4 步：验证并扩展**
+添加`Div`、`Pow`、`Neg`案例。密封特征可确保编译器对非详尽匹配发出警告。
+### 问题 2：构建用于 HTML 生成的简单 DSL
+**第 1 步：了解问题**
+创建一个类型安全的 DSL，使用 Scala 的语法生成 HTML 字符串。
+**第 2 步：确定方法**
+HTML 元素的用例类和自然语法的隐式转换。
+**步骤 3：实施**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**第 4 步：验证**
+DSL 是类型安全的 — 您不会意外地传递非 HTML 内容。`HtmlNode`上的模式匹配可确保详尽的渲染。
+### 问题 3：Akka Streams 的并发字数统计
+**第 1 步：了解问题**
+同时计算多个大文件中的词频。
+**第 2 步：确定方法**
+使用Scala的并行集合或Akka Streams进行并发处理，然后合并结果。
+**步骤 3：实施**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**第 4 步：优化**
+对于非常大的数据集，请使用带有背压的 Akka Streams：```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ＃＃ 概括

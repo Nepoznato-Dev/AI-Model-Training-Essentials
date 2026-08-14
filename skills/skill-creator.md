@@ -189,6 +189,76 @@ next_review: YYYY-MM-DD
 ---
 ```
 
+## Modern Skill Design Patterns
+
+Inspired by leading skill frameworks from Anthropic, OpenAI, Google, and NVIDIA, these patterns elevate skills from reference documents to actionable toolkits.
+
+### Progressive Disclosure
+
+Skills should use a three-level information architecture:
+
+1. **Metadata** (frontmatter) — Always visible. Name, description, tags. Helps users decide if this skill is relevant (~50 words).
+2. **Quick-Start / Decision Tree** — Scannable in 30 seconds. Gives the user an immediate path to action without reading the full skill.
+3. **Deep Reference** — The full methodology, templates, and examples. Read when the user needs detailed guidance.
+
+This means every skill should have a "Quick-Start" or "Decision Tree" section near the top, before the deep methodology. Users should be able to take action within 60 seconds of opening a skill file.
+
+### Decision Trees
+
+Include a decision tree when a skill involves choosing between approaches. Decision trees transform abstract methodology into concrete action:
+
+```markdown
+## Quick-Start Decision Tree
+
+Need to [achieve X]?
+│
+├─ [Condition A]?
+│   └─ Yes → [Specific approach]
+│
+├─ [Condition B]?
+│   └─ Yes → [Different approach]
+│
+└─ Otherwise → [Default approach]
+```
+
+Decision trees work best when:
+- Each branch has 2-4 options (not overwhelming)
+- Leaf nodes are specific, actionable recommendations
+- The conditions are based on concrete, measurable criteria
+
+### Actionable Over Encyclopedic
+
+A skill should prioritize what the user needs to *do* over what they need to *know*. Structure guidance as:
+
+1. **What to do** (decision tree, quick-start checklist)
+2. **How to do it** (templates, code examples, step-by-step)
+3. **Why it works** (theory, background, research)
+4. **What to avoid** (pitfalls, anti-patterns)
+
+This is inverted from academic writing (which goes theory → practice). Skills lead with practice because users open them when they need to act.
+
+### The "Why" Principle
+
+When instructing on a pattern or technique, explain *why* it matters. Modern LLMs and experienced practitioners respond better to reasoning than to rigid rules:
+
+- Instead of "ALWAYS use validation" → "Validate at every stage because silent data corruption is the hardest bug to trace — a schema check takes 10 lines but can save days of debugging"
+- Instead of "NEVER do X" → "Avoid X because [specific consequence]. Use Y instead, which [specific benefit]"
+
+### Evaluation-Driven Design
+
+For skills that produce measurable outputs, include guidance on how to evaluate quality:
+
+```markdown
+## How to Know It's Working
+
+| Signal | Good | Bad |
+|--------|------|-----|
+| [Metric 1] | [Threshold] | [Below threshold] |
+| [Metric 2] | [Observation] | [Observation] |
+```
+
+This gives users a way to verify they're applying the skill correctly, rather than just trusting the process.
+
 ## Writing Process
 
 ### Step 1: Identify the Skill
@@ -365,13 +435,16 @@ Every skill file includes a YAML frontmatter block at the top. When making chang
 
 ## Inspiration Sources
 
-When developing new skills, consider:
+When developing new skills, study these leading skill frameworks for patterns and ideas:
 
+- **[Anthropic Skills](https://github.com/anthropics/skills)** - Actionable, decision-tree-driven skill design with progressive disclosure and eval-based iteration
+- **[OpenAI Skills](https://github.com/openai/skills)** - Curated skill collections with system-level and community contributions
+- **[Google Skills](https://github.com/google/skills)** - Domain-specific skills for cloud, analytics, and advertising workflows
+- **[NVIDIA Skills](https://github.com/NVIDIA/skills)** - GPU-optimized skills for scientific computing, optimization, and AI infrastructure
+- **[Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills)** - 5,300+ community-built skills across 30+ categories for discovery and inspiration
 - Industry best practices
 - Academic research
-- Open-source projects (e.g., addyosmani/agent-skills, NVIDIA/skills)
 - Professional certifications
-- Expert interviews
 - Community feedback
 - Real-world case studies
 

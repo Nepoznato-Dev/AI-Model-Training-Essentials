@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # hồng ngọc
 Ruby là ngôn ngữ lập trình hướng đối tượng năng động, thông dịch, được tạo ra bởi Yukihiro "Matz" Matsumoto và phát hành lần đầu tiên vào năm 1995 tại Nhật Bản. Ruby được thiết kế tập trung vào sự hài lòng của lập trình viên - cú pháp của nó thanh lịch và tự nhiên, đọc gần giống tiếng Anh. Mọi thứ trong Ruby đều là một đối tượng, bao gồm các kiểu nguyên thủy như số nguyên và boolean. Ruby được biết đến nhiều nhất với khung web Ruby on Rails, khung web này đã cách mạng hóa việc phát triển web bằng cách phổ biến quy ước về cấu hình và tạo nguyên mẫu nhanh.
 Ngoài Rails, Ruby được sử dụng để viết kịch bản, tự động hóa, công cụ DevOps (Chef, Puppet) và là ngôn ngữ có mục đích chung. Cú pháp biểu cảm và khả năng lập trình siêu dữ liệu mạnh mẽ của nó khiến việc viết trở nên thú vị.
@@ -195,7 +196,7 @@ puts config.name  # "Alice"
 ---
 
 ## Ruby trên Rails
-Rails là một khung web đầy đủ theo kiến ​​trúc MVC (Model-View-Controller) và nhấn mạnh:
+Rails là một khung web full-stack tuân theo kiến ​​trúc MVC (Model-View-Controller) và nhấn mạnh:
 - **Quy ước về cấu hình**: Các giá trị mặc định hợp lý — không cần phải định cấu hình mọi thứ.
 - **Đừng lặp lại chính mình (DRY)**: Sử dụng trình tạo, di chuyển và quy ước để giảm thiểu sự lặp lại.
 - **Bản ghi hoạt động**: Đối tượng cơ sở dữ liệu là đối tượng Ruby. `User.find(1)`truy xuất người dùng.
@@ -822,5 +823,323 @@ fly deploy
 | Ứng dụng di động | Không phù hợp | Swift, Kotlin, Rung |
 ---
 
+## Hỏi đáp tổng hợp
+### Q1: Sự khác biệt giữa`proc`,`lambda`và`block`trong Ruby là gì?
+**A:** Cả ba đều là các bao đóng, nhưng chúng khác nhau về hành vi.`block`là một đoạn mã ẩn danh được truyền tới một phương thức có`do...end`hoặc`{}`.`proc`là một khối được lưu dưới dạng đối tượng - nó không kiểm tra số lượng đối số và`return`thoát khỏi phương thức kèm theo.`lambda`giống như một Proc nhưng kiểm tra số lượng đối số và`return`chỉ thoát khỏi lambda. Sử dụng các khối cho lệnh gọi lại một lần, procs cho các đoạn mã có thể sử dụng lại và lambda khi bạn cần hành vi giống như phương thức.
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### Câu 2: Ruby gem và Bundler hoạt động như thế nào?
+**A:** Đá quý là hệ thống gói của Ruby — các thư viện có thể tái sử dụng được phân phối qua RubyGems.org.`Gemfile`khai báo các phần phụ thuộc; `bundle install`phân giải các phiên bản và tạo`Gemfile.lock`để tái tạo. `bundle exec`chạy các lệnh trong ngữ cảnh đá quý. Sử dụng`gem 'name', '~> 2.0'`để biết các ràng buộc về phiên bản tương thích. Luôn cam kết`Gemfile.lock`cho các ứng dụng, nhưng không dành cho thư viện.
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### Câu 3: Các loại biểu tượng của Ruby là gì và tại sao chúng lại quan trọng?
+**A:** Các ký hiệu (`:name`) là các chuỗi cố định, bất biến — mỗi ký hiệu duy nhất chỉ tồn tại một lần trong bộ nhớ. Chúng lý tưởng cho các khóa băm, tên phương thức và mã định danh. Ruby cũng có các đối tượng`Symbol`được sử dụng rộng rãi trong siêu lập trình (`send`,`define_method`). Sử dụng ký hiệu cho số nhận dạng cố định; sử dụng chuỗi khi bạn cần thao tác nội dung.
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### Q4: Siêu lập trình của Ruby hoạt động như thế nào và khi nào tôi nên sử dụng nó?
+**A:** Ruby cho phép mã xác định mã trong thời gian chạy:`define_method`tạo các phương thức một cách linh hoạt,`method_missing`chặn các lệnh gọi phương thức không xác định,`send`gọi các phương thức riêng tư và`class_eval`/`instance_eval`đánh giá mã trong ngữ cảnh lớp/phiên bản. Siêu lập trình rất mạnh mẽ nhưng làm cho mã khó hiểu hơn - hãy sử dụng nó cho DSL và ma thuật khung, không phải cho logic hàng ngày.
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### Q5: Cách tốt nhất để xử lý lỗi trong Ruby là gì?
+**A:** Ruby sử dụng các ngoại lệ để xử lý lỗi. Xác định các lớp ngoại lệ tùy chỉnh kế thừa từ`StandardError`(không phải`Exception`- phát hiện các lỗi cấp hệ thống). Sử dụng`begin/rescue/else/ensure`để xử lý có cấu trúc. Đưa ra các ngoại lệ cụ thể, không phải chung chung`RuntimeError`. Sử dụng`rescue`làm công cụ sửa đổi cho các dòng đơn giản.
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng DSL cho file cấu hình
+**Báo cáo vấn đề:** Tạo Ruby DSL cho phép xác định cấu hình máy chủ theo cú pháp khai báo, dễ đọc. DSL phải hỗ trợ các khối lồng nhau, xác thực và tuần tự hóa thành JSON.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) cú pháp DSL rõ ràng bằng cách sử dụng các khối và lệnh gọi phương thức, (2) thu thập dữ liệu qua`instance_eval`hoặc các phương thức rõ ràng, (3) xác thực các trường bắt buộc, (4) tuần tự hóa JSON. Siêu lập trình của Ruby làm cho DSL trở nên tự nhiên.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`instance_eval`với lớp trình xây dựng để ghi lại các cuộc gọi DSL.
+- Lưu trữ cấu hình trong các biến instance.
+- Xác thực các trường bắt buộc trước khi tuần tự hóa.
+- Sử dụng`to_h`và`JSON.generate`làm đầu ra.
+**Bước 3 — Triển khai giải pháp:**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- DSL có thể đọc và khai báo được — những người không phải là lập trình viên cũng có thể hiểu được.
+- Xác nhận nắm bắt các trường bắt buộc còn thiếu tại thời điểm xây dựng.
+-`instance_eval`cung cấp cú pháp khối rõ ràng nhưng hạn chế`self`— đối với các DSL phức tạp hơn, hãy sử dụng`BasicObject`làm siêu lớp của trình tạo.
+- Sản xuất: xem xét đá quý`dry-configurable`hoặc`configurate`cho DSL cấu hình cấp sản xuất.
+### Vấn đề 2: Triển khai Thư viện ghi nhớ
+**Báo cáo vấn đề:** Xây dựng một mô-đun ghi nhớ có thể được trộn vào bất kỳ lớp nào để lưu vào bộ nhớ đệm các kết quả của phương thức. Hỗ trợ TTL (thời gian tồn tại), giới hạn kích thước bộ đệm và khóa bộ đệm tùy chỉnh.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng ta cần: (1) mô-đun bổ sung phương thức lớp `memoize`, (2) phương thức này bao bọc các phương thức đích bằng logic bộ nhớ đệm, (3) hỗ trợ hết hạn TTL, (4) loại bỏ LRU khi bộ nhớ đệm đầy.`Module#prepend`và`define_method`của Ruby là lý tưởng cho việc này.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`Module.new`với`define_method`để tạo trình bao bọc.
+- Lưu trữ bộ đệm ở dạng băm có dấu thời gian cho TTL.
+- Sử dụng`prepend`để chèn lớp bộ nhớ đệm trước phương thức ban đầu.
+- Hỗ trợ các tùy chọn cấu hình:`ttl`,`max_size`,`key`.
+**Bước 3 — Triển khai giải pháp:**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- An toàn luồng:`Mutex`bảo vệ việc đọc/ghi bộ đệm; tính toán xảy ra bên ngoài khóa.
+- TTL: các mục hết hạn được dọn dẹp một cách lười biếng khi truy cập.
+- Loại bỏ LRU: khi bộ đệm vượt quá `max_size`, mục nhập cũ nhất (theo dấu thời gian) sẽ bị xóa.
+- Khóa tùy chỉnh: lambda`key`cho phép kiểm soát chi tiết nhận dạng bộ đệm.
+- Sản xuất: sử dụng đá quý`memoist`cho các trường hợp đơn giản hoặc ghi nhớ được Redis hỗ trợ cho bộ nhớ đệm phân tán.
+---
+
 ## Bản tóm tắt
-Ruby là ngôn ngữ ưu tiên sự hài lòng và tính biểu cảm của nhà phát triển. Cú pháp của nó là một trong những ngôn ngữ dễ đọc nhất trong số các ngôn ngữ và Ruby on Rails vẫn là một trong những khung web hiệu quả nhất từng được tạo ra. Mặc dù mức độ phổ biến của Ruby đã giảm so với Python và JavaScript, nhưng nó vẫn là một ngôn ngữ mạnh mẽ, thú vị để phát triển web, viết kịch bản và tự động hóa. Nếu bạn coi trọng mã thanh lịch và sự phát triển nhanh chóng thì Ruby đáng để học hỏi.
+Ruby là ngôn ngữ ưu tiên sự hài lòng và tính biểu cảm của nhà phát triển. Cú pháp của nó là một trong những ngôn ngữ dễ đọc nhất trong số các ngôn ngữ và Ruby on Rails vẫn là một trong những khung web hiệu quả nhất từng được tạo ra. Mặc dù mức độ phổ biến của Ruby đã giảm so với Python và JavaScript, nhưng nó vẫn là ngôn ngữ mạnh mẽ, thú vị để phát triển web, viết kịch bản và tự động hóa. Nếu bạn coi trọng mã thanh lịch và sự phát triển nhanh chóng thì Ruby đáng để học hỏi.

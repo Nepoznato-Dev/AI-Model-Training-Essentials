@@ -41,7 +41,7 @@ contribution:
 
 #エイダ
 Ada は、安全性が重要で整合性の高いシステム向けに設計された、静的に型指定され、コンパイルされたプログラミング言語です。 Ada はもともと米国国防総省との契約に基づいて 1980 年代に開発されました (最初のコンピューター プログラマーと考えられているエイダ ラブレスにちなんで命名されました) は、信頼性、保守性、正確性を重視しています。これは、当時国防総省によって使用されていた何百ものプログラミング言語を、明確に指定された単一の言語に置き換えることを目的として設計されました。
-Ada は、航空 (フライバイワイヤー システム)、宇宙 (ESA および NASA)、防衛 (ミサイル誘導、レーダー)、鉄道輸送、医療機器など、ソフトウェアの障害が命を落とす可能性があるあらゆる分野で使用されています。
+Ada は、航空 (フライバイワイヤー システム)、宇宙 (ESA および NASA)、防衛 (ミサイル誘導、レーダー)、鉄道輸送、医療機器など、ソフトウェアの障害が命を落とす可能性のあるあらゆる分野で使用されています。
 ---
 
 ## Ada が重要な理由
@@ -862,6 +862,147 @@ end Main;
 |一般的なアプリケーション開発 |非クリティカルなシステムに対するオーバーキル | Python、Java、Go |
 |ウェブ開発 |適さない | JavaScript、Python |
 |データ サイエンス / ML |エコシステムではありません |パイソン、R |
+---
+
+## 総合的な Q&A
+### Q1: Ada の型システムはコンパイル時のバグをどのように防ぐのですか?
+**A:** Ada の型システムは、あらゆる言語の中で最も厳密なものの 1 つです。他の言語が見逃すエラーをキャッチします。
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2: Ada のタスク モデルとは何ですか?また、他の同時実行モデルとどのように比較しますか?
+**A:** Ada には、保護されたオブジェクトおよびタスクとの同時実行機能が組み込まれています。
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: Ada でジェネリックを使用するにはどうすればよいですか?
+**A:** Ada ジェネリックは明示的でタイプセーフです。
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: Ada がセーフティ クリティカルなシステムに適している理由は何ですか?
+**A:** エイダは以下を提供します:
+- 正式な検証用の SPARK サブセット (正しさの数学的証明)
+- 契約ベースのプログラミング (事前/事後条件、型不変条件)
+- SPARK では暗黙的なメモリ割り当てがありません
+- 決定的なタスクとスケジューリング
+- 高信頼性リアルタイム システム用の Ravenscar プロファイル
+- ツールチェーン認定 (アビオニクス用 DO-178C)
+### Q5: Ada プロジェクトを構築するにはどうすればよいですか?
+**A:** GPR プロジェクト ファイルで GPRBuild を使用します。
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## 思考連鎖による問題解決
+### 問題 1: タイプセーフなキューの実装
+**ステップ 1: 問題を理解する**
+コンパイル時のサイズチェックを備えた、制限されたスレッドセーフなキューを作成します。
+**ステップ 2: アプローチを特定する**
+境界付きバッファを持つ保護されたオブジェクトを使用します。
+**ステップ 3: 実装**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**ステップ 4: 確認**
+保護されたオブジェクトは相互排他を保証します。エントリーバリアはオーバーフロー/アンダーフローを防ぎます。
+### 問題 2: 契約ベースの検証
+**ステップ 1: 問題を理解する**
+正式な契約を使用して平方根関数を実装します。
+**ステップ 2: アプローチを特定する**
+Ada 2012 コントラクト (事前/事後条件) を使用します。
+**ステップ 3: 実装**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**ステップ 4: 確認**
+実行時チェック (アサーション) により違反が検出されます。 SPARK では、これらは証明義務となります。
 ---
 
 ＃＃ まとめ

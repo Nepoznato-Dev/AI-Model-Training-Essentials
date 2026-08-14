@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 하스켈
 Haskell은 순전히 기능적이며 정적으로 유형이 지정되고 느리게 평가되는 프로그래밍 언어입니다. 1990년에 처음 표준화(Haskell 90)되고 여러 버전(현재 표준은 Haskell 2010)을 통해 개선된 Haskell은 수학적 엄격함, 강력한 유형 시스템(유형 클래스, 모나드 및 대수 데이터 유형 포함), 유형을 통한 정확성 강조로 유명합니다.
 하스켈은 주류 언어는 아니지만 그 영향력은 엄청납니다. 모나드, 지연 평가, 유형 클래스와 같은 개념은 Rust, Swift, Kotlin, Scala 및 TypeScript에 영향을 미쳤습니다. Haskell은 금융(Standard Chartered, Barclays), 컴파일러(GHC) 및 공식 검증에 사용됩니다.
@@ -54,7 +55,7 @@ Haskell은 순전히 기능적이며 정적으로 유형이 지정되고 느리�
 | 제한사항 | 세부정보 | 일반적인 해결 방법 |
 |------------|---------|------|
 | **가파른 학습 곡선** | 모나드, 펑터, 유형 클래스 — 명령형 언어와 매우 다릅니다 | 시간을 투자하세요. 개념은 이전 가능합니다 |
-| **게으른 평가로 인한 놀라움** | 예상치 못한 메모리 사용량 및 성능 문제가 발생할 수 있음 | 필요한 경우 엄격한 평가(`!`)를 사용하세요 |
+| **게으른 평가로 인한 놀라움** | 예상치 못한 메모리 사용량 및 성능 문제가 발생할 수 있음 | 필요한 경우 엄격한 평가(`!`) 사용 |
 | **더 작은 생태계** | Python, Java 또는 JavaScript보다 적은 라이브러리 | 해킹이 증가하고 있습니다. 많은 품질의 패키지 |
 | **취업 시장** | 틈새 – 주로 금융, 연구 및 컴파일러 작업 | 함수형 프로그래밍 커뮤니티에서 성장 |
 | **컴파일 속도** | 대규모 프로젝트에서는 GHC가 느려질 수 있습니다 | 대화형 개발을 위해 GHCi 사용 |
@@ -144,7 +145,7 @@ type family Elem x where
 ```
 
 ### GADT — 일반화된 대수 데이터 유형
-GADT를 사용하면 각 생성자의 반환 유형을 정확하게 지정하여 유형이 안전한 인터프리터와 내장된 DSL을 사용할 수 있습니다.
+GADT를 사용하면 각 생성자의 반환 유형을 정확하게 지정할 수 있으므로 유형이 안전한 인터프리터와 내장된 DSL을 사용할 수 있습니다.
 ```haskell
 {-# LANGUAGE GADTs, RankNTypes #-}
 
@@ -472,16 +473,16 @@ tests:
 ### 주요 빌드 명령
 | 명령 | 설명 |
 |---------|-------------|
-|  __보호됨_0__ | 템플릿에서 새 프로젝트 만들기 |
-|  __보호됨_1__ | 프로젝트 빌드 |
-|  __보호됨_2__ | 프로젝트가 로드된 상태에서 대화형 REPL 시작 |
-|  __보호됨_3__ | 테스트 스위트 실행 |
-|  __보호됨_4__ | 벤치마크 실행 |
-|  __보호됨_5__ | 문서 생성 |
-|  __보호_6__ | 실행 파일 실행 |
-|  __보호_7__ | 빌드 아티팩트 정리 |
-|  __보호됨_8__ | 패키지 색인 업데이트 |
-|  __보호_9__ | 정확한 종속성 버전 고정 |
+| `stack new my-project`| 템플릿에서 새 프로젝트 만들기 |
+| `stack build`| 프로젝트 빌드 |
+| `stack ghci`| 프로젝트가 로드된 상태에서 대화형 REPL 시작 |
+| `stack test`| 테스트 스위트 실행 |
+| `stack bench`| 벤치마크 실행 |
+| `stack haddock`| 문서 생성 |
+| `stack exec my-app`| 실행 파일 실행 |
+| `stack clean`| 빌드 아티팩트 정리 |
+| `stack update`| 패키지 색인 업데이트 |
+| `stack freeze`| 정확한 종속성 버전 고정 |
 ### CI/CD 파이프라인(GitHub 작업)
 ```yaml
 # .github/workflows/haskell.yml
@@ -598,10 +599,10 @@ instance Arbitrary PositiveInt where
 ### 테스트 명령
 | 명령 | 설명 |
 |---------|-------------|
-|  __보호됨_0__ | 모든 테스트 스위트 실행 |
-|  __보호됨_1__ | 더 빠른 테스트 빌드를 위한 최적화 건너뛰기 |
-|  __보호됨_2__ | 컬러 출력으로 테스트 실행 |
-|  __보호됨_3__ | REPL의 로드 테스트 모듈 |
+| `stack test`| 모든 테스트 스위트 실행 |
+| `stack test --fast`| 더 빠른 테스트 빌드를 위한 최적화 건너뛰기 |
+| `stack build --test --test-arguments "--color"`| 컬러 출력으로 테스트 실행 |
+| `stack ghci --test`| REPL의 로드 테스트 모듈 |
 
 ---
 
@@ -806,11 +807,11 @@ main = do
 ### 프로파일링 도구
 | 도구 | 목적 | 명령 |
 |------|---------|---------|
-| **GHC 프로파일러** | 시간 및 할당 프로파일링 | `stack build --profile`다음`./app +RTS -p`|
-| **스레드스코프** | 병렬 실행 시각화 | `./app +RTS -l`다음`app.eventlog`열기 |
-| **ghc-이벤트** | 이벤트 로그 분석 |  __보호됨_4__ |
+| **GHC 프로파일러** | 시간 및 할당 프로파일링 | `stack build --profile`다음으로`./app +RTS -p`|
+| **스레드스코프** | 병렬 실행 시각화 |  `./app +RTS -l`를 열고`app.eventlog`|
+| **ghc-이벤트** | 이벤트 로그 분석 | `ghc-events show app.eventlog`|
 | **기준** | 통계적 벤치마킹 |`criterion`패키지 사용 |
-| **hp2예쁜** | 힙 프로필 시각화 | `./app +RTS -h`다음`hp2pretty app.hp`|
+| **hp2예쁜** | 힙 프로필 시각화 | `./app +RTS -h`다음으로`hp2pretty app.hp`|
 ### 기준을 사용한 벤치마킹
 ```haskell
 -- bench/Bench.hs
@@ -941,5 +942,209 @@ pkgs.haskellPackages.developPackage {
 | 데이터 과학 | 생태계가 아니다 | 파이썬, R |
 ---
 
+## 종합 Q&A
+### Q1: Haskell의 지연 평가는 성능에 어떤 영향을 미치나요?
+**A:** 지연 평가는 필요할 때만 표현식이 계산되어 무한한 데이터 구조와 구성 가능한 파이프라인이 가능하다는 것을 의미합니다. 그러나 썽크가 누적되면 공간 누수가 발생할 수 있습니다.
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+숫자 접기에는`foldl`대신`foldl'`(`Data.List`)를 사용하십시오. 필요할 때 강제로 평가하려면`!`뱅 패턴 또는 `seq`를 사용하세요.
+### Q2:`Functor`,`Applicative`,`Monad`의 실질적인 차이점은 무엇인가요?
+**답:** 각 유형 클래스에는 다음 기능이 추가됩니다.
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor**는 컨텍스트에 순수 함수를 매핑합니다. **적용**은 컨텍스트에 있는 함수를 적용합니다. **모나드**는 각 단계가 이전 단계의 결과에 따라 달라지도록 합니다. 실제로: 단순 변환에는`fmap`/ `<$>`를 사용하고, 효과 결합에는 `<*>`를, 순차적 종속 계산에는`>>=`/ `do`를 사용합니다.
+### Q3: 순수 하스켈 코드에서 부작용을 어떻게 처리하나요?
+**답:** 유형 시스템을 사용하여 순수 코드와 효과적인 코드를 구분하세요.
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+핵심 로직을 순수하게 유지하고 효과를 가장자리까지 밀어 넣으세요. 구성에는 `ReaderT`를, 오류에는 `ExceptT`를, 변경 가능한 상태에는 `StateT`를 사용하세요.
+### Q4: 유형 클래스란 무엇이며 OOP 인터페이스와 어떻게 다릅니까?
+**A:** 유형 클래스는 유형이 구현할 수 있는 동작을 정의합니다. OOP 인터페이스와 달리 개방형(모든 유형이 인스턴스가 될 수 있음)이며 임시 다형성을 지원합니다.
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5: 실제 사용을 위해 Haskell 프로젝트를 어떻게 구성합니까?
+**답변:** 표준 레이아웃으로 Cabal 또는 Stack을 사용하세요.
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+주요 사례:`Main.hs`또는 전용`IO`모듈에 IO를 유지하고, 핵심 논리를 순수하고 테스트 가능하게 만들고, 도메인 유형에`newtype`래퍼를 사용합니다.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 오류 보고를 통한 안전 분할 기능 구현
+**1단계: 문제 이해**
+0으로 나누기를 처리하고 단순한 충돌이 아닌 의미 있는 오류를 보고하는 나누기가 필요합니다.
+**2단계: 접근 방식 파악**
+오류 메시지나 결과를 반환하려면 `Either`를 사용하세요. 이는 유형에서 실패 가능성을 명시적으로 만듭니다.
+**3단계: 구현**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**4단계: 확인**
+유형 시스템은 호출자가 오류 사례를 처리해야 함을 보장합니다. 패턴 일치 또는 `either`는 명시적 처리를 강제합니다.
+### 문제 2: 간단한 구성 언어 구문 분석
+**1단계: 문제 이해**
+`name=Alice\nage=30` 와 같은 문자열에서 키-값 쌍을 구문 분석합니다.
+**2단계: 접근 방식 파악**
+`Text.Parsec` 또는 수동 재귀를 사용하십시오. 단순화를 위해`break`및`span`를 사용합니다.
+**3단계: 구현**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**4단계: 확장**
+`Value` ADT를 사용하여 주석 처리(`#`), 섹션 헤더(`[section]`) 및 유형 강제를 추가합니다.
+### 문제 3: 게으름을 활용하여 메모된 피보나치 만들기
+**1단계: 문제 이해**
+피보나치 수를 효율적으로 계산합니다. 순진한 재귀는 기하급수적입니다.
+**2단계: 접근 방식 파악**
+Haskell의 지연 평가를 사용하여 각 요소가 한 번 계산되고 캐시되는 무한 목록을 만듭니다.
+**3단계: 구현**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**4단계: 최적화**
+임의 액세스의 경우 지연 구성과 함께 `Data.Array`를 사용합니다. 매우 큰 인덱스의 경우 O(log n)의 행렬 지수화를 사용합니다.
+### 문제 4: 간단한 상태 머신 구현
+**1단계: 문제 이해**
+빨간색 -> 녹색 -> 노란색 -> 빨간색으로 순환하는 신호등을 모델링합니다.
+**2단계: 접근 방식 파악**
+상태와 순수 전이 함수에는 대수적 데이터 유형을 사용합니다.
+**3단계: 구현**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**4단계: 확인**
+순수 함수는 간단하게 테스트 가능합니다.```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
+---
+
 ## 요약
-하스켈은 주류 언어 중 함수형 프로그래밍의 가장 순수한 표현입니다. 유형 시스템은 가장 강력한 것 중 하나이며 순수 함수에 중점을 두어 추론하고 테스트하기가 더 쉬운 코드를 생성합니다. Haskell은 업계에서 널리 사용되지는 않지만 그 아이디어는 현대 프로그래밍에 깊은 영향을 미쳤습니다. Haskell을 배우면 프로그래밍에 대한 생각이 바뀌게 됩니다. 비록 전문적으로 사용하지 않더라도 말이죠.
+하스켈은 주류 언어 중 함수형 프로그래밍의 가장 순수한 표현입니다. 유형 시스템은 가장 강력한 것 중 하나이며, 순수 함수에 중점을 두어 추론하고 테스트하기가 더 쉬운 코드를 생성합니다. Haskell은 업계에서 널리 사용되지는 않지만 그 아이디어는 현대 프로그래밍에 깊은 영향을 미쳤습니다. Haskell을 배우면 프로그래밍에 대한 생각이 바뀌게 됩니다. 전문적으로 사용하지 않더라도 말이죠.

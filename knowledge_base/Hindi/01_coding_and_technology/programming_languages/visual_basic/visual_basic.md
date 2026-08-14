@@ -1,46 +1,51 @@
 ---
-# मेटाडेटा
-शीर्षक: "विज़ुअल बेसिक"
-विवरण: "विज़ुअल बेसिक प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [दृश्य-बुनियादी, प्रोग्रामिंग-भाषा, वाक्यविन्यास, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "शुरुआती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "33 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Visual Basic"
+description: "Comprehensive reference for the Visual Basic programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [visual-basic, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "33 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # मूल दृश्य
 विज़ुअल बेसिक (वीबी) माइक्रोसॉफ्ट द्वारा विकसित एक प्रोग्रामिंग भाषा है। यह कई पीढ़ियों के माध्यम से विकसित हुआ है: मूल विजुअल बेसिक (1991), विजुअल बेसिक 6.0 (1998), वीबी.नेट (2002, .NET फ्रेमवर्क का हिस्सा), और विजुअल बेसिक ..NET (वर्तमान, जिसे अब .NET के हिस्से के रूप में "विजुअल बेसिक" कहा जाता है)। वीबी को ग्राफिकल यूजर इंटरफेस और इवेंट-संचालित प्रोग्रामिंग पर ध्यान देने के साथ शुरुआती और तीव्र अनुप्रयोग विकास (आरएडी) के लिए सुलभ बनाने के लिए डिज़ाइन किया गया था।
 आज, VB.NET C# के साथ-साथ .NET पारिस्थितिकी तंत्र के भाग के रूप में जारी है, हालाँकि Microsoft ने संकेत दिया है कि C# आगे बढ़ने वाली प्राथमिक भाषा है। वीबी का व्यापक रूप से एंटरप्राइज़ परिवेश में उपयोग किया जाता है, विशेष रूप से पुराने विंडोज़ अनुप्रयोगों, ऑफिस ऑटोमेशन (वीबीए) और आंतरिक व्यावसायिक टूल के लिए।
 ---
 
 ## विज़ुअल बेसिक क्यों मायने रखता है
-- **शुरुआती-अनुकूल**: अब तक बनाई गई सबसे अधिक सुलभ प्रोग्रामिंग भाषाओं में से एक। अंग्रेजी जैसा वाक्यविन्यास.
+- **शुरुआती-अनुकूल**: अब तक बनाई गई सबसे सुलभ प्रोग्रामिंग भाषाओं में से एक। अंग्रेजी जैसा वाक्यविन्यास.
 - **तेजी से एप्लिकेशन विकास**: ड्रैग-एंड-ड्रॉप जीयूआई बिल्डर विंडोज फॉर्म को तेजी से बनाता है।
 - **वीबीए (एप्लिकेशन के लिए विज़ुअल बेसिक)**: माइक्रोसॉफ्ट ऑफिस के लिए मैक्रो भाषा - दुनिया भर में लाखों व्यावसायिक उपयोगकर्ताओं द्वारा उपयोग की जाती है।
 - **एंटरप्राइज़ विरासत**: कई व्यवसाय-महत्वपूर्ण विंडोज़ एप्लिकेशन VB6 या VB.NET में लिखे गए हैं।
@@ -51,7 +56,7 @@
 | **घटती प्रासंगिकता** | Microsoft C# को प्राथमिकता देता है; वीबी रखरखाव मोड में है | नई परियोजनाओं के लिए C# का उपयोग करें |
 | **VB6 अप्रचलित है** | अब समर्थित नहीं; आधुनिक .NET पर नहीं चलता | VB.NET या C# | पर माइग्रेट करें
 | **सीमित क्रॉस-प्लेटफ़ॉर्म** | मुख्यतः विंडोज़-केंद्रित | क्रॉस-प्लेटफ़ॉर्म | के लिए C# या अन्य भाषाओं का उपयोग करें
-| **छोटा समुदाय** | कम नए संसाधन, पुस्तकालय, या नौकरी पोस्टिंग | .NET/C# संसाधनों का लाभ उठाएं |
+| **छोटा समुदाय** | कम नये संसाधन, पुस्तकालय, या नौकरी पोस्टिंग | .NET/C# संसाधनों का लाभ उठाएं |
 | **वीबीए सीमाएं** | आधुनिक भाषाओं की तुलना में VBA पुरानी और सीमित है | जटिल स्वचालन के लिए पायथन या ऑफिस स्क्रिप्ट का उपयोग करें |
 ---
 
@@ -809,6 +814,89 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 | प्रोग्राम करना सीखना | बहुत सुलभ वाक्यविन्यास | पायथन (अधिक बहुमुखी) |
 | नया .NET विकास | संभव है लेकिन C# को प्राथमिकता दी जाती है | सी# |
 | क्रॉस-प्लेटफ़ॉर्म ऐप्स | अनुकूल नहीं | सी#, फ़्लटर, वेब प्रौद्योगिकियाँ |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: VB6, VB.NET और VBA में क्या अंतर है?
+**ए:** प्रत्येक एक अलग उद्देश्य पूरा करता है:
+- **वीबी6**: क्लासिक विज़ुअल बेसिक - COM-आधारित, केवल विंडोज़, विरासत
+- **VB.NET**: आधुनिक .NET भाषा - CLR, पूर्ण OOP, विज़ुअल स्टूडियो का हिस्सा पर चलती है
+- **वीबीए**: अनुप्रयोगों के लिए विजुअल बेसिक - माइक्रोसॉफ्ट ऑफिस में एम्बेडेड
+### Q2: VBA एक्सेल को कैसे स्वचालित करता है?
+**ए:** वीबीए कोशिकाओं, श्रेणियों और कार्यपत्रकों में हेरफेर कर सकता है:
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### Q3: मैं VB.NET में विंडोज़ फॉर्म एप्लिकेशन कैसे बना सकता हूँ?
+**ए:** विजुअल स्टूडियो डिजाइनर का उपयोग करें:
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### Q4: VB.NET और C# के बीच मुख्य अंतर क्या हैं?
+**ए:** वे समान रनटाइम और लाइब्रेरी साझा करते हैं। सिंटैक्स अंतर:
+- VB.NET:`Dim`,`Sub`,`Function`,`If...Then...End If`
+- C#: पहले प्रकार,`{}`ब्लॉक,`;`टर्मिनेटर
+- VB.NET केस-असंवेदनशील है; C# केस-संवेदी है
+### Q5: क्या VB.NET अभी भी सीखने लायक है?
+**ए:** मौजूदा अनुप्रयोगों को बनाए रखने के लिए, हाँ। नई परियोजनाओं के लिए, C# को प्राथमिकता दी जाती है। ऑफिस ऑटोमेशन के लिए VBA आवश्यक है।
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: वीबीए के साथ एक्सेल रिपोर्ट को स्वचालित करना
+**चरण 1: समस्या को समझें**
+कच्चे डेटा से मासिक बिक्री रिपोर्ट तैयार करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+डेटा पढ़ने, सारांश की गणना करने और आउटपुट को प्रारूपित करने के लिए VBA का उपयोग करें।
+**चरण 3: कार्यान्वयन**```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**चरण 4: विस्तार करें**
+चार्ट, सशर्त स्वरूपण और ईमेल डिलीवरी जोड़ें।
 ---
 
 ## सारांश

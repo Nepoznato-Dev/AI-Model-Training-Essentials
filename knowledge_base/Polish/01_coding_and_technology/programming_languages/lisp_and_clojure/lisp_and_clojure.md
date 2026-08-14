@@ -353,7 +353,7 @@ my-clojure-project/
   :run {:main-opts ["-m" "my-project.core"]}}}
 ```
 
-### Kluczowe polecenia budowania
+### Kluczowe polecenia tworzenia
 | Polecenie | Opis |
 |--------|------------|
 | `clj -M:dev`| Rozpocznij REPL z zależnościami deweloperskimi |
@@ -575,7 +575,7 @@ jobs:
 | **WizualnaVM** | Profilowanie JVM |  Komenda`jvisualvm`|
 | **clj-async-profil** | Profilowanie procesora o niskim obciążeniu | `start`/`stop`/`serve`|
 | **Tuf** | Profilowanie środowiska uruchomieniowego | `(p :tag (expr))`|
-### Benchmarking za pomocą kryterium
+### Analiza porównawcza z kryterium
 ```clojure
 (require '[criterium.core :as crit])
 
@@ -696,6 +696,141 @@ native-image --no-fallback \
 | Ogólne tworzenie aplikacji | Możliwe, ale niszowe | Python, Java, Go |
 | Aplikacje mobilne | ClojureScript dla aplikacji internetowych; nie rodzimy | Swift, Kotlin |
 | Nauka o danych | Nie ekosystem | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Dlaczego programy Lisp/Clojure mają tak wiele nawiasów?
+**A:** Nawiasy reprezentują wyrażenia S — jednolitą składnię, w której kod i dane mają tę samą strukturę (homoikoniczność):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### P2: Jak Clojure inaczej radzi sobie ze stanem i zmiennością?
+**A:** Clojure domyślnie ustawia dane niezmienne. W przypadku kontrolowanych zmian stanu udostępnia typy referencyjne:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### P3: Jakie są trwałe struktury danych Clojure?
+**O:** Wszystkie kolekcje Clojure są trwałe (niezmienne, współdzielone strukturalnie):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### P4: Jak działają makra Clojure?
+**A:** Makra otrzymują nieoceniony kod (jako dane), przekształcają go i zwracają nowy kod:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### P5: Jak obsługiwać współbieżność w Clojure?
+**A:** Clojure zapewnia wiele prymitywów współbieżności:
+-`atom`— niezależne, synchroniczne zmiany
+-`ref`+`dosync`— skoordynowane zmiany transakcyjne
+-`agent`— asynchroniczne, niezależne zmiany
+- Kanały`core.async`— współbieżność w stylu CSP
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Przetwarzanie potoku danych
+**Krok 1: Zrozum problem**
+Odczytuj dane, filtruj, przekształcaj i agreguj za pomocą potoku.
+**Krok 2: Zidentyfikuj podejście**
+Użyj makr gwintowania Clojure (`->>`) i przetworników.
+**Krok 3: Wdróż**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Krok 4: Optymalizacja**
+Przetworniki unikają tworzenia sekwencji pośrednich – składają transformacje w jeden przebieg.
+### Problem 2: Budowa prostego serwera WWW
+**Krok 1: Zrozum problem**
+Utwórz podstawowy serwer HTTP za pomocą Ring/Compojure.
+**Krok 2: Zidentyfikuj podejście**
+Użyj adaptera pierścieniowego i routingu Compojure.
+**Krok 3: Wdróż**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Krok 4: Przedłuż**
+Dodaj oprogramowanie pośredniczące do rejestrowania, analizowania JSON, uwierzytelniania i obsługi błędów.
 ---
 
 ## Streszczenie

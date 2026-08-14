@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Science des données et analyse"
-description : "Traitement des données, ML, big data, BI"
-catégorie : "Science des données et analyse"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Data Science and Analytics"
+description: "Data processing, ML, big data, BI"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de la base de connaissances sur la science des données et l'analyse"
-next_review : "2027-08-05"
-#Classement
-tags : [données, science, analyse, science des données et analyse]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "13 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [data, science, analytics, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "13 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Science des données et analyse
 La science des données est la discipline qui consiste à transformer des données brutes en informations exploitables. Il se situe à l’intersection des statistiques, de l’informatique et de l’expertise du domaine – et il est devenu essentiel dans tous les secteurs, de la finance à la santé. Ce fichier présente les concepts, outils et flux de travail de base que tout praticien devrait connaître.
@@ -48,7 +52,7 @@ La plupart des projets suivent une variante de **CRISP-DM**, le cycle de vie sta
 | **Modélisation** | Sélectionner et entraîner des modèles | 10 à 15 % |
 | **Évaluation** | Évaluer les performances par rapport aux objectifs commerciaux | 5 à 10 % |
 | **Déploiement** | Envoyer le modèle en production | 5 à 10 % |
-La vieille blague est que 80 % de la science des données consiste à nettoyer les données. Ce n'est pas loin de la vérité.
+La préparation des données, en particulier le nettoyage des données, est largement estimée à environ 80 % du temps d'un data scientist.
 ---
 
 ## Types de données en un coup d'œil

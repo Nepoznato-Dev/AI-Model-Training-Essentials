@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "DevOps و CI/CD"
-توضیحات: "خط‌های لوله CI/CD، Docker، Kubernetes، Terraform، GitOps"
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [devops, cicd, coding-and-technology]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "11 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "DevOps and CI/CD"
+description: "CI/CD pipelines, Docker, Kubernetes, Terraform, GitOps"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [devops, cicd, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "11 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps و CI/CD
 DevOps ترکیبی از فلسفه فرهنگی، شیوه‌ها و ابزارهایی است که تیم‌ها را قادر می‌سازد نرم‌افزار را سریع‌تر و قابل اطمینان‌تر ارائه دهند. دیوار بین توسعه دهندگان (که می خواهند تغییرات را ارسال کنند) و عملیات (که خواهان ثبات هستند) را می شکند. CI/CD - یکپارچه سازی مداوم و تحویل مداوم - ستون فقرات اتوماسیونی است که این امکان را فراهم می کند.
 ---
@@ -101,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-روش‌های کلیدی: استفاده از تصاویر پایه باریک/آلپا، اجرا به‌عنوان غیر ریشه، ذخیره‌سازی لایه اهرمی، استفاده از `.dockerignore`، اسکن تصاویر برای آسیب‌پذیری‌ها (`trivy`، `docker scan`)، و تعیین محدودیت‌های منابع.
+روش‌های کلیدی: استفاده از تصاویر پایه باریک/آلپی، اجرا به‌عنوان غیر ریشه، ذخیره‌سازی لایه اهرمی، استفاده از `.dockerignore`، اسکن تصاویر برای آسیب‌پذیری‌ها (`trivy`، `docker scan`)، و تعیین محدودیت‌های منابع.
 ### Docker Compose
 برای اجرای چندین کانتینر با هم (برنامه + پایگاه داده + کش):
 ```yaml
@@ -224,7 +229,7 @@ resource "aws_instance" "web" {
 GitOps IaC را به نتیجه منطقی خود می برد: مخزن Git تنها منبع حقیقت برای وضعیت مطلوب زیرساخت و برنامه های شما است.
 | اصل | توضیحات |
 |-----------|-------------|
-| **اعلامی** | هر چیزی که به عنوان کد توصیف می شود (YAML، HCL) |
+| **اعلامی** | همه چیز به عنوان کد (YAML، HCL) |
 | **نسخه شده** | گیت منبع حقیقت است |
 | **اتوماتیک** | ابزارها به طور مداوم حالت مورد نظر را با وضعیت واقعی تطبیق می دهند
 | **قابل کنترل** | هر تغییر یک تعهد Git است |
@@ -240,4 +245,4 @@ GitOps IaC را به نتیجه منطقی خود می برد: مخزن Git تن
 5. **رفع ** - عقبگرد یا وصله به جلو.
 6. **ارتباط ** - به روز رسانی سهامداران و کاربران (صفحه وضعیت).
 7. **پس از مرگ** - ظرف 24 تا 48 ساعت، علت اصلی و موارد اقدام را مستند کنید.
-هدف فقط رفع حادثه نیست – بلکه این است که مطمئن شویم همان حادثه تکرار نخواهد شد.
+هدف نه تنها حل و فصل حادثه است، بلکه اطمینان از عدم تکرار همان حادثه است.

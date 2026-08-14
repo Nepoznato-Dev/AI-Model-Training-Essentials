@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 飞镖
 Dart 是 Google 开发的客户端优化编程语言，于 2013 年首次发布。虽然 Dart 最初被定位为 Web 浏览器的潜在 JavaScript 替代品，但它发现其主要目的是作为 **Flutter** 背后的语言 - Google 的跨平台 UI 工具包，用于从单个代码库构建移动、Web、桌面和嵌入式应用程序。
-Dart 结合了现代语言的最佳功能：它是面向对象的，具有可选类型（自 Dart 3 以来健全的 null 安全性），支持使用`async`/`await`进行异步编程，并编译为本机机器代码（适用于移动/桌面）和 JavaScript（适用于 Web）。
+Dart 结合了现代语言的最佳功能：它是面向对象的，具有可选类型（自 Dart 3 以来健全的 null 安全性），支持使用`async`/`await`进行异步编程，并编译为本机机器代码（用于移动/桌面）和 JavaScript（用于 Web）。
 ---
 
 ## 为什么 Dart 很重要
@@ -890,9 +891,9 @@ class LoginBloc {
 
 ## 性能与优化
 ### AOT 与 JIT 编译
-|模式|使用时 |启动 |运行时 |使用案例|
+|模式|使用时 |启动|运行时|使用案例|
 |------|---------|---------|---------|----------|
-| **JIT**（准时制）|开发、调试模式 |快|稍微慢一点|开发期间热重载 |
+| **JIT**（准时制）|开发、调试模式|快|稍微慢一点|开发期间热重载 |
 | **AOT**（提前）|发布版本 |稍微慢一点|更快 |生产移动/桌面应用程序 |
 | **JS** |网络目标 |取决于 |变化 | Flutter Web 应用程序 |
 | **WASM** |网络（实验性）|取决于 |快|未来网络目标|
@@ -943,12 +944,12 @@ FutureBuilder<List<Item>>(
 ### Flutter 部署目标
 |平台|构建命令|输出|
 |----------|--------------|--------|
-| **安卓** |  __受保护_0__ / __受保护_1__ | Play 商店的 APK / AAB |
-| **iOS** |  __受保护_2__ | App Store 的 IPA |
-| **网络** |  __受保护_3__ |静态 HTML/JS/CSS |
-| **Windows** |  __受保护_4__ | MSIX 或独立 exe |
-| **macOS** |  __受保护_5__ | .app 捆绑包 |
-| **Linux** |  __受保护_6__ |二元+资产 |
+| **安卓** | `flutter build apk`/`flutter build appbundle`| Play 商店的 APK / AAB |
+| **iOS** | `flutter build ipa`| App Store 的 IPA |
+| **网络** | `flutter build web`|静态 HTML/JS/CSS |
+| **Windows** | `flutter build windows`| MSIX 或独立 exe |
+| **macOS** | `flutter build macos`| .app 捆绑包 |
+| **Linux** | `flutter build linux`|二元+资产 |
 ```bash
 # Build commands
 flutter build apk --release                    # Android APK
@@ -975,16 +976,181 @@ flutter build apk --release --dart-define=ENV=staging
 ---
 
 ## 何时使用 Dart
-|场景 |为什么使用 Dart（Flutter）|更好的选择|
+|场景|为什么使用 Dart（Flutter）|更好的选择|
 |----------|--------------------|--------------------|
 |跨平台移动应用程序 |颤振很优秀 | React Native、原生 Swift/Kotlin |
-|跨平台桌面| Flutter 支持 |电子、C#、Avalonia |
+|跨平台桌面 | Flutter 支持 |电子、C#、Avalonia |
 |网络应用程序| Flutter 网络存在 | React、Vue、Angular 打造更丰富的 Web 应用程序 |
 |嵌入式用户界面 | Flutter 嵌入式 | C、LVGL |
-|后端开发 |不是主要用例 | Go、Node.js、Python |
+|后端开发|不是主要用例 | Go、Node.js、Python |
 |数据科学/机器学习 |不适合| Python、R |
 |系统编程|不适合| C、C++、Rust |
 ---
 
+## 综合问答
+### Q1：Dart 的空安全是如何工作的？
+**答：** Dart 2.12+ 具有健全的 null 安全性。默认情况下变量不可为空；使用`?`允许 null：
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2：`Future` 和`Stream`有什么区别？
+**A:**`Future`表示单个异步结果； `Stream`表示一系列异步事件：
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3：如何管理 Flutter 应用中的状态？
+**答：** 根据复杂程度采用多种方法：
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4：扩展方法在 Dart 中如何工作？
+**A:** 扩展向现有类型添加功能而无需继承：
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5：如何编写高性能的 Dart/Flutter 代码？
+**答：** 关键做法：
+- 尽可能使用`const`构造函数
+- 避免重建小部件 - 使用`const`、`final`和`shouldRebuild`
+- 对于大型列表，使用`ListView.builder`而不是 `ListView`
+- 使用 Flutter DevTools 进行配置
+- 使用`compute()`在隔离线程上执行昂贵的操作
+- 最小化`setState`调用 - 具体说明需要重建的内容
+---
+
+## 解决问题的思路
+### 问题 1：构建类型安全的 API 客户端
+**第 1 步：了解问题**
+创建一个 API 客户端来获取数据并返回类型正确的对象。
+**第 2 步：确定方法**
+将 Dart 类与`fromJson`/`toJson`、 async/await 和密封类一起使用以获取结果。
+**步骤 3：实施**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**第 4 步：验证**
+使用模拟 HTTP 客户端进行测试。验证网络故障和不良响应的错误处理。
+### 问题 2：通过去抖动实现响应式搜索
+**第 1 步：了解问题**
+构建一个查询 API 的搜索字段，但会对输入进行反跳以避免过多的请求。
+**第 2 步：确定方法**
+将 Dart Streams 与`debounceTime`和`distinct`结合使用。
+**步骤 3：实施**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**第 4 步：测试**
+验证快速输入是否仅在去抖期后触发一次 API 调用。
+---
+
 ＃＃ 概括
-Dart 的人生目标是 Flutter。作为一种独立的语言，它是有能力的，但并不起眼。作为 Flutter 背后的引擎，它使开发人员能够从单个代码库为每个主要平台构建美观、高性能的应用程序。如果您正在构建跨平台移动或桌面应用程序，Dart + Flutter 是最好的选择之一。对于其他一切，其他语言更合适。
+Dart 的人生目标是 Flutter。作为一门独立的语言，它是有能力的，但并不起眼。作为 Flutter 背后的引擎，它使开发人员能够从单个代码库为每个主要平台构建美观、高性能的应用程序。如果您正在构建跨平台移动或桌面应用程序，Dart + Flutter 是最好的选择之一。对于其他一切，其他语言更合适。

@@ -808,12 +808,95 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 ## Kiedy używać języka Visual Basic
 | Scenariusz | Dlaczego VB | Lepsza alternatywa |
 |---------|--------|--------------------------------|
-| Automatyzacja VBA/Biura | Standardowy język makr dla pakietu Office | Python (openpyxl), Skrypty pakietu Office |
+| Automatyzacja VBA/Office | Standardowy język makr dla pakietu Office | Python (openpyxl), Skrypty pakietu Office |
 | Konserwacja starszej wersji VB6 | Istniejąca baza kodu | Przeprowadź migrację do C# lub VB.NET |
 | Proste narzędzia systemu Windows | Szybkie tworzenie dzięki WinForms | C# z WPF lub WinUI |
 | Nauka programowania | Bardzo przystępna składnia | Python (bardziej wszechstronny) |
 | Nowy rozwój .NET | Możliwe, ale preferowany jest C# | C# |
 | Aplikacje wieloplatformowe | Nie nadaje się | C#, Flutter, technologie webowe |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między VB6, VB.NET i VBA?
+**O:** Każde z nich służy innemu celowi:
+- **VB6**: Klasyczny Visual Basic — oparty na modelu COM, tylko w systemie Windows, starszy
+- **VB.NET**: Nowoczesny język .NET — działa na CLR, pełnym OOP, częścią Visual Studio
+- **VBA**: Visual Basic for Applications — osadzony w pakiecie Microsoft Office
+### P2: W jaki sposób VBA automatyzuje Excela?
+**A:** VBA może manipulować komórkami, zakresami i arkuszami:
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### P3: Jak utworzyć aplikację Windows Forms w VB.NET?
+**A:** Użyj projektanta Visual Studio:
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### P4: Jakie są kluczowe różnice między VB.NET i C#?
+**O:** Korzystają z tego samego środowiska wykonawczego i bibliotek. Różnice składniowe:
+- VB.NET: `Dim`, `Sub`, `Function`,`If...Then...End If`
+- C#: najpierw typy, bloki `{}`, terminatory `;`
+- VB.NET nie rozróżnia wielkości liter; W języku C# rozróżniana jest wielkość liter
+### P5: Czy nadal warto uczyć się VB.NET?
+**O:** Do konserwacji istniejących aplikacji – tak. W przypadku nowych projektów preferowany jest C#. VBA pozostaje niezbędny do automatyzacji pakietu Office.
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Automatyzacja raportu Excela za pomocą VBA
+**Krok 1: Zrozum problem**
+Generuj miesięczny raport sprzedaży na podstawie surowych danych.
+**Krok 2: Zidentyfikuj podejście**
+Używaj języka VBA do odczytywania danych, obliczania podsumowań i formatowania danych wyjściowych.
+**Krok 3: Wdróż**```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**Krok 4: Przedłuż**
+Dodawaj wykresy, formatowanie warunkowe i dostarczanie wiadomości e-mail.
 ---
 
 ## Streszczenie

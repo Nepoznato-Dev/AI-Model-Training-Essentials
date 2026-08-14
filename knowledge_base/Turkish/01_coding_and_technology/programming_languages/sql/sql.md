@@ -40,7 +40,7 @@ contribution:
 ---
 
 #SQL
-SQL (Yapısal Sorgulama Dili), ilişkisel veritabanlarındaki verileri yönetmek ve sorgulamak için tasarlanmış, alana özgü bir dildir. İlk olarak 1970'lerde IBM'de geliştirilen ve 1987'de standartlaştırılan SQL, uygulamalar ve veriler arasındaki birincil arayüz olmaya devam ediyor. Her büyük İlişkisel Veritabanı Yönetim Sistemi (RDBMS) (PostgreSQL, MySQL, SQL Server, Oracle, SQLite) sorgu dili olarak SQL'i kullanır.
+SQL (Yapısal Sorgulama Dili), ilişkisel veritabanlarındaki verileri yönetmek ve sorgulamak için tasarlanmış, alana özgü bir dildir. İlk olarak 1970'lerde IBM'de geliştirilen ve 1987'de standartlaştırılan SQL, uygulamalar ve veriler arasındaki birincil arayüz olmaya devam ediyor. Her büyük İlişkisel Veritabanı Yönetim Sistemi (RDBMS) (PostgreSQL, MySQL, SQL Server, Oracle, SQLite) sorgulama dili olarak SQL'i kullanır.
 SQL genel amaçlı bir programlama dili değildir. SQL'de bir web uygulaması yazmazsınız. Ancak uygulamanız verileri depoluyorsa (ve neredeyse tüm uygulamalarda depolanır), o zaman SQL, bu verileri almak, dönüştürmek ve yönetmek için kullandığınız dildir. Genel programlamadan sonra tartışmasız evrensel olarak en yararlı teknik beceridir.
 ---
 
@@ -488,7 +488,7 @@ SELECT product_name,
 FROM monthly_sales WHERE year = 2024 GROUP BY product_name;
 ```
 
-### Desen 2: Grup Başına İlk N
+### Desen 2: Grup Başına En İyi N
 ```sql
 SELECT * FROM (
     SELECT o.*, u.name,
@@ -602,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Basit anahtar/değer depolama | Bu kullanım durumu için aşırıya kaçma | Redis, DynamoDB |
 | Son derece yapılandırılmamış veriler | Şema katılığı bir sorundur | MongoDB, belge veritabanları |
 | Büyük yatay ölçeklendirme | SQL veritabanlarını parçalamak zor | Cassandra, DynamoDB, HamamböceğiDB |
+---
+
+## Sentetik Soru-Cevap
+### S1:`WHERE`ile`HAVING`arasındaki fark nedir?
+**A:** `WHERE`, gruplandırmadan önce satırları filtreler; `HAVING`toplama sonrasında grupları filtreler:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### S2: Pencere işlevlerinin GROUP BY'den farkı nedir?
+**C:** Pencere işlevleri, satırları daraltmadan satırlar arasında işlem yapar:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### S3: Yavaş sorguları nasıl optimize edebilirim?
+**C:** Temel stratejiler:
+- `WHERE`,`JOIN`ve `ORDER BY`'de kullanılan sütunlara dizinler ekleyin 
+- `SELECT *`'den kaçının — yalnızca gerekli sütunları seçin
+- Sorgu planlarını okumak için`EXPLAIN`/`EXPLAIN ANALYZE`kullanın
+- Mümkün olduğunda alt sorguları JOIN'lerle değiştirin
+- Okunabilirlik için CTE'leri kullanın (genellikle performans cezası yoktur)
+- WHERE içindeki indekslenmiş sütunlardaki işlevlerden kaçının:`WHERE YEAR(date) = 2024`değil`WHERE date >= '2024-01-01'`kullanın
+### S4: CTE'ler nedir ve bunları ne zaman kullanmalıyım?
+**C:** Ortak Tablo İfadeleri adlandırılmış geçici sonuç kümeleri oluşturur:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### S5: NULL değerlerini doğru şekilde nasıl işleyebilirim?
+**A:** NULL bilinmeyeni temsil eder — kendisi dahil hiçbir şeye eşit değildir:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Grup Başına En İyi N'yi Bulma
+**1. Adım: Sorunu Anlayın**
+Her departmandaki en yüksek maaşlı 3 çalışanı bulun.
+**2. Adım: Yaklaşımı Belirleyin**
+Departmana göre bölümlenmiş`ROW_NUMBER()`ile bir pencere işlevi kullanın.
+**3. Adım: Uygulama**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**4. Adım: Doğrulayın**
+Her departmanın en fazla 3 satırı olduğundan emin olun. Gerekirse`DENSE_RANK()`ile bağları kullanın.
+### Sorun 2: Yıllık Büyüme Raporu Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Aylık geliri ve yıldan yıla büyüme yüzdesini hesaplayın.
+**2. Adım: Yaklaşımı Belirleyin**
+Gruplama için `DATE_TRUNC`'yi ve önceki yıl karşılaştırması için`LAG()`pencere işlevini kullanın.
+**3. Adım: Uygulama**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**4. Adım: Doğrulayın**
+İlk 12 ayın önceki yıla ait NULL olup olmadığını kontrol edin. Büyüme yüzdelerini bilinen rakamlara göre doğrulayın.
+### Sorun 3: Satırları Sütunlara Döndürme
+**1. Adım: Sorunu Anlayın**
+Durum sayılarını satırlardan sütunlara dönüştürün.
+**2. Adım: Yaklaşımı Belirleyin**
+Koşullu toplamayı kullanın (`SUM`içinde`CASE`).
+**3. Adım: Uygulama**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**4. Adım: Genişletin**
+Yüzde sütunlarını ve değişen toplamları ekleyin.
 ---
 
 ## Özet

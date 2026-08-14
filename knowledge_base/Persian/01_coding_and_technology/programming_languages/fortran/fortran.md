@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "فرترن"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی فرترن شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم، و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [فرترن، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "32 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Fortran"
+description: "Comprehensive reference for the Fortran programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [fortran, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "32 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #فرترن
 Fortran (ترجمه فرمول) قدیمی ترین زبان برنامه نویسی سطح بالا است که هنوز در حال استفاده گسترده است، اولین بار توسط IBM در سال 1957 برای محاسبات علمی و مهندسی توسعه یافت. با وجود قدمت، فرترن مدرن (فرترن 2008/2018/2023) یک زبان توانا و با کارایی بالا است که به طور گسترده در پیش‌بینی عددی آب و هوا، دینامیک سیالات محاسباتی، شبیه‌سازی‌های فیزیک، مدل‌سازی مالی و محاسبات با عملکرد بالا (HPC) استفاده می‌شود. بسیاری از سریع ترین ابررایانه های جهان کد فرترن را اجرا می کنند.
 این زبان از روزهای اولیه خود به طور قابل توجهی تکامل یافته است. فرترن مدرن دارای ماژول‌ها، انواع مشتق‌شده، رویه‌های عمومی، هم‌آهنگ‌ها (برنامه‌نویسی موازی) و قابلیت همکاری با C است. این زبان انتخابی برای بسیاری از برنامه‌های محاسباتی علمی است که در آن عملکرد در اولویت است.
@@ -45,7 +50,7 @@ Fortran (ترجمه فرمول) قدیمی ترین زبان برنامه نوی
 - **عملیات آرایه**: پشتیبانی از آرایه چند بعدی بومی با نحو طراحی شده برای محاسبات ریاضی.
 - **پایداری عددی**: زبان و کامپایلرها برای محاسبات ممیز شناور بهینه شده اند.
 - **Coarrays**: پشتیبانی از برنامه نویسی موازی داخلی (Fortran 2008+).
-- **هنوز در حال تکامل**: Fortran 2023 ویژگی های مدرن را با حفظ سازگاری به عقب اضافه می کند.
+- **هنوز در حال تکامل**: Fortran 2023 ویژگی های مدرن را با حفظ سازگاری با عقب اضافه می کند.
 ## مبادلات
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
@@ -97,7 +102,7 @@ end program hello
 ---
 
 ## نحو و الگوهای پیشرفته
-### انواع مشتق شده و رویه های Type-Bound
+### انواع مشتق شده و رویه های نوع محدود
 ```fortran
 module particle_module
     implicit none
@@ -774,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | توسعه برنامه عمومی | مناسب نیست | پایتون، جاوا، برو |
 | توسعه وب | مناسب نیست | جاوا اسکریپت، پایتون |
 | علم داده (تعاملی) | نه گردش کار | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین Fortran 90 و Fortran مدرن (2008+) چیست؟
+**A:** مدرن Fortran ویژگی های زیادی را اضافه کرده است که آن را گویاتر می کند:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: آرایه های فرترن چه تفاوتی با آرایه های C دارند؟
+**A:** آرایه های فرترن اشیاء درجه یک با عملیات داخلی هستند:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: چگونه می توانم به حداکثر عملکرد در فرترن برسم؟
+**A:** شیوه های کلیدی:
+- از`intent`صریح برای همه آرگومان های ساختگی استفاده کنید
+- در همه جا از`implicit none`استفاده کنید
+- عملیات آرایه را به حلقه ها ترجیح دهید
+- از الگوهای دسترسی به حافظه پیوسته استفاده کنید
+- از پرچم های بهینه سازی کامپایلر استفاده کنید:`-O3 -march=native -ffast-math`
+- نمایه با`gprof`یا ابزارهای خاص کامپایلر
+- از`pure`و`elemental`برای توابعی که کامپایلر می تواند بهینه سازی کند استفاده کنید
+### Q4: چگونه Fortran را با C رابط کنم؟
+**A:** از ماژول`iso_c_binding`استفاده کنید:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: از چه سیستم ساختی برای پروژه های فرترن استفاده کنم؟
+**A:** CMake پشتیبانی عالی از Fortran دارد. FPM (مدیر بسته فرترن) گزینه بومی مدرن است:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مسئله 1: حل یک PDE با تفاوت های محدود
+**مرحله 1: مشکل را درک کنید**
+معادله گرمای 1 بعدی را حل کنید: du/dt = آلفا * d²u/dx²
+**مرحله 2: رویکرد را شناسایی کنید**
+گسسته سازی فضا و زمان با استفاده از تفاوت های محدود. از یک طرح صریح استفاده کنید.
+**مرحله 3: پیاده سازی **```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**مرحله 4: تایید **
+حفاظت، همگرایی با پالایش شبکه را بررسی کنید و با حل تحلیلی مقایسه کنید.
+### مسئله 2: قطری شدن ماتریس
+**مرحله 1: مشکل را درک کنید**
+مقادیر ویژه و بردارهای ویژه یک ماتریس متقارن را پیدا کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از روال`dsyev`LAPACK از طریق رابط فرترن استفاده کنید.
+**مرحله 3: پیاده سازی **```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**مرحله 4: تایید **
+بررسی کنید که A*v = lambda*v برای هر جفت ویژه.
 ---
 
 ## خلاصه

@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Shell y PowerShell"
-descripción: "Referencia completa para el lenguaje de programación Shell y PowerShell que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Shell & PowerShell"
+description: "Comprehensive reference for the Shell and PowerShell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [shell-y-powershell, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "35 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [shell-and-powershell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Shell y PowerShell
 Las secuencias de comandos de Shell se refieren a la escritura de secuencias de comandos para intérpretes de línea de comandos. Los dos shells más importantes son **Bash** (Bourne Again Shell), el predeterminado en Linux y macOS, y **PowerShell**, el moderno lenguaje de scripting y shell multiplataforma de Microsoft. Los scripts de Shell automatizan las tareas de administración del sistema, crean canalizaciones, procesamiento de archivos y flujos de trabajo de implementación.
 Todo desarrollador, ingeniero de DevOps y administrador de sistemas necesita habilidades de scripting de shell. Ya sea que esté implementando un servidor web, procesando archivos de registro, configurando canales de CI/CD o automatizando copias de seguridad, los scripts de shell son la herramienta para el trabajo.
@@ -847,12 +852,158 @@ Publish-Module @publishParams
 | Escenario | ¿Por qué Shell/PowerShell? Mejor alternativa |
 |----------|---------------------|-------------------|
 | Administración del sistema | La herramienta estándar | Python para automatización compleja |
-| Canalizaciones de CI/CD | Universal en DevOps | --- |
+| Tuberías de CI/CD | Universal en DevOps | --- |
 | Procesamiento de archivos | Rápido para tareas sencillas | Python para transformaciones complejas |
 | Implementación del servidor | Cada servidor tiene un shell | Ansible/Terraform para infraestructura compleja |
 | Análisis de registros | Frases breves grep/awk rápidas | Python, SQL para análisis complejos |
 | Aplicaciones complejas | No adecuado | Python, Ir, Java |
 | Scripts multiplataforma | PowerShell 7+ funciona en todas partes | Python para scripts verdaderamente portátiles |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre comillas simples y dobles en Bash?
+**R:** Las comillas dobles permiten expansión variable; las comillas simples son literales:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### P2: ¿Cómo manejo los errores en los scripts de shell?
+**R:** Utilice`set -e`para salir en caso de errores y trap para limpieza:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### P3: ¿Cómo proceso correctamente los argumentos de la línea de comandos?
+**R:** Utilice`getopts`para indicadores y parámetros posicionales:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### P4: ¿Qué es la canalización de PowerShell y en qué se diferencia de Bash?
+**R:** PowerShell canaliza objetos, no texto. Cada objeto conserva sus propiedades:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### P5: ¿Cómo escribo scripts multiplataforma?
+**R:** Para Bash: use `#!/usr/bin/env bash`, evite indicadores específicos de GNU. Para PowerShell: utilice`pwsh`(PowerShell Core) que se ejecuta en Linux/macOS/Windows.
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Script de procesamiento de imágenes por lotes (Bash)
+**Paso 1: Comprenda el problema**
+Cambie el tamaño de todas las imágenes PNG en un directorio a un ancho máximo de 800 px.
+**Paso 2: Identificar el enfoque**
+Utilice`find`para localizar archivos y`convert`(ImageMagick) para cambiar el tamaño.
+**Paso 3: Implementar**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Paso 4: Extender**
+Agregue barra de progreso, manejo de errores para imágenes corruptas y procesamiento paralelo con `xargs -P`.
+### Problema 2: Rotación de registros automatizada (Bash)
+**Paso 1: Comprenda el problema**
+Rote los archivos de registro diariamente, comprima los registros antiguos y elimine los registros de más de 30 días.
+**Paso 2: Identificar el enfoque**
+Utilice`find`con filtros basados en tiempo y`gzip`para compresión.
+**Paso 3: Implementar**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Paso 4: Programar**
+Agregar al crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Problema 3: Comprobación del estado del servicio de Windows (PowerShell)
+**Paso 1: Comprenda el problema**
+Compruebe si los servicios críticos se están ejecutando y envíe una alerta si alguno está detenido.
+**Paso 2: Identificar el enfoque**
+Utilice`Get-Service`y filtre los servicios detenidos.
+**Paso 3: Implementar**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Paso 4: Automatizar**
+Programe como un trabajo del Programador de tareas de Windows que se ejecuta cada 5 minutos.
 ---
 
 ## Resumen

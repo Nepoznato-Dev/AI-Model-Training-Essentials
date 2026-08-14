@@ -474,7 +474,7 @@ tests:
 |命令 |描述 |
 |---------|-------------|
 |`stack new my-project`|從範本建立新專案 |
-|`stack build`|建置專案 |
+|`stack build`|建置專案|
 |`stack ghci`|啟動互動式 REPL 並載入專案 |
 |`stack test`|運行測試套件 |
 |`stack bench`|執行基準測試 |
@@ -522,7 +522,7 @@ jobs:
 
 ## 測試
 ### HSpec — 單元測試框架
-HSpec 是最受歡迎的測試框架，其靈感來自 Ruby 的 RSpec。它提供了 BDD 風格的語法。
+HSpec 是最受歡迎的測試框架，受到 Ruby 的 RSpec 的啟發。它提供了 BDD 風格的語法。
 ```haskell
 -- test/Spec.hs
 import Test.Hspec
@@ -931,15 +931,219 @@ pkgs.haskellPackages.developPackage {
 ---
 
 ## 何時使用 Haskell
-|場景 |為什麼選擇 Haskell |更好的選擇|
+|場景|為什麼選擇 Haskell |更好的選擇|
 |----------|----------|--------------------|
 |形式驗證|型別支援證明 |阿格達、科克 |
 |編譯器開發|非常適合語言實作 | OCaml、Rust |
 |金融體系|類型的正確性 |斯卡拉、F# |
 |學習 FP 概念 |最純粹的函數式語言 | Scala（更實用）、Elm |
-|通用應用開發|可能但利基| Python、Go、Java |
+|通用應用開發 |可能但利基| Python、Go、Java |
 |網頁開發| Yesod/Servant 存在但有限 | JavaScript/TypeScript |
 |資料科學|不是生態系| Python、R |
+---
+
+## 綜合問答
+### Q1：Haskell 的惰性求值如何影響效能？
+**答案：** 惰性求值意味著僅在需要時才計算表達式，從而實現無限資料結構和可組合管道。但是，如果 thunk 累積，可能會導致空間洩漏：
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+使用`foldl'`（來自`Data.List`）而不是`foldl`進行數位折疊。需要時使用`!`瀏海圖案或`seq`強制進行評估。
+### Q2：`Functor`、`Applicative`和`Monad`之間的實際差異是什麼？
+**A:** 每個類型類別都新增了功能：
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**函子** 在上下文上映射纯函数。 **適用性** 應用本身位於上下文中的函數。 **Monad** 讓每一步都依賴上一步的結果。實務上：使用`fmap`/`<$>`進行簡單變換，使用`<*>`進行組合效果，使用`>>=`/`do`進行順序相關計算。
+### Q3：如何處理純 Haskell 程式碼中的副作用？
+**A:** 使用類型系統來分離純粹且有效的程式碼：
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+保持核心邏輯純粹，將效果推向邊緣。使用`ReaderT`進行配置，使用`ExceptT`進行錯誤，使用`StateT`進行可變狀態。
+### Q4：什麼是型別類別以及它們與 OOP 介面有何不同？
+**A:** 類型類別定義類型可以實現的行為。與 OOP 介面不同，它們是開放的（任何類型都可以是實例）並支援臨時多態性：
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5：如何建構一個供實際使用的 Haskell 專案？
+**A:** 使用 Cabal 或 Stack 並採用標準佈局：
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+關鍵實務：將 IO 保留在`Main.hs`或專用的`IO`模組中，使核心邏輯純淨且可測試，對域類型使用`newtype`包裝器。
+---
+
+## 解決問題的思路
+### 問題 1：實作帶​​有錯誤報告的安全除法函數
+**第 1 步：了解問題**
+我們需要除法來處理除以零並報告有意義的錯誤，而不僅僅是崩潰。
+**第 2 步：確定方法**
+使用`Either`傳回錯誤訊息或結果。這使得類型中明確出現故障的可能性。
+**步驟 3：實施**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**第 4 步：驗證**
+類型系統保證呼叫者必須處理錯誤情況。模式匹配或`either`強制明確處理。
+### 問題 2：解析簡單的設定語言
+**第 1 步：了解問題**
+從`name=Alice\nage=30`等字串中解析鍵值對。
+**第 2 步：確定方法**
+使用`Text.Parsec`或手動遞歸。為簡單起見，請使用`break`和`span`。
+**步驟 3：實施**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**第 4 步：擴充**
+新增註釋處理 (`#`)、節標題 (`[section]`)，並使用`Value`ADT 進行型別強制轉換。
+### 問題 3：用惰性建構記憶斐波那契
+**第 1 步：了解問題**
+高效率計算斐波那契數。樸素遞歸是指數級的。
+**第 2 步：確定方法**
+使用 Haskell 的惰性求值建立一個無限列表，其中每個元素都計算一次並快取。
+**步驟 3：實施**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**第 4 步：優化**
+對於隨機訪問，請使用具有惰性構造的 `Data.Array`。對於非常大的索引，請使用 O(log n) 矩陣求冪。
+### 問題 4：實作簡單的狀態機
+**第 1 步：了解問題**
+模擬一個循環紅 -> 綠色 -> 黃 -> 紅的交通燈。
+**第 2 步：確定方法**
+使用狀態代數資料型別和純轉換函數。
+**步驟 3：實施**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**第 4 步：驗證**
+純函數是可以簡單測試的：```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ＃＃ 概括

@@ -38,14 +38,15 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lisp & Clojure
-Lisp là ngôn ngữ lập trình cấp cao lâu đời thứ hai vẫn còn được sử dụng (sau Fortran), do John McCarthy tạo ra vào năm 1958. Nó đi tiên phong trong nhiều khái niệm hiện được coi là đương nhiên: thu thập rác, đệ quy, cấu trúc dữ liệu cây, gõ động và ý tưởng về các chương trình dưới dạng dữ liệu (tính đồng âm). Tính năng đặc biệt của Lisp là cú pháp của nó — mã được viết dưới dạng dấu ngoặc đơn lồng nhau (biểu thức S), giúp ngôn ngữ có thể phân tích cú pháp một cách dễ dàng và cho phép lập trình siêu dữ liệu mạnh mẽ thông qua **macro**.
+Lisp là ngôn ngữ lập trình cấp cao lâu đời thứ hai vẫn còn được sử dụng (sau Fortran), do John McCarthy tạo ra vào năm 1958. Nó đi tiên phong trong nhiều khái niệm hiện được coi là đương nhiên: thu thập rác, đệ quy, cấu trúc dữ liệu cây, gõ động và ý tưởng về các chương trình dưới dạng dữ liệu (tính đồng nhất). Tính năng đặc biệt của Lisp là cú pháp của nó — mã được viết dưới dạng dấu ngoặc đơn lồng nhau (biểu thức S), giúp ngôn ngữ có thể phân tích cú pháp một cách dễ dàng và cho phép lập trình siêu dữ liệu mạnh mẽ thông qua **macro**.
 Clojure là một phương ngữ Lisp hiện đại được Rich Hickey thiết kế vào năm 2007. Nó chạy trên JVM (cũng là ClojureScript cho JavaScript), bao gồm lập trình chức năng, tính bất biến và tính đồng thời, đồng thời cung cấp khả năng tương tác Java liền mạch. Clojure được sử dụng trong phát triển web, xử lý dữ liệu và hệ thống tài chính.
 ---
 
 ## Tại sao Lisp/Clojure lại quan trọng
 - **Tính đồng nhất**: Mã là dữ liệu — các chương trình có thể thao tác với cấu trúc của chính chúng, tạo ra các macro mạnh mẽ.
-- **Macro**: Macro Lisp hoạt động trên mã dưới dạng dữ liệu, cho phép bạn mở rộng ngôn ngữ.
+- **Macro**: Macro Lisp hoạt động trên mã dưới dạng dữ liệu, cho phép bạn tự mở rộng ngôn ngữ.
 - **Lập trình chức năng**: Các khái niệm FP tiên phong của Lisp vẫn được sử dụng cho đến ngày nay.
 - **Clojure trên JVM**: Lisp hiện đại với quyền truy cập đầy đủ vào thư viện Java, cấu trúc dữ liệu bất biến và khả năng chạy đồng thời tuyệt vời.
 - **Phát triển dựa trên REPL**: Phát triển tương tác với phản hồi ngay lập tức.
@@ -53,7 +54,7 @@ Clojure là một phương ngữ Lisp hiện đại được Rich Hickey thiết
 ## Sự đánh đổi
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
-| **Dấu ngoặc đơn** | Ban đầu, việc sử dụng nhiều`()`có thể khó đọc | Sử dụng hỗ trợ IDE; học cách xem cấu trúc |
+| **Dấu ngoặc đơn** | Việc sử dụng nhiều`()`ban đầu có thể khó đọc | Sử dụng hỗ trợ IDE; học cách xem cấu trúc |
 | **Cộng đồng thích hợp** | Thị trường việc làm nhỏ so với các ngôn ngữ chính thống | Cộng đồng năng động và đam mê |
 | **Thời gian khởi động Clojure** | Dựa trên JVM; khởi động chậm cho CLI | Sử dụng hình ảnh gốc GraalVM |
 | **Phương ngữ Lisp** | Nhiều Lisp không tương thích (Lisp thông thường, Lược đồ, Lisp Emacs) | Chọn Clojure cho công việc hiện đại |
@@ -355,13 +356,13 @@ my-clojure-project/
 ### Lệnh xây dựng chính
 | Lệnh | Mô tả |
 |----------|-------------|
-|  __BẢO VỆ_0__ | Bắt đầu REPL với các phụ thuộc của nhà phát triển |
-|  __BẢO VỆ_1__ | Chạy bộ thử nghiệm |
-|  __BẢO VỆ_2__ | Chạy ứng dụng |
-|  __BẢO VỆ_3__ | Xây dựng JAR uber |
-|  __BẢO VỆ_4__ | Tạo dự án Leiningen |
-|  __BẢO VỆ_5__ | Chạy thử nghiệm (Leiningen) |
-|  __BẢO VỆ_6__ | Xây dựng JAR uber (Leiningen) |
+| `clj -M:dev`| Bắt đầu REPL với các phụ thuộc của nhà phát triển |
+| `clj -M:test`| Chạy bộ thử nghiệm |
+| `clj -M:run`| Chạy ứng dụng |
+| `clj -T:build uber`| Xây dựng JAR uber |
+| `lein new app my-app`| Tạo dự án Leiningen |
+| `lein test`| Chạy thử nghiệm (Leiningen) |
+| `lein uberjar`| Xây dựng JAR uber (Leiningen) |
 ### Đường dẫn CI/CD (Hành động trên GitHub)
 ```yaml
 name: Clojure CI
@@ -570,10 +571,10 @@ jobs:
 ### Công cụ lập hồ sơ
 | Công cụ | Mục đích | Cách sử dụng |
 |------|----------|-------|
-| **Tiêu chí** | Điểm chuẩn thống kê |  __BẢO VỆ_0__ |
+| **Tiêu chí** | Điểm chuẩn thống kê | `(bench (expr))`|
 | **VisualVM** | Hồ sơ JVM |  Lệnh`jvisualvm`|
 | **clj-async-profile** | Cấu hình CPU chi phí thấp | `start`/`stop`/`serve`|
-| **Tufte** | Hồ sơ thời gian chạy |  __BẢO VỆ_5__ |
+| **Tufte** | Hồ sơ thời gian chạy | `(p :tag (expr))`|
 ### Đo điểm chuẩn bằng Tiêu chí
 ```clojure
 (require '[criterium.core :as crit])
@@ -691,10 +692,145 @@ native-image --no-fallback \
 | Xử lý dữ liệu | Thư viện trình tự xuất sắc | Python (Gấu trúc), Scala (Spark) |
 | Hệ thống đồng thời | Dữ liệu bất biến + STM | Đi, Erlang/Elixir |
 | DSL / phần mở rộng ngôn ngữ | Macro chưa từng có | — |
-| Phát triển dựa trên REPL | Quy trình làm việc tương tác tốt nhất trong lớp | — |
+| Phát triển dựa trên REPL | Quy trình làm việc tương tác tốt nhất | — |
 | Phát triển ứng dụng chung | Có thể nhưng thích hợp | Python, Java, Đi |
-| Ứng dụng di động | ClojureScript cho ứng dụng web; không phải người bản xứ | Swift, Kotlin |
+| Ứng dụng di động | ClojureScript cho ứng dụng web; không phải người bản địa | Swift, Kotlin |
 | Khoa học dữ liệu | Không phải hệ sinh thái | Python, R |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Tại sao chương trình Lisp/Clojure lại có nhiều dấu ngoặc đơn đến vậy?
+**A:** Dấu ngoặc đơn biểu thị biểu thức S — một cú pháp thống nhất trong đó mã và dữ liệu có cùng cấu trúc (tính đồng âm):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Câu 2: Clojure xử lý trạng thái và khả năng biến đổi khác nhau như thế nào?
+**A:** Clojure mặc định sử dụng dữ liệu không thể thay đổi. Đối với những thay đổi trạng thái được kiểm soát, nó cung cấp các loại tham chiếu:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Câu 3: Cấu trúc dữ liệu liên tục của Clojure là gì?
+**A:** Tất cả các bộ sưu tập Clojure đều ổn định (không thay đổi, được chia sẻ về mặt cấu trúc):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Câu 4: Macro Clojure hoạt động như thế nào?
+**A:** Macro nhận mã chưa được đánh giá (dưới dạng dữ liệu), chuyển đổi mã đó và trả về mã mới:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Câu hỏi 5: Làm cách nào để xử lý đồng thời trong Clojure?
+**A:** Clojure cung cấp nhiều nguyên hàm đồng thời:
+-`atom`— thay đổi độc lập, đồng bộ
+-`ref`+`dosync`— các thay đổi mang tính giao dịch, phối hợp
+-`agent`- thay đổi độc lập, không đồng bộ
+- Kênh`core.async`— Đồng thời kiểu CSP
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xử lý đường ống dữ liệu
+**Bước 1: Tìm hiểu vấn đề**
+Đọc dữ liệu, lọc, chuyển đổi và tổng hợp thông qua một đường dẫn.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng macro phân luồng của Clojure (`->>`) và bộ chuyển đổi.
+**Bước 3: Thực hiện**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Bước 4: Tối ưu hóa**
+Bộ chuyển đổi tránh tạo ra các chuỗi trung gian - chúng kết hợp các phép biến đổi thành một lần truyền duy nhất.
+### Bài toán 2: Xây dựng một Web Server đơn giản
+**Bước 1: Tìm hiểu vấn đề**
+Tạo một máy chủ HTTP cơ bản bằng Ring/Compojure.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng bộ chuyển đổi Ring và định tuyến Compojure.
+**Bước 3: Thực hiện**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Bước 4: Gia hạn**
+Thêm phần mềm trung gian để ghi nhật ký, phân tích cú pháp JSON, xác thực và xử lý lỗi.
 ---
 
 ## Bản tóm tắt

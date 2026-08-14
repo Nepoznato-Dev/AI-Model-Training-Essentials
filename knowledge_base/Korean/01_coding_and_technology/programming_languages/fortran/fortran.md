@@ -38,16 +38,17 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 포트란
 Fortran(Formula Translation)은 1957년 IBM이 과학 및 엔지니어링 계산을 위해 처음 개발한, 여전히 널리 사용되는 가장 오래된 고급 프로그래밍 언어입니다. 오랜 세월이 지났음에도 불구하고 최신 Fortran(Fortran 2008/2018/2023)은 수치 기상 예측, 전산 유체 역학, 물리 시뮬레이션, 재무 모델링 및 고성능 컴퓨팅(HPC)에 광범위하게 사용되는 유능한 고성능 언어입니다. 세계에서 가장 빠른 슈퍼컴퓨터 중 상당수는 Fortran 코드를 실행합니다.
 언어는 초기부터 크게 발전했습니다. 최신 Fortran에는 모듈, 파생 유형, 일반 프로시저, 동일 배열(병렬 프로그래밍) 및 C와의 상호 운용성이 있습니다. 성능이 가장 중요한 많은 과학 컴퓨팅 응용 프로그램에서 선택되는 언어로 남아 있습니다.
 ---
 
 ## 포트란이 중요한 이유
-- **HPC 성능**: Fortran 컴파일러는 사용 가능한 가장 빠른 숫자 코드를 생성합니다. 종종 배열 작업에 대해 C/C++와 일치하거나 이를 초과합니다.
+- **HPC 성능**: Fortran 컴파일러는 사용 가능한 가장 빠른 숫자 코드 중 일부를 생성하며 종종 배열 작업에 대해 C/C++와 일치하거나 초과합니다.
 - **레거시 코드베이스**: 수십 년 간의 과학 코드(기후 모델, 물리 시뮬레이션)가 Fortran으로 작성되었습니다.
 - **배열 작업**: 수학적 계산을 위해 설계된 구문을 사용하여 기본 다차원 배열을 지원합니다.
-- **수치 안정성**: 언어와 컴파일러는 부동 소수점 계산에 최적화되어 있습니다.
+- **수치적 안정성**: 언어와 컴파일러는 부동 소수점 계산에 최적화되어 있습니다.
 - **Coarrays**: 내장형 병렬 프로그래밍 지원(Fortran 2008+).
 - **계속 진화 중**: Fortran 2023은 이전 버전과의 호환성을 유지하면서 최신 기능을 추가합니다.
 ## 절충안
@@ -770,7 +771,7 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 ## 포트란을 사용해야 하는 경우
 | 시나리오 | 왜 포트란인가 | 더 나은 대안 |
 |----------|------------|------|
-| HPC/슈퍼컴퓨팅 | 수치 성능에 최적화됨 | C++(주의해서), Julia |
+| HPC/슈퍼컴퓨팅 | 수치 성능에 최적화됨 | C++(주의), Julia |
 | 과학적인 시뮬레이션 | 수십 년에 걸친 검증된 코드 | Python(프로토타이핑용), C++ |
 | 기후/날씨 모델 | 레거시 코드베이스 성과 | — |
 | 전산 물리학 | 기본 배열 작업 | Python(NumPy), 줄리아 |
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | 일반 애플리케이션 개발 | 적합하지 않음 | 파이썬, 자바, Go |
 | 웹 개발 | 적합하지 않음 | 자바스크립트, 파이썬 |
 | 데이터 과학(대화형) | 워크플로가 아님 | 파이썬, R |
+---
+
+## 종합 Q&A
+### Q1: Fortran 90과 최신 Fortran(2008+)의 차이점은 무엇입니까?
+**답:** Modern Fortran에는 표현력을 더욱 향상시키는 많은 기능이 추가되었습니다.
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: Fortran 배열은 C 배열과 어떻게 다릅니까?
+**답:** 포트란 배열은 내장된 연산을 갖춘 최고 수준의 객체입니다.
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: Fortran에서 최대 성능을 얻으려면 어떻게 해야 합니까?
+**답:** 주요 사례:
+- 모든 더미 인수에 대해 명시적인 `intent`를 사용합니다.
+- 어디에서나 `implicit none`를 사용하세요.
+- 루프보다 배열 작업을 선호합니다.
+- 연속적인 메모리 액세스 패턴 사용
+- 컴파일러 최적화 플래그 사용:`-O3 -march=native -ffast-math`
+-`gprof`또는 컴파일러 관련 도구를 사용한 프로파일
+- 컴파일러가 최적화할 수 있는 함수에는`pure`및 `elemental`를 사용하세요.
+### Q4: Fortran을 C와 어떻게 인터페이스합니까?
+**답:**`iso_c_binding`모듈을 사용하세요.
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: Fortran 프로젝트에는 어떤 빌드 시스템을 사용해야 합니까?
+**답:** CMake는 뛰어난 Fortran 지원을 제공합니다. FPM(Fortran Package Manager)은 최신 기본 옵션입니다.
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 유한차를 이용한 PDE 풀기
+**1단계: 문제 이해**
+1D 열 방정식 풀기: du/dt = alpha * d²u/dx²
+**2단계: 접근 방식 파악**
+유한차를 이용하여 공간과 시간을 이산화합니다. 명시적인 구성표를 사용하십시오.
+**3단계: 구현**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**4단계: 확인**
+보존, 그리드 세분화를 통한 수렴을 확인하고 분석 솔루션과 비교합니다.
+### 문제 2: 행렬 대각선화
+**1단계: 문제 이해**
+대칭 행렬의 고유값과 고유벡터를 구합니다.
+**2단계: 접근 방식 파악**
+Fortran의 인터페이스를 통해 LAPACK의`dsyev`루틴을 사용하십시오.
+**3단계: 구현**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**4단계: 확인**
+각 고유쌍에 대해 A*v = 람다*v인지 확인하세요.
 ---
 
 ## 요약

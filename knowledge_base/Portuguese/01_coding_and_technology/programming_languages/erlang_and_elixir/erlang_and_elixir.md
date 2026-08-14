@@ -40,7 +40,7 @@ contribution:
 ---
 
 #Erlang e Elixir
-Erlang foi construído pela Ericsson em 1986 para alimentar centrais telefônicas – o que explica por que ele lida com simultaneidade, tolerância a falhas e sistemas distribuídos melhor do que qualquer outra coisa. Os processos Erlang são leves, isolados e se comunicam apenas por meio de passagem de mensagens. Quando um processo falha, um supervisor o reinicia. Essa filosofia de “deixar travar” produz sistemas que funcionam por anos sem tempo de inatividade.
+Erlang foi construído pela Ericsson em 1986 para alimentar centrais telefônicas – o que explica por que ele lida com simultaneidade, tolerância a falhas e sistemas distribuídos melhor do que quase qualquer outra coisa. Os processos Erlang são leves, isolados e se comunicam apenas por meio de passagem de mensagens. Quando um processo falha, um supervisor o reinicia. Essa filosofia de “deixar travar” produz sistemas que funcionam por anos sem tempo de inatividade.
 Elixir é uma linguagem moderna construída sobre a VM de Erlang (BEAM) por Jose Valim em 2012. Ela mantém tudo o que Erlang oferece - simultaneidade, tolerância a falhas, distribuição - mas adiciona uma sintaxe amigável, metaprogramação e excelentes ferramentas (gerenciador de pacotes Mix, registro de pacotes Hex). Elixir é amplamente utilizado para aplicações web (através da estrutura Phoenix), sistemas em tempo real e dispositivos embarcados (via Nerves).
 ---
 
@@ -926,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | Ciência de dados / ML | Não o ecossistema | Pitão, R |
 | Aplicativos móveis | Não adequado | Rápido, Kotlin, Dardo |
 | APIs REST simples | Possível, mas exagero para pequenos serviços | Vá, Node.js, Python |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como funciona a filosofia de "deixar travar" de Erlang?
+**R:** Em vez de programação defensiva, Erlang permite que os processos travem e os reinicia através de supervisores:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2: Como funcionam os pipelines do Elixir?
+**R:** O operador`|>`passa o resultado de uma função como o primeiro argumento para a próxima:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3: Qual é a diferença entre Erlang e Elixir?
+**R:** Elixir é executado na VM Erlang (BEAM) com sintaxe moderna:
+- Elixir: operador de pipe, macros, protocolos, interpolação de strings
+- Erlang: sintaxe mais simples, OTP integrado, mais testado em batalha
+- Ambos compartilham o mesmo modelo de simultaneidade, VM e ecossistema
+### Q4: Como funcionam os GenServers no Elixir?
+**R:** GenServer é a abstração padrão para processos com estado:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5: Como lidar com erros no Elixir?
+**R:** Use`try/rescue`para exceções,`{:ok, result} | {:error, reason}`para falhas esperadas:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Construindo um armazenamento de valores-chave tolerante a falhas
+**Etapa 1: Entenda o problema**
+Crie um armazenamento de valores-chave que sobreviva a falhas de processo.
+**Etapa 2: Identifique a abordagem**
+Use um GenServer com um supervisor.
+**Etapa 3: Implementar**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**Etapa 4: verificar**
+Mate o processo e verifique se ele reinicia com o estado novo.
+### Problema 2: Web Scraper simultâneo
+**Etapa 1: Entenda o problema**
+Busque vários URLs simultaneamente e colete resultados.
+**Etapa 2: Identifique a abordagem**
+Use tarefas Elixir para execução simultânea.
+**Etapa 3: Implementar**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**Etapa 4: otimizar**
+Adicione limitação de taxa, novas tentativas e streaming para grandes listas de URLs.
 ---
 
 ## Resumo

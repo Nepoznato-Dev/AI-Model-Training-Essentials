@@ -226,7 +226,7 @@ package body Vector_Math is
 end Vector_Math;
 ```
 
-### ข้อมูลทั่วไป (ความหลากหลายทางเวลาคอมไพล์)
+### Generics (ความหลากหลายทางคอมไพล์ไทม์)
 ```ada
 -- Generic package for type-safe containers
 generic
@@ -601,7 +601,7 @@ package C_Bridge is
 end C_Bridge;
 ```
 
-### การเขียนโปรแกรมแบบผสมภาษา
+### การเขียนโปรแกรมภาษาผสม
 ```ada
 -- Ada calling C library (e.g., BLAS)
 with Interfaces.C; use Interfaces.C;
@@ -629,7 +629,7 @@ end BLAS_Interface;
 ---
 
 ## รูปแบบการออกแบบ
-### รูปแบบ 1: ผู้สังเกตการณ์ที่มีวัตถุที่ได้รับการป้องกัน
+### รูปแบบ 1: ผู้สังเกตการณ์พร้อมวัตถุที่ได้รับการป้องกัน
 ```ada
 protected type Event_Bus is
    procedure Subscribe(Handler_Id : Positive);
@@ -786,7 +786,7 @@ pragma Inline(Fast_Add);
 ---
 
 ## การปรับใช้
-### SPARK สำหรับการรับรองที่มีความสำคัญด้านความปลอดภัย
+### SPARK สำหรับการรับรองความปลอดภัยที่สำคัญ
 ```ada
 -- SPARK subset: provably correct code
 -- @SPARK_MODE ON
@@ -864,5 +864,146 @@ end Main;
 | วิทยาศาสตร์ข้อมูล / ML | ไม่ใช่ระบบนิเวศ | หลาม, อาร์ |
 ---
 
+## คำถามและคำตอบสังเคราะห์
+### Q1: ระบบประเภทของ Ada ป้องกันจุดบกพร่องในเวลาคอมไพล์ได้อย่างไร?
+**A:** ระบบประเภทของ Ada เป็นหนึ่งในภาษาที่เข้มงวดที่สุด มันจับข้อผิดพลาดที่ภาษาอื่นพลาด:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### คำถามที่ 2: โมเดลงานของ Ada คืออะไร และเปรียบเทียบกับโมเดลการทำงานพร้อมกันอื่นๆ ได้อย่างไร
+**A:** Ada มีการทำงานพร้อมกันในตัวกับวัตถุและงานที่ได้รับการคุ้มครอง:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: ฉันจะใช้ยาสามัญใน Ada ได้อย่างไร
+**A:** Ada generics มีความชัดเจนและปลอดภัยต่อประเภท:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### คำถามที่ 4: อะไรทำให้ Ada เหมาะสำหรับระบบที่มีความสำคัญด้านความปลอดภัย
+**A:** Ada จัดเตรียม:
+- ชุดย่อย SPARK สำหรับการตรวจสอบอย่างเป็นทางการ (การพิสูจน์ความถูกต้องทางคณิตศาสตร์)
+- การเขียนโปรแกรมตามสัญญา (เงื่อนไขก่อน/หลัง, ประเภทค่าคงที่)
+- ไม่มีการจัดสรรหน่วยความจำโดยนัยใน SPARK
+- การมอบหมายงานและการกำหนดเวลาที่กำหนด
+- โปรไฟล์ Ravenscar สำหรับระบบเรียลไทม์ที่มีความสมบูรณ์สูง
+- คุณสมบัติ Toolchain (DO-178C สำหรับ avionics)
+### คำถามที่ 5: ฉันจะสร้างโปรเจ็กต์ Ada ได้อย่างไร
+**ตอบ:** ใช้ GPRBuild กับไฟล์โครงการ GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การใช้คิวประเภทที่ปลอดภัย
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+สร้างคิวแบบมีขอบเขตและปลอดภัยสำหรับเธรดด้วยการตรวจสอบขนาดเวลาคอมไพล์
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้วัตถุที่ได้รับการป้องกันพร้อมกับบัฟเฟอร์ที่มีขอบเขต
+**ขั้นตอนที่ 3: นำไปใช้**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+วัตถุที่ได้รับการคุ้มครองรับประกันการยกเว้นร่วมกัน สิ่งกีดขวางทางเข้าป้องกันการล้น/อันเดอร์โฟลว์
+### ปัญหาที่ 2: การตรวจสอบความถูกต้องตามสัญญา
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+ใช้ฟังก์ชันรากที่สองกับสัญญาที่เป็นทางการ
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้สัญญา Ada 2012 (เงื่อนไขก่อน/หลัง)
+**ขั้นตอนที่ 3: นำไปใช้**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+การตรวจสอบรันไทม์ (การยืนยัน) ตรวจจับการละเมิด ใน SPARK สิ่งเหล่านี้จะกลายเป็นภาระผูกพันในการพิสูจน์
+---
+
 ## สรุป
-Ada เป็นภาษาที่สร้างขึ้นเพื่อความถูกต้อง ระบบประเภทที่เข้มงวด การทำงานพร้อมกันในตัว และการสนับสนุนการตรวจสอบอย่างเป็นทางการ ทำให้เป็นตัวเลือกสำหรับระบบที่ไม่สามารถยอมรับความล้มเหลวได้ แม้ว่าชุมชนจะมีขนาดเล็กเมื่อเทียบกับภาษากระแสหลัก แต่ Ada ยังคงมีความสำคัญในด้านการบิน การป้องกัน อวกาศ และโดเมนที่มีความสำคัญด้านความปลอดภัยอื่นๆ สำหรับแอปพลิเคชันเหล่านี้ แนวทางที่เข้มงวดของ Ada ในด้านวิศวกรรมซอฟต์แวร์ไม่ใช่ข้อจำกัด แต่คือประเด็นสำคัญ
+Ada เป็นภาษาที่สร้างขึ้นเพื่อความถูกต้อง ระบบประเภทที่เข้มงวด การทำงานพร้อมกันในตัว และการสนับสนุนการตรวจสอบอย่างเป็นทางการ ทำให้ระบบนี้เป็นตัวเลือกสำหรับระบบที่ไม่สามารถยอมรับความล้มเหลวได้ แม้ว่าชุมชนจะมีขนาดเล็กเมื่อเทียบกับภาษากระแสหลัก แต่ Ada ยังคงมีความสำคัญในด้านการบิน การป้องกัน อวกาศ และโดเมนที่มีความสำคัญด้านความปลอดภัยอื่นๆ สำหรับแอปพลิเคชันเหล่านี้ แนวทางที่เข้มงวดของ Ada ในด้านวิศวกรรมซอฟต์แวร์ไม่ใช่ข้อจำกัด แต่คือประเด็นสำคัญ

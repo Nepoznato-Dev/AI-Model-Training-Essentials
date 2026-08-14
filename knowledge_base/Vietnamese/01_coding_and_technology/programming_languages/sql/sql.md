@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
 SQL (Ngôn ngữ truy vấn có cấu trúc) là ngôn ngữ dành riêng cho miền được thiết kế để quản lý và truy vấn dữ liệu trong cơ sở dữ liệu quan hệ. Được phát triển lần đầu tiên tại IBM vào những năm 1970 và được tiêu chuẩn hóa vào năm 1987, SQL vẫn là giao diện chính giữa các ứng dụng và dữ liệu của chúng. Mọi Hệ thống quản lý cơ sở dữ liệu quan hệ chính (RDBMS) - PostgreSQL, MySQL, SQL Server, Oracle, SQLite - đều sử dụng SQL làm ngôn ngữ truy vấn.
-SQL không phải là ngôn ngữ lập trình có mục đích chung. Bạn sẽ không viết một ứng dụng web bằng SQL. Nhưng nếu ứng dụng của bạn lưu trữ dữ liệu — và gần như tất cả các ứng dụng đều lưu trữ — thì SQL là ngôn ngữ bạn sử dụng để truy xuất, chuyển đổi và quản lý dữ liệu đó. Nó được cho là kỹ năng kỹ thuật hữu ích phổ biến nhất sau lập trình chung.
+SQL không phải là ngôn ngữ lập trình có mục đích chung. Bạn sẽ không viết một ứng dụng web bằng SQL. Nhưng nếu ứng dụng của bạn lưu trữ dữ liệu — và gần như tất cả các ứng dụng đều lưu trữ — thì SQL là ngôn ngữ bạn sử dụng để truy xuất, chuyển đổi và quản lý dữ liệu đó. Nó được cho là kỹ năng kỹ thuật hữu ích nhất sau lập trình chung.
 ---
 
 ## Tại sao SQL lại quan trọng
@@ -408,7 +409,7 @@ ALTER TABLE users DROP COLUMN phone_number;
 | **Liquibase** | Java / chung | Nhật ký thay đổi XML, YAML, JSON hoặc SQL |
 | **Alembic** | Python (SQLAlchemy) | Tự động tạo di chuyển từ các thay đổi mô hình |
 | **Di chuyển Prisma** | Node.js / TypeScript | Lược đồ đầu tiên, tự động tạo SQL |
-| **golang-di cư** | Đi | Dựa trên SQL, hỗ trợ di chuyển lên/xuống |
+| **golang-di chuyển** | Đi | Dựa trên SQL, hỗ trợ di chuyển lên/xuống |
 ```sql
 -- Migration file naming convention (Flyway):
 -- V001__create_users_table.sql
@@ -539,10 +540,10 @@ CREATE INDEX idx_users_email ON users(email);
 
 | Loại chỉ mục | Tốt nhất cho | Ví dụ |
 |----------|----------|----------|
-| **B-cây** (mặc định) | Truy vấn đẳng thức và phạm vi |  __BẢO VỆ_0__ |
-| **Băm** | Chỉ bình đẳng chính xác |  __BẢO VỆ_1__ |
-| **GIN** | Tìm kiếm toàn văn, mảng, JSON |  __BẢO VỆ_2__ |
-| **GiST** | Dữ liệu hình học/không gian |  __BẢO VỆ_3__ |
+| **B-cây** (mặc định) | Truy vấn đẳng thức và phạm vi | `WHERE age > 25 AND age < 35`|
+| **Băm** | Chỉ bình đẳng chính xác | `WHERE email = 'x@y.com'`|
+| **GIN** | Tìm kiếm toàn văn, mảng, JSON | `WHERE description @@ 'search term'`|
+| **GiST** | Dữ liệu hình học/không gian | `WHERE location <-> point(x,y) < 1000`|
 ### Đọc kế hoạch truy vấn
 ```sql
 -- PostgreSQL: see how the database plans to execute your query
@@ -559,11 +560,11 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 
 ## Phương ngữ SQL
 | Tính năng | PostgreSQL | MySQL | Máy chủ SQL | SQLite |
-|----------|----------|-------|----------||--------|
-| Tự động tăng |  __BẢO VỆ_0__ / __BẢO VỆ_1__ |  __BẢO VỆ_2__ |  __BẢO VỆ_3__ |  __BẢO VỆ_4__ |
-| Nối chuỗi |  __BẢO VỆ_5__ |  __BẢO VỆ_6__ | `+`hoặc`CONCAT()`|  __BẢO VỆ_9__ |
-| Hàm ngày |  __BẢO VỆ_10__ , __BẢO VỆ_11__ |  __BẢO VỆ_12__ , __BẢO VỆ_13__ |  __BẢO VỆ_14__ , __BẢO VỆ_15__ |  __BẢO VỆ_16__ |
-| Hỗ trợ JSON | Tuyệt vời (`jsonb`) | Tốt (`JSON`) | Tốt (`JSON`) | Cơ bản (`JSON1`) |
+|----------|-------------|-------|-------------|--------|
+| Tự động tăng | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`| `IDENTITY`| `INTEGER PRIMARY KEY AUTOINCREMENT`|
+| Nối chuỗi | `\|\|`| `CONCAT()`| `+`hoặc`CONCAT()`| `\|\|`|
+| Hàm ngày | `NOW()`,`AGE()`| `NOW()`,`DATEDIFF()`| `GETDATE()`,`DATEDIFF()`| `DATE('now')`|
+| Hỗ trợ JSON | Xuất sắc (`jsonb`) | Tốt (`JSON`) | Tốt (`JSON`) | Cơ bản (`JSON1`) |
 | Tìm kiếm toàn văn | Tích hợp (`tsvector`) | Tích hợp | Tích hợp | Hạn chế |
 | Chức năng cửa sổ | Có | Có (8.0+) | Có | Có |
 ---
@@ -601,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Lưu trữ khóa-giá trị đơn giản | Quá mức cần thiết cho trường hợp sử dụng này | Redis, DynamoDB |
 | Dữ liệu phi cấu trúc cao | Độ cứng của lược đồ là một vấn đề | MongoDB, cơ sở dữ liệu tài liệu |
 | Chia tỷ lệ ngang lớn | Khó phân chia cơ sở dữ liệu SQL | Cassandra, DynamoDB, CockroachDB |
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Sự khác biệt giữa`WHERE`và`HAVING`là gì?
+**A:**`WHERE`lọc các hàng trước khi nhóm; `HAVING`lọc các nhóm sau khi tổng hợp:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Câu 2: Các chức năng của cửa sổ khác với GROUP BY như thế nào?
+**A:** Các hàm cửa sổ tính toán trên các hàng mà không thu gọn chúng:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Câu 3: Làm cách nào để tối ưu hóa các truy vấn chậm?
+**Đ:** Các chiến lược chính:
+- Thêm chỉ mục trên các cột sử dụng trong`WHERE`,`JOIN`, và`ORDER BY`
+- Tránh`SELECT *`- chỉ chọn các cột cần thiết
+- Sử dụng `EXPLAIN`/`EXPLAIN ANALYZE` để đọc kế hoạch truy vấn
+- Thay thế các truy vấn con bằng THAM GIA nếu có thể
+- Sử dụng CTE để dễ đọc (thường không bị phạt hiệu suất)
+- Tránh các hàm trên các cột được lập chỉ mục trong WHERE: sử dụng`WHERE date >= '2024-01-01'`không sử dụng `WHERE YEAR(date) = 2024`
+### Q4: CTE là gì và khi nào tôi nên sử dụng chúng?
+**A:** Biểu thức bảng chung tạo các tập kết quả tạm thời được đặt tên:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Câu hỏi 5: Làm cách nào để xử lý chính xác các giá trị NULL?
+**A:** NULL đại diện cho ẩn số — nó không bằng bất cứ thứ gì, kể cả chính nó:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Bài 1: Tìm N Top mỗi nhóm
+**Bước 1: Tìm hiểu vấn đề**
+Tìm 3 nhân viên được trả lương cao nhất trong mỗi bộ phận.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng chức năng cửa sổ với`ROW_NUMBER()`được phân vùng theo bộ phận.
+**Bước 3: Thực hiện**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Bước 4: Xác minh**
+Kiểm tra xem mỗi bộ phận có tối đa 3 hàng hay không. Xử lý các mối quan hệ bằng`DENSE_RANK()`nếu cần.
+### Bài toán 2: Xây dựng Báo cáo tăng trưởng hàng năm
+**Bước 1: Tìm hiểu vấn đề**
+Tính toán doanh thu hàng tháng và tỷ lệ tăng trưởng hàng năm.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`DATE_TRUNC`để nhóm và chức năng cửa sổ`LAG()`để so sánh năm trước.
+**Bước 3: Thực hiện**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Bước 4: Xác minh**
+Kiểm tra 12 tháng đầu có NULL của năm trước không. Xác nhận tỷ lệ phần trăm tăng trưởng so với các số liệu đã biết.
+### Vấn đề 3: Xoay hàng thành cột
+**Bước 1: Tìm hiểu vấn đề**
+Chuyển đổi số lượng trạng thái từ hàng sang cột.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng tổng hợp có điều kiện (`CASE`bên trong`SUM`).
+**Bước 3: Thực hiện**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Bước 4: Gia hạn**
+Thêm cột phần trăm và tổng số đang chạy.
 ---
 
 ## Bản tóm tắt

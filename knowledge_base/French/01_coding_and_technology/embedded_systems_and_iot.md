@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Systèmes embarqués et IoT"
-description : "Microcontrôleurs, capteurs, RTOS, protocoles IoT, edge computing"
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Embedded Systems and IoT"
+description: "Microcontrollers, sensors, RTOS, IoT protocols, edge computing"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-tags : [embarqué, systèmes, IoT, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "8 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [embedded, systems, iot, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Systèmes Embarqués et IoT
 Les systèmes embarqués sont des ordinateurs cachés dans d'autres appareils : l'unité de commande du moteur de votre voiture, le contrôleur de votre machine à laver, le microcontrôleur d'un thermostat intelligent. Contrairement aux ordinateurs à usage général, ils sont conçus pour des tâches spécifiques, souvent avec des contraintes strictes en termes de puissance, de mémoire et de vitesse de traitement. L'Internet des objets (IoT) étend les systèmes embarqués en les connectant aux réseaux, permettant ainsi la surveillance, le contrôle et la collecte de données à distance. Ensemble, ils représentent des milliards d’appareils informatiques qui interagissent avec le monde physique.

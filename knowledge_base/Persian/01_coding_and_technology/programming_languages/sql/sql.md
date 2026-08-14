@@ -1,42 +1,47 @@
 ---
-# فراداده
-عنوان: "SQL"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی SQL شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [sql، زبان برنامه‌نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "26 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "SQL"
+description: "Comprehensive reference for the SQL programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [sql, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
-SQL (زبان پرس و جو ساختاریافته) یک زبان دامنه خاص است که برای مدیریت و جستجوی داده ها در پایگاه های داده رابطه ای طراحی شده است. SQL اولین بار در IBM در دهه 1970 توسعه یافت و در سال 1987 استاندارد شد، SQL رابط اصلی بین برنامه ها و داده های آنها باقی می ماند. هر سیستم اصلی مدیریت پایگاه داده رابطه ای (RDBMS) - PostgreSQL، MySQL، SQL Server، Oracle، SQLite - از SQL به عنوان زبان پرس و جو استفاده می کند.
-SQL یک زبان برنامه نویسی همه منظوره نیست. شما نمی توانید یک برنامه وب در SQL بنویسید. اما اگر برنامه شما داده ها را ذخیره می کند - و تقریباً همه برنامه ها این کار را می کنند - SQL زبانی است که برای بازیابی، تبدیل و مدیریت آن داده ها استفاده می کنید. مسلماً این مهارت فنی پس از برنامه نویسی عمومی مفیدترین مهارت فنی است.
+SQL (زبان پرس و جو ساختاریافته) یک زبان دامنه خاص است که برای مدیریت و جستجوی داده ها در پایگاه های داده رابطه ای طراحی شده است. SQL اولین بار در IBM در دهه 1970 توسعه یافت و در سال 1987 استاندارد شد، SQL رابط اصلی بین برنامه‌ها و داده‌های آنها باقی می‌ماند. هر سیستم اصلی مدیریت پایگاه داده رابطه ای (RDBMS) - PostgreSQL، MySQL، SQL Server، Oracle، SQLite - از SQL به عنوان زبان پرس و جو استفاده می کند.
+SQL یک زبان برنامه نویسی همه منظوره نیست. شما نمی توانید یک برنامه وب در SQL بنویسید. اما اگر برنامه شما داده ها را ذخیره می کند - و تقریباً همه برنامه ها این کار را انجام می دهند - SQL زبانی است که برای بازیابی، تبدیل و مدیریت آن داده ها استفاده می کنید. مسلماً این مهارت فنی پس از برنامه نویسی عمومی مفیدترین مهارت فنی است.
 ---
 
 ## چرا SQL مهم است
@@ -52,7 +57,7 @@ SQL یک زبان برنامه نویسی همه منظوره نیست. شما �
 | **تفاوت گویش** | هر RDBMS طعم SQL خاص خود را با پسوندهای ناسازگار دارد | در صورت امکان به ANSI SQL بچسبید. تفاوت های انتزاعی گویش در برنامه شما |
 | **سختی طرحواره** | تغییر ساختار جدول روی میزهای بزرگ می تواند کند و مخرب باشد | از ابزارهای مهاجرت استفاده کنید. طرحواره ها را با دقت از قبل طراحی کنید |
 | **مشکل پرس و جو N+1** | پرس و جوهای تولید شده توسط ORM می توانند بسیار ناکارآمد باشند | نوشتن SQL سفارشی برای پرس و جوهای پیچیده. نمایه با EXPLAIN ANALYZE |
-| **پیچیدگی مقیاس** | مقیاس افقی پایگاه داده های SQL سخت تر از NoSQL | است از replica های خواندنی، اشتراک گذاری استفاده کنید یا NoSQL را برای موارد استفاده خاص در نظر بگیرید |
+| **پیچیدگی مقیاس بندی** | مقیاس افقی پایگاه داده های SQL سخت تر از NoSQL | است از replica های خواندنی، اشتراک گذاری استفاده کنید یا NoSQL را برای موارد استفاده خاص در نظر بگیرید |
 ---
 
 ## مفاهیم اصلی
@@ -311,7 +316,7 @@ ORDER BY order_count DESC;
 **چک لیست بهینه سازی:**
 | شماره | علامت | رفع |
 |-------|---------|-----|
-| اسکن متوالی روی میز بزرگ | `Seq Scan`در EXPLAIN | افزودن نمایه مناسب |
+| اسکن متوالی روی میز بزرگ | `Seq Scan`در توضیح | افزودن نمایه مناسب |
 | فهرست موجود در ستون WHERE | اسکن کامل جدول | ایجاد نمایه در ستون های فیلتر شده |
 | انتخاب * زباله | واکشی ستون های غیر ضروری | فقط ستون های مورد نیاز را انتخاب کنید |
 | تبدیل نوع ضمنی | فهرست استفاده نشده | انواع مطابقت در مقایسه |
@@ -536,9 +541,9 @@ CREATE INDEX idx_users_email ON users(email);
 | نوع شاخص | بهترین برای | مثال |
 |-----------|----------|---------|
 | **B-tree** (پیش فرض) | پرس و جوهای برابری و محدوده | `WHERE age > 25 AND age < 35`|
-| **هش** | فقط برابری دقیق |  __محافظت شده_1__ |
+| **هش** | فقط برابری دقیق | `WHERE email = 'x@y.com'`|
 | **GIN** | جستجوی متن کامل، آرایه ها، JSON | `WHERE description @@ 'search term'`|
-| **GiST** | داده های هندسی/مکانی |  __محافظت شده_3__ |
+| **GiST** | داده های هندسی/مکانی | `WHERE location <-> point(x,y) < 1000`|
 ### خواندن طرح های پرس و جو
 ```sql
 -- PostgreSQL: see how the database plans to execute your query
@@ -556,9 +561,9 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 ## گویش های SQL
 | ویژگی | PostgreSQL | MySQL | SQL Server | SQLite |
 |---------|-----------|------|------------|--------|
-| افزایش خودکار | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`|  __محافظت شده_3__ | `INTEGER PRIMARY KEY AUTOINCREMENT`|
-| Concat رشته | `\|\|`|  __محافظت شده_6__ | `+`یا`CONCAT()`|  __محافظت شده_9__ |
-| توابع تاریخ |  `NOW()`،`AGE()`|  `NOW()`،`DATEDIFF()`|  `GETDATE()`،`DATEDIFF()`| `DATE('now')`|
+| افزایش خودکار | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`| `IDENTITY`| `INTEGER PRIMARY KEY AUTOINCREMENT`|
+| Concat رشته | `\|\|`| `CONCAT()`| `+`یا`CONCAT()`| `\|\|`|
+| توابع تاریخ | `NOW()`,`AGE()`| `NOW()`,`DATEDIFF()`| `GETDATE()`,`DATEDIFF()`| `DATE('now')`|
 | پشتیبانی JSON | عالی (`jsonb`) | خوب (`JSON`) | خوب (`JSON`) | پایه (`JSON1`) |
 | جستجوی متن کامل | داخلی (`tsvector`) | داخلی | داخلی | محدود |
 | توابع پنجره | بله | بله (8.0+) | بله | بله |
@@ -597,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | ذخیره سازی ساده کلید-مقدار | Overkill برای این مورد استفاده | Redis، DynamoDB |
 | داده های بسیار بدون ساختار | سختی طرحواره یک مشکل است | MongoDB، پایگاه داده اسناد |
 | مقیاس افقی عظیم | سخت به خرد کردن پایگاه داده های SQL | Cassandra، DynamoDB، CockroachDB |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین`WHERE`و`HAVING`چیست؟
+**A:**`WHERE`سطرها را قبل از گروه بندی فیلتر می کند. `HAVING`گروه ها را پس از تجمیع فیلتر می کند:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: عملکردهای پنجره چه تفاوتی با GROUP BY دارند؟
+**A:** توابع پنجره بدون جمع کردن سطرها محاسبه می شوند:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3: چگونه پرس و جوهای کند را بهینه کنم؟
+**الف:** استراتژی های کلیدی:
+- اضافه کردن فهرست به ستون های مورد استفاده در `WHERE`، `JOIN`، و`ORDER BY`
+- اجتناب از`SELECT *`- فقط ستون های مورد نیاز را انتخاب کنید
+- از`EXPLAIN`/`EXPLAIN ANALYZE`برای خواندن طرح های پرس و جو استفاده کنید
+- در صورت امکان، درخواست های فرعی را با JOIN جایگزین کنید
+- از CTE برای خوانایی استفاده کنید (معمولاً بدون جریمه عملکرد)
+- اجتناب از توابع در ستون های نمایه شده در WHERE: از`WHERE date >= '2024-01-01'`استفاده کنید نه `WHERE YEAR(date) = 2024`
+### Q4: CTE چیست و چه زمانی باید از آنها استفاده کنم؟
+**A:** عبارات جدول مشترک مجموعه نتایج موقت نامگذاری شده را ایجاد می کنند:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5: چگونه مقادیر NULL را به درستی مدیریت کنم؟
+**A:** NULL نشان دهنده ناشناخته است - با هیچ چیز از جمله خودش برابر نیست:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یافتن N برتر در هر گروه
+**مرحله 1: مشکل را درک کنید**
+3 کارمند پردرآمد در هر بخش را پیدا کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از یک تابع پنجره با`ROW_NUMBER()`پارتیشن بندی شده توسط بخش استفاده کنید.
+**مرحله 3: پیاده سازی **```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**مرحله 4: تایید **
+بررسی کنید که هر بخش حداکثر 3 ردیف داشته باشد. در صورت نیاز، اتصالات را با`DENSE_RANK()`انجام دهید.
+### مشکل 2: ایجاد گزارش رشد سال به سال
+**مرحله 1: مشکل را درک کنید**
+درآمد ماهانه و درصد رشد سال به سال را محاسبه کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`DATE_TRUNC`برای گروه بندی و از تابع پنجره`LAG()`برای مقایسه سال قبل استفاده کنید.
+**مرحله 3: پیاده سازی **```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**مرحله 4: تایید **
+بررسی کنید 12 ماه اول NULL برای سال قبل باشد. درصد رشد را در برابر ارقام شناخته شده تأیید کنید.
+### مشکل 3: چرخش ردیف ها به ستون ها
+**مرحله 1: مشکل را درک کنید**
+شمارش وضعیت را از ردیف به ستون تبدیل کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از تجمیع شرطی استفاده کنید (`CASE` داخل `SUM`).
+**مرحله 3: پیاده سازی **```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**مرحله 4: تمدید**
+ستون های درصد و مجموع در حال اجرا را اضافه کنید.
 ---
 
 ## خلاصه

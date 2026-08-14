@@ -41,7 +41,7 @@ contribution:
 
 # 外殼和 PowerShell
 Shell 腳本是指為命令列解釋器編寫腳本。兩個最重要的 shell 是 **Bash** (Bourne Again Shell)（Linux 和 macOS 上的預設）和 **PowerShell**（Microsoft 的現代跨平台 shell 和腳本語言）。 Shell 腳本可自動執行系統管理任務、建置管道、檔案處理和部署工作流程。
-每個開發人員、DevOps 工程師和系統管理員都需要 shell 腳本編寫技能。無論您是部署 Web 伺服器、處理日誌檔案、設定 CI/CD 管道或自動備份，shell 腳本都是適合此工作的工具。
+每個開發人員、DevOps 工程師和系統管理員都需要 shell 腳本編寫技能。無論您是部署 Web 伺服器、處理日誌檔案、設定 CI/CD 管道或自動備份，shell 腳本編寫都是適合此工作的工具。
 ---
 
 ## 為什麼 Shell/PowerShell 很重要
@@ -849,7 +849,7 @@ Publish-Module @publishParams
 ---
 
 ## 何時使用 Shell/PowerShell
-|場景 |為什麼選擇 Shell/PowerShell |更好的選擇|
+|場景|為什麼選擇 Shell/PowerShell |更好的選擇|
 |----------|---------------------|--------------------|
 |系統管理|標準工具|用於複雜自動化的 Python |
 | CI/CD 管道 | DevOps 中的通用性 | --- |
@@ -858,6 +858,152 @@ Publish-Module @publishParams
 |日誌分析 |快速 grep/awk 一行語句 | Python、SQL 用於複雜分析 |
 |複雜的應用 |不適合| Python、Go、Java |
 |跨平台腳本 | PowerShell 7+ 隨處可用 | Python 實作真正可移植的腳本 |
+---
+
+## 綜合問答
+### Q1：Bash 中單引號和雙引號有什麼差別？
+**A:** 雙引號允許變數擴展；單引號是字面意思：
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2：如何處理 shell 腳本中的錯誤？
+**A:** 使用`set -e`出現錯誤時退出，並陷阱進行清理：
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3：如何正確處理命令列參數？
+**A:** 使用`getopts`作為標誌和位置參數：
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4：什麼是 PowerShell 管道以及它與 Bash 有何不同？
+**A:** PowerShell 透過管道傳輸對象，而不是文字。每個物件都保留其屬性：
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5：如何寫跨平台腳本？
+**A:** 對於 Bash：使用`#!/usr/bin/env bash`，避免使用 GNU 特定的標誌。對於 PowerShell：使用在 Linux/macOS/Windows 上執行的`pwsh`(PowerShell Core)。
+---
+
+## 解決問題的思路
+### 問題 1：批次影像處理腳本 (Bash)
+**第 1 步：了解問題**
+將目錄中所有 PNG 影像的大小調整為最大寬度 800 像素。
+**第 2 步：確定方法**
+使用`find`定位檔案並使用`convert`(ImageMagick) 調整大小。
+**步驟 3：實施**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**第 4 步：擴充**
+新增進度條、損壞影像的錯誤處理以及使用`xargs -P`的並行處理。
+### 問題 2：自動日誌輪替 (Bash)
+**第 1 步：了解問題**
+每天輪換日誌檔案、壓縮舊日誌並刪除超過 30 天的日誌。
+**第 2 步：確定方法**
+使用具有基於時間的過濾器的`find`和`gzip`進行壓縮。
+**步驟 3：實施**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**第 4 步：安排**
+加入 crontab：`0 2 * * * /usr/local/bin/log-rotate.sh`
+### 問題 3：Windows 服務執行狀況檢查 (PowerShell)
+**第 1 步：了解問題**
+檢查關鍵服務是否正在運行，如果有停止則發送警報。
+**第 2 步：確定方法**
+使用`Get-Service`並篩選已停止的服務。
+**步驟 3：實施**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**第 4 步：自動化**
+安排為每 5 分鐘執行一次的 Windows 任務排程器作業。
 ---
 
 ＃＃ 概括

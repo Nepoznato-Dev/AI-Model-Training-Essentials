@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Glosario de Tecnología"
-descripción: "Terminología técnica (modelos de IA, hardware, pruebas comparativas)"
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Technology Glossary"
+description: "Technical terminology (AI models, hardware, benchmarks)"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [tecnología, glosario, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "9 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [technology, glossary, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Glosario de tecnología
 Un glosario de referencia que cubre modelos de IA, hardware, puntos de referencia y conceptos básicos.
@@ -72,7 +76,7 @@ Gemini impulsa el chatbot de IA de Google, Bard (rebautizado como Gemini) y la I
 Resúmenes.
 ### Phi-3-mini
 Phi-3-mini es un modelo de lenguaje pequeño (SLM) desarrollado por Microsoft con 3.8B
-parámetros. Fue lanzado en abril de 2026. A diferencia de la mayoría de los modelos grandes, Phi-3-mini
+parámetros. Fue lanzado en abril de 2024. A diferencia de la mayoría de los modelos grandes, Phi-3-mini
 fue capacitado en un conjunto de datos cuidadosamente seleccionado con "calidad de libro de texto", una técnica
 iniciado por Microsoft Research, que prioriza la calidad de los datos sobre el volumen sin procesar.
 A pesar de ser mucho más pequeño que GPT-4 o Claude 3 Opus, los fósforos Phi-3-mini o
@@ -83,7 +87,7 @@ o incluso en el dispositivo de un teléfono inteligente moderno con suficiente R
 ### Llama (Meta IA)
 Llama (Large Language Model Meta AI) es una familia de modelos de peso abierto
 publicado por Meta. Llama 2 (2023) fue lanzado para investigación y uso comercial
-con tamaños que van desde 7B a 70B parámetros. Llama 3 (2026) mejorada
+con tamaños que van desde 7B a 70B parámetros. Llama 3 (2024) mejorada
 rendimiento significativamente, con modelos que van desde 8B a 70B (y posteriormente 400B+).
 Debido a que los pesos se pueden descargar públicamente, los modelos Llama son la base
 para un gran ecosistema de variantes afinadas (Mistral, Alpaca, Vicuña, etc.)
@@ -92,7 +96,7 @@ y se utilizan ampliamente para implementaciones de IA locales/privadas.
 Mistral AI es una empresa francesa de inteligencia artificial que desarrolla LLM abiertos y propietarios.
 Mistral 7B (2023) demostró que un modelo de parámetros 7B puede igualar el
 rendimiento de modelos mucho más grandes utilizando técnicas eficientes como el deslizamiento
-atención de ventana y atención de consultas agrupadas. Mixtral 8x7B (2026) es una mezcla-
+atención de ventana y atención de consultas agrupadas. Mixtral 8x7B (2023) es una mezcla-
 modelo de expertos: enruta cada token a un subconjunto de 8 redes de expertos,
 logrando un rendimiento de nivel GPT-3.5 y siendo computacionalmente más barato.
 Los modelos de Mistral son totalmente abiertos y pueden funcionar localmente.

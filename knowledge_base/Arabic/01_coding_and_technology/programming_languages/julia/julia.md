@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "جوليا"
-الوصف: "مرجع شامل للغة برمجة جوليا يغطي نظرة عامة، والمقايضات، وأساسيات بناء الجملة، والنظام البيئي، ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Julia"
+description: "Comprehensive reference for the Julia programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [جوليا، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "36 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [julia, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "36 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #جوليا
 جوليا هي لغة برمجة عالية المستوى وعالية الأداء مصممة للحوسبة التقنية والعلمية. تم إصدار جوليا لأول مرة في عام 2012 (1.0 في عام 2018)، وتم إنشاؤها لحل "مشكلة اللغتين" - حيث يقوم العلماء بإنشاء نموذج أولي في Python/R ولكنهم يعيدون كتابته في C/C++/Fortran لأداء الإنتاج. تهدف جوليا إلى أن تكون سهلة مثل Python ولكن بنفس سرعة لغة C.
 تستخدم جوليا التجميع في الوقت المناسب (JIT) عبر LLVM لتحقيق أداء قريب من C مع الحفاظ على إحساس تفاعلي وديناميكي. إنه يتمتع بدعم من الدرجة الأولى للحوسبة المتوازية والمعالجة الموزعة ونظام نوع متطور مع إرسال متعدد.
@@ -871,6 +876,191 @@ julia --project=. -e '
 | تحليل البيانات | ممكن؛ DataFrames.jl جيد | بايثون (الباندا)، R |
 | تطوير الويب | غير مناسب | جافا سكريبت، بايثون |
 | تطوير التطبيقات العامة | ليست حالة الاستخدام الأساسية | بايثون، جو، جافا |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: كيف يختلف الإرسال المتعدد عن الإرسال الفردي في لغات OOP؟
+**أ:** في الإرسال الفردي (Java، Python)، يتم اختيار الطريقة بناءً على نوع الوسيطة الأولى (الكائن). في Julia، يتم اختيار الطريقة بناءً على أنواع جميع الوسائط:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+وهذا يتيح عمليات متماثلة ويزيل الأنماط المعيارية.
+### السؤال الثاني: كيف يمكنني تحقيق أداء شبيه بأداء C في جوليا؟
+**أ:** الممارسات الأساسية:
+- استخدم وظائف النوع المستقر (إرجاع الأنواع المتسقة)
+- استخدام الأنواع الخرسانية في الهياكل وليس المجردة
+- تجنب المتغيرات العامة (أو اجعلها`const`)
+- استخدم`@inbounds`لتخطي فحص الحدود (عندما يكون ذلك آمنًا)
+- تخصيص المصفوفات مسبقًا بدلاً من تنميتها
+- استخدم`@simd`للحلقات القابلة للتوجيه
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3: ما هي الاختلافات بين`Array`و`Tuple`و `NamedTuple`؟
+**أ:** كل منها يخدم غرضًا مختلفًا:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### س 4: كيف أتعامل مع الأخطاء والاستثناءات في جوليا؟
+**أ:** استخدم`try/catch`وأنواع الاستثناءات المخصصة:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### س5: كيف يمكنني استخدام النظام البيئي لحزمة جوليا بشكل فعال؟
+**أ:** استخدم مدير الحزم المدمج (Pkg) والبيئات:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: تنفيذ دالة التكامل العددي
+**الخطوة الأولى: فهم المشكلة**
+حساب التكامل المحدد للدالة باستخدام قاعدة سمبسون.
+**الخطوة 2: تحديد النهج**
+استخدم وظائف جوليا المتعددة للإرسال والترتيب الأعلى. قبول أي وظيفة قابلة للاستدعاء.
+**الخطوة 3: التنفيذ**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**الخطوة 4: التحسين**
+أضف`@inbounds`واكتب التعليقات التوضيحية للأداء. المعيار مع`@btime`.
+### المشكلة الثانية: بناء محاكاة مونت كارلو الموازية
+**الخطوة الأولى: فهم المشكلة**
+قم بتقدير pi باستخدام أخذ عينات مونت كارلو، بالتوازي مع جميع مراكز وحدة المعالجة المركزية.
+**الخطوة 2: تحديد النهج**
+استخدم`Threads.@threads`لتوازي الذاكرة المشتركة.
+**الخطوة 3: التنفيذ**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**الخطوة 4: التحقق**
+قارن مع`Float64(\pi)`. زيادة عدد العينات للحصول على دقة أفضل.
+### المشكلة 3: إنشاء نوع مصفوفة مخصص مع البث
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء نوع`DiagonalMatrix`الذي يخزن العناصر القطرية فقط ولكنه يدعم عمليات المصفوفة القياسية.
+**الخطوة 2: تحديد النهج**
+النوع الفرعي`AbstractMatrix`وتنفيذ الطرق المطلوبة.
+**الخطوة 3: التنفيذ**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**الخطوة 4: تمديد**
+أضف`setindex!`وتحسينات ضرب المصفوفات وطريقة `show`.
 ---
 
 ## ملخص

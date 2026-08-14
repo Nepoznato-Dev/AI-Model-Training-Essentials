@@ -1,5 +1,7 @@
 # CUDA Out of Memory (OOM) Error
 
+> **Looking for a more detailed guide?** See the [extended CUDA OOM troubleshooting guide](../User%20Questions/errors/CUDA_OOM.md) with batch size guidelines, debugging scripts, and a complete reference table.
+
 ## Error Message
 
 ```

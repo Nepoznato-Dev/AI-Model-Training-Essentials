@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
 SQL (язык структурированных запросов) — это предметно-ориентированный язык, предназначенный для управления данными и запроса данных в реляционных базах данных. SQL, впервые разработанный в IBM в 1970-х годах и стандартизированный в 1987 году, остается основным интерфейсом между приложениями и их данными. Каждая крупная система управления реляционными базами данных (СУБД) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — использует SQL в качестве языка запросов.
-SQL не является языком программирования общего назначения. Вы бы не стали писать веб-приложение на SQL. Но если ваше приложение хранит данные (а это делают почти все приложения), то SQL — это язык, который вы используете для извлечения, преобразования и управления этими данными. Это, возможно, самый универсальный технический навык после общего программирования.
+SQL не является языком программирования общего назначения. Вы бы не стали писать веб-приложение на SQL. Но если ваше приложение хранит данные (а это почти все приложения), то SQL — это язык, который вы используете для извлечения, преобразования и управления этими данными. Это, пожалуй, самый универсальный технический навык после общего программирования.
 ---
 
 ## Почему SQL важен
@@ -319,7 +320,7 @@ ORDER BY order_count DESC;
 | Отсутствует индекс в столбце WHERE | Полное сканирование таблицы | Создать индекс по отфильтрованным столбцам |
 | ВЫБЕРИТЕ * отходы | Получение ненужных столбцов | Выберите только необходимые столбцы |
 | Неявное преобразование типов | Индекс не используется | Типы совпадений в сравнениях |
-| Функции для индексированных столбцов | Индекс непригоден для использования (не подлежит записи) | Перепишите:`WHERE date >= '2024-01-01'`вместо`WHERE YEAR(date) = 2024`|
+| Функции для индексированных столбцов | Индекс непригоден для использования (не подлежит записи) | Переписать:`WHERE date >= '2024-01-01'`вместо`WHERE YEAR(date) = 2024`|
 ### Стратегии индексирования
 ```sql
 -- Composite index: order matters (leftmost prefix rule)
@@ -508,7 +509,7 @@ SELECT MIN(login_date) AS start_date, MAX(login_date) AS end_date,
 FROM numbered GROUP BY grp;
 ```
 
-### Схема 4: Медленное изменение размеров (SCD типа 2)
+### Схема 4: Медленное изменение размеров (SCD тип 2)
 ```sql
 CREATE TABLE dim_customer (
     id SERIAL PRIMARY KEY, customer_key INTEGER NOT NULL,
@@ -540,9 +541,9 @@ CREATE INDEX idx_users_email ON users(email);
 | Тип индекса | Лучшее для | Пример |
 |-----------|----------|---------|
 | **B-дерево** (по умолчанию) | Запросы на равенство и диапазон | `WHERE age > 25 AND age < 35`|
-| **Хеш** | Только точное равенство | `WHERE email = 'x@y.com'`|
+| **Хэш** | Только точное равенство | `WHERE email = 'x@y.com'`|
 | **ДЖИН** | Полнотекстовый поиск, массивы, JSON | `WHERE description @@ 'search term'`|
-| **ГиСТ** | Геометрические/пространственные данные |  __ЗАЩИЩЕНО_3__ |
+| **ГиСТ** | Геометрические/пространственные данные | `WHERE location <-> point(x,y) < 1000`|
 ### Чтение планов запросов
 ```sql
 -- PostgreSQL: see how the database plans to execute your query
@@ -560,7 +561,7 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 ## Диалекты SQL
 | Особенность | PostgreSQL | MySQL | SQL-сервер | SQLite |
 |---------|-----------|-------|------------|--------|
-| Автоинкремент | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`|  __ЗАЩИЩЕНО_3__ | `INTEGER PRIMARY KEY AUTOINCREMENT`|
+| Автоинкремент | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`| `IDENTITY`| `INTEGER PRIMARY KEY AUTOINCREMENT`|
 | Конкат строк | `\|\|`| `CONCAT()`| `+`или`CONCAT()`| `\|\|`|
 | Функции даты | `NOW()`,`AGE()`| `NOW()`,`DATEDIFF()`| `GETDATE()`,`DATEDIFF()`| `DATE('now')`|
 | Поддержка JSON | Отлично (`jsonb`) | Хорошо (`JSON`) | Хорошо (`JSON`) | Базовый (`JSON1`) |
@@ -601,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Простое хранилище ключей и значений | Избыток для этого варианта использования | Редис, DynamoDB |
 | Сильно неструктурированные данные | Жесткость схемы — проблема | MongoDB, базы данных документов |
 | Массивное горизонтальное масштабирование | Трудно сегментировать базы данных SQL | Кассандра, DynamoDB, CockroachDB |
+---
+
+## Синтетические вопросы и ответы
+### Q1: В чем разница между`WHERE`и `HAVING`?
+**A:**`WHERE`фильтрует строки перед группировкой; `HAVING`фильтрует группы после агрегации:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: Чем оконные функции отличаются от GROUP BY?
+**О:** Оконные функции выполняют вычисления по строкам, не сворачивая их:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Вопрос 3. Как оптимизировать медленные запросы?
+**О:** Ключевые стратегии:
+— Добавьте индексы в столбцы, используемые в `WHERE`,`JOIN`и `ORDER BY`. 
+— Избегайте`SELECT *`— выбирайте только нужные столбцы.
+- Используйте `EXPLAIN`/`EXPLAIN ANALYZE` для чтения планов запроса.
+- Замените подзапросы на JOIN, где это возможно.
+- Используйте CTE для удобства чтения (обычно без снижения производительности).
+– Избегайте функций для индексированных столбцов в WHERE: используйте `WHERE date >= '2024-01-01'`, а не `WHERE YEAR(date) = 2024`.
+### Вопрос 4. Что такое CTE и когда их следует использовать?
+**A:** Общие табличные выражения создают именованные временные наборы результатов:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Вопрос 5: Как правильно обрабатывать значения NULL?
+**A:** NULL представляет собой неизвестное — оно не равно ничему, включая самого себя:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Нахождение N верхних чисел в группе
+**Шаг 1. Поймите проблему**
+Найдите трех самых высокооплачиваемых сотрудников в каждом отделе.
+**Шаг 2. Определите подход**
+Используйте оконную функцию с `ROW_NUMBER()`, разделенную по отделам.
+**Шаг 3. Реализация**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Шаг 4. Проверка**
+Убедитесь, что в каждом отделе не более 3 строк. При необходимости обрабатывайте связи с помощью `DENSE_RANK()`.
+### Проблема 2: Построение отчета о годовом росте
+**Шаг 1. Поймите проблему**
+Рассчитайте ежемесячный доход и процент роста по сравнению с прошлым годом.
+**Шаг 2. Определите подход**
+Используйте`DATE_TRUNC`для группировки и оконную функцию`LAG()`для сравнения за предыдущий год.
+**Шаг 3. Реализация**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Шаг 4. Проверка**
+Проверьте, что первые 12 месяцев имеют NULL для предыдущего года. Сверьте проценты роста с известными цифрами.
+### Проблема 3: поворот строк в столбцы
+**Шаг 1. Поймите проблему**
+Преобразование счетчиков статусов из строк в столбцы.
+**Шаг 2. Определите подход**
+Используйте условную агрегацию (`CASE`внутри`SUM`).
+**Шаг 3. Реализация**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Шаг 4. Продлить**
+Добавьте процентные столбцы и текущие итоги.
 ---
 
 ## Краткое содержание

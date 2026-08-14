@@ -606,8 +606,180 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Przetwarzanie danych na dużą skalę | Związany z pamięcią | Python (PySpark), SQL |
 ---
 
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między`<-`a`=`w przypadku przypisania?
+**A:** Obydwa przypisują wartości, ale`<-`jest idiomatycznym operatorem przypisania w języku R. Działa we wszystkich kontekstach, w tym wewnątrz wywołań funkcji:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### P2: Jak sobie poradzić z brakującymi danymi w R?
+**A:** R używa`NA`w przypadku brakujących wartości. Większość funkcji ma parametr `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### P3: Kiedy powinienem używać`lapply`vs`sapply`vs `vapply`?
+**A:** Wszystkie stosują funkcję na liście/wektorze, ale różnią się wynikami:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### P4: Jak tworzyć efektywne wizualizacje za pomocą ggplot2?
+**A:** Postępuj zgodnie z gramatyką grafiki — mapuj estetykę danych na właściwości wizualne:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### P5: Jak napisać wydajny kod R dla dużych zbiorów danych?
+**O:** Kluczowe praktyki:
+- Wstępnie przydziel wektory:`x <- numeric(n)`zamiast rosnąć z`c()`
+- Użyj`data.table`dla dużych zestawów danych (100x szybciej niż data.frame)
+- Wektoryzuj operacje — unikaj pętli, jeśli to możliwe
+- Użyj`vapply`zamiast`sapply`dla bezpieczeństwa typu
+- Profil z`Rprof()`lub`profvis`
+— Rozważ pakiet`arrow`dla danych spoza rdzenia
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: czyszczenie i analiza niechlujnego zbioru danych
+**Krok 1: Zrozum problem**
+Mamy ramkę danych z brakującymi wartościami, niespójnymi typami i wartościami odstającymi. Musimy to oczyścić i obliczyć statystyki podsumowujące.
+**Krok 2: Zidentyfikuj podejście**
+Użyj czasowników tidyverse:`filter`,`mutate`,`summarize`i`group_by`.
+**Krok 3: Wdróż**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź liczbę wierszy przed/po, zweryfikuj zakresy i porównaj sumy z danymi źródłowymi.
+### Problem 2: Budowa modelu regresji liniowej
+**Krok 1: Zrozum problem**
+Przewiduj ciągłą zmienną wynikową na podstawie wielu predyktorów.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`lm()`do regresji liniowej, sprawdź założenia i oceń dopasowanie modelu.
+**Krok 3: Wdróż**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Krok 4: Oceń**
+Sprawdź wykresy R-kwadrat, wykresy reszt pod kątem wzorców i AIC dla porównania modeli.
+### Problem 3: Tworzenie powtarzalnego raportu
+**Krok 1: Zrozum problem**
+Utwórz raport łączący analizę, wizualizacje i tekst narracji w powtarzalnym formacie.
+**Krok 2: Zidentyfikuj podejście**
+Użyj R Markdown (lub Quarto), aby przeplatać fragmenty kodu tekstem.
+**Krok 3: Wdróż**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FAŁSZ, ostrzeżenie = FAŁSZ)
+biblioteka (porządek)
+dane <- read_csv("dane.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(dane, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**Krok 4: Renderuj**
+`rmarkdown::render("report.Rmd")`tworzy samodzielny dokument HTML.
+---
+
 ## Streszczenie
-R jest językiem statystyki. W zakresie analizy danych, wizualizacji i modelowania statystycznego pozostaje niezrównany pod względem głębokości i szerokości. Tidyverse zmodernizowało język, a R Markdown/Quarto ułatwia powtarzalne badania. Podczas gdy Python ogólnie zyskał popularność w nauce danych, R pozostaje specjalistycznym narzędziem do rygorystycznych prac statystycznych. Dla każdego, kto prowadzi badania ilościowe, nauka języka R jest niezbędna.
+R jest językiem statystyki. W zakresie analizy danych, wizualizacji i modelowania statystycznego pozostaje niezrównany pod względem głębokości i szerokości. Tidyverse unowocześniło język, a R Markdown/Quarto ułatwia powtarzalne badania. Podczas gdy Python ogólnie zyskał popularność w nauce danych, R pozostaje specjalistycznym narzędziem do rygorystycznych prac statystycznych. Dla każdego, kto prowadzi badania ilościowe, nauka języka R jest niezbędna.
 ---
 
 ## Zaawansowane przetwarzanie danych

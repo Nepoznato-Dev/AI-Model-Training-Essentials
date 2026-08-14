@@ -45,11 +45,11 @@ Clojure เป็นภาษา Lisp สมัยใหม่ที่ออก
 ---
 
 ## ทำไม Lisp/Clojure จึงมีความสำคัญ
-- **ความเป็นเนื้อเดียวกัน**: โค้ดก็คือข้อมูล — โปรแกรมต่างๆ สามารถจัดการโครงสร้างของตัวเองได้ ทำให้สามารถใช้งานมาโครที่ทรงพลังได้
+- **ความเป็นเนื้อเดียวกัน**: โค้ดก็คือข้อมูล โปรแกรมสามารถจัดการโครงสร้างของตัวเองได้ ทำให้สามารถใช้งานมาโครที่ทรงพลังได้
 - **มาโคร**: มาโคร Lisp ทำงานบนโค้ดในรูปแบบข้อมูล ทำให้คุณสามารถขยายภาษาได้
 - **การเขียนโปรแกรมเชิงฟังก์ชัน**: Lisp เป็นผู้บุกเบิกแนวคิด FP ที่ยังคงใช้อยู่ในปัจจุบัน
 - **Clojure บน JVM**: Modern Lisp พร้อมการเข้าถึงไลบรารี Java เต็มรูปแบบ โครงสร้างข้อมูลที่ไม่เปลี่ยนรูป และการทำงานพร้อมกันที่ยอดเยี่ยม
-- **การพัฒนาที่ขับเคลื่อนด้วย REPL**: การพัฒนาเชิงโต้ตอบพร้อมการตอบรับทันที
+- **การพัฒนาที่ขับเคลื่อนด้วย REPL**: การพัฒนาเชิงโต้ตอบพร้อมข้อเสนอแนะทันที
 - **ความเรียบง่าย**: Clojure มีการออกแบบภาษาที่เล็กและสม่ำเสมอ — ไม่มีกรณีพิเศษ
 ## การแลกเปลี่ยน
 | ข้อจำกัด | รายละเอียด | วิธีแก้ปัญหาทั่วไป |
@@ -696,6 +696,141 @@ native-image --no-fallback \
 | การพัฒนาแอพพลิเคชั่นทั่วไป | เป็นไปได้แต่เฉพาะกลุ่ม | Python, Java, Go |
 | แอพมือถือ | ClojureScript สำหรับเว็บแอป ไม่ใช่เจ้าของภาษา | สวิฟท์, คอตลิน |
 | วิทยาศาสตร์ข้อมูล | ไม่ใช่ระบบนิเวศ | หลาม, อาร์ |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### Q1: เหตุใดโปรแกรม Lisp/Clojure จึงมีวงเล็บจำนวนมาก?
+**A:** วงเล็บแสดงถึงนิพจน์ S — ไวยากรณ์ที่เหมือนกันซึ่งโค้ดและข้อมูลมีโครงสร้างเหมือนกัน (homoiconicity):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### คำถามที่ 2: Clojure จัดการสถานะและความไม่แน่นอนต่างกันอย่างไร
+**ตอบ:** Clojure มีค่าเริ่มต้นเป็นข้อมูลที่ไม่เปลี่ยนรูป สำหรับการเปลี่ยนแปลงสถานะที่มีการควบคุม จะมีประเภทการอ้างอิง:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### คำถามที่ 3: โครงสร้างข้อมูลถาวรของ Clojure คืออะไร
+**ตอบ:** คอลเลกชัน Clojure ทั้งหมดเป็นแบบถาวร (ไม่เปลี่ยนรูป แชร์ในเชิงโครงสร้าง):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### คำถามที่ 4: แมโคร Clojure ทำงานอย่างไร
+**A:** มาโครได้รับโค้ดที่ไม่ได้รับการประเมิน (เป็นข้อมูล) แปลงมัน และส่งคืนโค้ดใหม่:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5: ฉันจะจัดการการทำงานพร้อมกันใน Clojure ได้อย่างไร
+**A:** Clojure มีการทำงานพร้อมกันหลายรายการ:
+-`atom`— การเปลี่ยนแปลงแบบซิงโครนัสอิสระ
+-`ref`+`dosync`— การเปลี่ยนแปลงเชิงธุรกรรมที่ประสานงานกัน
+-`agent`— การเปลี่ยนแปลงแบบอะซิงโครนัสและเป็นอิสระ
+- ช่อง`core.async`- การทำงานพร้อมกันแบบ CSP
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การประมวลผลไปป์ไลน์ข้อมูล
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+อ่านข้อมูล กรอง แปลง และรวบรวมผ่านไปป์ไลน์
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้มาโครเธรดของ Clojure (`->>`) และทรานสดิวเซอร์
+**ขั้นตอนที่ 3: นำไปใช้**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**ขั้นตอนที่ 4: เพิ่มประสิทธิภาพ**
+ทรานสดิวเซอร์หลีกเลี่ยงการสร้างลำดับขั้นกลาง โดยจะรวมการแปลงเป็นการส่งผ่านครั้งเดียว
+### ปัญหาที่ 2: การสร้างเว็บเซิร์ฟเวอร์อย่างง่าย
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+สร้างเซิร์ฟเวอร์ HTTP พื้นฐานโดยใช้ Ring/Compojure
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้อะแดปเตอร์ Ring และการกำหนดเส้นทาง Compojure
+**ขั้นตอนที่ 3: นำไปใช้**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**ขั้นตอนที่ 4: ขยาย**
+เพิ่มมิดเดิลแวร์สำหรับการบันทึก การแยกวิเคราะห์ JSON การตรวจสอบสิทธิ์ และการจัดการข้อผิดพลาด
 ---
 
 ## สรุป

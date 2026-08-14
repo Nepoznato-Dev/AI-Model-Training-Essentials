@@ -41,7 +41,7 @@ contribution:
 
 # Tecnologia e Computação
 A computação está em toda parte – no seu telefone, no seu carro, na sua geladeira, nos seus dispositivos médicos e na infraestrutura que administra a sociedade moderna. Você não precisa ser um programador para entender como tudo funciona. Este arquivo aborda os fundamentos: o que é um computador, como funciona a Internet, como o software é construído e os conceitos que moldam o mundo digital.
-> **Quer se aprofundar?** Este arquivo é uma visão geral ampla. Para cobertura detalhada de qualquer tópico, consulte os arquivos dedicados em[`01_coding_and_technology/`](../01_coding_and_technology/)— incluindo[web development](../01_coding_and_technology/web_development.md),[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)e[security](../01_coding_and_technology/security_best_practices.md).
+> **Quer se aprofundar?** Este arquivo é uma visão geral ampla. Para cobertura detalhada de qualquer tópico, consulte os arquivos dedicados em[`01_coding_and_technology/`](../01_coding_and_technology/)— incluindo[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)e.
 ---
 
 ## O que é um computador?
@@ -151,7 +151,7 @@ Os três principais provedores de nuvem são **AWS** (Amazon, aproximadamente 32
 ---
 
 ## Cibersegurança — Protegendo Sistemas Digitais
-A segurança cibernética é a prática de defender computadores, redes e dados contra ataques. É importante porque tudo está conectado e o custo das violações é enorme. Para obter um guia completo que cobre os 10 principais OWASP, ciclo de vida de desenvolvimento seguro e gerenciamento de segredos, consulte[security best practices](../01_coding_and_technology/security_best_practices.md).
+A segurança cibernética é a prática de defender computadores, redes e dados contra ataques. É importante porque tudo está conectado e o custo das violações é enorme. Para obter um guia completo que cobre os 10 principais OWASP, ciclo de vida de desenvolvimento seguro e gerenciamento de segredos, consulte.
 ### Ameaças Comuns
 | Ameaça | O que é isso | Prevenção |
 |--------|-----------|-----------|

@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Nguyên tắc cơ bản về viết và giao tiếp
-Viết và giao tiếp là kỹ năng truyền đạt ý tưởng một cách rõ ràng và hiệu quả - cho dù thông qua email, báo cáo, tài liệu, thuyết trình hay hội thoại. Hầu hết công việc tri thức về cơ bản là công việc giao tiếp: bạn cần giải thích suy nghĩ của mình, thuyết phục người khác, ghi lại các quyết định, viết thông số kỹ thuật, trình bày các phát hiện và cộng tác giữa các nhóm. Khoảng cách giữa điều bạn muốn nói và điều ai đó hiểu là nơi bắt nguồn của hầu hết các vấn đề và giao tiếp tốt hơn sẽ thu hẹp khoảng cách đó.
+Viết và giao tiếp là kỹ năng truyền đạt ý tưởng một cách hiệu quả - cho dù thông qua email, báo cáo, tài liệu, thuyết trình hay hội thoại. Hầu hết công việc tri thức về cơ bản là công việc giao tiếp: các chuyên gia cần giải thích suy nghĩ của mình, thuyết phục người khác, ghi lại các quyết định, viết thông số kỹ thuật, trình bày các phát hiện và cộng tác giữa các nhóm. Khoảng cách giữa điều muốn nói và điều được hiểu là nguồn gốc của hầu hết các vấn đề và giao tiếp tốt hơn sẽ thu hẹp khoảng cách đó.
 ---
 
 ## Nguyên tắc viết rõ ràng
@@ -160,8 +161,8 @@ Viết và giao tiếp là kỹ năng truyền đạt ý tưởng một cách r�
 | **Trực tiếp và gián tiếp** | Cách truyền tải trực tiếp sự bất đồng hoặc tin xấu | Trực tiếp (Hà Lan, Israel) so với gián tiếp (Nhật Bản, Thái Lan) |
 | **Hình thức** | Mức độ trang trọng trong giao tiếp | Chính thức (Đức, Nhật Bản) so với không chính thức (Úc, Mỹ) |
 | **Định hướng thời gian** | Đơn sắc (đúng giờ) vs đa thời gian (linh hoạt) | Ảnh hưởng đến việc đáp ứng kỳ vọng và thời hạn |
-| **Khoảng cách điện** | Hệ thống phân cấp ảnh hưởng đến giao tiếp như thế nào | Khoảng cách quyền lực cao: cấp dưới không công khai thách thức cấp trên |
+| **Khoảng cách điện** | Hệ thống phân cấp ảnh hưởng đến giao tiếp như thế nào | Khoảng cách quyền lực cao: Cấp dưới không công khai thách thức cấp trên |
 ---
 
 ## Bản tóm tắt
-Viết và giao tiếp rõ ràng không phải là thông minh - mà là được hiểu. Bắt đầu với điểm chính (nguyên tắc kim tự tháp). Sử dụng giọng nói tích cực, ngôn ngữ cụ thể và câu ngắn. Cấu trúc thông tin để người đọc có thể tìm thấy những gì họ cần. Tài liệu kỹ thuật phải có thể quét được và lấy ví dụ làm ví dụ. Văn bản kinh doanh nên dẫn đầu với khuyến nghị. Bài thuyết trình nên kể một câu chuyện với một ý tưởng trên mỗi slide. Sự thuyết phục kết hợp logic (logo), cảm xúc (pathos) và độ tin cậy (đặc tính). Nhận thức đa văn hóa ngăn ngừa sự hiểu lầm trong các nhóm toàn cầu. Kỹ năng cơ bản là nhận thức của khán giả: biết bạn đang viết cho ai, họ cần biết điều gì và định dạng nào sẽ giúp họ hiểu được điều đó. Mỗi phút bạn đầu tư vào việc giao tiếp rõ ràng hơn sẽ tiết kiệm gấp nhiều lần thời gian đó để giảm nhầm lẫn, ít hiểu lầm hơn và đưa ra quyết định nhanh hơn.
+Viết và giao tiếp rõ ràng có nghĩa là được hiểu. Bắt đầu với điểm chính (nguyên tắc kim tự tháp). Sử dụng giọng nói tích cực, ngôn ngữ cụ thể và câu ngắn. Cấu trúc thông tin để người đọc có thể tìm thấy những gì cần thiết. Tài liệu kỹ thuật phải có thể quét được và lấy ví dụ làm ví dụ. Văn bản kinh doanh nên dẫn đầu với khuyến nghị. Bài thuyết trình nên trình bày một ý tưởng trên mỗi slide. Sự thuyết phục kết hợp logic (logo), bằng chứng (pathos) và độ tin cậy (đặc tính). Nhận thức đa văn hóa ngăn ngừa sự hiểu lầm trong các nhóm toàn cầu. Kỹ năng cơ bản là nhận thức của khán giả: biết người đọc là ai, họ cần biết gì và dạng thức nào sẽ hỗ trợ sự hiểu biết của họ. Đầu tư vào giao tiếp rõ ràng hơn sẽ mang lại lợi ích giảm nhầm lẫn, ít hiểu lầm hơn và đưa ra quyết định nhanh hơn.

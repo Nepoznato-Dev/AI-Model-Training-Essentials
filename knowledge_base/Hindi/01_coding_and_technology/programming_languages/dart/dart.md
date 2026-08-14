@@ -1,42 +1,47 @@
 ---
-# मेटाडेटा
-शीर्षक: "डार्ट"
-विवरण: "डार्ट प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [डार्ट, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "40 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Dart"
+description: "Comprehensive reference for the Dart programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [dart, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "40 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #डार्ट
-डार्ट Google द्वारा विकसित एक क्लाइंट-अनुकूलित प्रोग्रामिंग भाषा है, जिसे पहली बार 2013 में जारी किया गया था। जबकि डार्ट को शुरू में वेब ब्राउज़र के लिए संभावित जावास्क्रिप्ट प्रतिस्थापन के रूप में तैनात किया गया था, इसे अपना प्राथमिक उद्देश्य **फ़्लटर** के पीछे की भाषा के रूप में मिला - एक ही कोडबेस से मोबाइल, वेब, डेस्कटॉप और एम्बेडेड एप्लिकेशन बनाने के लिए Google का क्रॉस-प्लेटफ़ॉर्म यूआई टूलकिट।
-डार्ट आधुनिक भाषाओं की सर्वोत्तम विशेषताओं को जोड़ता है: यह ऑब्जेक्ट-ओरिएंटेड है, इसमें वैकल्पिक टाइपिंग है (डार्ट 3 के बाद से ध्वनि शून्य सुरक्षा),`async`/`await`के साथ अतुल्यकालिक प्रोग्रामिंग का समर्थन करता है, और मूल मशीन कोड (मोबाइल/डेस्कटॉप के लिए) और जावास्क्रिप्ट (वेब ​​के लिए) दोनों के लिए संकलित करता है।
+डार्ट Google द्वारा विकसित एक क्लाइंट-अनुकूलित प्रोग्रामिंग भाषा है, जिसे पहली बार 2013 में जारी किया गया था। जबकि डार्ट को शुरुआत में वेब ब्राउज़र के लिए संभावित जावास्क्रिप्ट प्रतिस्थापन के रूप में तैनात किया गया था, इसे अपना प्राथमिक उद्देश्य **फ़्लटर** के पीछे की भाषा के रूप में मिला - एक ही कोडबेस से मोबाइल, वेब, डेस्कटॉप और एम्बेडेड एप्लिकेशन बनाने के लिए Google का क्रॉस-प्लेटफ़ॉर्म यूआई टूलकिट।
+डार्ट आधुनिक भाषाओं की सर्वोत्तम विशेषताओं को जोड़ता है: यह ऑब्जेक्ट-ओरिएंटेड है, इसमें वैकल्पिक टाइपिंग है (डार्ट 3 के बाद से ध्वनि शून्य सुरक्षा),`async`/`await`के साथ एसिंक्रोनस प्रोग्रामिंग का समर्थन करता है, और मूल मशीन कोड (मोबाइल/डेस्कटॉप के लिए) और जावास्क्रिप्ट (वेब ​​के लिए) दोनों में संकलित करता है।
 ---
 
 ## डार्ट क्यों मायने रखता है
@@ -939,12 +944,12 @@ FutureBuilder<List<Item>>(
 ### स्पंदन परिनियोजन लक्ष्य
 | प्लेटफार्म | बिल्ड कमांड | आउटपुट |
 |---|----|--------|
-| **एंड्रॉइड** |  __संरक्षित_0__ / __संरक्षित_1__ | प्ले स्टोर के लिए एपीके/एएबी |
-| **आईओएस** |  __संरक्षित_2__ | ऐप स्टोर के लिए आईपीए |
-| **वेब** |  __संरक्षित_3__ | स्टेटिक HTML/JS/CSS |
-| **विंडोज़** |  __संरक्षित_4__ | MSIX या स्टैंडअलोन exe |
-| **मैकओएस** |  __संरक्षित_5__ | .ऐप बंडल |
-| **लिनक्स** |  __संरक्षित_6__ | बाइनरी + संपत्ति |
+| **एंड्रॉइड** | `flutter build apk`/`flutter build appbundle`| प्ले स्टोर के लिए एपीके/एएबी |
+| **आईओएस** | `flutter build ipa`| ऐप स्टोर के लिए आईपीए |
+| **वेब** | `flutter build web`| स्टेटिक HTML/JS/CSS |
+| **विंडोज़** | `flutter build windows`| MSIX या स्टैंडअलोन exe |
+| **मैकओएस** | `flutter build macos`| .ऐप बंडल |
+| **लिनक्स** | `flutter build linux`| बाइनरी + संपत्ति |
 ```bash
 # Build commands
 flutter build apk --release                    # Android APK
@@ -980,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | बैकएंड विकास | प्राथमिक उपयोग का मामला नहीं | जाओ, नोड.जेएस, पायथन |
 | डेटा साइंस/एमएल | अनुकूल नहीं | पायथन, आर |
 | सिस्टम प्रोग्रामिंग | अनुकूल नहीं | सी, सी++, जंग |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: डार्ट की नल सुरक्षा कैसे काम करती है?
+**ए:** डार्ट 2.12+ में ध्वनि शून्य सुरक्षा है। चर डिफ़ॉल्ट रूप से गैर-शून्य होते हैं; शून्य की अनुमति देने के लिए`?`का उपयोग करें:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2:`Future`और`Stream`के बीच क्या अंतर है?
+**ए:**`Future`एकल एसिंक परिणाम का प्रतिनिधित्व करता है; `Stream`एसिंक घटनाओं के अनुक्रम का प्रतिनिधित्व करता है:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3: मैं फ़्लटर ऐप में स्थिति का प्रबंधन कैसे करूँ?
+**ए:** जटिलता के आधार पर एकाधिक दृष्टिकोण:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4: डार्ट में एक्सटेंशन विधियां कैसे काम करती हैं?
+**ए:** एक्सटेंशन विरासत के बिना मौजूदा प्रकारों में कार्यक्षमता जोड़ते हैं:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5: मैं परफॉर्मेंट डार्ट/फ़्लटर कोड कैसे लिखूं?
+**ए:** मुख्य अभ्यास:
+- जहां भी संभव हो`const`कंस्ट्रक्टर का उपयोग करें
+- विजेट के पुनर्निर्माण से बचें -`const`,`final`और`shouldRebuild`का उपयोग करें 
+- बड़ी सूचियों के लिए`ListView`के बजाय`ListView.builder`का उपयोग करें
+- फ़्लटर डेवटूल्स के साथ प्रोफ़ाइल
+- पृथक धागों पर महंगे संचालन के लिए`compute()`का उपयोग करें
+-`setState`कॉल को कम से कम करें - पुनर्निर्माण की आवश्यकता के बारे में विशिष्ट रहें
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक प्रकार-सुरक्षित एपीआई क्लाइंट बनाना
+**चरण 1: समस्या को समझें**
+एक एपीआई क्लाइंट बनाएं जो डेटा प्राप्त करता है और उचित रूप से टाइप की गई ऑब्जेक्ट लौटाता है।
+**चरण 2: दृष्टिकोण को पहचानें**
+परिणामों के लिए`fromJson`/ `toJson`, async/await और सीलबंद कक्षाओं के साथ डार्ट कक्षाओं का उपयोग करें।
+**चरण 3: कार्यान्वयन**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**चरण 4: सत्यापित करें**
+नकली HTTP क्लाइंट के साथ परीक्षण करें। नेटवर्क विफलताओं और खराब प्रतिक्रियाओं के लिए त्रुटि प्रबंधन को सत्यापित करें।
+### समस्या 2: डिबाउंस के साथ एक प्रतिक्रियाशील खोज को लागू करना
+**चरण 1: समस्या को समझें**
+एक खोज फ़ील्ड बनाएं जो एपीआई पर सवाल उठाता है लेकिन अत्यधिक अनुरोधों से बचने के लिए इनपुट को खारिज कर देता है।
+**चरण 2: दृष्टिकोण को पहचानें**
+`debounceTime` और`distinct`के साथ डार्ट स्ट्रीम का उपयोग करें।
+**चरण 3: कार्यान्वयन**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**चरण 4: परीक्षण**
+सत्यापित करें कि तेज़ टाइपिंग डिबाउंस अवधि के बाद केवल एक एपीआई कॉल को ट्रिगर करती है।
 ---
 
 ## सारांश

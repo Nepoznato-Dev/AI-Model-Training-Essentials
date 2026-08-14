@@ -1,38 +1,42 @@
 ---
-# فراداده
-عنوان: "سوگیری های شناختی و مغالطه های منطقی"
-توضیحات: "اشتباهات استدلالی و سوگیری های شناختی"
-دسته بندی: "درس هایی از شکست"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "درس هایی از تیم پایگاه دانش شکست ها"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [شناختی، منطقی، مسائل، درس‌هایی از شکست]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "27 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Cognitive Biases and Logical Fallacies"
+description: "Reasoning errors and cognitive biases"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [cognitive, logical, issues, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "27 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # سوگیری های شناختی و مغالطه های منطقی
 این سند سوگیری‌های شناختی، مغالطه‌های منطقی و خطاهای استدلالی را که هم بر تصمیم‌گیری انسانی و هم بر خروجی‌های سیستم هوش مصنوعی تأثیر می‌گذارند، ادغام می‌کند.

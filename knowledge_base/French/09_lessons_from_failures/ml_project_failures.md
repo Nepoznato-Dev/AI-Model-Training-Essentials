@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Échecs des projets d'apprentissage automatique"
-description : "Fuite de données, non-concordance des attentes, échecs de déploiement, dégradation du modèle"
-catégorie : "Leçons des échecs"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Machine Learning Project Failures"
+description: "Data leakage, expectation mismatches, deployment failures, model decay"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Leçons tirées des échecs de l'équipe de la base de connaissances"
-next_review : "2027-08-05"
-#Classement
-tags : [ml, projet, échecs, leçons des échecs]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "6 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ml, project, failures, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Échecs de projets d'apprentissage automatique
 Les projets d'apprentissage automatique échouent à un rythme alarmant : les estimations de l'industrie suggèrent que 60 à 85 % des projets de ML n'atteignent jamais la production. Les échecs ne viennent généralement pas des algorithmes ; ils résident dans le processus, les données, les attentes et le contexte organisationnel. Comprendre pourquoi les projets ML échouent est essentiel pour quiconque crée des systèmes ML, car les modes de défaillance sont prévisibles et largement évitables.

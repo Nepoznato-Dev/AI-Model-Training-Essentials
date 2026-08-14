@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Фортран
 Фортран (перевод формул) — старейший язык программирования высокого уровня, до сих пор широко используемый, впервые разработанный IBM в 1957 году для научных и инженерных вычислений. Несмотря на свой возраст, современный Фортран (Fortran 2008/2018/2023) представляет собой функциональный, высокопроизводительный язык, широко используемый в численном прогнозировании погоды, вычислительной гидродинамике, физическом моделировании, финансовом моделировании и высокопроизводительных вычислениях (HPC). Многие из самых быстрых в мире суперкомпьютеров используют код Фортрана.
 Язык значительно изменился с первых дней своего существования. Современный Фортран имеет модули, производные типы, общие процедуры, массивы (параллельное программирование) и совместимость с C. Он остается предпочтительным языком для многих приложений научных вычислений, где производительность имеет первостепенное значение.
@@ -542,7 +543,7 @@ end program test_solver
 ---
 
 ## Совместимость
-### Совместимость C (ISO_C_BINDING)
+### Совместимость с C (ISO_C_BINDING)
 ```fortran
 module c_interface
     use, intrinsic :: iso_c_binding
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Общая разработка приложений | Не подходит | Питон, Java, Го |
 | Веб-разработка | Не подходит | JavaScript, Питон |
 | Наука о данных (интерактивная) | Не рабочий процесс | Питон, Р |
+---
+
+## Синтетические вопросы и ответы
+### Q1: В чем разница между Fortran 90 и современным Fortran (2008+)?
+**О:** В современный Фортран добавлено множество функций, делающих его более выразительным:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Вопрос 2: Чем массивы Fortran отличаются от массивов C?
+**О:** Массивы Фортрана — это первоклассные объекты со встроенными операциями:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Вопрос 3: Как добиться максимальной производительности на Фортране?
+**О:** Ключевые практики:
+- Используйте явный`intent`для всех фиктивных аргументов.
+- Используйте`implicit none`везде
+- Предпочитайте операции с массивами, а не циклы.
+- Используйте непрерывные шаблоны доступа к памяти.
+- Используйте флаги оптимизации компилятора: `-O3 -march=native -ffast-math`. 
+- Профиль с помощью`gprof`или инструментов, специфичных для компилятора.
+- Используйте`pure`и`elemental`для функций, которые компилятор может оптимизировать.
+### Вопрос 4: Как мне связать Fortran с C?
+**A:** Используйте модуль `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Вопрос 5: Какую систему сборки следует использовать для проектов на Фортране?
+**О:** CMake имеет отличную поддержку Fortran. FPM (менеджер пакетов Fortran) — это современный встроенный вариант:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Задача 1. Решение УЧП с конечными разностями
+**Шаг 1. Поймите проблему**
+Решите одномерное уравнение теплопроводности: du/dt = альфа * d²u/dx².
+**Шаг 2. Определите подход**
+Дискретизируйте пространство и время, используя конечные разности. Используйте явную схему.
+**Шаг 3. Реализация**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Шаг 4. Проверка**
+Проверьте сохранение, сходимость с уточнением сетки и сравните с аналитическим решением.
+### Проблема 2: Диагонализация матрицы
+**Шаг 1. Поймите проблему**
+Найдите собственные значения и собственные векторы симметричной матрицы.
+**Шаг 2. Определите подход**
+Используйте процедуру`dsyev`LAPACK через интерфейс Фортрана.
+**Шаг 3. Реализация**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Шаг 4. Проверка**
+Проверьте, что A*v = лямбда*v для каждой собственной пары.
 ---
 
 ## Краткое содержание

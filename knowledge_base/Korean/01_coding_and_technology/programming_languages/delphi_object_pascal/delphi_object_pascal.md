@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 델파이/오브젝트 파스칼
-Delphi는 원래 Borland(이후 Embarcadero, 현재 Idera)에서 개발한 Pascal을 기반으로 한 객체 지향 프로그래밍 언어입니다. 1995년 "Delphi 1"로 처음 ​​출시된 이 제품은 Windows 데스크톱 애플리케이션의 RAD(신속한 애플리케이션 개발)를 위해 설계되었습니다. 이 언어는 공식적으로 Object Pascal로 알려져 있으며 Delphi IDE는 시각적 양식 디자이너, 통합 데이터베이스 도구 및 강력한 컴파일러를 제공합니다.
+Delphi는 원래 Borland(이후 Embarcadero, 현재 Idera)에서 개발한 Pascal을 기반으로 하는 객체 지향 프로그래밍 언어입니다. 1995년 "Delphi 1"로 처음 ​​출시된 이 제품은 Windows 데스크톱 애플리케이션의 RAD(신속한 애플리케이션 개발)를 위해 설계되었습니다. 이 언어는 공식적으로 Object Pascal로 알려져 있으며 Delphi IDE는 시각적 양식 디자이너, 통합 데이터베이스 도구 및 강력한 컴파일러를 제공합니다.
 델파이는 1990년대 후반과 2000년대 초반에 가장 인기 있는 Windows 개발 도구 중 하나였습니다. 인기가 크게 감소했지만 특히 엔터프라이즈 데스크톱 애플리케이션, 데이터베이스 프런트엔드 및 레거시 시스템 유지 관리 분야에서 전용 사용자 기반을 유지하고 있습니다. Modern Delphi(11/12)는 FireMonkey(FMX) 프레임워크를 통해 Windows, macOS, iOS 및 Android용 크로스 플랫폼 개발을 지원합니다.
 ---
 
@@ -481,7 +482,7 @@ end.
 ---
 
 ## 아키텍처 및 시스템 설계
-### 구성요소 아키텍처
+### 구성 요소 아키텍처
 Delphi의 VCL(Visual Component Library)과 FMX(FireMonkey)는 구성 요소 계층 구조를 기반으로 구축되었습니다. 모든 시각적 요소는`TComponent`에서 상속됩니다.
 ```
 TObject
@@ -565,15 +566,15 @@ delphi-project/
 ### 컴파일러 지시문 참조
 | 지시어 | 목적 | 예 |
 |------------|---------|---------|
-|  __보호됨_0__ | 콘솔 애플리케이션 |  __보호됨_1__ |
-|  __보호됨_2__ | GUI 애플리케이션(기본값) |  __보호됨_3__ |
-|  __보호됨_4__ | 조건부 기호 정의 |  __보호됨_5__ |
-|  __보호_6__ | 조건부 컴파일 |  __보호_7__ |
-|  __보호됨_8__ | 양식 리소스 포함 |  __보호_9__ |
-|  __보호됨_10__ | 경고 억제 |  __보호됨_11__ |
-|  __보호됨_12__ | 힌트 억제 |  __보호_13__ |
-|  __보호됨_14__ | 최적화 프로그램 활성화 |  __보호_15__ |
-|  __보호됨_16__ | 문자열 범위 확인 활성화 |  __보호됨_17__ |
+| `{$APPTYPE CONSOLE}`| 콘솔 애플리케이션 | `{$APPTYPE CONSOLE}`|
+| `{$APPTYPE GUI}`| GUI 애플리케이션(기본값) | `{$APPTYPE GUI}`|
+| `{$DEFINE DEBUG}`| 조건부 기호 정의 | `{$DEFINE DEBUG}`|
+| `{$IFDEF symbol}`| 조건부 컴파일 | `{$IFDEF DEBUG}`|
+| `{$R *.dfm}`| 양식 리소스 포함 | `{$R *.dfm}`|
+| `{$WARNINGS OFF}`| 경고 억제 | `{$WARNINGS OFF}`|
+| `{$HINTS OFF}`| 힌트 억제 | `{$HINTS OFF}`|
+| `{$OPTIMIZATION ON}`| 최적화 프로그램 활성화 | `{$OPTIMIZATION ON}`|
+| `{$STRINGCHECKS ON}`| 문자열 범위 확인 활성화 | `{$STRINGCHECKS ON}`|
 ### 명령줄에서 빌드
 ```batch
 REM 32-bit Windows build (DCC32)
@@ -1087,5 +1088,83 @@ Delphi Deployment Targets:
 | 모바일 앱 | FMX를 통해 가능하지만 제한됨 | 스위프트, 코틀린, 플러터 |
 ---
 
+## 종합 Q&A
+### Q1: Delphi의 VCL 프레임워크는 어떻게 작동합니까?
+**답:** VCL은 Windows API 컨트롤을 객체 지향 계층 구조로 래핑합니다. 양식, 버튼 및 그리드는 모두 클래스입니다.
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: Delphi에서 구성 요소를 어떻게 생성합니까?
+**A:** TComponent 또는 TControl에서 상속:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3: 델파이와 프리파스칼의 차이점은 무엇인가요?
+**답:** Delphi는 Embarcadero의 상용 IDE/컴파일러입니다. Free Pascal은 오픈 소스 컴파일러이고 Lazarus는 무료 IDE입니다. 둘 다 오브젝트 파스칼 구문을 사용합니다.
+### Q4: Delphi에서 데이터베이스 작업을 어떻게 합니까?
+**답:** FireDAC 또는 dbExpress 구성요소를 사용하세요.
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5: 델파이는 오늘날에도 여전히 유효합니까?
+**A:** 레거시 Windows 애플리케이션을 유지하려면 그렇습니다. 새로운 프로젝트의 경우 대부분의 개발자는 C# 또는 웹 기술을 선호합니다. Free Pascal/Lazarus는 무료 크로스 플랫폼 대안을 제공합니다.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 데이터 인식 양식 구축
+**1단계: 문제 이해**
+데이터베이스 레코드를 표시하고 편집하는 양식을 만듭니다.
+**2단계: 접근 방식 파악**
+데이터 세트에 바인딩된 데이터 인식 구성 요소를 사용합니다.
+**3단계: 구현**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**4단계: 확장**
+유효성 검사, 오류 처리, 검색/필터 기능을 추가합니다.
+---
+
 ## 요약
-Delphi는 Windows용 신속한 애플리케이션 개발을 개척한 역사적으로 중요한 언어입니다. 최신 Delphi는 여전히 기본 Windows 애플리케이션과 데이터베이스 프런트엔드를 지원하지만 커뮤니티와 생태계는 상당히 축소되었습니다. 기존 Delphi 코드베이스를 유지하려면 여전히 필수적입니다. 새 프로젝트의 경우 대부분의 개발자는 C#, 웹 기술 또는 크로스 플랫폼 프레임워크로 마이그레이션했습니다. 오픈 소스 Free Pascal/Lazarus 프로젝트는 오브젝트 파스칼 언어에 관심이 있는 사람들을 위한 무료 대안을 제공합니다.
+Delphi는 Windows용 신속한 애플리케이션 개발을 개척한 역사적으로 중요한 언어입니다. 최신 Delphi는 여전히 네이티브 Windows 애플리케이션과 데이터베이스 프런트엔드를 지원하지만 커뮤니티와 생태계는 상당히 축소되었습니다. 기존 Delphi 코드베이스를 유지하려면 여전히 필수적입니다. 새 프로젝트의 경우 대부분의 개발자는 C#, 웹 기술 또는 크로스 플랫폼 프레임워크로 마이그레이션했습니다. 오픈 소스 Free Pascal/Lazarus 프로젝트는 Object Pascal 언어에 관심이 있는 사람들을 위한 무료 대안을 제공합니다.

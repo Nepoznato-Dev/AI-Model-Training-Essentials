@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Fondamenti di sicurezza informatica
-La sicurezza non è una caratteristica su cui puntare alla fine: è una disciplina che deve essere integrata in ogni livello di un sistema fin dal primo giorno. Che tu stia creando un'app Web, gestendo l'infrastruttura o distribuendo un'API, comprendere il panorama delle minacce e i fondamenti della difesa è essenziale.
+La sicurezza è una disciplina che deve essere integrata in ogni livello di un sistema fin dall’inizio, piuttosto che aggiunta in un secondo momento. Che si tratti di creare un'applicazione Web, gestire l'infrastruttura o distribuire un'API, comprendere il panorama delle minacce e i fondamenti della difesa è essenziale.
 ---
 
 ## Crittografia e crittografia
@@ -54,7 +54,7 @@ In pratica, la maggior parte dei sistemi utilizza **entrambi**: crittografia asi
 L'hashing è una funzione unidirezionale: converte l'input in una stringa di dimensione fissa. Non puoi invertirlo, ma lo stesso input produce sempre lo stesso output.
 | Caso d'uso | Algoritmo consigliato | Evitare |
 |----------|---------------------|-------|
-| **Memorizzazione password** | Argon2id, bcrypt, scrypt | MD5, SHA-1, semplice SHA-256 (troppo veloce) |
+| **Memoria password** | Argon2id, bcrypt, scrypt | MD5, SHA-1, semplice SHA-256 (troppo veloce) |
 | **Integrità dei dati** | SHA-256, SHA-3 | MD5 (rotto), SHA-1 (rotto) |
 | **Firme digitali** | Ed25519, RSA-2048+ | DSA |
 ### TLS/HTTPS
@@ -191,7 +191,7 @@ La tua applicazione è sicura tanto quanto la sua dipendenza più debole.
 Quando sospetti una violazione:
 1. **Niente panico**, ma agisci rapidamente.
 2. **Isolare** i sistemi interessati (disconnettersi dalla rete se necessario).
-3. **Conservare le prove**: acquisire registri, dump della memoria, immagini del disco.
+3. **Preservare le prove**: acquisire registri, dump della memoria, immagini del disco.
 4. **Identificare l'ambito**: quali sistemi, quali dati?
 5. **Ruota** tutte le credenziali e i segreti compromessi.
 6. **Correggere** la vulnerabilità.

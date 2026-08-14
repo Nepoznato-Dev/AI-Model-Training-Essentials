@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "تصور البيانات"
-الوصف: "اختيار المخطط، مبادئ التصميم، رواية القصص، الأدوات"
-الفئة: "علم البيانات والتحليلات"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-review_by: "فريق قاعدة معارف علوم البيانات والتحليلات"
+# Metadata
+title: "Data Visualization"
+description: "Chart selection, design principles, storytelling, tools"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [البيانات والتصور وعلوم البيانات والتحليلات]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "7 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [data, visualization, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # تصور البيانات
 يمكن للمخطط المصمم جيدًا أن يكشف عن الأنماط التي تخفيها جداول الأرقام. يمكن للمرء المصمم بشكل سيء أن يضلل أو يربك أو يتحمل. تصور البيانات هو حرفة تحويل البيانات إلى قصص مرئية تساعد في اتخاذ القرارات. يغطي هذا الملف اختيار المخطط ومبادئ التصميم والأخطاء الشائعة والأدوات التي تجعل كل ذلك ممكنًا.
 ---
@@ -63,7 +68,7 @@ next_review: "2027-08-05"
 | **Heatmap** | Correlation matrices; patterns in 2D data | Too many variables |
 | **Pie chart** | Simple composition (2–5 slices) | More than 5 slices; precise comparisons needed |
 | **Violin plot** | Distribution density + quartiles | Small audiences unfamiliar with them |
-| **Pair plot** | Quick overview of all variable relationships | Many variables (>8) |
+| **Pair plot** | Quick overview of all variable relationships | Many variables (> 8) |
 ---
 
 ## مبادئ التصميم
@@ -73,7 +78,7 @@ next_review: "2027-08-05"
 |-----------|------------|
 | **تعظيم نسبة حبر البيانات** | كل قطرة حبر يجب أن تنقل البيانات. إزالة كل شيء آخر. |
 | **القضاء على المخططات غير المرغوب فيها** | لا توجد تأثيرات ثلاثية الأبعاد أو تدرجات غير مبررة أو عناصر زخرفية. |
-| **إظهار البيانات** | لا تقم بالتشويه أو الإخفاء أو الاختيار. دع البيانات تتحدث. |
+| **إظهار البيانات** | لا تشوه أو تخفي أو تختار. دع البيانات تتحدث. |
 | **مضاعفات صغيرة** | استخدم المخططات الصغيرة المتكررة للمقارنة بين الفئات. |
 | **خطوط المؤشرات** | مخططات صغيرة بحجم الكلمة لبيانات الاتجاه المضمنة. |
 ### قواعد التصميم العملية
@@ -97,7 +102,7 @@ next_review: "2027-08-05"
 
 ## رواية القصص باستخدام البيانات
 الرسم البياني بدون سرد هو مجرد صورة. رواية القصص تحول البيانات إلى رؤية.
-### إطار عمل رواية القصص
+### إطار رواية القصص
 1. **السياق**: ما الوضع؟ ماذا يعرف الجمهور بالفعل؟
 2. **الصراع**: ما هي المشكلة، أو المفاجأة، أو التوتر في البيانات؟
 3. **الحل**: ما الذي يجب أن يفعله الجمهور بهذه الرؤية؟
@@ -136,7 +141,7 @@ next_review: "2027-08-05"
 ### جافا سكريبت / ويب
 | مكتبة | القوة |
 |---------|---------|
-| **D3.js** | أقصى قدر من المرونة؛ منحنى التعلم الحاد |
+| **D3.js** | أقصى قدر من المرونة. منحنى التعلم الحاد |
 | **Chart.js** | رسوم بيانية بسيطة وسريعة الاستجابة |
 | ** إعادة الرسم البياني ** | رسم بياني سهل التفاعل |
 | ** مؤامرة يمكن ملاحظتها ** | قواعد رسومية خفيفة الوزن ومعبرة |

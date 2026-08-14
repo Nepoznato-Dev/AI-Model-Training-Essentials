@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "سوئیفت"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی سوئیفت که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [سریع، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "26 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Swift"
+description: "Comprehensive reference for the Swift programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [swift, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #سوئیفت
 سوئیفت یک زبان برنامه نویسی مدرن و کامپایل شده است که توسط اپل (به رهبری کریس لاتنر) توسعه یافته و اولین بار در سال 2014 منتشر شد. این زبان برای جایگزینی Objective-C به عنوان زبان اصلی برای توسعه پلتفرم اپل (iOS، macOS، watchOS، tvOS، visionOS) طراحی شده است. سوئیفت عملکرد زبان‌های کامپایل شده را با بیان زبان‌های برنامه‌نویسی ترکیب می‌کند و بر ایمنی تأکید می‌کند - به ویژه در مورد مقادیر تهی، مدیریت حافظه و خطاهای نوع.
 فراتر از پلتفرم های اپل، سوئیفت به طور فزاینده ای برای توسعه سمت سرور (Vapor، Hummingbird)، برنامه های کاربردی بین پلتفرمی و حتی یادگیری ماشینی (Apple's Create ML) استفاده می شود. با معرفی سوئیفت روی سرور و پشتیبانی از پلتفرم های مختلف، سوئیفت به چیزی بیش از یک «زبان اپل» تبدیل شده است.
@@ -625,6 +630,363 @@ swift build -c release
 | موبایل کراس پلتفرم | ممکن است اما نه اولیه | Flutter، React Native |
 | برنامه نویسی سیستم ها | ممکن (لینوکس) | Rust, C, C++ |
 | توسعه دهنده برنامه عمومی (غیر اپل) | اکوسیستم محدود | پایتون، برو، جاوا |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: گزینه های اختیاری چیست و چرا سوئیفت من را مجبور می کند آنها را باز کنم؟
+**A:** یک اختیاری (`Type?`) مقداری را نشان می دهد که ممکن است وجود نداشته باشد - یا`.some(value)`یا`.none`(نفر). سوئیفت برای جلوگیری از خرابی نشانگر تهی در زمان اجرا، باز کردن صریح را مجبور می‌کند. می‌توانید با `if let`، `guard let`، باز کردن اجباری (`!`)، زنجیر کردن اختیاری (`?.`)، یا ادغام صفر (`??`) باز کنید. کامپایلر تضمین می‌کند که شما با nil case مدیریت می‌کنید – این کار کل کلاس باگ‌ها را حذف می‌کند.
+```swift
+// Optional declaration
+var name: String? = nil
+name = "Alice"
+
+// Safe unwrapping with if let
+if let unwrapped = name {
+    print("Name: \(unwrapped)")
+} else {
+    print("Name is nil")
+}
+
+// Guard let — early exit
+func greet(user: String?) {
+    guard let name = user else {
+        print("No user provided")
+        return
+    }
+    print("Hello, \(name)!")
+}
+
+// Nil coalescing
+let displayName = name ?? "Anonymous"
+
+// Optional chaining
+class Address { var city: String? }
+class User { var address: Address? }
+let user = User()
+let city = user.address?.city  // String? — nil at any point
+let cityOrUnknown = user.address?.city ?? "Unknown"
+```
+
+### Q2: تفاوت بین ساختارها و کلاس ها در سوئیفت چیست؟
+**A:** ساختارها انواع ارزش هستند (در زمان تکلیف کپی می شوند)، کلاس ها انواع مرجع (اشتراک گذاری شده) هستند. ساختارها یک اولیه‌ساز رایگان عضو دریافت می‌کنند و از همه ویژگی‌های کلاس‌ها به جز وراثت، deinitializers و شمارش مرجع پشتیبانی می‌کنند. انواع استاندارد کتابخانه سوئیفت (`String`، `Array`، `Dictionary`) همگی ساختار هستند. ترجیح ساختارها به طور پیش فرض. در مواقعی که به وضعیت یا وراثت قابل تغییر مشترک نیاز دارید از کلاس ها استفاده کنید.
+```swift
+// Struct — value type, copied on assignment
+struct Point {
+    var x: Double
+    var y: Double
+
+    mutating func move(by dx: Double, _ dy: Double) {
+        x += dx
+        y += dy
+    }
+}
+
+var p1 = Point(x: 1, y: 2)
+var p2 = p1          // Copy
+p2.x = 10
+print(p1.x)          // 1 — unchanged
+
+// Class — reference type, shared
+class ViewController {
+    var title: String = ""
+}
+let vc1 = ViewController()
+let vc2 = vc1        // Same reference
+vc2.title = "Home"
+print(vc1.title)     // "Home" — same object
+```
+
+### Q3: پروتکل ها و برنامه نویسی پروتکل گرا چگونه کار می کنند؟
+**A:** پروتکل ها طرحی از روش ها، ویژگی ها و الزامات را تعریف می کنند. هر نوع می تواند با اجرای الزامات یک پروتکل مطابقت داشته باشد. پسوندهای پروتکل پیاده سازی های پیش فرض را ارائه می دهند. ژنریک های محدود شده توسط پروتکل ها به شما چندشکلی می دهند بدون سربار وراثت کلاس - این "برنامه نویسی پروتکل گرا" است.
+```swift
+// Protocol definition
+protocol Drawable {
+    func draw(on context: GraphicsContext)
+    var bounds: CGRect { get }
+}
+
+// Default implementation via extension
+extension Drawable {
+    func describe() -> String {
+        return "Drawable at \(bounds)"
+    }
+}
+
+// Conforming types
+struct Circle: Drawable {
+    let center: CGPoint
+    let radius: CGFloat
+
+    func draw(on context: GraphicsContext) { /* ... */ }
+    var bounds: CGRect { /* computed from center + radius */ CGRect() }
+}
+
+// Protocol as generic constraint
+func renderAll<T: Drawable>(_ items: [T], on context: GraphicsContext) {
+    for item in items {
+        item.draw(on: context)
+    }
+}
+
+// Protocol composition
+func process(_ item: Drawable & Codable & Sendable) { /* ... */ }
+```
+
+### Q4:`async/await`در سوئیفت چیست و چه ارتباطی با بازیگران دارد؟
+**A:** مدل همزمانی سوئیفت (5.5+) از`async/await`برای کد ناهمزمان و`actors`برای حالت ایمن قابل تغییر مشترک استفاده می کند.  عملکردهای`async`را می توان به حالت تعلیق درآورد و از سر گرفت. `await`نقاط تعلیق را مشخص می کند. بازیگران با سریال‌سازی دسترسی به حالت تغییرپذیرشان از مسابقه داده‌ها جلوگیری می‌کنند - کامپایلر این را در زمان کامپایل اعمال می‌کند.
+```swift
+// Async function
+func fetchUser(id: String) async throws -> User {
+    let (data, _) = try await URLSession.shared.data(
+        from: URL(string: "https://api.example.com/users/\(id)")!
+    )
+    return try JSONDecoder().decode(User.self, from: data)
+}
+
+// Actor — safe shared mutable state
+actor BankAccount {
+    private var balance: Double = 0
+
+    func deposit(_ amount: Double) {
+        balance += amount  // Only accessible within actor
+    }
+
+    func getBalance() -> Double { balance }
+}
+
+// Usage
+let account = BankAccount()
+await account.deposit(100)
+let balance = await account.getBalance()
+
+// Concurrent execution with async let
+async let user = fetchUser(id: "1")
+async let posts = fetchPosts(userId: "1")
+let dashboard = try await Dashboard(user: user, posts: posts)
+```
+
+### Q5: پوشش های دارایی و سازندگان نتیجه چگونه کار می کنند؟
+** پاسخ: ** بسته‌بندی‌های دارایی (`@propertyWrapper`) منطق را به ذخیره‌سازی دارایی اضافه می‌کنند (مانند`@State`در SwiftUI). سازندگان نتایج (`@resultBuilder`) به شما امکان می‌دهند ساختارهای داده را با استفاده از نحو طبیعی بسازید (مانند سلسله مراتب مشاهده SwiftUI). هر دو شکلی از فرابرنامه هستند که صفحه دیگ بخار را کاهش می دهند.
+```swift
+// Property wrapper
+@propertyWrapper
+struct Clamped<T: Comparable> {
+    var wrappedValue: T {
+        didSet { wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound) }
+    }
+    let range: ClosedRange<T>
+
+    init(wrappedValue: T, _ range: ClosedRange<T>) {
+        self.range = range
+        self.wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound)
+    }
+}
+
+struct Player {
+    @Clamped(0...100) var health: Int = 100
+    @Clamped(0...999) var score: Int = 0
+}
+
+var player = Player()
+player.health = 150  // Clamped to 100
+player.health = -10  // Clamped to 0
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک روتر Type-Safe بسازید
+**بیانیه مشکل:** یک مسیریاب URL ایمن برای یک برنامه iOS ایجاد کنید که در آن هر مسیر دارای پارامترهای مرتبط است و کامپایلر از دسترسی به پارامترهایی که برای یک مسیر مشخص وجود ندارند جلوگیری می کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) تعاریف مسیر با پارامترهای تایپ شده، (2) تجزیه URL برای استخراج مسیر + پارامترها، (3) دسترسی به پارامترهای ایمن - کامپایلر تضمین می‌کند که شما فقط پارامترهای موجود برای هر مسیر را می‌خوانید. برای این کار باید تعدادهای همراه با مقادیر مرتبط باشد.
+** مرحله 2 - شناسایی رویکرد: **
+- از یک enum با مقادیر مرتبط برای تعریف مسیرها استفاده کنید.
+- هر مورد پارامترهای خاص خود را به عنوان مقادیر تایپ شده حمل می کند.
+- یک تجزیه کننده رشته های URL را به موارد enum مسیریابی می کند.
+- تطبیق الگو پارامترها را با ایمنی زمان کامپایل استخراج می کند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```swift
+enum Route: Equatable {
+    case home
+    case userProfile(id: String)
+    case productDetail(id: String, variant: String?)
+    case search(query: String, page: Int)
+    case settings(section: SettingsSection)
+
+    enum SettingsSection: String {
+        case general, notifications, privacy, about
+    }
+
+    // Parse URL to route
+    static func from(url: URL) -> Route? {
+        let path = url.pathComponents.dropFirst()  // Remove leading /
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            .queryItems ?? []
+
+        switch path {
+        case []:
+            return .home
+        case ["users", let id]:
+            return .userProfile(id: id)
+        case ["products", let id]:
+            let variant = query.first(where: { $0.name == "variant" })?.value
+            return .productDetail(id: id, variant: variant)
+        case ["search"]:
+            guard let q = query.first(where: { $0.name == "q" })?.value else { return nil }
+            let page = query.first(where: { $0.name == "page" })
+                .flatMap { Int($0.value ?? "1") } ?? 1
+            return .search(query: q, page: page)
+        case ["settings", let section]:
+            guard let s = SettingsSection(rawValue: section) else { return nil }
+            return .settings(section: s)
+        default:
+            return nil
+        }
+    }
+}
+
+// Usage — type-safe parameter extraction
+func handle(route: Route) {
+    switch route {
+    case .home:
+        showHomeScreen()
+    case .userProfile(let id):
+        showProfile(userId: id)  // id is guaranteed String
+    case .productDetail(let id, let variant):
+        showProduct(id: id, variant: variant)  // variant is String?
+    case .search(let query, let page):
+        performSearch(query: query, page: page)  // page is guaranteed Int
+    case .settings(let section):
+        showSettings(section: section)  // section is SettingsSection enum
+    }
+}
+
+// Handle deep link
+if let url = URL(string: "myapp://products/abc123?variant=blue"),
+   let route = Route.from(url: url) {
+    handle(route: route)
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی نوع: هر مورد مسیر دقیقاً پارامترهای مورد نیاز خود را دارد. کامپایلر از دسترسی به`variant`در`.userProfile`جلوگیری می کند.
+- جامع بودن:`switch`باید همه موارد را کنترل کند - با افزودن یک مسیر جدید که همه کنترل کننده ها را به روز می کند.
+- توسعه پذیری: اضافه کردن مسیرهای جدید با اضافه کردن موارد enum. کامپایلر همه جا به شما می گوید که نیاز به به روز رسانی دارد.
+- تولید: مسیریابی`swift-url-routing`یا`TCA`را برای برنامه های بزرگتر در نظر بگیرید.
+### مسئله 2: یک کانتینر حالت واکنشی را پیاده سازی کنید
+**بیانیه مشکل:** یک کانتینر حالت واکنشی ساده (مشابه Redux/Vuex) در سوئیفت بسازید که در آن تغییرات حالت قابل مشاهده است و مشترکین از تغییرات وضعیت خاص مطلع می شوند.
+** مرحله 1 - مشکل را درک کنید:**
+ما به این موارد نیاز داریم: (1) یک محفظه حالت که دارای حالت برنامه باشد، (2) اقداماتی که تغییرات حالت را توصیف می کند، (3) یک کاهنده که حالت جدیدی را از حالت فعلی + عمل ایجاد کند، (4) مشترکینی که تغییرات حالت را مشاهده می کنند. این الگوی جریان داده یک طرفه است.
+** مرحله 2 - شناسایی رویکرد: **
+- از یک کلاس`Store<State>`عمومی با رفتار مشابه`@Published`استفاده کنید.
+- اقدامات را به صورت enum تعریف کنید.
+- از یک تابع کاهنده`(State, Action) -> State`استفاده کنید.
+- مشترکین وضعیت جدید را از طریق بسته شدن دریافت می کنند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```swift
+// Action protocol
+protocol Action {}
+
+// Store — holds state and dispatches actions
+class Store<State> {
+    private(set) var state: State
+    private let reducer: (State, Action) -> State
+    private var subscribers: [(State) -> Void] = []
+    private let queue = DispatchQueue(label: "store.queue")
+
+    init(initialState: State, reducer: @escaping (State, Action) -> State) {
+        self.state = initialState
+        self.reducer = reducer
+    }
+
+    func dispatch(_ action: Action) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            let newState = self.reducer(self.state, action)
+            self.state = newState
+            self.notifySubscribers(newState)
+        }
+    }
+
+    func subscribe(_ callback: @escaping (State) -> Void) -> () -> Void {
+        subscribers.append(callback)
+        callback(state)  // Emit current state immediately
+
+        // Return unsubscribe function
+        let index = subscribers.count - 1
+        return { [weak self] in
+            self?.subscribers.remove(at: index)
+        }
+    }
+
+    private func notifySubscribers(_ state: State) {
+        for subscriber in subscribers {
+            subscriber(state)
+        }
+    }
+}
+
+// Example usage
+struct AppState {
+    var todos: [Todo] = []
+    var filter: TodoFilter = .all
+    var isLoading: Bool = false
+}
+
+enum TodoAction: Action {
+    case addTodo(String)
+    case toggleTodo(Int)
+    case setFilter(TodoFilter)
+    case setLoading(Bool)
+}
+
+enum TodoFilter { case all, active, completed }
+
+struct Todo: Equatable {
+    let id: Int
+    let title: String
+    var isDone: Bool = false
+}
+
+// Reducer
+func todoReducer(state: AppState, action: Action) -> AppState {
+    var newState = state
+    guard let action = action as? TodoAction else { return state }
+
+    switch action {
+    case .addTodo(let title):
+        let id = (state.todos.map(\.id).max() ?? 0) + 1
+        newState.todos.append(Todo(id: id, title: title))
+    case .toggleTodo(let id):
+        if let idx = newState.todos.firstIndex(where: { $0.id == id }) {
+            newState.todos[idx].isDone.toggle()
+        }
+    case .setFilter(let filter):
+        newState.filter = filter
+    case .setLoading(let loading):
+        newState.isLoading = loading
+    }
+    return newState
+}
+
+// Wire it up
+let store = Store(initialState: AppState(), reducer: todoReducer)
+
+let unsubscribe = store.subscribe { state in
+    print("Todos: \(state.todos.count), Filter: \(state.filter)")
+}
+
+store.dispatch(TodoAction.addTodo("Learn Swift"))
+store.dispatch(TodoAction.addTodo("Build an app"))
+store.dispatch(TodoAction.toggleTodo(1))
+store.dispatch(TodoAction.setFilter(.active))
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- جریان یک طرفه: اقدامات → کاهش دهنده → وضعیت جدید → مشترکین. استدلال و آزمایش آسان است.
+- ایمنی رشته: صف اعزام جهش های حالت را سریال می کند.
+- مشترکین وضعیت کامل را دریافت می کنند - از انتخابگرها یا چک های`Equatable`برای جلوگیری از ارائه مجدد غیرضروری استفاده کنید.
+- تولید: از`The Composable Architecture`(TCA) توسط Point-Free برای اجرای درجه تولید با افکت‌ها، آزمایش و ادغام SwiftUI استفاده کنید.
 ---
 
 ## خلاصه

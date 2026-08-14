@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #MATLAB
 MATLAB (Matrix Laboratory) é uma linguagem de programação interpretada de alto nível e um ambiente projetado para computação numérica, operações matriciais e aplicações de engenharia/científicas. Desenvolvido pela MathWorks e lançado pela primeira vez em 1984, o MATLAB é a ferramenta padrão em muitas disciplinas de engenharia – engenharia elétrica, sistemas de controle, processamento de sinais, processamento de imagens e comunicações.
 MATLAB combina uma poderosa linguagem orientada a matrizes com extensas caixas de ferramentas (pacotes complementares) e o ambiente de simulação visual Simulink. É amplamente utilizado na academia e na indústria para prototipagem de algoritmos antes de implementá-los no código de produção.
@@ -615,7 +616,7 @@ fprintf('Speedup: %.1fx\n', t1/t2);
 % Distribute: myapp + MATLAB Runtime installer
 ```
 
-### Servidor de Produção MATLAB
+### Servidor de produção MATLAB
 ```matlab
 % Deploy as REST API
 % 1. Create CTF archive
@@ -653,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 | Sistemas de produção | Não projetado para implantação | C++, Python, Go |
 | Desenvolvimento web | Não adequado | Javascript, Python |
 | Ciência de dados (geral) | Possível, mas Python é mais versátil | Pitão, R |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como vetorizar operações em vez de usar loops?
+**R:** MATLAB é otimizado para operações matriciais. Substitua os loops por código vetorizado:
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### Q2: Qual é a diferença entre matrizes e arrays?
+**R:** No MATLAB, tudo é um array. Matrizes são matrizes 2D:
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### Q3: Como faço para criar gráficos eficazes no MATLAB?
+**R:** Use as funções de plotagem com rotulagem adequada:
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4: Como depurar o código MATLAB de maneira eficaz?
+**R:** Use o depurador integrado e as ferramentas de diagnóstico:
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### Q5: Como leio e gravo arquivos de dados?
+**R:** MATLAB suporta muitos formatos de arquivo:
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Resolvendo um Sistema de Equações Lineares
+**Etapa 1: Entenda o problema**
+Resolva Ax = b onde A é uma matriz eb é um vetor.
+**Etapa 2: Identifique a abordagem**
+Use o operador de barra invertida do MATLAB`\`que seleciona automaticamente o melhor algoritmo.
+**Etapa 3: Implementar**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**Etapa 4: Estender**
+Para sistemas sobredeterminados,`\`fornece solução de mínimos quadrados. Para sistemas esparsos, use matrizes `sparse`.
+### Problema 2: Processamento de Sinal – Análise FFT
+**Etapa 1: Entenda o problema**
+Analise o conteúdo de frequência de um sinal ruidoso.
+**Etapa 2: Identifique a abordagem**
+Gere um sinal de teste, aplique FFT e trace o espectro de frequência.
+**Etapa 3: Implementar**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**Etapa 4: verificar**
+Os picos devem aparecer em 50 Hz e 120 Hz. O nível de ruído deve ser baixo.
+### Problema 3: Ajuste de curva com modelos personalizados
+**Etapa 1: Entenda o problema**
+Ajuste dados experimentais a um modelo não linear personalizado.
+**Etapa 2: Identifique a abordagem**
+Use`fit`com um`fittype`ou`lsqcurvefit`personalizado.
+**Etapa 3: Implementar**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**Etapa 4: Validar**
+Verifique os resíduos em busca de padrões, verifique o R² e teste com diferentes pontos de partida.
 ---
 
 ## Resumo

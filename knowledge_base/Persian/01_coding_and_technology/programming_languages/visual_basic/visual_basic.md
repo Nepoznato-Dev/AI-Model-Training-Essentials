@@ -1,46 +1,51 @@
 ---
-# فراداده
-عنوان: "ویژوال بیسیک"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی ویژوال بیسیک که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [بصری-پایه، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "مبتدی"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "33 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Visual Basic"
+description: "Comprehensive reference for the Visual Basic programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [visual-basic, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "33 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # ویژوال بیسیک
 ویژوال بیسیک (VB) یک زبان برنامه نویسی است که توسط مایکروسافت توسعه یافته است. در طی چندین نسل تکامل یافته است: ویژوال بیسیک اصلی (1991)، ویژوال بیسیک 6.0 (1998)، VB.NET (2002، بخشی از دات نت فریم ورک)، و ویژوال بیسیک ..NET (فعال، که اکنون به سادگی "ویژوال بیسیک" به عنوان بخشی از NET نامیده می شود). VB طوری طراحی شده است که برای مبتدیان و توسعه سریع برنامه (RAD) با تمرکز بر رابط های کاربر گرافیکی و برنامه نویسی رویداد محور قابل دسترسی باشد.
 امروزه VB.NET به عنوان بخشی از اکوسیستم دات نت در کنار سی شارپ ادامه می یابد، اگرچه مایکروسافت نشان داده است که C# زبان اصلی آینده است. VB همچنان به طور گسترده در محیط های سازمانی، به ویژه برای برنامه های قدیمی ویندوز، اتوماسیون اداری (VBA) و ابزارهای تجاری داخلی استفاده می شود.
 ---
 
 ## چرا ویژوال بیسیک مهم است
-- **مبتدی پسند**: یکی از قابل دسترس ترین زبان های برنامه نویسی که تاکنون ساخته شده است. نحو انگلیسی مانند.
+- **مبتدی پسند**: یکی از قابل دسترس ترین زبان های برنامه نویسی که تاکنون ساخته شده است. نحوی شبیه انگلیسی
 - **توسعه سریع برنامه**: سازنده رابط کاربری گرافیکی با کشیدن و رها کردن، ساخت فرم های ویندوز را سریع می کند.
 - **VBA (ویژوال بیسیک برای برنامه ها)**: زبان ماکرو مایکروسافت آفیس — که توسط میلیون ها کاربر تجاری در سراسر جهان استفاده می شود.
 - ** میراث سازمانی **: بسیاری از برنامه های کاربردی ویندوز حیاتی برای کسب و کار در VB6 یا VB.NET نوشته شده اند.
@@ -809,6 +814,89 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 | آموزش برنامه نویسی | نحو بسیار نزدیک | پایتون (همه کاره تر) |
 | توسعه جدید دات نت | ممکن است اما C# ترجیح داده می شود | سی شارپ |
 | برنامه های کراس پلت فرم | مناسب نیست | سی شارپ، فلاتر، فناوری های وب |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین VB6، VB.NET و VBA چیست؟
+**A:** هر کدام هدف متفاوتی را دنبال می کند:
+- **VB6**: کلاسیک ویژوال بیسیک - مبتنی بر COM، فقط ویندوز، قدیمی
+- **VB.NET**: زبان مدرن دات نت — قابل اجرا بر روی CLR، OOP کامل، بخشی از ویژوال استودیو
+- **VBA**: ویژوال بیسیک برای برنامه ها - تعبیه شده در Microsoft Office
+### Q2: VBA چگونه اکسل را خودکار می کند؟
+**A:** VBA می تواند سلول ها، محدوده ها و کاربرگ ها را دستکاری کند:
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### Q3: چگونه می توانم یک برنامه Windows Forms در VB.NET ایجاد کنم؟
+**A:** از طراح ویژوال استودیو استفاده کنید:
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### Q4: تفاوت های کلیدی بین VB.NET و C# چیست؟
+**A:** آنها زمان اجرا و کتابخانه های یکسانی را به اشتراک می گذارند. تفاوت های نحوی:
+- VB.NET: `Dim`، `Sub`، `Function`،`If...Then...End If`
+- C#: ابتدا نوع، بلوک های `{}`، پایانه های `;`
+- VB.NET به حروف بزرگ و کوچک حساس نیست. سی شارپ به حروف بزرگ و کوچک حساس است
+### Q5: آیا VB.NET هنوز ارزش یادگیری دارد؟
+**A:** برای نگهداری برنامه های موجود، بله. برای پروژه های جدید، سی شارپ ترجیح داده می شود. VBA برای اتوماسیون آفیس ضروری است.
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: خودکار کردن گزارش اکسل با VBA
+**مرحله 1: مشکل را درک کنید**
+یک گزارش فروش ماهانه از داده های خام تهیه کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از VBA برای خواندن داده ها، محاسبه خلاصه ها و فرمت خروجی استفاده کنید.
+**مرحله 3: پیاده سازی **```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**مرحله 4: تمدید**
+نمودارها، قالب بندی مشروط و تحویل ایمیل را اضافه کنید.
 ---
 
 ## خلاصه

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # OCaml
 OCaml (Caml mục tiêu) là ngôn ngữ lập trình hàm được phát triển tại INRIA ở Pháp, được phát hành lần đầu tiên vào năm 1996. Nó kết hợp tính biểu cảm của lập trình hàm với các tính năng thực tế: một hệ thống kiểu mạnh mẽ với suy luận kiểu (Hindley-Milner), khớp mẫu, các kiểu dữ liệu đại số và lập trình hướng đối tượng tùy chọn. OCaml biên dịch thành mã gốc nhanh và cũng hỗ trợ mã byte.
 Ứng dụng thực tế nổi tiếng nhất của OCaml là công ty thương mại **Jane Street**, sử dụng OCaml cho toàn bộ cơ sở hạ tầng giao dịch của mình. Nó cũng được sử dụng trong phát triển trình biên dịch (trình biên dịch Rust ban đầu được viết bằng OCaml), xác minh chính thức, hệ thống tài chính và chứng minh định lý.
@@ -455,15 +456,15 @@ my-ocaml-project/
 ### Lệnh xây dựng chính
 | Lệnh | Mô tả |
 |----------|-------------|
-|  __BẢO VỆ_0__ | Tạo dự án mới |
-|  __BẢO VỆ_1__ | Xây dựng dự án |
-|  __BẢO VỆ_2__ | Chạy tệp thực thi |
-|  __BẢO VỆ_3__ | Chạy thử nghiệm |
-|  __BẢO VỆ_4__ | Tạo tác sạch sẽ |
-|  __BẢO VỆ_5__ | Bắt đầu REPL với dự án được tải |
-|  __BẢO VỆ_6__ | Cài đặt phụ thuộc |
-|  __BẢO VỆ_7__ | Mã định dạng |
-|  __BẢO VỆ_8__ | Tạo công tắc OCaml 5.1 |
+| `dune init project my_app`| Tạo dự án mới |
+| `dune build`| Xây dựng dự án |
+| `dune exec ./bin/main.exe`| Chạy tệp thực thi |
+| `dune test`| Chạy thử nghiệm |
+| `dune clean`| Tạo tác sạch sẽ |
+| `dune utop`| Bắt đầu REPL với dự án được tải |
+| `opam install . --deps-only`| Cài đặt phụ thuộc |
+| `dune build @fmt`| Mã định dạng |
+| `opam switch create 5.1`| Tạo công tắc OCaml 5.1 |
 ---
 
 ##Thử nghiệm
@@ -635,9 +636,9 @@ let process_user id =
 | Công cụ | Mục đích | Cách sử dụng |
 |------|----------|-------|
 | **ocamlprof** | Hồ sơ số lượng thực hiện | `ocamlc -p`rồi`ocamlprof`|
-| **hoàn hảo** | Trình hồ sơ hệ thống Linux |  __BẢO VỆ_2__ |
-| **không thời gian** | Cấu hình bộ nhớ (4.x) |  __BẢO VỆ_3__ |
-| **điểm chuẩn** | Đo điểm chuẩn vi mô |  gói`ocaml-benchmark`|
+| **hoàn hảo** | Trình hồ sơ hệ thống Linux | `perf record ./program`|
+| **không thời gian** | Cấu hình bộ nhớ (4.x) | `OCAML_SPACETIME_INTERVAL=1000 ./program`|
+| **điểm chuẩn** | Đo điểm chuẩn vi mô |  Gói`ocaml-benchmark`|
 ### Kỹ thuật tối ưu hóa
 ```ocaml
 (* 1. Unboxed floats — avoid allocation *)
@@ -712,6 +713,122 @@ ENTRYPOINT ["./app"]
 | Khoa học dữ liệu / ML | Không phải hệ sinh thái | Python, R |
 | Ứng dụng di động | Không phù hợp | Swift, Kotlin, Phi tiêu |
 | Ứng dụng đa năng | Có thể nhưng thích hợp | Đi, Python, Rust |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Suy luận kiểu của OCaml hoạt động như thế nào?
+**A:** Hệ thống kiểu Hindley-Milner của OCaml suy ra các kiểu không có chú thích:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Câu 2: Các kiểu dữ liệu đại số là gì và tại sao chúng lại mạnh mẽ?
+**A:** ADT kết hợp các loại sản phẩm (bản ghi) và loại tổng (các biến thể):
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Câu 3: Các module và functor hoạt động như thế nào?
+**A:** Mô-đun tổ chức mã; functor là các hàm từ module này sang module khác:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4: Điều gì khiến OCaml nhanh?
+**A:** OCaml biên dịch thành mã gốc hiệu quả:
+- Xóa kiểu - không kiểm tra kiểu thời gian chạy
+- Số float và số nguyên không được đóng hộp
+- Biên dịch khớp mẫu để nhảy bảng
+- Tối ưu hóa cuộc gọi đuôi
+- Không có sự tạm dừng của trình thu gom rác (GC gia tăng)
+### Câu hỏi 5: OCaml so sánh với các ngôn ngữ thuộc họ ML khác như thế nào?
+**A:** OCaml cân bằng giữa tính thực tế và độ tinh khiết:
+- vs Haskell: OCaml có các tính năng bắt buộc, trạng thái có thể thay đổi và biên dịch nhanh hơn
+- so với F#: OCaml có hệ thống mô-đun hoàn thiện hơn và hỗ trợ đa nền tảng tốt hơn
+- vs Rust: OCaml có GC (không có quyền sở hữu), nhưng Rust có FFI và hệ sinh thái tốt hơn
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Triển khai Trình thông dịch an toàn kiểu
+**Bước 1: Tìm hiểu vấn đề**
+Xây dựng trình thông dịch cho ngôn ngữ biểu thức đơn giản.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng các kiểu dữ liệu đại số cho các biểu thức và khớp mẫu để đánh giá.
+**Bước 3: Thực hiện**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**Bước 4: Gia hạn**
+Thêm`Let`,`If`,`Lambda`để có ngôn ngữ hoàn chỉnh hơn.
+### Bài toán 2: Xây dựng một bộ phân tích cú pháp đơn giản bằng các bộ kết hợp
+**Bước 1: Tìm hiểu vấn đề**
+Phân tích các biểu thức số học bằng cách sử dụng bộ kết hợp trình phân tích cú pháp.
+**Bước 2: Xác định phương pháp tiếp cận**
+Xây dựng các trình phân tích cú pháp nhỏ và soạn thảo chúng.
+**Bước 3: Thực hiện**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**Bước 4: Soạn**
+Kết hợp các trình phân tích cú pháp với`map`,`seq`,`alt`và`many`để phân tích các biểu thức đầy đủ.
 ---
 
 ## Bản tóm tắt

@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "ارلنگ و اکسیر"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Erlang و Elixir شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [erlang-and-elixir، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "38 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Erlang & Elixir"
+description: "Comprehensive reference for the Erlang and Elixir programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [erlang-and-elixir, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "38 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #ارلنگ و اکسیر
 Erlang توسط اریکسون در سال 1986 برای تامین برق سوئیچ های تلفن ساخته شد - که توضیح می دهد که چرا همزمان، تحمل خطا و سیستم های توزیع شده را تقریباً بهتر از هر چیز دیگری مدیریت می کند. فرآیندهای Erlang سبک وزن هستند، ایزوله هستند و فقط از طریق ارسال پیام ارتباط برقرار می کنند. هنگامی که یک فرآیند از کار می افتد، یک سرپرست آن را دوباره راه اندازی می کند. این فلسفه "بگذار خراب شود" سیستم هایی را تولید می کند که سال ها بدون توقف کار می کنند.
 Elixir یک زبان مدرن است که بر روی ماشین مجازی Erlang (BEAM) توسط Jose Valim در سال 2012 ساخته شده است. این زبان همه چیزهایی را که Erlang ارائه می دهد حفظ می کند - همزمانی، تحمل خطا، توزیع - اما یک نحو دوستانه، فرابرنامه نویسی و ابزار عالی (Mix package manager، Hex Registry Package) را اضافه می کند. Elixir به طور گسترده برای برنامه های کاربردی وب (از طریق چارچوب Phoenix)، سیستم های بلادرنگ و دستگاه های تعبیه شده (از طریق Nerves) استفاده می شود.
@@ -591,15 +596,15 @@ end
 | فرمان | توضیحات |
 |---------|-------------|
 | `mix new my_app`| ایجاد پروژه جدید اکسیر |
-|  __محافظت شده_1__ | ایجاد اپلیکیشن وب جدید فونیکس |
+| `mix phx.new my_app`| ایجاد اپلیکیشن وب جدید فونیکس |
 | `mix deps.get`| واکشی وابستگی ها |
-|  __محافظت شده_3__ | کامپایل پروژه |
+| `mix compile`| کامپایل پروژه |
 | `mix test`| اجرای تست ها |
 | `mix test --trace`| تست ها را با خروجی پرمخاطب اجرا کنید |
-|  __محافظت شده_6__ | اجرای تجزیه و تحلیل استاتیک |
+| `mix credo`| اجرای تجزیه و تحلیل استاتیک |
 | `mix dialyzer`| اجرای بررسی نوع |
 | `mix format`| کد قالب |
-|  __محافظت شده_9__ | ایجاد مستندات |
+| `mix docs`| ایجاد مستندات |
 | `mix release`| ساخت نسخه |
 | `iex -S mix`| شروع REPL با پروژه بارگذاری شده |
 ### فرمتگر کد (.formatter.exs)
@@ -843,7 +848,7 @@ end
 | ابزار | هدف | استفاده |
 |------|---------|-------|
 | **:eprof** | پروفایل در سطح عملکرد | `:eprof.start()`سپس نمایه |
-| **:fprof** | نمایه گراف فراخوان دقیق |  __محافظت شده_1__ |
+| **:fprof** | نمایه گراف فراخوان دقیق | `:fprof.profile(fn -> ... end)`|
 | **:ناظر** | مانیتور سیستم بصری | `:observer.start()`در IEx |
 | **بنچی** | کتابخانه معیار | افزودن به deps |
 ### محک زدن با Benchee
@@ -877,7 +882,7 @@ IO.iodata_to_binary(good)
 ---
 
 ## استقرار
-### انتشارات مخلوط
+### انتشار مخلوط
 ```bash
 MIX_ENV=prod mix release
 _build/prod/rel/my_app/bin/my_app start
@@ -921,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | علم داده / ML | نه اکوسیستم | پایتون، R |
 | برنامه های موبایل | مناسب نیست | سویفت، کاتلین، دارت |
 | API های REST ساده | ممکن است اما بیش از حد برای خدمات کوچک | برو، Node.js، پایتون |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: فلسفه ارلنگ "بگذار خراب شود" چگونه کار می کند؟
+**A:** به جای برنامه نویسی تدافعی، Erlang اجازه می دهد تا پردازش ها از کار بیفتند و آنها را از طریق سرپرستان راه اندازی مجدد کند:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2: خطوط لوله اکسیر چگونه کار می کنند؟
+**A:** عملگر`|>`نتیجه یک تابع را به عنوان اولین آرگومان به آرگومان بعدی منتقل می کند:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3: تفاوت ارلنگ و اکسیر چیست؟
+**A:** Elixir روی Erlang VM (BEAM) با نحو مدرن اجرا می شود:
+- اکسیر: اپراتور لوله، ماکروها، پروتکل ها، درون یابی رشته ها
+- Erlang: نحو ساده تر، OTP داخلی، بیشتر آزمایش شده در نبرد
+- هر دو مدل همزمان، VM و اکوسیستم یکسانی دارند
+### Q4: GenServers چگونه در Elixir کار می کند؟
+**A:** GenServer انتزاع استاندارد برای فرآیندهای حالت است:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5: چگونه خطاهای اکسیر را کنترل کنم؟
+**A:** از`try/rescue`برای استثناء، از`{:ok, result} | {:error, reason}`برای خرابی های مورد انتظار استفاده کنید:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: ساختن فروشگاهی با ارزش کلیدی مقاوم به خطا
+**مرحله 1: مشکل را درک کنید**
+یک فروشگاه با ارزش کلیدی ایجاد کنید که از خرابی فرآیندها جان سالم به در ببرد.
+**مرحله 2: رویکرد را شناسایی کنید**
+از GenServer با سرپرست استفاده کنید.
+**مرحله 3: پیاده سازی **```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**مرحله 4: تایید **
+روند را بکشید و بررسی کنید که با حالت تازه شروع مجدد شود.
+### مشکل 2: اسکراپر همزمان وب
+**مرحله 1: مشکل را درک کنید**
+چندین URL را به طور همزمان واکشی کنید و نتایج را جمع آوری کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+برای اجرای همزمان از Elixir Tasks استفاده کنید.
+**مرحله 3: پیاده سازی **```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**مرحله 4: بهینه سازی**
+برای فهرست‌های URL بزرگ، محدودیت نرخ، تلاش‌های مجدد و پخش را اضافه کنید.
 ---
 
 ## خلاصه

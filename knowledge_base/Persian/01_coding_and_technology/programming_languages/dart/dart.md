@@ -1,42 +1,47 @@
 ---
-# فراداده
-عنوان: "دارت"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی دارت شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [دارت، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "40 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Dart"
+description: "Comprehensive reference for the Dart programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [dart, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "40 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #دارت
 دارت یک زبان برنامه نویسی بهینه شده برای مشتری است که توسط Google توسعه یافته است و اولین بار در سال 2013 منتشر شد. در حالی که دارت در ابتدا به عنوان یک جایگزین بالقوه جاوا اسکریپت برای مرورگرهای وب قرار گرفت، اما هدف اصلی خود را به عنوان زبان پشت **Flutter** پیدا کرد - جعبه ابزار UI چند پلتفرمی گوگل برای ساخت برنامه های موبایل، وب، دسکتاپ و جاسازی شده از یک پایگاه کد واحد.
-دارت بهترین ویژگی‌های زبان‌های مدرن را ترکیب می‌کند: شی گرا است، تایپ اختیاری دارد (ایمنی تهی صدا از Dart 3)، از برنامه‌نویسی ناهمزمان با`async`/`await`پشتیبانی می‌کند، و هم به کد ماشین بومی (برای موبایل/دسک‌تاپ) و هم در جاوا اسکریپت (برای وب) کامپایل می‌شود.
+دارت بهترین ویژگی‌های زبان‌های مدرن را ترکیب می‌کند: شی گرا است، تایپ اختیاری دارد (ایمنی تهی صدا از Dart 3)، از برنامه‌نویسی ناهمزمان با`async`/`await`پشتیبانی می‌کند، و به کد ماشین بومی (برای موبایل/دسک‌تاپ) و جاوا اسکریپت (برای وب) کامپایل می‌شود.
 ---
 
 ## چرا دارت مهم است
@@ -890,7 +895,7 @@ class LoginBloc {
 |------|-----------|---------|--------|----------|
 | **JIT** (Just-In-Time) | توسعه، حالت اشکال زدایی | سریع | کمی کندتر | بارگذاری مجدد داغ در حین توسعه |
 | **AOT** (پیش از زمان) | انتشار بیلد | کمی کندتر | سریعتر | تولید برنامه های موبایل/رومیزی |
-| **JS** | اهداف وب | بستگی دارد | متغیر | برنامه های کاربردی وب فلوتر |
+| **JS** | اهداف وب | بستگی دارد | متفاوت است | برنامه های کاربردی وب فلوتر |
 | **WASM** | وب (تجربی) | بستگی دارد | سریع | هدف وب آینده |
 ```dart
 // Performance tips for Flutter/Dart:
@@ -941,10 +946,10 @@ FutureBuilder<List<Item>>(
 |----------|-------------|--------|
 | **اندروید** | `flutter build apk`/`flutter build appbundle`| APK / AAB برای فروشگاه Play |
 | **iOS** | `flutter build ipa`| IPA برای اپ استور |
-| **وب** |  __محافظت شده_3__ | استاتیک HTML/JS/CSS |
+| **وب** | `flutter build web`| استاتیک HTML/JS/CSS |
 | **ویندوز** | `flutter build windows`| MSIX یا exe مستقل |
 | **macOS** | `flutter build macos`| بسته نرم افزاری |
-| **لینوکس** |  __محافظت شده_6__ | باینری + دارایی |
+| **لینوکس** | `flutter build linux`| باینری + دارایی |
 ```bash
 # Build commands
 flutter build apk --release                    # Android APK
@@ -980,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | توسعه Backend | مورد استفاده اولیه نیست | برو، Node.js، پایتون |
 | علم داده / ML | مناسب نیست | پایتون، R |
 | برنامه نویسی سیستم ها | مناسب نیست | C, C++, Rust |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: ایمنی پوچ دارت چگونه کار می کند؟
+**A:** Dart 2.12+ دارای ایمنی تهی صدا است. متغیرها به طور پیش فرض غیر قابل تهی هستند. از`?`برای اجازه دادن به null استفاده کنید:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2: تفاوت بین`Future`و`Stream`چیست؟
+**A:**`Future`یک نتیجه ناهمگام را نشان می دهد. `Stream`دنباله ای از رویدادهای ناهمگام را نشان می دهد:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3: چگونه وضعیت را در یک برنامه Flutter مدیریت کنم؟
+**A:** رویکردهای متعدد بسته به پیچیدگی:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4: روش های افزونه در دارت چگونه کار می کنند؟
+**A:** برنامه‌های افزودنی قابلیتی را به انواع موجود بدون ارث اضافه می‌کنند:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5: چگونه می توانم کد Dart/Flutter عملکردی را بنویسم؟
+**A:** شیوه های کلیدی:
+- تا جایی که ممکن است از سازنده های`const`استفاده کنید
+- از بازسازی ویجت ها خودداری کنید - از `const`،`final`و`shouldRebuild`استفاده کنید 
+- از`ListView.builder`به جای`ListView`برای لیست های بزرگ استفاده کنید
+- نمایه با Flutter DevTools
+- از`compute()`برای عملیات گران قیمت روی رشته های جدا شده استفاده کنید
+- تماس های`setState`را به حداقل برسانید - در مورد مواردی که نیاز به بازسازی دارد، مشخص باشید
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: ساختن یک کلاینت API از نوع ایمن
+**مرحله 1: مشکل را درک کنید**
+یک سرویس گیرنده API ایجاد کنید که داده ها را واکشی می کند و اشیاء تایپ شده را به درستی برمی گرداند.
+**مرحله 2: رویکرد را شناسایی کنید**
+از کلاس‌های Dart با`fromJson`/ `toJson`، async/wait و کلاس‌های مهر و موم شده برای نتایج استفاده کنید.
+**مرحله 3: پیاده سازی **```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**مرحله 4: تایید **
+با کلاینت HTTP ساختگی تست کنید. بررسی خطاها برای خرابی شبکه و پاسخ‌های بد.
+### مشکل 2: اجرای جستجوی واکنشی با Debounce
+**مرحله 1: مشکل را درک کنید**
+یک فیلد جستجو بسازید که یک API را درخواست کند اما ورودی را بازگرداند تا از درخواست های بیش از حد جلوگیری شود.
+**مرحله 2: رویکرد را شناسایی کنید**
+از جریان های دارت با`debounceTime`و`distinct`استفاده کنید.
+**مرحله 3: پیاده سازی **```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**مرحله 4: تست**
+بررسی کنید که تایپ سریع فقط یک تماس API را پس از دوره بازگرداندن راه‌اندازی می‌کند.
 ---
 
 ## خلاصه

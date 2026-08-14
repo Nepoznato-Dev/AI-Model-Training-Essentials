@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "सी#"
-विवरण: "सी# प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [csharp, प्रोग्रामिंग-भाषा, वाक्यविन्यास, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "29 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "C#"
+description: "Comprehensive reference for the C# programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [csharp, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # सी#
 C# (उच्चारण "सी-शार्प") एक आधुनिक, ऑब्जेक्ट-ओरिएंटेड, टाइप-सुरक्षित प्रोग्रामिंग भाषा है जिसे माइक्रोसॉफ्ट द्वारा एंडर्स हेजलबर्ग के नेतृत्व में विकसित किया गया था और पहली बार 2002 में जारी किया गया था। यह .NET प्लेटफ़ॉर्म पर चलता है और इसे विज़ुअल बेसिक की उत्पादकता के साथ C++ की शक्ति को संयोजित करने के लिए डिज़ाइन किया गया था। आज, C# एक बहुमुखी, क्रॉस-प्लेटफ़ॉर्म भाषा है जिसका उपयोग वेब एप्लिकेशन (ASP.NET), डेस्कटॉप सॉफ़्टवेयर (Windows), गेम डेवलपमेंट (यूनिटी), मोबाइल ऐप्स (MAUI), क्लाउड सर्विसेज (Azure) और बहुत कुछ के लिए किया जाता है।
 C# ने लगातार अन्य भाषाओं - LINQ, async/await, रिकॉर्ड्स, पैटर्न मिलान - से सर्वोत्तम विचारों को अवशोषित किया है, जिससे यह उपलब्ध सबसे अधिक सुविधा संपन्न और डेवलपर-अनुकूल भाषाओं में से एक बन गई है।
@@ -52,7 +57,7 @@ C# ने लगातार अन्य भाषाओं - LINQ, async/await
 | **विंडोज एसोसिएशन** | ऐतिहासिक रूप से विंडोज़ से जुड़ा हुआ; धारणा वास्तविकता से पीछे है | .NET 6+ पूरी तरह से क्रॉस-प्लेटफॉर्म है |
 | **जावा से छोटा पारिस्थितिकी तंत्र** | Maven/PyPI | की तुलना में कम तृतीय-पक्ष लाइब्रेरीज़ नुगेट बढ़ रहा है; कई जावा पुस्तकालयों में C# समकक्ष हैं |
 | **स्टार्टअप में कम आम** | सिलिकॉन वैली की तुलना में उद्यम में अधिक लोकप्रिय | क्लाउड-नेटिव माइक्रोसर्विसेज के लिए गो, रस्ट, नोड.जेएस |
-| **मोबाइल (MAUI)** | Xamarin/MAUI नेटिव या फ़्लटर | की तुलना में कम परिपक्व है जटिल मोबाइल ऐप्स के लिए देशी स्विफ्ट/कोटलिन या फ़्लटर का उपयोग करें |
+| **मोबाइल (MAUI)** | Xamarin/MAUI देशी या फ़्लटर | की तुलना में कम परिपक्व है जटिल मोबाइल ऐप्स के लिए देशी स्विफ्ट/कोटलिन या फ़्लटर का उपयोग करें |
 | **लिनक्स जीयूआई** | Linux पर सीमित देशी GUI विकल्प | वेब-आधारित यूआई (ब्लेज़र) या एवलोनिया | का उपयोग करें
 ---
 
@@ -656,7 +661,7 @@ dotnet lambda deploy-function my-function
 | **एएसपी.नेट कोर** | वेब | एपीआई और वेब ऐप्स के लिए उच्च-प्रदर्शन वेब फ्रेमवर्क |
 | **ब्लेज़र** | वेब (फ्रंटएंड) | जावास्क्रिप्ट | के बजाय C# के साथ इंटरैक्टिव वेब यूआई बनाएं
 | **एंटिटी फ्रेमवर्क कोर** | ओआरएम | LINQ के साथ डेटाबेस का उपयोग; कोड-प्रथम माइग्रेशन |
-| **एकता** | खेल | दुनिया का सबसे लोकप्रिय गेम इंजन (सी# स्क्रिप्टिंग) |
+| **एकता** | गेम्स | दुनिया का सबसे लोकप्रिय गेम इंजन (सी# स्क्रिप्टिंग) |
 | **.नेट माउई** | मोबाइल/डेस्कटॉप | iOS, Android, macOS, Windows के लिए क्रॉस-प्लेटफ़ॉर्म ऐप्स |
 | **एवलोनिया** | डेस्कटॉप | क्रॉस-प्लेटफ़ॉर्म डेस्कटॉप यूआई (जैसे सभी प्लेटफ़ॉर्म के लिए WPF) |
 ### निर्माण और पैकेज प्रबंधन
@@ -680,12 +685,12 @@ dotnet publish -c Release -r linux-x64
 | संस्करण | वर्ष | प्रमुख विशेषताएँ |
 |------|------|----------------|
 | सी# 7 | 2017 | पैटर्न मिलान, टुपल्स,`out`वेरिएबल, स्थानीय फ़ंक्शन |
-| सी# 8 | 2019 | निरर्थक संदर्भ प्रकार,`switch`अभिव्यक्ति, एसिंक स्ट्रीम |
-| सी#9 | 2020 | **रिकॉर्ड**, शीर्ष-स्तरीय विवरण,`init`संपत्तियाँ |
+| सी# 8 | 2019 | अशक्त संदर्भ प्रकार,`switch`अभिव्यक्ति, एसिंक स्ट्रीम |
+| सी#9 | 2020 | **रिकॉर्ड**, शीर्ष-स्तरीय विवरण,`init`गुण |
 | सी#10 | 2021 | रिकॉर्ड संरचनाएं, वैश्विक `using`, फ़ाइल-स्कोप्ड नेमस्पेस |
 | सी#11 | 2022 | कच्चे स्ट्रिंग अक्षर, सूची पैटर्न,`required`सदस्य, सामान्य गणित |
 | सी#12 | 2023 | प्राथमिक कंस्ट्रक्टर, संग्रह अभिव्यक्ति, इनलाइन सरणियाँ |
-| सी#13 | 2024 |  __संरक्षित_5__ संग्रह, नए लॉक प्रकार, प्रथम श्रेणी स्पैन |
+| सी#13 | 2024 | `params`संग्रह, नए लॉक प्रकार, प्रथम श्रेणी स्पैन |
 ---
 
 ## सी# का उपयोग कब करें
@@ -700,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | मोबाइल ऐप्स (MAUI) | C# | के साथ क्रॉस-प्लेटफ़ॉर्म फ़्लटर, रिएक्ट नेटिव, या नेटिव स्विफ्ट/कोटलिन |
 | एआई/एमएल | ML.NET के साथ संभव | पायथन (अत्यधिक पसंदीदा) |
 | सीएलआई उपकरण/स्क्रिप्ट | संभव लेकिन क्रियात्मक | जाओ, जंग, अजगर |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: C# में`class`और`record`के बीच क्या अंतर है?
+**ए:** एक`class`एक संदर्भ प्रकार है जिसमें डिफ़ॉल्ट रूप से परिवर्तनशील गुण होते हैं - दो चर एक ही ऑब्जेक्ट को संदर्भित कर सकते हैं।`record`(C# 9+) मूल्य-आधारित समानता वाला एक संदर्भ प्रकार है - समान डेटा वाले दो रिकॉर्ड समान माने जाते हैं। रिकॉर्ड्स में केवल init गुण हैं, एक अंतर्निहित`ToString`है, और गैर-विनाशकारी उत्परिवर्तन के लिए`with`अभिव्यक्तियों का समर्थन करता है। डेटा वाहक (डीटीओ, मूल्य ऑब्जेक्ट) के लिए रिकॉर्ड का उपयोग करें; पहचान के साथ व्यवहार-समृद्ध संस्थाओं के लिए कक्षाओं का उपयोग करें।
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Q2: async/await और`Task`आंतरिक रूप से कैसे काम करते हैं?
+**ए:**`async/await`कंपाइलर द्वारा उत्पन्न एक राज्य मशीन पर वाक्यात्मक चीनी है। जब आप`await`को`Task`करते हैं, तो विधि प्रतीक्षा बिंदु पर विभाजित हो जाती है: पहले सब कुछ समकालिक रूप से निष्पादित होता है, फिर शेष को निरंतरता के रूप में पंजीकृत किया जाता है। धागा अन्य कार्य करने के लिए स्वतंत्र है। `Task<T>`भविष्य के मूल्य का प्रतिनिधित्व करता है। `ValueTask<T>`हॉट पाथ के लिए एक संरचनात्मक विकल्प है जो परिणाम पहले से ही उपलब्ध होने पर ढेर आवंटन से बचता है।
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### प्रश्न 3: विस्तार विधियाँ क्या हैं, और मुझे उनका उपयोग कब करना चाहिए?
+**ए:** एक्सटेंशन विधियां मौजूदा प्रकारों को संशोधित किए बिना उनमें विधियां जोड़ती हैं। वे एक स्थिर वर्ग में स्थिर विधियाँ हैं, पहले पैरामीटर पर`this`कीवर्ड के साथ। वे एक धाराप्रवाह, श्रृंखलाबद्ध एपीआई सक्षम करते हैं। उन प्रकारों में उपयोगिता विधियां जोड़ने के लिए उनका उपयोग करें जो आपके पास नहीं हैं (जैसे`string`या `IEnumerable<T>`)। उनका अत्यधिक उपयोग करने से बचें - वे कोड को खोजना कठिन बना सकते हैं।
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Q4: आधुनिक C# में पैटर्न मिलान कैसे काम करता है?
+**ए:** सी# ने उत्तरोत्तर अधिक शक्तिशाली पैटर्न मिलान जोड़ा है। स्विच अभिव्यक्ति (सी # 8), प्रकार पैटर्न, संपत्ति पैटर्न, संबंधपरक पैटर्न, और सूची पैटर्न (सी # 11) संक्षिप्त, अभिव्यंजक सशर्त तर्क की अनुमति देते हैं। पैटर्न मिलान लंबी if/else श्रृंखलाओं को प्रतिस्थापित करता है और कंपाइलर द्वारा इसकी संपूर्ण जांच की जाती है।
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### Q5: .NET में निर्भरता इंजेक्शन क्या है, और मैं इसका उपयोग कैसे करूँ?
+**ए:** .NET में`Microsoft.Extensions.DependencyInjection`के माध्यम से अंतर्निहित DI समर्थन है। आप सेवाओं को उनके जीवनकाल (सिंगलटन, स्कोप्ड, ट्रांसिएंट) के साथ पंजीकृत करते हैं, और कंटेनर उन्हें कंस्ट्रक्टर मापदंडों के माध्यम से इंजेक्ट करता है। सिंगलटन: ऐप के लिए एक उदाहरण। दायरा: प्रति HTTP अनुरोध एक। क्षणिक: हर बार नया उदाहरण।
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: कैशिंग के साथ एक सामान्य रिपॉजिटरी बनाएं
+**समस्या कथन:** एक डेकोरेटर के साथ एक सामान्य रिपॉजिटरी पैटर्न लागू करें जो कैशिंग जोड़ता है। रिपॉजिटरी को सीआरयूडी संचालन का समर्थन करना चाहिए, और कैशिंग डेकोरेटर को पढ़ने को कैश करना चाहिए और लिखने पर अमान्य करना चाहिए।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) एक सामान्य`IRepository<T>`इंटरफ़ेस, (2) एक ठोस कार्यान्वयन (उदाहरण के लिए, इन-मेमोरी), (3) एक कैशिंग डेकोरेटर जो किसी भी रिपॉजिटरी को लपेटता है, (4) लिखने के संचालन पर कैश अमान्यकरण। डेकोरेटर पैटर्न डेटा एक्सेस लॉजिक के लिए ऑर्थोगोनल कैशिंग रखता है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+-`Get`,`GetAll`,`Add`,`Update`,`Delete`के साथ`IRepository<T>`को परिभाषित करें।
+-`CachingRepository<T>`बनाएं जो`IRepository<T>`को लपेटता है और`IMemoryCache`का उपयोग करता है।
+- कैश कुंजी: `typeof(T).Name:{id}`।
+- लिखने के संचालन पर, कैश प्रविष्टि को अमान्य करें।
+**चरण 3 - समाधान लागू करें:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- चिंताओं का पृथक्करण: कैशिंग एक डेकोरेटर है, रिपॉजिटरी में मिश्रित नहीं।
+- डीआई पंजीकरण:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(स्क्रूटर का उपयोग करके)।
+- उत्पादन: मल्टी-सर्वर परिदृश्यों के लिए`IDistributedCache`(Redis) का उपयोग करें, और`CacheStampede`सुरक्षा के साथ कैश-साइड पैटर्न जोड़ें।
+### समस्या 2: एक मिडलवेयर पाइपलाइन लागू करें
+**समस्या कथन:** ASP.NET कोर के अनुरोध पाइपलाइन के समान एक मिडलवेयर पाइपलाइन बनाएं। प्रत्येक मिडलवेयर अनुरोध को संसाधित कर सकता है, अगले मिडलवेयर को कॉल कर सकता है और प्रतिक्रिया को संसाधित कर सकता है।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) पाइपलाइन का प्रतिनिधित्व करने वाला एक`RequestDelegate`प्रकार, (2) मिडलवेयर जो अगले प्रतिनिधि को लपेटता है, (3) मिडलवेयर बनाने के लिए एक बिल्डर एपीआई। यह प्रतिनिधियों के साथ क्रियान्वित उत्तरदायित्व श्रृंखला पैटर्न है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+-`RequestDelegate``Func<Context, RequestDelegate, Task>` है।
+- प्रत्येक मिडलवेयर को संदर्भ और एक`next`फ़ंक्शन प्राप्त होता है।
+-`Use`मिडलवेयर जोड़ता है; `Build`उन्हें एक एकल प्रतिनिधि में संयोजित करता है।
+**चरण 3 - समाधान लागू करें:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- मिडलवेयर ऑर्डर मायने रखता है: सबसे पहले जोड़ा गया = सबसे बाहरी (अनुरोध पर पहले निष्पादित, प्रतिक्रिया पर अंतिम)।
+- टर्मिनल मिडलवेयर (कोई`next`कॉल नहीं) पाइपलाइन को शॉर्ट-सर्किट करता है।
+- उत्पादन: ASP.NET कोर की पाइपलाइन बिल्कुल इसी पैटर्न पर है, जो शून्य आवंटन के लिए संकलित अभिव्यक्ति पेड़ों के साथ अनुकूलित है।
 ---
 
 ## सारांश

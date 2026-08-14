@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Ve"
-descripción: "Referencia completa para el lenguaje de programación Go que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Go"
+description: "Comprehensive reference for the Go programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [ir, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "30 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [go, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "30 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Ir
 Go (a menudo llamado "Golang" por su nombre de dominio original) es un lenguaje de programación compilado y tipado estáticamente diseñado en Google por Robert Griesemer, Rob Pike y Ken Thompson. Fue lanzado por primera vez en 2012 con el objetivo explícito de ser un mejor lenguaje para la programación de sistemas, uno que combine el rendimiento de C con la productividad de lenguajes dinámicos como Python. Go es conocido por su simplicidad, compilación rápida, simultaneidad integrada (gorrutinas y canales) y excelentes herramientas.
 Go impulsa gran parte del ecosistema de infraestructura de la nube: Docker, Kubernetes, Terraform, Prometheus, etc. y el servidor HTTP de la biblioteca estándar de Go están todos escritos en Go. Se ha convertido en el lenguaje predeterminado para el desarrollo nativo de la nube, los microservicios y las herramientas CLI.
@@ -725,6 +730,419 @@ go mod tidy
 | Ciencia de datos / ML | No es el ecosistema adecuado | Pitón, R |
 | GUI de escritorio/móvil | Sin marco GUI | Utilice una interfaz web o un idioma nativo |
 | Sistemas integrados | Demasiado pesado (GC, tiempo de ejecución) | C, óxido |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Por qué Go no tiene excepciones? ¿Cómo debo manejar los errores?
+**R:** Go utiliza devoluciones de errores explícitos en lugar de excepciones. Cada función que puede fallar devuelve un`error`como último valor de retorno. Esto obliga a la persona que llama a manejar los errores explícitamente: sin fallas silenciosas ni bloques de captura olvidados. El patrón idiomático es `if err != nil`. Utilice`fmt.Errorf`con`%w`para ajustar errores y`errors.Is`/`errors.As`para comprobar tipos de errores. Para errores irrecuperables (errores de programación), utilice `panic`.
+```go
+func readConfig(path string) (Config, error) {
+    data, err := os.ReadFile(path)
+    if err != nil {
+        return Config{}, fmt.Errorf("reading config %s: %w", path, err)
+    }
+    var cfg Config
+    if err := json.Unmarshal(data, &cfg); err != nil {
+        return Config{}, fmt.Errorf("parsing config %s: %w", path, err)
+    }
+    return cfg, nil
+}
+```
+
+### P2: ¿Qué son las gorutinas y en qué se diferencian de los subprocesos del sistema operativo?
+**R:** Las gorutinas son subprocesos livianos en el espacio de usuario administrados por el tiempo de ejecución de Go. Comienzan con ~2 KB de pila (frente a ~1 MB para subprocesos del sistema operativo), el programador los multiplexa en subprocesos del sistema operativo y se pueden crear millones a la vez. La comunicación entre gorutinas utiliza canales (o primitivas`sync`para estado compartido). Utilice siempre`sync.WaitGroup`o cancelación de contexto para evitar fugas de rutinas.
+```go
+// Launch thousands of goroutines — perfectly fine
+var wg sync.WaitGroup
+for i := 0; i < 10000; i++ {
+    wg.Add(1)
+    go func(id int) {
+        defer wg.Done()
+        process(id)
+    }(i)
+}
+wg.Wait()
+```
+
+### P3: ¿Cuándo debo usar canales versus mutex para la concurrencia?
+**R:** Utilice canales cuando las gorutinas necesiten comunicar datos: imponen la filosofía de "compartir memoria comunicando". Utilice mutex (`sync.Mutex`) cuando las rutinas necesiten proteger el estado compartido (cachés, contadores, grupos de conexiones). Una buena regla: si se pasan datos entre gorutinas, utilice canales; Si varias gorutinas acceden a los datos, utilice un mutex. Para operaciones atómicas simples, use `sync/atomic`.
+```go
+// Channel pattern — pipeline
+func producer(nums chan<- int) {
+    for i := 0; i < 10; i++ { nums <- i }
+    close(nums)
+}
+func consumer(nums <-chan int, results chan<- int) {
+    for n := range nums { results <- n * n }
+    close(results)
+}
+
+// Mutex pattern — shared cache
+type SafeCache struct {
+    mu    sync.RWMutex
+    items map[string]string
+}
+func (c *SafeCache) Get(key string) (string, bool) {
+    c.mu.RLock()
+    defer c.mu.RUnlock()
+    v, ok := c.items[key]
+    return v, ok
+}
+```
+
+### P4: ¿Cuál es la diferencia entre los sectores/mapas`nil`y los vacíos?
+**R:** Un segmento`nil`(`var s []int`) no tiene una matriz subyacente, longitud 0, capacidad 0. Un segmento vacío (`s := []int{}`o`make([]int, 0)`) tiene una matriz subyacente pero longitud 0. Ambos funcionan de manera idéntica con`append`,`len`,`cap`y `range`. La clasificación JSON es diferente: los sectores nulos se convierten en `null`, los sectores vacíos se convierten en `[]`. Mejores prácticas: prefiera sectores nulos para los valores de retorno (indican "sin datos"), sectores vacíos cuando la salida JSON es importante.
+```go
+var nilSlice []int          // nil, len=0, cap=0
+emptySlice := []int{}       // not nil, len=0, cap=0
+
+// Both work with append
+nilSlice = append(nilSlice, 1)   // Now len=1
+emptySlice = append(emptySlice, 1) // Now len=1
+
+// JSON difference
+json.Marshal(nilSlice)     // "null"
+json.Marshal(emptySlice)   // "[]"
+```
+
+### P5: ¿Cómo funcionan las interfaces en Go y qué es la interfaz vacía?
+**R:** Las interfaces Go se satisfacen implícitamente: un tipo implementa una interfaz implementando sus métodos, sin ninguna palabra clave `implements`. Esto permite el desacoplamiento y la composición. La interfaz vacía`interface{}`(o`any`en Go 1.18+) se adapta a todos los tipos; úsela con moderación (los genéricos suelen ser mejores). Los valores de la interfaz son pares: `(type, value)`. Una interfaz nula tiene ambos como nulos.
+```go
+// Implicit interface satisfaction
+type Writer interface {
+    Write(p []byte) (n int, err error)
+}
+
+// MyWriter implements Writer without declaring it
+type MyWriter struct { buf *bytes.Buffer }
+func (w *MyWriter) Write(p []byte) (int, error) { return w.buf.Write(p) }
+
+// Type assertion and type switch
+func describe(i interface{}) string {
+    switch v := i.(type) {
+    case int:
+        return fmt.Sprintf("integer: %d", v)
+    case string:
+        return fmt.Sprintf("string: %q", v)
+    default:
+        return fmt.Sprintf("unknown: %T", v)
+    }
+}
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: crear un Web Scraper simultáneo con limitación de velocidad
+**Declaración del problema:** Cree un programa Go que obtenga URL de una lista simultáneamente, extraiga títulos de páginas, respete un límite de velocidad de 10 solicitudes por segundo y recopile resultados sin carreras de datos.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) recuperación HTTP simultánea con gorutinas, (2) limitación de velocidad para evitar saturar los servidores, (3) recopilación de resultados sin carreras, (4) manejo adecuado de errores para solicitudes fallidas. Las primitivas de concurrencia de Go (gorrutinas, canales, `errgroup`) son ideales para esto.
+**Paso 2: Identifique el enfoque:**
+- Utilice`golang.org/x/time/rate`para limitar la tasa de depósito de tokens.
+- Utilice`sync.WaitGroup`o`errgroup.Group`para gestionar gorutinas.
+- Utilizar un canal de resultados para recopilar resultados de forma segura.
+- Utilice`context.Context`para cancelaciones y tiempos de espera.
+**Paso 3: Implementar la solución:**
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "io"
+    "net/http"
+    "regexp"
+    "sync"
+    "time"
+
+    "golang.org/x/sync/errgroup"
+    "golang.org/x/time/rate"
+)
+
+type Result struct {
+    URL   string
+    Title string
+    Error error
+}
+
+var titleRegex = regexp.MustCompile(`<title[^>]*>(.*?)</title>`)
+
+func fetchTitle(ctx context.Context, client *http.Client, url string) Result {
+    req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+    resp, err := client.Do(req)
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+    defer resp.Body.Close()
+
+    body, err := io.ReadAll(io.LimitReader(resp.Body, 1<<20)) // 1MB limit
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+
+    matches := titleRegex.FindSubmatch(body)
+    if matches == nil {
+        return Result{URL: url, Title: "(no title)"}
+    }
+    return Result{URL: url, Title: string(matches[1])}
+}
+
+func scrapeAll(ctx context.Context, urls []string, rps int) []Result {
+    limiter := rate.NewLimiter(rate.Limit(rps), rps)
+    client := &http.Client{Timeout: 10 * time.Second}
+    results := make([]Result, len(urls))
+
+    g, ctx := errgroup.WithContext(ctx)
+    g.SetLimit(20) // Max 20 concurrent goroutines
+
+    for i, url := range urls {
+        i, url := i, url // Capture loop variables
+        g.Go(func() error {
+            if err := limiter.Wait(ctx); err != nil {
+                return err
+            }
+            results[i] = fetchTitle(ctx, client, url)
+            return nil
+        })
+    }
+
+    if err := g.Wait(); err != nil {
+        fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+    }
+    return results
+}
+```
+
+**Paso 4: Verificar y optimizar:**
+- Sin carreras de datos: cada goroutine escribe en su propio índice en `results`, no se necesita mutex.
+-`errgroup.SetLimit`limita la concurrencia independientemente del limitador de tasa.
+-`io.LimitReader`evita la lectura de páginas excesivamente grandes.
+-`http.NewRequestWithContext`garantiza que las solicitudes se cancelen cuando finalice el contexto.
+- Para producción: agregue lógica de reintento con retroceso exponencial, ajuste de agrupación de conexiones y métricas.
+### Problema 2: implementar una caché LRU genérica
+**Declaración del problema:** Implemente una caché LRU (menos utilizada recientemente) genérica y segura para subprocesos en Go usando genéricos (Go 1.18+). Debería admitir `Get`,`Set`y`Delete`con complejidad temporal O(1).
+**Paso 1: comprenda el problema:**
+Una caché LRU necesita búsqueda O(1) (mapa hash) y actualizaciones de orden O(1) (lista doblemente enlazada). En `Get`: mueve el elemento al frente. En `Set`: inserción en la parte delantera; desalojar desde atrás si se excede la capacidad. La seguridad de los subprocesos requiere un mutex.
+**Paso 2: Identifique el enfoque:**
+- Utilice`container/list`(lista doblemente enlazada) para O(1) mover al frente y quitar desde atrás.
+- Utilice`map[K]*list.Element`para la búsqueda O(1).
+- Utilice`sync.Mutex`para seguridad del hilo.
+- Genéricos (`[K comparable, V any]`) para seguridad de tipos.
+**Paso 3: Implementar la solución:**
+```go
+type entry[K comparable, V any] struct {
+    key   K
+    value V
+}
+
+type LRUCache[K comparable, V any] struct {
+    capacity int
+    items    map[K]*list.Element
+    order    *list.List
+    mu       sync.Mutex
+}
+
+func NewLRU[K comparable, V any](capacity int) *LRUCache[K, V] {
+    return &LRUCache[K, V]{
+        capacity: capacity,
+        items:    make(map[K]*list.Element),
+        order:    list.New(),
+    }
+}
+
+func (c *LRUCache[K, V]) Get(key K) (V, bool) {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.MoveToFront(elem)
+        return elem.Value.(*entry[K, V]).value, true
+    }
+    var zero V
+    return zero, false
+}
+
+func (c *LRUCache[K, V]) Set(key K, value V) {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.MoveToFront(elem)
+        elem.Value.(*entry[K, V]).value = value
+        return
+    }
+
+    if c.order.Len() >= c.capacity {
+        oldest := c.order.Back()
+        if oldest != nil {
+            c.order.Remove(oldest)
+            delete(c.items, oldest.Value.(*entry[K, V]).key)
+        }
+    }
+
+    e := &entry[K, V]{key: key, value: value}
+    elem := c.order.PushFront(e)
+    c.items[key] = elem
+}
+
+func (c *LRUCache[K, V]) Delete(key K) bool {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.Remove(elem)
+        delete(c.items, key)
+        return true
+    }
+    return false
+}
+
+func (c *LRUCache[K, V]) Len() int {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+    return c.order.Len()
+}
+```
+
+**Paso 4: Verificar y optimizar:**
+- O(1) para `Get`, `Set`, `Delete`: la búsqueda de mapas es O(1) promedio; las operaciones de lista (`MoveToFront`,`PushFront`,`Remove`,`Back`) son todas O(1).
+- Seguridad de subprocesos:`sync.Mutex`garantiza que solo una rutina acceda al caché a la vez. Para cargas de trabajo con mucha lectura, utilice `sync.RWMutex`.
+- Genéricos:`[K comparable, V any]`garantiza que las claves admitan`==`(requerido para las claves de mapas), mientras que los valores pueden ser de cualquier tipo.
+- Producción: considere `github.com/hashicorp/golang-lru/v2`: probado en batalla con soporte TTL y fragmentación para reducir la contención de bloqueos.
+### Problema 3: construir un servidor de chat TCP
+**Declaración del problema:** Cree un servidor de chat TCP simultáneo donde los clientes puedan conectarse, transmitir mensajes a todos los demás clientes conectados y desconectarse sin problemas. Maneje clientes lentos sin bloquear a otros.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) aceptar conexiones TCP, (2) una rutina de lectura por cliente, (3) un mecanismo de transmisión para enviar mensajes a todos los clientes, (4) manejar desconexiones y clientes lentos. Este es un patrón clásico en abanico.
+**Paso 2: Identifique el enfoque:**
+- Utilice`net.Listener`para conexiones TCP.
+- Utilizar una rutina central`hub`con canales para alta/baja/emisión de clientes.
+- Cada cliente obtiene una rutina de escritura dedicada con un canal almacenado en búfer; los clientes lentos no bloquean a otros.
+- Utilice`context.Context`para un cierre elegante.
+**Paso 3: Implementar la solución:**
+```go
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "log"
+    "net"
+    "sync"
+)
+
+type Client struct {
+    conn net.Conn
+    name string
+    send chan string
+}
+
+type Hub struct {
+    clients    map[*Client]bool
+    broadcast  chan string
+    register   chan *Client
+    unregister chan *Client
+    mu         sync.RWMutex
+}
+
+func NewHub() *Hub {
+    return &Hub{
+        clients:    make(map[*Client]bool),
+        broadcast:  make(chan string, 256),
+        register:   make(chan *Client),
+        unregister: make(chan *Client),
+    }
+}
+
+func (h *Hub) Run() {
+    for {
+        select {
+        case client := <-h.register:
+            h.mu.Lock()
+            h.clients[client] = true
+            h.mu.Unlock()
+            h.broadcast <- fmt.Sprintf("[system] %s joined", client.name)
+
+        case client := <-h.unregister:
+            h.mu.Lock()
+            if _, ok := h.clients[client]; ok {
+                delete(h.clients, client)
+                close(client.send)
+            }
+            h.mu.Unlock()
+            h.broadcast <- fmt.Sprintf("[system] %s left", client.name)
+
+        case msg := <-h.broadcast:
+            h.mu.RLock()
+            for client := range h.clients {
+                select {
+                case client.send <- msg:
+                default:
+                    // Slow client — disconnect
+                    go func(c *Client) {
+                        h.unregister <- c
+                        c.conn.Close()
+                    }(client)
+                }
+            }
+            h.mu.RUnlock()
+        }
+    }
+}
+
+func handleClient(hub *Hub, conn net.Conn) {
+    defer conn.Close()
+    scanner := bufio.NewScanner(conn)
+
+    // Read first line as name
+    if !scanner.Scan() { return }
+    name := scanner.Text()
+
+    client := &Client{
+        conn: conn,
+        name: name,
+        send: make(chan string, 64),
+    }
+    hub.register <- client
+    defer func() { hub.unregister <- client }()
+
+    // Write goroutine
+    go func() {
+        for msg := range client.send {
+            fmt.Fprintf(conn, "%s\n", msg)
+        }
+    }()
+
+    // Read loop
+    for scanner.Scan() {
+        text := scanner.Text()
+        hub.broadcast <- fmt.Sprintf("[%s] %s", name, text)
+    }
+}
+
+func main() {
+    hub := NewHub()
+    go hub.Run()
+
+    listener, err := net.Listen("tcp", ":8080")
+    if err != nil { log.Fatal(err) }
+    log.Println("Chat server listening on :8080")
+
+    for {
+        conn, err := listener.Accept()
+        if err != nil { log.Println(err); continue }
+        go handleClient(hub, conn)
+    }
+}
+```
+
+**Paso 4: Verificar y optimizar:**
+- Manejo lento del cliente: el`select`con`default`en transmisión evita el bloqueo. Los clientes lentos se desconectan si se llena su búfer.
+- Sin carreras: la rutina central es el único escritor del mapa `clients`; `mu`protege las lecturas durante la transmisión.
+- Apagado elegante: agregue`context.Context`y un controlador de señal para cerrar las conexiones del oyente y drenar.
+- Producción: considere usar`golang.org/x/net/websocket`para clientes de navegador y agregue autenticación, historial de mensajes y salas.
 ---
 
 ## Resumen

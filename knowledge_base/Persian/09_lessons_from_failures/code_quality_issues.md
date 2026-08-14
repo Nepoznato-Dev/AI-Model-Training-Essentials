@@ -1,38 +1,42 @@
 ---
-# فراداده
-عنوان: "مشکلات کیفیت کد"
-توضیحات: "اشتباهات رایج کدنویسی و ضد الگوها"
-دسته بندی: "درس هایی از شکست"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "درس هایی از تیم پایگاه دانش شکست ها"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [کد، کیفیت، مسائل، درس‌هایی از شکست]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "18 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Code Quality Issues"
+description: "Common coding mistakes and anti-patterns"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [code, quality, issues, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "18 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # مشکلات کیفیت کد
 این سند مشکلات رایج کیفیت کد از جمله نام‌های بد متغیرها، اسناد ضعیف، کد اسپاگتی، وابستگی‌های دایره‌ای و سایر مسائل مربوط به قابلیت نگهداری را ادغام می‌کند.

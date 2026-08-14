@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Scienze dell'Apprendimento e Pedagogia
-La scienza dell’apprendimento è lo studio interdisciplinare di come le persone apprendono, attingendo alla psicologia, alle neuroscienze, all’educazione e alle scienze cognitive. La pedagogia è l’arte e la scienza dell’insegnamento. Insieme, rispondono alle domande che contano per chiunque insegni, formi, faccia da mentore o progetta contenuti educativi: cosa aiuta effettivamente le persone ad apprendere? Quali tecniche di studio comuni sono inefficaci? Come dovrebbe essere strutturata l'istruzione per la massima ritenzione e trasferimento?
+La scienza dell’apprendimento è lo studio interdisciplinare di come le persone apprendono, attingendo alla psicologia, alle neuroscienze, all’educazione e alle scienze cognitive. La pedagogia è la pratica e la metodologia dell’insegnamento. Insieme, rispondono a domande rilevanti per chiunque insegni, formi, faccia da mentore o progetta contenuti educativi: quali metodi aiutano le persone ad apprendere in modo efficace? Quali tecniche di studio comuni sono inefficienti? Come dovrebbe essere strutturata l'istruzione per una ritenzione e un trasferimento ottimali?
 ---
 
 ## Come funziona l'apprendimento
@@ -76,7 +77,7 @@ La scienza dell’apprendimento è lo studio interdisciplinare di come le person
 |----------|----------------------|----------------------|
 | **Rileggendo** | Illusione di fluidità: il testo sembra familiare | Passivo; non rafforza il recupero |
 | **Evidenziazione** | Si sente produttivo; segnala informazioni importanti | Non richiede un'elaborazione profonda |
-| **Riepilogo** | Sembra un coinvolgimento attivo | Spesso copiato alla lettera; non richiede il recupero |
+| **Riepilogo** | Sembra un impegno attivo | Spesso copiato alla lettera; non richiede il recupero |
 | **Pratica di massa (stipamento)** | Funziona per il richiamo a breve termine | Dimenticamento rapido; trasferimento scarso |
 | **Stili di apprendimento** (visivo/uditivo/cinestetico) | Intuitivamente attraente | Nessuna prova che abbinare l'istruzione allo stile preferito migliori l'apprendimento |
 ---
@@ -126,7 +127,7 @@ Ogni recensione spinge ulteriormente la curva dell’oblio. L'intervallo ottimal
 | Passo | Descrizione |
 |------|-------------|
 | **1. Identificare i risultati desiderati** | Cosa dovrebbero sapere, comprendere ed essere in grado di fare gli studenti? |
-| **2. Determinare le prove accettabili** | Come saprai che hanno raggiunto i risultati? (Prima valutazione) |
+| **2. Determinare le prove accettabili** | Come saprai che hanno raggiunto i risultati? (Valutazione prima) |
 | **3. Pianifica esperienze di apprendimento** | Quali attività, istruzioni e pratiche forniranno agli studenti gli strumenti per avere successo? |
 ### Ponteggi
 | Tecnica | Descrizione |
@@ -157,9 +158,9 @@ Ogni recensione spinge ulteriormente la curva dell’oblio. L'intervallo ottimal
 ### Tipi di valutazione
 | Digitare | Scopo | Tempi | Esempio |
 |------|---------|--------|---------|
-| **Diagnostica** | Identificare le conoscenze pregresse e le idee sbagliate | Prima dell'istruzione | Pre-prova; inventario concettuale |
+| **Diagnostica** | Identificare le conoscenze pregresse e le idee sbagliate | Prima dell'istruzione | Pre-test; inventario concettuale |
 | **Formativo** | Monitorare l'apprendimento; fornire feedback | Durante l'istruzione | Quiz; biglietti di uscita; revisione tra pari |
-| **Sommativa** | Valutare l'apprendimento alla fine | Dopo l'istruzione | Esame finale; progetto; portafoglio |
+| **Sommativa** | Valutare l'apprendimento alla fine | Dopo le istruzioni | Esame finale; progetto; portafoglio |
 | **Autentico** | Valutare l'applicazione nel mondo reale | Durante o dopo | Caso di studio; simulazione; tirocinio |
 ### Feedback efficace
 | Principio | Descrizione |

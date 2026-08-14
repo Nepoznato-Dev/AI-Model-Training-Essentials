@@ -293,4 +293,4 @@ When something breaks at 3 AM:
 6. **Communicate** — update stakeholders and users (status page).
 7. **Post-mortem** — within 24–48 hours, document root cause and action items.
 
-The goal isn't just to fix the incident — it's to make sure the same incident can't happen again.
+The objective is not only to resolve the incident but to ensure the same incident cannot recur.

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Lua
 Lua to lekki, osadzany język skryptowy przeznaczony do rozszerzania aplikacji. Utworzony w 1993 roku na Papieskim Uniwersytecie Katolickim w Rio de Janeiro w Brazylii, Lua jest jednym z najszybszych dostępnych języków skryptowych. Jego niewielkie rozmiary (interpreter ma ~120 KB) i prostota sprawiają, że jest to doskonały wybór do tworzenia skryptów gier, systemów wbudowanych i konfiguracji.
 Lua jest najbardziej znana jako język skryptowy Robloxa (platformy gier z ponad 200 milionami użytkowników miesięcznie), dodatków do World of Warcraft i licznych silników gier (Love2D, Defold, Corona SDK). Jest również używany w Nginx (OpenResty), Redis i Wireshark.
@@ -259,7 +260,7 @@ local a, b, c = table.unpack({10, 20, 30})
 print(a, b, c)  -- 10  20  30
 ```
 
-### Wzory ciągów (alternatywa Regex Luy)
+### Wzory ciągów (alternatywa dla wyrażeń regularnych Lui)
 ```lua
 -- Lua patterns — simpler than regex but powerful
 local text = "Error 404: Page not found on 2024-01-15"
@@ -622,6 +623,254 @@ CMD lua5.4 src/main.lua
 | Tworzenie stron internetowych | OpenResty istnieje, ale jest niszowy | JavaScript, Python, Go |
 | Ogólne tworzenie aplikacji | Nie przeznaczony dla samodzielnych aplikacji | Python, Go, Java |
 | Nauka o danych | Nie ekosystem | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Dlaczego Lua używa indeksowania opartego na 1 zamiast na 0?
+**O:** Lua został zaprojektowany dla użytkowników niebędących programistami i stosuje się do naturalnych konwencji liczenia. Operator `#`,`ipairs`i funkcje łańcuchowe korzystają z indeksowania opartego na 1:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+Jest to spójne w całej bibliotece standardowej. Podczas łączenia się z C (opartym na 0) należy pamiętać o przesunięciu.
+### P2: Jak zaimplementować wzorce obiektowe w Lua?
+**A:** Lua używa tabel i metatabel do OOP. Metametoda`__index`umożliwia wyszukiwanie metod na prototypach:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### P3: Jak działają współprogramy i kiedy powinienem ich używać?
+**O:** Współprogramy to wątki kooperacyjne, które mogą zawieszać i wznawiać wykonywanie. Są idealne do iteratorów, wzorców asynchronicznych i logiki gry:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### P4: Jaki jest najlepszy sposób obsługi błędów w Lua?
+**A:** Użyj`pcall`/ `xpcall`, aby wychwycić błędy i zwrócić wiele wartości dla wzorców powodzenia/porażki:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### P5: Jak zoptymalizować wydajność Lua pod kątem gier i systemów wbudowanych?
+**O:** Kluczowe praktyki:
+- Użyj`local`dla wszystkich zmiennych — dostęp globalny jest znacznie wolniejszy
+- Buforuj często używane pola tabeli w ustawieniach lokalnych
+- Wstępnie przydziel tabele, gdy rozmiar jest znany:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- Unikaj tworzenia tabel tymczasowych w gorących pętlach
+- Użyj`table.concat`zamiast`..`do łączenia wielu ciągów
+- Profil z hakami`os.clock()`lub debugowaniem
+- W LuaJIT użyj FFI dla współdziałania C zamiast API C
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Budowanie parsera konfiguracji
+**Krok 1: Zrozum problem**
+Przeanalizuj prosty plik konfiguracyjny klucz-wartość, w którym każda linia to`key = value`.
+**Krok 2: Zidentyfikuj podejście**
+Przeczytaj linie, podziel na `=`, przytnij białe znaki i zapisz w tabeli.
+**Krok 3: Wdróż**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**Krok 4: Przedłuż**
+Dodaj obsługę sekcji (`[section]`), wymuszenie typu (liczby, wartości logiczne) i zagnieżdżone tabele.
+### Problem 2: Implementacja prostego systemu zdarzeń
+**Krok 1: Zrozum problem**
+Utwórz emiter zdarzeń, który obsługuje subskrybowanie nazwanych zdarzeń i emitowanie ich.
+**Krok 2: Zidentyfikuj podejście**
+Użyj tabeli mapującej nazwy zdarzeń na listy funkcji obsługi.
+**Krok 3: Wdróż**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**Krok 4: Zweryfikuj**
+Testuj z wieloma zdarzeniami, usuwaniem i obsługą błędów w programach obsługi.
+### Problem 3: Tworzenie potoku opartego na współprogramie
+**Krok 1: Zrozum problem**
+Zbuduj potok przetwarzania danych, w którym każdy etap filtruje lub przekształca dane połączone za pomocą współprogramów.
+**Krok 2: Zidentyfikuj podejście**
+Używaj współprogramów jako etapów potoku — każdy etap łączy się z poprzednim i przechodzi do następnego.
+**Krok 3: Wdróż**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**Krok 4: Optymalizacja**
+Ten potok oparty na ściąganiu przetwarza jeden element na raz przy minimalnym obciążeniu pamięci — jest to idealne rozwiązanie w przypadku dużych lub nieskończonych strumieni.
 ---
 
 ## Streszczenie

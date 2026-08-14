@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Mở đầu
 Prolog (Lập trình logic) là ngôn ngữ lập trình logic được tạo ra vào năm 1972 bởi Alain Colmerauer và Philippe Roussel. Không giống như mọi ngôn ngữ khác trong danh sách này, Prolog không cho máy tính biết *cách* giải quyết vấn đề — bạn khai báo *điều gì* là đúng (sự kiện và quy tắc) và công cụ suy luận của Prolog tìm ra câu trả lời thông qua suy luận logic.
-Prolog là ngôn ngữ được lựa chọn cho các hệ thống chuyên gia, xử lý ngôn ngữ tự nhiên và nghiên cứu AI vào những năm 1980. Nó hỗ trợ dự án Hệ thống máy tính thế hệ thứ năm của Nhật Bản và được sử dụng trong máy tính Watson của IBM để hiểu ngôn ngữ tự nhiên. Ngày nay, Prolog được sử dụng trong việc giải ràng buộc, lập kế hoạch, suy luận kiểu, lý luận pháp lý và mọi vấn đề ở mọi nơi đều được thể hiện một cách tự nhiên dưới dạng các mối quan hệ logic.
+Prolog là ngôn ngữ được lựa chọn cho các hệ thống chuyên gia, xử lý ngôn ngữ tự nhiên và nghiên cứu AI vào những năm 1980. Nó hỗ trợ dự án Hệ thống máy tính thế hệ thứ năm của Nhật Bản và được sử dụng trong Watson của IBM để hiểu ngôn ngữ tự nhiên. Ngày nay, Prolog được sử dụng trong việc giải quyết ràng buộc, lập kế hoạch, suy luận kiểu, lý luận pháp lý và mọi vấn đề đều được thể hiện một cách tự nhiên dưới dạng các mối quan hệ logic.
 **Lập trình logic ràng buộc (CLP)** mở rộng Prolog với các bộ giải ràng buộc để lập kế hoạch, định tuyến và phân bổ tài nguyên — những vấn đề cực kỳ khó khăn trong các ngôn ngữ mệnh lệnh.
 ---
 
@@ -401,7 +402,7 @@ test(list_length) :-
 | Không có giải pháp | Truy vấn trả về sai | Kiểm tra thứ tự khởi tạo biến |
 | Quá nhiều giải pháp | Trùng lặp bất ngờ | Thêm cắt (!) hoặc sử dụng`setof`|
 | Thống nhất sai lầm | Các biến bị ràng buộc không chính xác | Sử dụng`=`để kiểm tra; kiểm tra tính chất của hàm số |
-| Vấn đề về hiệu suất | Thực thi chậm | Thêm vết cắt; sử dụng`table`; kiểm tra điểm lựa chọn |
+| Vấn đề về hiệu suất | Thực thi chậm | Thêm vết cắt; sử dụng `table`; kiểm tra điểm lựa chọn |
 ---
 
 ## Khả năng tương tác
@@ -512,7 +513,7 @@ swipl -g main -o myapp.sav -c main.pl
 ### Ứng dụng trong thế giới thực
 | Tên miền | Prolog được sử dụng như thế nào | Ví dụ |
 |--------|-------------------|---------|
-| **Hệ thống chuyên gia** | Chẩn đoán y khoa, phát hiện lỗi | MYCIN, XCON |
+| **Hệ thống chuyên gia** | Chẩn đoán y tế, phát hiện lỗi | MYCIN, XCON |
 | **NLP** | Phân tích ngữ pháp, phân tích ngữ nghĩa | Chatbots, hệ thống QA |
 | **Gõ suy luận** | Kiểm tra kiểu Hindley-Milner | Nguyên mẫu Haskell/ML |
 | **Lên lịch** | Lập kế hoạch, thời gian biểu cho nhân viên | Lập lịch trình phi hành đoàn hàng không |
@@ -538,6 +539,129 @@ swipl -g main -o myapp.sav -c main.pl
 | Lập trình mục đích chung | Có thể nhưng khó xử | Python, Go, Java |
 ---
 
+## Hỏi đáp tổng hợp
+### Q1: Sự hợp nhất của Prolog khác với sự phân công trong các ngôn ngữ khác như thế nào?
+**A:** Hợp nhất là khớp mẫu hai chiều, không phải phép gán:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Câu 2: Tính năng quay lui hoạt động như thế nào trong Prolog?
+**A:** Khi mục tiêu không thành công, Prolog sẽ quay lại điểm lựa chọn cuối cùng và thử giải pháp thay thế tiếp theo:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Câu 3: Làm cách nào để làm việc với các danh sách trong Prolog?
+**A:** Danh sách sử dụng khớp mẫu đầu/đuôi:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4: Khi nào nên sử dụng Prolog thay vì các ngôn ngữ khác?
+**A:** Prolog vượt trội ở:
+- Sự thỏa mãn ràng buộc (lập kế hoạch, câu đố)
+- Hệ thống dựa trên quy tắc (hệ thống chuyên gia, xác nhận)
+- Duyệt đồ thị/cây
+- Xử lý ngôn ngữ tự nhiên
+- Tính toán tượng trưng
+- Bất kỳ vấn đề nào được biểu diễn dưới dạng quan hệ logic
+### Q5: Những cạm bẫy thường gặp trong Prolog là gì?
+**Đ:** Các vấn đề chính:
+- Đệ quy vô hạn - luôn đặt trường hợp cơ sở lên hàng đầu
+- Quay lại ngoài ý muốn — sử dụng`!`hoặc`once/1`đã cắt 
+- Xảy ra kiểm tra - vòng lặp`X = f(X)`theo mặc định (sử dụng`unify_with_occurs_check`)
+- Vết cắt màu xanh lá cây (tối ưu hóa) so với vết cắt màu đỏ (thay đổi ý nghĩa) - thích màu xanh lá cây hơn
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Bài 1: Giải bài toán N-Queens
+**Bước 1: Tìm hiểu vấn đề**
+Đặt N quân hậu lên bàn cờ NxN sao cho không có hai quân hậu nào tấn công lẫn nhau.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng thế hệ dựa trên ràng buộc: đặt các quân hậu theo từng cột, kiểm tra độ an toàn.
+**Bước 3: Thực hiện**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Bước 4: Xác minh**
+`?- n_queens(8, Qs).`sẽ tìm ra 92 giải pháp.
+### Bài toán 2: Xây dựng hệ chuyên gia đơn giản
+**Bước 1: Tìm hiểu vấn đề**
+Chẩn đoán các vấn đề về xe dựa trên các triệu chứng.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng quy tắc Prolog để mã hóa kiến thức chẩn đoán.
+**Bước 3: Thực hiện**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Bước 4: Gia hạn**
+Thêm điểm tin cậy, hỏi người dùng về các triệu chứng một cách tương tác và chẩn đoán chuỗi.
+---
+
 ## Bản tóm tắt
 Prolog không giống bất kỳ ngôn ngữ lập trình nào khác. Thay vì viết hướng dẫn từng bước, bạn mô tả các mối quan hệ và ràng buộc — và công cụ tìm kiếm giải pháp thông qua suy luận logic. Điều này làm cho Prolog trở nên lý tưởng cho các vấn đề khó xử hoặc dài dòng trong các ngôn ngữ mệnh lệnh: hệ thống chuyên gia, lập kế hoạch, phân tích cú pháp ngữ pháp, thỏa mãn ràng buộc và bất kỳ điều gì liên quan đến quy tắc logic. Hầu hết các lập trình viên sẽ không bao giờ sử dụng Prolog trong sản xuất, nhưng việc học nó sẽ mở rộng suy nghĩ của bạn về việc lập trình có thể là gì. Hợp nhất, quay lui và đặc tả vấn đề khai báo là những khái niệm ảnh hưởng đến thiết kế ngôn ngữ, nghiên cứu AI và thậm chí tối ưu hóa truy vấn cơ sở dữ liệu.
 ### So sánh động cơ Prolog
@@ -551,7 +675,7 @@ Prolog không giống bất kỳ ngôn ngữ lập trình nào khác. Thay vì v
 | **FFI (cuộc gọi C)** | Có | Có | Qua JavaScript |
 | **Kết nối mạng** | HTTP, TCP, TLS | TCP | Qua JavaScript |
 | **Đa luồng** | Có | Không | Không |
-| **Quản lý gói** |  __BẢO VỆ_0__ | Không có | npm |
+| **Quản lý gói** | `pack_install/1`| Không có | npm |
 | **Tốt nhất cho** | Sản xuất, nghiên cứu | Giải quyết ràng buộc | Ứng dụng web, giáo dục |
 ### Ứng dụng web với Pengines
 ```prolog

@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Podstawy pisania i komunikacji
-Pisanie i komunikacja to umiejętności jasnego i skutecznego przekazywania pomysłów — czy to za pośrednictwem e-maili, raportów, dokumentacji, prezentacji czy rozmów. Większość pracy opartej na wiedzy to zasadniczo praca komunikacyjna: musisz wyjaśnić swój sposób myślenia, przekonać innych, udokumentować decyzje, napisać specyfikacje, przedstawić ustalenia i współpracować między zespołami. Rozbieżność między tym, co masz na myśli, a tym, co ktoś rozumie, jest źródłem większości problemów, a lepsza komunikacja zmniejsza tę różnicę.
+Pisanie i komunikacja to umiejętności skutecznego przekazywania pomysłów — czy to za pośrednictwem e-maili, raportów, dokumentacji, prezentacji czy rozmów. Większość pracy opartej na wiedzy to zasadniczo praca komunikacyjna: profesjonaliści muszą wyjaśniać swój sposób myślenia, przekonywać innych, dokumentować decyzje, pisać specyfikacje, prezentować ustalenia i współpracować między zespołami. Rozbieżność pomiędzy tym, co mamy na myśli, a tym, co jest rozumiane, jest źródłem większości problemów, a lepsza komunikacja zmniejsza tę różnicę.
 ---
 
 ## Zasady jasnego pisania
@@ -101,7 +101,7 @@ Pisanie i komunikacja to umiejętności jasnego i skutecznego przekazywania pomy
 | **Ogon** | Tło; mniej krytyczne informacje |
 ### Ramy SCQA
 | Element | Opis | Przykład |
-|--------|-------------|--------|
+|--------|------------|--------|
 | **Sytuacja** | Stan obecny | „Nasza aplikacja obsługuje 10 000 żądań na sekundę” |
 | **Komplikacje** | Problem lub zmiana | „Ruch rośnie o 30% miesięcznie” |
 | **Pytanie** | Co powinniśmy zrobić? | „Jak sobie poradzić z 10-krotnym ruchem?” |
@@ -116,7 +116,7 @@ Pisanie i komunikacja to umiejętności jasnego i skutecznego przekazywania pomy
 | **Kontekst** | Dlaczego to ma znaczenie; tło | 15% |
 | **Główna treść** | 3 kluczowe punkty z dowodami | 60% |
 | **Wniosek** | Streszczać; wezwanie do działania | 10% |
-| **Pytania i odpowiedzi** | Adresuj pytania | 5% |
+| **Pytania i odpowiedzi** | Pytania adresowe | 5% |
 ### Zasady projektowania slajdów
 | Zasada | Opis |
 |---------------|------------|
@@ -137,7 +137,7 @@ Pisanie i komunikacja to umiejętności jasnego i skutecznego przekazywania pomy
 ---
 
 ## Perswazja i wpływ
-### Apelacje retoryczne Arystotelesa
+### Retoryczne apele Arystotelesa
 | Apel | Opis | Jak używać |
 |------------|------------|---------------|
 | **Logo** (logika) | Powód i dowód | Dane; argumenty logiczne; studia przypadków |
@@ -165,4 +165,4 @@ Pisanie i komunikacja to umiejętności jasnego i skutecznego przekazywania pomy
 ---
 
 ## Streszczenie
-Jasne pisanie i komunikacja nie polegają na byciu mądrym – chodzi o bycie zrozumianym. Zacznij od głównego punktu (zasada piramidy). Używaj aktywnego głosu, konkretnego języka i krótkich zdań. Uporządkuj informacje tak, aby czytelnik mógł znaleźć to, czego potrzebuje. Dokumentacja techniczna powinna być możliwa do zeskanowania i oparta na przykładach. Teksty biznesowe powinny prowadzić z rekomendacją. Prezentacje powinny opowiadać historię za pomocą jednego pomysłu na slajd. Perswazja łączy w sobie logikę (logos), emocje (patos) i wiarygodność (etos). Świadomość międzykulturowa zapobiega nieporozumieniom w globalnych zespołach. Podstawową umiejętnością jest świadomość odbiorców: wiedza, dla kogo piszesz, co powinni wiedzieć i jaki format pomoże im to zrozumieć. Każda minuta zainwestowana w wyraźniejszą komunikację pozwala zaoszczędzić wielokrotność tego czasu, zmniejszając zamieszanie, mniej nieporozumień i szybsze podejmowanie decyzji.
+Jasne pisanie i komunikacja polegają na zrozumieniu. Zacznij od głównego punktu (zasada piramidy). Używaj aktywnego głosu, konkretnego języka i krótkich zdań. Uporządkuj informacje tak, aby czytelnik mógł znaleźć to, czego potrzebuje. Dokumentacja techniczna powinna być możliwa do zeskanowania i oparta na przykładach. Teksty biznesowe powinny prowadzić z rekomendacją. Prezentacje powinny przedstawiać jeden pomysł na slajd. Perswazja łączy w sobie logikę (logos), dowody (patos) i wiarygodność (etos). Świadomość międzykulturowa zapobiega nieporozumieniom w globalnych zespołach. Podstawową umiejętnością jest świadomość odbiorców: wiedza, kim jest czytelnik, co powinien wiedzieć i jaki format pomoże mu w zrozumieniu. Inwestycja w jaśniejszą komunikację przynosi zwrot w postaci mniejszego zamieszania, mniejszej liczby nieporozumień i szybszego podejmowania decyzji.

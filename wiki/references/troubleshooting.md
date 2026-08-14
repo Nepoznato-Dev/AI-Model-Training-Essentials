@@ -160,8 +160,8 @@ print(prof.key_averages().table(sort_by="cuda_time_total"))
 **Solutions:**
 ```python
 # Model optimization
-import torch.quantization
-model_quantized = torch.quantization.quantize_dynamic(
+import torch.ao.quantization
+model_quantized = torch.ao.quantization.quantize_dynamic(
     model, {nn.Linear}, dtype=torch.qint8
 )
 

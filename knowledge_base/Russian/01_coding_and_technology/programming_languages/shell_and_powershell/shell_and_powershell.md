@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Оболочка и PowerShell
-Под написанием сценариев оболочки подразумевается написание сценариев для интерпретаторов командной строки. Двумя наиболее важными оболочками являются **Bash** (Bourne Again Shell) — по умолчанию в Linux и macOS — и **PowerShell** — современная кроссплатформенная оболочка и язык сценариев Microsoft. Сценарии оболочки автоматизируют задачи системного администрирования, построения конвейеров, обработки файлов и рабочих процессов развертывания.
+Под написанием сценариев оболочки подразумевается написание сценариев для интерпретаторов командной строки. Двумя наиболее важными оболочками являются **Bash** (Bourne Again Shell) — по умолчанию в Linux и macOS — и **PowerShell** — современная кроссплатформенная оболочка и язык сценариев Microsoft. Скрипты оболочки автоматизируют задачи системного администрирования, построения конвейеров, обработки файлов и рабочих процессов развертывания.
 Каждому разработчику, DevOps-инженеру и системному администратору необходимы навыки написания сценариев оболочки. Независимо от того, развертываете ли вы веб-сервер, обрабатываете файлы журналов, настраиваете конвейеры CI/CD или автоматизируете резервное копирование, сценарии оболочки — это инструмент для этой работы.
 ---
 
@@ -857,6 +858,152 @@ Publish-Module @publishParams
 | Анализ журналов | Быстрые однострочники grep/awk | Python, SQL для комплексного анализа |
 | Сложные приложения | Не подходит | Питон, Го, Java |
 | Кроссплатформенные скрипты | PowerShell 7+ работает везде | Python для действительно переносимых скриптов |
+---
+
+## Синтетические вопросы и ответы
+### Вопрос 1: В чем разница между одинарными и двойными кавычками в Bash?
+**A:** Двойные кавычки допускают расширение переменных; одинарные кавычки являются буквальными:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Вопрос 2: Как обрабатывать ошибки в сценариях оболочки?
+**A:** Используйте`set -e`для выхода при ошибках и ловушку для очистки:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Вопрос 3. Как правильно обрабатывать аргументы командной строки?
+**A:** Используйте`getopts`для флагов и позиционных параметров:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Вопрос 4. Что такое конвейер PowerShell и чем он отличается от Bash?
+**О:** PowerShell передает объекты, а не текст. Каждый объект сохраняет свои свойства:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### В5: Как писать кроссплатформенные скрипты?
+**A:** Для Bash: используйте`#!/usr/bin/env bash`, избегайте флагов, специфичных для GNU. Для PowerShell: используйте`pwsh`(PowerShell Core), который работает в Linux/macOS/Windows.
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1: Скрипт пакетной обработки изображений (Bash)
+**Шаг 1. Поймите проблему**
+Измените размер всех изображений PNG в каталоге до максимальной ширины 800 пикселей.
+**Шаг 2. Определите подход**
+Используйте`find`для поиска файлов и`convert`(ImageMagick) для изменения размера.
+**Шаг 3. Реализация**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Шаг 4. Продлить**
+Добавьте индикатор выполнения, обработку ошибок для поврежденных изображений и параллельную обработку с помощью `xargs -P`.
+### Проблема 2: автоматическая ротация журналов (Bash)
+**Шаг 1. Поймите проблему**
+Ежедневно меняйте файлы журналов, сжимайте старые журналы и удаляйте журналы старше 30 дней.
+**Шаг 2. Определите подход**
+Используйте`find`с временными фильтрами и`gzip`для сжатия.
+**Шаг 3. Реализация**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Шаг 4. Расписание**
+Добавить в кронтаб: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Проблема 3. Проверка работоспособности службы Windows (PowerShell)
+**Шаг 1. Поймите проблему**
+Проверьте, работают ли критически важные службы, и отправьте оповещение, если какие-либо из них остановлены.
+**Шаг 2. Определите подход**
+Используйте`Get-Service`и фильтруйте остановленные службы.
+**Шаг 3. Реализация**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Шаг 4. Автоматизация**
+Запланируйте задание планировщика задач Windows, выполняемое каждые 5 минут.
 ---
 
 ## Краткое содержание

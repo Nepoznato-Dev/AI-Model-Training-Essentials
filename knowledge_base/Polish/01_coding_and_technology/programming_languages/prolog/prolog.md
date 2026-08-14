@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Prolog
-Prolog (Programming in Logic) to język programowania logicznego stworzony w 1972 roku przez Alaina Colmerauera i Philippe'a Roussela. W przeciwieństwie do wszystkich innych języków na tej liście, Prolog nie mówi komputerowi, *jak* rozwiązać problem — deklarujesz, *co* jest prawdą (fakty i reguły), a silnik wnioskowania Prologu znajduje odpowiedź poprzez logiczną dedukcję.
+Prolog (Programming in Logic) to język programowania logicznego stworzony w 1972 roku przez Alaina Colmerauera i Philippe'a Roussela. W przeciwieństwie do wszystkich innych języków na tej liście, Prolog nie mówi komputerowi *jak* rozwiązać problem — deklarujesz, *co* jest prawdą (fakty i reguły), a silnik wnioskowania Prologu znajduje odpowiedź poprzez logiczną dedukcję.
 Prolog był językiem wybieranym w latach 80. w systemach ekspertowych, przetwarzaniu języka naturalnego i badaniach nad sztuczną inteligencją. Zasilał japoński projekt systemu komputerowego piątej generacji i był używany w komputerze Watson firmy IBM do rozumienia języka naturalnego. Obecnie Prolog jest używany do rozwiązywania ograniczeń, planowania, wnioskowania o typach, rozumowania prawnego i wszędzie tam, gdzie problemy są naturalnie wyrażane w postaci relacji logicznych.
 **Constraint Logic Programming (CLP)** rozszerza Prolog o narzędzia do rozwiązywania ograniczeń do planowania, routingu i alokacji zasobów – problemy, które są niezwykle trudne w językach imperatywnych.
 ---
@@ -47,7 +48,7 @@ Prolog był językiem wybieranym w latach 80. w systemach ekspertowych, przetwar
 ## Dlaczego Prolog ma znaczenie
 - **Programowanie deklaratywne**: Opisz, co jest prawdą, a nie jak to obliczyć. Silnik robi robotę.
 - **Dopasowywanie i unifikacja wzorców**: Algorytm unifikacji Prologu jest potężniejszy niż dopasowywanie wzorców w innych językach.
-- **Wyszukiwanie wstecz**: automatycznie bada wszystkie możliwe rozwiązania. Nie są potrzebne żadne ręczne algorytmy wyszukiwania.
+- **Wyszukiwanie wstecz**: Automatycznie bada wszystkie możliwe rozwiązania. Nie są potrzebne żadne ręczne algorytmy wyszukiwania.
 - **Naturalne w przypadku problemów logicznych**: Systemy ekspertowe, silniki reguł, moduły sprawdzania typów, analizatory gramatyki — te mapują się bezpośrednio do Prologu.
 - **Rozwiązywanie ograniczeń**: CLP(FD) elegancko rozwiązuje problemy związane z planowaniem, alokacją i kombinatoryką.
 - **Inne myślenie**: Nauka Prologu zmienia sposób, w jaki podchodzisz do rozwiązywania problemów — zaczynasz myśleć w kategoriach relacji i ograniczeń.
@@ -114,7 +115,7 @@ solve_sudoku(Rows) :-
 ---
 
 ## Zaawansowana składnia i wzorce
-### Głębokie nurkowanie zjednoczeniowe
+### Głębokie nurkowanie zjednoczone
 Ujednolicenie jest podstawowym mechanizmem Prologa — w ten sposób Prolog „dopasowuje” terminy i wiąże zmienne.
 ```prolog
 % Unification rules:
@@ -399,7 +400,7 @@ test(list_length) :-
 |--------|---------|---------|
 | Nieskończona rekurencja | Przepełnienie stosu | Sprawdź obudowę podstawową; dodaj warunek zakończenia |
 | Brak rozwiązań | Zapytanie zwraca fałsz | Sprawdź kolejność instancji zmiennej |
-| Za dużo rozwiązań | Nieoczekiwane duplikaty | Dodaj cięcie (!) lub użyj`setof`|
+| Za dużo rozwiązań | Nieoczekiwane duplikaty | Dodaj wycięcie (!) lub użyj`setof`|
 | Błędne zjednoczenie | Zmienne powiązane niepoprawnie | Użyj`=`do przetestowania; sprawdź arność funktora |
 | Problem z wydajnością | Powolna realizacja | Dodaj kawałki; użyj`table`; sprawdź punkty wyboru |
 ---
@@ -494,7 +495,7 @@ factorial_acc(N, Acc, F) :-
 | **Rekursja ogona** | Wysoki | Użyj akumulatorów dla stałej przestrzeni stosu |
 | **Cięcie (zielony)** | Wysoki | Wyeliminuj niepotrzebne punkty wyboru |
 | **Przedstawiona ocena** | Wysoki | `:- table pred/N`zapamiętuje wyniki |
-| **Indeksowanie** | Średni | Na pierwszym miejscu umieść rozróżniający argument |
+| **Indeksowanie** | Średni | Na pierwszym miejscu umieść argument różnicujący |
 | **Listy różnic** | Średni | Konkatenacja list O(1) |
 | **CLP(FD) podczas testu generowania** | Bardzo wysoki | Użyj ograniczeń zamiast brutalnej siły |
 ---
@@ -536,6 +537,129 @@ swipl -g main -o myapp.sav -c main.pl
 | Nauka o danych / ML | Nie ekosystem | Python, R |
 | Kod krytyczny dla wydajności | Prolog jest powolny w obliczeniach | C, C++, rdza |
 | Programowanie ogólnego przeznaczenia | Możliwe, ale niezręczne | Python, Go, Java |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Czym różni się ujednolicenie w Prologu od przypisania w innych językach?
+**O:** Ujednolicenie to dwukierunkowe dopasowywanie wzorców, a nie przypisywanie:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### P2: Jak działa backtracking w Prologu?
+**A:** Kiedy cel nie powiedzie się, Prolog cofa się do ostatniego punktu wyboru i wypróbowuje następną alternatywę:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### P3: Jak pracować z listami w Prologu?
+**A:** Listy wykorzystują dopasowanie wzorca głowy/ogona:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### P4: Kiedy powinienem używać Prologu zamiast innych języków?
+**A:** Prolog wyróżnia się w:
+- Spełnianie ograniczeń (harmonogram, łamigłówki)
+- Systemy oparte na regułach (systemy eksperckie, walidacja)
+- Przechodzenie przez wykres/drzewo
+- Przetwarzanie języka naturalnego
+- Obliczenia symboliczne
+- Dowolny problem, który można wyrazić w postaci relacji logicznych
+### P5: Jakie są typowe pułapki w Prologu?
+**O:** Kluczowe kwestie:
+- Nieskończona rekurencja — zawsze stawiaj przypadek podstawowy na pierwszym miejscu
+- Niezamierzone cofanie się — użyj cięcia`!`lub`once/1`
+- Występuje sprawdzenie — domyślnie pętle`X = f(X)`(użyj`unify_with_occurs_check`)
+- Zielone cięcia (optymalizacja) vs czerwone cięcia (zmiana znaczenia) - preferuj kolor zielony
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Rozwiązanie zagadki N-królowych
+**Krok 1: Zrozum problem**
+Umieść N hetmanów na szachownicy NxN, tak aby żadne dwie hetmany nie atakowały się nawzajem.
+**Krok 2: Zidentyfikuj podejście**
+Użyj generowania opartego na ograniczeniach: umieszczaj królowe kolumna po kolumnie, sprawdzając bezpieczeństwo.
+**Krok 3: Wdróż**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Krok 4: Zweryfikuj**
+`?- n_queens(8, Qs).`powinien znaleźć 92 rozwiązania.
+### Problem 2: Budowa prostego systemu ekspertowego
+**Krok 1: Zrozum problem**
+Diagnozuj problemy z samochodem na podstawie objawów.
+**Krok 2: Zidentyfikuj podejście**
+Użyj reguł Prologu do kodowania wiedzy diagnostycznej.
+**Krok 3: Wdróż**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Krok 4: Przedłuż**
+Dodawaj oceny pewności, interaktywnie pytaj użytkownika o objawy i diagnozuj łańcuchowo.
 ---
 
 ## Streszczenie

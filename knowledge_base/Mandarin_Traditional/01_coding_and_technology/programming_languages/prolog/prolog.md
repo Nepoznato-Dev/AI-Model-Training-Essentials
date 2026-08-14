@@ -41,17 +41,17 @@ contribution:
 
 # 序言
 Prolog（邏輯程式設計）是一種邏輯程式語言，由 Alain Colmerauer 和 Philippe Roussel 於 1972 年創建。與此列表中的所有其他語言不同，Prolog 不會告訴計算機“如何”解決問題 - 您聲明“什麼”是真實的（事實和規則），Prolog 的推理引擎通過邏輯演繹找出答案。
-Prolog 是 20 世紀 80 年代專家系統、自然語言處理和人工智慧研究的首選語言。它為日本的第五代電腦系統專案提供了動力，並在 IBM 的 Watson 中用於自然語言理解。如今，Prolog 被用於約束求解、調度、類型推斷、法律推理以及任何自然地表達為邏輯關係的問題。
+Prolog 是 20 世紀 80 年代專家系統、自然語言處理和人工智慧研究的首選語言。它為日本第五代電腦系統專案提供了動力，並在 IBM 的 Watson 中用於自然語言理解。如今，Prolog 被用於約束求解、調度、類型推斷、法律推理以及任何自然地表達為邏輯關係的問題。
 **約束邏輯程式設計 (CLP)** 使用約束求解器擴展了 Prolog，用於調度、路由和資源分配 — 這些問題在命令式語言中極其困難。
 ---
 
 ## 為什麼 Prolog 很重要
-- **聲明式程式設計**：描述什麼是真實的，而不是如何計算它。引擎完成工作。
-- **模式匹配與統一**：Prolog的統一演算法比其他語言中的模式匹配更強大。
-- **回溯搜尋**：自動探索所有可能的解決方案。無需手動搜尋演算法。
-- **自然適合邏輯問題**：專家系統、規則引擎、類型檢查器、語法解析器 - 這些直接對應到 Prolog。
-- **約束求解**：CLP(FD) 優雅地解決了調度、分配和組合問題。
-- **不同的思維**：學習 Prolog 會改變您解決問題的方式 - 您開始思考關係和限制。
+- **声明式编程**：描述什么是真实的，而不是如何计算它。引擎完成工作。
+- **模式匹配和统一**：Prolog的统一算法比其他语言中的模式匹配更强大。
+- **回溯搜索**：自动探索所有可能的解决方案。無需手動搜尋演算法。
+- **自然适合逻辑问题**：专家系统、规则引擎、类型检查器、语法解析器 - 这些直接映射到 Prolog。
+- **约束求解**：CLP(FD) 优雅地解决了调度、分配和组合问题。
+- **不同的思维**：学习 Prolog 会改变您解决问题的方式 - 您开始思考关系和约束。
 ## 權衡
 |限制|詳情 |典型解決方法|
 |------------|---------|--------------------|
@@ -165,7 +165,7 @@ classify(X, negative) :- X < 0, !.
 classify(0, zero).
 ```
 
-### 定句語法 (DCG)
+### 定子句語法 (DCG)
 ```prolog
 % Simple sentence parser
 sentence --> noun_phrase, verb_phrase.
@@ -402,7 +402,7 @@ test(list_length) :-
 |没有解决方案 |查询返回 false |检查变量实例化顺序 |
 |解决方案太多 |意外重复 |添加剪切 (!) 或使用`setof`|
 |错误的统一|变量绑定不正确 |使用`=`进行测试；检查函子数量 |
-|性能问题|执行缓慢 |添加削减；使用`table`；检查选择点|
+|性能问题|执行缓慢|添加削减；使用`table`；检查选择点|
 ---
 
 ## 互通性
@@ -518,14 +518,14 @@ swipl -g main -o myapp.sav -c main.pl
 | **類型推論** | Hindley-Milner 類型檢查 | Haskell/ML 原型 |
 | **日程安排** |員工排班、時間表|航空公司機組人員調度|
 | **法律推理** |基於規則的法律分析|合規檢查|
-| **資料庫查詢** |用於資料分析的Datalog |舒芙蕾引擎 |
+| **資料庫查詢** |用於資料分析的Datalog |舒芙蕾引擎|
 | **驗證** |模型檢驗 |硬體驗證|
 | **IBM 沃森** |自然語言理解 |危險！系統|
 | **愛立信** |電信管理|網路設定驗證 |
 ---
 
 ## 何時使用 Prolog
-|場景 |為什麼選擇 Prolog |更好的選擇|
+|場景|為什麼選擇 Prolog |更好的選擇|
 |----------|----------|--------------------|
 |基於規則的推理 | Prolog 就是為此而構建的 | Python/Java 中的自訂規則引擎 |
 |約束滿足| CLP(FD)優雅高效 | SAT 求解器，適用於大型實例的 OR 工具 |
@@ -536,13 +536,136 @@ swipl -g main -o myapp.sav -c main.pl
 |網頁應用程式|不適合| Python、Node.js、Go |
 |資料科學/機器學習 |不是生態系| Python、R |
 |效能關鍵程式碼 | Prolog 的運算速度很慢 | C、C++、Rust |
-|通用程式設計|可能但尷尬| Python、Go、Java |
+|通用程式設計 |可能但尷尬| Python、Go、Java |
+---
+
+## 綜合問答
+### Q1：Prolog 的統一與其他語言的賦值有何不同？
+**A:** 統一是雙向模式匹配，而不是賦值：
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2：Prolog 中的回溯是如何運作的？
+**A:** 當目標失敗時，Prolog 回溯到上一個選擇點並嘗試下一個替代點：
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3：如何在 Prolog 中使用清單？
+**A:** 清單使用頭/尾模式匹配：
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4：什麼時候應該使用Prolog而不是其他語言？
+**答：** Prolog 擅長：
+- 約束滿足（調度、謎題）
+- 基於規則的系統（專家系統、驗證）
+- 圖/樹遍歷
+- 自然語言處理
+- 符號計算
+- 任何可以表達為邏輯關係的問題
+### Q5：Prolog 中常見的陷阱有哪些？
+**答：** 關鍵問題：
+- 無限遞歸－永遠將基本情況放在第一位
+- 意外回溯 — 使用剪切`!`或 `once/1`
+- 發生檢查 — 預設情況下`X = f(X)`循環（使用`unify_with_occurs_check`）
+- 綠色剪切（優化）與紅色剪切（改變含義）—更喜歡綠色
+---
+
+## 解決問題的思路
+### 問題 1：解決 N 皇后難題
+**第 1 步：了解問題**
+將 N 個皇后放在 NxN 棋盤上，這樣兩個皇后就不會互相攻擊。
+**第 2 步：確定方法**
+使用基於約束的生成：逐列放置皇后，檢查安全性。
+**步驟 3：實施**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**第 4 步：驗證**
+`?- n_queens(8, Qs).`應該找到 92 個解決方案。
+### 問題 2：建立一個簡單的專家系統
+**第 1 步：了解問題**
+根據症狀診斷汽車問題。
+**第 2 步：確定方法**
+使用 Prolog 規則對診斷知識進行編碼。
+**步驟 3：實施**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**第 4 步：擴充**
+新增置信度分數，以互動方式詢問使用者症狀，並進行連鎖診斷。
 ---
 
 ＃＃ 概括
-Prolog 不同于任何其他编程语言。您無需編寫逐步說明，而是描述關係和約束，並且引擎透過邏輯推理搜尋解決方案。這使得 Prolog 成為解決命令式語言中棘手或冗長問題的理想選擇：專家系統、調度、語法分析、約束滿足以及任何涉及邏輯規則的問題。大多數程式設計師永遠不會在生產中使用 Prolog，但是學習它可以擴展您對程式設計的思考。統一、回溯和聲明性問題規範是影響語言設計、人工智慧研究甚至資料庫查詢最佳化的概念。
+Prolog 有別於任何其他程式語言。您無需編寫逐步說明，而是描述關係和約束，並且引擎透過邏輯推理搜尋解決方案。這使得 Prolog 成為解決命令式語言中棘手或冗長問題的理想選擇：專家系統、調度、語法分析、約束滿足以及任何涉及邏輯規則的問題。大多數程式設計師永遠不會在生產中使用 Prolog，但是學習它可以擴展您對程式設計的思考。統一、回溯和聲明性問題規範是影響語言設計、人工智慧研究甚至資料庫查詢最佳化的概念。
 ### Prolog 引擎比較
-|特色 | SWI-Prolog | GNU 前言 | Tau 前言 |
+|特色| SWI-Prolog | GNU 序言 | Tau 序言 |
 |--------|---------|------------|------------|
 | **許可證** | BSD（開源）| GPL（開源）| BSD（開源）|
 | **平台** | Windows、Linux、macOS | Windows、Linux、macOS | JavaScript（瀏覽器）|
@@ -553,7 +676,7 @@ Prolog 不同于任何其他编程语言。您無需編寫逐步說明，而是�
 | **網路** | HTTP、TCP、TLS | TCP |透過 JavaScript |
 | **多執行緒** |是的 |沒有 |沒有 |
 | **套件管理器** |`pack_install/1`|無 | npm |
-| **最適合** |生產、研究|約束求解 |網頁應用程式、教育 |
+| **最適合** |生產、研究|約束求解|網路應用程式、教育 |
 ### 使用 Pengines 的 Web 應用程式
 ```prolog
 % SWI-Prolog Pengines — server-side Prolog accessible from web

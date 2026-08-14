@@ -53,7 +53,7 @@ Veri bilimi, ham verileri eyleme dönüştürülebilir içgörülere dönüştü
 | **Modelleme** | Modelleri seçin ve eğitin | %10–15 |
 | **Değerlendirme** | Performansı iş hedeflerine göre değerlendirin | %5–10 |
 | **Dağıtım** | Modeli üretime gönderin | %5–10 |
-Eski şaka, veri biliminin %80'inin verileri temizlemek olduğudur. Gerçeklerden uzak değil.
+Veri hazırlamanın, özellikle de veri temizlemenin, bir veri bilimcinin zamanının yaklaşık %80'ini harcadığı tahmin edilmektedir.
 ---
 
 ## Bir Bakışta Veri Türleri
@@ -84,7 +84,7 @@ Tanımlayıcı istatistikler *sahip olduklarınızı* özetler; Çıkarımsal is
 | **t-testi** | İki grup arasındaki ortalamaları karşılaştırın |
 | **ANOVA** | Üç veya daha fazla gruptaki ortalamaları karşılaştırın |
 | **Ki-kare** | Kategorik değişkenlerin bağımsızlığını test edin |
-| **Mann-Whitney U** | T-testinin parametrik olmayan alternatifi (normallik varsayımı yok) |
+| **Mann-Whitney U** | T-testinin parametrik olmayan alternatifi (normallik varsayımı yoktur) |
 | **Pearson korelasyonu** | İki sürekli değişken arasındaki doğrusal ilişki |
 | **Spearman korelasyonu** | Monotonik ilişki (sıralamaya dayalı, daha sağlam) |
 ### Bilmeye Değer Olasılık Dağılımları
@@ -187,7 +187,7 @@ EDA, modellemeden önce verileriniz hakkında sezgi geliştirdiğiniz yerdir. Am
 | **İlişkilendirme Kuralları** | Apriori, FP-Büyüme |
 ### Model Değerlendirmesi
 | Metrik Türü | Temel Metrikler |
-|---------------|------------|
+|------------|------------|
 | **Sınıflandırma** | Doğruluk, hassasiyet, geri çağırma, F1 puanı, ROC-AUC, karışıklık matrisi |
 | **Regresyon** | MAE, MSE, RMSE, R², Düzeltilmiş R² |
 | **Doğrulama** | k-katlı çapraz doğrulama, katmanlı, zaman serisi bölünmüş |
@@ -228,7 +228,7 @@ Veri kümeleri tek bir makinenin işleyebileceğini aştığında, dağıtılmı
 | **Metatabanı** | Açık kaynak | Kolay kurulum, SQL'de yerel |
 | **Süper set** | Açık kaynak (Apache) | Ölçeklenebilir, SQL öncelikli |
 ### Kontrol Paneli Tasarım İlkeleri
-İyi gösterge tabloları birkaç kurala uyar: hedef kitlenizi tanıyın, her metrik için doğru görselleştirmeyi seçin, rengi stratejik olarak kullanın (dekoratif olarak değil), tutarlı ölçekleri koruyun ve etkileşimi etkinleştirin (filtreler, ayrıntılı incelemeler). Performans da önemlidir; kimse yavaş bir kontrol paneli beklemez.
+Etkili gösterge tabloları yerleşik ilkeleri takip eder: hedef kitleyi belirleyin, her metrik için uygun görselleştirmeyi seçin, rengi stratejik olarak kullanın (dekoratif olarak değil), tutarlı ölçekleri koruyun ve etkileşimi etkinleştirin (filtreler, ayrıntılı incelemeler). Performans da önemlidir; yavaş yükleme süreli gösterge tabloları kullanıcıların benimsemesini azaltır.
 ### Ortak KPI Kategorileri
 | Kategori | Örnekler |
 |----------|-----------|

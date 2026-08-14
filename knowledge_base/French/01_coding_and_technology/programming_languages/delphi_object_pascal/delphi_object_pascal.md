@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Delphi / Objet Pascal"
-description : "Référence complète pour le langage de programmation Delphi/Object Pascal couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Delphi / Object Pascal"
+description: "Comprehensive reference for the Delphi/Object Pascal programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-tags : [delphi-objet-pascal, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "44 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [delphi-object-pascal, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Delphi / Objet Pascal
 Delphi est un langage de programmation orienté objet basé sur Pascal, développé à l'origine par Borland (plus tard Embarcadero, maintenant Idera). Lancé pour la première fois en 1995 sous le nom de « Delphi 1 », il a été conçu pour le développement rapide d'applications (RAD) d'applications de bureau Windows. Le langage est officiellement connu sous le nom de Pascal Objet et l'IDE Delphi fournit un concepteur de formulaires visuels, des outils de base de données intégrés et un compilateur puissant.
 Delphi était l'un des outils de développement Windows les plus populaires à la fin des années 1990 et au début des années 2000. Bien que sa popularité ait considérablement diminué, il conserve une base d'utilisateurs dédiée, en particulier dans les applications de bureau d'entreprise, les frontaux de bases de données et la maintenance des systèmes existants. Modern Delphi (11/12) prend en charge le développement multiplateforme pour Windows, macOS, iOS et Android via le framework FireMonkey (FMX).
@@ -41,7 +46,7 @@ Delphi était l'un des outils de développement Windows les plus populaires à l
 
 ## Pourquoi Delphi est important
 - **Développement rapide d'applications** : le concepteur de formulaires visuels + la compilation native ont rendu la création d'interfaces graphiques Windows extrêmement rapide.
-- **Performances natives** : se compile directement en code machine — aucun runtime ni VM n'est requis.
+- **Performances natives** : se compile directement en code machine – aucun runtime ni VM requis.
 - **Connectivité de base de données** : composants de base de données historiquement excellents (dbExpress, FireDAC, ADO).
 - **Bases de code héritées** : de nombreuses applications d'entreprise s'exécutent toujours sur Delphi ; la maintenance est une compétence de niche.
 - **Multiplateforme (moderne)** : le framework FireMonkey cible Windows, macOS, iOS et Android à partir d'une seule base de code.
@@ -611,7 +616,7 @@ end.
 
 ## Tests et débogage
 ### Fonctionnalités du débogueur IDE
-L'IDE de Delphi comprend un débogueur intégré complet.
+L'EDI de Delphi comprend un débogueur intégré complet.
 | Fonctionnalité | Descriptif |
 |---------|-------------|
 | **Points d'arrêt** | Défini sur n’importe quelle ligne exécutable ; points d'arrêt conditionnels pris en charge |
@@ -1081,6 +1086,84 @@ Delphi Deployment Targets:
 | Développement d'une nouvelle interface graphique Windows | Possible mais la communauté rétrécit | C# (WPF/WinUI3) |
 | Développement Web | Ne convient pas | Javascript, Python, C# |
 | Applications mobiles | Possible via FMX mais limité | Swift, Kotlin, Flutter |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Comment fonctionne le framework VCL de Delphi ?
+**R :** La VCL regroupe les contrôles de l'API Windows dans une hiérarchie orientée objet. Les formulaires, les boutons et les grilles sont tous des classes :
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2 : Comment créer des composants dans Delphi ?
+**A :** Hériter de TComponent ou TControl :
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3 : Quelle est la différence entre Delphi et Free Pascal ?
+**R :** Delphi est un IDE/compilateur commercial d'Embarcadero. Free Pascal est le compilateur open source et Lazarus est l'IDE gratuit. Les deux utilisent la syntaxe Object Pascal.
+### Q4 : Comment puis-je travailler avec des bases de données dans Delphi ?
+**R :** Utilisez les composants FireDAC ou dbExpress :
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5 : Delphi est-il toujours d'actualité aujourd'hui ?
+**R :** Pour la maintenance des applications Windows héritées, oui. Pour les nouveaux projets, la plupart des développeurs préfèrent les technologies C# ou Web. Free Pascal/Lazarus fournit une alternative multiplateforme gratuite.
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Création d'un formulaire orienté données
+**Étape 1 : Comprendre le problème**
+Créez un formulaire qui affiche et modifie les enregistrements de base de données.
+**Étape 2 : Identifiez l'approche**
+Utilisez des composants orientés données liés à un ensemble de données.
+**Étape 3 : Mettre en œuvre**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Étape 4 : Prolonger**
+Ajoutez des fonctionnalités de validation, de gestion des erreurs et de recherche/filtrage.
 ---
 
 ## Résumé

@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "C"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی C شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [c، زبان برنامه‌نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "35 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "C"
+description: "Comprehensive reference for the C programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [c, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #سی
 C یک زبان برنامه نویسی همه منظوره و رویه ای است که توسط دنیس ریچی در آزمایشگاه های بل بین سال های 1969 تا 1973 ایجاد شد. این زبان برای پیاده سازی سیستم عامل یونیکس طراحی شد و پس از 50 سال یکی از پرکاربردترین زبان های برنامه نویسی باقی مانده است. C دسترسی به حافظه سطح پایین، یک کتابخانه استاندارد حداقل، و یک نقشه برداری تمیز به دستورالعمل های ماشین را فراهم می کند - که آن را پایه ای می کند که اکثر محاسبات مدرن بر روی آن ساخته شده اند.
 C زبان پشت سیستم‌های عامل (لینوکس، هسته ویندوز، macOS)، سیستم‌های جاسازی شده، موتورهای پایگاه داده (SQLite، PostgreSQL)، کامپایلرها (CPython پایتون، MRI روبی)، و تقریباً هر زمان اجرای زبان برنامه‌نویسی دیگری است. درک C یعنی درک اینکه کامپیوترها واقعا چگونه کار می کنند.
@@ -50,7 +55,7 @@ C زبان پشت سیستم‌های عامل (لینوکس، هسته ویند
 |-----------|---------|-------------------|
 | **مدیریت دستی حافظه** | بدون زباله جمع کن -- شما خودتان حافظه را اختصاص داده و آزاد می کنید | استفاده دقیق از malloc/رایگان؛ الگوهای RAII در C++ |
 | **سرریز بافر** | بدون محدودیت در آرایه ها - نوشتن پایان بافر گذشته آسان | به جای strcpy از strncpy استفاده کنید. فعال کردن هشدارهای کامپایلر |
-| **بدون OOP داخلی ** | فقط رویه ای -- بدون کلاس، وراثت یا روش | استفاده از structs + نشانگرهای تابع. یا به C++ |
+| **بدون OOP داخلی ** | فقط رویه ای -- بدون کلاس، وراثت یا روش | استفاده از structs + نشانگرهای تابع. یا به C++ | تغییر دهید
 | **کتابخانه استاندارد محدود** | حداقل عملکرد داخلی | کتابخانه های شخص ثالث یا خودتان بنویسید |
 | **رفتار نامشخص** | بسیاری از اشتباهات خوب جمع آوری می شوند اما به طور غیرقابل پیش بینی خراب می شوند | استفاده از ضد عفونی کننده، آنالایزر استاتیک |
 ---
@@ -211,12 +216,12 @@ double average(int count, ...) {
 | سربرگ | هدف | توابع مشترک |
 |--------|--------|-----------------|
 | `<stdio.h>`| ورودی/خروجی | printf, scanf, fopen, fgets, fprintf |
-|  __محافظت شده_1__ | خدمات عمومی | malloc, free, exit, atoi, rand, qsort |
+| `<stdlib.h>`| خدمات عمومی | malloc, free, exit, atoi, rand, qsort |
 | `<string.h>`| عملیات رشته | strlen، strcpy، strncpy، strcmp، memcpy |
-|  __محافظت شده_3__ | ریاضی | sin, cos, sqrt, pow, fabs, ceil, floor |
+| `<math.h>`| ریاضی | sin, cos, sqrt, pow, fabs, ceil, floor |
 | `<ctype.h>`| طبقه بندی شخصیت | isalpha, isdigit, toupper, tolower |
 | `<time.h>`| تاریخ و زمان | زمان، ساعت، زمان فاصله، زمان strftime |
-|  __محافظت شده_6__ | اشکال زدایی اظهارات | اظهار (شرط) |
+| `<assert.h>`| اشکال زدایی اظهارات | اظهار (شرط) |
 | `<errno.h>`| کدهای خطا | errno, perror, strerror |
 ---
 
@@ -629,9 +634,9 @@ print(lib.c_add(3, 5))  # 8
 | زبان | مکانیسم | مثال |
 |----------|-----------|---------|
 | پایتون | ctypes، cffi | `ctypes.CDLL("./lib.so")`|
-| یاقوت | کمانچه |  __محافظت شده_1__ |
+| یاقوت | کمانچه | `Fiddle.dlopen("./lib.so")`|
 | جاوا | JNI | `System.loadLibrary("mylib")`|
-| C++ | خارجی "C" |  __محافظت شده_3__ |
+| C++ | خارجی "C" | `extern "C" void my_func();`|
 | زنگ زدگی | خارجی "C" + FFI | `extern "C" { fn my_func(); }`|
 ---
 
@@ -848,6 +853,514 @@ make clean    # Removes build artifacts
 | C17 | 2018 | رفع اشکال و شفاف سازی (بدون ویژگی جدید) |
 | C23 | 2024 | nullptr، typeof، constexpr، پیش پردازنده بهبود یافته |
 اکثر کدهای تولیدی C11 یا C17 را هدف قرار می دهند. C23 امکانات مدرن را به ارمغان می آورد، اما پذیرش زمان می برد.
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین اشاره گر و آرایه در C چیست؟
+**A:** آرایه ها و اشاره گرها به هم مرتبط هستند اما متمایز هستند. آرایه یک بلوک پیوسته از حافظه با اندازه ثابتی است که در زمان کامپایل شناخته شده است. اشاره گر متغیری است که آدرس حافظه را نگه می دارد. وقتی به توابع ارسال می شود، آرایه ها به اشاره گرها تحلیل می روند، اما`sizeof(array)`اندازه کل را نشان می دهد در حالی که`sizeof(pointer)`فقط اندازه اشاره گر (4 یا 8 بایت) را می دهد. نام آرایه ها مقادیر قابل تغییر نیستند - نمی توانید`arr++`را انجام دهید.
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Q2: چگونه حافظه را به درستی مدیریت کنم و از نشت جلوگیری کنم؟
+**A:** هر`malloc`/`calloc`باید یک`free`مربوطه داشته باشد. اشتباهات رایج: فراموش کردن آزاد کردن (نشت)، دوبار آزاد کردن (رفتار تعریف نشده)، استفاده از حافظه پس از آزادسازی (استفاده پس از آزاد شدن)، و بررسی نکردن مقدار بازگشتی`malloc`(NULL در صورت خرابی). بهترین روش: در یک ماژول تخصیص داده و آزاد کنید، از الگوی "goto cleanup" برای مدیریت خطا استفاده کنید و همیشه نشانگرهای آزاد شده را روی NULL قرار دهید.
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Q3: بهترین روش ها برای مدیریت خطا در C چیست؟
+**A:** C هیچ استثنایی ندارد. مدیریت خطا از مقادیر بازگشتی (کدهای خطا، نشانگرهای NULL، مقادیر منفی) استفاده می کند. الگوی استاندارد: توابع در صورت خرابی یک کد وضعیت یا NULL را برمی‌گردانند و`errno`را برای تماس‌های سیستمی تنظیم می‌کنند. برای پاکسازی منابع در مورد خطاها از الگوی "goto cleanup" استفاده کنید. همیشه مقادیر بازگشتی `malloc`،`fopen`و سایر توابع که ممکن است خراب شوند را بررسی کنید.
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Q4: ساختارها، اتحادها و فیلدهای بیتی در چیدمان حافظه چگونه متفاوت هستند؟
+**A:** سازه ها اعضا را به صورت متوالی با بالشتک های احتمالی برای تراز قرار می دهند. اتحادیه ها همه اعضا را در یک مکان حافظه قرار می دهند - اندازه برابر با بزرگترین عضو است. فیلدهای بیتی چندین مقدار را در یک عدد صحیح بسته بندی می کنند. ساختارها برای داده‌های ناهمگن، اتحادیه‌ها برای تایپ کردن یا صرفه‌جویی در فضا زمانی که تنها یک فیلد فعال است، و فیلدهای بیت برای ذخیره‌سازی پرچم فشرده هستند.
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Q5: نشانگرهای تابع چیست و چه زمانی باید از آنها استفاده کنم؟
+**الف:** نشانگرهای تابع آدرس یک تابع را ذخیره می کنند و بازخوانی، چند شکلی و معماری پلاگین را فعال می کنند. آنها پایه و اساس رویکرد C به توابع درجه بالاتر (مانند `qsort`، `bsearch`) هستند. آنها را با نحو اعلان کنید: `return_type (*name)(parameter_types)`.
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مسئله 1: پیاده سازی یک آرایه پویا (بردار)
+**بیانیه مشکل:** یک آرایه پویا در C پیاده سازی کنید که به طور خودکار با اضافه شدن عناصر رشد می کند، از ضمیمه استهلاک O(1) پشتیبانی می کند و پاکسازی مناسب را فراهم می کند. این معادل C C++`std::vector`است.
+** مرحله 1 - مشکل را درک کنید:**
+یک آرایه پویا به این موارد نیاز دارد: (1) یک بافر تخصیص داده شده از پشته، (2) ردیابی اندازه (عناصر استفاده شده) و ظرفیت (اسلات اختصاص داده شده)، (3) تخصیص مجدد زمانی که اندازه به ظرفیت برسد، (4) پاکسازی مناسب حافظه. ضریب رشد 2x به O(1) اضافه می شود.
+** مرحله 2 - شناسایی رویکرد: **
+- از`malloc`برای تخصیص اولیه و`realloc`برای رشد استفاده کنید.
+- نشانگر داده، اندازه و ظرفیت را در یک ساختار ذخیره کنید.
+- با دو برابر شدن ظرفیت در زمان`size == capacity`رشد کنید.
+- عملیات `push`، `pop`، `get`، `set`، و`free`را ارائه دهید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- فشار O(1) مستهلک شده: دو برابر شدن به این معنی است که هر عنصر حداکثر O(log n) برابر کل کپی می شود.
+- بررسی مرزها در`vec_get`و`vec_pop`خطاها را زود تشخیص می دهد - در C که در آن شبکه ایمنی زمان اجرا وجود ندارد ضروری است.
+- حافظه: پس از 100 فشار با شروع از ظرفیت 4، ظرفیت به 128 می رسد (4→8→16→32→64→128).
+- تولید: از`shrink_to_fit`(realloc به اندازه دقیق) برای بازیابی حافظه استفاده نشده استفاده کنید.
+### مسئله 2: یک جدول هش ساده بسازید
+**بیانیه مشکل:** یک جدول هش با کلیدهای رشته و مقادیر صحیح با استفاده از زنجیره جداگانه برای تفکیک برخورد پیاده سازی کنید. پشتیبانی از عملیات درج، جستجو و حذف.
+** مرحله 1 - مشکل را درک کنید:**
+یک جدول هش کلیدها را برای آرایه کردن شاخص ها از طریق یک تابع درهم نگاشت می کند. برخوردها (کلیدهای مختلف که به یک شاخص نگاشت می‌شوند) با زنجیره‌بندی جداگانه حل می‌شوند: هر سطل یک لیست مرتبط از ورودی‌ها است. ما نیاز داریم: تابع هش، درج، جستجو، حذف و پاکسازی.
+** مرحله 2 - شناسایی رویکرد: **
+- از هش FNV-1a برای توزیع خوب کلیدهای رشته ای استفاده کنید.
+- آرایه ای از نشانگرهای سطل (سرهای لیست مرتبط).
+- ردیابی فاکتور بار؛ وقتی فاکتور بار از آستانه فراتر رفت، اندازه را تغییر دهید.
+- همه عملیات O(1) متوسط، O(n) بدترین حالت هستند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- میانگین O(1) برای درج/جستجو/حذف با یک تابع هش خوب و ضریب بار معقول.
+- FNV-1a توزیع عالی را برای کلیدهای رشته ای با حداقل محاسبات فراهم می کند.
+- تکنیک اشاره گر به اشاره گر (`Entry **pp`) در`hashmap_remove`به زیبایی حذف سرفصل و میان لیست را بدون موارد خاص مدیریت می کند.
+- تولید: هنگامی که ضریب بار از آستانه فراتر رفت، هش مجدد را اضافه کنید. برای عملکرد بهتر کش از آدرس دهی باز (کاوش خطی) استفاده کنید.
+### مشکل 3: یک بافر حلقه برای تولید کننده-مصرف کننده پیاده سازی کنید
+**بیانیه مشکل:** برای ارتباط بین رشته ای با کارایی بالا بدون تخصیص دینامیک در حین کار، یک بافر حلقه تک تولید کننده تک مصرف کننده بدون قفل را در C اجرا کنید.
+** مرحله 1 - مشکل را درک کنید:**
+یک بافر حلقه (بافر دایره ای) از یک آرایه با اندازه ثابت با شاخص های خواندن و نوشتن استفاده می کند. هنگامی که بافر پر است، نویسنده مسدود یا بازنویسی می کند. برای SPSC (تک تولید کننده تک مصرف کننده)، می توانیم از عملیات اتمی به جای قفل برای حداکثر توان استفاده کنیم.
+** مرحله 2 - شناسایی رویکرد: **
+- آرایه با اندازه ثابت یک بار در زمان اولیه تخصیص داده می شود.
+-`head`(موقعیت خواندن) و`tail`(موقعیت نوشتن) به عنوان شاخص های اتمی.
+- پیشرفت های تولید کننده`tail`; پیشرفت های مصرف کننده `head`.
+- زمانی که`head == tail`بافر خالی است. پر وقتی`(tail + 1) % capacity == head`.
+- از اتم های C11 با ترتیب حافظه مناسب استفاده کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- بدون قفل: فقط عملیات اتمی - بدون mutexes، بدون سوئیچ زمینه.
+- مرتب سازی حافظه:`release`در نوشتن تضمین می کند که داده ها قبل از به روز رسانی فهرست قابل مشاهده هستند. `acquire`در خواندن تضمین می کند که ما داده ها را پس از خواندن ایندکس می بینیم.
+- ظرفیت توان 2:`& (capacity - 1)`را به جای`% capacity`فعال می کند — بسیار سریعتر.
+- توان عملیاتی: میلیاردها عملیات در ثانیه بر روی سخت افزار مدرن.
+- تولید: برای جلوگیری از اشتراک گذاری نادرست (هر کدام در خط کش مخصوص به خود) بالشتک بین`head`و`tail`اضافه کنید.
 ---
 
 ## خلاصه

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Commercio ed Economia
 Ogni organizzazione che vende un prodotto o un servizio è un’impresa, e ogni società che produce e distribuisce beni è un’economia. I concetti contenuti in questo file si applicano sia che tu stia gestendo un'attività freelance, lavorando in un'azienda, cercando di comprendere le notizie o semplicemente di capire come il denaro si muove nel mondo.
 ---
@@ -123,7 +124,7 @@ Questa equazione si bilancia sempre. Le risorse sono ciò che possiede l'azienda
 | **Conto economico** (P&L) | Entrate, spese, profitto | Periodo (trimestre, anno) | "Abbiamo guadagnato soldi?" |
 | **Stato Patrimoniale** | Attività, passività, patrimonio netto | Punto nel tempo | "Quanto vale l'azienda?" |
 | **Rendiconto finanziario** | Incassare, incassare | Periodo | "Abbiamo abbastanza soldi per operare?" |
-Un'azienda può essere redditizia sul conto economico ma rimanere comunque senza liquidità (se i clienti non hanno ancora pagato o se ha speso molto in attrezzature). Questo è il motivo per cui il rendiconto finanziario è importante: il contante è ciò che tiene accese le luci.
+Un'azienda può essere redditizia sul conto economico ma rimanere comunque senza liquidità (se i clienti non hanno ancora pagato o se ha speso molto in attrezzature). Questo è il motivo per cui il rendiconto del flusso di cassa è importante: il contante è ciò che tiene accese le luci.
 ### Principali rapporti finanziari
 | Rapporto | Formula | Cosa ti dice |
 |-------|---------|--------------------|
@@ -155,7 +156,7 @@ La maggior parte delle startup falliscono. Le stime suggeriscono che il 90% dell
 ---
 
 ## Catena di fornitura e operazioni
-La gestione della supply chain è l’arte e la scienza di portare il prodotto giusto nel posto giusto, al momento giusto, al costo giusto. Sembra semplice. È straordinariamente difficile.
+La gestione della catena di fornitura è il processo coordinato per consegnare il prodotto giusto nel posto giusto, al momento giusto, al costo giusto. L'obiettivo è semplice; l'esecuzione è complessa.
 ### Concetti chiave
 - **Just-in-time (JIT)**: ricevi materiali solo quando necessario, riducendo i costi di inventario. Toyota è stata la pioniera in questo. Il compromesso: i sistemi JIT sono fragili quando le catene di approvvigionamento vengono interrotte (come ha dimostrato la carenza di chip nel 2020-2022).
 - **Produzione snella**: Elimina gli sprechi: tutto ciò che non aggiunge valore al cliente. Identificare ed eliminare i "sette sprechi": sovrapproduzione, attesa, trasporto, lavorazione eccessiva, inventario, movimento e difetti.
@@ -172,7 +173,7 @@ I paesi commerciano perché hanno punti di forza diversi. Il concetto di **vanta
 | **Deficit commerciale** | Importazioni > esportazioni | Gli Stati Uniti presentano deficit commerciali persistenti |
 | **Savanzo commerciale** | Esportazioni > importazioni | Cina e Germania registrano surplus persistenti |
 | **Tassi di cambio** | Valore di una valuta rispetto ad un'altra | Il dollaro debole rende le esportazioni più economiche e le importazioni più costose |
-La globalizzazione ha fatto uscire centinaia di milioni di persone dalla povertà (soprattutto in Cina e India), ma ha anche spostato i lavoratori nei paesi sviluppati i cui posti di lavoro si sono trasferiti all’estero. La tensione politica tra i benefici del commercio e le sue conseguenze distributive è una delle questioni determinanti dell’economia moderna.
+La globalizzazione ha fatto uscire centinaia di milioni di persone dalla povertà (soprattutto in Cina e India), ma ha anche spostato i lavoratori nei paesi sviluppati i cui posti di lavoro si sono trasferiti all’estero. La tensione politica tra i benefici del commercio e le sue conseguenze distributive è una delle questioni cruciali dell’economia moderna.
 ---
 
 ## Etica aziendale e responsabilità d'impresa

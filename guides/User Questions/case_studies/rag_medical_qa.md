@@ -392,10 +392,10 @@ MediQuick is now working on:
 
 ## 🔗 Related Resources
 
-- **[RAG Guide](../guides/RAG/)** - Learn the fundamentals
-- **[RAG Chatbot Project](../projects/rag-chatbot/)** - Build your own RAG system
+- **[RAG Guide](../../RAG/)** - Learn the fundamentals
+- **[RAG Chatbot Project](../../projects/rag-chatbot/)** - Build your own RAG system
 - **[Common Errors](../errors/)** - Troubleshoot issues
-- **[Hardware Guide](./hardware_matrix.md)** - Choose the right infrastructure
+- **[Hardware Guide](../hardware_guides/reality_check.md)** - Choose the right infrastructure
 
 ---
 
@@ -412,6 +412,6 @@ MediQuick is now working on:
 
 **Want to build something similar?** Start with our [RAG Tutorial](../projects/rag-chatbot/)!
 
-[View More Case Studies](./README.md) | [Learn RAG](../guides/RAG/) | [Try the Project](../projects/rag-chatbot/)
+[View More Case Studies](./README.md) | [Learn RAG](../../RAG/) | [Try the Project](../../projects/rag-chatbot/)
 
 </div>

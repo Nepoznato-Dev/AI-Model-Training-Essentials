@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fortran
 Fortran (Formula Translation) é a linguagem de programação de alto nível mais antiga ainda em uso generalizado, desenvolvida pela primeira vez pela IBM em 1957 para computação científica e de engenharia. Apesar de sua idade, o Fortran moderno (Fortran 2008/2018/2023) é uma linguagem capaz e de alto desempenho usada extensivamente em previsão numérica do tempo, dinâmica de fluidos computacional, simulações físicas, modelagem financeira e computação de alto desempenho (HPC). Muitos dos supercomputadores mais rápidos do mundo executam código Fortran.
 A linguagem evoluiu significativamente desde seus primeiros dias. O Fortran moderno possui módulos, tipos derivados, procedimentos genéricos, coarrays (programação paralela) e interoperabilidade com C. Continua sendo a linguagem preferida para muitas aplicações de computação científica onde o desempenho é fundamental.
@@ -780,5 +781,161 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Ciência de dados (interativo) | Não é o fluxo de trabalho | Pitão, R |
 ---
 
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre o Fortran 90 e o Fortran moderno (2008+)?
+**R:** O Fortran moderno adicionou muitos recursos que o tornam mais expressivo:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: Como os arrays Fortran diferem dos arrays C?
+**R:** Arrays Fortran são objetos de primeira classe com operações integradas:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: Como obtenho desempenho máximo em Fortran?
+**R:** Principais práticas:
+- Use`intent`explícito para todos os argumentos fictícios
+- Use`implicit none`em qualquer lugar
+- Prefira operações de array em vez de loops
+- Use padrões de acesso à memória contíguos
+- Use sinalizadores de otimização do compilador:`-O3 -march=native -ffast-math`
+- Perfil com`gprof`ou ferramentas específicas do compilador
+- Use`pure`e`elemental`para funções que o compilador pode otimizar
+### Q4: Como faço a interface do Fortran com C?
+**R:** Use o módulo `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: Qual sistema de compilação devo usar para projetos Fortran?
+**R:** CMake tem excelente suporte a Fortran. FPM (Fortran Package Manager) é a opção nativa moderna:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Resolvendo uma EDP com Diferenças Finitas
+**Etapa 1: Entenda o problema**
+Resolva a equação do calor 1D: du/dt = alfa * d²u/dx²
+**Etapa 2: Identifique a abordagem**
+Discretize espaço e tempo usando diferenças finitas. Use um esquema explícito.
+**Etapa 3: Implementar**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Etapa 4: verificar**
+Verifique a conservação, a convergência com o refinamento da grade e compare com a solução analítica.
+### Problema 2: Diagonalização de Matriz
+**Etapa 1: Entenda o problema**
+Encontre autovalores e autovetores de uma matriz simétrica.
+**Etapa 2: Identifique a abordagem**
+Use a rotina`dsyev`do LAPACK através da interface do Fortran.
+**Etapa 3: Implementar**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Etapa 4: verificar**
+Verifique se A*v = lambda*v para cada par próprio.
+---
+
 ## Resumo
-Fortran é a linguagem de programação científica original e continua sendo uma potência na computação de alto desempenho. O Fortran moderno é uma linguagem capaz e em evolução com operações de array nativas, suporte de programação paralela e interoperabilidade C. Embora a sua comunidade seja pequena e especializada, o Fortran continua a executar algumas das cargas de trabalho computacionais mais exigentes do mundo. Para computação numérica em escala, o Fortran continua relevante.
+Fortran é a linguagem de programação científica original e continua sendo uma potência em computação de alto desempenho. O Fortran moderno é uma linguagem capaz e em evolução com operações de array nativas, suporte de programação paralela e interoperabilidade C. Embora a sua comunidade seja pequena e especializada, o Fortran continua a executar algumas das cargas de trabalho computacionais mais exigentes do mundo. Para computação numérica em escala, o Fortran continua relevante.

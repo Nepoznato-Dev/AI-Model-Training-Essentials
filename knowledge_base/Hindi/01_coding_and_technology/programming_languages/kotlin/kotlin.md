@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "कोटलिन"
-विवरण: "कोटलिन प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [कोटलिन, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "48 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Kotlin"
+description: "Comprehensive reference for the Kotlin programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [kotlin, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "48 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #कोटलिन
 कोटलिन एक स्थिर रूप से टाइप की गई, संकलित प्रोग्रामिंग भाषा है जिसे JetBrains द्वारा विकसित किया गया है और पहली बार 2011 में जारी किया गया था (2016 में 1.0)। यह जावा वर्चुअल मशीन (जेवीएम) पर चलता है और जावा के साथ पूरी तरह से इंटरऑपरेबल है - जिसका अर्थ है कि आप कोटलिन से किसी भी जावा लाइब्रेरी का उपयोग कर सकते हैं और बिना किसी रैपर के जावा से कोटलिन कोड को कॉल कर सकते हैं। 2017 में, Google ने एंड्रॉइड विकास के लिए कोटलिन को पसंदीदा भाषा के रूप में घोषित किया, और तब से यह प्रमुख एंड्रॉइड भाषा बन गई है।
 कोटलिन को जावा के समस्या बिंदुओं को ठीक करने के लिए डिज़ाइन किया गया था: शब्दाडंबर, अशक्त सूचक अपवाद, और अनुपलब्ध आधुनिक सुविधाएँ। परिणाम एक ऐसी भाषा है जो आधुनिक जावा की तरह महसूस होती है - संक्षिप्त, सुरक्षित और अभिव्यंजक - विशाल जावा पारिस्थितिकी तंत्र के साथ पूर्ण अनुकूलता बनाए रखते हुए।
@@ -225,7 +230,7 @@ val json = user.let {
 ---
 
 ## उन्नत सिंटैक्स और पैटर्न
-### जेनरिक और टाइप पैरामीटर्स
+### जेनेरिक और प्रकार पैरामीटर
 ```kotlin
 // Generic function with type constraint
 fun <T : Comparable<T>> List<T>.sorted(): List<T> =
@@ -1171,5 +1176,408 @@ kotlin {
 | डेटा साइंस/एमएल | पारिस्थितिकी तंत्र नहीं | पायथन, आर |
 ---
 
+## सिंथेटिक प्रश्नोत्तर
+### Q1: कोटलिन की शून्य सुरक्षा सुविधाएँ वास्तव में कैसे काम करती हैं?
+**ए:** कोटलिन संकलन समय पर निरर्थक (`String?`) और गैर-शून्य (`String`) प्रकारों के बीच अंतर करता है। कंपाइलर आपको शून्य जांच के बिना शून्य प्रकारों पर कॉल करने के तरीकों से रोकता है। सुरक्षित कॉल (`?.`), एल्विस ऑपरेटर (`?:`), और गैर-शून्य दावा (`!!`) अलग-अलग रणनीतियाँ प्रदान करते हैं। शून्य जांच के बाद स्मार्ट कास्ट स्वचालित रूप से संकीर्ण प्रकार के होते हैं।
+```kotlin
+var name: String? = null
+
+// Safe call — returns null if name is null
+val length: Int? = name?.length
+
+// Elvis operator — provide default
+val display: String = name ?: "Anonymous"
+
+// Smart cast — compiler narrows type after check
+fun process(user: String?) {
+    if (user != null) {
+        println(user.length)  // Smart cast to String (non-null)
+    }
+}
+
+// let with safe call
+name?.let {
+    println("Name is $it")  // Only runs if name is not null
+}
+
+// Non-null assertion — crashes if null (avoid in production)
+val forced: String = name!!  // Throws NullPointerException if null
+```
+
+### Q2: कॉरआउटिन क्या हैं, और वे थ्रेड से कैसे भिन्न हैं?
+**ए:** कोरूटाइन हल्के, सहयोगी कार्य हैं जो धागों पर चलते हैं। वे निष्पादन को निलंबित कर सकते हैं (थ्रेड को अवरुद्ध किए बिना) और बाद में फिर से शुरू कर सकते हैं। कुछ धागों पर लाखों कोरआउटिन चल सकते हैं। `suspend`फ़ंक्शंस को केवल कोरआउट्स या अन्य सस्पेंड फ़ंक्शंस से कॉल किया जा सकता है। कोरआउटिन स्कोप जीवनचक्र को नियंत्रित करते हैं - जब कोई स्कोप रद्द कर दिया जाता है, तो उसके सभी कोरआउटाइन रद्द कर दिए जाते हैं।
+```kotlin
+import kotlinx.coroutines.*
+
+// Basic coroutine
+CoroutineScope(Dispatchers.Main).launch {
+    val user = withContext(Dispatchers.IO) {
+        fetchUserFromNetwork()  // Suspends, doesn't block
+    }
+    textView.text = user.name   // Back on Main thread
+}
+
+// Concurrent execution
+suspend fun loadDashboard(): Dashboard {
+    coroutineScope {
+        val userDeferred = async { fetchUser() }
+        val postsDeferred = async { fetchPosts() }
+        val user = userDeferred.await()
+        val posts = postsDeferred.await()
+        Dashboard(user, posts)
+    }
+}
+
+// Flow — cold async stream
+fun observePrices(): Flow<Double> = flow {
+    while (true) {
+        emit(fetchCurrentPrice())
+        delay(1000)
+    }
+}
+
+// Collect flow
+lifecycleScope.launch {
+    observePrices()
+        .filter { it > 100.0 }
+        .collect { price -> updateUI(price) }
+}
+```
+
+### Q3: डेटा क्लास, सीलबंद क्लास और वैल्यू क्लास क्या हैं?
+**ए:** डेटा कक्षाएं स्वचालित रूप से`equals`,`hashCode`,`toString`,`copy`, और`componentN`फ़ंक्शंस उत्पन्न करती हैं - डेटा धारकों के लिए आदर्श। सीलबंद वर्ग वंशानुक्रम को प्रतिबंधित करते हैं - सभी उपवर्ग एक ही फ़ाइल में होने चाहिए - संपूर्ण`when`अभिव्यक्तियों को सक्षम करना। मान वर्ग रनटाइम (इनलाइन क्लास) पर शून्य ओवरहेड के साथ एकल मान लपेटते हैं।
+```kotlin
+// Data class — auto-generates equals/hashCode/toString/copy
+data class User(val name: String, val email: String, val age: Int)
+
+val alice = User("Alice", "alice@example.com", 30)
+val bob = alice.copy(name = "Bob")
+val (name, email, age) = alice  // Destructuring
+
+// Sealed class — exhaustive when
+sealed class Result<out T> {
+    data class Success<T>(val data: T) : Result<T>()
+    data class Error(val exception: Throwable) : Result<Nothing>()
+    data object Loading : Result<Nothing>()
+}
+
+fun handle(result: Result<User>) = when (result) {
+    is Result.Success -> showUser(result.data)
+    is Result.Error -> showError(result.exception)
+    is Result.Loading -> showSpinner()
+    // No 'else' needed — compiler knows all cases are covered
+}
+
+// Value class — zero-overhead wrapper
+@JvmInline
+value class UserId(val value: String)
+fun getUser(id: UserId) { /* ... */ }
+// At runtime, UserId is just a String — no object allocation
+```
+
+### Q4: एक्सटेंशन फ़ंक्शंस कैसे काम करते हैं, और उनकी सीमाएँ क्या हैं?
+**ए:** एक्सटेंशन फ़ंक्शंस विरासत या संशोधन के बिना मौजूदा प्रकारों में विधियाँ जोड़ते हैं। उन्हें स्थिर रूप से हल किया जाता है (घोषित प्रकार के आधार पर, रनटाइम प्रकार के आधार पर नहीं)। वे निजी सदस्यों तक नहीं पहुंच सकते. एक्सटेंशन गुण समान रूप से कार्य करते हैं. कोटलिन की मानक लाइब्रेरी और एंड्रॉइड विकास में इनका बड़े पैमाने पर उपयोग किया जाता है।
+```kotlin
+// Extension function
+fun String.isEmail(): Boolean = contains("@") && contains(".")
+fun Int.toOrdinal(): String = "${this}${when (this % 10) {
+    1 -> "st"; 2 -> "nd"; 3 -> "rd"; else -> "th"
+}}"
+
+// Extension with receiver
+fun <T> List<T>.secondOrNull(): T? = if (size >= 2) this[1] else null
+
+// Extension property
+val String.wordCount: Int get() = split("\\s+".toRegex()).size
+
+// Scoped extensions
+class Database {
+    fun query(sql: String): List<Row> = TODO()
+}
+
+fun Database.users() = query("SELECT * FROM users")
+
+// Usage
+"test@example.com".isEmail()  // true
+42.toOrdinal()                // "42nd"
+"hello world foo".wordCount   // 3
+```
+
+### Q5: कोटलिन मल्टीप्लेटफ़ॉर्म क्या है, और मुझे इसका उपयोग कब करना चाहिए?
+**ए:** कोटलिन मल्टीप्लेटफ़ॉर्म (केएमपी) आपको प्लेटफ़ॉर्म-विशिष्ट यूआई रखते हुए प्लेटफ़ॉर्म (एंड्रॉइड, आईओएस, वेब, डेस्कटॉप, सर्वर) के बीच कोड साझा करने देता है। व्यावसायिक तर्क, नेटवर्किंग और डेटा परतें साझा की जा सकती हैं; यूआई मूल रहता है. इसका उपयोग तब करें जब आपके पास एक ऐसी टीम हो जो कोटलिन को जानती हो और पूर्ण क्रॉस-प्लेटफ़ॉर्म (जैसे फ़्लटर) पर जाए बिना कोड शेयरिंग को अधिकतम करना चाहती हो।
+```kotlin
+// commonMain — shared code
+expect class Platform() {
+    val name: String
+}
+
+// androidMain
+actual class Platform {
+    actual val name = "Android ${Build.VERSION.SDK_INT}"
+}
+
+// iosMain
+actual class Platform {
+    actual val name = UIDevice.currentDevice.systemName()
+}
+
+// Shared networking
+interface ApiClient {
+    suspend fun getUsers(): List<User>
+}
+
+class ApiClientImpl(private val httpClient: HttpClient) : ApiClient {
+    override suspend fun getUsers(): List<User> {
+        return httpClient.get("/api/users").body()
+    }
+}
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक टाइप-सेफ बिल्डर डीएसएल बनाएं
+**समस्या कथन:** संकलन-समय सुरक्षा के साथ HTML दस्तावेज़ बनाने के लिए एक कोटलिन डीएसएल बनाएं। डीएसएल को वैध HTML संरचना लागू करनी चाहिए (उदाहरण के लिए,`<head>`केवल`<html>`के अंदर,`<li>`केवल`<ul>`या`<ol>`के अंदर)।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) स्कोप लीक को रोकने के लिए`@DslMarker`के साथ बिल्डर फ़ंक्शन, (2) रिसीवर-आधारित डीएसएल सिंटैक्स, (3) वैध नेस्टिंग का संकलन-समय प्रवर्तन। कोटलिन के टाइप-सेफ बिल्डर्स और`@DslMarker`एनोटेशन को इसके लिए डिज़ाइन किया गया है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- स्कोप कंट्रोल एनोटेशन बनाने के लिए`@DslMarker`का उपयोग करें।
+- प्रत्येक HTML तत्व अपने मान्य बच्चों के लिए बिल्डर विधियों वाला एक वर्ग है।
+-`@HtmlTagMarker`चाइल्ड स्कोप के अंदर पैरेंट स्कोप विधियों तक पहुंच को रोकता है।
+- स्वच्छ सिंटैक्स के लिए`invoke`ऑपरेटर का उपयोग करें।
+**चरण 3 - समाधान लागू करें:**
+```kotlin
+@DslMarker
+annotation class HtmlTagMarker
+
+@HtmlTagMarker
+class HTML {
+    private val children = mutableListOf<String>()
+
+    fun head(init: HEAD.() -> Unit) {
+        val head = HEAD().apply(init)
+        children.add(head.render())
+    }
+
+    fun body(init: BODY.() -> Unit) {
+        val body = BODY().apply(init)
+        children.add(body.render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<html>")
+        children.forEach { appendLine("  $it") }
+        appendLine("</html>")
+    }
+}
+
+@HtmlTagMarker
+class HEAD {
+    private val children = mutableListOf<String>()
+
+    fun title(text: String) { children.add("<title>$text</title>") }
+    fun meta(name: String, content: String) {
+        children.add("<meta name=\"$name\" content=\"$content\">")
+    }
+
+    fun render(): String = buildString {
+        appendLine("<head>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</head>")
+    }
+}
+
+@HtmlTagMarker
+class BODY {
+    private val children = mutableListOf<String>()
+
+    fun h1(text: String) { children.add("<h1>$text</h1>") }
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun div(init: DIV.() -> Unit) {
+        children.add(DIV().apply(init).render())
+    }
+    fun ul(init: UL.() -> Unit) {
+        children.add(UL().apply(init).render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<body>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</body>")
+    }
+}
+
+@HtmlTagMarker
+class DIV {
+    private val children = mutableListOf<String>()
+    var cssClass: String = ""
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun render(): String {
+        val cls = if (cssClass.isNotEmpty()) " class=\"$cssClass\"" else ""
+        return "<div$cls>${children.joinToString("")}</div>"
+    }
+}
+
+@HtmlTagMarker
+class UL {
+    private val items = mutableListOf<String>()
+    fun li(text: String) { items.add("<li>$text</li>") }
+    fun render(): String = "<ul>${items.joinToString("")}</ul>"
+}
+
+fun html(init: HTML.() -> Unit): String = HTML().apply(init).render()
+
+// Usage — compile-time safe
+val page = html {
+    head {
+        title("My Page")
+        meta("viewport", "width=device-width")
+    }
+    body {
+        h1("Welcome")
+        p("This is a type-safe HTML builder.")
+        div {
+            cssClass = "container"
+            p("Inside a div")
+        }
+        ul {
+            li("Item 1")
+            li("Item 2")
+            li("Item 3")
+        }
+    }
+}
+// title() is NOT accessible inside body {} — prevented by @DslMarker
+// li() is NOT accessible inside body {} — only inside ul {}
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- प्रकार की सुरक्षा:`@DslMarker`स्कोप को लीक होने से रोकता है -`title()``body {}` के अंदर पहुंच योग्य नहीं है।
+- कंपाइलर कंपाइल समय पर वैध नेस्टिंग लागू करता है - रनटाइम जांच की आवश्यकता नहीं है।
+- विस्तारशीलता: उपयुक्त चाइल्ड विधियों के साथ कक्षाएं बनाकर नए तत्व जोड़ें।
+- उत्पादन: व्यापक, अच्छी तरह से परीक्षण किए गए HTML DSL के लिए`kotlinx.html`का उपयोग करें।
+### समस्या 2: कॉरआउट्स के साथ एक राज्य मशीन लागू करें
+**समस्या कथन:** एक गेम चरित्र के लिए एक कोरआउटिन-आधारित राज्य मशीन बनाएं जो इनपुट घटनाओं, राज्यों के बीच संक्रमण को संसाधित करता है, और एनीमेशन कॉलबैक का समर्थन करता है।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) प्रवेश/निकास क्रियाओं वाले राज्य, (2) घटना-संचालित बदलाव, (3) कोरआउटिन-आधारित प्रोसेसिंग लूप, (4) राज्य बदलाव पर एनीमेशन कॉलबैक। राज्य मशीन एक चैनल से लंबे समय तक चलने वाली कोरटाइन उपभोग करने वाली घटनाओं के रूप में चलती है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- राज्यों और घटनाओं के लिए सीलबंद वर्ग का उपयोग करें।
+- इवेंट पासिंग के लिए`Channel`का उपयोग करें।
+- स्टेट मशीन लूप`for (event in channel)`के साथ घटनाओं का उपभोग करता है।
+- परिवर्तन निकास/प्रवेश कॉलबैक को ट्रिगर करते हैं।
+**चरण 3 - समाधान लागू करें:**
+```kotlin
+sealed class GameState {
+    data object Idle : GameState()
+    data object Walking : GameState()
+    data object Running : GameState()
+    data object Attacking : GameState()
+    data class Dead(val cause: String) : GameState()
+}
+
+sealed class GameEvent {
+    data object Move : GameEvent()
+    data object Run : GameEvent()
+    data object Attack : GameEvent()
+    data object Stop : GameEvent()
+    data class TakeDamage(val amount: Int) : GameEvent()
+}
+
+class CharacterStateMachine(
+    private val scope: CoroutineScope,
+    private val onStateChange: suspend (GameState) -> Unit
+) {
+    private var currentState: GameState = GameState.Idle
+    private val eventChannel = Channel<GameEvent>(Channel.UNLIMITED)
+    var health: Int = 100; private set
+
+    init {
+        scope.launch {
+            onStateChange(currentState)
+            for (event in eventChannel) {
+                processEvent(event)
+            }
+        }
+    }
+
+    suspend fun send(event: GameEvent) {
+        eventChannel.send(event)
+    }
+
+    private suspend fun processEvent(event: GameEvent) {
+        val newState = when (currentState) {
+            is GameState.Dead -> return  // No transitions from dead
+
+            GameState.Idle -> when (event) {
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Walking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Running -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Attacking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+        }
+
+        if (newState != currentState) {
+            currentState = newState
+            onStateChange(newState)
+        }
+    }
+
+    private suspend fun handleDamage(event: GameEvent.TakeDamage): GameState {
+        health -= event.amount
+        return if (health <= 0) GameState.Dead("Defeated") else currentState
+    }
+}
+
+// Usage
+val machine = CharacterStateMachine(
+    scope = CoroutineScope(Dispatchers.Default)
+) { state ->
+    println("State changed to: $state")
+    when (state) {
+        GameState.Idle -> playAnimation("idle")
+        GameState.Walking -> playAnimation("walk")
+        GameState.Running -> playAnimation("run")
+        GameState.Attacking -> playAnimation("attack")
+        is GameState.Dead -> playAnimation("death")
+    }
+}
+
+machine.send(GameEvent.Move)      // Walking
+machine.send(GameEvent.Run)       // Running
+machine.send(GameEvent.Attack)    // Attacking
+machine.send(GameEvent.TakeDamage(120))  // Dead
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- प्रकार की सुरक्षा: सीलबंद कक्षाएं सुनिश्चित करती हैं कि सभी राज्यों और घटनाओं को नियंत्रित किया जाए। कंपाइलर गुम हुए ट्रांज़िशन को पकड़ लेता है।
+- कॉरआउटिन-आधारित: घटनाओं को बिना अवरोध के क्रमिक रूप से संसाधित किया जाता है। चैनल बैकप्रेशर प्रदान करता है।
+- जीवनचक्र: दायरा रद्द करने से राज्य मशीन साफ़ रूप से बंद हो जाती है।
+- उत्पादन: जटिल राज्य मशीनों के लिए,`tinder-statemachine`का उपयोग करें या औपचारिक राज्य मशीन लाइब्रेरी के साथ राज्यों को मॉडल करें।
+---
+
 ## सारांश
-कोटलिन आधुनिक जावा है जो ठीक से तैयार किया गया है। यह जेवीएम पर चलता है, सभी जावा लाइब्रेरीज़ का उपयोग करता है, लेकिन नल पॉइंटर अपवादों को समाप्त करता है, बॉयलरप्लेट को कम करता है, और कॉरआउटिन, एक्सटेंशन फ़ंक्शंस और सीलबंद क्लासेस जैसी आधुनिक सुविधाएं जोड़ता है। Android विकास के लिए, कोटलिन स्पष्ट विकल्प है। जेवीएम बैकएंड के लिए, यह जावा का एक आकर्षक विकल्प है। कोटलिन मल्टीप्लेटफ़ॉर्म ने अपनी पहुंच आईओएस और उससे आगे तक बढ़ा दी है। यदि आप पहले से ही जावा जानते हैं, तो कोटलिन सीखना एक स्वाभाविक और फायदेमंद अगला कदम है।
+कोटलिन आधुनिक जावा है जो ठीक से तैयार किया गया है। यह जेवीएम पर चलता है, सभी जावा लाइब्रेरीज़ का उपयोग करता है, लेकिन नल पॉइंटर अपवादों को समाप्त करता है, बॉयलरप्लेट को कम करता है, और कॉरआउट्स, एक्सटेंशन फ़ंक्शंस और सीलबंद क्लासेस जैसी आधुनिक सुविधाएं जोड़ता है। Android विकास के लिए, कोटलिन स्पष्ट विकल्प है। जेवीएम बैकएंड के लिए, यह जावा का एक आकर्षक विकल्प है। कोटलिन मल्टीप्लेटफ़ॉर्म ने अपनी पहुंच आईओएस और उससे आगे तक बढ़ा दी है। यदि आप पहले से ही जावा जानते हैं, तो कोटलिन सीखना एक स्वाभाविक और फायदेमंद अगला कदम है।

@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "रूबी"
-विवरण: "रूबी प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [रूबी, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "34 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Ruby"
+description: "Comprehensive reference for the Ruby programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ruby, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #रूबी
 रूबी युकिहिरो "मैट्ज़" मात्सुमोतो द्वारा बनाई गई एक गतिशील, व्याख्या की गई, ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग भाषा है और पहली बार 1995 में जापान में जारी की गई थी। रूबी को प्रोग्रामर की ख़ुशी पर ध्यान केंद्रित करके डिज़ाइन किया गया था - इसका सिंटैक्स सुरुचिपूर्ण और प्राकृतिक है, लगभग अंग्रेजी की तरह पढ़ना। रूबी में सब कुछ एक वस्तु है, जिसमें पूर्णांक और बूलियन जैसे आदिम प्रकार शामिल हैं। रूबी को रूबी ऑन रेल्स वेब फ्रेमवर्क के लिए जाना जाता है, जिसने कॉन्फ़िगरेशन और रैपिड प्रोटोटाइप पर कन्वेंशन को लोकप्रिय बनाकर वेब विकास में क्रांति ला दी।
 बियॉन्ड रेल्स, रूबी का उपयोग स्क्रिप्टिंग, ऑटोमेशन, डेवऑप्स टूलिंग (शेफ, पपेट) और एक सामान्य-उद्देश्य वाली भाषा के रूप में किया जाता है। इसकी अभिव्यंजक वाक्यविन्यास और शक्तिशाली मेटाप्रोग्रामिंग क्षमताएं इसे लिखने का आनंद देती हैं।
@@ -51,7 +56,7 @@
 |----|---|-----|
 | **प्रदर्शन** | संकलित भाषाओं की तुलना में धीमी; एमआरआई में जीआईएल है | समानता के लिए JRuby का उपयोग करें; C एक्सटेंशन पर ऑफ़लोड करें |
 | **घटती लोकप्रियता** | पाइथॉन, गो, रस्ट की तुलना में कम नए अपनाने | अभी भी व्यापक रूप से उपयोग किया जाता है; वेब स्टार्टअप और परामर्श में मजबूत |
-| **टाइपिंग** | डायनामिक टाइपिंग से रनटाइम त्रुटियाँ हो सकती हैं | वैकल्पिक स्थैतिक टाइपिंग के लिए सॉर्बेट या आरबीएस का उपयोग करें |
+| **टाइपिंग** | डायनामिक टाइपिंग से रनटाइम त्रुटियां हो सकती हैं | वैकल्पिक स्थैतिक टाइपिंग के लिए सॉर्बेट या आरबीएस का उपयोग करें |
 | **मेमोरी उपयोग** | गो या रस्ट की तुलना में अधिक मेमोरी फ़ुटप्रिंट | अधिकांश वेब अनुप्रयोगों के लिए स्वीकार्य |
 | **नौकरी बाज़ार** | पायथन या जावास्क्रिप्ट की तुलना में कम नए पद | विशिष्ट क्षेत्रों में मजबूत (रेल की दुकानें, परामर्श) |
 ---
@@ -818,5 +823,323 @@ fly deploy
 | मोबाइल ऐप्स | अनुकूल नहीं | स्विफ्ट, कोटलिन, स्पंदन |
 ---
 
+## सिंथेटिक प्रश्नोत्तर
+### Q1: रूबी में`proc`,`lambda`और`block`के बीच क्या अंतर है?
+**ए:** तीनों बंद हैं, लेकिन वे व्यवहार में भिन्न हैं।`block`कोड का एक अज्ञात हिस्सा है जो`do...end`या`{}`के साथ एक विधि को पास किया जाता है।`proc`एक ऑब्जेक्ट के रूप में सहेजा गया एक ब्लॉक है - यह तर्क गणना की जांच नहीं करता है और`return`एन्क्लोजिंग विधि से बाहर निकलता है।`lambda`एक proc की तरह है लेकिन तर्क गणना की जाँच करता है और`return`केवल लैम्ब्डा से बाहर निकलता है। जब आपको विधि-सदृश व्यवहार की आवश्यकता हो तो एकबारगी कॉलबैक के लिए ब्लॉक, पुन: प्रयोज्य स्निपेट के लिए प्रोसेस और लैम्ब्डा का उपयोग करें।
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### Q2: रूबी जेम्स और बंडलर कैसे काम करते हैं?
+**ए:** रत्न रूबी के पैकेज सिस्टम हैं - रूबीगेम्स.ओआरजी के माध्यम से वितरित पुन: प्रयोज्य पुस्तकालय। एक`Gemfile`निर्भरता की घोषणा करता है; `bundle install`संस्करणों का समाधान करता है और प्रतिलिपि प्रस्तुत करने योग्यता के लिए एक`Gemfile.lock`बनाता है। `bundle exec`रत्न संदर्भ में आदेश चलाता है। संगत संस्करण बाधाओं के लिए`gem 'name', '~> 2.0'`का उपयोग करें। अनुप्रयोगों के लिए हमेशा`Gemfile.lock`प्रतिबद्ध करें, लेकिन पुस्तकालयों के लिए नहीं।
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### Q3: रूबी के प्रतीक प्रकार क्या हैं, और वे महत्वपूर्ण क्यों हैं?
+**ए:** प्रतीक (`:name`) अपरिवर्तनीय, आंतरिक स्ट्रिंग हैं - प्रत्येक अद्वितीय प्रतीक स्मृति में केवल एक बार मौजूद होता है। वे हैश कुंजियों, विधि नामों और पहचानकर्ताओं के लिए आदर्श हैं। रूबी के पास`Symbol`ऑब्जेक्ट भी हैं जिनका उपयोग मेटाप्रोग्रामिंग (`send`, `define_method`) में बड़े पैमाने पर किया जाता है। निश्चित पहचानकर्ताओं के लिए प्रतीकों का उपयोग करें; जब आपको सामग्री में हेरफेर करने की आवश्यकता हो तो स्ट्रिंग्स का उपयोग करें।
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### Q4: रूबी की मेटाप्रोग्रामिंग कैसे काम करती है, और मुझे इसका उपयोग कब करना चाहिए?
+**ए:** रूबी कोड को रनटाइम पर कोड को परिभाषित करने की अनुमति देता है:`define_method`गतिशील रूप से तरीकों का निर्माण करता है,`method_missing`अपरिभाषित विधि कॉल को रोकता है,`send`निजी तरीकों को कॉल करता है, और`class_eval`/`instance_eval`एक क्लास/इंस्टेंस संदर्भ में कोड का मूल्यांकन करता है। मेटाप्रोग्रामिंग शक्तिशाली है लेकिन कोड को समझना कठिन बना देता है - इसका उपयोग डीएसएल और फ्रेमवर्क जादू के लिए करें, रोजमर्रा के तर्क के लिए नहीं।
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### Q5: रूबी में त्रुटियों से निपटने का सबसे अच्छा तरीका क्या है?
+**ए:** रूबी त्रुटि प्रबंधन के लिए अपवादों का उपयोग करती है।`StandardError`से प्राप्त होने वाले कस्टम अपवाद वर्गों को परिभाषित करें (`Exception` नहीं - जो सिस्टम-स्तरीय त्रुटियों को पकड़ता है)। संरचित प्रबंधन के लिए`begin/rescue/else/ensure`का उपयोग करें। विशिष्ट अपवाद उठाएँ, सामान्य`RuntimeError`नहीं। सरल वन-लाइनर्स के लिए संशोधक के रूप में`rescue`का उपयोग करें।
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: कॉन्फ़िगरेशन फ़ाइलों के लिए एक DSL बनाएँ
+**समस्या कथन:** एक रूबी डीएसएल बनाएं जो सर्वर कॉन्फ़िगरेशन को पढ़ने योग्य, घोषणात्मक सिंटैक्स में परिभाषित करने की अनुमति देता है। DSL को JSON में नेस्टेड ब्लॉक, सत्यापन और क्रमबद्धता का समर्थन करना चाहिए।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) ब्लॉक और विधि कॉल का उपयोग करके एक साफ डीएसएल सिंटैक्स, (2)`instance_eval`या स्पष्ट तरीकों के माध्यम से डेटा संग्रह, (3) आवश्यक फ़ील्ड का सत्यापन, (4) JSON क्रमबद्धता। रूबी की मेटाप्रोग्रामिंग डीएसएल को प्राकृतिक बनाती है।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- डीएसएल कॉल कैप्चर करने के लिए बिल्डर क्लास के साथ`instance_eval`का उपयोग करें।
+- इंस्टेंस वेरिएबल्स में कॉन्फ़िगरेशन स्टोर करें।
+- क्रमांकन से पहले आवश्यक फ़ील्ड मान्य करें।
+- आउटपुट के लिए`to_h`और`JSON.generate`का उपयोग करें।
+**चरण 3 - समाधान लागू करें:**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- डीएसएल पठनीय और घोषणात्मक है - गैर-प्रोग्रामर इसे समझ सकते हैं।
+- सत्यापन निर्माण के समय लापता आवश्यक फ़ील्ड को पकड़ता है।
+-`instance_eval`स्वच्छ ब्लॉक सिंटैक्स प्रदान करता है लेकिन`self`को सीमित करता है - अधिक जटिल DSL के लिए, बिल्डर के सुपरक्लास के रूप में`BasicObject`का उपयोग करें।
+- उत्पादन: उत्पादन-ग्रेड कॉन्फ़िगरेशन डीएसएल के लिए`dry-configurable`या`configurate`रत्नों पर विचार करें।
+### समस्या 2: एक मेमोइज़ेशन लाइब्रेरी लागू करें
+**समस्या कथन:** एक मेमोइज़ेशन मॉड्यूल बनाएं जिसे विधि परिणामों को कैश करने के लिए किसी भी वर्ग में मिलाया जा सकता है। टीटीएल (टाइम-टू-लाइव), कैश आकार सीमा और कस्टम कैश कुंजियों का समर्थन करें।
+**चरण 1 - समस्या को समझें:**
+हमें चाहिए: (1) एक मॉड्यूल जो एक`memoize`क्लास विधि जोड़ता है, (2) विधि लक्ष्य विधियों को कैशिंग लॉजिक के साथ लपेटती है, (3) टीटीएल समाप्ति के लिए समर्थन, (4) कैश भर जाने पर एलआरयू निष्कासन। रूबी के`Module#prepend`और`define_method`इसके लिए आदर्श हैं।
+**चरण 2 - दृष्टिकोण को पहचानें:**
+- रैपर बनाने के लिए`define_method`के साथ`Module.new`का उपयोग करें।
+- टीटीएल के लिए टाइमस्टैम्प के साथ हैश में कैश स्टोर करें।
+- मूल विधि से पहले कैशिंग परत डालने के लिए`prepend`का उपयोग करें।
+- कॉन्फ़िगर करने योग्य विकल्पों का समर्थन करें: `ttl`, `max_size`, `key`।
+**चरण 3 - समाधान लागू करें:**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+**चरण 4 - सत्यापित करें और अनुकूलित करें:**
+- थ्रेड सुरक्षा:`Mutex`कैश पढ़ने/लिखने की सुरक्षा करता है; गणना लॉक के बाहर होती है.
+- टीटीएल: समाप्त हो चुकी प्रविष्टियों को एक्सेस पर आलस्यपूर्वक साफ किया जाता है।
+- एलआरयू निष्कासन: जब कैश`max_size`से अधिक हो जाता है, तो सबसे पुरानी प्रविष्टि (टाइमस्टैम्प द्वारा) हटा दी जाती है।
+- कस्टम कुंजियाँ:`key`लैम्ब्डा कैश पहचान पर सूक्ष्म नियंत्रण की अनुमति देता है।
+- उत्पादन: साधारण मामलों के लिए`memoist`रत्न का उपयोग करें, या वितरित कैशिंग के लिए रेडिस-समर्थित मेमोइज़ेशन का उपयोग करें।
+---
+
 ## सारांश
-रूबी एक ऐसी भाषा है जो डेवलपर की खुशी और अभिव्यक्ति को प्राथमिकता देती है। इसका सिंटैक्स किसी भी भाषा में सबसे अधिक पठनीय है, और रूबी ऑन रेल्स अब तक बनाए गए सबसे अधिक उत्पादक वेब फ्रेमवर्क में से एक है। जबकि रूबी की लोकप्रियता पायथन और जावास्क्रिप्ट की तुलना में कम हो गई है, यह वेब विकास, स्क्रिप्टिंग और स्वचालन के लिए एक शक्तिशाली, आनंददायक भाषा बनी हुई है। यदि आप सुरुचिपूर्ण कोड और तीव्र विकास को महत्व देते हैं, तो रूबी सीखने लायक है।
+रूबी एक ऐसी भाषा है जो डेवलपर की खुशी और अभिव्यक्ति को प्राथमिकता देती है। इसका सिंटैक्स किसी भी भाषा में सबसे अधिक पठनीय है, और रूबी ऑन रेल्स अब तक बनाए गए सबसे अधिक उत्पादक वेब फ्रेमवर्क में से एक है। जबकि रूबी की लोकप्रियता पायथन और जावास्क्रिप्ट की तुलना में कम हो गई है, यह वेब विकास, स्क्रिप्टिंग और स्वचालन के लिए एक शक्तिशाली, मनोरंजक भाषा बनी हुई है। यदि आप सुरुचिपूर्ण कोड और तीव्र विकास को महत्व देते हैं, तो रूबी सीखने लायक है।

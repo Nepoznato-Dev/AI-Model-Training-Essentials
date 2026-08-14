@@ -1,41 +1,46 @@
 ---
-# Metadatos
-título: "Marketing y estrategia digital"
-descripción: "4Ps, canales digitales, SEO/SEM, analítica, estrategia de marca"
-categoría: "Empresas y Economía"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Marketing and Digital Strategy"
+description: "4Ps, digital channels, SEO/SEM, analytics, brand strategy"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de economía y negocios"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [marketing, digital, estrategia, negocios y economía]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "9 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [marketing, digital, strategy, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Marketing y estrategia digital
-El marketing es la forma en que las empresas crean, comunican y entregan valor a los clientes. No se trata sólo de publicidad: es todo el sistema de entender lo que la gente necesita, posicionar un producto para satisfacer esa necesidad y construir una relación que convierta a los compradores en defensores. La revolución digital no ha cambiado los fundamentos, pero ha transformado las herramientas, los canales y la velocidad a la que todo sucede.
+El marketing es la forma en que las empresas crean, comunican y entregan valor a los clientes. Abarca todo el sistema de comprensión de las necesidades del cliente, posicionamiento de un producto para satisfacer esas necesidades y construcción de relaciones que conviertan a los compradores en defensores. La revolución digital ha transformado las herramientas, los canales y la velocidad del marketing, mientras que los fundamentos siguen siendo consistentes.
 ---
 
 ## Fundamentos de marketing
@@ -203,4 +208,4 @@ El Growth Hacking es la intersección del marketing, el producto y los datos, ce
 ---
 
 ## Resumen
-En esencia, el marketing consiste en comprender a las personas: qué necesitan, qué temen, qué las motiva a actuar. El conjunto de herramientas digitales ha cambiado drásticamente, pero los fundamentos no: conozca a su cliente, ofrezca valor real, comuníquese con claridad, mida todo e itere. El mejor marketing no se siente como marketing, sino como ayuda.
+El marketing consiste fundamentalmente en comprender a las personas: sus necesidades, preocupaciones y motivaciones. El conjunto de herramientas digitales ha evolucionado considerablemente, pero los fundamentos permanecen: comprender al cliente, ofrecer valor, comunicarse de manera efectiva, medir resultados e iterar. El marketing eficaz se alinea tan estrechamente con las necesidades del cliente que se experimenta como asistencia más que como promoción.

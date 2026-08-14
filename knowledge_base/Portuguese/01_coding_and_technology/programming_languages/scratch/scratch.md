@@ -637,7 +637,7 @@ Deployment Options:
 ### Scratch na pesquisa educacional
 A pesquisa mostrou que o Scratch ensina efetivamente:
 - **Pensamento sequencial**: dividindo os problemas em etapas ordenadas
-- **Habilidades de depuração**: encontrar e corrigir erros na lógica
+- **Habilidades de depuração**: Encontrar e corrigir erros na lógica
 - **Expressão criativa**: Combinando arte, música e programação
 - **Colaboração**: Remixar e desenvolver projetos de outros
 - **Persistência**: Iterar projetos para melhorá-los
@@ -676,6 +676,120 @@ Depois de aprender o Scratch, os próximos passos típicos incluem:
 | Prototipando ideias de jogos visualmente | Iteração rápida | — |
 | Desenvolvimento profissional | Não projetado para isso | Python, JavaScript, qualquer linguagem de texto |
 | Educação em ciência da computação em nível universitário | Muito simples | Python, Java, C |
+---
+
+## Perguntas e respostas sintéticas
+**Q1: Scratch é realmente uma linguagem de programação?**
+A1: Sim, Scratch é uma linguagem de programação real, mas é visual e não baseada em texto. Ele suporta todos os conceitos fundamentais de programação: variáveis, loops, condicionais, funções (blocos personalizados), listas e programação orientada a eventos. A diferença é que você arrasta e solta blocos em vez de digitar o código. Isso elimina erros de sintaxe e torna a programação acessível aos jovens alunos.
+**Q2: Como posso criar funções personalizadas (blocos personalizados) no Scratch?**
+A2: Vá até a categoria "Meus Blocos" e clique em "Fazer um Bloco". Dê um nome a ele, adicione parâmetros se necessário e defina seu comportamento adicionando blocos abaixo dele. Os blocos personalizados podem receber entradas (números, strings, booleanos) e podem chamar outros blocos personalizados. Isso permite programação modular e reutilização de código.
+**Q3: Qual é a melhor maneira de lidar com lógica de jogo complexa no Scratch?**
+A3: Use blocos personalizados para organizar a lógica, transmita mensagens para coordenação de eventos entre sprites e use listas para armazenar o estado do jogo (pontuações, níveis, inventário). Para IA complexa, use máquinas de estado finito com variáveis ​​que rastreiam o estado atual. Clone sprites para vários inimigos e use "quando eu começar como um clone" para dar a cada um um comportamento independente.
+**Q4: Como posso compartilhar dados entre sprites no Scratch?**
+A4: Use variáveis globais (criadas sem "apenas para este sprite") para dados compartilhados como pontuação ou estado do jogo. Use mensagens de transmissão para acionar eventos entre sprites. Para comunicações mais complexas, use listas como estruturas de dados compartilhadas. Cada sprite pode ler e modificar variáveis ​​e listas globais, permitindo a coordenação.
+**Q5: Quais são algumas técnicas avançadas no Scratch?**
+A5: Use blocos de caneta para desenhar e criar efeitos visuais. Implemente raycasting para gráficos semelhantes a 3D. Use variáveis ​​de nuvem para jogos multijogador (requer status Scratcher). Crie geração processual com números e listas aleatórias. Use blocos personalizados com parâmetros para algoritmos reutilizáveis. Experimente detecção de vídeo e manipulação de som para projetos interativos.
+---
+
+## Cadeia de Pensamento
+### Problema 1: Criando um jogo de plataforma
+**Etapa 1: Entenda o problema**
+Precisamos criar um jogo de plataforma onde um personagem possa se mover para a esquerda/direita, pular, evitar obstáculos e coletar itens.
+**Etapa 2: Identifique a abordagem**
+- Use simulação de gravidade com uma variável "queda"
+- Detecte solo/colisão usando cor ou toque de sprite
+- Armazene dados de nível em listas
+- Use blocos personalizados para lógica de salto e movimento
+**Etapa 3: Implementar a solução**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**Etapa 4: verificar e otimizar**
+Teste o salto em diferentes plataformas. Ajuste a gravidade e a altura do salto para uma boa sensação de jogo. Adicione animações para correr e pular. Implemente pontos de verificação usando mensagens de difusão.
+---
+
+### Problema 2: Criando um jogo de perguntas e respostas com rastreamento de pontuação
+**Etapa 1: Entenda o problema**
+Crie um jogo de perguntas e respostas que faça perguntas, verifique as respostas e monitore a pontuação do jogador.
+**Etapa 2: Identifique a abordagem**
+- Armazene perguntas e respostas em listas paralelas
+- Use um contador de perguntas para acompanhar o progresso
+- Use blocos "perguntar e esperar" para entrada
+- Compare respostas e atualize a pontuação
+**Etapa 3: Implementar a solução**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**Etapa 4: verificar e otimizar**
+Teste com várias respostas, incluindo casos extremos. Adicione feedback para respostas erradas. Implemente uma opção de nova tentativa. Adicione efeitos sonoros e feedback visual para respostas corretas/erradas.
+---
+
+### Problema 3: Desenhando Árvores Fractais com a Caneta
+**Etapa 1: Entenda o problema**
+Crie uma árvore fractal recursiva usando a extensão pen.
+**Etapa 2: Identifique a abordagem**
+- Use recursão para desenhar ramos
+- Cada ramo se divide em dois ramos menores
+- Use ângulos aleatórios para variação natural
+- Acompanhe o comprimento do ramo e diminua com cada nível de recursão
+**Etapa 3: Implementar a solução**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**Etapa 4: verificar e otimizar**
+Ajuste o limite de comprimento dos galhos e as faixas de ângulo para árvores estéticas. Adicione folhas nas pontas dos galhos usando mudanças de cores. Implemente diferentes estilos de árvore. Salve desenhos como imagens.
 ---
 
 ## Resumo

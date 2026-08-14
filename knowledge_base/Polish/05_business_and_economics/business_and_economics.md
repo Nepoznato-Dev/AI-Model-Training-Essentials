@@ -46,7 +46,7 @@ Każda organizacja sprzedająca produkt lub usługę to biznes, a każde społec
 ## Jak zorganizowana jest firma
 Struktura prawna przedsiębiorstwa określa sposób płacenia podatków, kto odpowiada za długi i sposób podejmowania decyzji.
 | Struktura | Właściciele | Odpowiedzialność | Traktowanie podatkowe | Najlepsze dla |
-|---------------|--------|------|---------------|---------------|
+|----------|--------|------|---------------|---------------|
 | **Spółka jednoosobowa** | 1 osoba | Nieograniczona odpowiedzialność osobista | Dochody zgłoszone w zeznaniu osobistym | Freelancerzy, firmy poboczne |
 | **Partnerstwo** | 2+ osoby | Nieograniczona odpowiedzialność osobista (komplementariusze) | Podział dochodu pomiędzy partnerów | Usługi profesjonalne (kancelarie prawne, konsultanci) |
 | **Spółka z ograniczoną odpowiedzialnością** | 1+ członków | Ograniczona odpowiedzialność (chroniony majątek osobisty) | Elastyczny — może być opodatkowany jako jednoosobowa działalność gospodarcza, spółka osobowa lub spółka | Większość małych i średnich przedsiębiorstw |
@@ -76,7 +76,7 @@ Prawie wszystko w ekonomii wynika z podaży i popytu. Gdy na coś wzrasta popyt 
 | **Szok podażowy** | Ceny gwałtownie rosną | Kryzys naftowy, brak chipów |
 | **Szok popytowy** | Ceny nagle się załamują | Pandemia załamania podróży |
 ### Kluczowe wskaźniki ekonomiczne
-Liczby te mówią Ci, czy gospodarka jest zdrowa, przegrzewa się lub ma kłopoty:
+Liczby te mówią Ci, czy gospodarka jest zdrowa, przegrzewa się, czy też ma kłopoty:
 | Wskaźnik | Co to mierzy | Dlaczego to ma znaczenie |
 |----------|-----------------|----------------|
 | **PKB** | Całkowita wartość wyprodukowanych towarów i usług | Wielkość i tempo wzrostu gospodarki |
@@ -91,7 +91,7 @@ Gospodarki nie rosną liniowo. Przechodzą przez fazy:
 1. **Ekspansja**: Wzrost, niskie bezrobocie, rosnące płace, rosnąca pewność siebie
 2. **Szczyt**: Maksymalny wzrost; inflacja może zacząć rosnąć; aktywa mogą być przewartościowane
 3. **Skurczenie się (Recesja)**: Spadek produkcji, rosnące bezrobocie, spadek zaufania
-4. **Rynek**: Dno; ożywienie zaczyna się wraz z dostosowaniem się cen i powrotem popytu
+4. **Rynek**: Dno; Ożywienie rozpoczyna się wraz z dostosowaniem się cen i powrotem popytu
 Recesje definiuje się zazwyczaj jako dwa kolejne kwartały ujemnego wzrostu PKB. Są one spowodowane różnymi czynnikami – kryzysami finansowymi, szokami naftowymi, zakłóceniami spowodowanymi pandemią, pęknięciem baniek spekulacyjnych – ale schemat jest zawsze podobny: spadek zaufania, spadek wydatków, przedsiębiorstwa redukują miejsca pracy, co jeszcze bardziej ogranicza wydatki.
 Banki centralne (takie jak Rezerwa Federalna Stanów Zjednoczonych) próbują wygładzić cykl, dostosowując stopy procentowe: niższe stopy w czasie recesji, aby zachęcić do zaciągania pożyczek i wydatków, wyższe stopy w okresie boomu, aby zapobiec przegrzaniu.
 ---
@@ -123,7 +123,7 @@ To równanie zawsze się równoważy. Aktywa to to, co firma posiada (gotówka, 
 |---------------|-------------|------------|----------------------|
 | **Rachunek zysków i strat** (ZiS) | Przychody, wydatki, zysk | Okres (kwartał, rok) | „Czy zarobiliśmy pieniądze?” |
 | **Bilans** | Aktywa, pasywa, kapitał własny | Punkt w czasie | „Jaka jest wartość firmy?” |
-| **Rachunek przepływów pieniężnych** | Wpłata, wypłata | Okres | „Czy mamy wystarczającą ilość gotówki, aby działać?” |
+| **Rachunek przepływów pieniężnych** | Wpłata, wypłata | Okres | „Czy mamy wystarczająco dużo gotówki, aby działać?” |
 Firma może osiągać zyski w rachunku zysków i strat, ale nadal brakuje jej środków pieniężnych (jeśli klienci jeszcze nie zapłacili lub jeśli wydali dużo na sprzęt). Właśnie dlatego rachunek przepływów pieniężnych ma znaczenie — to gotówka podtrzymuje światło.
 ### Kluczowe wskaźniki finansowe
 | Stosunek | Formuła | Co ci to mówi |
@@ -156,7 +156,7 @@ Większość startupów upada. Szacunki sugerują, że 90% startupów wspieranyc
 ---
 
 ## Łańcuch dostaw i operacje
-Zarządzanie łańcuchem dostaw to sztuka i nauka dostarczania odpowiedniego produktu we właściwe miejsce, we właściwym czasie i po właściwych kosztach. To brzmi prosto. Jest to niezwykle trudne.
+Zarządzanie łańcuchem dostaw to skoordynowany proces dostarczania właściwego produktu we właściwe miejsce, we właściwym czasie i po właściwych kosztach. Cel jest prosty; wykonanie jest złożone.
 ### Kluczowe pojęcia
 - **Dokładnie na czas (JIT)**: Otrzymuj materiały tylko wtedy, gdy są potrzebne, zmniejszając koszty zapasów. Toyota była w tym pionierem. Kompromis: systemy JIT są kruche, gdy łańcuchy dostaw są zakłócane (co pokazał niedobór chipów w latach 2020–2022).
 - **Lean Manufacturing**: Wyeliminuj marnotrawstwo – wszystko, co nie dodaje wartości dla klienta. Zidentyfikuj i usuń „siedem marnotrawstwa”: nadprodukcja, oczekiwanie, transport, nadmierne przetwarzanie, zapasy, ruch i defekty.
@@ -173,7 +173,7 @@ Kraje handlują, ponieważ mają różne mocne strony. Podstawą pozostaje konce
 | **Deficyt handlowy** | Import > eksport | USA utrzymują utrzymujący się deficyt handlowy |
 | **Nadwyżka handlowa** | Eksport > import | Chiny i Niemcy utrzymują utrzymujące się nadwyżki |
 | **Kursy walut** | Wartość jednej waluty w stosunku do drugiej | Słaby dolar sprawia, że ​​eksport staje się tańszy, import droższy |
-Globalizacja wyciągnęła z ubóstwa setki milionów ludzi (szczególnie w Chinach i Indiach), ale także spowodowała wysiedlenie pracowników w krajach rozwiniętych, których miejsca pracy przeniosły się za granicę. Napięcie polityczne pomiędzy korzyściami płynącymi z handlu a jego konsekwencjami dystrybucyjnymi jest jednym z kluczowych zagadnień współczesnej ekonomii.
+Globalizacja wyciągnęła z ubóstwa setki milionów ludzi (zwłaszcza w Chinach i Indiach), ale także spowodowała wysiedlenie pracowników w krajach rozwiniętych, których miejsca pracy przeniosły się za granicę. Napięcie polityczne pomiędzy korzyściami płynącymi z handlu a jego konsekwencjami dystrybucyjnymi jest jednym z kluczowych zagadnień współczesnej ekonomii.
 ---
 
 ## Etyka biznesu i odpowiedzialność korporacyjna

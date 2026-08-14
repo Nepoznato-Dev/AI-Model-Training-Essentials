@@ -698,5 +698,140 @@ native-image --no-fallback \
 | Ilmu data | Bukan ekosistem | Piton, R |
 ---
 
+## Tanya Jawab Sintetis
+### Q1: Mengapa program Lisp/Clojure memiliki begitu banyak tanda kurung?
+**A:** Tanda kurung mewakili ekspresi S — sintaksis seragam yang kode dan datanya memiliki struktur yang sama (homoikonisitas):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2: Bagaimana Clojure menangani status dan mutabilitas secara berbeda?
+**A:** Clojure defaultnya adalah data yang tidak dapat diubah. Untuk perubahan status terkontrol, ini menyediakan tipe referensi:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3: Apa yang dimaksud dengan struktur data persisten Clojure?
+**A:** Semua koleksi Clojure bersifat persisten (tidak dapat diubah, dibagikan secara struktural):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4: Bagaimana cara kerja makro Clojure?
+**A:** Makro menerima kode yang tidak dievaluasi (sebagai data), mengubahnya, dan mengembalikan kode baru:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5: Bagaimana cara menangani konkurensi di Clojure?
+**A:** Clojure menyediakan beberapa primitif konkurensi:
+-`atom`— perubahan independen dan sinkron
+-`ref`+`dosync`— perubahan transaksional yang terkoordinasi
+-`agent`— perubahan independen dan asinkron
+- Saluran`core.async`— konkurensi gaya CSP
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Memproses Saluran Data
+**Langkah 1: Pahami Masalahnya**
+Membaca data, memfilter, mentransformasikan, dan mengagregasi melalui pipeline.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan makro threading Clojure (`->>`) dan transduser.
+**Langkah 3: Terapkan**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Langkah 4: Optimalkan**
+Transduser menghindari pembuatan rangkaian perantara — transduser menyusun transformasi menjadi satu lintasan.
+### Masalah 2: Membangun Server Web Sederhana
+**Langkah 1: Pahami Masalahnya**
+Buat server HTTP dasar menggunakan Ring/Compojure.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan adaptor Dering dan perutean Compojure.
+**Langkah 3: Terapkan**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan middleware untuk logging, penguraian JSON, autentikasi, dan penanganan kesalahan.
+---
+
 ## Ringkasan
 Lisp adalah nenek moyang dari desain bahasa pemrograman — sebagian besar bahasa modern meminjam ide yang dirintis Lisp beberapa dekade lalu. Clojure membawa Lisp ke era modern dengan kekekalan, dukungan konkurensi, dan integrasi JVM yang mulus. Meskipun Lisp/Clojure bukanlah sesuatu yang umum, mempelajarinya akan mengubah cara berpikir Anda tentang pemrograman secara mendasar. Sistem makro saja sudah layak untuk diinvestasikan — sistem ini mengungkapkan kemungkinan-kemungkinan yang tidak dapat ditandingi oleh bahasa lain.

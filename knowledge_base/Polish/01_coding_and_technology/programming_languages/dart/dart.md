@@ -892,7 +892,7 @@ class LoginBloc {
 ## Wydajność i optymalizacja
 ### Kompilacja AOT i JIT
 | Tryb | Kiedy jest używany | Uruchomienie | Czas wykonania | Przypadek użycia |
-|------|------|---------|-------------|----------|
+|------|------|---------|---------|----------|
 | **JIT** (dokładnie na czas) | Rozwój, tryb debugowania | Szybki | Nieco wolniej | Gorące przeładowanie podczas programowania |
 | **AOT** (przed czasem) | Wydanie kompilacji | Nieco wolniej | Szybciej | Produkcja aplikacji mobilnych/desktopowych |
 | **JS** | Cele internetowe | Zależy | Różnie | Aplikacje internetowe Flutter |
@@ -985,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | Rozwój backendu | Nie jest to główny przypadek użycia | Idź, Node.js, Python |
 | Nauka o danych / ML | Nie nadaje się | Python, R |
 | Programowanie systemów | Nie nadaje się | C, C++, rdza |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jak działa bezpieczeństwo zerowe Darta?
+**O:** Dart 2.12+ ma zerowe bezpieczeństwo. Zmienne domyślnie nie dopuszczają wartości null; użyj `?`, aby zezwolić na wartość null:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### P2: Jaka jest różnica między`Future`a `Stream`?
+**A:**`Future`reprezentuje pojedynczy wynik asynchroniczny; `Stream`reprezentuje sekwencję zdarzeń asynchronicznych:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### P3: Jak zarządzać stanem w aplikacji Flutter?
+**A:** Wiele podejść w zależności od złożoności:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### P4: Jak działają metody rozszerzeń w Dart?
+**A:** Rozszerzenia dodają funkcjonalność do istniejących typów bez dziedziczenia:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### P5: Jak napisać wydajny kod Dart/Flutter?
+**O:** Kluczowe praktyki:
+- Jeśli to możliwe, używaj konstruktorów `const`
+- Unikaj ponownego tworzenia widżetów — użyj`const`,`final`i`shouldRebuild`
+- W przypadku dużych list użyj`ListView.builder`zamiast `ListView`
+- Profil za pomocą Flutter DevTools
+- Użyj`compute()`do kosztownych operacji na izolowanych wątkach
+- Zminimalizuj wywołania`setState`- określ konkretnie, co wymaga przebudowy
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Budowanie klienta API bezpiecznego typu
+**Krok 1: Zrozum problem**
+Utwórz klienta API, który pobiera dane i zwraca poprawnie wpisane obiekty.
+**Krok 2: Zidentyfikuj podejście**
+Użyj klas Dart z`fromJson`/`toJson`, async/await i zapieczętowanych klas, aby uzyskać wyniki.
+**Krok 3: Wdróż**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Krok 4: Zweryfikuj**
+Przetestuj za pomocą próbnego klienta HTTP. Sprawdź obsługę błędów w przypadku awarii sieci i złych odpowiedzi.
+### Problem 2: Implementowanie wyszukiwania reaktywnego za pomocą odbicia
+**Krok 1: Zrozum problem**
+Zbuduj pole wyszukiwania, które wysyła zapytania do interfejsu API, ale odrzuca dane wejściowe, aby uniknąć nadmiernych żądań.
+**Krok 2: Zidentyfikuj podejście**
+Użyj strumieni Dart z`debounceTime`i`distinct`.
+**Krok 3: Wdróż**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Krok 4: Test**
+Sprawdź, czy szybkie pisanie wyzwala tylko jedno wywołanie API po okresie odrzucania.
 ---
 
 ## Streszczenie

@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "آدا"
-الوصف: "مرجع شامل للغة برمجة Ada يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Ada"
+description: "Comprehensive reference for the Ada programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [ada، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "35 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [ada, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #أدا
 Ada هي لغة برمجة مجمعة ومكتوبة بشكل ثابت مصممة للأنظمة ذات السلامة الحرجة والتكامل العالي. تم تطوير Ada في الأصل في الثمانينيات بموجب عقد مع وزارة الدفاع الأمريكية (سميت على اسم Ada Lovelace، التي تعتبر أول مبرمج كمبيوتر)، وتؤكد Ada على الموثوقية وقابلية الصيانة والصحة. لقد تم تصميمه ليحل محل مئات لغات البرمجة التي استخدمتها وزارة الدفاع بعد ذلك بلغة واحدة محددة جيدًا.
 يتم استخدام Ada في الطيران (أنظمة الطيران عبر الأسلاك)، والفضاء (وكالة الفضاء الأوروبية ووكالة ناسا)، والدفاع (توجيه الصواريخ، والرادار)، والنقل بالسكك الحديدية، والأجهزة الطبية - في أي مكان يمكن أن يؤدي فيه فشل البرامج إلى فقدان الأرواح.
@@ -624,7 +629,7 @@ end BLAS_Interface;
 ---
 
 ## أنماط التصميم
-### النمط 1: مراقب ذو كائنات محمية
+### النمط 1: مراقب مع كائنات محمية
 ```ada
 protected type Event_Bus is
    procedure Subscribe(Handler_Id : Positive);
@@ -859,5 +864,146 @@ end Main;
 | علم البيانات / تعلم الآلة | ليس النظام البيئي | بايثون، ر |
 ---
 
+## أسئلة وأجوبة اصطناعية
+### Q1: كيف يمنع نظام كتابة Ada الأخطاء أثناء الترجمة؟
+**ج:** يعد نظام كتابة Ada من بين الأكثر صرامة في أي لغة. إنه يلتقط الأخطاء التي تفوتها اللغات الأخرى:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### السؤال الثاني: ما هو نموذج المهام الخاص بـ Ada وكيف يمكن مقارنته بنماذج التزامن الأخرى؟
+**ج:** لدى Ada تزامن مدمج مع الكائنات والمهام المحمية:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### س3: كيف يمكنني استخدام الأدوية الجنيسة في Ada؟
+**ج:** تعتبر أدوية Ada عامة صريحة وآمنة من حيث النوع:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### السؤال الرابع: ما الذي يجعل Ada مناسبًا للأنظمة ذات الأهمية الحيوية للسلامة؟
+**أ:** توفر Ada:
+- مجموعة SPARK الفرعية للتحقق الرسمي (إثبات رياضي للصحة)
+- البرمجة المبنية على العقود (الشروط المسبقة/اللاحقة، ثوابت النوع)
+- لا يوجد تخصيص ضمني للذاكرة في SPARK
+- تحديد المهام والجدولة
+- ملف تعريف Ravenscar لأنظمة الوقت الحقيقي عالية النزاهة
+- التأهيل لسلسلة الأدوات (DO-178C لإلكترونيات الطيران)
+### س5: كيف أقوم ببناء مشاريع Ada؟
+**أ:** استخدم GPRBuild مع ملفات مشروع GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: تنفيذ قائمة انتظار من النوع الآمن
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء قائمة انتظار محددة وآمنة لمؤشر الترابط مع التحقق من حجم وقت الترجمة.
+**الخطوة 2: تحديد النهج**
+استخدم كائنًا محميًا بمخزن مؤقت محدد.
+**الخطوة 3: التنفيذ**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**الخطوة 4: التحقق**
+الكائن المحمي يضمن الاستبعاد المتبادل. حواجز الدخول تمنع التدفق الزائد/التدفق السفلي.
+### المشكلة الثانية: التحقق من صحة العقد
+**الخطوة الأولى: فهم المشكلة**
+تنفيذ دالة الجذر التربيعي مع العقود الرسمية.
+**الخطوة 2: تحديد النهج**
+استخدم عقود Ada 2012 (الشروط المسبقة/اللاحقة).
+**الخطوة 3: التنفيذ**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**الخطوة 4: التحقق**
+تكتشف عمليات التحقق (التأكيدات) في وقت التشغيل الانتهاكات. في SPARK، تصبح هذه التزامات إثبات.
+---
+
 ## ملخص
-Ada هي لغة مبنية على الصواب. إن نظام الكتابة الصارم والتزامن المدمج ودعم التحقق الرسمي يجعله الاختيار الأمثل للأنظمة التي لا يكون الفشل فيها مقبولاً. على الرغم من أن مجتمعها صغير مقارنة باللغات السائدة، إلا أن لغة Ada تظل أساسية في مجالات الطيران والدفاع والفضاء وغيرها من المجالات الحيوية للسلامة. بالنسبة لهذه التطبيقات، لا يشكل النهج الصارم الذي تتبعه Ada في هندسة البرمجيات عائقًا - بل هو الهدف.
+Ada هي لغة مبنية على الصواب. إن نظام الكتابة الصارم والتزامن المدمج ودعم التحقق الرسمي يجعله الاختيار الأمثل للأنظمة التي لا يكون الفشل فيها مقبولاً. على الرغم من أن مجتمعها صغير مقارنة باللغات السائدة، إلا أن لغة Ada تظل أساسية في مجالات الطيران والدفاع والفضاء وغيرها من المجالات الحيوية للسلامة. بالنسبة لهذه التطبيقات، لا يمثل النهج الصارم الذي تتبعه Ada في هندسة البرمجيات عائقًا - بل هو الهدف.

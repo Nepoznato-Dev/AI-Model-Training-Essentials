@@ -987,5 +987,170 @@ flutter build apk --release --dart-define=ENV=staging
 | Sistem programlama | Uygun değil | C, C++, Pas |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Dart'ın sıfır güvenliği nasıl çalışır?
+**C:** Dart 2.12+'nin güvenliği sıfırdır. Değişkenler varsayılan olarak null olamaz; null'a izin vermek için`?`kullanın:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### S2:`Future`ile`Stream`arasındaki fark nedir?
+**A:**`Future`tek bir eşzamansız sonucu temsil eder;  `Stream`, eşzamansız olayların bir dizisini temsil eder:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### S3: Flutter uygulamasında durumu nasıl yönetirim?
+**C:** Karmaşıklığa bağlı olarak birden fazla yaklaşım:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### S4: Dart'ta uzantı yöntemleri nasıl çalışır?
+**C:** Uzantılar, devralma olmadan mevcut türlere işlevsellik ekler:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### S5: Performanslı Dart/Flutter kodunu nasıl yazarım?
+**C:** Temel uygulamalar:
+- Mümkün olan her yerde`const`yapıcılarını kullanın
+- Widget'ları yeniden oluşturmaktan kaçının — `const`,`final`ve`shouldRebuild`kullanın 
+- Büyük listeler için`ListView`yerine`ListView.builder`kullanın
+- Flutter DevTools'lu Profil
+- Yalıtılmış iş parçacığı üzerinde pahalı işlemler için`compute()`kullanın
+-`setState`çağrılarını en aza indirin — neyin yeniden inşa edilmesi gerektiği konusunda net olun
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Tür Uyumlu API İstemcisi Oluşturma
+**1. Adım: Sorunu Anlayın**
+Verileri getiren ve doğru şekilde yazılan nesneleri döndüren bir API istemcisi oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Sonuçlar için`fromJson`/ `toJson`, eşzamansız/beklemede ve mühürlü sınıflarla Dart sınıflarını kullanın.
+**3. Adım: Uygulama**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**4. Adım: Doğrulayın**
+Sahte HTTP istemcisiyle test edin. Ağ arızaları ve hatalı yanıtlar için hata işlemeyi doğrulayın.
+### Sorun 2: Geri Dönme ile Reaktif Arama Uygulama
+**1. Adım: Sorunu Anlayın**
+Bir API'yi sorgulayan ancak aşırı istekleri önlemek için girdiyi geri çeviren bir arama alanı oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Dart Streams'i`debounceTime`ve`distinct`ile kullanın.
+**3. Adım: Uygulama**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**4. Adım: Test edin**
+Hızlı yazmanın, geri dönme döneminden sonra yalnızca bir API çağrısını tetiklediğini doğrulayın.
+---
+
 ## Özet
 Dart'ın hayattaki amacı Flutter'dır. Bağımsız bir dil olarak yetkindir ancak dikkat çekici değildir. Flutter'ın arkasındaki motor olarak, geliştiricilerin tek bir kod tabanından her büyük platform için güzel, yüksek performanslı uygulamalar oluşturmasına olanak tanır. Platformlar arası mobil veya masaüstü uygulamalar geliştiriyorsanız Dart + Flutter mevcut en iyi seçeneklerden biridir. Geriye kalan her şey için diğer diller daha uygundur.

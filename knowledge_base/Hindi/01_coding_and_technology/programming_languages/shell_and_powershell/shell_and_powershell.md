@@ -1,45 +1,50 @@
 ---
-# मेटाडेटा
-शीर्षक: "शेल और पॉवरशेल"
-विवरण: "शेल और पॉवरशेल प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [शेल-एंड-पॉवरशेल, प्रोग्रामिंग-लैंग्वेज, सिंटैक्स, इकोसिस्टम, कोडिंग-एंड-टेक्नोलॉजी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "35 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Shell & PowerShell"
+description: "Comprehensive reference for the Shell and PowerShell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [shell-and-powershell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # शैल और पॉवरशेल
 शेल स्क्रिप्टिंग से तात्पर्य कमांड-लाइन दुभाषियों के लिए स्क्रिप्ट लिखने से है। दो सबसे महत्वपूर्ण शेल हैं **बैश** (बॉर्न अगेन शेल) - लिनक्स और मैकओएस पर डिफ़ॉल्ट - और **पॉवरशेल** - माइक्रोसॉफ्ट का आधुनिक क्रॉस-प्लेटफ़ॉर्म शेल और स्क्रिप्टिंग भाषा। शेल स्क्रिप्ट सिस्टम प्रशासन कार्यों को स्वचालित करती है, पाइपलाइनों का निर्माण करती है, फ़ाइल प्रोसेसिंग और परिनियोजन वर्कफ़्लोज़ का निर्माण करती है।
 प्रत्येक डेवलपर, DevOps इंजीनियर और सिस्टम प्रशासक को शेल स्क्रिप्टिंग कौशल की आवश्यकता होती है। चाहे आप एक वेब सर्वर तैनात कर रहे हों, लॉग फ़ाइलों को संसाधित कर रहे हों, सीआई/सीडी पाइपलाइन स्थापित कर रहे हों, या बैकअप स्वचालित कर रहे हों, शेल स्क्रिप्टिंग इस काम के लिए उपकरण है।
 ---
 
-## शेल/पावरशेल क्यों मायने रखता है
+## शेल/पॉवरशेल क्यों मायने रखता है
 - **स्वचालन**: दोहराए जाने वाले कार्यों को स्वचालित करें - फ़ाइल प्रबंधन, परिनियोजन, सिस्टम कॉन्फ़िगरेशन।
 - **डेवऑप्स आवश्यक**: सीआई/सीडी पाइपलाइन (गिटहब एक्शन, जेनकिंस), डॉकर, कुबेरनेट्स सभी शेल स्क्रिप्ट का उपयोग करते हैं।
 - **यूनिवर्सल**: प्रत्येक सर्वर, क्लाउड इंस्टेंस और कंटेनर में एक शेल होता है।
@@ -49,9 +54,9 @@
 ## समझौता
 | सीमा | विवरण | विशिष्ट समाधान |
 |----|---|-----|
-| **बैश विचित्रताएँ** | असंगत वाक्यविन्यास, नाजुक स्ट्रिंग हैंडलिंग |`set -euo pipefail`का प्रयोग करें; उद्धरण चर; जटिल स्क्रिप्ट के लिए PowerShell को प्राथमिकता दें |
+| **बैश विचित्रताएँ** | असंगत वाक्यविन्यास, नाजुक स्ट्रिंग हैंडलिंग |`set -euo pipefail`का उपयोग करें; उद्धरण चर; जटिल स्क्रिप्ट के लिए PowerShell को प्राथमिकता दें |
 | **जटिल कार्यक्रमों के लिए नहीं** | ख़राब डेटा संरचनाएँ, कोई OOP नहीं, परीक्षण करना कठिन | जटिल तर्क के लिए पायथन, गो या अन्य भाषाओं का उपयोग करें |
-| **त्रुटि प्रबंधन** | बैश त्रुटि प्रबंधन आदिम है |`set -e`का प्रयोग करें; निकास कोड की जाँच करें; PowerShell के प्रयास/पकड़ का उपयोग करें |
+| **त्रुटि प्रबंधन** | बैश त्रुटि प्रबंधन आदिम है |`set -e`का उपयोग करें; निकास कोड की जाँच करें; PowerShell के प्रयास/पकड़ का उपयोग करें |
 | **पोर्टेबिलिटी** | बैश स्क्रिप्ट सभी सिस्टम पर काम नहीं कर सकती | अधिकतम पोर्टेबिलिटी के लिए POSIX sh का उपयोग करें; क्रॉस-प्लेटफ़ॉर्म के लिए पॉवरशेल |
 | **डिबगिंग** | सीमित डिबगिंग उपकरण | बैश के लिए`set -x`का उपयोग करें; पॉवरशेल में एक उचित डिबगर है |
 ---
@@ -763,7 +768,7 @@ TEMP_DIR=$(mktemp -d)
 echo "Working in $TEMP_DIR"
 ```
 
-### पैटर्न 5: डायनेमिक पाइपलाइन बिल्डर (पॉवरशेल)
+### पैटर्न 5: डायनेमिक पाइपलाइन बिल्डर (पावरशेल)
 ```powershell
 function Build-Report {
     param([string]$DataSource, [switch]$IncludeInactive, [string]$SortBy = "Name")
@@ -853,6 +858,152 @@ Publish-Module @publishParams
 | लॉग विश्लेषण | त्वरित grep/awk वन-लाइनर्स | जटिल विश्लेषण के लिए पायथन, एसक्यूएल |
 | जटिल अनुप्रयोग | अनुकूल नहीं | पायथन, गो, जावा |
 | क्रॉस-प्लेटफ़ॉर्म स्क्रिप्ट | पॉवरशेल 7+ हर जगह काम करता है | वास्तव में पोर्टेबल स्क्रिप्ट के लिए पायथन |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: बैश में सिंगल और डबल कोट्स के बीच क्या अंतर है?
+**ए:** दोहरे उद्धरण चिह्न परिवर्तनीय विस्तार की अनुमति देते हैं; एकल उद्धरण शाब्दिक हैं:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: मैं शेल स्क्रिप्ट में त्रुटियों को कैसे संभालूं?
+**ए:** त्रुटियों से बाहर निकलने के लिए`set -e`का उपयोग करें, और सफाई के लिए ट्रैप करें:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3: मैं कमांड-लाइन तर्कों को ठीक से कैसे संसाधित करूं?
+**ए:** झंडे और स्थितीय मापदंडों के लिए`getopts`का उपयोग करें:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4: पॉवरशेल पाइपलाइन क्या है और यह बैश से कैसे भिन्न है?
+**ए:** पावरशेल ऑब्जेक्ट को पाइप करता है, टेक्स्ट को नहीं। प्रत्येक वस्तु अपने गुण बरकरार रखती है:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: मैं क्रॉस-प्लेटफ़ॉर्म स्क्रिप्ट कैसे लिखूं?
+**ए:** बैश के लिए:`#!/usr/bin/env bash`का उपयोग करें, जीएनयू-विशिष्ट झंडे से बचें। पॉवरशेल के लिए:`pwsh`(पावरशेल कोर) का उपयोग करें जो Linux/macOS/Windows पर चलता है।
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: बैच इमेज प्रोसेसिंग स्क्रिप्ट (बैश)
+**चरण 1: समस्या को समझें**
+किसी निर्देशिका में सभी PNG छवियों का आकार अधिकतम 800px तक बदलें।
+**चरण 2: दृष्टिकोण को पहचानें**
+फ़ाइलों का पता लगाने के लिए`find`और आकार बदलने के लिए`convert`(ImageMagick) का उपयोग करें।
+**चरण 3: कार्यान्वयन**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**चरण 4: विस्तार करें**
+प्रगति पट्टी, भ्रष्ट छवियों के लिए त्रुटि प्रबंधन और`xargs -P`के साथ समानांतर प्रसंस्करण जोड़ें।
+### समस्या 2: स्वचालित लॉग रोटेशन (बैश)
+**चरण 1: समस्या को समझें**
+लॉग फ़ाइलों को प्रतिदिन घुमाएँ, पुराने लॉग को संपीड़ित करें, और 30 दिनों से अधिक पुराने लॉग को हटा दें।
+**चरण 2: दृष्टिकोण को पहचानें**
+समय-आधारित फ़िल्टर के साथ`find`और संपीड़न के लिए`gzip`का उपयोग करें।
+**चरण 3: कार्यान्वयन**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**चरण 4: शेड्यूल**
+क्रॉस्टैब में जोड़ें: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### समस्या 3: विंडोज़ सेवा स्वास्थ्य जांच (पावरशेल)
+**चरण 1: समस्या को समझें**
+जाँचें कि क्या महत्वपूर्ण सेवाएँ चल रही हैं और यदि कोई बंद हो तो अलर्ट भेजें।
+**चरण 2: दृष्टिकोण को पहचानें**
+`Get-Service` का उपयोग करें और बंद सेवाओं के लिए फ़िल्टर करें।
+**चरण 3: कार्यान्वयन**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**चरण 4: स्वचालित करें**
+हर 5 मिनट में चलने वाले विंडोज़ टास्क शेड्यूलर जॉब के रूप में शेड्यूल करें।
 ---
 
 ## सारांश

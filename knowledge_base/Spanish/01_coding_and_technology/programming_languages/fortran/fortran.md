@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Fortran"
-descripción: "Referencia completa para el lenguaje de programación Fortran que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Fortran"
+description: "Comprehensive reference for the Fortran programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [fortran, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "32 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [fortran, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "32 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Fortran
 Fortran (Traducción de fórmulas) es el lenguaje de programación de alto nivel más antiguo que aún se utiliza ampliamente, desarrollado por primera vez por IBM en 1957 para computación científica y de ingeniería. A pesar de su antigüedad, el Fortran moderno (Fortran 2008/2018/2023) es un lenguaje capaz y de alto rendimiento que se utiliza ampliamente en predicción numérica del tiempo, dinámica de fluidos computacional, simulaciones físicas, modelos financieros y computación de alto rendimiento (HPC). Muchas de las supercomputadoras más rápidas del mundo ejecutan código Fortran.
 El idioma ha evolucionado significativamente desde sus inicios. El Fortran moderno tiene módulos, tipos derivados, procedimientos genéricos, coarrays (programación paralela) e interoperabilidad con C. Sigue siendo el lenguaje elegido para muchas aplicaciones informáticas científicas donde el rendimiento es primordial.
@@ -51,7 +56,7 @@ El idioma ha evolucionado significativamente desde sus inicios. El Fortran moder
 |-----------|-----------------|-------------------|
 | **Comunidad de nicho** | Pequeños y especializados, principalmente científicos/HPC | Comunidad activa en ciencia computacional |
 | **Ecosistema limitado** | Menos bibliotecas que Python, Java o C++ | Utilice BLAS/LAPACK para trabajos numéricos; C interoperabilidad para otras necesidades |
-| **No de uso general** | Deficiente para programación web, móvil, GUI o sistemas | Utilice Fortran para realizar cálculos; envolver en Python/C para aplicaciones |
+| **No de uso general** | Deficiente para programación web, móvil, GUI o de sistemas | Utilice Fortran para realizar cálculos; envolver en Python/C para aplicaciones |
 | **Percepción** | A menudo se considera "obsoleto" a pesar de las capacidades modernas | Centrarse en sus puntos fuertes: numéricos y HPC |
 | **Contratación** | Pocos desarrolladores de Fortran ingresan al mercado | Expertos existentes en el mundo académico y laboratorios nacionales |
 ---
@@ -776,5 +781,161 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Ciencia de datos (interactivo) | No el flujo de trabajo | Pitón, R |
 ---
 
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre Fortran 90 y Fortran moderno (2008+)?
+**R:** Modern Fortran agregó muchas características que lo hacen más expresivo:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### P2: ¿En qué se diferencian las matrices Fortran de las matrices C?
+**R:** Los arreglos Fortran son objetos de primera clase con operaciones integradas:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### P3: ¿Cómo logro el máximo rendimiento en Fortran?
+**R:** Prácticas clave:
+- Utilice`intent`explícito para todos los argumentos ficticios.
+- Utilice`implicit none`en todas partes
+- Prefiere operaciones de matriz a bucles
+- Utilice patrones de acceso a memoria contiguos
+- Utilice indicadores de optimización del compilador:`-O3 -march=native -ffast-math`
+- Perfil con`gprof`o herramientas específicas del compilador
+- Utilice`pure`y`elemental`para funciones que el compilador puede optimizar.
+### P4: ¿Cómo puedo conectar Fortran con C?
+**R:** Utilice el módulo `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### P5: ¿Qué sistema de compilación debo usar para proyectos de Fortran?
+**R:** CMake tiene un excelente soporte para Fortran. FPM (Fortran Package Manager) es la opción nativa moderna:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Resolver una PDE con diferencias finitas
+**Paso 1: Comprenda el problema**
+Resuelve la ecuación de calor 1D: du/dt = alfa * d²u/dx²
+**Paso 2: Identificar el enfoque**
+Discretizar el espacio y el tiempo utilizando diferencias finitas. Utilice un esquema explícito.
+**Paso 3: Implementar**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Paso 4: Verificar**
+Verifique la conservación, la convergencia con el refinamiento de la cuadrícula y compárela con la solución analítica.
+### Problema 2: Diagonalización de matrices
+**Paso 1: Comprenda el problema**
+Encuentre valores propios y vectores propios de una matriz simétrica.
+**Paso 2: Identificar el enfoque**
+Utilice la rutina`dsyev`de LAPACK a través de la interfaz de Fortran.
+**Paso 3: Implementar**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Paso 4: Verificar**
+Compruebe que A*v = lambda*v para cada par propio.
+---
+
 ## Resumen
-Fortran es el lenguaje de programación científico original y sigue siendo una potencia en informática de alto rendimiento. Fortran moderno es un lenguaje capaz y en evolución con operaciones de matriz nativas, soporte de programación paralela e interoperabilidad con C. Si bien su comunidad es pequeña y especializada, Fortran continúa ejecutando algunas de las cargas de trabajo computacionales más exigentes del mundo. Para la computación numérica a escala, Fortran sigue siendo relevante.
+Fortran es el lenguaje de programación científico original y sigue siendo una potencia en informática de alto rendimiento. Fortran moderno es un lenguaje capaz y en evolución con operaciones de matriz nativas, soporte de programación paralela e interoperabilidad en C. Si bien su comunidad es pequeña y especializada, Fortran continúa ejecutando algunas de las cargas de trabajo computacionales más exigentes del mundo. Para la computación numérica a escala, Fortran sigue siendo relevante.

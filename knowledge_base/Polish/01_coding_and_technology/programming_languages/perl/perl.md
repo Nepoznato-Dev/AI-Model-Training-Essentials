@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Perł
 Perl został stworzony przez Larry'ego Walla w 1987 roku jako praktyczne narzędzie do przetwarzania tekstu. Stało się podstawą wczesnego tworzenia stron internetowych (skrypty CGI), administrowania systemami, bioinformatyki i programowania sieciowego. Filozofia Perla brzmi: „Jest więcej niż jeden sposób, aby to zrobić” (TMTOWTDI) — język zapewnia wiele podejść do każdego problemu, przedkładając ekspresję nad jednolitość.
 Wpływ Perla na współczesne programowanie jest ogromny, ale często niewidoczny: wyrażenia regularne, na które wpływa dopasowywanie wzorców Perla, są obecnie standardem w Pythonie, JavaScript, Javie i większości innych języków. CPAN (Comprehensive Perl Archive Network) była jednym z pierwszych repozytoriów pakietów oprogramowania i zainspirowała późniejsze systemy, takie jak PyPI Pythona i npm Node'a.
@@ -182,7 +183,7 @@ if ($@) {
 | Wyrażenia regularne | Python, JavaScript, Java, Ruby, C#, PHP |
 | Repozytoria pakietów (CPAN) | PyPI, npm, RubyGems, crates.io |
 | Heredoki | Python, Ruby, PHP, Shell, JavaScript |
-| `$_`zmienna domyślna | Ruby`$_`, PowerShell`$_`|
+|  Zmienna domyślna`$_`| Ruby `$_`, PowerShell`$_`|
 | `map`/`grep`/`reduce`| Python, Ruby, JavaScript, Rdza |
 | `use strict`/ linting | TypeScript, wskazówki dotyczące typów Pythona |
 ---
@@ -575,7 +576,7 @@ CMD ["perl", "bin/myapp.pl"]
 | Scenariusz | Dlaczego Perl | Lepsza alternatywa |
 |---------|---------|--------------------------------|
 | Przetwarzanie / analizowanie tekstu | Najlepszy w swojej klasie silnik regex | Python dla danych strukturalnych |
-| Analiza pliku dziennika | Szybkie jednowierszowe, sprawdzone narzędzia | `awk`/`sed`w prostych przypadkach; Python dla złożonych |
+| Analiza pliku dziennika | Szybkie jednowierszowe, sprawdzone narzędzia | `awk`/`sed`dla prostych przypadków; Python dla złożonych |
 | Administracja systemem | Historycznie dominujący | Bash/PowerShell do prostych zadań; Python dla złożonych |
 | Konserwacja starszych systemów | Miliony linii Perla w produkcji | — |
 | Bioinformatyka | Silna obecność historyczna (BioPerl) | Python (Biopython), R |
@@ -585,5 +586,164 @@ CMD ["perl", "bin/myapp.pl"]
 | Nauka o danych / ML | Nie ekosystem | Python, R |
 ---
 
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między`my`,`our`i`local`?
+**O:** Te słowa kluczowe kontrolują zakres zmiennych:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### P2: Jak efektywnie przetwarzać pliki tekstowe w Perlu?
+**O:** Perl przoduje w przetwarzaniu tekstu. Użyj operatora diamentu i wyrażenia regularnego:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### P3: Jak używać referencji i złożonych struktur danych?
+**O:** Referencje to sposób Perla na tworzenie zagnieżdżonych struktur:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### P4: Jakie specjalne zmienne Perla powinienem znać?
+**O:** Perl ma wiele specjalnych zmiennych. Najważniejsze:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### P5: Jak napisać nowoczesny, łatwy w utrzymaniu Perl?
+**A:** Najlepsze praktyki dotyczące współczesnego Perla:
+- Zawsze używaj`strict`i`warnings`
+- Użyj`my`dla wszystkich zmiennych
+- Użyj leksykalnych uchwytów plików:`open my $fh, '<', $file`
+- Użyj modułów z CPAN (Moo/Moose dla OOP, Try::Tiny dla błędów)
+- Użyj`say`zamiast`print`(z`feature 'say'`)
+- Sformatuj za pomocą `perltidy`
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Analiza pliku dziennika
+**Krok 1: Zrozum problem**
+Przeanalizuj dziennik dostępu Apache i zlicz żądania na adres IP.
+**Krok 2: Zidentyfikuj podejście**
+Użyj wyrażenia regularnego do wyodrębnienia adresów IP, skrótu do zliczenia wystąpień.
+**Krok 3: Wdróż**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Krok 4: Przedłuż**
+Dodaj filtrowanie dat, analizę kodów stanu i dane wyjściowe w formacie CSV.
+### Problem 2: Wsadowa zmiana nazwy pliku za pomocą wyrażenia regularnego
+**Krok 1: Zrozum problem**
+Zmień nazwę plików pasujących do wzorca, przekształcając nazwy plików za pomocą wyrażenia regularnego.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`glob`lub `opendir`, aby znaleźć pliki, a wyrażenie regularne, aby przekształcić nazwy.
+**Krok 3: Wdróż**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Krok 4: Zweryfikuj**
+Najpierw uruchom z flagą`--dry-run`(po prostu wydrukuj, nie ruszaj się).
+### Problem 3: Budowa prostego skrobaka sieciowego
+**Krok 1: Zrozum problem**
+Pobierz stronę internetową i wyodrębnij wszystkie linki.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`LWP::Simple`do pobierania i wyrażenia regularnego lub`HTML::LinkExtor`do analizowania.
+**Krok 3: Wdróż**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Krok 4: Przedłuż**
+Obsługuj względne adresy URL, filtruj według domeny i śledź paginację.
+---
+
 ## Streszczenie
-Złota era Perla minęła, ale jego wpływ jest wszędzie. Każdy język z wyrażeniami regularnymi, każdy menedżer pakietów wzorowany na CPAN i każdy system z`map`/`grep`/`reduce`nosi DNA Perla. W przypadku nowych projektów większość programistów sięga po Python lub Go. Jednak Perl pozostaje potężnym narzędziem do przetwarzania tekstu, szybkiej automatyzacji i utrzymywania ogromnej ilości kodu Perla obsługującego infrastrukturę krytyczną na całym świecie. Zrozumienie Perla oznacza także zrozumienie, skąd wzięło się współczesne programowanie — ukształtowało ono narzędzia i wzorce, których używamy dzisiaj.
+Złota era Perla minęła, ale jego wpływ jest wszędzie. Każdy język z wyrażeniami regularnymi, każdy menedżer pakietów wzorowany na CPAN i każdy system z`map`/`grep`/`reduce`ma w sobie DNA Perla. W przypadku nowych projektów większość programistów sięga po Python lub Go. Jednak Perl pozostaje potężnym narzędziem do przetwarzania tekstu, szybkiej automatyzacji i utrzymywania ogromnej ilości kodu Perla obsługującego infrastrukturę krytyczną na całym świecie. Zrozumienie Perla oznacza także zrozumienie, skąd wzięło się współczesne programowanie — ukształtowało ono narzędzia i wzorce, których używamy dzisiaj.

@@ -860,5 +860,151 @@ Publish-Module @publishParams
 |クロスプラットフォーム スクリプト | PowerShell 7+ はどこでも動作します |真に移植可能なスクリプトのための Python |
 ---
 
+## 総合的な Q&A
+### Q1: Bash における一重引用符と二重引用符の違いは何ですか?
+**A:** 二重引用符を使用すると変数を展開できます。一重引用符はリテラルです:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: シェル スクリプトのエラーはどのように処理すればよいですか?
+**A:**`set -e`を使用してエラー時に終了し、クリーンアップのためにトラップします。
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3: コマンドライン引数を適切に処理するにはどうすればよいですか?
+**A:** フラグと位置パラメータには`getopts`を使用します。
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4: PowerShell パイプラインとは何ですか?また、Bash との違いは何ですか?
+**A:** PowerShell はテキストではなくオブジェクトをパイプします。各オブジェクトはそのプロパティを保持します。
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: クロスプラットフォーム スクリプトはどのように作成すればよいですか?
+**A:** Bash の場合:`#!/usr/bin/env bash`を使用し、GNU 固有のフラグを避けてください。 PowerShell の場合: Linux/macOS/Windows で実行される`pwsh`(PowerShell Core) を使用します。
+---
+
+## 思考連鎖による問題解決
+### 問題 1: バッチ画像処理スクリプト (Bash)
+**ステップ 1: 問題を理解する**
+ディレクトリ内のすべての PNG 画像のサイズを最大幅 800 ピクセルに変更します。
+**ステップ 2: アプローチを特定する**
+`find` を使用してファイルを検索し、`convert` (ImageMagick) を使用してサイズを変更します。
+**ステップ 3: 実装**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**ステップ 4: 延長**
+プログレスバー、破損した画像のエラー処理、および`xargs -P`による並列処理を追加します。
+### 問題 2: 自動ログ ローテーション (Bash)
+**ステップ 1: 問題を理解する**
+ログ ファイルを毎日ローテーションし、古いログを圧縮し、30 日より古いログを削除します。
+**ステップ 2: アプローチを特定する**
+時間ベースのフィルターには`find`を使用し、圧縮には`gzip`を使用します。
+**ステップ 3: 実装**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**ステップ 4: スケジュール**
+crontab に追加: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### 問題 3: Windows サービスの健全性チェック (PowerShell)
+**ステップ 1: 問題を理解する**
+重要なサービスが実行されているかどうかを確認し、停止しているサービスがある場合はアラートを送信します。
+**ステップ 2: アプローチを特定する**
+`Get-Service` を使用して、停止したサービスをフィルターします。
+**ステップ 3: 実装**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**ステップ 4: 自動化**
+5 分ごとに実行される Windows タスク スケジューラ ジョブとしてスケジュールします。
+---
+
 ＃＃ まとめ
-シェル スクリプト (Bash および PowerShell) は、コンピューターを扱う人にとって不可欠なスキルです。 Bash は Linux/macOS 環境と DevOps を支配しています。 PowerShell は、より現代的なオブジェクト指向のアプローチを提供し、Windows 管理に不可欠です。最新の技術スタックでは両方が必要です。シェル スクリプトは、システムを接続し、ワークフローを自動化し、作業を迅速に完了するための接着剤です。
+シェル スクリプト (Bash および PowerShell) は、コンピューターを扱う人にとって不可欠なスキルです。 Bash は Linux/macOS 環境と DevOps を支配しています。 PowerShell は、より現代的なオブジェクト指向のアプローチを提供しており、Windows 管理に不可欠です。最新の技術スタックでは両方が必要です。シェル スクリプトは、システムを接続し、ワークフローを自動化し、作業を迅速に完了するための接着剤です。

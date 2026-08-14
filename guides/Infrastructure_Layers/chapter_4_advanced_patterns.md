@@ -301,14 +301,15 @@ route53.change_resource_record_sets(
 ### 1. Input Validation & Sanitization
 
 ```python
-from pydantic import BaseModel, validator, Field
+from pydantic import BaseModel, Field, field_validator
 import re
 
 class PredictionRequest(BaseModel):
     text: str = Field(..., min_length=1, max_length=1000)
     user_id: str
     
-    @validator('text')
+    @field_validator('text')
+    @classmethod
     def validate_text(cls, v):
         # Remove potential injection attacks
         v = re.sub(r'[<>\"\'&]', '', v)
@@ -319,7 +320,8 @@ class PredictionRequest(BaseModel):
         
         return v.strip()
     
-    @validator('user_id')
+    @field_validator('user_id')
+    @classmethod
     def validate_user_id(cls, v):
         if not re.match(r'^[a-zA-Z0-9_-]+$', v):
             raise ValueError('Invalid user ID format')
@@ -401,33 +403,41 @@ async def batch_predict(requests: List[PredictionRequest]):
 
 ```python
 from cryptography.fernet import Fernet
-import pickle
+import torch
+import io
 
 class EncryptedModel:
+    """Encrypted model storage using safe torch serialization (no pickle)."""
     def __init__(self):
         self.key = Fernet.generate_key()
         self.cipher = Fernet(self.key)
     
     def save_encrypted(self, model, path):
-        """Save model in encrypted form"""
-        model_bytes = pickle.dumps(model)
+        """Save model in encrypted form using state_dict (safe serialization)"""
+        buffer = io.BytesIO()
+        torch.save(model.state_dict(), buffer)
+        model_bytes = buffer.getvalue()
         encrypted = self.cipher.encrypt(model_bytes)
         with open(path, 'wb') as f:
             f.write(encrypted)
     
-    def load_encrypted(self, path):
-        """Load and decrypt model"""
+    def load_encrypted(self, model_class, path, **model_kwargs):
+        """Load, decrypt, and restore model safely"""
         with open(path, 'rb') as f:
             encrypted = f.read()
         decrypted = self.cipher.decrypt(encrypted)
-        return pickle.loads(decrypted)
+        buffer = io.BytesIO(decrypted)
+        state_dict = torch.load(buffer, map_location='cpu', weights_only=True)
+        model = model_class(**model_kwargs)
+        model.load_state_dict(state_dict)
+        return model
 
 # Usage
 model_wrapper = EncryptedModel()
 model_wrapper.save_encrypted(model, 'encrypted_model.enc')
 
-# Later, load securely
-model = model_wrapper.load_encrypted('encrypted_model.enc')
+# Later, load securely (must provide model class)
+model = model_wrapper.load_encrypted(MyModelClass, 'encrypted_model.enc')
 ```
 
 ### 5. Secrets Management
@@ -580,7 +590,7 @@ for hour, replicas in zip(future_hours, predicted_replicas):
 ```python
 import torch
 import torch.nn as nn
-from torch.quantization import quantize_dynamic
+from torch.ao.quantization import quantize_dynamic
 
 class ModelCompressor:
     def __init__(self, model):
@@ -588,9 +598,10 @@ class ModelCompressor:
     
     def quantize(self):
         """Apply dynamic quantization (reduces model size by 4x)"""
+        # NOTE: quantize_dynamic only supports nn.Linear and nn.LSTM
         quantized_model = quantize_dynamic(
             self.model,
-            {nn.Linear, nn.Conv2d},
+            {nn.Linear, nn.LSTM},
             dtype=torch.qint8
         )
         return quantized_model

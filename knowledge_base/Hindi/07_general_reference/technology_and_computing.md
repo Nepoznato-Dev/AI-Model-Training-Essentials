@@ -1,42 +1,46 @@
 ---
-# मेटाडेटा
-शीर्षक: "प्रौद्योगिकी और कंप्यूटिंग"
-विवरण: "कंप्यूटिंग की मूल बातें, इंटरनेट, डेटाबेस, क्लाउड, सुरक्षा"
-श्रेणी: "सामान्य संदर्भ"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-review_by: "सामान्य संदर्भ ज्ञानकोष टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [प्रौद्योगिकी, कंप्यूटिंग, सामान्य-संदर्भ]
-कठिनाई_स्तर: "शुरुआती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "8 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Technology and Computing"
+description: "Computing basics, internet, databases, cloud, security"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [technology, computing, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # प्रौद्योगिकी और कंप्यूटिंग
 कंप्यूटिंग हर जगह है - आपके फोन में, आपकी कार में, आपके रेफ्रिजरेटर में, आपके चिकित्सा उपकरणों में, और आधुनिक समाज को चलाने वाले बुनियादी ढांचे में। यह सब कैसे काम करता है यह समझने से लाभ पाने के लिए आपको प्रोग्रामर होने की आवश्यकता नहीं है। यह फ़ाइल बुनियादी बातों को शामिल करती है: कंप्यूटर क्या है, इंटरनेट कैसे काम करता है, सॉफ़्टवेयर कैसे बनाया जाता है, और डिजिटल दुनिया को आकार देने वाली अवधारणाएँ।
-> **क्या आप गहराई में जाना चाहते हैं?** यह फ़ाइल एक व्यापक अवलोकन है। किसी भी विषय के विस्तृत कवरेज के लिए,[`01_coding_and_technology/`](../01_coding_and_technology/)में समर्पित फ़ाइलें देखें - जिनमें[web development](../01_coding_and_technology/web_development.md),[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), और[security](../01_coding_and_technology/security_best_practices.md)शामिल हैं।
+> **क्या आप गहराई में जाना चाहते हैं?** यह फ़ाइल एक व्यापक अवलोकन है। किसी भी विषय के विस्तृत कवरेज के लिए,[`01_coding_and_technology/`](../01_coding_and_technology/)में समर्पित फ़ाइलें देखें - जिनमें[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), औरशामिल हैं।
 ---
 
 ## कम्प्यूटर क्या है?
@@ -146,7 +150,7 @@ review_by: "सामान्य संदर्भ ज्ञानकोष �
 ---
 
 ## साइबर सुरक्षा - डिजिटल सिस्टम की सुरक्षा
-साइबर सुरक्षा कंप्यूटर, नेटवर्क और डेटा को हमले से बचाने की प्रथा है। यह मायने रखता है क्योंकि सब कुछ जुड़ा हुआ है, और उल्लंघनों की कीमत बहुत अधिक है। OWASP टॉप 10, सुरक्षित विकास जीवनचक्र और रहस्य प्रबंधन को कवर करने वाली पूरी मार्गदर्शिका के लिए,[security best practices](../01_coding_and_technology/security_best_practices.md)देखें।
+साइबर सुरक्षा कंप्यूटर, नेटवर्क और डेटा को हमले से बचाने की प्रथा है। यह मायने रखता है क्योंकि सब कुछ जुड़ा हुआ है, और उल्लंघनों की कीमत बहुत अधिक है। OWASP टॉप 10, सुरक्षित विकास जीवनचक्र और रहस्य प्रबंधन को कवर करने वाली पूरी मार्गदर्शिका के लिएदेखें।
 ### सामान्य खतरे
 | धमकी | यह क्या है | रोकथाम |
 |-------|----|---||

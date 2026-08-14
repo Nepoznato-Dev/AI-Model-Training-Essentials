@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Dostępność i projektowanie włączające
-Dostępność (często w skrócie a11y) to praktyka polegająca na sprawianiu, aby oprogramowanie było użyteczne dla wszystkich – w tym osób z niepełnosprawnością wzrokową, słuchową, motoryczną, poznawczą i neurologiczną. Nie jest miło to mieć; jest to wymóg prawny w wielu jurysdykcjach, obowiązek moralny i dobra inżynieria. Dostępne oprogramowanie to lepsze oprogramowanie dla każdego, ponieważ decyzje projektowe, które pomagają niepełnosprawnym użytkownikom – przejrzysta struktura, nawigacja za pomocą klawiatury, wystarczający kontrast, czytelny tekst – poprawiają wygodę wszystkich użytkowników.
+Dostępność (często w skrócie a11y) to praktyka polegająca na sprawianiu, aby oprogramowanie było użyteczne dla każdego – w tym osób z niepełnosprawnością wzrokową, słuchową, motoryczną, poznawczą i neurologiczną. Jest to wymóg prawny obowiązujący w wielu jurysdykcjach i standardowa praktyka inżynierska. Dostępne oprogramowanie to lepsze oprogramowanie dla każdego, ponieważ decyzje projektowe wspierające niepełnosprawnych użytkowników — przejrzysta struktura, nawigacja za pomocą klawiatury, wystarczający kontrast, czytelny tekst — poprawiają wygodę wszystkich użytkowników.
 ---
 
 ## Kto czerpie korzyści z dostępności?
@@ -63,7 +63,7 @@ Wytyczne dotyczące dostępności treści internetowych (WCAG) to międzynarodow
 | **Zauważalne** | Informacje muszą być prezentowane w sposób możliwy do odbioru przez użytkowników (alternatywy tekstu, podpisy, układ, który można dostosować) |
 | **Działa** | Interfejs musi umożliwiać nawigację i być użyteczny (dostępny za pomocą klawiatury, wystarczająco dużo czasu, bez treści wywołujących ataki) |
 | **Zrozumiałe** | Informacje i działanie muszą być zrozumiałe (czytelne, przewidywalne, pomoc przy wprowadzaniu danych) |
-| **Solidny** | Treść musi współpracować z obecnymi i przyszłymi technologiami wspomagającymi
+| **Solidny** | Treść musi współpracować z obecnymi i przyszłymi technologiami wspomagającymi |
 ### Poziomy zgodności WCAG
 | Poziom | Wymagania | Typowy cel |
 |-------|------------|--------------|
@@ -121,7 +121,7 @@ ARIA dodaje informacje o dostępności do elementów HTML, które nie mają wbud
 | Problem | Napraw |
 |--------|-----|
 | Fokus wchodzi do komponentu, ale nie może go opuścić | Upewnij się, że Tab przenosi fokus; uchwyt Ucieczka |
-| Modal nie zatrzymuje ostrości | Fokus powinien zmieniać się w obrębie modalności; powrót do wyzwalacza po zamknięciu |
+| Modal nie zatrzymuje ostrości | Fokus powinien zmieniać się w trybie modalnym; powrót do wyzwalacza po zamknięciu |
 | Komponenty niestandardowe nie reagują na klawiaturę | Dodaj moduły obsługi klawiszy dla Enter, Spacja, strzałki |
 ---
 
@@ -132,7 +132,7 @@ ARIA dodaje informacje o dostępności do elementów HTML, które nie mają wbud
 | **Nie polegaj wyłącznie na kolorze** | Oprócz koloru | używaj ikon, tekstu lub wzorów
 | **Wskaźniki ostrości** | Zawsze widoczny; wysoki kontrast; nigdy nie usuwany bez wymiany |
 | **Zmiana rozmiaru tekstu** | Układ musi działać przy powiększeniu 200% |
-| **Responsywny** | Treść musi ponownie wlać się do szerokości 320 pikseli (na urządzenia mobilne) |
+| **Responsywny** | Treść musi zostać przelana z szerokością 320 pikseli (na urządzenia mobilne) |
 ### Uwagi dotyczące ślepoty barw
 | Wpisz | Dotknięte kolory | Porada projektowa |
 |------|----------------------|------------|
@@ -166,7 +166,7 @@ ARIA dodaje informacje o dostępności do elementów HTML, które nie mają wbud
 ## Dostępność mobilna
 | Platforma | Wytyczne | Kluczowe narzędzia |
 |---------|-----------|----------|
-| **iOS** | Wytyczne Apple dotyczące interfejsu ludzkiego (sekcja Dostępność) | VoiceOver; Typ dynamiczny; Przełącznik sterowania |
+| **iOS** | Wytyczne Apple dotyczące interfejsu ludzkiego (sekcja „Dostępność”) | VoiceOver; Typ dynamiczny; Przełącznik sterowania |
 | **Android** | Wytyczne dotyczące dostępności Androida | TalkBack; Przełącz dostęp; Wybierz, aby mówić |
 | Koncern mobilny | Rozwiązanie |
 |-------------------|---------|
@@ -177,4 +177,4 @@ ARIA dodaje informacje o dostępności do elementów HTML, które nie mają wbud
 ---
 
 ## Streszczenie
-Dostępność nie jest funkcją, którą dodajesz na końcu — to zasada projektowania, która powinna uwzględniać każdą decyzję od samego początku. Użyj semantycznego HTML. Upewnij się, że nawigacja za pomocą klawiatury działa. Zachowaj wystarczający kontrast kolorów. Zapewnij tekstowe alternatywy dla treści nietekstowych. Przetestuj z czytnikami ekranu i prawdziwymi niepełnosprawnymi użytkownikami. Rezultatem jest oprogramowanie, które działa lepiej dla wszystkich — nie tylko dla osób niepełnosprawnych, ale także dla osób z tymczasowymi upośledzeniami, ograniczeniami sytuacyjnymi, starszymi urządzeniami, wolnymi połączeniami i tysiącem innych powodów, dla których rzeczywiste użytkowanie różni się od wyidealizowanego środowiska programisty.
+Dostępność to zasada projektowania, która powinna uwzględniać każdą decyzję od początku, a nie funkcja dodawana na końcu. Użyj semantycznego HTML. Upewnij się, że nawigacja za pomocą klawiatury działa. Zachowaj wystarczający kontrast kolorów. Zapewnij tekstowe alternatywy dla treści nietekstowych. Przetestuj z czytnikami ekranu i użytkownikami niepełnosprawnymi. Rezultatem jest oprogramowanie, które działa lepiej dla wszystkich — w tym dla osób z tymczasowymi upośledzeniami, ograniczeniami sytuacyjnymi, starszymi urządzeniami, wolnymi połączeniami i wieloma czynnikami, którymi rzeczywiste użytkowanie różni się od kontrolowanego środowiska programistycznego.

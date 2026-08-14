@@ -54,7 +54,7 @@ Clojure è un dialetto Lisp moderno progettato da Rich Hickey nel 2007. Funziona
 ## I compromessi
 | Limitazione | Dettagli | Soluzione tipica |
 |-----------|---------|-------------|
-| **Parentesi** | L'uso intenso di`()`può essere inizialmente difficile da leggere | Utilizzare il supporto IDE; imparare a vedere la struttura |
+| **Parentesi** | L'uso intenso di`()`può essere difficile da leggere inizialmente | Utilizzare il supporto IDE; imparare a vedere la struttura |
 | **Comunità di nicchia** | Piccolo mercato del lavoro rispetto alle lingue tradizionali | Comunità attiva e appassionata |
 | **Tempo di avvio di Clojure** | Basato su JVM; avvio lento per le CLI | Utilizza l'immagine nativa GraalVM |
 | **Dialetti Lisp** | Molti Lisp incompatibili (Common Lisp, Scheme, Emacs Lisp) | Scegli Clojure per un lavoro moderno |
@@ -696,6 +696,141 @@ native-image --no-fallback \
 | Sviluppo di applicazioni generali | Possibile ma di nicchia | Python, Java, Vai |
 | App mobili | ClojureScript per app Web; non nativo | Veloce, Kotlin |
 | Scienza dei dati | Non l'ecosistema | Pitone, R |
+---
+
+## Domande e risposte sintetiche
+### D1: Perché i programmi Lisp/Clojure hanno così tante parentesi?
+**R:** Le parentesi rappresentano le espressioni S, una sintassi uniforme in cui codice e dati hanno la stessa struttura (omoiconicità):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### D2: In che modo Clojure gestisce lo stato e la mutabilità in modo diverso?
+**R:** Clojure utilizza per impostazione predefinita dati immutabili. Per i cambiamenti di stato controllati, fornisce tipi di riferimento:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### D3: Quali sono le strutture dati persistenti di Clojure?
+**R:** Tutte le raccolte Clojure sono persistenti (immutabili, strutturalmente condivise):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### D4: Come funzionano le macro Clojure?
+**R:** Le macro ricevono codice non valutato (come dati), lo trasformano e restituiscono un nuovo codice:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### D5: Come gestisco la concorrenza in Clojure?
+**R:** Clojure fornisce più primitive di concorrenza:
+- `atom`: modifiche indipendenti e sincrone
+-`ref`+ `dosync`: modifiche transazionali coordinate
+- `agent`: modifiche asincrone e indipendenti
+- Canali `core.async`: concorrenza in stile CSP
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: elaborazione di una pipeline di dati
+**Passaggio 1: comprendere il problema**
+Leggi i dati, filtrali, trasformali e aggregali tramite una pipeline.
+**Passaggio 2: identificare l'approccio**
+Utilizza le macro di filettatura Clojure (`->>`) e i trasduttori.
+**Passaggio 3: implementazione**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Passaggio 4: ottimizza**
+I trasduttori evitano di creare sequenze intermedie: compongono le trasformazioni in un unico passaggio.
+### Problema 2: costruire un semplice server Web
+**Passaggio 1: comprendere il problema**
+Crea un server HTTP di base utilizzando Ring/Compojure.
+**Passaggio 2: identificare l'approccio**
+Utilizza l'adattatore Ring e il routing Compojure.
+**Passaggio 3: implementazione**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Passaggio 4: Estendi**
+Aggiungi middleware per la registrazione, l'analisi JSON, l'autenticazione e la gestione degli errori.
 ---
 
 ## Riepilogo

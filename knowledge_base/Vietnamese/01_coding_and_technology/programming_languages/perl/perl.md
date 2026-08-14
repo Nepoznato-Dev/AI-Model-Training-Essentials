@@ -38,10 +38,11 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Perl
 Perl được Larry Wall tạo ra vào năm 1987 như một công cụ xử lý văn bản thực tế. Nó trở thành xương sống của quá trình phát triển web thời kỳ đầu (tập lệnh CGI), quản trị hệ thống, tin sinh học và lập trình mạng. Triết lý của Perl là "Có nhiều cách để làm" (TMTOWTDI) - ngôn ngữ cung cấp cho bạn nhiều cách tiếp cận cho mọi vấn đề, thiên về tính biểu đạt hơn là tính đồng nhất.
 Ảnh hưởng của Perl đối với lập trình hiện đại là rất lớn nhưng thường vô hình: các biểu thức chính quy, bị ảnh hưởng bởi tính năng khớp mẫu của Perl, hiện đã trở thành tiêu chuẩn trong Python, JavaScript, Java và hầu hết các ngôn ngữ khác. CPAN (Mạng lưu trữ Perl toàn diện) là một trong những kho lưu trữ gói phần mềm đầu tiên và truyền cảm hứng cho các hệ thống sau này như PyPI của Python và npm của Node.
-Mặc dù mức độ phổ biến của Perl đã giảm kể từ đỉnh điểm vào đầu những năm 2000, nhưng nó vẫn được sử dụng rộng rãi trong các hệ thống cũ, quy trình xử lý văn bản và quản trị hệ thống. Perl 6 (hiện được gọi là **Raku**) là một ngôn ngữ riêng biệt mô phỏng lại nhiều khái niệm của Perl.
+Mặc dù mức độ phổ biến của Perl đã giảm kể từ đỉnh cao vào đầu những năm 2000, nhưng nó vẫn được sử dụng rộng rãi trong các hệ thống cũ, quy trình xử lý văn bản và quản trị hệ thống. Perl 6 (hiện được gọi là **Raku**) là một ngôn ngữ riêng biệt mô phỏng lại nhiều khái niệm của Perl.
 ---
 
 ## Tại sao Perl lại quan trọng
@@ -182,9 +183,9 @@ if ($@) {
 | Biểu thức chính quy | Python, JavaScript, Java, Ruby, C#, PHP |
 | Kho gói (CPAN) | PyPI, npm, RubyGems, thùng.io |
 | Đâydocs | Python, Ruby, PHP, Shell, JavaScript |
-| `$_`biến mặc định |`$_`của Ruby,`$_`của PowerShell |
+|  Biến mặc định`$_`|`$_`của Ruby ,`$_`của PowerShell |
 | `map`/`grep`/`reduce`| Python, Ruby, JavaScript, Rust |
-|  __BẢO VỆ_6__ / xơ vải | TypeScript, gợi ý kiểu của Python |
+| `use strict`/ linting | TypeScript, gợi ý kiểu của Python |
 ---
 
 ## Cú pháp & Mẫu nâng cao
@@ -506,7 +507,7 @@ say MyModule::fast_factorial(10);  # 3628800
 ---
 
 ## Mẫu thiết kế
-### Đơn
+### Singleton
 ```perl
 package Database;
 use Moose;
@@ -575,7 +576,7 @@ CMD ["perl", "bin/myapp.pl"]
 | Kịch bản | Tại sao Perl | Thay thế tốt hơn |
 |----------|----------|-------------------|
 | Xử lý/phân tích văn bản | Công cụ biểu thức chính quy tốt nhất trong lớp | Python cho dữ liệu có cấu trúc |
-| Phân tích tệp nhật ký | Hướng dẫn nhanh, công cụ đã được chứng minh | `awk`/`sed`đối với các trường hợp đơn giản; Python cho phức tạp |
+| Phân tích tệp nhật ký | Hướng dẫn nhanh, công cụ đã được chứng minh | `awk`/`sed`dành cho các trường hợp đơn giản; Python cho phức tạp |
 | Quản trị hệ thống | Thống trị về mặt lịch sử | Bash/PowerShell cho các tác vụ đơn giản; Python cho phức tạp |
 | Bảo trì hệ thống cũ | Hàng triệu dòng Perl đang được sản xuất | — |
 | Tin sinh học | Sự hiện diện lịch sử mạnh mẽ (BioPerl) | Python (Biopython), R |
@@ -583,6 +584,165 @@ CMD ["perl", "bin/myapp.pl"]
 | Phát triển web | Kỷ nguyên CGI đã qua | Python, Node.js, Go, PHP |
 | Dự án mới quy mô lớn | Cộng đồng đã tiếp tục | Đi, Rust, Python |
 | Khoa học dữ liệu / ML | Không phải hệ sinh thái | Python, R |
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Sự khác biệt giữa`my`,`our`và`local`là gì?
+**A:** Những từ khóa này kiểm soát phạm vi biến:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Câu hỏi 2: Làm cách nào để xử lý các tệp văn bản một cách hiệu quả trong Perl?
+**A:** Perl vượt trội trong việc xử lý văn bản. Sử dụng toán tử kim cương và biểu thức chính quy:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Câu 3: Làm cách nào để sử dụng tài liệu tham khảo và cấu trúc dữ liệu phức tạp?
+**A:** Tham chiếu là cách Perl tạo ra các cấu trúc lồng nhau:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4: Tôi nên biết những biến đặc biệt nào của Perl?
+**A:** Perl có nhiều biến đặc biệt. Điều quan trọng nhất:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Câu hỏi 5: Làm cách nào để viết Perl hiện đại, có thể bảo trì được?
+**A:** Các phương pháp hay nhất cho Perl hiện đại:
+- Luôn sử dụng`strict`và`warnings`
+- Sử dụng`my`cho tất cả các biến
+- Sử dụng các tước hiệu tệp từ vựng:`open my $fh, '<', $file`
+- Sử dụng các module từ CPAN (Moo/Moose cho OOP, Try::Tiny cho lỗi)
+- Sử dụng`say`thay vì`print`(với`feature 'say'`)
+- Định dạng với `perltidy`
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Phân tích tệp nhật ký
+**Bước 1: Tìm hiểu vấn đề**
+Phân tích nhật ký truy cập Apache và đếm số yêu cầu trên mỗi địa chỉ IP.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng biểu thức chính quy để trích xuất địa chỉ IP, hàm băm để đếm số lần xuất hiện.
+**Bước 3: Thực hiện**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Bước 4: Gia hạn**
+Thêm tính năng lọc ngày, phân tích mã trạng thái và xuất dưới dạng CSV.
+### Vấn đề 2: Đổi tên file hàng loạt bằng Regex
+**Bước 1: Tìm hiểu vấn đề**
+Đổi tên tệp phù hợp với mẫu, chuyển đổi tên tệp bằng biểu thức chính quy.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`glob`hoặc`opendir`để tìm tệp, biểu thức chính quy để chuyển đổi tên.
+**Bước 3: Thực hiện**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Bước 4: Xác minh**
+Trước tiên hãy chạy với cờ`--dry-run`(chỉ in, không di chuyển).
+### Vấn đề 3: Xây dựng một Web Scraper đơn giản
+**Bước 1: Tìm hiểu vấn đề**
+Tìm nạp một trang web và trích xuất tất cả các liên kết.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`LWP::Simple`để tìm nạp và biểu thức chính quy hoặc`HTML::LinkExtor`để phân tích cú pháp.
+**Bước 3: Thực hiện**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Bước 4: Gia hạn**
+Xử lý các URL tương đối, lọc theo tên miền và theo dõi phân trang.
 ---
 
 ## Bản tóm tắt

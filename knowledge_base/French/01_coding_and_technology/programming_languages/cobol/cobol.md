@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "COBOL"
-description : "Référence complète sur le langage de programmation COBOL couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "COBOL"
+description: "Comprehensive reference for the COBOL programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [cobol, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "34 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [cobol, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 #COBOL
 COBOL (Common Business-Oriented Language) est l'un des langages de programmation les plus anciens encore utilisés, développé pour la première fois en 1959. Il a été conçu pour le traitement des données d'entreprise : systèmes financiers, paie, banque, assurance et applications gouvernementales. La syntaxe de type anglais de COBOL était destinée à être lisible par les chefs d'entreprise, et pas seulement par les programmeurs.
@@ -825,4 +829,4 @@ scp bin/payroll server:/opt/cobol/bin/
 ---
 
 ## Résumé
-COBOL est une relique des débuts de l'informatique qui refuse de mourir – parce qu'elle ne peut pas se le permettre. Les systèmes bancaires et gouvernementaux du monde dépendent de programmes COBOL qui fonctionnent de manière fiable depuis des décennies. Bien que personne ne choisirait aujourd’hui COBOL pour un nouveau projet, le langage reste d’une importance cruciale pour le maintien de l’infrastructure qui sous-tend la finance mondiale. La pénurie de développeurs COBOL en fait un créneau étonnamment lucratif.
+COBOL est un héritage des premières décennies de l'informatique qui reste en usage actif car son remplacement n'est pas réalisable à grande échelle. Les systèmes bancaires et gouvernementaux du monde dépendent de programmes COBOL qui fonctionnent de manière fiable depuis des décennies. Bien que COBOL ne serait typiquement pas choisi pour un nouveau projet aujourd'hui, le langage reste important pour le maintien de l'infrastructure qui supporte la finance mondiale. La pénurie de développeurs COBOL en fait une niche lucrative.

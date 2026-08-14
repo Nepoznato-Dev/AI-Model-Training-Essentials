@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "PHP"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی PHP که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [php، زبان برنامه نویسی، نحو، اکوسیستم، کدنویسی و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "34 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "PHP"
+description: "Comprehensive reference for the PHP programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [php, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # PHP
 PHP (پیش پردازشگر فرامتن) یک زبان برنامه نویسی سمت سرور است که توسط Rasmus Lerdorf در سال 1994 ایجاد شد و اولین بار در سال 1995 منتشر شد. PHP که در ابتدا برای تولید صفحات وب پویا طراحی شده بود، به یک زبان همه منظوره با امکانات کامل تبدیل شده است. تقریباً 75٪ از تمام وب سایت ها با زبان سمت سرور شناخته شده، از جمله WordPress، Facebook (در اصل)، Wikipedia، Slack و میلیون ها سایت دیگر را تامین می کند.
 PHP مدرن (8.x) یک زبان بسیار متفاوت از PHP در اوایل دهه 2000 است. اکنون دارای ویژگی‌های تایپ شده، عبارات مطابقت، enums، فیبرها، کلاس‌های فقط خواندنی و یک سیستم نوع قوی است. علیرغم شهرت آن در میان توسعه دهندگان (اغلب به دلیل ناسازگاری مورد انتقاد قرار می گیرد)، PHP عملی است، به طور گسترده مستقر شده است و همچنان در حال بهبود است.
@@ -49,7 +54,7 @@ PHP مدرن (8.x) یک زبان بسیار متفاوت از PHP در اوای�
 ## مبادلات
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
-| **نامگذاری ناسازگار** | `strpos`در مقابل `str_replace`،`array_key_exists`در مقابل`in_array`— بدون قرارداد منسجم | ناسازگاری ها را بیاموزید؛ استفاده از IDE تکمیل خودکار |
+| **نامگذاری ناسازگار** | `strpos`در مقابل`str_replace`,`array_key_exists`در مقابل`in_array`— بدون قرارداد منسجم | ناسازگاری ها را بیاموزید؛ استفاده از IDE تکمیل خودکار |
 | **توشه تاریخی** | ویژگی ها و الگوهای قدیمی از PHP 5 و پیش از آن | استفاده از PHP مدرن (8.2+)؛ پیروی از استانداردهای PSR |
 | **عملکرد** | کندتر از Go، Rust یا Java برای کارهای غیر وب | از OPcache استفاده کنید. Swoole را برای async در نظر بگیرید. استفاده از PHP-FPM |
 | **برای غیر وب ایده آل نیست** | CLI، دسکتاپ، موبایل، علم داده – نه نقاط قوت PHP | از Python، Go یا زبان های دیگر برای کارهای غیر وب استفاده کنید |
@@ -193,7 +198,7 @@ $config = [...$defaults, ...$overrides];
 ### چارچوب
 | چارچوب | سبک | بهترین برای |
 |-----------|-------|----------|
-| **لاراول** | سینتکس کامل پشته و زیبا | اکثر برنامه های کاربردی وب؛ بزرگترین فریم ورک پی اچ پی |
+| **لاراول** | سینتکس کامل و زیبا | اکثر برنامه های کاربردی وب؛ بزرگترین فریم ورک پی اچ پی |
 | **سیمفونی** | سازمانی، مبتنی بر جزء | برنامه های کاربردی سازمانی بزرگ |
 | **لاغر** | میکرو فریمورک | API ها و برنامه های کاربردی کوچک |
 | **وردپرس** | CMS | وبلاگ ها، سایت های محتوا، وب سایت های کسب و کار کوچک |
@@ -823,6 +828,332 @@ CMD ["php-fpm"]
 | برنامه های بلادرنگ | نه قدرت PHP | Node.js، برو |
 | علم داده / ML | نه اکوسیستم | پایتون، R |
 | برنامه های دسکتاپ/موبایل | مناسب نیست | استفاده از زبان های مادری |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت`==`و`===`در PHP چیست؟
+**الف:**`==`یک مقایسه ضعیف است - قبل از مقایسه، نوع اجبار را انجام می دهد (`"0" == false``true`است). `===`مقایسه دقیقی است - هم مقدار و هم نوع را بررسی می کند (`"0" === false``false`است). همیشه از`===`استفاده کنید مگر اینکه به طور خاص به اجبار نوع نیاز داشته باشید. این یکی از رایج ترین منابع PHP برای اشکالات است.
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### Q2: فضاهای نام PHP و بارگذاری خودکار چگونه کار می کنند؟
+**A:** فضای نام از برخورد نام کلاس جلوگیری می کند. PSR-4 نقشه های بارگذاری خودکار ساختار فضای نام به ساختار دایرکتوری — نقشه های`App\Controllers\UserController`به `src/Controllers/UserController.php`. Composer بارگیری خودکار را از طریق`composer.json`انجام می دهد. همیشه از فضاهای نام و PSR-4 در PHP مدرن استفاده کنید.
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### Q3: ویژگی های PHP 8 چیست و چگونه با فریمورک ها ارتباط دارند؟
+**A:** ویژگی ها (PHP 8) حاشیه نویسی های فراداده ساختار یافته برای کلاس ها، روش ها، ویژگی ها و پارامترها هستند. آنها معادل PHP حاشیه نویسی جاوا یا ویژگی های C# هستند. فریم ورک هایی مانند Laravel و Symfony به طور گسترده از آنها برای مسیریابی، اعتبارسنجی و تزریق وابستگی استفاده می کنند.
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### Q4: چگونه خطاها را به درستی در PHP مدرن مدیریت کنم؟
+**A:** PHP هم خطا دارد (E_WARNING، E_NOTICE) و هم استثنا. PHP مدرن منحصراً از استثناها استفاده می کند. از try/catch برای خرابی های مورد انتظار، کلاس های استثنای سفارشی برای خطاهای دامنه و`set_error_handler`برای تبدیل خطاها به استثنا استفاده کنید. PHP 7+`Throwable`رابط پایه برای خطاها و استثناها است.
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### Q5: فیبرهای PHP چیست و چگونه با async ارتباط دارند؟
+**A:** فیبرها (PHP 8.1) رشته های همکاری سبک وزن هستند - آنها می توانند اجرا را به حالت تعلیق درآورند و از سر بگیرند. آنها پایه و اساس PHP غیر همگام هستند اما سطح پایینی دارند. فریم ورک هایی مانند Amp و ReactPHP از فیبرها به صورت داخلی استفاده می کنند. برای اکثر برنامه ها، به جای الیاف خام، از یک چارچوب غیر همگام استفاده کنید.
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک خط لوله میان افزار بسازید
+**بیانیه مشکل:** یک خط لوله میان افزار برای یک چارچوب وب PHP اجرا کنید که در آن هر میان افزار می تواند درخواست را قبل و بعد از میان افزار بعدی در زنجیره پردازش کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما به این موارد نیاز داریم: (1) یک رابط `Middleware`، (2) یک خط لوله که میان افزار را زنجیره می کند، (3) هر میان افزار یک درخواست دریافت می کند و یک پاسخ تماس `$next`، (4) میان افزار می تواند درخواست (قبل) و پاسخ (بعد) را تغییر دهد. این مدل پیاز مورد استفاده لاراول، PSR-15 و فریمورک های مشابه است.
+** مرحله 2 - شناسایی رویکرد: **
+-`MiddlewareInterface`را با`process(Request, RequestHandler): Response`تعریف کنید.
+- از کاهش آرایه برای ترکیب میان افزار به یک کنترل کننده استفاده کنید.
+- هر میان افزار بعدی را پیچیده می کند و فراخوانی های تابع تو در تو را ایجاد می کند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- موارد سفارش: اولین لوله = بیرونی ترین (اول در صورت درخواست اجرا می شود، آخرین در پاسخ).
+- هر میان افزاری می تواند با بازگرداندن یک پاسخ بدون فراخوانی`$next`اتصال کوتاه کند.
+- تولید: از PSR-15`MiddlewareInterface`برای قابلیت همکاری با هر چارچوب PSR-15 استفاده کنید.
+### مشکل 2: یک مخزن با Query Builder پیاده سازی کنید
+**بیانیه مشکل:** یک سازنده پرس و جو روان بسازید که SQL را به صورت ایمن با پرس و جوهای پارامتری تولید می کند، از زنجیره زدن پشتیبانی می کند و با الگوی مخزن ادغام می شود.
+** مرحله 1 - مشکل را درک کنید:**
+ما به این موارد نیاز داریم: (1) یک کلاس`QueryBuilder`با متدهای زنجیره‌ای (`select`، `where`، `orderBy`، `limit`)، (2) پرس‌و‌جوهای پارامتری شده برای جلوگیری از تزریق SQL، (3) که از داده‌ساز برای دسترسی به XQZ استفاده می‌کند.
+** مرحله 2 - شناسایی رویکرد: **
+- Builder قطعات و پارامترهای SQL را جمع می کند.
+-`toSql()`پرس و جو نهایی را با متغیرهایی تولید می کند.
+-`getParameters()`مقادیر محدود شده را برمی گرداند.
+- Repository سازنده را با روش های خاص دامنه می پوشاند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- جلوگیری از تزریق SQL: همه مقادیر از طریق پرس‌و‌جوهای پارامتری شده (جای‌بان‌های `?`) عبور می‌کنند.
+- Chainable API: هر روش`$this`را برای ترکیب روان برمی گرداند.
+- تولید: از`illuminate/database`(سازنده پرس و جو لاراول) یا`doctrine/dbal`برای یک راه حل جامع و آزمایش شده استفاده کنید.
 ---
 
 ## خلاصه

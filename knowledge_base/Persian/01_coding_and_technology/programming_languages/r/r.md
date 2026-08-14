@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "R"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی R شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم، و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [r، زبان برنامه‌نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "31 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "R"
+description: "Comprehensive reference for the R programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [r, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # آر
 R یک زبان برنامه نویسی و محیطی است که به طور خاص برای محاسبات آماری و تجزیه و تحلیل داده ها طراحی شده است. این زبان توسط راس ایهاکا و رابرت جنتلمن در دانشگاه اوکلند در سال 1993 ایجاد شد (از این رو "R")، اجرای زبان S با پسوندهای قابل توجه است. R منبع باز است و توسط تیم R Core نگهداری می شود. این ابزار استاندارد برای آماردانان، تحلیلگران داده، و محققان در دانشگاه، مراقبت های بهداشتی، مالی و دولت است.
 R در دستکاری داده ها، مدل سازی آماری، تجسم و گزارش دهی برتر است. اکوسیستم بسته آن (CRAN) دارای بیش از 20000 بسته است که تقریباً هر روش آماری ابداع شده را پوشش می دهد.
@@ -49,7 +54,7 @@ R در دستکاری داده ها، مدل سازی آماری، تجسم و �
 ## مبادلات
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
-| **عملکرد** | بصورت پیش فرض تک رشته ای. کند برای مجموعه داده های بزرگ | استفاده از `data.table`، بسته های موازی، یا Rcpp برای ادغام C++ |
+| **عملکرد** | بصورت پیش فرض تک رشته ای. کند برای مجموعه داده های بزرگ | استفاده از `data.table`، بسته های موازی، یا Rcpp برای یکپارچه سازی C++ |
 | **استفاده از حافظه** | کل مجموعه داده ها را در RAM بارگیری می کند | استفاده از `data.table::fread`، بسته فلش برای پردازش خارج از هسته |
 | **زبان همه منظوره نیست** | برای توسعه وب، برنامه نویسی سیستم ها یا برنامه ها ناخوشایند | برای کارهای غیر آماری از Python، Go یا JavaScript استفاده کنید
 | ** نحو ناسازگار ** | پایه R دارای ویژگی های عجیب و غریب است. بسته های مختلف از قراردادهای مختلف استفاده می کنند | از tidyverse برای قوام استفاده کنید |
@@ -599,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | تولید سیستم های ML | برای استقرار طراحی نشده است | پایتون، جاوا |
 | توسعه وب | مناسب نیست | جاوا اسکریپت، پایتون |
 | پردازش داده در مقیاس بزرگ | محدود به حافظه | Python (PySpark)، SQL |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت`<-`و`=`برای انتساب چیست؟
+**A:** هر دو مقدار را اختصاص می دهند، اما`<-`عملگر انتساب اصطلاحی R است. در همه زمینه ها از جمله فراخوانی های تابع درونی کار می کند:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: چگونه داده های از دست رفته در R را مدیریت کنم؟
+**A:** R برای مقادیر از دست رفته از`NA`استفاده می کند. اکثر توابع دارای یک پارامتر`na.rm`هستند:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3: چه زمانی باید از`lapply`در مقابل`sapply`در مقابل`vapply`استفاده کنم؟
+**A:** همه یک تابع را روی یک لیست/بردار اعمال می کنند، اما در خروجی متفاوت هستند:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: چگونه با ggplot2 تجسم های موثر ایجاد کنم؟
+**A:** دستور زبان گرافیک را دنبال کنید - زیبایی شناسی داده ها را به ویژگی های بصری نگاشت:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5: چگونه کد R کارآمد را برای مجموعه داده های بزرگ بنویسم؟
+**A:** شیوه های کلیدی:
+- بردارها را از قبل تخصیص دهید:`x <- numeric(n)`به جای رشد با`c()`
+- استفاده از`data.table`برای مجموعه داده های بزرگ (100 برابر سریعتر از data.frame)
+- عملیات برداری - تا حد امکان از حلقه ها اجتناب کنید
+- برای ایمنی نوع از`vapply`نسبت به`sapply`استفاده کنید
+- نمایه با`Rprof()`یا`profvis`
+- بسته`arrow`را برای داده های خارج از هسته در نظر بگیرید
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: تمیز کردن و تجزیه و تحلیل یک مجموعه داده کثیف
+**مرحله 1: مشکل را درک کنید**
+ما یک چارچوب داده با مقادیر گمشده، انواع ناسازگار، و نقاط پرت داریم. ما باید آن را تمیز کنیم و آمار خلاصه را محاسبه کنیم.
+**مرحله 2: رویکرد را شناسایی کنید**
+از افعال مرتب استفاده کنید: `filter`، `mutate`، `summarize`، و `group_by`.
+**مرحله 3: پیاده سازی **```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**مرحله 4: تایید **
+تعداد سطرها را قبل و بعد از آن بررسی کنید، محدوده ها را اعتبارسنجی کنید و مجموع ها را با داده های منبع بررسی کنید.
+### مسئله 2: ساخت یک مدل رگرسیون خطی
+**مرحله 1: مشکل را درک کنید**
+یک متغیر نتیجه پیوسته را از پیش بینی کننده های متعدد پیش بینی کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`lm()`برای رگرسیون خطی، بررسی مفروضات و ارزیابی تناسب مدل استفاده کنید.
+**مرحله 3: پیاده سازی **```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**مرحله 4: ارزیابی**
+مربع R، نمودارهای باقیمانده برای الگوها و AIC را برای مقایسه مدل بررسی کنید.
+### مشکل 3: ایجاد یک گزارش قابل تکرار
+**مرحله 1: مشکل را درک کنید**
+گزارشی ایجاد کنید که تجزیه و تحلیل، تجسم ها و متن روایی را در قالبی تکرارپذیر ترکیب کند.
+**مرحله 2: رویکرد را شناسایی کنید**
+از R Markdown (یا Quarto) برای در هم آمیختن تکه های کد با متن استفاده کنید.
+**مرحله 3: پیاده سازی **```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE، هشدار = FALSE)
+کتابخانه (Tidyverse)
+داده <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(داده، aes(x، y)) + geom_point() + geom_smooth()```
+```
+
+**مرحله 4: رندر**
+`rmarkdown::render("report.Rmd")`یک سند HTML مستقل تولید می کند.
 ---
 
 ## خلاصه

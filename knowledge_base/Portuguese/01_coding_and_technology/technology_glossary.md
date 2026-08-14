@@ -76,7 +76,7 @@ Gemini alimenta o chatbot Bard de IA do Google (renomeado Gemini) e a IA de Pesq
 Visão geral.
 ### Phi-3-mini
 Phi-3-mini é um modelo de linguagem pequena (SLM) desenvolvido pela Microsoft com 3,8B
-parâmetros. Foi lançado em abril de 2026. Ao contrário da maioria dos modelos grandes, Phi-3-mini
+parâmetros. Foi lançado em abril de 2024. Ao contrário da maioria dos modelos grandes, Phi-3-mini
 foi treinado em um conjunto de dados cuidadosamente selecionado com "qualidade de livro didático" - uma técnica
 pioneiro da Microsoft Research — que prioriza a qualidade dos dados em detrimento do volume bruto.
 Apesar de ser muito menor que GPT-4 ou Claude 3 Opus, Phi-3-mini corresponde ou
@@ -87,7 +87,7 @@ ou mesmo no dispositivo, em um smartphone moderno com RAM suficiente.
 ### Lhama (Meta AI)
 Llama (Large Language Model Meta AI) é uma família de modelos de peso aberto
 lançado pela Meta. Llama 2 (2023) foi lançado para pesquisa e uso comercial
-com tamanhos variando de parâmetros 7B a 70B. Lhama 3 (2026) melhorado
+com tamanhos variando de parâmetros 7B a 70B. Lhama 3 (2024) melhorado
 desempenho significativamente, com modelos variando de 8B a 70B (e posteriormente 400B+).
 Como os pesos podem ser baixados publicamente, os modelos Llama são a base
 para um grande ecossistema de variantes ajustadas (Mistral, Alpaca, Vicuna, etc.)
@@ -96,7 +96,7 @@ e são amplamente utilizados para implantações de IA locais/privadas.
 Mistral AI é uma empresa francesa de IA que desenvolve LLMs abertos e proprietários.
 Mistral 7B (2023) demonstrou que um modelo de parâmetro 7B pode corresponder ao
 desempenho de modelos muito maiores usando técnicas eficientes, como deslizamento
-atenção de janela e atenção de consulta agrupada. Mixtral 8x7B (2026) é uma mistura-
+atenção de janela e atenção de consulta agrupada. Mixtral 8x7B (2023) é uma mistura-
 modelo de especialistas - ele roteia cada token para um subconjunto de 8 redes especializadas,
 alcançar desempenho de nível GPT-3.5 e ao mesmo tempo ser computacionalmente mais barato.
 Os modelos da Mistral são totalmente abertos e podem ser executados localmente.

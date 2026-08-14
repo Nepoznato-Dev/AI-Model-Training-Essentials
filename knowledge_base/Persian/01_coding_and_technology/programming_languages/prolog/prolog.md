@@ -1,40 +1,45 @@
 ---
-# فراداده
-عنوان: "پرولوگ"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Prolog شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [پرولگ، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "25 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Prolog"
+description: "Comprehensive reference for the Prolog programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [prolog, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "25 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
-#پرولوگ
+
+# پرولوگ
 Prolog (برنامه نویسی در منطق) یک زبان برنامه نویسی منطقی است که در سال 1972 توسط آلن کولمراور و فیلیپ روسل ایجاد شد. برخلاف هر زبان دیگری در این لیست، Prolog به رایانه نمی‌گوید *چگونه* یک مسئله را حل کند - شما اعلام می‌کنید که *چه چیزی درست است (حقایق و قوانین) و موتور استنتاج Prolog پاسخ را از طریق استنتاج منطقی می‌یابد.
 Prolog زبان انتخابی برای سیستم های خبره، پردازش زبان طبیعی و تحقیقات هوش مصنوعی در دهه 1980 بود. این پروژه سیستم کامپیوتری نسل پنجم ژاپن را تقویت کرد و در واتسون IBM برای درک زبان طبیعی استفاده شد. امروزه از Prolog در حل محدودیت، زمان‌بندی، استنتاج نوع، استدلال قانونی و هر جایی که مشکلات به طور طبیعی به صورت روابط منطقی بیان می‌شوند استفاده می‌شود.
 **برنامه‌نویسی منطقی محدودیت (CLP)** Prolog را با حل‌کننده‌های محدودیت برای زمان‌بندی، مسیریابی و تخصیص منابع گسترش می‌دهد - مشکلاتی که در زبان‌های ضروری بسیار دشوار هستند.
@@ -534,6 +539,129 @@ swipl -g main -o myapp.sav -c main.pl
 | برنامه نویسی همه منظوره | ممکن اما ناجور | پایتون، برو، جاوا |
 ---
 
+## پرسش و پاسخ مصنوعی
+### Q1: یکسان سازی Prolog چه تفاوتی با انتساب در زبان های دیگر دارد؟
+**A:** یکسان سازی تطبیق الگوی دو طرفه است، نه تخصیص:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2: چگونه عقبگرد در Prolog کار می کند؟
+**A:** هنگامی که یک هدف شکست می خورد، Prolog به آخرین نقطه انتخاب برمی گردد و جایگزین بعدی را امتحان می کند:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3: چگونه با لیست ها در Prolog کار کنم؟
+**A:** لیست ها از تطبیق الگوی سر/دم استفاده می کنند:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4: چه زمانی باید از Prolog به جای زبان های دیگر استفاده کنم؟
+**A:** Prolog در:
+- رضایت از محدودیت (برنامه ریزی، پازل)
+- سیستم های مبتنی بر قوانین (سیستم های خبره، اعتبارسنجی)
+- پیمایش نمودار/درخت
+- پردازش زبان طبیعی
+- محاسبات نمادین
+- هر مشکلی که به صورت روابط منطقی قابل بیان باشد
+### Q5: مشکلات رایج در Prolog چیست؟
+**A:** مسائل کلیدی:
+- بازگشت بی نهایت - همیشه مورد پایه را در اولویت قرار دهید
+- عقبگرد ناخواسته - از برش`!`یا`once/1`استفاده کنید 
+- بررسی رخ می دهد -`X = f(X)`به طور پیش فرض حلقه می شود (از`unify_with_occurs_check`استفاده کنید)
+- برش های سبز (بهینه سازی) در مقابل برش های قرمز (تغییر معنی) - سبز را ترجیح دهید
+---
+
+## حل مسئله زنجیره ای از فکر
+### مسئله 1: حل معمای N-Queens
+**مرحله 1: مشکل را درک کنید**
+N ملکه را روی صفحه شطرنج NxN قرار دهید تا دو ملکه به یکدیگر حمله نکنند.
+**مرحله 2: رویکرد را شناسایی کنید**
+از تولید مبتنی بر محدودیت استفاده کنید: ملکه ها را ستون به ستون قرار دهید و ایمنی را بررسی کنید.
+**مرحله 3: پیاده سازی **```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**مرحله 4: تایید **
+`?- n_queens(8, Qs).`باید 92 راه حل پیدا کند.
+### مسئله 2: ساختن یک سیستم خبره ساده
+**مرحله 1: مشکل را درک کنید**
+مشکلات خودرو را بر اساس علائم تشخیص دهید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از قوانین Prolog برای رمزگذاری دانش تشخیصی استفاده کنید.
+**مرحله 3: پیاده سازی **```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**مرحله 4: تمدید**
+امتیازهای اطمینان را اضافه کنید، علائم را به صورت تعاملی از کاربر بخواهید، و تشخیص های زنجیره ای را انجام دهید.
+---
+
 ## خلاصه
 Prolog شبیه هیچ زبان برنامه نویسی دیگری نیست. به جای نوشتن دستورالعمل های گام به گام، شما روابط و محدودیت ها را توصیف می کنید - و موتور از طریق استنتاج منطقی به دنبال راه حل می گردد. این امر Prolog را برای مسائلی که در زبان‌های ضروری نامناسب یا پرمخاطب هستند ایده‌آل می‌کند: سیستم‌های خبره، زمان‌بندی، تجزیه دستور زبان، رضایت محدودیت‌ها و هر چیزی که شامل قوانین منطقی باشد. اکثر برنامه نویسان هرگز از Prolog در تولید استفاده نمی کنند، اما یادگیری آن تفکر شما را در مورد برنامه نویسی گسترش می دهد. یکپارچه سازی، عقب نشینی و مشخص کردن مشکل اعلانی مفاهیمی هستند که بر طراحی زبان، تحقیقات هوش مصنوعی و حتی بهینه سازی پرس و جو پایگاه داده تأثیر می گذارند.
 ### مقایسه موتورهای Prolog
@@ -549,7 +677,7 @@ Prolog شبیه هیچ زبان برنامه نویسی دیگری نیست. ب�
 | **چند نخی** | بله | نه | نه |
 | **مدیر بسته** | `pack_install/1`| هیچکدام | npm |
 | **بهترین برای** | تولید، تحقیق | حل محدودیت | برنامه های وب، آموزش |
-### برنامه های کاربردی وب با پنگین
+### برنامه های وب با پنگین
 ```prolog
 % SWI-Prolog Pengines — server-side Prolog accessible from web
 :- use_module(library(http/http_server)).

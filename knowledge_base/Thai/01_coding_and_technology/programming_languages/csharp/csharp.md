@@ -660,7 +660,7 @@ dotnet lambda deploy-function my-function
 |----------|--------|-------------|
 | **ASP.NET Core** | เว็บ | กรอบงานเว็บประสิทธิภาพสูงสำหรับ API และเว็บแอป |
 | **เบลเซอร์** | เว็บ (ส่วนหน้า) | สร้าง UI เว็บเชิงโต้ตอบด้วย C# แทน JavaScript |
-| **หลักกรอบเอนทิตี** | ออม | การเข้าถึงฐานข้อมูลด้วย LINQ; การโยกย้ายรหัสครั้งแรก |
+| **แกนกรอบเอนทิตี** | ออม | การเข้าถึงฐานข้อมูลด้วย LINQ; การโยกย้ายรหัสครั้งแรก |
 | **ความสามัคคี** | เกมส์ | เอ็นจิ้นเกมยอดนิยมที่สุดในโลก (สคริปต์ C#) |
 | **.NET MAUI** | มือถือ/เดสก์ท็อป | แอพข้ามแพลตฟอร์มสำหรับ iOS, Android, macOS, Windows |
 | **อาวาโลเนีย** | เดสก์ท็อป | UI เดสก์ท็อปข้ามแพลตฟอร์ม (เช่น WPF สำหรับทุกแพลตฟอร์ม) |
@@ -705,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | แอพมือถือ (MAUI) | ข้ามแพลตฟอร์มด้วย C# | Flutter, React Native หรือ Native Swift/Kotlin |
 | เอไอ/เอ็มแอล | เป็นไปได้ด้วย ML.NET | Python (เป็นที่ต้องการอย่างมาก) |
 | เครื่องมือ / สคริปต์ CLI | เป็นไปได้แต่ละเอียด | ไป, สนิม, Python |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### Q1: อะไรคือความแตกต่างระหว่าง`class`และ`record`ใน C#?
+**A:**`class`เป็นประเภทการอ้างอิงที่มีคุณสมบัติไม่แน่นอนตามค่าเริ่มต้น ตัวแปรสองตัวสามารถอ้างอิงวัตถุเดียวกันได้`record`(C# 9+) เป็นประเภทอ้างอิงที่มีความเท่าเทียมกันตามมูลค่า โดยสองบันทึกที่มีข้อมูลเดียวกันจะถือว่าเท่ากัน บันทึกมีคุณสมบัติเฉพาะเริ่มต้นเท่านั้น มี`ToString`ในตัว และรองรับนิพจน์`with`สำหรับการกลายพันธุ์แบบไม่ทำลาย ใช้บันทึกสำหรับผู้ให้บริการข้อมูล (DTO, ออบเจ็กต์ค่า) ใช้คลาสสำหรับเอนทิตีที่มีพฤติกรรมหลากหลายและมีเอกลักษณ์
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### คำถามที่ 2: async/await และ`Task`ทำงานภายในอย่างไร
+**A:**`async/await`เป็นน้ำตาลเชิงวากยสัมพันธ์บนเครื่องสถานะที่สร้างโดยคอมไพเลอร์ เมื่อคุณ`await`เป็น`Task`เมธอดจะถูกแยกที่จุดรอ: ทุกอย่างก่อนหน้าจะถูกดำเนินการพร้อมกัน จากนั้นส่วนที่เหลือจะถูกลงทะเบียนเป็นการต่อเนื่อง เธรดมีอิสระที่จะทำงานอื่น `Task<T>`แสดงถึงมูลค่าในอนาคต `ValueTask<T>`เป็นทางเลือกโครงสร้างสำหรับเส้นทางลัดที่หลีกเลี่ยงการจัดสรรฮีปเมื่อผลลัพธ์มีอยู่แล้ว
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### Q3: วิธีการขยายคืออะไร และฉันควรใช้เมื่อใด
+**ตอบ:** วิธีการขยายจะเพิ่มวิธีการให้กับประเภทที่มีอยู่โดยไม่ต้องแก้ไข เป็นวิธีการแบบคงที่ในคลาสแบบคงที่ โดยมีคีย์เวิร์ด`this`บนพารามิเตอร์แรก เปิดใช้งาน API ได้อย่างคล่องแคล่วและเชื่อมโยงได้ ใช้เพื่อเพิ่มวิธีการอรรถประโยชน์ให้กับประเภทที่คุณไม่ได้เป็นเจ้าของ (เช่น`string`หรือ`IEnumerable<T>`) หลีกเลี่ยงการใช้มากเกินไป เพราะอาจทำให้โค้ดค้นพบได้ยาก
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Q4: การจับคู่รูปแบบทำงานอย่างไรใน C# สมัยใหม่
+**A:** C# ได้เพิ่มการจับคู่รูปแบบที่มีประสิทธิภาพมากขึ้นอย่างต่อเนื่อง นิพจน์สวิตช์ (C# 8) รูปแบบประเภท รูปแบบคุณสมบัติ รูปแบบเชิงสัมพันธ์ และรูปแบบรายการ (C# 11) ช่วยให้เกิดตรรกะเชิงเงื่อนไขที่กระชับและแสดงออกได้ การจับคู่รูปแบบจะแทนที่เชน if/else แบบยาว และได้รับการตรวจสอบโดยคอมไพเลอร์อย่างละเอียดถี่ถ้วน
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### คำถามที่ 5: dependency insert ใน .NET คืออะไร และฉันจะใช้มันได้อย่างไร
+**A:** .NET มีการสนับสนุน DI ในตัวผ่าน`Microsoft.Extensions.DependencyInjection`คุณลงทะเบียนบริการตามอายุการใช้งาน (Singleton, Scoped, Transient) และคอนเทนเนอร์จะแทรกบริการเหล่านั้นผ่านพารามิเตอร์ Constructor Singleton: หนึ่งอินสแตนซ์สำหรับแอป กำหนดขอบเขต: หนึ่งรายการต่อคำขอ HTTP ชั่วคราว: อินสแตนซ์ใหม่ทุกครั้ง
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: สร้างพื้นที่เก็บข้อมูลทั่วไปด้วยการแคช
+**คำชี้แจงปัญหา:** ใช้รูปแบบพื้นที่เก็บข้อมูลทั่วไปด้วยมัณฑนากรที่เพิ่มแคช พื้นที่เก็บข้อมูลควรสนับสนุนการดำเนินการ CRUD และตัวตกแต่งแคชควรแคชการอ่านและทำให้การเขียนใช้ไม่ได้
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการ: (1) อินเทอร์เฟซ`IRepository<T>`ทั่วไป (2) การใช้งานที่เป็นรูปธรรม (เช่น ในหน่วยความจำ) (3) ตัวตกแต่งแคชที่ล้อมรอบพื้นที่เก็บข้อมูลใด ๆ (4) การทำให้แคชใช้งานไม่ได้ในการดำเนินการเขียน รูปแบบมัณฑนากรช่วยให้แคชตั้งฉากกับตรรกะการเข้าถึงข้อมูล
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- กำหนด`IRepository<T>`ด้วย`Get`,`GetAll`,`Add`,`Update`, `Delete`
+- สร้าง`CachingRepository<T>`ที่ล้อม`IRepository<T>`และใช้ `IMemoryCache`
+- รหัสแคช: `typeof(T).Name:{id}`
+- ในการดำเนินการเขียน ทำให้รายการแคชใช้ไม่ได้
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- การแยกข้อกังวล: การแคชเป็นตัวตกแต่ง ไม่ปะปนกับพื้นที่เก็บข้อมูล
+- การลงทะเบียน DI:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(ใช้ Scrutor)
+- การผลิต: ใช้`IDistributedCache`(Redis) สำหรับสถานการณ์หลายเซิร์ฟเวอร์ และเพิ่มรูปแบบนอกเหนือจากแคชด้วยการป้องกัน `CacheStampede`
+### ปัญหาที่ 2: ใช้ไปป์ไลน์มิดเดิลแวร์
+**คำชี้แจงปัญหา:** สร้างไปป์ไลน์มิดเดิลแวร์ที่คล้ายกับไปป์ไลน์คำขอของ ASP.NET Core มิดเดิลแวร์แต่ละตัวสามารถประมวลผลคำขอ เรียกมิดเดิลแวร์ถัดไป และประมวลผลการตอบสนอง
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการ: (1) ประเภท`RequestDelegate`ที่แสดงถึงไปป์ไลน์ (2) มิดเดิลแวร์ที่ล้อมรอบผู้รับมอบสิทธิ์รายถัดไป (3) API ตัวสร้างสำหรับการเขียนมิดเดิลแวร์ นี่คือรูปแบบห่วงโซ่แห่งความรับผิดชอบที่นำมาใช้กับผู้ร่วมประชุม
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+-`RequestDelegate`คือ `Func<Context, RequestDelegate, Task>`
+- มิดเดิลแวร์แต่ละตัวได้รับบริบทและฟังก์ชัน `next`
+-`Use`เพิ่มมิดเดิลแวร์ `Build`จะรวบรวมให้เป็นผู้รับมอบสิทธิ์คนเดียว
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- ความสำคัญของลำดับมิดเดิลแวร์: เพิ่มครั้งแรก = ภายนอกสุด (ดำเนินการก่อนตามคำขอ และสุดท้ายเมื่อตอบกลับ)
+- มิดเดิลแวร์เทอร์มินัล (ไม่มีการเรียก `next`) ทำให้ไปป์ไลน์ลัดวงจร
+- การผลิต: ไปป์ไลน์ของ ASP.NET Core เป็นรูปแบบนี้ทุกประการ ปรับให้เหมาะสมด้วยแผนผังนิพจน์ที่คอมไพล์แล้วเพื่อการจัดสรรเป็นศูนย์
 ---
 
 ## สรุป

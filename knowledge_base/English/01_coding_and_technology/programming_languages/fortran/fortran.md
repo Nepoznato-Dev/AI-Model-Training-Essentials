@@ -820,6 +820,184 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between Fortran 90 and modern Fortran (2008+)?
+
+**A:** Modern Fortran added many features that make it more expressive:
+
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: How do Fortran arrays differ from C arrays?
+
+**A:** Fortran arrays are first-class objects with built-in operations:
+
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: How do I achieve maximum performance in Fortran?
+
+**A:** Key practices:
+- Use explicit `intent` for all dummy arguments
+- Use `implicit none` everywhere
+- Prefer array operations over loops
+- Use contiguous memory access patterns
+- Use compiler optimization flags: `-O3 -march=native -ffast-math`
+- Profile with `gprof` or compiler-specific tools
+- Use `pure` and `elemental` for functions the compiler can optimize
+
+### Q4: How do I interface Fortran with C?
+
+**A:** Use the `iso_c_binding` module:
+
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: What build system should I use for Fortran projects?
+
+**A:** CMake has excellent Fortran support. FPM (Fortran Package Manager) is the modern native option:
+
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Solving a PDE with Finite Differences
+
+**Step 1: Understand the Problem**
+Solve the 1D heat equation: du/dt = alpha * d²u/dx²
+
+**Step 2: Identify the Approach**
+Discretize space and time using finite differences. Use an explicit scheme.
+
+**Step 3: Implement**
+```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Step 4: Verify**
+Check conservation, convergence with grid refinement, and compare with analytical solution.
+
+### Problem 2: Matrix Diagonalization
+
+**Step 1: Understand the Problem**
+Find eigenvalues and eigenvectors of a symmetric matrix.
+
+**Step 2: Identify the Approach**
+Use LAPACK's `dsyev` routine via Fortran's interface.
+
+**Step 3: Implement**
+```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Step 4: Verify**
+Check that A*v = lambda*v for each eigenpair.
+
+---
+
 ## Summary
 
 Fortran is the original scientific programming language and remains a powerhouse in high-performance computing. Modern Fortran is a capable, evolving language with native array operations, parallel programming support, and C interoperability. While its community is small and specialised, Fortran continues to run some of the most demanding computational workloads in the world. For numerical computing at scale, Fortran remains relevant.

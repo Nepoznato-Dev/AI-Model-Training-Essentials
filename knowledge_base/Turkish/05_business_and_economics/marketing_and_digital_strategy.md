@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Pazarlama ve Dijital Strateji
-Pazarlama, işletmelerin müşterilere değer yaratma, iletişim kurma ve sunma şeklidir. Bu sadece reklam değil; insanların neye ihtiyacı olduğunu anlama, ürünü bu ihtiyacı karşılayacak şekilde konumlandırma ve alıcıları savunucuya dönüştüren bir ilişki kurma sisteminin tamamıdır. Dijital devrim temelleri değiştirmedi ancak araçları, kanalları ve her şeyin gerçekleştiği hızı dönüştürdü.
+Pazarlama, işletmelerin müşterilere değer yaratma, iletişim kurma ve sunma şeklidir. Müşteri ihtiyaçlarını anlama, ürünü bu ihtiyaçları karşılayacak şekilde konumlandırma ve alıcıları savunucuya dönüştüren ilişkiler kurma sisteminin tamamını kapsar. Dijital devrim, pazarlamanın araçlarını, kanallarını ve hızını değiştirirken temeller tutarlı kalıyor.
 ---
 
 ## Pazarlamanın Temelleri
@@ -92,7 +92,7 @@ Yabancıdan sadık müşteriye yolculuk:
 | **Kalite Puanı** | Google'ın reklam alaka düzeyi, açılış sayfası ve beklenen TO'ya ilişkin derecelendirmesi, maliyeti ve konumu etkiler |
 | **Uzun kuyruklu anahtar kelimeler** | Daha az rekabet ve daha yüksek niyetle daha uzun, daha spesifik ifadeler |
 | **Negatif anahtar kelimeler** | Reklamınızın gösterilmesini engelleyen kelimeler (boşa giden harcamaları azaltır) |
-**Önemli platformlar**: Google Ads, Microsoft Reklamcılık (Bing).
+**Önemli platformlar**: Google Ads, Microsoft Publishing (Bing).
 ### İçerik Pazarlama
 | İçerik Türü | Amaç | En İyisi |
 |---------------|-----------|----------|
@@ -208,4 +208,4 @@ Growth hacking, genellikle startuplarda hızlı, ölçeklenebilir kullanıcı b�
 ---
 
 ## Özet
-Pazarlamanın özü insanları anlamakla ilgilidir; neye ihtiyaç duyduklarını, nelerden korktuklarını, onları harekete geçmeye neyin motive ettiğini. Dijital araç seti önemli ölçüde değişti, ancak temel bilgiler değişmedi: Müşterinizi tanıyın, gerçek değer sunun, net bir şekilde iletişim kurun, her şeyi ölçün ve yineleyin. En iyi pazarlama, pazarlama gibi hissettirmez; yardım gibi hissettirir.
+Pazarlama temel olarak insanları, onların ihtiyaçlarını, endişelerini ve motivasyonlarını anlamakla ilgilidir. Dijital araç seti önemli ölçüde gelişti, ancak temeller hala devam ediyor: müşteriyi anlamak, değer sunmak, etkili iletişim kurmak, sonuçları ölçmek ve yinelemek. Etkili pazarlama, müşteri ihtiyaçlarıyla o kadar yakından uyum sağlar ki, tanıtımdan ziyade yardım olarak deneyimlenir.

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # COBOL
 COBOL (Ngôn ngữ định hướng kinh doanh chung) là một trong những ngôn ngữ lập trình lâu đời nhất vẫn được sử dụng, được phát triển lần đầu tiên vào năm 1959. Nó được thiết kế để xử lý dữ liệu kinh doanh - hệ thống tài chính, bảng lương, ngân hàng, bảo hiểm và các ứng dụng chính phủ. Cú pháp giống tiếng Anh của COBOL nhằm mục đích giúp các nhà quản lý doanh nghiệp có thể đọc được chứ không chỉ các lập trình viên.
 Bất chấp tuổi đời của nó, COBOL xử lý khoảng 30% tổng số giao dịch kinh doanh trên toàn cầu. Các ngân hàng lớn, cơ quan chính phủ (bao gồm cả Cơ quan An sinh Xã hội Hoa Kỳ) và các công ty bảo hiểm vẫn dựa vào hệ thống máy tính lớn COBOL. Lỗi Y2K năm 1999 đã đưa COBOL trở lại với nhận thức của công chúng và ngôn ngữ này tiếp tục vận hành cơ sở hạ tầng quan trọng trên toàn thế giới.
@@ -127,11 +128,11 @@ Bất chấp tuổi đời của nó, COBOL xử lý khoảng 30% tổng số gi
 Phân chia dữ liệu của COBOL là tính năng đặc biệt nhất của ngôn ngữ. Nó sử dụng hệ thống đánh số phân cấp (cấp 01–88) để xác định cấu trúc dữ liệu.
 | Cấp độ | Mục đích | Ví dụ |
 |-------|----------|---------|
-| **01** | Mục cấp bản ghi (biến hoặc bản ghi cấp cao nhất) |  __BẢO VỆ_0__ |
-| **02–49** | Nhóm hoặc mục cơ bản (trường con) |  __BẢO VỆ_1__ |
-| **66** | Mệnh đề đổi tên (chế độ xem dữ liệu thay thế) |  __BẢO VỆ_2__ |
-| **77** | Mục cơ bản độc lập (không có mục phụ) |  __BẢO VỆ_3__ |
-| **88** | Tên điều kiện (cờ giống boolean) |  __BẢO VỆ_4__ |
+| **01** | Mục cấp bản ghi (biến hoặc bản ghi cấp cao nhất) | `01 WS-EMPLOYEE.`|
+| **02–49** | Nhóm hoặc mục cơ bản (trường con) | `05 EMP-NAME PIC X(30).`|
+| **66** | Mệnh đề đổi tên (chế độ xem dữ liệu thay thế) | `66 EMP-FULL-NAME RENAMES EMP-FIRST.`|
+| **77** | Mục cơ bản độc lập (không có mục phụ) | `77 WS-COUNTER PIC 9(5).`|
+| **88** | Tên điều kiện (cờ giống boolean) | `88 WS-IS-SENIOR VALUE 'Y'.`|
 ```cobol
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -447,14 +448,14 @@ Trên các máy tính lớn của IBM, các chương trình COBOL được biên
 ### Tham khảo các tùy chọn trình biên dịch
 | Tùy chọn | Mô tả | Ví dụ |
 |--------|-------------|----------|
-|  __BẢO VỆ_0__ | Nguồn định dạng tự do (không hạn chế cột) |  __BẢO VỆ_1__ |
-|  __BẢO VỆ_2__ | Định dạng cố định (cột truyền thống 1-80) |  __BẢO VỆ_3__ |
-|  __BẢO VỆ_4__ | Tối ưu hóa cấp độ 2 |  __BẢO VỆ_5__ |
-|  __BẢO VỆ_6__ | Tạo thông tin gỡ lỗi |  __BẢO VỆ_7__ |
-|  __BẢO VỆ_8__ | Sử dụng tiêu chuẩn COBOL 2014 |  __BẢO VỆ_9__ |
-|  __BẢO VỆ_10__ | Xây dựng tệp thực thi (không chỉ biên dịch) |  __BẢO VỆ_11__ |
-|  __BẢO VỆ_12__ | Đường dẫn tìm kiếm sách sao chép |  __BẢO VỆ_13__ |
-|  __BẢO VỆ_14__ | Bật tất cả cảnh báo |  __BẢO VỆ_15__ |
+| `-free`| Nguồn định dạng tự do (không hạn chế cột) | `cobc -free prog.cbl`|
+| `-fixed`| Định dạng cố định (cột truyền thống 1-80) | `cobc -fixed prog.cbl`|
+| `-O2`| Tối ưu hóa cấp độ 2 | `cobc -O2 prog.cbl`|
+| `-g`| Tạo thông tin gỡ lỗi | `cobc -g prog.cbl`|
+| `-std=cobol2014`| Sử dụng tiêu chuẩn COBOL 2014 | `cobc -std=cobol2014 prog.cbl`|
+| `-x`| Xây dựng tệp thực thi (không chỉ biên dịch) | `cobc -x prog.cbl`|
+| `-I`| Đường dẫn tìm kiếm sách sao chép | `cobc -I ./copybooks prog.cbl`|
+| `-Wall`| Bật tất cả cảnh báo | `cobc -Wall prog.cbl`|
 ---
 
 ## Kiểm tra & gỡ lỗi
@@ -828,5 +829,129 @@ scp bin/payroll server:/opt/cobol/bin/
 | Khoa học dữ liệu / ML | Không phù hợp | Python, R |
 ---
 
+## Hỏi đáp tổng hợp
+### Q1: Tại sao COBOL vẫn được sử dụng trong ngân hàng sau hơn 60 năm?
+**Đáp:** COBOL xử lý khoảng 70-80% giao dịch ngân hàng. Những lý do:
+- Cơ sở mã khổng lồ (hàng triệu dòng) hoạt động chính xác
+- Độ tin cậy cực cao — các hệ thống này đã được thử nghiệm trong sản xuất trong nhiều thập kỷ
+- Chi phí và rủi ro di chuyển lớn hơn chi phí bảo trì
+- Cú pháp dài dòng, giống tiếng Anh của COBOL tự ghi lại
+- Số học thập phân được tích hợp trong ngôn ngữ (không có lỗi làm tròn dấu phẩy động)
+### Câu 2: COBOL xử lý số học thập phân như thế nào mà không mắc lỗi dấu phẩy động?
+**A:** COBOL có các loại thập phân gốc với độ chính xác cố định:
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V` là dấu thập phân ngụ ý. COBOL không bao giờ sử dụng dấu phẩy động nhị phân để kiếm tiền.
+### Câu 3: Cấu trúc của chương trình COBOL là gì?
+**A:** Mỗi chương trình COBOL đều có bốn phần:
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4: Làm cách nào để đọc và xử lý các tệp tuần tự trong COBOL?
+**A:** COBOL vượt trội trong việc xử lý tệp:
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Câu 5: Có những công cụ nào để phát triển COBOL hiện đại?
+**A:** GnuCOBOL (mã nguồn mở), các tiện ích mở rộng IBM Enterprise COBOL, Micro Focus và VS Code cung cấp môi trường phát triển hiện đại. Xây dựng với `cobc -x program.cob`.
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Tạo Báo cáo khách hàng
+**Bước 1: Tìm hiểu vấn đề**
+Đọc hồ sơ khách hàng, tính tổng và tạo báo cáo được định dạng.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng khả năng xử lý tệp và viết báo cáo của COBOL.
+**Bước 3: Thực hiện**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**Bước 4: Xác minh**
+Kiểm tra chéo tổng số so với dữ liệu nguồn. Kiểm tra với các trường hợp đặc biệt (tệp trống, số dư bằng 0).
+### Vấn đề 2: Xử lý hàng loạt có ngắt kiểm soát
+**Bước 1: Tìm hiểu vấn đề**
+Xử lý các giao dịch được nhóm theo bộ phận, in tổng phụ.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng logic ngắt điều khiển - phát hiện khi khóa nhóm thay đổi.
+**Bước 3: Thực hiện**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**Bước 4: Xác minh**
+Kiểm tra xem tổng số của nhóm cuối cùng đã được in chưa. Xác minh tổng cộng bằng tổng của tổng số bộ phận.
+---
+
 ## Bản tóm tắt
-COBOL là tàn tích của những ngày đầu máy tính không chịu chết — vì nó không đủ khả năng. Hệ thống ngân hàng và chính phủ trên thế giới phụ thuộc vào các chương trình COBOL đã hoạt động đáng tin cậy trong nhiều thập kỷ. Mặc dù ngày nay không ai chọn COBOL cho một dự án mới, nhưng ngôn ngữ này vẫn cực kỳ quan trọng để duy trì cơ sở hạ tầng làm nền tảng cho tài chính toàn cầu. Sự thiếu hụt các nhà phát triển COBOL khiến nó trở thành một lĩnh vực sinh lợi đáng kinh ngạc.
+COBOL là di sản của những thập kỷ đầu của điện toán vẫn được sử dụng tích cực vì việc thay thế là không khả thi trên quy mô lớn. Hệ thống ngân hàng và chính phủ trên thế giới phụ thuộc vào các chương trình COBOL đã hoạt động đáng tin cậy trong nhiều thập kỷ. Mặc dù COBOL thường không được chọn cho một dự án mới ngày nay nhưng ngôn ngữ này vẫn quan trọng để duy trì cơ sở hạ tầng hỗ trợ tài chính toàn cầu. Sự thiếu hụt các nhà phát triển COBOL khiến nó trở thành một lĩnh vực sinh lợi.

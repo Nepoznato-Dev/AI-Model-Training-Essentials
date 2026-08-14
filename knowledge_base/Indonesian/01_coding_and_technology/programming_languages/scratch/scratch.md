@@ -343,7 +343,7 @@ Installation:
 
 ---
 
-## Pengujian & Debug
+## Pengujian & Debugging
 ### Alat Debugging Bawaan
 Scratch menyediakan beberapa alat bawaan untuk men-debug proyek:
 | Alat | Cara Menggunakan |
@@ -676,6 +676,120 @@ Setelah mempelajari Scratch, langkah-langkah umum selanjutnya meliputi:
 | Membuat prototipe ide permainan secara visual | Iterasi cepat | — |
 | Pengembangan profesional | Tidak dirancang untuk ini | Python, JavaScript, bahasa teks apa pun |
 | Pendidikan ilmu komputer tingkat universitas | Terlalu sederhana | Python, Jawa, C |
+---
+
+## Tanya Jawab Sintetis
+**Q1: Apakah Scratch benar-benar sebuah bahasa pemrograman?**
+A1: Ya, Scratch adalah bahasa pemrograman sebenarnya, tetapi lebih bersifat visual dan bukan berbasis teks. Ini mendukung semua konsep dasar pemrograman: variabel, loop, kondisional, fungsi (blok khusus), daftar, dan pemrograman berbasis peristiwa. Perbedaannya adalah Anda menarik dan melepas blok alih-alih mengetikkan kode. Hal ini menghilangkan kesalahan sintaksis dan membuat pemrograman dapat diakses oleh pelajar muda.
+**Q2: Bagaimana cara membuat fungsi khusus (blok khusus) di Scratch?**
+A2: Buka kategori "Blok Saya" dan klik "Buat Blokir". Beri nama, tambahkan parameter jika diperlukan, lalu tentukan perilakunya dengan menambahkan blok di bawahnya. Blok khusus dapat menerima masukan (angka, string, boolean) dan dapat memanggil blok khusus lainnya. Hal ini memungkinkan pemrograman modular dan penggunaan kembali kode.
+**Q3: Apa cara terbaik untuk menangani logika permainan yang kompleks di Scratch?**
+A3: Gunakan blok khusus untuk mengatur logika, menyiarkan pesan untuk koordinasi acara antar sprite, dan menggunakan daftar untuk menyimpan status permainan (skor, level, inventaris). Untuk AI yang kompleks, gunakan mesin keadaan terbatas dengan variabel yang melacak keadaan saat ini. Kloning sprite untuk banyak musuh dan gunakan "saat saya mulai sebagai klon" untuk memberikan setiap perilaku independen.
+**Q4: Bagaimana cara berbagi data antar sprite di Scratch?**
+A4: Gunakan variabel global (dibuat tanpa "hanya untuk sprite ini") untuk data bersama seperti skor atau status permainan. Gunakan pesan siaran untuk memicu peristiwa di seluruh sprite. Untuk komunikasi yang lebih kompleks, gunakan daftar sebagai struktur data bersama. Setiap sprite dapat membaca dan memodifikasi variabel dan daftar global, sehingga memungkinkan koordinasi.
+**Q5: Apa saja teknik lanjutan di Scratch?**
+A5: Gunakan blok pena untuk menggambar dan membuat efek visual. Menerapkan raycasting untuk grafik seperti 3D. Gunakan variabel cloud untuk game multipemain (memerlukan status Scratcher). Buat pembuatan prosedural dengan nomor dan daftar acak. Gunakan blok khusus dengan parameter untuk algoritma yang dapat digunakan kembali. Bereksperimenlah dengan penginderaan video dan manipulasi suara untuk proyek interaktif.
+---
+
+## Rantai Pemikiran
+### Masalah 1: Membuat Game Platformer
+**Langkah 1: Pahami Masalahnya**
+Kita perlu membuat platformer dimana karakter dapat bergerak ke kiri/kanan, melompat, menghindari rintangan, dan mengumpulkan item.
+**Langkah 2: Identifikasi Pendekatannya**
+- Gunakan simulasi gravitasi dengan variabel "jatuh".
+- Mendeteksi tanah/tabrakan menggunakan sentuhan warna atau sprite
+- Simpan data tingkat dalam daftar
+- Gunakan blok khusus untuk logika lompatan dan gerakan
+**Langkah 3: Terapkan Solusi**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**Langkah 4: Verifikasi dan Optimalkan**
+Uji lompat pada platform berbeda. Sesuaikan gravitasi dan ketinggian lompatan untuk nuansa permainan yang bagus. Tambahkan animasi untuk berlari dan melompat. Menerapkan pos pemeriksaan menggunakan pesan siaran.
+---
+
+### Masalah 2: Membuat Game Kuis dengan Pelacakan Skor
+**Langkah 1: Pahami Masalahnya**
+Bangun permainan kuis yang mengajukan pertanyaan, memeriksa jawaban, dan melacak skor pemain.
+**Langkah 2: Identifikasi Pendekatannya**
+- Simpan pertanyaan dan jawaban dalam daftar paralel
+- Gunakan penghitung pertanyaan untuk melacak kemajuan
+- Gunakan blok "tanya dan tunggu" untuk input
+- Bandingkan jawaban dan perbarui skor
+**Langkah 3: Terapkan Solusi**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**Langkah 4: Verifikasi dan Optimalkan**
+Uji dengan berbagai jawaban termasuk kasus tepi. Tambahkan umpan balik untuk jawaban yang salah. Terapkan opsi coba lagi. Tambahkan efek suara dan umpan balik visual untuk jawaban benar/salah.
+---
+
+### Soal 3: Menggambar Pohon Fraktal dengan Pena
+**Langkah 1: Pahami Masalahnya**
+Buat pohon fraktal rekursif menggunakan ekstensi pena.
+**Langkah 2: Identifikasi Pendekatannya**
+- Gunakan rekursi untuk menggambar cabang
+- Setiap cabang terbagi menjadi dua cabang yang lebih kecil
+- Gunakan sudut acak untuk variasi alami
+- Lacak panjang cabang dan kurangi dengan setiap level rekursi
+**Langkah 3: Terapkan Solusi**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**Langkah 4: Verifikasi dan Optimalkan**
+Sesuaikan ambang batas panjang cabang dan rentang sudut untuk pohon estetika. Tambahkan daun di ujung cabang menggunakan perubahan warna. Terapkan gaya pohon yang berbeda. Simpan gambar sebagai gambar.
 ---
 
 ## Ringkasan

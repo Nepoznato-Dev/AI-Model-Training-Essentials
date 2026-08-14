@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Économie comportementale et science de la décision"
-description : "Biais cognitifs, théorie des perspectives, heuristiques, nudges, architecture des choix"
-catégorie : "Commerce et économie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Behavioural Economics and Decision Science"
+description: "Cognitive biases, prospect theory, heuristics, nudges, choice architecture"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances commerciales et économiques"
-next_review : "2027-08-05"
-#Classement
-tags : [comportemental, économie, affaires et économie]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "6 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [behavioural, economics, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Économie comportementale et science de la décision
 L’économie comportementale étudie la manière dont les individus prennent réellement leurs décisions, et non la façon dont des agents rationnels les prendraient. L’économie traditionnelle suppose que les gens sont rationnels, intéressés et capables de traiter l’information. Des décennies de recherches menées par Kahneman, Tversky, Thaler et d’autres ont montré que cela est totalement inexact. Les gens utilisent des raccourcis mentaux, sont influencés par un contexte non pertinent, surestiment les informations récentes et commettent systématiquement des erreurs prévisibles. Comprendre ces modèles est essentiel pour concevoir de meilleurs produits, politiques, organisations et décisions personnelles.

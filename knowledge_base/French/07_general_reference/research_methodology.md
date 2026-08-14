@@ -1,38 +1,42 @@
 ---
-# Métadonnées
-titre : "Méthodologie de recherche"
-description : "Méthode scientifique, échantillonnage, validité, plan expérimental, examen par les pairs"
-catégorie : "Référence générale"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Research Methodology"
+description: "Scientific method, sampling, validity, experimental design, peer review"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances de référence générale"
-next_review : "2027-08-05"
-#Classement
-tags : [recherche, méthodologie, référence générale]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "6 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [research, methodology, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Méthodologie de recherche
 La méthodologie de recherche est l’approche systématique visant à étudier des questions, à tester des hypothèses et à générer des connaissances fiables. Que vous meniez des expériences scientifiques, des enquêtes en sciences sociales, des analyses commerciales ou des recherches universitaires, la méthodologie que vous choisissez détermine si vos résultats sont crédibles, reproductibles et utiles. Une étude bien conçue produit des résultats fiables ; un système mal conçu produit du bruit – ou pire, de fausses réponses confiantes.

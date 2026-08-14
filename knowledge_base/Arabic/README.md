@@ -1,4 +1,4 @@
-# قاعدة المعرفة الإنجليزية
+# قاعدة المعرفة
 مجموعة شاملة من المستندات المرجعية التي تغطي البرمجة والتكنولوجيا والذكاء الاصطناعي والعلوم والأعمال والعلوم الإنسانية والمزيد - مكتوبة بأسلوب محادثة طبيعي مصمم لكل من تدريب الذكاء الاصطناعي والتعلم البشري.
 **آخر تحديث:** أغسطس 2026  
 ** إجمالي الملفات: ** 138+ مستند تخفيض السعر  
@@ -7,7 +7,7 @@
 
 ## هيكل الدليل
 ```
-knowledge_base/English/
+knowledge_base/Arabic/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,208 +33,207 @@ knowledge_base/English/
 **المواضيع الأساسية:**
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | الواجهة الأمامية، الواجهة الخلفية، DevOps، الأمان |
-|  __محمي_1__ | SQL، NoSQL، أنماط التصميم، التحسين |
-|  __محمي_2__ | مقدمو الخدمات السحابية، وأنماط الهندسة المعمارية، والأمن |
-|  __محمي_3__ | نموذج OSI، TCP/IP، البروتوكولات، الأمان |
-|  __محمي_4__ | SSH، systemd، التسجيل، المراقبة، النسخ الاحتياطية، Docker، CI/CD |
-|  __محمي_5__ | OWASP أعلى 10، التحقق من صحة الإدخال، المصادقة، إدارة الأسرار |
-|  __محمي_6__ | خطوط أنابيب CI/CD، Docker، Kubernetes، Terraform، GitOps |
-|  __محمي_7__ | التشفير، TLS، OWASP، التشفير الآمن، SDL |
-|  __محمي_8__ | REST، GraphQL، gRPC، الإصدار، المصادقة، بوابات API |
-|  __محمي_9__ | متراصة، خدمات صغيرة، مدفوعة بالحدث، DDD، التخزين المؤقت، SOLID |
-|  __محمي_10__ | المصطلحات التقنية (نماذج الذكاء الاصطناعي، الأجهزة، المعايير) |
-|  __محمي_11__ | أدوات التطوير والمرافق |
-|  __محمي_12__ | WCAG، تجربة المستخدم الشاملة، التكنولوجيا المساعدة، الترميز الذي يمكن الوصول إليه |
-|  __محمي_13__ | الإجماع، العقود الذكية، DeFi، التسامح مع الخطأ البيزنطي |
-|  __محمي_14__ | المصفوفات، الأشجار، الرسوم البيانية، الفرز، البحث، التعقيد |
-|  __محمي_15__ | وحدات التحكم الدقيقة، وأجهزة الاستشعار، وRTOS، وبروتوكولات إنترنت الأشياء، والحوسبة المتطورة |
-|  __محمي_16__ | منصات منخفضة الكود، منصات مطورة داخلية، مسارات ذهبية |
-|  __محمي_17__ | iOS، Android، React Native، Flutter، بنية الهاتف المحمول |
-|  __محمي_18__ | التنميط، التخزين المؤقت، CDN، تحسين الاستعلام، أداء الواجهة الأمامية |
-|  __محمي_19__ | الوحدة، التكامل، E2E، TDD، BDD، أهرامات الاختبار |
+|  [database_systems.md](01_coding_and_technology/database_systems.md) | الواجهة الأمامية، الواجهة الخلفية، DevOps، الأمان |
+|  [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md) | SQL، NoSQL، أنماط التصميم، التحسين |
+|  [networking_basics.md](01_coding_and_technology/networking_basics.md) | مقدمو الخدمات السحابية، وأنماط الهندسة المعمارية، والأمن |
+|  [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md) | نموذج OSI، TCP/IP، البروتوكولات، الأمان |
+|  [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md) | SSH، systemd، التسجيل، المراقبة، النسخ الاحتياطية، Docker، CI/CD |
+|  [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md) | OWASP أعلى 10، التحقق من صحة الإدخال، المصادقة، إدارة الأسرار |
+|  [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md) | خطوط أنابيب CI/CD، Docker، Kubernetes، Terraform، GitOps |
+|  [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md) | التشفير، TLS، OWASP، التشفير الآمن، SDL |
+|  [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md) | REST، GraphQL، gRPC، الإصدار، المصادقة، بوابات API |
+|  [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md) | متراصة، خدمات صغيرة، مدفوعة بالحدث، DDD، التخزين المؤقت، SOLID |
+|  [embedded_systems_and_iot.md](01_coding_and_technology/embedded_systems_and_iot.md) | المصطلحات التقنية (نماذج الذكاء الاصطناعي، الأجهزة، المعايير) |
+|  [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md) | أدوات التطوير والمرافق |
+|  [mobile_development.md](01_coding_and_technology/mobile_development.md) | WCAG، تجربة المستخدم الشاملة، التكنولوجيا المساعدة، الترميز الذي يمكن الوصول إليه |
+|  [performance_optimization.md](01_coding_and_technology/performance_optimization.md) | الإجماع، العقود الذكية، DeFi، التسامح مع الخطأ البيزنطي |
+|  [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md) | المصفوفات، الأشجار، الرسوم البيانية، الفرز، البحث، التعقيد |
+|  [embedded_systems_and_iot.md](01_coding_and_technology/embedded_systems_and_iot.md) | وحدات التحكم الدقيقة، وأجهزة الاستشعار، وRTOS، وبروتوكولات إنترنت الأشياء، والحوسبة المتطورة |
+|  [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md) | منصات منخفضة الكود، منصات مطورة داخلية، مسارات ذهبية |
+|  [mobile_development.md](01_coding_and_technology/mobile_development.md) | iOS، Android، React Native، Flutter، بنية الهاتف المحمول |
+|  [performance_optimization.md](01_coding_and_technology/performance_optimization.md) | التنميط، التخزين المؤقت، CDN، تحسين الاستعلام، أداء الواجهة الأمامية |
 **لغات البرمجة (34 لغة):**
 تحتوي كل لغة على دليل فرعي خاص بها مع مرجع شامل يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها.
 | اللغة | المسار | | اللغة | المسار |
 |----------|------|-|----------|------|
-| بايثون |  __محمي_0__ | | جافا سكريبت |  __محمي_1__ |
-| ج |  __محمي_2__ | | سي++ |  __محمي_3__ |
-| جافا |  __محمي_4__ | | ج # |  __محمي_5__ |
-| اذهب |  __محمي_6__ | | الصدأ |  __محمي_7__ |
-| تايب سكريبت |  __محمي_8__ | | SQL |  __محمي_9__ |
-| روبي |  __محمي_10__ | | PHP |  __محمي_11__ |
-| سويفت |  __محمي_12__ | | كوتلين |  __محمي_13__ |
-| ص |  __محمي_14__ | | فيجوال بيسك |  __محمي_15__ |
-| دارت |  __محمي_16__ | | سكالا |  __محمي_17__ |
-| هاسكل |  __محمي_18__ | | جوليا |  __محمي_19__ |
-| لوا |  __محمي_20__ | | بيرل |  __محمي_21__ |
-| إرلانج/إلكسير |  __محمي_22__ | | أوكامل |  __محمي_23__ |
-| برولوج |  __محمي_24__ | | اللثغة / كلوجور |  __محمي_25__ |
-| ادا |  __محمي_26__ | | الجمعية |  __محمي_27__ |
-| ماتلاب |  __محمي_28__ | | فورتران |  __محمي_29__ |
-| كوبول |  __محمي_30__ | | شل/باورشيل |  __محمي_31__ |
-| دلفي/باسكال |  __محمي_32__ | | سكراتش |  __محمي_33__ |
+| بايثون |  [database_systems.md](01_coding_and_technology/database_systems.md) | | جافا سكريبت |  [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md) |
+| ج |  [networking_basics.md](01_coding_and_technology/networking_basics.md) | | سي++ |  [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md) |
+| جافا |  [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md) | | ج # |  [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md) |
+| اذهب |  [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md) | | الصدأ |  [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md) |
+| تايب سكريبت |  [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md) | | SQL |  [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md) |
+| روبي |  [embedded_systems_and_iot.md](01_coding_and_technology/embedded_systems_and_iot.md) | | PHP |  [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md) |
+| سويفت |  [mobile_development.md](01_coding_and_technology/mobile_development.md) | | كوتلين |  [performance_optimization.md](01_coding_and_technology/performance_optimization.md) |
+| ص |  `programming_languages/r/` | | فيجوال بيسك |  `programming_languages/visual_basic/` |
+| دارت |  `programming_languages/dart/` | | سكالا |  `programming_languages/scala/` |
+| هاسكل |  `programming_languages/haskell/` | | جوليا |  `programming_languages/julia/` |
+| لوا |  `programming_languages/lua/` | | بيرل |  `programming_languages/perl/` |
+| إرلانج/إلكسير |  `programming_languages/erlang_and_elixir/` | | أوكامل |  `programming_languages/ocaml/` |
+| برولوج |  `programming_languages/prolog/` | | اللثغة / كلوجور |  `programming_languages/lisp_and_clojure/` |
+| ادا |  `programming_languages/ada/` | | الجمعية |  `programming_languages/assembly/` |
+| ماتلاب |  `programming_languages/matlab/` | | فورتران |  `programming_languages/fortran/` |
+| كوبول |  `programming_languages/cobol/` | | شل/باورشيل |  `programming_languages/shell_and_powershell/` |
+| دلفي/باسكال |  `programming_languages/delphi_object_pascal/` | | سكراتش |  `programming_languages/scratch/` |
 ### 02 — الذكاء الاصطناعي والتعلم الآلي
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | نظرة عامة على الذكاء الاصطناعي، التعلم الآلي، التعلم العميق، ماجستير إدارة الأعمال، الأخلاقيات |
-|  __محمي_1__ | مسارات ML والمقاييس وأفضل الممارسات |
-|  __محمي_2__ | تشغيل النماذج محليا |
-|  __محمي_3__ | بنيات نشر الذكاء الاصطناعي المحلية |
-|  __محمي_4__ | تقنيات واستراتيجيات سريعة |
-|  __محمي_5__ | ETL/ELT، بحيرات البيانات، التنسيق، كافكا، المتاجر المميزة |
-|  __محمي_6__ | تقديم النماذج، والسجلات، واستراتيجيات النشر، ومراقبة الانجراف |
-|  __محمي_7__ | CNNs، كشف الأشياء، التجزئة، نقل التعلم |
-|  __محمي_8__ | معالجة النصوص، التضمينات، المحولات، بيرت، جي بي تي |
-|  __محمي_9__ | تحيز الذكاء الاصطناعي، والعدالة، والمساءلة، والتنظيم، وأطر الحوكمة |
-|  __محمي_10__ | مشكلة المحاذاة، RLHF، قابلية التفسير، أبحاث سلامة الذكاء الاصطناعي |
-|  __محمي_11__ | تدريب لامركزي، خصوصية تفاضلية، تجميع آمن |
-|  __محمي_12__ | شبكات GAN، VAEs، نماذج الانتشار، ماجستير إدارة الأعمال، تطبيقات الذكاء الاصطناعي التوليدية |
-|  __محمي_13__ | شبكات GCN، GATs، تمرير الرسائل، الرسوم البيانية المعرفية، مهام الرسم البياني |
-|  __محمي_14__ | التكميم، التقليم، التقطير، ONNX، خدمة البنية التحتية |
-|  __محمي_15__ | نماذج الرؤية واللغة، CLIP، DALL-E، التعلم متعدد الوسائط |
-|  __محمي_16__ | التصفية التعاونية، القائمة على المحتوى، الهجين، تحليل المصفوفة |
-|  __محمي_17__ | MDPs، Q-learning، تدرجات السياسة، RLHF، أنظمة متعددة الوكلاء |
-|  __محمي_18__ | ASR، تحويل النص إلى كلام، ميزات الصوت، الهمس، خطوط أنابيب الكلام |
-|  __محمي_19__ | أريما، النبي، LSTMs، الموسمية، كشف الشذوذ |
+|  [02_ai_and_machine_learning/README.md](02_ai_and_machine_learning/README.md) | نظرة عامة على الذكاء الاصطناعي، التعلم الآلي، التعلم العميق، ماجستير إدارة الأعمال، الأخلاقيات |
+|  [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md) | مسارات ML والمقاييس وأفضل الممارسات |
+|  [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md) | تشغيل النماذج محليا |
+|  [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md) | بنيات نشر الذكاء الاصطناعي المحلية |
+|  [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md) | تقنيات واستراتيجيات سريعة |
+|  [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md) | ETL/ELT، بحيرات البيانات، التنسيق، كافكا، المتاجر المميزة |
+|  [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md) | تقديم النماذج، والسجلات، واستراتيجيات النشر، ومراقبة الانجراف |
+|  [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md) | CNNs، كشف الأشياء، التجزئة، نقل التعلم |
+|  [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md) | معالجة النصوص، التضمينات، المحولات، بيرت، جي بي تي |
+|  [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md) | تحيز الذكاء الاصطناعي، والعدالة، والمساءلة، والتنظيم، وأطر الحوكمة |
+|  [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md) | مشكلة المحاذاة، RLHF، قابلية التفسير، أبحاث سلامة الذكاء الاصطناعي |
+|  [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md) | تدريب لامركزي، خصوصية تفاضلية، تجميع آمن |
+|  [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md) | شبكات GAN، VAEs، نماذج الانتشار، ماجستير إدارة الأعمال، تطبيقات الذكاء الاصطناعي التوليدية |
+|  [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md) | شبكات GCN، GATs، تمرير الرسائل، الرسوم البيانية المعرفية، مهام الرسم البياني |
+|  [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md) | التكميم، التقليم، التقطير، ONNX، خدمة البنية التحتية |
+|  [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md) | نماذج الرؤية واللغة، CLIP، DALL-E، التعلم متعدد الوسائط |
+|  [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md) | التصفية التعاونية، القائمة على المحتوى، الهجين، تحليل المصفوفة |
+|  [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md) | MDPs، Q-learning، تدرجات السياسة، RLHF، أنظمة متعددة الوكلاء |
+|  [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md) | ASR، تحويل النص إلى كلام، ميزات الصوت، الهمس، خطوط أنابيب الكلام |
+|  [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md) | أريما، النبي، LSTMs، الموسمية، كشف الشذوذ |
 ### 03 — علم البيانات والتحليلات
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | معالجة البيانات، تعلم الآلة، البيانات الضخمة، ذكاء الأعمال |
-|  __محمي_1__ | الرياضيات، المنطق، البراهين |
-|  __محمي_2__ | اختيار الرسم البياني، مبادئ التصميم، رواية القصص، الأدوات |
-|  __محمي_3__ | اختبار الفرضيات، اختبار أ/ب، حجم التأثير، الاستدلال السببي |
-|  __محمي_4__ | DAGs، الإرباك، الاختلافات، المتغيرات الآلية |
-|  __محمي_5__ | اللائحة العامة لحماية البيانات، الموافقة على البيانات، التحيز الخوارزمي، الأنماط المظلمة، إخفاء الهوية |
-|  __محمي_6__ | التعبئة، التعزيز، التراص، التصويت، الغابات العشوائية، XGBoost |
-|  __محمي_7__ | التحويلات، الترميزات، اختيار الميزات، تقليل الأبعاد |
-|  __محمي_8__ | الأنظمة الإحداثية، العمليات المكانية، GeoPandas، التحليل النقطي |
+|  [03_data_science_and_analytics/README.md](03_data_science_and_analytics/README.md) | معالجة البيانات، تعلم الآلة، البيانات الضخمة، ذكاء الأعمال |
+|  [mathematics.md](03_data_science_and_analytics/mathematics/mathematics.md) | الرياضيات، المنطق، البراهين |
+|  [statistics_and_probability.md](03_data_science_and_analytics/mathematics/statistics_and_probability.md) | اختيار الرسم البياني، مبادئ التصميم، رواية القصص، الأدوات |
+|  [logic_and_critical_thinking.md](03_data_science_and_analytics/mathematics/logic_and_critical_thinking.md) | اختبار الفرضيات، اختبار أ/ب، حجم التأثير، الاستدلال السببي |
+|  [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md) | DAGs، الإرباك، الاختلافات، المتغيرات الآلية |
+|  [data_visualization.md](03_data_science_and_analytics/data_visualization.md) | اللائحة العامة لحماية البيانات، الموافقة على البيانات، التحيز الخوارزمي، الأنماط المظلمة، إخفاء الهوية |
+|  [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md) | التعبئة، التعزيز، التراص، التصويت، الغابات العشوائية، XGBoost |
+|  [causal_inference.md](03_data_science_and_analytics/causal_inference.md) | التحويلات، الترميزات، اختيار الميزات، تقليل الأبعاد |
+|  [data_ethics_and_privacy.md](03_data_science_and_analytics/data_ethics_and_privacy.md) | الأنظمة الإحداثية، العمليات المكانية، GeoPandas، التحليل النقطي |
 ### 04 — العلوم الطبيعية
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | فيزياء، كيمياء، أحياء، علوم الأرض |
-|  __محمي_1__ | التخصصات الطبية تشخيص علاج أخلاق |
-|  __محمي_2__ | النظم البيئية، المناخ، الطاقة، السياسة |
-|  __محمي_3__ | الزراعة، التغذية، النظم الغذائية، الاستدامة |
-|  __محمي_4__ | النجوم، المجرات، الانفجار الكبير، المادة المظلمة، الكواكب الخارجية، علم الكونيات |
-|  __محمي_5__ | الحمض النووي، التعبير الجيني، كريسبر، GWAS، تقنيات التسلسل |
-|  __محمي_6__ | الهياكل البلورية والبوليمرات والسبائك وأشباه الموصلات والمواد النانوية |
-|  __محمي_7__ | الخلايا العصبية، بنية الدماغ، الناقلات العصبية، اللدونة، تصوير الدماغ |
+|  [04_natural_sciences/README.md](04_natural_sciences/README.md) | فيزياء، كيمياء، أحياء، علوم الأرض |
+|  [biology_fundamentals.md](04_natural_sciences/life_sciences/biology_fundamentals.md) | التخصصات الطبية تشخيص علاج أخلاق |
+|  [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md) | النظم البيئية، المناخ، الطاقة، السياسة |
+|  [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md) | الزراعة، التغذية، النظم الغذائية، الاستدامة |
+|  [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md) | النجوم، المجرات، الانفجار الكبير، المادة المظلمة، الكواكب الخارجية، علم الكونيات |
+|  [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md) | الحمض النووي، التعبير الجيني، كريسبر، GWAS، تقنيات التسلسل |
+|  [physics.md](04_natural_sciences/physical_sciences/physics.md) | الهياكل البلورية والبوليمرات والسبائك وأشباه الموصلات والمواد النانوية |
+|  [chemistry.md](04_natural_sciences/physical_sciences/chemistry.md) | الخلايا العصبية، بنية الدماغ، الناقلات العصبية، اللدونة، تصوير الدماغ |
 ### 05 — الأعمال والاقتصاد
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | هياكل الشركات، التسويق، الاقتصاد، الشركات الناشئة |
-|  __محمي_1__ | التمويل الشخصي، الاستثمار، الأسواق، التقاعد |
-|  __محمي_2__ | الأنظمة القانونية، العقود، الأضرار، الملكية الفكرية، التوظيف |
-|  __محمي_3__ | 4Ps، القنوات الرقمية، تحسين محركات البحث/التسويق عبر محركات البحث، التحليلات، استراتيجية العلامة التجارية |
-|  __محمي_4__ | القيادة، Agile/Scrum/Kanban، OKRs، إدارة المخاطر |
-|  __محمي_5__ | التحيزات المعرفية، نظرية الاحتمال، الاستدلال، الدفعات، هندسة الاختيار |
-|  __محمي_6__ | توازن ناش، معضلة السجين، تصميم الآلية، المزادات |
-|  __محمي_7__ | براءات الاختراع، حقوق النشر، العلامات التجارية، الأسرار التجارية، ترخيص مفتوح المصدر |
-|  __محمي_8__ | الهياكل التنظيمية، أنواع الثقافة، إدارة التغيير، ديناميكيات الفريق |
-|  __محمي_9__ | إدارة المخزون، التصنيع الهزيل، الخدمات اللوجستية، تأثير السوط |
+|  [business_and_economics.md](05_business_and_economics/business_and_economics.md) | هياكل الشركات، التسويق، الاقتصاد، الشركات الناشئة |
+|  [finance_and_investing.md](05_business_and_economics/finance_and_investing.md) | التمويل الشخصي، الاستثمار، الأسواق، التقاعد |
+|  [law_and_legal_systems.md](05_business_and_economics/law_and_legal_systems.md) | الأنظمة القانونية، العقود، الأضرار، الملكية الفكرية، التوظيف |
+|  [marketing_and_digital_strategy.md](05_business_and_economics/marketing_and_digital_strategy.md) | 4Ps، القنوات الرقمية، تحسين محركات البحث/التسويق عبر محركات البحث، التحليلات، استراتيجية العلامة التجارية |
+|  [management_and_project_methodologies.md](05_business_and_economics/management_and_project_methodologies.md) | القيادة، Agile/Scrum/Kanban، OKRs، إدارة المخاطر |
+|  [behavioural_economics.md](05_business_and_economics/behavioural_economics.md) | التحيزات المعرفية، نظرية الاحتمال، الاستدلال، الدفعات، هندسة الاختيار |
+|  [game_theory.md](05_business_and_economics/game_theory.md) | توازن ناش، معضلة السجين، تصميم الآلية، المزادات |
+|  [intellectual_property_and_innovation.md](05_business_and_economics/intellectual_property_and_innovation.md) | براءات الاختراع، حقوق النشر، العلامات التجارية، الأسرار التجارية، ترخيص مفتوح المصدر |
+|  [organisational_design_and_culture.md](05_business_and_economics/organisational_design_and_culture.md) | الهياكل التنظيمية، أنواع الثقافة، إدارة التغيير، ديناميكيات الفريق |
+|  [supply_chain_and_operations.md](05_business_and_economics/supply_chain_and_operations.md) | إدارة المخزون، التصنيع الهزيل، الخدمات اللوجستية، تأثير السوط |
 ### 06 — العلوم الإنسانية والفنون
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | تاريخ العالم من الحضارات القديمة إلى عصر المعلومات |
-|  __محمي_1__ | الجغرافيا الطبيعية/البشرية، الأنظمة السياسية |
-|  __محمي_2__ | الأنواع الأدبية، الفنون البصرية، الموسيقى، الأفلام |
-|  __محمي_3__ | علم النفس المعرفي والاجتماعي والتنموي |
-|  __محمي_4__ | النحو واللسانيات والكتابة |
-|  __محمي_5__ | المدارس الفكرية، الأخلاق، المنطق، المعرفة، الانحيازات المعرفية |
-|  __محمي_6__ | الصوتيات، النحو، علم الدلالة، التداولية، اللغويات الاجتماعية |
-|  __محمي_7__ | الموازين، الكوردات، التناغم، الإيقاع، صوتيات الغرفة، فيزياء الآلات الموسيقية |
-|  __محمي_8__ | ديانات العالم الكبرى، الأساطير المقارنة، نظم المعتقدات |
+|  [06_humanities_and_arts/README.md](06_humanities_and_arts/README.md) | تاريخ العالم من الحضارات القديمة إلى عصر المعلومات |
+|  [literature.md](06_humanities_and_arts/arts/literature.md) | الجغرافيا الطبيعية/البشرية، الأنظمة السياسية |
+|  [visual_arts.md](06_humanities_and_arts/arts/visual_arts.md) | الأنواع الأدبية، الفنون البصرية، الموسيقى، الأفلام |
+|  [performing_arts.md](06_humanities_and_arts/arts/performing_arts.md) | علم النفس المعرفي والاجتماعي والتنموي |
+|  [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md) | النحو واللسانيات والكتابة |
+|  [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md) | المدارس الفكرية، الأخلاق، المنطق، المعرفة، الانحيازات المعرفية |
+|  [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md) | الصوتيات، النحو، علم الدلالة، التداولية، اللغويات الاجتماعية |
+|  [language_and_english.md](06_humanities_and_arts/language/language_and_english.md) | الموازين، الكوردات، التناغم، الإيقاع، صوتيات الغرفة، فيزياء الآلات الموسيقية |
+|  [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md) | ديانات العالم الكبرى، الأساطير المقارنة، نظم المعتقدات |
 ### 07 — مرجع عام
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | تعريفات الكلمات الشاملة (من الألف إلى الياء) |
-|  __محمي_1__ | النظام الشمسي، جسم الإنسان، الجغرافيا، الطاقة |
-|  __محمي_2__ | أساسيات الحوسبة، الإنترنت، قواعد البيانات، السحابة، الأمن |
-|  __محمي_3__ | إرشادات الاتصال وأفضل الممارسات |
-|  __محمي_4__ | ممارسة الاسترجاع، التكرار المتباعد، تصنيف بلوم، تصميم التعلم |
-|  __محمي_5__ | المنهج العلمي، أخذ العينات، الصدق، التصميم التجريبي، مراجعة النظراء |
-|  __محمي_6__ | مبدأ الهرم، العروض، الإقناع، الكتابة التجارية |
+|  [general_knowledge.md](07_general_reference/general_knowledge.md) | تعريفات الكلمات الشاملة (من الألف إلى الياء) |
+|  [technology_and_computing.md](07_general_reference/technology_and_computing.md) | النظام الشمسي، جسم الإنسان، الجغرافيا، الطاقة |
+|  [safe_communication.md](07_general_reference/safe_communication.md) | أساسيات الحوسبة، الإنترنت، قواعد البيانات، السحابة، الأمن |
+|  [learning_science_and_pedagogy.md](07_general_reference/learning_science_and_pedagogy.md) | إرشادات الاتصال وأفضل الممارسات |
+|  [research_methodology.md](07_general_reference/research_methodology.md) | ممارسة الاسترجاع، التكرار المتباعد، تصنيف بلوم، تصميم التعلم |
+|  [writing_and_communication.md](07_general_reference/writing_and_communication.md) | المنهج العلمي، أخذ العينات، الصدق، التصميم التجريبي، مراجعة النظراء |
+|  [world_cultures_and_societies.md](07_general_reference/world_cultures_and_societies.md) | مبدأ الهرم، العروض، الإقناع، الكتابة التجارية |
 ### 08 — المستقبل والاتجاهات
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | الأحداث القادمة، المهمات الفضائية، اتجاهات التكنولوجيا |
-|  __محمي_1__ | الحوسبة الكمومية، التكنولوجيا الحيوية، تكنولوجيا النانو |
-|  __محمي_2__ | الأتمتة، العمل عن بعد، إعادة تشكيل المهارات |
-|  __محمي_3__ | الطب الشخصي، تشخيص الذكاء الاصطناعي |
-|  __محمي_4__ | المركبات الكهربائية، المركبات ذاتية القيادة، الهايبرلوب |
-|  __محمي_5__ | الاتجاهات السكانية، الهجرة، التحضر |
-|  __محمي_6__ | التعلم عبر الإنترنت، دروس الذكاء الاصطناعي |
-|  __محمي_7__ | الجغرافيا السياسية، الولايات المتحدة والصين، عالم متعدد الأقطاب |
-|  __محمي_8__ | السيناريوهات والأطر المستقبلية |
-|  __محمي_9__ | المهمات الفضائية والجداول الزمنية |
-|  __محمي_10__ | المناخ، تحول الطاقة، الاقتصاد الدائري |
-|  __محمي_11__ | أنظمة التوصية، المساعدون الأذكياء، الخصوصية، اقتصاد الاهتمام |
-|  __محمي_12__ | الطاقة المتجددة، المركبات الكهربائية، احتجاز الكربون، الهيدروجين الأخضر، التكنولوجيا المستدامة |
-|  __محمي_13__ | قانون مور، الحوسبة الكمومية، الرقائق العصبية، الحوسبة الحافة |
+|  [08_future_and_trends/README.md](08_future_and_trends/README.md) | الأحداث القادمة، المهمات الفضائية، اتجاهات التكنولوجيا |
+|  [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md) | الحوسبة الكمومية، التكنولوجيا الحيوية، تكنولوجيا النانو |
+|  [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md) | الأتمتة، العمل عن بعد، إعادة تشكيل المهارات |
+|  [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md) | الطب الشخصي، تشخيص الذكاء الاصطناعي |
+|  [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md) | المركبات الكهربائية، المركبات ذاتية القيادة، الهايبرلوب |
+|  [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md) | الاتجاهات السكانية، الهجرة، التحضر |
+|  [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md) | التعلم عبر الإنترنت، دروس الذكاء الاصطناعي |
+|  [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md) | الجغرافيا السياسية، الولايات المتحدة والصين، عالم متعدد الأقطاب |
+|  [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md) | السيناريوهات والأطر المستقبلية |
+|  [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md) | المهمات الفضائية والجداول الزمنية |
+|  [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md) | المناخ، تحول الطاقة، الاقتصاد الدائري |
+|  [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md) | أنظمة التوصية، المساعدون الأذكياء، الخصوصية، اقتصاد الاهتمام |
+|  [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md) | الطاقة المتجددة، المركبات الكهربائية، احتجاز الكربون، الهيدروجين الأخضر، التكنولوجيا المستدامة |
+|  [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md) | قانون مور، الحوسبة الكمومية، الرقائق العصبية، الحوسبة الحافة |
 ### 09 — دروس من الفشل
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | الهلوسة، والتحيز، وفشل المحاذاة |
-|  __محمي_1__ | أخطاء الترميز الشائعة والأنماط المضادة |
-|  __محمي_2__ | الأخطاء الاستدلالية والتحيزات المعرفية |
-|  __محمي_3__ | RAG ومزالق البحث عن المتجهات |
-|  __محمي_4__ | الثغرات الأمنية الشائعة |
-|  __محمي_5__ | فشل النظام وأنماط الموثوقية |
-|  __محمي_6__ | أنماط واجهة برمجة التطبيقات (API) والتغييرات المتقطعة وفشل الإصدار والفشل المتتالي |
-|  __محمي_7__ | انحراف المخطط، البيانات المكررة، فجوات التحقق من الصحة، مراقبة خطوط الأنابيب |
-|  __محمي_8__ | تسرب البيانات، عدم تطابق التوقعات، فشل النشر، اضمحلال النموذج |
+|  [ai_llm_failures.md](09_lessons_from_failures/ai_llm_failures.md) | الهلوسة، والتحيز، وفشل المحاذاة |
+|  [code_quality_issues.md](09_lessons_from_failures/code_quality_issues.md) | أخطاء الترميز الشائعة والأنماط المضادة |
+|  [cognitive_logical_issues.md](09_lessons_from_failures/cognitive_logical_issues.md) | الأخطاء الاستدلالية والتحيزات المعرفية |
+|  [rag_vector_search.md](09_lessons_from_failures/rag_vector_search.md) | RAG ومزالق البحث عن المتجهات |
+|  [security_vulnerabilities.md](09_lessons_from_failures/security_vulnerabilities.md) | الثغرات الأمنية الشائعة |
+|  [system_reliability.md](09_lessons_from_failures/system_reliability.md) | فشل النظام وأنماط الموثوقية |
+|  [api_design_and_integration_failures.md](09_lessons_from_failures/api_design_and_integration_failures.md) | أنماط واجهة برمجة التطبيقات (API) والتغييرات المتقطعة وفشل الإصدار والفشل المتتالي |
+|  [data_pipeline_and_etl_failures.md](09_lessons_from_failures/data_pipeline_and_etl_failures.md) | انحراف المخطط، البيانات المكررة، فجوات التحقق من الصحة، مراقبة خطوط الأنابيب |
+|  [ml_project_failures.md](09_lessons_from_failures/ml_project_failures.md) | تسرب البيانات، عدم تطابق التوقعات، فشل النشر، اضمحلال النموذج |
 ### 10 — مرجع سريع
 | ملف | الوصف |
 |------|------------|
-|  __محمي_0__ | ورقة الغش في بناء جملة بايثون |
-|  __محمي_1__ | أوامر Git وسير العمل |
-|  __محمي_2__ | مرجع استعلام SQL |
-|  __محمي_3__ | مرجع سطر أوامر Linux |
-|  __محمي_4__ | Docker، Docker Compose، Kubernetes، ورقة الغش Helm |
-|  __محمي_5__ | بناء جملة Regex، والأنماط الشائعة، والاستخدام الخاص باللغة |
-|  __محمي_6__ | مقارنة AWS وAzure وGCP جنبًا إلى جنب |
-|  __محمي_7__ | برمجة باش، معالجة النصوص، سطور مفيدة |
-|  __محمي_8__ | أدلة التشغيل غير المرئية، والوحدات النمطية، والأدوار، والمخزون، وورقة الغش الخاصة بالأتمتة |
-|  __محمي_9__ | إجراءات GitHub، GitLab CI، Jenkins، أنماط YAML لخطوط الأنابيب |
-|  __محمي_10__ | PromQL، المصدرون، لوحات المعلومات، التنبيه، مراقبة المكدس |
-|  __محمي_11__ | مفاهيم IaC، أوامر Terraform، إدارة الحالة، الوحدات النمطية |
+|  [10_quick_reference/README.md](10_quick_reference/README.md) | ورقة الغش في بناء جملة بايثون |
+|  [python_syntax.md](10_quick_reference/programming/python_syntax.md) | أوامر Git وسير العمل |
+|  [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md) | مرجع استعلام SQL |
+|  [regular_expressions.md](10_quick_reference/programming/regular_expressions.md) | مرجع سطر أوامر Linux |
+|  [git_commands.md](10_quick_reference/programming/git_commands.md) | Docker، Docker Compose، Kubernetes، ورقة الغش Helm |
+|  [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md) | بناء جملة Regex، والأنماط الشائعة، والاستخدام الخاص باللغة |
+|  [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) | مقارنة AWS وAzure وGCP جنبًا إلى جنب |
+|  [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md) | برمجة باش، معالجة النصوص، سطور مفيدة |
+|  [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md) | أدلة التشغيل غير المرئية، والوحدات النمطية، والأدوار، والمخزون، وورقة الغش الخاصة بالأتمتة |
+|  [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md) | إجراءات GitHub، GitLab CI، Jenkins، أنماط YAML لخطوط الأنابيب |
+|  [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md) | PromQL، المصدرون، لوحات المعلومات، التنبيه، مراقبة المكدس |
+|  [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md) | مفاهيم IaC، أوامر Terraform، إدارة الحالة، الوحدات النمطية |
 ---
 
 ## مسارات التعلم
 ### للمبتدئين
-1. __محمي_0__ 
-2. __محمي_1__ 
-3. __محمي_2__ 
+1. [10_quick_reference/README.md](10_quick_reference/README.md) 
+2. [python_syntax.md](10_quick_reference/programming/python_syntax.md) 
+3. [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md) 
 4. اختر لغة في `01_coding_and_technology/programming_languages/python/`
 ### لمطوري البرمجيات
-1. __محمي_0__ (أو اللغة التي تختارها)
-2. __محمي_1__ 
-3. __محمي_2__ 
-4. __محمي_3__ 
-5. __محمي_4__ 
-6. __محمي_5__ 
-7. __محمي_6__ 
-8. __محمي_7__ 
-9. __محمي_8__
+1. [10_quick_reference/README.md](10_quick_reference/README.md) (أو اللغة التي تختارها)
+2. [python_syntax.md](10_quick_reference/programming/python_syntax.md) 
+3. [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md) 
+4. [regular_expressions.md](10_quick_reference/programming/regular_expressions.md) 
+5. [git_commands.md](10_quick_reference/programming/git_commands.md) 
+6. [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md) 
+7. [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) 
+8. [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md) 
+9. [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)
 ### لعلماء البيانات
-1. __محمي_0__ 
-2. __محمي_1__ 
-3. __محمي_2__ 
-4. __محمي_3__ 
-5. __محمي_4__ 
-6. __محمي_5__ 
-7. __محمي_6__ 
-8. __محمي_7__ 
-9. __محمي_8__
+1. [10_quick_reference/README.md](10_quick_reference/README.md) 
+2. [python_syntax.md](10_quick_reference/programming/python_syntax.md) 
+3. [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md) 
+4. [regular_expressions.md](10_quick_reference/programming/regular_expressions.md) 
+5. [git_commands.md](10_quick_reference/programming/git_commands.md) 
+6. [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md) 
+7. [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) 
+8. [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md) 
+9. [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)
 ### لمحترفي الأعمال
-1. __محمي_0__ 
-2. __محمي_1__ 
-3. __محمي_2__ 
-4. __محمي_3__ 
-5. __محمي_4__ 
-6. __محمي_5__ 
-7. __محمي_6__
+1. [10_quick_reference/README.md](10_quick_reference/README.md) 
+2. [python_syntax.md](10_quick_reference/programming/python_syntax.md) 
+3. [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md) 
+4. [regular_expressions.md](10_quick_reference/programming/regular_expressions.md) 
+5. [git_commands.md](10_quick_reference/programming/git_commands.md) 
+6. [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md) 
+7. [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)
 ---
 
 ##إخلاء المسؤولية الهامة
@@ -306,16 +305,16 @@ contribution:
 
 | المجال | المصدر / الغرض |
 |---|---|
-|  __محمي_0__ | مأخوذ من عنوان الملف الأول`#`|
-|  __محمي_2__ | ملخص من سطر واحد؛ تعيد ملفات الموضوع استخدام الإدخال من فهرس README هذا، وتستخدم ملفات لغة البرمجة وصفًا تم إنشاؤه |
-|  __محمي_3__ / __محمي_4__ | مشتق من الدليل الأصلي (`01_coding_and_technology`→ "البرمجة والتكنولوجيا" / "فريق قاعدة معارف البرمجة والتكنولوجيا") |
-|  __محمي_6__ | النسخة الدلالية. نتوء في كل تعديل (انظر أدناه) |
-|  __محمي_7__ / __محمي_8__ | المؤلف الأصلي بالإضافة إلى أي شخص قام بتحرير الملف منذ ذلك الحين |
-|  __محمي_9__ | قائمة تغييرات للإلحاق فقط، الأحدث أولاً |
-|  __محمي_10__ / __محمي_11__ | ~6 أشهر و~1 سنة، مما يعكس جدول مراجعة المهارات |
-|  __محمي_12__ | الرموز المميزة لاسم الملف بالإضافة إلى الكلمة الأساسية للفئة النظيفة (على سبيل المثال`coding-and-technology`) |
-|  __محمي_14__ | يتم التعيين حسب الفئة، مع تجاوزات لكل لغة (على سبيل المثال، Haskell/Assembly → `advanced`، Scratch →`beginner`) |
-|  __محمي_17__ | محسوبة من عدد الأسطر |
+|  [10_quick_reference/README.md](10_quick_reference/README.md) | مأخوذ من عنوان الملف الأول`#`|
+|  [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md) | ملخص من سطر واحد؛ تعيد ملفات الموضوع استخدام الإدخال من فهرس README هذا، وتستخدم ملفات لغة البرمجة وصفًا تم إنشاؤه |
+|  [regular_expressions.md](10_quick_reference/programming/regular_expressions.md) / [git_commands.md](10_quick_reference/programming/git_commands.md) | مشتق من الدليل الأصلي (`01_coding_and_technology`→ "البرمجة والتكنولوجيا" / "فريق قاعدة معارف البرمجة والتكنولوجيا") |
+|  [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) | النسخة الدلالية. نتوء في كل تعديل (انظر أدناه) |
+|  [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md) / [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md) | المؤلف الأصلي بالإضافة إلى أي شخص قام بتحرير الملف منذ ذلك الحين |
+|  [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md) | قائمة تغييرات للإلحاق فقط، الأحدث أولاً |
+|  [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md) / [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md) | ~6 أشهر و~1 سنة، مما يعكس جدول مراجعة المهارات |
+|  [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md) | الرموز المميزة لاسم الملف بالإضافة إلى الكلمة الأساسية للفئة النظيفة (على سبيل المثال`coding-and-technology`) |
+| `difficulty_level` | يتم التعيين حسب الفئة، مع تجاوزات لكل لغة (على سبيل المثال، Haskell/Assembly → `advanced`، Scratch →`beginner`) |
+| `estimated_reading_time` | محسوبة من عدد الأسطر |
 ### تحرير ملف
 عندما تقوم بتغيير ملف قاعدة معارف، حافظ على مزامنة مادته الأمامية:
 1. **عثرة`version`** متابعة[SemVer](https://semver.org/):
@@ -333,7 +332,7 @@ contribution:
        author: "AI Model Training Team"
        changes: "Added YAML frontmatter metadata for contributor tracking"
    ```
-3. **تحديث __محمي_0__ ** إلى تاريخ التغيير الذي أجريته
+3. **تحديث [10_quick_reference/README.md](10_quick_reference/README.md) ** إلى تاريخ التغيير الذي أجريته
 4. **أضف نفسك إلى`contributors`** إذا كان هذا هو تعديلك الأول على الملف:   ```yaml
    contributors:
      - name: "Your Name"
@@ -344,8 +343,8 @@ contribution:
 ### قائمة التحقق من الجودة
 قبل إرسال ملف قاعدة معارف جديد أو محرر، تحقق مما يلي:
 - [ ] المادة الأمامية لـ YAML كاملة وصالحة (جميع الأقسام الخمسة موجودة، بين`---`محددات)
-- [ ] تم ضبط __محمي_1__، __محمي_2__، __محمي_3__، __محمي_4__، __محمي_5__
-- [ ] تم إدراج مؤلف واحد على الأقل في __محمي_6__ 
+- [ ] تم ضبط [python_syntax.md](10_quick_reference/programming/python_syntax.md)، [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)، [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)، [git_commands.md](10_quick_reference/programming/git_commands.md)، [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)
+- [ ] تم إدراج مؤلف واحد على الأقل في [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md) 
 - [ ]`changelog`يحتوي على إدخال يوثق التغيير (الأحدث أولاً)
 - [ ]`last_modified`يعكس تاريخ اليوم
 - [ ]`tags`يتضمن 3-6 كلمات رئيسية ذات صلة بالإضافة إلى الكلمة الرئيسية ذات الفئة النظيفة

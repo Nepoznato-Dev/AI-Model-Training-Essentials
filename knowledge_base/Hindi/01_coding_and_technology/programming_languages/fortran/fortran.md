@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "फोरट्रान"
-विवरण: "फोरट्रान प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [फोरट्रान, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "उन्नत"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "32 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Fortran"
+description: "Comprehensive reference for the Fortran programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [fortran, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "32 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # फोरट्रान
 फोरट्रान (फॉर्मूला ट्रांसलेशन) सबसे पुरानी उच्च स्तरीय प्रोग्रामिंग भाषा है जो अभी भी व्यापक रूप से उपयोग में है, इसे पहली बार वैज्ञानिक और इंजीनियरिंग गणना के लिए 1957 में आईबीएम द्वारा विकसित किया गया था। अपनी उम्र के बावजूद, आधुनिक फोरट्रान (फोरट्रान 2008/2018/2023) एक सक्षम, उच्च-प्रदर्शन वाली भाषा है जिसका उपयोग संख्यात्मक मौसम भविष्यवाणी, कम्प्यूटेशनल तरल गतिशीलता, भौतिकी सिमुलेशन, वित्तीय मॉडलिंग और उच्च-प्रदर्शन कंप्यूटिंग (एचपीसी) में बड़े पैमाने पर किया जाता है। दुनिया के कई सबसे तेज़ सुपर कंप्यूटर फोरट्रान कोड चलाते हैं।
 भाषा अपने शुरुआती दिनों से ही काफी विकसित हुई है। आधुनिक फोरट्रान में मॉड्यूल, व्युत्पन्न प्रकार, सामान्य प्रक्रियाएं, कोएरेज़ (समानांतर प्रोग्रामिंग), और सी के साथ इंटरऑपरेबिलिटी है। यह कई वैज्ञानिक कंप्यूटिंग अनुप्रयोगों के लिए पसंद की भाषा बनी हुई है जहां प्रदर्शन सर्वोपरि है।
@@ -633,7 +638,7 @@ module simulation
 end module
 ```
 
-### पैटर्न 3: प्रक्रिया सूचकों के साथ कॉलबैक पैटर्न
+### पैटर्न 3: प्रक्रिया संकेतकों के साथ कॉलबैक पैटर्न
 ```fortran
 module integrator
     implicit none
@@ -776,5 +781,161 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | डेटा विज्ञान (इंटरैक्टिव) | वर्कफ़्लो नहीं | पायथन, आर |
 ---
 
+## सिंथेटिक प्रश्नोत्तर
+### Q1: फोरट्रान 90 और आधुनिक फोरट्रान (2008+) के बीच क्या अंतर है?
+**ए:** आधुनिक फोरट्रान ने कई विशेषताएं जोड़ीं जो इसे और अधिक अभिव्यंजक बनाती हैं:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: फोरट्रान सरणियाँ C सरणियों से किस प्रकार भिन्न हैं?
+**ए:** फोरट्रान सरणियाँ अंतर्निहित संचालन के साथ प्रथम श्रेणी की वस्तुएं हैं:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: मैं फोरट्रान में अधिकतम प्रदर्शन कैसे प्राप्त करूं?
+**ए:** मुख्य अभ्यास:
+- सभी डमी तर्कों के लिए स्पष्ट`intent`का उपयोग करें
+- हर जगह`implicit none`का उपयोग करें
+- लूप के बजाय ऐरे ऑपरेशंस को प्राथमिकता दें
+- सन्निहित मेमोरी एक्सेस पैटर्न का उपयोग करें
+- कंपाइलर ऑप्टिमाइज़ेशन फ़्लैग का उपयोग करें:`-O3 -march=native -ffast-math`
+-`gprof`या कंपाइलर-विशिष्ट टूल के साथ प्रोफ़ाइल
+- उन कार्यों के लिए`pure`और`elemental`का उपयोग करें जिन्हें कंपाइलर अनुकूलित कर सकता है
+### Q4: मैं फोरट्रान को C के साथ कैसे इंटरफ़ेस करूं?
+**ए:**`iso_c_binding`मॉड्यूल का उपयोग करें:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: फोरट्रान परियोजनाओं के लिए मुझे किस बिल्ड सिस्टम का उपयोग करना चाहिए?
+**ए:** सीएमके के पास उत्कृष्ट फोरट्रान समर्थन है। एफपीएम (फोरट्रान पैकेज मैनेजर) आधुनिक देशी विकल्प है:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: सीमित अंतर के साथ पीडीई को हल करना
+**चरण 1: समस्या को समझें**
+1D ऊष्मा समीकरण को हल करें: du/dt = alpha * d²u/dx²
+**चरण 2: दृष्टिकोण को पहचानें**
+परिमित अंतरों का उपयोग करके स्थान और समय को अलग करें। एक स्पष्ट योजना का प्रयोग करें.
+**चरण 3: कार्यान्वयन**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**चरण 4: सत्यापित करें**
+संरक्षण की जाँच करें, ग्रिड शोधन के साथ अभिसरण, और विश्लेषणात्मक समाधान के साथ तुलना करें।
+### समस्या 2: मैट्रिक्स विकर्णीकरण
+**चरण 1: समस्या को समझें**
+एक सममित मैट्रिक्स के eigenvalues ​​और eigenvectors खोजें।
+**चरण 2: दृष्टिकोण को पहचानें**
+फोरट्रान के इंटरफ़ेस के माध्यम से LAPACK के`dsyev`रूटीन का उपयोग करें।
+**चरण 3: कार्यान्वयन**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**चरण 4: सत्यापित करें**
+जाँचें कि प्रत्येक eigenpair के लिए A*v = Lambda*v।
+---
+
 ## सारांश
-फोरट्रान मूल वैज्ञानिक प्रोग्रामिंग भाषा है और उच्च-प्रदर्शन कंप्यूटिंग में एक पावरहाउस बनी हुई है। आधुनिक फोरट्रान देशी सरणी संचालन, समानांतर प्रोग्रामिंग समर्थन और सी इंटरऑपरेबिलिटी के साथ एक सक्षम, विकसित भाषा है। हालाँकि इसका समुदाय छोटा और विशिष्ट है, फिर भी फोरट्रान दुनिया में सबसे अधिक मांग वाले कम्प्यूटेशनल वर्कलोड में से कुछ को चलाना जारी रखता है। पैमाने पर संख्यात्मक कंप्यूटिंग के लिए, फोरट्रान प्रासंगिक बना हुआ है।
+फोरट्रान मूल वैज्ञानिक प्रोग्रामिंग भाषा है और उच्च-प्रदर्शन कंप्यूटिंग में एक पावरहाउस बनी हुई है। आधुनिक फोरट्रान देशी सरणी संचालन, समानांतर प्रोग्रामिंग समर्थन और सी इंटरऑपरेबिलिटी के साथ एक सक्षम, विकसित भाषा है। जबकि इसका समुदाय छोटा और विशिष्ट है, फोरट्रान दुनिया में सबसे अधिक मांग वाले कम्प्यूटेशनल वर्कलोड में से कुछ को चलाना जारी रखता है। पैमाने पर संख्यात्मक कंप्यूटिंग के लिए, फोरट्रान प्रासंगिक बना हुआ है।

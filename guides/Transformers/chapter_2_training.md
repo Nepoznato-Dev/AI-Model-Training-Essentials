@@ -676,7 +676,7 @@ def load_model(checkpoint_path, device):
     """Load a trained model from checkpoint"""
     
     # Load checkpoint
-    checkpoint = torch.load(checkpoint_path, map_location=device)
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
     
     # Recreate vocabulary
     vocab = checkpoint['vocab']

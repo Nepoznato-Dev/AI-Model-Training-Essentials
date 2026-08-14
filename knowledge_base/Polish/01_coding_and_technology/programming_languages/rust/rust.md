@@ -57,7 +57,7 @@ Rust został uznany za „najbardziej lubiany” język programowania w ankiecie
 | **Stroma krzywa uczenia się** | Własność, pożyczki, okresy życia są inne niż wszystko w innych językach | Zainwestuj czas w „Księgę rdzy”; koncepcje łączą się z praktyką |
 | **Powolna kompilacja** | Czasy kompilacji mogą być długie w przypadku dużych projektów | Użyj`cargo check`do szybkiego sprawdzania typu; kompilacja przyrostowa pomaga |
 | **Rozszerzona obsługa błędów** |  Operatory`Result<T, E>`i`?`wymagają jawnej obsługi | Użyj`anyhow`dla aplikacji,`thiserror`dla bibliotek |
-| **Mniejszy rynek pracy** | Mniej miejsc pracy w Rust niż Java, Python i JavaScript (ale szybko rośnie) | Większość ról Rusta dotyczy programowania systemów, kryptografii lub infrastruktury |
+| **Mniejszy rynek pracy** | Mniej stanowisk pracy w Rust niż Java, Python i JavaScript (ale szybko rośnie) | Większość ról Rusta dotyczy programowania systemów, kryptografii lub infrastruktury |
 | **Niedojrzały ekosystem** | Mniej bibliotek niż Python/Java/JS dla niektórych domen | Ekosystem szybko się rozwija; wiele skrzynek jest doskonałej jakości |
 ---
 
@@ -82,7 +82,7 @@ fn main() {
 ```
 
 ### Własność i pożyczki
-To podstawowa innowacja firmy Rust. Każda wartość ma dokładnie jednego właściciela. Gdy właściciel wyjdzie poza zakres, wartość zostanie usunięta.
+To podstawowa innowacja firmy Rust. Każda wartość ma dokładnie jednego właściciela. Gdy właściciel wykracza poza zakres, wartość jest usuwana.
 ```rust
 // Ownership — each value has one owner
 let s1 = String::from("hello");
@@ -976,6 +976,293 @@ wasm-pack build --target web
 | Backendy internetowe | Możliwe, ale ekosystem jest młodszy | Idź, Node.js, Python |
 | Nauka o danych / ML | To nie jest ekosystem do tego | Python, R |
 | Szybkie skrypty / prototypy | Zbyt gadatliwy i powolny do napisania | Python, JavaScript |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaki jest system własności i dlaczego Rust go posiada?
+**A:** Każda wartość w Rust ma dokładnie jednego właściciela. Kiedy właściciel wyjdzie poza zakres, wartość zostanie usunięta (pamięć zostanie zwolniona). Eliminuje to potrzebę stosowania modułu zbierającego elementy bezużyteczne, gwarantując jednocześnie bezpieczeństwo pamięci. Przypisanie, parametry funkcji i zwracane wartości przenoszą własność („przenieś”). Aby udostępnić bez przenoszenia, użyj referencji (`&T` dla pożyczania,`&mut T`dla modyfikowalnego pożyczania). Kompilator wymusza: nie można jednocześnie mieć odniesienia zmiennego i odniesienia niezmiennego do tej samej wartości.
+```rust
+let s1 = String::from("hello");
+let s2 = s1;           // s1 is MOVED to s2 — s1 is no longer valid
+// println!("{}", s1); // Error: value borrowed after move
+
+let s3 = String::from("world");
+let len = calculate_length(&s3);  // Borrow — s3 stays valid
+fn calculate_length(s: &String) -> usize { s.len() }
+```
+
+### P2: Kiedy powinienem używać`String`zamiast `&str`?
+**A:**`String`jest posiadanym, przydzielonym stercie i rozwijalnym ciągiem UTF-8. `&str`jest zapożyczonym odniesieniem do wycinka ciągu UTF-8 (może wskazywać na`String`, literał ciągu lub część któregokolwiek z nich). Użyj `String`, jeśli chcesz posiadać, modyfikować lub budować ciąg. Użyj`&str`dla parametrów funkcji (bardziej elastyczne — akceptuje oba), widoków tylko do odczytu i literałów łańcuchowych. Zaakceptuj`&str`w sygnaturach funkcji; zwróć `String`, gdy osoba wywołująca potrzebuje własności.
+```rust
+// Accept &str — works with both String and &str
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)  // Returns owned String
+}
+
+let owned = String::from("Alice");
+greet(&owned);         // &String coerces to &str
+greet("Bob");          // &str literal works directly
+```
+
+### P3: Jak Rust radzi sobie z błędami bez wyjątków?
+**A:** Rust używa wyliczenia`Result<T, E>`dla błędów możliwych do naprawienia, a`panic!`dla błędów nienaprawialnych. Funkcje, które mogą zakończyć się niepowodzeniem, zwracają`Result`. Operator`?`zwięźle propaguje błędy. Dzięki takiemu podejściu obsługa błędów jest jawna — nie można przypadkowo zignorować błędu. Użyj`anyhow`do obsługi błędów aplikacji (wygodny kontekst) i`thiserror`do typów błędów bibliotek (makra pochodne).
+```rust
+use std::fs;
+use std::num;
+
+fn read_and_parse(path: &str) -> Result<i64, Box<dyn std::error::Error>> {
+    let content = fs::read_to_string(path)?;   // Propagates io::Error
+    let number: i64 = content.trim().parse()?;  // Propagates ParseIntError
+    Ok(number)
+}
+
+// With context (anyhow crate)
+fn load_config() -> anyhow::Result<Config> {
+    let content = fs::read_to_string("config.toml")
+        .context("Failed to read config file")?;
+    let config: Config = toml::from_str(&content)
+        .context("Failed to parse config TOML")?;
+    Ok(config)
+}
+```
+
+### P4: Co to są okresy istnienia i kiedy muszę je opisywać?
+**O:** Czasy życia monitorują, jak długo referencje są ważne. Kompilator wnioskuje je w większości przypadków na podstawie „reguł eliminacji na całe życie”. Potrzebujesz wyraźnych adnotacji, gdy kompilator nie może określić relacji między okresami istnienia danych wejściowych i wyjściowych — zazwyczaj, gdy funkcja pobiera wiele odniesień i zwraca jedno. Czasy życia zapobiegają zawieszaniu się referencji w czasie kompilacji przy zerowym koszcie czasu wykonania.
+```rust
+// The compiler needs to know: does the return value borrow from x or y?
+// Explicit lifetime 'a says: both inputs and output share the same lifetime
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
+
+// Struct holding a reference — must declare lifetime
+struct ConfigRef<'a> {
+    name: &'a str,
+    value: &'a str,
+}
+
+// 'static — lives for the entire program duration (string literals)
+let s: &'static str = "I live forever";
+```
+
+### P5: Jaka jest różnica między`Vec<T>`, tablicami i wycinkami?
+**A:** Tablice`[T; N]`mają stały rozmiar, alokację stosu, a ich długość jest częścią typu. `Vec<T>`to kolekcja, którą można rozwijać i przydzielać na stercie. Plasterki`&[T]`to grube wskaźniki (wskaźnik + długość), które pożyczają ciągłą część tablicy lub Vec. Używaj tablic dla małych danych o stałym rozmiarze. Użyj Vec do kolekcji dynamicznych. Zaakceptuj`&[T]`w parametrach funkcji, aby uzyskać maksymalną elastyczność.
+```rust
+let arr = [1, 2, 3, 4, 5];            // [i32; 5] — fixed size, on stack
+let mut vec = vec![10, 20, 30];        // Vec<i32> — growable, on heap
+vec.push(40);
+
+// Slice — borrow of a contiguous sequence
+let slice: &[i32] = &vec[1..3];        // [20, 30]
+let full: &[i32] = &vec;               // Entire vec as slice
+
+// Functions should accept slices for flexibility
+fn sum(numbers: &[i32]) -> i32 {
+    numbers.iter().sum()
+}
+
+sum(&arr);       // Works — array coerces to slice
+sum(&vec);       // Works — Vec coerces to slice
+sum(&vec[1..3]); // Works — already a slice
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Zbuduj bezpieczny wątkowo magazyn klucz-wartość
+**Opis problemu:** Zaimplementuj współbieżną składnicę klucz-wartość w Rust, która obsługuje operacje`get`,`set`i`delete`z wielu wątków bez wyścigów danych. Użyj zmienności wewnętrznej i upewnij się, że implementacja jest idiomatyczna w stylu Rust.
+**Krok 1 — Zrozum problem:**
+Wiele wątków musi czytać i zapisywać w udostępnionej HashMap. System własności Rusta zapobiega wyścigom danych w czasie kompilacji, ale potrzebujemy wewnętrznej zmienności (`RwLock`lub`Mutex`) zawiniętej w`Arc`w celu zapewnienia współwłasności. `RwLock`umożliwia wielu jednoczesnych czytników LUB jednego wyłącznego zapisu – lepiej w przypadku obciążeń wymagających dużego odczytu.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj`Arc<RwLock<HashMap<K, V>>>`do współdzielonego, bezpiecznego dla wątków dostępu.
+-`RwLock::read()`dla`get`(dozwolonych jest wiele czytników).
+-`RwLock::write()`dla`set`i`delete`(wyłączny dostęp).
+- Zawiń strukturę za pomocą czystego interfejsu API.
+- Sklonuj`Arc`dla każdego wątku.
+**Krok 3 — Wdróż rozwiązanie:**
+```rust
+use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
+use std::hash::Hash;
+
+struct KeyValueStore<K, V> {
+    data: Arc<RwLock<HashMap<K, V>>>,
+}
+
+impl<K: Hash + Eq + Send + Sync, V: Clone + Send + Sync> KeyValueStore<K, V> {
+    fn new() -> Self {
+        Self {
+            data: Arc::new(RwLock::new(HashMap::new())),
+        }
+    }
+
+    fn get(&self, key: &K) -> Option<V> {
+        let data = self.data.read().unwrap();
+        data.get(key).cloned()
+    }
+
+    fn set(&self, key: K, value: V) {
+        let mut data = self.data.write().unwrap();
+        data.insert(key, value);
+    }
+
+    fn delete(&self, key: &K) -> bool {
+        let mut data = self.data.write().unwrap();
+        data.remove(key).is_some()
+    }
+
+    fn clone_handle(&self) -> Self {
+        Self {
+            data: Arc::clone(&self.data),
+        }
+    }
+}
+
+// Usage — concurrent access from multiple threads
+use std::thread;
+
+fn main() {
+    let store = KeyValueStore::new();
+
+    let handles: Vec<_> = (0..4).map(|i| {
+        let s = store.clone_handle();
+        thread::spawn(move || {
+            for j in 0..100 {
+                s.set(format!("key-{}-{}", i, j), i * 100 + j);
+            }
+        })
+    }).collect();
+
+    for h in handles { h.join().unwrap(); }
+
+    println!("Total entries: {}", store.data.read().unwrap().len());  // 400
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Bezpieczeństwo wątków: kompilator Rust gwarantuje brak wyścigów danych —`RwLock`wymusza wzajemne wykluczanie, a`Arc`zapewnia bezpieczną współwłasność. Jeśli to się skompiluje, jest poprawne.
+- Wydajność:`RwLock`jest lepszy niż`Mutex`w przypadku obciążeń wymagających dużego odczytu. W przypadku obciążeń wymagających dużej liczby zapisów użyj`Mutex`(prościej, bez narzutu czytnika i zapisu).
+- Aktualizacja produkcyjna: użyj`parking_lot::RwLock`(szybciej, bez zatruwania, mniejsze zużycie pamięci) lub`dashmap::DashMap`(współbieżna HashMap bez blokad).
+### Problem 2: Zaimplementuj parser z zerową kopią
+**Opis problemu:** Napisz parser, który wyodrębnia pary klucz-wartość z ciągu konfiguracyjnego, takiego jak `"name=Alice;age=30;role=admin"`, bez przydzielania nowych ciągów — używając tylko wycinków ciągów zapożyczonych z danych wejściowych.
+**Krok 1 — Zrozum problem:**
+Musimy przeanalizować pary`key=value`oddzielone`;`. Kluczowym ograniczeniem jest „kopia zerowa” — zwrócone dane muszą pożyczyć z wejścia `&str`, a nie przydzielać nowe `String`. Oznacza to zwrócenie`Vec<(&str, &str)>`z okresami życia powiązanymi z danymi wejściowymi.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj metod`&str`(`split`,`find`, krojenie) — wszystkie zwracają wycinki`&str`zapożyczone z wejścia.
+- Unikaj`.to_string()`lub`String::from()`w dowolnym miejscu.
+- Adnotacja dotycząca okresu istnienia: dane wyjściowe zapożyczają się z danych wejściowych —`fn parse<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>`.
+**Krok 3 — Wdróż rozwiązanie:**
+```rust
+fn parse_config(input: &str) -> Vec<(&str, &str)> {
+    input
+        .split(';')
+        .filter_map(|pair| {
+            let pair = pair.trim();
+            if pair.is_empty() { return None; }
+            pair.split_once('=')
+                .map(|(k, v)| (k.trim(), v.trim()))
+        })
+        .collect()
+}
+
+// The compiler infers: fn parse_config<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>
+
+fn main() {
+    let config = "name = Alice; age = 30; role = admin";
+    let pairs = parse_config(config);
+
+    for (key, value) in &pairs {
+        println!("{} = {}", key, value);
+    }
+
+    // Zero allocations — all slices point into 'config'
+    assert_eq!(pairs[0], ("name", "Alice"));
+    assert_eq!(pairs[1], ("age", "30"));
+    assert_eq!(pairs[2], ("role", "admin"));
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Kopia zerowa:`split`,`split_once`i`trim`zwracają wycinki`&str`— bez alokacji sterty.
+- Reguły eliminacji czasu życia poprawnie wiążą czasy życia wyjścia z wejściem.
+- Przypadki Edge: puste wejście zwraca`[]`; brakujący`=`pomija parę (przez`filter_map`); białe znaki wokół`=`są obsługiwane przez`trim`.
+- W przypadku bardziej złożonego analizowania użyj skrzynki`nom`(opartej na kombinatorze, również z kopią zerową).
+### Problem 3: Zaimplementuj wzorzec obserwatora za pomocą kanałów
+**Opis problemu:** Zbuduj system publikowania i subskrybowania, w którym wielu subskrybentów otrzymuje wiadomości od wydawcy. Użyj kanałów Rust i upewnij się, że system obsługuje powolnych subskrybentów bez blokowania wydawcy.
+**Krok 1 — Zrozum problem:**
+Potrzebujemy jednego wydawcy wysyłającego wiadomości do wielu subskrybentów. Kanał`mpsc`Rusta to kanał obejmujący wielu producentów i jednego konsumenta — potrzebujemy odwrotności (jeden producent, wielu konsumentów). Możemy użyć kanałów`broadcast`(z`tokio`) lub wdrożyć fan-out przy użyciu wielu nadawców `mpsc`.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj`std::sync::mpsc`dla kanałów standardowych.
+- W przypadku rozgałęzienia: zachowaj`Vec<Sender<T>>`i sklonuj wiadomości do każdego z nich.
+- W przypadku wolnych abonentów: użyj`try_send`(nieblokującego) lub kanałów ograniczonych z przeciwciśnieniem.
+- Zawiń strukturę `Bus`, aby uzyskać czyste API.
+**Krok 3 — Wdróż rozwiązanie:**
+```rust
+use std::sync::mpsc::{self, Sender, Receiver};
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+struct Bus<T: Clone + Send + 'static> {
+    subscribers: Arc<Mutex<Vec<Sender<T>>>>,
+}
+
+impl<T: Clone + Send + 'static> Bus<T> {
+    fn new() -> Self {
+        Self {
+            subscribers: Arc::new(Mutex::new(Vec::new())),
+        }
+    }
+
+    fn subscribe(&self) -> Receiver<T> {
+        let (tx, rx) = mpsc::channel();
+        self.subscribers.lock().unwrap().push(tx);
+        rx
+    }
+
+    fn publish(&self, message: T) {
+        let mut subs = self.subscribers.lock().unwrap();
+        // Remove disconnected subscribers (their receiver was dropped)
+        subs.retain(|tx| !tx.is_disconnected());
+        for tx in subs.iter() {
+            let _ = tx.send(message.clone());  // Ignore send errors
+        }
+    }
+
+    fn subscriber_count(&self) -> usize {
+        let subs = self.subscribers.lock().unwrap();
+        subs.iter().filter(|tx| !tx.is_disconnected()).count()
+    }
+}
+
+fn main() {
+    let bus = Bus::new();
+
+    // Subscribe from multiple threads
+    let handles: Vec<_> = (0..3).map(|id| {
+        let rx = bus.subscribe();
+        thread::spawn(move || {
+            for msg in rx {
+                println!("Subscriber {} received: {}", id, msg);
+            }
+        })
+    }).collect();
+
+    // Publish messages
+    for i in 0..5 {
+        bus.publish(format!("Event #{}", i));
+    }
+
+    // Drop the bus — subscribers' channels close, loops end
+    drop(bus);
+    for h in handles { h.join().unwrap(); }
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+-`retain`automatycznie czyści martwych subskrybentów — nie ma wycieków pamięci z powodu rozłączonych wątków.
+-`message.clone()`jest konieczny, ponieważ każdy abonent potrzebuje własnej kopii. W przypadku typów, które są drogie w klonowaniu, zawiń w`Arc<T>`.
+- Kanały ograniczone: zamień`mpsc::channel()`na`mpsc::sync_channel(N)`dla przeciwciśnienia —`publish`blokuje, jeśli bufor abonenta jest pełny.
+- Produkcja: użyj`tokio::sync::broadcast`dla asynchronicznego pub/sub lub`flume`dla szybszego mpsc z opcjami ograniczonymi/nieograniczonymi.
 ---
 
 ## Streszczenie

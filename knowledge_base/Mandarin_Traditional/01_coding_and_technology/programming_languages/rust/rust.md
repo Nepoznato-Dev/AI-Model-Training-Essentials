@@ -40,7 +40,7 @@ contribution:
 ---
 
 # 鐵鏽
-Rust 是一种静态类型、编译型编程语言，于 2015 年首次发布，最初由 Mozilla 的 Graydon Hoare 开发。 Rust 的定义承诺是**内存安全，无需垃圾回收**。它透過其所有權系統實現了這一目標——一組在編譯時強制執行的規則，消除了所有類型的錯誤（空指標取消引用、資料競爭、緩衝區溢位、釋放後使用），同時產生程式碼的速度與 C 或 C++ 一樣快。
+Rust 是一種靜態類型、編譯型程式語言，於 2015 年首次發布，最初由 Mozilla 的 Graydon Hoare 開發。 Rust 的定義承諾是**記憶體安全，無需垃圾回收**。它透過其所有權系統實現了這一目標——一組在編譯時強制執行的規則，消除了所有類型的錯誤（空指標取消引用、資料競爭、緩衝區溢位、釋放後使用），同時產生程式碼的速度與 C 或 C++ 一樣快。
 Rust 連續多年被 Stack Overflow 開發者調查評為「最受歡迎」的程式語言。它越來越多地用於系統程式設計、WebAssembly、CLI 工具、雲端基礎設施，並在安全關鍵環境中作為 C/C++ 的替代品。 Linux 核心現在接受 Rust 程式碼。
 ---
 
@@ -82,7 +82,7 @@ fn main() {
 ```
 
 ### 所有權和借款
-這是 Rust 的核心創新。每個值都有一個唯一的所有者。当所有者超出范围时，该值就会被删除。
+這是 Rust 的核心創新。每個值都有一個唯一的所有者。當所有者超出範圍時，該值就會被刪除。
 ```rust
 // Ownership — each value has one owner
 let s1 = String::from("hello");
@@ -181,7 +181,7 @@ fn find_first_even(numbers: &[i32]) -> Option<i32> {
 ---
 
 ## 進階語法和模式
-### 泛型與特徵界限
+### 泛型與特徵邊界
 泛型可讓您編寫適用於任何類型的程式碼，同時保持完整的類型安全。特徵定義了共同的行為。
 ```rust
 // Generic function with trait bound
@@ -958,13 +958,13 @@ wasm-pack build --target web
 | **rustfmt** |程式碼格式化程式|
 | **剪輯** | Linter 有數百個有用的檢查 |
 | **東京** |非同步運行時（非同步 Rust 的標準）|
-| **塞爾德** |序列化/反序列化框架|
+| **塞爾德** |序列化/反序列化框架 |
 | **actix-web / axum** | Web 框架 |
 | **柴油/sqlx** |資料庫 ORM / 查詢產生器 |
 ---
 
 ## 何時使用 Rust
-|場景 |為什麼生鏽 |更好的選擇|
+|場景|為什麼生鏽 |更好的選擇|
 |----------|---------|--------------------|
 |系統程式設計|記憶體安全+效能| C/C++ 如果不需要安全保證 |
 |網路組裝 |一流的 WASM 支援 | --|
@@ -972,10 +972,297 @@ wasm-pack build --target web
 |嵌入式系統|無GC、硬體存取、安全| C 實現更簡單的嵌入式 |
 |效能關鍵程式碼 |與 C/C++ 速度相符 | --|
 |雲端基礎架構|越來越多的採用（AWS、Cloudflare）|追求更快的發展 |
-|通用應用開發|陡峭的學習曲線會減慢開發速度| Python、Go、Java |
+|通用應用程式開發 |陡峭的學習曲線會減慢開發速度| Python、Go、Java |
 |網路後端 |可能，但生態系更年輕 | Go、Node.js、Python |
 |資料科學/機器學習 |不是這個的生態系統| Python、R |
 |快速腳本/原型|寫得太冗長又慢| Python、JavaScript |
+---
+
+## 綜合問答
+### Q1：什麼是所有權系統，為什麼 Rust 有它？
+**答：** Rust 中的每個值都只有一個擁有者。當所有者超出範圍時，該值將被刪除（釋放記憶體）。這消除了對垃圾收集器的需要，同時確保了記憶體安全。賦值、函數參數和回傳值都會轉移所有權（「移動」）。要共享而不轉移，請使用引用（`&T`用於借用，`&mut T`用於可變借用）。編譯器強制規定：不能同時擁有同一值的可變引用和不可變引用。
+```rust
+let s1 = String::from("hello");
+let s2 = s1;           // s1 is MOVED to s2 — s1 is no longer valid
+// println!("{}", s1); // Error: value borrowed after move
+
+let s3 = String::from("world");
+let len = calculate_length(&s3);  // Borrow — s3 stays valid
+fn calculate_length(s: &String) -> usize { s.len() }
+```
+
+### Q2：我什麼時候應該使用`String`和`&str`？
+**A:**`String`是一個擁有的、堆疊分配的、可增長的 UTF-8 字串。 `&str`是 UTF-8 字串切片的借用參考（可指向`String`、字串文字或兩者的一部分）。當您需要擁有、修改或建構字串時，請使用 `String`。將`&str`用於函數參數（更靈活 - 接受兩者）、唯讀視圖和字串文字。在函數簽章中接受 `&str`；當呼叫者需要所有權時傳回 `String`。
+```rust
+// Accept &str — works with both String and &str
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)  // Returns owned String
+}
+
+let owned = String::from("Alice");
+greet(&owned);         // &String coerces to &str
+greet("Bob");          // &str literal works directly
+```
+
+### Q3：Rust 如何無異常地處理錯誤？
+**A:** Rust 使用`Result<T, E>`枚舉來表示可恢復的錯誤，使用`panic!`來表示不可恢復的錯誤。可能失敗的函數傳回`Result`。`?`運算子簡潔地傳播錯誤。這種方法使錯誤處理變得明確——您不能意外地忽略錯誤。使用`anyhow`進行應用程式錯誤處理（方便的上下文），使用`thiserror`進行程式庫錯誤類型（衍生巨集）。
+```rust
+use std::fs;
+use std::num;
+
+fn read_and_parse(path: &str) -> Result<i64, Box<dyn std::error::Error>> {
+    let content = fs::read_to_string(path)?;   // Propagates io::Error
+    let number: i64 = content.trim().parse()?;  // Propagates ParseIntError
+    Ok(number)
+}
+
+// With context (anyhow crate)
+fn load_config() -> anyhow::Result<Config> {
+    let content = fs::read_to_string("config.toml")
+        .context("Failed to read config file")?;
+    let config: Config = toml::from_str(&content)
+        .context("Failed to parse config TOML")?;
+    Ok(config)
+}
+```
+
+### Q4：什麼是生命週期，什麼時候需要註解它們？
+**答：** 生命週期追蹤引用的有效時間。在大多數情況下，編譯器會透過「生命週期省略規則」來推斷它們。當編譯器無法確定輸入和輸出生命週期之間的關係時（通常是當函數接受多個引用並傳回一個引用時），您需要明確註解。生命週期可防止編譯時出現懸空引用，運行時成本為零。
+```rust
+// The compiler needs to know: does the return value borrow from x or y?
+// Explicit lifetime 'a says: both inputs and output share the same lifetime
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
+
+// Struct holding a reference — must declare lifetime
+struct ConfigRef<'a> {
+    name: &'a str,
+    value: &'a str,
+}
+
+// 'static — lives for the entire program duration (string literals)
+let s: &'static str = "I live forever";
+```
+
+### Q5：`Vec<T>`、陣列和切片之間有什麼區別？
+**A:** 陣列`[T; N]`是固定大小的、堆疊分配的，它們的長度是類型的一部分。 `Vec<T>`是一個可成長的、堆分配的集合。切片`&[T]`是藉用陣列或 Vec 的連續部分的胖指標（指標 + 長度）。對於小型、固定大小的資料使用陣列。使用 Vec 進行動態集合。在函數參數中接受`&[T]`以獲得最大的靈活性。
+```rust
+let arr = [1, 2, 3, 4, 5];            // [i32; 5] — fixed size, on stack
+let mut vec = vec![10, 20, 30];        // Vec<i32> — growable, on heap
+vec.push(40);
+
+// Slice — borrow of a contiguous sequence
+let slice: &[i32] = &vec[1..3];        // [20, 30]
+let full: &[i32] = &vec;               // Entire vec as slice
+
+// Functions should accept slices for flexibility
+fn sum(numbers: &[i32]) -> i32 {
+    numbers.iter().sum()
+}
+
+sum(&arr);       // Works — array coerces to slice
+sum(&vec);       // Works — Vec coerces to slice
+sum(&vec[1..3]); // Works — already a slice
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：建立線程安全的鍵值存儲
+**問題陳述：** 在 Rust 中實現並發鍵值存儲，支援來自多個線程的`get`、`set`和`delete`操作，而無需資料競爭。使用內部可變性並確保實現是慣用的 Rust。
+**第 1 步 — 了解問題：**
+多個執行緒需要讀寫共享的HashMap。 Rust 的所有權系統可以防止編譯時的資料競爭，但我們需要將內部可變性（`RwLock`或`Mutex`）包裝在`Arc`中以實現共享所有權。 `RwLock`允許多個並發讀取器或一個獨佔寫入器 - 更適合讀取繁重的工作負載。
+**第 2 步 — 確定方法：**
+- 使用`Arc<RwLock<HashMap<K, V>>>`進行共用、執行緒安全存取。
+-`RwLock::read()`用於 `get`（允許多個讀卡器）。
+-`RwLock::write()`用於`set`和 `delete`（獨佔存取）。
+- 使用乾淨的 API 封裝在結構中。
+- 為每個執行緒克隆 `Arc`。
+**第 3 步 — 實施解決方案：**
+```rust
+use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
+use std::hash::Hash;
+
+struct KeyValueStore<K, V> {
+    data: Arc<RwLock<HashMap<K, V>>>,
+}
+
+impl<K: Hash + Eq + Send + Sync, V: Clone + Send + Sync> KeyValueStore<K, V> {
+    fn new() -> Self {
+        Self {
+            data: Arc::new(RwLock::new(HashMap::new())),
+        }
+    }
+
+    fn get(&self, key: &K) -> Option<V> {
+        let data = self.data.read().unwrap();
+        data.get(key).cloned()
+    }
+
+    fn set(&self, key: K, value: V) {
+        let mut data = self.data.write().unwrap();
+        data.insert(key, value);
+    }
+
+    fn delete(&self, key: &K) -> bool {
+        let mut data = self.data.write().unwrap();
+        data.remove(key).is_some()
+    }
+
+    fn clone_handle(&self) -> Self {
+        Self {
+            data: Arc::clone(&self.data),
+        }
+    }
+}
+
+// Usage — concurrent access from multiple threads
+use std::thread;
+
+fn main() {
+    let store = KeyValueStore::new();
+
+    let handles: Vec<_> = (0..4).map(|i| {
+        let s = store.clone_handle();
+        thread::spawn(move || {
+            for j in 0..100 {
+                s.set(format!("key-{}-{}", i, j), i * 100 + j);
+            }
+        })
+    }).collect();
+
+    for h in handles { h.join().unwrap(); }
+
+    println!("Total entries: {}", store.data.read().unwrap().len());  // 400
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 執行緒安全：Rust 編譯器保證無資料爭用 —`RwLock`強制互斥，`Arc` 提供安全的共用所有權。如果編譯通過，那麼它是正確的。
+- 效能：對於讀取密集型工作負載，`RwLock` 優於 `Mutex`。對於寫入量大的工作負載，請使用 `Mutex`（更簡單，無讀寫器開銷）。
+- 生產升級：使用`parking_lot::RwLock`（更快，無中毒，記憶體佔用更小）或`dashmap::DashMap`（無鎖並發HashMap）。
+### 問題 2：實作零拷貝解析器
+**問題陳述：** 編寫一個解析器，從像`"name=Alice;age=30;role=admin"`這樣的配置字串中提取鍵值對，而不分配新字串 - 僅使用從輸入借用的字串切片。
+**第 1 步 — 了解問題：**
+我們需要解析由`;`分隔的`key=value`對。關鍵約束是「零複製」－傳回的資料必須從輸入`&str`借用，而不是分配新的`String`。這意味著返回`Vec<(&str, &str)>`，其生命週期與輸入相關。
+**第 2 步 — 確定方法：**
+- 使用`&str`方法（`split`、`find`、切片） — 所有傳回輸入借用的`&str`切片。
+- 在任何地方避免`.to_string()`或 `String::from()`。
+- 生命週期註解：輸出借用輸入 —`fn parse<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>`。
+**第 3 步 — 實施解決方案：**
+```rust
+fn parse_config(input: &str) -> Vec<(&str, &str)> {
+    input
+        .split(';')
+        .filter_map(|pair| {
+            let pair = pair.trim();
+            if pair.is_empty() { return None; }
+            pair.split_once('=')
+                .map(|(k, v)| (k.trim(), v.trim()))
+        })
+        .collect()
+}
+
+// The compiler infers: fn parse_config<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>
+
+fn main() {
+    let config = "name = Alice; age = 30; role = admin";
+    let pairs = parse_config(config);
+
+    for (key, value) in &pairs {
+        println!("{} = {}", key, value);
+    }
+
+    // Zero allocations — all slices point into 'config'
+    assert_eq!(pairs[0], ("name", "Alice"));
+    assert_eq!(pairs[1], ("age", "30"));
+    assert_eq!(pairs[2], ("role", "admin"));
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 零拷貝：`split`、`split_once`和`trim`皆回傳`&str`切片 — 無堆疊分配。
+- 生命週期省略規則正確地將輸出生命週期與輸入連結。
+- 邊緣情況：空輸入返回`[]`；缺少`=`會跳過該對（透過`filter_map`）；`=`周圍的空白由`trim`處理。
+- 對於更複雜的解析，請使用`nom`箱（基於組合器，也是零拷貝）。
+### 問題 3：使用通道實現觀察者模式
+**問題陳述：** 建立一個發布-訂閱系統，其中多個訂閱者從發布者接收訊息。使用 Rust 通道並確保系統處理速度慢的訂閱者而不阻塞發布者。
+**第 1 步 — 了解問題：**
+我們需要一個發布者向多個訂閱者發送訊息。 Rust 的`mpsc`通道是多生產者單一消費者－我們需要相反（單一生產者多消費者）。我們可以使用`broadcast`通道（來自`tokio`）或使用多個`mpsc`發送器來實現扇出。
+**第 2 步 — 確定方法：**
+- 對於標準通道使用 `std::sync::mpsc`。
+- 對於扇出：維護一個`Vec<Sender<T>>`並將訊息克隆到每個。
+- 對於慢速訂閱者：使用 `try_send`（非阻塞）或具有背壓的有界通道。
+- 包裝在`Bus`結構中以獲得乾淨的 API。
+**第 3 步 — 實施解決方案：**
+```rust
+use std::sync::mpsc::{self, Sender, Receiver};
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+struct Bus<T: Clone + Send + 'static> {
+    subscribers: Arc<Mutex<Vec<Sender<T>>>>,
+}
+
+impl<T: Clone + Send + 'static> Bus<T> {
+    fn new() -> Self {
+        Self {
+            subscribers: Arc::new(Mutex::new(Vec::new())),
+        }
+    }
+
+    fn subscribe(&self) -> Receiver<T> {
+        let (tx, rx) = mpsc::channel();
+        self.subscribers.lock().unwrap().push(tx);
+        rx
+    }
+
+    fn publish(&self, message: T) {
+        let mut subs = self.subscribers.lock().unwrap();
+        // Remove disconnected subscribers (their receiver was dropped)
+        subs.retain(|tx| !tx.is_disconnected());
+        for tx in subs.iter() {
+            let _ = tx.send(message.clone());  // Ignore send errors
+        }
+    }
+
+    fn subscriber_count(&self) -> usize {
+        let subs = self.subscribers.lock().unwrap();
+        subs.iter().filter(|tx| !tx.is_disconnected()).count()
+    }
+}
+
+fn main() {
+    let bus = Bus::new();
+
+    // Subscribe from multiple threads
+    let handles: Vec<_> = (0..3).map(|id| {
+        let rx = bus.subscribe();
+        thread::spawn(move || {
+            for msg in rx {
+                println!("Subscriber {} received: {}", id, msg);
+            }
+        })
+    }).collect();
+
+    // Publish messages
+    for i in 0..5 {
+        bus.publish(format!("Event #{}", i));
+    }
+
+    // Drop the bus — subscribers' channels close, loops end
+    drop(bus);
+    for h in handles { h.join().unwrap(); }
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+-`retain`自動清理失效訂閱者 — 斷開連線的執行緒不會造成記憶體洩漏。
+-`message.clone()`是必要的，因為每個訂閱者都需要自己的副本。對於克隆成本高昂的類型，請包裝在`Arc<T>`中。
+- 有界通道：將`mpsc::channel()`替換為`mpsc::sync_channel(N)`以實現背壓 — 如果訂閱者的緩衝區已滿，`publish` 將阻塞。
+- 生產：使用`tokio::sync::broadcast`進行非同步發布/訂閱，或使用`flume`取得更快的 mpsc，並具有有界/無界選項。
 ---
 
 ＃＃ 概括

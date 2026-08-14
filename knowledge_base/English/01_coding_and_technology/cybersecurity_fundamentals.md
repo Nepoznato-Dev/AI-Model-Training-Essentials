@@ -41,7 +41,7 @@ contribution:
 
 # Cybersecurity Fundamentals
 
-Security isn't a feature you bolt on at the end — it's a discipline that needs to be woven into every layer of a system from day one. Whether you're building a web app, managing infrastructure, or shipping an API, understanding the threat landscape and the fundamentals of defence is essential.
+Security is a discipline that must be integrated into every layer of a system from the outset, rather than added as an afterthought. Whether building a web application, managing infrastructure, or shipping an API, understanding the threat landscape and the fundamentals of defence is essential.
 
 ---
 

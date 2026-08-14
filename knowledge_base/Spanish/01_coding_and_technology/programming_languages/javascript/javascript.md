@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "JavaScript"
-descripción: "Referencia completa para el lenguaje de programación JavaScript que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "JavaScript"
+description: "Comprehensive reference for the JavaScript programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [javascript, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "44 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [javascript, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # JavaScript
 JavaScript es un lenguaje de programación interpretado dinámico creado por Brendan Eich en sólo 10 días en 1995. Originalmente diseñado para agregar interactividad a las páginas web, se ha convertido en el lenguaje de programación más utilizado en el mundo. JavaScript se ejecuta en todos los navegadores web, en servidores a través de Node.js, en aplicaciones de escritorio (Electron), aplicaciones móviles (React Native) e incluso sistemas integrados.
 El lenguaje es único porque es esencialmente la única opción para el desarrollo web del lado del cliente: todos los navegadores lo admiten de forma nativa. Este monopolio, combinado con el auge del JavaScript completo (Node.js, Deno, Bun), lo hace indispensable.
@@ -51,7 +56,7 @@ El lenguaje es único porque es esencialmente la única opción para el desarrol
 |-----------|-----------------|-------------------|
 | **Errores de la escritura dinámica** | Sin verificación de tipos en tiempo de compilación; errores aparecen en tiempo de ejecución | Utilice TypeScript (un superconjunto escrito de JavaScript) |
 | **Complejidad de devolución de llamada** | Las devoluciones de llamadas anidadas pueden volverse ilegibles ("infierno de las devoluciones de llamadas") | Utilice promesas y async/await |
-| **Semántica peculiar** | `==`vs `===`,`this`vinculación, elevación, tipo coerción | Aprenda las peculiaridades; utilizar ESLint; prefiera`const`/`let`sobre`var`|
+| **Semántica peculiar** | `==`vs `===`,`this`vinculación, elevación, coerción de tipo | Aprenda las peculiaridades; utilizar ESLint; prefiera`const`/`let`sobre`var`|
 | **Un solo subproceso** | Las tareas vinculadas a la CPU bloquean el bucle de eventos | Utilice Web Workers, subprocesos de trabajo o descargue a módulos nativos |
 | **Calidad del paquete** | la apertura de npm significa riesgos de calidad y seguridad inconsistentes | Dependencias de auditoría; utilizar archivos de bloqueo; prefieren paquetes bien mantenidos |
 ---
@@ -1051,6 +1056,419 @@ pm2 startup
 | Aplicaciones de escritorio (Electron) | Multiplataforma con tecnología web | C# (WPF), Tauri (óxido) |
 | Computación intensiva en CPU | Limitación de un solo subproceso | Python (NumPy), C++, Rust, WebAssembly |
 | Programación de sistemas | Nivel de abstracción incorrecto | C, C++, óxido, listo |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre `var`,`let`y`const`y cuándo debo usar cada uno?
+**R:**`var`tiene un alcance funcional y elevado; evítelo en el código moderno. `let`tiene un alcance de bloque y permite la reasignación. `const`tiene un alcance de bloque y evita la reasignación (pero los objetos/matrices a las que hace referencia siguen siendo mutables). Mejores prácticas: use de forma predeterminada `const`, use`let`solo cuando necesite una reasignación, nunca use `var`.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### P2: ¿Cómo funciona`this`en JavaScript y por qué es tan confuso?
+**R:**`this`está determinado por **cómo se llama una función**, no por dónde está definida. En una llamada a un método,`this`es el objeto. En una llamada independiente, es`undefined`(modo estricto) o`global`(no estricto). Las funciones de flecha heredan`this`de su alcance circundante; es por eso que se prefieren para las devoluciones de llamada. Utilice`.bind()`para configurar explícitamente `this`.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### P3: ¿Qué es el bucle de eventos y cómo funciona realmente async/await?
+**R:** JavaScript tiene un solo subproceso con un bucle de eventos que procesa una cola. La pila de llamadas ejecuta código sincrónico. Cuando está vacío, el bucle de eventos selecciona la siguiente tarea de la cola de microtask (Promises) o de la cola de macrotask (setTimeout, I/O). `async/await`es azúcar sintáctico sobre Promesas:`await`pausa la función asíncrona y la reanuda cuando la Promesa se resuelve, sin bloquear el hilo.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### P4: ¿Cómo debo manejar los errores en JavaScript moderno?
+**R:** Utilice`try/catch`para código sincrónico y`.catch()`o`try/catch`con`async/await`para código asincrónico. Maneje siempre los rechazos de promesas: los rechazos no controlados bloquean Node.js. Cree clases de error personalizadas para errores específicos del dominio. Utilice un controlador de errores global como red de seguridad.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### P5: ¿Cuándo debo usar`Map`/`Set`en lugar de objetos/matrices simples?
+**R:** Utilice`Map`cuando las claves no sean cadenas, cuando necesite una iteración del orden de inserción, cuando necesite`.size`o cuando agregue o elimine entradas con frecuencia (mejor rendimiento que los objetos). Utilice`Set`para colecciones únicas con búsqueda O(1), mucho más rápido que`array.includes()`para conjuntos de datos grandes. Utilice objetos simples para datos serializables JSON simples y pequeños mapas clave-valor con claves de cadena.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: implementar una función antirrebote
+**Declaración del problema:** Implemente una utilidad`debounce`que retrase la invocación de una función hasta que haya transcurrido un período de espera específico desde la última vez que se llamó. Admite invocación de borde inicial y final.
+**Paso 1: comprenda el problema:**
+Una función antirrebote ignora las llamadas sucesivas rápidas y solo se activa después de que las llamadas se detienen durante el tiempo de espera. "Borde de ataque" significa disparar inmediatamente a la primera llamada. "Borde de salida" significa fuego después del período de espera. Necesitamos manejar ambos modos y también admitir la cancelación.
+**Paso 2: Identifique el enfoque:**
+- Almacenar un ID de temporizador en un cierre.
+- En cada llamada: borre el temporizador existente y luego configure un nuevo `setTimeout`.
+- Para borde de ataque: llame inmediatamente si no hay ningún temporizador activo.
+- Devuelve una función antirrebote con un método `.cancel()`.
+- Preservar el contexto y los argumentos de`this`usando funciones de flecha o `.apply()`.
+**Paso 3: Implementar la solución:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**Paso 4: Verificar y optimizar:**
+- El cierre preserva el estado en todas las llamadas sin contaminar el alcance global.
+-`clearTimeout`antes de`setTimeout`garantiza que solo la última llamada desencadene la ejecución.
+-`.cancel()`es importante para la limpieza (por ejemplo, desmontaje de componentes en React).
+- Caso extremo: si`wait`es 0, la función se activa en el siguiente tic del bucle de eventos, lo que resulta útil para realizar actualizaciones de DOM por lotes.
+### Problema 2: crear un limitador de tarifas basado en promesas
+**Declaración del problema:** Cree un limitador de velocidad que permita como máximo N solicitudes por ventana de tiempo. Debería devolver promesas que resuelvan cuándo se le permite continuar a la persona que llama y poner en cola el exceso de solicitudes.
+**Paso 1: comprenda el problema:**
+Necesitamos una ventana corrediza o fija que rastree cuántas llamadas se han realizado. Cuando se alcanza el límite, las nuevas llamadas deben ponerse en cola y resolverse cuando se abre un espacio. Este es el patrón del "cubo de fichas".
+**Paso 2: Identifique el enfoque:**
+- Seguimiento de marcas de tiempo de llamadas recientes en una matriz.
+- En cada llamada: elimine las marcas de tiempo anteriores a la ventana, verifique si el recuento <límite.
+- Si está por debajo del límite: resolver inmediatamente.
+- Si está en el límite: calcule cuándo caduca la marca de tiempo más antigua, establezca un`setTimeout`y luego resuelva.
+- Utilice una cola (conjunto de funciones de resolución) para las personas que llaman en espera.
+**Paso 3: Implementar la solución:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**Paso 4: Verificar y optimizar:**
+- El enfoque de la ventana corredera es más justo que el de las ventanas fijas (sin roturas en los límites de las ventanas).
+- El procesamiento de cola es FIFO: las personas que llaman son atendidas en orden.
+- Para producción: agregue soporte`AbortController`para que las personas que llaman puedan cancelar la espera.
+- Rendimiento:`_cleanOldTimestamps`es O(n) por llamada pero n está limitado por `maxCalls`.
+### Problema 3: implementar una función de clonación profunda
+**Declaración del problema:** Escriba una función que clone profundamente cualquier valor de JavaScript, manejando objetos, matrices, fechas, expresiones regulares, mapas, conjuntos, referencias circulares y matrices escritas.
+**Paso 1: comprenda el problema:**
+`JSON.parse(JSON.stringify(obj))`falla en: `undefined`, funciones, símbolos, fechas (se convierten en cadenas), expresiones regulares (se convierten en objetos vacíos), mapas, conjuntos, referencias circulares (lanzamientos) y matrices escritas. Necesitamos una solución recursiva que rastree los objetos visitados.
+**Paso 2: Identifique el enfoque:**
+- Utilice un`Map`para rastrear objetos ya clonados (maneja referencias circulares).
+- Manejar cada tipo de forma especial: Fecha → nueva fecha, RegExp → nueva RegExp, Mapa → nuevo mapa con entradas clonadas, Conjunto → nuevo conjunto con valores clonados.
+- Utilice`structuredClone()`como la alternativa moderna integrada (disponible en navegadores y Node.js 17+).
+**Paso 3: Implementar la solución:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**Paso 4: Verificar y optimizar:**
+- Referencias circulares: el mapa`seen`devuelve el clon ya creado en lugar de repetirse infinitamente.
+- Descriptores de propiedades:`Reflect.ownKeys`+`getOwnPropertyDescriptor`conserva captadores, definidores y propiedades no enumerables.
+- Alternativa moderna:`structuredClone(value)`maneja la mayoría de estos casos de forma nativa (excepto funciones y nodos DOM). Prefiere cuando esté disponible.
+- Rendimiento: para objetos simples,`JSON.parse(JSON.stringify(obj))`sigue siendo el más rápido. Utilice la clonación profunda sólo cuando realmente la necesite.
+### Problema 4: construir un emisor de eventos simple
+**Declaración del problema:** Implemente una clase de emisor de eventos que admita los métodos `on`, `off`,`emit`y `once`. Los oyentes deben ser llamados por orden de registro. `emit`debería pasar argumentos a todos los oyentes.
+**Paso 1: comprenda el problema:**
+Necesitamos un sistema de publicación/subscripción: registre oyentes para eventos con nombre, elimine oyentes específicos, active eventos con argumentos y admita oyentes únicos. Este es el patrón Observer que se usa ampliamente en Node.js.
+**Paso 2: Identifique el enfoque:**
+- Almacenar oyentes en un `Map<string, Array<Function>>`.
+- `on`: envía el oyente a la matriz.
+- `off`: filtra el oyente específico de la matriz.
+- `emit`: itera la matriz y llama a cada oyente con argumentos extendidos.
+- `once`: envuelve el oyente en una función que se elimina después de la primera llamada.
+**Paso 3: Implementar la solución:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**Paso 4: Verificar y optimizar:**
+- La copia`[...listeners]`en`emit`evita problemas cuando un oyente llama a`off`durante la iteración.
+-`once`almacena`_original`para que las personas que llaman puedan eliminar el contenedor a través de `off(event, originalFn)`.
+- Los campos privados (`#listeners`) evitan la mutación externa del estado interno.
+- Para producción: agregue la advertencia`maxListeners`(como Node.js), manejo de errores por oyente y`prependListener`como prioridad.
 ---
 
 ## Resumen

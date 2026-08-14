@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # С++
-C++ — это компилируемый язык программирования общего назначения, созданный Бьярном Страуструпом и впервые выпущенный в 1985 году. Он расширяет C объектно-ориентированными функциями, дженериками и — в современных версиях (C++11 и более поздних) — абстракциями высокого уровня, такими как лямбда-выражения, интеллектуальные указатели и стандартная библиотека шаблонов (STL). C++ следует принципу «абстракции с нулевыми издержками»: вам не следует платить за функции, которые вы не используете.
+C++ — это компилируемый язык программирования общего назначения, созданный Бьярном Страуструпом и впервые выпущенный в 1985 году. Он расширяет C объектно-ориентированными функциями, обобщенными функциями и — в современных версиях (C++11 и более поздних) — абстракциями высокого уровня, такими как лямбда-выражения, интеллектуальные указатели и стандартная библиотека шаблонов (STL). C++ следует принципу «абстракции с нулевыми издержками»: вам не следует платить за функции, которые вы не используете.
 C++ — это язык выбора, когда вам нужна одновременно высокая производительность и выразительность. Он поддерживает игровые движки (Unreal Engine), браузеры (Chrome, Firefox), базы данных (MongoDB), операционные системы (части Windows и macOS), системы финансовой торговли и моделирование в реальном времени.
 ---
 
@@ -251,7 +252,7 @@ public:
 };
 ```
 
-### Семантика перемещения и RAII
+### Перемещение семантики и RAII
 ```cpp
 class Buffer {
     std::unique_ptr<int[]> data_;
@@ -363,7 +364,7 @@ int main() {
 }
 ```
 
-### Асинхронность, фьючерсы и обещания
+### Асинхронность, фьючерсы и промисы
 ```cpp
 #include <future>
 #include <iostream>
@@ -720,7 +721,7 @@ cmake --build build
 | Браузеры | Десятилетия оптимизированного кода | Rust для новых компонентов браузера |
 | Высокочастотный трейдинг | Задержка в микросекундах имеет значение | -- |
 | Встраиваемые системы (комплексные) | Богатый набор функций с аппаратным доступом | C — проще, Rust — безопасность |
-| Приложения с графическим интерфейсом (настольный компьютер) | Платформа Qt является зрелой | C# (Windows), Swift (macOS) |
+| Приложения с графическим интерфейсом (настольный компьютер) | Qt Framework является зрелым | C# (Windows), Swift (macOS) |
 | Общая разработка приложений | Слишком сложно для большинства приложений | Питон, Го, Java |
 | Веб-серверы | Нетипичный выбор | Go, Rust, Node.js |
 | Скрипты/автоматизация | Совсем неправильный инструмент | Питон, JavaScript |
@@ -738,5 +739,379 @@ cmake --build build
 Для новых проектов ориентируйтесь как минимум на C++20.
 ---
 
+## Синтетические вопросы и ответы
+### Q1: В чем разница между`std::unique_ptr`,`std::shared_ptr`и`std::weak_ptr`?
+**A:**`unique_ptr`представляет собой исключительное владение — только один указатель может владеть ресурсом. Он не имеет накладных расходов (так же, как необработанный указатель) и не может быть скопирован, а только перемещен. `shared_ptr`представляет совместное владение — несколько указателей совместно используют ресурс с подсчетом ссылок. Когда последний`shared_ptr`уничтожается, ресурс освобождается. `weak_ptr`не является наблюдателем`shared_ptr`— он не увеличивает счетчик ссылок и используется для разрыва циклических ссылок.
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### Вопрос 2. Что такое семантика перемещения и почему она важна?
+**О:** Семантика перемещения (C++11) позволяет переносить ресурсы (кучную память, дескрипторы файлов и т. д.) из временного объекта вместо их копирования. Конструктор/присваивание перемещения принимает ссылку на значение rvalue (`T&&`) и «крадет» ресурсы источника, оставляя его в допустимом, но неопределенном состоянии. Это исключает ненужные копии и является причиной эффективности перераспределения `std::vector`.
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### Вопрос 3: Когда следует использовать`auto`, а когда следует явно указывать типы?
+**A:** Используйте `auto`, когда тип очевиден из контекста (циклы итераторов, вызовы `make_unique`/`make_shared`, лямбда-типы, сложные типы шаблонов). Укажите типы явно, если тип неочевиден, когда вам нужны неявные преобразования или в сигнатурах общедоступного API. Стиль «Почти всегда автоматически» (AAA) предпочитает`auto`для локальных переменных; стиль «авто там, где полезно» более консервативен.
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### Вопрос 4. Как концепции (C++20) улучшают код шаблона?
+**A:** Концепции ограничивают параметры шаблона именованными требованиями, выдавая четкие сообщения об ошибках и позволяя перегружать функции в ограничениях шаблона. До появления концепций использовались SFINAE и`static_assert`— оба выдавали загадочные ошибки. Концепции делают код шаблона читабельным и компонуемым.
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### Вопрос 5: Что такое «Правило пяти» и как оно связано с «Правилом нуля»?
+**О:** Правило пяти: если вы определяете какой-либо из деструктора, конструктора копирования, назначения копирования, конструктора перемещения или назначения перемещения, вы должны определить все пять. Правило нуля (предпочтительно): создавайте классы так, чтобы им не требовалось ничего из этого — используйте типы RAII (`std::string`,`std::vector`,`std::unique_ptr`) в качестве членов, и специальные элементы, сгенерированные компилятором, автоматически сделают правильные действия.
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Реализация потокобезопасной очереди производитель-потребитель с диапазонами
+**Постановка задачи.** Создайте ограниченную потокобезопасную очередь производитель-потребитель, используя диапазоны C++20 для потребительской стороны. Очередь должна блокировать производителей, когда она заполнена, и потребителей, когда она пуста, а также поддерживать корректное завершение работы.
+**Шаг 1. Поймите проблему:**
+Нам нужны: (1) ограниченная очередь с блокировкой push/pop, (2) потокобезопасность посредством мьютекса и условных переменных, (3) способ сигнализации о завершении работы, (4) интеграция диапазонов C++20, чтобы потребители могли использовать циклы for на основе диапазона.
+**Шаг 2. Определите подход:**
+- Используйте`std::mutex`+`std::condition_variable`для блокировки.
+- Используйте`std::queue<T>`в качестве базового контейнера.
+- Используйте`std::optional<T>`в качестве типа возвращаемого значения —`std::nullopt`сигнализирует о завершении работы.
+— Реализуйте итератор на основе дозорного для поддержки диапазонов.
+**Шаг 3. Реализация решения:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Потокобезопасность:`std::mutex`защищает все состояния очереди; Условные переменные обрабатывают блокировку.
+- Грациозное завершение работы:`shutdown()`будит всех официантов; `pop()`возвращает `nullopt`, когда он пуст и выключен.
+- Поддержка диапазона: контрольный элемент итератора (созданный по умолчанию) сравнивается с любым исчерпанным итератором.
+- Производство: используйте`boost::lockfree::spsc_queue`для безблокировочного одного производителя и одного потребителя или`folly::ProducerConsumerQueue`для сценариев с высокой пропускной способностью.
+### Проблема 2: реализовать тип со стиранием любого типа
+**Постановка задачи:** Реализуйте с нуля упрощенную версию`std::any`(C++17) — типобезопасный контейнер для отдельных значений любого типа, поддерживающий копирование, перемещение и типобезопасное извлечение через`any_cast`.
+**Шаг 1. Поймите проблему:**
+`std::any`сохраняет значение любого копируемого типа и извлекает его с проверкой типа. Внутри он использует стирание типов: интерфейс базового класса с производным шаблоном, который содержит фактическое значение. `any_cast`проверяет сохраненный тип во время выполнения и выдает`bad_any_cast`при несоответствии.
+**Шаг 2. Определите подход:**
+— Используйте базовый класс`HolderBase`с виртуальными`clone()`и `type()`.
+- Используйте производный шаблон `Holder<T>`, в котором хранится фактическое значение.
+- Сохраните`std::unique_ptr<HolderBase>`в классе `Any`.
+-`any_cast<T>`проверяет`typeid`и выполняет `static_cast`.
+**Шаг 3. Реализация решения:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+**Шаг 4. Проверка и оптимизация:**
+- Безопасность типов:`any_cast`проверяет`typeid`во время выполнения — неправильный тип выдает`BadAnyCast`.
+- Семантика копирования: виртуальный`clone()`создает глубокую копию удерживаемого значения.
+- Семантика перемещения: конструктор/назначение перемещения по умолчанию эффективно передает `unique_ptr`.
+— Оптимизация небольшого буфера (например, настоящий `std::any`): храните небольшие типы внутри строки без выделения кучи. Для этого требуется`union`с байтовым буфером, что значительно сложнее.
+— Производство: используйте`std::any`(C++17) — он стандартный, хорошо протестированный и может включать SBO.
+---
+
 ## Краткое содержание
-C++ занимает уникальную позицию в программировании: он дает вам чистую производительность C с выразительной мощью абстракций высокого уровня. Современный C++ (C++20/23) сильно отличается от C++ 1990-х годов: он более безопасный, более выразительный и более продуктивный. Кривая обучения крутая, а язык вознаграждает за дисциплину. Для приложений, критичных к производительности, где требуется детальный контроль, C++ остается одним из лучших доступных инструментов.
+C++ занимает уникальную позицию в программировании: он дает вам чистую производительность C с выразительной мощью абстракций высокого уровня. Современный C++ (C++20/23) сильно отличается от C++ 1990-х годов: он более безопасен, более выразителен и более продуктивен. Кривая обучения крутая, а язык вознаграждает за дисциплину. Для приложений, критичных к производительности, где требуется детальный контроль, C++ остается одним из лучших доступных инструментов.

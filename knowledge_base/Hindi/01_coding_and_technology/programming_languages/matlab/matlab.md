@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "मैटलैब"
-विवरण: "MATLAB प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [मैटलैब, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "उन्नत"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "31 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "MATLAB"
+description: "Comprehensive reference for the MATLAB programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [matlab, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # मतलब
 MATLAB (मैट्रिक्स प्रयोगशाला) एक उच्च-स्तरीय, व्याख्या की गई प्रोग्रामिंग भाषा और वातावरण है जिसे संख्यात्मक कंप्यूटिंग, मैट्रिक्स संचालन और इंजीनियरिंग/वैज्ञानिक अनुप्रयोगों के लिए डिज़ाइन किया गया है। मैथवर्क्स द्वारा विकसित और पहली बार 1984 में जारी किया गया, MATLAB कई इंजीनियरिंग विषयों - इलेक्ट्रिकल इंजीनियरिंग, नियंत्रण प्रणाली, सिग्नल प्रोसेसिंग, इमेज प्रोसेसिंग और संचार में मानक उपकरण है।
 MATLAB व्यापक टूलबॉक्स (ऐड-ऑन पैकेज) और सिमुलिंक विज़ुअल सिमुलेशन वातावरण के साथ एक शक्तिशाली मैट्रिक्स-उन्मुख भाषा को जोड़ती है। उत्पादन कोड में लागू करने से पहले प्रोटोटाइप एल्गोरिदम के लिए अकादमिक और उद्योग में इसका व्यापक रूप से उपयोग किया जाता है।
@@ -649,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 | उत्पादन प्रणाली | तैनाती के लिए डिज़ाइन नहीं किया गया | सी++, पायथन, गो |
 | वेब विकास | अनुकूल नहीं | जावास्क्रिप्ट, पायथन |
 | डेटा विज्ञान (सामान्य) | संभव है लेकिन पायथन अधिक बहुमुखी है | पायथन, आर |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: मैं लूप्स का उपयोग करने के बजाय ऑपरेशंस को वेक्टराइज़ कैसे करूं?
+**ए:** मैटलैब मैट्रिक्स संचालन के लिए अनुकूलित है। लूप्स को वेक्टरकृत कोड से बदलें:
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### Q2: मैट्रिक्स और ऐरे के बीच क्या अंतर है?
+**ए:** मैटलैब में, हर चीज़ एक सरणी है। मैट्रिक्स 2D सरणियाँ हैं:
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### Q3: मैं MATLAB में प्रभावी प्लॉट कैसे बनाऊं?
+**ए:** उचित लेबलिंग के साथ प्लॉटिंग फ़ंक्शन का उपयोग करें:
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4: मैं MATLAB कोड को प्रभावी ढंग से कैसे डिबग करूं?
+**ए:** अंतर्निहित डिबगर और डायग्नोस्टिक टूल का उपयोग करें:
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### Q5: मैं डेटा फ़ाइलें कैसे पढ़ और लिख सकता हूँ?
+**ए:** MATLAB कई फ़ाइल स्वरूपों का समर्थन करता है:
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: रैखिक समीकरणों की एक प्रणाली को हल करना
+**चरण 1: समस्या को समझें**
+Ax = b को हल करें जहां A एक मैट्रिक्स है और b एक वेक्टर है।
+**चरण 2: दृष्टिकोण को पहचानें**
+MATLAB के बैकस्लैश ऑपरेटर`\`का उपयोग करें जो स्वचालित रूप से सर्वोत्तम एल्गोरिदम का चयन करता है।
+**चरण 3: कार्यान्वयन**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**चरण 4: विस्तार करें**
+अतिनिर्धारित प्रणालियों के लिए,`\`न्यूनतम-वर्ग समाधान देता है। विरल सिस्टम के लिए,`sparse`मैट्रिसेस का उपयोग करें।
+### समस्या 2: सिग्नल प्रोसेसिंग - एफएफटी विश्लेषण
+**चरण 1: समस्या को समझें**
+शोर संकेत की आवृत्ति सामग्री का विश्लेषण करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+एक परीक्षण सिग्नल उत्पन्न करें, एफएफटी लागू करें, और आवृत्ति स्पेक्ट्रम प्लॉट करें।
+**चरण 3: कार्यान्वयन**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**चरण 4: सत्यापित करें**
+शिखर 50 हर्ट्ज़ और 120 हर्ट्ज़ पर दिखाई देने चाहिए। शोर तल कम होना चाहिए.
+### समस्या 3: कस्टम मॉडल के साथ कर्व फिटिंग
+**चरण 1: समस्या को समझें**
+प्रयोगात्मक डेटा को एक कस्टम नॉनलाइनियर मॉडल में फ़िट करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+कस्टम`fittype`या`lsqcurvefit`के साथ`fit`का उपयोग करें।
+**चरण 3: कार्यान्वयन**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**चरण 4: सत्यापित करें**
+पैटर्न के लिए अवशेषों की जांच करें, R² सत्यापित करें, और विभिन्न शुरुआती बिंदुओं के साथ परीक्षण करें।
 ---
 
 ## सारांश

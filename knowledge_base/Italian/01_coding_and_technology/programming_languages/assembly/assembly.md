@@ -736,5 +736,84 @@ void process_data(void) {
 | Sviluppo di applicazioni generali | Poco pratico per programmi complessi | Qualsiasi lingua di livello superiore |
 ---
 
+## Domande e risposte sintetiche
+### D1: Qual è la differenza tra l'assemblaggio RISC e CISC?
+**R:** CISC (x86) dispone di istruzioni complesse di lunghezza variabile. RISC (ARM) ha istruzioni semplici e di lunghezza fissa:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### D2: Come funziona lo stack in assembly?
+**R:** Lo stack cresce verso il basso. `push`decrementa SP e memorizza; `pop`carica e incrementa SP:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### D3: Come posso chiamare le funzioni in assembly?
+**R:** Segui la convenzione di chiamata (System V AMD64 su Linux, Windows x64 su Windows):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: Quali sono le istruzioni di montaggio più importanti da sapere?
+**R:** Lo spostamento dei dati, l'aritmetica, il flusso di controllo e le operazioni sullo stack costituiscono il nucleo.
+### D5: Come viene utilizzato l'assembly nella ricerca sulla sicurezza?
+**R:** Il reverse engineering, lo sviluppo di exploit, l'analisi del malware e la comprensione dell'output del compilatore richiedono tutte competenze di assemblaggio.
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: implementare un ciclo in Assembly
+**Passaggio 1: comprendere il problema**
+Somma gli interi da 1 a N.
+**Passaggio 2: identificare l'approccio**
+Utilizzare un registro contatore e un accumulatore.
+**Passaggio 3: implementazione**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Passaggio 4: ottimizza**
+Utilizza la formula N*(N+1)/2 per O(1) invece di O(N).
+---
+
 ## Riepilogo
 Il linguaggio assembly è il ponte tra il codice leggibile dall'uomo e il binario grezzo eseguito dalle CPU. Non è una scelta pratica per creare applicazioni, ma è essenziale per comprendere come funzionano i computer al livello più basso. Per i programmatori di sistemi, i ricercatori sulla sicurezza e gli sviluppatori embedded, la conoscenza dell'assemblaggio ha un valore inestimabile. Per tutti gli altri, comprendere i concetti di assembly (registri, stack, cicli di istruzioni) ti rende un programmatore migliore in qualsiasi linguaggio.

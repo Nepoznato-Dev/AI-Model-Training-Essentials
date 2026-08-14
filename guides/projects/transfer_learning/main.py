@@ -62,6 +62,12 @@ print("Modifying model for CIFAR-10 (10 classes)...")
 for param in model.parameters():
     param.requires_grad = False
 
+# IMPORTANT: Also set BatchNorm layers to eval mode so their running
+# statistics stay consistent with the frozen weights
+for module in model.modules():
+    if isinstance(module, nn.BatchNorm2d):
+        module.eval()
+
 # Replace the final fully connected layer
 # model.fc is the classification head
 # Input: 512 features (from ResNet18)
@@ -184,7 +190,7 @@ for epoch in range(num_epochs):
         
         # Track statistics
         running_loss += loss.item()
-        _, predicted = torch.max(outputs.data, 1)
+        _, predicted = torch.max(outputs, 1)
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
     
@@ -222,7 +228,7 @@ with torch.no_grad():
     for images, labels in testloader:
         images, labels = images.to(device), labels.to(device)
         outputs = model(images)
-        _, predicted = torch.max(outputs.data, 1)
+        _, predicted = torch.max(outputs, 1)
         
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
@@ -258,22 +264,25 @@ print("-" * 70)
 
 print("""
 With Transfer Learning (what we just did):
-✓ Training time: ~2-5 minutes (5 epochs)
-✓ Test accuracy: ~85-90%
-✓ Only trained: Final layer (8,192 parameters)
+✓ Training time: typically a few minutes (5 epochs, varies by hardware)
+✓ Test accuracy: often reaches ~85-90% on CIFAR-10 (hardware/dataset dependent)
+✓ Only trained: Final layer (5,130 parameters)
 ✓ Used: Pre-trained features from ImageNet
 
 Training from Scratch (for comparison):
-✗ Training time: ~30-60 minutes (20+ epochs)
-✗ Test accuracy: ~60-70% (with simple CNN)
+✗ Training time: significantly longer (20+ epochs, depends on hardware)
+✗ Test accuracy: often lower with limited data (highly variable)
 ✗ Trained: All parameters (~11 million)
 ✗ Used: Random initialization
 
 Benefits of Transfer Learning:
-1. Much faster training (5-10x speedup)
-2. Better accuracy (pre-trained features are powerful)
+1. Faster training (fewer epochs needed)
+2. Better accuracy when data is limited (pre-trained features are powerful)
 3. Works well with small datasets
 4. Less computational resources needed
+
+NOTE: Actual numbers depend on your hardware, PyTorch version, and
+random seed. These are typical ranges, not guarantees.
 """)
 
 # ============================================================================

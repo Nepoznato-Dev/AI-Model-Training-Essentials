@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "लुआ"
-विवरण: "लुआ प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [लुआ, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का_समय: "26 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Lua"
+description: "Comprehensive reference for the Lua programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [lua, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # लुआ
 लुआ एक हल्की, एम्बेड करने योग्य स्क्रिप्टिंग भाषा है जिसे अनुप्रयोगों के विस्तार के लिए डिज़ाइन किया गया है। 1993 में ब्राज़ील में रियो डी जनेरियो के पोंटिफ़िकल कैथोलिक विश्वविद्यालय में बनाई गई, लुआ सबसे तेज़ स्क्रिप्टिंग भाषाओं में से एक है। इसका छोटा पदचिह्न (दुभाषिया ~120KB है) और सरलता इसे गेम डेवलपमेंट स्क्रिप्टिंग, एम्बेडेड सिस्टम और कॉन्फ़िगरेशन के लिए पसंदीदा विकल्प बनाती है।
 लुआ को रोब्लॉक्स (200 मिलियन से अधिक मासिक उपयोगकर्ताओं वाला गेमिंग प्लेटफ़ॉर्म), वर्ल्ड ऑफ वॉरक्राफ्ट ऐडऑन और कई गेम इंजन (लव2डी, डिफोल्ड, कोरोना एसडीके) के पीछे की स्क्रिप्टिंग भाषा के रूप में जाना जाता है। इसका उपयोग Nginx (OpenResty), रेडिस और वायरशार्क में भी किया जाता है।
@@ -618,6 +623,254 @@ CMD lua5.4 src/main.lua
 | वेब विकास | OpenResty मौजूद है लेकिन आला | जावास्क्रिप्ट, पायथन, गो |
 | सामान्य अनुप्रयोग विकास | स्टैंडअलोन ऐप्स के लिए डिज़ाइन नहीं किया गया | पायथन, गो, जावा |
 | डेटा विज्ञान | पारिस्थितिकी तंत्र नहीं | पायथन, आर |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: लुआ 0-आधारित के बजाय 1-आधारित अनुक्रमणिका का उपयोग क्यों करता है?
+**ए:** लुआ को गैर-प्रोग्रामर उपयोगकर्ताओं के लिए डिज़ाइन किया गया था और यह प्राकृतिक गिनती परंपराओं का पालन करता है।`#`ऑपरेटर,`ipairs`और स्ट्रिंग फ़ंक्शन सभी 1-आधारित अनुक्रमण का उपयोग करते हैं:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+यह पूरे मानक पुस्तकालय में सुसंगत है। C (0-आधारित) के साथ इंटरफ़ेस करते समय, ऑफसेट का ध्यान रखें।
+### Q2: मैं लुआ में ऑब्जेक्ट-ओरिएंटेड पैटर्न कैसे लागू करूं?
+**ए:** लुआ ओओपी के लिए तालिकाओं और मेटाटेबल्स का उपयोग करता है।`__index`मेटामेथोड प्रोटोटाइप पर विधि लुकअप को सक्षम बनाता है:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### Q3: कोरआउट्स कैसे काम करते हैं और मुझे उनका उपयोग कब करना चाहिए?
+**ए:** कॉरआउट्स सहकारी धागे हैं जो निष्पादन को निलंबित और फिर से शुरू कर सकते हैं। वे इटरेटर, एसिंक पैटर्न और गेम लॉजिक के लिए आदर्श हैं:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### Q4: लुआ में त्रुटियों से निपटने का सबसे अच्छा तरीका क्या है?
+**ए:** त्रुटियों को पकड़ने के लिए`pcall`/`xpcall`का उपयोग करें, और सफलता/असफलता पैटर्न के लिए एकाधिक मान लौटाएं:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### Q5: मैं गेम और एम्बेडेड सिस्टम के लिए लुआ प्रदर्शन को कैसे अनुकूलित करूं?
+**ए:** मुख्य अभ्यास:
+- सभी वेरिएबल्स के लिए`local`का उपयोग करें - वैश्विक पहुंच काफी धीमी है
+- स्थानीय लोगों में बार-बार एक्सेस किए गए टेबल फ़ील्ड को कैश करें
+- आकार ज्ञात होने पर तालिकाओं को पूर्व-आवंटित करें:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- हॉट लूप्स में अस्थायी टेबल बनाने से बचें
+- कई स्ट्रिंग्स को जोड़ने के लिए`..`के बजाय`table.concat`का उपयोग करें
+-`os.clock()`या डिबग हुक के साथ प्रोफ़ाइल
+- LuaJIT में, C API के बजाय C इंटरऑप के लिए FFI का उपयोग करें
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: एक कॉन्फ़िगरेशन पार्सर का निर्माण
+**चरण 1: समस्या को समझें**
+एक साधारण कुंजी-मान कॉन्फ़िगरेशन फ़ाइल को पार्स करें जहां प्रत्येक पंक्ति`key = value`है।
+**चरण 2: दृष्टिकोण को पहचानें**
+पंक्तियाँ पढ़ें,`=`पर विभाजित करें, रिक्त स्थान को ट्रिम करें, और एक तालिका में संग्रहीत करें।
+**चरण 3: कार्यान्वयन**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**चरण 4: विस्तार करें**
+अनुभाग समर्थन (`[section]`) जोड़ें, जबरदस्ती टाइप करें (संख्याएं, बूलियन), और नेस्टेड टेबल।
+### समस्या 2: एक सरल इवेंट सिस्टम लागू करना
+**चरण 1: समस्या को समझें**
+एक ईवेंट एमिटर बनाएं जो नामित ईवेंट की सदस्यता लेने और उन्हें उत्सर्जित करने का समर्थन करता है।
+**चरण 2: दृष्टिकोण को पहचानें**
+हैंडलर फ़ंक्शंस की सूचियों के लिए टेबल मैपिंग इवेंट नामों का उपयोग करें।
+**चरण 3: कार्यान्वयन**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**चरण 4: सत्यापित करें**
+हैंडलर में एकाधिक घटनाओं, निष्कासन और त्रुटि प्रबंधन के साथ परीक्षण करें।
+### समस्या 3: कोरटाइन-आधारित पाइपलाइन बनाना
+**चरण 1: समस्या को समझें**
+एक डेटा प्रोसेसिंग पाइपलाइन बनाएं जहां प्रत्येक चरण कोरआउट्स के माध्यम से जुड़े डेटा को फ़िल्टर या परिवर्तित करता है।
+**चरण 2: दृष्टिकोण को पहचानें**
+पाइपलाइन चरणों के रूप में कोरटाइन का उपयोग करें - प्रत्येक चरण पिछले से खींचता है और अगले की ओर धकेलता है।
+**चरण 3: कार्यान्वयन**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**चरण 4: अनुकूलन करें**
+यह पुल-आधारित पाइपलाइन न्यूनतम मेमोरी ओवरहेड के साथ एक समय में एक तत्व को संसाधित करती है - बड़ी या अनंत धाराओं के लिए आदर्श।
 ---
 
 ## सारांश

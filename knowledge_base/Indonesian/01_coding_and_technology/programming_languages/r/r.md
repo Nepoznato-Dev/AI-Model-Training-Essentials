@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # R
 R adalah bahasa pemrograman dan lingkungan yang dirancang khusus untuk komputasi statistik dan analisis data. Dibuat oleh Ross Ihaka dan Robert Gentleman di Universitas Auckland pada tahun 1993 (maka "R"), ini merupakan implementasi dari bahasa S dengan perluasan yang signifikan. R adalah open source dan dikelola oleh Tim Inti R. Ini adalah alat standar bagi ahli statistik, analis data, dan peneliti di bidang akademis, layanan kesehatan, keuangan, dan pemerintahan.
 R unggul dalam manipulasi data, pemodelan statistik, visualisasi, dan pelaporan. Ekosistem paketnya (CRAN) memiliki lebih dari 20.000 paket yang mencakup hampir semua metode statistik yang pernah dirancang.
@@ -603,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Sistem ML Produksi | Tidak dirancang untuk diterapkan | Python, Jawa |
 | Pengembangan web | Tidak cocok | JavaScript, Python |
 | Pemrosesan data skala besar | Terikat memori | Python (PySpark), SQL |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`<-`dan`=`untuk penugasan?
+**A:** Keduanya menetapkan nilai, tetapi`<-`adalah operator penugasan R idiomatik. Ia berfungsi di semua konteks, termasuk pemanggilan fungsi di dalam:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: Bagaimana cara menangani data yang hilang di R?
+**A:** R menggunakan`NA`untuk nilai yang hilang. Sebagian besar fungsi memiliki parameter `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3: Kapan sebaiknya saya menggunakan`lapply`vs`sapply`vs`vapply`?
+**A:** Semua menerapkan fungsi pada daftar/vektor, tetapi berbeda dalam output:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: Bagaimana cara membuat visualisasi yang efektif dengan ggplot2?
+**A:** Ikuti tata bahasa grafik — petakan estetika data ke properti visual:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5: Bagaimana cara menulis kode R yang efisien untuk kumpulan data besar?
+**J:** Praktik utama:
+- Vektor pra-alokasi:`x <- numeric(n)`alih-alih bertambah dengan`c()`
+- Gunakan`data.table`untuk kumpulan data besar (100x lebih cepat dari data.frame)
+- Operasi vektorisasi — hindari loop jika memungkinkan
+- Gunakan`vapply`di atas`sapply`untuk keamanan jenis
+- Profil dengan`Rprof()`atau`profvis`
+- Pertimbangkan paket`arrow`untuk data di luar inti
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membersihkan dan Menganalisis Kumpulan Data yang Berantakan
+**Langkah 1: Pahami Masalahnya**
+Kami memiliki bingkai data dengan nilai yang hilang, tipe yang tidak konsisten, dan outlier. Kita perlu membersihkannya dan menghitung ringkasan statistik.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan kata kerja rapi:`filter`,`mutate`,`summarize`, dan`group_by`.
+**Langkah 3: Terapkan**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Langkah 4: Verifikasi**
+Periksa jumlah baris sebelum/sesudah, validasi rentang, dan periksa silang total terhadap data sumber.
+### Masalah 2: Membangun Model Regresi Linier
+**Langkah 1: Pahami Masalahnya**
+Memprediksi variabel hasil berkelanjutan dari beberapa prediktor.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`lm()`untuk regresi linier, periksa asumsi, dan evaluasi kesesuaian model.
+**Langkah 3: Terapkan**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Langkah 4: Evaluasi**
+Periksa R-kuadrat, plot sisa untuk pola, dan AIC untuk perbandingan model.
+### Masalah 3: Membuat Laporan yang Dapat Direproduksi
+**Langkah 1: Pahami Masalahnya**
+Buat laporan yang menggabungkan analisis, visualisasi, dan teks naratif dalam format yang dapat direproduksi.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan R Markdown (atau Quarto) untuk menyisipkan potongan kode dengan teks.
+**Langkah 3: Terapkan**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, peringatan = FALSE)
+perpustakaan (rapiverse)
+data <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**Langkah 4: Render**
+`rmarkdown::render("report.Rmd")`menghasilkan dokumen HTML mandiri.
 ---
 
 ## Ringkasan

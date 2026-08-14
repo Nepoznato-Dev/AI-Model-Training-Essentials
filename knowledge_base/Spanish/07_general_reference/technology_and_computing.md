@@ -1,42 +1,46 @@
 ---
-# Metadatos
-título: "Tecnología y Computación"
-descripción: "Conceptos básicos de informática, internet, bases de datos, nube, seguridad"
-categoría: "Referencia general"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Technology and Computing"
+description: "Computing basics, internet, databases, cloud, security"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de referencia general"
+reviewed_by: "General Reference Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [tecnología, informática, referencia-general]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "8 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [technology, computing, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Tecnología y Computación
 La informática está en todas partes: en su teléfono, su automóvil, su refrigerador, sus dispositivos médicos y la infraestructura que rige la sociedad moderna. No es necesario ser programador para comprender cómo funciona todo. Este archivo cubre los fundamentos: qué es una computadora, cómo funciona Internet, cómo se construye el software y los conceptos que dan forma al mundo digital.
-> **¿Quieres profundizar más?** Este archivo es una descripción general amplia. Para obtener una cobertura detallada de cualquier tema, consulte los archivos dedicados en [`01_coding_and_technology/`](../01_coding_and_technology/), incluidos [web development](../01_coding_and_technology/web_development.md), [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)y [security](../01_coding_and_technology/security_best_practices.md).
+> **¿Quieres profundizar más?** Este archivo es una descripción general amplia. Para obtener una cobertura detallada de cualquier tema, consulte los archivos dedicados en [`01_coding_and_technology/`](../01_coding_and_technology/), incluidos [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)y.
 ---
 
 ## ¿Qué es una computadora?
@@ -146,7 +150,7 @@ Los tres principales proveedores de nube son **AWS** (Amazon, ~32 % de participa
 ---
 
 ## Ciberseguridad: protección de los sistemas digitales
-La ciberseguridad es la práctica de defender las computadoras, las redes y los datos de los ataques. Es importante porque todo está conectado y el costo de las infracciones es enorme. Para obtener una guía completa que cubre OWASP Top 10, el ciclo de vida de desarrollo seguro y la gestión de secretos, consulte [security best practices](../01_coding_and_technology/security_best_practices.md).
+La ciberseguridad es la práctica de defender las computadoras, las redes y los datos de los ataques. Es importante porque todo está conectado y el costo de las infracciones es enorme. Para obtener una guía completa que cubre OWASP Top 10, el ciclo de vida de desarrollo seguro y la gestión de secretos, consulte.
 ### Amenazas comunes
 | Amenaza | Qué es | Prevención |
 |--------|-----------|------------|

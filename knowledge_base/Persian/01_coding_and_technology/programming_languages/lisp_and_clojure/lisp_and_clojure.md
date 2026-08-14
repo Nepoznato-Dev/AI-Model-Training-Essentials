@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "Lisp & Clojure"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Lisp و Clojure شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [lisp-and-clojure، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "29 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Lisp & Clojure"
+description: "Comprehensive reference for the Lisp and Clojure programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [lisp-and-clojure, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lisp & Clojure
 Lisp دومین زبان برنامه نویسی سطح بالا است که هنوز مورد استفاده قرار می گیرد (پس از فرترن)، که توسط جان مک کارتی در سال 1958 ایجاد شد. این زبان پیشگام بسیاری از مفاهیمی است که امروزه بدیهی هستند: جمع آوری زباله، بازگشت، ساختارهای داده درختی، تایپ پویا، و ایده برنامه ها به عنوان داده (همونیکونیکی). ویژگی متمایز Lisp، نحو آن است – کد به صورت پرانتز تودرتو (عبارات S) نوشته می‌شود، که زبان را به‌طور بی‌اهمیت تجزیه‌پذیر می‌کند و فرابرنامه‌نویسی قدرتمند را از طریق **ماکروها** ممکن می‌سازد.
 Clojure یک گویش مدرن Lisp است که توسط Rich Hickey در سال 2007 طراحی شده است. این گویش بر روی JVM (همچنین ClojureScript برای جاوا اسکریپت) اجرا می شود، برنامه نویسی کاربردی، تغییر ناپذیری و همزمانی را در بر می گیرد و قابلیت همکاری یکپارچه جاوا را فراهم می کند. Clojure در توسعه وب، پردازش داده ها و سیستم های مالی استفاده می شود.
@@ -49,10 +54,10 @@ Clojure یک گویش مدرن Lisp است که توسط Rich Hickey در سال
 ## مبادلات
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
-| **پرانتز** | استفاده زیاد از`()`در ابتدا می تواند سخت باشد | از پشتیبانی IDE استفاده کنید. آموزش دیدن ساختار |
+| **پرانتز** | استفاده زیاد از`()`در ابتدا می تواند دشوار باشد | از پشتیبانی IDE استفاده کنید. آموزش دیدن ساختار |
 | **جامعه طاقچه** | بازار کار کوچک در مقایسه با زبان های رایج | جامعه فعال و پرشور |
 | **زمان راه اندازی کلوژور** | مبتنی بر JVM؛ راه اندازی کند برای CLIs | استفاده از GraalVM native-image |
-| **گویش های Lisp** | بسیاری از Lispهای ناسازگار (Common Lisp، Scheme، Emacs Lisp) | Clojure را برای کارهای مدرن انتخاب کنید |
+| **گویش لیسپ** | بسیاری از Lispهای ناسازگار (Common Lisp، Scheme، Emacs Lisp) | Clojure را برای کارهای مدرن انتخاب کنید |
 | **جریان اصلی نیست** | کتابخانه، چارچوب و آموزش کمتر | اهرم اکوسیستم جاوا (Clojure) |
 ---
 
@@ -351,13 +356,13 @@ my-clojure-project/
 ### دستورات ساخت کلید
 | فرمان | توضیحات |
 |---------|-------------|
-| `clj -M:dev`| شروع REPL با وابستگی های dev |
-|  __محافظت شده_1__ | اجرای مجموعه تست |
+| `clj -M:dev`| شروع REPL با وابستگی های توسعه دهنده |
+| `clj -M:test`| اجرای مجموعه تست |
 | `clj -M:run`| برنامه را اجرا کنید |
-|  __محافظت شده_3__ | ساخت uber JAR |
+| `clj -T:build uber`| ساخت uber JAR |
 | `lein new app my-app`| ایجاد پروژه لاینینگن |
 | `lein test`| اجرای تست ها (لینینگن) |
-|  __محافظت شده_6__ | ساخت uber JAR (Leiningen) |
+| `lein uberjar`| ساخت uber JAR (Leiningen) |
 ### خط لوله CI/CD (اقدامات GitHub)
 ```yaml
 name: Clojure CI
@@ -691,6 +696,141 @@ native-image --no-fallback \
 | توسعه برنامه عمومی | ممکن است اما طاقچه | پایتون، جاوا، برو |
 | برنامه های موبایل | ClojureScript برای برنامه های وب؛ بومی نیست | سویفت، کاتلین |
 | علم داده | نه اکوسیستم | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: چرا برنامه های Lisp/Clojure این همه پرانتز دارند؟
+**A:** پرانتزها بیانگر S-expression هستند - یک نحو یکنواخت که در آن کد و داده ساختار یکسانی دارند (همونیکونیکی):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2: Clojure چگونه حالت و تغییرپذیری را متفاوت مدیریت می کند؟
+**A:** Clojure پیش فرض داده های تغییرناپذیر است. برای تغییرات حالت کنترل شده، انواع مرجع را ارائه می دهد:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3: ساختارهای داده پایدار Clojure چیست؟
+**A:** همه مجموعه های Clojure پایدار هستند (تغییرناپذیر، ساختاری به اشتراک گذاشته شده):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4: ماکروهای Clojure چگونه کار می کنند؟
+**A:** ماکروها کد ارزیابی نشده (به عنوان داده) را دریافت می کنند، آن را تبدیل می کنند و کد جدید را برمی گردانند:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5: چگونه همزمانی را در Clojure مدیریت کنم؟
+**A:** Clojure چندین همزمانی اولیه را ارائه می دهد:
+-`atom`- تغییرات مستقل و همزمان
+-`ref`+`dosync`- تغییرات هماهنگ و تراکنشی
+-`agent`- تغییرات ناهمزمان و مستقل
+- کانال های`core.async`- همزمانی به سبک CSP
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: پردازش خط لوله داده
+**مرحله 1: مشکل را درک کنید**
+داده ها را بخوانید، فیلتر کنید، تبدیل کنید و از طریق خط لوله جمع کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از ماکروهای threading Clojure (`->>`) و مبدل ها استفاده کنید.
+**مرحله 3: پیاده سازی **```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**مرحله 4: بهینه سازی**
+مبدل‌ها از ایجاد توالی‌های میانی اجتناب می‌کنند - آنها تبدیل‌ها را به یک پاس واحد می‌سازند.
+### مشکل 2: ساخت یک وب سرور ساده
+**مرحله 1: مشکل را درک کنید**
+با استفاده از Ring/Compojure یک سرور HTTP اولیه ایجاد کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از آداپتور حلقه و مسیریابی Compojure استفاده کنید.
+**مرحله 3: پیاده سازی **```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**مرحله 4: تمدید**
+میان افزار را برای ورود به سیستم، تجزیه JSON، احراز هویت و مدیریت خطا اضافه کنید.
 ---
 
 ## خلاصه

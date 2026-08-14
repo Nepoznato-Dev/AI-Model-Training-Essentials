@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "منهجية البحث"
-الوصف: "المنهج العلمي، أخذ العينات، الصلاحية، التصميم التجريبي، مراجعة النظراء"
-الفئة: "مرجع عام"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-review_by: "فريق قاعدة المعرفة المرجعية العامة"
+# Metadata
+title: "Research Methodology"
+description: "Scientific method, sampling, validity, experimental design, peer review"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [البحث، المنهجية، المرجع العام]
-مستوى الصعوبة: "مبتدئ"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "6 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [research, methodology, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #منهجية البحث
 منهجية البحث هي المنهج المنهجي لدراسة الأسئلة واختبار الفرضيات وتوليد معرفة موثوقة. سواء كنت تجري تجارب علمية، أو مسوحات للعلوم الاجتماعية، أو تحليل أعمال، أو بحثًا أكاديميًا، فإن المنهجية التي تختارها تحدد ما إذا كانت نتائجك موثوقة وقابلة للتكرار ومفيدة. إن الدراسة المصممة جيدًا تنتج نتائج جديرة بالثقة؛ فالإجابة سيئة التصميم تنتج ضجيجًا - أو ما هو أسوأ من ذلك، إجابات خاطئة واثقة.
 ---

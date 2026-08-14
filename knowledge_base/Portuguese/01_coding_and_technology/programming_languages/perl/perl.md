@@ -586,5 +586,164 @@ CMD ["perl", "bin/myapp.pl"]
 | Ciência de dados / ML | Não o ecossistema | Pitão, R |
 ---
 
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre`my`,`our`e`local`?
+**R:** Estas palavras-chave controlam o escopo das variáveis:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2: Como posso processar arquivos de texto de forma eficiente em Perl?
+**R:** Perl é excelente no processamento de texto. Use o operador diamante e regex:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3: Como posso usar referências e estruturas de dados complexas?
+**R:** Referências são a maneira do Perl criar estruturas aninhadas:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4: Quais são as variáveis ​​especiais do Perl que devo saber?
+**R:** Perl tem muitas variáveis ​​especiais. O mais importante:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5: Como escrevo Perl moderno e sustentável?
+**R:** Melhores práticas para Perl moderno:
+- Sempre use`strict`e`warnings`
+- Use`my`para todas as variáveis
+- Use identificadores de arquivos lexicais:`open my $fh, '<', $file`
+- Use módulos do CPAN (Moo/Moose para OOP, Try::Tiny para erros)
+- Use`say`em vez de`print`(com`feature 'say'`)
+- Formatar com `perltidy`
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Análise do arquivo de log
+**Etapa 1: Entenda o problema**
+Analise um log de acesso do Apache e conte solicitações por endereço IP.
+**Etapa 2: Identifique a abordagem**
+Use regex para extrair endereços IP, hash para contar ocorrências.
+**Etapa 3: Implementar**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Etapa 4: Estender**
+Adicione filtragem de data, análise de código de status e saída como CSV.
+### Problema 2: Renomeação de arquivos em lote com Regex
+**Etapa 1: Entenda o problema**
+Renomeie arquivos que correspondam a um padrão, transformando nomes de arquivos com regex.
+**Etapa 2: Identifique a abordagem**
+Use`glob`ou`opendir`para localizar arquivos, regex para transformar nomes.
+**Etapa 3: Implementar**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Etapa 4: verificar**
+Execute primeiro com o sinalizador`--dry-run`(apenas imprima, não mova).
+### Problema 3: Construindo um Web Scraper Simples
+**Etapa 1: Entenda o problema**
+Busque uma página da web e extraia todos os links.
+**Etapa 2: Identifique a abordagem**
+Use`LWP::Simple`para busca e regex ou`HTML::LinkExtor`para análise.
+**Etapa 3: Implementar**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Etapa 4: Estender**
+Lide com URLs relativos, filtre por domínio e siga a paginação.
+---
+
 ## Resumo
 A era dourada do Perl já passou, mas sua influência está em toda parte. Cada linguagem com expressões regulares, cada gerenciador de pacotes modelado em CPAN e cada sistema com`map`/`grep`/`reduce`carrega o DNA do Perl. Para novos projetos, a maioria dos desenvolvedores recorre ao Python ou Go. Mas Perl continua sendo uma ferramenta poderosa para processamento de texto, automação rápida e manutenção da grande quantidade de código Perl executando infraestruturas críticas em todo o mundo. Compreender Perl também significa entender de onde veio a programação moderna – ela moldou as ferramentas e os padrões que usamos hoje.

@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Finanzas e inversiones"
-descripción: "Finanzas personales, inversiones, mercados, jubilación"
-categoría: "Empresas y Economía"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Finance and Investing"
+description: "Personal finance, investing, markets, retirement"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de economía y negocios"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [finanzas, inversiones, negocios y economía]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "15 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [finance, investing, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "15 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Finanzas e inversiones
 ## Fundamentos de finanzas personales

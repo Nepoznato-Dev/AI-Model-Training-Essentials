@@ -1,41 +1,46 @@
 ---
-# Métadonnées
-titre : "Erlang & Elixir"
-description : "Référence complète pour le langage de programmation Erlang et Elixir couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Erlang & Elixir"
+description: "Comprehensive reference for the Erlang and Elixir programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [erlang-and-elixir, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "38 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [erlang-and-elixir, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "38 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Erlang & Élixir
-Erlang a été construit par Ericsson en 1986 pour alimenter les commutateurs téléphoniques, ce qui explique pourquoi il gère la concurrence, la tolérance aux pannes et les systèmes distribués mieux que presque tout le reste. Les processus Erlang sont légers, isolés et communiquent uniquement par transmission de messages. Lorsqu'un processus plante, un superviseur le redémarre. Cette philosophie du « laisser tomber » produit des systèmes qui fonctionnent pendant des années sans temps d'arrêt.
+Erlang a été construit par Ericsson en 1986 pour alimenter les commutateurs téléphoniques, ce qui explique pourquoi il gère la concurrence, la tolérance aux pannes et les systèmes distribués mieux que presque tout le reste. Les processus Erlang sont légers, isolés et communiquent uniquement par transmission de messages. Lorsqu'un processus plante, un superviseur le redémarre. Cette philosophie du « let it crash » produit des systèmes qui fonctionnent pendant des années sans temps d'arrêt.
 Elixir est un langage moderne construit sur la VM d'Erlang (BEAM) par Jose Valim en 2012. Il conserve tout ce qu'Erlang propose - concurrence, tolérance aux pannes, distribution - mais ajoute une syntaxe conviviale, une métaprogrammation et d'excellents outils (gestionnaire de packages Mix, registre de packages Hex). Elixir est largement utilisé pour les applications Web (via le framework Phoenix), les systèmes temps réel et les appareils embarqués (via Nerves).
 ---
 
@@ -921,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | Science des données / ML | Pas l'écosystème | Python, R |
 | Applications mobiles | Ne convient pas | Swift, Kotlin, Fléchette |
 | API REST simples | Possible mais excessif pour les petits services | Allez, Node.js, Python |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Comment fonctionne la philosophie "let it crash" d'Erlang ?
+**R :** Au lieu d'une programmation défensive, Erlang laisse les processus planter et les redémarre via les superviseurs :
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2 : Comment fonctionnent les pipelines Elixir ?
+**A :** L'opérateur`|>`transmet le résultat d'une fonction comme premier argument à la suivante :
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3 : Quelle est la différence entre Erlang et Elixir ?
+**R :** Elixir s'exécute sur la VM Erlang (BEAM) avec une syntaxe moderne :
+- Elixir : opérateur pipe, macros, protocoles, interpolation de chaînes
+- Erlang : syntaxe plus simple, OTP intégré, plus testé au combat
+- Les deux partagent le même modèle de concurrence, la même VM et le même écosystème
+### Q4 : Comment fonctionnent les GenServers dans Elixir ?
+**R :** GenServer est l'abstraction standard pour les processus avec état :
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5 : Comment gérer les erreurs dans Elixir ?
+**R :** Utilisez`try/rescue`pour les exceptions,`{:ok, result} | {:error, reason}`pour les échecs attendus :
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Création d'un magasin de valeurs-clés tolérant aux pannes
+**Étape 1 : Comprendre le problème**
+Créez un magasin clé-valeur qui survit aux pannes de processus.
+**Étape 2 : Identifiez l'approche**
+Utilisez un GenServer avec un superviseur.
+**Étape 3 : Mettre en œuvre**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**Étape 4 : Vérifier**
+Tuez le processus et vérifiez qu'il redémarre avec un nouvel état.
+### Problème 2 : Scraper Web simultané
+**Étape 1 : Comprendre le problème**
+Récupérez plusieurs URL simultanément et collectez les résultats.
+**Étape 2 : Identifiez l'approche**
+Utilisez les tâches Elixir pour une exécution simultanée.
+**Étape 3 : Mettre en œuvre**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**Étape 4 : Optimiser**
+Ajoutez une limitation de débit, des tentatives et un streaming pour les grandes listes d'URL.
 ---
 
 ## Résumé

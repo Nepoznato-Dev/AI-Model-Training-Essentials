@@ -115,7 +115,7 @@ class SimpleRAG:
         self.documents = docs
         
         # Convert documents to embeddings
-        # Each document becomes a vector of numbers (768 numbers in this case)
+        # Each document becomes a vector of numbers (384 dimensions for all-MiniLM-L6-v2)
         self.embeddings = self.embedding_model.encode(docs)
         
         print(f"✓ Created embeddings for {len(docs)} documents")
@@ -140,6 +140,11 @@ class SimpleRAG:
         # Convert query to embedding
         query_embedding = self.embedding_model.encode([query])
         
+        # Guard: check knowledge base is populated
+        if self.embeddings is None or len(self.documents) == 0:
+            print("\n⚠️  Knowledge base is empty. Add documents first.")
+            return []
+        
         # Calculate similarity between query and all documents
         # Cosine similarity returns a value between -1 and 1
         # 1 = identical, 0 = unrelated, -1 = opposite
@@ -148,6 +153,12 @@ class SimpleRAG:
         # Find the indices of the most similar documents
         # np.argsort sorts by similarity, we take the last top_k (highest values)
         top_indices = np.argsort(similarities)[-top_k:][::-1]
+        
+        # Check if the best match is actually relevant (similarity threshold)
+        best_similarity = similarities[top_indices[0]]
+        if best_similarity < 0.3:
+            print(f"\n⚠️  No relevant documents found (best similarity: {best_similarity:.3f})")
+            return []
         
         # Get the actual documents at those indices
         retrieved_docs = [self.documents[i] for i in top_indices]
@@ -177,7 +188,8 @@ class SimpleRAG:
         # Create a prompt for the language model
         # We tell it to use the context to answer the question
         prompt = f"""Based on the following information, answer the question.
-        
+If the context does not contain enough information to answer, say "I don't know".
+
 Context: {context}
 
 Question: {query}
@@ -206,6 +218,13 @@ Answer:"""
         
         # Step 1: Retrieve relevant document(s)
         retrieved_docs = self.retrieve(query, top_k=1)
+        
+        # If no relevant documents found, say so
+        if not retrieved_docs:
+            answer = "I don't know — the knowledge base doesn't contain relevant information."
+            print(f"💡 Answer: {answer}\n")
+            return answer
+        
         context = retrieved_docs[0]  # Get the top document
         
         # Step 2: Generate answer using the retrieved context

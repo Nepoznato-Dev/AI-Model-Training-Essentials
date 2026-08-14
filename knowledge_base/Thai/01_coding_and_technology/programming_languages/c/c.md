@@ -54,7 +54,7 @@ C คือภาษาที่อยู่เบื้องหลังระ
 | ข้อจำกัด | รายละเอียด | วิธีแก้ปัญหาทั่วไป |
 |----------|---------|-------------------|
 | **การจัดการหน่วยความจำด้วยตนเอง** | ไม่มีตัวรวบรวมขยะ - คุณจัดสรรและเพิ่มหน่วยความจำด้วยตัวเอง | การใช้ malloc/ฟรี อย่างระมัดระวัง รูปแบบ RAII ใน C++ |
-| **บัฟเฟอร์ล้น** | ไม่มีการตรวจสอบขอบเขตในอาร์เรย์ -- ง่ายต่อการเขียนบัฟเฟอร์ที่สิ้นสุด | ใช้ strncpy แทน strcpy เปิดใช้งานคำเตือนคอมไพเลอร์ |
+| **บัฟเฟอร์ล้น** | ไม่มีการตรวจสอบขอบเขตในอาร์เรย์ -- ง่ายต่อการเขียนบัฟเฟอร์ที่ผ่านมาสิ้นสุด | ใช้ strncpy แทน strcpy เปิดใช้งานคำเตือนคอมไพเลอร์ |
 | **ไม่มี OOP ในตัว** | ขั้นตอนเท่านั้น -- ไม่มีคลาส การสืบทอด หรือเมธอด | ใช้ structs + ตัวชี้ฟังก์ชัน หรือเปลี่ยนเป็น C++ |
 | **ไลบรารี่มาตรฐานมีจำนวนจำกัด** | ฟังก์ชั่นในตัวน้อยที่สุด | ไลบรารีบุคคลที่สามหรือเขียน | ของคุณเอง
 | **พฤติกรรมที่ไม่ได้กำหนด** | ข้อผิดพลาดมากมายคอมไพล์ได้ดีแต่เกิดข้อผิดพลาดอย่างคาดเดาไม่ได้ | ใช้น้ำยาฆ่าเชื้อ เครื่องวิเคราะห์ไฟฟ้าสถิต |
@@ -824,7 +824,7 @@ make clean    # Removes build artifacts
 | **GCC / เสียงดังกราว** | คอมไพเลอร์ |
 | **สร้าง / CMake** | สร้างระบบ |
 | **จีดีบี** | ดีบักเกอร์ |
-| **วาลกรินด์** | ตัวตรวจจับข้อผิดพลาดของหน่วยความจำ (การรั่วไหล, การเข้าถึงที่ไม่ถูกต้อง) |
+| **วาลกรินด์** | เครื่องตรวจจับข้อผิดพลาดของหน่วยความจำ (การรั่วไหล, การเข้าถึงที่ไม่ถูกต้อง) |
 | **น้ำยาฆ่าเชื้อที่อยู่** | การตรวจสอบหน่วยความจำเวลาคอมไพล์ |
 | **cppcheck** | การวิเคราะห์แบบคงที่ |
 | **รูปแบบเสียงดังกราว** | การจัดรูปแบบโค้ด |
@@ -855,5 +855,513 @@ make clean    # Removes build artifacts
 รหัสการผลิตส่วนใหญ่กำหนดเป้าหมายไปที่ C11 หรือ C17 C23 นำเสนอสิ่งอำนวยความสะดวกที่ทันสมัย ​​แต่การยอมรับต้องใช้เวลา
 ---
 
+## คำถามและคำตอบสังเคราะห์
+### Q1: อะไรคือความแตกต่างระหว่างพอยน์เตอร์และอาร์เรย์ในภาษา C?
+**ตอบ:** อาร์เรย์และพอยน์เตอร์เกี่ยวข้องกันแต่แตกต่างกัน อาร์เรย์คือบล็อกหน่วยความจำที่อยู่ติดกันซึ่งมีขนาดคงที่ซึ่งทราบ ณ เวลาคอมไพล์ ตัวชี้คือตัวแปรที่เก็บที่อยู่หน่วยความจำ อาร์เรย์สลายตัวไปยังพอยน์เตอร์เมื่อส่งผ่านไปยังฟังก์ชัน แต่`sizeof(array)`ให้ขนาดรวม ในขณะที่`sizeof(pointer)`ให้เฉพาะขนาดพอยน์เตอร์ (4 หรือ 8 ไบต์) ชื่ออาร์เรย์ไม่สามารถแก้ไขค่า lvalue ได้ — คุณไม่สามารถทำ`arr++`ได้
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Q2: ฉันจะจัดการหน่วยความจำอย่างเหมาะสมและหลีกเลี่ยงการรั่วไหลได้อย่างไร
+**A:** ทุก`malloc`/`calloc`จะต้องมี`free`ที่สอดคล้องกัน ข้อผิดพลาดทั่วไป: ลืมที่จะปล่อย (รั่ว), ปล่อยสองครั้ง (พฤติกรรมที่ไม่ได้กำหนด), การใช้หน่วยความจำหลังจากปล่อย (ใช้หลังจากฟรี) และไม่ตรวจสอบค่าส่งคืน`malloc`(NULL เมื่อล้มเหลว) แนวปฏิบัติที่ดีที่สุด: จัดสรรและว่างในโมดูลเดียวกัน ใช้รูปแบบ "goto cleanup" เพื่อจัดการข้อผิดพลาด และตั้งค่าพอยน์เตอร์ที่ว่างเป็น NULL เสมอ
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Q3: แนวทางปฏิบัติที่ดีที่สุดสำหรับการจัดการข้อผิดพลาดในภาษา C คืออะไร?
+**A:** C ไม่มีข้อยกเว้น การจัดการข้อผิดพลาดใช้ค่าส่งคืน (รหัสข้อผิดพลาด ตัวชี้ NULL ค่าลบ) รูปแบบมาตรฐาน: ฟังก์ชันส่งคืนรหัสสถานะหรือ NULL เมื่อล้มเหลว และตั้งค่า`errno`สำหรับการเรียกของระบบ ใช้รูปแบบ "goto cleanup" สำหรับการล้างข้อมูลทรัพยากรเมื่อมีข้อผิดพลาด ตรวจสอบค่าที่ส่งคืนของ`malloc`,`fopen`และฟังก์ชันอื่นๆ ที่อาจล้มเหลวเสมอ
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Q4: โครงสร้าง สหภาพ และบิตฟิลด์แตกต่างกันอย่างไรในโครงร่างหน่วยความจำ
+**A:** โครงสร้างจัดวางสมาชิกตามลำดับโดยมีช่องว่างภายในที่เป็นไปได้สำหรับการจัดตำแหน่ง สหภาพแรงงานซ้อนทับสมาชิกทั้งหมดในตำแหน่งหน่วยความจำเดียวกัน - ขนาดเท่ากับสมาชิกที่ใหญ่ที่สุด Bitfields บรรจุค่าหลายค่าเป็นจำนวนเต็มตัวเดียว โครงสร้างมีไว้สำหรับข้อมูลที่ต่างกัน สหภาพสำหรับการแบ่งประเภทหรือประหยัดพื้นที่เมื่อมีการใช้งานเพียงฟิลด์เดียว และบิตฟิลด์สำหรับการจัดเก็บแฟล็กขนาดกะทัดรัด
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Q5: พอยน์เตอร์ฟังก์ชันคืออะไร และฉันควรใช้เมื่อใด
+**ตอบ:** ตัวชี้ฟังก์ชันจัดเก็บที่อยู่ของฟังก์ชันและเปิดใช้งานการเรียกกลับ ความหลากหลาย และสถาปัตยกรรมปลั๊กอิน พวกมันเป็นรากฐานของแนวทางของ C สำหรับฟังก์ชันที่มีลำดับสูงกว่า (เช่น`qsort`,`bsearch`) ประกาศด้วยไวยากรณ์: `return_type (*name)(parameter_types)`
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การใช้งานอาร์เรย์แบบไดนามิก (เวกเตอร์)
+**คำชี้แจงปัญหา:** ใช้อาร์เรย์ไดนามิกในภาษา C ซึ่งจะขยายโดยอัตโนมัติเมื่อมีการเพิ่มองค์ประกอบ รองรับการต่อท้ายแบบตัดจำหน่าย O(1) และจัดให้มีการล้างข้อมูลที่เหมาะสม นี่คือ C เทียบเท่าของ C++ `std::vector`
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+อาร์เรย์แบบไดนามิกต้องการ: (1) บัฟเฟอร์ที่จัดสรรฮีป (2) การติดตามขนาด (องค์ประกอบที่ใช้) และความจุ (สล็อตที่จัดสรร) (3) การจัดสรรใหม่เมื่อขนาดถึงความจุ (4) การล้างหน่วยความจำที่เหมาะสม ปัจจัยการเจริญเติบโตของ 2x ให้ O (1) ตัดจำหน่ายต่อท้าย
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้`malloc`สำหรับการจัดสรรเริ่มต้น`realloc`สำหรับการเติบโต
+- จัดเก็บข้อมูลตัวชี้ ขนาด และความจุในโครงสร้าง
+- เติบโตด้วยกำลังการผลิตสองเท่าเมื่อ`size == capacity`.
+- ให้การดำเนินการ`push`,`pop`,`get`,`set`และ `free`
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- ตัดจำหน่าย O(1) push: การเพิ่มขึ้นเป็นสองเท่าหมายความว่าแต่ละองค์ประกอบจะถูกคัดลอกมากที่สุด O(log n) ครั้งทั้งหมด
+- การตรวจสอบขอบเขตใน`vec_get`และ`vec_pop`จะตรวจจับข้อผิดพลาดได้ตั้งแต่เนิ่นๆ ซึ่งจำเป็นสำหรับภาษา C ซึ่งไม่มีเครือข่ายความปลอดภัยรันไทม์
+- หน่วยความจำ: หลังจากกด 100 ครั้งโดยเริ่มจากความจุ 4 ความจุจะถึง 128 (4→8→16→32→64→128)
+- การผลิต: ใช้`shrink_to_fit`(จัดสรรใหม่เป็นขนาดที่แน่นอน) เมื่อขยายเสร็จแล้วเพื่อเรียกคืนหน่วยความจำที่ไม่ได้ใช้
+### ปัญหาที่ 2: สร้างตารางแฮชอย่างง่าย
+**คำชี้แจงปัญหา:** ใช้ตารางแฮชด้วยคีย์สตริงและค่าจำนวนเต็มโดยใช้การผูกมัดแยกกันเพื่อแก้ไขการชนกัน รองรับการดำเนินการแทรก ค้นหา และลบ
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+ตารางแฮชแมปคีย์กับดัชนีอาร์เรย์ผ่านฟังก์ชันแฮช การชนกัน (การแมปคีย์ที่แตกต่างกันกับดัชนีเดียวกัน) ได้รับการแก้ไขด้วยการผูกมัดแยกกัน: แต่ละที่เก็บข้อมูลเป็นรายการเชื่อมโยงของรายการ เราต้องการ: ฟังก์ชันแฮช, แทรก, ค้นหา, ลบ และล้างข้อมูล
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้แฮช FNV-1a เพื่อการกระจายคีย์สตริงที่ดี
+- อาร์เรย์ของพอยน์เตอร์ที่เก็บข้อมูล (หัวรายการที่เชื่อมโยง)
+- การติดตามปัจจัยโหลด ปรับขนาดเมื่อปัจจัยโหลดเกินเกณฑ์
+- การดำเนินการทั้งหมดเป็นค่าเฉลี่ย O(1) O(n) กรณีที่แย่ที่สุด
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- ค่าเฉลี่ย O(1) สำหรับการแทรก/ค้นหา/ลบด้วยฟังก์ชันแฮชที่ดีและตัวประกอบการโหลดที่เหมาะสม
+- FNV-1a ให้การกระจายคีย์สตริงที่ยอดเยี่ยมพร้อมการคำนวณขั้นต่ำ
+- เทคนิคตัวชี้ต่อตัวชี้ (`Entry **pp`) ใน`hashmap_remove`จัดการการลบทั้งส่วนหัวของรายการและรายการกลางได้อย่างหรูหราโดยไม่มีกรณีพิเศษ
+- การผลิต: เพิ่มการปรับปรุงใหม่เมื่อปัจจัยโหลดเกินเกณฑ์ ใช้การกำหนดที่อยู่แบบเปิด (การตรวจสอบเชิงเส้น) เพื่อประสิทธิภาพแคชที่ดีขึ้น
+### ปัญหาที่ 3: ใช้ Ring Buffer สำหรับผู้ผลิต-ผู้บริโภค
+**คำชี้แจงปัญหา:** ใช้บัฟเฟอร์ริงสำหรับผู้บริโภครายเดียวสำหรับผู้ผลิตรายเดียวที่ไม่มีการล็อคในภาษา C เพื่อการสื่อสารระหว่างเธรดที่มีประสิทธิภาพสูงโดยไม่มีการจัดสรรแบบไดนามิกระหว่างการดำเนินการ
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+บัฟเฟอร์แบบวงแหวน (บัฟเฟอร์แบบวงกลม) ใช้อาร์เรย์ที่มีขนาดคงที่พร้อมดัชนีการอ่านและเขียน เมื่อบัฟเฟอร์เต็ม ตัวเขียนจะบล็อกหรือเขียนทับ สำหรับ SPSC (ผู้ผลิตรายเดียวผู้บริโภครายเดียว) เราสามารถใช้การดำเนินการแบบอะตอมมิกแทนการล็อคเพื่อให้ได้ปริมาณงานสูงสุด
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- อาร์เรย์ขนาดคงที่จัดสรรครั้งเดียวเมื่อเริ่มต้น
+-`head`(ตำแหน่งอ่าน) และ`tail`(ตำแหน่งเขียน) เป็นดัชนีอะตอมมิก
+- ผู้ผลิตก้าวหน้า`tail`; ผู้บริโภคก้าวหน้า `head`
+- บัฟเฟอร์จะว่างเปล่าเมื่อ`head == tail`; เต็มเมื่อ`(tail + 1) % capacity == head`.
+- ใช้อะตอมมิก C11 พร้อมการเรียงลำดับหน่วยความจำที่เหมาะสม
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- ไม่มีการล็อค: การดำเนินการแบบอะตอมมิกเท่านั้น - ไม่มี mutexes ไม่มีการสลับบริบท
+- การจัดลำดับหน่วยความจำ:`release`เมื่อเขียนช่วยให้มั่นใจว่าข้อมูลจะมองเห็นได้ก่อนการอัปเดตดัชนี `acquire`เมื่ออ่านจะทำให้เราเห็นข้อมูลหลังจากอ่านดัชนี
+- ความจุแบบ Power-of-2: เปิดใช้งาน`& (capacity - 1)`แทน`% capacity`— เร็วขึ้นอย่างเห็นได้ชัด
+- ปริมาณงาน: การดำเนินงานนับพันล้านต่อวินาทีบนฮาร์ดแวร์สมัยใหม่
+- การผลิต: เพิ่มช่องว่างภายในระหว่าง`head`และ`tail`เพื่อป้องกันการแชร์ที่ผิดพลาด (แต่ละอันอยู่บนบรรทัดแคชของตัวเอง)
+---
+
 ## สรุป
-C คือรากฐานของคอมพิวเตอร์ยุคใหม่ ช่วยให้คุณควบคุมฮาร์ดแวร์ได้สูงสุดโดยมีค่าใช้จ่ายด้านนามธรรมน้อยที่สุด ค่าใช้จ่ายในการควบคุมนั้นเป็นความรับผิดชอบ คุณจัดการหน่วยความจำ ตรวจสอบขอบเขต และจัดการข้อผิดพลาดด้วยตนเอง สำหรับการเขียนโปรแกรมระบบ การพัฒนาแบบฝัง และข้อจำกัดด้านประสิทธิภาพและทรัพยากรทุกที่ C ยังคงไม่มีใครเทียบได้ สำหรับทุกสิ่งทุกอย่าง ภาษาระดับสูงที่สร้างจากภาษา C มักจะเป็นตัวเลือกที่มีประสิทธิผลมากกว่า
+C คือรากฐานของคอมพิวเตอร์ยุคใหม่ มันช่วยให้คุณควบคุมฮาร์ดแวร์ได้สูงสุดโดยมีค่าใช้จ่ายนามธรรมน้อยที่สุด ค่าใช้จ่ายในการควบคุมนั้นเป็นความรับผิดชอบ คุณจัดการหน่วยความจำ ตรวจสอบขอบเขต และจัดการข้อผิดพลาดด้วยตนเอง สำหรับการเขียนโปรแกรมระบบ การพัฒนาแบบฝัง และข้อจำกัดด้านประสิทธิภาพและทรัพยากรทุกที่ C ยังคงไม่มีใครเทียบได้ สำหรับทุกสิ่งทุกอย่าง ภาษาระดับสูงที่สร้างจากภาษา C มักจะเป็นตัวเลือกที่มีประสิทธิผลมากกว่า

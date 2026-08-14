@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Visual Basic"
-descripción: "Referencia completa para el lenguaje de programación Visual Basic que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Visual Basic"
+description: "Comprehensive reference for the Visual Basic programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [visual-básico, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "33 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [visual-basic, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "33 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Visual Básico
 Visual Basic (VB) es un lenguaje de programación desarrollado por Microsoft. Ha evolucionado a lo largo de varias generaciones: el Visual Basic original (1991), Visual Basic 6.0 (1998), VB.NET (2002, parte de .NET Framework) y Visual Basic ..NET (actual, ahora llamado simplemente "Visual Basic" como parte de .NET). VB fue diseñado para ser accesible para principiantes y para el desarrollo rápido de aplicaciones (RAD), con un enfoque en interfaces gráficas de usuario y programación basada en eventos.
 Hoy en día, VB.NET continúa como parte del ecosistema .NET junto con C#, aunque Microsoft ha indicado que C# será el lenguaje principal en el futuro. VB sigue siendo ampliamente utilizado en entornos empresariales, particularmente para aplicaciones heredadas de Windows, automatización de oficina (VBA) y herramientas comerciales internas.
@@ -809,6 +814,89 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 | Aprendiendo a programar | Sintaxis muy accesible | Python (más versátil) |
 | Nuevo desarrollo .NET | Posible pero se prefiere C# | C# |
 | Aplicaciones multiplataforma | No adecuado | C#, Flutter, tecnologías web |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre VB6, VB.NET y VBA?
+**R:** Cada uno tiene un propósito diferente:
+- **VB6**: Visual Basic clásico: basado en COM, solo para Windows, heredado
+- **VB.NET**: lenguaje .NET moderno: se ejecuta en CLR, programación orientada a objetos completa, parte de Visual Studio
+- **VBA**: Visual Basic para aplicaciones, integrado en Microsoft Office
+### P2: ¿Cómo automatiza VBA Excel?
+**R:** VBA puede manipular celdas, rangos y hojas de trabajo:
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### P3: ¿Cómo creo una aplicación de Windows Forms en VB.NET?
+**R:** Utilice el diseñador de Visual Studio:
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### P4: ¿Cuáles son las diferencias clave entre VB.NET y C#?
+**R:** Comparten el mismo tiempo de ejecución y bibliotecas. Diferencias de sintaxis:
+- VB.NET: `Dim`, `Sub`, `Function`,`If...Then...End If`
+- C#: tipos primero, bloques `{}`, terminadores `;`
+- VB.NET no distingue entre mayúsculas y minúsculas; C# distingue entre mayúsculas y minúsculas
+### P5: ¿Todavía vale la pena aprender VB.NET?
+**R:** Para mantener aplicaciones existentes, sí. Para proyectos nuevos, se prefiere C#. VBA sigue siendo esencial para la automatización de oficinas.
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Automatizar un informe de Excel con VBA
+**Paso 1: Comprenda el problema**
+Genere un informe de ventas mensual a partir de datos sin procesar.
+**Paso 2: Identificar el enfoque**
+Utilice VBA para leer datos, calcular resúmenes y formatear resultados.
+**Paso 3: Implementar**```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**Paso 4: Extender**
+Agregue gráficos, formato condicional y entrega de correo electrónico.
 ---
 
 ## Resumen

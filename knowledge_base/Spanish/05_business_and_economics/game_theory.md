@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Teoría de juegos y pensamiento estratégico"
-descripción: "Equilibrio de Nash, dilema del prisionero, diseño de mecanismos, subastas"
-categoría: "Empresas y Economía"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Game Theory and Strategic Thinking"
+description: "Nash equilibrium, prisoner's dilemma, mechanism design, auctions"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de economía y negocios"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [juego, teoría, economía y negocios]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "7 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [game, theory, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Teoría de juegos y pensamiento estratégico
 La teoría de juegos es el estudio matemático de las interacciones estratégicas: situaciones en las que el resultado depende no sólo de lo que usted hace, sino de lo que hacen los demás. Se aplica en todas partes: competencia empresarial, relaciones internacionales, subastas, negociaciones, biología evolutiva y decisiones cotidianas como elegir una ruta a través del tráfico. La idea central es que los actores racionales en situaciones estratégicas no sólo optimizan su propia estrategia: anticipan lo que otros harán y otros están haciendo lo mismo.

@@ -204,7 +204,7 @@ Most startups fail. Estimates suggest 90% of venture-backed startups do not retu
 
 ## Supply Chain and Operations
 
-Supply chain management is the art and science of getting the right product to the right place at the right time at the right cost. It sounds simple. It is extraordinarily difficult.
+Supply chain management is the coordinated process of delivering the right product to the right place at the right time at the right cost. The objective is straightforward; the execution is complex.
 
 ### Key Concepts
 

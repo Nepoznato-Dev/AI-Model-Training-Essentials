@@ -1,38 +1,42 @@
 ---
-# فراداده
-عنوان: "استنتاج علی"
-توضیحات: "DAG ها، عوامل مخدوش کننده، تفاوت در تفاوت ها، متغیرهای ابزاری"
-دسته بندی: "علم داده و تجزیه و تحلیل"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش علم داده و تجزیه و تحلیل"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [علت، استنتاج، علم داده و تحلیل]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "5 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Causal Inference"
+description: "DAGs, confounders, difference-in-differences, instrumental variables"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [causal, inference, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "5 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # استنتاج علی
 استنتاج علّی علم تعیین اینکه آیا یک چیز واقعاً باعث دیگری می شود - نه فقط اینکه آیا آنها همبستگی دارند یا خیر. همبستگی به شما می گوید که دو متغیر با هم حرکت می کنند. علیت به شما می گوید که تغییر یکی، دیگری را تغییر می دهد. این تمایز در پزشکی (آیا این دارو کار می کند؟)، سیاست (آیا این مداخله فقر را کاهش می دهد؟)، تجارت (آیا این کمپین تبلیغاتی فروش را افزایش می دهد؟) و علم (آیا این مکانیسم پدیده را توضیح می دهد؟) اهمیت زیادی دارد.

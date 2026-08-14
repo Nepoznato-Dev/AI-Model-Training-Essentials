@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # R
 R è un linguaggio e un ambiente di programmazione progettati specificamente per il calcolo statistico e l'analisi dei dati. Creato da Ross Ihaka e Robert Gentleman all'Università di Auckland nel 1993 (da qui "R"), è un'implementazione del linguaggio S con estensioni significative. R è open source e gestito dal R Core Team. È lo strumento standard per statistici, analisti di dati e ricercatori nel mondo accademico, sanitario, finanziario e governativo.
 R eccelle nella manipolazione dei dati, nella modellazione statistica, nella visualizzazione e nel reporting. Il suo ecosistema di pacchetti (CRAN) comprende oltre 20.000 pacchetti che coprono praticamente ogni metodo statistico mai ideato.
@@ -45,7 +46,7 @@ R eccelle nella manipolazione dei dati, nella modellazione statistica, nella vis
 
 ## Perché R è importante
 - **Calcolo statistico**: la raccolta più completa di metodi statistici in qualsiasi lingua.
-- **Visualizzazione dei dati**: ggplot2 produce grafica di qualità da pubblicazione. La grammatica del paradigma grafico non ha eguali.
+- **Visualizzazione dei dati**: ggplot2 produce grafica di qualità di pubblicazione. La grammatica del paradigma grafico non ha eguali.
 - **Ricerca riproducibile**: R Markdown / Quarto ti consente di combinare codice, risultati e narrativa in un unico documento.
 - **Standard accademico**: utilizzato in statistica, bioinformatica, epidemiologia, ecologia, economia e scienze sociali.
 - **Tidyverse**: un insieme coeso di pacchetti (dplyr, ggplot2, tidyr, readr) che rendono l'analisi dei dati elegante e coerente.
@@ -54,7 +55,7 @@ R eccelle nella manipolazione dei dati, nella modellazione statistica, nella vis
 | Limitazione | Dettagli | Soluzione tipica |
 |-----------|---------|-------------|
 | **Prestazioni** | A thread singolo per impostazione predefinita; lento per set di dati di grandi dimensioni | Utilizzare`data.table`, pacchetti paralleli o Rcpp per l'integrazione C++ |
-| **Utilizzo della memoria** | Carica interi set di dati nella RAM | Utilizza`data.table::fread`, pacchetto freccia per l'elaborazione out-of-core |
+| **Utilizzo della memoria** | Carica interi set di dati nella RAM | Utilizzare`data.table::fread`, pacchetto freccia per l'elaborazione out-of-core |
 | **Non è un linguaggio generico** | Scomodo per lo sviluppo web, la programmazione di sistemi o le app | Utilizza Python, Go o JavaScript per attività non statistiche |
 | **Sintassi incoerente** | La base R ha delle stranezze; pacchetti diversi utilizzano convenzioni diverse | Usa tidyverse per coerenza |
 | **Mercato del lavoro** | Principalmente ruoli accademici/di ricerca | I ruoli di data science preferiscono sempre più Python |
@@ -603,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Sistemi ML di produzione | Non progettato per la distribuzione | Pitone, Java |
 | Sviluppo web | Non adatto | JavaScript, Python |
 | Elaborazione dati su larga scala | Legato alla memoria | Python (PySpark), SQL |
+---
+
+## Domande e risposte sintetiche
+### D1: Qual è la differenza tra`<-`e`=`per l'assegnazione?
+**R:** Entrambi assegnano valori, ma`<-`è l'operatore di assegnazione R idiomatico. Funziona in tutti i contesti, comprese le chiamate di funzione interne:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### D2: Come gestisco i dati mancanti in R?
+**R:** R utilizza`NA`per i valori mancanti. La maggior parte delle funzioni hanno un parametro `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### D3: Quando dovrei utilizzare`lapply`rispetto a`sapply`rispetto a `vapply`?
+**R:** Tutti applicano una funzione su una lista/vettore, ma differiscono nell'output:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### D4: Come posso creare visualizzazioni efficaci con ggplot2?
+**R:** Segui la grammatica della grafica: associa l'estetica dei dati alle proprietà visive:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### D5: Come posso scrivere codice R efficiente per set di dati di grandi dimensioni?
+**R:** Pratiche chiave:
+- Preassegnare i vettori:`x <- numeric(n)`invece di crescere con`c()`
+- Utilizza`data.table`per set di dati di grandi dimensioni (100 volte più veloce di data.frame)
+- Vettorializzare le operazioni: evitare loop ove possibile
+- Utilizzare`vapply`su`sapply`per la sicurezza del tipo
+- Profilo con`Rprof()`o`profvis`
+- Considera il pacchetto`arrow`per i dati out-of-core
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: pulire e analizzare un set di dati disordinato
+**Passaggio 1: comprendere il problema**
+Abbiamo un frame di dati con valori mancanti, tipi incoerenti e valori anomali. Dobbiamo pulirlo e calcolare statistiche riassuntive.
+**Passaggio 2: identificare l'approccio**
+Utilizza i verbi tidyverse:`filter`,`mutate`,`summarize`e`group_by`.
+**Passaggio 3: implementazione**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Passaggio 4: verifica**
+Controlla il conteggio delle righe prima/dopo, convalida gli intervalli e verifica i totali con i dati di origine.
+### Problema 2: costruire un modello di regressione lineare
+**Passaggio 1: comprendere il problema**
+Prevedere una variabile di risultato continua da più predittori.
+**Passaggio 2: identificare l'approccio**
+Utilizzare`lm()`per la regressione lineare, verificare le ipotesi e valutare l'adattamento del modello.
+**Passaggio 3: implementazione**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Passaggio 4: valutazione**
+Controlla R-quadrato, grafici dei residui per i modelli e AIC per il confronto dei modelli.
+### Problema 3: creazione di un report riproducibile
+**Passaggio 1: comprendere il problema**
+Crea un report che combini analisi, visualizzazioni e testo narrativo in un formato riproducibile.
+**Passaggio 2: identificare l'approccio**
+Usa R Markdown (o Quarto) per intercalare pezzi di codice con il testo.
+**Passaggio 3: implementazione**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSO, avviso = FALSO)
+biblioteca(tidyverse)
+dati <- read_csv("dati.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**Passaggio 4: rendering**
+`rmarkdown::render("report.Rmd")`produce un documento HTML autonomo.
 ---
 
 ## Riepilogo

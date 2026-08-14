@@ -1,41 +1,46 @@
 ---
-# Metadatos
-título: "Aprendizaje de la ciencia y la pedagogía"
-descripción: "Práctica de recuperación, repetición espaciada, taxonomía de Bloom, diseño de aprendizaje"
-categoría: "Referencia general"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Learning Science and Pedagogy"
+description: "Retrieval practice, spaced repetition, Bloom's taxonomy, learning design"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de referencia general"
+reviewed_by: "General Reference Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [aprendizaje, ciencia, pedagogía, referencia general]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "7 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [learning, science, pedagogy, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Aprendizaje de Ciencias y Pedagogía
-El aprendizaje de la ciencia es el estudio interdisciplinario de cómo aprenden las personas, basándose en la psicología, la neurociencia, la educación y la ciencia cognitiva. La pedagogía es el arte y la ciencia de enseñar. Juntos, responden preguntas que son importantes para cualquiera que enseñe, capacite, oriente o diseñe contenido educativo: ¿Qué es lo que realmente ayuda a las personas a aprender? ¿Qué técnicas de estudio comunes son ineficaces? ¿Cómo debería estructurarse la instrucción para lograr la máxima retención y transferencia?
+El aprendizaje de la ciencia es el estudio interdisciplinario de cómo aprenden las personas, basándose en la psicología, la neurociencia, la educación y la ciencia cognitiva. La pedagogía es la práctica y metodología de la enseñanza. Juntos, abordan preguntas relevantes para cualquiera que enseñe, capacite, oriente o diseñe contenido educativo: ¿Qué métodos ayudan a las personas a aprender de manera efectiva? ¿Qué técnicas de estudio comunes son ineficientes? ¿Cómo debería estructurarse la instrucción para una retención y transferencia óptimas?
 ---
 
 ## Cómo funciona el aprendizaje
@@ -91,10 +96,10 @@ El aprendizaje de la ciencia es el estudio interdisciplinario de cómo aprenden 
 | Revisión | Tiempo | Efecto |
 |--------|--------|--------|
 | **Primera reseña** | 1 día después de aprender | Aumenta significativamente la retención |
-| **2da revisión** | 3 días después | Fortalece aún más la memoria |
+| **2da reseña** | 3 días después | Fortalece aún más la memoria |
 | **Tercera reseña** | 7 días después | La memoria se vuelve más duradera |
 | **Cuarta reseña** | 14 días después | Consolidación a largo plazo |
-| **Quinta revisión** | 30 días después | Memoria estable a largo plazo |
+| **Quinta reseña** | 30 días después | Memoria estable a largo plazo |
 Cada revisión empuja aún más la curva del olvido. El intervalo óptimo aumenta con cada recuperación exitosa.
 ---
 

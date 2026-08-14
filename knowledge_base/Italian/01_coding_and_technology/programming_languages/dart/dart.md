@@ -56,7 +56,7 @@ Dart combina le migliori caratteristiche dei linguaggi moderni: è orientato agl
 |-----------|---------|-------------|
 | **Incentrato sul flutter** | La maggior parte dell'utilizzo di Dart è Flutter; limitato al di fuori di esso | Utilizzare per svolazzare; altre lingue per lavori non UI |
 | **Ecosistema più piccolo** | Meno pacchetti rispetto a React Native o piattaforme native | In rapida crescita; canali della piattaforma per API native |
-| **Prestazioni Web** | Dart compilato in WASM è ancora in fase di maturazione | Utilizza il renderer CanvasKit per prestazioni costanti |
+| **Prestazioni web** | Dart compilato in WASM è ancora in fase di maturazione | Utilizza il renderer CanvasKit per prestazioni costanti |
 | **Mercato del lavoro** | Esistono ruoli Flutter, ma meno di quelli mobili nativi | Crescente domanda di sviluppatori multipiattaforma |
 | **Non per backend** | Possibile (Dart lato server) ma non il caso d'uso | Utilizza Go, Node.js, Python per i backend |
 ---
@@ -980,11 +980,176 @@ flutter build apk --release --dart-define=ENV=staging
 |----------|-------------|-------------|
 | App mobili multipiattaforma | Flutter è eccellente | React Native, Swift/Kotlin nativo |
 | Desktop multipiattaforma | Flutter lo supporta | Elettrone, Do#, Avalonia |
-| Applicazioni Web | Esiste il web Flutter | React, Vue, Angular per app Web più ricche |
+| Applicazioni web | Esiste il web Flutter | React, Vue, Angular per app Web più ricche |
 | IU integrate | Flutter per incorporato | C, LVGL |
 | Sviluppo back-end | Non è il caso d'uso principale | Vai, Node.js, Python |
 | Scienza dei dati/ML | Non adatto | Pitone, R |
 | Programmazione dei sistemi | Non adatto | C, C++, Ruggine |
+---
+
+## Domande e risposte sintetiche
+### D1: Come funziona la sicurezza nulla di Dart?
+**R:** Dart 2.12+ ha una sicurezza sonora nulla. Per impostazione predefinita, le variabili non sono nullable; utilizzare`?`per consentire null:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### D2: Qual è la differenza tra`Future`e `Stream`?
+**R:**`Future`rappresenta un singolo risultato asincrono; `Stream`rappresenta una sequenza di eventi asincroni:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### D3: Come posso gestire lo stato in un'app Flutter?
+**R:** Approcci multipli a seconda della complessità:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### D4: Come funzionano i metodi di estensione in Dart?
+**R:** Le estensioni aggiungono funzionalità ai tipi esistenti senza ereditarietà:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### D5: Come posso scrivere un codice Dart/Flutter performante?
+**R:** Pratiche chiave:
+- Utilizzare i costruttori`const`ove possibile
+- Evita di ricostruire i widget: usa`const`,`final`e`shouldRebuild`
+- Utilizza`ListView.builder`invece di`ListView`per elenchi di grandi dimensioni
+- Profilo con Flutter DevTools
+- Utilizzare`compute()`per operazioni costose su thread isolati
+- Riduci al minimo le chiamate `setState`: sii specifico su ciò che deve essere ricostruito
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: creazione di un client API type-safe
+**Passaggio 1: comprendere il problema**
+Crea un client API che recuperi i dati e restituisca oggetti tipizzati correttamente.
+**Passaggio 2: identificare l'approccio**
+Utilizza le classi Dart con`fromJson`/`toJson`, async/await e classi sigillate per i risultati.
+**Passaggio 3: implementazione**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Passaggio 4: verifica**
+Prova con un client HTTP fittizio. Verificare la gestione degli errori per errori di rete e risposte errate.
+### Problema 2: implementare una ricerca reattiva con antirimbalzo
+**Passaggio 1: comprendere il problema**
+Crea un campo di ricerca che interroghi un'API ma rimbalzi l'input per evitare richieste eccessive.
+**Passaggio 2: identificare l'approccio**
+Utilizza Dart Streams con`debounceTime`e`distinct`.
+**Passaggio 3: implementazione**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Passaggio 4: prova**
+Verifica che la digitazione rapida attivi solo una chiamata API dopo il periodo di antirimbalzo.
 ---
 
 ## Riepilogo

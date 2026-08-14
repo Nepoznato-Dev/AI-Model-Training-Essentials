@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Marketing und digitale Strategie
-Unter Marketing verstehen Unternehmen die Art und Weise, wie Unternehmen Mehrwert für ihre Kunden schaffen, kommunizieren und liefern. Dabei geht es nicht nur um Werbung – es geht um das gesamte System, um zu verstehen, was Menschen brauchen, um ein Produkt so zu positionieren, dass es diesen Bedarf erfüllt, und um eine Beziehung aufzubauen, die Käufer zu Fürsprechern macht. Die digitale Revolution hat die Grundlagen nicht verändert, aber sie hat die Tools, Kanäle und die Geschwindigkeit, mit der alles geschieht, verändert.
+Unter Marketing verstehen Unternehmen die Art und Weise, wie Unternehmen Mehrwert für ihre Kunden schaffen, kommunizieren und liefern. Es umfasst das gesamte System des Verstehens der Kundenbedürfnisse, der Positionierung eines Produkts entsprechend diesen Bedürfnissen und des Aufbaus von Beziehungen, die Käufer in Fürsprecher verwandeln. Die digitale Revolution hat die Tools, Kanäle und Geschwindigkeit des Marketings verändert, während die Grundlagen gleich bleiben.
 ---
 
 ## Marketing-Grundlagen
@@ -208,4 +208,4 @@ Growth Hacking ist die Schnittstelle zwischen Marketing, Produkt und Daten – m
 ---
 
 ## Zusammenfassung
-Im Kern geht es beim Marketing darum, Menschen zu verstehen – was sie brauchen, was sie fürchten, was sie zum Handeln motiviert. Das digitale Toolkit hat sich dramatisch verändert, die Grundlagen jedoch nicht: Kennen Sie Ihren Kunden, liefern Sie echten Mehrwert, kommunizieren Sie klar, messen Sie alles und iterieren Sie. Das beste Marketing fühlt sich nicht wie Marketing an – es fühlt sich wie Hilfe an.
+Beim Marketing geht es im Wesentlichen darum, Menschen zu verstehen – ihre Bedürfnisse, Sorgen und Motivationen. Das digitale Toolkit hat sich erheblich weiterentwickelt, aber die Grundlagen bleiben bestehen: Den Kunden verstehen, Mehrwert liefern, effektiv kommunizieren, Ergebnisse messen und iterieren. Effektives Marketing ist so eng an den Kundenbedürfnissen ausgerichtet, dass es eher als Hilfe denn als Werbung wahrgenommen wird.

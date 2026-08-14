@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # PHP
 PHP (Hypertext Preprocessor), 1994 yılında Rasmus Lerdorf tarafından oluşturulan ve ilk olarak 1995'te piyasaya sürülen, sunucu taraflı bir kodlama dilidir. Başlangıçta dinamik web sayfaları oluşturmak için tasarlanan PHP, tam özellikli genel amaçlı bir dile dönüştü. WordPress, Facebook (orijinal olarak), Wikipedia, Slack ve diğer milyonlarca site dahil olmak üzere bilinen bir sunucu tarafı dili kullanan tüm web sitelerinin yaklaşık %75'ine güç sağlar.
-Modern PHP (8.x), 2000'li yılların başlarındaki PHP'den çok farklı bir dildir. Artık yazılan özelliklere, eşleşme ifadelerine, numaralandırmalara, liflere, salt okunur sınıflara ve sağlam bir tür sistemine sahiptir. Geliştiriciler arasındaki itibarına rağmen (genellikle tutarsızlıklar nedeniyle eleştirilir), PHP pratiktir, yaygın olarak kullanılmaktadır ve gelişmeye devam etmektedir.
+Modern PHP (8.x), 2000'li yılların başındaki PHP'den çok farklı bir dildir. Artık yazılan özelliklere, eşleşme ifadelerine, numaralandırmalara, liflere, salt okunur sınıflara ve sağlam bir tür sistemine sahiptir. Geliştiriciler arasındaki itibarına rağmen (genellikle tutarsızlıklar nedeniyle eleştirilir), PHP pratiktir, yaygın olarak kullanılmaktadır ve gelişmeye devam etmektedir.
 ---
 
 ## PHP Neden Önemlidir
@@ -53,7 +54,7 @@ Modern PHP (8.x), 2000'li yılların başlarındaki PHP'den çok farklı bir dil
 ## Takaslar
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
-| **Tutarsız adlandırma** | `strpos`vs`str_replace`,`array_key_exists`vs`in_array`— tutarlı bir kural yok | Tutarsızlıkları öğrenin; IDE otomatik tamamlamayı kullan |
+| **Tutarsız adlandırma** | `strpos`ve `str_replace`,`array_key_exists`ve`in_array`— tutarlı bir kural yok | Tutarsızlıkları öğrenin; IDE otomatik tamamlamayı kullan |
 | **Tarihsel bagaj** | PHP 5 ve önceki sürümlerden eski özellikler ve modeller | Modern PHP (8.2+) kullanın; PSR standartlarına uyun |
 | **Performans** | Web dışı görevler için Go, Rust veya Java'dan daha yavaş | OPcache'i kullanın; async için Swoole'u düşünün; PHP-FPM kullanın |
 | **Web dışı ortamlar için ideal değildir** | CLI, masaüstü, mobil, veri bilimi — PHP'nin güçlü yönleri değil | Web dışı çalışmalar için Python, Go veya diğer dilleri kullanın |
@@ -827,6 +828,332 @@ CMD ["php-fpm"]
 | Gerçek zamanlı uygulamalar | PHP'nin gücü değil | Node.js, Git |
 | Veri bilimi / ML | Ekosistem değil | Python, R |
 | Masaüstü/mobil uygulamalar | Uygun değil | Yerel dilleri kullanın |
+---
+
+## Sentetik Soru-Cevap
+### S1: PHP'de`==`ve`===`arasındaki fark nedir?
+**A:**`==`gevşek bir karşılaştırmadır — karşılaştırmadan önce tür zorlaması gerçekleştirir ( `"0" == false`, `true`'dur). `===`sıkı bir karşılaştırmadır; hem değeri hem de türü kontrol eder (`"0" === false`, `false`'dir). Özellikle tür zorlamaya ihtiyaç duymadığınız sürece her zaman`===`kullanın. Bu, PHP'nin en yaygın hata kaynaklarından biridir.
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### S2: PHP ad alanları ve otomatik yükleme nasıl çalışır?
+**C:** Ad alanları sınıf adı çakışmalarını önler. PSR-4 otomatik yükleme, ad alanı yapısını dizin yapısına eşler — `App\Controllers\UserController`,`src/Controllers/UserController.php`ile eşleşir. Besteci otomatik yüklemeyi`composer.json`aracılığıyla gerçekleştirir. Modern PHP'de her zaman ad alanlarını ve PSR-4'ü kullanın.
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### S3: PHP 8 özellikleri nelerdir ve bunların çerçevelerle ilişkisi nedir?
+**C:** Nitelikler (PHP 8) sınıflar, yöntemler, özellikler ve parametreler için yapılandırılmış meta veri açıklamalarıdır. Bunlar Java ek açıklamalarının veya C# niteliklerinin PHP eşdeğeridir. Laravel ve Symfony gibi çerçeveler bunları yönlendirme, doğrulama ve bağımlılık enjeksiyonu için yaygın olarak kullanır.
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### S4: Modern PHP'de hataları doğru şekilde nasıl ele alabilirim?
+**C:** PHP'de hem hatalar (E_WARNING, E_NOTICE) hem de istisnalar vardır. Modern PHP yalnızca istisnaları kullanır. Beklenen hatalar için try/catch'i, etki alanı hataları için özel istisna sınıflarını ve hataları istisnalara dönüştürmek için `set_error_handler`'yi kullanın. PHP 7+`Throwable`hem hatalar hem de istisnalar için temel arayüzdür.
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### S5: PHP fiberleri nedir ve bunların zaman uyumsuzlukla ilişkisi nedir?
+**C:** Fiberler (PHP 8.1) hafif, işbirlikçi iş parçacıklarıdır; yürütmeyi askıya alabilir ve devam ettirebilirler. Bunlar async PHP'nin temelidir ancak düşük seviyelidir. Amp ve ReactPHP gibi çerçeveler fiberleri dahili olarak kullanır. Çoğu uygulama için ham fiberler yerine eşzamansız bir çerçeve kullanın.
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Bir Ara Yazılım Ardışık Düzeni Oluşturun
+**Sorun Açıklaması:** PHP web çerçevesi için her bir ara yazılımın, zincirdeki bir sonraki ara yazılımdan önce ve sonra isteği işleyebileceği bir ara katman yazılımı ardışık düzeni uygulayın.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) bir`Middleware`arayüzü, (2) ara yazılımı zincirleyen bir işlem hattı, (3) her ara yazılım bir istek ve bir`$next`geri çağrısı alır, (4) ara katman yazılımı hem isteği (öncesi) hem de yanıtı (sonra) değiştirebilir. Bu, Laravel, PSR-15 ve benzer çerçeveler tarafından kullanılan soğan modelidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- `MiddlewareInterface`'yi`process(Request, RequestHandler): Response`ile tanımlayın.
+- Ara yazılımı tek bir işleyicide oluşturmak için dizi azaltmayı kullanın.
+- Her ara katman yazılımı bir sonrakini sararak iç içe işlev çağrıları oluşturur.
+**3. Adım — Çözümü Uygulayın:**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Sıra önemlidir: ilk borulanan = en dıştaki (istek üzerine ilk olarak gerçekleştirilir, yanıt üzerine son olarak gerçekleştirilir).
+- Her ara yazılım,`$next`çağrılmadan bir Yanıt döndürerek kısa devre yapabilir.
+- Üretim: Herhangi bir PSR-15 çerçevesiyle birlikte çalışabilirlik için PSR-15 `MiddlewareInterface`'yi kullanın.
+### Sorun 2: Sorgu Oluşturucu ile Depo Uygulama
+**Sorun Açıklaması:** Parametreli sorgularla güvenli bir şekilde SQL oluşturan, zincirlemeyi destekleyen ve bir veri havuzu modeliyle entegre olan akıcı bir sorgu oluşturucu oluşturun.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) zincirlenebilir yöntemlere sahip bir`QueryBuilder`sınıfı (`select`,`where`,`orderBy`,`limit`), (2) SQL enjeksiyonunu önlemek için parametreli sorgular, (3) veri erişimi için sorgu oluşturucuyu kullanan bir `Repository`.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Oluşturucu SQL parçalarını ve parametrelerini biriktirir.
+- `toSql()`, yer tutucularla son sorguyu oluşturur.
+-`getParameters()`sınırlanan değerleri döndürür.
+- Depo, oluşturucuyu alana özgü yöntemlerle sarar.
+**3. Adım — Çözümü Uygulayın:**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- SQL enjeksiyon önleme: tüm değerler parametreli sorgulardan (`?` yer tutucular) geçer.
+- Zincirlenebilir API: her yöntem akıcı kompozisyon için`$this`değerini döndürür.
+- Üretim: Kapsamlı, test edilmiş bir çözüm için`illuminate/database`(Laravel'in sorgu oluşturucusu) veya `doctrine/dbal`'yi kullanın.
 ---
 
 ## Özet

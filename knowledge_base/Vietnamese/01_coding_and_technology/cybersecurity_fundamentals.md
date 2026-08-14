@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Các nguyên tắc cơ bản về an ninh mạng
-Bảo mật không phải là một tính năng mà bạn sẽ chú ý đến cuối cùng — đó là một quy tắc cần được đưa vào mọi lớp của hệ thống ngay từ ngày đầu tiên. Cho dù bạn đang xây dựng một ứng dụng web, quản lý cơ sở hạ tầng hay vận chuyển API thì việc hiểu rõ bối cảnh mối đe dọa và các nguyên tắc cơ bản về phòng thủ là điều cần thiết.
+Bảo mật là một nguyên tắc phải được tích hợp vào mọi lớp của hệ thống ngay từ đầu, thay vì bổ sung thêm sau đó. Cho dù xây dựng một ứng dụng web, quản lý cơ sở hạ tầng hay vận chuyển API, việc hiểu được bối cảnh mối đe dọa và các nguyên tắc cơ bản về phòng thủ là điều cần thiết.
 ---
 
 ## Mã hóa và mật mã
@@ -77,7 +78,7 @@ Sử dụng TLS 1.2 hoặc 1.3. Tắt TLS 1.0 và 1.1. Bật HSTS (HTTP Strict T
 ### Ủy quyền: Bạn có thể làm gì?
 | Người mẫu | Mô tả | Ví dụ |
 |-------|-----------------|---------|
-| **RBAC** (Kiểm soát quyền truy cập dựa trên vai trò) | Quyền được gán cho vai trò; người dùng nhận vai trò | Quản trị viên, Biên tập viên, Người xem |
+| **RBAC** (Kiểm soát truy cập dựa trên vai trò) | Quyền được gán cho vai trò; người dùng nhận vai trò | Quản trị viên, Biên tập viên, Người xem |
 | **ABAC** (Dựa trên thuộc tính) | Quy tắc dựa trên thuộc tính người dùng, tài nguyên, môi trường | "Người quản lý có thể phê duyệt yêu cầu của nhóm mình" |
 | **ACL** (Danh sách kiểm soát truy cập) | Quyền rõ ràng cho mỗi người dùng/tài nguyên | Quyền truy cập tệp (đọc/ghi/thực thi) |
 **Nguyên tắc đặc quyền tối thiểu**: chỉ cung cấp cho mọi người dùng, dịch vụ và quy trình quyền truy cập tối thiểu mà họ cần.
@@ -112,18 +113,18 @@ OWASP Top 10 là tài liệu nhận thức tiêu chuẩn về bảo mật ứng 
 |------|------|
 | **Danh sách trắng > Danh sách đen** | Xác định những gì được phép, không phải những gì bị chặn |
 | **Truy vấn được tham số hóa** | Không bao giờ ghép nối đầu vào của người dùng vào SQL - sử dụng các câu lệnh đã chuẩn bị sẵn hoặc ORM |
-| **Mã hóa HTML** | Mã hóa`<`,`>`,`&`,`"`,`'`để ngăn XSS |
+| **Mã hóa HTML** | Mã hóa`<`,`>`,`&`,`"`,`'`để ngăn chặn XSS |
 | **Thoát Shell** | Tránh xây dựng các lệnh shell từ đầu vào của người dùng; sử dụng`shlex.quote()`|
-| **Giới hạn độ dài** | Thực thi độ dài tối đa để ngăn chặn tràn bộ đệm và DoS |
+| **Giới hạn độ dài** | Thực thi độ dài tối đa để ngăn chặn lỗi tràn bộ đệm và DoS |
 | **Kiểm tra kiểu** | Đảm bảo số nguyên là số nguyên, booleans là booleans |
 ### Các lỗ hổng phổ biến
 | Dễ bị tổn thương | Tấn công | Phòng thủ |
 |--------------|--------|---------|
-| **Tiêm SQL** | `' OR 1=1 --`trong mẫu đăng nhập | Truy vấn được tham số hóa |
-| **XSS** | `<script>alert('hacked')</script>`trong trường bình luận | Mã hóa đầu ra, Chính sách bảo mật nội dung |
+| **Tiêm SQL** | `' OR 1=1 --`ở dạng đăng nhập | Truy vấn được tham số hóa |
+| **XSS** | `<script>alert('hacked')</script>`trong trường nhận xét | Mã hóa đầu ra, Chính sách bảo mật nội dung |
 | **CSRF** | Lừa trình duyệt của người dùng thực hiện yêu cầu trái phép | Mã thông báo CSRF, cookie SameSite |
 | **Truyền tải đường dẫn** | `../../etc/passwd`trong tham số tệp | Xác thực và vệ sinh đường dẫn tệp |
-| **IDOR** | Thay đổi`/user/123`thành`/user/124`để xem dữ liệu của người khác | Kiểm tra ủy quyền theo mọi yêu cầu |
+| **IDOR** | Đổi`/user/123`thành`/user/124`để xem dữ liệu của người khác | Kiểm tra ủy quyền theo mọi yêu cầu |
 ---
 
 ## An ninh mạng
@@ -162,8 +163,8 @@ Xoay bí mật thường xuyên và tự động. Nếu một bí mật bị rò
 |----------|-------|
 | **Trăn** | `safety`,`pip-audit`,`bandit`|
 | **Node.js** | `npm audit`,`yarn audit`,`snyk`|
-| **Rỉ sét** |  __BẢO VỆ_6__ |
-| **Đi** |  __BẢO VỆ_7__ |
+| **Rỉ sét** | `cargo audit`|
+| **Đi** | `govulncheck`|
 | **Chung** | `Dependabot`(GitHub),`Renovate`,`Trivy`|
 ### Tính toàn vẹn của chuỗi cung ứng
 - Sử dụng các tệp khóa (`package-lock.json`,`Cargo.lock`,`go.sum`) cho các bản dựng có thể tái tạo.

@@ -756,6 +756,144 @@ ENTRYPOINT ["./app"]
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How does OCaml's type inference work?
+
+**A:** OCaml's Hindley-Milner type system infers types without annotations:
+
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2: What are algebraic data types and why are they powerful?
+
+**A:** ADTs combine product types (records) and sum types (variants):
+
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3: How do modules and functors work?
+
+**A:** Modules organize code; functors are functions from modules to modules:
+
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4: What makes OCaml fast?
+
+**A:** OCaml compiles to efficient native code:
+- Type erasure — no runtime type checks
+- Unboxed floats and integers
+- Pattern matching compiles to jump tables
+- Tail-call optimization
+- No garbage collector pauses (incremental GC)
+
+### Q5: How does OCaml compare to other ML-family languages?
+
+**A:** OCaml balances practicality and purity:
+- vs Haskell: OCaml has imperative features, mutable state, and faster compilation
+- vs F#: OCaml has a more mature module system and better cross-platform support
+- vs Rust: OCaml has GC (no ownership), but Rust has better FFI and ecosystem
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Implementing a Type-Safe Interpreter
+
+**Step 1: Understand the Problem**
+Build an interpreter for a simple expression language.
+
+**Step 2: Identify the Approach**
+Use algebraic data types for expressions and pattern matching for evaluation.
+
+**Step 3: Implement**
+```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**Step 4: Extend**
+Add `Let`, `If`, `Lambda` for a more complete language.
+
+### Problem 2: Building a Simple Parser with Combinators
+
+**Step 1: Understand the Problem**
+Parse arithmetic expressions using parser combinators.
+
+**Step 2: Identify the Approach**
+Build small parsers and compose them.
+
+**Step 3: Implement**
+```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**Step 4: Compose**
+Combine parsers with `map`, `seq`, `alt`, and `many` to parse full expressions.
+
+---
+
 ## Summary
 
 OCaml is a language that rewards you for thinking carefully about your data. Its algebraic data types and exhaustive pattern matching force you to consider every case — the compiler becomes a design partner that catches mistakes before they happen. The type inference means you get these safety benefits without writing type annotations everywhere. OCaml's influence is visible in Rust, F#, TypeScript, and Swift — all of which borrowed ideas from OCaml's type system. While OCaml's job market is small, learning it will sharpen your programming skills in ways that transfer to any language.

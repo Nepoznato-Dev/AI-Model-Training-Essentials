@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "آدا"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Ada شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [آدا، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "35 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Ada"
+description: "Comprehensive reference for the Ada programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ada, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #آدا
 Ada یک زبان برنامه نویسی تایپ شده و کامپایل شده است که برای سیستم های ایمنی حیاتی و با یکپارچگی بالا طراحی شده است. آدا که در ابتدا در دهه 1980 و با قرارداد با وزارت دفاع ایالات متحده (به نام آدا لاولیس، اولین برنامه نویس کامپیوتری به حساب می آید) توسعه یافت، بر قابلیت اطمینان، نگهداری و صحت تأکید دارد. این برنامه برای جایگزینی صدها زبان برنامه نویسی که توسط وزارت دفاع آمریکا استفاده می شد با یک زبان واحد و کاملا مشخص طراحی شده بود.
 Ada در هوانوردی (سیستم‌های fly-by-wire)، فضا (ESA و NASA)، دفاع (هدایت موشکی، رادار)، حمل‌ونقل ریلی و تجهیزات پزشکی - در هر جایی که خرابی نرم‌افزار ممکن است به قیمت جان انسان‌ها تمام شود، استفاده می‌شود.
@@ -851,12 +856,153 @@ end Main;
 | سناریو | چرا آدا | جایگزین بهتر |
 |----------|---------|-------------------|
 | سیستم های ایمنی حیاتی | برای این منظور طراحی شده است؛ پشتیبانی رسمی تایید | — |
-| هوانوردی / هوافضا | کامپایلرهای معتبر؛ انطباق با DO-178C | — |
+| هوانوردی / هوافضا | کامپایلرهای تایید شده؛ انطباق با DO-178C | — |
 | سیستم های دفاعی | میراث وزارت دفاع؛ ویژگی های امنیتی | — |
 | راه آهن / تجهیزات پزشکی | الزامات یکپارچگی بالا | — |
 | توسعه برنامه عمومی | Overkill برای سیستم های غیر بحرانی | پایتون، جاوا، برو |
 | توسعه وب | مناسب نیست | جاوا اسکریپت، پایتون |
 | علم داده / ML | نه اکوسیستم | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: چگونه سیستم نوع Ada از اشکالات در زمان کامپایل جلوگیری می کند؟
+**A:** سیستم تایپ آدا یکی از سخت‌گیرانه‌ترین زبان‌ها است. خطاهایی را می‌گیرد که زبان‌های دیگر از دست می‌دهند:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2: مدل وظیفه آدا چیست و چگونه با سایر مدل های همزمان مقایسه می شود؟
+**A:** Ada دارای همزمانی داخلی با اشیاء و وظایف محافظت شده است:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: چگونه از ژنریک در Ada استفاده کنم؟
+**A:** ژنریک های Ada صریح و بی خطر هستند:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: چه چیزی Ada را برای سیستم های حیاتی ایمنی مناسب می کند؟
+**A:** Ada ارائه می دهد:
+- زیر مجموعه SPARK برای تأیید رسمی (اثبات ریاضی صحت)
+- برنامه نویسی مبتنی بر قرارداد (پیش/شرایط پس از آن، متغیرهای نوع)
+- عدم تخصیص حافظه ضمنی در SPARK
+- تعیین تکلیف و برنامه ریزی
+- مشخصات Ravenscar برای سیستم های زمان واقعی با یکپارچگی بالا
+- صلاحیت زنجیره ابزار (DO-178C برای اویونیک)
+### Q5: چگونه پروژه های Ada را بسازم؟
+**A:** از GPRBuild با فایل های پروژه GPR استفاده کنید:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: اجرای یک صف تایپ ایمن
+**مرحله 1: مشکل را درک کنید**
+با بررسی اندازه زمان کامپایل، یک صف محدود و ایمن برای رشته ایجاد کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از یک شی محافظت شده با بافر محدود استفاده کنید.
+**مرحله 3: پیاده سازی **```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**مرحله 4: تایید **
+شیء محافظت شده طرد متقابل را تضمین می کند. موانع ورودی مانع از سرریز/زیر جریان می شود.
+### مسئله 2: اعتبارسنجی مبتنی بر قرارداد
+**مرحله 1: مشکل را درک کنید**
+یک تابع ریشه مربع را با قراردادهای رسمی اجرا کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از قراردادهای Ada 2012 (پیش/شرط بعد) استفاده کنید.
+**مرحله 3: پیاده سازی **```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**مرحله 4: تایید **
+چک‌های زمان اجرا (اظهارات) نقض‌ها را می‌گیرند. در SPARK، اینها به تعهدات اثبات تبدیل می شوند.
 ---
 
 ## خلاصه

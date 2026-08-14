@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Métodos de conjunto"
-descripción: "Embolsado, impulso, apilamiento, votación, bosques aleatorios, XGBoost"
-categoría: "Ciencia y análisis de datos"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Ensemble Methods"
+description: "Bagging, boosting, stacking, voting, random forests, XGBoost"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de análisis y ciencia de datos"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [conjunto, métodos, ciencia-y-análisis-de-datos]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "7 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [ensemble, methods, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Métodos de conjunto
 Los métodos conjuntos combinan múltiples modelos de aprendizaje automático para producir mejores predicciones que las que cualquier modelo podría lograr por sí solo. La intuición es sencilla: si tiene varios modelos, cada uno de los cuales es algo preciso pero comete errores diferentes, la combinación de sus predicciones anulará los errores individuales y producirá un resultado más sólido. Los conjuntos están detrás de la mayoría de las soluciones de aprendizaje automático competitivas y siguen siendo algunas de las técnicas más confiables en los sistemas de producción.

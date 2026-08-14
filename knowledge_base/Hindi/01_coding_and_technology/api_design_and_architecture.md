@@ -1,38 +1,42 @@
 ---
-# मेटाडेटा
-शीर्षक: "एपीआई डिज़ाइन और आर्किटेक्चर"
-विवरण: "REST, GraphQL, gRPC, वर्जनिंग, ऑथ, एपीआई गेटवे"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [एपीआई, डिज़ाइन, आर्किटेक्चर, कोडिंग-एंड-टेक्नोलॉजी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "10 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "API Design and Architecture"
+description: "REST, GraphQL, gRPC, versioning, auth, API gateways"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [api, design, architecture, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "10 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # एपीआई डिजाइन और वास्तुकला
 एक एपीआई (एप्लिकेशन प्रोग्रामिंग इंटरफ़ेस) वह तरीका है जिससे सॉफ्टवेयर घटक एक दूसरे से बात करते हैं। एक अच्छी तरह से डिज़ाइन की गई एपीआई सहज, सुसंगत है और इसके साथ काम करना आनंददायक है। खराब तरीके से डिज़ाइन किया गया भ्रम, बग और निराशा का कारण बनता है। यह फ़ाइल एपीआई बनाने के सिद्धांतों, पैटर्न और प्रथाओं को शामिल करती है जिन्हें डेवलपर्स वास्तव में उपयोग करना चाहते हैं।

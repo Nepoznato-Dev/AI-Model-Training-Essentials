@@ -40,7 +40,7 @@ contribution:
 ---
 
 # OCaml
-OCaml (Objective Caml), Fransa'daki INRIA'da geliştirilen ve ilk kez 1996'da piyasaya sürülen işlevsel bir programlama dilidir. İşlevsel programlamanın etkileyiciliğini pratik özelliklerle birleştirir: tür çıkarımı (Hindley-Milner), desen eşleştirme, cebirsel veri türleri ve isteğe bağlı nesne yönelimli programlama ile güçlü bir tür sistemi. OCaml, hızlı yerel koda derlenir ve ayrıca bayt kodunu destekler.
+OCaml (Objective Caml), Fransa'daki INRIA'da geliştirilen ve ilk kez 1996'da piyasaya sürülen işlevsel bir programlama dilidir. İşlevsel programlamanın etkileyiciliğini pratik özelliklerle birleştirir: tür çıkarımlı güçlü bir tür sistemi (Hindley-Milner), desen eşleştirme, cebirsel veri türleri ve isteğe bağlı nesne yönelimli programlama. OCaml, hızlı yerel koda derlenir ve ayrıca bayt kodunu destekler.
 OCaml'in en ünlü gerçek dünya uygulaması, tüm ticaret altyapısı için OCaml'ı kullanan **Jane Street** ticaret firmasıdır. Aynı zamanda derleyici geliştirmede (Rust derleyicisi orijinal olarak OCaml'de yazılmıştır), resmi doğrulamada, finansal sistemlerde ve teorem kanıtlamada da kullanılır.
 OCaml'in yeni kardeşi **Reason** (Facebook/Meta tarafından geliştirildi) ve **ReScript** (eski adıyla BuckleScript), OCaml'ın tür sistemini ve performansını JavaScript'e derleyerek web geliştirmeye getiriyor.
 ---
@@ -715,5 +715,121 @@ ENTRYPOINT ["./app"]
 | Genel amaçlı uygulamalar | Mümkün ama niş | Git, Python, Pas |
 ---
 
+## Sentetik Soru-Cevap
+### S1: OCaml'ın tür çıkarımı nasıl çalışır?
+**C:** OCaml'ın Hindley-Milner türü sistemi, ek açıklamalar olmadan türler çıkarır:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### S2: Cebirsel veri türleri nelerdir ve neden güçlüdürler?
+**C:** ADT'ler ürün türlerini (kayıtlar) ve toplam türlerini (varyantlar) birleştirir:
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### S3: Modüller ve işlevler nasıl çalışır?
+**A:** Modüller kodu düzenler; işlevler modüllerden modüllere işlevlerdir:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### S4: OCaml'i hızlı kılan şey nedir?
+**C:** OCaml verimli yerel koda derlenir:
+- Tür silme — çalışma zamanı türü denetimi yok
+- Kutusuz kayan noktalar ve tamsayılar
+- Desen eşleştirme, tabloları atlamak için derlenir
+- Kuyruk çağrısı optimizasyonu
+- Çöp toplayıcı duraklaması yok (artımlı GC)
+### S5: OCaml diğer ML ailesi dilleriyle nasıl karşılaştırılır?
+**C:** OCaml pratiklik ve saflığı dengeler:
+- Haskell'e karşı: OCaml zorunlu özelliklere, değiştirilebilir duruma ve daha hızlı derlemeye sahiptir
+- vs F#: OCaml daha olgun bir modül sistemine ve daha iyi platformlar arası desteğe sahiptir
+- Rust'a karşı: OCaml'de GC var (sahiplik yok), ancak Rust'ta daha iyi FFI ve ekosistem var
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Tip Güvenli Yorumlayıcının Uygulanması
+**1. Adım: Sorunu Anlayın**
+Basit bir ifade dili için bir tercüman oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+İfadeler için cebirsel veri türlerini ve değerlendirme için desen eşleştirmeyi kullanın.
+**3. Adım: Uygulama**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**4. Adım: Genişletin**
+Daha eksiksiz bir dil için`Let`,`If`,`Lambda`ekleyin.
+### Sorun 2: Birleştiricilerle Basit Bir Ayrıştırıcı Oluşturma
+**1. Adım: Sorunu Anlayın**
+Ayrıştırıcı birleştiricileri kullanarak aritmetik ifadeleri ayrıştırın.
+**2. Adım: Yaklaşımı Belirleyin**
+Küçük ayrıştırıcılar oluşturun ve bunları oluşturun.
+**3. Adım: Uygulama**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**4. Adım: Oluşturun**
+Tam ifadeleri ayrıştırmak için ayrıştırıcıları`map`,`seq`,`alt`ve`many`ile birleştirin.
+---
+
 ## Özet
-OCaml, verileriniz hakkında dikkatli düşündüğünüzde sizi ödüllendiren bir dildir. Cebirsel veri türleri ve kapsamlı desen eşleştirmesi sizi her durumu dikkate almaya zorlar; derleyici, hataları gerçekleşmeden önce yakalayan bir tasarım ortağı haline gelir. Tür çıkarımı, her yere tür açıklamaları yazmanıza gerek kalmadan bu güvenlik avantajlarından yararlanabileceğiniz anlamına gelir. OCaml'ın etkisi Rust, F#, TypeScript ve Swift'de görülebilir; bunların tümü OCaml'ın yazım sisteminden ödünç alınan fikirlerdir. OCaml'ın iş piyasası küçük olsa da, bunu öğrenmek programlama becerilerinizi herhangi bir dile aktarılabilecek şekilde geliştirecektir.
+OCaml, verileriniz hakkında dikkatli düşündüğünüzde sizi ödüllendiren bir dildir. Cebirsel veri türleri ve kapsamlı desen eşleştirmesi sizi her durumu dikkate almaya zorlar; derleyici, hataları gerçekleşmeden önce yakalayan bir tasarım ortağı haline gelir. Tür çıkarımı, her yere tür açıklamaları yazmanıza gerek kalmadan bu güvenlik avantajlarından yararlanabileceğiniz anlamına gelir. OCaml'ın etkisi Rust, F#, TypeScript ve Swift'de görülebilir; bunların tümü OCaml'ın yazım sisteminden fikirler ödünç almıştır. OCaml'in iş piyasası küçük olsa da, bunu öğrenmek programlama becerilerinizi herhangi bir dile aktarılabilecek şekilde geliştirecektir.

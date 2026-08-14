@@ -273,6 +273,6 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ## See Also
 
-- [Getting Started](getting_started.md)
-- [Deployment Guide](deployment.md)
+- [Getting Started](../getting_started.md)
+- [Deployment Guide](../deployment.md)
 - [Troubleshooting](troubleshooting.md)

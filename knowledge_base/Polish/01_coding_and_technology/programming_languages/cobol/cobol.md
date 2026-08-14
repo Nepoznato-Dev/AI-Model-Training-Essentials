@@ -623,7 +623,7 @@ gdb ./payroll
 ---
 
 ## Wzorce projektowe
-### Wzorzec 1: Przetwarzanie wsadowe z przerwami kontrolnymi
+### Wzorzec 1: Przetwarzanie wsadowe z przerwami w kontroli
 Wzorzec przerwania kontroli jest najbardziej podstawowym wzorcem projektowym języka COBOL — przetwarzanie rekordów pogrupowanych według pól kluczowych i tworzenie sum częściowych.
 ```cobol
        PROCEDURE DIVISION.
@@ -788,7 +788,7 @@ Wzorzec przerwania kontroli jest najbardziej podstawowym wzorcem projektowym ję
 
 ## Wdrożenie i użytkowanie w świecie rzeczywistym
 ### Wdrożenie na komputerze mainframe (IBM z/OS)
-Programy COBOL na komputerach mainframe są wdrażane jako moduły ładujące w partycjonowanych zbiorach danych (PDS). JCL kontroluje kompilację, łączenie i wykonywanie.
+Programy w języku COBOL na komputerach mainframe są wdrażane jako moduły ładujące w partycjonowanych zbiorach danych (PDS). JCL kontroluje kompilację, łączenie i wykonywanie.
 ```
 Deployment pipeline on z/OS:
   Source (PDS) → Compile (JCL) → Link Edit → Load Module (PDS) → Execute (JCL)
@@ -829,5 +829,129 @@ scp bin/payroll server:/opt/cobol/bin/
 | Nauka o danych / ML | Nie nadaje się | Python, R |
 ---
 
+## Syntetyczne pytania i odpowiedzi
+### P1: Dlaczego po ponad 60 latach język COBOL jest nadal używany w bankowości?
+**O:** COBOL przetwarza szacunkowo 70–80% transakcji bankowych. Powody:
+- Ogromne bazy kodu (miliony linii), które działają poprawnie
+- Wyjątkowa niezawodność — systemy te są testowane w produkcji od dziesięcioleci
+- Koszt i ryzyko migracji przewyższają koszty utrzymania
+- Pełna, przypominająca angielską składnię języka COBOL jest samodokumentująca
+- Arytmetyka dziesiętna wbudowana w język (brak błędów zaokrąglania zmiennoprzecinkowego)
+### P2: Jak język COBOL obsługuje arytmetykę dziesiętną bez błędów zmiennoprzecinkowych?
+**A:** COBOL ma natywne typy dziesiętne ze stałą precyzją:
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V` jest domyślnym punktem dziesiętnym. COBOL nigdy nie używa binarnych liczb zmiennoprzecinkowych do wyrażania pieniędzy.
+### P3: Jaka jest struktura programu w języku COBOL?
+**A:** Każdy program COBOL ma cztery działy:
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### P4: Jak czytać i przetwarzać pliki sekwencyjne w języku COBOL?
+**A:** COBOL przoduje w przetwarzaniu plików:
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### P5: Jakie narzędzia są dostępne do nowoczesnego programowania w języku COBOL?
+**A:** Rozszerzenia GnuCOBOL (open source), IBM Enterprise COBOL, Micro Focus i VS Code zapewniają nowoczesne środowiska programistyczne. Kompiluj za pomocą`cobc -x program.cob`.
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Generowanie raportu klienta
+**Krok 1: Zrozum problem**
+Odczytuj zapisy klientów, obliczaj sumy i generuj sformatowany raport.
+**Krok 2: Zidentyfikuj podejście**
+Wykorzystaj możliwości obsługi plików i pisania raportów w języku COBOL.
+**Krok 3: Wdróż**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź sumy krzyżowo z danymi źródłowymi. Testuj z przypadkami Edge (pusty plik, salda zerowe).
+### Problem 2: Przetwarzanie wsadowe z przerwami w sterowaniu
+**Krok 1: Zrozum problem**
+Przetwarzaj transakcje pogrupowane według działów, drukując sumy częściowe.
+**Krok 2: Zidentyfikuj podejście**
+Użyj logiki przerwania kontroli — wykryj zmianę klucza grupy.
+**Krok 3: Wdróż**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź, czy wydrukowana została suma ostatniej grupy. Sprawdź, czy suma całkowita jest równa sumie sum działów.
+---
+
 ## Streszczenie
-COBOL to relikt początków informatyki, który nie chce umrzeć — ponieważ nie może sobie na to pozwolić. Światowe systemy bankowe i rządowe zależą od programów w języku COBOL, które działają niezawodnie od dziesięcioleci. Choć obecnie nikt nie wybrałby języka COBOL do nowego projektu, język ten pozostaje niezwykle ważny dla utrzymania infrastruktury stanowiącej podstawę globalnych finansów. Niedobór programistów COBOL sprawia, że ​​jest to zaskakująco lukratywna nisza.
+Język COBOL to dziedzictwo pierwszych dziesięcioleci informatyki, które pozostaje w aktywnym użyciu, ponieważ wymiana nie jest możliwa na dużą skalę. Światowe systemy bankowe i rządowe zależą od programów w języku COBOL, które działają niezawodnie od dziesięcioleci. Chociaż język COBOL nie byłby obecnie wybierany do nowego projektu, język ten pozostaje ważny dla utrzymania infrastruktury obsługującej globalne finanse. Niedobór programistów COBOL sprawia, że ​​jest to lukratywna nisza.

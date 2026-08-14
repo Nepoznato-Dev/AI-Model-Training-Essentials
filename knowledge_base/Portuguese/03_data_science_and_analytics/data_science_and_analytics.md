@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Ciência de Dados e Análise
 A ciência de dados é a disciplina que transforma dados brutos em insights acionáveis. Situa-se na intersecção entre estatísticas, ciência da computação e conhecimentos especializados – e tornou-se essencial em todos os setores, desde finanças até cuidados de saúde. Este arquivo apresenta os principais conceitos, ferramentas e fluxos de trabalho que todo profissional deve conhecer.
 ---
@@ -52,7 +53,7 @@ A maioria dos projetos segue alguma variação do **CRISP-DM**, o ciclo de vida 
 | **Modelagem** | Selecionar e treinar modelos | 10–15% |
 | **Avaliação** | Avalie o desempenho em relação às metas de negócios | 5–10% |
 | **Implantação** | Envie o modelo para produção | 5–10% |
-A velha piada é que 80% da ciência de dados está limpando dados. Não está longe da verdade.
+Estima-se que a preparação de dados, especialmente a limpeza de dados, consuma cerca de 80% do tempo de um cientista de dados.
 ---
 
 ## Visão geral dos tipos de dados
@@ -227,7 +228,7 @@ Quando os conjuntos de dados excedem o que uma única máquina pode suportar, a 
 | **Metabase** | Código aberto | Configuração fácil, nativo de SQL |
 | **Superconjunto** | Código aberto (Apache) | Escalável, SQL primeiro |
 ### Princípios de design do painel
-Bons dashboards seguem algumas regras: conheça seu público, escolha a visualização certa para cada métrica, use cores estrategicamente (não decorativamente), mantenha escalas consistentes e possibilite interatividade (filtros, drill-downs). O desempenho também é importante: ninguém espera por um painel lento.
+Painéis eficazes seguem princípios estabelecidos: identificar o público, escolher a visualização apropriada para cada métrica, usar cores estrategicamente (não decorativamente), manter escalas consistentes e permitir interatividade (filtros, detalhamentos). O desempenho também é importante: painéis com tempos de carregamento lentos reduzem a adoção pelo usuário.
 ### Categorias de KPI comuns
 | Categoria | Exemplos |
 |----------|---------|
@@ -241,9 +242,9 @@ Bons dashboards seguem algumas regras: conheça seu público, escolha a visualiz
 ## Análise Avançada
 | Abordagem | Técnicas | Quando usar |
 |----------|-----------|------------|
-| **Preditivo** | Séries temporais (ARIMA, Profeta, LSTM), modelagem de risco, previsão de rotatividade | Previsão de valores futuros |
+| **Preditivo** | Séries temporais (ARIMA, Prophet, LSTM), modelagem de risco, previsão de rotatividade | Previsão de valores futuros |
 | **Prescritivo** | Programação linear, simulação de Monte Carlo, testes A/B, bandidos multi-armados | Otimizando decisões |
-| **Análise de texto** | Tokenização, análise de sentimentos, modelagem de tópicos (LDA), NER, embeddings de palavras (Word2Vec, BERT) | Extraindo insights do texto |
+| **Análise de texto** | Tokenização, análise de sentimento, modelagem de tópicos (LDA), NER, embeddings de palavras (Word2Vec, BERT) | Extraindo insights do texto |
 ---
 
 ## Ética e Governança de Dados

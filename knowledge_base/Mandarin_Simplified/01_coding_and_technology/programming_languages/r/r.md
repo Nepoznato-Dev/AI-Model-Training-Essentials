@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #R
 R是专门为统计计算和数据分析而设计的编程语言和环境。它由奥克兰大学的 Ross Ihaka 和 Robert Gentleman 于 1993 年创建（因此称为“R”），是具有重大扩展的 S 语言的实现。 R 是开源的，由 R 核心团队维护。它是学术界、医疗保健、金融和政府领域的统计学家、数据分析师和研究人员的标准工具。
 R 擅长数据操作、统计建模、可视化和报告。其软件包生态系统 (CRAN) 拥有超过 20,000 个软件包，几乎涵盖了有史以来设计的所有统计方法。
@@ -593,7 +594,7 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 ---
 
 ## 何时使用 R
-|场景 |为什么选择 R |更好的选择|
+|场景|为什么选择 R |更好的选择|
 |----------|------|--------------------|
 |统计分析|最全面的统计方法 | Python（统计模型、scipy）|
 |数据可视化| ggplot2 的出版质量是无与伦比的 |用于交互式的 Python（matplotlib、seaborn）
@@ -602,7 +603,179 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 |报告（R Markdown/Quarto）|综合分析+叙述| Jupyter（Python）|
 |生产机器学习系统 |并非为部署而设计| Python、Java |
 |网页开发|不适合| JavaScript、Python |
-|大规模数据处理|内存限制 | Python (PySpark)、SQL |
+|大规模数据处理|内存限制| Python (PySpark)、SQL |
+---
+
+## 综合问答
+### Q1：`<-` 和`=`赋值有什么区别？
+**A:** 两者都赋值，但`<-`是惯用的 R 赋值运算符。它适用于所有上下文，包括内部函数调用：
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2：如何处理 R 中的缺失数据？
+**A:** R 使用`NA`来表示缺失值。大多数函数都有一个`na.rm`参数：
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3：我什么时候应该使用 `lapply`、`sapply` 和`vapply`？
+**A：** 都在列表/向量上应用函数，但输出不同：
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4：如何使用 ggplot2 创建有效的可视化？
+**A:** 遵循图形语法——将数据美学映射到视觉属性：
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5：如何为大型数据集编写高效的 R 代码？
+**答：** 关键做法：
+- 预分配向量：`x <- numeric(n)`，而不是随`c()`一起增长 
+- 对大型数据集使用 `data.table`（比 data.frame 快 100 倍）
+- 向量化操作——尽可能避免循环
+- 使用`vapply`而不是`sapply`以确保类型安全
+- 采用`Rprof()`或`profvis`的配置文件 
+- 考虑使用`arrow`包来处理核心外数据
+---
+
+## 解决问题的思路
+### 问题 1：清理和分析杂乱的数据集
+**第 1 步：了解问题**
+我们的数据框包含缺失值、不一致的类型和异常值。我们需要清理它并计算汇总统计数据。
+**第 2 步：确定方法**
+使用 tidyverse 动词：`filter`、`mutate`、`summarize`和`group_by`。
+**步骤 3：实施**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**第 4 步：验证**
+检查之前/之后的行数，验证范围，并根据源数据交叉检查总计。
+### 问题 2：构建线性回归模型
+**第 1 步：了解问题**
+从多个预测变量预测连续结果变量。
+**第 2 步：确定方法**
+使用`lm()`进行线性回归、检查假设并评估模型拟合。
+**步骤 3：实施**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**第 4 步：评估**
+检查 R 平方、残差图以了解模式，并检查 AIC 以进行模型比较。
+### 问题 3：创建可重复的报告
+**第 1 步：了解问题**
+创建一个以可重复格式结合分析、可视化和叙述文本的报告。
+**第 2 步：确定方法**
+使用 R Markdown（或 Quarto）将代码块与文本交错。
+**步骤 3：实施**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+图书馆（tidyverse）
+数据 <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(数据, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**第4步：渲染**
+`rmarkdown::render("report.Rmd")`生成一个独立的 HTML 文档。
 ---
 
 ＃＃ 概括

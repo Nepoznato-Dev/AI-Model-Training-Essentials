@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Marketing e Estratégia Digital
-Marketing é como as empresas criam, comunicam e entregam valor aos clientes. Não se trata apenas de publicidade — trata-se de todo o sistema de compreensão do que as pessoas precisam, de posicionamento de um produto para atender a essa necessidade e de construção de um relacionamento que transforme compradores em defensores. A revolução digital não mudou os fundamentos, mas transformou as ferramentas, os canais e a velocidade com que tudo acontece.
+Marketing é como as empresas criam, comunicam e entregam valor aos clientes. Abrange todo o sistema de compreensão das necessidades do cliente, posicionamento de um produto para atender a essas necessidades e construção de relacionamentos que convertam compradores em defensores. A revolução digital transformou as ferramentas, os canais e a velocidade do marketing, enquanto os fundamentos permanecem consistentes.
 ---
 
 ## Fundamentos de marketing
@@ -62,7 +62,7 @@ A estrutura clássica para pensar sobre a estratégia de mercado de qualquer pro
 | Etapa | O que você faz | Exemplo |
 |------|-------------|---------|
 | **Segmento** | Dividir o mercado em grupos distintos | Por demografia, comportamento, geografia, psicografia |
-| **Alvo** | Escolha quais segmentos atender | A Tesla inicialmente teve como alvo os primeiros usuários ricos |
+| **Alvo** | Escolha quais segmentos atender | Tesla inicialmente teve como alvo os primeiros usuários ricos |
 | **Posição** | Defina como você deseja ser percebido na mente do alvo | Volvo = segurança; Apple = design e simplicidade |
 ### O funil de marketing
 A jornada de estranho a cliente fiel:
@@ -174,7 +174,7 @@ Uma marca não é um logotipo. Uma marca é a soma de cada interação que algu�
 
 ## Marketing de crescimento e desempenho
 ### Hacking de crescimento
-Growth hacking é a intersecção de marketing, produto e dados – focado no crescimento rápido e escalonável de usuários, normalmente em startups.
+Growth hacking é a interseção de marketing, produto e dados – focado no crescimento rápido e escalonável de usuários, normalmente em startups.
 | Estratégia | Descrição | Exemplo |
 |----------|------------|---------|
 | **Loops virais** | O uso do produto convida naturalmente outras pessoas | Dropbox: convide um amigo e ganhe armazenamento grátis |
@@ -208,4 +208,4 @@ Growth hacking é a intersecção de marketing, produto e dados – focado no cr
 ---
 
 ## Resumo
-A essência do marketing é compreender as pessoas - o que elas precisam, o que temem, o que as motiva a agir. O kit de ferramentas digitais mudou drasticamente, mas os fundamentos não: conheça seu cliente, entregue valor real, comunique-se com clareza, meça tudo e repita. O melhor marketing não parece marketing – parece uma ajuda.
+O marketing trata fundamentalmente de compreender as pessoas – suas necessidades, preocupações e motivações. O kit de ferramentas digitais evoluiu consideravelmente, mas os fundamentos permanecem: compreender o cliente, entregar valor, comunicar de forma eficaz, medir resultados e iterar. O marketing eficaz alinha-se tão estreitamente com as necessidades do cliente que é visto como uma assistência e não como uma promoção.

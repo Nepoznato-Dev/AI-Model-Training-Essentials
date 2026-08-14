@@ -38,16 +38,17 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Perl
 Perl wurde 1987 von Larry Wall als praktisches Textverarbeitungstool entwickelt. Es wurde zum Rückgrat der frühen Webentwicklung (CGI-Skripte), Systemadministration, Bioinformatik und Netzwerkprogrammierung. Die Philosophie von Perl lautet „There's More Than One Way To Do It“ (TMTOWTDI) – die Sprache bietet Ihnen mehrere Ansätze für jedes Problem und bevorzugt Ausdruckskraft gegenüber Einheitlichkeit.
 Der Einfluss von Perl auf die moderne Programmierung ist enorm, aber oft unsichtbar: Reguläre Ausdrücke, beeinflusst durch Perls Mustervergleich, sind heute Standard in Python, JavaScript, Java und den meisten anderen Sprachen. Das CPAN (Comprehensive Perl Archive Network) war eines der ersten Softwarepaket-Repositories und inspirierte spätere Systeme wie Pythons PyPI und Nodes npm.
-Obwohl die Popularität von Perl seit seinem Höhepunkt in den frühen 2000er Jahren zurückgegangen ist, wird es weiterhin häufig in Legacy-Systemen, Textverarbeitungs-Pipelines und der Systemverwaltung verwendet. Perl 6 (jetzt **Raku** genannt) ist eine separate Sprache, die viele Konzepte von Perl neu interpretiert hat.
+Obwohl die Popularität von Perl seit seinem Höhepunkt Anfang der 2000er Jahre zurückgegangen ist, wird es weiterhin häufig in Altsystemen, Textverarbeitungs-Pipelines und in der Systemverwaltung verwendet. Perl 6 (jetzt **Raku** genannt) ist eine separate Sprache, die viele Konzepte von Perl neu interpretiert hat.
 ---
 
 ## Warum Perl wichtig ist
 - **Textverarbeitung**: Die regulären Ausdrücke von Perl sind die leistungsstärksten aller Mainstream-Sprachen.
 - **CPAN**: Über 200.000 Module – eines der größten und ältesten Paket-Repositories.
-- **Einzeiler**: Perl zeichnet sich durch schnelle Befehlszeilen-Texttransformationen aus.
+- **Einzeiler**: Perl zeichnet sich durch schnelle Texttransformationen über die Befehlszeile aus.
 - **Glue-Sprache**: Verbindet Systeme, analysiert Protokolle, verarbeitet Datendateien und automatisiert Aufgaben.
 - **In der Produktion bewährt**: Unterstützt das Web, seit es PHP gab. Kritische Infrastruktur läuft immer noch.
 - **Raku (Perl 6)**: Ein modernes Redesign mit Grammatiken, Verknüpfungen und Mehrfachversand.
@@ -56,10 +57,10 @@ Obwohl die Popularität von Perl seit seinem Höhepunkt in den frühen 2000er Ja
 |-----------|---------|-----|
 | **Lesbarkeit** | „Perl ist eine Nur-Schreib-Sprache“ – dichte, kryptische Syntax | Verwenden Sie strenge Warnungen. modularen Code schreiben; Verwenden Sie modernes Perl (5.36+) |
 | **Rückläufige Community** | Weniger neue Projekte, die sich für Perl entscheiden | Große vorhandene Codebasis muss gewartet werden; aktive Gemeinschaft |
-| **Zwei Hauptversionen** | Perl 5 und Raku (Perl 6) sind verschiedene Sprachen | Verwenden Sie Perl 5 für bestehende Arbeiten. Raku für neue Projekte |
+| **Zwei Hauptversionen** | Perl 5 und Raku (Perl 6) sind verschiedene Sprachen | Verwenden Sie Perl 5 für bestehende Arbeiten; Raku für neue Projekte |
 | **Nicht trendy** | Wird selten in Bootcamps oder Universitäten unterrichtet | Umfangreiche Dokumentation und CPAN-Module |
-| **Variable Sigillen** | `$`,`@`,`%`Präfixe können Anfänger verwirren | Lernen Sie das Muster:`$scalar`,`@array`,`%hash`|
-| **Leistung** | Langsamer als kompilierte Sprachen für rechenintensive Aufgaben | Verwenden Sie C-Erweiterungen. nicht das richtige Werkzeug für HPC |
+| **Variable Sigillen** |  Die Präfixe `$`, `@`,`%`können Anfänger verwirren | Lernen Sie das Muster: `$scalar`, `@array`,`%hash`|
+| **Leistung** | Langsamer als kompilierte Sprachen für rechenintensive Aufgaben | Verwenden Sie C-Erweiterungen; nicht das richtige Werkzeug für HPC |
 ---
 
 ## Syntax-Grundlagen
@@ -184,7 +185,7 @@ if ($@) {
 | Heredocs | Python, Ruby, PHP, Shell, JavaScript |
 | `$_`Standardvariable | Rubys`$_`, PowerShells`$_`|
 | `map`/`grep`/`reduce`| Python, Ruby, JavaScript, Rust |
-| `use strict`/ Flusen | TypeScript, Pythons Typhinweise |
+| `use strict`/ Fusseln | TypeScript, Pythons Typhinweise |
 ---
 
 ## Erweiterte Syntax und Muster
@@ -571,7 +572,7 @@ CMD ["perl", "bin/myapp.pl"]
 
 ---
 
-## Wann Perl verwendet werden sollte
+## Wann man Perl verwendet
 | Szenario | Warum Perl | Bessere Alternative |
 |----------|---------|-----|
 | Textverarbeitung / Parsing | Klassenbeste Regex-Engine | Python für strukturierte Daten |
@@ -583,6 +584,165 @@ CMD ["perl", "bin/myapp.pl"]
 | Webentwicklung | Die CGI-Ära ist vorbei | Python, Node.js, Go, PHP |
 | Neue Großprojekte | Community ist weitergezogen | Go, Rust, Python |
 | Datenwissenschaft / ML | Nicht das Ökosystem | Python, R |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen `my`,`our`und `local`?
+**A:** Diese Schlüsselwörter steuern den Variablenbereich:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### F2: Wie verarbeite ich Textdateien effizient in Perl?
+**A:** Perl zeichnet sich durch Textverarbeitung aus. Verwenden Sie den Diamantoperator und den regulären Ausdruck:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### F3: Wie verwende ich Referenzen und komplexe Datenstrukturen?
+**A:** Referenzen sind Perls Methode, verschachtelte Strukturen zu erstellen:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### F4: Welche speziellen Perl-Variablen sollte ich kennen?
+**A:** Perl hat viele spezielle Variablen. Das Wichtigste:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### F5: Wie schreibe ich modernes, wartbares Perl?
+**A:** Best Practices für modernes Perl:
+- Verwenden Sie immer`strict`und`warnings`
+- Verwenden Sie`my`für alle Variablen
+- Verwenden Sie lexikalische Dateihandles:`open my $fh, '<', $file`
+- Module von CPAN verwenden (Moo/Moose für OOP, Try::Tiny für Fehler)
+- Verwenden Sie`say`anstelle von`print`(mit `feature 'say'`)
+- Formatieren mit `perltidy`
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Protokolldateianalyse
+**Schritt 1: Verstehen Sie das Problem**
+Analysieren Sie ein Apache-Zugriffsprotokoll und zählen Sie Anfragen pro IP-Adresse.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie Regex, um IP-Adressen zu extrahieren, und Hash, um Vorkommen zu zählen.
+**Schritt 3: Implementieren**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Schritt 4: Erweitern**
+Fügen Sie Datumsfilterung, Statuscode-Analyse und Ausgabe als CSV hinzu.
+### Problem 2: Batch-Dateiumbenennung mit Regex
+**Schritt 1: Verstehen Sie das Problem**
+Benennen Sie Dateien um, die einem Muster entsprechen, und wandeln Sie Dateinamen mit Regex um.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie`glob`oder `opendir`, um Dateien zu finden, und Regex, um Namen umzuwandeln.
+**Schritt 3: Implementieren**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Schritt 4: Überprüfen**
+Zuerst mit dem `--dry-run`-Flag ausführen (nur drucken, nicht verschieben).
+### Problem 3: Erstellen eines einfachen Web Scrapers
+**Schritt 1: Verstehen Sie das Problem**
+Rufen Sie eine Webseite ab und extrahieren Sie alle Links.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie`LWP::Simple`zum Abrufen und Regex oder`HTML::LinkExtor`zum Parsen.
+**Schritt 3: Implementieren**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Schritt 4: Erweitern**
+Behandeln Sie relative URLs, filtern Sie nach Domäne und folgen Sie der Paginierung.
 ---
 
 ## Zusammenfassung

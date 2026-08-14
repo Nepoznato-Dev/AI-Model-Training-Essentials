@@ -1,38 +1,42 @@
 ---
-# البيانات الوصفية
-العنوان: "الصدأ"
-الوصف: "مرجع شامل للغة برمجة Rust يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Rust"
+description: "Comprehensive reference for the Rust programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [الصدأ، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "40 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [rust, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "40 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # الصدأ
 Rust هي لغة برمجة مجمعة ومكتوبة بشكل ثابت تم إصدارها لأول مرة في عام 2015، تم تطويرها في الأصل بواسطة Graydon Hoare في Mozilla. الوعد المحدد لـ Rust هو **أمان الذاكرة دون تجميع البيانات المهملة**. إنه يحقق ذلك من خلال نظام الملكية الخاص به - مجموعة من القواعد التي يتم فرضها في وقت الترجمة والتي تزيل فئات كاملة من الأخطاء (مراجع المؤشر الفارغة، وسباقات البيانات، وتجاوزات المخزن المؤقت، والاستخدام بعد الاستخدام المجاني) أثناء إنتاج التعليمات البرمجية بسرعة مثل C أو C++.
@@ -43,7 +47,7 @@ Rust هي لغة برمجة مجمعة ومكتوبة بشكل ثابت تم إ�
 - **أمان الذاكرة بدون GC**: يمنع نظام الملكية المؤشرات الفارغة، وسباقات البيانات، والمؤشرات المتدلية في وقت الترجمة - دون أي حمل إضافي لوقت التشغيل.
 - **الأداء**: يطابق أو يتجاوز C/C++ بالنسبة لمعظم أحمال العمل. لا يعني عدم وجود أداة تجميع البيانات المهملة عدم وجود توقف مؤقت غير متوقع.
 - **التزامن الشجاع**: يمنع نظام الكتابة سباقات البيانات في وقت الترجمة. إذا تم تجميعه، فهو آمن للخيط.
-- **الأدوات الحديثة**:`cargo`(نظام البناء + مدير الحزم) هي واحدة من أفضل الأدوات في أي لغة.  __محمي_1__، __محمي_2__، __محمي_3__ جميعها تعمل خارج الصندوق.
+- **الأدوات الحديثة**:`cargo`(نظام البناء + مدير الحزم) هي واحدة من أفضل الأدوات في أي لغة.  `cargo build`، `cargo test`، `cargo doc` جميعها تعمل خارج الصندوق.
 - **WebAssembly**: دعم من الدرجة الأولى للترجمة إلى WASM، مما يتيح أداءً شبه أصلي في المتصفحات.
 - **اعتماد متزايد**: يستخدم بواسطة AWS، وGoogle (Android)، وMicrosoft (Windows kernel)، وCloudflare، وDiscord، وDropbox، وMeta.
 ##المقايضات

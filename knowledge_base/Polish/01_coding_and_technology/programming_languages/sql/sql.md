@@ -40,7 +40,7 @@ contribution:
 ---
 
 #SQL
-SQL (Structured Query Language) to język specyficzny dla domeny, przeznaczony do zarządzania danymi i wysyłania zapytań do danych w relacyjnych bazach danych. Język SQL, opracowany po raz pierwszy w IBM w latach 70. XX wieku i ustandaryzowany w 1987 r., pozostaje głównym interfejsem pomiędzy aplikacjami i ich danymi. Każdy większy system zarządzania relacyjnymi bazami danych (RDBMS) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — używa języka SQL jako języka zapytań.
+SQL (Structured Query Language) to język specyficzny dla domeny, przeznaczony do zarządzania danymi i wysyłania zapytań do danych w relacyjnych bazach danych. Język SQL, opracowany po raz pierwszy w IBM w latach 70. XX wieku i ustandaryzowany w 1987 r., pozostaje głównym interfejsem między aplikacjami i ich danymi. Każdy większy system zarządzania relacyjnymi bazami danych (RDBMS) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — używa języka SQL jako języka zapytań.
 SQL nie jest językiem programowania ogólnego przeznaczenia. Nie napisałbyś aplikacji internetowej w SQL. Jeśli jednak Twoja aplikacja przechowuje dane — a prawie wszystkie aplikacje to robią — wówczas SQL jest językiem, którego używasz do pobierania, przekształcania i zarządzania tymi danymi. Jest to prawdopodobnie najbardziej uniwersalnie przydatna umiejętność techniczna po ogólnym programowaniu.
 ---
 
@@ -604,5 +604,148 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Ogromne skalowanie poziome | Trudno podzielić bazy danych SQL | Cassandra, DynamoDB, KaraluchDB |
 ---
 
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między`WHERE`a `HAVING`?
+**A:**`WHERE`filtruje wiersze przed grupowaniem; `HAVING`filtruje grupy po agregacji:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### P2: Czym różnią się funkcje okna od funkcji GROUP BY?
+**A:** Funkcje okna wykonują obliczenia w wierszach bez ich zwijania:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### P3: Jak zoptymalizować wolne zapytania?
+**O:** Kluczowe strategie:
+- Dodaj indeksy do kolumn używanych w`WHERE`,`JOIN`i`ORDER BY`
+- Unikaj`SELECT *`— wybierz tylko potrzebne kolumny
+- Użyj`EXPLAIN`/ `EXPLAIN ANALYZE`, aby odczytać plany zapytań
+- Jeśli to możliwe, zamień podzapytania na JOIN
+- Używaj CTE dla czytelności (zwykle nie ma to wpływu na wydajność)
+- Unikaj funkcji w kolumnach indeksowanych w WHERE: użyj `WHERE date >= '2024-01-01'`, a nie `WHERE YEAR(date) = 2024`
+### P4: Co to są współczynniki CTE i kiedy należy ich używać?
+**A:** Typowe wyrażenia tabelowe tworzą nazwane tymczasowe zestawy wyników:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### P5: Jak poprawnie obsługiwać wartości NULL?
+**A:** NULL oznacza nieznaną — nie jest równa niczemu, łącznie z samą sobą:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Znajdowanie N pierwszych grup
+**Krok 1: Zrozum problem**
+Znajdź 3 najlepiej opłacanych pracowników w każdym dziale.
+**Krok 2: Zidentyfikuj podejście**
+Użyj funkcji okna z`ROW_NUMBER()`podzielonym według działów.
+**Krok 3: Wdróż**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź, czy każdy dział ma co najwyżej 3 wiersze. Jeśli to konieczne, obsłuż powiązania za pomocą `DENSE_RANK()`.
+### Problem 2: Tworzenie raportu o wzroście rocznym
+**Krok 1: Zrozum problem**
+Oblicz miesięczne przychody i procent wzrostu rok do roku.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`DATE_TRUNC`do grupowania i funkcji okna`LAG()`do porównania z poprzednim rokiem.
+**Krok 3: Wdróż**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź, czy pierwsze 12 miesięcy ma NULL dla poprzedniego roku. Porównaj procent wzrostu ze znanymi liczbami.
+### Problem 3: Przesuwanie wierszy do kolumn
+**Krok 1: Zrozum problem**
+Przekształć liczniki stanu z wierszy na kolumny.
+**Krok 2: Zidentyfikuj podejście**
+Użyj agregacji warunkowej (`CASE`wewnątrz`SUM`).
+**Krok 3: Wdróż**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Krok 4: Przedłuż**
+Dodaj kolumny procentowe i sumy bieżące.
+---
+
 ## Streszczenie
-SQL to język mający 50 lat, który pozostaje niezbędny. Każdy programista, analityk danych i analityk musi to wiedzieć. Podstawowy język jest ustandaryzowany i przenośny; różnice w dialektach są do pokonania. Nowoczesny SQL (z funkcjami okiennymi, CTE i obsługą JSON) jest wystarczająco wyrazisty dla większości zadań związanych z danymi. Kluczowe umiejętności to: pisanie wydajnych zapytań, zrozumienie indeksów, czytanie planów zapytań i projektowanie dobrych schematów. Jeśli w ogóle pracujesz z danymi, SQL nie podlega negocjacjom.
+SQL to język mający 50 lat, który pozostaje niezbędny. Każdy programista, analityk danych i analityk musi to wiedzieć. Podstawowy język jest ustandaryzowany i przenośny; różnice w dialektach są do opanowania. Nowoczesny SQL (z funkcjami okiennymi, CTE i obsługą JSON) jest wystarczająco wyrazisty dla większości zadań związanych z danymi. Kluczowe umiejętności to: pisanie wydajnych zapytań, zrozumienie indeksów, czytanie planów zapytań i projektowanie dobrych schematów. Jeśli w ogóle pracujesz z danymi, SQL nie podlega negocjacjom.

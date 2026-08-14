@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Design e Cultura Organizacional
-O design organizacional é o arranjo deliberado de estrutura, processos, funções e direitos de decisão para executar a estratégia de forma eficaz. Cultura são os valores, crenças, normas e comportamentos compartilhados que moldam a forma como as pessoas realmente trabalham juntas. A estrutura é o esqueleto; cultura é a personalidade. Você pode redesenhar a estrutura no papel, mas se a cultura não apoiar a mudança, ela não funcionará. E uma cultura forte com uma estrutura terrível irá sufocar lentamente. As melhores organizações acertam em ambos os aspectos — e compreendem que estão profundamente interligadas.
+O design organizacional é o arranjo deliberado de estrutura, processos, funções e direitos de decisão para executar a estratégia de forma eficaz. Cultura são os valores, crenças, normas e comportamentos compartilhados que moldam a forma como as pessoas realmente trabalham juntas. A estrutura fornece a estrutura; a cultura molda o comportamento. Uma estrutura pode ser redesenhada no papel, mas se a cultura não apoiar a mudança, a implementação falhará. Da mesma forma, uma cultura forte aliada a uma estrutura ineficaz irá minar gradualmente o desempenho organizacional. As organizações mais eficazes abordam ambos — e reconhecem que estão profundamente interligados.
 ---
 
 ## Estruturas Organizacionais
@@ -87,7 +88,7 @@ O design organizacional é o arranjo deliberado de estrutura, processos, funçõ
 | **Processos** | Fluxo de informações; tomando uma decisão; planejamento; orçamentação |
 | **Recompensas** | Incentivos; medição de desempenho; alinhamento com a estratégia |
 | **Pessoas** | Contratando; desenvolvimento; cultura; as capacidades humanas |
-O insight principal: a estratégia impulsiona a estrutura. Todos os outros elementos devem estar alinhados. Mudar a estrutura sem mudar os processos, as recompensas e o desenvolvimento das pessoas falhará.
+O insight principal: a estratégia impulsiona a estrutura. Todos os outros elementos devem estar alinhados. Mudar a estrutura sem mudar processos, recompensas e desenvolvimento de pessoas falhará.
 ---
 
 ## Cultura Organizacional
@@ -107,7 +108,7 @@ O insight principal: a estratégia impulsiona a estrutura. Todos os outros eleme
 ### Dimensões Culturais
 | Dimensão | Descrição |
 |-----------|------------|
-| **Segurança psicológica** | As pessoas podem assumir riscos e ser vulneráveis ​​sem medo de punição? |
+| **Segurança psicológica** | As pessoas podem correr riscos e ser vulneráveis ​​sem medo de punição? |
 | **Responsabilidade** | As pessoas são responsabilizadas pelos seus compromissos? |
 | **Transparência** | A informação é compartilhada abertamente ou acumulada como poder? |
 | **Tolerância à inovação** | O fracasso é punido ou tratado como aprendizado? |

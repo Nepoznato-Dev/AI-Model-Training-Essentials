@@ -911,6 +911,539 @@ Most production code targets C11 or C17. C23 brings modern conveniences but adop
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between pointers and arrays in C?
+**A:** Arrays and pointers are related but distinct. An array is a contiguous block of memory with a fixed size known at compile time. A pointer is a variable that holds a memory address. Arrays decay to pointers when passed to functions, but `sizeof(array)` gives the total size while `sizeof(pointer)` gives only the pointer size (4 or 8 bytes). Array names are not modifiable lvalues — you cannot do `arr++`.
+
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Q2: How do I properly manage memory and avoid leaks?
+**A:** Every `malloc`/`calloc` must have a corresponding `free`. Common mistakes: forgetting to free (leak), freeing twice (undefined behavior), using memory after freeing (use-after-free), and not checking `malloc` return value (NULL on failure). Best practice: allocate and free in the same module, use the "goto cleanup" pattern for error handling, and always set freed pointers to NULL.
+
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Q3: What are the best practices for error handling in C?
+**A:** C has no exceptions. Error handling uses return values (error codes, NULL pointers, negative values). The standard pattern: functions return a status code or NULL on failure, and set `errno` for system calls. Use the "goto cleanup" pattern for resource cleanup on errors. Always check return values of `malloc`, `fopen`, and other functions that can fail.
+
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Q4: How do structs, unions, and bitfields differ in memory layout?
+**A:** Structs lay out members sequentially with possible padding for alignment. Unions overlay all members at the same memory location — size equals the largest member. Bitfields pack multiple values into a single integer. Structs are for heterogeneous data, unions for type-punning or saving space when only one field is active, and bitfields for compact flag storage.
+
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Q5: What are function pointers, and when should I use them?
+**A:** Function pointers store the address of a function and enable callbacks, polymorphism, and plugin architectures. They are the foundation of C's approach to higher-order functions (like `qsort`, `bsearch`). Declare them with the syntax: `return_type (*name)(parameter_types)`.
+
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Implement a Dynamic Array (Vector)
+
+**Problem Statement:** Implement a dynamic array in C that automatically grows when elements are added, supports O(1) amortized append, and provides proper cleanup. This is the C equivalent of C++ `std::vector`.
+
+**Step 1 — Understand the Problem:**
+A dynamic array needs: (1) a heap-allocated buffer, (2) tracking of size (used elements) and capacity (allocated slots), (3) reallocation when size reaches capacity, (4) proper memory cleanup. Growth factor of 2x gives O(1) amortized append.
+
+**Step 2 — Identify the Approach:**
+- Use `malloc` for initial allocation, `realloc` for growth.
+- Store data pointer, size, and capacity in a struct.
+- Grow by doubling capacity when `size == capacity`.
+- Provide `push`, `pop`, `get`, `set`, and `free` operations.
+
+**Step 3 — Implement the Solution:**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**Step 4 — Verify and Optimize:**
+- Amortized O(1) push: doubling means each element is copied at most O(log n) times total.
+- Bounds checking in `vec_get` and `vec_pop` catches errors early — essential in C where there is no runtime safety net.
+- Memory: after 100 pushes starting from capacity 4, capacity reaches 128 (4→8→16→32→64→128).
+- Production: use `shrink_to_fit` (realloc to exact size) when done growing to reclaim unused memory.
+
+### Problem 2: Build a Simple Hash Table
+
+**Problem Statement:** Implement a hash table with string keys and integer values using separate chaining for collision resolution. Support insert, lookup, and delete operations.
+
+**Step 1 — Understand the Problem:**
+A hash table maps keys to array indices via a hash function. Collisions (different keys mapping to the same index) are resolved with separate chaining: each bucket is a linked list of entries. We need: hash function, insert, lookup, delete, and cleanup.
+
+**Step 2 — Identify the Approach:**
+- Use FNV-1a hash for good distribution of string keys.
+- Array of bucket pointers (linked list heads).
+- Load factor tracking; resize when load factor exceeds threshold.
+- All operations are O(1) average, O(n) worst case.
+
+**Step 3 — Implement the Solution:**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**Step 4 — Verify and Optimize:**
+- Average O(1) for insert/lookup/delete with a good hash function and reasonable load factor.
+- FNV-1a provides excellent distribution for string keys with minimal computation.
+- The pointer-to-pointer technique (`Entry **pp`) in `hashmap_remove` elegantly handles both head-of-list and mid-list deletion without special cases.
+- Production: add rehashing when load factor exceeds threshold. Use open addressing (linear probing) for better cache performance.
+
+### Problem 3: Implement a Ring Buffer for Producer-Consumer
+
+**Problem Statement:** Implement a lock-free single-producer single-consumer ring buffer in C for high-performance inter-thread communication without dynamic allocation during operation.
+
+**Step 1 — Understand the Problem:**
+A ring buffer (circular buffer) uses a fixed-size array with read and write indices. When the buffer is full, the writer blocks or overwrites. For SPSC (single-producer single-consumer), we can use atomic operations instead of locks for maximum throughput.
+
+**Step 2 — Identify the Approach:**
+- Fixed-size array allocated once at initialization.
+- `head` (read position) and `tail` (write position) as atomic indices.
+- Producer advances `tail`; consumer advances `head`.
+- Buffer is empty when `head == tail`; full when `(tail + 1) % capacity == head`.
+- Use C11 atomics with appropriate memory ordering.
+
+**Step 3 — Implement the Solution:**
+
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**Step 4 — Verify and Optimize:**
+- Lock-free: only atomic operations — no mutexes, no context switches.
+- Memory ordering: `release` on write ensures the data is visible before the index update; `acquire` on read ensures we see the data after reading the index.
+- Power-of-2 capacity: enables `& (capacity - 1)` instead of `% capacity` — significantly faster.
+- Throughput: billions of operations per second on modern hardware.
+- Production: add padding between `head` and `tail` to prevent false sharing (each on its own cache line).
+
+---
+
 ## Summary
 
 C is the bedrock of modern computing. It gives you maximum control over hardware with minimal abstraction overhead. The cost of that control is responsibility -- you manage memory, check bounds, and handle errors yourself. For systems programming, embedded development, and anywhere performance and resource constraints matter, C remains unmatched. For everything else, higher-level languages built on top of C are usually more productive choices.

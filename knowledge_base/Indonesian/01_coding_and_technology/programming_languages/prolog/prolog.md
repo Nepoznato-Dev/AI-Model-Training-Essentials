@@ -359,7 +359,7 @@ clean:
 
 ---
 
-## Pengujian & Debug
+## Pengujian & Debugging
 ### Pelacakan Bawaan
 ```prolog
 ?- trace.
@@ -537,6 +537,129 @@ swipl -g main -o myapp.sav -c main.pl
 | Ilmu data / ML | Bukan ekosistem | Piton, R |
 | Kode yang kritis terhadap kinerja | Prolog lambat untuk komputasi | C, C++, Karat |
 | Pemrograman tujuan umum | Mungkin tapi canggung | Python, Buka, Java |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan penyatuan Prolog dengan tugas dalam bahasa lain?
+**A:** Penyatuan adalah pencocokan pola dua arah, bukan penugasan:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2: Bagaimana cara kerja backtracking di Prolog?
+**A:** Saat sasaran gagal, Prolog mundur ke titik pilihan terakhir dan mencoba alternatif berikutnya:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3: Bagaimana cara bekerja dengan daftar di Prolog?
+**A:** Daftar menggunakan pencocokan pola kepala/ekor:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4: Kapan sebaiknya saya menggunakan Prolog dibandingkan bahasa lain?
+**A:** Prolog unggul dalam:
+- Kendala kepuasan (penjadwalan, teka-teki)
+- Sistem berbasis aturan (sistem pakar, validasi)
+- Grafik/penjelajahan pohon
+- Pemrosesan bahasa alami
+- Perhitungan simbolis
+- Masalah apa pun dapat diungkapkan sebagai hubungan logis
+### Q5: Apa kendala umum di Prolog?
+**J:** Masalah utama:
+- Rekursi tak terbatas — selalu utamakan kasus dasar
+- Mundur yang tidak disengaja — gunakan potongan`!`atau`once/1`
+- Terjadi pemeriksaan — loop`X = f(X)`secara default (gunakan`unify_with_occurs_check`)
+- Potongan hijau (optimasi) vs potongan merah (mengubah arti) — lebih memilih hijau
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Memecahkan Puzzle N-Queens
+**Langkah 1: Pahami Masalahnya**
+Tempatkan N ratu di papan catur NxN sehingga tidak ada dua ratu yang saling menyerang.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan pembuatan berbasis batasan: tempatkan ratu kolom demi kolom, periksa keamanannya.
+**Langkah 3: Terapkan**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Langkah 4: Verifikasi**
+`?- n_queens(8, Qs).`harus menemukan 92 solusi.
+### Masalah 2: Membangun Sistem Pakar Sederhana
+**Langkah 1: Pahami Masalahnya**
+Diagnosis masalah mobil berdasarkan gejalanya.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan aturan Prolog untuk menyandikan pengetahuan diagnostik.
+**Langkah 3: Terapkan**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan skor kepercayaan diri, tanyakan gejala kepada pengguna secara interaktif, dan diagnosa berantai.
 ---
 
 ## Ringkasan

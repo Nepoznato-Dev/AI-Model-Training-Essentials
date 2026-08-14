@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Empresas y Economía"
-descripción: "Estructuras corporativas, marketing, economía, startups"
-categoría: "Empresas y Economía"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Business and Economics"
+description: "Corporate structures, marketing, economics, startups"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de economía y negocios"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [negocios, economía, negocios y economía]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "9 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [business, economics, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Negocios y Economía
 Toda organización que vende un producto o servicio es un negocio, y toda sociedad que produce y distribuye bienes es una economía. Los conceptos de este archivo se aplican ya sea que usted esté dirigiendo una operación independiente, trabajando en una corporación, tratando de entender las noticias o simplemente descubriendo cómo se mueve el dinero en el mundo.
 ---
@@ -42,14 +47,14 @@ Toda organización que vende un producto o servicio es un negocio, y toda socied
 La estructura legal de una empresa determina cómo paga impuestos, quién es responsable de las deudas y cómo se toman las decisiones.
 | Estructura | Propietarios | Responsabilidad | Tratamiento Fiscal | Mejor para |
 |-----------|--------|-----------|-----------------------|----------|
-| **Propietario único** | 1 persona | Responsabilidad personal ilimitada | Ingresos declarados en declaración personal | Autónomos, empresas paralelas |
+| **Propietario único** | 1 persona | Responsabilidad personal ilimitada | Ingresos declarados en declaración personal | Autónomos, empresas secundarias |
 | **Asociación** | 2+ personas | Responsabilidad personal ilimitada (socios colectivos) | Distribución de ingresos entre socios | Servicios profesionales (bufetes de abogados, consultores) |
 | **LLC** | 1+ miembros | Responsabilidad limitada (bienes personales protegidos) | Flexible: puede pagar impuestos como propiedad individual, sociedad o corporación | La mayoría de las pequeñas y medianas empresas |
 | **Corporación C** | Accionistas | Responsabilidad limitada | Doble imposición (impuesto sobre sociedades + dividendos) | Empresas que planean recaudar capital de riesgo o cotizar en bolsa |
 | **Corporación S** | Accionistas (limitado a 100) | Responsabilidad limitada | Transferencia (sin doble imposición) | Pequeñas corporaciones que desean beneficios fiscales |
 ### Jerarquía corporativa
 La mayoría de las empresas medianas y grandes siguen una estructura similar:
-- **Junta Directiva**: Elegida por los accionistas; establece la estrategia y contrata al director ejecutivo.
+- **Junta Directiva**: Elegida por los accionistas; establece la estrategia y contrata al director general.
 - **C-Suite**: CEO (estrategia general), CFO (finanzas), COO (operaciones), CTO (tecnología).
 - **VPs/Directores**: Liderar departamentos o unidades de negocio.
 - **Gerentes**: supervisan los equipos y la ejecución del día a día.
@@ -105,7 +110,7 @@ El marketing no es sólo publicidad. Es todo el proceso de comprender lo que los
 - **CLV (Valor de vida del cliente)**: Cuántos ingresos genera un cliente durante toda su relación con su empresa. Si el cliente promedio gasta $50/mes durante 3 años, CLV = $1,800.
 - **La relación CAC:CLV** debe ser de al menos 1:3; debería costar como máximo un tercio de lo que el cliente le pagará. Si CAC excede CLV, la empresa pierde dinero con cada cliente.
 - **Tasa de conversión**: qué porcentaje de personas que ven tu oferta realmente compran. Las tasas de conversión típicas del comercio electrónico son del 1 al 3%.
-- **Tasa de abandono**: Qué porcentaje de clientes abandonan cada período. Una deserción mensual del 5% significa que perderá la mitad de sus clientes en aproximadamente 14 meses.
+- **Tasa de abandono**: Qué porcentaje de clientes abandonan cada periodo. Una deserción mensual del 5% significa que perderá la mitad de sus clientes en aproximadamente 14 meses.
 ---
 
 ## Contabilidad: el lenguaje de los negocios
@@ -151,7 +156,7 @@ La mayoría de las startups fracasan. Las estimaciones sugieren que el 90% de la
 ---
 
 ## Cadena de suministro y operaciones
-La gestión de la cadena de suministro es el arte y la ciencia de llevar el producto correcto al lugar correcto, en el momento correcto y al costo correcto. Suena sencillo. Es extraordinariamente difícil.
+La gestión de la cadena de suministro es el proceso coordinado de entregar el producto correcto en el lugar correcto, en el momento correcto y al costo correcto. El objetivo es sencillo; La ejecución es compleja.
 ### Conceptos clave
 - **Justo a tiempo (JIT)**: reciba materiales solo cuando sea necesario, reduciendo los costos de inventario. Toyota fue pionera en esto. La compensación: los sistemas JIT son frágiles cuando las cadenas de suministro se interrumpen (como lo demostró la escasez de chips de 2020-2022).
 - **Fabricación ajustada**: Eliminar el desperdicio, cualquier cosa que no agregue valor al cliente. Identificar y eliminar los "siete desperdicios": sobreproducción, espera, transporte, sobreprocesamiento, inventario, movimiento y defectos.

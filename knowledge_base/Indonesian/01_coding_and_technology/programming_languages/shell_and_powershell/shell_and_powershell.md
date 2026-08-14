@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Shell & PowerShell
 Skrip shell mengacu pada penulisan skrip untuk penerjemah baris perintah. Dua shell yang paling penting adalah **Bash** (Bourne Again Shell) — default di Linux dan macOS — dan **PowerShell** — shell lintas platform dan bahasa skrip modern Microsoft. Skrip Shell mengotomatiskan tugas administrasi sistem, membangun saluran pipa, pemrosesan file, dan alur kerja penerapan.
 Setiap pengembang, insinyur DevOps, dan administrator sistem memerlukan keterampilan skrip shell. Baik Anda menerapkan server web, memproses file log, menyiapkan pipeline CI/CD, atau mengotomatiskan pencadangan, skrip shell adalah alat untuk pekerjaan tersebut.
@@ -857,6 +858,152 @@ Publish-Module @publishParams
 | Analisis log | Grep/awk cepat satu baris | Python, SQL untuk analisis kompleks |
 | Aplikasi yang kompleks | Tidak cocok | Python, Buka, Java |
 | Skrip lintas platform | PowerShell 7+ berfungsi di mana saja | Python untuk skrip yang benar-benar portabel |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara tanda kutip tunggal dan ganda di Bash?
+**A:** Tanda kutip ganda memungkinkan perluasan variabel; tanda kutip tunggal bersifat literal:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: Bagaimana cara menangani kesalahan dalam skrip shell?
+**A:** Gunakan`set -e`untuk keluar dari kesalahan, dan perangkap untuk pembersihan:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3: Bagaimana cara memproses argumen baris perintah dengan benar?
+**A:** Gunakan`getopts`untuk tanda dan parameter posisi:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4: Apa yang dimaksud dengan pipeline PowerShell dan apa bedanya dengan Bash?
+**A:** PowerShell menyalurkan objek, bukan teks. Setiap objek mempertahankan propertinya:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: Bagaimana cara menulis skrip lintas platform?
+**A:** Untuk Bash: gunakan`#!/usr/bin/env bash`, hindari tanda khusus GNU. Untuk PowerShell: gunakan`pwsh`(PowerShell Core) yang berjalan di Linux/macOS/Windows.
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Skrip Pemrosesan Gambar Batch (Bash)
+**Langkah 1: Pahami Masalahnya**
+Ubah ukuran semua gambar PNG dalam direktori ke lebar maksimum 800px.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`find`untuk mencari file dan`convert`(ImageMagick) untuk mengubah ukuran.
+**Langkah 3: Terapkan**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan bilah kemajuan, penanganan kesalahan untuk gambar yang rusak, dan pemrosesan paralel dengan`xargs -P`.
+### Masalah 2: Rotasi Log Otomatis (Bash)
+**Langkah 1: Pahami Masalahnya**
+Putar file log setiap hari, kompres log lama, dan hapus log yang lebih lama dari 30 hari.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`find`dengan filter berbasis waktu dan`gzip`untuk kompresi.
+**Langkah 3: Terapkan**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Langkah 4: Jadwal**
+Tambahkan ke crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Masalah 3: Pemeriksaan Kesehatan Layanan Windows (PowerShell)
+**Langkah 1: Pahami Masalahnya**
+Periksa apakah layanan penting sedang berjalan dan kirimkan peringatan jika ada yang dihentikan.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`Get-Service`dan filter untuk layanan yang dihentikan.
+**Langkah 3: Terapkan**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Langkah 4: Otomatiskan**
+Jadwalkan sebagai pekerjaan Penjadwal Tugas Windows yang berjalan setiap 5 menit.
 ---
 
 ## Ringkasan

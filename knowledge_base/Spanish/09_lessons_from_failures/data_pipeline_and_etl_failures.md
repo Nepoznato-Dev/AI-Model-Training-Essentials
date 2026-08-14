@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Errores de canalización de datos y ETL"
-descripción: "Derivación del esquema, datos duplicados, lagunas de validación, supervisión de canalización"
-categoría: "Lecciones de los fracasos"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Data Pipeline and ETL Failures"
+description: "Schema drift, duplicate data, validation gaps, pipeline monitoring"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Lecciones de las fallas del equipo de la base de conocimientos"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [datos, canalización, etl, fracasos, lecciones de los fracasos]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "5 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [data, pipeline, etl, failures, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "5 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Fallos de canalización de datos y ETL
 Los canales de datos son la tubería de las organizaciones modernas: mueven datos desde los sistemas de origen a través de transformaciones a las bases de datos, almacenes y lagos donde se utilizan para análisis, aprendizaje automático y toma de decisiones. Cuando trabajan, nadie se da cuenta. Cuando fallan, las decisiones se toman sobre datos obsoletos, los modelos se entrenan con basura, los informes muestran números imposibles y la confianza en toda la plataforma de datos se erosiona. Las fallas en la canalización de datos se encuentran entre las fallas más comunes y costosas en las organizaciones tecnológicas.

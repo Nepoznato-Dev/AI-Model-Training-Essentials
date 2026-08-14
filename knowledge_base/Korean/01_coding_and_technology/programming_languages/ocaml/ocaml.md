@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # OCaml
 OCaml(Objective Caml)은 프랑스 INRIA에서 개발된 함수형 프로그래밍 언어로, 1996년 처음 출시되었습니다. 함수형 프로그래밍의 표현력과 실용적인 기능을 결합한 것입니다. 즉, 유형 추론(Hindley-Milner)을 갖춘 강력한 유형 시스템, 패턴 일치, 대수 데이터 유형 및 선택적 객체 지향 프로그래밍이 있습니다. OCaml은 빠른 네이티브 코드로 컴파일되며 바이트코드도 지원합니다.
 OCaml의 가장 유명한 실제 애플리케이션은 전체 거래 인프라에 OCaml을 사용하는 **Jane Street** 무역 회사입니다. 또한 컴파일러 개발(Rust 컴파일러는 원래 OCaml로 작성됨), 공식 검증, 금융 시스템 및 정리 증명에도 사용됩니다.
@@ -455,15 +456,15 @@ my-ocaml-project/
 ### 주요 빌드 명령
 | 명령 | 설명 |
 |---------|-------------|
-|  __보호됨_0__ | 새 프로젝트 만들기 |
-|  __보호됨_1__ | 프로젝트 빌드 |
-|  __보호됨_2__ | 실행 파일 실행 |
-|  __보호됨_3__ | 테스트 실행 |
-|  __보호됨_4__ | 빌드 아티팩트 정리 |
-|  __보호됨_5__ | 프로젝트가 로드된 상태에서 REPL 시작 |
-|  __보호_6__ | 종속성 설치 |
-|  __보호_7__ | 형식 코드 |
-|  __보호됨_8__ | OCaml 5.1 스위치 생성 |
+| `dune init project my_app`| 새 프로젝트 만들기 |
+| `dune build`| 프로젝트 빌드 |
+| `dune exec ./bin/main.exe`| 실행 파일 실행 |
+| `dune test`| 테스트 실행 |
+| `dune clean`| 빌드 아티팩트 정리 |
+| `dune utop`| 프로젝트가 로드된 상태에서 REPL 시작 |
+| `opam install . --deps-only`| 종속성 설치 |
+| `dune build @fmt`| 형식 코드 |
+| `opam switch create 5.1`| OCaml 5.1 스위치 생성 |
 ---
 
 ## 테스트
@@ -634,9 +635,9 @@ let process_user id =
 ### 프로파일링 도구
 | 도구 | 목적 | 사용법 |
 |------|---------|-------|
-| **ocamlprof** | 실행 횟수 프로파일링 | `ocamlc -p`다음`ocamlprof`|
-| **성능** | Linux 시스템 프로파일러 |  __보호됨_2__ |
-| **시공간** | 메모리 프로파일링(4.x) |  __보호됨_3__ |
+| **ocamlprof** | 실행 횟수 프로파일링 | `ocamlc -p`다음으로`ocamlprof`|
+| **성능** | Linux 시스템 프로파일러 | `perf record ./program`|
+| **시공간** | 메모리 프로파일링(4.x) | `OCAML_SPACETIME_INTERVAL=1000 ./program`|
 | **벤치마크** | 마이크로 벤치마킹 | `ocaml-benchmark`패키지 |
 ### 최적화 기술
 ```ocaml
@@ -712,6 +713,122 @@ ENTRYPOINT ["./app"]
 | 데이터 과학 / ML | 생태계가 아니다 | 파이썬, R |
 | 모바일 앱 | 적합하지 않음 | 스위프트, 코틀린, 다트 |
 | 범용 애플리케이션 | 가능하지만 틈새 시장 | Go, 파이썬, 러스트 |
+---
+
+## 종합 Q&A
+### Q1: OCaml의 유형 추론은 어떻게 작동하나요?
+**답:** OCaml의 Hindley-Milner 유형 시스템은 주석 없이 유형을 추론합니다.
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2: 대수 데이터 유형은 무엇이며 왜 강력한가요?
+**A:** ADT는 제품 유형(레코드)과 합계 유형(변형)을 결합합니다.
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3: 모듈과 펑터는 어떻게 작동하나요?
+**답:** 모듈은 코드를 구성합니다. 펑터는 모듈에서 모듈로의 함수입니다:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4: OCaml이 빠른 이유는 무엇입니까?
+**답:** OCaml은 효율적인 네이티브 코드로 컴파일됩니다.
+- 유형 삭제 — 런타임 유형 확인 없음
+- unboxed float 및 정수
+- 패턴 일치는 점프 테이블로 컴파일됩니다.
+- 테일콜 최적화
+- 가비지 수집기 일시 중지 없음(증분 GC)
+### Q5: OCaml은 다른 ML 계열 언어와 어떻게 비교됩니까?
+**답:** OCaml은 실용성과 순수성의 균형을 유지합니다.
+- vs Haskell: OCaml은 명령형 기능, 변경 가능한 상태 및 더 빠른 컴파일을 제공합니다.
+- vs F#: OCaml은 더 성숙한 모듈 시스템과 더 나은 크로스 플랫폼 지원을 제공합니다.
+- vs Rust: OCaml에는 GC(소유권 없음)가 있지만 Rust에는 더 나은 FFI와 생태계가 있습니다.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 유형 안전 인터프리터 구현
+**1단계: 문제 이해**
+간단한 표현 언어를 위한 인터프리터를 구축하세요.
+**2단계: 접근 방식 파악**
+표현식에는 대수적 데이터 유형을 사용하고 평가에는 패턴 일치를 사용합니다.
+**3단계: 구현**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**4단계: 확장**
+더 완전한 언어를 위해`Let`,`If`,`Lambda`를 추가하세요.
+### 문제 2: 결합자를 사용하여 간단한 파서 구축
+**1단계: 문제 이해**
+파서 결합자를 사용하여 산술 표현식을 구문 분석합니다.
+**2단계: 접근 방식 파악**
+작은 파서를 구축하고 구성합니다.
+**3단계: 구현**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**4단계: 작성**
+전체 표현식을 구문 분석하려면 파서를`map`,`seq`,`alt`및`many`와 결합하세요.
 ---
 
 ## 요약

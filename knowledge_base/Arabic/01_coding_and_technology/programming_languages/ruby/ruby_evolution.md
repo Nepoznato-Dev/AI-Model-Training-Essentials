@@ -1,0 +1,116 @@
+---
+# Metadata
+title: "Ruby — Version History & Evolution"
+description: "Comprehensive version history and evolution of Ruby from 1.0 to modern Ruby."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+authors:
+  - name: "AI Model Training Team"
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-09"
+    changes: "Initial version history"
+tags: [ruby, version-history, evolution, coding-and-technology]
+difficulty_level: "beginner"
+estimated_reading_time: "10 min"
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+---
+
+# روبي — تاريخ الإصدار وتطوره
+## الجدول الزمني
+| النسخة | سنة | الموضوع الرئيسي |
+|---------|------|-----------|
+| 0.95 | 1995 | الإصدار الأولي (يوكيهيرو "ماتز" ماتسوموتو) |
+| 1.0 | 1996 | أول إصدار مستقر |
+| 1.2 | 1998 | التوثيق الإنجليزي الأول |
+| 1.4 | 1999 | `BEGIN`/`END`,`String#unpack`|
+| 1.6 | 2000 | تحسينات جمع القمامة |
+| 1.8 | 2003 | $KCODE، محرك oniguruma regex |
+| 1.9 | 2007 | **التخصص**: M17N (متعدد اللغات)، بناء جملة التجزئة الجديد، الألياف |
+| 2.0 | 2013 | وسيطات الكلمات الرئيسية،`Enumerator::Lazy`،`Module#prepend`|
+| 2.1 | 2013 | استدعاءات الطريقة المكررة،`frozen_string_literal`|
+| 2.2 | 2014 | الرمز GC، GC التزايدي |
+| 2.3 | 2015 | سلسلة حرفية مجمدة،`&.`الملاحة الآمنة |
+| 2.4 | 2016 | `Integer`موحد، تعيين حالة`String`Unicode |
+| 2.5 | 2017 |  `yield_self`، كتل في`rescue`/`ensure`|
+| 2.6 | 2018 | **مترجم JIT (MJIT)**، نطاق لا نهاية له`1..`|
+| 2.7 | 2019 | مطابقة الأنماط (تجريبية)، معلمات الكتلة المرقمة |
+| 3.0 | 2020 | **التخصص**: راكتور (التزامن)، جدولة الألياف، أنواع RBS |
+| 3.1 | 2021 |  إعادة توجيه الكتلة `Anonymous`،`Hash#compact`|
+| 3.2 | 2022 |  فئة `Data`، تحسينات `File.realpath`، إنتاج YJIT |
+| 3.3 | 2023 | **YJIT** تحسينات كبيرة، معلمة كتلة`it`|
+| 3.4 | 2024 | محلل المنشور الافتراضي،`it`كمعلمة الكتلة الافتراضية |
+## المعالم الرئيسية
+### روبي المبكر (1995-2003)
+- **1995**: ابتكر ماتز لغة Ruby، حيث مزج لغة Perl وSmalltalk وLisp
+- **1.0 (1996)**: أول إصدار مستقر
+- **1.8 (2003)**: الياقوتة "الكلاسيكية" - سريعة ومستقرة ومعتمدة على نطاق واسع
+### عصر ريلز (2004-2013)
+- **2004**: إصدار Ruby on Rails — ثورة تطوير الويب
+- **1.9 (2007)**: M17N (سلاسل متعددة اللغات)، بناء جملة التجزئة الجديد `{key: value}`، الألياف
+- **2.0 (2013)**: وسيطات الكلمات الرئيسية، العدادون البطيئون، `Module#prepend`
+### روبي الحديثة (2015 إلى الوقت الحاضر)
+- **2.6 (2018)**: مترجم JIT (MJIT) - أول دفعة للأداء
+- **2.7 (2019)**: مطابقة الأنماط (تجريبية)، معلمات الكتلة المرقمة`_1`
+- **3.0 (2020)**: **Ractor** (تزامن نموذج الممثل)، **جدولة الألياف** (الإدخال/الإخراج غير المتزامن)، **RBS** (توقيعات النوع)
+- **3.2 (2022)**: فئة`Data`(كائنات ذات قيمة غير قابلة للتغيير)، YJIT جاهزة للإنتاج
+- **3.3 (2023)**: عمليات تسريع رئيسية لـ YJIT (أسرع بما يصل إلى 3 مرات)، ومعلمة الكتلة `it`
+- **3.4 (2024)**: يصبح المحلل اللغوي المنشور هو الافتراضي
+## تطور الأداء
+```
+Ruby 1.8:  Baseline (interpreted)
+Ruby 1.9:  ~1.5x faster (YARV bytecode)
+Ruby 2.0:  ~1x (focus on features)
+Ruby 2.6:  MJIT (experimental JIT)
+Ruby 3.0:  Fiber Scheduler (async I/O)
+Ruby 3.2:  YJIT (production JIT)
+Ruby 3.3:  YJIT 3x faster (Rails benchmarks)
+Ruby 3.4:  Prism parser (faster parsing)
+Target:    3x faster than Ruby 2.5 (Ruby 3x3 goal)
+```
+
+## تطور التزامن
+```
+1.8:  Green threads (GIL)
+1.9:  Native threads (still GIL)
+2.0:  Fiber (cooperative)
+2.6:  Fiber Scheduler proposal
+3.0:  Ractor (Actor model, no GIL sharing)
+3.0:  Fiber Scheduler (async I/O without threads)
+3.3:  Improved Fiber Scheduler
+```
+
+## تطور مطابقة الأنماط
+```
+2.7:  Experimental — case/in
+3.0:  Improved — pin operator, find pattern
+3.1:  One-line pattern matching
+3.2:  Shortcut syntax, infinite patterns
+3.4:  Pattern matching stabilized
+```
+
+## مبادئ التصميم الرئيسية
+```
+1. "MINASWAN" — Matz is nice and so we are nice
+2. "Programmer happiness" — surprising is bad
+3. "Everything is an object" — even numbers, nil, true
+4. "Blocks are fundamental" — closures as first-class
+5. "Duck typing" — behavior over type
+6. "Convention over configuration" — Rails philosophy
+```
+
+## نمو النظام البيئي
+```
+2004: Rails launches — Ruby enters mainstream
+2005: RubyGems package manager
+2006: Ruby wins "Language of the Year" (TIOBE)
+2008: Bundler (dependency management)
+2010: Ruby 1.9 adoption accelerates
+2013: Ruby 2.0 — enterprise adoption
+2020: Ruby 3.0 — concurrency revolution
+2023: YJIT makes Ruby fast again
+2025: Ruby remains top 10; Rails powers GitHub, Shopify, Basecamp, Stripe
+```

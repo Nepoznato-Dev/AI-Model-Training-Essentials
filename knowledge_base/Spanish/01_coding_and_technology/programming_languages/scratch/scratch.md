@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Rasca"
-descripción: "Referencia completa para el lenguaje de programación Scratch que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Scratch"
+description: "Comprehensive reference for the Scratch programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [scratch, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "29 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [scratch, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Rascar
 Scratch es un lenguaje de programación visual basado en bloques desarrollado por el MIT Media Lab y lanzado por primera vez en 2007. En lugar de escribir código basado en texto, los usuarios juntan bloques de colores para crear programas. Scratch está diseñado específicamente para niños de 8 a 16 años (aunque lo usan estudiantes de todas las edades) para enseñar conceptos fundamentales de programación (bucles, condicionales, variables, eventos y funciones) sin la barrera de los errores de sintaxis.
 Scratch es el lenguaje de programación introductorio más utilizado en el mundo, con más de 100 millones de usuarios registrados y disponibilidad en más de 70 idiomas. Se ejecuta en un navegador web y es gratuito.
@@ -671,6 +676,120 @@ Después de aprender Scratch, los siguientes pasos típicos incluyen:
 | Creación visual de prototipos de ideas de juegos | Iteración rápida | — |
 | Desarrollo profesional | No diseñado para esto | Python, JavaScript, cualquier lenguaje de texto |
 | Educación en informática a nivel universitario | Demasiado simple | Python, Java, C |
+---
+
+## Preguntas y respuestas sintéticas
+**P1: ¿Es Scratch realmente un lenguaje de programación?**
+R1: Sí, Scratch es un lenguaje de programación real, pero está basado en algo visual y no en texto. Admite todos los conceptos fundamentales de programación: variables, bucles, condicionales, funciones (bloques personalizados), listas y programación basada en eventos. La diferencia es que arrastras y sueltas bloques en lugar de escribir código. Esto elimina errores de sintaxis y hace que la programación sea accesible para los estudiantes jóvenes.
+**P2: ¿Cómo creo funciones personalizadas (bloques personalizados) en Scratch?**
+R2: Vaya a la categoría "Mis bloques" y haga clic en "Crear un bloque". Asígnele un nombre, agregue parámetros si es necesario y luego defina su comportamiento agregando bloques debajo. Los bloques personalizados pueden recibir entradas (números, cadenas, valores booleanos) y pueden llamar a otros bloques personalizados. Esto permite la programación modular y la reutilización de código.
+**P3: ¿Cuál es la mejor manera de manejar la lógica de juego compleja en Scratch?**
+R3: Use bloques personalizados para organizar la lógica, transmitir mensajes para la coordinación de eventos entre sprites y usar listas para almacenar el estado del juego (puntuaciones, niveles, inventario). Para IA compleja, utilice máquinas de estados finitos con variables que rastreen el estado actual. Clona sprites para múltiples enemigos y usa "cuando empiezo como clon" para darle a cada uno un comportamiento independiente.
+**P4: ¿Cómo puedo compartir datos entre sprites en Scratch?**
+R4: Utilice variables globales (creadas sin "solo para este objeto") para datos compartidos como puntuación o estado del juego. Utilice mensajes de difusión para activar eventos entre sprites. Para una comunicación más compleja, utilice listas como estructuras de datos compartidos. Cada sprite puede leer y modificar variables y listas globales, lo que permite la coordinación.
+**P5: ¿Cuáles son algunas técnicas avanzadas en Scratch?**
+A5: Utilice bloques de bolígrafos para dibujar y crear efectos visuales. Implemente raycasting para gráficos similares a 3D. Utilice variables de la nube para juegos multijugador (requiere estado Scratcher). Cree generación de procedimientos con números y listas aleatorios. Utilice bloques personalizados con parámetros para algoritmos reutilizables. Experimente con detección de video y manipulación de sonido para proyectos interactivos.
+---
+
+## Cadena de pensamiento
+### Problema 1: crear un juego de plataformas
+**Paso 1: Comprenda el problema**
+Necesitamos crear un juego de plataformas donde un personaje pueda moverse hacia la izquierda o hacia la derecha, saltar, evitar obstáculos y recolectar elementos.
+**Paso 2: Identificar el enfoque**
+- Utilice la simulación de gravedad con una variable "descendente"
+- Detectar terreno/colisión usando colores o toques de sprites
+- Almacenar datos de nivel en listas.
+- Utilice bloques personalizados para la lógica de salto y movimiento.
+**Paso 3: Implementar la solución**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**Paso 4: Verificar y optimizar**
+Prueba de saltos en diferentes plataformas. Ajusta la gravedad y la altura del salto para disfrutar de una buena sensación de juego. Añade animaciones para correr y saltar. Implemente puntos de control mediante mensajes de difusión.
+---
+
+### Problema 2: Crear un juego de preguntas con seguimiento de puntuación
+**Paso 1: Comprenda el problema**
+Cree un juego de preguntas que haga preguntas, verifique las respuestas y realice un seguimiento de la puntuación del jugador.
+**Paso 2: Identificar el enfoque**
+- Almacenar preguntas y respuestas en listas paralelas
+- Utilice un contador de preguntas para seguir el progreso
+- Utilice bloques de "preguntar y esperar" para la entrada
+- Comparar respuestas y actualizar puntuación.
+**Paso 3: Implementar la solución**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**Paso 4: Verificar y optimizar**
+Pruebe con varias respuestas, incluidos casos extremos. Agregue comentarios para las respuestas incorrectas. Implemente una opción de reintento. Agregue efectos de sonido y comentarios visuales para respuestas correctas o incorrectas.
+---
+
+### Problema 3: Dibujar árboles fractales con el bolígrafo
+**Paso 1: Comprenda el problema**
+Crea un árbol fractal recursivo usando la extensión de lápiz.
+**Paso 2: Identificar el enfoque**
+- Usa la recursividad para dibujar ramas.
+- Cada rama se divide en dos ramas más pequeñas.
+- Utilice ángulos aleatorios para una variación natural.
+- Realice un seguimiento de la longitud de la rama y disminuya con cada nivel de recursividad
+**Paso 3: Implementar la solución**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**Paso 4: Verificar y optimizar**
+Ajuste el umbral de longitud de las ramas y los rangos de ángulos para obtener árboles estéticos. Agregue hojas en las puntas de las ramas usando cambios de color. Implemente diferentes estilos de árbol. Guarde dibujos como imágenes.
 ---
 
 ## Resumen

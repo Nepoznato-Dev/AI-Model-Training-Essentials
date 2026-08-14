@@ -54,7 +54,7 @@ Każdy programista, inżynier DevOps i administrator systemu potrzebuje umiejęt
 ## Kompromisy
 | Ograniczenie | Szczegóły | Typowe obejście |
 |----------|---------|--------------------------------|
-| **Dziwactwa Basha** | Niespójna składnia, delikatna obsługa ciągów | Użyj`set -euo pipefail`; cytuj zmienne; preferuj PowerShell dla złożonych skryptów |
+| **Dziwactwa Basha** | Niespójna składnia, delikatna obsługa ciągów | Użyj`set -euo pipefail`; cytować zmienne; preferuj PowerShell dla złożonych skryptów |
 | **Nie dla skomplikowanych programów** | Słabe struktury danych, brak OOP, trudne do przetestowania | Używaj Pythona, Go lub innych języków do obsługi złożonej logiki |
 | **Obsługa błędów** | Obsługa błędów Bash jest prymitywna | Użyj`set -e`; sprawdź kody wyjścia; użyj try/catch | programu PowerShell
 | **Przenośność** | Skrypty Bash mogą nie działać na wszystkich systemach | Użyj POSIX sh, aby uzyskać maksymalną przenośność; PowerShell dla wielu platform |
@@ -858,6 +858,152 @@ Publish-Module @publishParams
 | Analiza dziennika | Szybkie jednowierszowe grep/awk | Python, SQL do kompleksowej analizy |
 | Złożone aplikacje | Nie nadaje się | Python, Go, Java |
 | Skrypty wieloplatformowe | PowerShell 7+ działa wszędzie | Python dla prawdziwie przenośnych skryptów |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między cudzysłowami pojedynczymi i podwójnymi w języku Bash?
+**A:** Podwójne cudzysłowy umożliwiają zmienne rozwinięcie; pojedyncze cudzysłowy są dosłowne:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### P2: Jak radzić sobie z błędami w skryptach powłoki?
+**A:** Użyj `set -e`, aby wyjść w przypadku błędów i zastosować pułapkę w celu oczyszczenia:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### P3: Jak prawidłowo przetwarzać argumenty wiersza poleceń?
+**A:** Użyj`getopts`dla flag i parametrów pozycyjnych:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### P4: Co to jest potok PowerShell i czym różni się od Bash?
+**O:** PowerShell przesyła obiekty, a nie tekst. Każdy obiekt zachowuje swoje właściwości:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### P5: Jak pisać skrypty wieloplatformowe?
+**A:** Dla Bash: użyj`#!/usr/bin/env bash`, unikaj flag specyficznych dla GNU. W przypadku PowerShell: użyj`pwsh`(PowerShell Core), który działa w systemie Linux/macOS/Windows.
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Skrypt przetwarzania wsadowego obrazu (Bash)
+**Krok 1: Zrozum problem**
+Zmień rozmiar wszystkich obrazów PNG w katalogu na maksymalną szerokość 800 pikseli.
+**Krok 2: Zidentyfikuj podejście**
+Użyj `find`, aby zlokalizować pliki i`convert`(ImageMagick), aby zmienić rozmiar.
+**Krok 3: Wdróż**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Krok 4: Przedłuż**
+Dodaj pasek postępu, obsługę błędów w przypadku uszkodzonych obrazów i przetwarzanie równoległe za pomocą`xargs -P`.
+### Problem 2: Automatyczna rotacja logów (Bash)
+**Krok 1: Zrozum problem**
+Codziennie zmieniaj pliki dziennika, kompresuj stare dzienniki i usuwaj dzienniki starsze niż 30 dni.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`find`z filtrami opartymi na czasie i`gzip`do kompresji.
+**Krok 3: Wdróż**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Krok 4: Harmonogram**
+Dodaj do crontaba: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Problem 3: Sprawdzanie stanu usług Windows (PowerShell)
+**Krok 1: Zrozum problem**
+Sprawdź, czy działają krytyczne usługi i wyślij alert, jeśli jakiekolwiek zostaną zatrzymane.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`Get-Service`i filtruj zatrzymane usługi.
+**Krok 3: Wdróż**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Krok 4: Automatyzuj**
+Zaplanuj jako zadanie Harmonogramu zadań systemu Windows uruchamiane co 5 minut.
 ---
 
 ## Streszczenie

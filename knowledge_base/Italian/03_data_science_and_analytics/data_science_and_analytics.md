@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Scienza dei dati e analisi
 La scienza dei dati è la disciplina che trasforma i dati grezzi in informazioni fruibili. Si trova all’intersezione tra statistica, informatica e competenze di settore ed è diventato essenziale in ogni settore, dalla finanza alla sanità. Questo file illustra i concetti fondamentali, gli strumenti e i flussi di lavoro che ogni professionista dovrebbe conoscere.
 ---
@@ -47,12 +48,12 @@ La maggior parte dei progetti segue alcune varianti di **CRISP-DM**, il ciclo di
 | Fase | Cosa succede | Orario tipico |
 |-------|-------------|------|
 | **Comprensione aziendale** | Definire obiettivi, parametri di successo e vincoli | 10–15% |
-| **Comprensione dei dati** | Raccogliere, esplorare e profilare i dati | 10–15% |
+| **Comprensione dei dati** | Raccogli, esplora e profila i dati | 10–15% |
 | **Preparazione dei dati** | Pulisci, trasforma, ingegnerizza le funzionalità | ~50–60% |
 | **Modellazione** | Selezionare e addestrare i modelli | 10–15% |
 | **Valutazione** | Valutare le prestazioni rispetto agli obiettivi aziendali | 5–10% |
 | **Distribuzione** | Spedire il modello alla produzione | 5–10% |
-La vecchia battuta è che l’80% della scienza dei dati sta ripulendo i dati. Non è lontano dalla verità.
+Si stima che la preparazione dei dati, in particolare la pulizia dei dati, richieda circa l'80% del tempo di un data scientist.
 ---
 
 ## Tipi di dati in breve
@@ -128,7 +129,7 @@ Ogni set di dati reale presenta problemi. Ecco la pulizia standard:
 | Problema | Avvicinamento |
 |-------|----------|
 | **Valori mancanti** | Imputazione (media, mediana, previsione) o cancellazione se sparsa |
-| **Valori anomali** | Rilevamento tramite IQR o punteggio Z; trattare con tappatura o trasformazione |
+| **Valori anomali** | Rilevamento tramite IQR o punteggio Z; trattare con capping o trasformazione |
 | **Duplicati** | Identificare e rimuovere |
 | **Incoerenze** | Standardizza formati, correggi errori di battitura, normalizza unità |
 ### Tecniche di trasformazione
@@ -227,7 +228,7 @@ Quando i set di dati superano ciò che una singola macchina può gestire, entra 
 | **Metabase** | Open source | Configurazione semplice, SQL nativo |
 | **Superinsieme** | Open source (Apache) | Scalabile, SQL-first |
 ### Principi di progettazione del dashboard
-Una buona dashboard segue alcune regole: conosci il tuo pubblico, scegli la giusta visualizzazione per ogni metrica, usa il colore in modo strategico (non decorativo), mantieni scale coerenti e abilita l'interattività (filtri, drill-down). Anche le prestazioni contano: nessuno si aspetta una dashboard lenta.
+Dashboard efficaci seguono principi consolidati: identificare il pubblico, scegliere la visualizzazione appropriata per ciascuna metrica, utilizzare il colore in modo strategico (non decorativo), mantenere scale coerenti e consentire l'interattività (filtri, approfondimenti). Anche le prestazioni sono importanti: i dashboard con tempi di caricamento lenti riducono l'adozione da parte degli utenti.
 ### Categorie KPI comuni
 | Categoria | Esempi |
 |----------|---------|
@@ -266,7 +267,7 @@ Una buona dashboard segue alcune regole: conosci il tuo pubblico, scegli la gius
 I bias possono verificarsi in qualsiasi fase: bias di campionamento (dati non rappresentativi), bias di misurazione (strumenti difettosi) o bias algoritmici (previsioni discriminatorie). Le strategie di mitigazione includono la pre-elaborazione (correzione dei dati), l'elaborazione in corso (vincolando il modello) e la post-elaborazione (aggiustando gli output). Parametri di equità come la parità demografica e le pari opportunità aiutano a quantificare il problema.
 ---
 
-## Percorsi di carriera
+##Percorsi di carriera
 | Ruolo | Messa a fuoco |
 |------|-------|
 | **Analista dati** | Analisi descrittiva, dashboard, reporting |

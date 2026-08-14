@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Perl
 Perl diciptakan oleh Larry Wall pada tahun 1987 sebagai alat pengolah teks praktis. Ini menjadi tulang punggung pengembangan web awal (skrip CGI), administrasi sistem, bioinformatika, dan pemrograman jaringan. Filosofi Perl adalah "Ada Lebih dari Satu Cara Untuk Melakukannya" (TMTOWTDI) — bahasa ini memberi Anda berbagai pendekatan untuk setiap masalah, mengutamakan ekspresi daripada keseragaman.
 Pengaruh Perl pada pemrograman modern sangat besar namun seringkali tidak terlihat: ekspresi reguler, yang dipengaruhi oleh pencocokan pola Perl, kini menjadi standar dalam Python, JavaScript, Java, dan sebagian besar bahasa lainnya. CPAN (Comprehensive Perl Archive Network) adalah salah satu repositori paket perangkat lunak pertama dan menginspirasi sistem selanjutnya seperti PyPI Python dan npm Node.
@@ -58,7 +59,7 @@ Meskipun popularitas Perl telah menurun sejak puncaknya pada awal tahun 2000an, 
 | **Komunitas yang menurun** | Lebih sedikit proyek baru yang memilih Perl | Basis kode besar yang ada memerlukan pemeliharaan; komunitas aktif |
 | **Dua versi utama** | Perl 5 dan Raku (Perl 6) adalah bahasa yang berbeda | Gunakan Perl 5 untuk pekerjaan yang ada; Raku untuk proyek baru |
 | **Tidak trendi** | Jarang diajarkan di bootcamp atau universitas | Dokumentasi ekstensif dan modul CPAN |
-| **Sigil variabel** | `$`,`@`,`%`awalan dapat membingungkan pemula | Pelajari polanya:`$scalar`,`@array`,`%hash`|
+| **Sigil variabel** |  Awalan`$`,`@`,`%`dapat membingungkan pemula | Pelajari polanya:`$scalar`,`@array`,`%hash`|
 | **Kinerja** | Lebih lambat dari bahasa yang dikompilasi untuk tugas-tugas komputasi yang berat | Gunakan ekstensi C; bukan alat yang tepat untuk HPC |
 ---
 
@@ -182,7 +183,7 @@ if ($@) {
 | Ekspresi reguler | Python, JavaScript, Java, Ruby, C#, PHP |
 | Repositori paket (CPAN) | PyPI, npm, RubyGems, crates.io |
 | Berikut dokumen | Python, Ruby, PHP, Shell, JavaScript |
-| `$_`variabel bawaan |`$_`Ruby,`$_`| PowerShell
+|  Variabel bawaan`$_`|`$_`Ruby,`$_`PowerShell |
 | `map`/`grep`/`reduce`| Python, Ruby, JavaScript, Karat |
 | `use strict`/ linting | TypeScript, petunjuk tipe Python |
 ---
@@ -583,6 +584,165 @@ CMD ["perl", "bin/myapp.pl"]
 | Pengembangan web | Era CGI telah berakhir | Python, Node.js, Buka, PHP |
 | Proyek skala besar baru | Komunitas telah berpindah | Ayo, Karat, Python |
 | Ilmu data / ML | Bukan ekosistem | Piton, R |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`my`,`our`, dan`local`?
+**A:** Kata kunci ini mengontrol pelingkupan variabel:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2: Bagaimana cara memproses file teks secara efisien di Perl?
+**A:** Perl unggul dalam pemrosesan teks. Gunakan operator berlian dan regex:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3: Bagaimana cara menggunakan referensi dan struktur data yang kompleks?
+**A:** Referensi adalah cara Perl untuk membuat struktur bersarang:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4: Apa saja variabel khusus Perl yang harus saya ketahui?
+**A:** Perl memiliki banyak variabel khusus. Yang paling penting:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5: Bagaimana cara menulis Perl yang modern dan mudah dipelihara?
+**A:** Praktik terbaik untuk Perl modern:
+- Selalu gunakan`strict`dan`warnings`
+- Gunakan`my`untuk semua variabel
+- Gunakan pegangan file leksikal:`open my $fh, '<', $file`
+- Gunakan modul dari CPAN (Moo/Moose untuk OOP, Coba::Tiny untuk kesalahan)
+- Gunakan`say`alih-alih`print`(dengan`feature 'say'`)
+- Format dengan `perltidy`
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Analisis File Log
+**Langkah 1: Pahami Masalahnya**
+Parsing log akses Apache dan hitung permintaan per alamat IP.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan regex untuk mengekstrak alamat IP, hash untuk menghitung kemunculan.
+**Langkah 3: Terapkan**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan pemfilteran tanggal, analisis kode status, dan keluaran sebagai CSV.
+### Masalah 2: Penggantian Nama File Batch dengan Regex
+**Langkah 1: Pahami Masalahnya**
+Ganti nama file yang cocok dengan suatu pola, ubah nama file dengan regex.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`glob`atau`opendir`untuk menemukan file, regex untuk mengubah nama.
+**Langkah 3: Terapkan**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Langkah 4: Verifikasi**
+Jalankan dengan flag`--dry-run`terlebih dahulu (print saja, jangan dipindahkan).
+### Masalah 3: Membuat Scraper Web Sederhana
+**Langkah 1: Pahami Masalahnya**
+Ambil halaman web dan ekstrak semua tautan.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan`LWP::Simple`untuk mengambil dan regex atau`HTML::LinkExtor`untuk parsing.
+**Langkah 3: Terapkan**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Langkah 4: Perpanjang**
+Tangani URL relatif, filter berdasarkan domain, dan ikuti penomoran halaman.
 ---
 
 ## Ringkasan

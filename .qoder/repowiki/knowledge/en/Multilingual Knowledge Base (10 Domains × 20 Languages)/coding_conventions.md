@@ -1,6 +1,0 @@
-- Every content file begins with a YAML frontmatter block containing five sections: Metadata, Contribution, Review, Classification, and Contribution Guide, enclosed between `---` delimiters.
-- Content uses hierarchical Markdown headings (`#` title, `##` sections, `###` subsections) consistently across all files to support structured parsing by AI systems.
-- Structured comparisons and summaries are expressed via Markdown tables rather than dense prose paragraphs.
-- Cross-references between files use relative Markdown links instead of absolute URLs.
-- Each language mirrors the same ten numbered thematic directories (`01_`–`10_`) so that a topic exists at the same path under every locale.
-- Programming language references are isolated under `01_coding_and_technology/programming_languages/<lang>/` with one subdirectory per language, each holding a single comprehensive reference file.

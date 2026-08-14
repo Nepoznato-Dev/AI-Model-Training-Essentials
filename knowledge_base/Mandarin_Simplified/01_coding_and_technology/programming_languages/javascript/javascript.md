@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # JavaScript
 JavaScript 是一种动态的解释性编程语言，由 Brendan Eich 在 1995 年仅用 10 天就创建了。它最初旨在为网页添加交互性，现已发展成为世界上使用最广泛的编程语言。 JavaScript 在每个 Web 浏览器中运行，通过 Node.js 在服务器上运行，在桌面应用程序 (Electron)、移动应用程序 (React Native) 甚至嵌入式系统中运行。
 该语言的独特之处在于它本质上是客户端 Web 开发的唯一选择——每个浏览器都原生支持它。这种垄断，再加上全栈 JavaScript（Node.js、Deno、Bun）的兴起，使其变得不可或缺。
@@ -1021,17 +1022,17 @@ pm2 startup
 ### 后端 (Node.js)
 |框架|目的|
 |------------|---------|
-| **快递** |最小、灵活的 Web 框架（最流行） |
+| **快递** |最小、灵活的 Web 框架（最流行）|
 | **快点** |高性能Web框架|
 | **NestJS** |企业级、受 Angular 启发的架构 |
 | **相思木** |轻量级、现代的 Express 替代品 |
 | **荣誉** |超快、多运行时（Node、Deno、Bun、edge）|
 ### 运行时
-|运行时 |描述 |
+|运行时|描述 |
 |---------|-------------|
 | **Node.js** |原始服务器端 JavaScript 运行时（V8 引擎）|
 | **德诺** |默认安全；原生 TypeScript 支持；由 Node 原作者创建 |
-| **发髻** |超快速一体化运行时、捆绑器和包管理器 |
+| **发髻** |超快一体化运行时、捆绑器和包管理器 |
 ### 基本工具
 |工具|目的|
 |------|---------|
@@ -1040,21 +1041,434 @@ pm2 startup
 | **ESLint** |代码检查 |
 | **更漂亮** |代码格式化 |
 | **投票** |快速构建工具和开发服务器|
-| **Webpack** |模块捆绑器（成熟，广泛使用）|
+| **Webpack** |模块捆绑器（成熟、广泛使用）|
 | **开玩笑/维斯特** |测试框架|
 ---
 
 ## 何时使用 JavaScript
-|场景 |为什么选择 JavaScript |更好的选择|
+|场景|为什么选择 JavaScript |更好的选择|
 |----------|--------------|--------------------|
 |网页前端 |基于浏览器的 UI 的唯一选项 | — |
-|全栈网络 |到处都是同一种语言 |用于类型安全的 TypeScript |
+|全栈网络|到处都是同一种语言 |用于类型安全的 TypeScript |
 |实时应用程序（聊天、游戏）|事件驱动、非阻塞 I/O | — |
 |无服务器功能 |快速编写，随处部署 | Python、Go |
 |移动应用程序（React Native）|与网络共享代码 | Flutter，原生 Swift/Kotlin |
 |桌面应用程序（Electron）|跨平台网络技术 | C# (WPF)、Tauri (Rust) |
 | CPU 密集型计算 |单线程限制 | Python (NumPy)、C++、Rust、WebAssembly |
 |系统编程|错误的抽象级别 | C、C++、Rust、Go |
+---
+
+## 综合问答
+### Q1：`var`、`let`和`const`之间有什么区别，什么时候应该使用它们？
+**A:**`var`是函数作用域和提升的 - 在现代代码中避免它。 `let`具有块作用域并允许重新分配。 `const`是块范围的并防止重新分配（但它引用的对象/数组仍然是可变的）。最佳实践：默认为`const`，仅在需要重新分配时使用`let`，切勿使用`var`。
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Q2：`this` 在 JavaScript 中如何工作，为什么如此令人困惑？
+**答：**`this`由**如何调用函数**决定，而不是由其定义位置决定。在方法调用中，`this` 是对象。在独立调用中，它是 `undefined`（严格模式）或 `global`（非严格模式）。箭头函数从其封闭范围继承`this`— 这就是为什么它们是回调的首选。使用`.bind()`显式设置`this`。
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Q3：什么是事件循环，async/await 实际如何工作？
+**答：** JavaScript 是单线程的，带有处理队列的事件循环。调用堆栈执行同步代码。当它为空时，事件循环从微任务队列（Promises）或宏任务队列（setTimeout，I/O）中选择下一个任务。 `async/await`是 Promise 的语法糖 —`await`暂停异步函数，并在 Promise 解析时恢复，而不会阻塞线程。
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4：我应该如何处理现代 JavaScript 中的错误？
+**A:** 对于同步代码使用 `try/catch`，对于异步代码使用`.catch()`或`try/catch`与 `async/await`。始终处理 Promise 拒绝——未处理的拒绝会导致 Node.js 崩溃。为特定于域的错误创建自定义错误类。使用全局错误处理程序作为安全网。
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Q5：什么时候应该使用`Map`/`Set`而不是普通对象/数组？
+**A:** 当键不是字符串时，当您需要插入顺序迭代时，当您需要`.size`时，或者当您频繁添加/删除条目时（比对象更好的性能），请使用`Map`。使用`Set`进行 O(1) 查找的唯一集合 — 比大型数据集的`array.includes()`快得多。将普通对象用于简单的 JSON 可序列化数据和带有字符串键的小型键值映射。
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：实现去抖动功能
+**问题陈述：** 实现一个`debounce`实用程序，该实用程序延迟调用函数，直到自上次调用以来经过指定的等待时间后。支持前缘和后缘调用。
+**第 1 步 — 了解问题：**
+去抖函数会忽略快速的连续调用，并且仅在调用停止等待一段时间后触发。 “前沿”是指在第一次呼叫后立即开火。 “后缘”是指在等待期之后发生火灾。我们需要处理这两种模式并支持取消。
+**第 2 步 — 确定方法：**
+- 将计时器 ID 存储在闭包中。
+- 每次调用时：清除现有计时器，然后设置新的`setTimeout`。
+- 对于前沿：如果没有定时器处于活动状态，则立即调用。
+- 使用`.cancel()`方法返回去抖函数。
+- 使用箭头函数或`.apply()`保留`this`上下文和参数。
+**第 3 步 — 实施解决方案：**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**第 4 步 — 验证和优化：**
+- 闭包保留调用之间的状态，而不会污染全局范围。
+-`setTimeout`之前的`clearTimeout`确保只有最后一个调用才会触发执行。
+-`.cancel()`对于清理很重要（例如，React 中的组件卸载）。
+- 边缘情况：如果`wait`为 0，则该函数在下一个事件循环标记时触发 - 对于批量 DOM 更新非常有用。
+### 问题 2：构建基于 Promise 的速率限制器
+**问题陈述：** 创建一个速率限制器，每个时间窗口最多允许 N 个请求。它应该返回在允许调用者继续操作时解析的 Promise，并对多余的请求进行排队。
+**第 1 步 — 了解问题：**
+我们需要一个滑动或固定窗口来跟踪已拨打的电话数量。当达到限制时，新的呼叫应该排队并在空位打开时解决。这就是“令牌桶”模式。
+**第 2 步 — 确定方法：**
+- 跟踪数组中最近调用的时间戳。
+- 在每次调用时：删除早于窗口的时间戳，检查计数是否<限制。
+- 如果低于限制：立即解决。
+- 如果达到限制：计算最旧的时间戳何时到期，设置`setTimeout`，然后解析。
+- 使用队列（解析函数数组）来等待调用者。
+**第 3 步 — 实施解决方案：**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**第 4 步 — 验证和优化：**
+- 滑动窗口方法比固定窗口更公平（窗口边界处没有突发）。
+- 队列处理采用先进先出 (FIFO) 方式 — 按顺序为呼叫者提供服务。
+- 对于生产：添加`AbortController`支持，以便呼叫者可以取消等待。
+- 性能：`_cleanOldTimestamps`每次调用的复杂度为 O(n)，但 n 受`maxCalls`限制。
+### 问题3：实现深度克隆功能
+**问题陈述：** 编写一个深度克隆任何 JavaScript 值的函数，处理对象、数组、日期、正则表达式、映射、集合、循环引用和类型化数组。
+**第 1 步 — 了解问题：**
+`JSON.parse(JSON.stringify(obj))`失败：`undefined`、函数、符号、日期（成为字符串）、正则表达式（成为空对象）、映射、集合、循环引用（抛出）和类型化数组。我们需要一个递归解决方案来跟踪访问的对象。
+**第 2 步 — 确定方法：**
+- 使用`Map`跟踪已克隆的对象（处理循环引用）。
+- 特别处理每种类型：日期→新日期、正则表达式→新正则表达式、映射→带有克隆条目的新映射、集合→带有克隆值的新集合。
+- 使用`structuredClone()`作为现代内置替代方案（在浏览器和 Node.js 17+ 中可用）。
+**第 3 步 — 实施解决方案：**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**第 4 步 — 验证和优化：**
+- 循环引用：`seen` 映射返回已创建的克隆，而不是无限递归。
+- 属性描述符：`Reflect.ownKeys` +`getOwnPropertyDescriptor`保留 getter、setter 和不可枚举属性。
+- 现代替代方案：`structuredClone(value)` 原生处理大多数此类情况（函数和 DOM 节点除外）。当可用时更喜欢它。
+- 性能：对于简单对象，`JSON.parse(JSON.stringify(obj))` 仍然是最快的。仅当您确实需要时才使用深度克隆。
+### 问题 4：构建一个简单的事件发射器
+**问题陈述：** 实现一个支持`on`、`off`、`emit`和`once`方法的事件发射器类。应按登记顺序召集听众。 `emit`应将参数传递给所有侦听器。
+**第 1 步 — 了解问题：**
+我们需要一个发布/订阅系统：为命名事件注册侦听器，删除特定侦听器，使用参数触发事件，并支持一次性侦听器。这是 Node.js 中广泛使用的观察者模式。
+**第 2 步 — 确定方法：**
+- 将侦听器存储在`Map<string, Array<Function>>`中。
+-`on`：将监听器推送到数组。
+-`off`：从数组中过滤掉特定的监听器。
+-`emit`：迭代数组并使用扩展参数调用每个侦听器。
+-`once`：将侦听器包装在函数中，该函数在第一次调用后会自行删除。
+**第 3 步 — 实施解决方案：**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**第 4 步 — 验证和优化：**
+-`emit`中的`[...listeners]`副本可防止侦听器在迭代期间调用`off`时出现问题。
+-`once`存储`_original`，以便调用者可以通过`off(event, originalFn)`删除包装器。
+- 私有字段（`#listeners`）防止内部状态的外部突变。
+- 对于生产：添加`maxListeners`警告（如 Node.js）、每个侦听器的错误处理以及`prependListener`优先级。
 ---
 
 ＃＃ 概括

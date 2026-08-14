@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "हास्केल"
-विवरण: "हास्केल प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स फंडामेंटल, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [हास्केल, प्रोग्रामिंग-भाषा, वाक्यविन्यास, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "उन्नत"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "39 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Haskell"
+description: "Comprehensive reference for the Haskell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [haskell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "39 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # हास्केल
 हास्केल एक पूरी तरह कार्यात्मक, स्थिर रूप से टाइप की गई, आलसी मूल्यांकन वाली प्रोग्रामिंग भाषा है। पहली बार 1990 में मानकीकृत (हास्केल 90) और कई संस्करणों के माध्यम से परिष्कृत (हास्केल 2010 वर्तमान मानक है), हास्केल अपनी गणितीय कठोरता, शक्तिशाली प्रकार प्रणाली (प्रकार वर्गों, मोनैड और बीजगणितीय डेटा प्रकारों के साथ) और प्रकारों के माध्यम से शुद्धता पर जोर देने के लिए जाना जाता है।
 हास्केल मुख्यधारा की भाषा नहीं है, लेकिन इसका प्रभाव बहुत बड़ा है। सन्यासी, आलसी मूल्यांकन और टाइप क्लास जैसी अवधारणाओं ने रस्ट, स्विफ्ट, कोटलिन, स्काला और टाइपस्क्रिप्ट को प्रभावित किया है। हास्केल का उपयोग वित्त (स्टैंडर्ड चार्टर्ड, बार्कलेज), कंपाइलर्स (जीएचसी), और औपचारिक सत्यापन में किया जाता है।
@@ -468,16 +473,16 @@ tests:
 ### कुंजी निर्माण आदेश
 | आदेश | विवरण |
 |---------|-----------------|
-|  __संरक्षित_0__ | टेम्पलेट से नया प्रोजेक्ट बनाएं |
-|  __संरक्षित_1__ | प्रोजेक्ट बनाएं |
-|  __संरक्षित_2__ | लोड किए गए प्रोजेक्ट के साथ इंटरैक्टिव आरईपीएल प्रारंभ करें |
-|  __संरक्षित_3__ | परीक्षण सुइट चलाएँ |
-|  __संरक्षित_4__ | बेंचमार्क चलाएं |
-|  __संरक्षित_5__ | दस्तावेज़ तैयार करें |
-|  __संरक्षित_6__ | निष्पादन योग्य चलाएँ |
-|  __संरक्षित_7__ | स्वच्छ निर्मित कलाकृतियाँ |
-|  __संरक्षित_8__ | पैकेज इंडेक्स अपडेट करें |
-|  __संरक्षित_9__ | सटीक निर्भरता संस्करण पिन करें |
+| `stack new my-project`| टेम्पलेट से नया प्रोजेक्ट बनाएं |
+| `stack build`| प्रोजेक्ट बनाएं |
+| `stack ghci`| लोड किए गए प्रोजेक्ट के साथ इंटरैक्टिव आरईपीएल प्रारंभ करें |
+| `stack test`| परीक्षण सुइट चलाएँ |
+| `stack bench`| बेंचमार्क चलाएं |
+| `stack haddock`| दस्तावेज़ तैयार करें |
+| `stack exec my-app`| निष्पादन योग्य चलाएँ |
+| `stack clean`| स्वच्छ निर्मित कलाकृतियाँ |
+| `stack update`| पैकेज इंडेक्स अपडेट करें |
+| `stack freeze`| सटीक निर्भरता संस्करण पिन करें |
 ### सीआई/सीडी पाइपलाइन (गिटहब क्रियाएँ)
 ```yaml
 # .github/workflows/haskell.yml
@@ -594,10 +599,10 @@ instance Arbitrary PositiveInt where
 ### टेस्ट कमांड
 | आदेश | विवरण |
 |---------|-----------------|
-|  __संरक्षित_0__ | सभी परीक्षण सुइट चलाएँ |
-|  __संरक्षित_1__ | तेज़ परीक्षण बिल्ड के लिए अनुकूलन छोड़ें |
-|  __संरक्षित_2__ | रंगीन आउटपुट के साथ परीक्षण चलाएँ |
-|  __संरक्षित_3__ | आरईपीएल में परीक्षण मॉड्यूल लोड करें |
+| `stack test`| सभी परीक्षण सुइट चलाएँ |
+| `stack test --fast`| तेज़ परीक्षण बिल्ड के लिए अनुकूलन छोड़ें |
+| `stack build --test --test-arguments "--color"`| रंगीन आउटपुट के साथ परीक्षण चलाएँ |
+| `stack ghci --test`| आरईपीएल में परीक्षण मॉड्यूल लोड करें |
 
 ---
 
@@ -802,11 +807,11 @@ main = do
 ### प्रोफाइलिंग उपकरण
 | उपकरण | उद्देश्य | आदेश |
 |------|------|---------|
-| **जीएचसी प्रोफाइलर** | समय और आवंटन प्रोफाइलिंग |  __संरक्षित_0__ फिर __संरक्षित_1__ |
-| **थ्रेडस्कोप** | समानांतर निष्पादन की कल्पना करें | `./app +RTS -l`फिर`app.eventlog`खोलें |
-| **ghc-घटनाएँ** | इवेंट लॉग का विश्लेषण करें |  __संरक्षित_4__ |
+| **जीएचसी प्रोफाइलर** | समय और आवंटन प्रोफाइलिंग | `stack build --profile`फिर`./app +RTS -p`|
+| **थ्रेडस्कोप** | समानांतर निष्पादन की कल्पना करें | `./app +RTS -l`फिर`app.eventlog`| खोलें
+| **ghc-घटनाएँ** | इवेंट लॉग का विश्लेषण करें | `ghc-events show app.eventlog`|
 | **मानदंड** | सांख्यिकीय बेंचमार्किंग |`criterion`पैकेज का उपयोग करें |
-| **hp2सुन्दर** | ढेर प्रोफाइल विज़ुअलाइज़ करें |  __संरक्षित_6__ फिर __संरक्षित_7__ |
+| **hp2सुन्दर** | ढेर प्रोफाइल विज़ुअलाइज़ करें | `./app +RTS -h`फिर`hp2pretty app.hp`|
 ### मानदंड के साथ बेंचमार्किंग
 ```haskell
 -- bench/Bench.hs
@@ -935,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | सामान्य अनुप्रयोग विकास | संभव लेकिन आला | पायथन, गो, जावा |
 | वेब विकास | यसोड/सेवक अस्तित्व में है लेकिन सीमित है | जावास्क्रिप्ट/टाइपस्क्रिप्ट |
 | डेटा विज्ञान | पारिस्थितिकी तंत्र नहीं | पायथन, आर |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: हास्केल का आलसी मूल्यांकन प्रदर्शन को कैसे प्रभावित करता है?
+**ए:** आलसी मूल्यांकन का मतलब है कि अभिव्यक्ति की गणना केवल जरूरत पड़ने पर की जाती है, जिससे अनंत डेटा संरचनाएं और कंपोज़ेबल पाइपलाइन सक्षम हो जाती हैं। हालाँकि, यदि टुकड़े जमा हो जाते हैं तो यह स्थान रिसाव का कारण बन सकता है:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+संख्यात्मक तहों के लिए`foldl`के बजाय`foldl'`(`Data.List` से) का उपयोग करें। आवश्यकता पड़ने पर मूल्यांकन को बाध्य करने के लिए`!`बैंग पैटर्न या`seq`का उपयोग करें।
+### Q2:`Functor`,`Applicative`और`Monad`के बीच व्यावहारिक अंतर क्या है?
+**ए:** प्रत्येक टाइपक्लास क्षमता जोड़ता है:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**फ़ंक्टर** एक संदर्भ पर एक शुद्ध फ़ंक्शन को मैप करता है। **एप्लिकेटिव** उन कार्यों को लागू करता है जो स्वयं एक संदर्भ में हैं। **मोनाड** प्रत्येक चरण को पिछले चरण के परिणाम पर निर्भर करता है। व्यवहार में: सरल परिवर्तनों के लिए`fmap`/ `<$>`, प्रभावों के संयोजन के लिए`<*>`और अनुक्रमिक निर्भर गणनाओं के लिए`>>=`/`do`का उपयोग करें।
+### Q3: मैं शुद्ध हास्केल कोड में साइड इफेक्ट्स को कैसे संभाल सकता हूं?
+**ए:** शुद्ध और प्रभावी कोड को अलग करने के लिए टाइप सिस्टम का उपयोग करें:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+मूल तर्क को शुद्ध रखें और किनारों पर प्रभाव डालें। कॉन्फ़िगरेशन के लिए `ReaderT`, त्रुटियों के लिए`ExceptT`और परिवर्तनीय स्थिति के लिए`StateT`का उपयोग करें।
+### Q4: प्रकार की कक्षाएं क्या हैं और वे OOP इंटरफेस से कैसे भिन्न हैं?
+**ए:** प्रकार वर्ग उस व्यवहार को परिभाषित करते हैं जिसे प्रकार लागू कर सकते हैं। ओओपी इंटरफेस के विपरीत, वे खुले हैं (कोई भी प्रकार एक उदाहरण हो सकता है) और तदर्थ बहुरूपता का समर्थन करते हैं:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5: मैं वास्तविक दुनिया में उपयोग के लिए हास्केल प्रोजेक्ट की संरचना कैसे करूं?
+**ए:** मानक लेआउट के साथ कैबल या स्टैक का उपयोग करें:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+मुख्य अभ्यास: IO को`Main.hs`या एक समर्पित`IO`मॉड्यूल में रखें, कोर लॉजिक को शुद्ध और परीक्षण योग्य बनाएं, डोमेन प्रकारों के लिए`newtype`रैपर का उपयोग करें।
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: त्रुटि रिपोर्टिंग के साथ एक सुरक्षित डिवीजन फ़ंक्शन को कार्यान्वित करना
+**चरण 1: समस्या को समझें**
+हमें ऐसे विभाजन की आवश्यकता है जो शून्य से विभाजन को संभाल सके और सार्थक त्रुटियों की रिपोर्ट करे, न कि केवल क्रैश की।
+**चरण 2: दृष्टिकोण को पहचानें**
+त्रुटि संदेश या परिणाम वापस करने के लिए`Either`का उपयोग करें। इससे प्रकार में विफलता की संभावना स्पष्ट हो जाती है।
+**चरण 3: कार्यान्वयन**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**चरण 4: सत्यापित करें**
+टाइप सिस्टम गारंटी देता है कि कॉल करने वालों को त्रुटि मामले को संभालना होगा। पैटर्न मिलान या`either`स्पष्ट हैंडलिंग को बाध्य करता है।
+### समस्या 2: एक सरल कॉन्फ़िगरेशन भाषा को पार्स करना
+**चरण 1: समस्या को समझें**
+`name=Alice\nage=30` जैसी स्ट्रिंग से कुंजी-मान जोड़े को पार्स करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+`Text.Parsec` या मैन्युअल रिकर्सन का उपयोग करें। सरलता के लिए,`break`और`span`का उपयोग करें।
+**चरण 3: कार्यान्वयन**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**चरण 4: विस्तार करें**
+टिप्पणी प्रबंधन (`#`), अनुभाग शीर्षलेख (`[section]`) जोड़ें, और`Value`ADT का उपयोग करके जबरदस्ती टाइप करें।
+### समस्या 3: आलस्य के साथ एक मेमोइज़्ड फाइबोनैचि का निर्माण
+**चरण 1: समस्या को समझें**
+फाइबोनैचि संख्याओं की कुशलतापूर्वक गणना करें। अनुभवहीन प्रत्यावर्तन घातांकीय है।
+**चरण 2: दृष्टिकोण को पहचानें**
+एक अनंत सूची बनाने के लिए हास्केल के आलसी मूल्यांकन का उपयोग करें जहां प्रत्येक तत्व की एक बार गणना की जाती है और कैश किया जाता है।
+**चरण 3: कार्यान्वयन**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**चरण 4: अनुकूलन करें**
+रैंडम एक्सेस के लिए, आलसी निर्माण के साथ`Data.Array`का उपयोग करें। बहुत बड़े सूचकांकों के लिए, O(log n) में मैट्रिक्स घातांक का उपयोग करें।
+### समस्या 4: एक सरल राज्य मशीन लागू करना
+**चरण 1: समस्या को समझें**
+एक ट्रैफिक लाइट का मॉडल बनाएं जो लाल -> हरा -> पीला -> लाल चक्र करती हो।
+**चरण 2: दृष्टिकोण को पहचानें**
+राज्यों और शुद्ध संक्रमण फ़ंक्शन के लिए बीजगणितीय डेटा प्रकार का उपयोग करें।
+**चरण 3: कार्यान्वयन**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**चरण 4: सत्यापित करें**
+शुद्ध कार्य तुच्छ रूप से परीक्षण योग्य हैं:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## सारांश

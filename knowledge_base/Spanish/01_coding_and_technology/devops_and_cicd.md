@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "DevOps y CI/CD"
-descripción: "Canalizaciones de CI/CD, Docker, Kubernetes, Terraform, GitOps"
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "DevOps and CI/CD"
+description: "CI/CD pipelines, Docker, Kubernetes, Terraform, GitOps"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [devops, cicd, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "11 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [devops, cicd, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "11 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps y CI/CD
 DevOps es la combinación de filosofía cultural, prácticas y herramientas que permite a los equipos entregar software de manera más rápida y confiable. Derriba el muro entre los desarrolladores (que quieren implementar cambios) y las operaciones (que quieren estabilidad). CI/CD (integración continua y entrega continua) es la columna vertebral de la automatización que lo hace posible.
 ---
@@ -101,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-Prácticas clave: usar imágenes base delgadas/alpinas, ejecutar como no raíz, aprovechar el almacenamiento en caché de capas, usar `.dockerignore`, escanear imágenes en busca de vulnerabilidades ( `trivy`, `docker scan`) y establecer límites de recursos.
+Prácticas clave: usar imágenes base delgadas/alpinas, ejecutar como no raíz, aprovechar el almacenamiento en caché de capas, usar `.dockerignore`, escanear imágenes en busca de vulnerabilidades (`trivy`, `docker scan`) y establecer límites de recursos.
 ### Componente acoplable
 Para ejecutar varios contenedores juntos (aplicación + base de datos + caché):
 ```yaml
@@ -240,4 +245,4 @@ Cuando algo se rompe a las 3 a. m.:
 5. **Solución**: revertir o avanzar parches.
 6. **Comunicar**: actualice las partes interesadas y los usuarios (página de estado).
 7. **Autopsia**: dentro de 24 a 48 horas, documente la causa raíz y las medidas a tomar.
-El objetivo no es sólo solucionar el incidente, sino garantizar que el mismo incidente no vuelva a ocurrir.
+El objetivo no es sólo resolver el incidente sino garantizar que el mismo incidente no se repita.

@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "SQL"
-descripción: "Referencia completa para el lenguaje de programación SQL que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "SQL"
+description: "Comprehensive reference for the SQL programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [sql, lenguaje de programación, sintaxis, ecosistema, codificación y tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "26 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [sql, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
 SQL (lenguaje de consulta estructurado) es un lenguaje de dominio específico diseñado para administrar y consultar datos en bases de datos relacionales. Desarrollado por primera vez en IBM en la década de 1970 y estandarizado en 1987, SQL sigue siendo la interfaz principal entre las aplicaciones y sus datos. Todos los principales sistemas de gestión de bases de datos relacionales (RDBMS) (PostgreSQL, MySQL, SQL Server, Oracle, SQLite) utilizan SQL como lenguaje de consulta.
 SQL no es un lenguaje de programación de propósito general. No escribirías una aplicación web en SQL. Pero si su aplicación almacena datos (y casi todas las aplicaciones lo hacen), entonces SQL es el lenguaje que utiliza para recuperar, transformar y administrar esos datos. Podría decirse que es la habilidad técnica más útil universalmente después de la programación general.
@@ -597,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Almacenamiento simple de valores clave | Exceso para este caso de uso | Redis, DynamoDB |
 | Datos altamente desestructurados | La rigidez del esquema es un problema | MongoDB, bases de datos documentales |
 | Escalamiento horizontal masivo | Bases de datos SQL difíciles de fragmentar | Casandra, DynamoDB, CockroachDB |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre`WHERE`y `HAVING`?
+**R:**`WHERE`filtra filas antes de agruparlas; `HAVING`filtra grupos después de la agregación:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### P2: ¿En qué se diferencian las funciones de ventana de GROUP BY?
+**R:** Las funciones de ventana se calculan en filas sin contraerlas:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### P3: ¿Cómo optimizo las consultas lentas?
+**R:** Estrategias clave:
+- Agregar índices en las columnas utilizadas en `WHERE`,`JOIN`y `ORDER BY`. 
+- Evite `SELECT *`: seleccione solo las columnas necesarias
+- Utilice`EXPLAIN`/`EXPLAIN ANALYZE`para leer planes de consulta
+- Reemplace las subconsultas con JOIN siempre que sea posible
+- Utilice CTE para mejorar la legibilidad (normalmente sin penalización de rendimiento)
+- Evite funciones en columnas indexadas en DONDE: use `WHERE date >= '2024-01-01'`, no `WHERE YEAR(date) = 2024`
+### P4: ¿Qué son los CTE y cuándo debo utilizarlos?
+**R:** Las expresiones de tabla comunes crean conjuntos de resultados temporales con nombre:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### P5: ¿Cómo manejo los valores NULL correctamente?
+**R:** NULL representa desconocido; no es igual a nada, ni siquiera a sí mismo:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Encontrar los N principales por grupo
+**Paso 1: Comprenda el problema**
+Encuentre los 3 empleados mejor pagados de cada departamento.
+**Paso 2: Identificar el enfoque**
+Utilice una función de ventana con`ROW_NUMBER()`particionada por departamento.
+**Paso 3: Implementar**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Paso 4: Verificar**
+Compruebe que cada departamento tenga como máximo 3 filas. Maneje las ataduras con`DENSE_RANK()`si es necesario.
+### Problema 2: Elaboración de un informe de crecimiento año tras año
+**Paso 1: Comprenda el problema**
+Calcule los ingresos mensuales y el porcentaje de crecimiento año tras año.
+**Paso 2: Identificar el enfoque**
+Utilice`DATE_TRUNC`para agrupar y la función de ventana`LAG()`para comparar el año anterior.
+**Paso 3: Implementar**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Paso 4: Verificar**
+Verifique que los primeros 12 meses tengan NULL para el año anterior. Validar porcentajes de crecimiento contra cifras conocidas.
+### Problema 3: Pivotar filas a columnas
+**Paso 1: Comprenda el problema**
+Transforme los recuentos de estado de filas a columnas.
+**Paso 2: Identificar el enfoque**
+Utilice agregación condicional (`CASE`dentro de`SUM`).
+**Paso 3: Implementar**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Paso 4: Extender**
+Agregue columnas de porcentajes y totales acumulados.
 ---
 
 ## Resumen

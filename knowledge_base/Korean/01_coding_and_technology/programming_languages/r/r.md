@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #R
-R은 통계 컴퓨팅 및 데이터 분석을 위해 특별히 설계된 프로그래밍 언어 및 환경입니다. 1993년 오클랜드 대학의 Ross Ihaka와 Robert Gentleman(따라서 "R")이 만든 이 언어는 상당한 확장이 포함된 S 언어를 구현한 것입니다. R은 오픈 소스이며 R Core Team에서 유지 관리합니다. 이는 학계, 의료, 금융 및 정부 분야의 통계학자, 데이터 분석가 및 연구원을 위한 표준 도구입니다.
+R은 통계 컴퓨팅 및 데이터 분석을 위해 특별히 설계된 프로그래밍 언어 및 환경입니다. 1993년 오클랜드 대학교의 Ross Ihaka와 Robert Gentleman(따라서 "R")이 만든 이 언어는 상당한 확장이 포함된 S 언어를 구현한 것입니다. R은 오픈 소스이며 R Core Team에서 유지 관리합니다. 이는 학계, 의료, 금융 및 정부 분야의 통계학자, 데이터 분석가 및 연구원을 위한 표준 도구입니다.
 R은 데이터 조작, 통계 모델링, 시각화 및 보고에 탁월합니다. CRAN(패키지 생태계)에는 지금까지 고안된 거의 모든 통계 방법을 포괄하는 20,000개 이상의 패키지가 있습니다.
 ---
 
@@ -47,14 +48,14 @@ R은 데이터 조작, 통계 모델링, 시각화 및 보고에 탁월합니다
 - **통계 컴퓨팅**: 모든 언어에서 가장 포괄적인 통계 방법 모음입니다.
 - **데이터 시각화**: ggplot2는 출판 품질의 그래픽을 생성합니다. 그래픽 패러다임의 문법은 타의 추종을 불허합니다.
 - **재현 가능한 연구**: R Markdown/Quarto를 사용하면 코드, 결과 및 설명을 단일 문서에 결합할 수 있습니다.
-- **학업표준**: 통계학, 생물정보학, 역학, 생태학, 경제학, 사회과학 분야에서 사용됩니다.
+- **학술표준**: 통계학, 생물정보학, 역학, 생태학, 경제학, 사회과학 분야에서 사용됩니다.
 - **Tidyverse**: 데이터 분석을 우아하고 일관되게 만드는 응집력 있는 패키지 세트(dplyr, ggplot2, tidyr, readr)입니다.
 - **무료 오픈 소스**: 라이선스 비용이 없습니다. 글로벌 커뮤니티에 의해 적극적으로 유지 관리됩니다.
 ## 절충안
 | 제한사항 | 세부정보 | 일반적인 해결 방법 |
 |------------|---------|------|
 | **성능** | 기본적으로 단일 스레드입니다. 대규모 데이터 세트의 경우 느림 | C++ 통합을 위해 `data.table`, 병렬 패키지 또는 Rcpp 사용 |
-| **메모리 사용량** | 전체 데이터 세트를 RAM에 로드 | 코어 외부 처리를 위해`data.table::fread`화살표 패키지 사용 |
+| **메모리 사용량** | 전체 데이터 세트를 RAM에 로드 | 코어 외부 처리를 위해 화살표 패키지인`data.table::fread`사용 |
 | **범용 언어가 아님** | 웹 개발, 시스템 프로그래밍 또는 앱에 적합하지 않음 | 비통계 작업에 Python, Go 또는 JavaScript 사용 |
 | **일관되지 않은 구문** | 기본 R에는 특이한 점이 있습니다. 다른 패키지는 다른 규칙을 사용합니다 | 일관성을 위해 tidyverse를 사용하세요 |
 | **취업 시장** | 주로 학술/연구 역할 | 데이터 과학 역할에서는 점점 더 Python을 선호합니다 |
@@ -603,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | 프로덕션 ML 시스템 | 배포용으로 설계되지 않음 | 파이썬, 자바 |
 | 웹 개발 | 적합하지 않음 | 자바스크립트, 파이썬 |
 | 대규모 데이터 처리 | 메모리 바인딩 | Python(PySpark), SQL |
+---
+
+## 종합 Q&A
+### Q1: 할당 시 `<-`와 `=`의 차이점은 무엇인가요?
+**A:** 둘 다 값을 할당하지만 `<-`는 관용적인 R 할당 연산자입니다. 내부 함수 호출을 포함하여 모든 컨텍스트에서 작동합니다.
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: R에서 누락된 데이터를 어떻게 처리합니까?
+**A:** R은 누락된 값에 대해 `NA`를 사용합니다. 대부분의 함수에는`na.rm`매개변수가 있습니다.
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3:`lapply`대`sapply`대`vapply`는 언제 사용해야 합니까?
+**답:** 모두 목록/벡터에 함수를 적용하지만 출력은 다릅니다.
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: ggplot2를 사용하여 효과적인 시각화를 만들려면 어떻게 해야 합니까?
+**답:** 그래픽의 문법을 따르십시오. 데이터 미학을 시각적 속성에 매핑하십시오.
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5: 대규모 데이터세트에 효율적인 R 코드를 작성하려면 어떻게 해야 하나요?
+**답:** 주요 사례:
+- 벡터 사전 할당: `c()`로 성장하는 대신`x <- numeric(n)`
+- 대규모 데이터 세트에는 `data.table`를 사용합니다(data.frame보다 100배 빠름).
+- 벡터화 작업 - 가능한 경우 루프를 방지합니다.
+- 유형 안전성을 위해`sapply`대신 `vapply`를 사용하세요.
+-`Rprof()`또는 `profvis`를 사용한 프로필 
+- 코어 외부 데이터를 위한`arrow`패키지 고려
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 지저분한 데이터 세트 정리 및 분석
+**1단계: 문제 이해**
+누락된 값, 일관되지 않은 유형 및 이상값이 있는 데이터 프레임이 있습니다. 이를 정리하고 요약 통계를 계산해야 합니다.
+**2단계: 접근 방식 파악**
+tidyverse 동사를 사용하세요:`filter`,`mutate`,`summarize`및`group_by`.
+**3단계: 구현**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**4단계: 확인**
+이전/이후의 행 수를 확인하고, 범위의 유효성을 검사하고, 소스 데이터와 비교하여 합계를 교차 확인합니다.
+### 문제 2: 선형 회귀 모델 구축
+**1단계: 문제 이해**
+여러 예측변수로부터 연속 결과 변수를 예측합니다.
+**2단계: 접근 방식 파악**
+선형 회귀 분석을 위해 `lm()`를 사용하고, 가정을 확인하고, 모델 적합성을 평가합니다.
+**3단계: 구현**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**4단계: 평가**
+패턴에 대한 R-제곱, 잔차 플롯 및 모델 비교를 위한 AIC를 확인하세요.
+### 문제 3: 재현 가능한 보고서 만들기
+**1단계: 문제 이해**
+분석, 시각화, 설명 텍스트를 재현 가능한 형식으로 결합한 보고서를 만듭니다.
+**2단계: 접근 방식 파악**
+R Markdown(또는 Quarto)을 사용하여 코드 청크를 텍스트와 인터리브합니다.
+**3단계: 구현**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 경고 = FALSE)
+도서관(타이디버스)
+데이터 <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**4단계: 렌더링**
+ `rmarkdown::render("report.Rmd")`는 독립형 HTML 문서를 생성합니다.
 ---
 
 ## 요약

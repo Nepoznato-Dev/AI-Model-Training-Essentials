@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Erlang 和 Elixir
 Erlang 由爱立信于 1986 年构建，用于为电话交换机提供支持——这解释了为什么它比其他任何东西都能更好地处理并发、容错和分布式系统。 Erlang 进程是轻量级的、隔离的，并且仅通过消息传递进行通信。当进程崩溃时，主管会重新启动它。这种“让它崩溃”的理念使系统能够运行多年而不会停机。
 Elixir 是由 Jose Valim 于 2012 年在 Erlang 的 VM (BEAM) 之上构建的一种现代语言。它保留了 Erlang 提供的所有功能——并发性、容错性、分布性——但添加了友好的语法、元编程和优秀的工具（Mix 包管理器、Hex 包注册表）。 Elixir 广泛用于 Web 应用程序（通过 Phoenix 框架）、实时系统和嵌入式设备（通过 Nerves）。
@@ -594,18 +595,18 @@ end
 ### 按键混合命令
 |命令 |描述 |
 |---------|-------------|
-|  __受保护_0__ |创建新的 Elixir 项目 |
-|  __受保护_1__ |创建新的 Phoenix Web 应用程序 |
-|  __受保护_2__ |获取依赖项 |
-|  __受保护_3__ |编译项目|
-|  __受保护_4__ |运行测试 |
-|  __受保护_5__ |使用详细输出运行测试 |
-|  __受保护_6__ |运行静态分析 |
-|  __受保护_7__ |运行类型检查 |
-|  __受保护_8__ |格式代码|
-|  __受保护_9__ |生成文档 |
-|  __受保护_10__ |构建版本 |
-|  __受保护_11__ |启动 REPL 并加载项目 |
+| `mix new my_app`|创建新的 Elixir 项目 |
+| `mix phx.new my_app`|创建新的 Phoenix Web 应用程序 |
+| `mix deps.get`|获取依赖项 |
+| `mix compile`|编译项目|
+| `mix test`|运行测试 |
+| `mix test --trace`|使用详细输出运行测试 |
+| `mix credo`|运行静态分析 |
+| `mix dialyzer`|运行类型检查 |
+| `mix format`|格式代码|
+| `mix docs`|生成文档 |
+| `mix release`|构建版本 |
+| `iex -S mix`|启动 REPL 并加载项目 |
 ### 代码格式化程序 (.formatter.exs)
 ```elixir
 # .formatter.exs
@@ -846,8 +847,8 @@ end
 ### 分析工具
 |工具|目的|用途 |
 |------|---------|--------|
-| **：eprof** |功能级分析 | `:eprof.start()`然后配置文件 |
-| **：fprof** |详细的调用图分析 |  __受保护_1__ |
+| **：eprof** |功能级分析 | `:eprof.start()`然后简介 |
+| **：fprof** |详细的调用图分析 | `:fprof.profile(fn -> ... end)`|
 | **：观察者** |视觉系统监控|  IEx 中的`:observer.start()`|
 | **长凳** |基准测试库 |添加到部门 |
 ### 使用 Benchee 进行基准测试
@@ -914,7 +915,7 @@ CMD ["bin/my_app", "start"]
 ---
 
 ## 何时使用 Erlang/Elixir
-|场景 |为什么选择 Erlang/Elixir |更好的选择|
+|场景|为什么选择 Erlang/Elixir |更好的选择|
 |----------|--------------------|--------------------|
 |实时消息/聊天 |为此而构建 - WhatsApp、Discord 使用 Erlang |对于更简单的情况，Go、Node.js |
 |具有实时更新功能的 Web 应用程序 | Phoenix LiveView 非常出色 |用于传统应用程序的 Rails、Django |
@@ -925,6 +926,109 @@ CMD ["bin/my_app", "start"]
 |数据科学/机器学习 |不是生态系统| Python、R |
 |移动应用程序 |不适合|斯威夫特、科特林、达特 |
 |简单的 REST API |可能，但对于小型服务来说太过分了Go、Node.js、Python |
+---
+
+## 综合问答
+### Q1：Erlang 的“让它崩溃”哲学是如何运作的？
+**答：** Erlang 不是防御性编程，而是让进程崩溃并通过管理程序重新启动它们：
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2：Elixir 管道如何工作？
+**A:**`|>`运算符将一个函数的结果作为第一个参数传递给下一个函数：
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3：Erlang 和 Elixir 有什么区别？
+**答：** Elixir 使用现代语法在 Erlang VM (BEAM) 上运行：
+- Elixir：管道运算符、宏、协议、字符串插值
+- Erlang：更简单的语法，内置OTP，更久经考验
+- 两者共享相同的并发模型、VM 和生态系统
+### Q4：GenServer 在 Elixir 中如何工作？
+**A:** GenServer 是有状态进程的标准抽象：
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5：如何处理 Elixir 中的错误？
+**A:** 使用`try/rescue`表示异常，使用`{:ok, result} | {:error, reason}`表示预期故障：
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：构建容错键值存储
+**第 1 步：了解问题**
+创建一个能够在进程崩溃时幸存下来的键值存储。
+**第 2 步：确定方法**
+与主管一起使用 GenServer。
+**步骤 3：实施**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**第 4 步：验证**
+终止该进程并验证它以新状态重新启动。
+### 问题 2：并发 Web Scraper
+**第 1 步：了解问题**
+同时获取多个 URL 并收集结果。
+**第 2 步：确定方法**
+使用 Elixir 任务进行并发执行。
+**步骤 3：实施**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**第 4 步：优化**
+为大型 URL 列表添加速率限制、重试和流式传输。
 ---
 
 ＃＃ 概括

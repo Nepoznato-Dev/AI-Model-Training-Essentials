@@ -1,38 +1,42 @@
 ---
-# मेटाडेटा
-शीर्षक: "व्यवहारात्मक अर्थशास्त्र और निर्णय विज्ञान"
-विवरण: "संज्ञानात्मक पूर्वाग्रह, संभावना सिद्धांत, अनुमान, संकेत, पसंद वास्तुकला"
-श्रेणी: "व्यवसाय और अर्थशास्त्र"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-review_by: "बिजनेस एंड इकोनॉमिक्स नॉलेज बेस टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [व्यवहारिक, अर्थशास्त्र, व्यवसाय-और-अर्थशास्त्र]
-कठिनाई_स्तर: "शुरुआती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "6 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Behavioural Economics and Decision Science"
+description: "Cognitive biases, prospect theory, heuristics, nudges, choice architecture"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [behavioural, economics, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 #व्यवहारिक अर्थशास्त्र और निर्णय विज्ञान
 व्यवहारिक अर्थशास्त्र यह अध्ययन करता है कि लोग वास्तव में कैसे निर्णय लेते हैं - यह नहीं कि तर्कसंगत एजेंट उन्हें कैसे लेंगे। पारंपरिक अर्थशास्त्र मानता है कि लोग तर्कसंगत, स्वार्थी और सूचना प्रसंस्करण में अच्छे हैं। कन्नमैन, टावर्सकी, थेलर और अन्य लोगों के दशकों के शोध से पता चला है कि यह बेहद गलत है। लोग मानसिक शॉर्टकट का उपयोग करते हैं, अप्रासंगिक संदर्भ से प्रभावित होते हैं, हाल की जानकारी को अधिक महत्व देते हैं, और व्यवस्थित रूप से पूर्वानुमानित गलतियाँ करते हैं। बेहतर उत्पादों, नीतियों, संगठनों और व्यक्तिगत निर्णयों को डिजाइन करने के लिए इन पैटर्न को समझना आवश्यक है।

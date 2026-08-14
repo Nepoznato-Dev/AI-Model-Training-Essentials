@@ -197,7 +197,7 @@ def handlePayment(result: PaymentResult): String = result match
   // Compiler warns if any case is missing
 ```
 
-### Zaawansowane funkcje systemu
+### Funkcje systemu typu zaawansowanego
 ```scala
 // Dependent types with path-dependent types
 trait Database:
@@ -406,7 +406,7 @@ lazy val root = project
   )
 ```
 
-### Kluczowe polecenia budowania
+### Kluczowe polecenia tworzenia
 | Polecenie | Opis |
 |--------|------------|
 | `sbt new scala/scala3.g8`| Utwórz nowy projekt Scala 3 z szablonu |
@@ -855,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Programowanie funkcjonalne na JVM | Najlepsza kombinacja FP + JVM | Zamknięcie |
 | Ogólne tworzenie aplikacji | Możliwe, ale złożone | Python, Go, Java |
 | Nauka o danych | Możliwe, ale nie ekosystem | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: W jaki sposób wnioskowanie o typie w Scali zmniejsza schematy działania w porównaniu z Javą?
+**A:** Kompilator Scali wnioskuje typy dla deklaracji`val`/ `var`, typów zwracanych metod i funkcji anonimowych. W większości przypadków eliminuje to potrzebę wyraźnych adnotacji typu:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+Kompilator wnioskuje również parametry typu, typy zwracane przez metody pojedynczego wyrażenia i typy dopasowania wzorca. Dzięki temu kod jest zwięzły bez poświęcania bezpieczeństwa.
+### P2: Kiedy powinienem używać`case class`zamiast zwykłego `class`?
+**A:** Użyj`case class`dla niezmiennych nośników danych — zapewniają one`equals`,`hashCode`,`toString`,`copy`i automatyczną obsługę dopasowywania wzorców:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Ogólna zasada: jeśli twoja klasa to przede wszystkim dane, użyj`case class`. Jeśli ma zmienny stan lub złożone zachowanie, użyj zwykłego`class`.
+### P3: Jak idiomatycznie obsługiwać błędy w Scali?
+**A:** Scala woli zwracać typy, takie jak`Option`,`Either`i`Try`niż zgłaszać wyjątki:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### P4: Jaka jest różnica między`trait`a `abstract class`?
+**O:** Cechy obsługują dziedziczenie wielokrotne i mogą mieć parametry typu i konkretne metody. Klasy abstrakcyjne mogą mieć parametry konstruktora, ale obsługują tylko pojedyncze dziedziczenie:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### P5: Jak napisać wydajny kod Scala na maszynie JVM?
+**O:** Kluczowe praktyki:
+- Użyj`case class`i niezmiennych danych, aby uniknąć synchronizacji
+- Preferuj`Vector`,`Map`(niezmienny) do współdzielenia strukturalnego
+- Użyj adnotacji `@tailrec`, aby zapewnić optymalizację końcowego wywołania
+- Unikaj nadmiernego boksowania — użyj prymitywów`Int`, `Double`
+- Użyj`lazy val`do kosztownych obliczeń
+- Preferuj`Stream`/`LazyList`w przypadku dużych sekwencji
+- Profil z JMH — abstrakcje Scali powinny kompilować się do wydajnego kodu bajtowego
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Implementacja oceniającego wyrażenia bezpieczne dla typu
+**Krok 1: Zrozum problem**
+Musimy oceniać wyrażenia matematyczne ze zmiennymi, obsługując dodawanie, mnożenie i wyszukiwanie zmiennych.
+**Krok 2: Zidentyfikuj podejście**
+Użyj algebraicznych typów danych (zapieczętowana cecha + klasy przypadków) do modelowania drzewa wyrażeń, a następnie dopasuj wzór do oceny.
+**Krok 3: Wdróż**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**Krok 4: Zweryfikuj i rozszerz**
+Dodaj przypadki`Div`,`Pow`, `Neg`. Cecha zapieczętowana zapewnia, że ​​kompilator ostrzega o niewyczerpujących dopasowaniach.
+### Problem 2: Budowa prostego DSL do generowania HTML
+**Krok 1: Zrozum problem**
+Utwórz bezpieczny typ DSL, który generuje ciągi HTML przy użyciu składni Scali.
+**Krok 2: Zidentyfikuj podejście**
+Użyj klas przypadków dla elementów HTML i niejawnych konwersji dla naturalnej składni.
+**Krok 3: Wdróż**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**Krok 4: Zweryfikuj**
+DSL jest bezpieczny pod względem typów — nie można przypadkowo przekazać treści innych niż HTML. Dopasowanie wzorców na`HtmlNode`zapewnia wyczerpujące renderowanie.
+### Problem 3: Współbieżna liczba słów w strumieniach Akka
+**Krok 1: Zrozum problem**
+Zliczaj częstotliwości słów w wielu dużych plikach jednocześnie.
+**Krok 2: Zidentyfikuj podejście**
+Użyj kolekcji równoległych Scali lub strumieni Akka do współbieżnego przetwarzania, a następnie scal wyniki.
+**Krok 3: Wdróż**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**Krok 4: Optymalizacja**
+W przypadku bardzo dużych zbiorów danych użyj strumieni Akka z przeciwciśnieniem:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## Streszczenie

@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Desain dan Budaya Organisasi
-Desain organisasi adalah pengaturan struktur, proses, peran, dan hak keputusan yang disengaja untuk melaksanakan strategi secara efektif. Budaya adalah nilai, keyakinan, norma, dan perilaku bersama yang membentuk cara orang bekerja sama. Struktur adalah kerangka; budaya adalah kepribadian. Anda dapat mendesain ulang strukturnya di atas kertas, namun jika budayanya tidak mendukung perubahan tersebut, maka perubahan tersebut tidak akan berhasil. Dan budaya yang kuat dengan struktur yang buruk perlahan-lahan akan tercekik. Organisasi-organisasi terbaik melakukan keduanya dengan benar — dan memahami bahwa keduanya sangat saling berhubungan.
+Desain organisasi adalah pengaturan struktur, proses, peran, dan hak keputusan yang disengaja untuk melaksanakan strategi secara efektif. Budaya adalah nilai, keyakinan, norma, dan perilaku bersama yang membentuk cara orang bekerja sama. Struktur memberikan kerangka; budaya membentuk perilaku. Sebuah struktur dapat didesain ulang di atas kertas, namun jika budaya tidak mendukung perubahan tersebut, implementasinya akan gagal. Demikian pula, budaya yang kuat ditambah dengan struktur yang tidak efektif secara bertahap akan melemahkan kinerja organisasi. Organisasi yang paling efektif menangani keduanya – dan menyadari bahwa keduanya saling berhubungan.
 ---
 
 ## Struktur Organisasi
@@ -108,7 +109,7 @@ Wawasan utamanya: strategi menggerakkan struktur. Semua elemen lainnya harus sel
 | Dimensi | Deskripsi |
 |-----------|-------------|
 | **Keamanan psikologis** | Bisakah orang mengambil risiko dan menjadi rentan tanpa takut akan hukuman? |
-| **Akuntabilitas** | Apakah masyarakat bertanggung jawab atas komitmennya? |
+| **Akuntabilitas** | Apakah masyarakat bertanggung jawab atas komitmen mereka? |
 | **Transparansi** | Apakah informasi dibagikan secara terbuka atau ditimbun sebagai kekuasaan? |
 | **Toleransi inovasi** | Apakah kegagalan dihukum atau dianggap sebagai pembelajaran? |
 | **Orientasi pelanggan** | Apakah keputusan dimulai dari kebutuhan pelanggan atau kenyamanan internal? |
@@ -148,7 +149,7 @@ Wawasan utamanya: strategi menggerakkan struktur. Semua elemen lainnya harus sel
 | **Kepercayaan** | Ukur hasil, bukan jam; menghindari pengawasan |
 | **Orientasi** | Program terstruktur; sistem pertemanan; dokumentasi eksplisit |
 | **Budaya** | Ritual yang disengaja; biasa semua tangan; acara sosial virtual |
-| **Ekuitas** | Bias kedekatan: memastikan pekerja jarak jauh mendapatkan visibilitas dan peluang yang sama |
+| **Ekuitas** | Bias kedekatan: memastikan pekerja jarak jauh mendapatkan visibilitas dan peluang yang setara |
 | **Kolaborasi** | Kepemilikan yang jelas; antarmuka yang ditentukan; sinkronisasi reguler |
 | **Kesejahteraan** | Hormati batasan; hak untuk memutuskan sambungan; hindari pertemuan yang berlebihan |
 ---

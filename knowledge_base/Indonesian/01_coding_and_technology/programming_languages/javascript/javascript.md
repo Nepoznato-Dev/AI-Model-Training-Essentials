@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #JavaScript
 JavaScript adalah bahasa pemrograman dinamis dan ditafsirkan yang dibuat oleh Brendan Eich hanya dalam 10 hari pada tahun 1995. Awalnya dirancang untuk menambah interaktivitas pada halaman web, JavaScript telah berkembang menjadi bahasa pemrograman yang paling banyak digunakan di dunia. JavaScript berjalan di setiap browser web, di server melalui Node.js, di aplikasi desktop (Electron), aplikasi seluler (React Native), dan bahkan sistem tertanam.
 Bahasa ini unik karena pada dasarnya merupakan satu-satunya pilihan untuk pengembangan web sisi klien — setiap browser mendukungnya secara asli. Monopoli ini, dikombinasikan dengan munculnya JavaScript full-stack (Node.js, Deno, Bun), menjadikannya sangat diperlukan.
@@ -46,7 +47,7 @@ Bahasa ini unik karena pada dasarnya merupakan satu-satunya pilihan untuk pengem
 ## Mengapa JavaScript Penting
 - **Bahasa web**: Satu-satunya bahasa yang berjalan secara asli di browser. Tidak ada alternatif untuk frontend.
 - **Kemampuan full-stack**: Bahasa yang sama di frontend (React, Vue, Svelte) dan backend (Node.js, Express, Fastify).
-- **Ekosistem besar**: npm memiliki lebih dari 2 juta paket — registrasi perangkat lunak terbesar di dunia.
+- **Ekosistem besar**: npm memiliki lebih dari 2 juta paket — registri perangkat lunak terbesar di dunia.
 - **Fleksibilitas**: Aplikasi web, aplikasi seluler (React Native), aplikasi desktop (Electron), IoT, fungsi tanpa server.
 - **Hambatan masuk yang rendah**: Berjalan di browser apa pun — tidak perlu instalasi untuk memulai pengkodean.
 - **Asynchronous by design**: I/O non-pemblokiran yang digerakkan oleh peristiwa menjadikannya sangat baik untuk aplikasi real-time.
@@ -61,7 +62,7 @@ Bahasa ini unik karena pada dasarnya merupakan satu-satunya pilihan untuk pengem
 ---
 
 ## Dasar Sintaks
-### Variabel dan Jenis
+### Variabel dan Tipe
 ```javascript
 // Modern variable declarations
 const name = "Alice";       // Cannot be reassigned
@@ -331,7 +332,7 @@ async function* fetchPages(baseUrl) {
 }
 ```
 
-### Hirarki Kesalahan Khusus
+### Hierarki Kesalahan Khusus
 ```javascript
 class AppError extends Error {
     constructor(message, code) {
@@ -1055,6 +1056,419 @@ pm2 startup
 | Aplikasi desktop (Elektron) | Lintas platform dengan teknologi web | C# (WPF), Tauri (Karat) |
 | Komputasi intensif CPU | Batasan utas tunggal | Python (NumPy), C++, Karat, WebAssembly |
 | Pemrograman sistem | Tingkat abstraksi salah | C, C++, Karat, Buka |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`var`,`let`, dan`const`, dan kapan saya harus menggunakannya?
+**A:**`var`mempunyai cakupan fungsi dan diangkat — hindari ini dalam kode modern. `let`memiliki cakupan blok dan memungkinkan penugasan ulang. `const`memiliki cakupan blok dan mencegah penugasan ulang (tetapi objek/array yang direferensikannya masih bisa berubah). Praktik terbaik: defaultnya adalah`const`, gunakan`let`hanya saat Anda memerlukan penugasan ulang, jangan pernah gunakan`var`.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Q2: Bagaimana cara kerja`this`di JavaScript, dan mengapa sangat membingungkan?
+**A:**`this`ditentukan oleh **bagaimana suatu fungsi dipanggil**, bukan di mana fungsi tersebut didefinisikan. Dalam pemanggilan metode,`this`adalah objeknya. Dalam panggilan mandiri, ini adalah`undefined`(mode ketat) atau`global`(tidak ketat). Fungsi panah mewarisi`this`dari cakupan terlampirnya — inilah mengapa fungsi tersebut lebih disukai untuk callback. Gunakan`.bind()`untuk menyetel`this`secara eksplisit.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Q3: Apa itu event loop, dan bagaimana cara kerja async/await sebenarnya?
+**A:** JavaScript adalah thread tunggal dengan loop peristiwa yang memproses antrean. Tumpukan panggilan mengeksekusi kode sinkron. Jika kosong, loop peristiwa mengambil tugas berikutnya dari antrian tugas mikro (Janji) atau antrian tugas makro (setTimeout, I/O). `async/await`adalah gula sintaksis atas Janji —`await`menjeda fungsi async dan melanjutkan ketika Janji terselesaikan, tanpa memblokir thread.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4: Bagaimana cara menangani kesalahan dalam JavaScript modern?
+**A:** Gunakan`try/catch`untuk kode sinkron dan`.catch()`atau`try/catch`dengan`async/await`untuk kode asinkron. Selalu tangani penolakan Janji — penolakan yang tidak tertangani membuat Node.js mogok. Buat kelas kesalahan khusus untuk kesalahan khusus domain. Gunakan penangan kesalahan global sebagai jaring pengaman.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Q5: Kapan saya harus menggunakan`Map`/`Set`daripada objek/array biasa?
+**A:** Gunakan`Map`ketika kunci bukan string, ketika Anda memerlukan iterasi urutan penyisipan, ketika Anda membutuhkan`.size`, atau ketika Anda sering menambah/menghapus entri (kinerja lebih baik daripada objek). Gunakan`Set`untuk koleksi unik dengan pencarian O(1) — jauh lebih cepat daripada`array.includes()`untuk kumpulan data besar. Gunakan objek biasa untuk data sederhana yang dapat diserialkan JSON dan peta nilai kunci kecil dengan kunci string.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menerapkan Fungsi Debounce
+**Pernyataan Masalah:** Menerapkan utilitas`debounce`yang menunda pemanggilan fungsi hingga periode tunggu yang ditentukan telah berlalu sejak terakhir kali fungsi tersebut dipanggil. Mendukung pemanggilan tepi depan dan belakang.
+**Langkah 1 — Pahami Masalahnya:**
+Fungsi yang di-debounce mengabaikan panggilan cepat yang berurutan dan hanya aktif setelah panggilan berhenti selama durasi tunggu. "Terdepan" berarti langsung menembak pada panggilan pertama. "Trailing edge" berarti kebakaran setelah masa tunggu. Kita perlu menangani kedua mode tersebut dan juga mendukung pembatalan.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Simpan ID pengatur waktu di penutupan.
+- Pada setiap panggilan: hapus timer yang ada, lalu atur`setTimeout`baru.
+- Untuk terdepan: segera hubungi jika tidak ada timer yang aktif.
+- Mengembalikan fungsi yang di-debounce dengan metode `.cancel()`.
+- Pertahankan konteks dan argumen`this`menggunakan fungsi panah atau`.apply()`.
+**Langkah 3 — Terapkan Solusi:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Penutupan ini mempertahankan status di seluruh panggilan tanpa mencemari cakupan global.
+-`clearTimeout`sebelum`setTimeout`memastikan hanya panggilan terakhir yang memicu eksekusi.
+-`.cancel()`penting untuk pembersihan (misalnya, pelepasan komponen di React).
+- Kasus tepi: jika`wait`adalah 0, fungsi akan diaktifkan pada centang loop peristiwa berikutnya — berguna untuk mengelompokkan pembaruan DOM.
+### Masalah 2: Membangun Pembatas Tarif Berbasis Janji
+**Pernyataan Masalah:** Buat pembatas kecepatan yang mengizinkan paling banyak N permintaan per jangka waktu. Ini harus mengembalikan Janji yang menyelesaikan kapan pemanggil diizinkan untuk melanjutkan, dan mengantri permintaan berlebih.
+**Langkah 1 — Pahami Masalahnya:**
+Kami memerlukan jendela geser atau tetap yang melacak berapa banyak panggilan yang telah dilakukan. Ketika batas tercapai, panggilan baru harus dimasukkan ke dalam antrean dan diselesaikan ketika slot terbuka. Ini adalah pola "ember token".
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Lacak stempel waktu panggilan terakhir dalam array.
+- Pada setiap panggilan: hapus stempel waktu yang lebih lama dari jendela, periksa apakah hitungan < batas.
+- Jika di bawah batas: segera atasi.
+- Jika pada batas: hitung kapan stempel waktu terlama berakhir, tetapkan`setTimeout`, lalu selesaikan.
+- Gunakan antrian (array fungsi penyelesaian) untuk penelepon yang menunggu.
+**Langkah 3 — Terapkan Solusi:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Pendekatan jendela geser lebih adil dibandingkan jendela tetap (tidak ada ledakan pada batas jendela).
+- Pemrosesan antrian adalah FIFO — penelepon dilayani secara berurutan.
+- Untuk produksi: tambahkan dukungan`AbortController`sehingga penelepon dapat membatalkan menunggu.
+- Kinerja:`_cleanOldTimestamps`adalah O(n) per panggilan tetapi n dibatasi oleh`maxCalls`.
+### Masalah 3: Menerapkan Fungsi Kloning Dalam
+**Pernyataan Masalah:** Tulis fungsi yang mengkloning secara mendalam nilai JavaScript apa pun, menangani objek, array, Tanggal, RegExps, Maps, Set, referensi melingkar, dan array yang diketik.
+**Langkah 1 — Pahami Masalahnya:**
+`JSON.parse(JSON.stringify(obj))`gagal pada:`undefined`, fungsi, Simbol, Tanggal (menjadi string), RegExps (menjadi objek kosong), Peta, Set, referensi melingkar (melempar), dan array yang diketik. Kita memerlukan solusi rekursif yang melacak objek yang dikunjungi.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Gunakan`Map`untuk melacak objek yang sudah dikloning (menangani referensi melingkar).
+- Tangani setiap jenis secara khusus: Tanggal → Tanggal baru, RegExp → RegExp baru, Peta → Peta baru dengan entri yang dikloning, Set → Set baru dengan nilai yang dikloning.
+- Gunakan`structuredClone()`sebagai alternatif bawaan modern (tersedia di browser dan Node.js 17+).
+**Langkah 3 — Terapkan Solusi:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Referensi melingkar: Peta`seen`mengembalikan klon yang sudah dibuat alih-alih berulang tanpa batas.
+- Deskriptor properti:`Reflect.ownKeys`+`getOwnPropertyDescriptor`mempertahankan properti getter, setter, dan non-enumerable.
+- Alternatif modern:`structuredClone(value)`menangani sebagian besar kasus ini secara asli (kecuali fungsi dan node DOM). Lebih suka bila tersedia.
+- Performa: untuk objek sederhana,`JSON.parse(JSON.stringify(obj))`masih tercepat. Gunakan deep clone hanya ketika Anda benar-benar membutuhkannya.
+### Masalah 4: Membangun Pemancar Peristiwa Sederhana
+**Pernyataan Masalah:** Menerapkan kelas pemancar peristiwa yang mendukung metode`on`,`off`,`emit`, dan`once`. Pendengar harus dipanggil dalam urutan pendaftaran. `emit`harus menyampaikan argumen kepada semua pendengar.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan sistem pub/sub: mendaftarkan pendengar untuk peristiwa bernama, menghapus pendengar tertentu, memicu peristiwa dengan argumen, dan mendukung pendengar satu kali. Ini adalah pola Observer yang banyak digunakan di Node.js.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Simpan pendengar di`Map<string, Array<Function>>`.
+-`on`: mendorong pendengar ke array.
+-`off`: memfilter pendengar tertentu dari array.
+-`emit`: ulangi array dan panggil setiap pendengar dengan argumen penyebaran.
+-`once`: membungkus pendengar dalam fungsi yang menghapus dirinya sendiri setelah panggilan pertama.
+**Langkah 3 — Terapkan Solusi:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Salinan`[...listeners]`di`emit`mencegah masalah ketika pendengar memanggil`off`selama iterasi.
+-`once`menyimpan`_original`sehingga penelepon dapat menghapus pembungkusnya melalui`off(event, originalFn)`.
+- Bidang pribadi (`#listeners`) mencegah mutasi eksternal dari keadaan internal.
+- Untuk produksi: tambahkan peringatan`maxListeners`(seperti Node.js), penanganan kesalahan per pendengar, dan`prependListener`untuk prioritas.
 ---
 
 ## Ringkasan

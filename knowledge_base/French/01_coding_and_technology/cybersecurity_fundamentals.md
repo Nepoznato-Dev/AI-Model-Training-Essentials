@@ -1,41 +1,46 @@
 ---
-# Métadonnées
-titre : « Fondamentaux de la cybersécurité »
-description : "Chiffrement, TLS, OWASP, codage sécurisé, SDL"
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Cybersecurity Fundamentals"
+description: "Encryption, TLS, OWASP, secure coding, SDL"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-tags : [cybersécurité, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "9 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [cybersecurity, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "9 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fondamentaux de la cybersécurité
-La sécurité n'est pas une fonctionnalité que l'on adopte en fin de compte : c'est une discipline qui doit être intégrée à chaque couche d'un système dès le premier jour. Que vous créiez une application Web, gériez une infrastructure ou expédiiez une API, il est essentiel de comprendre le paysage des menaces et les principes fondamentaux de la défense.
+La sécurité est une discipline qui doit être intégrée dès le départ à chaque couche d’un système, plutôt que d’être ajoutée après coup. Qu'il s'agisse de créer une application Web, de gérer une infrastructure ou de commercialiser une API, il est essentiel de comprendre le paysage des menaces et les principes fondamentaux de la défense.
 ---
 
 ## Chiffrement et cryptographie
@@ -44,7 +49,7 @@ La sécurité n'est pas une fonctionnalité que l'on adopte en fin de compte : c
 |------|-------------|-------|-------|----------|
 | **Symétrique** | Même clé pour le cryptage et le déchiffrement | Rapide | Défi : comment partager la clé ? | AES-256, ChaCha20 |
 | **Asymétrique** | Chiffrement par clé publique, déchiffrement par clé privée | Plus lent | La clé publique peut être partagée ouvertement | RSA, ECC (courbe elliptique) |
-En pratique, la plupart des systèmes utilisent les **les deux** : le chiffrement asymétrique pour échanger de manière sécurisée une clé symétrique, puis le chiffrement symétrique pour l'essentiel des données. C'est ainsi que fonctionne TLS/HTTPS.
+En pratique, la plupart des systèmes utilisent **les deux** : le chiffrement asymétrique pour échanger de manière sécurisée une clé symétrique, puis le chiffrement symétrique pour l'essentiel des données. C'est ainsi que fonctionne TLS/HTTPS.
 ### Hachage
 Le hachage est une fonction à sens unique : il convertit l'entrée en une chaîne de taille fixe. Vous ne pouvez pas l'inverser, mais la même entrée produit toujours la même sortie.
 | Cas d'utilisation | Algorithme recommandé | Éviter |
@@ -69,7 +74,7 @@ Utilisez TLS 1.2 ou 1.3. Désactivez TLS 1.0 et 1.1. Activez HSTS (HTTP Strict T
 | **Clé matérielle (FIDO2/WebAuthn)** | Très élevé | Comptes haute sécurité (YubiKey) |
 | **Biométrique** | Moyen–Élevé | Déverrouillage de l'appareil (empreinte digitale, visage) – pas génial comme seul facteur |
 | **OAuth2 / OIDC** | Élevé | Connexion tierce (« Connectez-vous avec Google ») |
-**Règles de mot de passe** : appliquez une longueur minimale (12 à 16 caractères), vérifiez les listes de mots de passe violés, utilisez Argon2id ou bcrypt pour le hachage avec des sels par utilisateur.
+**Règles de mot de passe** : appliquez une longueur minimale (12 à 16 caractères), vérifiez les listes de mots de passe violés, utilisez Argon2id ou bcrypt pour le hachage avec des sels par utilisateur.
 ### Autorisation : que pouvez-vous faire ?
 | Modèle | Descriptif | Exemple |
 |-------|-------------|---------|
@@ -148,7 +153,7 @@ Placez les bases de données et les caches dans des sous-réseaux privés sans a
 | **Secrets Docker** | Natif du conteneur | Docker Swarm (pour les K8, pensez à Secrets Store CSI) |
 | **dotenv (.env)** | Développement local | Développement uniquement – ​​jamais en production ni engagé |
 ### Rotation
-Faites pivoter les secrets régulièrement et automatiquement. Si un secret est divulgué (par exemple, s'il est déposé dans un dépôt public), faites-le immédiatement pivoter, même si vous pensez que personne ne l'a vu.
+Faites pivoter les secrets régulièrement et automatiquement. Si un secret est divulgué (par exemple, s'il est déposé dans un dépôt public), faites-le pivoter immédiatement, même si vous pensez que personne ne l'a vu.
 ---
 
 ## Sécurité des dépendances

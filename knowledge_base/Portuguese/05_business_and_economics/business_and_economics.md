@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Negócios e Economia
 Toda organização que vende um produto ou serviço é uma empresa, e toda sociedade que produz e distribui bens é uma economia. Os conceitos neste arquivo se aplicam quer você esteja administrando uma operação freelance, trabalhando em uma empresa, tentando entender as notícias ou apenas descobrindo como o dinheiro se move pelo mundo.
 ---
@@ -92,7 +93,7 @@ As economias não crescem em linha reta. Eles percorrem fases:
 3. **Contração (recessão)**: Declínio da produção, aumento do desemprego, queda da confiança
 4. **Calha**: A parte inferior; a recuperação começa à medida que os preços se ajustam e a demanda retorna
 As recessões são normalmente definidas como dois trimestres consecutivos de crescimento negativo do PIB. São causadas por vários factores desencadeadores – crises financeiras, choques petrolíferos, perturbações pandémicas, rebentamento de bolhas de activos – mas o padrão é sempre semelhante: queda de confiança, queda de gastos, empresas cortam empregos, o que reduz ainda mais os gastos.
-Os bancos centrais (como a Reserva Federal dos EUA) tentam suavizar o ciclo ajustando as taxas de juro: taxas mais baixas durante as recessões para encorajar empréstimos e gastos, taxas mais elevadas durante os booms para evitar o sobreaquecimento.
+Os bancos centrais (como a Reserva Federal dos EUA) tentam suavizar o ciclo ajustando as taxas de juro: taxas mais baixas durante as recessões para incentivar a contracção de empréstimos e os gastos, taxas mais elevadas durante as fases de expansão para evitar o sobreaquecimento.
 ---
 
 ## Marketing — Como as empresas alcançam os clientes
@@ -137,7 +138,7 @@ Uma empresa pode ser lucrativa na demonstração de resultados, mas ainda assim 
 ## Empreendedorismo e Startups
 Uma startup é uma organização temporária em busca de um modelo de negócios escalável. Essa definição (de Steve Blank) captura a principal diferença entre uma startup e uma pequena empresa: uma startup está procurando algo novo, enquanto uma pequena empresa executa algo comprovado.
 ### O ciclo de vida da inicialização
-1. **Ideação**: Identifique um problema que vale a pena resolver. Converse com clientes em potencial.
+1. **Ideação**: identifique um problema que vale a pena resolver. Converse com clientes em potencial.
 2. **Validação**: Crie um produto mínimo viável (MVP) — a versão mais simples que testa suas principais suposições.
 3. **Adequação do produto ao mercado**: repita até que os clientes retirem o produto de suas mãos. Este é o marco mais importante.
 4. **Escalonamento**: Depois de ajustar o produto ao mercado, invista no crescimento – contratação, marketing, expansão.
@@ -155,10 +156,10 @@ A maioria das startups falha. As estimativas sugerem que 90% das startups apoiad
 ---
 
 ## Cadeia de suprimentos e operações
-O gerenciamento da cadeia de suprimentos é a arte e a ciência de levar o produto certo ao lugar certo, na hora certa e com o custo certo. Parece simples. É extraordinariamente difícil.
+O gerenciamento da cadeia de suprimentos é o processo coordenado de entrega do produto certo, no lugar certo, na hora certa e com o custo certo. O objetivo é direto; a execução é complexa.
 ### Conceitos-chave
 - **Just-in-time (JIT)**: Receba materiais somente quando necessário, reduzindo custos de estoque. A Toyota foi pioneira nisso. A compensação: os sistemas JIT são frágeis quando as cadeias de abastecimento são interrompidas (como demonstrou a escassez de chips em 2020-2022).
-- **Fabricação enxuta**: Elimine desperdícios — tudo que não agrega valor ao cliente. Identifique e elimine os “sete desperdícios”: superprodução, espera, transporte, excesso de processamento, estoque, movimento e defeitos.
+- **Fabricação enxuta**: Elimine desperdícios — tudo que não agrega valor ao cliente. Identifique e elimine os “sete desperdícios”: superprodução, espera, transporte, excesso de processamento, estoque, movimentação e defeitos.
 - **Seis Sigma**: Reduza os defeitos para 3,4 por milhão de oportunidades. Usa dados e métodos estatísticos para identificar e eliminar fontes de variação.
 - **Efeito chicote**: Pequenas mudanças na demanda do consumidor causam oscilações cada vez maiores a montante na cadeia de abastecimento. Um aumento de 5% nas vendas no varejo pode se traduzir em uma variação de 40% nos pedidos dos fabricantes.
 ---
@@ -172,7 +173,7 @@ Os países comercializam porque têm forças diferentes. O conceito de **vantage
 | **Déficit comercial** | Importações > exportações | EUA apresentam défices comerciais persistentes |
 | **Superávit comercial** | Exportações > importações | China e Alemanha registam excedentes persistentes |
 | **Taxas de câmbio** | Valor de uma moeda em relação a outra | Dólar fraco torna exportações mais baratas e importações mais caras |
-A globalização tirou centenas de milhões de pessoas da pobreza (especialmente na China e na Índia), mas também deslocou trabalhadores em países desenvolvidos cujos empregos foram transferidos para o estrangeiro. A tensão política entre os benefícios do comércio e as suas consequências distributivas é uma das questões definidoras da economia moderna.
+A globalização tirou centenas de milhões de pessoas da pobreza (especialmente na China e na Índia), mas também deslocou trabalhadores em países desenvolvidos cujos empregos foram transferidos para o exterior. A tensão política entre os benefícios do comércio e as suas consequências distributivas é uma das questões definidoras da economia moderna.
 ---
 
 ## Ética Empresarial e Responsabilidade Corporativa
@@ -183,7 +184,7 @@ As empresas existem dentro das sociedades e as suas decisões afectam pessoas pa
 | **ESG (Ambiental, Social, Governança)** | Critérios mensuráveis ​​para avaliar o comportamento da empresa | Emissões de carbono, diversidade do conselho, práticas trabalhistas |
 | **Certificação B-Corp** | Requisito legal de considerar as partes interessadas e não apenas os acionistas | Ben & Jerry's, Danone |
 | **Capitalismo de partes interessadas** | Atender clientes, funcionários, comunidades e acionistas | Contraste com a “primazia dos acionistas” (lucros acima de tudo) |
-O debate entre a primazia dos accionistas (Milton Friedman: “a responsabilidade social das empresas é aumentar os seus lucros”) e o capitalismo das partes interessadas (as empresas devem servir todas as partes interessadas) está longe de estar resolvido. As evidências sugerem cada vez mais que as empresas que tratam bem os funcionários, operam de forma sustentável e mantêm padrões éticos tendem a ter um desempenho superior a longo prazo — mas os incentivos a curto prazo empurram muitas vezes na outra direção.
+O debate entre a primazia dos accionistas (Milton Friedman: “a responsabilidade social das empresas é aumentar os seus lucros”) e o capitalismo das partes interessadas (as empresas devem servir todas as partes interessadas) está longe de estar resolvido. As evidências sugerem cada vez mais que as empresas que tratam bem os funcionários, operam de forma sustentável e mantêm padrões éticos tendem a ter um desempenho superior a longo prazo — mas os incentivos a curto prazo empurram frequentemente na outra direção.
 ---
 
 ## Resumo

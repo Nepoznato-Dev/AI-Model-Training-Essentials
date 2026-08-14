@@ -1,38 +1,42 @@
 ---
-# فراداده
-عنوان: "اقتصاد رفتاری و علم تصمیم گیری"
-توضیحات: "سوگیری های شناختی، تئوری چشم انداز، اکتشافی، تلنگرها، معماری انتخاب"
-دسته بندی: "کسب و کار و اقتصاد"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کسب و کار و اقتصاد"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [رفتار، اقتصاد، تجارت و اقتصاد]
-سطح سختی: "مبتدی"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "6 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Behavioural Economics and Decision Science"
+description: "Cognitive biases, prospect theory, heuristics, nudges, choice architecture"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [behavioural, economics, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # اقتصاد رفتاری و علم تصمیم
 اقتصاد رفتاری به مطالعه نحوه تصمیم‌گیری مردم می‌پردازد، نه اینکه چگونه عوامل منطقی تصمیم‌گیری می‌کنند. اقتصاد سنتی فرض می‌کند که مردم منطقی، علاقه‌مند و در پردازش اطلاعات خوب هستند. دهه‌ها تحقیق کانمن، تورسکی، تالر و دیگران نشان داده است که این به شدت نادرست است. افراد از میانبرهای ذهنی استفاده می کنند، تحت تأثیر زمینه نامربوط قرار می گیرند، اطلاعات اخیر اضافه وزن دارند و به طور سیستماتیک خطاهای قابل پیش بینی مرتکب می شوند. درک این الگوها برای طراحی محصولات، سیاست ها، سازمان ها و تصمیمات شخصی بهتر ضروری است.

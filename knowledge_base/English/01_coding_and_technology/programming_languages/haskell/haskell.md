@@ -1001,6 +1001,246 @@ pkgs.haskellPackages.developPackage {
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How does Haskell's lazy evaluation affect performance?
+
+**A:** Lazy evaluation means expressions are computed only when needed, enabling infinite data structures and composable pipelines. However, it can cause space leaks if thunks accumulate:
+
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Use `foldl'` (from `Data.List`) instead of `foldl` for numeric folds. Use `!` bang patterns or `seq` to force evaluation when needed.
+
+### Q2: What is the practical difference between `Functor`, `Applicative`, and `Monad`?
+
+**A:** Each typeclass adds capability:
+
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** maps a pure function over a context. **Applicative** applies functions that are themselves in a context. **Monad** lets each step depend on the result of the previous step. In practice: use `fmap`/`<$>` for simple transforms, `<*>` for combining effects, and `>>=`/`do` for sequential dependent computations.
+
+### Q3: How do I handle side effects in pure Haskell code?
+
+**A:** Use the type system to separate pure and effectful code:
+
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Keep the core logic pure and push effects to the edges. Use `ReaderT` for configuration, `ExceptT` for errors, and `StateT` for mutable state.
+
+### Q4: What are type classes and how do they differ from OOP interfaces?
+
+**A:** Type classes define behavior that types can implement. Unlike OOP interfaces, they are open (any type can be an instance) and support ad-hoc polymorphism:
+
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5: How do I structure a Haskell project for real-world use?
+
+**A:** Use Cabal or Stack with a standard layout:
+
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Key practices: keep IO in `Main.hs` or a dedicated `IO` module, make core logic pure and testable, use `newtype` wrappers for domain types.
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Implementing a Safe Division Function with Error Reporting
+
+**Step 1: Understand the Problem**
+We need division that handles division by zero and reports meaningful errors, not just crashes.
+
+**Step 2: Identify the Approach**
+Use `Either` to return either an error message or the result. This makes the possibility of failure explicit in the type.
+
+**Step 3: Implement**
+```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Step 4: Verify**
+The type system guarantees callers must handle the error case. Pattern matching or `either` forces explicit handling.
+
+### Problem 2: Parsing a Simple Configuration Language
+
+**Step 1: Understand the Problem**
+Parse key-value pairs from a string like `name=Alice\nage=30`.
+
+**Step 2: Identify the Approach**
+Use `Text.Parsec` or manual recursion. For simplicity, use `break` and `span`.
+
+**Step 3: Implement**
+```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Step 4: Extend**
+Add comment handling (`#`), section headers (`[section]`), and type coercion using a `Value` ADT.
+
+### Problem 3: Building a Memoized Fibonacci with Laziness
+
+**Step 1: Understand the Problem**
+Compute Fibonacci numbers efficiently. Naive recursion is exponential.
+
+**Step 2: Identify the Approach**
+Use Haskell's lazy evaluation to create an infinite list where each element is computed once and cached.
+
+**Step 3: Implement**
+```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Step 4: Optimize**
+For random access, use `Data.Array` with lazy construction. For very large indices, use matrix exponentiation in O(log n).
+
+### Problem 4: Implementing a Simple State Machine
+
+**Step 1: Understand the Problem**
+Model a traffic light that cycles Red -> Green -> Yellow -> Red.
+
+**Step 2: Identify the Approach**
+Use an algebraic data type for states and a pure transition function.
+
+**Step 3: Implement**
+```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Step 4: Verify**
+Pure functions are trivially testable:
+```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
+---
+
 ## Summary
 
 Haskell is the purest expression of functional programming in a mainstream language. Its type system is among the most powerful, and its emphasis on pure functions produces code that is easier to reason about and test. While Haskell is not widely used in industry, its ideas have profoundly influenced modern programming. Learning Haskell changes how you think about programming — even if you never use it professionally.

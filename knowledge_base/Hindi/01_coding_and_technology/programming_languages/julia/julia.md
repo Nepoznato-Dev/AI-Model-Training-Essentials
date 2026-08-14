@@ -1,39 +1,44 @@
 ---
-# मेटाडेटा
-शीर्षक: "जूलिया"
-विवरण: "जूलिया प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ़, सिंटैक्स बुनियादी बातें, पारिस्थितिकी तंत्र और इसका उपयोग कब करना है।"
-श्रेणी: "कोडिंग और प्रौद्योगिकी"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [जूलिया, प्रोग्रामिंग-भाषा, सिंटैक्स, पारिस्थितिकी तंत्र, कोडिंग-और-प्रौद्योगिकी]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "36 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Julia"
+description: "Comprehensive reference for the Julia programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [julia, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "36 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # जूलिया
 जूलिया एक उच्च स्तरीय, उच्च प्रदर्शन वाली प्रोग्रामिंग भाषा है जिसे तकनीकी और वैज्ञानिक कंप्यूटिंग के लिए डिज़ाइन किया गया है। पहली बार 2012 में जारी किया गया (2018 में 1.0), जूलिया को "दो-भाषा समस्या" को हल करने के लिए बनाया गया था - जहां वैज्ञानिक पायथन/आर में प्रोटोटाइप करते हैं लेकिन उत्पादन प्रदर्शन के लिए सी/सी++/फोरट्रान में फिर से लिखते हैं। जूलिया का लक्ष्य पाइथॉन जितना आसान लेकिन सी जितना तेज़ होना है।
 जूलिया एक इंटरैक्टिव, गतिशील अनुभव को बनाए रखते हुए निकट-सी प्रदर्शन प्राप्त करने के लिए एलएलवीएम के माध्यम से जस्ट-इन-टाइम (जेआईटी) संकलन का उपयोग करती है। इसमें समानांतर कंप्यूटिंग, वितरित प्रसंस्करण और एकाधिक प्रेषण के साथ एक परिष्कृत प्रकार की प्रणाली के लिए प्रथम श्रेणी का समर्थन है।
@@ -871,6 +876,191 @@ julia --project=. -e '
 | डेटा विश्लेषण | संभव; DataFrames.jl अच्छा है | पायथन (पांडा), आर |
 | वेब विकास | अनुकूल नहीं | जावास्क्रिप्ट, पायथन |
 | सामान्य अनुप्रयोग विकास | प्राथमिक उपयोग का मामला नहीं | पायथन, गो, जावा |
+---
+
+## सिंथेटिक प्रश्नोत्तर
+### Q1: OOP भाषाओं में एकाधिक प्रेषण एकल प्रेषण से किस प्रकार भिन्न है?
+**ए:** एकल प्रेषण (जावा, पायथन) में, विधि को पहले तर्क (ऑब्जेक्ट) के प्रकार के आधार पर चुना जाता है। जूलिया में, विधि को सभी तर्कों के प्रकारों के आधार पर चुना जाता है:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+यह सममित संचालन को सक्षम बनाता है और बॉयलरप्लेट पैटर्न को समाप्त करता है।
+### प्रश्न2: मैं जूलिया में सी-जैसा प्रदर्शन कैसे प्राप्त करूं?
+**ए:** मुख्य अभ्यास:
+- प्रकार-स्थिर कार्यों का उपयोग करें (लगातार प्रकार लौटाएं)
+- संरचनाओं में ठोस प्रकारों का उपयोग करें, अमूर्त प्रकारों का नहीं
+- वैश्विक चर से बचें (या उन्हें`const`बनाएं)
+- सीमा जांच को छोड़ने के लिए`@inbounds`का उपयोग करें (सुरक्षित होने पर)
+- सरणियों को विकसित करने के बजाय उन्हें पूर्व-आवंटित करें
+- वेक्टराइज़ करने योग्य लूप के लिए`@simd`का उपयोग करें
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3:`Array`,`Tuple`और`NamedTuple`के बीच क्या अंतर हैं?
+**ए:** प्रत्येक एक अलग उद्देश्य पूरा करता है:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4: मैं जूलिया में त्रुटियों और अपवादों को कैसे संभालूं?
+**ए:**`try/catch`और कस्टम अपवाद प्रकारों का उपयोग करें:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5: मैं जूलिया के पैकेज इकोसिस्टम का प्रभावी ढंग से उपयोग कैसे करूं?
+**ए:** अंतर्निहित पैकेज मैनेजर (पीकेजी) और वातावरण का उपयोग करें:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## चेन-ऑफ़-थॉट समस्या का समाधान
+### समस्या 1: संख्यात्मक एकीकरण फ़ंक्शन को कार्यान्वित करना
+**चरण 1: समस्या को समझें**
+सिम्पसन के नियम का उपयोग करके किसी फ़ंक्शन के निश्चित अभिन्न अंग की गणना करें।
+**चरण 2: दृष्टिकोण को पहचानें**
+जूलिया के एकाधिक प्रेषण और उच्च-क्रम फ़ंक्शन का उपयोग करें। किसी भी कॉल करने योग्य फ़ंक्शन को स्वीकार करें।
+**चरण 3: कार्यान्वयन**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**चरण 4: अनुकूलन करें**
+`@inbounds` जोड़ें और प्रदर्शन के लिए एनोटेशन टाइप करें।`@btime`के साथ बेंचमार्क।
+### समस्या 2: एक समानांतर मोंटे कार्लो सिमुलेशन का निर्माण
+**चरण 1: समस्या को समझें**
+मोंटे कार्लो नमूने का उपयोग करके पाई का अनुमान लगाएं, सभी सीपीयू कोर में समानांतर।
+**चरण 2: दृष्टिकोण को पहचानें**
+साझा-स्मृति समानता के लिए`Threads.@threads`का उपयोग करें।
+**चरण 3: कार्यान्वयन**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**चरण 4: सत्यापित करें**
+`Float64(\pi)` से तुलना करें। बेहतर सटीकता के लिए नमूना संख्या बढ़ाएँ।
+### समस्या 3: प्रसारण के साथ एक कस्टम ऐरे प्रकार बनाना
+**चरण 1: समस्या को समझें**
+एक`DiagonalMatrix`प्रकार बनाएं जो केवल विकर्ण तत्वों को संग्रहीत करता है लेकिन मानक सरणी संचालन का समर्थन करता है।
+**चरण 2: दृष्टिकोण को पहचानें**
+उपप्रकार`AbstractMatrix`और आवश्यक तरीकों को लागू करें।
+**चरण 3: कार्यान्वयन**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**चरण 4: विस्तार करें**
+`setindex!`, मैट्रिक्स गुणन अनुकूलन और`show`विधि जोड़ें।
 ---
 
 ## सारांश

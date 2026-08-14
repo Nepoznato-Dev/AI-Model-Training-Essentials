@@ -801,9 +801,9 @@ from optuna import create_study, Trial
 
 def objective(trial: Trial):
     # Suggest hyperparameters
-    lr = trial.suggest_loguniform('learning_rate', 1e-5, 1e-4)
+    lr = trial.suggest_float('learning_rate', 1e-5, 1e-4, log=True)
     batch_size = trial.suggest_categorical('batch_size', [16, 32, 64])
-    temperature = trial.suggest_uniform('temperature', 0.01, 0.1)
+    temperature = trial.suggest_float('temperature', 0.01, 0.1)
     
     # Initialize model with suggested params
     model = BiEncoder()

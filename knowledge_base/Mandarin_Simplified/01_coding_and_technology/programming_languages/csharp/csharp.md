@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C#
 C#（发音为“C-sharp”）是一种现代的、面向对象的、类型安全的编程语言，由 Microsoft 在 Anders Hejlsberg 的领导下开发，并于 2002 年首次发布。它运行在 .NET 平台上，旨在将 C++ 的强大功能与 Visual Basic 的生产力结合起来。如今，C# 是一种多功能、跨平台语言，用于 Web 应用程序 (ASP.NET)、桌面软件 (Windows)、游戏开发 (Unity)、移动应用程序 (MAUI)、云服务 (Azure) 等。
 C# 不断吸收其他语言的最佳思想——LINQ、异步/等待、记录、模式匹配——使其成为功能最丰富、对开发人员最友好的语言之一。
@@ -689,21 +690,313 @@ dotnet publish -c Release -r linux-x64
 | C# 10 | 2021 |记录结构、全局`using`、文件范围的命名空间 |
 | C# 11 | 2022 | 2022原始字符串文字、列表模式、`required` 成员、通用数学 |
 | C# 12 | 2023 |主构造函数、集合表达式、内联数组 |
-| C# 13 | 2024 | 2024 `params`集合、新的锁类型、一流的跨度 |
+| C# 13 | 2024 | 2024  `params`系列，新锁类型，一流跨度|
 ---
 
 ## 何时使用 C#
-|场景 |为什么选择 C# |更好的选择|
+|场景|为什么选择 C# |更好的选择|
 |----------|--------|--------------------|
 |游戏开发（Unity）|标准Unity脚本语言| --|
 |企业网络后端 | ASP.NET Core 快速、成熟、支持良好 | Java（Spring Boot）|
 | Windows 桌面应用程序 | WPF、WinForms、WinUI 已成熟 | --|
-|跨平台桌面|阿瓦洛尼亚或毛伊岛 | Electron（基于网络）|
+|跨平台桌面 |阿瓦洛尼亚或毛伊岛 | Electron（基于网络）|
 | Web 前端 (Blazor) |全栈 C# — 无需 JavaScript | React/Vue/Angular 打造更丰富的 SPA 生态系统 |
 |云服务 (Azure) |深度 Azure 集成 | --|
 |移动应用程序 (毛伊岛) |使用 C# 跨平台 | Flutter、React Native 或原生 Swift/Kotlin |
 |人工智能/机器学习 | ML.NET 成为可能 | Python（压倒性首选）|
 | CLI 工具/脚本 |可能但很冗长 | Go、Rust、Python |
+---
+
+## 综合问答
+### Q1：C#中`class`和`record`有什么区别？
+**A:**`class`是默认情况下具有可变属性的引用类型 - 两个变量可以引用同一对象。`record`(C# 9+) 是一种具有基于值的相等性的引用类型 — 具有相同数据的两条记录被视为相等。记录具有仅限 init 的属性、内置`ToString`，并支持用于非破坏性突变的`with`表达式。使用记录作为数据载体（DTO、值对象）；将类用于具有身份的行为丰富的实体。
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Q2：async/await 和`Task`内部如何工作？
+**A:**`async/await`是编译器生成的状态机的语法糖。当您`await`和`Task`时，该方法在等待点处被分割：之前的所有内容都同步执行，然后其余部分被注册为延续。该线程被释放以执行其他工作。 `Task<T>`代表未来值。 `ValueTask<T>`是热路径的结构替代方案，可在结果已可用时避免堆分配。
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### Q3：什么是扩展方法，什么时候应该使用它们？
+**A:** 扩展方法向现有类型添加方法而不修改它们。它们是静态类中的静态方法，第一个参数上带有`this`关键字。它们支持流畅、可链接的 API。使用它们将实用方法添加到您不拥有的类型（例如`string`或`IEnumerable<T>`）。避免过度使用它们——它们会使代码难以发现。
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Q4：模式匹配在现代 C# 中如何工作？
+**A:** C# 逐渐添加了更强大的模式匹配。开关表达式 (C# 8)、类型模式、属性模式、关系模式和列表模式 (C# 11) 允许简洁、富有表现力的条件逻辑。模式匹配取代了长的 if/else 链，并由编译器进行详尽的检查。
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### Q5：.NET 中的依赖注入是什么，如何使用它？
+**答：** .NET 通过`Microsoft.Extensions.DependencyInjection`具有内置 DI 支持。您使用服务的生命周期（Singleton、Scoped、Transient）注册服务，容器通过构造函数参数注入它们。 Singleton：应用程序的一个实例。范围：每个 HTTP 请求一个。瞬态：每次都有新实例。
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：构建带缓存的通用存储库
+**问题陈述：** 使用添加缓存的装饰器实现通用存储库模式。存储库应该支持 CRUD 操作，并且缓存装饰器应该缓存读取并在写入时失效。
+**第 1 步 — 了解问题：**
+我们需要：（1）一个通用的`IRepository<T>`接口，（2）一个具体的实现（例如，内存中），（3）一个包装任何存储库的缓存装饰器，（4）写入操作时的缓存失效。装饰器模式保持缓存与数据访问逻辑正交。
+**第 2 步 — 确定方法：**
+- 用`Get`、`GetAll`、`Add`、`Update`、`Delete`定义`IRepository<T>`。
+- 创建包装`IRepository<T>`并使用`IMemoryCache`的`CachingRepository<T>`。
+- 缓存键：`typeof(T).Name:{id}`。
+- 在写入操作时，使缓存条目无效。
+**第 3 步 — 实施解决方案：**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**第 4 步 — 验证和优化：**
+- 关注点分离：缓存是一个装饰器，不混合到存储库中。
+- DI 注册：`services.Decorate<IRepository<User>, CachingRepository<User>>()`（使用 Scrutor）。
+- 生产：使用`IDistributedCache`(Redis) 进行多服务器场景，并添加具有`CacheStampede`保护的缓存旁路模式。
+### 问题 2：实现中间件管道
+**问题陈述：** 构建一个类似于 ASP.NET Core 的请求管道的中间件管道。每个中间件可以处理请求，调用下一个中间件，并处理响应。
+**第 1 步 — 了解问题：**
+我们需要：(1) 表示管道的`RequestDelegate`类型，(2) 包装下一个委托的中间件，(3) 用于组合中间件的构建器 API。这是通过委托实现的责任链模式。
+**第 2 步 — 确定方法：**
+-`RequestDelegate`是`Func<Context, RequestDelegate, Task>`。
+- 每个中间件接收上下文和`next`函数。
+- `Use`添加中间件； `Build`将它们组合成一个委托。
+**第 3 步 — 实施解决方案：**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**第 4 步 — 验证和优化：**
+- 中间件顺序很重要：首先添加=最外层（首先根据请求执行，最后根据响应执行）。
+- 终端中间件（无`next`调用）使管道短路。
+- 生产：ASP.NET Core 的管道正是这种模式，通过编译的表达式树进行了优化以实现零分配。
 ---
 
 ＃＃ 概括

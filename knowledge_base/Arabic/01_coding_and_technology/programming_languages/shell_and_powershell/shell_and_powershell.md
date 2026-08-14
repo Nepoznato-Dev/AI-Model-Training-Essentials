@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "شل وPowerShell"
-الوصف: "مرجع شامل للغة برمجة Shell وPowerShell يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Shell & PowerShell"
+description: "Comprehensive reference for the Shell and PowerShell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [Shell-and-Powershell، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "35 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [shell-and-powershell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # شل وباورشيل
 تشير البرمجة النصية لـ Shell إلى كتابة البرامج النصية لمترجمي سطر الأوامر. أهم صدفتين هما **Bash** (Bourne Again Shell) — الافتراضي في Linux وmacOS — و**PowerShell** — الصدفة الحديثة متعددة المنصات ولغة البرمجة النصية من Microsoft. تعمل برامج Shell النصية على أتمتة مهام إدارة النظام، وبناء خطوط الأنابيب، ومعالجة الملفات، وسير عمل النشر.
 يحتاج كل مطور ومهندس DevOps ومسؤول النظام إلى مهارات البرمجة النصية لـ Shell. سواء كنت تقوم بنشر خادم ويب، أو معالجة ملفات السجل، أو إعداد خطوط أنابيب CI/CD، أو أتمتة النسخ الاحتياطية، فإن البرمجة النصية لـ Shell هي الأداة المناسبة لهذه المهمة.
@@ -49,9 +54,9 @@ next_review: "2027-08-05"
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|
-| **باش مراوغات** | بناء جملة غير متناسق، ومعالجة سلسلة هشة | استخدم __محمي_0__؛ متغيرات الاقتباس؛ تفضل PowerShell للبرامج النصية المعقدة |
+| **باش مراوغات** | بناء جملة غير متناسق، ومعالجة سلسلة هشة | استخدم `set -euo pipefail`؛ متغيرات الاقتباس؛ تفضل PowerShell للبرامج النصية المعقدة |
 | **ليس للبرامج المعقدة** | هياكل بيانات ضعيفة، لا يوجد OOP، يصعب اختبارها | استخدم Python أو Go أو لغات أخرى للمنطق المعقد |
-| **معالجة الأخطاء** | معالجة أخطاء Bash بدائية | استخدم __محمي_1__ ; التحقق من رموز الخروج؛ استخدم تجربة/التقاط PowerShell |
+| **معالجة الأخطاء** | معالجة أخطاء Bash بدائية | استخدم `set -e`؛ التحقق من رموز الخروج؛ استخدم تجربة/التقاط PowerShell |
 | **قابلية النقل** | قد لا تعمل البرامج النصية Bash على جميع الأنظمة | استخدم POSIX sh للحصول على أقصى قدر من قابلية النقل؛ PowerShell عبر الأنظمة الأساسية |
 | **التصحيح** | أدوات تصحيح محدودة | استخدم`set -x`لـ Bash؛ يحتوي PowerShell على مصحح أخطاء مناسب |
 ---
@@ -853,6 +858,152 @@ Publish-Module @publishParams
 | تحليل السجل | سريع grep/awk مفردات | بايثون، SQL للتحليل المعقد |
 | تطبيقات معقدة | غير مناسب | بايثون، جو، جافا |
 | البرامج النصية عبر منصة | PowerShell 7+ يعمل في كل مكان | بايثون للنصوص البرمجية المحمولة حقًا |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين علامات الاقتباس المفردة والمزدوجة في باش؟
+**أ:** تسمح علامات الاقتباس المزدوجة بالتوسيع المتغير؛ علامات الاقتباس المفردة حرفية:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### السؤال الثاني: كيف أتعامل مع الأخطاء في برامج الصدفة النصية؟
+**A:** استخدم`set -e`للخروج من الأخطاء ومحاصرة عملية التنظيف:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### س3: كيف يمكنني معالجة وسيطات سطر الأوامر بشكل صحيح؟
+**A:** استخدم`getopts`للأعلام والمعلمات الموضعية:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### س 4: ما هو خط أنابيب PowerShell وكيف يختلف عن Bash؟
+**أ:** كائنات توجيهات PowerShell، وليس النص. يحتفظ كل كائن بخصائصه:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### س5: كيف يمكنني كتابة نصوص برمجية مشتركة بين الأنظمة الأساسية؟
+**أ:** بالنسبة إلى Bash: استخدم `#!/usr/bin/env bash`، وتجنب العلامات الخاصة بـ GNU. بالنسبة إلى PowerShell: استخدم`pwsh`(PowerShell Core) الذي يعمل على Linux/macOS/Windows.
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: البرنامج النصي لمعالجة الصور المجمعة (Bash)
+**الخطوة الأولى: فهم المشكلة**
+قم بتغيير حجم جميع صور PNG الموجودة في الدليل إلى أقصى عرض يبلغ 800 بكسل.
+**الخطوة 2: تحديد النهج**
+استخدم`find`لتحديد موقع الملفات و`convert` (ImageMagick) لتغيير حجمها.
+**الخطوة 3: التنفيذ**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**الخطوة 4: تمديد**
+أضف شريط التقدم ومعالجة الأخطاء للصور الفاسدة والمعالجة المتوازية باستخدام `xargs -P`.
+### المشكلة الثانية: التدوير الآلي للسجل (Bash)
+**الخطوة الأولى: فهم المشكلة**
+قم بتدوير ملفات السجل يوميًا، وضغط السجلات القديمة، وحذف السجلات الأقدم من 30 يومًا.
+**الخطوة 2: تحديد النهج**
+استخدم`find`مع المرشحات المستندة إلى الوقت و`gzip` للضغط.
+**الخطوة 3: التنفيذ**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**الخطوة 4: الجدول الزمني**
+أضف إلى crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### المشكلة 3: فحص صحة خدمة Windows (PowerShell)
+**الخطوة الأولى: فهم المشكلة**
+تحقق مما إذا كانت الخدمات الهامة قيد التشغيل وأرسل تنبيهًا في حالة توقف أي منها.
+**الخطوة 2: تحديد النهج**
+استخدم`Get-Service`وقم بتصفية الخدمات المتوقفة.
+**الخطوة 3: التنفيذ**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**الخطوة 4: الأتمتة**
+قم بالجدولة كمهمة جدولة مهام Windows التي يتم تشغيلها كل 5 دقائق.
 ---
 
 ## ملخص

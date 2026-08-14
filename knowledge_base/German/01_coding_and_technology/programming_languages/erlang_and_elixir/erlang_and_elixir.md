@@ -38,12 +38,13 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Erlang & Elixier
-Erlang wurde 1986 von Ericsson entwickelt, um Telefonschalter mit Strom zu versorgen – was erklärt, warum es Parallelität, Fehlertoleranz und verteilte Systeme besser beherrscht als fast alles andere. Erlang-Prozesse sind leichtgewichtig, isoliert und kommunizieren nur über die Weitergabe von Nachrichten. Wenn ein Prozess abstürzt, wird er von einem Supervisor neu gestartet. Diese „Lass es abstürzen“-Philosophie führt zu Systemen, die jahrelang ohne Ausfallzeiten laufen.
-Elixir ist eine moderne Sprache, die 2012 von Jose Valim auf Erlangs VM (BEAM) aufbaut. Sie behält alles bei, was Erlang bietet – Parallelität, Fehlertoleranz, Verteilung –, fügt aber eine benutzerfreundliche Syntax, Metaprogrammierung und hervorragende Tools (Mix-Paketmanager, Hex-Paketregistrierung) hinzu. Elixir wird häufig für Webanwendungen (über das Phoenix-Framework), Echtzeitsysteme und eingebettete Geräte (über Nerves) verwendet.
+Erlang wurde 1986 von Ericsson für die Stromversorgung von Telefonschaltern entwickelt – was erklärt, warum es Parallelität, Fehlertoleranz und verteilte Systeme besser beherrscht als fast alles andere. Erlang-Prozesse sind leichtgewichtig, isoliert und kommunizieren nur über die Weitergabe von Nachrichten. Wenn ein Prozess abstürzt, wird er von einem Supervisor neu gestartet. Diese „Lass es abstürzen“-Philosophie führt zu Systemen, die jahrelang ohne Ausfallzeiten laufen.
+Elixir ist eine moderne Sprache, die 2012 von Jose Valim auf Erlangs VM (BEAM) aufgebaut wurde. Sie behält alles bei, was Erlang bietet – Parallelität, Fehlertoleranz, Verteilung –, fügt aber eine benutzerfreundliche Syntax, Metaprogrammierung und hervorragende Tools (Mix-Paketmanager, Hex-Paketregistrierung) hinzu. Elixir wird häufig für Webanwendungen (über das Phoenix-Framework), Echtzeitsysteme und eingebettete Geräte (über Nerves) verwendet.
 ---
 
-## Warum Erlang/Elixier wichtig ist
+## Warum Erlang/Elixir wichtig ist
 - **Parallelitätsmodell**: Leichte Prozesse mit Nachrichtenübermittlung – kein gemeinsamer Status, keine Sperren, keine Deadlocks.
 - **Fehlertoleranz**: Supervisor-Bäume starten abgestürzte Prozesse automatisch neu. Systeme erholen sich ordnungsgemäß nach Fehlern.
 - **Durch Design verteilt**: Erlang-Knoten kommunizieren transparent über Maschinen hinweg. Gebaut für Cluster.
@@ -927,5 +928,108 @@ CMD ["bin/my_app", "start"]
 | Einfache REST-APIs | Möglich, aber für kleine Dienste zu viel des Guten | Go, Node.js, Python |
 ---
 
+## Synthetische Fragen und Antworten
+### F1: Wie funktioniert Erlangs „Let it crash“-Philosophie?
+**A:** Anstelle einer defensiven Programmierung lässt Erlang Prozesse abstürzen und startet sie über Supervisoren neu:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### F2: Wie funktionieren Elixir-Pipelines?
+**A:** Der `|>`-Operator übergibt das Ergebnis einer Funktion als erstes Argument an die nächste:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### F3: Was ist der Unterschied zwischen Erlang und Elixir?
+**A:** Elixir läuft auf der Erlang VM (BEAM) mit moderner Syntax:
+- Elixier: Pipe-Operator, Makros, Protokolle, String-Interpolation
+- Erlang: einfachere Syntax, OTP integriert, kampferprobter
+– Beide nutzen dasselbe Parallelitätsmodell, dieselbe VM und dasselbe Ökosystem
+### F4: Wie funktionieren GenServer in Elixir?
+**A:** GenServer ist die Standardabstraktion für zustandsbehaftete Prozesse:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### F5: Wie gehe ich mit Fehlern in Elixir um?
+**A:** Verwenden Sie`try/rescue`für Ausnahmen und`{:ok, result} | {:error, reason}`für erwartete Fehler:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Aufbau eines fehlertoleranten Schlüsselwertspeichers
+**Schritt 1: Verstehen Sie das Problem**
+Erstellen Sie einen Schlüsselwertspeicher, der Prozessabstürze übersteht.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie einen GenServer mit einem Supervisor.
+**Schritt 3: Implementieren**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**Schritt 4: Überprüfen**
+Beenden Sie den Prozess und stellen Sie sicher, dass er mit einem neuen Status neu gestartet wird.
+### Problem 2: Gleichzeitiger Web Scraper
+**Schritt 1: Verstehen Sie das Problem**
+Rufen Sie mehrere URLs gleichzeitig ab und sammeln Sie Ergebnisse.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie Elixir-Aufgaben für die gleichzeitige Ausführung.
+**Schritt 3: Implementieren**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**Schritt 4: Optimieren**
+Fügen Sie Ratenbegrenzung, Wiederholungsversuche und Streaming für große URL-Listen hinzu.
+---
+
 ## Zusammenfassung
-Erlang hat ein Problem gelöst, mit dem die meisten Sprachen noch immer zu kämpfen haben: die Entwicklung von Systemen, die niemals ausfallen. Sein Parallelitätsmodell – schlanke Prozesse, Nachrichtenweitergabe, „Let it crash“-Überwachung – ist dem, was Mainstream-Sprachen erst jetzt entdecken, um Jahrzehnte voraus. Elixir nutzt die Superkräfte von Erlang und verpackt sie in moderne Syntax mit hervorragender Entwicklererfahrung. Wenn Sie Echtzeit-, verteilte oder fehlertolerante Systeme aufbauen, ist Erlang/Elixir die Investition wert. Die Lernkurve ist real (funktionale Programmierung, Mustervergleich, Prozessdenken), aber der Lohn ist Software, die auf dem neuesten Stand bleibt und vorhersehbar skaliert.
+Erlang hat ein Problem gelöst, mit dem die meisten Sprachen immer noch zu kämpfen haben: die Entwicklung von Systemen, die niemals ausfallen. Sein Parallelitätsmodell – schlanke Prozesse, Nachrichtenweitergabe, „Let it crash“-Überwachung – ist dem, was Mainstream-Sprachen erst jetzt entdecken, um Jahrzehnte voraus. Elixir nutzt die Superkräfte von Erlang und verpackt sie in moderne Syntax mit hervorragender Entwicklererfahrung. Wenn Sie Echtzeit-, verteilte oder fehlertolerante Systeme aufbauen, ist Erlang/Elixir die Investition wert. Die Lernkurve ist real (funktionale Programmierung, Mustervergleich, Prozessdenken), aber der Lohn ist Software, die auf dem neuesten Stand bleibt und vorhersehbar skaliert.

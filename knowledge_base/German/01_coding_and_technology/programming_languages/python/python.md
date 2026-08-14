@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Python
 Python ist eine interpretierte, universelle Programmiersprache auf hohem Niveau, die von Guido van Rossum entwickelt und erstmals 1991 veröffentlicht wurde. Sie legt Wert auf die Lesbarkeit des Codes durch deutliche Einrückungen und eine saubere Syntax, die sich fast wie einfaches Englisch liest. Python ist dynamisch typisiert, wird durch Garbage Collection erfasst und unterstützt mehrere Programmierparadigmen, einschließlich prozeduraler, objektorientierter und funktionaler Programmierung.
-Heute ist Python die dominierende Sprache in den Bereichen KI/ML, Datenwissenschaft, wissenschaftliches Rechnen und Automatisierung – und bleibt gleichzeitig eine der besten Sprachen für Anfänger. Diese doppelte Identität (einfach genug für ein erstes Skript, leistungsstark genug, um große Sprachmodelle zu trainieren) zeichnet es aus.
+Heute ist Python die dominierende Sprache in den Bereichen KI/ML, Datenwissenschaft, wissenschaftliches Rechnen und Automatisierung – und bleibt gleichzeitig eine der besten Sprachen für Anfänger. Diese doppelte Identität (einfach genug für ein erstes Skript, leistungsstark genug, um große Sprachmodelle zu trainieren) ist es, was es auszeichnet.
 ---
 
 ## Warum Python wichtig ist
@@ -180,7 +181,7 @@ class InsufficientFundsError(Exception):
 ---
 
 ## Erweiterte Syntax und Muster
-### Generics mit`typing`Modul
+### Generics mit `typing`-Modul
 Das `typing`-Modul von Python bietet generische Typunterstützung zum Erstellen wiederverwendbarer, typsicherer Komponenten. Mit Generika können Sie Funktionen und Klassen schreiben, die mit jedem Typ funktionieren, während Typinformationen für die statische Analyse erhalten bleiben.
 ```python
 from typing import TypeVar, Generic, Protocol, runtime_checkable
@@ -294,7 +295,7 @@ print(db1 is db2)  # True — same instance
 ```
 
 ### Strukturmustervergleich (Python 3.10+)
-Die `match/case`-Anweisung von Python bietet einen leistungsstarken Mustervergleich mit Destrukturierung, Schutz und verschachtelten Mustern.
+Die `match/case`-Anweisung von Python bietet einen leistungsstarken Mustervergleich mit Destrukturierung, Schutzmaßnahmen und verschachtelten Mustern.
 ```python
 from dataclasses import dataclass
 
@@ -541,9 +542,9 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
-Moderne Python-Projekte verwenden zunehmend`pyproject.toml`mit Tools wie `uv`,`poetry`oder`hatch`für das Abhängigkeitsmanagement und ersetzen damit den älteren`setup.py`/ `requirements.txt`-Ansatz.
+Moderne Python-Projekte verwenden zunehmend`pyproject.toml`mit Tools wie `uv`,`poetry`oder
 ### Asynchrone Programmierung
-Pythons`asyncio`ermöglicht gleichzeitige E/A ohne Threads – wichtig für Web Scraper, Chat-Server und API-Clients:
+`asyncio` von Python ermöglicht gleichzeitige E/A ohne Threads – wichtig für Web Scraper, Chat-Server und API-Clients:
 ```python
 import asyncio
 import aiohttp
@@ -817,7 +818,7 @@ jobs:
 
 ## Testen
 ### Testen von Frameworks und Setup
-Das Testökosystem von Python konzentriert sich auf`pytest`, den De-facto-Standard für Python-Tests.
+Das Testökosystem von Python dreht sich um`pytest`, den De-facto-Standard für Python-Tests.
 ```bash
 # Install testing tools
 pip install pytest pytest-cov pytest-mock pytest-asyncio
@@ -1330,12 +1331,12 @@ Die Sprache entwickelt sich weiter. Wichtige Neuzugänge:
 | 3.10 | 2021 | Struktureller Mustervergleich (`match/case`), bessere Fehlermeldungen |
 | 3.11 | 2022 | 10–60 % schnellere Ausführung, verbesserte Rückverfolgungen |
 | 3.12 | 2023 | Flexiblere F-Strings, `type`-Anweisung, Leistungssteigerungen |
-| 3.13 | 2024 | Experimenteller Free-Thread-Modus (keine GIL), verbesserte REPL |
+| 3.13 | 2024 | Experimenteller Free-Threaded-Modus (keine GIL), verbesserte REPL |
 | 3.14 | 2025 | Weitere No-GIL-Verbesserungen, Typsystemerweiterungen |
 Python 2 hat am 1. Januar 2020 das Ende seiner Lebensdauer erreicht. Alle neuen Projekte sollten Python 3.10 oder höher verwenden.
 ---
 
-## Kurzreferenz: Häufige Redewendungen
+## Kurzreferenz: Gängige Redewendungen
 ```python
 # Unpacking
 first, *rest = [1, 2, 3, 4, 5]     # first=1, rest=[2,3,4,5]
@@ -1379,5 +1380,288 @@ def slow_function():
 
 ---
 
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen Listen und Tupeln und wann sollte ich sie jeweils verwenden?
+**A:** Listen sind veränderbar (`[]`), Tupel sind unveränderlich (`()`). Verwenden Sie Listen, wenn Sie Elemente hinzufügen, entfernen oder ändern müssen. Verwenden Sie Tupel für feste Sammlungen heterogener Daten, Wörterbuchschlüssel, Funktionsrückgabewerte oder wenn Sie signalisieren möchten, dass sich dies nicht ändern soll. Tupel sind etwas speichereffizienter und können als Set/Dict-Schlüssel verwendet werden; Listen können nicht.
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### F2: Wie wirkt sich die Global Interpreter Lock (GIL) auf meinen Code aus und was sollte ich dagegen tun?
+**A:** Die GIL verhindert, dass mehrere Threads gleichzeitig Python-Bytecode ausführen, wodurch Threading für CPU-gebundene Arbeit unwirksam wird. Für E/A-gebundene Aufgaben (Netzwerkanforderungen, Datei-E/A) funktionieren`threading`oder`asyncio`einwandfrei, da die GIL während der E/A freigegeben wird. Für CPU-gebundene Aufgaben verwenden Sie`multiprocessing`(separate Prozesse, jeder mit seiner eigenen GIL) oder laden Sie auf C-Erweiterungen (NumPy, Cython, Numba) um, die die GIL intern freigeben.
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### F3: Sollte ich überall Typhinweise verwenden? Was sind die praktischen Kompromisse?
+**A:** Typhinweise (`def greet(name: str) -> str:`) sind optional und werden zur Laufzeit nicht erzwungen. Sie verbessern die automatische Vervollständigung der IDE, erkennen Fehler über statische Analysetools (mypy) und dokumentieren Absichten. Der Kompromiss ist eine zusätzliche Ausführlichkeit und eine Lernkurve für fortgeschrittene Typen (`Union`,`Generic`,`Protocol`). Empfehlung: Verwenden Sie Typhinweise für Funktionssignaturen in jedem Projekt mit mehr als ~500 Zeilen; Verwenden Sie sie in kurzen Skripten sparsam. Aktivieren Sie mypy in CI für eine schrittweise Durchsetzung.
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### F4: Was sind die Best Practices für die Behandlung von Ausnahmen in Python?
+**A:** Fangen Sie bestimmte Ausnahmen ab, anstatt nur`except:`(wodurch auch`SystemExit`und`KeyboardInterrupt`abgefangen werden). Verwenden Sie `try/except/else/finally`, um die Happy-Path-Logik von der Fehlerbehandlung zu trennen. Definieren Sie benutzerdefinierte Ausnahmehierarchien für Bibliotheken. Verwenden Sie niemals Ausnahmen für den Kontrollfluss in leistungsempfindlichem Code – sie sind langsam. Protokollieren Sie die Ausnahme mit `logging.exception()`, um den vollständigen Traceback zu erfassen.
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### F5: Wie sparen Generatoren Speicher und wann sollte ich sie über Listen verwenden?
+**A:** Generatoren erzeugen Werte träge – einen nach dem anderen, bei Bedarf –, anstatt eine ganze Liste im Speicher zu erstellen. Für große Datensätze (Millionen Zeilen, unendliche Sequenzen, Streaming-Daten) verwenden Generatoren unabhängig von der Größe konstanten Speicher. Verwenden Sie Generatoren, wenn Sie einmal iterieren und keine Indizierung oder`len()`benötigen. Verwenden Sie Listen, wenn Sie Direktzugriff oder mehrere Iterationen benötigen oder die Sammlung klein ist.
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Erstellen Sie einen Worthäufigkeitszähler mit Ranking
+**Problemstellung:** Zählen Sie bei einer gegebenen großen Textdatei die Häufigkeit jedes Wortes, ordnen Sie sie nach Häufigkeit (absteigend) und geben Sie die ersten N Ergebnisse zurück. Behandeln Sie Groß- und Kleinschreibung und Zeichensetzung und verarbeiten Sie effizient Dateien, die zu groß sind, um in den Speicher zu passen.
+**Schritt 1 – Das Problem verstehen:**
+Wir müssen: (1) Text lesen, (2) in Wörter aufteilen, (3) die Groß-/Kleinschreibung normalisieren, (4) Interpunktion entfernen, (5) Vorkommen zählen, (6) nach absteigender Anzahl sortieren, (7) das obere N zurückgeben. Die Einschränkung „Zu groß, um in den Speicher zu passen“ bedeutet, dass wir Zeile für Zeile mit Generatoren verarbeiten sollten.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Verwenden Sie`re.finditer`für eine effiziente Wortextraktion, ohne Zwischenlisten zu erstellen.
+- Verwenden Sie`collections.Counter`für O(1)-Inkremente pro Wort.
+- Verwenden Sie `Counter.most_common(n)`, das intern einen Heap verwendet – O(k log n) anstelle von O(n log n) für die vollständige Sortierung.
+- Zeile für Zeile über den Generator verarbeiten, um den Speicher konstant zu halten.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Speicher: Nur das Counter-Dikt ist im Speicher (ein Eintrag pro eindeutigem Wort), nicht der Dateiinhalt. Für englischen Text: ~100.000 eindeutige Wörter ≈ ein paar MB.
+- Zeit: O(W) zum Scannen aller Wörter + O(U log N) für die Top-N-Extraktion, wobei W = Gesamtzahl der Wörter, U = eindeutige Wörter.
+- Randfälle: Apostrophe in Kontraktionen („nicht“) werden durch die Regex beibehalten. Für Unicode-Text wäre das Flag`re.UNICODE`oder ein anderes Muster erforderlich.
+### Problem 2: Implementieren Sie einen Thread-sicheren LRU-Cache
+**Problemstellung:** Erstellen Sie von Grund auf einen LRU-Cache (Least Recent Used), der Thread-sicher ist, O(1)-Get- und Put-Vorgänge unterstützt und automatisch das zuletzt verwendete Element entfernt, wenn die Kapazität überschritten wird.
+**Schritt 1 – Das Problem verstehen:**
+Ein LRU-Cache benötigt: (1) schnelle Suche nach Schlüssel → Hash-Map, (2) schnelle Sortierung nach Aktualität → doppelt verknüpfte Liste, (3) Thread-Sicherheit → Sperren. Bei `get(key)`: Element nach vorne verschieben. Bei `put(key, val)`: vorne einfügen; Wenn die Kapazität zu hoch ist, nehmen Sie sie von der Rückseite ab.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+– Pythons
+- Verwenden Sie aus Gründen der Thread-Sicherheit`threading.Lock`für den gegenseitigen Ausschluss.
+- Alternative: Verwenden Sie`collections.OrderedDict`mit`move_to_end()`.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Zeitkomplexität: O(1) für`get`und`put`–`OrderedDict.move_to_end()`und`popitem()`sind O(1).
+- Thread-Sicherheit: Der`Lock`sorgt für Atomizität. Für einen höheren Durchsatz sollten Sie`threading.RLock`oder ein Lese-/Schreibsperrmuster in Betracht ziehen, aber für die meisten Anwendungsfälle reicht eine einfache Sperre aus.
+- Produktionshinweis: Für Single-Threaded-Code ist`functools.lru_cache`einfacher und für eine bessere Leistung in C implementiert.
+### Problem 3: Einen mathematischen Ausdruck analysieren und auswerten
+**Problemstellung:** Schreiben Sie einen Parser, der eine Zeichenfolge wie`"3 + 4 * 2 / (1 - 5)"`nimmt und sie unter Berücksichtigung der Operatorpriorität und Klammern korrekt auswertet.
+**Schritt 1 – Das Problem verstehen:**
+Dies erfordert: (1) Tokenisieren der Eingabezeichenfolge in Zahlen, Operatoren und Klammern, (2) Parsen mit korrekter Rangfolge (`*` und`/`vor`+`und `-`), (3) Umgang mit verschachtelten Klammern. Eine naive Links-nach-rechts-Bewertung würde zu falschen Ergebnissen führen.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+Die klassische Lösung ist der **Rangierbahnhof-Algorithmus** (Dijkstra), der Infix in Postfix (umgekehrte polnische Notation) umwandelt und dann das Postfix auswertet. Alternativ können Sie einen rekursiven Abstiegsparser verwenden. Speziell für Python können wir zur sicheren Auswertung auch`ast.literal_eval`verwenden – aber lassen Sie es uns richtig implementieren.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Korrektheit:`3 + 4 * 2 / (1 - 5)`→`3 + 8 / (-4)`→`3 + (-2)`→`1.0`. Richtig.
+- Zeit: O(N) für die Tokenisierung, O(N) für den Rangierbahnhof, O(N) für die Auswertung – insgesamt O(N).
+- Zu behandelnde Randfälle: negative Zahlen (stellen Sie`0`vor unärem`-`voran), Division durch Null (Fehlerbehandlung hinzufügen), ungültige Eingabe (Token validieren).
+– Pythonische Alternative:`ast.parse(expr, mode='eval')`mit einem benutzerdefinierten Knotenbesucher für eine sichere Auswertung ohne`eval()`.
+### Problem 4: Erstellen Sie ein CLI-Dashboard mit Echtzeit-Datenaktualisierungen
+**Problemstellung:** Erstellen Sie ein terminalbasiertes Dashboard, das die Aktualisierung der Systemmetriken (CPU, Speicher, Festplatte) in Echtzeit mit farbcodierten Schwellenwerten und reaktionsfähigem Layout anzeigt.
+**Schritt 1 – Das Problem verstehen:**
+Wir benötigen: (1) periodische Erfassung von Systemmetriken, (2) Terminal-Rendering mit Cursorsteuerung, (3) Farbausgabe basierend auf Schwellenwerten, (4) nicht blockierende Tastatureingabe zum Beenden. Dies ist ein Producer-Consumer-Muster mit einer Rendering-Schleife.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Verwenden Sie`psutil`für plattformübergreifende Systemmetriken.
+- Verwenden Sie ANSI-Escape-Codes für die Cursorpositionierung und Farben (oder die `rich`-Bibliothek für eine API auf höherer Ebene).
+- Verwenden Sie`time.sleep`für das Aktualisierungsintervall.
+- Struktur als: Datenerfassung → Formatierung → Rendering-Pipeline.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Der`cpu_percent(interval=0.5)`blockiert die Messung für 0,5 Sekunden – dies ist der richtige Ansatz (der nicht blockierende Modus ergibt 0 % beim ersten Aufruf).
+- ANSI-Codes funktionieren auf modernen Windows-Terminals und allen Unix-Terminals. Fügen Sie für ältere Windows-Befehle`os.system('color')`hinzu oder verwenden Sie`colorama`.
+- Produktions-Upgrade: Verwenden Sie die `rich`-Bibliothek (`rich.live`) für flimmerfreies Rendering, automatisches Layout und plattformübergreifende Kompatibilität.
+- Erweiterbarkeit: Jede Metrik ist eine unabhängige Funktion, sodass GPU-Temperatur, Prozessanzahl oder Netzwerkverbindungen problemlos hinzugefügt werden können.
+---
+
 ## Zusammenfassung
-Die Kombination aus Lesbarkeit, Vielseitigkeit und Ökosystemtiefe macht Python zur am häufigsten verwendeten Programmiersprache der Welt. Es ist die Standardwahl für KI/ML, eine starke Option für Web-Backends und Automatisierung und eine hervorragende Unterrichtssprache. Seine Hauptschwächen – Ausführungsgeschwindigkeit und mobile/eingebettete Unterstützung – sind allgemein bekannt und es gibt etablierte Problemumgehungen. Für die meisten Projekte ist Python ein sinnvoller Ausgangspunkt.
+Die Kombination aus Lesbarkeit, Vielseitigkeit und Ökosystemtiefe macht Python zur am häufigsten verwendeten Programmiersprache der Welt. Es ist die Standardwahl für KI/ML, eine starke Option für Web-Backends und Automatisierung und eine hervorragende Unterrichtssprache. Seine Hauptschwächen – Ausführungsgeschwindigkeit und mobile/eingebettete Unterstützung – sind gut bekannt und es gibt etablierte Problemumgehungen. Für die meisten Projekte ist Python ein sinnvoller Ausgangspunkt.

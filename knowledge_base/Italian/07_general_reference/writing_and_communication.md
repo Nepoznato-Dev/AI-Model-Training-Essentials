@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fondamenti di scrittura e comunicazione
-La scrittura e la comunicazione sono le capacità di trasmettere idee in modo chiaro ed efficace, tramite e-mail, report, documentazione, presentazioni o conversazioni. La maggior parte del lavoro di conoscenza è fondamentalmente lavoro di comunicazione: è necessario spiegare il proprio pensiero, persuadere gli altri, documentare le decisioni, scrivere specifiche, presentare risultati e collaborare tra i team. Il divario tra ciò che intendi e ciò che qualcuno capisce è l’origine della maggior parte dei problemi e una migliore comunicazione riduce tale divario.
+La scrittura e la comunicazione sono le capacità di trasmettere idee in modo efficace, tramite e-mail, rapporti, documentazione, presentazioni o conversazioni. La maggior parte del lavoro di conoscenza è fondamentalmente lavoro di comunicazione: i professionisti devono spiegare il proprio pensiero, persuadere gli altri, documentare le decisioni, scrivere specifiche, presentare risultati e collaborare tra i team. Il divario tra ciò che si intende e ciò che si comprende è l’origine della maggior parte dei problemi e una migliore comunicazione riduce tale divario.
 ---
 
 ## Principi di scrittura chiara
@@ -51,12 +52,12 @@ La scrittura e la comunicazione sono le capacità di trasmettere idee in modo ch
 | **Specificità** | Usa dettagli concreti, non un linguaggio vago | "I ricavi sono aumentati del 15% nel terzo trimestre" e non "I ricavi sono aumentati in modo significativo" |
 | **Voce attiva** | Il soggetto esegue l'azione | "Il team ha spedito la funzionalità" e non "La funzionalità è stata spedita" |
 | **Un'idea per frase** | Non sovraccaricare le frasi | Dividere frasi lunghe e complesse in frasi più brevi |
-| **Struttura parallela** | Utilizzare la stessa forma grammaticale per gli elementi di un elenco | "Correre, nuotare e andare in bicicletta" non "Correre, nuotare e andare in bicicletta" |
+| **Struttura parallela** | Utilizza la stessa forma grammaticale per gli elementi di un elenco | "Correre, nuotare e andare in bicicletta" non "Correre, nuotare e andare in bicicletta" |
 | **Consapevolezza del pubblico** | Scrivi per il tuo lettore, non per te stesso | Documenti tecnici per ingegneri; sintesi per dirigenti |
 ### Problemi comuni di scrittura
 | Problema | Descrizione | Correzione |
 |---------|-----|-----|
-| **Nominalizzazione** | Trasformare i verbi in sostantivi (attenua la prosa) | "Abbiamo deciso" non "Abbiamo preso una decisione" |
+| **Nominalizzazione** | Trasformare i verbi in sostantivi (attutisce la prosa) | "Abbiamo deciso" non "Abbiamo preso una decisione" |
 | **Copertura** | Indebolire inutilmente il tuo messaggio | "Questo suggerisce" → "Questo dimostra" (quando si hanno prove) |
 | **Sovraccarico di gergo** | Usare termini tecnici con lettori non tecnici | Spiegare i termini; utilizzare analogie |
 | **Parole da donnola** | Qualificatori vaghi che minano il significato | Rimuovere "molto", "abbastanza", "abbastanza", "discutibilmente" |
@@ -72,7 +73,7 @@ La scrittura e la comunicazione sono le capacità di trasmettere idee in modo ch
 | **Documentazione API** | Come utilizzare un'API | Sviluppatori | Endpoint; parametri; esempi; codici errore |
 | **Registro decisione architettura (ADR)** | Documentare il motivo per cui è stata presa una decisione | Futuri sviluppatori; stakeholder | Contesto; decisione; conseguenze |
 | **Runbook/playbook** | Procedure operative dettagliate | Squadra operativa | Comandi esatti; rendimento atteso; passaggi di rollback |
-| **RFC (richiesta di commenti)** | Proporre un cambiamento; sollecitare feedback | Squadra; stakeholder | Problema; proposta; alternative; compromessi |
+| **RFC (Richiesta di commenti)** | Proporre un cambiamento; sollecitare feedback | Squadra; stakeholder | Problema; proposta; alternative; compromessi |
 | **Post mortem** | Analizzare un incidente dopo la risoluzione | Squadra; gestione | Cronologia; causa ultima; elementi di azione |
 ### Scrittura aziendale
 | Digitare | Scopo | Caratteristica fondamentale |
@@ -88,7 +89,7 @@ La scrittura e la comunicazione sono le capacità di trasmettere idee in modo ch
 ### Il Principio della Piramide (Barbara Minto)
 | Livello | Descrizione |
 |-------|-------------|
-| **Conclusione/raccomandazione** | Inizia con la risposta |
+| **Conclusione / raccomandazione** | Inizia con la risposta |
 | **Argomenti chiave** | 3-4 ragioni a sostegno della conclusione |
 | **Prove a sostegno** | Dati, esempi, analisi per ogni argomento |
 **Perché funziona**: i lettori impegnati vogliono prima la risposta, poi il ragionamento. Se leggono solo il primo paragrafo, capiscono il punto principale.
@@ -164,4 +165,4 @@ La scrittura e la comunicazione sono le capacità di trasmettere idee in modo ch
 ---
 
 ## Riepilogo
-Scrivere e comunicare in modo chiaro non significa essere intelligenti, ma essere capiti. Inizia con il punto principale (principio della piramide). Usa voce attiva, linguaggio concreto e frasi brevi. Strutturare le informazioni in modo che il lettore possa trovare ciò di cui ha bisogno. La documentazione tecnica dovrebbe essere scansionabile e basata su esempi. La scrittura aziendale dovrebbe condurre alla raccomandazione. Le presentazioni dovrebbero raccontare una storia con un'idea per diapositiva. La persuasione combina logica (logos), emozione (pathos) e credibilità (ethos). La consapevolezza interculturale previene le incomprensioni nei team globali. L'abilità fondamentale è la consapevolezza del pubblico: sapere per chi stai scrivendo, cosa ha bisogno di sapere e quale formato lo aiuterà a capirlo. Ogni minuto investito in una comunicazione più chiara consente di risparmiare molto tempo riducendo la confusione, riducendo i malintesi e accelerando il processo decisionale.
+Una scrittura e una comunicazione chiare riguardano l'essere compresi. Inizia con il punto principale (principio della piramide). Usa voce attiva, linguaggio concreto e frasi brevi. Strutturare le informazioni in modo che il lettore possa trovare ciò di cui ha bisogno. La documentazione tecnica dovrebbe essere scansionabile e basata su esempi. La scrittura aziendale dovrebbe condurre alla raccomandazione. Le presentazioni dovrebbero presentare un'idea per diapositiva. La persuasione combina logica (logos), evidenza (pathos) e credibilità (ethos). La consapevolezza interculturale previene le incomprensioni nei team globali. L'abilità fondamentale è la consapevolezza del pubblico: sapere chi è il lettore, cosa ha bisogno di sapere e quale formato supporterà la sua comprensione. L’investimento in una comunicazione più chiara produce vantaggi in termini di minore confusione, meno malintesi e processo decisionale più rapido.

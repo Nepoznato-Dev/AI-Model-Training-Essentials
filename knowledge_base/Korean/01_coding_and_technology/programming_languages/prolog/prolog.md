@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 프롤로그
-Prolog(Programming in Logic)는 Alain Colmerauer와 Philippe Roussel이 1972년에 만든 논리 프로그래밍 언어입니다. 이 목록에 있는 다른 모든 언어와는 달리 Prolog는 문제를 해결하는 *방법*을 컴퓨터에 알려주지 않습니다. 즉, *무엇*이 사실인지(사실과 규칙) 선언하면 Prolog의 추론 엔진이 논리적 추론을 통해 답을 찾아냅니다.
+Prolog(Programming in Logic)는 Alain Colmerauer와 Philippe Roussel이 1972년에 만든 논리 프로그래밍 언어입니다. 이 목록에 있는 다른 모든 언어와 달리 Prolog는 문제를 해결하는 *방법*을 컴퓨터에 알려주지 않습니다. 즉, *무엇*이 사실인지(사실과 규칙) 선언하면 Prolog의 추론 엔진이 논리적 추론을 통해 답을 찾아냅니다.
 프롤로그는 1980년대 전문가 시스템, 자연어 처리, AI 연구를 위해 선택된 언어였습니다. 이는 일본의 5세대 컴퓨터 시스템 프로젝트를 지원했으며 IBM의 Watson에서 자연어 이해를 위해 사용되었습니다. 오늘날 프롤로그는 제약 조건 해결, 스케줄링, 유형 추론, 법적 추론 등 어디에서나 문제가 자연스럽게 논리적 관계로 표현되는 데 사용됩니다.
 **제약 논리 프로그래밍(CLP)**은 명령형 언어에서 매우 어려운 문제인 스케줄링, 라우팅 및 리소스 할당을 위한 제약 해결 프로그램을 사용하여 Prolog를 확장합니다.
 ---
@@ -57,7 +58,7 @@ Prolog(Programming in Logic)는 Alain Colmerauer와 Philippe Roussel이 1972년�
 | **매우 다른 패러다임** | 변수 없음(바인딩만), 루프 없음, 할당 없음 | 상태 변화가 아닌 관계와 재귀로 생각하기 |
 | **성능** | 수치 계산 및 대용량 데이터에는 느림 | 추론에 사용; C/다른 언어에 계산 위임 |
 | **디버깅 난이도** | 역추적 및 통합 실패를 추적하기 어려움 | 추적/디버그 도구를 사용하십시오. 결정론적 술어 작성 |
-| **절단 연산자(!)** | 효율성을 위해 필요하지만 논리적 순수성을 깨뜨립니다 | 가능하면 if-then-else 또는 테이블 평가를 사용하세요 |
+| **절단 연산자(!)** | 효율성을 위해 필요하지만 논리적 순수성을 깨뜨림 | 가능하면 if-then-else 또는 테이블 평가를 사용하세요 |
 | **제한된 생태계** | 라이브러리, 프레임워크 또는 커뮤니티 리소스가 거의 없음 | SWI-프롤로그는 가장 완벽한 구현입니다 |
 | **일반 앱에는 해당되지 않음** | 웹, 모바일, GUI — Prolog의 강점은 아님 | 웹 앱 뒤의 추론 엔진으로 사용 |
 ---
@@ -400,8 +401,8 @@ test(list_length) :-
 | 무한 재귀 | 스택 오버플로 | 기본 사례를 확인하세요. 종료 조건 추가 |
 | 솔루션 없음 | 쿼리가 false를 반환함 | 변수 인스턴스화 순서 확인 |
 | 솔루션이 너무 많습니다 | 예상치 못한 중복 | 컷(!)을 추가하거나`setof`|
-| 잘못된 통일 | 변수가 잘못 바인딩됨 | 테스트하려면 `=`을(를) 사용하세요. 펑터 특성 확인 |
-| 성능 문제 | 느린 실행 | 컷을 추가하세요.`table`사용; 선택 포인트 확인 |
+| 잘못된 통일 | 변수가 잘못 바인딩됨 | 테스트하려면 `=`를 사용하세요. 펑터 특성 확인 |
+| 성능 문제 | 느린 실행 | 컷을 추가하세요. `table`를 사용하세요. 선택 포인트 확인 |
 ---
 
 ## 상호 운용성
@@ -493,7 +494,7 @@ factorial_acc(N, Acc, F) :-
 |------------|---------|-------------|
 | **꼬리 재귀** | 높음 | 일정한 스택 공간을 위해 누산기 사용 |
 | **컷(녹색)** | 높음 | 불필요한 선택 포인트 제거 |
-| **표화된 평가** | 높음 | `:- table pred/N`결과를 메모합니다 |
+| **표화된 평가** | 높음 |  `:- table pred/N`는 결과를 메모합니다 |
 | **인덱싱** | 중간 | 차별적인 주장을 먼저 하라 |
 | **차이점 목록** | 중간 | O(1) 목록 연결 |
 | **생성 테스트를 통한 CLP(FD)** | 매우 높음 | 무차별 대입 대신 제약 조건 사용 |
@@ -538,6 +539,129 @@ swipl -g main -o myapp.sav -c main.pl
 | 범용 프로그래밍 | 가능하지만 어색함 | 파이썬, 바둑, 자바 |
 ---
 
+## 종합 Q&A
+### Q1: 프롤로그의 통일은 다른 언어의 과제와 어떻게 다른가요?
+**A:** 통합은 할당이 아닌 양방향 패턴 일치입니다.
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2: Prolog에서 역추적은 어떻게 작동하나요?
+**답:** 목표가 실패하면 Prolog는 마지막 선택 지점으로 돌아가서 다음 대안을 시도합니다.
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3: Prolog에서 목록 작업은 어떻게 합니까?
+**A:** 목록은 머리/꼬리 패턴 일치를 사용합니다.
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4: 언제 다른 언어 대신 Prolog를 사용해야 합니까?
+**답:** Prolog의 장점:
+- 제약조건 만족(스케줄링, 퍼즐)
+- 규칙 기반 시스템(전문가 시스템, 검증)
+- 그래프/트리 순회
+- 자연어 처리
+- 기호계산
+- 논리적 관계로 표현 가능한 모든 문제
+### Q5: Prolog의 일반적인 함정은 무엇입니까?
+**답:** 주요 문제:
+- 무한 재귀 - 항상 기본 사례를 먼저 배치합니다.
+- 의도하지 않은 역추적 - cut`!`또는 `once/1`를 사용하세요. 
+- 발생 확인 — 기본적으로`X = f(X)`루프(`unify_with_occurs_check`사용)
+- 녹색 컷(최적화) vs 빨간색 컷(의미 변경) — 녹색 선호
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: N-Queens 퍼즐 풀기
+**1단계: 문제 이해**
+NxN 체스판에 N개의 퀸을 배치하여 두 퀸이 서로 공격하지 않도록 하세요.
+**2단계: 접근 방식 파악**
+제약 기반 생성 사용: 퀸을 열별로 배치하고 안전성을 확인합니다.
+**3단계: 구현**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**4단계: 확인**
+ `?- n_queens(8, Qs).`는 92개의 솔루션을 찾아야 합니다.
+### 문제 2: 간단한 전문가 시스템 구축
+**1단계: 문제 이해**
+증상에 따라 자동차 문제를 진단합니다.
+**2단계: 접근 방식 파악**
+Prolog 규칙을 사용하여 진단 지식을 인코딩합니다.
+**3단계: 구현**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**4단계: 확장**
+신뢰도 점수를 추가하고, 사용자에게 대화형으로 증상을 요청하고, 연쇄 진단을 수행하세요.
+---
+
 ## 요약
 프롤로그는 다른 프로그래밍 언어와 다릅니다. 단계별 지침을 작성하는 대신 관계와 제약 조건을 설명하면 엔진이 논리적 추론을 통해 솔루션을 검색합니다. 따라서 Prolog는 전문가 시스템, 스케줄링, 문법 구문 분석, 제약 조건 충족 및 논리적 규칙과 관련된 모든 것 등 명령형 언어에서 어색하거나 장황한 문제에 이상적입니다. 대부분의 프로그래머는 프로덕션에서 Prolog를 절대 사용하지 않지만 Prolog를 배우면 프로그래밍이 무엇인지에 대한 생각이 넓어집니다. 통합, 역추적 및 선언적 문제 사양은 언어 설계, AI 연구, 심지어 데이터베이스 쿼리 최적화에도 영향을 미치는 개념입니다.
 ### 프롤로그 엔진 비교
@@ -551,7 +675,7 @@ swipl -g main -o myapp.sav -c main.pl
 | **FFI(C 통화)** | 예 | 예 | 자바스크립트를 통해 |
 | **네트워킹** | HTTP, TCP, TLS | TCP | 자바스크립트를 통해 |
 | **멀티스레딩** | 예 | 아니요 | 아니요 |
-| **패키지 관리자** |  __보호됨_0__ | 없음 | npm |
+| **패키지 관리자** | `pack_install/1`| 없음 | npm |
 | **최고의 대상** | 생산, 연구 | 제약조건 해결 | 웹 앱, 교육 |
 ### Pengine을 사용한 웹 애플리케이션
 ```prolog

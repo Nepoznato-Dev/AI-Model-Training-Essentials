@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 어셈블리 언어
-어셈블리 언어는 사람이 읽을 수 있는 가장 낮은 수준의 프로그래밍 언어입니다. 원시 바이너리 대신 니모닉 코드(예:`MOV`,`ADD`,`JMP`)를 사용하여 컴퓨터의 기계어 명령을 직접 표현합니다. 각 어셈블리 언어는 특정 프로세서 아키텍처(x86, ARM, MIPS, RISC-V)에 따라 다릅니다. 한 아키텍처용으로 작성된 코드는 다른 아키텍처에서 실행되지 않습니다.
+어셈블리 언어는 사람이 읽을 수 있는 가장 낮은 수준의 프로그래밍 언어입니다. 원시 바이너리 대신 니모닉 코드(예:`MOV`,`ADD`,`JMP`)를 사용하여 컴퓨터의 기계어 명령어를 직접 표현합니다. 각 어셈블리 언어는 특정 프로세서 아키텍처(x86, ARM, MIPS, RISC-V)에 따라 다릅니다. 한 아키텍처용으로 작성된 코드는 다른 아키텍처에서 실행되지 않습니다.
 어셈블리 언어는 애플리케이션 구축에 사용되지 않습니다. 운영 체제 커널, 장치 드라이버, 부트로더, 임베디드 펌웨어 작성, 성능에 중요한 코드 섹션, 리버스 엔지니어링, 컴퓨터가 실제로 명령을 실행하는 방법 이해 등 하드웨어에 대한 절대적인 제어가 필요할 때 사용됩니다.
 ---
 
@@ -112,13 +113,13 @@ _start:
 효율적인 어셈블리를 작성하려면 주소 지정 모드를 이해하는 것이 중요합니다. 각 모드는 피연산자의 위치를 ​​제어합니다.
 | 모드 | 구문(NASM) | 설명 |
 |------|---------------|-------------|
-| **즉시** |  __보호됨_0__ | 피연산자는 상수 값입니다 |
-| **등록** |  __보호됨_1__ | 피연산자가 레지스터에 있습니다 |
-| **직접** |  __보호됨_2__ | 피연산자가 고정된 메모리 주소에 있습니다 |
-| **간접등록** |  __보호됨_3__ | 피연산자는 레지스터의 주소에 있습니다 |
-| **베이스 + 변위** |  __보호됨_4__ | 주소 = 레지스터 + 상수 오프셋 |
-| **조정된 인덱스** |  __보호됨_5__ | 주소 = 기본 + (인덱스 × 스케일) |
-| **전체 SIB** |  __보호_6__ | 베이스 + (인덱스 × 스케일) + 변위 |
+| **즉시** | `mov eax, 42`| 피연산자는 상수 값입니다 |
+| **등록** | `mov eax, ebx`| 피연산자가 레지스터에 있습니다 |
+| **직접** | `mov eax, [0x4000]`| 피연산자가 고정된 메모리 주소에 있습니다 |
+| **간접등록** | `mov eax, [rbx]`| 피연산자는 레지스터의 주소에 있습니다 |
+| **베이스 + 변위** | `mov eax, [rbx + 8]`| 주소 = 레지스터 + 상수 오프셋 |
+| **조정된 인덱스** | `mov eax, [rbx + rcx*4]`| 주소 = 기본 + (인덱스 × 스케일) |
+| **전체 SIB** | `mov eax, [rbx + rcx*4 + 16]`| 베이스 + (인덱스 × 스케일) + 변위 |
 ```nasm
 ; Demonstrating various addressing modes
 section .data
@@ -263,7 +264,7 @@ Address
 ```
 
 ### 프로그램 구조 규칙
-잘 조직된 조립 프로그램은 우려사항을 다음과 같은 별개의 섹션으로 분리합니다.
+잘 조직된 조립 프로그램은 문제를 별개의 섹션으로 분리합니다.
 ```nasm
 ; ============================================================
 ; Program: example.asm
@@ -486,7 +487,7 @@ gdb ./program
 | 무한 루프 | 프로그램 중단 | 루프에 중단점을 설정합니다. 상태 플래그 확인 |
 | 잘못된 결과 | 잘못된 계산 | 산술을 단계별로 진행하세요. 각 작업 후 레지스터 값 확인 |
 | 스택 손상 | RET 충돌 | PUSH/POP 잔액을 확인하세요. RSP 정렬 확인(16바이트로 정렬되어야 함) |
-| 잘못된 시스템 호출 | 예상치 못한 커널 동작 | RAX에서 시스템콜 번호를 확인하십시오. 인수 레지스터 확인 |
+| 잘못된 시스템콜 | 예상치 못한 커널 동작 | RAX에서 시스템콜 번호를 확인하십시오. 인수 레지스터 확인 |
 ---
 
 ## 상호 운용성
@@ -680,7 +681,7 @@ mov     [mem4], edx
 | **사용등록** | 높음 | 핫 변수를 레지스터에 보관하십시오. 메모리 액세스 방지 |
 | **루프 풀기** | 중간 | 반복당 여러 항목을 처리하여 루프 오버헤드 감소 |
 | **SIMD(SSE/AVX)** | 매우 높음 | 벡터 명령으로 4~16개의 값을 동시에 처리 |
-| **가지 제거** | 중간 | 가능한 경우 조건부 점프 대신 CMOV를 사용하십시오. |
+| **가지 제거** | 중간 | 가능한 경우 조건부 점프 대신 CMOV를 사용하세요 |
 | **캐시 정렬** | 중간 | 핫 루프를 16/32바이트 경계에 정렬 |
 | **메모리 액세스 패턴** | 높음 | 순차적 접근; 캐시 라인 분할 방지 |
 ---
@@ -709,7 +710,7 @@ file program
 | **암호화** | AES-NI, SHA 명령 가속 | 하드웨어 가속 암호화 작업 |
 | **장치 드라이버** | GPU 드라이버, 네트워크 카드 펌웨어 | 직접 레지스터 수준 하드웨어 액세스 |
 ### 레거시 시스템 통합
-많은 레거시 시스템에는 C 코드베이스에 내장된 어셈블리 루틴이 포함되어 있습니다. 이는 일반적으로 수십 년 동안 유지되어 온 성능이 중요한 기능 또는 하드웨어 관련 루틴입니다.
+많은 레거시 시스템에는 C 코드베이스에 내장된 어셈블리 루틴이 포함되어 있습니다. 이는 일반적으로 수십 년 동안 유지되어온 성능이 중요한 기능 또는 하드웨어 관련 루틴입니다.
 ```c
 // Legacy pattern: C code calling an assembly-optimized function
 extern void fast_memcpy(void* dest, const void* src, size_t n);
@@ -733,6 +734,85 @@ void process_data(void) {
 | 임베디드 펌웨어(베어메탈) | 더 높은 수준의 언어를 사용할 수 없습니다 | C, 러스트 |
 | 교육 | 컴퓨터 아키텍처 이해 | — |
 | 일반 애플리케이션 개발 | 복잡한 프로그램에는 실용적이지 않음 | 모든 고급 언어 |
+---
+
+## 종합 Q&A
+### Q1: RISC와 CISC 어셈블리의 차이점은 무엇인가요?
+**답:** CISC(x86)에는 복잡한 가변 길이 명령어가 있습니다. RISC(ARM)에는 간단한 고정 길이 명령어가 있습니다.
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2: 어셈블리에서 스택은 어떻게 작동합니까?
+**답:** 스택은 아래쪽으로 늘어납니다.  `push`는 SP를 감소시키고 저장합니다.  `pop`는 SP를 로드하고 증가시킵니다.
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3: 어셈블리에서 함수를 어떻게 호출합니까?
+**A:** 호출 규칙을 따르십시오(Linux의 경우 System V AMD64, Windows의 경우 Windows x64).
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: 알아야 할 가장 중요한 조립 지침은 무엇입니까?
+**A:** 데이터 이동, 산술, 제어 흐름 및 스택 작업이 핵심을 형성합니다.
+### Q5: 보안 연구에서 어셈블리는 어떻게 사용되나요?
+**A:** 리버스 엔지니어링, 익스플로잇 개발, 맬웨어 분석 및 컴파일러 출력 이해에는 모두 어셈블리 활용 능력이 필요합니다.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 어셈블리에서 루프 구현
+**1단계: 문제 이해**
+1부터 N까지의 정수를 더합니다.
+**2단계: 접근 방식 파악**
+카운터 레지스터와 누산기를 사용하십시오.
+**3단계: 구현**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**4단계: 최적화**
+O(N) 대신 O(1)에 대한 공식 N*(N+1)/2를 사용합니다.
 ---
 
 ## 요약

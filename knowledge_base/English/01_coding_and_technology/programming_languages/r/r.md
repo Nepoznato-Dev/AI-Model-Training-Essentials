@@ -651,6 +651,207 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between `<-` and `=` for assignment?
+
+**A:** Both assign values, but `<-` is the idiomatic R assignment operator. It works in all contexts, including inside function calls:
+
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: How do I handle missing data in R?
+
+**A:** R uses `NA` for missing values. Most functions have a `na.rm` parameter:
+
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3: When should I use `lapply` vs `sapply` vs `vapply`?
+
+**A:** All apply a function over a list/vector, but differ in output:
+
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: How do I create effective visualizations with ggplot2?
+
+**A:** Follow the grammar of graphics — map data aesthetics to visual properties:
+
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5: How do I write efficient R code for large datasets?
+
+**A:** Key practices:
+- Pre-allocate vectors: `x <- numeric(n)` instead of growing with `c()`
+- Use `data.table` for large datasets (100x faster than data.frame)
+- Vectorize operations — avoid loops where possible
+- Use `vapply` over `sapply` for type safety
+- Profile with `Rprof()` or `profvis`
+- Consider `arrow` package for out-of-core data
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Cleaning and Analyzing a Messy Dataset
+
+**Step 1: Understand the Problem**
+We have a data frame with missing values, inconsistent types, and outliers. We need to clean it and compute summary statistics.
+
+**Step 2: Identify the Approach**
+Use tidyverse verbs: `filter`, `mutate`, `summarize`, and `group_by`.
+
+**Step 3: Implement**
+```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Step 4: Verify**
+Check row counts before/after, validate ranges, and cross-check totals against source data.
+
+### Problem 2: Building a Linear Regression Model
+
+**Step 1: Understand the Problem**
+Predict a continuous outcome variable from multiple predictors.
+
+**Step 2: Identify the Approach**
+Use `lm()` for linear regression, check assumptions, and evaluate model fit.
+
+**Step 3: Implement**
+```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Step 4: Evaluate**
+Check R-squared, residual plots for patterns, and AIC for model comparison.
+
+### Problem 3: Creating a Reproducible Report
+
+**Step 1: Understand the Problem**
+Create a report that combines analysis, visualizations, and narrative text in a reproducible format.
+
+**Step 2: Identify the Approach**
+Use R Markdown (or Quarto) to interleave code chunks with text.
+
+**Step 3: Implement**
+```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+library(tidyverse)
+data <- read_csv("data.csv")
+```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()
+```
+```
+
+**Step 4: Render**
+`rmarkdown::render("report.Rmd")` produces a self-contained HTML document.
+
+---
+
 ## Summary
 
 R is the language of statistics. For data analysis, visualisation, and statistical modelling, it remains unmatched in depth and breadth. The tidyverse has modernised the language, and R Markdown/Quarto make reproducible research straightforward. While Python has gained ground in data science generally, R remains the specialist's tool for rigorous statistical work. For anyone doing quantitative research, learning R is essential.

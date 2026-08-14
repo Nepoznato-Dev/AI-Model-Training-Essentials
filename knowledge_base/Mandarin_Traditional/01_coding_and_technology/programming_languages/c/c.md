@@ -41,14 +41,14 @@ contribution:
 
 #C
 C 是一種通用的過程式設計語言，由丹尼斯·里奇 (Dennis Ritchie) 在 1969 年至 1973 年間在貝爾實驗室創建。它旨在實現 Unix 作業系統，並且在 50 多年後仍然是使用最廣泛的程式語言之一。 C 提供低階記憶體存取、最小標準庫以及到機器指令的清晰映射——使其成為建立大多數現代運算的基礎。
-C 是作業系統（Linux、Windows 核心、macOS）、嵌入式系統、資料庫引擎（SQLite、PostgreSQL）、編譯器（Python 的 CPython、Ruby 的 MRI）以及幾乎所有其他程式語言執行時期背後的語言。理解 C 就是理解電腦實際上是如何運作的。
+C 是作業系統（Linux、Windows 核心、macOS）、嵌入式系統、資料庫引擎（SQLite、PostgreSQL）、編譯器（Python 的 CPython、Ruby 的 MRI）以及幾乎所有其他程式語言執行時期背後的語言。理解 C 就是理解计算机实际上是如何工作的。
 ---
 
 ## 為什麼 C 很重要
-- **接近硬件**：C 与机器代码紧密对应。没有垃圾收集器，没有运行时开销，没有隐藏分配。
-- **无处不在**：从微控制器到超级计算机，C 语言无处不在。
-- **计算基础**：Linux、Windows、macOS 内核、Python 解释器、SQLite、Git——全部用 C 编写。
-- **性能**：接近最佳的执行速度，完全控制内存布局。
+- **接近硬體**：C 與機器碼緊密對應。沒有垃圾收集器，沒有運行時開銷，沒有隱藏分配。
+- **無所不在**：從微控制器到超級計算機，C 語言無所不在。
+- **計算基礎**：Linux、Windows、macOS 核心、Python 解譯器、SQLite、Git－全部用 C 寫。
+- **效能**：接近最佳的執行速度，完全控制記憶體佈局。
 - **影響**：C 的語法和概念（指標、陣列、結構體、函數）塑造了 C++、Java、C#、JavaScript、Go、Rust 以及隨後的大多數語言。
 ## 權衡
 |限制|詳情 |典型解決方法|
@@ -56,8 +56,8 @@ C 是作業系統（Linux、Windows 核心、macOS）、嵌入式系統、資料
 | **手動記憶體管理** |沒有垃圾收集器－您自己分配和釋放記憶體|謹慎使用malloc/free; C++ 中的 RAII 模式 |
 | **緩衝區溢位** |數組上沒有邊界檢查－很容易寫入超過緩衝區結束的內容 |使用strncpy代替strcpy；啟用編譯器警告 |
 | **沒有內建的OOP** |僅限過程－無類別、繼承或方法 |使用結構體+函數指標；或切換到 C++ |
-| **標準函式庫有限** |最少的內建功能 |第三方函式庫或自己寫|
-| **未定義的行為** |許多錯誤編譯正常但崩潰不可預測使用消毒劑、靜電分析儀|
+| **標準函式庫有限** |最少的內建功能 |第三方函式庫或自行寫 |
+| **未定義的行為** |許多錯誤編譯正常但無法預料地崩潰 |使用消毒劑、靜電分析儀|
 ---
 
 ## 文法基礎知識
@@ -204,25 +204,25 @@ double average(int count, ...) {
 +---------------------+ Low addresses
 ```
 
-|地区 |那里有什么？終身|誰來管理？
+|地區 |那裡有什麼？終身|誰來管理？
 |--------------------|----------------|----------|----------------|
 | **堆疊** |局部變數、函數參數|直到函數返回 |編譯器（自動）|
 | **堆** | malloc/calloc 分配 |直到你呼叫 free() |你（手冊）|
-| **資料/BSS** |全域與靜態變數|整個程式生命週期 |編譯器（自動）|
-| **文字** |機器碼|整個程式生命週期 |唯讀|
+| **資料/BSS** |全域與靜態變數|整個程式生命週期|編譯器（自動）|
+| **文字** |機器碼|整個程式生命週期|唯讀 |
 ---
 
 ## 標準庫
-|標題 |目的|常用功能|
+|標題|目的|常用功能|
 |--------|---------|-----------------|
-|`<stdio.h>`|輸入/輸出| printf、scanf、fopen、fgets、fprintf | printf、scanf、fopen、fgets、fprintf |
-|`<stdlib.h>`|一般公用事業| malloc、自由、退出、atoi、rand、qsort |
-|`<string.h>`|字串作業 | strlen、strcpy、strncpy、strcmp、memcpy |
-|`<math.h>`|數學| sin、cos、sqrt、pow、fabs、ceil、floor |
-|`<ctype.h>`|人物分類| isalpha、isdigit、toupper、tolower | isalpha、isdigit、toupper、tolower |
-|`<time.h>`|日期與時間 |時間、時鐘、difftime、strftime |
-|`<assert.h>`|偵錯斷言|斷言（條件）|
-|`<errno.h>`|錯誤代碼 | errno、perror、strerror |
+| `<stdio.h>`|输入/输出 | printf、scanf、fopen、fgets、fprintf | printf、scanf、fopen、fgets、fprintf |
+| `<stdlib.h>`|一般公用事业| malloc、自由、退出、atoi、rand、qsort |
+| `<string.h>`|字符串操作| strlen、strcpy、strncpy、strcmp、memcpy |
+| `<math.h>`|数学| sin、cos、sqrt、pow、fabs、ceil、floor |
+| `<ctype.h>`|人物分类| isalpha、isdigit、toupper、tolower | isalpha、isdigit、toupper、tolower |
+| `<time.h>`|日期和时间 |时间、时钟、difftime、strftime |
+| `<assert.h>`|调试断言|断言（条件）|
+| `<errno.h>`|错误代码 | errno、perror、strerror |
 ---
 
 ## 進階語法和模式
@@ -831,7 +831,7 @@ make clean    # Removes build artifacts
 ---
 
 ## 何時使用 C
-|場景 |為什麼選擇 C |更好的選擇|
+|場景|為什麼選擇 C |更好的選擇|
 |----------|------|--------------------|
 |作業系統 |直接硬體訪問，無運行時開銷 | --|
 |嵌入式系統/微控制器|佔地面積最小，可在任何物體上運行 | Rust 用於安全關鍵型嵌入式 |
@@ -839,13 +839,13 @@ make clean    # Removes build artifacts
 |編譯器與解釋器|快速、便攜、易於理解 |用於大型編譯器專案的 C++ |
 |裝置驅動程式|大多數作業系統核心 API 都需要 | --|
 |效能關鍵庫 |接近最佳速度 | Rust 保證記憶體安全 |
-|通用應用開發|太多的體力勞動 | Python、Java、Go、C# |
+|通用應用開發 |太多的體力勞動 | Python、Java、Go、C# |
 |網頁開發|完全錯誤的工具| JavaScript、Go、Python |
 |資料科學/機器學習 |沒有適合這個的生態系統| Python、R、茱莉亞 |
 ---
 
 ## C 標準
-|標準|年份|關鍵補充|
+|标准|年份|关键补充|
 |----------|------|--------------|
 | C89/C90 | 1989/1990 |最初的 ANSI C——仍然是基線 |
 | C99 | C99 1999 | // 註解、bool 型別、變長數組、內聯、stdint.h |
@@ -853,6 +853,514 @@ make clean    # Removes build artifacts
 | C17 | C17 2018 |錯誤修復與澄清（無新功能）|
 | C23 | C23 2024 | 2024 nullptr、typeof、constexpr、改良的預處理器 |
 大多數生產代碼都以 C11 或 C17 為目標。 C23 帶來了現代便利，但採用需要時間。
+---
+
+## 綜合問答
+### Q1：C 中指標和陣列有什麼差別？
+**答：** 陣列和指標相關但又不同。數組是一個連續的記憶體區塊，具有編譯時已知的固定大小。指標是保存記憶體位址的變數。當傳遞給函數時，數組會衰減為指針，但`sizeof(array)`給出總大小，而`sizeof(pointer)`僅給出指針大小（4 或 8 位元組）。陣列名稱是不可修改的左值 - 您不能執行`arr++`。
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Q2：如何正確管理記憶體並避免洩漏？
+**A:** 每個`malloc`/`calloc`必須有一個對應的`free`。常見錯誤：忘記釋放（洩漏）、釋放兩次（未定義行為）、釋放後使用記憶體（釋放後使用）以及不檢查`malloc`回傳值（失敗時為 NULL）。最佳實務：在相同模組中分配和釋放，使用「goto cleanup」模式進行錯誤處理，並始終將釋放的指標設為 NULL。
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Q3：C 中錯誤處理的最佳實務是什麼？
+**A:** C 也不例外。錯誤處理使用傳回值（錯誤代碼、NULL 指標、負值）。標準模式：函數在失敗時傳回狀態碼或 NULL，並為系統呼叫設定 `errno`。使用“goto cleanup”模式來清除錯誤時的資源。請務必檢查`malloc`、`fopen`的回傳值以及其他可能失敗的函數。
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Q4：結構體、聯合體和位元域在記憶體佈局上有何不同？
+**A:** 結構按順序排列成員，並可能使用填充以進行對齊。聯合覆蓋同一記憶體位置的所有成員－大小等於最大成員。位域将多个值打包到一个整数中。結構用於異質數據，聯合用於類型雙關或僅在一個字段處於活動狀態時節省空間，而位元字段用於緊湊標誌存儲。
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Q5：什麼是函數指針，什麼時候應該使用它們？
+**A:** 函數指標儲存函數的位址並啟用回呼、多型性和外掛架構。它們是 C 處理高階函數的方法的基礎（例如`qsort`、`bsearch`）。使用語法聲明它們：`return_type (*name)(parameter_types)`。
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：實作動態陣列（向量）
+**問題陳述：** 在 C 中實作動態數組，在新增元素時會自動增長，支援 O(1) 攤銷追加，並提供適當的清理。这是 C++`std::vector`的 C 等效项。
+**第 1 步 — 了解問題：**
+動態數組需要：(1) 堆分配的緩衝區，(2) 追蹤大小（已使用的元素）和容量（分配的槽），(3) 當大小達到容量時重新分配，(4) 適當的記憶體清理。 2x 的成長因子提供 O(1) 攤銷追加。
+**第 2 步 — 確定方法：**
+- 使用`malloc`進行初步分配，使用`realloc`進行成長。
+- 將資料指標、大小和容量儲存在結構中。
+-`size == capacity`時容量加倍。
+- 提供`push`、`pop`、`get`、`set`和`free`操作。
+**第 3 步 — 實施解決方案：**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 攤銷 O(1) 推送：加倍意味著每個元素總共最多複製 O(log n) 次。
+-`vec_get`和`vec_pop`中的邊界檢查可以儘早捕獲錯誤 - 這在沒有運行時安全網的 C 語言中至關重要。
+- 記憶體：從容量4開始推入100次後，容量達到128（4→8→16→32→64→128）。
+- 生產：成長完成後使用 `shrink_to_fit`（重新分配到精確大小）以回收未使用的記憶體。
+### 問題 2：建立一個簡單的雜湊表
+**問題陳述：** 使用單獨的連結來實現具有字串鍵和整數值的雜湊表以解決衝突。支援插入、尋找、刪除操作。
+**第 1 步 — 了解問題：**
+哈希表透過哈希函數將鍵映射到數組索引。衝突（不同的鍵映射到相同的索引）透過單獨的連結來解決：每個儲存桶都是條目的連結列表。我們需要：雜湊函數、插入、尋找、刪除和清理。
+**第 2 步 — 確定方法：**
+- 使用 FNV-1a 雜湊來良好地指派字串鍵。
+- 桶指針數組（鍊錶頭）。
+- 負載係數追蹤；當負載因子超過閾值時調整大小。
+- 所有操作平均為 O(1)，最壞情況為 O(n)。
+**第 3 步 — 實施解決方案：**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 插入/尋找/刪除的平均 O(1)，具有良好的雜湊函數和合理的負載因子。
+- FNV-1a 以最少的計算提供出色的字串鍵分佈。
+-`hashmap_remove`中的指標到指標技術 (`Entry **pp`) 可以優雅地處理列表頭和中間列表刪除，無需特殊情況。
+- 生產：當負載因子超過閾值時添加重新哈希。使用開放尋址（線性探測）以獲得更好的快取效能。
+### 問題 3：為生產者-消費者實現環形緩衝區
+**問題陳述：** 用C實現一個無鎖的單生產者單消費者環形緩衝區，用於高性能線程間通信，而無需在運行過程中動態分配。
+**第 1 步 — 了解問題：**
+環形緩衝區（循環緩衝區）使用具有讀取和寫入索引的固定大小數組。當緩衝區已滿時，寫入器會阻塞或覆寫。對於SPSC（單一生產者單一消費者），我們可以使用原子操作而不是鎖來獲得最大吞吐量。
+**第 2 步 — 確定方法：**
+- 初始化時分配一次固定大小的陣列。
+- `head`（讀取位置）和 `tail`（寫入位置）作為原子索引。
+- 製作人推進`tail`；消費者進步`head`。
+-`head == tail`時緩衝區為空；當`(tail + 1) % capacity == head`已滿時。
+- 使用具有適當記憶體排序的 C11 原子。
+**第 3 步 — 實施解決方案：**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 無鎖：只有原子操作－沒有互斥體，沒有上下文切換。
+- 記憶體排序：寫入時`release`確保資料在索引更新之前可見；讀取時的`acquire`確保我們在讀取索引後看到資料。
+- 2 次方容量：啟用`& (capacity - 1)`而不是`% capacity`— 速度明顯更快。
+- 吞吐量：在現代硬體上每秒數十億次操作。
+- 生產：在`head`和`tail`之間添加填充，以防止錯誤共享（每個都在其自己的快取行上）。
 ---
 
 ＃＃ 概括

@@ -40,7 +40,7 @@ contribution:
 ---
 
 # ハスケル
-Haskell は、純粋に関数型で、静的に型付けされ、遅延評価されるプログラミング言語です。 Haskell は、1990 年に初めて標準化され (Haskell 90)、複数のバージョンを経て洗練されてきました (Haskell 2010 が現在の標準です)。Haskell は、その数学的厳密さ、強力な型システム (型クラス、モナド、代数データ型を含む)、および型による正確性の重視で知られています。
+Haskell は純粋に関数型で、静的に型付けされ、遅延評価されるプログラミング言語です。 Haskell は、1990 年に初めて標準化され (Haskell 90)、複数のバージョンを経て洗練されてきました (Haskell 2010 が現在の標準です)。Haskell は、その数学的厳密さ、強力な型システム (型クラス、モナド、代数データ型を含む)、および型による正確性の重視で知られています。
 Haskell は主流の言語ではありませんが、その影響力は非常に大きいです。モナド、遅延評価、型クラスなどの概念は、Rust、Swift、Kotlin、Scala、TypeScript に影響を与えました。 Haskell は、金融 (Standard Chartered、Barclays)、コンパイラー (GHC)、および形式検証で使用されています。
 ---
 
@@ -806,7 +806,7 @@ main = do
 ## パフォーマンスと最適化
 ### プロファイリングツール
 |ツール |目的 |コマンド |
-|------|-------|-----------|
+|------|--------|----------|
 | **GHC プロファイラー** |時間と割り当てのプロファイリング |  `stack build --profile`、次に`./app +RTS -p`|
 | **スレッドスコープ** |並列実行を視覚化する | `./app +RTS -l`を開き、`app.eventlog` |
 | **ghc イベント** |イベントログを分析する | `ghc-events show app.eventlog`|
@@ -940,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 |一般的なアプリケーション開発 |可能だがニッチ | Python、Go、Java |
 |ウェブ開発 |イェソド/サーヴァントは存在するが限定的 | JavaScript/TypeScript |
 |データサイエンス |エコシステムではありません |パイソン、R |
+---
+
+## 総合的な Q&A
+### Q1: Haskell の遅延評価はパフォーマンスにどのような影響を与えますか?
+**A:** 遅延評価とは、式が必要な場合にのみ計算されることを意味し、無限のデータ構造とコンポーザブル パイプラインが可能になります。ただし、サンクが蓄積するとスペース リークが発生する可能性があります。
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+数値フォールドには`foldl`の代わりに`foldl'`(`Data.List`から) を使用します。必要に応じて`!`bang パターンまたは`seq`を使用して評価を強制します。
+### Q2:`Functor`、`Applicative`、および`Monad`の実際的な違いは何ですか?
+**A:** 各型クラスには次の機能が追加されます。
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** は、コンテキスト上に純粋な関数をマップします。 **Applicative** は、それ自体がコンテキスト内にある関数を適用します。 **Monad** では、各ステップが前のステップの結果に依存します。実際には、単純な変換には`fmap`/`<$>`を使用し、効果の結合には`<*>`を、逐次依存計算には`>>=`/`do`を使用します。
+### Q3: 純粋な Haskell コードで副作用を処理するにはどうすればよいですか?
+**A:** 型システムを使用して、純粋なコードと効果的なコードを分離します。
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+コアロジックを純粋に保ち、エフェクトをエッジに押し出します。構成には `ReaderT`、エラーには `ExceptT`、可変状態には`StateT`を使用します。
+### Q4: 型クラスとは何ですか?また、OOP インターフェイスとの違いは何ですか?
+**A:** 型クラスは、型が実装できる動作を定義します。 OOP インターフェイスとは異なり、これらはオープンであり (任意の型をインスタンスにすることができます)、アドホック ポリモーフィズムをサポートします。
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5: 実際に使用するために Haskell プロジェクトを構築するにはどうすればよいですか?
+**A:** 標準レイアウトで Cabal または Stack を使用します。
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+主な実践方法: IO を`Main.hs`または専用の`IO`モジュールに保持し、コア ロジックを純粋でテスト可能にし、ドメイン タイプに`newtype`ラッパーを使用します。
+---
+
+## 思考連鎖による問題解決
+### 問題 1: エラー報告を伴う安全な除算関数の実装
+**ステップ 1: 問題を理解する**
+ゼロ除算を処理し、クラッシュだけでなく意味のあるエラーを報告する除算が必要です。
+**ステップ 2: アプローチを特定する**
+`Either` を使用して、エラー メッセージまたは結果を返します。これにより、タイプ内で失敗の可能性が明示されます。
+**ステップ 3: 実装**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**ステップ 4: 確認**
+型システムは、呼び出し元がエラーのケースを処理する必要があることを保証します。パターン マッチングまたは`either`は明示的な処理を強制します。
+### 問題 2: 単純な構成言語の解析
+**ステップ 1: 問題を理解する**
+`name=Alice\nage=30` のような文字列からキーと値のペアを解析します。
+**ステップ 2: アプローチを特定する**
+`Text.Parsec` または手動再帰を使用します。簡単にするために、`break`および`span`を使用します。
+**ステップ 3: 実装**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**ステップ 4: 延長**
+`Value` ADT を使用して、コメント処理 (`#`)、セクション ヘッダー (`[section]`)、および型強制を追加します。
+### 問題 3: 遅延を伴うメモ化されたフィボナッチの構築
+**ステップ 1: 問題を理解する**
+フィボナッチ数を効率的に計算します。単純再帰は指数関数的です。
+**ステップ 2: アプローチを特定する**
+Haskell の遅延評価を使用して、各要素が 1 回計算されてキャッシュされる無限リストを作成します。
+**ステップ 3: 実装**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**ステップ 4: 最適化**
+ランダム アクセスの場合は、遅延構築で`Data.Array`を使用します。非常に大きなインデックスの場合は、O(log n) で行列のべき乗を使用します。
+### 問題 4: 単純なステート マシンの実装
+**ステップ 1: 問題を理解する**
+赤 -> 緑 -> 黄 -> 赤に切り替わる信号機をモデル化します。
+**ステップ 2: アプローチを特定する**
+状態には代数データ型と純粋な遷移関数を使用します。
+**ステップ 3: 実装**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**ステップ 4: 確認**
+純粋な関数は簡単にテストできます。```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ＃＃ まとめ

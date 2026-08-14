@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Giriş
 Prolog (Mantıkta Programlama), 1972 yılında Alain Colmerauer ve Philippe Roussel tarafından oluşturulan bir mantıksal programlama dilidir. Bu listedeki diğer tüm dillerden farklı olarak Prolog, bilgisayara bir sorunu *nasıl* çözeceğini söylemez; siz *neyin* doğru olduğunu bildirirsiniz (gerçekler ve kurallar) ve Prolog'un çıkarım motoru, mantıksal çıkarım yoluyla cevabı bulur.
 Prolog, 1980'lerde uzman sistemler, doğal dil işleme ve yapay zeka araştırmaları için tercih edilen dildi. Japonya'nın Beşinci Nesil Bilgisayar Sistemi projesine güç verdi ve doğal dilin anlaşılması için IBM'in Watson'ında kullanıldı. Günümüzde Prolog, kısıtlama çözme, zamanlama, tür çıkarımı, yasal akıl yürütme ve sorunların doğal olarak mantıksal ilişkiler olarak ifade edildiği her yerde kullanılmaktadır.
@@ -50,7 +51,7 @@ Prolog, 1980'lerde uzman sistemler, doğal dil işleme ve yapay zeka araştırma
 - **Geriye dönük arama**: Olası tüm çözümleri otomatik olarak araştırır. Manuel arama algoritmalarına gerek yoktur.
 - **Mantık sorunları için doğaldır**: Uzman sistemler, kural motorları, tür denetleyicileri, dilbilgisi ayrıştırıcıları — bunlar doğrudan Prolog'a eşlenir.
 - **Kısıtlama çözme**: CLP(FD), planlama, tahsis ve kombinatoryal sorunları zarif bir şekilde çözer.
-- **Farklı düşünme**: Prolog'u öğrenmek, problem çözmeye yaklaşımınızı değiştirir; ilişkiler ve kısıtlamalar çerçevesinde düşünmeye başlarsınız.
+- **Farklı düşünme**: Prolog'u öğrenmek problem çözmeye yaklaşımınızı değiştirir; ilişkiler ve kısıtlamalar çerçevesinde düşünmeye başlarsınız.
 ## Takaslar
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
@@ -399,9 +400,9 @@ test(list_length) :-
 |-----------|-----------|----------|
 | Sonsuz özyineleme | Yığın taşması | Temel durumu kontrol edin; sonlandırma koşulu ekle |
 | Çözüm yok | Sorgu false değerini döndürüyor | Değişken örnekleme sırasını kontrol edin |
-| Çok fazla çözüm | Beklenmeyen kopyalar | Kes (!) ekleyin veya`setof`kullanın |
-| Yanlış birleştirme | Değişkenler yanlış bağlandı | Test etmek için`=`kullanın; işlevsellik durumunu kontrol edin |
-| Performans sorunu | Yavaş yürütme | Kesimler ekleyin;`table`kullanın; seçim noktalarını kontrol edin |
+| Çok fazla çözüm | Beklenmeyen kopyalar | Kes (!) ekleyin veya`setof`|
+| Yanlış birleştirme | Değişkenler yanlış bağlandı | Test etmek için `=`'yi kullanın; işlevsellik durumunu kontrol edin |
+| Performans sorunu | Yavaş yürütme | Kesimler ekleyin; `table`'yi kullanın; seçim noktalarını kontrol edin |
 ---
 
 ## Birlikte Çalışabilirlik
@@ -491,7 +492,7 @@ factorial_acc(N, Acc, F) :-
 ### Optimizasyon Kontrol Listesi
 | Tekniği | Etki | Açıklama |
 |-----------|-----------|------------|
-| **Kuyruk özyinelemesi** | Yüksek | Sabit yığın alanı için akümülatörleri kullanın |
+| **Kuyruk yinelemesi** | Yüksek | Sabit yığın alanı için akümülatörleri kullanın |
 | **Kes (yeşil)** | Yüksek | Gereksiz seçim noktalarını ortadan kaldırın |
 | **Tablolanmış değerlendirme** | Yüksek | `:- table pred/N`sonuçları not eder |
 | **dizin oluşturma** | Orta | Ayırıcı argümanı ilk sıraya koyun |
@@ -538,6 +539,129 @@ swipl -g main -o myapp.sav -c main.pl
 | Genel amaçlı programlama | Mümkün ama tuhaf | Python, Git, Java |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Prolog'un birleştirilmesinin diğer dillerdeki atamalardan farkı nedir?
+**A:** Birleştirme, atama değil, çift yönlü desen eşleştirmedir:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### S2: Prolog'da geri izleme nasıl çalışır?
+**C:** Bir hedef başarısız olduğunda Prolog son seçim noktasına geri döner ve bir sonraki alternatifi dener:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### S3: Prolog'da listelerle nasıl çalışırım?
+**A:** Listelerde baş/kuyruk deseni eşleşmesi kullanılır:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### S4: Ne zaman diğer diller yerine Prolog'u kullanmalıyım?
+**C:** Prolog şu konularda üstündür:
+- Kısıtlama tatmini (zamanlama, bulmacalar)
+- Kural tabanlı sistemler (uzman sistemler, doğrulama)
+- Grafik/ağaç geçişi
+- Doğal dil işleme
+- Sembolik hesaplama
+- Mantıksal ilişkiler olarak ifade edilebilen herhangi bir problem
+### S5: Prolog'daki yaygın tuzaklar nelerdir?
+**C:** Temel sorunlar:
+- Sonsuz özyineleme — her zaman temel durumu ilk sıraya koyun
+- İstenmeyen geri izleme — kesme`!`veya`once/1`kullanın 
+- Oluşma kontrolü — varsayılan olarak`X = f(X)`döngüleri (`unify_with_occurs_check` kullanın)
+- Yeşil kesimler (optimizasyon) ve kırmızı kesimler (anlamını değiştir) — yeşili tercih et
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: N-Queens Bulmacasını Çözmek
+**1. Adım: Sorunu Anlayın**
+NxN satranç tahtasına N vezir yerleştirin, böylece iki vezir birbirine saldıramaz.
+**2. Adım: Yaklaşımı Belirleyin**
+Kısıtlamaya dayalı oluşturmayı kullanın: güvenliği kontrol ederek kraliçeleri sütun sütun yerleştirin.
+**3. Adım: Uygulama**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**4. Adım: Doğrulayın**
+`?- n_queens(8, Qs).`92 çözüm bulmalıdır.
+### Sorun 2: Basit Bir Uzman Sistem Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Belirtilere göre araba sorunlarını teşhis edin.
+**2. Adım: Yaklaşımı Belirleyin**
+Tanılama bilgisini kodlamak için Prolog kurallarını kullanın.
+**3. Adım: Uygulama**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**4. Adım: Genişletin**
+Güven puanları ekleyin, kullanıcıdan etkileşimli olarak semptomları isteyin ve teşhisleri zincirleyin.
+---
+
 ## Özet
 Prolog diğer programlama dillerine benzemez. Adım adım talimatlar yazmak yerine ilişkileri ve kısıtlamaları tanımlarsınız ve motor, mantıksal çıkarım yoluyla çözümler arar. Bu, Prolog'u zorunlu dillerde karmaşık veya ayrıntılı olan problemler için ideal kılar: uzman sistemler, zamanlama, dilbilgisi ayrıştırma, kısıtlama tatmini ve mantıksal kuralları içeren her şey. Çoğu programcı Prolog'u asla üretimde kullanmaz, ancak onu öğrenmek programlamanın ne olabileceğine dair düşüncelerinizi genişletir. Birleştirme, geri izleme ve bildirimsel sorun belirleme, dil tasarımını, yapay zeka araştırmasını ve hatta veritabanı sorgu optimizasyonunu etkileyen kavramlardır.
 ### Prolog Motorları Karşılaştırması
@@ -552,7 +676,7 @@ Prolog diğer programlama dillerine benzemez. Adım adım talimatlar yazmak yeri
 | **Ağ oluşturma** | HTTP, TCP, TLS | TCP | JavaScript aracılığıyla |
 | **Çoklu iş parçacığı** | Evet | Hayır | Hayır |
 | **Paket yöneticisi** | `pack_install/1`| Yok | npm |
-| **Şunlar için en iyisi** | Üretim, araştırma | Kısıtlama çözme | Web uygulamaları, eğitim |
+| **En iyisi** | Üretim, araştırma | Kısıtlama çözme | Web uygulamaları, eğitim |
 ### Pengines ile Web Uygulamaları
 ```prolog
 % SWI-Prolog Pengines — server-side Prolog accessible from web

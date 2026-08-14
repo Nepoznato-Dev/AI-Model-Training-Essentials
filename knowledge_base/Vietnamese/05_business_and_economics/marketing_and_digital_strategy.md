@@ -38,12 +38,13 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Chiến lược tiếp thị và kỹ thuật số
-Tiếp thị là cách doanh nghiệp tạo ra, giao tiếp và cung cấp giá trị cho khách hàng. Đó không chỉ là quảng cáo - đó là toàn bộ hệ thống hiểu biết mọi người cần gì, định vị sản phẩm để đáp ứng nhu cầu đó và xây dựng mối quan hệ biến người mua thành người ủng hộ. Cuộc cách mạng kỹ thuật số không thay đổi các nguyên tắc cơ bản nhưng nó đã biến đổi các công cụ, kênh và tốc độ mọi thứ diễn ra.
+Tiếp thị là cách doanh nghiệp tạo ra, giao tiếp và cung cấp giá trị cho khách hàng. Nó bao gồm toàn bộ hệ thống tìm hiểu nhu cầu của khách hàng, định vị sản phẩm để đáp ứng những nhu cầu đó và xây dựng các mối quan hệ biến người mua thành người ủng hộ. Cuộc cách mạng kỹ thuật số đã thay đổi các công cụ, kênh và tốc độ tiếp thị trong khi các nguyên tắc cơ bản vẫn nhất quán.
 ---
 
 ## Nguyên tắc cơ bản về tiếp thị
-### Hỗn hợp tiếp thị (4P)
+### Tiếp thị hỗn hợp (4P)
 Khuôn khổ cổ điển để suy nghĩ về chiến lược thị trường của bất kỳ sản phẩm nào:
 | P | Câu Hỏi Nó Trả Lời | Các quyết định quan trọng |
 |---|--------------------------|---------------|
@@ -116,7 +117,7 @@ Hành trình từ người lạ trở thành khách hàng trung thành:
 | Số liệu | Điểm chuẩn | Nó nói gì với bạn |
 |--------|-------------|-------------------|
 | **Tỷ lệ mở** | 15–25% | Hiệu quả của dòng chủ đề |
-| **Tỷ lệ nhấp chuột (CTR)** | 2–5% | Mức độ liên quan của nội dung và sức mạnh CTA |
+| **Tỷ lệ nhấp chuột (CTR)** | 2–5% | Mức độ liên quan của nội dung và sức mạnh của CTA |
 | **Tỷ lệ chuyển đổi** | 1–5% | Hiệu quả chiến dịch tổng thể |
 | **Tỷ lệ hủy đăng ký** | <0,5% | Danh sách sức khỏe và nội dung phù hợp |
 | **Doanh thu trên mỗi email** | Khác nhau | Tác động cuối cùng |
@@ -132,7 +133,7 @@ Hành trình từ người lạ trở thành khách hàng trung thành:
 | **ROAS** (Lợi tức chi tiêu quảng cáo) | Doanh thu từ quảng cáo ` chi tiêu quảng cáo | Quảng cáo có mang lại lợi nhuận không? |
 | **Tỷ lệ chuyển đổi** | Chuyển đổi → tổng số khách truy cập × 100 | Bạn biến khách truy cập thành khách hàng hiệu quả như thế nào |
 | **Tỷ lệ rời bỏ** | Khách hàng bị mất ÷ tổng số khách hàng × 100 | Bạn đang mất bao nhiêu khách hàng |
-| **NPS** (Điểm quảng cáo ròng) | % Người ủng hộ − % Người gièm pha | Sự hài lòng và lòng trung thành của khách hàng (-100 đến +100) |
+| **NPS** (Điểm quảng bá ròng) | % Người ủng hộ − % Người gièm pha | Sự hài lòng và lòng trung thành của khách hàng (-100 đến +100) |
 ### Tỷ lệ CAC:CLV
 Tỷ lệ quan trọng nhất cho tăng trưởng bền vững:
 | Tỷ lệ | Ý nghĩa |
@@ -207,4 +208,4 @@ Hack tăng trưởng là sự giao thoa giữa tiếp thị, sản phẩm và d�
 ---
 
 ## Bản tóm tắt
-Cốt lõi của tiếp thị là hiểu con người - họ cần gì, họ sợ gì, điều gì thúc đẩy họ hành động. Bộ công cụ kỹ thuật số đã thay đổi đáng kể nhưng các nguyên tắc cơ bản thì không: hiểu rõ khách hàng của bạn, mang lại giá trị thực, giao tiếp rõ ràng, đo lường mọi thứ và lặp lại. Hoạt động tiếp thị tốt nhất không mang lại cảm giác giống như tiếp thị - mà giống như sự giúp đỡ.
+Tiếp thị về cơ bản là hiểu con người - nhu cầu, mối quan tâm và động lực của họ. Bộ công cụ kỹ thuật số đã phát triển đáng kể nhưng các nguyên tắc cơ bản vẫn giữ nguyên: hiểu khách hàng, mang lại giá trị, giao tiếp hiệu quả, đo lường kết quả và lặp lại. Tiếp thị hiệu quả phù hợp chặt chẽ với nhu cầu của khách hàng đến mức nó được coi là hỗ trợ hơn là khuyến mãi.

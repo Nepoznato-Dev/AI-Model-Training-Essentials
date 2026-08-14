@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "سكالا"
-الوصف: "مرجع شامل للغة برمجة Scala يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Scala"
+description: "Comprehensive reference for the Scala programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [سكالا، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "35 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [scala, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # سكالا
 Scala (لغة قابلة للتطوير) هي لغة برمجة مكتوبة ومترجمة بشكل ثابت تجمع بين نماذج البرمجة الموجهة للكائنات والوظيفية. تم إنشاء Scala بواسطة Martin Odersky وتم إصداره لأول مرة في عام 2004، ويعمل على JVM (أيضًا Scala.js لـ JavaScript وScala Native). لقد تم تصميمه لمعالجة إسهاب Java مع الحفاظ على إمكانية التشغيل التفاعلي الكامل لـ Java.
 Scala هي اللغة المستخدمة وراء Apache Spark (إطار عمل معالجة البيانات الضخمة)، ويتم استخدامها على نطاق واسع في هندسة البيانات والأنظمة الموزعة والخدمات الخلفية. شركات مثل Twitter (الآن X)، وLinkedIn، وNetflix، وThe Guardian تستخدم Scala.
@@ -114,7 +119,7 @@ implicit class StringOps(val s: String) extends AnyVal {
 
 ## بناء الجملة والأنماط المتقدمة
 ### فئات النوع (عبر الضمنية)
-يستخدم Scala 2 معلمات ضمنية لتشفير فئات الكتابة. يقدم Scala 3 بناء الجملة الأصلي`given`/ `using`.
+يستخدم Scala 2 معلمات ضمنية لتشفير فئات الكتابة. يقدم Scala 3 بناء جملة`given`/`using`الأصلي.
 ```scala
 // Scala 2 style: implicit-based type classes
 trait Show[A] {
@@ -404,17 +409,17 @@ lazy val root = project
 ### أوامر بناء المفاتيح
 | الأمر | الوصف |
 |---------|------------|
-|  __محمي_0__ | قم بإنشاء مشروع Scala 3 جديد من القالب |
-|  __محمي_1__ | تجميع المصادر الرئيسية |
-|  __محمي_2__ | تشغيل كافة الاختبارات |
-|  __محمي_3__ | قم بتشغيل الفصل الرئيسي |
-|  __محمي_4__ | قم بتشغيل فئة رئيسية محددة |
-|  __محمي_5__ | ابدأ REPL بالمشروع على classpath |
-|  __محمي_6__ | تنظيف الإخراج المترجم |
-|  __محمي_7__ | إنشاء Fat JAR (مع البرنامج المساعد لتجميع sbt) |
-|  __محمي_8__ | تنسيق التعليمات البرمجية مع Scalafmt |
-|  __محمي_9__ | تحقق من تنسيق الكود |
-|  __محمي_10__ | التجميع المستمر (إعادة الترجمة عند التغيير) |
+| `sbt new scala/scala3.g8`| قم بإنشاء مشروع Scala 3 جديد من القالب |
+| `sbt compile`| تجميع المصادر الرئيسية |
+| `sbt test`| تشغيل كافة الاختبارات |
+| `sbt run`| قم بتشغيل الفصل الرئيسي |
+| `sbt runMain com.example.App`| قم بتشغيل فئة رئيسية محددة |
+| `sbt console`| ابدأ REPL بالمشروع على classpath |
+| `sbt clean`| تنظيف الإخراج المترجم |
+| `sbt assembly`| إنشاء Fat JAR (مع البرنامج المساعد لتجميع sbt) |
+| `sbt scalafmt`| تنسيق التعليمات البرمجية مع Scalafmt |
+| `sbt scalafmtCheck`| تحقق من تنسيق الكود |
+| `sbt ~compile`| التجميع المستمر (إعادة الترجمة عند التغيير) |
 ### تنسيق الكود (.scalafmt.conf)
 ```
 # .scalafmt.conf
@@ -737,11 +742,11 @@ class OrderService(repo: OrderRepository[IO]) {
 ### أدوات التنميط
 | أداة | الغرض | الاستخدام |
 |------|---------|------|
-| **جي إم إتش** | القياس الجزئي |  __محمي_0__ البرنامج المساعد |
-| **VisualVM** | ملفات تعريف ومراقبة JVM |  __محمي_1__ الأمر |
+| **جي إم إتش** | القياس الجزئي |  البرنامج المساعد`sbt-jmh`|
+| **VisualVM** | ملفات تعريف ومراقبة JVM |  الأمر`jvisualvm`|
 | **ملف التعريف غير المتزامن** | ملفات تعريف وحدة المعالجة المركزية/الذاكرة ذات الحمل المنخفض | نعلق على تشغيل JVM |
 | **يور كيت** | الملف التعريفي التجاري | تكامل IDE |
-| **تغطية sbt** | تغطية الكود |  __محمي_2__ |
+| **تغطية sbt** | تغطية الكود | `sbt coverage test coverageReport`|
 ### المقارنة المعيارية مع JMH
 ```scala
 // Add to plugins.sbt: addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.4.6")
@@ -850,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | البرمجة الوظيفية على JVM | أفضل مجموعة FP + JVM | كلوجر |
 | تطوير التطبيقات العامة | ممكن ولكنه معقد | بايثون، جو، جافا |
 | علم البيانات | ممكن ولكن ليس النظام البيئي | بايثون، ر |
+---
+
+## أسئلة وأجوبة اصطناعية
+### Q1: كيف يقلل استدلال نوع Scala النمطي مقارنة بـ Java؟
+**A:** يستنتج مترجم Scala أنواع إعلانات`val`/`var`وأنواع إرجاع الطريقة والوظائف المجهولة. وهذا يلغي الحاجة إلى التعليقات التوضيحية الصريحة في معظم الحالات:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+يستنتج المترجم أيضًا معلمات النوع، وأنواع الإرجاع لأساليب التعبير المفرد، وأنواع مطابقة الأنماط. وهذا يجعل التعليمات البرمجية موجزة دون التضحية بالسلامة.
+### السؤال الثاني: متى يجب علي استخدام`case class`مقابل`class`العادي؟
+**أ:** استخدم`case class`لحاملات البيانات غير القابلة للتغيير - فهي توفر دعم مطابقة الأنماط`equals`و`hashCode`و`toString`و`copy`تلقائيًا:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+القاعدة الأساسية: إذا كان فصلك عبارة عن بيانات في المقام الأول، فاستخدم`case class`. إذا كان لديه حالة قابلة للتغيير أو سلوك معقد، فاستخدم`class`عاديًا.
+### Q3: كيف أتعامل مع الأخطاء اصطلاحاً في Scala؟
+**A:** يفضل Scala إرجاع الأنواع مثل`Option`و`Either`و`Try`على طرح الاستثناءات:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### السؤال الرابع: ما الفرق بين`trait`و`abstract class`؟
+**أ:** تدعم السمات الوراثة المتعددة ويمكن أن تحتوي على معلمات كتابة وطرق محددة. يمكن أن تحتوي الفئات المجردة على معلمات منشئة ولكنها تدعم الوراثة الفردية فقط:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### س5: كيف أكتب كود Scala المؤدي على JVM؟
+**أ:** الممارسات الأساسية:
+- استخدم`case class`والبيانات غير القابلة للتغيير لتجنب المزامنة
+- تفضل `Vector`،`Map`(غير قابل للتغيير) للمشاركة الهيكلية
+- استخدم التعليق التوضيحي`@tailrec`لضمان تحسين الاتصال الخلفي
+- تجنب الإفراط في الملاكمة - استخدم البدائيات`Int`و `Double`
+- استخدم`lazy val`لإجراء العمليات الحسابية باهظة الثمن
+- تفضل`Stream`/`LazyList`للتسلسلات الكبيرة
+- الملف الشخصي مع JMH - يجب تجميع تجريدات Scala إلى رمز بايت فعال
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: تنفيذ مُقيِّم التعبير الآمن للنوع
+**الخطوة الأولى: فهم المشكلة**
+نحتاج إلى تقييم التعبيرات الرياضية ذات المتغيرات ودعم الجمع والضرب والبحث عن المتغيرات.
+**الخطوة 2: تحديد النهج**
+استخدم أنواع البيانات الجبرية (السمة المختومة + فئات الحالة) لنمذجة شجرة التعبير، ثم مطابقة النمط للتقييم.
+**الخطوة 3: التنفيذ**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**الخطوة 4: التحقق والتمديد**
+أضف حالات`Div`و`Pow`و `Neg`. تضمن السمة المختومة تحذير المترجم بشأن المطابقات غير الشاملة.
+### المشكلة الثانية: إنشاء خط DSL بسيط لإنشاء HTML
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء DSL آمن للنوع يقوم بإنشاء سلاسل HTML باستخدام بناء جملة Scala.
+**الخطوة 2: تحديد النهج**
+استخدم فئات الحالة لعناصر HTML والتحويلات الضمنية لبناء جملة طبيعي.
+**الخطوة 3: التنفيذ**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**الخطوة 4: التحقق**
+يعتبر خط DSL آمنًا من حيث النوع، فلا يمكنك تمرير محتوى غير HTML عن طريق الخطأ. تضمن مطابقة الأنماط في`HtmlNode`عرضًا شاملاً.
+### المشكلة 3: عدد الكلمات المتزامنة مع تيارات Akka
+**الخطوة الأولى: فهم المشكلة**
+عد ترددات الكلمات عبر ملفات كبيرة متعددة في وقت واحد.
+**الخطوة 2: تحديد النهج**
+استخدم مجموعات Scala المتوازية أو Akka Streams للمعالجة المتزامنة، ثم قم بدمج النتائج.
+**الخطوة 3: التنفيذ**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**الخطوة 4: التحسين**
+بالنسبة لمجموعات البيانات الكبيرة جدًا، استخدم Akka Streams مع الضغط الخلفي:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## ملخص

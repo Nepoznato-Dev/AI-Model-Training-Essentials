@@ -40,7 +40,7 @@ contribution:
 ---
 
 # SQL
-SQL（結構化查詢語言）是一種特定於領域的語言，旨在管理和查詢關係資料庫中的資料。 SQL 最初於 20 世紀 70 年代由 IBM 開發，並於 1987 年標準化，至今仍然是應用程式與其資料之間的主要介面。每個主要的關聯式資料庫管理系統 (RDBMS) — PostgreSQL、MySQL、SQL Server、Oracle、SQLite — 都使用 SQL 作為其查詢語言。
+SQL（結構化查詢語言）是一種特定於領域的語言，旨在管理和查詢關係資料庫中的資料。 SQL 最初由 IBM 於 20 世紀 70 年代開發，並於 1987 年標準化，至今仍然是應用程式與其資料之間的主要介面。每個主要的關聯式資料庫管理系統 (RDBMS) — PostgreSQL、MySQL、SQL Server、Oracle、SQLite — 都使用 SQL 作為其查詢語言。
 SQL 不是通用程式語言。您不會用 SQL 編寫 Web 應用程式。但是，如果您的應用程式儲存資料（幾乎所有應用程式都這樣做），那麼 SQL 就是您用來檢索、轉換和管理該資料的語言。它可以說是繼通用程式設計之後最普遍有用的技術技能。
 ---
 
@@ -53,7 +53,7 @@ SQL 不是通用程式語言。您不會用 SQL 編寫 Web 應用程式。但是
 ## 權衡
 |限制|詳情 |典型解決方法|
 |------------|---------|--------------------|
-| **不是通用語言** |無法在 SQL 中建立應用程式、API 或演算法 |與Python、Java、JavaScript等結合|
+| **不是通用語言** |無法在 SQL 中建立應用程式、API 或演算法 |與Python、Java、JavaScript等結合 |
 | **方言差異** |每個 RDBMS 都有自己的 SQL 風格，且擴展不相容 |盡可能堅持使用 ANSI SQL；應用程式中的抽象方言差異|
 | **模式剛性** |更改大型表上的表結構可能會很慢且具有破壞性 |使用遷移工具；預先仔細設計架構|
 | **N+1查詢問題** | ORM 產生的查詢效率極低 |為複雜查詢編寫自訂 SQL；使用 EXPLAIN ANALYZE | 進行設定文件
@@ -314,7 +314,7 @@ ORDER BY order_count DESC;
 ```
 
 **優化清單：**
-|問題 |症狀|修復 |
+|問題 |症狀|修復|
 |--------|---------|-----|
 |大表順序掃描 | 解釋 | `Seq Scan`新增適當的索引 |
 | WHERE 欄位上缺少索引 |全表掃描 |在篩選列上建立索引 |
@@ -360,10 +360,10 @@ COMMIT;
 ```
 
 ### 標準化
-|範式 |規則|違規範例 |
+|範式|規則|違規範例 |
 |------------|------|--------------------|
 | **1NF** |原子值，無重複基團 |將多個電話儲存在一列中，如“123,456” |
-| **2NF** | 1NF + 無部分依賴 |訂單詳細資訊取決於 order_id 而非 Product_id |
+| **2NF** | 1NF + 無部分依賴性 |訂單詳細資料取決於 order_id 而非 Product_id |
 | **3NF** | 2NF + 無傳遞依賴 |員工部門名稱取決於 dept_id，而不是員工 |
 ---
 
@@ -458,7 +458,7 @@ END $$;
 
 ## 互通性
 ### 語言綁定
-|介面 |語言 |說明 |
+|介面|語言 |說明 |
 |------------|----------|-------------|
 | **JDBC** |爪哇 |標準資料庫API |
 | **ODBC** |多|通用資料庫API |
@@ -559,7 +559,7 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 ---
 
 ## SQL 方言
-| 特色 | PostgreSQL | MySQL | SQL Server | SQLite |
+|特色 | PostgreSQL | MySQL | SQL Server | SQLite |
 |--------|---------|--------|------------|--------|
 | 自動遞增 |`BIGSERIAL`/`GENERATED ALWAYS`|`AUTO_INCREMENT`|`IDENTITY`|`INTEGER PRIMARY KEY AUTOINCREMENT`|
 |字串連線 |`\|\|`|`CONCAT()`|`+`或`CONCAT()`|`\|\|`|
@@ -593,15 +593,158 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 ---
 
 ## 何時使用 SQL
-|場景 |為什麼要使用 SQL |另類|
+|場景|為什麼要使用 SQL |另類|
 |----------|---------|-------------|
 |具有複雜查詢的關聯式資料 |這就是 SQL 的設計目的 | --- |
 |事務完整性（ACID）| SQL資料庫保證一致性| --- |
 |報告與分析 |聚合、視窗函數、CTE | Python（Pandas）用於非常複雜的分析 |
-|資料完整性限制|外鍵、CHECK、UNIQUE、NOT NULL |應用程式層級驗證（較弱） |
+|資料完整性限制|外鍵、CHECK、UNIQUE、NOT NULL |應用程式層級驗證（較弱）|
 |簡單的鍵值儲存 |對於這個用例來說太過分了| Redis、DynamoDB |
 |高度非結構化資料 |模式剛性是一個問題| MongoDB，文檔資料庫 |
 |大規模水平擴展 | SQL資料庫難以分片|卡桑德拉、DynamoDB、CockroachDB |
+---
+
+## 綜合問答
+### Q1：`WHERE` 和`HAVING`有什麼不同？
+**A:**`WHERE`在分組之前過濾行；`HAVING`聚合後過濾組：
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2：視窗函數與 GROUP BY 有何不同？
+**A:** 視窗函數跨行計算而不折疊它們：
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3：如何最佳化慢查詢？
+**答：** 關鍵策略：
+- 在`WHERE`、`JOIN`和`ORDER BY`中使用的欄位上新增索引
+- 避免`SELECT *`— 僅選擇所需的列
+- 使用`EXPLAIN`/`EXPLAIN ANALYZE`讀取查詢計劃
+- 盡可能用 JOIN 取代子查詢
+- 使用 CTE 提高可讀性（通常不會造成效能損失）
+- 避免在 WHERE 中的索引列上使用函數：使用`WHERE date >= '2024-01-01'`而不是 `WHERE YEAR(date) = 2024`
+### Q4：什麼是 CTE？何時應該使用它們？
+**A:** 公用表格運算式建立命名暫存結果集：
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5：如何正確處理NULL值？
+**A:** NULL 代表未知－它不等於任何東西，包括它自己：
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：找出每組前 N 個
+**第 1 步：了解問題**
+找出每個部門中薪水最高的 3 名員工。
+**第 2 步：確定方法**
+使用按部門分區的`ROW_NUMBER()`視窗函數。
+**步驟 3：實施**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**第 4 步：驗證**
+檢查每個部門最多有 3 行。如果需要，請使用`DENSE_RANK()`處理關聯式。
+### 問題 2：建立年成長報告
+**第 1 步：了解問題**
+計算每月收入和年增率百分比。
+**第 2 步：確定方法**
+使用`DATE_TRUNC`進行分組，使用`LAG()`視窗函數進行上一年比較。
+**步驟 3：實施**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**第 4 步：驗證**
+檢查上一年的前 12 個月是否為 NULL。根據已知數據驗證增長百分比。
+### 問題 3：將行旋轉到列
+**第 1 步：了解問題**
+將狀態計數從行轉換為列。
+**第 2 步：確定方法**
+使用条件聚合（`SUM`内的`CASE`）。
+**步驟 3：實施**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**第 4 步：擴充**
+新增百分比列和運行總計。
 ---
 
 ＃＃ 概括

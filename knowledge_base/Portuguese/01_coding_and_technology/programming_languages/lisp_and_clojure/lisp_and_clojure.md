@@ -698,5 +698,140 @@ native-image --no-fallback \
 | Ciência de dados | Não o ecossistema | Pitão, R |
 ---
 
+## Perguntas e respostas sintéticas
+### Q1: Por que os programas Lisp/Clojure têm tantos parênteses?
+**R:** Os parênteses representam expressões S — uma sintaxe uniforme onde o código e os dados têm a mesma estrutura (homoiconicidade):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2: Como o Clojure lida com o estado e a mutabilidade de maneira diferente?
+**R:** O padrão do Clojure é dados imutáveis. Para mudanças de estado controladas, fornece tipos de referência:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3: Quais são as estruturas de dados persistentes do Clojure?
+**R:** Todas as coleções do Clojure são persistentes (imutáveis, compartilhadas estruturalmente):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4: Como funcionam as macros Clojure?
+**R:** As macros recebem código não avaliado (como dados), transformam-no e retornam novo código:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5: Como lidar com a simultaneidade no Clojure?
+**R:** Clojure fornece múltiplas primitivas de simultaneidade:
+-`atom`— alterações independentes e síncronas
+-`ref`+`dosync`— mudanças transacionais coordenadas
+-`agent`— alterações assíncronas e independentes
+- Canais`core.async`— simultaneidade estilo CSP
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Processando um pipeline de dados
+**Etapa 1: Entenda o problema**
+Leia dados, filtre, transforme e agregue por meio de um pipeline.
+**Etapa 2: Identifique a abordagem**
+Use macros de threading do Clojure (`->>`) e transdutores.
+**Etapa 3: Implementar**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Etapa 4: otimizar**
+Os transdutores evitam a criação de sequências intermediárias – eles compõem transformações em uma única passagem.
+### Problema 2: Construindo um Servidor Web Simples
+**Etapa 1: Entenda o problema**
+Crie um servidor HTTP básico usando Ring/Compojure.
+**Etapa 2: Identifique a abordagem**
+Use adaptador de anel e roteamento Compojure.
+**Etapa 3: Implementar**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Etapa 4: Estender**
+Adicione middleware para registro, análise JSON, autenticação e tratamento de erros.
+---
+
 ## Resumo
-Lisp é o avô do design de linguagens de programação – a maioria das linguagens modernas empresta ideias nas quais o Lisp foi pioneiro décadas atrás. Clojure traz Lisp para a era moderna com imutabilidade, suporte de simultaneidade e integração JVM perfeita. Embora Lisp/Clojure não seja popular, aprendê-lo mudará fundamentalmente a forma como você pensa sobre programação. O macrossistema por si só já vale o investimento – revela possibilidades que outras linguagens não conseguem igualar.
+Lisp é o avô do design de linguagens de programação – a maioria das linguagens modernas emprestam ideias nas quais o Lisp foi pioneiro décadas atrás. Clojure traz Lisp para a era moderna com imutabilidade, suporte de simultaneidade e integração JVM perfeita. Embora Lisp/Clojure não seja popular, aprendê-lo mudará fundamentalmente a forma como você pensa sobre programação. O macrossistema por si só já vale o investimento – revela possibilidades que outras linguagens não conseguem igualar.

@@ -1,4 +1,4 @@
-# Baza wiedzy po angielsku
+# Baza wiedzy
 Obszerny zbiór dokumentów referencyjnych obejmujących kodowanie, technologię, sztuczną inteligencję, naukę, biznes, nauki humanistyczne i nie tylko – napisany w naturalnym, konwersacyjnym stylu, przeznaczony zarówno do szkolenia sztucznej inteligencji, jak i uczenia się ludzi.
 **Ostatnia aktualizacja:** sierpień 2026 r  
 **Wszystkie pliki:** ponad 138 dokumentów przecenionych  
@@ -7,7 +7,7 @@ Obszerny zbiór dokumentów referencyjnych obejmujących kodowanie, technologię
 
 ## Struktura katalogów
 ```
-knowledge_base/English/
+knowledge_base/Polish/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,13 @@ knowledge_base/English/
 **Główne tematy:**
 | Plik | Opis |
 |------|------------|
-| [web_development.md](01_coding_and_technology/web_development.md)| Frontend, backend, DevOps, bezpieczeństwo |
 | [database_systems.md](01_coding_and_technology/database_systems.md)| SQL, NoSQL, wzorce projektowe, optymalizacja |
 | [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)| Dostawcy rozwiązań chmurowych, wzorce architektury, bezpieczeństwo |
 | [networking_basics.md](01_coding_and_technology/networking_basics.md)| Model OSI, TCP/IP, protokoły, bezpieczeństwo |
 | [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH, systemd, logowanie, monitorowanie, kopie zapasowe, Docker, CI/CD |
-| [security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP Top 10, sprawdzanie poprawności danych wejściowych, uwierzytelnianie, zarządzanie sekretami |
 | [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md)| Potoki CI/CD, Docker, Kubernetes, Terraform, GitOps |
 | [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)| Szyfrowanie, TLS, OWASP, bezpieczne kodowanie, SDL |
 | [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST, GraphQL, gRPC, wersjonowanie, uwierzytelnianie, bramy API |
-| [software_architecture_patterns.md](01_coding_and_technology/software_architecture_patterns.md)| Monolit, mikrousługi, sterowane zdarzeniami, DDD, buforowanie, SOLID |
-| [technology_glossary.md](01_coding_and_technology/technology_glossary.md)| Terminologia techniczna (modele AI, sprzęt, testy porównawcze) |
-| [tool_usage.md](01_coding_and_technology/tool_usage.md)| Narzędzia programistyczne i narzędzia |
 | [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG, włączający UX, technologia wspomagająca, dostępne kodowanie |
 | [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)| Konsensus, inteligentne kontrakty, DeFi, bizantyjska tolerancja na błędy |
 | [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)| Tablice, drzewa, wykresy, sortowanie, wyszukiwanie, złożoność |
@@ -52,7 +47,6 @@ knowledge_base/English/
 | [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)| Platformy niskokodowe, wewnętrzne platformy deweloperskie, złote ścieżki |
 | [mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS, Android, React Native, Flutter, architektura mobilna |
 | [performance_optimization.md](01_coding_and_technology/performance_optimization.md)| Profilowanie, buforowanie, CDN, optymalizacja zapytań, wydajność front-endu |
-| [testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)| Jednostka, integracja, E2E, TDD, BDD, piramidy testowe |
 **Języki programowania (34 języki):**
 Każdy język ma swój własny podkatalog z kompleksowymi informacjami obejmującymi przegląd, kompromisy, podstawy składni, ekosystem i kiedy go używać.
 | Język | Ścieżka | | Język | Ścieżka |
@@ -77,31 +71,31 @@ Każdy język ma swój własny podkatalog z kompleksowymi informacjami obejmują
 ### 02 — Sztuczna inteligencja i uczenie maszynowe
 | Plik | Opis |
 |------|------------|
-| [artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)| Przegląd AI, ML, głębokie uczenie się, LLM, etyka |
-| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/ml_evaluation_and_workflow.md)| Potoki ML, metryki, najlepsze praktyki |
-| [phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)| Uruchamianie modeli lokalnie |
-| [local_ai_architecture.md](02_ai_and_machine_learning/local_ai_architecture.md)| Lokalne architektury wdrażania AI |
-| [prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)| Szybkie techniki i strategie |
-| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT, jeziora danych, orkiestracja, Kafka, sklepy z funkcjami |
-| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/ml_engineering_and_mlops.md)| Obsługa modeli, rejestry, strategie wdrażania, monitorowanie dryfu |
-| [computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN, wykrywanie obiektów, segmentacja, uczenie transferowe |
-| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)| Przetwarzanie tekstu, osadzanie, Transformers, BERT, GPT |
-| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ai_ethics_and_governance.md)| Stronniczość AI, sprawiedliwość, odpowiedzialność, regulacje, ramy zarządzania |
-| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)| Problem dopasowania, RLHF, interpretowalność, badania nad bezpieczeństwem AI |
-| [federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)| Zdecentralizowane szkolenie, zróżnicowana prywatność, bezpieczna agregacja |
-| [generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GAN, VAE, modele dyfuzyjne, LLM, generatywne zastosowania AI |
-| [graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN, GAT, przekazywanie komunikatów, wykresy wiedzy, zadania grafowe |
-| [model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)| Kwantyzacja, przycinanie, destylacja, ONNX, infrastruktura obsługująca |
-| [multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)| Modele wizjonersko-językowe, CLIP, DALL-E, uczenie się międzymodalne |
-| [recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)| Filtrowanie oparte na współpracy, oparte na treści, hybrydowe, faktoryzacja macierzowa |
-| [reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP, Q-learning, gradienty polityki, RLHF, systemy wieloagentowe |
-| [speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR, TTS, funkcje audio, szept, potoki mowy |
-| [time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA, Prorok, LSTM, sezonowość, wykrywanie anomalii |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)| Przegląd AI, ML, głębokie uczenie się, LLM, etyka |
+| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md)| Potoki ML, metryki, najlepsze praktyki |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)| Uruchamianie modeli lokalnie |
+| [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md)| Lokalne architektury wdrażania AI |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)| Szybkie techniki i strategie |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT, jeziora danych, orkiestracja, Kafka, sklepy z funkcjami |
+| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md)| Obsługa modeli, rejestry, strategie wdrażania, monitorowanie dryfu |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN, wykrywanie obiektów, segmentacja, uczenie transferowe |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)| Przetwarzanie tekstu, osadzanie, Transformers, BERT, GPT |
+| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md)| Stronniczość AI, sprawiedliwość, odpowiedzialność, regulacje, ramy zarządzania |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)| Problem dopasowania, RLHF, interpretowalność, badania nad bezpieczeństwem AI |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)| Zdecentralizowane szkolenie, zróżnicowana prywatność, bezpieczna agregacja |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GAN, VAE, modele dyfuzyjne, LLM, generatywne zastosowania AI |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN, GAT, przekazywanie komunikatów, wykresy wiedzy, zadania grafowe |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)| Kwantyzacja, przycinanie, destylacja, ONNX, infrastruktura obsługująca |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)| Modele wizjonersko-językowe, CLIP, DALL-E, uczenie się międzymodalne |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)| Filtrowanie oparte na współpracy, oparte na treści, hybrydowe, faktoryzacja macierzowa |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP, Q-learning, gradienty polityki, RLHF, systemy wieloagentowe |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR, TTS, funkcje audio, szept, potoki mowy |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA, Prorok, LSTM, sezonowość, wykrywanie anomalii |
 ### 03 — Analiza danych i analityka
 | Plik | Opis |
 |------|------------|
 | [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)| Przetwarzanie danych, ML, big data, BI |
-| [math_and_logic.md](03_data_science_and_analytics/math_and_logic.md)| Matematyka, logika, dowody |
+| [math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md)| Matematyka, logika, dowody |
 | [data_visualization.md](03_data_science_and_analytics/data_visualization.md)| Wybór wykresu, zasady projektowania, opowiadanie historii, narzędzia |
 | [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md)| Testowanie hipotez, testowanie A/B, wielkość efektu, wnioskowanie przyczynowe |
 | [causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAG, czynniki zakłócające, różnica w różnicach, zmienne instrumentalne |
@@ -113,13 +107,13 @@ Każdy język ma swój własny podkatalog z kompleksowymi informacjami obejmują
 | Plik | Opis |
 |------|------------|
 | [science_and_nature.md](04_natural_sciences/science_and_nature.md)| Fizyka, chemia, biologia, nauki o Ziemi |
-| [medicine_and_healthcare.md](04_natural_sciences/medicine_and_healthcare.md)| Specjalizacje lekarskie, diagnostyka, leczenie, etyka |
-| [environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)| Ekosystemy, klimat, energia, polityka |
-| [food_agriculture_and_nutrition.md](04_natural_sciences/food_agriculture_and_nutrition.md)| Rolnictwo, żywienie, systemy żywnościowe, zrównoważony rozwój |
-| [astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)| Gwiazdy, galaktyki, Wielki Wybuch, ciemna materia, egzoplanety, kosmologia |
-| [genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| DNA, ekspresja genów, CRISPR, GWAS, technologie sekwencjonowania |
-| [materials_science.md](04_natural_sciences/materials_science.md)| Struktury krystaliczne, polimery, stopy, półprzewodniki, nanomateriały |
-| [neuroscience.md](04_natural_sciences/neuroscience.md)| Neurony, budowa mózgu, neuroprzekaźniki, plastyczność, obrazowanie mózgu |
+| [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md)| Specjalizacje lekarskie, diagnostyka, leczenie, etyka |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)| Ekosystemy, klimat, energia, polityka |
+| [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md)| Rolnictwo, żywienie, systemy żywnościowe, zrównoważony rozwój |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)| Gwiazdy, galaktyki, Wielki Wybuch, ciemna materia, egzoplanety, kosmologia |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| DNA, ekspresja genów, CRISPR, GWAS, technologie sekwencjonowania |
+| [materials_science.md](04_natural_sciences/physical_sciences/materials_science.md)| Struktury krystaliczne, polimery, stopy, półprzewodniki, nanomateriały |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)| Neurony, budowa mózgu, neuroprzekaźniki, plastyczność, obrazowanie mózgu |
 ### 05 — Biznes i ekonomia
 | Plik | Opis |
 |------|------------|
@@ -136,15 +130,15 @@ Każdy język ma swój własny podkatalog z kompleksowymi informacjami obejmują
 ### 06 — Nauki humanistyczne i sztuka
 | Plik | Opis |
 |------|------------|
-| [history_and_culture.md](06_humanities_and_arts/history_and_culture.md)| Historia świata od cywilizacji starożytnych do epoki informacji |
-| [geography_and_geopolitics.md](06_humanities_and_arts/geography_and_geopolitics.md)| Geografia fizyczna/człowieka, systemy polityczne |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)| Historia świata od cywilizacji starożytnych do epoki informacji |
+| [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md)| Geografia fizyczna/człowieka, systemy polityczne |
 | [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)| Gatunki literackie, sztuki wizualne, muzyka, film |
-| [psychology_and_human_behavior.md](06_humanities_and_arts/psychology_and_human_behavior.md)| Psychologia poznawcza, społeczna, rozwojowa |
-| [language_and_english.md](06_humanities_and_arts/language_and_english.md)| Gramatyka, lingwistyka, pisanie |
-| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)| Szkoły myślenia, etyka, logika, epistemologia, błędy poznawcze |
-| [linguistics_and_language_science.md](06_humanities_and_arts/linguistics_and_language_science.md)| Fonetyka, składnia, semantyka, pragmatyka, socjolingwistyka |
-| [music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)| Skale, akordy, harmonia, rytm, akustyka pomieszczenia, fizyka instrumentów |
-| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)| Główne religie świata, mitologia porównawcza, systemy wierzeń |
+| [psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md)| Psychologia poznawcza, społeczna, rozwojowa |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md)| Gramatyka, lingwistyka, pisanie |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)| Szkoły myślenia, etyka, logika, epistemologia, błędy poznawcze |
+| [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md)| Fonetyka, składnia, semantyka, pragmatyka, socjolingwistyka |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)| Skale, akordy, harmonia, rytm, akustyka pomieszczenia, fizyka instrumentów |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)| Główne religie świata, mitologia porównawcza, systemy wierzeń |
 ### 07 — Informacje ogólne
 | Plik | Opis |
 |------|------------|
@@ -158,20 +152,20 @@ Każdy język ma swój własny podkatalog z kompleksowymi informacjami obejmują
 ### 08 — Przyszłość i trendy
 | Plik | Opis |
 |------|------------|
-| [2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)| Nadchodzące wydarzenia, misje kosmiczne, trendy technologiczne |
-| [emerging_technologies.md](08_future_and_trends/emerging_technologies.md)| Obliczenia kwantowe, biotechnologia, nanotechnologia |
-| [future_of_work.md](08_future_and_trends/future_of_work.md)| Automatyzacja, praca zdalna, przekwalifikowanie |
-| [future_healthcare.md](08_future_and_trends/future_healthcare.md)| Medycyna spersonalizowana, diagnostyka AI |
-| [future_transportation.md](08_future_and_trends/future_transportation.md)| Pojazdy elektryczne, pojazdy autonomiczne, hyperloop |
-| [demographic_shifts.md](08_future_and_trends/demographic_shifts.md)| Trendy populacyjne, migracje, urbanizacja |
-| [education_transformation.md](08_future_and_trends/education_transformation.md)| Nauka online, korepetycje AI |
-| [geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)| Geopolityka, USA-Chiny, świat wielobiegunowy |
-| [scenario_planning.md](08_future_and_trends/scenario_planning.md)| Przyszłe scenariusze i ramy |
-| [space_exploration_roadmap.md](08_future_and_trends/space_exploration_roadmap.md)| Misje kosmiczne i harmonogramy |
-| [sustainable_future.md](08_future_and_trends/sustainable_future.md)| Klimat, transformacja energetyczna, gospodarka o obiegu zamkniętym |
-| [ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)| Systemy rekomendacji, inteligentni asystenci, prywatność, oszczędność uwagi |
-| [climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)| Energia odnawialna, pojazdy elektryczne, wychwytywanie dwutlenku węgla, ekologiczny wodór, zrównoważona technologia |
-| [future_of_computing.md](08_future_and_trends/future_of_computing.md)| Prawo Moore'a, obliczenia kwantowe, chipy neuromorficzne, obliczenia brzegowe |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)| Nadchodzące wydarzenia, misje kosmiczne, trendy technologiczne |
+| [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md)| Obliczenia kwantowe, biotechnologia, nanotechnologia |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)| Automatyzacja, praca zdalna, przekwalifikowanie |
+| [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md)| Medycyna spersonalizowana, diagnostyka AI |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)| Pojazdy elektryczne, pojazdy autonomiczne, hyperloop |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)| Trendy populacyjne, migracje, urbanizacja |
+| [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md)| Nauka online, korepetycje AI |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)| Geopolityka, USA-Chiny, świat wielobiegunowy |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)| Przyszłe scenariusze i ramy |
+| [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md)| Misje kosmiczne i harmonogramy |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)| Klimat, transformacja energetyczna, gospodarka o obiegu zamkniętym |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)| Systemy rekomendacji, inteligentni asystenci, prywatność, oszczędność uwagi |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)| Energia odnawialna, pojazdy elektryczne, wychwytywanie dwutlenku węgla, ekologiczny wodór, zrównoważona technologia |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)| Prawo Moore'a, obliczenia kwantowe, chipy neuromorficzne, obliczenia brzegowe |
 ### 09 — Wnioski z niepowodzeń
 | Plik | Opis |
 |------|------------|
@@ -187,18 +181,18 @@ Każdy język ma swój własny podkatalog z kompleksowymi informacjami obejmują
 ### 10 — Skrócona instrukcja
 | Plik | Opis |
 |------|------------|
-| [python_syntax.md](10_quick_reference/python_syntax.md)| Ściągawka ze składni Pythona |
-| [git_commands.md](10_quick_reference/git_commands.md)| Polecenia i przepływy pracy Git |
-| [sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| Odniesienie do zapytania SQL |
-| [linux_commands.md](10_quick_reference/linux_commands.md)| Informacje o wierszu poleceń systemu Linux |
-| [docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, ściągawka Helm |
-| [regular_expressions.md](10_quick_reference/regular_expressions.md)| Składnia wyrażeń regularnych, typowe wzorce, użycie specyficzne dla języka |
-| [cloud_services_comparison.md](10_quick_reference/cloud_services_comparison.md)| Porównanie AWS, Azure i GCP |
-| [bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| Skrypty Bash, przetwarzanie tekstu, przydatne jednowierszowe |
-| [ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| Podręczniki Ansible, moduły, role, ekwipunek, ściągawka do automatyzacji |
-| [cicd_pipeline_config.md](10_quick_reference/cicd_pipeline_config.md)| GitHub Actions, GitLab CI, Jenkins, wzorce YAML potoku |
-| [prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL, eksporterzy, dashboardy, alerty, stos monitorowania |
-| [terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| Koncepcje IaC, polecenia Terraform, zarządzanie stanem, moduły |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md)| Ściągawka ze składni Pythona |
+| [git_commands.md](10_quick_reference/programming/git_commands.md)| Polecenia i przepływy pracy Git |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| Odniesienie do zapytania SQL |
+| [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)| Informacje o wierszu poleceń systemu Linux |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, ściągawka Helm |
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)| Składnia wyrażeń regularnych, typowe wzorce, użycie specyficzne dla języka |
+| [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)| Porównanie AWS, Azure i GCP |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| Skrypty Bash, przetwarzanie tekstu, przydatne jednowierszowe |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| Podręczniki Ansible, moduły, role, ekwipunek, ściągawka do automatyzacji |
+| [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md)| GitHub Actions, GitLab CI, Jenkins, wzorce YAML potoku |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL, eksporterzy, dashboardy, alerty, stos monitorowania |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| Koncepcje IaC, polecenia Terraform, zarządzanie stanem, moduły |
 ---
 
 ## Ścieżki edukacyjne
@@ -210,12 +204,9 @@ Każdy język ma swój własny podkatalog z kompleksowymi informacjami obejmują
 ### Dla programistów
 1.`01_coding_and_technology/programming_languages/python/`(lub wybrany język)
 2.`01_coding_and_technology/data_structures_and_algorithms.md`
-3.`01_coding_and_technology/web_development.md`
 4.`01_coding_and_technology/database_systems.md`
 5.`01_coding_and_technology/cloud_architecture.md`
-6.`01_coding_and_technology/software_architecture_patterns.md`
 7.`01_coding_and_technology/api_design_and_architecture.md`
-8.`01_coding_and_technology/testing_methodologies.md`
 9. `02_ai_and_machine_learning/artificial_intelligence.md`
 ### Dla badaczy danych
 1.`03_data_science_and_analytics/math_and_logic.md`

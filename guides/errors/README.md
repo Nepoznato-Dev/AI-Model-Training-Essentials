@@ -9,16 +9,14 @@ This directory contains solutions to common errors you may encounter when workin
 | Error | Description | Solution |
 |-------|-------------|----------|
 | [ImportError: Transformers](ImportError_Transformers.md) | Cannot import transformers or related packages | Step-by-step installation guide |
-| CUDA Out of Memory | GPU memory exhausted during training | Memory optimization techniques |
-| Python Version Mismatch | Incompatible Python version for packages | Version management guide |
+| [Torch Not Installed](../User%20Questions/errors/Torch_Not_Installed.md) | PyTorch not found in current environment | Platform-specific installation guide |
 
 ### Runtime Errors
 
 | Error | Description | Solution |
 |-------|-------------|----------|
 | [CUDA OOM](CUDA_OOM.md) | Out of memory during model training | Batch size reduction, gradient accumulation |
-| Model Download Failed | Cannot download pre-trained models | Network troubleshooting, manual download |
-| Shape Mismatch | Tensor dimension errors | Debugging tensor shapes |
+| [CUDA OOM (Detailed)](../User%20Questions/errors/CUDA_OOM.md) | Extended GPU memory troubleshooting | Batch size guidelines, debugging scripts |
 
 ### Performance Issues
 

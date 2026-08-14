@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Fundamentos de segurança cibernética
-A segurança não é um recurso que você incorpora no final — é uma disciplina que precisa ser integrada em cada camada de um sistema desde o primeiro dia. Esteja você criando um aplicativo Web, gerenciando infraestrutura ou enviando uma API, é essencial compreender o cenário de ameaças e os fundamentos da defesa.
+A segurança é uma disciplina que deve ser integrada em todas as camadas de um sistema desde o início, em vez de ser adicionada posteriormente. Seja construindo um aplicativo Web, gerenciando infraestrutura ou enviando uma API, é essencial compreender o cenário de ameaças e os fundamentos da defesa.
 ---
 
 ## Criptografia e criptografia
@@ -79,7 +79,7 @@ Use TLS 1.2 ou 1.3. Desative o TLS 1.0 e 1.1. Habilite HSTS (HTTP Strict Transpo
 | Modelo | Descrição | Exemplo |
 |-------|-------------|---------|
 | **RBAC** (controle de acesso baseado em função) | Permissões atribuídas às funções; usuários obtêm funções | Administrador, Editor, Visualizador |
-| **ABAC** (baseado em atributos) | Regras baseadas em atributos do usuário, recurso, ambiente | “Os gestores podem aprovar as solicitações de sua equipe” |
+| **ABAC** (baseado em atributos) | Regras baseadas em atributos do usuário, recursos e ambiente | “Os gestores podem aprovar as solicitações de sua equipe” |
 | **ACL** (Lista de Controle de Acesso) | Permissões explícitas por usuário/recurso | Permissões de arquivo (leitura/gravação/execução) |
 **Princípio do menor privilégio**: conceda a cada usuário, serviço e processo apenas o acesso mínimo necessário.
 ### JWT (Tokens da Web JSON)
@@ -191,7 +191,7 @@ Seu aplicativo é tão seguro quanto sua dependência mais fraca.
 Quando você suspeita de uma violação:
 1. **Não entre em pânico** – mas aja rapidamente.
 2. **Isolar** os sistemas afetados (desconectar da rede, se necessário).
-3. **Preservar evidências**: capturar logs, despejos de memória e imagens de disco.
+3. **Preservar evidências**: capturar logs, despejos de memória, imagens de disco.
 4. **Identificar o escopo**: quais sistemas, quais dados?
 5. **Alterne** todas as credenciais e segredos comprometidos.
 6. **Corrija** a vulnerabilidade.

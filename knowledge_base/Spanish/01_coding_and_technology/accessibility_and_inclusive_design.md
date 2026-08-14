@@ -1,41 +1,46 @@
 ---
-# Metadatos
-título: "Accesibilidad y Diseño Inclusivo"
-descripción: "WCAG, UX inclusivo, tecnología de asistencia, codificación accesible"
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Accessibility and Inclusive Design"
+description: "WCAG, inclusive UX, assistive technology, accessible coding"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [accesibilidad, inclusivo, diseño, codificación y tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "8 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [accessibility, inclusive, design, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Accesibilidad y Diseño Inclusivo
-La accesibilidad (a menudo abreviada como a11y) es la práctica de hacer que el software sea utilizable por todos, incluidas las personas con discapacidades visuales, auditivas, motoras, cognitivas y neurológicas. No es algo agradable de tener; es un requisito legal en muchas jurisdicciones, una obligación moral y una buena ingeniería. El software accesible es mejor software para todos, porque las decisiones de diseño que ayudan a los usuarios discapacitados (estructura clara, navegación por teclado, contraste suficiente, texto legible) mejoran la experiencia para todos los usuarios.
+La accesibilidad (a menudo abreviada como a11y) es la práctica de hacer que el software sea utilizable por todos, incluidas las personas con discapacidades visuales, auditivas, motoras, cognitivas y neurológicas. Es un requisito legal en muchas jurisdicciones y una práctica de ingeniería estándar. El software accesible es mejor software para todos, porque las decisiones de diseño que apoyan a los usuarios discapacitados (estructura clara, navegación por teclado, contraste suficiente, texto legible) mejoran la experiencia para todos los usuarios.
 ---
 
 ## ¿Quién se beneficia de la accesibilidad?
@@ -79,7 +84,7 @@ Las Pautas de Accesibilidad al Contenido Web (WCAG) son el estándar internacion
 | **4.1.2 Nombre, rol, valor** | Los componentes de la interfaz de usuario tienen nombres y funciones accesibles | atributos ARIA; HTML semántico |
 ---
 
-## ARIA (Aplicaciones enriquecidas de Internet accesibles)
+## ARIA (Aplicaciones de Internet enriquecidas accesibles)
 ARIA agrega información de accesibilidad a elementos HTML que no tienen semántica incorporada.
 ### Roles de ARIA
 | Rol | Propósito | Ejemplo |
@@ -140,7 +145,7 @@ ARIA agrega información de accesibilidad a elementos HTML que no tienen semánt
 | Método | Herramienta | Lo que atrapa |
 |--------|------|----------------|
 | **Escaneo automatizado** | hacha, faro, OLA | Falta texto alternativo; cuestiones de contraste; Errores ARIA |
-| **Pruebas de teclado** | Manual: desconecte el mouse, use solo el teclado | Orden de enfoque; trampas de teclado; controladores faltantes |
+| **Prueba de teclado** | Manual: desconecte el mouse, use solo el teclado | Orden de enfoque; trampas de teclado; controladores faltantes |
 | **Prueba de lector de pantalla** | NVDA (gratis), VoiceOver (macOS), JAWS | Etiquetas faltantes; mala estructura; cambios no anunciados |
 | **Prueba de zoom** | Zoom del navegador al 200%, 400% | Rotura de diseño; texto recortado; problemas de desbordamiento |
 | **Contraste de color** | Comprobador de contraste WebAIM, complemento Stark | Relaciones de contraste insuficientes |
@@ -172,4 +177,4 @@ ARIA agrega información de accesibilidad a elementos HTML que no tienen semánt
 ---
 
 ## Resumen
-La accesibilidad no es una característica que se agrega al final; es un principio de diseño que debe informar cada decisión desde el principio. Utilice HTML semántico. Asegúrese de que la navegación con el teclado funcione. Mantenga un contraste de color suficiente. Proporcione alternativas de texto para contenido que no sea de texto. Pruebe con lectores de pantalla y usuarios discapacitados reales. El resultado es un software que funciona mejor para todos, no sólo para aquellos con discapacidades, sino también para aquellos con impedimentos temporales, limitaciones situacionales, dispositivos más antiguos, conexiones lentas y las mil otras formas en que el uso en el mundo real difiere del entorno idealizado del desarrollador.
+La accesibilidad es un principio de diseño que debe informar cada decisión desde el principio, no una característica agregada al final. Utilice HTML semántico. Asegúrese de que la navegación con el teclado funcione. Mantenga un contraste de color suficiente. Proporcione alternativas de texto para contenido que no sea de texto. Pruebe con lectores de pantalla y usuarios discapacitados. El resultado es un software que funciona mejor para todos, incluidos aquellos con discapacidades temporales, limitaciones situacionales, dispositivos más antiguos, conexiones lentas y las muchas formas en que el uso en el mundo real difiere de un entorno de desarrollo controlado.

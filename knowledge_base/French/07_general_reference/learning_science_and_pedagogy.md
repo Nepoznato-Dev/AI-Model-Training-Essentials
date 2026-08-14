@@ -1,41 +1,46 @@
 ---
-# Métadonnées
-titre : "Apprentissage des sciences et de la pédagogie"
-description : "Pratique de récupération, répétition espacée, taxonomie de Bloom, conception d'apprentissage"
-catégorie : "Référence générale"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Learning Science and Pedagogy"
+description: "Retrieval practice, spaced repetition, Bloom's taxonomy, learning design"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances de référence générale"
-next_review : "2027-08-05"
-#Classement
-tags : [apprentissage, science, pédagogie, référence générale]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "7 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [learning, science, pedagogy, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Apprentissage des sciences et de la pédagogie
-La science de l’apprentissage est l’étude interdisciplinaire de la manière dont les gens apprennent – ​​en s’appuyant sur la psychologie, les neurosciences, l’éducation et les sciences cognitives. La pédagogie est l'art et la science de l'enseignement. Ensemble, ils répondent aux questions qui comptent pour quiconque enseigne, forme, encadre ou conçoit du contenu éducatif : qu'est-ce qui aide réellement les gens à apprendre ? Quelles techniques d’étude courantes sont inefficaces ? Comment l’enseignement devrait-il être structuré pour une rétention et un transfert maximum ?
+La science de l’apprentissage est l’étude interdisciplinaire de la façon dont les gens apprennent – ​​en s’appuyant sur la psychologie, les neurosciences, l’éducation et les sciences cognitives. La pédagogie est la pratique et la méthodologie de l'enseignement. Ensemble, ils répondent à des questions pertinentes pour quiconque enseigne, forme, encadre ou conçoit du contenu éducatif : quelles méthodes aident les gens à apprendre efficacement ? Quelles techniques d’étude courantes sont inefficaces ? Comment l’enseignement doit-il être structuré pour une rétention et un transfert optimaux ?
 ---
 
 ## Comment fonctionne l'apprentissage

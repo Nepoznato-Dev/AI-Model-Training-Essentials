@@ -6,10 +6,12 @@ Runnable projects for Generative Adversarial Networks (GANs).
 
 ### 1. DCGAN - Image Generation
 
-Deep Convolutional GAN for generating realistic images.
+Deep Convolutional GAN for generating realistic handwritten digits from the MNIST dataset.
 
 **Files:**
 - `dcgan_image_generation/` - DCGAN implementation
+  - `main.py` - Full DCGAN with Generator, Discriminator, and training loop
+  - `requirements.txt` - Dependencies (torch, torchvision, matplotlib)
 
 ### 2. Style Transfer with CycleGAN
 

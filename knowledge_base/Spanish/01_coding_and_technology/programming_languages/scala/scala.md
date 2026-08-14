@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Escala"
-descripción: "Referencia completa para el lenguaje de programación Scala que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Scala"
+description: "Comprehensive reference for the Scala programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [scala, lenguaje de programación, sintaxis, ecosistema, codificación y tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "35 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [scala, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # escala
 Scala (lenguaje escalable) es un lenguaje de programación compilado y tipado estáticamente que combina paradigmas de programación funcional y orientado a objetos. Creado por Martin Odersky y lanzado por primera vez en 2004, Scala se ejecuta en JVM (también Scala.js para JavaScript y Scala Native). Fue diseñado para abordar la verbosidad de Java manteniendo la interoperabilidad total de Java.
 Scala es el lenguaje detrás de Apache Spark (el marco de procesamiento de big data) y se usa ampliamente en ingeniería de datos, sistemas distribuidos y servicios backend. Empresas como Twitter (ahora X), LinkedIn, Netflix y The Guardian utilizan Scala.
@@ -51,7 +56,7 @@ Scala es el lenguaje detrás de Apache Spark (el marco de procesamiento de big d
 |-----------|-----------------|-------------------|
 | **Complejidad** | El idioma tiene muchas características; puede ser difícil de dominar | Comience con las "partes buenas"; evite el código demasiado inteligente |
 | **Tiempos de compilación** | Más lento que Java, especialmente con tipos complejos | Utilice compilación incremental (Bloop, sbt) |
-| **Curva de aprendizaje** | Más pronunciado que Java o Python | Invierta tiempo; la recompensa es significativa |
+| **Curva de aprendizaje** | Más pronunciado que Java o Python | Invierte tiempo; la recompensa es significativa |
 | **Mercado laboral más pequeño** | Menos roles que Java o Python | Fuerte en ingeniería de datos y funciones de backend |
 | **Estilo inconsistente** | Diferentes equipos escriben Scala muy diferente | Siga las guías de estilo de la comunidad |
 ---
@@ -850,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Programación funcional en JVM | Mejor combinación FP + JVM | Clojure |
 | Desarrollo de aplicaciones generales | Posible pero complejo | Python, Ir, Java |
 | Ciencia de datos | Posible pero no el ecosistema | Pitón, R |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cómo reduce la inferencia de tipos de Scala el texto estándar en comparación con Java?
+**R:** El compilador de Scala infiere tipos para declaraciones `val`/`var`, tipos de retorno de métodos y funciones anónimas. Esto elimina la necesidad de anotaciones de tipo explícitas en la mayoría de los casos:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+El compilador también infiere parámetros de tipo, tipos de retorno de métodos de expresión única y tipos de coincidencia de patrones. Esto hace que el código sea conciso sin sacrificar la seguridad.
+### P2: ¿Cuándo debo utilizar`case class`frente a`class`normal?
+**R:** Utilice`case class`para soportes de datos inmutables: proporcionan`equals`,`hashCode`,`toString`,`copy`y compatibilidad con coincidencia de patrones automáticamente:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Regla general: si su clase se compone principalmente de datos, utilice `case class`. Si tiene un estado mutable o un comportamiento complejo, utilice un`class`normal.
+### P3: ¿Cómo manejo los errores idiomáticamente en Scala?
+**R:** Scala prefiere tipos de retorno como`Option`,`Either`y`Try`en lugar de lanzar excepciones:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### P4: ¿Cuál es la diferencia entre`trait`y `abstract class`?
+**R:** Los rasgos admiten herencia múltiple y pueden tener parámetros de tipo y métodos concretos. Las clases abstractas pueden tener parámetros de constructor pero solo admiten herencia única:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### P5: ¿Cómo escribo código Scala de alto rendimiento en la JVM?
+**R:** Prácticas clave:
+- Utilice`case class`y datos inmutables para evitar la sincronización
+- Prefiera `Vector`,`Map`(inmutable) para compartir estructural
+- Utilice la anotación`@tailrec`para garantizar la optimización de las llamadas finales
+- Evite el boxeo excesivo: use las primitivas `Int`, `Double`
+- Utilice`lazy val`para cálculos costosos
+- Prefiera`Stream`/`LazyList`para secuencias grandes
+- Perfil con JMH: las abstracciones de Scala deben compilarse en un código de bytes eficiente
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Implementación de un evaluador de expresiones con seguridad de tipos
+**Paso 1: Comprenda el problema**
+Necesitamos evaluar expresiones matemáticas con variables, admitiendo la suma, la multiplicación y la búsqueda de variables.
+**Paso 2: Identificar el enfoque**
+Utilice tipos de datos algebraicos (rasgo sellado + clases de casos) para modelar el árbol de expresión, luego coincida con el patrón para evaluar.
+**Paso 3: Implementar**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**Paso 4: Verificar y ampliar**
+Agregue casos `Div`, `Pow`, `Neg`. El rasgo sellado garantiza que el compilador advierta sobre coincidencias no exhaustivas.
+### Problema 2: creación de un DSL simple para la generación de HTML
+**Paso 1: Comprenda el problema**
+Cree un DSL con seguridad de tipos que genere cadenas HTML utilizando la sintaxis de Scala.
+**Paso 2: Identificar el enfoque**
+Utilice clases de casos para elementos HTML y conversiones implícitas para una sintaxis natural.
+**Paso 3: Implementar**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**Paso 4: Verificar**
+El DSL tiene seguridad de tipos: no se puede pasar accidentalmente contenido que no sea HTML. La coincidencia de patrones en`HtmlNode`garantiza una representación exhaustiva.
+### Problema 3: recuento de palabras simultáneo con Akka Streams
+**Paso 1: Comprenda el problema**
+Cuente las frecuencias de palabras en varios archivos grandes al mismo tiempo.
+**Paso 2: Identificar el enfoque**
+Utilice las colecciones paralelas de Scala o Akka Streams para el procesamiento simultáneo y luego combine los resultados.
+**Paso 3: Implementar**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**Paso 4: Optimizar**
+Para conjuntos de datos muy grandes, utilice Akka Streams con contrapresión:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## Resumen

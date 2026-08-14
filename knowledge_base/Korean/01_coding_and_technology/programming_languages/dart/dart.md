@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 다트
 Dart는 Google이 개발한 클라이언트 최적화 프로그래밍 언어로, 2013년에 처음 출시되었습니다. Dart는 처음에는 웹 브라우저의 잠재적인 JavaScript 대체품으로 자리매김했지만 기본 목적은 단일 코드베이스에서 모바일, 웹, 데스크톱 및 임베디드 애플리케이션을 구축하기 위한 Google의 크로스 플랫폼 UI 도구 키트인 **Flutter**의 언어로 나타났습니다.
-Dart는 최신 언어의 최고의 기능을 결합합니다. 객체 지향적이고 선택적 입력(Dart 3 이후 사운드 null 안전)이 있으며`async`/ `await`을 사용한 비동기 프로그래밍을 지원하고 기본 기계어 코드(모바일/데스크톱용)와 JavaScript(웹용)로 컴파일됩니다.
+Dart는 현대 언어의 최고의 기능을 결합합니다. 객체 지향적이고 선택적인 입력 기능(Dart 3 이후 사운드 null 안전성)이 있으며`async`/ `await`를 사용한 비동기 프로그래밍을 지원하고 네이티브 기계어 코드(모바일/데스크톱용)와 JavaScript(웹용)로 컴파일됩니다.
 ---
 
 ## 다트가 중요한 이유
@@ -943,12 +944,12 @@ FutureBuilder<List<Item>>(
 ### Flutter 배포 대상
 | 플랫폼 | 빌드 명령 | 출력 |
 |----------|--------------|---------|
-| **안드로이드** |  __보호_0__ / __보호_1__ | Play 스토어용 APK/AAB |
-| **iOS** |  __보호됨_2__ | 앱스토어용 IPA |
-| **웹** |  __보호됨_3__ | 정적 HTML/JS/CSS |
-| **창** |  __보호됨_4__ | MSIX 또는 독립 실행형 exe |
-| **맥OS** |  __보호됨_5__ | .app 번들 |
-| **리눅스** |  __보호_6__ | 바이너리 + 자산 |
+| **안드로이드** | `flutter build apk`/`flutter build appbundle`| Play 스토어용 APK/AAB |
+| **iOS** | `flutter build ipa`| 앱스토어용 IPA |
+| **웹** | `flutter build web`| 정적 HTML/JS/CSS |
+| **창** | `flutter build windows`| MSIX 또는 독립 실행형 exe |
+| **맥OS** | `flutter build macos`| .app 번들 |
+| **리눅스** | `flutter build linux`| 바이너리 + 자산 |
 ```bash
 # Build commands
 flutter build apk --release                    # Android APK
@@ -984,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | 백엔드 개발 | 기본 사용 사례가 아님 | Go, Node.js, Python |
 | 데이터 과학 / ML | 적합하지 않음 | 파이썬, R |
 | 시스템 프로그래밍 | 적합하지 않음 | C, C++, 러스트 |
+---
+
+## 종합 Q&A
+### Q1: Dart의 null 안전은 어떻게 작동하나요?
+**답:** Dart 2.12+에는 널 안전 기능이 있습니다. 변수는 기본적으로 null을 허용하지 않습니다. null을 허용하려면 `?`를 사용하세요.
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2: `Future`와 `Stream`의 차이점은 무엇인가요?
+**A:** `Future`는 단일 비동기 결과를 나타냅니다.  `Stream`는 일련의 비동기 이벤트를 나타냅니다.
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3: Flutter 앱에서 상태를 어떻게 관리하나요?
+**답:** 복잡성에 따른 다양한 접근 방식:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4: Dart에서는 확장 메서드가 어떻게 작동하나요?
+**A:** 확장은 상속 없이 기존 유형에 기능을 추가합니다.
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5: 성능이 뛰어난 Dart/Flutter 코드를 어떻게 작성하나요?
+**답:** 주요 사례:
+- 가능하다면`const`생성자를 사용하세요.
+- 위젯 재구축 방지 -`const`,`final`및`shouldRebuild`를 사용하세요. 
+- 큰 목록에는`ListView`대신 `ListView.builder`를 사용하세요.
+- Flutter DevTools를 사용한 프로필
+- 격리 스레드에서 값비싼 작업을 수행하려면 `compute()`를 사용하세요.
+-`setState`호출을 최소화하세요. 재구축이 필요한 항목을 구체적으로 명시하세요.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 유형이 안전한 API 클라이언트 구축
+**1단계: 문제 이해**
+데이터를 가져오고 올바른 유형의 개체를 반환하는 API 클라이언트를 만듭니다.
+**2단계: 접근 방식 파악**
+`fromJson` /`toJson`, async/await 및 Sealed 클래스와 함께 Dart 클래스를 사용하여 결과를 확인하세요.
+**3단계: 구현**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**4단계: 확인**
+모의 HTTP 클라이언트로 테스트합니다. 네트워크 오류 및 잘못된 응답에 대한 오류 처리를 확인합니다.
+### 문제 2: 디바운스를 사용한 반응형 검색 구현
+**1단계: 문제 이해**
+과도한 요청을 피하기 위해 API를 쿼리하지만 입력을 디바운싱하는 검색 필드를 구축하세요.
+**2단계: 접근 방식 파악**
+`debounceTime` 및 `distinct`와 함께 Dart Streams를 사용하세요.
+**3단계: 구현**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**4단계: 테스트**
+빠른 입력이 디바운스 기간 후에 API 호출을 한 번만 트리거하는지 확인하세요.
 ---
 
 ## 요약

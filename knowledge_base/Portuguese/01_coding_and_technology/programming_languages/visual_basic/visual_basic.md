@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Visual Básico
 Visual Basic (VB) é uma linguagem de programação desenvolvida pela Microsoft. Ele evoluiu através de várias gerações: o Visual Basic original (1991), o Visual Basic 6.0 (1998), o VB.NET (2002, parte do .NET Framework) e o Visual Basic ..NET (atual, agora chamado simplesmente de "Visual Basic" como parte do .NET). O VB foi projetado para ser acessível para iniciantes e para desenvolvimento rápido de aplicativos (RAD), com foco em interfaces gráficas de usuário e programação orientada a eventos.
-Hoje, o VB.NET continua como parte do ecossistema .NET junto com o C#, embora a Microsoft tenha indicado que o C# é a linguagem principal daqui para frente. O VB continua amplamente utilizado em ambientes corporativos, especialmente para aplicativos legados do Windows, automação de escritório (VBA) e ferramentas internas de negócios.
+Hoje, o VB.NET continua como parte do ecossistema .NET junto com o C#, embora a Microsoft tenha indicado que o C# é a linguagem principal daqui para frente. O VB continua amplamente utilizado em ambientes corporativos, especialmente para aplicativos herdados do Windows, automação de escritório (VBA) e ferramentas internas de negócios.
 ---
 
 ## Por que o Visual Basic é importante
@@ -813,6 +814,89 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 | Aprendendo a programar | Sintaxe muito acessível | Python (mais versátil) |
 | Novo desenvolvimento .NET | Possível, mas C# é preferido | C# |
 | Aplicativos multiplataforma | Não adequado | C#, Flutter, tecnologias web |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre VB6, VB.NET e VBA?
+**R:** Cada um serve a uma finalidade diferente:
+- **VB6**: Visual Basic clássico — baseado em COM, somente Windows, legado
+- **VB.NET**: linguagem .NET moderna — roda em CLR, OOP completo, parte do Visual Studio
+- **VBA**: Visual Basic for Applications — integrado ao Microsoft Office
+### Q2: Como o VBA automatiza o Excel?
+**R:** O VBA pode manipular células, intervalos e planilhas:
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### Q3: Como criar um aplicativo Windows Forms em VB.NET?
+**R:** Use o designer do Visual Studio:
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### Q4: Quais são as principais diferenças entre VB.NET e C#?
+**R:** Eles compartilham o mesmo tempo de execução e bibliotecas. Diferenças de sintaxe:
+- VB.NET: `Dim`, `Sub`, `Function`,`If...Then...End If`
+- C#: tipos primeiro, blocos `{}`, terminadores `;`
+- VB.NET não diferencia maiúsculas de minúsculas; C# diferencia maiúsculas de minúsculas
+### Q5: Ainda vale a pena aprender VB.NET?
+**R:** Para manutenção de aplicativos existentes, sim. Para novos projetos, C# é o preferido. O VBA continua essencial para a automação do Office.
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Automatizando um relatório Excel com VBA
+**Etapa 1: Entenda o problema**
+Gere um relatório mensal de vendas a partir de dados brutos.
+**Etapa 2: Identifique a abordagem**
+Use VBA para ler dados, calcular resumos e formatar saídas.
+**Etapa 3: Implementar**```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**Etapa 4: Estender**
+Adicione gráficos, formatação condicional e entrega de e-mail.
 ---
 
 ## Resumo

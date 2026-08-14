@@ -41,7 +41,7 @@ contribution:
 
 # C
 C to proceduralny język programowania ogólnego przeznaczenia stworzony przez Dennisa Ritchiego w Bell Labs w latach 1969–1973. Został zaprojektowany do implementacji systemu operacyjnego Unix i ponad 50 lat później pozostaje jednym z najczęściej używanych języków programowania. C zapewnia niski poziom dostępu do pamięci, minimalną standardową bibliotekę i przejrzyste mapowanie do instrukcji maszynowych – co czyni go podstawą, na której zbudowana jest większość współczesnych komputerów.
-C to język używany w systemach operacyjnych (Linux, jądro Windows, macOS), systemach wbudowanych, silnikach baz danych (SQLite, PostgreSQL), kompilatorach (CPython w Pythonie, MRI w Ruby) i praktycznie w każdym innym środowisku wykonawczym języka programowania. Zrozumienie C oznacza zrozumienie, jak faktycznie działają komputery.
+C to język systemów operacyjnych (Linux, jądro Windows, macOS), systemów wbudowanych, silników baz danych (SQLite, PostgreSQL), kompilatorów (CPython w Pythonie, MRI Ruby) i praktycznie każdego innego środowiska wykonawczego języka programowania. Zrozumienie C oznacza zrozumienie, jak faktycznie działają komputery.
 ---
 
 ## Dlaczego C ma znaczenie
@@ -205,7 +205,7 @@ double average(int count, ...) {
 ```
 
 | Region | Co tam się dzieje | Całe życie | Kto tym zarządza |
-|------------|----------------|----------|----------------|
+|------------|----------------|---------|----------------|
 | **Stos** | Zmienne lokalne, parametry funkcji | Dopóki funkcja nie zwróci | Kompilator (automatyczny) |
 | **Sterta** | przydziały malloc/calloc | Dopóki nie wywołasz funkcji free() | Ty (instrukcja) |
 | **Dane/BSS** | Zmienne globalne i statyczne | Cały czas trwania programu | Kompilator (automatyczny) |
@@ -548,7 +548,7 @@ jobs:
 ---
 
 ## Testowanie
-### Testowanie jednostkowe w prostym środowisku
+### Testowanie jednostkowe z prostą strukturą
 ```c
 #include <stdio.h>
 #include <assert.h>
@@ -855,5 +855,513 @@ make clean    # Removes build artifacts
 Większość kodu produkcyjnego jest przeznaczona dla C11 lub C17. C23 zapewnia nowoczesne udogodnienia, ale wdrożenie wymaga czasu.
 ---
 
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między wskaźnikami a tablicami w C?
+**O:** Tablice i wskaźniki są powiązane, ale różne. Tablica to ciągły blok pamięci o stałym rozmiarze znanym w czasie kompilacji. Wskaźnik to zmienna przechowująca adres pamięci. Tablice rozpadają się na wskaźniki po przekazaniu do funkcji, ale`sizeof(array)`podaje całkowity rozmiar, podczas gdy`sizeof(pointer)`podaje tylko rozmiar wskaźnika (4 lub 8 bajtów). Nazwy tablic nie są modyfikowalnymi wartościami — nie można wykonać`arr++`.
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### P2: Jak prawidłowo zarządzać pamięcią i unikać wycieków?
+**A:** Każdy`malloc`/`calloc`musi mieć odpowiedni`free`. Typowe błędy: zapomnienie o zwolnieniu (wyciek), dwukrotne zwolnienie (niezdefiniowane zachowanie), użycie pamięci po zwolnieniu (użycie po zwolnieniu) i niezatwierdzenie zwracanej wartości`malloc`(NULL w przypadku niepowodzenia). Najlepsza praktyka: przydzielaj i zwalniaj w tym samym module, używaj wzorca „goto cleanup” do obsługi błędów i zawsze ustawiaj zwolnione wskaźniki na NULL.
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### P3: Jakie są najlepsze praktyki dotyczące obsługi błędów w języku C?
+**A:** C nie ma wyjątków. Obsługa błędów wykorzystuje wartości zwracane (kody błędów, wskaźniki NULL, wartości ujemne). Standardowy wzorzec: funkcje zwracają kod stanu lub NULL w przypadku niepowodzenia i ustawiają`errno`dla wywołań systemowych. Użyj wzorca „goto cleanup” do czyszczenia zasobów w przypadku błędów. Zawsze sprawdzaj zwracane wartości`malloc`,`fopen`i inne funkcje, które mogą zakończyć się niepowodzeniem.
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### P4: Czym struktury, unie i pola bitowe różnią się pod względem układu pamięci?
+**A:** Konstrukcje układają elementy sekwencyjnie z możliwym uzupełnieniem w celu wyrównania. Unie nakładają się na wszystkie elementy w tym samym miejscu pamięci — rozmiar jest równy największemu elementowi. Pola bitowe pakują wiele wartości w jedną liczbę całkowitą. Struktury służą do heterogenicznych danych, unie do rozróżniania typów lub oszczędzania miejsca, gdy aktywne jest tylko jedno pole, a pola bitowe do kompaktowego przechowywania flag.
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### P5: Co to są wskaźniki funkcji i kiedy należy ich używać?
+**O:** Wskaźniki funkcji przechowują adres funkcji i umożliwiają wywołania zwrotne, polimorfizm i architekturę wtyczek. Stanowią one podstawę podejścia C do funkcji wyższego rzędu (takich jak`qsort`,`bsearch`). Zadeklaruj je za pomocą składni:`return_type (*name)(parameter_types)`.
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Zaimplementuj tablicę dynamiczną (wektorową)
+**Opis problemu:** Zaimplementuj dynamiczną tablicę w C, która automatycznie rośnie po dodaniu elementów, obsługuje amortyzowane dołączanie O(1) i zapewnia odpowiednie czyszczenie. Jest to odpowiednik języka C++`std::vector`w języku C.
+**Krok 1 — Zrozum problem:**
+Tablica dynamiczna wymaga: (1) bufora przydzielonego do sterty, (2) śledzenia rozmiaru (używane elementy) i pojemności (przydzielone miejsca), (3) ponownej alokacji, gdy rozmiar osiągnie pojemność, (4) odpowiedniego czyszczenia pamięci. Współczynnik wzrostu 2x daje zamortyzowany dodatek O(1).
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj`malloc`do początkowej alokacji,`realloc`do wzrostu.
+- Przechowuj wskaźnik danych, rozmiar i pojemność w strukturze.
+- Rozwijaj się, podwajając pojemność, gdy`size == capacity`.
+- Zapewnij operacje`push`,`pop`,`get`,`set`i `free`.
+**Krok 3 — Wdróż rozwiązanie:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Amortyzowane wypychanie O(1): podwojenie oznacza, że każdy element jest kopiowany łącznie maksymalnie O(log n) razy.
+- Sprawdzanie granic w`vec_get`i`vec_pop`wcześnie wychwytuje błędy — jest to niezbędne w C, gdzie nie ma siatki bezpieczeństwa w czasie wykonywania.
+- Pamięć: po 100 naciśnięciach, zaczynając od pojemności 4, pojemność osiąga 128 (4 → 8 → 16 → 32 → 64 → 128).
+- Produkcja: użyj`shrink_to_fit`(realokacja do dokładnego rozmiaru) po zakończeniu powiększania, aby odzyskać nieużywaną pamięć.
+### Problem 2: Zbuduj prostą tabelę mieszającą
+**Opis problemu:** Zaimplementuj tabelę skrótów z kluczami łańcuchowymi i wartościami całkowitymi, używając oddzielnego łączenia łańcuchowego w celu rozwiązania kolizji. Obsługa operacji wstawiania, wyszukiwania i usuwania.
+**Krok 1 — Zrozum problem:**
+Tabela skrótów odwzorowuje klucze na indeksy tablicy za pomocą funkcji skrótu. Kolizje (różne klucze przypisane do tego samego indeksu) są rozwiązywane za pomocą oddzielnego łączenia w łańcuch: każdy segment jest połączoną listą wpisów. Potrzebujemy: funkcji skrótu, wstawiania, wyszukiwania, usuwania i czyszczenia.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj skrótu FNV-1a, aby zapewnić dobrą dystrybucję kluczy łańcuchowych.
+- Tablica wskaźników segmentów (połączone głowy list).
+- Śledzenie współczynnika obciążenia; zmienić rozmiar, gdy współczynnik obciążenia przekracza próg.
+- Wszystkie operacje to średnia O(1), najgorszy przypadek O(n).
+**Krok 3 — Wdróż rozwiązanie:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Średnia O(1) dla wstawiania/wyszukiwania/usuwania z dobrą funkcją skrótu i rozsądnym współczynnikiem obciążenia.
+- FNV-1a zapewnia doskonałą dystrybucję kluczy łańcuchowych przy minimalnych obliczeniach.
+- Technika wskaźnik-wskaźnik (`Entry **pp`) w`hashmap_remove`elegancko obsługuje usuwanie zarówno początku listy, jak i środkowej listy, bez specjalnych przypadków.
+- Produkcja: dodaj ponowne mieszanie, gdy współczynnik obciążenia przekracza próg. Użyj otwartego adresowania (sondowanie liniowe), aby uzyskać lepszą wydajność pamięci podręcznej.
+### Problem 3: Zaimplementuj bufor pierścieniowy dla producenta-konsumenta
+**Opis problemu:** Zaimplementuj wolny od blokad bufor pierścieniowy jednego producenta i jednego konsumenta w języku C, aby zapewnić wysoką wydajność komunikacji między wątkami bez dynamicznej alokacji podczas działania.
+**Krok 1 — Zrozum problem:**
+Bufor pierścieniowy (bufor kołowy) wykorzystuje tablicę o stałym rozmiarze z indeksami odczytu i zapisu. Gdy bufor jest pełny, moduł zapisujący blokuje lub nadpisuje. W przypadku SPSC (single-producer single-consumer) zamiast blokad możemy zastosować operacje atomowe, aby uzyskać maksymalną przepustowość.
+**Krok 2 — Zidentyfikuj podejście:**
+- Tablica o stałym rozmiarze przydzielana raz podczas inicjalizacji.
+-`head`(pozycja odczytu) i`tail`(pozycja zapisu) jako indeksy atomowe.
+- Zaliczki producenta`tail`; zaliczki konsumenckie`head`.
+- Bufor jest pusty, gdy`head == tail`; pełny, gdy`(tail + 1) % capacity == head`.
+- Użyj atomów C11 z odpowiednim uporządkowaniem pamięci.
+**Krok 3 — Wdróż rozwiązanie:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Bez blokady: tylko operacje atomowe - bez muteksów, bez przełączania kontekstu.
+- Uporządkowanie pamięci:`release`przy zapisie zapewnia widoczność danych przed aktualizacją indeksu; `acquire`przy odczycie gwarantuje, że zobaczymy dane po odczytaniu indeksu.
+- Pojemność mocy 2: umożliwia`& (capacity - 1)`zamiast`% capacity`— znacznie szybciej.
+- Przepustowość: miliardy operacji na sekundę na nowoczesnym sprzęcie.
+- Produkcja: dodaj dopełnienie między`head`i `tail`, aby zapobiec fałszywemu udostępnianiu (każdy na własnej linii pamięci podręcznej).
+---
+
 ## Streszczenie
-C jest podstawą współczesnej informatyki. Zapewnia maksymalną kontrolę nad sprzętem przy minimalnym obciążeniu abstrakcją. Kosztem tej kontroli jest odpowiedzialność — samodzielnie zarządzasz pamięcią, sprawdzasz granice i radzisz sobie z błędami. W przypadku programowania systemów, programowania systemów wbudowanych i wszędzie tam, gdzie liczą się ograniczenia wydajności i zasobów, język C pozostaje niezrównany. W pozostałych przypadkach języki wyższego poziomu zbudowane na bazie języka C są zazwyczaj bardziej produktywnymi wyborami.
+C jest podstawą współczesnej informatyki. Zapewnia maksymalną kontrolę nad sprzętem przy minimalnym obciążeniu abstrakcją. Kosztem tej kontroli jest odpowiedzialność — samodzielnie zarządzasz pamięcią, sprawdzasz granice i radzisz sobie z błędami. W przypadku programowania systemów, programowania systemów wbudowanych i wszędzie tam, gdzie liczą się ograniczenia wydajności i zasobów, język C pozostaje niezrównany. W pozostałych przypadkach języki wyższego poziomu zbudowane na bazie języka C są zwykle bardziej produktywnymi wyborami.

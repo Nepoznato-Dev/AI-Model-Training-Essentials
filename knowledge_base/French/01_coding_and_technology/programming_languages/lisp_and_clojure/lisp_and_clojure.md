@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Lisp & Clojure"
-description : "Référence complète pour le langage de programmation Lisp et Clojure couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Lisp & Clojure"
+description: "Comprehensive reference for the Lisp and Clojure programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [lisp-and-clojure, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "29 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [lisp-and-clojure, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lisp et Clojure
 Lisp est le deuxième plus ancien langage de programmation de haut niveau encore utilisé (après Fortran), créé par John McCarthy en 1958. Il a été le pionnier de nombreux concepts désormais considérés comme acquis : le garbage collection, la récursivité, les structures de données arborescentes, le typage dynamique et l'idée de programmes en tant que données (homoïconicité). La particularité de Lisp est sa syntaxe : le code est écrit sous forme de parenthèses imbriquées (expressions S), ce qui rend le langage trivialement analysable et permet une métaprogrammation puissante via des **macros**.
 Clojure est un dialecte Lisp moderne conçu par Rich Hickey en 2007. Il fonctionne sur JVM (également ClojureScript pour JavaScript), englobe la programmation fonctionnelle, l'immuabilité et la concurrence, et offre une interopérabilité Java transparente. Clojure est utilisé dans le développement Web, le traitement des données et les systèmes financiers.
@@ -693,5 +698,140 @@ native-image --no-fallback \
 | Science des données | Pas l'écosystème | Python, R |
 ---
 
+## Questions et réponses synthétiques
+### Q1 : Pourquoi les programmes Lisp/Clojure ont-ils autant de parenthèses ?
+**A :** Les parenthèses représentent des expressions S — une syntaxe uniforme où le code et les données ont la même structure (homoïconicité) :
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2 : Comment Clojure gère-t-il différemment l'état et la mutabilité ?
+**R :** Clojure utilise par défaut des données immuables. Pour les changements d'état contrôlés, il fournit des types de référence :
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3 : Quelles sont les structures de données persistantes de Clojure ?
+**R :** Toutes les collections Clojure sont persistantes (immuables, structurellement partagées) :
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4 : Comment fonctionnent les macros Clojure ?
+**R :** Les macros reçoivent du code non évalué (sous forme de données), le transforment et renvoient un nouveau code :
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5 : Comment gérer la simultanéité dans Clojure ?
+**R :** Clojure fournit plusieurs primitives de concurrence :
+-`atom`— changements indépendants et synchrones
+-`ref`+`dosync`— changements transactionnels coordonnés
+-`agent`— modifications asynchrones et indépendantes
+- Canaux `core.async` – Concurrence de type CSP
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Traitement d'un pipeline de données
+**Étape 1 : Comprendre le problème**
+Lisez les données, filtrez, transformez et agrégez via un pipeline.
+**Étape 2 : Identifiez l'approche**
+Utilisez les macros de filetage de Clojure (`->>`) et les transducteurs.
+**Étape 3 : Mettre en œuvre**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Étape 4 : Optimiser**
+Les transducteurs évitent de créer des séquences intermédiaires : ils composent les transformations en un seul passage.
+### Problème 2 : Création d'un serveur Web simple
+**Étape 1 : Comprendre le problème**
+Créez un serveur HTTP de base à l'aide de Ring/Compojure.
+**Étape 2 : Identifiez l'approche**
+Utilisez l'adaptateur Ring et le routage Compojure.
+**Étape 3 : Mettre en œuvre**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Étape 4 : Prolonger**
+Ajoutez un middleware pour la journalisation, l'analyse JSON, l'authentification et la gestion des erreurs.
+---
+
 ## Résumé
-Lisp est le grand-parent de la conception des langages de programmation : la plupart des langages modernes empruntent des idées dont Lisp a été le pionnier il y a des décennies. Clojure fait entrer Lisp dans l'ère moderne avec l'immuabilité, la prise en charge de la concurrence et une intégration transparente JVM. Bien que Lisp/Clojure ne soit pas courant, son apprentissage changera fondamentalement votre façon de penser la programmation. Le système macro à lui seul vaut l’investissement : il révèle des possibilités que d’autres langues ne peuvent égaler.
+Lisp est le grand-parent de la conception des langages de programmation : la plupart des langages modernes empruntent des idées lancées par Lisp il y a des décennies. Clojure fait entrer Lisp dans l'ère moderne avec l'immuabilité, la prise en charge de la concurrence et une intégration JVM transparente. Bien que Lisp/Clojure ne soit pas courant, son apprentissage changera fondamentalement votre façon de penser la programmation. Le système macro à lui seul vaut l’investissement : il révèle des possibilités que d’autres langues ne peuvent égaler.

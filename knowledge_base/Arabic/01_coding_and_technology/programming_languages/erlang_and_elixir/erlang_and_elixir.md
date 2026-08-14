@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "إرلانج وإكسير"
-الوصف: "مرجع شامل للغة برمجة Erlang وElixir يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Erlang & Elixir"
+description: "Comprehensive reference for the Erlang and Elixir programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [الإكسير والإكسير، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "38 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [erlang-and-elixir, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "38 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # إرلانج وإكسير
 تم إنشاء Erlang بواسطة شركة Ericsson في عام 1986 لتشغيل مفاتيح الهاتف - وهو ما يفسر سبب تعاملها مع التزامن والتسامح مع الأخطاء والأنظمة الموزعة بشكل أفضل من أي شيء آخر تقريبًا. عمليات Erlang خفيفة الوزن ومعزولة ولا تتواصل إلا من خلال تمرير الرسائل. عندما تتعطل العملية، يقوم المشرف بإعادة تشغيلها. إن فلسفة "دعها تتعطل" تنتج أنظمة تعمل لسنوات دون توقف.
 Elixir هي لغة حديثة تم إنشاؤها على رأس Erlang's VM (BEAM) بواسطة Jose Valim في عام 2012. وهي تحافظ على كل ما تقدمه Erlang - التزامن والتسامح مع الأخطاء والتوزيع - ولكنها تضيف بناء جملة سهلاً وبرمجة فوقية وأدوات ممتازة (مدير حزم Mix وسجل حزم Hex). يُستخدم Elixir على نطاق واسع لتطبيقات الويب (عبر إطار عمل Phoenix)، وأنظمة الوقت الفعلي، والأجهزة المدمجة (عبر Nerves).
@@ -46,7 +51,7 @@ Elixir هي لغة حديثة تم إنشاؤها على رأس Erlang's VM (BEA
 - **إعادة تحميل التعليمات البرمجية الساخنة**: تحديث الأنظمة قيد التشغيل دون توقف. أمر بالغ الأهمية للاتصالات وتطبيقات الوقت الحقيقي.
 - **مدة تشغيل تسع تسعات**: حققت أنظمة Erlang موثوقية بنسبة 99.9999999% في الإنتاج.
 - **Phoenix Framework (Elixir)**: أحد أطر عمل الويب الأكثر إنتاجية، مع قنوات مدمجة في الوقت الفعلي.
-- **LiveView (Elixir)**: إنشاء واجهات مستخدم ويب غنية في الوقت الفعلي عبر اتصالات WebSocket دون كتابة JavaScript.
+- **LiveView (Elixir)**: أنشئ واجهات مستخدم ويب غنية في الوقت الفعلي عبر اتصالات WebSocket دون كتابة JavaScript.
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|
@@ -590,18 +595,18 @@ end
 ### أوامر مزيج المفاتيح
 | الأمر | الوصف |
 |---------|------------|
-|  __محمي_0__ | إنشاء مشروع إكسير جديد |
-|  __محمي_1__ | إنشاء تطبيق ويب Phoenix جديد |
-|  __محمي_2__ | جلب التبعيات |
-|  __محمي_3__ | تجميع المشروع |
-|  __محمي_4__ | تشغيل الاختبارات |
-|  __محمي_5__ | قم بإجراء الاختبارات بمخرجات مطولة |
-|  __محمي_6__ | تشغيل التحليل الثابت |
-|  __محمي_7__ | تشغيل فحص النوع |
-|  __محمي_8__ | رمز التنسيق |
-|  __محمي_9__ | توليد الوثائق |
-|  __محمي_10__ | بناء الافراج |
-|  __محمي_11__ | ابدأ REPL مع تحميل المشروع |
+| `mix new my_app`| إنشاء مشروع إكسير جديد |
+| `mix phx.new my_app`| إنشاء تطبيق ويب Phoenix جديد |
+| `mix deps.get`| جلب التبعيات |
+| `mix compile`| تجميع المشروع |
+| `mix test`| تشغيل الاختبارات |
+| `mix test --trace`| قم بإجراء الاختبارات بمخرجات مطولة |
+| `mix credo`| تشغيل التحليل الثابت |
+| `mix dialyzer`| تشغيل فحص النوع |
+| `mix format`| رمز التنسيق |
+| `mix docs`| توليد الوثائق |
+| `mix release`| بناء الافراج |
+| `iex -S mix`| ابدأ REPL مع تحميل المشروع |
 ### منسق الكود (.formatter.exs)
 ```elixir
 # .formatter.exs
@@ -842,9 +847,9 @@ end
 ### أدوات التنميط
 | أداة | الغرض | الاستخدام |
 |------|---------|------|
-| **:eprof** | التنميط على مستوى الوظيفة |  __محمي_0__ ثم الملف الشخصي |
-| **:fprof** | تفصيل الرسم البياني للمكالمات |  __محمي_1__ |
-| **:المراقب** | مراقب النظام البصري |  __محمي_2__ في IEx |
+| **:eprof** | التنميط على مستوى الوظيفة | `:eprof.start()`ثم الملف الشخصي |
+| **:fprof** | تفصيل الرسم البياني للمكالمات | `:fprof.profile(fn -> ... end)`|
+| **:المراقب** | مراقب النظام البصري | `:observer.start()`في IEx |
 | ** مقعد ** | مكتبة المقارنة | أضف إلى ديبس |
 ### قياس الأداء مع Benchee
 ```elixir
@@ -921,6 +926,109 @@ CMD ["bin/my_app", "start"]
 | علم البيانات / تعلم الآلة | ليس النظام البيئي | بايثون، ر |
 | تطبيقات الجوال | غير مناسب | سويفت، كوتلين، دارت |
 | واجهات برمجة تطبيقات REST البسيطة | ممكن ولكن مبالغة في الخدمات الصغيرة | اذهب، Node.js، بايثون |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: كيف تعمل فلسفة إرلانج "دع الأمر يتعطل"؟
+**ج:** بدلاً من البرمجة الدفاعية، يسمح Erlang بتعطل العمليات وإعادة تشغيلها عبر المشرفين:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### السؤال الثاني: كيف تعمل خطوط أنابيب الإكسير؟
+**A:** يقوم عامل التشغيل`|>`بتمرير نتيجة دالة واحدة كوسيطة أولى إلى الدالة التالية:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### س3: ما الفرق بين إرلانج وإكسير؟
+**أ:** يعمل Elixir على Erlang VM (BEAM) باستخدام الصيغة الحديثة:
+- الإكسير: مشغل الأنابيب، وحدات الماكرو، البروتوكولات، استيفاء السلسلة
+- Erlang: بناء جملة أبسط، OTP مدمج، تم اختباره بشكل أكبر في المعركة
+- كلاهما يشتركان في نفس نموذج التزامن، VM، والنظام البيئي
+### س4: كيف تعمل GenServers في Elixir؟
+**A:** GenServer هو التجريد القياسي للعمليات ذات الحالة:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### س5: كيف أتعامل مع الأخطاء في الإكسير؟
+**A:** استخدم`try/rescue`للاستثناءات، و`{:ok, result} | {:error, reason}` لحالات الفشل المتوقعة:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: بناء مخزن ذو قيمة أساسية متسامح مع الأخطاء
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء مخزن ذو قيمة أساسية ينجو من أعطال العملية.
+**الخطوة 2: تحديد النهج**
+استخدم GenServer مع المشرف.
+**الخطوة 3: التنفيذ**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**الخطوة 4: التحقق**
+قم بإنهاء العملية وتحقق من إعادة تشغيلها بحالة جديدة.
+### المشكلة الثانية: مكشطة الويب المتزامنة
+**الخطوة الأولى: فهم المشكلة**
+جلب عناوين URL متعددة في وقت واحد وجمع النتائج.
+**الخطوة 2: تحديد النهج**
+استخدم مهام Elixir للتنفيذ المتزامن.
+**الخطوة 3: التنفيذ**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**الخطوة 4: التحسين**
+قم بإضافة تحديد المعدل، وإعادة المحاولة، والبث لقوائم عناوين URL الكبيرة.
 ---
 
 ## ملخص

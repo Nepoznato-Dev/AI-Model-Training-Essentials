@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # R
 R, istatistiksel hesaplama ve veri analizi için özel olarak tasarlanmış bir programlama dili ve ortamıdır. 1993 yılında Auckland Üniversitesi'nden Ross Ihaka ve Robert Gentleman tarafından oluşturulan (dolayısıyla "R"), S dilinin önemli uzantılara sahip bir uygulamasıdır. R açık kaynaktır ve R Çekirdek Ekibi tarafından korunur. Akademi, sağlık, finans ve hükümet alanlarındaki istatistikçiler, veri analistleri ve araştırmacılar için standart bir araçtır.
 R, veri işleme, istatistiksel modelleme, görselleştirme ve raporlama konularında uzmandır. Paket ekosistemi (CRAN), şimdiye kadar tasarlanmış hemen hemen her istatistiksel yöntemi kapsayan 20.000'den fazla pakete sahiptir.
@@ -53,8 +54,8 @@ R, veri işleme, istatistiksel modelleme, görselleştirme ve raporlama konular�
 ## Takaslar
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
-| **Performans** | Varsayılan olarak tek iş parçacıklı; büyük veri kümeleri için yavaş | C++ entegrasyonu için`data.table`, paralel paketler veya Rcpp kullanın |
-| **Bellek kullanımı** | Tüm veri kümelerini RAM'e yükler | Çekirdek dışı işlemler için`data.table::fread`ok paketini kullanın |
+| **Performans** | Varsayılan olarak tek iş parçacıklı; büyük veri kümeleri için yavaş | C++ entegrasyonu için `data.table`, paralel paketler veya Rcpp kullanın |
+| **Bellek kullanımı** | Tüm veri kümelerini RAM'e yükler | Çekirdek dışı işleme için`data.table::fread`ok paketini kullanın |
 | **Genel amaçlı bir dil değildir** | Web geliştirme, sistem programlama veya uygulamalar için garip | İstatistiksel olmayan görevler için Python, Go veya JavaScript kullanın |
 | **Tutarsız sözdizimi** | Temel R'nin tuhaflıkları var; farklı paketler farklı kurallar kullanır | Tutarlılık için tidyverse kullanın |
 | **İş piyasası** | Çoğunlukla akademik/araştırma rolleri | Veri bilimi rolleri giderek daha fazla Python'u tercih ediyor |
@@ -603,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Üretim ML sistemleri | Dağıtım için tasarlanmamıştır | Python, Java |
 | Web geliştirme | Uygun değil | JavaScript, Python |
 | Büyük ölçekli veri işleme | Belleğe bağlı | Python (PySpark), SQL |
+---
+
+## Sentetik Soru-Cevap
+### S1: Atama açısından`<-`ile`=`arasındaki fark nedir?
+**A:** Her ikisi de değerleri atar, ancak`<-`deyimsel R atama operatörüdür. İşlev çağrılarının içi de dahil olmak üzere tüm bağlamlarda çalışır:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### S2: R'deki eksik verileri nasıl halledebilirim?
+**A:** R, eksik değerler için `NA`'yi kullanır. Çoğu işlevin bir`na.rm`parametresi vardır:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### S3:`lapply`ve`sapply`ve`vapply`karşılaştırmalarını ne zaman kullanmalıyım?
+**C:** Hepsi bir liste/vektör üzerinden bir fonksiyon uygular ancak çıktı açısından farklılık gösterir:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### S4: ggplot2 ile nasıl etkili görselleştirmeler oluşturabilirim?
+**C:** Grafik gramerini takip edin; veri estetiğini görsel özelliklerle eşleştirin:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### S5: Büyük veri kümeleri için verimli R kodunu nasıl yazarım?
+**C:** Temel uygulamalar:
+- Vektörleri önceden tahsis edin:`c()`ile büyütmek yerine`x <- numeric(n)`
+- Büyük veri kümeleri için`data.table`kullanın (data.frame'den 100 kat daha hızlı)
+- İşlemleri vektörize edin — mümkün olduğunca döngülerden kaçının
+- Tip güvenliği için`sapply`yerine`vapply`kullanın
+-`Rprof()`veya`profvis`içeren profil 
+- Çekirdek dışı veriler için`arrow`paketini düşünün
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Dağınık Veri Kümesini Temizleme ve Analiz Etme
+**1. Adım: Sorunu Anlayın**
+Eksik değerlere, tutarsız türlere ve aykırı değerlere sahip bir veri çerçevemiz var. Bunu temizlememiz ve özet istatistikleri hesaplamamız gerekiyor.
+**2. Adım: Yaklaşımı Belirleyin**
+Düzenli fiiller kullanın:`filter`,`mutate`,`summarize`ve`group_by`.
+**3. Adım: Uygulama**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**4. Adım: Doğrulayın**
+Önceki/sonraki satır sayılarını kontrol edin, aralıkları doğrulayın ve toplamları kaynak verilere göre çapraz kontrol edin.
+### Problem 2: Doğrusal Regresyon Modeli Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Birden fazla öngörücüden sürekli bir sonuç değişkeni tahmin edin.
+**2. Adım: Yaklaşımı Belirleyin**
+Doğrusal regresyon için`lm()`kullanın, varsayımları kontrol edin ve model uygunluğunu değerlendirin.
+**3. Adım: Uygulama**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**4. Adım: Değerlendirin**
+Desenler için R-kare, artık grafikleri ve model karşılaştırması için AIC'yi kontrol edin.
+### Sorun 3: Tekrarlanabilir Bir Rapor Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Analizi, görselleştirmeleri ve anlatı metnini tekrarlanabilir bir biçimde birleştiren bir rapor oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Kod parçalarını metinle birleştirmek için R Markdown'ı (veya Quarto) kullanın.
+**3. Adım: Uygulama**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+örgü::opts_chunk$set(echo = YANLIŞ, uyarı = YANLIŞ)
+kütüphane(düzenli)
+veri <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(veri, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**4. Adım: Oluşturma**
+`rmarkdown::render("report.Rmd")`bağımsız bir HTML belgesi üretir.
 ---
 
 ## Özet

@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "SQL"
-description: "مرجع شامل للغة برمجة SQL يغطي نظرة عامة، والمقايضات، وأساسيات بناء الجملة، والنظام البيئي، ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "SQL"
+description: "Comprehensive reference for the SQL programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [SQL، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "26 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [sql, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
 SQL (لغة الاستعلام الهيكلية) هي لغة خاصة بالمجال مصممة لإدارة البيانات والاستعلام عنها في قواعد البيانات العلائقية. تم تطوير SQL لأول مرة في IBM في السبعينيات وتم توحيده في عام 1987، ويظل SQL هو الواجهة الأساسية بين التطبيقات وبياناتها. كل نظام رئيسي لإدارة قواعد البيانات العلائقية (RDBMS) - PostgreSQL، وMySQL، وSQL Server، وOracle، وSQLite - يستخدم SQL كلغة استعلام خاصة به.
 SQL ليست لغة برمجة للأغراض العامة. لن تكتب تطبيق ويب في SQL. ولكن إذا كان تطبيقك يقوم بتخزين البيانات - وجميع التطبيقات تقريبًا تقوم بذلك - فإن لغة SQL هي اللغة التي تستخدمها لاسترداد تلك البيانات وتحويلها وإدارتها. يمكن القول إنها المهارة التقنية الأكثر فائدة عالميًا بعد البرمجة العامة.
@@ -311,7 +316,7 @@ ORDER BY order_count DESC;
 **قائمة التحقق من التحسين:**
 | العدد | العَرَض | إصلاح |
 |-------|---------|-----|
-| مسح متسلسل على طاولة كبيرة |  __محمي_0__ في الشرح | أضف الفهرس المناسب |
+| مسح متسلسل على طاولة كبيرة | `Seq Scan`في الشرح | أضف الفهرس المناسب |
 | فهرس مفقود في عمود WHERE | مسح الجدول كاملا | إنشاء فهرس على الأعمدة التي تمت تصفيتها |
 | اختر * النفايات | جلب الأعمدة غير الضرورية | حدد الأعمدة المطلوبة فقط |
 | تحويل النوع الضمني | الفهرس غير مستخدم | أنواع المطابقة في المقارنات |
@@ -524,7 +529,7 @@ WHERE '2024-06-15' BETWEEN valid_from AND COALESCE(valid_to, '9999-12-31');
 
 ## الأداء: الفهارس وتخطيط الاستعلام
 ### كيف تعمل الفهارس
-الفهرس عبارة عن بنية بيانات (عادةً شجرة B) تتيح لقاعدة البيانات العثور على الصفوف دون فحص الجدول بأكمله.
+الفهرس عبارة عن بنية بيانات (عادةً ما تكون شجرة B) تتيح لقاعدة البيانات العثور على الصفوف دون فحص الجدول بأكمله.
 ```sql
 -- Without index: database scans every row (slow for large tables)
 SELECT * FROM users WHERE email = 'alice@mail.com';
@@ -535,10 +540,10 @@ CREATE INDEX idx_users_email ON users(email);
 
 | نوع الفهرس | الأفضل لـ | مثال |
 |-----------|---------|---------|
-| **B-tree** (افتراضي) | استعلامات المساواة والمدى |  __محمي_0__ |
-| ** التجزئة ** | المساواة التامة فقط |  __محمي_1__ |
-| **جين** | البحث عن النص الكامل، المصفوفات، JSON |  __محمي_2__ |
-| **GiST** | بيانات هندسية/مكانية |  __محمي_3__ |
+| **B-tree** (افتراضي) | استعلامات المساواة والمدى | `WHERE age > 25 AND age < 35`|
+| ** التجزئة ** | المساواة التامة فقط | `WHERE email = 'x@y.com'`|
+| **جين** | البحث عن النص الكامل، المصفوفات، JSON | `WHERE description @@ 'search term'`|
+| **GiST** | بيانات هندسية/مكانية | `WHERE location <-> point(x,y) < 1000`|
 ### قراءة خطط الاستعلام
 ```sql
 -- PostgreSQL: see how the database plans to execute your query
@@ -556,11 +561,11 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 ## لهجات SQL
 | ميزة | بوستجرس كيو ال | ماي إس كيو إل | خادم SQL | سكليتي |
 |---------|----------|------|------------|--------|
-| الزيادة التلقائية |  __محمي_0__ / __محمي_1__ |  __محمي_2__ |  __محمي_3__ |  __محمي_4__ |
-| سلسلة متسلسلة |  __محمي_5__ |  __محمي_6__ |  __محمي_7__ أو __محمي_8__ |  __محمي_9__ |
-| وظائف التاريخ |  __محمي_10__ , __محمي_11__ |  __محمي_12__ , __محمي_13__ |  __محمي_14__ , __محمي_15__ |  __محمي_16__ |
-| دعم JSON | ممتاز ( __محمي_17__ ) | جيد ( __محمي_18__ ) | جيد ( __محمي_19__ ) | الأساسية (`JSON1`) |
-| البحث عن النص الكامل | مدمج ( __محمي_21__ ) | مدمج | مدمج | محدودة |
+| الزيادة التلقائية | `BIGSERIAL`/`GENERATED ALWAYS`| `AUTO_INCREMENT`| `IDENTITY`| `INTEGER PRIMARY KEY AUTOINCREMENT`|
+| سلسلة متسلسلة | `\|\|`| `CONCAT()`| `+`أو`CONCAT()`| `\|\|`|
+| وظائف التاريخ | `NOW()`,`AGE()`| `NOW()`,`DATEDIFF()`| `GETDATE()`,`DATEDIFF()`| `DATE('now')`|
+| دعم JSON | ممتاز (`jsonb`) | جيد (`JSON`) | جيد (`JSON`) | الأساسية (`JSON1`) |
+| البحث عن النص الكامل | مدمج (`tsvector`) | مدمج | مدمج | محدودة |
 | وظائف النافذة | نعم | نعم (8.0+) | نعم | نعم |
 ---
 
@@ -599,5 +604,148 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | تحجيم أفقي هائل | من الصعب تقسيم قواعد بيانات SQL | كاساندرا، دينامو دي بي، كوكروتش دي بي |
 ---
 
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين`WHERE`و`HAVING`؟
+**A:** يقوم`WHERE`بتصفية الصفوف قبل التجميع؛  يقوم`HAVING`بتصفية المجموعات بعد التجميع:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### السؤال الثاني: كيف تختلف وظائف النافذة عن GROUP BY؟
+**أ:** تحسب وظائف النافذة عبر الصفوف دون طيها:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### س3: كيف يمكنني تحسين الاستعلامات البطيئة؟
+**أ:** الاستراتيجيات الرئيسية:
+- إضافة فهارس على الأعمدة المستخدمة في`WHERE`و`JOIN`و`ORDER BY`
+- تجنب`SELECT *`- حدد الأعمدة المطلوبة فقط
+- استخدم`EXPLAIN`/`EXPLAIN ANALYZE`لقراءة خطط الاستعلام
+- استبدال الاستعلامات الفرعية بـ JOINs حيثما أمكن ذلك
+- استخدم CTEs لسهولة القراءة (عادة لا توجد عقوبة على الأداء)
+- تجنب الوظائف في الأعمدة المفهرسة في المكان: استخدم`WHERE date >= '2024-01-01'`وليس `WHERE YEAR(date) = 2024`
+### س4: ما هي CTEs ومتى يجب أن أستخدمها؟
+**أ:** تنشئ تعبيرات الجدول الشائعة مجموعات نتائج مؤقتة مسماة:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### س5: كيف أتعامل مع القيم الخالية بشكل صحيح؟
+**A:** يمثل NULL غير معروف — فهو لا يساوي أي شيء، بما في ذلك نفسه:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة 1: العثور على أعلى N لكل مجموعة
+**الخطوة الأولى: فهم المشكلة**
+ابحث عن أعلى 3 موظفين أجرًا في كل قسم.
+**الخطوة 2: تحديد النهج**
+استخدم وظيفة النافذة مع تقسيم`ROW_NUMBER()`حسب القسم.
+**الخطوة 3: التنفيذ**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**الخطوة 4: التحقق**
+تأكد من أن كل قسم يحتوي على 3 صفوف على الأكثر. تعامل مع الروابط باستخدام`DENSE_RANK()`إذا لزم الأمر.
+### المشكلة الثانية: إنشاء تقرير النمو على أساس سنوي
+**الخطوة الأولى: فهم المشكلة**
+حساب الإيرادات الشهرية ونسبة النمو على أساس سنوي.
+**الخطوة 2: تحديد النهج**
+استخدم`DATE_TRUNC`للتجميع ووظيفة النافذة`LAG()`لمقارنة العام السابق.
+**الخطوة 3: التنفيذ**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**الخطوة 4: التحقق**
+تحقق من أن أول 12 شهرًا خالية من العام السابق. التحقق من صحة نسب النمو مقابل الأرقام المعروفة.
+### المشكلة 3: تحويل الصفوف إلى الأعمدة
+**الخطوة الأولى: فهم المشكلة**
+تحويل أعداد الحالة من الصفوف إلى الأعمدة.
+**الخطوة 2: تحديد النهج**
+استخدم التجميع الشرطي (`CASE` داخل `SUM`).
+**الخطوة 3: التنفيذ**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**الخطوة 4: تمديد**
+إضافة أعمدة النسبة المئوية والإجماليات الجارية.
+---
+
 ## ملخص
-SQL هي لغة عمرها 50 عامًا ولا تزال ضرورية. يحتاج كل مطور وعالم بيانات ومحلل إلى معرفتها. اللغة الأساسية موحدة ومحمولة. يمكن التحكم في اختلافات اللهجة. تعد لغة SQL الحديثة (مع وظائف النافذة وCTEs ودعم JSON) معبرة بدرجة كافية لمعظم مهام البيانات. المهارات الأساسية هي: كتابة استعلامات فعالة، وفهم الفهارس، وقراءة خطط الاستعلام، وتصميم مخططات جيدة. إذا كنت تتعامل مع البيانات على الإطلاق، فإن لغة SQL غير قابلة للتفاوض.
+SQL هي لغة عمرها 50 عامًا ولا تزال ضرورية. يحتاج كل مطور وعالم بيانات ومحلل إلى معرفتها. اللغة الأساسية موحدة ومحمولة؛ يمكن التحكم في اختلافات اللهجة. تعد لغة SQL الحديثة (مع وظائف النافذة وCTEs ودعم JSON) معبرة بدرجة كافية لمعظم مهام البيانات. المهارات الأساسية هي: كتابة استعلامات فعالة، وفهم الفهارس، وقراءة خطط الاستعلام، وتصميم مخططات جيدة. إذا كنت تتعامل مع البيانات على الإطلاق، فإن لغة SQL غير قابلة للتفاوض.

@@ -46,11 +46,11 @@ Scala, Apache Spark'ın (büyük veri işleme çerçevesi) arkasındaki dildir v
 
 ## Scala Neden Önemlidir
 - **İşlevsel + OOP hibrit**: Her iki paradigmanın en iyi yönlerini tek bir dilde birleştirir.
-- **Kısa**: Java'dan önemli ölçüde daha az ayrıntı içerir — desen eşleştirme, vaka sınıfları, tür çıkarımı.
+- **Kısa**: Java'dan önemli ölçüde daha az ayrıntı içerir — kalıp eşleştirme, vaka sınıfları, tür çıkarımı.
 - **Apache Spark**: Spark tabanlı büyük veri işleme için birincil dil.
-- **Tür sistemi**: Örtük değerler, tür sınıfları ve cebirsel veri türleri gibi gelişmiş özellikler.
+- **Tür sistemi**: Örtülüler, tür sınıfları ve cebirsel veri türleri gibi gelişmiş özellikler.
 - **JVM uyumluluğu**: Tüm Java kitaplıklarını kullanır; aynı JVM üzerinde çalışır.
-- **Akka / Pekko**: Eş zamanlı, dağıtılmış sistemler oluşturmaya yönelik popüler çerçeve.
+- **Akka / Pekko**: Eşzamanlı, dağıtılmış sistemler oluşturmaya yönelik popüler çerçeve.
 ## Takaslar
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
@@ -118,7 +118,7 @@ implicit class StringOps(val s: String) extends AnyVal {
 ---
 
 ## Gelişmiş Sözdizimi ve Desenler
-### Sınıfları Yazın (örtükler aracılığıyla)
+### Sınıfları Yazın (örtükler yoluyla)
 Scala 2, tür sınıflarını kodlamak için örtülü parametreler kullanır. Scala 3, yerel`given`/`using`sözdizimini sunar.
 ```scala
 // Scala 2 style: implicit-based type classes
@@ -855,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | JVM'de fonksiyonel programlama | En iyi FP + JVM kombinasyonu | Clojure |
 | Genel uygulama geliştirme | Mümkün ama karmaşık | Python, Git, Java |
 | Veri bilimi | Mümkün ama ekosistem değil | Python, R |
+---
+
+## Sentetik Soru-Cevap
+### S1: Scala'nın tür çıkarımı, Java'ya kıyasla ortak metni nasıl azaltır?
+**C:** Scala'nın derleyicisi,`val`/`var`bildirimleri, yöntem dönüş türleri ve anonim işlevler için türler çıkarır. Bu, çoğu durumda açık tür açıklamalarına olan ihtiyacı ortadan kaldırır:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+Derleyici ayrıca tür parametrelerini, tek ifadeli yöntemlerin dönüş türlerini ve kalıp eşleşme türlerini de çıkarır. Bu, güvenlikten ödün vermeden kodun kısa olmasını sağlar.
+### S2: `case class`'yi normal `class`'ye karşı ne zaman kullanmalıyım?
+**C:** Değişmez veri taşıyıcılar için`case class`kullanın —`equals`,`hashCode`,`toString`,`copy`ve desen eşleştirme desteğini otomatik olarak sağlarlar:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Temel kural: Sınıfınız öncelikle veriden oluşuyorsa`case class`kullanın. Değişken durumu veya karmaşık davranışı varsa normal bir`class`kullanın.
+### S3: Scala'da hataları deyimsel olarak nasıl ele alabilirim?
+**C:** Scala, istisnaları atmak yerine`Option`,`Either`ve`Try`gibi geri dönen türleri tercih eder:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### S4:`trait`ile`abstract class`arasındaki fark nedir?
+**C:** Özellikler çoklu kalıtımı destekler ve tür parametrelerine ve somut yöntemlere sahip olabilir. Soyut sınıflar yapıcı parametrelere sahip olabilir ancak yalnızca tekli mirası destekler:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### S5: Performanslı Scala kodunu JVM'ye nasıl yazarım?
+**C:** Temel uygulamalar:
+- Senkronizasyonu önlemek için`case class`ve değişmez verileri kullanın
+- Yapısal paylaşım için `Vector`,`Map`(değişmez) tercih edin
+- Kuyruk çağrısı optimizasyonunu sağlamak için`@tailrec`ek açıklamasını kullanın
+- Aşırı bokstan kaçının —`Int`,`Double`temel öğelerini kullanın
+- Pahalı hesaplamalar için`lazy val`kullanın
+- Büyük sekanslar için`Stream`/ `LazyList`'yi tercih edin
+- JMH ile profil — Scala'nın soyutlamaları verimli bayt koduna göre derlenmelidir
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Güvenli Tip İfade Değerlendiricisinin Uygulanması
+**1. Adım: Sorunu Anlayın**
+Toplama, çarpma ve değişken aramayı destekleyen değişkenlerle matematiksel ifadeleri değerlendirmemiz gerekiyor.
+**2. Adım: Yaklaşımı Belirleyin**
+İfade ağacını modellemek için cebirsel veri türlerini (mühürlü özellik + vaka sınıfları) kullanın, ardından değerlendirmek için desen eşleşmesini kullanın.
+**3. Adım: Uygulama**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**4. Adım: Doğrulayın ve Genişletin**
+`Div` ,`Pow`,`Neg`kasalarını ekleyin. Mühürlü özellik, derleyicinin kapsamlı olmayan eşleşmeler hakkında uyarmasını sağlar.
+### Sorun 2: HTML Oluşturma için Basit bir DSL Oluşturma
+**1. Adım: Sorunu Anlayın**
+Scala'nın sözdizimini kullanarak HTML dizeleri üreten, tür açısından güvenli bir DSL oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+HTML öğeleri için vaka sınıflarını ve doğal bir sözdizimi için örtülü dönüşümleri kullanın.
+**3. Adım: Uygulama**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**4. Adım: Doğrulayın**
+DSL tür açısından güvenlidir; yanlışlıkla HTML olmayan içeriği iletemezsiniz.`HtmlNode`üzerinde desen eşleştirme, kapsamlı işlemeyi garanti eder.
+### Sorun 3: Akka Akışlarıyla Eşzamanlı Kelime Sayısı
+**1. Adım: Sorunu Anlayın**
+Birden fazla büyük dosyadaki kelime frekanslarını aynı anda sayın.
+**2. Adım: Yaklaşımı Belirleyin**
+Eşzamanlı işleme için Scala'nın paralel koleksiyonlarını veya Akka Streams'i kullanın, ardından sonuçları birleştirin.
+**3. Adım: Uygulama**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**4. Adım: Optimize edin**
+Çok büyük veri kümeleri için karşı basınçla Akka Streams'i kullanın:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## Özet

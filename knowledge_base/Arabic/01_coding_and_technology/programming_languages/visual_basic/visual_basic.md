@@ -1,42 +1,47 @@
 ---
-# البيانات الوصفية
-العنوان: "فيجوال بيسك"
-الوصف: "مرجع شامل للغة برمجة Visual Basic يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Visual Basic"
+description: "Comprehensive reference for the Visual Basic programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [المرئية الأساسية، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "مبتدئ"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "33 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [visual-basic, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "33 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # فيجوال بيسك
 Visual Basic (VB) هي لغة برمجة تم تطويرها بواسطة Microsoft. لقد تطورت عبر عدة أجيال: Visual Basic الأصلي (1991)، Visual Basic 6.0 (1998)، VB.NET (2002، جزء من .NET Framework)، وVisual Basic ..NET (الحالي، يسمى الآن ببساطة "Visual Basic" كجزء من .NET). تم تصميم لغة VB لتكون سهلة الاستخدام للمبتدئين وللتطوير السريع للتطبيقات (RAD)، مع التركيز على واجهات المستخدم الرسومية والبرمجة القائمة على الأحداث.
-اليوم، يستمر VB.NET كجزء من النظام البيئي .NET إلى جانب C#، على الرغم من أن Microsoft أشارت إلى أن C# هي اللغة الأساسية في المستقبل. يظل VB مستخدمًا على نطاق واسع في بيئات المؤسسات، خاصة لتطبيقات Windows القديمة، وأتمتة المكاتب (VBA)، وأدوات الأعمال الداخلية.
+اليوم، يستمر VB.NET كجزء من النظام البيئي .NET إلى جانب C#، على الرغم من أن Microsoft أشارت إلى أن C# هي اللغة الأساسية من الآن فصاعدا. يظل VB مستخدمًا على نطاق واسع في بيئات المؤسسات، خاصة لتطبيقات Windows القديمة، وأتمتة المكاتب (VBA)، وأدوات الأعمال الداخلية.
 ---
 
 ## لماذا يهم Visual Basic
@@ -44,12 +49,12 @@ Visual Basic (VB) هي لغة برمجة تم تطويرها بواسطة Micros
 - **التطوير السريع للتطبيقات**: أداة إنشاء واجهة المستخدم الرسومية بالسحب والإفلات تجعل إنشاء نماذج Windows سريعًا.
 - **VBA (Visual Basic for Applications)**: لغة الماكرو لـ Microsoft Office - يستخدمها الملايين من مستخدمي الأعمال حول العالم.
 - **تراث المؤسسة**: تمت كتابة العديد من تطبيقات Windows المهمة للأعمال بلغة VB6 أو VB.NET.
-- **الوصول إلى النظام البيئي .NET**: يمكن لـ VB.NET استخدام كافة مكتبات وأطر العمل .NET.
+- ** الوصول إلى النظام البيئي .NET **: يمكن لـ VB.NET استخدام جميع مكتبات وأطر العمل .NET.
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|
 | **انخفاض الأهمية** | مايكروسوفت تعطي الأولوية لـ C#؛ VB في وضع الصيانة | استخدم C# للمشاريع الجديدة |
-| **VB6 قديم** | لم تعد مدعومة؛ لا يعمل على .NET الحديث قم بالترحيل إلى VB.NET أو C# |
+| **VB6 قديم** | لم يعد مدعومًا؛ لا يعمل على .NET الحديث قم بالترحيل إلى VB.NET أو C# |
 | ** منصة مشتركة محدودة ** | يركز في المقام الأول على Windows | استخدم C# أو لغات أخرى عبر الأنظمة الأساسية |
 | **مجتمع أصغر** | عدد أقل من الموارد الجديدة أو المكتبات أو إعلانات الوظائف | الاستفادة من موارد .NET/C# |
 | **قيود VBA** | VBA قديم ومحدود مقارنة باللغات الحديثة | استخدم Python أو Office Scripts للأتمتة المعقدة |
@@ -809,6 +814,89 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 | تعلم البرمجة | بناء جملة ودود للغاية | بايثون (أكثر تنوعًا) |
 | تطوير .NET جديد | ممكن ولكن يفضل C# | ج # |
 | تطبيقات عبر الأنظمة الأساسية | غير مناسب | C#، الرفرفة، تقنيات الويب |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين VB6 وVB.NET وVBA؟
+**أ:** كل منها يخدم غرضًا مختلفًا:
+- **VB6**: برنامج Visual Basic الكلاسيكي — يعتمد على COM، ويعمل بنظام Windows فقط، وهو قديم
+- **VB.NET**: لغة .NET الحديثة — تعمل على CLR، OOP الكامل، وهي جزء من Visual Studio
+- **VBA**: Visual Basic للتطبيقات — مضمن في Microsoft Office
+### السؤال الثاني: كيف يقوم VBA بأتمتة برنامج Excel؟
+**أ:** يمكن لـ VBA التعامل مع الخلايا والنطاقات وأوراق العمل:
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### س3: كيف يمكنني إنشاء تطبيق Windows Forms في VB.NET؟
+**أ:** استخدم مصمم Visual Studio:
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### س 4: ما هي الاختلافات الرئيسية بين VB.NET وC#؟
+**أ:** يتشاركون في نفس وقت التشغيل والمكتبات. الاختلافات النحوية:
+- VB.NET: `Dim`، `Sub`، `Function`،`If...Then...End If`
+- C#: الأنواع أولاً، كتل `{}`، نهايات `;`
+- VB.NET حساس لحالة الأحرف؛ C# حساس لحالة الأحرف
+### س5: هل ما زال VB.NET يستحق التعلم؟
+**ج:** للحفاظ على التطبيقات الموجودة، نعم. بالنسبة للمشاريع الجديدة، يفضل استخدام لغة C#. يظل VBA ضروريًا لأتمتة المكاتب.
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: أتمتة تقرير Excel باستخدام VBA
+**الخطوة الأولى: فهم المشكلة**
+إنشاء تقرير مبيعات شهري من البيانات الأولية.
+**الخطوة 2: تحديد النهج**
+استخدم VBA لقراءة البيانات وحساب الملخصات وتنسيق الإخراج.
+**الخطوة 3: التنفيذ**```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**الخطوة 4: تمديد**
+أضف المخططات والتنسيق الشرطي وتسليم البريد الإلكتروني.
 ---
 
 ## ملخص

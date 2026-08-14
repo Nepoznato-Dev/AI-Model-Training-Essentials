@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "ر"
-الوصف: "مرجع شامل للغة البرمجة R يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "R"
+description: "Comprehensive reference for the R programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [r، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "31 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [r, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # ر
 R هي لغة برمجة وبيئة مصممة خصيصًا للحوسبة الإحصائية وتحليل البيانات. أنشأها روس إيهكا وروبرت جنتلمان في جامعة أوكلاند في عام 1993 (وبالتالي "R")، وهو تطبيق للغة S مع امتدادات كبيرة. R مفتوح المصدر ويتم صيانته بواسطة فريق R الأساسي. إنها الأداة القياسية للإحصائيين ومحللي البيانات والباحثين في الأوساط الأكاديمية والرعاية الصحية والمالية والحكومة.
 يتفوق R في معالجة البيانات والنمذجة الإحصائية والتصور وإعداد التقارير. يحتوي النظام البيئي للحزم (CRAN) على أكثر من 20000 حزمة تغطي تقريبًا كل طريقة إحصائية تم ابتكارها على الإطلاق.
@@ -50,7 +55,7 @@ R هي لغة برمجة وبيئة مصممة خصيصًا للحوسبة ال�
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|
 | **الأداء** | خيط واحد بشكل افتراضي؛ بطيئة لمجموعات البيانات الكبيرة | استخدم`data.table`أو الحزم المتوازية أو Rcpp لتكامل C++ |
-| **استخدام الذاكرة** | يقوم بتحميل مجموعات البيانات بأكملها إلى ذاكرة الوصول العشوائي | استخدم `data.table::fread`، حزمة الأسهم للمعالجة خارج المركز |
+| **استخدام الذاكرة** | يقوم بتحميل مجموعات البيانات بأكملها إلى ذاكرة الوصول العشوائي | استخدم حزمة الأسهم`data.table::fread`للمعالجة خارج المركز |
 | ** ليست لغة للأغراض العامة ** | محرج لتطوير الويب أو برمجة الأنظمة أو التطبيقات | استخدم Python أو Go أو JavaScript للمهام غير الإحصائية |
 | ** بناء جملة غير متناسق ** | Base R لديه مراوغات. تستخدم الحزم المختلفة اصطلاحات مختلفة | استخدم Tidyverse لتحقيق الاتساق |
 | **سوق العمل** | الأدوار الأكاديمية / البحثية في الغالب | أدوار علم البيانات تفضل بشكل متزايد بايثون |
@@ -82,7 +87,7 @@ df[, "age"]
 df$score[df$age > 28]  # Scores where age > 28
 ```
 
-### Tidyverse (R الحديثة)
+### Tidyverse (R الحديث)
 ```r
 library(tidyverse)
 
@@ -448,7 +453,7 @@ compute_stats <- function(data, group_var, value_var) {
 mtcars %>% compute_stats(cyl, mpg)
 ```
 
-### النموذج 2: البرمجة الوظيفية باستخدام Purrr
+### النمط 2: البرمجة الوظيفية باستخدام Purrr
 ```r
 library(purrr)
 
@@ -599,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | أنظمة الإنتاج ML | غير مصمم للنشر | بايثون، جافا |
 | تطوير الويب | غير مناسب | جافا سكريبت، بايثون |
 | معالجة البيانات على نطاق واسع | مرتبط بالذاكرة | بايثون (PySpark)، SQL |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين`<-`و`=` بالنسبة للمهمة؟
+**A:** يقوم كلاهما بتعيين قيم، ولكن`<-`هو عامل تخصيص R الاصطلاحي. وهو يعمل في جميع السياقات، بما في ذلك استدعاءات الوظائف الداخلية:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### السؤال الثاني: كيف أتعامل مع البيانات المفقودة في لغة R؟
+**A:** يستخدم R`NA`للقيم المفقودة. تحتوي معظم الوظائف على معلمة `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3: متى يجب علي استخدام`lapply`مقابل`sapply`مقابل `vapply`؟
+**أ:** جميعها تطبق دالة على قائمة/متجه، ولكنها تختلف في الإخراج:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: كيف يمكنني إنشاء تصورات فعالة باستخدام ggplot2؟
+**ج:** اتبع القواعد النحوية للرسومات - قم بتعيين جماليات البيانات إلى الخصائص المرئية:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### س5: كيف يمكنني كتابة كود R فعال لمجموعات البيانات الكبيرة؟
+**أ:** الممارسات الأساسية:
+- التخصيص المسبق للمتجهات:`x <- numeric(n)`بدلاً من النمو باستخدام`c()`
+- استخدم`data.table`لمجموعات البيانات الكبيرة (أسرع 100 مرة من data.frame)
+- توجيه العمليات - تجنب الحلقات حيثما أمكن ذلك
+- استخدم`vapply`عبر`sapply`لضمان سلامة الكتابة
+- الملف الشخصي مع`Rprof()`أو`profvis`
+- خذ بعين الاعتبار حزمة`arrow`للبيانات خارج المركز
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: تنظيف مجموعة بيانات فوضوية وتحليلها
+**الخطوة الأولى: فهم المشكلة**
+لدينا إطار بيانات به قيم مفقودة وأنواع غير متناسقة وقيم متطرفة. نحن بحاجة إلى تنظيفه وحساب الإحصائيات الموجزة.
+**الخطوة 2: تحديد النهج**
+استخدم الأفعال المرتبة:`filter`و`mutate`و`summarize`و`group_by`.
+**الخطوة 3: التنفيذ**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**الخطوة 4: التحقق**
+التحقق من عدد الصفوف قبل/بعد، والتحقق من صحة النطاقات، والتحقق من الإجماليات مقابل بيانات المصدر.
+### المشكلة الثانية: بناء نموذج الانحدار الخطي
+**الخطوة الأولى: فهم المشكلة**
+توقع متغير النتيجة المستمر من تنبؤات متعددة.
+**الخطوة 2: تحديد النهج**
+استخدم`lm()`للانحدار الخطي والتحقق من الافتراضات وتقييم ملاءمة النموذج.
+**الخطوة 3: التنفيذ**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**الخطوة 4: التقييم**
+تحقق من R-squared، والمؤامرات المتبقية للأنماط، وAIC لمقارنة النماذج.
+### المشكلة 3: إنشاء تقرير قابل للتكرار
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء تقرير يجمع بين التحليل والمرئيات والنص السردي بتنسيق قابل للتكرار.
+**الخطوة 2: تحديد النهج**
+استخدم R Markdown (أو Quarto) لتشذير أجزاء التعليمات البرمجية مع النص.
+**الخطوة 3: التنفيذ**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE، تحذير = FALSE)
+مكتبة (مرتبة)
+البيانات <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(بيانات، aes(x, y)) + Geom_point() + Geom_smooth()```
+```
+
+**الخطوة 4: التقديم**
+ يقوم`rmarkdown::render("report.Rmd")`بإنتاج مستند HTML قائم بذاته.
 ---
 
 ## ملخص

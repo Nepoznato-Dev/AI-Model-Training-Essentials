@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Python"
-descripción: "Referencia completa para el lenguaje de programación Python que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Python"
+description: "Comprehensive reference for the Python programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [python, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "58 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [python, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "58 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Pitón
 Python es un lenguaje de programación interpretado de alto nivel y de propósito general creado por Guido van Rossum y lanzado por primera vez en 1991. Prioriza la legibilidad del código a través de una sangría significativa y una sintaxis limpia que se lee cerca del inglés simple. Python se escribe dinámicamente, se recolecta basura y admite múltiples paradigmas de programación, incluida la programación funcional, orientada a objetos y de procedimientos.
 Hoy en día, Python es el lenguaje dominante en IA/ML, ciencia de datos, informática científica y automatización, sin dejar de ser uno de los mejores lenguajes para principiantes. Esa identidad dual (lo suficientemente simple para un primer guión, lo suficientemente potente como para entrenar modelos de lenguaje grandes) es lo que lo distingue.
@@ -1373,6 +1378,289 @@ def slow_function():
     import time; time.sleep(1)
 ```
 
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre listas y tuplas, y cuándo debo usar cada una?
+**R:** Las listas son mutables (`[]`), las tuplas son inmutables (`()`). Utilice listas cuando necesite agregar, eliminar o cambiar elementos. Utilice tuplas para colecciones fijas de datos heterogéneos, claves de diccionario, valores de retorno de funciones o cuando desee indicar "esto no debería cambiar". Las tuplas consumen un poco más la memoria y se pueden utilizar como claves set/dict; las listas no pueden.
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### P2: ¿Cómo afecta el bloqueo global de intérprete (GIL) a mi código y qué debo hacer al respecto?
+**R:** El GIL evita que varios subprocesos ejecuten código de bytes de Python simultáneamente, lo que hace que los subprocesos sean ineficaces para el trabajo vinculado a la CPU. Para tareas vinculadas a E/S (solicitudes de red, E/S de archivos),`threading`o`asyncio`funcionan bien porque el GIL se libera durante la E/S. Para tareas vinculadas a la CPU, use`multiprocessing`(procesos separados, cada uno con su propio GIL) o descargue a extensiones C (NumPy, Cython, Numba) que liberan el GIL internamente.
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### P3: ¿Debería utilizar sugerencias de escritura en todas partes? ¿Cuáles son las compensaciones prácticas?
+**R:** Las sugerencias de tipo (`def greet(name: str) -> str:`) son opcionales y no se aplican en tiempo de ejecución. Mejoran el autocompletado de IDE, detectan errores mediante herramientas de análisis estático (mypy) y la intención del documento. La compensación es una mayor verbosidad y una curva de aprendizaje para tipos avanzados (`Union`,`Generic`,`Protocol`). Recomendación: utilice sugerencias de tipo para firmas de funciones en cualquier proyecto de más de ~500 líneas; Úselos con moderación en guiones cortos. Habilite mypy en CI para una aplicación gradual.
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### P4: ¿Cuáles son las mejores prácticas para manejar excepciones en Python?
+**R:** Capture excepciones específicas en lugar de`except:`(que también detecta`SystemExit`y `KeyboardInterrupt`). Utilice`try/except/else/finally`para separar la lógica de ruta feliz del manejo de errores. Defina jerarquías de excepciones personalizadas para bibliotecas. Nunca utilice excepciones para controlar el flujo en código sensible al rendimiento: son lentas. Registre la excepción con`logging.exception()`para capturar el rastreo completo.
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### P5: ¿Cómo ahorran memoria los generadores y cuándo debo usarlos en lugar de listas?
+**R:** Los generadores producen valores de forma perezosa (uno a la vez, según demanda) en lugar de crear una lista completa en la memoria. Para conjuntos de datos grandes (millones de filas, secuencias infinitas, transmisión de datos), los generadores utilizan memoria constante independientemente del tamaño. Utilice generadores cuando itere una vez y no necesite indexación o `len()`. Utilice listas cuando necesite acceso aleatorio, múltiples iteraciones o la colección sea pequeña.
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: crear un contador de frecuencia de palabras con clasificación
+**Declaración del problema:** Dado un archivo de texto grande, cuente la frecuencia de cada palabra, clasifíquelas por frecuencia (descendente) y devuelva los N primeros resultados. Maneje la insensibilidad entre mayúsculas y minúsculas, la puntuación y procese eficientemente archivos demasiado grandes para caber en la memoria.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) leer texto, (2) dividir en palabras, (3) normalizar mayúsculas y minúsculas, (4) eliminar puntuación, (5) contar ocurrencias, (6) ordenar por conteo descendente, (7) devolver N superior. La restricción "demasiado grande para caber en la memoria" significa que debemos procesar línea por línea con generadores.
+**Paso 2: Identifique el enfoque:**
+- Utilice`re.finditer`para una extracción eficiente de palabras sin crear listas intermedias.
+- Utilice`collections.Counter`para incrementos de O(1) por palabra.
+- Utilice `Counter.most_common(n)`, que utiliza un montón internamente: O(k log n) en lugar de O(n log n) para una clasificación completa.
+- Procese línea por línea a través del generador para mantener la memoria constante.
+**Paso 3: Implementar la solución:**
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+**Paso 4: Verificar y optimizar:**
+- Memoria: sólo el dictado del contador está en la memoria (una entrada por palabra única), no el contenido del archivo. Para texto en inglés, ~100.000 palabras únicas ≈ unos pocos MB.
+- Tiempo: O(W) para escanear todas las palabras + O(U log N) para la extracción de las N principales, donde W = palabras totales, U = palabras únicas.
+- Casos extremos: la expresión regular conserva los apóstrofes en las contracciones ("no"). El texto Unicode necesitaría la bandera`re.UNICODE`o un patrón diferente.
+### Problema 2: implementar una caché LRU segura para subprocesos
+**Declaración del problema:** Cree una caché de uso menos reciente (LRU) desde cero que sea segura para subprocesos, admita operaciones de obtención y colocación O(1) y desaloje automáticamente el elemento utilizado menos recientemente cuando se exceda la capacidad.
+**Paso 1: comprenda el problema:**
+Un caché LRU necesita: (1) búsqueda rápida por clave → mapa hash, (2) ordenamiento rápido por actualidad → lista doblemente enlazada, (3) seguridad de subprocesos → bloqueo. En `get(key)`: mueve el elemento al frente. En `put(key, val)`: inserción en la parte delantera; si excede su capacidad, retírela por la parte posterior.
+**Paso 2: Identifique el enfoque:**
+-`dict`de Python mantiene el orden de inserción (3.7+), por lo que podemos usar un enfoque de dictado ordenado: eliminar y volver a insertar para ir al final.
+- Para seguridad del hilo, utilice`threading.Lock`para exclusión mutua.
+- Alternativa: use`collections.OrderedDict`que tiene `move_to_end()`.
+**Paso 3: Implementar la solución:**
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+**Paso 4: Verificar y optimizar:**
+- Complejidad temporal: O(1) tanto para`get`como para`put`—`OrderedDict.move_to_end()`y`popitem()`son O(1).
+- Seguridad del hilo: el`Lock`garantiza la atomicidad. Para un mayor rendimiento, considere`threading.RLock`o un patrón de bloqueo de lectura y escritura, pero para la mayoría de los casos de uso es suficiente un bloqueo simple.
+- Nota de producción: para código de un solo subproceso,`functools.lru_cache`es más simple y está implementado en C para un mejor rendimiento.
+### Problema 3: analizar y evaluar una expresión matemática
+**Declaración del problema:** Escriba un analizador que tome una cadena como`"3 + 4 * 2 / (1 - 5)"`y la evalúe correctamente respetando la precedencia de operadores y los paréntesis.
+**Paso 1: comprenda el problema:**
+Esto requiere: (1) convertir la cadena de entrada en números, operadores y paréntesis, (2) analizar con precedencia correcta (`*`y`/`antes de`+`y`-`), (3) manejar paréntesis anidados. Una evaluación ingenua de izquierda a derecha daría resultados erróneos.
+**Paso 2: Identifique el enfoque:**
+La solución clásica es el **algoritmo de patio de maniobras** (Dijkstra) que convierte infijo en sufijo (notación polaca inversa) y luego evalúa el sufijo. Alternativamente, utilice un analizador de descenso recursivo. Específicamente para Python, también podemos usar`ast.literal_eval`para una evaluación segura, pero implementémoslo correctamente.
+**Paso 3: Implementar la solución:**
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+**Paso 4: Verificar y optimizar:**
+- Corrección:`3 + 4 * 2 / (1 - 5)`→`3 + 8 / (-4)`→`3 + (-2)`→ `1.0`. Correcto.
+- Tiempo: O(N) para tokenización, O(N) para patio de maniobras, O(N) para evaluación, O(N) general.
+- Casos extremos a manejar: números negativos (anteponer`0`antes de`-`unario), división por cero (agregar manejo de errores), entrada no válida (validar tokens).
+- Alternativa Pythonic:`ast.parse(expr, mode='eval')`con un visitante de nodo personalizado para una evaluación segura sin `eval()`.
+### Problema 4: crear un panel CLI con actualizaciones de datos en tiempo real
+**Declaración del problema:** Cree un panel basado en terminal que muestre las métricas del sistema (CPU, memoria, disco) actualizándose en tiempo real, con umbrales codificados por colores y diseño responsivo.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) recopilación periódica de métricas del sistema, (2) representación de terminal con control del cursor, (3) salida de color basada en umbrales, (4) entrada de teclado sin bloqueo para salir. Este es un patrón productor-consumidor con un bucle de renderizado.
+**Paso 2: Identifique el enfoque:**
+- Utilice`psutil`para métricas del sistema multiplataforma.
+- Utilice códigos de escape ANSI para la posición del cursor y los colores (o la biblioteca`rich`para una API de nivel superior).
+- Utilice`time.sleep`para el intervalo de actualización.
+- Estructura como: recopilación de datos → formato → canalización de renderizado.
+**Paso 3: Implementar la solución:**
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+**Paso 4: Verificar y optimizar:**
+- El`cpu_percent(interval=0.5)`bloquea durante 0,5 segundos para medir; este es el enfoque correcto (el modo sin bloqueo da 0% en la primera llamada).
+- Los códigos ANSI funcionan en terminales Windows modernos y en todos los terminales Unix. Para cmd de Windows heredado, agregue`os.system('color')`o use `colorama`.
+- Actualización de producción: utilice la biblioteca`rich`(`rich.live`) para renderizado sin parpadeos, diseño automático y compatibilidad multiplataforma.
+- Extensibilidad: cada métrica es una función independiente, lo que facilita agregar la temperatura de la GPU, el recuento de procesos o las conexiones de red.
 ---
 
 ## Resumen

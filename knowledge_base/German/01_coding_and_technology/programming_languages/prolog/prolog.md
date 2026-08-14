@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Prolog
 Prolog (Programming in Logic) ist eine logische Programmiersprache, die 1972 von Alain Colmerauer und Philippe Roussel entwickelt wurde. Im Gegensatz zu allen anderen Sprachen auf dieser Liste sagt Prolog dem Computer nicht, *wie* er ein Problem lösen soll – Sie erklären, *was* wahr ist (Fakten und Regeln), und die Inferenz-Engine von Prolog ermittelt die Antwort durch logische Schlussfolgerung.
 Prolog war in den 1980er Jahren die Sprache der Wahl für Expertensysteme, die Verarbeitung natürlicher Sprache und die KI-Forschung. Es trieb Japans Projekt zum Computersystem der fünften Generation voran und wurde in IBMs Watson für das Verständnis natürlicher Sprache verwendet. Heutzutage wird Prolog zum Lösen von Einschränkungen, zur Terminplanung, zur Typinferenz, zum rechtlichen Denken und überall dort verwendet, wo Probleme auf natürliche Weise als logische Beziehungen ausgedrückt werden.
@@ -398,9 +399,9 @@ test(list_length) :-
 | Problem | Symptom | Lösung |
 |---------|---------|----------|
 | Unendliche Rekursion | Stapelüberlauf | Basisfall prüfen; Beendigungsbedingung hinzufügen |
-| Keine Lösungen | Die Abfrage gibt „false“ zurück | Instanziierungsreihenfolge der Variablen prüfen |
+| Keine Lösungen | Die Abfrage gibt „false“ zurück | Überprüfen Sie die Instanziierungsreihenfolge der Variablen |
 | Zu viele Lösungen | Unerwartete Duplikate | Cut (!) hinzufügen oder`setof`| verwenden
-| Falsche Vereinigung | Variablen falsch gebunden | Verwenden Sie`=`zum Testen; Funktionsarität prüfen |
+| Falsche Vereinigung | Variablen falsch gebunden | Verwenden Sie`=`zum Testen. Funktionsarität prüfen |
 | Leistungsproblem | Langsame Ausführung | Schnitte hinzufügen; verwenden Sie`table`; Auswahlpunkte prüfen |
 ---
 
@@ -538,8 +539,131 @@ swipl -g main -o myapp.sav -c main.pl
 | Allgemeine Programmierung | Möglich, aber umständlich | Python, Go, Java |
 ---
 
+## Synthetische Fragen und Antworten
+### F1: Wie unterscheidet sich die Vereinheitlichung von Prolog von der Zuweisung in anderen Sprachen?
+**A:** Bei der Vereinheitlichung handelt es sich um einen bidirektionalen Mustervergleich, nicht um eine Zuweisung:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### F2: Wie funktioniert Backtracking in Prolog?
+**A:** Wenn ein Ziel fehlschlägt, kehrt Prolog zum letzten Auswahlpunkt zurück und versucht die nächste Alternative:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### F3: Wie arbeite ich mit Listen in Prolog?
+**A:** Listen verwenden Kopf-/Schwanzmustervergleich:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### F4: Wann sollte ich Prolog anstelle anderer Sprachen verwenden?
+**A:** Prolog zeichnet sich aus durch:
+- Zufriedenheit mit Einschränkungen (Terminplanung, Rätsel)
+- Regelbasierte Systeme (Expertensysteme, Validierung)
+- Graph-/Baumdurchquerung
+- Verarbeitung natürlicher Sprache
+- Symbolische Berechnung
+- Jedes Problem, das als logische Beziehungen ausgedrückt werden kann
+### F5: Was sind die häufigsten Fallstricke in Prolog?
+**A:** Hauptthemen:
+- Unendliche Rekursion – Stellen Sie immer den Basisfall an die erste Stelle
+- Unbeabsichtigtes Backtracking – verwenden Sie den Schnitt`!`oder`once/1`
+- Tritt bei der Prüfung auf – `X = f(X)`-Schleifen standardmäßig (verwenden Sie`unify_with_occurs_check`)
+- Grüne Schnitte (Optimierung) vs. rote Schnitte (Bedeutung ändern) – bevorzugen Sie Grün
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Das N-Queens-Rätsel lösen
+**Schritt 1: Verstehen Sie das Problem**
+Platzieren Sie N Damen auf einem NxN-Schachbrett, damit sich nicht zwei Damen gegenseitig angreifen.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie eine auf Einschränkungen basierende Generierung: Platzieren Sie die Königinnen Spalte für Spalte und überprüfen Sie die Sicherheit.
+**Schritt 3: Implementieren**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Schritt 4: Überprüfen**
+`?- n_queens(8, Qs).`sollte 92 Lösungen finden.
+### Problem 2: Aufbau eines einfachen Expertensystems
+**Schritt 1: Verstehen Sie das Problem**
+Diagnostizieren Sie Autoprobleme anhand der Symptome.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie Prolog-Regeln, um Diagnosewissen zu kodieren.
+**Schritt 3: Implementieren**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Schritt 4: Erweitern**
+Fügen Sie Konfidenzwerte hinzu, fragen Sie den Benutzer interaktiv nach Symptomen und verketten Sie Diagnosen.
+---
+
 ## Zusammenfassung
-Prolog ist anders als jede andere Programmiersprache. Anstatt Schritt-für-Schritt-Anleitungen zu schreiben, beschreiben Sie Beziehungen und Einschränkungen – und die Engine sucht durch logische Schlussfolgerungen nach Lösungen. Dies macht Prolog ideal für Probleme, die in imperativen Sprachen umständlich oder ausführlich sind: Expertensysteme, Zeitplanung, Grammatikanalyse, Erfüllung von Einschränkungen und alles, was mit logischen Regeln zu tun hat. Die meisten Programmierer werden Prolog nie in der Produktion verwenden, aber wenn Sie es lernen, erweitern Sie Ihr Denken darüber, was Programmieren sein kann. Vereinheitlichung, Backtracking und deklarative Problemspezifikation sind Konzepte, die das Sprachdesign, die KI-Forschung und sogar die Optimierung von Datenbankabfragen beeinflussen.
+Prolog ist anders als jede andere Programmiersprache. Anstatt Schritt-für-Schritt-Anleitungen zu schreiben, beschreiben Sie Beziehungen und Einschränkungen – und die Engine sucht durch logische Schlussfolgerungen nach Lösungen. Dies macht Prolog ideal für Probleme, die in imperativen Sprachen umständlich oder ausführlich sind: Expertensysteme, Zeitplanung, Grammatikanalyse, Erfüllung von Einschränkungen und alles, was mit logischen Regeln zu tun hat. Die meisten Programmierer werden Prolog nie in der Produktion verwenden, aber das Erlernen von Prolog erweitert Ihr Denken darüber, was Programmieren sein kann. Vereinheitlichung, Backtracking und deklarative Problemspezifikation sind Konzepte, die das Sprachdesign, die KI-Forschung und sogar die Optimierung von Datenbankabfragen beeinflussen.
 ### Vergleich der Prolog-Engines
 | Funktion | SWI-Prolog | GNU-Prolog | Tau-Prolog |
 |---------|-----------|------------|------------|

@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Học Khoa học và Sư phạm
-Khoa học học tập là nghiên cứu liên ngành về cách mọi người học - rút ra từ tâm lý học, khoa học thần kinh, giáo dục và khoa học nhận thức. Sư phạm là nghệ thuật và khoa học của giảng dạy. Cùng nhau, họ trả lời các câu hỏi quan trọng đối với bất kỳ ai giảng dạy, đào tạo, cố vấn hoặc thiết kế nội dung giáo dục: Điều gì thực sự giúp mọi người học tập? Những kỹ thuật nghiên cứu thông thường nào không hiệu quả? Hướng dẫn nên được cấu trúc như thế nào để ghi nhớ và chuyển giao tối đa?
+Khoa học học tập là nghiên cứu liên ngành về cách mọi người học - rút ra từ tâm lý học, khoa học thần kinh, giáo dục và khoa học nhận thức. Sư phạm là thực tiễn và phương pháp giảng dạy. Họ cùng nhau giải quyết các câu hỏi liên quan đến bất kỳ ai giảng dạy, đào tạo, cố vấn hoặc thiết kế nội dung giáo dục: Phương pháp nào giúp mọi người học tập hiệu quả? Những kỹ thuật nghiên cứu phổ biến nào là không hiệu quả? Hướng dẫn nên được cấu trúc như thế nào để ghi nhớ và chuyển giao tối ưu?
 ---
 
 ## Cách thức hoạt động của việc học
@@ -104,7 +105,7 @@ Mỗi lần xem lại sẽ đẩy đường cong lãng quên ra xa hơn. Khoản
 
 ## Phân loại của Bloom
 | Cấp độ | Quá trình nhận thức | Động từ hành động | Nhiệm vụ mẫu |
-|-------|-----------------------|-------------|--------------|
+|-------|----------|-------------|--------------|
 | **Ghi nhớ** | Nhớ lại sự kiện và khái niệm cơ bản | Định nghĩa; danh sách; tên; xác định | "Liệt kê các giai đoạn của quá trình nguyên phân" |
 | **Hiểu** | Giải thích ý tưởng hoặc khái niệm | Mô tả; giải thích; tóm tắt; phân loại | "Giải thích tại sao nguyên phân lại quan trọng" |
 | **Áp dụng** | Sử dụng thông tin trong tình huống mới | Gỡ rối; sử dụng; chứng minh; thực hiện | "Dự đoán điều gì sẽ xảy ra nếu quá trình nguyên phân bị gián đoạn" |
@@ -133,8 +134,8 @@ Mỗi lần xem lại sẽ đẩy đường cong lãng quên ra xa hơn. Khoản
 |----------||-------------|
 | **Làm người mẫu** | Thể hiện kỹ năng hoặc quá trình suy nghĩ |
 | **Suy nghĩ lớn tiếng** | Diễn đạt lý luận của bạn trong khi giải quyết vấn đề |
-| **Các ví dụ đã hoạt động** | Đưa ra lời giải hoàn chỉnh trước khi yêu cầu người học giải quyết vấn đề |
-| **Phát hành dần dần** | "Tôi đồng ý → Chúng tôi đồng ý → Bạn đồng ý" — dần dần xóa bỏ hỗ trợ |
+| **Các ví dụ đã hoạt động** | Đưa ra lời giải đầy đủ trước khi yêu cầu người học giải quyết vấn đề |
+| **Phát hành dần dần** | "Tôi đồng ý → Chúng tôi đồng ý → Bạn đồng ý" — dần dần loại bỏ hỗ trợ |
 | **Nhắc nhở** | Đặt câu hỏi hướng dẫn người học đi tới câu trả lời |
 | **Chẻ nhỏ** | Chia các nhiệm vụ phức tạp thành các phần có thể quản lý được |
 ---

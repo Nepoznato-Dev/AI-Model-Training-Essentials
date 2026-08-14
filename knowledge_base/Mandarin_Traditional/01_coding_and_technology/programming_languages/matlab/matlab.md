@@ -41,7 +41,7 @@ contribution:
 
 # MATLAB
 MATLAB（矩陣實驗室）是一種高階解釋性程式語言和環境，專為數值計算、矩陣運算和工程/科學應用而設計。 MATLAB 由 MathWorks 開發並於 1984 年首次發布，是許多工程學科（電氣工程、控制系統、訊號處理、影像處理和通訊）的標準工具。
-MATLAB 將強大的面向矩陣的語言與豐富的工具箱（附加套件）和 Simulink 視覺模擬環境結合。它在學術界和工業界廣泛用於在生產程式碼中實現演算法之前對演算法進行原型設計。
+MATLAB 將強大的面向矩陣的語言與豐富的工具箱（附加套件）和 Simulink 視覺化模擬環境結合。它在學術界和工業界廣泛用於在生產程式碼中實現演算法之前對演算法進行原型設計。
 ---
 
 ## 為什麼 MATLAB 很重要
@@ -54,7 +54,7 @@ MATLAB 將強大的面向矩陣的語言與豐富的工具箱（附加套件）�
 ## 權衡
 |限制|詳情 |典型解決方法|
 |------------|---------|--------------------|
-| **商業許可** |昂貴（每個座位數千美元）|使用 GNU Octave（免費的 MATLAB 相容替代方案）進行基本工作 |
+| **商業許可證** |昂貴（每個座位數千美元）|使用 GNU Octave（免費的 MATLAB 相容替代方案）進行基本工作 |
 | **不是通用語言** |不適合 Web 開發、系統程式設計或應用程式 |使用 Python、Go 或其他語言執行非數值任務 |
 | **效能** |解釋；比編譯語言的循環慢|向量化操作；使用 MEX（C/Fortran 擴充）作為熱程式碼 |
 | **部署** |部署 MATLAB 應用程式需要 MATLAB Runtime |使用 MATLAB 編譯器或以 C/C++ 重寫進行生產 |
@@ -644,7 +644,7 @@ ENTRYPOINT ["/app/run_app.sh"]
 ---
 
 ## 何時使用 MATLAB
-|場景 |為什麼選擇 MATLAB |更好的選擇|
+|場景|為什麼選擇 MATLAB |更好的選擇|
 |----------|----------|--------------------|
 |工程原型|業界標準； Simulink 整合 |用於非工程環境的 Python (NumPy/SciPy) |
 |訊號/影像處理 |豐富的工具箱 | Python（scipy.signal、OpenCV）|
@@ -654,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 |生產系統|並非為部署設計| C++、Python、Go |
 |網頁開發|不適合| JavaScript、Python |
 |資料科學（普通）|可能，但 Python 更通用 | Python、R |
+---
+
+## 綜合問答
+### Q1：如何向量化操作而不是使用循環？
+**答：** MATLAB 針對矩陣運算進行了最佳化。用向量化程式碼替換循環：
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### Q2：矩陣和陣列有什麼差別？
+**A:** 在 MATLAB 中，一切都是陣列。矩陣是二維數組：
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### Q3：如何在 MATLAB 中建立有效的繪圖？
+**A:** 使用正確標籤的繪圖函數：
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4：如何有效除錯 MATLAB 程式碼？
+**A:** 使用內建的偵錯器和診斷工具：
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### Q5：如何讀寫資料檔？
+**答：** MATLAB 支援多種檔案格式：
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：求解線性方程組
+**第 1 步：了解問題**
+解 Ax = b，其中 A 是矩陣，b 是向量。
+**第 2 步：確定方法**
+使用 MATLAB 的反斜杠运算符`\`自动选择最佳算法。
+**步驟 3：實施**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**第 4 步：擴充**
+對於超定係統，`\` 給出最小平方法解。對於稀疏系統，請使用`sparse`矩陣。
+### 問題 2：訊號處理 — FFT 分析
+**第 1 步：了解問題**
+分析雜訊訊號的頻率內容。
+**第 2 步：確定方法**
+產生測試訊號、應用 FFT 並繪製頻譜。
+**步驟 3：實施**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**第 4 步：驗證**
+峰值應出現在 50 Hz 和 120 Hz 處。本底噪聲應該很低。
+### 問題 3：自訂模型的曲線擬合
+**第 1 步：了解問題**
+將實驗數據擬合到自訂非線性模型。
+**第 2 步：確定方法**
+將`fit`與自訂`fittype`或`lsqcurvefit`結合使用。
+**步驟 3：實施**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**第 4 步：驗證**
+檢查模式的殘差，驗證 R²，並使用不同的起點進行測試。
 ---
 
 ＃＃ 概括

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Ada
 Ada là ngôn ngữ lập trình được biên dịch, gõ tĩnh được thiết kế cho các hệ thống có tính toàn vẹn cao và quan trọng về an toàn. Được phát triển lần đầu vào những năm 1980 theo hợp đồng với Bộ Quốc phòng Hoa Kỳ (được đặt theo tên của Ada Lovelace, được coi là lập trình viên máy tính đầu tiên), Ada nhấn mạnh đến độ tin cậy, khả năng bảo trì và tính chính xác. Nó được thiết kế để thay thế hàng trăm ngôn ngữ lập trình được DoD sử dụng sau đó bằng một ngôn ngữ duy nhất được xác định rõ ràng.
 Ada được sử dụng trong ngành hàng không (hệ thống bay bằng dây), không gian (ESA và NASA), quốc phòng (dẫn đường tên lửa, radar), vận tải đường sắt và thiết bị y tế - bất cứ nơi nào mà lỗi phần mềm có thể gây thiệt hại đến tính mạng.
@@ -861,6 +862,147 @@ end Main;
 | Phát triển ứng dụng chung | Quá mức cần thiết cho các hệ thống không quan trọng | Python, Java, Đi |
 | Phát triển web | Không phù hợp | JavaScript, Python |
 | Khoa học dữ liệu / ML | Không phải hệ sinh thái | Python, R |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Hệ thống kiểu của Ada ngăn ngừa lỗi tại thời điểm biên dịch như thế nào?
+**A:** Hệ thống kiểu của Ada là một trong những ngôn ngữ nghiêm ngặt nhất. Nó bắt được những lỗi mà các ngôn ngữ khác bỏ sót:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Câu 2: Mô hình tác vụ của Ada là gì và so sánh với các mô hình tương tranh khác như thế nào?
+**A:** Ada được tích hợp sẵn tính năng đồng thời với các đối tượng và tác vụ được bảo vệ:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Câu 3: Làm cách nào để sử dụng thuốc generic trong Ada?
+**A:** Các khái niệm chung của Ada rất rõ ràng và an toàn về loại:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: Điều gì khiến Ada phù hợp với các hệ thống quan trọng về an toàn?
+**Đáp:** Ada cung cấp:
+- Tập hợp con SPARK để xác minh chính thức (bằng chứng toán học về tính chính xác)
+- Lập trình dựa trên hợp đồng (điều kiện trước/sau, loại bất biến)
+- Không có phân bổ bộ nhớ ngầm trong SPARK
+- Phân công nhiệm vụ và lập kế hoạch cụ thể
+- Cấu hình Ravenscar cho hệ thống thời gian thực có tính toàn vẹn cao
+- Chứng chỉ chuỗi công cụ (DO-178C cho hệ thống điện tử hàng không)
+### Câu 5: Làm cách nào để xây dựng dự án Ada?
+**A:** Sử dụng GPRBuild với các tệp dự án GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Triển khai Type-Safe Queue
+**Bước 1: Tìm hiểu vấn đề**
+Tạo hàng đợi có giới hạn, an toàn theo luồng bằng tính năng kiểm tra kích thước tại thời điểm biên dịch.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng một đối tượng được bảo vệ với bộ đệm giới hạn.
+**Bước 3: Thực hiện**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Bước 4: Xác minh**
+Đối tượng được bảo vệ đảm bảo loại trừ lẫn nhau. Rào cản đầu vào ngăn chặn tràn/tràn.
+### Vấn đề 2: Xác thực dựa trên hợp đồng
+**Bước 1: Tìm hiểu vấn đề**
+Thực hiện chức năng căn bậc hai với các hợp đồng chính thức.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng hợp đồng Ada 2012 (điều kiện trước/sau).
+**Bước 3: Thực hiện**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Bước 4: Xác minh**
+Kiểm tra thời gian chạy (xác nhận) bắt vi phạm. Trong SPARK, những điều này trở thành nghĩa vụ bằng chứng.
 ---
 
 ## Bản tóm tắt

@@ -1,41 +1,46 @@
 ---
-# Métadonnées
-titre : "Conception organisationnelle et culture"
-description : "Structures organisationnelles, types de culture, gestion du changement, dynamique d'équipe"
-catégorie : "Commerce et économie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Organisational Design and Culture"
+description: "Org structures, culture types, change management, team dynamics"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances commerciales et économiques"
-next_review : "2027-08-05"
-#Classement
-tags : [organisationnel, design, culture, business et économie]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "6 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [organisational, design, culture, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Conception organisationnelle et culture
-La conception organisationnelle est l’agencement délibéré de la structure, des processus, des rôles et des droits de décision pour exécuter efficacement la stratégie. La culture regroupe les valeurs, croyances, normes et comportements partagés qui façonnent la manière dont les gens travaillent réellement ensemble. La structure est le squelette ; la culture est la personnalité. Vous pouvez repenser la structure sur papier, mais si la culture ne soutient pas le changement, cela ne fonctionnera pas. Et une culture forte, dotée d’une structure terrible, va lentement s’étouffer. Les meilleures organisations ont raison sur les deux et comprennent qu’elles sont profondément interconnectées.
+La conception organisationnelle est l’agencement délibéré de la structure, des processus, des rôles et des droits de décision pour exécuter efficacement la stratégie. La culture regroupe les valeurs, croyances, normes et comportements partagés qui façonnent la manière dont les gens travaillent réellement ensemble. La structure fournit le cadre ; la culture façonne le comportement. Une structure peut être repensée sur papier, mais si la culture ne soutient pas le changement, la mise en œuvre échouera. De même, une culture forte associée à une structure inefficace sapera progressivement la performance organisationnelle. Les organisations les plus efficaces abordent les deux et reconnaissent qu’elles sont profondément interconnectées.
 ---
 
 ## Structures organisationnelles

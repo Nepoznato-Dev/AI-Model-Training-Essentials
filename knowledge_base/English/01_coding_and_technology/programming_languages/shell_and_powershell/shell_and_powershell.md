@@ -899,6 +899,179 @@ Publish-Module @publishParams
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between single and double quotes in Bash?
+
+**A:** Double quotes allow variable expansion; single quotes are literal:
+
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: How do I handle errors in shell scripts?
+
+**A:** Use `set -e` to exit on errors, and trap for cleanup:
+
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3: How do I process command-line arguments properly?
+
+**A:** Use `getopts` for flags and positional parameters:
+
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4: What is the PowerShell pipeline and how does it differ from Bash?
+
+**A:** PowerShell pipes objects, not text. Each object retains its properties:
+
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: How do I write cross-platform scripts?
+
+**A:** For Bash: use `#!/usr/bin/env bash`, avoid GNU-specific flags. For PowerShell: use `pwsh` (PowerShell Core) which runs on Linux/macOS/Windows.
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Batch Image Processing Script (Bash)
+
+**Step 1: Understand the Problem**
+Resize all PNG images in a directory to a maximum width of 800px.
+
+**Step 2: Identify the Approach**
+Use `find` to locate files and `convert` (ImageMagick) to resize.
+
+**Step 3: Implement**
+```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Step 4: Extend**
+Add progress bar, error handling for corrupt images, and parallel processing with `xargs -P`.
+
+### Problem 2: Automated Log Rotation (Bash)
+
+**Step 1: Understand the Problem**
+Rotate log files daily, compress old logs, and delete logs older than 30 days.
+
+**Step 2: Identify the Approach**
+Use `find` with time-based filters and `gzip` for compression.
+
+**Step 3: Implement**
+```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Step 4: Schedule**
+Add to crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+
+### Problem 3: Windows Service Health Check (PowerShell)
+
+**Step 1: Understand the Problem**
+Check if critical services are running and send an alert if any are stopped.
+
+**Step 2: Identify the Approach**
+Use `Get-Service` and filter for stopped services.
+
+**Step 3: Implement**
+```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Step 4: Automate**
+Schedule as a Windows Task Scheduler job running every 5 minutes.
+
+---
+
 ## Summary
 
 Shell scripting (Bash and PowerShell) is an essential skill for anyone who works with computers. Bash dominates Linux/macOS environments and DevOps. PowerShell offers a more modern, object-oriented approach and is essential for Windows administration. Both are needed in a modern tech stack. Shell scripts are the glue that connects systems, automates workflows, and gets things done quickly.

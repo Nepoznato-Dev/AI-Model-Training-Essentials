@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 视觉基础
 Visual Basic (VB) 是 Microsoft 开发的一种编程语言。它已经发展了几代：最初的 Visual Basic (1991)、Visual Basic 6.0 (1998)、VB.NET（2002，.NET Framework 的一部分）和 Visual Basic ..NET（当前，现在简称为“Visual Basic”，作为 .NET 的一部分）。 VB 旨在方便初学者和快速应用程序开发 (RAD)，重点关注图形用户界面和事件驱动编程。
 如今，VB.NET 继续与 C# 一起成为 .NET 生态系统的一部分，尽管 Microsoft 已表示 C# 是未来的主要语言。 VB 在企业环境中仍然广泛使用，特别是旧版 Windows 应用程序、办公自动化 (VBA) 和内部业务工具。
@@ -54,7 +55,7 @@ Visual Basic (VB) 是 Microsoft 开发的一种编程语言。它已经发展了
 |------------|---------|--------------------|
 | **相关性下降** |微软优先考虑C#； VB 处于维护模式 |使用 C# 进行新项目 |
 | **VB6 已过时** |不再支持；不能在现代.NET 上运行|迁移到 VB.NET 或 C# |
-| **跨平台有限** |主要针对 Windows |使用C#或其他语言进行跨平台 |
+| **跨平台有限** |主要针对 Windows |使用C#或其他语言进行跨平台|
 | **较小的社区** |新资源、图书馆或职位发布更少 |利用 .NET/C# 资源 |
 | **VBA 限制** |与现代语言相比，VBA 已经过时且有局限性 |使用 Python 或 Office 脚本实现复杂的自动化 |
 ---
@@ -786,7 +787,7 @@ Dim searchResult As Integer = span.IndexOf(CByte(42))
 | **MSIX** |具有全新安装/卸载功能的现代打包应用程序 | Windows 应用商店、企业 |
 | **Windows 安装程序 (MSI)** |完全控制的传统安装程序 |复杂的装置 |
 | **独立** |将 .NET 运行时与应用程序捆绑在一起没有 .NET 的机器 |
-| **单文件发布** |一切都在一个可执行文件中 |简单分布|
+| **单文件发布** |一切都在一个可执行文件中 |简单分布 |
 ```bash
 # .NET CLI build and publish commands
 dotnet build MyApp.vbproj -c Release
@@ -805,14 +806,97 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 ---
 
 ## 何时使用 Visual Basic
-|场景 |为什么选择VB |更好的选择|
+|场景|为什么选择VB |更好的选择|
 |----------|--------|--------------------|
 | VBA/办公自动化| Office 的标准宏语言 | Python (openpyxl)、Office 脚本 |
 |旧版 VB6 维护 |现有代码库 |迁移到 C# 或 VB.NET |
 |简单的Windows工具|使用 WinForms 快速构建 | C# 与 WPF 或 WinUI |
-|学习编程 |非常平易近人的语法 | Python（更通用）|
+|学习编程 |非常平易近人的语法| Python（更通用）|
 | .NET 新开发 |可以，但首选 C# | C# |
 |跨平台应用程序 |不适合| C#、Flutter、Web 技术 |
+---
+
+## 综合问答
+### Q1：VB6、VB.NET 和 VBA 有什么区别？
+**答：** 每个都有不同的目的：
+- **VB6**：经典 Visual Basic — 基于 COM、仅限 Windows、旧版
+- **VB.NET**：现代 .NET 语言 — 在 CLR 上运行，完整的 OOP，Visual Studio 的一部分
+- **VBA**：Visual Basic for Applications — 嵌入在 Microsoft Office 中
+### Q2：VBA 如何自动化 Excel？
+**答：** VBA 可以操作单元格、范围和工作表：
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### Q3：如何在 VB.NET 中创建 Windows 窗体应用程序？
+**答：** 使用 Visual Studio 设计器：
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### Q4：VB.NET 和 C# 之间的主要区别是什么？
+**答：** 它们共享相同的运行时和库。语法差异：
+- VB.NET：`Dim`、`Sub`、`Function`、`If...Then...End If` 
+- C#：类型优先，`{}` 块，`;` 终止符
+- VB.NET 不区分大小写； C# 区分大小写
+### Q5：VB.NET还值得学吗？
+**答：** 为了维护现有应用程序，是的。对于新项目，首选 C#。 VBA 对于办公自动化仍然至关重要。
+---
+
+## 解决问题的思路
+### 问题 1：使用 VBA 自动生成 Excel 报告
+**第 1 步：了解问题**
+根据原始数据生成月度销售报告。
+**第 2 步：确定方法**
+使用 VBA 读取数据、计算摘要和格式化输出。
+**步骤 3：实施**```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**第 4 步：扩展**
+添加图表、条件格式和电子邮件传送。
 ---
 
 ＃＃ 概括

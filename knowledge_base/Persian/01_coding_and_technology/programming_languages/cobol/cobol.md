@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "COBOL"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی COBOL شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم، و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [cobol، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "پیشرفته"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "34 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "COBOL"
+description: "Comprehensive reference for the COBOL programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [cobol, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # COBOL
 COBOL (زبان تجاری متداول) یکی از قدیمی ترین زبان های برنامه نویسی است که هنوز مورد استفاده قرار می گیرد، اولین بار در سال 1959 توسعه یافت. این زبان برای پردازش داده های تجاری - سیستم های مالی، حقوق و دستمزد، بانکداری، بیمه و برنامه های دولتی طراحی شده است. دستور زبان انگلیسی COBOL برای مدیران تجاری و نه فقط برنامه نویسان قابل خواندن بود.
 COBOL علیرغم قدمتش، تقریباً 30 درصد از کل معاملات تجاری در سطح جهان را پردازش می کند. بانک‌های بزرگ، سازمان‌های دولتی (از جمله اداره تامین اجتماعی ایالات متحده) و شرکت‌های بیمه همچنان به سیستم‌های اصلی COBOL متکی هستند. ترس از اشکال Y2K در سال 1999 COBOL را به آگاهی عمومی بازگرداند و این زبان همچنان زیرساخت های حیاتی را در سراسر جهان اجرا می کند.
@@ -124,9 +129,9 @@ COBOL علیرغم قدمتش، تقریباً 30 درصد از کل معامل�
 | سطح | هدف | مثال |
 |-------|---------|---------|
 | **01** | آیتم سطح رکورد (متغیر سطح بالا یا رکورد) | `01 WS-EMPLOYEE.`|
-| **02–49** | اقلام گروهی یا ابتدایی (فیلدهای فرعی) |  __محافظت شده_1__ |
+| **02–49** | اقلام گروهی یا ابتدایی (فیلدهای فرعی) | `05 EMP-NAME PIC X(30).`|
 | **66** | تغییر نام بند (نمای جایگزین داده ها) | `66 EMP-FULL-NAME RENAMES EMP-FIRST.`|
-| **77** | آیتم ابتدایی مستقل (بدون موارد فرعی) |  __محافظت شده_3__ |
+| **77** | آیتم ابتدایی مستقل (بدون موارد فرعی) | `77 WS-COUNTER PIC 9(5).`|
 | **88** | نام شرایط (پرچم های بولی مانند) | `88 WS-IS-SENIOR VALUE 'Y'.`|
 ```cobol
        DATA DIVISION.
@@ -443,11 +448,11 @@ run: $(TARGET)
 ### مرجع گزینه های کامپایلر
 | گزینه | توضیحات | مثال |
 |--------|------------|---------|
-| `-free`| منبع فرمت آزاد (بدون محدودیت ستونی) |  __محافظت شده_1__ |
-| `-fixed`| فرمت ثابت (ستون های سنتی 1-80) |  __محافظت شده_3__ |
+| `-free`| منبع فرمت آزاد (بدون محدودیت ستونی) | `cobc -free prog.cbl`|
+| `-fixed`| فرمت ثابت (ستون های سنتی 1-80) | `cobc -fixed prog.cbl`|
 | `-O2`| بهینه سازی سطح 2 | `cobc -O2 prog.cbl`|
-|  __محافظت شده_6__ | ایجاد اطلاعات اشکال زدایی | `cobc -g prog.cbl`|
-| `-std=cobol2014`| استفاده از استاندارد COBOL 2014 |  __محافظت شده_9__ |
+| `-g`| ایجاد اطلاعات اشکال زدایی | `cobc -g prog.cbl`|
+| `-std=cobol2014`| استفاده از استاندارد COBOL 2014 | `cobc -std=cobol2014 prog.cbl`|
 | `-x`| ساخت فایل اجرایی (نه فقط کامپایل) | `cobc -x prog.cbl`|
 | `-I`| مسیر جستجوی کتاب کپی | `cobc -I ./copybooks prog.cbl`|
 | `-Wall`| فعال کردن همه هشدارها | `cobc -Wall prog.cbl`|
@@ -824,5 +829,129 @@ scp bin/payroll server:/opt/cobol/bin/
 | علم داده / ML | مناسب نیست | پایتون، R |
 ---
 
+## پرسش و پاسخ مصنوعی
+### Q1: چرا COBOL هنوز بعد از 60 سال در بانکداری استفاده می شود؟
+**الف:** COBOL حدود 70 تا 80 درصد از تراکنش های بانکی را پردازش می کند. دلایل:
+- پایگاه های کد عظیم (میلیون ها خط) که به درستی کار می کنند
+- قابلیت اطمینان فوق العاده - این سیستم ها برای دهه ها در تولید آزمایش شده اند
+- هزینه و خطر مهاجرت بیشتر از هزینه های نگهداری است
+- نحو پرمخاطب و انگلیسی COBOL خود مستندسازی است
+- حساب اعشاری ساخته شده در زبان (بدون خطا در گرد کردن ممیز شناور)
+### Q2: COBOL چگونه محاسبات اعشاری را بدون خطاهای ممیز شناور مدیریت می کند؟
+**A:** COBOL دارای انواع اعشاری بومی با دقت ثابت است:
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V` یک نقطه اعشاری ضمنی است. COBOL هرگز از ممیز شناور باینری برای پول استفاده نمی کند.
+### Q3: ساختار برنامه COBOL چیست؟
+**A:** هر برنامه COBOL دارای چهار بخش است:
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4: چگونه فایل های متوالی را در COBOL بخوانم و پردازش کنم؟
+**A:** COBOL در پردازش فایل برتری دارد:
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Q5: چه ابزارهایی برای توسعه COBOL مدرن موجود است؟
+**A:** GnuCOBOL (متن باز)، IBM Enterprise COBOL، Micro Focus، و افزونه های VS Code محیط های توسعه مدرن را ارائه می دهند. ساخت با `cobc -x program.cob`.
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: ایجاد گزارش مشتری
+**مرحله 1: مشکل را درک کنید**
+سوابق مشتری را بخوانید، مجموع ها را محاسبه کنید و یک گزارش فرمت شده ایجاد کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از قابلیت های مدیریت فایل و گزارش نویسی COBOL استفاده کنید.
+**مرحله 3: پیاده سازی **```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**مرحله 4: تایید **
+مجموع ها را با داده های منبع بررسی کنید. تست با موارد لبه (فایل خالی، تعادل صفر).
+### مشکل 2: پردازش دسته ای با کنترل خرابی
+**مرحله 1: مشکل را درک کنید**
+پردازش تراکنش‌ها بر اساس گروه‌بندی، چاپ جمع‌های فرعی.
+**مرحله 2: رویکرد را شناسایی کنید**
+از منطق شکست کنترل استفاده کنید — تشخیص دهید که چه زمانی کلید گروه تغییر می کند.
+**مرحله 3: پیاده سازی **```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**مرحله 4: تایید **
+بررسی کنید که کل آخرین گروه چاپ شده باشد. بررسی کنید که کل کل برابر است با مجموع مجموع دپارتمان.
+---
+
 ## خلاصه
-COBOL یادگاری از روزهای اولیه محاسبات است که از مردن خودداری می کند - زیرا توان پرداخت آن را ندارد. سیستم‌های بانکی و دولتی جهان به برنامه‌های COBOL وابسته هستند که دهه‌ها به طور قابل اعتماد اجرا شده‌اند. در حالی که امروزه هیچ کس COBOL را برای یک پروژه جدید انتخاب نمی کند، این زبان برای حفظ زیرساختی که زیربنای مالی جهانی است، بسیار مهم است. کمبود توسعه دهندگان COBOL آن را به یک جایگاه شگفت آور سودآور تبدیل می کند.
+COBOL میراث دهه های اولیه محاسبات است که همچنان در حال استفاده فعال است زیرا جایگزینی در مقیاس امکان پذیر نیست. سیستم‌های بانکی و دولتی جهان به برنامه‌های COBOL وابسته هستند که دهه‌ها به طور قابل اعتماد اجرا شده‌اند. در حالی که COBOL معمولاً امروزه برای یک پروژه جدید انتخاب نمی شود، این زبان برای حفظ زیرساختی که از مالی جهانی پشتیبانی می کند، مهم است. کمبود توسعه دهندگان COBOL آن را به یک جایگاه پردرآمد تبدیل می کند.

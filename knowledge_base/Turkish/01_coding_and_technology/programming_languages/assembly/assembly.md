@@ -41,7 +41,7 @@ contribution:
 
 # Montaj Dili
 Assembly dili, insan tarafından okunabilen en düşük seviyeli programlama dilidir. Ham ikili kod yerine anımsatıcı kodları (`MOV`, `ADD`,`JMP`gibi) kullanarak bir bilgisayarın makine kodu talimatlarının doğrudan temsilini sağlar. Her derleme dili belirli bir işlemci mimarisine (x86, ARM, MIPS, RISC-V) özeldir; bir mimari için yazılan kod diğerinde çalışmaz.
-Montaj dili uygulamalar oluşturmak için kullanılmaz. Donanım üzerinde mutlak kontrole ihtiyaç duyduğunuzda kullanılır: işletim sistemi çekirdekleri, aygıt sürücüleri, önyükleyiciler, yerleşik ürün yazılımı, performans açısından kritik kod bölümleri yazma, tersine mühendislik ve bilgisayarların talimatları gerçekte nasıl yürüttüğünü anlama.
+Montaj dili uygulamalar oluşturmak için kullanılmaz. Donanım üzerinde mutlak kontrole ihtiyaç duyduğunuzda kullanılır: işletim sistemi çekirdekleri, aygıt sürücüleri, önyükleyiciler, yerleşik donanım yazılımı, performans açısından kritik kod bölümleri yazma, tersine mühendislik ve bilgisayarların talimatları gerçekte nasıl yürüttüğünü anlama.
 ---
 
 ## Montaj Neden Önemlidir
@@ -687,7 +687,7 @@ mov     [mem4], edx
 ---
 
 ## Dağıtım ve Gerçek Dünya Kullanımı
-### Montaj Programları Nasıl Konuşlandırılır
+### Montaj Programları Nasıl Dağıtılır?
 Montaj programları doğrudan yerel makine kodu yürütülebilir dosyalarına derlenir. Çalışma zamanı yok, sanal makine yok ve tercüman gerekli değil. Dağıtım, ikili dosyayı hedef sisteme kopyalamak kadar basittir.
 ```bash
 # Build a static binary (no shared library dependencies)
@@ -734,6 +734,85 @@ void process_data(void) {
 | Gömülü ürün yazılımı (çıplak metal) | Üst düzey dil mevcut değil | C, Pas |
 | Eğitim | Bilgisayar mimarisini anlamak | — |
 | Genel uygulama geliştirme | Karmaşık programlar için pratik değildir | Herhangi bir üst düzey dil |
+---
+
+## Sentetik Soru-Cevap
+### S1: RISC ve CISC derlemesi arasındaki fark nedir?
+**C:** CISC (x86) karmaşık, değişken uzunlukta talimatlara sahiptir. RISC (ARM) basit, sabit uzunlukta talimatlara sahiptir:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### S2: Yığın montajda nasıl çalışır?
+**C:** Yığın aşağı doğru büyüyor. `push`SP'yi ve depoları azaltır; `pop`SP'yi yükler ve artırır:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### S3: Montajdaki işlevleri nasıl çağırırım?
+**A:** Çağrı kuralını izleyin (Linux'ta System V AMD64, Windows'ta Windows x64):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### S4: Bilinmesi gereken en önemli montaj talimatları nelerdir?
+**C:** Veri hareketi, aritmetik, kontrol akışı ve yığın işlemleri çekirdeği oluşturur.
+### S5: Montaj güvenlik araştırmasında nasıl kullanılır?
+**C:** Tersine mühendislik, yararlanma geliştirme, kötü amaçlı yazılım analizi ve derleyici çıktısını anlama, bunların tümü derleme okuryazarlığı gerektirir.
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Montajda Döngü Uygulamak
+**1. Adım: Sorunu Anlayın**
+1'den N'ye kadar tam sayıları toplayın.
+**2. Adım: Yaklaşımı Belirleyin**
+Bir sayaç kaydı ve akümülatör kullanın.
+**3. Adım: Uygulama**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**4. Adım: Optimize edin**
+O(1) için O(N) yerine N*(N+1)/2 formülünü kullanın.
 ---
 
 ## Özet

@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Haskell
-Haskell là một ngôn ngữ lập trình thuần túy chức năng, được gõ tĩnh, được đánh giá lười biếng. Được chuẩn hóa lần đầu tiên vào năm 1990 (Haskell 90) và được cải tiến qua nhiều phiên bản (Haskell 2010 là tiêu chuẩn hiện tại), Haskell được biết đến với tính chính xác về mặt toán học, hệ thống kiểu mạnh mẽ (với các lớp kiểu, đơn nguyên và kiểu dữ liệu đại số) và nhấn mạnh vào tính chính xác thông qua các kiểu.
+Haskell là một ngôn ngữ lập trình thuần túy về chức năng, được gõ tĩnh, được đánh giá một cách lười biếng. Được chuẩn hóa lần đầu tiên vào năm 1990 (Haskell 90) và được cải tiến qua nhiều phiên bản (Haskell 2010 là tiêu chuẩn hiện tại), Haskell được biết đến với tính chính xác về mặt toán học, hệ thống kiểu mạnh mẽ (với các lớp kiểu, đơn nguyên và kiểu dữ liệu đại số) và nhấn mạnh vào tính chính xác thông qua các kiểu.
 Haskell không phải là ngôn ngữ chính thống nhưng sức ảnh hưởng của nó rất lớn. Các khái niệm như đơn nguyên, đánh giá lười biếng và các lớp loại đã ảnh hưởng đến Rust, Swift, Kotlin, Scala và TypeScript. Haskell được sử dụng trong tài chính (Standard Chartered, Barclays), biên dịch (GHC) và xác minh chính thức.
 ---
 
@@ -53,7 +54,7 @@ Haskell không phải là ngôn ngữ chính thống nhưng sức ảnh hưởng
 ## Sự đánh đổi
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
-| **Đường cong học tập dốc** | Đơn nguyên, hàm số, lớp kiểu — rất khác với các ngôn ngữ mệnh lệnh | Đầu tư thời gian; các khái niệm có thể chuyển nhượng được |
+| **Đường cong học tập dốc** | Monads, functor, các lớp kiểu — rất khác với các ngôn ngữ mệnh lệnh | Đầu tư thời gian; các khái niệm có thể chuyển nhượng được |
 | **Đánh giá lười biếng bất ngờ** | Có thể gây ra các vấn đề về hiệu suất và sử dụng bộ nhớ không mong muốn | Sử dụng đánh giá nghiêm ngặt (`!`) khi cần thiết |
 | **Hệ sinh thái nhỏ hơn** | Ít thư viện hơn Python, Java hoặc JavaScript | Hacking đang gia tăng; nhiều gói chất lượng |
 | **Thị trường việc làm** | Niche - chủ yếu là công việc tài chính, nghiên cứu và biên soạn | Phát triển trong cộng đồng lập trình chức năng |
@@ -472,16 +473,16 @@ tests:
 ### Lệnh xây dựng chính
 | Lệnh | Mô tả |
 |----------|-------------|
-|  __BẢO VỆ_0__ | Tạo dự án mới từ mẫu |
-|  __BẢO VỆ_1__ | Xây dựng dự án |
-|  __BẢO VỆ_2__ | Bắt đầu REPL tương tác khi tải dự án |
-|  __BẢO VỆ_3__ | Chạy bộ thử nghiệm |
-|  __BẢO VỆ_4__ | Chạy điểm chuẩn |
-|  __BẢO VỆ_5__ | Tạo tài liệu |
-|  __BẢO VỆ_6__ | Chạy tệp thực thi |
-|  __BẢO VỆ_7__ | Tạo tác sạch sẽ |
-|  __BẢO VỆ_8__ | Cập nhật chỉ mục gói |
-|  __BẢO VỆ_9__ | Ghim các phiên bản phụ thuộc chính xác |
+| `stack new my-project`| Tạo dự án mới từ mẫu |
+| `stack build`| Xây dựng dự án |
+| `stack ghci`| Bắt đầu REPL tương tác khi tải dự án |
+| `stack test`| Chạy bộ thử nghiệm |
+| `stack bench`| Chạy điểm chuẩn |
+| `stack haddock`| Tạo tài liệu |
+| `stack exec my-app`| Chạy tệp thực thi |
+| `stack clean`| Tạo tác sạch sẽ |
+| `stack update`| Cập nhật chỉ mục gói |
+| `stack freeze`| Ghim các phiên bản phụ thuộc chính xác |
 ### Đường dẫn CI/CD (Hành động trên GitHub)
 ```yaml
 # .github/workflows/haskell.yml
@@ -598,10 +599,10 @@ instance Arbitrary PositiveInt where
 ### Lệnh kiểm tra
 | Lệnh | Mô tả |
 |----------|-------------|
-|  __BẢO VỆ_0__ | Chạy tất cả các bộ thử nghiệm |
-|  __BẢO VỆ_1__ | Bỏ qua tối ưu hóa để xây dựng thử nghiệm nhanh hơn |
-|  __BẢO VỆ_2__ | Chạy thử nghiệm với đầu ra có màu |
-|  __BẢO VỆ_3__ | Tải các mô-đun kiểm tra trong REPL |
+| `stack test`| Chạy tất cả các bộ thử nghiệm |
+| `stack test --fast`| Bỏ qua tối ưu hóa để xây dựng thử nghiệm nhanh hơn |
+| `stack build --test --test-arguments "--color"`| Chạy thử nghiệm với đầu ra có màu |
+| `stack ghci --test`| Tải các mô-đun kiểm tra trong REPL |
 
 ---
 
@@ -807,8 +808,8 @@ main = do
 | Công cụ | Mục đích | Lệnh |
 |------|----------|----------|
 | **Trình hồ sơ GHC** | Hồ sơ thời gian và phân bổ | `stack build --profile`rồi`./app +RTS -p`|
-| **ThreadScope** | Trực quan hóa việc thực thi song song | `./app +RTS -l`sau đó mở`app.eventlog`|
-| **ghc-sự kiện** | Phân tích nhật ký sự kiện |  __BẢO VỆ_4__ |
+| **ThreadScope** | Trực quan hóa việc thực thi song song | `./app +RTS -l`thì mở`app.eventlog`|
+| **ghc-sự kiện** | Phân tích nhật ký sự kiện | `ghc-events show app.eventlog`|
 | **Tiêu chí** | Điểm chuẩn thống kê | Sử dụng gói`criterion`|
 | **hp2pretty** | Trực quan hóa hồ sơ heap | `./app +RTS -h`rồi`hp2pretty app.hp`|
 ### Đo điểm chuẩn bằng tiêu chí
@@ -941,5 +942,209 @@ pkgs.haskellPackages.developPackage {
 | Khoa học dữ liệu | Không phải hệ sinh thái | Python, R |
 ---
 
+## Hỏi đáp tổng hợp
+### Câu 1: Đánh giá lười biếng của Haskell ảnh hưởng đến hiệu suất như thế nào?
+**A:** Đánh giá lười biếng có nghĩa là các biểu thức chỉ được tính toán khi cần thiết, cho phép cấu trúc dữ liệu vô hạn và các quy trình có thể tổng hợp. Tuy nhiên, nó có thể gây rò rỉ không gian nếu thun tích tụ:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Sử dụng`foldl'`(từ`Data.List`) thay vì`foldl`cho các nếp gấp số. Sử dụng các mẫu bang`!`hoặc`seq`để buộc đánh giá khi cần.
+### Câu 2: Sự khác biệt thực tế giữa`Functor`,`Applicative`và`Monad`là gì?
+**A:** Mỗi lớp kiểu chữ bổ sung thêm khả năng:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** ánh xạ một hàm thuần túy lên một ngữ cảnh. **Áp dụng** áp dụng chính các hàm trong một ngữ cảnh. **Monad** cho phép mỗi bước phụ thuộc vào kết quả của bước trước đó. Trong thực tế: sử dụng`fmap`/`<$>`cho các phép biến đổi đơn giản,`<*>`để kết hợp các hiệu ứng và`>>=`/`do`cho các phép tính phụ thuộc tuần tự.
+### Câu 3: Làm cách nào để xử lý các tác dụng phụ trong mã Haskell thuần túy?
+**A:** Sử dụng hệ thống loại để phân tách mã thuần túy và hiệu quả:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Giữ logic cốt lõi thuần túy và đẩy các hiệu ứng ra rìa. Sử dụng`ReaderT`để định cấu hình,`ExceptT`cho lỗi và`StateT`cho trạng thái có thể thay đổi.
+### Q4: Loại lớp là gì và chúng khác với giao diện OOP như thế nào?
+**A:** Các lớp loại xác định hành vi mà các loại có thể triển khai. Không giống như giao diện OOP, chúng mở (bất kỳ loại nào cũng có thể là một phiên bản) và hỗ trợ đa hình đặc biệt:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Câu hỏi 5: Làm cách nào để cấu trúc một dự án Haskell để sử dụng trong thực tế?
+**A:** Sử dụng Cabal hoặc Stack với bố cục chuẩn:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Các phương pháp chính: giữ IO trong`Main.hs`hoặc mô-đun`IO`chuyên dụng, làm cho logic cốt lõi trở nên thuần túy và có thể kiểm tra được, sử dụng trình bao bọc`newtype`cho các loại miền.
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Thực hiện chức năng phân chia an toàn với báo cáo lỗi
+**Bước 1: Tìm hiểu vấn đề**
+Chúng ta cần phép chia xử lý phép chia cho 0 và báo cáo các lỗi có ý nghĩa chứ không chỉ gặp sự cố.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`Either`để trả về thông báo lỗi hoặc kết quả. Điều này làm cho khả năng thất bại trở nên rõ ràng trong loại này.
+**Bước 3: Thực hiện**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Bước 4: Xác minh**
+Hệ thống loại đảm bảo người gọi phải xử lý trường hợp lỗi. Khớp mẫu hoặc`either`buộc phải xử lý rõ ràng.
+### Vấn đề 2: Phân tích ngôn ngữ cấu hình đơn giản
+**Bước 1: Tìm hiểu vấn đề**
+Phân tích các cặp khóa-giá trị từ một chuỗi như`name=Alice\nage=30`.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`Text.Parsec`hoặc đệ quy thủ công. Để đơn giản, hãy sử dụng`break`và`span`.
+**Bước 3: Thực hiện**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Bước 4: Gia hạn**
+Thêm xử lý nhận xét (`#`), tiêu đề phần (`[section]`) và nhập ép buộc bằng cách sử dụng`Value`ADT.
+### Vấn đề 3: Xây dựng Fibonacci được ghi nhớ bằng sự lười biếng
+**Bước 1: Tìm hiểu vấn đề**
+Tính toán số Fibonacci một cách hiệu quả. Đệ quy ngây thơ là theo cấp số nhân.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng đánh giá lười biếng của Haskell để tạo danh sách vô hạn trong đó mỗi phần tử được tính toán một lần và được lưu vào bộ nhớ đệm.
+**Bước 3: Thực hiện**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Bước 4: Tối ưu hóa**
+Để truy cập ngẫu nhiên, hãy sử dụng`Data.Array`với cấu trúc lười biếng. Đối với các chỉ số rất lớn, hãy sử dụng lũy ​​thừa ma trận trong O(log n).
+### Bài toán 4: Triển khai một máy trạng thái đơn giản
+**Bước 1: Tìm hiểu vấn đề**
+Mô hình đèn giao thông có chu kỳ Đỏ -> Xanh -> Vàng -> Đỏ.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng kiểu dữ liệu đại số cho các trạng thái và hàm chuyển đổi thuần túy.
+**Bước 3: Thực hiện**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Bước 4: Xác minh**
+Các hàm thuần túy có thể kiểm tra được một cách tầm thường:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
+---
+
 ## Bản tóm tắt
-Haskell là sự thể hiện thuần túy nhất của lập trình hàm trong ngôn ngữ chính thống. Hệ thống kiểu của nó là một trong những hệ thống mạnh mẽ nhất và sự nhấn mạnh của nó vào các hàm thuần túy tạo ra mã dễ suy luận và kiểm tra hơn. Mặc dù Haskell không được sử dụng rộng rãi trong công nghiệp nhưng những ý tưởng của nó đã ảnh hưởng sâu sắc đến lập trình hiện đại. Học Haskell sẽ thay đổi cách bạn nghĩ về lập trình — ngay cả khi bạn chưa bao giờ sử dụng nó một cách chuyên nghiệp.
+Haskell là sự thể hiện thuần túy nhất của lập trình hàm trong ngôn ngữ chính thống. Hệ thống kiểu của nó là một trong những hệ thống mạnh mẽ nhất và sự nhấn mạnh của nó vào các hàm thuần túy tạo ra mã dễ suy luận và kiểm tra hơn. Mặc dù Haskell không được sử dụng rộng rãi trong công nghiệp nhưng những ý tưởng của nó đã ảnh hưởng sâu sắc đến ngành lập trình hiện đại. Học Haskell sẽ thay đổi cách bạn nghĩ về lập trình — ngay cả khi bạn chưa bao giờ sử dụng nó một cách chuyên nghiệp.

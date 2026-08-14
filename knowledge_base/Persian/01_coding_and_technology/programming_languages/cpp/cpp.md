@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "C++"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی C++ شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [cpp، زبان برنامه‌نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "31 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "C++"
+description: "Comprehensive reference for the C++ programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [cpp, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C++
 C++ یک زبان برنامه نویسی همه منظوره و کامپایل شده است که توسط Bjarne Stroustrup ایجاد شد و اولین بار در سال 1985 منتشر شد. این زبان C را با ویژگی های شی گرا، ژنریک و -- در نسخه های مدرن (C++11 و جدیدتر) -- انتزاعات سطح بالا مانند لامبدا، اشاره گرهای هوشمند و کتابخانه قالب استاندارد (STL) گسترش می دهد. C++ از اصل "انتزاع سربار صفر" پیروی می کند: نباید برای ویژگی هایی که استفاده نمی کنید هزینه ای پرداخت کنید.
 C++ زمانی که به عملکرد بالا و قدرت بیان نیاز دارید، زبان انتخابی است. موتورهای بازی (Unreal Engine)، مرورگرها (Chrome، Firefox)، پایگاه‌های داده (MongoDB)، سیستم‌های عامل (بخش‌هایی از Windows و macOS)، سیستم‌های معاملات مالی و شبیه‌سازی‌های بلادرنگ را نیرو می‌دهد.
@@ -712,7 +717,7 @@ cmake --build build
 ## چه زمانی از C++ استفاده کنیم
 | سناریو | چرا C++ | جایگزین بهتر |
 |----------|---------|-------------------|
-| موتورهای بازی | عملکرد + کنترل زمان واقعی | -- |
+| موتورهای بازی | عملکرد + کنترل بلادرنگ | -- |
 | مرورگرها | چند دهه کد بهینه شده | زنگ برای اجزای جدید مرورگر |
 | تجارت با فرکانس بالا | تأخیر میکروثانیه اهمیت دارد | -- |
 | سیستم های تعبیه شده (پیچیده) | مجموعه ویژگی های غنی با دسترسی سخت افزاری | C برای ساده تر، زنگ برای ایمنی |
@@ -732,6 +737,380 @@ cmake --build build
 | C++20 | 2020 | **نسخه اصلی**: مفاهیم، ​​محدوده ها، روال ها، ماژول ها |
 | C++23 | 2023 | std::expected، std::print، با استنباط این |
 برای پروژه های جدید، حداقل C++20 را هدف قرار دهید.
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین `std::unique_ptr`،`std::shared_ptr`و`std::weak_ptr`چیست؟
+**A:**`unique_ptr`مالکیت انحصاری را نشان می دهد - فقط یک اشاره گر می تواند مالک منبع باشد. سربار آن صفر است (همانند یک اشاره گر خام) و نمی توان آن را کپی کرد، فقط جابجا کرد. `shared_ptr`مالکیت مشترک را نشان می دهد - چندین اشاره گر منبع را با شمارش مرجع به اشتراک می گذارند. هنگامی که آخرین`shared_ptr`از بین می رود، منبع آزاد می شود. `weak_ptr`یک ناظر غیر مالک یک`shared_ptr`است - تعداد مراجع را افزایش نمی دهد و برای شکستن مراجع دایره ای استفاده می شود.
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### Q2: معناشناسی حرکت چیست و چرا اهمیت دارد؟
+**A:** Move semantics (C++11) امکان انتقال منابع (هپ حافظه، دسته فایل و غیره) را از یک شی موقت به جای کپی کردن آنها می دهد. یک سازنده/تخصیص حرکت یک مرجع rvalue (`T&&`) می گیرد و منابع منبع را "دزدیده" می کند و آن را در یک حالت معتبر اما نامشخص می گذارد. این کار کپی های غیر ضروری را حذف می کند و دلیل کارآمد بودن تخصیص مجدد`std::vector`است.
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### Q3: چه زمانی باید از`auto`استفاده کنم، و چه زمانی باید به طور صریح انواع را مشخص کنم؟
+**A:** از`auto`زمانی استفاده کنید که نوع از زمینه مشخص است (حلقه های تکرارکننده، فراخوانی های`make_unique`/ `make_shared`، انواع لامبدا، انواع الگوهای پیچیده). زمانی که نوع واضح نیست، زمانی که به تبدیل های ضمنی نیاز دارید یا در امضاهای عمومی API، انواع را به صراحت مشخص کنید. سبک "Almost Always Auto" (AAA)`auto`را برای متغیرهای محلی ترجیح می دهد. سبک "خودکار جایی که مفید است" محافظه کارانه تر است.
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### Q4: چگونه مفاهیم (C++20) کد قالب را بهبود می بخشد؟
+**الف:** مفاهیمی که پارامترهای قالب را با الزامات نامگذاری شده محدود می کند، پیام های خطای واضحی را تولید می کند و امکان بارگذاری بیش از حد تابع در محدودیت های الگو را فراهم می کند. قبل از مفاهیم، ​​از SFINAE و`static_assert`استفاده می شد - هر دو خطاهای مرموز ایجاد می کنند. مفاهیم، ​​کد قالب را قابل خواندن و ترکیب می کنند.
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### Q5: قانون پنج چیست و چه ارتباطی با قانون صفر دارد؟
+**الف:** قانون پنج: اگر هر کدام را از نوع تخریب کننده، سازنده کپی، تخصیص کپی، سازنده حرکت یا انتقال انتساب تعریف کنید، باید هر پنج را تعریف کنید. قانون صفر (ترجیحا): کلاس‌ها را طوری طراحی کنید که به هیچ یک از اینها نیاز نداشته باشند - از انواع RAII (`std::string`، `std::vector`، `std::unique_ptr`) به عنوان اعضا استفاده کنید، و ویژه‌های تولید شده توسط کامپایلر به طور خودکار کار درست را انجام می‌دهند.
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک صف تولیدکننده-مصرف کننده ایمن رشته ای را با محدوده اجرا کنید
+**بیانیه مشکل:** با استفاده از محدوده های C++20 برای طرف مصرف کننده، یک صف تولیدکننده-مصرف کننده محدود و ایمن بسازید. صف باید تولیدکنندگان را در مواقع پر و مصرف کنندگان را در حالت خالی مسدود کند و از تعطیلی دلپذیر پشتیبانی کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) یک صف محدود با مسدود کردن فشار/پاپ، (2) ایمنی رشته از طریق متغیرهای mutex و شرط، (3) راهی برای خاموش شدن سیگنال، (4) یکپارچه‌سازی محدوده‌های C++20 تا مصرف‌کنندگان بتوانند از حلقه‌های مبتنی بر محدوده استفاده کنند.
+** مرحله 2 - شناسایی رویکرد: **
+- برای مسدود کردن از`std::mutex`+`std::condition_variable`استفاده کنید.
+- از`std::queue<T>`به عنوان ظرف زیرین استفاده کنید.
+- از`std::optional<T>`به عنوان نوع برگشتی استفاده کنید — خاموش شدن سیگنال های `std::nullopt`.
+- یک تکرار کننده مبتنی بر نگهبان برای پشتیبانی از محدوده ها پیاده سازی کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی موضوع:`std::mutex`از تمام وضعیت صف محافظت می کند. متغیرهای شرط بلوک را کنترل می کنند.
+- خاموش شدن برازنده:`shutdown()`همه پیشخدمت ها را بیدار می کند. `pop()``nullopt` را در صورت خالی و خاموش شدن برمی گرداند.
+- پشتیبانی از محدوده: نگهبان تکرار کننده (ساخت پیش فرض) با هر تکرار کننده خسته مقایسه می شود.
+- تولید: از`boost::lockfree::spsc_queue`برای تک‌مصرف‌کننده تک‌تولیدکننده بدون قفل یا`folly::ProducerConsumerQueue`برای سناریوهای پرتوان استفاده کنید.
+### مشکل 2: یک Type-Erased Any Type را اجرا کنید
+**بیانیه مشکل:** یک نسخه ساده شده از`std::any`(C++17) را از ابتدا اجرا کنید - یک محفظه ایمن برای مقادیر تکی از هر نوع، پشتیبانی از کپی، جابجایی و بازیابی ایمن نوع از طریق `any_cast`.
+** مرحله 1 - مشکل را درک کنید:**
+`std::any`یک مقدار از هر نوع قابل کپی را ذخیره می کند و با بررسی نوع آن را بازیابی می کند. در داخل، از نوع پاک کردن استفاده می کند: یک رابط کلاس پایه با یک الگوی مشتق شده که مقدار واقعی را نگه می دارد. `any_cast`نوع ذخیره شده را در زمان اجرا بررسی می کند و`bad_any_cast`را در عدم تطابق می اندازد.
+** مرحله 2 - شناسایی رویکرد: **
+- از کلاس پایه`HolderBase`با`clone()`و`type()`مجازی استفاده کنید.
+- از یک الگوی مشتق شده`Holder<T>`استفاده کنید که مقدار واقعی را ذخیره می کند.
+- یک`std::unique_ptr<HolderBase>`را در کلاس`Any`ذخیره کنید.
+-`any_cast<T>``typeid` را بررسی می کند و`static_cast`را انجام می دهد.
+**مرحله 3 - راه حل را اجرا کنید:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی نوع:`any_cast``typeid` را در زمان اجرا بررسی می کند - نوع اشتباه`BadAnyCast`را پرتاب می کند.
+- معناشناسی کپی: مجازی`clone()`یک کپی عمیق از مقدار نگهداری شده ایجاد می کند.
+- معناشناسی حرکت: سازنده/تخصیص حرکت پیش‌فرض`unique_ptr`را به طور موثر منتقل می‌کند.
+- بهینه سازی بافر کوچک (مانند`std::any`واقعی): انواع کوچک را به صورت درون خطی و بدون تخصیص پشته ذخیره کنید. این به یک`union`با بافر بایت نیاز دارد - بسیار پیچیده تر.
+- تولید: از`std::any`(C++17) استفاده کنید - استاندارد، به خوبی آزمایش شده است و ممکن است شامل SBO باشد.
 ---
 
 ## خلاصه

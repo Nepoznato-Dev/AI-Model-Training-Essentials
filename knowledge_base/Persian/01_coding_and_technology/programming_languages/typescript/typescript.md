@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "TypeScript"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی TypeScript شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [تایپ، زبان برنامه نویسی، نحو، اکوسیستم، کدنویسی و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "34 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "TypeScript"
+description: "Comprehensive reference for the TypeScript programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [typescript, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # TypeScript
 TypeScript یک ابرمجموعه جاوا اسکریپت تایپ شده است که توسط مایکروسافت (به رهبری آندرس هیلسبرگ) توسعه یافته و اولین بار در سال 2012 منتشر شد. این نوع حاشیه نویسی اختیاری، رابط ها، ژنریک ها و ویژگی های سیستم نوع پیشرفته را به جاوا اسکریپت اضافه می کند - سپس به جاوا اسکریپت ساده که در هر جایی که جاوا اسکریپت اجرا می شود، کامپایل می شود. TypeScript یک زبان یا زمان اجرا جداگانه نیست. این جاوا اسکریپت با جستجوگر نوع است.
 TypeScript به استانداردی برای توسعه جاوا اسکریپت در مقیاس بزرگ تبدیل شده است. React، Angular، VS Code، Deno و اکثر پروژه های اصلی جاوا اسکریپت منبع باز با TypeScript نوشته شده اند. اگر یک پروژه جاوا اسکریپت جدید با هر اندازه قابل توجهی را شروع می کنید، TypeScript پیش فرض توصیه شده است.
@@ -49,7 +54,7 @@ TypeScript به استانداردی برای توسعه جاوا اسکریپت
 ## مبادلات
 | محدودیت | جزئیات | راه حل معمولی |
 |-----------|---------|-------------------|
-| **مرحله تالیف** | قبل از اجرا باید`.ts`→`.js`را کامپایل کند | برای توسعه از`ts-node`/`tsx`استفاده کنید. `tsc`برای تولید |
+| **مرحله تالیف** | قبل از اجرا باید`.ts`→`.js`را کامپایل کنید | برای توسعه از`ts-node`/`tsx`استفاده کنید. `tsc`برای تولید |
 | **منحنی یادگیری** | سیستم نوع می تواند پیچیده باشد (عمومی، انواع مشروط) | با انواع پایه شروع کنید. به تدریج ویژگی های پیشرفته را اتخاذ کنید |
 | **فایل های تعریف تایپ** | همه بسته‌های npm با انواع | ارسال نمی‌شوند`@types/package-name`را از DefinitelyTyped | نصب کنید
 | **زمان کامپایل** | بررسی تایپ پروژه های بزرگ می تواند کند باشد | استفاده از منابع پروژه، `isolatedModules`، یا`swc`|
@@ -456,7 +461,7 @@ my-ts-project/
 └── .github/workflows/ci.yml
 ```
 
-###`tsconfig.json`— پیکربندی TypeScript
+###`tsconfig.json`- پیکربندی TypeScript
 ```json
 {
   "compilerOptions": {
@@ -806,6 +811,398 @@ CMD ["node", "dist/index.js"]
 | هر پروژه جاوا اسکریپت جدید | هزینه اضافه کردن TypeScript بعداً زیاد است | JS ساده فقط برای اسکریپت های کوچک |
 | کتابخانه ها / بسته های npm | مصرف کنندگان تکمیل خودکار و بررسی تایپ | -- |
 **قاعده سرانگشتی**: اگر پروژه جاوا اسکریپت شما بیش از چند صد خط دارد، از TypeScript استفاده کنید.
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین`type`و`interface`چیست و چه زمانی باید از هر کدام استفاده کنم؟
+**A:** هر دو شکل شی را تعریف می کنند، اما قابلیت های متفاوتی دارند. `interface`از ادغام اعلامیه ها (ادغام چند اعلان با همین نام)،`extends`برای ارث بردن، و انتخاب اصطلاحی برای API های عمومی است. `type`از انواع اتحاد، انواع تقاطع، انواع نقشه‌برداری شده، انواع شرطی و انواع تحت اللفظی الگو پشتیبانی می‌کند - هر چیزی پیشرفته. بهترین روش: از`interface`برای اشکال شی و APIهای عمومی استفاده کنید. از`type`برای اتحادیه ها، برنامه های کاربردی و عملیات نوع پیچیده استفاده کنید.
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Q2: ژنریک ها چگونه کار می کنند و چرا مهم هستند؟
+**A:** Generics به شما امکان می دهد توابع، کلاس ها و انواعی را بنویسید که با هر نوع کار می کنند و در عین حال ایمنی نوع را حفظ می کنند. به جای`any`(که اطلاعات نوع را از دست می دهد)، ژنریک ها رابطه بین انواع ورودی و خروجی را حفظ می کنند. آنها پایه و اساس کد قابل استفاده مجدد و ایمن هستند.
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3: انواع ابزار چیست، و کدام یک را باید بدانم؟
+**A:** TypeScript انواع ابزار داخلی را فراهم می کند که انواع موجود را تغییر می دهد. مهمترین آنها:`Partial<T>`(همه اختیاری)،`Required<T>`(همه موارد مورد نیاز)،`Pick<T, K>`(کلیدهای انتخاب)،`Omit<T, K>`(کلیدها حذف می‌شوند)،`Record<K, V>`(نقشه کلید-مقدار)، `Exclude<T, U>`،`Exclude<T, U>`(عملکرد بازگرداندن)`Awaited<T>`(وعده را باز کنید). اینها را بیاموزید - آنها بیشتر نیاز به عملیات نوع سفارشی را از بین می برند.
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4: چگونه می توانم کد async را تایپ کنم و خطاها را به روش ایمن تایپ کنم؟
+**A:** توابع Async به طور خودکار`Promise<T>`را برمی گرداند که در آن T نوع برگشتی است. برای باز کردن Promise از`await`استفاده کنید. برای رسیدگی به خطا، TypeScript استثناهای تایپ شده ندارد، اما می توانید محافظ نوع و انواع نتیجه ایجاد کنید. "الگوی نتیجه" (الهام گرفته شده از Rust) مدیریت خطا در زمان کامپایل را ارائه می دهد.
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5: فایل های اعلامیه (.d.ts) چیست و چگونه از انواع شخص ثالث استفاده کنم؟
+**A:** فایل های اعلامیه انواع کتابخانه های جاوا اسکریپت را که دارای انواع TypeScript داخلی نیستند، توصیف می کنند. آنها فقط حاوی اطلاعات نوع هستند (بدون کد زمان اجرا). انواع نگهداری شده توسط انجمن را از DefinitelyTyped نصب کنید: `npm install --save-dev @types/lodash`. برای کتابخانه های خود، یک فیلد`types`در`package.json`اضافه کنید یا فایل های`.d.ts`را در کنار منبع خود قرار دهید. از`declare module`برای اعلان های محیطی استفاده کنید.
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک Emitter رویداد نوع ایمن بسازید
+**بیانیه مشکل:** یک انتشار دهنده رویداد عمومی و ایمن در TypeScript ایجاد کنید که در آن نام هر رویداد به یک نوع بار خاص نگاشت می شود. کامپایلر باید در زمان کامپایل نام رویدادها و انواع بارگذاری نادرست را بگیرد.
+** مرحله 1 - مشکل را درک کنید:**
+ما به یک سیستم رویداد نیاز داریم که در آن: (1) رویدادها با انواع بارگذاری خود تعریف شوند، (2)`emit`فقط نام رویدادهای معتبر را با بارهای صحیح بپذیرد، (3)`on`فقط نام رویدادهای معتبر را با کنترل‌کننده‌های درست تایپ شده بپذیرد. این نیاز به انواع نقشه‌برداری شده و کلیات روی رابط نقشه رویداد دارد.
+** مرحله 2 - شناسایی رویکرد: **
+- نوع`EventMap`را تعریف کنید: `{ [eventName: string]: payloadType }`.
+- از`keyof EventMap`برای محدود کردن نام رویدادها استفاده کنید.
+- از`EventMap[K]`برای دریافت نوع بار برای یک رویداد خاص استفاده کنید.
+- شنوندگان را در`Map<string, Function[]>`ذخیره کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی نوع: کامپایلر در زمان کامپایل نام رویدادها و اشکال اشتباه بار بار را می گیرد.
+-`on`یک تابع لغو اشتراک را برای پاکسازی راحت برمی گرداند.
+-`once`شنونده را می‌پیچد تا پس از اولین فراخوان، اشتراک خود را لغو کند.
+- برای تولید: `listenerCount`،`removeAllListeners`را اضافه کنید و از`AbortSignal`برای لغو استفاده کنید.
+### مشکل 2: یک Type-Safe Query Builder SQL را پیاده سازی کنید
+**بیانیه مشکل:** یک سازنده کوئری SQL بسازید که در آن نام و انواع ستون ها از یک رابط TypeScript مشتق شده باشد. سازنده باید از نام‌های ستون نامعتبر جلوگیری کند و از عدم تطابق نوع در زمان کامپایل جلوگیری کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) نام ستون‌ها محدود به `keyof T`، (2) WHERE مقادیر بند طبق ستون تایپ شوند، (3) API زنجیره‌ای برای ساخت کوئری‌ها. این به ژنریک های محدود شده توسط`Record<string, unknown>`نیاز دارد.
+** مرحله 2 - شناسایی رویکرد: **
+- از`keyof T`برای محدودیت های نام ستون استفاده کنید.
+- از`T[K]`برای محدودیت های نوع مقدار استفاده کنید.
+- ساخت رشته SQL با پرس و جوهای پارامتری (جلوگیری از تزریق SQL).
+- روش های زنجیره ای`this`را برمی گرداند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- جلوگیری از تزریق SQL: همه مقادیر از طریق پرس و جوهای پارامتری (`$1`، `$2`)، هرگز درون یابی نمی شوند.
+- ایمنی نوع: نام ستون ها و انواع مقادیر در زمان کامپایل بررسی می شوند.
+- توسعه پذیری: روش های `join`، `groupBy`، `having`، `insert`،`update`را با همان الگو اضافه کنید.
+- تولید: از`kysely`یا`drizzle-orm`استفاده کنید - آنها این نوع ایمنی را با پوشش کامل SQL ارائه می کنند.
+### مشکل 3: یک ماشین حالت محدود با نوع ایمنی پیاده سازی کنید
+**بیانیه مشکل:** یک ماشین حالت محدود با نوع ایمن ایجاد کنید که در آن انتقال های معتبر در زمان کامپایل اجرا شوند. هر حالت می تواند اقدامات ورود/خروج داشته باشد و ماشین باید وضعیت فعلی را ردیابی کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما به موارد زیر نیاز داریم: (1) حالت ها و رویدادهایی که به عنوان انواع تعریف شده اند، (2) انتقال های معتبر که در سطح نوع نگاشت شده اند، (3) کامپایلر از انتقال نامعتبر جلوگیری می کند، (4) ردیابی وضعیت زمان اجرا با تماس های برگشتی. این به انواع نقشه‌برداری شده و انواع مشروط نیاز دارد.
+** مرحله 2 - شناسایی رویکرد: **
+-`TransitionMap`را تعریف کنید: `{ [State]: { [Event]: NextState } }`.
+- از ژنریک برای محدود کردن`send(event)`بر اساس وضعیت فعلی استفاده کنید.
+- وضعیت را در زمان اجرا با یک متغیر پیگیری کنید.
+- پشتیبانی از تماس های ورودی/خروجی در هر ایالت.
+**مرحله 3 - راه حل را اجرا کنید:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی در زمان اجرا:`send`روی انتقال های نامعتبر پرتاب می کند.
+- ایمنی نوع: نوع`EventsFor`رویدادهای معتبر را در هر حالت در زمان کامپایل استخراج می کند.
+- تماس های ورودی/خروجی به طور خودکار در انتقال ها شلیک می شوند.
+- برای تولید: از`xstate`استفاده کنید - یک کتابخانه ماشین حالت کامل با اشکال زدایی بصری، حالت های سلسله مراتبی، محافظ ها و اقدامات ارائه می دهد.
 ---
 
 ## خلاصه

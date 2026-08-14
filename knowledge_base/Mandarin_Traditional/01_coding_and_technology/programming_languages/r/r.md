@@ -40,13 +40,13 @@ contribution:
 ---
 
 #R
-R是專為統計計算和資料分析而設計的程式語言和環境。它由奧克蘭大學的 Ross Ihaka 和 Robert Gentleman 於 1993 年創建（因此稱為“R”），是具有重大擴展的 S 語言的實現。 R 是開源的，由 R 核心團隊維護。它是學術界、醫療保健、金融和政府領域的統計學家、數據分析師和研究人員的標準工具。
+R是專為統計計算和資料分析而設計的程式語言和環境。它由奥克兰大学的 Ross Ihaka 和 Robert Gentleman 于 1993 年创建（因此称为“R”），是具有重大扩展的 S 语言的实现。 R 是開源的，由 R 核心團隊維護。它是學術界、醫療保健、金融和政府領域的統計學家、數據分析師和研究人員的標準工具。
 R 擅長資料操作、統計建模、視覺化和報告。其軟體包生態系統 (CRAN) 擁有超過 20,000 個軟體包，幾乎涵蓋了有史以來設計的所有統計方法。
 ---
 
 ## 為什麼 R 很重要
 - **統計計算**：任何語言中最全面的統計方法集合。
-- **資料視覺化**：ggplot2 產生出版品質的圖形。圖形範式的語法是無與倫比的。
+- **資料視覺化**：ggplot2 產生出版品質的圖形。图形范式的语法是无与伦比的。
 - **可重複的研究**：R Markdown / Quarto 讓您可以將程式碼、結果和敘述合併到一個文件中。
 - **學術標準**：用於統計學、生物資訊學、流行病學、生態學、經濟學和社會科學。
 - **Tidyverse**：一組有凝聚力的軟體包（dplyr、ggplot2、tidyr、readr），使數據分析變得優雅且一致。
@@ -594,7 +594,7 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 ---
 
 ## 何時使用 R
-|場景 |為什麼選擇 R |更好的選擇|
+|場景|為什麼選擇 R |更好的選擇|
 |----------|------|--------------------|
 |統計分析|最全面的統計方法 | Python（統計模型、scipy）|
 |資料視覺化| ggplot2 的出版品質是無與倫比的 |用於互動的 Python（matplotlib、seaborn）
@@ -603,7 +603,179 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 |報告（R Markdown/Quarto）|綜合分析+敘述| Jupyter（Python）|
 |生產機器學習系統 |並非為部署而設計| Python、Java |
 |網頁開發|不適合| JavaScript、Python |
-|大規模資料處理|記憶體限制 | Python (PySpark)、SQL |
+|大規模資料處理|記憶體限制| Python (PySpark)、SQL |
+---
+
+## 綜合問答
+### Q1：`<-` 和`=`賦值有何不同？
+**A:** 兩者都賦值，但`<-`是慣用的 R 賦值運算子。它適用於所有上下文，包括內部函數呼叫：
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2：如何處理 R 中的缺失資料？
+**A:** R 使用`NA`來表示缺失值。大多數函數都有一個`na.rm`參數：
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3：我什麼時候應該使用 `lapply`、`sapply` 和`vapply`？
+**A：** 都在列表/向量上套用函數，但輸出不同：
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4：如何使用 ggplot2 創建有效的視覺化？
+**A:** 遵循圖形語法－將資料美學映射到視覺屬性：
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5：如何為大型資料集編寫高效的 R 程式碼？
+**答：** 關鍵做法：
+- 預先分配向量：`x <- numeric(n)`，而不是隨`c()`一起成長
+- 對大型資料集使用 `data.table`（比 data.frame 快 100 倍）
+- 向量化操作——尽可能避免循环
+- 使用`vapply`而不是`sapply`以確保型別安全
+- 採用`Rprof()`或`profvis`的設定檔
+- 考慮使用`arrow`套件來處理核心外數據
+---
+
+## 解決問題的思路
+### 問題 1：清理和分析雜亂的資料集
+**第 1 步：了解問題**
+我們的資料框包含缺失值、不一致的類型和異常值。我們需要清理它並計算匯總統計資料。
+**第 2 步：確定方法**
+使用 tidyverse 動詞：`filter`、`mutate`、`summarize`和`group_by`。
+**步驟 3：實施**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**第 4 步：驗證**
+檢查之前/之後的行數，驗證範圍，並根據來源資料交叉檢查總計。
+### 問題 2：建立線性迴歸模型
+**第 1 步：了解問題**
+從多個預測變數預測連續結果變數。
+**第 2 步：確定方法**
+使用`lm()`進行線性迴歸、檢查假設並評估模型擬合。
+**步驟 3：實施**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**第 4 步：評估**
+檢查 R 平方、殘差圖以了解模式，並檢查 AIC 以進行模型比較。
+### 問題 3：建立可重複的報告
+**第 1 步：了解問題**
+建立一個以可重複格式結合分析、視覺化和敘述文字的報告。
+**第 2 步：確定方法**
+使用 R Markdown（或 Quarto）將程式碼區塊與文字交錯。
+**步驟 3：實施**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+图书馆（tidyverse）
+資料 <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**第4步：渲染**
+`rmarkdown::render("report.Rmd")`產生一個獨立的 HTML 文件。
 ---
 
 ＃＃ 概括

@@ -698,5 +698,140 @@ native-image --no-fallback \
 | Veri bilimi | Ekosistem değil | Python, R |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Lisp/Clojure programlarında neden bu kadar çok parantez var?
+**A:** Parantezler, kod ve verilerin aynı yapıya (homoikoniklik) sahip olduğu tek tip bir sözdizimi olan S ifadelerini temsil eder:
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### S2: Clojure durumu ve değişkenliği nasıl farklı şekilde ele alıyor?
+**C:** Clojure varsayılan olarak değişmez verileri kullanır. Kontrollü durum değişiklikleri için referans türleri sağlar:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### S3: Clojure'un kalıcı veri yapıları nelerdir?
+**C:** Tüm Clojure koleksiyonları kalıcıdır (değişmez, yapısal olarak paylaşılır):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### S4: Clojure makroları nasıl çalışır?
+**C:** Makrolar değerlendirilmemiş kodu (veri olarak) alır, dönüştürür ve yeni kod döndürür:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### S5: Clojure'da eşzamanlılığı nasıl halledebilirim?
+**C:** Clojure birden fazla eşzamanlılık ilkesi sağlar:
+-`atom`— bağımsız, eşzamanlı değişiklikler
+-`ref`+`dosync`— koordineli, işlemsel değişiklikler
+-`agent`— eşzamansız, bağımsız değişiklikler
+-`core.async`kanalları — CSP tarzı eşzamanlılık
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Veri Hattını İşleme
+**1. Adım: Sorunu Anlayın**
+Verileri okuyun, filtreleyin, dönüştürün ve bir ardışık düzen aracılığıyla toplayın.
+**2. Adım: Yaklaşımı Belirleyin**
+Clojure'un iş parçacığı makrolarını (`->>`) ve dönüştürücüleri kullanın.
+**3. Adım: Uygulama**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**4. Adım: Optimize edin**
+Dönüştürücüler ara diziler oluşturmaktan kaçınır; dönüşümleri tek bir geçişte oluştururlar.
+### Sorun 2: Basit Bir Web Sunucusu Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Ring/Compojure'u kullanarak temel bir HTTP sunucusu oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Ring adaptörünü ve Compojure yönlendirmeyi kullanın.
+**3. Adım: Uygulama**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**4. Adım: Genişletin**
+Günlüğe kaydetme, JSON ayrıştırma, kimlik doğrulama ve hata işleme için ara katman yazılımı ekleyin.
+---
+
 ## Özet
 Lisp, programlama dili tasarımının büyükbabasıdır; çoğu modern dil, Lisp'in onlarca yıl önce öncülük ettiği fikirleri ödünç alır. Clojure, değişmezlik, eşzamanlılık desteği ve kusursuz JVM entegrasyonu ile Lisp'i modern çağa taşıyor. Lisp/Clojure ana akım olmasa da, onu öğrenmek programlama hakkındaki düşüncelerinizi temelden değiştirecektir. Makro sistem tek başına yatırıma değer; diğer dillerin eşleşemeyeceği olasılıkları ortaya çıkarır.

@@ -1,42 +1,46 @@
 ---
-# Métadonnées
-titre : "Technologie et informatique"
-description : "Bases informatiques, Internet, bases de données, cloud, sécurité"
-catégorie : "Référence générale"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Technology and Computing"
+description: "Computing basics, internet, databases, cloud, security"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances de référence générale"
-next_review : "2027-08-05"
-#Classement
-tags : [technologie, informatique, référence générale]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "8 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [technology, computing, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Technologie et informatique
 L'informatique est partout : dans votre téléphone, votre voiture, votre réfrigérateur, vos appareils médicaux et l'infrastructure qui gère la société moderne. Vous n’avez pas besoin d’être programmeur pour comprendre comment tout cela fonctionne. Ce dossier couvre les principes fondamentaux : ce qu'est un ordinateur, comment fonctionne Internet, comment les logiciels sont construits et les concepts qui façonnent le monde numérique.
-> **Vous voulez approfondir ?** Ce fichier est un aperçu général. Pour une couverture détaillée de n'importe quel sujet, consultez les fichiers dédiés dans[`01_coding_and_technology/`](../01_coding_and_technology/)- y compris[web development](../01_coding_and_technology/web_development.md),[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)et[security](../01_coding_and_technology/security_best_practices.md).
+> **Vous voulez approfondir ?** Ce fichier est un aperçu général. Pour une couverture détaillée de n'importe quel sujet, consultez les fichiers dédiés dans[`01_coding_and_technology/`](../01_coding_and_technology/)- y compris[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)et.
 ---
 
 ## Qu'est-ce qu'un ordinateur ?
@@ -146,7 +150,7 @@ Les trois principaux fournisseurs de cloud sont **AWS** (Amazon, ~32 % de part d
 ---
 
 ## Cybersécurité – Protéger les systèmes numériques
-La cybersécurité est la pratique consistant à défendre les ordinateurs, les réseaux et les données contre les attaques. C’est important parce que tout est connecté et que le coût des violations est énorme. Pour un guide complet couvrant le Top 10 OWASP, le cycle de vie de développement sécurisé et la gestion des secrets, voir[security best practices](../01_coding_and_technology/security_best_practices.md).
+La cybersécurité est la pratique consistant à défendre les ordinateurs, les réseaux et les données contre les attaques. C’est important parce que tout est connecté et que le coût des violations est énorme. Pour un guide complet couvrant le Top 10 OWASP, le cycle de vie de développement sécurisé et la gestion des secrets, voir.
 ### Menaces courantes
 | Menace | Qu'est-ce que c'est | Prévention |
 |--------|-----------|------------|

@@ -354,9 +354,10 @@ for line in result.stdout.split('\n'):
 ## 📚 Related Errors
 
 - [Torch_Not_Installed.md](Torch_Not_Installed.md) - PyTorch not found
-- [PIP_Install_Fails.md](PIP_Install_Fails.md) - Can't install packages
-- [HF_Connection_Error.md](HF_Connection_Error.md) - Can't download models
-- [Virtual_Environment_Not_Active.md](Virtual_Environment_Not_Active.md) - Wrong Python environment
+- PIP_Install_Fails - Can't install packages
+- HF_Connection_Error - Can't download models
+- Virtual_Environment_Not_Active - Wrong Python environment
+- See the [Common Errors index](README.md) for the full troubleshooting catalogue
 
 ---
 

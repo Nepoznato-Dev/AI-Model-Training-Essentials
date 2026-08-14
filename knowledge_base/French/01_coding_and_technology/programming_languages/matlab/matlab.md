@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "MATLAB"
-description : "Référence complète sur le langage de programmation MATLAB couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "MATLAB"
+description: "Comprehensive reference for the MATLAB programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [matlab, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "31 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [matlab, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #MATLAB
 MATLAB (Matrix Laboratory) est un langage et un environnement de programmation interprété de haut niveau conçu pour le calcul numérique, les opérations matricielles et les applications techniques/scientifiques. Développé par MathWorks et lancé pour la première fois en 1984, MATLAB est l'outil standard dans de nombreuses disciplines d'ingénierie : génie électrique, systèmes de contrôle, traitement du signal, traitement d'images et communications.
 MATLAB combine un puissant langage orienté matrice avec des boîtes à outils complètes (packages complémentaires) et l'environnement de simulation visuelle Simulink. Il est largement utilisé dans le monde universitaire et industriel pour prototyper des algorithmes avant de les implémenter dans le code de production.
@@ -49,7 +54,7 @@ MATLAB combine un puissant langage orienté matrice avec des boîtes à outils c
 ## Les compromis
 | Limitation | Détails | Solution de contournement typique |
 |-----------|---------|-------------------|
-| **Licence commerciale** | Cher (en milliers de dollars par siège) | Utilisez GNU Octave (alternative gratuite compatible MATLAB) pour le travail de base |
+| **Licence commerciale** | Cher (en milliers de dollars par siège) | Utilisez GNU Octave (alternative gratuite compatible avec MATLAB) pour le travail de base |
 | **Pas un langage à usage général** | Mauvais pour le développement Web, la programmation système ou les applications | Utiliser Python, Go ou d'autres langages pour des tâches non numériques |
 | **Performances** | Interprété ; plus lent que les langages compilés pour les boucles | Vectoriser les opérations ; utiliser MEX (extensions C/Fortran) pour le code chaud |
 | **Déploiement** | Le déploiement d'applications MATLAB nécessite MATLAB Runtime | Utilisez le compilateur MATLAB ou réécrivez en C/C++ pour la production |
@@ -649,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 | Systèmes de production | Non conçu pour le déploiement | C++, Python, Go |
 | Développement Web | Ne convient pas | Javascript, Python |
 | Science des données (général) | Possible mais Python est plus polyvalent | Python, R |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Comment vectoriser les opérations au lieu d'utiliser des boucles ?
+**R :** MATLAB est optimisé pour les opérations matricielles. Remplacez les boucles par du code vectorisé :
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### Q2 : Quelle est la différence entre les matrices et les tableaux ?
+**R :** Dans MATLAB, tout est un tableau. Les matrices sont des tableaux 2D :
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### Q3 : Comment créer des tracés efficaces dans MATLAB ?
+**R :** Utilisez les fonctions de traçage avec un étiquetage approprié :
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4 : Comment déboguer efficacement le code MATLAB ?
+**R :** Utilisez le débogueur et les outils de diagnostic intégrés :
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### Q5 : Comment lire et écrire des fichiers de données ?
+**R :** MATLAB prend en charge de nombreux formats de fichiers :
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Résoudre un système d'équations linéaires
+**Étape 1 : Comprendre le problème**
+Résolvez Ax = b où A est une matrice et b est un vecteur.
+**Étape 2 : Identifiez l'approche**
+Utilisez l'opérateur barre oblique inverse de MATLAB`\`qui sélectionne automatiquement le meilleur algorithme.
+**Étape 3 : Mettre en œuvre**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**Étape 4 : Prolonger**
+Pour les systèmes surdéterminés,`\`donne la solution des moindres carrés. Pour les systèmes clairsemés, utilisez les matrices `sparse`.
+### Problème 2 : Traitement du signal – Analyse FFT
+**Étape 1 : Comprendre le problème**
+Analyser le contenu fréquentiel d'un signal bruité.
+**Étape 2 : Identifiez l'approche**
+Générez un signal de test, appliquez la FFT et tracez le spectre de fréquences.
+**Étape 3 : Mettre en œuvre**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**Étape 4 : Vérifier**
+Les pics doivent apparaître à 50 Hz et 120 Hz. Le bruit de fond doit être faible.
+### Problème 3 : Ajustement de courbe avec des modèles personnalisés
+**Étape 1 : Comprendre le problème**
+Ajustez les données expérimentales à un modèle non linéaire personnalisé.
+**Étape 2 : Identifiez l'approche**
+Utilisez`fit`avec un`fittype`ou`lsqcurvefit`personnalisé.
+**Étape 3 : Mettre en œuvre**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**Étape 4 : Valider**
+Vérifiez les résidus pour les modèles, vérifiez R² et testez avec différents points de départ.
 ---
 
 ## Résumé

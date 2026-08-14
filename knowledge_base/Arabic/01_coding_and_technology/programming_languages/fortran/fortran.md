@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "فورتران"
-الوصف: "مرجع شامل للغة برمجة Fortran يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Fortran"
+description: "Comprehensive reference for the Fortran programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [فورتران، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "32 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [fortran, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "32 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #فورتران
 فورتران (ترجمة الصيغ) هي أقدم لغة برمجة عالية المستوى لا تزال تستخدم على نطاق واسع، وقد طورتها شركة IBM لأول مرة في عام 1957 للحسابات العلمية والهندسية. على الرغم من عمرها، تعتبر لغة فورتران الحديثة (Fortran 2008/2018/2023) لغة قادرة وعالية الأداء تستخدم على نطاق واسع في التنبؤ العددي بالطقس، وديناميكيات الموائع الحسابية، والمحاكاة الفيزيائية، والنمذجة المالية، والحوسبة عالية الأداء (HPC). العديد من أسرع أجهزة الكمبيوتر العملاقة في العالم تستخدم كود فورتران.
 تطورت اللغة بشكل ملحوظ منذ أيامها الأولى. تحتوي لغة Fortran الحديثة على وحدات نمطية وأنواع مشتقة وإجراءات عامة ومصفوفات (برمجة متوازية) وإمكانية التشغيل البيني مع لغة C. وتظل اللغة المفضلة للعديد من تطبيقات الحوسبة العلمية حيث يكون الأداء أمرًا بالغ الأهمية.
@@ -767,13 +772,169 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | السيناريو | لماذا فورتران | البديل الأفضل |
 |----------|---------|------------------|
 | الحوسبة عالية الأداء / الحوسبة الفائقة | الأمثل للأداء العددي | C++ (بعناية)، جوليا |
-| المحاكاة العلمية | عقود من التحقق من صحة التعليمات البرمجية | بايثون (للنماذج الأولية)، C++ |
+| المحاكاة العلمية | عقود من التحقق من صحة الكود | بايثون (للنماذج الأولية)، C++ |
 | نماذج المناخ/الطقس | قواعد التعليمات البرمجية القديمة؛ الأداء | — |
 | الفيزياء الحاسوبية | عمليات الصفيف الأصلية | بايثون (نومبي)، جوليا |
 | النمذجة المالية (HPC) | الأداء للحسابات واسعة النطاق | سي ++، بايثون |
 | تطوير التطبيقات العامة | غير مناسب | بايثون، جافا، اذهب |
 | تطوير الويب | غير مناسب | جافا سكريبت، بايثون |
 | علم البيانات (تفاعلي) | ليس سير العمل | بايثون، ر |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين فورتران 90 وفورتران الحديث (2008+)؟
+**ج:** أضافت لعبة Fortran الحديثة العديد من الميزات التي تجعلها أكثر تعبيرًا:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### السؤال الثاني: كيف تختلف مصفوفات فورتران عن مصفوفات لغة سي؟
+**أ:** تعتبر مصفوفات فورتران كائنات من الدرجة الأولى تحتوي على عمليات مضمنة:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### س3: كيف يمكنني تحقيق أقصى قدر من الأداء في فورتران؟
+**أ:** الممارسات الأساسية:
+- استخدم`intent`الصريح لجميع الوسائط الوهمية
+- استخدم`implicit none`في كل مكان
+- تفضل عمليات المصفوفة على الحلقات
+- استخدم أنماط الوصول إلى الذاكرة المتجاورة
+- استخدم علامات تحسين المترجم:`-O3 -march=native -ffast-math`
+- ملف تعريف باستخدام`gprof`أو أدوات خاصة بالمترجم
+- استخدم`pure`و`elemental` للوظائف التي يمكن للمترجم تحسينها
+### السؤال الرابع: كيف يمكنني ربط لغة Fortran مع لغة C؟
+**أ:** استخدم وحدة `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### س5: ما هو نظام البناء الذي يجب أن أستخدمه لمشاريع فورتران؟
+**ج:** يتمتع CMake بدعم ممتاز من لغة Fortran. FPM (Fortran Package Manager) هو الخيار الأصلي الحديث:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة 1: حل PDE مع وجود اختلافات محدودة
+**الخطوة الأولى: فهم المشكلة**
+حل المعادلة الحرارية أحادية الأبعاد: du/dt = alpha * d²u/dx²
+**الخطوة 2: تحديد النهج**
+فصل المكان والزمان باستخدام الاختلافات المحدودة. استخدم مخططًا واضحًا.
+**الخطوة 3: التنفيذ**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**الخطوة 4: التحقق**
+التحقق من الحفظ والتقارب مع تحسين الشبكة ومقارنتها بالحل التحليلي.
+### المشكلة الثانية: تحديد قطر المصفوفة
+**الخطوة الأولى: فهم المشكلة**
+أوجد القيم الذاتية والمتجهات الذاتية لمصفوفة متماثلة.
+**الخطوة 2: تحديد النهج**
+استخدم روتين`dsyev`الخاص بـ LAPACK عبر واجهة Fortran.
+**الخطوة 3: التنفيذ**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**الخطوة 4: التحقق**
+تأكد من أن A*v = lambda*v لكل زوج eigenpair.
 ---
 
 ## ملخص

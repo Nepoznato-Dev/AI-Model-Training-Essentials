@@ -45,7 +45,7 @@ Scala เป็นภาษาเบื้องหลัง Apache Spark (เ�
 ---
 
 ## ทำไมสกาล่าจึงมีความสำคัญ
-- **ฟังก์ชันการทำงาน + OOP ไฮบริด**: รวมเอาสิ่งที่ดีที่สุดของทั้งสองกระบวนทัศน์ไว้ในภาษาเดียว
+- **ฟังก์ชันการทำงาน + OOP ไฮบริด**: รวมสิ่งที่ดีที่สุดของทั้งสองกระบวนทัศน์ไว้ในภาษาเดียว
 - **กระชับ**: มีรายละเอียดน้อยกว่า Java อย่างเห็นได้ชัด — การจับคู่รูปแบบ คลาสเคส การอนุมานประเภท
 - **Apache Spark**: ภาษาหลักสำหรับการประมวลผลข้อมูลขนาดใหญ่บน Spark
 - **ระบบประเภท**: คุณสมบัติขั้นสูง เช่น นัย คลาสประเภท และประเภทข้อมูลพีชคณิต
@@ -855,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | การเขียนโปรแกรมฟังก์ชั่นบน JVM | ชุดค่าผสม FP + JVM ที่ดีที่สุด | ปิดบัง |
 | การพัฒนาแอพพลิเคชั่นทั่วไป | เป็นไปได้แต่ซับซ้อน | Python, Go, Java |
 | วิทยาศาสตร์ข้อมูล | เป็นไปได้แต่ไม่ใช่ระบบนิเวศ | หลาม, อาร์ |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### คำถามที่ 1: การอนุมานประเภทของ Scala ลดขนาดสำเร็จรูปเมื่อเทียบกับ Java ได้อย่างไร
+**A:** คอมไพเลอร์ของ Scala สรุปประเภทของการประกาศ`val`/`var`ประเภทการส่งคืนเมธอด และฟังก์ชันที่ไม่ระบุชื่อ ซึ่งช่วยลดความจำเป็นในการมีคำอธิบายประกอบประเภทที่ชัดเจนในกรณีส่วนใหญ่:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+คอมไพเลอร์ยังอนุมานพารามิเตอร์ประเภท ประเภทส่งคืนของวิธีนิพจน์เดี่ยว และประเภทการจับคู่รูปแบบ ทำให้โค้ดมีความกระชับโดยไม่กระทบต่อความปลอดภัย
+### Q2: เมื่อใดที่ฉันควรใช้`case class`เทียบกับ`class`ปกติ
+**A:** ใช้`case class`สำหรับผู้ให้บริการข้อมูลที่ไม่เปลี่ยนรูปแบบ — โดยจะมี`equals`,`hashCode`,`toString`,`copy`และรองรับการจับคู่รูปแบบโดยอัตโนมัติ:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+หลักทั่วไป: หากชั้นเรียนของคุณเน้นข้อมูลเป็นหลัก ให้ใช้`case class`หากมีสถานะที่ไม่แน่นอนหรือมีพฤติกรรมที่ซับซ้อน ให้ใช้`class`ปกติ
+### Q3: ฉันจะจัดการกับข้อผิดพลาดตามสำนวนใน Scala ได้อย่างไร
+**A:** Scala นิยมส่งคืนประเภทเช่น`Option`,`Either`และ`Try`มากกว่าการส่งข้อยกเว้น:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4: อะไรคือความแตกต่างระหว่าง`trait`และ`abstract class`?
+**ตอบ:** ลักษณะรองรับการสืบทอดหลายรายการและสามารถมีพารามิเตอร์ประเภทและวิธีการที่เป็นรูปธรรมได้ คลาสนามธรรมสามารถมีพารามิเตอร์คอนสตรัคเตอร์ได้ แต่รองรับเฉพาะการสืบทอดเดียวเท่านั้น:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### คำถามที่ 5: ฉันจะเขียนโค้ด Scala ที่มีประสิทธิภาพบน JVM ได้อย่างไร
+**ก:** แนวทางปฏิบัติหลัก:
+- ใช้`case class`และข้อมูลที่ไม่เปลี่ยนรูปเพื่อหลีกเลี่ยงการซิงโครไนซ์
+- ต้องการ`Vector`,`Map`(ไม่เปลี่ยนรูป) สำหรับการแชร์โครงสร้าง
+- ใช้คำอธิบายประกอบ`@tailrec`เพื่อให้แน่ใจว่าการเรียกหางจะเหมาะสมที่สุด
+- หลีกเลี่ยงการชกมากเกินไป — ใช้`Int`,`Double`primitives
+- ใช้`lazy val`สำหรับการคำนวณราคาแพง
+- ต้องการ`Stream`/`LazyList`สำหรับลำดับขนาดใหญ่
+- โปรไฟล์ด้วย JMH - นามธรรมของ Scala ควรคอมไพล์เป็นไบต์โค้ดที่มีประสิทธิภาพ
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การใช้ตัวประเมินนิพจน์แบบปลอดภัย
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+เราจำเป็นต้องประเมินนิพจน์ทางคณิตศาสตร์ด้วยตัวแปร รองรับการบวก การคูณ และการค้นหาตัวแปร
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้ประเภทข้อมูลพีชคณิต (ลักษณะปิดผนึก + คลาสเคส) เพื่อสร้างโมเดลแผนผังนิพจน์ จากนั้นจึงจับคู่รูปแบบเพื่อประเมิน
+**ขั้นตอนที่ 3: นำไปใช้**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**ขั้นตอนที่ 4: ตรวจสอบและขยาย**
+เพิ่มเคส`Div`,`Pow`,`Neg`ลักษณะที่ปิดผนึกช่วยให้คอมไพลเลอร์เตือนเกี่ยวกับการจับคู่โดยสังเขป
+### ปัญหาที่ 2: การสร้าง DSL อย่างง่ายสำหรับการสร้าง HTML
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+สร้าง DSL ที่ปลอดภัยสำหรับประเภทที่สร้างสตริง HTML โดยใช้ไวยากรณ์ของ Scala
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้คลาส case สำหรับองค์ประกอบ HTML และการแปลงโดยนัยสำหรับไวยากรณ์ตามธรรมชาติ
+**ขั้นตอนที่ 3: นำไปใช้**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+DSL นั้นปลอดภัยต่อการพิมพ์ — คุณไม่สามารถส่งเนื้อหาที่ไม่ใช่ HTML โดยไม่ได้ตั้งใจ การจับคู่รูปแบบบน`HtmlNode`ช่วยให้มั่นใจได้ถึงการเรนเดอร์ที่ละเอียดถี่ถ้วน
+### ปัญหาที่ 3: การนับจำนวนคำพร้อมกันกับ Akka Streams
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+นับความถี่คำในไฟล์ขนาดใหญ่หลายไฟล์พร้อมกัน
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้คอลเลกชันแบบขนานของ Scala หรือ Akka Streams สำหรับการประมวลผลพร้อมกัน จากนั้นจึงรวมผลลัพธ์
+**ขั้นตอนที่ 3: นำไปใช้**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**ขั้นตอนที่ 4: เพิ่มประสิทธิภาพ**
+สำหรับชุดข้อมูลที่มีขนาดใหญ่มาก ให้ใช้ Akka Streams ที่มีแรงดันย้อนกลับ:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## สรุป

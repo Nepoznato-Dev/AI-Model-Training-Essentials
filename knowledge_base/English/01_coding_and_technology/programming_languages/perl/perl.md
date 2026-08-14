@@ -624,6 +624,192 @@ CMD ["perl", "bin/myapp.pl"]
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between `my`, `our`, and `local`?
+
+**A:** These keywords control variable scoping:
+
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2: How do I process text files efficiently in Perl?
+
+**A:** Perl excels at text processing. Use the diamond operator and regex:
+
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3: How do I use references and complex data structures?
+
+**A:** References are Perl's way to create nested structures:
+
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4: What are Perl's special variables I should know?
+
+**A:** Perl has many special variables. The most important:
+
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5: How do I write modern, maintainable Perl?
+
+**A:** Best practices for modern Perl:
+- Always use `strict` and `warnings`
+- Use `my` for all variables
+- Use lexical filehandles: `open my $fh, '<', $file`
+- Use modules from CPAN (Moo/Moose for OOP, Try::Tiny for errors)
+- Use `say` instead of `print` (with `feature 'say'`)
+- Format with `perltidy`
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Log File Analysis
+
+**Step 1: Understand the Problem**
+Parse an Apache access log and count requests per IP address.
+
+**Step 2: Identify the Approach**
+Use regex to extract IP addresses, hash to count occurrences.
+
+**Step 3: Implement**
+```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Step 4: Extend**
+Add date filtering, status code analysis, and output as CSV.
+
+### Problem 2: Batch File Renaming with Regex
+
+**Step 1: Understand the Problem**
+Rename files matching a pattern, transforming filenames with regex.
+
+**Step 2: Identify the Approach**
+Use `glob` or `opendir` to find files, regex to transform names.
+
+**Step 3: Implement**
+```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Step 4: Verify**
+Run with `--dry-run` flag first (just print, don't move).
+
+### Problem 3: Building a Simple Web Scraper
+
+**Step 1: Understand the Problem**
+Fetch a web page and extract all links.
+
+**Step 2: Identify the Approach**
+Use `LWP::Simple` for fetching and regex or `HTML::LinkExtor` for parsing.
+
+**Step 3: Implement**
+```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Step 4: Extend**
+Handle relative URLs, filter by domain, and follow pagination.
+
+---
+
 ## Summary
 
 Perl's golden era has passed, but its influence is everywhere. Every language with regular expressions, every package manager modeled on CPAN, and every system with `map`/`grep`/`reduce` carries Perl's DNA. For new projects, most developers reach for Python or Go. But Perl remains a powerful tool for text processing, quick automation, and maintaining the vast amount of Perl code running critical infrastructure worldwide. Understanding Perl also means understanding where modern programming came from — it shaped the tools and patterns we use today.

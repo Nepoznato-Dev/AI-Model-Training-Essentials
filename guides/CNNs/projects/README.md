@@ -6,10 +6,12 @@ Runnable projects for Convolutional Neural Networks (CNNs).
 
 ### 1. Image Classification with ResNet
 
-A complete image classification project using ResNet architecture.
+A complete image classification project using ResNet architecture with residual blocks, skip connections, and data augmentation.
 
 **Files:**
 - `image_classification_resnet/` - Image classifier using ResNet
+  - `main.py` - Full ResNet implementation with training loop
+  - `requirements.txt` - Dependencies (torch, torchvision)
 
 ### 2. Object Detection with YOLO
 

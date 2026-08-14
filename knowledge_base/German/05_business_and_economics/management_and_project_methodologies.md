@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Management- und Projektmethoden
-Die Verwaltung von Menschen und Projekten ist eine der schwierigsten Aufgaben in jeder Organisation. Technische Fähigkeiten bringen Sie in den Raum, aber die Fähigkeit, Teams zu leiten, Entscheidungen zu treffen, klar zu kommunizieren und Ergebnisse zu liefern, entscheidet darüber, ob tatsächlich etwas erledigt wird. Diese Datei deckt die Frameworks, Methoden und praktischen Fähigkeiten ab, auf die sich effektive Manager und Projektleiter verlassen.
+Die Leitung von Menschen und Projekten gehört zu den anspruchsvollsten Aufgaben in jeder Organisation. Technische Fähigkeiten ermöglichen den Einstieg, aber die Fähigkeit, Teams zu leiten, Entscheidungen zu treffen, effektiv zu kommunizieren und Ergebnisse zu liefern, entscheidet darüber, ob Ziele erreicht werden. In dieser Datei werden die Rahmenbedingungen, Methoden und praktischen Fähigkeiten behandelt, die effektive Manager und Projektleiter anwenden.
 ---
 
 ## Führungsstile
@@ -54,7 +54,7 @@ Es gibt keinen einzigen „richtigen“ Weg, zu führen. Der beste Stil hängt v
 | **Dienende Führung** | Der Leiter priorisiert die Bedürfnisse und die Entwicklung des Teams | Wissensarbeiter; Vertrauen und Loyalität aufbauen | Kann in hierarchischen Kulturen als schwach wahrgenommen werden |
 | **Situativ** | Führungskraft passt Stil an Teamreife und Aufgabe an | Die meisten realen Situationen | Erfordert hohe emotionale Intelligenz |
 ### Was großartige Manager tatsächlich tun
-Untersuchungen (insbesondere im Rahmen von Googles Project Oxygen) haben die wichtigsten Verhaltensweisen effektiver Manager identifiziert:
+Untersuchungen (insbesondere von Googles Project Oxygen) haben die wichtigsten Verhaltensweisen effektiver Manager identifiziert:
 1. **Ist ein guter Coach** – stellt Fragen, hilft den Leuten beim Nachdenken, gibt nicht nur Antworten
 2. **Stärkt das Team** – delegiert sinnvoll; verwaltet kein Mikromanagement
 3. **Schafft ein integratives Umfeld** – psychologische Sicherheit; Jeder kann einen Beitrag leisten
@@ -179,7 +179,7 @@ OKRs sind ein Zielsetzungsrahmen, der von Google, Intel, Spotify und vielen ande
 ### Feedback geben
 | Ansatz | Beschreibung |
 |----------|-------------|
-| **SBI** (Situation-Verhalten-Auswirkung) | „In der gestrigen Besprechung (Situation) haben Sie den Kunden unterbrochen (Verhalten), was dazu geführt hat, dass er abgeschaltet hat (Auswirkung).“ |
+| **SBI** (Situation-Verhalten-Auswirkung) | „In der gestrigen Besprechung (Situation) haben Sie den Kunden (Verhalten) unterbrochen, was dazu geführt hat, dass er abgeschaltet hat (Auswirkung).“ |
 | **Feedforward** | Konzentrieren Sie sich auf zukünftiges Verhalten, nicht auf vergangene Fehler. „Versuchen Sie es das nächste Mal…“ |
 | **Radikale Offenheit** (Kim Scott) | Persönlich betreuen + direkt herausfordern. Nicht zu nett (zerstörerische Empathie) und nicht zu hart (unausstehliche Aggression). |
 ---
@@ -268,4 +268,4 @@ Beim Produktmanagement geht es darum, zu entscheiden, was für wen und warum geb
 ---
 
 ## Zusammenfassung
-Beim Management geht es nicht um Titel oder Organigramme – es geht darum, durch andere Menschen die richtigen Dinge zu erledigen. Die besten Manager kombinieren klares Denken (Rahmenwerke, Methoden, Kennzahlen) mit emotionaler Intelligenz (Zuhören, Empathie, Vertrauen). Keine Methodik ersetzt gutes Urteilsvermögen, aber gutes Urteilsvermögen wird durch gute Rahmenbedingungen verbessert. Benutzen Sie sie als Werkzeuge, nicht als Religionen.
+Management ist die Praxis, Ziele durch andere Menschen zu erreichen. Effektive Manager kombinieren klares Denken (Rahmenwerke, Methoden, Kennzahlen) mit zwischenmenschlichen Fähigkeiten (Zuhören, Empathie, Vertrauen). Keine Methodik ersetzt gutes Urteilsvermögen, aber gutes Urteilsvermögen wird durch solide Rahmenbedingungen verbessert. Diese sollten als praktische Leitlinien und nicht als starre Lehren angewendet werden.

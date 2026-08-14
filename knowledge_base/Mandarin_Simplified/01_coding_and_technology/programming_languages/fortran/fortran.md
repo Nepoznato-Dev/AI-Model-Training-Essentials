@@ -38,13 +38,14 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fortran
 Fortran（公式翻译）是仍在广泛使用的最古老的高级编程语言，最初由 IBM 于 1957 年开发，用于科学和工程计算。尽管历史悠久，现代 Fortran (Fortran 2008/2018/2023) 仍然是一种功能强大的高性能语言，广泛用于数值天气预报、计算流体动力学、物理模拟、金融建模和高性能计算 (HPC)。世界上许多最快的超级计算机都运行 Fortran 代码。
 该语言与早期相比已经发生了显着的发展。现代 Fortran 具有模块、派生类型、泛型过程、coarray（并行编程）以及与 C 的互操作性。它仍然是许多性能至关重要的科学计算应用程序的首选语言。
 ---
 
 ## 为什么 Fortran 很重要
-- **HPC 性能**：Fortran 编译器生成一些可用的最快的数字代码 — 对于数组操作，通常匹配或超过 C/C++。
+- **HPC 性能**：Fortran 编译器生成一些可用的最快的数字代码 - 通常在数组操作方面匹配或超过 C/C++。
 - **遗留代码库**：数十年的科学代码（气候模型、物理模拟）都是用 Fortran 编写的。
 - **数组运算**：原生多维数组支持，具有专为数学计算而设计的语法。
 - **数值稳定性**：语言和编译器针对浮点计算进行了优化。
@@ -768,16 +769,172 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 ---
 
 ## 何时使用 Fortran
-|场景 |为什么选择 Fortran |更好的选择|
+|场景|为什么选择 Fortran |更好的选择|
 |----------|----------|--------------------|
 | HPC/超级计算|针对数值性能进行优化 | C++（小心），Julia |
-|科学模拟 |数十年经过验证的代码 | Python（用于原型设计）、C++ |
+|科学模拟|数十年经过验证的代码 | Python（用于原型设计）、C++ |
 |气候/天气模型 |遗留代码库；性能 | — |
 |计算物理|原生数组操作 | Python (NumPy)、朱莉娅 |
 |财务建模 (HPC) |大规模计算的性能 | C++、Python |
-|通用应用开发|不适合| Python、Java、Go |
+|通用应用开发 |不适合| Python、Java、Go |
 |网页开发|不适合| JavaScript、Python |
 |数据科学（交互式）|不是工作流程| Python、R |
+---
+
+## 综合问答
+### Q1：Fortran 90 和现代 Fortran (2008+) 有什么区别？
+**答：** 现代 Fortran 添加了许多功能，使其更具表现力：
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2：Fortran 数组与 C 数组有何不同？
+**A:** Fortran 数组是具有内置操作的一流对象：
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3：如何在 Fortran 中实现最大性能？
+**答：** 关键做法：
+- 对所有虚拟参数使用显式 `intent`
+- 到处使用`implicit none`
+- 优先使用数组操作而不是循环
+- 使用连续的内存访问模式
+- 使用编译器优化标志：`-O3 -march=native -ffast-math` 
+- 使用`gprof`或特定于编译器的工具进行配置
+- 将`pure`和`elemental`用于编译器可以优化的函数
+### Q4：如何将 Fortran 与 C 连接？
+**A:** 使用`iso_c_binding`模块：
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5：Fortran 项目应该使用什么构建系统？
+**答：** CMake 具有出色的 Fortran 支持。 FPM（Fortran 包管理器）是现代的本机选项：
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：求解有限差分偏微分方程
+**第 1 步：了解问题**
+求解一维热方程：du/dt = alpha * d²u/dx²
+**第 2 步：确定方法**
+使用有限差分离散空间和时间。使用明确的方案。
+**步骤 3：实施**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**第 4 步：验证**
+通过网格细化检查守恒性、收敛性，并与解析解进行比较。
+### 问题 2：矩阵对角化
+**第 1 步：了解问题**
+求对称矩阵的特征值和特征向量。
+**第 2 步：确定方法**
+通过 Fortran 接口使用 LAPACK 的`dsyev`例程。
+**步骤 3：实施**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**第 4 步：验证**
+检查每个特征对的 A*v = lambda*v。
 ---
 
 ＃＃ 概括

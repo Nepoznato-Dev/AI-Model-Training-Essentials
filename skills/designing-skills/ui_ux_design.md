@@ -3,7 +3,7 @@
 title: "UI/UX Design Skill"
 description: "Create intuitive, accessible, and aesthetically pleasing user experiences"
 category: "Designing Skills"
-version: "1.0.0"
+version: "1.1.0"
 status: "active"
 
 # Contribution
@@ -13,6 +13,10 @@ authors:
     role: "original_author"
 contributors: []
 changelog:
+  - version: "1.1.0"
+    date: "2026-08-10"
+    author: "AI Model Training Team"
+    changes: "Added quick-start workflow and design method decision guide"
   - version: "1.0.0"
     date: "2026-01-15"
     author: "AI Model Training Team"
@@ -20,7 +24,7 @@ changelog:
 
 # Review
 created: "2026-01-15"
-last_modified: "2026-01-15"
+last_modified: "2026-08-10"
 review_date: "2026-07-15"
 reviewed_by: "Designing Skills Team"
 next_review: "2027-01-15"
@@ -43,6 +47,41 @@ contribution:
 
 ## Overview
 The ability to create intuitive, accessible, and aesthetically pleasing user interfaces that provide excellent user experiences.
+
+## Quick-Start: The Design Workflow
+
+```
+Starting a design project?
+│
+├─ 1. Understand     → Who are the users? What problem are we solving?
+│                       Method: User interviews, analytics review, stakeholder alignment
+│
+├─ 2. Define         → What does success look like? What are the constraints?
+│                       Method: Problem statement, success metrics, design brief
+│
+├─ 3. Explore        → What are the possible solutions?
+│                       Method: Sketches, wireframes, competitive analysis
+│
+├─ 4. Decide         → Which solution best serves users and business?
+│                       Method: Heuristic evaluation, usability testing, stakeholder review
+│
+├─ 5. Build          → Create the final design with proper specs
+│                       Method: High-fidelity mockups, design system components, interaction specs
+│
+└─ 6. Validate       → Does it work for real users?
+                        Method: Usability testing (5+ users), A/B testing, accessibility audit
+```
+
+### Choosing the Right Research Method
+
+| Question | Method | Participants | Time |
+|----------|--------|-------------|------|
+| "What problems do users have?" | User interviews | 5-8 per segment | 2-3 weeks |
+| "How do users currently solve this?" | Contextual inquiry | 3-5 users | 1-2 weeks |
+| "Which of these concepts works best?" | Usability testing | 5-8 per round | 1 week |
+| "Is this accessible?" | WCAG audit | Expert reviewer | 2-3 days |
+| "Does this change improve metrics?" | A/B test | 1000+ users | 2-4 weeks |
+| "How do users navigate this?" | Tree testing | 15-20 users | 3-5 days |
 
 ## Core Competencies
 

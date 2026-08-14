@@ -188,7 +188,7 @@ for epoch in range(num_epochs):
     optimizer.step()       # Update weights
     
     # Calculate accuracy
-    _, predicted = torch.max(outputs.data, 1)
+    _, predicted = torch.max(outputs, 1)
     accuracy = 100 * (predicted == y_train).sum().item() / len(y_train)
     
     # Track progress
@@ -219,7 +219,7 @@ model.eval()
 # Disable gradient computation for evaluation (saves memory and speeds up)
 with torch.no_grad():
     outputs = model(X_test)
-    _, predicted = torch.max(outputs.data, 1)
+    _, predicted = torch.max(outputs, 1)
     
     # Calculate test accuracy
     test_accuracy = 100 * (predicted == y_test).sum().item() / len(y_test)
@@ -299,9 +299,12 @@ predictions_grid = predictions.reshape(xx.shape)
 # Plot
 plt.figure(figsize=(10, 8))
 plt.contourf(xx, yy, predictions_grid, alpha=0.3, cmap='coolwarm')
-plt.scatter(X_train[:, 0].cpu(), X_train[:, 1].cpu(), c=y_train.cpu(), 
+# Inverse-transform scaled data back to original space for correct plotting
+X_train_orig = scaler.inverse_transform(X_train.cpu().numpy())
+X_test_orig = scaler.inverse_transform(X_test.cpu().numpy())
+plt.scatter(X_train_orig[:, 0], X_train_orig[:, 1], c=y_train.cpu(), 
            cmap='coolwarm', edgecolors='k', s=20, label='Training data')
-plt.scatter(X_test[:, 0].cpu(), X_test[:, 1].cpu(), c=y_test.cpu(), 
+plt.scatter(X_test_orig[:, 0], X_test_orig[:, 1], c=y_test.cpu(), 
            cmap='coolwarm', edgecolors='k', s=40, marker='x', label='Test data')
 plt.xlabel('Feature 1')
 plt.ylabel('Feature 2')

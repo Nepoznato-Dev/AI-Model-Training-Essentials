@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C
 C 是一种通用的过程式编程语言，由丹尼斯·里奇 (Dennis Ritchie) 在 1969 年至 1973 年间在贝尔实验室创建。它旨在实现 Unix 操作系统，并且在 50 多年后仍然是使用最广泛的编程语言之一。 C 提供低级内存访问、最小标准库以及到机器指令的清晰映射——使其成为构建大多数现代计算的基础。
 C 是操作系统（Linux、Windows 内核、macOS）、嵌入式系统、数据库引擎（SQLite、PostgreSQL）、编译器（Python 的 CPython、Ruby 的 MRI）以及几乎所有其他编程语言运行时背后的语言。理解 C 就是理解计算机实际上是如何工作的。
@@ -55,8 +56,8 @@ C 是操作系统（Linux、Windows 内核、macOS）、嵌入式系统、数据
 | **手动内存管理** |没有垃圾收集器——您自己分配和释放内存|谨慎使用malloc/free； C++ 中的 RAII 模式 |
 | **缓冲区溢出** |数组上没有边界检查——很容易写入超过缓冲区结束的内容 |使用strncpy代替strcpy；启用编译器警告 |
 | **没有内置的OOP** |仅限过程——无类、继承或方法 |使用结构体+函数指针；或切换到 C++ |
-| **标准库有限** |最少的内置功能 |第三方库或自己编写|
-| **未定义的行为** |许多错误编译正常但崩溃不可预知使用消毒剂、静电分析仪|
+| **标准库有限** |最少的内置功能 |第三方库或自己编写 |
+| **未定义的行为** |许多错误编译正常但无法预料地崩溃 |使用消毒剂、静电分析仪|
 ---
 
 ## 语法基础知识
@@ -208,20 +209,20 @@ double average(int count, ...) {
 | **堆栈** |局部变量、函数参数|直到函数返回 |编译器（自动）|
 | **堆** | malloc/calloc 分配 |直到你调用 free() |你（手册）|
 | **数据/BSS** |全局和静态变量|整个程序生命周期 |编译器（自动）|
-| **文字** |机器码|整个程序生命周期 |只读|
+| **文字** |机器码|整个程序生命周期|只读 |
 ---
 
 ## 标准库
-|标题 |目的|常用功能|
+|标题|目的|常用功能|
 |--------|---------|-----------------|
-|  __受保护_0__ |输入/输出| printf、scanf、fopen、fgets、fprintf | printf、scanf、fopen、fgets、fprintf |
-|  __受保护_1__ |一般公用事业| malloc、自由、退出、atoi、rand、qsort |
-|  __受保护_2__ |字符串操作 | strlen、strcpy、strncpy、strcmp、memcpy |
-|  __受保护_3__ |数学| sin、cos、sqrt、pow、fabs、ceil、floor |
-|  __受保护_4__ |人物分类| isalpha、isdigit、toupper、tolower | isalpha、isdigit、toupper、tolower |
-|  __受保护_5__ |日期和时间 |时间、时钟、difftime、strftime |
-|  __受保护_6__ |调试断言|断言（条件）|
-|  __受保护_7__ |错误代码 | errno、perror、strerror |
+| `<stdio.h>`|输入/输出 | printf、scanf、fopen、fgets、fprintf | printf、scanf、fopen、fgets、fprintf |
+| `<stdlib.h>`|一般公用事业| malloc、自由、退出、atoi、rand、qsort |
+| `<string.h>`|字符串操作| strlen、strcpy、strncpy、strcmp、memcpy |
+| `<math.h>`|数学| sin、cos、sqrt、pow、fabs、ceil、floor |
+| `<ctype.h>`|人物分类| isalpha、isdigit、toupper、tolower | isalpha、isdigit、toupper、tolower |
+| `<time.h>`|日期和时间 |时间、时钟、difftime、strftime |
+| `<assert.h>`|调试断言|断言（条件）|
+| `<errno.h>`|错误代码 | errno、perror、strerror |
 ---
 
 ## 高级语法和模式
@@ -632,11 +633,11 @@ print(lib.c_add(3, 5))  # 8
 ### 从其他语言调用 C
 |语言 |机制|示例|
 |----------|------------|---------|
-|蟒蛇 | ctypes、cffi |  __受保护_0__ |
-|红宝石 |小提琴|  __受保护_1__ |
-|爪哇 | JNI |  __受保护_2__ |
-| C++ |外部“C” |  __受保护_3__ |
-|铁锈|外部“C”+ FFI |  __受保护_4__ |
+|蟒蛇 | ctypes、cffi | `ctypes.CDLL("./lib.so")`|
+|红宝石 |小提琴| `Fiddle.dlopen("./lib.so")`|
+|爪哇 | JNI | `System.loadLibrary("mylib")`|
+| C++ |外部“C” | `extern "C" void my_func();`|
+|铁锈|外部“C”+ FFI | `extern "C" { fn my_func(); }`|
 ---
 
 ## 设计模式
@@ -830,7 +831,7 @@ make clean    # Removes build artifacts
 ---
 
 ## 何时使用 C
-|场景 |为什么选择 C ​​|更好的选择|
+|场景|为什么选择 C ​​|更好的选择|
 |----------|------|--------------------|
 |操作系统 |直接硬件访问，无运行时开销 | --|
 |嵌入式系统/微控制器|占地面积最小，可在任何物体上运行 | Rust 用于安全关键型嵌入式 |
@@ -838,7 +839,7 @@ make clean    # Removes build artifacts
 |编译器和解释器|快速、便携、易于理解 |用于大型编译器项目的 C++ |
 |设备驱动程序|大多数操作系统内核 API 都需要 | --|
 |性能关键库 |接近最佳速度 | Rust 保证内存安全 |
-|通用应用开发|太多的体力劳动 | Python、Java、Go、C# |
+|通用应用开发 |太多的体力劳动 | Python、Java、Go、C# |
 |网页开发|完全错误的工具| JavaScript、Go、Python |
 |数据科学/机器学习 |没有适合这个的生态系统| Python、R、朱莉娅 |
 ---
@@ -847,11 +848,519 @@ make clean    # Removes build artifacts
 |标准|年份|关键补充|
 |----------|------|--------------|
 | C89/C90 | 1989/1990 |最初的 ANSI C——仍然是基线 |
-| C99 | C99 1999 | // 注释、bool 类型、变长数组、内联、stdint.h |
-| C11 | 2011 |原子操作、线程、匿名结构、_Generic |
+| C99 | C99 1999 | // comments, bool type, variable-length arrays, inline, stdint.h |
+| C11 | 2011 | Atomic operations, threads, anonymous structs, _Generic |
 | C17 | C17 2018 |错误修复和澄清（无新功能）|
-| C23 | C23 2024 | 2024 nullptr、typeof、constexpr、改进的预处理器 |
+| C23 | C23 2024 | 2024 nullptr, typeof, constexpr, improved preprocessor |
 大多数生产代码都以 C11 或 C17 为目标。 C23 带来了现代便利，但采用需要时间。
+---
+
+## 综合问答
+### Q1：C 中指针和数组有什么区别？
+**答：** 数组和指针相关但又不同。数组是一个连续的内存块，具有编译时已知的固定大小。指针是保存内存地址的变量。当传递给函数时，数组会衰减为指针，但`sizeof(array)`给出总大小，而`sizeof(pointer)`仅给出指针大小（4 或 8 字节）。数组名称是不可修改的左值 - 您不能执​​行`arr++`。
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### Q2：如何正确管理内存并避免泄漏？
+**A:** 每个`malloc`/`calloc`必须有一个对应的`free`。常见错误：忘记释放（泄漏）、释放两次（未定义行为）、释放后使用内存（释放后使用）以及不检查`malloc`返回值（失败时为 NULL）。最佳实践：在同一模块中分配和释放，使用“goto cleanup”模式进行错误处理，并始终将释放的指针设置为 NULL。
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### Q3：C 中错误处理的最佳实践是什么？
+**A:** C 也不例外。错误处理使用返回值（错误代码、NULL 指针、负值）。标准模式：函数在失败时返回状态代码或 NULL，并为系统调用设置 `errno`。使用“goto cleanup”模式来清除错误时的资源。请务必检查`malloc`、`fopen`的返回值以及其他可能失败的函数。
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### Q4：结构体、联合体和位域在内存布局上有何不同？
+**A:** 结构按顺序排列成员，并可能使用填充以进行对齐。联合覆盖同一内存位置的所有成员——大小等于最大成员。位域将多个值打包到一个整数中。结构用于异构数据，联合用于类型双关或仅在一个字段处于活动状态时节省空间，而位字段用于紧凑标志存储。
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### Q5：什么是函数指针，什么时候应该使用它们？
+**A:** 函数指针存储函数的地址并启用回调、多态性和插件架构。它们是 C 处理高阶函数的方法的基础（例如`qsort`、`bsearch`）。使用语法声明它们：`return_type (*name)(parameter_types)`。
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：实现动态数组（向量）
+**问题陈述：** 在 C 中实现一个动态数组，该数组在添加元素时自动增长，支持 O(1) 摊销追加，并提供适当的清理。这是 C++`std::vector`的 C 等效项。
+**第 1 步 — 了解问题：**
+动态数组需要：(1) 堆分配的缓冲区，(2) 跟踪大小（已使用的元素）和容量（分配的槽），(3) 当大小达到容量时重新分配，(4) 适当的内存清理。 2x 的增长因子提供 O(1) 摊销追加。
+**第 2 步 — 确定方法：**
+- 使用`malloc`进行初始分配，使用`realloc`进行增长。
+- 将数据指针、大小和容量存储在结构中。
+-`size == capacity`时容量加倍。
+- 提供`push`、`pop`、`get`、`set`和`free`操作。
+**第 3 步 — 实施解决方案：**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**第 4 步 — 验证和优化：**
+- 摊销 O(1) 推送：加倍意味着每个元素总共最多复制 O(log n) 次。
+-`vec_get`和`vec_pop`中的边界检查可以尽早捕获错误 - 这在没有运行时安全网的 C 语言中至关重要。
+- 内存：从容量4开始推入100次后，容量达到128（4→8→16→32→64→128）。
+- 生产：增长完成后使用 `shrink_to_fit`（重新分配到精确大小）以回收未使用的内存。
+### 问题 2：构建一个简单的哈希表
+**问题陈述：** 使用单独的链接来实现具有字符串键和整数值的哈希表以解决冲突。支持插入、查找、删除操作。
+**第 1 步 — 了解问题：**
+哈希表通过哈希函数将键映射到数组索引。冲突（不同的键映射到相同的索引）通过单独的链接来解决：每个存储桶都是条目的链接列表。我们需要：哈希函数、插入、查找、删除和清理。
+**第 2 步 — 确定方法：**
+- 使用 FNV-1a 哈希来良好地分配字符串键。
+- 桶指针数组（链表头）。
+- 负载系数跟踪；当负载因子超过阈值时调整大小。
+- 所有操作平均为 O(1)，最坏情况为 O(n)。
+**第 3 步 — 实施解决方案：**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**第 4 步 — 验证和优化：**
+- 插入/查找/删除的平均 O(1)，具有良好的哈希函数和合理的负载因子。
+- FNV-1a 以最少的计算提供出色的字符串键分布。
+-`hashmap_remove`中的指针到指针技术 (`Entry **pp`) 可以优雅地处理列表头和中间列表删除，无需特殊情况。
+- 生产：当负载因子超过阈值时添加重新哈希。使用开放寻址（线性探测）以获得更好的缓存性能。
+### 问题 3：为生产者-消费者实现环形缓冲区
+**问题陈述：** 用C实现一个无锁的单生产者单消费者环形缓冲区，用于高性能线程间通信，而无需在运行过程中动态分配。
+**第 1 步 — 了解问题：**
+环形缓冲区（循环缓冲区）使用具有读取和写入索引的固定大小数组。当缓冲区已满时，写入器会阻塞或覆盖。对于SPSC（单生产者单消费者），我们可以使用原子操作而不是锁来获得最大吞吐量。
+**第 2 步 — 确定方法：**
+- 初始化时分配一次固定大小的数组。
+- `head`（读取位置）和 `tail`（写入位置）作为原子索引。
+- 制作人推进`tail`；消费者进步`head`。
+-`head == tail`时缓冲区为空；当`(tail + 1) % capacity == head`已满时。
+- 使用具有适当内存排序的 C11 原子。
+**第 3 步 — 实施解决方案：**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**第 4 步 — 验证和优化：**
+- 无锁：只有原子操作——没有互斥体，没有上下文切换。
+- 内存排序：写入时`release`确保数据在索引更新之前可见；  读取时的`acquire`确保我们在读取索引后看到数据。
+- 2 次方容量：启用`& (capacity - 1)`而不是`% capacity`— 速度明显更快。
+- 吞吐量：现代硬件上每秒数十亿次操作。
+- 生产：在`head`和`tail`之间添加填充，以防止错误共享（每个都在其自己的缓存行上）。
 ---
 
 ＃＃ 概括

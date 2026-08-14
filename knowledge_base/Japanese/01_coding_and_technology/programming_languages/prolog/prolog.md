@@ -51,7 +51,7 @@ Prolog は、1980 年代のエキスパート システム、自然言語処理�
 - **バックトラッキング検索**: 考えられるすべての解決策を自動的に探索します。手動の検索アルゴリズムは必要ありません。
 - **論理問題には自然**: エキスパート システム、ルール エンジン、型チェッカー、文法パーサー - これらは Prolog に直接マッピングされます。
 - **制約解決**: CLP(FD) は、スケジューリング、割り当て、および組み合わせの問題をエレガントに解決します。
-- **異なる考え方**: Prolog を学習すると、問題解決へのアプローチ方法が変わります。関係性や制約の中で考えるようになります。
+- **異なる考え方**: Prolog を学ぶと、問題解決へのアプローチ方法が変わります。関係性や制約の中で考えるようになります。
 ## トレードオフ
 |制限 |詳細 |一般的な回避策 |
 |----------|-----------|--------|
@@ -516,7 +516,7 @@ swipl -g main -o myapp.sav -c main.pl
 | **エキスパート システム** |医療診断、故障検出 |ミシン、XCON |
 | **NLP** |文法解析、意味解析 |チャットボット、QA システム |
 | **型推論** | Hindley-Milner 型チェック | Haskell/ML プロトタイプ |
-| **スケジュール設定** |従業員のスケジュール管理、時間割 |航空会社の乗務員のスケジュール管理 |
+| **スケジュール設定** |従業員のスケジュール設定、時間割 |航空会社の乗務員のスケジュール管理 |
 | **法的推論** |ルールベースの法的分析 |コンプライアンスチェック |
 | **データベースのクエリ** |データ分析のための Datalog |スフレエンジン |
 | **検証** |モデルのチェック |ハードウェアの検証 |
@@ -539,8 +539,131 @@ swipl -g main -o myapp.sav -c main.pl
 |汎用プログラミング |可能だが厄介 | Python、Go、Java |
 ---
 
+## 総合的な Q&A
+### Q1: Prolog の統合は他の言語の割り当てとどう違うのですか?
+**A:** 統合は双方向のパターン マッチングであり、割り当てではありません。
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2: Prolog ではバックトラッキングはどのように機能しますか?
+**A:** 目標が失敗した場合、Prolog は最後の選択ポイントまで戻り、次の代替案を試みます。
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3: Prolog でリストを操作するにはどうすればよいですか?
+**A:** リストでは先頭/末尾のパターン マッチングが使用されます。
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4: 他の言語ではなく Prolog を使用する必要があるのはどのような場合ですか?
+**A:** Prolog は次の点で優れています。
+- 制約の満足度 (スケジュール、パズル)
+- ルールベースのシステム (エキスパート システム、検証)
+- グラフ/ツリーのトラバーサル
+- 自然言語処理
+- 記号計算
+- 論理関係として表現できるあらゆる問題
+### Q5: Prolog でよくある落とし穴は何ですか?
+**A:** 主な問題:
+- 無限再帰 — 常に基本ケースを最初に置きます
+- 意図しないバックトラッキング — カット`!`または`once/1`を使用します 
+- 発生チェック — デフォルトで`X = f(X)`ループ (`unify_with_occurs_check`を使用)
+- 緑のカット (最適化) vs 赤のカット (意味の変更) — 緑を好む
+---
+
+## 思考連鎖による問題解決
+### 問題 1: N-Queens パズルを解く
+**ステップ 1: 問題を理解する**
+2 人のクイーンが互いに攻撃しないように、N 個のクイーンを NxN チェス盤に配置します。
+**ステップ 2: アプローチを特定する**
+制約ベースの生成を使用します。安全性を確認しながら列ごとにクイーンを配置します。
+**ステップ 3: 実装**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**ステップ 4: 確認**
+`?- n_queens(8, Qs).`は 92 個の解を見つける必要があります。
+### 問題 2: 単純なエキスパート システムの構築
+**ステップ 1: 問題を理解する**
+症状に基づいて車の問題を診断します。
+**ステップ 2: アプローチを特定する**
+Prolog ルールを使用して診断知識をエンコードします。
+**ステップ 3: 実装**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**ステップ 4: 延長**
+信頼度スコアを追加し、ユーザーにインタラクティブに症状を尋ね、診断を連鎖させます。
+---
+
 ＃＃ まとめ
-Prolog は他のプログラミング言語とは異なります。段階的な手順を記述する代わりに、関係と制約を記述すると、エンジンが論理推論を通じて解決策を検索します。このため、Prolog は、エキスパート システム、スケジューリング、文法解析、制約充足、および論理ルールに関係するあらゆる問題など、命令型言語で扱いにくいまたは冗長な問題に最適です。ほとんどのプログラマーは本番環境で Prolog を使用することはありませんが、Prolog を学ぶことで、プログラミングとは何なのかについての考えが広がります。統合、バックトラッキング、および宣言的問題仕様は、言語設計、AI 研究、さらにはデータベース クエリの最適化にさえ影響を与える概念です。
+Prolog は他のプログラミング言語とは異なります。段階的な手順を記述する代わりに、関係と制約を記述すると、エンジンが論理推論を通じて解決策を検索します。このため、Prolog は、エキスパート システム、スケジューリング、文法解析、制約充足、および論理ルールに関係するあらゆる問題など、命令型言語で厄介な問題や冗長な問題に最適です。ほとんどのプログラマーは本番環境で Prolog を使用することはありませんが、Prolog を学ぶことで、プログラミングとは何なのかについての考えが広がります。統合、バックトラッキング、および宣言的問題仕様は、言語設計、AI 研究、さらにはデータベース クエリの最適化にさえ影響を与える概念です。
 ### Prolog エンジンの比較
 |特集 | SWI-プロローグ | GNU プロローグ |タウ プロローグ |
 |----------|-----------|---------------|---------------|

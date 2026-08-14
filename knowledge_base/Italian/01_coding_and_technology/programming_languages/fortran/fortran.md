@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Fortran
 Fortran (Formula Translation) è il più antico linguaggio di programmazione di alto livello ancora ampiamente utilizzato, sviluppato per la prima volta da IBM nel 1957 per calcoli scientifici e ingegneristici. Nonostante la sua età, il moderno Fortran (Fortran 2008/2018/2023) è un linguaggio capace e ad alte prestazioni ampiamente utilizzato nella previsione meteorologica numerica, nella fluidodinamica computazionale, nelle simulazioni fisiche, nella modellazione finanziaria e nel calcolo ad alte prestazioni (HPC). Molti dei supercomputer più veloci del mondo utilizzano il codice Fortran.
 La lingua si è evoluta in modo significativo sin dai suoi primi giorni. Il Fortran moderno dispone di moduli, tipi derivati, procedure generiche, coarray (programmazione parallela) e interoperabilità con C. Rimane il linguaggio preferito per molte applicazioni di calcolo scientifico in cui le prestazioni sono fondamentali.
@@ -344,7 +345,7 @@ end program openmp_example
 ! Compile: gfortran -fopenmp program.f90
 ```
 
-### MPI (parallelismo della memoria distribuita)
+### MPI (Parallelismo della memoria distribuita)
 ```fortran
 program mpi_example
     use mpi
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Sviluppo di applicazioni generali | Non adatto | Python, Java, Vai |
 | Sviluppo web | Non adatto | JavaScript, Python |
 | Scienza dei dati (interattiva) | Non il flusso di lavoro | Pitone, R |
+---
+
+## Domande e risposte sintetiche
+### D1: Qual è la differenza tra Fortran 90 e Fortran moderno (2008+)?
+**R:** Il Fortran moderno ha aggiunto molte funzionalità che lo rendono più espressivo:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### D2: In cosa differiscono gli array Fortran dagli array C?
+**R:** Gli array Fortran sono oggetti di prima classe con operazioni integrate:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: Come posso ottenere le massime prestazioni in Fortran?
+**R:** Pratiche chiave:
+- Utilizzare`intent`esplicito per tutti gli argomenti fittizi
+- Usa`implicit none`ovunque
+- Preferisci le operazioni sugli array rispetto ai loop
+- Utilizzare modelli di accesso alla memoria contigui
+- Utilizza i flag di ottimizzazione del compilatore:`-O3 -march=native -ffast-math`
+- Profilo con`gprof`o strumenti specifici del compilatore
+- Utilizzare`pure`e`elemental`per le funzioni che il compilatore può ottimizzare
+### Q4: Come interfacciare Fortran con C?
+**R:** Utilizza il modulo `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: Quale sistema di compilazione dovrei utilizzare per i progetti Fortran?
+**R:** CMake ha un eccellente supporto Fortran. FPM (Fortran Package Manager) è la moderna opzione nativa:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: risolvere una PDE con differenze finite
+**Passaggio 1: comprendere il problema**
+Risolvi l'equazione del calore 1D: du/dt = alfa * d²u/dx²
+**Passaggio 2: identificare l'approccio**
+Discretizzare lo spazio e il tempo utilizzando le differenze finite. Utilizzare uno schema esplicito.
+**Passaggio 3: implementazione**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Passaggio 4: verifica**
+Verificare la conservazione, la convergenza con il raffinamento della griglia e confrontare con la soluzione analitica.
+### Problema 2: Diagonalizzazione della matrice
+**Passaggio 1: comprendere il problema**
+Trovare autovalori e autovettori di una matrice simmetrica.
+**Passaggio 2: identificare l'approccio**
+Utilizza la routine`dsyev`di LAPACK tramite l'interfaccia Fortran.
+**Passaggio 3: implementazione**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Passaggio 4: verifica**
+Controlla che A*v = lambda*v per ogni eigenpair.
 ---
 
 ## Riepilogo

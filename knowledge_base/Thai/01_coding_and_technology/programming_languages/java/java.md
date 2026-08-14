@@ -700,8 +700,8 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ## เวอร์ชันจาวา
 | เวอร์ชั่น | ปี | คุณสมบัติที่สำคัญ |
 |---------|-|-------------|
-| ชวา 8 | 2014 | **LTS** — Lambdas, Stream API, ตัวเลือก, วิธีการเริ่มต้น ยังคงใช้กันอย่างแพร่หลาย |
-| ชวา 11 | 2018 | **LTS** — HTTP Client API,`var`สำหรับตัวแปรภายในเครื่อง, ตัวเรียกใช้งานซอร์สไฟล์เดียว
+| ชวา 8 | 2014 | **LTS** — Lambdas, Stream API, ตัวเลือกเพิ่มเติม, วิธีการเริ่มต้น ยังคงใช้กันอย่างแพร่หลาย |
+| ชวา 11 | 2018 | **LTS** — HTTP Client API,`var`สำหรับตัวแปรภายในเครื่อง, ตัวเรียกใช้งานซอร์สไฟล์เดียว |
 | ชวา 17 | 2021 | **LTS** — คลาสที่ปิดผนึก, การจับคู่รูปแบบสำหรับ`instanceof`, บันทึก, บล็อกข้อความ |
 | ชวา 21 | 2023 | **LTS** — **Virtual threads** (Project Loom), การจับคู่รูปแบบสำหรับ`switch`, รูปแบบการบันทึก |
 | ชวา 25 | 2025 | **LTS** — เทมเพลตสตริง, การจับคู่รูปแบบเพิ่มเติม, API ฟังก์ชันต่างประเทศ |
@@ -720,5 +720,376 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | เครื่องมือ CLI | เริ่มต้นช้า | ไปเถอะ รัส |
 ---
 
+## คำถามและคำตอบสังเคราะห์
+### Q1: อะไรคือความแตกต่างระหว่าง`==`และ`.equals()`ใน Java?
+**A:**`==`เปรียบเทียบการอ้างอิงวัตถุ (ข้อมูลประจำตัว) — จะตรวจสอบว่าตัวแปรสองตัวชี้ไปที่วัตถุเดียวกันในหน่วยความจำหรือไม่ `.equals()`เปรียบเทียบเนื้อหาวัตถุ (ความเท่าเทียมกันของค่า) สำหรับค่าพื้นฐาน (`int`,`double`)`==`จะเปรียบเทียบค่าโดยตรง สำหรับอ็อบเจ็กต์ (รวมถึง`String`) ให้ใช้`.equals()`เพื่อเปรียบเทียบเนื้อหาเสมอ ข้อยกเว้นเดียวคือการเปรียบเทียบกับ`null`โดยที่`==`ถูกต้อง
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### คำถามที่ 2: JVM Garbage Collector ทำงานอย่างไร และฉันควรใช้อันไหน
+**ตอบ:** GC จะเรียกคืนหน่วยความจำจากออบเจ็กต์ที่ไม่สามารถเข้าถึงได้อีกต่อไปโดยอัตโนมัติ JVM สมัยใหม่ (21+) มีตัวรวบรวมหลายตัว: G1 (ค่าเริ่มต้น, แบบสมดุล), ZGC (เวลาหยุดชั่วคราวต่ำเป็นพิเศษ, <1ms) และ Shenandoah (หยุดชั่วคราวต่ำ, OpenJDK) สำหรับแอปพลิเคชันส่วนใหญ่ G1 เริ่มต้นนั้นใช้ได้ สำหรับบริการที่มีความอ่อนไหวต่อเวลาแฝง ให้ใช้ ZGC (`-XX:+UseZGC`) สำหรับการประมวลผลแบบแบตช์ที่เน้นปริมาณงาน ให้ใช้ Parallel GC (`-XX:+UseParallelGC`)
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### Q3: เมื่อใดที่ฉันควรใช้`Stream API`เทียบกับลูปแบบดั้งเดิม
+**A:** ใช้ Streams เมื่อการดำเนินการเป็นไปป์ไลน์ที่ชัดเจน (ตัวกรอง แผนที่ การย่อ) — ซึ่งแสดงเจตนาได้ดีขึ้นและขนานกันได้อย่างง่ายดายด้วย`.parallelStream()`ใช้ลูปแบบดั้งเดิมสำหรับการวนซ้ำอย่างง่าย เมื่อคุณต้องการแก้ไขสถานะภายนอก เมื่อประสิทธิภาพมีความสำคัญ (สตรีมมีค่าใช้จ่าย) หรือเมื่อตรรกะเกี่ยวข้องกับโฟลว์การควบคุมที่ซับซ้อน (หยุด ดำเนินการต่อ ส่งคืนหลายรายการ) หลีกเลี่ยงการสตรีมสำหรับการดำเนินการ`for-each`แบบธรรมดา
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### คำถามที่ 4: ระเบียน คลาสที่ปิดผนึก และการจับคู่รูปแบบใน Java สมัยใหม่คืออะไร
+**A:** Records (Java 16) เป็นผู้ให้บริการข้อมูลที่ไม่เปลี่ยนรูปแบบ — โดยจะสร้าง Constructor, Getters โดยอัตโนมัติ,`equals`,`hashCode`และ`toString`คลาสที่ปิดผนึก (Java 17) จำกัดคลาสที่สามารถขยายได้ ซึ่งมีประโยชน์สำหรับการสร้างแบบจำลองลำดับชั้นประเภทจำกัด การจับคู่รูปแบบ (Java 21) ช่วยให้นิพจน์`switch`สามารถทำลายโครงสร้างประเภท บันทึก และค่าได้ โดยแทนที่สายโซ่`instanceof`แบบละเอียด
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### Q5: ฉันจะจัดการกับข้อยกเว้นที่ถูกตรวจสอบและที่ไม่ได้ตรวจสอบอย่างถูกต้องได้อย่างไร
+**ตอบ:** ข้อยกเว้นที่เลือก (`IOException`,`SQLException`) จะต้องประกาศใน`throws`หรือตรวจพบ — ซึ่งแสดงถึงเงื่อนไขที่สามารถกู้คืนได้ซึ่งผู้โทรควรทราบ ข้อยกเว้นที่ไม่ได้ตรวจสอบ (คลาสย่อย`RuntimeException`เช่น`NullPointerException`,`IllegalArgumentException`) แสดงถึงจุดบกพร่องในการเขียนโปรแกรม แนวทางปฏิบัติที่ดีที่สุด: ใช้ข้อยกเว้นที่ตรวจสอบแล้วเท่าที่จำเป็น (สร้างการเชื่อมต่อ) เลือกใช้`Optional`สำหรับการขาดงานที่คาดหวัง และรวมข้อยกเว้นที่ตรวจสอบไว้ในรายการที่ไม่ถูกตรวจสอบเมื่อข้ามขอบเขต API
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: สร้างไปป์ไลน์ของผู้ผลิตและผู้บริโภคที่ปลอดภัยต่อเธรด
+**คำชี้แจงปัญหา:** ออกแบบไปป์ไลน์ระหว่างผู้ผลิตและผู้บริโภคใน Java โดยที่ผู้ผลิตหลายรายสร้างรายการงาน ผู้บริโภคหลายรายดำเนินการพร้อมกัน และระบบรองรับการปิดระบบอย่างค่อยเป็นค่อยไปโดยระบายรายการงานที่เหลือ
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการ: (1) คิวที่มีขอบเขตเพื่อบัฟเฟอร์รายการงานระหว่างผู้ผลิตและผู้บริโภค (2) การเพิ่มเธรดของผู้ผลิตหลายรายการ (3) รายการการประมวลผลเธรดของผู้บริโภคหลายรายการ (4) กลไกในการส่งสัญญาณการปิดระบบและระบายรายการที่เหลือ`BlockingQueue`ของ Java สร้างขึ้นโดยมีจุดประสงค์เพื่อสิ่งนี้
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้`ArrayBlockingQueue`(มีขอบเขต) เพื่อป้องกันการเติบโตของหน่วยความจำที่ไม่มีขอบเขต
+- ใช้รูปแบบยาพิษเพื่อส่งสัญญาณการปิดเครื่อง
+- ใช้`ExecutorService`สำหรับการจัดการเธรดพูล
+- ใช้`CountDownLatch`เพื่อรอให้ผู้บริโภคระบายน้ำจนหมด
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- คิวที่ถูกผูกไว้ป้องกัน OOM:`ArrayBlockingQueue(1000)`จำกัดหน่วยความจำ
+- รูปแบบยาพิษ: ผู้บริโภคแต่ละคนออกจากร้านอย่างสะอาดหลังจากได้รับยาแล้ว
+-`poll(1, SECONDS)`พร้อมการหมดเวลาป้องกันไม่ให้ผู้บริโภคบล็อกตลอดไปหากผู้ผลิตดำเนินการช้า
+- การผลิต: ใช้`LinkedBlockingQueue`สำหรับแบบไม่มีขอบเขต หรือใช้`Disruptor`(LMAX) สำหรับไปป์ไลน์ที่มีความหน่วงต่ำเป็นพิเศษ
+### ปัญหาที่ 2: ติดตั้งเครื่องมือตรวจสอบตามคำอธิบายประกอบที่กำหนดเอง
+**คำชี้แจงปัญหา:** สร้างกรอบการตรวจสอบโดยใช้คำอธิบายประกอบที่กำหนดเอง ผู้ใช้ใส่คำอธิบายประกอบในช่องด้วย`@NotNull`,`@Min(0)`,`@Max(100)`,`@Size(min=1, max=50)`และเรียก`Validator.validate(obj)`เพื่อรับรายการการละเมิด
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการ: (1) คำอธิบายประกอบที่กำหนดเองพร้อมพารามิเตอร์ (2) เครื่องมือตรวจสอบความถูกต้องตามการสะท้อนที่อ่านคำอธิบายประกอบขณะรันไทม์ (3) ออบเจ็กต์ผลลัพธ์ที่มีข้อผิดพลาดในการตรวจสอบทั้งหมด สิ่งนี้แสดงให้เห็นถึงความสามารถในการประมวลผลคำอธิบายประกอบและการสะท้อนของ Java
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- กำหนดคำอธิบายประกอบด้วย`@Retention(RUNTIME)`และ `@Target(FIELD)`
+- ใช้`Class.getDeclaredFields()`เพื่อวนซ้ำฟิลด์
+- ใช้`Field.getAnnotation()`เพื่ออ่านค่าคำอธิบายประกอบ
+- เปรียบเทียบค่าฟิลด์กับข้อจำกัดคำอธิบายประกอบ
+- รวบรวมการละเมิดไว้ในรายการ
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- การสะท้อนค่าใช้จ่าย: ยอมรับได้สำหรับการตรวจสอบ (เรียกหนึ่งครั้งต่อคำขอ) สำหรับเส้นทางลัด การค้นหาฟิลด์แคช หรือใช้การประมวลผลคำอธิบายประกอบเวลาคอมไพล์ (เช่น Hibernate Validator)
+- ความสามารถในการขยาย: เพิ่มคำอธิบายประกอบใหม่โดยการสร้างคำอธิบายประกอบ + บล็อกตัวจัดการใน `validate()`
+- การผลิต: ใช้`jakarta.validation`(Bean Validation 3.0) — ทำทั้งหมดนี้และอื่นๆ อีกมากมาย ด้วยการประมวลผลเวลาคอมไพล์ผ่านตัวประมวลผลคำอธิบายประกอบ
+### ปัญหาที่ 3: สร้างไคลเอนต์ HTTP ที่จำกัดอัตราด้วยการลองอีกครั้ง
+**คำชี้แจงปัญหา:** สร้าง Wrapper ไคลเอ็นต์ HTTP ที่ลองคำขอที่ล้มเหลวอีกครั้งโดยอัตโนมัติโดยมีแบ็คออฟแบบเอ็กซ์โปเนนเชียล เคารพขีดจำกัดอัตรา และรองรับการตัดวงจร (หยุดเรียกใช้บริการที่ล้มเหลว)
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการ: (1) ลองตรรกะอีกครั้งด้วย Exponential Backoff และ Jitter, (2) การจำกัดอัตราเพื่อหลีกเลี่ยงบริการเป้าหมายที่ท่วมท้น (3) รูปแบบเซอร์กิตเบรกเกอร์ — หลังจากล้มเหลว N ครั้งติดต่อกัน ให้หยุดเรียกใช้บริการเป็นระยะเวลาคูลดาวน์ สิ่งเหล่านี้เป็นข้อกังวลสามประการที่ประกอบกันได้
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้`java.net.http.HttpClient`(Java 11+) เป็นไคลเอนต์พื้นฐาน
+- ใช้การลองใหม่อีกครั้งเป็น wrapper ด้วย`Thread.sleep`สำหรับ backoff
+- ใช้`Semaphore`สำหรับการจำกัดอัตรา (หรือ`java.time`สำหรับที่เก็บข้อมูลโทเค็น)
+- ใช้เซอร์กิตเบรกเกอร์เป็นเครื่องสถานะ: CLOSED → OPEN → HALF_OPEN
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- การถอยกลับแบบเอกซ์โพเนนเชียลพร้อมความกระวนกระวายใจช่วยป้องกันฝูงฟ้าร้อง (พยายามลองอีกครั้งพร้อมกัน)
+- เซอร์กิตเบรกเกอร์: หลังจาก`failureThreshold`ขัดข้องติดต่อกัน วงจรจะเปิดสำหรับ`cooldownMs`— ไม่มีการส่งคำขอ เพื่อปกป้องบริการที่ล้มเหลว
+- ตัวจำกัดอัตรา:`Semaphore`พร้อมปริมาณงานการเติมสูงสุดตามระยะเวลา
+- การผลิต: ใช้`resilience4j`— ซึ่งมีทั้งสามรูปแบบ (ลองใหม่ ตัวจำกัดอัตรา เซอร์กิตเบรกเกอร์) พร้อมการใช้งาน เมตริก และการรวม Spring Boot ที่เหมาะสม
+---
+
 ## สรุป
-Java เป็นหนึ่งในภาษาการเขียนโปรแกรมที่สำคัญที่สุดที่เคยสร้างมา ดำเนินการระบบธนาคารของโลก โทรศัพท์ Android ไปป์ไลน์ข้อมูลขนาดใหญ่ และแบ็กเอนด์ขององค์กร Modern Java (21+) เป็นภาษาที่แตกต่างจาก Java 8 มาก — กระชับกว่า แสดงออกได้ชัดเจนกว่า และแข่งขันกับภาษาใหม่ๆ ได้มากขึ้น ระบบนิเวศของ JVM (Kotlin, Scala, Clojure) ขยายการเข้าถึงเพิ่มเติม สำหรับการพัฒนาองค์กร Java ยังคงเป็นตัวเลือกที่ปลอดภัยและทรงพลัง
+Java เป็นหนึ่งในภาษาการเขียนโปรแกรมที่สำคัญที่สุดที่เคยสร้างมา ดำเนินการระบบธนาคารของโลก โทรศัพท์ Android ไปป์ไลน์ข้อมูลขนาดใหญ่ และแบ็กเอนด์ขององค์กร Modern Java (21+) เป็นภาษาที่แตกต่างจาก Java 8 มาก — กระชับกว่า แสดงออกได้ชัดเจนกว่า และสามารถแข่งขันกับภาษาใหม่ๆ ได้มากขึ้น ระบบนิเวศของ JVM (Kotlin, Scala, Clojure) ขยายการเข้าถึงเพิ่มเติม สำหรับการพัฒนาองค์กร Java ยังคงเป็นตัวเลือกที่ปลอดภัยและทรงพลัง

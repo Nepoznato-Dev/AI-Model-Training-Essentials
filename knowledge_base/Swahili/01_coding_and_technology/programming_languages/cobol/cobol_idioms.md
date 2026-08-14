@@ -1,0 +1,68 @@
+---
+# Metadata
+title: "COBOL — Idiomatic Patterns & Best Practices"
+description: "Idiomatic patterns and best practices for writing clean, modern COBOL code."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+authors:
+  - name: "AI Model Training Team"
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-09"
+    changes: "Initial idiomatic patterns guide"
+tags: [cobol, idioms, patterns, best-practices, coding-and-technology]
+difficulty_level: "intermediate"
+estimated_reading_time: "8 min"
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+---
+
+# COBOL - Miundo ya nahau na Mbinu Bora
+Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo safi, wa kisasa wa COBOL.
+---
+
+## COBOL ya kisasa
+```cobol
+       *> ✅ Free-format (COBOL 2002+)
+       identification division.
+       program-id. hello-world.
+       
+       data division.
+       working-storage section.
+       01 ws-name    pic x(50).
+       01 ws-age     pic 999.
+       01 ws-salary  pic 99999.99.
+       
+       procedure division.
+           display "Hello, World!"
+           accept ws-name
+           display "Hello, " ws-name
+           stop run.
+```
+
+---
+
+## Idara ya Takwimu
+```cobol
+       *> ✅ 88-level condition names
+       01 ws-status pic x.
+           88 status-active  value "A".
+           88 status-inactive value "I".
+       
+       if status-active
+           display "User is active"
+       end-if
+       
+       *> ✅ Group items for structure
+       01 ws-user.
+           05 ws-user-id    pic 9(10).
+           05 ws-user-name  pic x(50).
+           05 ws-user-email pic x(100).
+```
+
+---
+
+## Muhtasari
+Nahau za COBOL zinasisitiza: Majina ya hali ya viwango 88, vipengee vya kikundi kwa muundo, na chanzo cha umbizo huria. Fuata viwango vya COBOL vya biashara. COBOL inathamini usomaji na usindikaji wa data unaolenga biashara.

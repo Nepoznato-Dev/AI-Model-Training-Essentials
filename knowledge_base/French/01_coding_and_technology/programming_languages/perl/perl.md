@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Perl"
-description : "Référence complète sur le langage de programmation Perl couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Perl"
+description: "Comprehensive reference for the Perl programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [perl, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "24 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [perl, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "24 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Perl
 Perl a été créé par Larry Wall en 1987 comme outil pratique de traitement de texte. Il est devenu l'épine dorsale des premiers développements Web (scripts CGI), de l'administration système, de la bioinformatique et de la programmation réseau. La philosophie de Perl est « Il y a plus d'une façon de le faire » (TMTOWTDI) : le langage vous propose plusieurs approches pour chaque problème, privilégiant l'expressivité plutôt que l'uniformité.
 L'influence de Perl sur la programmation moderne est énorme mais souvent invisible : les expressions régulières, influencées par la correspondance de modèles de Perl, sont désormais standard dans Python, JavaScript, Java et la plupart des autres langages. Le CPAN (Comprehensive Perl Archive Network) a été l'un des premiers référentiels de progiciels et a inspiré des systèmes ultérieurs tels que PyPI de Python et npm de Node.
@@ -579,6 +584,165 @@ CMD ["perl", "bin/myapp.pl"]
 | Développement Web | L'ère CGI est révolue | Python, Node.js, Go, PHP |
 | Nouveaux projets à grande échelle | La communauté a évolué | Allez, Rouille, Python |
 | Science des données / ML | Pas l'écosystème | Python, R |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Quelle est la différence entre`my`,`our`et `local` ?
+**R :** Ces mots-clés contrôlent la portée des variables :
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2 : Comment traiter efficacement les fichiers texte en Perl ?
+**R :** Perl excelle dans le traitement de texte. Utilisez l'opérateur Diamond et l'expression régulière :
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3 : Comment utiliser les références et les structures de données complexes ?
+**R :** Les références sont le moyen utilisé par Perl pour créer des structures imbriquées :
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4 : Quelles sont les variables spéciales de Perl que je devrais connaître ?
+**R :** Perl possède de nombreuses variables spéciales. Le plus important :
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5 : Comment puis-je écrire du Perl moderne et maintenable ?
+**R :** Meilleures pratiques pour le Perl moderne :
+- Utilisez toujours`strict`et`warnings`
+- Utilisez`my`pour toutes les variables
+- Utiliser des descripteurs de fichiers lexicaux :`open my $fh, '<', $file`
+- Utiliser les modules du CPAN (Moo/Moose pour la POO, Try::Tiny pour les erreurs)
+- Utilisez`say`au lieu de`print`(avec `feature 'say'`)
+- Formater avec `perltidy`
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Analyse des fichiers journaux
+**Étape 1 : Comprendre le problème**
+Analysez un journal d'accès Apache et comptez les requêtes par adresse IP.
+**Étape 2 : Identifiez l'approche**
+Utilisez l'expression régulière pour extraire les adresses IP, le hachage pour compter les occurrences.
+**Étape 3 : Mettre en œuvre**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**Étape 4 : Prolonger**
+Ajoutez un filtrage par date, une analyse du code d'état et une sortie au format CSV.
+### Problème 2 : Renommer un fichier batch avec Regex
+**Étape 1 : Comprendre le problème**
+Renommez les fichiers correspondant à un modèle, en transformant les noms de fichiers avec regex.
+**Étape 2 : Identifiez l'approche**
+Utilisez`glob`ou`opendir`pour rechercher des fichiers, regex pour transformer les noms.
+**Étape 3 : Mettre en œuvre**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**Étape 4 : Vérifier**
+Exécutez d'abord avec le drapeau`--dry-run`(imprimez simplement, ne bougez pas).
+### Problème 3 : Créer un simple Web Scraper
+**Étape 1 : Comprendre le problème**
+Récupérez une page Web et extrayez tous les liens.
+**Étape 2 : Identifiez l'approche**
+Utilisez`LWP::Simple`pour la récupération et les expressions régulières ou`HTML::LinkExtor`pour l'analyse.
+**Étape 3 : Mettre en œuvre**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**Étape 4 : Prolonger**
+Gérez les URL relatives, filtrez par domaine et suivez la pagination.
 ---
 
 ## Résumé

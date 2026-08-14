@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # MATLAB
 MATLAB (Matrix Laboratory) to interpretowany język programowania wysokiego poziomu i środowisko przeznaczone do obliczeń numerycznych, operacji na macierzach i zastosowań inżynieryjnych/naukowych. Opracowany przez MathWorks i wydany po raz pierwszy w 1984 roku, MATLAB jest standardowym narzędziem w wielu dziedzinach inżynierii — elektrotechnice, systemach sterowania, przetwarzaniu sygnałów, przetwarzaniu obrazu i komunikacji.
 MATLAB łączy w sobie potężny język zorientowany na macierz z rozbudowanymi zestawami narzędzi (pakietami dodatków) i środowiskiem symulacji wizualnej Simulink. Jest szeroko stosowany w środowisku akademickim i przemysłowym do prototypowania algorytmów przed wdrożeniem ich w kodzie produkcyjnym.
@@ -49,7 +50,7 @@ MATLAB łączy w sobie potężny język zorientowany na macierz z rozbudowanymi 
 - **Simulink**: Wizualne środowisko oparte na diagramach blokowych do modelowania i symulacji systemów dynamicznych.
 - **Standard branżowy**: Wymagane umiejętności na wielu stanowiskach inżynierskich — lotniczym, motoryzacyjnym, telekomunikacyjnym, obronnym.
 - **Szybkie prototypowanie**: Szybkie opracowywanie i testowanie algorytmów przed wdrożeniem w C/C++ lub systemach wbudowanych.
-- **Edukacja**: standardowe narzędzie do nauczania metod numerycznych, algebry liniowej i kursów inżynierskich.
+- **Edukacja**: Standardowe narzędzie do nauczania metod numerycznych, algebry liniowej i kursów inżynierskich.
 ## Kompromisy
 | Ograniczenie | Szczegóły | Typowe obejście |
 |----------|---------|--------------------------------|
@@ -653,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 | Systemy produkcyjne | Nie przeznaczony do wdrożenia | C++, Python, Go |
 | Tworzenie stron internetowych | Nie nadaje się | JavaScript, Python |
 | Analiza danych (ogólnie) | Możliwe, ale Python jest bardziej wszechstronny | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jak wektoryzować operacje zamiast używać pętli?
+**O:** MATLAB jest zoptymalizowany pod kątem operacji na macierzach. Zastąp pętle kodem wektorowym:
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### P2: Jaka jest różnica między macierzami a tablicami?
+**A:** W MATLABIE wszystko jest tablicą. Macierze to tablice 2D:
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### P3: Jak utworzyć efektywne wykresy w MATLABIE?
+**A:** Użyj funkcji kreślących z odpowiednim etykietowaniem:
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### P4: Jak skutecznie debugować kod MATLAB?
+**O:** Użyj wbudowanego debugera i narzędzi diagnostycznych:
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### P5: Jak czytać i zapisywać pliki danych?
+**A:** MATLAB obsługuje wiele formatów plików:
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Rozwiązywanie układu równań liniowych
+**Krok 1: Zrozum problem**
+Rozwiąż Ax = b, gdzie A jest macierzą, a b jest wektorem.
+**Krok 2: Zidentyfikuj podejście**
+Użyj operatora ukośnika odwrotnego MATLAB-a `\`, który automatycznie wybiera najlepszy algorytm.
+**Krok 3: Wdróż**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**Krok 4: Przedłuż**
+W przypadku systemów nadokreślonych`\`daje rozwiązanie metodą najmniejszych kwadratów. W przypadku systemów rzadkich użyj macierzy `sparse`.
+### Problem 2: Przetwarzanie sygnału — analiza FFT
+**Krok 1: Zrozum problem**
+Przeanalizuj zawartość częstotliwości w zaszumionym sygnale.
+**Krok 2: Zidentyfikuj podejście**
+Wygeneruj sygnał testowy, zastosuj FFT i wykreśl widmo częstotliwości.
+**Krok 3: Wdróż**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**Krok 4: Zweryfikuj**
+Szczyty powinny pojawić się przy 50 Hz i 120 Hz. Poziom szumów powinien być niski.
+### Problem 3: Dopasowywanie krzywej do modeli niestandardowych
+**Krok 1: Zrozum problem**
+Dopasuj dane eksperymentalne do niestandardowego modelu nieliniowego.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`fit`z niestandardowym`fittype`lub`lsqcurvefit`.
+**Krok 3: Wdróż**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź pozostałości pod kątem wzorców, sprawdź R² i przetestuj z różnymi punktami początkowymi.
 ---
 
 ## Streszczenie

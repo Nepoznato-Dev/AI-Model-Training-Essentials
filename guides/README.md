@@ -32,9 +32,15 @@ RAG Fundamentals → Transformers → Agentic Systems → Orchestration Patterns
 
 ### 🖼️ Interested in Images & Vision (Computer Vision Path)
 ```
-CNN Fundamentals → GANs → Advanced CNNs → Infrastructure Layers
+CNN Fundamentals → GANs → Diffusion Models → Advanced CNNs → Infrastructure Layers
 ```
 **Career outcomes:** Computer Vision Engineer, Image Generation Specialist, Medical Imaging AI
+
+### 🕹️ Interested in Game AI & Decision-Making (RL Path)
+```
+CNN Basics → Reinforcement Learning → Agentic Systems → Orchestration Patterns
+```
+**Career outcomes:** Game AI Developer, Robotics Engineer, Autonomous Systems Specialist
 
 ### 🕸️ Interested in Relationships & Networks (Graph ML Path)
 ```
@@ -60,15 +66,28 @@ Any Architecture Guide → Infrastructure Layers → Orchestration Patterns
 
 | Guide | What You'll Build | Beginner-Friendly | Status | Chapters |
 |-------|------------------|-------------------|--------|----------|
-| **[RAG](./RAG/)** | AI that answers questions using your documents | ⭐⭐⭐⭐⭐ Yes! Start here | ✅ Complete | 4/4 |
+| **[RAG](./RAG/)** | AI that answers questions using your documents | ⭐⭐⭐⭐⭐ Yes! Start here | ✅ Complete | 5/5 |
 | **[Transformers](./Transformers/)** | Language models like ChatGPT | ⭐⭐⭐⭐ Very accessible | ✅ Complete | 4/4 |
 | **[CNNs](./CNNs/)** | Image classifiers (cat vs dog) | ⭐⭐⭐⭐ Very accessible | ✅ Complete | 4/4 |
 | **[GANs](./GANs/)** | AI that generates fake images | ⭐⭐⭐ Some math needed | ✅ Complete | 3/3 |
 | **[MoE](./MoE/)** | Sparse mixture of experts for efficient scaling | ⭐⭐⭐ Need basics first | ✅ Complete | 3/3 |
 | **[GNNs](./GNNs/)** | AI for social networks, molecules | ⭐⭐ Graph theory helpful | ✅ Complete | 4/4 |
 | **[Agentic Systems](./Agentic_Systems/)** | Autonomous AI assistants | ⭐⭐⭐ Need basics first | ✅ Complete | 4/4 |
+| **[Diffusion Models](./Diffusion/)** | AI that generates stunning images from noise | ⭐⭐⭐ Need basics first | ✅ Complete | 2/2 |
+| **[Reinforcement Learning](./Reinforcement_Learning/)** | AI that learns by trial and error | ⭐⭐⭐ Need basics first | ✅ Complete | 2/2 |
 | **[Orchestration Patterns](./Orchestration_Patterns/)** | Multi-AI workflows | ⭐⭐ Need deployment knowledge | ✅ Complete | 4/4 |
 | **[Infrastructure Layers](./Infrastructure_Layers/)** | Deploy AI at scale | ⭐⭐ Need coding experience | ✅ Complete | 4/4 |
+
+### Supporting Resources
+
+| Resource | What It Covers |
+|----------|---------------|
+| **[Prerequisites](./prerequisites/)** | Math, ML fundamentals, Python basics |
+| **[Common Errors](./errors/)** | Solutions to CUDA OOM, import errors, and more |
+| **[User Questions](./User%20Questions/)** | Extended error guides, case studies, progression maps |
+| **[Hardware Reality Check](./hardware_reality_check.md)** | What computer/GPU you actually need |
+| **[Progression Map](./progression_map.md)** | Career-aligned learning paths with timelines |
+| **[Runnable Projects](./projects/)** | Hands-on starter projects for each topic |
 
 ### Status Legend
 - ✅ **Complete**: Full guide with all chapters, exercises, and solutions
@@ -290,6 +309,18 @@ What can you actually DO with these skills?
 - Video game asset creation
 - Deepfake detection (fight fire with fire!)
 
+### Diffusion Models
+- Text-to-image generation (DALL-E, Stable Diffusion)
+- Image editing and inpainting
+- Video generation from text
+- Super-resolution and image enhancement
+
+### Reinforcement Learning
+- Game-playing AI (AlphaGo, Dota 2 bots)
+- Robotics control (walking, grasping, navigation)
+- Autonomous driving decision-making
+- LLM alignment (RLHF for helpful AI assistants)
+
 ### GNNs
 - Drug discovery (molecular graphs)
 - Fraud detection in financial networks
@@ -342,8 +373,9 @@ These guides are living documents. You can help by:
 ### Intensive Bootcamp (30+ hours/week)
 - Week 1: RAG + Transformers
 - Week 2: CNNs + GANs
-- Week 3: GNNs + Agentic Systems
-- Week 4: Orchestration + Infrastructure + Capstone
+- Week 3: Diffusion Models + Reinforcement Learning
+- Week 4: GNNs + Agentic Systems
+- Week 5: Orchestration + Infrastructure + Capstone
 
 > ⏰ **Key Insight**: Consistency beats intensity. 1 hour daily > 7 hours once a week.
 
@@ -411,3 +443,10 @@ The journey of a thousand miles begins with a single step. Your AI journey start
 - [Bonus Resources](#-bonus-resources)
 
 **Ready? Open the [RAG Guide](./RAG/) and begin your journey!** 🚀
+
+### Quick Links to Supporting Resources
+- [Common Errors & Fixes](./errors/README.md) — CUDA OOM, import errors, and more
+- [Hardware Reality Check](./hardware_reality_check.md) — What you actually need
+- [Learning Progression Map](./progression_map.md) — Career-aligned paths
+- [Runnable Projects](./projects/README.md) — Starter code for each topic
+- [User Questions & Case Studies](./User%20Questions/) — Extended guides and FAQs

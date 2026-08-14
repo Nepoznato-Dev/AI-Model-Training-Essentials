@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Yönetim ve Proje Metodolojileri
-İnsanları ve projeleri yönetmek herhangi bir organizasyondaki en zor şeylerden biridir. Teknik beceriler sizi odaya sokar, ancak ekiplere liderlik etme, kararlar alma, net bir şekilde iletişim kurma ve sonuçlar sunma yeteneği, herhangi bir şeyin gerçekten yapılıp yapılmayacağını belirleyen şeydir. Bu dosya, etkili yöneticilerin ve proje liderlerinin güvendiği çerçeveleri, metodolojileri ve pratik becerileri kapsar.
+İnsanları ve projeleri yönetmek, herhangi bir kuruluştaki en zorlu sorumluluklar arasındadır. Teknik beceriler giriş sağlar ancak ekiplere liderlik etme, karar verme, etkili iletişim kurma ve sonuçları sunma yeteneği hedeflere ulaşılıp ulaşılamayacağını belirler. Bu dosya, etkili yöneticilerin ve proje liderlerinin uyguladığı çerçeveleri, metodolojileri ve pratik becerileri kapsar.
 ---
 
 ## Liderlik Stilleri
@@ -81,7 +81,7 @@ Agile bir metodoloji değil, bir zihniyettir.[Agile Manifesto](https://agilemani
 > *Süreçler ve araçlar üzerinden *bireyler ve etkileşimler*
 > *Çalışan yazılım* ve kapsamlı dokümantasyon
 > *Sözleşme müzakereleri sırasında müşteri işbirliği*
-> *Bir planı takip etmek yerine *değişime yanıt vermek*
+> *Değişikliğe yanıt vermek* bir planı takip etmek
 | Çevik İlke | Pratikte Ne İfade Ediyor |
 |----------------|--------------------------|
 | Çalışan yazılımı sık sık teslim edin | Kısa yinelemeler (1–4 hafta) |
@@ -89,7 +89,7 @@ Agile bir metodoloji değil, bir zihniyettir.[Agile Manifesto](https://agilemani
 | İş dünyası ve geliştiriciler birlikte çalışıyor | Yalnızca başlangıçta ve bitişte değil, günlük işbirliği |
 | Motivasyonlu bireyler etrafında projeler oluşturun | Onlara ihtiyaç duydukları ortamı ve güveni verin |
 | Yüz yüze görüşme | Bilgi aktarmanın en etkili yolu |
-| Çalışan yazılım ilerlemenin birincil ölçüsüdür | Belge değil, plan değil |
+| Çalışan yazılım, ilerlemenin birincil ölçüsüdür | Belge değil, plan değil |
 | Sürdürülebilir tempo | Süresiz olarak; ölüm yürüyüşlerine hayır |
 | Teknik mükemmelliğe sürekli dikkat | İyi tasarım ve temiz kod |
 | Sadelik | Yapılmayan işi en üst düzeye çıkarın |
@@ -124,7 +124,7 @@ Kanban, işi görselleştirmeye ve devam eden işi sınırlamaya odaklanan akı�
 | **Roller** | PO, Scrum Master, Takım | Öngörülen roller yok |
 | **Değişim** | Sprint ortasında değişiklik yok | İstediğiniz zaman değiştirin |
 | **Metrikler** | Hız (sprint başına hikaye puanı) | Döngü süresi, verim |
-| **Şunlar için en iyisi** | Düzenli sürümlerle ürün geliştirme | Destek ekipleri; sürekli teslimat |
+| **En iyisi** | Düzenli sürümlerle ürün geliştirme | Destek ekipleri; sürekli teslimat |
 ---
 
 ## OKR'ler ve KPI'lar
@@ -172,7 +172,7 @@ OKR'ler Google, Intel, Spotify ve diğerleri tarafından kullanılan bir hedef b
 | Çerçeve | Yapı | Ne Zaman Kullanılmalı |
 |-----------|---------------|------------|
 | **HAZIRLIK** | Nokta → Neden → Örnek → Nokta | İkna edici iletişim; toplantılar |
-| **YILDIZ** | Durum → Görev → Eylem → Sonuç | Röportajlar; performans değerlendirmeleri |
+| **YILDIZ** | Durum → Görev → Eylem → Sonuç | Röportajlar; performans incelemeleri |
 | **BLUF** | Alt Sıra Yukarı Ön | Yöneticilere e-postalar; durum güncellemeleri |
 | **SBAR** | Durum → Arka Plan → Değerlendirme → Öneri | Aktarmalar; olay iletişimi |
 | **7 C** | Açık, Kısa, Somut, Doğru, Tutarlı, Tam, Nazik | Genel yazılı iletişim |
@@ -230,12 +230,12 @@ OKR'ler Google, Intel, Spotify ve diğerleri tarafından kullanılan bir hedef b
 | Toplantı Türü | Süre | Frekans | Amaç |
 |---------------|----------|-----------|-----------|
 | **Günlük stand-up** | 15 dakika | Günlük | Senkronizasyon; yüzey engelleyiciler |
-| **Sprint planlama** | 1–2 saat | Her sprint | Bundan sonra ne inşa edeceğinize karar verin |
+| **Sprint planlama** | 1–2 saat | Her sprint | Bundan sonra ne inşa edeceğinize uyum sağlayın |
 | **Sprint incelemesi** | 1 saat | Her sprint | Demo; geri bildirim toplayın |
 | **Geçmişe dönük** | 45–60 dk | Her sprint | Süreç iyileştirme |
 | **1:1** | 30 dakika | Haftalık/iki haftada bir | Bireysel destek ve büyüme |
 | **Tüm eller** | 30–60 dk | Aylık | Şirket/ekip güncellemeleri; Soru-Cevap |
-**Toplantı kuralları**: Her toplantının bir gündeme ihtiyacı vardır. Zamanında başlayın. Zamanında bitirin. Eylem öğelerini sahiplerle atayın. Bu bir e-posta olabilirse, bunu bir e-posta haline getirin.
+**Toplantı kuralları**: Her toplantının bir gündeme ihtiyacı vardır. Zamanında başlayın. Zamanında bitirin. Eylem öğelerini sahiplerle atayın. Bir e-posta olabilirse, bunu bir e-posta haline getirin.
 ---
 
 ## Organizasyon Yapıları
@@ -268,4 +268,4 @@ OKR'ler Google, Intel, Spotify ve diğerleri tarafından kullanılan bir hedef b
 ---
 
 ## Özet
-Yönetim, unvanlar veya organizasyon şemalarıyla ilgili değildir; diğer insanlar aracılığıyla doğru şeylerin yapılmasını sağlamakla ilgilidir. En iyi yöneticiler net düşünmeyi (çerçeveler, metodolojiler, ölçümler) duygusal zekayla (dinleme, empati, güven) birleştirir. Hiçbir metodoloji iyi muhakemenin yerini alamaz, ancak iyi muhakeme, iyi çerçevelerle geliştirilir. Bunları din olarak değil araç olarak kullanın.
+Yönetim, başkaları aracılığıyla hedeflere ulaşma uygulamasıdır. Etkili yöneticiler net düşünmeyi (çerçeveler, metodolojiler, ölçümler) kişilerarası becerilerle (dinleme, empati, güven) birleştirir. Hiçbir metodoloji iyi muhakemenin yerini alamaz, ancak iyi muhakeme sağlam çerçevelerle güçlendirilir. Bunlar katı doktrinler yerine pratik kılavuzlar olarak uygulanmalıdır.

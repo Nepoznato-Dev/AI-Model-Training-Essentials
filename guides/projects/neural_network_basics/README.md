@@ -31,7 +31,7 @@ Before running this project, you should be comfortable with:
 - Very basic understanding of what a neural network is (optional but helpful)
 
 If you're new to these concepts, check out:
-- [Python Basics](../User%20Questions/prerequisites/python_basics.md)
+- [Python Basics](../../User%20Questions/prerequisites/python_basics.md)
 - [Mathematics for ML](../../prerequisites/mathematics_for_ml.md)
 
 ## Quick Start

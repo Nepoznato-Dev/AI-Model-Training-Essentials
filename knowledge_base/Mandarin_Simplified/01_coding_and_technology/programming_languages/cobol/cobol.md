@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 科博尔
 COBOL（通用面向业务的语言）是仍在使用的最古老的编程语言之一，首次开发于 1959 年。它专为业务数据处理而设计，包括金融系统、薪资、银行、保险和政府应用程序。 COBOL 类似英语的语法旨在供业务经理阅读，而不仅仅是程序员。
 尽管历史悠久，COBOL 仍处理全球约 30% 的业务交易。主要银行、政府机构（包括美国社会保障管理局）和保险公司仍然依赖 COBOL 大型机系统。 1999 年的 Y2K bug 恐慌使 COBOL 重新进入公众视野，并且该语言继续在全球范围内运行关键基础设施。
@@ -47,7 +48,7 @@ COBOL（通用面向业务的语言）是仍在使用的最古老的编程语言
 - **关键业务基础设施**：银行和政府每天处理数万亿美元的交易。
 - **稳定性**：20 世纪 70 年代编写的 COBOL 程序至今仍能可靠运行 — 只需进行最少的更改。
 - **可读性**：类似英语的语法使非程序员可以理解业务逻辑。
-- **十进制算术**：本机支持精确的财务计算（无浮点舍入错误）。
+- **十进制算术**：对精确财务计算的本机支持（无浮点舍入错误）。
 - **批处理**：专为高效处理大量记录而设计。
 - **就业市场**：COBOL 开发人员的严重短缺导致对维护角色的高需求（和高薪）。
 ## 权衡
@@ -127,11 +128,11 @@ COBOL（通用面向业务的语言）是仍在使用的最古老的编程语言
 COBOL的数据划分是该语言最鲜明的特点。它使用分层编号系统（级别 01-88）来定义数据结构。
 |水平|目的|示例|
 |--------|---------|---------|
-| **01** |记录级项（顶级变量或记录） |  __受保护_0__ |
-| **02–49** |群组或基本项目（子字段） |  __受保护_1__ |
-| **66** |重命名子句（数据的替代视图）|  __受保护_2__ |
-| **77** |独立基本项目（无子项目）|  __受保护_3__ |
-| **88** |条件名称（类似布尔值的标志）|  __受保护_4__ |
+| **01** |记录级项（顶级变量或记录）| `01 WS-EMPLOYEE.`|
+| **02–49** |群组或基本项目（子字段） | `05 EMP-NAME PIC X(30).`|
+| **66** |重命名子句（数据的替代视图）| `66 EMP-FULL-NAME RENAMES EMP-FIRST.`|
+| **77** |独立基本项目（无子项目）| `77 WS-COUNTER PIC 9(5).`|
+| **88** |条件名称（类似布尔值的标志）| `88 WS-IS-SENIOR VALUE 'Y'.`|
 ```cobol
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -166,7 +167,7 @@ COBOL的数据划分是该语言最鲜明的特点。它使用分层编号系统
 ```
 
 ### COPY 声明（Copybooks）
-Copybook 是 COBOL 的代码重用机制，类似于 C 中的 `#include`。它们作为单独的成员存储并在编译时插入。
+Copybook 是 COBOL 的代码重用机制 - 类似于 C 中的 `#include`。它们作为单独的成员存储并在编译时插入。
 ```cobol
        * In the main program — copy in common data definitions
        IDENTIFICATION DIVISION.
@@ -447,14 +448,14 @@ run: $(TARGET)
 ### 编译器选项参考
 |选项 |描述 |示例|
 |--------|-------------|---------|
-|  __受保护_0__ |自由格式源（无列限制）|  __受保护_1__ |
-|  __受保护_2__ |固定格式（传统列 1-80） |  __受保护_3__ |
-|  __受保护_4__ |优化级别 2 |  __受保护_5__ |
-|  __受保护_6__ |生成调试信息 |  __受保护_7__ |
-|  __受保护_8__ |使用COBOL 2014标准|  __受保护_9__ |
-|  __受保护_10__ |构建可执行文件（不仅仅是编译）|  __受保护_11__ |
-|  __受保护_12__ |字帖搜索路径|  __受保护_13__ |
-|  __受保护_14__ |启用所有警告 |  __受保护_15__ |
+| `-free`|自由格式源（无列限制）| `cobc -free prog.cbl`|
+| `-fixed`|固定格式（传统列 1-80）| `cobc -fixed prog.cbl`|
+| `-O2`|优化级别 2 | `cobc -O2 prog.cbl`|
+| `-g`|生成调试信息 | `cobc -g prog.cbl`|
+| `-std=cobol2014`|使用COBOL 2014标准| `cobc -std=cobol2014 prog.cbl`|
+| `-x`|构建可执行文件（不仅仅是编译）| `cobc -x prog.cbl`|
+| `-I`|字帖搜索路径| `cobc -I ./copybooks prog.cbl`|
+| `-Wall`|启用所有警告 | `cobc -Wall prog.cbl`|
 ---
 
 ## 测试和调试
@@ -511,7 +512,7 @@ gdb ./payroll
 |问题 |症状|解决方案 |
 |---------|---------|----------|
 |截断的数据 |田野被切断|检查 PIC 子句大小是否与记录布局匹配 |
-|数字溢出 |错误的计算|验证 PIC 9(n) 有足够的数字 |
+|数字溢出 |错误的计算 |验证 PIC 9(n) 有足够的数字 |
 |文件状态错误 | WS-文件状态不是“00”|检查文件 DD 名称、路径和权限 |
 |无限循环|执行直到永远不会终止 |验证循环变量在循环内被修改 |
 |呼叫失败 |返回非零 |检查 LINKAGE SECTION 是否与调用程序匹配 |
@@ -817,16 +818,140 @@ scp bin/payroll server:/opt/cobol/bin/
 ---
 
 ## 何时使用 COBOL
-|场景 |为什么选择 COBOL |更好的选择|
+|场景|为什么选择 COBOL |更好的选择|
 |----------|----------|--------------------|
 |主机维修|现有代码库 | — |
 |批量财务处理|经过验证、可靠、精确的十进制数学 |用于新系统的 Java、Python |
 |政府遗留系统|现有代码库 | — |
-|学习计算历史|了解编程的演变 | — |
+|学习计算历史 |了解编程的演变 | — |
 |新业务应用|不是现代的选择 | Java、C#、Python |
 |网络/移动开发 |不适合| JavaScript、Swift、Kotlin |
 |数据科学/机器学习 |不适合| Python、R |
 ---
 
+## 综合问答
+### Q1：为什么 COBOL 60 多年后仍在银行业使用？
+**答：** COBOL 处理估计 70-80% 的银行交易。原因：
+- 可以正常工作的大量代码库（数百万行）
+- 极高的可靠性——这些系统已经在生产中经过了数十年的测试
+- 迁移的成本和风险超过了维护成本
+- COBOL 的冗长、类似英语的语法是自记录的
+- 语言中内置的十进制算术（无浮点舍入错误）
+### Q2：COBOL 如何处理十进制算术而不出现浮点错误？
+**A:** COBOL 具有固定精度的本机十进制类型：
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V` 是隐含的小数点。 COBOL 从不使用二进制浮点来表示货币。
+### Q3：COBOL 程序的结构是怎样的？
+**答：** 每个 COBOL 程序都有四个部分：
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4：如何在 COBOL 中读取和处理顺序文件？
+**A:** COBOL 擅长文件处理：
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Q5：有哪些工具可用于现代 COBOL 开发？
+**答：** GnuCOBOL（开源）、IBM Enterprise COBOL、Micro Focus 和 VS Code 扩展提供了现代开发环境。使用`cobc -x program.cob`构建。
+---
+
+## 解决问题的思路
+### 问题 1：生成客户报告
+**第 1 步：了解问题**
+读取客户记录、计算总数并生成格式化报告。
+**第 2 步：确定方法**
+使用 COBOL 的文件处理和报告编写功能。
+**步骤 3：实施**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**第 4 步：验证**
+根据源数据交叉检查总计。使用边缘情况进行测试（空文件、零余额）。
+### 问题 2：带有控制中断的批处理
+**第 1 步：了解问题**
+按部门分组处理事务，打印小计。
+**第 2 步：确定方法**
+使用控制中断逻辑 - 检测组键何时更改。
+**步骤 3：实施**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**第 4 步：验证**
+检查是否打印了最后一组的总计。验证总计等于部门总计的总和。
+---
+
 ＃＃ 概括
-COBOL 是计算早期的遗物，它拒绝消亡——因为它承受不起消亡的代价。世界银行和政府系统依赖于可靠运行了数十年的 COBOL 程序。尽管如今没有人会选择 COBOL 来进行新项目，但该语言对于维护支撑全球金融的基础设施仍然至关重要。 COBOL 开发人员的短缺使其成为一个利润惊人的利基市场。
+COBOL 是计算机领域早期几十年的遗产，但由于大规模替代并不可行，因此仍在积极使用。世界银行和政府系统依赖于可靠运行了数十年的 COBOL 程序。虽然如今的新项目通常不会选择 COBOL，但该语言对于维护支持全球金融的基础设施仍然很重要。 COBOL 开发人员的短缺使其成为一个利润丰厚的利基市场。

@@ -84,7 +84,7 @@ Overviews.
 
 ### Phi-3-mini
 Phi-3-mini is a small language model (SLM) developed by Microsoft with 3.8B
-parameters. It was released in April 2026. Unlike most large models, Phi-3-mini
+parameters. It was released in April 2024. Unlike most large models, Phi-3-mini
 was trained on a carefully curated "textbook-quality" dataset — a technique
 pioneered by Microsoft Research — that prioritises data quality over raw volume.
 Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
@@ -96,17 +96,17 @@ or even on-device on a modern smartphone with sufficient RAM.
 ### Llama (Meta AI)
 Llama (Large Language Model Meta AI) is an open-weights family of models
 released by Meta. Llama 2 (2023) was released for research and commercial use
-with sizes ranging from 7B to 70B parameters. Llama 3 (2026) improved
+with sizes ranging from 7B to 70B parameters. Llama 3 (2024) improved
 performance significantly, with models ranging from 8B to 70B (and later 400B+).
 Because the weights are publicly downloadable, Llama models are the foundation
-for a large ecosystem of fine-tuned variants (Mistral, Alpaca, Vicuna, etc.)
+for a large ecosystem of fine-tuned variants (Alpaca, Vicuna, etc.)
 and are widely used for local/private AI deployments.
 
 ### Mistral
 Mistral AI is a French AI company that develops open and proprietary LLMs.
 Mistral 7B (2023) demonstrated that a 7B-parameter model can match the
 performance of much larger models using efficient techniques such as sliding
-window attention and grouped-query attention. Mixtral 8x7B (2026) is a mixture-
+window attention and grouped-query attention. Mixtral 8x7B (2023) is a mixture-
 of-experts model — it routes each token to a subset of 8 expert networks,
 achieving GPT-3.5-level performance while being computationally cheaper.
 Mistral's models are fully open-weight and can be run locally.
@@ -161,7 +161,7 @@ MMLU is a benchmark testing LLM knowledge across 57 academic subjects including
 mathematics, history, law, medicine, and computer science. It consists of
 multiple-choice questions drawn from real university-level exams. A score of
 70% is roughly human undergraduate level; GPT-4 and Claude 3 score above 86%.
-Phi-3-mini scores around 70% despite its small size.
+Phi-3-mini scores around 69% despite its small size.
 
 ### HumanEval
 HumanEval is OpenAI's benchmark for code generation. It consists of 164 Python

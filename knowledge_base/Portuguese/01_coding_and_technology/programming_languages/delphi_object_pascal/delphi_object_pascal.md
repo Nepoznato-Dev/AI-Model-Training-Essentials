@@ -130,7 +130,7 @@ end.
 
 ## Sintaxe e padrões avançados
 ### Genéricos e Coleções
-Delphi oferece suporte a genéricos (desde Delphi 2009), permitindo classes de contêiner com segurança de tipo.
+Delphi suporta genéricos (desde Delphi 2009), permitindo classes de contêiner com segurança de tipo.
 ```pascal
 unit GenericsDemo;
 
@@ -1088,5 +1088,83 @@ Delphi Deployment Targets:
 | Aplicativos móveis | Possível via FMX, mas limitado | Rápido, Kotlin, Flutter |
 ---
 
+## Perguntas e respostas sintéticas
+### Q1: Como funciona a estrutura VCL do Delphi?
+**R:** A VCL agrupa os controles da API do Windows em uma hierarquia orientada a objetos. Formulários, botões e grades são classes:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: Como faço para criar componentes no Delphi?
+**R:** Herdar de TComponent ou TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3: Qual é a diferença entre Delphi e Free Pascal?
+**R:** Delphi é um IDE/compilador comercial da Embarcadero. Free Pascal é o compilador de código aberto e Lazarus é o IDE gratuito. Ambos usam sintaxe Object Pascal.
+### Q4: Como trabalho com bancos de dados em Delphi?
+**R:** Use componentes FireDAC ou dbExpress:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5: O Delphi ainda é relevante hoje?
+**R:** Para manter aplicativos herdados do Windows, sim. Para novos projetos, a maioria dos desenvolvedores prefere C# ou tecnologias web. Free Pascal/Lazarus oferece uma alternativa gratuita de plataforma cruzada.
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Construindo um formulário com reconhecimento de dados
+**Etapa 1: Entenda o problema**
+Crie um formulário que exiba e edite registros do banco de dados.
+**Etapa 2: Identifique a abordagem**
+Use componentes com reconhecimento de dados vinculados a um conjunto de dados.
+**Etapa 3: Implementar**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Etapa 4: Estender**
+Adicione validação, tratamento de erros e funcionalidade de pesquisa/filtro.
+---
+
 ## Resumo
-Delphi é uma linguagem historicamente importante que foi pioneira no desenvolvimento rápido de aplicativos para Windows. O Delphi moderno continua capaz de aplicativos nativos do Windows e front-ends de banco de dados, mas sua comunidade e ecossistema diminuíram consideravelmente. Para manter as bases de código Delphi existentes, continua sendo essencial. Para novos projetos, a maioria dos desenvolvedores migrou para C#, tecnologias web ou estruturas de plataforma cruzada. O projeto de código aberto Free Pascal/Lazarus oferece uma alternativa gratuita para aqueles interessados ​​na linguagem Object Pascal.
+Delphi é uma linguagem historicamente importante que foi pioneira no desenvolvimento rápido de aplicativos para Windows. O Delphi moderno continua capaz de aplicativos nativos do Windows e front-ends de banco de dados, mas sua comunidade e seu ecossistema diminuíram consideravelmente. Para manter as bases de código Delphi existentes, continua sendo essencial. Para novos projetos, a maioria dos desenvolvedores migrou para C#, tecnologias web ou estruturas de plataforma cruzada. O projeto de código aberto Free Pascal/Lazarus oferece uma alternativa gratuita para aqueles interessados ​​na linguagem Object Pascal.

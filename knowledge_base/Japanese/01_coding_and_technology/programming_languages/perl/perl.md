@@ -50,7 +50,7 @@ Perl の人気は 2000 年代初頭のピークに比べて低下しています
 - **CPAN**: 200,000 を超えるモジュール - 最大かつ最も古いパッケージ リポジトリの 1 つ。
 - **ワンライナー**: Perl は、コマンドラインのテキスト変換を迅速に行うことに優れています。
 - **Glue 言語**: システムの接続、ログの解析、データ ファイルの処理、タスクの自動化を行います。
-- **運用環境で実証済み**: PHP が存在する前から Web に力を与えてきました。重要なインフラストラクチャは引き続き稼働しています。
+- **運用環境で実証済み**: PHP が存在する前から Web に力を与えてきました。重要なインフラストラクチャは依然として稼働しています。
 - **Raku (Perl 6)**: 文法、ジャンクション、および複数のディスパッチを備えた最新の再設計。
 ## トレードオフ
 |制限 |詳細 |一般的な回避策 |
@@ -586,5 +586,164 @@ CMD ["perl", "bin/myapp.pl"]
 |データ サイエンス / ML |エコシステムではありません |パイソン、R |
 ---
 
+## 総合的な Q&A
+### Q1:`my`、`our`、および`local`の違いは何ですか?
+**A:** これらのキーワードは変数のスコープを制御します。
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2: Perl でテキスト ファイルを効率的に処理するにはどうすればよいですか?
+**A:** Perl はテキスト処理に優れています。ダイヤモンド演算子と正規表現を使用します。
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3: 参照と複雑なデータ構造を使用するにはどうすればよいですか?
+**A:** 参照は、Perl が入れ子構造を作成する方法です。
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4: 知っておくべき Perl の特殊変数は何ですか?
+**A:** Perl には多くの特殊変数があります。最も重要なこと:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5: 最新の保守可能な Perl を作成するにはどうすればよいですか?
+**A:** 最新の Perl のベスト プラクティス:
+- 常に`strict`および`warnings`を使用してください 
+- すべての変数に`my`を使用します
+- 字句ファイルハンドルを使用します:`open my $fh, '<', $file`
+- CPAN のモジュールを使用します (OOP には Moo/Moose、エラーには Try::Tiny)
+-`print`の代わりに`say`を使用します (`feature 'say'`を使用)
+- `perltidy`でフォーマットする
+---
+
+## 思考連鎖による問題解決
+### 問題 1: ログ ファイルの分析
+**ステップ 1: 問題を理解する**
+Apache アクセス ログを解析し、IP アドレスごとにリクエストをカウントします。
+**ステップ 2: アプローチを特定する**
+正規表現を使用して IP アドレスを抽出し、ハッシュを使用して出現回数をカウントします。
+**ステップ 3: 実装**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**ステップ 4: 延長**
+日付フィルタリング、ステータスコード解析を追加し、CSVとして出力します。
+### 問題 2: Regex を使用したバッチ ファイルの名前変更
+**ステップ 1: 問題を理解する**
+正規表現を使用してファイル名を変換し、パターンに一致するファイルの名前を変更します。
+**ステップ 2: アプローチを特定する**
+ファイルを検索するには`glob`または`opendir`を使用し、名前を変換するには正規表現を使用します。
+**ステップ 3: 実装**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**ステップ 4: 確認**
+最初に`--dry-run`フラグを指定して実行します (印刷するだけで、移動しないでください)。
+### 問題 3: 単純な Web スクレイパーの構築
+**ステップ 1: 問題を理解する**
+Web ページを取得し、すべてのリンクを抽出します。
+**ステップ 2: アプローチを特定する**
+取得と正規表現には`LWP::Simple`を使用し、解析には`HTML::LinkExtor`を使用します。
+**ステップ 3: 実装**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**ステップ 4: 延長**
+相対 URL を処理し、ドメインでフィルターし、ページネーションに従います。
+---
+
 ＃＃ まとめ
-Perl の黄金時代は過ぎましたが、その影響はどこにでもあります。正規表現を使用するすべての言語、CPAN をモデルとしたすべてのパッケージ マネージャー、および`map`/`grep`/`reduce`を使用するすべてのシステムには Perl の DNA が受け継がれています。新しいプロジェクトの場合、ほとんどの開発者は Python または Go に手を伸ばします。しかし、Perl は依然として、テキスト処理、迅速な自動化、および世界中の重要なインフラストラクチャを実行する膨大な量の Perl コードの保守のための強力なツールです。 Perl を理解することは、現代のプログラミングがどこから来たのかを理解することも意味します。Perl は、今日私たちが使用するツールやパターンを形作ったのです。
+Perl の黄金時代は過ぎましたが、その影響はどこにでもあります。正規表現を使用するすべての言語、CPAN をモデルとしたすべてのパッケージ マネージャー、および`map`/`grep`/`reduce`を使用するすべてのシステムには Perl の DNA が受け継がれています。新しいプロジェクトの場合、ほとんどの開発者は Python または Go に手を伸ばします。しかし、Perl は依然として、テキスト処理、迅速な自動化、および世界中の重要なインフラストラクチャを実行する膨大な量の Perl コードの保守のための強力なツールです。 Perl を理解するということは、現代のプログラミングがどこから来たのかを理解することも意味します。Perl は、今日私たちが使用するツールやパターンを形作ったのです。

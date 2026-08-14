@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Podstawy cyberbezpieczeństwa
-Bezpieczeństwo nie jest cechą, o której decydujesz się na samym końcu — to dyscyplina, która musi być wpleciona w każdą warstwę systemu od pierwszego dnia. Niezależnie od tego, czy tworzysz aplikację internetową, zarządzasz infrastrukturą, czy dostarczasz interfejs API, zrozumienie krajobrazu zagrożeń i podstaw obrony jest niezbędne.
+Bezpieczeństwo to dziedzina, którą należy zintegrować z każdą warstwą systemu od samego początku, a nie dodawać ją po namyśle. Niezależnie od tego, czy tworzysz aplikację internetową, zarządzasz infrastrukturą, czy udostępniasz interfejs API, zrozumienie krajobrazu zagrożeń i podstaw obrony jest niezbędne.
 ---
 
 ## Szyfrowanie i kryptografia
@@ -137,7 +137,7 @@ OWASP Top 10 to standardowy dokument uświadamiający w zakresie bezpieczeństwa
 | **Grupy bezpieczeństwa w chmurze** | Wirtualne zapory ogniowe dla instancji chmurowych (AWS SG, Azure NSG) |
 **Ogólna zasada**: domyślnie blokuj cały ruch przychodzący; otwieraj tylko to, co jest wyraźnie potrzebne (80, 443 dla sieci).
 ### Segmentacja sieci
-Umieść bazy danych i pamięci podręczne w prywatnych podsieciach bez bezpośredniego dostępu do Internetu. Użyj strefy DMZ dla usług publicznych (serwery internetowe, moduły równoważenia obciążenia). Zastosuj zasadę najmniejszych uprawnień do dostępu do sieci.
+Umieść bazy danych i pamięci podręczne w prywatnych podsieciach bez bezpośredniego dostępu do Internetu. Użyj strefy DMZ dla usług publicznych (serwery internetowe, moduły równoważenia obciążenia). Zastosuj zasadę najmniejszych uprawnień w dostępie do sieci.
 ---
 
 ## Zarządzanie tajemnicami
@@ -196,4 +196,4 @@ Kiedy podejrzewasz naruszenie:
 5. **Obróć** wszystkie skompromitowane dane uwierzytelniające i sekrety.
 6. **Załataj** lukę.
 7. **Powiadom** zainteresowanych użytkowników i organy regulacyjne, jeśli jest to wymagane (w terminach prawnych).
-8. **Sekcja zwłok**: udokumentuj pierwotną przyczynę i działania w ciągu 24–48 godzin.
+8. **Sekcja zwłok**: udokumentowanie pierwotnej przyczyny i działań w ciągu 24–48 godzin.

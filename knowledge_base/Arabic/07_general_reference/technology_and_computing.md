@@ -1,42 +1,46 @@
 ---
-# البيانات الوصفية
-العنوان: "التكنولوجيا والحوسبة"
-الوصف: "أساسيات الحوسبة، الإنترنت، قواعد البيانات، السحابة، الأمن"
-الفئة: "مرجع عام"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-review_by: "فريق قاعدة المعرفة المرجعية العامة"
+# Metadata
+title: "Technology and Computing"
+description: "Computing basics, internet, databases, cloud, security"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [التكنولوجيا، الحوسبة، مرجع عام]
-مستوى الصعوبة: "مبتدئ"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "8 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [technology, computing, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "8 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # التكنولوجيا والحوسبة
 الحوسبة موجودة في كل مكان — في هاتفك، وسيارتك، وثلاجتك، وأجهزتك الطبية، والبنية التحتية التي تدير المجتمع الحديث. لا تحتاج إلى أن تكون مبرمجًا لتستفيد من فهم كيفية عمل كل شيء. يغطي هذا الملف الأساسيات: ما هو الكمبيوتر، وكيف يعمل الإنترنت، وكيف يتم إنشاء البرامج، والمفاهيم التي تشكل العالم الرقمي.
-> **هل تريد التعمق أكثر؟** هذا الملف عبارة عن نظرة عامة شاملة. للحصول على تغطية تفصيلية لأي موضوع، راجع الملفات المخصصة في[`01_coding_and_technology/`](../01_coding_and_technology/)- بما في ذلك[web development](../01_coding_and_technology/web_development.md)و[database systems](../01_coding_and_technology/database_systems.md)و[cloud architecture](../01_coding_and_technology/cloud_architecture.md)و[networking](../01_coding_and_technology/networking_basics.md)و[security](../01_coding_and_technology/security_best_practices.md).
+> **هل تريد التعمق أكثر؟** هذا الملف عبارة عن نظرة عامة شاملة. للحصول على تغطية تفصيلية لأي موضوع، راجع الملفات المخصصة في[`01_coding_and_technology/`](../01_coding_and_technology/)- بما في ذلكو[database systems](../01_coding_and_technology/database_systems.md)و[cloud architecture](../01_coding_and_technology/cloud_architecture.md)و[networking](../01_coding_and_technology/networking_basics.md)و.
 ---
 
 ## ما هو الكمبيوتر؟
@@ -146,7 +150,7 @@ next_review: "2027-08-05"
 ---
 
 ## الأمن السيبراني — حماية الأنظمة الرقمية
-الأمن السيبراني هو ممارسة الدفاع عن أجهزة الكمبيوتر والشبكات والبيانات من الهجمات. إنه أمر مهم لأن كل شيء مترابط، وتكلفة الانتهاكات هائلة. للحصول على دليل كامل يغطي أفضل 10 برامج OWASP، ودورة حياة التطوير الآمن، وإدارة الأسرار، راجع[security best practices](../01_coding_and_technology/security_best_practices.md).
+الأمن السيبراني هو ممارسة الدفاع عن أجهزة الكمبيوتر والشبكات والبيانات من الهجمات. إنه أمر مهم لأن كل شيء مترابط، وتكلفة الانتهاكات هائلة. للحصول على دليل كامل يغطي أفضل 10 برامج OWASP، ودورة حياة التطوير الآمن، وإدارة الأسرار، راجع.
 ### التهديدات الشائعة
 | التهديد | ما هو | الوقاية |
 |--------|----------|------------|

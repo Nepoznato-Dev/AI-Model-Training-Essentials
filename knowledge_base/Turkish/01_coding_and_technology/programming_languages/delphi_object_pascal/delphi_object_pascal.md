@@ -1088,5 +1088,83 @@ Delphi Deployment Targets:
 | Mobil uygulamalar | FMX ile mümkündür ancak sınırlıdır | Swift, Kotlin, Flutter |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Delphi'nin VCL çerçevesi nasıl çalışır?
+**C:** VCL, Windows API denetimlerini nesne yönelimli bir hiyerarşide sarar. Formlar, düğmeler ve ızgaraların tümü sınıflardır:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### S2: Delphi'de nasıl bileşenler oluşturabilirim?
+**A:** TComponent veya TControl'den devralın:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### S3: Delphi ile Free Pascal arasındaki fark nedir?
+**C:** Delphi, Embarcadero'nun ticari bir IDE/derleyicisidir. Free Pascal açık kaynaklı derleyicidir ve Lazarus ücretsiz IDE'dir. Her ikisi de Object Pascal sözdizimini kullanır.
+### S4: Delphi'deki veritabanlarıyla nasıl çalışırım?
+**C:** FireDAC veya dbExpress bileşenlerini kullanın:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### S5: Delphi bugün hala geçerli mi?
+**C:** Eski Windows uygulamalarının bakımı için evet. Yeni projeler için çoğu geliştirici C# veya web teknolojilerini tercih ediyor. Free Pascal/Lazarus, platformlar arası ücretsiz bir alternatif sunar.
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Veriye Duyarlı Bir Form Oluşturma
+**1. Adım: Sorunu Anlayın**
+Veritabanı kayıtlarını görüntüleyen ve düzenleyen bir form oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Bir veri kümesine bağlı veriye duyarlı bileşenleri kullanın.
+**3. Adım: Uygulama**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**4. Adım: Genişletin**
+Doğrulama, hata işleme ve arama/filtreleme işlevleri ekleyin.
+---
+
 ## Özet
-Delphi, Windows için hızlı uygulama geliştirmeye öncülük eden, tarihsel olarak önemli bir dildir. Modern Delphi, yerel Windows uygulamaları ve veritabanı ön uçlarına yönelik yeterliliğini koruyor ancak topluluğu ve ekosistemi önemli ölçüde küçüldü. Mevcut Delphi kod tabanlarını korumak için hala vazgeçilmezdir. Yeni projeler için çoğu geliştirici C#'a, web teknolojilerine veya platformlar arası çerçevelere geçiş yaptı. Açık kaynaklı Free Pascal/Lazarus projesi Object Pascal diline ilgi duyanlar için ücretsiz bir alternatif sunuyor.
+Delphi, Windows için hızlı uygulama geliştirmeye öncülük eden, tarihsel olarak önemli bir dildir. Modern Delphi, yerel Windows uygulamaları ve veritabanı ön uçlarına yönelik yeterliliğini koruyor ancak topluluğu ve ekosistemi önemli ölçüde küçüldü. Mevcut Delphi kod tabanlarını korumak için hala vazgeçilmezdir. Yeni projeler için çoğu geliştirici C#'a, web teknolojilerine veya platformlar arası çerçevelere geçiş yaptı. Açık kaynak kodlu Free Pascal/Lazarus projesi Object Pascal diline ilgi duyanlar için ücretsiz bir alternatif sunuyor.

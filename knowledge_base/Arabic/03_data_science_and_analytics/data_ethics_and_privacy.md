@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "أخلاقيات البيانات والخصوصية"
-الوصف: "اللائحة العامة لحماية البيانات، الموافقة على البيانات، التحيز الخوارزمي، الأنماط المظلمة، إخفاء الهوية"
-الفئة: "علم البيانات والتحليلات"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-review_by: "فريق قاعدة معارف علوم البيانات والتحليلات"
+# Metadata
+title: "Data Ethics and Privacy"
+description: "GDPR, data consent, algorithmic bias, dark patterns, anonymisation"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [البيانات والأخلاق والخصوصية وعلوم البيانات والتحليلات]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "6 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [data, ethics, privacy, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # أخلاقيات البيانات والخصوصية
 أخلاقيات البيانات هي دراسة كيفية تأثير جمع البيانات وتحليلها ونشرها على حقوق الأشخاص واستقلاليتهم ورفاهيتهم. الخصوصية هي الاهتمام المحدد بشأن من يتحكم في المعلومات الشخصية وكيفية مشاركتها. لقد انتقلت هذه المواضيع من المناقشات الأكاديمية إلى الأخبار التي تتصدر الصفحات الأولى - تطبيق اللائحة العامة لحماية البيانات، وخروقات البيانات التي تؤثر على مليارات المستخدمين، وزيادة الوعي العام بأن ممارسات البيانات التي تتبعها شركات التكنولوجيا لها عواقب حقيقية على الديمقراطية والمساواة والحرية الفردية.
 ---

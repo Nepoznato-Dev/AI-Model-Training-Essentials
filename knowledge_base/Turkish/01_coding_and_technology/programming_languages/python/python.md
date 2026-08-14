@@ -46,11 +46,11 @@ Günümüzde Python, AI/ML, veri bilimi, bilimsel hesaplama ve otomasyon alanlar
 
 ## Python Neden Önemlidir
 - **Tasarım gereği okunabilirlik**: Noktalı virgül veya kaşlı ayraç yok — girintiler kapsamı tanımlar. Kod sözde kod gibi okunur.
-- **Devasa ekosistem**: PyPI, hemen hemen her alanı kapsayan 500.000'den fazla pakete ev sahipliği yapar.
+- **Devasa ekosistem**: PyPI, neredeyse her alanı kapsayan 500.000'den fazla pakete ev sahipliği yapar.
 - **Yapay zekanın dili**: PyTorch, TensorFlow, scikit-learn, Hugging Face, LangChain — tüm AI/ML yığını Python önceliklidir.
 - **Tutkal dili**: Bir C++ motorunu bir web API'sine ve bir veritabanına yalnızca birkaç satırla bağlayın.
 - **Platformlar arası**: Windows, macOS, Linux ve yerleşik sistemlerde değişiklik yapılmadan çalışır.
-- **Topluluk**: Dünyanın en büyük ve en aktif programlama topluluğu.
+- **Topluluk**: Dünyadaki en büyük ve en aktif programlama topluluğu.
 ## Takaslar
 Python mükemmel değil. Sınırlarını anlamak, başka bir şeye ne zaman ulaşacağınıza karar vermenize yardımcı olur:
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
@@ -1272,7 +1272,7 @@ fly deploy
 ---
 
 ## Ekosistem
-Python'un gücü yalnızca dilinden değil, onun etrafında inşa edilen ekosistemden kaynaklanmaktadır.
+Python'un gücü sadece dilinden değil, onun etrafında inşa edilen ekosistemden kaynaklanmaktadır.
 ### Yapay Zeka ve Makine Öğrenimi
 | Kütüphane | Amaç |
 |-----------|-----------|
@@ -1330,10 +1330,10 @@ Dil gelişmeye devam ediyor. Önemli son eklemeler:
 |-----------|----------|------|
 | 3.10 | 2021 | Yapısal model eşleştirme (`match/case`), daha iyi hata mesajları |
 | 3.11 | 2022 | %10–60 daha hızlı yürütme, geliştirilmiş geri izleme |
-| 3.12 | 2023 | Daha esnek f-string'ler,`type`bildirimi, performans kazanımları |
+| 3.12 | 2023 | Daha esnek f-dizileri,`type`bildirimi, performans kazanımları |
 | 3.13 | 2024 | Deneysel serbest iş parçacıklı mod (GIL yok), geliştirilmiş REPL |
 | 3.14 | 2025 | GIL'siz diğer iyileştirmeler, sistem geliştirmeleri |
-Python 2, 1 Ocak 2020'de kullanım ömrünün sonuna ulaştı. Tüm yeni projeler Python 3.10 veya üstünü kullanmalıdır.
+Python 2, 1 Ocak 2020'de kullanım ömrünün sonuna ulaştı. Tüm yeni projelerde Python 3.10 veya üzeri kullanılmalıdır.
 ---
 
 ## Hızlı Başvuru: Yaygın Deyimler
@@ -1378,6 +1378,289 @@ def slow_function():
     import time; time.sleep(1)
 ```
 
+---
+
+## Sentetik Soru-Cevap
+### S1: Listeler ve tanımlama grupları arasındaki fark nedir ve her birini ne zaman kullanmalıyım?
+**A:** Listeler değiştirilebilir (`[]`), demetler değiştirilemez (`()`). Öğeleri eklemeniz, kaldırmanız veya değiştirmeniz gerektiğinde listeleri kullanın. Heterojen verilerin sabit koleksiyonları, sözlük anahtarları, işlev dönüş değerleri için veya "bu değişmemelidir" sinyalini vermek istediğinizde tuple'ları kullanın. Demetler bellek açısından biraz daha verimlidir ve ayarlama/dikte tuşları olarak kullanılabilir; listeler olamaz.
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### S2: Global Tercüman Kilidi (GIL) kodumu nasıl etkiler ve bu konuda ne yapmalıyım?
+**C:** GIL, birden fazla iş parçacığının Python bayt kodunu aynı anda yürütmesini engelleyerek iş parçacığının CPU'ya bağlı işler için etkisiz olmasını sağlar. G/Ç'ye bağlı görevler (ağ istekleri, dosya G/Ç) için,`threading`veya`asyncio`iyi çalışır çünkü GIL, G/Ç sırasında serbest bırakılır. CPU'ya bağlı görevler için`multiprocessing`(her biri kendi GIL'sine sahip ayrı işlemler) kullanın veya GIL'yi dahili olarak serbest bırakan C uzantılarına (NumPy, Cython, Numba) boşaltın.
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### S3: Yazım ipuçlarını her yerde kullanmalı mıyım? Pratik takaslar nelerdir?
+**A:** Tür ipuçları (`def greet(name: str) -> str:`) isteğe bağlıdır ve çalışma zamanında zorunlu kılınmaz. IDE otomatik tamamlamayı geliştirir, statik analiz araçları (mypy) aracılığıyla hataları yakalar ve amacı belgelendirirler. Takas, ekstra ayrıntı ve gelişmiş türler için bir öğrenme eğrisidir (`Union`,`Generic`,`Protocol`). Öneri: ~500 satırın üzerindeki herhangi bir projede işlev imzaları için tür ipuçlarını kullanın; kısa metinlerde bunları dikkatli kullanın. Kademeli uygulama için CI'da mypy'yi etkinleştirin.
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### S4: Python'da istisnaları ele almak için en iyi uygulamalar nelerdir?
+**C:** Çıplak`except:`yerine belirli istisnaları yakalayın (bu,`SystemExit`ve `KeyboardInterrupt`'yi de yakalar). Mutlu yol mantığını hata işlemeden ayırmak için`try/except/else/finally`kullanın. Kitaplıklar için özel istisna hiyerarşilerini tanımlayın. Performansa duyarlı kodda asla kontrol akışı için istisnalar kullanmayın; bunlar yavaştır. Geri izlemenin tamamını yakalamak için`logging.exception()`ile istisnayı günlüğe kaydedin.
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### S5: Oluşturucular bellekten nasıl tasarruf sağlar ve bunları listelerde ne zaman kullanmalıyım?
+**C:** Jeneratörler, hafızada bir liste oluşturmak yerine, değerleri tembel bir şekilde (isteğe bağlı olarak teker teker) üretir. Büyük veri kümeleri için (milyonlarca satır, sonsuz dizi, veri akışı), oluşturucular boyutu ne olursa olsun sabit bellek kullanır. Bir kez yinelediğinizde ve indekslemeye veya`len()`gerekmediğinde jeneratörleri kullanın. Rastgele erişime, birden fazla yinelemeye ihtiyaç duyduğunuzda veya koleksiyon küçük olduğunda listeleri kullanın.
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Sıralamaya Sahip Bir Kelime Sıklık Sayacı Oluşturun
+**Sorun Açıklaması:** Büyük bir metin dosyası verildiğinde, her kelimenin sıklığını sayın, bunları sıklığa (azalan) göre sıralayın ve en üstteki N sonucu döndürün. Büyük/küçük harf duyarlılığını ve noktalama işaretlerini ortadan kaldırın ve belleğe sığmayacak kadar büyük dosyaları verimli bir şekilde işleyin.
+**1. Adım — Sorunu Anlayın:**
+Yapmamız gerekenler: (1) metni okumak, (2) kelimelere bölmek, (3) durumu normalleştirmek, (4) noktalama işaretlerini çıkarmak, (5) oluşumları saymak, (6) azalan sayıya göre sıralamak, (7) üst N'ye dönmek. "Belleğe sığmayacak kadar büyük" kısıtlaması, jeneratörlerle satır satır işlem yapmamız gerektiği anlamına gelir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Ara listeler oluşturmadan verimli kelime çıkarımı için`re.finditer`kullanın.
+- Kelime başına O(1) artış için`collections.Counter`kullanın.
+- Dahili olarak bir yığın kullanan`Counter.most_common(n)`kullanın — tam sıralama için O(n log n) yerine O(k log n).
+- Belleği sabit tutmak için jeneratör aracılığıyla satır satır işlem yapın.
+**3. Adım — Çözümü Uygulayın:**
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Bellek: bellekte yalnızca Counter dict bulunur (benzersiz sözcük başına bir giriş), dosya içeriği değil. İngilizce metin için ~100K benzersiz kelime ≈ birkaç MB.
+- Zaman: O(W) tüm kelimeleri taramak için + ilk N çıkarma için O(U log N), burada W = toplam kelime, U = benzersiz kelimeler.
+- Kenar durumları: kasılmalardaki kesme işaretleri ("yapma") normal ifade tarafından korunur. Unicode metin için`re.UNICODE`bayrağına veya farklı bir desene ihtiyaç vardır.
+### Sorun 2: İş parçacığı açısından güvenli bir LRU Önbelleği Uygulama
+**Sorun Açıklaması:** İş parçacığı açısından güvenli, O(1) alma ve koyma işlemlerini destekleyen ve kapasite aşıldığında en son kullanılan öğeyi otomatik olarak çıkaran bir En Son Kullanılan (LRU) önbelleği sıfırdan oluşturun.
+**1. Adım — Sorunu Anlayın:**
+Bir LRU önbelleğinin şunlara ihtiyacı vardır: (1) anahtarla hızlı arama → karma haritası, (2) yeniliğe göre hızlı sıralama → çift bağlantılı liste, (3) iş parçacığı güvenliği → kilitleme. `get(key)`'de: öğeyi öne taşı. `put(key, val)`'de: ön tarafa takın; kapasitenin üzerindeyse arkadan çıkarın.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Python'un `dict`'si ekleme sırasını (3.7+) korur, böylece sıralı bir dikte yaklaşımını kullanabiliriz: sona taşımak için silin ve yeniden yerleştirin.
+- Diş güvenliği için karşılıklı hariç tutma amacıyla`threading.Lock`kullanın.
+- Alternatif: `move_to_end()`'ye sahip `collections.OrderedDict`'yi kullanın.
+**3. Adım — Çözümü Uygulayın:**
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Zaman karmaşıklığı: Hem`get`hem de`put`için O(1) —`OrderedDict.move_to_end()`ve `popitem()`, O(1)'dir.
+- İplik güvenliği:`Lock`atomikliği sağlar. Daha yüksek verim için `threading.RLock`'yi veya okuma-yazma kilit modelini düşünün, ancak çoğu kullanım durumunda basit bir kilit yeterlidir.
+- Üretim notu: Tek iş parçacıklı kod için`functools.lru_cache`daha basittir ve daha iyi performans için C'de uygulanır.
+### Problem 3: Matematiksel Bir İfadeyi Ayrıştırma ve Değerlendirme
+**Sorun Açıklaması:**`"3 + 4 * 2 / (1 - 5)"`gibi bir dize alan ve onu operatör önceliğine ve parantezlere göre doğru şekilde değerlendiren bir ayrıştırıcı yazın.
+**1. Adım — Sorunu Anlayın:**
+Bu şunları gerektirir: (1) giriş dizesinin sayılara, operatörlere ve parantezlere ayrılması, (2) doğru öncelik ile ayrıştırma (`+`ve `-`'den önce`*`ve `/`), (3) iç içe geçmiş parantezlerin işlenmesi. Saf bir soldan sağa değerlendirme yanlış sonuçlar verir.
+**2. Adım — Yaklaşımı Belirleyin:**
+Klasik çözüm, infix'i postfix'e (Ters Cila Gösterimi) dönüştüren ve daha sonra postfix'i değerlendiren **manevra alanı algoritmasıdır** (Dijkstra). Alternatif olarak özyinelemeli iniş ayrıştırıcısını kullanın. Özellikle Python için, güvenli değerlendirme için `ast.literal_eval`'yi de kullanabiliriz - ancak bunu doğru şekilde uygulayalım.
+**3. Adım — Çözümü Uygulayın:**
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Doğruluk:`3 + 4 * 2 / (1 - 5)`→`3 + 8 / (-4)`→`3 + (-2)`→`1.0`. Doğru.
+- Zaman: Tokenizasyon için O(N), manevra alanı için O(N), değerlendirme için O(N) — genel O(N).
+- İşlenecek uç durumlar: negatif sayılar (tekli `-`'nin önüne`0`ekleyin), sıfıra bölme (hata yönetimi ekleyin), geçersiz giriş (belirteçleri doğrulayın).
+- Pythonic alternatif:`eval()`olmadan güvenli değerlendirme için özel düğüm ziyaretçisine sahip `ast.parse(expr, mode='eval')`.
+### Sorun 4: Gerçek Zamanlı Veri Güncellemelerine Sahip Bir CLI Kontrol Paneli Oluşturma
+**Sorun Açıklaması:** Renk kodlu eşikler ve duyarlı düzen ile sistem ölçümlerinin (CPU, bellek, disk) güncellenmesini gerçek zamanlı olarak görüntüleyen terminal tabanlı bir kontrol paneli oluşturun.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) periyodik sistem metrik toplama, (2) imleç kontrollü terminal oluşturma, (3) eşiklere dayalı renk çıktısı, (4) çıkış için engellenmeyen klavye girişi. Bu, oluşturma döngüsüne sahip bir üretici-tüketici modelidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Platformlar arası sistem ölçümleri için`psutil`kullanın.
+- İmleç konumlandırma ve renkler için ANSI çıkış kodlarını (veya daha yüksek düzey bir API için`rich`kitaplığını) kullanın.
+- Güncelleme aralığı için`time.sleep`kullanın.
+- Şu şekilde yapı: veri toplama → biçimlendirme → işleme hattı.
+**3. Adım — Çözümü Uygulayın:**
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+-`cpu_percent(interval=0.5)`ölçüm için 0,5 saniye süreyle bloke eder — bu doğru yaklaşımdır (engellemesiz mod ilk çağrıda %0 verir).
+- ANSI kodları modern Windows Terminalinde ve tüm Unix terminallerinde çalışır. Eski Windows cmd'si için`os.system('color')`ekleyin veya`colorama`kullanın.
+- Üretim yükseltmesi: Titreşimsiz işleme, otomatik düzen ve platformlar arası uyumluluk için`rich`kitaplığını (`rich.live`) kullanın.
+- Genişletilebilirlik: Her ölçüm bağımsız bir işlevdir ve GPU sıcaklığı, işlem sayısı veya ağ bağlantılarının eklenmesini kolaylaştırır.
 ---
 
 ## Özet

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Delphi/Đối tượng Pascal
 Delphi là ngôn ngữ lập trình hướng đối tượng dựa trên Pascal, ban đầu được phát triển bởi Borland (sau này là Embarcadero, nay là Idera). Được phát hành lần đầu tiên vào năm 1995 với tên gọi "Delphi 1", nó được thiết kế để phát triển ứng dụng nhanh chóng (RAD) cho các ứng dụng máy tính để bàn Windows. Ngôn ngữ này có tên chính thức là Object Pascal và Delphi IDE cung cấp trình thiết kế biểu mẫu trực quan, các công cụ cơ sở dữ liệu tích hợp và trình biên dịch mạnh mẽ.
 Delphi là một trong những công cụ phát triển Windows phổ biến nhất vào cuối những năm 1990 và đầu những năm 2000. Mặc dù mức độ phổ biến của nó đã giảm đáng kể nhưng nó vẫn duy trì cơ sở người dùng chuyên dụng, đặc biệt là trong các ứng dụng máy tính để bàn dành cho doanh nghiệp, giao diện người dùng cơ sở dữ liệu và bảo trì hệ thống cũ. Modern Delphi (12/11) hỗ trợ phát triển đa nền tảng cho Windows, macOS, iOS và Android thông qua khung FireMonkey (FMX).
@@ -482,7 +483,7 @@ end.
 
 ## Thiết kế kiến ​​trúc & hệ thống
 ### Kiến trúc thành phần
-VCL (Thư viện thành phần trực quan) và FMX (FireMonkey) của Delphi được xây dựng trên hệ thống phân cấp thành phần. Mọi phần tử hình ảnh đều kế thừa từ`TComponent`.
+VCL (Thư viện thành phần trực quan) và FMX (FireMonkey) của Delphi được xây dựng trên hệ thống phân cấp thành phần. Mọi yếu tố hình ảnh đều kế thừa từ`TComponent`.
 ```
 TObject
 └── TPersistent
@@ -562,18 +563,18 @@ delphi-project/
 ---
 
 ## Cấu hình dự án & xây dựng hệ thống
-### Tham chiếu chỉ thị của trình biên dịch
+### Tham khảo chỉ thị của trình biên dịch
 | Chỉ thị | Mục đích | Ví dụ |
 |----------||----------|----------|
-|  __BẢO VỆ_0__ | Ứng dụng bảng điều khiển |  __BẢO VỆ_1__ |
-|  __BẢO VỆ_2__ | Ứng dụng GUI (mặc định) |  __BẢO VỆ_3__ |
-|  __BẢO VỆ_4__ | Xác định ký hiệu có điều kiện |  __BẢO VỆ_5__ |
-|  __BẢO VỆ_6__ | Biên dịch có điều kiện |  __BẢO VỆ_7__ |
-|  __BẢO VỆ_8__ | Bao gồm tài nguyên biểu mẫu |  __BẢO VỆ_9__ |
-|  __BẢO VỆ_10__ | Ngăn chặn cảnh báo |  __BẢO VỆ_11__ |
-|  __BẢO VỆ_12__ | Ngăn chặn gợi ý |  __BẢO VỆ_13__ |
-|  __BẢO VỆ_14__ | Bật trình tối ưu hóa |  __BẢO VỆ_15__ |
-|  __BẢO VỆ_16__ | Bật kiểm tra phạm vi chuỗi |  __BẢO VỆ_17__ |
+| `{$APPTYPE CONSOLE}`| Ứng dụng bảng điều khiển | `{$APPTYPE CONSOLE}`|
+| `{$APPTYPE GUI}`| Ứng dụng GUI (mặc định) | `{$APPTYPE GUI}`|
+| `{$DEFINE DEBUG}`| Xác định ký hiệu có điều kiện | `{$DEFINE DEBUG}`|
+| `{$IFDEF symbol}`| Biên dịch có điều kiện | `{$IFDEF DEBUG}`|
+| `{$R *.dfm}`| Bao gồm tài nguyên biểu mẫu | `{$R *.dfm}`|
+| `{$WARNINGS OFF}`| Ngăn chặn cảnh báo | `{$WARNINGS OFF}`|
+| `{$HINTS OFF}`| Ngăn chặn gợi ý | `{$HINTS OFF}`|
+| `{$OPTIMIZATION ON}`| Bật trình tối ưu hóa | `{$OPTIMIZATION ON}`|
+| `{$STRINGCHECKS ON}`| Bật kiểm tra phạm vi chuỗi | `{$STRINGCHECKS ON}`|
 ### Xây dựng từ dòng lệnh
 ```batch
 REM 32-bit Windows build (DCC32)
@@ -1043,7 +1044,7 @@ end;
 | **Thực tập chuỗi** | Trung bình | Tái sử dụng các hằng chuỗi; tránh nối lặp lại |
 | **Tổng hợp đối tượng** | Trung bình | Tái sử dụng các đối tượng được tạo/hủy thường xuyên |
 | **Tải lười biếng** | Cao | Chỉ tải dữ liệu/biểu mẫu khi cần |
-| **Tối ưu hóa trình biên dịch** | Trung bình | Bật`{$O+}`cho bản phát hành |
+| **Tối ưu hóa trình biên dịch** | Trung bình | Kích hoạt`{$O+}`cho các bản phát hành |
 ---
 
 ## Triển khai & Sử dụng trong Thế giới Thực
@@ -1085,6 +1086,84 @@ Delphi Deployment Targets:
 | Phát triển GUI Windows mới | Có thể nhưng cộng đồng đang bị thu hẹp | C# (WPF/WinUI 3) |
 | Phát triển web | Không phù hợp | JavaScript, Python, C# |
 | Ứng dụng di động | Có thể qua FMX nhưng bị hạn chế | Swift, Kotlin, Rung |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: VCL framework của Delphi hoạt động như thế nào?
+**Đ:** VCL bao bọc các điều khiển API của Windows theo hệ thống phân cấp hướng đối tượng. Các biểu mẫu, nút và lưới đều là các lớp:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: Làm cách nào để tạo các thành phần trong Delphi?
+**A:** Kế thừa từ TComponent hoặc TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Câu 3: Sự khác biệt giữa Delphi và Pascal miễn phí là gì?
+**A:** Delphi là một IDE/trình biên dịch thương mại của Embarcadero. Pascal miễn phí là trình biên dịch mã nguồn mở và Lazarus là IDE miễn phí. Cả hai đều sử dụng cú pháp Object Pascal.
+### Q4: Làm cách nào để làm việc với cơ sở dữ liệu ở Delphi?
+**A:** Sử dụng các thành phần FireDAC hoặc dbExpress:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Câu 5: Delphi có còn phù hợp cho đến ngày nay không?
+**A:** Để duy trì các ứng dụng Windows cũ, có. Đối với các dự án mới, hầu hết các nhà phát triển đều thích công nghệ C# hoặc web. Pascal/Lazarus miễn phí cung cấp giải pháp thay thế đa nền tảng miễn phí.
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Bài toán 1: Xây dựng biểu mẫu nhận biết dữ liệu
+**Bước 1: Tìm hiểu vấn đề**
+Tạo một biểu mẫu hiển thị và chỉnh sửa các bản ghi cơ sở dữ liệu.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng các thành phần nhận biết dữ liệu được liên kết với một tập dữ liệu.
+**Bước 3: Thực hiện**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Bước 4: Gia hạn**
+Thêm chức năng xác thực, xử lý lỗi và tìm kiếm/bộ lọc.
 ---
 
 ## Bản tóm tắt

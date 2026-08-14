@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps và CI/CD
 DevOps là sự kết hợp giữa triết lý văn hóa, thực tiễn và công cụ cho phép các nhóm cung cấp phần mềm nhanh hơn và đáng tin cậy hơn. Nó phá vỡ bức tường giữa các nhà phát triển (những người muốn thực hiện các thay đổi) và các hoạt động (những người muốn sự ổn định). CI/CD — Tích hợp liên tục và Phân phối liên tục — là xương sống tự động hóa giúp điều này trở nên khả thi.
 ---
@@ -152,7 +153,7 @@ kubectl scale deploy/myapp --replicas=5  # Scale to 5 replicas
 ```
 
 ### Mũ bảo hiểm
-Helm là người quản lý gói cho Kubernetes. **biểu đồ** là một gói tài nguyên Kubernetes được định cấu hình sẵn. Hãy coi đó là`apt`hoặc`brew`cho K8.
+Helm là người quản lý gói cho Kubernetes. **biểu đồ** là một gói tài nguyên Kubernetes được định cấu hình sẵn. Hãy nghĩ về nó như`apt`hoặc`brew`cho K8.
 ```bash
 helm install my-release bitnami/postgresql   # Install a chart
 helm upgrade my-release bitnami/postgresql   # Upgrade
@@ -193,7 +194,7 @@ Cách thực hành tốt nhất: sử dụng mô-đun để có thể sử dụn
 ## Giám sát và quan sát
 ###Ba trụ cột
 | Trụ cột | Nó nói gì với bạn | Công cụ |
-|--------|-------------------|-------|
+|--------|------------------------|-------|
 | **Số liệu** | Đo lường số theo thời gian (CPU, tỷ lệ yêu cầu, tỷ lệ lỗi) | Prometheus, CloudWatch, Datadog |
 | **Nhật ký** | Các sự kiện riêng biệt có ngữ cảnh (lỗi, yêu cầu, thay đổi trạng thái) | Ngăn xếp ELK, Loki, Nhật ký CloudWatch |
 | **Dấu vết** | Hành trình yêu cầu từ đầu đến cuối trên các dịch vụ | Jaeger, X-Ray, Zipkin |
@@ -224,7 +225,7 @@ Ngăn xếp giám sát nguồn mở tiêu chuẩn:
 | **Cờ tính năng** | Triển khai mã nhưng ẩn các tính năng đằng sau nút chuyển đổi | Độ phức tạp của mã từ logic có điều kiện | Tắt |
 ---
 
-## GitOp
+## GitOps
 GitOps đưa IaC đến kết luận hợp lý: kho lưu trữ Git là nguồn thông tin chính xác duy nhất về trạng thái mong muốn của cơ sở hạ tầng và ứng dụng của bạn.
 | Nguyên tắc | Mô tả |
 |----------||-------------|
@@ -244,4 +245,4 @@ Khi có thứ gì đó bị hỏng lúc 3 giờ sáng:
 5. **Khắc phục** — khôi phục hoặc vá tiếp.
 6. **Giao tiếp** — cập nhật các bên liên quan và người dùng (trang trạng thái).
 7. **Sau khi khám nghiệm tử thi** — trong vòng 24–48 giờ, ghi lại nguyên nhân gốc rễ và các mục hành động.
-Mục tiêu không chỉ là khắc phục sự cố mà còn là đảm bảo sự cố tương tự không thể xảy ra nữa.
+Mục tiêu không chỉ là giải quyết sự cố mà còn đảm bảo sự cố tương tự không thể tái diễn.

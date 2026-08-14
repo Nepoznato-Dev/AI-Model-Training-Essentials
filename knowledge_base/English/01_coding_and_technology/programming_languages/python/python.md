@@ -1466,6 +1466,320 @@ def slow_function():
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between lists and tuples, and when should I use each?
+**A:** Lists are mutable (`[]`), tuples are immutable (`()`). Use lists when you need to add, remove, or change elements. Use tuples for fixed collections of heterogeneous data, dictionary keys, function return values, or when you want to signal "this should not change." Tuples are slightly more memory-efficient and can be used as set/dict keys; lists cannot.
+
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### Q2: How does the Global Interpreter Lock (GIL) affect my code, and what should I do about it?
+**A:** The GIL prevents multiple threads from executing Python bytecode simultaneously, making threading ineffective for CPU-bound work. For I/O-bound tasks (network requests, file I/O), `threading` or `asyncio` work fine because the GIL is released during I/O. For CPU-bound tasks, use `multiprocessing` (separate processes, each with its own GIL), or offload to C extensions (NumPy, Cython, Numba) that release the GIL internally.
+
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### Q3: Should I use type hints everywhere? What are the practical trade-offs?
+**A:** Type hints (`def greet(name: str) -> str:`) are optional and not enforced at runtime. They improve IDE autocompletion, catch bugs via static analysis tools (mypy), and document intent. The trade-off is extra verbosity and a learning curve for advanced types (`Union`, `Generic`, `Protocol`). Recommendation: use type hints for function signatures in any project over ~500 lines; use them sparingly in short scripts. Enable mypy in CI for gradual enforcement.
+
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### Q4: What are the best practices for handling exceptions in Python?
+**A:** Catch specific exceptions rather than bare `except:` (which catches `SystemExit` and `KeyboardInterrupt` too). Use `try/except/else/finally` to separate happy-path logic from error handling. Define custom exception hierarchies for libraries. Never use exceptions for control flow in performance-sensitive code — they are slow. Log the exception with `logging.exception()` to capture the full traceback.
+
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### Q5: How do generators save memory, and when should I use them over lists?
+**A:** Generators produce values lazily — one at a time, on demand — instead of building an entire list in memory. For large datasets (millions of rows, infinite sequences, streaming data), generators use constant memory regardless of size. Use generators when you iterate once and don't need indexing or `len()`. Use lists when you need random access, multiple iterations, or the collection is small.
+
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Build a Word Frequency Counter with Ranking
+
+**Problem Statement:** Given a large text file, count the frequency of each word, rank them by frequency (descending), and return the top N results. Handle case insensitivity, punctuation, and efficiently process files too large to fit in memory.
+
+**Step 1 — Understand the Problem:**
+We need to: (1) read text, (2) split into words, (3) normalize case, (4) strip punctuation, (5) count occurrences, (6) sort by count descending, (7) return top N. The "too large to fit in memory" constraint means we should process line-by-line with generators.
+
+**Step 2 — Identify the Approach:**
+- Use `re.finditer` for efficient word extraction without building intermediate lists.
+- Use `collections.Counter` for O(1) increment per word.
+- Use `Counter.most_common(n)` which uses a heap internally — O(k log n) instead of O(n log n) for full sort.
+- Process line-by-line via generator to keep memory constant.
+
+**Step 3 — Implement the Solution:**
+
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+**Step 4 — Verify and Optimize:**
+- Memory: only the Counter dict is in memory (one entry per unique word), not the file content. For English text, ~100K unique words ≈ a few MB.
+- Time: O(W) to scan all words + O(U log N) for top-N extraction, where W = total words, U = unique words.
+- Edge cases: apostrophes in contractions ("don't") are preserved by the regex. Unicode text would need `re.UNICODE` flag or a different pattern.
+
+### Problem 2: Implement a Thread-Safe LRU Cache
+
+**Problem Statement:** Build a Least Recently Used (LRU) cache from scratch that is thread-safe, supports O(1) get and put operations, and automatically evicts the least recently used item when capacity is exceeded.
+
+**Step 1 — Understand the Problem:**
+An LRU cache needs: (1) fast lookup by key → hash map, (2) fast ordering by recency → doubly linked list, (3) thread safety → locking. On `get(key)`: move item to front. On `put(key, val)`: insert at front; if over capacity, remove from back.
+
+**Step 2 — Identify the Approach:**
+- Python's `dict` maintains insertion order (3.7+), so we can use an ordered dict approach: delete and re-insert to move to end.
+- For thread safety, use `threading.Lock` for mutual exclusion.
+- Alternative: use `collections.OrderedDict` which has `move_to_end()`.
+
+**Step 3 — Implement the Solution:**
+
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+**Step 4 — Verify and Optimize:**
+- Time complexity: O(1) for both `get` and `put` — `OrderedDict.move_to_end()` and `popitem()` are O(1).
+- Thread safety: the `Lock` ensures atomicity. For higher throughput, consider `threading.RLock` or a read-write lock pattern, but for most use cases a simple lock suffices.
+- Production note: for single-threaded code, `functools.lru_cache` is simpler and implemented in C for better performance.
+
+### Problem 3: Parse and Evaluate a Mathematical Expression
+
+**Problem Statement:** Write a parser that takes a string like `"3 + 4 * 2 / (1 - 5)"` and correctly evaluates it respecting operator precedence and parentheses.
+
+**Step 1 — Understand the Problem:**
+This requires: (1) tokenizing the input string into numbers, operators, and parentheses, (2) parsing with correct precedence (`*` and `/` before `+` and `-`), (3) handling nested parentheses. A naive left-to-right evaluation would give wrong results.
+
+**Step 2 — Identify the Approach:**
+The classic solution is the **shunting-yard algorithm** (Dijkstra) which converts infix to postfix (Reverse Polish Notation), then evaluates the postfix. Alternatively, use a recursive descent parser. For Python specifically, we can also use `ast.literal_eval` for safe evaluation — but let's implement it properly.
+
+**Step 3 — Implement the Solution:**
+
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+**Step 4 — Verify and Optimize:**
+- Correctness: `3 + 4 * 2 / (1 - 5)` → `3 + 8 / (-4)` → `3 + (-2)` → `1.0`. Correct.
+- Time: O(N) for tokenization, O(N) for shunting-yard, O(N) for evaluation — overall O(N).
+- Edge cases to handle: negative numbers (prepend `0` before unary `-`), division by zero (add error handling), invalid input (validate tokens).
+- Pythonic alternative: `ast.parse(expr, mode='eval')` with a custom node visitor for safe evaluation without `eval()`.
+
+### Problem 4: Build a CLI Dashboard with Real-Time Data Updates
+
+**Problem Statement:** Create a terminal-based dashboard that displays system metrics (CPU, memory, disk) updating in real-time, with color-coded thresholds and responsive layout.
+
+**Step 1 — Understand the Problem:**
+We need: (1) periodic system metric collection, (2) terminal rendering with cursor control, (3) color output based on thresholds, (4) non-blocking keyboard input for quit. This is a producer-consumer pattern with a rendering loop.
+
+**Step 2 — Identify the Approach:**
+- Use `psutil` for cross-platform system metrics.
+- Use ANSI escape codes for cursor positioning and colors (or the `rich` library for a higher-level API).
+- Use `time.sleep` for the update interval.
+- Structure as: data collection → formatting → rendering pipeline.
+
+**Step 3 — Implement the Solution:**
+
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+**Step 4 — Verify and Optimize:**
+- The `cpu_percent(interval=0.5)` blocks for 0.5s to measure — this is the correct approach (non-blocking mode gives 0% on first call).
+- ANSI codes work on modern Windows Terminal and all Unix terminals. For legacy Windows cmd, add `os.system('color')` or use `colorama`.
+- Production upgrade: use the `rich` library (`rich.live`) for flicker-free rendering, automatic layout, and cross-platform compatibility.
+- Extensibility: each metric is an independent function, making it easy to add GPU temperature, process count, or network connections.
+
+---
+
 ## Summary
 
 Python's combination of readability, versatility, and ecosystem depth makes it the most widely-used programming language in the world. It is the default choice for AI/ML, a strong option for web backends and automation, and an excellent teaching language. Its main weaknesses — execution speed and mobile/embedded support — are well-understood and have established workarounds. For most projects, Python is a reasonable starting point.

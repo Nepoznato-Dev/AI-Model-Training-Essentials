@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # R
 R là ngôn ngữ lập trình và môi trường được thiết kế dành riêng cho tính toán thống kê và phân tích dữ liệu. Được tạo bởi Ross Ihaka và Robert Gentleman tại Đại học Auckland vào năm 1993 (do đó là "R"), đây là một triển khai của ngôn ngữ S với những phần mở rộng đáng kể. R là nguồn mở và được duy trì bởi Nhóm R Core. Đây là công cụ tiêu chuẩn dành cho các nhà thống kê, nhà phân tích dữ liệu và nhà nghiên cứu trong giới học thuật, y tế, tài chính và chính phủ.
 R vượt trội trong thao tác dữ liệu, mô hình thống kê, trực quan hóa và báo cáo. Hệ sinh thái gói (CRAN) của nó có hơn 20.000 gói bao gồm hầu hết mọi phương pháp thống kê từng được nghĩ ra.
@@ -53,8 +54,8 @@ R vượt trội trong thao tác dữ liệu, mô hình thống kê, trực quan
 ## Sự đánh đổi
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
-| **Hiệu suất** | Đơn luồng theo mặc định; chậm đối với tập dữ liệu lớn | Sử dụng`data.table`, các gói song song hoặc Rcpp để tích hợp C++ |
-| **Sử dụng bộ nhớ** | Tải toàn bộ tập dữ liệu vào RAM | Sử dụng gói mũi tên`data.table::fread`để xử lý ngoài lõi |
+| **Hiệu suất** | Đơn luồng theo mặc định; chậm đối với tập dữ liệu lớn | Sử dụng `data.table`, các gói song song hoặc Rcpp để tích hợp C++ |
+| **Sử dụng bộ nhớ** | Tải toàn bộ tập dữ liệu vào RAM | Sử dụng`data.table::fread`, gói mũi tên để xử lý ngoài lõi |
 | **Không phải ngôn ngữ có mục đích chung** | Lúng túng khi phát triển web, lập trình hệ thống hoặc ứng dụng | Sử dụng Python, Go hoặc JavaScript cho các tác vụ phi thống kê |
 | **Cú pháp không nhất quán** | Cơ sở R có những điểm kỳ quặc; các gói khác nhau sử dụng các quy ước khác nhau | Sử dụng gọn gàng để đảm bảo tính nhất quán |
 | **Thị trường việc làm** | Chủ yếu là vai trò học thuật/nghiên cứu | Vai trò khoa học dữ liệu ngày càng thích Python |
@@ -603,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Hệ thống ML sản xuất | Không được thiết kế để triển khai | Python, Java |
 | Phát triển web | Không phù hợp | JavaScript, Python |
 | Xử lý dữ liệu quy mô lớn | Bị ràng buộc bởi bộ nhớ | Python (PySpark), SQL |
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Sự khác biệt giữa`<-`và`=`trong bài tập là gì?
+**A:** Cả hai đều gán giá trị, nhưng`<-`là toán tử gán R đặc trưng. Nó hoạt động trong mọi ngữ cảnh, bao gồm cả các lệnh gọi hàm bên trong:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: Làm cách nào để xử lý dữ liệu bị thiếu trong R?
+**A:** R sử dụng`NA`cho các giá trị bị thiếu. Hầu hết các hàm đều có tham số `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Câu 3: Khi nào tôi nên sử dụng`lapply`so với`sapply`so với`vapply`?
+**A:** Tất cả đều áp dụng một hàm trên danh sách/vectơ, nhưng khác nhau về đầu ra:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: Làm cách nào để tạo hình ảnh trực quan hiệu quả với ggplot2?
+**A:** Tuân theo ngữ pháp của đồ họa — ánh xạ tính thẩm mỹ của dữ liệu tới các thuộc tính hình ảnh:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Câu 5: Làm cách nào để viết mã R hiệu quả cho các tập dữ liệu lớn?
+**Đ:** Các phương pháp chính:
+- Phân bổ trước các vectơ:`x <- numeric(n)`thay vì phát triển với`c()`
+- Sử dụng`data.table`cho tập dữ liệu lớn (nhanh hơn 100 lần so với data.frame)
+- Vectorize các hoạt động - tránh các vòng lặp nếu có thể
+- Sử dụng`vapply`thay vì`sapply`để đảm bảo an toàn về loại
+- Hồ sơ với`Rprof()`hoặc`profvis`
+- Xem xét gói`arrow`cho dữ liệu ngoài lõi
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Làm sạch và phân tích tập dữ liệu lộn xộn
+**Bước 1: Tìm hiểu vấn đề**
+Chúng tôi có khung dữ liệu thiếu các giá trị, loại không nhất quán và các giá trị ngoại lệ. Chúng ta cần làm sạch nó và tính toán số liệu thống kê tóm tắt.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng các động từ gọn gàng:`filter`,`mutate`,`summarize`và`group_by`.
+**Bước 3: Thực hiện**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Bước 4: Xác minh**
+Kiểm tra số lượng hàng trước/sau, xác thực phạm vi và kiểm tra chéo tổng số so với dữ liệu nguồn.
+### Bài toán 2: Xây dựng mô hình hồi quy tuyến tính
+**Bước 1: Tìm hiểu vấn đề**
+Dự đoán một biến kết quả liên tục từ nhiều yếu tố dự đoán.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng`lm()`để hồi quy tuyến tính, kiểm tra các giả định và đánh giá mức độ phù hợp của mô hình.
+**Bước 3: Thực hiện**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Bước 4: Đánh giá**
+Kiểm tra các ô dư, bình phương R để tìm các mẫu và AIC để so sánh mô hình.
+### Vấn đề 3: Tạo một báo cáo có thể tái tạo
+**Bước 1: Tìm hiểu vấn đề**
+Tạo một báo cáo kết hợp phân tích, trực quan hóa và văn bản tường thuật ở định dạng có thể tái tạo.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng R Markdown (hoặc Quarto) để xen kẽ các đoạn mã với văn bản.
+**Bước 3: Thực hiện**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cảnh báo = FALSE)
+thư viện(tidyverse)
+dữ liệu <- read_csv("data.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(data, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**Bước 4: Kết xuất**
+`rmarkdown::render("report.Rmd")`tạo ra một tài liệu HTML độc lập.
 ---
 
 ## Bản tóm tắt

@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "الاختبار والتجريب الإحصائي"
-الوصف: "اختبار الفرضية، اختبار أ/ب، حجم التأثير، الاستدلال السببي"
-الفئة: "علم البيانات والتحليلات"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-review_by: "فريق قاعدة معارف علوم البيانات والتحليلات"
+# Metadata
+title: "Statistical Testing and Experimentation"
+description: "Hypothesis testing, A/B testing, effect size, causal inference"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [الإحصاء والاختبار والتجريب وعلوم البيانات والتحليلات]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "10 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [statistical, testing, experimentation, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "10 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # الاختبارات والتجريب الإحصائي
 الإحصاء هو قواعد العلوم. فهو يوفر لك الأدوات اللازمة للتمييز بين الأنماط الحقيقية والضوضاء العشوائية، وقياس ما إذا كان التغيير قد أدى بالفعل إلى تحسين الأمور، واتخاذ القرارات في ظل عدم اليقين. يغطي هذا الملف المفاهيم الأساسية لاختبار الفرضيات، والتصميم التجريبي، والمزالق الشائعة التي تعوق الأشخاص.
 ---
@@ -182,7 +187,7 @@ t_stat, p_value = stats.ttest_ind(group_a, group_b)
 |--------|-----------|----------|
 | **الاحتمال** | تردد الأحداث على المدى الطويل | درجة الإيمان |
 | **المعلمات** | ثابت ولكن غير معروف | المتغيرات العشوائية مع التوزيعات |
-| **الاستخدامات** | القيم p، فترات الثقة، اختبارات الفرضيات | التوزيعات الخلفية، فترات زمنية موثوقة |
+| **الاستخدامات** | القيم الاحتمالية، فترات الثقة، اختبارات الفرضيات | التوزيعات الخلفية، فترات زمنية موثوقة |
 | **سابقة** | لم يتم دمج أي معتقدات سابقة | التوزيع المسبق الصريح |
 | **التفسير** | "لو كررنا هذه التجربة عدة مرات..." | "بالنظر إلى البيانات، احتمال أن..." |
 | ** نقاط القوة ** | موضوعي، راسخ، بسيط | تفسير بديهي يتضمن معرفة مسبقة |

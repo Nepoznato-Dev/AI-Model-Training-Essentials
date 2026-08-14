@@ -54,7 +54,7 @@ Język asemblera nie jest używany do tworzenia aplikacji. Używa się go, gdy p
 ## Kompromisy
 | Ograniczenie | Szczegóły | Typowe obejście |
 |----------|---------|--------------------------------|
-| **Bardzo niski poziom** | Każda instrukcja jest odwzorowywana na jedną operację maszyny | Używaj języków wyższego poziomu do wszystkiego z wyjątkiem krytycznych części |
+| **Bardzo niski poziom** | Każda instrukcja jest odwzorowana na jedną operację maszyny | Używaj języków wyższego poziomu do wszystkiego z wyjątkiem krytycznych części |
 | **Specyficzne dla architektury** | Kod x86 nie działa na ARM | Napisz przenośny kod w C/C++; używaj zestawu tylko tam, gdzie jest to potrzebne |
 | **Rozszerzone** | Proste zadania wymagają wielu instrukcji | Używaj makr; zachowaj minimalną liczbę sekcji montażowych |
 | **Brak przenośności** | Inna składnia dla każdego asemblera (NASM, GAS, MASM) | Użyj elementów wewnętrznych kompilatora lub zestawu wbudowanego |
@@ -734,6 +734,85 @@ void process_data(void) {
 | Wbudowane oprogramowanie sprzętowe (bare metal) | Brak dostępnego języka wyższego poziomu | C, rdza |
 | Edukacja | Zrozumienie architektury komputera | — |
 | Ogólne tworzenie aplikacji | Niepraktyczne w przypadku złożonych programów | Dowolny język wyższego poziomu |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica pomiędzy montażem RISC i CISC?
+**A:** CISC (x86) zawiera złożone instrukcje o zmiennej długości. RISC (ARM) ma proste instrukcje o stałej długości:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### P2: Jak stos działa w asemblerze?
+**A:** Stos rośnie w dół. `push`zmniejsza SP i zapisuje; `pop`ładuje i zwiększa SP:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### P3: Jak wywołać funkcje w asemblerze?
+**A:** Postępuj zgodnie z konwencją wywoływania (System V AMD64 w systemie Linux, Windows x64 w systemie Windows):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### P4: Jakie są najważniejsze instrukcje montażu, o których warto wiedzieć?
+**O:** Przenoszenie danych, arytmetyka, przepływ sterowania i operacje na stosie stanowią rdzeń.
+### P5: W jaki sposób montaż jest wykorzystywany w badaniach nad bezpieczeństwem?
+**O:** Inżynieria wsteczna, tworzenie exploitów, analiza złośliwego oprogramowania i zrozumienie wyników działania kompilatora wymagają umiejętności korzystania z asemblera.
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Implementacja pętli w asemblerze
+**Krok 1: Zrozum problem**
+Suma liczb całkowitych od 1 do N.
+**Krok 2: Zidentyfikuj podejście**
+Użyj rejestru licznikowego i akumulatora.
+**Krok 3: Wdróż**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Krok 4: Optymalizacja**
+Użyj wzoru N*(N+1)/2 dla O(1) zamiast O(N).
 ---
 
 ## Streszczenie

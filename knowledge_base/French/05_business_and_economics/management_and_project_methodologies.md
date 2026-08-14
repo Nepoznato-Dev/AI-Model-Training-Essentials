@@ -1,41 +1,46 @@
 ---
-# Métadonnées
-titre : "Méthodologies de gestion et de projet"
-description : "Leadership, Agile/Scrum/Kanban, OKR, gestion des risques"
-catégorie : "Commerce et économie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Management and Project Methodologies"
+description: "Leadership, Agile/Scrum/Kanban, OKRs, risk management"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances commerciales et économiques"
-next_review : "2027-08-05"
-#Classement
-tags : [gestion, projet, méthodologies, business et économie]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "12 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [management, project, methodologies, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "12 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Méthodologies de gestion et de projet
-La gestion des personnes et des projets est l'une des choses les plus difficiles dans toute organisation. Les compétences techniques vous permettent d'entrer dans la salle, mais la capacité de diriger des équipes, de prendre des décisions, de communiquer clairement et de produire des résultats est ce qui détermine si quelque chose est réellement fait. Ce dossier couvre les cadres, les méthodologies et les compétences pratiques sur lesquels s'appuient les gestionnaires et chefs de projet efficaces.
+La gestion des personnes et des projets fait partie des responsabilités les plus exigeantes de toute organisation. Les compétences techniques permettent d'accéder au poste, mais la capacité de diriger des équipes, de prendre des décisions, de communiquer efficacement et d'obtenir des résultats détermine si les objectifs sont atteints. Ce fichier couvre les cadres, les méthodologies et les compétences pratiques que les gestionnaires et chefs de projet efficaces appliquent.
 ---
 
 ## Styles de leadership
@@ -102,7 +107,7 @@ Scrum est le framework Agile le plus utilisé.
 | **Carnet de sprint** | Éléments sélectionnés pour le sprint en cours + le plan pour les livrer |
 | ** Standup quotidien ** | Synchronisation de 15 minutes : qu'ai-je fait ? Que vais-je faire ? Des bloqueurs ? |
 | **Revue de sprint** | Logiciel de démonstration de travail aux parties prenantes ; recueillir des commentaires |
-| **Rétrospective Sprint** | L'équipe réfléchit à la manière d'améliorer le processus |
+| **Rétrospective Sprint** | L'équipe réfléchit à la façon d'améliorer le processus |
 ### Kanban
 Kanban est une méthode basée sur les flux et axée sur la visualisation du travail et la limitation du travail en cours.
 | Pratique | Descriptif |
@@ -117,7 +122,7 @@ Kanban est une méthode basée sur les flux et axée sur la visualisation du tra
 |---|-------|--------|
 | **Cadence** | Sprints fixes (2 semaines) | Flux continu |
 | **Rôles** | PO, Scrum Master, équipe | Aucun rôle prescrit |
-| **Changer** | Aucun changement à mi-sprint | Changez à tout moment |
+| **Modifier** | Aucun changement à mi-sprint | Changez à tout moment |
 | **Mesures** | Vitesse (points d'histoire par sprint) | Temps de cycle, débit |
 | **Idéal pour** | Développement de produits avec des versions régulières | Équipes de soutien ; livraison continue |
 ---
@@ -134,7 +139,7 @@ Les OKR sont un cadre de définition d'objectifs utilisé par Google, Intel, Spo
 **Bonnes pratiques OKR** :
 - Fixer 3 à 5 objectifs par trimestre
 - Chaque objectif a 2 à 5 résultats clés
-- Visez un taux de réussite de 70 % (100 % signifie que les objectifs étaient trop faciles)
+- Visez un objectif de réussite de 70 % (100 % signifie que les objectifs étaient trop faciles)
 - Les OKR sont distincts des évaluations de performances
 - Transparent : tout le monde peut voir les OKR des autres
 ### KPI (indicateurs clés de performance)
@@ -238,7 +243,7 @@ Les OKR sont un cadre de définition d'objectifs utilisé par Google, Intel, Spo
 |---------------|-------------|------|------|
 | **Fonctionnel** | Organisé par spécialité (ingénierie, marketing, ventes) | Expertise approfondie ; des parcours de carrière clairs | Silos ; travail transversal lent |
 | **Divisionnaire** | Organisé par produit, marché ou géographie | Se concentrer; responsabilité | Ressources dupliquées ; pratiques incohérentes |
-| **Matrice** | Les gens relèvent à la fois des chefs fonctionnels et des chefs de projet | Flexibilité; partage de ressources | Priorités contradictoires ; confusion quant à savoir qui est aux commandes |
+| **Matrice** | Les gens rapportent aux chefs fonctionnels et aux chefs de projet | Flexibilité; partage de ressources | Priorités contradictoires ; confusion quant à savoir qui est aux commandes |
 | **Appartement / Holacracie** | Hiérarchie minimale ; équipes auto-organisées | Vitesse; autonomie; innovations | Des décisions peu claires ; ne s'adapte pas bien |
 | **Topologie d'équipe** (Skelton/Pais) | Équipes alignées sur les flux + équipes de plate-forme + équipes habilitantes + équipes de sous-systèmes complexes | S'aligne sur la façon dont le travail se déroule réellement | Nécessite une conception réfléchie ; pas une solution miracle |
 ---
@@ -263,4 +268,4 @@ La gestion de produits est la discipline qui consiste à décider quoi construir
 ---
 
 ## Résumé
-La gestion n'est pas une question de titres ou d'organigrammes, il s'agit de faire en sorte que les bonnes choses soient faites par l'intermédiaire d'autres personnes. Les meilleurs managers combinent réflexion claire (cadres, méthodologies, métriques) et intelligence émotionnelle (écoute, empathie, confiance). Aucune méthodologie ne remplace le bon jugement, mais un bon jugement est amélioré par de bons cadres. Utilisez-les comme des outils, pas comme des religions.
+La gestion est la pratique consistant à atteindre des objectifs grâce à d’autres personnes. Les managers efficaces combinent une réflexion claire (cadres, méthodologies, indicateurs) avec des compétences relationnelles (écoute, empathie, confiance). Aucune méthodologie ne remplace le bon jugement, mais le bon jugement est renforcé par des cadres solides. Celles-ci devraient être appliquées comme des guides pratiques plutôt que comme des doctrines rigides.

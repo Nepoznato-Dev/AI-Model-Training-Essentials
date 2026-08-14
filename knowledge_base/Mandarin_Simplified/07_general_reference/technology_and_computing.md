@@ -41,7 +41,7 @@ contribution:
 
 # 技术与计算
 计算无处不在——在你的手机、你的汽车、你的冰箱、你的医疗设备以及运行现代社会的基础设施中。您无需成为一名程序员即可从了解其工作原理中受益。该文件涵盖了基础知识：什么是计算机、互联网如何工作、软件如何构建以及塑造数字世界的概念。
-> **想要深入了解吗？** 该文件是一个广泛的概述。有关任何主题的详细介绍，请参阅[`01_coding_and_technology/`](../01_coding_and_technology/)中的专用文件 — 包括[web development](../01_coding_and_technology/web_development.md)、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)和[security](../01_coding_and_technology/security_best_practices.md)。
+> **想要深入了解吗？** 该文件是一个广泛的概述。有关任何主题的详细介绍，请参阅[`01_coding_and_technology/`](../01_coding_and_technology/)中的专用文件 — 包括、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)和。
 ---
 
 ## 什么是计算机？
@@ -151,7 +151,7 @@ Linux 值得特别一提：它为大部分互联网、每台 500 强超级计算
 ---
 
 ## 网络安全——保护数字系统
-网络安全是保护计算机、网络和数据免受攻击的实践。这很重要，因为一切都是相互关联的，而违规的成本是巨大的。有关涵盖 OWASP Top 10、安全开发生命周期和机密管理的完整指南，请参阅[security best practices](../01_coding_and_technology/security_best_practices.md)。
+网络安全是保护计算机、网络和数据免受攻击的实践。这很重要，因为一切都是相互关联的，而违规的成本是巨大的。有关涵盖 OWASP Top 10、安全开发生命周期和机密管理的完整指南，请参阅。
 ### 常见威胁
 |威胁|它是什么 |预防|
 |--------|------------|------------|

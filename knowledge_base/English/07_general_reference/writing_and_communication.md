@@ -41,7 +41,7 @@ contribution:
 
 # Writing and Communication Fundamentals
 
-Writing and communication are the skills of conveying ideas clearly and effectively — whether through emails, reports, documentation, presentations, or conversations. Most knowledge work is fundamentally communication work: you need to explain your thinking, persuade others, document decisions, write specifications, present findings, and collaborate across teams. The gap between what you mean and what someone understands is where most problems originate, and better communication narrows that gap.
+Writing and communication are the skills of conveying ideas effectively — whether through emails, reports, documentation, presentations, or conversations. Most knowledge work is fundamentally communication work: professionals need to explain their thinking, persuade others, document decisions, write specifications, present findings, and collaborate across teams. The gap between what is meant and what is understood is where most problems originate, and better communication narrows that gap.
 
 ---
 
@@ -200,4 +200,4 @@ Writing and communication are the skills of conveying ideas clearly and effectiv
 
 ## Summary
 
-Clear writing and communication are not about being clever — they're about being understood. Start with the main point (pyramid principle). Use active voice, concrete language, and short sentences. Structure information so the reader can find what they need. Technical documentation should be scannable and example-driven. Business writing should lead with the recommendation. Presentations should tell a story with one idea per slide. Persuasion combines logic (logos), emotion (pathos), and credibility (ethos). Cross-cultural awareness prevents misunderstandings in global teams. The fundamental skill is audience awareness: knowing who you're writing for, what they need to know, and what format will help them understand it. Every minute you invest in clearer communication saves multiples of that time in reduced confusion, fewer misunderstandings, and faster decision-making.
+Clear writing and communication are about being understood. Start with the main point (pyramid principle). Use active voice, concrete language, and short sentences. Structure information so the reader can find what is needed. Technical documentation should be scannable and example-driven. Business writing should lead with the recommendation. Presentations should present one idea per slide. Persuasion combines logic (logos), evidence (pathos), and credibility (ethos). Cross-cultural awareness prevents misunderstandings in global teams. The fundamental skill is audience awareness: knowing who the reader is, what they need to know, and what format will support their understanding. Investment in clearer communication yields returns in reduced confusion, fewer misunderstandings, and faster decision-making.

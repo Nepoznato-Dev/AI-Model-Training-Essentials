@@ -1,1 +1,0 @@
-No build or setup steps; modes are loaded at runtime by an agent framework that reads the YAML frontmatter fields (`name`, `tools`, `agents`, `handoffs`) and renders the remaining Markdown as the system prompt.

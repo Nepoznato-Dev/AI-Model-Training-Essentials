@@ -738,6 +738,163 @@ native-image --no-fallback \
 
 ---
 
+## Synthetic Q&A
+
+### Q1: Why do Lisp/Clojure programs have so many parentheses?
+
+**A:** Parentheses represent S-expressions — a uniform syntax where code and data have the same structure (homoiconicity):
+
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2: How does Clojure handle state and mutability differently?
+
+**A:** Clojure defaults to immutable data. For controlled state changes, it provides reference types:
+
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3: What are Clojure's persistent data structures?
+
+**A:** All Clojure collections are persistent (immutable, structurally shared):
+
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### Q4: How do Clojure macros work?
+
+**A:** Macros receive unevaluated code (as data), transform it, and return new code:
+
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5: How do I handle concurrency in Clojure?
+
+**A:** Clojure provides multiple concurrency primitives:
+- `atom` — independent, synchronous changes
+- `ref` + `dosync` — coordinated, transactional changes
+- `agent` — asynchronous, independent changes
+- `core.async` channels — CSP-style concurrency
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Processing a Data Pipeline
+
+**Step 1: Understand the Problem**
+Read data, filter, transform, and aggregate through a pipeline.
+
+**Step 2: Identify the Approach**
+Use Clojure's threading macros (`->>`) and transducers.
+
+**Step 3: Implement**
+```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Step 4: Optimize**
+Transducers avoid creating intermediate sequences — they compose transformations into a single pass.
+
+### Problem 2: Building a Simple Web Server
+
+**Step 1: Understand the Problem**
+Create a basic HTTP server using Ring/Compojure.
+
+**Step 2: Identify the Approach**
+Use Ring adapter and Compojure routing.
+
+**Step 3: Implement**
+```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Step 4: Extend**
+Add middleware for logging, JSON parsing, authentication, and error handling.
+
+---
+
 ## Summary
 
 Lisp is the grandparent of programming language design — most modern languages borrow ideas that Lisp pioneered decades ago. Clojure brings Lisp into the modern era with immutability, concurrency support, and seamless JVM integration. While Lisp/Clojure is not mainstream, learning it will fundamentally change how you think about programming. The macro system alone is worth the investment — it reveals possibilities that other languages cannot match.

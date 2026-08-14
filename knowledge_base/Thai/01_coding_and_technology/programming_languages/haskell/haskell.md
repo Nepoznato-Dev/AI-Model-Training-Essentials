@@ -40,7 +40,7 @@ contribution:
 ---
 
 #ฮาสเคลล์
-Haskell เป็นภาษาโปรแกรมที่ใช้งานได้จริง มีการพิมพ์แบบคงที่ และมีการประเมินอย่างเกียจคร้าน มาตรฐานครั้งแรกในปี 1990 (Haskell 90) และปรับปรุงผ่านหลายเวอร์ชัน (Haskell 2010 เป็นมาตรฐานปัจจุบัน) Haskell เป็นที่รู้จักในด้านความแม่นยำทางคณิตศาสตร์ ระบบประเภทที่ทรงพลัง (พร้อมคลาสประเภท monads และประเภทข้อมูลพีชคณิต) และเน้นความถูกต้องผ่านประเภท
+Haskell เป็นภาษาการเขียนโปรแกรมที่ใช้งานได้จริง มีการพิมพ์แบบคงที่ และมีการประเมินอย่างเกียจคร้าน มาตรฐานครั้งแรกในปี 1990 (Haskell 90) และปรับปรุงผ่านหลายเวอร์ชัน (Haskell 2010 เป็นมาตรฐานปัจจุบัน) Haskell เป็นที่รู้จักในด้านความแม่นยำทางคณิตศาสตร์ ระบบประเภทที่ทรงพลัง (พร้อมคลาสประเภท monads และประเภทข้อมูลพีชคณิต) และเน้นความถูกต้องผ่านประเภท
 Haskell ไม่ใช่ภาษากระแสหลัก แต่มีอิทธิพลอย่างมาก แนวคิดเช่น monads การประเมินแบบขี้เกียจ และคลาสประเภทมีอิทธิพลต่อ Rust, Swift, Kotlin, Scala และ TypeScript Haskell ใช้ในด้านการเงิน (Standard Chartered, Barclays), ผู้เรียบเรียง (GHC) และการตรวจสอบอย่างเป็นทางการ
 ---
 
@@ -280,7 +280,7 @@ strictApply f x = x `seq` f x
 
 ## การเห็นพ้องต้องกันและความเท่าเทียม
 ### หน่วยความจำธุรกรรมซอฟต์แวร์ (STM)
-STM จัดทำธุรกรรมแบบประกอบได้สำหรับสถานะที่ใช้ร่วมกัน เช่น ธุรกรรมฐานข้อมูล แต่สำหรับหน่วยความจำ
+STM จัดทำธุรกรรมที่เขียนได้สำหรับสถานะที่ใช้ร่วมกัน เช่น ธุรกรรมฐานข้อมูล แต่สำหรับหน่วยความจำ
 ```haskell
 import Control.Concurrent.STM
 import Control.Concurrent
@@ -521,7 +521,7 @@ jobs:
 ---
 
 ## การทดสอบ
-### HSpec - กรอบการทดสอบหน่วย
+### HSpec — กรอบการทดสอบหน่วย
 HSpec เป็นเฟรมเวิร์กการทดสอบที่ได้รับความนิยมสูงสุด ซึ่งได้รับแรงบันดาลใจจาก RSpec ของ Ruby มันมีไวยากรณ์สไตล์ BDD
 ```haskell
 -- test/Spec.hs
@@ -713,7 +713,7 @@ example = add (lit 3) (mul (lit 4) (lit 5))
 ```
 
 ### Monads ฟรี
-พระสงฆ์อิสระแยกคำอธิบายของเอฟเฟกต์ออกจากการตีความ
+พระสงฆ์อิสระแยกคำอธิบายของผลกระทบออกจากการตีความ
 ```haskell
 {-# LANGUAGE DeriveFunctor #-}
 
@@ -940,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | การพัฒนาแอพพลิเคชั่นทั่วไป | เป็นไปได้แต่เฉพาะกลุ่ม | Python, Go, Java |
 | การพัฒนาเว็บ | Yesod/Servant มีอยู่แต่จำกัด | จาวาสคริปต์/ไทป์สคริปต์ |
 | วิทยาศาสตร์ข้อมูล | ไม่ใช่ระบบนิเวศ | หลาม, อาร์ |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### คำถามที่ 1: การประเมินแบบขี้เกียจของ Haskell ส่งผลต่อประสิทธิภาพอย่างไร
+**ตอบ:** การประเมินแบบ Lazy หมายถึงนิพจน์จะถูกคำนวณเมื่อจำเป็นเท่านั้น ซึ่งช่วยให้ใช้โครงสร้างข้อมูลที่ไม่มีที่สิ้นสุดและไปป์ไลน์ที่ประกอบได้ อย่างไรก็ตาม อาจทำให้เกิดการรั่วไหลของพื้นที่ได้หากมีเสียงดังสะสม:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+ใช้`foldl'`(จาก`Data.List`) แทน`foldl`สำหรับการพับตัวเลข ใช้รูปแบบ`!`Bang หรือ`seq`เพื่อบังคับการประเมินเมื่อจำเป็น
+### Q2: อะไรคือความแตกต่างในทางปฏิบัติระหว่าง`Functor`,`Applicative`และ`Monad`?
+**A:** แต่ละคลาสประเภทจะเพิ่มความสามารถ:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** จับคู่ฟังก์ชันล้วนๆ บนบริบท **การประยุกต์ใช้งาน** ใช้ฟังก์ชันที่อยู่ในบริบท **Monad** ให้แต่ละขั้นตอนขึ้นอยู่กับผลลัพธ์ของขั้นตอนก่อนหน้า ในทางปฏิบัติ: ใช้`fmap`/`<$>`สำหรับการแปลงอย่างง่าย`<*>`สำหรับการรวมเอฟเฟกต์ และ`>>=`/`do`สำหรับการคำนวณที่ขึ้นกับลำดับ
+### Q3: ฉันจะจัดการกับผลข้างเคียงในโค้ด Haskell ได้อย่างไร
+**A:** ใช้ระบบประเภทเพื่อแยกโค้ดที่แท้จริงและโค้ดที่มีประสิทธิภาพ:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+รักษาตรรกะหลักให้บริสุทธิ์และผลักดันเอฟเฟกต์ไปที่ขอบ ใช้`ReaderT`สำหรับการกำหนดค่า`ExceptT`สำหรับข้อผิดพลาด และ`StateT`สำหรับสถานะที่ไม่แน่นอน
+### Q4: คลาสประเภทคืออะไร และแตกต่างจากอินเทอร์เฟซ OOP อย่างไร
+**ตอบ:** คลาสประเภทจะกำหนดลักษณะการทำงานที่ประเภทต่างๆ สามารถนำมาใช้ได้ ต่างจากอินเทอร์เฟซ OOP ตรงที่เป็นแบบเปิด (ประเภทใดก็ได้สามารถเป็นอินสแตนซ์ได้) และรองรับความหลากหลายแบบเฉพาะกิจ:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### คำถามที่ 5: ฉันจะจัดโครงสร้างโครงการ Haskell สำหรับการใช้งานจริงได้อย่างไร
+**A:** ใช้ Cabal หรือ Stack ด้วยเลย์เอาต์มาตรฐาน:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+แนวปฏิบัติหลัก: เก็บ IO ไว้ใน`Main.hs`หรือโมดูล`IO`โดยเฉพาะ ทำให้คอร์ลอจิกบริสุทธิ์และทดสอบได้ ใช้`newtype`wrappers สำหรับประเภทโดเมน
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การใช้ฟังก์ชันแผนกปลอดภัยพร้อมการรายงานข้อผิดพลาด
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+เราต้องการการแบ่งส่วนที่จัดการการหารด้วยศูนย์และรายงานข้อผิดพลาดที่สำคัญ ไม่ใช่แค่ข้อขัดข้อง
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้`Either`เพื่อส่งคืนข้อความแสดงข้อผิดพลาดหรือผลลัพธ์ ซึ่งทำให้มีความเป็นไปได้ที่จะเกิดความล้มเหลวอย่างชัดเจนในประเภทดังกล่าว
+**ขั้นตอนที่ 3: นำไปใช้**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ระบบประเภทรับประกันว่าผู้โทรจะต้องจัดการกับกรณีข้อผิดพลาด การจับคู่รูปแบบหรือ`either`บังคับให้มีการจัดการที่ชัดเจน
+### ปัญหาที่ 2: การแยกวิเคราะห์ภาษาการกำหนดค่าอย่างง่าย
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+แยกวิเคราะห์คู่คีย์-ค่าจากสตริง เช่น `name=Alice\nage=30`
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้`Text.Parsec`หรือการเรียกซ้ำด้วยตนเอง เพื่อความง่าย ให้ใช้`break`และ `span`
+**ขั้นตอนที่ 3: นำไปใช้**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**ขั้นตอนที่ 4: ขยาย**
+เพิ่มการจัดการความคิดเห็น (`#`) ส่วนหัวของส่วน (`[section]`) และพิมพ์การบังคับโดยใช้`Value`ADT
+### ปัญหาที่ 3: การสร้าง Fibonacci ที่ถูกจดจำด้วยความเกียจคร้าน
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+คำนวณตัวเลขฟีโบนัชชีอย่างมีประสิทธิภาพ การเรียกซ้ำแบบไร้เดียงสาเป็นแบบเอ็กซ์โปเนนเชียล
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้การประเมินแบบ Lazy ของ Haskell เพื่อสร้างรายการที่ไม่มีที่สิ้นสุด โดยแต่ละองค์ประกอบจะถูกคำนวณเพียงครั้งเดียวและแคชไว้
+**ขั้นตอนที่ 3: นำไปใช้**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**ขั้นตอนที่ 4: เพิ่มประสิทธิภาพ**
+สำหรับการเข้าถึงแบบสุ่ม ให้ใช้`Data.Array`ที่มีโครงสร้างแบบ Lazy สำหรับดัชนีที่มีขนาดใหญ่มาก ให้ใช้การยกกำลังเมทริกซ์ใน O(log n)
+### ปัญหาที่ 4: การใช้งาน Simple State Machine
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+จำลองสัญญาณไฟจราจรที่วนสีแดง -> เขียว -> เหลือง -> แดง
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้ชนิดข้อมูลพีชคณิตสำหรับสถานะและฟังก์ชันการเปลี่ยนภาพล้วนๆ
+**ขั้นตอนที่ 3: นำไปใช้**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ฟังก์ชั่นบริสุทธิ์สามารถทดสอบได้เล็กน้อย:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## สรุป

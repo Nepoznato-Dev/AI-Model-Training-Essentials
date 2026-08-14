@@ -418,7 +418,7 @@ lazy val root = project
 | `sbt clean`|クリーンなコンパイル済み出力 |
 | `sbt assembly`| fat JAR をビルドする (sbt-assembly プラグインを使用) |
 | `sbt scalafmt`| Scalafmt でコードをフォーマットする |
-| `sbt scalafmtCheck`|コードの形式をチェックする |
+| `sbt scalafmtCheck`|コードのフォーマットをチェックする |
 | `sbt ~compile`|継続的コンパイル (変更時に再コンパイル) |
 ### コードのフォーマット (.scalafmt.conf)
 ```
@@ -855,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | JVM での関数型プログラミング | FP + JVM の最適な組み合わせ |クロジュア |
 |一般的なアプリケーション開発 |可能だが複雑 | Python、Go、Java |
 |データサイエンス |可能だがエコシステムでは不可能 |パイソン、R |
+---
+
+## 総合的な Q&A
+### Q1: Scala の型推論は Java と比較してどのように定型句を削減しますか?
+**A:** Scala のコンパイラは、`val` /`var`宣言、メソッドの戻り値の型、および匿名関数の型を推論します。これにより、ほとんどの場合、明示的な型アノテーションが不要になります。
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+コンパイラは、型パラメーター、単一式メソッドの戻り型、およびパターン一致型も推論します。これにより、安全性を犠牲にすることなくコードが簡潔になります。
+### Q2: 通常の`class`ではなく、どのような場合に`case class`を使用する必要がありますか?
+**A:** 不変データ キャリアには`case class`を使用します。これらは、`equals`、`hashCode`、`toString`、`copy`、およびパターン マッチング サポートを自動的に提供します。
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+経験則: クラスが主にデータである場合は、`case class`を使用します。変更可能な状態または複雑な動作がある場合は、通常の`class`を使用します。
+### Q3: Scala でエラーを慣用的に処理するにはどうすればよいですか?
+**A:** Scala は、例外をスローするよりも、`Option`、`Either`、`Try`のような型を返すことを優先します。
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4:`trait`と`abstract class`の違いは何ですか?
+**A:** 特性は多重継承をサポートしており、型パラメーターと具象メソッドを持つことができます。抽象クラスはコンストラクター パラメーターを持つことができますが、単一の継承のみをサポートします。
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5: JVM 上でパフォーマンスの高い Scala コードを記述するにはどうすればよいですか?
+**A:** 主な実践方法:
+- 同期を回避するには、`case class` と不変データを使用します。
+- 構造共有には`Vector`、`Map`(不変) を優先します
+-`@tailrec`アノテーションを使用して末尾呼び出しの最適化を保証します
+- 過度のボックス化を避け、`Int`、`Double`プリミティブを使用します。
+- 高価な計算には`lazy val`を使用します
+- 大きなシーケンスには`Stream`/`LazyList`を優先します
+- JMH によるプロファイル — Scala の抽象化は効率的なバイトコードにコンパイルされる必要があります
+---
+
+## 思考連鎖による問題解決
+### 問題 1: タイプセーフな式評価器の実装
+**ステップ 1: 問題を理解する**
+変数を使用して数式を評価し、加算、乗算、変数の検索をサポートする必要があります。
+**ステップ 2: アプローチを特定する**
+代数データ型 (シールされた特性 + ケース クラス) を使用して式ツリーをモデル化し、パターン マッチで評価します。
+**ステップ 3: 実装**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**ステップ 4: 検証と拡張**
+`Div` 、`Pow`、`Neg`のケースを追加します。 sealed 特性により、コンパイラーは非完全な一致について警告を発します。
+### 問題 2: HTML 生成用の単純な DSL の構築
+**ステップ 1: 問題を理解する**
+Scala の構文を使用して HTML 文字列を生成するタイプセーフ DSL を作成します。
+**ステップ 2: アプローチを特定する**
+HTML 要素のユースケース クラスと自然な構文の暗黙的な変換。
+**ステップ 3: 実装**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**ステップ 4: 確認**
+DSL はタイプセーフです。誤って非 HTML コンテンツを渡すことはできません。`HtmlNode`のパターン マッチングにより、徹底的なレンダリングが保証されます。
+### 問題 3: Akka ストリームでの同時ワード数
+**ステップ 1: 問題を理解する**
+複数の大きなファイルの単語頻度を同時にカウントします。
+**ステップ 2: アプローチを特定する**
+Scala の並列コレクションまたは Akka Streams を同時処理に使用し、結果をマージします。
+**ステップ 3: 実装**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**ステップ 4: 最適化**
+非常に大規模なデータセットの場合は、バックプレッシャーを備えた Akka Streams を使用します。```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ＃＃ まとめ

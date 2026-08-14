@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Erişilebilirlik ve Kapsayıcı Tasarım
-Erişilebilirlik (genellikle a11y olarak kısaltılır), yazılımın görsel, işitsel, motor, bilişsel ve nörolojik engelli kişiler de dahil olmak üzere herkes tarafından kullanılabilir hale getirilmesi uygulamasıdır. Sahip olunması hoş bir şey değil; Bu, pek çok yargı bölgesinde yasal bir zorunluluktur, ahlaki bir zorunluluktur ve iyi bir mühendisliktir. Erişilebilir yazılım herkes için daha iyi bir yazılımdır çünkü engelli kullanıcılara yardımcı olan tasarım kararları (net yapı, klavyede gezinme, yeterli kontrast, okunabilir metin) tüm kullanıcılar için deneyimi geliştirir.
+Erişilebilirlik (genellikle a11y olarak kısaltılır), yazılımın görsel, işitsel, motor, bilişsel ve nörolojik engelli kişiler de dahil olmak üzere herkes tarafından kullanılabilir hale getirilmesi uygulamasıdır. Birçok yargı alanında yasal bir zorunluluktur ve standart bir mühendislik uygulamasıdır. Erişilebilir yazılım herkes için daha iyi bir yazılımdır çünkü engelli kullanıcıları destekleyen tasarım kararları (açık yapı, klavyede gezinme, yeterli kontrast, okunabilir metin) tüm kullanıcılar için deneyimi geliştirir.
 ---
 
 ## Erişilebilirlikten Kimler Yararlanır?
@@ -128,7 +128,7 @@ ARIA, yerleşik anlambilime sahip olmayan HTML öğelerine erişilebilirlik bilg
 ## Renk ve Görsel Tasarım
 | Kılavuz | Gereksinim |
 |-----------|----------------|
-| **Kontrast oranı** | normal metin için 4,5:1; Büyük metinler için 3:1 (18pt+ veya 14nk+kalın) |
+| **Kontrast oranı** | normal metin için 4,5:1; Büyük metinler için 3:1 (18pt+ veya 14pt+kalın) |
 | **Yalnızca renge güvenmeyin** | Rengin yanı sıra simgeler, metinler veya desenler kullanın |
 | **Odak göstergeleri** | Her zaman görünür; yüksek kontrast; değiştirilmeden asla çıkarılmaz |
 | **Metni yeniden boyutlandırma** | Düzen %200 yakınlaştırmada çalışmalıdır |
@@ -136,7 +136,7 @@ ARIA, yerleşik anlambilime sahip olmayan HTML öğelerine erişilebilirlik bilg
 ### Renk Körlüğüyle İlgili Dikkat Edilmesi Gerekenler
 | Tür | Etkilenen Renkler | Tasarım İpucu |
 |-----||----------|------------|
-| **Döteranopi** | Kırmızı-yeşil (en yaygın) | Durumu iletmek için kırmızı/yeşil kullanmayın; simgeleri + rengi kullanın |
+| **Döteranopi** | Kırmızı-yeşil (en yaygın) | Durumu iletmek için kırmızı/yeşil kullanmayın; simgeleri + rengi kullan |
 | **Protanopi** | Kırmızı-yeşil | Yukarıdakinin aynısı |
 | **Tritanopi** | Mavi-sarı | Tek farklılaştırıcı olarak mavi/sarı kullanmayın |
 ---
@@ -177,4 +177,4 @@ ARIA, yerleşik anlambilime sahip olmayan HTML öğelerine erişilebilirlik bilg
 ---
 
 ## Özet
-Erişilebilirlik, en sonunda eklediğiniz bir özellik değildir; başlangıçtan itibaren her kararda yer alması gereken bir tasarım ilkesidir. Anlamsal HTML kullanın. Klavye navigasyonunun çalıştığından emin olun. Yeterli renk kontrastını koruyun. Metin olmayan içerikler için metin alternatifleri sağlayın. Ekran okuyucularla ve gerçek engelli kullanıcılarla test edin. Sonuç, herkes için daha iyi çalışan bir yazılımdır; yalnızca engelli olanlar için değil, aynı zamanda geçici engelli olanlar, durumsal sınırlamalar, eski cihazlar, yavaş bağlantılar ve gerçek dünya kullanımının geliştiricinin ideal ortamından farklı olduğu binlerce başka yolu olan kişiler için de.
+Erişilebilirlik, sonunda eklenen bir özellik değil, her kararı baştan itibaren bilgilendirmesi gereken bir tasarım ilkesidir. Anlamsal HTML kullanın. Klavye navigasyonunun çalıştığından emin olun. Yeterli renk kontrastını koruyun. Metin olmayan içerikler için metin alternatifleri sağlayın. Ekran okuyucularla ve engelli kullanıcılarla test edin. Sonuç, herkes için daha iyi çalışan bir yazılımdır; buna geçici sorunlar, durumsal sınırlamalar, eski cihazlar, yavaş bağlantılar ve gerçek dünya kullanımının kontrollü bir geliştirme ortamından farklı olduğu pek çok nokta da dahildir.

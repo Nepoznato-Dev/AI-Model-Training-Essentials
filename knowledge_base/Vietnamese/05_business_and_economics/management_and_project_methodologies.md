@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Phương pháp quản lý và dự án
-Quản lý con người và dự án là một trong những điều khó khăn nhất trong bất kỳ tổ chức nào. Kỹ năng kỹ thuật giúp bạn vào phòng, nhưng khả năng lãnh đạo nhóm, đưa ra quyết định, giao tiếp rõ ràng và mang lại kết quả mới là yếu tố quyết định liệu mọi việc có thực sự được thực hiện hay không. Tệp này bao gồm các khuôn khổ, phương pháp và kỹ năng thực tế mà các nhà quản lý và lãnh đạo dự án hiệu quả dựa vào.
+Quản lý con người và dự án là một trong những trách nhiệm đòi hỏi khắt khe nhất trong bất kỳ tổ chức nào. Kỹ năng kỹ thuật cung cấp cơ hội đầu vào, nhưng khả năng lãnh đạo nhóm, đưa ra quyết định, giao tiếp hiệu quả và đưa ra kết quả sẽ quyết định liệu mục tiêu có đạt được hay không. Tệp này bao gồm các khuôn khổ, phương pháp và kỹ năng thực tế mà các nhà quản lý và lãnh đạo dự án hiệu quả áp dụng.
 ---
 
 ## Phong cách lãnh đạo
@@ -138,7 +139,7 @@ OKR là khung thiết lập mục tiêu được Google, Intel, Spotify và nhi�
 **Các phương pháp hay nhất về OKR**:
 - Đặt 3–5 mục tiêu mỗi quý
 - Mỗi mục tiêu có 2–5 kết quả chính
-- Đặt mục tiêu đạt được 70% thành tích (100% có nghĩa là mục tiêu quá dễ dàng)
+- Đặt mục tiêu đạt được 70% (100% có nghĩa là mục tiêu quá dễ dàng)
 - OKR tách biệt với đánh giá hiệu suất
 - Minh bạch: mọi người đều có thể xem OKR của người khác
 ### KPI (Chỉ số hiệu suất chính)
@@ -179,8 +180,8 @@ OKR là khung thiết lập mục tiêu được Google, Intel, Spotify và nhi�
 | Tiếp cận | Mô tả |
 |----------|-------------|
 | **SBI** (Tình huống-Hành vi-Tác động) | "Trong cuộc họp (tình huống) ngày hôm qua, bạn đã làm gián đoạn (hành vi) của khách hàng, khiến họ ngừng hoạt động (tác động)." |
-| **Tiến lên** | Tập trung vào hành vi trong tương lai, không phải những sai lầm trong quá khứ. "Lần sau hãy thử..." |
-| **Thành thực cấp tiến** (Kim Scott) | Quan tâm cá nhân + thử thách trực tiếp. Không quá tử tế (sự đồng cảm tàn hại) và không quá khắc nghiệt (sự hung hăng đáng ghét). |
+| **Tiếp tục** | Tập trung vào hành vi trong tương lai, không phải những sai lầm trong quá khứ. "Lần sau hãy thử..." |
+| **Thành thực cấp tiến** (Kim Scott) | Quan tâm cá nhân + thách thức trực tiếp. Không quá tử tế (sự đồng cảm tàn hại) và không quá khắc nghiệt (sự hung hăng đáng ghét). |
 ---
 
 ## Mô hình ra quyết định
@@ -202,7 +203,7 @@ OKR là khung thiết lập mục tiêu được Google, Intel, Spotify và nhi�
 ##Quản lý rủi ro
 | Bước | Mô tả |
 |------|-------------|
-| **1. Xác định rủi ro** | Nghĩ xem điều gì có thể sai sót (kỹ thuật, tiến độ, nguồn lực, bên ngoài) |
+| **1. Xác định rủi ro** | Nghĩ xem điều gì có thể xảy ra sai sót (kỹ thuật, tiến độ, nguồn lực, bên ngoài) |
 | **2. Đánh giá xác suất và tác động** | Đánh giá từng rủi ro: Cao/Trung bình/Thấp cho cả hai |
 | **3. Ưu tiên** | Tập trung vào các rủi ro có xác suất cao, tác động lớn |
 | **4. Lập kế hoạch phản hồi** | Tránh, giảm thiểu, chuyển giao hoặc chấp nhận từng rủi ro |
@@ -213,7 +214,7 @@ OKR là khung thiết lập mục tiêu được Google, Intel, Spotify và nhi�
 | **Tránh** | Thay đổi kế hoạch để loại bỏ rủi ro | Sử dụng công nghệ đã được chứng minh thay vì thử nghiệm |
 | **Giảm thiểu** | Giảm xác suất hoặc tác động | Thêm thời gian đệm; thuê thêm nhân viên |
 | **Chuyển** | Chuyển rủi ro sang bên thứ ba | Bảo hiểm; gia công phần mềm; hợp đồng giá cố định |
-| **Chấp nhận** | Thừa nhận và lập kế hoạch cho nó nếu nó xảy ra | Quỹ dự phòng; kế hoạch dự phòng |
+| **Chấp nhận** | Thừa nhận và lập kế hoạch nếu điều đó xảy ra | Quỹ dự phòng; kế hoạch dự phòng |
 ---
 
 ## Quản lý nhóm từ xa
@@ -233,7 +234,7 @@ OKR là khung thiết lập mục tiêu được Google, Intel, Spotify và nhi�
 | **Đánh giá nước rút** | 1 giờ | Mỗi lần chạy nước rút | Thử nghiệm; thu thập phản hồi |
 | **Hồi tưởng** | 45–60 phút | Mỗi lần chạy nước rút | Cải tiến quy trình |
 | **1:1** | 30 phút | Hàng tuần/hai tuần | Hỗ trợ và phát triển cá nhân |
-| ** Chung tay** | 30–60 phút | Hàng tháng | Cập nhật về công ty/nhóm; Hỏi đáp |
+| ** Chung tay** | 30–60 phút | Hàng tháng | Cập nhật về công ty/nhóm; Hỏi Đáp |
 **Quy tắc cuộc họp**: Mọi cuộc họp đều cần có chương trình nghị sự. Bắt đầu đúng giờ. Kết thúc đúng giờ. Chỉ định các mục hành động với chủ sở hữu. Nếu nó có thể là một email, hãy biến nó thành một email.
 ---
 
@@ -267,4 +268,4 @@ Quản lý sản phẩm là nguyên tắc quyết định xây dựng cái gì, 
 ---
 
 ## Bản tóm tắt
-Quản lý không phải là chức danh hay sơ đồ tổ chức — mà là hoàn thành những công việc phù hợp thông qua người khác. Những nhà quản lý giỏi nhất kết hợp tư duy rõ ràng (khuôn khổ, phương pháp, thước đo) với trí tuệ cảm xúc (lắng nghe, đồng cảm, tin tưởng). Không có phương pháp nào thay thế được khả năng phán đoán tốt, nhưng khả năng phán đoán tốt được cải thiện nhờ những khuôn khổ tốt. Hãy sử dụng chúng như những công cụ chứ không phải như những tôn giáo.
+Quản lý là thực hành đạt được mục tiêu thông qua người khác. Người quản lý hiệu quả kết hợp tư duy rõ ràng (khuôn khổ, phương pháp, số liệu) với kỹ năng giao tiếp cá nhân (lắng nghe, đồng cảm, tin tưởng). Không có phương pháp luận nào có thể thay thế được khả năng phán đoán tốt, nhưng khả năng phán đoán tốt được nâng cao nhờ các khuôn khổ hợp lý. Những điều này nên được áp dụng như những hướng dẫn thực tế hơn là những học thuyết cứng nhắc.

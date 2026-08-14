@@ -470,7 +470,7 @@ tests:
       - QuickCheck
 ```
 
-### Kluczowe polecenia budowania
+### Kluczowe polecenia tworzenia
 | Polecenie | Opis |
 |--------|------------|
 | `stack new my-project`| Utwórz nowy projekt z szablonu |
@@ -940,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | Ogólne tworzenie aplikacji | Możliwe, ale niszowe | Python, Go, Java |
 | Tworzenie stron internetowych | Yesod/Sługa istnieje, ale jest ograniczony | JavaScript/TypeScript |
 | Nauka o danych | Nie ekosystem | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jak leniwa ocena Haskella wpływa na wydajność?
+**O:** Leniwa ocena oznacza, że ​​wyrażenia są obliczane tylko wtedy, gdy są potrzebne, co umożliwia nieskończoną liczbę struktur danych i potoków, które można komponować. Może jednak spowodować wycieki przestrzeni, jeśli nagromadzą się uderzenia:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Użyj`foldl'`(z`Data.List`) zamiast`foldl`dla zagięć numerycznych. Użyj wzorów huków`!`lub `seq`, aby wymusić ocenę, jeśli zajdzie taka potrzeba.
+### P2: Jaka jest praktyczna różnica między`Functor`,`Applicative`i`Monad`?
+**O:** Każda klasa typów dodaje możliwości:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** odwzorowuje czystą funkcję w kontekście. **Aplikacyjny** stosuje funkcje, które same znajdują się w kontekście. **Monada** pozwala, aby każdy krok był zależny od wyniku poprzedniego kroku. W praktyce: użyj`fmap`/`<$>`do prostych transformacji,`<*>`do łączenia efektów i`>>=`/`do`do sekwencyjnych obliczeń zależnych.
+### P3: Jak sobie poradzić ze skutkami ubocznymi w czystym kodzie Haskell?
+**O:** Użyj systemu typów, aby oddzielić czysty i skuteczny kod:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Zachowaj czystą logikę rdzenia i wypchnij efekty do granic możliwości. Użyj`ReaderT`do konfiguracji,`ExceptT`do błędów i`StateT`do zmiennego stanu.
+### P4: Czym są klasy typów i czym różnią się od interfejsów OOP?
+**O:** Klasy typów definiują zachowanie, które typy mogą implementować. W przeciwieństwie do interfejsów OOP są one otwarte (instancją może być dowolny typ) i obsługują polimorfizm ad hoc:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### P5: Jak zorganizować projekt Haskell do użytku w świecie rzeczywistym?
+**A:** Użyj Cabal lub Stack ze standardowym układem:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Kluczowe praktyki: przechowuj IO w`Main.hs`lub dedykowanym module `IO`, spraw, aby logika rdzenia była czysta i możliwa do testowania, używaj opakowań`newtype`dla typów domen.
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Implementacja funkcji bezpiecznego podziału z raportowaniem błędów
+**Krok 1: Zrozum problem**
+Potrzebujemy podziału, który obsługuje dzielenie przez zero i zgłasza znaczące błędy, a nie tylko awarie.
+**Krok 2: Zidentyfikuj podejście**
+Użyj `Either`, aby zwrócić komunikat o błędzie lub wynik. Dzięki temu możliwość awarii jest wyraźna w typie.
+**Krok 3: Wdróż**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Krok 4: Zweryfikuj**
+System typów gwarantuje, że osoby wywołujące muszą obsłużyć przypadek błędu. Dopasowanie wzorca lub`either`wymusza jawną obsługę.
+### Problem 2: Analiza prostego języka konfiguracyjnego
+**Krok 1: Zrozum problem**
+Przeanalizuj pary klucz-wartość z ciągu znaków, takiego jak`name=Alice\nage=30`.
+**Krok 2: Zidentyfikuj podejście**
+Użyj`Text.Parsec`lub ręcznej rekurencji. Dla uproszczenia użyj`break`i`span`.
+**Krok 3: Wdróż**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Krok 4: Przedłuż**
+Dodaj obsługę komentarzy (`#`), nagłówki sekcji (`[section]`) i wpisz wymuszanie przy użyciu narzędzia ADT `Value`.
+### Problem 3: Budowanie zapamiętanego Fibonacciego z lenistwem
+**Krok 1: Zrozum problem**
+Efektywnie obliczaj liczby Fibonacciego. Naiwna rekurencja jest wykładnicza.
+**Krok 2: Zidentyfikuj podejście**
+Użyj leniwej oceny Haskella, aby utworzyć nieskończoną listę, w której każdy element jest obliczany raz i buforowany.
+**Krok 3: Wdróż**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Krok 4: Optymalizacja**
+Aby uzyskać dostęp losowy, użyj`Data.Array`z leniwą konstrukcją. W przypadku bardzo dużych indeksów użyj potęgowania macierzy w O(log n).
+### Problem 4: Implementacja prostej maszyny stanowej
+**Krok 1: Zrozum problem**
+Modeluj sygnalizację świetlną, która zmienia kolor na czerwony -> zielony -> żółty -> czerwony.
+**Krok 2: Zidentyfikuj podejście**
+Użyj algebraicznego typu danych dla stanów i czystej funkcji przejścia.
+**Krok 3: Wdróż**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Krok 4: Zweryfikuj**
+Czyste funkcje można w prosty sposób testować:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Streszczenie

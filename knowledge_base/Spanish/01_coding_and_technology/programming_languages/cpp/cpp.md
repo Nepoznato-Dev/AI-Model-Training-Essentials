@@ -1,46 +1,51 @@
 ---
-# Metadatos
-título: "C++"
-descripción: "Referencia completa para el lenguaje de programación C++ que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "C++"
+description: "Comprehensive reference for the C++ programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [cpp, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "31 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [cpp, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C++
 C++ es un lenguaje de programación compilado de propósito general creado por Bjarne Stroustrup, lanzado por primera vez en 1985. Amplía C con características orientadas a objetos, genéricos y, en versiones modernas (C++11 y posteriores), abstracciones de alto nivel como lambdas, punteros inteligentes y la biblioteca de plantillas estándar (STL). C++ sigue el principio de "abstracción sin gastos generales": no debes pagar por funciones que no utilizas.
 C++ es el lenguaje elegido cuando se necesita alto rendimiento y potencia expresiva. Impulsa motores de juegos (Unreal Engine), navegadores (Chrome, Firefox), bases de datos (MongoDB), sistemas operativos (partes de Windows y macOS), sistemas de comercio financiero y simulaciones en tiempo real.
 ---
 
 ## Por qué es importante C++
-- **Rendimiento con expresividad**: velocidad cercana a C con clases, plantillas y abstracciones modernas.
+- **Rendimiento con expresividad**: Velocidad cercana a C con clases, plantillas y abstracciones modernas.
 - **Principio de sobrecarga cero**: las abstracciones se compilan en el mismo código que escribirías a mano en C.
 - **Base de código masiva**: Décadas de infraestructura crítica: juegos, navegadores, bases de datos, sistemas integrados.
 - **Multiparadigma**: admite estilos de programación procedimental, orientada a objetos, genérica y funcional.
@@ -734,5 +739,379 @@ cmake --build build
 Para proyectos nuevos, apunte a C++20 como mínimo.
 ---
 
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre `std::unique_ptr`,`std::shared_ptr`y `std::weak_ptr`?
+**R:**`unique_ptr`representa propiedad exclusiva: solo un puntero puede poseer el recurso. No tiene sobrecarga (igual que un puntero sin formato) y no se puede copiar, solo mover. `shared_ptr`representa propiedad compartida: varios punteros comparten el recurso, con recuento de referencias. Cuando se destruye el último `shared_ptr`, el recurso se libera. `weak_ptr`es un observador no propietario de `shared_ptr`: no aumenta el recuento de referencias y se utiliza para romper referencias circulares.
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### P2: ¿Qué es la semántica de movimientos y por qué son importantes?
+**R:** La semántica de movimiento (C++11) permite transferir recursos (memoria dinámica, identificadores de archivos, etc.) desde un objeto temporal en lugar de copiarlos. Un constructor/asignación de movimiento toma una referencia de valor (`T&&`) y "roba" los recursos de la fuente, dejándola en un estado válido pero no especificado. Esto elimina copias innecesarias y es la razón por la que la reasignación de`std::vector`es eficiente.
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### P3: ¿Cuándo debo usar`auto`y cuándo debo especificar los tipos explícitamente?
+**R:** Utilice`auto`cuando el tipo sea obvio por el contexto (bucles de iterador, llamadas `make_unique`/`make_shared`, tipos lambda, tipos de plantillas complejas). Especifique tipos explícitamente cuando el tipo no sea obvio, cuando necesite conversiones implícitas o en firmas de API públicas. El estilo "Casi siempre automático" (AAA) favorece`auto`para variables locales; el estilo "automático cuando sea útil" es más conservador.
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### P4: ¿Cómo mejoran los conceptos (C++20) el código de la plantilla?
+**R:** Los conceptos restringen los parámetros de la plantilla con requisitos nombrados, lo que produce mensajes de error claros y permite la sobrecarga de funciones en las restricciones de la plantilla. Antes de los conceptos, se usaban SFINAE y `static_assert`; ambos producen errores crípticos. Los conceptos hacen que el código de plantilla sea legible y componible.
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### P5: ¿Qué es la Regla de Cinco y cómo se relaciona con la Regla de Cero?
+**R:** La regla de los cinco: si define cualquiera de los siguientes: destructor, constructor de copia, asignación de copia, constructor de movimiento o asignación de movimiento, debe definir los cinco. La regla del cero (preferida): diseñe clases para que no necesiten ninguno de estos; use tipos RAII (`std::string`,`std::vector`,`std::unique_ptr`) como miembros, y los especiales generados por el compilador harán lo correcto automáticamente.
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: implementar una cola de productor-consumidor segura para subprocesos con rangos
+**Declaración del problema:** Cree una cola de productor-consumidor limitada y segura para subprocesos utilizando rangos de C++20 para el lado del consumidor. La cola debería bloquear a los productores cuando estén llenas y a los consumidores cuando estén vacías, y admitir un cierre ordenado.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) una cola limitada con bloqueo push/pop, (2) seguridad de subprocesos mediante mutex y variables de condición, (3) una forma de señalar el apagado, (4) integración de rangos C++20 para que los consumidores puedan usar bucles for basados en rangos.
+**Paso 2: Identifique el enfoque:**
+- Utilice`std::mutex`+`std::condition_variable`para bloquear.
+- Utilice`std::queue<T>`como contenedor subyacente.
+- Utilice`std::optional<T>`como tipo de retorno:`std::nullopt`indica apagado.
+- Implementar un iterador basado en centinela para soporte de rangos.
+**Paso 3: Implementar la solución:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+**Paso 4: Verificar y optimizar:**
+- Seguridad de subprocesos:`std::mutex`protege todos los estados de la cola; las variables de condición manejan el bloqueo.
+- Apagado elegante:`shutdown()`despierta a todos los camareros; `pop()`devuelve`nullopt`cuando está vacío y apagado.
+- Soporte de rango: el centinela del iterador (construido por defecto) se compara con cualquier iterador agotado.
+- Producción: utilice`boost::lockfree::spsc_queue`para un solo productor y un solo consumidor sin bloqueo, o`folly::ProducerConsumerQueue`para escenarios de alto rendimiento.
+### Problema 2: implementar cualquier tipo borrado de tipo
+**Declaración del problema:** Implemente una versión simplificada de`std::any`(C++17) desde cero: un contenedor con seguridad de tipos para valores únicos de cualquier tipo, que admite copia, movimiento y recuperación con seguridad de tipos a través de `any_cast`.
+**Paso 1: comprenda el problema:**
+`std::any`almacena un valor de cualquier tipo copiable y lo recupera con verificación de tipo. Internamente, utiliza borrado de tipos: una interfaz de clase base con una plantilla derivada que contiene el valor real. `any_cast`comprueba el tipo almacenado en tiempo de ejecución y genera`bad_any_cast`si no coincide.
+**Paso 2: Identifique el enfoque:**
+- Utilice una clase base`HolderBase`con`clone()`y`type()`virtuales.
+- Utilice una plantilla derivada`Holder<T>`que almacene el valor real.
+- Almacenar un`std::unique_ptr<HolderBase>`en la clase `Any`.
+-`any_cast<T>`comprueba`typeid`y realiza un `static_cast`.
+**Paso 3: Implementar la solución:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+**Paso 4: Verificar y optimizar:**
+- Seguridad de tipos:`any_cast`comprueba`typeid`en tiempo de ejecución; el tipo incorrecto arroja `BadAnyCast`.
+- Copiar semántica: virtual`clone()`crea una copia profunda del valor retenido.
+- Semántica de movimiento: el constructor/asignación de movimiento predeterminado transfiere el`unique_ptr`de manera eficiente.
+- Optimización de búfer pequeño (como`std::any`real): almacena tipos pequeños en línea sin asignación de montón. Esto requiere un`union`con un búfer de bytes, significativamente más complejo.
+- Producción: use`std::any`(C++17): es estándar, está bien probado y puede incluir SBO.
+---
+
 ## Resumen
-C++ ocupa una posición única en programación: le brinda el rendimiento bruto de C con el poder expresivo de las abstracciones de alto nivel. El C++ moderno (C++ 20/23) es un lenguaje muy diferente del C++ de la década de 1990: es más seguro, más expresivo y más productivo. La curva de aprendizaje es pronunciada y el idioma premia la disciplina. Para aplicaciones críticas para el rendimiento en las que necesita un control detallado, C++ sigue siendo una de las mejores herramientas disponibles.
+C++ ocupa una posición única en programación: le brinda el rendimiento puro de C con el poder expresivo de las abstracciones de alto nivel. El C++ moderno (C++ 20/23) es un lenguaje muy diferente del C++ de la década de 1990: es más seguro, más expresivo y más productivo. La curva de aprendizaje es pronunciada y el idioma recompensa la disciplina. Para aplicaciones críticas para el rendimiento en las que necesita un control detallado, C++ sigue siendo una de las mejores herramientas disponibles.

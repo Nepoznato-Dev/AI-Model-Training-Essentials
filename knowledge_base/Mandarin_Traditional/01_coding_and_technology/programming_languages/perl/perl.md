@@ -40,9 +40,9 @@ contribution:
 ---
 
 # 珀爾
-Perl 由 Larry Wall 於 1987 年創建，是一種實用的文字處理工具。它成為早期 Web 開發（CGI 腳本）、系統管理、生物資訊學和網路程式設計的支柱。 Perl 的哲學是「有不止一種方法可以做到這一點」（TMTOWTDI）——該語言為每個問題提供了多種方法，注重表現力而不是統一性。
+Perl 由 Larry Wall 於 1987 年創建，作為一種實用的文字處理工具。它成為早期 Web 開發（CGI 腳本）、系統管理、生物資訊學和網路程式設計的支柱。 Perl 的哲學是「有不止一種方法可以做到這一點」（TMTOWTDI）——該語言為每個問題提供了多種方法，注重表現力而不是統一性。
 Perl 對現代程式設計的影響是巨大的，但往往是無形的：受 Perl 模式匹配影響的正規表示式現在已成為 Python、JavaScript、Java 和大多數其他語言的標準。 CPAN（綜合 Perl 存檔網路）是最早的軟體包儲存庫之一，並啟發了後來的系統，例如 Python 的 PyPI 和 Node 的 npm。
-雖然 Perl 的受歡迎程度自 2000 年代初期達到頂峰以來已經有所下降，但它仍然廣泛應用於遺留系統、文字處理管道和系統管理。 Perl 6（現在稱為 **Raku**）是一種獨立的語言，它重新構想了 Perl 的許多概念。
+雖然 Perl 的受歡迎程度自 2000 年代初達到頂峰以來已經有所下降，但它仍然廣泛用於遺留系統、文字處理管道和系統管理。 Perl 6（現在稱為 **Raku**）是一種獨立的語言，它重新構想了 Perl 的許多概念。
 ---
 
 ## 為什麼 Perl 很重要
@@ -60,7 +60,7 @@ Perl 對現代程式設計的影響是巨大的，但往往是無形的：受 Pe
 | **兩個主要版本** | Perl 5 和 Raku (Perl 6) 是不同的語言 |使用 Perl 5 進行現有工作； Raku 新專案 |
 | **不時** |很少在訓練營或大學教授|豐富的文檔和 CPAN 模組 |
 | **可變印記** |`$`、`@`、`%`前綴可能會讓初學者感到困惑 |學習圖案：`$scalar`、`@array`、`%hash`|
-| **效能** |對於運算量大的任務來說比編譯語言慢 |使用C擴充；不是適合 HPC 的工具 |
+| **效能** |對於運算量大的任務，比編譯語言慢 |使用C擴充；不是適合 HPC 的工具 |
 ---
 
 ## 文法基礎知識
@@ -178,9 +178,9 @@ if ($@) {
 ---
 
 ## Perl 對其他語言的影響
-|特色 |採用它的語言 |
+|特色|採用它的語言 |
 |---------|--------------------------------|
-|正規表示式| Python、JavaScript、Java、Ruby、C#、PHP |
+|正規表示式 | Python、JavaScript、Java、Ruby、C#、PHP |
 |套件儲存庫 (CPAN) | PyPI、npm、RubyGems、crates.io |
 |此處文檔 | Python、Ruby、PHP、Shell、JavaScript |
 |`$_`預設變數 | Ruby 的`$_`、PowerShell 的`$_`|
@@ -573,7 +573,7 @@ CMD ["perl", "bin/myapp.pl"]
 ---
 
 ## 何時使用 Perl
-|場景 |為什麼選擇 Perl |更好的選擇|
+|場景|為什麼選擇 Perl |更好的選擇|
 |----------|---------|--------------------|
 |文字處理/解析|一流的正規表示式引擎 |用於結構化資料的 Python |
 |日誌檔分析 |快速單行、經過驗證的工具 |`awk`/`sed`適用於簡單情況；複雜的Python |
@@ -584,6 +584,165 @@ CMD ["perl", "bin/myapp.pl"]
 |網頁開發| CGI時代結束了 | Python、Node.js、Go、PHP |
 |新大型專案|社群繼續前進 | Go、Rust、Python |
 |資料科學/機器學習 |不是生態系| Python、R |
+---
+
+## 綜合問答
+### Q1：`my`、`our`和`local`之間有什麼不同？
+**A:** 這些關鍵字控制變數範圍：
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2：如何在 Perl 中有效率地處理文字檔？
+**答：** Perl 擅長文字處理。使用菱形運算子和正規表示式：
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3：如何使用引用和複雜的資料結構？
+**A:** 引用是 Perl 建立巢狀結構的方式：
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4：我應該知道哪些 Perl 的特殊變數？
+**A:** Perl 有許多特殊變數。最重要的是：
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5：如何寫出現代的、可維護的 Perl？
+**A:** 現代 Perl 的最佳實踐：
+- 始終使用`strict`和 `warnings`
+- 對所有變數使用 `my`
+- 使用詞法檔案句柄：`open my $fh, '<', $file`
+- 使用 CPAN 的模組（Moo/Moose 用於 OOP，Try::Tiny 用於錯誤）
+- 使用`say`取代`print`（使用`feature 'say'`）
+- 使用`perltidy`格式化
+---
+
+## 解決問題的思路
+### 問題1：日誌檔分析
+**第 1 步：了解問題**
+解析 Apache 存取日誌並計算每個 IP 位址的請求數。
+**第 2 步：確定方法**
+使用正規表示式擷取 IP 位址，使用雜湊計算出現次數。
+**步驟 3：實施**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**第 4 步：擴充**
+新增日期過濾、狀態代碼分析和輸出為 CSV。
+### 問題 2：使用正規表示式批次重命名文件
+**第 1 步：了解問題**
+重新命名與模式相符的文件，使用正規表示式轉換檔案名稱。
+**第 2 步：確定方法**
+使用`glob`或`opendir`尋找文件，使用正規表示式轉換名稱。
+**步驟 3：實施**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**第 4 步：驗證**
+首先使用`--dry-run`標誌運行（僅列印，不移動）。
+### 問題 3：建立一個簡單的 Web Scraper
+**第 1 步：了解問題**
+獲取網頁並提取所有連結。
+**第 2 步：確定方法**
+使用`LWP::Simple`進行取得和正規表示式或`HTML::LinkExtor`進行解析。
+**步驟 3：實施**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**第 4 步：擴充**
+處理相對 URL、按網域過濾並遵循分頁。
 ---
 
 ＃＃ 概括

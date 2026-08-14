@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "مبانی شبکه"
-توضیحات: "مدل OSI، TCP/IP، پروتکل ها، امنیت"
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب‌ها: [شبکه، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "12 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Networking Basics"
+description: "OSI model, TCP/IP, protocols, security"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [networking, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "12 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # مبانی شبکه
 یک مرجع عملی برای توسعه دهندگان و sysadmin ها - مفاهیم اصلی، پروتکل ها، دستورات و عیب یابی.
 ---
@@ -54,10 +59,10 @@ next_review: "05-08-2027"
 
 ## آدرس IP
 ### IPv4
-- آدرس 32 بیتی، که به صورت چهار اکتت نوشته شده است:`192.168.1.1`
+- آدرس 32 بیتی که به صورت چهار اکتت نوشته شده است:`192.168.1.1`
 - مجموع: ~4.3 میلیارد آدرس (اما در عمل خسته شده است).
 ### IPv6
-- آدرس 128 بیتی، نوشته شده به صورت هگز:`2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- آدرس 128 بیتی که به صورت هگز نوشته شده است:`2001:0db8:85a3:0000:0000:8a2e:0370:7334`
 - مجموع: 2¹²8 آدرس (عملا بی نهایت).
 ### محدوده IP خصوصی (RFC 1918)
 اینها در اینترنت قابل مسیریابی نیستند. مورد استفاده در شبکه های محلی:
@@ -153,7 +158,7 @@ nmap localhost            # Scan local ports
 | سربرگ | هدف |
 |--------|---------|
 | `Content-Type`| نوع رسانه (`application/json`,`text/html`) |
-|  __محافظت شده_3__ | اعتبارنامه ها (به عنوان مثال،`Bearer <token>`) |
+| `Authorization`| اعتبارنامه (به عنوان مثال، `Bearer <token>`) |
 | `Cache-Control`| سیاست ذخیره سازی |
 | سربرگ CORS | `Access-Control-Allow-Origin`و غیره |
 ---

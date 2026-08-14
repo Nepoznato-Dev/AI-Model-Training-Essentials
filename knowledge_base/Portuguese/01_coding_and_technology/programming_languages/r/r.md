@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #R
 R é uma linguagem de programação e ambiente projetado especificamente para computação estatística e análise de dados. Criado por Ross Ihaka e Robert Gentleman na Universidade de Auckland em 1993 (daí "R"), é uma implementação da linguagem S com extensões significativas. R é de código aberto e mantido pela R Core Team. É a ferramenta padrão para estatísticos, analistas de dados e pesquisadores da academia, saúde, finanças e governo.
 R é excelente em manipulação de dados, modelagem estatística, visualização e relatórios. Seu ecossistema de pacotes (CRAN) possui mais de 20.000 pacotes que cobrem praticamente todos os métodos estatísticos já desenvolvidos.
@@ -603,6 +604,178 @@ CMD ["R","-e","shiny::runApp('/app',port=3838)"]
 | Sistemas de ML de produção | Não projetado para implantação | Python, Java |
 | Desenvolvimento web | Não adequado | Javascript, Python |
 | Processamento de dados em grande escala | Limitado à memória | Python (PySpark), SQL |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre`<-`e`=`para atribuição?
+**R:** Ambos atribuem valores, mas`<-`é o operador de atribuição idiomático do R. Funciona em todos os contextos, inclusive dentro de chamadas de função:
+```r
+# Both work
+x <- 10
+x = 10
+
+# <- works inside function argument lists (rare but valid)
+mean(x <- 1:10)  # assigns AND computes mean
+
+# = is required for named function arguments
+mean(x = 1:10)   # named argument, NOT assignment
+
+# Convention: use <- for assignment, = for function arguments
+```
+
+### Q2: Como lidar com dados ausentes em R?
+**A:** R usa`NA`para valores ausentes. A maioria das funções possui um parâmetro `na.rm`:
+```r
+x <- c(1, 2, NA, 4, 5)
+mean(x)              # NA — NA propagates
+mean(x, na.rm = TRUE) # 3 — removes NAs first
+
+# Check for NA
+is.na(x)             # FALSE FALSE TRUE FALSE FALSE
+
+# Remove NAs
+clean <- na.omit(x)  # 1 2 4 5 (with attributes)
+
+# Replace NAs
+x[is.na(x)] <- 0
+
+# NaN, NULL, Inf
+is.nan(0/0)          # TRUE
+is.null(NULL)        # TRUE
+is.infinite(1/0)     # TRUE
+```
+
+### Q3: Quando devo usar`lapply`vs`sapply`vs`vapply`?
+**R:** Todos aplicam uma função sobre uma lista/vetor, mas diferem na saída:
+```r
+# lapply — always returns a list
+lapply(1:5, function(x) x^2)  # list(1, 4, 9, 16, 25)
+
+# sapply — simplifies to vector/matrix if possible
+sapply(1:5, function(x) x^2)  # c(1, 4, 9, 16, 25)
+
+# vapply — like sapply but you specify the output type (safer)
+vapply(1:5, function(x) x^2, numeric(1))  # c(1, 4, 9, 16, 25)
+
+# Best practice: use vapply for safety, or purrr::map variants
+library(purrr)
+map_dbl(1:5, ~ .x^2)  # type-safe, returns double vector
+```
+
+### Q4: Como faço para criar visualizações eficazes com ggplot2?
+**R:** Siga a gramática dos gráficos — mapeie a estética dos dados em propriedades visuais:
+```r
+library(ggplot2)
+
+# Layered approach
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = FALSE) +
+  facet_wrap(~gear) +
+  labs(title = "Weight vs MPG", x = "Weight (1000 lbs)", y = "Miles per Gallon") +
+  theme_minimal()
+```
+
+### Q5: Como escrevo código R eficiente para grandes conjuntos de dados?
+**R:** Principais práticas:
+- Pré-alocar vetores:`x <- numeric(n)`em vez de crescer com`c()`
+- Use`data.table`para grandes conjuntos de dados (100x mais rápido que data.frame)
+- Operações de vetorização — evite loops sempre que possível
+- Use`vapply`sobre`sapply`para segurança de tipo
+- Perfil com`Rprof()`ou`profvis`
+- Considere o pacote`arrow`para dados fora do núcleo
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Limpando e analisando um conjunto de dados bagunçado
+**Etapa 1: Entenda o problema**
+Temos um quadro de dados com valores ausentes, tipos inconsistentes e valores discrepantes. Precisamos limpá-lo e calcular estatísticas resumidas.
+**Etapa 2: Identifique a abordagem**
+Use verbos tidyverse:`filter`,`mutate`,`summarize`e`group_by`.
+**Etapa 3: Implementar**```r
+library(tidyverse)
+
+# Load and inspect
+df <- read_csv("data.csv")
+glimpse(df)
+
+# Clean: remove rows with all NA, fix types, filter outliers
+clean_df <- df %>%
+  drop_na() %>%
+  mutate(
+    age = as.integer(age),
+    income = as.numeric(income),
+    date = as.Date(date)
+  ) %>%
+  filter(between(age, 18, 120), income > 0)
+
+# Summarize
+summary_stats <- clean_df %>%
+  group_by(region) %>%
+  summarize(
+    n = n(),
+    mean_income = mean(income),
+    median_age = median(age),
+    sd_income = sd(income)
+  ) %>%
+  arrange(desc(mean_income))
+```
+
+**Etapa 4: verificar**
+Verifique as contagens de linhas antes/depois, valide os intervalos e verifique os totais com os dados de origem.
+### Problema 2: Construindo um modelo de regressão linear
+**Etapa 1: Entenda o problema**
+Preveja uma variável de resultado contínua a partir de vários preditores.
+**Etapa 2: Identifique a abordagem**
+Use`lm()`para regressão linear, verifique suposições e avalie o ajuste do modelo.
+**Etapa 3: Implementar**```r
+# Fit model
+model <- lm(mpg ~ wt + hp + cyl, data = mtcars)
+summary(model)
+
+# Check assumptions
+par(mfrow = c(2, 2))
+plot(model)
+
+# Predictions
+new_data <- data.frame(wt = 3, hp = 150, cyl = 6)
+predict(model, newdata = new_data, interval = "prediction")
+
+# Compare models
+model2 <- lm(mpg ~ wt * hp + cyl, data = mtcars)
+AIC(model, model2)
+```
+
+**Etapa 4: avaliar**
+Verifique R-quadrado, gráficos residuais para padrões e AIC para comparação de modelos.
+### Problema 3: Criando um relatório reproduzível
+**Etapa 1: Entenda o problema**
+Crie um relatório que combine análises, visualizações e texto narrativo em um formato reproduzível.
+**Etapa 2: Identifique a abordagem**
+Use R Markdown (ou Quarto) para intercalar pedaços de código com texto.
+**Etapa 3: Implementar**```markdown
+---
+title: "Analysis Report"
+output: html_document
+---
+
+## Data Overview
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+biblioteca (tidyverse)
+dados <- read_csv("dados.csv")```
+
+The dataset contains `r nrow(data)` observations.
+
+## Results
+
+```{r plot}
+ggplot(dados, aes(x, y)) + geom_point() + geom_smooth()```
+```
+
+**Etapa 4: Renderizar**
+`rmarkdown::render("report.Rmd")`produz um documento HTML independente.
 ---
 
 ## Resumo

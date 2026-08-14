@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Javascript
 JavaScript là ngôn ngữ lập trình động, được diễn giải do Brendan Eich tạo ra chỉ trong 10 ngày vào năm 1995. Ban đầu được thiết kế để thêm tính tương tác vào các trang web, nó đã phát triển thành ngôn ngữ lập trình được sử dụng rộng rãi nhất trên thế giới. JavaScript chạy trong mọi trình duyệt web, trên máy chủ thông qua Node.js, trong ứng dụng máy tính để bàn (Electron), ứng dụng di động (React Native) và thậm chí cả các hệ thống nhúng.
 Ngôn ngữ này độc đáo ở chỗ về cơ bản nó là lựa chọn duy nhất để phát triển web phía máy khách - mọi trình duyệt đều hỗ trợ ngôn ngữ này. Sự độc quyền này, kết hợp với sự gia tăng của JavaScript full-stack (Node.js, Deno, Bun), khiến nó trở nên không thể thiếu.
@@ -55,7 +56,7 @@ Ngôn ngữ này độc đáo ở chỗ về cơ bản nó là lựa chọn duy 
 |----------|----------|-------------------|
 | **Cạm bẫy khi gõ động** | Không kiểm tra kiểu thời gian biên dịch; lỗi xuất hiện trong thời gian chạy | Sử dụng TypeScript (một siêu tập hợp JavaScript được gõ) |
 | **Độ phức tạp của cuộc gọi lại** | Các lệnh gọi lại lồng nhau có thể trở nên không thể đọc được ("gọi lại địa ngục") | Sử dụng Lời hứa và async/await |
-| **Ngữ nghĩa kỳ quặc** | `==`so với`===`,`this`ràng buộc, nâng, ép kiểu | Tìm hiểu những điều kỳ quặc; sử dụng ESLint; thích`const`/`let`hơn`var`|
+| **Ngữ nghĩa kỳ quặc** | `==`vs`===`,`this`ràng buộc, cẩu, ép kiểu | Tìm hiểu những điều kỳ quặc; sử dụng ESLint; thích`const`/`let`hơn`var`|
 | **Đơn luồng** | Các tác vụ liên kết với CPU chặn vòng lặp sự kiện | Sử dụng Web Worker, luồng công việc hoặc giảm tải cho các mô-đun gốc |
 | **Chất lượng gói hàng** | tính mở của npm có nghĩa là chất lượng không nhất quán và rủi ro bảo mật | Kiểm toán phụ thuộc; sử dụng tập tin khóa; thích các gói được bảo trì tốt |
 ---
@@ -1057,5 +1058,418 @@ pm2 startup
 | Lập trình hệ thống | Mức độ trừu tượng sai | C, C++, Rust, Đi |
 ---
 
+## Hỏi đáp tổng hợp
+### Câu hỏi 1: Sự khác biệt giữa`var`,`let`và`const`là gì và khi nào tôi nên sử dụng từng loại?
+**A:**`var`nằm trong phạm vi chức năng và được nâng lên — hãy tránh sử dụng nó trong mã hiện đại. `let`có phạm vi khối và cho phép gán lại. `const`có phạm vi khối và ngăn chặn việc gán lại (nhưng các đối tượng/mảng mà nó tham chiếu vẫn có thể thay đổi). Cách thực hành tốt nhất: mặc định là`const`, chỉ sử dụng`let`khi bạn cần chỉ định lại, không bao giờ sử dụng`var`.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Câu 2:`this`hoạt động như thế nào trong JavaScript và tại sao nó lại khó hiểu đến vậy?
+**A:**`this`được xác định bởi **cách gọi một hàm**, chứ không phải nơi nó được xác định. Trong cuộc gọi phương thức,`this`là đối tượng. Trong cuộc gọi độc lập, đó là`undefined`(chế độ nghiêm ngặt) hoặc`global`(không nghiêm ngặt). Các hàm mũi tên kế thừa`this`từ phạm vi kèm theo của chúng - đây là lý do tại sao chúng được ưu tiên cho các lệnh gọi lại. Sử dụng`.bind()`để đặt rõ ràng`this`.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Câu 3: Vòng lặp sự kiện là gì và async/await thực sự hoạt động như thế nào?
+**A:** JavaScript đơn luồng với vòng lặp sự kiện xử lý hàng đợi. Ngăn xếp cuộc gọi thực thi mã đồng bộ. Khi trống, vòng lặp sự kiện sẽ chọn nhiệm vụ tiếp theo từ hàng đợi vi nhiệm vụ (Lời hứa) hoặc hàng đợi nhiệm vụ vĩ mô (setTimeout, I/O). `async/await`là đường cú pháp so với Lời hứa -`await`tạm dừng chức năng không đồng bộ và tiếp tục khi Lời hứa được giải quyết mà không chặn luồng.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4: Tôi nên xử lý lỗi trong JavaScript hiện đại như thế nào?
+**A:** Sử dụng`try/catch`cho mã đồng bộ và`.catch()`hoặc`try/catch`với`async/await`cho mã không đồng bộ. Luôn xử lý các lời từ chối Promise - những lời từ chối không được xử lý làm hỏng Node.js. Tạo các lớp lỗi tùy chỉnh cho các lỗi theo miền cụ thể. Sử dụng trình xử lý lỗi toàn cầu làm mạng lưới an toàn.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Câu 5: Khi nào tôi nên sử dụng`Map`/`Set`thay vì các đối tượng/mảng đơn giản?
+**A:** Sử dụng`Map`khi khóa không phải là chuỗi, khi bạn cần lặp lại thứ tự chèn, khi bạn cần`.size`hoặc khi bạn thường xuyên thêm/xóa các mục nhập (hiệu suất tốt hơn so với đối tượng). Sử dụng`Set`cho các bộ sưu tập độc đáo với tính năng tra cứu O(1) — nhanh hơn nhiều so với`array.includes()`cho các tập dữ liệu lớn. Sử dụng các đối tượng đơn giản cho dữ liệu có thể tuần tự hóa JSON đơn giản và các bản đồ khóa-giá trị nhỏ có khóa chuỗi.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Triển khai hàm Debounce
+**Báo cáo sự cố:** Triển khai tiện ích`debounce`giúp trì hoãn việc gọi hàm cho đến khi hết một khoảng thời gian chờ được chỉ định kể từ lần cuối cùng nó được gọi. Hỗ trợ cả lệnh gọi cạnh đầu và cuối.
+**Bước 1 — Tìm hiểu vấn đề:**
+Hàm bị trả lại sẽ bỏ qua các cuộc gọi liên tiếp nhanh chóng và chỉ kích hoạt sau khi các cuộc gọi dừng trong thời gian chờ. “Dẫn đầu” có nghĩa là khai hỏa ngay từ cuộc gọi đầu tiên. "Trailing edge" có nghĩa là cháy sau thời gian chờ đợi. Chúng tôi cần xử lý cả hai chế độ và hỗ trợ hủy.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Lưu trữ ID hẹn giờ trong một bao đóng.
+- Trên mỗi cuộc gọi: xóa bộ hẹn giờ hiện có, sau đó đặt`setTimeout`mới.
+- Đối với cạnh đầu: gọi ngay nếu không có hẹn giờ hoạt động.
+- Trả về hàm đã được gỡ bỏ bằng phương thức `.cancel()`.
+- Bảo toàn bối cảnh và đối số`this`bằng cách sử dụng các hàm mũi tên hoặc`.apply()`.
+**Bước 3 — Triển khai giải pháp:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Việc đóng cửa duy trì trạng thái qua các cuộc gọi mà không gây ô nhiễm phạm vi toàn cầu.
+-`clearTimeout`trước`setTimeout`đảm bảo chỉ thực hiện cuộc gọi cuối cùng kích hoạt.
+-`.cancel()`rất quan trọng cho việc dọn dẹp (ví dụ: ngắt kết nối thành phần trong React).
+- Trường hợp cạnh: nếu`wait`bằng 0, hàm sẽ kích hoạt ở dấu kiểm vòng lặp sự kiện tiếp theo — hữu ích cho việc phân nhóm các bản cập nhật DOM.
+### Vấn đề 2: Xây dựng bộ giới hạn tỷ lệ dựa trên lời hứa
+**Báo cáo vấn đề:** Tạo bộ giới hạn tốc độ cho phép tối đa N yêu cầu trong mỗi khoảng thời gian. Nó sẽ trả về các Lời hứa sẽ giải quyết khi người gọi được phép tiếp tục và xếp hàng các yêu cầu vượt quá.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần một cửa sổ trượt hoặc cố định để theo dõi số lượng cuộc gọi đã được thực hiện. Khi đạt đến giới hạn, các cuộc gọi mới sẽ được xếp hàng đợi và giải quyết khi có chỗ trống. Đây là mẫu "thùng mã thông báo".
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Theo dõi dấu thời gian của các cuộc gọi gần đây trong một mảng.
+- Trên mỗi cuộc gọi: xóa dấu thời gian cũ hơn cửa sổ, kiểm tra xem số đếm có < giới hạn không.
+- Nếu dưới giới hạn: giải quyết ngay.
+- Nếu ở giới hạn: tính toán thời điểm dấu thời gian cũ nhất hết hạn, đặt`setTimeout`, sau đó giải quyết.
+- Sử dụng hàng đợi (mảng các hàm phân giải) để chờ người gọi.
+**Bước 3 — Triển khai giải pháp:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Phương pháp cửa sổ trượt công bằng hơn so với cửa sổ cố định (không bị vỡ ở ranh giới cửa sổ).
+- Xử lý hàng đợi là FIFO - người gọi được phục vụ theo thứ tự.
+- Đối với sản xuất: thêm hỗ trợ`AbortController`để người gọi có thể hủy chờ.
+- Hiệu suất:`_cleanOldTimestamps`là O(n) mỗi cuộc gọi nhưng n bị giới hạn bởi`maxCalls`.
+### Vấn đề 3: Triển khai chức năng Deep Clone
+**Báo cáo vấn đề:** Viết hàm sao chép sâu mọi giá trị JavaScript, xử lý các đối tượng, mảng, Ngày, RegExps, Bản đồ, Bộ, tham chiếu vòng tròn và mảng đã nhập.
+**Bước 1 — Tìm hiểu vấn đề:**
+`JSON.parse(JSON.stringify(obj))`không thành công trên: `undefined`, hàm, Biểu tượng, Ngày tháng (trở thành chuỗi), RegExps (trở thành đối tượng trống), Bản đồ, Bộ, tham chiếu vòng tròn (ném) và mảng đã nhập. Chúng ta cần một giải pháp đệ quy để theo dõi các đối tượng đã truy cập.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`Map`để theo dõi các đối tượng đã được sao chép (xử lý các tham chiếu vòng tròn).
+- Xử lý đặc biệt từng loại: Ngày → Ngày mới, RegExp → RegExp mới, Bản đồ → Bản đồ mới với các mục được sao chép, Bộ → Bộ mới với các giá trị được sao chép.
+- Sử dụng`structuredClone()`làm giải pháp thay thế tích hợp hiện đại (có sẵn trong trình duyệt và Node.js 17+).
+**Bước 3 — Triển khai giải pháp:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Tham chiếu vòng: Bản đồ`seen`trả về bản sao đã được tạo thay vì đệ quy vô hạn.
+- Bộ mô tả thuộc tính:`Reflect.ownKeys`+`getOwnPropertyDescriptor`bảo toàn các thuộc tính getters, setters và không thể đếm được.
+- Giải pháp thay thế hiện đại:`structuredClone(value)`xử lý nguyên bản hầu hết các trường hợp này (ngoại trừ các hàm và nút DOM). Thích nó khi có sẵn.
+- Hiệu suất: đối với các đối tượng đơn giản,`JSON.parse(JSON.stringify(obj))`vẫn nhanh nhất. Chỉ sử dụng bản sao sâu khi bạn thực sự cần nó.
+### Bài toán 4: Xây dựng một Event Emitter đơn giản
+**Báo cáo sự cố:** Triển khai lớp trình phát sự kiện hỗ trợ các phương thức`on`,`off`,`emit`và `once`. Người nghe nên được gọi theo thứ tự đăng ký. `emit`sẽ chuyển đối số cho tất cả người nghe.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần một hệ thống pub/sub: đăng ký trình nghe cho các sự kiện được đặt tên, xóa trình nghe cụ thể, kích hoạt sự kiện bằng đối số và hỗ trợ trình nghe một lần. Đây là mẫu Observer được sử dụng rộng rãi trong Node.js.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Lưu trữ người nghe trong`Map<string, Array<Function>>`.
+-`on`: đẩy người nghe vào mảng.
+-`off`: lọc ra người nghe cụ thể khỏi mảng.
+-`emit`: lặp mảng và gọi từng người nghe bằng các đối số trải rộng.
+-`once`: bọc người nghe trong một chức năng tự loại bỏ sau cuộc gọi đầu tiên.
+**Bước 3 — Triển khai giải pháp:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Bản sao`[...listeners]`trong`emit`ngăn ngừa sự cố khi người nghe gọi`off`trong quá trình lặp.
+-`once`lưu trữ`_original`để người gọi có thể xóa trình bao bọc thông qua`off(event, originalFn)`.
+- Các trường riêng (`#listeners`) ngăn chặn sự đột biến bên ngoài của trạng thái bên trong.
+- Đối với sản xuất: thêm cảnh báo`maxListeners`(như Node.js), xử lý lỗi trên mỗi người nghe và ưu tiên `prependListener`.
+---
+
 ## Bản tóm tắt
-JavaScript là không thể tránh khỏi. Đây là ngôn ngữ duy nhất chạy trong trình duyệt web, khiến nó trở nên cần thiết cho việc phát triển giao diện người dùng. Với Node.js, nó mở rộng sang phía máy chủ và với các framework như React Native và Electron, nó tiếp cận với thiết bị di động và máy tính để bàn. Hệ sinh thái là lớn nhất trong lập trình. Những điểm kỳ quặc của ngôn ngữ này rất nổi tiếng và dễ quản lý - và TypeScript giải quyết các vấn đề về đánh máy. Đối với mọi thứ chạy trên trình duyệt, JavaScript không chỉ là lựa chọn tốt nhất mà còn là lựa chọn duy nhất.
+JavaScript là không thể tránh khỏi. Đây là ngôn ngữ duy nhất chạy trên trình duyệt web, khiến nó trở nên cần thiết cho việc phát triển giao diện người dùng. Với Node.js, nó mở rộng sang phía máy chủ và với các framework như React Native và Electron, nó tiếp cận với thiết bị di động và máy tính để bàn. Hệ sinh thái là lớn nhất trong lập trình. Những điểm kỳ quặc của ngôn ngữ này rất nổi tiếng và dễ quản lý - và TypeScript giải quyết các vấn đề về đánh máy. Đối với mọi thứ chạy trên trình duyệt, JavaScript không chỉ là lựa chọn tốt nhất mà còn là lựa chọn duy nhất.

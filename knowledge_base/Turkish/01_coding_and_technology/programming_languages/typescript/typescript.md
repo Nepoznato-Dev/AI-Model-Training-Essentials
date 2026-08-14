@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # TypeScript
 TypeScript, Microsoft (Anders Hejlsberg öncülüğünde) tarafından geliştirilen ve ilk kez 2012'de piyasaya sürülen, statik olarak yazılan bir JavaScript üst kümesidir. JavaScript'e isteğe bağlı tür açıklamaları, arayüzler, jenerikler ve gelişmiş tür sistemi özellikleri ekler ve ardından JavaScript'in çalıştığı her yerde çalışan düz JavaScript'e derler. TypeScript ayrı bir dil veya çalışma zamanı değildir; tür denetleyicili JavaScript'tir.
 TypeScript, büyük ölçekli JavaScript geliştirmenin standardı haline geldi. React, Angular, VS Code, Deno ve çoğu büyük açık kaynaklı JavaScript projesi TypeScript'te yazılmıştır. Önemli boyutta yeni bir JavaScript projesi başlatıyorsanız TypeScript önerilen varsayılandır.
@@ -53,9 +54,9 @@ TypeScript, büyük ölçekli JavaScript geliştirmenin standardı haline geldi.
 ## Takaslar
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
-| **Derleme adımı** | Çalıştırmadan önce`.ts`→`.js`derlenmelidir | Geliştirme için`ts-node`/`tsx`kullanın;  Üretim için`tsc`|
+| **Derleme adımı** | Çalıştırmadan önce`.ts`→`.js`derlenmelidir | Geliştirme için`ts-node`/`tsx`kullanın;  üretim için`tsc`|
 | **Öğrenme eğrisi** | Tip sistemi karmaşık olabilir (jenerikler, koşullu tipler) | Temel türlerle başlayın; gelişmiş özellikleri kademeli olarak benimseyin |
-| **Tür tanımı dosyaları** | Tüm npm paketleri türlerle birlikte gönderilmez | `@types/package-name`'i KesinlikleTyped'dan yükleyin |
+| **Tür tanımı dosyaları** | Tüm npm paketleri türlerle birlikte gönderilmez | `@types/package-name`'yi KesinlikleTyped'dan yükleyin |
 | **Derleme zamanları** | Büyük projelerin yazım denetimi yavaş olabilir | Proje referanslarını kullanın,`isolatedModules`veya`swc`|
 | **Yanlış güvenlik duygusu** | Türler çalışma zamanının doğruluğunu garanti etmez | Çalışma zamanı doğrulamasıyla birleştirme (Zod, io-ts) |
 ---
@@ -812,5 +813,397 @@ CMD ["node", "dist/index.js"]
 **Genel kural**: JavaScript projenizde birkaç yüzden fazla satır varsa TypeScript kullanın.
 ---
 
+## Sentetik Soru-Cevap
+### S1:`type`ile`interface`arasındaki fark nedir ve her birini ne zaman kullanmalıyım?
+**C:** Her ikisi de nesne şekillerini tanımlar ancak farklı yeteneklere sahiptirler. `interface`bildirim birleştirmeyi (aynı ad birleştirmeyle birden çok bildirim),`extends`devralmayı destekler ve genel API'ler için deyimsel seçimdir.  `type`, birleşim türlerini, kesişim türlerini, eşlenen türleri, koşullu türleri ve şablon değişmez türlerini (gelişmiş olan her şeyi) destekler. En iyi uygulama: Nesne şekilleri ve genel API'ler için `interface`'yi kullanın; Birleşimler, yardımcı programlar ve karmaşık türdeki işlemler için `type`'yi kullanın.
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### S2: Jenerikler nasıl çalışır ve neden önemlidirler?
+**C:** Jenerikler, tür güvenliğini korurken herhangi bir türle çalışan işlevler, sınıflar ve türler yazmanıza olanak tanır.`any`(tür bilgilerini kaybeder) yerine jenerikler, giriş ve çıkış türleri arasındaki ilişkiyi korur. Bunlar yeniden kullanılabilir, tür açısından güvenli kodun temelidir.
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### S3: Yardımcı program türleri nelerdir ve hangilerini bilmeliyim?
+**C:** TypeScript, mevcut türleri dönüştüren yerleşik yardımcı program türleri sağlar. En önemlileri:`Partial<T>`(hepsi isteğe bağlı),`Required<T>`(tümü gerekli),`Pick<T, K>`(anahtarları seç),`Omit<T, K>`(anahtarları hariç tut),`Record<K, V>`(anahtar-değer haritası),`Exclude<T, U>`(birleşimden kaldır),`ReturnType<T>`(işlev dönüş türünü çıkar),`Awaited<T>`(Söz paketini aç). Bunları öğrenin; özel türde işlemlere olan ihtiyacın çoğunu ortadan kaldırırlar.
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### S4: Zaman uyumsuz kodu nasıl yazarım ve hataları tür açısından güvenli bir şekilde nasıl ele alırım?
+**A:** Zaman uyumsuz işlevler otomatik olarak`Promise<T>`değerini döndürür; burada T dönüş türüdür. Promise paketini açmak için`await`kullanın. Hata işleme için TypeScript'in yazılı istisnaları yoktur, ancak tür korumaları ve sonuç türleri oluşturabilirsiniz. "Sonuç modeli" (Rust'tan esinlenilmiştir) derleme zamanı hata yönetimini sağlar.
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### S5: Bildirim dosyaları (.d.ts) nedir ve üçüncü taraf türlerini nasıl kullanırım?
+**C:** Bildirim dosyaları, yerleşik TypeScript türlerine sahip olmayan JavaScript kitaplıklarının türlerini açıklar. Yalnızca tür bilgilerini içerirler (çalışma zamanı kodu yoktur). KesinlikleTyped'dan topluluk tarafından korunan türleri yükleyin: `npm install --save-dev @types/lodash`. Kendi kitaplıklarınız için `package.json`'ye bir`types`alanı ekleyin veya kaynağınızın yanına`.d.ts`dosyalarını ekleyin. Ortam bildirimleri için`declare module`kullanın.
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Güvenli Tip Olay Yayıcı Oluşturma
+**Sorun Açıklaması:** TypeScript'te her olay adının belirli bir veri yükü türüyle eşleştiği genel, tür açısından güvenli bir olay yayıcı oluşturun. Derleyicinin derleme zamanında yanlış olay adlarını ve veri yükü türlerini yakalaması gerekir.
+**1. Adım — Sorunu Anlayın:**
+Şunları içeren bir olay sistemine ihtiyacımız var: (1) olaylar yük türleriyle tanımlanır, (2)`emit`yalnızca doğru yüklere sahip geçerli olay adlarını kabul eder, (3)`on`yalnızca doğru yazılmış işleyicilere sahip geçerli olay adlarını kabul eder. Bu, bir olay haritası arayüzü üzerinden eşlenen türler ve jenerikler gerektirir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Bir`EventMap`türü tanımlayın:`{ [eventName: string]: payloadType }`.
+- Etkinlik adlarını kısıtlamak için`keyof EventMap`kullanın.
+- Belirli bir olayın yük türünü almak için `EventMap[K]`'yi kullanın.
+- Dinleyicileri bir `Map<string, Function[]>`'de saklayın.
+**3. Adım — Çözümü Uygulayın:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Tür güvenliği: derleyici, derleme sırasında yanlış olay adlarını ve yanlış yük şekillerini yakalar.
+- `on`, uygun temizlik için bir abonelikten çıkma işlevi döndürür.
+- `once`, ilk çağrıdan sonra dinleyiciyi otomatik olarak abonelikten çıkmaya sarar.
+- Üretim için:`listenerCount`,`removeAllListeners`ekleyin ve iptal için`AbortSignal`kullanmayı düşünün.
+### Sorun 2: Tür Güvenli SQL Sorgu Oluşturucusunun Uygulanması
+**Sorun Açıklaması:** Sütun adlarının ve türlerinin TypeScript arayüzünden türetildiği bir SQL sorgu oluşturucusu oluşturun. Oluşturucunun derleme zamanında geçersiz sütun adlarını ve tür uyuşmazlıklarını önlemesi gerekir.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1)`keyof T`ile sınırlandırılmış sütun adları, (2) sütuna göre yazılan WHERE yan tümcesi değerleri, (3) sorgu oluşturmak için zincirlenebilir API. Bu,`Record<string, unknown>`tarafından kısıtlanan jenerikleri gerektirir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Sütun adı kısıtlamaları için`keyof T`kullanın.
+- Değer türü kısıtlamaları için`T[K]`kullanın.
+- Parametreli sorgularla SQL dizesi oluşturun (SQL enjeksiyonunu önleyin).
+- Zincirlenebilir yöntemler`this`değerini döndürür.
+**3. Adım — Çözümü Uygulayın:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- SQL enjeksiyon önleme: tüm değerler parametreli sorgulardan (`$1`,`$2`) geçer, hiçbir zaman enterpolasyon yapılmaz.
+- Tür güvenliği: sütun adları ve değer türleri derleme zamanında kontrol edilir.
+- Genişletilebilirlik: aynı modeli izleyerek`join`,`groupBy`,`having`,`insert`,`update`yöntemlerini ekleyin.
+- Üretim:`kysely`veya`drizzle-orm`kullanın — tam SQL kapsamıyla bu tür güvenliği sağlarlar.
+### Sorun 3: Tip Güvenlikli Sonlu Durum Makinesinin Uygulanması
+**Sorun Açıklaması:** Derleme zamanında geçerli geçişlerin uygulandığı, tür açısından güvenli bir sonlu durum makinesi oluşturun. Her durumun giriş/çıkış eylemleri olabilir ve makinenin mevcut durumu izlemesi gerekir.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) tür olarak tanımlanan durumlar ve olaylar, (2) tür düzeyinde eşlenen geçerli geçişler, (3) derleyici geçersiz geçişleri önler, (4) geri çağrılarla çalışma zamanı durum takibi. Bu, eşlenen türleri ve koşullu türleri gerektirir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Bir`TransitionMap`:`{ [State]: { [Event]: NextState } }`tanımlayın.
+- `send(event)`'yi mevcut duruma göre sınırlamak için jenerikleri kullanın.
+- Bir değişkenle çalışma zamanındaki durumu izleyin.
+- Durum başına giriş/çıkış geri aramalarını destekleyin.
+**3. Adım — Çözümü Uygulayın:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Çalışma zamanı güvenliği:`send`geçersiz geçişlere neden olur.
+- Tür güvenliği:`EventsFor`türü, derleme zamanında durum başına geçerli olayları çıkarır.
+- Giriş/çıkış geri aramaları geçişlerde otomatik olarak tetiklenir.
+- Üretim için:`xstate`kullanın — görsel hata ayıklama, hiyerarşik durumlar, korumalar ve eylemlerle tam durumlu bir makine kitaplığı sağlar.
+---
+
 ## Özet
-TypeScript, önemsiz komut dosyalarının ötesinde her şey için doğru şekilde yapılmış bir JavaScript'tir. Hataları erkenden yakalayan, araçları geliştiren ve kodları belgeleyen güçlü bir tür sistemi eklerken aynı zamanda her yerde çalışan standart JavaScript'i derler. Öğrenme eğrisi yumuşaktır (minimal türlerle başlayabilirsiniz) ancak derinlik çok büyüktür (tip sistemi Turing-tamamlanmıştır). Modern JavaScript geliştirmede TypeScript endüstri standardı haline geldi.
+TypeScript, önemsiz komut dosyalarının ötesinde her şey için doğru şekilde yapılmış bir JavaScript'tir. Hataları erkenden yakalayan, araçları geliştiren ve kodu belgeleyen güçlü bir tür sistemi eklerken aynı zamanda her yerde çalışan standart JavaScript'i derler. Öğrenme eğrisi yumuşaktır (minimal türlerle başlayabilirsiniz) ancak derinlik çok büyüktür (tip sistemi Turing-tamamlanmıştır). Modern JavaScript geliştirmede TypeScript endüstri standardı haline geldi.

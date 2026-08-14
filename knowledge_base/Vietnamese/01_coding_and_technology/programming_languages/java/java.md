@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Java
 Java là ngôn ngữ lập trình hướng đối tượng, được gõ tĩnh do James Gosling tại Sun Microsystems tạo ra và phát hành vào năm 1995. Triết lý thiết kế của nó — "viết một lần, chạy mọi nơi" (WORA) — đạt được thông qua Máy ảo Java (JVM), cho phép mã Java được biên dịch để chạy trên bất kỳ nền tảng nào có triển khai JVM. Java là một trong những ngôn ngữ lập trình được sử dụng rộng rãi nhất trong lịch sử, hỗ trợ các chương trình phụ trợ doanh nghiệp, ứng dụng Android, hệ thống dữ liệu lớn và dịch vụ tài chính.
 Dù đã gần 30 tuổi nhưng Java vẫn tiếp tục phát triển. Java hiện đại (phiên bản 17+) bao gồm các bản ghi, lớp kín, khớp mẫu, luồng ảo và hệ sinh thái đang phát triển cạnh tranh với các ngôn ngữ mới hơn.
@@ -54,7 +55,7 @@ Dù đã gần 30 tuổi nhưng Java vẫn tiếp tục phát triển. Java hi�
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
 | **Tính chi tiết** | Yêu cầu nhiều bản soạn sẵn hơn Python, Kotlin hoặc Go | Sử dụng Lombok, bản ghi (Java 16+) và IDE hiện đại |
-| **Sử dụng bộ nhớ** | Chi phí chung của JVM có nghĩa là bộ nhớ cơ sở cao hơn | Điều chỉnh cờ JVM; sử dụng hình ảnh gốc GraalVM cho các triển khai nhỏ |
+| **Sử dụng bộ nhớ** | Chi phí JVM có nghĩa là bộ nhớ cơ sở cao hơn | Điều chỉnh cờ JVM; sử dụng hình ảnh gốc GraalVM cho các triển khai nhỏ |
 | **Thời gian khởi động** | Quá trình khởi động JVM có thể chậm đối với các quy trình tồn tại trong thời gian ngắn | Hình ảnh gốc GraalVM hoặc sử dụng C/Go cho các công cụ CLI |
 | **Đã kiểm tra các trường hợp ngoại lệ** | Buộc xử lý các trường hợp ngoại lệ có thể không thể phục hồi được | Sử dụng các ngoại lệ không được kiểm tra hoặc mẫu`Optional`|
 | **Không có loại giá trị** | Mọi thứ đều là đối tượng (cho đến dự án Valhalla) | Sử dụng các bộ sưu tập chuyên biệt nguyên thủy (Bộ sưu tập Eclipse, Trove) |
@@ -700,9 +701,9 @@ Tất cả những thứ này đều có thể sử dụng thư viện Java và 
 | Phiên bản | Năm | Các tính năng chính |
 |----------|------|-------------|
 | Java 8 | 2014 | **LTS** — Lambdas, API truyền phát, các phương thức mặc định, tùy chọn. Vẫn được sử dụng rộng rãi. |
-| Java 11 | 2018 | **LTS** — API ứng dụng khách HTTP,`var`cho các biến cục bộ, trình khởi chạy nguồn một tệp |
-| Java 17 | 2021 | **LTS** — Các lớp kín, khớp mẫu cho`instanceof`, bản ghi, khối văn bản |
-| Java 21 | 2023 | **LTS** — **Chủ đề ảo** (Project Loom), khớp mẫu cho`switch`, mẫu ghi |
+| Java 11 | 2018 | **LTS** — API máy khách HTTP,`var`cho các biến cục bộ, trình khởi chạy nguồn một tệp |
+| Java 17 | 2021 | **LTS** — Các lớp kín, khớp mẫu cho `instanceof`, bản ghi, khối văn bản |
+| Java 21 | 2023 | **LTS** — **Chủ đề ảo** (Project Loom), khớp mẫu cho`switch`, mẫu bản ghi |
 | Java 25 | 2025 | **LTS** — Mẫu chuỗi, khớp mẫu thêm, API hàm ngoại |
 **Phiên bản LTS** (Hỗ trợ dài hạn) nhận được bản cập nhật trong nhiều năm. Để sản xuất, hãy sử dụng Java 21 trở lên.
 ---
@@ -717,6 +718,377 @@ Tất cả những thứ này đều có thể sử dụng thư viện Java và 
 | Dịch vụ vi mô | Spring Boot + framework gốc trên nền tảng đám mây | Sử dụng các dịch vụ đơn giản hơn |
 | Kịch bản đơn giản | Lễ quá nhiều | Python, Shell |
 | công cụ CLI | Khởi động chậm | Đi đi, Rust |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Sự khác biệt giữa`==`và`.equals()`trong Java là gì?
+**A:**`==`so sánh các tham chiếu đối tượng (danh tính) — nó kiểm tra xem hai biến có trỏ đến cùng một đối tượng trong bộ nhớ hay không. `.equals()`so sánh nội dung đối tượng (giá trị bằng nhau). Đối với giá trị nguyên thủy (`int`,`double`),`==`so sánh trực tiếp các giá trị. Đối với các đối tượng (bao gồm`String`), hãy luôn sử dụng`.equals()`để so sánh nội dung. Ngoại lệ duy nhất là so sánh với `null`, trong đó`==`là chính xác.
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true — same content
+
+// String pool — literals are interned
+String c = "hello";
+String d = "hello";
+System.out.println(c == d);       // true — same pooled object
+
+// Always use .equals() for value comparison, or Objects.equals() for null-safe comparison
+Objects.equals(a, b);  // Handles nulls without NPE
+```
+
+### Câu hỏi 2: Trình thu gom rác JVM hoạt động như thế nào và tôi nên sử dụng trình thu thập rác nào?
+**A:** GC tự động lấy lại bộ nhớ từ các đối tượng không thể truy cập được nữa. Các JVM hiện đại (21+) cung cấp một số bộ sưu tập: G1 (mặc định, cân bằng), ZGC (thời gian tạm dừng cực thấp, <1ms) và Shenandoah (tạm dừng thấp, OpenJDK). Đối với hầu hết các ứng dụng, G1 mặc định là ổn. Đối với các dịch vụ nhạy cảm với độ trễ, hãy sử dụng ZGC (`-XX:+UseZGC`). Để xử lý hàng loạt theo định hướng thông lượng, hãy sử dụng Parallel GC (`-XX:+UseParallelGC`).
+```bash
+# JVM flags for GC tuning
+java -XX:+UseZGC -Xmx4g -Xms4g -jar app.jar
+
+# Monitor GC activity
+java -Xlog:gc*:file=gc.log:time,tags:filecount=5,filesize=10M -jar app.jar
+```
+
+### Câu 3: Khi nào tôi nên sử dụng`Stream API`so với vòng lặp truyền thống?
+**Đ:** Sử dụng Luồng khi hoạt động là một quy trình rõ ràng (lọc, ánh xạ, thu gọn) — chúng thể hiện ý định tốt hơn và dễ dàng song song hóa với`.parallelStream()`. Sử dụng vòng lặp truyền thống cho các lần lặp đơn giản, khi bạn cần sửa đổi trạng thái bên ngoài, khi hiệu suất là quan trọng (luồng có chi phí chung) hoặc khi logic liên quan đến luồng điều khiển phức tạp (ngắt, tiếp tục, trả về nhiều lần). Tránh các luồng cho các thao tác`for-each`đơn giản.
+```java
+// Stream — clear pipeline, easy to read
+List<String> names = people.stream()
+    .filter(p -> p.age() > 18)
+    .sorted(Comparator.comparing(Person::name))
+    .map(Person::name)
+    .toList();
+
+// Traditional loop — better for complex logic or side effects
+int maxAge = 0;
+String oldestName = null;
+for (Person p : people) {
+    if (p.age() > maxAge) {
+        maxAge = p.age();
+        oldestName = p.name();
+    }
+}
+```
+
+### Q4: Bản ghi, lớp niêm phong và khớp mẫu trong Java hiện đại là gì?
+**A:** Bản ghi (Java 16) là các vật mang dữ liệu bất biến — chúng tự động tạo các hàm tạo, getter,`equals`,`hashCode`và`toString`. Các lớp kín (Java 17) hạn chế những lớp nào có thể mở rộng chúng — hữu ích cho việc lập mô hình phân cấp kiểu hữu hạn. So khớp mẫu (Java 21) cho phép các biểu thức`switch`phá hủy các loại, bản ghi và giá trị - thay thế các chuỗi`instanceof`dài dòng.
+```java
+// Record — immutable data class
+public record Point(int x, int y) {
+    // Compact constructor for validation
+    public Point {
+        if (x < 0 || y < 0) throw new IllegalArgumentException();
+    }
+}
+
+// Sealed interface + pattern matching
+public sealed interface Shape permits Circle, Rectangle, Triangle {}
+public record Circle(double radius) implements Shape {}
+public record Rectangle(double width, double height) implements Shape {}
+public record Triangle(double base, double height) implements Shape {}
+
+// Pattern matching switch (Java 21)
+static double area(Shape shape) {
+    return switch (shape) {
+        case Circle(var r)       -> Math.PI * r * r;
+        case Rectangle(var w, var h) -> w * h;
+        case Triangle(var b, var h) -> 0.5 * b * h;
+    };
+}
+```
+
+### Câu hỏi 5: Làm cách nào để xử lý các ngoại lệ được kiểm tra và không được kiểm tra đúng cách?
+**A:** Các ngoại lệ đã chọn (`IOException`,`SQLException`) phải được khai báo trong`throws`hoặc bị bắt — chúng thể hiện các điều kiện có thể phục hồi mà người gọi nên biết. Các ngoại lệ không được kiểm tra (các lớp con`RuntimeException`như `NullPointerException`, `IllegalArgumentException`) thể hiện các lỗi lập trình. Cách thực hành tốt nhất: sử dụng các ngoại lệ đã kiểm tra một cách tiết kiệm (chúng tạo ra khớp nối), ưu tiên`Optional`cho sự vắng mặt dự kiến ​​và bao bọc các ngoại lệ đã kiểm tra trong các ngoại lệ không được kiểm tra khi vượt qua ranh giới API.
+```java
+// Prefer Optional over checked exception for expected absence
+public Optional<User> findUser(String id) {
+    return Optional.ofNullable(userRepository.findById(id));
+}
+
+// Wrap checked exceptions for cleaner APIs
+public User getUser(String id) {
+    try {
+        return findUser(id).orElseThrow(
+            () -> new UserNotFoundException("User not found: " + id));
+    } catch (IOException e) {
+        throw new UncheckedIOException(e);
+    }
+}
+
+// Try-with-resources — automatic resource cleanup
+try (var conn = dataSource.getConnection();
+     var stmt = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
+    stmt.setString(1, id);
+    try (var rs = stmt.executeQuery()) {
+        if (rs.next()) return mapUser(rs);
+    }
+}
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng quy trình sản xuất-người tiêu dùng an toàn theo luồng
+**Báo cáo vấn đề:** Thiết kế quy trình sản xuất-người tiêu dùng trong Java trong đó nhiều nhà sản xuất tạo ra các mục công việc, nhiều người tiêu dùng xử lý chúng đồng thời và hệ thống hỗ trợ tắt máy nhẹ nhàng bằng cách xả các mục còn lại.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng ta cần: (1) một hàng đợi có giới hạn để đệm các mục công việc giữa nhà sản xuất và người tiêu dùng, (2) nhiều luồng nhà sản xuất thêm các mục, (3) nhiều mục xử lý các luồng tiêu dùng, (4) cơ chế báo hiệu tắt và tiêu hủy các mục còn lại.`BlockingQueue`của Java được xây dựng có mục đích cho việc này.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`ArrayBlockingQueue`(có giới hạn) để ngăn chặn việc tăng trưởng bộ nhớ không giới hạn.
+- Sử dụng mẫu thuốc độc để báo hiệu tắt máy.
+- Sử dụng`ExecutorService`để quản lý nhóm luồng.
+- Sử dụng`CountDownLatch`để đợi tất cả các thiết bị tiêu thụ thoát nước xong.
+**Bước 3 — Triển khai giải pháp:**
+```java
+import java.util.concurrent.*;
+
+public class Pipeline<T> {
+    private final BlockingQueue<T> queue;
+    private final ExecutorService producers;
+    private final ExecutorService consumers;
+    private final CountDownLatch shutdownLatch;
+    private static final Object POISON_PILL = new Object();
+
+    public Pipeline(int producerCount, int consumerCount, int queueCapacity) {
+        this.queue = new ArrayBlockingQueue<>(queueCapacity);
+        this.producers = Executors.newFixedThreadPool(producerCount);
+        this.consumers = Executors.newFixedThreadPool(consumerCount);
+        this.shutdownLatch = new CountDownLatch(consumerCount);
+    }
+
+    public void start(Function<T, Void> processor) {
+        // Start consumers
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            final int id = i;
+            consumers.submit(() -> {
+                try {
+                    while (true) {
+                        T item = queue.poll(1, TimeUnit.SECONDS);
+                        if (item == null) continue;
+                        if (item == POISON_PILL) break;
+                        processor.apply(item);
+                    }
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                } finally {
+                    shutdownLatch.countDown();
+                }
+            });
+        }
+    }
+
+    public void submit(T item) throws InterruptedException {
+        queue.put(item);  // Blocks if queue is full
+    }
+
+    public void shutdown() throws InterruptedException {
+        // Send poison pills — one per consumer
+        for (int i = 0; i < shutdownLatch.getCount(); i++) {
+            queue.put((T) POISON_PILL);
+        }
+        // Wait for all items to be processed
+        shutdownLatch.await(30, TimeUnit.SECONDS);
+        producers.shutdown();
+        consumers.shutdown();
+    }
+}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Hàng đợi bị chặn ngăn chặn OOM:`ArrayBlockingQueue(1000)`giới hạn bộ nhớ.
+- Mẫu thuốc độc: mỗi người tiêu dùng sẽ thoát ra sạch sẽ sau khi nhận được viên thuốc của mình.
+-`poll(1, SECONDS)`có thời gian chờ ngăn người tiêu dùng chặn vĩnh viễn nếu nhà sản xuất chậm.
+- Sản xuất: sử dụng`LinkedBlockingQueue`cho đường ống không giới hạn hoặc`Disruptor`(LMAX) cho đường ống có độ trễ cực thấp.
+### Vấn đề 2: Triển khai Trình xác thực dựa trên chú thích tùy chỉnh
+**Báo cáo vấn đề:** Tạo khung xác thực bằng cách sử dụng chú thích tùy chỉnh. Người dùng chú thích các trường có`@NotNull`,`@Min(0)`,`@Max(100)`,`@Size(min=1, max=50)`và gọi`Validator.validate(obj)`để nhận danh sách các vi phạm.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) chú thích tùy chỉnh với các tham số, (2) trình xác thực dựa trên phản chiếu đọc chú thích trong thời gian chạy, (3) đối tượng kết quả chứa tất cả các lỗi xác thực. Điều này thể hiện khả năng xử lý và phản chiếu chú thích của Java.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Xác định chú thích bằng`@Retention(RUNTIME)`và `@Target(FIELD)`.
+- Sử dụng`Class.getDeclaredFields()`để lặp lại các trường.
+- Sử dụng`Field.getAnnotation()`để đọc các giá trị chú thích.
+- So sánh các giá trị trường với các ràng buộc chú thích.
+- Thu thập các vi phạm vào danh sách.
+**Bước 3 — Triển khai giải pháp:**
+```java
+// Annotations
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface NotNull { String message() default "must not be null"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Min { long value(); String message() default "must be >= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Max { long value(); String message() default "must be <= {value}"; }
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+@interface Size { int min() default 0; int max() default Integer.MAX_VALUE; }
+
+// Violation record
+record Violation(String field, String message) {}
+
+// Validator
+public class Validator {
+    public static List<Violation> validate(Object obj) {
+        List<Violation> violations = new ArrayList<>();
+        for (Field field : obj.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            try {
+                Object value = field.get(obj);
+                String name = field.getName();
+
+                if (field.isAnnotationPresent(NotNull.class) && value == null) {
+                    violations.add(new Violation(name, "must not be null"));
+                }
+
+                if (value instanceof Number num) {
+                    Min min = field.getAnnotation(Min.class);
+                    if (min != null && num.longValue() < min.value()) {
+                        violations.add(new Violation(name,
+                            "must be >= " + min.value()));
+                    }
+                    Max max = field.getAnnotation(Max.class);
+                    if (max != null && num.longValue() > max.value()) {
+                        violations.add(new Violation(name,
+                            "must be <= " + max.value()));
+                    }
+                }
+
+                if (value instanceof String str) {
+                    Size size = field.getAnnotation(Size.class);
+                    if (size != null) {
+                        if (str.length() < size.min() || str.length() > size.max()) {
+                            violations.add(new Violation(name,
+                                "length must be between " + size.min() + " and " + size.max()));
+                        }
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return violations;
+    }
+}
+
+// Usage
+public class UserForm {
+    @NotNull
+    String name;
+    @Min(0) @Max(150)
+    int age;
+    @Size(min = 5, max = 100)
+    String email;
+}
+
+List<Violation> errors = Validator.validate(new UserForm(null, -1, "ab"));
+// [Violation[field=name, message=must not be null],
+//  Violation[field=age, message=must be >= 0],
+//  Violation[field=email, message=length must be between 5 and 100]]
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Chi phí phản ánh: được chấp nhận để xác thực (được gọi một lần cho mỗi yêu cầu). Đối với các đường dẫn nóng, tra cứu trường bộ nhớ đệm hoặc sử dụng xử lý chú thích tại thời điểm biên dịch (như Trình xác thực Hibernate).
+- Khả năng mở rộng: thêm chú thích mới bằng cách tạo chú thích + khối xử lý trong`validate()`.
+- Sản xuất: sử dụng`jakarta.validation`(Xác thực Bean 3.0) — nó thực hiện tất cả những điều này và hơn thế nữa, với quá trình xử lý thời gian biên dịch thông qua bộ xử lý chú thích.
+### Vấn đề 3: Xây dựng ứng dụng khách HTTP có tốc độ giới hạn bằng Retry
+**Báo cáo sự cố:** Tạo trình bao bọc máy khách HTTP tự động thử lại các yêu cầu không thành công với độ trễ theo cấp số nhân, tôn trọng giới hạn tốc độ và hỗ trợ ngắt mạch (ngừng gọi dịch vụ bị lỗi).
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) thử lại logic với độ trễ theo cấp số nhân và jitter, (2) giới hạn tốc độ để tránh làm quá tải dịch vụ mục tiêu, (3) kiểu ngắt mạch — sau N lần thất bại liên tiếp, hãy ngừng gọi dịch vụ trong một khoảng thời gian hồi chiêu. Đây là ba mối quan tâm tổng hợp.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`java.net.http.HttpClient`(Java 11+) làm máy khách cơ sở.
+- Triển khai thử lại dưới dạng trình bao bọc với`Thread.sleep`để chờ đợi.
+- Sử dụng`Semaphore`để giới hạn tốc độ (hoặc`java.time`cho nhóm mã thông báo).
+- Triển khai bộ ngắt mạch dưới dạng máy trạng thái: ĐÓNG → MỞ → HALF_OPEN.
+**Bước 3 — Triển khai giải pháp:**
+```java
+import java.net.http.*;
+import java.time.Duration;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+
+public class ResilientClient {
+    private final HttpClient client;
+    private final int maxRetries;
+    private final Semaphore rateLimiter;
+    private final AtomicInteger consecutiveFailures;
+    private final AtomicLong openUntil;
+    private final int failureThreshold;
+    private final long cooldownMs;
+
+    public ResilientClient(int maxRetries, int requestsPerSecond,
+                           int failureThreshold, long cooldownMs) {
+        this.client = HttpClient.newBuilder()
+            .connectTimeout(Duration.ofSeconds(10))
+            .build();
+        this.maxRetries = maxRetries;
+        this.rateLimiter = new Semaphore(requestsPerSecond);
+        this.consecutiveFailures = new AtomicInteger(0);
+        this.openUntil = new AtomicLong(0);
+        this.failureThreshold = failureThreshold;
+        this.cooldownMs = cooldownMs;
+
+        // Replenish semaphore permits every second
+        Executors.newSingleThreadScheduledExecutor(r -> {
+            Thread t = new Thread(r, "rate-limiter");
+            t.setDaemon(true);
+            return t;
+        }).scheduleAtFixedRate(() -> {
+            int drain = requestsPerSecond - rateLimiter.availablePermits();
+            if (drain > 0) rateLimiter.release(drain);
+        }, 1, 1, TimeUnit.SECONDS);
+    }
+
+    public HttpResponse<String> send(HttpRequest request) throws Exception {
+        // Circuit breaker check
+        if (System.currentTimeMillis() < openUntil.get()) {
+            throw new CircuitOpenException("Circuit breaker is open");
+        }
+
+        Exception lastException = null;
+        for (int attempt = 0; attempt <= maxRetries; attempt++) {
+            try {
+                rateLimiter.acquire();  // Wait for rate limit permit
+                HttpResponse<String> response = client.send(request,
+                    HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() >= 500) {
+                    throw new ServerException("HTTP " + response.statusCode());
+                }
+
+                // Success — reset failure counter
+                consecutiveFailures.set(0);
+                return response;
+
+            } catch (Exception e) {
+                lastException = e;
+                int failures = consecutiveFailures.incrementAndGet();
+
+                if (failures >= failureThreshold) {
+                    openUntil.set(System.currentTimeMillis() + cooldownMs);
+                    throw new CircuitOpenException(
+                        "Circuit opened after " + failures + " failures");
+                }
+
+                if (attempt < maxRetries) {
+                    long delay = (long) Math.pow(2, attempt) * 100;
+                    long jitter = ThreadLocalRandom.current().nextLong(0, delay / 2);
+                    Thread.sleep(delay + jitter);
+                }
+            }
+        }
+        throw lastException;
+    }
+}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Phản hồi theo cấp số nhân với jitter ngăn chặn tiếng sét bầy đàn (tất cả các lần thử lại đánh cùng một lúc).
+- Bộ ngắt mạch: sau khi`failureThreshold`bị lỗi liên tiếp, mạch sẽ mở cho`cooldownMs`— không có yêu cầu nào được gửi, bảo vệ dịch vụ bị lỗi.
+- Bộ giới hạn tốc độ:`Semaphore`với thông lượng giới hạn bổ sung định kỳ.
+- Sản xuất: sử dụng`resilience4j`— nó cung cấp cả ba mẫu (thử lại, giới hạn tốc độ, ngắt mạch) với cách triển khai, số liệu và tích hợp Spring Boot phù hợp.
 ---
 
 ## Bản tóm tắt

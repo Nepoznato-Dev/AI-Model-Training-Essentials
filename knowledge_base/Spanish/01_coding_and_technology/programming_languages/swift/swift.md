@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Rápido"
-descripción: "Referencia completa para el lenguaje de programación Swift que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Swift"
+description: "Comprehensive reference for the Swift programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [swift, lenguaje de programación, sintaxis, ecosistema, codificación y tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "26 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [swift, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Rápido
 Swift es un lenguaje de programación compilado moderno desarrollado por Apple (dirigido por Chris Lattner) y lanzado por primera vez en 2014. Fue diseñado para reemplazar Objective-C como lenguaje principal para el desarrollo de plataformas Apple (iOS, macOS, watchOS, tvOS, visionOS). Swift combina el rendimiento de los lenguajes compilados con la expresividad de los lenguajes de scripting y enfatiza la seguridad, particularmente en torno a los valores nulos, la gestión de la memoria y los errores tipográficos.
 Más allá de las plataformas de Apple, Swift se utiliza cada vez más para el desarrollo del lado del servidor (Vapor, Hummingbird), aplicaciones multiplataforma e incluso aprendizaje automático (Create ML de Apple). Con la introducción de Swift en el servidor y el soporte multiplataforma, Swift se está convirtiendo en algo más que un "lenguaje de Apple".
@@ -625,6 +630,363 @@ Para producción, implemente el binario compilado en un servidor Linux que ejecu
 | Móvil multiplataforma | Posible pero no primario | Flutter, reaccionar nativo |
 | Programación de sistemas | Posible (Linux) | Óxido, C, C++ |
 | Desarrollo de aplicaciones generales (no Apple) | Ecosistema limitado | Python, Ir, Java |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Qué son las opciones y por qué Swift me obliga a desenvolverlas?
+**R:** Un opcional (`Type?`) representa un valor que podría estar ausente: es`.some(value)`o`.none`(nulo). Swift fuerza el desenvolvimiento explícito para evitar fallas del puntero nulo en tiempo de ejecución. Puede desenvolver con`if let`,`guard let`, forzar desenvolver (`!`), encadenamiento opcional (`?.`) o fusión nula (`??`). El compilador garantiza que usted maneje el caso nulo; esto elimina toda una clase de errores.
+```swift
+// Optional declaration
+var name: String? = nil
+name = "Alice"
+
+// Safe unwrapping with if let
+if let unwrapped = name {
+    print("Name: \(unwrapped)")
+} else {
+    print("Name is nil")
+}
+
+// Guard let — early exit
+func greet(user: String?) {
+    guard let name = user else {
+        print("No user provided")
+        return
+    }
+    print("Hello, \(name)!")
+}
+
+// Nil coalescing
+let displayName = name ?? "Anonymous"
+
+// Optional chaining
+class Address { var city: String? }
+class User { var address: Address? }
+let user = User()
+let city = user.address?.city  // String? — nil at any point
+let cityOrUnknown = user.address?.city ?? "Unknown"
+```
+
+### P2: ¿Cuál es la diferencia entre estructuras y clases en Swift?
+**R:** Las estructuras son tipos de valor (copiadas en la asignación), las clases son tipos de referencia (compartidas). Las estructuras obtienen un inicializador gratuito para miembros y admiten todas las características de las clases, excepto la herencia, los desinicializadores y el recuento de referencias. Los tipos de biblioteca estándar de Swift (`String`,`Array`,`Dictionary`) son todas estructuras. Prefiere estructuras por defecto; use clases cuando necesite herencia o estado mutable compartido.
+```swift
+// Struct — value type, copied on assignment
+struct Point {
+    var x: Double
+    var y: Double
+
+    mutating func move(by dx: Double, _ dy: Double) {
+        x += dx
+        y += dy
+    }
+}
+
+var p1 = Point(x: 1, y: 2)
+var p2 = p1          // Copy
+p2.x = 10
+print(p1.x)          // 1 — unchanged
+
+// Class — reference type, shared
+class ViewController {
+    var title: String = ""
+}
+let vc1 = ViewController()
+let vc2 = vc1        // Same reference
+vc2.title = "Home"
+print(vc1.title)     // "Home" — same object
+```
+
+### P3: ¿Cómo funcionan los protocolos y la programación orientada a protocolos?
+**R:** Los protocolos definen un modelo de métodos, propiedades y requisitos. Cualquier tipo puede ajustarse a un protocolo implementando sus requisitos. Las extensiones de protocolo proporcionan implementaciones predeterminadas. Los genéricos restringidos por protocolos brindan polimorfismo sin la sobrecarga de la herencia de clases; esto es "programación orientada a protocolos".
+```swift
+// Protocol definition
+protocol Drawable {
+    func draw(on context: GraphicsContext)
+    var bounds: CGRect { get }
+}
+
+// Default implementation via extension
+extension Drawable {
+    func describe() -> String {
+        return "Drawable at \(bounds)"
+    }
+}
+
+// Conforming types
+struct Circle: Drawable {
+    let center: CGPoint
+    let radius: CGFloat
+
+    func draw(on context: GraphicsContext) { /* ... */ }
+    var bounds: CGRect { /* computed from center + radius */ CGRect() }
+}
+
+// Protocol as generic constraint
+func renderAll<T: Drawable>(_ items: [T], on context: GraphicsContext) {
+    for item in items {
+        item.draw(on: context)
+    }
+}
+
+// Protocol composition
+func process(_ item: Drawable & Codable & Sendable) { /* ... */ }
+```
+
+### P4: ¿Qué es`async/await`en Swift y cómo se relaciona con los actores?
+**R:** El modelo de concurrencia de Swift (5.5+) usa`async/await`para código asincrónico y`actors`para estado mutable compartido seguro.  Las funciones`async`se pueden suspender y reanudar. `await`marca los puntos de suspensión. Los actores evitan las carreras de datos serializando el acceso a su estado mutable; el compilador aplica esto en el momento de la compilación.
+```swift
+// Async function
+func fetchUser(id: String) async throws -> User {
+    let (data, _) = try await URLSession.shared.data(
+        from: URL(string: "https://api.example.com/users/\(id)")!
+    )
+    return try JSONDecoder().decode(User.self, from: data)
+}
+
+// Actor — safe shared mutable state
+actor BankAccount {
+    private var balance: Double = 0
+
+    func deposit(_ amount: Double) {
+        balance += amount  // Only accessible within actor
+    }
+
+    func getBalance() -> Double { balance }
+}
+
+// Usage
+let account = BankAccount()
+await account.deposit(100)
+let balance = await account.getBalance()
+
+// Concurrent execution with async let
+async let user = fetchUser(id: "1")
+async let posts = fetchPosts(userId: "1")
+let dashboard = try await Dashboard(user: user, posts: posts)
+```
+
+### P5: ¿Cómo funcionan los contenedores de propiedades y los creadores de resultados?
+**R:** Los contenedores de propiedades (`@propertyWrapper`) agregan lógica al almacenamiento de propiedades (como`@State`en SwiftUI). Los creadores de resultados (`@resultBuilder`) le permiten crear estructuras de datos utilizando sintaxis natural (como la jerarquía de vistas de SwiftUI). Ambas son formas de metaprogramación que reducen el texto repetitivo.
+```swift
+// Property wrapper
+@propertyWrapper
+struct Clamped<T: Comparable> {
+    var wrappedValue: T {
+        didSet { wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound) }
+    }
+    let range: ClosedRange<T>
+
+    init(wrappedValue: T, _ range: ClosedRange<T>) {
+        self.range = range
+        self.wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound)
+    }
+}
+
+struct Player {
+    @Clamped(0...100) var health: Int = 100
+    @Clamped(0...999) var score: Int = 0
+}
+
+var player = Player()
+player.health = 150  // Clamped to 100
+player.health = -10  // Clamped to 0
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: construir un enrutador de tipo seguro
+**Declaración del problema:** Cree un enrutador de URL con seguridad de tipos para una aplicación de iOS donde cada ruta tenga parámetros asociados y el compilador impida el acceso a parámetros que no existen para una ruta determinada.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) definiciones de ruta con parámetros escritos, (2) análisis de URL para extraer ruta + parámetros, (3) acceso a parámetros de tipo seguro: el compilador garantiza que solo lea los parámetros que existen para cada ruta. Esto requiere enumeraciones con valores asociados.
+**Paso 2: Identifique el enfoque:**
+- Utilice una enumeración con valores asociados para definir rutas.
+- Cada caso lleva sus parámetros específicos como valores escritos.
+- Un analizador convierte cadenas de URL para enrutar casos de enumeración.
+- La coincidencia de patrones extrae parámetros con seguridad en tiempo de compilación.
+**Paso 3: Implementar la solución:**
+```swift
+enum Route: Equatable {
+    case home
+    case userProfile(id: String)
+    case productDetail(id: String, variant: String?)
+    case search(query: String, page: Int)
+    case settings(section: SettingsSection)
+
+    enum SettingsSection: String {
+        case general, notifications, privacy, about
+    }
+
+    // Parse URL to route
+    static func from(url: URL) -> Route? {
+        let path = url.pathComponents.dropFirst()  // Remove leading /
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            .queryItems ?? []
+
+        switch path {
+        case []:
+            return .home
+        case ["users", let id]:
+            return .userProfile(id: id)
+        case ["products", let id]:
+            let variant = query.first(where: { $0.name == "variant" })?.value
+            return .productDetail(id: id, variant: variant)
+        case ["search"]:
+            guard let q = query.first(where: { $0.name == "q" })?.value else { return nil }
+            let page = query.first(where: { $0.name == "page" })
+                .flatMap { Int($0.value ?? "1") } ?? 1
+            return .search(query: q, page: page)
+        case ["settings", let section]:
+            guard let s = SettingsSection(rawValue: section) else { return nil }
+            return .settings(section: s)
+        default:
+            return nil
+        }
+    }
+}
+
+// Usage — type-safe parameter extraction
+func handle(route: Route) {
+    switch route {
+    case .home:
+        showHomeScreen()
+    case .userProfile(let id):
+        showProfile(userId: id)  // id is guaranteed String
+    case .productDetail(let id, let variant):
+        showProduct(id: id, variant: variant)  // variant is String?
+    case .search(let query, let page):
+        performSearch(query: query, page: page)  // page is guaranteed Int
+    case .settings(let section):
+        showSettings(section: section)  // section is SettingsSection enum
+    }
+}
+
+// Handle deep link
+if let url = URL(string: "myapp://products/abc123?variant=blue"),
+   let route = Route.from(url: url) {
+    handle(route: route)
+}
+```
+
+**Paso 4: Verificar y optimizar:**
+- Seguridad de tipo: cada caso de ruta lleva exactamente los parámetros que necesita. El compilador impide el acceso a`variant`en `.userProfile`.
+- Exhaustividad: el`switch`debe manejar todos los casos; agregar una nueva ruta obliga a actualizar todos los controladores.
+- Extensibilidad: agregue nuevas rutas agregando casos de enumeración; el compilador le indica todos los lugares que necesitan actualización.
+- Producción: considere el enrutamiento`swift-url-routing`o`TCA`para aplicaciones más grandes.
+### Problema 2: implementar un contenedor de estado reactivo
+**Declaración del problema:** Cree un contenedor de estado reactivo simple (similar a Redux/Vuex) en Swift donde los cambios de estado sean observables y los suscriptores sean notificados de cambios de estado específicos.
+**Paso 1: comprenda el problema:**
+Necesitamos: (1) un contenedor de estado que contenga el estado de la aplicación, (2) acciones que describan los cambios de estado, (3) un reductor que produzca un nuevo estado a partir del estado actual + acción, (4) suscriptores que observen los cambios de estado. Este es el patrón de flujo de datos unidireccional.
+**Paso 2: Identifique el enfoque:**
+- Utilice una clase`Store<State>`genérica con un comportamiento similar al de `@Published`.
+- Definir acciones como una enumeración.
+- Utilizar una función reductora `(State, Action) -> State`.
+- Los suscriptores reciben el nuevo estado mediante cierres.
+**Paso 3: Implementar la solución:**
+```swift
+// Action protocol
+protocol Action {}
+
+// Store — holds state and dispatches actions
+class Store<State> {
+    private(set) var state: State
+    private let reducer: (State, Action) -> State
+    private var subscribers: [(State) -> Void] = []
+    private let queue = DispatchQueue(label: "store.queue")
+
+    init(initialState: State, reducer: @escaping (State, Action) -> State) {
+        self.state = initialState
+        self.reducer = reducer
+    }
+
+    func dispatch(_ action: Action) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            let newState = self.reducer(self.state, action)
+            self.state = newState
+            self.notifySubscribers(newState)
+        }
+    }
+
+    func subscribe(_ callback: @escaping (State) -> Void) -> () -> Void {
+        subscribers.append(callback)
+        callback(state)  // Emit current state immediately
+
+        // Return unsubscribe function
+        let index = subscribers.count - 1
+        return { [weak self] in
+            self?.subscribers.remove(at: index)
+        }
+    }
+
+    private func notifySubscribers(_ state: State) {
+        for subscriber in subscribers {
+            subscriber(state)
+        }
+    }
+}
+
+// Example usage
+struct AppState {
+    var todos: [Todo] = []
+    var filter: TodoFilter = .all
+    var isLoading: Bool = false
+}
+
+enum TodoAction: Action {
+    case addTodo(String)
+    case toggleTodo(Int)
+    case setFilter(TodoFilter)
+    case setLoading(Bool)
+}
+
+enum TodoFilter { case all, active, completed }
+
+struct Todo: Equatable {
+    let id: Int
+    let title: String
+    var isDone: Bool = false
+}
+
+// Reducer
+func todoReducer(state: AppState, action: Action) -> AppState {
+    var newState = state
+    guard let action = action as? TodoAction else { return state }
+
+    switch action {
+    case .addTodo(let title):
+        let id = (state.todos.map(\.id).max() ?? 0) + 1
+        newState.todos.append(Todo(id: id, title: title))
+    case .toggleTodo(let id):
+        if let idx = newState.todos.firstIndex(where: { $0.id == id }) {
+            newState.todos[idx].isDone.toggle()
+        }
+    case .setFilter(let filter):
+        newState.filter = filter
+    case .setLoading(let loading):
+        newState.isLoading = loading
+    }
+    return newState
+}
+
+// Wire it up
+let store = Store(initialState: AppState(), reducer: todoReducer)
+
+let unsubscribe = store.subscribe { state in
+    print("Todos: \(state.todos.count), Filter: \(state.filter)")
+}
+
+store.dispatch(TodoAction.addTodo("Learn Swift"))
+store.dispatch(TodoAction.addTodo("Build an app"))
+store.dispatch(TodoAction.toggleTodo(1))
+store.dispatch(TodoAction.setFilter(.active))
+```
+
+**Paso 4: Verificar y optimizar:**
+- Flujo unidireccional: acciones → reductor → nuevo estado → suscriptores. Fácil de razonar y probar.
+- Seguridad de subprocesos: la cola de despacho serializa las mutaciones de estado.
+- Los suscriptores obtienen el estado completo: utilice selectores o comprobaciones`Equatable`para evitar reproducciones innecesarias.
+- Producción: utilice`The Composable Architecture`(TCA) de Point-Free para una implementación de nivel de producción con efectos, pruebas e integración con SwiftUI.
 ---
 
 ## Resumen

@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Дротик
 Dart — это оптимизированный для клиента язык программирования, разработанный Google и впервые выпущенный в 2013 году. Хотя изначально Dart позиционировался как потенциальная замена JavaScript для веб-браузеров, свою основную цель он нашел в качестве языка, лежащего в основе **Flutter** — кроссплатформенного набора инструментов пользовательского интерфейса Google для создания мобильных, веб-, настольных и встроенных приложений из единой базы кода.
-Dart сочетает в себе лучшие особенности современных языков: он объектно-ориентирован, имеет необязательную типизацию (нулевая безопасность начиная с Dart 3), поддерживает асинхронное программирование с помощью`async`/`await`и компилируется как в собственный машинный код (для мобильных устройств/настольных ПК), так и в JavaScript (для Интернета).
+Dart сочетает в себе лучшие особенности современных языков: он объектно-ориентирован, имеет необязательную типизацию (нулевая безопасность начиная с Dart 3), поддерживает асинхронное программирование с помощью`async`/`await`и компилируется как в собственный машинный код (для мобильных устройств/настольных компьютеров), так и в JavaScript (для Интернета).
 ---
 
 ## Почему дартс важен
@@ -945,7 +946,7 @@ FutureBuilder<List<Item>>(
 |----------|--------------|--------|
 | **Андроид** | `flutter build apk`/`flutter build appbundle`| APK/AAB для Play Маркета |
 | **iOS** | `flutter build ipa`| IPA для App Store |
-| **Интернет** |  __ЗАЩИЩЕНО_3__ | Статический HTML/JS/CSS |
+| **Интернет** | `flutter build web`| Статический HTML/JS/CSS |
 | **Окна** | `flutter build windows`| MSIX или автономный exe-файл |
 | **macOS** | `flutter build macos`| пакет .app |
 | **Линукс** | `flutter build linux`| Бинарный + активы |
@@ -984,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | Бэкэнд-разработка | Не основной вариант использования | Go, Node.js, Python |
 | Наука о данных / ML | Не подходит | Питон, Р |
 | Системное программирование | Не подходит | Си, С++, Руст |
+---
+
+## Синтетические вопросы и ответы
+### Вопрос 1: Как работает нулевая безопасность Dart?
+**О:** Dart 2.12+ имеет надежную нулевую безопасность. По умолчанию переменные не имеют значения NULL; используйте `?`, чтобы разрешить ноль:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2: В чем разница между`Future`и `Stream`?
+**A:**`Future`представляет один асинхронный результат; `Stream`представляет последовательность асинхронных событий:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Вопрос 3. Как управлять состоянием в приложении Flutter?
+**О:** Несколько подходов в зависимости от сложности:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Вопрос 4: Как методы расширения работают в Dart?
+**О:** Расширения добавляют функциональность к существующим типам без наследования:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Вопрос 5: Как написать высокопроизводительный код Dart/Flutter?
+**О:** Ключевые практики:
+- Используйте конструкторы`const`везде, где это возможно.
+- Избегайте пересборки виджетов — используйте `const`,`final`и `shouldRebuild`. 
+- Используйте`ListView.builder`вместо`ListView`для больших списков.
+- Профиль с помощью Flutter DevTools
+- Используйте`compute()`для дорогостоящих операций по изоляции потоков.
+- Минимизируйте вызовы`setState`— будьте конкретны в том, что необходимо перестроить.
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1. Создание типобезопасного API-клиента
+**Шаг 1. Поймите проблему**
+Создайте клиент API, который извлекает данные и возвращает правильно типизированные объекты.
+**Шаг 2. Определите подход**
+Используйте классы Dart с `fromJson`/`toJson`, async/await и запечатанными классами для получения результатов.
+**Шаг 3. Реализация**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Шаг 4. Проверка**
+Протестируйте с помощью макетного HTTP-клиента. Проверьте обработку ошибок на предмет сетевых сбоев и неправильных ответов.
+### Проблема 2: реализация реактивного поиска с помощью Debounce
+**Шаг 1. Поймите проблему**
+Создайте поле поиска, которое запрашивает API, но препятствует вводу данных, чтобы избежать чрезмерных запросов.
+**Шаг 2. Определите подход**
+Используйте Dart Streams с`debounceTime`и `distinct`.
+**Шаг 3. Реализация**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Шаг 4. Тест**
+Убедитесь, что быстрый ввод вызывает только один вызов API после периода устранения дребезга.
 ---
 
 ## Краткое содержание

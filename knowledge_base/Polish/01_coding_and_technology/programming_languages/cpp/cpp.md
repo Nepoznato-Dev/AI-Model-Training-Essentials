@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C++
 C++ to skompilowany język programowania ogólnego przeznaczenia stworzony przez Bjarne Stroustrupa, wydany po raz pierwszy w 1985 roku. Rozszerza C o funkcje obiektowe, generyczne i – we współczesnych wersjach (C++ 11 i nowsze) – abstrakcje wysokiego poziomu, takie jak lambdy, inteligentne wskaźniki i standardowa biblioteka szablonów (STL). C++ kieruje się zasadą „zero kosztów ogólnych”: nie powinieneś płacić za funkcje, których nie używasz.
 C++ to język z wyboru, gdy potrzebujesz zarówno wysokiej wydajności, jak i mocy ekspresji. Obsługuje silniki gier (Unreal Engine), przeglądarki (Chrome, Firefox), bazy danych (MongoDB), systemy operacyjne (części Windows i macOS), systemy handlu finansowego i symulacje w czasie rzeczywistym.
@@ -735,7 +736,381 @@ cmake --build build
 | C++17 | 2017 | Powiązania strukturalne, std::opcjonalne, std::variant, std::filesystem |
 | C++20 | 2020 | **Wersja główna**: koncepcje, zakresy, współprogramy, moduły |
 | C++23 | 2023 | std::oczekiwane, std::print, wywnioskowanie tego |
-W przypadku nowych projektów wybierz co najmniej C++ 20.
+W przypadku nowych projektów docelowy jest co najmniej C++ 20.
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między`std::unique_ptr`,`std::shared_ptr`i`std::weak_ptr`?
+**A:**`unique_ptr`reprezentuje wyłączną własność — tylko jeden wskaźnik może być właścicielem zasobu. Ma zerowy narzut (tak samo jak surowy wskaźnik) i nie można go kopiować, a jedynie przenosić. `shared_ptr`reprezentuje współwłasność — wiele wskaźników współdzieli zasób, zliczając odniesienia. Kiedy ostatni`shared_ptr`zostanie zniszczony, zasób zostaje zwolniony. `weak_ptr`jest obserwatorem niebędącym właścicielem`shared_ptr`— nie zwiększa liczby odniesień i służy do łamania odniesień cyklicznych.
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### Pytanie 2: Czym jest semantyka ruchów i dlaczego ma ona znaczenie?
+**A:** Semantyka przenoszenia (C++ 11) umożliwia przesyłanie zasobów (pamięci sterty, uchwytów plików itp.) z obiektu tymczasowego zamiast ich kopiowania. Konstruktor/przypisanie przenoszenia pobiera odwołanie do wartości (`T&&`) i „kradnie” zasoby źródła, pozostawiając je w prawidłowym, ale nieokreślonym stanie. Eliminuje to niepotrzebne kopie i jest powodem, dla którego realokacja`std::vector`jest wydajna.
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### P3: Kiedy powinienem używać`auto`i kiedy jawnie określać typy?
+**A:** Użyj `auto`, gdy typ jest oczywisty z kontekstu (pętle iteratorów, wywołania`make_unique`/ `make_shared`, typy lambda, złożone typy szablonów). Określ typy jawnie, gdy typ nie jest oczywisty, gdy potrzebujesz niejawnych konwersji lub w publicznych podpisach API. Styl „Prawie zawsze automatyczny” (AAA) faworyzuje`auto`dla zmiennych lokalnych; styl „automatyczny, jeśli jest pomocny” jest bardziej konserwatywny.
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### P4: Jak koncepcje (C++20) ulepszają kod szablonu?
+**O:** Koncepcje ograniczają parametry szablonu za pomocą nazwanych wymagań, generując jasne komunikaty o błędach i umożliwiając przeciążanie funkcji w ograniczeniach szablonu. Przed koncepcjami używano SFINAE i`static_assert`— oba generowały tajemnicze błędy. Koncepcje sprawiają, że kod szablonu jest czytelny i możliwy do komponowania.
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### P5: Czym jest Reguła Pięciu i jaki ma ona związek z Regułą Zero?
+**A:** Zasada pięciu: jeśli zdefiniujesz którykolwiek z destruktorów, konstruktorów kopiujących, przypisań kopiujących, konstruktorów przenoszenia lub przypisań przenoszenia, powinieneś zdefiniować wszystkie pięć. Reguła zera (preferowana): klasy projektowe, więc nie potrzebują żadnej z nich — użyj typów RAII (`std::string`,`std::vector`,`std::unique_ptr`) jako członków, a specjalności wygenerowane przez kompilator automatycznie wykonają właściwe działanie.
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Zaimplementuj bezpieczną dla wątków kolejkę producent-konsument z zakresami
+**Opis problemu:** Zbuduj ograniczoną, bezpieczną dla wątków kolejkę producent-konsument, używając zakresów C++20 po stronie konsumenta. Kolejka powinna blokować producentów, gdy są zapełnieni, i konsumentów, gdy są puści, oraz wspierać płynne zamykanie.
+**Krok 1 — Zrozum problem:**
+Potrzebujemy: (1) ograniczonej kolejki z blokowaniem push/pop, (2) bezpieczeństwa wątków poprzez muteks i zmienne warunkowe, (3) sposobu sygnalizowania zamknięcia, (4) integracji zakresów C++20, aby konsumenci mogli korzystać z pętli for opartych na zakresach.
+**Krok 2 — Zidentyfikuj podejście:**
+- Do blokowania użyj`std::mutex`+ `std::condition_variable`.
+- Użyj`std::queue<T>`jako podstawowego kontenera.
+- Użyj`std::optional<T>`jako typu powrotu —`std::nullopt`sygnalizuje wyłączenie.
+- Zaimplementuj iterator oparty na wskaźnikach dla obsługi zakresów.
+**Krok 3 — Wdróż rozwiązanie:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Bezpieczeństwo wątków:`std::mutex`chroni cały stan kolejki; zmienne warunkowe obsługują blokowanie.
+- Łagodne zamknięcie:`shutdown()`budzi wszystkich kelnerów; `pop()`zwraca `nullopt`, gdy jest pusty i zamknięty.
+- Obsługa zakresów: wskaźnik iteratora (skonstruowany domyślnie) porównuje się z dowolnym wyczerpanym iteratorem.
+- Produkcja: użyj`boost::lockfree::spsc_queue`w przypadku pojedynczego producenta i pojedynczego konsumenta bez blokad lub`folly::ProducerConsumerQueue`w przypadku scenariuszy o dużej przepustowości.
+### Problem 2: Zaimplementuj dowolny typ z wymazanym typem
+**Opis problemu:** Zaimplementuj od podstaw uproszczoną wersję`std::any`(C++17) — bezpieczny dla typu kontener dla pojedynczych wartości dowolnego typu, obsługujący kopiowanie, przenoszenie i bezpieczne pobieranie typu za pośrednictwem`any_cast`.
+**Krok 1 — Zrozum problem:**
+`std::any`przechowuje wartość dowolnego typu, który można skopiować i pobiera ją poprzez sprawdzanie typu. Wewnętrznie używa wymazywania typów: interfejsu klasy bazowej z pochodnym szablonem, który przechowuje rzeczywistą wartość. `any_cast`sprawdza przechowywany typ w czasie wykonywania i zgłasza`bad_any_cast`w przypadku niezgodności.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj klasy bazowej`HolderBase`z wirtualnymi`clone()`i`type()`.
+- Użyj szablonu pochodnego `Holder<T>`, który przechowuje rzeczywistą wartość.
+- Przechowuj`std::unique_ptr<HolderBase>`w klasie `Any`.
+-`any_cast<T>`sprawdza`typeid`i wykonuje`static_cast`.
+**Krok 3 — Wdróż rozwiązanie:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Bezpieczeństwo typu:`any_cast`sprawdza`typeid`w czasie wykonywania — nieprawidłowy typ wyrzuca`BadAnyCast`.
+- Semantyka kopiowania: wirtualny`clone()`tworzy głęboką kopię przechowywanej wartości.
+- Semantyka przenoszenia: domyślny konstruktor przenoszenia/przypisanie efektywnie przesyła `unique_ptr`.
+- Optymalizacja małego bufora (jak prawdziwy `std::any`): przechowuj małe typy w linii bez alokacji sterty. Wymaga to`union`z buforem bajtowym — znacznie bardziej złożonym.
+- Produkcja: użyj`std::any`(C++17) — jest to standard, dobrze przetestowany i może zawierać SBO.
 ---
 
 ## Streszczenie

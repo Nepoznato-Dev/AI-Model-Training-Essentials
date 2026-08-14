@@ -1,41 +1,46 @@
 ---
-# البيانات الوصفية
-العنوان: "لوا"
-الوصف: "مرجع شامل للغة برمجة Lua يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Lua"
+description: "Comprehensive reference for the Lua programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [lua، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "26 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [lua, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "26 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # لوا
-Lua هي لغة برمجة نصية خفيفة الوزن وقابلة للتضمين مصممة لتوسيع التطبيقات. تم إنشاء لغة Lua عام 1993 في الجامعة البابوية الكاثوليكية في ريو دي جانيرو بالبرازيل، وهي واحدة من أسرع لغات البرمجة النصية المتاحة. حجمه الصغير (المترجم هو ~ 120 كيلو بايت) وبساطته تجعله الخيار الأمثل للبرمجة النصية لتطوير الألعاب والأنظمة المدمجة والتكوين.
+Lua هي لغة برمجة نصية خفيفة الوزن وقابلة للتضمين مصممة لتوسيع التطبيقات. تم إنشاء لغة Lua عام 1993 في الجامعة البابوية الكاثوليكية في ريو دي جانيرو بالبرازيل، وهي إحدى أسرع لغات البرمجة النصية المتاحة. حجمه الصغير (المترجم هو 120 كيلو بايت تقريبًا) وبساطته تجعله الخيار الأمثل للبرمجة النصية لتطوير الألعاب والأنظمة المدمجة والتكوين.
 تشتهر Lua بأنها لغة البرمجة النصية وراء Roblox (منصة الألعاب التي تضم أكثر من 200 مليون مستخدم شهريًا)، وإضافات World of Warcraft، والعديد من محركات الألعاب (Love2D، وDefold، وCorona SDK). كما يتم استخدامه في Nginx (OpenResty)، وRedis، وWireshark.
 ---
 
@@ -618,6 +623,254 @@ CMD lua5.4 src/main.lua
 | تطوير الويب | OpenResty موجود ولكنه متخصص | جافا سكريبت، بايثون، اذهب |
 | تطوير التطبيقات العامة | غير مصمم للتطبيقات المستقلة | بايثون، جو، جافا |
 | علم البيانات | ليس النظام البيئي | بايثون، ر |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: لماذا تستخدم Lua الفهرسة المستندة إلى 1 بدلاً من المستندة إلى 0؟
+**ج:** تم تصميم Lua للمستخدمين غير المبرمجين ويتبع قواعد العد الطبيعية. يستخدم عامل التشغيل`#`و`ipairs` ووظائف السلسلة الفهرسة المستندة إلى 1:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+وهذا ثابت في جميع أنحاء المكتبة القياسية. عند التعامل مع C (المستند إلى 0)، ضع في اعتبارك الإزاحة.
+### السؤال الثاني: كيف يمكنني تنفيذ الأنماط الموجهة للكائنات في Lua؟
+**أ:** تستخدم Lua الجداول والجداول الوصفية لـ OOP. تتيح طريقة metamethod`__index`البحث عن الطريقة في النماذج الأولية:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### س3: كيف تعمل الكوروتينات ومتى يجب استخدامها؟
+**ج:** Coroutines عبارة عن سلاسل رسائل تعاونية يمكنها تعليق التنفيذ واستئنافه. إنها مثالية للتكرارات والأنماط غير المتزامنة ومنطق اللعبة:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### س4: ما هي أفضل طريقة للتعامل مع الأخطاء في Lua؟
+**أ:** استخدم`pcall`/`xpcall`لاكتشاف الأخطاء وإرجاع قيم متعددة لأنماط النجاح/الفشل:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### س5: كيف يمكنني تحسين أداء Lua للألعاب والأنظمة المدمجة؟
+**أ:** الممارسات الأساسية:
+- استخدم`local`لجميع المتغيرات - الوصول الشامل أبطأ بشكل ملحوظ
+- ذاكرة التخزين المؤقت لحقول الجدول التي يتم الوصول إليها بشكل متكرر في السكان المحليين
+- التخصيص المسبق للجداول عندما يكون الحجم معروفًا:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- تجنب إنشاء جداول مؤقتة في الحلقات الساخنة
+- استخدم`table.concat`بدلاً من`..`لضم العديد من السلاسل
+- الملف الشخصي باستخدام`os.clock()`أو خطافات التصحيح
+- في LuaJIT، استخدم FFI للتشغيل المتداخل لـ C بدلاً من C API
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: بناء محلل التكوين
+**الخطوة الأولى: فهم المشكلة**
+قم بتحليل ملف تكوين بسيط لقيمة المفتاح حيث يكون كل سطر`key = value`.
+**الخطوة 2: تحديد النهج**
+اقرأ الأسطر، واقسمها على `=`، واقطع المسافات البيضاء، وخزنها في جدول.
+**الخطوة 3: التنفيذ**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**الخطوة 4: تمديد**
+أضف دعم القسم (`[section]`)، واكتب الإكراه (الأرقام، والقيم المنطقية)، والجداول المتداخلة.
+### المشكلة الثانية: تنفيذ نظام حدث بسيط
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء باعث حدث يدعم الاشتراك في الأحداث المسماة وبثها.
+**الخطوة 2: تحديد النهج**
+استخدم أسماء أحداث تعيين الجدول لقوائم وظائف المعالج.
+**الخطوة 3: التنفيذ**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**الخطوة 4: التحقق**
+اختبار مع أحداث متعددة، والإزالة، ومعالجة الأخطاء في المعالجات.
+### المشكلة 3: إنشاء خط أنابيب قائم على Coroutine
+**الخطوة الأولى: فهم المشكلة**
+قم ببناء خط أنابيب لمعالجة البيانات حيث تقوم كل مرحلة بتصفية البيانات أو تحويلها، ويتم توصيلها عبر coroutines.
+**الخطوة 2: تحديد النهج**
+استخدم coroutines كمراحل خط أنابيب - كل مرحلة تسحب من السابقة وتدفع إلى المرحلة التالية.
+**الخطوة 3: التنفيذ**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**الخطوة 4: التحسين**
+يقوم خط الأنابيب القائم على السحب بمعالجة عنصر واحد في كل مرة بأقل قدر من الحمل للذاكرة - وهو مثالي للتدفقات الكبيرة أو غير المحدودة.
 ---
 
 ## ملخص

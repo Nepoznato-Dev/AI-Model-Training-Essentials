@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Lua
-Lua é uma linguagem de script leve e incorporável, projetada para estender aplicativos. Criada em 1993 na Pontifícia Universidade Católica do Rio de Janeiro, no Brasil, Lua é uma das linguagens de script mais rápidas disponíveis. Seu tamanho pequeno (o intérprete tem aproximadamente 120 KB) e sua simplicidade o tornam a escolha certa para scripts de desenvolvimento de jogos, sistemas embarcados e configuração.
+Lua é uma linguagem de script leve e incorporável, projetada para estender aplicativos. Criada em 1993 na Pontifícia Universidade Católica do Rio de Janeiro, no Brasil, Lua é uma das linguagens de script mais rápidas disponíveis. Seu tamanho reduzido (o intérprete tem aproximadamente 120 KB) e sua simplicidade o tornam a escolha certa para scripts de desenvolvimento de jogos, sistemas embarcados e configuração.
 Lua é mais conhecida como a linguagem de script por trás do Roblox (a plataforma de jogos com mais de 200 milhões de usuários mensais), complementos do World of Warcraft e vários mecanismos de jogo (Love2D, Defold, Corona SDK). Também é usado em Nginx (OpenResty), Redis e Wireshark.
 ---
 
@@ -49,7 +50,7 @@ Lua é mais conhecida como a linguagem de script por trás do Roblox (a platafor
 - **Rápido**: Uma das linguagens de script interpretadas mais rápidas.
 - **Simples**: apenas cerca de 20 palavras-chave. Fácil de aprender e integrar.
 - **Desenvolvimento de jogos**: a linguagem de script padrão para muitos mecanismos e plataformas de jogos.
-- **Roblox**: alimenta todo o ecossistema Roblox: milhões de jogos criados por usuários.
+- **Roblox**: capacita todo o ecossistema Roblox: milhões de jogos criados por usuários.
 ## As compensações
 | Limitação | Detalhes | Solução alternativa típica |
 |-------|---------|-------------------|
@@ -622,6 +623,254 @@ CMD lua5.4 src/main.lua
 | Desenvolvimento web | OpenResty existe, mas é um nicho | JavaScript, Python, Go |
 | Desenvolvimento geral de aplicações | Não projetado para aplicativos independentes | Python, Go, Java |
 | Ciência de dados | Não o ecossistema | Pitão, R |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Por que Lua usa indexação baseada em 1 em vez de indexação baseada em 0?
+**R:** Lua foi projetada para usuários não-programadores e segue convenções naturais de contagem. O operador `#`,`ipairs`e funções de string usam indexação baseada em 1:
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+Isso é consistente em toda a biblioteca padrão. Ao fazer interface com C (baseado em 0), esteja atento ao deslocamento.
+### Q2: Como implementar padrões orientados a objetos em Lua?
+**R:** Lua usa tabelas e metatabelas para OOP. O metamétodo`__index`permite a pesquisa de métodos em protótipos:
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### Q3: Como funcionam as corrotinas e quando devo usá-las?
+**R:** Corrotinas são threads cooperativos que podem suspender e retomar a execução. Eles são ideais para iteradores, padrões assíncronos e lógica de jogo:
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### Q4: Qual é a melhor maneira de lidar com erros em Lua?
+**R:** Use`pcall`/`xpcall`para detectar erros e retornar vários valores para padrões de sucesso/falha:
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### Q5: Como otimizar o desempenho de Lua para jogos e sistemas embarcados?
+**R:** Principais práticas:
+- Use`local`para todas as variáveis — o acesso global é significativamente mais lento
+- Armazenar em cache campos de tabela acessados com frequência em locais
+- Pré-alocar tabelas quando o tamanho for conhecido:`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- Evite criar tabelas temporárias em hot loops
+- Use`table.concat`em vez de`..`para juntar muitas strings
+- Perfil com`os.clock()`ou ganchos de depuração
+- No LuaJIT, use FFI para interoperabilidade C em vez da API C
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Construindo um Analisador de Configuração
+**Etapa 1: Entenda o problema**
+Analise um arquivo de configuração de valor-chave simples em que cada linha é`key = value`.
+**Etapa 2: Identifique a abordagem**
+Leia as linhas, divida`=`, corte os espaços em branco e armazene em uma tabela.
+**Etapa 3: Implementar**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**Etapa 4: Estender**
+Adicione suporte de seção (`[section]`), coerção de tipo (números, booleanos) e tabelas aninhadas.
+### Problema 2: Implementando um Sistema de Eventos Simples
+**Etapa 1: Entenda o problema**
+Crie um emissor de eventos que suporte a assinatura e a emissão de eventos nomeados.
+**Etapa 2: Identifique a abordagem**
+Use uma tabela de mapeamento de nomes de eventos para listas de funções de manipulador.
+**Etapa 3: Implementar**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**Etapa 4: verificar**
+Teste com vários eventos, remoção e tratamento de erros em manipuladores.
+### Problema 3: Criando um pipeline baseado em corrotina
+**Etapa 1: Entenda o problema**
+Crie um pipeline de processamento de dados onde cada estágio filtra ou transforma dados, conectados por meio de corrotinas.
+**Etapa 2: Identifique a abordagem**
+Use corrotinas como estágios de pipeline – cada estágio extrai do anterior e avança para o próximo.
+**Etapa 3: Implementar**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**Etapa 4: otimizar**
+Esse pipeline baseado em pull processa um elemento por vez com sobrecarga mínima de memória — ideal para fluxos grandes ou infinitos.
 ---
 
 ## Resumo

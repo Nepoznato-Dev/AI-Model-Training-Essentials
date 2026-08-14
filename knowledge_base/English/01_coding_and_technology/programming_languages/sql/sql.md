@@ -663,6 +663,176 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between `WHERE` and `HAVING`?
+
+**A:** `WHERE` filters rows before grouping; `HAVING` filters groups after aggregation:
+
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: How do window functions differ from GROUP BY?
+
+**A:** Window functions compute across rows without collapsing them:
+
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3: How do I optimize slow queries?
+
+**A:** Key strategies:
+- Add indexes on columns used in `WHERE`, `JOIN`, and `ORDER BY`
+- Avoid `SELECT *` — select only needed columns
+- Use `EXPLAIN` / `EXPLAIN ANALYZE` to read query plans
+- Replace subqueries with JOINs where possible
+- Use CTEs for readability (usually no performance penalty)
+- Avoid functions on indexed columns in WHERE: use `WHERE date >= '2024-01-01'` not `WHERE YEAR(date) = 2024`
+
+### Q4: What are CTEs and when should I use them?
+
+**A:** Common Table Expressions create named temporary result sets:
+
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5: How do I handle NULL values correctly?
+
+**A:** NULL represents unknown — it is not equal to anything, including itself:
+
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Finding the Top N per Group
+
+**Step 1: Understand the Problem**
+Find the 3 highest-paid employees in each department.
+
+**Step 2: Identify the Approach**
+Use a window function with `ROW_NUMBER()` partitioned by department.
+
+**Step 3: Implement**
+```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Step 4: Verify**
+Check that each department has at most 3 rows. Handle ties with `DENSE_RANK()` if needed.
+
+### Problem 2: Building a Year-over-Year Growth Report
+
+**Step 1: Understand the Problem**
+Calculate monthly revenue and year-over-year growth percentage.
+
+**Step 2: Identify the Approach**
+Use `DATE_TRUNC` for grouping and `LAG()` window function for previous year comparison.
+
+**Step 3: Implement**
+```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Step 4: Verify**
+Check first 12 months have NULL for previous year. Validate growth percentages against known figures.
+
+### Problem 3: Pivoting Rows to Columns
+
+**Step 1: Understand the Problem**
+Transform status counts from rows to columns.
+
+**Step 2: Identify the Approach**
+Use conditional aggregation (`CASE` inside `SUM`).
+
+**Step 3: Implement**
+```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Step 4: Extend**
+Add percentage columns and running totals.
+
+---
+
 ## Summary
 
 SQL is a 50-year-old language that remains essential. Every developer, data scientist, and analyst needs to know it. The core language is standardised and portable; the dialect differences are manageable. Modern SQL (with window functions, CTEs, and JSON support) is expressive enough for most data tasks. The key skills are: writing efficient queries, understanding indexes, reading query plans, and designing good schemas. If you work with data at all, SQL is non-negotiable.

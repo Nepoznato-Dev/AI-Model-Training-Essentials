@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Yakut
 Ruby, Yukihiro "Matz" Matsumoto tarafından oluşturulan ve ilk olarak 1995 yılında Japonya'da piyasaya sürülen dinamik, yorumlanan, nesne yönelimli bir programlama dilidir. Ruby, programcının mutluluğuna odaklanılarak tasarlandı; sözdizimi zarif ve doğaldır, neredeyse İngilizce gibi okunur. Tamsayılar ve boolean'lar gibi ilkel türler de dahil olmak üzere Ruby'deki her şey bir nesnedir. Ruby, yapılandırma ve hızlı prototipleme yerine gelenekselliği yaygınlaştırarak web geliştirmede devrim yaratan Ruby on Rails web çerçevesiyle tanınır.
-Rails'in ötesinde Ruby, komut dosyası oluşturma, otomasyon, DevOps araçları (Chef, Puppet) ve genel amaçlı bir dil olarak kullanılır. Etkileyici sözdizimi ve güçlü metaprogramlama yetenekleri, yazmayı keyifli hale getiriyor.
+Ruby, Rails'in ötesinde komut dosyası oluşturma, otomasyon, DevOps araçları (Chef, Puppet) ve genel amaçlı bir dil olarak kullanılır. Etkileyici sözdizimi ve güçlü metaprogramlama yetenekleri, yazmayı keyifli hale getiriyor.
 ---
 
 ## Ruby Neden Önemlidir
@@ -55,7 +56,7 @@ Rails'in ötesinde Ruby, komut dosyası oluşturma, otomasyon, DevOps araçları
 |-----------|------------|-----------|
 | **Performans** | Derlenmiş dillerden daha yavaştır; MRI'da GIL var | Paralellik için JRuby'yi kullanın; C uzantılarına boşaltma |
 | **Popülerliğin azalması** | Python, Go, Rust'a kıyasla daha az yeni benimseme | Halen yaygın olarak kullanılmaktadır; web girişimleri ve danışmanlığında güçlü |
-| **Yazarak** | Dinamik yazma, çalışma zamanı hatalarına neden olabilir | İsteğe bağlı statik yazım için Sorbet veya RBS kullanın |
+| **Yazarak** | Dinamik yazma, çalışma zamanı hatalarına yol açabilir | İsteğe bağlı statik yazım için Sorbet veya RBS kullanın |
 | **Bellek kullanımı** | Go veya Rust'tan daha yüksek bellek alanı | Çoğu web uygulaması için kabul edilebilir |
 | **İş piyasası** | Python veya JavaScript'ten daha az yeni konum | Belirli nişlerde güçlü (Ray mağazaları, danışmanlık) |
 ---
@@ -195,7 +196,7 @@ puts config.name  # "Alice"
 ---
 
 ## Ruby on Rails
-Rails, MVC (Model-View-Controller) mimarisini takip eden ve aşağıdakileri vurgulayan tam kapsamlı bir web çerçevesidir:
+Rails, MVC (Model-View-Controller) mimarisini izleyen ve aşağıdakileri vurgulayan tam kapsamlı bir web çerçevesidir:
 - **Konfigürasyon yerine Geleneksel**: Mantıklı varsayılanlar — her şeyi yapılandırmanıza gerek yok.
 - **Kendinizi Tekrarlamayın (KURU)**: Tekrarı en aza indirmek için oluşturucuları, geçişleri ve kuralları kullanın.
 - **Aktif Kayıt**: Veritabanı nesneleri Ruby nesneleridir. `User.find(1)`bir kullanıcıyı alır.
@@ -820,6 +821,324 @@ fly deploy
 | Performans açısından kritik sistemler | Çok yavaş | C, C++, Pas, Git |
 | Veri bilimi / ML | Ekosistem değil | Python, R |
 | Mobil uygulamalar | Uygun değil | Swift, Kotlin, Flutter |
+---
+
+## Sentetik Soru-Cevap
+### S1: Ruby'de `proc`,`lambda`ve`block`arasındaki fark nedir?
+**C:** Üçü de kapalıdır ancak davranışları farklıdır. `block`,`do...end`veya`{}`ile bir yönteme iletilen anonim bir kod yığınıdır. `proc`, nesne olarak kaydedilen bir bloktur; bağımsız değişken sayısını kontrol etmez ve `return`, kapatma yönteminden çıkar.`lambda`bir proc gibidir ancak argüman sayısını kontrol eder ve`return`yalnızca lambdadan çıkar. Yöntem benzeri davranışlara ihtiyaç duyduğunuzda tek seferlik geri aramalar için blokları, yeniden kullanılabilir parçacıklar için işlemleri ve lambdaları kullanın.
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### S2: Ruby mücevherleri ve Bundler nasıl çalışır?
+**C:** Mücevherler Ruby'nin paket sistemidir; RubyGems.org aracılığıyla dağıtılan yeniden kullanılabilir kütüphanelerdir. Bir`Gemfile`bağımlılıkları bildirir;  `bundle install`, sürümleri çözer ve tekrarlanabilirlik için bir`Gemfile.lock`oluşturur.  `bundle exec`, komutları gem bağlamında çalıştırır. Uyumlu sürüm kısıtlamaları için`gem 'name', '~> 2.0'`kullanın. Uygulamalar için her zaman`Gemfile.lock`işlemi gerçekleştirin, ancak kitaplıklar için işlemeyin.
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### S3: Ruby'nin sembol türleri nelerdir ve neden önemlidirler?
+**A:** Semboller (`:name`) değişmez, dahili dizelerdir; her benzersiz sembol bellekte yalnızca bir kez bulunur. Karma anahtarlar, yöntem adları ve tanımlayıcılar için idealdirler. Ruby ayrıca metaprogramlamada yaygın olarak kullanılan`Symbol`nesnelerine de sahiptir (`send`,`define_method`). Sabit tanımlayıcılar için semboller kullanın; İçeriği değiştirmeniz gerektiğinde dizeleri kullanın.
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### S4: Ruby'nin metaprogramlaması nasıl çalışır ve onu ne zaman kullanmalıyım?
+**C:** Ruby, kodun çalışma zamanında kodu tanımlamasına izin verir:`define_method`dinamik olarak yöntemler oluşturur,`method_missing`tanımsız yöntem çağrılarını engeller,`send`özel yöntemleri çağırır ve`class_eval`/`instance_eval`kodu bir sınıf/örnek bağlamında değerlendirir. Metaprogramlama güçlüdür ancak kodun anlaşılmasını zorlaştırır; onu günlük mantık için değil, DSL'ler ve çerçeve büyüsü için kullanın.
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### S5: Ruby'deki hataları gidermenin en iyi yolu nedir?
+**C:** Ruby, hata işleme için istisnalar kullanır. `StandardError`'den (sistem düzeyinde hataları yakalayan`Exception`değil) devralınan özel istisna sınıflarını tanımlayın. Yapılandırılmış işleme için`begin/rescue/else/ensure`kullanın. Genel`RuntimeError`değil, belirli istisnaları gündeme getirin. Basit tek satırlık satırlar için değiştirici olarak `rescue`'yi kullanın.
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Yapılandırma Dosyaları için bir DSL Oluşturun
+**Sorun Açıklaması:** Sunucu yapılandırmalarının okunabilir, bildirim temelli bir sözdiziminde tanımlanmasına olanak tanıyan bir Ruby DSL oluşturun. DSL, iç içe blokları, doğrulamayı ve JSON'a serileştirmeyi desteklemelidir.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) blokları ve yöntem çağrılarını kullanan temiz bir DSL sözdizimi, (2)`instance_eval`veya açık yöntemler aracılığıyla veri toplama, (3) gerekli alanların doğrulanması, (4) JSON serileştirmesi. Ruby'nin metaprogramlaması DSL'leri doğal hale getirir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- DSL çağrılarını yakalamak için `instance_eval`'yi bir oluşturucu sınıfıyla birlikte kullanın.
+- Yapılandırmayı örnek değişkenlerde saklayın.
+- Serileştirmeden önce gerekli alanları doğrulayın.
+- Çıkış için`to_h`ve`JSON.generate`kullanın.
+**3. Adım — Çözümü Uygulayın:**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- DSL okunabilir ve bildirimseldir; programcı olmayanlar bunu anlayabilir.
+- Doğrulama, inşaat sırasında gerekli alanların eksik olduğunu tespit eder.
+-`instance_eval`temiz blok sözdizimini sağlar ancak `self`'yi sınırlar — daha karmaşık DSL'ler için `BasicObject`'yi oluşturucunun üst sınıfı olarak kullanın.
+- Üretim: Üretim düzeyinde yapılandırma DSL'leri için`dry-configurable`veya`configurate`öğelerini düşünün.
+### Sorun 2: Not Kitaplığı Uygulama
+**Sorun Açıklaması:** Yöntem sonuçlarını önbelleğe almak için herhangi bir sınıfla birleştirilebilecek bir not modülü oluşturun. TTL (yaşam süresi), önbellek boyutu sınırları ve özel önbellek anahtarlarını destekleyin.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) bir`memoize`sınıf yöntemi ekleyen bir modül, (2) yöntem, hedef yöntemleri önbellekleme mantığıyla sarar, (3) TTL süre sonu desteği, (4) önbellek dolduğunda LRU tahliyesi. Ruby'nin`Module#prepend`ve `define_method`'si bunun için idealdir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Bir sarmalayıcı oluşturmak için `Module.new`'yi`define_method`ile birlikte kullanın.
+- Önbelleği TTL için zaman damgalarıyla birlikte bir karmada saklayın.
+- Önbelleğe alma katmanını orijinal yöntemin önüne eklemek için`prepend`kullanın.
+- Yapılandırılabilir seçenekleri destekler: `ttl`, `max_size`, `key`.
+**3. Adım — Çözümü Uygulayın:**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- İş parçacığı güvenliği:`Mutex`önbellek okuma/yazma işlemlerini korur; hesaplama kilidin dışında gerçekleşir.
+- TTL: süresi dolmuş girişler erişim sırasında tembel bir şekilde temizlenir.
+- LRU tahliyesi: önbellek`max_size`değerini aştığında, en eski giriş (zaman damgasına göre) kaldırılır.
+- Özel anahtarlar:`key`lambda, önbellek kimliği üzerinde ayrıntılı kontrole olanak tanır.
+- Üretim: Basit durumlar için`memoist`gem'i veya dağıtılmış önbellekleme için Redis destekli notlandırmayı kullanın.
 ---
 
 ## Özet

@@ -274,7 +274,7 @@ for epoch in range(num_epochs):
 print(f"\nBest validation AUC: {best_val_auc:.4f}")
 
 # Final test evaluation
-model.load_state_dict(torch.load('best_molecule_model.pt'))
+model.load_state_dict(torch.load('best_molecule_model.pt', weights_only=True))
 test_auc = evaluate(test_loader)
 print(f"Test AUC: {test_auc:.4f}")
 ```
@@ -1252,7 +1252,7 @@ for epoch in range(num_epochs):
         torch.save(model.state_dict(), 'best_traffic_model.pt')
 
 # Final test evaluation
-model.load_state_dict(torch.load('best_traffic_model.pt'))
+model.load_state_dict(torch.load('best_traffic_model.pt', weights_only=True))
 test_metrics = evaluate(test_loader)
 
 print(f"\nTest Results:")

@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C
 C ist eine universelle, prozedurale Programmiersprache, die zwischen 1969 und 1973 von Dennis Ritchie in den Bell Labs entwickelt wurde. Sie wurde zur Implementierung des Unix-Betriebssystems entwickelt und ist auch über 50 Jahre später eine der am weitesten verbreiteten Programmiersprachen. C bietet Low-Level-Speicherzugriff, eine minimale Standardbibliothek und eine saubere Zuordnung zu Maschinenanweisungen – und ist damit die Grundlage, auf der die meisten modernen Computer basieren.
-C ist die Sprache hinter Betriebssystemen (Linux, Windows-Kernel, macOS), eingebetteten Systemen, Datenbank-Engines (SQLite, PostgreSQL), Compilern (CPython von Python, MRI von Ruby) und praktisch jeder anderen Laufzeitprogrammiersprache. C zu verstehen bedeutet zu verstehen, wie Computer tatsächlich funktionieren.
+C ist die Sprache hinter Betriebssystemen (Linux, Windows-Kernel, macOS), eingebetteten Systemen, Datenbank-Engines (SQLite, PostgreSQL), Compilern (CPython von Python, MRI von Ruby) und praktisch jeder anderen Laufzeitprogrammiersprache. Um C zu verstehen, muss man verstehen, wie Computer tatsächlich funktionieren.
 ---
 
 ## Warum C wichtig ist
@@ -53,7 +54,7 @@ C ist die Sprache hinter Betriebssystemen (Linux, Windows-Kernel, macOS), eingeb
 | Einschränkung | Einzelheiten | Typische Problemumgehung |
 |-----------|---------|-----|
 | **Manuelle Speicherverwaltung** | Kein Garbage Collector – Sie können den Speicher selbst zuweisen und freigeben | Sorgfältiger Umgang mit malloc/free; RAII-Muster in C++ |
-| **Pufferüberlauf** | Keine Grenzen bei der Prüfung von Arrays – einfaches Schreiben über Pufferenden hinaus | Verwenden Sie strncpy anstelle von strcpy; Compiler-Warnungen aktivieren |
+| **Pufferüberlauf** | Keine Grenzen bei der Prüfung von Arrays – einfaches Schreiben über Pufferenden hinaus | Verwenden Sie strncpy anstelle von strcpy. Compiler-Warnungen aktivieren |
 | **Kein integriertes OOP** | Nur prozedural – keine Klassen, Vererbung oder Methoden | Verwenden Sie Strukturen + Funktionszeiger. oder wechseln Sie zu C++ |
 | **Begrenzte Standardbibliothek** | Minimale integrierte Funktionalität | Bibliotheken von Drittanbietern oder schreiben Sie Ihre eigenen |
 | **Undefiniertes Verhalten** | Viele Fehler lassen sich gut kompilieren, stürzen aber unvorhersehbar ab | Verwenden Sie Desinfektionsmittel und statische Analysegeräte |
@@ -640,7 +641,7 @@ print(lib.c_add(3, 5))  # 8
 ---
 
 ## Designmuster
-### Undurchsichtiger Zeiger (Pimpl-Idiom in C)
+### Undurchsichtiger Zeiger (Pimpl-Redewendung in C)
 ```c
 // stack.h -- public interface (implementation hidden)
 typedef struct Stack Stack;
@@ -846,12 +847,520 @@ make clean    # Removes build artifacts
 ## C-Standards
 | Standard | Jahr | Wichtige Ergänzungen |
 |----------|------|--------------|
-| C89/C90 | 1989/1990 | Das ursprüngliche ANSI C – immer noch die Basis |
+| C89/C90 | 1989/1990 | Das ursprüngliche ANSI C – immer noch die Basislinie |
 | C99 | 1999 | // Kommentare, Bool-Typ, Arrays variabler Länge, inline, stdint.h |
 | C11 | 2011 | Atomare Operationen, Threads, anonyme Strukturen, _Generic |
 | C17 | 2018 | Fehlerbehebungen und Klarstellungen (keine neuen Funktionen) |
 | C23 | 2024 | nullptr, typeof, constexpr, verbesserter Präprozessor |
 Der meiste Produktionscode zielt auf C11 oder C17 ab. C23 bietet moderne Annehmlichkeiten, aber die Einführung braucht Zeit.
+---
+
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen Zeigern und Arrays in C?
+**A:** Arrays und Zeiger sind verwandt, aber unterschiedlich. Ein Array ist ein zusammenhängender Speicherblock mit einer festen Größe, die zur Kompilierungszeit bekannt ist. Ein Zeiger ist eine Variable, die eine Speicheradresse enthält. Arrays zerfallen bei der Übergabe an Funktionen in Zeiger, aber`sizeof(array)`gibt die Gesamtgröße an, während`sizeof(pointer)`nur die Zeigergröße (4 oder 8 Bytes) angibt. Array-Namen sind keine veränderbaren L-Werte – Sie können`arr++`nicht ausführen.
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### F2: Wie verwalte ich den Speicher richtig und vermeide Lecks?
+**A:** Jeder`malloc`/`calloc`muss einen entsprechenden`free`haben. Häufige Fehler: Vergessen des Freigebens (Leak), zweimaliges Freigeben (undefiniertes Verhalten), Verwendung von Speicher nach dem Freigeben (use-after-free) und Nichtüberprüfung des `malloc`-Rückgabewerts (NULL bei Fehler). Best Practice: Allokieren und Freigeben im selben Modul, Verwenden Sie das „Goto Cleanup“-Muster zur Fehlerbehandlung und setzen Sie freigegebene Zeiger immer auf NULL.
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### F3: Was sind die Best Practices für die Fehlerbehandlung in C?
+**A:** C hat keine Ausnahmen. Die Fehlerbehandlung verwendet Rückgabewerte (Fehlercodes, NULL-Zeiger, negative Werte). Das Standardmuster: Funktionen geben bei einem Fehler einen Statuscode oder NULL zurück und legen`errno`für Systemaufrufe fest. Verwenden Sie das Muster „Gehe zu Bereinigung“ zur Ressourcenbereinigung bei Fehlern. Überprüfen Sie immer die Rückgabewerte von`malloc`,`fopen`und anderen Funktionen, die fehlschlagen können.
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### F4: Wie unterscheiden sich Strukturen, Unions und Bitfelder im Speicherlayout?
+**A:** Strukturen ordnen Mitglieder nacheinander an, mit möglicher Auffüllung zur Ausrichtung. Gewerkschaften überlagern alle Mitglieder am selben Speicherort – die Größe entspricht dem größten Mitglied. Bitfelder packen mehrere Werte in eine einzige Ganzzahl. Strukturen sind für heterogene Daten, Unions für Typ-Punning oder Platzersparnis, wenn nur ein Feld aktiv ist, und Bitfelder für die kompakte Flag-Speicherung.
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### F5: Was sind Funktionszeiger und wann sollte ich sie verwenden?
+**A:** Funktionszeiger speichern die Adresse einer Funktion und ermöglichen Rückrufe, Polymorphismus und Plugin-Architekturen. Sie bilden die Grundlage des C-Ansatzes für Funktionen höherer Ordnung (wie`qsort`,`bsearch`). Deklarieren Sie sie mit der Syntax:`return_type (*name)(parameter_types)`.
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Implementieren Sie ein dynamisches Array (Vektor)
+**Problemstellung:** Implementieren Sie ein dynamisches Array in C, das automatisch wächst, wenn Elemente hinzugefügt werden, das amortisierte Anhängen von O(1) unterstützt und eine ordnungsgemäße Bereinigung ermöglicht. Dies ist das C-Äquivalent von C++`std::vector`.
+**Schritt 1 – Das Problem verstehen:**
+Ein dynamisches Array benötigt: (1) einen Heap-zugewiesenen Puffer, (2) Verfolgung von Größe (verwendete Elemente) und Kapazität (zugewiesene Slots), (3) Neuzuweisung, wenn die Größe die Kapazität erreicht, (4) ordnungsgemäße Speicherbereinigung. Ein Wachstumsfaktor von 2x ergibt einen amortisierten O(1)-Anhang.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+- Verwenden Sie`malloc`für die Erstzuteilung und`realloc`für das Wachstum.
+- Speichern Sie Datenzeiger, Größe und Kapazität in einer Struktur.
+- Wachsen Sie durch Verdoppelung der Kapazität, wenn`size == capacity`.
+- Bereitstellung der Operationen `push`, `pop`, `get`,`set`und `free`.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Amortisierter O(1)-Push: Verdoppelung bedeutet, dass jedes Element insgesamt höchstens O(log n)-mal kopiert wird.
+– Die Überprüfung der Grenzen in`vec_get`und`vec_pop`erkennt Fehler frühzeitig – wichtig in C, wo es kein Laufzeitsicherheitsnetz gibt.
+- Speicher: Nach 100 Betätigungen ab Kapazität 4 erreicht die Kapazität 128 (4→8→16→32→64→128).
+- Produktion: Verwenden Sie`shrink_to_fit`(Neuzuordnung auf exakte Größe), wenn das Wachstum abgeschlossen ist, um ungenutzten Speicher zurückzugewinnen.
+### Problem 2: Erstellen Sie eine einfache Hash-Tabelle
+**Problemstellung:** Implementieren Sie eine Hash-Tabelle mit Zeichenfolgenschlüsseln und Ganzzahlwerten unter Verwendung einer separaten Verkettung zur Kollisionsauflösung. Unterstützt Einfüge-, Such- und Löschvorgänge.
+**Schritt 1 – Das Problem verstehen:**
+Eine Hash-Tabelle ordnet Schlüssel über eine Hash-Funktion Array-Indizes zu. Kollisionen (unterschiedliche Schlüssel, die demselben Index zugeordnet sind) werden durch separate Verkettung gelöst: Jeder Bucket ist eine verknüpfte Liste von Einträgen. Wir brauchen: Hash-Funktion, Einfügen, Suchen, Löschen und Bereinigen.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+– Verwenden Sie den FNV-1a-Hash für eine gute Verteilung der Zeichenfolgenschlüssel.
+– Array von Bucket-Zeigern (verknüpfte Listenköpfe).
+- Lastfaktorverfolgung; Größe ändern, wenn der Lastfaktor den Schwellenwert überschreitet.
+- Alle Operationen sind O(1)-Durchschnitt, O(n) Worst-Case.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Durchschnittlicher O(1) für Einfügen/Suchen/Löschen mit einer guten Hash-Funktion und einem angemessenen Auslastungsfaktor.
+- FNV-1a bietet eine hervorragende Verteilung für Zeichenfolgenschlüssel mit minimalem Rechenaufwand.
+- Die Zeiger-zu-Zeiger-Technik (`Entry **pp`) in
+- Produktion: Wiederaufwärmen hinzufügen, wenn der Lastfaktor den Schwellenwert überschreitet. Verwenden Sie offene Adressierung (lineare Prüfung), um eine bessere Cache-Leistung zu erzielen.
+### Problem 3: Implementieren Sie einen Ringpuffer für Producer-Consumer
+**Problemstellung:** Implementieren Sie einen sperrenfreien Single-Producer-Single-Consumer-Ringpuffer in C für leistungsstarke Inter-Thread-Kommunikation ohne dynamische Zuweisung während des Betriebs.
+**Schritt 1 – Das Problem verstehen:**
+Ein Ringpuffer (zirkulärer Puffer) verwendet ein Array fester Größe mit Lese- und Schreibindizes. Wenn der Puffer voll ist, blockiert oder überschreibt der Writer. Für SPSC (Single-Producer-Single-Consumer) können wir für maximalen Durchsatz atomare Operationen anstelle von Sperren verwenden.
+**Schritt 2 – Identifizieren Sie den Ansatz:**
+– Array mit fester Größe, einmalig bei der Initialisierung zugewiesen.
+-`head`(Leseposition) und`tail`(Schreibposition) als atomare Indizes.
+- Produzent bringt`tail`voran; Verbrauchervorschüsse`head`.
+- Puffer ist leer, wenn`head == tail`; voll, wenn`(tail + 1) % capacity == head`.
+- Verwenden Sie C11-Atomeinheiten mit der entsprechenden Speicherreihenfolge.
+**Schritt 3 – Implementieren Sie die Lösung:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**Schritt 4 – Überprüfen und Optimieren:**
+- Sperrenfrei: nur atomare Operationen – keine Mutexe, keine Kontextwechsel.
+- Speicherordnung:`release`stellt beim Schreiben sicher, dass die Daten vor der Indexaktualisierung sichtbar sind; `acquire`beim Lesen stellt sicher, dass wir die Daten nach dem Lesen des Index sehen.
+- Potenz von 2 Kapazität: ermöglicht`& (capacity - 1)`anstelle von`% capacity`– deutlich schneller.
+- Durchsatz: Milliarden Operationen pro Sekunde auf moderner Hardware.
+- Produktion: Fügen Sie einen Abstand zwischen`head`und`tail`hinzu, um falsches Teilen zu verhindern (jeweils in einer eigenen Cache-Zeile).
 ---
 
 ## Zusammenfassung

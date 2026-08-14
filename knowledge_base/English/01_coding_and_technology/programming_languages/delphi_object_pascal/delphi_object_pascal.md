@@ -1136,6 +1136,101 @@ Delphi Deployment Targets:
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How does Delphi's VCL framework work?
+
+**A:** VCL wraps Windows API controls in an object-oriented hierarchy. Forms, buttons, and grids are all classes:
+
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: How do I create components in Delphi?
+
+**A:** Inherit from TComponent or TControl:
+
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3: What is the difference between Delphi and Free Pascal?
+
+**A:** Delphi is a commercial IDE/compiler by Embarcadero. Free Pascal is the open-source compiler, and Lazarus is the free IDE. Both use Object Pascal syntax.
+
+### Q4: How do I work with databases in Delphi?
+
+**A:** Use FireDAC or dbExpress components:
+
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5: Is Delphi still relevant today?
+
+**A:** For maintaining legacy Windows applications, yes. For new projects, most developers prefer C# or web technologies. Free Pascal/Lazarus provides a free cross-platform alternative.
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Building a Data-Aware Form
+
+**Step 1: Understand the Problem**
+Create a form that displays and edits database records.
+
+**Step 2: Identify the Approach**
+Use data-aware components bound to a dataset.
+
+**Step 3: Implement**
+```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Step 4: Extend**
+Add validation, error handling, and search/filter functionality.
+
+---
+
 ## Summary
 
 Delphi is a historically important language that pioneered rapid application development for Windows. Modern Delphi remains capable for native Windows applications and database front-ends, but its community and ecosystem have shrunk considerably. For maintaining existing Delphi codebases, it remains essential. For new projects, most developers have migrated to C#, web technologies, or cross-platform frameworks. The open-source Free Pascal / Lazarus project provides a free alternative for those interested in the Object Pascal language.

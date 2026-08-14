@@ -41,7 +41,7 @@ contribution:
 
 #COBOL
 COBOL (Ortak İş Odaklı Dil), halen kullanımda olan en eski programlama dillerinden biridir ve ilk olarak 1959'da geliştirilmiştir. Finansal sistemler, bordro, bankacılık, sigorta ve hükümet uygulamaları gibi ticari veri işleme için tasarlanmıştır. COBOL'un İngilizce benzeri sözdiziminin yalnızca programcılar tarafından değil, işletme yöneticileri tarafından da okunabilmesi amaçlandı.
-COBOL, yaşına rağmen dünya çapındaki tüm ticari işlemlerin tahmini %30'unu gerçekleştiriyor. Büyük bankalar, devlet kurumları (ABD Sosyal Güvenlik İdaresi dahil) ve sigorta şirketleri hâlâ COBOL ana bilgisayar sistemlerine güveniyor. 1999'daki Y2K hata korkusu, COBOL'u kamuoyunun farkındalığına geri getirdi ve dil, dünya çapında kritik altyapıyı çalıştırmaya devam ediyor.
+COBOL, yaşına rağmen dünya genelindeki tüm ticari işlemlerin tahmini %30'unu gerçekleştiriyor. Büyük bankalar, devlet kurumları (ABD Sosyal Güvenlik İdaresi dahil) ve sigorta şirketleri hâlâ COBOL ana bilgisayar sistemlerine güveniyor. 1999'daki Y2K hata korkusu, COBOL'u kamuoyunun farkındalığına geri getirdi ve dil, dünya çapında kritik altyapıyı çalıştırmaya devam ediyor.
 ---
 
 ## COBOL Neden Önemlidir
@@ -624,7 +624,7 @@ gdb ./payroll
 
 ## Tasarım Desenleri
 ### Model 1: Kontrol Kesintileriyle Toplu İşleme
-Kontrol kesme modeli, en temel COBOL tasarım modelidir; bir anahtar alana göre gruplandırılmış kayıtları işler ve alt toplamlar üretir.
+Kontrol kesme modeli, en temel COBOL tasarım modelidir; anahtar alana göre gruplandırılmış kayıtları işler ve alt toplamlar üretir.
 ```cobol
        PROCEDURE DIVISION.
        000-MAIN.
@@ -783,7 +783,7 @@ Kontrol kesme modeli, en temel COBOL tasarım modelidir; bir anahtar alana göre
 | **Sırala/Birleştir** | Orta | Büyük veri kümesi sıralaması için SORT fiilini kullanın |
 | **EKRANI simge durumuna küçült** | Orta | DISPLAY toplu olarak yavaş; bunun yerine dosyalara yaz |
 | **COMP/COMP-3** | Orta | İkili/paketlenmiş alanlar DISPLAY sayısaldan daha hızlıdır |
-| **Arabellek ayarı** | Orta | Sıralı dosya işleme için arabellek boyutlarını ayarlayın |
+| **Arabellek ayarlama** | Orta | Sıralı dosya işleme için arabellek boyutlarını ayarlayın |
 ---
 
 ## Dağıtım ve Gerçek Dünya Kullanımı
@@ -829,5 +829,129 @@ scp bin/payroll server:/opt/cobol/bin/
 | Veri bilimi / ML | Uygun değil | Python, R |
 ---
 
+## Sentetik Soru-Cevap
+### S1: COBOL neden 60 yıldan fazla bir süre sonra bankacılıkta hala kullanılıyor?
+**C:** COBOL, bankacılık işlemlerinin tahmini olarak %70-80'ini gerçekleştirmektedir. Sebepler:
+- Doğru çalışan devasa kod tabanları (milyonlarca satır)
+- Olağanüstü güvenilirlik — bu sistemler onlarca yıldır üretimde test edilmektedir
+- Geçişin maliyeti ve riski bakım maliyetlerinden daha ağır basmaktadır
+- COBOL'un ayrıntılı, İngilizce benzeri sözdizimi kendi kendini belgelemektedir
+- Dilde yerleşik ondalık aritmetik (kayan nokta yuvarlama hatası yok)
+### S2: COBOL, kayan nokta hataları olmadan ondalık aritmetiği nasıl işler?
+**C:** COBOL'de sabit duyarlıklı yerel ondalık sayı türleri bulunur:
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V` örtülü bir ondalık sayıdır. COBOL para için asla ikili kayan nokta kullanmaz.
+### S3: COBOL programının yapısı nedir?
+**C:** Her COBOL programının dört bölümü vardır:
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### S4: COBOL'da sıralı dosyaları nasıl okuyup işleyebilirim?
+**C:** COBOL dosya işlemede üstündür:
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### S5: Modern COBOL geliştirme için hangi araçlar mevcut?
+**C:** GnuCOBOL (açık kaynak), IBM Enterprise COBOL, Micro Focus ve VS Code uzantıları modern geliştirme ortamları sağlar.`cobc -x program.cob`ile oluşturun.
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Müşteri Raporu Oluşturma
+**1. Adım: Sorunu Anlayın**
+Müşteri kayıtlarını okuyun, toplamları hesaplayın ve biçimlendirilmiş bir rapor oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+COBOL'un dosya işleme ve rapor yazma yeteneklerini kullanın.
+**3. Adım: Uygulama**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**4. Adım: Doğrulayın**
+Toplamları kaynak verilere göre çapraz kontrol edin. Uç durumlarla test edin (boş dosya, sıfır bakiye).
+### Sorun 2: Kontrol Kesintileriyle Toplu İşleme
+**1. Adım: Sorunu Anlayın**
+Departmanlara göre gruplandırılmış işlemleri işleyin, alt toplamları yazdırın.
+**2. Adım: Yaklaşımı Belirleyin**
+Kontrol kesme mantığını kullanın — grup anahtarının ne zaman değiştiğini tespit edin.
+**3. Adım: Uygulama**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**4. Adım: Doğrulayın**
+Son grubun toplamının yazdırılıp yazdırılmadığını kontrol edin. Genel toplamın bölüm toplamlarının toplamına eşit olduğunu doğrulayın.
+---
+
 ## Özet
-COBOL, bilgisayar teknolojisinin ilk günlerinden kalma, ölmeyi reddeden bir kalıntıdır çünkü bunu göze alamaz. Dünyanın bankacılık ve hükümet sistemleri onlarca yıldır güvenilir bir şekilde çalışan COBOL programlarına bağlıdır. Bugün hiç kimse yeni bir proje için COBOL'u seçmese de dil, küresel finansın temelini oluşturan altyapının sürdürülmesi açısından kritik öneme sahip olmaya devam ediyor. COBOL geliştiricilerinin eksikliği onu şaşırtıcı derecede kazançlı bir niş haline getiriyor.
+COBOL, bilgi işlemin ilk on yıllarından kalma bir mirastır ve büyük ölçekte değiştirilmesi mümkün olmadığından aktif kullanımda kalır. Dünyanın bankacılık ve hükümet sistemleri onlarca yıldır güvenilir bir şekilde çalışan COBOL programlarına bağlıdır. COBOL bugün yeni bir proje için genellikle seçilmezken, dil, küresel finansı destekleyen altyapının sürdürülmesi açısından önemini koruyor. COBOL geliştiricilerinin eksikliği onu kazançlı bir niş haline getiriyor.

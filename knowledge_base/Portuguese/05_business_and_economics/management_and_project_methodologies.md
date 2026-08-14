@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Metodologias de Gestão e Projetos
-Gerenciar pessoas e projetos é uma das coisas mais difíceis em qualquer organização. As habilidades técnicas colocam você na sala, mas a capacidade de liderar equipes, tomar decisões, comunicar-se com clareza e entregar resultados é o que determina se algo realmente será feito. Este arquivo abrange as estruturas, metodologias e habilidades práticas nas quais gerentes e líderes de projeto eficazes dependem.
+Gerenciar pessoas e projetos está entre as responsabilidades mais exigentes em qualquer organização. As habilidades técnicas proporcionam a entrada, mas a capacidade de liderar equipes, tomar decisões, comunicar-se com eficácia e entregar resultados determina se os objetivos serão alcançados. Este arquivo abrange as estruturas, metodologias e habilidades práticas que gerentes e líderes de projeto eficazes aplicam.
 ---
 
 ## Estilos de Liderança
@@ -116,7 +117,7 @@ Kanban é um método baseado em fluxo focado na visualização do trabalho e na 
 | **Gerenciar fluxo** | Medir o tempo do ciclo; identificar e eliminar gargalos |
 | **Tornar as políticas explícitas** | Todos concordam sobre o que significa “Concluído” para cada coluna |
 | **Melhore de forma colaborativa** | Utilizar dados e feedback para evoluir o processo |
-**Scrum versus Kanban**:
+**Scrum x Kanban**:
 | | Scrum | Kanban |
 |---|-------|----|
 | **Cadência** | Sprints fixos (2 semanas) | Fluxo contínuo |
@@ -156,7 +157,7 @@ OKRs são uma estrutura de definição de metas usada pelo Google, Intel, Spotif
 | Tipo de parte interessada | Com o que eles se importam | Como engajar |
 |-----------------|---------------------|---------------|
 | **Patrocinadores executivos** | ROI, alinhamento estratégico, risco | Atualizações mensais; foco nos resultados |
-| **Usuários finais** | Facilidade de uso, confiabilidade, solução de problemas | Pesquisa de usuário; programas beta; canais de suporte |
+| **Usuários finais** | Facilidade de uso, confiabilidade, solução de problemas | Pesquisa de usuários; programas beta; canais de suporte |
 | **Equipes técnicas** | Qualidade de código, arquitetura, dívida técnica | Revisões de arquitetura; palestras sobre tecnologia; envolvimento nas decisões |
 | **Clientes externos** | Prazo de entrega, qualidade, valor | Demonstrações regulares; comunicação clara; SLAs |
 | **Reguladores/Conformidade** | Requisitos legais, trilhas de auditoria | Documentação; envolvimento proativo |
@@ -242,7 +243,7 @@ OKRs são uma estrutura de definição de metas usada pelo Google, Intel, Spotif
 |-----------|-------------|------|------|
 | **Funcional** | Organizado por especialidade (engenharia, marketing, vendas) | Profundo conhecimento; caminhos de carreira claros | Silos; trabalho multifuncional lento |
 | **Divisional** | Organizado por produto, mercado ou geografia | Foco; responsabilidade | Recursos duplicados; práticas inconsistentes |
-| **Matriz** | As pessoas se reportam aos gerentes funcionais e de projeto | Flexibilidade; compartilhamento de recursos | Prioridades conflitantes; confusão sobre quem está no comando |
+| **Matriz** | As pessoas se reportam aos gerentes funcionais e de projetos | Flexibilidade; compartilhamento de recursos | Prioridades conflitantes; confusão sobre quem está no comando |
 | **Plano / Holacracia** | Hierarquia mínima; equipes auto-organizadas | Velocidade; autonomia; inovação | Decisões pouco claras; não escala bem |
 | **Topologia de equipe** (Skelton/Pais) | Equipes alinhadas ao fluxo + equipes de plataforma + equipes de capacitação + equipes de subsistemas complicados | Alinha-se com a forma como o trabalho realmente flui | Requer um design bem pensado; não é uma solução mágica |
 ---
@@ -267,4 +268,4 @@ O gerenciamento de produtos é a disciplina de decidir o que construir, para que
 ---
 
 ## Resumo
-A gestão não se trata de títulos ou organogramas – trata-se de fazer com que as coisas certas sejam feitas por meio de outras pessoas. Os melhores gestores combinam pensamento claro (estruturas, metodologias, métricas) com inteligência emocional (escuta, empatia, confiança). Nenhuma metodologia substitui o bom senso, mas o bom julgamento é melhorado por boas estruturas. Use-os como ferramentas, não como religiões.
+Gestão é a prática de atingir objetivos por meio de outras pessoas. Gestores eficazes combinam pensamento claro (estruturas, metodologias, métricas) com habilidades interpessoais (escuta, empatia, confiança). Nenhuma metodologia substitui o bom senso, mas o bom julgamento é reforçado por estruturas sólidas. Estes devem ser aplicados como guias práticos e não como doutrinas rígidas.

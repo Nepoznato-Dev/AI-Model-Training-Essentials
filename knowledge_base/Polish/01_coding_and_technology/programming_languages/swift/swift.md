@@ -281,7 +281,7 @@ func evaluate(_ expr: ArithmeticExpression) -> Int {
 }
 ```
 
-### Opakowania właściwości i narzędzia do tworzenia wyników
+### Opakowujące właściwości i narzędzia do tworzenia wyników
 ```swift
 // Property wrapper
 @propertyWrapper
@@ -630,6 +630,363 @@ Na potrzeby produkcyjne wdróż skompilowany plik binarny na serwerze Linux z sy
 | Wieloplatformowe urządzenia mobilne | Możliwe, ale nie podstawowe | Trzepotanie, Reaguj natywnie |
 | Programowanie systemów | Możliwe (Linux) | Rdza, C, C++ |
 | Ogólny programista aplikacji (inny niż Apple) | Ograniczony ekosystem | Python, Go, Java |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Co to są opcje opcjonalne i dlaczego Swift zmusza mnie do ich rozpakowania?
+**A:** Opcja (`Type?`) reprezentuje wartość, której może nie być — jest to`.some(value)`lub`.none`(zero). Swift wymusza jawne rozpakowywanie, aby zapobiec awariom wskaźnika zerowego w czasie wykonywania. Możesz rozpakować za pomocą`if let`,`guard let`, wymusić rozpakowanie (`!`), opcjonalne łączenie łańcuchowe (`?.`) lub zerowe łączenie (`??`). Kompilator zapewnia obsługę przypadku zerowego — eliminuje to całą klasę błędów.
+```swift
+// Optional declaration
+var name: String? = nil
+name = "Alice"
+
+// Safe unwrapping with if let
+if let unwrapped = name {
+    print("Name: \(unwrapped)")
+} else {
+    print("Name is nil")
+}
+
+// Guard let — early exit
+func greet(user: String?) {
+    guard let name = user else {
+        print("No user provided")
+        return
+    }
+    print("Hello, \(name)!")
+}
+
+// Nil coalescing
+let displayName = name ?? "Anonymous"
+
+// Optional chaining
+class Address { var city: String? }
+class User { var address: Address? }
+let user = User()
+let city = user.address?.city  // String? — nil at any point
+let cityOrUnknown = user.address?.city ?? "Unknown"
+```
+
+### P2: Jaka jest różnica między strukturami i klasami w Swift?
+**A:** Struktury to typy wartości (kopiowane przy przypisaniu), klasy to typy referencyjne (współdzielone). Struktury otrzymują darmowy inicjator członkowski i obsługują wszystkie funkcje klas z wyjątkiem dziedziczenia, deinicjalizacji i zliczania referencji. Wszystkie standardowe typy bibliotek Swifta (`String`,`Array`,`Dictionary`) to struktury. Domyślnie preferuj struktury; używaj klas, gdy potrzebujesz współdzielonego, zmiennego stanu lub dziedziczenia.
+```swift
+// Struct — value type, copied on assignment
+struct Point {
+    var x: Double
+    var y: Double
+
+    mutating func move(by dx: Double, _ dy: Double) {
+        x += dx
+        y += dy
+    }
+}
+
+var p1 = Point(x: 1, y: 2)
+var p2 = p1          // Copy
+p2.x = 10
+print(p1.x)          // 1 — unchanged
+
+// Class — reference type, shared
+class ViewController {
+    var title: String = ""
+}
+let vc1 = ViewController()
+let vc2 = vc1        // Same reference
+vc2.title = "Home"
+print(vc1.title)     // "Home" — same object
+```
+
+### P3: Jak działają protokoły i programowanie zorientowane na protokoły?
+**O:** Protokoły definiują schemat metod, właściwości i wymagań. Każdy typ może być zgodny z protokołem, wdrażając jego wymagania. Rozszerzenia protokołów zapewniają domyślne implementacje. Typy generyczne ograniczone protokołami zapewniają polimorfizm bez narzutu związanego z dziedziczeniem klas — jest to „programowanie zorientowane na protokół”.
+```swift
+// Protocol definition
+protocol Drawable {
+    func draw(on context: GraphicsContext)
+    var bounds: CGRect { get }
+}
+
+// Default implementation via extension
+extension Drawable {
+    func describe() -> String {
+        return "Drawable at \(bounds)"
+    }
+}
+
+// Conforming types
+struct Circle: Drawable {
+    let center: CGPoint
+    let radius: CGFloat
+
+    func draw(on context: GraphicsContext) { /* ... */ }
+    var bounds: CGRect { /* computed from center + radius */ CGRect() }
+}
+
+// Protocol as generic constraint
+func renderAll<T: Drawable>(_ items: [T], on context: GraphicsContext) {
+    for item in items {
+        item.draw(on: context)
+    }
+}
+
+// Protocol composition
+func process(_ item: Drawable & Codable & Sendable) { /* ... */ }
+```
+
+### P4: Co to jest`async/await`w Swift i jaki ma to związek z aktorami?
+**A:** Model współbieżności Swifta (5.5+) wykorzystuje`async/await`dla kodu asynchronicznego i`actors`dla bezpiecznego współdzielonego stanu zmiennego.  Funkcje`async`można zawieszać i wznawiać. `await`oznacza punkty zawieszenia. Aktorzy zapobiegają wyścigom danych poprzez serializację dostępu do ich zmiennego stanu — kompilator wymusza to w czasie kompilacji.
+```swift
+// Async function
+func fetchUser(id: String) async throws -> User {
+    let (data, _) = try await URLSession.shared.data(
+        from: URL(string: "https://api.example.com/users/\(id)")!
+    )
+    return try JSONDecoder().decode(User.self, from: data)
+}
+
+// Actor — safe shared mutable state
+actor BankAccount {
+    private var balance: Double = 0
+
+    func deposit(_ amount: Double) {
+        balance += amount  // Only accessible within actor
+    }
+
+    func getBalance() -> Double { balance }
+}
+
+// Usage
+let account = BankAccount()
+await account.deposit(100)
+let balance = await account.getBalance()
+
+// Concurrent execution with async let
+async let user = fetchUser(id: "1")
+async let posts = fetchPosts(userId: "1")
+let dashboard = try await Dashboard(user: user, posts: posts)
+```
+
+### P5: Jak działają opakowania właściwości i narzędzia do tworzenia wyników?
+**A:** Opakowania właściwości (`@propertyWrapper`) dodają logikę do przechowywania właściwości (jak`@State`w SwiftUI). Kreatory wyników (`@resultBuilder`) umożliwiają budowanie struktur danych przy użyciu naturalnej składni (takiej jak hierarchia widoków SwiftUI). Obie są formami metaprogramowania, które redukują szablony.
+```swift
+// Property wrapper
+@propertyWrapper
+struct Clamped<T: Comparable> {
+    var wrappedValue: T {
+        didSet { wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound) }
+    }
+    let range: ClosedRange<T>
+
+    init(wrappedValue: T, _ range: ClosedRange<T>) {
+        self.range = range
+        self.wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound)
+    }
+}
+
+struct Player {
+    @Clamped(0...100) var health: Int = 100
+    @Clamped(0...999) var score: Int = 0
+}
+
+var player = Player()
+player.health = 150  // Clamped to 100
+player.health = -10  // Clamped to 0
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Zbuduj router bezpieczny dla typu
+**Opis problemu:** Utwórz bezpieczny typ routera URL dla aplikacji na iOS, w którym każda trasa ma powiązane parametry, a kompilator uniemożliwia dostęp do parametrów, które nie istnieją dla danej trasy.
+**Krok 1 — Zrozum problem:**
+Potrzebujemy: (1) definicji tras z wpisanymi parametrami, (2) analizy adresów URL w celu wyodrębnienia trasy + parametrów, (3) dostępu do parametrów bezpiecznego typu — kompilator gwarantuje, że czytane są tylko parametry, które istnieją dla każdej trasy. Wymaga to wyliczeń z powiązanymi wartościami.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj wyliczenia z powiązanymi wartościami, aby zdefiniować trasy.
+- Każdy przypadek ma swoje specyficzne parametry jako wartości wpisane.
+- Parser konwertuje ciągi adresów URL na przypadki wyliczeń tras.
+- Dopasowywanie wzorców wyodrębnia parametry z zabezpieczeniem w czasie kompilacji.
+**Krok 3 — Wdróż rozwiązanie:**
+```swift
+enum Route: Equatable {
+    case home
+    case userProfile(id: String)
+    case productDetail(id: String, variant: String?)
+    case search(query: String, page: Int)
+    case settings(section: SettingsSection)
+
+    enum SettingsSection: String {
+        case general, notifications, privacy, about
+    }
+
+    // Parse URL to route
+    static func from(url: URL) -> Route? {
+        let path = url.pathComponents.dropFirst()  // Remove leading /
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            .queryItems ?? []
+
+        switch path {
+        case []:
+            return .home
+        case ["users", let id]:
+            return .userProfile(id: id)
+        case ["products", let id]:
+            let variant = query.first(where: { $0.name == "variant" })?.value
+            return .productDetail(id: id, variant: variant)
+        case ["search"]:
+            guard let q = query.first(where: { $0.name == "q" })?.value else { return nil }
+            let page = query.first(where: { $0.name == "page" })
+                .flatMap { Int($0.value ?? "1") } ?? 1
+            return .search(query: q, page: page)
+        case ["settings", let section]:
+            guard let s = SettingsSection(rawValue: section) else { return nil }
+            return .settings(section: s)
+        default:
+            return nil
+        }
+    }
+}
+
+// Usage — type-safe parameter extraction
+func handle(route: Route) {
+    switch route {
+    case .home:
+        showHomeScreen()
+    case .userProfile(let id):
+        showProfile(userId: id)  // id is guaranteed String
+    case .productDetail(let id, let variant):
+        showProduct(id: id, variant: variant)  // variant is String?
+    case .search(let query, let page):
+        performSearch(query: query, page: page)  // page is guaranteed Int
+    case .settings(let section):
+        showSettings(section: section)  // section is SettingsSection enum
+    }
+}
+
+// Handle deep link
+if let url = URL(string: "myapp://products/abc123?variant=blue"),
+   let route = Route.from(url: url) {
+    handle(route: route)
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Bezpieczeństwo typu: każdy przypadek trasy ma dokładnie takie parametry, jakich potrzebuje. Kompilator uniemożliwia dostęp do`variant`na`.userProfile`.
+- Kompletność:`switch`musi obsłużyć wszystkie przypadki — dodanie nowej trasy wymusza aktualizację wszystkich procedur obsługi.
+- Rozszerzalność: dodawaj nowe trasy, dodając przypadki wyliczeniowe; kompilator powie Ci wszędzie, co wymaga aktualizacji.
+- Produkcja: rozważ routing`swift-url-routing`lub`TCA`w przypadku większych aplikacji.
+### Problem 2: Zaimplementuj kontener stanu reaktywnego
+**Opis problemu:** Zbuduj prosty kontener stanu reaktywnego (podobny do Redux/Vuex) w Swift, w którym można obserwować zmiany stanu, a subskrybenci są powiadamiani o określonych zmianach stanu.
+**Krok 1 — Zrozum problem:**
+Potrzebujemy: (1) kontenera stanu przechowującego stan aplikacji, (2) akcji opisujących zmiany stanu, (3) reduktora generującego nowy stan z bieżącego stanu + akcja, (4) abonentów obserwujących zmiany stanu. Jest to jednokierunkowy wzorzec przepływu danych.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj ogólnej klasy`Store<State>`z zachowaniem podobnym do `@Published`.
+- Zdefiniuj akcje jako wyliczenie.
+- Użyj funkcji redukującej`(State, Action) -> State`.
+- Abonenci otrzymują nowy stan poprzez zamknięcia.
+**Krok 3 — Wdróż rozwiązanie:**
+```swift
+// Action protocol
+protocol Action {}
+
+// Store — holds state and dispatches actions
+class Store<State> {
+    private(set) var state: State
+    private let reducer: (State, Action) -> State
+    private var subscribers: [(State) -> Void] = []
+    private let queue = DispatchQueue(label: "store.queue")
+
+    init(initialState: State, reducer: @escaping (State, Action) -> State) {
+        self.state = initialState
+        self.reducer = reducer
+    }
+
+    func dispatch(_ action: Action) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            let newState = self.reducer(self.state, action)
+            self.state = newState
+            self.notifySubscribers(newState)
+        }
+    }
+
+    func subscribe(_ callback: @escaping (State) -> Void) -> () -> Void {
+        subscribers.append(callback)
+        callback(state)  // Emit current state immediately
+
+        // Return unsubscribe function
+        let index = subscribers.count - 1
+        return { [weak self] in
+            self?.subscribers.remove(at: index)
+        }
+    }
+
+    private func notifySubscribers(_ state: State) {
+        for subscriber in subscribers {
+            subscriber(state)
+        }
+    }
+}
+
+// Example usage
+struct AppState {
+    var todos: [Todo] = []
+    var filter: TodoFilter = .all
+    var isLoading: Bool = false
+}
+
+enum TodoAction: Action {
+    case addTodo(String)
+    case toggleTodo(Int)
+    case setFilter(TodoFilter)
+    case setLoading(Bool)
+}
+
+enum TodoFilter { case all, active, completed }
+
+struct Todo: Equatable {
+    let id: Int
+    let title: String
+    var isDone: Bool = false
+}
+
+// Reducer
+func todoReducer(state: AppState, action: Action) -> AppState {
+    var newState = state
+    guard let action = action as? TodoAction else { return state }
+
+    switch action {
+    case .addTodo(let title):
+        let id = (state.todos.map(\.id).max() ?? 0) + 1
+        newState.todos.append(Todo(id: id, title: title))
+    case .toggleTodo(let id):
+        if let idx = newState.todos.firstIndex(where: { $0.id == id }) {
+            newState.todos[idx].isDone.toggle()
+        }
+    case .setFilter(let filter):
+        newState.filter = filter
+    case .setLoading(let loading):
+        newState.isLoading = loading
+    }
+    return newState
+}
+
+// Wire it up
+let store = Store(initialState: AppState(), reducer: todoReducer)
+
+let unsubscribe = store.subscribe { state in
+    print("Todos: \(state.todos.count), Filter: \(state.filter)")
+}
+
+store.dispatch(TodoAction.addTodo("Learn Swift"))
+store.dispatch(TodoAction.addTodo("Build an app"))
+store.dispatch(TodoAction.toggleTodo(1))
+store.dispatch(TodoAction.setFilter(.active))
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Przepływ jednokierunkowy: akcje → reduktor → nowy stan → abonenci. Łatwe do uzasadnienia i przetestowania.
+- Bezpieczeństwo wątków: kolejka wysyłkowa serializuje mutacje stanu.
+- Abonenci uzyskują pełny stan — użyj selektorów lub kontroli `Equatable`, aby uniknąć niepotrzebnych ponownych renderowań.
+- Produkcja: użyj`The Composable Architecture`(TCA) firmy Point-Free, aby uzyskać implementację klasy produkcyjnej z efektami, testowaniem i integracją SwiftUI.
 ---
 
 ## Streszczenie

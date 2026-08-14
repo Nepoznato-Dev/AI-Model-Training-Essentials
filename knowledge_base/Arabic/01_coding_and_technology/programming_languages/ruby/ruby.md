@@ -1,38 +1,42 @@
 ---
-# البيانات الوصفية
-العنوان: "روبي"
-الوصف: "مرجع شامل للغة برمجة روبي يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Ruby"
+description: "Comprehensive reference for the Ruby programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [روبي، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "34 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [ruby, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 #روبي
 روبي هي لغة برمجة ديناميكية ومفسرة وموجهة نحو الكائنات أنشأها يوكيهيرو "ماتز" ماتسوموتو وتم إصدارها لأول مرة في عام 1995 في اليابان. تم تصميم روبي مع التركيز على سعادة المبرمجين، حيث أن بناء الجملة الخاص بها أنيق وطبيعي، وقراءته تشبه اللغة الإنجليزية تقريبًا. كل شيء في روبي هو كائن، بما في ذلك الأنواع البدائية مثل الأعداد الصحيحة والقيم المنطقية. تشتهر روبي بإطار عمل الويب Ruby on Rails، الذي أحدث ثورة في تطوير الويب من خلال تعميم التقليد على التكوين والنماذج الأولية السريعة.
@@ -45,7 +49,7 @@ next_review: "2027-08-05"
 - **Ruby on Rails**: أحد أطر عمل الويب الأكثر إنتاجية على الإطلاق. القوى جيثب، Shopify، Basecamp، GitLab.
 - **البرمجة الوصفية**: يمكن لروبي تعديل نفسه في وقت التشغيل — تحديد الأساليب ديناميكيًا، وإنشاء لغات خاصة بالمجال (DSLs).
 - **نمط الكتلة/المكرر**: كتل روبي ومكرراته تجعل معالجة المجموعة أنيقة.
-- **كل شيء هو كائن**: __محمي_0__ — للأعداد الصحيحة طرق.
+- **كل شيء هو كائن**: `3.times { puts "hello" }` — للأعداد الصحيحة طرق.
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|

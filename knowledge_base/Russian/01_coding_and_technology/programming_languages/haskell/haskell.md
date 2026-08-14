@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Хаскелл
 Haskell — чисто функциональный, статически типизированный, лениво вычисляемый язык программирования. Впервые стандартизированный в 1990 году (Haskell 90) и усовершенствованный в нескольких версиях (нынешним стандартом является Haskell 2010), Haskell известен своей математической строгостью, мощной системой типов (с классами типов, монадами и алгебраическими типами данных) и упором на корректность с помощью типов.
 Haskell не является основным языком, но его влияние огромно. Такие концепции, как монады, ленивые вычисления и классы типов, повлияли на Rust, Swift, Kotlin, Scala и TypeScript. Haskell используется в финансах (Standard Chartered, Barclays), компиляторах (GHC) и формальной верификации.
@@ -475,7 +476,7 @@ tests:
 | `stack new my-project`| Создать новый проект из шаблона |
 | `stack build`| Построить проект |
 | `stack ghci`| Запустить интерактивный REPL с загруженным проектом |
-|  __ЗАЩИЩЕНО_3__ | Запустить набор тестов |
+| `stack test`| Запустить набор тестов |
 | `stack bench`| Запустите тесты |
 | `stack haddock`| Создать документацию |
 | `stack exec my-app`| Запустите исполняемый файл |
@@ -601,7 +602,7 @@ instance Arbitrary PositiveInt where
 | `stack test`| Запустить все наборы тестов |
 | `stack test --fast`| Пропустить оптимизацию для более быстрой сборки тестов |
 | `stack build --test --test-arguments "--color"`| Запуск тестов с цветным выводом |
-|  __ЗАЩИЩЕНО_3__ | Загрузить тестовые модули в REPL |
+| `stack ghci --test`| Загрузить тестовые модули в REPL |
 
 ---
 
@@ -673,7 +674,7 @@ runPython code = do
 
 ## Шаблоны проектирования
 ### Финал без тегов (встроенные DSL)
-Окончательный стиль без тегов кодирует DSL с использованием классов типов, что обеспечивает возможность множественной интерпретации.
+Окончательный стиль без тегов кодирует DSL с использованием классов типов, обеспечивая множественную интерпретацию.
 ```haskell
 {-# LANGUAGE FlexibleInstances #-}
 
@@ -880,7 +881,7 @@ fastSum = foldl' (+) 0
 ---
 
 ## Развертывание
-### Сборка двоичных файлов выпуска
+### Сборка двоичных файлов релиза
 ```bash
 # Build a static binary with Stack
 stack build --copy-bins --local-bin-path ./dist
@@ -941,5 +942,209 @@ pkgs.haskellPackages.developPackage {
 | Наука о данных | Не экосистема | Питон, Р |
 ---
 
+## Синтетические вопросы и ответы
+### Вопрос 1: Как ленивые вычисления Haskell влияют на производительность?
+**О:** Отложенное вычисление означает, что выражения вычисляются только при необходимости, что позволяет использовать бесконечные структуры данных и компонуемые конвейеры. Однако это может привести к утечкам пространства, если накапливаются помехи:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Используйте`foldl'`(из`Data.List`) вместо`foldl`для числовых сгибов. Используйте шаблоны ударов`!`или `seq`, чтобы принудительно выполнить оценку, когда это необходимо.
+### Q2: В чем практическая разница между`Functor`,`Applicative`и`Monad`?
+**A:** Каждый класс типов добавляет возможности:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Функтор** отображает чистую функцию на контекст. **Аппликативный** применяет функции, которые сами находятся в контексте. **Монада** позволяет каждому шагу зависеть от результата предыдущего шага. На практике: используйте `fmap`/`<$>` для простых преобразований,`<*>`для объединения эффектов и `>>=`/`do` для последовательных зависимых вычислений.
+### Вопрос 3: Как мне справиться с побочными эффектами в чистом коде Haskell?
+**О:** Используйте систему типов для разделения чистого и эффективного кода:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Сохраняйте основную логику чистой и расширяйте эффекты. Используйте`ReaderT`для конфигурации,`ExceptT`для ошибок и`StateT`для изменяемого состояния.
+### Q4: Что такое классы типов и чем они отличаются от ООП-интерфейсов?
+**A:** Классы типов определяют поведение, которое могут реализовывать типы. В отличие от интерфейсов ООП, они открыты (любой тип может быть экземпляром) и поддерживают специальный полиморфизм:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Вопрос 5: Как мне структурировать проект Haskell для реального использования?
+**A:** Используйте Cabal или Stack со стандартной раскладкой:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Ключевые практики: хранить ввод-вывод в`Main.hs`или выделенном модуле `IO`, делать базовую логику чистой и тестируемой, использовать оболочки`newtype`для типов доменов.
+---
+
+## Решение проблем с цепочкой мыслей
+### Проблема 1: реализация функции безопасного деления с отчетами об ошибках
+**Шаг 1. Поймите проблему**
+Нам нужно деление, которое обрабатывает деление на ноль и сообщает о значимых ошибках, а не только о сбоях.
+**Шаг 2. Определите подход**
+Используйте `Either`, чтобы вернуть сообщение об ошибке или результат. Это делает возможность отказа явной в типе.
+**Шаг 3. Реализация**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Шаг 4. Проверка**
+Система типов гарантирует, что вызывающая сторона должна обработать случай ошибки. Сопоставление с образцом или`either`обеспечивает явную обработку.
+### Проблема 2: анализ простого языка конфигурации
+**Шаг 1. Поймите проблему**
+Анализируйте пары ключ-значение из строки, например `name=Alice\nage=30`.
+**Шаг 2. Определите подход**
+Используйте`Text.Parsec`или ручную рекурсию. Для простоты используйте`break`и `span`.
+**Шаг 3. Реализация**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Шаг 4. Продлить**
+Добавьте обработку комментариев (`#`), заголовки разделов (`[section]`) и приведение типов с помощью ADT `Value`.
+### Проблема 3: построение мемоизированного Фибоначчи с помощью лени
+**Шаг 1. Поймите проблему**
+Эффективно вычисляйте числа Фибоначчи. Наивная рекурсия является экспоненциальной.
+**Шаг 2. Определите подход**
+Используйте ленивые вычисления Haskell, чтобы создать бесконечный список, в котором каждый элемент вычисляется один раз и кэшируется.
+**Шаг 3. Реализация**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Шаг 4. Оптимизация**
+Для произвольного доступа используйте`Data.Array`с ленивой конструкцией. Для очень больших индексов используйте матричное возведение в степень за O(log n).
+### Проблема 4: реализация простого конечного автомата
+**Шаг 1. Поймите проблему**
+Смоделируйте светофор, который переключает красный -> зеленый -> желтый -> красный.
+**Шаг 2. Определите подход**
+Используйте алгебраический тип данных для состояний и чистую функцию перехода.
+**Шаг 3. Реализация**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Шаг 4. Проверка**
+Чистые функции тривиально проверяются:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
+---
+
 ## Краткое содержание
-Haskell — это чистейшее выражение функционального программирования на популярном языке. Его система типов является одной из самых мощных, а акцент на чистых функциях позволяет создавать код, который легче анализировать и тестировать. Хотя Haskell не получил широкого распространения в промышленности, его идеи оказали глубокое влияние на современное программирование. Изучение Haskell меняет ваше представление о программировании — даже если вы никогда не используете его профессионально.
+Haskell — это чистейшее выражение функционального программирования на популярном языке. Его система типов является одной из самых мощных, а акцент на чистых функциях позволяет создавать код, который легче анализировать и тестировать. Хотя Haskell не получил широкого распространения в промышленности, его идеи оказали глубокое влияние на современное программирование. Изучение Haskell меняет ваше представление о программировании, даже если вы никогда не используете его профессионально.

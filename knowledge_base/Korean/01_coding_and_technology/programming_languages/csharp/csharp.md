@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C#
 C#("C-sharp"로 발음)은 Microsoft가 Anders Hejlsberg의 주도 하에 개발하고 2002년에 처음 출시된 현대적인 개체 지향 형식 안전 프로그래밍 언어입니다. 이 언어는 .NET 플랫폼에서 실행되며 C++의 강력한 기능과 Visual Basic의 생산성을 결합하도록 설계되었습니다. 오늘날 C#은 웹 애플리케이션(ASP.NET), 데스크톱 소프트웨어(Windows), 게임 개발(Unity), 모바일 앱(MAUI), 클라우드 서비스(Azure) 등에 사용되는 다목적 크로스 플랫폼 언어입니다.
 C#은 LINQ, async/await, 레코드, 패턴 일치 등 다른 언어의 최고의 아이디어를 꾸준히 흡수하여 기능이 가장 풍부하고 개발자 친화적인 언어 중 하나가 되었습니다.
@@ -110,7 +111,7 @@ public class User : ISerializable, IComparable<User>
 }
 ```
 
-### 레코드(C# 9+) — 불변 데이터 유형
+### 레코드(C# 9+) - 불변 데이터 유형
 ```csharp
 public record Point(double X, double Y)
 {
@@ -661,7 +662,7 @@ dotnet lambda deploy-function my-function
 | **블레이저** | 웹(프런트엔드) | JavaScript 대신 C#을 사용하여 대화형 웹 UI 구축 |
 | **엔티티 프레임워크 코어** | ORM | LINQ를 통한 데이터베이스 액세스 코드 우선 마이그레이션 |
 | **유니티** | 게임 | 세계에서 가장 인기 있는 게임 엔진(C# 스크립팅) |
-| **.NET 마우이** | 모바일/데스크탑 | iOS, Android, macOS, Windows용 크로스 플랫폼 앱 |
+| **.NET 마우이** | 모바일/데스크톱 | iOS, Android, macOS, Windows용 크로스 플랫폼 앱 |
 | **아발로니아** | 데스크탑 | 크로스 플랫폼 데스크탑 UI(예: 모든 플랫폼용 WPF) |
 ### 빌드 및 패키지 관리
 | 도구 | 목적 |
@@ -685,11 +686,11 @@ dotnet publish -c Release -r linux-x64
 |---------|------|-------------|
 | C#7 | 2017 | 패턴 일치, 튜플,`out`변수, 로컬 함수 |
 | C# 8 | 2019 | Null 허용 참조 유형,`switch`표현식, 비동기 스트림 |
-| C#9 | 2020 | **레코드**, 최상위 명령문,`init`속성 ​​|
+| C#9 | 2020 | **레코드**, 최상위 명령문,`init`속성 |
 | C#10 | 2021 | 레코드 구조체, 전역 `using`, 파일 범위 네임스페이스 |
 | C#11 | 2022 | 원시 문자열 리터럴, 목록 패턴,`required`멤버, 일반 수학 |
 | C#12 | 2023 | 기본 생성자, 컬렉션 표현식, 인라인 배열 |
-| C# 13 | 2024년 | `params`컬렉션, 새로운 잠금 유형, 최고 수준 범위 |
+| C# 13 | 2024년 | `params`컬렉션, 새로운 잠금 유형, 일류 범위 |
 ---
 
 ## C#을 사용해야 하는 경우
@@ -704,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | 모바일 앱(MAUI) | C#을 사용한 크로스 플랫폼 | Flutter, React Native 또는 기본 Swift/Kotlin |
 | AI/ML | ML.NET으로 가능 | Python(압도적으로 선호됨) |
 | CLI 도구/스크립트 | 가능하지만 장황함 | 이동, 러스트, 파이썬 |
+---
+
+## 종합 Q&A
+### Q1: C#에서 `class`와 `record`의 차이점은 무엇입니까?
+**A:** `class`는 기본적으로 변경 가능한 속성이 있는 참조 유형입니다. 두 변수가 동일한 객체를 참조할 수 있습니다. `record`(C# 9+)는 값 기반 동등성을 갖춘 참조 유형입니다. 동일한 데이터가 있는 두 개의 레코드는 동일한 것으로 간주됩니다. 레코드에는 초기화 전용 속성인 `ToString`가 내장되어 있으며 비파괴적 변형을 위한`with`표현식을 지원합니다. 데이터 매체(DTO, 값 개체)에 대한 레코드를 사용합니다. ID가 있는 동작이 풍부한 엔터티에 대한 클래스를 사용합니다.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Q2: async/await 및 `Task`는 내부적으로 어떻게 작동하나요?
+**A:** `async/await`는 컴파일러에서 생성된 상태 머신에 대한 구문 설탕입니다.`await`a`Task`를 사용하면 메서드가 대기 지점에서 분할됩니다. 이전의 모든 항목은 동기식으로 실행되고 나머지는 연속으로 등록됩니다. 스레드는 다른 작업을 수행하기 위해 해제됩니다.  `Task<T>`는 미래 가치를 나타냅니다.  `ValueTask<T>`는 결과가 이미 사용 가능한 경우 힙 할당을 방지하는 핫 경로에 대한 구조체 대안입니다.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### Q3: 확장 방법이란 무엇이며, 언제 사용해야 합니까?
+**답:** 확장 메서드는 수정하지 않고 기존 형식에 메서드를 추가합니다. 이는 첫 번째 매개변수에`this`키워드가 있는 정적 클래스의 정적 메서드입니다. 이는 유창하고 연결 가능한 API를 가능하게 합니다. 이를 사용하여 소유하지 않은 유형(예:`string`또는`IEnumerable<T>`)에 유틸리티 메서드를 추가합니다. 과도하게 사용하지 마십시오. 코드를 발견하기 어렵게 만들 수 있습니다.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### 질문 4: 최신 C#에서 패턴 일치는 어떻게 작동합니까?
+**답:** C#에는 점점 더 강력한 패턴 일치 기능이 추가되었습니다. 스위치 식(C# 8), 유형 패턴, 속성 패턴, 관계형 패턴 및 목록 패턴(C# 11)은 간결하고 표현력이 풍부한 조건부 논리를 허용합니다. 패턴 일치는 긴 if/else 체인을 대체하고 컴파일러에 의해 철저하게 검사됩니다.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### 질문 5: .NET의 종속성 주입이란 무엇이며 어떻게 사용합니까?
+**A:** .NET에는`Microsoft.Extensions.DependencyInjection`를 통한 DI 지원이 내장되어 있습니다. 수명(Singleton, Scoped, Transient)으로 서비스를 등록하면 컨테이너가 생성자 매개변수를 통해 서비스를 주입합니다. 싱글톤: 앱에 대한 하나의 인스턴스입니다. 범위: HTTP 요청당 하나. 일시적: 매번 새 인스턴스입니다.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 캐싱을 사용하여 일반 저장소 구축
+**문제 설명:** 캐싱을 추가하는 데코레이터를 사용하여 일반 저장소 패턴을 구현합니다. 저장소는 CRUD 작업을 지원해야 하며 캐싱 데코레이터는 읽기를 캐시하고 쓰기 시 무효화해야 합니다.
+**1단계 - 문제 이해:**
+(1) 일반`IRepository<T>`인터페이스, (2) 구체적인 구현(예: 메모리 내), (3) 모든 저장소를 래핑하는 캐싱 데코레이터, (4) 쓰기 작업 시 캐시 무효화가 필요합니다. 데코레이터 패턴은 데이터 액세스 논리에 직교하는 캐싱을 유지합니다.
+**2단계 - 접근 방식 파악:**
+-`Get`,`GetAll`,`Add`,`Update`,`Delete`로 `IRepository<T>`를 정의합니다.
+- `IRepository<T>`를 래핑하고 `IMemoryCache`를 사용하는 `CachingRepository<T>`를 만듭니다.
+- 캐시 키:`typeof(T).Name:{id}`.
+- 쓰기 작업 시 캐시 항목을 무효화합니다.
+**3단계 - 솔루션 구현:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**4단계 - 확인 및 최적화:**
+- 우려사항 분리: 캐싱은 데코레이터이지 저장소에 혼합되지 않습니다.
+- DI 등록:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(Scrutor 사용).
+- 프로덕션: 다중 서버 시나리오에는 `IDistributedCache`(Redis)를 사용하고`CacheStampede`보호를 통해 캐시 배제 패턴을 추가합니다.
+### 문제 2: 미들웨어 파이프라인 구현
+**문제 설명:** ASP.NET Core의 요청 파이프라인과 유사한 미들웨어 파이프라인을 빌드합니다. 각 미들웨어는 요청을 처리하고, 다음 미들웨어를 호출하고, 응답을 처리할 수 있습니다.
+**1단계 - 문제 이해:**
+(1) 파이프라인을 나타내는`RequestDelegate`유형, (2) 다음 대리자를 래핑하는 미들웨어, (3) 미들웨어 구성을 위한 빌더 API가 필요합니다. 이는 대리인으로 구현된 책임 사슬 패턴입니다.
+**2단계 - 접근 방식 파악:**
+- `RequestDelegate`는 `Func<Context, RequestDelegate, Task>`입니다.
+- 각 미들웨어는 컨텍스트와`next`기능을 받습니다.
+- `Use`는 미들웨어를 추가합니다.  `Build`는 이를 단일 대리자로 구성합니다.
+**3단계 - 솔루션 구현:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**4단계 - 확인 및 최적화:**
+- 미들웨어 순서 중요: 처음 추가됨 = 가장 바깥쪽(요청 시 먼저 실행되고 응답 시 마지막으로 실행됨)
+- 터미널 미들웨어(`next` 호출 없음)는 파이프라인을 단락시킵니다.
+- 프로덕션: ASP.NET Core의 파이프라인은 정확히 이 패턴이며, 제로 할당을 위해 컴파일된 식 트리로 최적화되었습니다.
 ---
 
 ## 요약

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #fortran
 Fortran (Terjemahan Formula) adalah bahasa pemrograman tingkat tinggi tertua yang masih digunakan secara luas, pertama kali dikembangkan oleh IBM pada tahun 1957 untuk komputasi ilmiah dan teknik. Meskipun usianya sudah tua, Fortran modern (Fortran 2008/2018/2023) adalah bahasa yang mampu dan berkinerja tinggi yang digunakan secara luas dalam prediksi cuaca numerik, dinamika fluida komputasi, simulasi fisika, pemodelan keuangan, dan komputasi kinerja tinggi (HPC). Banyak superkomputer tercepat di dunia menjalankan kode Fortran.
 Bahasa ini telah berkembang secara signifikan sejak awal kemunculannya. Fortran modern memiliki modul, tipe turunan, prosedur generik, coarrays (pemrograman paralel), dan interoperabilitas dengan C. Bahasa ini tetap menjadi bahasa pilihan untuk banyak aplikasi komputasi ilmiah yang mengutamakan kinerja.
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Pengembangan aplikasi umum | Tidak cocok | Python, Java, Buka |
 | Pengembangan web | Tidak cocok | JavaScript, Python |
 | Ilmu data (interaktif) | Bukan alur kerja | Piton, R |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara Fortran 90 dan Fortran modern (2008+)?
+**A:** Modern Fortran menambahkan banyak fitur yang membuatnya lebih ekspresif:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: Apa perbedaan array Fortran dengan array C?
+**A:** Array Fortran adalah objek kelas satu dengan operasi bawaan:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: Bagaimana cara mencapai kinerja maksimal di Fortran?
+**J:** Praktik utama:
+- Gunakan`intent`eksplisit untuk semua argumen tiruan
+- Gunakan`implicit none`di mana saja
+- Lebih memilih operasi array daripada loop
+- Gunakan pola akses memori yang berdekatan
+- Gunakan tanda optimasi kompiler:`-O3 -march=native -ffast-math`
+- Profil dengan`gprof`atau alat khusus kompiler
+- Gunakan`pure`dan`elemental`untuk fungsi yang dapat dioptimalkan oleh kompiler
+### Q4: Bagaimana cara menghubungkan Fortran dengan C?
+**A:** Gunakan modul `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: Sistem build apa yang harus saya gunakan untuk proyek Fortran?
+**A:** CMake memiliki dukungan Fortran yang sangat baik. FPM (Fortran Package Manager) adalah opsi asli modern:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menyelesaikan PDE dengan Perbedaan Hingga
+**Langkah 1: Pahami Masalahnya**
+Selesaikan persamaan kalor 1D: du/dt = alpha * d²u/dx²
+**Langkah 2: Identifikasi Pendekatannya**
+Diskritisasi ruang dan waktu menggunakan perbedaan hingga. Gunakan skema eksplisit.
+**Langkah 3: Terapkan**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Langkah 4: Verifikasi**
+Periksa konservasi, konvergensi dengan penyempurnaan jaringan, dan bandingkan dengan solusi analitis.
+### Soal 2: Diagonalisasi Matriks
+**Langkah 1: Pahami Masalahnya**
+Temukan nilai eigen dan vektor eigen dari matriks simetris.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan rutin`dsyev`LAPACK melalui antarmuka Fortran.
+**Langkah 3: Terapkan**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Langkah 4: Verifikasi**
+Periksa apakah A*v = lambda*v untuk setiap pasangan eigen.
 ---
 
 ## Ringkasan

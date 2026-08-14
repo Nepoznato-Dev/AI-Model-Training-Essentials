@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Progettazione e Cultura Organizzativa
-La progettazione organizzativa è la disposizione deliberata di struttura, processi, ruoli e diritti decisionali per eseguire la strategia in modo efficace. La cultura è l’insieme di valori, credenze, norme e comportamenti condivisi che determinano il modo in cui le persone lavorano effettivamente insieme. La struttura è lo scheletro; la cultura è la personalità. Puoi ridisegnare la struttura sulla carta, ma se la cultura non supporta il cambiamento, non funzionerà. E una cultura forte con una struttura terribile soffocherà lentamente. Le migliori organizzazioni capiscono entrambe le cose e comprendono che sono profondamente interconnesse.
+La progettazione organizzativa è la disposizione deliberata di struttura, processi, ruoli e diritti decisionali per eseguire la strategia in modo efficace. La cultura è l’insieme di valori, credenze, norme e comportamenti condivisi che determinano il modo in cui le persone lavorano effettivamente insieme. La struttura fornisce il quadro; la cultura modella il comportamento. Una struttura può essere riprogettata sulla carta, ma se la cultura non supporta il cambiamento, l’implementazione fallirà. Allo stesso modo, una cultura forte abbinata a una struttura inefficace minerà gradualmente le prestazioni organizzative. Le organizzazioni più efficaci affrontano entrambi gli aspetti e riconoscono che sono profondamente interconnessi.
 ---
 
 ## Strutture Organizzative
@@ -123,7 +124,7 @@ L’intuizione chiave: la strategia guida la struttura. Tutti gli altri elementi
 | **Nessuna urgenza** | Le persone non capiscono perché sia ​​necessario un cambiamento |
 | **Nessuna coalizione** | Nessun gruppo potente che guida il cambiamento |
 | **Nessuna visione** | Non è chiaro come sarà lo stato futuro |
-| **Scarsa comunicazione** | Le persone non capiscono il cambiamento o il loro ruolo in esso |
+| **Scarsa comunicazione** | Le persone non capiscono il cambiamento né il loro ruolo in esso |
 | **Nessuna vittoria rapida** | Nessun progresso visibile per creare slancio |
 | **Celebrazione prematura** | Dichiarare la vittoria prima del cambiamento è incorporato |
 | **Resistenza culturale** | Il cambiamento è in conflitto con ipotesi radicate |
@@ -148,7 +149,7 @@ L’intuizione chiave: la strategia guida la struttura. Tutti gli altri elementi
 | **Fiducia** | Misurare i risultati, non le ore; evitare la sorveglianza |
 | **Onboarding** | Programmi strutturati; sistemi di amici; documentazione esplicita |
 | **Cultura** | Rituali intenzionali; regolare all-hands; eventi sociali virtuali |
-| **Patrimonio netto** | Bias di prossimità: garantire ai lavoratori remoti pari visibilità e opportunità |
+| **Patrimonio netto** | Bias di prossimità: garantire che i lavoratori remoti ottengano pari visibilità e opportunità |
 | **Collaborazione** | Proprietà chiara; interfacce definite; sincronizzazioni regolari |
 | **Benessere** | Rispettare i confini; diritto di disconnessione; evitare di incontrare sovraccarico |
 ---

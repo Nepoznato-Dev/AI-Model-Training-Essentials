@@ -41,7 +41,7 @@ contribution:
 
 # Accessibility and Inclusive Design
 
-Accessibility (often abbreviated as a11y) is the practice of making software usable by everyone — including people with visual, auditory, motor, cognitive, and neurological disabilities. It's not a nice-to-have; it's a legal requirement in many jurisdictions, a moral obligation, and good engineering. Accessible software is better software for everyone, because the design decisions that help disabled users — clear structure, keyboard navigation, sufficient contrast, readable text — improve the experience for all users.
+Accessibility (often abbreviated as a11y) is the practice of making software usable by everyone — including people with visual, auditory, motor, cognitive, and neurological disabilities. It is a legal requirement in many jurisdictions and a standard engineering practice. Accessible software is better software for everyone, because the design decisions that support disabled users — clear structure, keyboard navigation, sufficient contrast, readable text — improve the experience for all users.
 
 ---
 
@@ -214,4 +214,4 @@ ARIA adds accessibility information to HTML elements that don't have built-in se
 
 ## Summary
 
-Accessibility is not a feature you add at the end — it's a design principle that should inform every decision from the start. Use semantic HTML. Ensure keyboard navigation works. Maintain sufficient colour contrast. Provide text alternatives for non-text content. Test with screen readers and real disabled users. The result is software that works better for everyone — not just those with disabilities, but also those with temporary impairments, situational limitations, older devices, slow connections, and the thousand other ways that real-world usage differs from the developer's idealised environment.
+Accessibility is a design principle that should inform every decision from the start, not a feature added at the end. Use semantic HTML. Ensure keyboard navigation works. Maintain sufficient colour contrast. Provide text alternatives for non-text content. Test with screen readers and disabled users. The result is software that works better for everyone — including those with temporary impairments, situational limitations, older devices, slow connections, and the many ways that real-world usage differs from a controlled development environment.

@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Grundlagen des Schreibens und der Kommunikation
-Schreiben und Kommunikation sind die Fähigkeiten, Ideen klar und effektiv zu vermitteln – sei es durch E-Mails, Berichte, Dokumentationen, Präsentationen oder Gespräche. Die meiste Wissensarbeit ist im Grunde Kommunikationsarbeit: Sie müssen Ihr Denken erklären, andere überzeugen, Entscheidungen dokumentieren, Spezifikationen schreiben, Ergebnisse präsentieren und teamübergreifend zusammenarbeiten. Die Kluft zwischen dem, was Sie meinen, und dem, was jemand versteht, ist der Ursprung der meisten Probleme, und eine bessere Kommunikation verringert diese Kluft.
+Schreiben und Kommunikation sind die Fähigkeiten, Ideen effektiv zu vermitteln – sei es durch E-Mails, Berichte, Dokumentationen, Präsentationen oder Gespräche. Die meiste Wissensarbeit ist im Grunde Kommunikationsarbeit: Fachkräfte müssen ihre Denkweise erklären, andere überzeugen, Entscheidungen dokumentieren, Spezifikationen schreiben, Ergebnisse präsentieren und teamübergreifend zusammenarbeiten. Die Kluft zwischen dem, was gemeint ist, und dem, was verstanden wird, ist der Ursprung der meisten Probleme, und eine bessere Kommunikation verringert diese Kluft.
 ---
 
 ## Prinzipien des klaren Schreibens
@@ -121,7 +121,7 @@ Schreiben und Kommunikation sind die Fähigkeiten, Ideen klar und effektiv zu ve
 | Prinzip | Beschreibung |
 |-----------|-------------|
 | **Eine Idee pro Folie** | Jede Folie kommuniziert einen einzelnen Punkt |
-| **Minimaler Text** | Folien unterstützen den Redner; sie sind nicht die Präsentation |
+| **Minimaler Text** | Folien unterstützen den Sprecher; sie sind nicht die Präsentation |
 | **Visuell statt verbal** | Verwenden Sie nach Möglichkeit Diagramme, Diagramme und Bilder anstelle von Aufzählungspunkten |
 | **Konsistentes Design** | Gleiche Schriftarten, Farben und gleiches Layout |
 | **Lesbar** | Groß genug Text; ausreichender Kontrast |
@@ -133,7 +133,7 @@ Schreiben und Kommunikation sind die Fähigkeiten, Ideen klar und effektiv zu ve
 | **Du weißt es nicht** | „Das ist eine gute Frage. Ich habe nicht die genauen Daten, aber ich werde dem nachgehen“ |
 | **Feindselige Frage** | Nehmen Sie die Bedenken zur Kenntnis; sich mit der Substanz befassen; werde nicht defensiv |
 | **Unklare Frage** | „Lassen Sie mich sicherstellen, dass ich es verstehe – fragen Sie nach X oder Y?“ |
-| **Off-Topic-Frage** | „Das ist wichtig, aber außerhalb des Rahmens dieser Diskussion. Nehmen wir es offline“ |
+| **Off-Topic-Frage** | „Das ist wichtig, liegt aber außerhalb des Rahmens dieser Diskussion. Nehmen wir es offline“ |
 ---
 
 ## Überzeugung und Einfluss
@@ -165,4 +165,4 @@ Schreiben und Kommunikation sind die Fähigkeiten, Ideen klar und effektiv zu ve
 ---
 
 ## Zusammenfassung
-Bei klarem Schreiben und klarer Kommunikation geht es nicht darum, klug zu sein – es geht darum, verstanden zu werden. Beginnen Sie mit dem Hauptpunkt (Pyramidenprinzip). Verwenden Sie aktive Stimme, konkrete Sprache und kurze Sätze. Strukturieren Sie Informationen, damit der Leser finden kann, was er braucht. Technische Dokumentation sollte scanbar und beispielorientiert sein. Geschäftsschreiben sollten mit der Empfehlung beginnen. Präsentationen sollten eine Geschichte mit einer Idee pro Folie erzählen. Überzeugung vereint Logik (Logos), Emotion (Pathos) und Glaubwürdigkeit (Ethos). Interkulturelles Bewusstsein verhindert Missverständnisse in globalen Teams. Die grundlegende Fähigkeit ist die Sensibilisierung des Publikums: Wenn Sie wissen, für wen Sie schreiben, was sie wissen müssen und welches Format ihnen hilft, es zu verstehen. Jede Minute, die Sie in eine klarere Kommunikation investieren, spart ein Vielfaches dieser Zeit durch weniger Verwirrung, weniger Missverständnisse und eine schnellere Entscheidungsfindung.
+Bei klarem Schreiben und klarer Kommunikation geht es darum, verstanden zu werden. Beginnen Sie mit dem Hauptpunkt (Pyramidenprinzip). Verwenden Sie aktive Stimme, konkrete Sprache und kurze Sätze. Strukturieren Sie Informationen, damit der Leser finden kann, was er braucht. Technische Dokumentation sollte scanbar und beispielorientiert sein. Geschäftsschreiben sollten mit der Empfehlung beginnen. Präsentationen sollten eine Idee pro Folie präsentieren. Überzeugung vereint Logik (Logos), Beweise (Pathos) und Glaubwürdigkeit (Ethos). Interkulturelles Bewusstsein verhindert Missverständnisse in globalen Teams. Die grundlegende Fähigkeit ist die Aufmerksamkeit des Publikums: zu wissen, wer der Leser ist, was er wissen muss und welches Format sein Verständnis unterstützt. Investitionen in eine klarere Kommunikation führen zu weniger Verwirrung, weniger Missverständnissen und einer schnelleren Entscheidungsfindung.

@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Thiết kế và Văn hóa Tổ chức
-Thiết kế tổ chức là sự sắp xếp có chủ ý về cơ cấu, quy trình, vai trò và quyền quyết định để thực hiện chiến lược một cách hiệu quả. Văn hóa là những giá trị, niềm tin, chuẩn mực và hành vi được chia sẻ, hình thành nên cách mọi người thực sự làm việc cùng nhau. Cấu trúc là bộ xương; văn hóa là nhân cách. Bạn có thể thiết kế lại cấu trúc trên giấy, nhưng nếu văn hóa không ủng hộ sự thay đổi thì nó sẽ không hiệu quả. Và một nền văn hóa mạnh mẽ với cấu trúc khủng khiếp sẽ dần dần bị bóp nghẹt. Những tổ chức tốt nhất có được cả hai điều đúng — và hiểu rằng họ có mối liên kết chặt chẽ với nhau.
+Thiết kế tổ chức là sự sắp xếp có chủ ý về cơ cấu, quy trình, vai trò và quyền quyết định để thực hiện chiến lược một cách hiệu quả. Văn hóa là những giá trị, niềm tin, chuẩn mực và hành vi được chia sẻ, hình thành nên cách mọi người thực sự làm việc cùng nhau. Cấu trúc cung cấp khuôn khổ; văn hóa định hình hành vi. Một cấu trúc có thể được thiết kế lại trên giấy, nhưng nếu văn hóa không hỗ trợ sự thay đổi thì việc triển khai sẽ thất bại. Tương tự, một nền văn hóa mạnh mẽ kết hợp với một cơ cấu kém hiệu quả sẽ dần dần làm suy yếu hiệu quả hoạt động của tổ chức. Các tổ chức hiệu quả nhất giải quyết được cả hai vấn đề này - và nhận ra rằng chúng có mối liên kết chặt chẽ với nhau.
 ---
 
 ## Cơ cấu tổ chức
@@ -126,13 +127,13 @@ Cái nhìn sâu sắc quan trọng: chiến lược thúc đẩy cấu trúc. T�
 | **Giao tiếp kém** | Mọi người không hiểu sự thay đổi hoặc vai trò của họ trong đó |
 | **Không có chiến thắng nhanh chóng** | Không có tiến bộ rõ ràng để tạo đà |
 | **Ăn mừng sớm** | Tuyên bố chiến thắng trước khi thay đổi diễn ra |
-| **Phản kháng văn hóa** | Thay đổi xung đột với những giả định sâu xa |
+| **Phản kháng văn hóa** | Thay đổi xung đột với những giả định sâu sắc |
 | **Không tăng cường** | Những hành vi cũ được khen thưởng; hành vi mới không được duy trì |
 ### Mô hình 8 bước của Kotter
 | Bước | Hành động |
 |------|--------|
 | **1. Tạo sự cấp bách** | Giúp mọi người nhìn thấy mối đe dọa của việc không thay đổi |
-| **2. Xây dựng liên minh chỉ đạo** | Tập hợp một nhóm đủ sức mạnh và uy tín |
+| **2. Xây dựng liên minh chỉ đạo** | Tập hợp một nhóm có đủ sức mạnh và uy tín |
 | **3. Hình thành tầm nhìn chiến lược** | Tạo ra một bức tranh rõ ràng về tương lai |
 | **4. Gia nhập đội quân tình nguyện** | Nhận được sự ủng hộ từ số lượng lớn |
 | **5. Kích hoạt hành động** | Loại bỏ các rào cản; trao quyền cho mọi người |

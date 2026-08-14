@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Júlia
 Julia é uma linguagem de programação de alto nível e alto desempenho projetada para computação técnica e científica. Lançado pela primeira vez em 2012 (1.0 em 2018), Julia foi criada para resolver o "problema de duas linguagens" - onde os cientistas criam protótipos em Python/R, mas reescrevem em C/C++/Fortran para desempenho de produção. Julia pretende ser tão fácil quanto Python, mas tão rápida quanto C.
 Julia usa compilação just-in-time (JIT) via LLVM para obter desempenho próximo ao C, mantendo uma sensação interativa e dinâmica. Possui suporte de primeira classe para computação paralela, processamento distribuído e um sistema de tipo sofisticado com despacho múltiplo.
@@ -875,6 +876,191 @@ julia --project=. -e '
 | Análise de dados | Possível; DataFrames.jl é bom | Python (Pandas), R |
 | Desenvolvimento web | Não adequado | Javascript, Python |
 | Desenvolvimento geral de aplicações | Não é o caso de uso principal | Python, Go, Java |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como o envio múltiplo difere do envio único em linguagens OOP?
+**R:** No despacho único (Java, Python), o método é escolhido com base no tipo do primeiro argumento (o objeto). Em Julia, o método é escolhido com base nos tipos de TODOS os argumentos:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+Isso permite operações simétricas e elimina padrões padronizados.
+### Q2: Como consigo um desempenho semelhante ao C em Julia?
+**R:** Principais práticas:
+- Use funções de tipo estável (retorne tipos consistentes)
+- Use tipos concretos em estruturas, não abstratas
+- Evite variáveis globais (ou torne-as`const`)
+- Use`@inbounds`para pular a verificação de limites (quando seguro)
+- Pré-alocar arrays em vez de aumentá-los
+- Use`@simd`para loops vetorizáveis
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3: Quais são as diferenças entre`Array`,`Tuple`e`NamedTuple`?
+**R:** Cada um serve a uma finalidade diferente:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4: Como lidar com erros e exceções em Julia?
+**R:** Use`try/catch`e tipos de exceção personalizados:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5: Como posso usar o ecossistema de pacotes da Julia de maneira eficaz?
+**R:** Use o gerenciador de pacotes integrado (Pkg) e os ambientes:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Implementando uma função de integração numérica
+**Etapa 1: Entenda o problema**
+Calcule a integral definida de uma função usando a regra de Simpson.
+**Etapa 2: Identifique a abordagem**
+Use as funções de despacho múltiplo e de ordem superior de Julia. Aceite qualquer função que possa ser chamada.
+**Etapa 3: Implementar**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**Etapa 4: otimizar**
+Adicione`@inbounds`e digite anotações para desempenho. Comparação com`@btime`.
+### Problema 2: Construindo uma Simulação de Monte Carlo Paralela
+**Etapa 1: Entenda o problema**
+Estime pi usando amostragem de Monte Carlo, paralelizada em todos os núcleos da CPU.
+**Etapa 2: Identifique a abordagem**
+Use`Threads.@threads`para paralelismo de memória compartilhada.
+**Etapa 3: Implementar**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**Etapa 4: verificar**
+Compare com`Float64(\pi)`. Aumente a contagem de amostras para melhor precisão.
+### Problema 3: Criando um tipo de array personalizado com transmissão
+**Etapa 1: Entenda o problema**
+Crie um tipo`DiagonalMatrix`que armazene apenas elementos diagonais, mas suporte operações de array padrão.
+**Etapa 2: Identifique a abordagem**
+Subtipo`AbstractMatrix`e implemente os métodos necessários.
+**Etapa 3: Implementar**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**Etapa 4: Estender**
+Adicione`setindex!`, otimizações de multiplicação de matrizes e método `show`.
 ---
 
 ## Resumo

@@ -56,7 +56,7 @@ OCaml 的新兄弟 **Reason**（由 Facebook/Meta 開發）和 **ReScript**（�
 ## 權衡
 |限制|詳情 |典型解決方法|
 |------------|---------|--------------------|
-| **陡峭的學習曲線** |函數式程式設計、類型系統、語法不熟悉|從模式匹配和 ADT 開始；逐步建立|
+| **陡峭的學習曲線** |函數式程式設計、類型系統、語法不熟悉 |從模式匹配和 ADT 開始；逐步建立|
 | **就業市場小** |利基市場－主要是金融（簡街）和研究|對類型安全系統的興趣日益濃厚
 | **有限的網路生態系統** |不是主流網路語言 |使用 ReScript (OCaml-to-JS) 進行 Web 開發 |
 | **錯誤訊息** |類型錯誤可能很神秘，尤其是複雜類型 |使用Merlin IDE插件；學習閱讀類型簽名 |
@@ -457,7 +457,7 @@ my-ocaml-project/
 |命令 |描述 |
 |---------|-------------|
 |`dune init project my_app`|建立新專案 |
-|`dune build`|建置專案 |
+|`dune build`|建置專案|
 |`dune exec ./bin/main.exe`|執行執行檔 |
 |`dune test`|運行測試 |
 |`dune clean`|清理建置工件 |
@@ -702,7 +702,7 @@ ENTRYPOINT ["./app"]
 ---
 
 ## 何時使用 OCaml
-|場景 |為什麼選擇 OCaml |更好的選擇|
+|場景|為什麼選擇 OCaml |更好的選擇|
 |----------|----------|--------------------|
 |編譯器/語言工具|非常適合 AST、類型檢查、程式碼產生 | Rust 用於效能關鍵型工具 |
 |金融系統| Jane Street 大規模證明了這一點 | C++、Java、Python |
@@ -713,6 +713,122 @@ ENTRYPOINT ["./app"]
 |資料科學/機器學習 |不是生態系| Python、R |
 |手機應用程式 |不適合|斯威夫特、科特林、達特 |
 |通用應用程式 |可能但利基| Go、Python、Rust |
+---
+
+## 綜合問答
+### Q1：OCaml 的型別推論是如何運作的？
+**A:** OCaml 的 Hindley-Milner 類型系統推斷沒有註解的類型：
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2：什麼是代數資料型別以及它們為何強大？
+**A:** ADT 結合了產品類型（記錄）和總和類型（變體）：
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3：模組和函子如何運作？
+**A:** 模組組織程式碼；函子是從模組到模組的函數：
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4：是什麼讓 OCaml 快速？
+**A:** OCaml 編譯為高效率的本機程式碼：
+- 類型擦除－沒有執行時間類型檢查
+- 未裝箱的浮點數和整數
+- 模式匹配編譯為跳躍表
+- 尾調用優化
+- 沒有垃圾收集器暫停（增量GC）
+### Q5：OCaml 與其他 ML 系列語言相比如何？
+**A:** OCaml 平衡了實用性和純粹性：
+- 與 Haskell 相比：OCaml 具有命令式功能、可變狀態和更快的編譯
+- 比較 F#：OCaml 擁有更成熟的模組體系和更好的跨平台支援
+- 與 Rust：OCaml 有 GC（無所有權），但 Rust 有更好的 FFI 和生態系統
+---
+
+## 解決問題的思路
+### 問題 1：實作型別安全解釋器
+**第 1 步：了解問題**
+為簡單的表達語言建構一個解釋器。
+**第 2 步：確定方法**
+使用代數資料類型進行表達式和模式匹配進行評估。
+**步驟 3：實施**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**第 4 步：擴充**
+添加`Let`、`If`、`Lambda`以獲得更完整的語言。
+### 問題 2：使用組合器建立簡單的解析器
+**第 1 步：了解問題**
+使用解析器組合器解析算術表達式。
+**第 2 步：確定方法**
+建立小型解析器並組合它們。
+**步驟 3：實施**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**第 4 步：撰寫**
+將解析器與`map`、`seq`、`alt`和`many`結合使用以解析完整表達式。
 ---
 
 ＃＃ 概括

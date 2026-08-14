@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps ve CI/CD
 DevOps, ekiplerin yazılımı daha hızlı ve daha güvenilir bir şekilde sunmasını sağlayan kültürel felsefe, uygulamalar ve araçların birleşimidir. Geliştiriciler (değişiklikleri göndermek isteyen) ve operasyonlar (istikrar isteyen) arasındaki duvarı yıkar. CI/CD — Sürekli Entegrasyon ve Sürekli Teslimat — bunu mümkün kılan otomasyon omurgasıdır.
 ---
@@ -80,7 +81,7 @@ Konteynerlerden önce klasik sorun "makinemde çalışıyor" idi. Konteynerler b
 | **Konteyner** | Bir görüntünün örneğini çalıştırma |
 | **Docker dosyası** | Görüntü oluşturmak için tarif |
 | **Kayıt** | Görüntüler için depolama (Docker Hub, ECR, GCR) |
-| **Cilt** | Konteyner yeniden başlatmalarına dayanabilen kalıcı depolama |
+| **Cilt** | Konteyner yeniden başlatıldığında hayatta kalan kalıcı depolama |
 | **Ağ** | Kapsayıcılar için yalıtılmış ağ katmanı |
 ### Dockerfile En İyi Uygulamaları
 ```dockerfile
@@ -105,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-Temel uygulamalar: ince/alpine temel görüntüleri kullanın, kök olmayan olarak çalıştırın, katman önbelleğe alma özelliğini kullanın,`.dockerignore`kullanın, görüntüleri güvenlik açıklarına karşı tarayın (`trivy`, `docker scan`) ve kaynak sınırlarını ayarlayın.
+Temel uygulamalar: ince/alpine temel görüntüleri kullanın, kök olmayan olarak çalıştırın, katman önbelleğe alma özelliğini kullanın,`.dockerignore`kullanın, görüntüleri güvenlik açıklarına karşı tarayın (`trivy`,`docker scan`) ve kaynak sınırlarını ayarlayın.
 ### Docker Oluşturma
 Birden fazla kapsayıcıyı birlikte çalıştırmak için (uygulama + veritabanı + önbellek):
 ```yaml
@@ -241,7 +242,7 @@ Gece 3'te bir şey bozulduğunda:
 2. **Kapsamın değerlendirilmesi**: Hangi hizmetler, kullanıcılar ve veriler etkileniyor?
 3. Temel nedeni **belirleyin** — günlükleri, ölçümleri ve son dağıtımları kontrol edin.
 4. **Mümkünse devre kesicileri, özellik işaretlerini, trafik geçişini engelleyin**.
-5. **Düzeltme** — geri alma veya ileri yama.
+5. **Düzeltme** — geri alma veya ileri yama yapma.
 6. **İletişim kurun** — Paydaşları ve kullanıcıları güncelleyin (durum sayfası).
 7. **Opsi sonrası** — 24-48 saat içinde temel nedeni ve eylem öğelerini belgeleyin.
-Amaç sadece olayı düzeltmek değil, aynı olayın tekrar yaşanmayacağından emin olmaktır.
+Amaç sadece olayı çözmek değil, aynı olayın tekrarlanmamasını sağlamaktır.

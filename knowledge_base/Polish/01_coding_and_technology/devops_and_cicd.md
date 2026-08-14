@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps i CI/CD
 DevOps to połączenie filozofii kulturowej, praktyk i narzędzi, które umożliwia zespołom szybsze i bardziej niezawodne dostarczanie oprogramowania. Burzy mur pomiędzy programistami (którzy chcą wprowadzać zmiany) a operacjami (którzy chcą stabilności). CI/CD — ciągła integracja i ciągłe dostarczanie — to szkielet automatyzacji, który to umożliwia.
 ---
@@ -105,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-Kluczowe praktyki: używaj obrazów podstawowych typu slim/alpine, uruchamiaj jako użytkownik inny niż root, korzystaj z buforowania warstw, używaj `.dockerignore`, skanuj obrazy w poszukiwaniu luk ( `trivy`, `docker scan`) i ustawiaj limity zasobów.
+Kluczowe praktyki: używaj obrazów podstawowych typu slim/alpine, uruchamiaj jako użytkownik inny niż root, korzystaj z buforowania warstw, używaj `.dockerignore`, skanuj obrazy w poszukiwaniu luk (`trivy`,`docker scan`) i ustawiaj limity zasobów.
 ### Tworzenie Dockera
 Do jednoczesnego uruchamiania wielu kontenerów (aplikacja + baza danych + pamięć podręczna):
 ```yaml
@@ -128,7 +129,7 @@ volumes:
 ---
 
 ## Kubernetes (K8s)
-Kubernetes to standardowy w branży koordynator kontenerów. Zarządza wdrażaniem, skalowaniem i działaniem skonteneryzowanych aplikacji.
+Kubernetes to standardowy w branży koordynator kontenerów. Zarządza wdrażaniem, skalowaniem i działaniem konteneryzowanych aplikacji.
 ### Architektura podstawowa
 | Składnik | Rola |
 |----------|------|
@@ -152,7 +153,7 @@ kubectl scale deploy/myapp --replicas=5  # Scale to 5 replicas
 ```
 
 ### Hełm
-Helm jest menedżerem pakietów dla Kubernetes. **Wykres** to pakiet wstępnie skonfigurowanych zasobów Kubernetes. Pomyśl o tym jako o`apt`lub`brew`w przypadku K8.
+Helm jest menedżerem pakietów dla Kubernetes. **Wykres** to pakiet wstępnie skonfigurowanych zasobów Kubernetes. Pomyśl o tym jak o`apt`lub`brew`dla K8.
 ```bash
 helm install my-release bitnami/postgresql   # Install a chart
 helm upgrade my-release bitnami/postgresql   # Upgrade
@@ -211,7 +212,7 @@ Standardowy stos monitorowania typu open source:
 |--------------|--------|
 | **Infrastruktura** | Procesor, pamięć RAM, wykorzystanie dysku, sieciowe wejścia/wyjścia |
 | **Aplikacja** | Częstotliwość żądań, opóźnienie (p50, p95, p99), stopa błędów |
-| **Baza danych** | Liczba zapytań, powolne zapytania, wykorzystanie puli połączeń |
+| **Baza danych** | Liczba zapytań, wolne zapytania, wykorzystanie puli połączeń |
 | **Biznes** | Rejestracje, konwersje, przychody |
 ---
 
@@ -244,4 +245,4 @@ Kiedy coś się psuje o 3 nad ranem:
 5. **Napraw** — wycofanie lub aktualizacja.
 6. **Komunikuj** — aktualizuj interesariuszy i użytkowników (strona statusu).
 7. **Sekcja zwłok** — w ciągu 24–48 godzin udokumentować pierwotną przyczynę i kroki, jakie należy podjąć.
-Celem nie jest tylko naprawienie incydentu, ale upewnienie się, że ten sam incydent nie powtórzy się.
+Celem jest nie tylko rozwiązanie incydentu, ale także zapewnienie, że ten sam incydent nie powtórzy się.

@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Acessibilidade e Design Inclusivo
-Acessibilidade (muitas vezes abreviada como a11y) é a prática de tornar o software utilizável por todos – incluindo pessoas com deficiências visuais, auditivas, motoras, cognitivas e neurológicas. Não é bom ter; é um requisito legal em muitas jurisdições, uma obrigação moral e uma boa engenharia. Software acessível é melhor para todos, porque as decisões de design que ajudam os usuários com deficiência – estrutura clara, navegação por teclado, contraste suficiente, texto legível – melhoram a experiência para todos os usuários.
+Acessibilidade (muitas vezes abreviada como a11y) é a prática de tornar o software utilizável por todos – incluindo pessoas com deficiências visuais, auditivas, motoras, cognitivas e neurológicas. É um requisito legal em muitas jurisdições e uma prática padrão de engenharia. Software acessível é melhor para todos, porque as decisões de design que apoiam usuários com deficiência – estrutura clara, navegação por teclado, contraste suficiente, texto legível – melhoram a experiência para todos os usuários.
 ---
 
 ## Quem se beneficia com a acessibilidade?
@@ -95,7 +95,7 @@ ARIA adiciona informações de acessibilidade a elementos HTML que não possuem 
 | `alert`| Mensagem importante que aparece dinamicamente | Notificações de erro |
 | `progressbar`| Indicador de progresso | Carregando estados |
 | `menu`/`menuitem`| Navegação nos menus | Menus suspensos |
-###ARIA Atributos
+### Atributos ARIA
 | Atributo | Finalidade | Exemplo |
 |-----------|---------|---------|
 | `aria-label`| Nome acessível quando não há texto visível | Botão apenas de ícone:`aria-label="Search"`|
@@ -177,4 +177,4 @@ ARIA adiciona informações de acessibilidade a elementos HTML que não possuem 
 ---
 
 ## Resumo
-Acessibilidade não é um recurso que você adiciona no final — é um princípio de design que deve informar todas as decisões desde o início. Use HTML semântico. Certifique-se de que a navegação pelo teclado funcione. Mantenha contraste de cores suficiente. Fornece alternativas de texto para conteúdo não textual. Teste com leitores de tela e usuários reais com deficiência. O resultado é um software que funciona melhor para todos — não apenas para aqueles com deficiência, mas também para aqueles com deficiências temporárias, limitações situacionais, dispositivos mais antigos, conexões lentas e milhares de outras maneiras pelas quais o uso no mundo real difere do ambiente idealizado pelo desenvolvedor.
+A acessibilidade é um princípio de design que deve informar todas as decisões desde o início, e não um recurso adicionado no final. Use HTML semântico. Certifique-se de que a navegação pelo teclado funcione. Mantenha contraste de cores suficiente. Fornece alternativas de texto para conteúdo não textual. Teste com leitores de tela e usuários com deficiência. O resultado é um software que funciona melhor para todos — incluindo aqueles com deficiências temporárias, limitações situacionais, dispositivos mais antigos, conexões lentas e as muitas maneiras pelas quais o uso no mundo real difere de um ambiente de desenvolvimento controlado.

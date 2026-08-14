@@ -57,7 +57,7 @@ O Dart combina os melhores recursos das linguagens modernas: é orientado a obje
 | **Centrado na vibração** | A maior parte do uso do Dart é Flutter; limitado fora dele | Use para vibração; outros idiomas para trabalho não relacionado à UI |
 | **Ecossistema menor** | Menos pacotes que React Native ou plataformas nativas | Crescendo rapidamente; canais de plataforma para APIs nativas |
 | **Desempenho na Web** | Dart compilado para WASM ainda está amadurecendo | Use o renderizador CanvasKit para desempenho consistente |
-| **Mercado de trabalho** | Existem funções Flutter, mas em menor número do que dispositivos móveis nativos | Demanda crescente por desenvolvedores multiplataforma |
+| **Mercado de trabalho** | Existem funções de Flutter, mas em menor número do que dispositivos móveis nativos | Demanda crescente por desenvolvedores multiplataforma |
 | **Não para back-end** | Possível (Dart do lado do servidor), mas não o caso de uso | Use Go, Node.js, Python para back-ends |
 ---
 
@@ -985,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | Desenvolvimento back-end | Não é o caso de uso principal | Vá, Node.js, Python |
 | Ciência de dados / ML | Não adequado | Pitão, R |
 | Programação de sistemas | Não adequado | C, C++, Ferrugem |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como funciona a segurança nula do Dart?
+**R:** O Dart 2.12+ possui segurança nula de som. As variáveis ​​não são anuláveis ​​por padrão; use`?`para permitir nulo:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2: Qual é a diferença entre`Future`e `Stream`?
+**R:**`Future`representa um único resultado assíncrono; `Stream`representa uma sequência de eventos assíncronos:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3: Como faço para gerenciar o estado em um aplicativo Flutter?
+**R:** Várias abordagens dependendo da complexidade:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4: Como os métodos de extensão funcionam no Dart?
+**R:** As extensões adicionam funcionalidade aos tipos existentes sem herança:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5: Como escrevo código Dart/Flutter de alto desempenho?
+**R:** Principais práticas:
+- Use construtores`const`sempre que possível
+- Evite reconstruir widgets — use`const`,`final`e`shouldRebuild`
+- Use`ListView.builder`em vez de`ListView`para listas grandes
+- Perfil com Flutter DevTools
+- Use`compute()`para operações caras em threads isolados
+- Minimize as chamadas`setState`— seja específico sobre o que precisa ser reconstruído
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Construindo um Cliente API Type-Safe
+**Etapa 1: Entenda o problema**
+Crie um cliente API que busque dados e retorne objetos digitados corretamente.
+**Etapa 2: Identifique a abordagem**
+Use classes Dart com`fromJson`/`toJson`, async/await e classes seladas para obter resultados.
+**Etapa 3: Implementar**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Etapa 4: verificar**
+Teste com cliente HTTP simulado. Verifique o tratamento de erros para falhas de rede e respostas incorretas.
+### Problema 2: Implementando uma pesquisa reativa com Debounce
+**Etapa 1: Entenda o problema**
+Crie um campo de pesquisa que consulte uma API, mas descarte a entrada para evitar solicitações excessivas.
+**Etapa 2: Identifique a abordagem**
+Use fluxos Dart com`debounceTime`e`distinct`.
+**Etapa 3: Implementar**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Etapa 4: Teste**
+Verifique se a digitação rápida aciona apenas uma chamada de API após o período de rejeição.
 ---
 
 ## Resumo

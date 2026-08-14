@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Fortran"
-description : "Référence complète sur le langage de programmation Fortran couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Fortran"
+description: "Comprehensive reference for the Fortran programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [fortran, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "32 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [fortran, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "32 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Fortran
 Fortran (Formula Translation) est le plus ancien langage de programmation de haut niveau encore largement utilisé, développé pour la première fois par IBM en 1957 pour le calcul scientifique et technique. Malgré son âge, le Fortran moderne (Fortran 2008/2018/2023) est un langage performant et performant largement utilisé dans la prévision numérique du temps, la dynamique des fluides computationnelle, les simulations physiques, la modélisation financière et le calcul haute performance (HPC). La plupart des superordinateurs les plus rapides au monde exécutent du code Fortran.
 La langue a considérablement évolué depuis ses débuts. Le Fortran moderne possède des modules, des types dérivés, des procédures génériques, des coarrays (programmation parallèle) et une interopérabilité avec C. Il reste le langage de choix pour de nombreuses applications de calcul scientifique où les performances sont primordiales.
@@ -774,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Développement d'applications générales | Ne convient pas | Python, Java, Go |
 | Développement Web | Ne convient pas | Javascript, Python |
 | Science des données (interactive) | Pas le flux de travail | Python, R |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Quelle est la différence entre Fortran 90 et Fortran moderne (2008+) ?
+**R :** Modern Fortran a ajouté de nombreuses fonctionnalités qui le rendent plus expressif :
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2 : En quoi les tableaux Fortran diffèrent-ils des tableaux C ?
+**R :** Les tableaux Fortran sont des objets de première classe avec des opérations intégrées :
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3 : Comment puis-je obtenir des performances maximales en Fortran ?
+**R :** Pratiques clés :
+- Utilisez`intent`explicite pour tous les arguments factices
+- Utilisez`implicit none`partout
+- Préférer les opérations sur les tableaux aux boucles
+- Utiliser des modèles d'accès à la mémoire contigus
+- Utiliser les indicateurs d'optimisation du compilateur :`-O3 -march=native -ffast-math`
+- Profil avec`gprof`ou outils spécifiques au compilateur
+- Utilisez`pure`et`elemental`pour les fonctions que le compilateur peut optimiser
+### Q4 : Comment interfacer Fortran avec C ?
+**R :** Utilisez le module `iso_c_binding` :
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5 : Quel système de build dois-je utiliser pour les projets Fortran ?
+**R :** CMake dispose d'un excellent support Fortran. FPM (Fortran Package Manager) est l'option native moderne :
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Résoudre une EDP avec des différences finies
+**Étape 1 : Comprendre le problème**
+Résoudre l'équation de la chaleur 1D : du/dt = alpha * d²u/dx²
+**Étape 2 : Identifiez l'approche**
+Discrétiser l'espace et le temps à l'aide de différences finies. Utilisez un schéma explicite.
+**Étape 3 : Mettre en œuvre**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Étape 4 : Vérifier**
+Vérifiez la conservation, la convergence avec le raffinement de la grille et comparez avec la solution analytique.
+### Problème 2 : Diagonalisation matricielle
+**Étape 1 : Comprendre le problème**
+Trouver les valeurs propres et les vecteurs propres d'une matrice symétrique.
+**Étape 2 : Identifiez l'approche**
+Utilisez la routine`dsyev`de LAPACK via l'interface Fortran.
+**Étape 3 : Mettre en œuvre**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Étape 4 : Vérifier**
+Vérifiez que A*v = lambda*v pour chaque paire propre.
 ---
 
 ## Résumé

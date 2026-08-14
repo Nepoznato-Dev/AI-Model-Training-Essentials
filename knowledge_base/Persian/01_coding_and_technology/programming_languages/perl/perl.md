@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "پرل"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Perl که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [پرل، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "24 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Perl"
+description: "Comprehensive reference for the Perl programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [perl, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "24 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #پرل
 پرل توسط لری وال در سال 1987 به عنوان یک ابزار کاربردی برای پردازش متن ایجاد شد. این به ستون فقرات اولیه توسعه وب (اسکریپت های CGI)، مدیریت سیستم، بیوانفورماتیک و برنامه نویسی شبکه تبدیل شد. فلسفه پرل «بیش از یک راه برای انجام آن وجود دارد» (TMTOWTDI) است - این زبان رویکردهای متعددی را برای هر مشکلی به شما ارائه می‌دهد و بیانگر بودن را به یکنواختی ترجیح می‌دهد.
 تأثیر پرل بر برنامه نویسی مدرن بسیار زیاد است، اما اغلب نامرئی است: عبارات منظم، تحت تأثیر تطبیق الگوی پرل، اکنون در پایتون، جاوا اسکریپت، جاوا و بسیاری از زبان های دیگر استاندارد هستند. CPAN (شبکه جامع بایگانی پرل) یکی از اولین مخازن بسته نرم افزاری بود و از سیستم های بعدی مانند PyPI پایتون و npm نود الهام گرفت.
@@ -54,7 +59,7 @@ next_review: "05-08-2027"
 | **جمعیت رو به زوال** | پروژه های جدید کمتری Perl | پایگاه کد بزرگ موجود نیاز به نگهداری دارد. جامعه فعال |
 | **دو نسخه اصلی** | Perl 5 و Raku (Perl 6) زبان های مختلف هستند | از Perl 5 برای کارهای موجود استفاده کنید. راکو برای پروژه های جدید |
 | ** مد روز نیست** | به ندرت در بوت کمپ یا دانشگاه تدریس می شود | مستندات گسترده و ماژول های CPAN |
-| **سیجیل متغیر** |  پیشوندهای `$`، `@`،`%`می توانند مبتدیان را گیج کنند | الگو را بیاموزید:`$scalar`,`@array`,`%hash`|
+| **سیجیل متغیر** |  پیشوندهای`$`,`@`,`%`می توانند مبتدیان را گیج کنند | آموزش الگو:`$scalar`,`@array`,`%hash`|
 | **عملکرد** | کندتر از زبان های کامپایل شده برای کارهای محاسباتی سنگین | از پسوندهای C استفاده کنید. ابزار مناسبی برای HPC نیست |
 ---
 
@@ -178,9 +183,9 @@ if ($@) {
 | عبارات منظم | پایتون، جاوا اسکریپت، جاوا، روبی، سی شارپ، پی اچ پی |
 | مخازن بسته (CPAN) | PyPI، npm، RubyGems، crates.io |
 | Heredocs | پایتون، روبی، پی اچ پی، شل، جاوا اسکریپت |
-| `$_`متغیر پیش فرض | Ruby's `$_`، PowerShell's`$_`|
+| `$_`متغیر پیش فرض | Ruby's`$_`, PowerShell's`$_`|
 | `map`/`grep`/`reduce`| پایتون، روبی، جاوا اسکریپت، Rust |
-| `use strict`/ پرده | TypeScript، نکات نوع پایتون |
+| `use strict`/ linting | TypeScript، نکات نوع پایتون |
 ---
 
 ## نحو و الگوهای پیشرفته
@@ -575,11 +580,170 @@ CMD ["perl", "bin/myapp.pl"]
 | مدیریت سیستم | از نظر تاریخی غالب | Bash/PowerShell برای کارهای ساده؛ پایتون برای پیچیده |
 | تعمیر و نگهداری سیستم قدیمی | میلیون ها خط پرل در حال تولید | — |
 | بیوانفورماتیک | حضور قوی تاریخی (BioPerl) | پایتون (Biopython)، R |
-| تبدیل سریع داده ها | تک لاینرها بی رقیب هستند |  `jq`،`awk`برای فرمت های ساخت یافته |
+| تبدیل سریع داده ها | تک لاینرها بی رقیب هستند | `jq`,`awk`برای فرمت های ساخت یافته |
 | توسعه وب | دوران CGI به پایان رسیده است | Python، Node.js، Go، PHP |
 | پروژه های بزرگ مقیاس جدید | انجمن حرکت کرده است | برو، رست، پایتون |
 | علم داده / ML | نه اکوسیستم | پایتون، R |
 ---
 
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت بین `my`،`our`و`local`چیست؟
+**A:** این کلمات کلیدی محدوده متغیر را کنترل می کنند:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### Q2: چگونه فایل های متنی را به طور موثر در پرل پردازش کنم؟
+**A:** پرل در پردازش متن برتری دارد. از عملگر الماس و regex استفاده کنید:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### Q3: چگونه از مراجع و ساختارهای داده پیچیده استفاده کنم؟
+**A:** مراجع راه پرل برای ایجاد ساختارهای تودرتو هستند:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### Q4: متغیرهای خاص پرل که باید بدانم چیست؟
+**A:** Perl دارای متغیرهای ویژه زیادی است. مهم ترین:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### Q5: چگونه Perl مدرن و قابل نگهداری بنویسم؟
+**A:** بهترین روش ها برای پرل مدرن:
+- همیشه از`strict`و`warnings`استفاده کنید 
+- از`my`برای همه متغیرها استفاده کنید
+- از فایل‌های واژگانی استفاده کنید:`open my $fh, '<', $file`
+- از ماژول های CPAN استفاده کنید (Moo/Moose برای OOP، سعی کنید::Tiny برای خطاها)
+- از`say`به جای`print`(با `feature 'say'`) استفاده کنید
+- فرمت با `perltidy`
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: تجزیه و تحلیل فایل لاگ
+**مرحله 1: مشکل را درک کنید**
+گزارش دسترسی آپاچی را تجزیه کنید و درخواست ها را در هر آدرس IP بشمارید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از regex برای استخراج آدرس های IP، هش برای شمارش رخدادها استفاده کنید.
+**مرحله 3: پیاده سازی **```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**مرحله 4: تمدید**
+فیلتر تاریخ، تجزیه و تحلیل کد وضعیت، و خروجی را به عنوان CSV اضافه کنید.
+### مشکل 2: تغییر نام دسته ای فایل با Regex
+**مرحله 1: مشکل را درک کنید**
+تغییر نام فایل های مطابق با یک الگو، تبدیل نام فایل ها با regex.
+**مرحله 2: رویکرد را شناسایی کنید**
+برای یافتن فایل‌ها از`glob`یا`opendir`و برای تبدیل نام‌ها از regex استفاده کنید.
+**مرحله 3: پیاده سازی **```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**مرحله 4: تایید **
+ابتدا با پرچم`--dry-run`اجرا کنید (فقط چاپ کنید، حرکت نکنید).
+### مشکل 3: ساختن یک Web Scraper ساده
+**مرحله 1: مشکل را درک کنید**
+یک صفحه وب را واکشی کنید و همه پیوندها را استخراج کنید.
+**مرحله 2: رویکرد را شناسایی کنید**
+از`LWP::Simple`برای واکشی و regex یا`HTML::LinkExtor`برای تجزیه استفاده کنید.
+**مرحله 3: پیاده سازی **```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**مرحله 4: تمدید**
+URL های نسبی را مدیریت کنید، بر اساس دامنه فیلتر کنید و صفحه بندی را دنبال کنید.
+---
+
 ## خلاصه
-دوران طلایی پرل گذشته است، اما تأثیر آن همه جا است. هر زبانی با عبارات منظم، هر مدیر بسته ای که بر اساس CPAN مدل شده است، و هر سیستمی با`map`/`grep`/`reduce`حامل DNA پرل است. برای پروژه های جدید، بیشتر توسعه دهندگان پایتون یا Go را دنبال می کنند. اما Perl همچنان ابزاری قدرتمند برای پردازش متن، اتوماسیون سریع و حفظ حجم عظیمی از کدهای پرل است که زیرساخت های حیاتی را در سراسر جهان اجرا می کند. درک پرل همچنین به معنای درک این است که برنامه نویسی مدرن از کجا آمده است - ابزارها و الگوهایی را که امروزه استفاده می کنیم شکل داده است.
+دوران طلایی پرل گذشته است، اما تأثیر آن همه جا است. هر زبانی با عبارات منظم، هر مدیر بسته‌ای که بر اساس CPAN مدل شده است، و هر سیستمی با`map`/`grep`/`reduce`DNA پرل را حمل می‌کند. برای پروژه های جدید، بیشتر توسعه دهندگان پایتون یا Go را دنبال می کنند. اما Perl همچنان ابزاری قدرتمند برای پردازش متن، اتوماسیون سریع و حفظ حجم عظیمی از کدهای پرل است که زیرساخت های حیاتی را در سراسر جهان اجرا می کند. درک پرل همچنین به معنای درک این است که برنامه نویسی مدرن از کجا آمده است - ابزارها و الگوهایی را که امروزه استفاده می کنیم شکل داده است.

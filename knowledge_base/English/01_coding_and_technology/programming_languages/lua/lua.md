@@ -662,6 +662,282 @@ CMD lua5.4 src/main.lua
 
 ---
 
+## Synthetic Q&A
+
+### Q1: Why does Lua use 1-based indexing instead of 0-based?
+
+**A:** Lua was designed for non-programmer users and follows natural counting conventions. The `#` operator, `ipairs`, and string functions all use 1-based indexing:
+
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+This is consistent throughout the standard library. When interfacing with C (0-based), be mindful of the offset.
+
+### Q2: How do I implement object-oriented patterns in Lua?
+
+**A:** Lua uses tables and metatables for OOP. The `__index` metamethod enables method lookup on prototypes:
+
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### Q3: How do coroutines work and when should I use them?
+
+**A:** Coroutines are cooperative threads that can suspend and resume execution. They are ideal for iterators, async patterns, and game logic:
+
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### Q4: What is the best way to handle errors in Lua?
+
+**A:** Use `pcall`/`xpcall` to catch errors, and return multiple values for success/failure patterns:
+
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### Q5: How do I optimize Lua performance for games and embedded systems?
+
+**A:** Key practices:
+- Use `local` for all variables — global access is significantly slower
+- Cache frequently accessed table fields in locals
+- Pre-allocate tables when size is known: `local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- Avoid creating temporary tables in hot loops
+- Use `table.concat` instead of `..` for joining many strings
+- Profile with `os.clock()` or debug hooks
+- In LuaJIT, use FFI for C interop instead of the C API
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Building a Configuration Parser
+
+**Step 1: Understand the Problem**
+Parse a simple key-value configuration file where each line is `key = value`.
+
+**Step 2: Identify the Approach**
+Read lines, split on `=`, trim whitespace, and store in a table.
+
+**Step 3: Implement**
+```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**Step 4: Extend**
+Add section support (`[section]`), type coercion (numbers, booleans), and nested tables.
+
+### Problem 2: Implementing a Simple Event System
+
+**Step 1: Understand the Problem**
+Create an event emitter that supports subscribing to and emitting named events.
+
+**Step 2: Identify the Approach**
+Use a table mapping event names to lists of handler functions.
+
+**Step 3: Implement**
+```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**Step 4: Verify**
+Test with multiple events, removal, and error handling in handlers.
+
+### Problem 3: Creating a Coroutine-Based Pipeline
+
+**Step 1: Understand the Problem**
+Build a data processing pipeline where each stage filters or transforms data, connected via coroutines.
+
+**Step 2: Identify the Approach**
+Use coroutines as pipeline stages — each stage pulls from the previous and pushes to the next.
+
+**Step 3: Implement**
+```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**Step 4: Optimize**
+This pull-based pipeline processes one element at a time with minimal memory overhead — ideal for large or infinite streams.
+
+---
+
 ## Summary
 
 Lua is the quintessential embedding language. It is small, fast, and simple — designed to live inside other applications and provide them with scripting capabilities. For game development, Roblox, and embedded systems, Lua is an excellent choice. It is not a general-purpose language, but for its specific niche (scripting and embedding), it is nearly unmatched.

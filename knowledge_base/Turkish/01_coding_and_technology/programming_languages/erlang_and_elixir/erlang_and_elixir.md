@@ -244,7 +244,7 @@ defmodule Router do
 end
 ```
 
-### Protokoller (İksir Tür Sınıfları)
+### Protokoller (İksir'in Tür Sınıfları)
 ```elixir
 # Define a protocol
 defprotocol Serializable do
@@ -928,5 +928,108 @@ CMD ["bin/my_app", "start"]
 | Basit REST API'leri | Mümkün ama küçük hizmetler için aşırıya kaçılıyor | Git, Node.js, Python |
 ---
 
+## Sentetik Soru-Cevap
+### S1: Erlang'ın "bırak çöksün" felsefesi nasıl işliyor?
+**C:** Savunma amaçlı programlama yerine Erlang, süreçlerin çökmesine izin veriyor ve denetçiler aracılığıyla onları yeniden başlatıyor:
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### S2: İksir boru hatları nasıl çalışır?
+**A:**`|>`operatörü bir fonksiyonun sonucunu ilk argüman olarak diğerine iletir:
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### S3: Erlang ve Elixir arasındaki fark nedir?
+**C:** Elixir, Erlang VM (BEAM) üzerinde modern sözdizimi ile çalışır:
+- İksir: boru operatörü, makrolar, protokoller, dize enterpolasyonu
+- Erlang: daha basit sözdizimi, yerleşik OTP, daha fazla test edilmiş
+- Her ikisi de aynı eşzamanlılık modelini, VM'yi ve ekosistemi paylaşıyor
+### S4: GenServer'lar Elixir'de nasıl çalışır?
+**C:** GenServer, durum bilgisi olan süreçler için standart soyutlamadır:
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### S5: Elixir'deki hataları nasıl halledebilirim?
+**A:** İstisnalar için `try/rescue`'yi, beklenen hatalar için `{:ok, result} | {:error, reason}`'yi kullanın:
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Hataya Dayanıklı Bir Anahtar-Değer Deposu Oluşturmak
+**1. Adım: Sorunu Anlayın**
+Süreç çökmelerinden kurtulabilen bir anahtar/değer deposu oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+Bir süpervizörle birlikte bir GenServer kullanın.
+**3. Adım: Uygulama**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**4. Adım: Doğrulayın**
+İşlemi sonlandırın ve yeni durumla yeniden başlatıldığını doğrulayın.
+### Sorun 2: Eşzamanlı Web Kazıyıcı
+**1. Adım: Sorunu Anlayın**
+Birden fazla URL'yi aynı anda getirin ve sonuçları toplayın.
+**2. Adım: Yaklaşımı Belirleyin**
+Eşzamanlı yürütme için İksir Görevlerini kullanın.
+**3. Adım: Uygulama**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**4. Adım: Optimize edin**
+Büyük URL listeleri için hız sınırlama, yeniden denemeler ve akış özellikleri ekleyin.
+---
+
 ## Özet
-Erlang, çoğu dilin hâlâ uğraştığı bir sorunu çözdü: asla yıkılmayacak sistemler inşa etmek. Eşzamanlılık modeli (hafif süreçler, mesaj aktarımı, "bırakın çöksün" denetimi) ana dillerin henüz yeni keşfettiği modelin onlarca yıl ilerisindedir. Elixir, Erlang'ın süper güçlerini alır ve bunları mükemmel geliştirici deneyimiyle modern sözdizimiyle birleştirir. Gerçek zamanlı, dağıtılmış veya hataya dayanıklı sistemler oluşturuyorsanız Erlang/Elixir yatırıma değer. Öğrenme eğrisi gerçektir (fonksiyonel programlama, model eşleştirme, süreç düşünme), ancak getirisi, ayakta kalan ve tahmin edilebilir şekilde ölçeklenen bir yazılımdır.
+Erlang, çoğu dilin hâlâ uğraştığı bir sorunu çözdü: asla yıkılmayacak sistemler inşa etmek. Eşzamanlılık modeli (hafif süreçler, mesaj aktarımı, "bırakın çöksün" denetimi) ana dillerin henüz yeni keşfettiği modelin onlarca yıl ilerisindedir. Elixir, Erlang'ın süper güçlerini alır ve bunları mükemmel geliştirici deneyimiyle modern sözdizimiyle birleştirir. Gerçek zamanlı, dağıtılmış veya hataya dayanıklı sistemler oluşturuyorsanız Erlang/Elixir yatırıma değer. Öğrenme eğrisi gerçektir (işlevsel programlama, model eşleştirme, süreç düşünme), ancak getirisi, ayakta kalan ve tahmin edilebilir şekilde ölçeklenen bir yazılımdır.

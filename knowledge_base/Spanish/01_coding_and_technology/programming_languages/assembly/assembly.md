@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Lenguaje ensamblador"
-descripción: "Referencia completa para el lenguaje de programación ensamblador que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Assembly Language"
+description: "Comprehensive reference for the Assembly programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [ensamblaje, lenguaje de programación, sintaxis, ecosistema, codificación y tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "31 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [assembly, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lenguaje ensamblador
 El lenguaje ensamblador es el lenguaje de programación legible por humanos de nivel más bajo. Proporciona una representación directa de las instrucciones del código máquina de una computadora utilizando códigos mnemotécnicos (como `MOV`, `ADD`, `JMP`) en lugar de binario sin formato. Cada lenguaje ensamblador es específico de una arquitectura de procesador particular (x86, ARM, MIPS, RISC-V): el código escrito para una arquitectura no se ejecutará en otra.
 El lenguaje ensamblador no se utiliza para crear aplicaciones. Se utiliza cuando se necesita un control absoluto sobre el hardware: escribir núcleos del sistema operativo, controladores de dispositivos, cargadores de arranque, firmware integrado, secciones de código críticas para el rendimiento, ingeniería inversa y comprender cómo las computadoras ejecutan realmente las instrucciones.
@@ -634,7 +639,7 @@ list_sum:
 ---
 
 ## Rendimiento y optimización
-### Programación de instrucción
+### Programación de instrucciones
 Las CPU modernas ejecutan múltiples instrucciones por ciclo mediante canalización y ejecución desordenada. Comprender esto ayuda a escribir un ensamblaje más rápido.
 ```nasm
 ; BAD: Data dependency stalls the pipeline
@@ -729,6 +734,85 @@ void process_data(void) {
 | Firmware integrado (metal desnudo) | No hay ningún idioma de nivel superior disponible | C, óxido |
 | Educación | Comprensión de la arquitectura informática | — |
 | Desarrollo de aplicaciones generales | Poco práctico para programas complejos | Cualquier idioma de nivel superior |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cuál es la diferencia entre el ensamblaje RISC y CISC?
+**R:** CISC (x86) tiene instrucciones complejas y de longitud variable. RISC (ARM) tiene instrucciones simples de longitud fija:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### P2: ¿Cómo funciona la pila en el ensamblaje?
+**R:** La pila crece hacia abajo. `push`disminuye SP y almacena; `pop`carga e incrementa SP:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### P3: ¿Cómo llamo funciones en ensamblador?
+**R:** Siga la convención de llamadas (System V AMD64 en Linux, Windows x64 en Windows):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### P4: ¿Cuáles son las instrucciones de montaje más importantes que debe conocer?
+**R:** El movimiento de datos, la aritmética, el flujo de control y las operaciones de pila forman el núcleo.
+### P5: ¿Cómo se utiliza el ensamblaje en la investigación de seguridad?
+**R:** La ingeniería inversa, el desarrollo de exploits, el análisis de malware y la comprensión de la salida del compilador requieren conocimientos de ensamblaje.
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Implementación de un bucle en ensamblaje
+**Paso 1: Comprenda el problema**
+Sumar números enteros del 1 al N.
+**Paso 2: Identificar el enfoque**
+Utilice un contador registrador y un acumulador.
+**Paso 3: Implementar**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Paso 4: Optimizar**
+Utilice la fórmula N*(N+1)/2 para O(1) en lugar de O(N).
 ---
 
 ## Resumen

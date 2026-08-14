@@ -797,6 +797,102 @@ void process_data(void) {
 
 ---
 
+## Synthetic Q&A
+
+### Q1: What is the difference between RISC and CISC assembly?
+
+**A:** CISC (x86) has complex, variable-length instructions. RISC (ARM) has simple, fixed-length instructions:
+
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2: How does the stack work in assembly?
+
+**A:** The stack grows downward. `push` decrements SP and stores; `pop` loads and increments SP:
+
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3: How do I call functions in assembly?
+
+**A:** Follow the calling convention (System V AMD64 on Linux, Windows x64 on Windows):
+
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: What are the most important assembly instructions to know?
+
+**A:** Data movement, arithmetic, control flow, and stack operations form the core.
+
+### Q5: How is assembly used in security research?
+
+**A:** Reverse engineering, exploit development, malware analysis, and understanding compiler output all require assembly literacy.
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Implementing a Loop in Assembly
+
+**Step 1: Understand the Problem**
+Sum integers from 1 to N.
+
+**Step 2: Identify the Approach**
+Use a counter register and accumulator.
+
+**Step 3: Implement**
+```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Step 4: Optimize**
+Use the formula N*(N+1)/2 for O(1) instead of O(N).
+
+---
+
 ## Summary
 
 Assembly language is the bridge between human-readable code and the raw binary that CPUs execute. It is not a practical choice for building applications, but it is essential for understanding how computers work at the lowest level. For systems programmers, security researchers, and embedded developers, assembly knowledge is invaluable. For everyone else, understanding assembly concepts (registers, the stack, instruction cycles) makes you a better programmer in any language.

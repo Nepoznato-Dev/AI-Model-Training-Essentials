@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 에이다
 Ada는 안전이 중요하고 무결성이 높은 시스템을 위해 설계된 정적으로 유형이 지정되고 컴파일된 프로그래밍 언어입니다. 원래 1980년대 미국 국방부(최초의 컴퓨터 프로그래머로 간주되는 Ada Lovelace의 이름을 따서 명명)와 계약을 통해 개발된 Ada는 신뢰성, 유지 관리 가능성 및 정확성을 강조합니다. 이는 당시 DoD에서 사용하던 수백 개의 프로그래밍 언어를 잘 지정된 단일 언어로 대체하도록 설계되었습니다.
-Ada는 항공(플라이 바이 와이어 시스템), 우주(ESA 및 NASA), 국방(미사일 유도, 레이더), 철도 운송, 의료 장비 등 소프트웨어 오류로 인해 생명이 희생될 수 있는 모든 곳에서 사용됩니다.
+Ada는 항공(플라이 바이 와이어 시스템), 우주(ESA 및 NASA), 국방(미사일 유도, 레이더), 철도 운송, 의료 기기 등 소프트웨어 오류로 인해 생명이 희생될 수 있는 모든 곳에서 사용됩니다.
 ---
 
 ## Ada가 중요한 이유
@@ -861,6 +862,147 @@ end Main;
 | 일반 애플리케이션 개발 | 중요하지 않은 시스템에 대한 과잉 | 파이썬, 자바, Go |
 | 웹 개발 | 적합하지 않음 | 자바스크립트, 파이썬 |
 | 데이터 과학 / ML | 생태계가 아니다 | 파이썬, R |
+---
+
+## 종합 Q&A
+### Q1: Ada의 유형 시스템은 컴파일 시 버그를 어떻게 방지합니까?
+**답:** Ada의 유형 시스템은 모든 언어 중에서 가장 엄격한 유형 시스템 중 하나입니다. 다른 언어에서는 놓치는 오류를 포착합니다.
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2: Ada의 작업 모델은 무엇이며 다른 동시성 모델과 어떻게 비교됩니까?
+**답:** Ada에는 보호된 개체 및 작업과의 동시성이 내장되어 있습니다.
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: Ada에서 제네릭을 어떻게 사용하나요?
+**답:** Ada 제네릭은 명시적이며 유형이 안전합니다.
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: Ada가 안전이 중요한 시스템에 적합한 이유는 무엇입니까?
+**답:** Ada는 다음을 제공합니다.
+- 공식 검증을 위한 SPARK 하위 집합(정확성에 대한 수학적 증명)
+- 계약 기반 프로그래밍(사전/사후 조건, 유형 불변)
+- SPARK에는 암시적 메모리 할당이 없습니다.
+- 결정론적 작업 및 스케줄링
+- 높은 무결성 실시간 시스템을 위한 Ravenscar 프로필
+- 툴체인 인증(항공전자공학용 DO-178C)
+### Q5: Ada 프로젝트를 어떻게 빌드하나요?
+**답:** GPR 프로젝트 파일과 함께 GPRBuild를 사용하세요.
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 유형이 안전한 대기열 구현
+**1단계: 문제 이해**
+컴파일 시간 크기 검사를 통해 제한된 스레드로부터 안전한 대기열을 만듭니다.
+**2단계: 접근 방식 파악**
+제한된 버퍼가 있는 보호 개체를 사용합니다.
+**3단계: 구현**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**4단계: 확인**
+보호된 개체는 상호 배제를 보장합니다. 진입 장벽은 오버플로/언더플로를 방지합니다.
+### 문제 2: 계약 기반 검증
+**1단계: 문제 이해**
+정식 계약으로 제곱근 함수를 구현합니다.
+**2단계: 접근 방식 파악**
+Ada 2012 계약(사전/사후 조건)을 사용하세요.
+**3단계: 구현**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**4단계: 확인**
+런타임 검사(어설션)는 위반을 포착합니다. SPARK에서는 이러한 사항이 증명 의무가 됩니다.
 ---
 
 ## 요약

@@ -613,16 +613,264 @@ CMD lua5.4 src/main.lua
 ---
 
 ## 何時使用 Lua
-|場景 |為什麼選擇 Lua |更好的選擇|
+|場景|為什麼選擇 Lua |更好的選擇|
 |----------|---------|--------------------|
 |遊戲腳本|輕量、快速、可嵌入 | — |
 | Roblox 開發 |唯一的選擇| — |
 |嵌入式系統|微小的足跡| C、MicroPython |
 |應用擴充|專為嵌入設計| Python（較大）、JavaScript (V8) |
-|設定檔|簡單快速 | JSON、TOML、YAML |
+|設定檔|簡單快速| JSON、TOML、YAML |
 |網頁開發| OpenResty 存在但小眾 | JavaScript、Python、Go |
-|通用應用程式開發|不是為獨立應用程式設計的 | Python、Go、Java |
+|通用應用程式開發 |不是為獨立應用程式設計的 | Python、Go、Java |
 |資料科學|不是生態系| Python、R |
+---
+
+## 綜合問答
+### Q1：為什麼Lua使用基於1的索引而不是基於0的索引？
+**答：** Lua 是為非程式設計師使用者設計的，遵循自然計數約定。`#`運算子、`ipairs`和字串函數都使用從 1 開始的索引：
+```lua
+local items = {"a", "b", "c"}
+print(items[1])  -- "a" (first element)
+print(#items)    -- 3
+
+-- String functions are also 1-based
+print(string.sub("hello", 1, 3))  -- "hel"
+print(string.find("hello", "ll")) -- 3 (starts at position 3)
+```
+
+這在整個標準庫中都是一致的。與 C（從 0 開始）介面時，請注意偏移量。
+### Q2：如何在Lua中實現物件導向模式？
+**答：** Lua 使用表格和元表進行 OOP。`__index`元方法支援在原型上進行方法查找：
+```lua
+-- Class-like pattern
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name, sound)
+  return setmetatable({name = name, sound = sound}, Animal)
+end
+
+function Animal:speak()
+  print(self.name .. " says " .. self.sound)
+end
+
+-- Inheritance
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+  return Animal.new(name, "Woof!")
+end
+
+function Dog:fetch()
+  print(self.name .. " fetches the ball!")
+end
+
+local rex = Dog.new("Rex")
+rex:speak()   -- "Rex says Woof!"
+rex:fetch()   -- "Rex fetches the ball!"
+```
+
+### Q3：協程如何運作以及何時應該使用它們？
+**A:** 協程是可以暫停和恢復執行的協作執行緒。它們非常適合迭代器、非同步模式和遊戲邏輯：
+```lua
+-- Producer coroutine
+function produce()
+  for i = 1, 5 do
+    coroutine.yield(i)  -- suspend, returning value
+  end
+end
+
+local co = coroutine.create(produce)
+print(coroutine.resume(co))  -- true, 1
+print(coroutine.resume(co))  -- true, 2
+print(coroutine.resume(co))  -- true, 3
+
+-- Iterator pattern
+function range(from, to)
+  return coroutine.wrap(function()
+    for i = from, to do
+      coroutine.yield(i)
+    end
+  end)
+end
+
+for n in range(1, 5) do
+  print(n)  -- 1, 2, 3, 4, 5
+end
+```
+
+### Q4：Lua 中處理錯誤的最佳方式是什麼？
+**A:** 使用`pcall`/`xpcall`擷取錯誤，並傳回成功/失敗模式的多個值：
+```lua
+-- pcall — protected call
+local ok, result = pcall(function()
+  return risky_operation()
+end)
+if not ok then
+  print("Error: " .. result)  -- result is the error message
+end
+
+-- xpcall — with custom error handler
+local ok, result = xpcall(
+  function() return process() end,
+  function(err) return debug.traceback(err) end
+)
+
+-- Idiomatic: return nil + message on failure
+function read_config(path)
+  local f = io.open(path, "r")
+  if not f then return nil, "Cannot open: " .. path end
+  local content = f:read("*a")
+  f:close()
+  return content
+end
+
+local config, err = read_config("app.conf")
+if not config then error(err) end
+```
+
+### Q5：如何優化遊戲和嵌入式系統的 Lua 效能？
+**答：** 關鍵做法：
+- 對所有變數使用`local`— 全域存取速度明顯變慢
+- 在本機快取經常存取的表格字段
+- 大小已知時預先分配表：`local t = {}; for i = 1, 1000 do t[i] = 0 end`
+- 避免在熱循環中建立臨時表
+- 使用`table.concat`而不是`..`來連接多個字串
+- 使用`os.clock()`或偵錯掛鉤進行設定檔
+- 在 LuaJIT 中，使用 FFI 進行 C 互通而非 C API
+---
+
+## 解決問題的思路
+### 問題 1：建構設定解析器
+**第 1 步：了解問題**
+解析一個簡單的鍵值設定文件，其中每一行都是`key = value`。
+**第 2 步：確定方法**
+讀取行，在`=`上拆分，修剪空格，然後儲存在表中。
+**步驟 3：實施**```lua
+function parse_config(filename)
+  local config = {}
+  local f = assert(io.open(filename, "r"))
+  for line in f:lines() do
+    -- Skip comments and empty lines
+    line = line:match("^%s*(.-)%s*$")  -- trim
+    if line ~= "" and not line:match("^#") then
+      local key, value = line:match("^([^=]+)=(.*)$")
+      if key and value then
+        -- Trim key and value
+        key = key:match("^%s*(.-)%s*$")
+        value = value:match("^%s*(.-)%s*$")
+        config[key] = value
+      end
+    end
+  end
+  f:close()
+  return config
+end
+
+-- Usage: config = parse_config("app.conf")
+-- config["host"] => "localhost"
+```
+
+**第 4 步：擴充**
+新增節支援 (`[section]`)、類型強制（數字、布林值）和巢狀表。
+### 問題 2：實作一個簡單的事件系統
+**第 1 步：了解問題**
+建立一個支援訂閱和發出命名事件的事件發射器。
+**第 2 步：確定方法**
+使用將事件名稱對應到處理程序函數清單的表。
+**步驟 3：實施**```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+  return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, handler)
+  if not self.listeners[event] then
+    self.listeners[event] = {}
+  end
+  table.insert(self.listeners[event], handler)
+  return self  -- chainable
+end
+
+function EventBus:emit(event, ...)
+  local handlers = self.listeners[event] or {}
+  for _, handler in ipairs(handlers) do
+    handler(...)
+  end
+end
+
+function EventBus:off(event, handler)
+  local handlers = self.listeners[event] or {}
+  for i, h in ipairs(handlers) do
+    if h == handler then
+      table.remove(handlers, i)
+      break
+    end
+  end
+end
+
+-- Usage
+local bus = EventBus.new()
+bus:on("data", function(msg) print("Got: " .. msg) end)
+bus:on("data", function(msg) print("Also: " .. msg) end)
+bus:emit("data", "hello")  -- Got: hello / Also: hello
+```
+
+**第 4 步：驗證**
+在處理程序中測試多個事件、刪除和錯誤處理。
+### 問題 3：建立基於協程的管道
+**第 1 步：了解問題**
+建立一個數據處理管道，其中每個階段都會過濾或轉換數據，並透過協程連接。
+**第 2 步：確定方法**
+使用協程作為管道階段 - 每個階段從前一個階段拉出並推送到下一個階段。
+**步驟 3：實施**```lua
+-- Source: generates values
+function source(t)
+  return coroutine.wrap(function()
+    for _, v in ipairs(t) do
+      coroutine.yield(v)
+    end
+  end)
+end
+
+-- Filter: passes through values matching predicate
+function filter(pred, input)
+  return coroutine.wrap(function()
+    for v in input do
+      if pred(v) then coroutine.yield(v) end
+    end
+  end)
+end
+
+-- Map: transforms values
+function map(fn, input)
+  return coroutine.wrap(function()
+    for v in input do
+      coroutine.yield(fn(v))
+    end
+  end)
+end
+
+-- Compose pipeline
+local data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+local pipeline = map(
+  function(x) return x * x end,
+  filter(
+    function(x) return x % 2 == 0 end,
+    source(data)
+  )
+)
+
+for v in pipeline do
+  print(v)  -- 4, 16, 36, 64, 100
+end
+```
+
+**第 4 步：優化**
+這種基於拉取的管道一次以最小的記憶體開銷處理一個元素 - 非常適合大型或無限流。
 ---
 
 ＃＃ 概括

@@ -1,41 +1,46 @@
 ---
-# Metadatos
-título: "Metodologías de Gestión y Proyectos"
-descripción: "Liderazgo, Agile/Scrum/Kanban, OKRs, gestión de riesgos"
-categoría: "Empresas y Economía"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Management and Project Methodologies"
+description: "Leadership, Agile/Scrum/Kanban, OKRs, risk management"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de economía y negocios"
+reviewed_by: "Business & Economics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [gestión, proyecto, metodologías, economía y negocios]
-nivel_dificultad: "principiante"
-requisitos previos: []
-estimado_reading_time: "12 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [management, project, methodologies, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "12 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Metodologías de Gestión y Proyectos
-Gestionar personas y proyectos es una de las cosas más difíciles en cualquier organización. Las habilidades técnicas te permiten entrar en la sala, pero la capacidad de liderar equipos, tomar decisiones, comunicar con claridad y ofrecer resultados es lo que determina si algo realmente se hace. Este archivo cubre los marcos, metodologías y habilidades prácticas en las que confían los gerentes y líderes de proyectos efectivos.
+La gestión de personas y proyectos es una de las responsabilidades más exigentes de cualquier organización. Las habilidades técnicas brindan acceso, pero la capacidad de liderar equipos, tomar decisiones, comunicarse de manera efectiva y generar resultados determina si se logran los objetivos. Este archivo cubre los marcos, metodologías y habilidades prácticas que aplican los gerentes y líderes de proyectos efectivos.
 ---
 
 ## Estilos de liderazgo
@@ -263,4 +268,4 @@ La gestión de productos es la disciplina de decidir qué construir, para quién
 ---
 
 ## Resumen
-La gestión no se trata de títulos ni de organigramas: se trata de hacer las cosas correctas a través de otras personas. Los mejores directivos combinan el pensamiento claro (marcos, metodologías, métricas) con la inteligencia emocional (escucha, empatía, confianza). Ninguna metodología reemplaza el buen juicio, pero el buen juicio se mejora con buenos marcos. Utilícenlos como herramientas, no como religiones.
+La gestión es la práctica de alcanzar objetivos a través de otras personas. Los directivos eficaces combinan un pensamiento claro (marcos, metodologías, métricas) con habilidades interpersonales (escucha, empatía, confianza). Ninguna metodología reemplaza el buen juicio, pero el buen juicio se ve reforzado por marcos sólidos. Éstas deberían aplicarse como guías prácticas y no como doctrinas rígidas.

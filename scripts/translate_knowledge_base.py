@@ -22,7 +22,8 @@ LANGUAGES = {
     "Mandarin_Traditional": "zh-TW", "Portuguese": "pt",
     "Russian": "ru", "Italian": "it", "Polish": "pl", "Turkish": "tr",
     "Vietnamese": "vi", "Indonesian": "id", "Hindi": "hi", "Persian": "fa",
-    "Thai": "th",
+    "Thai": "th", "Bengali": "bn", "Filipino": "tl", "Swahili": "sw",
+    "Urdu": "ur",
 }
 LANGUAGE_DIRECTORIES = {
     "Mandarin_Simplified": "Mandarin_Simplified",

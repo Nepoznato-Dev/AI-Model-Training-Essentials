@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "فشل بحث RAG والمتجهات"
-الوصف: "مزالق البحث عن RAG والمتجهات"
-التصنيف: "دروس من الفشل"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-review_by: "دروس من فريق قاعدة معارف الفشل"
+# Metadata
+title: "RAG and Vector Search Failures"
+description: "RAG and vector search pitfalls"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [خرقة، ناقل، بحث، دروس من الفشل]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "31 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [rag, vector, search, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # فشل بحث RAG وVector
 تعمل هذه الوثيقة على دمج حالات الفشل الشائعة في أنظمة إنشاء الاسترجاع المعزز (RAG)، واستخدام التضمين، وتطبيقات بحث المتجهات.
 ---
@@ -315,9 +320,9 @@ results = client.search(
 ---
 
 ## موضوعات ذات صلة
-- **حالات فشل الذكاء الاصطناعي/LLM**: راجع`ai_llm_failures.md`للتعرف على مشاكل الهلوسة والاستدلال
-- **تصميم الوكيل**: راجع`../05_agents/agent_system_design.md`للتعرف على وكلاء البناء الذين يستخدمون RAG
-- **جودة مجموعة البيانات**: راجع`../08_machine_learning/ml_data_issues.md`للاطلاع على اعتبارات بيانات التدريب
+- **فشل AI/LLM**: راجع`ai_llm_failures.md`للتعرف على مشكلات الهلوسة والاستدلال
+- **تصميم الوكيل**: راجع`../05_agents/agent_system_design.md`للتعرف على وكلاء البناء باستخدام RAG
+- **جودة مجموعة البيانات**: راجع`../08_machine_learning/ml_data_issues.md`للتعرف على اعتبارات بيانات التدريب
 - **الهندسة الفورية**: راجع`../02_artificial_intelligence/prompt_engineering.md`للتعرف على تقنيات التعامل مع السياق
 ---
 
@@ -336,7 +341,7 @@ response = llm.generate(query, context)
 **لماذا هو سيء:**
 - قد يتم التغاضي عن المعلومات الهامة في الأجزاء الوسطى
 - يتضاءل الاهتمام بالنموذج بالنسبة للمحتوى المتوسط
-- إهدار الرموز المميزة على المحتوى المسترد غير ذي الصلة
+- إهدار الرموز المميزة على محتوى مسترد غير ذي صلة
 **التخفيف:**```python
 # Re-rank retrieved results by relevance
 reranked_chunks = rerank(query, retrieved_chunks, top_k=5)

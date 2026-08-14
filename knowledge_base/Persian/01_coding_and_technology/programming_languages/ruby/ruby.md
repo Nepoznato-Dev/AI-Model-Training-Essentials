@@ -1,41 +1,46 @@
 ---
-# فراداده
-عنوان: "روبی"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Ruby شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [یاقوت، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "34 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Ruby"
+description: "Comprehensive reference for the Ruby programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ruby, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #یاقوت
-روبی یک زبان برنامه نویسی پویا، تفسیر شده و شی گرا است که توسط Yukihiro "Matz" Matsumoto ایجاد شد و اولین بار در سال 1995 در ژاپن منتشر شد. روبی با تمرکز بر شادی برنامه نویس طراحی شده است - نحو آن زیبا و طبیعی است و تقریباً مانند انگلیسی خوانده می شود. همه چیز در روبی یک شی است، از جمله انواع اولیه مانند اعداد صحیح و بولی. روبی بیشتر به خاطر چارچوب وب Ruby on Rails شناخته می شود، که توسعه وب را با رایج کردن قراردادها بر روی پیکربندی و نمونه سازی سریع، انقلابی در توسعه وب ایجاد کرد.
+روبی یک زبان برنامه نویسی پویا، تفسیر شده و شی گرا است که توسط Yukihiro "Matz" Matsumoto ایجاد شد و اولین بار در سال 1995 در ژاپن منتشر شد. روبی با تمرکز بر شادی برنامه نویس طراحی شده است - نحو آن زیبا و طبیعی است و تقریباً مانند انگلیسی خوانده می شود. همه چیز در روبی یک شی است، از جمله انواع اولیه مانند اعداد صحیح و بولی. روبی بیشتر برای چارچوب وب Ruby on Rails شناخته می‌شود، که توسعه وب را با رایج کردن قراردادها بر روی پیکربندی و نمونه‌سازی سریع، متحول کرد.
 Beyond Rails، Ruby برای اسکریپت نویسی، اتوماسیون، ابزار DevOps (Cef، Puppet) و به عنوان یک زبان همه منظوره استفاده می شود. نحو بیانی و قابلیت های فرابرنامه نویسی قدرتمند آن، نوشتن را لذت بخش می کند.
 ---
 
@@ -816,6 +821,324 @@ fly deploy
 | سیستم های حیاتی عملکرد | خیلی کند | C، C++، Rust، Go |
 | علم داده / ML | نه اکوسیستم | پایتون، R |
 | برنامه های موبایل | مناسب نیست | سوئیفت، کاتلین، فلاتر |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: تفاوت `proc`،`lambda`و`block`در روبی چیست؟
+**الف:** هر سه بسته هستند، اما در رفتار با هم فرق دارند.`block`یک تکه کد ناشناس است که به روشی با`do...end`یا`{}`ارسال می شود. یک`proc`بلوکی است که به عنوان یک شی ذخیره می شود - تعداد آرگومان ها را بررسی نمی کند و`return`از روش محصور کردن خارج می شود. یک`lambda`مانند یک proc است اما تعداد آرگومان ها را بررسی می کند و`return`فقط از لامبدا خارج می شود. هنگامی که به رفتاری شبیه به روش نیاز دارید، از بلوک‌ها برای تماس‌های یک‌باره، پروک‌ها برای تکه‌های قابل استفاده مجدد و لامبدا استفاده کنید.
+```ruby
+# Block — passed to method, not an object
+def each_with_index(arr)
+  arr.each_with_index { |item, i| yield(item, i) }
+end
+
+# Proc — reusable, return exits enclosing method
+square = Proc.new { |x| x * x }
+puts square.call(5)   # 25
+
+# Lambda — checks arity, return exits only the lambda
+double = ->(x) { x * 2 }
+puts double.call(5)   # 10
+# double.call(1, 2)   # ArgumentError: wrong number of arguments
+
+def test_return
+  lam = -> { return "from lambda" }
+  result = lam.call
+  puts result  # "from lambda" — method continues
+  "method result"
+end
+```
+
+### Q2: سنگهای روبی و باندلر چگونه کار می کنند؟
+**A:** Gems سیستم بسته روبی هستند — کتابخانه های قابل استفاده مجدد که از طریق RubyGems.org توزیع شده اند. یک`Gemfile`وابستگی ها را اعلام می کند. `bundle install`نسخه ها را حل می کند و یک`Gemfile.lock`برای تکرارپذیری ایجاد می کند. `bundle exec`دستورات را در زمینه Gem اجرا می کند. از`gem 'name', '~> 2.0'`برای محدودیت های نسخه سازگار استفاده کنید. همیشه`Gemfile.lock`را برای برنامه ها متعهد کنید، اما نه برای کتابخانه ها.
+```ruby
+# Gemfile
+source "https://rubygems.org"
+
+ruby "3.3.0"
+
+gem "rails", "~> 7.1"
+gem "pg", "~> 1.5"
+gem "puma", "~> 6.0"
+
+group :development, :test do
+  gem "rspec", "~> 3.12"
+  gem "rubocop", "~> 1.50"
+end
+```
+
+```bash
+bundle install        # Install gems from Gemfile
+bundle update rails   # Update specific gem
+bundle exec rspec     # Run rspec with correct gem versions
+bundle audit check    # Check for security vulnerabilities
+```
+
+### Q3: انواع نمادهای روبی چیست و چرا مهم هستند؟
+**الف:** نمادها (`:name`) رشته های غیرقابل تغییر و درونی هستند - هر نماد منحصر به فرد فقط یک بار در حافظه وجود دارد. آنها برای کلیدهای هش، نام روش ها و شناسه ها ایده آل هستند. روبی همچنین دارای اشیاء`Symbol`است که به طور گسترده در فرابرنامه‌نویسی استفاده می‌شوند (`send`، `define_method`). از نمادها برای شناسه های ثابت استفاده کنید. زمانی که نیاز به دستکاری محتوا دارید از رشته ها استفاده کنید.
+```ruby
+# Symbols are interned — same name = same object
+:name.object_id == :name.object_id   # true
+"name".object_id == "name".object_id # false (different String objects)
+
+# As hash keys (most common use)
+user = { name: "Alice", age: 30 }   # Syntax sugar for { :name => "Alice" }
+
+# Dynamic symbol creation
+method_name = "to_s".to_sym
+42.send(method_name)   # "42"
+
+# Frozen string literal (Ruby 3.x defaults to frozen)
+# frozen_string_literal: true
+str = "hello"  # This string is frozen
+```
+
+### Q4: فرابرنامه‌نویسی Ruby چگونه کار می‌کند و چه زمانی باید از آن استفاده کنم؟
+**A:** Ruby به کد اجازه می دهد تا کد را در زمان اجرا تعریف کند:`define_method`روش ها را به صورت پویا ایجاد می کند،`method_missing`فراخوانی های متد تعریف نشده را قطع می کند،`send`روش های خصوصی را فرا می خواند و`class_eval`/`instance_eval`کد زمینه را در یک کلاس ارزیابی می کند. فرابرنامه‌نویسی قدرتمند است اما درک کد را سخت‌تر می‌کند – از آن برای DSL و جادوی فریمورک استفاده کنید، نه برای منطق روزمره.
+```ruby
+# define_method — dynamic method creation
+class Config
+  %w[host port timeout].each do |attr|
+    define_method(attr) { @settings[attr.to_sym] }
+    define_method("#{attr}=") { |val| @settings[attr.to_sym] = val }
+  end
+end
+
+# method_missing — catch-all for undefined methods
+class DynamicHash
+  def initialize(data = {})
+    @data = data
+  end
+
+  def method_missing(name, *args)
+    key = name.to_s.chomp("=").to_sym
+    if name.to_s.end_with?("=")
+      @data[key] = args.first
+    elsif @data.key?(key)
+      @data[key]
+    else
+      super
+    end
+  end
+
+  def respond_to_missing?(name, include_private = false)
+    key = name.to_s.chomp("=").to_sym
+    @data.key?(key) || name.to_s.end_with?("=") || super
+  end
+end
+
+config = DynamicHash.new(name: "Alice")
+config.name     # "Alice"
+config.age = 30 # Sets @data[:age]
+```
+
+### Q5: بهترین راه برای رسیدگی به خطاها در Ruby چیست؟
+**A:** روبی از استثناها برای مدیریت خطا استفاده می کند. کلاس‌های استثنای سفارشی را تعریف کنید که از`StandardError`به ارث می‌برند (نه`Exception`- که خطاهای سطح سیستم را می‌گیرد). از`begin/rescue/else/ensure`برای مدیریت ساخت یافته استفاده کنید. استثناهای خاص را مطرح کنید، نه`RuntimeError`عمومی. از`rescue`به عنوان یک اصلاح کننده برای تک لاینرهای ساده استفاده کنید.
+```ruby
+# Custom exception hierarchy
+class AppError < StandardError; end
+class NotFoundError < AppError; end
+class ValidationError < AppError; end
+
+# Structured handling
+begin
+  user = find_user(id)
+  validate!(user)
+rescue NotFoundError => e
+  logger.warn("User not found: #{e.message}")
+  redirect_to "/users"
+rescue ValidationError => e
+  flash[:error] = e.message
+  render :edit
+rescue StandardError => e
+  logger.error("Unexpected: #{e.class}: #{e.message}")
+  raise  # Re-raise for error tracking
+ensure
+  cleanup_temp_files
+end
+
+# Rescue modifier
+value = parse(input) rescue default_value
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: یک DSL برای فایل های پیکربندی بسازید
+**بیانیه مشکل:** یک Ruby DSL ایجاد کنید که امکان تعریف تنظیمات سرور را در یک نحو خوانا و اعلانی فراهم می کند. DSL باید بلوک‌های تودرتو، اعتبارسنجی و سریال‌سازی برای JSON را پشتیبانی کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) یک نحو DSL تمیز با استفاده از بلوک ها و فراخوانی روش، (2) جمع آوری داده ها از طریق`instance_eval`یا روش های صریح، (3) اعتبارسنجی فیلدهای مورد نیاز، (4) سریال سازی JSON. فرابرنامه نویسی روبی DSL ها را طبیعی می کند.
+** مرحله 2 - شناسایی رویکرد: **
+- از`instance_eval`با کلاس سازنده برای ضبط تماس های DSL استفاده کنید.
+- ذخیره پیکربندی در متغیرهای نمونه.
+- فیلدهای مورد نیاز را قبل از سریال سازی اعتبار سنجی کنید.
+- برای خروجی از`to_h`و`JSON.generate`استفاده کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```ruby
+require 'json'
+
+class ServerConfig
+  attr_reader :name, :host, :port, :ssl, :endpoints, :env
+
+  def initialize(&block)
+    @endpoints = []
+    @env = {}
+    @ssl = false
+    instance_eval(&block) if block
+    validate!
+  end
+
+  def name(val = nil)
+    val ? @name = val : @name
+  end
+
+  def host(val = nil)
+    val ? @host = val : @host
+  end
+
+  def port(val = nil)
+    val ? @port = val.to_i : @port
+  end
+
+  def ssl(val = true)
+    @ssl = val
+  end
+
+  def endpoint(path, method: :get, timeout: 30)
+    @endpoints << { path: path, method: method, timeout: timeout }
+  end
+
+  def environment(key, value)
+    @env[key.to_s] = value.to_s
+  end
+
+  def validate!
+    raise ArgumentError, "name is required" unless @name
+    raise ArgumentError, "host is required" unless @host
+    raise ArgumentError, "port is required" unless @port
+  end
+
+  def to_h
+    {
+      name: @name, host: @host, port: @port, ssl: @ssl,
+      endpoints: @endpoints, environment: @env
+    }
+  end
+
+  def to_json(*args)
+    JSON.pretty_generate(to_h, *args)
+  end
+end
+
+# DSL usage
+config = ServerConfig.new do
+  name "api-server"
+  host "0.0.0.0"
+  port 8443
+  ssl true
+
+  endpoint "/api/users", method: :get, timeout: 10
+  endpoint "/api/users", method: :post, timeout: 30
+  endpoint "/health", method: :get
+
+  environment :database_url, "postgres://localhost/mydb"
+  environment :redis_url, "redis://localhost:6379"
+end
+
+puts config.to_json
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- DSL قابل خواندن و بیانی است - غیر برنامه نویسان می توانند آن را درک کنند.
+- صید اعتبار سنجی از دست رفته زمینه های مورد نیاز در زمان ساخت و ساز.
+-`instance_eval`سینتکس بلوک تمیز را فراهم می کند اما`self`را محدود می کند - برای DSL های پیچیده تر، از`BasicObject`به عنوان سوپرکلاس سازنده استفاده کنید.
+- تولید: سنگهای`dry-configurable`یا`configurate`را برای DSLهای پیکربندی درجه تولید در نظر بگیرید.
+### مشکل 2: یک کتابخانه حافظه را پیاده سازی کنید
+**بیانیه مشکل:** یک ماژول ذخیره سازی بسازید که می تواند با هر کلاسی ترکیب شود تا نتایج روش کش را ذخیره کند. پشتیبانی از TTL (زمان تا زندگی)، محدودیت‌های اندازه حافظه پنهان و کلیدهای کش سفارشی.
+** مرحله 1 - مشکل را درک کنید:**
+ما به این موارد نیاز داریم: (1) یک ماژول که یک متد کلاس`memoize`اضافه می کند، (2) روش متدهای هدف را با منطق ذخیره سازی پنهان می کند، (3) پشتیبانی از انقضای TTL، (4) حذف LRU زمانی که کش پر است.`Module#prepend`و`define_method`روبی برای این کار ایده آل هستند.
+** مرحله 2 - شناسایی رویکرد: **
+- از`Module.new`با`define_method`برای ایجاد یک لفاف استفاده کنید.
+- حافظه پنهان را در یک هش با مُهر زمانی برای TTL ذخیره کنید.
+- از`prepend`برای درج لایه کش قبل از روش اصلی استفاده کنید.
+- پشتیبانی از گزینه های قابل تنظیم: `ttl`، `max_size`، `key`.
+**مرحله 3 - راه حل را اجرا کنید:**
+```ruby
+module Memoizable
+  def memoize(method_name, ttl: nil, max_size: 1000, key: nil)
+    original = instance_method(method_name)
+
+    cache = {}
+    timestamps = {}
+    mutex = Mutex.new
+
+    define_method(method_name) do |*args, **kwargs, &blk|
+      cache_key = key ? key.call(*args, **kwargs) : [method_name, args, kwargs]
+
+      mutex.synchronize do
+        # Check TTL expiration
+        if timestamps[cache_key] && ttl
+          age = Time.now - timestamps[cache_key]
+          if age > ttl
+            cache.delete(cache_key)
+            timestamps.delete(cache_key)
+          end
+        end
+
+        # Return cached value if present
+        if cache.key?(cache_key)
+          return cache[cache_key]
+        end
+
+        # Evict oldest if at capacity
+        if cache.size >= max_size
+          oldest = timestamps.min_by { |_, v| v }&.first
+          cache.delete(oldest)
+          timestamps.delete(oldest)
+        end
+      end
+
+      # Compute value outside lock to avoid holding lock during computation
+      result = original.bind(self).call(*args, **kwargs, &blk)
+
+      mutex.synchronize do
+        cache[cache_key] = result
+        timestamps[cache_key] = Time.now
+      end
+
+      result
+    end
+  end
+end
+
+# Usage
+class UserService
+  extend Memoizable
+
+  def find_user(id)
+    sleep(1)  # Simulate expensive operation
+    { id: id, name: "User #{id}" }
+  end
+  memoize :find_user, ttl: 300, max_size: 500
+
+  def expensive_calculation(data, options: {})
+    # Expensive computation...
+    data.hash * (options[:factor] || 1)
+  end
+  memoize :expensive_calculation, key: ->(data, **opts) { [data.hash, opts] }
+end
+
+service = UserService.new
+service.find_user(1)  # Takes 1 second
+service.find_user(1)  # Instant — cached!
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی موضوع:`Mutex`از خواندن/نوشتن حافظه پنهان محافظت می کند. محاسبه خارج از قفل اتفاق می افتد.
+- TTL: ورودی های منقضی شده در هنگام دسترسی به راحتی پاک می شوند.
+- اخراج LRU: وقتی حافظه پنهان از`max_size`بیشتر شود، قدیمی ترین ورودی (بر اساس زمان) حذف می شود.
+- کلیدهای سفارشی: لامبدا`key`امکان کنترل دقیق روی هویت حافظه پنهان را فراهم می کند.
+- تولید: از جم`memoist`برای موارد ساده، یا از یادداشت پشتیبان Redis برای ذخیره سازی توزیع شده استفاده کنید.
 ---
 
 ## خلاصه

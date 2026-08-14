@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Assemblersprache
 Die Assemblersprache ist die niedrigste für den Menschen lesbare Programmiersprache. Es bietet eine direkte Darstellung der Maschinencodeanweisungen eines Computers mithilfe von mnemonischen Codes (wie `MOV`, `ADD`, `JMP`) anstelle von Rohbinärcodes. Jede Assemblersprache ist spezifisch für eine bestimmte Prozessorarchitektur (x86, ARM, MIPS, RISC-V) – Code, der für eine Architektur geschrieben wurde, läuft nicht auf einer anderen.
 Für die Erstellung von Anwendungen wird keine Assemblersprache verwendet. Es wird verwendet, wenn Sie absolute Kontrolle über die Hardware benötigen: Schreiben von Betriebssystemkernen, Gerätetreibern, Bootloadern, eingebetteter Firmware, leistungskritischen Codeabschnitten, Reverse Engineering und Verständnis dafür, wie Computer Anweisungen tatsächlich ausführen.
@@ -146,7 +147,7 @@ section .text
 ```
 
 ### Das Makrosystem (NASM)
-Mithilfe von Makros können Sie wiederverwendbare Befehlssequenzen mit Parametern definieren, wodurch die Montage weniger repetitiv wird.
+Mit Makros können Sie wiederverwendbare Befehlssequenzen mit Parametern definieren, wodurch die Montage weniger repetitiv wird.
 ```nasm
 ; Define a macro to print a string via Linux syscall
 %macro print_string 2
@@ -188,7 +189,7 @@ _start:
 ```
 
 ### Stapelrahmenlayout
-Das Verständnis des Stapelrahmens ist für das Schreiben von Funktionen und das Debuggen von entscheidender Bedeutung.
+Das Verständnis des Stapelrahmens ist für das Schreiben von Funktionen und das Debuggen unerlässlich.
 ```
 High Address
 +------------------+
@@ -428,7 +429,7 @@ ld standalone.o -o standalone
 |---------|-------------|
 | **Registriert** | Interner Speicher der CPU (EAX, EBX, ECX, EDX auf x86; R0-R15 auf ARM) |
 | **Speicheradressierung** | Zugriff auf RAM über Adressen (`MOV EAX, [0x1000]`) |
-| **Stapel** | LIFO-Speicherbereich für Funktionsaufrufe und lokale Variablen (`PUSH`,`POP`) |
+| **Stapel** | LIFO-Speicherbereich für Funktionsaufrufe und lokale Variablen (`PUSH`, `POP`) |
 | **Anleitung** | Grundoperationen: Arithmetik, Logik, Datenbewegung, Kontrollfluss |
 | **Unterbrechungen/Systemaufrufe** | Anfordern von Diensten vom Betriebssystem |
 | **Aufrufkonventionen** | Wie Funktionen Parameter und Rückgabewerte empfangen (variiert je nach Architektur) |
@@ -436,7 +437,7 @@ ld standalone.o -o standalone
 
 ## Testen und Debuggen
 ### GDB (GNU-Debugger)
-GDB ist der Standard-Debugger für die Assemblierung unter Linux. Sie können damit Anweisungen durchgehen, Register überprüfen und den Speicher untersuchen.
+GDB ist der Standard-Debugger für die Assemblierung unter Linux. Sie können damit Anweisungen durchlaufen, Register überprüfen und den Speicher untersuchen.
 ```bash
 # Build with debug symbols
 nasm -f elf64 -g -F dwarf program.asm -o program.o
@@ -485,7 +486,7 @@ gdb ./program
 | Segfault | Programm stürzt mit SIGSEGV | ab Zeigerwerte prüfen; Stapelausrichtung überprüfen |
 | Endlosschleife | Programm hängt | Haltepunkt in Schleife setzen; Bedingungsflags prüfen |
 | Falsches Ergebnis | Falsche Berechnung | Schritt für Schritt durch Arithmetik; Überprüfen Sie die Registerwerte nach jedem Vorgang |
-| Stapelbeschädigung | Absturz bei RET | Überprüfen Sie das PUSH/POP-Guthaben. Überprüfen Sie die RSP-Ausrichtung (muss 16-Byte-ausgerichtet sein) |
+| Stapelbeschädigung | Absturz bei RET | Überprüfen Sie das PUSH/POP-Guthaben; Überprüfen Sie die RSP-Ausrichtung (muss 16-Byte-ausgerichtet sein) |
 | Falscher Systemaufruf | Unerwartetes Kernel-Verhalten | Überprüfen Sie die Systemaufrufnummer in RAX. Argumentregister prüfen |
 ---
 
@@ -733,6 +734,85 @@ void process_data(void) {
 | Eingebettete Firmware (Bare Metal) | Keine höhere Sprache verfügbar | C, Rost |
 | Bildung | Computerarchitektur verstehen | — |
 | Allgemeine Anwendungsentwicklung | Für komplexe Programme unpraktisch | Jede höhere Sprache |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen RISC- und CISC-Assembly?
+**A:** CISC (x86) verfügt über komplexe Anweisungen variabler Länge. RISC (ARM) verfügt über einfache Anweisungen mit fester Länge:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### F2: Wie funktioniert der Stack beim Zusammenbau?
+**A:** Der Stapel wächst nach unten. `push`dekrementiert SP und speichert; `pop`lädt und erhöht SP:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### F3: Wie rufe ich Funktionen in Assembly auf?
+**A:** Befolgen Sie die Aufrufkonvention (System V AMD64 unter Linux, Windows x64 unter Windows):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### F4: Was sind die wichtigsten Montageanweisungen, die Sie kennen sollten?
+**A:** Datenbewegung, Arithmetik, Kontrollfluss und Stapeloperationen bilden den Kern.
+### F5: Wie wird Assembly in der Sicherheitsforschung eingesetzt?
+**A:** Reverse Engineering, Exploit-Entwicklung, Malware-Analyse und das Verständnis der Compiler-Ausgabe erfordern allesamt Assemblerkenntnisse.
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Implementierung einer Schleife in Assembly
+**Schritt 1: Verstehen Sie das Problem**
+Summieren Sie ganze Zahlen von 1 bis N.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie ein Zählerregister und einen Akkumulator.
+**Schritt 3: Implementieren**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Schritt 4: Optimieren**
+Verwenden Sie die Formel N*(N+1)/2 für O(1) anstelle von O(N).
 ---
 
 ## Zusammenfassung

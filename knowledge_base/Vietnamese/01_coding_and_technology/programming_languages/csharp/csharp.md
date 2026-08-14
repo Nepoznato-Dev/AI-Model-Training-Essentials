@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C#
 C# (phát âm là "C-sharp") là ngôn ngữ lập trình hiện đại, hướng đối tượng, an toàn kiểu được phát triển bởi Microsoft dưới sự lãnh đạo của Anders Hejlsberg và phát hành lần đầu tiên vào năm 2002. Nó chạy trên nền tảng .NET và được thiết kế để kết hợp sức mạnh của C++ với năng suất của Visual Basic. Ngày nay, C# là ngôn ngữ đa nền tảng, linh hoạt được sử dụng cho các ứng dụng web (ASP.NET), phần mềm máy tính để bàn (Windows), phát triển trò chơi (Unity), ứng dụng di động (MAUI), dịch vụ đám mây (Azure), v.v.
 C# đã dần dần tiếp thu những ý tưởng hay nhất từ ​​các ngôn ngữ khác — LINQ, async/await, record, samplematch — khiến nó trở thành một trong những ngôn ngữ giàu tính năng và thân thiện với nhà phát triển nhất hiện có.
@@ -48,7 +49,7 @@ C# đã dần dần tiếp thu những ý tưởng hay nhất từ ​​các ng
 - **Phát triển doanh nghiệp**: ASP.NET Core là một trong những khung web nhanh nhất hiện có (luôn đứng đầu các điểm chuẩn của TechEmpower).
 - **Đa nền tảng**: .NET 5+ chạy trên Windows, macOS và Linux. Không còn chỉ dành cho Windows nữa.
 - **Năng suất**: Hỗ trợ IDE tuyệt vời (Visual Studio, Rider), hệ thống kiểu mạnh mẽ và các tính năng cú pháp hiện đại.
-- **tiên phong async/await**: C# đã giới thiệu async/await vào năm 2012 — nhiều năm trước khi các ngôn ngữ khác áp dụng mô hình này.
+- **tiên phong về async/await**: C# đã giới thiệu async/await vào năm 2012 — nhiều năm trước khi các ngôn ngữ khác áp dụng mô hình này.
 - **LINQ**: Truy vấn tích hợp ngôn ngữ cho phép bạn viết các truy vấn giống SQL trực tiếp trong C# dựa trên bất kỳ nguồn dữ liệu nào.
 ## Sự đánh đổi
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
@@ -318,7 +319,7 @@ Console.WriteLine(v1.Magnitude);   // 5
 ---
 
 ## Đồng thời & Song song
-### không đồng bộ/đang chờ Nội bộ
+### async/await Nội bộ
 ```csharp
 // The state machine behind async/await
 // When you write async/await, the compiler generates a state machine
@@ -683,13 +684,13 @@ dotnet publish -c Release -r linux-x64
 ## Phiên bản ngôn ngữ C#
 | Phiên bản | Năm | Các tính năng chính |
 |----------|------|-------------|
-| C#7 | 2017 | So khớp mẫu, bộ dữ liệu, biến `out`, hàm cục bộ |
+| C#7 | 2017 | Khớp mẫu, bộ dữ liệu, biến `out`, hàm cục bộ |
 | C # 8 | 2019 | Các loại tham chiếu có thể rỗng, biểu thức `switch`, luồng không đồng bộ |
 | C#9 | 2020 | **Bản ghi**, tuyên bố cấp cao nhất, thuộc tính`init`|
-| C # 10 | 2021 | Ghi lại cấu trúc, toàn cục`using`, không gian tên trong phạm vi tệp |
+| C # 10 | 2021 | Cấu trúc bản ghi,`using`toàn cầu, không gian tên trong phạm vi tệp |
 | C # 11 | 2022 | Chuỗi ký tự thô, mẫu danh sách, thành viên `required`, toán học chung |
-| C# 12 | 2023 | Hàm tạo chính, biểu thức tập hợp, mảng nội tuyến |
-| C # 13 | 2024 |  Bộ sưu tập `params`, loại khóa mới, nhịp hạng nhất |
+| C # 12 | 2023 | Hàm tạo chính, biểu thức tập hợp, mảng nội tuyến |
+| C# 13 | 2024 |  Bộ sưu tập `params`, loại khóa mới, nhịp hạng nhất |
 ---
 
 ## Khi nào nên sử dụng C#
@@ -704,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | Ứng dụng di động (MAUI) | Đa nền tảng với C# | Flutter, React Native hoặc Swift/Kotlin bản địa |
 | AI/ML | Có thể với ML.NET | Python (được ưu tiên áp đảo) |
 | Công cụ/tập lệnh CLI | Có thể nhưng dài dòng | Đi, Rust, Python |
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Sự khác biệt giữa`class`và`record`trong C# là gì?
+**A:**`class`là loại tham chiếu có các thuộc tính có thể thay đổi theo mặc định — hai biến có thể tham chiếu cùng một đối tượng.`record`(C# 9+) là loại tham chiếu có sự bằng nhau dựa trên giá trị - hai bản ghi có cùng dữ liệu được coi là bằng nhau. Các bản ghi chỉ có thuộc tính init,`ToString`tích hợp sẵn và hỗ trợ các biểu thức`with`cho đột biến không phá hủy. Sử dụng bản ghi cho vật mang dữ liệu (DTO, đối tượng giá trị); sử dụng các lớp cho các thực thể giàu hành vi có nhận dạng.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Câu 2: Async/await và`Task`hoạt động nội bộ như thế nào?
+**A:**`async/await`là đường cú pháp trên máy trạng thái do trình biên dịch tạo ra. Khi bạn`await`a`Task`, phương thức được phân chia tại điểm chờ: mọi thứ trước đó được thực thi đồng bộ, sau đó phần còn lại được đăng ký làm phần tiếp theo. Chủ đề được giải phóng để làm công việc khác. `Task<T>`đại diện cho một giá trị trong tương lai. `ValueTask<T>`là một giải pháp thay thế cấu trúc cho các đường dẫn nóng giúp tránh phân bổ đống khi đã có sẵn kết quả.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### Câu 3: Phương pháp mở rộng là gì và khi nào tôi nên sử dụng chúng?
+**A:** Phương thức mở rộng thêm phương thức vào các loại hiện có mà không sửa đổi chúng. Chúng là các phương thức tĩnh trong một lớp tĩnh, với từ khóa`this`ở tham số đầu tiên. Chúng kích hoạt một API thông thạo, có thể kết nối được. Sử dụng chúng để thêm các phương thức tiện ích vào các loại bạn không sở hữu (như`string`hoặc`IEnumerable<T>`). Tránh lạm dụng chúng - chúng có thể khiến mã khó bị phát hiện.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Q4: Việc khớp mẫu hoạt động như thế nào trong C# hiện đại?
+**A:** C# đã dần dần bổ sung thêm tính năng khớp mẫu mạnh mẽ hơn. Biểu thức chuyển đổi (C# 8), mẫu kiểu, mẫu thuộc tính, mẫu quan hệ và mẫu danh sách (C# 11) cho phép logic có điều kiện ngắn gọn, biểu cảm. So khớp mẫu thay thế các chuỗi if/else dài và được trình biên dịch kiểm tra toàn diện.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### Câu hỏi 5: Nội dung phụ thuộc trong .NET là gì và tôi sử dụng nó như thế nào?
+**A:** .NET có hỗ trợ DI tích hợp thông qua`Microsoft.Extensions.DependencyInjection`. Bạn đăng ký các dịch vụ theo thời gian tồn tại của chúng (Singleton, Scoped, Transient) và vùng chứa sẽ chèn chúng thông qua các tham số của hàm tạo. Singleton: một phiên bản cho ứng dụng. Phạm vi: một cho mỗi yêu cầu HTTP. Tạm thời: phiên bản mới mỗi lần.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng kho lưu trữ chung bằng bộ nhớ đệm
+**Báo cáo vấn đề:** Triển khai mẫu kho lưu trữ chung bằng trình trang trí có thêm bộ nhớ đệm. Kho lưu trữ phải hỗ trợ các hoạt động CRUD và trình trang trí bộ nhớ đệm sẽ đọc và vô hiệu hóa hoạt động ghi vào bộ nhớ đệm.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) giao diện`IRepository<T>`chung, (2) triển khai cụ thể (ví dụ: trong bộ nhớ), (3) trình trang trí bộ nhớ đệm bao bọc bất kỳ kho lưu trữ nào, (4) vô hiệu hóa bộ đệm trong các hoạt động ghi. Mẫu trang trí giữ cho bộ đệm ẩn trực giao với logic truy cập dữ liệu.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Xác định`IRepository<T>`với`Get`,`GetAll`,`Add`,`Update`,`Delete`.
+- Tạo`CachingRepository<T>`bao bọc`IRepository<T>`và sử dụng`IMemoryCache`.
+- Khóa bộ đệm:`typeof(T).Name:{id}`.
+- Khi thực hiện thao tác ghi, vô hiệu hóa mục nhập bộ đệm.
+**Bước 3 — Triển khai giải pháp:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Tách biệt mối quan tâm: bộ nhớ đệm là vật trang trí, không trộn lẫn vào kho lưu trữ.
+- Đăng ký DI:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(sử dụng Scrutor).
+- Sản xuất: sử dụng`IDistributedCache`(Redis) cho các kịch bản nhiều máy chủ và thêm các mẫu dành riêng cho bộ đệm với tính năng bảo vệ `CacheStampede`.
+### Vấn đề 2: Triển khai Middleware Pipeline
+**Báo cáo vấn đề:** Xây dựng đường dẫn phần mềm trung gian tương tự như đường dẫn yêu cầu của ASP.NET Core. Mỗi phần mềm trung gian có thể xử lý yêu cầu, gọi phần mềm trung gian tiếp theo và xử lý phản hồi.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) loại`RequestDelegate`đại diện cho đường dẫn, (2) phần mềm trung gian bao bọc đại biểu tiếp theo, (3) API trình xây dựng để soạn phần mềm trung gian. Đây là mẫu Chuỗi trách nhiệm được triển khai với các đại biểu.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+-`RequestDelegate`là `Func<Context, RequestDelegate, Task>`.
+- Mỗi phần mềm trung gian nhận được ngữ cảnh và chức năng `next`.
+-`Use`bổ sung phần mềm trung gian; `Build`kết hợp chúng thành một đại biểu duy nhất.
+**Bước 3 — Triển khai giải pháp:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Vấn đề thứ tự phần mềm trung gian: được thêm đầu tiên = ngoài cùng (thực thi đầu tiên theo yêu cầu, cuối cùng khi phản hồi).
+- Phần mềm trung gian đầu cuối (không có lệnh gọi `next`) làm đoản mạch đường ống.
+- Sản xuất: Đường dẫn của ASP.NET Core chính xác là mẫu này, được tối ưu hóa với các cây biểu thức được biên dịch để phân bổ bằng 0.
 ---
 
 ## Bản tóm tắt

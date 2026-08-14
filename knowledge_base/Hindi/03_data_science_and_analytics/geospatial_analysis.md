@@ -1,38 +1,42 @@
 ---
-# मेटाडेटा
-शीर्षक: "भू-स्थानिक विश्लेषण"
-विवरण: "समन्वय प्रणाली, स्थानिक संचालन, जियोपांडा, रेखापुंज विश्लेषण"
-श्रेणी: "डेटा विज्ञान और विश्लेषण"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-इनके द्वारा समीक्षा: "डेटा साइंस और एनालिटिक्स नॉलेज बेस टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [भू-स्थानिक, विश्लेषण, डेटा-विज्ञान-और-विश्लेषण]
-कठिनाई_स्तर: "मध्यवर्ती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "6 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Geospatial Analysis"
+description: "Coordinate systems, spatial operations, GeoPandas, raster analysis"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [geospatial, analysis, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # भू-स्थानिक विश्लेषण
 भू-स्थानिक विश्लेषण उस डेटा की जांच करने की प्रक्रिया है जिसमें एक भौगोलिक घटक होता है - निर्देशांक, पते, सीमाएं, या पृथ्वी पर किसी स्थान से जुड़ा कोई डेटा। यह "हमारे ग्राहक कहाँ हैं?", "सर्वोत्तम मार्ग क्या है?", और "समय के साथ भूमि उपयोग कैसे बदल रहा है?" जैसे सवालों का जवाब देता है। प्रत्येक डेटासेट का एक स्थानिक आयाम होता है, और इसे समझने से उन अंतर्दृष्टियों का पता चलता है जो शुद्ध सांख्यिकीय विश्लेषण से छूट जाती हैं।

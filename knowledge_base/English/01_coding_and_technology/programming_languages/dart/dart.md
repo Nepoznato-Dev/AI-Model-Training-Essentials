@@ -1027,6 +1027,193 @@ flutter build apk --release --dart-define=ENV=staging
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How does Dart's null safety work?
+
+**A:** Dart 2.12+ has sound null safety. Variables are non-nullable by default; use `?` to allow null:
+
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2: What is the difference between `Future` and `Stream`?
+
+**A:** `Future` represents a single async result; `Stream` represents a sequence of async events:
+
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3: How do I manage state in a Flutter app?
+
+**A:** Multiple approaches depending on complexity:
+
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4: How do extension methods work in Dart?
+
+**A:** Extensions add functionality to existing types without inheritance:
+
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5: How do I write performant Dart/Flutter code?
+
+**A:** Key practices:
+- Use `const` constructors wherever possible
+- Avoid rebuilding widgets — use `const`, `final`, and `shouldRebuild`
+- Use `ListView.builder` instead of `ListView` for large lists
+- Profile with Flutter DevTools
+- Use `compute()` for expensive operations on isolate threads
+- Minimize `setState` calls — be specific about what needs rebuilding
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Building a Type-Safe API Client
+
+**Step 1: Understand the Problem**
+Create an API client that fetches data and returns properly typed objects.
+
+**Step 2: Identify the Approach**
+Use Dart classes with `fromJson`/`toJson`, async/await, and sealed classes for results.
+
+**Step 3: Implement**
+```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Step 4: Verify**
+Test with mock HTTP client. Verify error handling for network failures and bad responses.
+
+### Problem 2: Implementing a Reactive Search with Debounce
+
+**Step 1: Understand the Problem**
+Build a search field that queries an API but debounces input to avoid excessive requests.
+
+**Step 2: Identify the Approach**
+Use Dart Streams with `debounceTime` and `distinct`.
+
+**Step 3: Implement**
+```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Step 4: Test**
+Verify that rapid typing only triggers one API call after the debounce period.
+
+---
+
 ## Summary
 
 Dart's purpose in life is Flutter. As a standalone language, it is competent but unremarkable. As the engine behind Flutter, it enables developers to build beautiful, high-performance applications for every major platform from a single codebase. If you are building cross-platform mobile or desktop applications, Dart + Flutter is one of the best options available. For everything else, other languages are more appropriate.

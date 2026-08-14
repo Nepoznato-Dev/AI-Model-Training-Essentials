@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "کاتلین"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی کاتلین شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [kotlin، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "48 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Kotlin"
+description: "Comprehensive reference for the Kotlin programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [kotlin, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "48 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # کاتلین
 Kotlin یک زبان برنامه نویسی تایپ شده و کامپایل شده است که توسط JetBrains توسعه یافته و اولین بار در سال 2011 منتشر شد (1.0 در سال 2016). این برنامه بر روی ماشین مجازی جاوا (JVM) اجرا می شود و به طور کامل با جاوا سازگار است - به این معنی که شما می توانید از هر کتابخانه جاوا از Kotlin استفاده کنید و کد Kotlin را از جاوا بدون هیچ پوششی فراخوانی کنید. در سال 2017، گوگل کاتلین را به عنوان زبان ترجیحی برای توسعه اندروید معرفی کرد و از آن زمان به زبان غالب اندروید تبدیل شده است.
 Kotlin برای رفع نقاط درد جاوا طراحی شده است: پرحرفی، استثناهای اشاره گر تهی، و ویژگی های مدرن از دست رفته. نتیجه زبانی است که شبیه یک جاوا مدرن شده است - مختصر، ایمن و رسا - در حالی که سازگاری کامل با اکوسیستم عظیم جاوا را حفظ می کند.
@@ -1162,13 +1167,416 @@ kotlin {
 | سناریو | چرا کاتلین | جایگزین بهتر |
 |----------|----------|------------------|
 | توسعه اندروید | زبان برگزیده گوگل | جاوا (برای پایگاه های کد قدیمی) |
-| پشتیبان JVM | جایگزین جاوا مدرن | جاوا، برو |
+| پشتیبان های JVM | جایگزین جاوا مدرن | جاوا، برو |
 | کراس پلتفرم (منطق مشترک) | چند پلتفرم کاتلین | فلاتر (برای اشتراک گذاری رابط کاربری) |
-| برنامه های دسکتاپ | با Compose Multiplatform | سی شارپ، سوئیفت برای بومی |
+| برنامه های دسکتاپ | ممکن است با Compose Multiplatform | سی شارپ، سوئیفت برای بومی |
 | برنامه های عمومی JVM | پرمخاطب تر از جاوا | جاوا برای تیم های بزرگتر |
 | برنامه نویسی سیستم های غیر JVM | هدف اصلی نیست | زنگ زدگی، برو، سی |
 | وب سایت | Kotlin/JS وجود دارد اما محدود است | TypeScript, JavaScript |
 | علم داده / ML | نه اکوسیستم | پایتون، R |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: ویژگی های ایمنی پوچ کاتلین واقعا چگونه کار می کنند؟
+**A:** کاتلین در زمان کامپایل بین انواع پوچ (`String?`) و غیر قابل تهی (`String`) تمایز قائل می شود. کامپایلر شما را از فراخوانی متدها بر روی انواع پوچ بدون بررسی پوچ جلوگیری می کند. تماس‌های ایمن (`?.`)، اپراتور الویس (`?:`) و ادعای غیر تهی (`!!`) استراتژی‌های مختلفی را ارائه می‌کنند. کست های هوشمند به طور خودکار انواع را پس از بررسی های پوچ محدود می کند.
+```kotlin
+var name: String? = null
+
+// Safe call — returns null if name is null
+val length: Int? = name?.length
+
+// Elvis operator — provide default
+val display: String = name ?: "Anonymous"
+
+// Smart cast — compiler narrows type after check
+fun process(user: String?) {
+    if (user != null) {
+        println(user.length)  // Smart cast to String (non-null)
+    }
+}
+
+// let with safe call
+name?.let {
+    println("Name is $it")  // Only runs if name is not null
+}
+
+// Non-null assertion — crashes if null (avoid in production)
+val forced: String = name!!  // Throws NullPointerException if null
+```
+
+### Q2: کوروتین ها چیست و چه تفاوتی با رشته ها دارند؟
+**A:** کوروتین ها کارهای سبک وزن و مشارکتی هستند که روی رشته ها اجرا می شوند. آنها می توانند اجرا را به حالت تعلیق درآورند (بدون مسدود کردن رشته) و بعداً از سر بگیرند. میلیون ها کوروتین می توانند روی چند رشته اجرا شوند.  توابع`suspend`را فقط می توان از کوروتین ها یا سایر توابع تعلیق فراخوانی کرد. دامنه‌های کوروتین چرخه عمر را کنترل می‌کنند - وقتی یک محدوده لغو می‌شود، همه موارد اولیه آن لغو می‌شوند.
+```kotlin
+import kotlinx.coroutines.*
+
+// Basic coroutine
+CoroutineScope(Dispatchers.Main).launch {
+    val user = withContext(Dispatchers.IO) {
+        fetchUserFromNetwork()  // Suspends, doesn't block
+    }
+    textView.text = user.name   // Back on Main thread
+}
+
+// Concurrent execution
+suspend fun loadDashboard(): Dashboard {
+    coroutineScope {
+        val userDeferred = async { fetchUser() }
+        val postsDeferred = async { fetchPosts() }
+        val user = userDeferred.await()
+        val posts = postsDeferred.await()
+        Dashboard(user, posts)
+    }
+}
+
+// Flow — cold async stream
+fun observePrices(): Flow<Double> = flow {
+    while (true) {
+        emit(fetchCurrentPrice())
+        delay(1000)
+    }
+}
+
+// Collect flow
+lifecycleScope.launch {
+    observePrices()
+        .filter { it > 100.0 }
+        .collect { price -> updateUI(price) }
+}
+```
+
+### Q3: کلاس های داده، کلاس های مهر و موم شده و کلاس های ارزش چیست؟
+**A:** کلاس های داده عملکردهای `equals`، `hashCode`، `toString`، `copy`، و`componentN`را به طور خودکار تولید می کنند - ایده آل برای دارندگان داده. کلاس های مهر و موم شده وراثت را محدود می کنند - همه زیر کلاس ها باید در یک فایل باشند - عبارات جامع`when`را فعال می کند. کلاس های ارزش یک مقدار را با سربار صفر در زمان اجرا (کلاس درون خطی) می پوشانند.
+```kotlin
+// Data class — auto-generates equals/hashCode/toString/copy
+data class User(val name: String, val email: String, val age: Int)
+
+val alice = User("Alice", "alice@example.com", 30)
+val bob = alice.copy(name = "Bob")
+val (name, email, age) = alice  // Destructuring
+
+// Sealed class — exhaustive when
+sealed class Result<out T> {
+    data class Success<T>(val data: T) : Result<T>()
+    data class Error(val exception: Throwable) : Result<Nothing>()
+    data object Loading : Result<Nothing>()
+}
+
+fun handle(result: Result<User>) = when (result) {
+    is Result.Success -> showUser(result.data)
+    is Result.Error -> showError(result.exception)
+    is Result.Loading -> showSpinner()
+    // No 'else' needed — compiler knows all cases are covered
+}
+
+// Value class — zero-overhead wrapper
+@JvmInline
+value class UserId(val value: String)
+fun getUser(id: UserId) { /* ... */ }
+// At runtime, UserId is just a String — no object allocation
+```
+
+### Q4: توابع افزونه چگونه کار می کنند و محدودیت های آنها چیست؟
+**A:** توابع برنامه افزودنی روشها را به انواع موجود بدون وراثت یا اصلاح اضافه می کنند. آنها به صورت ایستا حل می شوند (بر اساس نوع اعلام شده، نه نوع زمان اجرا). آنها نمی توانند به اعضای خصوصی دسترسی داشته باشند. ویژگی های افزونه به طور مشابه کار می کنند. آنها به طور گسترده در کتابخانه استاندارد Kotlin و توسعه اندروید استفاده می شوند.
+```kotlin
+// Extension function
+fun String.isEmail(): Boolean = contains("@") && contains(".")
+fun Int.toOrdinal(): String = "${this}${when (this % 10) {
+    1 -> "st"; 2 -> "nd"; 3 -> "rd"; else -> "th"
+}}"
+
+// Extension with receiver
+fun <T> List<T>.secondOrNull(): T? = if (size >= 2) this[1] else null
+
+// Extension property
+val String.wordCount: Int get() = split("\\s+".toRegex()).size
+
+// Scoped extensions
+class Database {
+    fun query(sql: String): List<Row> = TODO()
+}
+
+fun Database.users() = query("SELECT * FROM users")
+
+// Usage
+"test@example.com".isEmail()  // true
+42.toOrdinal()                // "42nd"
+"hello world foo".wordCount   // 3
+```
+
+### Q5: Kotlin Multiplatform چیست و چه زمانی باید از آن استفاده کنم؟
+**A:** Kotlin Multiplatform (KMP) به شما امکان می دهد کد را بین پلتفرم ها (اندروید، iOS، وب، دسکتاپ، سرور) به اشتراک بگذارید و در عین حال رابط کاربری مخصوص پلتفرم را حفظ کنید. منطق کسب و کار، شبکه و لایه های داده را می توان به اشتراک گذاشت. UI بومی می ماند. زمانی از آن استفاده کنید که تیمی دارید که کاتلین را می‌شناسد و می‌خواهد اشتراک‌گذاری کد را بدون استفاده از کراس پلتفرم کامل (مانند Flutter) به حداکثر برساند.
+```kotlin
+// commonMain — shared code
+expect class Platform() {
+    val name: String
+}
+
+// androidMain
+actual class Platform {
+    actual val name = "Android ${Build.VERSION.SDK_INT}"
+}
+
+// iosMain
+actual class Platform {
+    actual val name = UIDevice.currentDevice.systemName()
+}
+
+// Shared networking
+interface ApiClient {
+    suspend fun getUsers(): List<User>
+}
+
+class ApiClientImpl(private val httpClient: HttpClient) : ApiClient {
+    override suspend fun getUsers(): List<User> {
+        return httpClient.get("/api/users").body()
+    }
+}
+```
+
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: ساختن DSL نوع ایمن بسازید
+**بیانیه مشکل:** یک Kotlin DSL برای ساخت اسناد HTML با ایمنی زمان کامپایل ایجاد کنید. DSL باید ساختار HTML معتبر را اعمال کند (به عنوان مثال،`<head>`فقط در داخل `<html>`،`<li>`فقط در داخل`<ul>`یا `<ol>`).
+** مرحله 1 - مشکل را درک کنید:**
+ما نیاز داریم: (1) توابع سازنده با`@DslMarker`برای جلوگیری از نشت دامنه، (2) نحو DSL مبتنی بر گیرنده، (3) اجرای تودرتو در زمان کامپایل. سازنده های ایمن کاتلین و حاشیه نویسی`@DslMarker`برای این کار طراحی شده اند.
+** مرحله 2 - شناسایی رویکرد: **
+- از`@DslMarker`برای ایجاد حاشیه نویسی کنترل دامنه استفاده کنید.
+- هر عنصر HTML یک کلاس با متدهای سازنده برای فرزندان معتبر خود است.
+-`@HtmlTagMarker`از دسترسی به روش های دامنه والد در محدوده فرزند جلوگیری می کند.
+- از عملگر`invoke`برای نحو تمیز استفاده کنید.
+**مرحله 3 - راه حل را اجرا کنید:**
+```kotlin
+@DslMarker
+annotation class HtmlTagMarker
+
+@HtmlTagMarker
+class HTML {
+    private val children = mutableListOf<String>()
+
+    fun head(init: HEAD.() -> Unit) {
+        val head = HEAD().apply(init)
+        children.add(head.render())
+    }
+
+    fun body(init: BODY.() -> Unit) {
+        val body = BODY().apply(init)
+        children.add(body.render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<html>")
+        children.forEach { appendLine("  $it") }
+        appendLine("</html>")
+    }
+}
+
+@HtmlTagMarker
+class HEAD {
+    private val children = mutableListOf<String>()
+
+    fun title(text: String) { children.add("<title>$text</title>") }
+    fun meta(name: String, content: String) {
+        children.add("<meta name=\"$name\" content=\"$content\">")
+    }
+
+    fun render(): String = buildString {
+        appendLine("<head>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</head>")
+    }
+}
+
+@HtmlTagMarker
+class BODY {
+    private val children = mutableListOf<String>()
+
+    fun h1(text: String) { children.add("<h1>$text</h1>") }
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun div(init: DIV.() -> Unit) {
+        children.add(DIV().apply(init).render())
+    }
+    fun ul(init: UL.() -> Unit) {
+        children.add(UL().apply(init).render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<body>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</body>")
+    }
+}
+
+@HtmlTagMarker
+class DIV {
+    private val children = mutableListOf<String>()
+    var cssClass: String = ""
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun render(): String {
+        val cls = if (cssClass.isNotEmpty()) " class=\"$cssClass\"" else ""
+        return "<div$cls>${children.joinToString("")}</div>"
+    }
+}
+
+@HtmlTagMarker
+class UL {
+    private val items = mutableListOf<String>()
+    fun li(text: String) { items.add("<li>$text</li>") }
+    fun render(): String = "<ul>${items.joinToString("")}</ul>"
+}
+
+fun html(init: HTML.() -> Unit): String = HTML().apply(init).render()
+
+// Usage — compile-time safe
+val page = html {
+    head {
+        title("My Page")
+        meta("viewport", "width=device-width")
+    }
+    body {
+        h1("Welcome")
+        p("This is a type-safe HTML builder.")
+        div {
+            cssClass = "container"
+            p("Inside a div")
+        }
+        ul {
+            li("Item 1")
+            li("Item 2")
+            li("Item 3")
+        }
+    }
+}
+// title() is NOT accessible inside body {} — prevented by @DslMarker
+// li() is NOT accessible inside body {} — only inside ul {}
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی نوع:`@DslMarker`از نشت محدوده جلوگیری می کند -`title()`در داخل`body {}`قابل دسترسی نیست.
+- کامپایلر تودرتوی معتبر را در زمان کامپایل اجرا می‌کند - بدون نیاز به بررسی زمان اجرا.
+- توسعه پذیری: اضافه کردن عناصر جدید با ایجاد کلاس ها با متدهای فرزند مناسب.
+- تولید: از`kotlinx.html`برای یک HTML DSL جامع و به خوبی آزمایش شده استفاده کنید.
+### مشکل 2: یک ماشین حالت را با کوروتین ها پیاده سازی کنید
+**بیانیه مشکل:** یک ماشین حالت مبتنی بر کوروتین برای یک شخصیت بازی بسازید که رویدادهای ورودی، انتقال بین حالت ها را پردازش می کند و از تماس های انیمیشن پشتیبانی می کند.
+** مرحله 1 - مشکل را درک کنید:**
+ما به این موارد نیاز داریم: (1) حالت‌هایی با اقدامات ورود/خروج، (2) انتقال‌های رویداد محور، (3) حلقه پردازش مبتنی بر روال، (4) تماس‌های متحرک در انتقال حالت. ماشین حالت به‌عنوان یک رویداد طولانی‌مدت مصرف کننده از یک کانال اجرا می‌شود.
+** مرحله 2 - شناسایی رویکرد: **
+- از کلاس مهر و موم شده برای حالت ها و رویدادها استفاده کنید.
+- از`Channel`برای عبور رویداد استفاده کنید.
+- حلقه ماشین حالت رویدادها را با`for (event in channel)`مصرف می کند.
+- انتقال‌ها تماس‌های خروج/ورود را آغاز می‌کنند.
+**مرحله 3 - راه حل را اجرا کنید:**
+```kotlin
+sealed class GameState {
+    data object Idle : GameState()
+    data object Walking : GameState()
+    data object Running : GameState()
+    data object Attacking : GameState()
+    data class Dead(val cause: String) : GameState()
+}
+
+sealed class GameEvent {
+    data object Move : GameEvent()
+    data object Run : GameEvent()
+    data object Attack : GameEvent()
+    data object Stop : GameEvent()
+    data class TakeDamage(val amount: Int) : GameEvent()
+}
+
+class CharacterStateMachine(
+    private val scope: CoroutineScope,
+    private val onStateChange: suspend (GameState) -> Unit
+) {
+    private var currentState: GameState = GameState.Idle
+    private val eventChannel = Channel<GameEvent>(Channel.UNLIMITED)
+    var health: Int = 100; private set
+
+    init {
+        scope.launch {
+            onStateChange(currentState)
+            for (event in eventChannel) {
+                processEvent(event)
+            }
+        }
+    }
+
+    suspend fun send(event: GameEvent) {
+        eventChannel.send(event)
+    }
+
+    private suspend fun processEvent(event: GameEvent) {
+        val newState = when (currentState) {
+            is GameState.Dead -> return  // No transitions from dead
+
+            GameState.Idle -> when (event) {
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Walking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Running -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Attacking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+        }
+
+        if (newState != currentState) {
+            currentState = newState
+            onStateChange(newState)
+        }
+    }
+
+    private suspend fun handleDamage(event: GameEvent.TakeDamage): GameState {
+        health -= event.amount
+        return if (health <= 0) GameState.Dead("Defeated") else currentState
+    }
+}
+
+// Usage
+val machine = CharacterStateMachine(
+    scope = CoroutineScope(Dispatchers.Default)
+) { state ->
+    println("State changed to: $state")
+    when (state) {
+        GameState.Idle -> playAnimation("idle")
+        GameState.Walking -> playAnimation("walk")
+        GameState.Running -> playAnimation("run")
+        GameState.Attacking -> playAnimation("attack")
+        is GameState.Dead -> playAnimation("death")
+    }
+}
+
+machine.send(GameEvent.Move)      // Walking
+machine.send(GameEvent.Run)       // Running
+machine.send(GameEvent.Attack)    // Attacking
+machine.send(GameEvent.TakeDamage(120))  // Dead
+```
+
+** مرحله 4 - تأیید و بهینه سازی: **
+- ایمنی نوع: کلاس های مهر و موم شده اطمینان حاصل می کنند که همه حالت ها و رویدادها رسیدگی می شوند. کامپایلر انتقال های گم شده را می گیرد.
+- مبتنی بر Coroutine: رویدادها به صورت متوالی و بدون مسدود کردن پردازش می شوند. کانال فشار برگشتی را فراهم می کند.
+- چرخه حیات: لغو محدوده دستگاه حالت را به طور تمیز متوقف می کند.
+- تولید: برای ماشین‌های حالت پیچیده، از`tinder-statemachine`استفاده کنید یا حالت‌ها را با یک کتابخانه ماشین دولتی رسمی مدل‌سازی کنید.
 ---
 
 ## خلاصه

@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Metodologie di gestione e progetto
-Gestire persone e progetti è una delle cose più difficili in qualsiasi organizzazione. Le competenze tecniche ti permettono di entrare nella stanza, ma la capacità di guidare team, prendere decisioni, comunicare chiaramente e fornire risultati è ciò che determina se qualcosa viene effettivamente fatto. Questo file copre le strutture, le metodologie e le competenze pratiche su cui fanno affidamento manager e leader di progetto efficaci.
+La gestione di persone e progetti è una delle responsabilità più impegnative di qualsiasi organizzazione. Le competenze tecniche forniscono l’accesso, ma la capacità di guidare team, prendere decisioni, comunicare in modo efficace e fornire risultati determina se gli obiettivi vengono raggiunti. Questo file copre le strutture, le metodologie e le competenze pratiche applicate dai manager e dai leader di progetto efficaci.
 ---
 
 ## Stili di leadership
@@ -74,7 +75,7 @@ La ricerca (in particolare quella del Project Oxygen di Google) ha identificato 
 | **Test** | Verificare che funzioni come specificato |
 | **Distribuzione** | Rilascio alla produzione/utenti |
 | **Manutenzione** | Risolvi i problemi; supporto continuo |
-**Ideale per**: settori edili, manifatturieri e regolamentati in cui i requisiti sono fissi e le modifiche sono costose.
+**Ideale per**: edilizia, produzione, settori regolamentati in cui i requisiti sono fissi e le modifiche sono costose.
 ### Agile
 Agile è una mentalità, non una metodologia. Proviene da[Agile Manifesto](https://agilemanifesto.org/)(2001):
 > *Individui e interazioni* su processi e strumenti
@@ -104,7 +105,7 @@ Scrum è il framework Agile più utilizzato.
 | **Team di sviluppo** | Interfunzionale, auto-organizzante (ideale da 5 a 9 persone) |
 | **Portafoglio prodotti** | Elenco prioritario di tutto ciò che potrebbe essere necessario |
 | **Sprint arretrato** | Elementi selezionati per lo sprint corrente + il piano per consegnarli |
-| **Standup giornaliero** | Sincronizzazione di 15 minuti: cosa ho fatto? Cosa farò? Qualche bloccante? |
+| **Standup quotidiano** | Sincronizzazione di 15 minuti: cosa ho fatto? Cosa farò? Qualche bloccante? |
 | **Revisione dello Sprint** | Software funzionante dimostrativo per le parti interessate; raccogliere feedback |
 | **Retrospettiva Sprint** | Il team riflette su come migliorare il processo |
 ### Kanban
@@ -227,7 +228,7 @@ Gli OKR sono un quadro di definizione degli obiettivi utilizzato da Google, Inte
 | **Onboarding** | Sistema di amici strutturato; processi documentati; Obiettivi chiari per la prima settimana |
 ### Riunioni efficaci
 | Tipo di riunione | Durata | Frequenza | Scopo |
-|-------------|----------|-----------|---------|
+|-------------|----------|---|---------|
 | **Standup quotidiano** | 15 minuti | Giornaliero | Sincronizzazione; bloccanti di superficie |
 | **Pianificazione dello sprint** | 1–2 ore | Ogni sprint | Allinearsi su cosa costruire dopo |
 | **Revisione dello sprint** | 1 ora | Ogni sprint | Dimostrazione; raccogliere feedback |
@@ -267,4 +268,4 @@ La gestione del prodotto è la disciplina che consiste nel decidere cosa costrui
 ---
 
 ## Riepilogo
-La gestione non riguarda titoli o organigrammi: si tratta di fare le cose giuste attraverso altre persone. I migliori manager combinano un pensiero chiaro (quadri, metodologie, metriche) con l’intelligenza emotiva (ascolto, empatia, fiducia). Nessuna metodologia sostituisce il buon giudizio, ma il buon giudizio è migliorato da buone strutture. Usateli come strumenti, non come religioni.
+La gestione è la pratica di raggiungere obiettivi attraverso altre persone. I manager efficaci combinano un pensiero chiaro (quadri, metodologie, metriche) con capacità interpersonali (ascolto, empatia, fiducia). Nessuna metodologia sostituisce il buon giudizio, ma il buon giudizio è rafforzato da quadri solidi. Questi dovrebbero essere applicati come guide pratiche piuttosto che come rigide dottrine.

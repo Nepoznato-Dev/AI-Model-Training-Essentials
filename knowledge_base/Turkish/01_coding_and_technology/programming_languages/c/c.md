@@ -47,9 +47,9 @@ C, işletim sistemlerinin (Linux, Windows çekirdeği, macOS), gömülü sisteml
 ## C Neden Önemlidir
 - **Donanımlara yakınlık**: C, makine koduyla yakından eşleşir. Çöp toplayıcı yok, çalışma zamanı ek yükü yok, gizli tahsis yok.
 - **Ubiquity**: Mikrodenetleyicilerden süper bilgisayarlara kadar C her yerde çalışır.
-- **Bilgisayarın temeli**: Linux, Windows, macOS çekirdekleri, Python yorumlayıcısı, SQLite, Git -- tümü C ile yazılmıştır.
+- **Bilgisayarın temeli**: Linux, Windows, macOS çekirdekleri, Python yorumlayıcısı, SQLite, Git -- tümü C dilinde yazılmıştır.
 - **Performans**: Bellek düzeni üzerinde tam kontrol ile optimuma yakın yürütme hızı.
-- **Etki**: C'nin sözdizimi ve kavramları (işaretçiler, diziler, yapılar, işlevler) C++, Java, C#, JavaScript, Go, Rust ve onu izleyen dillerin çoğunu şekillendirdi.
+- **Etki**: C'nin sözdizimi ve kavramları (işaretçiler, diziler, yapılar, işlevler), C++, Java, C#, JavaScript, Go, Rust ve takip eden dillerin çoğunu şekillendirdi.
 ## Takaslar
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
@@ -630,7 +630,7 @@ lib.c_add.restype = ctypes.c_int
 print(lib.c_add(3, 5))  # 8
 ```
 
-### C'yi Diğer Dillerden Aramak
+### Diğer Dillerden C'yi Aramak
 | Dil | Mekanizma | Örnek |
 |----------|-----------|-----------|
 | Python | türler, cffi | `ctypes.CDLL("./lib.so")`|
@@ -851,8 +851,516 @@ make clean    # Removes build artifacts
 | C99 | 1999 | // yorumlar, bool türü, değişken uzunluklu diziler, satır içi, stdint.h |
 | C11 | 2011 | Atomik işlemler, iş parçacıkları, anonim yapılar, _Generic |
 | C17 | 2018 | Hata düzeltmeleri ve açıklamalar (yeni özellik yok) |
-| C23 | 2024 | nullptr, typeof, constexpr, geliştirilmiş ön işlemci |
+| C23 | 2024 | nullptr, typeof, constexpr, geliştirilmiş önişlemci |
 Çoğu üretim kodu C11 veya C17'yi hedefler. C23 modern kolaylıklar getiriyor ancak benimsenmesi zaman alıyor.
+---
+
+## Sentetik Soru-Cevap
+### S1: C'deki işaretçiler ve diziler arasındaki fark nedir?
+**C:** Diziler ve işaretçiler birbiriyle ilişkilidir ancak farklıdır. Dizi, derleme zamanında bilinen sabit boyutlu, bitişik bir bellek bloğudur. İşaretçi, bellek adresini tutan bir değişkendir. Diziler, işlevlere aktarıldığında işaretçilere dönüşür, ancak`sizeof(array)`toplam boyutu verirken`sizeof(pointer)`yalnızca işaretçi boyutunu (4 veya 8 bayt) verir. Dizi adları değiştirilebilir değerler değildir;`arr++`yapamazsınız.
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;       // Array decays to pointer to first element
+
+printf("%zu\n", sizeof(arr));   // 20 (5 * sizeof(int))
+printf("%zu\n", sizeof(ptr));   // 8 (on 64-bit system)
+
+// arr++;        // Error: array is not a modifiable lvalue
+ptr++;           // OK: pointer arithmetic
+
+// They behave the same for indexing
+printf("%d\n", arr[2]);   // 3
+printf("%d\n", ptr[2]);   // 3
+printf("%d\n", *(arr + 2)); // 3 — pointer arithmetic
+```
+
+### S2: Belleği nasıl düzgün şekilde yönetebilirim ve sızıntıları nasıl önleyebilirim?
+**A:** Her`malloc`/ `calloc`'nin karşılık gelen bir `free`'si olmalıdır. Yaygın hatalar: serbest bırakmayı unutmak (sızıntı), iki kez serbest bırakmak (tanımsız davranış), serbest bıraktıktan sonra belleği kullanmak (boşaldıktan sonra kullan) ve`malloc`dönüş değerini kontrol etmemek (arıza durumunda NULL). En iyi uygulama: aynı modülde tahsis edin ve serbest bırakın, hata işleme için "temizlemeye git" modelini kullanın ve serbest bırakılan işaretçileri her zaman NULL olarak ayarlayın.
+```c
+// Proper allocation pattern with cleanup
+char *load_file(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) return NULL;
+
+    fseek(f, 0, SEEK_END);
+    long size = ftell(f);
+    rewind(f);
+
+    char *buf = malloc(size + 1);
+    if (!buf) {
+        fclose(f);
+        return NULL;
+    }
+
+    if (fread(buf, 1, size, f) != (size_t)size) {
+        free(buf);
+        buf = NULL;   // Prevent dangling pointer
+        fclose(f);
+        return NULL;
+    }
+    buf[size] = '\0';
+
+    fclose(f);
+    return buf;
+}
+
+// Usage
+char *data = load_file("config.txt");
+if (data) {
+    process(data);
+    free(data);
+    data = NULL;  // Defensive: catch use-after-free
+}
+```
+
+### S3: C'de hata işlemeye yönelik en iyi uygulamalar nelerdir?
+**A:** C'nin istisnası yoktur. Hata işleme, dönüş değerlerini (hata kodları, NULL işaretçileri, negatif değerler) kullanır. Standart model: işlevler, arıza durumunda bir durum kodu veya NULL döndürür ve sistem çağrıları için`errno`değerini ayarlar. Hatalarda kaynak temizliği için "temizlemeye git" modelini kullanın. Her zaman `malloc`,`fopen`ve başarısız olabilecek diğer işlevlerin dönüş değerlerini kontrol edin.
+```c
+#include <errno.h>
+#include <string.h>
+
+// Error code pattern
+typedef enum {
+    OK = 0,
+    ERR_NULL_PTR = -1,
+    ERR_NOT_FOUND = -2,
+    ERR_IO = -3,
+} Status;
+
+Status read_config(const char *path, Config *out) {
+    if (!path || !out) return ERR_NULL_PTR;
+
+    FILE *f = fopen(path, "r");
+    if (!f) {
+        fprintf(stderr, "Cannot open %s: %s\n", path, strerror(errno));
+        return ERR_IO;
+    }
+
+    // ... parse config ...
+
+    fclose(f);
+    return OK;
+}
+
+// Usage
+Config cfg;
+Status s = read_config("app.conf", &cfg);
+if (s != OK) {
+    fprintf(stderr, "Config error: %d\n", s);
+    exit(EXIT_FAILURE);
+}
+```
+
+### S4: Yapılar, birleşimler ve bit alanları bellek düzeninde nasıl farklılık gösterir?
+**A:** Yapılar, hizalama için olası dolgularla birlikte üyeleri sıralı olarak yerleştirir. Birleşimler tüm üyeleri aynı bellek konumuna yerleştirir; boyut en büyük üyeye eşittir. Bit alanları birden fazla değeri tek bir tamsayıya paketler. Yapılar, heterojen veriler içindir, yalnızca bir alan etkin olduğunda tür değiştirme veya yerden tasarruf için birleşimler ve kompakt bayrak depolama için bit alanlarıdır.
+```c
+// Struct — sequential layout with padding
+struct Point {
+    double x;  // offset 0, 8 bytes
+    double y;  // offset 8, 8 bytes
+};               // sizeof = 16
+
+// Union — overlapping storage
+union Value {
+    int    i;
+    float  f;
+    char   s[8];
+};               // sizeof = 8 (largest member)
+
+// Tagged union — safe union usage
+typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } ValueType;
+
+struct TaggedValue {
+    ValueType type;
+    union {
+        int   i;
+        float f;
+        char  s[32];
+    } data;
+};
+
+// Bitfields — pack flags into minimal space
+struct Flags {
+    unsigned int read    : 1;  // 1 bit
+    unsigned int write   : 1;
+    unsigned int execute : 1;
+    unsigned int sticky  : 1;
+    unsigned int reserved : 4;  // 4 bits padding
+};  // Total: 1 byte instead of 4 ints
+```
+
+### S5: İşlev işaretçileri nedir ve bunları ne zaman kullanmalıyım?
+**C:** İşlev işaretçileri bir işlevin adresini saklar ve geri çağırmaları, polimorfizmi ve eklenti mimarilerini etkinleştirir. Bunlar C'nin üst düzey işlevlere yaklaşımının temelini oluşturur (`qsort`,`bsearch`gibi). Bunları şu söz dizimi ile bildirin: `return_type (*name)(parameter_types)`.
+```c
+// Function pointer declaration
+int (*operation)(int, int);
+
+int add(int a, int b) { return a + b; }
+int mul(int a, int b) { return a * b; }
+
+operation = add;
+printf("%d\n", operation(3, 4));  // 7
+operation = mul;
+printf("%d\n", operation(3, 4));  // 12
+
+// Callback pattern — qsort
+int compare_ints(const void *a, const void *b) {
+    int ia = *(const int *)a;
+    int ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);
+}
+
+int arr[] = {5, 2, 8, 1, 9, 3};
+qsort(arr, 6, sizeof(int), compare_ints);
+// arr is now {1, 2, 3, 5, 8, 9}
+
+// Strategy pattern
+struct Strategy {
+    void (*init)(void);
+    void (*process)(const char *data);
+    void (*cleanup)(void);
+};
+
+void run_pipeline(const struct Strategy *s, const char *data) {
+    s->init();
+    s->process(data);
+    s->cleanup();
+}
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Dinamik Dizi Uygulama (Vektör)
+**Sorun Açıklaması:** C'de öğeler eklendiğinde otomatik olarak büyüyen, O(1) amortize eklemeyi destekleyen ve uygun temizleme sağlayan dinamik bir dizi uygulayın. Bu, C++ `std::vector`'nin C eşdeğeridir.
+**1. Adım — Sorunu Anlayın:**
+Dinamik bir dizi şunları gerektirir: (1) yığınla ayrılmış bir arabellek, (2) boyutun (kullanılan öğeler) ve kapasitenin (ayrılmış yuvalar) izlenmesi, (3) boyut kapasiteye ulaştığında yeniden tahsis, (4) uygun bellek temizliği. 2x büyüme faktörü, O(1) amortize edilmiş eklentiyi verir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- İlk tahsis için `malloc`'yi, büyüme için `realloc`'yi kullanın.
+- Veri işaretçisini, boyutunu ve kapasitesini bir yapıda saklayın.
+-`size == capacity`olduğunda kapasiteyi iki katına çıkararak büyütün.
+-`push`,`pop`,`get`,`set`ve`free`işlemlerini sağlayın.
+**3. Adım — Çözümü Uygulayın:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int    *data;
+    size_t  size;
+    size_t  capacity;
+} IntVec;
+
+// Initialize with default capacity
+void vec_init(IntVec *v, size_t initial_capacity) {
+    v->data = malloc(initial_capacity * sizeof(int));
+    if (!v->data) { perror("malloc"); exit(EXIT_FAILURE); }
+    v->size = 0;
+    v->capacity = initial_capacity;
+}
+
+// Ensure capacity for at least one more element
+static void vec_grow(IntVec *v) {
+    if (v->size < v->capacity) return;
+    size_t new_cap = v->capacity * 2;
+    int *new_data = realloc(v->data, new_cap * sizeof(int));
+    if (!new_data) { perror("realloc"); exit(EXIT_FAILURE); }
+    v->data = new_data;
+    v->capacity = new_cap;
+}
+
+// Append element — O(1) amortized
+void vec_push(IntVec *v, int value) {
+    vec_grow(v);
+    v->data[v->size++] = value;
+}
+
+// Remove last element — O(1)
+int vec_pop(IntVec *v) {
+    if (v->size == 0) { fprintf(stderr, "pop from empty vector\n"); exit(EXIT_FAILURE); }
+    return v->data[--v->size];
+}
+
+// Access element
+int vec_get(const IntVec *v, size_t index) {
+    if (index >= v->size) { fprintf(stderr, "index %zu out of bounds (size %zu)\n", index, v->size); exit(EXIT_FAILURE); }
+    return v->data[index];
+}
+
+// Free all memory
+void vec_free(IntVec *v) {
+    free(v->data);
+    v->data = NULL;
+    v->size = v->capacity = 0;
+}
+
+// Usage
+int main(void) {
+    IntVec v;
+    vec_init(&v, 4);
+
+    for (int i = 0; i < 100; i++) {
+        vec_push(&v, i * i);
+    }
+
+    printf("Size: %zu, Capacity: %zu\n", v.size, v.capacity);
+    printf("Last: %d\n", vec_get(&v, v.size - 1));  // 9801
+
+    vec_free(&v);
+    return 0;
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Amortize edilmiş O(1) itme: iki katına çıkarma, her bir öğenin toplamda en fazla O(log n) katı kopyalandığı anlamına gelir.
+-`vec_get`ve `vec_pop`'deki sınır kontrolü, hataları erkenden yakalar; çalışma zamanı güvenlik ağının olmadığı C'de çok önemlidir.
+- Bellek: Kapasite 4'ten başlayarak 100 basmadan sonra kapasite 128'e ulaşır (4→8→16→32→64→128).
+- Üretim: Büyütme işlemi tamamlandığında kullanılmayan belleği geri kazanmak için`shrink_to_fit`(tam boyuta yeniden tahsis) kullanın.
+### Sorun 2: Basit Bir Hash Tablosu Oluşturun
+**Sorun Açıklaması:** Çarpışma çözümü için ayrı zincirleme kullanarak dize anahtarları ve tamsayı değerleri içeren bir karma tablosu uygulayın. Ekleme, arama ve silme işlemlerini destekleyin.
+**1. Adım — Sorunu Anlayın:**
+Bir karma tablosu, bir karma işlevi aracılığıyla anahtarları dizi endekslerine eşler. Çarpışmalar (aynı dizine eşlenen farklı anahtarlar) ayrı zincirleme ile çözülür: her paket, bağlantılı bir giriş listesidir. İhtiyacımız olan: karma işlevi, ekleme, arama, silme ve temizleme.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Dize tuşlarının iyi dağıtımı için FNV-1a karmasını kullanın.
+- Kova işaretçileri dizisi (bağlantılı liste başlıkları).
+- Yük faktörü takibi; Yük faktörü eşiği aştığında yeniden boyutlandırın.
+- Tüm işlemler O(1) ortalama, O(n) en kötü durumdur.
+**3. Adım — Çözümü Uygulayın:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define INITIAL_BUCKETS 64
+#define LOAD_FACTOR_THRESHOLD 0.75
+
+typedef struct Entry {
+    char *key;
+    int   value;
+    struct Entry *next;
+} Entry;
+
+typedef struct {
+    Entry  **buckets;
+    size_t   num_buckets;
+    size_t   size;
+} HashMap;
+
+// FNV-1a hash function
+static unsigned long hash(const char *key) {
+    unsigned long h = 14695981039346656037ULL;
+    while (*key) {
+        h ^= (unsigned char)*key++;
+        h *= 1099511628211ULL;
+    }
+    return h;
+}
+
+void hashmap_init(HashMap *m) {
+    m->num_buckets = INITIAL_BUCKETS;
+    m->buckets = calloc(m->num_buckets, sizeof(Entry *));
+    m->size = 0;
+}
+
+// Insert or update
+void hashmap_put(HashMap *m, const char *key, int value) {
+    size_t idx = hash(key) % m->num_buckets;
+
+    // Check if key already exists
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            e->value = value;
+            return;
+        }
+    }
+
+    // New entry — prepend to bucket
+    Entry *entry = malloc(sizeof(Entry));
+    entry->key = strdup(key);
+    entry->value = value;
+    entry->next = m->buckets[idx];
+    m->buckets[idx] = entry;
+    m->size++;
+}
+
+// Lookup — returns 1 if found, 0 if not
+int hashmap_get(const HashMap *m, const char *key, int *out_value) {
+    size_t idx = hash(key) % m->num_buckets;
+    for (Entry *e = m->buckets[idx]; e; e = e->next) {
+        if (strcmp(e->key, key) == 0) {
+            *out_value = e->value;
+            return 1;
+        }
+    }
+    return 0;
+}
+
+// Delete — returns 1 if removed, 0 if not found
+int hashmap_remove(HashMap *m, const char *key) {
+    size_t idx = hash(key) % m->num_buckets;
+    Entry **pp = &m->buckets[idx];
+
+    while (*pp) {
+        if (strcmp((*pp)->key, key) == 0) {
+            Entry *to_free = *pp;
+            *pp = to_free->next;
+            free(to_free->key);
+            free(to_free);
+            m->size--;
+            return 1;
+        }
+        pp = &(*pp)->next;
+    }
+    return 0;
+}
+
+// Cleanup
+void hashmap_free(HashMap *m) {
+    for (size_t i = 0; i < m->num_buckets; i++) {
+        Entry *e = m->buckets[i];
+        while (e) {
+            Entry *next = e->next;
+            free(e->key);
+            free(e);
+            e = next;
+        }
+    }
+    free(m->buckets);
+    m->buckets = NULL;
+    m->size = m->num_buckets = 0;
+}
+
+// Usage
+int main(void) {
+    HashMap m;
+    hashmap_init(&m);
+
+    hashmap_put(&m, "alice", 95);
+    hashmap_put(&m, "bob", 87);
+    hashmap_put(&m, "charlie", 92);
+
+    int score;
+    if (hashmap_get(&m, "alice", &score)) {
+        printf("Alice: %d\n", score);  // Alice: 95
+    }
+
+    hashmap_remove(&m, "bob");
+    hashmap_free(&m);
+    return 0;
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- İyi bir karma işlevi ve makul yük faktörü ile ekleme/arama/silme için ortalama O(1).
+- FNV-1a, minimum hesaplamayla dize tuşları için mükemmel dağıtım sağlar.
+- `hashmap_remove`'deki işaretçiden işaretçiye tekniği (`Entry **pp`), özel durumlar olmadan hem liste başı hem de liste ortası silme işlemini zarif bir şekilde gerçekleştirir.
+- Üretim: yük faktörü eşiği aştığında yeniden karma oluşturma ekleyin. Daha iyi önbellek performansı için açık adreslemeyi (doğrusal araştırma) kullanın.
+### Sorun 3: Üretici-Tüketici için Halka Arabelleğinin Uygulanması
+**Sorun Açıklaması:** Çalışma sırasında dinamik ayırma olmadan yüksek performanslı iş parçacıkları arası iletişim için C'de kilitsiz, tek üreticili, tek tüketicili halka arabelleği uygulayın.
+**1. Adım — Sorunu Anlayın:**
+Halka arabellek (dairesel arabellek), okuma ve yazma endekslerine sahip sabit boyutlu bir dizi kullanır. Arabellek dolduğunda yazar bloke eder veya üzerine yazar. SPSC'de (tek üretici tek tüketici), maksimum verim için kilitler yerine atomik işlemleri kullanabiliriz.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Başlatma sırasında bir kez tahsis edilen sabit boyutlu dizi.
+- Atomik indeksler olarak`head`(okuma konumu) ve`tail`(yazma konumu).
+- Üretici `tail`'yi ilerletir; tüketici avansları`head`.
+-`head == tail`olduğunda arabellek boştur;`(tail + 1) % capacity == head`olduğunda dolu.
+- Uygun bellek sıralamasıyla C11 atomlarını kullanın.
+**3. Adım — Çözümü Uygulayın:**
+```c
+#include <stdio.h>
+#include <stdatomic.h>
+#include <stdlib.h>
+#include <string.h>
+#include <threads.h>
+
+typedef struct {
+    int              *buffer;
+    size_t            capacity;  // Must be power of 2
+    atomic_size_t     head;      // Consumer reads from here
+    atomic_size_t     tail;      // Producer writes to here
+} RingBuffer;
+
+void ring_init(RingBuffer *rb, size_t capacity) {
+    // Round up to power of 2 for efficient modulo
+    size_t cap = 1;
+    while (cap < capacity) cap <<= 1;
+    rb->buffer = malloc(cap * sizeof(int));
+    rb->capacity = cap;
+    atomic_store(&rb->head, 0);
+    atomic_store(&rb->tail, 0);
+}
+
+// Producer: try to push an item. Returns 1 on success, 0 if full.
+int ring_push(RingBuffer *rb, int value) {
+    size_t tail = atomic_load_explicit(&rb->tail, memory_order_relaxed);
+    size_t next_tail = (tail + 1) & (rb->capacity - 1);  // Fast modulo
+
+    if (next_tail == atomic_load_explicit(&rb->head, memory_order_acquire)) {
+        return 0;  // Buffer full
+    }
+
+    rb->buffer[tail] = value;
+    atomic_store_explicit(&rb->tail, next_tail, memory_order_release);
+    return 1;
+}
+
+// Consumer: try to pop an item. Returns 1 on success, 0 if empty.
+int ring_pop(RingBuffer *rb, int *out) {
+    size_t head = atomic_load_explicit(&rb->head, memory_order_relaxed);
+
+    if (head == atomic_load_explicit(&rb->tail, memory_order_acquire)) {
+        return 0;  // Buffer empty
+    }
+
+    *out = rb->buffer[head];
+    atomic_store_explicit(&rb->head, (head + 1) & (rb->capacity - 1),
+                          memory_order_release);
+    return 1;
+}
+
+void ring_free(RingBuffer *rb) {
+    free(rb->buffer);
+    rb->buffer = NULL;
+}
+
+// Producer thread
+int producer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    for (int i = 0; i < 1000000; i++) {
+        while (!ring_push(rb, i)) {
+            // Spin — buffer full
+            thrd_yield();
+        }
+    }
+    return 0;
+}
+
+// Consumer thread
+int consumer_thread(void *arg) {
+    RingBuffer *rb = arg;
+    long long sum = 0;
+    int count = 0;
+    int val;
+    while (count < 1000000) {
+        if (ring_pop(rb, &val)) {
+            sum += val;
+            count++;
+        } else {
+            thrd_yield();  // Spin — buffer empty
+        }
+    }
+    printf("Consumed %d items, sum = %lld\n", count, sum);
+    return 0;
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Kilitsiz: yalnızca atomik işlemler — muteks yok, bağlam anahtarı yok.
+- Bellek sıralaması: Yazma sırasında `release`, verilerin dizin güncellemesinden önce görünür olmasını sağlar; `acquire`on read, dizini okuduktan sonra verileri görmemizi sağlar.
+- 2'nin gücü kapasitesi:`% capacity`yerine `& (capacity - 1)`'yi etkinleştirir — çok daha hızlı.
+- Verim: Modern donanımda saniyede milyarlarca işlem.
+- Üretim: Yanlış paylaşımı önlemek için`head`ve`tail`arasına dolgu ekleyin (her biri kendi önbellek hattında).
 ---
 
 ## Özet

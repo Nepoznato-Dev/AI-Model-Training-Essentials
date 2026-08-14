@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #C++
 C++ é uma linguagem de programação compilada de uso geral criada por Bjarne Stroustrup, lançada pela primeira vez em 1985. Ela estende C com recursos orientados a objetos, genéricos e - em versões modernas (C++ 11 e posteriores) - abstrações de alto nível como lambdas, ponteiros inteligentes e a Biblioteca de Modelos Padrão (STL). C++ segue o princípio da "abstração de sobrecarga zero": você não deve pagar por recursos que não usa.
 C++ é a linguagem preferida quando você precisa de alto desempenho e poder expressivo. Ele alimenta motores de jogos (Unreal Engine), navegadores (Chrome, Firefox), bancos de dados (MongoDB), sistemas operacionais (partes do Windows e macOS), sistemas de negociação financeira e simulações em tempo real.
@@ -736,6 +737,380 @@ cmake --build build
 | C++20 | 2020 | **Lançamento principal**: conceitos, intervalos, corrotinas, módulos |
 | C++23 | 2023 | std::esperado, std::print, deduzindo isso |
 Para novos projetos, direcione o C++20 no mínimo.
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre`std::unique_ptr`,`std::shared_ptr`e`std::weak_ptr`?
+**R:**`unique_ptr`representa propriedade exclusiva — apenas um ponteiro pode possuir o recurso. Ele tem sobrecarga zero (o mesmo que um ponteiro bruto) e não pode ser copiado, apenas movido. `shared_ptr`representa propriedade compartilhada — vários ponteiros compartilham o recurso, com contagem de referência. Quando o último`shared_ptr`for destruído, o recurso será liberado. `weak_ptr`é um observador não proprietário de um`shared_ptr`— ele não aumenta a contagem de referências e é usado para quebrar referências circulares.
+```cpp
+// unique_ptr — exclusive ownership, zero overhead
+auto file = std::make_unique<FileHandle>("data.txt");
+// auto copy = file;              // Error: cannot copy
+auto moved = std::move(file);     // OK: transfers ownership
+// file is now nullptr
+
+// shared_ptr — shared ownership, reference counted
+auto config = std::make_shared<Config>("app.conf");
+auto ref1 = config;               // ref count = 2
+auto ref2 = config;               // ref count = 3
+// Resource freed when last shared_ptr is destroyed
+
+// weak_ptr — non-owning observer
+std::weak_ptr<Config> observer = config;
+if (auto locked = observer.lock()) {  // Promote to shared_ptr
+    locked->reload();
+}
+// Break circular references:
+// struct A { shared_ptr<B> b; };  // A → B
+// struct B { shared_ptr<A> a; };  // B → A — memory leak!
+// Fix: change one to weak_ptr<B>
+```
+
+### Q2: O que é semântica de movimento e por que ela é importante?
+**R:** A semântica de movimentação (C++11) permite a transferência de recursos (memória heap, identificadores de arquivo etc.) de um objeto temporário em vez de copiá-los. Um construtor/atribuição de movimento pega uma referência de valor (`T&&`) e "rouba" os recursos da fonte, deixando-a em um estado válido, mas não especificado. Isso elimina cópias desnecessárias e é o motivo pelo qual a realocação de`std::vector`é eficiente.
+```cpp
+class Buffer {
+    std::unique_ptr<int[]> data_;
+    size_t size_;
+public:
+    // Move constructor — steal resources
+    Buffer(Buffer&& other) noexcept
+        : data_(std::move(other.data_)), size_(other.size_) {
+        other.size_ = 0;  // Leave source in valid empty state
+    }
+
+    // Move assignment
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            data_ = std::move(other.data_);
+            size_ = other.size_;
+            other.size_ = 0;
+        }
+        return *this;
+    }
+};
+
+// Move happens automatically with temporaries
+Buffer createBuffer() {
+    Buffer b(1000);
+    return b;  // Moved, not copied (or elided via NRVO)
+}
+
+// Explicit move with std::move
+Buffer a(500);
+Buffer b = std::move(a);  // a's resources transferred to b
+```
+
+### Q3: Quando devo usar`auto`e quando devo especificar os tipos explicitamente?
+**R:** Use`auto`quando o tipo for óbvio no contexto (loops de iterador, chamadas `make_unique`/`make_shared`, tipos lambda, tipos de modelos complexos). Especifique os tipos explicitamente quando o tipo não for óbvio, quando você precisar de conversões implícitas ou em assinaturas de API públicas. O estilo "Almost Always Auto" (AAA) favorece`auto`para variáveis ​​locais; o estilo "automático onde útil" é mais conservador.
+```cpp
+// Good use of auto — type is obvious
+auto ptr = std::make_unique<User>("Alice");   // unique_ptr<User>
+auto it = map.find("key");                     // map::iterator
+auto lambda = [](int x) { return x * 2; };    // closure type
+
+// Good use of auto — avoids repetition
+std::map<std::string, std::vector<int>>::iterator it2 = m.begin();  // Verbose
+auto it3 = m.begin();  // Much cleaner
+
+// Specify type explicitly — when conversion is needed
+double result = computeInt() * 2.0;  // int → double conversion
+// auto result = computeInt() * 2.0;  // Also double, but less clear
+
+// Never use auto in function signatures (C++20 abbreviated functions are different)
+auto process(std::string_view input) -> Result;  // OK: trailing return type
+```
+
+### Q4: Como os conceitos (C++20) melhoram o código do modelo?
+**R:** Os conceitos restringem os parâmetros do modelo com requisitos nomeados, produzindo mensagens de erro claras e permitindo a sobrecarga de funções nas restrições do modelo. Antes dos conceitos, SFINAE e`static_assert`eram usados ​​– ambos produziam erros crípticos. Os conceitos tornam o código do modelo legível e combinável.
+```cpp
+#include <concepts>
+
+// Define a concept
+template<typename T>
+concept Numeric = std::integral<T> || std::floating_point<T>;
+
+// Constrained function template
+template<Numeric T>
+T square(T x) { return x * x; }
+
+// Abbreviated syntax (C++20)
+void print(const std::ranges::range auto& container) {
+    for (const auto& item : container) {
+        std::cout << item << " ";
+    }
+}
+
+// Concept composition
+template<typename T>
+concept Printable = requires(T t) {
+    { std::cout << t } -> std::same_as<std::ostream&>;
+};
+
+// Overloading on concepts
+template<std::integral T>
+std::string format(T value) { return std::to_string(value); }
+
+template<std::floating_point T>
+std::string format(T value) {
+    return std::format("{:.2f}", value);
+}
+
+format(42);      // Calls integral version: "42"
+format(3.14);    // Calls floating_point version: "3.14"
+```
+
+### Q5: O que é a Regra dos Cinco e como ela se relaciona com a Regra do Zero?
+**R:** A regra dos cinco: se você definir qualquer um entre destruidor, construtor de cópia, atribuição de cópia, construtor de movimento ou atribuição de movimento, deverá definir todos os cinco. A Regra de Zero (preferencial): projete classes para que não precisem de nenhuma delas - use tipos RAII (`std::string`,`std::vector`,`std::unique_ptr`) como membros, e os especiais gerados pelo compilador farão a coisa certa automaticamente.
+```cpp
+// Rule of Zero — preferred approach
+class User {
+    std::string name_;              // Manages its own memory
+    std::vector<int> scores_;       // Manages its own memory
+    std::unique_ptr<Detail> detail_; // Manages its own memory
+    // No destructor, copy/move constructors, or assignments needed
+    // Compiler-generated versions do the right thing
+};
+
+// Rule of Five — when you manage resources directly
+class FileHandle {
+    FILE* file_;
+public:
+    ~FileHandle() { if (file_) fclose(file_); }
+    FileHandle(const FileHandle&) = delete;            // Non-copyable
+    FileHandle& operator=(const FileHandle&) = delete;
+    FileHandle(FileHandle&& other) noexcept : file_(other.file_) {
+        other.file_ = nullptr;
+    }
+    FileHandle& operator=(FileHandle&& other) noexcept {
+        if (this != &other) {
+            if (file_) fclose(file_);
+            file_ = other.file_;
+            other.file_ = nullptr;
+        }
+        return *this;
+    }
+};
+```
+
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Implementar uma fila produtor-consumidor thread-safe com intervalos
+**Declaração do problema:** Crie uma fila produtor-consumidor limitada e segura para threads usando intervalos C++20 para o lado do consumidor. A fila deve bloquear os produtores quando estiver cheia e os consumidores quando estiver vazia e suportar o desligamento normal.
+**Etapa 1 — Entenda o problema:**
+Precisamos de: (1) uma fila limitada com bloqueio push/pop, (2) segurança de thread via mutex e variáveis de condição, (3) uma maneira de sinalizar o desligamento, (4) integração de intervalos C++20 para que os consumidores possam usar loops for baseados em intervalo.
+**Etapa 2 — Identifique a abordagem:**
+- Use`std::mutex`+`std::condition_variable`para bloqueio.
+- Use`std::queue<T>`como contêiner subjacente.
+- Use`std::optional<T>`como tipo de retorno -`std::nullopt`sinaliza desligamento.
+- Implementar um iterador baseado em sentinela para suporte de intervalos.
+**Etapa 3 — Implementar a solução:**
+```cpp
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <optional>
+#include <thread>
+#include <vector>
+#include <iostream>
+
+template<typename T>
+class BlockingQueue {
+    std::queue<T> queue_;
+    mutable std::mutex mutex_;
+    std::condition_variable not_empty_;
+    std::condition_variable not_full_;
+    size_t capacity_;
+    bool shutdown_ = false;
+
+public:
+    explicit BlockingQueue(size_t capacity) : capacity_(capacity) {}
+
+    // Returns false if shutdown was requested
+    bool push(T value) {
+        std::unique_lock lock(mutex_);
+        not_full_.wait(lock, [&] { return queue_.size() < capacity_ || shutdown_; });
+        if (shutdown_) return false;
+        queue_.push(std::move(value));
+        not_empty_.notify_one();
+        return true;
+    }
+
+    // Returns nullopt if shutdown was requested and queue is empty
+    std::optional<T> pop() {
+        std::unique_lock lock(mutex_);
+        not_empty_.wait(lock, [&] { return !queue_.empty() || shutdown_; });
+        if (queue_.empty()) return std::nullopt;
+        T value = std::move(queue_.front());
+        queue_.pop();
+        not_full_.notify_one();
+        return value;
+    }
+
+    void shutdown() {
+        std::lock_guard lock(mutex_);
+        shutdown_ = true;
+        not_empty_.notify_all();
+        not_full_.notify_all();
+    }
+
+    // Range support — iterator that reads until shutdown
+    class Iterator {
+        BlockingQueue* bq_;
+        std::optional<T> current_;
+    public:
+        using iterator_category = std::input_iterator_tag;
+        using value_type = T;
+        using difference_type = std::ptrdiff_t;
+        using pointer = T*;
+        using reference = T&;
+
+        Iterator() : bq_(nullptr) {}  // Sentinel (end)
+        explicit Iterator(BlockingQueue* bq) : bq_(bq) { advance(); }
+
+        void advance() { current_ = bq_ ? bq_->pop() : std::nullopt; }
+        T& operator*() { return *current_; }
+        Iterator& operator++() { advance(); return *this; }
+        Iterator operator++(int) { auto tmp = *this; advance(); return tmp; }
+        bool operator==(const Iterator& other) const {
+            return !current_.has_value() && !other.current_.has_value();
+        }
+        bool operator!=(const Iterator& other) const { return !(*this == other); }
+    };
+
+    Iterator begin() { return Iterator(this); }
+    Iterator end() { return Iterator(); }
+};
+
+// Usage with ranges
+int main() {
+    BlockingQueue<int> queue(10);
+
+    // Producer
+    std::thread producer([&] {
+        for (int i = 0; i < 20; i++) {
+            queue.push(i);
+        }
+        queue.shutdown();
+    });
+
+    // Consumer — using range-based for loop
+    std::vector<int> results;
+    for (int value : queue) {
+        results.push_back(value);
+    }
+
+    producer.join();
+    std::cout << "Received " << results.size() << " items\n";
+}
+```
+
+**Etapa 4 — Verificar e otimizar:**
+- Segurança de thread:`std::mutex`protege todos os estados da fila; variáveis ​​de condição controlam o bloqueio.
+- Desligamento normal:`shutdown()`acorda todos os garçons; `pop()`retorna`nullopt`quando vazio e desligado.
+- Suporte de intervalo: a sentinela do iterador (construída por padrão) compara-se igual a qualquer iterador esgotado.
+- Produção: use`boost::lockfree::spsc_queue`para produtor único e consumidor único sem bloqueio ou`folly::ProducerConsumerQueue`para cenários de alto rendimento.
+### Problema 2: Implementar qualquer tipo apagado por tipo
+**Declaração do problema:** Implemente uma versão simplificada de`std::any`(C++17) do zero — um contêiner de tipo seguro para valores únicos de qualquer tipo, com suporte para cópia, movimentação e recuperação de tipo seguro por meio de`any_cast`.
+**Etapa 1 — Entenda o problema:**
+`std::any`armazena um valor de qualquer tipo copiável e o recupera com verificação de tipo. Internamente, ele usa apagamento de tipo: uma interface de classe base com um modelo derivado que contém o valor real. `any_cast`verifica o tipo armazenado em tempo de execução e lança`bad_any_cast`em caso de incompatibilidade.
+**Etapa 2 — Identifique a abordagem:**
+- Use uma classe base`HolderBase`com`clone()`e`type()`virtuais.
+- Use um modelo derivado`Holder<T>`que armazena o valor real.
+- Armazene um`std::unique_ptr<HolderBase>`na classe `Any`.
+-`any_cast<T>`verifica`typeid`e executa um`static_cast`.
+**Etapa 3 — Implementar a solução:**
+```cpp
+#include <typeinfo>
+#include <memory>
+#include <stdexcept>
+#include <utility>
+#include <string>
+#include <iostream>
+
+class BadAnyCast : public std::bad_cast {
+public:
+    const char* what() const noexcept override { return "bad any_cast"; }
+};
+
+class Any {
+    struct HolderBase {
+        virtual ~HolderBase() = default;
+        virtual std::unique_ptr<HolderBase> clone() const = 0;
+        virtual const std::type_info& type() const = 0;
+    };
+
+    template<typename T>
+    struct Holder : HolderBase {
+        T value;
+        template<typename U>
+        explicit Holder(U&& v) : value(std::forward<U>(v)) {}
+        std::unique_ptr<HolderBase> clone() const override {
+            return std::make_unique<Holder>(value);
+        }
+        const std::type_info& type() const override { return typeid(T); }
+    };
+
+    std::unique_ptr<HolderBase> holder_;
+
+public:
+    Any() = default;
+
+    template<typename T>
+    Any(T&& value) requires(!std::same_as<std::decay_t<T>, Any>)
+        : holder_(std::make_unique<Holder<std::decay_t<T>>>(std::forward<T>(value))) {}
+
+    // Copy
+    Any(const Any& other) : holder_(other.holder_ ? other.holder_->clone() : nullptr) {}
+    Any& operator=(const Any& other) {
+        if (this != &other) { holder_ = other.holder_ ? other.holder_->clone() : nullptr; }
+        return *this;
+    }
+
+    // Move
+    Any(Any&&) = default;
+    Any& operator=(Any&&) = default;
+
+    // Check if empty
+    bool has_value() const noexcept { return holder_ != nullptr; }
+    const std::type_info& type() const {
+        return holder_ ? holder_->type() : typeid(void);
+    }
+    void reset() noexcept { holder_.reset(); }
+
+    // Type-safe cast
+    template<typename T>
+    friend T& any_cast(Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<Holder<T>*>(a.holder_.get())->value;
+    }
+
+    template<typename T>
+    friend const T& any_cast(const Any& a) {
+        if (!a.holder_ || a.holder_->type() != typeid(T))
+            throw BadAnyCast{};
+        return static_cast<const Holder<T>*>(a.holder_.get())->value;
+    }
+};
+
+// Usage
+Any a = 42;
+Any b = std::string("hello");
+Any c = a;  // Copy
+
+std::cout << any_cast<int>(a) << "\n";           // 42
+std::cout << any_cast<std::string>(b) << "\n";   // hello
+// any_cast<double>(a);                            // Throws BadAnyCast
+```
+
+**Etapa 4 — Verificar e otimizar:**
+- Segurança de tipo:`any_cast`verifica`typeid`em tempo de execução - o tipo errado gera`BadAnyCast`.
+- Semântica de cópia: o`clone()`virtual cria uma cópia profunda do valor retido.
+- Semântica de movimentação: o construtor/atribuição de movimentação padrão transfere o`unique_ptr`de forma eficiente.
+- Otimização de buffer pequeno (como`std::any`real): armazena pequenos tipos inline sem alocação de heap. Isso requer um`union`com um buffer de bytes – significativamente mais complexo.
+- Produção: use`std::any`(C++17) — é padrão, bem testado e pode incluir SBO.
 ---
 
 ## Resumo

@@ -43,7 +43,7 @@ contribution:
 
 Computing is everywhere — in your phone, your car, your refrigerator, your medical devices, and the infrastructure that runs modern society. You do not need to be a programmer to benefit from understanding how it all works. This file covers the fundamentals: what a computer is, how the internet works, how software is built, and the concepts that shape the digital world.
 
-> **Want to go deeper?** This file is a broad overview. For detailed coverage of any topic, see the dedicated files in [`01_coding_and_technology/`](../01_coding_and_technology/) — including [web development](../01_coding_and_technology/web_development.md), [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md), [networking](../01_coding_and_technology/networking_basics.md), and [security](../01_coding_and_technology/security_best_practices.md).
+> **Want to go deeper?** This file is a broad overview. For detailed coverage of any topic, see the dedicated files in [`01_coding_and_technology/`](../01_coding_and_technology/) — including [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md), [networking](../01_coding_and_technology/networking_basics.md), and.
 
 ---
 
@@ -189,7 +189,7 @@ The three major cloud providers are **AWS** (Amazon, ~32% market share), **Azure
 
 ## Cybersecurity — Protecting Digital Systems
 
-Cybersecurity is the practice of defending computers, networks, and data from attack. It matters because everything is connected, and the cost of breaches is enormous. For a full guide covering OWASP Top 10, secure development lifecycle, and secrets management, see [security best practices](../01_coding_and_technology/security_best_practices.md).
+Cybersecurity is the practice of defending computers, networks, and data from attack. It matters because everything is connected, and the cost of breaches is enormous. For a full guide covering OWASP Top 10, secure development lifecycle, and secrets management, see.
 
 ### Common Threats
 
@@ -227,4 +227,4 @@ Programs exchange data in specific formats. The most common:
 
 ## Summary
 
-Computing is not magic — it is engineering. Computers follow instructions at incredible speed. The internet connects billions of them using standardized protocols. Software is built by teams of people writing, testing, and deploying code in iterative cycles. Databases store and retrieve data. Cloud computing lets anyone access massive computing resources on demand. And cybersecurity is the ongoing battle to keep all of this safe from people who want to exploit it. Understanding these fundamentals helps you navigate the digital world — whether you are a user, a developer, or just someone trying to make sense of the technology that shapes modern life.
+Computing is engineering, not magic. Computers follow instructions at high speed. The internet connects billions of them using standardized protocols. Software is built by teams of people writing, testing, and deploying code in iterative cycles. Databases store and retrieve data. Cloud computing lets anyone access large-scale computing resources on demand. And cybersecurity is the ongoing effort to protect these systems from exploitation. Understanding these fundamentals helps inform decisions in the digital world — whether as a user, a developer, or an observer of modern technology.

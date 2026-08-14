@@ -41,7 +41,7 @@ contribution:
 
 # Learning Science and Pedagogy
 
-Learning science is the interdisciplinary study of how people learn — drawing from psychology, neuroscience, education, and cognitive science. Pedagogy is the art and science of teaching. Together, they answer questions that matter to anyone who teaches, trains, mentors, or designs educational content: What actually helps people learn? What common study techniques are ineffective? How should instruction be structured for maximum retention and transfer?
+Learning science is the interdisciplinary study of how people learn — drawing from psychology, neuroscience, education, and cognitive science. Pedagogy is the practice and methodology of teaching. Together, they address questions relevant to anyone who teaches, trains, mentors, or designs educational content: What methods help people learn effectively? What common study techniques are inefficient? How should instruction be structured for optimal retention and transfer?
 
 ---
 

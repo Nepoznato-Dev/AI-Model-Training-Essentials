@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "جافا سكريبت"
-description: "مرجع شامل للغة برمجة JavaScript يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "JavaScript"
+description: "Comprehensive reference for the JavaScript programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [جافا سكريبت، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "44 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [javascript, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #جافا سكريبت
 JavaScript هي لغة برمجة ديناميكية ومفسرة أنشأها Brendan Eich في 10 أيام فقط في عام 1995. وقد تم تصميمها في الأصل لإضافة التفاعل إلى صفحات الويب، وقد تطورت لتصبح لغة البرمجة الأكثر استخدامًا في العالم. يتم تشغيل JavaScript في كل متصفح ويب، وعلى الخوادم عبر Node.js، وفي تطبيقات سطح المكتب (Electron)، وتطبيقات الهاتف المحمول (React Native)، وحتى الأنظمة المدمجة.
 تعتبر اللغة فريدة من نوعها من حيث أنها الخيار الوحيد لتطوير الويب من جانب العميل - حيث يدعمها كل متصفح محليًا. هذا الاحتكار، جنبًا إلى جنب مع ظهور JavaScript الكامل (Node.js، وDeno، وBun)، يجعله أمرًا لا غنى عنه.
@@ -51,8 +56,8 @@ JavaScript هي لغة برمجة ديناميكية ومفسرة أنشأها B
 |-----------|------------------------|---|
 | **مزالق الكتابة الديناميكية** | لا يوجد فحص نوع وقت الترجمة؛ ظهور الأخطاء في وقت التشغيل | استخدم TypeScript (مجموعة شاملة مكتوبة من JavaScript) |
 | **تعقيد رد الاتصال** | يمكن أن تصبح عمليات الاسترجاعات المتداخلة غير قابلة للقراءة ("جحيم رد الاتصال") | استخدم الوعود والمزامنة/الانتظار |
-| ** دلالات ملتوية ** |  __محمي_0__ مقابل __محمي_1__، __محمي_2__ ربط، رفع، نوع الإكراه | تعلم المراوغات. استخدم ESLint؛ تفضل`const`/`let`على`var`|
-| ** خيط واحد ** | المهام المرتبطة بوحدة المعالجة المركزية تحظر حلقة الحدث | استخدم عمال الويب أو سلاسل العمليات أو قم بإلغاء التحميل إلى الوحدات النمطية الأصلية |
+| ** دلالات ملتوية ** | `==`vs `===`،`this`ربط، رفع، نوع الإكراه | تعلم المراوغات. استخدم ESLint؛ تفضل`const`/`let`على`var`|
+| ** خيط واحد ** | المهام المرتبطة بوحدة المعالجة المركزية تحظر حلقة الحدث | استخدم عمال الويب، أو سلاسل العمليات، أو قم بإلغاء التحميل إلى الوحدات النمطية الأصلية |
 | **جودة العبوة** | إن انفتاح npm يعني عدم تناسق الجودة والمخاطر الأمنية | تبعيات التدقيق؛ استخدام ملفات القفل. تفضل الحزم التي يتم صيانتها جيدًا |
 ---
 
@@ -526,7 +531,7 @@ my-js-project/
 └── .gitignore
 ```
 
-### تكوين التكوين — __محمي_0__
+### تكوين التكوين — `package.json`
 ```json
 {
   "name": "my-js-project",
@@ -1050,8 +1055,421 @@ pm2 startup
 | تطبيقات الجوال (React Native) | مشاركة الكود مع الويب | رفرفة، لغة سويفت/كوتلين الأصلية |
 | تطبيقات سطح المكتب (الكترون) | منصة مشتركة مع تكنولوجيا الويب | C# (WPF)، تاوري (الصدأ) |
 | حساب مكثف لوحدة المعالجة المركزية | الحد من الخيوط المفردة | بايثون (NumPy)، C++، Rust، WebAssembly |
-| برمجة الأنظمة | مستوى تجريد خاطئ | C، C++، الصدأ، الذهاب |
+| برمجة النظم | مستوى تجريد خاطئ | C، C++، الصدأ، الذهاب |
+---
+
+## أسئلة وأجوبة اصطناعية
+### Q1: ما الفرق بين`var`و`let`و`const`ومتى يجب أن أستخدم كلاً منهما؟
+**أ:**`var`محدد ومرفوع على نطاق وظيفي — تجنبه في التعليمات البرمجية الحديثة. `let`محدد النطاق ويسمح بإعادة التعيين. `const`محدد النطاق ويمنع إعادة التعيين (لكن الكائنات/المصفوفات التي تشير إليها لا تزال قابلة للتغيير). أفضل الممارسات: الإعداد الافتراضي هو `const`، استخدم`let`فقط عندما تحتاج إلى إعادة التعيين، ولا تستخدم`var`مطلقًا.
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### السؤال الثاني: كيف يعمل`this`في JavaScript، ولماذا يكون الأمر محيرًا جدًا؟
+**A:** يتم تحديد`this`من خلال **كيفية استدعاء الدالة**، وليس من خلال مكان تعريفها. في استدعاء الأسلوب، يكون`this`هو الكائن. في المكالمة المستقلة، تكون`undefined`(الوضع الصارم) أو`global`(غير مقيد). ترث دوال السهم`this`من النطاق المحيط بها، ولهذا السبب يتم تفضيلها لعمليات الاسترجاعات. استخدم`.bind()`لتعيين`this`بشكل صريح.
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### س3: ما هي حلقة الحدث، وكيف يعمل المزامنة/الانتظار فعليًا؟
+**أ:** جافا سكريبت عبارة عن خيط واحد مع حلقة حدث تعالج قائمة الانتظار. يقوم مكدس الاستدعاءات بتنفيذ تعليمات برمجية متزامنة. عندما تكون فارغة، تختار حلقة الحدث المهمة التالية من قائمة انتظار المهام الدقيقة (الوعود) أو قائمة انتظار المهام الكبيرة (setTimeout، I/O). `async/await`عبارة عن السكر النحوي فوق الوعود - يقوم`await`بإيقاف وظيفة المزامنة مؤقتًا واستئنافها عندما يتم حل الوعد، دون حظر سلسلة الرسائل.
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4: كيف يجب أن أتعامل مع الأخطاء في JavaScript الحديثة؟
+**أ:** استخدم`try/catch`للتعليمات البرمجية المتزامنة و`.catch()` أو`try/catch`مع`async/await`للتعليمات البرمجية غير المتزامنة. تعامل دائمًا مع حالات رفض الوعد - تؤدي حالات الرفض غير المعالجة إلى تعطل Node.js. إنشاء فئات خطأ مخصصة للأخطاء الخاصة بالمجال. استخدم معالج الأخطاء العالمي كشبكة أمان.
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### س5: متى يجب علي استخدام`Map`/`Set`بدلاً من الكائنات/المصفوفات العادية؟
+**أ:** استخدم`Map`عندما لا تكون المفاتيح عبارة عن سلاسل، أو عندما تحتاج إلى تكرار ترتيب الإدراج، أو عندما تحتاج إلى `.size`، أو عندما تقوم بإضافة/إزالة إدخالات بشكل متكرر (أداء أفضل من الكائنات). استخدم`Set`للمجموعات الفريدة باستخدام بحث O(1) - أسرع بكثير من`array.includes()`لمجموعات البيانات الكبيرة. استخدم كائنات عادية لبيانات JSON البسيطة القابلة للتسلسل وخرائط القيمة الرئيسية الصغيرة مع مفاتيح السلسلة.
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة 1: تنفيذ وظيفة الارتداد
+**بيان المشكلة:** قم بتنفيذ الأداة المساعدة`debounce`التي تؤخر استدعاء دالة حتى بعد انقضاء فترة انتظار محددة منذ آخر مرة تم استدعاؤها. دعم كل من استدعاء الحافة الأمامية والزائدة.
+**الخطوة الأولى — فهم المشكلة:**
+تتجاهل الوظيفة المرتدة المكالمات المتعاقبة السريعة ولا يتم تشغيلها إلا بعد توقف المكالمات طوال مدة الانتظار. "الحافة الأمامية" تعني إطلاق النار فورًا عند المكالمة الأولى. "الحافة الخلفية" تعني الحريق بعد فترة الانتظار. نحن بحاجة إلى التعامل مع كلا الوضعين وكذلك دعم الإلغاء.
+**الخطوة الثانية — تحديد النهج:**
+- تخزين معرف الموقت في الإغلاق.
+- في كل مكالمة: امسح المؤقت الحالي، ثم قم بتعيين`setTimeout`جديد.
+- بالنسبة للحافة الأمامية: اتصل فورًا إذا لم يكن هناك مؤقت نشط.
+- إرجاع دالة مرتجعة بطريقة `.cancel()`.
+- الحفاظ على سياق ووسائط`this`باستخدام وظائف الأسهم أو`.apply()`.
+**الخطوة 3 — تنفيذ الحل:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- يحافظ الإغلاق على الحالة عبر المكالمات دون تلويث النطاق العالمي.
+- يضمن`clearTimeout`قبل`setTimeout`تنفيذ المكالمة الأخيرة فقط.
+-`.cancel()`مهم للتنظيف (على سبيل المثال، إلغاء تحميل المكون في React).
+- حالة الحافة: إذا كانت قيمة`wait`تساوي 0، فسيتم تشغيل الوظيفة عند علامة حلقة الحدث التالية - وهي مفيدة لتجميع تحديثات DOM.
+### المشكلة الثانية: إنشاء محدد للمعدل على أساس الوعد
+**بيان المشكلة:** قم بإنشاء محدد معدل يسمح بحد أقصى N من الطلبات لكل نافذة زمنية. يجب أن يُرجع الوعود التي يتم حلها عندما يُسمح للمتصل بالمتابعة، ويضع الطلبات الزائدة في قائمة الانتظار.
+**الخطوة الأولى — فهم المشكلة:**
+نحتاج إلى نافذة منزلقة أو ثابتة تتتبع عدد المكالمات التي تم إجراؤها. عند الوصول إلى الحد الأقصى، يجب وضع المكالمات الجديدة في قائمة الانتظار وحلها عند فتح الفتحة. هذا هو نمط "دلو الرمز المميز".
+**الخطوة الثانية — تحديد النهج:**
+- تتبع الطوابع الزمنية للمكالمات الأخيرة في المصفوفة.
+- في كل مكالمة: قم بإزالة الطوابع الزمنية الأقدم من النافذة، وتحقق مما إذا كان العدد < الحد.
+- إذا كان تحت الحد: حل على الفور.
+- إذا كان عند الحد: احسب متى تنتهي صلاحية الطابع الزمني الأقدم، وقم بتعيين `setTimeout`، ثم قم بالحل.
+- استخدم قائمة الانتظار (مجموعة من وظائف الحل) لانتظار المتصلين.
+**الخطوة 3 — تنفيذ الحل:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- تعتبر طريقة النافذة المنزلقة أكثر عدلاً من النوافذ الثابتة (لا يوجد انفجار عند حدود النافذة).
+- معالجة قائمة الانتظار هي FIFO - يتم تقديم المتصلين بالترتيب.
+- بالنسبة للإنتاج: أضف دعم`AbortController`حتى يتمكن المتصلون من إلغاء الانتظار.
+- الأداء:`_cleanOldTimestamps`هو O(n) لكل مكالمة ولكن n يحده`maxCalls`.
+### المشكلة 3: تنفيذ وظيفة الاستنساخ العميق
+**بيان المشكلة:** اكتب دالة تستنسخ بشكل عميق أي قيمة JavaScript، وتتعامل مع الكائنات، والمصفوفات، والتواريخ، وRegExps، والخرائط، والمجموعات، والمراجع الدائرية، والمصفوفات المكتوبة.
+**الخطوة الأولى — فهم المشكلة:**
+ يفشل`JSON.parse(JSON.stringify(obj))`في:`undefined`والوظائف والرموز والتواريخ (تصبح سلاسل) وRegExps (تصبح كائنات فارغة) والخرائط والمجموعات والمراجع الدائرية (رميات) والمصفوفات المكتوبة. نحن بحاجة إلى حل عودي يتتبع الكائنات التي تمت زيارتها.
+**الخطوة الثانية — تحديد النهج:**
+- استخدم`Map`لتتبع الكائنات المستنسخة بالفعل (يتعامل مع المراجع الدائرية).
+- التعامل مع كل نوع بشكل خاص: التاريخ → تاريخ جديد، RegExp → RegExp الجديد، خريطة → خريطة جديدة مع إدخالات مستنسخة، تعيين → مجموعة جديدة مع القيم المستنسخة.
+- استخدم`structuredClone()`كبديل حديث مدمج (متوفر في المتصفحات وNode.js 17+).
+**الخطوة 3 — تنفيذ الحل:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- المراجع الدائرية: تُرجع خريطة`seen`النسخة التي تم إنشاؤها بالفعل بدلاً من التكرار بلا حدود.
+- واصفات الخاصية:`Reflect.ownKeys`+`getOwnPropertyDescriptor`يحافظ على الحروف، والمحددات، والخصائص غير القابلة للإحصاء.
+- البديل الحديث: يتعامل`structuredClone(value)`مع معظم هذه الحالات محليًا (باستثناء الوظائف وعقد DOM). يفضل ذلك عند توفره.
+- الأداء: بالنسبة للكائنات البسيطة، لا يزال`JSON.parse(JSON.stringify(obj))`هو الأسرع. استخدم الاستنساخ العميق فقط عندما تحتاج إليه بالفعل.
+### المشكلة الرابعة: إنشاء باعث حدث بسيط
+**بيان المشكلة:** تنفيذ فئة باعث الحدث التي تدعم الأساليب`on`و`off` و`emit` و`once`. وينبغي استدعاء المستمعين في أمر التسجيل.  يجب أن يقوم`emit`بتمرير الوسائط إلى جميع المستمعين.
+**الخطوة الأولى — فهم المشكلة:**
+نحن بحاجة إلى نظام نشر/فرعي: تسجيل المستمعين للأحداث المسماة، وإزالة مستمعين محددين، وتشغيل الأحداث باستخدام الوسائط، ودعم المستمعين لمرة واحدة. هذا هو نمط المراقب المستخدم على نطاق واسع في Node.js.
+**الخطوة الثانية — تحديد النهج:**
+- تخزين المستمعين في`Map<string, Array<Function>>`.
+- `on`: دفع المستمع إلى المصفوفة.
+- `off`: تصفية المستمع المحدد من المصفوفة.
+- `emit`: قم بتكرار المصفوفة واستدعاء كل مستمع باستخدام وسائط الانتشار.
+- `once`: التفاف المستمع في وظيفة تزيل نفسها بعد المكالمة الأولى.
+**الخطوة 3 — تنفيذ الحل:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**الخطوة 4 — التحقق والتحسين:**
+- تمنع نسخة`[...listeners]`في`emit`حدوث مشكلات عندما يستدعي المستمع`off`أثناء التكرار.
+- يقوم`once`بتخزين`_original`حتى يتمكن المتصلون من إزالة الغلاف عبر `off(event, originalFn)`.
+- الحقول الخاصة (`#listeners`) تمنع التحول الخارجي للحالة الداخلية.
+- بالنسبة للإنتاج: أضف تحذير`maxListeners`(مثل Node.js)، ومعالجة الأخطاء لكل مستمع، و`prependListener` للأولوية.
 ---
 
 ## ملخص
-جافا سكريبت لا مفر منه. إنها اللغة الوحيدة التي تعمل في متصفحات الويب، مما يجعلها ضرورية لتطوير الواجهة الأمامية. مع Node.js، يمتد الأمر إلى جانب الخادم، ومع أطر عمل مثل React Native وElectron، يصل إلى الهاتف المحمول وسطح المكتب. النظام البيئي هو الأكبر في البرمجة. إن خصوصيات اللغة معروفة ويمكن التحكم فيها، ويعالج TypeScript مشكلات الكتابة. بالنسبة لأي شيء يتم تشغيله في المتصفح، فإن JavaScript ليس الخيار الأفضل فحسب، بل هو الخيار الوحيد.
+جافا سكريبت لا مفر منه. إنها اللغة الوحيدة التي تعمل في متصفحات الويب، مما يجعلها ضرورية لتطوير الواجهة الأمامية. مع Node.js، يمتد إلى جانب الخادم، ومع أطر عمل مثل React Native وElectron، يصل إلى الهاتف المحمول وسطح المكتب. النظام البيئي هو الأكبر في البرمجة. إن خصوصيات اللغة معروفة ويمكن التحكم فيها، ويعالج TypeScript مشكلات الكتابة. بالنسبة لأي شيء يتم تشغيله في المتصفح، فإن JavaScript ليس الخيار الأفضل فحسب، بل هو الخيار الوحيد.

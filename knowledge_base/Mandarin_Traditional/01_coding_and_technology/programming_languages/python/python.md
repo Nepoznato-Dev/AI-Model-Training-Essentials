@@ -514,7 +514,7 @@ Python 附帶了一個廣泛的標準函式庫。一些最常用的模組：
 |`collections`|特種貨櫃| `Counter(words)`、`defaultdict(list)` |
 |`itertools`|迭代器建構塊 |`combinations(items, 2)`|
 |`functools`|功能工具| `lru_cache`、`partial`、`reduce` |
-|`re`|正規表示式|`re.findall(r"\d+", text)`|
+|`re`|正規表示式 |`re.findall(r"\d+", text)`|
 |`subprocess`|執行外部命令 |`subprocess.run(["ls", "-la"])`|
 |`logging`|應用程式日誌記錄 |`logging.basicConfig(level=logging.INFO)`|
 |`typing`|類型提示支援 | `Optional[str]`、`Union[int, float]` |
@@ -1282,14 +1282,14 @@ Python 的優點不僅在於語言，還在於圍繞它建構的生態系統。
 |擁抱變形金剛|預訓練的 NLP/視覺模型 |
 | LangChain/LlamaIndex |與法學碩士建構應用程式 |
 | NumPy |數值計算（陣列、線性代數）|
-|熊貓 |資料處理與分析 |
+|熊貓 |資料處理與分析|
 | Matplotlib / Seaborn / Plotly | Matplotlib / Seaborn / Plotly | Matplotlib資料視覺化|
 ### 網頁開發
 |框架|風格|最適合 |
 |------------|--------|----------|
 |姜戈 |全棧，「含電池」 |具有管理面板、ORM、身份驗證的複雜 Web 應用程式 |
 |快速API |現代、非同步、類型驅動 | API 和微服務（目前成長最快）|
-|燒瓶|最小、靈活 |小型應用程式和原型 |
+|燒瓶 |最小、靈活 |小型應用程式和原型 |
 |串流光 |專注於資料應用 |純 Python 中的儀表板與資料示範 |
 ### 自動化和腳本
 |圖書館 |目的|
@@ -1311,7 +1311,7 @@ Python 的優點不僅在於語言，還在於圍繞它建構的生態系統。
 ---
 
 ## 何時使用 Python
-|場景 |為什麼選擇Python？更好的選擇|
+|場景|為什麼選擇Python？更好的選擇|
 |----------|----------|--------------------|
 |人工智慧/機器學習/資料科學 |生態系統無與倫比| — |
 |自動化和腳本編寫|最快的編寫和調試 |用於簡單系統管理任務的 Shell/PowerShell |
@@ -1378,6 +1378,289 @@ def slow_function():
     import time; time.sleep(1)
 ```
 
+---
+
+## 綜合問答
+### Q1：列表和元組有什麼區別，什麼時候應該使用它們？
+**A:** 清單是可變的 (`[]`)，元組是不可變的 (`()`)。當您需要新增、刪除或變更元素時，請使用清單。將元組用於異質資料、字典鍵、函數傳回值的固定集合，或當您想要表示「這不應該改變」時。元組的記憶體效率稍高，可以用作 set/dict 鍵；列表不能。
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### Q2：全域解釋器鎖定（GIL）如何影響我的程式碼，我該怎麼辦？
+**答：** GIL 可防止多個執行緒同時執行 Python 字節碼，使執行緒對於 CPU 密集型工作無效。對於 I/O 密集型任務（網路請求、檔案 I/O），`threading` 或`asyncio`可以正常運作，因為 GIL 在 I/O 期間被釋放。對於 CPU 密集型任務，請使用 `multiprocessing`（單獨的進程，每個進程都有自己的 GIL），或卸載到在內部釋放 GIL 的 C 擴充（NumPy、Cython、Numba）。
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### Q3：我應該在任何地方使用類型提示嗎？實際的權衡是什麼？
+**A:** 類型提示 (`def greet(name: str) -> str:`) 是可選的，並且在執行時不強制執行。它們改進了 IDE 自動完成、透過靜態分析工具 (mypy) 捕獲錯誤以及記錄意圖。代價是額外的冗長和高級類型的學習曲線（`Union`、`Generic`、`Protocol`）。建議：在任何超過 500 行的項目中對函數簽名使用類型提示；在簡短的腳本中謹慎使用它們。在 CI 中啟用 mypy 以逐步執行。
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### Q4：Python 中處理異常的最佳實踐是什麼？
+**答：** 捕獲特定異常，而不是純粹的 `except:`（它也捕獲`SystemExit`和 `KeyboardInterrupt`）。使用`try/except/else/finally`將快樂路徑邏輯與錯誤處理分開。為庫定義自訂異常層次結構。永遠不要在性能敏感的程式碼中使用異常來控制流——它們很慢。使用`logging.exception()`記錄異常以捕獲完整的回溯。
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### Q5：生成器如何節省內存，什麼時候應該在列表上使用它們？
+**答：** 生成器會延遲生成值（一次一個，按需生成），而不是在記憶體中建立整個列表。對於大型資料集（數百萬行、無限序列、流資料），生成器使用恆定內存，無論大小如何。當您迭代一次並且不需要索引或`len()`時，請使用生成器。當您需要隨機存取、多次迭代或集合較小時，請使用清單。
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：建立帶有排名的詞頻計數器
+**問題陳述：**給定一個大的文本文件，統計每個單字的頻率，按頻率進行排名（降序），並返回前 N 個結果。處理不區分大小寫、標點符號的問題，並有效處理太大而無法放入記憶體的檔案。
+**第 1 步 — 了解問題：**
+我們需要：(1) 讀取文本，(2) 拆分為單詞，(3) 大小寫標準化，(4) 去掉標點符號，(5) 計算出現次數，(6) 按計數降序排序，(7) 返回前 N 個。 「太大而無法放入記憶體」約束意味著我們應該使用生成器逐行處理。
+**第 2 步 — 確定方法：**
+- 使用`re.finditer`進行高效的單字擷取，無需建立中間清單。
+- 使用`collections.Counter`實作每個字的 O(1) 增量。
+- 使用 `Counter.most_common(n)`，它在內部使用堆疊 - O(k log n) 而不是 O(n log n) 進行完全排序。
+- 透過生成器逐行處理以保持記憶體恆定。
+**第 3 步 — 實施解決方案：**
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 記憶體：記憶體中只有計數器字典（每個唯一單字一個條目），而不是檔案內容。對於英文文本，~100K 唯一單字 ≈ 幾 MB。
+- 時間：掃描所有單字的 O(W) + 用於前 N 個提取的 O(U log N)，其中 W = 總單詞，U = 唯一單字。
+- 邊緣情況：正規表示式保留縮寫中的撇號（「不」）。 Unicode 文字需要`re.UNICODE`標誌或不同的模式。
+### 問題 2：實作執行緒安全的 LRU 快取
+**問題陳述：** 從頭開始建立一個執行緒安全的最近最少使用（LRU）緩存，支援 O(1) 的 get 和 put 操作，並在超出容量時自動逐出最近最少使用的項目。
+**第 1 步 — 了解問題：**
+LRU 快取需要：(1) 按鍵快速尋找 → 雜湊映射，(2) 快速以新近度排序 → 雙鍊錶，(3) 執行緒安全 → 鎖定。在`get(key)`上：將專案移到前面。在`put(key, val)`上：插入在前面；如果超出容量，請從背面移除。
+**第 2 步 — 確定方法：**
+- Python 的`dict`保持插入順序（3.7+），因此我們可以使用有序字典方法：刪除並重新插入以移動到末尾。
+- 為了線程安全，使用`threading.Lock`進行互斥。
+- 替代方案：使用具有`move_to_end()`的`collections.OrderedDict`。
+**第 3 步 — 實施解決方案：**
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 时间复杂度：`get` 和`put`均为 O(1) —`OrderedDict.move_to_end()`和`popitem()`均为 O(1)。
+- 线程安全：`Lock` 确保原子性。为了获得更高的吞吐量，请考虑`threading.RLock`或读写锁定模式，但对于大多数用例，简单的锁定就足够了。
+- 生产说明：对于单线程代码，`functools.lru_cache` 更简单并用 C 实现以获得更好的性能。
+### 問題 3：解析與評估數學表達式
+**問題陳述：** 編寫一個解析器，它接受像`"3 + 4 * 2 / (1 - 5)"`這樣的字串，並根據運算子優先權和括號正確地評估它。
+**第 1 步 — 了解問題：**
+這需要：(1) 將輸入字串標記為數字、運算子和括號，(2) 以正確的優先權進行解析（`*`和`/`在`+`和`-`之前），(3) 處理巢號。幼稚的從左到右的評估會給出錯誤的結果。
+**第 2 步 — 確定方法：**
+經典的解決方案是**調車場演算法**（Dijkstra），它將中綴轉換為後綴（逆波蘭表示法），然後評估後綴。或者，使用遞歸下降解析器。特別是對於 Python，我們還可以使用`ast.literal_eval`進行安全評估 - 但讓我們正確實現它。
+**第 3 步 — 實施解決方案：**
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 正確性：`3 + 4 * 2 / (1 - 5)`→`3 + 8 / (-4)`→`3 + (-2)`→`1.0`。正確的。
+- 時間：標記化 O(N)、調車場 O(N)、評估 O(N) — 總體 O(N)。
+- 要處理的邊緣情況：負數（在一元`-`之前加上`0`）、除以零（新增錯誤處理）、無效輸入（驗證標記）。
+- Pythonic 替代方案：`ast.parse(expr, mode='eval')`具有自訂節點訪客，可在沒有`eval()`的情況下進行安全評估。
+### 問題 4：建立具有即時資料更新的 CLI 儀表板
+**問題陳述：** 建立一個基於終端的儀表板，顯示即時更新的系統指標（CPU、記憶體、磁碟），並具有顏色編碼的閾值和響應式佈局。
+**第 1 步 — 了解問題：**
+我們需要：（1）定期系統度量收集，（2）帶有遊標控制的終端渲染，（3）基於閾值的顏色輸出，（4）用於退出的非阻塞鍵盤輸入。这是带有渲染循环的生产者-消费者模式。
+**第 2 步 — 確定方法：**
+- 使用`psutil`進行跨平台系統指標。
+- 使用 ANSI 轉義碼進行遊標定位和顏色（或使用`rich`函式庫實作更高階的 API）。
+- 使用`time.sleep`作為更新間隔。
+- 結構為：資料收集→格式化→渲染管線。
+**第 3 步 — 實施解決方案：**
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+**第 4 步 — 驗證與最佳化：**
+-`cpu_percent(interval=0.5)`阻塞 0.5 秒進行測量 — 這是正確的方法（非阻塞模式在第一次呼叫時給出 0%）。
+- ANSI 程式碼適用於現代 Windows 終端機和所有 Unix 終端機。對於舊版 Windows cmd，請新增`os.system('color')`或使用`colorama`。
+- 生產升級：使用`rich`函式庫 (`rich.live`) 實作無閃爍渲染、自動佈局和跨平台相容性。
+- 可擴展性：每個指標都是獨立的函數，可以輕鬆添加 GPU 溫度、進程數或網路連接。
 ---
 
 ＃＃ 概括

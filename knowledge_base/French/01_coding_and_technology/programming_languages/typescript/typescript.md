@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "TypeScript"
-description : "Référence complète sur le langage de programmation TypeScript couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "TypeScript"
+description: "Comprehensive reference for the TypeScript programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [dactylographié, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "34 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [typescript, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Tapuscrit
 TypeScript est un sur-ensemble de JavaScript typé statiquement développé par Microsoft (dirigé par Anders Hejlsberg) et publié pour la première fois en 2012. Il ajoute des annotations de type facultatives, des interfaces, des génériques et des fonctionnalités avancées de système de type à JavaScript, puis se compile en JavaScript simple qui s'exécute partout où JavaScript s'exécute. TypeScript n'est pas un langage ou un moteur d'exécution distinct ; c'est du JavaScript avec un vérificateur de type.
 TypeScript est devenu la norme pour le développement JavaScript à grande échelle. React, Angular, VS Code, Deno et la plupart des principaux projets JavaScript open source sont écrits en TypeScript. Si vous démarrez un nouveau projet JavaScript de taille importante, TypeScript est la valeur par défaut recommandée.
@@ -52,7 +57,7 @@ TypeScript est devenu la norme pour le développement JavaScript à grande éche
 | **Étape de compilation** | Doit compiler`.ts`→`.js`avant d'exécuter | Utilisez`ts-node`/`tsx`pour le développement ; `tsc`pour la production |
 | **Courbe d'apprentissage** | Le système de types peut être complexe (génériques, types conditionnels) | Commencez par les types de base ; adopter progressivement les fonctionnalités avancées |
 | **Fichiers de définition de type** | Tous les packages npm ne sont pas livrés avec des types | Installez`@types/package-name`à partir de DefinitelyTyped |
-| **Temps de compilation** | La vérification du type des grands projets peut être lente | Utilisez les références du projet,`isolatedModules`ou`swc`|
+| **Temps de compilation** | La vérification du type des grands projets peut être lente | Utilisez des références de projet,`isolatedModules`ou`swc`|
 | **Faux sentiment de sécurité** | Les types ne garantissent pas l'exactitude de l'exécution | Combiner avec la validation d'exécution (Zod, io-ts) |
 ---
 
@@ -119,7 +124,7 @@ const user: User = {
 };
 ```
 
-### Génériques
+### Génériques
 ```typescript
 // Generic function — works with any type while preserving type safety
 function first<T>(arr: T[]): T | undefined {
@@ -806,6 +811,398 @@ CMD ["node", "dist/index.js"]
 | Tout nouveau projet JavaScript | Le coût de l’ajout ultérieur de TypeScript est élevé | JS simple pour les petits scripts uniquement |
 | Bibliothèques / packages npm | Les consommateurs bénéficient de la saisie semi-automatique et de la vérification du type | -- |
 **Règle générale** : si votre projet JavaScript comporte plus de quelques centaines de lignes, utilisez TypeScript.
+---
+
+## Questions et réponses synthétiques
+### Q1 : Quelle est la différence entre`type`et`interface`, et quand dois-je les utiliser ?
+**R :** Les deux définissent des formes d'objet, mais ils ont des fonctionnalités différentes. `interface`prend en charge la fusion de déclarations (fusion de plusieurs déclarations portant le même nom),`extends`pour l'héritage et constitue le choix idiomatique pour les API publiques. `type`prend en charge les types d'union, les types d'intersection, les types mappés, les types conditionnels et les types littéraux de modèles — tout ce qui est avancé. Bonne pratique : utilisez`interface`pour les formes d'objet et les API publiques ; utilisez`type`pour les unions, les utilitaires et les opérations de type complexe.
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Q2 : Comment fonctionnent les génériques et pourquoi sont-ils importants ?
+**R :** Les génériques vous permettent d'écrire des fonctions, des classes et des types qui fonctionnent avec n'importe quel type tout en préservant la sécurité des types. Au lieu de`any`(qui perd les informations de type), les génériques préservent la relation entre les types d'entrée et de sortie. Ils constituent la base d’un code réutilisable et de type sécurisé.
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3 : Que sont les types d'utilitaires et lesquels dois-je connaître ?
+**R :** TypeScript fournit des types d'utilitaires intégrés qui transforment les types existants. Les plus importants :`Partial<T>`(tous facultatifs),`Required<T>`(tous requis),`Pick<T, K>`(sélectionner les touches),`Omit<T, K>`(exclure les clés),`Record<K, V>`(carte clé-valeur),`Exclude<T, U>`(supprimer de l'union),`ReturnType<T>`(type de retour de fonction d'extraction),`Awaited<T>`(déballer Promesse). Apprenez-les : ils éliminent la plupart des besoins en opérations de type personnalisé.
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4 : Comment puis-je saisir du code asynchrone et gérer les erreurs de manière sécurisée ?
+**A :** Les fonctions asynchrones renvoient automatiquement`Promise<T>`où T est le type de retour. Utilisez`await`pour déballer la promesse. Pour la gestion des erreurs, TypeScript n'a pas d'exceptions typées, mais vous pouvez créer des protections de type et des types de résultats. Le « modèle de résultat » (inspiré de Rust) permet la gestion des erreurs au moment de la compilation.
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5 : Que sont les fichiers de déclaration (.d.ts) et comment utiliser les types tiers ?
+**A :** Les fichiers de déclaration décrivent les types de bibliothèques JavaScript qui n'ont pas de types TypeScript intégrés. Ils contiennent uniquement des informations de type (pas de code d'exécution). Installez les types gérés par la communauté à partir de DefinitelyTyped :`npm install --save-dev @types/lodash`. Pour vos propres bibliothèques, ajoutez un champ`types`dans`package.json`ou incluez des fichiers`.d.ts`à côté de votre source. Utilisez`declare module`pour les déclarations ambiantes.
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Créer un émetteur d'événements de type sécurisé
+**Énoncé du problème :** Créez un émetteur d'événements générique et de type sécurisé dans TypeScript où chaque nom d'événement correspond à un type de charge utile spécifique. Le compilateur doit détecter les noms d'événements et les types de charge utile incorrects au moment de la compilation.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin d'un système d'événements dans lequel : (1) les événements sont définis avec leurs types de charge utile, (2)`emit`n'accepte que les noms d'événements valides avec des charges utiles correctes, (3)`on`n'accepte que les noms d'événements valides avec des gestionnaires correctement saisis. Cela nécessite des types mappés et des génériques sur une interface de mappage d'événements.
+**Étape 2 — Identifiez l'approche :**
+- Définir un type`EventMap`:`{ [eventName: string]: payloadType }`.
+- Utilisez`keyof EventMap`pour contraindre les noms d'événements.
+- Utilisez`EventMap[K]`pour obtenir le type de charge utile pour un événement spécifique.
+- Stockez les auditeurs dans un`Map<string, Function[]>`.
+**Étape 3 — Mettre en œuvre la solution :**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Sécurité du type : le compilateur détecte les mauvais noms d'événements et les mauvaises formes de charge utile au moment de la compilation.
+-`on`renvoie une fonction de désabonnement pour un nettoyage pratique.
+-`once`encapsule l'écouteur pour qu'il se désabonne automatiquement après la première invocation.
+- Pour la production : ajoutez`listenerCount`,`removeAllListeners`et envisagez d'utiliser`AbortSignal`pour l'annulation.
+### Problème 2 : implémenter un générateur de requêtes SQL type-safe
+**Énoncé du problème :** Créez un générateur de requêtes SQL dans lequel les noms et types de colonnes sont dérivés d'une interface TypeScript. Le constructeur doit empêcher les noms de colonnes non valides et les incompatibilités de types au moment de la compilation.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) des noms de colonnes limités à`keyof T`, (2) des valeurs de clause WHERE saisies en fonction de la colonne, (3) une API chaînable pour créer des requêtes. Cela nécessite des génériques contraints par`Record<string, unknown>`.
+**Étape 2 — Identifiez l'approche :**
+- Utilisez`keyof T`pour les contraintes de nom de colonne.
+- Utilisez`T[K]`pour les contraintes de type valeur.
+- Construire une chaîne SQL avec des requêtes paramétrées (empêcher l'injection SQL).
+- Les méthodes chaînables renvoient`this`.
+**Étape 3 — Mettre en œuvre la solution :**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Prévention des injections SQL : toutes les valeurs passent par des requêtes paramétrées (`$1`,`$2`), jamais interpolées.
+- Sécurité des types : les noms de colonnes et les types de valeurs sont vérifiés au moment de la compilation.
+- Extensibilité : ajoutez les méthodes`join`,`groupBy`,`having`,`insert`,`update`suivant le même modèle.
+- Production : utilisez`kysely`ou`drizzle-orm`— ils offrent ce type de sécurité avec une couverture SQL complète.
+### Problème 3 : implémenter une machine à états finis avec sécurité de type
+**Énoncé du problème :** Créez une machine à états finis de type sécurisé où les transitions valides sont appliquées au moment de la compilation. Chaque état peut avoir des actions d'entrée/sortie, et la machine doit suivre l'état actuel.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) des états et des événements définis comme types, (2) des transitions valides mappées au niveau du type, (3) le compilateur empêche les transitions non valides, (4) un suivi de l'état d'exécution avec des rappels. Cela nécessite des types mappés et des types conditionnels.
+**Étape 2 — Identifiez l'approche :**
+- Définir un`TransitionMap`:`{ [State]: { [Event]: NextState } }`.
+- Utilisez des génériques pour contraindre`send(event)`en fonction de l'état actuel.
+- Suivre l'état au moment de l'exécution avec une variable.
+- Prise en charge des rappels d'entrée/sortie par état.
+**Étape 3 — Mettre en œuvre la solution :**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Sécurité d'exécution :`send`se déclenche sur des transitions invalides.
+- Sécurité du type : le type`EventsFor`extrait les événements valides par état au moment de la compilation.
+- Les rappels d'entrée/sortie se déclenchent automatiquement lors des transitions.
+- Pour la production : utilisez`xstate`— il fournit une bibliothèque complète de machines d'état avec débogage visuel, états hiérarchiques, gardes et actions.
 ---
 
 ## Résumé

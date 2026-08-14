@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Prologue"
-description : "Référence complète pour le langage de programmation Prolog couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Prolog"
+description: "Comprehensive reference for the Prolog programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [prologue, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "25 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [prolog, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "25 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Prologue
 Prolog (Programming in Logic) est un langage de programmation logique créé en 1972 par Alain Colmerauer et Philippe Roussel. Contrairement à tous les autres langages de cette liste, Prolog ne dit pas à l'ordinateur *comment* résoudre un problème — vous déclarez *ce* qui est vrai (faits et règles), et le moteur d'inférence de Prolog trouve la réponse par déduction logique.
 Prolog était le langage de choix pour les systèmes experts, le traitement du langage naturel et la recherche sur l'IA dans les années 1980. Il a alimenté le projet japonais de système informatique de cinquième génération et a été utilisé dans Watson d'IBM pour la compréhension du langage naturel. Aujourd'hui, Prolog est utilisé dans la résolution de contraintes, la planification, l'inférence de types, le raisonnement juridique et partout où les problèmes sont naturellement exprimés sous forme de relations logiques.
@@ -532,6 +537,129 @@ swipl -g main -o myapp.sav -c main.pl
 | Science des données / ML | Pas l'écosystème | Python, R |
 | Code critique pour les performances | Prolog est lent pour le calcul | C, C++, Rouille |
 | Programmation générale | Possible mais gênant | Python, Go, Java |
+---
+
+## Questions et réponses synthétiques
+### Q1 : En quoi l'unification de Prolog diffère-t-elle de l'affectation dans d'autres langages ?
+**R :** L'unification est une correspondance de modèles bidirectionnelle, pas une affectation :
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2 : Comment fonctionne le backtracking dans Prolog ?
+**R :** Lorsqu'un objectif échoue, Prolog revient au dernier point de choix et essaie l'alternative suivante :
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3 : Comment puis-je travailler avec des listes dans Prolog ?
+**R :** Les listes utilisent la correspondance de modèle tête/queue :
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4 : Quand dois-je utiliser Prolog plutôt que d'autres langages ?
+**R :** Prolog excelle dans :
+- Satisfaction des contraintes (planification, énigmes)
+- Systèmes basés sur des règles (systèmes experts, validation)
+- Parcours de graphiques/arbres
+- Traitement du langage naturel
+- Calcul symbolique
+- Tout problème exprimable sous forme de relations logiques
+### Q5 : Quels sont les pièges courants dans Prolog ?
+**R :** Problèmes clés :
+- Récursivité infinie : placez toujours le cas de base en premier
+- Retour en arrière involontaire : utilisez la coupe`!`ou`once/1`
+- Une vérification se produit – `X = f(X)` boucles par défaut (utilisez `unify_with_occurs_check`)
+- Coupes vertes (optimisation) vs coupes rouges (changement de sens) — préférez le vert
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Résoudre le casse-tête des N-Reines
+**Étape 1 : Comprendre le problème**
+Placez N reines sur un échiquier NxN afin que deux reines ne s'attaquent pas.
+**Étape 2 : Identifiez l'approche**
+Utilisez la génération par contraintes : placez les reines colonne par colonne, en vérifiant la sécurité.
+**Étape 3 : Mettre en œuvre**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Étape 4 : Vérifier**
+`?- n_queens(8, Qs).`devrait trouver 92 solutions.
+### Problème 2 : Construire un système expert simple
+**Étape 1 : Comprendre le problème**
+Diagnostiquer les problèmes de voiture en fonction des symptômes.
+**Étape 2 : Identifiez l'approche**
+Utilisez les règles Prolog pour coder les connaissances de diagnostic.
+**Étape 3 : Mettre en œuvre**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Étape 4 : Prolonger**
+Ajoutez des scores de confiance, demandez à l’utilisateur les symptômes de manière interactive et enchaînez les diagnostics.
 ---
 
 ## Résumé

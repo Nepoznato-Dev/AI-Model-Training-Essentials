@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #PHP
 PHP (Hypertext Preprocessor) adalah bahasa skrip sisi server yang dibuat oleh Rasmus Lerdorf pada tahun 1994 dan pertama kali dirilis pada tahun 1995. Awalnya dirancang untuk menghasilkan halaman web dinamis, PHP telah berkembang menjadi bahasa tujuan umum berfitur lengkap. Ini mendukung sekitar 75% dari semua situs web dengan bahasa sisi server yang dikenal, termasuk WordPress, Facebook (awalnya), Wikipedia, Slack, dan jutaan situs lainnya.
 PHP modern (8.x) adalah bahasa yang sangat berbeda dari PHP awal tahun 2000-an. Sekarang ia memiliki properti yang diketik, ekspresi kecocokan, enum, serat, kelas hanya baca, dan sistem tipe yang kuat. Meskipun reputasinya di kalangan pengembang (sering dikritik karena inkonsistensi), PHP praktis, digunakan secara luas, dan terus mengalami peningkatan.
@@ -827,6 +828,332 @@ CMD ["php-fpm"]
 | Aplikasi waktu nyata | Bukan kekuatan PHP | Node.js, Buka |
 | Ilmu data / ML | Bukan ekosistem | Piton, R |
 | Aplikasi desktop/seluler | Tidak cocok | Gunakan bahasa asli |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara`==`dan`===`di PHP?
+**A:**`==`adalah perbandingan longgar — ia melakukan pemaksaan tipe sebelum membandingkan (`"0" == false`adalah`true`). `===`adalah perbandingan yang ketat — ia memeriksa nilai dan jenis (`"0" === false`adalah`false`). Selalu gunakan`===`kecuali Anda secara khusus memerlukan paksaan tipe. Ini adalah salah satu sumber bug PHP yang paling umum.
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### Q2: Bagaimana cara kerja namespace dan pemuatan otomatis PHP?
+**A:** Namespace mencegah tabrakan nama kelas. Pemuatan otomatis PSR-4 memetakan struktur namespace ke struktur direktori —`App\Controllers\UserController`memetakan ke`src/Controllers/UserController.php`. Komposer menangani pemuatan otomatis melalui`composer.json`. Selalu gunakan namespace dan PSR-4 di PHP modern.
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### Q3: Apa itu atribut PHP 8, dan bagaimana hubungannya dengan framework?
+**A:** Atribut (PHP 8) adalah anotasi metadata terstruktur untuk kelas, metode, properti, dan parameter. Mereka adalah PHP yang setara dengan anotasi Java atau atribut C#. Kerangka kerja seperti Laravel dan Symfony menggunakannya secara ekstensif untuk perutean, validasi, dan injeksi ketergantungan.
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### Q4: Bagaimana cara menangani kesalahan dengan benar di PHP modern?
+**A:** PHP memiliki kesalahan (E_WARNING, E_NOTICE) dan pengecualian. PHP modern menggunakan pengecualian secara eksklusif. Gunakan coba/tangkap untuk kegagalan yang diharapkan, kelas pengecualian khusus untuk kesalahan domain, dan`set_error_handler`untuk mengonversi kesalahan menjadi pengecualian. PHP 7+`Throwable`adalah antarmuka dasar untuk kesalahan dan pengecualian.
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### Q5: Apa itu fiber PHP, dan apa hubungannya dengan async?
+**A:** Fiber (PHP 8.1) adalah thread kooperatif yang ringan — dapat menangguhkan dan melanjutkan eksekusi. Mereka adalah dasar untuk PHP async tetapi levelnya rendah. Kerangka kerja seperti Amp dan ReactPHP menggunakan serat secara internal. Untuk sebagian besar aplikasi, gunakan kerangka kerja asinkron, bukan serat mentah.
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membangun Saluran Pipa Middleware
+**Pernyataan Masalah:** Mengimplementasikan pipeline middleware untuk kerangka web PHP di mana setiap middleware dapat memproses permintaan sebelum dan sesudah middleware berikutnya dalam rantai.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) antarmuka `Middleware`, (2) pipeline yang menghubungkan middleware, (3) setiap middleware menerima permintaan dan callback `$next`, (4) middleware dapat memodifikasi permintaan (sebelum) dan respons (setelah). Ini adalah model bawang yang digunakan oleh Laravel, PSR-15, dan kerangka serupa.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Definisikan`MiddlewareInterface`dengan`process(Request, RequestHandler): Response`.
+- Gunakan pengurangan array untuk menyusun middleware menjadi satu penangan.
+- Setiap middleware membungkus middleware berikutnya, membuat panggilan fungsi bersarang.
+**Langkah 3 — Terapkan Solusi:**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Urutan penting: yang pertama disalurkan = terluar (dieksekusi pertama berdasarkan permintaan, terakhir berdasarkan respons).
+- Setiap middleware dapat melakukan hubungan arus pendek dengan mengembalikan Respons tanpa memanggil`$next`.
+- Produksi: gunakan PSR-15`MiddlewareInterface`untuk interoperabilitas dengan kerangka PSR-15 apa pun.
+### Masalah 2: Mengimplementasikan Repositori dengan Query Builder
+**Pernyataan Masalah:** Bangun pembuat kueri yang lancar yang menghasilkan SQL dengan aman dengan kueri berparameter, mendukung rangkaian, dan terintegrasi dengan pola repositori.
+**Langkah 1 — Pahami Masalahnya:**
+Kita memerlukan: (1) kelas`QueryBuilder`dengan metode yang dapat dirantai (`select`,`where`,`orderBy`,`limit`), (2) kueri berparameter untuk mencegah injeksi SQL, (3)`Repository`yang menggunakan pembuat kueri untuk akses data.
+**Langkah 2 — Identifikasi Pendekatannya:**
+- Pembangun mengumpulkan fragmen dan parameter SQL.
+-`toSql()`menghasilkan kueri akhir dengan placeholder.
+-`getParameters()`mengembalikan nilai terikat.
+- Repositori membungkus pembuat dengan metode khusus domain.
+**Langkah 3 — Terapkan Solusi:**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+**Langkah 4 — Verifikasi dan Optimalkan:**
+- Pencegahan injeksi SQL: semua nilai melewati kueri berparameter (placeholder `?`).
+- API yang dapat dirantai: setiap metode mengembalikan`$this`untuk komposisi yang lancar.
+- Produksi: gunakan`illuminate/database`(pembuat kueri Laravel) atau`doctrine/dbal`untuk solusi komprehensif dan teruji.
 ---
 
 ## Ringkasan

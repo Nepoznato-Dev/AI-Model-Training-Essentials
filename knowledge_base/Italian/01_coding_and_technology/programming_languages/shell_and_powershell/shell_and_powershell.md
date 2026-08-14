@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Shell e PowerShell
 Lo scripting della shell si riferisce alla scrittura di script per interpreti della riga di comando. Le due shell più importanti sono **Bash** (Bourne Again Shell) — quella predefinita su Linux e macOS — e **PowerShell** — la moderna shell multipiattaforma e linguaggio di scripting di Microsoft. Gli script della shell automatizzano le attività di amministrazione del sistema, creano pipeline, elaborazione di file e flussi di lavoro di distribuzione.
-Ogni sviluppatore, ingegnere DevOps e amministratore di sistema necessita di competenze di scripting della shell. Che tu stia distribuendo un server Web, elaborando file di registro, configurando pipeline CI/CD o automatizzando i backup, lo scripting della shell è lo strumento per il lavoro.
+Ogni sviluppatore, ingegnere DevOps e amministratore di sistema necessita di competenze di scripting della shell. Che tu stia distribuendo un server Web, elaborando file di registro, configurando pipeline CI/CD o automatizzando i backup, lo scripting della shell è lo strumento adatto al lavoro.
 ---
 
 ## Perché Shell/PowerShell sono importanti
@@ -857,6 +858,152 @@ Publish-Module @publishParams
 | Analisi del registro | Brevi battute grep/awk | Python, SQL per analisi complesse |
 | Applicazioni complesse | Non adatto | Python, Go, Java |
 | Script multipiattaforma | PowerShell 7+ funziona ovunque | Python per script veramente portabili |
+---
+
+## Domande e risposte sintetiche
+### D1: Qual è la differenza tra virgolette singole e doppie in Bash?
+**R:** Le virgolette doppie consentono l'espansione variabile; le virgolette singole sono letterali:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### D2: Come gestisco gli errori negli script di shell?
+**R:** Utilizza`set -e`per uscire in caso di errori e eseguire trap per la pulizia:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### D3: Come elaboro correttamente gli argomenti della riga di comando?
+**R:** Utilizza`getopts`per flag e parametri posizionali:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### D4: Cos'è la pipeline PowerShell e in cosa differisce da Bash?
+**R:** PowerShell reindirizza gli oggetti, non il testo. Ogni oggetto mantiene le sue proprietà:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: Come posso scrivere script multipiattaforma?
+**R:** Per Bash: usa`#!/usr/bin/env bash`, evita flag specifici di GNU. Per PowerShell: utilizzare`pwsh`(PowerShell Core) che viene eseguito su Linux/macOS/Windows.
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: script di elaborazione immagini in batch (Bash)
+**Passaggio 1: comprendere il problema**
+Ridimensiona tutte le immagini PNG in una directory a una larghezza massima di 800 px.
+**Passaggio 2: identificare l'approccio**
+Utilizzare`find`per individuare i file e`convert`(ImageMagick) per ridimensionarli.
+**Passaggio 3: implementazione**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Passaggio 4: Estendi**
+Aggiungi barra di avanzamento, gestione degli errori per immagini corrotte ed elaborazione parallela con `xargs -P`.
+### Problema 2: rotazione automatizzata dei log (Bash)
+**Passaggio 1: comprendere il problema**
+Ruota i file di registro ogni giorno, comprimi i vecchi registri ed elimina i registri più vecchi di 30 giorni.
+**Passaggio 2: identificare l'approccio**
+Utilizza`find`con filtri basati sul tempo e`gzip`per la compressione.
+**Passaggio 3: implementazione**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Passaggio 4: pianificazione**
+Aggiungi al crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Problema 3: controllo dello stato del servizio Windows (PowerShell)
+**Passaggio 1: comprendere il problema**
+Controlla se i servizi critici sono in esecuzione e invia un avviso se qualcuno viene interrotto.
+**Passaggio 2: identificare l'approccio**
+Utilizza`Get-Service`e filtra per i servizi interrotti.
+**Passaggio 3: implementazione**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Passaggio 4: automatizza**
+Pianifica come un lavoro dell'Utilità di pianificazione di Windows in esecuzione ogni 5 minuti.
 ---
 
 ## Riepilogo

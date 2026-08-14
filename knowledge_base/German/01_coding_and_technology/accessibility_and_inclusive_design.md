@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Barrierefreiheit und integratives Design
-Barrierefreiheit (oft als a11y abgekürzt) ist die Praxis, Software für jedermann nutzbar zu machen – auch für Menschen mit Seh-, Hör-, motorischen, kognitiven und neurologischen Behinderungen. Es ist kein Nice-to-have; In vielen Ländern ist dies eine gesetzliche Anforderung, eine moralische Verpflichtung und eine gute Technik. Barrierefreie Software ist eine bessere Software für alle, weil die Designentscheidungen, die behinderten Benutzern helfen – klare Struktur, Tastaturnavigation, ausreichender Kontrast, lesbarer Text – das Erlebnis für alle Benutzer verbessern.
+Barrierefreiheit (oft als a11y abgekürzt) ist die Praxis, Software für jedermann nutzbar zu machen – auch für Menschen mit Seh-, Hör-, motorischen, kognitiven und neurologischen Behinderungen. In vielen Ländern ist dies gesetzlich vorgeschrieben und eine gängige technische Praxis. Barrierefreie Software ist eine bessere Software für alle, da die Designentscheidungen, die behinderte Benutzer unterstützen – klare Struktur, Tastaturnavigation, ausreichender Kontrast, lesbarer Text – das Erlebnis für alle Benutzer verbessern.
 ---
 
 ## Wer profitiert von Barrierefreiheit?
@@ -72,14 +73,14 @@ Die Web Content Accessibility Guidelines (WCAG) sind der internationale Standard
 ### Wichtige Erfolgskriterien (AA-Stufe)
 | Kriterium | Anforderung | So erreichen Sie |
 |-----------|-------------|---------------|
-| **1.1.1 Nicht-Text-Inhalt** | Alle Bilder haben Textalternativen | `alt`Attribute; `aria-label`für Symbole |
+| **1.1.1 Nicht-Text-Inhalt** | Alle Bilder haben Textalternativen |  `alt`-Attribute; `aria-label`für Symbole |
 | **1.3.1 Informationen und Beziehungen** | Struktur programmatisch vermittelt | Semantisches HTML; Überschriften; Listen; Wahrzeichen |
 | **1.4.3 Kontrast (Minimum)** | Der Text hat ein Kontrastverhältnis von mindestens 4,5:1 | Test mit Kontrastprüfern; Wählen Sie zugängliche Farbpaletten |
 | **1.4.4 Textgröße ändern** | Die Textgröße kann ohne Verlust auf 200 % geändert werden | Verwenden Sie relative Einheiten (rem, em); responsives Design |
 | **2.1.1 Tastatur** | Alle Funktionen über die Tastatur verfügbar | Keine Tastaturfallen; sichtbare Fokusindikatoren |
 | **2.4.3 Fokusreihenfolge** | Fokusreihenfolge bewahrt Bedeutung und Bedienbarkeit | Logische Tab-Reihenfolge; DOM-Reihenfolge entspricht visueller Reihenfolge |
-| **2.4.7 Fokus sichtbar** | Der Tastaturfokus wird visuell angezeigt | CSS `:focus-visible`-Stile; niemals`outline: none`ersatzlos |
-| **3.3.2 Etiketten oder Anweisungen** | Eingaben haben Beschriftungen | `<label>`Elemente; `aria-label`|
+| **2.4.7 Fokus sichtbar** | Der Tastaturfokus wird visuell angezeigt | CSS `:focus-visible`-Stile; nie`outline: none`ohne Ersatz |
+| **3.3.2 Etiketten oder Anweisungen** | Eingaben haben Beschriftungen |  `<label>`-Elemente; `aria-label`|
 | **4.1.2 Name, Rolle, Wert** | UI-Komponenten haben zugängliche Namen und Rollen | ARIA-Attribute; semantisches HTML |
 ---
 
@@ -104,7 +105,7 @@ ARIA fügt HTML-Elementen, die keine integrierte Semantik haben, Informationen z
 | `aria-live`| Kündigt dynamische Inhaltsänderungen an | Live-Updates; Benachrichtigungen |
 | `aria-disabled`| Zeigt an, dass das Element deaktiviert ist | Ausgegraute Schaltflächen |
 ### Die erste Regel von ARIA
-> **Verwenden Sie ARIA nicht, wenn Sie stattdessen natives HTML verwenden können.** Ein`<button>`ist bereits zugänglich. Ein`<div role="button">`erfordert, dass Sie Tastaturhandhabung, Fokusverwaltung und Unterstützung für Bildschirmleseprogramme manuell hinzufügen. Verwenden Sie zuerst semantisches HTML. ARIA nur, wenn native Elemente die Aufgabe nicht erfüllen können.
+> **Verwenden Sie ARIA nicht, wenn Sie stattdessen natives HTML verwenden können.** Ein`<button>`ist bereits zugänglich. Bei einem`<div role="button">`müssen Sie die Tastaturbedienung, die Fokusverwaltung und die Unterstützung für Bildschirmleseprogramme manuell hinzufügen. Verwenden Sie zuerst semantisches HTML. ARIA nur, wenn native Elemente die Aufgabe nicht erfüllen können.
 ---
 
 ## Tastaturnavigation
@@ -112,7 +113,7 @@ ARIA fügt HTML-Elementen, die keine integrierte Semantik haben, Informationen z
 |-----|-----|
 | **Tabulatortaste** | Fokus auf das nächste interaktive Element verschieben |
 | **Umschalt + Tab** | Fokus auf das vorherige interaktive Element verschieben |
-| **Eingabetaste / Leertaste** | Aktivieren Sie das fokussierte Element (Schaltfläche, Link) |
+| **Eingabe / Leertaste** | Aktivieren Sie das fokussierte Element (Schaltfläche, Link) |
 | **Pfeiltasten** | Navigieren innerhalb von Komponenten (Menüs, Registerkarten, Optionsgruppen) |
 | **Flucht** | Schließen Sie ein Dialogfeld, ein Menü oder ein Popover |
 | **Startseite / Ende** | Zum ersten/letzten Element in einer Liste springen |
@@ -121,7 +122,7 @@ ARIA fügt HTML-Elementen, die keine integrierte Semantik haben, Informationen z
 |---------|-----|
 | Der Fokus betritt eine Komponente, kann sie aber nicht verlassen | Stellen Sie sicher, dass Tab den Fokus nach außen verschiebt. handle Escape |
 | Modal fängt den Fokus nicht ein | Der Fokus sollte innerhalb des Modals wechseln; Rückkehr zum Auslöser beim Schließen |
-| Benutzerdefinierte Komponenten reagieren nicht auf die Tastatur | Keydown-Handler für Enter, Space, Pfeile hinzufügen |
+| Benutzerdefinierte Komponenten reagieren nicht auf die Tastatur | Keydown-Handler für Eingabetaste, Leertaste und Pfeile hinzufügen |
 ---
 
 ## Farbe und visuelles Design
@@ -130,7 +131,7 @@ ARIA fügt HTML-Elementen, die keine integrierte Semantik haben, Informationen z
 | **Kontrastverhältnis** | 4,5:1 für normalen Text; 3:1 für großen Text (18pt+ oder 14pt+ fett) |
 | **Verlassen Sie sich nicht nur auf die Farbe** | Verwenden Sie zusätzlich zur Farbe | Symbole, Text oder Muster
 | **Fokusindikatoren** | Immer sichtbar; hoher Kontrast; nie ersatzlos entfernt |
-| **Größenänderung des Textes** | Das Layout muss bei 200 % Zoom funktionieren |
+| **Größenänderung des Textes** | Das Layout muss bei 200 % Zoom funktionieren |
 | **Reaktionsfähig** | Der Inhalt muss mit einer Breite von 320 Pixeln umbrochen werden (mobil) |
 ### Überlegungen zur Farbenblindheit
 | Geben Sie | ein Betroffene Farben | Design-Tipp |
@@ -165,15 +166,15 @@ ARIA fügt HTML-Elementen, die keine integrierte Semantik haben, Informationen z
 ## Mobile Zugänglichkeit
 | Plattform | Richtlinien | Schlüsselwerkzeuge |
 |----------|-----------|-----------|
-| **iOS** | Richtlinien zur Benutzeroberfläche von Apple (Abschnitt „Barrierefreiheit“) | VoiceOver; Dynamischer Typ; Schaltersteuerung |
+| **iOS** | Richtlinien für die Benutzeroberfläche von Apple (Abschnitt „Barrierefreiheit“) | VoiceOver; Dynamischer Typ; Schaltersteuerung |
 | **Android** | Richtlinien zur Barrierefreiheit von Android | TalkBack; Schalterzugriff; Zum Sprechen auswählen |
 | Mobiles Anliegen | Lösung |
 |---------------|----------|
 | **Ziele berühren** | Mindestens 44×44 Punkte (iOS) / 48×48 dp (Android) |
 | **Screenreader-Unterstützung** | Inhaltsbeschreibungen; Barrierefreiheitsetiketten |
 | **Bewegungsempfindlichkeit** | Respektiere`prefers-reduced-motion`; Vermeiden Sie automatisch abspielende Animationen |
-| **Dynamische Textgröße** | Unterstützt Systemschriftgrößen; Verwenden Sie skalierbare Texteinheiten |
+| **Dynamische Textgröße** | Unterstützt Systemschriftgrößen; skalierbare Texteinheiten verwenden |
 ---
 
 ## Zusammenfassung
-Barrierefreiheit ist kein Feature, das man am Ende hinzufügt – es ist ein Designprinzip, das jede Entscheidung von Anfang an beeinflussen sollte. Verwenden Sie semantisches HTML. Stellen Sie sicher, dass die Tastaturnavigation funktioniert. Achten Sie auf ausreichenden Farbkontrast. Stellen Sie Textalternativen für Nicht-Text-Inhalte bereit. Testen Sie mit Screenreadern und echten behinderten Benutzern. Das Ergebnis ist Software, die für alle besser funktioniert – nicht nur für Menschen mit Behinderungen, sondern auch für Menschen mit vorübergehenden Beeinträchtigungen, situativen Einschränkungen, älteren Geräten, langsamen Verbindungen und den tausend anderen Arten, in denen sich die reale Nutzung von der idealisierten Umgebung des Entwicklers unterscheidet.
+Barrierefreiheit ist ein Designprinzip, das jede Entscheidung von Anfang an beeinflussen sollte, und keine am Ende hinzugefügte Funktion. Verwenden Sie semantisches HTML. Stellen Sie sicher, dass die Tastaturnavigation funktioniert. Achten Sie auf ausreichenden Farbkontrast. Stellen Sie Textalternativen für Nicht-Text-Inhalte bereit. Testen Sie mit Bildschirmlesegeräten und behinderten Benutzern. Das Ergebnis ist Software, die für alle besser funktioniert – auch für diejenigen mit vorübergehenden Beeinträchtigungen, situativen Einschränkungen, älteren Geräten, langsamen Verbindungen und den vielen Unterschieden zwischen der realen Nutzung und einer kontrollierten Entwicklungsumgebung.

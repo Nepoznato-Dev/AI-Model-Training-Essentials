@@ -41,7 +41,7 @@ contribution:
 
 #OCaml
 OCaml (Objective Caml) adalah bahasa pemrograman fungsional yang dikembangkan di INRIA di Perancis, pertama kali dirilis pada tahun 1996. Ini menggabungkan ekspresi pemrograman fungsional dengan fitur-fitur praktis: sistem tipe yang kuat dengan inferensi tipe (Hindley-Milner), pencocokan pola, tipe data aljabar, dan pemrograman berorientasi objek opsional. OCaml mengkompilasi ke kode asli yang cepat dan juga mendukung bytecode.
-Aplikasi dunia nyata OCaml yang paling terkenal adalah perusahaan perdagangan **Jane Street**, yang menggunakan OCaml untuk seluruh infrastruktur perdagangannya. Ini juga digunakan dalam pengembangan kompiler (kompiler Rust awalnya ditulis dalam OCaml), verifikasi formal, sistem keuangan, dan pembuktian teorema.
+Aplikasi OCaml yang paling terkenal di dunia nyata adalah perusahaan perdagangan **Jane Street**, yang menggunakan OCaml untuk seluruh infrastruktur perdagangannya. Ini juga digunakan dalam pengembangan kompiler (kompiler Rust awalnya ditulis dalam OCaml), verifikasi formal, sistem keuangan, dan pembuktian teorema.
 Saudara baru OCaml **Reason** (dikembangkan oleh Facebook/Meta) dan **ReScript** (sebelumnya BuckleScript) menghadirkan sistem tipe dan kinerja OCaml ke pengembangan web, dikompilasi ke JavaScript.
 ---
 
@@ -713,6 +713,122 @@ ENTRYPOINT ["./app"]
 | Ilmu data / ML | Bukan ekosistem | Piton, R |
 | Aplikasi seluler | Tidak cocok | Cepat, Kotlin, Dart |
 | Aplikasi tujuan umum | Mungkin tapi khusus | Ayo, Python, Karat |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Bagaimana cara kerja inferensi tipe OCaml?
+**A:** Sistem tipe Hindley-Milner OCaml menyimpulkan tipe tanpa anotasi:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2: Apa itu tipe data aljabar dan mengapa tipe data tersebut kuat?
+**A:** ADT menggabungkan jenis produk (catatan) dan jenis jumlah (varian):
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3: Bagaimana cara kerja modul dan fungsi?
+**A:** Modul mengatur kode; functors adalah fungsi dari modul ke modul:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4: Apa yang membuat OCaml cepat?
+**A:** OCaml dikompilasi ke kode asli yang efisien:
+- Penghapusan tipe — tidak ada pemeriksaan tipe runtime
+- Pelampung dan bilangan bulat tanpa kotak
+- Pencocokan pola dikompilasi untuk melompati tabel
+- Optimasi panggilan ekor
+- Tidak ada jeda pengumpul sampah (GC tambahan)
+### Q5: Bagaimana OCaml dibandingkan dengan bahasa keluarga ML lainnya?
+**A:** OCaml menyeimbangkan kepraktisan dan kemurnian:
+- vs Haskell: OCaml memiliki fitur penting, status bisa berubah, dan kompilasi lebih cepat
+- vs F#: OCaml memiliki sistem modul yang lebih matang dan dukungan lintas platform yang lebih baik
+- vs Rust: OCaml memiliki GC (tidak ada kepemilikan), namun Rust memiliki FFI dan ekosistem yang lebih baik
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menerapkan Interpreter Type-Safe
+**Langkah 1: Pahami Masalahnya**
+Bangun penerjemah untuk bahasa ekspresi sederhana.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan tipe data aljabar untuk ekspresi dan pencocokan pola untuk evaluasi.
+**Langkah 3: Terapkan**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**Langkah 4: Perpanjang**
+Tambahkan`Let`,`If`,`Lambda`untuk bahasa yang lebih lengkap.
+### Masalah 2: Membangun Parser Sederhana dengan Kombinator
+**Langkah 1: Pahami Masalahnya**
+Parsing ekspresi aritmatika menggunakan kombinator parser.
+**Langkah 2: Identifikasi Pendekatannya**
+Bangun parser kecil dan buatlah.
+**Langkah 3: Terapkan**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**Langkah 4: Menulis**
+Gabungkan parser dengan`map`,`seq`,`alt`, dan`many`untuk mengurai ekspresi penuh.
 ---
 
 ## Ringkasan

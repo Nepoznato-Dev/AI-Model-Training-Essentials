@@ -40,14 +40,14 @@ contribution:
 ---
 
 # Yazma ve İletişimin Temelleri
-Yazma ve iletişim, e-postalar, raporlar, belgeler, sunumlar veya konuşmalar yoluyla fikirleri açık ve etkili bir şekilde aktarma becerileridir. Bilgi çalışmalarının çoğu temelde iletişim çalışmasıdır: Düşüncelerinizi açıklamanız, başkalarını ikna etmeniz, kararları belgelemeniz, spesifikasyonlar yazmanız, bulguları sunmanız ve ekipler arasında işbirliği yapmanız gerekir. Kastettiğinizle birinin anladığı arasındaki fark çoğu sorunun ortaya çıktığı yerdir ve daha iyi iletişim bu farkı daraltır.
+Yazma ve iletişim, e-postalar, raporlar, belgeler, sunumlar veya konuşmalar aracılığıyla fikirleri etkili bir şekilde aktarma becerileridir. Bilgi çalışmalarının çoğu temelde iletişim çalışmasıdır: Profesyonellerin düşüncelerini açıklamaları, başkalarını ikna etmeleri, kararları belgelemeleri, spesifikasyonları yazmaları, bulguları sunmaları ve ekipler arasında işbirliği yapmaları gerekir. Kastedilen ile anlaşılan arasındaki uçurum çoğu sorunun ortaya çıktığı yerdir ve daha iyi iletişim bu açığı daraltır.
 ---
 
 ## Anlaşılır Yazının İlkeleri
 ### Temel İlkeler
 | Prensip | Açıklama | Örnek |
 |-----------|----------------|-----------|
-| **Netlik** | Tam olarak ne demek istediğini söyle; belirsizlikten kaçının | "Sistem saat 15:00 UTC'de yeniden başlatılacak" değil, "Sistem yakında yeniden başlatılacak" |
+| **Netlik** | Tam olarak ne demek istediğini söyle; belirsizlikten kaçının | "Sistem 15:00 UTC'de yeniden başlatılacak" değil, "Sistem yakında yeniden başlatılacak" |
 | **Kısalık** | Gereken en az kelimeyi kullanın | "Yapmamız gerekiyor" → sadece neye ihtiyaç duyulduğunu belirtin |
 | **Özgünlük** | Belirsiz bir dil değil, somut ayrıntılar kullanın | "Gelir üçüncü çeyrekte %15 arttı" değil "Gelir önemli ölçüde arttı" |
 | **Aktif ses** | Konu eylemi gerçekleştirir | "Özellik gönderildi" değil "Ekip özelliği gönderdi" |
@@ -58,7 +58,7 @@ Yazma ve iletişim, e-postalar, raporlar, belgeler, sunumlar veya konuşmalar yo
 | Sorun | Açıklama | Düzelt |
 |-----------|---------------|-----|
 | **Nominalizasyon** | Fiilleri isme çevirmek (düzyazıyı ölüleştirir) | "Karar verdik" değil "Karar verdik" |
-| **Korunma** | Mesajınızı gereksiz yere zayıflatma | "Bu şunu gösteriyor" → "Bu şunu gösteriyor" (kanıtınız olduğunda) |
+| **Korunma** | Mesajınızı gereksiz yere zayıflatma | "Bu şunu gösteriyor" → "Bu gösteriyor" (kanıtınız olduğunda) |
 | ** Aşırı jargon** | Teknik olmayan okuyucularla teknik terimlerin kullanılması | Terimleri açıklayın; analojiler kullanın |
 | **Gelincik sözcükler** | Anlamı baltalayan belirsiz niteleyiciler | "Çok", "oldukça", "biraz", "tartışılabilir" ifadelerini kaldırın |
 | **Gömülü kurşun** | Ana noktayı gizlemek | En önemli bilgiyi ilk sıraya koyun |
@@ -165,4 +165,4 @@ Yazma ve iletişim, e-postalar, raporlar, belgeler, sunumlar veya konuşmalar yo
 ---
 
 ## Özet
-Açık yazı ve iletişim akıllı olmakla ilgili değildir; anlaşılmakla ilgilidir. Ana noktayla başlayın (piramit prensibi). Etkin bir ses, somut bir dil ve kısa cümleler kullanın. Bilgileri okuyucunun ihtiyaç duyduğu şeyi bulabileceği şekilde yapılandırın. Teknik belgeler taranabilir ve örnek odaklı olmalıdır. İş yazımı tavsiyeyle başlamalıdır. Sunumlar her slaytta bir fikir olacak şekilde bir hikaye anlatmalıdır. İkna, mantığı (logos), duyguyu (pathos) ve güvenilirliği (ethos) birleştirir. Kültürlerarası farkındalık, küresel ekiplerdeki yanlış anlamaları önler. Temel beceri hedef kitlenin farkındalığıdır: Kimin için yazdığınızı, onların neyi bilmeleri gerektiğini ve hangi formatın onların bunu anlamalarına yardımcı olacağını bilmek. Daha net iletişime yatırım yaptığınız her dakika, daha az kafa karışıklığı, daha az yanlış anlama ve daha hızlı karar alma yoluyla bu sürenin kat kat fazlasını kurtarır.
+Açık yazı ve iletişim, anlaşılmayla ilgilidir. Ana noktayla başlayın (piramit prensibi). Etkin bir ses, somut bir dil ve kısa cümleler kullanın. Bilgileri okuyucunun ihtiyaç duyduğu şeyi bulabileceği şekilde yapılandırın. Teknik belgeler taranabilir ve örnek odaklı olmalıdır. İş yazımı tavsiyeyle başlamalıdır. Sunumlar slayt başına bir fikir sunmalıdır. İkna, mantığı (logolar), kanıtı (pathos) ve güvenilirliği (ethos) birleştirir. Kültürlerarası farkındalık, küresel ekiplerdeki yanlış anlamaları önler. Temel beceri izleyici farkındalığıdır: okuyucunun kim olduğunu, ne bilmesi gerektiğini ve hangi formatın onların anlayışını destekleyeceğini bilmek. Daha net iletişime yapılan yatırım, daha az kafa karışıklığı, daha az yanlış anlama ve daha hızlı karar alma ile sonuçlanır.

@@ -6,10 +6,12 @@ Runnable projects for Graph Neural Networks (GNNs).
 
 ### 1. Node Classification with GCN
 
-Graph Convolutional Network for node classification tasks.
+Graph Convolutional Network for node classification tasks. Built from scratch with plain PyTorch (no external graph libraries needed).
 
 **Files:**
 - `node_classification_gcn/` - GCN for node classification
+  - `main.py` - Full GCN implementation with synthetic graph dataset
+  - `requirements.txt` - Dependencies (torch, numpy)
 
 ### 2. Link Prediction with GraphSAGE
 

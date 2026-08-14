@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Bisnis dan Ekonomi
 Setiap organisasi yang menjual produk atau jasa adalah bisnis, dan setiap masyarakat yang memproduksi dan mendistribusikan barang adalah perekonomian. Konsep dalam file ini berlaku baik Anda menjalankan operasi lepas, bekerja di perusahaan, mencoba memahami berita, atau sekadar mencari tahu bagaimana uang bergerak di seluruh dunia.
 ---
@@ -84,11 +85,11 @@ Angka-angka ini memberi tahu Anda apakah suatu perekonomian sehat, terlalu panas
 | **Tingkat pengangguran** | % angkatan kerja tanpa pekerjaan | Pengangguran tinggi = sumber daya terbuang dan penderitaan manusia |
 | **Suku bunga** | Biaya peminjaman uang | Ditetapkan oleh bank sentral; tarif rendah menstimulasi, tarif tinggi menenangkan |
 | **Neraca perdagangan** | Ekspor dikurangi impor | Defisit yang terus-menerus dapat menandakan masalah struktural |
-| **Kepercayaan konsumen** | Betapa optimisnya masyarakat terhadap perekonomian | Mendorong pengeluaran, yaitu ~70% PDB di negara maju |
+| **Kepercayaan Konsumen** | Betapa optimisnya masyarakat terhadap perekonomian | Mendorong pengeluaran, yaitu ~70% PDB di negara maju |
 ### Siklus Bisnis
 Perekonomian tidak tumbuh dalam garis lurus. Mereka melewati fase-fase:
 1. **Ekspansi**: Pertumbuhan, rendahnya pengangguran, kenaikan upah, peningkatan kepercayaan diri
-2. **Puncak**: Pertumbuhan maksimum; inflasi mungkin mulai meningkat; aset mungkin dinilai terlalu tinggi
+2. **Puncak**: Pertumbuhan maksimal; inflasi mungkin mulai meningkat; aset mungkin dinilai terlalu tinggi
 3. **Kontraksi (Resesi)**: Penurunan output, meningkatnya pengangguran, menurunnya kepercayaan diri
 4. **Palung**: Bagian bawah; pemulihan dimulai ketika harga menyesuaikan dan permintaan kembali
 Resesi biasanya didefinisikan sebagai pertumbuhan PDB negatif selama dua kuartal berturut-turut. Hal ini disebabkan oleh berbagai pemicu – krisis keuangan, guncangan harga minyak, gangguan akibat pandemi, pecahnya gelembung aset – namun polanya selalu sama: kepercayaan menurun, belanja menurun, dunia usaha memangkas lapangan kerja, yang selanjutnya semakin mengurangi belanja.
@@ -108,7 +109,7 @@ Pemasaran bukan sekedar periklanan. Ini adalah keseluruhan proses memahami apa y
 - **CAC (Biaya Akuisisi Pelanggan)**: Berapa biaya untuk mendapatkan satu pelanggan baru. Jika Anda membelanjakan $10.000 untuk iklan dan mendapatkan 100 pelanggan, CAC Anda adalah $100.
 - **CLV (Nilai Seumur Hidup Pelanggan)**: Berapa banyak pendapatan yang dihasilkan satu pelanggan dari keseluruhan hubungannya dengan perusahaan Anda. Jika rata-rata pelanggan menghabiskan $50/bulan selama 3 tahun, CLV = $1.800.
 - **Rasio CAC:CLV** minimal harus 1:3 — biayanya paling banyak sepertiga dari jumlah yang akan dibayarkan pelanggan kepada Anda. Jika CAC melebihi CLV, bisnis kehilangan uang pada setiap pelanggan.
-- **Rasio konversi**: Berapa persentase orang yang melihat penawaran Anda yang benar-benar membeli. Tingkat konversi e-niaga pada umumnya adalah 1-3%.
+- **Tingkat konversi**: Berapa persentase orang yang melihat penawaran Anda yang benar-benar membeli. Tingkat konversi e-niaga pada umumnya adalah 1-3%.
 - **Tingkat churn**: Berapa persentase pelanggan yang keluar setiap periode. Perputaran bulanan sebesar 5% berarti Anda kehilangan separuh pelanggan Anda dalam waktu sekitar 14 bulan.
 ---
 
@@ -125,7 +126,7 @@ Persamaan ini selalu seimbang. Aset adalah apa yang dimiliki bisnis (uang tunai,
 | **Laporan Arus Kas** | Uang masuk, uang keluar | Periode | “Apakah kita punya cukup uang untuk beroperasi?” |
 Sebuah perusahaan dapat memperoleh keuntungan berdasarkan laporan laba rugi namun masih kehabisan uang tunai (jika pelanggan belum membayar, atau jika menghabiskan banyak uang untuk membeli peralatan). Inilah sebabnya mengapa laporan arus kas penting – uang tunailah yang membuat lampu tetap menyala.
 ### Rasio Keuangan Penting
-| Rasio | Rumus | Apa yang Dikatakannya kepada Anda |
+| Rasio | Rumus | Apa yang Diberitahukannya kepada Anda |
 |-------|---------|-------------------|
 | **Margin kotor** | (Pendapatan - COGS) / Pendapatan | Berapa keuntungan setiap dolar penjualan sebelum overhead |
 | **Margin bersih** | Pendapatan / Pendapatan bersih | Berapa keuntungan setiap dolar setelah semuanya |
@@ -139,7 +140,7 @@ Startup adalah organisasi sementara yang mencari model bisnis yang dapat diskala
 ### Siklus Hidup Startup
 1. **Ideasi**: Identifikasi masalah yang layak dipecahkan. Bicaralah dengan calon pelanggan.
 2. **Validasi**: Buat produk minimum yang layak (MVP) — versi paling sederhana yang menguji asumsi inti Anda.
-3. **Kesesuaian pasar produk**: Ulangi sampai pelanggan menarik produk dari tangan Anda. Ini adalah satu-satunya pencapaian yang paling penting.
+3. **Kesesuaian pasar produk**: Ulangi hingga pelanggan menarik produk dari tangan Anda. Ini adalah satu-satunya pencapaian yang paling penting.
 4. **Penskalaan**: Setelah Anda memiliki kesesuaian pasar produk, berinvestasilah dalam pertumbuhan — perekrutan, pemasaran, perluasan.
 5. **Maturity / Exit**: Perusahaan stabil, go public (IPO), atau diakuisisi.
 ### Tahapan Pendanaan
@@ -155,7 +156,7 @@ Kebanyakan startup gagal. Perkiraan menunjukkan 90% startup yang didukung ventur
 ---
 
 ## Rantai Pasokan dan Operasi
-Manajemen rantai pasokan adalah seni dan ilmu untuk mengirimkan produk yang tepat ke tempat yang tepat, waktu yang tepat, dan biaya yang tepat. Kedengarannya sederhana. Ini sangat sulit.
+Manajemen rantai pasokan adalah proses terkoordinasi untuk mengirimkan produk yang tepat ke tempat yang tepat, waktu yang tepat, dan biaya yang tepat. Tujuannya jelas; eksekusinya rumit.
 ### Konsep Utama
 - **Just-in-time (JIT)**: Menerima material hanya saat dibutuhkan, sehingga mengurangi biaya inventaris. Toyota memelopori hal ini. Dampaknya: Sistem JIT menjadi rapuh ketika rantai pasokan terganggu (seperti yang ditunjukkan oleh kekurangan chip pada tahun 2020-2022).
 - **Lean manufacturing**: Hilangkan pemborosan — segala sesuatu yang tidak memberi nilai tambah bagi pelanggan. Identifikasi dan hilangkan "tujuh pemborosan": produksi berlebih, menunggu, transportasi, pemrosesan berlebihan, inventaris, pergerakan, dan cacat.
@@ -187,4 +188,4 @@ Perdebatan antara keunggulan pemegang saham (Milton Friedman: "tanggung jawab so
 ---
 
 ## Ringkasan
-Bisnis dan ekonomi tidak terpisah dari kehidupan sehari-hari – keduanya merupakan infrastruktur kehidupan sehari-hari. Memahami penawaran dan permintaan membantu Anda memahami harga. Memahami akuntansi membantu Anda mengevaluasi apakah suatu bisnis sehat. Memahami pemasaran membantu Anda melihat mengapa Anda membeli apa yang Anda beli. Memahami struktur perusahaan membantu Anda menavigasi organisasi. Dan memahami ilmu ekonomi membantu Anda memahami dunia — mengapa beberapa negara kaya dan negara lain miskin, mengapa resesi terjadi, dan kebijakan apa yang dapat memperbaikinya. Anda tidak memerlukan gelar MBA untuk mendapatkan manfaat dari konsep-konsep ini. Anda hanya perlu memahami dasar-dasarnya.
+Bisnis dan ekonomi tidak terpisah dari kehidupan sehari-hari – keduanya merupakan infrastruktur dari kehidupan sehari-hari. Memahami penawaran dan permintaan membantu Anda memahami harga. Memahami akuntansi membantu Anda mengevaluasi apakah suatu bisnis sehat. Memahami pemasaran membantu Anda mengetahui alasan Anda membeli apa yang Anda beli. Memahami struktur perusahaan membantu Anda menavigasi organisasi. Dan memahami ilmu ekonomi membantu Anda memahami dunia — mengapa beberapa negara kaya dan negara lain miskin, mengapa resesi terjadi, dan kebijakan apa yang dapat memperbaikinya. Anda tidak memerlukan gelar MBA untuk mendapatkan manfaat dari konsep-konsep ini. Anda hanya perlu memahami dasar-dasarnya.

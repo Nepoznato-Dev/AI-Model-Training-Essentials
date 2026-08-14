@@ -575,7 +575,7 @@ delphi-project/
 | `{$HINTS OFF}`| Elimina suggerimenti | `{$HINTS OFF}`|
 | `{$OPTIMIZATION ON}`| Abilita ottimizzatore | `{$OPTIMIZATION ON}`|
 | `{$STRINGCHECKS ON}`| Abilita i controlli dell'intervallo di stringhe | `{$STRINGCHECKS ON}`|
-### Costruire dalla riga di comando
+### Creazione dalla riga di comando
 ```batch
 REM 32-bit Windows build (DCC32)
 dcc32 Project.dpr -NSVcl;System;Winapi -R resources -E bin\win32
@@ -1086,6 +1086,84 @@ Delphi Deployment Targets:
 | Sviluppo nuova GUI di Windows | Possibile ma la comunità si sta restringendo | C# (WPF/WinUI 3) |
 | Sviluppo web | Non adatto | JavaScript, Python, C# |
 | App mobili | Possibile tramite FMX ma limitato | Swift, Kotlin, Flutter |
+---
+
+## Domande e risposte sintetiche
+### D1: Come funziona il framework VCL di Delphi?
+**R:** VCL racchiude i controlli API di Windows in una gerarchia orientata agli oggetti. Moduli, pulsanti e griglie sono tutte classi:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: Come posso creare componenti in Delphi?
+**R:** Eredita da TComponent o TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### D3: Qual è la differenza tra Delphi e Free Pascal?
+**R:** Delphi è un IDE/compilatore commerciale di Embarcadero. Free Pascal è il compilatore open source e Lazarus è l'IDE gratuito. Entrambi utilizzano la sintassi Object Pascal.
+### D4: Come posso lavorare con i database in Delphi?
+**R:** Utilizza i componenti FireDAC o dbExpress:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### D5: Delphi è ancora attuale oggi?
+**R:** Sì, per la manutenzione delle applicazioni Windows legacy. Per i nuovi progetti, la maggior parte degli sviluppatori preferisce le tecnologie C# o web. Free Pascal/Lazarus fornisce un'alternativa multipiattaforma gratuita.
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: creazione di un modulo compatibile con i dati
+**Passaggio 1: comprendere il problema**
+Creare un modulo che visualizzi e modifichi i record del database.
+**Passaggio 2: identificare l'approccio**
+Utilizzare componenti in grado di riconoscere i dati associati a un set di dati.
+**Passaggio 3: implementazione**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Passaggio 4: Estendi**
+Aggiungi funzionalità di convalida, gestione degli errori e ricerca/filtro.
 ---
 
 ## Riepilogo

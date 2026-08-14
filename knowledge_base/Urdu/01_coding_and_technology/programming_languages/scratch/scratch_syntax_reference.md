@@ -1,0 +1,372 @@
+---
+# Metadata
+title: "Scratch — Syntax Reference"
+description: "Detailed syntax reference for Scratch covering block categories, event-driven programming, sprite management, cloning, variables, lists, custom blocks, and creative coding patterns."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-09"
+    author: "AI Model Training Team"
+    changes: "Initial syntax reference document"
+
+# Review
+created: "2026-08-09"
+last_modified: "2026-08-09"
+review_date: "2027-02-09"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-09"
+
+# Classification
+tags: [scratch, syntax-reference, visual-programming, block-based, event-driven, education, coding-and-technology]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "25 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
+---
+
+# سکریچ - نحوی حوالہ
+یہ دستاویز سکریچ 3.0 کے لیے ایک جامع، ساختی نحوی حوالہ فراہم کرتی ہے۔ یہ مکمل بلاک کیٹیگریز، ایونٹ سے چلنے والے پیٹرن، اسپرائٹ مینجمنٹ، کلوننگ، اور تخلیقی کوڈنگ تکنیکوں پر توجہ مرکوز کرکے مرکزی سکریچ ریفرنس کی تکمیل کرتا ہے۔
+---
+
+## بلاک کیٹیگریز کا جائزہ
+| زمرہ | رنگ | بلاک کی اقسام | مقصد |
+|------------|---------|---------------|---------|
+| **حرکت** | بلیو | اسٹیک | سپرائٹس کو منتقل کریں، پوزیشن تبدیل کریں، سمت |
+| **دیکھتا ہے** | جامنی | اسٹیک | ظاہری شکل بدلیں، کہو/سوچیں، دکھائیں/چھپائیں |
+| **آواز** | گلابی | اسٹیک | آوازیں چلائیں، والیوم/پچ تبدیل کریں |
+| **واقعات** | پیلا | ٹوپی | اسکرپٹ شروع کریں، پیغامات نشر کریں/ وصول کریں |
+| **کنٹرول** | گولڈ | اسٹیک | لوپس، مشروط، انتظار کریں، رکیں |
+| **حساس** | ہلکا نیلا | رپورٹر | تصادم، ان پٹ، ٹائمر، جوابات کا پتہ لگائیں |
+| **آپریٹرز** | سبز | رپورٹر | ریاضی، متن، موازنہ، منطق |
+| **متغیرات** | اورنج | اسٹیک/رپورٹر | سٹور ڈیٹا، فہرست آپریشن |
+| **میرے بلاکس** | گہرا سرخ | اسٹیک | حسب ضرورت بلاک کی تعریفیں (فنکشنز) |
+---
+
+## موشن بلاکس
+```
+// Position
+move (10) steps
+go to x: (0) y: (0)
+go to [mouse-pointer v]
+glide (1) secs to x: (100) y: (50)
+point in direction (90)
+point towards [Sprite1 v]
+
+// Change coordinates
+change x by (10)
+set x to (0)
+change y by (10)
+set y to (0)
+
+// Direction
+turn cw (15) degrees
+turn ccw (15) degrees
+set heading to (90)
+
+// Queries
+(x position)
+(y position)
+(direction)
+```
+
+---
+
+## بلاکس لگ رہا ہے۔
+```
+// Speech bubbles
+say [Hello!] for (2) seconds
+say [Hello!]
+think [Hmm...] for (2) seconds
+think [Hmm...]
+
+// Appearance
+switch costume to [costume1 v]
+next costume
+switch backdrop to [backdrop1 v]
+next backdrop
+change [color v] effect by (25)
+set [color v] effect to (0)
+clear graphic effects
+
+// Visibility
+show
+hide
+
+// Size
+change size by (10)
+set size to (100) %
+
+// Queries
+(costume #)
+(backdrop name)
+(size)
+```
+
+---
+
+## ایونٹس بلاکس (ہیٹ بلاکس)
+```
+// Every script MUST start with a hat block
+when green flag clicked          // Program start
+when [space v] key pressed       // Keyboard input
+when this sprite clicked         // Mouse click on sprite
+when I start as a clone          // Clone initialization
+when backdrop switches to [scene1 v]
+when [loudness v] > (10)
+when video motion > (10)
+when I receive [message1 v]      // Broadcast receiver
+
+// Broadcasting (inter-sprite communication)
+broadcast [message1 v]
+broadcast [message1 v] and wait  // Wait for all receivers to finish
+```
+
+---
+
+## کنٹرول بلاکس
+```
+// Sequencing
+wait (1) seconds
+wait until <condition>
+
+// Loops
+repeat (10)
+  ...
+end
+
+forever
+  ...
+end
+
+repeat until <condition>
+  ...
+end
+
+// Conditionals
+if <condition> then
+  ...
+end
+
+if <condition> then
+  ...
+else
+  ...
+end
+
+// Cloning
+create clone of [myself v]
+create clone of [Sprite1 v]
+delete this clone
+
+// Stopping
+stop [all v]
+stop [this script v]
+stop [other scripts in sprite v]
+```
+
+---
+
+## سینسنگ بلاکس
+```
+// Collision detection
+<touching [Sprite1 v]?>
+<touching color [#FF0000]?>
+<color [#FF0000] is touching [#00FF00]?>
+
+// Distance
+(distance to [Sprite1 v])
+
+// Input
+(key [space v] pressed?)
+(mouse down?)
+(mouse x)
+(mouse y)
+
+// User input
+ask [What is your name?] and wait
+(answer)
+
+// Timer
+reset timer
+(timer)
+
+// Sprite properties
+<touching [edge v]?>
+
+// Drag mode
+set drag mode [draggable v]
+set drag mode [not draggable v]
+```
+
+---
+
+## آپریٹرز
+```
+// Arithmetic
+(() + ())
+(() - ())
+(() * ())
+(() / ())
+(pick random (1) to (10))
+
+// Comparison
+<() > ()>
+<() < ()>
+<() = ()>
+
+// Logic
+<<> and <>>
+<<> or <>>
+<not <>>
+
+// Text
+(join [hello ] [world])
+(letter (1) of [hello])
+(length of [hello])
+<([hello] contains [ell])>
+
+// Math functions
+(round (3.7))
+([abs v] of (-5))
+([floor v] of (3.7))
+([ceiling v] of (3.2))
+([sqrt v] of (16))
+([sin v] of (90))
+([cos v] of (0))
+([tan v] of (45))
+([ln v] of (2.718))
+```
+
+---
+
+## متغیرات اور فہرستیں۔
+```
+// Variables
+set [score v] to (0)
+change [score v] by (1)
+(score)
+
+// Show/hide variable monitors
+show variable [score v]
+hide variable [score v]
+
+// Lists (arrays — 1-indexed!)
+add [item] to [my list v]
+delete (1) of [my list v]
+delete all of [my list v]
+insert [item] at (1) of [my list v]
+replace item (1) of [my list v] with [new value]
+
+// List queries
+(item (1) of [my list v])
+(item # of [item] in [my list v])
+(length of [my list v])
+<[my list v] contains [item]?>
+
+// Show list monitors
+show list [my list v]
+hide list [my list v]
+```
+
+---
+
+## حسب ضرورت بلاکس (فنکشنز)
+```
+// Define a custom block
+define jump (height) times (count)
+  repeat (count)
+    change y by (height)
+    wait (0.2) seconds
+    change y by ((height) * -1)
+    wait (0.2) seconds
+
+// Usage:
+jump height: (50) times: (3)
+
+// Optimization: run without screen refresh
+define draw spiral (size) (angle)
+  run without screen refresh
+  repeat (100)
+    move (size) steps
+    turn cw (angle) degrees
+    change (size) by (1)
+
+// Custom blocks with boolean inputs
+define move if (should move) steps (amount)
+  if <(should move)> then
+    move (amount) steps
+```
+
+---
+
+## قلم کی توسیع
+```
+// Pen blocks (requires Pen extension)
+erase all
+stamp
+pen down
+pen up
+set pen color to [#FF0000]
+set pen color to (100)          // Color 0-200
+change pen (color v) by (25)
+set pen (size v) to (5)
+change pen (size v) by (1)
+
+// Drawing a square
+pen down
+repeat (4)
+  move (100) steps
+  turn right (90) degrees
+pen up
+
+// Drawing a circle (approximation)
+pen down
+repeat (360)
+  move (1) steps
+  turn right (1) degrees
+pen up
+```
+
+---
+
+## ساؤنڈ بلاکس
+```
+// Playing sounds
+play sound [Meow v] until done
+play sound [Meow v]
+stop all sounds
+
+// Volume
+change volume by (-10)
+set volume to (100) %
+(volume)
+
+// Tempo (Music extension)
+set tempo to (120)
+change tempo by (20)
+(tempo)
+play drum (1) for (0.2) beats
+rest for (0.5) beats
+play note (60) for (0.5) beats
+set instrument to (1)
+```
+
+---
+
+## خلاصہ
+سکریچ کا بلاک پر مبنی نحو ٹائپنگ کی غلطیوں کو ختم کرتا ہے اور پروگرامنگ کے تصورات کو ٹھوس بناتا ہے۔ ہر اسکرپٹ ہیٹ بلاک (ایونٹ) سے شروع ہوتا ہے، پھر کمانڈ بلاکس (حرکت، شکل، آواز، کنٹرول، سینسنگ، آپریٹرز، متغیرات) کو اسٹیک کرتا ہے اور اقدار کے لیے رپورٹر بلاکس (گول/اوول شکلیں) استعمال کرتا ہے۔ اپنی مرضی کے بلاکس ماڈیولر پروگرامنگ کو فعال کرتے ہیں۔ کلون آبجیکٹ جیسا سلوک فراہم کرتے ہیں۔ اسٹور کے مجموعوں کی فہرست۔ قلم کی توسیع تخلیقی ڈرائنگ کو قابل بناتی ہے۔ نوجوان سیکھنے والوں کے لیے، سکریچ پروگرامنگ منطق، ایونٹ پر مبنی ڈیزائن، اور کوڈ کے ذریعے تخلیقی اظہار کا مکمل تعارف فراہم کرتا ہے۔

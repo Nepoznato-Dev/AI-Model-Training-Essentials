@@ -38,17 +38,18 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 줄리아
 Julia는 기술 및 과학 컴퓨팅을 위해 설계된 고급 고성능 프로그래밍 언어입니다. 2012년(2018년 1.0)에 처음 출시된 Julia는 과학자들이 Python/R로 프로토타입을 제작했지만 생산 성능을 위해 C/C++/Fortran으로 다시 작성하는 "2개 언어 문제"를 해결하기 위해 만들어졌습니다. Julia는 Python만큼 쉽지만 C만큼 빠른 것을 목표로 합니다.
 Julia는 LLVM을 통한 JIT(Just-In-Time) 컴파일을 사용하여 대화형의 동적 느낌을 유지하면서 C에 가까운 성능을 달성합니다. 병렬 컴퓨팅, 분산 처리 및 다중 디스패치를 ​​갖춘 정교한 유형 시스템을 최고 수준으로 지원합니다.
 ---
 
 ## 줄리아가 중요한 이유
-- **속도**: 숫자 코드에 대한 Near-C 성능 - 사용자가 컴파일 단계가 필요하지 않습니다.
+- **속도**: 숫자 코드에 대한 Near-C 성능 — 사용자가 컴파일 단계가 필요하지 않습니다.
 - **다중 디스패치**: 함수는 모든 인수의 유형에 따라 다르게 동작합니다. 이는 강력한 패러다임입니다.
 - **과학 컴퓨팅**: 처음부터 수학, 선형 대수, 데이터 과학을 위해 설계되었습니다.
 - **병렬성**: 다중 처리, 다중 스레딩 및 분산 컴퓨팅을 기본적으로 지원합니다.
-- **상호 운용성**: Python, C, Fortran을 직접 호출할 수 있습니다.
+- **상호 운용성**: Python, C 및 Fortran을 직접 호출할 수 있습니다.
 - **성장하는 생태계**: ML, 최적화 및 과학 영역을 위한 패키지 생태계를 빠르게 확장합니다.
 ## 절충안
 | 제한사항 | 세부정보 | 일반적인 해결 방법 |
@@ -877,5 +878,190 @@ julia --project=. -e '
 | 일반 애플리케이션 개발 | 기본 사용 사례가 아님 | 파이썬, 바둑, 자바 |
 ---
 
+## 종합 Q&A
+### Q1: OOP 언어에서 다중 디스패치는 단일 디스패치와 어떻게 다릅니까?
+**답:** 단일 디스패치(Java, Python)에서는 첫 번째 인수(객체)의 유형에 따라 메서드가 선택됩니다. Julia에서는 모든 인수의 유형에 따라 메서드가 선택됩니다.
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+이를 통해 대칭 작업이 가능하고 상용구 패턴이 제거됩니다.
+### Q2: Julia에서 C와 유사한 성능을 얻으려면 어떻게 해야 합니까?
+**답:** 주요 사례:
+- 유형이 안정적인 함수 사용(일관된 유형 반환)
+- 구조체에는 추상 유형이 아닌 구체적인 유형을 사용하세요.
+- 전역 변수를 피하십시오(또는 `const`로 만드십시오).
+- `@inbounds`를 사용하여 경계 검사를 건너뜁니다(안전할 때)
+- 어레이를 늘리는 대신 사전 할당
+- 벡터화 가능한 루프에는 `@simd`를 사용하세요.
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3:`Array`,`Tuple`,`NamedTuple`의 차이점은 무엇인가요?
+**답:** 각각 다른 목적으로 사용됩니다.
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4: Julia에서 오류와 예외를 어떻게 처리하나요?
+**A:**`try/catch`및 사용자 정의 예외 유형을 사용하세요.
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5: Julia의 패키지 생태계를 효과적으로 사용하려면 어떻게 해야 하나요?
+**A:** 내장된 패키지 관리자(Pkg) 및 환경을 사용하세요.
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 수치 적분 함수 구현
+**1단계: 문제 이해**
+심슨의 법칙을 사용하여 함수의 정적분을 계산합니다.
+**2단계: 접근 방식 파악**
+Julia의 다중 디스패치 및 고차 기능을 사용하십시오. 호출 가능한 함수를 수락합니다.
+**3단계: 구현**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**4단계: 최적화**
+성능을 위해`@inbounds`및 유형 주석을 추가합니다. `@btime`를 사용한 벤치마크.
+### 문제 2: 병렬 몬테카를로 시뮬레이션 구축
+**1단계: 문제 이해**
+모든 CPU 코어에 걸쳐 병렬화된 Monte Carlo 샘플링을 사용하여 pi를 추정합니다.
+**2단계: 접근 방식 파악**
+공유 메모리 병렬 처리에는 `Threads.@threads`를 사용합니다.
+**3단계: 구현**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**4단계: 확인**
+`Float64(\pi)` 와 비교해 보세요. 정확도를 높이려면 샘플 수를 늘리세요.
+### 문제 3: 브로드캐스트를 사용하여 사용자 정의 배열 유형 만들기
+**1단계: 문제 이해**
+대각선 요소만 저장하지만 표준 배열 작업을 지원하는`DiagonalMatrix`유형을 만듭니다.
+**2단계: 접근 방식 파악**
+`AbstractMatrix`를 하위 유형으로 지정하고 필요한 메서드를 구현합니다.
+**3단계: 구현**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**4단계: 확장**
+`setindex!` , 행렬 곱셈 최적화 및`show`방법을 추가합니다.
+---
+
 ## 요약
-Julia는 과학 및 수치 컴퓨팅을 위한 최고의 도구를 목표로 하는 현대 언어입니다. Python과 같은 용이성과 C와 같은 성능의 조합은 매력적입니다. 다중 디스패치는 코드를 표현력 있고 효율적으로 만드는 강력한 패러다임입니다. 생태계가 계속 성장하는 동안 Julia는 연구, 정량 금융 및 고성능 컴퓨팅 분야에서 점점 더 많이 사용되고 있습니다. Python이 너무 느리고 C++가 너무 번거로운 수치 작업의 경우 Julia가 탁월한 선택입니다.
+Julia는 과학 및 수치 컴퓨팅을 위한 최고의 도구를 목표로 하는 현대 언어입니다. Python과 같은 용이성과 C와 같은 성능의 조합은 매력적입니다. 다중 디스패치는 코드를 표현력 있고 효율적으로 만드는 강력한 패러다임입니다. 생태계가 계속 성장하는 동안 Julia는 연구, 양적 금융 및 고성능 컴퓨팅 분야에서 점점 더 많이 사용되고 있습니다. Python이 너무 느리고 C++가 너무 번거로운 수치 작업의 경우 Julia가 탁월한 선택입니다.

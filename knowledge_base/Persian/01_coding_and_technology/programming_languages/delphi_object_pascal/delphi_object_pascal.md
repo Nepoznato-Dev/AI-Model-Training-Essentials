@@ -1,39 +1,44 @@
 ---
-# فراداده
-عنوان: "Delphi / Object Pascal"
-توضیحات: "مرجع جامع برای زبان برنامه نویسی Delphi/Object Pascal که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
-دسته بندی: "کدنویسی و فناوری"
-نسخه: "1.0.0"
-وضعیت: "فعال"
-# مشارکت
-نویسندگان:
-  - نام: "تیم آموزشی مدل AI"
-    ایمیل: ""
-    نقش: "نویسنده_اصلی"
-مشارکت کنندگان: []
-تغییرات ثبت شده:
-  - نسخه: "1.0.0"
-    تاریخ: "05-08-2026"
-    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
-    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
-# نقد و بررسی
-ایجاد شده: "05-08-2026"
-last_modified: "05-08-2026"
-بازبینی_تاریخ: "05-02-2027"
-reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
-next_review: "05-08-2027"
-# طبقه بندی
-برچسب ها: [delphi-object-pascal، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
-سطح سختی: "متوسط"
-پیش نیاز: []
-تخمینی_زمان_خواندن: "44 دقیقه"
-# راهنمای مشارکت
-مشارکت:
-  مجوز: "MIT"
-  feedback_channel: "مشکلات GitHub"
-  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
-  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+# Metadata
+title: "Delphi / Object Pascal"
+description: "Comprehensive reference for the Delphi/Object Pascal programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [delphi-object-pascal, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # دلفی / آبجکت پاسکال
 دلفی یک زبان برنامه نویسی شی گرا بر اساس پاسکال است که در ابتدا توسط Borland (بعدها Embarcadero، اکنون Idera) توسعه یافت. اولین بار در سال 1995 با نام "Delphi 1" منتشر شد و برای توسعه سریع برنامه های کاربردی (RAD) برنامه های دسکتاپ ویندوز طراحی شد. این زبان به طور رسمی به عنوان Object Pascal شناخته می شود و Delphi IDE یک طراح فرم بصری، ابزارهای پایگاه داده یکپارچه و یک کامپایلر قدرتمند را ارائه می دهد.
 دلفی یکی از محبوب ترین ابزارهای توسعه ویندوز در اواخر دهه 1990 و اوایل دهه 2000 بود. در حالی که محبوبیت آن به طور قابل توجهی کاهش یافته است، یک پایگاه کاربری اختصاصی را حفظ می کند، به ویژه در برنامه های کاربردی دسکتاپ سازمانی، قسمت های جلویی پایگاه داده و نگهداری سیستم قدیمی. مدرن دلفی (11/12) از توسعه کراس پلتفرم برای Windows، macOS، iOS و Android از طریق چارچوب FireMonkey (FMX) پشتیبانی می کند.
@@ -478,7 +483,7 @@ end.
 
 ## معماری و طراحی سیستم
 ### معماری کامپوننت
-VCL (کتابخانه اجزای بصری) و FMX (FireMonkey) دلفی بر اساس یک سلسله مراتب مؤلفه ساخته شده اند. هر عنصر بصری از`TComponent`به ارث می برد.
+VCL (کتابخانه اجزای بصری) و FMX (FireMonkey) دلفی بر اساس یک سلسله مراتب مؤلفه ساخته شده اند. هر عنصر بصری از`TComponent`به ارث می رسد.
 ```
 TObject
 └── TPersistent
@@ -561,11 +566,11 @@ delphi-project/
 ### مرجع دستورات کامپایلر
 | بخشنامه | هدف | مثال |
 |-----------|---------|---------|
-| `{$APPTYPE CONSOLE}`| اپلیکیشن کنسول |  __محافظت شده_1__ |
-| `{$APPTYPE GUI}`| برنامه رابط کاربری گرافیکی (پیش فرض) |  __محافظت شده_3__ |
+| `{$APPTYPE CONSOLE}`| اپلیکیشن کنسول | `{$APPTYPE CONSOLE}`|
+| `{$APPTYPE GUI}`| برنامه رابط کاربری گرافیکی (پیش فرض) | `{$APPTYPE GUI}`|
 | `{$DEFINE DEBUG}`| تعریف نماد شرطی | `{$DEFINE DEBUG}`|
-|  __محافظت شده_6__ | تالیف مشروط | `{$IFDEF DEBUG}`|
-| `{$R *.dfm}`| شامل منبع فرم |  __محافظت شده_9__ |
+| `{$IFDEF symbol}`| تالیف مشروط | `{$IFDEF DEBUG}`|
+| `{$R *.dfm}`| شامل منبع فرم | `{$R *.dfm}`|
 | `{$WARNINGS OFF}`| سرکوب هشدارها | `{$WARNINGS OFF}`|
 | `{$HINTS OFF}`| سرکوب نکات | `{$HINTS OFF}`|
 | `{$OPTIMIZATION ON}`| فعال کردن بهینه ساز | `{$OPTIMIZATION ON}`|
@@ -1034,12 +1039,12 @@ end;
 | تکنیک | تاثیر | توضیحات |
 |-----------|--------|-------------|
 | **BeginUpdate/EndUpdate** | بالا | بسته بندی لیست/به روز رسانی شبکه برای جلوگیری از رنگ آمیزی مجدد |
-| **بافر دوگانه** | متوسط ​​| تنظیم`DoubleBuffered := True`برای کاهش سوسو زدن |
+| **بافر دوگانه** | متوسط ​​|`DoubleBuffered := True`را برای کاهش سوسو زدن تنظیم کنید
 | **لیست های مجازی** | بالا | استفاده از`TVirtualStringTree`برای مجموعه داده های بزرگ |
-| **ترنینگ رشته** | متوسط ​​| استفاده مجدد از ثابت های رشته. اجتناب از الحاق مکرر |
+| **ترنینگ رشته** | متوسط ​​| استفاده مجدد از ثابت های رشته اجتناب از الحاق مکرر |
 | **تجمیع اشیاء** | متوسط ​​| استفاده مجدد از اشیاء مکرر ایجاد/تخریب شده |
 | **بارگذاری تنبل** | بالا | بارگذاری داده ها/فرم ها فقط در صورت نیاز |
-| **بهینه سازی کامپایلر** | متوسط ​​| فعال کردن`{$O+}`برای نسخه های انتشار |
+| **بهینه سازی کامپایلر** | متوسط ​​|`{$O+}`را برای بیلدهای انتشار فعال کنید |
 ---
 
 ## استقرار و استفاده در دنیای واقعی
@@ -1081,6 +1086,84 @@ Delphi Deployment Targets:
 | توسعه رابط کاربری گرافیکی جدید ویندوز | ممکن است اما جامعه در حال کوچک شدن است | سی شارپ (WPF/WinUI 3) |
 | توسعه وب | مناسب نیست | جاوا اسکریپت، پایتون، سی شارپ |
 | برنامه های موبایل | از طریق FMX امکان پذیر است اما محدود | سوئیفت، کاتلین، فلاتر |
+---
+
+## پرسش و پاسخ مصنوعی
+### Q1: چارچوب VCL دلفی چگونه کار می کند؟
+**A:** VCL کنترل های API ویندوز را در یک سلسله مراتب شی گرا قرار می دهد. فرم ها، دکمه ها و شبکه ها همه کلاس ها هستند:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2: چگونه کامپوننت ها را در دلفی ایجاد کنم؟
+**A:** ارث بری از TComponent یا TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3: تفاوت دلفی و پاسکال رایگان چیست؟
+**A:** دلفی یک IDE/کامپایلر تجاری توسط Embarcadero است. Free Pascal کامپایلر منبع باز است و Lazarus IDE رایگان است. هر دو از دستور Object Pascal استفاده می کنند.
+### Q4: چگونه با پایگاه های داده در دلفی کار کنم؟
+**A:** از اجزای FireDAC یا dbExpress استفاده کنید:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5: آیا دلفی هنوز هم مربوط به امروز است؟
+**A:** برای حفظ برنامه های قدیمی ویندوز، بله. برای پروژه های جدید، بیشتر توسعه دهندگان سی شارپ یا فناوری های وب را ترجیح می دهند. Pascal/Lazarus رایگان یک جایگزین رایگان بین پلتفرمی ارائه می دهد.
+---
+
+## حل مسئله زنجیره ای از فکر
+### مشکل 1: ساخت یک فرم داده آگاه
+**مرحله 1: مشکل را درک کنید**
+فرمی ایجاد کنید که رکوردهای پایگاه داده را نمایش و ویرایش کند.
+**مرحله 2: رویکرد را شناسایی کنید**
+از اجزای داده آگاه متصل به یک مجموعه داده استفاده کنید.
+**مرحله 3: پیاده سازی **```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**مرحله 4: تمدید**
+اعتبارسنجی، مدیریت خطا، و قابلیت جستجو/فیلتر را اضافه کنید.
 ---
 
 ## خلاصه

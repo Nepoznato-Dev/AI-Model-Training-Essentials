@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Ada"
-descripción: "Referencia completa para el lenguaje de programación Ada que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Ada"
+description: "Comprehensive reference for the Ada programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [ada, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "35 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [ada, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "35 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #ada
 Ada es un lenguaje de programación compilado y tipado estáticamente diseñado para sistemas críticos para la seguridad y de alta integridad. Desarrollado originalmente en la década de 1980 bajo contrato con el Departamento de Defensa de EE. UU. (llamado así en honor a Ada Lovelace, considerada la primera programadora de computadoras), Ada enfatiza la confiabilidad, la mantenibilidad y la corrección. Fue diseñado para reemplazar los cientos de lenguajes de programación utilizados por el Departamento de Defensa con un lenguaje único y bien especificado.
 Ada se utiliza en aviación (sistemas de vuelo por cable), espacio (ESA y NASA), defensa (guía de misiles, radar), transporte ferroviario y dispositivos médicos, en cualquier lugar donde una falla del software pueda costar vidas.
@@ -857,6 +862,147 @@ end Main;
 | Desarrollo de aplicaciones generales | Exceso para sistemas no críticos | Python, Java, Ir |
 | Desarrollo web | No adecuado | JavaScript, Pitón |
 | Ciencia de datos / ML | No el ecosistema | Pitón, R |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cómo previene el sistema de tipos de Ada errores en el momento de la compilación?
+**R:** El sistema de tipos de Ada se encuentra entre los más estrictos de todos los idiomas. Detecta errores que otros idiomas pasan por alto:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### P2: ¿Cuál es el modelo de tareas de Ada y cómo se compara con otros modelos de concurrencia?
+**R:** Ada tiene simultaneidad integrada con objetos y tareas protegidos:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### P3: ¿Cómo uso genéricos en Ada?
+**R:** Los genéricos de Ada son explícitos y de tipo seguro:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### P4: ¿Qué hace que Ada sea adecuado para sistemas críticos para la seguridad?
+**R:** Ada proporciona:
+- Subconjunto SPARK para verificación formal (prueba matemática de corrección)
+- Programación basada en contratos (condiciones previas/posteriores, invariantes de tipo)
+- No hay asignación de memoria implícita en SPARK
+- Tareas y programación deterministas.
+- Perfil Ravenscar para sistemas en tiempo real de alta integridad
+- Cualificación de la cadena de herramientas (DO-178C para aviónica)
+### P5: ¿Cómo creo proyectos de Ada?
+**R:** Utilice GPRBuild con archivos de proyecto GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Implementación de una cola de tipo seguro
+**Paso 1: Comprenda el problema**
+Cree una cola limitada y segura para subprocesos con verificación de tamaño en tiempo de compilación.
+**Paso 2: Identificar el enfoque**
+Utilice un objeto protegido con un búfer delimitado.
+**Paso 3: Implementar**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Paso 4: Verificar**
+El objeto protegido garantiza la exclusión mutua. Las barreras de entrada evitan el desbordamiento o el desbordamiento.
+### Problema 2: Validación basada en contratos
+**Paso 1: Comprenda el problema**
+Implementar una función de raíz cuadrada con contratos formales.
+**Paso 2: Identificar el enfoque**
+Utilice contratos Ada 2012 (condiciones previas y posteriores).
+**Paso 3: Implementar**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Paso 4: Verificar**
+Las comprobaciones (afirmaciones) en tiempo de ejecución detectan infracciones. En SPARK, estas se convierten en obligaciones de prueba.
 ---
 
 ## Resumen

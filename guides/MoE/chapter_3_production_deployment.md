@@ -333,7 +333,7 @@ class OnDemandExpertLoader:
         
         # Load expert from disk
         expert_path = self.expert_paths[expert_idx]
-        expert_state = torch.load(expert_path, map_location=self.device)
+        expert_state = torch.load(expert_path, map_location=self.device, weights_only=True)
         
         # Create expert module
         d_model = expert_state['0.weight'].shape[1]

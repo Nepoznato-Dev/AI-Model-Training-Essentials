@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Bilim ve Pedagoji Öğrenmek
-Bilim öğrenmek, insanların nasıl öğrendiklerini inceleyen disiplinler arası bir çalışmadır; psikolojiden, sinir biliminden, eğitimden ve bilişsel bilimden yararlanır. Pedagoji, öğretme sanatı ve bilimidir. Birlikte, eğitim içeriği öğreten, eğiten, mentorluk yapan veya tasarlayan herkes için önemli olan soruları yanıtlıyorlar: İnsanların öğrenmesine gerçekte ne yardımcı olur? Hangi yaygın çalışma teknikleri etkisizdir? Maksimum akılda tutma ve aktarma için öğretim nasıl yapılandırılmalıdır?
+Bilim öğrenmek, insanların nasıl öğrendiklerini inceleyen disiplinler arası bir çalışmadır; psikolojiden, sinir biliminden, eğitimden ve bilişsel bilimden yararlanır. Pedagoji, öğretimin uygulaması ve metodolojisidir. Birlikte, eğitim içeriği öğreten, eğiten, mentorluk yapan veya tasarlayan herkesle ilgili soruları ele alıyorlar: Hangi yöntemler insanların etkili bir şekilde öğrenmesine yardımcı olur? Hangi yaygın çalışma teknikleri verimsizdir? Optimum akılda tutma ve aktarma için öğretim nasıl yapılandırılmalıdır?
 ---
 
 ## Öğrenme Nasıl İşler?
@@ -50,7 +50,7 @@ Bilim öğrenmek, insanların nasıl öğrendiklerini inceleyen disiplinler aras
 | **Dikkat** | Bilginin işlenebilmesi için fark edilmesi gerekir | Yenilik; alaka düzeyi; duygusal önem |
 | **Kodlama** | Bilgi zihinsel bir temsile dönüştürülüyor | Ön bilgiyle bağlantı kurma; detaylandırma |
 | **Konsolidasyon** | Bellek izleri zamanla sabitlenir | Uyumak; aralıklı tekrar; yansıma |
-| **Depolama** | Bilgiler uzun süreli hafızada tutulur | Anlamlı organizasyon; mevcut bilgilerle bağlantılar |
+| **Depolama** | Bilgi uzun süreli hafızada tutulur | Anlamlı organizasyon; mevcut bilgilerle bağlantılar |
 | **Geri alma** | Bilgiye ihtiyaç duyulduğunda erişilir | Geri alma alıştırması yapın; çeşitli bağlamlar |
 | **Aktarım** | Bilgi yeni durumlara uygulanır | Çeşitli uygulamalar; sadece prosedürleri değil, ilkeleri anlamak |
 ### Bilişsel Yük Teorisi
@@ -79,7 +79,7 @@ Bilim öğrenmek, insanların nasıl öğrendiklerini inceleyen disiplinler aras
 | **Vurgulama** | Üretken hissettiriyor; önemli bilgileri işaretler | Derin işleme gerektirmez |
 | **Özetleme** | Aktif katılım gibi görünüyor | Genellikle kelimesi kelimesine kopyalanır; geri alma gerektirmez |
 | **Kitlesel antrenman (sıkışma)** | Kısa süreli hatırlama için çalışır | Hızlı unutma; kötü transfer |
-| **Öğrenme stilleri** (görsel/işitsel/kinestetik) | Sezgisel olarak çekici | Öğretimi tercih edilen stille eşleştirmenin öğrenmeyi iyileştirdiğine dair kanıt yok |
+| **Öğrenme stilleri** (görsel/işitsel/kinestetik) | Sezgisel olarak çekici | Öğretimin tercih edilen stille eşleştirilmesinin öğrenmeyi iyileştirdiğine dair kanıt yok |
 ---
 
 ## Unutma Eğrisi ve Aralıklı Tekrar
@@ -157,7 +157,7 @@ Her inceleme unutma eğrisini daha da ileriye doğru itiyor. Her başarılı al�
 ## Değerlendirme
 ### Değerlendirme Türleri
 | Tür | Amaç | Zamanlama | Örnek |
-|------|------|--------|--------|
+|------|------|----|---------|
 | **Teşhis** | Önceki bilgileri ve kavram yanılgılarını belirleyin | Talimattan önce | Ön test; konsept envanteri |
 | **Biçimlendirici** | Öğrenmeyi izleyin; geri bildirim sağlayın | Öğretim sırasında | Sınavlar; çıkış biletleri; hakem değerlendirmesi |
 | **Özetleyici** | Sonunda öğrenmeyi değerlendirin | Talimattan sonra | Final sınavı; proje; portföy |
@@ -173,4 +173,4 @@ Her inceleme unutma eğrisini daha da ileriye doğru itiyor. Her başarılı al�
 ---
 
 ## Özet
-Bilim öğrenmek, en etkili stratejilerin çoğu zaman mantığa aykırı olduğunu gösterir. Geri getirme uygulaması (kendinizi test etmek) yeniden okumaktan çok daha etkilidir. Aralıklı tekrarlama, yoğun çalışmayı yener. Farklı türdeki sorunları bir araya getirmek, ayrımcılığı ve aktarımı geliştirir. Bilişsel yük teorisi bize çalışma belleğinin sınırlı olduğunu hatırlatır; öğretim, yabancı yükü en aza indirecek şekilde tasarlanmalıdır. Bloom'un sınıflandırması, hatırlamadan yaratmaya ilerlemek için bir çerçeve sağlar. Öğretim tasarımı modelleri (ADDIE, geriye dönük tasarım) etkili öğrenme deneyimleri geliştirmeye yönelik yapılandırılmış yaklaşımlar sunar. Motivasyon özerkliğe, yeterliliğe ve ilişkililiğe bağlıdır. Değerlendirme, öğrenme hedefleriyle uyumlu olmalı ve yalnızca özet notları değil, biçimlendirici geri bildirimi de içermelidir. Öğrenme konusundaki en büyük efsane, insanların sabit "öğrenme stillerine" sahip olduğudur; kanıtlar, öğretimi tercih edilen bir stille eşleştirmenin sonuçları iyileştirmediğini tutarlı bir şekilde göstermektedir. Herkes için işe yarayan şey, zahmetli bir şekilde geri getirme, aralıklı pratik, çeşitli örnekler ve anlamlı geri bildirimdir.
+Bilim öğrenmek, en etkili stratejilerin çoğu zaman mantık dışı olduğunu göstermektedir. Geri getirme uygulaması (kendinizi test etmek) yeniden okumaktan çok daha etkilidir. Aralıklı tekrarlama, yoğun çalışmayı yener. Farklı türdeki sorunları bir araya getirmek, ayrımcılığı ve aktarımı geliştirir. Bilişsel yük teorisi bize çalışma belleğinin sınırlı olduğunu hatırlatır; öğretim, yabancı yükü en aza indirecek şekilde tasarlanmalıdır. Bloom'un sınıflandırması, hatırlamadan yaratmaya ilerlemek için bir çerçeve sağlar. Öğretim tasarımı modelleri (ADDIE, geriye dönük tasarım) etkili öğrenme deneyimleri geliştirmeye yönelik yapılandırılmış yaklaşımlar sunar. Motivasyon özerkliğe, yeterliliğe ve ilişkililiğe bağlıdır. Değerlendirme, öğrenme hedefleriyle uyumlu olmalı ve yalnızca özet notları değil, biçimlendirici geri bildirimi de içermelidir. Öğrenme konusundaki en büyük efsane, insanların sabit "öğrenme stillerine" sahip olduğudur; kanıtlar, öğretimi tercih edilen bir stille eşleştirmenin sonuçları iyileştirmediğini tutarlı bir şekilde göstermektedir. Herkes için işe yarayan şey, zahmetli bir şekilde geri getirme, aralıklı pratik yapma, çeşitli örnekler ve anlamlı geri bildirimdir.

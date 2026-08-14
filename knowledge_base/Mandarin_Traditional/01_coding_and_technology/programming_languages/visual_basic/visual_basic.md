@@ -55,7 +55,7 @@ Visual Basic (VB) 是 Microsoft 開發的程式語言。它已經發展了幾代
 |------------|---------|--------------------|
 | **相關性下降** |微軟優先考慮C#；VB 處於維護模式 |使用 C# 進行新專案 |
 | **VB6 已過時** |不再支援；無法在現代.NET 上運行|遷移到 VB.NET 或 C# |
-| **跨平台有限** |主要針對 Windows |使用C#或其他語言進行跨平台 |
+| **跨平台有限** |主要針對 Windows |使用C#或其他語言進行跨平台|
 | **較小的社區** |新資源、圖書館或職位發布較少 |利用 .NET/C# 資源 |
 | **VBA 限制** |與現代語言相比，VBA 已經過時且有限制 |使用 Python 或 Office 腳本實現複雜的自動化 |
 ---
@@ -786,8 +786,8 @@ Dim searchResult As Integer = span.IndexOf(CByte(42))
 | **點擊一次** |透過網路/檔案分享進行自我更新部署 |內部企業應用程式 |
 | **MSIX** |具有全新安裝/卸載功能的現代打包應用程式 | Windows 應用程式商店、企業 |
 | **Windows 安裝程式 (MSI)** |完全控制的傳統安裝程式 |複雜的裝置 |
-| **獨立** |將 .NET 執行階段與應用程式捆綁在一起沒有 .NET 的機器 |
-| **單一檔案發布** |一切都在一個可執行檔中 |簡單分佈|
+| **獨立** |將 .NET 運行時與應用程式捆綁在一起沒有 .NET 的機器 |
+| **單一檔案發布** |一切都在一個可執行檔中 |簡單分佈 |
 ```bash
 # .NET CLI build and publish commands
 dotnet build MyApp.vbproj -c Release
@@ -806,14 +806,97 @@ dotnet publish MyApp.vbproj -c Release -r win-x64 -p:PublishReadyToRun=true
 ---
 
 ## 何時使用 Visual Basic
-|場景 |為什麼選擇VB |更好的選擇|
+|場景|為什麼選擇VB |更好的選擇|
 |----------|--------|--------------------|
 | VBA/辦公室自動化| Office 的標準巨集語言 | Python (openpyxl)、Office 腳本 |
 |舊版 VB6 維護 |現有程式碼庫 |遷移到 C# 或 VB.NET |
 |簡單的Windows工具|使用 WinForms 快速建置 | C# 與 WPF 或 WinUI |
-|學習程式設計 |非常平易近人的語法 | Python（更通用）|
+|學習程式設計 |非常平易近人的語法| Python（更通用）|
 | .NET 新開發 |可以，但首選 C# | C# |
 |跨平台應用程式 |不適合| C#、Flutter、Web 技術 |
+---
+
+## 綜合問答
+### Q1：VB6、VB.NET 和 VBA 有什麼不同？
+**答：** 每個都有不同的目的：
+- **VB6**：經典 Visual Basic — 基於 COM、僅限 Windows、舊版
+- **VB.NET**：現代 .NET 語言 — 在 CLR 上運行，完整的 OOP，Visual Studio 的一部分
+- **VBA**：Visual Basic for Applications — 嵌入在 Microsoft Office 中
+### Q2：VBA 如何自動化 Excel？
+**答：** VBA 可以操作儲存格、範圍和工作表：
+```vb
+Sub FormatReport()
+    Dim ws As Worksheet
+    Set ws = ActiveSheet
+
+    ws.Range("A1").Value = "Total Sales"
+    ws.Range("A1").Font.Bold = True
+    ws.Range("B2:B100").NumberFormat = "$#,##0.00"
+
+    Dim total As Double
+    total = Application.WorksheetFunction.Sum(ws.Range("B2:B100"))
+    ws.Range("B1").Value = total
+End Sub
+```
+
+### Q3：如何在 VB.NET 中建立 Windows 窗體應用程式？
+**答：** 使用 Visual Studio 設計器：
+```vb
+Public Class MainForm
+    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim num1 = CDbl(txtNum1.Text)
+        Dim num2 = CDbl(txtNum2.Text)
+        lblResult.Text = (num1 + num2).ToString("F2")
+    End Sub
+End Class
+```
+
+### Q4：VB.NET 和 C# 之間的主要差異是什麼？
+**答：** 它们共享相同的运行时和库。語法差異：
+- VB.NET：`Dim`、`Sub`、`Function`、`If...Then...End If` 
+- C#：类型优先，`{}` 块，`;` 终止符
+- VB.NET 不区分大小写； C# 区分大小写
+### Q5：VB.NET還值得學嗎？
+**答：** 為了維護現有應用程序，是的。對於新項目，首選 C#。 VBA 對於辦公室自動化仍然至關重要。
+---
+
+## 解決問題的思路
+### 問題 1：使用 VBA 自動產生 Excel 報告
+**第 1 步：了解問題**
+根據原始數據產生月度銷售報告。
+**第 2 步：確定方法**
+使用 VBA 讀取資料、計算摘要和格式化輸出。
+**步驟 3：實施**```vb
+Sub GenerateReport()
+    Dim wsData As Worksheet, wsReport As Worksheet
+    Set wsData = Sheets("Data")
+    Set wsReport = Sheets.Add
+    wsReport.Name = "Monthly Report"
+
+    ' Headers
+    wsReport.Range("A1:D1").Value = Array("Month", "Sales", "Cost", "Profit")
+    wsReport.Range("A1:D1").Font.Bold = True
+
+    ' Process data
+    Dim lastRow As Long
+    lastRow = wsData.Cells(wsData.Rows.Count, 1).End(xlUp).Row
+
+    Dim i As Long, reportRow As Long
+    reportRow = 2
+    For i = 2 To lastRow
+        wsReport.Cells(reportRow, 1).Value = wsData.Cells(i, 1).Value
+        wsReport.Cells(reportRow, 2).Value = wsData.Cells(i, 2).Value
+        wsReport.Cells(reportRow, 3).Value = wsData.Cells(i, 3).Value
+        wsReport.Cells(reportRow, 4).Formula = "=B" & reportRow & "-C" & reportRow
+        reportRow = reportRow + 1
+    Next i
+
+    wsReport.Columns.AutoFit
+End Sub
+```
+
+**第 4 步：擴充**
+新增圖表、條件格式和電子郵件傳送。
 ---
 
 ＃＃ 概括

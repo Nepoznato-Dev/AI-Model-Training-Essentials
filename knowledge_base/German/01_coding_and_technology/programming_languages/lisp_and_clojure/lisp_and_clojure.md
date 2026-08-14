@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Lisp & Clojure
 Lisp ist die zweitälteste noch verwendete Hochprogrammiersprache (nach Fortran) und wurde 1958 von John McCarthy entwickelt. Sie war Vorreiter für viele Konzepte, die heute als selbstverständlich gelten: Garbage Collection, Rekursion, Baumdatenstrukturen, dynamische Typisierung und die Idee von Programmen als Daten (Homoikonizität). Das besondere Merkmal von Lisp ist seine Syntax – Code wird als verschachtelte Klammern (S-Ausdrücke) geschrieben, was die Sprache einfach zu analysieren macht und eine leistungsstarke Metaprogrammierung durch **Makros** ermöglicht.
 Clojure ist ein moderner Lisp-Dialekt, der 2007 von Rich Hickey entwickelt wurde. Er läuft auf der JVM (auch ClojureScript für JavaScript), umfasst funktionale Programmierung, Unveränderlichkeit und Parallelität und bietet nahtlose Java-Interoperabilität. Clojure wird in der Webentwicklung, Datenverarbeitung und Finanzsystemen verwendet.
@@ -571,7 +572,7 @@ jobs:
 | Werkzeug | Zweck | Verwendung |
 |------|---------|-------|
 | **Kriterium** | Statistisches Benchmarking | `(bench (expr))`|
-| **VisualVM** | JVM-Profilerstellung | `jvisualvm`Befehl |
+| **VisualVM** | JVM-Profilerstellung |  `jvisualvm`-Befehl |
 | **clj-async-profil** | CPU-Profilerstellung mit geringem Overhead | `start`/`stop`/`serve`|
 | **Büschel** | Laufzeitprofilierung | `(p :tag (expr))`|
 ### Benchmarking mit Criterium
@@ -695,6 +696,141 @@ native-image --no-fallback \
 | Allgemeine Anwendungsentwicklung | Möglich, aber Nische | Python, Java, Go |
 | Mobile Apps | ClojureScript für Web-Apps; nicht einheimisch | Swift, Kotlin |
 | Datenwissenschaft | Nicht das Ökosystem | Python, R |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Warum haben Lisp/Clojure-Programme so viele Klammern?
+**A:** Klammern stellen S-Ausdrücke dar – eine einheitliche Syntax, bei der Code und Daten dieselbe Struktur haben (Homoikonizität):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### F2: Wie geht Clojure unterschiedlich mit Status und Veränderlichkeit um?
+**A:** Clojure verwendet standardmäßig unveränderliche Daten. Für kontrollierte Zustandsänderungen stellt es Referenztypen bereit:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### F3: Was sind die persistenten Datenstrukturen von Clojure?
+**A:** Alle Clojure-Sammlungen sind persistent (unveränderlich, strukturell gemeinsam genutzt):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### F4: Wie funktionieren Clojure-Makros?
+**A:** Makros empfangen nicht ausgewerteten Code (als Daten), transformieren ihn und geben neuen Code zurück:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### F5: Wie gehe ich mit Parallelität in Clojure um?
+**A:** Clojure bietet mehrere Parallelitätsprimitive:
+-`atom`– unabhängige, synchrone Änderungen
+-`ref`+`dosync`– koordinierte, transaktionale Änderungen
+-`agent`– asynchrone, unabhängige Änderungen
+- `core.async`-Kanäle – Parallelität im CSP-Stil
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Verarbeitung einer Datenpipeline
+**Schritt 1: Verstehen Sie das Problem**
+Lesen Sie Daten, filtern, transformieren und aggregieren Sie über eine Pipeline.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie die Threading-Makros (`->>`) und Wandler von Clojure.
+**Schritt 3: Implementieren**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**Schritt 4: Optimieren**
+Wandler vermeiden die Erstellung von Zwischensequenzen – sie fassen Transformationen in einem einzigen Durchgang zusammen.
+### Problem 2: Erstellen eines einfachen Webservers
+**Schritt 1: Verstehen Sie das Problem**
+Erstellen Sie mit Ring/Compojure einen einfachen HTTP-Server.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie Ring-Adapter und Compojure-Routing.
+**Schritt 3: Implementieren**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**Schritt 4: Erweitern**
+Fügen Sie Middleware für Protokollierung, JSON-Analyse, Authentifizierung und Fehlerbehandlung hinzu.
 ---
 
 ## Zusammenfassung

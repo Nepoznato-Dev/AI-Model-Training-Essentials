@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "OCaml"
-description : "Référence complète pour le langage de programmation OCaml couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "OCaml"
+description: "Comprehensive reference for the OCaml programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [ocaml, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "29 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [ocaml, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #OCaml
 OCaml (Objective Caml) est un langage de programmation fonctionnel développé à l'INRIA en France, lancé pour la première fois en 1996. Il combine l'expressivité de la programmation fonctionnelle avec des fonctionnalités pratiques : un système de types puissant avec inférence de types (Hindley-Milner), correspondance de modèles, types de données algébriques et programmation orientée objet en option. OCaml compile en code natif rapide et prend également en charge le bytecode.
 L'application réelle la plus célèbre d'OCaml est la société de trading **Jane Street**, qui utilise OCaml pour l'ensemble de son infrastructure de trading. Il est également utilisé dans le développement de compilateurs (le compilateur Rust a été initialement écrit en OCaml), la vérification formelle, les systèmes financiers et la preuve de théorèmes.
@@ -708,6 +713,122 @@ ENTRYPOINT ["./app"]
 | Science des données / ML | Pas l'écosystème | Python, R |
 | Applications mobiles | Ne convient pas | Swift, Kotlin, Fléchette |
 | Applications générales | Possible mais de niche | Allez, Python, Rouille |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Comment fonctionne l'inférence de type d'OCaml ?
+**A :** Le système de types Hindley-Milner d'OCaml déduit des types sans annotations :
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### Q2 : Que sont les types de données algébriques et pourquoi sont-ils puissants ?
+**A :** Les ADT combinent des types de produits (enregistrements) et des types de somme (variantes) :
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### Q3 : Comment fonctionnent les modules et les foncteurs ?
+**A :** Les modules organisent le code ; les foncteurs sont des fonctions de modules en modules :
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### Q4 : Qu'est-ce qui rend OCaml rapide ?
+**A :** OCaml compile en code natif efficace :
+- Effacement de type - aucune vérification de type à l'exécution
+- Flotteurs et entiers non emballés
+- Compilation de correspondance de modèles pour sauter des tables
+- Optimisation des appels de queue
+- Aucune pause du garbage collector (GC incrémentiel)
+### Q5 : Comment OCaml se compare-t-il aux autres langages de la famille ML ?
+**A :** OCaml équilibre praticité et pureté :
+- vs Haskell : OCaml a des fonctionnalités impératives, un état mutable et une compilation plus rapide
+- vs F# : OCaml dispose d'un système de modules plus mature et d'un meilleur support multiplateforme
+- vs Rust : OCaml a GC (pas de propriété), mais Rust a un meilleur FFI et un meilleur écosystème
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Implémentation d'un interpréteur Type-Safe
+**Étape 1 : Comprendre le problème**
+Créez un interpréteur pour un langage d’expression simple.
+**Étape 2 : Identifiez l'approche**
+Utilisez des types de données algébriques pour les expressions et la correspondance de modèles pour l'évaluation.
+**Étape 3 : Mettre en œuvre**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**Étape 4 : Prolonger**
+Ajoutez`Let`,`If`,`Lambda`pour un langage plus complet.
+### Problème 2 : Construire un analyseur simple avec des combinateurs
+**Étape 1 : Comprendre le problème**
+Analysez des expressions arithmétiques à l'aide de combinateurs d'analyseurs.
+**Étape 2 : Identifiez l'approche**
+Construisez de petits analyseurs et composez-les.
+**Étape 3 : Mettre en œuvre**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**Étape 4 : Rédiger**
+Combinez les analyseurs avec`map`,`seq`,`alt`et`many`pour analyser des expressions complètes.
 ---
 
 ## Résumé

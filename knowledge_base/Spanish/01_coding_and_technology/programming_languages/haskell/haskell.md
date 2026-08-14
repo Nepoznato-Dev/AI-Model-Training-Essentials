@@ -1,39 +1,44 @@
 ---
-# Metadatos
-título: "Haskell"
-descripción: "Referencia completa para el lenguaje de programación Haskell que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Haskell"
+description: "Comprehensive reference for the Haskell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [haskell, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "39 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [haskell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "39 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Haskell
 Haskell es un lenguaje de programación puramente funcional, de tipo estático y evaluado de forma diferida. Estandarizado por primera vez en 1990 (Haskell 90) y perfeccionado a través de múltiples versiones (Haskell 2010 es el estándar actual), Haskell es conocido por su rigor matemático, su potente sistema de tipos (con clases de tipos, mónadas y tipos de datos algebraicos) y su énfasis en la corrección a través de los tipos.
 Haskell no es un idioma dominante, pero su influencia es enorme. Conceptos como mónadas, evaluación diferida y clases de tipos han influido en Rust, Swift, Kotlin, Scala y TypeScript. Haskell se utiliza en finanzas (Standard Chartered, Barclays), compiladores (GHC) y verificación formal.
@@ -49,7 +54,7 @@ Haskell no es un idioma dominante, pero su influencia es enorme. Conceptos como 
 ## Las compensaciones
 | Limitación | Detalles | Solución típica |
 |-----------|-----------------|-------------------|
-| **Curva de aprendizaje pronunciada** | Mónadas, functores, clases de tipos: muy diferentes de los lenguajes imperativos | Invierta tiempo; los conceptos son transferibles |
+| **Curva de aprendizaje pronunciada** | Mónadas, functores, clases de tipos: muy diferentes de los lenguajes imperativos | Invierte tiempo; los conceptos son transferibles |
 | **Sorpresas de evaluación perezosa** | Puede provocar un uso inesperado de la memoria y problemas de rendimiento | Utilice una evaluación estricta (`!`) cuando sea necesario |
 | **Ecosistema más pequeño** | Menos bibliotecas que Python, Java o JavaScript | El pirateo está aumentando; muchos paquetes de calidad |
 | **Mercado laboral** | Nicho: principalmente trabajo financiero, de investigación y de compilación | Creciendo en comunidades de programación funcional |
@@ -935,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | Desarrollo de aplicaciones generales | Posible pero nicho | Python, Ir, Java |
 | Desarrollo web | Yesod/Siervo existe pero es limitado | JavaScript/Mecanografiado |
 | Ciencia de datos | No el ecosistema | Pitón, R |
+---
+
+## Preguntas y respuestas sintéticas
+### P1: ¿Cómo afecta la evaluación diferida de Haskell al rendimiento?
+**R:** La evaluación diferida significa que las expresiones se calculan solo cuando es necesario, lo que permite estructuras de datos infinitas y canalizaciones componibles. Sin embargo, puede provocar pérdidas de espacio si se acumulan procesadores:
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Utilice`foldl'`(de `Data.List`) en lugar de`foldl`para pliegues numéricos. Utilice los patrones de explosión`!`o`seq`para forzar la evaluación cuando sea necesario.
+### P2: ¿Cuál es la diferencia práctica entre `Functor`,`Applicative`y `Monad`?
+**R:** Cada clase de tipo agrega capacidad:
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** asigna una función pura a un contexto. **Aplicativo** aplica funciones que están en sí mismas en un contexto. **Monad** permite que cada paso dependa del resultado del paso anterior. En la práctica: utilice`fmap`/`<$>`para transformaciones simples,`<*>`para combinar efectos y`>>=`/`do`para cálculos dependientes secuenciales.
+### P3: ¿Cómo manejo los efectos secundarios en código Haskell puro?
+**R:** Utilice el sistema de tipos para separar el código puro del efectivo:
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Mantenga pura la lógica central y lleve los efectos al límite. Utilice`ReaderT`para configuración,`ExceptT`para errores y`StateT`para estado mutable.
+### P4: ¿Qué son las clases de tipos y en qué se diferencian de las interfaces OOP?
+**R:** Las clases de tipos definen el comportamiento que los tipos pueden implementar. A diferencia de las interfaces OOP, son abiertas (cualquier tipo puede ser una instancia) y admiten polimorfismo ad-hoc:
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### P5: ¿Cómo estructuro un proyecto Haskell para uso en el mundo real?
+**R:** Utilice Cabal o Stack con un diseño estándar:
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Prácticas clave: mantenga IO en`Main.hs`o en un módulo`IO`dedicado, haga que la lógica central sea pura y comprobable, use contenedores`newtype`para tipos de dominio.
+---
+
+## Resolución de problemas mediante cadena de pensamiento
+### Problema 1: Implementación de una función de división segura con informe de errores
+**Paso 1: Comprenda el problema**
+Necesitamos una división que maneje la división por cero e informe errores significativos, no solo fallas.
+**Paso 2: Identificar el enfoque**
+Utilice`Either`para devolver un mensaje de error o el resultado. Esto hace explícita la posibilidad de falla en el tipo.
+**Paso 3: Implementar**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Paso 4: Verificar**
+El sistema de tipos garantiza que las personas que llaman deben manejar el caso de error. La coincidencia de patrones o`either`fuerza un manejo explícito.
+### Problema 2: análisis de un lenguaje de configuración simple
+**Paso 1: Comprenda el problema**
+Analice pares clave-valor de una cadena como `name=Alice\nage=30`.
+**Paso 2: Identificar el enfoque**
+Utilice`Text.Parsec`o recursividad manual. Para simplificar, utilice`break`y `span`.
+**Paso 3: Implementar**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Paso 4: Extender**
+Agregue manejo de comentarios (`#`), encabezados de sección (`[section]`) y coerción de tipos usando un ADT `Value`.
+### Problema 3: Construir un Fibonacci memorizado con pereza
+**Paso 1: Comprenda el problema**
+Calcula los números de Fibonacci de manera eficiente. La recursividad ingenua es exponencial.
+**Paso 2: Identificar el enfoque**
+Utilice la evaluación diferida de Haskell para crear una lista infinita donde cada elemento se calcula una vez y se almacena en caché.
+**Paso 3: Implementar**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Paso 4: Optimizar**
+Para acceso aleatorio, utilice`Data.Array`con construcción diferida. Para índices muy grandes, utilice la exponenciación matricial en O(log n).
+### Problema 4: Implementación de una máquina de estados simple
+**Paso 1: Comprenda el problema**
+Modele un semáforo que alterna entre Rojo -> Verde -> Amarillo -> Rojo.
+**Paso 2: Identificar el enfoque**
+Utilice un tipo de datos algebraico para estados y una función de transición pura.
+**Paso 3: Implementar**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Paso 4: Verificar**
+Las funciones puras son trivialmente comprobables:```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Resumen

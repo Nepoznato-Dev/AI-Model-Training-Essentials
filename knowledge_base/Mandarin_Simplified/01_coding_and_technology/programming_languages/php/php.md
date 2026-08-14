@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # PHP
 PHP（超文本预处理器）是一种服务器端脚本语言，由Rasmus Lerdorf于1994年创建，并于1995年首次发布。PHP最初设计用于生成动态网页，现已发展成为一种功能齐全的通用语言。它为大约 75% 的使用已知服务器端语言的网站提供支持，包括 WordPress、Facebook（最初）、维基百科、Slack 和数百万个其他网站。
 现代 PHP (8.x) 是一种与 2000 年代初的 PHP 非常不同的语言。它现在具有类型化属性、匹配表达式、枚举、纤程、只读类和强大的类型系统。尽管 PHP 在开发人员中享有盛誉（经常因不一致而受到批评），但它很实用，部署广泛，并且在不断改进。
@@ -205,7 +206,7 @@ $config = [...$defaults, ...$overrides];
 |工具|目的|
 |------|---------|
 | **作曲家** |依赖管理器（如 npm/pip）|
-| **PHPUnit** |测试框架|
+| **PHPUnit** |测试框架 |
 | **PHPStan / 诗篇** |静态分析（无需运行代码即可发现错误）|
 | **Laravel Sail / Herd** |本地开发环境|
 | **PSR 标准** |编码风格和接口标准|
@@ -815,7 +816,7 @@ CMD ["php-fpm"]
 ---
 
 ## 何时使用 PHP
-|场景 |为什么选择 PHP |更好的选择|
+|场景|为什么选择 PHP |更好的选择|
 |----------|---------|--------------------|
 | WordPress 开发 | PHP是唯一的选择| — |
 |自由网页开发 |市场巨大；易于部署| — |
@@ -827,6 +828,332 @@ CMD ["php-fpm"]
 |实时应用 |不是PHP的强项| Node.js、Go |
 |数据科学/机器学习 |不是生态系统| Python、R |
 |桌面/移动应用程序 |不适合|使用母语 |
+---
+
+## 综合问答
+### Q1：PHP中`==`和`===`有什么区别？
+**A:**`==`是松散比较 - 它在比较之前执行类型强制（`"0" == false`是`true`）。 `===`是严格比较 - 它检查值和类型（`"0" === false`是`false`）。除非您特别需要类型强制，否则始终使用 `===`。这是 PHP 最常见的错误来源之一。
+```php
+// Loose comparison — type coercion (avoid)
+var_dump(0 == "foo");     // true (PHP 7) — "foo" coerced to 0
+var_dump(0 == "");        // true
+var_dump(null == false);   // true
+var_dump("" == null);      // true
+
+// Strict comparison — no coercion (always prefer this)
+var_dump(0 === "foo");    // false
+var_dump(null === false);  // false
+var_dump("" === null);     // false
+var_dump(1 === 1);         // true
+```
+
+### Q2：PHP 命名空间和自动加载如何工作？
+**A:** 命名空间可以防止类名冲突。 PSR-4 自动加载将命名空间结构映射到目录结构 -`App\Controllers\UserController`映射到`src/Controllers/UserController.php`。 Composer 通过`composer.json`处理自动加载。在现代 PHP 中始终使用命名空间和 PSR-4。
+```json
+// composer.json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
+```
+
+```php
+// src/Controllers/UserController.php
+namespace App\Controllers;
+
+use App\Services\UserService;
+use App\Models\User;
+
+class UserController {
+    public function __construct(
+        private readonly UserService $userService
+    ) {}
+
+    public function show(string $id): User {
+        return $this->userService->find($id);
+    }
+}
+```
+
+```bash
+composer dump-autoload  # Regenerate autoloader after changes
+```
+
+### Q3：什么是 PHP 8 属性，它们与框架有何关系？
+**答：** 属性 (PHP 8) 是类、方法、属性和参数的结构化元数据注释。它们在 PHP 中相当于 Java 注释或 C# 属性。 Laravel 和 Symfony 等框架广泛使用它们进行路由、验证和依赖项注入。
+```php
+use Attribute;
+
+// Define a custom attribute
+#[Attribute(Attribute::TARGET_METHOD)]
+class Route {
+    public function __construct(
+        public readonly string $path,
+        public readonly string $method = 'GET'
+    ) {}
+}
+
+// Use attribute on controller method
+class UserController {
+    #[Route('/users/{id}', method: 'GET')]
+    public function show(int $id): JsonResponse {
+        $user = User::findOrFail($id);
+        return new JsonResponse($user->toArray());
+    }
+
+    #[Route('/users', method: 'POST')]
+    public function store(#[Validate(CreateUserRequest::class)] $request): JsonResponse {
+        $user = User::create($request->validated());
+        return new JsonResponse($user->toArray(), 201);
+    }
+}
+
+// Read attributes via reflection
+$ref = new ReflectionMethod(UserController::class, 'show');
+$attrs = $ref->getAttributes(Route::class);
+$route = $attrs[0]->newInstance();
+echo $route->path;   // "/users/{id}"
+echo $route->method; // "GET"
+```
+
+### Q4：如何在现代 PHP 中正确处理错误？
+**答：** PHP 既有错误（E_WARNING、E_NOTICE）又有异常。现代 PHP 专门使用异常。使用 try/catch 处理预期失败，使用自定义异常类处理域错误，使用`set_error_handler`将错误转换为异常。 PHP 7+`Throwable`是错误和异常的基本接口。
+```php
+// Custom exception hierarchy
+class AppException extends \Exception {}
+class NotFoundException extends AppException {}
+class ValidationException extends AppException {
+    public function __construct(
+        public readonly array $errors,
+        string $message = 'Validation failed'
+    ) {
+        parent::__construct($message);
+    }
+}
+
+// Structured error handling
+try {
+    $user = $service->createUser($data);
+} catch (ValidationException $e) {
+    return response()->json(['errors' => $e->errors], 422);
+} catch (NotFoundException $e) {
+    return response()->json(['error' => $e->getMessage()], 404);
+} catch (\Throwable $e) {
+    Log::error('Unexpected error', ['exception' => $e]);
+    return response()->json(['error' => 'Internal error'], 500);
+}
+
+// Convert PHP errors to exceptions
+set_error_handler(function (int $severity, string $message, string $file, int $line) {
+    throw new \ErrorException($message, 0, $severity, $file, $line);
+});
+```
+
+### Q5：什么是 PHP 纤维，它们与异步有何关系？
+**答：** Fibers (PHP 8.1) 是轻量级协作线程——它们可以暂停和恢复执行。它们是异步 PHP 的基础，但属于低级别。 Amp 和 ReactPHP 等框架在内部使用纤程。对于大多数应用程序，使用异步框架而不是原始纤维。
+```php
+// Fiber basics
+$fiber = new Fiber(function (): void {
+    $value = Fiber::suspend('paused');  // Suspend, return value to caller
+    echo "Resumed with: $value\n";
+});
+
+$result = $fiber->start();        // Runs until suspend — "paused"
+$fiber->resume('hello');          // Resumes — "Resumed with: hello"
+
+// Practical: non-blocking I/O simulation
+function asyncRead(string $path): Fiber {
+    return new Fiber(function () use ($path) {
+        // Simulate async operation
+        $data = Fiber::suspend();  // Yield control
+        return $data;              // Resume with data
+    });
+}
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：构建中间件管道
+**问题陈述：** 为 PHP Web 框架实现一个中间件管道，其中每个中间件都可以在链中的下一个中间件之前和之后处理请求。
+**第 1 步 — 了解问题：**
+我们需要：（1）一个`Middleware`接口，（2）一个链接中间件的管道，（3）每个中间件接收一个请求和一个`$next`回调，（4）中间件可以修改请求（之前）和响应（之后）。这是 Laravel、PSR-15 和类似框架使用的洋葱模型。
+**第 2 步 — 确定方法：**
+- 用`process(Request, RequestHandler): Response`定义`MiddlewareInterface`。
+- 使用数组缩减将中间件组合成单个处理程序。
+- 每个中间件都包装下一个中间件，创建嵌套函数调用。
+**第 3 步 — 实施解决方案：**
+```php
+<?php
+
+interface MiddlewareInterface {
+    public function process(Request $request, callable $next): Response;
+}
+
+class Pipeline {
+    private array $middleware = [];
+
+    public function pipe(MiddlewareInterface $middleware): self {
+        $this->middleware[] = $middleware;
+        return $this;
+    }
+
+    public function handle(Request $request, callable $destination): Response {
+        $handler = array_reduce(
+            array_reverse($this->middleware),
+            fn(callable $next, MiddlewareInterface $mw) =>
+                fn(Request $req) => $mw->process($req, $next),
+            fn(Request $req) => $destination($req)
+        );
+
+        return $handler($request);
+    }
+}
+
+// Middleware implementations
+class CorsMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $response = $next($request);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    }
+}
+
+class AuthMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $token = $request->getHeader('Authorization');
+        if (!$token || !$this->validateToken($token)) {
+            return new Response(401, body: json_encode(['error' => 'Unauthorized']));
+        }
+        $request = $request->withAttribute('user', $this->getUser($token));
+        return $next($request);
+    }
+
+    private function validateToken(string $token): bool { /* ... */ return true; }
+    private function getUser(string $token): array { return ['id' => 1, 'name' => 'Alice']; }
+}
+
+class LoggingMiddleware implements MiddlewareInterface {
+    public function process(Request $request, callable $next): Response {
+        $start = microtime(true);
+        $response = $next($request);
+        $duration = round((microtime(true) - $start) * 1000, 2);
+        error_log("{$request->method()} {$request->path()} — {$response->status} ({$duration}ms)");
+        return $response;
+    }
+}
+
+// Usage
+$pipeline = new Pipeline();
+$pipeline
+    ->pipe(new LoggingMiddleware())
+    ->pipe(new CorsMiddleware())
+    ->pipe(new AuthMiddleware());
+
+$response = $pipeline->handle($request, function (Request $req): Response {
+    return new Response(200, body: json_encode(['message' => 'Hello, World!']));
+});
+```
+
+**第 4 步 — 验证和优化：**
+- 顺序很重要：第一个管道=最外层（首先根据请求执行，最后根据响应执行）。
+- 每个中间件都可以通过返回响应来短路，而无需调用`$next`。
+- 生产：使用 PSR-15`MiddlewareInterface`实现与任何 PSR-15 框架的互操作性。
+### 问题 2：使用查询生成器实现存储库
+**问题陈述：** 构建一个流畅的查询生成器，它可以使用参数化查询安全地生成 SQL、支持链接并与存储库模式集成。
+**第 1 步 — 了解问题：**
+我们需要：(1) 具有可链接方法的`QueryBuilder`类（`select`、`where`、`orderBy`、`limit`），(2) 用于防止 SQL 注入的参数化查询，(3) 使用查询生成器进行数据访问的`Repository`。
+**第 2 步 — 确定方法：**
+- Builder 累积 SQL 片段和参数。
+-`toSql()`生成带有占位符的最终查询。
+-`getParameters()`返回绑定值。
+- 存储库使用特定于域的方法包装构建器。
+**第 3 步 — 实施解决方案：**
+```php
+class QueryBuilder {
+    private string $table;
+    private array $columns = ['*'];
+    private array $wheres = [];
+    private array $params = [];
+    private array $orderBy = [];
+    private ?int $limit = null;
+    private ?int $offset = null;
+
+    public function __construct(string $table) { $this->table = $table; }
+
+    public function select(string ...$columns): self {
+        $this->columns = $columns;
+        return $this;
+    }
+
+    public function where(string $column, string $operator, mixed $value): self {
+        $this->wheres[] = "$column $operator ?";
+        $this->params[] = $value;
+        return $this;
+    }
+
+    public function whereEquals(string $column, mixed $value): self {
+        return $this->where($column, '=', $value);
+    }
+
+    public function whereIn(string $column, array $values): self {
+        $placeholders = implode(', ', array_fill(0, count($values), '?'));
+        $this->wheres[] = "$column IN ($placeholders)";
+        $this->params = array_merge($this->params, $values);
+        return $this;
+    }
+
+    public function orderBy(string $column, string $direction = 'ASC'): self {
+        $direction = strtoupper($direction) === 'DESC' ? 'DESC' : 'ASC';
+        $this->orderBy[] = "$column $direction";
+        return $this;
+    }
+
+    public function limit(int $limit): self { $this->limit = $limit; return $this; }
+    public function offset(int $offset): self { $this->offset = $offset; return $this; }
+
+    public function toSql(): string {
+        $sql = "SELECT " . implode(', ', $this->columns) . " FROM {$this->table}";
+        if ($this->wheres) $sql .= " WHERE " . implode(' AND ', $this->wheres);
+        if ($this->orderBy) $sql .= " ORDER BY " . implode(', ', $this->orderBy);
+        if ($this->limit !== null) $sql .= " LIMIT {$this->limit}";
+        if ($this->offset !== null) $sql .= " OFFSET {$this->offset}";
+        return $sql;
+    }
+
+    public function getParameters(): array { return $this->params; }
+}
+
+// Repository using the query builder
+class UserRepository {
+    public function __construct(private PDO $db) {}
+
+    public function findActiveUsers(string $role, int $limit = 50): array {
+        $query = (new QueryBuilder('users'))
+            ->select('id', 'name', 'email')
+            ->whereEquals('active', true)
+            ->whereEquals('role', $role)
+            ->orderBy('name')
+            ->limit($limit);
+
+        $stmt = $this->db->prepare($query->toSql());
+        $stmt->execute($query->getParameters());
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Generated SQL: SELECT id, name, email FROM users WHERE active = ? AND role = ? ORDER BY name ASC LIMIT 50
+// Parameters: [true, "admin"]
+```
+
+**第 4 步 — 验证和优化：**
+- SQL注入预防：所有值都经过参数化查询（`?`占位符）。
+- 可链接的 API：每个方法都会返回`$this`以实现流畅的组合。
+- 生产：使用`illuminate/database`（Laravel 的查询生成器）或`doctrine/dbal`来获得全面的、经过测试的解决方案。
 ---
 
 ＃＃ 概括

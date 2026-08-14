@@ -1,41 +1,46 @@
 ---
-# Métadonnées
-titre : "DevOps et CI/CD"
-description : "Pipelines CI/CD, Docker, Kubernetes, Terraform, GitOps"
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "DevOps and CI/CD"
+description: "CI/CD pipelines, Docker, Kubernetes, Terraform, GitOps"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [devops, cicd, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "11 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [devops, cicd, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "11 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps et CI/CD
-DevOps est la combinaison d'une philosophie culturelle, de pratiques et d'outils qui permet aux équipes de fournir des logiciels plus rapidement et de manière plus fiable. Cela brise le mur entre les développeurs (qui souhaitent apporter des modifications) et les opérations (qui souhaitent de la stabilité). CI/CD (Intégration continue et livraison continue) est l'épine dorsale de l'automatisation qui rend cela possible.
+DevOps est la combinaison d'une philosophie culturelle, de pratiques et d'outils qui permet aux équipes de fournir des logiciels plus rapidement et de manière plus fiable. Cela brise le mur entre les développeurs (qui souhaitent apporter des modifications) et les opérations (qui souhaitent de la stabilité). CI/CD – Intégration continue et livraison continue – est l'épine dorsale de l'automatisation qui rend cela possible.
 ---
 
 ## Pipelines CI/CD
@@ -131,7 +136,7 @@ Kubernetes est l'orchestrateur de conteneurs standard de l'industrie. Il gère l
 | **Plan de contrôle** | Gère le cluster (serveur API, planificateur, etcd, gestionnaire de contrôleur) |
 | **Nœud** | Machine de travail (VM ou physique) qui exécute des conteneurs |
 | **Pod** | La plus petite unité déployable ; un ou plusieurs conteneurs partageant le réseau |
-| **Service** | Point de terminaison du réseau stable qui achemine le trafic vers les pods |
+| **Service** | Point de terminaison de réseau stable qui achemine le trafic vers les pods |
 | **Déploiement** | Définition déclarative de l'état du pod souhaité (répliques, image, etc.) |
 | **Entrée** | Règles de routage HTTP pour le trafic externe |
 | **ConfigMap / Secret** | Configuration et données sensibles injectées dans les pods |
@@ -204,7 +209,7 @@ La pile de surveillance open source standard :
 | **Exportateur de boîte noire** | Sondes les points de terminaison (HTTP, TCP, ICMP) |
 ### Indicateurs clés à suivre
 | Catégorie | Métriques |
-|----------|---------|
+|--------------|---------|
 | **Infrastructures** | CPU, RAM, utilisation du disque, E/S réseau |
 | **Candidature** | Taux de requêtes, latence (p50, p95, p99), taux d'erreur |
 | **Base de données** | Nombre de requêtes, requêtes lentes, utilisation du pool de connexions |
@@ -214,7 +219,7 @@ La pile de surveillance open source standard :
 ## Stratégies de déploiement
 | Stratégie | Comment ça marche | Risque | Restauration |
 |--------------|-------------|------|--------------|
-| **Mise à jour continue** | Remplacez progressivement les anciennes instances par de nouvelles | Certains utilisateurs sur l'ancienne version, d'autres sur la nouvelle version | Revenir à l'image précédente |
+| **Mise à jour continue** | Remplacer progressivement les anciennes instances par de nouvelles | Certains utilisateurs sur l'ancienne version, d'autres sur la nouvelle version | Revenir à l'image précédente |
 | **Bleu-Vert** | Exécutez deux environnements identiques ; changer de trafic | Coût d'infrastructure double pendant la transition | Retour instantané |
 | **Canari** | Acheminer un petit % du trafic vers la nouvelle version ; augmenter progressivement | Gestion complexe du trafic | Acheminer le trafic vers un état stable |
 | **Drapeaux de fonctionnalité** | Déployer le code mais masquer les fonctionnalités derrière les bascules | Complexité du code à partir de la logique conditionnelle | Désactiver |
@@ -228,7 +233,7 @@ GitOps amène IaC à sa conclusion logique : le référentiel Git est la source 
 | ** Versionné ** | Git est la source de la vérité |
 | **Automatisé** | Les outils réconcilient en permanence l'état souhaité avec l'état réel |
 | **Auditable** | Chaque changement est un commit Git |
-**ArgoCD** et **Flux** sont les principaux outils GitOps pour Kubernetes. Vous envoyez une modification à votre dépôt Git et l'outil la déploie automatiquement sur le cluster.
+**ArgoCD** et **Flux** sont les principaux outils GitOps pour Kubernetes. Vous transmettez une modification à votre dépôt Git et l'outil la déploie automatiquement sur le cluster.
 ---
 
 ## Réponse aux incidents
@@ -240,4 +245,4 @@ Quand quelque chose se brise à 3 heures du matin :
 5. **Correction** — restauration ou transfert de correctif.
 6. **Communiquer** — mettre à jour les parties prenantes et les utilisateurs (page d'état).
 7. **Post-mortem** — dans les 24 à 48 heures, documentez la cause première et les mesures à prendre.
-L'objectif n'est pas seulement de réparer l'incident, mais de s'assurer que le même incident ne puisse plus se reproduire.
+L’objectif n’est pas seulement de résoudre l’incident, mais aussi de garantir que le même incident ne se reproduise pas.

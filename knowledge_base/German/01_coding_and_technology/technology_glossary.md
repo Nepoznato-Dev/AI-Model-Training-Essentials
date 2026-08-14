@@ -76,7 +76,7 @@ Gemini unterstützt Googles KI-Chatbot Bard (umbenannt in Gemini) und Google Sea
 Übersichten.
 ### Phi-3-mini
 Phi-3-mini ist ein kleines Sprachmodell (SLM), das von Microsoft mit 3.8B entwickelt wurde
-Parameter. Es wurde im April 2026 veröffentlicht. Im Gegensatz zu den meisten großen Modellen ist Phi-3-mini
+Parameter. Es wurde im April 2024 veröffentlicht. Im Gegensatz zu den meisten großen Modellen ist Phi-3-mini
 wurde anhand eines sorgfältig kuratierten Datensatzes in „Lehrbuchqualität“ geschult – einer Technik
 entwickelt von Microsoft Research – das der Datenqualität Vorrang vor dem Rohvolumen einräumt.
 Obwohl Phi-3-mini viel kleiner als GPT-4 oder Claude 3 Opus ist, entspricht es bzw
@@ -87,7 +87,7 @@ oder sogar auf dem Gerät auf einem modernen Smartphone mit ausreichend RAM.
 ### Lama (Meta-KI)
 Llama (Large Language Model Meta AI) ist eine Modellfamilie mit offenen Gewichten
 veröffentlicht von Meta. Llama 2 (2023) wurde für Forschungs- und kommerzielle Zwecke freigegeben
-mit Größen von 7B bis 70B Parametern. Lama 3 (2026) verbessert
+mit Größen von 7B bis 70B Parametern. Lama 3 (2024) verbessert
 Leistung erheblich, mit Modellen von 8B bis 70B (und später 400B+).
 Da die Gewichte öffentlich herunterladbar sind, bilden Lama-Modelle die Grundlage
 für ein großes Ökosystem fein abgestimmter Varianten (Mistral, Alpaka, Vicuna usw.)
@@ -96,7 +96,7 @@ und werden häufig für lokale/private KI-Bereitstellungen verwendet.
 Mistral AI ist ein französisches KI-Unternehmen, das offene und proprietäre LLMs entwickelt.
 Mistral 7B (2023) hat gezeigt, dass ein 7B-Parametermodell mit dem übereinstimmen kann
 Leistung viel größerer Modelle mithilfe effizienter Techniken wie Gleiten
-Fensteraufmerksamkeit und Aufmerksamkeit für gruppierte Abfragen. Mixtral 8x7B (2026) ist eine Mischung-
+Fensteraufmerksamkeit und Aufmerksamkeit für gruppierte Abfragen. Mixtral 8x7B (2023) ist eine Mischung-
 Expertenmodell – es leitet jedes Token an eine Teilmenge von 8 Expertennetzwerken weiter,
 Erzielen einer Leistung auf GPT-3.5-Niveau bei gleichzeitig geringerem Rechenaufwand.
 Die Modelle von Mistral sind vollständig offengewichtig und können lokal betrieben werden.

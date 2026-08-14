@@ -179,7 +179,7 @@ if err != nil {
 }
 ```
 
-### 並發——Goroutines 和 Channels
+### 並發－Goroutines 和 Channels
 ```go
 // Goroutine
 go func() {
@@ -719,7 +719,7 @@ go mod tidy
 ---
 
 ## 何時使用 Go
-|場景 |為什麼要去 |更好的選擇|
+|場景|為什麼要去 |更好的選擇|
 |----------|--------|--------------------|
 |雲端原生服務/微服務 |快速、小型二進位、出色的 HTTP | Rust 實現最佳效能 |
 | CLI 工具 |快速編譯，單一二進位檔案 | Rust 用於複雜的 CLI |
@@ -730,6 +730,419 @@ go mod tidy
 |資料科學/機器學習 |沒有正確的生態系統| Python、R |
 |桌面/行動 GUI |沒有GUI框架|使用網路前端或母語 |
 |嵌入式系統|太重（GC、運行時）| C、鐵鏽|
+---
+
+## 綜合問答
+### Q1：為什麼Go沒有異常？我該如何處理錯誤？
+**A:** Go 使用明確錯誤返回而不是異常。每個可能失敗的函數都會傳回`error`作為其最後的回傳值。這迫使呼叫者明確地處理錯誤——沒有靜默的失敗或忘記的 catch 區塊。慣用模式是`if err != nil`。使用`fmt.Errorf`和`%w`來包裝錯誤，使用`errors.Is`/`errors.As`檢查錯誤類型。對於不可恢復的錯誤（程式錯誤），請使用`panic`。
+```go
+func readConfig(path string) (Config, error) {
+    data, err := os.ReadFile(path)
+    if err != nil {
+        return Config{}, fmt.Errorf("reading config %s: %w", path, err)
+    }
+    var cfg Config
+    if err := json.Unmarshal(data, &cfg); err != nil {
+        return Config{}, fmt.Errorf("parsing config %s: %w", path, err)
+    }
+    return cfg, nil
+}
+```
+
+### Q2：什麼是 goroutine，它們與作業系統執行緒有何不同？
+**A:** Goroutines 是由 Go 執行時期管理的輕量級使用者空間執行緒。它們以約 2KB 的堆疊開始（作業系統執行緒約 1MB），由調度程式多路復用到作業系統執行緒上，並且一次可以創建數百萬個。 goroutine 之間的通訊使用通道（或用於共用狀態的`sync`原語）。始終使用`sync.WaitGroup`或上下文取消來避免 goroutine 洩漏。
+```go
+// Launch thousands of goroutines — perfectly fine
+var wg sync.WaitGroup
+for i := 0; i < 10000; i++ {
+    wg.Add(1)
+    go func(id int) {
+        defer wg.Done()
+        process(id)
+    }(i)
+}
+wg.Wait()
+```
+
+### Q3：什麼時候應該使用通道和互斥體來實現並發？
+**A：** 當 goroutine 需要通訊資料時使用通道－它們強制執行「透過通訊共享記憶體」的概念。當 goroutine 需要保護共用狀態（快取、計數器、連線池）時，請使用互斥體 (`sync.Mutex`)。一個好的規則：如果數據在 goroutine 之間傳遞，則使用通道；如果多個 goroutine 存取數據，請使用互斥體。對於簡單的原子操作，請使用`sync/atomic`。
+```go
+// Channel pattern — pipeline
+func producer(nums chan<- int) {
+    for i := 0; i < 10; i++ { nums <- i }
+    close(nums)
+}
+func consumer(nums <-chan int, results chan<- int) {
+    for n := range nums { results <- n * n }
+    close(results)
+}
+
+// Mutex pattern — shared cache
+type SafeCache struct {
+    mu    sync.RWMutex
+    items map[string]string
+}
+func (c *SafeCache) Get(key string) (string, bool) {
+    c.mu.RLock()
+    defer c.mu.RUnlock()
+    v, ok := c.items[key]
+    return v, ok
+}
+```
+
+### Q4：`nil` 切片/貼圖和空切片/貼圖有什麼不同？
+**A:**`nil`切片 (`var s []int`) 沒有底層數組，長度為 0，容量為 0。空切片（`s := []int{}`或`make([]int, 0)`）有底層數組，但長度為 0。兩者與`append`、`len`、`cap`的工作方式相同，和`range`。 JSON 封送不同： nil 切片變成`null`，空切片變成`[]`。最佳實務：首選 nil 切片作為傳回值（它們表示「無資料」），當 JSON 輸出很重要時使用空切片。
+```go
+var nilSlice []int          // nil, len=0, cap=0
+emptySlice := []int{}       // not nil, len=0, cap=0
+
+// Both work with append
+nilSlice = append(nilSlice, 1)   // Now len=1
+emptySlice = append(emptySlice, 1) // Now len=1
+
+// JSON difference
+json.Marshal(nilSlice)     // "null"
+json.Marshal(emptySlice)   // "[]"
+```
+
+### Q5：Go 中的介面是如何運作的，什麼是空介面？
+**A:** Go 接口是隱式滿足的——類型通過實現其方法來實現接口，沒有`implements`關鍵字。這使得解耦和組合成為可能。每種類型都滿足空介面`interface{}`（或 Go 1.18+ 中的`any`）——謹慎使用它（泛型通常更好）。介面值是對：`(type, value)`。 nil 介面兩者皆為 nil。
+```go
+// Implicit interface satisfaction
+type Writer interface {
+    Write(p []byte) (n int, err error)
+}
+
+// MyWriter implements Writer without declaring it
+type MyWriter struct { buf *bytes.Buffer }
+func (w *MyWriter) Write(p []byte) (int, error) { return w.buf.Write(p) }
+
+// Type assertion and type switch
+func describe(i interface{}) string {
+    switch v := i.(type) {
+    case int:
+        return fmt.Sprintf("integer: %d", v)
+    case string:
+        return fmt.Sprintf("string: %q", v)
+    default:
+        return fmt.Sprintf("unknown: %T", v)
+    }
+}
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：建立具有速率限制的並發 Web 爬蟲
+**問題陳述：** 建立一個 Go 程序，同時從清單中取得 URL、提取頁面標題、遵守每秒 10 個請求的速率限制，並在沒有資料競爭的情況下收集結果。
+**第 1 步 — 了解問題：**
+我們需要：(1) 使用 goroutine 進行並發 HTTP 獲取，(2) 速率限制以避免伺服器不堪重負，(3) 無競爭的結果收集，(4) 對失敗請求進行正確的錯誤處理。 Go 的並發原語（goroutines、channels、`errgroup`）非常適合此目的。
+**第 2 步 — 確定方法：**
+- 使用`golang.org/x/time/rate`進行令牌桶速率限制。
+- 使用`sync.WaitGroup`或`errgroup.Group`來管理 goroutine。
+- 使用結果通道安全地收集輸出。
+- 使用`context.Context`進行取消和逾時。
+**第 3 步 — 實施解決方案：**
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "io"
+    "net/http"
+    "regexp"
+    "sync"
+    "time"
+
+    "golang.org/x/sync/errgroup"
+    "golang.org/x/time/rate"
+)
+
+type Result struct {
+    URL   string
+    Title string
+    Error error
+}
+
+var titleRegex = regexp.MustCompile(`<title[^>]*>(.*?)</title>`)
+
+func fetchTitle(ctx context.Context, client *http.Client, url string) Result {
+    req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+    resp, err := client.Do(req)
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+    defer resp.Body.Close()
+
+    body, err := io.ReadAll(io.LimitReader(resp.Body, 1<<20)) // 1MB limit
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+
+    matches := titleRegex.FindSubmatch(body)
+    if matches == nil {
+        return Result{URL: url, Title: "(no title)"}
+    }
+    return Result{URL: url, Title: string(matches[1])}
+}
+
+func scrapeAll(ctx context.Context, urls []string, rps int) []Result {
+    limiter := rate.NewLimiter(rate.Limit(rps), rps)
+    client := &http.Client{Timeout: 10 * time.Second}
+    results := make([]Result, len(urls))
+
+    g, ctx := errgroup.WithContext(ctx)
+    g.SetLimit(20) // Max 20 concurrent goroutines
+
+    for i, url := range urls {
+        i, url := i, url // Capture loop variables
+        g.Go(func() error {
+            if err := limiter.Wait(ctx); err != nil {
+                return err
+            }
+            results[i] = fetchTitle(ctx, client, url)
+            return nil
+        })
+    }
+
+    if err := g.Wait(); err != nil {
+        fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+    }
+    return results
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 無資料競爭：每個 goroutine 寫入`results`中自己的索引 - 不需要互斥體。
+-`errgroup.SetLimit`獨立於速率限制器限制並發性。
+-`io.LimitReader`防止讀取過大的頁面。
+-`http.NewRequestWithContext`確保上下文完成時取消請求。
+- 對於生產：增加具有指數退避、連接池調整和指標的重試邏輯。
+### 問題 2：實作通用 LRU 緩存
+**問題陳述：** 使用泛型（Go 1.18+）在 Go 中實現線程安全的通用 LRU（最近最少使用）快取。它應該支援`Get`、`Set`和`Delete`，時間複雜度為 O(1)。
+**第 1 步 — 了解問題：**
+LRU 快取需要 O(1) 來尋找（雜湊映射）和 O(1) 排序更新（雙向鍊錶）。在`Get`上：將專案移到前面。在`Set`上：插入在前面；如果超出容量，則從後面驅逐。線程安全需要互斥鎖。
+**第 2 步 — 確定方法：**
+- 使用 `container/list`（雙向鍊錶）進行 O(1) 移至前面和從後面移除。
+- 使用`map[K]*list.Element`進行 O(1) 尋找。
+- 使用`sync.Mutex`實現線程安全。
+- 用於型別安全的泛型 (`[K comparable, V any]`)。
+**第 3 步 — 實施解決方案：**
+```go
+type entry[K comparable, V any] struct {
+    key   K
+    value V
+}
+
+type LRUCache[K comparable, V any] struct {
+    capacity int
+    items    map[K]*list.Element
+    order    *list.List
+    mu       sync.Mutex
+}
+
+func NewLRU[K comparable, V any](capacity int) *LRUCache[K, V] {
+    return &LRUCache[K, V]{
+        capacity: capacity,
+        items:    make(map[K]*list.Element),
+        order:    list.New(),
+    }
+}
+
+func (c *LRUCache[K, V]) Get(key K) (V, bool) {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.MoveToFront(elem)
+        return elem.Value.(*entry[K, V]).value, true
+    }
+    var zero V
+    return zero, false
+}
+
+func (c *LRUCache[K, V]) Set(key K, value V) {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.MoveToFront(elem)
+        elem.Value.(*entry[K, V]).value = value
+        return
+    }
+
+    if c.order.Len() >= c.capacity {
+        oldest := c.order.Back()
+        if oldest != nil {
+            c.order.Remove(oldest)
+            delete(c.items, oldest.Value.(*entry[K, V]).key)
+        }
+    }
+
+    e := &entry[K, V]{key: key, value: value}
+    elem := c.order.PushFront(e)
+    c.items[key] = elem
+}
+
+func (c *LRUCache[K, V]) Delete(key K) bool {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.Remove(elem)
+        delete(c.items, key)
+        return true
+    }
+    return false
+}
+
+func (c *LRUCache[K, V]) Len() int {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+    return c.order.Len()
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- O(1) 對於`Get`、`Set`、`Delete`：地圖查找平均為 O(1) ；列表操作（`MoveToFront`、`PushFront`、 `Remove`、XQZKER OXQZ、XQZ）都是
+- 線程安全：`sync.Mutex` 確保一次只有一個 goroutine 存取快取。對於讀取繁重的工作負載，請使用`sync.RWMutex`。
+- 泛型：`[K comparable, V any]` 確保鍵支援 `==`（映射鍵必需），而值可以是任何類型。
+- 生產：考慮`github.com/hashicorp/golang-lru/v2`— 經過了 TTL 支援和分片以減少鎖爭用的實戰測試。
+### 問題 3：建立 TCP 聊天伺服器
+**問題陳述：** 建立一個並發 TCP 聊天伺服器，客戶端可以在其中連接、向所有其他連接的客戶端廣播訊息，並正常斷開連接。處理緩慢的客戶端而不阻塞其他客戶端。
+**第 1 步 — 了解問題：**
+我們需要：（1）接受 TCP 連接，（2）每個客戶端一個用於讀取的 goroutine，（3）一種向所有客戶端發送訊息的廣播機制，（4）處理斷開連接和緩慢的客戶端。這是經典的扇出模式。
+**第 2 步 — 確定方法：**
+- 使用`net.Listener`進行 TCP 連線。
+- 使用中央`hub`goroutine 和用戶端註冊/登出/廣播通道。
+- 每個客戶端都有一個帶有緩衝通道的專用寫入 goroutine - 慢速客戶端不會阻塞其他客戶端。
+- 使用`context.Context`正常關閉。
+**第 3 步 — 實施解決方案：**
+```go
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "log"
+    "net"
+    "sync"
+)
+
+type Client struct {
+    conn net.Conn
+    name string
+    send chan string
+}
+
+type Hub struct {
+    clients    map[*Client]bool
+    broadcast  chan string
+    register   chan *Client
+    unregister chan *Client
+    mu         sync.RWMutex
+}
+
+func NewHub() *Hub {
+    return &Hub{
+        clients:    make(map[*Client]bool),
+        broadcast:  make(chan string, 256),
+        register:   make(chan *Client),
+        unregister: make(chan *Client),
+    }
+}
+
+func (h *Hub) Run() {
+    for {
+        select {
+        case client := <-h.register:
+            h.mu.Lock()
+            h.clients[client] = true
+            h.mu.Unlock()
+            h.broadcast <- fmt.Sprintf("[system] %s joined", client.name)
+
+        case client := <-h.unregister:
+            h.mu.Lock()
+            if _, ok := h.clients[client]; ok {
+                delete(h.clients, client)
+                close(client.send)
+            }
+            h.mu.Unlock()
+            h.broadcast <- fmt.Sprintf("[system] %s left", client.name)
+
+        case msg := <-h.broadcast:
+            h.mu.RLock()
+            for client := range h.clients {
+                select {
+                case client.send <- msg:
+                default:
+                    // Slow client — disconnect
+                    go func(c *Client) {
+                        h.unregister <- c
+                        c.conn.Close()
+                    }(client)
+                }
+            }
+            h.mu.RUnlock()
+        }
+    }
+}
+
+func handleClient(hub *Hub, conn net.Conn) {
+    defer conn.Close()
+    scanner := bufio.NewScanner(conn)
+
+    // Read first line as name
+    if !scanner.Scan() { return }
+    name := scanner.Text()
+
+    client := &Client{
+        conn: conn,
+        name: name,
+        send: make(chan string, 64),
+    }
+    hub.register <- client
+    defer func() { hub.unregister <- client }()
+
+    // Write goroutine
+    go func() {
+        for msg := range client.send {
+            fmt.Fprintf(conn, "%s\n", msg)
+        }
+    }()
+
+    // Read loop
+    for scanner.Scan() {
+        text := scanner.Text()
+        hub.broadcast <- fmt.Sprintf("[%s] %s", name, text)
+    }
+}
+
+func main() {
+    hub := NewHub()
+    go hub.Run()
+
+    listener, err := net.Listen("tcp", ":8080")
+    if err != nil { log.Fatal(err) }
+    log.Println("Chat server listening on :8080")
+
+    for {
+        conn, err := listener.Accept()
+        if err != nil { log.Println(err); continue }
+        go handleClient(hub, conn)
+    }
+}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 客戶端處理速度慢：廣播中帶有`default`的`select`可防止阻塞。如果緩衝區已滿，慢速客戶端就會中斷連線。
+- 無競賽：hub goroutine 是`clients`地圖的單一寫入者；`mu`保護廣播期間的讀取。
+- 正常關閉：新增`context.Context`和訊號處理程序以關閉偵聽器和漏極連線。
+- 生產：考慮將`golang.org/x/net/websocket`用於瀏覽器用戶端，並新增身份驗證、訊息歷史記錄和房間。
 ---
 
 ＃＃ 概括

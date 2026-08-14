@@ -56,12 +56,12 @@ Scratch, 100 milyondan fazla kayıtlı kullanıcısı ve 70'ten fazla dilde kull
 | **"Gerçek" bir programlama dili değildir** | Üretim yazılımı, API'ler veya sistemler oluşturulamıyor | Python, JavaScript veya metin tabanlı dillere geçiş |
 | **Sınırlı yetenekler** | Dosya G/Ç'si, ağ iletişimi veya gelişmiş veri yapıları yok | Öğrenmek için kullanın; gerçek projeler için metin dillerine geçin |
 | **Performans** | Yorumlanmış, karmaşık projeler için yavaş | Performans açısından kritik işler için tasarlanmamıştır |
-| **Yaş algısı** | Genellikle "sadece çocuklar için" olarak görülüyor | Scratch bir öğrenme aracıdır, profesyonel bir dil değildir |
+| **Yaş algısı** | Genellikle "sadece çocuklar için" olarak görülüyor | Scratch profesyonel bir dil değil, bir öğrenme aracıdır |
 ---
 
 ## Scratch Nasıl Çalışır?
 Kazıma programları ("projeler" olarak adlandırılır), komut dosyalarında bir araya getirilen **bloklara** yanıt veren **hareketlilerden** (karakterler/nesneler) oluşur.
-### Temel Kavramlar (Bloklar Aracılığıyla Öğretilir)
+### Temel Kavramlar (Bloklarla Öğretilir)
 | Konsept | Çizilme Blok Kategorisi | Örnek |
 |-----------|-----------|-----------|
 | **Diziler** | Hareket, Görünüş | "10 adım ilerleyin" ve ardından "Merhaba Deyin" |
@@ -167,7 +167,7 @@ Define: Draw fractal (depth) (size)
     Turn right 60 degrees
 ```
 
-### Liste İşlemleri (Diziler)
+### İşlemleri Listeleme (Diziler)
 ```
 // Creating and using lists
 When green flag clicked:
@@ -383,7 +383,7 @@ When green flag clicked:
 | Sorun | Sebep | Çözüm |
 |-----------|----------|----------|
 | Sprite yanıt vermiyor | Etkinlik yok şapka bloğu | "Yeşil bayrak tıklandığında" veya başka bir etkinlik ekleyin |
-| Klon çalışmıyor | Klon oluşturuldu ancak gösterilmiyor | "Klon olarak başladığımda" ifadesinin sonuna "Göster" bloğunu ekle |
+| Klon çalışmıyor | Klon oluşturuldu ancak gösterilmiyor | "Klon olarak başladığımda" ifadesinden sonra "Göster" bloğunu ekle |
 | Değişkenler arasında paylaşılan değişken | Küresel ve yerel değişken karışıklığı | "Yalnızca bu sprite için" seçeneğini kullanın |
 | Yayın alınamadı | Yanlış mesaj adı | Yayın ve alma adlarının tam olarak eşleştiğini doğrulayın |
 | Sonsuz döngü dondurma | "Sonsuza Kadar", beklemeden | Sıkı döngülere küçük "Bekle" blokları ekleyin |
@@ -565,7 +565,7 @@ When I start as a clone:
 | **Klonları en aza indirin** | Yüksek | Her klon hafızayı tüketir; bittiğinde sil |
 | **Kostümleri azaltın** | Orta | Daha az kostüm değişikliği, daha az görüntü oluşturma yükü anlamına gelir |
 | **"Ekran yenilemeden çalıştır" seçeneğini kullanın** | Yüksek | Ekran yenilemesi olmayan özel bloklar daha hızlı çalışır |
-| **"say" bloklarını sınırlayın** | Orta | Konuşma balonları görüntü oluşturma yüküne neden oluyor |
+| **"say" bloklarını sınırlayın** | Orta | Konuşma balonları görüntü oluşturma yükünün artmasına neden oluyor |
 | **Her karakterde "sonsuza kadar" ifadesinden kaçının** | Orta | Sürekli oylama yerine yayınları ve etkinlikleri kullanın |
 ### Klon Yönetimi
 ```
@@ -676,6 +676,120 @@ Scratch'i öğrendikten sonra tipik sonraki adımlar şunları içerir:
 | Oyun fikirlerini görsel olarak prototipleme | Hızlı yineleme | — |
 | Mesleki gelişim | Bunun için tasarlanmadı | Python, JavaScript, herhangi bir metin dili |
 | Üniversite düzeyinde bilgisayar bilimleri eğitimi | Çok basit | Python, Java, C |
+---
+
+## Sentetik Soru-Cevap
+**S1: Scratch gerçekten bir programlama dili midir?**
+Cevap1: Evet, Scratch gerçek bir programlama dilidir ancak metin tabanlı olmaktan ziyade görseldir. Tüm temel programlama kavramlarını destekler: değişkenler, döngüler, koşullar, işlevler (özel bloklar), listeler ve olaya dayalı programlama. Aradaki fark, kod yazmak yerine blokları sürükleyip bırakmanızdır. Bu, sözdizimi hatalarını ortadan kaldırır ve programlamayı genç öğrenciler için erişilebilir hale getirir.
+**S2: Scratch'te nasıl özel işlevler (özel bloklar) oluşturabilirim?**
+Cevap2: "Bloklarım" kategorisine gidin ve "Blok Oluştur"a tıklayın. Ona bir ad verin, gerekirse parametreler ekleyin, ardından altına bloklar ekleyerek davranışını tanımlayın. Özel bloklar girdi alabilir (sayılar, dizeler, boolean'lar) ve diğer özel blokları çağırabilir. Bu, modüler programlamaya ve kodun yeniden kullanımına olanak tanır.
+**S3: Scratch'te karmaşık oyun mantığını yönetmenin en iyi yolu nedir?**
+Cevap3: Mantığı düzenlemek, karakterler arasındaki olay koordinasyonu için mesajları yayınlamak ve oyun durumunu (skorlar, seviyeler, envanter) depolamak için listeleri kullanmak için özel blokları kullanın. Karmaşık yapay zeka için mevcut durumu izleyen değişkenlere sahip sonlu durum makineleri kullanın. Birden fazla düşman için sprite klonlayın ve her birine bağımsız davranış kazandırmak için "klon olarak başladığımda" seçeneğini kullanın.
+**S4: Scratch'te sprite'lar arasında nasıl veri paylaşabilirim?**
+Cevap4: Skor veya oyun durumu gibi paylaşılan veriler için genel değişkenleri ("yalnızca bu sprite için" olmadan oluşturulan) kullanın. Spritelar arasında olayları tetiklemek için yayın mesajlarını kullanın. Daha karmaşık iletişim için listeleri paylaşılan veri yapıları olarak kullanın. Her karakter, küresel değişkenleri ve listeleri okuyabilir ve değiştirebilir, böylece koordinasyon sağlanır.
+**S5: Scratch'teki bazı ileri teknikler nelerdir?**
+Cevap5: Çizim yapmak ve görsel efektler oluşturmak için kalem bloklarını kullanın. 3D benzeri grafikler için ışın yayınını uygulayın. Çok oyunculu oyunlar için bulut değişkenlerini kullanın (Scratcher durumu gerektirir). Rastgele sayılar ve listelerle prosedürel nesil oluşturun. Yeniden kullanılabilir algoritmalar için parametreler içeren özel bloklar kullanın. Etkileşimli projeler için video algılama ve ses manipülasyonunu deneyin.
+---
+
+## Düşünce Zinciri
+### Sorun 1: Platform Oyunu Oluşturma
+**1. Adım: Sorunu Anlayın**
+Bir karakterin sola/sağa hareket edebileceği, zıplayabileceği, engellerden kaçınabileceği ve öğeleri toplayabileceği bir platform oluşturmamız gerekiyor.
+**2. Adım: Yaklaşımı Belirleyin**
+- "Düşen" değişkenli yerçekimi simülasyonunu kullanın
+- Renk veya hareketli dokunuş kullanarak zemini/çarpışmayı tespit edin
+- Seviye verilerini listelerde saklayın
+- Atlama ve hareket mantığı için özel bloklar kullanın
+**3. Adım: Çözümü Uygulayın**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**4. Adım: Doğrulayın ve Optimize Edin**
+Farklı platformlarda atlamayı test edin. İyi bir oyun hissi için yer çekimini ve atlama yüksekliğini ayarlayın. Koşma ve atlama için animasyonlar ekleyin. Yayın mesajlarını kullanarak kontrol noktaları uygulayın.
+---
+
+### Sorun 2: Puan Takibiyle Test Oyunu Oluşturma
+**1. Adım: Sorunu Anlayın**
+Soru soran, yanıtları kontrol eden ve oyuncunun puanını takip eden bir bilgi yarışması oyunu oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+- Soruları ve cevapları paralel listelerde saklayın
+- İlerlemeyi takip etmek için bir soru sayacı kullanın
+- Giriş için "sor ve bekle" bloklarını kullanın
+- Yanıtları karşılaştırın ve puanı güncelleyin
+**3. Adım: Çözümü Uygulayın**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**4. Adım: Doğrulayın ve Optimize Edin**
+Uç durumlar da dahil olmak üzere çeşitli yanıtlarla test edin. Yanlış cevaplar için geri bildirim ekleyin. Yeniden deneme seçeneğini uygulayın. Doğru/yanlış cevaplar için ses efektleri ve görsel geri bildirim ekleyin.
+---
+
+### Problem 3: Fraktal Ağaçların Kalemle Çizilmesi
+**1. Adım: Sorunu Anlayın**
+Kalem uzantısını kullanarak özyinelemeli bir fraktal ağaç oluşturun.
+**2. Adım: Yaklaşımı Belirleyin**
+- Dalları çizmek için özyinelemeyi kullanın
+- Her dal iki küçük dala ayrılır
+- Doğal çeşitlilik için rastgele açılar kullanın
+- Her yineleme seviyesinde dal uzunluğunu ve azalmayı takip edin
+**3. Adım: Çözümü Uygulayın**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**4. Adım: Doğrulayın ve Optimize Edin**
+Estetik ağaçlar için dal uzunluğu eşiğini ve açı aralıklarını ayarlayın. Renk değişikliklerini kullanarak dal uçlarına yapraklar ekleyin. Farklı ağaç stilleri uygulayın. Çizimleri resim olarak kaydedin.
 ---
 
 ## Özet

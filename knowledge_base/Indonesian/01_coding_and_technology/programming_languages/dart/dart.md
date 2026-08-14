@@ -48,7 +48,7 @@ Dart menggabungkan fitur terbaik dari bahasa modern: berorientasi objek, memilik
 - **Flutter**: Bahasa utama Flutter — salah satu framework lintas platform dengan pertumbuhan tercepat.
 - **Lintas platform**: Basis kode tunggal untuk iOS, Android, web, Windows, macOS, Linux, dan perangkat tersemat.
 - **Produktif**: Hot reload, pustaka widget yang kaya, dan sintaksis ekspresif mempercepat pengembangan UI.
-- **Keamanan suara nol**: Keamanan nol waktu kompilasi menghilangkan kesalahan referensi nol.
+- **Keamanan null suara**: Keamanan null waktu kompilasi menghilangkan kesalahan referensi null.
 - **Kinerja**: Dikompilasi ke kode ARM asli untuk seluler; tidak diperlukan jembatan.
 - **Ekosistem yang berkembang**: Ekosistem paket Flutter berkembang pesat.
 ## Pengorbanan
@@ -985,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | Pengembangan backend | Bukan kasus penggunaan utama | Buka, Node.js, Python |
 | Ilmu data / ML | Tidak cocok | Piton, R |
 | Pemrograman sistem | Tidak cocok | C, C++, Karat |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Bagaimana cara kerja keamanan nol Dart?
+**A:** Dart 2.12+ memiliki keamanan nol yang baik. Variabel tidak dapat dibatalkan secara default; gunakan`?`untuk mengizinkan null:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2: Apa perbedaan antara`Future`dan`Stream`?
+**A:**`Future`mewakili satu hasil asinkron; `Stream`mewakili rangkaian peristiwa asinkron:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3: Bagaimana cara mengelola status di aplikasi Flutter?
+**A:** Berbagai pendekatan bergantung pada kompleksitas:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4: Bagaimana cara kerja metode ekstensi di Dart?
+**A:** Ekstensi menambahkan fungsionalitas ke tipe yang sudah ada tanpa pewarisan:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5: Bagaimana cara menulis kode Dart/Flutter yang berkinerja baik?
+**J:** Praktik utama:
+- Gunakan konstruktor`const`sedapat mungkin
+- Hindari membuat ulang widget — gunakan`const`,`final`, dan`shouldRebuild`
+- Gunakan`ListView.builder`daripada`ListView`untuk daftar besar
+- Profil dengan Flutter DevTools
+- Gunakan`compute()`untuk operasi mahal pada thread isolasi
+- Minimalkan panggilan`setState`— jelaskan secara spesifik apa yang perlu dibangun kembali
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Membangun Klien API yang Aman untuk Tipe
+**Langkah 1: Pahami Masalahnya**
+Buat klien API yang mengambil data dan mengembalikan objek yang diketik dengan benar.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan kelas Dart dengan kelas`fromJson`/`toJson`, async/await, dan tersegel untuk mendapatkan hasil.
+**Langkah 3: Terapkan**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Langkah 4: Verifikasi**
+Uji dengan klien HTTP tiruan. Verifikasi penanganan kesalahan untuk kegagalan jaringan dan respons buruk.
+### Masalah 2: Menerapkan Pencarian Reaktif dengan Debounce
+**Langkah 1: Pahami Masalahnya**
+Buat kolom pencarian yang menanyakan API tetapi menolak masukan untuk menghindari permintaan berlebihan.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan Aliran Dart dengan`debounceTime`dan`distinct`.
+**Langkah 3: Terapkan**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Langkah 4: Uji**
+Verifikasi bahwa pengetikan cepat hanya memicu satu panggilan API setelah periode debounce.
 ---
 
 ## Ringkasan

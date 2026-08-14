@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 리스프와 클로저
 Lisp는 1958년 John McCarthy가 만든 Fortran 다음으로 여전히 사용되는 두 번째로 오래된 고급 프로그래밍 언어입니다. Lisp는 가비지 수집, 재귀, 트리 데이터 구조, 동적 타이핑, 데이터로서의 프로그램 아이디어(동질성) 등 현재 당연하게 여겨지는 많은 개념을 개척했습니다. Lisp의 독특한 특징은 구문입니다. 코드는 중첩된 괄호(S-표현식)로 작성되어 언어를 쉽게 구문 분석할 수 있게 만들고 **매크로**를 통해 강력한 메타프로그래밍을 가능하게 합니다.
 Clojure는 Rich Hickey가 2007년에 디자인한 최신 Lisp 방언입니다. Clojure는 JVM(JavaScript용 ClojureScript이기도 함)에서 실행되고 기능적 프로그래밍, 불변성 및 동시성을 수용하며 원활한 Java 상호 운용성을 제공합니다. Clojure는 웹 개발, 데이터 처리, 금융 시스템에 사용됩니다.
@@ -53,11 +54,11 @@ Clojure는 Rich Hickey가 2007년에 디자인한 최신 Lisp 방언입니다. C
 ## 절충안
 | 제한사항 | 세부정보 | 일반적인 해결 방법 |
 |------------|---------|------|
-| **괄호** | `()`을 많이 사용하면 처음에는 읽기 어려울 수 있습니다 | IDE 지원을 사용하십시오. 구조를 보는 법을 배우세요 |
+| **괄호** | `()`를 많이 사용하면 처음에는 읽기 어려울 수 있습니다 | IDE 지원을 사용하십시오. 구조를 보는 법을 배우세요 |
 | **틈새 커뮤니티** | 주류 언어에 비해 작은 취업 시장 | 활발하고 열정적인 커뮤니티 |
 | **클로저 시작 시간** | JVM 기반; CLI의 느린 시작 | GraalVM 네이티브 이미지 사용 |
 | **Lisp 방언** | 호환되지 않는 많은 Lisp(Common Lisp, Scheme, Emacs Lisp) | 현대적인 작업을 위해 Clojure를 선택하세요 |
-| **주류 아님** | 라이브러리, 프레임워크 및 튜토리얼 수가 적음 | Java 생태계 활용(Clojure) |
+| **주류가 아님** | 라이브러리, 프레임워크 및 튜토리얼 수가 적음 | Java 생태계 활용(Clojure) |
 ---
 
 ## 클로저 구문
@@ -355,13 +356,13 @@ my-clojure-project/
 ### 주요 빌드 명령
 | 명령 | 설명 |
 |---------|-------------|
-|  __보호됨_0__ | 개발 종속성을 사용하여 REPL 시작 |
-|  __보호됨_1__ | 테스트 스위트 실행 |
-|  __보호됨_2__ | 애플리케이션 실행 |
-|  __보호됨_3__ | Uber JAR 구축 |
-|  __보호됨_4__ | 라이닝겐 프로젝트 생성 |
-|  __보호됨_5__ | 테스트 실행(라이닝겐) |
-|  __보호_6__ | uber JAR 구축(Leiningen) |
+| `clj -M:dev`| 개발 종속성을 사용하여 REPL 시작 |
+| `clj -M:test`| 테스트 스위트 실행 |
+| `clj -M:run`| 애플리케이션 실행 |
+| `clj -T:build uber`| Uber JAR 구축 |
+| `lein new app my-app`| 라이닝겐 프로젝트 생성 |
+| `lein test`| 테스트 실행(라이닝겐) |
+| `lein uberjar`| uber JAR 구축(Leiningen) |
 ### CI/CD 파이프라인(GitHub 작업)
 ```yaml
 name: Clojure CI
@@ -570,10 +571,10 @@ jobs:
 ### 프로파일링 도구
 | 도구 | 목적 | 사용법 |
 |------|---------|-------|
-| **기준** | 통계적 벤치마킹 |  __보호됨_0__ |
+| **기준** | 통계적 벤치마킹 | `(bench (expr))`|
 | **VisualVM** | JVM 프로파일링 | `jvisualvm`명령 |
-| **clj-async-프로필** | 낮은 오버헤드 CPU 프로파일링 |  __보호_2__ / __보호_3__ / __보호_4__ |
-| **술** | 런타임 프로파일링 |  __보호됨_5__ |
+| **clj-async-프로필** | 낮은 오버헤드 CPU 프로파일링 | `start`/`stop`/`serve`|
+| **술** | 런타임 프로파일링 | `(p :tag (expr))`|
 ### Criterium을 사용한 벤치마킹
 ```clojure
 (require '[criterium.core :as crit])
@@ -691,10 +692,145 @@ native-image --no-fallback \
 | 데이터 처리 | 우수한 시퀀스 라이브러리 | Python(Pandas), Scala(Spark) |
 | 동시 시스템 | 불변 데이터 + STM | Go, 얼랭/엘릭서 |
 | DSL/언어 확장 | 매크로는 타의 추종을 불허합니다 | — |
-| REPL 기반 개발 | 동급 최고의 대화형 워크플로우 | — |
+| REPL 기반 개발 | 동급 최고의 대화형 워크플로 | — |
 | 일반 애플리케이션 개발 | 가능하지만 틈새 시장 | 파이썬, 자바, Go |
 | 모바일 앱 | 웹 앱용 ClojureScript; 네이티브가 아닌 | 스위프트, 코틀린 |
 | 데이터 과학 | 생태계가 아니다 | 파이썬, R |
+---
+
+## 종합 Q&A
+### Q1: Lisp/Clojure 프로그램에는 왜 그렇게 많은 괄호가 있나요?
+**A:** 괄호는 코드와 데이터가 동일한 구조(동질성)를 갖는 균일한 구문인 S-표현식을 나타냅니다.
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### Q2: Clojure는 상태와 가변성을 어떻게 다르게 처리합니까?
+**답:** Clojure는 기본적으로 불변 데이터를 사용합니다. 제어된 상태 변경의 경우 참조 유형을 제공합니다.
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3: Clojure의 영구 데이터 구조는 무엇입니까?
+**답변:** 모든 Clojure 컬렉션은 영구적입니다(불변, 구조적으로 공유).
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### 질문4: Clojure 매크로는 어떻게 작동하나요?
+**답변:** 매크로는 평가되지 않은 코드(데이터)를 수신하여 변환하고 새 코드를 반환합니다.
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### Q5: Clojure에서 동시성을 어떻게 처리합니까?
+**답:** Clojure는 여러 동시성 기본 요소를 제공합니다.
+-`atom`— 독립적인 동기식 변경
+-`ref`+`dosync`— 조정된 트랜잭션 변경
+-`agent`— 비동기식, 독립적인 변경
+-`core.async`채널 — CSP 스타일 동시성
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 데이터 파이프라인 처리
+**1단계: 문제 이해**
+파이프라인을 통해 데이터를 읽고, 필터링하고, 변환하고, 집계합니다.
+**2단계: 접근 방식 파악**
+Clojure의 스레딩 매크로(`->>`)와 변환기를 사용하세요.
+**3단계: 구현**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**4단계: 최적화**
+변환기는 중간 시퀀스 생성을 방지하고 변환을 단일 패스로 구성합니다.
+### 문제 2: 간단한 웹 서버 구축
+**1단계: 문제 이해**
+Ring/Compojure를 사용하여 기본 HTTP 서버를 만듭니다.
+**2단계: 접근 방식 파악**
+링 어댑터와 Compojure 라우팅을 사용하세요.
+**3단계: 구현**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**4단계: 확장**
+로깅, JSON 구문 분석, 인증 및 오류 처리를 위한 미들웨어를 추가합니다.
 ---
 
 ## 요약

@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "ليسب وكلوجر"
-الوصف: "مرجع شامل للغة البرمجة Lisp وClojure يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Lisp & Clojure"
+description: "Comprehensive reference for the Lisp and Clojure programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [ليسب-و-كلوجور، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "29 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [lisp-and-clojure, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # اللثغة وكلوجر
 تعد لغة Lisp ثاني أقدم لغة برمجة عالية المستوى لا تزال قيد الاستخدام (بعد لغة Fortran)، وقد أنشأها جون مكارثي في ​​عام 1958. وكانت رائدة في العديد من المفاهيم التي تعتبر الآن أمرا مفروغا منه: تجميع البيانات المهملة، والتكرار، وهياكل البيانات الشجرية، والكتابة الديناميكية، وفكرة البرامج كبيانات (homoiconicity). السمة المميزة لـ Lisp هي بناء الجملة - تتم كتابة التعليمات البرمجية كأقواس متداخلة (تعبيرات S)، مما يجعل اللغة قابلة للتحليل بشكل تافه ويتيح البرمجة الفوقية القوية من خلال **وحدات الماكرو**.
 Clojure هي لهجة Lisp حديثة صممها Rich Hickey في عام 2007. وهي تعمل على JVM (أيضًا ClojureScript لـ JavaScript)، وتتضمن البرمجة الوظيفية، والثبات، والتزامن، وتوفر إمكانية التشغيل التفاعلي السلس لـ Java. يستخدم Clojure في تطوير الويب ومعالجة البيانات والأنظمة المالية.
@@ -351,13 +356,13 @@ my-clojure-project/
 ### أوامر بناء المفاتيح
 | الأمر | الوصف |
 |---------|------------|
-|  __محمي_0__ | ابدأ REPL باستخدام تبعيات التطوير |
-|  __محمي_1__ | تشغيل مجموعة الاختبار |
-|  __محمي_2__ | قم بتشغيل التطبيق |
-|  __محمي_3__ | قم ببناء أوبر جار |
-|  __محمي_4__ | إنشاء مشروع لينينجن |
-|  __محمي_5__ | تشغيل الاختبارات (لينينجن) |
-|  __محمي_6__ | بناء أوبر JAR (لينينجن) |
+| `clj -M:dev`| ابدأ REPL باستخدام تبعيات التطوير |
+| `clj -M:test`| تشغيل مجموعة الاختبار |
+| `clj -M:run`| قم بتشغيل التطبيق |
+| `clj -T:build uber`| قم ببناء أوبر جار |
+| `lein new app my-app`| إنشاء مشروع لينينجن |
+| `lein test`| تشغيل الاختبارات (لينينجن) |
+| `lein uberjar`| بناء أوبر JAR (لينينجن) |
 ### خط أنابيب CI/CD (إجراءات GitHub)
 ```yaml
 name: Clojure CI
@@ -566,10 +571,10 @@ jobs:
 ### أدوات التنميط
 | أداة | الغرض | الاستخدام |
 |------|---------|------|
-| **المعيار** | المقارنة الإحصائية |  __محمي_0__ |
-| **VisualVM** | ملف تعريف JVM |  __محمي_1__ الأمر |
-| **clj-async-profil** | ملفات تعريف وحدة المعالجة المركزية ذات الحمل المنخفض |  __محمي_2__ / __محمي_3__ / __محمي_4__ |
-| **تافتي** | ملفات تعريف وقت التشغيل |  __محمي_5__ |
+| **المعيار** | المقارنة الإحصائية | `(bench (expr))`|
+| **VisualVM** | ملف تعريف JVM |  الأمر`jvisualvm`|
+| **clj-async-profil** | ملفات تعريف وحدة المعالجة المركزية ذات الحمل المنخفض | `start`/`stop`/`serve`|
+| **تافتي** | ملفات تعريف وقت التشغيل | `(p :tag (expr))`|
 ### المقارنة المعيارية
 ```clojure
 (require '[criterium.core :as crit])
@@ -691,6 +696,141 @@ native-image --no-fallback \
 | تطوير التطبيقات العامة | ممكن ولكن المتخصصة | بايثون، جافا، اذهب |
 | تطبيقات الجوال | ClojureScript لتطبيقات الويب؛ ليست أصلية | سويفت، كوتلين |
 | علم البيانات | ليس النظام البيئي | بايثون، ر |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: لماذا تحتوي برامج Lisp/Clojure على الكثير من الأقواس؟
+**A:** تمثل الأقواس تعبيرات S — وهي صيغة موحدة حيث يكون للتعليمات البرمجية والبيانات نفس البنية (التماثلية المتجانسة):
+```clojure
+;; Every form is a list: (operator arg1 arg2 ...)
+(+ 1 2 3)          ;; 6
+(str "hello" " " "world")  ;; "hello world"
+
+;; Nested expressions
+(defn factorial [n]
+  (if (<= n 1)
+    1
+    (* n (factorial (dec n)))))
+
+;; The uniform syntax means macros can manipulate code as data
+```
+
+### السؤال الثاني: كيف يتعامل كلوجر مع الحالة وقابلية التغيير بشكل مختلف؟
+**أ:** يستخدم Clojure البيانات غير القابلة للتغيير بشكل افتراضي. بالنسبة لتغييرات الحالة التي يتم التحكم فيها، فإنه يوفر أنواعًا مرجعية:
+```clojure
+;; Immutable by default
+(def x [1 2 3])
+(conj x 4)     ;; [1 2 3 4] — original unchanged
+x              ;; still [1 2 3]
+
+;; Atoms — synchronous, uncoordinated changes
+(def counter (atom 0))
+(swap! counter inc)    ;; 1
+(swap! counter + 10)   ;; 11
+
+;; Refs — coordinated, transactional changes
+(def account-a (ref 100))
+(def account-b (ref 50))
+(dosync
+  (alter account-a - 30)
+  (alter account-b + 30))
+```
+
+### Q3: ما هي هياكل البيانات المستمرة لـ Clojure؟
+**أ:** جميع مجموعات Clojure ثابتة (غير قابلة للتغيير، ومشتركة هيكليًا):
+```clojure
+;; Vectors
+[1 2 3]                  ;; literal
+(vec (range 10))         ;; from range
+(conj [1 2] 3)           ;; [1 2 3] — O(1) append
+
+;; Maps (hash maps)
+{:name "Alice" :age 30}
+(assoc {:a 1} :b 2)      ;; {:a 1 :b 2}
+(dissoc {:a 1 :b 2} :a)  ;; {:b 2}
+
+;; Sets
+#{1 2 3}
+(clojure.set/union #{1 2} #{2 3})  ;; #{1 2 3}
+```
+
+### السؤال الرابع: كيف تعمل وحدات ماكرو Clojure؟
+**أ:** تتلقى وحدات الماكرو تعليمات برمجية غير مقيمة (كبيانات)، وتقوم بتحويلها وإرجاع تعليمات برمجية جديدة:
+```clojure
+(defmacro unless [condition & body]
+  `(if (not ~condition)
+     (do ~@body)))
+
+;; Usage
+(unless false
+  (println "This runs!"))
+```
+
+### س5: كيف أتعامل مع التزامن في Clojure؟
+**أ:** يوفر Clojure العديد من الأوليات المتزامنة:
+-`atom`— تغييرات مستقلة ومتزامنة
+-`ref`+`dosync`- تغييرات منسقة للمعاملات
+-`agent`- تغييرات مستقلة وغير متزامنة
+- قنوات`core.async`— التزامن على نمط CSP
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: معالجة مسار البيانات
+**الخطوة الأولى: فهم المشكلة**
+قراءة البيانات وتصفيتها وتحويلها وتجميعها من خلال خط أنابيب.
+**الخطوة 2: تحديد النهج**
+استخدم وحدات ماكرو خيوط Clojure (`->>`) ومحولات الطاقة.
+**الخطوة 3: التنفيذ**```clojure
+(def data
+  [{:name "Alice" :age 30 :dept "Eng"}
+   {:name "Bob" :age 25 :dept "Sales"}
+   {:name "Charlie" :age 35 :dept "Eng"}
+   {:name "Diana" :age 28 :dept "Eng"}])
+
+;; Threading macro pipeline
+(->> data
+     (filter #(= (:dept %) "Eng"))
+     (map :age))
+;; => (30 35 28)
+
+;; Average age of Engineering department
+(let [eng-ages (->> data
+                    (filter #(= (:dept %) "Eng"))
+                    (map :age))]
+  (/ (reduce + eng-ages) (count eng-ages)))
+;; => 31
+
+;; Transducers — composable, reusable transformations
+(def xform (comp (filter #(= (:dept %) "Eng"))
+                 (map :age)))
+
+(transduce xform conj [] data)
+;; => [30 35 28]
+```
+
+**الخطوة 4: التحسين**
+تتجنب محولات الطاقة إنشاء تسلسلات وسيطة، فهي تؤلف التحويلات في مسار واحد.
+### المشكلة الثانية: إنشاء خادم ويب بسيط
+**الخطوة الأولى: فهم المشكلة**
+قم بإنشاء خادم HTTP أساسي باستخدام Ring/Compojure.
+**الخطوة 2: تحديد النهج**
+استخدم محول Ring وتوجيه Compojure.
+**الخطوة 3: التنفيذ**```clojure
+(require '[ring.adapter.jetty :as jetty]
+         '[compojure.core :refer [defroutes GET]]
+         '[compojure.route :as route])
+
+(defroutes app
+  (GET "/" [] "Hello, World!")
+  (GET "/users/:id" [id] (str "User: " id))
+  (route/not-found "Not Found"))
+
+(defn -main []
+  (jetty/run-jetty app {:port 3000}))
+```
+
+**الخطوة 4: تمديد**
+أضف برامج وسيطة للتسجيل وتحليل JSON والمصادقة ومعالجة الأخطاء.
 ---
 
 ## ملخص

@@ -147,8 +147,8 @@ tokens = tokenizer.tokenize(sample_text)
 print(f"Tokens: {tokens}")
 print()
 
-# Convert to token IDs
-token_ids = tokenizer.encode(sample_text)
+# Convert to token IDs (without special tokens to match tokenize() output)
+token_ids = tokenizer.encode(sample_text, add_special_tokens=False)
 print(f"Token IDs: {token_ids}")
 print()
 
@@ -185,6 +185,7 @@ for prompt in prompts:
         prompt,
         max_new_tokens=25,
         temperature=0.7,
+        do_sample=True,
         pad_token_id=generator.tokenizer.eos_token_id
     )
     print(f"Result: {result[0]['generated_text']}")
@@ -299,6 +300,7 @@ try:
         prompt,
         max_new_tokens=30,
         temperature=0.7,
+        do_sample=True,
         pad_token_id=small_generator.tokenizer.eos_token_id
     )
     

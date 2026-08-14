@@ -93,11 +93,18 @@ scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, pa
 # Cosine annealing
 scheduler = lr_scheduler.CosineAnnealingLR(optimizer, T_max=100)
 
-# Training loop
+# StepLR / CosineAnnealing — call with no arguments
+scheduler = lr_scheduler.StepLR(optimizer, step_size=30, gamma=0.1)
+for epoch in range(num_epochs):
+    train_one_epoch()
+    scheduler.step()  # step every epoch, no metric needed
+
+# ReduceLROnPlateau — call with the monitored metric
+scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5)
 for epoch in range(num_epochs):
     train_one_epoch()
     val_loss = validate()
-    scheduler.step(val_loss)  # or just scheduler.step() for StepLR
+    scheduler.step(val_loss)  # pass the metric value
 ```
 
 ### Gradient Management
@@ -118,6 +125,11 @@ for i, (inputs, targets) in enumerate(dataloader):
     if (i + 1) % accumulation_steps == 0:
         optimizer.step()
         optimizer.zero_grad()
+
+# Handle remaining gradients if dataset length is not divisible by accumulation_steps
+if len(dataloader) % accumulation_steps != 0:
+    optimizer.step()
+    optimizer.zero_grad()
 ```
 
 ### Regularization Techniques
@@ -125,14 +137,21 @@ for i, (inputs, targets) in enumerate(dataloader):
 ```python
 import torch.nn as nn
 
-# Dropout
-model.dropout = nn.Dropout(0.5)
+# ✅ Define layers INSIDE a model class so they participate in forward()
+class RegularizedNet(nn.Module):
+    def __init__(self, num_features):
+        super().__init__()
+        self.fc = nn.Linear(num_features, 10)
+        self.dropout = nn.Dropout(0.5)   # applied in forward()
+        self.bn = nn.BatchNorm1d(num_features)  # applied in forward()
+
+    def forward(self, x):
+        x = self.bn(x)
+        x = self.dropout(x)
+        return self.fc(x)
 
 # Weight decay (in optimizer)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
-
-# Batch normalization
-model.bn = nn.BatchNorm2d(num_features)
 
 # Label smoothing
 criterion = nn.CrossEntropyLoss(label_smoothing=0.1)
@@ -146,6 +165,7 @@ criterion = nn.CrossEntropyLoss(label_smoothing=0.1)
 
 ```python
 from sklearn.model_selection import GridSearchCV
+from sklearn.svm import SVC
 
 param_grid = {
     'C': [0.1, 1, 10],
@@ -187,8 +207,8 @@ random_search.fit(X_train, y_train)
 from optuna import create_study
 
 def objective(trial):
-    lr = trial.suggest_loguniform('lr', 1e-5, 1e-2)
-    dropout = trial.suggest_uniform('dropout', 0.1, 0.5)
+    lr = trial.suggest_float('lr', 1e-5, 1e-2, log=True)   # replaces suggest_loguniform
+    dropout = trial.suggest_float('dropout', 0.1, 0.5)      # replaces suggest_uniform
     batch_size = trial.suggest_categorical('batch_size', [16, 32, 64])
     
     model = create_model(lr=lr, dropout=dropout)
@@ -208,12 +228,13 @@ print(f"Best trial: {study.best_trial.params}")
 ### Quantization
 
 ```python
-import torch.quantization as quantization
+import torch.ao.quantization as quantization
 
-# Post-training quantization
-model_int8 = quantization.quantize_dynamic(
+# Post-training dynamic quantization
+# NOTE: quantize_dynamic only supports nn.Linear and nn.LSTM (not nn.Conv2d)
+model_int8 = torch.ao.quantization.quantize_dynamic(
     model, 
-    {nn.Linear, nn.Conv2d}, 
+    {nn.Linear, nn.LSTM}, 
     dtype=torch.qint8
 )
 
@@ -247,12 +268,19 @@ prune.remove(model.conv1, 'weight')
 
 ```python
 class DistillationLoss(nn.Module):
+    """
+    NOTE: The teacher model should be in eval() mode and its outputs
+    should be detached (no gradients) before passing to this loss.
+    Example: teacher_logits = teacher(inputs).detach()
+    """
     def __init__(self, temperature=4.0):
         super().__init__()
         self.temperature = temperature
         self.ce = nn.CrossEntropyLoss()
         
     def forward(self, student_logits, teacher_logits, targets):
+        # Detach teacher logits to prevent gradients flowing into the teacher
+        teacher_logits = teacher_logits.detach()
         soft_targets = nn.functional.softmax(teacher_logits / self.temperature, dim=-1)
         student_log_probs = nn.functional.log_softmax(student_logits / self.temperature, dim=-1)
         

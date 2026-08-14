@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "بيرل"
-الوصف: "مرجع شامل للغة برمجة Perl يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Perl"
+description: "Comprehensive reference for the Perl programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [بيرل، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "24 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [perl, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "24 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # بيرل
 تم إنشاء لغة Perl بواسطة Larry Wall في عام 1987 كأداة عملية لمعالجة النصوص. لقد أصبح العمود الفقري لتطوير الويب المبكر (نصوص CGI)، وإدارة النظام، والمعلوماتية الحيوية، وبرمجة الشبكات. فلسفة بيرل هي "هناك أكثر من طريقة واحدة للقيام بذلك" (TMTOWTDI) - تمنحك اللغة أساليب متعددة لكل مشكلة، وتفضل التعبير عن التوحيد.
 تأثير بيرل على البرمجة الحديثة هائل ولكنه غالبًا ما يكون غير مرئي: التعبيرات العادية، المتأثرة بمطابقة أنماط بيرل، أصبحت الآن قياسية في بايثون، وجافا سكريبت، وجافا، ومعظم اللغات الأخرى. كانت CPAN (شبكة أرشيف Perl الشاملة) واحدة من أولى مستودعات حزم البرامج وألهمت أنظمة لاحقة مثل Python's PyPI وNode's npm.
@@ -50,11 +55,11 @@ next_review: "2027-08-05"
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
 |-----------|------------------------|---|
-| ** سهولة القراءة ** | "Perl هي لغة للكتابة فقط" - بناء جملة كثيف ومبهم | استخدم صارمة/تحذيرات؛ كتابة التعليمات البرمجية المعيارية؛ استخدم لغة بيرل الحديثة (5.36+) |
+| ** سهولة القراءة ** | "Perl هي لغة للكتابة فقط" - بناء جملة كثيف ومبهم | استخدم تحذيرات/صارمة؛ كتابة التعليمات البرمجية المعيارية؛ استخدم لغة بيرل الحديثة (5.36+) |
 | **مجتمع متدهور** | عدد أقل من المشاريع الجديدة تختار لغة Perl | تحتاج قاعدة التعليمات البرمجية الكبيرة الموجودة إلى الصيانة؛ مجتمع نشط |
 | **إصداران رئيسيان** | Perl 5 وRaku (Perl 6) لغتان مختلفتان | استخدم Perl 5 للعمل الحالي؛ راكو للمشاريع الجديدة |
 | **ليست عصرية** | نادرًا ما يتم تدريسه في المعسكرات التدريبية أو الجامعات | وثائق واسعة النطاق ووحدات CPAN |
-| **العلامات المتغيرة** | `$`,`@`,`%`البادئات يمكن أن تربك المبتدئين | تعرف على النمط:`$scalar`,`@array`,`%hash`|
+| **العلامات المتغيرة** |  البادئات`$`,`@`,`%`يمكن أن تربك المبتدئين | تعلم النمط:`$scalar`,`@array`,`%hash`|
 | **الأداء** | أبطأ من اللغات المترجمة لمهام الحوسبة الثقيلة | استخدام ملحقات C؛ ليست الأداة المناسبة لـ HPC |
 ---
 
@@ -178,9 +183,9 @@ if ($@) {
 | التعابير العادية | بايثون، جافا سكريبت، جافا، روبي، C#، PHP |
 | مستودعات الحزم (CPAN) | PyPI، npm، RubyGems، صناديق.io |
 | الزنادقة | بايثون، روبي، PHP، شل، جافا سكريبت |
-|  __محمي_0__ المتغير الافتراضي | روبي __محمي_1__، بوويرشيل __محمي_2__ |
-|  __محمي_3__ / __محمي_4__ / __محمي_5__ | بايثون، روبي، جافا سكريبت، الصدأ |
-|  __محمي_6__ / البطانة | TypeScript، تلميحات عن نوع Python |
+| `$_`المتغير الافتراضي | روبي `$_`، PowerShell's`$_`|
+| `map`/`grep`/`reduce`| بايثون، روبي، جافا سكريبت، الصدأ |
+| `use strict`/ فحص | TypeScript، تلميحات عن نوع Python |
 ---
 
 ## بناء الجملة والأنماط المتقدمة
@@ -571,14 +576,173 @@ CMD ["perl", "bin/myapp.pl"]
 | السيناريو | لماذا بيرل | البديل الأفضل |
 |----------|--------|------------------|
 | معالجة النصوص/التحليل | أفضل محرك regex في فئته | بايثون للبيانات المنظمة |
-| تحليل ملف السجل | بطانات سريعة وأدوات مجربة |  __محمي_0__ / __محمي_1__ للحالات البسيطة؛ بايثون للمعقدة |
+| تحليل ملف السجل | بطانات سريعة وأدوات مجربة | `awk`/`sed`للحالات البسيطة؛ بايثون للمعقدة |
 | إدارة النظام | المهيمنة تاريخيا | Bash/PowerShell للمهام البسيطة؛ بايثون للمعقدة |
 | صيانة النظام القديم | ملايين خطوط بيرل قيد الإنتاج | — |
 | المعلوماتية الحيوية | حضور تاريخي قوي (BioPerl) | بايثون (بيوبيثون)، R |
-| تحويلات سريعة للبيانات | الخطوط المفردة لا تقبل المنافسة |  __محمي_2__، __محمي_3__ للتنسيقات المنظمة |
+| تحويلات سريعة للبيانات | الخطوط المفردة لا تقبل المنافسة | `jq`,`awk`للتنسيقات المنظمة |
 | تطوير الويب | انتهى عصر CGI | بايثون، Node.js، Go، PHP |
 | مشاريع جديدة واسعة النطاق | لقد انتقل المجتمع | اذهب يا رست، بايثون |
 | علم البيانات / تعلم الآلة | ليس النظام البيئي | بايثون، ر |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: ما الفرق بين`my`و`our`و `local`؟
+**أ:** تتحكم هذه الكلمات الرئيسية في النطاق المتغير:
+```perl
+# my — lexical scope (preferred)
+my $x = 10;  # visible only in current block
+
+# our — package global with lexical alias
+our $VERSION = '1.0';  # package variable, accessible as $main::VERSION
+
+# local — temporarily change a global
+local $/ = undef;  # temporarily undefine input record separator
+# original value restored when block exits
+```
+
+### السؤال الثاني: كيف يمكنني معالجة الملفات النصية بكفاءة في لغة Perl؟
+**ج:** تتفوق لغة Perl في معالجة النصوص. استخدم عامل الماس والتعبير العادي:
+```perl
+# Line-by-line processing
+while (my $line = <STDIN>) {
+    chomp $line;
+    $line =~ s/old/new/g;
+    print "$line\n";
+}
+
+# One-liner (the classic Perl superpower)
+# perl -pe 's/foo/bar/g' file.txt
+# perl -ne 'print if /error/i' logfile.txt
+# perl -lane 'print $F[0]' file.txt  # split on whitespace
+
+# Slurp entire file
+local $/;
+my $content = <FILE>;
+```
+
+### س3: كيف يمكنني استخدام المراجع وهياكل البيانات المعقدة؟
+**أ:** المراجع هي طريقة بيرل لإنشاء بنيات متداخلة:
+```perl
+# Array reference
+my $aref = [1, 2, 3];
+print $aref->[0];  # 1
+
+# Hash reference
+my $href = { name => 'Alice', age => 30 };
+print $href->{name};  # Alice
+
+# Nested structures
+my $data = {
+    users => [
+        { name => 'Alice', scores => [95, 87, 92] },
+        { name => 'Bob',   scores => [78, 88, 91] },
+    ],
+};
+print $data->{users}[0]{scores}[2];  # 92
+```
+
+### س4: ما هي متغيرات لغة Perl الخاصة التي يجب أن أعرفها؟
+**أ:** لدى لغة Perl العديد من المتغيرات الخاصة. الأهم:
+```perl
+$_     # default variable (topic)
+$!     # system error message
+$@     # eval error
+$$     # process ID
+$.     # current line number in last filehandle
+$/     # input record separator (\n by default)
+$\     # output record separator
+$|     # autoflush (1 = on)
+@ARGV  # command-line arguments
+%ENV   # environment variables
+```
+
+### س5: كيف أكتب لغة بيرل حديثة وقابلة للصيانة؟
+**ج:** أفضل ممارسات لغة Perl الحديثة:
+- استخدم دائمًا`strict`و`warnings` 
+- استخدم`my`لجميع المتغيرات
+- استخدم مقابض الملفات المعجمية:`open my $fh, '<', $file`
+- استخدام الوحدات النمطية من CPAN (Moo/Moose لـ OOP، حاول::Tiny للأخطاء)
+- استخدم`say`بدلاً من`print`(مع `feature 'say'`)
+- التنسيق باستخدام `perltidy`
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: تحليل ملف السجل
+**الخطوة الأولى: فهم المشكلة**
+تحليل سجل وصول Apache واحتساب الطلبات لكل عنوان IP.
+**الخطوة 2: تحديد النهج**
+استخدم regex لاستخراج عناوين IP والتجزئة لحساب التكرارات.
+**الخطوة 3: التنفيذ**```perl
+use strict;
+use warnings;
+
+my %counts;
+while (my $line = <>) {
+    if ($line =~ /^(\S+)/) {
+        $counts{$1}++;
+    }
+}
+
+# Sort by count (descending)
+for my $ip (sort { $counts{$b} <=> $counts{$a} } keys %counts) {
+    printf "%-15s %d\n", $ip, $counts{$ip};
+}
+```
+
+**الخطوة 4: تمديد**
+أضف تصفية التاريخ وتحليل رمز الحالة والإخراج كملف CSV.
+### المشكلة الثانية: إعادة تسمية الملفات الدفعية باستخدام Regex
+**الخطوة الأولى: فهم المشكلة**
+إعادة تسمية الملفات المطابقة للنمط، وتحويل أسماء الملفات باستخدام regex.
+**الخطوة 2: تحديد النهج**
+استخدم`glob`أو`opendir`للعثور على الملفات، والتعبير العادي لتحويل الأسماء.
+**الخطوة 3: التنفيذ**```perl
+use strict;
+use warnings;
+use File::Copy;
+
+my $dir = shift @ARGV || '.';
+opendir my $dh, $dir or die "Cannot open $dir: $!";
+
+for my $file (sort readdir $dh) {
+    next unless $file =~ /^(\d{4})-(\d{2})-(\d{2})_(.+)$/;
+    my $new_name = "$3-$2-$1_$4";  # Rearrange date format
+    my $old = "$dir/$file";
+    my $new = "$dir/$new_name";
+    print "Renaming: $file -> $new_name\n";
+    move($old, $new) or warn "Failed: $!";
+}
+closedir $dh;
+```
+
+**الخطوة 4: التحقق**
+قم بالتشغيل باستخدام علامة`--dry-run`أولاً (اطبع فقط، لا تحرك).
+### المشكلة 3: إنشاء مكشطة ويب بسيطة
+**الخطوة الأولى: فهم المشكلة**
+جلب صفحة ويب واستخراج كافة الروابط.
+**الخطوة 2: تحديد النهج**
+استخدم`LWP::Simple`للجلب والتعبير العادي أو`HTML::LinkExtor`للتحليل.
+**الخطوة 3: التنفيذ**```perl
+use strict;
+use warnings;
+use LWP::Simple;
+use HTML::LinkExtor;
+
+my $url = 'https://example.com';
+my $html = get($url) or die "Cannot fetch $url";
+
+my $parser = HTML::LinkExtor->new;
+$parser->parse($html);
+
+for my $link ($parser->links) {
+    my ($tag, %attrs) = @$link;
+    print "$attrs{href}\n" if $attrs{href};
+}
+```
+
+**الخطوة 4: تمديد**
+تعامل مع عناوين URL النسبية، وقم بالتصفية حسب المجال، واتبع ترقيم الصفحات.
 ---
 
 ## ملخص

@@ -41,7 +41,7 @@ contribution:
 
 # テクノロジーとコンピューティング
 携帯電話、車、冷蔵庫、医療機器、現代社会を運営するインフラストラクチャなど、コンピューティングはあらゆる場所に存在します。プログラマーでなくても、すべての仕組みを理解することができます。このファイルには、コンピューターとは何か、インターネットがどのように機能するか、ソフトウェアがどのように構築されるか、デジタル世界を形作る概念などの基本事項が含まれています。
-> **さらに詳しく知りたいですか?** このファイルには大まかな概要が記載されています。トピックの詳細については、[`01_coding_and_technology/`](../01_coding_and_technology/)の専用ファイル ([web development](../01_coding_and_technology/web_development.md)、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)、および[security](../01_coding_and_technology/security_best_practices.md)を含む) を参照してください。
+> **さらに詳しく知りたいですか?** このファイルには大まかな概要が記載されています。トピックの詳細については、[`01_coding_and_technology/`](../01_coding_and_technology/)の専用ファイル (、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)、およびを含む) を参照してください。
 ---
 
 ## コンピューターとは何ですか?
@@ -151,7 +151,7 @@ Linux は特筆に値します。Linux は、ほとんどのインターネッ�
 ---
 
 ## サイバーセキュリティ — デジタル システムの保護
-サイバーセキュリティは、コンピュータ、ネットワーク、データを攻撃から守る実践です。すべてがつながっており、侵害のコストは莫大であるため、これは重要です。 OWASP トップ 10、安全な開発ライフサイクル、およびシークレット管理をカバーする完全なガイドについては、「[security best practices](../01_coding_and_technology/security_best_practices.md)」を参照してください。
+サイバーセキュリティは、コンピュータ、ネットワーク、データを攻撃から守る実践です。すべてがつながっており、侵害のコストは莫大であるため、これは重要です。 OWASP トップ 10、安全な開発ライフサイクル、およびシークレット管理をカバーする完全なガイドについては、「」を参照してください。
 ### 一般的な脅威
 |脅威 |それは何ですか |予防 |
 |----------|-----------|---------------|

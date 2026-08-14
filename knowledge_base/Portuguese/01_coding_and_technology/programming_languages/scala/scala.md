@@ -857,5 +857,187 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Ciência de dados | Possível, mas não o ecossistema | Pitão, R |
 ---
 
+## Perguntas e respostas sintéticas
+### Q1: Como a inferência de tipo do Scala reduz o padrão em comparação com Java?
+**R:** O compilador do Scala infere tipos para declarações `val`/`var`, tipos de retorno de método e funções anônimas. Isso elimina a necessidade de anotações de tipo explícitas na maioria dos casos:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+O compilador também infere parâmetros de tipo, tipos de retorno de métodos de expressão única e tipos de correspondência de padrões. Isso torna o código conciso sem sacrificar a segurança.
+### Q2: Quando devo usar`case class`versus`class`normal?
+**R:** Use`case class`para suportes de dados imutáveis ​​— eles fornecem`equals`,`hashCode`,`toString`,`copy`e suporte para correspondência de padrões automaticamente:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Regra prática: se sua classe for composta principalmente de dados, use`case class`. Se tiver estado mutável ou comportamento complexo, use um`class`regular.
+### Q3: Como lidar com erros idiomaticamente no Scala?
+**R:** Scala favorece o retorno de tipos como`Option`,`Either`e`Try`em vez de lançar exceções:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4: Qual é a diferença entre`trait`e `abstract class`?
+**R:** As características suportam herança múltipla e podem ter parâmetros de tipo e métodos concretos. Classes abstratas podem ter parâmetros construtores, mas suportam apenas herança única:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5: Como escrevo código Scala de alto desempenho na JVM?
+**R:** Principais práticas:
+- Use`case class`e dados imutáveis para evitar sincronização
+- Prefira`Vector`,`Map`(imutável) para compartilhamento estrutural
+- Use a anotação`@tailrec`para garantir a otimização da chamada final
+- Evite boxe excessivo - use as primitivas`Int`, `Double`
+- Use`lazy val`para cálculos caros
+- Prefira `Stream`/`LazyList` para sequências grandes
+- Perfil com JMH — as abstrações do Scala devem ser compiladas em bytecode eficiente
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Implementando um avaliador de expressão com segurança de tipo
+**Etapa 1: Entenda o problema**
+Precisamos avaliar expressões matemáticas com variáveis, suportando adição, multiplicação e pesquisa de variáveis.
+**Etapa 2: Identifique a abordagem**
+Use tipos de dados algébricos (característica selada + classes de caso) para modelar a árvore de expressão e, em seguida, correspondência de padrões para avaliar.
+**Etapa 3: Implementar**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**Etapa 4: verificar e estender**
+Adicione casos`Div`,`Pow`, `Neg`. A característica selada garante que o compilador avise sobre correspondências não exaustivas.
+### Problema 2: Construindo uma DSL simples para geração de HTML
+**Etapa 1: Entenda o problema**
+Crie uma DSL de tipo seguro que gere strings HTML usando a sintaxe do Scala.
+**Etapa 2: Identifique a abordagem**
+Use classes de caso para elementos HTML e conversões implícitas para uma sintaxe natural.
+**Etapa 3: Implementar**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**Etapa 4: verificar**
+A DSL é de tipo seguro – você não pode passar acidentalmente conteúdo não-HTML. A correspondência de padrões em`HtmlNode`garante uma renderização exaustiva.
+### Problema 3: Contagem simultânea de palavras com Akka Streams
+**Etapa 1: Entenda o problema**
+Conte frequências de palavras em vários arquivos grandes simultaneamente.
+**Etapa 2: Identifique a abordagem**
+Use as coleções paralelas do Scala ou Akka Streams para processamento simultâneo e depois mescle os resultados.
+**Etapa 3: Implementar**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**Etapa 4: otimizar**
+Para conjuntos de dados muito grandes, use Akka Streams com contrapressão:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
+---
+
 ## Resumo
 Scala é uma linguagem poderosa que traz programação funcional para a JVM. É a linguagem do Apache Spark e uma forte escolha para engenharia de dados, sistemas distribuídos e serviços de back-end. A curva de aprendizado é real, mas a recompensa é uma linguagem expressiva e performática. Para equipes que já investiram no ecossistema JVM, Scala oferece uma alternativa mais concisa e poderosa ao Java.

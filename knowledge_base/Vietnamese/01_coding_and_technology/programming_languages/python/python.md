@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Python
 Python là ngôn ngữ lập trình cấp cao, được diễn giải, có mục đích chung do Guido van Rossum tạo ra và phát hành lần đầu tiên vào năm 1991. Python ưu tiên khả năng đọc mã thông qua khả năng thụt lề đáng kể và cú pháp rõ ràng, đọc gần giống tiếng Anh đơn giản. Python được gõ động, thu thập rác và hỗ trợ nhiều mô hình lập trình bao gồm lập trình thủ tục, hướng đối tượng và chức năng.
 Ngày nay, Python là ngôn ngữ thống trị trong AI/ML, khoa học dữ liệu, máy tính khoa học và tự động hóa - đồng thời vẫn là một trong những ngôn ngữ tốt nhất cho người mới bắt đầu. Bản sắc kép đó (đủ đơn giản cho tập lệnh đầu tiên, đủ mạnh để huấn luyện các mô hình ngôn ngữ lớn) là điều làm nên sự khác biệt của nó.
@@ -54,8 +55,8 @@ Ngày nay, Python là ngôn ngữ thống trị trong AI/ML, khoa học dữ li�
 Python không hoàn hảo. Hiểu được những hạn chế của nó sẽ giúp bạn quyết định khi nào nên tiếp cận thứ khác:
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
-| **Tốc độ thực thi** | Chậm hơn 10–100 lần so với C đối với các tác vụ liên quan đến CPU | Sử dụng NumPy/PyTorch (C dưới mui xe) hoặc Cython/Numba cho các vòng lặp nóng |
-| **GIL (Khóa thông dịch toàn cầu)** | Ngăn chặn sự song song đa luồng thực sự cho công việc liên quan đến CPU | Sử dụng`multiprocessing`,`asyncio`hoặc hàng đợi tác vụ như Celery |
+| **Tốc độ thực hiện** | Chậm hơn 10–100 lần so với C đối với các tác vụ liên quan đến CPU | Sử dụng NumPy/PyTorch (C dưới mui xe) hoặc Cython/Numba cho các vòng lặp nóng |
+| **GIL (Khóa thông dịch toàn cầu)** | Ngăn chặn sự song song đa luồng thực sự cho công việc liên quan đến CPU | Sử dụng`multiprocessing`,`asyncio`hoặc hàng đợi nhiệm vụ như Celery |
 | **Phát triển di động** | Không phù hợp với ứng dụng iOS/Android | Sử dụng Swift/Kotlin cho bản gốc hoặc Flutter/React Native cho đa nền tảng |
 | **Hệ thống nhúng** | Quá nặng đối với vi điều khiển | Sử dụng MicroPython (một biến thể nhẹ) hoặc chuyển sang C/Rust |
 | **Sử dụng bộ nhớ** | Dung lượng bộ nhớ cao hơn các ngôn ngữ được biên dịch | Có thể chấp nhận được đối với hầu hết các ứng dụng; sử dụng máy phát điện cho dữ liệu lớn |
@@ -180,7 +181,7 @@ class InsufficientFundsError(Exception):
 ---
 
 ## Cú pháp & Mẫu nâng cao
-### Generics với mô-đun `typing`
+### Generics với Mô-đun `typing`
 Mô-đun`typing`của Python cung cấp hỗ trợ kiểu chung để xây dựng các thành phần an toàn, có thể tái sử dụng. Generics cho phép bạn viết các hàm và lớp hoạt động với bất kỳ loại nào trong khi vẫn giữ nguyên thông tin loại để phân tích tĩnh.
 ```python
 from typing import TypeVar, Generic, Protocol, runtime_checkable
@@ -507,18 +508,18 @@ except AppError as e:
 Python có một thư viện tiêu chuẩn phong phú. Một số module được sử dụng nhiều nhất:
 | Mô-đun | Mục đích | Ví dụ sử dụng |
 |--------|----------|-------------|
-|  __BẢO VỆ_0__ / __BẢO VỆ_1__ | Hoạt động của hệ thống tập tin |  __BẢO VỆ_2__ |
-|  __BẢO VỆ_3__ | Mã hóa/giải mã JSON |  __BẢO VỆ_4__ |
-|  __BẢO VỆ_5__ | Xử lý ngày giờ |  __BẢO VỆ_6__ |
-|  __BẢO VỆ_7__ | Thùng chứa chuyên dụng |  __BẢO VỆ_8__ , __BẢO VỆ_9__ |
-|  __BẢO VỆ_10__ | Khối xây dựng Iterator |  __BẢO VỆ_11__ |
-|  __BẢO VỆ_12__ | Công cụ chức năng | `lru_cache`,`partial`,`reduce`|
-|  __BẢO VỆ_16__ | Biểu thức chính quy |  __BẢO VỆ_17__ |
-|  __BẢO VỆ_18__ | Chạy lệnh bên ngoài |  __BẢO VỆ_19__ |
-|  __BẢO VỆ_20__ | Ghi nhật ký ứng dụng |  __BẢO VỆ_21__ |
-|  __BẢO VỆ_22__ | Gõ gợi ý hỗ trợ |  __BẢO VỆ_23__ , __BẢO VỆ_24__ |
-|  __BẢO VỆ_25__ | Máy chủ HTTP đơn giản |  __BẢO VỆ_26__ |
-|  __BẢO VỆ_27__ / __BẢO VỆ_28__ | Đồng thời | I/O không đồng bộ cho người dọn dẹp web |
+| `os`/`pathlib`| Hoạt động của hệ thống tập tin | `Path("data/output.csv").exists()`|
+| `json`| Mã hóa/giải mã JSON | `json.loads(response_text)`|
+| `datetime`| Xử lý ngày giờ | `datetime.now(timezone.utc)`|
+| `collections`| Thùng chứa chuyên dụng | `Counter(words)`,`defaultdict(list)`|
+| `itertools`| Khối xây dựng Iterator | `combinations(items, 2)`|
+| `functools`| Công cụ chức năng | `lru_cache`,`partial`,`reduce`|
+| `re`| Biểu thức chính quy | `re.findall(r"\d+", text)`|
+| `subprocess`| Chạy lệnh bên ngoài | `subprocess.run(["ls", "-la"])`|
+| `logging`| Ghi nhật ký ứng dụng | `logging.basicConfig(level=logging.INFO)`|
+| `typing`| Gõ gợi ý hỗ trợ | `Optional[str]`,`Union[int, float]`|
+| `http.server`| Máy chủ HTTP đơn giản | `python -m http.server 8000`|
+| `threading`/`asyncio`| Đồng thời | I/O không đồng bộ cho người dọn dẹp web |
 ### Môi trường ảo và quản lý gói
 Mọi dự án Python nên sử dụng môi trường ảo để tách biệt các phần phụ thuộc:
 ```bash
@@ -541,7 +542,7 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
-Các dự án Python hiện đại ngày càng sử dụng`pyproject.toml`với các công cụ như`uv`,`poetry`hoặc`hatch`để quản lý phần phụ thuộc, thay thế cho cách tiếp cận`setup.py`/`requirements.txt`cũ hơn.
+Các dự án Python hiện đại ngày càng sử dụng`pyproject.toml`với các công cụ như`uv`,`poetry`hoặc`hatch`để quản lý phần phụ thuộc, thay thế cho phương pháp `setup.py`/`requirements.txt` cũ hơn.
 ### Lập trình không đồng bộ
 `asyncio` của Python cho phép I/O đồng thời không có luồng — cần thiết cho người quét web, máy chủ trò chuyện và ứng dụng khách API:
 ```python
@@ -995,7 +996,7 @@ def fibonacci_cython(int n):
 ---
 
 ## Mẫu thiết kế
-### Đơn
+### Singleton
 ```python
 class Singleton:
     _instance = None
@@ -1289,16 +1290,16 @@ Sức mạnh của Python không chỉ ở ngôn ngữ — mà còn là hệ sin
 | Django | Toàn bộ, "bao gồm pin" | Ứng dụng web phức tạp với bảng quản trị, ORM, auth |
 | FastAPI | Hiện đại, không đồng bộ, định hướng kiểu | API và microservice (hiện đang phát triển nhanh nhất) |
 | Bình | Tối thiểu, linh hoạt | Ứng dụng nhỏ và nguyên mẫu |
-| Tinh giản | Tập trung vào ứng dụng dữ liệu | Bảng điều khiển và trình diễn dữ liệu bằng Python thuần túy |
+| Tinh giản | Tập trung vào ứng dụng dữ liệu | Bảng thông tin và trình diễn dữ liệu bằng Python thuần túy |
 ### Tự động hóa và viết kịch bản
 | Thư viện | Mục đích |
 |----------|----------|
-|  __BẢO VỆ_0__ / __BẢO VỆ_1__ | Quản trị hệ thống |
-|  __BẢO VỆ_2__ / __BẢO VỆ_3__ | Máy khách HTTP |
-|  __BẢO VỆ_4__ / __BẢO VỆ_5__ | Quét web |
-|  __BẢO VỆ_6__ / __BẢO VỆ_7__ | Tự động hóa trình duyệt |
-|  __BẢO VỆ_8__ | Hàng đợi nhiệm vụ phân tán |
-|  __BẢO VỆ_9__ | Điều phối quy trình làm việc |
+| `subprocess`/`os`| Quản trị hệ thống |
+| `requests`/`httpx`| Máy khách HTTP |
+| `BeautifulSoup`/`Scrapy`| Quét web |
+| `Selenium`/`Playwright`| Tự động hóa trình duyệt |
+| `Celery`| Hàng đợi nhiệm vụ phân tán |
+| `Airflow`| Điều phối quy trình làm việc |
 ### Tính toán khoa học
 | Thư viện | Mục đích |
 |----------|----------|
@@ -1377,6 +1378,289 @@ def slow_function():
     import time; time.sleep(1)
 ```
 
+---
+
+## Hỏi đáp tổng hợp
+### Câu hỏi 1: Sự khác biệt giữa danh sách và bộ dữ liệu là gì và khi nào tôi nên sử dụng từng bộ dữ liệu?
+**A:** Danh sách có thể thay đổi (`[]`), bộ dữ liệu không thể thay đổi (`()`). Sử dụng danh sách khi bạn cần thêm, xóa hoặc thay đổi thành phần. Sử dụng bộ dữ liệu cho các bộ sưu tập cố định gồm dữ liệu không đồng nhất, khóa từ điển, giá trị trả về của hàm hoặc khi bạn muốn báo hiệu "điều này sẽ không thay đổi". Các bộ dữ liệu tiết kiệm bộ nhớ hơn một chút và có thể được sử dụng làm khóa set/dict; danh sách không thể.
+```python
+# Tuple as dictionary key (lists would raise TypeError)
+locations = {(40.7128, -74.0060): "New York", (51.5074, -0.1278): "London"}
+
+# Tuple unpacking for multiple return values
+def min_max(numbers):
+    return min(numbers), max(numbers)  # Returns a tuple
+
+low, high = min_max([3, 1, 4, 1, 5])
+```
+
+### Câu 2: Khóa phiên dịch toàn cầu (GIL) ảnh hưởng đến mã của tôi như thế nào và tôi nên làm gì với nó?
+**A:** GIL ngăn nhiều luồng thực thi đồng thời mã byte Python, khiến luồng không hiệu quả đối với công việc liên quan đến CPU. Đối với các tác vụ liên quan đến I/O (yêu cầu mạng, tệp I/O),`threading`hoặc`asyncio`hoạt động tốt vì GIL được giải phóng trong I/O. Đối với các tác vụ liên quan đến CPU, hãy sử dụng`multiprocessing`(các quy trình riêng biệt, mỗi quy trình có GIL riêng) hoặc giảm tải cho các tiện ích mở rộng C (NumPy, Cython, Numba) để phát hành GIL nội bộ.
+```python
+import multiprocessing
+import time
+
+def cpu_heavy(n):
+    return sum(i * i for i in range(n))
+
+# Multiprocessing bypasses the GIL
+with multiprocessing.Pool() as pool:
+    results = pool.map(cpu_heavy, [10_000_000] * 4)
+```
+
+### Câu 3: Tôi có nên sử dụng gợi ý kiểu ở mọi nơi không? Sự đánh đổi thực tế là gì?
+**A:** Gợi ý loại (`def greet(name: str) -> str:`) là tùy chọn và không được thực thi khi chạy. Chúng cải thiện khả năng tự động hoàn thành của IDE, phát hiện lỗi thông qua các công cụ phân tích tĩnh (mypy) và mục đích ghi lại tài liệu. Sự đánh đổi là tính chi tiết hơn và đường cong học tập cho các loại nâng cao (`Union`,`Generic`,`Protocol`). Khuyến nghị: sử dụng gợi ý loại cho chữ ký hàm trong bất kỳ dự án nào trên ~500 dòng; sử dụng chúng một cách tiết kiệm trong các đoạn văn ngắn. Kích hoạt mypy trong CI để thực thi dần dần.
+```python
+from typing import Protocol
+
+class Renderable(Protocol):
+    def render(self) -> str: ...
+
+# Structural subtyping — no inheritance needed
+def display(obj: Renderable) -> None:
+    print(obj.render())
+```
+
+### Câu hỏi 4: Các phương pháp hay nhất để xử lý ngoại lệ trong Python là gì?
+**A:** Nắm bắt các trường hợp ngoại lệ cụ thể thay vì`except:`thông thường (bắt cả`SystemExit`và `KeyboardInterrupt`). Sử dụng`try/except/else/finally`để tách logic đường dẫn hạnh phúc khỏi việc xử lý lỗi. Xác định hệ thống phân cấp ngoại lệ tùy chỉnh cho thư viện. Không bao giờ sử dụng ngoại lệ cho luồng điều khiển trong mã nhạy cảm với hiệu suất - chúng chậm. Ghi lại ngoại lệ bằng`logging.exception()`để ghi lại toàn bộ dấu vết.
+```python
+import logging
+
+class ConfigError(Exception):
+    """Raised when configuration is invalid."""
+
+def load_config(path: str) -> dict:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        raise ConfigError(f"Config file not found: {path}")
+    except json.JSONDecodeError as e:
+        raise ConfigError(f"Invalid JSON in {path}: {e}") from e
+```
+
+### Câu hỏi 5: Trình tạo tiết kiệm bộ nhớ như thế nào và khi nào tôi nên sử dụng chúng trên danh sách?
+**A:** Trình tạo tạo ra các giá trị một cách lười biếng — mỗi lần một giá trị, theo yêu cầu — thay vì tạo toàn bộ danh sách trong bộ nhớ. Đối với các tập dữ liệu lớn (hàng triệu hàng, chuỗi vô hạn, truyền dữ liệu), trình tạo sử dụng bộ nhớ không đổi bất kể kích thước. Sử dụng trình tạo khi bạn lặp lại một lần và không cần lập chỉ mục hoặc`len()`. Sử dụng danh sách khi bạn cần truy cập ngẫu nhiên, lặp lại nhiều lần hoặc bộ sưu tập nhỏ.
+```python
+# This reads the entire file into memory
+lines = open("huge.csv").readlines()  # BAD for large files
+
+# This reads one line at a time — constant memory
+def read_lines(path):
+    with open(path) as f:
+        for line in f:
+            yield line.strip()
+
+# Generator expression — like a list comprehension but lazy
+total = sum(x * x for x in range(10_000_000))  # No intermediate list created
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Bài toán 1: Xây dựng bộ đếm tần số từ có xếp hạng
+**Báo cáo vấn đề:** Cho một tệp văn bản lớn, đếm tần suất của mỗi từ, xếp hạng chúng theo tần suất (giảm dần) và trả về N kết quả hàng đầu. Xử lý trường hợp không phân biệt chữ hoa chữ thường, dấu câu và xử lý hiệu quả các tệp quá lớn để vừa với bộ nhớ.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng ta cần: (1) đọc văn bản, (2) chia thành các từ, (3) chuẩn hóa kiểu chữ, (4) tách dấu câu, (5) đếm số lần xuất hiện, (6) sắp xếp theo số đếm giảm dần, (7) trả về đầu N. Ràng buộc "quá lớn để vừa trong bộ nhớ" có nghĩa là chúng ta nên xử lý từng dòng một bằng các trình tạo.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`re.finditer`để trích xuất từ hiệu quả mà không cần xây dựng danh sách trung gian.
+- Sử dụng`collections.Counter`để tăng O(1) cho mỗi từ.
+- Sử dụng`Counter.most_common(n)`sử dụng vùng nhớ heap nội bộ — O(k log n) thay vì O(n log n) để sắp xếp đầy đủ.
+- Xử lý từng dòng thông qua trình tạo để giữ cho bộ nhớ không đổi.
+**Bước 3 — Triển khai giải pháp:**
+```python
+import re
+from collections import Counter
+from typing import Iterator
+
+def word_stream(path: str) -> Iterator[str]:
+    """Yield lowercase words from a file, one at a time."""
+    word_pattern = re.compile(r'[a-z\']+')
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            for match in word_pattern.finditer(line.lower()):
+                yield match.group()
+
+def top_words(path: str, n: int = 20) -> list[tuple[str, int]]:
+    """Return the n most frequent words in a text file."""
+    counter = Counter(word_stream(path))
+    return counter.most_common(n)
+
+# Usage
+for word, count in top_words("shakespeare.txt", 10):
+    print(f"{word:>15} : {count}")
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Bộ nhớ: chỉ có Counter dict trong bộ nhớ (một mục nhập cho mỗi từ duy nhất), không phải nội dung tệp. Đối với văn bản tiếng Anh, ~100K từ duy nhất ≈ vài MB.
+- Thời gian: O(W) quét tất cả các từ + O(U log N) để trích xuất top-N, trong đó W = tổng số từ, U = các từ duy nhất.
+- Các trường hợp cạnh: dấu nháy đơn trong cách viết tắt ("không") được giữ nguyên bởi biểu thức chính quy. Văn bản Unicode sẽ cần cờ`re.UNICODE`hoặc một mẫu khác.
+### Vấn đề 2: Triển khai Bộ nhớ đệm LRU an toàn theo luồng
+**Báo cáo vấn đề:** Xây dựng bộ đệm ít được sử dụng gần đây nhất (LRU) từ đầu, an toàn theo luồng, hỗ trợ các thao tác lấy và đặt O(1), đồng thời tự động loại bỏ mục ít được sử dụng gần đây nhất khi vượt quá dung lượng.
+**Bước 1 — Tìm hiểu vấn đề:**
+Bộ đệm LRU cần: (1) tra cứu nhanh theo khóa → bản đồ băm, (2) sắp xếp nhanh theo lần truy cập gần đây → danh sách liên kết đôi, (3) an toàn luồng → khóa. Trên`get(key)`: di chuyển mục lên phía trước. Trên`put(key, val)`: chèn ở phía trước; nếu vượt quá dung lượng, hãy tháo ra từ phía sau.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+-`dict`của Python duy trì thứ tự chèn (3.7+), vì vậy chúng ta có thể sử dụng cách tiếp cận chính tả theo thứ tự: xóa và chèn lại để chuyển về cuối.
+- Để đảm bảo an toàn cho luồng, hãy sử dụng`threading.Lock`để loại trừ lẫn nhau.
+- Cách khác: sử dụng`collections.OrderedDict`có`move_to_end()`.
+**Bước 3 — Triển khai giải pháp:**
+```python
+import threading
+from collections import OrderedDict
+
+class ThreadSafeLRU:
+    def __init__(self, capacity: int):
+        self._cache: OrderedDict = OrderedDict()
+        self._capacity = capacity
+        self._lock = threading.Lock()
+
+    def get(self, key: str) -> object | None:
+        with self._lock:
+            if key not in self._cache:
+                return None
+            self._cache.move_to_end(key)  # Mark as most recent
+            return self._cache[key]
+
+    def put(self, key: str, value: object) -> None:
+        with self._lock:
+            if key in self._cache:
+                self._cache.move_to_end(key)
+            self._cache[key] = value
+            if len(self._cache) > self._capacity:
+                self._cache.popitem(last=False)  # Remove least recent
+
+    def __len__(self) -> int:
+        with self._lock:
+            return len(self._cache)
+
+# Usage
+cache = ThreadSafeLRU(capacity=100)
+cache.put("user:1", {"name": "Alice"})
+result = cache.get("user:1")  # {"name": "Alice"}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Độ phức tạp về thời gian: O(1) đối với cả`get`và`put`—`OrderedDict.move_to_end()`và`popitem()`đều là O(1).
+- An toàn chỉ:`Lock`đảm bảo tính nguyên tử. Để có thông lượng cao hơn, hãy xem xét`threading.RLock`hoặc mẫu khóa đọc-ghi, nhưng đối với hầu hết các trường hợp sử dụng, chỉ cần một khóa đơn giản là đủ.
+- Ghi chú sản xuất: đối với mã đơn luồng,`functools.lru_cache`đơn giản hơn và được triển khai trong C để có hiệu suất tốt hơn.
+### Bài 3: Phân tích và tính biểu thức toán học
+**Báo cáo vấn đề:** Viết một trình phân tích cú pháp lấy một chuỗi như`"3 + 4 * 2 / (1 - 5)"`và đánh giá chính xác chuỗi đó theo thứ tự ưu tiên của toán tử và dấu ngoặc đơn.
+**Bước 1 — Tìm hiểu vấn đề:**
+Điều này yêu cầu: (1) mã hóa chuỗi đầu vào thành số, toán tử và dấu ngoặc đơn, (2) phân tích cú pháp với mức độ ưu tiên chính xác (`*`và`/`trước`+`và`-`), (3) xử lý các dấu ngoặc đơn lồng nhau. Đánh giá ngây thơ từ trái sang phải sẽ cho kết quả sai.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+Giải pháp cổ điển là **thuật toán shunting-yard** (Dijkstra) chuyển đổi tiền tố thành hậu tố (Ký hiệu tiếng Ba Lan đảo ngược), sau đó đánh giá hậu tố đó. Ngoài ra, hãy sử dụng trình phân tích cú pháp gốc đệ quy. Đối với Python cụ thể, chúng ta cũng có thể sử dụng`ast.literal_eval`để đánh giá an toàn - nhưng hãy triển khai nó đúng cách.
+**Bước 3 — Triển khai giải pháp:**
+```python
+import re
+from typing import List
+
+def tokenize(expr: str) -> List[str]:
+    return re.findall(r'\d+\.?\d*|[+\-*/()]', expr.replace(' ', ''))
+
+def to_postfix(tokens: List[str]) -> List[str]:
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2}
+    output, ops = [], []
+    for token in tokens:
+        if re.match(r'\d', token):
+            output.append(token)
+        elif token == '(':
+            ops.append(token)
+        elif token == ')':
+            while ops and ops[-1] != '(':
+                output.append(ops.pop())
+            ops.pop()  # Remove '('
+        else:  # Operator
+            while ops and ops[-1] != '(' and precedence.get(ops[-1], 0) >= precedence[token]:
+                output.append(ops.pop())
+            ops.append(token)
+    return output + ops[::-1]
+
+def evaluate_postfix(postfix: List[str]) -> float:
+    stack = []
+    for token in postfix:
+        if re.match(r'\d', token):
+            stack.append(float(token))
+        else:
+            b, a = stack.pop(), stack.pop()
+            ops = {'+': lambda x, y: x+y, '-': lambda x, y: x-y,
+                   '*': lambda x, y: x*y, '/': lambda x, y: x/y}
+            stack.append(ops[token](a, b))
+    return stack[0]
+
+def calculate(expr: str) -> float:
+    return evaluate_postfix(to_postfix(tokenize(expr)))
+
+# Usage
+print(calculate("3 + 4 * 2 / (1 - 5)"))  # 1.0
+print(calculate("10 + 20 * 3 - 4 / 2"))   # 68.0
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Độ chính xác:`3 + 4 * 2 / (1 - 5)`→`3 + 8 / (-4)`→`3 + (-2)`→ `1.0`. Chính xác.
+- Thời gian: O(N) để mã hóa, O(N) cho sân shunt, O(N) để đánh giá — tổng thể là O(N).
+- Các trường hợp cạnh cần xử lý: số âm (thêm`0`trước`-`đơn phân), chia cho 0 (thêm xử lý lỗi), đầu vào không hợp lệ (xác thực mã thông báo).
+- Giải pháp thay thế Pythonic:`ast.parse(expr, mode='eval')`với trình truy cập nút tùy chỉnh để đánh giá an toàn mà không cần `eval()`.
+### Vấn đề 4: Xây dựng Bảng điều khiển CLI với cập nhật dữ liệu theo thời gian thực
+**Báo cáo sự cố:** Tạo trang tổng quan dựa trên thiết bị đầu cuối hiển thị các số liệu hệ thống (CPU, bộ nhớ, ổ đĩa) cập nhật theo thời gian thực, với các ngưỡng được mã hóa màu và bố cục phản hồi.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) thu thập số liệu hệ thống định kỳ, (2) kết xuất thiết bị đầu cuối với điều khiển con trỏ, (3) đầu ra màu dựa trên ngưỡng, (4) đầu vào bàn phím không chặn để thoát. Đây là mẫu nhà sản xuất-người tiêu dùng có vòng lặp kết xuất.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`psutil`cho các số liệu hệ thống đa nền tảng.
+- Sử dụng mã thoát ANSI để định vị con trỏ và màu sắc (hoặc thư viện`rich`cho API cấp cao hơn).
+- Sử dụng`time.sleep`cho khoảng thời gian cập nhật.
+- Cấu trúc như: thu thập dữ liệu → định dạng → đường dẫn kết xuất.
+**Bước 3 — Triển khai giải pháp:**
+```python
+import psutil
+import time
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def colorize(value, warn_thresh, crit_thresh):
+    if value >= crit_thresh:
+        return f"\033[91m{value:.1f}%\033[0m"  # Red
+    elif value >= warn_thresh:
+        return f"\033[93m{value:.1f}%\033[0m"  # Yellow
+    return f"\033[92m{value:.1f}%\033[0m"      # Green
+
+def progress_bar(value, width=30):
+    filled = int(width * value / 100)
+    bar = "█" * filled + "░" * (width - filled)
+    return f"[{bar}]"
+
+def render_dashboard():
+    cpu = psutil.cpu_percent(interval=0.5)
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage('/').percent
+    net = psutil.net_io_counters()
+
+    clear_screen()
+    print("╔══════════════════════════════════════════╗")
+    print("║         SYSTEM DASHBOARD                 ║")
+    print("╠══════════════════════════════════════════╣")
+    print(f"║  CPU:    {colorize(cpu, 60, 85):>8}  {progress_bar(cpu)}  ║")
+    print(f"║  Memory: {colorize(mem, 70, 90):>8}  {progress_bar(mem)}  ║")
+    print(f"║  Disk:   {colorize(disk, 75, 90):>8}  {progress_bar(disk)}  ║")
+    print(f"║  Net ↑:  {net.bytes_sent / 1e6:.1f} MB  ↓: {net.bytes_recv / 1e6:.1f} MB    ║")
+    print("╚══════════════════════════════════════════╝")
+    print("Press Ctrl+C to exit")
+
+try:
+    while True:
+        render_dashboard()
+        time.sleep(2)
+except KeyboardInterrupt:
+    clear_screen()
+    print("Dashboard closed.")
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Đo khối`cpu_percent(interval=0.5)`trong 0,5 giây - đây là cách tiếp cận đúng (chế độ không chặn mang lại 0% cho cuộc gọi đầu tiên).
+- Mã ANSI hoạt động trên Windows Terminal hiện đại và tất cả các thiết bị đầu cuối Unix. Đối với cmd Windows cũ, hãy thêm`os.system('color')`hoặc sử dụng`colorama`.
+- Nâng cấp sản xuất: sử dụng thư viện`rich`(`rich.live`) để hiển thị không nhấp nháy, bố cục tự động và khả năng tương thích đa nền tảng.
+- Khả năng mở rộng: mỗi số liệu là một chức năng độc lập, giúp dễ dàng thêm nhiệt độ GPU, số lượng quy trình hoặc kết nối mạng.
 ---
 
 ## Bản tóm tắt

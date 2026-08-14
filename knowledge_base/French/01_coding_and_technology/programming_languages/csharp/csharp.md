@@ -1,42 +1,47 @@
 ---
-# Métadonnées
-titre : "C#"
-description : "Référence complète sur le langage de programmation C# couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "C#"
+description: "Comprehensive reference for the C# programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [csharp, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "29 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [csharp, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C#
 C# (prononcé « C-sharp ») est un langage de programmation moderne, orienté objet et de type sécurisé, développé par Microsoft sous la direction d'Anders Hejlsberg et publié pour la première fois en 2002. Il fonctionne sur la plate-forme .NET et a été conçu pour combiner la puissance du C++ avec la productivité de Visual Basic. Aujourd'hui, C# est un langage multiplateforme polyvalent utilisé pour les applications Web (ASP.NET), les logiciels de bureau (Windows), le développement de jeux (Unity), les applications mobiles (MAUI), les services cloud (Azure) et bien plus encore.
-C# a progressivement absorbé les meilleures idées d'autres langages (LINQ, async/await, records, pattern matching), ce qui en fait l'un des langages les plus riches en fonctionnalités et les plus conviviaux pour les développeurs.
+C# a progressivement absorbé les meilleures idées d'autres langages (LINQ, async/wait, records, pattern matching), ce qui en fait l'un des langages les plus riches en fonctionnalités et les plus conviviaux pour les développeurs.
 ---
 
 ## Pourquoi C# est important
@@ -198,7 +203,7 @@ public string Classify(int[] numbers) => numbers switch
 ---
 
 ## Syntaxe et modèles avancés
-### Génériques
+### Génériques
 ```csharp
 // Generic class with constraints
 public class Repository<T> where T : class, IEntity
@@ -682,7 +687,7 @@ dotnet publish -c Release -r linux-x64
 | C#7 | 2017 | Correspondance de modèles, tuples, variables `out`, fonctions locales |
 | C#8 | 2019 | Types de référence nullables, expressions `switch`, flux asynchrones |
 | C#9 | 2020 | **Enregistrements**, instructions de niveau supérieur, propriétés`init`|
-| C#10 | 2021 | Structures d'enregistrement,`using`globales, espaces de noms étendus aux fichiers |
+| C#10 | 2021 | Structures d'enregistrement,`using`globales, espaces de noms de portée fichier |
 | C#11 | 2022 | Littéraux de chaîne brute, modèles de liste, membres `required`, mathématiques génériques |
 | C#12 | 2023 | Constructeurs principaux, expressions de collection, tableaux en ligne |
 | C#13 | 2024 |  Collections `params`, nouveaux types de serrures, travées de première classe |
@@ -702,5 +707,297 @@ dotnet publish -c Release -r linux-x64
 | Outils/scripts CLI | Possible mais verbeux | Allez, Rouille, Python |
 ---
 
+## Questions et réponses synthétiques
+### Q1 : Quelle est la différence entre`class`et`record`en C# ?
+**A :** Un`class`est un type de référence avec des propriétés mutables par défaut : deux variables peuvent référencer le même objet. Un`record`(C# 9+) est un type de référence avec une égalité basée sur les valeurs : deux enregistrements contenant les mêmes données sont considérés comme égaux. Les enregistrements ont des propriétés d'initialisation uniquement, un`ToString`intégré et prennent en charge les expressions`with`pour les mutations non destructives. Utiliser des enregistrements pour les supports de données (DTO, objets de valeur) ; utilisez des classes pour les entités riches en comportement et dotées d'une identité.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### Q2 : Comment fonctionnent async/await et`Task`en interne ?
+**R :**`async/await`est un sucre syntaxique sur une machine à états générée par le compilateur. Lorsque vous`await`a`Task`, la méthode est divisée au point d'attente : tout ce qui précède est exécuté de manière synchrone, puis le reste est enregistré comme une continuation. Le fil est libéré pour effectuer d'autres travaux. `Task<T>`représente une valeur future. `ValueTask<T>`est une alternative de structure pour les hot paths qui évite l'allocation de tas lorsque le résultat est déjà disponible.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### Q3 : Que sont les méthodes d'extension et quand dois-je les utiliser ?
+**R :** Les méthodes d'extension ajoutent des méthodes aux types existants sans les modifier. Ce sont des méthodes statiques dans une classe statique, avec le mot-clé`this`sur le premier paramètre. Ils permettent une API fluide et chaînable. Utilisez-les pour ajouter des méthodes utilitaires à des types que vous ne possédez pas (comme`string`ou`IEnumerable<T>`). Évitez d’en abuser : ils peuvent rendre le code difficile à découvrir.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### Q4 : Comment fonctionne la correspondance de modèles en C# moderne ?
+**R :** C# a progressivement ajouté une correspondance de modèles plus puissante. Les expressions de commutation (C# 8), les modèles de types, les modèles de propriétés, les modèles relationnels et les modèles de liste (C# 11) permettent une logique conditionnelle concise et expressive. La correspondance de modèles remplace les longues chaînes if/else et est vérifiée de manière exhaustive par le compilateur.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### Q5 : Qu'est-ce que l'injection de dépendances dans .NET et comment l'utiliser ?
+**R :** .NET intègre la prise en charge DI via`Microsoft.Extensions.DependencyInjection`. Vous enregistrez les services avec leur durée de vie (Singleton, Scoped, Transient) et le conteneur les injecte via les paramètres du constructeur. Singleton : une instance pour l’application. Portée : une par requête HTTP. Transitoire : nouvelle instance à chaque fois.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Créer un référentiel générique avec mise en cache
+**Énoncé du problème :** Implémentez un modèle de référentiel générique avec un décorateur qui ajoute la mise en cache. Le référentiel doit prendre en charge les opérations CRUD et le décorateur de mise en cache doit mettre en cache les lectures et invalider les écritures.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) une interface générique `IRepository<T>`, (2) une implémentation concrète (par exemple, en mémoire), (3) un décorateur de mise en cache qui encapsule n'importe quel référentiel, (4) une invalidation du cache lors des opérations d'écriture. Le modèle de décorateur maintient la mise en cache orthogonale à la logique d'accès aux données.
+**Étape 2 — Identifiez l'approche :**
+- Définissez`IRepository<T>`avec`Get`,`GetAll`,`Add`,`Update`,`Delete`.
+- Créez`CachingRepository<T>`qui encapsule`IRepository<T>`et utilise`IMemoryCache`.
+- Clé de cache :`typeof(T).Name:{id}`.
+- Lors des opérations d'écriture, invalidez l'entrée du cache.
+**Étape 3 — Mettre en œuvre la solution :**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Séparation des préoccupations : la mise en cache est un décorateur, non mélangé au référentiel.
+- Enregistrement DI :`services.Decorate<IRepository<User>, CachingRepository<User>>()`(en utilisant Scrutor).
+- Production : utilisez`IDistributedCache`(Redis) pour les scénarios multi-serveurs et ajoutez des modèles de cache avec la protection `CacheStampede`.
+### Problème 2 : implémenter un pipeline middleware
+**Énoncé du problème :** Créez un pipeline de middleware similaire au pipeline de requêtes d'ASP.NET Core. Chaque middleware peut traiter la demande, appeler le middleware suivant et traiter la réponse.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) un type`RequestDelegate`représentant le pipeline, (2) un middleware qui encapsule le prochain délégué, (3) une API de création pour composer un middleware. Il s'agit du modèle de chaîne de responsabilité mis en œuvre avec les délégués.
+**Étape 2 — Identifiez l'approche :**
+-`RequestDelegate`est`Func<Context, RequestDelegate, Task>`.
+- Chaque middleware reçoit le contexte et une fonction `next`.
+-`Use`ajoute un middleware ; `Build`les compose en un seul délégué.
+**Étape 3 — Mettre en œuvre la solution :**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- L'ordre du middleware est important : premier ajouté = le plus externe (exécuté en premier sur demande, en dernier sur réponse).
+- Le middleware du terminal (pas d'appel `next`) court-circuite le pipeline.
+- Production : le pipeline d'ASP.NET Core correspond exactement à ce modèle, optimisé avec des arbres d'expression compilés pour une allocation nulle.
+---
+
 ## Résumé
-C# est un langage polyvalent, moderne et raffiné, doté d'excellents outils et d'un écosystème solide. Il excelle dans le développement d'entreprise, le développement de jeux (Unity) et les applications multiplateformes. Le langage a évolué rapidement : le C# moderne est concis, expressif et sans danger pour le type. Bien qu'il n'ait pas la taille d'écosystème de Java ou Python, la qualité et la cohérence de .NET font de C# un langage productif et agréable pour un large éventail d'applications.
+C# est un langage polyvalent, moderne et raffiné doté d’excellents outils et d’un écosystème solide. Il excelle dans le développement d'entreprise, le développement de jeux (Unity) et les applications multiplateformes. Le langage a évolué rapidement : le C# moderne est concis, expressif et sans danger pour le type. Bien qu'il n'ait pas la taille d'écosystème de Java ou de Python, la qualité et la cohérence de .NET font de C# un langage productif et agréable pour un large éventail d'applications.

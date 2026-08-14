@@ -41,7 +41,7 @@ contribution:
 
 #skala
 Scala (Scalable Language) adalah bahasa pemrograman terkompilasi yang diketik secara statis yang menggabungkan paradigma pemrograman berorientasi objek dan fungsional. Dibuat oleh Martin Odersky dan pertama kali dirilis pada tahun 2004, Scala berjalan di JVM (juga Scala.js untuk JavaScript dan Scala Native). Ini dirancang untuk mengatasi verbositas Java sambil mempertahankan interoperabilitas Java secara penuh.
-Scala adalah bahasa di balik Apache Spark (kerangka pemrosesan data besar), dan digunakan secara luas dalam rekayasa data, sistem terdistribusi, dan layanan backend. Perusahaan seperti Twitter (sekarang X), LinkedIn, Netflix, dan The Guardian menggunakan Scala.
+Scala adalah bahasa di balik Apache Spark (kerangka kerja pemrosesan data besar), dan digunakan secara luas dalam rekayasa data, sistem terdistribusi, dan layanan backend. Perusahaan seperti Twitter (sekarang X), LinkedIn, Netflix, dan The Guardian menggunakan Scala.
 ---
 
 ## Mengapa Scala Penting
@@ -855,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Pemrograman fungsional pada JVM | Kombinasi FP + JVM terbaik | Clojure |
 | Pengembangan aplikasi umum | Mungkin tapi rumit | Python, Buka, Java |
 | Ilmu data | Mungkin tapi bukan ekosistem | Piton, R |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Bagaimana inferensi tipe Scala mengurangi boilerplate dibandingkan dengan Java?
+**A:** Kompiler Scala menyimpulkan tipe untuk deklarasi`val`/ `var`, tipe pengembalian metode, dan fungsi anonim. Hal ini menghilangkan kebutuhan akan anotasi tipe eksplisit dalam banyak kasus:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+Kompiler juga menyimpulkan parameter tipe, tipe pengembalian metode ekspresi tunggal, dan tipe pencocokan pola. Hal ini membuat kode menjadi ringkas tanpa mengorbankan keamanan.
+### Q2: Kapan sebaiknya saya menggunakan`case class`vs`class`biasa?
+**A:** Gunakan`case class`untuk operator data yang tidak dapat diubah — mereka menyediakan`equals`,`hashCode`,`toString`,`copy`, dan dukungan pencocokan pola secara otomatis:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Aturan praktisnya: jika kelas Anda sebagian besar berisi data, gunakan`case class`. Jika memiliki keadaan yang bisa berubah atau perilaku kompleks, gunakan`class`biasa.
+### Q3: Bagaimana cara menangani kesalahan secara idiomatis di Scala?
+**A:** Scala lebih menyukai tipe pengembalian seperti`Option`,`Either`, dan`Try`daripada melemparkan pengecualian:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4: Apa perbedaan antara`trait`dan`abstract class`?
+**A:** Sifat mendukung pewarisan berganda dan dapat memiliki parameter tipe dan metode konkret. Kelas abstrak dapat memiliki parameter konstruktor tetapi hanya mendukung pewarisan tunggal:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5: Bagaimana cara menulis kode Scala yang berkinerja baik di JVM?
+**J:** Praktik utama:
+- Gunakan`case class`dan data yang tidak dapat diubah untuk menghindari sinkronisasi
+- Lebih memilih`Vector`,`Map`(tidak dapat diubah) untuk pembagian struktural
+- Gunakan anotasi`@tailrec`untuk memastikan pengoptimalan panggilan ekor
+- Hindari tinju yang berlebihan — gunakan primitif`Int`, `Double`
+- Gunakan`lazy val`untuk perhitungan yang mahal
+- Lebih suka`Stream`/`LazyList`untuk urutan besar
+- Profil dengan JMH — Abstraksi Scala harus dikompilasi menjadi bytecode yang efisien
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menerapkan Evaluator Ekspresi Type-Safe
+**Langkah 1: Pahami Masalahnya**
+Kita perlu mengevaluasi ekspresi matematika dengan variabel, penjumlahan pendukung, perkalian, dan pencarian variabel.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan tipe data aljabar (sifat tersegel + kelas kasus) untuk memodelkan pohon ekspresi, lalu pencocokan pola untuk mengevaluasi.
+**Langkah 3: Terapkan**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**Langkah 4: Verifikasi dan Perluas**
+Tambahkan kasus`Div`,`Pow`,`Neg`. Sifat tersegel memastikan kompiler memperingatkan tentang kecocokan yang tidak lengkap.
+### Masalah 2: Membangun DSL Sederhana untuk Pembuatan HTML
+**Langkah 1: Pahami Masalahnya**
+Buat DSL tipe aman yang menghasilkan string HTML menggunakan sintaks Scala.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan kelas kasus untuk elemen HTML dan konversi implisit untuk sintaks alami.
+**Langkah 3: Terapkan**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**Langkah 4: Verifikasi**
+DSL aman untuk mengetik — Anda tidak dapat meneruskan konten non-HTML secara tidak sengaja. Pencocokan pola pada`HtmlNode`memastikan rendering yang menyeluruh.
+### Masalah 3: Jumlah Kata Bersamaan dengan Aliran Akka
+**Langkah 1: Pahami Masalahnya**
+Hitung frekuensi kata di beberapa file besar secara bersamaan.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan koleksi paralel Scala atau Aliran Akka untuk pemrosesan bersamaan, lalu gabungkan hasilnya.
+**Langkah 3: Terapkan**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**Langkah 4: Optimalkan**
+Untuk kumpulan data yang sangat besar, gunakan Akka Streams dengan tekanan balik:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## Ringkasan

@@ -975,7 +975,7 @@ flutter build apk --release --dart-define=ENV=staging
 
 ---
 
-## เมื่อใดควรใช้โผ
+## เมื่อใดจึงควรใช้โผ
 | สถานการณ์ | ทำไมต้อง Dart (Flutter) | ทางเลือกที่ดีกว่า |
 |----------|-------------------|-------------------|
 | แอพมือถือข้ามแพลตฟอร์ม | กระพือเป็นเลิศ | โต้ตอบ Native, Native Swift/Kotlin |
@@ -985,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | การพัฒนาแบ็กเอนด์ | ไม่ใช่กรณีการใช้งานหลัก | ไป, Node.js, Python |
 | วิทยาศาสตร์ข้อมูล / ML | ไม่เหมาะ | หลาม, อาร์ |
 | การเขียนโปรแกรมระบบ | ไม่เหมาะ | C, C++, สนิม |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### คำถามที่ 1: ความปลอดภัยแบบ null ของ Dart ทำงานอย่างไร
+**A:** Dart 2.12+ มีความปลอดภัยแบบ null ตัวแปรไม่เป็นค่าว่างตามค่าเริ่มต้น ใช้`?`เพื่ออนุญาตให้เป็นโมฆะ:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Q2: อะไรคือความแตกต่างระหว่าง`Future`และ`Stream`?
+**A:**`Future`แสดงถึงผลลัพธ์อะซิงก์เดียว `Stream`แสดงถึงลำดับของเหตุการณ์อะซิงก์:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Q3: ฉันจะจัดการสถานะในแอป Flutter ได้อย่างไร
+**ตอบ:** มีหลายวิธีขึ้นอยู่กับความซับซ้อน:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Q4: วิธีการขยายทำงานใน Dart อย่างไร
+**ตอบ:** ส่วนขยายเพิ่มฟังก์ชันการทำงานให้กับประเภทที่มีอยู่โดยไม่มีการสืบทอด:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Q5: ฉันจะเขียนโค้ด Dart/Flutter ที่มีประสิทธิภาพได้อย่างไร
+**ก:** แนวทางปฏิบัติหลัก:
+- ใช้ตัวสร้าง`const`ทุกที่ที่เป็นไปได้
+- หลีกเลี่ยงการสร้างวิดเจ็ตใหม่ — ใช้`const`,`final`และ`shouldRebuild`
+- ใช้`ListView.builder`แทน`ListView`สำหรับรายการขนาดใหญ่
+- โปรไฟล์ด้วย Flutter DevTools
+- ใช้`compute()`สำหรับการดำเนินการที่มีราคาแพงบนการแยกเธรด
+- ลดการเรียก`setState`ให้เหลือน้อยที่สุด — ให้เจาะจงเกี่ยวกับสิ่งที่จำเป็นต้องสร้างใหม่
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การสร้างไคลเอนต์ API แบบปลอดภัย
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+สร้างไคลเอ็นต์ API ที่ดึงข้อมูลและส่งคืนออบเจ็กต์ที่พิมพ์อย่างถูกต้อง
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้คลาส Dart กับ`fromJson`/`toJson`, async/await และคลาสที่ปิดผนึกเพื่อดูผลลัพธ์
+**ขั้นตอนที่ 3: นำไปใช้**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ทดสอบกับไคลเอ็นต์ HTTP จำลอง ตรวจสอบการจัดการข้อผิดพลาดสำหรับความล้มเหลวของเครือข่ายและการตอบกลับที่ไม่ถูกต้อง
+### ปัญหาที่ 2: การใช้การค้นหาเชิงโต้ตอบด้วย Debounce
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+สร้างช่องค้นหาที่สอบถาม API แต่หักล้างอินพุตเพื่อหลีกเลี่ยงคำขอที่มากเกินไป
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้ Dart Streams กับ`debounceTime`และ `distinct`
+**ขั้นตอนที่ 3: นำไปใช้**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**ขั้นตอนที่ 4: ทดสอบ**
+ตรวจสอบว่าการพิมพ์อย่างรวดเร็วทำให้เกิดการเรียก API เพียงครั้งเดียวหลังจากช่วง debounce
 ---
 
 ## สรุป

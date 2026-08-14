@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Kotlin
 Kotlin là ngôn ngữ lập trình được biên dịch, gõ tĩnh do JetBrains phát triển và phát hành lần đầu tiên vào năm 2011 (1.0 vào năm 2016). Nó chạy trên Máy ảo Java (JVM) và hoàn toàn có thể tương tác với Java — nghĩa là bạn có thể sử dụng bất kỳ thư viện Java nào từ Kotlin và gọi mã Kotlin từ Java mà không cần bất kỳ trình bao bọc nào. Vào năm 2017, Google đã công bố Kotlin là ngôn ngữ ưa thích để phát triển Android và kể từ đó nó đã trở thành ngôn ngữ Android thống trị.
 Kotlin được thiết kế để khắc phục các điểm yếu của Java: chi tiết, ngoại lệ con trỏ null và thiếu các tính năng hiện đại. Kết quả là một ngôn ngữ có cảm giác giống như Java được hiện đại hóa — ngắn gọn, an toàn và biểu cảm — trong khi vẫn duy trì khả năng tương thích hoàn toàn với hệ sinh thái Java khổng lồ.
@@ -45,7 +46,7 @@ Kotlin được thiết kế để khắc phục các điểm yếu của Java: 
 
 ## Tại sao Kotlin lại quan trọng
 - **Tiêu chuẩn Android**: Ngôn ngữ ưa thích của Google dành cho Android. Hầu hết mã Android mới là Kotlin.
-- **Tương thích 100% với Java**: Sử dụng mọi thư viện, khung và công cụ Java. Di chuyển dần dần.
+- **Tương thích 100% với Java**: Sử dụng mọi thư viện, khung và công cụ Java. Di cư dần dần.
 - **Không an toàn**: Hệ thống loại ngăn chặn các ngoại lệ con trỏ null tại thời điểm biên dịch.
 - **Súc tích**: Ít bản soạn sẵn hơn đáng kể so với Java — các lớp dữ liệu, hàm mở rộng, các biểu diễn thông minh.
 - **Coroutines**: Các luồng nhẹ để lập trình không đồng bộ — đơn giản hơn CompleteableFuture hoặc các lệnh gọi lại của Java.
@@ -1173,6 +1174,409 @@ kotlin {
 | Lập trình hệ thống không phải JVM | Không phải mục tiêu chính | Rust, Đi, C |
 | Giao diện web | Kotlin/JS tồn tại nhưng bị giới hạn | TypeScript, JavaScript |
 | Khoa học dữ liệu / ML | Không phải hệ sinh thái | Python, R |
+---
+
+## Hỏi đáp tổng hợp
+### Câu hỏi 1: Tính năng an toàn null của Kotlin thực sự hoạt động như thế nào?
+**A:** Kotlin phân biệt giữa loại có thể rỗng (`String?`) và loại không thể rỗng (`String`) tại thời điểm biên dịch. Trình biên dịch ngăn bạn gọi các phương thức trên các loại nullable mà không cần kiểm tra null. Lệnh gọi an toàn (`?.`), toán tử Elvis (`?:`) và xác nhận không null (`!!`) cung cấp các chiến lược khác nhau. Các diễn viên thông minh tự động thu hẹp các loại sau khi kiểm tra null.
+```kotlin
+var name: String? = null
+
+// Safe call — returns null if name is null
+val length: Int? = name?.length
+
+// Elvis operator — provide default
+val display: String = name ?: "Anonymous"
+
+// Smart cast — compiler narrows type after check
+fun process(user: String?) {
+    if (user != null) {
+        println(user.length)  // Smart cast to String (non-null)
+    }
+}
+
+// let with safe call
+name?.let {
+    println("Name is $it")  // Only runs if name is not null
+}
+
+// Non-null assertion — crashes if null (avoid in production)
+val forced: String = name!!  // Throws NullPointerException if null
+```
+
+### Câu 2: Coroutine là gì và chúng khác với thread như thế nào?
+**A:** Coroutine là các tác vụ nhẹ, có tính hợp tác chạy trên các luồng. Họ có thể tạm dừng thực thi (mà không chặn luồng) và tiếp tục lại sau. Hàng triệu coroutine có thể chạy trên một vài luồng.  Các hàm`suspend`chỉ có thể được gọi từ coroutine hoặc các hàm tạm ngưng khác. Vòng đời kiểm soát phạm vi coroutine — khi một phạm vi bị hủy, tất cả các coroutine của phạm vi đó cũng bị hủy.
+```kotlin
+import kotlinx.coroutines.*
+
+// Basic coroutine
+CoroutineScope(Dispatchers.Main).launch {
+    val user = withContext(Dispatchers.IO) {
+        fetchUserFromNetwork()  // Suspends, doesn't block
+    }
+    textView.text = user.name   // Back on Main thread
+}
+
+// Concurrent execution
+suspend fun loadDashboard(): Dashboard {
+    coroutineScope {
+        val userDeferred = async { fetchUser() }
+        val postsDeferred = async { fetchPosts() }
+        val user = userDeferred.await()
+        val posts = postsDeferred.await()
+        Dashboard(user, posts)
+    }
+}
+
+// Flow — cold async stream
+fun observePrices(): Flow<Double> = flow {
+    while (true) {
+        emit(fetchCurrentPrice())
+        delay(1000)
+    }
+}
+
+// Collect flow
+lifecycleScope.launch {
+    observePrices()
+        .filter { it > 100.0 }
+        .collect { price -> updateUI(price) }
+}
+```
+
+### Câu 3: Lớp dữ liệu, lớp niêm phong và lớp giá trị là gì?
+**A:** Các lớp dữ liệu tự động tạo các hàm`equals`,`hashCode`,`toString`,`copy`và`componentN`— lý tưởng cho chủ sở hữu dữ liệu. Các lớp kín hạn chế tính kế thừa — tất cả các lớp con phải nằm trong cùng một tệp — cho phép biểu thức`when`đầy đủ. Các lớp giá trị bao bọc một giá trị duy nhất với chi phí bằng 0 khi chạy (lớp nội tuyến).
+```kotlin
+// Data class — auto-generates equals/hashCode/toString/copy
+data class User(val name: String, val email: String, val age: Int)
+
+val alice = User("Alice", "alice@example.com", 30)
+val bob = alice.copy(name = "Bob")
+val (name, email, age) = alice  // Destructuring
+
+// Sealed class — exhaustive when
+sealed class Result<out T> {
+    data class Success<T>(val data: T) : Result<T>()
+    data class Error(val exception: Throwable) : Result<Nothing>()
+    data object Loading : Result<Nothing>()
+}
+
+fun handle(result: Result<User>) = when (result) {
+    is Result.Success -> showUser(result.data)
+    is Result.Error -> showError(result.exception)
+    is Result.Loading -> showSpinner()
+    // No 'else' needed — compiler knows all cases are covered
+}
+
+// Value class — zero-overhead wrapper
+@JvmInline
+value class UserId(val value: String)
+fun getUser(id: UserId) { /* ... */ }
+// At runtime, UserId is just a String — no object allocation
+```
+
+### Q4: Các chức năng mở rộng hoạt động như thế nào và những hạn chế của chúng là gì?
+**A:** Hàm mở rộng thêm phương thức vào các loại hiện có mà không cần kế thừa hoặc sửa đổi. Chúng được giải quyết tĩnh (dựa trên loại được khai báo, không phải loại thời gian chạy). Họ không thể truy cập các thành viên tư nhân. Thuộc tính mở rộng hoạt động tương tự. Chúng được sử dụng rộng rãi trong thư viện tiêu chuẩn của Kotlin và hoạt động phát triển Android.
+```kotlin
+// Extension function
+fun String.isEmail(): Boolean = contains("@") && contains(".")
+fun Int.toOrdinal(): String = "${this}${when (this % 10) {
+    1 -> "st"; 2 -> "nd"; 3 -> "rd"; else -> "th"
+}}"
+
+// Extension with receiver
+fun <T> List<T>.secondOrNull(): T? = if (size >= 2) this[1] else null
+
+// Extension property
+val String.wordCount: Int get() = split("\\s+".toRegex()).size
+
+// Scoped extensions
+class Database {
+    fun query(sql: String): List<Row> = TODO()
+}
+
+fun Database.users() = query("SELECT * FROM users")
+
+// Usage
+"test@example.com".isEmail()  // true
+42.toOrdinal()                // "42nd"
+"hello world foo".wordCount   // 3
+```
+
+### Câu 5: Kotlin Multiplatform là gì và khi nào tôi nên sử dụng nó?
+**Đáp:** Kotlin Multiplatform (KMP) cho phép bạn chia sẻ mã giữa các nền tảng (Android, iOS, web, máy tính để bàn, máy chủ) trong khi vẫn giữ giao diện người dùng dành riêng cho nền tảng. Các lớp logic nghiệp vụ, mạng và dữ liệu có thể được chia sẻ; Giao diện người dùng vẫn nguyên bản. Hãy sử dụng nó khi bạn có một nhóm hiểu biết về Kotlin và muốn tối đa hóa việc chia sẻ mã mà không cần sử dụng đa nền tảng (như Flutter).
+```kotlin
+// commonMain — shared code
+expect class Platform() {
+    val name: String
+}
+
+// androidMain
+actual class Platform {
+    actual val name = "Android ${Build.VERSION.SDK_INT}"
+}
+
+// iosMain
+actual class Platform {
+    actual val name = UIDevice.currentDevice.systemName()
+}
+
+// Shared networking
+interface ApiClient {
+    suspend fun getUsers(): List<User>
+}
+
+class ApiClientImpl(private val httpClient: HttpClient) : ApiClient {
+    override suspend fun getUsers(): List<User> {
+        return httpClient.get("/api/users").body()
+    }
+}
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng DSL Type-Safe Builder
+**Báo cáo vấn đề:** Tạo Kotlin DSL để xây dựng tài liệu HTML một cách an toàn trong thời gian biên dịch. DSL phải thực thi cấu trúc HTML hợp lệ (ví dụ: chỉ`<head>`bên trong`<html>`,`<li>`chỉ bên trong`<ul>`hoặc`<ol>`).
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) các hàm xây dựng với`@DslMarker`để ngăn chặn rò rỉ phạm vi, (2) cú pháp DSL dựa trên máy thu, (3) thực thi việc lồng hợp lệ trong thời gian biên dịch. Trình tạo an toàn loại và chú thích`@DslMarker`của Kotlin được thiết kế cho việc này.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`@DslMarker`để tạo chú thích kiểm soát phạm vi.
+- Mỗi phần tử HTML là một lớp có các phương thức xây dựng cho các phần tử con hợp lệ của nó.
+-`@HtmlTagMarker`ngăn chặn việc truy cập các phương thức phạm vi cha mẹ bên trong phạm vi con.
+- Sử dụng toán tử`invoke`để có cú pháp rõ ràng.
+**Bước 3 — Triển khai giải pháp:**
+```kotlin
+@DslMarker
+annotation class HtmlTagMarker
+
+@HtmlTagMarker
+class HTML {
+    private val children = mutableListOf<String>()
+
+    fun head(init: HEAD.() -> Unit) {
+        val head = HEAD().apply(init)
+        children.add(head.render())
+    }
+
+    fun body(init: BODY.() -> Unit) {
+        val body = BODY().apply(init)
+        children.add(body.render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<html>")
+        children.forEach { appendLine("  $it") }
+        appendLine("</html>")
+    }
+}
+
+@HtmlTagMarker
+class HEAD {
+    private val children = mutableListOf<String>()
+
+    fun title(text: String) { children.add("<title>$text</title>") }
+    fun meta(name: String, content: String) {
+        children.add("<meta name=\"$name\" content=\"$content\">")
+    }
+
+    fun render(): String = buildString {
+        appendLine("<head>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</head>")
+    }
+}
+
+@HtmlTagMarker
+class BODY {
+    private val children = mutableListOf<String>()
+
+    fun h1(text: String) { children.add("<h1>$text</h1>") }
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun div(init: DIV.() -> Unit) {
+        children.add(DIV().apply(init).render())
+    }
+    fun ul(init: UL.() -> Unit) {
+        children.add(UL().apply(init).render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<body>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</body>")
+    }
+}
+
+@HtmlTagMarker
+class DIV {
+    private val children = mutableListOf<String>()
+    var cssClass: String = ""
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun render(): String {
+        val cls = if (cssClass.isNotEmpty()) " class=\"$cssClass\"" else ""
+        return "<div$cls>${children.joinToString("")}</div>"
+    }
+}
+
+@HtmlTagMarker
+class UL {
+    private val items = mutableListOf<String>()
+    fun li(text: String) { items.add("<li>$text</li>") }
+    fun render(): String = "<ul>${items.joinToString("")}</ul>"
+}
+
+fun html(init: HTML.() -> Unit): String = HTML().apply(init).render()
+
+// Usage — compile-time safe
+val page = html {
+    head {
+        title("My Page")
+        meta("viewport", "width=device-width")
+    }
+    body {
+        h1("Welcome")
+        p("This is a type-safe HTML builder.")
+        div {
+            cssClass = "container"
+            p("Inside a div")
+        }
+        ul {
+            li("Item 1")
+            li("Item 2")
+            li("Item 3")
+        }
+    }
+}
+// title() is NOT accessible inside body {} — prevented by @DslMarker
+// li() is NOT accessible inside body {} — only inside ul {}
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- An toàn về loại:`@DslMarker`ngăn chặn rò rỉ phạm vi -`title()`không thể truy cập được bên trong`body {}`.
+- Trình biên dịch thực thi việc lồng hợp lệ tại thời điểm biên dịch — không cần kiểm tra thời gian chạy.
+- Khả năng mở rộng: thêm các phần tử mới bằng cách tạo các lớp với các phương thức con thích hợp.
+- Sản xuất: sử dụng`kotlinx.html`cho DSL HTML toàn diện, được thử nghiệm tốt.
+### Vấn đề 2: Triển khai State Machine với Coroutines
+**Báo cáo vấn đề:** Xây dựng một máy trạng thái dựa trên coroutine cho nhân vật trong trò chơi để xử lý các sự kiện đầu vào, chuyển đổi giữa các trạng thái và hỗ trợ lệnh gọi lại hoạt ảnh.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) trạng thái có hành động vào/ra, (2) chuyển đổi theo hướng sự kiện, (3) vòng lặp xử lý dựa trên coroutine, (4) lệnh gọi lại hoạt ảnh khi chuyển đổi trạng thái. Máy trạng thái chạy như một sự kiện tiêu thụ coroutine kéo dài từ một kênh.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng lớp seal cho các trạng thái và sự kiện.
+- Sử dụng`Channel`để chuyển sự kiện.
+- Vòng lặp máy trạng thái tiêu thụ các sự kiện với`for (event in channel)`.
+- Quá trình chuyển đổi kích hoạt lệnh gọi lại thoát/nhập.
+**Bước 3 — Triển khai giải pháp:**
+```kotlin
+sealed class GameState {
+    data object Idle : GameState()
+    data object Walking : GameState()
+    data object Running : GameState()
+    data object Attacking : GameState()
+    data class Dead(val cause: String) : GameState()
+}
+
+sealed class GameEvent {
+    data object Move : GameEvent()
+    data object Run : GameEvent()
+    data object Attack : GameEvent()
+    data object Stop : GameEvent()
+    data class TakeDamage(val amount: Int) : GameEvent()
+}
+
+class CharacterStateMachine(
+    private val scope: CoroutineScope,
+    private val onStateChange: suspend (GameState) -> Unit
+) {
+    private var currentState: GameState = GameState.Idle
+    private val eventChannel = Channel<GameEvent>(Channel.UNLIMITED)
+    var health: Int = 100; private set
+
+    init {
+        scope.launch {
+            onStateChange(currentState)
+            for (event in eventChannel) {
+                processEvent(event)
+            }
+        }
+    }
+
+    suspend fun send(event: GameEvent) {
+        eventChannel.send(event)
+    }
+
+    private suspend fun processEvent(event: GameEvent) {
+        val newState = when (currentState) {
+            is GameState.Dead -> return  // No transitions from dead
+
+            GameState.Idle -> when (event) {
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Walking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Running -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Attacking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+        }
+
+        if (newState != currentState) {
+            currentState = newState
+            onStateChange(newState)
+        }
+    }
+
+    private suspend fun handleDamage(event: GameEvent.TakeDamage): GameState {
+        health -= event.amount
+        return if (health <= 0) GameState.Dead("Defeated") else currentState
+    }
+}
+
+// Usage
+val machine = CharacterStateMachine(
+    scope = CoroutineScope(Dispatchers.Default)
+) { state ->
+    println("State changed to: $state")
+    when (state) {
+        GameState.Idle -> playAnimation("idle")
+        GameState.Walking -> playAnimation("walk")
+        GameState.Running -> playAnimation("run")
+        GameState.Attacking -> playAnimation("attack")
+        is GameState.Dead -> playAnimation("death")
+    }
+}
+
+machine.send(GameEvent.Move)      // Walking
+machine.send(GameEvent.Run)       // Running
+machine.send(GameEvent.Attack)    // Attacking
+machine.send(GameEvent.TakeDamage(120))  // Dead
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Loại an toàn: các lớp kín đảm bảo mọi trạng thái và sự kiện đều được xử lý. Trình biên dịch bắt các chuyển tiếp bị thiếu.
+- Coroutine-based: các sự kiện được xử lý tuần tự mà không bị chặn. Kênh cung cấp áp suất ngược.
+- Vòng đời: việc hủy phạm vi sẽ dừng máy trạng thái một cách sạch sẽ.
+- Sản xuất: đối với các máy trạng thái phức tạp, sử dụng`tinder-statemachine`hoặc mô hình hóa các trạng thái bằng thư viện máy trạng thái hình thức.
 ---
 
 ## Bản tóm tắt

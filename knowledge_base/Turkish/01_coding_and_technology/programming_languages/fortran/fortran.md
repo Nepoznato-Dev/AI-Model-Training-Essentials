@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fortran
 Fortran (Formül Çevirisi), hala yaygın olarak kullanılan en eski üst düzey programlama dilidir ve ilk olarak 1957'de IBM tarafından bilimsel ve mühendislik hesaplamaları için geliştirilmiştir. Yaşına rağmen modern Fortran (Fortran 2008/2018/2023), sayısal hava tahmini, hesaplamalı akışkanlar dinamiği, fizik simülasyonları, finansal modelleme ve yüksek performanslı bilgi işlem (HPC) alanlarında yaygın olarak kullanılan yetenekli, yüksek performanslı bir dildir. Dünyanın en hızlı süper bilgisayarlarının çoğu Fortran kodunu çalıştırıyor.
 Dil, ilk günlerinden bu yana önemli ölçüde gelişti. Modern Fortran'ın modülleri, türetilmiş türleri, genel prosedürleri, ortak dizileri (paralel programlama) ve C ile birlikte çalışabilirliği vardır. Performansın çok önemli olduğu birçok bilimsel bilgi işlem uygulamasının tercih ettiği dil olmaya devam etmektedir.
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Genel uygulama geliştirme | Uygun değil | Python, Java, Git |
 | Web geliştirme | Uygun değil | JavaScript, Python |
 | Veri bilimi (etkileşimli) | İş akışı değil | Python, R |
+---
+
+## Sentetik Soru-Cevap
+### S1: Fortran 90 ile modern Fortran (2008+) arasındaki fark nedir?
+**C:** Modern Fortran, onu daha etkileyici hale getiren birçok özellik ekledi:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### S2: Fortran dizilerinin C dizilerinden farkı nedir?
+**C:** Fortran dizileri yerleşik işlemlere sahip birinci sınıf nesnelerdir:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### S3: Fortran'da maksimum performansa nasıl ulaşırım?
+**C:** Temel uygulamalar:
+- Tüm yapay argümanlar için açık`intent`kullanın
+- `implicit none`'yi her yerde kullanın
+- Dizi işlemlerini döngüler yerine tercih edin
+- Bitişik bellek erişim modellerini kullanın
+- Derleyici optimizasyon bayraklarını kullanın:`-O3 -march=native -ffast-math`
+-`gprof`veya derleyiciye özel araçlar içeren profil
+- Derleyicinin optimize edebileceği işlevler için`pure`ve`elemental`kullanın
+### S4: Fortran'ı C ile nasıl arayüzleyebilirim?
+**C:**`iso_c_binding`modülünü kullanın:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### S5: Fortran projeleri için hangi yapı sistemini kullanmalıyım?
+**C:** CMake mükemmel Fortran desteğine sahiptir. FPM (Fortran Paket Yöneticisi) modern yerel seçenektir:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Problem 1: Sonlu Farklara Sahip Bir PDE'yi Çözmek
+**1. Adım: Sorunu Anlayın**
+1 boyutlu ısı denklemini çözün: du/dt = alpha * d²u/dx²
+**2. Adım: Yaklaşımı Belirleyin**
+Sonlu farkları kullanarak uzay ve zamanı ayrıklaştırın. Açık bir şema kullanın.
+**3. Adım: Uygulama**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**4. Adım: Doğrulayın**
+Korumayı, ızgara iyileştirmeyle yakınsamayı kontrol edin ve analitik çözümle karşılaştırın.
+### Problem 2: Matris Köşegenleştirme
+**1. Adım: Sorunu Anlayın**
+Simetrik bir matrisin özdeğerlerini ve özvektörlerini bulun.
+**2. Adım: Yaklaşımı Belirleyin**
+Fortran'ın arayüzü aracılığıyla LAPACK'in`dsyev`rutinini kullanın.
+**3. Adım: Uygulama**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**4. Adım: Doğrulayın**
+Her özçift için A*v = lambda*v olup olmadığını kontrol edin.
 ---
 
 ## Özet

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Pas
 Rust, ilk olarak 2015 yılında piyasaya sürülen ve orijinal olarak Mozilla'da Graydon Hoare tarafından geliştirilen, statik olarak yazılan, derlenmiş bir programlama dilidir. Rust'ın belirleyici vaadi **çöp toplama olmadan bellek güvenliğidir**. Bunu, C veya C++ kadar hızlı kod üretirken tüm hata kategorilerini (boş işaretçi referansları, veri yarışları, arabellek taşmaları, serbest kullanım sonrası kullanım) ortadan kaldıran, derleme zamanında uygulanan bir dizi kural olan sahiplik sistemi aracılığıyla başarır.
 Rust, Stack Overflow Geliştirici Anketi'nde üst üste birkaç yıl boyunca "en sevilen" programlama dili seçildi. Sistem programlamada, WebAssembly'de, CLI araçlarında, bulut altyapısında ve güvenlik açısından kritik bağlamlarda C/C++'ın yerine giderek daha fazla kullanılmaktadır. Linux çekirdeği artık Rust kodunu kabul ediyor.
@@ -54,8 +55,8 @@ Rust, Stack Overflow Geliştirici Anketi'nde üst üste birkaç yıl boyunca "en
 | Sınırlama | Ayrıntılar | Tipik Geçici Çözüm |
 |-----------|------------|-----------|
 | **Dik öğrenme eğrisi** | Mülkiyet, ödünç alma ve ömürler diğer dillerdeki hiçbir şeye benzemez | "The Rust Book"a zaman ayırın; kavramlar pratikle tıklanır |
-| **Yavaş derleme** | Büyük projelerde derleme süreleri uzun olabilir | Hızlı tür kontrolü için`cargo check`kullanın; artımlı derleme yardımcı olur |
-| **Ayrıntılı hata işleme** | `Result<T, E>`ve`?`operatörü açık işlem gerektirir | Uygulamalar için `anyhow`, kütüphaneler için`thiserror`kullanın |
+| **Yavaş derleme** | Büyük projelerde derleme süreleri uzun olabilir | Hızlı tip kontrolü için `cargo check`'yi kullanın; artımlı derleme yardımcı olur |
+| **Ayrıntılı hata işleme** | `Result<T, E>`ve`?`operatörü açık işlem gerektirir | Uygulamalar için `anyhow`'yi, kütüphaneler için `thiserror`'yi kullanın |
 | **Daha küçük iş piyasası** | Java, Python veya JavaScript'ten daha az Rust işi var (ancak hızla büyüyor) | Rust rollerinin çoğu sistem programlama, kripto veya altyapı alanındadır |
 | **Olgunlaşmamış ekosistem** | Bazı alan adları için Python/Java/JS'den daha az kitaplık | Ekosistem hızla büyüyor; birçok kasa mükemmel kalitededir |
 ---
@@ -399,7 +400,7 @@ fn read_config(path: &str) -> Result<String, AppError> {
 
 ## Eşzamanlılık ve Paralellik
 ### Konu Modeli ve Senkronizasyon
-Rust'un sahiplik sistemi derleme zamanında veri yarışlarını önler.`Send`ve`Sync`özellikleri iş parçacığı güvenliğini zorunlu kılar.
+Rust'un sahiplik sistemi derleme zamanında veri yarışlarını önler.`Send`ve`Sync`özellikleri iş parçacığı güvenliğini güçlendirir.
 ```rust
 use std::thread;
 use std::sync::{Arc, Mutex, RwLock};
@@ -975,6 +976,293 @@ wasm-pack build --target web
 | Web arka uçları | Mümkün ama ekosistem daha genç | Git, Node.js, Python |
 | Veri bilimi / ML | Bunun için ekosistem değil | Python, R |
 | Hızlı komut dosyaları / prototipler | Yazmak için çok ayrıntılı ve yavaş | Python, JavaScript |
+---
+
+## Sentetik Soru-Cevap
+### S1: Sahiplik sistemi nedir ve Rust'ta neden bu sistem var?
+**C:** Rust'taki her değerin tam olarak bir sahibi vardır. Sahibi kapsam dışına çıktığında değer düşürülür (bellek serbest bırakılır). Bu, bellek güvenliğini garanti ederken çöp toplayıcı ihtiyacını ortadan kaldırır. Atama, işlev parametreleri ve dönüş değerlerinin tümü sahipliği aktarır ("taşıma"). Aktarmadan paylaşmak için referansları kullanın (ödünç almak için `&T`, değişken ödünç almak için `&mut T`). Derleyici şunları uygular: aynı anda aynı değere yönelik değişken bir referansa ve değişmez bir referansa sahip olamazsınız.
+```rust
+let s1 = String::from("hello");
+let s2 = s1;           // s1 is MOVED to s2 — s1 is no longer valid
+// println!("{}", s1); // Error: value borrowed after move
+
+let s3 = String::from("world");
+let len = calculate_length(&s3);  // Borrow — s3 stays valid
+fn calculate_length(s: &String) -> usize { s.len() }
+```
+
+### S2:`String`ve `&str`'yi ne zaman kullanmalıyım?
+**C:**`String`sahip olunan, yığına ayrılmış, büyütülebilir bir UTF-8 dizisidir.  `&str`, UTF-8 dize dilimine yönelik ödünç alınmış bir referanstır (bir `String`'ye, bir dize değişmez değerine veya her ikisinin bir kısmına işaret edebilir). Bir dizeye sahip olmanız, değiştirmeniz veya oluşturmanız gerektiğinde `String`'yi kullanın. İşlev parametreleri (daha esnek — her ikisini de kabul eder), salt okunur görünümler ve dize değişmezleri için`&str`kullanın. İşlev imzalarında `&str`'yi kabul edin; arayanın sahipliğe ihtiyacı olduğunda `String`'yi döndürün.
+```rust
+// Accept &str — works with both String and &str
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)  // Returns owned String
+}
+
+let owned = String::from("Alice");
+greet(&owned);         // &String coerces to &str
+greet("Bob");          // &str literal works directly
+```
+
+### S3: Rust, hataları istisnasız nasıl ele alıyor?
+**C:** Rust, kurtarılabilir hatalar için`Result<T, E>`numaralandırmasını, kurtarılamayan hatalar için ise`panic!`numaralandırmasını kullanır. Başarısız olabilecek işlevler`Result`değerini döndürür.`?`operatörü hataları tam olarak yayar. Bu yaklaşım, hata işlemeyi açık hale getirir; bir hatayı yanlışlıkla göz ardı edemezsiniz. Uygulama hatası işleme için `anyhow`'yi (uygun bağlam) ve kitaplık hata türleri için (makroları türetme) `thiserror`'yi kullanın.
+```rust
+use std::fs;
+use std::num;
+
+fn read_and_parse(path: &str) -> Result<i64, Box<dyn std::error::Error>> {
+    let content = fs::read_to_string(path)?;   // Propagates io::Error
+    let number: i64 = content.trim().parse()?;  // Propagates ParseIntError
+    Ok(number)
+}
+
+// With context (anyhow crate)
+fn load_config() -> anyhow::Result<Config> {
+    let content = fs::read_to_string("config.toml")
+        .context("Failed to read config file")?;
+    let config: Config = toml::from_str(&content)
+        .context("Failed to parse config TOML")?;
+    Ok(config)
+}
+```
+
+### S4: Yaşam süreleri nedir ve bunlara ne zaman açıklama eklemem gerekir?
+**C:** Yaşam süreleri, referansların ne kadar süreyle geçerli olduğunu izler. Derleyici çoğu durumda bunları "ömür boyu seçim kuralları" aracılığıyla çıkarır. Derleyici giriş ve çıkış yaşam süreleri arasındaki ilişkiyi belirleyemediğinde (genellikle bir işlev birden fazla referans alıp bir tane döndürdüğünde) açık açıklamalara ihtiyacınız vardır. Yaşam süreleri, sıfır çalışma zamanı maliyetiyle derleme zamanında referansların sarkmasını önler.
+```rust
+// The compiler needs to know: does the return value borrow from x or y?
+// Explicit lifetime 'a says: both inputs and output share the same lifetime
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
+
+// Struct holding a reference — must declare lifetime
+struct ConfigRef<'a> {
+    name: &'a str,
+    value: &'a str,
+}
+
+// 'static — lives for the entire program duration (string literals)
+let s: &'static str = "I live forever";
+```
+
+### S5: `Vec<T>`, diziler ve dilimler arasındaki fark nedir?
+**A:**`[T; N]`dizileri sabit boyutludur, yığına ayrılmıştır ve uzunlukları türün bir parçasıdır.  `Vec<T>`, büyütülebilir, yığın tahsisli bir koleksiyondur.`&[T]`dilimleri, bir dizinin veya Vec'in bitişik bir bölümünü ödünç alan kalın işaretçilerdir (işaretçi + uzunluk). Küçük, sabit boyutlu veriler için dizileri kullanın. Dinamik koleksiyonlar için Vec'i kullanın. Maksimum esneklik için fonksiyon parametrelerinde `&[T]`'yi kabul edin.
+```rust
+let arr = [1, 2, 3, 4, 5];            // [i32; 5] — fixed size, on stack
+let mut vec = vec![10, 20, 30];        // Vec<i32> — growable, on heap
+vec.push(40);
+
+// Slice — borrow of a contiguous sequence
+let slice: &[i32] = &vec[1..3];        // [20, 30]
+let full: &[i32] = &vec;               // Entire vec as slice
+
+// Functions should accept slices for flexibility
+fn sum(numbers: &[i32]) -> i32 {
+    numbers.iter().sum()
+}
+
+sum(&arr);       // Works — array coerces to slice
+sum(&vec);       // Works — Vec coerces to slice
+sum(&vec[1..3]); // Works — already a slice
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: İş parçacığı açısından güvenli bir anahtar/değer deposu oluşturun
+**Sorun Açıklaması:** Rust'ta, veri yarışları olmadan birden fazla iş parçacığından `get`,`set`ve`delete`işlemlerini destekleyen eşzamanlı bir anahtar/değer deposu uygulayın. Dahili değiştirilebilirliği kullanın ve uygulamanın deyimsel Rust olduğundan emin olun.
+**1. Adım — Sorunu Anlayın:**
+Birden fazla iş parçacığının paylaşılan bir HashMap'i okuması ve yazması gerekir. Rust'un sahiplik sistemi, derleme zamanında veri yarışlarını önler, ancak ortak sahiplik için `Arc`'ye sarılmış dahili değiştirilebilirliğe (`RwLock`veya`Mutex`) ihtiyacımız var. `RwLock`birden fazla eşzamanlı okuyucuya VEYA tek bir özel yazıcıya izin verir; okuma ağırlıklı iş yükleri için daha iyidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Paylaşılan, iş parçacığı açısından güvenli erişim için`Arc<RwLock<HashMap<K, V>>>`kullanın.
+-`get`için`RwLock::read()`(birden fazla okuyucuya izin verilir).
+-`set`ve`delete`için`RwLock::write()`(özel erişim).
+- Temiz bir API ile bir yapıya sarın.
+- Her iş parçacığı için `Arc`'yi kopyalayın.
+**3. Adım — Çözümü Uygulayın:**
+```rust
+use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
+use std::hash::Hash;
+
+struct KeyValueStore<K, V> {
+    data: Arc<RwLock<HashMap<K, V>>>,
+}
+
+impl<K: Hash + Eq + Send + Sync, V: Clone + Send + Sync> KeyValueStore<K, V> {
+    fn new() -> Self {
+        Self {
+            data: Arc::new(RwLock::new(HashMap::new())),
+        }
+    }
+
+    fn get(&self, key: &K) -> Option<V> {
+        let data = self.data.read().unwrap();
+        data.get(key).cloned()
+    }
+
+    fn set(&self, key: K, value: V) {
+        let mut data = self.data.write().unwrap();
+        data.insert(key, value);
+    }
+
+    fn delete(&self, key: &K) -> bool {
+        let mut data = self.data.write().unwrap();
+        data.remove(key).is_some()
+    }
+
+    fn clone_handle(&self) -> Self {
+        Self {
+            data: Arc::clone(&self.data),
+        }
+    }
+}
+
+// Usage — concurrent access from multiple threads
+use std::thread;
+
+fn main() {
+    let store = KeyValueStore::new();
+
+    let handles: Vec<_> = (0..4).map(|i| {
+        let s = store.clone_handle();
+        thread::spawn(move || {
+            for j in 0..100 {
+                s.set(format!("key-{}-{}", i, j), i * 100 + j);
+            }
+        })
+    }).collect();
+
+    for h in handles { h.join().unwrap(); }
+
+    println!("Total entries: {}", store.data.read().unwrap().len());  // 400
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- İş parçacığı güvenliği: Rust derleyicisi veri yarışı olmayacağını garanti eder —`RwLock`karşılıklı hariç tutmayı uygular ve`Arc`güvenli paylaşımlı sahiplik sağlar. Bu derlenirse doğrudur.
+- Performans: `RwLock`, okuma ağırlıklı iş yükleri için `Mutex`'den daha iyidir. Yazma ağırlıklı iş yükleri için`Mutex`kullanın (daha basit, okuyucu-yazıcı yükü yok).
+- Üretim yükseltmesi:`parking_lot::RwLock`(daha hızlı, zehirlenme yok, daha küçük bellek alanı) veya`dashmap::DashMap`(kilitsiz eşzamanlı HashMap) kullanın.
+### Sorun 2: Sıfır Kopyalı Ayrıştırıcı Uygulama
+**Sorun Açıklaması:** Yalnızca girişten ödünç alınan dize dilimlerini kullanarak, yeni Dizeler ayırmadan`"name=Alice;age=30;role=admin"`gibi bir yapılandırma dizesinden anahtar/değer çiftlerini ayıklayan bir ayrıştırıcı yazın.
+**1. Adım — Sorunu Anlayın:**
+`;` ile ayrılmış`key=value`çiftlerini ayrıştırmamız gerekiyor. Temel kısıtlama "sıfır kopyadır" - döndürülen veriler yeni`String`tahsis etmek değil,`&str`girişinden ödünç alınmalıdır. Bu, girişe bağlı yaşam süreleri ile `Vec<(&str, &str)>`'nin döndürülmesi anlamına gelir.
+**2. Adım — Yaklaşımı Belirleyin:**
+-`&str`yöntemlerini kullanın (`split`,`find`, dilimleme) — tümü girişten ödünç alınan`&str`dilimlerini döndürür.
+- Her yerde`.to_string()`veya `String::from()`'den kaçının.
+- Ömür boyu açıklama: çıktı girdiden ödünç alınır —`fn parse<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>`.
+**3. Adım — Çözümü Uygulayın:**
+```rust
+fn parse_config(input: &str) -> Vec<(&str, &str)> {
+    input
+        .split(';')
+        .filter_map(|pair| {
+            let pair = pair.trim();
+            if pair.is_empty() { return None; }
+            pair.split_once('=')
+                .map(|(k, v)| (k.trim(), v.trim()))
+        })
+        .collect()
+}
+
+// The compiler infers: fn parse_config<'a>(input: &'a str) -> Vec<(&'a str, &'a str)>
+
+fn main() {
+    let config = "name = Alice; age = 30; role = admin";
+    let pairs = parse_config(config);
+
+    for (key, value) in &pairs {
+        println!("{} = {}", key, value);
+    }
+
+    // Zero allocations — all slices point into 'config'
+    assert_eq!(pairs[0], ("name", "Alice"));
+    assert_eq!(pairs[1], ("age", "30"));
+    assert_eq!(pairs[2], ("role", "admin"));
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Sıfır kopya:`split`,`split_once`ve `trim`'nin tümü`&str`dilimlerini döndürür — yığın tahsisi yoktur.
+- Yaşam boyu seçim kuralları, çıktı yaşam sürelerini girdiye doğru şekilde bağlar.
+- Kenar durumları: boş giriş`[]`değerini döndürür; eksik`=`çifti atlar (`filter_map` aracılığıyla);`=`etrafındaki boşluklar`trim`tarafından işlenir.
+- Daha karmaşık ayrıştırma için`nom`sandığını kullanın (birleştirici tabanlı, ayrıca sıfır kopya).
+### Sorun 3: Gözlemci Modelini Kanallarla Uygulama
+**Sorun Açıklaması:** Birden fazla abonenin bir yayıncıdan mesaj aldığı bir yayınlama-abone olma sistemi oluşturun. Rust kanallarını kullanın ve yayıncıyı engellemeden sistemin yavaş aboneleri işlemesini sağlayın.
+**1. Adım — Sorunu Anlayın:**
+Birden fazla aboneye mesaj gönderen bir yayıncıya ihtiyacımız var. Rust'un`mpsc`kanalı çok yapımcılı tek tüketicidir; bunun tersine ihtiyacımız var (tek yapımcı çok tüketici).`broadcast`kanallarını (`tokio`'den) kullanabilir veya birden fazla`mpsc`gönderici kullanarak yayma uygulayabiliriz.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Standart kanallar için`std::sync::mpsc`kullanın.
+- Genişletme için: bir`Vec<Sender<T>>`bulundurun ve mesajları her birine kopyalayın.
+- Yavaş aboneler için:`try_send`(engellenmeyen) veya karşı basınçlı sınırlı kanalları kullanın.
+- Temiz API için bir`Bus`yapısına sarın.
+**3. Adım — Çözümü Uygulayın:**
+```rust
+use std::sync::mpsc::{self, Sender, Receiver};
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+struct Bus<T: Clone + Send + 'static> {
+    subscribers: Arc<Mutex<Vec<Sender<T>>>>,
+}
+
+impl<T: Clone + Send + 'static> Bus<T> {
+    fn new() -> Self {
+        Self {
+            subscribers: Arc::new(Mutex::new(Vec::new())),
+        }
+    }
+
+    fn subscribe(&self) -> Receiver<T> {
+        let (tx, rx) = mpsc::channel();
+        self.subscribers.lock().unwrap().push(tx);
+        rx
+    }
+
+    fn publish(&self, message: T) {
+        let mut subs = self.subscribers.lock().unwrap();
+        // Remove disconnected subscribers (their receiver was dropped)
+        subs.retain(|tx| !tx.is_disconnected());
+        for tx in subs.iter() {
+            let _ = tx.send(message.clone());  // Ignore send errors
+        }
+    }
+
+    fn subscriber_count(&self) -> usize {
+        let subs = self.subscribers.lock().unwrap();
+        subs.iter().filter(|tx| !tx.is_disconnected()).count()
+    }
+}
+
+fn main() {
+    let bus = Bus::new();
+
+    // Subscribe from multiple threads
+    let handles: Vec<_> = (0..3).map(|id| {
+        let rx = bus.subscribe();
+        thread::spawn(move || {
+            for msg in rx {
+                println!("Subscriber {} received: {}", id, msg);
+            }
+        })
+    }).collect();
+
+    // Publish messages
+    for i in 0..5 {
+        bus.publish(format!("Event #{}", i));
+    }
+
+    // Drop the bus — subscribers' channels close, loops end
+    drop(bus);
+    for h in handles { h.join().unwrap(); }
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+-`retain`ölü aboneleri otomatik olarak temizler — bağlantısız iş parçacıklarından bellek sızıntısı olmaz.
+-`message.clone()`gereklidir çünkü her abonenin kendi kopyasına ihtiyacı vardır. Klonlanması pahalı türler için `Arc<T>`'ye sarın.
+- Sınırlı kanallar: karşı basınç için `mpsc::channel()`'yi`mpsc::sync_channel(N)`ile değiştirin — abonenin arabelleği doluysa`publish`bloke eder.
+- Üretim: eşzamansız pub/sub için `tokio::sync::broadcast`'yi veya sınırlı/sınırsız seçeneklerle daha hızlı mpsc için `flume`'yi kullanın.
 ---
 
 ## Özet

@@ -41,7 +41,7 @@ contribution:
 
 # Prólogo
 Prolog (Programação em Lógica) é uma linguagem de programação lógica criada em 1972 por Alain Colmerauer e Philippe Roussel. Ao contrário de todas as outras linguagens desta lista, o Prolog não diz ao computador *como* resolver um problema - você declara *o que* é verdadeiro (fatos e regras), e o mecanismo de inferência do Prolog descobre a resposta por meio de dedução lógica.
-Prolog foi a linguagem escolhida para sistemas especialistas, processamento de linguagem natural e pesquisa de IA na década de 1980. Ele impulsionou o projeto de sistema de computador de quinta geração do Japão e foi usado no Watson da IBM para compreensão de linguagem natural. Hoje, o Prolog é usado na resolução de restrições, agendamento, inferência de tipos, raciocínio jurídico e em qualquer lugar que os problemas sejam naturalmente expressos como relacionamentos lógicos.
+Prolog foi a linguagem escolhida para sistemas especialistas, processamento de linguagem natural e pesquisa de IA na década de 1980. Ele impulsionou o projeto de sistema de computador de quinta geração do Japão e foi usado no Watson da IBM para compreensão da linguagem natural. Hoje, o Prolog é usado na resolução de restrições, agendamento, inferência de tipos, raciocínio jurídico e em qualquer lugar que os problemas sejam expressos naturalmente como relacionamentos lógicos.
 **Programação Lógica de Restrições (CLP)** estende o Prolog com solucionadores de restrições para agendamento, roteamento e alocação de recursos — problemas que são extremamente difíceis em linguagens imperativas.
 ---
 
@@ -49,7 +49,7 @@ Prolog foi a linguagem escolhida para sistemas especialistas, processamento de l
 - **Programação declarativa**: Descreva o que é verdade, não como calculá-lo. O motor faz o trabalho.
 - **Correspondência e unificação de padrões**: O algoritmo de unificação do Prolog é mais poderoso do que a correspondência de padrões em outras linguagens.
 - **Pesquisa de retrocesso**: explora automaticamente todas as soluções possíveis. Não são necessários algoritmos de pesquisa manual.
-- **Natural para problemas lógicos**: Sistemas especialistas, mecanismos de regras, verificadores de tipo, analisadores gramaticais — estes são mapeados diretamente para o Prolog.
+- **Natural para problemas lógicos**: Sistemas especialistas, mecanismos de regras, verificadores de tipos, analisadores gramaticais — estes são mapeados diretamente para o Prolog.
 - **Solução de restrições**: CLP(FD) resolve problemas de programação, alocação e combinatórios com elegância.
 - **Pensamento diferente**: Aprender Prolog muda a forma como você aborda a resolução de problemas – você começa a pensar em relacionamentos e restrições.
 ## As compensações
@@ -537,6 +537,129 @@ swipl -g main -o myapp.sav -c main.pl
 | Ciência de dados / ML | Não o ecossistema | Pitão, R |
 | Código crítico para desempenho | Prolog é lento para computação | C, C++, Ferrugem |
 | Programação de uso geral | Possível, mas estranho | Python, Go, Java |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Como a unificação do Prolog difere da atribuição em outros idiomas?
+**R:** A unificação é uma correspondência bidirecional de padrões, não uma atribuição:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### Q2: Como funciona o retrocesso no Prolog?
+**R:** Quando um objetivo falha, o Prolog volta ao último ponto de escolha e tenta a próxima alternativa:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### Q3: Como trabalho com listas no Prolog?
+**R:** As listas usam correspondência de padrões cabeça/cauda:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### Q4: Quando devo usar o Prolog em vez de outras linguagens?
+**R:** O Prolog é excelente em:
+- Satisfação de restrições (agendamento, quebra-cabeças)
+- Sistemas baseados em regras (sistemas especialistas, validação)
+- Travessia de gráfico/árvore
+- Processamento de linguagem natural
+- Cálculo simbólico
+- Qualquer problema exprimível como relações lógicas
+### Q5: Quais são as armadilhas comuns no Prolog?
+**R:** Principais questões:
+- Recursão infinita — sempre coloque o caso base em primeiro lugar
+- Retrocesso não intencional — use cut`!`ou`once/1`
+- Ocorre verificação — loops`X = f(X)`por padrão (use`unify_with_occurs_check`)
+- Cortes verdes (otimização) versus cortes vermelhos (mudança de significado) — prefira o verde
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Resolvendo o quebra-cabeça das N-Queens
+**Etapa 1: Entenda o problema**
+Coloque N rainhas em um tabuleiro de xadrez NxN para que duas rainhas não ataquem uma à outra.
+**Etapa 2: Identifique a abordagem**
+Use geração baseada em restrições: coloque rainhas coluna por coluna, verificando a segurança.
+**Etapa 3: Implementar**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Etapa 4: verificar**
+`?- n_queens(8, Qs).`deve encontrar 92 soluções.
+### Problema 2: Construindo um Sistema Especialista Simples
+**Etapa 1: Entenda o problema**
+Diagnosticar problemas do carro com base nos sintomas.
+**Etapa 2: Identifique a abordagem**
+Use regras do Prolog para codificar o conhecimento de diagnóstico.
+**Etapa 3: Implementar**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Etapa 4: Estender**
+Adicione pontuações de confiança, pergunte ao usuário os sintomas de forma interativa e encadeie diagnósticos.
 ---
 
 ## Resumo

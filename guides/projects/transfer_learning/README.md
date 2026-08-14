@@ -28,7 +28,7 @@ Before running this project, you should be comfortable with:
 - Basic neural network concepts (helpful but not required)
 
 If you're new to these concepts, check out:
-- [Python Basics](../User%20Questions/prerequisites/python_basics.md)
+- [Python Basics](../../User%20Questions/prerequisites/python_basics.md)
 - [Neural Network Basics](../neural_network_basics/) (recommended first!)
 
 ## Quick Start

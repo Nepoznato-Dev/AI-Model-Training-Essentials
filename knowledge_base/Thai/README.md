@@ -1,4 +1,4 @@
-# ฐานความรู้ภาษาอังกฤษ
+# ฐานความรู้
 คอลเลกชันเอกสารอ้างอิงที่ครอบคลุมครอบคลุมถึงการเขียนโค้ด เทคโนโลยี AI วิทยาศาสตร์ ธุรกิจ มนุษยศาสตร์ และอื่นๆ อีกมากมาย เขียนในรูปแบบการสนทนาที่เป็นธรรมชาติ ซึ่งออกแบบมาสำหรับทั้งการฝึกอบรม AI และการเรียนรู้ของมนุษย์
 **อัปเดตล่าสุด:** สิงหาคม 2026  
 **ไฟล์ทั้งหมด:** เอกสารมาร์กดาวน์มากกว่า 138 รายการ  
@@ -7,7 +7,7 @@
 
 ## โครงสร้างไดเรกทอรี
 ```
-knowledge_base/English/
+knowledge_base/Thai/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,13 @@ knowledge_base/English/
 **หัวข้อหลัก:**
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
-| [web_development.md](01_coding_and_technology/web_development.md)| ส่วนหน้า, แบ็กเอนด์, DevOps, ความปลอดภัย |
 | [database_systems.md](01_coding_and_technology/database_systems.md)| SQL, NoSQL, รูปแบบการออกแบบ, การเพิ่มประสิทธิภาพ |
 | [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)| ผู้ให้บริการคลาวด์ รูปแบบสถาปัตยกรรม ความปลอดภัย |
 | [networking_basics.md](01_coding_and_technology/networking_basics.md)| โมเดล OSI, TCP/IP, โปรโตคอล, ความปลอดภัย |
 | [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH, systemd, การบันทึก, การตรวจสอบ, การสำรองข้อมูล, Docker, CI/CD |
-| [security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP 10 อันดับแรก, การตรวจสอบอินพุต, การรับรองความถูกต้อง, การจัดการความลับ |
 | [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md)| ไปป์ไลน์ CI/CD, Docker, Kubernetes, Terraform, GitOps |
 | [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)| การเข้ารหัส, TLS, OWASP, การเข้ารหัสที่ปลอดภัย, SDL |
 | [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST, GraphQL, gRPC, การกำหนดเวอร์ชัน, การรับรองความถูกต้อง, เกตเวย์ API |
-| [software_architecture_patterns.md](01_coding_and_technology/software_architecture_patterns.md)| Monolith, ไมโครเซอร์วิส, ขับเคลื่อนด้วยเหตุการณ์, DDD, แคช, SOLID |
-| [technology_glossary.md](01_coding_and_technology/technology_glossary.md)| คำศัพท์ทางเทคนิค (โมเดล AI, ฮาร์ดแวร์, การวัดประสิทธิภาพ) |
-| [tool_usage.md](01_coding_and_technology/tool_usage.md)| เครื่องมือพัฒนาและยูทิลิตี้ |
 | [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG, รวม UX, เทคโนโลยีช่วยเหลือ, การเข้ารหัสที่เข้าถึงได้ |
 | [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)| ฉันทามติ, สัญญาอัจฉริยะ, DeFi, ความทนทานต่อข้อผิดพลาดของ Byzantine
 | [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)| อาร์เรย์ ต้นไม้ กราฟ การเรียงลำดับ การค้นหา ความซับซ้อน |
@@ -52,7 +47,6 @@ knowledge_base/English/
 | [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)| แพลตฟอร์มโค้ดต่ำ, แพลตฟอร์มนักพัฒนาภายใน, เส้นทางทอง |
 | [mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS, Android, React Native, Flutter, สถาปัตยกรรมมือถือ |
 | [performance_optimization.md](01_coding_and_technology/performance_optimization.md)| การทำโปรไฟล์, การแคช, CDN, การเพิ่มประสิทธิภาพแบบสอบถาม, การปรับแต่งส่วนหน้า |
-| [testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)| หน่วย, บูรณาการ, E2E, TDD, BDD, ทดสอบปิรามิด |
 **ภาษาการเขียนโปรแกรม (34 ภาษา):**
 แต่ละภาษามีไดเร็กทอรีย่อยของตัวเองพร้อมข้อมูลอ้างอิงที่ครอบคลุมครอบคลุมถึงภาพรวม ข้อดีข้อเสีย พื้นฐานไวยากรณ์ ระบบนิเวศ และเวลาที่ควรใช้
 | ภาษา | เส้นทาง | | ภาษา | เส้นทาง |
@@ -77,31 +71,31 @@ knowledge_base/English/
 ### 02 — AI และการเรียนรู้ของเครื่อง
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
-| [artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)| ภาพรวม AI, ML, การเรียนรู้เชิงลึก, LLM, จริยธรรม |
-| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/ml_evaluation_and_workflow.md)| ไปป์ไลน์ ML, ตัวชี้วัด, แนวทางปฏิบัติที่ดีที่สุด |
-| [phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)| ใช้งานโมเดลในเครื่อง |
-| [local_ai_architecture.md](02_ai_and_machine_learning/local_ai_architecture.md)| สถาปัตยกรรมการปรับใช้ AI ในพื้นที่ |
-| [prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)| เทคนิคและกลยุทธ์พร้อมท์ |
-| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT, Data Lake, การเรียบเรียง, Kafka, ร้านค้าฟีเจอร์ |
-| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/ml_engineering_and_mlops.md)| การให้บริการโมเดล การลงทะเบียน กลยุทธ์การปรับใช้ การตรวจสอบดริฟท์ |
-| [computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN, การตรวจจับวัตถุ, การแบ่งส่วน, การถ่ายโอนการเรียนรู้ |
-| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)| การประมวลผลข้อความ, การฝัง, Transformers, BERT, GPT |
-| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ai_ethics_and_governance.md)| อคติ AI ความเป็นธรรม ความรับผิดชอบ กฎระเบียบ กรอบการกำกับดูแล |
-| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)| ปัญหาการจัดตำแหน่ง RLHF การตีความได้ การวิจัยด้านความปลอดภัยของ AI |
-| [federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)| การฝึกอบรมแบบกระจายอำนาจ ความเป็นส่วนตัวที่แตกต่าง การรวมกลุ่มที่ปลอดภัย |
-| [generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GAN, VAE, โมเดลการแพร่กระจาย, LLM, แอปพลิเคชัน AI เชิงสร้างสรรค์ |
-| [graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN, GAT, การส่งข้อความ, กราฟความรู้, งานกราฟ |
-| [model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)| การหาปริมาณ การตัดแต่งกิ่ง การกลั่น ONNX การให้บริการโครงสร้างพื้นฐาน |
-| [multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)| แบบจำลองภาษาวิสัยทัศน์, CLIP, DALL-E, การเรียนรู้แบบข้ามกิริยา |
-| [recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)| การกรองการทำงานร่วมกัน ตามเนื้อหา ไฮบริด การแยกตัวประกอบเมทริกซ์ |
-| [reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP, การเรียนรู้แบบ Q, การไล่ระดับนโยบาย, RLHF, ระบบหลายตัวแทน |
-| [speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR, TTS, คุณสมบัติเสียง, เสียงกระซิบ, ไปป์ไลน์เสียงพูด |
-| [time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA, ศาสดา, LSTM, ฤดูกาล, การตรวจจับความผิดปกติ |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)| ภาพรวม AI, ML, การเรียนรู้เชิงลึก, LLM, จริยธรรม |
+| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md)| ไปป์ไลน์ ML, ตัวชี้วัด, แนวทางปฏิบัติที่ดีที่สุด |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)| ใช้งานโมเดลในเครื่อง |
+| [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md)| สถาปัตยกรรมการปรับใช้ AI ในพื้นที่ |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)| เทคนิคและกลยุทธ์พร้อมท์ |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT, Data Lake, การเรียบเรียง, Kafka, ร้านค้าฟีเจอร์ |
+| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md)| การให้บริการโมเดล การลงทะเบียน กลยุทธ์การปรับใช้ การตรวจสอบดริฟท์ |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN, การตรวจจับวัตถุ, การแบ่งส่วน, การถ่ายโอนการเรียนรู้ |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)| การประมวลผลข้อความ, การฝัง, Transformers, BERT, GPT |
+| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md)| อคติ AI ความเป็นธรรม ความรับผิดชอบ กฎระเบียบ กรอบการกำกับดูแล |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)| ปัญหาการจัดตำแหน่ง RLHF การตีความได้ การวิจัยด้านความปลอดภัยของ AI |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)| การฝึกอบรมแบบกระจายอำนาจ ความเป็นส่วนตัวที่แตกต่าง การรวมกลุ่มที่ปลอดภัย |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GAN, VAE, โมเดลการแพร่กระจาย, LLM, แอปพลิเคชัน AI เชิงสร้างสรรค์ |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN, GAT, การส่งข้อความ, กราฟความรู้, งานกราฟ |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)| การหาปริมาณ การตัดแต่งกิ่ง การกลั่น ONNX การให้บริการโครงสร้างพื้นฐาน |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)| แบบจำลองภาษาวิสัยทัศน์, CLIP, DALL-E, การเรียนรู้แบบข้ามกิริยา |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)| การกรองการทำงานร่วมกัน ตามเนื้อหา ไฮบริด การแยกตัวประกอบเมทริกซ์ |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP, การเรียนรู้แบบ Q, การไล่ระดับนโยบาย, RLHF, ระบบหลายตัวแทน |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR, TTS, คุณสมบัติเสียง, เสียงกระซิบ, ไปป์ไลน์เสียงพูด |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA, ศาสดา, LSTM, ฤดูกาล, การตรวจจับความผิดปกติ |
 ### 03 — วิทยาศาสตร์ข้อมูลและการวิเคราะห์
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
 | [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)| การประมวลผลข้อมูล, ML, ข้อมูลขนาดใหญ่, BI |
-| [math_and_logic.md](03_data_science_and_analytics/math_and_logic.md)| คณิตศาสตร์ ตรรกะ การพิสูจน์ |
+| [math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md)| คณิตศาสตร์ ตรรกะ การพิสูจน์ |
 | [data_visualization.md](03_data_science_and_analytics/data_visualization.md)| การเลือกแผนภูมิ หลักการออกแบบ การเล่าเรื่อง เครื่องมือ |
 | [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md)| การทดสอบสมมุติฐาน การทดสอบ A/B ขนาดเอฟเฟกต์ การอนุมานเชิงสาเหตุ |
 | [causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAGs, ตัวรบกวน, ความแตกต่างในความแตกต่าง, ตัวแปรเครื่องมือ |
@@ -113,13 +107,13 @@ knowledge_base/English/
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
 | [science_and_nature.md](04_natural_sciences/science_and_nature.md)| ฟิสิกส์ เคมี ชีววิทยา วิทยาศาสตร์โลก |
-| [medicine_and_healthcare.md](04_natural_sciences/medicine_and_healthcare.md)| ความเชี่ยวชาญทางการแพทย์ การวินิจฉัย การรักษา จริยธรรม |
-| [environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)| ระบบนิเวศ ภูมิอากาศ พลังงาน นโยบาย |
-| [food_agriculture_and_nutrition.md](04_natural_sciences/food_agriculture_and_nutrition.md)| เกษตรกรรม โภชนาการ ระบบอาหาร ความยั่งยืน |
-| [astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)| ดวงดาว กาแล็กซี บิ๊กแบง สสารมืด ดาวเคราะห์นอกระบบ จักรวาลวิทยา |
-| [genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| DNA, การแสดงออกของยีน, CRISPR, GWAS, เทคโนโลยีการหาลำดับ |
-| [materials_science.md](04_natural_sciences/materials_science.md)| โครงสร้างผลึก โพลีเมอร์ โลหะผสม สารกึ่งตัวนำ วัสดุนาโน |
-| [neuroscience.md](04_natural_sciences/neuroscience.md)| เซลล์ประสาท โครงสร้างสมอง สารสื่อประสาท ความเป็นพลาสติก การสร้างภาพสมอง
+| [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md)| ความเชี่ยวชาญทางการแพทย์ การวินิจฉัย การรักษา จริยธรรม |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)| ระบบนิเวศ ภูมิอากาศ พลังงาน นโยบาย |
+| [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md)| เกษตรกรรม โภชนาการ ระบบอาหาร ความยั่งยืน |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)| ดวงดาว กาแล็กซี บิ๊กแบง สสารมืด ดาวเคราะห์นอกระบบ จักรวาลวิทยา |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| DNA, การแสดงออกของยีน, CRISPR, GWAS, เทคโนโลยีการหาลำดับ |
+| [materials_science.md](04_natural_sciences/physical_sciences/materials_science.md)| โครงสร้างผลึก โพลีเมอร์ โลหะผสม สารกึ่งตัวนำ วัสดุนาโน |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)| เซลล์ประสาท โครงสร้างสมอง สารสื่อประสาท ความเป็นพลาสติก การสร้างภาพสมอง
 ### 05 — ธุรกิจและเศรษฐศาสตร์
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
@@ -136,15 +130,15 @@ knowledge_base/English/
 ### 06 — มนุษยศาสตร์และศิลปะ
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
-| [history_and_culture.md](06_humanities_and_arts/history_and_culture.md)| ประวัติศาสตร์โลกตั้งแต่อารยธรรมโบราณจนถึงยุคสารสนเทศ |
-| [geography_and_geopolitics.md](06_humanities_and_arts/geography_and_geopolitics.md)| ภูมิศาสตร์กายภาพ/มนุษย์ ระบบการเมือง |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)| ประวัติศาสตร์โลกตั้งแต่อารยธรรมโบราณจนถึงยุคสารสนเทศ |
+| [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md)| ภูมิศาสตร์กายภาพ/มนุษย์ ระบบการเมือง |
 | [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)| แนววรรณกรรม ทัศนศิลป์ ดนตรี ภาพยนตร์ |
-| [psychology_and_human_behavior.md](06_humanities_and_arts/psychology_and_human_behavior.md)| จิตวิทยาการรับรู้ สังคม พัฒนาการ |
-| [language_and_english.md](06_humanities_and_arts/language_and_english.md)| ไวยากรณ์ ภาษาศาสตร์ การเขียน |
-| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)| สำนักความคิด จริยธรรม ตรรกะ ญาณวิทยา อคติทางความรู้ความเข้าใจ |
-| [linguistics_and_language_science.md](06_humanities_and_arts/linguistics_and_language_science.md)| สัทศาสตร์ วากยสัมพันธ์ อรรถศาสตร์ ปฏิบัติศาสตร์ ภาษาศาสตร์สังคม |
-| [music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)| สเกล คอร์ด ฮาร์โมนี่ จังหวะ อะคูสติกในห้อง ฟิสิกส์ของเครื่องดนตรี |
-| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)| ศาสนาหลักของโลก ตำนานเปรียบเทียบ ระบบความเชื่อ |
+| [psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md)| จิตวิทยาการรับรู้ สังคม พัฒนาการ |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md)| ไวยากรณ์ ภาษาศาสตร์ การเขียน |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)| สำนักความคิด จริยธรรม ตรรกะ ญาณวิทยา อคติทางความรู้ความเข้าใจ |
+| [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md)| สัทศาสตร์ วากยสัมพันธ์ อรรถศาสตร์ ปฏิบัติศาสตร์ ภาษาศาสตร์สังคม |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)| สเกล คอร์ด ฮาร์โมนี่ จังหวะ อะคูสติกในห้อง ฟิสิกส์ของเครื่องดนตรี |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)| ศาสนาหลักของโลก ตำนานเปรียบเทียบ ระบบความเชื่อ |
 ### 07 — ข้อมูลอ้างอิงทั่วไป
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
@@ -158,20 +152,20 @@ knowledge_base/English/
 ### 08 — อนาคตและเทรนด์
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
-| [2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)| กิจกรรมที่กำลังจะเกิดขึ้น ภารกิจอวกาศ เทรนด์เทคโนโลยี |
-| [emerging_technologies.md](08_future_and_trends/emerging_technologies.md)| คอมพิวเตอร์ควอนตัม เทคโนโลยีชีวภาพ นาโนเทคโนโลยี |
-| [future_of_work.md](08_future_and_trends/future_of_work.md)| ระบบอัตโนมัติ, การทำงานจากระยะไกล, การเพิ่มทักษะใหม่ |
-| [future_healthcare.md](08_future_and_trends/future_healthcare.md)| ยาเฉพาะบุคคล การวินิจฉัย AI |
-| [future_transportation.md](08_future_and_trends/future_transportation.md)| EVs, รถยนต์ขับเคลื่อนอัตโนมัติ, ไฮเปอร์ลูป |
-| [demographic_shifts.md](08_future_and_trends/demographic_shifts.md)| แนวโน้มประชากร การอพยพ การขยายตัวของเมือง |
-| [education_transformation.md](08_future_and_trends/education_transformation.md)| เรียนออนไลน์ สอน AI |
-| [geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)| ภูมิศาสตร์การเมือง สหรัฐฯ-จีน โลกหลายขั้ว |
-| [scenario_planning.md](08_future_and_trends/scenario_planning.md)| สถานการณ์และกรอบการทำงานในอนาคต |
-| [space_exploration_roadmap.md](08_future_and_trends/space_exploration_roadmap.md)| ภารกิจอวกาศและไทม์ไลน์ |
-| [sustainable_future.md](08_future_and_trends/sustainable_future.md)| สภาพภูมิอากาศ การเปลี่ยนแปลงพลังงาน เศรษฐกิจหมุนเวียน |
-| [ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)| ระบบแนะนำ ผู้ช่วยอัจฉริยะ ความเป็นส่วนตัว ระบบประหยัดความสนใจ |
-| [climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)| พลังงานทดแทน, EVs, การดักจับคาร์บอน, ไฮโดรเจนสีเขียว, เทคโนโลยีที่ยั่งยืน |
-| [future_of_computing.md](08_future_and_trends/future_of_computing.md)| กฎของมัวร์, การคำนวณควอนตัม, ชิปนิวโรมอร์ฟิก, การประมวลผลแบบเอดจ์ |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)| กิจกรรมที่กำลังจะเกิดขึ้น ภารกิจอวกาศ เทรนด์เทคโนโลยี |
+| [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md)| คอมพิวเตอร์ควอนตัม เทคโนโลยีชีวภาพ นาโนเทคโนโลยี |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)| ระบบอัตโนมัติ, การทำงานจากระยะไกล, การเพิ่มทักษะใหม่ |
+| [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md)| ยาเฉพาะบุคคล การวินิจฉัย AI |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)| EVs, รถยนต์ขับเคลื่อนอัตโนมัติ, ไฮเปอร์ลูป |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)| แนวโน้มประชากร การอพยพ การขยายตัวของเมือง |
+| [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md)| เรียนออนไลน์ สอน AI |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)| ภูมิศาสตร์การเมือง สหรัฐฯ-จีน โลกหลายขั้ว |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)| สถานการณ์และกรอบการทำงานในอนาคต |
+| [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md)| ภารกิจอวกาศและไทม์ไลน์ |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)| สภาพภูมิอากาศ การเปลี่ยนแปลงพลังงาน เศรษฐกิจหมุนเวียน |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)| ระบบแนะนำ ผู้ช่วยอัจฉริยะ ความเป็นส่วนตัว ระบบประหยัดความสนใจ |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)| พลังงานทดแทน, EVs, การดักจับคาร์บอน, ไฮโดรเจนสีเขียว, เทคโนโลยีที่ยั่งยืน |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)| กฎของมัวร์, การคำนวณควอนตัม, ชิปนิวโรมอร์ฟิก, การประมวลผลแบบเอดจ์ |
 ### 09 — บทเรียนจากความล้มเหลว
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
@@ -187,18 +181,18 @@ knowledge_base/English/
 ### 10 — การอ้างอิงด่วน
 | ไฟล์ | คำอธิบาย |
 |-|-------------|
-| [python_syntax.md](10_quick_reference/python_syntax.md)| แผ่นโกงไวยากรณ์ Python |
-| [git_commands.md](10_quick_reference/git_commands.md)| คำสั่ง Git และเวิร์กโฟลว์ |
-| [sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| การอ้างอิงแบบสอบถาม SQL |
-| [linux_commands.md](10_quick_reference/linux_commands.md)| การอ้างอิงบรรทัดคำสั่ง Linux |
-| [docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| เอกสารสรุปนักเทียบท่า, นักเทียบท่าเขียน, Kubernetes, Helm
-| [regular_expressions.md](10_quick_reference/regular_expressions.md)| ไวยากรณ์ Regex รูปแบบทั่วไป การใช้งานเฉพาะภาษา |
-| [cloud_services_comparison.md](10_quick_reference/cloud_services_comparison.md)| การเปรียบเทียบ AWS กับ Azure กับ GCP แบบเคียงข้างกัน |
-| [bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| การเขียนสคริปต์ Bash การประมวลผลข้อความ one-liners ที่มีประโยชน์ |
-| [ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| Playbooks, โมดูล, บทบาท, สินค้าคงคลัง, เอกสารสรุปการทำงานอัตโนมัติ |
-| [cicd_pipeline_config.md](10_quick_reference/cicd_pipeline_config.md)| การดำเนินการ GitHub, GitLab CI, Jenkins, รูปแบบ YAML ไปป์ไลน์ |
-| [prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL ผู้ส่งออก แดชบอร์ด การแจ้งเตือน การตรวจสอบสแต็ก |
-| [terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| แนวคิด IaC, คำสั่ง Terraform, การจัดการสถานะ, โมดูล |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md)| แผ่นโกงไวยากรณ์ Python |
+| [git_commands.md](10_quick_reference/programming/git_commands.md)| คำสั่ง Git และเวิร์กโฟลว์ |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| การอ้างอิงแบบสอบถาม SQL |
+| [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)| การอ้างอิงบรรทัดคำสั่ง Linux |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| เอกสารสรุปนักเทียบท่า, นักเทียบท่าเขียน, Kubernetes, Helm
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)| ไวยากรณ์ Regex รูปแบบทั่วไป การใช้งานเฉพาะภาษา |
+| [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)| การเปรียบเทียบ AWS กับ Azure กับ GCP แบบเคียงข้างกัน |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| การเขียนสคริปต์ Bash การประมวลผลข้อความ one-liners ที่มีประโยชน์ |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| Playbooks, โมดูล, บทบาท, สินค้าคงคลัง, เอกสารสรุปการทำงานอัตโนมัติ |
+| [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md)| การดำเนินการ GitHub, GitLab CI, Jenkins, รูปแบบ YAML ไปป์ไลน์ |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL ผู้ส่งออก แดชบอร์ด การแจ้งเตือน การตรวจสอบสแต็ก |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| แนวคิด IaC, คำสั่ง Terraform, การจัดการสถานะ, โมดูล |
 ---
 
 ## เส้นทางการเรียนรู้
@@ -210,12 +204,9 @@ knowledge_base/English/
 ### สำหรับนักพัฒนาซอฟต์แวร์
 1.`01_coding_and_technology/programming_languages/python/`(หรือภาษาที่คุณเลือก)
 2.`01_coding_and_technology/data_structures_and_algorithms.md`
-3.`01_coding_and_technology/web_development.md`
 4.`01_coding_and_technology/database_systems.md`
 5.`01_coding_and_technology/cloud_architecture.md`
-6.`01_coding_and_technology/software_architecture_patterns.md`
 7.`01_coding_and_technology/api_design_and_architecture.md`
-8.`01_coding_and_technology/testing_methodologies.md`
 9. `02_ai_and_machine_learning/artificial_intelligence.md`
 ### สำหรับนักวิทยาศาสตร์ข้อมูล
 1.`03_data_science_and_analytics/math_and_logic.md`

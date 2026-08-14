@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Kotlina
 Kotlin to skompilowany język programowania ze statycznym typem, opracowany przez JetBrains i wydany po raz pierwszy w 2011 r. (1.0 w 2016 r.). Działa na wirtualnej maszynie Java (JVM) i jest w pełni interoperacyjny z Javą — co oznacza, że ​​możesz używać dowolnej biblioteki Java z Kotlina i wywoływać kod Kotlina z Javy bez żadnych opakowań. W 2017 roku Google ogłosił Kotlin jako preferowany język programowania dla Androida i od tego czasu stał się on dominującym językiem Androida.
 Kotlin został zaprojektowany, aby naprawić problemy Javy: gadatliwość, wyjątki dotyczące wskaźników zerowych i brakujące nowoczesne funkcje. Rezultatem jest język przypominający zmodernizowaną Javę — zwięzły, bezpieczny i wyrazisty — przy jednoczesnym zachowaniu pełnej kompatybilności z ogromnym ekosystemem Java.
@@ -1173,6 +1174,409 @@ kotlin {
 | Programowanie systemów innych niż JVM | Nie jest to główny cel | Rust, idź, C |
 | Interfejs WWW | Kotlin/JS istnieje, ale jest ograniczony | TypeScript, JavaScript |
 | Nauka o danych / ML | Nie ekosystem | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jak właściwie działają zerowe funkcje bezpieczeństwa Kotlina?
+**A:** Kotlin rozróżnia typy dopuszczające wartość null (`String?`) i typy nie dopuszczające wartości null (`String`) w czasie kompilacji. Kompilator uniemożliwia wywoływanie metod dla typów dopuszczających wartość null bez sprawdzania wartości null. Bezpieczne wywołania (`?.`), operator Elvisa (`?:`) i asercja inna niż null (`!!`) zapewniają różne strategie. Inteligentne rzutowanie automatycznie zawęża typy po sprawdzeniu wartości null.
+```kotlin
+var name: String? = null
+
+// Safe call — returns null if name is null
+val length: Int? = name?.length
+
+// Elvis operator — provide default
+val display: String = name ?: "Anonymous"
+
+// Smart cast — compiler narrows type after check
+fun process(user: String?) {
+    if (user != null) {
+        println(user.length)  // Smart cast to String (non-null)
+    }
+}
+
+// let with safe call
+name?.let {
+    println("Name is $it")  // Only runs if name is not null
+}
+
+// Non-null assertion — crashes if null (avoid in production)
+val forced: String = name!!  // Throws NullPointerException if null
+```
+
+### P2: Czym są współprogramy i czym różnią się od wątków?
+**O:** Współprogramy to lekkie zadania współpracujące, które działają na wątkach. Mogą zawiesić wykonanie (bez blokowania wątku) i wznowić później. W kilku wątkach mogą działać miliony współprogramów.  Funkcje`suspend`można wywoływać wyłącznie z współprogramów lub innych funkcji zawieszających. Zakresy współprogramów kontrolują cykl życia — anulowanie zakresu powoduje anulowanie wszystkich jego współprogramów.
+```kotlin
+import kotlinx.coroutines.*
+
+// Basic coroutine
+CoroutineScope(Dispatchers.Main).launch {
+    val user = withContext(Dispatchers.IO) {
+        fetchUserFromNetwork()  // Suspends, doesn't block
+    }
+    textView.text = user.name   // Back on Main thread
+}
+
+// Concurrent execution
+suspend fun loadDashboard(): Dashboard {
+    coroutineScope {
+        val userDeferred = async { fetchUser() }
+        val postsDeferred = async { fetchPosts() }
+        val user = userDeferred.await()
+        val posts = postsDeferred.await()
+        Dashboard(user, posts)
+    }
+}
+
+// Flow — cold async stream
+fun observePrices(): Flow<Double> = flow {
+    while (true) {
+        emit(fetchCurrentPrice())
+        delay(1000)
+    }
+}
+
+// Collect flow
+lifecycleScope.launch {
+    observePrices()
+        .filter { it > 100.0 }
+        .collect { price -> updateUI(price) }
+}
+```
+
+### P3: Co to są klasy danych, klasy zapieczętowane i klasy wartości?
+**A:** Klasy danych automatycznie generują funkcje`equals`,`hashCode`,`toString`,`copy`i`componentN`— idealne rozwiązanie dla posiadaczy danych. Klasy zapieczętowane ograniczają dziedziczenie — wszystkie podklasy muszą znajdować się w tym samym pliku — umożliwiając wyczerpujące wyrażenia `when`. Klasy wartości otaczają pojedynczą wartość z zerowym obciążeniem w czasie wykonywania (klasa wbudowana).
+```kotlin
+// Data class — auto-generates equals/hashCode/toString/copy
+data class User(val name: String, val email: String, val age: Int)
+
+val alice = User("Alice", "alice@example.com", 30)
+val bob = alice.copy(name = "Bob")
+val (name, email, age) = alice  // Destructuring
+
+// Sealed class — exhaustive when
+sealed class Result<out T> {
+    data class Success<T>(val data: T) : Result<T>()
+    data class Error(val exception: Throwable) : Result<Nothing>()
+    data object Loading : Result<Nothing>()
+}
+
+fun handle(result: Result<User>) = when (result) {
+    is Result.Success -> showUser(result.data)
+    is Result.Error -> showError(result.exception)
+    is Result.Loading -> showSpinner()
+    // No 'else' needed — compiler knows all cases are covered
+}
+
+// Value class — zero-overhead wrapper
+@JvmInline
+value class UserId(val value: String)
+fun getUser(id: UserId) { /* ... */ }
+// At runtime, UserId is just a String — no object allocation
+```
+
+### P4: Jak działają funkcje rozszerzeń i jakie są ich ograniczenia?
+**O:** Funkcje rozszerzeń dodają metody do istniejących typów bez dziedziczenia i modyfikacji. Są one rozwiązywane statycznie (w oparciu o zadeklarowany typ, a nie typ środowiska wykonawczego). Nie mają dostępu do członków prywatnych. Właściwości rozszerzenia działają podobnie. Są szeroko stosowane w standardowej bibliotece Kotlina i programowaniu na Androida.
+```kotlin
+// Extension function
+fun String.isEmail(): Boolean = contains("@") && contains(".")
+fun Int.toOrdinal(): String = "${this}${when (this % 10) {
+    1 -> "st"; 2 -> "nd"; 3 -> "rd"; else -> "th"
+}}"
+
+// Extension with receiver
+fun <T> List<T>.secondOrNull(): T? = if (size >= 2) this[1] else null
+
+// Extension property
+val String.wordCount: Int get() = split("\\s+".toRegex()).size
+
+// Scoped extensions
+class Database {
+    fun query(sql: String): List<Row> = TODO()
+}
+
+fun Database.users() = query("SELECT * FROM users")
+
+// Usage
+"test@example.com".isEmail()  // true
+42.toOrdinal()                // "42nd"
+"hello world foo".wordCount   // 3
+```
+
+### P5: Co to jest Kotlin Multiplatform i kiedy powinienem go używać?
+**O:** Kotlin Multiplatform (KMP) umożliwia udostępnianie kodu pomiędzy platformami (Android, iOS, internet, komputer stacjonarny, serwer) przy zachowaniu interfejsu użytkownika specyficznego dla platformy. Można współużytkować logikę biznesową, sieci i warstwy danych; Interfejs użytkownika pozostaje natywny. Użyj go, jeśli masz zespół, który zna Kotlin i chce zmaksymalizować udostępnianie kodu bez konieczności przechodzenia na pełną platformę wieloplatformową (jak Flutter).
+```kotlin
+// commonMain — shared code
+expect class Platform() {
+    val name: String
+}
+
+// androidMain
+actual class Platform {
+    actual val name = "Android ${Build.VERSION.SDK_INT}"
+}
+
+// iosMain
+actual class Platform {
+    actual val name = UIDevice.currentDevice.systemName()
+}
+
+// Shared networking
+interface ApiClient {
+    suspend fun getUsers(): List<User>
+}
+
+class ApiClientImpl(private val httpClient: HttpClient) : ApiClient {
+    override suspend fun getUsers(): List<User> {
+        return httpClient.get("/api/users").body()
+    }
+}
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Zbuduj bezpieczny typ DSL
+**Opis problemu:** Utwórz Kotlin DSL do tworzenia dokumentów HTML z zabezpieczeniem w czasie kompilacji. DSL powinien wymuszać poprawną strukturę HTML (np.`<head>`tylko w `<html>`,`<li>`tylko w`<ul>`lub `<ol>`).
+**Krok 1 — Zrozum problem:**
+Potrzebujemy: (1) funkcji konstruktora z `@DslMarker`, aby zapobiec wyciekom zakresu, (2) składni DSL opartej na odbiorniku, (3) wymuszania prawidłowego zagnieżdżenia w czasie kompilacji. Do tego służą bezpieczne konstruktory Kotlina i adnotacja `@DslMarker`.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj `@DslMarker`, aby utworzyć adnotację kontroli zakresu.
+- Każdy element HTML jest klasą z metodami konstruktora dla swoich prawidłowych dzieci.
+-`@HtmlTagMarker`uniemożliwia dostęp do metod zakresu nadrzędnego w zakresie podrzędnym.
+- Użyj operatora `invoke`, aby uzyskać przejrzystą składnię.
+**Krok 3 — Wdróż rozwiązanie:**
+```kotlin
+@DslMarker
+annotation class HtmlTagMarker
+
+@HtmlTagMarker
+class HTML {
+    private val children = mutableListOf<String>()
+
+    fun head(init: HEAD.() -> Unit) {
+        val head = HEAD().apply(init)
+        children.add(head.render())
+    }
+
+    fun body(init: BODY.() -> Unit) {
+        val body = BODY().apply(init)
+        children.add(body.render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<html>")
+        children.forEach { appendLine("  $it") }
+        appendLine("</html>")
+    }
+}
+
+@HtmlTagMarker
+class HEAD {
+    private val children = mutableListOf<String>()
+
+    fun title(text: String) { children.add("<title>$text</title>") }
+    fun meta(name: String, content: String) {
+        children.add("<meta name=\"$name\" content=\"$content\">")
+    }
+
+    fun render(): String = buildString {
+        appendLine("<head>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</head>")
+    }
+}
+
+@HtmlTagMarker
+class BODY {
+    private val children = mutableListOf<String>()
+
+    fun h1(text: String) { children.add("<h1>$text</h1>") }
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun div(init: DIV.() -> Unit) {
+        children.add(DIV().apply(init).render())
+    }
+    fun ul(init: UL.() -> Unit) {
+        children.add(UL().apply(init).render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<body>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</body>")
+    }
+}
+
+@HtmlTagMarker
+class DIV {
+    private val children = mutableListOf<String>()
+    var cssClass: String = ""
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun render(): String {
+        val cls = if (cssClass.isNotEmpty()) " class=\"$cssClass\"" else ""
+        return "<div$cls>${children.joinToString("")}</div>"
+    }
+}
+
+@HtmlTagMarker
+class UL {
+    private val items = mutableListOf<String>()
+    fun li(text: String) { items.add("<li>$text</li>") }
+    fun render(): String = "<ul>${items.joinToString("")}</ul>"
+}
+
+fun html(init: HTML.() -> Unit): String = HTML().apply(init).render()
+
+// Usage — compile-time safe
+val page = html {
+    head {
+        title("My Page")
+        meta("viewport", "width=device-width")
+    }
+    body {
+        h1("Welcome")
+        p("This is a type-safe HTML builder.")
+        div {
+            cssClass = "container"
+            p("Inside a div")
+        }
+        ul {
+            li("Item 1")
+            li("Item 2")
+            li("Item 3")
+        }
+    }
+}
+// title() is NOT accessible inside body {} — prevented by @DslMarker
+// li() is NOT accessible inside body {} — only inside ul {}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Bezpieczeństwo typu:`@DslMarker`zapobiega wyciekom lunety —`title()`nie jest dostępny wewnątrz `body {}`.
+- Kompilator wymusza prawidłowe zagnieżdżanie w czasie kompilacji — nie jest wymagana żadna kontrola w czasie wykonywania.
+- Rozszerzalność: dodawaj nowe elementy, tworząc klasy z odpowiednimi metodami potomnymi.
+- Produkcja: użyj `kotlinx.html`, aby uzyskać kompleksowy, dobrze przetestowany HTML DSL.
+### Problem 2: Zaimplementuj maszynę stanów za pomocą współprogramów
+**Opis problemu:** Zbuduj maszynę stanów opartą na współprogramach dla postaci w grze, która przetwarza zdarzenia wejściowe, przejścia między stanami i obsługuje wywołania zwrotne animacji.
+**Krok 1 — Zrozum problem:**
+Potrzebujemy: (1) stanów z akcjami wejścia/wyjścia, (2) przejść sterowanych zdarzeniami, (3) pętli przetwarzania opartej na współprogramach, (4) wywołań zwrotnych animacji przy przejściach stanów. Automat stanu działa jako długowieczna współprogram, korzystając ze zdarzeń z kanału.
+**Krok 2 — Zidentyfikuj podejście:**
+- Użyj zapieczętowanej klasy dla stanów i zdarzeń.
+- Użyj`Channel`do przekazywania zdarzeń.
+- Pętla maszyny stanu zużywa zdarzenia za pomocą`for (event in channel)`.
+- Przejścia wyzwalają wywołania zwrotne wyjścia/wejścia.
+**Krok 3 — Wdróż rozwiązanie:**
+```kotlin
+sealed class GameState {
+    data object Idle : GameState()
+    data object Walking : GameState()
+    data object Running : GameState()
+    data object Attacking : GameState()
+    data class Dead(val cause: String) : GameState()
+}
+
+sealed class GameEvent {
+    data object Move : GameEvent()
+    data object Run : GameEvent()
+    data object Attack : GameEvent()
+    data object Stop : GameEvent()
+    data class TakeDamage(val amount: Int) : GameEvent()
+}
+
+class CharacterStateMachine(
+    private val scope: CoroutineScope,
+    private val onStateChange: suspend (GameState) -> Unit
+) {
+    private var currentState: GameState = GameState.Idle
+    private val eventChannel = Channel<GameEvent>(Channel.UNLIMITED)
+    var health: Int = 100; private set
+
+    init {
+        scope.launch {
+            onStateChange(currentState)
+            for (event in eventChannel) {
+                processEvent(event)
+            }
+        }
+    }
+
+    suspend fun send(event: GameEvent) {
+        eventChannel.send(event)
+    }
+
+    private suspend fun processEvent(event: GameEvent) {
+        val newState = when (currentState) {
+            is GameState.Dead -> return  // No transitions from dead
+
+            GameState.Idle -> when (event) {
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Walking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Running -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Attacking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+        }
+
+        if (newState != currentState) {
+            currentState = newState
+            onStateChange(newState)
+        }
+    }
+
+    private suspend fun handleDamage(event: GameEvent.TakeDamage): GameState {
+        health -= event.amount
+        return if (health <= 0) GameState.Dead("Defeated") else currentState
+    }
+}
+
+// Usage
+val machine = CharacterStateMachine(
+    scope = CoroutineScope(Dispatchers.Default)
+) { state ->
+    println("State changed to: $state")
+    when (state) {
+        GameState.Idle -> playAnimation("idle")
+        GameState.Walking -> playAnimation("walk")
+        GameState.Running -> playAnimation("run")
+        GameState.Attacking -> playAnimation("attack")
+        is GameState.Dead -> playAnimation("death")
+    }
+}
+
+machine.send(GameEvent.Move)      // Walking
+machine.send(GameEvent.Run)       // Running
+machine.send(GameEvent.Attack)    // Attacking
+machine.send(GameEvent.TakeDamage(120))  // Dead
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Bezpieczeństwo typów: zapieczętowane klasy zapewniają obsługę wszystkich stanów i zdarzeń. Kompilator wyłapuje brakujące przejścia.
+- Oparte na współprogramie: zdarzenia są przetwarzane sekwencyjnie, bez blokowania. Kanał zapewnia przeciwciśnienie.
+- Cykl życia: anulowanie zakresu całkowicie zatrzymuje maszynę stanu.
+- Produkcja: w przypadku złożonych maszyn stanowych użyj`tinder-statemachine`lub modeluj stany za pomocą formalnej biblioteki maszyn stanowych.
 ---
 
 ## Streszczenie

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fortran
 Fortran (tłumaczenie formuł) to najstarszy wciąż szeroko używany język programowania wysokiego poziomu, opracowany przez IBM w 1957 r. do obliczeń naukowych i inżynieryjnych. Pomimo swojego wieku współczesny Fortran (Fortran 2008/2018/2023) jest wydajnym językiem o wysokiej wydajności, szeroko stosowanym w numerycznych przewidywaniach pogody, obliczeniowej dynamice płynów, symulacjach fizycznych, modelowaniu finansowym i obliczeniach o wysokiej wydajności (HPC). Wiele najszybszych superkomputerów na świecie obsługuje kod Fortran.
 Język znacznie ewoluował od swoich początków. Współczesny Fortran ma moduły, typy pochodne, procedury generyczne, tablice współrzędne (programowanie równoległe) i interoperacyjność z C. Pozostaje językiem wybieranym w wielu naukowych zastosowaniach obliczeniowych, gdzie wydajność jest najważniejsza.
@@ -55,7 +56,7 @@ Język znacznie ewoluował od swoich początków. Współczesny Fortran ma modu�
 |----------|---------|--------------------------------|
 | **Niszowa społeczność** | Małe i wyspecjalizowane — głównie naukowe/HPC | Aktywna społeczność w dziedzinie nauk obliczeniowych |
 | **Ograniczony ekosystem** | Mniej bibliotek niż Python, Java lub C++ | Użyj BLAS/LAPACK do pracy numerycznej; C interoperacyjność dla innych potrzeb |
-| **Nie ogólnego zastosowania** | Słabe w przypadku programowania w Internecie, urządzeniach mobilnych, GUI lub systemach | Użyj Fortranu do obliczeń; zawiń w Python/C dla aplikacji |
+| **Nie ogólnego przeznaczenia** | Słabe w przypadku programowania w Internecie, urządzeniach mobilnych, GUI lub systemach | Użyj Fortranu do obliczeń; zawiń w Python/C dla aplikacji |
 | **Percepcja** | Często postrzegane jako „przestarzałe” pomimo nowoczesnych możliwości | Skoncentruj się na jego mocnych stronach: numerycznych i HPC |
 | **Zatrudnianie** | Niewielu deweloperów Fortranu wchodzi na rynek | Obecni eksperci w środowisku akademickim i laboratoriach krajowych |
 ---
@@ -778,6 +779,162 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | Ogólne tworzenie aplikacji | Nie nadaje się | Python, Java, Go |
 | Tworzenie stron internetowych | Nie nadaje się | JavaScript, Python |
 | Analiza danych (interaktywna) | Nie przepływ pracy | Python, R |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między Fortranem 90 a nowoczesnym Fortranem (2008+)?
+**A:** Nowoczesny Fortran dodał wiele funkcji, które czynią go bardziej wyrazistym:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### P2: Czym tablice Fortran różnią się od tablic C?
+**A:** Tablice Fortran to najwyższej klasy obiekty z wbudowanymi operacjami:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### P3: Jak osiągnąć maksymalną wydajność w Fortranie?
+**O:** Kluczowe praktyki:
+- Użyj jawnego`intent`dla wszystkich fikcyjnych argumentów
+- Używaj wszędzie `implicit none`
+- Preferuj operacje tablicowe zamiast pętli
+- Używaj wzorców ciągłego dostępu do pamięci
+- Użyj flag optymalizacji kompilatora:`-O3 -march=native -ffast-math`
+- Profil za pomocą`gprof`lub narzędzi specyficznych dla kompilatora
+- Użyj`pure`i`elemental`dla funkcji, które kompilator może zoptymalizować
+### P4: Jak połączyć Fortran z C?
+**A:** Użyj modułu `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### P5: Jakiego systemu kompilacji powinienem używać w projektach Fortran?
+**O:** CMake ma doskonałą obsługę języka Fortran. FPM (Fortran Package Manager) to nowoczesna opcja natywna:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Rozwiązywanie PDE za pomocą różnic skończonych
+**Krok 1: Zrozum problem**
+Rozwiąż równanie ciepła 1D: du/dt = alfa * d²u/dx²
+**Krok 2: Zidentyfikuj podejście**
+Dyskretyzuj przestrzeń i czas, korzystając ze skończonych różnic. Użyj wyraźnego schematu.
+**Krok 3: Wdróż**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź zachowanie, zbieżność z zagęszczeniem siatki i porównaj z rozwiązaniem analitycznym.
+### Problem 2: Diagonalizacja macierzy
+**Krok 1: Zrozum problem**
+Znajdź wartości własne i wektory własne macierzy symetrycznej.
+**Krok 2: Zidentyfikuj podejście**
+Użyj procedury`dsyev`firmy LAPACK za pośrednictwem interfejsu Fortranu.
+**Krok 3: Wdróż**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**Krok 4: Zweryfikuj**
+Sprawdź, czy A*v = lambda*v dla każdej pary własnej.
 ---
 
 ## Streszczenie

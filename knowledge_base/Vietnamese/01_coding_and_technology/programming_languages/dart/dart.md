@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
-# phi tiêu
+
+# Phi tiêu
 Dart là ngôn ngữ lập trình được tối ưu hóa cho khách hàng do Google phát triển, phát hành lần đầu tiên vào năm 2013. Mặc dù ban đầu Dart được định vị là ngôn ngữ thay thế JavaScript tiềm năng cho trình duyệt web, nhưng nó nhận thấy mục đích chính là ngôn ngữ đằng sau **Flutter** — bộ công cụ giao diện người dùng đa nền tảng của Google để xây dựng các ứng dụng di động, web, máy tính để bàn và nhúng từ một cơ sở mã duy nhất.
-Dart kết hợp các tính năng tốt nhất của các ngôn ngữ hiện đại: hướng đối tượng, có kiểu gõ tùy chọn (âm thanh an toàn kể từ Dart 3), hỗ trợ lập trình không đồng bộ với`async`/`await`và biên dịch thành cả mã máy gốc (dành cho thiết bị di động/máy tính để bàn) và JavaScript (dành cho web).
+Dart kết hợp các tính năng tốt nhất của các ngôn ngữ hiện đại: hướng đối tượng, có kiểu gõ tùy chọn (không có âm thanh an toàn kể từ Dart 3), hỗ trợ lập trình không đồng bộ với`async`/`await`và biên dịch thành cả mã máy gốc (dành cho thiết bị di động/máy tính để bàn) và JavaScript (dành cho web).
 ---
 
 ## Tại sao phi tiêu lại quan trọng
@@ -943,12 +944,12 @@ FutureBuilder<List<Item>>(
 ### Mục tiêu triển khai Flutter
 | Nền tảng | Lệnh xây dựng | Đầu ra |
 |----------|--------------|--------|
-| **Android** |  __BẢO VỆ_0__ / __BẢO VỆ_1__ | APK / AAB cho Cửa hàng Play |
-| **iOS** |  __BẢO VỆ_2__ | IPA cho App Store |
-| **Web** |  __BẢO VỆ_3__ | HTML/JS/CSS tĩnh |
-| **Cửa sổ** |  __BẢO VỆ_4__ | MSIX hoặc exe độc ​​lập |
-| **macOS** |  __BẢO VỆ_5__ | gói .app |
-| **Linux** |  __BẢO VỆ_6__ | Nhị phân + tài sản |
+| **Android** | `flutter build apk`/`flutter build appbundle`| APK / AAB cho Cửa hàng Play |
+| **iOS** | `flutter build ipa`| IPA cho App Store |
+| **Web** | `flutter build web`| HTML/JS/CSS tĩnh |
+| **Cửa sổ** | `flutter build windows`| MSIX hoặc exe độc ​​lập |
+| **macOS** | `flutter build macos`| gói .app |
+| **Linux** | `flutter build linux`| Nhị phân + tài sản |
 ```bash
 # Build commands
 flutter build apk --release                    # Android APK
@@ -984,6 +985,171 @@ flutter build apk --release --dart-define=ENV=staging
 | Phát triển phụ trợ | Không phải trường hợp sử dụng chính | Đi, Node.js, Python |
 | Khoa học dữ liệu / ML | Không phù hợp | Python, R |
 | Lập trình hệ thống | Không phù hợp | C, C++, Rust |
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Tính an toàn vô hiệu của Dart hoạt động như thế nào?
+**A:** Dart 2.12+ không có âm thanh an toàn. Các biến theo mặc định là không thể rỗng; sử dụng`?`để cho phép null:
+```dart
+String name = 'Alice';    // Cannot be null
+String? nickname;          // Can be null
+// name = null;            // Compile error!
+
+// Null-aware operators
+int? age;
+int displayAge = age ?? 0;        // Elvis: default if null
+int len = age?.toString().length ?? 0;  // Safe chaining
+
+// Null assertion (use sparingly)
+String! forced = nullableString!;  // Throws if null
+
+// Late initialization
+late final Config config;  // Assigned before first use
+```
+
+### Câu 2: Sự khác biệt giữa`Future`và`Stream`là gì?
+**A:**`Future`thể hiện một kết quả không đồng bộ; `Stream`đại diện cho một chuỗi các sự kiện không đồng bộ:
+```dart
+// Future — one value, later
+Future<String> fetchName() async => 'Alice';
+
+// Stream — multiple values over time
+Stream<int> counter() async* {
+  for (int i = 0; i < 10; i++) {
+    await Future.delayed(Duration(seconds: 1));
+    yield i;
+  }
+}
+
+// Consuming
+counter().listen(print);
+// or
+await for (final n in counter()) {
+  print(n);
+}
+```
+
+### Câu 3: Làm cách nào để quản lý trạng thái trong ứng dụng Flutter?
+**A:** Nhiều cách tiếp cận tùy thuộc vào độ phức tạp:
+```dart
+// Simple: StatefulWidget
+class CounterWidget extends StatefulWidget {
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+class _CounterWidgetState extends State<CounterWidget> {
+  int _count = 0;
+  void increment() => setState(() => _count++);
+}
+
+// Medium: Provider (dependency injection)
+// Complex: Riverpod, BLoC, or Redux
+```
+
+### Câu 4: Các phương thức mở rộng hoạt động như thế nào trong Dart?
+**A:** Tiện ích mở rộng thêm chức năng vào các loại hiện có mà không cần kế thừa:
+```dart
+extension StringExtras on String {
+  String get capitalized => '${this[0].toUpperCase()}${substring(1)}';
+  bool get isEmail => contains(RegExp(r'@.+\..+'));
+}
+
+'hello'.capitalized  // 'Hello'
+'user@example.com'.isEmail  // true
+```
+
+### Câu hỏi 5: Làm cách nào để viết mã Dart/Flutter hiệu quả?
+**Đ:** Các phương pháp chính:
+- Sử dụng các hàm tạo`const`bất cứ khi nào có thể
+- Tránh xây dựng lại các tiện ích — sử dụng`const`,`final`và`shouldRebuild`
+- Sử dụng`ListView.builder`thay vì`ListView`cho danh sách lớn
+- Hồ sơ với Flutter DevTools
+- Sử dụng`compute()`cho các hoạt động tốn kém trên các luồng riêng biệt
+- Giảm thiểu các lệnh gọi`setState`— hãy nêu cụ thể những gì cần xây dựng lại
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng ứng dụng khách API an toàn loại
+**Bước 1: Tìm hiểu vấn đề**
+Tạo ứng dụng khách API tìm nạp dữ liệu và trả về các đối tượng được nhập chính xác.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng các lớp Dart với`fromJson`/`toJson`, async/await và các lớp kín để có kết quả.
+**Bước 3: Thực hiện**```dart
+sealed class ApiResult<T> {
+  const ApiResult();
+}
+class ApiSuccess<T> extends ApiResult<T> {
+  final T data;
+  const ApiSuccess(this.data);
+}
+class ApiError<T> extends ApiResult<T> {
+  final String message;
+  final int? statusCode;
+  const ApiError(this.message, {this.statusCode});
+}
+
+class User {
+  final String name;
+  final String email;
+  User({required this.name, required this.email});
+  factory User.fromJson(Map<String, dynamic> json) =>
+    User(name: json['name'], email: json['email']);
+}
+
+class ApiClient {
+  final http.Client _client;
+  ApiClient(this._client);
+
+  Future<ApiResult<User>> getUser(String id) async {
+    try {
+      final response = await _client.get(
+        Uri.parse('https://api.example.com/users/$id'),
+      );
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return ApiSuccess(User.fromJson(json));
+      }
+      return ApiError('Failed', statusCode: response.statusCode);
+    } catch (e) {
+      return ApiError(e.toString());
+    }
+  }
+}
+```
+
+**Bước 4: Xác minh**
+Kiểm tra với máy khách HTTP giả. Xác minh việc xử lý lỗi đối với lỗi mạng và phản hồi xấu.
+### Vấn đề 2: Triển khai Reactive Search với Debounce
+**Bước 1: Tìm hiểu vấn đề**
+Xây dựng trường tìm kiếm truy vấn API nhưng loại bỏ dữ liệu đầu vào để tránh yêu cầu quá mức.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng Luồng phi tiêu với`debounceTime`và`distinct`.
+**Bước 3: Thực hiện**```dart
+import 'dart:async';
+
+class SearchController {
+  final _controller = StreamController<String>();
+  final _results = <String>[];
+
+  Stream<List<String>> get results => _controller.stream
+    .debounceTime(Duration(milliseconds: 300))
+    .distinct()
+    .asyncMap(_fetchResults);
+
+  void onQuery(String query) => _controller.add(query);
+
+  Future<List<String>> _fetchResults(String query) async {
+    // Simulate API call
+    await Future.delayed(Duration(milliseconds: 200));
+    return ['Result 1 for $query', 'Result 2 for $query'];
+  }
+
+  void dispose() => _controller.close();
+}
+```
+
+**Bước 4: Kiểm tra**
+Xác minh rằng việc nhập nhanh chỉ kích hoạt một lệnh gọi API sau khoảng thời gian gỡ lỗi.
 ---
 
 ## Bản tóm tắt

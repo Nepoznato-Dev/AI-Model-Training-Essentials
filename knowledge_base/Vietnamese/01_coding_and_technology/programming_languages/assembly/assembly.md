@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Hợp ngữ
 Hợp ngữ là ngôn ngữ lập trình cấp thấp nhất mà con người có thể đọc được. Nó cung cấp sự trình bày trực tiếp các hướng dẫn mã máy của máy tính bằng cách sử dụng các mã ghi nhớ (như`MOV`,`ADD`,`JMP`) thay vì nhị phân thô. Mỗi ngôn ngữ hợp ngữ dành riêng cho một kiến ​​trúc bộ xử lý cụ thể (x86, ARM, MIPS, RISC-V) — mã được viết cho một kiến ​​trúc sẽ không chạy trên kiến ​​trúc khác.
-Ngôn ngữ hội không được sử dụng để xây dựng ứng dụng. Nó được sử dụng khi bạn cần kiểm soát tuyệt đối phần cứng: viết nhân hệ điều hành, trình điều khiển thiết bị, bộ tải khởi động, chương trình cơ sở nhúng, các đoạn mã quan trọng về hiệu năng, kỹ thuật đảo ngược và hiểu cách máy tính thực sự thực thi các hướng dẫn.
+Ngôn ngữ hội không được sử dụng để xây dựng ứng dụng. Nó được sử dụng khi bạn cần kiểm soát tuyệt đối phần cứng: viết nhân hệ điều hành, trình điều khiển thiết bị, bộ tải khởi động, chương trình cơ sở nhúng, các đoạn mã quan trọng về hiệu năng, kỹ thuật đảo ngược và hiểu cách máy tính thực sự thực hiện các hướng dẫn.
 ---
 
 ## Tại sao hội lại quan trọng
@@ -112,13 +113,13 @@ _start:
 Hiểu các chế độ địa chỉ là rất quan trọng để viết hợp ngữ hiệu quả. Mỗi chế độ kiểm soát cách các toán hạng được định vị.
 | Chế độ | Cú pháp (NASM) | Mô tả |
 |------|--------------||-------------|
-| **Ngay lập tức** |  __BẢO VỆ_0__ | Toán hạng là một giá trị không đổi |
-| **Đăng ký** |  __BẢO VỆ_1__ | Toán hạng nằm trong sổ đăng ký |
-| **Trực tiếp** |  __BẢO VỆ_2__ | Toán hạng ở địa chỉ bộ nhớ cố định |
-| **Đăng ký gián tiếp** |  __BẢO VỆ_3__ | Toán hạng ở địa chỉ trong sổ đăng ký |
-| **Đế + chuyển vị** |  __BẢO VỆ_4__ | Địa chỉ = thanh ghi + offset không đổi |
-| **Chỉ số được chia tỷ lệ** |  __BẢO VỆ_5__ | Địa chỉ = cơ sở + (chỉ số × tỷ lệ) |
-| **SIB đầy đủ** |  __BẢO VỆ_6__ | Cơ sở + (chỉ số × tỷ lệ) + chuyển vị |
+| **Ngay lập tức** | `mov eax, 42`| Toán hạng là một giá trị không đổi |
+| **Đăng ký** | `mov eax, ebx`| Toán hạng nằm trong sổ đăng ký |
+| **Trực tiếp** | `mov eax, [0x4000]`| Toán hạng ở địa chỉ bộ nhớ cố định |
+| **Đăng ký gián tiếp** | `mov eax, [rbx]`| Toán hạng ở địa chỉ trong sổ đăng ký |
+| **Đế + chuyển vị** | `mov eax, [rbx + 8]`| Địa chỉ = thanh ghi + offset không đổi |
+| **Chỉ số được chia tỷ lệ** | `mov eax, [rbx + rcx*4]`| Địa chỉ = cơ sở + (chỉ số × tỷ lệ) |
+| **SIB đầy đủ** | `mov eax, [rbx + rcx*4 + 16]`| Cơ sở + (chỉ số × tỷ lệ) + chuyển vị |
 ```nasm
 ; Demonstrating various addressing modes
 section .data
@@ -617,7 +618,7 @@ case_3:
     ret
 ```
 
-### Mẫu 4: Truyền tải danh sách liên kết
+### Mẫu 4: Tra cứu danh sách liên kết
 ```nasm
 ; Structure: Node { int value; Node* next; }
 ; RDI = pointer to head node
@@ -733,6 +734,85 @@ void process_data(void) {
 | Phần mềm nhúng (kim loại trần) | Không có ngôn ngữ cấp cao hơn | C, Rỉ Sét |
 | Giáo dục | Tìm hiểu kiến ​​trúc máy tính | — |
 | Phát triển ứng dụng chung | Không thực tế đối với các chương trình phức tạp | Bất kỳ ngôn ngữ cấp cao nào |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Sự khác biệt giữa lắp ráp RISC và CISC là gì?
+**A:** CISC (x86) có các lệnh phức tạp, có độ dài thay đổi. RISC (ARM) có các hướng dẫn đơn giản, có độ dài cố định:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Câu 2: Stack hoạt động như thế nào trong Assembly?
+**A:** Ngăn xếp tăng dần xuống dưới. `push`giảm SP và tích trữ; `pop`tải và tăng SP:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Câu 3: Làm cách nào để gọi các hàm trong hợp ngữ?
+**A:** Tuân theo quy ước gọi (System V AMD64 trên Linux, Windows x64 trên Windows):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: Những hướng dẫn lắp ráp quan trọng nhất cần biết là gì?
+**A:** Chuyển động dữ liệu, số học, luồng điều khiển và các hoạt động ngăn xếp tạo thành cốt lõi.
+### Câu 5: Hợp ngữ được sử dụng như thế nào trong nghiên cứu bảo mật?
+**Đáp:** Kỹ thuật đảo ngược, phát triển khai thác, phân tích phần mềm độc hại và hiểu đầu ra của trình biên dịch đều yêu cầu khả năng hiểu biết về hợp ngữ.
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Triển khai vòng lặp trong Assembly
+**Bước 1: Tìm hiểu vấn đề**
+Tổng các số nguyên từ 1 đến N.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng một thanh ghi bộ đếm và bộ tích lũy.
+**Bước 3: Thực hiện**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Bước 4: Tối ưu hóa**
+Sử dụng công thức N*(N+1)/2 cho O(1) thay vì O(N).
 ---
 
 ## Bản tóm tắt

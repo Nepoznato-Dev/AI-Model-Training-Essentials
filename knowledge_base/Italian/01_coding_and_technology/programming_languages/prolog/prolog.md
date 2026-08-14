@@ -454,7 +454,7 @@ count_matching(Pred, [H|T], Acc, Count) :-
 count_matching(Pred, List, Count) :- count_matching(Pred, List, 0, Count).
 ```
 
-### Modello 3: Genera e testa```prolog
+### Modello 3: generare e testare```prolog
 pythagorean_triple(N, Triple) :-
     between(1, N, A), between(A, N, B), between(B, N, C),
     C*C =:= A*A + B*B, Triple = (A, B, C).
@@ -533,10 +533,133 @@ swipl -g main -o myapp.sav -c main.pl
 | Sistemi esperti | Adattamento naturale: fatti + regole = sistema esperto | Motori per regole aziendali (Drools) |
 | Pianificazione/orario | Il CLP risolve bene questi problemi | Strumenti di sala operatoria, OptaPlanner |
 | Digitare ricerca di sistema | L'unificazione è il fondamento | Implementare in OCaml, Haskell, Rust |
-| Applicazioni Web | Non adatto | Python, Node.js, Go |
+| Applicazioni web | Non adatto | Python, Node.js, Go |
 | Scienza dei dati/ML | Non l'ecosistema | Pitone, R |
 | Codice critico per le prestazioni | Prolog è lento nel calcolo | C, C++, Ruggine |
 | Programmazione generica | Possibile ma imbarazzante | Python, Go, Java |
+---
+
+## Domande e risposte sintetiche
+### D1: In cosa differisce l'unificazione di Prolog dall'assegnazione in altri linguaggi?
+**R:** L'unificazione è una corrispondenza di pattern bidirezionale, non un'assegnazione:
+```prolog
+% Unification (=) tries to make both sides equal
+X = 5.              % X is now 5
+5 = X.              % same thing — X is 5
+f(X, b) = f(a, Y).  % X = a, Y = b
+
+% Once bound, a variable cannot change (in the same scope)
+X = 1, X = 2.      % FAILS — X is already 1
+
+% Anonymous variable _ matches anything
+f(a, _) = f(a, b).  % true — _ matches b
+```
+
+### D2: Come funziona il backtracking in Prolog?
+**R:** Quando un obiettivo fallisce, Prolog torna all'ultimo punto di scelta e prova l'alternativa successiva:
+```prolog
+% Multiple rules create choice points
+color(red). color(green). color(blue).
+
+?- color(X).        % X = red ; X = green ; X = blue ; false.
+
+% Cut (!) prevents backtracking
+max(X, Y, X) :- X >= Y, !.
+max(_, Y, Y).
+% Without cut, max(3, 5, Z) would also try the first rule and fail
+```
+
+### D3: Come posso lavorare con gli elenchi in Prolog?
+**R:** Gli elenchi utilizzano la corrispondenza del modello testa/coda:
+```prolog
+% Pattern matching on lists
+[X|Xs] = [1, 2, 3].  % X = 1, Xs = [2, 3]
+
+% Common list predicates
+my_length([], 0).
+my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+
+my_append([], L, L).
+my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+
+my_member(X, [X|_]).
+my_member(X, [_|T]) :- my_member(X, T).
+```
+
+### D4: Quando dovrei usare Prolog invece di altri linguaggi?
+**R:** Prolog eccelle in:
+- Soddisfazione dei vincoli (programmazione, enigmi)
+- Sistemi basati su regole (sistemi esperti, validazione)
+- Attraversamento del grafico/albero
+- Elaborazione del linguaggio naturale
+- Calcolo simbolico
+- Qualsiasi problema esprimibile come relazioni logiche
+### D5: Quali sono le trappole più comuni in Prolog?
+**R:** Questioni chiave:
+- Ricorsione infinita: metti sempre al primo posto il caso base
+- Backtracking involontario: utilizzare il taglio`!`o`once/1`
+- Si verifica il controllo:`X = f(X)`esegue cicli per impostazione predefinita (usa`unify_with_occurs_check`)
+- Tagli verdi (ottimizzazione) vs tagli rossi (cambia significato) - preferisci il verde
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: risolvere il puzzle delle N-Regine
+**Passaggio 1: comprendere il problema**
+Posiziona N regine su una scacchiera NxN in modo che due regine non si attacchino a vicenda.
+**Passaggio 2: identificare l'approccio**
+Utilizza la generazione basata su vincoli: posiziona le regine colonna per colonna, controllando la sicurezza.
+**Passaggio 3: implementazione**```prolog
+n_queens(N, Qs) :-
+    length(Qs, N),
+    numlist(1, N, Rows),
+    permutation(Rows, Qs),
+    safe_queens(Qs).
+
+safe_queens([]).
+safe_queens([Q|Qs]) :-
+    no_attack(Q, Qs, 1),
+    safe_queens(Qs).
+
+no_attack(_, [], _).
+no_attack(Q, [Q1|Qs], D) :-
+    Q =\= Q1,
+    abs(Q - Q1) =\= D,
+    D1 is D + 1,
+    no_attack(Q, Qs, D1).
+```
+
+**Passaggio 4: verifica**
+`?- n_queens(8, Qs).`dovrebbe trovare 92 soluzioni.
+### Problema 2: costruire un sistema esperto semplice
+**Passaggio 1: comprendere il problema**
+Diagnosticare i problemi dell'auto in base ai sintomi.
+**Passaggio 2: identificare l'approccio**
+Utilizza le regole Prolog per codificare la conoscenza diagnostica.
+**Passaggio 3: implementazione**```prolog
+% Facts about symptoms
+symptom(car_wont_start).
+symptom(clicking_sound).
+
+% Rules
+diagnosis(battery_dead) :-
+    symptom(car_wont_start),
+    symptom(clicking_sound).
+
+diagnosis(starter_motor) :-
+    symptom(car_wont_start),
+    symptom(single_click),
+    \+ symptom(clicking_sound).
+
+diagnosis(out_of_fuel) :-
+    symptom(engine_cranks),
+    symptom(engine_wont_catch).
+
+% Query
+?- diagnosis(X).
+```
+
+**Passaggio 4: Estendi**
+Aggiungi punteggi di confidenza, chiedi all'utente i sintomi in modo interattivo e concatena le diagnosi.
 ---
 
 ## Riepilogo

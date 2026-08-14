@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Scala
 Scala (Ngôn ngữ có thể mở rộng) là ngôn ngữ lập trình được biên dịch, gõ tĩnh, kết hợp các mô hình lập trình hướng đối tượng và chức năng. Được tạo bởi Martin Odersky và phát hành lần đầu tiên vào năm 2004, Scala chạy trên JVM (cũng là Scala.js cho JavaScript và Scala Native). Nó được thiết kế để giải quyết tính dài dòng của Java trong khi vẫn duy trì khả năng tương tác Java đầy đủ.
 Scala là ngôn ngữ đằng sau Apache Spark (khung xử lý dữ liệu lớn) và nó được sử dụng rộng rãi trong kỹ thuật dữ liệu, hệ thống phân tán và dịch vụ phụ trợ. Các công ty như Twitter (nay là X), LinkedIn, Netflix và The Guardian đều sử dụng Scala.
@@ -408,17 +409,17 @@ lazy val root = project
 ### Lệnh xây dựng chính
 | Lệnh | Mô tả |
 |----------|-------------|
-|  __BẢO VỆ_0__ | Tạo dự án Scala 3 mới từ mẫu |
-|  __BẢO VỆ_1__ | Tổng hợp nguồn chính |
-|  __BẢO VỆ_2__ | Chạy tất cả các bài kiểm tra |
-|  __BẢO VỆ_3__ | Chạy lớp chính |
-|  __BẢO VỆ_4__ | Chạy một lớp chính cụ thể |
-|  __BẢO VỆ_5__ | Bắt đầu REPL với dự án trên đường dẫn lớp |
-|  __BẢO VỆ_6__ | Đầu ra được biên dịch sạch |
-|  __BẢO VỆ_7__ | Xây dựng JAR béo (với plugin sbt-assembly) |
-|  __BẢO VỆ_8__ | Mã định dạng với Scalafmt |
-|  __BẢO VỆ_9__ | Kiểm tra định dạng mã |
-|  __BẢO VỆ_10__ | Biên dịch liên tục (biên dịch lại khi thay đổi) |
+| `sbt new scala/scala3.g8`| Tạo dự án Scala 3 mới từ mẫu |
+| `sbt compile`| Tổng hợp nguồn chính |
+| `sbt test`| Chạy tất cả các bài kiểm tra |
+| `sbt run`| Chạy lớp chính |
+| `sbt runMain com.example.App`| Chạy một lớp chính cụ thể |
+| `sbt console`| Bắt đầu REPL với dự án trên đường dẫn lớp |
+| `sbt clean`| Đầu ra được biên dịch sạch |
+| `sbt assembly`| Xây dựng JAR béo (với plugin sbt-assembly) |
+| `sbt scalafmt`| Mã định dạng với Scalafmt |
+| `sbt scalafmtCheck`| Kiểm tra định dạng mã |
+| `sbt ~compile`| Biên dịch liên tục (biên dịch lại khi thay đổi) |
 ### Định dạng mã (.scalafmt.conf)
 ```
 # .scalafmt.conf
@@ -605,7 +606,7 @@ object ScalaUtils {
 // Java: ScalaUtils.process("hello");
 ```
 
-### Tương tác gốc (Scala gốc)
+### Tương tác gốc (Scala Native)
 ```scala
 // Scala Native — compile to native code without JVM
 import scala.scalanative.unsafe._
@@ -741,11 +742,11 @@ class OrderService(repo: OrderRepository[IO]) {
 ### Công cụ lập hồ sơ
 | Công cụ | Mục đích | Cách sử dụng |
 |------|----------|-------|
-| **JMH** | Đo điểm chuẩn vi mô | `sbt-jmh`plugin |
+| **JMH** | Đo điểm chuẩn vi mô |  Plugin`sbt-jmh`|
 | **VisualVM** | Lập hồ sơ và giám sát JVM |  Lệnh`jvisualvm`|
 | **Trình hồ sơ không đồng bộ** | Cấu hình CPU/bộ nhớ có chi phí thấp | Đính kèm với JVM đang chạy |
 | **Bộ công cụ của bạn** | Hồ sơ thương mại | Tích hợp IDE |
-| **phạm vi bảo hiểm sbt** | Bảo hiểm mã |  __BẢO VỆ_2__ |
+| **phạm vi bảo hiểm sbt** | Bảo hiểm mã | `sbt coverage test coverageReport`|
 ### Đo điểm chuẩn với JMH
 ```scala
 // Add to plugins.sbt: addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.4.6")
@@ -849,11 +850,193 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Kịch bản | Tại sao Scala | Thay thế tốt hơn |
 |----------|----------|-------------------|
 | Dữ liệu lớn (Spark) | Ngôn ngữ Spark chính | Python (PySpark) cho các quy trình đơn giản hơn |
-| Hệ thống phân phối (Akka) | Khung đồng thời trưởng thành | Đi, Erlang/Elixir |
+| Hệ thống phân tán (Akka) | Khung đồng thời trưởng thành | Đi, Erlang/Elixir |
 | Phụ trợ JVM | Thay thế Java ngắn gọn | Java, Kotlin |
 | Lập trình chức năng trên JVM | Sự kết hợp FP + JVM tốt nhất | Clojure |
 | Phát triển ứng dụng chung | Có thể nhưng phức tạp | Python, Go, Java |
 | Khoa học dữ liệu | Có thể nhưng không phải hệ sinh thái | Python, R |
+---
+
+## Hỏi đáp tổng hợp
+### Q1: Suy luận kiểu của Scala giảm bản mẫu soạn sẵn như thế nào so với Java?
+**A:** Trình biên dịch của Scala suy ra các kiểu cho khai báo`val`/ `var`, kiểu trả về phương thức và hàm ẩn danh. Điều này giúp loại bỏ sự cần thiết của các chú thích kiểu rõ ràng trong hầu hết các trường hợp:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+Trình biên dịch cũng suy ra các tham số kiểu, trả về kiểu của phương thức biểu thức đơn và kiểu khớp mẫu. Điều này làm cho mã ngắn gọn mà không ảnh hưởng đến sự an toàn.
+### Câu 2: Khi nào tôi nên sử dụng`case class`so với`class`thông thường?
+**Đáp:** Sử dụng`case class`cho các vật mang dữ liệu bất biến — chúng tự động cung cấp`equals`,`hashCode`,`toString`,`copy`và hỗ trợ khớp mẫu:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Nguyên tắc nhỏ: nếu lớp của bạn chủ yếu là dữ liệu, hãy sử dụng`case class`. Nếu nó có trạng thái có thể thay đổi hoặc hành vi phức tạp, hãy sử dụng`class`thông thường.
+### Câu 3: Làm cách nào để xử lý lỗi một cách rõ ràng trong Scala?
+**A:** Scala ưu tiên các kiểu trả về như`Option`,`Either`và`Try`hơn là đưa ra các ngoại lệ:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Câu 4: Sự khác biệt giữa`trait`và`abstract class`là gì?
+**A:** Các đặc điểm hỗ trợ nhiều kế thừa và có thể có các tham số loại cũng như phương thức cụ thể. Các lớp trừu tượng có thể có các tham số hàm tạo nhưng chỉ hỗ trợ kế thừa đơn:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Câu hỏi 5: Làm cách nào để viết mã Scala hiệu quả trên JVM?
+**Đ:** Các phương pháp chính:
+- Sử dụng`case class`và dữ liệu bất biến để tránh đồng bộ hóa
+- Thích`Vector`,`Map`(không thay đổi) để chia sẻ cấu trúc
+- Sử dụng chú thích`@tailrec`để đảm bảo tối ưu hóa cuộc gọi đuôi
+- Tránh đấm bốc quá mức - sử dụng nguyên hàm`Int`, `Double`
+- Sử dụng`lazy val`cho các tính toán tốn kém
+- Ưu tiên`Stream`/`LazyList`cho các chuỗi lớn
+- Cấu hình với JMH — Phần tóm tắt của Scala sẽ biên dịch thành mã byte hiệu quả
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Triển khai Trình đánh giá biểu thức an toàn kiểu
+**Bước 1: Tìm hiểu vấn đề**
+Chúng ta cần đánh giá các biểu thức toán học với các biến, hỗ trợ phép cộng, phép nhân và tra cứu biến.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng các kiểu dữ liệu đại số (các đặc điểm + lớp trường hợp được niêm phong) để lập mô hình cây biểu thức, sau đó so khớp mẫu để đánh giá.
+**Bước 3: Thực hiện**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**Bước 4: Xác minh và gia hạn**
+Thêm các trường hợp`Div`,`Pow`, `Neg`. Đặc điểm kín đảm bảo trình biên dịch cảnh báo về các kết quả khớp không đầy đủ.
+### Vấn đề 2: Xây dựng DSL đơn giản để tạo HTML
+**Bước 1: Tìm hiểu vấn đề**
+Tạo DSL an toàn loại để tạo chuỗi HTML bằng cú pháp của Scala.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng các lớp tình huống cho các phần tử HTML và chuyển đổi ngầm định để có cú pháp tự nhiên.
+**Bước 3: Thực hiện**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**Bước 4: Xác minh**
+DSL là loại an toàn — bạn không thể vô tình truyền nội dung không phải HTML. Khớp mẫu trên`HtmlNode`đảm bảo hiển thị toàn diện.
+### Vấn đề 3: Đếm từ đồng thời với luồng Akka
+**Bước 1: Tìm hiểu vấn đề**
+Đếm tần số từ trên nhiều tệp lớn cùng một lúc.
+**Bước 2: Xác định phương pháp tiếp cận**
+Sử dụng các bộ sưu tập song song của Scala hoặc Luồng Akka để xử lý đồng thời, sau đó hợp nhất các kết quả.
+**Bước 3: Thực hiện**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**Bước 4: Tối ưu hóa**
+Đối với các tập dữ liệu rất lớn, hãy sử dụng Luồng Akka có áp suất ngược:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## Bản tóm tắt

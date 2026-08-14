@@ -38,16 +38,17 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Julia
 Julia to język programowania wysokiego poziomu i wydajności, przeznaczony do obliczeń technicznych i naukowych. Wydana po raz pierwszy w 2012 r. (1.0 w 2018 r.) aplikacja Julia została stworzona, aby rozwiązać „problem dwóch języków” — polegający na tym, że naukowcy tworzą prototypy w języku Python/R, ale przepisują je w C/C++/Fortran w celu zapewnienia wydajności produkcyjnej. Julia chce być tak łatwa jak Python, ale tak szybka jak C.
 Julia korzysta z kompilacji just-in-time (JIT) za pośrednictwem LLVM, aby osiągnąć wydajność bliską C, zachowując jednocześnie interaktywny, dynamiczny charakter. Posiada pierwszorzędną obsługę obliczeń równoległych, przetwarzania rozproszonego i wyrafinowany system typów z wielokrotnym wysyłaniem.
 ---
 
 ## Dlaczego Julia jest ważna
-- **Szybkość**: Wydajność zbliżona do C dla kodu numerycznego — użytkownik nie musi wykonywać żadnego etapu kompilacji.
+- **Szybkość**: wydajność zbliżona do C dla kodu numerycznego — użytkownik nie musi wykonywać żadnego etapu kompilacji.
 - **Wysyłanie wielokrotne**: Funkcje zachowują się inaczej w zależności od typu WSZYSTKICH argumentów — jest to potężny paradygmat.
 - **Obliczenia naukowe**: Zaprojektowane od podstaw z myślą o matematyce, algebrze liniowej i analizie danych.
-- **Równoległość**: Wbudowana obsługa przetwarzania wieloprocesorowego, wielowątkowego i przetwarzania rozproszonego.
+- **Równoległość**: Wbudowana obsługa przetwarzania wieloprocesowego, wielowątkowego i przetwarzania rozproszonego.
 - **Interoperacyjność**: Można bezpośrednio wywoływać Python, C i Fortran.
 - **Rosnący ekosystem**: Szybko rozwijający się ekosystem pakietów dla dziedzin ML, optymalizacji i nauki.
 ## Kompromisy
@@ -875,6 +876,191 @@ julia --project=. -e '
 | Analiza danych | Możliwy; DataFrames.jl jest dobry | Python (Pandas), R |
 | Tworzenie stron internetowych | Nie nadaje się | JavaScript, Python |
 | Ogólne tworzenie aplikacji | Nie jest to główny przypadek użycia | Python, Go, Java |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Czym różni się wysyłka wielokrotna od wysyłki pojedynczej w językach OOP?
+**A:** W przypadku pojedynczej wysyłki (Java, Python) metoda jest wybierana na podstawie typu pierwszego argumentu (obiektu). W Julii metoda jest wybierana na podstawie typów WSZYSTKICH argumentów:
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+Umożliwia to operacje symetryczne i eliminuje szablonowe wzorce.
+### P2: Jak osiągnąć w Julii wydajność na poziomie C?
+**O:** Kluczowe praktyki:
+- Używaj funkcji stabilnych pod względem typu (zwracaj spójne typy)
+- Używaj konkretnych typów w strukturach, a nie abstrakcyjnych
+- Unikaj zmiennych globalnych (lub uczyń je`const`)
+- Użyj `@inbounds`, aby pominąć sprawdzanie granic (jeśli jest to bezpieczne)
+- Wstępnie przydzielaj tablice zamiast je powiększać
+- Użyj`@simd`dla wektoryzowalnych pętli
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### P3: Jakie są różnice między`Array`,`Tuple`i`NamedTuple`?
+**O:** Każde z nich służy innemu celowi:
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### P4: Jak radzić sobie z błędami i wyjątkami w Julii?
+**A:** Użyj`try/catch`i niestandardowych typów wyjątków:
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### P5: Jak efektywnie korzystać z ekosystemu pakietów Julii?
+**O:** Użyj wbudowanego menedżera pakietów (Pkg) i środowisk:
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Implementacja funkcji całkowania numerycznego
+**Krok 1: Zrozum problem**
+Oblicz całkę oznaczoną funkcji, korzystając z reguły Simpsona.
+**Krok 2: Zidentyfikuj podejście**
+Skorzystaj z funkcji wielokrotnego wysyłania i funkcji wyższego rzędu Julii. Zaakceptuj dowolną wywoływalną funkcję.
+**Krok 3: Wdróż**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**Krok 4: Optymalizacja**
+Dodaj`@inbounds`i wpisz adnotacje dotyczące wydajności. Test porównawczy z`@btime`.
+### Problem 2: Budowa równoległej symulacji Monte Carlo
+**Krok 1: Zrozum problem**
+Oszacuj liczbę pi przy użyciu próbkowania Monte Carlo, równolegle na wszystkich rdzeniach procesora.
+**Krok 2: Zidentyfikuj podejście**
+Użyj `Threads.@threads`, aby uzyskać równoległość pamięci współdzielonej.
+**Krok 3: Wdróż**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**Krok 4: Zweryfikuj**
+Porównaj z`Float64(\pi)`. Zwiększ liczbę próbek, aby uzyskać większą dokładność.
+### Problem 3: Tworzenie niestandardowego typu tablicy przy użyciu transmisji
+**Krok 1: Zrozum problem**
+Utwórz typ `DiagonalMatrix`, który przechowuje tylko elementy ukośne, ale obsługuje standardowe operacje na tablicach.
+**Krok 2: Zidentyfikuj podejście**
+Podtyp`AbstractMatrix`i zaimplementuj wymagane metody.
+**Krok 3: Wdróż**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**Krok 4: Przedłuż**
+Dodaj`setindex!`, optymalizacje mnożenia macierzy i metodę `show`.
 ---
 
 ## Streszczenie

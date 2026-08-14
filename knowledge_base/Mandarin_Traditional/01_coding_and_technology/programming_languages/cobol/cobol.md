@@ -48,7 +48,7 @@ COBOL（通用以業務為導向的語言）是仍在使用的最古老的程式
 - **關鍵業務基礎設施**：銀行和政府每天處理數萬億美元的交易。
 - **穩定性**：20 世紀 70 年代編寫的 COBOL 程式至今仍能可靠運行 — 只需進行最少的更改。
 - **可讀性**：類似英語的語法使非程式設計師可以理解業務邏輯。
-- **十進制算術**：本機支援精確的財務計算（無浮點舍入錯誤）。
+- **十進制算術**：對精確財務計算的本機支援（無浮點舍入錯誤）。
 - **批次**：專為高效處理大量記錄而設計。
 - **就業市場**：COBOL 開發人員的嚴重短缺導致對維護角色的高需求（和高薪）。
 ## 權衡
@@ -128,7 +128,7 @@ COBOL（通用以業務為導向的語言）是仍在使用的最古老的程式
 COBOL的資料劃分是該語言最鮮明的特徵。它使用分層編號系統（層級 01-88）來定義資料結構。
 |水平|目的|範例|
 |--------|---------|---------|
-| **01** |記錄級項（頂級變數或記錄） |`01 WS-EMPLOYEE.`|
+| **01** |記錄級項（頂級變數或記錄）|`01 WS-EMPLOYEE.`|
 | **02–49** |群組或基本項目（子欄位） |`05 EMP-NAME PIC X(30).`|
 | **66** |重新命名子句（資料的替代視圖）|`66 EMP-FULL-NAME RENAMES EMP-FIRST.`|
 | **77** |獨立基本專案（無子專案）|`77 WS-COUNTER PIC 9(5).`|
@@ -167,7 +167,7 @@ COBOL的資料劃分是該語言最鮮明的特徵。它使用分層編號系統
 ```
 
 ### COPY 宣告（Copybooks）
-Copybook 是 COBOL 的程式碼重用機制，類似 C 中的 `#include`。它們作為單獨的成員儲存並在編譯時插入。
+Copybook 是 COBOL 的程式碼重用機制 - 類似於 C 中的 `#include`。它們作為單獨的成員儲存並在編譯時插入。
 ```cobol
        * In the main program — copy in common data definitions
        IDENTIFICATION DIVISION.
@@ -449,7 +449,7 @@ run: $(TARGET)
 |選項 |說明 |範例|
 |--------|-------------|---------|
 |`-free`|自由格式來源（無列限制）|`cobc -free prog.cbl`|
-|`-fixed`|固定格式（傳統列 1-80） |`cobc -fixed prog.cbl`|
+|`-fixed`|固定格式（傳統列 1-80）|`cobc -fixed prog.cbl`|
 |`-O2`|最佳化等級 2 |`cobc -O2 prog.cbl`|
 |`-g`|產生偵錯資訊 |`cobc -g prog.cbl`|
 |`-std=cobol2014`|使用COBOL 2014標準|`cobc -std=cobol2014 prog.cbl`|
@@ -512,7 +512,7 @@ gdb ./payroll
 |問題 |症狀|解決方案 |
 |---------|---------|----------|
 |截斷的資料 |田野被切斷|檢查 PIC 子句大小是否與記錄佈局相符 |
-|數字溢位 |錯誤的計算|驗證 PIC 9(n) 有足夠的數字 |
+|數字溢位 |錯誤的計算 |驗證 PIC 9(n) 有足夠的數字 |
 |檔案狀態錯誤 | WS-檔案狀態不是「00」|檢查檔案 DD 名稱、路徑和權限 |
 |無限迴圈|執行直到永遠不會終止 |驗證迴圈變數在迴圈內被修改 |
 |呼叫失敗 |傳回非零 |檢查 LINKAGE SECTION 是否與呼叫程式相符 |
@@ -778,12 +778,12 @@ gdb ./payroll
 ### 批次最佳化
 |技術|影響 |描述 |
 |------------|--------|-------------|
-| **塊 I/O** |高|使用BLOCK CONTAINS減少物理I/O操作 |
-| **索引存取** |高|使用 INDEXED ORGANIZATION 進行隨機存取查找 |
-| **排序/合併** |中|使用 SORT 動詞進行大型資料集排序 |
-| **最小化顯示** |中| DISPLAY批次處理速度慢；改為寫入檔案|
-| **COMP/COMP-3** |中|二進位/壓縮欄位比 DISPLAY 數字更快 |
-| **緩衝調整** |中|調整順序檔案處理的緩衝區大小 |
+| **块 I/O** |高|使用BLOCK CONTAINS减少物理I/O操作 |
+| **索引访问** |高|使用 INDEXED ORGANIZATION 进行随机访问查找 |
+| **排序/合并** |中等|使用 SORT 动词进行大型数据集排序 |
+| **最小化显示** |中等| DISPLAY批量处理速度慢；改为写入文件|
+| **COMP/COMP-3** |中等|二进制/压缩字段比 DISPLAY 数字更快 |
+| **缓冲调整** |中等|调整顺序文件处理的缓冲区大小 |
 ---
 
 ## 部署和實際使用
@@ -818,16 +818,140 @@ scp bin/payroll server:/opt/cobol/bin/
 ---
 
 ## 何時使用 COBOL
-|場景 |為什麼選擇 COBOL |更好的選擇|
+|場景|為什麼選擇 COBOL |更好的選擇|
 |----------|----------|--------------------|
 |主機維修|現有程式碼庫 | — |
 |批次財務處理|經過驗證、可靠、精確的十進制數學 |用於新系統的 Java、Python |
 |政府遺留系統|現有程式碼庫 | — |
-|學習計算歷史|了解程式設計的演進 | — |
+|學習計算歷史 |了解程式設計的演進 | — |
 |新業務應用|不是現代的選擇 | Java、C#、Python |
 |網頁/行動開發 |不適合| JavaScript、Swift、Kotlin |
 |資料科學/機器學習 |不適合| Python、R |
 ---
 
+## 綜合問答
+### Q1：為什麼 COBOL 60 多年後仍在銀行業使用？
+**答：** COBOL 處理估計 70-80% 的銀行交易。原因：
+- 大量可以正常工作的程式碼庫（數百萬行）
+- 極高的可靠性——這些系統已經在生產中經過了數十年的測試
+- 遷移的成本和風險超過了維護成本
+- COBOL 的冗長、類似英語的語法是自記錄的
+- 語言中內建的十進制算術（無浮點舍入錯誤）
+### Q2：COBOL 如何處理十進制算術而不出現浮點錯誤？
+**A:** COBOL 具有固定精度的本機十進位類型：
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V` 是隱含的小數點。 COBOL 從不使用二元浮點來表示貨幣。
+### Q3：COBOL 程式的結構是怎樣的？
+**答：** 每個 COBOL 程式都有四個部分：
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4：如何在 COBOL 中讀取和處理順序檔？
+**A:** COBOL 擅長文件處理：
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Q5：有哪些工具可用於現代 COBOL 開發？
+**答：** GnuCOBOL（開源）、IBM Enterprise COBOL、Micro Focus 和 VS Code 擴充提供了現代開發環境。使用`cobc -x program.cob`建置。
+---
+
+## 解決問題的思路
+### 問題 1：產生客戶報告
+**第 1 步：了解問題**
+讀取客戶記錄、計算總數並產生格式化報告。
+**第 2 步：確定方法**
+使用 COBOL 的文件處理和報告編寫功能。
+**步驟 3：實施**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**第 4 步：驗證**
+根據來源資料交叉檢查總計。使用邊緣情況進行測試（空白文件、零餘額）。
+### 問題 2：帶有控制中斷的批次
+**第 1 步：了解問題**
+按部門分組處理事務，列印小計。
+**第 2 步：確定方法**
+使用控制中斷邏輯 - 偵測組鍵何時變更。
+**步驟 3：實施**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**第 4 步：驗證**
+檢查是否列印了最後一組的總計。驗證總計等於部門總計的總和。
+---
+
 ＃＃ 概括
-COBOL 是計算早期的遺物，它拒絕消亡——因為它承受不起消亡的代價。世界銀行和政府系統依賴可靠運作了數十年的 COBOL 計畫。儘管如今沒有人會選擇 COBOL 來進行新項目，但該語言對於維護支撐全球金融的基礎設施仍然至關重要。 COBOL 開發人員的短缺使其成為一個利潤驚人的利基市場。
+COBOL 是電腦領域早期幾十年的遺產，但由於大規模替代並不可行，因此仍在積極使用。世界銀行和政府系統依賴可靠運作了數十年的 COBOL 計畫。雖然如今的新項目通常不會選擇 COBOL，但該語言對於維護支援全球金融的基礎設施仍然很重要。 COBOL 開發人員的短缺使其成為一個利潤豐厚的利基市場。

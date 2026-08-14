@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "COBOL"
-descripción: "Referencia completa para el lenguaje de programación COBOL que cubre descripción general, compensaciones, fundamentos de sintaxis, ecosistema y cuándo usarlo".
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "COBOL"
+description: "Comprehensive reference for the COBOL programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [cobol, lenguaje-de-programación, sintaxis, ecosistema, codificación-y-tecnología]
-nivel_dificultad: "avanzado"
-requisitos previos: []
-estimado_reading_time: "34 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [cobol, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "34 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # COBOL
 COBOL (Lenguaje común orientado a los negocios) es uno de los lenguajes de programación más antiguos que aún se utilizan, se desarrolló por primera vez en 1959. Fue diseñado para el procesamiento de datos comerciales: sistemas financieros, nóminas, banca, seguros y aplicaciones gubernamentales. La sintaxis similar al inglés de COBOL estaba destinada a ser legible por gerentes de negocios, no solo por programadores.
@@ -825,4 +829,4 @@ scp bin/payroll server:/opt/cobol/bin/
 ---
 
 ## Resumen
-COBOL es una reliquia de los primeros días de la informática que se niega a morir, porque no puede permitírselo. Los sistemas bancarios y gubernamentales del mundo dependen de programas COBOL que se han ejecutado de manera confiable durante décadas. Si bien hoy nadie elegiría COBOL para un nuevo proyecto, el lenguaje sigue siendo de vital importancia para mantener la infraestructura que sustenta las finanzas globales. La escasez de desarrolladores COBOL lo convierte en un nicho sorprendentemente lucrativo.
+COBOL es un legado de las primeras décadas de la informática que sigue en uso activo porque su reemplazo no es viable a gran escala. Los sistemas bancarios y gubernamentales del mundo dependen de programas COBOL que se han ejecutado de manera confiable durante décadas. Si bien hoy no se elegiría COBOL para un nuevo proyecto, el lenguaje sigue siendo importante para mantener la infraestructura que soporta las finanzas globales. La escasez de desarrolladores COBOL lo convierte en un nicho lucrativo.

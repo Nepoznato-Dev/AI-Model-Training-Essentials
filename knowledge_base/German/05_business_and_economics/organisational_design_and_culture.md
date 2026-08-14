@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Organisationsdesign und Kultur
-Organisationsdesign ist die bewusste Anordnung von Strukturen, Prozessen, Rollen und Entscheidungsrechten zur effektiven Umsetzung einer Strategie. Kultur sind die gemeinsamen Werte, Überzeugungen, Normen und Verhaltensweisen, die die Art und Weise prägen, wie Menschen tatsächlich zusammenarbeiten. Struktur ist das Skelett; Kultur ist die Persönlichkeit. Sie können die Struktur auf dem Papier neu gestalten, aber wenn die Kultur die Änderung nicht unterstützt, wird sie nicht funktionieren. Und eine starke Kultur mit einer schrecklichen Struktur wird langsam ersticken. Die besten Organisationen machen beides richtig – und verstehen, dass sie tief miteinander verbunden sind.
+Organisationsdesign ist die bewusste Anordnung von Strukturen, Prozessen, Rollen und Entscheidungsrechten zur effektiven Umsetzung einer Strategie. Kultur sind die gemeinsamen Werte, Überzeugungen, Normen und Verhaltensweisen, die die tatsächliche Zusammenarbeit von Menschen prägen. Die Struktur gibt den Rahmen vor; Kultur prägt Verhalten. Eine Struktur kann auf dem Papier neu gestaltet werden, aber wenn die Kultur die Änderung nicht unterstützt, wird die Umsetzung scheitern. Ebenso wird eine starke Kultur gepaart mit einer ineffektiven Struktur die Leistung der Organisation nach und nach untergraben. Die effektivsten Organisationen befassen sich mit beiden – und erkennen, dass sie eng miteinander verbunden sind.
 ---
 
 ## Organisationsstrukturen
@@ -67,7 +67,7 @@ Organisationsdesign ist die bewusste Anordnung von Strukturen, Prozessen, Rollen
 | **Entscheidungsfindung** | Von oben nach unten | An die Ränder geschoben |
 | **Geschwindigkeit** | Langsam (Engpass oben) | Schnell (Entscheidungen vor Ort getroffen) |
 | **Konsistenz** | Hoch | Variable |
-| **Innovation** | Begrenzt durch die Bandbreite des Oberteils | Entsteht aus mehreren Quellen |
+| **Innovation** | Begrenzt durch die Bandbreite von top | Entsteht aus mehreren Quellen |
 | **Am besten für** | Krise; Frühstadium; Compliance-lastige Industrien | Wissensarbeit; schnelllebige Märkte; Scale-Ups |
 ---
 
@@ -97,7 +97,7 @@ Die wichtigste Erkenntnis: Strategie treibt Struktur voran. Alle anderen Element
 |-------|-------------|-----------|
 | **Artefakte** | Sichtbare Strukturen, Prozesse, Verhaltensweisen, Dresscode, Büroaufteilung | Leicht zu erkennen; schwer zu interpretieren |
 | **Vereinigte Werte** | Erklärte Strategien, Ziele, Philosophien, Leitbilder | Öffentlich erklärt; stimmt möglicherweise nicht mit dem tatsächlichen Verhalten überein |
-| **Grundlegende Annahmen** | Unbewusste, selbstverständliche Überzeugungen, Wahrnehmungen, Gedanken, Gefühle | Unsichtbar; der wahre Treiber des Verhaltens |
+| **Grundannahmen** | Unbewusste, selbstverständliche Überzeugungen, Wahrnehmungen, Gedanken, Gefühle | Unsichtbar; der wahre Treiber des Verhaltens |
 ### Kulturtypen (Konkurrierende Werterahmen)
 | Kultur | Fokus | Eigenschaften | Beispiel |
 |---------|-------|----------------|---------|
@@ -113,7 +113,7 @@ Die wichtigste Erkenntnis: Strategie treibt Struktur voran. Alle anderen Element
 | **Transparenz** | Werden Informationen offen geteilt oder als Macht gehortet? |
 | **Innovationstoleranz** | Wird Versagen bestraft oder als Lernen behandelt? |
 | **Kundenorientierung** | Treffen Entscheidungen auf Kundenbedürfnissen oder auf internen Bequemlichkeiten basieren? |
-| **Geschwindigkeit vs. Qualität** | Liegt der Schwerpunkt auf schneller Iteration oder sorgfältiger Überlegung? |
+| **Geschwindigkeit vs. Qualität** | Liegt die Tendenz eher in der schnellen Iteration oder in der sorgfältigen Überlegung? |
 | **Hierarchie-Respekt** | Können jüngere Menschen die Ideen älterer Menschen in Frage stellen? |
 ---
 

@@ -6,6 +6,7 @@ Data engineering, analysis, database design, and data management for building da
 
 - **Database Design** - Schema design, normalization, and indexing strategies
 - **Data Analysis** - Statistical analysis and data interpretation
+- **Experiment Tracking** - Systematically logging and comparing ML experiments for reproducibility and informed model selection
 
 ## Why Data Skills Matter
 

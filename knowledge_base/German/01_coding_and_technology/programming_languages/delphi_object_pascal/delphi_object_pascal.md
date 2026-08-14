@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Delphi / Object Pascal
 Delphi ist eine objektorientierte Programmiersprache auf Pascal-Basis, die ursprünglich von Borland (später Embarcadero, jetzt Idera) entwickelt wurde. Es wurde erstmals 1995 als „Delphi 1“ veröffentlicht und war für die schnelle Anwendungsentwicklung (RAD) von Windows-Desktopanwendungen konzipiert. Die Sprache ist offiziell als Object Pascal bekannt und die Delphi-IDE bietet einen visuellen Formulardesigner, integrierte Datenbanktools und einen leistungsstarken Compiler.
 Delphi war in den späten 1990er und frühen 2000er Jahren eines der beliebtesten Windows-Entwicklungstools. Obwohl seine Beliebtheit erheblich zurückgegangen ist, verfügt es über eine dedizierte Benutzerbasis, insbesondere in Unternehmens-Desktopanwendungen, Datenbank-Frontends und der Wartung älterer Systeme. Modern Delphi (11/12) unterstützt die plattformübergreifende Entwicklung für Windows, macOS, iOS und Android über das FireMonkey (FMX)-Framework.
@@ -573,7 +574,7 @@ delphi-project/
 | `{$WARNINGS OFF}`| Warnungen unterdrücken | `{$WARNINGS OFF}`|
 | `{$HINTS OFF}`| Hinweise unterdrücken | `{$HINTS OFF}`|
 | `{$OPTIMIZATION ON}`| Optimierer aktivieren | `{$OPTIMIZATION ON}`|
-| `{$STRINGCHECKS ON}`| Stringbereichsprüfungen aktivieren | `{$STRINGCHECKS ON}`|
+| `{$STRINGCHECKS ON}`| String-Bereichsprüfungen aktivieren | `{$STRINGCHECKS ON}`|
 ### Erstellen über die Befehlszeile
 ```batch
 REM 32-bit Windows build (DCC32)
@@ -1085,6 +1086,84 @@ Delphi Deployment Targets:
 | Neue Windows-GUI-Entwicklung | Möglich, aber die Community schrumpft | C# (WPF/WinUI 3) |
 | Webentwicklung | Nicht geeignet | JavaScript, Python, C# |
 | Mobile Apps | Über FMX möglich, aber eingeschränkt | Swift, Kotlin, Flutter |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Wie funktioniert das VCL-Framework von Delphi?
+**A:** VCL umschließt Windows-API-Steuerelemente in einer objektorientierten Hierarchie. Formulare, Schaltflächen und Raster sind alle Klassen:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### F2: Wie erstelle ich Komponenten in Delphi?
+**A:** Von TComponent oder TControl erben:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### F3: Was ist der Unterschied zwischen Delphi und Free Pascal?
+**A:** Delphi ist eine kommerzielle IDE/Compiler von Embarcadero. Free Pascal ist der Open-Source-Compiler und Lazarus ist die kostenlose IDE. Beide verwenden die Object Pascal-Syntax.
+### F4: Wie arbeite ich mit Datenbanken in Delphi?
+**A:** Verwenden Sie FireDAC- oder dbExpress-Komponenten:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### F5: Ist Delphi heute noch relevant?
+**A:** Für die Wartung älterer Windows-Anwendungen, ja. Bei neuen Projekten bevorzugen die meisten Entwickler C# oder Webtechnologien. Free Pascal/Lazarus bietet eine kostenlose plattformübergreifende Alternative.
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Erstellen eines datenbewussten Formulars
+**Schritt 1: Verstehen Sie das Problem**
+Erstellen Sie ein Formular, das Datenbankdatensätze anzeigt und bearbeitet.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie datensensitive Komponenten, die an einen Datensatz gebunden sind.
+**Schritt 3: Implementieren**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Schritt 4: Erweitern**
+Fügen Sie Validierung, Fehlerbehandlung und Such-/Filterfunktionen hinzu.
 ---
 
 ## Zusammenfassung

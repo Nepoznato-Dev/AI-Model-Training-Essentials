@@ -1022,17 +1022,17 @@ pm2 startup
 ### 後端 (Node.js)
 |框架|目的|
 |------------|---------|
-| **快遞** |最小、靈活的 Web 框架（最受歡迎） |
+| **快遞** |最小、靈活的 Web 框架（最受歡迎）|
 | **快點** |高效能Web框架|
 | **NestJS** |企業級、受 Angular 啟發的架構 |
 | **相思木** |輕量級、現代的 Express 替代品 |
 | **榮譽** |超快、多運行時（Node、Deno、Bun、edge）|
 ### 運行時
-|運行時 |說明 |
+|運行時|描述 |
 |---------|-------------|
 | **Node.js** |原始伺服器端 JavaScript 執行階段（V8 引擎）|
 | **德諾** |預設安全；原生 TypeScript 支援；由 Node 原作者建立 |
-| **髮髻** |超快速一體化運行時間、捆綁器和套件管理器 |
+| **髮髻** |超快一體化運行時間、捆綁器和套件管理器 |
 ### 基本工具
 |工具|目的|
 |------|---------|
@@ -1041,21 +1041,434 @@ pm2 startup
 | **ESLint** |程式碼檢查 |
 | **更漂亮** |程式碼格式化 |
 | **投票** |快速建立工具和開發伺服器|
-| **Webpack** |模組捆綁器（成熟，廣泛使用）|
+| **Webpack** |模組捆綁器（成熟、廣泛使用）|
 | **開玩笑/維斯特** |測試框架|
 ---
 
 ## 何時使用 JavaScript
-|場景 |為什麼選擇 JavaScript |更好的選擇|
+|場景|為什麼選擇 JavaScript |更好的選擇|
 |----------|--------------|--------------------|
 |網頁前端 |基於瀏覽器的 UI 的唯一選項 | — |
-|全端網路 |到處都是同一種語言 |用於型別安全的 TypeScript |
+|全端網路|到處都是同一種語言 |用於型別安全的 TypeScript |
 |即時應用程式（聊天、遊戲）|事件驅動、非阻塞 I/O | — |
 |無伺服器功能 |快速編寫，隨處部署 | Python、Go |
 |行動應用程式（React Native）|與網路共用程式碼 | Flutter，原生 Swift/Kotlin |
 |桌面應用程式（Electron）|跨平台網路技術 | C# (WPF)、Tauri (Rust) |
 | CPU 密集型運算 |單執行緒限制 | Python (NumPy)、C++、Rust、WebAssembly |
 |系統程式設計|錯誤的抽象層次 | C、C++、Rust、Go |
+---
+
+## 綜合問答
+### Q1：`var`、`let`和`const`之間有什麼區別，什麼時候應該使用它們？
+**A:**`var`是函數作用域和提升的 - 在現代程式碼中避免它。 `let`具有區塊作用域並允許重新指派。 `const`是區塊範圍的並防止重新分配（但它引用的物件/陣列仍然是可變的）。最佳實務：預設為`const`，僅在需要重新分配時使用`let`，切勿使用`var`。
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Q2：`this` 在 JavaScript 中如何運作，為什麼如此令人困惑？
+**答：**`this`由**如何呼叫函數**決定，而不是由其定義位置決定。在方法呼叫中，`this` 是物件。在獨立呼叫中，它是 `undefined`（嚴格模式）或 `global`（非嚴格模式）。箭頭函數從其封閉範圍繼承`this`— 這就是為什麼它們是回調的首選。使用`.bind()`明確設定`this`。
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Q3：什麼是事件循環，async/await 實際上如何運作？
+**答：** JavaScript 是單線程的，帶有處理隊列的事件循環。呼叫堆疊執行同步程式碼。當它為空時，事件循環會從微任務佇列（Promises）或巨集任務佇列（setTimeout，I/O）中選擇下一個任務。 `async/await`是 Promise 的語法糖 —`await`暫停非同步函數，並在 Promise 解析時恢復，而不會阻塞線程。
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4：我該如何處理現代 JavaScript 中的錯誤？
+**A:** 對於同步程式碼使用 `try/catch`，對於非同步程式碼使用`.catch()`或`try/catch`與 `async/await`。始終處理 Promise 拒絕——未處理的拒絕會導致 Node.js 崩潰。為特定於網域的錯誤建立自訂錯誤類別。使用全域錯誤處理程序作為安全網。
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Q5：什麼時候應該使用`Map`/`Set`而不是普通物件/陣列？
+**A:** 當鍵不是字串時，當您需要插入順序迭代時，當您需要`.size`時，或當您頻繁新增/刪除條目時（比物件更好的效能），請使用`Map`。使用`Set`進行 O(1) 尋找的唯一集合 — 比大型資料集的`array.includes()`快得多。將普通物件用於簡單的 JSON 可序列化資料和帶有字串鍵的小型鍵值映射。
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：實現去抖動功能
+**問題陳述：** 實作一個`debounce`實用程序，該實用程式延遲呼叫函數，直到自上次呼叫以來經過指定的等待時間後。支援前緣和後緣調用。
+**第 1 步 — 了解問題：**
+去抖函數會忽略快速的連續調用，並且僅在調用停止等待一段時間後觸發。 「前沿」是指在第一次呼叫後立即開火。 「後緣」是指在等待期之後發生火災。我們需要處理這兩種模式並支援取消。
+**第 2 步 — 確定方法：**
+- 將計時器 ID 儲存在閉包中。
+- 每次呼叫時：清除現有計時器，然後設定新的`setTimeout`。
+- 對於前緣：如果沒有定時器處於活動狀態，則立即呼叫。
+- 使用`.cancel()`方法傳回去抖函數。
+- 使用箭頭函數或`.apply()`保留`this`上下文和參數。
+**第 3 步 — 實施解決方案：**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 閉包保留呼叫之間的狀態，而不會污染全域範圍。
+-`setTimeout`之前的`clearTimeout`確保只有最後一個呼叫才會觸發執行。
+-`.cancel()`對於清理很重要（例如，React 中的元件卸載）。
+- 邊緣情況：如果`wait`為 0，則函數在下一個事件循環標記時觸發 - 對於批次 DOM 更新非常有用。
+### 問題 2：建立基於 Promise 的速率限制器
+**問題陳述：** 建立一個速率限制器，每個時間視窗最多允許 N 個請求。它應該會傳回在允許呼叫者繼續操作時解析的 Promise，並對多餘的請求進行排隊。
+**第 1 步 — 了解問題：**
+我們需要一個滑動或固定視窗來追蹤已撥打的電話數量。當達到限制時，新的呼叫應該排隊並在空位打開時解決。這就是「令牌桶」模式。
+**第 2 步 — 確定方法：**
+- 追蹤數組中最近調用的時間戳記。
+- 每次呼叫時：刪除早於視窗的時間戳，檢查計數是否<限制。
+- 如果低於限制：立即解決。
+- 如果達到限制：計算最舊的時間戳何時到期，設定`setTimeout`，然後解析。
+- 使用佇列（解析函數陣列）來等待呼叫者。
+**第 3 步 — 實施解決方案：**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 滑動視窗方法比固定視窗更公平（視窗邊界處沒有突發）。
+- 佇列處理採用先進先出 (FIFO) 方式 — 依序為呼叫者提供服務。
+- 對於生產：新增`AbortController`支持，以便呼叫者可以取消等待。
+- 效能：`_cleanOldTimestamps`每次呼叫的複雜度為 O(n)，但 n 受`maxCalls`限制。
+### 問題3：實現深度克隆功能
+**問題陳述：** 寫一個深度複製任何 JavaScript 值的函數，處理物件、陣列、日期、正規表示式、映射、集合、循環參考和類型化陣列。
+**第 1 步 — 了解問題：**
+`JSON.parse(JSON.stringify(obj))`失敗：`undefined`、函數、符號、日期（成為字串）、正規表示式（成為空物件）、映射、集合、循環引用（拋出）和類型化陣列。我們需要一個遞歸解決方案來追蹤存取的物件。
+**第 2 步 — 確定方法：**
+- 使用`Map`跟踪已克隆的对象（处理循环引用）。
+- 特別處理每種類型：日期→新日期、正規表示式→新正規表示式、映射→帶有克隆條目的新映射、集合→帶有克隆值的新集合。
+- 使用`structuredClone()`作为现代内置替代方案（在浏览器和 Node.js 17+ 中可用）。
+**第 3 步 — 實施解決方案：**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 循環引用：`seen` 映射傳回已建立的克隆，而不是無限遞歸。
+- 屬性描述子：`Reflect.ownKeys` +`getOwnPropertyDescriptor`保留 getter、setter 和不可枚舉屬性。
+- 現代替代方案：`structuredClone(value)` 原生處理大多數此類情況（函數和 DOM 節點除外）。當可用時更喜歡它。
+- 效能：對於簡單對象，`JSON.parse(JSON.stringify(obj))` 仍然是最快的。僅當您確實需要時才使用深度克隆。
+### 問題 4：建造一個簡單的事件發射器
+**問題陳述：** 實作一個支援`on`、`off`、`emit`和`once`方法的事件發射器類別。應依登記順序召集聽眾。 `emit`應將參數傳遞給所有偵聽器。
+**第 1 步 — 了解問題：**
+我們需要一個發布/訂閱系統：為命名事件註冊偵聽器，刪除特定偵聽器，使用參數觸發事件，並支援一次性偵聽器。這是 Node.js 中廣泛使用的觀察者模式。
+**第 2 步 — 確定方法：**
+- 將偵聽器儲存在`Map<string, Array<Function>>`中。
+-`on`：將監聽器推送到陣列。
+-`off`：從陣列中過濾掉特定的監聽器。
+-`emit`：迭代陣列並使用擴充參數呼叫每個偵聽器。
+-`once`：將偵聽器包裝在函數中，該函數在第一次呼叫後會自行刪除。
+**第 3 步 — 實施解決方案：**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**第 4 步 — 驗證與最佳化：**
+-`emit`中的`[...listeners]`副本可防止偵聽器在迭代期間呼叫`off`時出現問題。
+-`once`儲存`_original`，以便呼叫者可以透過`off(event, originalFn)`刪除包裝器。
+- 私有欄位（`#listeners`）防止內部狀態的外部突變。
+- 對於生產：新增`maxListeners`警告（如 Node.js）、每個偵聽器的錯誤處理以及`prependListener`優先權。
 ---
 
 ＃＃ 概括

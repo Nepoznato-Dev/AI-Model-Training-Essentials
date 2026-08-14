@@ -41,7 +41,7 @@ contribution:
 
 #จาวาสคริปต์
 JavaScript เป็นภาษาโปรแกรมที่มีการตีความแบบไดนามิก สร้างขึ้นโดย Brendan Eich ภายในเวลาเพียง 10 วันในปี 1995 เดิมทีออกแบบมาเพื่อเพิ่มการโต้ตอบให้กับหน้าเว็บ และได้เติบโตขึ้นเป็นภาษาโปรแกรมที่ใช้กันอย่างแพร่หลายมากที่สุดในโลก JavaScript ทำงานในทุกเว็บเบราว์เซอร์ บนเซิร์ฟเวอร์ผ่าน Node.js ในแอปเดสก์ท็อป (Electron) แอปมือถือ (React Native) และแม้แต่ระบบฝังตัว
-ภาษามีความพิเศษตรงที่เป็นตัวเลือกเดียวสำหรับการพัฒนาเว็บฝั่งไคลเอ็นต์ — ทุกเบราว์เซอร์รองรับภาษานี้โดยกำเนิด การผูกขาดนี้เมื่อรวมกับการเพิ่มขึ้นของ JavaScript แบบเต็มสแต็ก (Node.js, Deno, Bun) ทำให้เป็นสิ่งที่ขาดไม่ได้
+ภาษานี้มีเอกลักษณ์เฉพาะตรงที่เป็นตัวเลือกเดียวสำหรับการพัฒนาเว็บฝั่งไคลเอ็นต์ — ทุกเบราว์เซอร์รองรับภาษานี้โดยกำเนิด การผูกขาดนี้เมื่อรวมกับการเพิ่มขึ้นของ JavaScript แบบเต็มสแต็ก (Node.js, Deno, Bun) ทำให้เป็นสิ่งที่ขาดไม่ได้
 ---
 
 ## ทำไม JavaScript ถึงมีความสำคัญ
@@ -1056,6 +1056,419 @@ pm2 startup
 | แอพเดสก์ท็อป (อิเล็กตรอน) | ข้ามแพลตฟอร์มด้วยเทคโนโลยีเว็บ | C# (WPF), Tauri (สนิม) |
 | การคำนวณที่เน้น CPU | ข้อจำกัดแบบเธรดเดียว | Python (NumPy), C++, Rust, WebAssembly |
 | การเขียนโปรแกรมระบบ | ระดับนามธรรมผิด | C, C++, สนิม, ไป |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### Q1:`var`,`let`และ`const`แตกต่างกันอย่างไร และควรใช้แต่ละอย่างเมื่อใด
+**A:**`var`มีการกำหนดขอบเขตฟังก์ชันและยกขึ้น — หลีกเลี่ยงในโค้ดสมัยใหม่ `let`มีการกำหนดขอบเขตแบบบล็อกและอนุญาตให้มีการกำหนดใหม่ได้ `const`มีการกำหนดขอบเขตแบบบล็อกและป้องกันการมอบหมายใหม่ (แต่วัตถุ/อาร์เรย์ที่อ้างอิงยังคงไม่แน่นอน) แนวทางปฏิบัติที่ดีที่สุด: ค่าเริ่มต้นเป็น`const`ให้ใช้`let`เฉพาะเมื่อคุณต้องการมอบหมายใหม่เท่านั้น ห้ามใช้ `var`
+```javascript
+const API_URL = "https://api.example.com";  // Never changes
+let retryCount = 0;                          // Needs reassignment
+retryCount++;
+
+// const with objects — the binding is const, not the content
+const user = { name: "Alice" };
+user.name = "Bob";        // OK — property mutation allowed
+// user = {};              // TypeError — reassignment not allowed
+```
+
+### Q2:`this`ทำงานอย่างไรใน JavaScript และเหตุใดจึงทำให้เกิดความสับสน
+**A:**`this`ถูกกำหนดโดย **วิธีการเรียกใช้ฟังก์ชัน** ไม่ใช่ตำแหน่งที่กำหนดไว้ ในการเรียกเมธอด`this`คืออ็อบเจ็กต์ ในการเรียกแบบสแตนด์อโลน จะเป็น`undefined`(โหมดเข้มงวด) หรือ`global`(ไม่เข้มงวด) ฟังก์ชันลูกศรสืบทอด`this`จากขอบเขตที่ล้อมรอบ ด้วยเหตุนี้จึงนิยมใช้ฟังก์ชันการโทรกลับ ใช้`.bind()`เพื่อตั้งค่า`this`อย่างชัดเจน
+```javascript
+// Arrow function inherits 'this' from class scope
+class Timer {
+  constructor() { this.seconds = 0; }
+  start() {
+    // WRONG: regular function — 'this' is undefined
+    // setInterval(function() { this.seconds++; }, 1000);
+
+    // RIGHT: arrow function — 'this' is the Timer instance
+    setInterval(() => { this.seconds++; }, 1000);
+  }
+}
+```
+
+### Q3: event loop คืออะไร และ async/await ทำงานอย่างไร
+**ตอบ:** JavaScript เป็นแบบเธรดเดียวและมีลูปเหตุการณ์ที่ประมวลผลคิว call stack รันโค้ดซิงโครนัส เมื่อว่างเปล่า ลูปเหตุการณ์จะเลือกงานถัดไปจากคิวไมโครทาสก์ (สัญญา) หรือคิวงานแมโคร (setTimeout, I/O) `async/await`เป็นน้ำตาลเชิงวากยสัมพันธ์เหนือ Promises —`await`จะหยุดฟังก์ชันอะซิงก์ชั่วคราวและดำเนินการต่อเมื่อ Promise ได้รับการแก้ไข โดยไม่ปิดกั้นเธรด
+```javascript
+// Execution order demonstrates the event loop
+console.log("1: sync");                    // Runs first (synchronous)
+
+setTimeout(() => console.log("2: macrotask"), 0);  // Runs fourth
+
+Promise.resolve().then(() => {
+  console.log("3: microtask");             // Runs second
+}).then(() => {
+  console.log("4: microtask chain");       // Runs third
+});
+
+console.log("5: sync");                    // Runs first (after "1")
+
+// Output: 1, 5, 3, 4, 2
+```
+
+### Q4: ฉันควรจัดการกับข้อผิดพลาดใน JavaScript สมัยใหม่อย่างไร
+**A:** ใช้`try/catch`สำหรับโค้ดซิงโครนัส และใช้`.catch()`หรือ`try/catch`กับ`async/await`สำหรับโค้ดอะซิงโครนัส จัดการกับการปฏิเสธตามสัญญาเสมอ — การปฏิเสธที่ไม่มีการจัดการขัดข้อง Node.js สร้างคลาสข้อผิดพลาดแบบกำหนดเองสำหรับข้อผิดพลาดเฉพาะโดเมน ใช้ตัวจัดการข้อผิดพลาดส่วนกลางเป็นเครือข่ายความปลอดภัย
+```javascript
+// Custom error class
+class ApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = "ApiError";
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+// Async error handling
+async function fetchUser(id) {
+  try {
+    const response = await fetch(`/api/users/${id}`);
+    if (!response.ok) {
+      throw new ApiError(
+        `Failed to fetch user ${id}`,
+        response.status,
+        `/api/users/${id}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;  // Re-throw known errors
+    throw new Error(`Network error: ${error.message}`);  // Wrap unknown
+  }
+}
+
+// Global safety net (Node.js)
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled rejection:", reason);
+});
+```
+
+### Q5: เมื่อใดที่ฉันควรใช้`Map`/`Set`แทนวัตถุ/อาร์เรย์ธรรมดา
+**A:** ใช้`Map`เมื่อคีย์ไม่ใช่สตริง เมื่อคุณต้องการวนซ้ำลำดับการแทรก เมื่อคุณต้องการ`.size`หรือเมื่อคุณเพิ่ม/ลบรายการบ่อยครั้ง (ประสิทธิภาพที่ดีกว่าออบเจ็กต์) ใช้`Set`สำหรับคอลเลกชันที่ไม่ซ้ำใครด้วยการค้นหา O(1) ซึ่งเร็วกว่า`array.includes()`มากสำหรับชุดข้อมูลขนาดใหญ่ ใช้ออบเจ็กต์ธรรมดาสำหรับข้อมูลที่ทำให้เป็นอนุกรม JSON แบบง่ายและแมปคีย์-ค่าขนาดเล็กพร้อมคีย์สตริง
+```javascript
+// Map — non-string keys, ordered, fast mutations
+const userRoles = new Map();
+const admin = { id: 1, name: "Alice" };
+userRoles.set(admin, "admin");      // Object as key!
+userRoles.set({ id: 2 }, "editor");
+console.log(userRoles.size);         // 2
+console.log(userRoles.get(admin));   // "admin"
+
+// Set — fast membership testing
+const allowedIds = new Set([101, 205, 310, 422]);
+// O(1) lookup vs O(n) for Array.includes()
+if (allowedIds.has(requestId)) {
+  processRequest(requestId);
+}
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: ใช้ฟังก์ชัน Debounce
+**คำชี้แจงปัญหา:** ใช้ยูทิลิตี`debounce`ซึ่งจะชะลอการเรียกใช้ฟังก์ชันจนกระทั่งพ้นระยะเวลารอที่ระบุนับตั้งแต่ครั้งสุดท้ายที่เรียกใช้ รองรับการเรียกใช้ทั้งขอบนำหน้าและต่อท้าย
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+ฟังก์ชัน debounced จะละเว้นการโทรที่ต่อเนื่องกันอย่างรวดเร็ว และจะทำงานหลังจากการโทรหยุดในช่วงเวลารอเท่านั้น “Leading Edge” หมายถึง ยิงทันทีในการโทรครั้งแรก “ขอบท้าย” หมายความว่า ไฟไหม้หลังจากพ้นระยะเวลารอคอย เราจำเป็นต้องจัดการทั้งสองโหมดและรองรับการยกเลิกด้วย
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- เก็บรหัสตัวจับเวลาไว้ในที่ปิด
+- ในการโทรแต่ละครั้ง: ล้างตัวจับเวลาที่มีอยู่ จากนั้นตั้งค่า`setTimeout`ใหม่
+- สำหรับผู้นำ: โทรทันทีหากไม่มีตัวจับเวลาทำงานอยู่
+- ส่งกลับฟังก์ชันที่ debounced ด้วยเมธอด `.cancel()`
+- รักษาบริบทและอาร์กิวเมนต์`this`โดยใช้ฟังก์ชันลูกศรหรือ `.apply()`
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```javascript
+function debounce(fn, wait, { leading = false } = {}) {
+  let timeoutId = null;
+  let lastArgs = null;
+  let lastThis = null;
+
+  function debounced(...args) {
+    lastArgs = args;
+    lastThis = this;
+
+    if (leading && timeoutId === null) {
+      fn.apply(lastThis, lastArgs);  // Fire immediately on leading edge
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      if (!leading) {
+        fn.apply(lastThis, lastArgs);  // Fire after wait on trailing edge
+      }
+      timeoutId = null;
+      lastArgs = null;
+      lastThis = null;
+    }, wait);
+  }
+
+  debounced.cancel = () => {
+    clearTimeout(timeoutId);
+    timeoutId = null;
+    lastArgs = null;
+    lastThis = null;
+  };
+
+  return debounced;
+}
+
+// Usage — search input that fires API call 300ms after typing stops
+const searchInput = document.querySelector("#search");
+const handleSearch = debounce((query) => {
+  fetch(`/api/search?q=${encodeURIComponent(query)}`)
+    .then(res => res.json())
+    .then(results => renderResults(results));
+}, 300);
+
+searchInput.addEventListener("input", (e) => {
+  handleSearch(e.target.value);
+});
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- การปิดจะรักษาสถานะระหว่างการโทรโดยไม่กระทบต่อขอบเขตทั่วโลก
+-`clearTimeout`ก่อน`setTimeout`รับประกันเฉพาะการโทรครั้งสุดท้ายเท่านั้นที่ทริกเกอร์การดำเนินการ
+-`.cancel()`เป็นสิ่งสำคัญสำหรับการล้างข้อมูล (เช่น การยกเลิกการต่อเชื่อมส่วนประกอบใน React)
+- Edge case: ถ้า`wait`เป็น 0 ฟังก์ชันจะเริ่มทำงานในเครื่องหมายวนเหตุการณ์ถัดไป ซึ่งมีประโยชน์สำหรับการอัปเดต DOM เป็นชุด
+### ปัญหาที่ 2: สร้างตัวจำกัดอัตราตามสัญญา
+**คำชี้แจงปัญหา:** สร้างตัวจำกัดอัตราที่อนุญาตคำขอได้สูงสุด N รายการต่อกรอบเวลา ควรส่งคืนสัญญาที่แก้ไขเมื่อผู้โทรได้รับอนุญาตให้ดำเนินการต่อ และจัดคิวคำขอส่วนเกิน
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการหน้าต่างแบบเลื่อนหรือแบบตายตัวที่ติดตามจำนวนการโทร เมื่อถึงขีดจำกัดแล้ว การโทรใหม่ควรเข้าคิวและแก้ไขเมื่อช่องเปิดขึ้น นี่คือรูปแบบ "โทเค็นที่เก็บข้อมูล"
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ติดตามการประทับเวลาของการโทรล่าสุดในอาเรย์
+- ในการโทรแต่ละครั้ง: ลบการประทับเวลาที่เก่ากว่าหน้าต่าง ตรวจสอบว่านับ < ขีดจำกัดหรือไม่
+- หากเกินขีดจำกัด: แก้ไขทันที
+- หากถึงขีดจำกัด: คำนวณเมื่อเวลาที่ประทับเก่าที่สุดหมดอายุ ให้ตั้งค่า`setTimeout`จากนั้นแก้ไข
+- ใช้คิว (อาร์เรย์ของฟังก์ชันแก้ไข) สำหรับผู้รอสาย
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```javascript
+class RateLimiter {
+  constructor(maxCalls, windowMs) {
+    this.maxCalls = maxCalls;
+    this.windowMs = windowMs;
+    this.timestamps = [];
+    this.queue = [];
+  }
+
+  async acquire() {
+    this._cleanOldTimestamps();
+
+    if (this.timestamps.length < this.maxCalls) {
+      this.timestamps.push(Date.now());
+      return;
+    }
+
+    // Calculate wait time until the oldest call exits the window
+    const waitTime = this.timestamps[0] + this.windowMs - Date.now();
+
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      setTimeout(() => {
+        this._cleanOldTimestamps();
+        this.timestamps.push(Date.now());
+        const nextResolve = this.queue.shift();
+        if (nextResolve) nextResolve();
+      }, Math.max(waitTime, 0));
+    });
+  }
+
+  _cleanOldTimestamps() {
+    const cutoff = Date.now() - this.windowMs;
+    this.timestamps = this.timestamps.filter(t => t > cutoff);
+  }
+}
+
+// Usage — limit API calls to 5 per second
+const limiter = new RateLimiter(5, 1000);
+
+async function callApi(url) {
+  await limiter.acquire();
+  const response = await fetch(url);
+  return response.json();
+}
+
+// All 20 calls will be spread across ~4 seconds (5 per second)
+const urls = Array.from({ length: 20 }, (_, i) => `/api/item/${i}`);
+Promise.all(urls.map(callApi)).then(results => {
+  console.log(`Fetched ${results.length} items`);
+});
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- แนวทางหน้าต่างบานเลื่อนนั้นยุติธรรมกว่าหน้าต่างแบบคงที่ (ไม่ระเบิดที่ขอบเขตหน้าต่าง)
+- การประมวลผลคิวเป็นแบบ FIFO - ผู้โทรจะได้รับบริการตามลำดับ
+- สำหรับการผลิต: เพิ่มการสนับสนุน`AbortController`เพื่อให้ผู้โทรสามารถยกเลิกการรอได้
+- ประสิทธิภาพ:`_cleanOldTimestamps`คือ O(n) ต่อการโทร แต่ n ถูกผูกไว้ด้วย `maxCalls`
+### ปัญหาที่ 3: ใช้ฟังก์ชัน Deep Clone
+**คำชี้แจงปัญหา:** เขียนฟังก์ชันที่โคลนค่า JavaScript อย่างล้ำลึก การจัดการออบเจ็กต์ อาร์เรย์ วันที่ RegExps แผนที่ ชุด การอ้างอิงแบบวงกลม และอาร์เรย์ที่พิมพ์
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+`JSON.parse(JSON.stringify(obj))`ล้มเหลวใน:`undefined`, ฟังก์ชัน, สัญลักษณ์, วันที่ (กลายเป็นสตริง), RegExps (กลายเป็นวัตถุว่าง), แผนที่, ชุด, การอ้างอิงแบบวงกลม (โยน) และอาร์เรย์ที่พิมพ์ เราต้องการโซลูชันแบบเรียกซ้ำที่ติดตามวัตถุที่เยี่ยมชม
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- ใช้`Map`เพื่อติดตามวัตถุที่โคลนแล้ว (จัดการการอ้างอิงแบบวงกลม)
+- จัดการแต่ละประเภทเป็นพิเศษ: วันที่ → วันที่ใหม่, RegExp → RegExp ใหม่, แผนที่ → แผนที่ใหม่พร้อมรายการโคลน, ตั้งค่า → ชุดใหม่พร้อมค่าโคลน
+- ใช้`structuredClone()`เป็นทางเลือกในตัวที่ทันสมัย ​​(มีในเบราว์เซอร์และ Node.js 17+)
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```javascript
+function deepClone(value, seen = new Map()) {
+  // Primitives and null — returned as-is
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  // Circular reference check
+  if (seen.has(value)) {
+    return seen.get(value);
+  }
+
+  // Date
+  if (value instanceof Date) {
+    return new Date(value.getTime());
+  }
+
+  // RegExp
+  if (value instanceof RegExp) {
+    return new RegExp(value.source, value.flags);
+  }
+
+  // Typed Arrays (Uint8Array, Float32Array, etc.)
+  if (ArrayBuffer.isView(value)) {
+    return new value.constructor(value);
+  }
+
+  // Map
+  if (value instanceof Map) {
+    const clone = new Map();
+    seen.set(value, clone);
+    for (const [k, v] of value) {
+      clone.set(deepClone(k, seen), deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Set
+  if (value instanceof Set) {
+    const clone = new Set();
+    seen.set(value, clone);
+    for (const v of value) {
+      clone.add(deepClone(v, seen));
+    }
+    return clone;
+  }
+
+  // Array
+  if (Array.isArray(value)) {
+    const clone = [];
+    seen.set(value, clone);
+    for (const item of value) {
+      clone.push(deepClone(item, seen));
+    }
+    return clone;
+  }
+
+  // Plain Object
+  const clone = Object.create(Object.getPrototypeOf(value));
+  seen.set(value, clone);
+  for (const key of Reflect.ownKeys(value)) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, key);
+    if ("value" in descriptor) {
+      clone[key] = deepClone(value[key], seen);
+    } else {
+      Object.defineProperty(clone, key, descriptor);
+    }
+  }
+  return clone;
+}
+
+// Usage
+const original = { a: 1, b: { c: [2, 3] }, d: new Date(), e: new Map([["k", "v"]]) };
+original.self = original;  // Circular reference
+
+const cloned = deepClone(original);
+console.log(cloned.self === cloned);  // true — circular ref preserved
+console.log(cloned.b !== original.b); // true — deep clone, not reference
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- การอ้างอิงแบบวงกลม: แผนที่`seen`ส่งคืนโคลนที่สร้างไว้แล้วแทนที่จะเรียกซ้ำอย่างไม่สิ้นสุด
+- ตัวอธิบายคุณสมบัติ:`Reflect.ownKeys`+`getOwnPropertyDescriptor`รักษา getters, setters และคุณสมบัติที่ไม่สามารถนับได้
+- ทางเลือกสมัยใหม่:`structuredClone(value)`จัดการกรณีเหล่านี้ส่วนใหญ่โดยกำเนิด (ยกเว้นฟังก์ชันและโหนด DOM) ควรเลือกเมื่อมีให้
+- ประสิทธิภาพ: สำหรับวัตถุธรรมดา`JSON.parse(JSON.stringify(obj))`ยังคงเร็วที่สุด ใช้ Deep Clone เมื่อคุณต้องการมันจริงๆ เท่านั้น
+### ปัญหาที่ 4: สร้างตัวส่งสัญญาณเหตุการณ์อย่างง่าย
+**คำชี้แจงปัญหา:** ใช้คลาสตัวปล่อยเหตุการณ์ที่รองรับวิธี`on`,`off`,`emit`และ`once`ควรเรียกผู้ฟังตามลำดับการลงทะเบียน `emit`ควรส่งผ่านอาร์กิวเมนต์ไปยังผู้ฟังทั้งหมด
+**ขั้นตอนที่ 1 — ทำความเข้าใจปัญหา:**
+เราต้องการระบบ pub/sub: ลงทะเบียน Listener สำหรับเหตุการณ์ที่ระบุชื่อ ลบ Listener ที่ระบุ ทริกเกอร์เหตุการณ์ด้วยอาร์กิวเมนต์ และสนับสนุน Listener แบบครั้งเดียว นี่คือรูปแบบ Observer ที่ใช้กันอย่างแพร่หลายใน Node.js
+**ขั้นตอนที่ 2 — ระบุแนวทาง:**
+- จัดเก็บผู้ฟังไว้ใน `Map<string, Array<Function>>`
+-`on`: ผลักผู้ฟังไปยังอาร์เรย์
+-`off`: กรองผู้ฟังเฉพาะออกจากอาร์เรย์
+-`emit`: วนซ้ำอาร์เรย์และเรียกผู้ฟังแต่ละคนด้วยอาร์กิวเมนต์การแพร่กระจาย
+-`once`: ตัด Listener ในฟังก์ชันที่จะลบตัวเองออกหลังจากการโทรครั้งแรก
+**ขั้นตอนที่ 3 — ปรับใช้โซลูชัน:**
+```javascript
+class EventEmitter {
+  #listeners = new Map();
+
+  on(event, listener) {
+    if (!this.#listeners.has(event)) {
+      this.#listeners.set(event, []);
+    }
+    this.#listeners.get(event).push(listener);
+    return this;  // Enable chaining
+  }
+
+  off(event, listener) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return this;
+    const index = listeners.indexOf(listener);
+    if (index !== -1) {
+      listeners.splice(index, 1);
+    }
+    if (listeners.length === 0) {
+      this.#listeners.delete(event);
+    }
+    return this;
+  }
+
+  emit(event, ...args) {
+    const listeners = this.#listeners.get(event);
+    if (!listeners) return false;
+    // Copy array to avoid issues if listeners modify the list during iteration
+    for (const listener of [...listeners]) {
+      listener(...args);
+    }
+    return true;
+  }
+
+  once(event, listener) {
+    const wrapper = (...args) => {
+      this.off(event, wrapper);
+      listener(...args);
+    };
+    wrapper._original = listener;  // Allow off() with original reference
+    return this.on(event, wrapper);
+  }
+
+  listenerCount(event) {
+    return this.#listeners.get(event)?.length ?? 0;
+  }
+}
+
+// Usage
+const emitter = new EventEmitter();
+
+emitter.on("data", (msg) => console.log(`Received: ${msg}`));
+emitter.once("connected", () => console.log("First connection only"));
+
+emitter.emit("connected");           // "First connection only"
+emitter.emit("connected");           // (nothing — listener removed)
+emitter.emit("data", "hello");       // "Received: hello"
+```
+
+**ขั้นตอนที่ 4 — ตรวจสอบและเพิ่มประสิทธิภาพ:**
+- สำเนา`[...listeners]`ใน`emit`ป้องกันปัญหาเมื่อผู้ฟังเรียก`off`ระหว่างการวนซ้ำ
+-`once`จัดเก็บ`_original`เพื่อให้ผู้โทรสามารถลบ wrapper ผ่านทาง `off(event, originalFn)`
+- ฟิลด์ส่วนตัว (`#listeners`) ป้องกันการเปลี่ยนแปลงสถานะภายในภายนอก
+- สำหรับการผลิต: เพิ่มคำเตือน`maxListeners`(เช่น Node.js), การจัดการข้อผิดพลาดต่อผู้ฟัง และ`prependListener`สำหรับลำดับความสำคัญ
 ---
 
 ## สรุป

@@ -38,12 +38,13 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Kabuk ve PowerShell
 Kabuk komut dosyası oluşturma, komut satırı yorumlayıcıları için komut dosyaları yazmayı ifade eder. En önemli iki kabuk, Linux ve macOS'ta varsayılan olan **Bash** (Bourne Again Shell) ve Microsoft'un modern platformlar arası kabuğu ve komut dosyası dili olan **PowerShell**'dir. Kabuk komut dosyaları, sistem yönetimi görevlerini, işlem hatlarını oluşturmayı, dosya işlemeyi ve dağıtım iş akışlarını otomatikleştirir.
-Her geliştiricinin, DevOps mühendisinin ve sistem yöneticisinin kabuk komut dosyası oluşturma becerilerine ihtiyacı vardır. İster bir web sunucusu dağıtıyor, ister günlük dosyalarını işliyor, ister CI/CD işlem hatlarını kuruyor, ister yedeklemeleri otomatikleştiriyor olun, kabuk komut dosyası oluşturma bu işe uygun araçtır.
+Her geliştiricinin, DevOps mühendisinin ve sistem yöneticisinin kabuk komut dosyası oluşturma becerilerine ihtiyacı vardır. İster bir web sunucusu dağıtıyor, ister günlük dosyalarını işliyor, ister CI/CD işlem hatlarını kuruyor, ister yedeklemeleri otomatikleştiriyor olun, kabuk komut dosyası oluşturma bu iş için gereken araçtır.
 ---
 
-## Shell/PowerShell Neden Önemlidir?
+## Shell/PowerShell Neden Önemlidir
 - **Otomasyon**: Tekrarlanan görevleri otomatikleştirin (dosya yönetimi, dağıtımlar, sistem yapılandırması).
 - **DevOps esası**: CI/CD işlem hatları (GitHub Actions, Jenkins), Docker ve Kubernetes'in tümü kabuk komut dosyaları kullanır.
 - **Evrensel**: Her sunucunun, bulut örneğinin ve kapsayıcının bir kabuğu vardır.
@@ -57,7 +58,7 @@ Her geliştiricinin, DevOps mühendisinin ve sistem yöneticisinin kabuk komut d
 | **Karmaşık programlar için değil** | Zayıf veri yapıları, OOP yok, test edilmesi zor | Karmaşık mantık için Python, Go veya diğer dilleri kullanın |
 | **Hata işleme** | Bash hata yönetimi ilkeldir |`set -e`kullanın; çıkış kodlarını kontrol edin; PowerShell'in try/catch özelliğini kullanın |
 | **Taşınabilirlik** | Bash betikleri tüm sistemlerde çalışmayabilir | Maksimum taşınabilirlik için POSIX sh'i kullanın; Platformlar arası için PowerShell |
-| **Hata ayıklama** | Sınırlı hata ayıklama araçları | Bash için`set -x`kullanın; PowerShell'in uygun bir hata ayıklayıcısı var |
+| **Hata ayıklama** | Sınırlı hata ayıklama araçları | Bash için `set -x`'yi kullanın; PowerShell'in uygun bir hata ayıklayıcısı var |
 ---
 
 ## Bash Söz Dizimi
@@ -857,6 +858,152 @@ Publish-Module @publishParams
 | Günlük analizi | Hızlı grep/awk tek satırlık satırlar | Karmaşık analiz için Python, SQL |
 | Karmaşık uygulamalar | Uygun değil | Python, Git, Java |
 | Platformlar arası komut dosyaları | PowerShell 7+ her yerde çalışır | Gerçekten taşınabilir komut dosyaları için Python |
+---
+
+## Sentetik Soru-Cevap
+### S1: Bash'te tek ve çift tırnak arasındaki fark nedir?
+**A:** Çift tırnak, değişken genişletmeye izin verir; tek tırnaklar gerçektir:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### S2: Kabuk komut dosyalarındaki hataları nasıl halledebilirim?
+**A:** Hatalardan çıkmak ve temizleme amacıyla tuzaklamak için `set -e`'yi kullanın:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### S3: Komut satırı bağımsız değişkenlerini düzgün bir şekilde nasıl işlerim?
+**A:** Bayraklar ve konumsal parametreler için`getopts`kullanın:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### S4: PowerShell işlem hattı nedir ve Bash'ten farkı nedir?
+**C:** PowerShell metinleri değil nesneleri yönlendirir. Her nesne özelliklerini korur:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### S5: Platformlar arası komut dosyalarını nasıl yazarım?
+**C:** Bash için:`#!/usr/bin/env bash`kullanın, GNU'ya özgü işaretlerden kaçının. PowerShell için: Linux/macOS/Windows üzerinde çalışan`pwsh`(PowerShell Core) kullanın.
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Toplu Görüntü İşleme Komut Dosyası (Bash)
+**1. Adım: Sorunu Anlayın**
+Bir dizindeki tüm PNG resimlerini maksimum 800 piksel genişliğe kadar yeniden boyutlandırın.
+**2. Adım: Yaklaşımı Belirleyin**
+Dosyaları bulmak için `find`'yi ve yeniden boyutlandırmak için `convert`'yi (ImageMagick) kullanın.
+**3. Adım: Uygulama**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**4. Adım: Genişletin**
+`xargs -P` ile ilerleme çubuğu, bozuk görüntüler için hata işleme ve paralel işleme ekleyin.
+### Sorun 2: Otomatik Günlük Döndürme (Bash)
+**1. Adım: Sorunu Anlayın**
+Günlük dosyalarını günlük olarak değiştirin, eski günlükleri sıkıştırın ve 30 günden eski günlükleri silin.
+**2. Adım: Yaklaşımı Belirleyin**
+`find`'yi zamana dayalı filtrelerle ve `gzip`'yi sıkıştırma için kullanın.
+**3. Adım: Uygulama**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**4. Adım: Planlama**
+Crontab'a ekle: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Sorun 3: Windows Hizmeti Sağlık Denetimi (PowerShell)
+**1. Adım: Sorunu Anlayın**
+Kritik hizmetlerin çalışıp çalışmadığını kontrol edin ve durdurulmuşsa bir uyarı gönderin.
+**2. Adım: Yaklaşımı Belirleyin**
+Durdurulan hizmetler için`Get-Service`kullanın ve filtreleyin.
+**3. Adım: Uygulama**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**4. Adım: Otomatikleştirin**
+Her 5 dakikada bir çalışan bir Windows Görev Zamanlayıcı işi olarak zamanlayın.
 ---
 
 ## Özet

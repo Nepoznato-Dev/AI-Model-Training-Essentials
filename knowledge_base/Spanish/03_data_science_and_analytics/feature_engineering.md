@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Ingeniería de funciones"
-descripción: "Transformaciones, codificaciones, selección de características, reducción de dimensionalidad"
-categoría: "Ciencia y análisis de datos"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Feature Engineering"
+description: "Transformations, encodings, feature selection, dimensionality reduction"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de análisis y ciencia de datos"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [característica, ingeniería, análisis y ciencia de datos]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "7 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [feature, engineering, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Ingeniería de funciones
 La ingeniería de características es el proceso de transformar datos sin procesar en representaciones que hacen que los modelos de aprendizaje automático sean más efectivos. A menudo se describe como el paso más importante en el proceso de aprendizaje automático: las características que le brinda a un modelo importan más que el algoritmo que elija. Un modelo simple con características bien diseñadas normalmente superará a un modelo complejo con entradas sin procesar y sin procesar. El arte radica en comprender tanto el dominio como los datos lo suficientemente bien como para crear señales de las que el modelo pueda aprender.

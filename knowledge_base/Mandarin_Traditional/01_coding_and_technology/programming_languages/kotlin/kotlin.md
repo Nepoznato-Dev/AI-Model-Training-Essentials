@@ -40,7 +40,7 @@ contribution:
 ---
 
 # 科特林
-Kotlin 是一種靜態類型、編譯型程式語言，由 JetBrains 開發，於 2011 年首次發布（2016 年發布 1.0）。它在 Java 虛擬機器 (JVM) 上運行，並且與 Java 完全可互通——這意味著您可以使用 Kotlin 中的任何 Java 庫，並從 Java 呼叫 Kotlin 程式碼，而無需任何包裝器。 2017 年，Google 宣布 Kotlin 成為 Android 開發的首選語言，自此成為 Android 的主導語言。
+Kotlin 是一種靜態類型、編譯型程式語言，由 JetBrains 開發，於 2011 年首次發布（2016 年發布 1.0）。它在 Java 虛擬機器 (JVM) 上運行，並且與 Java 完全可互通——這意味著您可以使用 Kotlin 中的任何 Java 庫，並從 Java 呼叫 Kotlin 程式碼，而無需任何包裝器。 2017 年，Google 宣布 Kotlin 成為 Android 開發的首選語言，從此成為 Android 的主導語言。
 Kotlin 旨在解決 Java 的痛點：冗長、空指標異常和缺乏現代功能。結果是一種感覺像是現代化 Java 的語言——簡潔、安全且富有表現力——同時保持與龐大的 Java 生態系統的完全相容性。
 ---
 
@@ -920,7 +920,7 @@ fun callJsLibrary() {
 ---
 
 ## 設計模式
-### 單例（預設執行緒安全）
+### 單例（預設執行緒安全性）
 ```kotlin
 // Kotlin object — thread-safe singleton by language design
 object DatabaseConnection {
@@ -1164,9 +1164,9 @@ kotlin {
 ---
 
 ## 何時使用 Kotlin
-|場景 |為什麼選擇 Kotlin |更好的選擇|
+|場景|為什麼選擇 Kotlin |更好的選擇|
 |----------|----------|--------------------|
-|安卓開發 | Google 的首選語言 | Java（用於遺留程式碼庫）|
+|安卓開發| Google 的首選語言 | Java（用於遺留程式碼庫）|
 | JVM 後端 |現代 Java 替代方案 | Java、Go |
 |跨平台（共享邏輯）| Kotlin 多平台 | Flutter（用於 UI 共享）|
 |桌面應用程式 | Compose Multiplatform 成為可能 | C#、Swift 原生 |
@@ -1174,6 +1174,409 @@ kotlin {
 |非 JVM 系統程式設計 |不是首要目標 | Rust、Go、C |
 |網頁前端 | Kotlin/JS 存在但有限 | TypeScript、JavaScript |
 |資料科學/機器學習 |不是生態系| Python、R |
+---
+
+## 綜合問答
+### Q1：Kotlin 的 null 安全功能實際上是如何運作的？
+**A:** Kotlin 在編譯時區分可為 null (`String?`) 和不可為 null (`String`) 型別。編譯器會阻止您在沒有 null 檢查的情況下呼叫可為 null 類型的方法。安全呼叫 (`?.`)、Elvis 運算子 (`?:`) 和非空斷言 (`!!`) 提供不同的策略。智慧轉換會在空檢查後自動縮小類型範圍。
+```kotlin
+var name: String? = null
+
+// Safe call — returns null if name is null
+val length: Int? = name?.length
+
+// Elvis operator — provide default
+val display: String = name ?: "Anonymous"
+
+// Smart cast — compiler narrows type after check
+fun process(user: String?) {
+    if (user != null) {
+        println(user.length)  // Smart cast to String (non-null)
+    }
+}
+
+// let with safe call
+name?.let {
+    println("Name is $it")  // Only runs if name is not null
+}
+
+// Non-null assertion — crashes if null (avoid in production)
+val forced: String = name!!  // Throws NullPointerException if null
+```
+
+### Q2：什麼是協程，它們與執行緒有何不同？
+**答：** 協程是在執行緒上執行的輕量級協作任務。它們可以暫停執行（不阻塞線程）並稍後恢復。數百萬個協程可以在幾個執行緒上運行。 `suspend`函數只能從協程或其他暫停函數呼叫。協程作用域控制生命週期－當一個作用域被取消時，它的所有協程都會被取消。
+```kotlin
+import kotlinx.coroutines.*
+
+// Basic coroutine
+CoroutineScope(Dispatchers.Main).launch {
+    val user = withContext(Dispatchers.IO) {
+        fetchUserFromNetwork()  // Suspends, doesn't block
+    }
+    textView.text = user.name   // Back on Main thread
+}
+
+// Concurrent execution
+suspend fun loadDashboard(): Dashboard {
+    coroutineScope {
+        val userDeferred = async { fetchUser() }
+        val postsDeferred = async { fetchPosts() }
+        val user = userDeferred.await()
+        val posts = postsDeferred.await()
+        Dashboard(user, posts)
+    }
+}
+
+// Flow — cold async stream
+fun observePrices(): Flow<Double> = flow {
+    while (true) {
+        emit(fetchCurrentPrice())
+        delay(1000)
+    }
+}
+
+// Collect flow
+lifecycleScope.launch {
+    observePrices()
+        .filter { it > 100.0 }
+        .collect { price -> updateUI(price) }
+}
+```
+
+### Q3：什麼是資料類別、密封類別和值類別？
+**A:** 資料類別會自動產生`equals`、`hashCode`、`toString`、`copy`和`componentN`函數 - 非常適合資料持有者。密封類別限制繼承 - 所有子類別必須位於同一檔案中 - 啟用詳盡的`when`表達式。值類別在運行時以零開銷包裝單一值（內聯類別）。
+```kotlin
+// Data class — auto-generates equals/hashCode/toString/copy
+data class User(val name: String, val email: String, val age: Int)
+
+val alice = User("Alice", "alice@example.com", 30)
+val bob = alice.copy(name = "Bob")
+val (name, email, age) = alice  // Destructuring
+
+// Sealed class — exhaustive when
+sealed class Result<out T> {
+    data class Success<T>(val data: T) : Result<T>()
+    data class Error(val exception: Throwable) : Result<Nothing>()
+    data object Loading : Result<Nothing>()
+}
+
+fun handle(result: Result<User>) = when (result) {
+    is Result.Success -> showUser(result.data)
+    is Result.Error -> showError(result.exception)
+    is Result.Loading -> showSpinner()
+    // No 'else' needed — compiler knows all cases are covered
+}
+
+// Value class — zero-overhead wrapper
+@JvmInline
+value class UserId(val value: String)
+fun getUser(id: UserId) { /* ... */ }
+// At runtime, UserId is just a String — no object allocation
+```
+
+### Q4：擴充函數如何運作，它們有哪些限制？
+**A:** 擴充函數會為現有型別新增方法，無需繼承或修改。它們是靜態解析的（基於宣告的類型，而不是執行時間類型）。他們無法存取私人成員。擴展屬性的工作原理類似。它們廣泛應用於 Kotlin 的標準庫和 Android 開發中。
+```kotlin
+// Extension function
+fun String.isEmail(): Boolean = contains("@") && contains(".")
+fun Int.toOrdinal(): String = "${this}${when (this % 10) {
+    1 -> "st"; 2 -> "nd"; 3 -> "rd"; else -> "th"
+}}"
+
+// Extension with receiver
+fun <T> List<T>.secondOrNull(): T? = if (size >= 2) this[1] else null
+
+// Extension property
+val String.wordCount: Int get() = split("\\s+".toRegex()).size
+
+// Scoped extensions
+class Database {
+    fun query(sql: String): List<Row> = TODO()
+}
+
+fun Database.users() = query("SELECT * FROM users")
+
+// Usage
+"test@example.com".isEmail()  // true
+42.toOrdinal()                // "42nd"
+"hello world foo".wordCount   // 3
+```
+
+### Q5：什麼是 Kotlin Multiplatform，什麼時候該使用它？
+**答：** Kotlin Multiplatform (KMP) 可讓您在平台（Android、iOS、Web、桌面、伺服器）之間共用程式碼，同時保留特定於平台的 UI。業務邏輯、網路、資料層可以共享； UI 保持原生。當您的團隊了解 Kotlin 並且希望最大化程式碼共用而不需要完全跨平台（如 Flutter）時，請使用它。
+```kotlin
+// commonMain — shared code
+expect class Platform() {
+    val name: String
+}
+
+// androidMain
+actual class Platform {
+    actual val name = "Android ${Build.VERSION.SDK_INT}"
+}
+
+// iosMain
+actual class Platform {
+    actual val name = UIDevice.currentDevice.systemName()
+}
+
+// Shared networking
+interface ApiClient {
+    suspend fun getUsers(): List<User>
+}
+
+class ApiClientImpl(private val httpClient: HttpClient) : ApiClient {
+    override suspend fun getUsers(): List<User> {
+        return httpClient.get("/api/users").body()
+    }
+}
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：建構型別安全的 Builder DSL
+**問題陳述：** 建立一個 Kotlin DSL，用於建立具有編譯時安全性的 HTML 文件。 DSL 應強制執行有效的 HTML 結構（例如，`<head>`僅在`<html>`內，`<li>`僅在`<ul>`或`<ol>`內）。
+**第 1 步 — 了解問題：**
+我們需要：(1) 具有`@DslMarker`的建構器函數以防止範圍洩漏，(2) 基於接收器的 DSL 語法，(3) 編譯時強制執行有效巢狀。 Kotlin 的型別安全建構器和`@DslMarker`註解就是為此而設計的。
+**第 2 步 — 確定方法：**
+- 使用`@DslMarker`建立範圍控制註解。
+- 每個 HTML 元素都是一個類，其有效子元素具有建構器方法。
+-`@HtmlTagMarker`阻止存取子作用域內的父作用域方法。
+- 使用`invoke`運算子來實作簡潔的語法。
+**第 3 步 — 實施解決方案：**
+```kotlin
+@DslMarker
+annotation class HtmlTagMarker
+
+@HtmlTagMarker
+class HTML {
+    private val children = mutableListOf<String>()
+
+    fun head(init: HEAD.() -> Unit) {
+        val head = HEAD().apply(init)
+        children.add(head.render())
+    }
+
+    fun body(init: BODY.() -> Unit) {
+        val body = BODY().apply(init)
+        children.add(body.render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<html>")
+        children.forEach { appendLine("  $it") }
+        appendLine("</html>")
+    }
+}
+
+@HtmlTagMarker
+class HEAD {
+    private val children = mutableListOf<String>()
+
+    fun title(text: String) { children.add("<title>$text</title>") }
+    fun meta(name: String, content: String) {
+        children.add("<meta name=\"$name\" content=\"$content\">")
+    }
+
+    fun render(): String = buildString {
+        appendLine("<head>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</head>")
+    }
+}
+
+@HtmlTagMarker
+class BODY {
+    private val children = mutableListOf<String>()
+
+    fun h1(text: String) { children.add("<h1>$text</h1>") }
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun div(init: DIV.() -> Unit) {
+        children.add(DIV().apply(init).render())
+    }
+    fun ul(init: UL.() -> Unit) {
+        children.add(UL().apply(init).render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<body>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</body>")
+    }
+}
+
+@HtmlTagMarker
+class DIV {
+    private val children = mutableListOf<String>()
+    var cssClass: String = ""
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun render(): String {
+        val cls = if (cssClass.isNotEmpty()) " class=\"$cssClass\"" else ""
+        return "<div$cls>${children.joinToString("")}</div>"
+    }
+}
+
+@HtmlTagMarker
+class UL {
+    private val items = mutableListOf<String>()
+    fun li(text: String) { items.add("<li>$text</li>") }
+    fun render(): String = "<ul>${items.joinToString("")}</ul>"
+}
+
+fun html(init: HTML.() -> Unit): String = HTML().apply(init).render()
+
+// Usage — compile-time safe
+val page = html {
+    head {
+        title("My Page")
+        meta("viewport", "width=device-width")
+    }
+    body {
+        h1("Welcome")
+        p("This is a type-safe HTML builder.")
+        div {
+            cssClass = "container"
+            p("Inside a div")
+        }
+        ul {
+            li("Item 1")
+            li("Item 2")
+            li("Item 3")
+        }
+    }
+}
+// title() is NOT accessible inside body {} — prevented by @DslMarker
+// li() is NOT accessible inside body {} — only inside ul {}
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 類型安全：`@DslMarker`防止範圍洩漏 -`title()`在`body {}`內部不可存取。
+- 編譯器在編譯時強制執行有效巢狀－無需執行時間檢查。
+- 可擴充性：透過建立具有適當子方法的類別來新增元素。
+- 生產：使用`kotlinx.html`取得全面的、經過良好測試的 HTML DSL。
+### 問題 2：使用協程實現狀態機
+**問題陳述：** 為遊戲角色建立一個基於協程的狀態機，用於處理輸入事件、狀態之間的轉換並支援動畫回調。
+**第 1 步 — 了解問題：**
+我們需要：（1）具有進入/退出操作的狀態，（2）事件驅動的轉換，（3）基於協程的處理循環，（4）狀態轉換的動畫回呼。狀態機作為長壽命協程運行，消耗來自通道的事件。
+**第 2 步 — 確定方法：**
+- 對狀態和事件使用密封類別。
+- 使用`Channel`進行事件傳遞。
+- 狀態機循環使用`for (event in channel)`事件。
+- 轉換觸發退出/進入回呼。
+**第 3 步 — 實施解決方案：**
+```kotlin
+sealed class GameState {
+    data object Idle : GameState()
+    data object Walking : GameState()
+    data object Running : GameState()
+    data object Attacking : GameState()
+    data class Dead(val cause: String) : GameState()
+}
+
+sealed class GameEvent {
+    data object Move : GameEvent()
+    data object Run : GameEvent()
+    data object Attack : GameEvent()
+    data object Stop : GameEvent()
+    data class TakeDamage(val amount: Int) : GameEvent()
+}
+
+class CharacterStateMachine(
+    private val scope: CoroutineScope,
+    private val onStateChange: suspend (GameState) -> Unit
+) {
+    private var currentState: GameState = GameState.Idle
+    private val eventChannel = Channel<GameEvent>(Channel.UNLIMITED)
+    var health: Int = 100; private set
+
+    init {
+        scope.launch {
+            onStateChange(currentState)
+            for (event in eventChannel) {
+                processEvent(event)
+            }
+        }
+    }
+
+    suspend fun send(event: GameEvent) {
+        eventChannel.send(event)
+    }
+
+    private suspend fun processEvent(event: GameEvent) {
+        val newState = when (currentState) {
+            is GameState.Dead -> return  // No transitions from dead
+
+            GameState.Idle -> when (event) {
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Walking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Running -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Attacking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+        }
+
+        if (newState != currentState) {
+            currentState = newState
+            onStateChange(newState)
+        }
+    }
+
+    private suspend fun handleDamage(event: GameEvent.TakeDamage): GameState {
+        health -= event.amount
+        return if (health <= 0) GameState.Dead("Defeated") else currentState
+    }
+}
+
+// Usage
+val machine = CharacterStateMachine(
+    scope = CoroutineScope(Dispatchers.Default)
+) { state ->
+    println("State changed to: $state")
+    when (state) {
+        GameState.Idle -> playAnimation("idle")
+        GameState.Walking -> playAnimation("walk")
+        GameState.Running -> playAnimation("run")
+        GameState.Attacking -> playAnimation("attack")
+        is GameState.Dead -> playAnimation("death")
+    }
+}
+
+machine.send(GameEvent.Move)      // Walking
+machine.send(GameEvent.Run)       // Running
+machine.send(GameEvent.Attack)    // Attacking
+machine.send(GameEvent.TakeDamage(120))  // Dead
+```
+
+**第 4 步 — 驗證與最佳化：**
+- 類型安全：密封類別確保所有狀態和事件都得到處理。編譯器捕獲丟失的轉換。
+- 基於協程：事件依序處理，無阻塞。通道提供背壓。
+- 生命週期：取消作用域會完全停止狀態機。
+- 生產：對於複雜的狀態機，使用`tinder-statemachine`或使用正式的狀態機庫對狀態進行建模。
 ---
 
 ＃＃ 概括

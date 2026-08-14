@@ -1,38 +1,42 @@
 ---
-# मेटाडेटा
-शीर्षक: "गेम थ्योरी और रणनीतिक सोच"
-विवरण: "नैश संतुलन, कैदी की दुविधा, तंत्र डिजाइन, नीलामी"
-श्रेणी: "व्यवसाय और अर्थशास्त्र"
-संस्करण: "1.0.0"
-स्थिति: "सक्रिय"
-#योगदान
-लेखक:
-  - नाम: "एआई मॉडल ट्रेनिंग टीम"
-    ईमेल: ""
-    भूमिका: "मूल_लेखक"
-योगदानकर्ता: []
-चेंजलॉग:
-  - संस्करण: "1.0.0"
-    दिनांक: "2026-08-05"
-    लेखक: "एआई मॉडल ट्रेनिंग टीम"
-    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
-#समीक्षा
-बनाया गया: "2026-08-05"
-अंतिम_संशोधित: "2026-08-05"
-समीक्षा दिनांक: "2027-02-05"
-review_by: "बिजनेस एंड इकोनॉमिक्स नॉलेज बेस टीम"
-अगली_समीक्षा: "2027-08-05"
-#वर्गीकरण
-टैग: [खेल, सिद्धांत, व्यवसाय-और-अर्थशास्त्र]
-कठिनाई_स्तर: "शुरुआती"
-पूर्वावश्यकताएँ: []
-अनुमानित_पढ़ने_का समय: "7 मिनट"
-# योगदान मार्गदर्शिका
-योगदान:
-  लाइसेंस: "एमआईटी"
-  फीडबैक_चैनल: "गिटहब मुद्दे"
-  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
-  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+# Metadata
+title: "Game Theory and Strategic Thinking"
+description: "Nash equilibrium, prisoner's dilemma, mechanism design, auctions"
+category: "Business and Economics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Business & Economics Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [game, theory, business-and-economics]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # गेम थ्योरी और रणनीतिक सोच
 गेम थ्योरी रणनीतिक अंतःक्रियाओं का गणितीय अध्ययन है - ऐसी स्थितियाँ जहाँ आपका परिणाम न केवल इस बात पर निर्भर करता है कि आप क्या करते हैं, बल्कि इस पर भी निर्भर करता है कि दूसरे क्या करते हैं। यह हर जगह लागू होता है: व्यावसायिक प्रतिस्पर्धा, अंतर्राष्ट्रीय संबंध, नीलामी, बातचीत, विकासवादी जीव विज्ञान, और यातायात के माध्यम से मार्ग चुनने जैसे रोजमर्रा के फैसले। मुख्य अंतर्दृष्टि यह है कि रणनीतिक स्थितियों में तर्कसंगत अभिनेता केवल अपनी रणनीति का अनुकूलन नहीं करते हैं - वे अनुमान लगाते हैं कि दूसरे क्या करेंगे, और अन्य भी ऐसा ही कर रहे हैं।

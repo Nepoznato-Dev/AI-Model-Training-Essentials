@@ -46,7 +46,7 @@ SQL ไม่ใช่ภาษาโปรแกรมทั่วไป คุ
 
 ## ทำไม SQL จึงมีความสำคัญ
 - **สากล**: ทุกฐานข้อมูลเชิงสัมพันธ์พูด SQL เรียนรู้เพียงครั้งเดียว นำไปใช้ได้ทุกที่
-- **ประกาศ**: คุณอธิบายว่า *ข้อมูลอะไร* ที่คุณต้องการ ไม่ใช่ *วิธีการ* เพื่อให้ได้มา เอ็นจิ้นฐานข้อมูลปรับการดำเนินการให้เหมาะสม
+- **ประกาศ**: คุณอธิบายว่า *ข้อมูลอะไร* ที่คุณต้องการ ไม่ใช่ *วิธี* เพื่อให้ได้มา เอ็นจิ้นฐานข้อมูลปรับการดำเนินการให้เหมาะสม
 - **จำเป็นสำหรับนักพัฒนาทุกคน**: แบ็กเอนด์, วิทยาศาสตร์ข้อมูล, DevOps, การวิเคราะห์ — ทั้งหมดนี้ต้องใช้ SQL
 - **ทรงพลัง**: ฟังก์ชันหน้าต่าง, CTE, แบบสอบถามย่อย และการรวมกลุ่มช่วยให้คุณแสดงตรรกะที่ซับซ้อนได้ในไม่กี่บรรทัด
 - **ประสิทธิภาพ**: การสืบค้น SQL ที่เขียนอย่างดีบนฐานข้อมูลที่ได้รับการจัดทำดัชนีอย่างเหมาะสมสามารถประมวลผลแถวนับล้านแถวในหน่วยมิลลิวินาที
@@ -576,7 +576,7 @@ EXPLAIN ANALYSE SELECT * FROM users WHERE email = 'alice@mail.com';
 | **ไฟล์การโยกย้าย** | สคริปต์ SQL เวอร์ชันที่ใช้ตามลำดับ | ต่ำ |
 | **ปรับใช้สีน้ำเงิน-เขียว** | สองฐานข้อมูลที่เหมือนกัน สลับการรับส่งข้อมูล | ต่ำ |
 | **ขยายสัญญา** | เพิ่มคอลัมน์ใหม่ เขียนคู่ ย้าย ปล่อยเก่า | ต่ำ |
-| **DDL โดยตรง** | การรัน ALTER TABLE โดยตรงบนการผลิต | สูง |
+| **DDL โดยตรง** | การรัน ALTER TABLE โดยตรงกับการผลิต | สูง |
 ```sql
 -- Expand-contract pattern: renaming a column safely
 -- Phase 1: EXPAND - add new column alongside old
@@ -602,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | การจัดเก็บคีย์-ค่าอย่างง่าย | เกินกำลังสำหรับกรณีการใช้งานนี้ | เรดดิส, DynamoDB |
 | ข้อมูลที่ไม่มีโครงสร้างสูง | ความแข็งแกร่งของสคีมาเป็นปัญหา | MongoDB ฐานข้อมูลเอกสาร |
 | มาตราส่วนแนวนอนขนาดใหญ่ | ฐานข้อมูล SQL ยากที่จะแยกส่วน | คาสซานดรา, DynamoDB, CockroachDB |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### Q1: อะไรคือความแตกต่างระหว่าง`WHERE`และ`HAVING`?
+**A:**`WHERE`กรองแถวก่อนจัดกลุ่ม `HAVING`กรองกลุ่มหลังจากการรวมกลุ่ม:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: ฟังก์ชันหน้าต่างแตกต่างจาก GROUP BY อย่างไร
+**A:** ฟังก์ชันหน้าต่างคำนวณข้ามแถวโดยไม่ยุบ:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3: ฉันจะเพิ่มประสิทธิภาพการสืบค้นที่ช้าได้อย่างไร
+**ก:** กลยุทธ์หลัก:
+- เพิ่มดัชนีในคอลัมน์ที่ใช้ใน`WHERE`,`JOIN`และ`ORDER BY`
+- หลีกเลี่ยง`SELECT *`— เลือกเฉพาะคอลัมน์ที่จำเป็นเท่านั้น
+- ใช้`EXPLAIN`/`EXPLAIN ANALYZE`เพื่ออ่านแผนการสืบค้น
+- แทนที่แบบสอบถามย่อยด้วย JOIN เมื่อเป็นไปได้
+- ใช้ CTE เพื่อให้อ่านง่าย (โดยปกติจะไม่มีการลงโทษด้านประสิทธิภาพ)
+- หลีกเลี่ยงฟังก์ชันบนคอลัมน์ที่จัดทำดัชนีไว้ใน WHERE: ใช้`WHERE date >= '2024-01-01'`ไม่ใช่ `WHERE YEAR(date) = 2024`
+### คำถามที่ 4: CTE คืออะไร และฉันควรใช้เมื่อใด
+**A:** นิพจน์ตารางทั่วไปจะสร้างชุดผลลัพธ์ชั่วคราวที่มีชื่อ:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5: ฉันจะจัดการค่า NULL ได้อย่างถูกต้องได้อย่างไร
+**A:** NULL หมายถึงไม่ทราบ — มันไม่เท่ากับสิ่งใดๆ เลย รวมถึงตัวมันเองด้วย:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การค้นหา N อันดับแรกต่อกลุ่ม
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+ค้นหาพนักงานที่ได้รับค่าตอบแทนสูงสุด 3 คนในแต่ละแผนก
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้ฟังก์ชันหน้าต่างโดย`ROW_NUMBER()`แบ่งพาร์ติชันตามแผนก
+**ขั้นตอนที่ 3: นำไปใช้**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ตรวจสอบว่าแต่ละแผนกมีไม่เกิน 3 แถว จัดการสายรัดด้วย`DENSE_RANK()`หากจำเป็น
+### ปัญหาที่ 2: สร้างรายงานการเติบโตปีต่อปี
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+คำนวณรายได้ต่อเดือนและเปอร์เซ็นต์การเติบโตปีต่อปี
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้`DATE_TRUNC`สำหรับการจัดกลุ่มและฟังก์ชันหน้าต่าง`LAG()`สำหรับการเปรียบเทียบปีก่อนหน้า
+**ขั้นตอนที่ 3: นำไปใช้**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ตรวจสอบ 12 เดือนแรกมีค่า NULL สำหรับปีก่อน ตรวจสอบเปอร์เซ็นต์การเติบโตเทียบกับตัวเลขที่ทราบ
+### ปัญหาที่ 3: การหมุนแถวเป็นคอลัมน์
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+เปลี่ยนสถานะนับจากแถวเป็นคอลัมน์
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้การรวมแบบมีเงื่อนไข (`CASE`ภายใน`SUM`)
+**ขั้นตอนที่ 3: นำไปใช้**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**ขั้นตอนที่ 4: ขยาย**
+เพิ่มคอลัมน์เปอร์เซ็นต์และผลรวมที่กำลังดำเนินการ
 ---
 
 ## สรุป

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Ada
 Ada adalah bahasa pemrograman yang dikompilasi dan diketik secara statis yang dirancang untuk sistem yang kritis terhadap keselamatan dan berintegritas tinggi. Awalnya dikembangkan pada tahun 1980an di bawah kontrak dengan Departemen Pertahanan AS (dinamai menurut Ada Lovelace, yang dianggap sebagai pemrogram komputer pertama), Ada menekankan keandalan, pemeliharaan, dan kebenaran. Ini dirancang untuk menggantikan ratusan bahasa pemrograman yang kemudian digunakan oleh Departemen Pertahanan dengan satu bahasa yang ditentukan dengan baik.
 Ada digunakan dalam penerbangan (sistem fly-by-wire), luar angkasa (ESA dan NASA), pertahanan (pemandu rudal, radar), transportasi kereta api, dan perangkat medis – di mana saja di mana kegagalan perangkat lunak dapat memakan korban jiwa.
@@ -861,6 +862,147 @@ end Main;
 | Pengembangan aplikasi umum | Berlebihan untuk sistem yang tidak kritis | Python, Java, Buka |
 | Pengembangan web | Tidak cocok | JavaScript, Python |
 | Ilmu data / ML | Bukan ekosistem | Piton, R |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Bagaimana sistem tipe Ada mencegah bug pada waktu kompilasi?
+**A:** Sistem tipe Ada termasuk yang paling ketat di antara bahasa apa pun. Ini menangkap kesalahan yang terlewatkan oleh bahasa lain:
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2: Apa yang dimaksud dengan model penugasan Ada dan bagaimana perbandingannya dengan model konkurensi lainnya?
+**A:** Ada memiliki konkurensi bawaan dengan objek dan tugas yang dilindungi:
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: Bagaimana cara menggunakan obat generik di Ada?
+**A:** Ada obat generik yang eksplisit dan aman untuk tipe:
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: Apa yang membuat Ada cocok untuk sistem yang kritis terhadap keselamatan?
+**A:** Ada menyediakan:
+- Subset SPARK untuk verifikasi formal (bukti kebenaran matematis)
+- Pemrograman berbasis kontrak (kondisi pra/pasca, tipe invarian)
+- Tidak ada alokasi memori implisit di SPARK
+- Penugasan dan penjadwalan deterministik
+- Profil Ravenscar untuk sistem real-time berintegritas tinggi
+- Kualifikasi Toolchain (DO-178C untuk avionik)
+### Q5: Bagaimana cara membuat proyek Ada?
+**A:** Gunakan GPRBuild dengan file proyek GPR:
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menerapkan Antrian Tipe Aman
+**Langkah 1: Pahami Masalahnya**
+Buat antrian yang dibatasi dan aman untuk thread dengan pemeriksaan ukuran waktu kompilasi.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan objek yang dilindungi dengan buffer terbatas.
+**Langkah 3: Terapkan**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Langkah 4: Verifikasi**
+Objek yang dilindungi menjamin saling pengecualian. Hambatan masuk mencegah overflow/underflow.
+### Masalah 2: Validasi Berbasis Kontrak
+**Langkah 1: Pahami Masalahnya**
+Menerapkan fungsi akar kuadrat dengan kontrak formal.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan kontrak Ada 2012 (kondisi pra/pasca).
+**Langkah 3: Terapkan**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Langkah 4: Verifikasi**
+Pemeriksaan runtime (pernyataan) menangkap pelanggaran. Di SPARK, ini menjadi kewajiban pembuktian.
 ---
 
 ## Ringkasan

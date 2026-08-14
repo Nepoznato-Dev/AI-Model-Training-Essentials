@@ -1,4 +1,4 @@
-# Cơ sở kiến ​​thức tiếng Anh
+# Kho kiến thức
 Bộ sưu tập đầy đủ các tài liệu tham khảo bao gồm mã hóa, công nghệ, AI, khoa học, kinh doanh, nhân văn, v.v. — được viết theo phong cách đàm thoại tự nhiên được thiết kế cho cả đào tạo AI và học tập của con người.
 **Cập nhật lần cuối:** Tháng 8 năm 2026  
 **Tổng số tệp:** Hơn 138 tài liệu đánh dấu  
@@ -7,7 +7,7 @@ Bộ sưu tập đầy đủ các tài liệu tham khảo bao gồm mã hóa, c�
 
 ## Cấu trúc thư mục
 ```
-knowledge_base/English/
+knowledge_base/Vietnamese/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,13 @@ knowledge_base/English/
 **Chủ đề cốt lõi:**
 | Tập tin | Mô tả |
 |------|-------------|
-| [web_development.md](01_coding_and_technology/web_development.md)| Frontend, backend, DevOps, bảo mật |
 | [database_systems.md](01_coding_and_technology/database_systems.md)| SQL, NoSQL, mẫu thiết kế, tối ưu hóa |
 | [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)| Nhà cung cấp đám mây, mẫu kiến ​​trúc, bảo mật |
 | [networking_basics.md](01_coding_and_technology/networking_basics.md)| Mô hình OSI, TCP/IP, giao thức, bảo mật |
 | [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH, systemd, ghi nhật ký, giám sát, sao lưu, Docker, CI/CD |
-| [security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP Top 10, xác thực đầu vào, xác thực, quản lý bí mật |
 | [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md)| Đường ống CI/CD, Docker, Kubernetes, Terraform, GitOps |
 | [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)| Mã hóa, TLS, OWASP, mã hóa an toàn, SDL |
 | [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST, GraphQL, gRPC, tạo phiên bản, xác thực, cổng API |
-| [software_architecture_patterns.md](01_coding_and_technology/software_architecture_patterns.md)| Monolith, microservice, hướng sự kiện, DDD, bộ nhớ đệm, RẮN |
-| [technology_glossary.md](01_coding_and_technology/technology_glossary.md)| Thuật ngữ kỹ thuật (mô hình AI, phần cứng, điểm chuẩn) |
-| [tool_usage.md](01_coding_and_technology/tool_usage.md)| Công cụ và tiện ích phát triển |
 | [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG, UX toàn diện, công nghệ hỗ trợ, mã hóa có thể truy cập |
 | [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)| Đồng thuận, hợp đồng thông minh, DeFi, khả năng chịu lỗi Byzantine |
 | [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)| Mảng, cây, đồ thị, sắp xếp, tìm kiếm, độ phức tạp |
@@ -52,7 +47,6 @@ knowledge_base/English/
 | [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)| Nền tảng mã thấp, nền tảng dành cho nhà phát triển nội bộ, đường dẫn vàng |
 | [mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS, Android, React Native, Flutter, kiến ​​trúc di động |
 | [performance_optimization.md](01_coding_and_technology/performance_optimization.md)| Lập hồ sơ, bộ nhớ đệm, CDN, tối ưu hóa truy vấn, hoàn thiện giao diện người dùng |
-| [testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)| Đơn vị, tích hợp, E2E, TDD, BDD, kim tự tháp kiểm tra |
 **Ngôn ngữ lập trình (34 ngôn ngữ):**
 Mỗi ngôn ngữ có thư mục con riêng với tài liệu tham khảo toàn diện bao gồm tổng quan, cân bằng, nguyên tắc cơ bản về cú pháp, hệ sinh thái và thời điểm sử dụng ngôn ngữ đó.
 | Ngôn ngữ | Đường dẫn | | Ngôn ngữ | Đường dẫn |
@@ -77,31 +71,31 @@ Mỗi ngôn ngữ có thư mục con riêng với tài liệu tham khảo toàn 
 ### 02 — AI & Học máy
 | Tập tin | Mô tả |
 |------|-------------|
-| [artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)| Tổng quan về AI, ML, học sâu, LLM, đạo đức |
-| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/ml_evaluation_and_workflow.md)| Quy trình ML, số liệu, phương pháp hay nhất |
-| [phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)| Chạy mô hình tại địa phương |
-| [local_ai_architecture.md](02_ai_and_machine_learning/local_ai_architecture.md)| Kiến trúc triển khai AI cục bộ |
-| [prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)| Kỹ thuật và chiến lược nhanh chóng |
-| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT, hồ dữ liệu, điều phối, Kafka, cửa hàng tính năng |
-| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/ml_engineering_and_mlops.md)| Phục vụ mô hình, đăng ký, chiến lược triển khai, giám sát trôi dạt |
-| [computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN, phát hiện đối tượng, phân đoạn, học chuyển giao |
-| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)| Xử lý văn bản, nhúng, Transformers, BERT, GPT |
-| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ai_ethics_and_governance.md)| AI thiên vị, công bằng, trách nhiệm giải trình, quy định, khuôn khổ quản trị |
-| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)| Bài toán căn chỉnh, RLHF, khả năng diễn giải, nghiên cứu an toàn AI |
-| [federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)| Đào tạo phi tập trung, quyền riêng tư khác biệt, tổng hợp an toàn |
-| [generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GAN, VAE, mô hình khuếch tán, LLM, ứng dụng AI tổng quát |
-| [graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN, GAT, truyền thông điệp, biểu đồ tri thức, nhiệm vụ biểu đồ |
-| [model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)| Lượng tử hóa, cắt tỉa, chưng cất, ONNX, phục vụ cơ sở hạ tầng |
-| [multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)| Mô hình ngôn ngữ thị giác, CLIP, DALL-E, học tập đa phương thức |
-| [recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)| Lọc cộng tác, dựa trên nội dung, kết hợp, nhân tố ma trận |
-| [reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP, Q-learning, gradient chính sách, RLHF, hệ thống đa tác nhân |
-| [speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR, TTS, tính năng âm thanh, Lời thì thầm, đường dẫn giọng nói |
-| [time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA, Nhà tiên tri, LSTM, tính thời vụ, phát hiện bất thường |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)| Tổng quan về AI, ML, học sâu, LLM, đạo đức |
+| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md)| Quy trình ML, số liệu, phương pháp hay nhất |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)| Chạy mô hình tại địa phương |
+| [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md)| Kiến trúc triển khai AI cục bộ |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)| Kỹ thuật và chiến lược nhanh chóng |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT, hồ dữ liệu, điều phối, Kafka, cửa hàng tính năng |
+| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md)| Phục vụ mô hình, đăng ký, chiến lược triển khai, giám sát trôi dạt |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN, phát hiện đối tượng, phân đoạn, học chuyển giao |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)| Xử lý văn bản, nhúng, Transformers, BERT, GPT |
+| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md)| AI thiên vị, công bằng, trách nhiệm giải trình, quy định, khuôn khổ quản trị |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)| Bài toán căn chỉnh, RLHF, khả năng diễn giải, nghiên cứu an toàn AI |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)| Đào tạo phi tập trung, quyền riêng tư khác biệt, tổng hợp an toàn |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GAN, VAE, mô hình khuếch tán, LLM, ứng dụng AI tổng quát |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN, GAT, truyền thông điệp, biểu đồ tri thức, nhiệm vụ biểu đồ |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)| Lượng tử hóa, cắt tỉa, chưng cất, ONNX, phục vụ cơ sở hạ tầng |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)| Mô hình ngôn ngữ thị giác, CLIP, DALL-E, học tập đa phương thức |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)| Lọc cộng tác, dựa trên nội dung, kết hợp, nhân tố ma trận |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP, Q-learning, gradient chính sách, RLHF, hệ thống đa tác nhân |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR, TTS, tính năng âm thanh, Lời thì thầm, đường dẫn giọng nói |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA, Nhà tiên tri, LSTM, tính thời vụ, phát hiện bất thường |
 ### 03 — Khoa học dữ liệu & Phân tích
 | Tập tin | Mô tả |
 |------|-------------|
 | [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)| Xử lý dữ liệu, ML, dữ liệu lớn, BI |
-| [math_and_logic.md](03_data_science_and_analytics/math_and_logic.md)| Toán học, logic, chứng minh |
+| [math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md)| Toán học, logic, chứng minh |
 | [data_visualization.md](03_data_science_and_analytics/data_visualization.md)| Lựa chọn biểu đồ, nguyên tắc thiết kế, kể chuyện, công cụ |
 | [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md)| Thử nghiệm giả thuyết, thử nghiệm A/B, quy mô hiệu ứng, suy luận nhân quả |
 | [causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAG, yếu tố gây nhiễu, sự khác biệt trong khác biệt, biến công cụ |
@@ -113,13 +107,13 @@ Mỗi ngôn ngữ có thư mục con riêng với tài liệu tham khảo toàn 
 | Tập tin | Mô tả |
 |------|-------------|
 | [science_and_nature.md](04_natural_sciences/science_and_nature.md)| Vật lý, hóa học, sinh học, khoa học Trái đất |
-| [medicine_and_healthcare.md](04_natural_sciences/medicine_and_healthcare.md)| Chuyên khoa y tế, chẩn đoán, điều trị, đạo đức |
-| [environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)| Hệ sinh thái, khí hậu, năng lượng, chính sách |
-| [food_agriculture_and_nutrition.md](04_natural_sciences/food_agriculture_and_nutrition.md)| Nông nghiệp, dinh dưỡng, hệ thống thực phẩm, tính bền vững |
-| [astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)| Sao, thiên hà, Vụ nổ lớn, vật chất tối, ngoại hành tinh, vũ trụ học |
-| [genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| DNA, biểu hiện gen, CRISPR, GWAS, công nghệ giải trình tự |
-| [materials_science.md](04_natural_sciences/materials_science.md)| Cấu trúc tinh thể, polyme, hợp kim, chất bán dẫn, vật liệu nano |
-| [neuroscience.md](04_natural_sciences/neuroscience.md)| Tế bào thần kinh, cấu trúc não, chất dẫn truyền thần kinh, độ dẻo, hình ảnh não |
+| [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md)| Chuyên khoa y tế, chẩn đoán, điều trị, đạo đức |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)| Hệ sinh thái, khí hậu, năng lượng, chính sách |
+| [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md)| Nông nghiệp, dinh dưỡng, hệ thống thực phẩm, tính bền vững |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)| Sao, thiên hà, Vụ nổ lớn, vật chất tối, ngoại hành tinh, vũ trụ học |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| DNA, biểu hiện gen, CRISPR, GWAS, công nghệ giải trình tự |
+| [materials_science.md](04_natural_sciences/physical_sciences/materials_science.md)| Cấu trúc tinh thể, polyme, hợp kim, chất bán dẫn, vật liệu nano |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)| Tế bào thần kinh, cấu trúc não, chất dẫn truyền thần kinh, độ dẻo, hình ảnh não |
 ### 05 — Kinh doanh & Kinh tế
 | Tập tin | Mô tả |
 |------|-------------|
@@ -136,15 +130,15 @@ Mỗi ngôn ngữ có thư mục con riêng với tài liệu tham khảo toàn 
 ### 06 — Nhân văn & Nghệ thuật
 | Tập tin | Mô tả |
 |------|-------------|
-| [history_and_culture.md](06_humanities_and_arts/history_and_culture.md)| Lịch sử thế giới từ các nền văn minh cổ đại đến Thời đại Thông tin |
-| [geography_and_geopolitics.md](06_humanities_and_arts/geography_and_geopolitics.md)| Địa lý vật lý/con người, hệ thống chính trị |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)| Lịch sử thế giới từ các nền văn minh cổ đại đến Thời đại Thông tin |
+| [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md)| Địa lý vật lý/con người, hệ thống chính trị |
 | [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)| Thể loại văn học, nghệ thuật tạo hình, âm nhạc, phim ảnh |
-| [psychology_and_human_behavior.md](06_humanities_and_arts/psychology_and_human_behavior.md)| Tâm lý học nhận thức, xã hội, phát triển |
-| [language_and_english.md](06_humanities_and_arts/language_and_english.md)| Ngữ pháp, ngôn ngữ học, viết |
-| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)| Các trường phái tư tưởng, đạo đức, logic, nhận thức luận, thành kiến ​​nhận thức |
-| [linguistics_and_language_science.md](06_humanities_and_arts/linguistics_and_language_science.md)| Ngữ âm, cú pháp, ngữ nghĩa, ngữ dụng học, ngôn ngữ học xã hội |
-| [music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)| Thang âm, hợp âm, hòa âm, nhịp điệu, âm học trong phòng, vật lý nhạc cụ |
-| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)| Các tôn giáo lớn trên thế giới, thần thoại so sánh, hệ thống tín ngưỡng |
+| [psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md)| Tâm lý học nhận thức, xã hội, phát triển |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md)| Ngữ pháp, ngôn ngữ học, viết |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)| Các trường phái tư tưởng, đạo đức, logic, nhận thức luận, thành kiến ​​nhận thức |
+| [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md)| Ngữ âm, cú pháp, ngữ nghĩa, ngữ dụng học, ngôn ngữ học xã hội |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)| Thang âm, hợp âm, hòa âm, nhịp điệu, âm học trong phòng, vật lý nhạc cụ |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)| Các tôn giáo lớn trên thế giới, thần thoại so sánh, hệ thống tín ngưỡng |
 ### 07 — Tham khảo chung
 | Tập tin | Mô tả |
 |------|-------------|
@@ -158,20 +152,20 @@ Mỗi ngôn ngữ có thư mục con riêng với tài liệu tham khảo toàn 
 ### 08 — Tương lai & Xu hướng
 | Tập tin | Mô tả |
 |------|-------------|
-| [2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)| Sự kiện sắp tới, sứ mệnh không gian, xu hướng công nghệ |
-| [emerging_technologies.md](08_future_and_trends/emerging_technologies.md)| Điện toán lượng tử, công nghệ sinh học, công nghệ nano |
-| [future_of_work.md](08_future_and_trends/future_of_work.md)| Tự động hóa, làm việc từ xa, đào tạo lại kỹ năng |
-| [future_healthcare.md](08_future_and_trends/future_healthcare.md)| Y học cá nhân hóa, chẩn đoán AI |
-| [future_transportation.md](08_future_and_trends/future_transportation.md)| xe điện, xe tự hành, hyperloop |
-| [demographic_shifts.md](08_future_and_trends/demographic_shifts.md)| Xu hướng dân số, di cư, đô thị hóa |
-| [education_transformation.md](08_future_and_trends/education_transformation.md)| Học trực tuyến, dạy kèm AI |
-| [geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)| Địa chính trị, Mỹ-Trung, thế giới đa cực |
-| [scenario_planning.md](08_future_and_trends/scenario_planning.md)| Các kịch bản và khuôn khổ trong tương lai |
-| [space_exploration_roadmap.md](08_future_and_trends/space_exploration_roadmap.md)| Nhiệm vụ không gian và dòng thời gian |
-| [sustainable_future.md](08_future_and_trends/sustainable_future.md)| Khí hậu, chuyển đổi năng lượng, kinh tế tuần hoàn |
-| [ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)| Hệ thống đề xuất, trợ lý thông minh, quyền riêng tư, tiết kiệm sự chú ý |
-| [climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)| Năng lượng tái tạo, xe điện, thu hồi carbon, hydro xanh, công nghệ bền vững |
-| [future_of_computing.md](08_future_and_trends/future_of_computing.md)| Định luật Moore, điện toán lượng tử, chip thần kinh, điện toán biên |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)| Sự kiện sắp tới, sứ mệnh không gian, xu hướng công nghệ |
+| [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md)| Điện toán lượng tử, công nghệ sinh học, công nghệ nano |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)| Tự động hóa, làm việc từ xa, đào tạo lại kỹ năng |
+| [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md)| Y học cá nhân hóa, chẩn đoán AI |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)| xe điện, xe tự hành, hyperloop |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)| Xu hướng dân số, di cư, đô thị hóa |
+| [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md)| Học trực tuyến, dạy kèm AI |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)| Địa chính trị, Mỹ-Trung, thế giới đa cực |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)| Các kịch bản và khuôn khổ trong tương lai |
+| [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md)| Nhiệm vụ không gian và dòng thời gian |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)| Khí hậu, chuyển đổi năng lượng, kinh tế tuần hoàn |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)| Hệ thống đề xuất, trợ lý thông minh, quyền riêng tư, tiết kiệm sự chú ý |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)| Năng lượng tái tạo, xe điện, thu hồi carbon, hydro xanh, công nghệ bền vững |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)| Định luật Moore, điện toán lượng tử, chip thần kinh, điện toán biên |
 ### 09 - Bài học từ thất bại
 | Tập tin | Mô tả |
 |------|-------------|
@@ -187,18 +181,18 @@ Mỗi ngôn ngữ có thư mục con riêng với tài liệu tham khảo toàn 
 ### 10 — Tham khảo nhanh
 | Tập tin | Mô tả |
 |------|-------------|
-| [python_syntax.md](10_quick_reference/python_syntax.md)| Bảng cheat cú pháp Python |
-| [git_commands.md](10_quick_reference/git_commands.md)| Lệnh và quy trình làm việc của Git |
-| [sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| Tham khảo truy vấn SQL |
-| [linux_commands.md](10_quick_reference/linux_commands.md)| Tham khảo dòng lệnh Linux |
-| [docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, bảng cheat Helm |
-| [regular_expressions.md](10_quick_reference/regular_expressions.md)| Cú pháp Regex, các mẫu phổ biến, cách sử dụng theo ngôn ngữ cụ thể |
-| [cloud_services_comparison.md](10_quick_reference/cloud_services_comparison.md)| So sánh song song AWS với Azure và GCP |
-| [bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| Tập lệnh Bash, xử lý văn bản, các dòng hữu ích |
-| [ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| Sách hướng dẫn, mô-đun, vai trò, kho lưu trữ, bảng ghi chú tự động hóa có thể sử dụng được |
-| [cicd_pipeline_config.md](10_quick_reference/cicd_pipeline_config.md)| GitHub Actions, GitLab CI, Jenkins, các mẫu YAML trong đường dẫn |
-| [prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL, nhà xuất khẩu, bảng điều khiển, cảnh báo, ngăn xếp giám sát |
-| [terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| Khái niệm IaC, lệnh Terraform, quản lý trạng thái, mô-đun |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md)| Bảng cheat cú pháp Python |
+| [git_commands.md](10_quick_reference/programming/git_commands.md)| Lệnh và quy trình làm việc của Git |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| Tham khảo truy vấn SQL |
+| [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)| Tham khảo dòng lệnh Linux |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| Docker, Docker Compose, Kubernetes, bảng cheat Helm |
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)| Cú pháp Regex, các mẫu phổ biến, cách sử dụng theo ngôn ngữ cụ thể |
+| [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)| So sánh song song AWS với Azure và GCP |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| Tập lệnh Bash, xử lý văn bản, các dòng hữu ích |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| Sách hướng dẫn, mô-đun, vai trò, kho lưu trữ, bảng ghi chú tự động hóa có thể sử dụng được |
+| [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md)| GitHub Actions, GitLab CI, Jenkins, các mẫu YAML trong đường dẫn |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL, nhà xuất khẩu, bảng điều khiển, cảnh báo, ngăn xếp giám sát |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| Khái niệm IaC, lệnh Terraform, quản lý trạng thái, mô-đun |
 ---
 
 ## Lộ trình học tập
@@ -210,12 +204,9 @@ Mỗi ngôn ngữ có thư mục con riêng với tài liệu tham khảo toàn 
 ### Dành cho nhà phát triển phần mềm
 1.`01_coding_and_technology/programming_languages/python/`(hoặc ngôn ngữ bạn chọn)
 2.`01_coding_and_technology/data_structures_and_algorithms.md`
-3.`01_coding_and_technology/web_development.md`
 4.`01_coding_and_technology/database_systems.md`
 5.`01_coding_and_technology/cloud_architecture.md`
-6.`01_coding_and_technology/software_architecture_patterns.md`
 7.`01_coding_and_technology/api_design_and_architecture.md`
-8.`01_coding_and_technology/testing_methodologies.md`
 9. `02_ai_and_machine_learning/artificial_intelligence.md`
 ### Dành cho nhà khoa học dữ liệu
 1.`03_data_science_and_analytics/math_and_logic.md`

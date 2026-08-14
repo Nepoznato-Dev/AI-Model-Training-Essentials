@@ -40,7 +40,7 @@ contribution:
 ---
 # 기술과 컴퓨팅
 컴퓨팅은 휴대폰, 자동차, 냉장고, 의료 기기, 현대 사회를 운영하는 인프라 등 어디에나 있습니다. 모든 작동 방식을 이해함으로써 이익을 얻기 위해 프로그래머가 될 필요는 없습니다. 이 파일은 컴퓨터가 무엇인지, 인터넷이 작동하는 방식, 소프트웨어가 구축되는 방식, 디지털 세계를 형성하는 개념 등 기본 사항을 다룹니다.
-> **더 자세히 알고 싶으십니까?** 이 파일은 광범위한 개요입니다. 모든 주제에 대한 자세한 내용은[web development](../01_coding_and_technology/web_development.md),[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)및[security](../01_coding_and_technology/security_best_practices.md)를 포함하여 [`01_coding_and_technology/`](../01_coding_and_technology/)의 전용 파일을 참조하세요.
+> **더 자세히 알고 싶으십니까?** 이 파일은 광범위한 개요입니다. 모든 주제에 대한 자세한 내용은[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)및를 포함하여 [`01_coding_and_technology/`](../01_coding_and_technology/)의 전용 파일을 참조하세요.
 ---
 
 ## 컴퓨터란 무엇입니까?
@@ -150,7 +150,7 @@ Linux는 특별히 언급할 가치가 있습니다. Linux는 대부분의 인�
 ---
 
 ## 사이버 보안 — 디지털 시스템 보호
-사이버 보안은 공격으로부터 컴퓨터, 네트워크 및 데이터를 보호하는 관행입니다. 모든 것이 연결되어 있고 위반으로 인한 비용이 엄청나기 때문에 중요합니다. OWASP Top 10, 보안 개발 수명주기 및 비밀 관리를 다루는 전체 가이드는 [security best practices](../01_coding_and_technology/security_best_practices.md)를 참조하세요.
+사이버 보안은 공격으로부터 컴퓨터, 네트워크 및 데이터를 보호하는 관행입니다. 모든 것이 연결되어 있고 위반으로 인한 비용이 엄청나기 때문에 중요합니다. OWASP Top 10, 보안 개발 수명주기 및 비밀 관리를 다루는 전체 가이드는를 참조하세요.
 ### 일반적인 위협
 | 위협 | 그것은 무엇입니까 | 예방 |
 |---------|------------|------------|

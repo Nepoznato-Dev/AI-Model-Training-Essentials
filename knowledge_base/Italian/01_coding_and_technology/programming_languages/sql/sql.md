@@ -56,7 +56,7 @@ SQL non è un linguaggio di programmazione generico. Non scriveresti un'applicaz
 | **Non è un linguaggio generico** | Impossibile creare applicazioni, API o algoritmi in SQL | Combinalo con Python, Java, JavaScript, ecc. |
 | **Differenze dialettali** | Ogni RDBMS ha il proprio sapore SQL con estensioni incompatibili | Attenersi ad ANSI SQL ove possibile; differenze dialettali astratte nella tua applicazione |
 | **Rigidità dello schema** | Cambiare la struttura dei tavoli su tavoli di grandi dimensioni può essere lento e disturbante | Utilizzare strumenti di migrazione; progettare attentamente gli schemi in anticipo |
-| **Problema di query N+1** | Le query generate da ORM possono essere estremamente inefficienti | Scrivi SQL personalizzato per query complesse; profilo con SPIEGARE ANALIZZA |
+| **Problema di query N+1** | Le query generate da ORM possono essere estremamente inefficienti | Scrivi SQL personalizzato per query complesse; profilo con SPIEGARE ANALISI |
 | **Ridimensionamento della complessità** | I database SQL sono più difficili da scalare orizzontalmente rispetto a NoSQL | Utilizza repliche di lettura, partizionamento orizzontale o considera NoSQL per casi d'uso specifici |
 ---
 
@@ -602,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Memorizzazione semplice di valori-chiave | Eccessivo per questo caso d'uso | Redis, DynamoDB |
 | Dati altamente non strutturati | La rigidità dello schema è un problema | MongoDB, banche dati documentali |
 | Enorme ridimensionamento orizzontale | Difficile partizionare i database SQL | Cassandra, DynamoDB, CockroachDB |
+---
+
+## Domande e risposte sintetiche
+### D1: Qual è la differenza tra`WHERE`e `HAVING`?
+**R:**`WHERE`filtra le righe prima del raggruppamento; `HAVING`filtra i gruppi dopo l'aggregazione:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### D2: In cosa differiscono le funzioni della finestra da GROUP BY?
+**R:** Le funzioni della finestra eseguono il calcolo su righe senza comprimerle:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### D3: Come posso ottimizzare le query lente?
+**R:** Strategie chiave:
+- Aggiungi indici sulle colonne utilizzate in`WHERE`,`JOIN`e`ORDER BY`
+- Evita `SELECT *`: seleziona solo le colonne necessarie
+- Utilizzare`EXPLAIN`/`EXPLAIN ANALYZE`per leggere i piani di query
+- Sostituisci le sottoquery con JOIN ove possibile
+- Utilizzare CTE per la leggibilità (di solito nessuna penalizzazione delle prestazioni)
+- Evita le funzioni sulle colonne indicizzate in WHERE: usa`WHERE date >= '2024-01-01'`non `WHERE YEAR(date) = 2024`
+### D4: Cosa sono i CTE e quando dovrei usarli?
+**R:** Le espressioni di tabella comuni creano set di risultati temporanei denominati:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### D5: Come gestisco correttamente i valori NULL?
+**R:** NULL rappresenta sconosciuto — non è uguale a nulla, incluso se stesso:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Risoluzione dei problemi basati sulla catena di pensiero
+### Problema 1: trovare i primi N per gruppo
+**Passaggio 1: comprendere il problema**
+Trova i 3 dipendenti più pagati in ciascun dipartimento.
+**Passaggio 2: identificare l'approccio**
+Utilizza una funzione finestra con`ROW_NUMBER()`partizionato per reparto.
+**Passaggio 3: implementazione**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Passaggio 4: verifica**
+Verifica che ogni reparto abbia al massimo 3 righe. Se necessario, gestire le legature con `DENSE_RANK()`.
+### Problema 2: costruire un rapporto sulla crescita anno su anno
+**Passaggio 1: comprendere il problema**
+Calcola le entrate mensili e la percentuale di crescita anno su anno.
+**Passaggio 2: identificare l'approccio**
+Utilizzare`DATE_TRUNC`per il raggruppamento e la funzione finestra`LAG()`per il confronto dell'anno precedente.
+**Passaggio 3: implementazione**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Passaggio 4: verifica**
+Controllare che i primi 12 mesi abbiano NULL per l'anno precedente. Convalidare le percentuali di crescita rispetto a cifre note.
+### Problema 3: trasformare le righe in colonne
+**Passaggio 1: comprendere il problema**
+Trasforma i conteggi dello stato da righe a colonne.
+**Passaggio 2: identificare l'approccio**
+Utilizza l'aggregazione condizionale (`CASE`all'interno di`SUM`).
+**Passaggio 3: implementazione**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Passaggio 4: Estendi**
+Aggiungi colonne percentuali e totali parziali.
 ---
 
 ## Riepilogo

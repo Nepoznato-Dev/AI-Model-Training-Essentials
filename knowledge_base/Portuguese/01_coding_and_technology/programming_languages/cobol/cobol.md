@@ -829,5 +829,129 @@ scp bin/payroll server:/opt/cobol/bin/
 | Ciência de dados / ML | Não adequado | Pitão, R |
 ---
 
+## Perguntas e respostas sintéticas
+### Q1: Por que o COBOL ainda é usado no setor bancário depois de mais de 60 anos?
+**R:** O COBOL processa cerca de 70-80% das transações bancárias. Os motivos:
+- Bases de código enormes (milhões de linhas) que funcionam corretamente
+- Extrema confiabilidade – esses sistemas foram testados em produção há décadas
+- O custo e o risco da migração superam os custos de manutenção
+- A sintaxe detalhada do COBOL, semelhante ao inglês, é autodocumentada
+- Aritmética decimal incorporada na linguagem (sem erros de arredondamento de ponto flutuante)
+### Q2: Como o COBOL lida com aritmética decimal sem erros de ponto flutuante?
+**R:** COBOL possui tipos decimais nativos com precisão fixa:
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+O`V`é um ponto decimal implícito. COBOL nunca usa ponto flutuante binário para dinheiro.
+### Q3: Qual é a estrutura de um programa COBOL?
+**R:** Todo programa COBOL tem quatro divisões:
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4: Como leio e processo arquivos sequenciais em COBOL?
+**R:** COBOL é excelente no processamento de arquivos:
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Q5: Quais ferramentas estão disponíveis para o desenvolvimento COBOL moderno?
+**R:** GnuCOBOL (código aberto), IBM Enterprise COBOL, Micro Focus e extensões VS Code fornecem ambientes de desenvolvimento modernos. Construa com`cobc -x program.cob`.
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Gerando um Relatório de Cliente
+**Etapa 1: Entenda o problema**
+Leia registros de clientes, calcule totais e gere um relatório formatado.
+**Etapa 2: Identifique a abordagem**
+Use os recursos de manipulação de arquivos e gravação de relatórios do COBOL.
+**Etapa 3: Implementar**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**Etapa 4: verificar**
+Verifique os totais com os dados de origem. Teste com casos extremos (arquivo vazio, saldo zero).
+### Problema 2: Processamento em lote com quebras de controle
+**Etapa 1: Entenda o problema**
+Processar transações agrupadas por departamento, imprimindo subtotais.
+**Etapa 2: Identifique a abordagem**
+Use lógica de quebra de controle – detecte quando a chave do grupo muda.
+**Etapa 3: Implementar**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**Etapa 4: verificar**
+Verifique se o total do último grupo está impresso. Verifique se o total geral é igual à soma dos totais do departamento.
+---
+
 ## Resumo
-COBOL é uma relíquia dos primórdios da computação que se recusa a morrer — porque não tem condições de fazê-lo. Os sistemas bancários e governamentais do mundo dependem de programas COBOL que funcionam de forma confiável há décadas. Embora hoje ninguém escolha COBOL para um novo projeto, a linguagem continua extremamente importante para manter a infraestrutura que sustenta as finanças globais. A escassez de desenvolvedores COBOL torna esse nicho surpreendentemente lucrativo.
+COBOL é um legado das primeiras décadas da computação que permanece em uso ativo porque a substituição não é viável em escala. Os sistemas bancários e governamentais do mundo dependem de programas COBOL que funcionam de forma confiável há décadas. Embora o COBOL normalmente não seja selecionado para um novo projeto hoje, a linguagem continua importante para manter a infraestrutura que dá suporte às finanças globais. A escassez de desenvolvedores COBOL torna-o um nicho lucrativo.

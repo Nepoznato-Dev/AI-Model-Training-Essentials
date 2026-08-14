@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "أوكامل"
-الوصف: "مرجع شامل للغة برمجة OCaml يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "OCaml"
+description: "Comprehensive reference for the OCaml programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [ocaml، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "29 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [ocaml, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "29 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #أوكامل
 OCaml (Objective Caml) هي لغة برمجة وظيفية تم تطويرها في INRIA في فرنسا، وتم إصدارها لأول مرة في عام 1996. وهي تجمع بين تعبير البرمجة الوظيفية والميزات العملية: نظام كتابة قوي مع استنتاج النوع (Hindley-Milner)، ومطابقة الأنماط، وأنواع البيانات الجبرية، والبرمجة الاختيارية الموجهة للكائنات. يقوم OCaml بتجميع التعليمات البرمجية الأصلية السريعة ويدعم أيضًا الرمز الثانوي.
 أشهر تطبيق OCaml في العالم الحقيقي هو شركة **Jane Street** التجارية، والتي تستخدم OCaml في بنيتها التحتية التجارية بالكامل. كما أنه يستخدم أيضًا في تطوير المترجم (تم كتابة مترجم Rust في الأصل بلغة OCaml)، والتحقق الرسمي، والأنظمة المالية، وإثبات النظرية.
@@ -451,15 +456,15 @@ my-ocaml-project/
 ### أوامر بناء المفاتيح
 | الأمر | الوصف |
 |---------|------------|
-|  __محمي_0__ | إنشاء مشروع جديد |
-|  __محمي_1__ | بناء المشروع |
-|  __محمي_2__ | قم بتشغيل الملف القابل للتنفيذ |
-|  __محمي_3__ | تشغيل الاختبارات |
-|  __محمي_4__ | التحف البناء النظيف |
-|  __محمي_5__ | ابدأ REPL مع تحميل المشروع |
-|  __محمي_6__ | تثبيت التبعيات |
-|  __محمي_7__ | رمز التنسيق |
-|  __محمي_8__ | إنشاء محول OCaml 5.1 |
+| `dune init project my_app`| إنشاء مشروع جديد |
+| `dune build`| بناء المشروع |
+| `dune exec ./bin/main.exe`| قم بتشغيل الملف القابل للتنفيذ |
+| `dune test`| تشغيل الاختبارات |
+| `dune clean`| التحف البناء النظيف |
+| `dune utop`| ابدأ REPL مع تحميل المشروع |
+| `opam install . --deps-only`| تثبيت التبعيات |
+| `dune build @fmt`| رمز التنسيق |
+| `opam switch create 5.1`| إنشاء محول OCaml 5.1 |
 ---
 
 ## الاختبار
@@ -630,10 +635,10 @@ let process_user id =
 ### أدوات التنميط
 | أداة | الغرض | الاستخدام |
 |------|---------|------|
-| **أوكاملبروف** | عدد التنفيذ التنميط |  __محمي_0__ ثم __محمي_1__ |
-| **الأداء** | ملف تعريف نظام Linux |  __محمي_2__ |
-| **الزمكان** | ملفات تعريف الذاكرة (4.x) |  __محمي_3__ |
-| **المعيار** | القياس الجزئي |  __محمي_4__ الحزمة |
+| **أوكاملبروف** | عدد التنفيذ التنميط | `ocamlc -p`ثم`ocamlprof`|
+| **الأداء** | ملف تعريف نظام Linux | `perf record ./program`|
+| **الزمكان** | ملفات تعريف الذاكرة (4.x) | `OCAML_SPACETIME_INTERVAL=1000 ./program`|
+| **المعيار** | القياس الجزئي |  حزمة`ocaml-benchmark`|
 ### تقنيات التحسين
 ```ocaml
 (* 1. Unboxed floats — avoid allocation *)
@@ -710,5 +715,121 @@ ENTRYPOINT ["./app"]
 | تطبيقات للأغراض العامة | ممكن ولكن المتخصصة | اذهب، بايثون، روست |
 ---
 
+## أسئلة وأجوبة اصطناعية
+### س1: كيف يعمل الاستدلال النوعي لـ OCaml؟
+**أ:** يستنتج نظام الكتابة Hindley-Milner الخاص بشركة OCaml الأنواع بدون تعليقات توضيحية:
+```ocaml
+let add x y = x + y        (* inferred: int -> int -> int *)
+let map f lst = List.map f lst  (* inferred: ('a -> 'b) -> 'a list -> 'b list *)
+let length lst = List.length lst (* inferred: 'a list -> int *)
+```
+
+### السؤال الثاني: ما هي أنواع البيانات الجبرية ولماذا هي قوية؟
+**ج:** تجمع أدوات ADT بين أنواع المنتجات (السجلات) وأنواع المجموع (المتغيرات):
+```ocaml
+type shape =
+  | Circle of float
+  | Rectangle of float * float
+  | Triangle of float * float * float
+
+let area = function
+  | Circle r -> Float.pi *. r *. r
+  | Rectangle (w, h) -> w *. h
+  | Triangle (a, b, c) ->
+      let s = (a +. b +. c) /. 2.0 in
+      sqrt (s *. (s -. a) *. (s -. b) *. (s -. c))
+(* Compiler warns if you forget a case! *)
+```
+
+### س3: كيف تعمل الوحدات والوظائف؟
+**أ:** الوحدات تنظم التعليمات البرمجية؛ الوظائف هي وظائف من الوحدات النمطية إلى الوحدات النمطية:
+```ocaml
+module type COMPARABLE = sig
+  type t
+  val compare : t -> t -> int
+end
+
+module Set (Elem : COMPARABLE) = struct
+  type elt = Elem.t
+  type t = elt list
+  let empty = []
+  let mem x s = List.exists (fun y -> Elem.compare x y = 0) s
+  let add x s = if mem x s then s else x :: s
+end
+```
+
+### س4: ما الذي يجعل OCaml سريعًا؟
+**أ:** يقوم OCaml بتجميع التعليمات البرمجية الأصلية الفعالة:
+- محو النوع - لا يوجد فحص للنوع في وقت التشغيل
+- العوامات والأعداد الصحيحة غير المعبأة
+- مطابقة الأنماط تجمع بين القفز على الجداول
+- تحسين المكالمة الخلفية
+- لا يوجد توقف مؤقت لأداة تجميع البيانات المهملة (GC تزايدي)
+### س5: كيف يمكن مقارنة OCaml باللغات الأخرى من عائلة ML؟
+**ج:** OCaml يوازن بين التطبيق العملي والنقاء:
+- vs Haskell: يحتوي OCaml على ميزات حتمية وحالة قابلة للتغيير وتجميع أسرع
+- vs F#: يحتوي OCaml على نظام وحدات أكثر نضجًا ودعمًا أفضل عبر الأنظمة الأساسية
+- مقابل Rust: OCaml لديها GC (بدون ملكية)، لكن Rust لديها FFI ونظام بيئي أفضل
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: تنفيذ مترجم آمن للنوع
+**الخطوة الأولى: فهم المشكلة**
+بناء مترجم للغة التعبير البسيطة.
+**الخطوة 2: تحديد النهج**
+استخدم أنواع البيانات الجبرية للتعبيرات ومطابقة الأنماط للتقييم.
+**الخطوة 3: التنفيذ**```ocaml
+type expr =
+  | Num of float
+  | Add of expr * expr
+  | Mul of expr * expr
+  | Var of string
+
+type env = (string * float) list
+
+let rec eval (env : env) = function
+  | Num n -> n
+  | Add (a, b) -> eval env a +. eval env b
+  | Mul (a, b) -> eval env a *. eval env b
+  | Var name -> List.assoc name env
+
+let env = [("x", 3.0); ("y", 4.0)]
+let result = eval env (Add (Mul (Var "x", Var "x"), Mul (Var "y", Var "y")))
+(* 3*3 + 4*4 = 25.0 *)
+```
+
+**الخطوة 4: تمديد**
+أضف`Let`و`If`و`Lambda`للحصول على لغة أكثر اكتمالا.
+### المشكلة الثانية: إنشاء محلل بسيط باستخدام أدوات التجميع
+**الخطوة الأولى: فهم المشكلة**
+تحليل التعبيرات الحسابية باستخدام مجموعات المحلل اللغوي.
+**الخطوة 2: تحديد النهج**
+قم ببناء محللين صغار وقم بتأليفهم.
+**الخطوة 3: التنفيذ**```ocaml
+type 'a parser = string -> ('a * string) option
+
+let return x s = Some (x, s)
+let fail _s = None
+let bind p f s = match p s with
+  | None -> None
+  | Some (a, rest) -> f a rest
+
+let char c s = match s with
+  | "" -> None
+  | s' when s'.[0] = c -> Some (c, String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+
+let digit s = match s with
+  | "" -> None
+  | s' when s'.[0] >= '0' && s'.[0] <= '9' ->
+      Some (int_of_char s'.[0] - int_of_char '0',
+            String.sub s' 1 (String.length s' - 1))
+  | _ -> None
+```
+
+**الخطوة 4: التأليف**
+ادمج المحلل اللغوي مع`map`و`seq`و`alt`و`many`لتحليل التعبيرات الكاملة.
+---
+
 ## ملخص
-OCaml هي لغة تكافئك على التفكير بعناية في بياناتك. تجبرك أنواع البيانات الجبرية ومطابقة الأنماط الشاملة على النظر في كل حالة - ويصبح المترجم شريكًا في التصميم يكتشف الأخطاء قبل حدوثها. يعني استنتاج النوع أنك تحصل على مزايا الأمان هذه دون كتابة التعليقات التوضيحية للنوع في كل مكان. يظهر تأثير OCaml في Rust وF# وTypeScript وSwift، وجميعها مستعارة من نظام الكتابة الخاص بـ OCaml. على الرغم من أن سوق العمل في OCaml صغير، إلا أن تعلمه سيصقل مهاراتك في البرمجة بطرق يمكن نقلها إلى أي لغة.
+OCaml هي لغة تكافئك على التفكير بعناية في بياناتك. تجبرك أنواع البيانات الجبرية ومطابقة الأنماط الشاملة على النظر في كل حالة - ويصبح المترجم شريكًا في التصميم يكتشف الأخطاء قبل حدوثها. يعني استنتاج النوع أنك تحصل على فوائد الأمان هذه دون كتابة التعليقات التوضيحية للنوع في كل مكان. يظهر تأثير OCaml في Rust وF# وTypeScript وSwift، وجميعها مستعارة من نظام الكتابة الخاص بـ OCaml. على الرغم من أن سوق العمل في OCaml صغير، إلا أن تعلمه سيصقل مهاراتك في البرمجة بطرق يمكن نقلها إلى أي لغة.

@@ -55,7 +55,7 @@ SQL は汎用プログラミング言語ではありません。 SQL で Web ア
 |----------|-----------|--------|
 | **汎用言語ではありません** | SQL でアプリケーション、API、またはアルゴリズムを構築できない | Python、Java、JavaScriptなどと組み合わせる |
 | **方言の違い** |各 RDBMS には、互換性のない拡張子を持つ独自の SQL フレーバーがあります。可能な限り ANSI SQL を使用してください。アプリケーション内の抽象的な方言の違い |
-| **スキーマの剛性** |大きなテーブルでテーブル構造を変更すると、時間がかかり、中断が生じる可能性があります。移行ツールを使用します。事前に慎重にスキーマを設計する |
+| **スキーマの剛性** |大きなテーブルでテーブル構造を変更すると、時間がかかり、中断が生じる可能性があります。移行ツールを使用します。スキーマを事前に慎重に設計する |
 | **N+1 クエリの問題** | ORM で生成されたクエリは非常に非効率になる可能性があります。複雑なクエリ用のカスタム SQL を作成します。 EXPLAIN ANALYZE を使用したプロファイル |
 | **スケーリングの複雑さ** | SQL データベースは NoSQL よりも水平方向に拡張するのが困難です。特定のユースケースでは、リードレプリカ、シャーディングを使用するか、NoSQL を検討してください。
 ---
@@ -602,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 |シンプルなキーと値のストレージ |このユースケースには過剰です | Redis、DynamoDB |
 |高度に非構造化されたデータ |スキーマの硬直性が問題です。 MongoDB、ドキュメント データベース |
 |大規模な水平スケーリング | SQL データベースのシャード化が困難 | Cassandra、DynamoDB、CockroachDB |
+---
+
+## 総合的な Q&A
+### Q1:`WHERE`と`HAVING`の違いは何ですか?
+**A:**`WHERE`はグループ化する前に行をフィルタリングします。 `HAVING`は、集約後にグループをフィルタリングします。
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### Q2: ウィンドウ関数は GROUP BY とどう違うのですか?
+**A:** ウィンドウ関数は行を折りたたむことなく複数の行にわたって計算します。
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### Q3: 遅いクエリを最適化するにはどうすればよいですか?
+**A:** 主な戦略:
+-`WHERE`、`JOIN`、および`ORDER BY`で使用される列にインデックスを追加します。 
+-`SELECT *`を避ける — 必要な列のみを選択します
+-`EXPLAIN`/`EXPLAIN ANALYZE`を使用してクエリ プランを読み取る
+- 可能な場合はサブクエリを JOIN に置き換えます。
+- 可読性を高めるために CTE を使用します (通常、パフォーマンスの低下はありません)
+- WHERE 内のインデックス付き列の関数を回避します。`WHERE YEAR(date) = 2024` ではなく`WHERE date >= '2024-01-01'`を使用してください。
+### Q4: CTE とは何ですか?いつ使用する必要がありますか?
+**A:** 共通テーブル式は、名前付きの一時結果セットを作成します。
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### Q5: NULL 値を正しく処理するにはどうすればよいですか?
+**A:** NULL は不明を表します。それ自体を含め、何とも等しくありません。
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## 思考連鎖による問題解決
+### 問題 1: グループごとの上位 N を見つける
+**ステップ 1: 問題を理解する**
+各部門で最も給与の高い従業員 3 人を見つけます。
+**ステップ 2: アプローチを特定する**
+`ROW_NUMBER()` を部門ごとに分割したウィンドウ関数を使用します。
+**ステップ 3: 実装**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**ステップ 4: 確認**
+各部門の行数が最大 3 行であることを確認してください。必要に応じて、`DENSE_RANK()` を使用してタイを処理します。
+### 問題 2: 前年比成長レポートの作成
+**ステップ 1: 問題を理解する**
+月次収益と前年比成長率を計算します。
+**ステップ 2: アプローチを特定する**
+グループ化には`DATE_TRUNC`を使用し、前年度の比較には`LAG()`ウィンドウ関数を使用します。
+**ステップ 3: 実装**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**ステップ 4: 確認**
+最初の 12 か月に前年の NULL があることを確認します。既知の数値と比較して成長率を検証します。
+### 問題 3: 行を列にピボットする
+**ステップ 1: 問題を理解する**
+変換ステータスは行から列までカウントされます。
+**ステップ 2: アプローチを特定する**
+条件付き集計を使用します (`SUM`内の`CASE`)。
+**ステップ 3: 実装**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**ステップ 4: 延長**
+パーセント列と累計を追加します。
 ---
 
 ＃＃ まとめ

@@ -130,7 +130,7 @@ end.
 
 ## 進階語法和模式
 ### 泛型和集合
-Delphi 支援泛型（自 Delphi 2009 年起），支援類型安全的容器類別。
+Delphi 支援泛型（自 Delphi 2009 起），支援類型安全的容器類別。
 ```pascal
 unit GenericsDemo;
 
@@ -617,7 +617,7 @@ end.
 ## 測試和調試
 ### IDE 偵錯器功能
 Delphi 的 IDE 包括一個全功能的整合式偵錯器。
-|特色 |描述 |
+|特色|描述 |
 |---------|-------------|
 | **斷點** |在任何可執行行上設定；支援條件斷點|
 | **觀察視窗** |即時監控變數值 |
@@ -1068,24 +1068,102 @@ Delphi Deployment Targets:
 ### 現實世界用例
 |工業|應用 |為什麼選擇德爾福 |
 |----------|-------------|------------|
-| **金融** |交易平台、銀行儀表板 |快速本機 GUI、資料庫連線 |
-| **醫療保健** |醫學影像、病患管理| VCL組件，原生性能|
-| **製造** | SCADA系統，工業控制|硬體直接接入，即時回應 |
-| **政府** |內部管理工具|遺留系統連續性|
-| **電信** |網路監控儀表板|快速資料視覺化 |
-| **教育** |教育軟體、電子學習工具|快速開發，多媒體支援|
+| **金融** |交易平台、银行仪表板 |快速本机 GUI、数据库连接 |
+| **医疗保健** |医学影像、患者管理| VCL组件，原生性能|
+| **制造** | SCADA系统，工业控制|硬件直接接入，实时响应 |
+| **政府** |内部管理工具|遗留系统连续性|
+| **电信** |网络监控仪表板|快速数据可视化 |
+| **教育** |教育软件、电子学习工具|快速开发，多媒体支持|
 ---
 
 ## 何時使用 Delphi
-|場景 |為什麼選擇德爾福 |更好的選擇|
+|场景|为什么选择德尔福 |更好的选择|
 |----------|----------|--------------------|
 |舊版德爾福維護|現有程式碼庫 | — |
-| Windows 桌面應用程式（快速）| VCL成熟、速度快| C#（WPF/WinForms）|
-|資料庫前端 |優秀的資料組件| C#、Java |
-|跨平台桌面（利基）| FireMonkey 存在 | C#、顫振、電子 |
-|新的Windows GUI開發|有可能，但社群正在縮小 | C# (WPF/WinUI 3) |
-|網頁開發|不適合| JavaScript、Python、C# |
-|行動應用程式 |可以通過 FMX 但有限 |斯威夫特、科特林、顫振 |
+| Windows 桌面应用程序（快速）| VCL成熟、速度快| C#（WPF/WinForms）|
+|数据库前端 |优秀的数据组件| C#、Java |
+|跨平台桌面（利基）| FireMonkey 存在 | C#、颤振、电子 |
+|新的Windows GUI开发|有可能，但社区正在缩小 | C# (WPF/WinUI 3) |
+|网页开发|不适合| JavaScript、Python、C# |
+|移动应用程序 |可以通过 FMX 但有限 |斯威夫特、科特林、颤振 |
+---
+
+## 綜合問答
+### Q1：Delphi的VCL框架是如何運作的？
+**答：** VCL 將 Windows API 控制項包裝在物件導向的層次結構中。表單、按鈕和網格都是類別：
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2：如何在Delphi中建立元件？
+**A:** 從 TComponent 或 TControl 繼承：
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3：Delphi 和 Free Pascal 有什麼不同？
+**答：** Delphi 是 Embarcadero 的商業 IDE/編譯器。 Free Pascal 是開源編譯器，Lazarus 是免費 IDE。兩者都使用 Object Pascal 語法。
+### Q4：如何在 Delphi 中使用資料庫？
+**A:** 使用 FireDAC 或 dbExpress 元件：
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5：德爾福今天仍然有意義嗎？
+**答：** 為了維護舊版 Windows 應用程序，是的。對於新項目，大多數開發人員更喜歡 C# 或 Web 技術。 Free Pascal/Lazarus 提供了免費的跨平台替代方案。
+---
+
+## 解決問題的思路
+### 問題 1：建立資料感知表單
+**第 1 步：了解問題**
+建立一個顯示和編輯資料庫記錄的表單。
+**第 2 步：確定方法**
+使用綁定到資料集的資料感知組件。
+**步驟 3：實施**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**第 4 步：擴充**
+新增驗證、錯誤處理和搜尋/過濾功能。
 ---
 
 ＃＃ 概括

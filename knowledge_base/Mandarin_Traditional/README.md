@@ -1,4 +1,4 @@
-# 英語知識庫
+# 知識庫
 全面的參考文件集合，涵蓋編碼、技術、人工智慧、科學、商業、人文學科等，以自然的對話風格編寫，專為人工智慧培訓和人類學習而設計。
 **最後更新時間：** 2026 年 8 月
 **文件總數：** 138+ Markdown 文檔
@@ -7,7 +7,7 @@
 
 ## 目錄結構
 ```
-knowledge_base/English/
+knowledge_base/Mandarin_Traditional/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,13 @@ knowledge_base/English/
 **核心主題：**
 |文件 |描述 |
 |------|-------------|
-|[web_development.md](01_coding_and_technology/web_development.md)|前端、後端、DevOps、安全 |
 |[database_systems.md](01_coding_and_technology/database_systems.md)| SQL、NoSQL、設計模式、最佳化 |
 |[cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)|雲端供應商、架構模式、安全性 |
 |[networking_basics.md](01_coding_and_technology/networking_basics.md)| OSI 模型、TCP/IP、協定、安全 |
 |[devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH、systemd、日誌記錄、監控、備份、Docker、CI/CD |
-|[security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP Top 10、輸入驗證、驗證、機密管理 |
 |[devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md)| CI/CD 管道、Docker、Kubernetes、Terraform、GitOps |
 |[cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)|加密、TLS、OWASP、安全編碼、SDL |
 |[api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST、GraphQL、gRPC、版本控制、驗證、API 閘道 |
-|[software_architecture_patterns.md](01_coding_and_technology/software_architecture_patterns.md)|單體應用、微服務、事件驅動、DDD、快取、SOLID |
-|[technology_glossary.md](01_coding_and_technology/technology_glossary.md)|技術術語（AI 模型、硬體、基準）|
-|[tool_usage.md](01_coding_and_technology/tool_usage.md)|開發工具與實用程式|
 |[accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG、包容性使用者體驗、輔助科技、無障礙編碼 |
 |[blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)|共識、智能合約、DeFi、拜占庭容錯 |
 |[data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)|陣列、樹、圖、排序、搜尋、複雜性 |
@@ -52,7 +47,6 @@ knowledge_base/English/
 |[low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)|低程式碼平台、內部開發者平台、黃金路徑 |
 |[mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS、Android、React Native、Flutter、行動架構 |
 |[performance_optimization.md](01_coding_and_technology/performance_optimization.md)|分析、快取、CDN、查詢最佳化、前端效能 |
-|[testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)|單元、整合、E2E、TDD、BDD、測試金字塔 |
 **程式語言（34 種語言）：**
 每種語言都有自己的子目錄，其中包含全面的參考，涵蓋概述、權衡、語法基礎知識、生態系統以及何時使用它。
 |語言 |路徑| |語言 |路徑|
@@ -77,31 +71,31 @@ knowledge_base/English/
 ### 02 — 人工智慧與機器學習
 |文件 |描述 |
 |------|-------------|
-|[artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)|人工智慧概述、機器學習、深度學習、法學碩士、倫理 |
-|[ml_evaluation_and_workflow.md](02_ai_and_machine_learning/ml_evaluation_and_workflow.md)|機器學習管道、指標、最佳實踐 |
-|[phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)|本地運行模型 |
-|[local_ai_architecture.md](02_ai_and_machine_learning/local_ai_architecture.md)|本地AI部署架構|
-|[prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)|提示技巧與策略|
-|[data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT、資料湖、編排、Kafka、特徵儲存 |
-|[ml_engineering_and_mlops.md](02_ai_and_machine_learning/ml_engineering_and_mlops.md)|模型服務、登錄、部署原則、漂移監控 |
-|[computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN、目標偵測、分割、遷移學習 |
-|[nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)|文字處理、嵌入、Transformers、BERT、GPT |
-|[ai_ethics_and_governance.md](02_ai_and_machine_learning/ai_ethics_and_governance.md)|人工智慧偏見、公平、問責、監管、治理框架 |
-|[ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)|對齊問題、RLHF、可解釋性、AI 安全研究 |
-|[federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)|去中心化訓練、差異隱私、安全聚合 |
-|[generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GAN、VAE、擴散模型、法學碩士、生成式人工智慧應用 |
-|[graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN、GAT、訊息、知識圖、圖任務 |
-|[model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)|量化、剪枝、蒸餾、ONNX、服務基礎設施 |
-|[multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)|視覺語言模型、CLIP、DALL-E、跨模態學習 |
-|[recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)|協作過濾、基於內容、混合、矩陣分解 |
-|[reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP、Q-learning、策略梯度、RLHF、多智能體系統 |
-|[speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR、TTS、音訊功能、Whisper、語音管道 |
-|[time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA、Prophet、LSTM、季節性、異常檢測 |
+|[artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)|人工智慧概述、機器學習、深度學習、法學碩士、倫理 |
+|[ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md)|機器學習管道、指標、最佳實踐 |
+|[phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)|本地運行模型 |
+|[local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md)|本地AI部署架構|
+|[prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)|提示技巧與策略|
+|[data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT、資料湖、編排、Kafka、特徵儲存 |
+|[ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md)|模型服務、登錄、部署原則、漂移監控 |
+|[computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN、目標偵測、分割、遷移學習 |
+|[nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)|文字處理、嵌入、Transformers、BERT、GPT |
+|[ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md)|人工智慧偏見、公平、問責、監管、治理框架 |
+|[ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)|對齊問題、RLHF、可解釋性、AI 安全研究 |
+|[federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)|去中心化訓練、差異隱私、安全聚合 |
+|[generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GAN、VAE、擴散模型、法學碩士、生成式人工智慧應用 |
+|[graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN、GAT、訊息、知識圖、圖任務 |
+|[model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)|量化、剪枝、蒸餾、ONNX、服務基礎設施 |
+|[multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)|視覺語言模型、CLIP、DALL-E、跨模態學習 |
+|[recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)|協作過濾、基於內容、混合、矩陣分解 |
+|[reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP、Q-learning、策略梯度、RLHF、多智能體系統 |
+|[speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR、TTS、音訊功能、Whisper、語音管道 |
+|[time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA、Prophet、LSTM、季節性、異常檢測 |
 ### 03 — 資料科學與分析
 |文件 |描述 |
 |------|-------------|
 |[data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)|資料處理、ML、大數據、BI |
-|[math_and_logic.md](03_data_science_and_analytics/math_and_logic.md)|數學、邏輯、證明 |
+|[math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md)|數學、邏輯、證明 |
 |[data_visualization.md](03_data_science_and_analytics/data_visualization.md)|圖表選擇、設計原則、說故事、工具 |
 |[statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md)|假設檢定、A/B 檢定、效果量、因果推論 |
 |[causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAG、混雜因子、雙重差分、工具變數 |
@@ -113,13 +107,13 @@ knowledge_base/English/
 |文件 |描述 |
 |------|-------------|
 |[science_and_nature.md](04_natural_sciences/science_and_nature.md)|物理、化學、生物學、地球科學 |
-|[medicine_and_healthcare.md](04_natural_sciences/medicine_and_healthcare.md)|醫學專業、診斷、治療、倫理 |
-|[environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)|生態系、氣候、能源、政策 |
-|[food_agriculture_and_nutrition.md](04_natural_sciences/food_agriculture_and_nutrition.md)|農業、營養、糧食系統、永續性|
-|[astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)|恆星、星系、大爆炸、暗物質、系外行星、宇宙學 |
-|[genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| DNA、基因表現、CRISPR、GWAS、定序技術 |
-|[materials_science.md](04_natural_sciences/materials_science.md)|晶體結構、聚合物、合金、半導體、奈米材料|
-|[neuroscience.md](04_natural_sciences/neuroscience.md)|神經元、大腦結構、神經傳導物質、可塑性、大腦成像 |
+|[medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md)|醫學專業、診斷、治療、倫理 |
+|[environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)|生態系、氣候、能源、政策 |
+|[food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md)|農業、營養、糧食系統、永續性|
+|[astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)|恆星、星系、大爆炸、暗物質、系外行星、宇宙學 |
+|[genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| DNA、基因表現、CRISPR、GWAS、定序技術 |
+|[materials_science.md](04_natural_sciences/physical_sciences/materials_science.md)|晶體結構、聚合物、合金、半導體、奈米材料|
+|[neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)|神經元、大腦結構、神經傳導物質、可塑性、大腦成像 |
 ### 05 — 商業與經濟
 |文件 |描述 |
 |------|-------------|
@@ -136,15 +130,15 @@ knowledge_base/English/
 ### 06 — 人文與藝術
 |文件 |描述 |
 |------|-------------|
-|[history_and_culture.md](06_humanities_and_arts/history_and_culture.md)|從古代文明到資訊時代的世界史|
-|[geography_and_geopolitics.md](06_humanities_and_arts/geography_and_geopolitics.md)|自然/人文地理學、政治制度|
+|[history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)|從古代文明到資訊時代的世界史|
+|[geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md)|自然/人文地理學、政治制度|
 |[arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)|文學流派、視覺藝術、音樂、電影 |
-|[psychology_and_human_behavior.md](06_humanities_and_arts/psychology_and_human_behavior.md)|認知、社會、發展心理學|
-|[language_and_english.md](06_humanities_and_arts/language_and_english.md)|文法、語言學、寫作 |
-|[philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)|學派、倫理學、邏輯學、知識論、認知偏誤 |
-|[linguistics_and_language_science.md](06_humanities_and_arts/linguistics_and_language_science.md)|語音學、句法、語意、語用學、社會語言學 |
-|[music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)|音階、和弦、和聲、節奏、室內聲學、樂器物理 |
-|[world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)|世界主要宗教、比較神話、信仰體系 |
+|[psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md)|認知、社會、發展心理學|
+|[language_and_english.md](06_humanities_and_arts/language/language_and_english.md)|文法、語言學、寫作 |
+|[philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)|學派、倫理學、邏輯學、知識論、認知偏誤 |
+|[linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md)|語音學、句法、語意、語用學、社會語言學 |
+|[music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)|音階、和弦、和聲、節奏、室內聲學、樂器物理 |
+|[world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)|世界主要宗教、比較神話、信仰體系 |
 ### 07 — 一般參考
 |文件 |描述 |
 |------|-------------|
@@ -158,20 +152,20 @@ knowledge_base/English/
 ### 08 — 未來與趨勢
 |文件 |描述 |
 |------|-------------|
-|[2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)|即將舉行的活動、太空任務、技術趨勢 |
-|[emerging_technologies.md](08_future_and_trends/emerging_technologies.md)|量子運算、生物技術、奈米技術 |
-|[future_of_work.md](08_future_and_trends/future_of_work.md)|自動化、遠距工作、再培訓 |
-|[future_healthcare.md](08_future_and_trends/future_healthcare.md)|個人化醫療、人工智慧診斷|
-|[future_transportation.md](08_future_and_trends/future_transportation.md)|電動車、自動駕駛汽車、超高鐵 |
-|[demographic_shifts.md](08_future_and_trends/demographic_shifts.md)|人口趨勢、移民、都市化|
-|[education_transformation.md](08_future_and_trends/education_transformation.md)|線上學習、AI輔導|
-|[geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)|地緣政治、中美、多極世界|
-|[scenario_planning.md](08_future_and_trends/scenario_planning.md)|未來的場景與框架|
-|[space_exploration_roadmap.md](08_future_and_trends/space_exploration_roadmap.md)|太空任務與時間表|
-|[sustainable_future.md](08_future_and_trends/sustainable_future.md)|氣候、能源轉型、循環經濟|
-|[ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)|推薦系統、智慧助理、隱私、注意力經濟 |
-|[climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)|再生能源、電動車、碳捕獲、綠氫能、永續技術 |
-|[future_of_computing.md](08_future_and_trends/future_of_computing.md)|摩爾定律、量子運算、神經形態晶片、邊緣運算 |
+|[2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)|即將舉行的活動、太空任務、技術趨勢 |
+|[emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md)|量子運算、生物技術、奈米技術 |
+|[future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)|自動化、遠距工作、再培訓 |
+|[future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md)|個人化醫療、人工智慧診斷|
+|[future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)|電動車、自動駕駛汽車、超高鐵 |
+|[demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)|人口趨勢、移民、都市化|
+|[education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md)|線上學習、AI輔導|
+|[geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)|地緣政治、中美、多極世界|
+|[scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)|未來的場景與框架|
+|[space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md)|太空任務與時間表|
+|[sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)|氣候、能源轉型、循環經濟|
+|[ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)|推薦系統、智慧助理、隱私、注意力經濟 |
+|[climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)|再生能源、電動車、碳捕獲、綠氫能、永續技術 |
+|[future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)|摩爾定律、量子運算、神經形態晶片、邊緣運算 |
 ### 09 — 失敗的教訓
 |文件 |描述 |
 |------|-------------|
@@ -187,18 +181,18 @@ knowledge_base/English/
 ### 10 — 快速參考
 |文件 |描述 |
 |------|-------------|
-|[python_syntax.md](10_quick_reference/python_syntax.md)| Python 語法備忘單 |
-|[git_commands.md](10_quick_reference/git_commands.md)| Git 指令與工作流程 |
-|[sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| SQL查詢參考|
-|[linux_commands.md](10_quick_reference/linux_commands.md)| Linux 命令列參考 |
-|[docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| Docker、Docker Compose、Kubernetes、Helm 備忘單 |
-|[regular_expressions.md](10_quick_reference/regular_expressions.md)|正規表示式語法、常見模式、特定語言的用法 |
-|[cloud_services_comparison.md](10_quick_reference/cloud_services_comparison.md)| AWS、Azure 與 GCP 並排比較 |
-|[bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| Bash 腳本、文字處理、有用的俏皮話 |
-|[ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| Ansible 劇本、模組、角色、清單、自動化備忘錄 |
-|[cicd_pipeline_config.md](10_quick_reference/cicd_pipeline_config.md)| GitHub Actions、GitLab CI、Jenkins、管道 YAML 模式 |
-|[prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL、導出器、儀表板、警報、監控堆疊 |
-|[terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| IaC 概念、Terraform 指令、狀態管理、模組 |
+|[python_syntax.md](10_quick_reference/programming/python_syntax.md)| Python 語法備忘單 |
+|[git_commands.md](10_quick_reference/programming/git_commands.md)| Git 指令與工作流程 |
+|[sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| SQL查詢參考|
+|[linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)| Linux 命令列參考 |
+|[docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| Docker、Docker Compose、Kubernetes、Helm 備忘單 |
+|[regular_expressions.md](10_quick_reference/programming/regular_expressions.md)|正規表示式語法、常見模式、特定語言的用法 |
+|[cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)| AWS、Azure 與 GCP 並排比較 |
+|[bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| Bash 腳本、文字處理、有用的俏皮話 |
+|[ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| Ansible 劇本、模組、角色、清單、自動化備忘錄 |
+|[cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md)| GitHub Actions、GitLab CI、Jenkins、管道 YAML 模式 |
+|[prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL、導出器、儀表板、警報、監控堆疊 |
+|[terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| IaC 概念、Terraform 指令、狀態管理、模組 |
 ---
 
 ## 學習路徑
@@ -210,12 +204,9 @@ knowledge_base/English/
 ### 對於軟體開發人員
 1. `01_coding_and_technology/programming_languages/python/`（或您選擇的語言）
 2.`01_coding_and_technology/data_structures_and_algorithms.md`
-3.`01_coding_and_technology/web_development.md`
 4.`01_coding_and_technology/database_systems.md`
 5.`01_coding_and_technology/cloud_architecture.md`
-6.`01_coding_and_technology/software_architecture_patterns.md`
 7.`01_coding_and_technology/api_design_and_architecture.md`
-8.`01_coding_and_technology/testing_methodologies.md`
 9.`02_ai_and_machine_learning/artificial_intelligence.md`
 ### 對於資料科學家
 1.`03_data_science_and_analytics/math_and_logic.md`

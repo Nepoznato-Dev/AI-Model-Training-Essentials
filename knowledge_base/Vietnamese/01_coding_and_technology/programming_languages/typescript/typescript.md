@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # TypeScript
 TypeScript là một siêu tập hợp JavaScript được gõ tĩnh do Microsoft (do Anders Hejlsberg đứng đầu) phát triển và phát hành lần đầu tiên vào năm 2012. Nó bổ sung các chú thích loại tùy chọn, giao diện, khái quát và các tính năng hệ thống loại nâng cao vào JavaScript — sau đó biên dịch thành JavaScript đơn giản chạy ở mọi nơi JavaScript chạy. TypeScript không phải là ngôn ngữ hoặc thời gian chạy riêng biệt; đó là JavaScript với trình kiểm tra loại.
 TypeScript đã trở thành tiêu chuẩn để phát triển JavaScript quy mô lớn. React, Angular, VS Code, Deno và hầu hết các dự án JavaScript nguồn mở lớn đều được viết bằng TypeScript. Nếu bạn đang bắt đầu một dự án JavaScript mới có kích thước đáng kể, thì TypeScript là mặc định được đề xuất.
@@ -53,7 +54,7 @@ TypeScript đã trở thành tiêu chuẩn để phát triển JavaScript quy m�
 ## Sự đánh đổi
 | Hạn chế | Chi tiết | Cách giải quyết điển hình |
 |----------|----------|-------------------|
-| **Bước tổng hợp** | Phải biên dịch`.ts`→`.js`trước khi chạy | Sử dụng`ts-node`/`tsx`để phát triển; `tsc`cho sản xuất |
+| **Bước tổng hợp** | Phải biên dịch`.ts`→`.js`trước khi chạy | Sử dụng`ts-node`/`tsx`để phát triển; `tsc`dành cho sản xuất |
 | **Đường cong học tập** | Hệ thống loại có thể phức tạp (loại chung, loại có điều kiện) | Bắt đầu với các loại cơ bản; áp dụng dần dần các tính năng nâng cao |
 | **Gõ tệp định nghĩa** | Không phải tất cả các gói npm đều có loại | Cài đặt`@types/package-name`từ DefiniteTyped |
 | **Số lần biên dịch** | Các dự án lớn có thể chậm kiểm tra kiểu | Sử dụng tài liệu tham khảo dự án,`isolatedModules`hoặc`swc`|
@@ -460,7 +461,7 @@ my-ts-project/
 └── .github/workflows/ci.yml
 ```
 
-###`tsconfig.json`— Cấu hình TypeScript
+###`tsconfig.json`- Cấu hình TypeScript
 ```json
 {
   "compilerOptions": {
@@ -810,6 +811,398 @@ CMD ["node", "dist/index.js"]
 | Bất kỳ dự án JavaScript mới nào | Chi phí thêm TypeScript sau này cao | JS thuần túy chỉ dành cho các tập lệnh nhỏ |
 | Thư viện/gói npm | Người tiêu dùng nhận được tính năng tự động hoàn thành và kiểm tra kiểu | -- |
 **Quy tắc chung**: Nếu dự án JavaScript của bạn có hơn vài trăm dòng, hãy sử dụng TypeScript.
+---
+
+## Hỏi đáp tổng hợp
+### Câu 1: Sự khác biệt giữa`type`và`interface`là gì và khi nào tôi nên sử dụng từng loại?
+**A:** Cả hai đều xác định hình dạng đối tượng nhưng có các khả năng khác nhau. `interface`hỗ trợ hợp nhất khai báo (hợp nhất nhiều khai báo có cùng tên),`extends`để kế thừa và là lựa chọn thông thường cho các API công khai. `type`hỗ trợ các loại kết hợp, loại giao lộ, loại được ánh xạ, loại có điều kiện và loại chữ mẫu - mọi thứ nâng cao. Cách thực hành tốt nhất: sử dụng`interface`cho hình dạng đối tượng và API công khai; sử dụng`type`cho các công đoàn, tiện ích và các hoạt động loại phức tạp.
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Câu 2: Thuốc generic hoạt động như thế nào và tại sao chúng lại quan trọng?
+**A:** Generics cho phép bạn viết các hàm, lớp và kiểu hoạt động với bất kỳ kiểu nào trong khi vẫn duy trì sự an toàn về kiểu. Thay vì`any`(làm mất thông tin loại), generics duy trì mối quan hệ giữa loại đầu vào và đầu ra. Chúng là nền tảng của mã an toàn loại, có thể tái sử dụng.
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Câu 3: Các loại tiện ích là gì và tôi nên biết những loại nào?
+**A:** TypeScript cung cấp các loại tiện ích tích hợp sẵn để chuyển đổi các loại hiện có. Quan trọng nhất:`Partial<T>`(tất cả tùy chọn),`Required<T>`(tất cả bắt buộc),`Pick<T, K>`(chọn khóa),`Omit<T, K>`(loại trừ khóa),`Record<K, V>`(bản đồ khóa-giá trị),`Exclude<T, U>`(xóa khỏi liên kết),`ReturnType<T>`(loại trả về hàm trích xuất),`Awaited<T>`(Lời hứa mở ra). Tìm hiểu những điều này - chúng loại bỏ hầu hết nhu cầu về các hoạt động loại tùy chỉnh.
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4: Làm cách nào để nhập mã không đồng bộ và xử lý lỗi theo cách an toàn?
+**A:** Hàm không đồng bộ tự động trả về`Promise<T>`trong đó T là loại trả về. Sử dụng`await`để mở khóa Lời hứa. Để xử lý lỗi, TypeScript không có ngoại lệ được gõ, nhưng bạn có thể tạo bộ bảo vệ kiểu và loại kết quả. "Mẫu kết quả" (lấy cảm hứng từ Rust) cung cấp khả năng xử lý lỗi thời gian biên dịch.
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Câu hỏi 5: Tệp khai báo (.d.ts) là gì và làm cách nào để sử dụng loại của bên thứ ba?
+**A:** Tệp khai báo mô tả các loại thư viện JavaScript không có loại TypeScript tích hợp. Chúng chỉ chứa thông tin loại (không có mã thời gian chạy). Cài đặt các loại do cộng đồng duy trì từ DefiniteTyped:`npm install --save-dev @types/lodash`. Đối với thư viện của riêng bạn, hãy thêm trường`types`trong`package.json`hoặc bao gồm các tệp`.d.ts`cùng với nguồn của bạn. Sử dụng`declare module`để khai báo môi trường xung quanh.
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## Giải quyết vấn đề theo chuỗi suy nghĩ
+### Vấn đề 1: Xây dựng Trình phát sự kiện loại an toàn
+**Báo cáo sự cố:** Tạo trình phát sự kiện chung, loại an toàn trong TypeScript trong đó mỗi tên sự kiện ánh xạ tới một loại tải trọng cụ thể. Trình biên dịch sẽ phát hiện tên sự kiện và loại tải trọng không chính xác tại thời điểm biên dịch.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần một hệ thống sự kiện trong đó: (1) sự kiện được xác định bằng loại tải trọng của chúng, (2)`emit`chỉ chấp nhận tên sự kiện hợp lệ với tải trọng chính xác, (3)`on`chỉ chấp nhận tên sự kiện hợp lệ với trình xử lý được nhập chính xác. Điều này yêu cầu các loại và khái quát được ánh xạ trên giao diện bản đồ sự kiện.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Xác định một loại `EventMap`: `{ [eventName: string]: payloadType }`.
+- Sử dụng`keyof EventMap`để hạn chế tên sự kiện.
+- Sử dụng`EventMap[K]`để lấy loại tải trọng cho một sự kiện cụ thể.
+- Lưu trữ người nghe trong`Map<string, Function[]>`.
+**Bước 3 — Triển khai giải pháp:**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- An toàn về kiểu: trình biên dịch bắt sai tên sự kiện và hình dạng tải trọng sai tại thời điểm biên dịch.
+-`on`trả về chức năng hủy đăng ký để dọn dẹp thuận tiện.
+-`once`bao bọc người nghe để tự động hủy đăng ký sau lần gọi đầu tiên.
+- Đối với sản xuất: thêm`listenerCount`,`removeAllListeners`và cân nhắc sử dụng`AbortSignal`để hủy.
+### Vấn đề 2: Triển khai Trình tạo truy vấn SQL an toàn kiểu
+**Báo cáo vấn đề:** Xây dựng trình tạo truy vấn SQL trong đó tên và loại cột được lấy từ giao diện TypeScript. Trình xây dựng phải ngăn chặn các tên cột không hợp lệ và kiểu nhập không khớp tại thời điểm biên dịch.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng tôi cần: (1) tên cột bị ràng buộc ở `keyof T`, (2) các giá trị mệnh đề WHERE được nhập theo cột, (3) API có thể tạo chuỗi để xây dựng truy vấn. Điều này đòi hỏi thuốc generic bị ràng buộc bởi`Record<string, unknown>`.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Sử dụng`keyof T`cho các ràng buộc về tên cột.
+- Sử dụng`T[K]`cho các ràng buộc về loại giá trị.
+- Xây dựng chuỗi SQL với các truy vấn được tham số hóa (ngăn chặn việc tiêm SQL).
+- Các phương thức có thể xâu chuỗi trả về`this`.
+**Bước 3 — Triển khai giải pháp:**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- Ngăn chặn việc tiêm SQL: tất cả các giá trị đều trải qua các truy vấn được tham số hóa (`$1`,`$2`), không bao giờ được nội suy.
+- An toàn kiểu: tên cột và kiểu giá trị được kiểm tra tại thời điểm biên dịch.
+- Khả năng mở rộng: thêm các phương thức`join`,`groupBy`,`having`,`insert`,`update`theo cùng một mẫu.
+- Sản xuất: sử dụng`kysely`hoặc`drizzle-orm`- chúng cung cấp sự an toàn cho loại này với phạm vi bảo hiểm SQL đầy đủ.
+### Bài toán 3: Triển khai máy trạng thái hữu hạn với kiểu an toàn
+**Báo cáo vấn đề:** Tạo một máy trạng thái hữu hạn an toàn về loại trong đó các chuyển đổi hợp lệ được thực thi tại thời điểm biên dịch. Mỗi trạng thái có thể có các hành động vào/ra và máy sẽ theo dõi trạng thái hiện tại.
+**Bước 1 — Tìm hiểu vấn đề:**
+Chúng ta cần: (1) các trạng thái và sự kiện được xác định theo loại, (2) các chuyển đổi hợp lệ được ánh xạ ở cấp loại, (3) trình biên dịch ngăn chặn các chuyển đổi không hợp lệ, (4) theo dõi trạng thái thời gian chạy bằng các lệnh gọi lại. Điều này đòi hỏi các loại ánh xạ và các loại có điều kiện.
+**Bước 2 — Xác định phương pháp tiếp cận:**
+- Xác định một`TransitionMap`:`{ [State]: { [Event]: NextState } }`.
+- Sử dụng thuốc generic để hạn chế`send(event)`dựa trên trạng thái hiện tại.
+- Theo dõi trạng thái khi chạy bằng một biến.
+- Hỗ trợ gọi lại vào/ra theo từng trạng thái.
+**Bước 3 — Triển khai giải pháp:**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**Bước 4 — Xác minh và tối ưu hóa:**
+- An toàn trong thời gian chạy:`send`ném vào các chuyển tiếp không hợp lệ.
+- An toàn loại: loại`EventsFor`trích xuất các sự kiện hợp lệ trên mỗi trạng thái tại thời điểm biên dịch.
+- Lệnh gọi lại vào/ra tự động kích hoạt khi chuyển đổi.
+- Đối với sản xuất: sử dụng`xstate`— nó cung cấp thư viện máy trạng thái đầy đủ với tính năng gỡ lỗi trực quan, trạng thái phân cấp, bảo vệ và hành động.
 ---
 
 ## Bản tóm tắt

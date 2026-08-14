@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 打字稿
 TypeScript 是 JavaScript 的静态类型超集，由 Microsoft（由 Anders Hejlsberg 领导）开发，于 2012 年首次发布。它向 JavaScript 添加了可选的类型注释、接口、泛型和高级类型系统功能，然后编译为可在 JavaScript 运行的任何地方运行的纯 JavaScript。 TypeScript 不是一种单独的语言或运行时；它是带有类型检查器的 JavaScript。
-TypeScript 已经成为大规模 JavaScript 开发的标准。 React、Angular、VS Code、Deno 和大多数主要的开源 JavaScript 项目都是用 TypeScript 编写的。如果您要开始一个任何规模的新 JavaScript 项目，建议默认使用 TypeScript。
+TypeScript 已经成为大规模 JavaScript 开发的标准。 React、Angular、VS Code、Deno 和大多数主要的开源 JavaScript 项目都是用 TypeScript 编写的。如果您要启动一个任何规模的新 JavaScript 项目，建议默认使用 TypeScript。
 ---
 
 ## 为什么 TypeScript 很重要
@@ -802,14 +803,406 @@ CMD ["node", "dist/index.js"]
 ---
 
 ## 何时使用 TypeScript
-|场景 |为什么选择 TypeScript |更好的选择|
+|场景|为什么选择 TypeScript |更好的选择|
 |----------|--------------|--------------------|
 |大型 JavaScript 项目 |类型安全可以防止整个类别的错误 | --|
 |团队项目|类型充当共享契约 | --|
-| API开发|使用 tRPC 或 OpenAPI 实现端到端类型安全 | Go、Java 实现更简单的 REST API |
+| API开发 |使用 tRPC 或 OpenAPI 实现端到端类型安全 | Go、Java 实现更简单的 REST API |
 |任何新的 JavaScript 项目 |后期添加TypeScript成本高 |仅适用于小脚本的纯 JS |
 |库/npm 包 |消费者获得自动完成和类型检查| --|
 **经验法则**：如果您的 JavaScript 项目超过几百行，请使用 TypeScript。
+---
+
+## 综合问答
+### Q1：`type`和`interface`之间有什么区别，什么时候应该使用它们？
+**A：** 两者都定义了对象形状，但它们具有不同的功能。 `interface`支持声明合并（多个同名声明合并），`extends` 支持继承，是公共 API 的惯用选择。 `type`支持联合类型、交集类型、映射类型、条件类型和模板文字类型 — 任何高级类型。最佳实践：将`interface`用于对象形状和公共 API；使用`type`进行联合、实用程序和复杂类型操作。
+```typescript
+// interface — declaration merging, extends
+interface User {
+  id: string;
+  name: string;
+}
+interface User {
+  email: string;  // Merges with the above
+}
+interface Admin extends User {
+  permissions: string[];
+}
+
+// type — unions, mapped types, conditional types
+type Status = "active" | "inactive" | "pending";
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+// When they overlap — prefer interface for objects
+interface ApiResponse<T> {
+  data: T;
+  status: number;
+  message: string;
+}
+```
+
+### Q2：仿制药如何工作，为什么它们很重要？
+**答：** 泛型让您可以编写适用于任何类型的函数、类和类型，同时保持类型安全。泛型保留了输入和输出类型之间的关系，而不是 `any`（它会丢失类型信息）。它们是可重用、类型安全代码的基础。
+```typescript
+// Generic function — preserves type relationship
+function first<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+const num = first([1, 2, 3]);       // Type: number | undefined
+const str = first(["a", "b"]);       // Type: string | undefined
+
+// Generic constraints
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+const user = { name: "Alice", age: 30 };
+const name = getProperty(user, "name");   // Type: string
+// getProperty(user, "email");            // Error: "email" is not keyof typeof user
+
+// Generic utility — the real power of TypeScript's type system
+type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};
+```
+
+### Q3：什么是实用程序类型，我应该了解哪些类型？
+**答：** TypeScript 提供了可以转换现有类型的内置实用程序类型。最重要的：`Partial<T>`（全部可选）、`Required<T>`（全部必需）、`Pick<T, K>`（选择键）、`Omit<T, K>`（排除键）、`Record<K, V>`（键值映射）、`Exclude<T, U>`（从联合中删除）、`ReturnType<T>`（提取函数返回类型）、 `Awaited<T>`（解开 Promise）。了解这些——它们消除了对自定义类型操作的大部分需求。
+```typescript
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+}
+
+// Common transformations
+type CreateUser = Omit<User, "id" | "createdAt">;     // For POST requests
+type UpdateUser = Partial<Omit<User, "id">>;            // For PATCH requests
+type UserSummary = Pick<User, "id" | "name">;           // For list views
+type UserMap = Record<string, User>;                    // Dictionary
+
+// Extracting types
+type UserReturn = ReturnType<typeof getUser>;           // What getUser returns
+type UserKeys = keyof User;                              // "id" | "name" | "email" | ...
+
+// Custom utility
+type Nullable<T> = { [K in keyof T]: T[K] | null };
+type NullableUser = Nullable<User>;  // All fields can be null
+```
+
+### Q4：如何输入异步代码并以类型安全的方式处理错误？
+**A:** 异步函数自动返回 `Promise<T>`，其中 T 是返回类型。使用`await`来打开 Promise。对于错误处理，TypeScript 没有类型化异常，但您可以创建类型防护和结果类型。 “结果模式”（受 Rust 启发）提供编译时错误处理。
+```typescript
+// Async typing
+async function fetchUser(id: string): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json() as Promise<User>;
+}
+
+// Result pattern — type-safe error handling
+type Result<T, E = Error> =
+  | { ok: true; value: T }
+  | { ok: false; error: E };
+
+async function safeFetchUser(id: string): Promise<Result<User>> {
+  try {
+    const user = await fetchUser(id);
+    return { ok: true, value: user };
+  } catch (error) {
+    return { ok: false, error: error as Error };
+  }
+}
+
+// Usage — compiler forces you to check 'ok'
+const result = await safeFetchUser("123");
+if (result.ok) {
+  console.log(result.value.name);  // TypeScript knows value exists
+} else {
+  console.error(result.error.message);
+}
+```
+
+### Q5：什么是声明文件 (.d.ts) 以及如何使用第三方类型？
+**A:** 声明文件描述没有内置 TypeScript 类型的 JavaScript 库的类型。它们仅包含类型信息（没有运行时代码）。从 DefinelyTyped 安装社区维护的类型：`npm install --save-dev @types/lodash`。对于您自己的库，请在`package.json`中添加`types`字段，或在源代码旁边包含`.d.ts`文件。使用`declare module`进行环境声明。
+```typescript
+// Installing third-party types
+// npm install --save-dev @types/express @types/node
+
+// Custom declaration file (global.d.ts)
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
+
+declare module "legacy-library" {
+  export function processData(input: string): number;
+  export class LegacyClient {
+    constructor(config: { host: string; port: number });
+    connect(): Promise<void>;
+  }
+}
+
+// Augmenting existing modules
+declare module "express" {
+  interface Request {
+    user?: import("./models").User;
+  }
+}
+```
+
+---
+
+## 解决问题的思路
+### 问题 1：构建类型安全的事件发射器
+**问题陈述：** 在 TypeScript 中创建一个通用的、类型安全的事件发射器，其中每个事件名称映射到特定的有效负载类型。编译器应在编译时捕获不正确的事件名称和有效负载类型。
+**第 1 步 — 了解问题：**
+我们需要一个事件系统，其中：(1) 事件使用其有效负载类型进行定义，(2)`emit`仅接受具有正确有效负载的有效事件名称，(3)`on`仅接受具有正确类型处理程序的有效事件名称。这需要通过事件映射接口映射类型和泛型。
+**第 2 步 — 确定方法：**
+- 定义`EventMap`类型：`{ [eventName: string]: payloadType }`。
+- 使用`keyof EventMap`来约束事件名称。
+- 使用`EventMap[K]`获取特定事件的有效负载类型。
+- 将侦听器存储在`Map<string, Function[]>`中。
+**第 3 步 — 实施解决方案：**
+```typescript
+type EventMap = Record<string, unknown>;
+
+class TypedEmitter<Events extends EventMap> {
+  private listeners = new Map<string, Set<Function>>();
+
+  on<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): () => void {
+    if (!this.listeners.has(event as string)) {
+      this.listeners.set(event as string, new Set());
+    }
+    this.listeners.get(event as string)!.add(listener);
+
+    // Return unsubscribe function
+    return () => this.off(event, listener);
+  }
+
+  off<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    this.listeners.get(event as string)?.delete(listener);
+  }
+
+  emit<K extends keyof Events>(event: K, payload: Events[K]): void {
+    this.listeners.get(event as string)?.forEach(fn => fn(payload));
+  }
+
+  once<K extends keyof Events>(
+    event: K,
+    listener: (payload: Events[K]) => void
+  ): void {
+    const unsubscribe = this.on(event, (payload: Events[K]) => {
+      listener(payload);
+      unsubscribe();
+    });
+  }
+}
+
+// Usage — fully type-safe
+interface AppEvents {
+  "user:login": { userId: string; timestamp: Date };
+  "user:logout": { userId: string };
+  "data:update": { key: string; value: unknown };
+  "error": { message: string; code: number };
+}
+
+const emitter = new TypedEmitter<AppEvents>();
+
+emitter.on("user:login", ({ userId, timestamp }) => {
+  console.log(`${userId} logged in at ${timestamp}`);
+});
+
+emitter.emit("user:login", { userId: "abc", timestamp: new Date() });
+// emitter.emit("user:login", { userId: "abc" });  // Error: missing timestamp
+// emitter.emit("unknown", {});                     // Error: "unknown" not in AppEvents
+```
+
+**第 4 步 — 验证和优化：**
+- 类型安全：编译器在编译时捕获错误的事件名称和错误的有效负载形状。
+-`on`返回取消订阅函数以方便清理。
+-`once`将侦听器包装为在首次调用后自动取消订阅。
+- 对于生产：添加`listenerCount`、`removeAllListeners`，并考虑使用`AbortSignal`进行取消。
+### 问题 2：实现类型安全的 SQL 查询生成器
+**问题陈述：** 构建一个 SQL 查询生成器，其中列名称和类型源自 TypeScript 接口。构建器应该在编译时防止无效的列名和类型不匹配。
+**第 1 步 — 了解问题：**
+我们需要：(1) 列名限制为`keyof T`，(2) 根据列键入的 WHERE 子句值，(3) 用于构建查询的可链接 API。这需要受`Record<string, unknown>`约束的泛型。
+**第 2 步 — 确定方法：**
+- 使用`keyof T`作为列名称约束。
+- 使用`T[K]`进行值类型约束。
+- 使用参数化查询构建 SQL 字符串（防止 SQL 注入）。
+- 可链接方法返回`this`。
+**第 3 步 — 实施解决方案：**
+```typescript
+interface QueryBuilder<T extends Record<string, unknown>> {
+  select(...columns: (keyof T)[]): QueryBuilder<T>;
+  where<K extends keyof T>(column: K, value: T[K]): QueryBuilder<T>;
+  orderBy(column: keyof T, direction?: "ASC" | "DESC"): QueryBuilder<T>;
+  limit(n: number): QueryBuilder<T>;
+  build(): { sql: string; params: unknown[] };
+}
+
+function createQuery<T extends Record<string, unknown>>(
+  table: string
+): QueryBuilder<T> {
+  let columns: string[] = ["*"];
+  let conditions: string[] = [];
+  let params: unknown[] = [];
+  let orderClause = "";
+  let limitClause = "";
+
+  return {
+    select(...cols: (keyof T)[]) {
+      columns = cols.map(String);
+      return this;
+    },
+    where<K extends keyof T>(column: K, value: T[K]) {
+      conditions.push(`${String(column)} = $${params.length + 1}`);
+      params.push(value);
+      return this;
+    },
+    orderBy(column: keyof T, direction: "ASC" | "DESC" = "ASC") {
+      orderClause = ` ORDER BY ${String(column)} ${direction}`;
+      return this;
+    },
+    limit(n: number) {
+      limitClause = ` LIMIT ${n}`;
+      return this;
+    },
+    build() {
+      const sql = `SELECT ${columns.join(", ")} FROM ${table}`
+        + (conditions.length ? ` WHERE ${conditions.join(" AND ")}` : "")
+        + orderClause + limitClause;
+      return { sql, params };
+    },
+  };
+}
+
+// Usage — fully type-safe
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+const { sql, params } = createQuery<User>("users")
+  .select("name", "email")
+  .where("age", 25)           // Type: number
+  .where("name", "Alice")     // Type: string
+  .orderBy("name")
+  .limit(10)
+  .build();
+
+console.log(sql);
+// SELECT name, email FROM users WHERE age = $1 AND name = $2 ORDER BY name ASC LIMIT 10
+console.log(params);  // [25, "Alice"]
+
+// .where("age", "not a number");  // Error: string not assignable to number
+// .select("nonexistent");          // Error: "nonexistent" not in keyof User
+```
+
+**第 4 步 — 验证和优化：**
+- SQL 注入预防：所有值都经过参数化查询（`$1`、`$2`），从不进行插值。
+- 类型安全：在编译时检查列名和值类型。
+- 可扩展性：按照相同的模式添加`join`、`groupBy`、`having`、`insert`、`update`方法。
+- 生产：使用`kysely`或`drizzle-orm`— 它们提供这种类型安全性和完整的 SQL 覆盖率。
+### 问题 3：实现具有类型安全的有限状态机
+**问题陈述：** 创建一个类型安全的有限状态机，其中在编译时强制执行有效的转换。每个状态都可以有进入/退出操作，并且机器应该跟踪当前状态。
+**第 1 步 — 了解问题：**
+我们需要：(1) 定义为类型的状态和事件，(2) 在类型级别映射的有效转换，(3) 编译器防止无效转换，(4) 使用回调进行运行时状态跟踪。这需要映射类型和条件类型。
+**第 2 步 — 确定方法：**
+- 定义`TransitionMap`:`{ [State]: { [Event]: NextState } }`。
+- 使用泛型根据当前状态约束 `send(event)`。
+- 使用变量跟踪运行时的状态。
+- 支持每个状态的进入/退出回调。
+**第 3 步 — 实施解决方案：**
+```typescript
+type TransitionMap = Record<string, Record<string, string>>;
+
+interface StateMachineConfig<T extends TransitionMap> {
+  initial: keyof T & string;
+  transitions: T;
+  onEnter?: Partial<Record<keyof T & string, () => void>>;
+  onExit?: Partial<Record<keyof T & string, () => void>>;
+}
+
+// Extract valid events for a given state
+type EventsFor<S extends string, T extends TransitionMap> =
+  S extends keyof T ? keyof T[S] & string : never;
+
+// Extract target state for a given state + event
+type TargetState<S extends string, E extends string, T extends TransitionMap> =
+  S extends keyof T ? (E extends keyof T[S] ? T[S][E] : never) : never;
+
+class StateMachine<T extends TransitionMap> {
+  private current: string;
+  private config: StateMachineConfig<T>;
+
+  constructor(config: StateMachineConfig<T>) {
+    this.config = config;
+    this.current = config.initial;
+    config.onEnter?.[config.initial]?.();
+  }
+
+  getState(): keyof T & string {
+    return this.current as keyof T & string;
+  }
+
+  can(event: EventsFor<keyof T & string, T>): boolean {
+    const transitions = this.config.transitions[this.current];
+    return transitions != null && event in transitions;
+  }
+
+  send(event: EventsFor<keyof T & string, T>): void {
+    const transitions = this.config.transitions[this.current];
+    if (!transitions || !(event in transitions)) {
+      throw new Error(
+        `Invalid transition: cannot send '${event}' from state '${this.current}'`
+      );
+    }
+
+    const nextState = transitions[event];
+    this.config.onExit?.[this.current]?.();
+    this.current = nextState;
+    this.config.onEnter?.[nextState]?.();
+  }
+}
+
+// Usage — type-safe state machine
+const trafficLight = new StateMachine({
+  initial: "red",
+  transitions: {
+    red:    { next: "green" },
+    green:  { next: "yellow" },
+    yellow: { next: "red" },
+  } as const,
+  onEnter: {
+    red: () => console.log("🔴 Stop"),
+    green: () => console.log("🟢 Go"),
+    yellow: () => console.log("🟡 Caution"),
+  },
+});
+
+trafficLight.getState();  // "red"
+trafficLight.send("next"); // → green, prints "🟢 Go"
+trafficLight.send("next"); // → yellow, prints "🟡 Caution"
+trafficLight.send("next"); // → red, prints "🔴 Stop"
+```
+
+**第 4 步 — 验证和优化：**
+- 运行时安全：`send` 引发无效转换。
+- 类型安全：`EventsFor` 类型在编译时提取每个状态的有效事件。
+- 进入/退出回调在转换时自动触发。
+- 对于生产：使用`xstate`— 它提供了一个完整的状态机库，具有可视化调试、分层状态、防护和操作。
 ---
 
 ＃＃ 概括

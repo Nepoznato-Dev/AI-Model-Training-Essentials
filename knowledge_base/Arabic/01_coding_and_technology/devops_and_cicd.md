@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "DevOps وCI/CD"
-الوصف: "خطوط أنابيب CI/CD، Docker، Kubernetes، Terraform، GitOps"
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "DevOps and CI/CD"
+description: "CI/CD pipelines, Docker, Kubernetes, Terraform, GitOps"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [مطورو البرامج، CICD، البرمجة والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "11 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [devops, cicd, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "11 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps وCI/CD
 DevOps عبارة عن مزيج من الفلسفة والممارسات والأدوات الثقافية التي تمكن الفرق من تقديم البرامج بشكل أسرع وأكثر موثوقية. إنه يكسر الجدار بين المطورين (الذين يريدون تقديم التغييرات) والعمليات (الذين يريدون الاستقرار). CI/CD — التكامل المستمر والتسليم المستمر — هو العمود الفقري للأتمتة الذي يجعل ذلك ممكنًا.
 ---
@@ -101,7 +106,7 @@ EXPOSE 8000
 CMD ["python", "main.py"]
 ```
 
-الممارسات الأساسية: استخدام الصور الأساسية/النحيفة، وتشغيلها كغير جذر، والاستفادة من التخزين المؤقت للطبقة، واستخدام `.dockerignore`، ومسح الصور ضوئيًا بحثًا عن الثغرات الأمنية ( `trivy`، `docker scan`)، وتعيين حدود الموارد.
+الممارسات الأساسية: استخدام الصور الأساسية/النحيفة، وتشغيلها كغير جذر، والاستفادة من التخزين المؤقت للطبقة، واستخدام `.dockerignore`، ومسح الصور بحثًا عن الثغرات الأمنية (`trivy`، و`docker scan`)، وتعيين حدود الموارد.
 ### عامل الميناء يؤلف
 لتشغيل حاويات متعددة معًا (التطبيق + قاعدة البيانات + ذاكرة التخزين المؤقت):
 ```yaml
@@ -148,7 +153,7 @@ kubectl scale deploy/myapp --replicas=5  # Scale to 5 replicas
 ```
 
 ### خوذة
-Helm هو مدير الحزم في Kubernetes. **المخطط** عبارة عن حزمة من موارد Kubernetes التي تم تكوينها مسبقًا. فكر في الأمر على أنه __محمي_0__ أو __محمي_1__ بالنسبة لأجهزة K8.
+Helm هو مدير الحزم في Kubernetes. **المخطط** عبارة عن حزمة من موارد Kubernetes التي تم تكوينها مسبقًا. فكر في الأمر على أنه`apt`أو`brew`لـ K8s.
 ```bash
 helm install my-release bitnami/postgresql   # Install a chart
 helm upgrade my-release bitnami/postgresql   # Upgrade
@@ -167,7 +172,7 @@ helm list                                    # List releases
 | ** غير مقبول ** | التكوين | تصريحي (YAML)؛ بلا وكيل | تكوين الخوادم وتثبيت البرامج |
 | **بولومي** | التزويد | الأمر (Python، Go، TS) | الفرق التي تفضل لغات البرمجة الحقيقية |
 | **تكوين السحابة** | التزويد | تعريفي (YAML/JSON)؛ AWS أصلي | البنية التحتية لـ AWS فقط |
-### مثال على شكل التضاريس
+### مثال Terraform
 ```hcl
 provider "aws" {
   region = "us-east-1"
@@ -228,7 +233,7 @@ resource "aws_instance" "web" {
 | **النسخة** | جيت هو مصدر الحقيقة |
 | **آلي** | تعمل الأدوات باستمرار على التوفيق بين الحالة المطلوبة والحالة الفعلية |
 | **قابل للتدقيق** | كل تغيير هو التزام Git |
-**ArgoCD** و**Flux** هما أدوات GitOps الرائدة لـ Kubernetes. يمكنك دفع التغيير إلى Git repo الخاص بك، وتقوم الأداة تلقائيًا بنشره على المجموعة.
+**ArgoCD** و **Flux** هما أدوات GitOps الرائدة لـ Kubernetes. يمكنك دفع التغيير إلى Git repo الخاص بك، وتقوم الأداة تلقائيًا بنشره على المجموعة.
 ---
 
 ## الاستجابة للحوادث
@@ -240,4 +245,4 @@ resource "aws_instance" "web" {
 5. **الإصلاح** — التراجع أو التصحيح للأمام.
 6. **التواصل** — قم بتحديث أصحاب المصلحة والمستخدمين (صفحة الحالة).
 7. **بعد الوفاة** — في غضون 24 إلى 48 ساعة، قم بتوثيق السبب الجذري وعناصر الإجراء.
-الهدف ليس فقط إصلاح الحادث، بل التأكد من عدم تكرار نفس الحادث مرة أخرى.
+الهدف ليس فقط حل الحادث ولكن ضمان عدم تكرار نفس الحادث.

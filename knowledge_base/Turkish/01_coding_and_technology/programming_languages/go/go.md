@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Gitmek
 Go (orijinal alan adından dolayı genellikle "Golang" olarak anılır), Google'da Robert Griesemer, Rob Pike ve Ken Thompson tarafından tasarlanan statik olarak yazılmış, derlenmiş bir programlama dilidir. İlk olarak 2012 yılında sistem programlama için daha iyi bir dil olma hedefiyle piyasaya sürüldü; C'nin performansını Python gibi dinamik dillerin üretkenliğiyle birleştiren bir dil. Go, basitliği, hızlı derlemesi, yerleşik eşzamanlılığı (goroutinler ve kanallar) ve mükemmel araçlarıyla tanınır.
-Go, bulut altyapısı ekosisteminin büyük bir kısmına güç sağlar: Docker, Kubernetes, Terraform, Prometheus vb. ve Go standart kitaplığının HTTP sunucusunun tümü Go'da yazılmıştır. Bulutta yerel geliştirme, mikro hizmetler ve CLI araçları için varsayılan dil haline geldi.
+Go, bulut altyapısı ekosisteminin büyük bir kısmına güç verir: Docker, Kubernetes, Terraform, Prometheus, vb. ve Go standart kitaplığının HTTP sunucusunun tümü Go'da yazılmıştır. Bulutta yerel geliştirme, mikro hizmetler ve CLI araçları için varsayılan dil haline geldi.
 ---
 
 ## Gitmek Neden Önemlidir
@@ -256,7 +257,7 @@ func (s *Set[T]) Has(item T) bool {
 }
 ```
 
-### Gelişmiş Desen Eşleştirme (Tip Anahtarları)
+### Gelişmiş Desen Eşleştirme (Tür Anahtarları)
 ```go
 func describe(i interface{}) string {
     switch v := i.(type) {
@@ -572,7 +573,7 @@ func main() {
 |-----------|---------------|
 | C'yi aramaya gidin | cgo (`import "C"`) |
 | C++'ı aramaya başlayın | cgo + C sarmalayıcı işlevleri |
-| C Go'yu arıyor | Go işlevlerini`//export`ile dışa aktarın |
+| C Go'yu arıyor |`//export`ile Go işlevlerini dışa aktarın |
 | Python'u aramaya gidin | Gopy veya alt işlemi kullanın |
 ---
 
@@ -729,6 +730,419 @@ go mod tidy
 | Veri bilimi / ML | Doğru ekosistem değil | Python, R |
 | Masaüstü/mobil GUI | GUI çerçevesi yok | Bir web ön ucu veya yerel dil kullanın |
 | Gömülü sistemler | Çok ağır (GC, çalışma zamanı) | C, Pas |
+---
+
+## Sentetik Soru-Cevap
+### S1: Go'nun neden istisnaları yok? Hataları nasıl ele almalıyım?
+**C:** Go, istisnalar yerine açık hata dönüşlerini kullanır. Başarısız olabilecek her işlev, son dönüş değeri olarak bir`error`döndürür. Bu, arayan kişiyi hataları açıkça ele almaya zorlar; sessiz hatalar veya unutulmuş yakalama blokları olmaz. Deyimsel kalıp `if err != nil`'dir. Sarma hataları için`fmt.Errorf`ile `%w`'yi ve hata türlerini kontrol etmek için`errors.Is`/ `errors.As`'yi kullanın. Kurtarılamaz hatalar (programlama hataları) için`panic`kullanın.
+```go
+func readConfig(path string) (Config, error) {
+    data, err := os.ReadFile(path)
+    if err != nil {
+        return Config{}, fmt.Errorf("reading config %s: %w", path, err)
+    }
+    var cfg Config
+    if err := json.Unmarshal(data, &cfg); err != nil {
+        return Config{}, fmt.Errorf("parsing config %s: %w", path, err)
+    }
+    return cfg, nil
+}
+```
+
+### S2: Goroutinler nedir ve bunların işletim sistemi iş parçacıklarından farkı nedir?
+**C:** Goroutinler, Go çalışma zamanı tarafından yönetilen hafif, kullanıcı alanı iş parçacıklarıdır. ~2KB yığınla başlarlar (işletim sistemi iş parçacıkları için ~1MB'a karşılık), zamanlayıcı tarafından işletim sistemi iş parçacıklarına çoğullanırlar ve bir kerede milyonlarca oluşturulabilirler. Goroutinler arasındaki iletişim kanalları (veya paylaşılan durum için`sync`temel öğelerini) kullanır. Goroutine sızıntılarını önlemek için her zaman`sync.WaitGroup`veya bağlam iptalini kullanın.
+```go
+// Launch thousands of goroutines — perfectly fine
+var wg sync.WaitGroup
+for i := 0; i < 10000; i++ {
+    wg.Add(1)
+    go func(id int) {
+        defer wg.Done()
+        process(id)
+    }(i)
+}
+wg.Wait()
+```
+
+### S3: Eşzamanlılık için kanalları ve muteksleri ne zaman kullanmalıyım?
+**C:** Goroutinlerin veri iletmesi gerektiğinde kanalları kullanın; bunlar "iletişim kurarak hafızayı paylaş" felsefesini uygular. Goroutinlerin paylaşılan durumu (önbellekler, sayaçlar, bağlantı havuzları) koruması gerektiğinde muteksleri (`sync.Mutex`) kullanın. İyi bir kural: Goroutinler arasında veri aktarılıyorsa kanalları kullanın; eğer verilere birden fazla goroutin tarafından erişiliyorsa, bir muteks kullanın. Basit atomik işlemler için`sync/atomic`kullanın.
+```go
+// Channel pattern — pipeline
+func producer(nums chan<- int) {
+    for i := 0; i < 10; i++ { nums <- i }
+    close(nums)
+}
+func consumer(nums <-chan int, results chan<- int) {
+    for n := range nums { results <- n * n }
+    close(results)
+}
+
+// Mutex pattern — shared cache
+type SafeCache struct {
+    mu    sync.RWMutex
+    items map[string]string
+}
+func (c *SafeCache) Get(key string) (string, bool) {
+    c.mu.RLock()
+    defer c.mu.RUnlock()
+    v, ok := c.items[key]
+    return v, ok
+}
+```
+
+### S4:`nil`dilimleri/haritaları ile boş dilimler/haritalar arasındaki fark nedir?
+**A:** Bir`nil`diliminin (`var s []int`) temel dizisi yoktur, uzunluğu 0, kapasitesi 0'dır. Boş bir dilimin (`s := []int{}`veya`make([]int, 0)`) temel dizisi vardır ancak uzunluğu 0'dır. Her ikisi de`append`,`len`,`cap`ile aynı şekilde çalışır ve`range`. JSON sıralaması farklıdır: sıfır dilimler`null`olur, boş dilimler`[]`olur. En iyi uygulama: dönüş değerleri için sıfır dilimleri tercih edin ("veri olmadığını" belirtirler), JSON çıktısı önemli olduğunda boş dilimleri tercih edin.
+```go
+var nilSlice []int          // nil, len=0, cap=0
+emptySlice := []int{}       // not nil, len=0, cap=0
+
+// Both work with append
+nilSlice = append(nilSlice, 1)   // Now len=1
+emptySlice = append(emptySlice, 1) // Now len=1
+
+// JSON difference
+json.Marshal(nilSlice)     // "null"
+json.Marshal(emptySlice)   // "[]"
+```
+
+### S5: Go'da arayüzler nasıl çalışır ve boş arayüz nedir?
+**C:** Go arayüzleri örtülü olarak karşılanır; bir tür,`implements`anahtar sözcüğü olmadan, kendi yöntemlerini uygulayarak bir arayüzü uygular. Bu, ayrıştırmayı ve kompozisyonu mümkün kılar. Boş arayüz`interface{}`(veya Go 1.18+ sürümünde `any`) her tür tarafından karşılanır; onu dikkatli kullanın (jenerikler genellikle daha iyidir). Arayüz değerleri çiftlerdir:`(type, value)`. Sıfır bir arayüzde her ikisi de sıfırdır.
+```go
+// Implicit interface satisfaction
+type Writer interface {
+    Write(p []byte) (n int, err error)
+}
+
+// MyWriter implements Writer without declaring it
+type MyWriter struct { buf *bytes.Buffer }
+func (w *MyWriter) Write(p []byte) (int, error) { return w.buf.Write(p) }
+
+// Type assertion and type switch
+func describe(i interface{}) string {
+    switch v := i.(type) {
+    case int:
+        return fmt.Sprintf("integer: %d", v)
+    case string:
+        return fmt.Sprintf("string: %q", v)
+    default:
+        return fmt.Sprintf("unknown: %T", v)
+    }
+}
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Hız Sınırlamayla Eşzamanlı bir Web Kazıyıcı Oluşturun
+**Sorun Açıklaması:** Eş zamanlı olarak bir listeden URL'ler getiren, sayfa başlıklarını çıkaran, saniyede 10 isteklik hız sınırına uyan ve verileri veri yarışı olmadan toplayan bir Go programı oluşturun.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) goroutinlerle eş zamanlı HTTP alma, (2) sunucuların aşırı yüklenmesini önlemek için hız sınırlama, (3) yarışsız sonuç toplama, (4) başarısız istekler için uygun hata işleme. Go'nun eşzamanlılık temelleri (goroutinler, kanallar, `errgroup`) bunun için idealdir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Belirteç kovası hızı sınırlaması için`golang.org/x/time/rate`kullanın.
+- Goroutinleri yönetmek için`sync.WaitGroup`veya`errgroup.Group`kullanın.
+- Çıktıları güvenli bir şekilde toplamak için bir sonuç kanalı kullanın.
+- İptal ve molalar için`context.Context`kullanın.
+**3. Adım — Çözümü Uygulayın:**
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "io"
+    "net/http"
+    "regexp"
+    "sync"
+    "time"
+
+    "golang.org/x/sync/errgroup"
+    "golang.org/x/time/rate"
+)
+
+type Result struct {
+    URL   string
+    Title string
+    Error error
+}
+
+var titleRegex = regexp.MustCompile(`<title[^>]*>(.*?)</title>`)
+
+func fetchTitle(ctx context.Context, client *http.Client, url string) Result {
+    req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+    resp, err := client.Do(req)
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+    defer resp.Body.Close()
+
+    body, err := io.ReadAll(io.LimitReader(resp.Body, 1<<20)) // 1MB limit
+    if err != nil {
+        return Result{URL: url, Error: err}
+    }
+
+    matches := titleRegex.FindSubmatch(body)
+    if matches == nil {
+        return Result{URL: url, Title: "(no title)"}
+    }
+    return Result{URL: url, Title: string(matches[1])}
+}
+
+func scrapeAll(ctx context.Context, urls []string, rps int) []Result {
+    limiter := rate.NewLimiter(rate.Limit(rps), rps)
+    client := &http.Client{Timeout: 10 * time.Second}
+    results := make([]Result, len(urls))
+
+    g, ctx := errgroup.WithContext(ctx)
+    g.SetLimit(20) // Max 20 concurrent goroutines
+
+    for i, url := range urls {
+        i, url := i, url // Capture loop variables
+        g.Go(func() error {
+            if err := limiter.Wait(ctx); err != nil {
+                return err
+            }
+            results[i] = fetchTitle(ctx, client, url)
+            return nil
+        })
+    }
+
+    if err := g.Wait(); err != nil {
+        fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+    }
+    return results
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Veri yarışı yok: her goroutine `results`'de kendi dizinine yazar — mutekse gerek yoktur.
+-`errgroup.SetLimit`eşzamanlılığı hız sınırlayıcıdan bağımsız olarak sınırlar.
+-`io.LimitReader`aşırı büyük sayfaların okunmasını engeller.
+- `http.NewRequestWithContext`, bağlam tamamlandığında isteklerin iptal edilmesini sağlar.
+- Üretim için: üstel geri çekilme, bağlantı havuzu oluşturma ayarı ve ölçümlerle yeniden deneme mantığı ekleyin.
+### Sorun 2: Genel bir LRU Önbelleği Uygulama
+**Sorun Açıklaması:** Jenerikleri (Go 1.18+) kullanarak Go'da iş parçacığı açısından güvenli, genel bir LRU (En Son Kullanılan) önbellek uygulayın. O(1) zaman karmaşıklığıyla `Get`,`Set`ve `Delete`'yi desteklemelidir.
+**1. Adım — Sorunu Anlayın:**
+Bir LRU önbelleğinin O(1) aramasına (karma haritası) ve O(1) sipariş güncellemelerine (çift bağlantılı liste) ihtiyacı vardır. `Get`'de: öğeyi öne taşı. `Set`'de: ön tarafa takın; kapasitenin üzerindeyse arkadan tahliye edin. İş parçacığı güvenliği bir muteks gerektirir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- O(1) öne doğru hareket etme ve arkadan kaldırma için`container/list`(çift bağlantılı liste) kullanın.
+- O(1) araması için`map[K]*list.Element`kullanın.
+- İplik güvenliği için`sync.Mutex`kullanın.
+- Tip güvenliği için jenerikler (`[K comparable, V any]`).
+**3. Adım — Çözümü Uygulayın:**
+```go
+type entry[K comparable, V any] struct {
+    key   K
+    value V
+}
+
+type LRUCache[K comparable, V any] struct {
+    capacity int
+    items    map[K]*list.Element
+    order    *list.List
+    mu       sync.Mutex
+}
+
+func NewLRU[K comparable, V any](capacity int) *LRUCache[K, V] {
+    return &LRUCache[K, V]{
+        capacity: capacity,
+        items:    make(map[K]*list.Element),
+        order:    list.New(),
+    }
+}
+
+func (c *LRUCache[K, V]) Get(key K) (V, bool) {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.MoveToFront(elem)
+        return elem.Value.(*entry[K, V]).value, true
+    }
+    var zero V
+    return zero, false
+}
+
+func (c *LRUCache[K, V]) Set(key K, value V) {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.MoveToFront(elem)
+        elem.Value.(*entry[K, V]).value = value
+        return
+    }
+
+    if c.order.Len() >= c.capacity {
+        oldest := c.order.Back()
+        if oldest != nil {
+            c.order.Remove(oldest)
+            delete(c.items, oldest.Value.(*entry[K, V]).key)
+        }
+    }
+
+    e := &entry[K, V]{key: key, value: value}
+    elem := c.order.PushFront(e)
+    c.items[key] = elem
+}
+
+func (c *LRUCache[K, V]) Delete(key K) bool {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+
+    if elem, ok := c.items[key]; ok {
+        c.order.Remove(elem)
+        delete(c.items, key)
+        return true
+    }
+    return false
+}
+
+func (c *LRUCache[K, V]) Len() int {
+    c.mu.Lock()
+    defer c.mu.Unlock()
+    return c.order.Len()
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+-`Get`,`Set`,`Delete`için O(1): harita araması O(1) ortalamasıdır; liste işlemlerinin (`MoveToFront`,`PushFront`,`Remove`,`Back`) tümü O(1)'dir.
+- İş parçacığı güvenliği: `sync.Mutex`, önbelleğe aynı anda yalnızca bir goroutine erişmesini sağlar. Okuma ağırlıklı iş yükleri için`sync.RWMutex`kullanın.
+- Jenerikler: `[K comparable, V any]`, anahtarların`==`(harita anahtarları için gerekli) desteğini sağlarken değerler herhangi bir türde olabilir.
+- Üretim: `github.com/hashicorp/golang-lru/v2`'yi düşünün — daha az kilit çekişmesi için TTL desteği ve parçalama ile savaşta test edilmiştir.
+### Sorun 3: TCP Sohbet Sunucusu Oluşturun
+**Sorun Açıklaması:** İstemcilerin bağlanabileceği, diğer tüm bağlı istemcilere mesaj yayınlayabileceği ve bağlantıyı sorunsuz bir şekilde kesebileceği eşzamanlı bir TCP sohbet sunucusu oluşturun. Yavaş istemcileri başkalarını engellemeden yönetin.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) TCP bağlantılarını kabul etmek, (2) istemci başına okumak için bir goroutine, (3) tüm istemcilere mesaj göndermek için bir yayın mekanizması, (4) bağlantı kesintilerini ve yavaş istemcileri ele almak. Bu klasik bir yelpazeleme modelidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- TCP bağlantıları için`net.Listener`kullanın.
+- İstemci kaydı/kayıt silme/yayın için kanallarla merkezi bir`hub`goroutine kullanın.
+- Her istemci, ara belleğe alınmış bir kanala sahip özel bir yazma yordamı alır; yavaş istemciler diğerlerini engellemez.
+- Sorunsuz bir kapatma için`context.Context`kullanın.
+**3. Adım — Çözümü Uygulayın:**
+```go
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "log"
+    "net"
+    "sync"
+)
+
+type Client struct {
+    conn net.Conn
+    name string
+    send chan string
+}
+
+type Hub struct {
+    clients    map[*Client]bool
+    broadcast  chan string
+    register   chan *Client
+    unregister chan *Client
+    mu         sync.RWMutex
+}
+
+func NewHub() *Hub {
+    return &Hub{
+        clients:    make(map[*Client]bool),
+        broadcast:  make(chan string, 256),
+        register:   make(chan *Client),
+        unregister: make(chan *Client),
+    }
+}
+
+func (h *Hub) Run() {
+    for {
+        select {
+        case client := <-h.register:
+            h.mu.Lock()
+            h.clients[client] = true
+            h.mu.Unlock()
+            h.broadcast <- fmt.Sprintf("[system] %s joined", client.name)
+
+        case client := <-h.unregister:
+            h.mu.Lock()
+            if _, ok := h.clients[client]; ok {
+                delete(h.clients, client)
+                close(client.send)
+            }
+            h.mu.Unlock()
+            h.broadcast <- fmt.Sprintf("[system] %s left", client.name)
+
+        case msg := <-h.broadcast:
+            h.mu.RLock()
+            for client := range h.clients {
+                select {
+                case client.send <- msg:
+                default:
+                    // Slow client — disconnect
+                    go func(c *Client) {
+                        h.unregister <- c
+                        c.conn.Close()
+                    }(client)
+                }
+            }
+            h.mu.RUnlock()
+        }
+    }
+}
+
+func handleClient(hub *Hub, conn net.Conn) {
+    defer conn.Close()
+    scanner := bufio.NewScanner(conn)
+
+    // Read first line as name
+    if !scanner.Scan() { return }
+    name := scanner.Text()
+
+    client := &Client{
+        conn: conn,
+        name: name,
+        send: make(chan string, 64),
+    }
+    hub.register <- client
+    defer func() { hub.unregister <- client }()
+
+    // Write goroutine
+    go func() {
+        for msg := range client.send {
+            fmt.Fprintf(conn, "%s\n", msg)
+        }
+    }()
+
+    // Read loop
+    for scanner.Scan() {
+        text := scanner.Text()
+        hub.broadcast <- fmt.Sprintf("[%s] %s", name, text)
+    }
+}
+
+func main() {
+    hub := NewHub()
+    go hub.Run()
+
+    listener, err := net.Listen("tcp", ":8080")
+    if err != nil { log.Fatal(err) }
+    log.Println("Chat server listening on :8080")
+
+    for {
+        conn, err := listener.Accept()
+        if err != nil { log.Println(err); continue }
+        go handleClient(hub, conn)
+    }
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Yavaş istemci kullanımı: Yayında`default`içeren `select`, engellemeyi önler. Yavaş istemcilerin ara bellekleri dolarsa bağlantıları kesilir.
+- Yarış yok: Hub goroutine,`clients`haritasının tek yazarıdır; `mu`yayın sırasında okumaları korur.
+- Sorunsuz kapatma: dinleyiciyi ve drenaj bağlantılarını kapatmak için`context.Context`ve bir sinyal işleyici ekleyin.
+- Üretim: Tarayıcı istemcileri için`golang.org/x/net/websocket`kullanmayı düşünün ve kimlik doğrulama, mesaj geçmişi ve odalar ekleyin.
 ---
 
 ## Özet

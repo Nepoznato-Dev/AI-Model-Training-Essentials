@@ -293,9 +293,10 @@ with torch.no_grad():
 
 ## 📚 Related Errors
 
-- [Device_Cuda_Not_Available.md](Device_Cuda_Not_Available.md) - GPU not detected at all
-- [Slow_Training.md](Slow_Training.md) - Training works but takes forever
-- [Gradient_Explosion.md](Gradient_Explosion.md) - NaN losses during training
+- Device_Cuda_Not_Available - GPU not detected at all
+- Slow_Training - Training works but takes forever
+- Gradient_Explosion - NaN losses during training
+- See the [Common Errors index](README.md) for the full troubleshooting catalogue
 
 ---
 

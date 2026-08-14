@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 汇编语言
 汇编语言是最低级的人类可读的编程语言。它使用助记符代码（如`MOV`、`ADD`、`JMP`）而不是原始二进制文件来直接表示计算机的机器代码指令。每种汇编语言都特定于特定的处理器架构（x86、ARM、MIPS、RISC-V）——为一种架构编写的代码无法在另一种架构上运行。
 汇编语言不用于构建应用程序。当您需要对硬件进行绝对控制时，可以使用它：编写操作系统内核、设备驱动程序、引导加载程序、嵌入式固件、性能关键代码部分、逆向工程以及了解计算机实际如何执行指令。
@@ -45,7 +46,7 @@ contribution:
 
 ## 为什么组装很重要
 - **硬件理解**：准确了解CPU在指令级别正在做什么的唯一方法。
-- **性能调整**：关键代码部分的优化可以超出编译器生成的范围。
+- **性能调整**：关键代码部分可以进行超出编译器生成的优化。
 - **逆向工程**：恶意软件分析、安全研究和了解专有软件。
 - **嵌入式系统**：某些微控制器没有高级语言支持。
 - **操作系统开发**：启动代码、中断处理程序和上下文切换需要汇编。
@@ -112,13 +113,13 @@ _start:
 了解寻址模式对于编写高效的汇编至关重要。每种模式控制操作数的定位方式。
 |模式|语法 (NASM) |描述 |
 |------|----------------|-------------|
-| **立即** |  __受保护_0__ |操作数是一个常数值 |
-| **注册** |  __受保护_1__ |操作数在寄存器中 |
-| **直接** |  __受保护_2__ |操作数位于固定的内存地址|
-| **间接注册** |  __受保护_3__ |操作数位于寄存器中的地址 |
-| **基础+位移** |  __受保护_4__ |地址=寄存器+常量偏移|
-| **比例索引** |  __受保护_5__ |地址 = 基址 + (索引 × 小数位数) |
-| **完整的SIB** |  __受保护_6__ |底数+（索引×比例）+位移|
+| **立即** | `mov eax, 42`|操作数是一个常数值 |
+| **注册** | `mov eax, ebx`|操作数在寄存器中 |
+| **直接** | `mov eax, [0x4000]`|操作数位于固定的内存地址|
+| **间接注册** | `mov eax, [rbx]`|操作数位于寄存器中的地址 |
+| **基础+位移** | `mov eax, [rbx + 8]`|地址=寄存器+常量偏移|
+| **比例索引** | `mov eax, [rbx + rcx*4]`|地址 = 基址 + (索引 × 小数位数) |
+| **完整的SIB** | `mov eax, [rbx + rcx*4 + 16]`|底数+（索引×比例）+位移|
 ```nasm
 ; Demonstrating various addressing modes
 section .data
@@ -427,10 +428,10 @@ ld standalone.o -o standalone
 |概念 |描述 |
 |---------|-------------|
 | **寄存器** | CPU 的内部存储（x86 上的 EAX、EBX、ECX、EDX；ARM 上的 R0-R15）|
-| **内存寻址** |通过地址 (`MOV EAX, [0x1000]`) 访问 RAM |
+| **内存寻址** |通过地址访问 RAM (`MOV EAX, [0x1000]`) |
 | **堆栈** |用于函数调用和局部变量的 LIFO 内存区域（`PUSH`、`POP`） |
-| **说明** |基本运算：算术、逻辑、数据移动、控制流|
-| **中断/系统调用** |向操作系统请求服务|
+| **说明** |基本运算：算术、逻辑、数据移动、控制流 |
+| **中断/系统调用** |向操作系统请求服务 |
 | **调用约定** |函数如何接收参数和返回值（因架构而异）|
 ---
 
@@ -485,7 +486,7 @@ gdb ./program
 |段错误 |程序因 SIGSEGV 崩溃 |检查指针值；验证堆栈对齐 |
 |无限循环|程序挂起 |在循环中设置断点；检查条件标志|
 |错误结果 |计算错误 |逐步进行算术运算；每次操作后检查寄存器值 |
-|堆栈损坏| RET 崩溃 |验证PUSH/POP余额；检查 RSP 对齐（必须是 16 字节对齐） |
+|堆栈损坏 | RET 崩溃 |验证PUSH/POP余额；检查 RSP 对齐（必须是 16 字节对齐） |
 |错误的系统调用 |意外的内核行为 |验证 RAX 中的系统调用号；检查参数寄存器|
 ---
 
@@ -517,13 +518,13 @@ main:
 ```
 
 ### 系统调用参考 (Linux x86-64)
-|系统调用|拉克斯 |精氨酸1 (RDI) | Arg2 (RSI) |精氨酸3 (RDX) | Arg4 (R10) |
+|系统调用|拉克斯|精氨酸1 (RDI) | Arg2 (RSI) |精氨酸3 (RDX) | Arg4 (R10) |
 |--------|-----|------------|------------|------------|------------|
 |阅读 | 0 | FD |缓冲区|计数| — |
 |写 | 1 | FD |缓冲区|计数| — |
-|打开| 2 |路径名 |旗帜|模式| — |
+|打开| 2 |路径名 |旗帜|模式 | — |
 |关闭 | 3 | FD | — | — | — |
-|映射| 9 |地址|长度|普特|旗帜|
+|映射 | 9 |地址|长度|普特|旗帜|
 |退出 | 60|状态 | — | — | — |
 ### C 中的内联汇编 (GCC)
 ```c
@@ -706,7 +707,7 @@ file program
 | **安全** |漏洞利用开发、恶意软件分析、逆向工程 |与已编译的二进制文件交互的唯一方法|
 | **游戏引擎** | SIMD 优化数学（矩阵变换、物理）|每帧计算的最大吞吐量|
 | **编译器** |代码生成后端（LLVM、GCC）|发出优化的机器代码 |
-| **密码学** | AES-NI、SHA指令加速|硬件加速加密操作 |
+| **密码学** | AES-NI、SHA指令加速 |硬件加速加密操作 |
 | **设备驱动程序** | GPU驱动、网卡固件|直接寄存器级硬件访问|
 ### 遗留系统集成
 许多遗留系统包含嵌入 C 代码库中的汇编例程。这些通常是性能关键函数或已维护数十年的特定于硬件的例程。
@@ -724,15 +725,94 @@ void process_data(void) {
 ---
 
 ## 何时使用汇编
-|场景 |为什么要装配|更好的选择|
+|场景|为什么要装配|更好的选择|
 |----------|-------------|--------------------|
 |操作系统内核开发|引导代码、中断处理程序|用于大多数内核代码的 C |
 |设备驱动程序|直接硬件访问| C、铁锈|
 |逆向工程/安全|分析编译的二进制文件的唯一方法| — |
-|性能关键代码 |最大优化 |具有编译器内在函数的 C/C++ |
+|性能关键代码 |最大优化|具有编译器内在函数的 C/C++ |
 |嵌入式固件（裸机）|没有可用的高级语言 | C、铁锈|
 |教育 |了解计算机体系结构 | — |
-|通用应用开发|对于复杂的程序来说不切实际 |任何高级语言 |
+|通用应用开发 |对于复杂的程序来说不切实际 |任何高级语言 |
+---
+
+## 综合问答
+### Q1：RISC 和 CISC 汇编有什么区别？
+**答：** CISC (x86) 具有复杂的、可变长度的指令。 RISC (ARM) 具有简单、固定长度的指令：
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2：堆栈在汇编中如何工作？
+**A:** 堆栈向下增长。 `push`减少 SP 并存储； `pop`加载并递增 SP：
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3：如何在汇编中调用函数？
+**A:** 遵循调用约定（Linux 上为 System V AMD64，Windows 上为 Windows x64）：
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4：需要了解的最重要的组装说明是什么？
+**A:** 数据移动、算术、控制流和堆栈操作构成了核心。
+### Q5：汇编如何用于安全研究？
+**答：** 逆向工程、漏洞利用开发、恶意软件分析和理解编译器输出都需要汇编语言。
+---
+
+## 解决问题的思路
+### 问题 1：在汇编中实现循环
+**第 1 步：了解问题**
+对 1 到 N 之间的整数求和。
+**第 2 步：确定方法**
+使用计数器寄存器和累加器。
+**步骤 3：实施**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**第 4 步：优化**
+使用公式 N*(N+1)/2 表示 O(1)，而不是 O(N)。
 ---
 
 ＃＃ 概括

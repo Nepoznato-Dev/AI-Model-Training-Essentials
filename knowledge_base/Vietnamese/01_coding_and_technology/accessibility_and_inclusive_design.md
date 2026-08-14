@@ -38,8 +38,9 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Khả năng tiếp cận và thiết kế toàn diện
-Khả năng truy cập (thường được viết tắt là a11y) là phương pháp làm cho phần mềm có thể sử dụng được cho mọi người - bao gồm cả những người bị khuyết tật về thị giác, thính giác, vận động, nhận thức và thần kinh. Nó không phải là thứ dễ có; đó là yêu cầu pháp lý ở nhiều khu vực pháp lý, nghĩa vụ đạo đức và kỹ thuật tốt. Phần mềm có thể truy cập là phần mềm tốt hơn cho mọi người vì các quyết định thiết kế giúp người dùng khuyết tật — cấu trúc rõ ràng, điều hướng bàn phím, độ tương phản vừa đủ, văn bản dễ đọc — cải thiện trải nghiệm cho tất cả người dùng.
+Khả năng truy cập (thường được viết tắt là a11y) là phương pháp làm cho phần mềm có thể sử dụng được cho mọi người - bao gồm cả những người bị khuyết tật về thị giác, thính giác, vận động, nhận thức và thần kinh. Đó là một yêu cầu pháp lý ở nhiều khu vực pháp lý và là một thông lệ kỹ thuật tiêu chuẩn. Phần mềm có thể truy cập là phần mềm tốt hơn cho mọi người vì các quyết định thiết kế hỗ trợ người dùng khuyết tật — cấu trúc rõ ràng, điều hướng bàn phím, độ tương phản vừa đủ, văn bản dễ đọc — cải thiện trải nghiệm cho tất cả người dùng.
 ---
 
 ## Ai được hưởng lợi từ khả năng tiếp cận?
@@ -72,14 +73,14 @@ Nguyên tắc truy cập nội dung web (WCAG) là tiêu chuẩn quốc tế v�
 ### Tiêu chí thành công chính (Cấp AA)
 | Tiêu chí | Yêu cầu | Làm thế nào để đạt được |
 |----------|-------------|--------------|
-| **1.1.1 Nội dung phi văn bản** | Tất cả hình ảnh đều có văn bản thay thế | `alt`thuộc tính; `aria-label`cho biểu tượng |
+| **1.1.1 Nội dung phi văn bản** | Tất cả hình ảnh đều có văn bản thay thế |  Thuộc tính `alt`; `aria-label`cho biểu tượng |
 | **1.3.1 Thông tin và mối quan hệ** | Cấu trúc được truyền tải theo chương trình | HTML ngữ nghĩa; tiêu đề; danh sách; cột mốc |
 | **Độ tương phản 1.4.3 (tối thiểu)** | Văn bản có tỷ lệ tương phản ít nhất là 4,5:1 | Kiểm tra bằng máy kiểm tra độ tương phản; chọn bảng màu dễ tiếp cận |
 | **1.4.4 Thay đổi kích thước văn bản** | Văn bản có thể được thay đổi kích thước đến 200% mà không bị mất | Sử dụng đơn vị tương đối (rem, em); thiết kế đáp ứng |
 | **Bàn phím 2.1.1** | Tất cả chức năng có sẵn qua bàn phím | Không có bẫy bàn phím; chỉ báo tiêu điểm có thể nhìn thấy |
 | **2.4.3 Thứ tự lấy nét** | Thứ tự tập trung duy trì ý nghĩa và khả năng hoạt động | Thứ tự tab hợp lý; Thứ tự DOM khớp với thứ tự trực quan |
 | **2.4.7 Có thể nhìn thấy tiêu điểm** | Tiêu điểm bàn phím được chỉ định trực quan | Kiểu CSS `:focus-visible`; không bao giờ`outline: none`mà không thay thế |
-| **3.3.2 Nhãn hoặc hướng dẫn** | Đầu vào có nhãn | `<label>`phần tử;  __BẢO VỆ_5__ |
+| **3.3.2 Nhãn hoặc hướng dẫn** | Đầu vào có nhãn |  Phần tử `<label>`; `aria-label`|
 | **4.1.2 Tên, vai trò, giá trị** | Các thành phần giao diện người dùng có tên và vai trò có thể truy cập | thuộc tính ARIA; HTML ngữ nghĩa |
 ---
 
@@ -88,23 +89,23 @@ ARIA thêm thông tin trợ năng vào các phần tử HTML không có ngữ ng
 ### Vai trò ARIA
 | Vai trò | Mục đích | Ví dụ |
 |------|----------|----------|
-|  __BẢO VỆ_0__ | Xác định một phần tử là một nút |`<div>`được tạo kiểu như một nút |
-|  __BẢO VỆ_2__ | Hộp thoại phương thức hoặc không phương thức | Các thành phần phương thức tùy chỉnh |
+| `button`| Xác định một phần tử là một nút |`<div>`được tạo kiểu như một nút |
+| `dialog`| Hộp thoại phương thức hoặc không phương thức | Các thành phần phương thức tùy chỉnh |
 | `tablist`/`tab`/`tabpanel`| Giao diện tab | Thành phần tab tùy chỉnh |
-|  __BẢO VỆ_6__ | Thông báo quan trọng xuất hiện động | Thông báo lỗi |
-|  __BẢO VỆ_7__ | Chỉ báo tiến độ | Đang tải trạng thái |
-|  __BẢO VỆ_8__ / __BẢO VỆ_9__ | Điều hướng menu | Menu thả xuống |
+| `alert`| Thông báo quan trọng xuất hiện động | Thông báo lỗi |
+| `progressbar`| Chỉ báo tiến độ | Đang tải trạng thái |
+| `menu`/`menuitem`| Điều hướng menu | Menu thả xuống |
 ### Thuộc tính ARIA
 | Thuộc tính | Mục đích | Ví dụ |
 |----------||----------|----------|
-|  __BẢO VỆ_0__ | Tên có thể truy cập khi không có văn bản hiển thị | Nút chỉ có biểu tượng:`aria-label="Search"`|
-|  __BẢO VỆ_2__ | Liên kết phần tử với mô tả của nó | Trường biểu mẫu có văn bản trợ giúp |
-|  __BẢO VỆ_3__ | Cho biết liệu một phần có được mở rộng hay không | Đàn xếp; thả xuống |
-|  __BẢO VỆ_4__ | Ẩn phần tử khỏi công nghệ hỗ trợ | Biểu tượng trang trí |
-|  __BẢO VỆ_5__ | Thông báo thay đổi nội dung động | Cập nhật trực tiếp; thông báo |
-|  __BẢO VỆ_6__ | Cho biết phần tử bị vô hiệu hóa | Nút màu xám |
+| `aria-label`| Tên có thể truy cập khi không có văn bản hiển thị | Nút chỉ có biểu tượng:`aria-label="Search"`|
+| `aria-describedby`| Liên kết phần tử với mô tả của nó | Trường biểu mẫu có văn bản trợ giúp |
+| `aria-expanded`| Cho biết liệu một phần có được mở rộng hay không | Đàn xếp; thả xuống |
+| `aria-hidden`| Ẩn phần tử khỏi công nghệ hỗ trợ | Biểu tượng trang trí |
+| `aria-live`| Thông báo thay đổi nội dung động | Cập nhật trực tiếp; thông báo |
+| `aria-disabled`| Cho biết phần tử bị vô hiệu hóa | Nút màu xám |
 ### Quy tắc đầu tiên của ARIA
-> **Không sử dụng ARIA nếu thay vào đó bạn có thể sử dụng HTML gốc.**`<button>`đã có thể truy cập được.`<div role="button">`yêu cầu bạn thêm tính năng xử lý bàn phím, quản lý tiêu điểm và hỗ trợ trình đọc màn hình theo cách thủ công. Trước tiên hãy sử dụng HTML ngữ nghĩa; ARIA chỉ khi các phần tử gốc không thể thực hiện được công việc.
+> **Không sử dụng ARIA nếu thay vào đó bạn có thể sử dụng HTML gốc.**`<button>`đã có thể truy cập được.`<div role="button">`yêu cầu bạn thêm xử lý bàn phím, quản lý tiêu điểm và hỗ trợ trình đọc màn hình theo cách thủ công. Trước tiên hãy sử dụng HTML ngữ nghĩa; ARIA chỉ khi các phần tử gốc không thể thực hiện được công việc.
 ---
 
 ## Điều hướng bàn phím
@@ -154,7 +155,7 @@ ARIA thêm thông tin trợ năng vào các phần tử HTML không có ngữ ng
 ## Yêu cầu pháp lý
 | Luật | Vùng | Yêu cầu |
 |------|--------|-------------|
-| **ADA** (Đạo luật về Người khuyết tật Hoa Kỳ) | Mỹ | Trang web của các cơ sở lưu trú công cộng phải có thể truy cập được |
+| **ADA** (Đạo luật về Người khuyết tật Hoa Kỳ) | Mỹ | Trang web của cơ sở lưu trú công cộng phải truy cập được |
 | **Mục 508** | Hoa Kỳ (liên bang) | CNTT của các cơ quan liên bang phải có thể truy cập được |
 | **EAA** (Đạo luật tiếp cận châu Âu) | EU (2025+) | Sản phẩm và dịch vụ phải đáp ứng yêu cầu về khả năng tiếp cận |
 | **EN 301 549** | EU | Tiêu chuẩn kỹ thuật về tiếp cận CNTT |
@@ -164,9 +165,9 @@ ARIA thêm thông tin trợ năng vào các phần tử HTML không có ngữ ng
 
 ## Khả năng truy cập di động
 | Nền tảng | Hướng dẫn | Công cụ chính |
-|----------|-------------|----------|
+|----------|--------------|----------|
 | **iOS** | Nguyên tắc giao diện con người của Apple (phần Trợ năng) | VoiceOver; Loại động; Điều khiển chuyển mạch |
-| **Android** | Hướng dẫn về khả năng truy cập của Android | TalkBack; Chuyển đổi quyền truy cập; Chọn để Nói |
+| **Android** | Hướng dẫn về khả năng truy cập của Android | TalkBack; Chuyển đổi quyền truy cập; Chọn để nói |
 | Mối quan tâm về di động | Giải pháp |
 |--------------|----------|
 | **Mục tiêu chạm** | Tối thiểu 44×44 điểm (iOS) / 48×48 dp (Android) |
@@ -176,4 +177,4 @@ ARIA thêm thông tin trợ năng vào các phần tử HTML không có ngữ ng
 ---
 
 ## Bản tóm tắt
-Khả năng truy cập không phải là tính năng bạn thêm vào cuối — đó là nguyên tắc thiết kế sẽ cung cấp thông tin cho mọi quyết định ngay từ đầu. Sử dụng HTML ngữ nghĩa. Đảm bảo điều hướng bàn phím hoạt động. Duy trì đủ độ tương phản màu sắc. Cung cấp các lựa chọn thay thế văn bản cho nội dung phi văn bản. Kiểm tra với trình đọc màn hình và người dùng khuyết tật thực sự. Kết quả là phần mềm hoạt động tốt hơn cho tất cả mọi người — không chỉ những người khuyết tật mà cả những người bị suy giảm tạm thời, hạn chế về tình huống, thiết bị cũ hơn, kết nối chậm và hàng nghìn cách khác mà việc sử dụng trong thế giới thực khác với môi trường lý tưởng của nhà phát triển.
+Khả năng tiếp cận là một nguyên tắc thiết kế sẽ cung cấp thông tin cho mọi quyết định ngay từ đầu chứ không phải một tính năng được thêm vào cuối. Sử dụng HTML ngữ nghĩa. Đảm bảo điều hướng bàn phím hoạt động. Duy trì đủ độ tương phản màu sắc. Cung cấp các lựa chọn thay thế văn bản cho nội dung phi văn bản. Kiểm tra với trình đọc màn hình và người dùng bị khuyết tật. Kết quả là phần mềm hoạt động tốt hơn cho tất cả mọi người — bao gồm cả những người bị suy giảm tạm thời, hạn chế về tình huống, thiết bị cũ hơn, kết nối chậm và nhiều cách sử dụng trong thế giới thực khác với môi trường phát triển được kiểm soát.

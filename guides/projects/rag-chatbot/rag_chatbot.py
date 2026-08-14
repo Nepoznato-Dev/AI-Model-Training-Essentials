@@ -91,11 +91,17 @@ def create_vector_store(chunks):
     )
     
     # Create vector database
+    # Clean up any existing database to avoid duplicate entries on re-run
+    import shutil
+    if os.path.exists('./chroma_db'):
+        shutil.rmtree('./chroma_db')
+    
     vectorstore = Chroma.from_documents(
         documents=chunks,
         embedding=embeddings,
         persist_directory='./chroma_db'  # Save to disk
     )
+    vectorstore.persist()
     
     print("✓ Vector store created!")
     return vectorstore
@@ -108,6 +114,9 @@ def load_llm():
     tokenizer = AutoTokenizer.from_pretrained(CONFIG['llm_model'])
     model = AutoModelForCausalLM.from_pretrained(CONFIG['llm_model'])
     
+    # Move model to the correct device
+    model = model.to(device)
+    
     # Create text generation pipeline
     pipe = pipeline(
         "text-generation",
@@ -117,6 +126,7 @@ def load_llm():
         temperature=0.7,
         top_p=0.95,
         repetition_penalty=1.2,
+        device=0 if device == 'cuda' else -1,  # 0=GPU, -1=CPU
     )
     
     # Wrap in LangChain LLM

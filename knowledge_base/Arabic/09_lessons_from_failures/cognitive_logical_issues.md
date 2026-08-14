@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "التحيزات المعرفية والمغالطات المنطقية"
-الوصف: "أخطاء الاستدلال والتحيزات المعرفية"
-التصنيف: "دروس من الفشل"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-review_by: "دروس من فريق قاعدة معارف الفشل"
+# Metadata
+title: "Cognitive Biases and Logical Fallacies"
+description: "Reasoning errors and cognitive biases"
+category: "Lessons from Failures"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Lessons from Failures Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [قضايا معرفية منطقية دروس من الفشل]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "27 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [cognitive, logical, issues, lessons-from-failures]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "27 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # التحيزات المعرفية والمغالطات المنطقية
 تعمل هذه الوثيقة على دمج التحيزات المعرفية والمغالطات المنطقية والأخطاء المنطقية التي تؤثر على عملية صنع القرار البشري ومخرجات نظام الذكاء الاصطناعي.
 ---
@@ -69,7 +74,7 @@ Team accepts Developer A's review without scrutiny but questions Developer B's f
 - تشجيع الآراء المخالفة
 - توثيق الافتراضات بشكل صريح
 ### تحيز التثبيت
-**ما هو:** الاعتماد بشكل كبير على أول معلومة يتم مواجهتها.
+**ما هو:** الاعتماد بشكل كبير على أول معلومة تمت مواجهتها.
 **مثال سيء:**```markdown
 Project Manager: "This feature should take about 2 days."
 Developer: (Anchored to 2 days, even though realistic estimate is 5 days)
@@ -186,7 +191,7 @@ and never ship features?"
 "Everyone is using Kubernetes, so we should too."
 ```
 
-**لماذا هو سيء:** الشعبية لا تضمن ملاءمتها لاحتياجاتك الخاصة.
+**لماذا هو سيء:** الشعبية لا تضمن ملاءمتها لاحتياجاتك المحددة.
 ---
 
 ## فشل الاستدلال في الذكاء الاصطناعي
@@ -221,7 +226,7 @@ User: Ice cream sales and drowning rates both increase in summer. Does ice cream
 Assistant: Yes, there appears to be a causal relationship.
 ```
 
-**الواقع:** كلاهما ناجم عن عامل ثالث (الطقس الحار)، وليس بسبب بعضهما البعض.
+**الواقع:** كلاهما ناجم عن عامل ثالث (الطقس الحار)، وليس عن بعضهما البعض.
 ---
 
 ## استراتيجيات التحسين
@@ -241,10 +246,10 @@ Assistant: Yes, there appears to be a causal relationship.
 ---
 
 ## موضوعات ذات صلة
-- **حالات فشل الذكاء الاصطناعي/LLM**: راجع`ai_llm_failures.md`للتعرف على مشاكل الهلوسة والاستدلال
+- **فشل AI/LLM**: راجع`ai_llm_failures.md`للتعرف على مشكلات الهلوسة والاستدلال
 - **مصادر متناقضة**: راجع الوثائق المتعلقة بتقييم المعلومات المتضاربة
 - **التفكير النقدي**: تطبيق هذه المفاهيم لتقييم الحجج والأدلة
-- **الهندسة الفورية**: راجع`../02_artificial_intelligence/prompt_engineering.md`للتعرف على أساليب تقليل أخطاء الاستدلال
+- **الهندسة الفورية**: راجع`../02_artificial_intelligence/prompt_engineering.md`للتعرف على تقنيات تقليل أخطاء الاستدلال
 ---
 
 ## التحيزات المعرفية الإضافية في تطوير البرمجيات
@@ -522,7 +527,7 @@ Lessons Learned: [What we'd do differently]
 
 ### قائمة التحقق من التحيز
 قبل اتخاذ القرارات المهمة:
-- [ ] هل طلبنا أدلة ناقضة؟
+- [ ] هل طلبنا الأدلة الناقضة؟
 - [ ] هل نرتكز على المعلومات الأولية؟
 - [ ] هل تؤثر التكلفة الغارقة علينا؟
 - [ ] هل نحن مفرطون في الثقة في تقديراتنا؟

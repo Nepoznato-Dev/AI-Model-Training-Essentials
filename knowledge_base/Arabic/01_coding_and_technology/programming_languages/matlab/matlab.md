@@ -1,39 +1,44 @@
 ---
-# البيانات الوصفية
-العنوان: "ماتلاب"
-الوصف: "مرجع شامل للغة برمجة MATLAB يغطي النظرة العامة والمقايضات وأساسيات بناء الجملة والنظام البيئي ومتى يتم استخدامها."
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "MATLAB"
+description: "Comprehensive reference for the MATLAB programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [ماتلاب، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
-مستوى الصعوبة: "متقدم"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "31 دقيقة"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [matlab, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # ماتلاب
 MATLAB (مختبر المصفوفات) هي لغة برمجة عالية المستوى ومفسرة وبيئة مصممة للحوسبة العددية وعمليات المصفوفة والتطبيقات الهندسية/العلمية. تم تطوير MATLAB بواسطة MathWorks وتم إصداره لأول مرة في عام 1984، وهو الأداة القياسية في العديد من التخصصات الهندسية - الهندسة الكهربائية وأنظمة التحكم ومعالجة الإشارات ومعالجة الصور والاتصالات.
 يجمع MATLAB بين لغة قوية موجهة نحو المصفوفة وصناديق أدوات واسعة النطاق (حزم إضافية) وبيئة المحاكاة المرئية Simulink. يتم استخدامه على نطاق واسع في الأوساط الأكاديمية والصناعة لنماذج الخوارزميات قبل تنفيذها في كود الإنتاج.
@@ -44,7 +49,7 @@ MATLAB (مختبر المصفوفات) هي لغة برمجة عالية الم�
 - **نظام Toolbox البيئي**: المئات من صناديق الأدوات المتخصصة لمعالجة الإشارات وأنظمة التحكم والتعلم الآلي والاتصالات والمزيد.
 - **Simulink**: بيئة الرسوم البيانية المرئية لنمذجة ومحاكاة الأنظمة الديناميكية.
 - **معيار الصناعة**: المهارة المطلوبة في العديد من الأدوار الهندسية، مثل الطيران والسيارات والاتصالات والدفاع.
-- **النماذج الأولية السريعة**: سريعة في تطوير الخوارزميات واختبارها قبل النشر إلى C/C++ أو الأنظمة المدمجة.
+- **النماذج الأولية السريعة**: سريعة في تطوير واختبار الخوارزميات قبل النشر إلى C/C++ أو الأنظمة المدمجة.
 - **التعليم**: أداة التدريس القياسية للطرق العددية والجبر الخطي والدورات الهندسية.
 ##المقايضات
 | الحد | التفاصيل | الحل النموذجي |
@@ -649,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 | أنظمة الإنتاج | غير مصمم للنشر | C++، بايثون، اذهب |
 | تطوير الويب | غير مناسب | جافا سكريبت، بايثون |
 | علم البيانات (عام) | ممكن ولكن بايثون أكثر تنوعا | بايثون، ر |
+---
+
+## أسئلة وأجوبة اصطناعية
+### س1: كيف يمكنني توجيه العمليات بدلاً من استخدام الحلقات؟
+**أ:** تم تحسين MATLAB لعمليات المصفوفة. استبدل الحلقات بكود متجه:
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### س2: ما الفرق بين المصفوفات والمصفوفات؟
+**أ:** في MATLAB، كل شيء عبارة عن مصفوفة. المصفوفات هي مصفوفات ثنائية الأبعاد:
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### س3: كيف أقوم بإنشاء مخططات فعالة في MATLAB؟
+**أ:** استخدم وظائف التخطيط مع وضع العلامات المناسبة:
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### Q4: كيف يمكنني تصحيح كود MATLAB بشكل فعال؟
+**ج:** استخدم مصحح الأخطاء وأدوات التشخيص المضمنة:
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### س5: كيف يمكنني قراءة وكتابة ملفات البيانات؟
+**أ:** يدعم MATLAB العديد من تنسيقات الملفات:
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## حل المشكلات المتعلقة بسلسلة الأفكار
+### المشكلة الأولى: حل نظام من المعادلات الخطية
+**الخطوة الأولى: فهم المشكلة**
+حل Ax = b حيث A عبارة عن مصفوفة وb متجه.
+**الخطوة 2: تحديد النهج**
+استخدم عامل الخط المائل العكسي الخاص بـ MATLAB`\`والذي يقوم تلقائيًا بتحديد أفضل خوارزمية.
+**الخطوة 3: التنفيذ**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**الخطوة 4: تمديد**
+بالنسبة للأنظمة المفرطة في التحديد،`\`يعطي حل المربعات الصغرى. بالنسبة للأنظمة المتفرقة، استخدم مصفوفات `sparse`.
+### المشكلة الثانية: معالجة الإشارات — تحليل التحويل السريع (FFT).
+**الخطوة الأولى: فهم المشكلة**
+تحليل محتوى التردد للإشارة الصاخبة.
+**الخطوة 2: تحديد النهج**
+إنشاء إشارة اختبار، وتطبيق تحويل فورييه السريع، ورسم طيف التردد.
+**الخطوة 3: التنفيذ**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**الخطوة 4: التحقق**
+يجب أن تظهر القمم عند 50 هرتز و120 هرتز. يجب أن تكون أرضية الضوضاء منخفضة.
+### المشكلة 3: ملاءمة المنحنى مع النماذج المخصصة
+**الخطوة الأولى: فهم المشكلة**
+تناسب البيانات التجريبية مع نموذج غير خطي مخصص.
+**الخطوة 2: تحديد النهج**
+استخدم`fit`مع`fittype`أو`lsqcurvefit`المخصص.
+**الخطوة 3: التنفيذ**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**الخطوة 4: التحقق**
+تحقق من بقايا الأنماط، وتحقق من R²، واختبرها باستخدام نقاط بداية مختلفة.
 ---
 
 ## ملخص

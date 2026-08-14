@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Kotlin"
-description : "Référence complète sur le langage de programmation Kotlin couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Kotlin"
+description: "Comprehensive reference for the Kotlin programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-tags : [kotlin, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "intermédiaire"
-prérequis : []
-estimate_reading_time : "48 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [kotlin, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "48 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Kotlin
 Kotlin est un langage de programmation compilé et typé statiquement développé par JetBrains et publié pour la première fois en 2011 (1.0 en 2016). Il fonctionne sur la machine virtuelle Java (JVM) et est entièrement interopérable avec Java, ce qui signifie que vous pouvez utiliser n'importe quelle bibliothèque Java de Kotlin et appeler le code Kotlin depuis Java sans aucun wrapper. En 2017, Google a annoncé Kotlin comme langage préféré pour le développement Android, et il est depuis devenu le langage Android dominant.
 Kotlin a été conçu pour résoudre les problèmes de Java : verbosité, exceptions de pointeur nul et fonctionnalités modernes manquantes. Le résultat est un langage qui ressemble à un Java modernisé – concis, sûr et expressif – tout en conservant une compatibilité totale avec l’énorme écosystème Java.
@@ -1150,7 +1155,7 @@ kotlin {
 | **Botte de printemps** | Prise en charge complète de Kotlin pour les backends d'entreprise |
 | **Kotlin multiplateforme** | Partager du code entre Android, iOS, Web, ordinateur de bureau |
 | **Exposé** | Bibliothèque Kotlin SQL (requêtes de type sécurisé) |
-| **Coin** | Cadre d'injection de dépendances |
+| **Coins** | Cadre d'injection de dépendances |
 ### Outils de création
 | Outil | Objectif |
 |------|--------------|
@@ -1171,5 +1176,408 @@ kotlin {
 | Science des données / ML | Pas l'écosystème | Python, R |
 ---
 
+## Questions et réponses synthétiques
+### Q1 : Comment fonctionnent réellement les fonctionnalités de sécurité nulle de Kotlin ?
+**R :** Kotlin fait la distinction entre les types nullables (`String?`) et non nullables (`String`) au moment de la compilation. Le compilateur vous empêche d'appeler des méthodes sur des types nullables sans vérifications nulles. Les appels sécurisés (`?.`), l'opérateur Elvis (`?:`) et l'assertion non nulle (`!!`) proposent différentes stratégies. Les conversions intelligentes réduisent automatiquement les types après des vérifications nulles.
+```kotlin
+var name: String? = null
+
+// Safe call — returns null if name is null
+val length: Int? = name?.length
+
+// Elvis operator — provide default
+val display: String = name ?: "Anonymous"
+
+// Smart cast — compiler narrows type after check
+fun process(user: String?) {
+    if (user != null) {
+        println(user.length)  // Smart cast to String (non-null)
+    }
+}
+
+// let with safe call
+name?.let {
+    println("Name is $it")  // Only runs if name is not null
+}
+
+// Non-null assertion — crashes if null (avoid in production)
+val forced: String = name!!  // Throws NullPointerException if null
+```
+
+### Q2 : Que sont les coroutines et en quoi diffèrent-elles des threads ?
+**R :** Les coroutines sont des tâches légères et coopératives qui s'exécutent sur des threads. Ils peuvent suspendre l'exécution (sans bloquer le thread) et reprendre plus tard. Des millions de coroutines peuvent s'exécuter sur quelques threads.  Les fonctions`suspend`ne peuvent être appelées qu'à partir de coroutines ou d'autres fonctions de suspension. Les étendues de coroutine contrôlent le cycle de vie : lorsqu'une étendue est annulée, toutes ses coroutines sont annulées.
+```kotlin
+import kotlinx.coroutines.*
+
+// Basic coroutine
+CoroutineScope(Dispatchers.Main).launch {
+    val user = withContext(Dispatchers.IO) {
+        fetchUserFromNetwork()  // Suspends, doesn't block
+    }
+    textView.text = user.name   // Back on Main thread
+}
+
+// Concurrent execution
+suspend fun loadDashboard(): Dashboard {
+    coroutineScope {
+        val userDeferred = async { fetchUser() }
+        val postsDeferred = async { fetchPosts() }
+        val user = userDeferred.await()
+        val posts = postsDeferred.await()
+        Dashboard(user, posts)
+    }
+}
+
+// Flow — cold async stream
+fun observePrices(): Flow<Double> = flow {
+    while (true) {
+        emit(fetchCurrentPrice())
+        delay(1000)
+    }
+}
+
+// Collect flow
+lifecycleScope.launch {
+    observePrices()
+        .filter { it > 100.0 }
+        .collect { price -> updateUI(price) }
+}
+```
+
+### Q3 : Que sont les classes de données, les classes scellées et les classes de valeurs ?
+**R :** Les classes de données génèrent automatiquement les fonctions`equals`,`hashCode`,`toString`,`copy`et`componentN`— idéales pour les détenteurs de données. Les classes scellées restreignent l'héritage — toutes les sous-classes doivent être dans le même fichier — permettant des expressions`when`exhaustives. Les classes de valeurs encapsulent une valeur unique sans surcharge au moment de l'exécution (classe en ligne).
+```kotlin
+// Data class — auto-generates equals/hashCode/toString/copy
+data class User(val name: String, val email: String, val age: Int)
+
+val alice = User("Alice", "alice@example.com", 30)
+val bob = alice.copy(name = "Bob")
+val (name, email, age) = alice  // Destructuring
+
+// Sealed class — exhaustive when
+sealed class Result<out T> {
+    data class Success<T>(val data: T) : Result<T>()
+    data class Error(val exception: Throwable) : Result<Nothing>()
+    data object Loading : Result<Nothing>()
+}
+
+fun handle(result: Result<User>) = when (result) {
+    is Result.Success -> showUser(result.data)
+    is Result.Error -> showError(result.exception)
+    is Result.Loading -> showSpinner()
+    // No 'else' needed — compiler knows all cases are covered
+}
+
+// Value class — zero-overhead wrapper
+@JvmInline
+value class UserId(val value: String)
+fun getUser(id: UserId) { /* ... */ }
+// At runtime, UserId is just a String — no object allocation
+```
+
+### Q4 : Comment fonctionnent les fonctions d'extension et quelles sont leurs limites ?
+**A :** Les fonctions d'extension ajoutent des méthodes aux types existants sans héritage ni modification. Ils sont résolus de manière statique (en fonction du type déclaré et non du type d'exécution). Ils ne peuvent pas accéder aux membres privés. Les propriétés d'extension fonctionnent de la même manière. Ils sont largement utilisés dans la bibliothèque standard de Kotlin et dans le développement Android.
+```kotlin
+// Extension function
+fun String.isEmail(): Boolean = contains("@") && contains(".")
+fun Int.toOrdinal(): String = "${this}${when (this % 10) {
+    1 -> "st"; 2 -> "nd"; 3 -> "rd"; else -> "th"
+}}"
+
+// Extension with receiver
+fun <T> List<T>.secondOrNull(): T? = if (size >= 2) this[1] else null
+
+// Extension property
+val String.wordCount: Int get() = split("\\s+".toRegex()).size
+
+// Scoped extensions
+class Database {
+    fun query(sql: String): List<Row> = TODO()
+}
+
+fun Database.users() = query("SELECT * FROM users")
+
+// Usage
+"test@example.com".isEmail()  // true
+42.toOrdinal()                // "42nd"
+"hello world foo".wordCount   // 3
+```
+
+### Q5 : Qu'est-ce que Kotlin Multiplatform et quand dois-je l'utiliser ?
+**R :** Kotlin Multiplatform (KMP) vous permet de partager du code entre plates-formes (Android, iOS, Web, ordinateur de bureau, serveur) tout en conservant l'interface utilisateur spécifique à la plate-forme. La logique métier, la mise en réseau et les couches de données peuvent être partagées ; L’interface utilisateur reste native. Utilisez-le lorsque vous avez une équipe qui connaît Kotlin et souhaite maximiser le partage de code sans passer par une multiplateforme complète (comme Flutter).
+```kotlin
+// commonMain — shared code
+expect class Platform() {
+    val name: String
+}
+
+// androidMain
+actual class Platform {
+    actual val name = "Android ${Build.VERSION.SDK_INT}"
+}
+
+// iosMain
+actual class Platform {
+    actual val name = UIDevice.currentDevice.systemName()
+}
+
+// Shared networking
+interface ApiClient {
+    suspend fun getUsers(): List<User>
+}
+
+class ApiClientImpl(private val httpClient: HttpClient) : ApiClient {
+    override suspend fun getUsers(): List<User> {
+        return httpClient.get("/api/users").body()
+    }
+}
+```
+
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Créer un DSL Type-Safe Builder
+**Énoncé du problème :** Créez un DSL Kotlin pour créer des documents HTML avec sécurité au moment de la compilation. Le DSL doit appliquer une structure HTML valide (par exemple,`<head>`uniquement dans`<html>`,`<li>`uniquement dans`<ul>`ou`<ol>`).
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) des fonctions de construction avec`@DslMarker`pour éviter les fuites de portée, (2) une syntaxe DSL basée sur le récepteur, (3) l'application au moment de la compilation d'une imbrication valide. Les constructeurs de type sécurisé de Kotlin et l'annotation`@DslMarker`sont conçus pour cela.
+**Étape 2 — Identifiez l'approche :**
+- Utilisez`@DslMarker`pour créer une annotation de contrôle de portée.
+- Chaque élément HTML est une classe avec des méthodes de construction pour ses enfants valides.
+-`@HtmlTagMarker`empêche l'accès aux méthodes de la portée parent à l'intérieur de la portée enfant.
+- Utilisez l'opérateur`invoke`pour une syntaxe propre.
+**Étape 3 — Mettre en œuvre la solution :**
+```kotlin
+@DslMarker
+annotation class HtmlTagMarker
+
+@HtmlTagMarker
+class HTML {
+    private val children = mutableListOf<String>()
+
+    fun head(init: HEAD.() -> Unit) {
+        val head = HEAD().apply(init)
+        children.add(head.render())
+    }
+
+    fun body(init: BODY.() -> Unit) {
+        val body = BODY().apply(init)
+        children.add(body.render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<html>")
+        children.forEach { appendLine("  $it") }
+        appendLine("</html>")
+    }
+}
+
+@HtmlTagMarker
+class HEAD {
+    private val children = mutableListOf<String>()
+
+    fun title(text: String) { children.add("<title>$text</title>") }
+    fun meta(name: String, content: String) {
+        children.add("<meta name=\"$name\" content=\"$content\">")
+    }
+
+    fun render(): String = buildString {
+        appendLine("<head>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</head>")
+    }
+}
+
+@HtmlTagMarker
+class BODY {
+    private val children = mutableListOf<String>()
+
+    fun h1(text: String) { children.add("<h1>$text</h1>") }
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun div(init: DIV.() -> Unit) {
+        children.add(DIV().apply(init).render())
+    }
+    fun ul(init: UL.() -> Unit) {
+        children.add(UL().apply(init).render())
+    }
+
+    fun render(): String = buildString {
+        appendLine("<body>")
+        children.forEach { appendLine("    $it") }
+        appendLine("</body>")
+    }
+}
+
+@HtmlTagMarker
+class DIV {
+    private val children = mutableListOf<String>()
+    var cssClass: String = ""
+    fun p(text: String) { children.add("<p>$text</p>") }
+    fun render(): String {
+        val cls = if (cssClass.isNotEmpty()) " class=\"$cssClass\"" else ""
+        return "<div$cls>${children.joinToString("")}</div>"
+    }
+}
+
+@HtmlTagMarker
+class UL {
+    private val items = mutableListOf<String>()
+    fun li(text: String) { items.add("<li>$text</li>") }
+    fun render(): String = "<ul>${items.joinToString("")}</ul>"
+}
+
+fun html(init: HTML.() -> Unit): String = HTML().apply(init).render()
+
+// Usage — compile-time safe
+val page = html {
+    head {
+        title("My Page")
+        meta("viewport", "width=device-width")
+    }
+    body {
+        h1("Welcome")
+        p("This is a type-safe HTML builder.")
+        div {
+            cssClass = "container"
+            p("Inside a div")
+        }
+        ul {
+            li("Item 1")
+            li("Item 2")
+            li("Item 3")
+        }
+    }
+}
+// title() is NOT accessible inside body {} — prevented by @DslMarker
+// li() is NOT accessible inside body {} — only inside ul {}
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Sécurité de type :`@DslMarker`empêche les fuites de l'oscilloscope —`title()`n'est pas accessible à l'intérieur de `body {}`.
+- Le compilateur applique une imbrication valide au moment de la compilation — aucune vérification à l'exécution n'est nécessaire.
+- Extensibilité : ajoutez de nouveaux éléments en créant des classes avec des méthodes enfants appropriées.
+- Production : utilisez`kotlinx.html`pour un DSL HTML complet et bien testé.
+### Problème 2 : implémenter une machine à états avec des coroutines
+**Énoncé du problème :** Créez une machine à états basée sur une coroutine pour un personnage de jeu qui traite les événements d'entrée, les transitions entre les états et prend en charge les rappels d'animation.
+**Étape 1 — Comprendre le problème :**
+Nous avons besoin de : (1) des états avec des actions d'entrée/sortie, (2) des transitions basées sur des événements, (3) une boucle de traitement basée sur une coroutine, (4) des rappels d'animation sur les transitions d'état. La machine à états fonctionne comme une coroutine de longue durée consommant les événements d'un canal.
+**Étape 2 — Identifiez l'approche :**
+- Utilisez une classe scellée pour les états et les événements.
+- Utilisez`Channel`pour le passage d'événements.
+- La boucle de machine d'état consomme des événements avec `for (event in channel)`.
+- Les transitions déclenchent des rappels de sortie/entrée.
+**Étape 3 — Mettre en œuvre la solution :**
+```kotlin
+sealed class GameState {
+    data object Idle : GameState()
+    data object Walking : GameState()
+    data object Running : GameState()
+    data object Attacking : GameState()
+    data class Dead(val cause: String) : GameState()
+}
+
+sealed class GameEvent {
+    data object Move : GameEvent()
+    data object Run : GameEvent()
+    data object Attack : GameEvent()
+    data object Stop : GameEvent()
+    data class TakeDamage(val amount: Int) : GameEvent()
+}
+
+class CharacterStateMachine(
+    private val scope: CoroutineScope,
+    private val onStateChange: suspend (GameState) -> Unit
+) {
+    private var currentState: GameState = GameState.Idle
+    private val eventChannel = Channel<GameEvent>(Channel.UNLIMITED)
+    var health: Int = 100; private set
+
+    init {
+        scope.launch {
+            onStateChange(currentState)
+            for (event in eventChannel) {
+                processEvent(event)
+            }
+        }
+    }
+
+    suspend fun send(event: GameEvent) {
+        eventChannel.send(event)
+    }
+
+    private suspend fun processEvent(event: GameEvent) {
+        val newState = when (currentState) {
+            is GameState.Dead -> return  // No transitions from dead
+
+            GameState.Idle -> when (event) {
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Walking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Run -> GameState.Running
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Running -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                GameEvent.Attack -> GameState.Attacking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+
+            GameState.Attacking -> when (event) {
+                GameEvent.Stop -> GameState.Idle
+                GameEvent.Move -> GameState.Walking
+                is GameEvent.TakeDamage -> handleDamage(event)
+                else -> currentState
+            }
+        }
+
+        if (newState != currentState) {
+            currentState = newState
+            onStateChange(newState)
+        }
+    }
+
+    private suspend fun handleDamage(event: GameEvent.TakeDamage): GameState {
+        health -= event.amount
+        return if (health <= 0) GameState.Dead("Defeated") else currentState
+    }
+}
+
+// Usage
+val machine = CharacterStateMachine(
+    scope = CoroutineScope(Dispatchers.Default)
+) { state ->
+    println("State changed to: $state")
+    when (state) {
+        GameState.Idle -> playAnimation("idle")
+        GameState.Walking -> playAnimation("walk")
+        GameState.Running -> playAnimation("run")
+        GameState.Attacking -> playAnimation("attack")
+        is GameState.Dead -> playAnimation("death")
+    }
+}
+
+machine.send(GameEvent.Move)      // Walking
+machine.send(GameEvent.Run)       // Running
+machine.send(GameEvent.Attack)    // Attacking
+machine.send(GameEvent.TakeDamage(120))  // Dead
+```
+
+**Étape 4 – Vérifier et optimiser :**
+- Sécurité de type : les classes scellées garantissent que tous les états et événements sont gérés. Le compilateur détecte les transitions manquantes.
+- Basé sur Coroutine : les événements sont traités séquentiellement sans blocage. Le canal fournit une contre-pression.
+- Cycle de vie : l'annulation de la portée arrête proprement la machine à états.
+- Production : pour les machines à états complexes, utilisez`tinder-statemachine`ou modélisez les états avec une bibliothèque formelle de machines à états.
+---
+
 ## Résumé
-Kotlin est un Java moderne bien fait. Il s'exécute sur la JVM, utilise toutes les bibliothèques Java, mais élimine les exceptions de pointeur nul, réduit le passe-partout et ajoute des fonctionnalités modernes telles que des coroutines, des fonctions d'extension et des classes scellées. Pour le développement Android, Kotlin est le choix évident. Pour les backends JVM, il s’agit d’une alternative intéressante à Java. Kotlin Multiplatform étend sa portée à iOS et au-delà. Si vous connaissez déjà Java, apprendre Kotlin est une prochaine étape naturelle et enrichissante.
+Kotlin est un Java moderne bien fait. Il fonctionne sur la JVM, utilise toutes les bibliothèques Java, mais élimine les exceptions de pointeur nul, réduit le passe-partout et ajoute des fonctionnalités modernes telles que des coroutines, des fonctions d'extension et des classes scellées. Pour le développement Android, Kotlin est le choix évident. Pour les backends JVM, il s’agit d’une alternative intéressante à Java. Kotlin Multiplatform étend sa portée à iOS et au-delà. Si vous connaissez déjà Java, apprendre Kotlin est une prochaine étape naturelle et enrichissante.

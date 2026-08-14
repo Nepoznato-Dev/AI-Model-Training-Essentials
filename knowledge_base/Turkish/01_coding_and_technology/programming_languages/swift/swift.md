@@ -38,9 +38,10 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Süratli
 Swift, Apple (Chris Lattner liderliğinde) tarafından geliştirilen ve ilk olarak 2014'te piyasaya sürülen modern, derlenmiş bir programlama dilidir. Apple platformu geliştirme (iOS, macOS, watchOS, tvOS, VisionOS) için birincil dil olarak Objective-C'nin yerini almak üzere tasarlanmıştır. Swift, derlenmiş dillerin performansını betik dillerinin ifade gücüyle birleştirir ve özellikle boş değerler, bellek yönetimi ve tür hataları konusunda güvenliği vurgular.
-Apple platformlarının ötesinde Swift, sunucu tarafı geliştirme (Vapor, Hummingbird), çapraz platform uygulamaları ve hatta makine öğrenimi (Apple'ın Create ML'si) için giderek daha fazla kullanılıyor. Swift'in Sunucuda kullanıma sunulması ve platformlar arası desteğiyle Swift, bir "Apple dili" olmaktan çok daha fazlası haline geliyor.
+Apple platformlarının ötesinde Swift, sunucu tarafı geliştirme (Vapor, Hummingbird), platformlar arası uygulamalar ve hatta makine öğrenimi (Apple'ın Create ML'si) için giderek daha fazla kullanılıyor. Swift'in Sunucuda kullanıma sunulması ve platformlar arası desteğiyle Swift, bir "Apple dili" olmaktan çok daha fazlası haline geliyor.
 ---
 
 ## Swift Neden Önemlidir
@@ -629,6 +630,363 @@ swift build -c release
 | Platformlar arası mobil | Mümkün ama birincil değil | Flutter, Yerel Tepki |
 | Sistem programlama | Mümkün (Linux) | Pas, C, C++ |
 | Genel uygulama geliştirme (Apple dışı) | Sınırlı ekosistem | Python, Git, Java |
+---
+
+## Sentetik Soru-Cevap
+### S1: Seçenekler nelerdir ve Swift neden beni bunları açmaya zorluyor?
+**A:** İsteğe bağlı (`Type?`), bulunmayabilecek bir değeri temsil eder;`.some(value)`veya `.none`'dir (nil). Swift, çalışma zamanında boş işaretçi çökmelerini önlemek için açık paket açma işlemini zorlar. `if let`, `guard let`, zorla açma (`!`), isteğe bağlı zincirleme (`?.`) veya sıfır birleştirme (`??`) ile paketi açabilirsiniz. Derleyici sıfır durumu halletmenizi sağlar; bu, tüm bir hata sınıfını ortadan kaldırır.
+```swift
+// Optional declaration
+var name: String? = nil
+name = "Alice"
+
+// Safe unwrapping with if let
+if let unwrapped = name {
+    print("Name: \(unwrapped)")
+} else {
+    print("Name is nil")
+}
+
+// Guard let — early exit
+func greet(user: String?) {
+    guard let name = user else {
+        print("No user provided")
+        return
+    }
+    print("Hello, \(name)!")
+}
+
+// Nil coalescing
+let displayName = name ?? "Anonymous"
+
+// Optional chaining
+class Address { var city: String? }
+class User { var address: Address? }
+let user = User()
+let city = user.address?.city  // String? — nil at any point
+let cityOrUnknown = user.address?.city ?? "Unknown"
+```
+
+### S2: Swift'deki yapılar ve sınıflar arasındaki fark nedir?
+**C:** Yapılar değer türleridir (atama sırasında kopyalanır), sınıflar ise referans türleridir (paylaşılır). Yapılar, üye bazında ücretsiz bir başlatıcıya sahiptir ve miras, başlatıcıları kaldırıcılar ve referans sayımı dışında sınıfların tüm özelliklerini destekler. Swift'in standart kütüphane türlerinin (`String`,`Array`,`Dictionary`) tümü yapılardır. Yapıları varsayılan olarak tercih edin; Paylaşılan değişken duruma veya mirasa ihtiyaç duyduğunuzda sınıfları kullanın.
+```swift
+// Struct — value type, copied on assignment
+struct Point {
+    var x: Double
+    var y: Double
+
+    mutating func move(by dx: Double, _ dy: Double) {
+        x += dx
+        y += dy
+    }
+}
+
+var p1 = Point(x: 1, y: 2)
+var p2 = p1          // Copy
+p2.x = 10
+print(p1.x)          // 1 — unchanged
+
+// Class — reference type, shared
+class ViewController {
+    var title: String = ""
+}
+let vc1 = ViewController()
+let vc2 = vc1        // Same reference
+vc2.title = "Home"
+print(vc1.title)     // "Home" — same object
+```
+
+### S3: Protokoller ve protokol odaklı programlama nasıl çalışır?
+**C:** Protokoller yöntemlerin, özelliklerin ve gereksinimlerin bir planını tanımlar. Herhangi bir tür, gereksinimlerini uygulayarak bir protokole uyabilir. Protokol uzantıları varsayılan uygulamaları sağlar. Protokollerle kısıtlanan jenerikler size sınıf mirasının ek yükü olmadan polimorfizm sağlar - bu "protokol odaklı programlamadır."
+```swift
+// Protocol definition
+protocol Drawable {
+    func draw(on context: GraphicsContext)
+    var bounds: CGRect { get }
+}
+
+// Default implementation via extension
+extension Drawable {
+    func describe() -> String {
+        return "Drawable at \(bounds)"
+    }
+}
+
+// Conforming types
+struct Circle: Drawable {
+    let center: CGPoint
+    let radius: CGFloat
+
+    func draw(on context: GraphicsContext) { /* ... */ }
+    var bounds: CGRect { /* computed from center + radius */ CGRect() }
+}
+
+// Protocol as generic constraint
+func renderAll<T: Drawable>(_ items: [T], on context: GraphicsContext) {
+    for item in items {
+        item.draw(on: context)
+    }
+}
+
+// Protocol composition
+func process(_ item: Drawable & Codable & Sendable) { /* ... */ }
+```
+
+### S4: Swift'de`async/await`nedir ve bunun oyuncularla ilişkisi nedir?
+**C:** Swift'in eşzamanlılık modeli (5.5+), eşzamansız kod için `async/await`'yi ve güvenli paylaşılan değişken durum için `actors`'yi kullanır. `async`işlevleri askıya alınabilir ve devam ettirilebilir. `await`askı noktalarını işaretler. Aktörler, değişken durumlarına erişimi serileştirerek veri yarışlarını önler; derleyici bunu derleme zamanında uygular.
+```swift
+// Async function
+func fetchUser(id: String) async throws -> User {
+    let (data, _) = try await URLSession.shared.data(
+        from: URL(string: "https://api.example.com/users/\(id)")!
+    )
+    return try JSONDecoder().decode(User.self, from: data)
+}
+
+// Actor — safe shared mutable state
+actor BankAccount {
+    private var balance: Double = 0
+
+    func deposit(_ amount: Double) {
+        balance += amount  // Only accessible within actor
+    }
+
+    func getBalance() -> Double { balance }
+}
+
+// Usage
+let account = BankAccount()
+await account.deposit(100)
+let balance = await account.getBalance()
+
+// Concurrent execution with async let
+async let user = fetchUser(id: "1")
+async let posts = fetchPosts(userId: "1")
+let dashboard = try await Dashboard(user: user, posts: posts)
+```
+
+### S5: Özellik sarmalayıcılar ve sonuç oluşturucular nasıl çalışır?
+**C:** Özellik sarmalayıcılar (`@propertyWrapper`), özellik depolamaya mantık ekler (SwiftUI'deki`@State`gibi). Sonuç oluşturucular (`@resultBuilder`), doğal söz dizimini (SwiftUI'nin görünüm hiyerarşisi gibi) kullanarak veri yapıları oluşturmanıza olanak tanır. Her ikisi de ortak metni azaltan metaprogramlama biçimleridir.
+```swift
+// Property wrapper
+@propertyWrapper
+struct Clamped<T: Comparable> {
+    var wrappedValue: T {
+        didSet { wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound) }
+    }
+    let range: ClosedRange<T>
+
+    init(wrappedValue: T, _ range: ClosedRange<T>) {
+        self.range = range
+        self.wrappedValue = min(max(wrappedValue, range.lowerBound), range.upperBound)
+    }
+}
+
+struct Player {
+    @Clamped(0...100) var health: Int = 100
+    @Clamped(0...999) var score: Int = 0
+}
+
+var player = Player()
+player.health = 150  // Clamped to 100
+player.health = -10  // Clamped to 0
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Sorun 1: Tip Güvenli Yönlendirici Oluşturun
+**Sorun Açıklaması:** Her rotanın ilişkili parametrelere sahip olduğu ve derleyicinin belirli bir rota için mevcut olmayan parametrelere erişimi engellediği bir iOS uygulaması için tür açısından güvenli bir URL yönlendirici oluşturun.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) yazılan parametrelerle rota tanımları, (2) rota + parametreleri çıkarmak için URL ayrıştırma, (3) tür açısından güvenli parametre erişimi — derleyici yalnızca her rota için mevcut olan parametreleri okumanızı sağlar. Bu, ilişkili değerlere sahip numaralandırmalar gerektirir.
+**2. Adım — Yaklaşımı Belirleyin:**
+- Rotaları tanımlamak için ilişkili değerlere sahip bir numaralandırma kullanın.
+- Her durum, girilen değerler olarak kendine özgü parametreleri taşır.
+- Bir ayrıştırıcı, URL dizelerini numaralandırma durumlarını yönlendirmek için dönüştürür.
+- Desen eşleştirme, derleme zamanı güvenliğiyle parametreleri çıkarır.
+**3. Adım — Çözümü Uygulayın:**
+```swift
+enum Route: Equatable {
+    case home
+    case userProfile(id: String)
+    case productDetail(id: String, variant: String?)
+    case search(query: String, page: Int)
+    case settings(section: SettingsSection)
+
+    enum SettingsSection: String {
+        case general, notifications, privacy, about
+    }
+
+    // Parse URL to route
+    static func from(url: URL) -> Route? {
+        let path = url.pathComponents.dropFirst()  // Remove leading /
+        let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            .queryItems ?? []
+
+        switch path {
+        case []:
+            return .home
+        case ["users", let id]:
+            return .userProfile(id: id)
+        case ["products", let id]:
+            let variant = query.first(where: { $0.name == "variant" })?.value
+            return .productDetail(id: id, variant: variant)
+        case ["search"]:
+            guard let q = query.first(where: { $0.name == "q" })?.value else { return nil }
+            let page = query.first(where: { $0.name == "page" })
+                .flatMap { Int($0.value ?? "1") } ?? 1
+            return .search(query: q, page: page)
+        case ["settings", let section]:
+            guard let s = SettingsSection(rawValue: section) else { return nil }
+            return .settings(section: s)
+        default:
+            return nil
+        }
+    }
+}
+
+// Usage — type-safe parameter extraction
+func handle(route: Route) {
+    switch route {
+    case .home:
+        showHomeScreen()
+    case .userProfile(let id):
+        showProfile(userId: id)  // id is guaranteed String
+    case .productDetail(let id, let variant):
+        showProduct(id: id, variant: variant)  // variant is String?
+    case .search(let query, let page):
+        performSearch(query: query, page: page)  // page is guaranteed Int
+    case .settings(let section):
+        showSettings(section: section)  // section is SettingsSection enum
+    }
+}
+
+// Handle deep link
+if let url = URL(string: "myapp://products/abc123?variant=blue"),
+   let route = Route.from(url: url) {
+    handle(route: route)
+}
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Tip güvenliği: Her rota durumu tam olarak ihtiyaç duyduğu parametreleri taşır. Derleyici,`.userProfile`üzerinde `variant`'ye erişimi engeller.
+- Kapsamlılık:`switch`tüm durumları ele almalıdır; yeni bir rota eklenmesi tüm işleyicilerin güncellenmesini zorunlu kılar.
+- Genişletilebilirlik: numaralandırma durumları ekleyerek yeni rotalar ekleyin; derleyici size güncellenmesi gereken her şeyi söyler.
+- Üretim: Daha büyük uygulamalar için`swift-url-routing`veya`TCA`yönlendirmesini düşünün.
+### Sorun 2: Reaktif Durum Konteynerinin Uygulanması
+**Sorun Açıklaması:** Swift'de durum değişikliklerinin gözlemlenebildiği ve abonelerin belirli durum değişiklikleri konusunda bilgilendirildiği basit bir reaktif durum kapsayıcısı (Redux/Vuex'e benzer) oluşturun.
+**1. Adım — Sorunu Anlayın:**
+Şunlara ihtiyacımız var: (1) uygulama durumunu tutan bir durum kapsayıcısı, (2) durum değişikliklerini tanımlayan eylemler, (3) mevcut durum + eylemden yeni durum üreten bir düşürücü, (4) durum değişikliklerini gözlemleyen aboneler. Bu tek yönlü veri akış modelidir.
+**2. Adım — Yaklaşımı Belirleyin:**
+-`@Published`benzeri davranışa sahip genel bir`Store<State>`sınıfı kullanın.
+- Eylemleri bir numaralandırma olarak tanımlayın.
+-`(State, Action) -> State`redüktör fonksiyonunu kullanın.
+- Aboneler yeni durumu kapanış yoluyla alırlar.
+**3. Adım — Çözümü Uygulayın:**
+```swift
+// Action protocol
+protocol Action {}
+
+// Store — holds state and dispatches actions
+class Store<State> {
+    private(set) var state: State
+    private let reducer: (State, Action) -> State
+    private var subscribers: [(State) -> Void] = []
+    private let queue = DispatchQueue(label: "store.queue")
+
+    init(initialState: State, reducer: @escaping (State, Action) -> State) {
+        self.state = initialState
+        self.reducer = reducer
+    }
+
+    func dispatch(_ action: Action) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            let newState = self.reducer(self.state, action)
+            self.state = newState
+            self.notifySubscribers(newState)
+        }
+    }
+
+    func subscribe(_ callback: @escaping (State) -> Void) -> () -> Void {
+        subscribers.append(callback)
+        callback(state)  // Emit current state immediately
+
+        // Return unsubscribe function
+        let index = subscribers.count - 1
+        return { [weak self] in
+            self?.subscribers.remove(at: index)
+        }
+    }
+
+    private func notifySubscribers(_ state: State) {
+        for subscriber in subscribers {
+            subscriber(state)
+        }
+    }
+}
+
+// Example usage
+struct AppState {
+    var todos: [Todo] = []
+    var filter: TodoFilter = .all
+    var isLoading: Bool = false
+}
+
+enum TodoAction: Action {
+    case addTodo(String)
+    case toggleTodo(Int)
+    case setFilter(TodoFilter)
+    case setLoading(Bool)
+}
+
+enum TodoFilter { case all, active, completed }
+
+struct Todo: Equatable {
+    let id: Int
+    let title: String
+    var isDone: Bool = false
+}
+
+// Reducer
+func todoReducer(state: AppState, action: Action) -> AppState {
+    var newState = state
+    guard let action = action as? TodoAction else { return state }
+
+    switch action {
+    case .addTodo(let title):
+        let id = (state.todos.map(\.id).max() ?? 0) + 1
+        newState.todos.append(Todo(id: id, title: title))
+    case .toggleTodo(let id):
+        if let idx = newState.todos.firstIndex(where: { $0.id == id }) {
+            newState.todos[idx].isDone.toggle()
+        }
+    case .setFilter(let filter):
+        newState.filter = filter
+    case .setLoading(let loading):
+        newState.isLoading = loading
+    }
+    return newState
+}
+
+// Wire it up
+let store = Store(initialState: AppState(), reducer: todoReducer)
+
+let unsubscribe = store.subscribe { state in
+    print("Todos: \(state.todos.count), Filter: \(state.filter)")
+}
+
+store.dispatch(TodoAction.addTodo("Learn Swift"))
+store.dispatch(TodoAction.addTodo("Build an app"))
+store.dispatch(TodoAction.toggleTodo(1))
+store.dispatch(TodoAction.setFilter(.active))
+```
+
+**4. Adım — Doğrulayın ve Optimize Edin:**
+- Tek yönlü akış: eylemler → düşürücü → yeni durum → aboneler. Düşünmek ve test etmek kolaydır.
+- İş parçacığı güvenliği: sevk kuyruğu durum mutasyonlarını serileştirir.
+- Aboneler tam durumu alır; gereksiz yeniden oluşturmaları önlemek için seçicileri veya`Equatable`kontrollerini kullanın.
+- Prodüksiyon: Efektler, testler ve SwiftUI entegrasyonuyla üretim düzeyinde bir uygulama için Point-Free'nin`The Composable Architecture`(TCA) ürününü kullanın.
 ---
 
 ## Özet

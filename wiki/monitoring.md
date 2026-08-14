@@ -49,6 +49,7 @@ Guide to monitoring ML systems in production, detecting issues, and maintaining 
 ```python
 import logging
 import json
+import os
 from datetime import datetime
 
 # Configure structured logging
@@ -57,6 +58,9 @@ logging.basicConfig(
     format='%(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# Define MODEL_VERSION from environment (set during deployment)
+MODEL_VERSION = os.environ.get("MODEL_VERSION", "unknown")
 
 def log_prediction(request_id, input_data, prediction, latency_ms):
     log_entry = {
@@ -156,15 +160,16 @@ class DataDriftDetector:
     
     def detect_chi_square(self, new_data, feature_name):
         """Chi-square test for categorical features"""
-        ref_counts = np.bincount(self.reference_data[feature_name])
-        new_counts = np.bincount(new_data[feature_name])
+        # Use value_counts instead of bincount — works with any categorical encoding
+        ref_counts = self.reference_data[feature_name].value_counts()
+        new_counts = new_data[feature_name].value_counts()
         
-        # Pad to same length
-        max_len = max(len(ref_counts), len(new_counts))
-        ref_counts = np.pad(ref_counts, (0, max_len - len(ref_counts)))
-        new_counts = np.pad(new_counts, (0, max_len - len(new_counts)))
+        # Align categories across reference and new data
+        all_categories = sorted(set(ref_counts.index) | set(new_counts.index))
+        ref_aligned = np.array([ref_counts.get(c, 0) for c in all_categories])
+        new_aligned = np.array([new_counts.get(c, 0) for c in all_categories])
         
-        statistic, p_value, _, _ = stats.chi2_contingency([ref_counts, new_counts])
+        statistic, p_value, _, _ = stats.chi2_contingency([ref_aligned, new_aligned])
         return {
             'feature': feature_name,
             'statistic': statistic,
@@ -178,7 +183,10 @@ class DataDriftDetector:
         
         # Create bins from reference data
         percentiles = np.linspace(0, 100, bins + 1)
-        bin_edges = np.percentile(ref_data, percentiles)
+        bin_edges = np.unique(np.percentile(ref_data, percentiles))  # unique to handle duplicates
+        
+        if len(bin_edges) < 2:
+            return {'feature': feature_name, 'psi': 0.0, 'drift_detected': False}
         
         # Calculate proportions
         ref_props = np.histogram(ref_data, bins=bin_edges)[0] / len(ref_data)

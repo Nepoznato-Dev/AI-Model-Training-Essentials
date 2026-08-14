@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # DevOps 및 CI/CD
 DevOps는 팀이 소프트웨어를 더 빠르고 안정적으로 제공할 수 있도록 지원하는 문화 철학, 관행 및 도구의 조합입니다. 이는 개발자(변경 사항을 제공하려는)와 운영(안정성을 원하는) 사이의 벽을 허무는 것입니다. CI/CD(지속적 통합 및 지속적 전달)는 이를 가능하게 하는 자동화 백본입니다.
 ---
@@ -152,7 +153,7 @@ kubectl scale deploy/myapp --replicas=5  # Scale to 5 replicas
 ```
 
 ### 투구
-Helm은 Kubernetes의 패키지 관리자입니다. **차트**는 사전 구성된 Kubernetes 리소스의 번들입니다. K8의 경우`apt`또는 `brew`이라고 생각하세요.
+Helm은 Kubernetes의 패키지 관리자입니다. **차트**는 사전 구성된 Kubernetes 리소스의 번들입니다. K8s의 경우`apt`또는 `brew`라고 생각하세요.
 ```bash
 helm install my-release bitnami/postgresql   # Install a chart
 helm upgrade my-release bitnami/postgresql   # Upgrade
@@ -244,4 +245,4 @@ GitOps는 IaC를 논리적인 결론으로 ​​이끌어냅니다. 즉, Git �
 5. **수정** — 롤백 또는 패치 전달.
 6. **의사소통** — 이해관계자 및 사용자를 업데이트합니다(상태 페이지).
 7. **사후 조사** — 24~48시간 이내에 근본 원인과 조치 항목을 문서화합니다.
-목표는 단순히 사건을 해결하는 것이 아니라 동일한 사건이 다시 발생하지 않도록 하는 것입니다.
+단순히 사고를 해결하는 것이 아니라 동일한 사고가 재발하지 않도록 하는 것이 목표입니다.

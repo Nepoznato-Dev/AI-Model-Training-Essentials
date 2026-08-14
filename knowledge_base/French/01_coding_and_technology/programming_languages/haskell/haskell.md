@@ -1,42 +1,47 @@
 ---
-# Métadonnées
-titre : "Haskell"
-description : "Référence complète sur le langage de programmation Haskell couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Haskell"
+description: "Comprehensive reference for the Haskell programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [haskell, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "39 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [haskell, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "39 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 #Haskell
 Haskell est un langage de programmation purement fonctionnel, typé statiquement et évalué paresseusement. Standardisé pour la première fois en 1990 (Haskell 90) et affiné à travers plusieurs versions (Haskell 2010 est la norme actuelle), Haskell est connu pour sa rigueur mathématique, son système de types puissant (avec classes de types, monades et types de données algébriques) et l'accent mis sur l'exactitude des types.
-Haskell n'est pas une langue dominante, mais son influence est énorme. Des concepts tels que les monades, l'évaluation paresseuse et les classes de types ont influencé Rust, Swift, Kotlin, Scala et TypeScript. Haskell est utilisé dans la finance (Standard Chartered, Barclays), les compilateurs (GHC) et la vérification formelle.
+Haskell n’est pas une langue dominante, mais son influence est énorme. Des concepts tels que les monades, l'évaluation paresseuse et les classes de types ont influencé Rust, Swift, Kotlin, Scala et TypeScript. Haskell est utilisé dans la finance (Standard Chartered, Barclays), les compilateurs (GHC) et la vérification formelle.
 ---
 
 ## Pourquoi Haskell est important
@@ -935,6 +940,210 @@ pkgs.haskellPackages.developPackage {
 | Développement d'applications générales | Possible mais de niche | Python, Go, Java |
 | Développement Web | Yesod/Serviteur existent mais limités | JavaScript/TypeScript |
 | Science des données | Pas l'écosystème | Python, R |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Comment l'évaluation paresseuse de Haskell affecte-t-elle les performances ?
+**R :** L'évaluation paresseuse signifie que les expressions sont calculées uniquement lorsque cela est nécessaire, ce qui permet des structures de données infinies et des pipelines composables. Cependant, cela peut provoquer des fuites d'espace si les bruits sourds s'accumulent :
+```haskell
+-- Lazy: creates a chain of thunks, may leak space
+sum' :: [Int] -> Int
+sum' = foldl (+) 0
+
+-- Strict: evaluates immediately, no thunk buildup
+sumStrict :: [Int] -> Int
+sumStrict = foldl' (+) 0  -- foldl' is strict in the accumulator
+```
+
+Utilisez`foldl'`(de`Data.List`) au lieu de`foldl`pour les replis numériques. Utilisez les modèles de bang`!`ou`seq`pour forcer l'évaluation si nécessaire.
+### Q2 : Quelle est la différence pratique entre`Functor`,`Applicative`et `Monad` ?
+**R :** Chaque classe de types ajoute des fonctionnalités :
+```haskell
+-- Functor: apply a function inside a context
+fmap (+1) (Just 5)            -- Just 6
+(+1) <$> [1, 2, 3]            -- [2, 3, 4]
+
+-- Applicative: apply functions with contexts to values with contexts
+pure (+) <*> Just 3 <*> Just 5  -- Just 8
+liftA2 (,) (Just 1) (Just 2)    -- Just (1,2)
+
+-- Monad: chain computations with context
+Just 5 >>= \x -> Just (x + 1)   -- Just 6
+do { x <- Just 5; return (x+1) } -- Just 6
+```
+
+**Functor** mappe une fonction pure sur un contexte. **Applicatif** applique des fonctions qui sont elles-mêmes dans un contexte. **Monad** laisse chaque étape dépendre du résultat de l'étape précédente. En pratique : utilisez`fmap`/`<$>`pour des transformations simples,`<*>`pour combiner des effets, et`>>=`/`do`pour des calculs dépendants séquentiels.
+### Q3 : Comment gérer les effets secondaires dans du code Haskell pur ?
+**R :** Utilisez le système de types pour séparer le code pur et efficace :
+```haskell
+-- Pure function — no side effects, always same output for same input
+add :: Int -> Int -> Int
+add x y = x + y
+
+-- Effectful function — type signature declares the effect
+readFile :: FilePath -> IO String
+fetchUser :: UserId -> ExceptT ApiError IO User
+
+-- Run effects at the boundary, keep core pure
+main :: IO ()
+main = do
+  contents <- readFile "data.txt"
+  let result = pureProcess contents  -- pure function
+  putStrLn (show result)
+```
+
+Gardez la logique de base pure et poussez les effets vers les limites. Utilisez`ReaderT`pour la configuration,`ExceptT`pour les erreurs et`StateT`pour l'état mutable.
+### Q4 : Que sont les classes de types et en quoi diffèrent-elles des interfaces POO ?
+**R :** Les classes de types définissent le comportement que les types peuvent implémenter. Contrairement aux interfaces POO, elles sont ouvertes (n'importe quel type peut être une instance) et prennent en charge le polymorphisme ad hoc :
+```haskell
+-- Type class declaration
+class Eq a where
+  (==) :: a -> a -> Bool
+
+-- Instance for a type
+instance Eq Color where
+  Red   == Red   = True
+  Green == Green = True
+  Blue  == Blue  = True
+  _     == _     = False
+
+-- Derived instance (compiler generates it)
+data Point = Point Int Int deriving (Eq, Show, Ord)
+
+-- Constraint: function works for any type that is an instance of Eq
+elem :: Eq a => a -> [a] -> Bool
+```
+
+### Q5 : Comment structurer un projet Haskell pour une utilisation réelle ?
+**R :** Utilisez Cabal ou Stack avec une mise en page standard :
+```
+my-project/
+├── app/Main.hs           -- Entry point
+├── src/
+│   ├── MyProject/
+│   │   ├── Types.hs      -- Core data types
+│   │   ├── Parser.hs     -- Pure parsing logic
+│   │   ├── Service.hs    -- Business logic
+│   │   └── Config.hs     -- Configuration types
+├── test/
+│   └── Spec.hs           -- Tests (use hspec or tasty)
+├── my-project.cabal
+└── stack.yaml
+```
+
+Pratiques clés : conserver les E/S dans`Main.hs`ou un module`IO`dédié, rendre la logique de base pure et testable, utiliser les wrappers`newtype`pour les types de domaine.
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Implémentation d'une fonction de division sécurisée avec rapport d'erreurs
+**Étape 1 : Comprendre le problème**
+Nous avons besoin d'une division qui gère la division par zéro et signale des erreurs significatives, pas seulement des plantages.
+**Étape 2 : Identifiez l'approche**
+Utilisez`Either`pour renvoyer soit un message d'erreur, soit le résultat. Cela rend la possibilité d’échec explicite dans le type.
+**Étape 3 : Mettre en œuvre**```haskell
+safeDiv :: Double -> Double -> Either String Double
+safeDiv _ 0 = Left "Division by zero"
+safeDiv x y = Right (x / y)
+
+-- Chain multiple operations
+calc :: Double -> Double -> Double -> Either String Double
+calc a b c = do
+  ab <- safeDiv a b
+  safeDiv ab c
+
+-- Usage
+calc 10 2 3   -- Right 1.666...
+calc 10 0 3   -- Left "Division by zero"
+```
+
+**Étape 4 : Vérifier**
+Le système de types garantit que les appelants doivent gérer le cas d’erreur. La correspondance de modèles ou`either`force la gestion explicite.
+### Problème 2 : Analyse d'un langage de configuration simple
+**Étape 1 : Comprendre le problème**
+Analysez les paires clé-valeur d'une chaîne telle que`name=Alice\nage=30`.
+**Étape 2 : Identifiez l'approche**
+Utilisez`Text.Parsec`ou une récursion manuelle. Pour plus de simplicité, utilisez`break`et`span`.
+**Étape 3 : Mettre en œuvre**```haskell
+import Data.Char (isSpace)
+import Data.List (stripPrefix)
+
+type Config = [(String, String)]
+
+parseLine :: String -> Maybe (String, String)
+parseLine line =
+  case break (== '=') (trim line) of
+    (key, '=':val) -> Just (trim key, trim val)
+    _               -> Nothing
+  where trim = reverse . dropWhile isSpace . reverse . dropWhile isSpace
+
+parseConfig :: String -> Config
+parseConfig = mapMaybe parseLine . lines
+
+-- Usage
+sample = "name = Alice\nage = 30\ncity = Paris"
+parseConfig sample
+-- [("name","Alice"),("age","30"),("city","Paris")]
+```
+
+**Étape 4 : Prolonger**
+Ajoutez la gestion des commentaires (`#`), des en-têtes de section (`[section]`) et la coercition de type à l'aide d'un ADT `Value`.
+### Problème 3 : Construire un Fibonacci mémorisé avec paresse
+**Étape 1 : Comprendre le problème**
+Calculez efficacement les nombres de Fibonacci. La récursivité naïve est exponentielle.
+**Étape 2 : Identifiez l'approche**
+Utilisez l'évaluation paresseuse de Haskell pour créer une liste infinie où chaque élément est calculé une fois et mis en cache.
+**Étape 3 : Mettre en œuvre**```haskell
+-- Lazy infinite list — each value computed once
+fibs :: [Integer]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
+-- Access any element in O(n)
+fib :: Int -> Integer
+fib n = fibs !! n
+
+-- Take first 20
+-- take 20 fibs  -- [0,1,1,2,3,5,8,13,21,34,55,89,144,...]
+```
+
+**Étape 4 : Optimiser**
+Pour un accès aléatoire, utilisez`Data.Array`avec une construction paresseuse. Pour les très grands indices, utilisez l'exponentiation matricielle en O (log n).
+### Problème 4 : Implémentation d'une machine à états simple
+**Étape 1 : Comprendre le problème**
+Modélisez un feu de circulation qui fait défiler Rouge -> Vert -> Jaune -> Rouge.
+**Étape 2 : Identifiez l'approche**
+Utilisez un type de données algébrique pour les états et une fonction de transition pure.
+**Étape 3 : Mettre en œuvre**```haskell
+data Light = Red | Green | Yellow deriving (Show, Eq)
+
+transition :: Light -> Light
+transition Red    = Green
+transition Green  = Yellow
+transition Yellow = Red
+
+-- Run for n steps
+runLight :: Light -> Int -> [Light]
+runLight start n = take n (iterate transition start)
+
+-- runLight Red 6  -- [Red,Green,Yellow,Red,Green,Yellow]
+
+-- With state monad for complex state
+import Control.Monad.State
+type LightState = State Light
+
+tick :: LightState Light
+tick = do
+  current <- get
+  let next = transition current
+  put next
+  return next
+```
+
+**Étape 4 : Vérifier**
+Les fonctions pures sont trivialement testables :```haskell
+prop_cycle :: Bool
+prop_cycle = transition (transition (transition Red)) == Red
+```
+
 ---
 
 ## Résumé

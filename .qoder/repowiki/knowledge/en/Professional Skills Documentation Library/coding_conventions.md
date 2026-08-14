@@ -1,6 +1,0 @@
-- Every skill file starts with a YAML frontmatter block delimited by `---` containing required metadata fields (title, description, category, version, status, authors, changelog, review dates, tags, difficulty_level, prerequisites, estimated_reading_time, contribution).
-- Skill content follows the fixed section order defined in `skill-creator.md`: Overview → Core Competencies → When to Use → Framework/Methodology → Practical Templates → Common Pitfalls → Best Practices → Tools & Resources → Examples → Success Indicators → Related Skills → Version Information.
-- File names use snake_case (e.g., `code_review.md`, `system_architecture.md`) and are grouped under a category directory whose name ends in `-skills`.
-- Cross-references between skills use relative Markdown paths rather than absolute URLs.
-- Category directories include a `README.md` that lists and describes the skills contained within that category.
-- Versioning uses SemVer in the frontmatter `version` field, with changes recorded chronologically newest-first in the `changelog` list.

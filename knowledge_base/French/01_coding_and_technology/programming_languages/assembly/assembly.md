@@ -1,39 +1,44 @@
 ---
-# Métadonnées
-titre : "Langage Assembly"
-description : "Référence complète sur le langage de programmation Assembly couvrant la présentation, les compromis, les principes fondamentaux de la syntaxe, l'écosystème et quand l'utiliser."
-catégorie : "Codage et technologie"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Assembly Language"
+description: "Comprehensive reference for the Assembly programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances en matière de codage et de technologie"
-next_review : "2027-08-05"
-#Classement
-balises : [assembly, langage de programmation, syntaxe, écosystème, codage et technologie]
-niveau de difficulté : "avancé"
-prérequis : []
-estimate_reading_time : "31 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [assembly, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "advanced"
+prerequisites: []
+estimated_reading_time: "31 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Langage d'assemblage
 Le langage assembleur est le langage de programmation lisible par l’homme de niveau le plus bas. Il fournit une représentation directe des instructions du code machine d'un ordinateur à l'aide de codes mnémoniques (comme`MOV`,`ADD`,`JMP`) au lieu de binaires bruts. Chaque langage assembleur est spécifique à une architecture de processeur particulière (x86, ARM, MIPS, RISC-V) : le code écrit pour une architecture ne s'exécutera pas sur une autre.
 Le langage assembleur n’est pas utilisé pour créer des applications. Il est utilisé lorsque vous avez besoin d'un contrôle absolu sur le matériel : écriture des noyaux du système d'exploitation, des pilotes de périphériques, des chargeurs de démarrage, du micrologiciel intégré, des sections de code critiques pour les performances, de l'ingénierie inverse et de la compréhension de la manière dont les ordinateurs exécutent réellement les instructions.
@@ -44,7 +49,7 @@ Le langage assembleur n’est pas utilisé pour créer des applications. Il est 
 - **Optimisation des performances** : les sections de code critiques peuvent être optimisées au-delà de ce que produisent les compilateurs.
 - **Ingénierie inverse** : analyse des logiciels malveillants, recherche en matière de sécurité et compréhension des logiciels propriétaires.
 - **Systèmes embarqués** : certains microcontrôleurs n'ont pas de prise en charge de langage de niveau supérieur.
-- **Développement du système d'exploitation** : le code de démarrage, les gestionnaires d'interruptions et le changement de contexte nécessitent un assemblage.
+- **Développement du système d'exploitation** : le code de démarrage, les gestionnaires d'interruption et le changement de contexte nécessitent un assemblage.
 - **Éducatif** : Comprendre l'assemblage vous apprend comment fonctionnent réellement les ordinateurs : la mémoire, les registres, la pile et le pipeline du processeur.
 ## Les compromis
 | Limitation | Détails | Solution de contournement typique |
@@ -729,6 +734,85 @@ void process_data(void) {
 | Micrologiciel intégré (bare metal) | Aucune langue de niveau supérieur disponible | C, Rouille |
 | Éducation | Comprendre l'architecture informatique | — |
 | Développement d'applications générales | Peu pratique pour les programmes complexes | Tout langage de niveau supérieur |
+---
+
+## Questions et réponses synthétiques
+### Q1 : Quelle est la différence entre les assemblages RISC et CISC ?
+**R :** CISC (x86) comporte des instructions complexes de longueur variable. RISC (ARM) contient des instructions simples de longueur fixe :
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2 : Comment fonctionne la pile en assemblage ?
+**R :** La pile augmente vers le bas. `push`décrémente SP et stocke ; `pop`charge et incrémente SP :
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3 : Comment appeler des fonctions en assembly ?
+**R :** Suivez la convention d'appel (System V AMD64 sous Linux, Windows x64 sous Windows) :
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4 : Quelles sont les instructions de montage les plus importantes à connaître ?
+**R :** Les opérations de mouvement des données, d'arithmétique, de flux de contrôle et de pile constituent le noyau.
+### Q5 : Comment l'assemblage est-il utilisé dans la recherche sur la sécurité ?
+**R :** L'ingénierie inverse, le développement d'exploits, l'analyse des logiciels malveillants et la compréhension des résultats du compilateur nécessitent tous des connaissances en matière d'assemblage.
+---
+
+## Résolution de problèmes en chaîne de pensée
+### Problème 1 : Implémentation d'une boucle dans l'assemblage
+**Étape 1 : Comprendre le problème**
+Somme des entiers de 1 à N.
+**Étape 2 : Identifiez l'approche**
+Utilisez un compteur et un accumulateur.
+**Étape 3 : Mettre en œuvre**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Étape 4 : Optimiser**
+Utilisez la formule N*(N+1)/2 pour O(1) au lieu de O(N).
 ---
 
 ## Résumé

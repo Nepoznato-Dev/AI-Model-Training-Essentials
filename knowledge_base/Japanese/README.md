@@ -1,4 +1,4 @@
-# 英語の知識ベース
+# ナレッジベース
 コーディング、テクノロジー、AI、科学、ビジネス、人文科学などをカバーする参考文書の包括的なコレクション。AI トレーニングと人間の学習の両方のために設計された自然な会話スタイルで書かれています。
 **最終更新日:** 2026 年 8 月  
 **合計ファイル数:** 138 個以上のマークダウン ドキュメント  
@@ -7,7 +7,7 @@
 
 ## ディレクトリ構造
 ```
-knowledge_base/English/
+knowledge_base/Japanese/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,13 @@ knowledge_base/English/
 **中心的なトピック:**
 |ファイル |説明 |
 |------|---------------|
-| [web_development.md](01_coding_and_technology/web_development.md)|フロントエンド、バックエンド、DevOps、セキュリティ |
 | [database_systems.md](01_coding_and_technology/database_systems.md)| SQL、NoSQL、デザインパターン、最適化 |
 | [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)|クラウド プロバイダー、アーキテクチャ パターン、セキュリティ |
 | [networking_basics.md](01_coding_and_technology/networking_basics.md)| OSI モデル、TCP/IP、プロトコル、セキュリティ |
 | [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH、systemd、ロギング、モニタリング、バックアップ、Docker、CI/CD |
-| [security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP トップ 10、入力検証、認証、シークレット管理 |
 | [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md)| CI/CD パイプライン、Docker、Kubernetes、Terraform、GitOps |
 | [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)|暗号化、TLS、OWASP、セキュア コーディング、SDL |
 | [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST、GraphQL、gRPC、バージョニング、認証、API ゲートウェイ |
-| [software_architecture_patterns.md](01_coding_and_technology/software_architecture_patterns.md)|モノリス、マイクロサービス、イベント駆動型、DDD、キャッシュ、SOLID |
-| [technology_glossary.md](01_coding_and_technology/technology_glossary.md)|技術用語 (AI モデル、ハードウェア、ベンチマーク) |
-| [tool_usage.md](01_coding_and_technology/tool_usage.md)|開発ツールとユーティリティ |
 | [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG、包括的な UX、支援技術、アクセシブルなコーディング |
 | [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)|コンセンサス、スマートコントラクト、DeFi、ビザンチンフォールトトレランス |
 | [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)|配列、ツリー、グラフ、並べ替え、検索、複雑さ |
@@ -52,7 +47,6 @@ knowledge_base/English/
 | [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)|ローコード プラットフォーム、社内開発者プラットフォーム、ゴールデン パス |
 | [mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS、Android、React Native、Flutter、モバイル アーキテクチャ |
 | [performance_optimization.md](01_coding_and_technology/performance_optimization.md)|プロファイリング、キャッシュ、CDN、クエリ最適化、フロントエンド パフォーマンス |
-| [testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)|ユニット、統合、E2E、TDD、BDD、テストピラミッド |
 **プログラミング言語 (34 言語):**
 各言語には独自のサブディレクトリがあり、概要、トレードオフ、構文の基礎、エコシステム、いつ使用するかなどを網羅した包括的なリファレンスが含まれています。
 |言語 |パス | |言語 |パス |
@@ -77,31 +71,31 @@ knowledge_base/English/
 ### 02 — AI と機械学習
 |ファイル |説明 |
 |------|---------------|
-| [artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)| AI の概要、ML、深層学習、LLM、倫理 |
-| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/ml_evaluation_and_workflow.md)| ML パイプライン、メトリクス、ベスト プラクティス |
-| [phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)|モデルをローカルで実行する |
-| [local_ai_architecture.md](02_ai_and_machine_learning/local_ai_architecture.md)|ローカル AI 導入アーキテクチャ |
-| [prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)|即効性のあるテクニックと戦略 |
-| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT、データレイク、オーケストレーション、Kafka、機能ストア |
-| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/ml_engineering_and_mlops.md)|モデル提供、レジストリ、展開戦略、ドリフト監視 |
-| [computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN、オブジェクト検出、セグメンテーション、転移学習 |
-| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)|テキスト処理、埋め込み、トランスフォーマー、BERT、GPT |
-| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ai_ethics_and_governance.md)| AI バイアス、公平性、説明責任、規制、ガバナンスの枠組み |
-| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)|アライメント問題、RLHF、解釈可能性、AI安全性研究 |
-| [federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)|分散トレーニング、差分プライバシー、安全な集約 |
-| [generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GAN、VAE、拡散モデル、LLM、生成 AI アプリケーション |
-| [graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN、GAT、メッセージ パッシング、ナレッジ グラフ、グラフ タスク |
-| [model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)|量子化、プルーニング、蒸留、ONNX、サービス インフラストラクチャ |
-| [multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)|視覚言語モデル、CLIP、DALL-E、クロスモーダル学習 |
-| [recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)|協調フィルタリング、コンテンツベース、ハイブリッド、行列分解 |
-| [reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP、Q ラーニング、ポリシー勾配、RLHF、マルチエージェント システム |
-| [speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR、TTS、オーディオ機能、ウィスパー、音声パイプライン |
-| [time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA、Prophet、LSTM、季節性、異常検出 |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)| AI の概要、ML、深層学習、LLM、倫理 |
+| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md)| ML パイプライン、メトリクス、ベスト プラクティス |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)|モデルをローカルで実行する |
+| [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md)|ローカル AI 導入アーキテクチャ |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)|即効性のあるテクニックと戦略 |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT、データレイク、オーケストレーション、Kafka、機能ストア |
+| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md)|モデル提供、レジストリ、展開戦略、ドリフト監視 |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN、オブジェクト検出、セグメンテーション、転移学習 |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)|テキスト処理、埋め込み、トランスフォーマー、BERT、GPT |
+| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md)| AI バイアス、公平性、説明責任、規制、ガバナンスの枠組み |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)|アライメント問題、RLHF、解釈可能性、AI安全性研究 |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)|分散トレーニング、差分プライバシー、安全な集約 |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GAN、VAE、拡散モデル、LLM、生成 AI アプリケーション |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN、GAT、メッセージ パッシング、ナレッジ グラフ、グラフ タスク |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)|量子化、プルーニング、蒸留、ONNX、サービス インフラストラクチャ |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)|視覚言語モデル、CLIP、DALL-E、クロスモーダル学習 |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)|協調フィルタリング、コンテンツベース、ハイブリッド、行列分解 |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP、Q ラーニング、ポリシー勾配、RLHF、マルチエージェント システム |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR、TTS、オーディオ機能、ウィスパー、音声パイプライン |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA、Prophet、LSTM、季節性、異常検出 |
 ### 03 — データ サイエンスと分析
 |ファイル |説明 |
 |------|---------------|
 | [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)|データ処理、ML、ビッグデータ、BI |
-| [math_and_logic.md](03_data_science_and_analytics/math_and_logic.md)|数学、論理、証明 |
+| [math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md)|数学、論理、証明 |
 | [data_visualization.md](03_data_science_and_analytics/data_visualization.md)|チャートの選択、デザイン原則、ストーリーテリング、ツール |
 | [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md)|仮説検証、A/Bテスト、効果量、因果推論 |
 | [causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAG、交絡因子、差分の差、操作変数 |
@@ -113,13 +107,13 @@ knowledge_base/English/
 |ファイル |説明 |
 |------|---------------|
 | [science_and_nature.md](04_natural_sciences/science_and_nature.md)|物理学、化学、生物学、地球科学 |
-| [medicine_and_healthcare.md](04_natural_sciences/medicine_and_healthcare.md)| Medical specialties, diagnosis, treatment, ethics |
-| [environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)|生態系、気候、エネルギー、政策 |
-| [food_agriculture_and_nutrition.md](04_natural_sciences/food_agriculture_and_nutrition.md)| Agriculture, nutrition, food systems, sustainability |
-| [astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)| Stars, galaxies, Big Bang, dark matter, exoplanets, cosmology |
-| [genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| DNA, gene expression, CRISPR, GWAS, sequencing technologies |
-| [materials_science.md](04_natural_sciences/materials_science.md)| Crystal structures, polymers, alloys, semiconductors, nanomaterials |
-| [neuroscience.md](04_natural_sciences/neuroscience.md)| Neurons, brain structure, neurotransmitters, plasticity, brain imaging |
+| [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md)| Medical specialties, diagnosis, treatment, ethics |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)|生態系、気候、エネルギー、政策 |
+| [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md)| Agriculture, nutrition, food systems, sustainability |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)| Stars, galaxies, Big Bang, dark matter, exoplanets, cosmology |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| DNA, gene expression, CRISPR, GWAS, sequencing technologies |
+| [materials_science.md](04_natural_sciences/physical_sciences/materials_science.md)| Crystal structures, polymers, alloys, semiconductors, nanomaterials |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)| Neurons, brain structure, neurotransmitters, plasticity, brain imaging |
 ### 05 — ビジネスと経済
 |ファイル |説明 |
 |------|---------------|
@@ -136,15 +130,15 @@ knowledge_base/English/
 ### 06 — 人文科学と芸術
 |ファイル |説明 |
 |------|---------------|
-| [history_and_culture.md](06_humanities_and_arts/history_and_culture.md)|古代文明から情報時代までの世界史 |
-| [geography_and_geopolitics.md](06_humanities_and_arts/geography_and_geopolitics.md)|自然地理学、人文地理学、政治制度 |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)|古代文明から情報時代までの世界史 |
+| [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md)|自然地理学、人文地理学、政治制度 |
 | [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)|文学ジャンル、ビジュアルアート、音楽、映画 |
-| [psychology_and_human_behavior.md](06_humanities_and_arts/psychology_and_human_behavior.md)|認知心理学、社会心理学、発達心理学 |
-| [language_and_english.md](06_humanities_and_arts/language_and_english.md)|文法、言語学、ライティング |
-| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)|思想、倫理、論理、認識論、認知バイアス | 学派
-| [linguistics_and_language_science.md](06_humanities_and_arts/linguistics_and_language_science.md)|音声学、構文、意味論、語用論、社会言語学 |
-| [music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)|スケール、コード、ハーモニー、リズム、室内音響、楽器の物理学 |
-| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)|世界の主要な宗教、比較神話、信念体系 |
+| [psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md)|認知心理学、社会心理学、発達心理学 |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md)|文法、言語学、ライティング |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)|思想、倫理、論理、認識論、認知バイアス | 学派
+| [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md)|音声学、構文、意味論、語用論、社会言語学 |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)|スケール、コード、ハーモニー、リズム、室内音響、楽器の物理学 |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)|世界の主要な宗教、比較神話、信念体系 |
 ### 07 — 一般的なリファレンス
 |ファイル |説明 |
 |------|---------------|
@@ -158,20 +152,20 @@ knowledge_base/English/
 ### 08 — 将来とトレンド
 |ファイル |説明 |
 |------|---------------|
-| [2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)|今後のイベント、宇宙ミッション、技術トレンド |
-| [emerging_technologies.md](08_future_and_trends/emerging_technologies.md)|量子コンピューティング、バイオテクノロジー、ナノテクノロジー |
-| [future_of_work.md](08_future_and_trends/future_of_work.md)|自動化、リモートワーク、スキルアップ |
-| [future_healthcare.md](08_future_and_trends/future_healthcare.md)|個別化医療、AI診断 |
-| [future_transportation.md](08_future_and_trends/future_transportation.md)| EV、自動運転車、ハイパーループ |
-| [demographic_shifts.md](08_future_and_trends/demographic_shifts.md)|人口動向、移住、都市化 |
-| [education_transformation.md](08_future_and_trends/education_transformation.md)|オンライン学習、AI個別指導 |
-| [geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)|地政学、米中、多極世界 |
-| [scenario_planning.md](08_future_and_trends/scenario_planning.md)|将来のシナリオと枠組み |
-| [space_exploration_roadmap.md](08_future_and_trends/space_exploration_roadmap.md)|宇宙ミッションとタイムライン |
-| [sustainable_future.md](08_future_and_trends/sustainable_future.md)|気候、エネルギー転換、循環経済 |
-| [ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)|レコメンデーション システム、スマート アシスタント、プライバシー、アテンション エコノミー |
-| [climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)|再生可能エネルギー、EV、二酸化炭素回収、グリーン水素、持続可能な技術 |
-| [future_of_computing.md](08_future_and_trends/future_of_computing.md)|ムーアの法則、量子コンピューティング、ニューロモーフィック チップ、エッジ コンピューティング |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)|今後のイベント、宇宙ミッション、技術トレンド |
+| [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md)|量子コンピューティング、バイオテクノロジー、ナノテクノロジー |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)|自動化、リモートワーク、スキルアップ |
+| [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md)|個別化医療、AI診断 |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)| EV、自動運転車、ハイパーループ |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)|人口動向、移住、都市化 |
+| [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md)|オンライン学習、AI個別指導 |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)|地政学、米中、多極世界 |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)|将来のシナリオと枠組み |
+| [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md)|宇宙ミッションとタイムライン |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)|気候、エネルギー転換、循環経済 |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)|レコメンデーション システム、スマート アシスタント、プライバシー、アテンション エコノミー |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)|再生可能エネルギー、EV、二酸化炭素回収、グリーン水素、持続可能な技術 |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)|ムーアの法則、量子コンピューティング、ニューロモーフィック チップ、エッジ コンピューティング |
 ### 09 — 失敗からの教訓
 |ファイル |説明 |
 |------|---------------|
@@ -187,18 +181,18 @@ knowledge_base/English/
 ### 10 — クイックリファレンス
 |ファイル |説明 |
 |------|---------------|
-| [python_syntax.md](10_quick_reference/python_syntax.md)| Python 構文のチートシート |
-| [git_commands.md](10_quick_reference/git_commands.md)| Git コマンドとワークフロー |
-| [sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| SQL クエリのリファレンス |
-| [linux_commands.md](10_quick_reference/linux_commands.md)| Linux コマンド ライン リファレンス |
-| [docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| Docker、Docker Compose、Kubernetes、Helm チートシート |
-| [regular_expressions.md](10_quick_reference/regular_expressions.md)|正規表現構文、一般的なパターン、言語固有の使用法 |
-| [cloud_services_comparison.md](10_quick_reference/cloud_services_comparison.md)| AWS、Azure、GCP を並べて比較 |
-| [bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| Bash スクリプト、テキスト処理、便利なワンライナー |
-| [ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| Ansible プレイブック、モジュール、ロール、インベントリ、自動化チートシート |
-| [cicd_pipeline_config.md](10_quick_reference/cicd_pipeline_config.md)| GitHub Actions、GitLab CI、Jenkins、パイプライン YAML パターン |
-| [prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL、エクスポーター、ダッシュボード、アラート、モニタリング スタック |
-| [terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| IaC の概念、Terraform コマンド、状態管理、モジュール |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md)| Python 構文のチートシート |
+| [git_commands.md](10_quick_reference/programming/git_commands.md)| Git コマンドとワークフロー |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| SQL クエリのリファレンス |
+| [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)| Linux コマンド ライン リファレンス |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| Docker、Docker Compose、Kubernetes、Helm チートシート |
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)|正規表現構文、一般的なパターン、言語固有の使用法 |
+| [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)| AWS、Azure、GCP を並べて比較 |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| Bash スクリプト、テキスト処理、便利なワンライナー |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| Ansible プレイブック、モジュール、ロール、インベントリ、自動化チートシート |
+| [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md)| GitHub Actions、GitLab CI、Jenkins、パイプライン YAML パターン |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL、エクスポーター、ダッシュボード、アラート、モニタリング スタック |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| IaC の概念、Terraform コマンド、状態管理、モジュール |
 ---
 
 ## 学習パス

@@ -1,5 +1,7 @@
 # ImportError: Cannot Import Transformers
 
+> **Looking for a more detailed guide**: [Extended transformers troubleshooting](../User%20Questions/errors/ImportError_Transformers.md) with environment-specific solutions, version compatibility matrix, and diagnostic scripts.
+
 ## Error Message
 
 ```

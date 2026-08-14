@@ -204,7 +204,7 @@ for epoch in range(num_epochs):
         
         # Track statistics
         running_loss += loss.item()
-        _, predicted = torch.max(outputs.data, 1)
+        _, predicted = torch.max(outputs, 1)
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
     
@@ -242,7 +242,7 @@ with torch.no_grad():  # No gradient computation needed for evaluation
     for images, labels in testloader:
         images, labels = images.to(device), labels.to(device)
         outputs = model(images)
-        _, predicted = torch.max(outputs.data, 1)
+        _, predicted = torch.max(outputs, 1)
         
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
@@ -305,7 +305,7 @@ print()
 
 # To load the model later:
 # model = SimpleCNN()
-# model.load_state_dict(torch.load("cnn_cifar10.pth"))
+# model.load_state_dict(torch.load("cnn_cifar10.pth", weights_only=True))
 # model.eval()
 
 # ============================================================================

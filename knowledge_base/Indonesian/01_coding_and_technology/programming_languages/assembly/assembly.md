@@ -435,7 +435,7 @@ ld standalone.o -o standalone
 | **Konvensi panggilan** | Bagaimana fungsi menerima parameter dan mengembalikan nilai (bervariasi berdasarkan arsitektur) |
 ---
 
-## Pengujian & Debug
+## Pengujian & Debugging
 ### GDB (Debugger GNU)
 GDB adalah debugger standar untuk perakitan di Linux. Ini memungkinkan Anda menelusuri instruksi, memeriksa register, dan memeriksa memori.
 ```bash
@@ -734,6 +734,85 @@ void process_data(void) {
 | Firmware tertanam (bare metal) | Tidak ada bahasa tingkat tinggi yang tersedia | C, Karat |
 | Pendidikan | Memahami Arsitektur Komputer | — |
 | Pengembangan aplikasi umum | Tidak praktis untuk program yang kompleks | Bahasa tingkat tinggi apa pun |
+---
+
+## Tanya Jawab Sintetis
+### Q1: Apa perbedaan antara rakitan RISC dan CISC?
+**A:** CISC (x86) memiliki instruksi yang kompleks dan panjangnya bervariasi. RISC (ARM) memiliki instruksi sederhana dengan panjang tetap:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2: Bagaimana cara kerja tumpukan dalam perakitan?
+**A:** Tumpukannya bertambah ke bawah. `push`mengurangi SP dan penyimpanan; `pop`memuat dan menambah SP:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3: Bagaimana cara memanggil fungsi di Majelis?
+**A:** Ikuti konvensi pemanggilan (System V AMD64 di Linux, Windows x64 di Windows):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: Petunjuk perakitan apa yang paling penting untuk diketahui?
+**A:** Pergerakan data, aritmatika, aliran kontrol, dan operasi tumpukan membentuk inti.
+### Q5: Bagaimana perakitan digunakan dalam riset keamanan?
+**A:** Rekayasa balik, pengembangan eksploitasi, analisis malware, dan pemahaman keluaran kompiler semuanya memerlukan kemampuan perakitan.
+---
+
+## Pemecahan Masalah Rantai Pemikiran
+### Masalah 1: Menerapkan Loop dalam Majelis
+**Langkah 1: Pahami Masalahnya**
+Jumlahkan bilangan bulat dari 1 sampai N.
+**Langkah 2: Identifikasi Pendekatannya**
+Gunakan register penghitung dan akumulator.
+**Langkah 3: Terapkan**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Langkah 4: Optimalkan**
+Gunakan rumus N*(N+1)/2 untuk O(1) dan bukan O(N).
 ---
 
 ## Ringkasan

@@ -915,7 +915,7 @@ CMD ["bin/my_app", "start"]
 ---
 
 ## 何時使用 Erlang/Elixir
-|場景 |為什麼選擇 Erlang/Elixir |更好的選擇|
+|場景|為什麼選擇 Erlang/Elixir |更好的選擇|
 |----------|--------------------|--------------------|
 |即時訊息/聊天 |為此而建立 - WhatsApp、Discord 使用 Erlang |對於更簡單的情況，Go、Node.js |
 |具有即時更新功能的 Web 應用程式 | Phoenix LiveView 非常出色 |用於傳統應用程式的 Rails、Django |
@@ -926,6 +926,109 @@ CMD ["bin/my_app", "start"]
 |資料科學/機器學習 |不是生態系| Python、R |
 |手機應用程式 |不適合|斯威夫特、科特林、達特 |
 |簡單的 REST API |可能，但對於小型服務來說太過分了Go、Node.js、Python |
+---
+
+## 綜合問答
+### Q1：Erlang 的「讓它崩潰」哲學是如何運作的？
+**答：** Erlang 不是防禦性編程，而是讓進程崩潰並透過管理程序重新啟動它們：
+```erlang
+% Supervisor restarts crashed workers
+{ok, Pid} = supervisor:start_link(my_sup, []),
+% If a worker crashes, the supervisor restarts it automatically
+% This is MORE reliable than trying to handle every error
+```
+
+### Q2：Elixir 管道如何運作？
+**A:**`|>`運算子將一個函數的結果作為第一個參數傳遞給下一個函數：
+```elixir
+"hello world"
+|> String.split()
+|> Enum.map(&String.capitalize/1)
+|> Enum.join(" ")
+# "Hello World"
+```
+
+### Q3：Erlang 和 Elixir 有什麼不同？
+**答：** Elixir 使用現代語法在 Erlang VM (BEAM) 上運作：
+- Elixir：管道運算子、巨集、協定、字串插值
+- Erlang：更簡單的文法，內建OTP，更久經考驗
+- 兩者共享相同的並發模型、VM 和生態系統
+### Q4：GenServer 在 Elixir 中如何運作？
+**A:** GenServer 是有狀態進程的標準抽象：
+```elixir
+defmodule Counter do
+  use GenServer
+  def start_link(init), do: GenServer.start_link(__MODULE__, init, name: __MODULE__)
+  def increment, do: GenServer.cast(__MODULE__, :inc)
+  def value, do: GenServer.call(__MODULE__, :get)
+  def init(val), do: {:ok, val}
+  def handle_cast(:inc, n), do: {:noreply, n + 1}
+  def handle_call(:get, _, n), do: {:reply, n, n}
+end
+```
+
+### Q5：如何處理 Elixir 中的錯誤？
+**A:** 使用`try/rescue`表示異常，使用`{:ok, result} | {:error, reason}`表示預期故障：
+```elixir
+case File.read("data.txt") do
+  {:ok, content} -> process(content)
+  {:error, :enoent} -> Logger.warning("File not found")
+  {:error, reason} -> Logger.error("Failed: #{reason}")
+end
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：建立容錯鍵值存儲
+**第 1 步：了解問題**
+建立一個能夠在進程崩潰時存活下來的鍵值儲存。
+**第 2 步：確定方法**
+與主管一起使用 GenServer。
+**步驟 3：實施**```elixir
+defmodule KVStore do
+  use GenServer
+  def start_link, do: GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def put(key, val), do: GenServer.cast(__MODULE__, {:put, key, val})
+  def get(key), do: GenServer.call(__MODULE__, {:get, key})
+  def init(state), do: {:ok, state}
+  def handle_cast({:put, k, v}, state), do: {:noreply, Map.put(state, k, v)}
+  def handle_call({:get, k}, _, state), do: {:reply, Map.get(state, k), state}
+end
+
+# Supervisor
+children = [{KVStore, []}]
+Supervisor.start_link(children, strategy: :one_for_one)
+```
+
+**第 4 步：驗證**
+終止該進程並驗證它以新狀態重新啟動。
+### 問題 2：並發 Web Scraper
+**第 1 步：了解問題**
+同時取得多個 URL 並收集結果。
+**第 2 步：確定方法**
+使用 Elixir 任務進行並發執行。
+**步驟 3：實施**```elixir
+urls = ["https://example.com", "https://example.org", "https://example.net"]
+
+tasks = Enum.map(urls, fn url ->
+  Task.async(fn ->
+    case HTTPoison.get(url) do
+      {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
+        {url, :ok, String.length(body)}
+      {:ok, %HTTPoison.Response{status_code: code}} ->
+        {url, :error, code}
+      {:error, %HTTPoison.Error{reason: reason}} ->
+        {url, :error, reason}
+    end
+  end)
+end)
+
+results = Task.await_many(tasks, 10_000)
+```
+
+**第 4 步：優化**
+為大型 URL 清單新增速率限制、重試和串流。
 ---
 
 ＃＃ 概括

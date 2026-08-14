@@ -228,7 +228,7 @@ When I receive [fire_bullet]:
 
 ## Architettura e progettazione di sistemi
 ### Progettazione guidata dagli eventi
-Scratch utilizza un'architettura guidata dagli eventi. Ogni script inizia con un blocco di eventi (hat block) e viene eseguito in risposta a quell'evento.
+Scratch utilizza un'architettura guidata dagli eventi. Ogni script inizia con un blocco evento (blocco hat) e viene eseguito in risposta a quell'evento.
 ```
 Event Types:
 +-------------------------------------------+
@@ -260,7 +260,7 @@ scratch-project/
 └── README.md
 ```
 
-### Sistema di clonazione (creazione di oggetti)
+### Sistema clone (creazione di oggetti)
 ```
 // Creating clones (like creating object instances)
 When green flag clicked:
@@ -348,7 +348,7 @@ Installation:
 Scratch fornisce diversi strumenti integrati per il debug dei progetti:
 | Strumento | Come usare |
 |------|-----------|
-| **Modalità Tartaruga** | Fai clic con il pulsante destro del mouse su uno sprite e seleziona "mostra debug" per vedere le coordinate |
+| **Modalità Tartaruga** | Fare clic con il tasto destro su uno sprite e selezionare "mostra debug" per vedere le coordinate |
 | **Monitor variabili** | Fare clic con il tasto destro su una variabile e selezionare "mostra" per vederne il valore in tempo reale |
 | **Elenco monitor** | Visualizza il contenuto dell'elenco nella visualizzazione normale, di riga o di colonna |
 | **Modalità Turbo** | Tieni premuto Maiusc mentre fai clic sulla bandiera verde per un'esecuzione più rapida |
@@ -385,7 +385,7 @@ When green flag clicked:
 | Lo sprite non risponde | Nessun blocco cappello evento | Aggiungi "Quando si fa clic sulla bandiera verde" o altro evento |
 | La clonazione non funziona | Clone creato ma non mostrato | Aggiungi il blocco "Mostra" dopo "Quando avvio come clone" |
 | Variabile condivisa tra sprite | Confusione tra variabili globali e locali | Usa l'opzione "Solo per questo sprite" |
-| Trasmissione non ricevuta | Nome del messaggio errato | Verificare che i nomi di trasmissione e ricezione corrispondano esattamente |
+| Trasmissione non ricevuta | Nome messaggio errato | Verificare che i nomi di trasmissione e ricezione corrispondano esattamente |
 | Blocco del ciclo infinito | "Per sempre" senza aspettare | Aggiungi piccoli blocchi "Aspetta" in cicli stretti |
 ---
 
@@ -676,6 +676,120 @@ Dopo aver appreso Scratch, i passaggi successivi tipici includono:
 | Prototipazione visiva di idee di gioco | Iterazione veloce | — |
 | Sviluppo professionale | Non progettato per questo | Python, JavaScript, qualsiasi linguaggio testuale |
 | Formazione informatica a livello universitario | Troppo semplice | Python, Java, C |
+---
+
+## Domande e risposte sintetiche
+**Q1: Scratch è davvero un linguaggio di programmazione?**
+A1: Sì, Scratch è un vero linguaggio di programmazione, ma è visivo anziché testuale. Supporta tutti i concetti fondamentali della programmazione: variabili, cicli, condizionali, funzioni (blocchi personalizzati), elenchi e programmazione guidata dagli eventi. La differenza è che trascini e rilascia i blocchi invece di digitare il codice. Ciò elimina gli errori di sintassi e rende la programmazione accessibile ai giovani studenti.
+**Q2: Come posso creare funzioni personalizzate (blocchi personalizzati) in Scratch?**
+R2: Vai alla categoria "I miei blocchi" e fai clic su "Crea un blocco". Dagli un nome, aggiungi parametri se necessario, quindi definisci il suo comportamento aggiungendo blocchi sottostanti. I blocchi personalizzati possono accettare input (numeri, stringhe, booleani) e possono chiamare altri blocchi personalizzati. Ciò consente la programmazione modulare e il riutilizzo del codice.
+**Q3: Qual è il modo migliore per gestire la logica di gioco complessa in Scratch?**
+R3: Utilizza blocchi personalizzati per organizzare la logica, trasmetti messaggi per il coordinamento degli eventi tra sprite e utilizza elenchi per memorizzare lo stato del gioco (punteggi, livelli, inventario). Per l'intelligenza artificiale complessa, utilizzare macchine a stati finiti con variabili che tracciano lo stato corrente. Clona gli sprite per più nemici e usa "quando inizio come clone" per dare a ciascuno un comportamento indipendente.
+**Q4: Come posso condividere i dati tra gli sprite in Scratch?**
+R4: Utilizza variabili globali (create senza "solo per questo sprite") per dati condivisi come punteggio o stato del gioco. Utilizza i messaggi trasmessi per attivare eventi tra gli sprite. Per comunicazioni più complesse, utilizzare gli elenchi come strutture dati condivise. Ogni sprite può leggere e modificare variabili ed elenchi globali, consentendo il coordinamento.
+**Q5: Quali sono alcune tecniche avanzate in Scratch?**
+A5: utilizzare i blocchi penna per disegnare e creare effetti visivi. Implementa il raycasting per una grafica simile al 3D. Utilizza variabili cloud per giochi multiplayer (richiede lo stato Scratcher). Crea una generazione procedurale con numeri ed elenchi casuali. Utilizza blocchi personalizzati con parametri per algoritmi riutilizzabili. Sperimenta il rilevamento video e la manipolazione del suono per progetti interattivi.
+---
+
+## Catena di pensieri
+### Problema 1: creare un gioco platform
+**Passaggio 1: comprendere il problema**
+Dobbiamo creare un platform in cui un personaggio possa muoversi a sinistra/destra, saltare, evitare ostacoli e raccogliere oggetti.
+**Passaggio 2: identificare l'approccio**
+- Utilizzare la simulazione della gravità con una variabile "in caduta".
+- Rileva terreno/collisione utilizzando il colore o il tocco dello sprite
+- Memorizza i dati di livello negli elenchi
+- Utilizza blocchi personalizzati per la logica del salto e del movimento
+**Passaggio 3: implementa la soluzione**```scratch
+// Gravity and movement
+when green flag clicked
+forever
+  change y by (y velocity)
+  if touching color [brown] then
+    set [y velocity v] to [0]
+    set [is jumping v] to [0]
+  else
+    change [y velocity v] by (-1)
+  end
+  
+  if key [right arrow v] pressed then
+    change x by (5)
+  end
+  if key [left arrow v] pressed then
+    change x by (-5)
+  end
+  if key [space v] pressed and not <is jumping = [1]> then
+    set [y velocity v] to [10]
+    set [is jumping v] to [1]
+  end
+end
+```
+
+**Passaggio 4: verifica e ottimizza**
+Prova a saltare su diverse piattaforme. Regola la gravità e l'altezza del salto per una buona sensazione di gioco. Aggiungi animazioni per correre e saltare. Implementare checkpoint utilizzando messaggi broadcast.
+---
+
+### Problema 2: creazione di un gioco a quiz con monitoraggio del punteggio
+**Passaggio 1: comprendere il problema**
+Costruisci un gioco a quiz che pone domande, controlla le risposte e tiene traccia del punteggio del giocatore.
+**Passaggio 2: identificare l'approccio**
+- Memorizza domande e risposte in elenchi paralleli
+- Utilizza un contatore di domande per monitorare i progressi
+- Utilizzare i blocchi "chiedi e attendi" per l'input
+- Confronta le risposte e aggiorna il punteggio
+**Passaggio 3: implementa la soluzione**```scratch
+when green flag clicked
+set [score v] to [0]
+set [question number v] to [1]
+
+repeat (length of [questions v])
+  ask (item (question number) of [questions v]) and wait
+  if <(answer) = (item (question number) of [answers v])> then
+    change [score v] by (1)
+    say [Correct!] for (2) secs
+  else
+    say [Wrong!] for (2) secs
+  end
+  change [question number v] by (1)
+end
+
+say (join [Final score: ] join (score) [/5]) for (4) secs
+```
+
+**Passaggio 4: verifica e ottimizza**
+Test con varie risposte inclusi casi limite. Aggiungi feedback per le risposte sbagliate. Implementare un'opzione di riprova. Aggiungi effetti sonori e feedback visivo per le risposte corrette/sbagliate.
+---
+
+### Problema 3: disegnare alberi frattali con la penna
+**Passaggio 1: comprendere il problema**
+Crea un albero frattale ricorsivo utilizzando l'estensione penna.
+**Passaggio 2: identificare l'approccio**
+- Usa la ricorsione per disegnare rami
+- Ogni ramo si divide in due rami più piccoli
+- Usa angoli casuali per variazioni naturali
+- Tieni traccia della lunghezza del ramo e diminuisci con ogni livello di ricorsione
+**Passaggio 3: implementa la soluzione**```scratch
+define draw branch (length)
+pen down
+glide (1) secs to (x:(x position) + (length * cos of direction)) (y:(y position) + (length * sin of direction))
+pen up
+
+if <(length) > [5]> then
+  turn right (pick random (10) to (45))
+  draw branch (length * 0.7)
+  turn left (pick random (20) to (90))
+  draw branch (length * 0.7)
+end
+
+when green flag clicked
+erase all
+goto x:(0) y:(-150)
+point in direction (90)
+draw branch (100)
+```
+
+**Passaggio 4: verifica e ottimizza**
+Regola la soglia della lunghezza del ramo e gli intervalli di angolazione per alberi estetici. Aggiungi foglie alle punte dei rami usando i cambi di colore. Implementa diversi stili di albero. Salva i disegni come immagini.
 ---
 
 ## Riepilogo

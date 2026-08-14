@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Scala
 Scala (Scalable Language) ist eine statisch typisierte, kompilierte Programmiersprache, die objektorientierte und funktionale Programmierparadigmen kombiniert. Scala wurde von Martin Odersky entwickelt und erstmals 2004 veröffentlicht. Es läuft auf der JVM (auch Scala.js für JavaScript und Scala Native). Es wurde entwickelt, um die Ausführlichkeit von Java zu reduzieren und gleichzeitig die vollständige Java-Interoperabilität aufrechtzuerhalten.
 Scala ist die Sprache hinter Apache Spark (dem Big-Data-Verarbeitungs-Framework) und wird häufig in der Datentechnik, verteilten Systemen und Backend-Diensten verwendet. Unternehmen wie Twitter (jetzt X), LinkedIn, Netflix und The Guardian nutzen Scala.
@@ -118,7 +119,7 @@ implicit class StringOps(val s: String) extends AnyVal {
 
 ## Erweiterte Syntax und Muster
 ### Typklassen (über Implizite)
-Scala 2 verwendet implizite Parameter zum Codieren von Typklassen. Scala 3 führt die native Syntax`given`/`using`ein.
+Scala 2 verwendet implizite Parameter zum Codieren von Typklassen. Scala 3 führt die native `given`/`using`-Syntax ein.
 ```scala
 // Scala 2 style: implicit-based type classes
 trait Show[A] {
@@ -742,7 +743,7 @@ class OrderService(repo: OrderRepository[IO]) {
 | Werkzeug | Zweck | Verwendung |
 |------|---------|-------|
 | **JMH** | Mikro-Benchmarking |  `sbt-jmh`-Plugin |
-| **VisualVM** | JVM-Profilerstellung und -Überwachung | `jvisualvm`Befehl |
+| **VisualVM** | JVM-Profilerstellung und -Überwachung |  `jvisualvm`-Befehl |
 | **Asynchroner Profiler** | CPU-/Speicherprofilierung mit geringem Overhead | An laufende JVM anhängen |
 | **IhrKit** | Kommerzieller Profiler | IDE-Integration |
 | **sbt-berichterstattung** | Codeabdeckung | `sbt coverage test coverageReport`|
@@ -845,7 +846,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 ---
 
-## Wann man Scala verwenden sollte
+## Wann Scala verwendet werden sollte
 | Szenario | Warum Scala | Bessere Alternative |
 |----------|----------|-----|
 | Big Data (Spark) | Die primäre Spark-Sprache | Python (PySpark) für einfachere Pipelines |
@@ -854,6 +855,188 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 | Funktionale Programmierung auf JVM | Beste FP + JVM-Kombination | Clojure |
 | Allgemeine Anwendungsentwicklung | Möglich, aber komplex | Python, Go, Java |
 | Datenwissenschaft | Möglich, aber nicht das Ökosystem | Python, R |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Wie reduziert die Typinferenz von Scala die Boilerplate im Vergleich zu Java?
+**A:** Scalas Compiler leitet Typen für `val`-/`var`-Deklarationen, Methodenrückgabetypen und anonyme Funktionen ab. Dadurch entfällt in den meisten Fällen die Notwendigkeit expliziter Typanmerkungen:
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+Der Compiler leitet außerdem Typparameter, Rückgabetypen von Einzelausdrucksmethoden und Musterübereinstimmungstypen ab. Dies macht den Code prägnant, ohne die Sicherheit zu beeinträchtigen.
+### F2: Wann sollte ich`case class`im Vergleich zum regulären`class`verwenden?
+**A:** Verwenden Sie`case class`für unveränderliche Datenträger – sie bieten automatisch Unterstützung für `equals`, `hashCode`, `toString`,`copy`und Mustervergleich:
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+Faustregel: Wenn Ihre Klasse hauptsächlich aus Daten besteht, verwenden Sie`case class`. Wenn es einen veränderlichen Zustand oder ein komplexes Verhalten aufweist, verwenden Sie einen regulären`class`.
+### F3: Wie gehe ich in Scala idiomatisch mit Fehlern um?
+**A:** Scala bevorzugt die Rückgabe von Typen wie`Option`,`Either`und`Try`gegenüber dem Auslösen von Ausnahmen:
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### F4: Was ist der Unterschied zwischen`trait`und `abstract class`?
+**A:** Merkmale unterstützen Mehrfachvererbung und können Typparameter und konkrete Methoden haben. Abstrakte Klassen können Konstruktorparameter haben, unterstützen aber nur die Einzelvererbung:
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### F5: Wie schreibe ich performanten Scala-Code auf der JVM?
+**A:** Schlüsselpraktiken:
+- Verwenden Sie`case class`und unveränderliche Daten, um eine Synchronisierung zu vermeiden
+- Bevorzugen Sie `Vector`,`Map`(unveränderlich) für die strukturelle gemeinsame Nutzung
+– Verwenden Sie die Annotation `@tailrec`, um eine Tail-Call-Optimierung sicherzustellen
+- Vermeiden Sie übermäßiges Boxen – verwenden Sie die Grundelemente`Int`und `Double`
+- Verwenden Sie`lazy val`für aufwendige Berechnungen
+- Bevorzugen Sie`Stream`/`LazyList`für große Sequenzen
+– Profil mit JMH – Scalas Abstraktionen sollten zu effizientem Bytecode kompiliert werden
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Implementierung eines typsicheren Ausdrucks-Evaluators
+**Schritt 1: Verstehen Sie das Problem**
+Wir müssen mathematische Ausdrücke mit Variablen auswerten und dabei Addition, Multiplikation und Variablensuche unterstützen.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie algebraische Datentypen (versiegelte Merkmals- und Fallklassen), um den Ausdrucksbaum zu modellieren, und verwenden Sie anschließend einen Mustervergleich zur Auswertung.
+**Schritt 3: Implementieren**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**Schritt 4: Überprüfen und erweitern**
+Fügen Sie die Fälle `Div`,`Pow`und`Neg`hinzu. Das versiegelte Merkmal stellt sicher, dass der Compiler vor nicht erschöpfenden Übereinstimmungen warnt.
+### Problem 2: Aufbau eines einfachen DSL für die HTML-Generierung
+**Schritt 1: Verstehen Sie das Problem**
+Erstellen Sie eine typsichere DSL, die mithilfe der Scala-Syntax HTML-Zeichenfolgen generiert.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Anwendungsfallklassen für HTML-Elemente und implizite Konvertierungen für eine natürliche Syntax.
+**Schritt 3: Implementieren**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**Schritt 4: Überprüfen**
+Das DSL ist typsicher – Sie können nicht versehentlich Nicht-HTML-Inhalte weitergeben. Der Musterabgleich auf`HtmlNode`gewährleistet ein umfassendes Rendering.
+### Problem 3: Gleichzeitige Wortzählung mit Akka Streams
+**Schritt 1: Verstehen Sie das Problem**
+Zählen Sie Worthäufigkeiten in mehreren großen Dateien gleichzeitig.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie die parallelen Sammlungen von Scala oder Akka Streams für die gleichzeitige Verarbeitung und führen Sie dann die Ergebnisse zusammen.
+**Schritt 3: Implementieren**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**Schritt 4: Optimieren**
+Verwenden Sie für sehr große Datensätze Akka Streams mit Gegendruck:```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ## Zusammenfassung

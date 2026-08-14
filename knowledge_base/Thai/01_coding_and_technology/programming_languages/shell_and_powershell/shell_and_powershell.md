@@ -40,7 +40,7 @@ contribution:
 ---
 
 #เชลล์และพาวเวอร์เชลล์
-การเขียนสคริปต์เชลล์หมายถึงการเขียนสคริปต์สำหรับล่ามบรรทัดคำสั่ง เชลล์ที่สำคัญที่สุดสองเชลล์คือ **Bash** (Bourne Again Shell) — ค่าเริ่มต้นบน Linux และ macOS — และ **PowerShell** — เชลล์ข้ามแพลตฟอร์มที่ทันสมัยและภาษาสคริปต์ของ Microsoft เชลล์สคริปต์ทำให้งานการดูแลระบบอัตโนมัติ สร้างไปป์ไลน์ การประมวลผลไฟล์ และเวิร์กโฟลว์การปรับใช้
+การเขียนสคริปต์เชลล์หมายถึงการเขียนสคริปต์สำหรับล่ามบรรทัดคำสั่ง เชลล์ที่สำคัญที่สุดสองเชลล์คือ **Bash** (Bourne Again Shell) — ค่าเริ่มต้นบน Linux และ macOS — และ **PowerShell** — เชลล์ข้ามแพลตฟอร์มที่ทันสมัยและภาษาสคริปต์ของ Microsoft เชลล์สคริปต์ทำให้งานการดูแลระบบเป็นไปโดยอัตโนมัติ สร้างไปป์ไลน์ การประมวลผลไฟล์ และเวิร์กโฟลว์การปรับใช้
 นักพัฒนา วิศวกร DevOps และผู้ดูแลระบบทุกคนจำเป็นต้องมีทักษะการเขียนสคริปต์เชลล์ ไม่ว่าคุณจะปรับใช้เว็บเซิร์ฟเวอร์ ประมวลผลไฟล์บันทึก การตั้งค่าไปป์ไลน์ CI/CD หรือสำรองข้อมูลอัตโนมัติ Shell Scripting คือเครื่องมือสำหรับงานนี้
 ---
 
@@ -679,7 +679,7 @@ $response | ConvertTo-Json -Depth 5
 ---
 
 ## รูปแบบการออกแบบ
-### รูปแบบ 1: ลองอีกครั้งโดย Backoff (Bash)
+### รูปแบบ 1: ลองอีกครั้งด้วย Backoff (Bash)
 ```bash
 #!/bin/bash
 retry_with_backoff() {
@@ -858,6 +858,152 @@ Publish-Module @publishParams
 | การวิเคราะห์บันทึก | grep/awk ด่วนแบบหนึ่งบรรทัด | Python, SQL สำหรับการวิเคราะห์ที่ซับซ้อน |
 | การใช้งานที่ซับซ้อน | ไม่เหมาะ | Python, Go, Java |
 | สคริปต์ข้ามแพลตฟอร์ม | PowerShell 7+ ใช้งานได้ทุกที่ | Python สำหรับสคริปต์แบบพกพาอย่างแท้จริง |
+---
+
+## คำถามและคำตอบสังเคราะห์
+### Q1: อะไรคือความแตกต่างระหว่างเครื่องหมายคำพูดเดี่ยวและเครื่องหมายคำพูดคู่ใน Bash?
+**A:** เครื่องหมายคำพูดคู่อนุญาตให้มีการขยายตัวแปรได้ คำพูดเดี่ยวเป็นตัวอักษร:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: ฉันจะจัดการกับข้อผิดพลาดในเชลล์สคริปต์ได้อย่างไร?
+**A:** ใช้`set -e`เพื่อออกเมื่อมีข้อผิดพลาด และดักจับเพื่อล้างข้อมูล:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3: ฉันจะประมวลผลอาร์กิวเมนต์บรรทัดคำสั่งอย่างถูกต้องได้อย่างไร
+**A:** ใช้`getopts`สำหรับแฟล็กและพารามิเตอร์ตำแหน่ง:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### คำถามที่ 4: ไปป์ไลน์ PowerShell คืออะไร และแตกต่างจาก Bash อย่างไร
+**A:** PowerShell ไปป์วัตถุ ไม่ใช่ข้อความ แต่ละวัตถุยังคงรักษาคุณสมบัติไว้:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: ฉันจะเขียนสคริปต์ข้ามแพลตฟอร์มได้อย่างไร
+**A:** สำหรับ Bash: ใช้`#!/usr/bin/env bash`หลีกเลี่ยงการติดธงเฉพาะ GNU สำหรับ PowerShell: ใช้`pwsh`(PowerShell Core) ซึ่งทำงานบน Linux/macOS/Windows
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: สคริปต์การประมวลผลภาพเป็นชุด (Bash)
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+ปรับขนาดรูปภาพ PNG ทั้งหมดในไดเร็กทอรีให้มีความกว้างสูงสุด 800px
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้`find`เพื่อค้นหาไฟล์และ`convert`(ImageMagick) เพื่อปรับขนาด
+**ขั้นตอนที่ 3: นำไปใช้**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**ขั้นตอนที่ 4: ขยาย**
+เพิ่มแถบความคืบหน้า การจัดการข้อผิดพลาดสำหรับภาพที่เสียหาย และการประมวลผลแบบขนานด้วย `xargs -P`
+### ปัญหาที่ 2: การหมุนบันทึกอัตโนมัติ (Bash)
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+หมุนเวียนไฟล์บันทึกทุกวัน บีบอัดบันทึกเก่า และลบบันทึกที่เก่ากว่า 30 วัน
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้`find`กับตัวกรองตามเวลาและ`gzip`สำหรับการบีบอัด
+**ขั้นตอนที่ 3: นำไปใช้**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**ขั้นตอนที่ 4: กำหนดการ**
+เพิ่มใน crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### ปัญหา 3: การตรวจสอบสภาพบริการ Windows (PowerShell)
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+ตรวจสอบว่าบริการที่สำคัญกำลังทำงานอยู่หรือไม่และส่งการแจ้งเตือนหากมีการหยุดทำงาน
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้`Get-Service`และกรองบริการที่หยุดทำงาน
+**ขั้นตอนที่ 3: นำไปใช้**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**ขั้นตอนที่ 4: อัตโนมัติ**
+กำหนดเวลาเป็นงาน Windows Task Scheduler ที่ทำงานทุกๆ 5 นาที
 ---
 
 ## สรุป

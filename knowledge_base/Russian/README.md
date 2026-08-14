@@ -1,4 +1,4 @@
-# Английская база знаний
+# База знаний
 Обширная коллекция справочных документов по программированию, технологиям, искусственному интеллекту, науке, бизнесу, гуманитарным наукам и т. д., написанная в естественном разговорном стиле и предназначенная как для обучения искусственному интеллекту, так и для обучения людей.
 **Последнее обновление:** август 2026 г.  
 **Всего файлов:** Более 138 документов с уценкой.  
@@ -7,7 +7,7 @@
 
 ## Структура каталогов
 ```
-knowledge_base/English/
+knowledge_base/Russian/
 ├── 01_coding_and_technology/          # Programming, web, databases, cloud, networking, DevOps, security
 │   └── programming_languages/         # 34 individual language references
 │       ├── python/python.md
@@ -33,18 +33,13 @@ knowledge_base/English/
 **Основные темы:**
 | Файл | Описание |
 |------|-------------|
-| [web_development.md](01_coding_and_technology/web_development.md)| Фронтенд, бэкенд, DevOps, безопасность |
 | [database_systems.md](01_coding_and_technology/database_systems.md)| SQL, NoSQL, шаблоны проектирования, оптимизация |
 | [cloud_architecture.md](01_coding_and_technology/cloud_architecture.md)| Поставщики облачных услуг, шаблоны архитектуры, безопасность |
 | [networking_basics.md](01_coding_and_technology/networking_basics.md)| Модель OSI, TCP/IP, протоколы, безопасность |
 | [devops_sysadmin.md](01_coding_and_technology/devops_sysadmin.md)| SSH, systemd, ведение журнала, мониторинг, резервное копирование, Docker, CI/CD |
-| [security_best_practices.md](01_coding_and_technology/security_best_practices.md)| OWASP Top 10, проверка ввода, аутентификация, управление секретами |
 | [devops_and_cicd.md](01_coding_and_technology/devops_and_cicd.md)| конвейеры CI/CD, Docker, Kubernetes, Terraform, GitOps |
 | [cybersecurity_fundamentals.md](01_coding_and_technology/cybersecurity_fundamentals.md)| Шифрование, TLS, OWASP, безопасное кодирование, SDL |
 | [api_design_and_architecture.md](01_coding_and_technology/api_design_and_architecture.md)| REST, GraphQL, gRPC, управление версиями, аутентификация, шлюзы API |
-| [software_architecture_patterns.md](01_coding_and_technology/software_architecture_patterns.md)| Монолит, микросервисы, управление событиями, DDD, кэширование, SOLID |
-| [technology_glossary.md](01_coding_and_technology/technology_glossary.md)| Техническая терминология (модели искусственного интеллекта, аппаратное обеспечение, тесты) |
-| [tool_usage.md](01_coding_and_technology/tool_usage.md)| Инструменты разработки и утилиты |
 | [accessibility_and_inclusive_design.md](01_coding_and_technology/accessibility_and_inclusive_design.md)| WCAG, инклюзивный UX, вспомогательные технологии, доступное программирование |
 | [blockchain_and_distributed_systems.md](01_coding_and_technology/blockchain_and_distributed_systems.md)| Консенсус, смарт-контракты, DeFi, византийская отказоустойчивость |
 | [data_structures_and_algorithms.md](01_coding_and_technology/data_structures_and_algorithms.md)| Массивы, деревья, графы, сортировка, поиск, сложность |
@@ -52,7 +47,6 @@ knowledge_base/English/
 | [low_code_and_platform_engineering.md](01_coding_and_technology/low_code_and_platform_engineering.md)| Платформы Low-code, внутренние платформы разработчиков, золотые пути |
 | [mobile_development.md](01_coding_and_technology/mobile_development.md)| iOS, Android, React Native, Flutter, мобильная архитектура |
 | [performance_optimization.md](01_coding_and_technology/performance_optimization.md)| Профилирование, кеширование, CDN, оптимизация запросов, производительность внешнего интерфейса |
-| [testing_methodologies.md](01_coding_and_technology/testing_methodologies.md)| Модуль, интеграция, E2E, TDD, BDD, пирамиды тестирования |
 **Языки программирования (34 языка):**
 Каждый язык имеет свой собственный подкаталог с подробным справочником, охватывающим обзор, компромиссы, основы синтаксиса, экосистему и время его использования.
 | Язык | Путь | | Язык | Путь |
@@ -77,31 +71,31 @@ knowledge_base/English/
 ### 02 — Искусственный интеллект и машинное обучение
 | Файл | Описание |
 |------|-------------|
-| [artificial_intelligence.md](02_ai_and_machine_learning/artificial_intelligence.md)| Обзор искусственного интеллекта, машинное обучение, глубокое обучение, степень магистра права, этика |
-| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/ml_evaluation_and_workflow.md)| Конвейеры машинного обучения, метрики, лучшие практики |
-| [phi3_and_local_models.md](02_ai_and_machine_learning/phi3_and_local_models.md)| Локальный запуск моделей |
-| [local_ai_architecture.md](02_ai_and_machine_learning/local_ai_architecture.md)| Локальные архитектуры развертывания ИИ |
-| [prompt_engineering.md](02_ai_and_machine_learning/prompt_engineering.md)| Оперативные методы и стратегии |
-| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/data_engineering_and_pipelines.md)| ETL/ELT, озера данных, оркестровка, Kafka, хранилища функций |
-| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/ml_engineering_and_mlops.md)| Обслуживание моделей, реестры, стратегии развертывания, мониторинг дрейфа |
-| [computer_vision_fundamentals.md](02_ai_and_machine_learning/computer_vision_fundamentals.md)| CNN, обнаружение объектов, сегментация, трансферное обучение |
-| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_fundamentals.md)| Обработка текста, встраивание, преобразователи, BERT, GPT |
-| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ai_ethics_and_governance.md)| Предвзятость ИИ, справедливость, подотчетность, регулирование, основы управления |
-| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ai_safety_and_alignment.md)| Проблема выравнивания, RLHF, интерпретируемость, исследование безопасности ИИ |
-| [federated_learning_and_privacy.md](02_ai_and_machine_learning/federated_learning_and_privacy.md)| Децентрализованное обучение, дифференцированная конфиденциальность, безопасное агрегирование |
-| [generative_ai_deep_dive.md](02_ai_and_machine_learning/generative_ai_deep_dive.md)| GAN, VAE, диффузионные модели, LLM, генеративные приложения искусственного интеллекта |
-| [graph_neural_networks.md](02_ai_and_machine_learning/graph_neural_networks.md)| GCN, GAT, передача сообщений, графы знаний, графовые задачи |
-| [model_optimization_and_deployment.md](02_ai_and_machine_learning/model_optimization_and_deployment.md)| Квантование, обрезка, дистилляция, ONNX, обслуживающая инфраструктура |
-| [multimodal_ai.md](02_ai_and_machine_learning/multimodal_ai.md)| Модели визуального языка, CLIP, DALL-E, кросс-модальное обучение |
-| [recommendation_systems.md](02_ai_and_machine_learning/recommendation_systems.md)| Совместная фильтрация, контентная, гибридная, матричная факторизация |
-| [reinforcement_learning.md](02_ai_and_machine_learning/reinforcement_learning.md)| MDP, Q-learning, градиенты политики, RLHF, многоагентные системы |
-| [speech_and_audio_processing.md](02_ai_and_machine_learning/speech_and_audio_processing.md)| ASR, TTS, аудиофункции, Whisper, речевые конвейеры |
-| [time_series_and_forecasting.md](02_ai_and_machine_learning/time_series_and_forecasting.md)| ARIMA, Prophet, LSTM, сезонность, обнаружение аномалий |
+| [artificial_intelligence.md](02_ai_and_machine_learning/foundations/artificial_intelligence.md)| Обзор искусственного интеллекта, машинное обучение, глубокое обучение, степень магистра права, этика |
+| [ml_evaluation_and_workflow.md](02_ai_and_machine_learning/foundations/ml_evaluation_and_workflow.md)| Конвейеры машинного обучения, метрики, лучшие практики |
+| [phi3_and_local_models.md](02_ai_and_machine_learning/engineering/phi3_and_local_models.md)| Локальный запуск моделей |
+| [local_ai_architecture.md](02_ai_and_machine_learning/engineering/local_ai_architecture.md)| Локальные архитектуры развертывания ИИ |
+| [prompt_engineering.md](02_ai_and_machine_learning/foundations/prompt_engineering.md)| Оперативные методы и стратегии |
+| [data_engineering_and_pipelines.md](02_ai_and_machine_learning/engineering/data_engineering_and_pipelines.md)| ETL/ELT, озера данных, оркестровка, Kafka, хранилища функций |
+| [ml_engineering_and_mlops.md](02_ai_and_machine_learning/engineering/ml_engineering_and_mlops.md)| Обслуживание моделей, реестры, стратегии развертывания, мониторинг дрейфа |
+| [computer_vision_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/computer_vision_fundamentals.md)| CNN, обнаружение объектов, сегментация, трансферное обучение |
+| [nlp_fundamentals.md](02_ai_and_machine_learning/nlp_and_speech/nlp_fundamentals.md)| Обработка текста, встраивание, преобразователи, BERT, GPT |
+| [ai_ethics_and_governance.md](02_ai_and_machine_learning/ethics_and_safety/ai_ethics_and_governance.md)| Предвзятость ИИ, справедливость, подотчетность, регулирование, основы управления |
+| [ai_safety_and_alignment.md](02_ai_and_machine_learning/ethics_and_safety/ai_safety_and_alignment.md)| Проблема выравнивания, RLHF, интерпретируемость, исследование безопасности ИИ |
+| [federated_learning_and_privacy.md](02_ai_and_machine_learning/architectures/federated_learning_and_privacy.md)| Децентрализованное обучение, дифференцированная конфиденциальность, безопасное агрегирование |
+| [generative_ai_deep_dive.md](02_ai_and_machine_learning/architectures/generative_ai_deep_dive.md)| GAN, VAE, диффузионные модели, LLM, генеративные приложения искусственного интеллекта |
+| [graph_neural_networks.md](02_ai_and_machine_learning/architectures/graph_neural_networks.md)| GCN, GAT, передача сообщений, графы знаний, графовые задачи |
+| [model_optimization_and_deployment.md](02_ai_and_machine_learning/engineering/model_optimization_and_deployment.md)| Квантование, обрезка, дистилляция, ONNX, обслуживающая инфраструктура |
+| [multimodal_ai.md](02_ai_and_machine_learning/nlp_and_speech/multimodal_ai.md)| Модели визуального языка, CLIP, DALL-E, кросс-модальное обучение |
+| [recommendation_systems.md](02_ai_and_machine_learning/architectures/recommendation_systems.md)| Совместная фильтрация, контентная, гибридная, матричная факторизация |
+| [reinforcement_learning.md](02_ai_and_machine_learning/architectures/reinforcement_learning.md)| MDP, Q-learning, градиенты политики, RLHF, многоагентные системы |
+| [speech_and_audio_processing.md](02_ai_and_machine_learning/nlp_and_speech/speech_and_audio_processing.md)| ASR, TTS, аудиофункции, Whisper, речевые конвейеры |
+| [time_series_and_forecasting.md](02_ai_and_machine_learning/nlp_and_speech/time_series_and_forecasting.md)| ARIMA, Prophet, LSTM, сезонность, обнаружение аномалий |
 ### 03 — Наука о данных и аналитика
 | Файл | Описание |
 |------|-------------|
 | [data_science_and_analytics.md](03_data_science_and_analytics/data_science_and_analytics.md)| Обработка данных, ML, большие данные, BI |
-| [math_and_logic.md](03_data_science_and_analytics/math_and_logic.md)| Математика, логика, доказательства |
+| [math_and_logic.md](03_data_science_and_analytics/mathematics/mathematics.md)| Математика, логика, доказательства |
 | [data_visualization.md](03_data_science_and_analytics/data_visualization.md)| Выбор диаграмм, принципы проектирования, повествование, инструменты |
 | [statistical_testing_and_experimentation.md](03_data_science_and_analytics/statistical_testing_and_experimentation.md)| Проверка гипотез, A/B-тестирование, размер эффекта, причинно-следственный вывод |
 | [causal_inference.md](03_data_science_and_analytics/causal_inference.md)| DAG, искажающие факторы, разница в различиях, инструментальные переменные |
@@ -113,13 +107,13 @@ knowledge_base/English/
 | Файл | Описание |
 |------|-------------|
 | [science_and_nature.md](04_natural_sciences/science_and_nature.md)| Физика, химия, биология, науки о Земле |
-| [medicine_and_healthcare.md](04_natural_sciences/medicine_and_healthcare.md)| Медицинские специальности, диагностика, лечение, этика |
-| [environmental_science_and_sustainability.md](04_natural_sciences/environmental_science_and_sustainability.md)| Экосистемы, климат, энергетика, политика |
-| [food_agriculture_and_nutrition.md](04_natural_sciences/food_agriculture_and_nutrition.md)| Сельское хозяйство, питание, продовольственные системы, устойчивость |
-| [astronomy_and_cosmology.md](04_natural_sciences/astronomy_and_cosmology.md)| Звезды, галактики, Большой взрыв, темная материя, экзопланеты, космология |
-| [genetics_and_genomics.md](04_natural_sciences/genetics_and_genomics.md)| ДНК, экспрессия генов, CRISPR, GWAS, технологии секвенирования |
-| [materials_science.md](04_natural_sciences/materials_science.md)| Кристаллические структуры, полимеры, сплавы, полупроводники, наноматериалы |
-| [neuroscience.md](04_natural_sciences/neuroscience.md)| Нейроны, структура мозга, нейротрансмиттеры, пластичность, визуализация мозга |
+| [medicine_and_healthcare.md](04_natural_sciences/life_sciences/medicine_and_healthcare.md)| Медицинские специальности, диагностика, лечение, этика |
+| [environmental_science_and_sustainability.md](04_natural_sciences/earth_and_environment/environmental_science_and_sustainability.md)| Экосистемы, климат, энергетика, политика |
+| [food_agriculture_and_nutrition.md](04_natural_sciences/life_sciences/food_agriculture_and_nutrition.md)| Сельское хозяйство, питание, продовольственные системы, устойчивость |
+| [astronomy_and_cosmology.md](04_natural_sciences/earth_and_environment/astronomy_and_cosmology.md)| Звезды, галактики, Большой взрыв, темная материя, экзопланеты, космология |
+| [genetics_and_genomics.md](04_natural_sciences/life_sciences/genetics_and_genomics.md)| ДНК, экспрессия генов, CRISPR, GWAS, технологии секвенирования |
+| [materials_science.md](04_natural_sciences/physical_sciences/materials_science.md)| Кристаллические структуры, полимеры, сплавы, полупроводники, наноматериалы |
+| [neuroscience.md](04_natural_sciences/life_sciences/neuroscience.md)| Нейроны, структура мозга, нейротрансмиттеры, пластичность, визуализация мозга |
 ### 05 — Бизнес и экономика
 | Файл | Описание |
 |------|-------------|
@@ -136,15 +130,15 @@ knowledge_base/English/
 ### 06 — Гуманитарные науки и искусство
 | Файл | Описание |
 |------|-------------|
-| [history_and_culture.md](06_humanities_and_arts/history_and_culture.md)| World history from ancient civilizations to the Information Age |
-| [geography_and_geopolitics.md](06_humanities_and_arts/geography_and_geopolitics.md)| Физическая/человеческая география, политические системы |
+| [history_and_culture.md](06_humanities_and_arts/history/history_and_culture.md)| World history from ancient civilizations to the Information Age |
+| [geography_and_geopolitics.md](06_humanities_and_arts/history/geography_and_geopolitics.md)| Физическая/человеческая география, политические системы |
 | [arts_and_literature.md](06_humanities_and_arts/arts_and_literature.md)| Литературные жанры, изобразительное искусство, музыка, кино |
-| [psychology_and_human_behavior.md](06_humanities_and_arts/psychology_and_human_behavior.md)| Когнитивная, социальная психология, психология развития |
-| [language_and_english.md](06_humanities_and_arts/language_and_english.md)| Грамматика, лингвистика, письмо |
-| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_critical_thinking.md)| Schools of thought, ethics, logic, epistemology, cognitive biases |
-| [linguistics_and_language_science.md](06_humanities_and_arts/linguistics_and_language_science.md)| Phonetics, syntax, semantics, pragmatics, sociolinguistics |
-| [music_theory_and_acoustics.md](06_humanities_and_arts/music_theory_and_acoustics.md)| Scales, chords, harmony, rhythm, room acoustics, instrument physics |
-| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/world_religions_and_comparative_mythology.md)| Major world religions, comparative mythology, belief systems |
+| [psychology_and_human_behavior.md](06_humanities_and_arts/philosophy_and_mind/psychology_and_human_behavior.md)| Когнитивная, социальная психология, психология развития |
+| [language_and_english.md](06_humanities_and_arts/language/language_and_english.md)| Грамматика, лингвистика, письмо |
+| [philosophy_and_critical_thinking.md](06_humanities_and_arts/philosophy_and_mind/philosophy_and_critical_thinking.md)| Schools of thought, ethics, logic, epistemology, cognitive biases |
+| [linguistics_and_language_science.md](06_humanities_and_arts/language/linguistics_and_language_science.md)| Phonetics, syntax, semantics, pragmatics, sociolinguistics |
+| [music_theory_and_acoustics.md](06_humanities_and_arts/arts/music_theory_and_acoustics.md)| Scales, chords, harmony, rhythm, room acoustics, instrument physics |
+| [world_religions_and_comparative_mythology.md](06_humanities_and_arts/religion_and_mythology/world_religions_and_comparative_mythology.md)| Major world religions, comparative mythology, belief systems |
 ### 07 — Общая справка
 | Файл | Описание |
 |------|-------------|
@@ -158,20 +152,20 @@ knowledge_base/English/
 ### 08 — Будущее и тенденции
 | Файл | Описание |
 |------|-------------|
-| [2026_and_future_events.md](08_future_and_trends/2026_and_future_events.md)| Предстоящие события, космические миссии, технологические тенденции |
-| [emerging_technologies.md](08_future_and_trends/emerging_technologies.md)| Квантовые вычисления, биотехнологии, нанотехнологии |
-| [future_of_work.md](08_future_and_trends/future_of_work.md)| Автоматизация, удаленная работа, переобучение |
-| [future_healthcare.md](08_future_and_trends/future_healthcare.md)| Персонализированная медицина, AI-диагностика |
-| [future_transportation.md](08_future_and_trends/future_transportation.md)| Электромобили, автономные транспортные средства, Hyperloop |
-| [demographic_shifts.md](08_future_and_trends/demographic_shifts.md)| Демографические тенденции, миграция, урбанизация |
-| [education_transformation.md](08_future_and_trends/education_transformation.md)| Онлайн-обучение, репетиторство по искусственному интеллекту |
-| [geostrategic_futures.md](08_future_and_trends/geostrategic_futures.md)| Геополитика, США-Китай, многополярный мир |
-| [scenario_planning.md](08_future_and_trends/scenario_planning.md)| Будущие сценарии и рамки |
-| [space_exploration_roadmap.md](08_future_and_trends/space_exploration_roadmap.md)| Космические миссии и сроки |
-| [sustainable_future.md](08_future_and_trends/sustainable_future.md)| Климат, энергетический переход, циркулярная экономика |
-| [ai_in_everyday_life.md](08_future_and_trends/ai_in_everyday_life.md)| Рекомендательные системы, умные помощники, конфиденциальность, экономика внимания |
-| [climate_technology_and_green_innovation.md](08_future_and_trends/climate_technology_and_green_innovation.md)| Возобновляемая энергия, электромобили, улавливание углекислого газа, экологически чистый водород, устойчивые технологии |
-| [future_of_computing.md](08_future_and_trends/future_of_computing.md)| Закон Мура, квантовые вычисления, нейроморфные чипы, периферийные вычисления |
+| [2026_and_future_events.md](08_future_and_trends/strategy/2026_and_future_events.md)| Предстоящие события, космические миссии, технологические тенденции |
+| [emerging_technologies.md](08_future_and_trends/technology/emerging_technologies.md)| Квантовые вычисления, биотехнологии, нанотехнологии |
+| [future_of_work.md](08_future_and_trends/society_and_domains/future_of_work.md)| Автоматизация, удаленная работа, переобучение |
+| [future_healthcare.md](08_future_and_trends/society_and_domains/future_healthcare.md)| Персонализированная медицина, AI-диагностика |
+| [future_transportation.md](08_future_and_trends/society_and_domains/future_transportation.md)| Электромобили, автономные транспортные средства, Hyperloop |
+| [demographic_shifts.md](08_future_and_trends/society_and_domains/demographic_shifts.md)| Демографические тенденции, миграция, урбанизация |
+| [education_transformation.md](08_future_and_trends/society_and_domains/education_transformation.md)| Онлайн-обучение, репетиторство по искусственному интеллекту |
+| [geostrategic_futures.md](08_future_and_trends/strategy/geostrategic_futures.md)| Геополитика, США-Китай, многополярный мир |
+| [scenario_planning.md](08_future_and_trends/strategy/scenario_planning.md)| Будущие сценарии и рамки |
+| [space_exploration_roadmap.md](08_future_and_trends/technology/space_exploration_roadmap.md)| Космические миссии и сроки |
+| [sustainable_future.md](08_future_and_trends/society_and_domains/sustainable_future.md)| Климат, энергетический переход, циркулярная экономика |
+| [ai_in_everyday_life.md](08_future_and_trends/technology/ai_in_everyday_life.md)| Рекомендательные системы, умные помощники, конфиденциальность, экономика внимания |
+| [climate_technology_and_green_innovation.md](08_future_and_trends/technology/climate_technology_and_green_innovation.md)| Возобновляемая энергия, электромобили, улавливание углекислого газа, экологически чистый водород, устойчивые технологии |
+| [future_of_computing.md](08_future_and_trends/technology/future_of_computing.md)| Закон Мура, квантовые вычисления, нейроморфные чипы, периферийные вычисления |
 ### 09 — Уроки неудач
 | Файл | Описание |
 |------|-------------|
@@ -187,18 +181,18 @@ knowledge_base/English/
 ### 10 — Краткий справочник
 | Файл | Описание |
 |------|-------------|
-| [python_syntax.md](10_quick_reference/python_syntax.md)| Шпаргалка по синтаксису Python |
-| [git_commands.md](10_quick_reference/git_commands.md)| Команды и рабочие процессы Git |
-| [sql_quick_ref.md](10_quick_reference/sql_quick_ref.md)| Справочник по SQL-запросам |
-| [linux_commands.md](10_quick_reference/linux_commands.md)| Справочник по командной строке Linux |
-| [docker_and_kubernetes.md](10_quick_reference/docker_and_kubernetes.md)| Шпаргалка по Docker, Docker Compose, Kubernetes, Helm |
-| [regular_expressions.md](10_quick_reference/regular_expressions.md)| Синтаксис регулярных выражений, общие шаблоны, использование в зависимости от языка |
-| [cloud_services_comparison.md](10_quick_reference/cloud_services_comparison.md)| Параллельное сравнение AWS, Azure и GCP |
-| [bash_and_shell_scripting.md](10_quick_reference/bash_and_shell_scripting.md)| Скрипты Bash, обработка текста, полезные однострочники |
-| [ansible_quick_ref.md](10_quick_reference/ansible_quick_ref.md)| Сборники схем Ansible, модули, роли, инвентарь, шпаргалка по автоматизации |
-| [cicd_pipeline_config.md](10_quick_reference/cicd_pipeline_config.md)| Действия GitHub, GitLab CI, Jenkins, шаблоны YAML конвейера |
-| [prometheus_and_grafana.md](10_quick_reference/prometheus_and_grafana.md)| PromQL, экспортеры, информационные панели, оповещения, стек мониторинга |
-| [terraform_quick_ref.md](10_quick_reference/terraform_quick_ref.md)| Концепции IaC, команды Terraform, управление состоянием, модули |
+| [python_syntax.md](10_quick_reference/programming/python_syntax.md)| Шпаргалка по синтаксису Python |
+| [git_commands.md](10_quick_reference/programming/git_commands.md)| Команды и рабочие процессы Git |
+| [sql_quick_ref.md](10_quick_reference/programming/sql_quick_ref.md)| Справочник по SQL-запросам |
+| [linux_commands.md](10_quick_reference/infrastructure/linux_commands.md)| Справочник по командной строке Linux |
+| [docker_and_kubernetes.md](10_quick_reference/infrastructure/docker_and_kubernetes.md)| Шпаргалка по Docker, Docker Compose, Kubernetes, Helm |
+| [regular_expressions.md](10_quick_reference/programming/regular_expressions.md)| Синтаксис регулярных выражений, общие шаблоны, использование в зависимости от языка |
+| [cloud_services_comparison.md](10_quick_reference/infrastructure/cloud_services_comparison.md)| Параллельное сравнение AWS, Azure и GCP |
+| [bash_and_shell_scripting.md](10_quick_reference/infrastructure/bash_and_shell_scripting.md)| Скрипты Bash, обработка текста, полезные однострочники |
+| [ansible_quick_ref.md](10_quick_reference/infrastructure/ansible_quick_ref.md)| Сборники схем Ansible, модули, роли, инвентарь, шпаргалка по автоматизации |
+| [cicd_pipeline_config.md](10_quick_reference/infrastructure/cicd_pipeline_config.md)| Действия GitHub, GitLab CI, Jenkins, шаблоны YAML конвейера |
+| [prometheus_and_grafana.md](10_quick_reference/infrastructure/prometheus_and_grafana.md)| PromQL, экспортеры, информационные панели, оповещения, стек мониторинга |
+| [terraform_quick_ref.md](10_quick_reference/infrastructure/terraform_quick_ref.md)| Концепции IaC, команды Terraform, управление состоянием, модули |
 ---
 
 ## Пути обучения
@@ -210,12 +204,9 @@ knowledge_base/English/
 ### Для разработчиков программного обеспечения
 1.`01_coding_and_technology/programming_languages/python/`(или язык по вашему выбору)
 2.`01_coding_and_technology/data_structures_and_algorithms.md`
-3.`01_coding_and_technology/web_development.md`
 4.`01_coding_and_technology/database_systems.md`
 5.`01_coding_and_technology/cloud_architecture.md`
-6.`01_coding_and_technology/software_architecture_patterns.md`
 7.`01_coding_and_technology/api_design_and_architecture.md`
-8.`01_coding_and_technology/testing_methodologies.md`
 9. `02_ai_and_machine_learning/artificial_intelligence.md`
 ### Для специалистов по данным
 1.`03_data_science_and_analytics/math_and_logic.md`

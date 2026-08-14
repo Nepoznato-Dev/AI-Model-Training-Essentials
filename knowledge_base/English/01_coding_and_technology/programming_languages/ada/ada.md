@@ -905,6 +905,169 @@ end Main;
 
 ---
 
+## Synthetic Q&A
+
+### Q1: How does Ada's type system prevent bugs at compile time?
+
+**A:** Ada's type system is among the strictest of any language. It catches errors that other languages miss:
+
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2: What is Ada's tasking model and how does it compare to other concurrency models?
+
+**A:** Ada has built-in concurrency with protected objects and tasks:
+
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3: How do I use generics in Ada?
+
+**A:** Ada generics are explicit and type-safe:
+
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4: What makes Ada suitable for safety-critical systems?
+
+**A:** Ada provides:
+- SPARK subset for formal verification (mathematical proof of correctness)
+- Contract-based programming (pre/postconditions, type invariants)
+- No implicit memory allocation in SPARK
+- Deterministic tasking and scheduling
+- Ravenscar profile for high-integrity real-time systems
+- Toolchain qualification (DO-178C for avionics)
+
+### Q5: How do I build Ada projects?
+
+**A:** Use GPRBuild with GPR project files:
+
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## Chain-of-Thought Problem Solving
+
+### Problem 1: Implementing a Type-Safe Queue
+
+**Step 1: Understand the Problem**
+Create a bounded, thread-safe queue with compile-time size checking.
+
+**Step 2: Identify the Approach**
+Use a protected object with a bounded buffer.
+
+**Step 3: Implement**
+```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**Step 4: Verify**
+The protected object guarantees mutual exclusion. Entry barriers prevent overflow/underflow.
+
+### Problem 2: Contract-Based Validation
+
+**Step 1: Understand the Problem**
+Implement a square root function with formal contracts.
+
+**Step 2: Identify the Approach**
+Use Ada 2012 contracts (pre/postconditions).
+
+**Step 3: Implement**
+```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**Step 4: Verify**
+The runtime checks (assertions) catch violations. In SPARK, these become proof obligations.
+
+---
+
 ## Summary
 
 Ada is a language built for correctness. Its strict type system, built-in concurrency, and formal verification support make it the choice for systems where failure is not acceptable. While its community is small compared to mainstream languages, Ada remains essential in aviation, defence, space, and other safety-critical domains. For these applications, Ada's rigorous approach to software engineering is not a limitation — it is the point.

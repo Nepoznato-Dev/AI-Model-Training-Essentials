@@ -410,7 +410,7 @@ lazy val root = project
 |命令 |描述 |
 |---------|-------------|
 |`sbt new scala/scala3.g8`|從模板建立新的 Scala 3 專案 |
-|`sbt compile`|編譯主要來源 |
+|`sbt compile`|編譯主要來源|
 |`sbt test`|執行所有測試 |
 |`sbt run`|運行主類別 |
 |`sbt runMain com.example.App`|運行特定的主類別 |
@@ -847,14 +847,196 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ---
 
 ## 何時使用 Scala
-|場景 |為什麼選擇 Scala |更好的選擇|
+|場景|為什麼選擇 Scala |更好的選擇|
 |----------|----------|--------------------|
 |大數據（Spark）|主要 Spark 語言 |用於更簡單管道的 Python (PySpark) |
 |分散式系統（Akka）|成熟的並發框架 |去吧，Erlang/Elixir |
 | JVM 後端 |簡潔的 Java 替代方案 | Java、Kotlin |
 | JVM 上的函數式程式設計 |最佳 FP + JVM 組合 | Clojure |
-|通用應用開發|可能但複雜| Python、Go、Java |
+|通用應用開發 |可能但複雜| Python、Go、Java |
 |資料科學|有可能但生態係不行| Python、R |
+---
+
+## 綜合問答
+### Q1：與 Java 相比，Scala 的型別推論如何減少樣板程式碼？
+**A:** Scala 的編譯器推斷`val`/`var`宣告、方法傳回型別和匿名函式的型別。在大多數情況下，這消除了對顯式類型註解的需求：
+```scala
+// Java: explicit types everywhere
+Map<String, List<Integer>> grouped = new HashMap<>();
+// Scala: types inferred
+val grouped = items.groupBy(_.category)
+```
+
+編譯器也會推斷類型參數、單表達式方法的傳回類型和模式匹配類型。這使得程式碼簡潔而不犧牲安全性。
+### Q2：我什麼時候應該使用`case class`與常規`class`？
+**A:** 將`case class`用於不可變資料載體 - 它們自動提供`equals`、`hashCode`、`toString`、`copy`和模式匹配支援：
+```scala
+// Data carrier — case class
+case class Point(x: Double, y: Double)
+val p = Point(1, 2)
+val moved = p.copy(x = 10)
+
+// Behavior-rich — regular class
+class Counter {
+  private var count = 0
+  def increment(): Unit = count += 1
+  def current: Int = count
+}
+```
+
+經驗法則：如果您的類別主要是數據，請使用`case class`。如果它具有可變狀態或複雜行為，請使用常規`class`。
+### Q3：如何在 Scala 中慣用地處理錯誤？
+**A:** Scala 更傾向於傳回`Option`、`Either`和`Try`等類型，而不是拋出例外：
+```scala
+// Option — value may be absent
+def findUser(id: Int): Option[User] = ...
+
+// Either — value or error
+def parseAge(input: String): Either[String, Int] =
+  try Right(input.toInt) catch { case _: NumberFormatException => Left(s"Invalid: $input") }
+
+// Try — computation that may fail
+import scala.util.Try
+val result = Try(riskyOperation())
+
+// For-comprehension to chain operations
+val result = for {
+  user <- findUser(id)
+  age  <- parseAge(user.ageStr).toOption
+} yield age
+```
+
+### Q4：`trait` 和`abstract class`有什麼不同？
+**A:** Traits 支援多重繼承，可以有型別參數和具體方法。抽象類別可以有建構函數參數，但只支援單一繼承：
+```scala
+// Trait — can mix in multiple
+trait Printable { def print: String }
+trait Serializable { def serialize: Array[Byte] }
+
+class User extends Printable with Serializable {
+  def print = s"User"
+  def serialize = print.getBytes
+}
+
+// Abstract class — constructor params, single inheritance
+abstract class BaseRepository(db: Database) {
+  def find(id: Long): Option[Entity]
+}
+```
+
+### Q5：如何在 JVM 上寫出高效能的 Scala 程式碼？
+**答：** 關鍵做法：
+- 使用`case class`和不可變資料來避免同步
+- 優先選擇`Vector`、`Map`（不可變）進行結構共享
+- 使用`@tailrec`註解來確保尾部呼叫最佳化
+- 避免過度裝箱 — 使用`Int`、`Double`原語
+- 使用`lazy val`進行昂貴的計算
+- 對於大型序列，首選`Stream`/ `LazyList`
+- 使用 JMH 進行分析 — Scala 的抽象應該編譯成高效率的字節碼
+---
+
+## 解決問題的思路
+### 問題 1：實作型別安全的表達式計算器
+**第 1 步：了解問題**
+我们需要用变量来计算数学表达式，支持加法、乘法和变量查找。
+**第 2 步：確定方法**
+使用代數資料類型（密封特徵+案例類別）對表達式樹進行建模，然後進行模式匹配來評估。
+**步驟 3：實施**```scala
+sealed trait Expr
+case class Num(value: Double) extends Expr
+case class Add(left: Expr, right: Expr) extends Expr
+case class Mul(left: Expr, right: Expr) extends Expr
+case class Var(name: String) extends Expr
+
+def eval(expr: Expr, env: Map[String, Double]): Option[Double] = expr match {
+  case Num(v)        => Some(v)
+  case Add(l, r)     => (eval(l, env), eval(r, env)).mapN(_ + _)
+  case Mul(l, r)     => (eval(l, env), eval(r, env)).mapN(_ * _)
+  case Var(name)     => env.get(name)
+}
+
+// Usage
+val expr = Add(Mul(Var("x"), Num(2)), Num(3))
+val env = Map("x" -> 5.0)
+eval(expr, env) // Some(13.0)
+```
+
+**第 4 步：驗證並擴充**
+新增`Div`、`Pow`、`Neg`案例。密封特徵可確保編譯器對非詳盡匹配發出警告。
+### 問題 2：建立用於 HTML 產生的簡單 DSL
+**第 1 步：了解問題**
+建立一個類型安全的 DSL，使用 Scala 的語法產生 HTML 字串。
+**第 2 步：確定方法**
+HTML 元素的使用案例類別和自然語法的隱式轉換。
+**步驟 3：實施**```scala
+sealed trait HtmlNode {
+  def render: String
+}
+
+case class Text(content: String) extends HtmlNode {
+  def render = content
+}
+
+case class Element(tag: String, children: List[HtmlNode], attrs: Map[String, String] = Map.empty) extends HtmlNode {
+  def render: String = {
+    val attrStr = attrs.map { case (k, v) => s"""$k="$v"""" }.mkString(" ")
+    val open = if (attrStr.isEmpty) s"<$tag>" else s"<$tag $attrStr>"
+    s"$open${children.map(_.render).mkString}</$tag>"
+  }
+}
+
+object HtmlDSL {
+  def div(children: HtmlNode*): Element = Element("div", children.toList)
+  def p(children: HtmlNode*): Element = Element("p", children.toList)
+  def text(s: String): Text = Text(s)
+  implicit def stringToText(s: String): Text = Text(s)
+}
+
+import HtmlDSL._
+val page = div(
+  p("Hello, World!"),
+  p("Scala DSLs are powerful.")
+)
+println(page.render)
+// <div><p>Hello, World!</p><p>Scala DSLs are powerful.</p></div>
+```
+
+**第 4 步：驗證**
+DSL 是類型安全的 — 您不會意外地傳遞非 HTML 內容。`HtmlNode`上的模式匹配可確保詳盡的渲染。
+### 問題 3：Akka Streams 的並發字數統計
+**第 1 步：了解問題**
+同時計算多個大文件中的詞頻。
+**第 2 步：確定方法**
+使用Scala的平行集合或Akka Streams進行並發處理，然後合併結果。
+**步驟 3：實施**```scala
+import scala.io.Source
+import scala.collection.parallel.CollectionConverters._
+
+def wordCount(files: List[String]): Map[String, Int] = {
+  files.par
+    .flatMap { file =>
+      Source.fromFile(file).getLines()
+        .flatMap(_.split("\\W+").filter(_.nonEmpty))
+        .map(_.toLowerCase)
+        .toList
+    }
+    .groupBy(identity)
+    .map((k, v) => (k, v.size))
+    .seq
+}
+```
+
+**第 4 步：優化**
+對於非常大的資料集，請使用帶有背壓的 Akka Streams：```scala
+Source(fileList)
+  .mapAsync(4)(file => Future(Source.fromFile(file).getLines().toList))
+  .mapConcat(identity)
+  .groupBy(256, _.toLowerCase)
+  .fold(0)((count, _) => count + 1)
+  .mergeSubstreams
+  .runWith(Sink.seq)
+```
+
 ---
 
 ＃＃ 概括

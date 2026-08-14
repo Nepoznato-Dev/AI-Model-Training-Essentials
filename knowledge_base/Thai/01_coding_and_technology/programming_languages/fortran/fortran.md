@@ -55,7 +55,7 @@ Fortran (การแปลสูตร) ​​เป็นภาษาโปร
 | ข้อจำกัด | รายละเอียด | วิธีแก้ปัญหาทั่วไป |
 |----------|---------|-------------------|
 | **ชุมชนเฉพาะกลุ่ม** | มีขนาดเล็กและเชี่ยวชาญ — ส่วนใหญ่เป็นงานด้านวิทยาศาสตร์/HPC | ชุมชนที่กระตือรือร้นในด้านวิทยาศาสตร์คอมพิวเตอร์ |
-| **ระบบนิเวศมีจำกัด** | ไลบรารีน้อยกว่า Python, Java หรือ C++ | ใช้ BLAS/LAPACK สำหรับงานเชิงตัวเลข การทำงานร่วมกันของ C สำหรับความต้องการอื่น ๆ |
+| **ระบบนิเวศมีจำกัด** | ไลบรารีน้อยกว่า Python, Java หรือ C++ | ใช้ BLAS/LAPACK สำหรับงานเชิงตัวเลข C การทำงานร่วมกันสำหรับความต้องการอื่น ๆ |
 | **ไม่ใช่วัตถุประสงค์ทั่วไป** | ไม่ดีสำหรับเว็บ มือถือ GUI หรือการเขียนโปรแกรมระบบ | ใช้ Fortran เพื่อการคำนวณ ห่อใน Python/C สำหรับแอปพลิเคชัน |
 | **การรับรู้** | มักถูกมองว่า "ล้าสมัย" แม้จะมีความสามารถที่ทันสมัย ​​| มุ่งเน้นไปที่จุดแข็ง: ตัวเลขและ HPC |
 | **การจ้างงาน** | นักพัฒนา Fortran เพียงไม่กี่คนที่เข้าสู่ตลาด | ผู้เชี่ยวชาญที่มีอยู่ในแวดวงวิชาการและห้องปฏิบัติการระดับชาติ |
@@ -282,7 +282,7 @@ end module math_utils
 ---
 
 ## การเห็นพ้องต้องกันและความเท่าเทียม
-### Coarrays (ความขนานในตัว Fortran 2008)
+### Coarrays (ความขนานในตัวของ Fortran 2008)
 ```fortran
 program coarray_example
     implicit none
@@ -781,5 +781,161 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 | วิทยาศาสตร์ข้อมูล (เชิงโต้ตอบ) | ไม่ใช่เวิร์กโฟลว์ | หลาม, อาร์ |
 ---
 
+## คำถามและคำตอบสังเคราะห์
+### คำถามที่ 1: อะไรคือความแตกต่างระหว่าง Fortran 90 และ Fortran สมัยใหม่ (2008+)?
+**ตอบ:** Modern Fortran เพิ่มคุณสมบัติมากมายที่ทำให้แสดงออกได้มากขึ้น:
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: อาร์เรย์ Fortran แตกต่างจากอาร์เรย์ C อย่างไร
+**A:** อาร์เรย์ Fortran เป็นออบเจ็กต์ชั้นหนึ่งที่มีการดำเนินการในตัว:
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: ฉันจะได้รับประสิทธิภาพสูงสุดใน Fortran ได้อย่างไร
+**ก:** แนวทางปฏิบัติหลัก:
+- ใช้`intent`ที่ชัดเจนสำหรับอาร์กิวเมนต์จำลองทั้งหมด
+- ใช้`implicit none`ทุกที่
+- ชอบการดำเนินการของอาร์เรย์มากกว่าลูป
+- ใช้รูปแบบการเข้าถึงหน่วยความจำที่ต่อเนื่องกัน
+- ใช้แฟล็กการเพิ่มประสิทธิภาพคอมไพเลอร์:`-O3 -march=native -ffast-math`
+- โปรไฟล์ด้วย`gprof`หรือเครื่องมือเฉพาะคอมไพเลอร์
+- ใช้`pure`และ`elemental`สำหรับฟังก์ชันที่คอมไพลเลอร์สามารถปรับให้เหมาะสมได้
+### Q4: ฉันจะเชื่อมต่อ Fortran กับ C ได้อย่างไร
+**ตอบ:** ใช้โมดูล `iso_c_binding`:
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### คำถามที่ 5: ฉันควรใช้ระบบบิลด์ใดสำหรับโปรเจ็กต์ Fortran
+**A:** CMake มีการสนับสนุน Fortran ที่ยอดเยี่ยม FPM (Fortran Package Manager) เป็นตัวเลือกเนทิฟสมัยใหม่:
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## การแก้ปัญหาลูกโซ่แห่งความคิด
+### ปัญหาที่ 1: การแก้ไข PDE ที่มีความแตกต่างอันจำกัด
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+แก้สมการความร้อน 1D: du/dt = alpha * d²u/dx²
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+แยกพื้นที่และเวลาโดยใช้ความแตกต่างอันจำกัด ใช้รูปแบบที่ชัดเจน
+**ขั้นตอนที่ 3: นำไปใช้**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ตรวจสอบการอนุรักษ์ การบรรจบกันด้วยการปรับแต่งกริด และเปรียบเทียบกับโซลูชันเชิงวิเคราะห์
+### ปัญหาที่ 2: เมทริกซ์เส้นทแยงมุม
+**ขั้นตอนที่ 1: ทำความเข้าใจปัญหา**
+ค้นหาค่าลักษณะเฉพาะและเวกเตอร์ลักษณะเฉพาะของเมทริกซ์สมมาตร
+**ขั้นตอนที่ 2: ระบุแนวทาง**
+ใช้รูทีน`dsyev`ของ LAPACK ผ่านทางอินเทอร์เฟซของ Fortran
+**ขั้นตอนที่ 3: นำไปใช้**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**ขั้นตอนที่ 4: ยืนยัน**
+ตรวจสอบว่า A*v = lambda*v สำหรับแต่ละคู่ลักษณะเฉพาะ
+---
+
 ## สรุป
-Fortran เป็นภาษาการเขียนโปรแกรมทางวิทยาศาสตร์ดั้งเดิมและยังคงเป็นขุมพลังในการประมวลผลประสิทธิภาพสูง Modern Fortran เป็นภาษาที่มีความสามารถและกำลังพัฒนา พร้อมด้วยการดำเนินการอาเรย์แบบดั้งเดิม การสนับสนุนการเขียนโปรแกรมแบบขนาน และการทำงานร่วมกันของ C แม้ว่าชุมชนจะเล็กและมีความเชี่ยวชาญ แต่ Fortran ยังคงรันเวิร์กโหลดการประมวลผลที่มีความต้องการมากที่สุดในโลกต่อไป สำหรับการคำนวณเชิงตัวเลขตามขนาด Fortran ยังคงมีความเกี่ยวข้อง
+Fortran เป็นภาษาการเขียนโปรแกรมทางวิทยาศาสตร์ดั้งเดิมและยังคงเป็นขุมพลังในการประมวลผลประสิทธิภาพสูง Modern Fortran เป็นภาษาที่มีความสามารถและกำลังพัฒนา พร้อมด้วยการดำเนินการอาเรย์แบบดั้งเดิม การสนับสนุนการเขียนโปรแกรมแบบขนาน และการทำงานร่วมกันของ C แม้ว่าชุมชนจะเล็กและมีความเชี่ยวชาญ แต่ Fortran ยังคงรันเวิร์กโหลดการประมวลผลที่มีความต้องการมากที่สุดในโลก สำหรับการคำนวณเชิงตัวเลขตามขนาด Fortran ยังคงมีความเกี่ยวข้อง

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Delphi / 对象 Pascal
 Delphi 是一种基于 Pascal 的面向对象编程语言，最初由 Borland（后来的 Embarcadero，现在的 Idera）开发。它于 1995 年首次发布，名为“Delphi 1”，专为 Windows 桌面应用程序的快速应用程序开发 (RAD) 而设计。该语言的正式名称为 Object Pascal，Delphi IDE 提供了可视化表单设计器、集成数据库工具和强大的编译器。
 Delphi 是 20 世纪 90 年代末和 2000 年代初最流行的 Windows 开发工具之一。尽管其受欢迎程度已大幅下降，但它仍保持着专门的用户群，特别是在企业桌面应用程序、数据库前端和遗留系统维护方面。现代 Delphi (11/12) 通过 FireMonkey (FMX) 框架支持 Windows、macOS、iOS 和 Android 的跨平台开发。
@@ -129,7 +130,7 @@ end.
 
 ## 高级语法和模式
 ### 泛型和集合
-Delphi 支持泛型（自 Delphi 2009 年起），支持类型安全的容器类。
+Delphi 支持泛型（自 Delphi 2009 起），支持类型安全的容器类。
 ```pascal
 unit GenericsDemo;
 
@@ -565,15 +566,15 @@ delphi-project/
 ### 编译器指令参考
 |指令|目的|示例|
 |------------|---------|---------|
-|  __受保护_0__ |控制台应用程序|  __受保护_1__ |
-|  __受保护_2__ | GUI 应用程序（默认）|  __受保护_3__ |
-|  __受保护_4__ |定义条件符号 |  __受保护_5__ |
-|  __受保护_6__ |条件编译 |  __受保护_7__ |
-|  __受保护_8__ |包含表单资源 |  __受保护_9__ |
-|  __受保护_10__ |抑制警告 |  __受保护_11__ |
-|  __受保护_12__ |抑制提示 |  __受保护_13__ |
-|  __受保护_14__ |启用优化器 |  __受保护_15__ |
-|  __受保护_16__ |启用字符串范围检查 |  __受保护_17__ |
+| `{$APPTYPE CONSOLE}`|控制台应用程序| `{$APPTYPE CONSOLE}`|
+| `{$APPTYPE GUI}`| GUI 应用程序（默认）| `{$APPTYPE GUI}`|
+| `{$DEFINE DEBUG}`|定义条件符号 | `{$DEFINE DEBUG}`|
+| `{$IFDEF symbol}`|条件编译 | `{$IFDEF DEBUG}`|
+| `{$R *.dfm}`|包含表单资源 | `{$R *.dfm}`|
+| `{$WARNINGS OFF}`|抑制警告 | `{$WARNINGS OFF}`|
+| `{$HINTS OFF}`|抑制提示 | `{$HINTS OFF}`|
+| `{$OPTIMIZATION ON}`|启用优化器 | `{$OPTIMIZATION ON}`|
+| `{$STRINGCHECKS ON}`|启用字符串范围检查 | `{$STRINGCHECKS ON}`|
 ### 从命令行构建
 ```batch
 REM 32-bit Windows build (DCC32)
@@ -616,7 +617,7 @@ end.
 ## 测试和调试
 ### IDE 调试器功能
 Delphi 的 IDE 包括一个全功能的集成调试器。
-|特色 |描述 |
+|特色|描述 |
 |---------|-------------|
 | **断点** |在任何可执行行上设置；支持条件断点|
 | **观察窗口** |实时监控变量值 |
@@ -1039,7 +1040,7 @@ end;
 |------------|--------|-------------|
 | **开始更新/结束更新** |高|包装列表/网格更新以防止重新绘制 |
 | **双缓冲** |中等|设置`DoubleBuffered := True`以减少闪烁 |
-| **虚拟列表** |高|对大型数据集使用`TVirtualStringTree`|
+| **虚拟列表** |高|使用`TVirtualStringTree`处理大型数据集 |
 | **字符串实习** |中等|重用字符串常量；避免重复串联 |
 | **对象池** |中等|重用经常创建/销毁的对象 |
 | **延迟加载** |高|仅在需要时加载数据/表单 |
@@ -1076,7 +1077,7 @@ Delphi Deployment Targets:
 ---
 
 ## 何时使用 Delphi
-|场景 |为什么选择德尔福 |更好的选择|
+|场景|为什么选择德尔福 |更好的选择|
 |----------|----------|--------------------|
 |旧版德尔福维护|现有代码库 | — |
 | Windows 桌面应用程序（快速）| VCL成熟、速度快| C#（WPF/WinForms）|
@@ -1085,6 +1086,84 @@ Delphi Deployment Targets:
 |新的Windows GUI开发|有可能，但社区正在缩小 | C# (WPF/WinUI 3) |
 |网页开发|不适合| JavaScript、Python、C# |
 |移动应用程序 |可以通过 FMX 但有限 |斯威夫特、科特林、颤振 |
+---
+
+## 综合问答
+### Q1：Delphi的VCL框架是如何工作的？
+**答：** VCL 将 Windows API 控件包装在面向对象的层次结构中。表单、按钮和网格都是类：
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### Q2：如何在Delphi中创建组件？
+**A:** 从 TComponent 或 TControl 继承：
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### Q3：Delphi 和 Free Pascal 有什么区别？
+**答：** Delphi 是 Embarcadero 的商业 IDE/编译器。 Free Pascal 是开源编译器，Lazarus 是免费 IDE。两者都使用 Object Pascal 语法。
+### Q4：如何在 Delphi 中使用数据库？
+**A:** 使用 FireDAC 或 dbExpress 组件：
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### Q5：德尔福今天仍然有意义吗？
+**答：** 为了维护旧版 Windows 应用程序，是的。对于新项目，大多数开发人员更喜欢 C# 或 Web 技术。 Free Pascal/Lazarus 提供了免费的跨平台替代方案。
+---
+
+## 解决问题的思路
+### 问题 1：构建数据感知表单
+**第 1 步：了解问题**
+创建一个显示和编辑数据库记录的表单。
+**第 2 步：确定方法**
+使用绑定到数据集的数据感知组件。
+**步骤 3：实施**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**第 4 步：扩展**
+添加验证、错误处理和搜索/过滤功能。
 ---
 
 ＃＃ 概括

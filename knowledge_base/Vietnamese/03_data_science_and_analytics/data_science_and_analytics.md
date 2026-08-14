@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Khoa học dữ liệu và phân tích
 Khoa học dữ liệu là môn học biến dữ liệu thô thành thông tin chi tiết có thể hành động được. Nó nằm ở giao điểm của thống kê, khoa học máy tính và kiến ​​thức chuyên môn về lĩnh vực — và nó đã trở nên thiết yếu trong mọi lĩnh vực từ tài chính đến chăm sóc sức khỏe. Tệp này trình bày các khái niệm, công cụ và quy trình công việc cốt lõi mà mọi người hành nghề nên biết.
 ---
@@ -52,7 +53,7 @@ Hầu hết các dự án đều tuân theo một số biến thể của **CRIS
 | **Làm người mẫu** | Lựa chọn và đào tạo mô hình | 10–15% |
 | **Đánh giá** | Đánh giá hiệu quả hoạt động so với mục tiêu kinh doanh | 5–10% |
 | **Triển khai** | Đưa mô hình đi sản xuất | 5–10% |
-Trò đùa cũ là 80% khoa học dữ liệu đang làm sạch dữ liệu. Nó không xa sự thật.
+Việc chuẩn bị dữ liệu, đặc biệt là làm sạch dữ liệu, được ước tính rộng rãi sẽ tiêu tốn khoảng 80% thời gian của nhà khoa học dữ liệu.
 ---
 
 ## Sơ lược về các kiểu dữ liệu
@@ -68,7 +69,7 @@ Trò đùa cũ là 80% khoa học dữ liệu đang làm sạch dữ liệu. Nó
 
 ## Nguyên tắc cơ bản về thống kê
 ### Thống kê mô tả và suy luận
-Thống kê mô tả tóm tắt những gì bạn *có*; thống kê suy luận cho phép bạn đưa ra kết luận về những gì bạn *không* có (dân số rộng hơn).
+Thống kê mô tả tóm tắt những gì bạn *có*; thống kê suy luận cho phép bạn rút ra kết luận về những gì bạn *không* có (dân số rộng hơn).
 | Khái niệm | Ý tưởng chính |
 |----------|----------|
 | **Khuynh hướng trung tâm** | Trung bình (nhạy cảm với các ngoại lệ), trung vị (mạnh), chế độ (thường xuyên nhất) |
@@ -90,7 +91,7 @@ Thống kê mô tả tóm tắt những gì bạn *có*; thống kê suy luận 
 | Phân phối | Trường hợp sử dụng |
 |-------------|----------|
 | **Bình thường** | Hiện tượng tự nhiên, sai số đo lường — đường cong hình chuông cổ điển |
-| **Nhị thức** | Số lượng thành công/thất bại (lật xu, tỷ lệ chuyển đổi) |
+| **Nhị thức** | Số lượng thành công/thất bại (lật đồng xu, tỷ lệ chuyển đổi) |
 | **Poisson** | Số sự kiện được tính trong một khoảng thời gian cố định (cuộc gọi mỗi giờ, lỗi mỗi đợt) |
 | **Số mũ** | Thời gian giữa các sự kiện (thời gian chờ, khoảng thời gian lỗi) |
 | **t-Phân phối** | Mẫu nhỏ hoặc phương sai tổng thể chưa biết |
@@ -138,7 +139,7 @@ Mọi tập dữ liệu thực đều có vấn đề. Đây là cách dọn d�
 | **Tiêu chuẩn hóa** | Điểm Z: trung bình = 0, std = 1 |
 | **Mã hóa một lần** | Chuyển đổi danh mục thành cột nhị phân |
 | **Mã hóa nhãn** | Gán nhãn số nguyên cho danh mục |
-| **Chuyển đổi nhật ký** | Giảm độ lệch phải của dữ liệu |
+| **Chuyển đổi nhật ký** | Giảm độ lệch phải trong dữ liệu |
 | **Nhóm** | Nhóm các giá trị liên tục vào các nhóm riêng biệt |
 ### Kỹ thuật tính năng
 Kỹ thuật tính năng thường là sự khác biệt giữa một mô hình tầm thường và một mô hình tuyệt vời. Các kỹ thuật chính bao gồm:
@@ -227,7 +228,7 @@ Khi các tập dữ liệu vượt quá những gì một máy có thể xử l�
 | **Siêu dữ liệu** | Mã nguồn mở | Dễ dàng thiết lập, có nguồn gốc SQL |
 | **Siêu bộ** | Mã nguồn mở (Apache) | Có thể mở rộng, ưu tiên SQL |
 ### Nguyên tắc thiết kế bảng điều khiển
-Trang tổng quan tốt tuân theo một số quy tắc: hiểu đối tượng của bạn, chọn hình ảnh trực quan phù hợp cho từng số liệu, sử dụng màu sắc một cách chiến lược (không mang tính trang trí), duy trì tỷ lệ nhất quán và bật tính tương tác (bộ lọc, thông tin chi tiết). Hiệu suất cũng quan trọng — không ai chờ đợi một bảng điều khiển chậm.
+Trang tổng quan hiệu quả tuân theo các nguyên tắc đã được thiết lập: xác định đối tượng, chọn hình ảnh trực quan thích hợp cho từng chỉ số, sử dụng màu sắc một cách chiến lược (không mang tính trang trí), duy trì tỷ lệ nhất quán và bật tính tương tác (bộ lọc, thông tin chi tiết). Hiệu suất cũng rất quan trọng — trang tổng quan có thời gian tải chậm làm giảm mức độ chấp nhận của người dùng.
 ### Các hạng mục KPI phổ biến
 | Danh mục | Ví dụ |
 |----------|----------|
@@ -269,7 +270,7 @@ Xu hướng có thể xuất hiện ở bất kỳ giai đoạn nào: sai lệch
 ## Con đường sự nghiệp
 | Vai trò | Tập trung |
 |------|-------|
-| **Nhà phân tích dữ liệu** | Phân tích mô tả, bảng thông tin, báo cáo |
+| **Nhà phân tích dữ liệu** | Phân tích mô tả, bảng điều khiển, báo cáo |
 | **Nhà khoa học dữ liệu** | Mô hình thống kê, ML, phân tích nâng cao |
 | **Kỹ sư ML** | Hệ thống ML sản xuất, triển khai mô hình, MLOps |
 | **Kỹ sư dữ liệu** | Đường ống dữ liệu, cơ sở hạ tầng, ETL |

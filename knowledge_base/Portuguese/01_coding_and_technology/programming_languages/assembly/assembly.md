@@ -688,7 +688,7 @@ mov     [mem4], edx
 
 ## Implantação e uso no mundo real
 ### Como os programas Assembly são implantados
-Os programas assembly são compilados diretamente em executáveis ​​​​de código de máquina nativo. Não há tempo de execução, nem VM, nem intérprete necessário. A implantação é tão simples quanto copiar o binário para o sistema de destino.
+Os programas assembly são compilados diretamente em executáveis ​​de código de máquina nativo. Não há tempo de execução, nem VM, nem intérprete necessário. A implantação é tão simples quanto copiar o binário para o sistema de destino.
 ```bash
 # Build a static binary (no shared library dependencies)
 nasm -f elf64 program.asm -o program.o
@@ -734,6 +734,85 @@ void process_data(void) {
 | Firmware incorporado (bare metal) | Nenhuma linguagem de nível superior disponível | C, ferrugem |
 | Educação | Compreendendo a arquitetura de computadores | — |
 | Desenvolvimento geral de aplicações | Impraticável para programas complexos | Qualquer linguagem de nível superior |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre montagem RISC e CISC?
+**R:** CISC (x86) possui instruções complexas e de comprimento variável. RISC (ARM) possui instruções simples e de comprimento fixo:
+```asm
+; x86 (CISC) — variable length, many addressing modes
+mov eax, [ebx + ecx*4 + 8]   ; complex memory access in one instruction
+
+; ARM (RISC) — load/store architecture
+ldr r0, [r1, r2, LSL #2]     ; load with shifted index
+```
+
+### Q2: Como a pilha funciona na montagem?
+**R:** A pilha cresce para baixo. `push`decrementa SP e armazena; `pop`carrega e incrementa SP:
+```asm
+; x86 stack operations
+push rax          ; save rax on stack
+push rbx          ; save rbx
+; ... do work ...
+pop rbx           ; restore rbx
+pop rax           ; restore rax
+
+; Stack frame for functions
+push rbp          ; save old base pointer
+mov rbp, rsp      ; set new base pointer
+sub rsp, 32       ; allocate 32 bytes for locals
+; ... function body ...
+mov rsp, rbp      ; deallocate locals
+pop rbp           ; restore base pointer
+ret               ; return
+```
+
+### Q3: Como chamo funções em assembly?
+**R:** Siga a convenção de chamada (System V AMD64 no Linux, Windows x64 no Windows):
+```asm
+; System V AMD64: args in rdi, rsi, rdx, rcx, r8, r9
+; Return value in rax
+extern printf
+
+section .data
+    fmt db "Result: %d", 10, 0
+
+section .text
+global main
+main:
+    mov rdi, fmt      ; first arg: format string
+    mov rsi, 42       ; second arg: integer
+    xor rax, rax      ; no vector registers used
+    call printf       ; call C function
+    xor rax, rax      ; return 0
+    ret
+```
+
+### Q4: Quais são as instruções de montagem mais importantes que você deve saber?
+**R:** Movimentação de dados, aritmética, fluxo de controle e operações de pilha formam o núcleo.
+### Q5: Como o assembly é usado na pesquisa de segurança?
+**R:** Engenharia reversa, desenvolvimento de exploits, análise de malware e compreensão da saída do compilador exigem conhecimentos de assembly.
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Implementando um Loop em Assembly
+**Etapa 1: Entenda o problema**
+Soma inteiros de 1 a N.
+**Etapa 2: Identifique a abordagem**
+Use um contador e acumulador.
+**Etapa 3: Implementar**```asm
+; Sum 1 to N (N in ecx)
+    xor eax, eax      ; eax = 0 (accumulator)
+    mov ecx, 10       ; N = 10
+.loop:
+    add eax, ecx      ; sum += counter
+    dec ecx           ; counter--
+    jnz .loop         ; jump if not zero
+    ; eax = 55 (1+2+...+10)
+```
+
+**Etapa 4: otimizar**
+Use a fórmula N*(N+1)/2 para O(1) em vez de O(N).
 ---
 
 ## Resumo

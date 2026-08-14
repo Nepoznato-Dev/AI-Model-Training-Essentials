@@ -1,41 +1,46 @@
 ---
-# Métadonnées
-titre : "Les fondamentaux de l'écriture et de la communication"
-description : "Principe de la pyramide, présentations, persuasion, rédaction commerciale"
-catégorie : "Référence générale"
-version : "1.0.0"
-statut : "actif"
+# Metadata
+title: "Writing and Communication Fundamentals"
+description: "Pyramid principle, presentations, persuasion, business writing"
+category: "General Reference"
+version: "1.0.0"
+status: "active"
+
 # Contribution
-auteurs :
-  - nom : « Équipe de formation des modèles IA »
+authors:
+  - name: "AI Model Training Team"
     email: ""
-    rôle : "original_author"
-contributeurs : []
-journal des modifications :
-  - version : "1.0.0"
-    date : "05/08/2026"
-    auteur : « Équipe de formation des modèles IA »
-    modifications : « Ajout des métadonnées de premier plan YAML pour le suivi des contributeurs »
-# Révision
-créé : "2026-08-05"
-last_modified : "05/08/2026"
-date_de_revue : "05/02/2027"
-review_by : "Équipe de base de connaissances de référence générale"
-next_review : "2027-08-05"
-#Classement
-tags : [rédaction, communication, référence générale]
-niveau de difficulté : "débutant"
-prérequis : []
-estimate_reading_time : "7 min"
-# Guide des contributions
-apport :
-  licence : "MIT"
-  feedback_channel : "Problèmes GitHub"
-  how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
-  review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "General Reference Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [writing, communication, general-reference]
+difficulty_level: "beginner"
+prerequisites: []
+estimated_reading_time: "7 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Fondamentaux de l'écriture et de la communication
-L'écriture et la communication sont les compétences nécessaires pour transmettre des idées de manière claire et efficace, que ce soit par le biais d'e-mails, de rapports, de documentation, de présentations ou de conversations. La plupart des travaux de connaissances sont fondamentalement un travail de communication : vous devez expliquer votre réflexion, persuader les autres, documenter les décisions, rédiger des spécifications, présenter des résultats et collaborer entre équipes. L’écart entre ce que vous voulez dire et ce que quelqu’un comprend est la source de la plupart des problèmes, et une meilleure communication réduit cet écart.
+L'écriture et la communication sont les compétences nécessaires pour transmettre des idées efficacement, que ce soit par le biais d'e-mails, de rapports, de documentation, de présentations ou de conversations. La plupart des travaux de connaissance sont fondamentalement des travaux de communication : les professionnels doivent expliquer leur réflexion, persuader les autres, documenter les décisions, rédiger des spécifications, présenter leurs résultats et collaborer entre équipes. L’écart entre ce qui est signifié et ce qui est compris est à l’origine de la plupart des problèmes, et une meilleure communication réduit cet écart.
 ---
 
 ## Principes d'une écriture claire
@@ -160,4 +165,4 @@ L'écriture et la communication sont les compétences nécessaires pour transmet
 ---
 
 ## Résumé
-Une écriture et une communication claires ne consistent pas à être intelligent, mais à être compris. Commencez par l’essentiel (principe de la pyramide). Utilisez une voix active, un langage concret et des phrases courtes. Structurez les informations afin que le lecteur puisse trouver ce dont il a besoin. La documentation technique doit être numérisable et basée sur des exemples. La rédaction commerciale doit commencer par la recommandation. Les présentations doivent raconter une histoire avec une idée par diapositive. La persuasion combine la logique (logos), l'émotion (pathos) et la crédibilité (éthos). La sensibilisation interculturelle évite les malentendus au sein des équipes mondiales. La compétence fondamentale est la sensibilisation du public : savoir pour qui vous écrivez, ce qu'il doit savoir et quel format l'aidera à le comprendre. Chaque minute que vous investissez dans une communication plus claire permet d'économiser plusieurs fois ce temps en réduisant la confusion, les malentendus et la prise de décision plus rapide.
+Une écriture et une communication claires consistent à être compris. Commencez par l’essentiel (principe de la pyramide). Utilisez une voix active, un langage concret et des phrases courtes. Structurez les informations afin que le lecteur puisse trouver ce dont il a besoin. La documentation technique doit être numérisable et basée sur des exemples. La rédaction commerciale doit commencer par la recommandation. Les présentations doivent présenter une idée par diapositive. La persuasion combine la logique (logos), la preuve (pathos) et la crédibilité (éthos). La sensibilisation interculturelle évite les malentendus au sein des équipes mondiales. La compétence fondamentale est la sensibilisation du public : savoir qui est le lecteur, ce qu’il a besoin de savoir et quel format soutiendra sa compréhension. L’investissement dans une communication plus claire génère des résultats en réduisant la confusion, en réduisant les malentendus et en accélérant la prise de décision.

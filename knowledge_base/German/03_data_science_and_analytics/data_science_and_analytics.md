@@ -52,7 +52,7 @@ Die meisten Projekte folgen einer Variation von **CRISP-DM**, dem branchenüblic
 | **Modellieren** | Modelle auswählen und trainieren | 10–15 % |
 | **Bewertung** | Bewerten Sie die Leistung anhand der Geschäftsziele | 5–10 % |
 | **Bereitstellung** | Das Modell an die Produktion senden | 5–10 % |
-Der alte Witz besagt, dass 80 % der Datenwissenschaft darin besteht, Daten zu bereinigen. Es ist nicht weit von der Wahrheit entfernt.
+Die Datenvorbereitung, insbesondere die Datenbereinigung, nimmt nach weit verbreiteten Schätzungen etwa 80 % der Zeit eines Data Scientists in Anspruch.
 ---
 
 ## Datentypen auf einen Blick

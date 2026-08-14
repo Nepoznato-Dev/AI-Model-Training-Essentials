@@ -1,0 +1,204 @@
+---
+# Metadata
+title: "Fortran — Version History & Evolution"
+description: "Comprehensive version history and evolution of Fortran from Fortran I to modern Fortran."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+authors:
+  - name: "AI Model Training Team"
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-09"
+    changes: "Initial version history"
+tags: [fortran, version-history, evolution, coding-and-technology]
+difficulty_level: "beginner"
+estimated_reading_time: "10 min"
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+---
+
+# Fortran – Versionsgeschichte und Entwicklung
+## Zeitleiste
+| Version | Jahr | Schlüsselthema |
+|---------|------|-----------|
+| Fortran I | 1957 | **Erste Hochsprache** (John Backus, IBM) |
+| Fortran II | 1958 | Unterprogramme, Funktionen |
+| Fortran IV | 1962 | `DATA`,`EQUIVALENCE`,`COMMON`|
+| FORTRAN 66 | 1966 | **Erster ANSI-Standard** (X3.4-1966) |
+| FORTRAN 77 | 1977 | **Strukturierte Programmierung**:`IF`/`THEN`/`ELSE`,`CHARACTER`, listengesteuerte E/A |
+| Fortran 90 | 1991 | **Hauptsächlich**: Freiformquelle, Module, Arrays,`ALLOCATABLE`,`SELECT CASE`|
+| Fortran 95 | 1997 | `FORALL`,`WHERE`, reine/elementare Verfahren |
+| Fortran 2003 | 2004 | **OOP**: Klassen, Vererbung, Polymorphismus, `PROCEDURE`-Zeiger, `IEEE`-Arithmetik |
+| Fortran 2008 | 2010 | **Coarrays** (parallele Programmierung),`SUBMODULE`,`DO CONCURRENT`|
+| Fortran 2018 | 2018 | **Erweiterte Coarrays**,`ASSOCIATE`,`TYPE IS`Verbesserungen |
+| Fortran 2023 | 2024 | **`BLOCK`**,`ALLOCATE`Verbesserungen,`SELECT RANK`, vorzeichenlose Ganzzahlen |
+## Wichtige Meilensteine
+### Fortran I–IV: Die Geburt der High-Level-Programmierung (1957–1965)
+- **1957**: John Backus und sein Team bei IBM erstellen Fortran (Formelübersetzung)
+- **Die erste weit verbreitete Programmiersprache auf hohem Niveau**
+- **Fortran I**: Einführung von `DO`-Schleifen, `IF`,`GO TO`und arithmetischen Ausdrücken
+- **Fortran II (1958)**: Unterprogramme und Funktionen (separate Zusammenstellung)
+- **Fortran IV (1962)**: `DATA`-, `EQUIVALENCE`-, `COMMON`-Blöcke
+- Quelle in fester Form: Spalten 1–6 für Beschriftungen, 7–72 für Code
+### FORTRAN 66 & 77: Standardisierung (1966–1990)
+- **FORTRAN 66**: Erster ANSI-Standard – tragbares Fortran
+- **FORTRAN 77 (1977)**: Der Klassiker
+  - Strukturierte Programmierung:`IF`/`THEN`/`ELSE`/`ENDIF`
+  - Typ`CHARACTER`(String-Verarbeitung)
+  - Listengesteuerte E/A (`*`-Format)
+  -`PARAMETER`(benannte Konstanten)
+  -`ENTRY`(mehrere Einstiegspunkte)
+  – Immer noch weit verbreitet im wissenschaftlichen Rechnen
+### Fortran 90: Die moderne Revolution (1991)
+- **Freiformquelle** – keine Spaltenbeschränkungen mehr
+- **Module** – Kapselung,`USE`
+- **Dynamische Arrays** –`ALLOCATABLE`,`ALLOCATE`
+- **Array-Operationen** – Syntax für das gesamte Array`a = b + c`
+-`SELECT CASE`– strukturierte Verzweigung
+-`IMPLICIT NONE`– erfordern Variablendeklarationen
+- Rekursive Verfahren
+- Hinweise
+- Überlastung des Bedieners
+- Abgeleitete Typen (Strukturen)
+### Fortran 95–2003: OOP kommt (1997–2004)
+- **Fortran 95**: `FORALL`, `WHERE`, reine/elementare Prozeduren
+- **Fortran 2003**: **Vollständiger OOP**
+  - Klassen (abgeleitete Typen mit typgebundenen Prozeduren)
+  - Vererbung (`EXTENDS`)
+  - Polymorphismus (`CLASS`,`SELECT TYPE`)
+  - Verfahrenszeiger
+  - IEEE-Gleitkommasteuerung
+  - `FLUSH`-Anweisung
+  -`NEWUNIT`für E/A
+### Fortran 2008–2023: Parallel & Modern (2010–heute)
+- **Fortran 2008**: **Coarrays** – in die Sprache integrierte parallele Programmierung
+  -`DO CONCURRENT`– Parallelschleifenkonstrukt
+  -`SUBMODULE`– modulare Programmierung
+  - `CONTIGUOUS`-Attribut
+- **Fortran 2018**: Verbesserte Coarrays, `ASSOCIATE`-Verbesserungen, Teams
+- **Fortran 2023**: `BLOCK`-Konstruktionsverbesserungen, `ALLOCATE`-Verbesserungen, `SELECT RANK`, vorzeichenlose Ganzzahlen
+## Syntaxentwicklung
+```fortran
+C     FORTRAN 77: Fixed-form, structured programming
+      PROGRAM HELLO
+      INTEGER I
+      DO 10 I = 1, 10
+         PRINT *, 'Iteration: ', I
+   10 CONTINUE
+      END
+
+! Fortran 90: Free-form, modules, arrays
+program hello
+  implicit none
+  integer :: i
+  real, dimension(10) :: values
+  do i = 1, 10
+    values(i) = real(i) * 2.0
+  end do
+  print *, sum(values)
+end program hello
+
+! Fortran 90: Array operations (no loops needed!)
+program array_ops
+  implicit none
+  real :: a(100), b(100), c(100)
+  a = [(real(i), i=1,100)]  ! array constructor
+  b = sin(a)
+  c = a + b                  ! whole-array operation
+  print *, sum(c)
+end program array_ops
+
+! Fortran 2003: Object-oriented
+module shapes
+  implicit none
+  type :: shape
+    character(len=20) :: name
+  contains
+    procedure :: area => shape_area
+  end type
+
+  type, extends(shape) :: circle
+    real :: radius
+  contains
+    procedure :: area => circle_area
+  end type
+contains
+  function shape_area(self) result(a)
+    class(shape), intent(in) :: self
+    real :: a
+    a = 0.0
+  end function
+  function circle_area(self) result(a)
+    class(circle), intent(in) :: self
+    real :: a
+    a = 3.14159 * self%radius**2
+  end function
+end module
+
+! Fortran 2008: Coarrays (parallel)
+program parallel_example
+  implicit none
+  real :: data[*]  ! coarray — one element per image
+  data = real(this_image())  ! each image gets its number
+  sync all
+  if (this_image() == 1) then
+    print *, 'Image 2 has:', data[2]
+  end if
+end program
+
+! Fortran 2008: DO CONCURRENT
+program concurrent_loop
+  implicit none
+  real :: a(1000)
+  integer :: i
+  do concurrent (i = 1:1000)
+    a(i) = sin(real(i)) * cos(real(i))
+  end do
+end program
+```
+
+## Feature-Entwicklung
+```
+Fortran I (1957):   DO loops, IF, GO TO, arithmetic expressions
+Fortran II (1958):  Subroutines, functions
+Fortran IV (1962):  DATA, EQUIVALENCE, COMMON
+FORTRAN 66 (1966):  First standard
+FORTRAN 77 (1977):  IF/THEN/ELSE, CHARACTER, list-directed I/O
+Fortran 90 (1991):  Free-form, modules, arrays, ALLOCATABLE, SELECT CASE
+Fortran 95 (1997):  FORALL, WHERE, pure/elemental
+Fortran 2003 (2004): OOP, IEEE arithmetic, procedure pointers
+Fortran 2008 (2010): Coarrays, DO CONCURRENT, SUBMODULE
+Fortran 2018 (2018): Enhanced coarrays, teams
+Fortran 2023 (2024): BLOCK, SELECT RANK, unsigned integers
+```
+
+## Wichtige Designprinzipien
+```
+1. "Performance first" — designed for number crunching
+2. "Array-native" — whole-array operations (no loops needed)
+3. "Backward compatible" — 60+ years of code still compiles
+4. "Scientific" — built for physics, engineering, climate modeling
+5. "Parallel-ready" — coarrays built into the language (since 2008)
+6. "Stable" — no hype, just computation
+```
+
+## Ökosystemwachstum
+```
+1957: Fortran I — first high-level language (IBM 704)
+1966: FORTRAN 66 — first standard
+1977: FORTRAN 77 — the classic (still used in legacy code)
+1991: Fortran 90 — modern Fortran begins
+2003: Fortran 2003 — OOP
+2008: Fortran 2008 — parallel programming (coarrays)
+2018: Fortran 2018 — enhanced parallelism
+2024: Fortran 2023 — continued modernization
+2025: Fortran powers:
+       - Weather/climate modeling (WRF, CESM)
+       - Computational fluid dynamics
+       - Quantum chemistry (Gaussian, GAMESS)
+       - Nuclear physics simulations
+       - Financial modeling (legacy systems)
+       Compilers: gfortran, ifx (Intel), nvfortran (NVIDIA), flang
+```

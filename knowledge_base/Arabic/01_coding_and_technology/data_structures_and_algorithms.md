@@ -1,41 +1,46 @@
 ---
-# البيانات الوصفية
-العنوان: "هياكل البيانات والخوارزميات"
-الوصف: "المصفوفات، الأشجار، الرسوم البيانية، الفرز، البحث، التعقيد"
-الفئة: "البرمجة والتكنولوجيا"
-الإصدار: "1.0.0"
-الحالة: "نشط"
-#مساهمة
-المؤلفين:
-  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
-    البريد الإلكتروني: ""
-    الدور: "original_author"
-المساهمين: []
-سجل التغيير:
-  - الإصدار: "1.0.0"
-    التاريخ: "2026-08-05"
-    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
-    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
-# مراجعة
-تم الإنشاء: "05-08-2026"
-آخر_تعديل: "05-08-2026"
-تاريخ_المراجعة: "05-02-2027"
-تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+# Metadata
+title: "Data Structures and Algorithms"
+description: "Arrays, trees, graphs, sorting, searching, complexity"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# التصنيف
-العلامات: [البيانات والهياكل والخوارزميات والتشفير والتكنولوجيا]
-مستوى الصعوبة: "متوسط"
-المتطلبات الأساسية: []
-وقت_القراءة المقدر: "6 دقائق"
-# دليل المساهمة
-المساهمة:
-  الترخيص: "MIT"
-  Feedback_channel: "مشكلات GitHub"
-  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
-  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+
+# Classification
+tags: [data, structures, algorithms, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "6 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # هياكل البيانات والخوارزميات
-هياكل البيانات هي الطرق التي ننظم بها البيانات في الذاكرة حتى تكون العمليات عليها فعالة. الخوارزميات هي الإجراءات خطوة بخطوة لحل المشكلات. إنهما يشكلان معًا أساس علوم الكمبيوتر - فكل برنامج استخدمته يعتمد عليهما. إن اختيار بنية البيانات الصحيحة يمكن أن يحول برنامجًا بطيئًا بشكل مستحيل إلى برنامج سريع، ومعرفة الخوارزمية الصحيحة يمكن أن تحول مشكلة غير قابلة للحل إلى مشكلة تافهة.
+هياكل البيانات هي الطرق التي ننظم بها البيانات في الذاكرة حتى تكون العمليات عليها فعالة. الخوارزميات هي الإجراءات خطوة بخطوة لحل المشكلات. إنهما يشكلان معًا أساس علوم الكمبيوتر، فكل برنامج استخدمته يعتمد عليهما. إن اختيار بنية البيانات الصحيحة يمكن أن يحول برنامجًا بطيئًا بشكل مستحيل إلى برنامج سريع، ومعرفة الخوارزمية الصحيحة يمكن أن تحول مشكلة غير قابلة للحل إلى مشكلة تافهة.
 ---
 
 ## هياكل البيانات الأساسية

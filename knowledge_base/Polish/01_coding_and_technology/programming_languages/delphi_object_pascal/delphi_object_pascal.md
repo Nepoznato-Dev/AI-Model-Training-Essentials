@@ -1088,5 +1088,83 @@ Delphi Deployment Targets:
 | Aplikacje mobilne | Możliwe przez FMX, ale ograniczone | Swift, Kotlin, Flutter |
 ---
 
+## Syntetyczne pytania i odpowiedzi
+### P1: Jak działa framework VCL firmy Delphi?
+**O:** VCL otacza kontrolki API systemu Windows w hierarchię obiektową. Formularze, przyciski i siatki to wszystkie klasy:
+```pascal
+type
+  TMainForm = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  end;
+
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('Button clicked!');
+end;
+```
+
+### P2: Jak utworzyć komponenty w Delphi?
+**A:** Dziedzicz z TComponent lub TControl:
+```pascal
+type
+  TMyComponent = class(TComponent)
+  private
+    FValue: Integer;
+  protected
+    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+  published
+    property Value: Integer read FValue write FValue default 0;
+  end;
+```
+
+### P3: Jaka jest różnica pomiędzy Delphi i Free Pascal?
+**O:** Delphi jest komercyjnym IDE/kompilatorem firmy Embarcadero. Free Pascal to kompilator typu open source, a Lazarus to darmowe IDE. Obydwa używają składni Object Pascal.
+### P4: Jak pracować z bazami danych w Delphi?
+**A:** Użyj komponentów FireDAC lub dbExpress:
+```pascal
+FDConnection1.ConnectionString := 'DriverID=SQLite;Database=mydb.db';
+FDConnection1.Open;
+FDQuery1.SQL.Text := 'SELECT * FROM users';
+FDQuery1.Open;
+while not FDQuery1.Eof do
+begin
+  Memo1.Lines.Add(FDQuery1.FieldByName('name').AsString);
+  FDQuery1.Next;
+end;
+```
+
+### P5: Czy Delphi jest nadal aktualne?
+**O:** Tak, do konserwacji starszych aplikacji Windows. W przypadku nowych projektów większość programistów preferuje technologie C# lub internetowe. Free Pascal/Lazarus zapewnia bezpłatną alternatywę dla wielu platform.
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Budowa formularza uwzględniającego dane
+**Krok 1: Zrozum problem**
+Utwórz formularz wyświetlający i edytujący rekordy bazy danych.
+**Krok 2: Zidentyfikuj podejście**
+Używaj komponentów obsługujących dane powiązanych z zestawem danych.
+**Krok 3: Wdróż**```pascal
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Open;
+  FDQuery1.Open;
+  DataSource1.DataSet := FDQuery1;
+  DBGrid1.DataSource := DataSource1;
+  DBNavigator1.DataSource := DataSource1;
+end;
+
+procedure TMainForm.btnSaveClick(Sender: TObject);
+begin
+  FDQuery1.Post;
+  ShowMessage('Record saved');
+end;
+```
+
+**Krok 4: Przedłuż**
+Dodaj funkcję sprawdzania poprawności, obsługi błędów i wyszukiwania/filtrowania.
+---
+
 ## Streszczenie
 Delphi jest historycznie ważnym językiem, który był pionierem szybkiego tworzenia aplikacji dla systemu Windows. Nowoczesne Delphi nadal obsługuje natywne aplikacje Windows i interfejsy baz danych, ale jego społeczność i ekosystem znacznie się skurczyły. Jest to niezbędne do utrzymania istniejących baz kodu Delphi. W przypadku nowych projektów większość programistów przeprowadziła migrację do języka C#, technologii internetowych lub platform wieloplatformowych. Projekt Free Pascal / Lazarus o otwartym kodzie źródłowym zapewnia bezpłatną alternatywę dla osób zainteresowanych językiem Object Pascal.

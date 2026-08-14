@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # MATLAB
 MATLAB (Matrix Laboratuvarı), sayısal hesaplama, matris işlemleri ve mühendislik/bilimsel uygulamalar için tasarlanmış üst düzey, yorumlanmış bir programlama dili ve ortamıdır. MathWorks tarafından geliştirilen ve ilk olarak 1984 yılında piyasaya sürülen MATLAB, birçok mühendislik disiplininde (elektrik mühendisliği, kontrol sistemleri, sinyal işleme, görüntü işleme ve iletişim) standart araçtır.
 MATLAB, güçlü bir matris odaklı dili kapsamlı araç kutuları (eklenti paketleri) ve Simulink görsel simülasyon ortamıyla birleştirir. Akademik çevrelerde ve endüstride algoritmaların üretim koduna uygulanmadan önce prototiplenmesi için yaygın olarak kullanılmaktadır.
@@ -57,7 +58,7 @@ MATLAB, güçlü bir matris odaklı dili kapsamlı araç kutuları (eklenti pake
 | **Genel amaçlı bir dil değildir** | Web geliştirme, sistem programlama veya uygulamalar için yetersiz | Sayısal olmayan görevler için Python, Go veya diğer dilleri kullanın |
 | **Performans** | Yorumlandı; döngüler için derlenmiş dillerden daha yavaş | Vektörleştirme işlemleri; sıcak kod için MEX (C/Fortran uzantıları) kullanın |
 | **Dağıtım** | MATLAB uygulamalarını dağıtmak için MATLAB Çalışma Zamanı | Üretim için MATLAB Derleyicisini kullanın veya C/C++ ile yeniden yazın |
-| **Sürüm kontrolü** | `.m`dosyaları metindir ancak Simulink`.mdl`/`.slx`ikili dosyadır | MATLAB'ın yerleşik karşılaştırma araçlarını kullanın |
+| **Sürüm kontrolü** | `.m`dosyaları metindir ancak Simulink`.mdl`/`.slx`ikilidir | MATLAB'ın yerleşik karşılaştırma araçlarını kullanın |
 ---
 
 ## Söz Diziminin Temelleri
@@ -110,7 +111,7 @@ mean_y = mean(y);
 ---
 
 ## Gelişmiş Sözdizimi ve Desenler
-### Sınıfları ve Nesneye Yönelik Programlamayı Yönetin
+### Sınıfları ve Nesneye Yönelik Programlamayı Yönetme
 ```matlab
 % classdef file: Point.m
 classdef Point < handle
@@ -479,7 +480,7 @@ msgbox.Show('Hello from .NET!');
 ---
 
 ## Tasarım Desenleri
-### Desen 1: Döngüler Üzerinden Vektörleştirme
+### Desen 1: Döngüler Üzerinden Vektörizasyon
 ```matlab
 % BAD — loop-based
 n = 1000000;
@@ -653,6 +654,199 @@ ENTRYPOINT ["/app/run_app.sh"]
 | Üretim sistemleri | Dağıtım için tasarlanmamıştır | C++, Python, Git |
 | Web geliştirme | Uygun değil | JavaScript, Python |
 | Veri bilimi (genel) | Mümkün ama Python daha çok yönlüdür | Python, R |
+---
+
+## Sentetik Soru-Cevap
+### S1: Döngüler kullanmak yerine işlemleri nasıl vektörleştirebilirim?
+**C:** MATLAB matris işlemleri için optimize edilmiştir. Döngüleri vektörleştirilmiş kodla değiştirin:
+```matlab
+% Slow — loop
+result = zeros(1, n);
+for i = 1:n
+    result(i) = sin(i) * cos(i);
+end
+
+% Fast — vectorized
+i = 1:n;
+result = sin(i) .* cos(i);
+
+% Element-wise operations use .
+a = [1 2 3]; b = [4 5 6];
+c = a .* b;   % [4 10 18]
+c = a .^ 2;   % [1 4 9]
+c = a ./ b;   % [0.25 0.4 0.5]
+```
+
+### S2: Matrisler ve diziler arasındaki fark nedir?
+**A:** MATLAB'da her şey bir dizidir. Matrisler 2 boyutlu dizilerdir:
+```matlab
+% Matrix (2D array)
+A = [1 2 3; 4 5 6; 7 8 9];  % 3x3 matrix
+
+% Array operations
+size(A)      % [3, 3]
+A'           % transpose
+inv(A)       % inverse
+A * B        % matrix multiplication
+A .* B       % element-wise multiplication
+
+% Cell array — mixed types
+c = {1, 'hello', [1 2 3]};
+
+% Struct array
+s.name = 'Alice';
+s.age = 30;
+
+% Table — labeled columns (modern approach)
+T = table(['Alice'; 'Bob  '], [30; 25], 'VariableNames', {'Name','Age'});
+```
+
+### S3: MATLAB'da etkili grafikleri nasıl oluşturabilirim?
+**C:** Çizim işlevlerini uygun etiketlemeyle kullanın:
+```matlab
+x = linspace(0, 2*pi, 100);
+y1 = sin(x); y2 = cos(x);
+
+figure;
+plot(x, y1, 'b-', 'LineWidth', 2); hold on;
+plot(x, y2, 'r--', 'LineWidth', 2);
+xlabel('x (radians)'); ylabel('y');
+title('Trigonometric Functions');
+legend('sin(x)', 'cos(x)');
+grid on;
+
+% Subplots
+subplot(2, 1, 1); plot(x, y1); title('Sine');
+subplot(2, 1, 2); plot(x, y2); title('Cosine');
+```
+
+### S4: MATLAB kodundaki hataları etkili bir şekilde nasıl ayıklayabilirim?
+**C:** Yerleşik hata ayıklayıcıyı ve teşhis araçlarını kullanın:
+```matlab
+% Set breakpoints
+dbstop in myFunction at 42   % line 42
+dbstop if error              % break on any error
+
+% During debugging
+dbstep        % step one line
+dbcont        % continue
+dbquit        % exit debug mode
+whos          % list workspace variables
+disp(x)       % display variable value
+
+% Performance profiling
+profile on
+myFunction()
+profile viewer
+
+% Check code quality
+checkcode('myFunction.m')  % lint-like suggestions
+```
+
+### S5: Veri dosyalarını nasıl okuyup yazarım?
+**C:** MATLAB birçok dosya formatını destekler:
+```matlab
+% CSV
+data = readmatrix('data.csv');
+T = readtable('data.csv');
+writetable(T, 'output.csv');
+
+% Excel
+T = readtable('data.xlsx', 'Sheet', 'Sheet1');
+
+% MAT files (native binary)
+save('results.mat', 'variable1', 'variable2');
+load('results.mat');
+
+% Text with format control
+fid = fopen('output.txt', 'w');
+fprintf(fid, '%.4f\t%s\n', value, label);
+fclose(fid);
+```
+
+---
+
+## Düşünce Zinciri Problem Çözme
+### Problem 1: Doğrusal Denklem Sistemini Çözme
+**1. Adım: Sorunu Anlayın**
+A'nın bir matris ve b'nin bir vektör olduğu Ax = b'yi çözün.
+**2. Adım: Yaklaşımı Belirleyin**
+En iyi algoritmayı otomatik olarak seçen MATLAB'ın ters eğik çizgi operatörünü`\`kullanın.
+**3. Adım: Uygulama**```matlab
+A = [3 2 -1; 2 -2 4; -1 0.5 -1];
+b = [1; -2; 0];
+
+% Best approach — backslash
+x = A \ b;
+
+% Verify
+residual = norm(A * x - b);  % should be ~0
+fprintf('Solution: x = [%.4f, %.4f, %.4f]\n', x);
+fprintf('Residual: %.2e\n', residual);
+```
+
+**4. Adım: Genişletin**
+Aşırı belirlenmiş sistemler için`\`en küçük kareler çözümünü verir. Seyrek sistemler için`sparse`matrislerini kullanın.
+### Sorun 2: Sinyal İşleme — FFT Analizi
+**1. Adım: Sorunu Anlayın**
+Gürültülü bir sinyalin frekans içeriğini analiz edin.
+**2. Adım: Yaklaşımı Belirleyin**
+Bir test sinyali oluşturun, FFT'yi uygulayın ve frekans spektrumunu çizin.
+**3. Adım: Uygulama**```matlab
+% Generate signal: 50 Hz + 120 Hz + noise
+fs = 1000;                    % sampling frequency
+t = 0:1/fs:1-1/fs;            % time vector
+signal = sin(2*pi*50*t) + 0.5*sin(2*pi*120*t) + 0.3*randn(size(t));
+
+% FFT
+N = length(signal);
+Y = fft(signal);
+P2 = abs(Y/N);
+P1 = P2(1:N/2+1);
+P1(2:end-1) = 2*P1(2:end-1);
+f = fs*(0:(N/2))/N;
+
+% Plot
+figure;
+plot(f, P1, 'LineWidth', 1.5);
+xlabel('Frequency (Hz)'); ylabel('Amplitude');
+title('Single-Sided FFT');
+xlim([0 200]);
+```
+
+**4. Adım: Doğrulayın**
+Pikler 50 Hz ve 120 Hz'de görünmelidir. Gürültü tabanı düşük olmalıdır.
+### Problem 3: Özel Modellerle Eğri Uydurma
+**1. Adım: Sorunu Anlayın**
+Deneysel verileri özel bir doğrusal olmayan modele sığdırın.
+**2. Adım: Yaklaşımı Belirleyin**
+`fit`'yi özel bir`fittype`veya`lsqcurvefit`ile kullanın.
+**3. Adım: Uygulama**```matlab
+% Data
+x = (0:0.1:5)';
+y = 3 * exp(-0.5 * x) + 0.2 * randn(size(x));
+
+% Define model
+ft = fittype('a * exp(-b * x)', 'independent', 'x');
+opts = fitoptions('Method', 'NonlinearLeastSquares', ...
+                  'StartPoint', [1, 1]);
+
+% Fit
+[fitted, gof] = fit(x, y, ft, opts);
+
+% Display results
+fprintf('a = %.4f, b = %.4f\n', fitted.a, fitted.b);
+fprintf('R² = %.4f\n', gof.rsquare);
+
+% Plot
+figure;
+plot(fitted, x, y);
+xlabel('x'); ylabel('y');
+legend('Data', 'Fit');
+```
+
+**4. Adım: Doğrulayın**
+Artıkları kalıp açısından kontrol edin, R²'yi doğrulayın ve farklı başlangıç noktalarıyla test edin.
 ---
 
 ## Özet

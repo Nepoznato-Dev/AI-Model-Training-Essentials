@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Aksesibilitas dan Desain Inklusif
-Aksesibilitas (sering disingkat a11y) adalah praktik membuat perangkat lunak dapat digunakan oleh semua orang — termasuk penyandang disabilitas penglihatan, pendengaran, motorik, kognitif, dan neurologis. Ini bukanlah sesuatu yang bagus untuk dimiliki; ini merupakan persyaratan hukum di banyak yurisdiksi, kewajiban moral, dan rekayasa yang baik. Perangkat lunak yang dapat diakses adalah perangkat lunak yang lebih baik untuk semua orang, karena keputusan desain yang membantu pengguna penyandang disabilitas — struktur yang jelas, navigasi keyboard, kontras yang memadai, teks yang dapat dibaca — meningkatkan pengalaman bagi semua pengguna.
+Aksesibilitas (sering disingkat a11y) adalah praktik membuat perangkat lunak dapat digunakan oleh semua orang — termasuk penyandang disabilitas penglihatan, pendengaran, motorik, kognitif, dan neurologis. Ini adalah persyaratan hukum di banyak yurisdiksi dan merupakan praktik teknik standar. Perangkat lunak yang dapat diakses adalah perangkat lunak yang lebih baik untuk semua orang, karena keputusan desain yang mendukung pengguna penyandang disabilitas — struktur yang jelas, navigasi keyboard, kontras yang memadai, teks yang dapat dibaca — meningkatkan pengalaman bagi semua pengguna.
 ---
 
 ## Siapa yang Diuntungkan dari Aksesibilitas?
@@ -52,7 +52,7 @@ Aksesibilitas (sering disingkat a11y) adalah praktik membuat perangkat lunak dap
 | **Kognitif** | Disleksia, ADHD, autisme, gangguan memori | Bahasa yang jelas; navigasi yang konsisten; mengurangi gangguan |
 | **Sementara** | Lengan patah, sinar matahari cerah, lingkungan bising | Akomodasi yang sama dengan cacat tetap |
 | **Situasi** | Menggendong bayi, mengemudi, satu tangan ditempati | Antarmuka suara; target sentuh besar |
-**Wawasan utama**: fitur aksesibilitas yang dirancang untuk pengguna penyandang disabilitas membantu semua orang. Potongan tepi jalan (jalan landai di trotoar) dirancang untuk pengguna kursi roda tetapi digunakan oleh orang tua yang membawa kereta bayi, pekerja pengiriman dengan kereta, dan wisatawan yang membawa barang bawaan.
+**Wawasan utama**: fitur aksesibilitas yang dirancang untuk pengguna penyandang disabilitas membantu semua orang. Pemotongan tepi jalan (jalan landai di trotoar) dirancang untuk pengguna kursi roda namun digunakan oleh orang tua yang membawa kereta bayi, pekerja pengiriman dengan kereta, dan wisatawan yang membawa barang bawaan.
 ---
 
 ## Aksesibilitas Web (WCAG)
@@ -60,7 +60,7 @@ Pedoman Aksesibilitas Konten Web (WCAG) adalah standar internasional untuk akses
 ### Prinsip WCAG (POUR)
 | Prinsip | Persyaratan |
 |-----------|-------------|
-| **Dapat Dipahami** | Informasi harus dapat disajikan dengan cara yang dapat dilihat oleh pengguna (alternatif teks, keterangan, tata letak yang dapat disesuaikan) |
+| **Dapat Dipahami** | Informasi harus dapat disajikan dengan cara yang dapat dipahami oleh pengguna (alternatif teks, keterangan, tata letak yang dapat disesuaikan) |
 | **Dapat dioperasikan** | Antarmuka harus dapat dinavigasi dan digunakan (keyboard dapat diakses, waktu yang cukup, tidak ada konten yang menyebabkan kejang) |
 | **Dapat dimengerti** | Informasi dan pengoperasian harus dapat dipahami (dapat dibaca, diprediksi, bantuan masukan) |
 | **Kuat** | Konten harus sesuai dengan teknologi bantu saat ini dan masa depan |
@@ -177,4 +177,4 @@ ARIA menambahkan informasi aksesibilitas ke elemen HTML yang tidak memiliki sema
 ---
 
 ## Ringkasan
-Aksesibilitas bukanlah fitur yang Anda tambahkan di akhir — ini adalah prinsip desain yang harus menginformasikan setiap keputusan sejak awal. Gunakan HTML semantik. Pastikan navigasi keyboard berfungsi. Pertahankan kontras warna yang cukup. Memberikan alternatif teks untuk konten non-teks. Uji dengan pembaca layar dan pengguna penyandang disabilitas nyata. Hasilnya adalah perangkat lunak yang berfungsi lebih baik untuk semua orang — tidak hanya bagi mereka yang memiliki disabilitas, namun juga bagi mereka yang memiliki keterbatasan sementara, keterbatasan situasional, perangkat yang lebih tua, koneksi yang lambat, dan ribuan cara lain yang membedakan penggunaan di dunia nyata dengan lingkungan ideal pengembang.
+Aksesibilitas adalah prinsip desain yang harus menginformasikan setiap keputusan sejak awal, bukan fitur yang ditambahkan di akhir. Gunakan HTML semantik. Pastikan navigasi keyboard berfungsi. Pertahankan kontras warna yang cukup. Memberikan alternatif teks untuk konten non-teks. Uji dengan pembaca layar dan pengguna yang dinonaktifkan. Hasilnya adalah perangkat lunak yang berfungsi lebih baik untuk semua orang — termasuk mereka yang mengalami gangguan sementara, keterbatasan situasional, perangkat lama, koneksi lambat, dan banyak perbedaan penggunaan di dunia nyata dengan lingkungan pengembangan terkendali.

@@ -853,16 +853,157 @@ end Main;
 ---
 
 ## 何時使用 Ada
-|場景 |為什麼選擇艾達 |更好的選擇|
+|場景|為什麼選擇艾達 |更好的選擇|
 |----------|---------|--------------------|
 |安全關鍵系統 |為此而設計；形式驗證支援| — |
 | 航空/航太 | 經認證的編譯器；DO-178C 合規性 | — |
 |防禦系統|國防部遺產；安全功能| — |
 |鐵路/醫療器材|高誠信要求| — |
-|通用應用開發|對非關鍵系統的殺傷力過大| Python、Java、Go |
+|通用應用開發 |對非關鍵系統的殺傷力過大| Python、Java、Go |
 |網頁開發|不適合| JavaScript、Python |
 |資料科學/機器學習 |不是生態系| Python、R |
 ---
 
+## 綜合問答
+### Q1：Ada 的型別系統如何防止編譯時發生錯誤？
+**答：** Ada 的型別系統是所有語言中最嚴格的型別系統之一。它捕獲其他語言遺漏的錯誤：
+```ada
+-- Subtypes with range constraints
+type Temperature is range -273 .. 1000;  -- Celsius, absolute zero limit
+type Percentage is range 0 .. 100;
+
+-- The compiler rejects invalid values at compile time
+T : Temperature := 2000;  -- Compile error!
+P : Percentage := 150;    -- Compile error!
+
+-- Modular types (wrap-around arithmetic)
+type Byte is mod 256;
+type Port is range 0 .. 65535;
+
+-- Enumerated types with explicit values
+type Traffic_Light is (Red, Yellow, Green);
+-- Ada guarantees exhaustive case analysis
+```
+
+### Q2：Ada 的任務模型是什麼？它與其他並發模型相比如何？
+**A:** Ada 具有與受保護物件和任務的內建並發性：
+```ada
+-- Protected object — safe shared state
+protected type Counter is
+   procedure Increment;
+   function Value return Integer;
+private
+   Count : Integer := 0;
+end Counter;
+
+protected body Counter is
+   procedure Increment is begin Count := Count + 1; end;
+   function Value return Integer is (Count);
+end Counter;
+
+-- Task — concurrent execution
+task type Worker is
+   entry Start(Job_ID : Integer);
+end Worker;
+
+task body Worker is
+   ID : Integer;
+begin
+   accept Start(Job_ID : Integer) do
+      ID := Job_ID;
+   end Start;
+   -- Process job...
+end Worker;
+```
+
+### Q3：如何在 Ada 中使用泛型？
+**A:** Ada 泛型是明確且類型安全的：
+```ada
+generic
+   type Element_Type is private;
+   type Index_Type is range <>;
+package Generic_Stack is
+   procedure Push(Item : in Element_Type);
+   function Pop return Element_Type;
+   function Is_Empty return Boolean;
+end Generic_Stack;
+```
+
+### Q4：Ada 為何適合安全關鍵系統？
+**答：** Ada 提供：
+- 用于形式验证的 SPARK 子集（正确性的数学证明）
+- 基于契约的编程（前置/后置条件、类型不变量）
+- SPARK 中沒有隱式記憶體分配
+- 確定性任務分配和調度
+- 用于高完整性实时系统的 Ravenscar 配置文件
+- 工具链资格（航空电子设备 DO-178C）
+### Q5：如何建構 Ada 專案？
+**A:** 將 GPRBuild 與 GPR 專案文件結合使用：
+```bash
+gprbuild -P my_project.gpr
+gprclean -P my_project.gpr
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：實作類型安全性佇列
+**第 1 步：了解問題**
+建立一個有界、執行緒安全的佇列，並進行編譯時大小檢查。
+**第 2 步：確定方法**
+使用具有有限緩衝區的受保護物件。
+**步驟 3：實施**```ada
+protected type Bounded_Queue(Capacity : Positive := 100) is
+   entry Enqueue(Item : Integer);
+   entry Dequeue(Item : out Integer);
+   function Count return Natural;
+private
+   Buffer : array(1 .. Capacity) of Integer;
+   Head, Tail : Positive := 1;
+   Size : Natural := 0;
+end Bounded_Queue;
+
+protected body Bounded_Queue is
+   entry Enqueue(Item : Integer) when Size < Capacity is
+   begin
+      Buffer(Tail) := Item;
+      Tail := (Tail mod Capacity) + 1;
+      Size := Size + 1;
+   end;
+
+   entry Dequeue(Item : out Integer) when Size > 0 is
+   begin
+      Item := Buffer(Head);
+      Head := (Head mod Capacity) + 1;
+      Size := Size - 1;
+   end;
+
+   function Count return Natural is (Size);
+end Bounded_Queue;
+```
+
+**第 4 步：驗證**
+受保護對象保證互斥。進入屏障可防止上溢/下溢。
+### 問題 2：基於合約的驗證
+**第 1 步：了解問題**
+透過正式合約實現平方根函數。
+**第 2 步：確定方法**
+使用 Ada 2012 合約（前置/後置條件）。
+**步驟 3：實施**```ada
+function Safe_Sqrt(X : Float) return Float
+   with Pre  => X >= 0.0,
+        Post => Safe_Sqrt'Result >= 0.0
+              and then abs(Safe_Sqrt'Result**2 - X) < 0.001;
+
+function Safe_Sqrt(X : Float) return Float is
+begin
+   return Float'Sqrt(X);
+end Safe_Sqrt;
+```
+
+**第 4 步：驗證**
+運行時檢查（斷言）捕獲違規行為。在 SPARK 中，這些成為證明義務。
+---
+
 ＃＃ 概括
-Ada 是一種為正確性而建構的語言。其嚴格的類型系統、內建並發性和形式驗證支援使其成為不可接受故障的系統的選擇。雖然與主流語言相比，Ada 的社群規模較小，但 Ada 在航空、國防、太空和其他安全關鍵領域仍然至關重要。對於這些應用程序，Ada 嚴格的軟體工程方法不是限制，而是重點。
+Ada 是一種為正確性而建構的語言。其严格的类型系统、内置并发性和形式验证支持使其成为不可接受故障的系统的选择。虽然与主流语言相比，Ada 的社区规模较小，但 Ada 在航空、国防、太空和其他安全关键领域仍然至关重要。对于这些应用程序，Ada 严格的软件工程方法不是限制，而是重点。

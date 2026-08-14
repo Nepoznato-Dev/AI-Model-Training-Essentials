@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Ingeniería de plataformas y código bajo"
-descripción: "Plataformas de código bajo, plataformas de desarrollo interno, caminos dorados"
-categoría: "Codificación y tecnología"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Low-Code and Platform Engineering"
+description: "Low-code platforms, internal developer platforms, golden paths"
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de base de conocimientos de codificación y tecnología"
+reviewed_by: "Coding & Technology Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [bajo, código, plataforma, ingeniería, codificación y tecnología]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "5 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [low, code, platform, engineering, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "5 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Ingeniería de plataforma y código bajo
 Las plataformas de código bajo permiten a las personas crear aplicaciones con un mínimo de código escrito a mano, generalmente a través de interfaces de arrastrar y soltar, flujos de trabajo visuales y conectores prediseñados. La ingeniería de plataformas es la disciplina de crear plataformas de desarrollo internas (IDP) que faciliten a los equipos de productos el autoservicio de infraestructura, CI/CD y herramientas operativas. Ambas tendencias son respuestas al mismo problema: la brecha entre la demanda de software y la oferta de desarrolladores que pueden construirlo.

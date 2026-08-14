@@ -1,38 +1,42 @@
 ---
-# Metadatos
-título: "Ciencia y análisis de datos"
-descripción: "Procesamiento de datos, ML, big data, BI"
-categoría: "Ciencia y análisis de datos"
-versión: "1.0.0"
-estado: "activo"
-# Contribución
-autores:
-  - nombre: "Equipo de formación del modelo de IA"
-    correo electrónico: ""
-    rol: "autor_original"
-colaboradores: []
-registro de cambios:
-  - versión: "1.0.0"
-    fecha: "2026-08-05"
-    autor: "Equipo de formación del modelo de IA"
-    cambios: "Se agregaron metadatos de temas frontales de YAML para el seguimiento de los contribuyentes"
-# Revisión
-creado: "2026-08-05"
+# Metadata
+title: "Data Science and Analytics"
+description: "Data processing, ML, big data, BI"
+category: "Data Science and Analytics"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
 last_modified: "2026-08-05"
 review_date: "2027-02-05"
-review_by: "Equipo de la base de conocimientos de análisis y ciencia de datos"
+reviewed_by: "Data Science & Analytics Knowledge Base Team"
 next_review: "2027-08-05"
-# Clasificación
-Etiquetas: [datos, ciencia, análisis, ciencia-de-datos y análisis]
-nivel_dificultad: "intermedio"
-requisitos previos: []
-estimado_reading_time: "13 minutos"
-# Guía de contribución
-contribución:
-  licencia: "MIT"
-  feedback_channel: "Problemas de GitHub"
-  how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
-  review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
+
+# Classification
+tags: [data, science, analytics, data-science-and-analytics]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "13 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
 ---
 # Ciencia de datos y análisis
 La ciencia de datos es la disciplina de convertir datos sin procesar en información procesable. Se encuentra en la intersección de la estadística, la informática y la experiencia en el campo, y se ha vuelto esencial en todos los sectores, desde las finanzas hasta la atención médica. Este archivo recorre los conceptos, herramientas y flujos de trabajo principales que todo profesional debería conocer.
@@ -48,7 +52,7 @@ La mayoría de los proyectos siguen alguna variación de **CRISP-DM**, el ciclo 
 | **Modelado** | Seleccionar y entrenar modelos | 10-15% |
 | **Evaluación** | Evaluar el desempeño frente a los objetivos comerciales | 5-10% |
 | **Implementación** | Enviar el modelo a producción | 5-10% |
-El viejo chiste es que el 80% de la ciencia de datos consiste en limpiar datos. No está lejos de la verdad.
+Se estima ampliamente que la preparación de datos, particularmente la limpieza de datos, consume alrededor del 80% del tiempo de un científico de datos.
 ---
 
 ## Tipos de datos de un vistazo

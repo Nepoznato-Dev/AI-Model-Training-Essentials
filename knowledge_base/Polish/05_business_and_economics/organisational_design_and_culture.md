@@ -40,7 +40,7 @@ contribution:
 ---
 
 # Projekt organizacyjny i kultura
-Projekt organizacji to przemyślany układ struktury, procesów, ról i praw decyzyjnych w celu skutecznej realizacji strategii. Kultura to wspólne wartości, przekonania, normy i zachowania, które kształtują sposób, w jaki ludzie faktycznie ze sobą współpracują. Struktura to szkielet; kultura to osobowość. Możesz przeprojektować strukturę na papierze, ale jeśli kultura nie wspiera tej zmiany, to nie zadziała. A silna kultura o okropnej strukturze będzie powoli się dusić. Najlepsze organizacje radzą sobie z obydwoma kwestiami i rozumieją, że są ze sobą głęboko powiązane.
+Projekt organizacji to przemyślany układ struktury, procesów, ról i praw decyzyjnych w celu skutecznej realizacji strategii. Kultura to wspólne wartości, przekonania, normy i zachowania, które kształtują sposób, w jaki ludzie faktycznie ze sobą współpracują. Struktura zapewnia ramy; kultura kształtuje zachowanie. Strukturę można przeprojektować na papierze, ale jeśli kultura nie wspiera tej zmiany, wdrożenie się nie powiedzie. Podobnie silna kultura w połączeniu z nieefektywną strukturą będzie stopniowo osłabiać wydajność organizacji. Najbardziej efektywne organizacje zajmują się obydwoma i zdają sobie sprawę, że są one głęboko ze sobą powiązane.
 ---
 
 ## Struktury organizacyjne
@@ -51,9 +51,9 @@ Projekt organizacji to przemyślany układ struktury, procesów, ról i praw dec
 | **Wydział** | Pogrupowane według produktu, rynku lub lokalizacji | Skoncentruj się na kliencie/rynku; Odpowiedzialność za zyski i straty | Powielanie funkcji; konkurencja o zasoby |
 | **Macierz** | Podwójne raportowanie: funkcjonalne + produkt/projekt | Elastyczność; współpraca międzyfunkcyjna | Dezorientacja; walki o władzę; powolne decyzje |
 | **Płaskie / poziome** | Kilka warstw zarządzania; szeroki zakres kontroli | Szybkie decyzje; upoważnieni pracownicy; niskie koszty ogólne | Trudne do skalowania; niejasne raportowanie |
-| **Oparte na zespole** | Zorganizowani wokół zespołów interdyscyplinarnych | Autonomia; prędkość; orientacja na klienta | Koordynacja między zespołami; konsystencja |
+| **Oparte na zespole** | Zorganizowani wokół zespołów interdyscyplinarnych | Autonomia; prędkość; skupienie na kliencie | Koordynacja między zespołami; konsystencja |
 | **Sieć / platforma** | Główny zespół + partnerzy zewnętrzni; platforma umożliwia innym | Skalowalność; elastyczność; światło aktywów | Kontrola jakości; zależność od partnerów |
-| **Holakracja** | Samorządne zespoły; role określone przez zakres odpowiedzialności | Wysoka autonomia; adaptacyjny | Mylące; nie działa na wszystkich |
+| **Holakracja** | Samorządne zespoły; role określone przez zakres odpowiedzialności | Wysoka autonomia; adaptacyjny | Mylące; nie działa na każdego |
 ### Rozpiętość kontroli
 | Czynnik | Wąska rozpiętość (4-6) | Szeroki zakres (10-15+) |
 |--------|----------------------|--------------------------------|
@@ -97,20 +97,20 @@ Kluczowy spostrzeżenie: strategia napędza strukturę. Wszystkie pozostałe ele
 |-------|------------|---------------|
 | **Artefakty** | Widoczne struktury, procesy, zachowania, dress code, układ biura | Łatwo zobaczyć; trudne do zinterpretowania |
 | **Wyznawane wartości** | Podane strategie, cele, filozofie, misje | Ogłoszone publicznie; może nie odpowiadać rzeczywistemu zachowaniu |
-| **Podstawowe założenia** | Nieświadome, przyjęte za oczywistość przekonania, spostrzeżenia, myśli, uczucia | Niewidzialny; prawdziwy czynnik wpływający na zachowanie |
+| **Podstawowe założenia** | Nieświadome, przyjęte za oczywistość przekonania, spostrzeżenia, myśli, uczucia | Niewidzialny; prawdziwy motor zachowania |
 ### Typy kulturowe (ramy wartości konkurujących)
 | Kultura | Skup się | Charakterystyka | Przykład |
 |--------|-------|----------------|--------|
 | **Klan** (współpraca) | Wewnętrzny + elastyczny | Rodzinny; mentoring; praca zespołowa; konsensus | Zappos; małe startupy |
 | **Adhokracja** (utwórz) | Zewnętrzny + elastyczny | Innowacyjny; podejmowanie ryzyka; przedsiębiorczy; dynamiczny | Google (wczesny); PrzestrzeńX |
 | **Rynek** (konkurować) | Zewnętrzny + kontrolowany | Zorientowany na wyniki; konkurencyjny; zorientowany na cel; udział w rynku | Amazonka; Firmy z Wall Street |
-| **Hierarchia** (kontrola) | Wewnętrzne + kontrolowane | Zbudowany; zorientowany na proces; efektywność; konsystencja | Agencje rządowe; wojskowy; tradycyjne banki |
+| **Hierarchia** (kontrola) | Wewnętrzny + kontrolowany | Zbudowany; zorientowany na proces; efektywność; konsystencja | Agencje rządowe; wojskowy; tradycyjne banki |
 ### Wymiary kulturowe
 | Wymiar | Opis |
 |---------------|------------|
 | **Bezpieczeństwo psychiczne** | Czy ludzie mogą podejmować ryzyko i być bezbronni bez obawy przed karą? |
 | **Odpowiedzialność** | Czy ludzie są pociągani do odpowiedzialności za swoje zobowiązania? |
-| **Przejrzystość** | Czy informacje są udostępniane otwarcie czy gromadzone w ramach władzy? |
+| **Przejrzystość** | Czy informacje są udostępniane otwarcie, czy gromadzone w ramach władzy? |
 | **Tolerancja innowacji** | Czy porażka jest karana czy traktowana jako nauka? |
 | **Zorientowanie na klienta** | Czy decyzje zaczynają się od potrzeb klienta, czy od wewnętrznej wygody? |
 | **Szybkość kontra jakość** | Czy preferujemy szybką iterację, czy uważne przemyślenie? |
@@ -145,7 +145,7 @@ Kluczowy spostrzeżenie: strategia napędza strukturę. Wszystkie pozostałe ele
 ## Praca zdalna i hybrydowa
 | Wyzwanie | Strategia |
 |----------|----------|
-| **Komunikacja** | Domyślnie napisane; najpierw asynchronicznie; decyzje dokumentowe |
+| **Komunikacja** | Domyślnie napisane; najpierw asynchronicznie; decyzje dokumentacyjne |
 | **Zaufaj** | Mierz wyniki, a nie godziny; unikać nadzoru |
 | **Wdrożenie** | programy strukturalne; systemy partnerskie; wyraźna dokumentacja |
 | **Kultura** | Zamierzone rytuały; regularne wszystkie ręce; wirtualne wydarzenia towarzyskie |
@@ -155,4 +155,4 @@ Kluczowy spostrzeżenie: strategia napędza strukturę. Wszystkie pozostałe ele
 ---
 
 ## Streszczenie
-Projekt i kultura organizacyjna decydują o tym, czy firma może zrealizować swoją strategię. Struktura określa relacje raportowania, prawa decyzyjne i mechanizmy koordynacji. Kultura definiuje, w jaki sposób ludzie faktycznie się zachowują – założenia, normy i wartości, którymi kierują się w codziennej pracy. Model Gwiazdy Galbraitha przypomina nam, że strategia, struktura, procesy, nagrody i ludzie muszą do siebie pasować. Typy kultur obejmują klan (współpraca), adhokrację (innowacyjność), rynek (konkurencyjność) i hierarchię (kontrola). Ramy zarządzania zmianami, takie jak 8-stopniowy model Kottera, zapewniają strukturę transformacji, ale prawdziwym polem bitwy jest kultura — jeśli zmiana jest sprzeczna z głębokimi założeniami, zakończy się niepowodzeniem niezależnie od tego, jak dobrze jest zaplanowana. Praca zdalna i hybrydowa stwarza nowe wyzwania związane z komunikacją, zaufaniem i uprzedzeniami związanymi z bliskością. Najlepsze organizacje projektują świadomie, budują kulturę wspierającą ich strategię i pozostają chętne do ewolucji w obliczu zmiany otoczenia.
+Projekt i kultura organizacyjna decydują o tym, czy firma może zrealizować swoją strategię. Struktura określa relacje raportowania, uprawnienia decyzyjne i mechanizmy koordynacji. Kultura definiuje, w jaki sposób ludzie faktycznie się zachowują – założenia, normy i wartości, którymi kierują się w codziennej pracy. Model Gwiazdy Galbraitha przypomina nam, że strategia, struktura, procesy, nagrody i ludzie muszą do siebie pasować. Typy kultur obejmują klan (współpraca), adhokrację (innowacyjność), rynek (konkurencyjność) i hierarchię (kontrola). Ramy zarządzania zmianami, takie jak 8-stopniowy model Kottera, zapewniają strukturę transformacji, ale prawdziwym polem bitwy jest kultura — jeśli zmiana jest sprzeczna z głębokimi założeniami, zakończy się niepowodzeniem niezależnie od tego, jak dobrze jest zaplanowana. Praca zdalna i hybrydowa stwarza nowe wyzwania związane z komunikacją, zaufaniem i uprzedzeniami związanymi z bliskością. Najlepsze organizacje projektują świadomie, budują kulturę wspierającą ich strategię i pozostają chętne do ewolucji w obliczu zmiany otoczenia.

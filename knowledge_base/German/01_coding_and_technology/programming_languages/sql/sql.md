@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # SQL
 SQL (Structured Query Language) ist eine domänenspezifische Sprache zur Verwaltung und Abfrage von Daten in relationalen Datenbanken. SQL wurde erstmals in den 1970er Jahren bei IBM entwickelt und 1987 standardisiert und ist nach wie vor die primäre Schnittstelle zwischen Anwendungen und ihren Daten. Jedes große relationale Datenbankmanagementsystem (RDBMS) – PostgreSQL, MySQL, SQL Server, Oracle, SQLite – verwendet SQL als Abfragesprache.
 SQL ist keine Allzweck-Programmiersprache. Sie würden keine Webanwendung in SQL schreiben. Wenn Ihre Anwendung jedoch Daten speichert – und das tun fast alle Anwendungen –, dann ist SQL die Sprache, die Sie zum Abrufen, Transformieren und Verwalten dieser Daten verwenden. Nach der allgemeinen Programmierung handelt es sich wohl um die allgemein nützlichste technische Fähigkeit.
@@ -161,7 +162,7 @@ ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, email = EXCLUDED.email;
 
 ## Erweiterte Syntax und Muster
 ### Fensterfunktionen – Deep Dive
-Fensterfunktionen führen Berechnungen über eine Reihe von Zeilen durch, die sich auf die aktuelle Zeile beziehen – ohne sie in einer einzigen Ausgabezeile zusammenzufassen, wie dies bei GROUP BY der Fall ist.
+Fensterfunktionen führen Berechnungen über eine Reihe von Zeilen durch, die sich auf die aktuelle Zeile beziehen – ohne sie wie bei GROUP BY in einer einzigen Ausgabezeile zusammenzufassen.
 ```sql
 -- ROW_NUMBER: unique sequential number within a partition
 SELECT name, department, salary,
@@ -319,7 +320,7 @@ ORDER BY order_count DESC;
 | Fehlender Index für die WHERE-Spalte | Vollständiger Tabellenscan | Index für gefilterte Spalten erstellen |
 | SELECT * Abfall | Unnötige Spalten abrufen | Wählen Sie nur die benötigten Spalten | aus
 | Implizite Typkonvertierung | Index nicht verwendet | Übereinstimmungstypen in Vergleichen |
-| Funktionen für indizierte Spalten | Index unbrauchbar (nicht sargable) | Umschreiben:`WHERE date >= '2024-01-01'`nicht`WHERE YEAR(date) = 2024`|
+| Funktionen für indizierte Spalten | Index unbrauchbar (nicht sargable) | Umschreiben: `WHERE date >= '2024-01-01'`, nicht`WHERE YEAR(date) = 2024`|
 ### Indexierungsstrategien
 ```sql
 -- Composite index: order matters (leftmost prefix rule)
@@ -361,8 +362,8 @@ COMMIT;
 ### Normalisierung
 | Normalform | Regel | Beispielverstoß |
 |-------------|------|-----|
-| **1NF** | Atomare Werte, keine sich wiederholenden Gruppen | Speichern mehrerer Telefone in einer Spalte als „123.456“ |
-| **2NF** | 1NF + keine teilweisen Abhängigkeiten | Die Bestelldetails hängen von der Bestell-ID ab, nicht jedoch von der Produkt-ID |
+| **1NF** | Atomare Werte, keine sich wiederholenden Gruppen | Mehrere Telefone in einer Spalte als „123.456“ speichern |
+| **2NF** | 1NF + keine Teilabhängigkeiten | Die Bestelldetails hängen von der Bestell-ID ab, nicht jedoch von der Produkt-ID |
 | **3NF** | 2NF + keine transitiven Abhängigkeiten | Der Abteilungsname des Mitarbeiters hängt von der Abteilungs-ID ab, nicht vom Mitarbeiter |
 ---
 
@@ -601,6 +602,149 @@ ALTER TABLE users RENAME COLUMN full_name TO name;
 | Einfache Schlüsselwertspeicherung | Overkill für diesen Anwendungsfall | Redis, DynamoDB |
 | Stark unstrukturierte Daten | Schemastarrheit ist ein Problem | MongoDB, Dokumentendatenbanken |
 | Massive horizontale Skalierung | Schwer zu teilende SQL-Datenbanken | Cassandra, DynamoDB, CockroachDB |
+---
+
+## Synthetische Fragen und Antworten
+### F1: Was ist der Unterschied zwischen`WHERE`und `HAVING`?
+**A:**`WHERE`filtert Zeilen vor der Gruppierung; `HAVING`filtert Gruppen nach der Aggregation:
+```sql
+-- WHERE: filter individual rows
+SELECT department, COUNT(*) AS cnt
+FROM employees
+WHERE salary > 50000        -- filters rows first
+GROUP BY department
+HAVING COUNT(*) > 5;        -- filters groups after
+```
+
+### F2: Wie unterscheiden sich Fensterfunktionen von GROUP BY?
+**A:** Fensterfunktionen berechnen zeilenübergreifend, ohne sie zu reduzieren:
+```sql
+-- GROUP BY collapses rows
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+
+-- Window function preserves all rows
+SELECT name, department, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank
+FROM employees;
+```
+
+### F3: Wie optimiere ich langsame Abfragen?
+**A:** Schlüsselstrategien:
+– Fügen Sie Indizes für Spalten hinzu, die in `WHERE`,`JOIN`und`ORDER BY`verwendet werden 
+- Vermeiden Sie`SELECT *`– wählen Sie nur benötigte Spalten aus
+- Verwenden Sie`EXPLAIN`/ `EXPLAIN ANALYZE`, um Abfragepläne zu lesen
+- Ersetzen Sie Unterabfragen nach Möglichkeit durch JOINs
+- Verwenden Sie CTEs zur besseren Lesbarkeit (normalerweise keine Leistungseinbußen).
+- Vermeiden Sie Funktionen für indizierte Spalten in WHERE: Verwenden Sie `WHERE date >= '2024-01-01'`, nicht `WHERE YEAR(date) = 2024`
+### F4: Was sind CTEs und wann sollte ich sie verwenden?
+**A:** Gemeinsame Tabellenausdrücke erstellen benannte temporäre Ergebnismengen:
+```sql
+-- CTE for readability
+WITH monthly_sales AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY 1
+),
+running_total AS (
+    SELECT month, total,
+           SUM(total) OVER (ORDER BY month) AS cumulative
+    FROM monthly_sales
+)
+SELECT * FROM running_total;
+```
+
+### F5: Wie gehe ich richtig mit NULL-Werten um?
+**A:** NULL steht für unbekannt – es ist mit nichts gleich, auch nicht mit sich selbst:
+```sql
+-- NULL comparisons
+NULL = NULL    -- NULL (not TRUE!)
+NULL IS NULL   -- TRUE
+
+-- COALESCE — first non-NULL
+SELECT COALESCE(nickname, first_name, 'Anonymous') AS display_name
+FROM users;
+
+-- NULLIF — return NULL if equal
+SELECT NULLIF(status, '') AS status;  -- '' becomes NULL
+
+-- COUNT ignores NULLs
+SELECT COUNT(completed_at) FROM tasks;  -- counts non-NULL only
+```
+
+---
+
+## Problemlösung in der Gedankenkette
+### Problem 1: Die Top N pro Gruppe finden
+**Schritt 1: Verstehen Sie das Problem**
+Finden Sie die 3 bestbezahlten Mitarbeiter in jeder Abteilung.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie eine Fensterfunktion mit `ROW_NUMBER()`, aufgeteilt nach Abteilung.
+**Schritt 3: Implementieren**```sql
+WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (
+               PARTITION BY department
+               ORDER BY salary DESC
+           ) AS rn
+    FROM employees
+)
+SELECT name, department, salary
+FROM ranked
+WHERE rn <= 3
+ORDER BY department, salary DESC;
+```
+
+**Schritt 4: Überprüfen**
+Stellen Sie sicher, dass jede Abteilung höchstens 3 Zeilen hat. Behandeln Sie Bindungen bei Bedarf mit `DENSE_RANK()`.
+### Problem 2: Erstellen eines Jahreswachstumsberichts
+**Schritt 1: Verstehen Sie das Problem**
+Berechnen Sie den monatlichen Umsatz und den Wachstumsprozentsatz im Jahresvergleich.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie`DATE_TRUNC`zum Gruppieren und die Fensterfunktion`LAG()`für den Vorjahresvergleich.
+**Schritt 3: Implementieren**```sql
+WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS revenue
+    FROM orders
+    GROUP BY 1
+)
+SELECT month,
+       revenue,
+       LAG(revenue, 12) OVER (ORDER BY month) AS revenue_prev_year,
+       ROUND(
+           (revenue - LAG(revenue, 12) OVER (ORDER BY month))
+           / NULLIF(LAG(revenue, 12) OVER (ORDER BY month), 0) * 100,
+           2
+       ) AS yoy_growth_pct
+FROM monthly
+ORDER BY month;
+```
+
+**Schritt 4: Überprüfen**
+Überprüfen Sie, ob die ersten 12 Monate NULL für das Vorjahr haben. Validieren Sie Wachstumsprozentsätze anhand bekannter Zahlen.
+### Problem 3: Zeilen in Spalten umwandeln
+**Schritt 1: Verstehen Sie das Problem**
+Der Transformationsstatus zählt von Zeilen zu Spalten.
+**Schritt 2: Identifizieren Sie den Ansatz**
+Verwenden Sie die bedingte Aggregation (`CASE`innerhalb von`SUM`).
+**Schritt 3: Implementieren**```sql
+-- Input: orders table with status column
+-- Output: one row per month with status counts as columns
+SELECT DATE_TRUNC('month', order_date) AS month,
+       SUM(CASE WHEN status = 'pending'   THEN 1 ELSE 0 END) AS pending,
+       SUM(CASE WHEN status = 'shipped'   THEN 1 ELSE 0 END) AS shipped,
+       SUM(CASE WHEN status = 'delivered' THEN 1 ELSE 0 END) AS delivered,
+       SUM(CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END) AS cancelled,
+       COUNT(*) AS total
+FROM orders
+GROUP BY 1
+ORDER BY 1;
+```
+
+**Schritt 4: Erweitern**
+Fügen Sie Prozentspalten und laufende Summen hinzu.
 ---
 
 ## Zusammenfassung

@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Shell e PowerShell
 Shell scripting refere-se à escrita de scripts para interpretadores de linha de comando. Os dois shells mais importantes são **Bash** (Bourne Again Shell) — o padrão no Linux e macOS — e **PowerShell** — o moderno shell multiplataforma e linguagem de script da Microsoft. Os scripts de shell automatizam tarefas de administração do sistema, criam pipelines, processamento de arquivos e fluxos de trabalho de implantação.
 Todo desenvolvedor, engenheiro de DevOps e administrador de sistema precisa de habilidades de script de shell. Esteja você implantando um servidor web, processando arquivos de log, configurando pipelines de CI/CD ou automatizando backups, o shell script é a ferramenta certa para o trabalho.
@@ -53,9 +54,9 @@ Todo desenvolvedor, engenheiro de DevOps e administrador de sistema precisa de h
 ## As compensações
 | Limitação | Detalhes | Solução alternativa típica |
 |-------|---------|-------------------|
-| ** peculiaridades do Bash ** | Sintaxe inconsistente, manipulação de strings frágeis | Utilize`set -euo pipefail`; variáveis ​​de cotação; prefiro PowerShell para scripts complexos |
+| ** peculiaridades do Bash ** | Sintaxe inconsistente, manipulação de strings frágeis | Use `set -euo pipefail`; variáveis ​​de cotação; prefiro PowerShell para scripts complexos |
 | **Não para programas complexos** | Estruturas de dados ruins, sem OOP, difíceis de testar | Use Python, Go ou outras linguagens para lógica complexa |
-| **Tratamento de erros** | O tratamento de erros do Bash é primitivo | Usar`set -e`; verifique os códigos de saída; use o try/catch do PowerShell |
+| **Tratamento de erros** | O tratamento de erros do Bash é primitivo | Utilize `set -e`; verifique os códigos de saída; use o try/catch do PowerShell |
 | **Portabilidade** | Os scripts Bash podem não funcionar em todos os sistemas | Use POSIX sh para máxima portabilidade; PowerShell para plataforma cruzada |
 | **Depuração** | Ferramentas de depuração limitadas | Use`set -x`para Bash; PowerShell tem um depurador adequado |
 ---
@@ -857,6 +858,152 @@ Publish-Module @publishParams
 | Análise de registros | One-liners rápidos do grep/awk | Python, SQL para análises complexas |
 | Aplicações complexas | Não adequado | Python, Go, Java |
 | Scripts multiplataforma | PowerShell 7+ funciona em qualquer lugar | Python para scripts verdadeiramente portáteis |
+---
+
+## Perguntas e respostas sintéticas
+### Q1: Qual é a diferença entre aspas simples e duplas no Bash?
+**R:** Aspas duplas permitem expansão de variáveis; aspas simples são literais:
+```bash
+name="World"
+echo "Hello, $name"   # Hello, World
+echo 'Hello, $name'   # Hello, $name
+
+# Backticks vs $() for command substitution
+echo "Today is $(date +%A)"   # preferred
+echo "Today is `date +%A`"    # older syntax, avoid
+```
+
+### Q2: Como lidar com erros em scripts de shell?
+**R:** Use`set -e`para sair em caso de erros e interceptar para limpeza:
+```bash
+#!/bin/bash
+set -euo pipefail   # exit on error, undefined vars, pipe failures
+
+cleanup() {
+    rm -f "$tmpfile"
+}
+trap cleanup EXIT
+
+tmpfile=$(mktemp)
+echo "Working..."
+# Script exits on any error, cleanup runs on exit
+```
+
+### Q3: Como processar argumentos de linha de comando corretamente?
+**R:** Use`getopts`para sinalizadores e parâmetros posicionais:
+```bash
+#!/bin/bash
+usage() { echo "Usage: $0 [-v] [-o output] <input>"; exit 1; }
+
+verbose=false
+output="default.txt"
+
+while getopts "vo:h" opt; do
+    case $opt in
+        v) verbose=true ;;
+        o) output="$OPTARG" ;;
+        h) usage ;;
+        *) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+input="${1:?Input file required}"
+```
+
+### Q4: O que é o pipeline do PowerShell e como ele difere do Bash?
+**R:** O PowerShell canaliza objetos, não texto. Cada objeto mantém suas propriedades:
+```powershell
+# Bash: text-based pipeline
+ps aux | grep chrome | awk '{print $2}'
+
+# PowerShell: object-based pipeline
+Get-Process chrome | Select-Object Id, WorkingSet64
+
+# Each object has properties and methods
+(Get-Process chrome).GetType()  # System.Diagnostics.Process
+```
+
+### Q5: Como escrevo scripts multiplataforma?
+**R:** Para Bash: use`#!/usr/bin/env bash`, evite sinalizadores específicos do GNU. Para PowerShell: use`pwsh`(PowerShell Core) que roda em Linux/macOS/Windows.
+---
+
+## Resolução de problemas por cadeia de pensamento
+### Problema 1: Script de processamento de imagens em lote (Bash)
+**Etapa 1: Entenda o problema**
+Redimensione todas as imagens PNG em um diretório para uma largura máxima de 800px.
+**Etapa 2: Identifique a abordagem**
+Use`find`para localizar arquivos e`convert`(ImageMagick) para redimensionar.
+**Etapa 3: Implementar**```bash
+#!/bin/bash
+set -euo pipefail
+
+input_dir="${1:-.}"
+output_dir="${2:-./resized}"
+mkdir -p "$output_dir"
+
+find "$input_dir" -maxdepth 1 -name '*.png' -type f | while read -r file; do
+    filename=$(basename "$file")
+    echo "Processing: $filename"
+    convert "$file" -resize '800x800>' "$output_dir/$filename"
+done
+
+echo "Done. Resized $(ls "$output_dir"/*.png 2>/dev/null | wc -l) images."
+```
+
+**Etapa 4: Estender**
+Adicione barra de progresso, tratamento de erros para imagens corrompidas e processamento paralelo com`xargs -P`.
+### Problema 2: rotação automatizada de log (Bash)
+**Etapa 1: Entenda o problema**
+Gire os arquivos de log diariamente, compacte logs antigos e exclua logs com mais de 30 dias.
+**Etapa 2: Identifique a abordagem**
+Use`find`com filtros baseados em tempo e`gzip`para compactação.
+**Etapa 3: Implementar**```bash
+#!/bin/bash
+set -euo pipefail
+
+LOG_DIR="/var/log/myapp"
+RETENTION_DAYS=30
+
+# Compress logs older than 1 day
+find "$LOG_DIR" -name '*.log' -mtime +1 -exec gzip {} \;
+
+# Delete compressed logs older than retention period
+find "$LOG_DIR" -name '*.log.gz' -mtime +$RETENTION_DAYS -delete
+
+# Report
+compressed=$(find "$LOG_DIR" -name '*.log.gz' | wc -l)
+echo "Active logs: $(find "$LOG_DIR" -name '*.log' | wc -l)"
+echo "Compressed: $compressed"
+```
+
+**Etapa 4: Agendamento**
+Adicionar ao crontab: `0 2 * * * /usr/local/bin/log-rotate.sh`
+### Problema 3: Verificação de integridade do serviço do Windows (PowerShell)
+**Etapa 1: Entenda o problema**
+Verifique se serviços críticos estão em execução e envie um alerta se algum for interrompido.
+**Etapa 2: Identifique a abordagem**
+Use`Get-Service`e filtre os serviços interrompidos.
+**Etapa 3: Implementar**```powershell
+$criticalServices = @('wuauserv', 'BITS', 'WinRM', 'Spooler')
+
+$results = foreach ($svc in $criticalServices) {
+    $service = Get-Service -Name $svc -ErrorAction SilentlyContinue
+    [PSCustomObject]@{
+        Name   = $svc
+        Status = if ($service) { $service.Status } else { 'NotFound' }
+    }
+}
+
+$stopped = $results | Where-Object { $_.Status -ne 'Running' }
+if ($stopped) {
+    Write-Warning "Services not running:"
+    $stopped | Format-Table -AutoSize
+    # Send-MailMessage or webhook alert here
+}
+```
+
+**Etapa 4: Automatizar**
+Agende como um trabalho do Agendador de Tarefas do Windows em execução a cada 5 minutos.
 ---
 
 ## Resumo

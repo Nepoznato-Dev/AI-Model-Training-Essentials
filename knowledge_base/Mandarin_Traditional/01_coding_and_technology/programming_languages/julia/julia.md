@@ -45,20 +45,20 @@ Julia 透過 LLVM 使用即時 (JIT) 編譯來實現接近 C 的效能，同時�
 ---
 
 ## 為什麼茱莉亞很重要
-- **速度**：數位程式碼的接近 C 的效能 — 使用者無需編譯步驟。
+- **速度**：數字代碼的接近 C 的效能 — 使用者無需編譯步驟。
 - **多重分派**：函數根據所有參數的類型表現不同 - 一個強大的範例。
-- **科學計算**：專為數學、線性代數和資料科學而設計。
+- **科學計算**：專為數學、線性代數和數據科學而設計。
 - **並行**：內建支援多處理、多執行緒和分散式運算。
 - **互通性**：可以直接呼叫Python、C和Fortran。
 - **不斷發展的生態系統**：快速擴展機器學習、優化和科學領域的軟體包生態系統。
 ## 權衡
 |限制|詳情 |典型解決方法|
 |------------|---------|--------------------|
-| **更年轻的生态系统** |比 Python 更少的包 |成长迅速；与 Python 的互操作填补了空白 |
-| **编译延迟** |首次调用函数可能会很慢（JIT 预热）|使用 PackageCompiler 预编译应用程序 |
-| **较小的社区** |比 Python 或 R 小得多 |活跃而热情的社区 |
-| **内存使用情况** |对于某些工作负载，高于 C/Fortran |适合大多数科学工作 |
-| **就业市场** |新兴——主要是研究和量化金融|数据科学和 HPC 领域的发展 |
+| **更年輕的生態系統** |比 Python 更少的套件 |成長迅速；與 Python 的互通填補了空白 |
+| **編譯延遲** |首次呼叫函數可能會很慢（JIT 預熱）|使用 PackageCompiler 預編譯應用程式 |
+| **較小的社群** |比 Python 或 R 小得多 |活躍且熱情的社群 |
+| **記憶體使用情況** |對於某些工作負載，高於 C/Fortran |適合大多數科學工作 |
+| **就業市場** |新興－主要是研究和量化金融|資料科學和 HPC 領域的發展 |
 ---
 
 ## 文法基礎知識
@@ -115,7 +115,7 @@ end
 ---
 
 ## 進階語法和模式
-### 多次調度深入探討
+### 多次調度深入研究
 多重調度是 Julia 皇冠上的明珠。每個函數都是通用的－它根據**所有**參數的運行時類型選擇一個方法，而不僅僅是第一個參數。
 ```julia
 # Define an abstract type hierarchy
@@ -867,15 +867,200 @@ julia --project=. -e '
 ---
 
 ## 何時使用 Julia
-|場景 |為什麼選擇茱莉亞？更好的選擇|
+|場景|為什麼選擇茱莉亞？更好的選擇|
 |----------|----------|--------------------|
 |科學計算|效能+易用性| Python (NumPy)、MATLAB、Fortran |
 |數值最佳化|優秀的最佳化包| C++、Fortran |
 |機器學習研究 |不斷發展的生態系 (Flux.jl) | Python（PyTorch、TensorFlow）|
 |平行計算|內建分散式支援| Python (Dask)、C++ (MPI) |
-|資料分析 |可能的; DataFrames.jl 很好 | Python（熊貓）、R |
+|資料分析|可能的; DataFrames.jl 很好 | Python（熊貓）、R |
 |網頁開發|不適合| JavaScript、Python |
-|通用應用程式開發|不是主要用例 | Python、Go、Java |
+|通用應用程式開發 |不是主要用例 | Python、Go、Java |
+---
+
+## 綜合問答
+### Q1：OOP 語言中的多重分派與單分派有何不同？
+**A:** 在單次調度（Java、Python）中，根據第一個參數（物件）的類型選擇方法。在 Julia 中，該方法是根據所有參數的類型來選擇的：
+```julia
+# Both argument types determine which method is called
+function collide(a::Circle, b::Circle)
+    println("Circle-Circle collision")
+end
+function collide(a::Circle, b::Rect)
+    println("Circle-Rect collision")
+end
+function collide(a::Rect, b::Circle)
+    println("Rect-Circle collision")
+end
+
+# No need for visitor pattern or double-dispatch hacks
+collide(Circle(0,0,1), Rect(1,1,2,2))  # Circle-Rect collision
+```
+
+這可以實現對稱操作並消除樣板模式。
+### Q2：如何在 Julia 中達到類似 C 的效能？
+**答：** 關鍵做法：
+- 使用類型穩定的函數（傳回一致的類型）
+- 在結構中使用具體類型，而不是抽象類型
+- 避免全域變數（或將它們設為`const`）
+- 使用`@inbounds`跳過邊界檢查（安全性時）
+- 預先分配數組而不是成長數組
+- 使用`@simd`進行可向量化循環
+```julia
+# Type-unstable (slow) — returns Union{Int, Float64}
+function bad(x)
+    if x > 0
+        return 1      # Int
+    else
+        return 1.0    # Float64
+    end
+end
+
+# Type-stable (fast) — always returns Float64
+function good(x)
+    if x > 0
+        return 1.0
+    else
+        return 1.0
+    end
+end
+```
+
+### Q3：`Array`、`Tuple`和`NamedTuple`之間有什麼不同？
+**答：** 每個都有不同的目的：
+```julia
+# Array — mutable, homogeneous, heap-allocated
+arr = [1, 2, 3]          # Vector{Int}
+arr[1] = 10
+
+# Tuple — immutable, heterogeneous, stack-allocated
+t = (1, "hello", 3.14)   # Tuple{Int, String, Float64}
+t[1]                      # 1
+
+# NamedTuple — tuple with named fields
+nt = (name="Alice", age=30)  # NamedTuple{(:name, :age), Tuple{String, Int}}
+nt.name                       # "Alice"
+```
+
+### Q4：如何處理 Julia 中的錯誤和例外？
+**A:** 使用`try/catch`和自訂異常類型：
+```julia
+# try/catch/finally
+try
+    result = risky_computation()
+catch e
+    @error "Failed" exception=e
+    result = fallback()
+finally
+    cleanup()
+end
+
+# Custom exception type
+struct ValidationError <: Exception
+    field::String
+    message::String
+end
+
+function validate(age)
+    age < 0 && throw(ValidationError("age", "cannot be negative"))
+end
+```
+
+### Q5：如何有效地使用 Julia 的套件生態系？
+**A:** 使用內建的套件管理器 (Pkg) 和環境：
+```julia
+# Activate a project environment
+using Pkg
+Pkg.activate(".")
+Pkg.add("DataFrames")
+Pkg.add("Plots")
+
+# In code
+using DataFrames
+using Plots
+
+# Project.toml tracks dependencies
+# Manifest.toml tracks exact versions (reproducible builds)
+```
+
+---
+
+## 解決問題的思路
+### 問題 1：實現數值積分函數
+**第 1 步：了解問題**
+使用辛普森法則計算函數的定積分。
+**第 2 步：確定方法**
+使用 Julia 的多重調度和高階函數。接受任何可調用函數。
+**步驟 3：實施**```julia
+function simpson(f::Function, a::Real, b::Real; n::Int=1000)
+    n % 2 == 0 || (n += 1)  # ensure even
+    h = (b - a) / n
+    s = f(a) + f(b)
+    for i in 1:n-1
+        x = a + i * h
+        s += (i % 2 == 0 ? 2 : 4) * f(x)
+    end
+    return s * h / 3
+end
+
+# Usage
+result = simpson(sin, 0, pi)  # ≈ 2.0
+result = simpson(x -> x^2, 0, 1)  # ≈ 0.333...
+```
+
+**第 4 步：優化**
+新增`@inbounds`和類型註解以提高效能。使用`@btime`進行基準測試。
+### 問題 2：建構平行蒙特卡羅模擬
+**第 1 步：了解問題**
+使用蒙特卡羅採樣估計 pi，在所有 CPU 核心上並行。
+**第 2 步：確定方法**
+使用`Threads.@threads`實作共享記憶體並行性。
+**步驟 3：實施**```julia
+function estimate_pi(n::Int)
+    inside = Threads.Atomic{Int}(0)
+    Threads.@threads for i in 1:n
+        x, y = rand(), rand()
+        if x^2 + y^2 <= 1
+            Threads.atomic_add!(inside, 1)
+        end
+    end
+    return 4 * inside[] / n
+end
+
+# Usage
+@time pi_est = estimate_pi(10_000_000)
+println("Estimated pi: $pi_est")
+```
+
+**第 4 步：驗證**
+與`Float64(\pi)`進行比較。增加樣本數量以獲得更高的準確性。
+### 問題 3：使用廣播建立自訂陣列類型
+**第 1 步：了解問題**
+建立僅儲存對角線元素但支援標準陣列操作的`DiagonalMatrix`類型。
+**第 2 步：確定方法**
+子類型`AbstractMatrix`並實作所需的方法。
+**步驟 3：實施**```julia
+struct DiagonalMatrix{T} <: AbstractMatrix{T}
+    diag::Vector{T}
+end
+
+Base.size(D::DiagonalMatrix) = (length(D.diag), length(D.diag))
+
+function Base.getindex(D::DiagonalMatrix, i::Int, j::Int)
+    i == j ? D.diag[i] : zero(eltype(D))
+end
+
+# Broadcasting support
+Base.BroadcastStyle(::Type{<:DiagonalMatrix}) = Broadcast.DefaultArrayStyle{2}()
+
+# Usage
+D = DiagonalMatrix([1.0, 2.0, 3.0])
+D * [1, 2, 3]     # [1, 4, 9]
+D .+ 1            # 3x3 matrix with 2, 3, 4 on diagonal
+```
+
+**第 4 步：擴充**
+加入`setindex!`、矩陣乘法優化和`show`方法。
 ---
 
 ＃＃ 概括

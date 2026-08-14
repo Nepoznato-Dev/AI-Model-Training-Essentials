@@ -76,7 +76,7 @@ Gemini, Google'ın yapay zeka sohbet robotu Bard'a (Gemini olarak yeniden adland
 Genel bakış.
 ### Phi-3-mini
 Phi-3-mini, Microsoft tarafından 3.8B ile geliştirilen küçük bir dil modelidir (SLM).
-parametreler. Nisan 2026'da piyasaya sürüldü. Çoğu büyük modelin aksine Phi-3-mini
+parametreler. Nisan 2024'da piyasaya sürüldü. Çoğu büyük modelin aksine Phi-3-mini
 dikkatle seçilmiş "ders kitabı kalitesinde" bir veri seti üzerinde eğitildi - bir teknik
 Microsoft Research'ün öncülük ettiği, ham hacim yerine veri kalitesine öncelik veren bir teknoloji.
 GPT-4 veya Claude 3 Opus'tan çok daha küçük olmasına rağmen, Phi-3-mini maçlar veya
@@ -87,7 +87,7 @@ hatta yeterli RAM'e sahip modern bir akıllı telefondaki cihazda bile.
 ### Lama (Meta AI)
 Llama (Büyük Dil Modeli Meta AI), açık ağırlıklı bir model ailesidir
 Meta tarafından yayınlandı. Llama 2 (2023) araştırma ve ticari kullanım için piyasaya sürüldü
-7B ila 70B parametreleri arasında değişen boyutlarda. Lama 3 (2026) iyileştirildi
+7B ila 70B parametreleri arasında değişen boyutlarda. Lama 3 (2024) iyileştirildi
 8B'den 70B'ye (ve daha sonra 400B+) kadar değişen modellerle performansı önemli ölçüde artırdı.
 Ağırlıklar herkese açık olarak indirilebildiğinden, Lama modelleri temeldir
 ince ayarlı değişkenlerden oluşan geniş bir ekosistem için (Mistral, Alpaca, Vicuna, vb.)
@@ -96,7 +96,7 @@ ve yerel/özel AI dağıtımları için yaygın olarak kullanılır.
 Mistral AI, açık ve tescilli LLM'ler geliştiren bir Fransız yapay zeka şirketidir.
 Mistral 7B (2023), 7B parametreli bir modelin aşağıdakilerle eşleşebileceğini gösterdi
 kaydırma gibi etkili teknikler kullanılarak çok daha büyük modellerin performansı
-pencere dikkati ve gruplandırılmış sorgu dikkati. Mixtral 8x7B (2026) bir karışımdır.
+pencere dikkati ve gruplandırılmış sorgu dikkati. Mixtral 8x7B (2023) bir karışımdır.
 uzman modeli - her jetonu 8 uzman ağdan oluşan bir alt kümeye yönlendirir,
 hesaplama açısından daha ucuzken GPT-3.5 düzeyinde performans elde etmek.
 Mistral'ın modelleri tamamen açık ağırlıklıdır ve yerel olarak çalıştırılabilir.

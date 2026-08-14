@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # Ilmu Data dan Analisis
 Ilmu data adalah disiplin mengubah data mentah menjadi wawasan yang dapat ditindaklanjuti. Hal ini merupakan titik temu antara statistik, ilmu komputer, dan keahlian domain — dan hal ini menjadi hal yang penting di setiap sektor, mulai dari keuangan hingga layanan kesehatan. File ini menjelaskan konsep inti, alat, dan alur kerja yang harus diketahui oleh setiap praktisi.
 ---
@@ -52,7 +53,7 @@ Sebagian besar proyek mengikuti beberapa variasi **CRISP-DM**, siklus hidup stan
 | **Pemodelan** | Pilih dan latih model | 10–15% |
 | **Evaluasi** | Menilai kinerja terhadap tujuan bisnis | 5–10% |
 | **Penerapan** | Kirim model ke produksi | 5–10% |
-Lelucon lama adalah bahwa 80% ilmu data adalah membersihkan data. Itu tidak jauh dari kebenaran.
+Persiapan data, khususnya pembersihan data, diperkirakan menghabiskan sekitar 80% waktu data scientist.
 ---
 
 ## Sekilas Tipe Data
@@ -106,7 +107,7 @@ Data dunia nyata berasal dari banyak sumber: database relasional, API (REST, Gra
 | **ETL** | Ekstrak → Transformasi → Muat — pendekatan jalur pipa tradisional |
 | **ELT** | Ekstrak → Muat → Transformasi — pendekatan cloud modern (muat mentah, transformasi dalam gudang) |
 | **Danau Data** | Data mentah disimpan dalam format asli (skema-on-read) |
-| **Gudang Data** | Data terstruktur dan diproses yang dioptimalkan untuk analisis (skema-saat-tulis) |
+| **Gudang Data** | Data terstruktur dan diproses yang dioptimalkan untuk analisis (skema-on-write) |
 | **DataMart** | Subset gudang, tercakup dalam satu departemen atau domain |
 | **Skema Bintang** | Tabel fakta pusat dikelilingi oleh tabel dimensi |
 | **Skema Kepingan Salju** | Tabel dimensi yang dinormalisasi (lebih sedikit redundansi, lebih banyak gabungan) |
@@ -177,7 +178,7 @@ EDA adalah tempat Anda mengembangkan intuisi tentang data Anda sebelum membuat m
 | Tugas | Algoritma |
 |------|-----------|
 | **Regresi** (memprediksi angka) | Linear, Ridge/LASSO, Pohon Keputusan, Hutan Acak, Peningkatan Gradien (XGBoost, LightGBM) |
-| **Klasifikasi** (memprediksi suatu kategori) | Regresi Logistik, k-NN, Naive Bayes, SVM, Pohon Keputusan, Random Forest, Jaringan Syaraf Tiruan |
+| **Klasifikasi** (memprediksi suatu kategori) | Regresi Logistik, k-NN, Naive Bayes, SVM, Pohon Keputusan, Hutan Acak, Jaringan Syaraf Tiruan |
 ### Sekilas tentang Pembelajaran Tanpa Pengawasan
 | Tugas | Algoritma |
 |------|-----------|
@@ -227,7 +228,7 @@ Ketika kumpulan data melebihi apa yang dapat ditangani oleh satu mesin, komputas
 | **Metabase** | Sumber terbuka | Pengaturan mudah, SQL-asli |
 | **Superset** | Sumber terbuka (Apache) | Dapat diskalakan, SQL-pertama |
 ### Prinsip Desain Dasbor
-Dasbor yang baik mengikuti beberapa aturan: kenali audiens Anda, pilih visualisasi yang tepat untuk setiap metrik, gunakan warna secara strategis (bukan dekoratif), pertahankan skala yang konsisten, dan aktifkan interaktivitas (filter, penelusuran). Performa juga penting — tidak ada yang menunggu dashboard lambat.
+Dasbor yang efektif mengikuti prinsip-prinsip yang telah ditetapkan: mengidentifikasi audiens, memilih visualisasi yang sesuai untuk setiap metrik, menggunakan warna secara strategis (bukan dekoratif), mempertahankan skala yang konsisten, dan memungkinkan interaktivitas (filter, penelusuran). Performa juga penting — dasbor dengan waktu muat yang lambat mengurangi adopsi pengguna.
 ### Kategori KPI Umum
 | Kategori | Contoh |
 |----------|---------|

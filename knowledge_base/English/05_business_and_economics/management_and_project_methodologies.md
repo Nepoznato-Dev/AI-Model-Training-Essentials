@@ -41,7 +41,7 @@ contribution:
 
 # Management and Project Methodologies
 
-Managing people and projects is one of the hardest things in any organisation. Technical skills get you into the room, but the ability to lead teams, make decisions, communicate clearly, and deliver results is what determines whether anything actually gets done. This file covers the frameworks, methodologies, and practical skills that effective managers and project leaders rely on.
+Managing people and projects is among the most demanding responsibilities in any organisation. Technical skills provide entry, but the ability to lead teams, make decisions, communicate effectively, and deliver results determines whether objectives are achieved. This file covers the frameworks, methodologies, and practical skills that effective managers and project leaders apply.
 
 ---
 
@@ -328,4 +328,4 @@ Product management is the discipline of deciding what to build, for whom, and wh
 
 ## Summary
 
-Management isn't about titles or org charts — it's about getting the right things done through other people. The best managers combine clear thinking (frameworks, methodologies, metrics) with emotional intelligence (listening, empathy, trust). No methodology replaces good judgment, but good judgment is improved by good frameworks. Use them as tools, not as religions.
+Management is the practice of achieving objectives through other people. Effective managers combine clear thinking (frameworks, methodologies, metrics) with interpersonal skills (listening, empathy, trust). No methodology replaces good judgment, but good judgment is enhanced by sound frameworks. These should be applied as practical guides rather than rigid doctrines.

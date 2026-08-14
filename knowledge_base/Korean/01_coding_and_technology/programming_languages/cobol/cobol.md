@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # 코볼
 COBOL(Common Business-Oriented Language)은 1959년에 처음 개발되어 현재까지 사용되는 가장 오래된 프로그래밍 언어 중 하나입니다. 이는 금융 시스템, 급여, 금융, 보험 및 정부 애플리케이션과 같은 비즈니스 데이터 처리용으로 설계되었습니다. COBOL의 영어와 유사한 구문은 프로그래머뿐만 아니라 비즈니스 관리자도 읽을 수 있도록 고안되었습니다.
 오랜 역사에도 불구하고 COBOL은 전 세계 모든 비즈니스 거래의 약 30%를 처리합니다. 주요 은행, 정부 기관(미국 사회 보장국 포함) 및 보험 회사는 여전히 COBOL 메인프레임 시스템에 의존하고 있습니다. 1999년 Y2K 버그 공포로 인해 COBOL이 다시 대중의 인지도를 얻었으며 이 언어는 전 세계적으로 계속해서 중요한 인프라를 실행하고 있습니다.
@@ -127,11 +128,11 @@ COBOL(Common Business-Oriented Language)은 1959년에 처음 개발되어 현�
 COBOL의 데이터 분할은 언어의 가장 독특한 특징입니다. 계층적 번호 지정 시스템(레벨 01-88)을 사용하여 데이터 구조를 정의합니다.
 | 레벨 | 목적 | 예 |
 |-------|---------|---------|
-| **01** | 레코드 수준 항목(최상위 변수 또는 레코드) |  __보호됨_0__ |
-| **02–49** | 그룹 또는 기본 항목(하위 필드) |  __보호됨_1__ |
-| **66** | Rename 절(데이터의 대체 보기) |  __보호됨_2__ |
-| **77** | 독립형 기본 항목(하위 항목 없음) |  __보호됨_3__ |
-| **88** | 조건 이름(부울 유사 플래그) |  __보호됨_4__ |
+| **01** | 레코드 수준 항목(최상위 변수 또는 레코드) | `01 WS-EMPLOYEE.`|
+| **02–49** | 그룹 또는 기본 항목(하위 필드) | `05 EMP-NAME PIC X(30).`|
+| **66** | Rename 절(데이터의 대체 보기) | `66 EMP-FULL-NAME RENAMES EMP-FIRST.`|
+| **77** | 독립형 기본 항목(하위 항목 없음) | `77 WS-COUNTER PIC 9(5).`|
+| **88** | 조건 이름(부울 유사 플래그) | `88 WS-IS-SENIOR VALUE 'Y'.`|
 ```cobol
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -166,7 +167,7 @@ COBOL의 데이터 분할은 언어의 가장 독특한 특징입니다. 계층�
 ```
 
 ### COPY 문(카피북)
-카피북은 코드 재사용을 위한 COBOL의 메커니즘으로 C의 `#include`와 유사합니다. 카피북은 별도의 멤버로 저장되며 컴파일 타임에 삽입됩니다.
+카피북은 코드 재사용을 위한 COBOL의 메커니즘입니다. C의 `#include`와 유사합니다. 카피북은 별도의 멤버로 저장되고 컴파일 타임에 삽입됩니다.
 ```cobol
        * In the main program — copy in common data definitions
        IDENTIFICATION DIVISION.
@@ -447,14 +448,14 @@ IBM 메인프레임에서 COBOL 프로그램은 JCL을 사용하여 컴파일되
 ### 컴파일러 옵션 참조
 | 옵션 | 설명 | 예 |
 |---------|-------------|---------|
-|  __보호됨_0__ | 자유 형식 소스(열 제한 없음) |  __보호됨_1__ |
-|  __보호됨_2__ | 고정 형식(기존 열 1-80) |  __보호됨_3__ |
-|  __보호됨_4__ | 최적화 수준 2 |  __보호됨_5__ |
-|  __보호_6__ | 디버그 정보 생성 |  __보호_7__ |
-|  __보호됨_8__ | COBOL 2014 표준 사용 |  __보호_9__ |
-|  __보호됨_10__ | 실행 파일 빌드(컴파일뿐만 아니라) |  __보호됨_11__ |
-|  __보호됨_12__ | 카피북 검색 경로 |  __보호_13__ |
-|  __보호됨_14__ | 모든 경고 활성화 |  __보호_15__ |
+| `-free`| 자유 형식 소스(열 제한 없음) | `cobc -free prog.cbl`|
+| `-fixed`| 고정 형식(기존 열 1-80) | `cobc -fixed prog.cbl`|
+| `-O2`| 최적화 수준 2 | `cobc -O2 prog.cbl`|
+| `-g`| 디버그 정보 생성 | `cobc -g prog.cbl`|
+| `-std=cobol2014`| COBOL 2014 표준 사용 | `cobc -std=cobol2014 prog.cbl`|
+| `-x`| 실행 파일 빌드(컴파일뿐만 아니라) | `cobc -x prog.cbl`|
+| `-I`| 카피북 검색 경로 | `cobc -I ./copybooks prog.cbl`|
+| `-Wall`| 모든 경고 활성화 | `cobc -Wall prog.cbl`|
 ---
 
 ## 테스트 및 디버깅
@@ -813,7 +814,7 @@ scp bin/payroll server:/opt/cobol/bin/
 | **정부** | 사회 보장, 세금 처리, 혜택 | US SSA는 수십억 개의 기록을 처리합니다 |
 | **헬스케어** | 환자 기록, 청구 시스템 | 기존 병원 정보 시스템 |
 | **소매** | 재고 관리, POS 백엔드 | 레거시 시스템을 갖춘 대규모 소매업체 |
-| **통신** | 빌링 시스템, 통화 기록 처리 | 통화내역 기록 처리 |
+| **통신** | 빌링 시스템, 통화 기록 처리 | 통화내역 기록처리 |
 ---
 
 ## COBOL을 사용해야 하는 경우
@@ -828,5 +829,129 @@ scp bin/payroll server:/opt/cobol/bin/
 | 데이터 과학 / ML | 적합하지 않음 | 파이썬, R |
 ---
 
+## 종합 Q&A
+### Q1: 왜 COBOL이 60년이 지난 지금도 은행 업무에 사용됩니까?
+**답변:** COBOL은 은행 거래의 약 70~80%를 처리합니다. 이유:
+- 올바르게 작동하는 대규모 코드베이스(수백만 줄)
+- 극도의 신뢰성 - 이 시스템은 수십 년 동안 생산 테스트를 거쳤습니다.
+- 마이그레이션 비용과 위험이 유지 관리 비용보다 큽니다.
+- COBOL의 장황하고 영어와 유사한 구문은 자체 문서화됩니다.
+- 언어에 내장된 소수점 연산(부동 소수점 반올림 오류 없음)
+### Q2: COBOL은 부동 소수점 오류 없이 십진수 산술을 어떻게 처리합니까?
+**A:** COBOL에는 고정된 정밀도의 기본 십진수 유형이 있습니다.
+```cobol
+       01  PRICE         PIC 9(5)V99.    *> 99999.99
+       01  TAX-RATE      PIC 9V999.      *> 0.125
+       01  TOTAL         PIC 9(7)V99.
+
+           COMPUTE TOTAL = PRICE * (1 + TAX-RATE)
+```
+
+`V`는 암시적 소수점입니다. COBOL은 절대로 이진 부동 소수점을 돈으로 사용하지 않습니다.
+### Q3: COBOL 프로그램의 구조는 무엇입니까?
+**답:** 모든 COBOL 프로그램에는 4개 부문이 있습니다.
+```cobol
+       IDENTIFICATION DIVISION.
+           PROGRAM-ID. HELLO.
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+           WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+           DISPLAY "Hello, World!".
+           STOP RUN.
+```
+
+### Q4: COBOL에서 순차 파일을 어떻게 읽고 처리합니까?
+**답:** COBOL은 파일 처리에 탁월합니다.
+```cobol
+       SELECT CUST-FILE ASSIGN TO 'customers.dat'
+           ORGANIZATION IS LINE SEQUENTIAL.
+
+       FD CUST-FILE.
+       01 CUST-RECORD.
+           05 CUST-NAME    PIC X(30).
+           05 CUST-BALANCE PIC 9(7)V99.
+
+       PROCEDURE DIVISION.
+           OPEN INPUT CUST-FILE
+           PERFORM UNTIL EOF
+               READ CUST-FILE
+                   AT END MOVE 'YES' TO EOF
+                   NOT AT END
+                       ADD CUST-BALANCE TO GRAND-TOTAL
+               END-READ
+           END-PERFORM
+           CLOSE CUST-FILE.
+```
+
+### Q5: 최신 COBOL 개발에 사용할 수 있는 도구는 무엇입니까?
+**A:** GnuCOBOL(오픈 소스), IBM Enterprise COBOL, Micro Focus 및 VS Code 확장은 최신 개발 환경을 제공합니다.`cobc -x program.cob`로 빌드하세요.
+---
+
+## 사고 사슬 문제 해결
+### 문제 1: 고객 보고서 생성
+**1단계: 문제 이해**
+고객 기록을 읽고, 총계를 계산하고, 형식화된 보고서를 생성하세요.
+**2단계: 접근 방식 파악**
+COBOL의 파일 처리 및 보고서 작성 기능을 사용하세요.
+**3단계: 구현**```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CUSTREPORT.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  EOF-FLAG        PIC X VALUE 'N'.
+       01  GRAND-TOTAL     PIC 9(9)V99 VALUE 0.
+       01  CUST-COUNT      PIC 9(5) VALUE 0.
+
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           PERFORM READ-LOOP
+               UNTIL EOF-FLAG = 'Y'
+           DISPLAY "Total Customers: " CUST-COUNT
+           DISPLAY "Grand Total: " GRAND-TOTAL
+           STOP RUN.
+
+       READ-LOOP.
+           READ CUST-FILE
+               AT END MOVE 'Y' TO EOF-FLAG
+               NOT AT END
+                   ADD 1 TO CUST-COUNT
+                   ADD CUST-BALANCE TO GRAND-TOTAL
+                   IF CUST-BALANCE > 10000
+                       DISPLAY "High Balance: " CUST-NAME
+                           " $" CUST-BALANCE
+                   END-IF
+           END-READ.
+```
+
+**4단계: 확인**
+소스 데이터와 비교하여 총계를 교차 확인합니다. 극단적인 경우(빈 파일, 잔액 0)로 테스트합니다.
+### 문제 2: 제어 중단을 사용한 일괄 처리
+**1단계: 문제 이해**
+부서별로 거래를 그룹화하여 소계를 인쇄합니다.
+**2단계: 접근 방식 파악**
+제어 중단 논리 사용 - 그룹 키가 변경되는 시기를 감지합니다.
+**3단계: 구현**```cobol
+       PROCESS-TRANSACTIONS.
+           MOVE SPACES TO PREV-DEPT
+           PERFORM READ-RECORD
+           PERFORM UNTIL EOF-FLAG = 'Y'
+               IF DEPT NOT = PREV-DEPT
+                   PERFORM PRINT-DEPT-TOTAL
+                   MOVE DEPT TO PREV-DEPT
+                   MOVE 0 TO DEPT-TOTAL
+               END-IF
+               ADD AMOUNT TO DEPT-TOTAL
+               ADD AMOUNT TO GRAND-TOTAL
+               PERFORM READ-RECORD
+           END-PERFORM
+           PERFORM PRINT-DEPT-TOTAL.
+```
+
+**4단계: 확인**
+마지막 그룹의 합계가 인쇄되는지 확인하세요. 총합계가 부서 총계의 합과 같은지 확인합니다.
+---
+
 ## 요약
-COBOL은 죽을 여유가 없기 때문에 죽기를 거부하는 컴퓨팅 초기의 유물입니다. 세계의 은행 및 정부 시스템은 수십 년 동안 안정적으로 운영되어 온 COBOL 프로그램에 의존합니다. 오늘날 새로운 프로젝트를 위해 누구도 COBOL을 선택하지 않을 것이지만, 언어는 글로벌 금융을 뒷받침하는 인프라를 유지하는 데 여전히 매우 중요합니다. COBOL 개발자의 부족으로 인해 COBOL은 놀라울 정도로 수익성이 좋은 틈새시장이 되었습니다.
+COBOL은 대규모 교체가 불가능하기 때문에 활발하게 사용되고 있는 컴퓨팅 초기 수십 년의 유산입니다. 세계의 은행 및 정부 시스템은 수십 년 동안 안정적으로 운영되어 온 COBOL 프로그램에 의존합니다. 오늘날 새로운 프로젝트에 COBOL이 일반적으로 선택되지는 않지만, 글로벌 금융을 지원하는 인프라를 유지 관리하는 데 언어는 여전히 중요합니다. COBOL 개발자의 부족으로 인해 수익성이 좋은 틈새 시장이 되었습니다.

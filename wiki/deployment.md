@@ -54,7 +54,7 @@ from pydantic import BaseModel
 import torch
 
 app = FastAPI()
-model = torch.load('model.pt')
+model = torch.load('model.pt', map_location='cpu', weights_only=True)
 model.eval()
 
 class InputData(BaseModel):
@@ -97,13 +97,18 @@ Process data streams in real-time.
 
 **Kafka Consumer Example:**
 ```python
-from kafka import KafkaConsumer
+from kafka import KafkaConsumer, KafkaProducer
 import json
 
 consumer = KafkaConsumer(
     'input-topic',
     bootstrap_servers=['localhost:9092'],
     value_deserializer=lambda x: json.loads(x.decode('utf-8'))
+)
+
+producer = KafkaProducer(
+    bootstrap_servers=['localhost:9092'],
+    value_serializer=lambda x: json.dumps(x).encode('utf-8')
 )
 
 for message in consumer:
@@ -129,9 +134,10 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-# Install system dependencies
+# Install system dependencies (curl needed for healthcheck)
 RUN apt-get update && apt-get install -y \
     gcc \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for caching
@@ -246,43 +252,49 @@ endpoint.deploy(
 response = endpoint.predict(instances=[[1.0, 2.0, 3.0]])
 ```
 
-### Azure ML
+### Azure ML (SDK v2)
+
+> **Note**: Azure ML SDK v1 (`azureml-core`) was deprecated in June 2026. Use SDK v2 (`azure-ai-ml`).
 
 ```python
-from azureml.core import Workspace, Model, Environment
-from azureml.core.webservice import AciWebservice, AksWebservice
-from azureml.model.mgmt.models import ModelConfig
+from azure.ai.ml import MLClient, command
+from azure.ai.ml.entities import Model, ManagedOnlineEndpoint, ManagedOnlineDeployment
+from azure.identity import DefaultAzureCredential
+
+# Connect to Azure ML workspace
+credential = DefaultAzureCredential()
+ml_client = MLClient(credential, subscription_id, resource_group, workspace_name)
 
 # Register model
-model = Model.register(
-    workspace=ws,
-    model_path='model.pt',
-    model_name='my-model'
+model = Model(
+    name='my-model',
+    path='./model.pt',
+    type='custom_model'
 )
+registered_model = ml_client.models.create_or_update(model)
 
-# Create inference config
-inference_config = InferenceConfig(
-    entry_script='score.py',
-    environment=env
+# Create online endpoint
+endpoint = ManagedOnlineEndpoint(
+    name='my-endpoint',
+    auth_mode='key'
 )
+ml_client.begin_create_or_update(endpoint).result()
 
-# Deploy to ACI (dev)
-service = Model.deploy(
-    workspace=ws,
-    name='my-service',
-    models=[model],
-    inference_config=inference_config,
-    deployment_config=AciWebservice.deploy_configuration(cpu_cores=1, memory_gb=1)
+# Deploy model
+deployment = ManagedOnlineDeployment(
+    name='blue',
+    endpoint_name=endpoint.name,
+    model=registered_model,
+    code_configuration={'code_directory': './scoring'},
+    instance_type='Standard_DS2_v2',
+    instance_count=1
 )
+ml_client.begin_create_or_update(deployment).result()
 
-# Deploy to AKS (prod)
-aks_service = Model.deploy(
-    workspace=ws,
-    name='my-aks-service',
-    models=[model],
-    inference_config=inference_config,
-    deployment_target=aks_cluster,
-    deployment_config=AksWebservice.deploy_configuration(replica_count=3)
+# Predict
+response = ml_client.online_endpoints.invoke(
+    endpoint_name=endpoint.name,
+    request_file='sample_input.json'
 )
 ```
 
@@ -359,7 +371,7 @@ class BatchPredictor:
         self.futures = deque()
         
     async def predict(self, features):
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         future = loop.create_future()
         self.queue.append(features)
         self.futures.append(future)
@@ -367,7 +379,7 @@ class BatchPredictor:
         if len(self.queue) >= self.batch_size:
             await self._process_batch()
         else:
-            asyncio.call_later(self.max_wait, self._try_process_batch)
+            asyncio.call_later(self.max_wait, lambda: asyncio.ensure_future(self._process_batch()))
         
         return await future
     
@@ -410,12 +422,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11'
       
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -431,16 +443,23 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      
+      - name: Log in to container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ secrets.REGISTRY_URL }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
       
       - name: Build and push Docker image
         run: |
-          docker build -t registry/image:${{ github.sha }} .
-          docker push registry/image:${{ github.sha }}
+          docker build -t ${{ secrets.REGISTRY_URL }}/image:${{ github.sha }} .
+          docker push ${{ secrets.REGISTRY_URL }}/image:${{ github.sha }}
       
       - name: Deploy to production
         run: |
-          kubectl set image deployment/my-app my-app=registry/image:${{ github.sha }}
+          kubectl set image deployment/my-app my-app=${{ secrets.REGISTRY_URL }}/image:${{ github.sha }}
 ```
 
 ---

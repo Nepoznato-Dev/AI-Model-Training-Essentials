@@ -38,6 +38,7 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
 # C#
 C# (wymawiane „C-sharp”) to nowoczesny, obiektowy, bezpieczny język programowania opracowany przez firmę Microsoft pod kierownictwem Andersa Hejlsberga i wydany po raz pierwszy w 2002 roku. Działa na platformie .NET i został zaprojektowany tak, aby połączyć moc C++ z produktywnością Visual Basic. Obecnie C# to wszechstronny, wieloplatformowy język używany w aplikacjach internetowych (ASP.NET), oprogramowaniu komputerowym (Windows), tworzeniu gier (Unity), aplikacjach mobilnych (MAUI), usługach w chmurze (Azure) i nie tylko.
 C# stale wchłania najlepsze pomysły z innych języków — LINQ, async/await, rekordy, dopasowywanie wzorców — co czyni go jednym z najbardziej bogatych w funkcje i przyjaznych dla programistów dostępnych języków.
@@ -45,11 +46,11 @@ C# stale wchłania najlepsze pomysły z innych języków — LINQ, async/await, 
 
 ## Dlaczego C# ma znaczenie
 - **Silnik gier Unity**: Podstawowy język Unity, najpopularniejszego na świecie silnika gier według liczby programistów.
-- **Rozwój korporacyjny**: ASP.NET Core to jedna z najszybszych dostępnych platform internetowych (niezmiennie zajmuje czołowe miejsca w testach porównawczych TechEmpower).
+- **Rozwój korporacyjny**: ASP.NET Core to jeden z najszybszych dostępnych frameworków internetowych (niezmiennie zajmuje czołowe miejsca w benchmarkach TechEmpower).
 - **Międzyplatformowy**: .NET 5+ działa w systemach Windows, macOS i Linux. Już nie tylko dla systemu Windows.
 - **Produktywność**: Doskonała obsługa IDE (Visual Studio, Rider), mocny system typów i nowoczesne funkcje składni.
 - **async/await pionier**: C# wprowadził async/await w 2012 r. — lata przed przyjęciem tego wzorca w innych językach.
-- **LINQ**: Zapytanie zintegrowane z językiem umożliwia pisanie zapytań podobnych do SQL bezpośrednio w języku C# względem dowolnego źródła danych.
+- **LINQ**: Zapytanie zintegrowane z językiem umożliwia pisanie zapytań przypominających SQL bezpośrednio w języku C# względem dowolnego źródła danych.
 ## Kompromisy
 | Ograniczenie | Szczegóły | Typowe obejście |
 |----------|---------|--------------------------------|
@@ -685,11 +686,11 @@ dotnet publish -c Release -r linux-x64
 |--------|------|------------|
 | C#7 | 2017 | Dopasowywanie wzorców, krotki, zmienne `out`, funkcje lokalne |
 | C#8 | 2019 | Typy referencyjne dopuszczające wartość null, wyrażenia `switch`, strumienie asynchroniczne |
-| C#9 | 2020 | **Rekordy**, wyciągi najwyższego poziomu,`init`właściwości |
+| C#9 | 2020 | **Rekordy**, wyciągi najwyższego poziomu, właściwości`init`|
 | C#10 | 2021 | Struktury rekordów, globalne`using`, przestrzenie nazw o zasięgu pliku |
-| C#11 | 2022 | Surowe literały ciągu, wzorce list, elementy `required`, ogólna matematyka |
+| C#11 | 2022 | Surowe literały łańcuchowe, wzorce list, elementy `required`, ogólna matematyka |
 | C#12 | 2023 | Konstruktory podstawowe, wyrażenia kolekcji, tablice wbudowane |
-| C#13 | 2024 | `params`kolekcje, nowe typy zamków, przęsła najwyższej klasy |
+| C#13 | 2024 |  Kolekcje `params`, nowe typy zamków, przęsła najwyższej klasy |
 ---
 
 ## Kiedy używać C#
@@ -704,6 +705,298 @@ dotnet publish -c Release -r linux-x64
 | Aplikacje mobilne (MAUI) | Wieloplatformowy z C# | Flutter, React Native lub natywny Swift/Kotlin |
 | AI/ML | Możliwe z ML.NET | Python (zdecydowanie preferowany) |
 | Narzędzia/skrypty CLI | Możliwe, ale szczegółowe | Idź, Rust, Python |
+---
+
+## Syntetyczne pytania i odpowiedzi
+### P1: Jaka jest różnica między`class`i`record`w języku C#?
+**A:**`class`jest domyślnie typem referencyjnym z modyfikowalnymi właściwościami — dwie zmienne mogą odwoływać się do tego samego obiektu.`record`(C# 9+) to typ referencyjny z równością opartą na wartościach — dwa rekordy z tymi samymi danymi są uważane za równe. Rekordy mają właściwości tylko init, wbudowaną`ToString`i obsługują wyrażenia`with`dla nieniszczących mutacji. Użyj rekordów dla nośników danych (DTO, obiekty wartości); używaj klas dla jednostek bogatych w zachowania z tożsamością.
+```csharp
+// Class — reference equality, mutable
+public class User { public string Name { get; set; } public int Age { get; set; } }
+var u1 = new User { Name = "Alice", Age = 30 };
+var u2 = u1;  // Same reference
+u2.Name = "Bob";
+Console.WriteLine(u1.Name);  // "Bob" — both point to same object
+
+// Record — value equality, immutable by default
+public record Person(string Name, int Age);
+var p1 = new Person("Alice", 30);
+var p2 = p1 with { Name = "Bob" };  // New record, p1 unchanged
+Console.WriteLine(p1.Name);          // "Alice"
+Console.WriteLine(p1 == new Person("Alice", 30));  // true — value equality
+```
+
+### P2: Jak wewnętrznie działają funkcje async/await i `Task`?
+**A:**`async/await`to cukier syntaktyczny na maszynie stanu wygenerowanej przez kompilator. Kiedy`await`a`Task`metoda jest dzielona w punkcie oczekiwania: wszystko wcześniej jest wykonywane synchronicznie, a następnie pozostała część jest rejestrowana jako kontynuacja. Wątek może zająć się inną pracą. `Task<T>`reprezentuje wartość przyszłą. `ValueTask<T>`to alternatywa struktury dla gorących ścieżek, która pozwala uniknąć alokacji sterty, gdy wynik jest już dostępny.
+```csharp
+// Async method — returns Task<T>
+public async Task<User> GetUserAsync(string id)
+{
+    using var client = new HttpClient();
+    var response = await client.GetAsync($"/api/users/{id}");
+    response.EnsureSuccessStatusCode();
+    return await response.Content.ReadFromJsonAsync<User>();
+}
+
+// Concurrent execution
+var userTask = GetUserAsync("1");
+var postsTask = GetPostsAsync("1");
+var user = await userTask;
+var posts = await postsTask;
+// Or: await Task.WhenAll(userTask, postsTask);
+
+// ValueTask for high-performance scenarios
+public ValueTask<int> GetCachedCount() =>
+    _cached.HasValue ? new ValueTask<int>(_cached.Value) : new ValueTask<int>(ComputeCountAsync());
+```
+
+### P3: Jakie są metody rozszerzania i kiedy należy ich używać?
+**O:** Metody rozszerzające dodają metody do istniejących typów bez ich modyfikowania. Są to metody statyczne w klasie statycznej, ze słowem kluczowym`this`na pierwszym parametrze. Umożliwiają płynny, łańcuchowy interfejs API. Użyj ich, aby dodać metody narzędziowe do typów, których nie posiadasz (takich jak`string`lub`IEnumerable<T>`). Unikaj ich nadużywania — mogą utrudniać odkrycie kodu.
+```csharp
+public static class StringExtensions
+{
+    public static string Truncate(this string s, int maxLength) =>
+        s.Length <= maxLength ? s : s[..maxLength] + "...";
+
+    public static bool IsEmail(this string s) =>
+        s.Contains('@') && s.Contains('.');
+}
+
+// Usage — looks like a native method
+"Hello, World!".Truncate(8);  // "Hello..."
+"test@example.com".IsEmail();  // true
+
+// LINQ is built entirely on extension methods
+var adults = people.Where(p => p.Age >= 18).OrderBy(p => p.Name).ToList();
+```
+
+### P4: Jak działa dopasowywanie wzorców we współczesnym języku C#?
+**O:** W języku C# stopniowo dodano skuteczniejsze dopasowywanie wzorców. Wyrażenia przełączników (C# 8), wzorce typów, wzorce właściwości, wzorce relacyjne i wzorce list (C# 11) umożliwiają zwięzłą, ekspresyjną logikę warunkową. Dopasowywanie wzorców zastępuje długie łańcuchy if/else i jest dokładnie sprawdzane przez kompilator.
+```csharp
+// Switch expression with patterns
+string Describe(object obj) => obj switch
+{
+    null => "nothing",
+    int n when n > 0 => $"positive integer: {n}",
+    int n => $"non-positive integer: {n}",
+    string { Length: 0 } => "empty string",
+    string s => $"string of length {s.Length}",
+    Person { Age: >= 18 } p => $"adult: {p.Name}",
+    Person { Age: < 18 } p => $"minor: {p.Name}",
+    int[] { Length: 0 } => "empty array",
+    int[] [var first, ..] => $"array starting with {first}",
+    _ => $"unknown: {obj.GetType().Name}"
+};
+
+// if with pattern matching
+if (obj is Person { Age: >= 18 } adult)
+{
+    Console.WriteLine($"Adult: {adult.Name}");
+}
+```
+
+### P5: Co to jest wstrzykiwanie zależności w .NET i jak z niego korzystać?
+**A:** .NET ma wbudowaną obsługę DI poprzez `Microsoft.Extensions.DependencyInjection`. Rejestrujesz usługi z ich okresami istnienia (Singleton, Scoped, Transient), a kontener wstrzykuje je za pomocą parametrów konstruktora. Singleton: jedna instancja aplikacji. Zakres: jeden na żądanie HTTP. Przejściowe: za każdym razem nowa instancja.
+```csharp
+// Registration (Program.cs)
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
+builder.Services.AddScoped<IUserRepository, SqlUserRepository>();
+builder.Services.AddSingleton<ICache, InMemoryCache>();
+
+// Consumption via constructor injection
+public class UserController : ControllerBase
+{
+    private readonly IUserRepository _users;
+    private readonly IEmailSender _email;
+
+    public UserController(IUserRepository users, IEmailSender email)
+    {
+        _users = users;
+        _email = email;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateUserDto dto)
+    {
+        var user = await _users.CreateAsync(dto);
+        await _email.SendWelcomeAsync(user.Email);
+        return Ok(user);
+    }
+}
+```
+
+---
+
+## Rozwiązywanie problemów na podstawie łańcucha myślowego
+### Problem 1: Zbuduj ogólne repozytorium z buforowaniem
+**Opis problemu:** Zaimplementuj ogólny wzorzec repozytorium za pomocą dekoratora, który dodaje buforowanie. Repozytorium powinno obsługiwać operacje CRUD, a dekorator buforowania powinien buforować odczyty i unieważniać zapisy.
+**Krok 1 — Zrozum problem:**
+Potrzebujemy: (1) ogólnego interfejsu `IRepository<T>`, (2) konkretnej implementacji (np. w pamięci), (3) dekoratora pamięci podręcznej, który otacza dowolne repozytorium, (4) unieważniania pamięci podręcznej podczas operacji zapisu. Wzorzec dekoratora utrzymuje buforowanie ortogonalne w stosunku do logiki dostępu do danych.
+**Krok 2 — Zidentyfikuj podejście:**
+- Zdefiniuj`IRepository<T>`za pomocą`Get`,`GetAll`,`Add`,`Update`,`Delete`.
+- Utwórz `CachingRepository<T>`, który otacza`IRepository<T>`i używa`IMemoryCache`.
+- Klucz pamięci podręcznej:`typeof(T).Name:{id}`.
+- Podczas operacji zapisu unieważnij wpis w pamięci podręcznej.
+**Krok 3 — Wdróż rozwiązanie:**
+```csharp
+public interface IRepository<T> where T : class
+{
+    Task<T?> GetByIdAsync(string id);
+    Task<IReadOnlyList<T>> GetAllAsync();
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(string id);
+}
+
+public interface IEntity { string Id { get; } }
+
+public class CachingRepository<T> : IRepository<T> where T : class, IEntity
+{
+    private readonly IRepository<T> _inner;
+    private readonly IMemoryCache _cache;
+    private readonly TimeSpan _ttl;
+
+    public CachingRepository(IRepository<T> inner, IMemoryCache cache,
+                             TimeSpan? ttl = null)
+    {
+        _inner = inner;
+        _cache = cache;
+        _ttl = ttl ?? TimeSpan.FromMinutes(5);
+    }
+
+    public Task<T?> GetByIdAsync(string id)
+    {
+        var key = $"{typeof(T).Name}:{id}";
+        return _cache.GetOrCreateAsync(key, entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetByIdAsync(id);
+        })!;
+    }
+
+    public Task<IReadOnlyList<T>> GetAllAsync() =>
+        _cache.GetOrCreateAsync($"{typeof(T).Name}:all", entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = _ttl;
+            return _inner.GetAllAsync();
+        })!;
+
+    public async Task AddAsync(T entity)
+    {
+        await _inner.AddAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        await _inner.UpdateAsync(entity);
+        Invalidate(entity.Id);
+    }
+
+    public async Task DeleteAsync(string id)
+    {
+        await _inner.DeleteAsync(id);
+        Invalidate(id);
+    }
+
+    private void Invalidate(string id)
+    {
+        _cache.Remove($"{typeof(T).Name}:{id}");
+        _cache.Remove($"{typeof(T).Name}:all");
+    }
+}
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Oddzielenie obaw: buforowanie jest dekoratorem, a nie mieszanym z repozytorium.
+- Rejestracja DI:`services.Decorate<IRepository<User>, CachingRepository<User>>()`(za pomocą Scrutora).
+- Produkcja: użyj`IDistributedCache`(Redis) w scenariuszach z wieloma serwerami i dodaj wzorce odkładania pamięci podręcznej z ochroną `CacheStampede`.
+### Problem 2: Zaimplementuj potok oprogramowania pośredniego
+**Opis problemu:** Zbuduj potok oprogramowania pośredniego podobny do potoku żądań ASP.NET Core. Każde oprogramowanie pośredniczące może przetworzyć żądanie, wywołać kolejne oprogramowanie pośredniczące i przetworzyć odpowiedź.
+**Krok 1 — Zrozum problem:**
+Potrzebujemy: (1) typu`RequestDelegate`reprezentującego potok, (2) oprogramowania pośredniego, które otacza następnego delegata, (3) interfejsu API konstruktora do tworzenia oprogramowania pośredniego. To jest wzorzec Łańcucha Odpowiedzialności wdrożony z delegatami.
+**Krok 2 — Zidentyfikuj podejście:**
+-`RequestDelegate`to`Func<Context, RequestDelegate, Task>`.
+- Każde oprogramowanie pośredniczące otrzymuje kontekst i funkcję `next`.
+-`Use`dodaje oprogramowanie pośrednie; `Build`łączy je w jednego delegata.
+**Krok 3 — Wdróż rozwiązanie:**
+```csharp
+public class Context
+{
+    public string Method { get; init; } = "GET";
+    public string Path { get; init; } = "/";
+    public Dictionary<string, string> Headers { get; } = new();
+    public int StatusCode { get; set; } = 200;
+    public string Body { get; set; } = "";
+}
+
+public delegate Task RequestDelegate(Context context);
+
+public class PipelineBuilder
+{
+    private readonly List<Func<RequestDelegate, RequestDelegate>> _middlewares = new();
+
+    public PipelineBuilder Use(Func<Context, RequestDelegate, Task> middleware)
+    {
+        _middlewares.Add(next => async ctx => await middleware(ctx, next));
+        return this;
+    }
+
+    public PipelineBuilder Use(Func<Context, Task> handler)
+    {
+        _middlewares.Add(next => async ctx =>
+        {
+            await handler(ctx);
+            // Terminal middleware — does not call next
+        });
+        return this;
+    }
+
+    public RequestDelegate Build()
+    {
+        RequestDelegate app = _ => Task.CompletedTask;  // Terminal
+        for (int i = _middlewares.Count - 1; i >= 0; i--)
+        {
+            app = _middlewares[i](app);
+        }
+        return app;
+    }
+}
+
+// Usage
+var pipeline = new PipelineBuilder()
+    .Use(async (ctx, next) =>
+    {
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {ctx.Method} {ctx.Path}");
+        var sw = Stopwatch.StartNew();
+        await next(ctx);
+        Console.WriteLine($"Completed in {sw.ElapsedMilliseconds}ms — {ctx.StatusCode}");
+    })
+    .Use(async (ctx, next) =>
+    {
+        ctx.Headers["X-Powered-By"] = "MyFramework";
+        await next(ctx);
+    })
+    .Use(async ctx =>
+    {
+        if (ctx.Path == "/hello")
+            ctx.Body = "Hello, World!";
+        else
+        {
+            ctx.StatusCode = 404;
+            ctx.Body = "Not Found";
+        }
+    })
+    .Build();
+
+await pipeline(new Context { Method = "GET", Path = "/hello" });
+```
+
+**Krok 4 — Weryfikacja i optymalizacja:**
+- Kolejność oprogramowania pośredniego ma znaczenie: pierwszy dodany = najbardziej zewnętrzny (wykonany jako pierwszy na żądanie, ostatni w odpowiedzi).
+- Oprogramowanie pośredniczące terminala (brak wywołania `next`) powoduje zwarcie potoku.
+- Produkcja: Potok ASP.NET Core jest dokładnie tym wzorcem, zoptymalizowanym przy użyciu skompilowanych drzew wyrażeń pod kątem zerowej alokacji.
 ---
 
 ## Streszczenie

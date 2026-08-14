@@ -781,5 +781,161 @@ f2py -c -m mymodule --f90flags="-O3" mymodule.f90
 |データ サイエンス (対話型) |ワークフローではありません |パイソン、R |
 ---
 
+## 総合的な Q&A
+### Q1: Fortran 90 と最新の Fortran (2008+) の違いは何ですか?
+**A:** 最新の Fortran には、表現力を高める多くの機能が追加されました。
+```fortran
+! Fortran 90: free-form source, modules, derived types
+! Fortran 2003: OOP (classes, inheritance, polymorphism)
+! Fortran 2008: coarrays (parallel programming), submodules
+! Fortran 2018: further coarray enhancements, IEEE arithmetic
+
+! Modern OOP example
+type :: Shape
+    character(len=20) :: name
+contains
+    procedure :: area => shape_area
+end type
+
+type, extends(Shape) :: Circle
+    real :: radius
+contains
+    procedure :: area => circle_area
+end type
+```
+
+### Q2: Fortran 配列は C 配列とどう違うのですか?
+**A:** Fortran 配列は、組み込み演算を備えたファーストクラスのオブジェクトです。
+```fortran
+! Declaration with bounds
+real, dimension(100) :: x          ! 1 to 100
+real, dimension(-50:50) :: y       ! -50 to 50
+real, dimension(10, 20) :: matrix  ! 2D array
+
+! Array operations (no loops needed)
+a = b + c           ! element-wise addition
+a = sin(b) * cos(c) ! element-wise functions
+where (a > 0)
+    a = sqrt(a)
+end where
+
+! Array slices
+sub_array = a(10:50:2)   ! elements 10, 12, 14, ..., 50
+matrix_col = matrix(:, 3) ! entire 3rd column
+```
+
+### Q3: Fortran で最大のパフォーマンスを達成するにはどうすればよいですか?
+**A:** 主な実践方法:
+- すべての仮引数に明示的な`intent`を使用する
+- あらゆる場所で`implicit none`を使用する
+- ループよりも配列操作を優先する
+- 連続したメモリ アクセス パターンを使用する
+- コンパイラ最適化フラグを使用します:`-O3 -march=native -ffast-math`
+-`gprof`またはコンパイラ固有のツールを使用したプロファイル
+- コンパイラが最適化できる関数には`pure`および`elemental`を使用します
+### Q4: Fortran と C をインターフェースするにはどうすればよいですか?
+**A:**`iso_c_binding`モジュールを使用します。
+```fortran
+use iso_c_binding
+
+! Call a C function
+interface
+    function c_strlen(str) bind(C, name='strlen') result(len)
+        import :: c_ptr, c_size_t
+        type(c_ptr), intent(in), value :: str
+        integer(c_size_t) :: len
+    end function
+end interface
+```
+
+### Q5: Fortran プロジェクトにはどのビルド システムを使用する必要がありますか?
+**A:** CMake は優れた Fortran サポートを備えています。 FPM (Fortran Package Manager) は最新のネイティブ オプションです。
+```bash
+# FPM — simple, Fortran-native
+fpm new my_project
+fpm build
+fpm test
+fpm run
+
+# CMake — for larger projects
+# add_executable(myapp src/main.f90 src/module1.f90)
+# target_compile_options(myapp PRIVATE -O3)
+```
+
+---
+
+## 思考連鎖による問題解決
+### 問題 1: 有限差分を使用した偏微分方程式の解法
+**ステップ 1: 問題を理解する**
+1D 熱方程式を解きます: du/dt = alpha * d²u/dx²
+**ステップ 2: アプローチを特定する**
+有限差分を使用して空間と時間を離散化します。明示的なスキームを使用します。
+**ステップ 3: 実装**```fortran
+program heat_equation
+    implicit none
+    integer, parameter :: n = 100, nt = 1000
+    real(8), parameter :: L = 1.0d0, alpha = 0.01d0
+    real(8) :: dx, dt, x(n), u(n), u_new(n)
+    integer :: i, t
+
+    dx = L / (n - 1)
+    dt = 0.4d0 * dx**2 / alpha  ! stability condition
+
+    ! Initial condition
+    x = [(real(i-1, 8) * dx, i = 1, n)]
+    u = exp(-100.0d0 * (x - 0.5d0)**2)
+
+    ! Time stepping
+    do t = 1, nt
+        u_new(1) = 0.0d0     ! boundary
+        u_new(n) = 0.0d0     ! boundary
+        do i = 2, n-1
+            u_new(i) = u(i) + alpha * dt / dx**2 * &
+                        (u(i+1) - 2.0d0*u(i) + u(i-1))
+        end do
+        u = u_new
+    end do
+
+    ! Output
+    do i = 1, n
+        print *, x(i), u(i)
+    end do
+end program
+```
+
+**ステップ 4: 確認**
+保存性、グリッド細分化による収束性を確認し、解析ソリューションと比較します。
+### 問題 2: 行列の対角化
+**ステップ 1: 問題を理解する**
+対称行列の固有値と固有ベクトルを求めます。
+**ステップ 2: アプローチを特定する**
+Fortran のインターフェイス経由で LAPACK の`dsyev`ルーチンを使用します。
+**ステップ 3: 実装**```fortran
+program diagonalize
+    use lapack95
+    implicit none
+    integer, parameter :: n = 3
+    real(8) :: A(n,n), w(n), work(3*n-1)
+    integer :: info
+
+    A = reshape([2.0d0, -1.0d0, 0.0d0, &
+                -1.0d0,  2.0d0, -1.0d0, &
+                 0.0d0, -1.0d0,  2.0d0], [n,n])
+
+    call dsyev('V', 'U', n, A, n, w, work, size(work), info)
+
+    print *, 'Eigenvalues:'
+    print '(3F12.6)', w
+    print *, 'Eigenvectors (columns):'
+    do i = 1, n
+        print '(3F12.6)', A(i,:)
+    end do
+end program
+```
+
+**ステップ 4: 確認**
+各固有ペアについて A*v = lambda*v であることを確認します。
+---
+
 ＃＃ まとめ
 Fortran は元の科学プログラミング言語であり、ハイパフォーマンス コンピューティングの有力な言語であり続けています。最新の Fortran は、ネイティブ配列操作、並列プログラミングのサポート、および C の相互運用性を備えた、進化し続ける有能な言語です。 Fortran のコミュニティは小規模で専門化されていますが、世界で最も要求の高い計算ワークロードの一部を実行し続けています。大規模な数値計算には、Fortran が依然として重要です。
