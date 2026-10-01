@@ -1,0 +1,9 @@
+---
+translation_status: pending
+source: skills/testing-skills/test_automation.md
+language: Czech
+---
+
+# Translation pending
+
+This file is reserved for the Czech translation of `skills/testing-skills/test_automation.md`.
