@@ -1,0 +1,9 @@
+---
+translation_status: pending
+source: guides/Agentic_Systems/projects/README.md
+language: Ukrainian
+---
+
+# Translation pending
+
+This file is reserved for the Ukrainian translation of `guides/Agentic_Systems/projects/README.md`.

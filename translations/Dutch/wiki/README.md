@@ -1,0 +1,9 @@
+---
+translation_status: pending
+source: wiki/README.md
+language: Dutch
+---
+
+# Translation pending
+
+This file is reserved for the Dutch translation of `wiki/README.md`.
