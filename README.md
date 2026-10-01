@@ -46,6 +46,7 @@ Before installing anything, check the [Getting Started wiki page](wiki/getting_s
 - [Skills Library](skills/README.md): reusable capabilities for AI agents.
 - [Agent Modes](agent_modes/): behavior configurations for coding, research, debugging, review, and testing.
 - [Wiki](wiki/README.md): architecture, model development, deployment, monitoring, security, learning paths, and references.
+- [Translation scaffolding](translations/README.md): placeholders and conventions for 52 future language translations.
 
 ## Contributing
 
