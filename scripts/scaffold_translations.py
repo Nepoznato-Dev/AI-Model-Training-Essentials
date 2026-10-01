@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LANGUAGE_FILE = ROOT / "translations" / "languages.txt"
+SOURCE_ROOT = ROOT / "Languages" / "English"
 COLLECTIONS = ("skills", "wiki", "guides", "agent_modes")
 PLACEHOLDER = """---
 translation_status: pending
@@ -31,7 +32,7 @@ def languages() -> list[str]:
 def source_documents() -> list[tuple[str, Path]]:
     documents = []
     for collection in COLLECTIONS:
-        source_root = ROOT / collection
+        source_root = SOURCE_ROOT / collection
         documents.extend(
             (collection, path.relative_to(source_root))
             for path in source_root.rglob("*.md")
