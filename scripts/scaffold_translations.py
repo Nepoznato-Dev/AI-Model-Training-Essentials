@@ -6,8 +6,8 @@ import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LANGUAGE_FILE = ROOT / "translations" / "languages.txt"
-SOURCE_ROOT = ROOT / "Languages" / "English"
+LANGUAGE_FILE = ROOT / "languages" / "languages.txt"
+SOURCE_ROOT = ROOT / "languages" / "english"
 COLLECTIONS = ("skills", "wiki", "guides", "agent_modes")
 PLACEHOLDER = """---
 translation_status: pending
@@ -44,7 +44,7 @@ def source_documents() -> list[tuple[str, Path]]:
 def expected_files() -> list[tuple[Path, str, str]]:
     return [
         (
-            ROOT / "translations" / language / collection / relative_path,
+            ROOT / "languages" / language.lower() / collection / relative_path,
             language,
             f"{collection}/{relative_path.as_posix()}",
         )
