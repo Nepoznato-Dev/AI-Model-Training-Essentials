@@ -1,54 +1,62 @@
-# AI-Model-Training-Essentials
+# AI Model Training Essentials
 
-> 🌍 **A multilingual knowledge base and AI teaching repository for small local models.**
+Welcome to AI Model Training Essentials.
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Languages](https://img.shields.io/badge/languages-20-multicolor)](knowledge_base/)
-[![Knowledge Files](https://img.shields.io/badge/knowledge_files-103+-green)](knowledge_base/English/)
-[![Skills](https://img.shields.io/badge/skills-45+-orange)](skills/)
-[![Wiki](https://img.shields.io/badge/wiki-documentation-purple)](wiki/)
-[![Projects](https://img.shields.io/badge/projects-runnable-lightgrey)](guides/projects/)
+Choose a language to begin:
 
-## What is here?
+- [العربية (Arabic)](languages/arabic/README.md)
+- [বাংলা (Bengali)](languages/bengali/README.md)
+- [Български (Bulgarian)](languages/bulgarian/README.md)
+- [Català (Catalan)](languages/catalan/README.md)
+- [简体中文 (Chinese Simplified)](languages/chinese_simplified/README.md)
+- [繁體中文 (Chinese Traditional)](languages/chinese_traditional/README.md)
+- [Hrvatski (Croatian)](languages/croatian/README.md)
+- [Čeština (Czech)](languages/czech/README.md)
+- [Dansk (Danish)](languages/danish/README.md)
+- [Nederlands (Dutch)](languages/dutch/README.md)
+- [English](languages/english/README.md)
+- [Eesti (Estonian)](languages/estonian/README.md)
+- [Suomi (Finnish)](languages/finnish/README.md)
+- [Français (French)](languages/french/README.md)
+- [Deutsch (German)](languages/german/README.md)
+- [Ελληνικά (Greek)](languages/greek/README.md)
+- [ગુજરાતી (Gujarati)](languages/gujarati/README.md)
+- [עברית (Hebrew)](languages/hebrew/README.md)
+- [हिन्दी (Hindi)](languages/hindi/README.md)
+- [Magyar (Hungarian)](languages/hungarian/README.md)
+- [Bahasa Indonesia (Indonesian)](languages/indonesian/README.md)
+- [Italiano (Italian)](languages/italian/README.md)
+- [日本語 (Japanese)](languages/japanese/README.md)
+- [ಕನ್ನಡ (Kannada)](languages/kannada/README.md)
+- [한국어 (Korean)](languages/korean/README.md)
+- [Latviešu (Latvian)](languages/latvian/README.md)
+- [Lietuvių (Lithuanian)](languages/lithuanian/README.md)
+- [Bahasa Melayu (Malay)](languages/malay/README.md)
+- [മലയാളം (Malayalam)](languages/malayalam/README.md)
+- [मराठी (Marathi)](languages/marathi/README.md)
+- [Norsk (Norwegian)](languages/norwegian/README.md)
+- [فارسی (Persian)](languages/persian/README.md)
+- [Polski (Polish)](languages/polish/README.md)
+- [Português (Portuguese)](languages/portuguese/README.md)
+- [ਪੰਜਾਬੀ (Punjabi)](languages/punjabi/README.md)
+- [Română (Romanian)](languages/romanian/README.md)
+- [Русский (Russian)](languages/russian/README.md)
+- [Српски (Serbian)](languages/serbian/README.md)
+- [Slovenčina (Slovak)](languages/slovak/README.md)
+- [Slovenščina (Slovenian)](languages/slovenian/README.md)
+- [Español (Spanish)](languages/spanish/README.md)
+- [Kiswahili (Swahili)](languages/swahili/README.md)
+- [Svenska (Swedish)](languages/swedish/README.md)
+- [Tagalog (Tagalog)](languages/tagalog/README.md)
+- [தமிழ் (Tamil)](languages/tamil/README.md)
+- [తెలుగు (Telugu)](languages/telugu/README.md)
+- [ไทย (Thai)](languages/thai/README.md)
+- [Türkçe (Turkish)](languages/turkish/README.md)
+- [Українська (Ukrainian)](languages/ukrainian/README.md)
+- [اردو (Urdu)](languages/urdu/README.md)
+- [Tiếng Việt (Vietnamese)](languages/vietnamese/README.md)
+- [Cymraeg (Welsh)](languages/welsh/README.md)
 
-This repository brings together structured AI knowledge, learning guides, reusable agent skills, configurable agent modes, and runnable projects. It is intended for learning, experimentation, and building local AI systems.
+Each language directory contains the language-specific documentation, guides, skills, agent modes, and wiki content.
 
-For the full directory map, content-area guidance, and contribution conventions, see the [Repository Guide](wiki/repository_guide.md). The [Wiki](wiki/README.md) is the detailed documentation hub; this page is intentionally a quick orientation.
-
-## Quick Start
-
-### Run a project
-
-```bash
-cd guides/projects/rag_simple
-pip install -r requirements.txt
-python main.py
-```
-
-Browse all implementations in [Runnable Projects](guides/projects/README.md).
-
-### Follow a learning path
-
-| Interest | Start here |
-|----------|------------|
-| New to AI/ML | [Beginner path](wiki/learning_paths/beginner.md) |
-| NLP and search | [RAG guide](guides/RAG/) |
-| Language models | [Transformers guide](guides/Transformers/) |
-| Computer vision | [CNN guide](guides/CNNs/) |
-| Autonomous systems | [Agentic Systems guide](guides/Agentic_Systems/) |
-
-Before installing anything, check the [Getting Started wiki page](wiki/getting_started.md) and [hardware guidance](guides/hardware_reality_check.md).
-
-## Main Areas
-
-- [Guides](guides/README.md): sequenced tutorials, prerequisites, errors, and projects.
-- [Knowledge Base](knowledge_base/README.md): focused reference content in 20 languages.
-- [Skills Library](skills/README.md): reusable capabilities for AI agents.
-- [Agent Modes](agent_modes/): behavior configurations for coding, research, debugging, review, and testing.
-- [Wiki](wiki/README.md): architecture, model development, deployment, monitoring, security, learning paths, and references.
-
-## Contributing
-
-Start with the [Contributing Guide](CONTRIBUTING.md). When adding documentation, follow the repository conventions in the [Repository Guide](wiki/repository_guide.md), update the nearest index, and link to existing material instead of duplicating it.
-
-**Built for the local and open source AI community.**
+More languages can be added to this list as the project expands.

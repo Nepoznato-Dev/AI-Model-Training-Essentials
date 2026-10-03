@@ -1,0 +1,9 @@
+---
+translation_status: pending
+source: guides/Orchestration_Patterns/chapter_1_fundamentals.md
+language: Swahili
+---
+
+# Translation pending
+
+This file is reserved for the Swahili translation of `guides/Orchestration_Patterns/chapter_1_fundamentals.md`.

@@ -1,0 +1,9 @@
+---
+translation_status: pending
+source: skills/designing-skills/visual_design.md
+language: Japanese
+---
+
+# Translation pending
+
+This file is reserved for the Japanese translation of `skills/designing-skills/visual_design.md`.
